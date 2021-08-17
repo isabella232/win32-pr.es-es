@@ -1,6 +1,6 @@
 ---
 title: GetNumberOfValues
-description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | GetNumberOfValues
+description: Para obtener la documentación actual Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | GetNumberOfValues
 ms.assetid: d766da06-4dd0-4556-9a94-4c675c310a98
 keywords:
 - Formato multimedia de Windows GetNumberOfValues
@@ -21,7 +21,7 @@ ms.locfileid: "118198225"
 ---
 # <a name="getnumberofvalues"></a>GetNumberOfValues
 
-Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señales digitales, consulte Windows Media Audio and [Video Codec and DSP APIs (Api](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
+Para obtener la documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP APIs (API](/previous-versions//dd464626(v=vs.85)) de códecs multimedia y DSP).
 
  
 

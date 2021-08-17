@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: Windows8Param. CachePriority, campo'
-title: Campo Windows8Param. CachePriority (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: Campo Windows8Param.CachePriority'
+title: Campo Windows8Param.CachePriority (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: CachePriority field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows8.Windows8Param.CachePriority
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8param.cachepriority(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1436674871068b09c3e3173d939324af07a5b28b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5dcb49789ef44758830b24635bd8c37f2b25647f043408d260795dbafcf28270
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119470725"
 ---
-# <a name="windows8paramcachepriority-field"></a>Windows8Param. CachePriority, campo
+# <a name="windows8paramcachepriority-field"></a>Campo Windows8Param.CachePriority
 
-Propiedad por instancia para las prioridades de caché relativas (valor predeterminado = 100).
+Propiedad por instancia para prioridades de caché relativas (valor predeterminado = 100).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ value = Windows8Param.CachePriority
 public const JET_param CachePriority
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -61,4 +61,4 @@ public const JET_param CachePriority
 
 [Miembros de Windows8Param](./windows8param-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

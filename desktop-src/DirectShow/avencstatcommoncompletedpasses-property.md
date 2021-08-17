@@ -1,19 +1,19 @@
 ---
-description: Especifica el número de pasos de codificación completados. Esta propiedad solo se aplica a la codificación de múltiples pasadas.
+description: Especifica el número de pases de codificación completados. Esta propiedad solo se aplica a la codificación de varios pases.
 ms.assetid: 19286f26-96f1-429c-9d6a-5e9b98597cd2
-title: Propiedad AVEncStatCommonCompletedPasses (Codecapi. h)
+title: Propiedad AVEncStatCommonCompletedPasses (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2927e501963d450cbc08106e7860dfbfd2d7d98a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d5950a8f013dc697b0e8178e65610971776c0bd7bba233a58d164c05080f966f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105666115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119275875"
 ---
 # <a name="avencstatcommoncompletedpasses-property"></a>Propiedad AVEncStatCommonCompletedPasses
 
-Especifica el número de pasos de codificación completados. Esta propiedad solo se aplica a la codificación de múltiples pasadas.
+Especifica el número de pases de codificación completados. Esta propiedad solo se aplica a la codificación de varios pases.
 
 Esta propiedad es de solo lectura.
 
@@ -27,28 +27,28 @@ Esta propiedad es de solo lectura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Esta propiedad tiene un intervalo de valores lineal. Para obtener el intervalo admitido, llame a [**ICodecAPI:: GetParameterRange**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-getparameterrange).
+Esta propiedad tiene un intervalo lineal de valores. Para obtener el intervalo admitido, llame a [**ICodecAPI::GetParameterRange**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-getparameterrange).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

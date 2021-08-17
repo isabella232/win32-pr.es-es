@@ -1,61 +1,61 @@
 ---
-description: Funciones de depuración y seguimiento, y Windows Sockets 2.
+description: Depuración y seguimiento de instalaciones y Windows Sockets 2.
 ms.assetid: eb29fc21-92d6-4471-860a-fd1c531686f6
-title: Funciones de depuración y seguimiento
+title: Depuración y seguimiento de instalaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7288c6b4d72a7a375ee16da23a25b0a04a46df91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ae0617aa8fc18e90b0c3e366a7ab14f1457cb26471865bfcc97682801a858565
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117741372"
 ---
-# <a name="debug-and-trace-facilities"></a>Funciones de depuración y seguimiento
+# <a name="debug-and-trace-facilities"></a>Depuración y seguimiento de instalaciones
 
-Los desarrolladores de aplicaciones de Windows Sockets 2 necesitan aislar errores en:
+Windows Los desarrolladores de aplicaciones de Sockets 2 deben aislar los errores en:
 
 -   Aplicación.
--   *Ws2 \_32.dll* o uno de los archivos dll de correcciones de compatibilidad (shim).
+-   El *archivo Ws2 \_32.dll* o uno de los archivos DLL de compatibilidad de correcciones de compatibilidad.
 -   Proveedor de servicios.
 
-Windows Sockets 2 se ocupa de esta necesidad a través de varios componentes y características:
+Windows Sockets 2 aborda esta necesidad a través de varios componentes y características:
 
 -   Compatibilidad integrada con el seguimiento de Winsock en Windows Vista y versiones posteriores.
--   Una versión de depuración especialmente diseñada *del \_32.dllWs2* en Windows Vista.
--   Una función de depuración y seguimiento primitiva independiente para su uso en Windows Server 2003 y Windows XP.
+-   Una versión de depuración especialmente ideada del32.dll *Ws2 \_* en Windows Vista.
+-   Una instalación de depuración y seguimiento primitiva independiente para su uso en Windows Server 2003 y Windows XP.
 
-## <a name="winsock-tracing-using-event-tracing-for-windows"></a>Seguimiento de Winsock con seguimiento de eventos para Windows
+## <a name="winsock-tracing-using-event-tracing-for-windows"></a>Seguimiento de Winsock mediante seguimiento de eventos para Windows
 
-La compatibilidad integrada con el seguimiento de Winsock mediante el seguimiento de eventos para Windows (ETW) se incluye en Windows Vista y versiones posteriores. Este es el método preferido para realizar el seguimiento de llamadas Winsock en Windows Vista y versiones posteriores. El seguimiento de Winsock con ETW es ligero y funciona en versiones comerciales de Windows. No se requieren software ni componentes adicionales. Esta característica solo debe estar habilitada en Windows Vista y versiones posteriores. Para obtener información más detallada, consulte los temas de [seguimiento de Winsock](winsock-tracing.md) .
+La compatibilidad integrada con el seguimiento de Winsock mediante seguimiento de eventos para Windows (ETW) se incluye en Windows Vista y versiones posteriores. Este es el método preferido para realizar el seguimiento de llamadas winsock en Windows Vista y versiones posteriores. El seguimiento de Winsock con ETW es ligero y funciona en versiones comerciales de Windows. No se requiere software ni componentes adicionales. Esta característica solo debe habilitarse en Windows Vista y versiones posteriores. Para obtener información más detallada, consulte los temas [de seguimiento de Winsock.](winsock-tracing.md)
 
 ## <a name="using-a-debug-version-of-ws2_32dll"></a>Usar una versión de depuración de Ws2 \_32.dll
 
-La combinación de una versión de depuración del *\_32.dllWs2* en Windows Vista y el seguimiento de Winsock permite supervisar todas las llamadas a procedimientos a través de la API o el SPI de Windows Sockets 2 y, en cierta medida, controlarlas.
+La combinación de una versión de depuración de *Ws2 \_32.dll* en el seguimiento de Windows Vista y Winsock permite supervisar todas las llamadas a procedimientos a través de la API o SPI de Windows Sockets 2 y, en cierta medida, controlar.
 
-Si una versión del kit de desarrollo de software (SDK) de Microsoft Windows para Windows Vista se instala en la ubicación predeterminada, las versiones de depuración de la *\_32.dllWs2* para varias arquitecturas se encuentran en la siguiente carpeta:
+Si una versión del Kit de desarrollo de software (SDK) de Microsoft Windows para Windows Vista está instalada en la ubicación predeterminada, las versiones de depuración del32.dllde *Ws2 \_ para* varias arquitecturas se encuentran en la carpeta siguiente:
 
-**C: \\ archivos de programa \\ Microsoft SDK \\ Windows \\ v 6.0 \\ noredir**
+**C: \\ Archivos de programa sdk de Microsoft Windows \\ \\ \\ v6.0 \\ NoRedist**
 
-Debe usarse una versión comprobada del *\_32.dllWs2* que coincida con la versión de Windows y el Service Pack que se está probando. Tenga en cuenta que es posible que se hayan aplicado revisiones de seguridad que actualizaron el *\_32.dllWs2* en el sistema de prueba. Los Windows SDK para Windows Vista y las suscripciones de DVD/CD del kit de desarrollo de software (SDK) de la plataforma anterior incluyen compilaciones comprobadas para las distintas versiones de Windows. Debe usar la misma versión comprobada de la *\_32.dllWs2* como la versión comercial que se usó en el sistema que se está probando. Tenga en cuenta también que el comportamiento que se ejecuta en una compilación comprobada no será el mismo que cuando se ejecuta con una compilación comercial.
+Se debe usar una versión comprobada del32.dll *Ws2 \_* que coincida con la versión de Windows y el Service Pack en el que se está probando. Tenga en cuenta que es posible que se hayan aplicado revisiones de seguridad que actualizaron el32.dll *Ws2 \_* en el sistema de prueba. El SDK Windows para Windows Vista y las suscripciones anteriores de DVD/CD del Kit de desarrollo de software de plataforma (SDK) incluyen compilaciones activadas para las distintas versiones de Windows. Debe usar la misma versión comprobada de la versión *32.dllWs2 \_* que la versión comercial que se usó en el sistema que se está probando. Tenga en cuenta también que el comportamiento que se ejecuta en una compilación activada no será el mismo que el de una compilación comercial.
 
-**Nota:**  El Windows SDK para Windows Server 2008 y versiones posteriores ya no incluye versiones de depuración especiales del *\_32.dllWs2*. En su lugar, los desarrolladores deben usar el seguimiento de Winsock mediante ETW, ya que esta característica no requiere compilaciones de depuración.
+**Nota**  El SDK Windows para Windows Server 2008 y versiones posteriores ya no incluye versiones de depuración especiales de *Ws2 \_32.dll*. En su lugar, los desarrolladores deben usar el seguimiento de Winsock mediante ETW, ya que esta característica no requiere compilaciones de depuración.
 
-## <a name="winsock-debug-and-trace-facility-on-windows-server-2003-and-windows-xp"></a>Winsock Debug and Trace Facility en Windows Server 2003 y Windows XP
+## <a name="winsock-debug-and-trace-facility-on-windows-server-2003-and-windows-xp"></a>Instalación de depuración y seguimiento de Winsock en Windows Server 2003 y Windows XP
 
-Las versiones anteriores de Windows anteriores a Windows 8 y Windows Server 2012 admiten una característica de depuración y seguimiento de primitivos independiente que se incluye como ejemplo con el Windows SDK y el SDK de la plataforma anterior. La característica de depuración/seguimiento solo se debe usar en Windows Server 2003 y Windows XP, donde no se admite el seguimiento de Winsock.
+Las versiones anteriores de Windows anteriores a Windows 8 y Windows Server 2012 admiten una instalación de depuración y seguimiento primitiva independiente que se incluye como ejemplo con el SDK de Windows y el SDK de plataforma anterior. La instalación de depuración y seguimiento solo debe usarse en Windows Server 2003 y Windows XP donde no se admite el seguimiento de Winsock.
 
-Si el Windows SDK para Windows 7 está instalado en la ubicación predeterminada, esta característica de seguimiento de Winsock primitivo se instala en la siguiente carpeta:
+Si el SDK Windows para Windows 7 está instalado en la ubicación predeterminada, esta característica primitiva de seguimiento de Winsock se instala en la carpeta siguiente:
 
-**C: \\ archivos de programa \\ Microsoft SDK \\ Windows \\ v 7.0 \\ Samples \\ NetDs \\ Winsock \\ DT \_ dll**
+**C: \\ Archivos de programa Sdk de Microsoft Windows archivos de ejemplo \\ \\ \\ v7.0 \\ \\ NetDs \\ winsock dt \\ \_ dll**
 
-El archivo *DbgSpec.doc* de esta carpeta proporciona documentación sobre esta utilidad de seguimiento primitivo. El código de ejemplo de la \_ carpeta DT dll se debe compilar para usar esta utilidad. Los desarrolladores pueden usar el código fuente para desarrollar versiones del archivo DLL de depuración y seguimiento que satisfagan sus necesidades específicas.
+El *DbgSpec.doc* de esta carpeta proporciona documentación sobre esta instalación de seguimiento primitivo. El código de ejemplo de la carpeta \_ dt dll debe compilarse para usar esta utilidad. Los desarrolladores pueden usar el código fuente para desarrollar versiones del archivo DLL de depuración o seguimiento que satisfagan sus necesidades específicas.
 
-Tenga en cuenta que esta característica de seguimiento de Winsock simple solo funcionará con la versión de depuración de *Ws2 \_32.dll* instalado. Por lo tanto, tendrá que obtener una versión comprobada de la *\_32.dllWs2* que coincida con la versión de Windows y el Service Pack en el que está probando.
+Tenga en cuenta que esta característica primitiva de seguimiento de Winsock solo funcionará con la versión de depuración de *Ws2 \_32.dll* instalado. Por lo tanto, deberá obtener una versión comprobada de la32.dll *Ws2 \_* que coincida con la versión de Windows y el Service Pack en el que está probando.
 
-Una limitación de esta utilidad de \_ seguimiento DT dll de DT es que el código de ejemplo utiliza un bloqueo global (sección crítica) para cada llamada de función de Winsock. Por lo tanto, esta utilidad no es útil para tratar las condiciones de carrera. El código de ejemplo debe reescribirse sustancialmente para que esta utilidad de seguimiento resulte útil para solucionar la mayoría de los problemas reales de Winsock (reemplazando los bloqueos globales). Este código de ejemplo permite a los desarrolladores realizar un seguimiento de las llamadas a procedimientos, las devoluciones de procedimientos, los valores de parámetros y los valores devueltos.
+Una limitación de esta instalación de seguimiento de dt dll primitiva es que el código de ejemplo usa un bloqueo \_ global (sección crítica) para cada llamada de función Winsock. Por lo tanto, esta instalación no es útil para tratar las condiciones de carrera. El código de ejemplo tendría que reescribirse considerablemente para que esta instalación de seguimiento sea útil para tratar con la mayoría de los problemas reales de Winsock (reemplazando los bloqueos globales). Este código de ejemplo permite a los desarrolladores realizar un seguimiento de las llamadas a procedimientos, devoluciones de procedimientos, valores de parámetro y valores devueltos.
 
-Los desarrolladores pueden utilizar este mecanismo primitivo para realizar el seguimiento de las llamadas a procedimientos, las devoluciones de procedimientos, los valores de parámetros y los valores devueltos. Los valores de parámetro y los valores devueltos se pueden modificar en la llamada de procedimiento o el procedimiento devuelto. Si lo desea, se puede impedir o redirigir una llamada a un procedimiento. Con acceso a este nivel de información y control, un desarrollador puede aislar mejor un problema en la aplicación, *Ws2 \_32.dll* o proveedor de servicios.
+Los desarrolladores pueden usar este mecanismo primitivo para realizar un seguimiento de las llamadas a procedimientos, las devoluciones de procedimientos, los valores de parámetro y los valores devueltos. Los valores de parámetro y los valores devueltos se pueden modificar en la llamada a procedimiento o en la devolución de procedimiento. Si lo desea, se puede evitar o redirigir una llamada a procedimiento. Con el acceso a este nivel de información y control, un desarrollador puede aislar mejor un problema en la aplicación, *Ws2 \_32.dll* o proveedor de servicios.
 
 ## <a name="related-topics"></a>Temas relacionados
 

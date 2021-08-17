@@ -1,24 +1,24 @@
 ---
-title: Atravesar la lista de montones
+title: Recorrida de la lista de montones
 description: Ejemplos que muestran cómo obtener una lista de montones para el proceso actual.
 ms.assetid: cfa1d2a4-fec0-4089-9351-e0a26f9ecfe3
 ms.topic: article
 ms.date: 03/23/2021
-ms.openlocfilehash: 5cc555f9a94166fa181309985d8a49c686baf06c
-ms.sourcegitcommit: 4af3e9ec3142ba499d20ed8b174c2b219c5eacd2
+ms.openlocfilehash: 868526c76ee85095f5b52cc9238e9e16015bfb3a81c9888da148f1d5ecc644aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105994499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119419255"
 ---
-# <a name="traversing-the-heap-list"></a>Atravesar la lista de montones
+# <a name="traversing-the-heap-list"></a>Recorrida de la lista de montones
 
-En el ejemplo siguiente se obtiene una lista de montones para el proceso actual. Toma una instantánea de los montones mediante la función [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot) y, a continuación, recorre la lista con las funciones [**Heap32ListFirst**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32listfirst) y [**Heap32ListNext**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32listnext) . Para cada montón, usa las funciones [**Heap32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32first) y [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) para recorrer los bloques del montón.
+En el ejemplo siguiente se obtiene una lista de montones para el proceso actual. Toma una instantánea de los montones mediante la función [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot) y, a continuación, recorre la lista mediante las funciones [**Heap32ListFirst**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32listfirst) y [**Heap32ListNext.**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32listnext) Para cada montón, usa las funciones [**Heap32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32first) y [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) para recorrer los bloques del montón.
 
 > [!NOTE]
-> [**Heap32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32first) y [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) son ineficaces, especialmente en el caso de montones grandes. Sin embargo, son útiles para consultar otros procesos en los que normalmente tendría que insertar un subproceso en el otro proceso para recopilar la información (estas API hacen esto por usted).
+> [**Heap32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32first) y [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) son ineficaces, especialmente para montones grandes. Sin embargo, son útiles para consultar otros procesos en los que normalmente tendría que insertar un subproceso en el otro proceso para recopilar la información (estas API lo hacen por usted).
 
-Vea el segundo ejemplo para obtener una alternativa equivalente, mucho más eficaz, que usa [**HeapWalk**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) en lugar de [**Heap32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32first) y [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next). Tenga en cuenta que [**HeapWalk**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) solo se puede usar para el mismo proceso.
+Vea el segundo ejemplo de una alternativa equivalente, mucho más eficaz y que usa [**HeapWalk**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) en lugar de [**Heap32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32first) y [**Heap32Next.**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) Tenga en [**cuenta que HeapWalk**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) solo se puede usar para el mismo proceso.
 
 ```C++
 #include <windows.h>
@@ -68,7 +68,7 @@ int main( void )
 }
 ```
 
-El siguiente fragmento de código usa la función [**HeapWalk**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) para recorrer los montones de proceso, lo que produce una salida idéntica al ejemplo anterior, pero es mucho más eficaz:
+El siguiente fragmento de código usa la [**función HeapWalk**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) para recorrer los montones del proceso, lo que genera una salida idéntica al ejemplo anterior, pero de forma mucho más eficaz:
 
 ```C++
 #include <windows.h>
@@ -119,6 +119,6 @@ int main( void )
 ```
 
 Recorrer un montón con la función [**HeapWalk**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) es aproximadamente lineal en el tamaño del montón, mientras que recorrer un montón con la función [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) es aproximadamente cuadrático en el tamaño del montón.
-Incluso en el caso de un montón modesto con 10.000 asignaciones, [**HeapWalk**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) se ejecuta 10.000 veces más rápido que [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) , a la vez que proporciona información más detallada. La diferencia de rendimiento se vuelve aún más espectacular a medida que aumenta el tamaño del montón.
+Incluso para un montón moderado con 10 000 asignaciones, [**HeapWalk**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) se ejecuta 10 000 veces más rápido que [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) a la vez que proporciona información más detallada. La diferencia en el rendimiento es aún más drástica a medida que aumenta el tamaño del montón.
 
-Para obtener un ejemplo más detallado de cómo recorrer el montón con la función [**HeapWalk**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) , consulte [enumeración de un montón](/windows/win32/memory/enumerating-a-heap).
+Para obtener un ejemplo más detallado de cómo recorrer el montón con la [**función HeapWalk,**](/windows/desktop/api/heapapi/nf-heapapi-heapwalk) vea [Enumerating a Heap](/windows/win32/memory/enumerating-a-heap).

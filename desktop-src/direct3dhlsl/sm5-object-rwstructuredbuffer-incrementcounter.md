@@ -1,9 +1,9 @@
 ---
-title: 'RWStructuredBuffer:: IncrementCounter (función) (Httpserv. h)'
+title: Función RWStructuredBuffer::IncrementCounter (Httpserv.h)
 description: Incrementa el contador oculto del objeto.
 ms.assetid: 66385d4f-6db8-49ae-a73a-49089695f5ee
 keywords:
-- IncrementCounter de función HLSL
+- Función IncrementCounter HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0002f82873de1c56ce5a7d79c9adb13bdf7ebc0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c39a857fc9a7a108cea05060caf86ce61479a382c5160f4f051c11423bc6a5d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095175"
 ---
-# <a name="incrementcounter-function"></a>IncrementCounter función)
+# <a name="incrementcounter-function"></a>Función IncrementCounter
 
 Incrementa el contador oculto del objeto.
 
@@ -41,17 +41,17 @@ Tipo: **uint**
 
 Valor del contador previamente incrementado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La vista de acceso desordenado enlazada debe tener establecido el [**contador D3D11 de \_ búfer \_ UAV \_ \_**](/windows/desktop/api/d3d11/ne-d3d11-d3d11_buffer_uav_flag) en el conjunto de búferes de la creación para que este método funcione.
+La vista de acceso sin ordenar enlazada debe tener [**D3D11 \_ BUFFER \_ UAV \_ FLAG \_ COUNTER**](/windows/desktop/api/d3d11/ne-d3d11-d3d11_buffer_uav_flag) establecido durante la creación para que este método funcione.
 
-Un recurso estructurado se puede indexar más en función de los nombres de componente de las estructuras.
+Un recurso estructurado se puede indexar aún más en función de los nombres de componente de las estructuras.
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -65,11 +65,11 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Httpserv. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Httpserv.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

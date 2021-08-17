@@ -1,11 +1,11 @@
 ---
-title: Método pausar IVMVirtualMachine (VPCCOMInterfaces. h)
+title: Método IVMVirtualMachine Pause (VPCCOMInterfaces.h)
 description: Pausa la máquina virtual.
 ms.assetid: 29ac40c4-7713-4782-8a31-42f2c32b8f7d
 keywords:
-- Pausar método virtual PC
-- Pausar método virtual PC, interfaz IVMVirtualMachine
-- Interfaz IVMVirtualMachine Virtual PC, pausar método
+- Pausa del método Virtual PC
+- Pause method Virtual PC , IVMVirtualMachine interface
+- IVMVirtualMachine interface Virtual PC , Método Pause
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c953da05d34c999066a6bc87cb1f51983defbd5d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8bbab3da710a66c1e737e02693cb2002452ec11154b1be3da0e3568fea38e59f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119471485"
 ---
-# <a name="ivmvirtualmachinepause-method"></a>IVMVirtualMachine::P método ause
+# <a name="ivmvirtualmachinepause-method"></a>IVMVirtualMachine::P ause (método)
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Pausa la máquina virtual (VM).
 
@@ -50,13 +50,13 @@ Este método puede devolver uno de estos valores.
 
 | Código o valor devuelto                                                                                                                                                                          | Descripción                                                                  |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> <dt>0</dt> </dl>                                                | La operación se realizó correctamente.<br/>                                     |
+| <dl> <dt>**S \_ Ok**</dt> <dt>0</dt> </dl>                                                | La operación se realizó correctamente.<br/>                                     |
 | <dl> <dt>**E \_ ERROR**</dt> <dt>0x80004005</dt> </dl>                                     | La máquina virtual ya está en pausa.<br/>                                         |
-| <dl> <dt>**HRESULT \_ DE \_ Win32 (error de \_ acceso \_ denegado)**</dt> <dt>0x80070005</dt> </dl> | El autor de la llamada debe tener permisos de acceso de ejecución para pausar esta máquina virtual.<br/> |
-| <dl> <dt>**Máquina virtual \_ 0xA0040202 \_ agotó el tiempo de \_ espera**</dt> <dt></dt> </dl>                           | La operación no se completó de manera oportuna.<br/>                |
-| <dl> <dt>**Máquina virtual \_ La \_ VM E \_ no \_ ejecuta**</dt> <dt>0xA0040206</dt> </dl>                     | La máquina virtual no se está ejecutando.<br/>                               |
-| <dl> <dt>**Máquina virtual \_ 0xA0040207 de \_ máquina virtual \_ desconocida**</dt> <dt></dt> </dl>                          | La configuración es desconocida.<br/>                                     |
-| <dl> <dt>**DISP \_ . E \_ excepción**</dt> <dt>0x80020009</dt> </dl>                          | Se produjo un error inesperado.<br/>                                 |
+| <dl> <dt>**HRESULT \_ DESDE \_ WIN32 (ACCESO DE ERROR \_ \_ DENEGADO)**</dt> <dt>0x80070005</dt> </dl> | El autor de la llamada debe tener permisos de acceso de ejecución para pausar esta máquina virtual.<br/> |
+| <dl> <dt>**Máquina virtual \_ E \_ TIEMPO DE \_ ESPERA**</dt> <dt>0XA0040202</dt> </dl>                           | La operación no se ha completado a tiempo.<br/>                |
+| <dl> <dt>**Máquina virtual \_ E \_ VM \_ NOT \_ RUNNING**</dt> <dt>0xA0040206</dt> </dl>                     | La máquina virtual no se está ejecutando.<br/>                               |
+| <dl> <dt>**Máquina virtual \_ E \_ VM \_ UNKNOWN**</dt> <dt>0xA0040207</dt> </dl>                          | La configuración es desconocida.<br/>                                     |
+| <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl>                          | Se produjo un error inesperado.<br/>                                 |
 
 
 
@@ -64,7 +64,7 @@ Este método puede devolver uno de estos valores.
 
 ## <a name="remarks"></a>Observaciones
 
-**Pausar** no guarda el estado actual de la máquina virtual.
+**La** pausa no guarda el estado actual de la máquina virtual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,12 +72,12 @@ Este método puede devolver uno de estos valores.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
-| Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMVirtualMachine se define como f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Product<br/>                  | Windows Virtual PC<br/>                                                                 |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMVirtualMachine se define como \_ f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
 
 
 

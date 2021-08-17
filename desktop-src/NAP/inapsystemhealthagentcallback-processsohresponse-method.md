@@ -3,9 +3,9 @@ title: Método INapSystemHealthAgentCallback ProcessSoHResponse (NapSystemHealth
 description: Se llama a cuando NapAgent recibe un SoHResponse destinado a este agente de mantenimiento.
 ms.assetid: 860b1012-7df8-456f-8f21-eb0e1abd2b3b
 keywords:
-- Método NAP de ProcessSoHResponse
-- Método NAP de ProcessSoHResponse, interfaz INapSystemHealthAgentCallback
-- INapSystemHealthAgentCallback interface NAP , ProcessSoHResponse method
+- Nap del método ProcessSoHResponse
+- Método Nap de ProcessSoHResponse , interfaz INapSystemHealthAgentCallback
+- INapSystemHealthAgentCallback interface NAP , Método ProcessSoHResponse
 topic_type:
 - apiref
 api_name:
@@ -63,7 +63,7 @@ Este método puede devolver uno de estos valores.
 | Código devuelto                                                                                            | Descripción                                                                              |
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                   | Indica que se completó correctamente.<br/>                                                            |
-| <dl> <dt>**PAQUETE NAP \_ E \_ NO \_ VÁLIDO**</dt> </dl> | Devuelto por esta implementación si la respuesta no tiene el formato correcto.<br/> |
+| <dl> <dt>**NAP \_ E PAQUETE NO \_ \_ VÁLIDO**</dt> </dl> | Devuelto por esta implementación si la respuesta no tiene el formato correcto.<br/> |
 
 
 
@@ -75,7 +75,7 @@ El sistema NAP declara este método de devolución de llamada y lo va a implemen
 
 Cuando NapAgent recibe un [**SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) destinado a este agente de mantenimiento, invoca este método. El agente de mantenimiento debe consultar SoHResponse desde el objeto de solicitud. No debe contener referencias al objeto de solicitud una vez completada esta llamada.
 
-El **método INapSystemHealthAgentCallback::P rocessSoHResponse** no debe bloquearse. Si se requiere algún procesamiento de corrección, cualquier implementación de **ProcessSoHResponse** debe iniciar un nuevo subproceso para realizar el procesamiento de la corrección. NapAgent debe llamar a [**INapSystemHealthAgentCallBack::GetFixupInfo**](inapsystemhealthagentcallback-getfixupinfo-method.md) para determinar el estado de corrección de SHA.
+El **método INapSystemHealthAgentCallback::P rocessSoHResponse** no debe bloquearse. Si se requiere algún procesamiento de corrección, cualquier implementación de **ProcessSoHResponse** debe iniciar un nuevo subproceso para realizar el procesamiento de la corrección. NapAgent debe llamar a [**INapSystemHealthAgentCallBack::GetFixupInfo**](inapsystemhealthagentcallback-getfixupinfo-method.md) para determinar el estado de corrección del SHA.
 
 Este método debe devolver **NAP \_ E INVALID \_ \_ PACKET** si la respuesta no tiene el formato correcto.
 

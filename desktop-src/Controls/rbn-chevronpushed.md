@@ -41,7 +41,7 @@ RBN_CHEVRONPUSHED
 *lParam* 
 </dt> <dd>
 
-Puntero a la estructura [**NMREBARCHEVRON de**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchevron) la banda.
+Puntero a la estructura [**NMREBARCHEVRON de la**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchevron) banda.
 
 </dd> </dl>
 
@@ -51,13 +51,13 @@ No se usa el valor devuelto para esta notificación.
 
 ## <a name="remarks"></a>Comentarios
 
-Cuando una aplicación recibe este código de notificación, es responsable de mostrar un menú emergente con elementos para cada herramienta oculta. Use el **miembro rc** de la [**estructura NMREBARCHEVRON**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchevron) para buscar la posición correcta para el menú emergente.
+Cuando una aplicación recibe este código de notificación, es responsable de mostrar un menú emergente con elementos para cada herramienta oculta. Use el **miembro rc** de la [**estructura NMREBARCHEVRON**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchevron) para encontrar la posición correcta para el menú emergente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |

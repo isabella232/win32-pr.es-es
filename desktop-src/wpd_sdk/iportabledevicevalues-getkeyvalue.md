@@ -86,7 +86,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 <dl> <dt>
 
-[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
+[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::SetKeyValue**](iportabledevicevalues-setkeyvalue.md)

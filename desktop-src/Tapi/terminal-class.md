@@ -1,19 +1,19 @@
 ---
-description: Los GUID de clase de terminal identifican un terminal determinado por capacidades.
+description: Los GUID de la clase terminal identifican un terminal determinado por funcionalidades.
 ms.assetid: 2a16d33c-2d87-4172-a5ff-33ff62e96615
-title: Clase terminal (Tapi3if. h)
+title: Clase terminal (Tapi3if.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06d67d7668f9e4e16ad357408c8e9087fce870a1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6fd20d3e540529b343d1fb848b9e8cb2579a621b40146e0d170fdb175c4c9a18
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975455"
 ---
-# <a name="terminal-class"></a>Clase terminal
+# <a name="terminal-class"></a>Terminal (clase)
 
-Los GUID de clase de terminal identifican un terminal determinado por capacidades.
+Los GUID de la clase terminal identifican un terminal determinado por funcionalidades.
 
 <dl> <dt>
 
@@ -52,7 +52,7 @@ Pista de grabación de archivos.
 
 
 
-Auricular del teléfono.
+Teléfono.
 
 
 </dt> </dl> </dd> <dt>
@@ -72,7 +72,7 @@ Conjunto principal.
 
 
 
-Terminal de flujo de medios, creado dinámicamente.
+Terminal de secuencia multimedia, creado dinámicamente.
 
 
 </dt> </dl> </dd> <dt>
@@ -92,17 +92,17 @@ Micrófono.
 
 
 
-Altavoz teléfono.
+Teléfono del hablante.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CLSID_SpeakersTerminal"></span><span id="clsid_speakersterminal"></span><span id="CLSID_SPEAKERSTERMINAL"></span>**CLSID \_ SpeakersTerminal**
+<span id="CLSID_SpeakersTerminal"></span><span id="clsid_speakersterminal"></span><span id="CLSID_SPEAKERSTERMINAL"></span>**Altavoces \_ CLSIDTerminal**
 </dt> <dd> <dl> <dt>
 
 
 
-Participantes.
+Altavoces.
 
 
 </dt> </dl> </dd> <dt>
@@ -122,18 +122,18 @@ Terminal de entrada de vídeo.
 
 
 
-Ventana de presentación de vídeo, creada dinámicamente.
+Ventana de visualización de vídeo, creada dinámicamente.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La versión **BSTR** de las clases terminal se designa principalmente para el uso de aplicaciones Visual Basic. (Por ejemplo, se devuelven como los elementos de la colección obtenida con [**Get \_ DynamicTerminalClasses**](/windows/win32/api/tapi3if/nf-tapi3if-itterminalsupport-get_dynamicterminalclasses)).
+La **versión BSTR** de las clases de terminal se designa principalmente para el uso de Visual Basic aplicaciones. (Por ejemplo, se devuelven como los elementos de la colección obtenidos con [**get \_ DynamicTerminalClasses).**](/windows/win32/api/tapi3if/nf-tapi3if-itterminalsupport-get_dynamicterminalclasses)
 
 -   BSTR CLSID \_ String \_ HandsetTerminal
 -   BSTR CLSID \_ String \_ HeadsetTerminal
--   BSTR CLSID \_ String \_ MediaStreamTerminal
+-   Cadena BSTR CLSID \_ \_ MediaStreamTerminal
 -   BSTR CLSID \_ String \_ MicrophoneTerminal
 -   BSTR CLSID \_ String \_ SpeakerphoneTerminal
 -   BSTR CLSID \_ String \_ SpeakersTerminal
@@ -146,8 +146,8 @@ La versión **BSTR** de las clases terminal se designa principalmente para el us
 
 | Requisito | Value |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                |
-| Encabezado<br/>       | <dl> <dt>Tapi3if. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                |
+| Header<br/>       | <dl> <dt>Tapi3if.h</dt> </dl> |
 
 
 
@@ -158,7 +158,7 @@ La versión **BSTR** de las clases terminal se designa principalmente para el us
 [**ITTerminalSupport::CreateTerminal**](/windows/win32/api/tapi3if/nf-tapi3if-itterminalsupport-createterminal)
 </dt> <dt>
 
-[**ITTerminal:: get \_ TerminalClass**](/windows/win32/api/tapi3if/nf-tapi3if-itterminal-get_terminalclass)
+[**ITTerminal::get \_ TerminalClass**](/windows/win32/api/tapi3if/nf-tapi3if-itterminal-get_terminalclass)
 </dt> <dt>
 
 [**ITTerminalManager::CreateDynamicTerminal**](/windows/desktop/api/Termmgr/nf-termmgr-itterminalmanager-createdynamicterminal)

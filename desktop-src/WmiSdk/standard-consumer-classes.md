@@ -43,7 +43,7 @@ Para obtener más información, vea [Monitoring and Responding to Events with St
 [Recepción de eventos en todo momento](receiving-events-at-all-times.md)
 </dt> <dt>
 
-[Ejecutar un script basado en un evento](running-a-script-based-on-an-event.md)
+[Ejecución de un script basado en un evento](running-a-script-based-on-an-event.md)
 </dt> <dt>
 
 [Envío de correo electrónico basado en un evento](sending-e-mail-based-on-an-event.md)

@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118359341"
 ---
-# <a name="glindexi-function"></a>Función glIndexi
+# <a name="glindexi-function"></a>función glIndexi
 
 La **función glIndexi** establece el índice de color actual.
 
@@ -57,13 +57,13 @@ La **función glIndexi** actualiza el índice de color actual (con un solo valor
 
 El índice actual se almacena como un valor de punto flotante. Los valores enteros se convierten directamente en valores de punto flotante, sin ninguna asignación especial.
 
-Los valores de índice fuera del intervalo representable del búfer de índice de color no están fijas. Sin embargo, antes de que se dithere un índice (si está habilitado) y se escriba en el búfer de fotogramas, se convierte al formato de punto fijo. Los bits de la parte entera del valor de punto fijo resultante que no se correspondan con los bits del búfer de fotogramas se enmascaran.
+Los valores de índice fuera del intervalo representable del búfer de índice de color no están fijos. Sin embargo, antes de que se dithere un índice (si está habilitado) y se escriba en el búfer de fotogramas, se convierte al formato de punto fijo. Los bits de la parte entera del valor de punto fijo resultante que no se correspondan con los bits del búfer de fotogramas se enmascaran.
 
 El índice actual se puede actualizar en cualquier momento. En concreto, se puede llamar a **glIndexi** entre una llamada a [**glBegin**](/windows/desktop/OpenGL/glbegin) y la llamada correspondiente [**a glEnd**](glend.md).
 
 La función siguiente recupera información relacionada con **glIndexi**:
 
-[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ CURRENT \_ INDEX
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ CURRENT \_ INDEX
 
 ## <a name="requirements"></a>Requisitos
 

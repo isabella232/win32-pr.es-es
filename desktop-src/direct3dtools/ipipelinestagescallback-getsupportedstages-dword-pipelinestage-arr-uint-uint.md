@@ -1,10 +1,10 @@
 ---
-description: Devolución de llamada que notifica al host las fases de canalización que usa la llamada a Draw de la solicitud asociada.
+description: Devolución de llamada que notifica al host qué fases de canalización se usan en la llamada a draw de la solicitud assocaited.
 MS-HAID: vspixengine.IPipeLineStagesCallback\_GetSupportedStages\_DWORD\_PipeLineStage\_arr\_UINT\_UINT
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'IPipeLineStagesCallback:: GetSupportedStages (método)'
+title: IPipeLineStagesCallback::GetSupportedStages (método)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: F7046A41-5C9C-42FE-B1E2-879A47CE08E3
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5c55c7f8bfa6b5b69ea2a46dd6023021a6b4ab6c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e789158dda43ef3fcb8ead982c38b15f4bd26cb7c8fb291a841d529d8c6dad85
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119405945"
 ---
-# <a name="span-idvspixengineipipelinestagescallback_getsupportedstages_dword_pipelinestage_arr_uint_uintspanipipelinestagescallbackgetsupportedstages-method"></a><span id="vspixengine.ipipelinestagescallback_getsupportedstages_dword_pipelinestage_arr_uint_uint"></span>IPipeLineStagesCallback:: GetSupportedStages (método)
+# <a name="span-idvspixengineipipelinestagescallback_getsupportedstages_dword_pipelinestage_arr_uint_uintspanipipelinestagescallbackgetsupportedstages-method"></a><span id="vspixengine.ipipelinestagescallback_getsupportedstages_dword_pipelinestage_arr_uint_uint"></span>IPipeLineStagesCallback::GetSupportedStages (método)
 
-Devolución de llamada que notifica al host las fases de canalización que usa la llamada a Draw de la solicitud asociada.
+Devolución de llamada que notifica al host qué fases de canalización se usan en la llamada a draw de la solicitud assocaited.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,18 +49,18 @@ Número de fases devueltas.
 Fases de canalización.
 
 *swapChainWidth*   
-El ancho de la cadena de intercambio asociada con la llamada a Draw. Se usa cuando se solicitan imágenes de vista previa de canalización.
+Ancho de la cadena de intercambio con la llamada a draw. Esto se usa al solicitar imágenes de vista previa de canalización.
 
 *swapChainHeight*   
-El alto de la cadena de intercambio asociada con la llamada a Draw. Se usa cuando se solicitan imágenes de vista previa de canalización.
+Alto de la cadena de intercambio con la llamada a draw. Esto se usa al solicitar imágenes de vista previa de canalización.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vea también
 

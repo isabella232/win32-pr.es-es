@@ -1,11 +1,11 @@
 ---
-title: 'PKI: inscripción-atributo de acceso'
-description: El atributo PKI-Enrollment-Access solo es para uso interno.
+title: Atributo PKI-Enrollment-Access
+description: El atributo PKI-Enrollment-Access es solo para uso interno.
 ms.assetid: 09eab075-71a5-4a38-af34-dafedca9c2c6
 ms.tgt_platform: multiple
 keywords:
-- 'PKI: inscripción: esquema de AD de atributos de acceso'
-- pKIEnrollmentAccess esquema de AD de atributos
+- Esquema de AD del atributo PKI-Enrollment-Access
+- pKIEnrollmentAccess attribute AD Schema (Esquema de AD del atributo pKIEnrollmentAccess)
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5f974e1072810b902fa42d30f067a67e22236ca
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7af4331d5ed5069448848ba56cd331251eb055c10767f4b63d0b581da98f35fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923885"
 ---
-# <a name="pki-enrollment-access-attribute"></a>PKI: inscripción-atributo de acceso
+# <a name="pki-enrollment-access-attribute"></a>Atributo PKI-Enrollment-Access
 
-El atributo **PKI-Enrollment-Access** solo es para uso interno.
+El **atributo PKI-Enrollment-Access** es solo para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------------------|
-| CN                | PKI-inscripción: acceso                               |
-| Nombre para mostrar de LDAP | pKIEnrollmentAccess                                 |
-| Tamaño              | \-                                                  |
-| Actualizar privilegio  | \-                                                  |
+| CN                | PKI-Enrollment-Access                               |
+| Ldap-Display-Name | pKIEnrollmentAccess                                 |
+| Size              | \-                                                  |
+| Actualizar privilegios  | \-                                                  |
 | Frecuencia de actualización  | \-                                                  |
 | Attribute-Id      | 1.2.840.113556.1.4.1335                             |
-| System-ID-GUID    | 926be278-56f9-11d2-90d0-00c04fd91ab1                |
-| Sintaxis            | [**String(NT-Sec-Desc)**](s-string-nt-sec-desc.md) |
+| System-Id-Guid    | 926be278-56f9-11d2-90d0-00c04fd91ab1                |
+| Syntax            | [**String(NT-Sec-Desc)**](s-string-nt-sec-desc.md) |
 
 
 
@@ -53,20 +53,20 @@ El atributo **PKI-Enrollment-Access** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | True                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Verdadero                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ El atributo **PKI-Enrollment-Access** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | True                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Verdadero                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ El atributo **PKI-Enrollment-Access** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | True                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Verdadero                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ El atributo **PKI-Enrollment-Access** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | True                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Verdadero                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ El atributo **PKI-Enrollment-Access** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | True                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Verdadero                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ El atributo **PKI-Enrollment-Access** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | True                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Verdadero                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 

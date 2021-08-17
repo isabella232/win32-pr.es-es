@@ -4,7 +4,7 @@ description: Nombre distintivo de un objeto que cumple un rol organizativo.
 ms.assetid: 47f5d367-d1da-4189-a73e-b6e6715bd297
 ms.tgt_platform: multiple
 keywords:
-- Role-Occupant esquema de AD del atributo
+- Role-Occupant esquema de AD de atributo
 - roleOccupant attribute AD Schema
 topic_type:
 - apiref
@@ -27,16 +27,16 @@ Nombre distintivo de un objeto que cumple un rol organizativo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | Role-Occupant                           |
 | Ldap-Display-Name | roleOccupant                            |
 | Size              | \-                                      |
-| Privilegio actualizar  | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 2.5.4.33                                |
 | System-Id-Guid    | a8df7465-c5ea-11d1-zosb-0080c76670c0    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -53,14 +53,14 @@ Nombre distintivo de un objeto que cumple un rol organizativo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
-| System-Only            | False                                                          |
-| Es de un solo valor       | False                                                          |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Falso                                                          |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
@@ -74,14 +74,14 @@ Nombre distintivo de un objeto que cumple un rol organizativo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
-| System-Only            | False                                                          |
-| Es de un solo valor       | False                                                          |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Falso                                                          |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
@@ -95,14 +95,14 @@ Nombre distintivo de un objeto que cumple un rol organizativo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
-| System-Only            | False                                                          |
-| Es de un solo valor       | False                                                          |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Falso                                                          |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
@@ -116,14 +116,14 @@ Nombre distintivo de un objeto que cumple un rol organizativo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
-| System-Only            | False                                                          |
-| Es de un solo valor       | False                                                          |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Falso                                                          |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
@@ -137,14 +137,14 @@ Nombre distintivo de un objeto que cumple un rol organizativo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
-| System-Only            | False                                                          |
-| Es de un solo valor       | False                                                          |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Falso                                                          |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
@@ -158,14 +158,14 @@ Nombre distintivo de un objeto que cumple un rol organizativo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
-| System-Only            | False                                                          |
-| Es de un solo valor       | False                                                          |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Falso                                                          |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |

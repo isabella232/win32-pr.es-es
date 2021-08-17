@@ -1,11 +1,11 @@
 ---
-title: IDeviceIcon (método de ContentType)
+title: Método IDeviceIcon ContentType
 description: Recupera el tipo de contenido del icono.
 ms.assetid: 01928A98-B7D0-4523-9259-81FEB33F052E
 keywords:
-- ContentType (método) API de streaming de multimedia
-- Método ContentType API de transmisión por secuencias de multimedia, interfaz IDeviceIcon
-- IDeviceIcon interface media streaming API, ContentType (método)
+- Método ContentType de Media Streaming API
+- Método ContentType de Media Streaming API, interfaz IDeviceIcon
+- Interfaz IDeviceIcon Media Streaming API, método ContentType
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: af48aabb2a64f4c4b8fbd40a3859acc82496a399
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: d8fb9cb639381b60bb59965d12ce3f0545daf6d2725cde69d3dea3dee589f8f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103904527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119461754"
 ---
-# <a name="ideviceiconcontenttype-method"></a>IDeviceIcon:: ContentType (método)
+# <a name="ideviceiconcontenttype-method"></a>IDeviceIcon::ContentType (método)
 
 Recupera el tipo de contenido del icono.
 
@@ -41,7 +41,7 @@ HRESULT ContentType(
 
 <dl> <dt>
 
-*valor* \[ de enuncia\]
+*value* \[ out\]
 </dt> <dd>
 
 Recibe un puntero al tipo de contenido del icono.
@@ -50,13 +50,13 @@ Recibe un puntero al tipo de contenido del icono.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 

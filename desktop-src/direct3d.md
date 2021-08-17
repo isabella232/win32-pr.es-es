@@ -21,9 +21,9 @@ Para obtener información sobre cómo obtener e instalar Direct3D, vea Configura
 
 | Tema | Descripción |
 |-|-|
-| [Introducción a Direct3D](./getting-started-with-direct3d.md) | Describe Direct3D con más profundidad, diferentes modelos de aplicación, diferentes versiones, representación y proceso. |
+| [Introducción a Direct3D](./getting-started-with-direct3d.md) | Describe Direct3D con más profundidad, modelos de aplicación diferentes, versiones diferentes, representación y proceso. |
 | [Gráficos de Direct3D 12](./direct3d12/direct3d-12-graphics.md) | Direct3D 12 proporciona una API y una plataforma que permiten a la aplicación aprovechar las funcionalidades de gráficos y computación de equipos equipados con una o varias GPU compatibles con Direct3D 12. |
 | [Gráficos de Direct3D 11](./direct3d11/atoc-dx-graphics-direct3d-11.md) | Puede usar gráficos de Microsoft Direct3D 11 para crear gráficos 3D para juegos y aplicaciones científicas y de escritorio. |
-| [DXGI](./direct3ddxgi/dx-graphics-dxgi.md) | DXGI controla la enumeración de adaptadores gráficos, la enumeración de modos de presentación, la selección de formatos de búfer, el uso compartido de recursos entre procesos y la presentación de fotogramas representados en una ventana o monitor para su visualización. |
+| [DXGI](./direct3ddxgi/dx-graphics-dxgi.md) | DXGI controla la enumeración de adaptadores de gráficos, la enumeración de modos de presentación, la selección de formatos de búfer, el uso compartido de recursos entre procesos y la presentación de fotogramas representados en una ventana o un monitor para su visualización. |
 | [HLSL](./direct3dhlsl/dx-graphics-hlsl.md) | HLSL es el lenguaje de sombreador de alto nivel para DirectX. Con HLSL, puede crear sombreadores programables de tipo C para la canalización de Direct3D. |
-| [Dds](./direct3ddds/dx-graphics-dds.md) | El formato de archivo de superficie DirectDraw (DDS) admite texturas sin comprimir y comprimidas (DXTn), mapas mip, mapas de cubo y mapas de volumen. Es compatible con DirectXTex, DirectXTK, D3DX heredado y otras herramientas de DirectX. |
+| [Dds](./direct3ddds/dx-graphics-dds.md) | El formato de archivo de superficie DirectDraw (DDS) admite texturas sin comprimir y comprimidas (DXTn), mapas mip, mapas de cubo y mapas de volúmenes. Es compatible con DirectXTex, DirectXTK, D3DX heredado y otras herramientas de DirectX. |

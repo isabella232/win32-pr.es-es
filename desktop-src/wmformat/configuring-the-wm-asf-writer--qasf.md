@@ -15,7 +15,7 @@ keywords:
 - ASF (formato de sistemas avanzados),DirectShow
 - Formato de sistemas avanzados (ASF),QASF
 - ASF (formato de sistemas avanzados),QASF
-- DirectShow,configuring WM ASF Writer (QASF)
+- DirectShow, configurar WM ASF Writer (QASF)
 - DirectShow,WM ASF Writer
 - DirectShow,QASF
 - WM ASF Writer, configurar

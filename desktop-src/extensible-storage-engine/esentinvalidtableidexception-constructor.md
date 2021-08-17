@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInvalidTableIdException'
-title: Constructor de EsentInvalidTableIdException
+description: 'Más información sobre: Constructor EsentInvalidTableIdException'
+title: Constructor EsentInvalidTableIdException
 TOCTitle: 'EsentInvalidTableIdException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidTableIdException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinvalidtableidexception.esentinvalidtableidexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 56afc7cb576bc469a7b6e52b63f914b35e01a594
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 317b9aa1efc6a39bf9bf192c87cd5742afea5453e2ad084ad179b32d88157e14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119480545"
 ---
-# <a name="esentinvalidtableidexception-constructor"></a>Constructor de EsentInvalidTableIdException
+# <a name="esentinvalidtableidexception-constructor"></a>Constructor EsentInvalidTableIdException
 
 Inicializa una nueva instancia de la clase EsentInvalidTableIdException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentInvalidTableIdException()
 public EsentInvalidTableIdException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentInvalidTableIdException()
 
 [Miembros de EsentInvalidTableIdException](./esentinvalidtableidexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

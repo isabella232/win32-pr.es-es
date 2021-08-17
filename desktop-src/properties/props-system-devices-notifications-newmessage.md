@@ -1,19 +1,19 @@
 ---
-description: Notificación de nuevo mensaje de dispositivo.
+description: Notificación de nuevo mensaje del dispositivo.
 ms.assetid: 2d6dce7b-d31f-4b4b-8ee0-b043568932fd
-title: System. Devices. notifications. NewMessage
+title: System.Devices.Notifications.NewMessage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e35b8d9664ce2e316362e1f5b7d48cd529cc812
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b61b79db56debba0143cc7301ce800cd464686b6440caf0d2439989a4d0f7ca9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119458355"
 ---
-# <a name="systemdevicesnotificationsnewmessage"></a>System. Devices. notifications. NewMessage
+# <a name="systemdevicesnotificationsnewmessage"></a>System.Devices.Notifications.NewMessage
 
-Notificación de nuevo mensaje de dispositivo.
+Notificación de nuevo mensaje del dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -38,7 +38,7 @@ propertyDescription
             text = You have a new text message.
 ```
 
-## <a name="windows-7"></a>Windows 7
+## <a name="windows-7"></a>Windows 7
 
 ```
 propertyDescription
@@ -63,7 +63,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -90,7 +90,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -108,7 +108,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

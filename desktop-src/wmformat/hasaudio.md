@@ -29,7 +29,7 @@ g \_ wszWMHasAudio
 
 ## <a name="data-type"></a>Tipo de datos
 
-**TIPO WMT \_ \_ BOOL**
+**WMT \_ TYPE \_ BOOL**
 
 ## <a name="remarks"></a>Comentarios
 

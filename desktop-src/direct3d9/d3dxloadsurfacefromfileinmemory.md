@@ -1,7 +1,7 @@
 ---
-description: Carga una superficie de un archivo en la memoria.
+description: Carga una superficie de un archivo en memoria.
 ms.assetid: 436a6151-2819-44eb-bd56-1b3777f709e5
-title: Función D3DXLoadSurfaceFromFileInMemory (D3dx9tex. h)
+title: Función D3DXLoadSurfaceFromFileInMemory (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a447c4c5b65e3085d84e26ef202283cf0c31c6b5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 705cf6953f8db461486263999837c2a250ba622826bb1779b53171d5b6d2f851
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119408125"
 ---
-# <a name="d3dxloadsurfacefromfileinmemory-function"></a>D3DXLoadSurfaceFromFileInMemory función)
+# <a name="d3dxloadsurfacefromfileinmemory-function"></a>Función D3DXLoadSurfaceFromFileInMemory
 
-Carga una superficie de un archivo en la memoria.
+Carga una superficie de un archivo en memoria.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,84 +48,84 @@ HRESULT D3DXLoadSurfaceFromFileInMemory(
 
 <dl> <dt>
 
-*pDestSurface* \[ de\]
+*pDestSurface* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DSURFACE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9)**
 
-Puntero a una interfaz [**IDirect3DSurface9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) . Especifica la superficie de destino, que recibe la imagen.
+Puntero a una [**interfaz IDirect3DSurface9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) Especifica la superficie de destino, que recibe la imagen.
 
 </dd> <dt>
 
-*pDestPalette* \[ de\]
+*pDestPalette* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
 
-Puntero a una estructura [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) , la paleta de destino de 256 colores o **null**.
+Puntero a una [**estructura PALETTEENTRY,**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) la paleta de destino de 256 colores o **NULL.**
 
 </dd> <dt>
 
-*pDestRect* \[ de\]
+*pDestRect* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**Rect**](/previous-versions//dd162897(v=vs.85)) \***
+Tipo: **const [**RECT**](/previous-versions//dd162897(v=vs.85)) \***
 
-Puntero a una estructura [**Rect**](/previous-versions//dd162897(v=vs.85)) . Especifica el rectángulo de destino. Establezca este parámetro en **null** para especificar toda la superficie.
+Puntero a una [**estructura RECT.**](/previous-versions//dd162897(v=vs.85)) Especifica el rectángulo de destino. Establezca este parámetro en **NULL para** especificar toda la superficie.
 
 </dd> <dt>
 
-*pSrcData* \[ de\]
+*pSrcData* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
 
-Puntero al archivo en la memoria desde el que se va a cargar la superficie.
+Puntero al archivo en memoria desde el que se va a cargar la superficie.
 
 </dd> <dt>
 
-*SrcData* \[ de\]
+*SrcData* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Tamaño del archivo en memoria, en bytes.
 
 </dd> <dt>
 
-*pSrcRect* \[ de\]
+*pSrcRect* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**Rect**](/previous-versions//dd162897(v=vs.85)) \***
+Tipo: **const [**RECT**](/previous-versions//dd162897(v=vs.85)) \***
 
-Puntero a una estructura [**Rect**](/previous-versions//dd162897(v=vs.85)) . Especifica el rectángulo de origen. Establezca este parámetro en **null** para especificar la imagen completa.
+Puntero a una [**estructura RECT.**](/previous-versions//dd162897(v=vs.85)) Especifica el rectángulo de origen. Establezca este parámetro en **NULL** para especificar toda la imagen.
 
 </dd> <dt>
 
-*Filtro* \[ de de\]
+*Filtro* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinación de uno o más [ \_ filtros de D3DX](d3dx-filter.md) que controlan cómo se filtra la imagen. Especificar \_ el valor predeterminado de d3dx para este parámetro es el equivalente a especificar el filtro de d3dx \_ triángulo del filtro de \_ \| d3dx \_ \_ .
+Combinación de uno o varios filtros [D3DX \_ que](d3dx-filter.md) controlan cómo se filtra la imagen. Especificar D3DX DEFAULT para este parámetro equivale a especificar \_ D3DX \_ FILTER \_ TRIANGLE \| D3DX \_ FILTER \_ DITHER.
 
 </dd> <dt>
 
-*ColorKey* \[ de\]
+*ColorKey* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **D3DCOLOR**](d3dcolor.md)**
 
-Valor de [**D3DCOLOR**](d3dcolor.md) que se va a reemplazar con negro transparente o 0 para deshabilitar Colorkey. Siempre es un color ARGB de 32 bits, independientemente del formato de la imagen de origen. Alfa es significativo y, normalmente, se debe establecer en FF para las claves de color opacas. Por lo tanto, para el negro opaco, el valor sería igual a 0xFF000000.
+[**Valor D3DCOLOR que**](d3dcolor.md) se reemplazará por negro transparente o 0 para deshabilitar la clave de color. Siempre es un color ARGB de 32 bits, independientemente del formato de imagen de origen. Alfa es significativo y normalmente debe establecerse en FF para las claves de color opacas. Por lo tanto, para el negro opaco, el valor sería igual a 0xFF000000.
 
 </dd> <dt>
 
 *pSrcInfo* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **D3DXIMAGE \_ info**](d3dximage-info.md)\***
+Tipo: **[ **D3DXIMAGE \_ INFO**](d3dximage-info.md)\***
 
-Puntero a una estructura de [**\_ información D3DXIMAGE**](d3dximage-info.md) que se va a rellenar con una descripción de los datos en el archivo de imagen de origen o **null**.
+Puntero a una [**estructura \_ INFO D3DXIMAGE**](d3dximage-info.md) que se va a rellenar con una descripción de los datos del archivo de imagen de origen o **NULL.**
 
 </dd> </dl>
 
@@ -133,13 +133,13 @@ Puntero a una estructura de [**\_ información D3DXIMAGE**](d3dximage-info.md) q
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función controla la conversión a y desde formatos de textura comprimidos y admite los siguientes formatos de archivo:. bmp,. DDS,. dib,. HDR,. jpg,. PFM,. png,. ppm y. TGA. Consulte [**D3DXIMAGE \_ FILEFORMAT**](./d3dximage-fileformat.md).
+Esta función controla la conversión a y desde formatos de textura comprimidos y admite los siguientes formatos de archivo: .bmp, .dds, .dib, .hdr, .jpg, .pfm, .png, .ppm y .tga. Vea [**D3DXIMAGE \_ FILEFORMAT**](./d3dximage-fileformat.md).
 
-La escritura en una superficie que no sea de nivel cero no hará que se actualice el rectángulo sucio. Si se llama a **D3DXLoadSurfaceFromFileInMemory** y no se ha modificado la superficie (esto no es probable en escenarios de uso normal), la aplicación debe llamar explícitamente a [**AddDirtyRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-adddirtyrect) en la superficie.
+Escribir en una superficie que no sea de nivel cero no hará que se actualice el rectángulo desnuciado. Si se llama a **D3DXLoadSurfaceFromFileInMemory** y la superficie aún no estaba desasesuada (es poco probable en escenarios de uso normal), la aplicación debe llamar explícitamente a [**AddDirtyRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-adddirtyrect) en la superficie.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -147,12 +147,12 @@ La escritura en una superficie que no sea de nivel cero no hará que se actualic
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

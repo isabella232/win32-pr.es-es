@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_REQUESTRESIZE (RichEdit. h)
-description: Fuerza a un control Rich Edit a enviar un \_ código de notificación en REQUESTRESIZE a su ventana primaria.
+title: EM_REQUESTRESIZE mensaje (Richedit.h)
+description: Fuerza a un control de edición enriquecido a enviar un código de notificación EN \_ REQUESTRESIZE a su ventana primaria.
 ms.assetid: efc22771-9b9f-4a30-a906-f02095607c21
 keywords:
-- EM_REQUESTRESIZE controles de mensajes de Windows
+- EM_REQUESTRESIZE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec41e7be8e0f30d5c1ec011247f3964292c2218e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7113f52e2fa3a293549443f779ba937bf20b85736c6751cd9ab77bdbecd45c3b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104274549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119440165"
 ---
-# <a name="em_requestresize-message"></a>\_Mensaje REQUESTRESIZE em
+# <a name="em_requestresize-message"></a>Mensaje \_ EM REQUESTRESIZE
 
-Fuerza a un control Rich Edit a enviar un código de notificación [**en \_ REQUESTRESIZE**](en-requestresize.md) a su ventana primaria.
+Fuerza a un control de edición enriquecido a enviar un código de notificación [**EN \_ REQUESTRESIZE**](en-requestresize.md) a su ventana primaria.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,24 +32,24 @@ Fuerza a un control Rich Edit a enviar un código de notificación [**en \_ REQU
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Este mensaje es útil durante el procesamiento de [**\_ tamaño de WM**](/windows/desktop/winmsg/wm-size) para el elemento primario de un control Rich Edit no completo.
+Este mensaje es útil durante el [**procesamiento de WM \_ SIZE**](/windows/desktop/winmsg/wm-size) para el elemento primario de un control de edición enriquecido sin fondo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Este mensaje es útil durante el procesamiento de [**\_ tamaño de WM**](/window
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Este mensaje es útil durante el procesamiento de [**\_ tamaño de WM**](/window
 **Otros recursos**
 </dt> <dt>
 
-[**tamaño de WM \_**](/windows/desktop/winmsg/wm-size)
+[**TAMAÑO \_ WM**](/windows/desktop/winmsg/wm-size)
 </dt> </dl>
 
  

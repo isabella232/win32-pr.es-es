@@ -4,8 +4,8 @@ description: Tamaño, en megabytes, del directorio de almacenamiento provisional
 ms.assetid: a7344654-a5c6-40dc-a03a-a1fb6ca06311
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo ms-DFSR-CommonStagingSizeInMb
-- Esquema de AD del atributo msDFSR-CommonStagingSizeInMb
+- ms-DFSR-CommonStagingSizeInMb attribute AD Schema
+- msDFSR-CommonStagingSizeInMb attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -27,16 +27,16 @@ Tamaño, en megabytes, del directorio de almacenamiento provisional común.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ms-DFSR-CommonStagingSizeInMb        |
 | Ldap-Display-Name | msDFSR-CommonStagingSizeInMb         |
 | Size              | \-                                   |
-| Privilegio actualizar  | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.39           |
 | System-Id-Guid    | 135eb00e-4846-458b-8ea2-a37559afd405 |
-| Sintaxis            | [**Intervalo**](s-interval.md)       |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -50,14 +50,14 @@ Tamaño, en megabytes, del directorio de almacenamiento provisional común.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Es de un solo valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
@@ -71,14 +71,14 @@ Tamaño, en megabytes, del directorio de almacenamiento provisional común.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Es de un solo valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
@@ -92,14 +92,14 @@ Tamaño, en megabytes, del directorio de almacenamiento provisional común.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Es de un solo valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |

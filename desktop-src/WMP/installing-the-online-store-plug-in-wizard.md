@@ -1,57 +1,57 @@
 ---
-title: Instalación del Asistente para complementos de tienda en línea
-description: Instalación del Asistente para complementos de tienda en línea
+title: Instalación del Asistente para complementos de la tienda en línea
+description: Instalación del Asistente para complementos de la tienda en línea
 ms.assetid: 75f7c279-4800-4146-8198-1dc76472237d
 keywords:
-- Windows Media Player tiendas en línea, Complementos
-- tiendas en línea, Complementos
-- tipo 1 tiendas en línea, Complementos
-- Windows Media Player tiendas en línea, Asistente para complementos
-- tiendas en línea, Asistente para complementos
-- tipo 1 tiendas en línea, Asistente para complementos
-- Windows Media Player tiendas en línea, instalar el Asistente para complementos
-- tiendas en línea, Asistente para instalar complementos
-- Escriba 1 tiendas en línea, Asistente para instalar complementos
-- complementos, Windows Media Player tiendas en línea
+- Reproductor de Windows Media en línea, complementos
+- tiendas en línea, complementos
+- tiendas en línea de tipo 1, complementos
+- Reproductor de Windows Media en línea, asistente para complementos
+- online stores,plug-in wizard
+- tiendas en línea de tipo 1, asistente para complementos
+- Reproductor de Windows Media en línea, asistente para instalar complementos
+- online stores,installing plug-in wizard
+- tiendas en línea de tipo 1, asistente para instalación de complementos
+- complementos, Reproductor de Windows Media en línea
 - complementos, tiendas en línea
-- complementos, escriba 1 tiendas en línea
-- complementos, Asistente para instalar complementos
-- complementos, Asistente para complementos
-- Complementos de Windows Media Player, escriba 1 tiendas en línea
-- Complementos de Windows Media Player, tiendas en línea
-- Complementos de Windows Media Player, Windows Media Player tiendas en línea
-- Complementos de Windows Media Player, instalación del Asistente para complementos
-- Complementos de Windows Media Player, Asistente para complementos
-- instalación del Asistente para complementos
+- complementos, escriba 1 tienda en línea
+- complementos, asistente para instalar complementos
+- complementos, asistente para complementos
+- Reproductor de Windows Media complementos, escriba 1 tienda en línea
+- Reproductor de Windows Media complementos, tiendas en línea
+- Reproductor de Windows Media complementos, Reproductor de Windows Media en línea
+- Reproductor de Windows Media complementos, asistente para instalar complementos
+- Reproductor de Windows Media complementos, asistente para complementos
+- Asistente para instalar complementos
 - Asistente para complementos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13d236c2160c5783f909430e6b49ef2e6361de22
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1088d915715be44de092604d626bc24792f6d263a9765a1076ce1afa3f67ef4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135548"
 ---
-# <a name="installing-the-online-store-plug-in-wizard"></a>Instalación del Asistente para complementos de tienda en línea
+# <a name="installing-the-online-store-plug-in-wizard"></a>Instalación del Asistente para complementos de la tienda en línea
 
 Para configurar el entorno de desarrollo para crear complementos de tienda en línea de tipo 1, debe instalar los siguientes elementos:
 
 -   Microsoft Visual Studio 2005 o posterior
--   Windows Media Player 11 o posterior
--   Windows SDK, que incluye el SDK de Windows Media Player
+-   Reproductor de Windows Media 11 o posterior
+-   Windows SDK, que incluye el SDK de Reproductor de Windows Media
 -   Asistente para complementos de tienda en línea
 
 ## <a name="installing-the-wizard"></a>Instalación del asistente
 
-Siga estos pasos para instalar el Asistente para complementos de tienda en línea en Visual Studio.
+Siga estos pasos para instalar el Asistente para complementos de la tienda en línea en Visual Studio.
 
-1.  Busque la carpeta en la que instaló el Windows SDK. Expanda la carpeta para ver sus subcarpetas y vaya a samples \\ multimedia \\ WMP \\ Wizards \\ Services.
+1.  Busque la carpeta donde instaló el SDK Windows. Expanda la carpeta para ver sus subcarpetas y vaya a Ejemplos \\ de servicios de \\ asistentes de WMP \\ \\ multimedia.
 2.  Busque los tres archivos siguientes:
-    -   wmpservices. vsz
-    -   wmpservices. vsdir
-    -   wmpservices. ico
-3.  Con un editor de texto como el Bloc de notas, edite el archivo wmpservices. vsz.
+    -   wmpservices.vsz
+    -   wmpservices.vsdir
+    -   wmpservices.ico
+3.  Con un editor de texto como Bloc de notas, edite el archivo wmpservices.vsz.
 
     Busque la línea siguiente:
 
@@ -61,18 +61,18 @@ Siga estos pasos para instalar el Asistente para complementos de tienda en líne
 
     
 
-    Cambie `<VsWizardEngine version goes here>` a uno de los valores siguientes, en función de la versión de Visual Studio que tenga instalada.
+    Cambie `<VsWizardEngine version goes here>` a uno de los siguientes valores, en función de la versión de Visual Studio que haya instalado.
 
     
 
     | Value              | Versión de Visual Studio |
     |--------------------|-----------------------|
-    | VsWizardEngine. 8.0 | Visual Studio 2005    |
-    | VsWizardEngine. 9.0 | Visual Studio 2008    |
+    | VsWizardEngine.8.0 | Visual Studio 2005    |
+    | VsWizardEngine.9.0 | Visual Studio 2008    |
 
     
 
-     
+     
 
     Busque la línea siguiente:
 
@@ -84,7 +84,7 @@ Siga estos pasos para instalar el Asistente para complementos de tienda en líne
 
     Cambie `<path to wmpservices directory goes here>` a la ruta de acceso donde se encuentran los archivos del asistente.
 
-    Por ejemplo, supongamos que tiene Visual Studio 2008 y que los archivos del asistente están aquí: C: \\ archivos de programa \\ Microsoft SDK \\ Windows \\ v 7.0 \\ Samples multimedia de los servicios de los \\ \\ \\ asistentes \\ . El archivo wmpservices. vsz tendrá el siguiente aspecto:
+    Por ejemplo, supongamos que Visual Studio 2008 y los archivos del asistente están aquí: C: Archivos de programa Sdk de Microsoft Windows asistentes multimedia WMP de ejemplos \\ \\ \\ \\ v7.0. \\ \\ \\ \\ \\ A continuación, el archivo wmpservices.vsz tendría el siguiente aspecto:
 
     ```
     VSWIZARD 7.0
@@ -97,19 +97,19 @@ Siga estos pasos para instalar el Asistente para complementos de tienda en líne
 
     
 
-4.  Busque la carpeta en la que instaló Visual Studio. Expanda la carpeta para ver sus subcarpetas y busque una carpeta denominada VCProjects.
-5.  Copie los tres archivos enumerados en el paso 2 en la carpeta VCProjects. El asistente ya está instalado.
+4.  Busque la carpeta donde instaló Visual Studio. Expanda la carpeta para ver sus subcarpetas y busque una carpeta denominada vcprojects.
+5.  Copie los tres archivos enumerados en el paso 2 en la carpeta vcprojects. El asistente ya está instalado.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Compilar el complemento para una tienda en línea de tipo 1](building-the-plug-in-for-a-type-1-online-store.md)
+[Creación del complemento para una tienda en línea de tipo 1](building-the-plug-in-for-a-type-1-online-store.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

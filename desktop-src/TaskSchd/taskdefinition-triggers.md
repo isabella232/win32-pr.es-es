@@ -1,11 +1,11 @@
 ---
-title: Propiedad TaskDefinition. Triggers
-description: En el caso de scripting, obtiene o establece una colección de desencadenadores que se utilizan para iniciar una tarea.
+title: Propiedad TaskDefinition.Triggers
+description: Para el scripting, obtiene o establece una colección de desencadenadores que se usan para iniciar una tarea.
 ms.assetid: ff5faa5d-30eb-4ecb-91bc-ae5e42fec69f
 keywords:
-- Programador de tareas de propiedades de los desencadenadores
-- Propiedad triggers Programador de tareas, objeto TaskDefinition
-- Programador de tareas de objeto TaskDefinition, propiedad triggers
+- Desencadenadores de propiedades Programador de tareas
+- Desencadenadores de propiedades Programador de tareas , objeto TaskDefinition
+- Objeto TaskDefinition Programador de tareas , propiedad Triggers
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 914724c8b0f39cafb7328a39acd827eed1ec386e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1c6dc654473b7e6c01e439f48e013b8e758383641f711643098460ce5bdb4960
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975025"
 ---
-# <a name="taskdefinitiontriggers-property"></a>Propiedad TaskDefinition. Triggers
+# <a name="taskdefinitiontriggers-property"></a>Propiedad TaskDefinition.Triggers
 
-En el caso de scripting, obtiene o establece una colección de desencadenadores que se utilizan para iniciar una tarea.
+Para el scripting, obtiene o establece una colección de desencadenadores que se usan para iniciar una tarea.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -38,7 +38,7 @@ TaskDefinition.Triggers As TriggerCollection
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Colección de desencadenadores que se utilizan para iniciar una tarea.
+Colección de desencadenadores que se usan para iniciar una tarea.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,9 +46,9 @@ Colección de desencadenadores que se utilizan para iniciar una tarea.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -60,7 +60,7 @@ Colección de desencadenadores que se utilizan para iniciar una tarea.
 [**TriggerCollection**](triggercollection.md)
 </dt> <dt>
 
-[**Activado**](trigger.md)
+[**detonante**](trigger.md)
 </dt> </dl>
 
  

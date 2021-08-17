@@ -1,7 +1,7 @@
 ---
-description: Extrae los coeficientes de proyección de análisis de componentes principales por ejemplo (PCA) de un búfer de datos comprimidos ID3DXPRTCompBuffer y agrega los datos a un objeto IDirect3DTexture9.
+description: Extrae los coeficientes de proyección de análisis de componentes principales (PCA) por ejemplo de un búfer de datos comprimido ID3DXPRTCompBuffer y agrega los datos a un objeto IDirect3DTexture9.
 ms.assetid: 2159e57d-b8e5-421f-b20a-ac58b29e3c45
-title: 'ID3DXPRTCompBuffer:: ExtractTexture (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTCompBuffer::ExtractTexture (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a6a2200c680c19019375a5e33d2d8b675992dc38
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6b6dd2f0a366cf371347d1f8f7289e1ad3c782e069dcd9f7007abbd7c1a5c33d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104083752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985655"
 ---
-# <a name="id3dxprtcompbufferextracttexture-method"></a>ID3DXPRTCompBuffer:: ExtractTexture (método)
+# <a name="id3dxprtcompbufferextracttexture-method"></a>Método ID3DXPRTCompBuffer::ExtractTexture
 
-Extrae los coeficientes de proyección de análisis de componentes principales por ejemplo (PCA) de un búfer de datos comprimidos [**ID3DXPRTCompBuffer**](id3dxprtcompbuffer.md) y agrega los datos a un objeto [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) .
+Extrae los coeficientes de proyección de análisis de componentes principales (PCA) por ejemplo de un búfer de datos comprimido [**ID3DXPRTCompBuffer**](id3dxprtcompbuffer.md) y agrega los datos a un objeto [**IDirect3DTexture9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ HRESULT ExtractTexture(
 
 <dl> <dt>
 
-*StartPCA* \[ de\]
+*StartPCA* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Valor inicial del coeficiente de búfer desde el que se van a extraer los datos de textura.
+Valor inicial del coeficiente de búfer del que se extraerán los datos de textura.
 
 </dd> <dt>
 
-*NumPCA* \[ de\]
+*NumPCA* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de coeficientes de PCA que se van a extraer del búfer.
+Número de coeficientes de PCA que se extraerán del búfer.
 
 </dd> <dt>
 
-*pTexture* \[ de\]
+*pTexture* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**
 
-Puntero a un objeto de textura [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) que almacenará los coeficientes del PCA.
+Puntero a un [**objeto de textura IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) que almacenará coeficientes de PCA.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Puntero a un objeto de textura [**IDirect3DTexture9**](/windows/win32/api/d3d9he
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

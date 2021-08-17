@@ -1,9 +1,9 @@
 ---
 title: out (atributo)
-description: El atributo \ out \ identifica los parámetros de puntero devueltos por el procedimiento llamado al procedimiento que realiza la llamada (desde el servidor al cliente).
+description: El atributo \ out\ identifica los parámetros de puntero que se devuelven desde el procedimiento llamado al procedimiento que realiza la llamada (desde el servidor al cliente).
 ms.assetid: f92ef78a-321b-460e-a18a-b63a5e199ad0
 keywords:
-- out (atributo) MIDL
+- atributo out MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b590cadeb12a77cff859991efb6356393072823
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 32bdbd18c6412f943a124a62badb9c154fa9aeb64573919970ffc1dc4af17798
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105665808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066805"
 ---
 # <a name="out-attribute"></a>out (atributo)
 
-El \[  \] atributo out identifica los parámetros de puntero devueltos por el procedimiento llamado al procedimiento que realiza la llamada (desde el servidor al cliente).
+El atributo out identifica los parámetros de puntero que se devuelven del procedimiento llamado al procedimiento de llamada \[  \] (del servidor al cliente).
 
 ``` syntax
 [ [function-attribute-list] ] type-specifier [pointer-declarator] function-name(
@@ -34,24 +34,24 @@ El \[  \] atributo out identifica los parámetros de puntero devueltos por el pr
 
 <dl> <dt>
 
-*lista de atributos de función* 
+*function-attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos que se aplican a la función. Los atributos de función válidos son \[ [**callback**](callback.md) \] , \[ [**local**](local.md) \] ; el atributo de puntero \[ [**ref**](ref.md) \] , \[ [**Unique**](unique.md) \] o \[ [**ptr**](ptr.md) \] ; y los atributos de uso \[ [**cadena**](string.md) \] , \[ [**omitir**](ignore.md) \] y \[ [**\_ identificador de contexto**](context-handle.md) \] .
+Especifica cero o más atributos que se aplican a la función. Los atributos de función válidos son la devolución de llamada , local; el atributo de puntero \[ [](callback.md) \] \[ [](local.md) \] \[ [**ref**](ref.md) \] , \[ [**unique**](unique.md) \] o \[ [**ptr**](ptr.md); \] \[ [](string.md) \] \[ [](ignore.md) \] \[ [**\_**](context-handle.md) \] y la cadena de atributos de uso , ignore y el identificador de contexto .
 
 </dd> <dt>
 
-*Type-Specifier* 
+*type-specifier* 
 </dt> <dd>
 
-Especifica un [tipo \_ base](midl-base-types.md), un [**struct**](struct.md), una [**Unión**](union.md)o un tipo de [**enumeración**](enum.md) o un identificador de tipo. Una especificación de almacenamiento opcional puede preceder *a Type-Specifier*.
+Especifica un tipo base , [**struct**](struct.md), [**union**](union.md)o [**tipo de enumeración**](enum.md) o identificador de tipo. [ \_](midl-base-types.md) Una especificación de almacenamiento opcional puede *preceder al especificador de tipo*.
 
 </dd> <dt>
 
-*declarador de puntero* 
+*pointer-declarator* 
 </dt> <dd>
 
-Especifica cero o más declaradores de puntero. Un declarador de puntero es el mismo que el declarador de puntero utilizado en C; se construye a partir del \* designador, modificadores como **Far** y el calificador [**const**](const.md).
+Especifica cero o más declaradores de puntero. Un declarador de puntero es el mismo que el declarador de puntero usado en C; se construye a partir del \* designador, modificadores como **, y** el calificador [**const**](const.md).
 
 </dd> <dt>
 
@@ -62,29 +62,29 @@ Especifica el nombre del procedimiento remoto.
 
 </dd> <dt>
 
-*Parameter-Attribute-List* 
+*parameter-attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos adecuados para un tipo de parámetro especificado. Los atributos de parámetro con el \[ atributo **out** \] también pueden sacar el atributo direccional \[  \] ; los atributos de campo \[ [**primero \_ son**](first-is.md) \] , \[ [**Last \_ es**](last-is.md) \] , \[ [**length \_**](length-is.md)es \] , \[ [**Max \_ is**](max-is.md) \] , \[ [**size \_ is**](size-is.md) \] y \[ [**Switch \_ Type**](switch-type.md) \] ; el atributo de puntero \[ [**ref**](ref.md) \] , \[ [**Unique**](unique.md) \] o \[ [**ptr**](ptr.md) \] ; y el \[ [**\_ identificador de contexto**](context-handle.md) y la \] \[ [**cadena**](string.md) \] de atributos de uso. El atributo de uso \[ [**Ignore**](ignore.md) \] no se puede usar como atributo de parámetro. Separe varios atributos con comas.
+Especifica cero o más atributos adecuados para un tipo de parámetro especificado. Los atributos de parámetro con el atributo out también pueden sacar el atributo direccional; los atributos de campo primero son , el último es , length es , max es , size es y switch type ; el atributo de puntero \[  \] \[  \] \[ [**\_**](first-is.md) \] \[ [**\_**](last-is.md) \] \[ [**\_**](length-is.md) \] \[ [**\_**](max-is.md) \] \[ [**\_**](size-is.md) \] \[ [**\_**](switch-type.md) \] \[ [**ref**](ref.md) \] , \[ [**unique**](unique.md) \] o \[ [**ptr**](ptr.md); \] \[ [**\_**](context-handle.md) \] \[ [](string.md) \] y el identificador de contexto de los atributos de uso y la cadena . El atributo usage \[ [**ignore no**](ignore.md) \] se puede usar como atributo de parámetro. Separe varios atributos con comas.
 
 </dd> <dt>
 
-*clara* 
+*declarador* 
 </dt> <dd>
 
-Especifica los declaradores estándar, como identificadores, declaradores de puntero y declaradores de matriz. Para obtener más información, vea [matrices y Sized-Pointer atributos](array-and-sized-pointer-attributes.md), [**matrices**](arrays-1.md)y [matrices y punteros](/windows/desktop/Rpc/arrays-and-pointers). El declarador de parámetro del declarador de la función, como el nombre del parámetro, es opcional.
+Especifica los declaradores estándar, como identificadores, declaradores de puntero y declaradores de matriz. Para obtener más información, vea [Array and Sized-Pointer Attributes](array-and-sized-pointer-attributes.md), [**arrays**](arrays-1.md), and [Arrays and Pointers](/windows/desktop/Rpc/arrays-and-pointers). El declarador de parámetros del declarador de función, como el nombre del parámetro, es opcional.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El \[ atributo **out** \] indica que un parámetro que actúa como puntero y sus datos asociados en memoria se devolverán desde el procedimiento llamado al procedimiento que realiza la llamada.
+El atributo out indica que un parámetro que actúa como puntero y sus datos asociados en memoria se van a devolver desde el procedimiento llamado al \[  \] procedimiento que realiza la llamada.
 
-El \[ atributo **out** \] debe ser un puntero. Los compiladores de DCE IDL requieren la presencia de un \* declarador de puntero explícito en la declaración del parámetro. Microsoft IDL ofrece una extensión que quita este requisito y permite una matriz o un tipo de puntero definido previamente.
+El \[ **atributo out** \] debe ser un puntero. Los compiladores IDL de DCE requieren la presencia de un declarador explícito como \* puntero en la declaración de parámetros. Microsoft IDL ofrece una extensión que elimina este requisito y permite una matriz o un tipo de puntero definido previamente.
 
-Un atributo relacionado, \[ [**en**](in.md) \] , indica que el parámetro se pasa desde el procedimiento que realiza la llamada al procedimiento llamado. Los \[  \] atributos in y \[ **out** \] especifican la dirección en la que se pasan los parámetros. Un parámetro puede definirse como \[ solo **en**, solo \] \[ **fuera** \] o \[ **en**, **out** \] .
+Un atributo relacionado, en , indica que el parámetro se pasa del procedimiento que realiza la llamada \[ [](in.md) \] al procedimiento llamado. Los \[ **atributos de** \] entrada \[ **y** salida especifican la dirección \] en la que se pasan los parámetros. Un parámetro se puede definir como \[ **en** \] -only, \[ **out** \] -only o \[ **en**, **out** \] .
 
-\[  \] Se supone que un parámetro de solo salida está sin definir cuando se llama al procedimiento remoto y el servidor asigna la memoria para el objeto. Dado que el puntero o los parámetros de nivel superior deben apuntar siempre a un almacenamiento válido y, por tanto, no pueden ser **null**, no se \[  \] puede aplicar out a \[ [](unique.md) \] punteros únicos o \[ [**ptr**](ptr.md) de nivel superior \] . Los parámetros que son \[  \] punteros únicos o \[ **ptr** \] deben estar \[ [**en**](in.md) \] \[ los parámetros **out** o in \] .
+Se supone que un parámetro out -only no está definido cuando se llama al procedimiento remoto y el servidor asigna la \[  \] memoria para el objeto. Puesto que el puntero o los parámetros de nivel superior siempre deben apuntar al almacenamiento válido y, por tanto, no pueden ser **NULL,** no se puede aplicar out a punteros únicos o \[  \] \[ [](unique.md) \] \[ [**ptr de**](ptr.md) \] nivel superior. Los parámetros que \[ **son** \] \[ punteros **únicos o ptr** deben estar \] \[ [**en**](in.md) \] o \[ **en** parámetros de **salida.** \]
 
 ## <a name="examples"></a>Ejemplos
 
@@ -96,10 +96,10 @@ HRESULT MyFunction([out] short * pcount);
 
 <dl> <dt>
 
-[**matrices**](arrays-1.md)
+[**Matrices**](arrays-1.md)
 </dt> <dt>
 
-[Tipos base de MIDL](midl-base-types.md)
+[Tipos base midl](midl-base-types.md)
 </dt> <dt>
 
 [**devolución de llamada**](callback.md)
@@ -108,57 +108,57 @@ HRESULT MyFunction([out] short * pcount);
 [**const**](const.md)
 </dt> <dt>
 
-[**identificador de contexto \_**](context-handle.md)
+[**identificador de \_ contexto**](context-handle.md)
 </dt> <dt>
 
-[**enumeración**](enum.md)
+[**Enum**](enum.md)
 </dt> <dt>
 
-[**el primero \_ es**](first-is.md)
+[**en \_ primer lugar es**](first-is.md)
 </dt> <dt>
 
-[**omitir**](ignore.md)
+[**Ignorar**](ignore.md)
 </dt> <dt>
 
-[**de**](in.md)
+[**En**](in.md)
 </dt> <dt>
 
-[**última \_ es**](last-is.md)
+[**el \_ último es**](last-is.md)
 </dt> <dt>
 
-[**la longitud \_ es**](length-is.md)
+[**length \_ es**](length-is.md)
 </dt> <dt>
 
-[**localizar**](local.md)
+[**Local**](local.md)
 </dt> <dt>
 
-[**Max \_ es**](max-is.md)
+[**max \_ is**](max-is.md)
 </dt> <dt>
 
-[**ptr**](ptr.md)
+[**Ptr**](ptr.md)
 </dt> <dt>
 
 [**ref**](ref.md)
 </dt> <dt>
 
-[**el tamaño \_ es**](size-is.md)
+[**el \_ tamaño es**](size-is.md)
 </dt> <dt>
 
-[**string**](string.md)
+[**Cadena**](string.md)
 </dt> <dt>
 
-[**Destructor**](struct.md)
+[**Estructura**](struct.md)
 </dt> <dt>
 
-[**tipo de conmutador \_**](switch-type.md)
+[**tipo \_ de conmutador**](switch-type.md)
 </dt> <dt>
 
 [**Unión**](union.md)
 </dt> <dt>
 
-[**espeficarse**](unique.md)
+[**Único**](unique.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,6 +1,6 @@
 ---
 title: Cómo podemos garantizar la compatibilidad del ecosistema combinado
-description: A continuación se encuentran algunos procedimientos recomendados que Microsoft recomienda para que pueda asegurarse de que las aplicaciones son compatibles con Windows 10.
+description: A continuación se encuentran algunos procedimientos recomendados que microsoft recomienda para asegurarse de que las aplicaciones son compatibles con Windows 10.
 ms.assetid: C7F5BB21-9D88-4F47-BC49-8DB850ACF69E
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118211783"
 ---
 # <a name="how-we-can-ensure-compatibility-of-the-combined-ecosystem"></a>Cómo podemos garantizar la compatibilidad del ecosistema combinado
 
-A continuación se encuentran algunos procedimientos recomendados que Microsoft recomienda para que pueda asegurarse de que las aplicaciones son compatibles con Windows 10.
+A continuación se encuentran algunos procedimientos recomendados que microsoft recomienda para asegurarse de que las aplicaciones son compatibles con Windows 10.
 
 -   [Comprobación de la versión de Windows](windows-version-check.md)
 -   [API sin documentar](undocumented-apis.md)

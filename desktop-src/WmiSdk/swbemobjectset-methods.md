@@ -5,21 +5,21 @@ ms.tgt_platform: multiple
 title: Métodos SWbemObjectSet
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c91fa2bdeaf400d639fe07115bbb76cf1a0cbe7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f368da733d7c860ab888fa3826d6da27548f96bba14791f76fd86e7fa401703
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119954885"
 ---
 # <a name="swbemobjectset-methods"></a>Métodos SWbemObjectSet
 
-El objeto [**SWbemObjectSet**](swbemobjectset.md) expone los métodos siguientes.
+El [**objeto SWbemObjectSet**](swbemobjectset.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Item (método)**](swbemobjectset-item.md)
--   [**ItemIndex (método)**](swbemobjectset-itemindex.md)
+-   [**Método Item**](swbemobjectset-item.md)
+-   [**Método ItemIndex**](swbemobjectset-itemindex.md)
 
  
 

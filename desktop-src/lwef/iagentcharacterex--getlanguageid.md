@@ -4,16 +4,16 @@ description: IAgentCharacterEx GetLanguageID
 ms.assetid: 4e4e5342-edf9-480b-a9c3-e2626fd89e76
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d847bf392709b2433b045a357a703173e2de454
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: fb0eeee052111ef0acbb843f4362ca0bfd3b40ab7d154ef0c46c43f6c2d0e0f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105553"
 ---
 # <a name="iagentcharacterexgetlanguageid"></a>IAgentCharacterEx::GetLanguageID
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT GetLanguageID(
@@ -30,7 +30,7 @@ Recupera el identificador de idioma establecido para el carácter.
 <span id="plangID"></span><span id="plangid"></span><span id="PLANGID"></span>*plangID*
 </dt> <dd>
 
-Dirección de una variable que recibe la configuración del identificador de idioma del carácter.
+Dirección de una variable que recibe la configuración del identificador de idioma para el carácter.
 
 </dd> </dl>
 
@@ -50,7 +50,7 @@ Entero Long que especifica el identificador de idioma del carácter. El identifi
 | Neerlandés                 | 0x0413 | Rumano              | 0x0418 |
 | Inglés (Gran Bretaña)     | 0x0809 | Ruso               | 0x0419 |
 | Inglés (EE.UU.)          | 0x0409 | Eslovaco             | 0x041B |
-| Finlandés               | 0x040B | Esloveno             | 0x0424 |
+| Finés               | 0x040B | Esloveno             | 0x0424 |
 | Francés                | 0x040C | Español               | 0x0C0A |
 | Alemán                | 0x0407 | Sueco               | 0x041D |
 | Griego                 | 0x0408 | Tailandés                  | 0x041E |

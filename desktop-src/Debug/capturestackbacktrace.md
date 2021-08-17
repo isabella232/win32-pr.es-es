@@ -1,7 +1,7 @@
 ---
 UID: ''
-title: CaptureStackBackTrace función)
-description: Captura un seguimiento de la pila de retroceso recorriendo la pila.
+title: Función CaptureStackBackTrace
+description: Captura un seguimiento de la pila de nuevo recorrindo la pila.
 old-location: ''
 ms.assetid: na
 ms.date: 04/10/2019
@@ -34,18 +34,18 @@ api_name:
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: 3c9edc9184000d513b82ad4131e3ac05c2ed22d6
-ms.sourcegitcommit: 1f6a1bfc1c4bb2641bc3ba44beb1f2727c94681b
+ms.openlocfilehash: 0b6cad22d7a52908c3aa02bef7e23a57899e421f87bda00660519750de742919
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "105656307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119279509"
 ---
-# <a name="capturestackbacktrace-function"></a>CaptureStackBackTrace función)
+# <a name="capturestackbacktrace-function"></a>Función CaptureStackBackTrace
 
-## <a name="description"></a>Descripción
+## <a name="description"></a>Description
 
-Captura un seguimiento de la pila de retroceso recorriendo la pila y grabando la información de cada fotograma.
+Captura un seguimiento de la pila de nuevo recorrindo la pila y registrando la información de cada fotograma.
 
 ```cpp
 USHORT WINAPI CaptureStackBackTrace(
@@ -60,34 +60,34 @@ USHORT WINAPI CaptureStackBackTrace(
 
 ### <a name="framestoskip-in"></a>FramesToSkip [in]
 
-Número de fotogramas que se van a omitir desde el inicio del seguimiento de la copia de seguridad.
+Número de fotogramas que se omitirán desde el inicio del seguimiento posterior.
 
 ### <a name="framestocapture-in"></a>FramesToCapture [in]
 
-Número de fotogramas que se van a capturar.
-Puede capturar hasta **MAXUSHORT** fotogramas.
+Número de fotogramas que se capturarán.
+Puede capturar hasta fotogramas **MAXUSHORT.**
 
-**Windows Server 2003 y Windows XP:**  La suma de los parámetros *FramesToSkip* y *FramesToCapture* debe ser inferior a 63.
+**Windows Server 2003 y Windows XP:**  La suma de los *parámetros FramesToSkip* y *FramesToCapture* debe ser inferior a 63.
 
-### <a name="backtrace-out"></a>Paseguir [out]
+### <a name="backtrace-out"></a>BackTrace [out]
 
-Matriz de punteros capturados del seguimiento de pila actual.
+Matriz de punteros capturada del seguimiento de pila actual.
 
-### <a name="backtracehash-out-optional"></a>BackTraceHash [out, opcional]
+### <a name="backtracehash-out-optional"></a>BackTraceHash [out, optional]
 
-Valor que se puede utilizar para organizar las tablas hash.
-Si este parámetro es **null**, no se calcula ningún valor hash.
+Valor que se puede usar para organizar las tablas hash.
+Si este parámetro es **NULL,** no se calcula ningún valor hash.
 
-Este valor se calcula en función de los valores de los punteros devueltos en la matriz de subseguimiento.
+Este valor se calcula en función de los valores de los punteros devueltos en la matriz BackTrace.
 Dos seguimientos de pila idénticos generarán valores hash idénticos.
 
 ## <a name="returns"></a>Devoluciones
 
 Número de fotogramas capturados.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **CaptureStackBackTrace** se define como la función **RtlCaptureStackBackTrace** (la definición se incluye en el Windows SDK a partir de Windows Vista).
-Para obtener más información, vea WinBase. h y Winnt. h.
+La **función CaptureStackBackTrace** se define como la función **RtlCaptureStackBackTrace** (la definición se incluye en el SDK de Windows a partir de Windows Vista).
+Para obtener más información, consulta WinBase.h y WinNT.h.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también

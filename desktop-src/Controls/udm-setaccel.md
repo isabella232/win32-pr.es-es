@@ -1,9 +1,9 @@
 ---
-title: Mensaje de UDM_SETACCEL (commctrl. h)
-description: Establece la aceleración para un control de flechas.
+title: UDM_SETACCEL mensaje (Commctrl.h)
+description: Establece la aceleración de un control de arriba a abajo.
 ms.assetid: af1d0a34-13ba-4bda-82f5-d7afab6bb1ed
 keywords:
-- UDM_SETACCEL controles de mensajes de Windows
+- UDM_SETACCEL controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b43ed290ce1668ffcaa9fb086a99ad52e5129ad6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bc746e33c14de0dd177ecc31fc237be7cb8be36280bb2a5ceadff31d2b286ec1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957744"
 ---
-# <a name="udm_setaccel-message"></a>\_Mensaje SETACCEL UDM
+# <a name="udm_setaccel-message"></a>Mensaje \_ SETACCEL de UDM
 
-Establece la aceleración para un control de flechas.
+Establece la aceleración de un control de arriba a abajo.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,20 +32,20 @@ Establece la aceleración para un control de flechas.
 *wParam* 
 </dt> <dd>
 
-Número de estructuras [**UDACCEL**](/windows/desktop/api/Commctrl/ns-commctrl-udaccel) especificadas por *aAccels*.
+Número de [**estructuras UDACCEL**](/windows/desktop/api/Commctrl/ns-commctrl-udaccel) especificadas por *aAccels*.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a una matriz de estructuras [**UDACCEL**](/windows/desktop/api/Commctrl/ns-commctrl-udaccel) que contienen información de aceleración. Los elementos deben ordenarse en orden ascendente según el miembro **nSec** .
+Puntero a una matriz de [**estructuras UDACCEL**](/windows/desktop/api/Commctrl/ns-commctrl-udaccel) que contienen información de aceleración. Los elementos deben ordenarse en orden ascendente en función del **miembro nSec.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Devuelve **true** si es correcto, o **false** en caso contrario.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

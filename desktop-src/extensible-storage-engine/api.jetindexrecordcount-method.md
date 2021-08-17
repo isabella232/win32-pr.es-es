@@ -93,7 +93,7 @@ public static void JetIndexRecordCount(
     
     Número máximo de registros que se cuentan. Un valor de 0 indica que el recuento es ilimitado.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

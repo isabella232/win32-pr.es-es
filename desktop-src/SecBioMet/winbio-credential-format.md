@@ -1,9 +1,9 @@
 ---
-title: Enumeración WINBIO_CREDENTIAL_FORMAT (Winbio \_ Types. h)
-description: Define las marcas que se pueden usar para especificar el formato de credenciales de usuario final.
+title: WINBIO_CREDENTIAL_FORMAT enumeración (Tipos \_ de Winbio.h)
+description: Define marcas que se pueden usar para especificar el formato de credenciales del usuario final.
 ms.assetid: f107e000-98a2-44f0-aa5e-d13b5d9c8d43
 keywords:
-- WINBIO_CREDENTIAL_FORMAT enumeración Plataforma de biometría de Windows API
+- WINBIO_CREDENTIAL_FORMAT enumeración Windows API de Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa28ea56c7af9f78947e64587740300a70f763ca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 82185bdb9d8170abbdba04e758010443dc8be6a37e198edb27a137024dacf9af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910828"
 ---
-# <a name="winbio_credential_format-enumeration"></a>\_Enumeración del formato de credenciales WINBIO \_
+# <a name="winbio_credential_format-enumeration"></a>Enumeración \_ CREDENTIAL FORMAT de WINBIO \_
 
-Define las marcas que se pueden usar para especificar el formato de credenciales de usuario final. Esta enumeración la usa la función [**WinBioSetCredential**](/windows/desktop/api/Winbio/nf-winbio-winbiosetcredential) .
+Define marcas que se pueden usar para especificar el formato de credenciales del usuario final. Esta enumeración la usa la [**función WinBioSetCredential.**](/windows/desktop/api/Winbio/nf-winbio-winbiosetcredential)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,24 +42,24 @@ typedef enum _WINBIO_CREDENTIAL_FORMAT {
 
 <dl> <dt>
 
-<span id="WINBIO_PASSWORD_GENERIC"></span><span id="winbio_password_generic"></span>**WINBIO \_ contraseña \_ genérica**
+<span id="WINBIO_PASSWORD_GENERIC"></span><span id="winbio_password_generic"></span>**CONTRASEÑA GENÉRICA DE WINBIO \_ \_**
 </dt> <dd>
 
 La contraseña está en un formato genérico.
 
 </dd> <dt>
 
-<span id="WINBIO_PASSWORD_PACKED"></span><span id="winbio_password_packed"></span>**contraseña de WINBIO \_ \_ empaquetada**
+<span id="WINBIO_PASSWORD_PACKED"></span><span id="winbio_password_packed"></span>**CONTRASEÑA DE WINBIO \_ \_ EMPAQUETADA**
 </dt> <dd>
 
 La contraseña está en un formato comprimido.
 
 </dd> <dt>
 
-<span id="WINBIO_PASSWORD_PROTECTED"></span><span id="winbio_password_protected"></span>**WINBIO \_ contraseña \_ protegida**
+<span id="WINBIO_PASSWORD_PROTECTED"></span><span id="winbio_password_protected"></span>**PROTECCIÓN CON \_ CONTRASEÑA DE \_ WINBIO**
 </dt> <dd>
 
-La credencial de contraseña se incluyó con [**CredProtect**](/windows/desktop/api/wincred/nf-wincred-credprotecta).
+La credencial de contraseña se ha ajustado [**con CredProtect.**](/windows/desktop/api/wincred/nf-wincred-credprotecta)
 
 </dd> </dl>
 
@@ -69,9 +69,9 @@ La credencial de contraseña se incluyó con [**CredProtect**](/windows/desktop/
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                                  |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                                  |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                       |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 
@@ -79,7 +79,7 @@ La credencial de contraseña se incluyó con [**CredProtect**](/windows/desktop/
 
 <dl> <dt>
 
-[Enumeraciones de aplicación cliente](client-application-enumerations.md)
+[Enumeraciones de aplicaciones cliente](client-application-enumerations.md)
 </dt> <dt>
 
 [**WinBioSetCredential**](/windows/desktop/api/Winbio/nf-winbio-winbiosetcredential)

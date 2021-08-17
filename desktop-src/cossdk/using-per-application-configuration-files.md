@@ -1,22 +1,22 @@
 ---
-description: Usar archivos de configuración de Per-Application
+description: Uso de Per-Application de configuración
 ms.assetid: a600e5a4-b2bb-45a6-8b86-5ea3caf7aa78
-title: Usar archivos de configuración de Per-Application
+title: Uso de Per-Application de configuración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd4d59d05f6a7b9b894a2577eb55cceffa49d267
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2bbc38a2433d2da6d2a39985523a5ebffd0d971102bc883e44ae24d9fcc165ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119372345"
 ---
-# <a name="using-per-application-configuration-files"></a>Usar archivos de configuración de Per-Application
+# <a name="using-per-application-configuration-files"></a>Uso de Per-Application de configuración
 
 El uso de archivos de configuración de COM+ por aplicación requiere los siguientes pasos básicos:
 
 -   Configure un directorio raíz de la aplicación para una aplicación COM+.
--   Cree archivos Application. manifest y application.config en el directorio raíz de la aplicación COM+.
+-   Cree application.manifest y application.config archivos en el directorio raíz de la aplicación COM+.
 
 > [!Note]  
 > Los archivos de configuración por aplicación solo están disponibles a partir de Windows XP con Service Pack 2 (SP2) y Windows Server 2003.
@@ -25,7 +25,7 @@ El uso de archivos de configuración de COM+ por aplicación requiere los siguie
 
 **Para usar un archivo de configuración por aplicación**
 
-1.  Cree una biblioteca de clases .NET, con una referencia al ensamblado System. EnterpriseServices.
+1.  Cree una biblioteca de clases .NET, con una referencia al ensamblado System.EnterpriseServices.
 
 2.  La biblioteca de clases debe contener el código siguiente:
 
@@ -46,26 +46,26 @@ El uso de archivos de configuración de COM+ por aplicación requiere los siguie
 
     
 
-    Tenga en cuenta que "ConfigData1" es un nombre de configuración de ejemplo. Puede reemplazarlo por el nombre de la configuración que prefiera.
+    Tenga en cuenta que "ConfigData1" es un nombre de configuración de ejemplo. Puede reemplazarlo por el nombre de configuración que prefiera.
 
-3.  Cree una aplicación COM+ vacía. Para obtener instrucciones sobre cómo hacerlo, vea [crear una nueva aplicación com+](creating-a-new-com--application.md).
-4.  Instale la biblioteca de clases que ha creado en la aplicación COM+. Para obtener instrucciones sobre cómo hacerlo, consulte [instalación de nuevos componentes](installing-new-components.md).
-5.  En la herramienta administrativa Servicios de componentes, haga clic con el botón secundario en la aplicación COM+ que creó y seleccione **propiedades**.
-6.  En el cuadro de diálogo **propiedades** , seleccione la pestaña **activación** .
-7.  Asegúrese de que el **tipo de activación** está establecido en aplicación de **servidor**.
-8.  En el cuadro de texto **directorio raíz** de la aplicación, escriba la ruta de acceso o busque el directorio en el que desea almacenar los archivos de configuración de la aplicación para esta aplicación.
-9.  Haga clic en **OK**.
+3.  Cree una aplicación COM+ vacía. Para obtener instrucciones sobre cómo hacerlo, consulte [Creación de una nueva aplicación COM+.](creating-a-new-com--application.md)
+4.  Instale la biblioteca de clases que creó en la aplicación COM+. Para obtener instrucciones sobre cómo hacerlo, vea [Installing New Components](installing-new-components.md).
+5.  En la herramienta administrativa Servicios de componentes, haga clic con el botón derecho en la aplicación COM+ que creó y seleccione **Propiedades.**
+6.  En el **cuadro de** diálogo Propiedades, seleccione la **pestaña** Activación.
+7.  Asegúrese de que **el tipo de activación** está establecido en Aplicación de **servidor**.
+8.  En el **cuadro de texto Directorio** raíz de la aplicación, escriba la ruta de acceso o vaya al directorio donde desea almacenar los archivos de configuración de la aplicación para esta aplicación.
+9.  Haga clic en **Aceptar**.
 
-    Tenga en cuenta que también puede especificar el directorio raíz de la aplicación COM+ a través de la propiedad ApplicationDirectory de la clase [**COMAdminCatalogObject**](comadmincatalogobject.md) . Para obtener más información, vea [**aplicaciones**](applications.md).
+    Tenga en cuenta que también puede especificar el directorio raíz de la aplicación COM+ a través de la propiedad ApplicationDirectory de la [**clase COMAdminCatalogObject.**](comadmincatalogobject.md) Para obtener más información, vea [**Aplicaciones**](applications.md).
 
-10. En el directorio que eligió para almacenar los archivos de configuración de la aplicación, cree un archivo denominado *Application*. manifest. Con un editor de texto, agregue el siguiente texto a este archivo:
+10. En el directorio que eligió para almacenar los archivos de configuración de la aplicación, cree un archivo denominado *.manifest de* aplicación. Con un editor de texto, agregue el texto siguiente a este archivo:
 
     ``` syntax
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0" />
     ```
 
-11. En el mismo directorio, cree un archivo denominado *Application*. config. Con un editor de texto, agregue el siguiente texto a este archivo:
+11. En el mismo directorio, cree un archivo denominado *application.config.* Con un editor de texto, agregue el texto siguiente a este archivo:
 
     ``` syntax
     <?xml version="1.0"?>
@@ -76,9 +76,9 @@ El uso de archivos de configuración de COM+ por aplicación requiere los siguie
     </configuration>
     ```
 
-    Tenga en cuenta que este archivo de configuración es solo un ejemplo. Puede crear varias claves con distintos nombres y valores. Sin embargo, tenga en cuenta que "ConfigData1" coincide con el nombre de la configuración usado en la biblioteca de clases creada anteriormente.
+    Tenga en cuenta que este archivo de configuración es simplemente un ejemplo. Puede crear varias claves con distintos nombres y valores. Sin embargo, tenga en cuenta que "ConfigData1" coincide con el nombre de configuración usado en la biblioteca de clases creada anteriormente.
 
-12. Cree una aplicación de consola de .NET, con una referencia a la biblioteca de clases .NET que creó anteriormente, y una referencia al ensamblado System. EnterpriseServices.
+12. Cree una aplicación de consola de .NET, con una referencia a la biblioteca de clases .NET que creó anteriormente y una referencia al ensamblado System.EnterpriseServices.
 13. La aplicación de consola debe contener el código siguiente:
     ```CSharp
     using System;

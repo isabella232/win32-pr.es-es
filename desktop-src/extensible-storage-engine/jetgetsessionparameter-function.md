@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JetGetSessionParameter (función)'
-title: JetGetSessionParameter función)
+description: 'Más información sobre: JetGetSessionParameter (Función)'
+title: JetGetSessionParameter (Función)
 TOCTitle: JetGetSessionParameter Function
 ms:assetid: 36fbcc06-a72d-4bfb-976b-1b705487732a
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ835039(v=EXCHG.10)
@@ -19,21 +19,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f0ac02142d48009d668d903b39163b425d738b55
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: effd1ea5a9489df0a85af54a79cd773cc05b2fa3d6dbe57096a61fbd4c79c25a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119472035"
 ---
-# <a name="jetgetsessionparameter-function"></a>JetGetSessionParameter función)
+# <a name="jetgetsessionparameter-function"></a>JetGetSessionParameter (Función)
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-La función **JetGetSessionParameter** lee el parámetro de sesión para la sesión especificada.
+La **función JetGetSessionParameter** lee el parámetro de sesión de la sesión determinada.
 
-La función **JetGetSessionParameter** se presentó en el sistema operativo Windows 8.
+La **función JetGetSessionParameter** se introdujo en el Windows 8 operativo.
 
 ``` c++
 JET_ERR JET_API JetGetSessionParameter (
@@ -51,11 +51,11 @@ JET_ERR JET_API JetGetSessionParameter (
 
 Sesión que se va a usar para esta llamada.
 
-Cuando se especifica, se omite la instancia especificada y se utilizará la instancia asociada a la sesión.
+Cuando se especifica, se omite la instancia especificada y se usará la instancia asociada a la sesión.
 
 *sesparamid*
 
-IDENTIFICADOR del parámetro de sesión que se va a establecer.
+Identificador del parámetro de sesión que se establecerá.
 
 *pvParam*
 
@@ -65,7 +65,7 @@ Datos de este parámetro de sesión.
 
 Tamaño máximo del conjunto de datos en este parámetro de sesión.
 
-*pcbParamActual*
+*pwParamActual*
 
 Tamaño real del conjunto de datos en este parámetro de sesión.
 
@@ -73,11 +73,11 @@ Tamaño real del conjunto de datos en este parámetro de sesión.
 
 Si se ejecuta correctamente, el búfer de salida adecuado para el parámetro de sesión solicitado se establecerá en el valor de ese parámetro de sesión.
 
-En caso de error, el estado de los búferes de salida será undefined.
+En caso de error, el estado de los búferes de salida será indefinido.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
-El parámetro Session se usa para la duración de la sesión o hasta que se restablezca el valor.
+El parámetro session se usa durante la duración de la sesión o hasta que se restablece el valor.
 
 #### <a name="requirements"></a>Requisitos
 
@@ -92,19 +92,19 @@ El parámetro Session se usa para la duración de la sesión o hasta que se rest
 <td><p>Requiere Windows 8.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Server</strong></p></td>
+<td><p><strong>Servidor</strong></p></td>
 <td><p>Requiere Windows Server 2012.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
+<td><p>Declarado en Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
+<td><p>Use ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>DLL</strong></p></td>
+<td><p><strong>Dll</strong></p></td>
 <td><p>Requiere ESENT.dll.</p></td>
 </tr>
 </tbody>

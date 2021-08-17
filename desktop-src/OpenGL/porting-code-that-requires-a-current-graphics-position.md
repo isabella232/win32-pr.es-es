@@ -1,48 +1,48 @@
 ---
 title: Código de puerto que necesita una posición de gráficos actual
-description: OpenGL no mantiene una posición de gráficos actual. Las funciones de GL de IRIS que dependen de la posición actual de los gráficos, como Move, Draw y RMV, no tienen ningún equivalente en OpenGL.
+description: OpenGL no mantiene una posición de gráficos actual. Las funciones GL de IRIS que dependen de la posición de gráficos actual, como mover, dibujar y rmv, no tienen equivalentes en OpenGL.
 ms.assetid: d6c42d9c-6fbb-4b72-8097-285d19b619c2
 keywords:
-- Migración de la contabilidad de IRIS, posición de gráficos actual
-- trasladar de IRIS GL, posición de gráficos actual
-- trasladar a OpenGL desde IRIS GL, posición de gráficos actual
-- Exportación de OpenGL desde IRIS GL, posición de gráficos actual
-- posición de los gráficos actuales
-- posiciones de trama
+- Porte de IRIS GL, posición de gráficos actual
+- porting from IRIS GL,current graphics position
+- porting to OpenGL from IRIS GL,current graphics position
+- Porte openGL desde IRIS GL, posición de gráficos actual
+- posición de gráficos actual
+- Posiciones de trama
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd7e7cbbaf0a22385c83569775758e24f70cd210
-ms.sourcegitcommit: b95a94ffffda33f9ebbdd41787c01866444b4cf4
+ms.openlocfilehash: f2354264ed5ad022c0657c95a31007ad33df2882d3c9ab2c44cfafeea99b53d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "103785134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119485795"
 ---
 # <a name="port-code-that-needs-a-current-graphics-position"></a>Código de puerto que necesita una posición de gráficos actual
 
-OpenGL no mantiene una posición de gráficos actual. Las funciones de GL de IRIS que dependen de la posición actual de los gráficos, como **Move**, **Draw** y **RMV**, no tienen ningún equivalente en OpenGL.
+OpenGL no mantiene una posición de gráficos actual. Las funciones GL de IRIS que dependen de la posición de gráficos actual, como mover **,** dibujar y **rmv,** no tienen equivalentes en OpenGL.
 
-Las versiones anteriores de IRIS GL incluían comandos de dibujo que se basan en la posición actual de los gráficos, aunque no se recomienda su uso. Tendrá que volver a escribir el código si se basó en la posición actual de los gráficos de cualquier manera, o si se usara cualquiera de las siguientes rutinas:
+Las versiones anteriores de IRIS GL incluían comandos de dibujo que se basaban en la posición de gráficos actual, aunque no se ha desaconsejado su uso. Tendrá que volver a escribir el código si se ha basado en la posición actual de los gráficos de cualquier manera, o si ha usado cualquiera de las rutinas siguientes:
 
--   **dibujar** y **desplace**
--   **PMV**, **PDR** y **PCLOS**
--   **RDR**, **RMV**, **rpdr** y **rpmv**
+-   **dibujar** y **mover**
+-   **pmv,** **pdr** y **pclos**
+-   **rdr,** **rmv,** **rpdr** y **rpmv**
 -   **getgpos**
 
-OpenGL tiene un concepto de posición de trama que corresponde a la posición de carácter actual de la contabilidad de IRIS. Para obtener más información sobre el posicionamiento de tramas, vea [portar operaciones de píxeles](porting-pixel-operations.md).
+OpenGL tiene un concepto de posición de trama que corresponde a la posición del carácter actual de IRIS GL. Para obtener más información sobre el posicionamiento de trama, [vea Porting Pixel Operations](porting-pixel-operations.md).
 
 En este tema se incluye información sobre lo siguiente.
 
--   [Trasladar comandos de borrado de pantalla y de búfer](porting-screen-and-buffer-clearing-commands.md)
--   [Portabilidad de funciones de transformación y de matriz](porting-matrix-and-transformation-functions.md)
--   [Trasladar código de modo MSINGLE](porting-msingle-mode-code.md)
--   [Portabilidad de funciones que obtienen matrices y transformaciones](porting-functions-that-get-matrices-and-transformations.md)
--   [Trasladar las ventanillas, Screenmasks y Scrboxes](porting-viewports--screenmasks--and-scrboxes.md)
--   [Trasladar los planos de recorte](porting-clipping-planes.md)
+-   [Comandos de borrado de búfer y pantalla de porte](porting-screen-and-buffer-clearing-commands.md)
+-   [Porting Matrix and Transformation Functions](porting-matrix-and-transformation-functions.md)
+-   [Porting MSINGLE Mode Code](porting-msingle-mode-code.md)
+-   [Porte de funciones que obtienen matrices y transformaciones](porting-functions-that-get-matrices-and-transformations.md)
+-   [Porting Viewports, Screenmasks y Scrboxes](porting-viewports--screenmasks--and-scrboxes.md)
+-   [Porte de planos de recorte](porting-clipping-planes.md)
 
- 
+ 
 
- 
+ 
 
 
 

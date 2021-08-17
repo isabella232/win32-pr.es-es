@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MIM_OPEN (mmsystem. h)
-description: El \_ mensaje abierto de MIM se envía a una función de devolución de llamada de entrada MIDI cuando se abre un dispositivo de entrada MIDI.
+title: MIM_OPEN mensaje (Mmsystem.h)
+description: El MIM open se envía a una función de devolución de llamada de entrada DE MIDI cuando se abre \_ un dispositivo de entrada DE LÍNEA.
 ms.assetid: c7a8b856-aedd-457d-8a21-0ec2e9303960
 keywords:
-- Mensaje de MIM_OPEN de Windows multimedia
+- MIM_OPEN mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49fcfd05ef7702fbc7bf3108365e49660071ae9a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 15cacc21fd31810adf3188cb1ba267c9727715a0426c98d18f231eeec19b9691
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119428125"
 ---
-# <a name="mim_open-message"></a>\_Mensaje abierto de MIM
+# <a name="mim_open-message"></a>\_MIM Mensaje OPEN
 
-El **mensaje \_ abierto de MIM** se envía a una función de devolución de llamada de entrada MIDI cuando se abre un dispositivo de entrada MIDI.
+El **MIM \_ open** se envía a una función de devolución de llamada de entrada DE MIDI cuando se abre un dispositivo de entrada DE LÍNEA.
 
 
 ```C++
@@ -41,20 +41,20 @@ dwParam2 = reserved
 <span id="dwParam1"></span><span id="dwparam1"></span><span id="DWPARAM1"></span>*dwParam1*
 </dt> <dd>
 
-Sector No use.
+Reservado; no se usan.
 
 </dd> <dt>
 
 <span id="dwParam2"></span><span id="dwparam2"></span><span id="DWPARAM2"></span>*dwParam2*
 </dt> <dd>
 
-Sector No use.
+Reservado; no se usan.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ Este mensaje no devuelve ningún valor.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Este mensaje no devuelve ningún valor.
 [Interfaz digital de instrumentos digitales (MIDI)](musical-instrument-digital-interface--midi.md)
 </dt> <dt>
 
-[Mensajes MIDI](midi-messages.md)
+[Mensajes DE MIDI](midi-messages.md)
 </dt> </dl>
 
  

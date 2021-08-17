@@ -1,9 +1,9 @@
 ---
-title: Estructura de WINBIO_BIR_HEADER (Winbio \_ Types. h)
+title: WINBIO_BIR_HEADER estructura (Winbio \_ types.h)
 description: Contiene el encabezado de un registro de información biométrica (BIR).
 ms.assetid: 4b020720-42ef-4ac7-aaa3-7a0e45198890
 keywords:
-- Plataforma de biometría de Windows API de WINBIO_BIR_HEADER Structure
+- WINBIO_BIR_HEADER estructura Windows API de Marco biométrico
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1479c0db3ee826d79cf95a311215c8cf76f1c96b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d2166a206dd1590f83e16bc67482d3b42e24717efae4c44e54a99b9aa7d83b84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118911088"
 ---
-# <a name="winbio_bir_header-structure"></a>WINBIO \_ \_ estructura de encabezado Bir
+# <a name="winbio_bir_header-structure"></a>Estructura DE ENCABEZADO \_ DE WINBIO BIR \_
 
-La estructura del **\_ \_ encabezado WINBIO Bir** contiene el encabezado de un registro de información biométrica (BIR).
+La **estructura WINBIO \_ BIR \_ HEADER** contiene el encabezado de un registro de información biométrica (BIR).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,40 +57,40 @@ typedef struct _WINBIO_BIR_HEADER {
 **ValidFields**
 </dt> <dd>
 
-Máscara de máscara que especifica los campos de esta estructura válidos. Para obtener más información, [**consulte \_ \_ constantes de campo WINBIO Bir**](winbio-bir-field-constants.md).
+Máscara de bits que especifica qué campos de esta estructura son válidos. Para obtener más información, [**vea WINBIO \_ BIR FIELD \_ Constants**](winbio-bir-field-constants.md).
 
 </dd> <dt>
 
 **HeaderVersion**
 </dt> <dd>
 
-Una constante de la **\_ \_ versión de WINBIO Bir** que especifica la versión del encabezado. Los números de versión son valores de 8 bits en los que los cuatro bits superiores especifican el número principal y los cuatro bits inferiores especifican el número de versión secundaria. Actualmente, esta debe ser WINBIO \_ CBEFF \_ Header \_ version (0x11).
+Constante **WINBIO \_ BIR \_ VERSION** que especifica la versión del encabezado. Los números de versión son valores de 8 bits donde los cuatro bits superiores especifican el número principal y los cuatro bits inferiores especifican el número de versión secundaria. Actualmente, debe ser WINBIO \_ CBEFF \_ HEADER \_ VERSION (versión 0x11).
 
 </dd> <dt>
 
-**PatronHeaderVersion**
+**HeaderVersion**
 </dt> <dd>
 
-Una constante de la **\_ \_ versión de WINBIO Bir** que especifica la versión del encabezado. Los números de versión son valores de 8 bits en los que los cuatro bits superiores especifican el número principal y los cuatro bits inferiores especifican el número de versión secundaria. Actualmente, este debe ser WINBIO de la versión de encabezado de un \_ patrocinador \_ \_ (0x11).
+Constante **WINBIO \_ BIR \_ VERSION** que especifica la versión del encabezado. Los números de versión son valores de 8 bits donde los cuatro bits superiores especifican el número principal y los cuatro bits inferiores especifican el número de versión secundaria. En la actualidad, debe ser WINBIO \_ VERSION DEL ENCABEZADO DE WINBIO \_ \_ (0x11).
 
 </dd> <dt>
 
-**Marcadores de la**
+**DataFlags**
 </dt> <dd>
 
-Valor que especifica el formato de los datos de encabezado. Puede ser **una operación OR bit a bit** de las siguientes marcas de nivel de procesamiento y de seguridad. Para obtener más información, vea [**WINBIO \_ Bir \_ Data \_ Flags constantes**](winbio-bir-data-flags-constants.md).
+Valor que especifica el formato de los datos de encabezado. Puede ser un OR bit a bit **de** las siguientes marcas de nivel de procesamiento y seguridad. Para obtener más información, [**vea WINBIO \_ BIR DATA \_ \_ FLAGS Constants**](winbio-bir-data-flags-constants.md)(Constantes de MARCAS DE DATOS DE WINBIO BIR).
 
 
 
 | Value                                                                                                                                                                                                                                                                                                     | Significado                                                                                                                                                                                                             |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="WINBIO_DATA_FLAG_PRIVACY"></span><span id="winbio_data_flag_privacy"></span><dl> <dt>**WINBIO \_ \_ \_ Privacidad de marca de datos**</dt> <dt>((UCHAR) 0x02)</dt> </dl>                                       | Los datos se cifran.<br/>                                                                                                                                                                                   |
-| <span id="WINBIO_DATA_FLAG_INTEGRITY"></span><span id="winbio_data_flag_integrity"></span><dl> <dt>**WINBIO \_ \_ \_ Integridad**</dt> de la marca de datos <dt>((UCHAR) 0x01)</dt> </dl>                                 | Los datos están firmados digitalmente o protegidos por un código de autenticación de mensajes (MAC).<br/>                                                                                                                        |
-| <span id="WINBIO_DATA_FLAG_SIGNED"></span><span id="winbio_data_flag_signed"></span><dl> <dt>**WINBIO \_ Marca de datos \_ \_ firmada**</dt> <dt>((UCHAR) 0x04)</dt> </dl>                                          | Si se establece esta marca y la marca de integridad de la **\_ marca de datos \_ \_ WINBIO** , los datos se firman. Si no se establece esta marca pero se establece la marca de integridad de la **\_ marca de datos \_ \_ WINBIO** , se calcula un equipo Mac a través de los datos.<br/> |
-| <span id="WINBIO_DATA_FLAG_RAW"></span><span id="winbio_data_flag_raw"></span><dl> <dt>**WINBIO \_ Marca de datos \_ \_ sin formato**</dt> <dt>((UCHAR) 0x20)</dt> </dl>                                                   | Los datos están en el formato con el que se capturaron.<br/>                                                                                                                                                    |
-| <span id="WINBIO_DATA_FLAG_INTERMEDIATE"></span><span id="winbio_data_flag_intermediate"></span><dl> <dt>**WINBIO \_ Marca de datos \_ \_ intermedia**</dt> <dt>((UCHAR) 0x40)</dt> </dl>                        | Los datos no son sin procesar, pero no se han procesado completamente.<br/>                                                                                                                                               |
-| <span id="WINBIO_DATA_FLAG_PROCESSED"></span><span id="winbio_data_flag_processed"></span><dl> <dt>**WINBIO \_ Marca de datos \_ \_ procesada**</dt> <dt>((UCHAR) 0x80)</dt> </dl>                                 | Se han procesado los datos.<br/>                                                                                                                                                                             |
-| <span id="WINBIO_DATA_FLAG_OPTION_MASK_PRESENT"></span><span id="winbio_data_flag_option_mask_present"></span><dl> <dt>**WINBIO \_ Máscara de opción de marca de datos \_ \_ \_ \_ presente**</dt> <dt>((UCHAR) 0x08)</dt> </dl> | Este valor siempre es 1.<br/>                                                                                                                                                                                  |
+| <span id="WINBIO_DATA_FLAG_PRIVACY"></span><span id="winbio_data_flag_privacy"></span><dl> <dt>**WINBIO \_ PRIVACIDAD \_ DE \_ LA MARCA**</dt> DE DATOS <dt>((UCHAR)0x02)</dt> </dl>                                       | Los datos se cifran.<br/>                                                                                                                                                                                   |
+| <span id="WINBIO_DATA_FLAG_INTEGRITY"></span><span id="winbio_data_flag_integrity"></span><dl> <dt>**WINBIO \_ INTEGRIDAD \_ DE \_ LA MARCA**</dt> DE DATOS <dt>((UCHAR)0x01)</dt> </dl>                                 | Los datos están firmados digitalmente o protegidos por un código de autenticación de mensajes (MAC).<br/>                                                                                                                        |
+| <span id="WINBIO_DATA_FLAG_SIGNED"></span><span id="winbio_data_flag_signed"></span><dl> <dt>**WINBIO \_ MARCA \_ DE \_ DATOS FIRMADA**</dt> <dt>((UCHAR)0x04)</dt> </dl>                                          | Si se establecen esta marca y la marca INTEGRIDAD DE LA MARCA DE DATOS **\_ \_ \_ WINBIO,** los datos se firman. Si esta marca no está establecida pero la marca INTEGRIDAD DE LA MARCA DE DATOS WINBIO está establecida, se calcula un MAC a través de los datos. **\_ \_ \_**<br/> |
+| <span id="WINBIO_DATA_FLAG_RAW"></span><span id="winbio_data_flag_raw"></span><dl> <dt>**WINBIO \_ DATA \_ FLAG \_ RAW**</dt> <dt>((UCHAR)0x20)</dt> </dl>                                                   | Los datos tienen el formato con el que se capturaron.<br/>                                                                                                                                                    |
+| <span id="WINBIO_DATA_FLAG_INTERMEDIATE"></span><span id="winbio_data_flag_intermediate"></span><dl> <dt>**WINBIO \_ MARCA \_ DE \_ DATOS INTERMEDIA**</dt> <dt>((UCHAR)0x40)</dt> </dl>                        | Los datos no son sin procesar, pero no se han procesado por completo.<br/>                                                                                                                                               |
+| <span id="WINBIO_DATA_FLAG_PROCESSED"></span><span id="winbio_data_flag_processed"></span><dl> <dt>**WINBIO \_ MARCA \_ DE \_ DATOS PROCESADA**</dt> <dt>((UCHAR)0x80)</dt> </dl>                                 | Los datos se han procesado.<br/>                                                                                                                                                                             |
+| <span id="WINBIO_DATA_FLAG_OPTION_MASK_PRESENT"></span><span id="winbio_data_flag_option_mask_present"></span><dl> <dt>**WINBIO \_ MÁSCARA \_ DE OPCIÓN DE MARCA DE \_ \_ \_ DATOS**</dt> <dt>PRESENTE ((UCHAR)0x08)</dt> </dl> | Este valor siempre es 1.<br/>                                                                                                                                                                                  |
 
 
 
@@ -98,45 +98,45 @@ Valor que especifica el formato de los datos de encabezado. Puede ser **una oper
 
 </dd> <dt>
 
-**Tipo**
+**Type**
 </dt> <dd>
 
-Un \_ \_ valor de tipo biométrico WINBIO que especifica el tipo de datos biométricos a los que se hace referencia en el registro de información biométrico. Actualmente solo se admite la **\_ \_ huella digital de tipo WINBIO** . Para obtener más información, [**vea \_ constantes de \_ tipo biométrico WINBIO**](winbio-biometric-type-constants.md).
+Valor DE TIPO BIOMÉTRICO DE WINBIO que especifica el tipo de datos biométricos a los que se hace referencia \_ en el registro de información \_ biométrica. Actualmente solo **se admite WINBIO \_ TYPE \_ FINGERPRINT.** Para obtener más información, [**vea WINBIO \_ BIOMETRIC \_ TYPE Constants**](winbio-biometric-type-constants.md).
 
 </dd> <dt>
 
-**Subtype**
+**Subtipo**
 </dt> <dd>
 
-Valor **de \_ \_ subtipo biométrico WINBIO** que especifica el subfactor asociado a los datos biométricos. Para obtener más información, vea comentarios y [**WINBIO las \_ constantes de \_ subtipo biométrico**](winbio-biometric-subtype-constants.md).
+Valor **DE \_ \_ SUBTIPO BIOMÉTRICO DE WINBIO** que especifica el subfactor asociado a los datos biométricos. Para obtener más información, vea Comentarios y [**constantes \_ DE \_ SUBTIPO BIOMETRIC DE WINBIO**](winbio-biometric-subtype-constants.md).
 
 </dd> <dt>
 
 **Propósito**
 </dt> <dd>
 
-Una máscara de **\_ \_ propósito de WINBIO Bir** que especifica el uso previsto de los datos. Puede ser **una operación OR bit a bit** de los valores siguientes. Para obtener más información, consulte [**WINBIO \_ Bir \_ purpose Constant**](winbio-bir-purpose-constants.md).
+Máscara **WINBIO \_ BIR \_ PURPOSE** que especifica el uso previsto de los datos. Puede ser un OR bit a bit **de** los valores siguientes. Para obtener más información, [**vea WinBIO \_ BIR PURPOSE \_ Constants**](winbio-bir-purpose-constants.md).
 
--   \_comprobación de propósito de WINBIO \_
--   \_identificación de propósito de WINBIO \_
--   \_inscripción de propósito de WINBIO \_
--   WINBIO \_ propósito \_ inscribirse \_ para la \_ comprobación
--   WINBIO \_ propósito \_ inscribirse \_ para \_ identificación
--   \_Auditoría de propósito de WINBIO \_
+-   COMPROBACIÓN DE \_ PROPÓSITO DE \_ WINBIO
+-   IDENTIFICACIÓN DE \_ PROPÓSITO DE \_ WINBIO
+-   INSCRIPCIÓN DE PROPÓSITO DE WINBIO \_ \_
+-   INSCRIPCIÓN DE PROPÓSITO DE WINBIO \_ \_ PARA LA \_ \_ COMPROBACIÓN
+-   INSCRIPCIÓN DE PROPÓSITO DE WINBIO \_ \_ PARA \_ \_ IDENTIFICACIÓN
+-   AUDITORÍA DE \_ PROPÓSITO DE \_ WINBIO
 
 </dd> <dt>
 
-**Calidad de los**
+**DataQuality**
 </dt> <dd>
 
-Valor que especifica la calidad relativa de los datos biométricos en el registro de información biométrica (BIR). Puede ser un entero comprendido entre 0 y 100 o uno de los valores siguientes. Para obtener más información, vea [**WINBIO \_ Bir \_ Quality constantes**](winbio-bir-quality-constants.md).
+Valor que especifica la calidad relativa de los datos biométricos en el registro de información biométrica (BIR). Puede ser un entero de 0 a 100 o uno de los valores siguientes. Para obtener más información, [**vea CONSTANTES DE CALIDAD \_ \_ DE WINBIO BIR**](winbio-bir-quality-constants.md).
 
 
 
 | Value                                                                                                                                                                                                                                                                                                        | Significado                                                                                          |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| <span id="WINBIO_DATA_QUALITY_NOT_SET"></span><span id="winbio_data_quality_not_set"></span><dl> <dt>**WINBIO \_ Calidad de datos \_ \_ no \_ establecida**</dt> <dt>((WINBIO \_ Bir \_ Quality)-1)</dt> </dl>                   | El creador de BIR admite las medidas de calidad, pero no se establece ningún valor en BIR.<br/> |
-| <span id="WINBIO_DATA_QUALITY_NOT_SUPPORTED"></span><span id="winbio_data_quality_not_supported"></span><dl> <dt>**WINBIO \_ Calidad de datos \_ \_ no \_ admitida**</dt> <dt>((WINBIO \_ Bir \_ Quality)-2)</dt> </dl> | El creador de BIR no admite las medidas de calidad.<br/>                            |
+| <span id="WINBIO_DATA_QUALITY_NOT_SET"></span><span id="winbio_data_quality_not_set"></span><dl> <dt>**WINBIO \_ CALIDAD \_ DE DATOS NO \_ \_ ESTABLECIDA**</dt> <dt>((WINBIO \_ BIR \_ QUALITY)-1)</dt> </dl>                   | El creador de BIR admite las medidas de calidad, pero no se establece ningún valor en la BIR.<br/> |
+| <span id="WINBIO_DATA_QUALITY_NOT_SUPPORTED"></span><span id="winbio_data_quality_not_supported"></span><dl> <dt>**WINBIO \_ CALIDAD \_ DE DATOS NO \_ \_ ADMITIDA**</dt> <dt>((WINBIO \_ BIR \_ QUALITY)-2)</dt> </dl> | Las medidas de calidad no son compatibles con el creador de BIR.<br/>                            |
 
 
 
@@ -147,42 +147,42 @@ Valor que especifica la calidad relativa de los datos biométricos en el registr
 **CreationDate**
 </dt> <dd>
 
-Fecha y hora, en hora universal coordinada (hora del meridiano de Greenwich), a la que se creó el BIR.
+Fecha y hora, en hora universal coordinada (hora media de Greenwich), que se creó la BIR.
 
 </dd> <dt>
 
 **ValidityPeriod**
 </dt> <dd>
 
-Período para el que el BIR es válido.
+Período para el que la BIR es válida.
 
 <dl> <dt>
 
 **BeginDate**
 </dt> <dd>
 
-Fecha y hora, en hora universal coordinada, a la que comienza el período de validez.
+Fecha y hora, en hora universal coordinada, que inicia el período de validez.
 
 </dd> <dt>
 
 **EndDate**
 </dt> <dd>
 
-Fecha y hora, en hora universal coordinada, a la que el BIR deja de ser válido.
+Fecha y hora, en hora universal coordinada, en la que la BIR deja de ser válida.
 
 </dd> </dl> </dd> <dt>
 
 **BiometricDataFormat**
 </dt> <dd>
 
-Estructura [**de \_ \_ formato registrada WINBIO**](winbio-registered-format.md) que especifica el formato de datos del bloque de datos estándar en la estructura [**\_ Bir de WINBIO**](winbio-bir.md) . Los miembros de **\_ \_ formato registrados WINBIO** no pueden ser cero. Puede utilizar las siguientes constantes para simplificar la comprobación de errores.
+Estructura [**DE FORMATO REGISTRADO \_ \_ DE WINBIO**](winbio-registered-format.md) que especifica el formato de datos del bloque de datos estándar en la [**estructura BIR \_ de WINBIO.**](winbio-bir.md) Los **miembros \_ DE WINBIO REGISTERED \_ FORMAT** no pueden ser cero. Puede usar las constantes siguientes para simplificar la comprobación de errores.
 
 
 
 | Value                                                                                                                                                                                                                                                                                      | Significado                                                                                                    |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| <span id="WINBIO_NO_FORMAT_OWNER_AVAILABLE"></span><span id="winbio_no_format_owner_available"></span><dl> <dt>**WINBIO \_ NO hay ningún \_ propietario de formato \_ \_ disponible**</dt> <dt>((USHORT) 0)</dt> </dl> | No se ha especificado ningún valor de propietario asignado IBIA (Asociación del sector biométrico internacional).<br/> |
-| <span id="WINBIO_NO_FORMAT_TYPE_AVAILABLE"></span><span id="winbio_no_format_type_available"></span><dl> <dt>**WINBIO \_ NO hay ningún \_ tipo de formato \_ \_ disponible**</dt> <dt>((USHORT) 0)</dt> </dl>    | No se ha especificado ningún tipo de formato.<br/>                                                              |
+| <span id="WINBIO_NO_FORMAT_OWNER_AVAILABLE"></span><span id="winbio_no_format_owner_available"></span><dl> <dt>**WINBIO \_ NO \_ HAY PROPIETARIO DE \_ \_ FORMATO**</dt> <dt>DISPONIBLE ((USHORT)0)</dt> </dl> | No se ha especificado ningún valor de propietario asignado de IBIA (Asociación internacional del sector biométrico).<br/> |
+| <span id="WINBIO_NO_FORMAT_TYPE_AVAILABLE"></span><span id="winbio_no_format_type_available"></span><dl> <dt>**WINBIO \_ NO \_ HAY NINGÚN TIPO DE \_ \_ FORMATO**</dt> <dt>DISPONIBLE ((USHORT)0)</dt> </dl>    | No se ha especificado ningún tipo de formato.<br/>                                                              |
 
 
 
@@ -193,36 +193,36 @@ Estructura [**de \_ \_ formato registrada WINBIO**](winbio-registered-format.md)
 **ProductId**
 </dt> <dd>
 
-Estructura [**de \_ \_ formato registrada en WINBIO**](winbio-registered-format.md) que especifica el identificador de producto del componente que generó el bloque de datos estándar en el Bir. Los miembros de **\_ \_ formato registrados WINBIO** pueden ser cero.
+Estructura [**DE FORMATO REGISTRADO \_ \_ DE WINBIO**](winbio-registered-format.md) que especifica el identificador de producto del componente que generó el bloque de datos estándar en bir. Los **miembros \_ DE WINBIO REGISTERED \_ FORMAT** pueden ser cero.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-El parámetro *SubType* especifica el subfactor asociado a los datos biométricos. Actualmente, el Plataforma de biometría de Windows (WBF) solo admite la captura de huellas digitales y usa las siguientes constantes para representar información de subtipos:
+El *parámetro Subtype* especifica el subfactor asociado a los datos biométricos. Actualmente, Windows Biometric Framework (WBF) solo admite la captura de huellas digitales y usa las siguientes constantes para representar información de subtipo:
 
--   WINBIO \_ ANSI \_ 381 \_ pos \_ desconocido
--   \_Thumb WINBIO ANSI \_ 381 \_ pos \_ RH \_
--   \_Dedo de \_ \_ \_ \_ índice RH \_ de WINBIO ANSI 381 pos
--   \_Dedo central de WINBIO ANSI \_ 381 \_ pos \_ dcha \_ \_
--   \_Dedo de \_ \_ \_ \_ anillo RH \_ de WINBIO ANSI 381 pos
--   \_ \_ \_ \_ \_ Pequeño \_ dedo de WINBIO ANSI 381 pos
--   WINBIO \_ ANSI \_ 381 \_ pos \_ LH \_ Thumb
--   WINBIO \_ de \_ Índice de LH de pdv ANSI 381 \_ pos \_ \_ \_
--   WINBIO \_ ANSI \_ 381 \_ pos \_ LH \_ central \_
--   WINBIO \_ el \_ \_ dedo de \_ anillo de LH ANSI 381 pos \_ \_
--   WINBIO \_ ANSI \_ 381 \_ pos \_ LH \_ Little \_ Finger
--   WINBIO \_ ANSI \_ 381 \_ pos \_ RH \_ cuatro \_ dedos
--   WINBIO \_ ANSI \_ 381 \_ pos \_ LH \_ cuatro \_ dedos
--   WINBIO \_ ANSI \_ 381 \_ pos \_ dos \_ Thumbs
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ UNKNOWN
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ THUMB
+-   DEDO ÍNDICE RH DE WINBIO \_ ANSI \_ 381 \_ POS \_ \_ \_
+-   DEDO MEDIO DE WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ \_
+-   DEDO ANILLO DE WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ \_
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ LITTLE \_ FINGER
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ LH \_ THUMB
+-   DEDO ÍNDICE DE LH DE WINBIO \_ ANSI \_ 381 \_ POS \_ \_ \_
+-   DEDO MEDIO DE LH DE WINBIO \_ ANSI \_ 381 \_ POS \_ \_ \_
+-   DEDO ANILLO DE LH DE WINBIO \_ ANSI \_ 381 \_ POS \_ \_ \_
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ LH \_ LITTLE \_ FINGER
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ RH \_ FOUR \_ FINGERS
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ LH \_ FOUR \_ FINGERS
+-   WINBIO \_ ANSI \_ 381 \_ POS \_ TWO \_ THUMBS
 
 > [!IMPORTANT]
 >
-> No intente validar el valor proporcionado para el valor del parámetro de *subtipo* . El servicio biométrico de Windows validará el valor proporcionado antes de pasarlo a su implementación. Si el valor es **WINBIO \_ SubType \_ no \_ Information** o **WINBIO \_ SubType \_ any**, valide cuando sea necesario.
+> No intente validar el valor proporcionado para el *valor del parámetro Subtype.* El Windows Biometrics Service validará el valor proporcionado antes de pasarlo a la implementación. Si el valor es **WINBIO \_ SUBTYPE \_ NO INFORMATION \_ o** **WINBIO \_ SUBTYPE \_ ANY**, valide cuando corresponda.
 
  
 
-Si se declara alguno de los bits siguientes, la estructura **del \_ \_ encabezado WINBIO Bir** no tiene el formato correcto.
+Si se declara cualquiera de los bits siguientes, la **estructura WINBIO \_ BIR \_ HEADER** no tiene el formato correcto.
 
 
 ```C++
@@ -241,9 +241,9 @@ Si se declara alguno de los bits siguientes, la estructura **del \_ \_ encabezad
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 
@@ -254,25 +254,25 @@ Si se declara alguno de los bits siguientes, la estructura **del \_ \_ encabezad
 [Estructuras de aplicación cliente](client-application-structures.md)
 </dt> <dt>
 
-[**WINBIO \_ constantes de \_ subtipo de biométrico**](winbio-biometric-subtype-constants.md)
+[**Constantes \_ DE \_ SUBTIPO BIOMÉTRICO DE WINBIO**](winbio-biometric-subtype-constants.md)
 </dt> <dt>
 
-[**WINBIO \_ Bir**](winbio-bir.md)
+[**WINBIO \_ BIR**](winbio-bir.md)
 </dt> <dt>
 
-[**\_Constantes de \_ marcadores de datos de WINBIO Bir \_**](winbio-bir-data-flags-constants.md)
+[**Constantes DE \_ MARCAS DE DATOS DE WINBIO BIR \_ \_**](winbio-bir-data-flags-constants.md)
 </dt> <dt>
 
-[**WINBIO \_ \_ constantes de campo Bir**](winbio-bir-field-constants.md)
+[**Constantes DE \_ CAMPO BIR DE WINBIO \_**](winbio-bir-field-constants.md)
 </dt> <dt>
 
-[**\_Constantes WINBIO Bir \_ purpose**](winbio-bir-purpose-constants.md)
+[**Constantes WINBIO \_ BIR \_ PURPOSE**](winbio-bir-purpose-constants.md)
 </dt> <dt>
 
-[**Constantes de calidad de WINBIO \_ Bir \_**](winbio-bir-quality-constants.md)
+[**Constantes DE \_ CALIDAD DE WINBIO BIR \_**](winbio-bir-quality-constants.md)
 </dt> <dt>
 
-[**Constantes de versión de WINBIO \_ Bir \_**](winbio-bir-version-constants.md)
+[**Constantes WINBIO \_ BIR \_ VERSION**](winbio-bir-version-constants.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: 'Métodos Load Texture2DArray:: Texture2DArray'
+title: Métodos Texture2DArray::Texture2DArray Load
 description: Lee los datos de Texture2DArray.
 ms.assetid: 70b99f8c-0ca9-4961-bda9-19c39fd5eaf6
 keywords:
-- Cargar métodos HLSL
+- Métodos de carga HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: df1d9a1e17c50b9e95138f5df075d03f414e1428
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: f3e62c3e26d6128cbe527dc089f745c5199a364969d503fbf3489d176b614d71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104076991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119456795"
 ---
-# <a name="texture2darrayload-methods"></a>Texture2DArray:: Load (métodos)
+# <a name="texture2darrayload-methods"></a>Métodos Texture2DArray::Load
 
-Lee los datos de [**Texture2DArray**](sm5-object-texture2darray.md) .
+Lee los [**datos de Texture2DArray.**](sm5-object-texture2darray.md)
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Lee los datos de [**Texture2DArray**](sm5-object-texture2darray.md) .
 
 | Método                                                      | Descripción                                                        |
 |:------------------------------------------------------------|:-------------------------------------------------------------------|
-| [**Load (int, int)**](dx-graphics-hlsl-to-load.md)           | Lee los datos de textura.<br/>                                     |
-| [**Load (int, int, uint)**](t2darray-load-float-int-uint-.md) | Lee los datos de textura y devuelve el estado de la operación.<br/> |
+| [**Load(int,int)**](dx-graphics-hlsl-to-load.md)           | Lee los datos de textura.<br/>                                     |
+| [**Load(int,int,uint)**](t2darray-load-float-int-uint-.md) | Lee los datos de textura y devuelve el estado de la operación.<br/> |
 
 
 

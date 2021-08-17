@@ -3,7 +3,7 @@ title: Tipo simple HexInt32Type (esquema EventManifest)
 description: Define un tipo hexadecimal de 4 bytes. | Tipo simple HexInt32Type (esquema EventManifest)
 ms.assetid: b1006593-c6f2-4669-b242-758ce9977565
 keywords:
-- HexInt32Type de tipo simple de registro
+- Tipo simple HexInt32Type EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4630bc4d7d513a0fedad2191c63ca71571ce655a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6c78a101ec9854b8820b7c9170ea43f06258528de9fdc9d4b02bb41945ba3a7f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119248105"
 ---
 # <a name="hexint32type-simple-type-eventmanifest-schema"></a>Tipo simple HexInt32Type (esquema EventManifest)
 
@@ -38,11 +38,11 @@ Define un tipo hexadecimal de 4 bytes.
 
 ## <a name="patterns"></a>Patrones
 
-El tipo simple **HexInt32Type** es una **cadena** restringida por el siguiente patrón:
+El **tipo simple HexInt32Type** es una **cadena** restringida por el siguiente patrón:
 
 -   `0[xX][0-9A-Fa-f]{1,8}`
 
-    El valor puede contener de uno a ocho caracteres hexadecimales (por ejemplo, 0xA o 0xac7bd361).
+    El valor puede contener de uno a ocho caracteres hexadecimales (por ejemplo, 0xa o 0xac7bd361).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ El tipo simple **HexInt32Type** es una **cadena** restringida por el siguiente p
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

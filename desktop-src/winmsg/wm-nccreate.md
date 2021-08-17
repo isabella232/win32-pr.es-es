@@ -46,7 +46,7 @@ Puntero a la [**estructura CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser
 
 Tipo: **LRESULT**
 
-Si una aplicación procesa este mensaje, debe devolver **TRUE** para continuar con la creación de la ventana. Si la aplicación devuelve **FALSE**, la [**función CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) devolverá un **identificador NULL.**
+Si una aplicación procesa este mensaje, debe devolver **TRUE** para continuar con la creación de la ventana. Si la aplicación devuelve **FALSE,** la [**función CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) devolverá un **identificador NULL.**
 
 ## <a name="requirements"></a>Requisitos
 

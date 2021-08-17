@@ -1,6 +1,6 @@
 ---
 title: Las llamadas remotas al protocolo RPC SAM están restringidas solo a los administradores locales
-description: El protocolo RPC SAM está restringido. Esto significa que solo los miembros del grupo administrador local pueden realizar llamadas remotas a métodos de este protocolo. Active Directory comportamiento del controlador de dominio no se ven afectados.
+description: El protocolo RPC de SAM está restringido. Esto significa que solo los miembros del grupo administrador local pueden realizar llamadas remotas a métodos de este protocolo. Active Directory comportamiento del controlador de dominio no se ven afectados.
 ms.assetid: 816BFB8C-A8EE-44F4-864D-748AF8BCF1F8
 ms.topic: article
 ms.date: 05/31/2018
@@ -20,7 +20,7 @@ ms.locfileid: "118211340"
 
 \[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-El protocolo RPC SAM está restringido. Esto significa que solo los miembros del grupo administrador local pueden realizar llamadas remotas a métodos de este protocolo. Active Directory comportamiento del controlador de dominio no se ven afectados.
+El protocolo RPC de SAM está restringido. Esto significa que solo los miembros del grupo administrador local pueden realizar llamadas remotas a métodos de este protocolo. Active Directory comportamiento del controlador de dominio no se ven afectados.
 
 ## <a name="mitigations"></a>Mitigaciones
 

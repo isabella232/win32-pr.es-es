@@ -23,7 +23,7 @@ ms.locfileid: "118705964"
 
 Especifica una constante que identifica la colección de comandos declarada en el archivo de recursos de marcado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 **Interfaz de usuario \_ ALL \_ COMMANDS** es útil cuando es necesario tener acceso a propiedades similares en todos los comandos. Por ejemplo, **todos \_ \_** los comandos de la interfaz de usuario se pueden pasar a [**IUIFramework::InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) para invalidar y actualizar todos los comandos de la cinta de opciones consultando la aplicación host para obtener nuevos valores de propiedad.
 
@@ -31,7 +31,7 @@ Especifica una constante que identifica la colección de comandos declarada en e
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma solo para Windows de escritorio de Vista \[\]<br/>                          |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y Actualización de plataforma solo para aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
@@ -40,7 +40,7 @@ Especifica una constante que identifica la colección de comandos declarada en e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

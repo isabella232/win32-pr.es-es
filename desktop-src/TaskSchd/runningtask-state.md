@@ -1,11 +1,11 @@
 ---
-title: Propiedad RunningTask. State
-description: En el caso de scripting, obtiene un identificador para el estado de la tarea en ejecución.
+title: Propiedad RunningTask.State
+description: Para el scripting, obtiene un identificador para el estado de la tarea en ejecución.
 ms.assetid: 048863f4-b80b-42ab-bd74-ec761a8f03aa
 keywords:
-- Programador de tareas de propiedad de estado
-- Propiedad State Programador de tareas, objeto RunningTask
-- Programador de tareas de objeto RunningTask, propiedad State
+- Estado de la propiedad Programador de tareas
+- Propiedad State Programador de tareas , objeto RunningTask
+- Objeto RunningTask Programador de tareas , propiedad State
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b962de116eef1301be209828181147dfe03273e8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1e3c83b35c348e3ab86eb04c03ef4c5d25a76ef3fe5040603ce32da54ec4e217
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975051"
 ---
-# <a name="runningtaskstate-property"></a>Propiedad RunningTask. State
+# <a name="runningtaskstate-property"></a>Propiedad RunningTask.State
 
-En el caso de scripting, obtiene un identificador para el estado de la tarea en ejecución.
+Para el scripting, obtiene un identificador para el estado de la tarea en ejecución.
 
 Esta propiedad es de solo lectura.
 
@@ -46,19 +46,19 @@ Identificador del estado de la tarea en ejecución.
 
 | Value                                                                                                                                                                                                                                   | Significado                                                                                                                                           |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="TASK_STATE_UNKNOWN"></span><span id="task_state_unknown"></span><dl> <dt>**Tarea \_ de ESTADO \_ desconocido**</dt> <dt>0</dt> </dl>    | No se conoce el estado de la tarea.<br/>                                                                                                      |
-| <span id="TASK_STATE_DISABLED"></span><span id="task_state_disabled"></span><dl> <dt>**Tarea \_ de ESTADO \_ deshabilitado**</dt> <dt>1</dt> </dl> | La tarea está registrada, pero está deshabilitada y ninguna instancia de la tarea está en cola o en ejecución. La tarea no se puede ejecutar hasta que se habilite.<br/> |
-| <span id="TASK_STATE_QUEUED"></span><span id="task_state_queued"></span><dl> <dt>**Tarea \_ de ESTADO \_ en cola**</dt> <dt>2</dt> </dl>       | Las instancias de la tarea se ponen en cola.<br/>                                                                                                      |
-| <span id="TASK_STATE_READY"></span><span id="task_state_ready"></span><dl> <dt>**Tarea \_ de ESTADO \_ preparado**</dt> <dt>3</dt> </dl>          | La tarea está lista para ejecutarse, pero no hay ninguna instancia en cola o en ejecución.<br/>                                                              |
-| <span id="TASK_STATE_RUNNING"></span><span id="task_state_running"></span><dl> <dt>**Tarea \_ de Estado en \_ ejecución**</dt> <dt>4</dt> </dl>    | Se están ejecutando una o varias instancias de la tarea.<br/>                                                                                         |
+| <span id="TASK_STATE_UNKNOWN"></span><span id="task_state_unknown"></span><dl> <dt>**TASK \_ STATE \_ UNKNOWN**</dt> <dt>0</dt> </dl>    | Se desconoce el estado de la tarea.<br/>                                                                                                      |
+| <span id="TASK_STATE_DISABLED"></span><span id="task_state_disabled"></span><dl> <dt>**TASK \_ ESTADO \_ DESHABILITADO**</dt> <dt>1</dt> </dl> | La tarea está registrada, pero está deshabilitada y no hay ninguna instancia de la tarea en cola o en ejecución. La tarea no se puede ejecutar hasta que esté habilitada.<br/> |
+| <span id="TASK_STATE_QUEUED"></span><span id="task_state_queued"></span><dl> <dt>**TASK \_ ESTADO \_ EN COLA**</dt> <dt>2</dt> </dl>       | Las instancias de la tarea se ponen en cola.<br/>                                                                                                      |
+| <span id="TASK_STATE_READY"></span><span id="task_state_ready"></span><dl> <dt>**TASK \_ STATE \_ READY**</dt> <dt>3</dt> </dl>          | La tarea está lista para ejecutarse, pero no hay instancias en cola ni en ejecución.<br/>                                                              |
+| <span id="TASK_STATE_RUNNING"></span><span id="task_state_running"></span><dl> <dt>**TASK \_ STATE \_ RUNNING**</dt> <dt>4</dt> </dl>    | Se están ejecutando una o varias instancias de la tarea.<br/>                                                                                         |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se llama al método [**RunningTask. Refresh**](runningtask-refresh.md) antes de que se devuelva el valor de la propiedad.
+Se [**llama al método RunningTask.Refresh**](runningtask-refresh.md) antes de que se devuelva el valor de propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,9 +66,9 @@ Se llama al método [**RunningTask. Refresh**](runningtask-refresh.md) antes de 
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

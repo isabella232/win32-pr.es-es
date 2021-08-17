@@ -1,34 +1,34 @@
 ---
-description: El descodificador MPEG4 v1/v2 de Windows Media descodifica transmisiones de vídeo MPEG4 v1/v2.
+description: El Windows de vídeo MPEG4 V1/V2 de Media descodifica secuencias de vídeo MPEG4 V1/V2.
 ms.assetid: 63b32972-1003-4291-bfdd-cc0cb8d65430
-title: Descodificador MPEG4 v1/v2 de Windows Media (Wmcodecdsp. h)
+title: Windows Descodificador MPEG4 V1/V2 multimedia (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b14cf22e29c1266ac9bb3593375ee4485d79df2
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: c55d5c64cec2a0ad08978064d40c26267d7729adeee9a9f148c8e682ba168509
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105717343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100937"
 ---
-# <a name="windows-media-mpeg4-v1v2-decoder"></a>Descodificador MPEG4 v1/v2 de Windows Media
+# <a name="windows-media-mpeg4-v1v2-decoder"></a>Windows Descodificador MPEG4 V1/V2 multimedia
 
-El descodificador MPEG4 v1/v2 de Windows Media descodifica transmisiones de vídeo MPEG4 v1/v2.
+El Windows de vídeo MPEG4 V1/V2 de Media descodifica secuencias de vídeo MPEG4 V1/V2.
 
 ## <a name="class-identifier"></a>Identificador de clase
 
-El identificador de clase (CLSID) del descodificador MPEG4 v1/v2 de Windows Media se representa mediante la constante **\_ CMpeg4DecMediaObject de CLSID**. Puede crear una instancia del descodificador MPEG4 v1/v2 llamando a **CoCreateInstance**.
+El identificador de clase (CLSID) del descodificador Windows Media MPEG4 V1/V2 se representa mediante la constante **CLSID \_ CMpeg4DecMediaObject**. Puede crear una instancia del descodificador MPEG4 V1/V2 llamando a **CoCreateInstance**.
 
 ## <a name="formats"></a>Formatos
 
-El descodificador MPEG4 v1/v2 de Windows Media admite los siguientes tipos de medios de entrada.
+El Windows media MPEG4 V1/V2 admite los siguientes tipos de medios de entrada.
 
 -   MEDIASUBTYPE \_ MPG4
--   MEDIASUBTYPE \_ MPG4
--   MEDIASUBTYPE \_ mp42
+-   MEDIASUBTYPE \_ mpg4
+-   MEDIASUBTYPE \_ MP42
 -   MEDIASUBTYPE \_ mp42
 
-El descodificador MPEG4 v1/v2 de Windows Media admite los siguientes subtipos de medios de salida cuando actúa como un objeto multimedia de DirectX (DMO).
+El descodificador Windows Media MPEG4 V1/V2 admite los siguientes subtipos de medios de salida cuando actúa como objeto multimedia DirectX (DMO).
 
 -   MEDIASUBTYPE \_ YUY2
 -   MEDIASUBTYPE \_ UYVY
@@ -38,7 +38,7 @@ El descodificador MPEG4 v1/v2 de Windows Media admite los siguientes subtipos de
 -   MEDIASUBTYPE \_ RGB8
 -   MEDIASUBTYPE \_ RGB555
 
-El descodificador MPEG4 v1/v2 de Windows Media admite los siguientes subtipos de medios de salida cuando actúa como una transformación de Media Foundation (MFT).
+El descodificador Windows Media MPEG4 V1/V2 admite los siguientes subtipos de medios de salida cuando actúa como una transformación de Media Foundation (MFT).
 
 -   MFVideoFormat \_ YUY2
 -   MFVideoFormat \_ UYVY
@@ -48,43 +48,43 @@ El descodificador MPEG4 v1/v2 de Windows Media admite los siguientes subtipos de
 -   MFVideoFormat \_ RGB8
 -   MFVideoFormat \_ RGB555
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El objeto descodificador MPEG4 v1/v2 de Windows Media expone la interfaz [**IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject) para que el objeto se pueda usar como un objeto multimedia de DirectX (DMO) y exponga la interfaz [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) para que el objeto se pueda usar como una transformación de Media Foundation (MFT). El objeto tiene el mismo identificador de clase (CLSID) independientemente de si actúa como un DMO o MFT.
+El objeto descodificador Windows Media MPEG4 V1/V2 expone la interfaz [**IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject) para que el objeto se pueda usar como objeto multimedia DirectX (DMO) y exponga la interfaz [**DETRANSFORMTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) para que el objeto se pueda usar como una transformación de Media Foundation (MFT). El objeto tiene el mismo identificador de clase (CLSID) independientemente de si actúa como DMO o MFT.
 
-Un descodificador MPEG4 v1/v2 se comporta como un DMO o una MFT en función de las interfaces que se obtengan y de la versión de Windows que se esté ejecutando. En la tabla siguiente se muestran las condiciones en las que un descodificador MPEG4 v1/v2 se comporta como DMO o MFT.
+Un descodificador MPEG4 V1/V2 se comporta como un DMO o MFT en función de las interfaces que obtenga y la versión de Windows se esté ejecutando. En la tabla siguiente se muestran las condiciones en las que un descodificador MPEG4 V1/V2 se comporta como DMO o MFT.
 
 
 
 | Sistema operativo            | Comportamiento del descodificador                                                                                                                                                                |
 |-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Windows XP                  | Un descodificador MPEG4 v1/v2 siempre se comporta como DMO.                                                                                                                                 |
-| Windows Vista y Windows 7 | De forma predeterminada, un descodificador MPEG4 v1/v2 se comporta como un DMO. Si obtiene una interfaz de [GUID de subtipo de vídeo](video-subtype-guids.md) en un descodificador MPEG4 v1/v2, se comporta como una MFT. |
+| Windows XP                  | Un descodificador MPEG4 V1/V2 siempre se comporta como un DMO.                                                                                                                                 |
+| Windows Vista y Windows 7 | De forma predeterminada, un descodificador MPEG4 V1/V2 se comporta como un DMO. Si obtiene una interfaz DE GUID [de subtipo de](video-subtype-guids.md) vídeo en un descodificador MPEG4 V1/V2, se comporta como MFT. |
 
 
 
  
 
-Los identificadores únicos globales (GUID) para los subtipos multimedia RGB difieren en función de si un descodificador actúa como un DMO o una MFT. Los GUID para los subtipos de medios que no son RGB son los mismos, independientemente de si un descodificador actúa como un DMO o una MFT. Para obtener información sobre los GUID que representan subtipos de vídeo, consulte [GUID de subtipo de vídeo](video-subtype-guids.md).
+Los identificadores únicos globales (GUID) de los subtipos de medios RGB difieren en función de si un descodificador actúa como DMO o MFT. Los GUID de los subtipos multimedia no RGB son los mismos, independientemente de si un descodificador actúa como DMO o MFT. Para obtener información sobre los GUID que representan subtipos de vídeo, vea [GUID de subtipo de vídeo.](video-subtype-guids.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MPG4DECD.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Objetos Codec](codecobjects.md)
+[Objetos de códec](codecobjects.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Enumera las funciones geométricas vectoriales 4D.
+description: Enumera las funciones geométricas de vector 4D.
 ms.assetid: 40cf28ab-aa5a-396d-2f9e-2206651966af
 title: Funciones geométricas vectoriales 4D de la biblioteca DirectXMath
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "119979197"
 ---
 # <a name="directxmath-library-4d-vector-geometric-functions"></a>Funciones geométricas vectoriales 4D de la biblioteca DirectXMath
 
-Enumera las funciones geométricas vectoriales 4D.
+Enumera las funciones geométricas de vector 4D.
 
 ## <a name="in-this-section"></a>En esta sección
 

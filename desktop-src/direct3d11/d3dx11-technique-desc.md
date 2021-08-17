@@ -1,9 +1,9 @@
 ---
-title: D3DX11_TECHNIQUE_DESC estructura (D3dx11effect. h)
+title: D3DX11_TECHNIQUE_DESC estructura (D3dx11effect.h)
 description: Describe una técnica de efecto.
 ms.assetid: 89690a68-d7e8-4f44-9f67-c55d0a400602
 keywords:
-- D3DX11_TECHNIQUE_DESC estructura de Direct3D 11
+- D3DX11_TECHNIQUE_DESC estructura direct3D 11
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31158b93b8121ac3393e0935cee31c6361b894d5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2266737a04b28940eeaa3758f5bd3909ec815745cb060836c499cfd4b3142266
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124930"
 ---
-# <a name="d3dx11_technique_desc-structure"></a>D3DX11 \_ técnica \_ DESC (estructura)
+# <a name="d3dx11_technique_desc-structure"></a>D3DX11 \_ TECHNIQUE \_ DESC (estructura DESC)
 
 Describe una técnica de efecto.
 
@@ -49,25 +49,25 @@ Tipo: **[ **LPCSTR**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Nombre de esta técnica (NULL si no es anónima).
+Nombre de esta técnica (NULL si no es anónimo).
 
 </dd> <dt>
 
-**Paso**
+**Pasa**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Número de pasos contenidos en la técnica.
+Número de pases contenidos en la técnica.
 
 </dd> <dt>
 
-**Anotaciones**
+**anotaciones**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -75,9 +75,9 @@ Número de anotaciones en esta técnica.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-D3DX11 \_ técnica \_ desc se usa con [**ID3DX11EffectTechnique:: GetDesc**](id3dx11effecttechnique-getdesc.md).
+D3DX11 \_ TECHNIQUE \_ DESC se usa [**con ID3DX11EffectTechnique::GetDesc**](id3dx11effecttechnique-getdesc.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,7 +85,7 @@ D3DX11 \_ técnica \_ desc se usa con [**ID3DX11EffectTechnique:: GetDesc**](id3
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx11effect. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx11effect.h</dt> </dl> |
 
 
 
@@ -93,7 +93,7 @@ D3DX11 \_ técnica \_ desc se usa con [**ID3DX11EffectTechnique:: GetDesc**](id3
 
 <dl> <dt>
 
-[Effects 11 estructuras](d3d11-graphics-reference-effects11-structures.md)
+[Estructuras de efectos 11](d3d11-graphics-reference-effects11-structures.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: La función llMulDiv implementa la fórmula ((a \* b) + RND)/c, donde cada término es un valor de 64 bits.
+description: La función llMulDiv implementa la fórmula ((a \* b)+rnd)/c, donde cada término es un valor de 64 bits.
 ms.assetid: cd5073b9-27c7-42ee-8487-2d4ea29f77d4
-title: función llMulDiv (Wxutil. h)
+title: Función llMulDiv (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e45d22eec1536517bd2b57d875dd596e4a1e28db
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: df58175955106906027a6d2d10c465b82ad6313cd493e3ef9ef3ba279cd0115f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952354"
 ---
-# <a name="llmuldiv-function"></a>llMulDiv función)
+# <a name="llmuldiv-function"></a>función llMulDiv
 
-La `llMulDiv` función implementa la fórmula `((a*b)+rnd)/c` donde cada término es un valor de 64 bits.
+La `llMulDiv` función implementa la fórmula donde cada término es un valor de `((a*b)+rnd)/c` 64 bits.
 
 Las marcas de tiempo y los tiempos de búsqueda son valores de 64 bits, por lo que esta función es útil para realizar conversiones en sistemas de 32 bits. Por ejemplo, la fórmula para bytes por segundo es
 
@@ -36,7 +36,7 @@ Las marcas de tiempo y los tiempos de búsqueda son valores de 64 bits, por lo q
 
 
 
-que se puede calcular como `llMulDiv(nBytes, rtTime, 10000000, 0)` . Use el parámetro *RND* como factor de redondeo.
+que se puede calcular como `llMulDiv(nBytes, rtTime, 10000000, 0)` . Use el *parámetro rnd* como factor de redondeo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ LONGLONG WINAPI Int64x32Div32(
 
 <dl> <dt>
 
-*un* 
+*Un* 
 </dt> <dd>
 
 Multiplicando.
@@ -77,7 +77,7 @@ Divisor.
 
 </dd> <dt>
 
-*NúmAleat* 
+*Rnd* 
 </dt> <dd>
 
 Factor de redondeo.
@@ -99,7 +99,7 @@ Devuelve el `(a * b + rnd)/c` cálculo o uno de los valores siguientes.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El redondeo en la división es hacia cero. La división por cero se cuenta como una condición de desbordamiento.
 
@@ -109,8 +109,8 @@ El redondeo en la división es hacia cero. La división por cero se cuenta como 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

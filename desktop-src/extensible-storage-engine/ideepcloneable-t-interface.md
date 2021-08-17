@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: <T> interfaz IDeepCloneable'
-title: IDeepCloneable (T) (interfaz)
+description: 'Más información sobre: Interfaz IDeepCloneable <T>'
+title: Interfaz IDeepCloneable(T)
 TOCTitle: IDeepCloneable(T) interface
 ms:assetid: T:Microsoft.Isam.Esent.Interop.IDeepCloneable`1
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh565368(v=EXCHG.10)
@@ -24,21 +24,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5e1aa6ee4ce199438149b65984335ae24930596d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a0cb7089aa7c7e2d6593b6731d2bf6160e94d9526bee8aa75b8aa2d58c36f8d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093655"
 ---
-# <a name="ideepcloneablet-interface"></a>\<T\>Interfaz IDeepCloneable
+# <a name="ideepcloneablet-interface"></a>Interfaz IDeepCloneable \<T\>
 
-Interfaz para los objetos que se pueden clonar. Esto crea una copia en profundidad del objeto. Se usa para la clonación de objetos de metadatos.
+Interfaz para objetos que se pueden clonar. Esto crea una copia en profundidad del objeto . Se usa para clonar objetos de metadatos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -56,10 +56,10 @@ public interface IDeepCloneable<T>
   - T  
     Tipo del objeto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de IDeepCloneable \<T\>](./ideepcloneable-t-members.md)
+[Miembros IDeepCloneable \<T\>](./ideepcloneable-t-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

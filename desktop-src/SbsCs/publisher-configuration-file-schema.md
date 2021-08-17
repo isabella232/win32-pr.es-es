@@ -1,17 +1,17 @@
 ---
 description: A continuación se muestra la lista completa del esquema del archivo de configuración del publicador.
 ms.assetid: 501151ee-67f5-4127-b048-91ea4a42f9e7
-title: Esquema del archivo de configuración del publicador
+title: Publisher Esquema del archivo de configuración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88a8e3d86adc71efda144bb5eed72876bf99911a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f0e7d2b794d2fadd8e7906b2e4eeacc252fd6b6b802898070185ac2ae4c97f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119141998"
 ---
-# <a name="publisher-configuration-file-schema"></a>Esquema del archivo de configuración del publicador
+# <a name="publisher-configuration-file-schema"></a>Publisher Esquema del archivo de configuración
 
 A continuación se muestra la lista completa del esquema del archivo de configuración del publicador.
 

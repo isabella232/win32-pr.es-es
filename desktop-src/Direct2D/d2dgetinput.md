@@ -1,6 +1,6 @@
 ---
-title: Función D2DGetInput (D2d1effecthelpers. h)
-description: Devuelve el color de entrada N en la coordenada de entrada. Solo está disponible para entradas simples.
+title: Función D2DGetInput (D2d1effecthelpers.h)
+description: Devuelve el color de la entrada N en la coordenada de entrada. Solo está disponible para entradas simples.
 ms.assetid: 74B6F814-53C7-4C8C-B45C-3CB23B9D8BED
 keywords:
 - Función D2DGetInput Direct2D
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd6ec0fe858149ee53da1f8ca8a02c12756d6a90
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 37de536eb6ac36af3e8aa1ffca61c3840cf6c84e585466a56a447522c4d628d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075319"
 ---
-# <a name="d2dgetinput-function"></a>D2DGetInput función)
+# <a name="d2dgetinput-function"></a>Función D2DGetInput
 
-Devuelve el color de entrada N en la coordenada de entrada. Solo está disponible para entradas simples.
+Devuelve el color de la entrada N en la coordenada de entrada. Solo está disponible para entradas simples.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,7 +37,7 @@ float4 WINAPI D2DGetInput(
 
 <dl> <dt>
 
-*N* \[ in\]
+*N* \[ en\]
 </dt> <dd>
 
 Número de entrada.
@@ -46,11 +46,11 @@ Número de entrada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve una **FLOAT4**, que contiene el color RGBA en el formato de entrada.
+La función devuelve un **valor float4** que contiene el color RGBA con el formato INPUTN.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el ejemplo siguiente se muestra la función que se utiliza como parte de un efecto compuesto aritmético.
+En el ejemplo siguiente se muestra la función que se usa como parte de un efecto compuesto aritmético.
 
 ``` syntax
   
@@ -65,7 +65,7 @@ D2D_PS_ENTRY(PS_NAME)
 }  
 ```
 
-Además, consulte la entrada de comentarios [de \_ D2D \_ PS](d2d-ps-entry.md) para ver otro ejemplo del uso de esta función.
+Consulte también los comentarios de [D2D \_ PS \_ ENTRY](d2d-ps-entry.md) para obtener otro ejemplo del uso de esta función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,7 +85,7 @@ Además, consulte la entrada de comentarios [de \_ D2D \_ PS](d2d-ps-entry.md) p
 [Vinculación del sombreador de efectos](effect-shader-linking.md)
 </dt> <dt>
 
-[Aplicaciones auxiliares de HLSL](hlsl-helpers.md)
+[Asistentes hlsl](hlsl-helpers.md)
 </dt> </dl>
 
  

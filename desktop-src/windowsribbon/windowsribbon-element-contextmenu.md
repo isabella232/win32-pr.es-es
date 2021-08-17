@@ -37,9 +37,9 @@ Representa un control de menú contextual.
 
 
 
-| Atributo           | Tipo                 | Obligatorio       | Descripción                                                                                                                                                                                                                |
+| Atributo           | Tipo                 | Requerido       | Descripción                                                                                                                                                                                                                |
 |---------------------|----------------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Nombre**<br/> | xs:string<br/> | Sí<br/> | <dt> (xs:string)<br/> </dt> <dd> Cadena compuesta de cualquier secuencia de caracteres, incluidos los espacios en blanco y los caracteres de salto de línea.<br/> </dd> </dl> |
+| **Nombre**<br/> | xs:string<br/> | Sí<br/> | <dt> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Representa un control de menú contextual.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
@@ -172,7 +172,7 @@ En esta sección de código se muestra un conjunto de declaraciones de control *
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

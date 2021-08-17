@@ -1,24 +1,24 @@
 ---
-description: El administrador de protección de salida (OPM) permite a una aplicación proteger el contenido de vídeo mientras viaja a través de un conector físico a un dispositivo de pantalla.
+description: Output Protection Manager (OPM) permite que una aplicación proteja el contenido de vídeo a medida que viaja a través de un conector físico a un dispositivo de visualización.
 ms.assetid: daae615b-37c4-4044-91c6-693357e0016a
 title: Administrador de protección de salida
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9afd3af42e7e93576eaf8bdb731b177a4a6d8719
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a17d52c909596dba2304a38960b708da0b92cc17fd3530cae886641de1f69e3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119101874"
 ---
 # <a name="output-protection-manager"></a>Administrador de protección de salida
 
-El administrador de protección de salida (OPM) permite a una aplicación proteger el contenido de vídeo mientras viaja a través de un conector físico a un dispositivo de pantalla.
+Output Protection Manager (OPM) permite que una aplicación proteja el contenido de vídeo a medida que viaja a través de un conector físico a un dispositivo de visualización.
 
 Esta sección contiene los temas siguientes.
 
--   [Usar el administrador de protección de salida](using-output-protection-manager.md)
--   [Revocación de certificados OPM](opm-certificate-revocation.md)
+-   [Uso de Output Protection Manager](using-output-protection-manager.md)
+-   [Revocación de certificados de OPM](opm-certificate-revocation.md)
 -   [Código de ejemplo de OPM](opm-example-code.md)
 -   [Referencia de programación de OPM](opm-programming-reference.md)
 
@@ -26,7 +26,7 @@ Esta sección contiene los temas siguientes.
 
 <dl> <dt>
 
-[Guía de programación de Media Foundation](media-foundation-programming-guide.md)
+[Media Foundation de programación](media-foundation-programming-guide.md)
 </dt> </dl>
 
  

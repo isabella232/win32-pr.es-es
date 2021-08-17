@@ -1,10 +1,10 @@
 ---
-title: atributo meetingIsEncrypted
-description: Esto es así si la reunión se va a cifrar.
+title: Atributo meetingIsEncrypted
+description: Esto es TRUE si se va a cifrar la reunión.
 ms.assetid: bf8c1344-9f7e-4e4f-aac7-52cb0b65b9f0
 ms.tgt_platform: multiple
 keywords:
-- meetingIsEncrypted esquema de AD de atributos
+- Esquema de AD de atributo meetingIsEncrypted
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2e645624ff9167da7e8a6278e10bf57420cd152
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3132a08589395619dc4ed2222f2497e0e15a6b1425ac150259c5a8ada95445e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300777"
 ---
-# <a name="meetingisencrypted-attribute"></a>atributo meetingIsEncrypted
+# <a name="meetingisencrypted-attribute"></a>Atributo meetingIsEncrypted
 
-Esto es **así** si la reunión se va a cifrar.
+Esto es **TRUE** si se va a cifrar la reunión.
 
 
 
 | Entrada | Value |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | meetingIsEncrypted                                                               |
-| Nombre para mostrar de LDAP | meetingIsEncrypted                                                               |
-| Tamaño              | \-                                                                               |
-| Actualizar privilegio  | Cualquier usuario puede actualizar este objeto en función de la seguridad del objeto que se va a crear. |
+| Ldap-Display-Name | meetingIsEncrypted                                                               |
+| Size              | \-                                                                               |
+| Actualizar privilegios  | Cualquiera puede actualizar este objeto en función de la seguridad del objeto que se va a crear. |
 | Frecuencia de actualización  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.585                                                           |
-| System-ID-GUID    | 11b6cc8e-48c4-11d1-a9c3-0000f80367c1                                             |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | 11b6cc8e-48c4-11d1-a9c3-0000f80367c1                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -54,18 +54,18 @@ Esto es **así** si la reunión se va a cifrar.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Esto es **así** si la reunión se va a cifrar.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Esto es **así** si la reunión se va a cifrar.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -117,18 +117,18 @@ Esto es **así** si la reunión se va a cifrar.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Esto es **así** si la reunión se va a cifrar.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -159,18 +159,18 @@ Esto es **así** si la reunión se va a cifrar.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 

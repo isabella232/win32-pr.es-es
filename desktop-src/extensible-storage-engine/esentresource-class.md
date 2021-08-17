@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentResource'
+description: 'Más información sobre: Clase EsentResource'
 title: Clase EsentResource
 TOCTitle: EsentResource class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentResource
@@ -24,31 +24,31 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 607fb59d6f9f89c33e685ed411ae9dc95eaa6818
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f29c322b112994159799fd34a7db7a149cf6e7593b132fe4925838335bccdd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119970935"
 ---
 # <a name="esentresource-class"></a>Clase EsentResource
 
-Esta es la clase base para todos los objetos de recursos esent. Las subclases de esta clase pueden asignar y liberar recursos no administrados.
+Esta es la clase base para todos los objetos de recursos de esent. Las subclases de esta clase pueden asignar y liberar recursos no administrados.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. EsentResource  
-    [Microsoft. ISAM. esent. Interop. Session](./session-class.md)  
-    [Microsoft. ISAM. esent. Interop. Table](./table-class.md)  
-    [Microsoft. ISAM. esent. Interop. Transaction](./transaction-class.md)  
-    [Microsoft. ISAM. esent. Interop. Update](./update-class.md)  
-    [Microsoft. ISAM. esent. Interop. Windows8. DurableCommitCallback](./durablecommitcallback-class.md)  
+  Microsoft.Isam.Esent.Interop.EsentResource  
+    [Microsoft.Isam.Esent.Interop.Session](./session-class.md)  
+    [Microsoft.Isam.Esent.Interop.Table](./table-class.md)  
+    [Microsoft.Isam.Esent.Interop.Transaction](./transaction-class.md)  
+    [Microsoft.Isam.Esent.Interop.Update](./update-class.md)  
+    [Microsoft.Isam.Esent.Interop.Windows8.DurableCommitCallback](./durablecommitcallback-class.md)  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -72,4 +72,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentResource](./esentresource-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: Recupera la región del documento correspondiente a los cambios que se realizaron en el árbol de nodos de contexto del objeto IInkAnalyzer como resultado del análisis de tinta.
+description: Recupera la región del documento que corresponde a los cambios realizados en el árbol de nodos de contexto del objeto IInkAnalyzer como resultado del análisis de entrada de lápiz.
 ms.assetid: 25d511fb-ba2d-4c46-8a8c-8bb4187c9a5c
-title: 'IAnalysisStatus:: GetAppliedChangesRegion (método) (IACom. h)'
+title: Método IAnalysisStatus::GetAppliedChangesRegion (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 08f6690091207b648c39cded161de64585e44b41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3b2fec2528cbf961956e8b41f9eb6c985bd745d5dad097eb05544e64c42d122
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118044998"
 ---
-# <a name="ianalysisstatusgetappliedchangesregion-method"></a>IAnalysisStatus:: GetAppliedChangesRegion (método)
+# <a name="ianalysisstatusgetappliedchangesregion-method"></a>IAnalysisStatus::GetAppliedChangesRegion (método)
 
-Recupera la región del documento correspondiente a los cambios que se realizaron en el árbol de nodos de contexto del objeto [**IInkAnalyzer**](iinkanalyzer.md) como resultado del análisis de tinta.
+Recupera la región del documento que corresponde a los cambios realizados en el árbol de nodos de contexto del objeto [**IInkAnalyzer**](iinkanalyzer.md) como resultado del análisis de entrada de lápiz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,25 +39,25 @@ HRESULT GetAppliedChangesRegion(
 
 <dl> <dt>
 
-*pAppliedChangesRegion* \[ enuncia\]
+*pAppliedChangesRegion* \[ out\]
 </dt> <dd>
 
-Puntero al [**IAnalysisRegion**](ianalysisregion.md) del documento en el que se realizaron los cambios.
+Puntero a [**IAnalysisRegion**](ianalysisregion.md) del documento donde se realizaron los cambios.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
-> Para evitar una pérdida de memoria, llame a [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en \* *pAppliedChangesRegion* cuando ya no necesite usar la región de análisis.
+> Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en \* *pAppliedChangesRegion* cuando ya no necesite usar la región de análisis.
 
  
 
-Este método se usa con más frecuencia cuando la aplicación recibe información con fines de depuración y necesita invalidar el área en la que se pueden producir cambios para que se dibuje la información de depuración.
+Este método se usa con más frecuencia cuando la aplicación recibe información con fines de depuración y necesita invalidar el área donde pueden producirse cambios para que se pinte la información de depuración.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,9 +65,9 @@ Este método se usa con más frecuencia cuando la aplicación recibe informació
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -82,7 +82,7 @@ Este método se usa con más frecuencia cuando la aplicación recibe informació
 [**IAnalysisRegion**](ianalysisregion.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

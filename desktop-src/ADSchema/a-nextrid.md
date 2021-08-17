@@ -1,11 +1,11 @@
 ---
-title: Next-RID (atributo)
-description: El siguiente campo RID utilizado por el asignador de modo mixto.
+title: Atributo Next-Rid
+description: Campo Next Rid usado por el asignador de modo mixto.
 ms.assetid: 5a7a68e9-a07d-4160-be2f-083dcec79945
 ms.tgt_platform: multiple
 keywords:
-- 'Siguiente: esquema de AD de atributo RID'
-- nextRid esquema de AD de atributos
+- Esquema de AD del atributo Next-Rid
+- NextRid attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da332ecc7823796eca1cf7e59178655378674b95
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b4d68ad96c645c006842e63b2d0294cd4198c5dbeeb507c404df614d05ef644b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924095"
 ---
-# <a name="next-rid-attribute"></a>Next-RID (atributo)
+# <a name="next-rid-attribute"></a>Atributo Next-Rid
 
-El siguiente campo RID utilizado por el asignador de modo mixto.
+Campo Next Rid usado por el asignador de modo mixto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | RID siguiente                             |
-| Nombre para mostrar de LDAP | nextRid                              |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | Siguiente rid                             |
+| Ldap-Display-Name | nextRid                              |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.88                |
-| System-ID-GUID    | bf9679db-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | bf9679db-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -53,20 +53,20 @@ El siguiente campo RID utilizado por el asignador de modo mixto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ El siguiente campo RID utilizado por el asignador de modo mixto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ El siguiente campo RID utilizado por el asignador de modo mixto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ El siguiente campo RID utilizado por el asignador de modo mixto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ El siguiente campo RID utilizado por el asignador de modo mixto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ El siguiente campo RID utilizado por el asignador de modo mixto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                 |
+| Id. de vínculo                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
-| System-Only            | False                                                                                              |
-| Tiene un único valor       | True                                                                                               |
-| Está indexado             | False                                                                                              |
-| En el catálogo global      | False                                                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                       |
+| System-Only            | Falso                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                               |
+| Está indexado             | Falso                                                                                              |
+| En el catálogo global      | Falso                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

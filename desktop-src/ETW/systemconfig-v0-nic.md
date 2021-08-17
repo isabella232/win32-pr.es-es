@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de configuración de tarjeta de interfaz de red.
+description: Esta clase es la clase de tipo de evento para los eventos de configuración de tarjetas de interfaz de red.
 ms.assetid: 1cae611b-fb6a-4416-8fd4-0c882e8aa5e6
-title: SystemConfig_V0_NIC (clase)
+title: SystemConfig_V0_NIC clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -28,18 +28,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 040c409564c0ad37e5208c1e91962d3f04de5fc4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6abe9356ce222d8f461509ec9cfa25ab0a49b8583022ee5e1d832cf29a226dcb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119746475"
 ---
-# <a name="systemconfig_v0_nic-class"></a>\_Clase SystemConfig V0 \_ NIC
+# <a name="systemconfig_v0_nic-class"></a>Clase NIC SystemConfig \_ V0 \_
 
-Esta clase es la clase de tipo de evento para los eventos de configuración de tarjeta de interfaz de red.
+Esta clase es la clase de tipo de evento para los eventos de configuración de tarjetas de interfaz de red.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,20 +68,20 @@ class SystemConfig_V0_NIC : SystemConfig_V0
 
 ## <a name="members"></a>Miembros
 
-La clase **SystemConfig \_ V0 \_ NIC** tiene estos tipos de miembros:
+La **clase NIC SystemConfig \_ V0 \_** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **SystemConfig \_ V0 \_ NIC** tiene estas propiedades.
+La **clase NIC SystemConfig \_ V0 \_** tiene estas propiedades.
 
 <dl> <dt>
 
-**Data**
+**Datos**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -106,7 +106,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (8)
 </dt> </dl>
 
-Dirección IP del servidor del Protocolo de configuración dinámica de host (DHCP). Un valor de 255.255.255.255 indica que no se pudo establecer contacto con el servidor DHCP o está en proceso de alcanzarse. Cada byte de sint32 representa una de las cuatro partes de la dirección IP (P1. P2. P3. P4). El byte de orden inferior contiene el valor de P1, el siguiente byte contiene el valor de P2, etc.
+Dirección IP del servidor del protocolo de configuración dinámica de host (DHCP). Un valor de 255.255.255.255 indica que no se pudo alcanzar el servidor DHCP o que está en proceso de ser alcanzado. Cada byte del sint32 representa una de las cuatro partes de la dirección IP (p1.p2.p3.p4). El byte de orden bajo contiene el valor de p1, el byte siguiente contiene el valor de p2, y así sucesivamente.
 
 </dd> <dt>
 
@@ -122,7 +122,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (12)
 </dt> </dl>
 
-Primeras direcciones IP de servidor que se van a usar en la consulta de servidores DNS. Cada byte de sint32 representa una de las cuatro partes de la dirección IP (P1. P2. P3. P4). El byte de orden inferior contiene el valor de P1, el siguiente byte contiene el valor de P2, etc.
+Primera dirección IP del servidor que se usará en la consulta de servidores DNS. Cada byte del sint32 representa una de las cuatro partes de la dirección IP (p1.p2.p3.p4). El byte de orden bajo contiene el valor de p1, el byte siguiente contiene el valor de p2, y así sucesivamente.
 
 </dd> <dt>
 
@@ -138,7 +138,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (13)
 </dt> </dl>
 
-Segundas direcciones IP de servidor que se van a usar en la consulta de servidores DNS. Cada byte de sint32 representa una de las cuatro partes de la dirección IP (P1. P2. P3. P4). El byte de orden inferior contiene el valor de P1, el siguiente byte contiene el valor de P2, etc.
+Segundas direcciones IP de servidor que se usarán en las consultas de servidores DNS. Cada byte del sint32 representa una de las cuatro partes de la dirección IP (p1.p2.p3.p4). El byte de orden bajo contiene el valor de p1, el byte siguiente contiene el valor de p2, y así sucesivamente.
 
 </dd> <dt>
 
@@ -154,7 +154,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (14)
 </dt> </dl>
 
-Direcciones IP de tercer servidor que se van a usar en la consulta de servidores DNS. Cada byte de sint32 representa una de las cuatro partes de la dirección IP (P1. P2. P3. P4). El byte de orden inferior contiene el valor de P1, el siguiente byte contiene el valor de P2, etc.
+Terceras direcciones IP de servidor que se usarán en las consultas de servidores DNS. Cada byte del sint32 representa una de las cuatro partes de la dirección IP (p1.p2.p3.p4). El byte de orden bajo contiene el valor de p1, el byte siguiente contiene el valor de p2, y así sucesivamente.
 
 </dd> <dt>
 
@@ -170,7 +170,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (15)
 </dt> </dl>
 
-Cuarta direcciones IP de servidor que se van a usar en la consulta de servidores DNS. Cada byte de sint32 representa una de las cuatro partes de la dirección IP (P1. P2. P3. P4). El byte de orden inferior contiene el valor de P1, el siguiente byte contiene el valor de P2, etc.
+Cuartas direcciones IP de servidor que se usarán en las consultas de servidores DNS. Cada byte del sint32 representa una de las cuatro partes de la dirección IP (p1.p2.p3.p4). El byte de orden bajo contiene el valor de p1, el byte siguiente contiene el valor de p2, y así sucesivamente.
 
 </dd> <dt>
 
@@ -186,14 +186,14 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (9)
 </dt> </dl>
 
-Dirección IP de la puerta de enlace predeterminada que utiliza el sistema del equipo. Cada byte de sint32 representa una de las cuatro partes de la dirección IP (P1. P2. P3. P4). El byte de orden inferior contiene el valor de P1, el siguiente byte contiene el valor de P2, etc.
+Dirección IP de la puerta de enlace predeterminada que usa el sistema informático. Cada byte del sint32 representa una de las cuatro partes de la dirección IP (p1.p2.p3.p4). El byte de orden bajo contiene el valor de p1, el byte siguiente contiene el valor de p2, y así sucesivamente.
 
 </dd> <dt>
 
 **Index**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -202,11 +202,11 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (2)
 </dt> </dl>
 
-Índice del adaptador. El índice del adaptador puede cambiar cuando un adaptador está deshabilitado y habilitado, o en otras circunstancias, y no debe considerarse persistente.
+Índice del adaptador. El índice del adaptador puede cambiar cuando un adaptador está deshabilitado y, a continuación, habilitado, o en otras circunstancias, y no debe considerarse persistente.
 
 </dd> <dt>
 
-**IpAddress**
+**Ipaddress**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **sint32**
@@ -218,14 +218,14 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (6)
 </dt> </dl>
 
-Direcciones IP asociadas a la tarjeta de interfaz de red. Cada byte de sint32 representa una de las cuatro partes de la dirección IP (P1. P2. P3. P4). El byte de orden inferior contiene el valor de P1, el siguiente byte contiene el valor de P2, etc.
+Direcciones IP asociadas a la tarjeta de interfaz de red. Cada byte del sint32 representa una de las cuatro partes de la dirección IP (p1.p2.p3.p4). El byte de orden bajo contiene el valor de p1, el byte siguiente contiene el valor de p2, y así sucesivamente.
 
 </dd> <dt>
 
 **NICName**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **char16**
+Tipo de datos: **matriz char16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -257,7 +257,7 @@ Dirección de hardware del adaptador.
 **PhysicalAddrLen**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -266,7 +266,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (3)
 </dt> </dl>
 
-Longitud de la dirección de hardware para el adaptador.
+Longitud de la dirección de hardware del adaptador.
 
 </dd> <dt>
 
@@ -282,7 +282,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (10)
 </dt> </dl>
 
-Dirección IP del servidor WINS principal. Cada byte de sint32 representa una de las cuatro partes de la dirección IP (P1. P2. P3. P4). El byte de orden inferior contiene el valor de P1, el siguiente byte contiene el valor de P2, etc.
+Dirección IP del servidor WINS principal. Cada byte del sint32 representa una de las cuatro partes de la dirección IP (p1.p2.p3.p4). El byte de orden bajo contiene el valor de p1, el byte siguiente contiene el valor de p2, y así sucesivamente.
 
 </dd> <dt>
 
@@ -298,14 +298,14 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (11)
 </dt> </dl>
 
-Dirección IP del servidor WINS secundario. Cada byte de sint32 representa una de las cuatro partes de la dirección IP (P1. P2. P3. P4). El byte de orden inferior contiene el valor de P1, el siguiente byte contiene el valor de P2, etc.
+Dirección IP del servidor WINS secundario. Cada byte del sint32 representa una de las cuatro partes de la dirección IP (p1.p2.p3.p4). El byte de orden bajo contiene el valor de p1, el byte siguiente contiene el valor de p2, y así sucesivamente.
 
 </dd> <dt>
 
 **Tamaño**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -314,7 +314,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (5)
 </dt> </dl>
 
-Tamaño, en bytes, de la propiedad de datos.
+Tamaño, en bytes, de la propiedad Data.
 
 </dd> <dt>
 
@@ -330,7 +330,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (7)
 </dt> </dl>
 
-Máscara de subred asociada a la tarjeta de interfaz de red. Cada byte de sint32 representa una de las cuatro partes de la dirección IP (P1. P2. P3. P4). El byte de orden inferior contiene el valor de P1, el siguiente byte contiene el valor de P2, etc.
+Máscara de subred asociada a la tarjeta de interfaz de red. Cada byte del sint32 representa una de las cuatro partes de la dirección IP (p1.p2.p3.p4). El byte de orden bajo contiene el valor de p1, el byte siguiente contiene el valor de p2, y así sucesivamente.
 
 </dd> </dl>
 
@@ -341,7 +341,7 @@ Máscara de subred asociada a la tarjeta de interfaz de red. Cada byte de sint32
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
@@ -349,7 +349,7 @@ Máscara de subred asociada a la tarjeta de interfaz de red. Cada byte de sint32
 
 <dl> <dt>
 
-[**SystemConfig \_ v0**](systemconfig-v0.md)
+[**SystemConfig \_ V0**](systemconfig-v0.md)
 </dt> </dl>
 
  

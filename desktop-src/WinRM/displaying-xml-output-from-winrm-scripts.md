@@ -1,6 +1,6 @@
 ---
-title: Mostrar la salida XML de los scripts de WinRM
-description: Administración remota de Windows scripts devuelven XML en lugar de objetos. El XML no tiene un formato legible. Puede usar los métodos de la API de MSXML y el archivo XSL preinstalado para transformar los datos en un formato legible.
+title: Mostrar la salida XML de scripts winRM
+description: Windows Los scripts de administración remota devuelven XML en lugar de objetos . El XML no está en un formato legible para el ser humano. Puede usar los métodos de la API MSXML API y el archivo XSL preinstalado para transformar los datos en formato legible para el usuario.
 ms.assetid: a2c9401b-bc1e-4f8e-aabf-b6ade1a849ba
 ms.tgt_platform: multiple
 ms.topic: article
@@ -10,24 +10,24 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c70dd0a61181f6fc61e685641ff0ed5e3d43ffe8
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: df5c27c1fe22ae87395357aeefe681af7c041420d32b7bccbf595fab38bb060b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119680025"
 ---
-# <a name="displaying-xml-output-from-winrm-scripts"></a>Mostrar la salida XML de los scripts de WinRM
+# <a name="displaying-xml-output-from-winrm-scripts"></a>Mostrar la salida XML de scripts winRM
 
-Administración remota de Windows scripts devuelven XML en lugar de objetos. El XML no tiene un formato legible. Puede usar los métodos de la API de [MSXML](/previous-versions/windows/desktop/ms763742(v=vs.85)) y el archivo XSL preinstalado para transformar los datos en un formato legible.
+Windows Los scripts de administración remota devuelven XML en lugar de objetos . El XML no está en un formato legible para el ser humano. Puede usar los métodos de la API [MSXML](/previous-versions/windows/desktop/ms763742(v=vs.85)) API y el archivo XSL preinstalado para transformar los datos en un formato legible para el usuario.
 
-Para obtener más información acerca de la salida XML de WinRM y ejemplos de XML y sin formato, vea [Scripting in administración remota de Windows](scripting-in-windows-remote-management.md).
+Para obtener más información sobre la salida XML de WinRM y ejemplos de XML sin formato y con formato, vea [Scripting in Windows Remote Management](scripting-in-windows-remote-management.md).
 
-La herramienta de línea de comandos de **WinRM** incluye un archivo de transformación denominado WsmTxt. XSL que muestra la salida en un formato tabular. Si el script suministra este archivo a los métodos MSXML que realizan transforma, la salida aparece igual que la salida de la herramienta **WinRM** .
+La herramienta de línea de comandos **Winrm** incluye un archivo de transformación denominado WsmTxt.xsl que muestra la salida en un formato tabular. Si el script proporciona este archivo a los métodos MSXML que realizan tranformes, la salida aparece igual que la salida de la **herramienta Winrm.**
 
 **Para dar formato a la salida XML sin formato**
 
-1.  Cree el objeto [**WSMan**](wsman.md) y cree una sesión.
+1.  Cree el [**objeto WSMan**](wsman.md) y cree una sesión.
 
     ```VB
     Set Wsman = CreateObject("Wsman.Automation")
@@ -36,7 +36,7 @@ La herramienta de línea de comandos de **WinRM** incluye un archivo de transfor
 
     
 
-2.  Cree objetos MSXML que representen la salida de respuesta XML y la transformación XSL.
+2.  Cree MSXML objetos que representen la salida de respuesta XML y la transformación XSL.
 
     ```VB
     Set xmlFile = CreateObject( "MSXml.DOMDocument" )
@@ -45,7 +45,7 @@ La herramienta de línea de comandos de **WinRM** incluye un archivo de transfor
 
     
 
-3.  Obtener datos a través de métodos de objeto de [**sesión**](session.md) .
+3.  Obtener datos a través [**de métodos de**](session.md) objeto Session.
 
     ```VB
     xmlResponse = Session.Get("http://schemas.microsoft.com/" & _
@@ -54,7 +54,7 @@ La herramienta de línea de comandos de **WinRM** incluye un archivo de transfor
 
     
 
-4.  Proporcione la respuesta al método [loadXML](/previous-versions/windows/desktop/ms754585(v=vs.85)) de MSXML y el método [Load](/previous-versions/windows/desktop/ms762722(v=vs.85)) para almacenar el archivo de transformación.
+4.  Proporcione la respuesta al método MSXML [loadXML](/previous-versions/windows/desktop/ms754585(v=vs.85)) y al método [load](/previous-versions/windows/desktop/ms762722(v=vs.85)) para almacenar el archivo de transformación.
 
     ```VB
     xmlFile.LoadXml(xmlResponse)
@@ -64,7 +64,7 @@ La herramienta de línea de comandos de **WinRM** incluye un archivo de transfor
 
     
 
-5.  Usar el método [transformNode](/previous-versions/windows/desktop/ms761399(v=vs.85)) de MSXML y mostrar o guardar la salida.
+5.  Use el MSXML [transformNode](/previous-versions/windows/desktop/ms761399(v=vs.85)) y muestre o guarde la salida.
 
     ```VB
     Wscript.Echo xmlFile.TransformNode(xslFile)
@@ -72,7 +72,7 @@ La herramienta de línea de comandos de **WinRM** incluye un archivo de transfor
 
     
 
-En el siguiente ejemplo de código VBScript se muestra el script completo.
+En el siguiente ejemplo de código de VBScript se muestra el script completo.
 
 
 ```VB
@@ -90,11 +90,11 @@ Wscript.Echo xmlFile.TransformNode(xslFile)
 
 
 
-## <a name="adding-a-portable-subroutine-to-transform-xml-to-your-scripts"></a>Agregar una subrutina portable para transformar XML en los scripts
+## <a name="adding-a-portable-subroutine-to-transform-xml-to-your-scripts"></a>Agregar una subrutina portable para transformar XML a los scripts
 
-Puede Agregar una subrutina a los scripts que utiliza el archivo XSL preinstalado para convertir la salida XML sin formato de un script WinRM a un formato tabular.
+Puede agregar una subrutina a los scripts que usan el archivo XSL preinstalado para convertir la salida XML sin formato de un script WinRM en un formulario tabular.
 
-La subrutina siguiente usa llamadas a los métodos de scripting de MSXML para proporcionar la salida a WsmTxt. Xsl.
+La siguiente subrutina usa llamadas a MSXML métodos de scripting para proporcionar la salida a WsmTxt.xsl.
 
 
 ```VB
@@ -112,7 +112,7 @@ End Sub
 
 
 
-La subrutina siguiente transforma cada línea de los datos tal y como se muestra en el ejemplo siguiente.
+La siguiente subrutina transforma cada línea de los datos como se muestra en el ejemplo siguiente.
 
 
 ```VB
@@ -140,15 +140,15 @@ End Sub
 
 <dl> <dt>
 
-[Acerca de Administración remota de Windows](about-windows-remote-management.md)
+[Acerca Windows administración remota](about-windows-remote-management.md)
 </dt> <dt>
 
-[Usar Administración remota de Windows](using-windows-remote-management.md)
+[Uso de Windows administración remota](using-windows-remote-management.md)
 </dt> <dt>
 
-[Referencia de Administración remota de Windows](windows-remote-management-reference.md)
+[Windows Referencia de administración remota](windows-remote-management-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

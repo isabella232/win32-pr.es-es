@@ -25,7 +25,7 @@ Para obtener más información sobre las estaciones de ventana, vea los temas si
 
 -   [Creación de equipos de escritorio y estaciones de ventana](window-station-and-desktop-creation.md)
 -   [Procesar conexión a una estación de ventana](process-connection-to-a-window-station.md)
--   [Derechos de acceso y seguridad de las estaciones de ventana](window-station-security-and-access-rights.md)
+-   [Derechos de acceso y seguridad de la estación de windows](window-station-security-and-access-rights.md)
 
  
 

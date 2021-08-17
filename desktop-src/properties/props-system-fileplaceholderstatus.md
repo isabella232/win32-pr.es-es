@@ -1,17 +1,17 @@
 ---
 description: Contiene las marcas de estado del archivo de marcador de posición.
 ms.assetid: ccd34ed1-a1de-48db-acfc-8044e2536918
-title: System. FilePlaceholderStatus
+title: System.FilePlaceholderStatus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f25cc0daff4c236b90a66d6f0689f638c02135f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 35bdcb138cb36a183b5f2e1c9cf290599d03703d69d6a3175837538b070ed8ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119096884"
 ---
-# <a name="systemfileplaceholderstatus"></a>System. FilePlaceholderStatus
+# <a name="systemfileplaceholderstatus"></a>System.FilePlaceholderStatus
 
 Contiene las marcas de estado del archivo de marcador de posición.
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

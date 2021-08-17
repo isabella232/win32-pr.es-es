@@ -1,6 +1,6 @@
 ---
-description: Notifica a una Appbar cuando una aplicación de pantalla completa se abre o se cierra. Esta notificación se envía en forma de un mensaje definido por la aplicación que se establece mediante el \_ nuevo mensaje ABN.
-title: Mensaje de ABN_FULLSCREENAPP (ShellAPI. h)
+description: Notifica a una barra de aplicaciones cuando se abre o se cierra una aplicación de pantalla completa. Esta notificación se envía en forma de mensaje definido por la aplicación que se establece mediante el mensaje ABM \_ NEW.
+title: ABN_FULLSCREENAPP mensaje (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: c67ec934-088c-43e0-bff4-900d76a456e5
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: d73a30c9f40fc494603afd4a6cbb990f81290c8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 55bba51153ff90dfa69b870468a1c5002121eaccf45559821c6031aba35d4b98
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090795"
 ---
-# <a name="abn_fullscreenapp-message"></a>Mensaje de ABN \_ FULLSCREENAPP
+# <a name="abn_fullscreenapp-message"></a>Mensaje \_ ABN FULLSCREENAPP
 
-Notifica a una Appbar cuando una aplicación de pantalla completa se abre o se cierra. Esta notificación se envía en forma de un mensaje definido por la aplicación que se establece mediante el [**\_ nuevo mensaje ABN**](abm-new.md) .
+Notifica a una barra de aplicaciones cuando se abre o se cierra una aplicación de pantalla completa. Esta notificación se envía en forma de mensaje definido por la aplicación que se establece mediante el [**mensaje ABM \_ NEW.**](abm-new.md)
 
 
 ```C++
@@ -40,10 +40,10 @@ ABN_FULLSCREENAPP
 
 <dl> <dt>
 
-*fOpen* 
+*Fopen* 
 </dt> <dd>
 
-Marca que especifica si una aplicación de pantalla completa se está abriendo o cerrando. Este parámetro es **true** si la aplicación se está abriendo o **false** si se está cerrando.
+Marca que especifica si una aplicación de pantalla completa se está abriendo o cerrando. Este parámetro es **TRUE** si la aplicación se está abriendo o **FALSE** si se está cerrando.
 
 </dd> </dl>
 
@@ -51,19 +51,19 @@ Marca que especifica si una aplicación de pantalla completa se está abriendo o
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando se abre una aplicación de pantalla completa, un Appbar debe colocarse en la parte inferior del orden z. Cuando se está cerrando, el control Appbar debe restaurar su posición de orden z.
+Cuando se abre una aplicación de pantalla completa, una barra de aplicaciones debe colocarse en la parte inferior del orden Z. Cuando se cierra, la barra de aplicaciones debe restaurar su posición de orden Z.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>ShellAPI. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
 
 
 

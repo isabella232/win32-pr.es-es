@@ -1,12 +1,12 @@
 ---
-title: Método InstallBrokerDatabase de la clase Win32_SessionBrokerServiceProperties
-description: Instala una base de datos de agente de conexión a escritorio remoto en un servidor SQL Server central.
+title: Método InstallBrokerDatabase de la Win32_SessionBrokerServiceProperties clase
+description: Instala una base de datos del agente de conexión a Escritorio remoto en un servidor SQL central.
 ms.assetid: 9cc6fa4a-f1eb-49eb-bec4-acaff73190e8
 ms.tgt_platform: multiple
 keywords:
 - Método InstallBrokerDatabase Servicios de Escritorio remoto
-- Método InstallBrokerDatabase Servicios de Escritorio remoto, clase Win32_SessionBrokerServiceProperties
-- Win32_SessionBrokerServiceProperties de clase Servicios de Escritorio remoto, método InstallBrokerDatabase
+- Método InstallBrokerDatabase Servicios de Escritorio remoto , Win32_SessionBrokerServiceProperties clase
+- Win32_SessionBrokerServiceProperties clase Servicios de Escritorio remoto , método InstallBrokerDatabase
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da560bd4746c41864b3c56438f841efebe71ecd7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4e77a34c70fbf06bac5501c8cacddce9feb9211d1fe21c1ef30fe429d3e75308
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119422455"
 ---
-# <a name="installbrokerdatabase-method-of-the-win32_sessionbrokerserviceproperties-class"></a>Método InstallBrokerDatabase de la \_ clase SessionBrokerServiceProperties de Win32
+# <a name="installbrokerdatabase-method-of-the-win32_sessionbrokerserviceproperties-class"></a>Método InstallBrokerDatabase de la clase SessionBrokerServiceProperties de Win32 \_
 
-Instala una base de datos de agente de conexión a escritorio remoto en un servidor SQL Server central.
+Instala una base de datos del agente de conexión a Escritorio remoto en un servidor SQL central.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,21 +45,21 @@ uint32 InstallBrokerDatabase(
 
 <dl> <dt>
 
-*newDbFilePath* \[ de\]
+*newDbFilePath* \[ En\]
 </dt> <dd>
 
 nueva ruta de acceso del archivo de base de datos.
 
 </dd> <dt>
 
-*connStringToCentralDBMaster* \[ de\]
+*connStringToCentralDBMaster* \[ En\]
 </dt> <dd>
 
 Cadena de conexión al maestro de base de datos central.
 
 </dd> <dt>
 
-*centralRdcmsDbName* \[ de\]
+*centralRdcmsDbName* \[ En\]
 </dt> <dd>
 
 Nombre de la base de datos central.
@@ -74,8 +74,8 @@ Nombre de la base de datos central.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                         |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 
@@ -84,7 +84,7 @@ Nombre de la base de datos central.
 
 <dl> <dt>
 
-[**Win32 \_ SessionBrokerServiceProperties**](win32-sessionbrokerserviceproperties.md)
+[**SessionBrokerServiceProperties de Win32 \_**](win32-sessionbrokerserviceproperties.md)
 </dt> </dl>
 
  

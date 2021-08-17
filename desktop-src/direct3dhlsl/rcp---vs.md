@@ -1,6 +1,6 @@
 ---
-title: RCP-vs
-description: Calcula el recíproco del escalar del origen. | RCP-vs
+title: rcp - vs
+description: Calcula el recíproco del escalar de origen. | rcp - vs
 ms.assetid: be638a42-b693-461d-ab0a-3a6c0fa1acfc
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,38 +9,38 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 145a998cbca9dc3721d9c7d6ba251d539286a3f1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d9ec2c011e4f365f7cedc1191522836db098da976c4ce3c5153169a1d87f180d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672305"
 ---
-# <a name="rcp---vs"></a>RCP-vs
+# <a name="rcp---vs"></a>rcp - vs
 
-Calcula el recíproco del escalar del origen.
+Calcula el recíproco del escalar de origen.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| RCP DST, src |
+| rcp dst, src |
 |--------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino.
--   src es un registro de origen. El registro de origen requiere el uso explícito de replicate swizzle, es decir, se debe especificar exactamente uno de los componentes. x,. y,. z,. w swizzle (o. r,. g,. b,. a equivalentes).
+-   dst es el registro de destino.
+-   src es un registro de origen. El registro de origen requiere el uso explícito de replicar swzzle, es decir, exactamente uno de los componentes .x, .y, .z, .w swzzle (o los componentes .r, .g, .b, .a equivalentes).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | rcp                    | x    | x    | x    | x     | x    | x     |
 
@@ -48,7 +48,7 @@ Calcula el recíproco del escalar del origen.
 
  
 
-En el siguiente fragmento de código se muestran las operaciones realizadas.
+El fragmento de código siguiente muestra las operaciones realizadas.
 
 
 ```
@@ -70,11 +70,11 @@ dest = f;
 
 
 
-La salida debe ser exactamente 1,0 si la entrada es exactamente 1,0. Un origen de 0,0 produce infinito.
+La salida debe ser exactamente 1.0 si la entrada es exactamente 1.0. Una fuente de 0,0 produce infinito.
 
-La precisión debe ser al menos de 1,0/(2 ² ²) error absoluto en el intervalo (1,0, 2,0) porque las implementaciones comunes separan la mantisa y el exponente.
+La precisión debe ser de al menos un error absoluto de 1,0/(2):2): en el intervalo (1.0, 2.0), ya que las implementaciones comunes separarán la mantisa y el exponente.
 
-Si el origen no tiene ningún subíndice, se usa el componente x.
+Si el origen no tiene subíndices, se usa el componente x.
 
 ## <a name="related-topics"></a>Temas relacionados
 

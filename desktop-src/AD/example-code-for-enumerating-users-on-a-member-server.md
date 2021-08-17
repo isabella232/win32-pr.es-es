@@ -1,6 +1,6 @@
 ---
 title: Código de ejemplo para enumerar usuarios en un servidor miembro
-description: En este tema se incluyen ejemplos de código que enumeran los usuarios en un servidor miembro.
+description: En este tema se incluyen ejemplos de código que enumeran los usuarios de un servidor miembro.
 ms.assetid: a856281a-7f84-44d0-9123-b27fda56e0ea
 ms.tgt_platform: multiple
 keywords:
@@ -73,7 +73,7 @@ End Sub
 
 
 
-En el siguiente ejemplo de código de C++ se enumeran todos los objetos de una clase especificada, como un usuario, y se muestran los miembros contenidos en cada objeto en un servidor miembro o Windows 2000 Professional.
+En el ejemplo de código de C++ siguiente se enumeran todos los objetos de una clase especificada, como un usuario, y se muestran los miembros contenidos en cada objeto en un servidor miembro o Windows 2000 Professional.
 
 
 ```C++

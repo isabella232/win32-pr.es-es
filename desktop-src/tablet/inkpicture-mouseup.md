@@ -76,16 +76,16 @@ Este evento no devuelve un valor.
 ## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Los parámetros *pX* y *pY están* en píxeles y no las unidades HIMETRIC asociadas al sistema de coordenadas del espacio de entrada de lápiz. Esto se debe a que este evento reemplaza el evento de mouse relacionado de una aplicación que no tiene en cuenta el lápiz, y ese tipo de aplicación solo hace referencia a píxeles.
+> Los parámetros *pX* y *pY* están en píxeles, y no las unidades HIMETRIC asociadas al sistema de coordenadas del espacio de entrada de lápiz. Esto se debe a que este evento reemplaza el evento de mouse relacionado de una aplicación que no es consciente del lápiz y ese tipo de aplicación solo hace referencia a píxeles.
 
  
 
 > [!Caution]  
-> Algunos controles se basan en una relación específica entre [**los eventos MouseDown,**](inkpicture-mousedown.md) [**MouseMove**](inkpicture-mousemove.md)y **MouseUp.** La cancelación de algunos de estos eventos puede tener resultados imprevistos.
+> Algunos controles se basan en una relación específica entre [**los eventos MouseDown**](inkpicture-mousedown.md), [**MouseMove**](inkpicture-mousemove.md)y **MouseUp.** La cancelación de algunos de estos eventos puede tener resultados imprevistos.
 
  
 
-Este método de evento se define en la **\_ interfaz IInkPictureEvents.** La **\_ interfaz IInkPictureEvents** implementa la [**interfaz IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de DISPID \_ IPEMouseDown.
+Este método de evento se define en la **\_ interfaz IInkPictureEvents.** La **\_ interfaz IInkPictureEvents** implementa la [**interfaz IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de \_ DISPID IPEMouseDown.
 
 ## <a name="requirements"></a>Requisitos
 
