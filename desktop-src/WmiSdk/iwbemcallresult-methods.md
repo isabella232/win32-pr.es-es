@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Métodos IWbemCallResult
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c810bb773b6770e362d5e5455354893121061c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38eaed7cb91d7edc5ce130a680cf9892ac4dd4c67060ed8a4bfa7f8832026a9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117924026"
 ---
 # <a name="iwbemcallresult-methods"></a>Métodos IWbemCallResult
 
-La interfaz [**IWbemCallResult**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemcallresult) expone los métodos siguientes.
+La [**interfaz IWbemCallResult**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemcallresult) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

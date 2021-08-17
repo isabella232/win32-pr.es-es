@@ -54,7 +54,7 @@ Argumentos de la línea de comandos de RemoteApp.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
@@ -63,7 +63,7 @@ Argumentos de la línea de comandos de RemoteApp.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

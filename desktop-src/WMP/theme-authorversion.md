@@ -1,9 +1,9 @@
 ---
-title: THEME. authorVersion
-description: El atributo authorVersion especifica o recupera el número de versión de la máscara tal como la asigna el autor.
+title: THEME.authorVersion
+description: El atributo authorVersion especifica o recupera el número de versión de la máscara según lo asignado por el autor.
 ms.assetid: b05cfc65-34b6-4029-953e-0dfa1bb3108e
 keywords:
-- Media Player de Windows de THEME. authorVersion
+- THEME.authorVersion Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd00fd03fc027f1faac35bf729743726bc654674
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4d58dafcbbbe582f299f4f5807416ddcc73d1c3574f3daf305f0fe862f852ece
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118117843"
 ---
-# <a name="themeauthorversion"></a>THEME. authorVersion
+# <a name="themeauthorversion"></a>THEME.authorVersion
 
-El atributo **authorVersion** especifica o recupera el número de versión de la máscara tal como la asigna el autor.
+El **atributo authorVersion** especifica o recupera el número de versión de la máscara según lo asignado por el autor.
 
 ``` syntax
 theme.authorVersion
@@ -29,7 +29,7 @@ theme.authorVersion
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de solo lectura sin ningún valor predeterminado.
+Este atributo es una cadena de solo **lectura** sin ningún valor predeterminado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Este atributo es una **cadena** de solo lectura sin ningún valor predeterminado
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -45,10 +45,10 @@ Este atributo es una **cadena** de solo lectura sin ningún valor predeterminado
 
 <dl> <dt>
 
-[**Elemento THEME**](theme-element.md)
+[**ELEMENTO THEME**](theme-element.md)
 </dt> <dt>
 
-[**TEMA. autor**](theme-author.md)
+[**THEME.author**](theme-author.md)
 </dt> </dl>
 
  

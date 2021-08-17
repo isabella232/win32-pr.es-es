@@ -102,7 +102,7 @@ Un mensaje Hello tiene los siguientes puntos de enfoque.
 <tr class="even">
 <td>Tipos</td>
 <td><pre class="syntax" data-space="preserve"><code><wsd:Types>wsdp:Device</wsd:Types></code></pre></td>
-<td>Contiene los WS-Discovery de datos anunciados por el host.</td>
+<td>Contiene los WS-Discovery anunciados por el host.</td>
 </tr>
 </tbody>
 </table>

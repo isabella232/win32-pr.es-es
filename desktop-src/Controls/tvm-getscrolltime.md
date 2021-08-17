@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TVM_GETSCROLLTIME (commctrl. h)
-description: Recupera el tiempo de desplazamiento máximo para el control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la \_ macro GetScrollTime de TreeView.
+title: TVM_GETSCROLLTIME mensaje (Commctrl.h)
+description: Recupera el tiempo de desplazamiento máximo para el control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro TreeView \_ GetScrollTime.
 ms.assetid: 992d1906-cda3-4ac7-ba90-c681c551ac2e
 keywords:
-- TVM_GETSCROLLTIME controles de mensajes de Windows
+- TVM_GETSCROLLTIME controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6f0bacc6c12dd7f54f20d882faf738c11848d59
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e026a463476d5625f7632d7b6679ce94ca2c8ab6d8c6a050d8938bd46d9858b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118408502"
 ---
-# <a name="tvm_getscrolltime-message"></a>\_Mensaje de GETSCROLLTIME TVM
+# <a name="tvm_getscrolltime-message"></a>Mensaje \_ DE TVM GETSCROLLTIME
 
-Recupera el tiempo de desplazamiento máximo para el control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**\_ GetScrollTime de TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getscrolltime) .
+Recupera el tiempo de desplazamiento máximo para el control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ GetScrollTime.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getscrolltime)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -39,23 +39,23 @@ Recupera el tiempo de desplazamiento máximo para el control de vista de árbol.
 
 Devuelve el tiempo de desplazamiento máximo, en milisegundos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El tiempo de desplazamiento máximo es la cantidad más larga de tiempo que puede tardar una operación de desplazamiento. El desplazamiento se ajustará para que el desplazamiento tenga lugar dentro del tiempo de desplazamiento máximo. Una operación de desplazamiento puede tardar menos tiempo que el máximo.
+El tiempo de desplazamiento máximo es la mayor cantidad de tiempo que puede tardar una operación de desplazamiento. El desplazamiento se ajustará para que el desplazamiento se lleve a cabo dentro del tiempo de desplazamiento máximo. Una operación de desplazamiento puede tardar menos tiempo que el máximo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

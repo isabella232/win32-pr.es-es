@@ -36,7 +36,7 @@ Devuelve los componentes alfa de los cuatro valores de textura de [**texture2DAr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

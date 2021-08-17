@@ -1,7 +1,7 @@
 ---
-description: No se utiliza. Use D3DXPATCHMESHTYPE en su lugar para especificar los tipos de revisión de malla.
+description: No se utiliza. Use D3DXPATCHMESHTYPE en su lugar para especificar tipos de revisión de malla.
 ms.assetid: 1e7f4e8c-ffc5-49e7-9423-98404ddde109
-title: Enumeración D3DXPATCHMESH (D3dx9mesh. h)
+title: Enumeración D3DXPATCHMESH (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 54a41ac7ea2b8ebecd4cf3684016398c27c6924e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f3a7e74a4867b850a551eee5f2976d6a407283b080a026ab628d198cdda00950
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731587"
 ---
-# <a name="d3dxpatchmesh-enumeration"></a>Enumeración D3DXPATCHMESH
+# <a name="d3dxpatchmesh-enumeration"></a>D3DXPATCHMESH (enumeración)
 
-No se utiliza. Use [**D3DXPATCHMESHTYPE**](./d3dxpatchmeshtype.md) en su lugar para especificar los tipos de revisión de malla.
+No se usa. Use [**D3DXPATCHMESHTYPE en su**](./d3dxpatchmeshtype.md) lugar para especificar tipos de revisión de malla.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -40,10 +40,10 @@ enum _D3DXPATCHMESH {
 
 <dl> <dt>
 
-<span id="D3DXPATCHMESH_DEFAULT"></span><span id="d3dxpatchmesh_default"></span>**\_Valor predeterminado de D3DXPATCHMESH**
+<span id="D3DXPATCHMESH_DEFAULT"></span><span id="d3dxpatchmesh_default"></span>**D3DXPATCHMESH \_ PREDETERMINADO**
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ No se utiliza.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 
@@ -61,7 +61,7 @@ No se utiliza.
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](dx9-graphics-reference-d3dx-enums.md)
+[Enumeraciones D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> </dl>
 
  

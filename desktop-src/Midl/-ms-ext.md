@@ -31,7 +31,7 @@ midl /ms_ext
 
 Este modificador no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El uso del modificador no generará un error del compilador, por lo que no tiene que quitar las referencias a **/ms \_ ext** o [**/c \_ ext**](-c-ext.md) de un archivo Make existente.
 
@@ -49,7 +49,7 @@ Las siguientes extensiones de Microsoft para OSF DCE ahora están disponibles de
 -   Definiciones fuera del bloque de interfaz
 -   Puede omitir atributos [direccionales](/windows/desktop/Rpc/directional-parameter-attributes) \[ [**en**](in.md), [**out**](out-idl.md)\]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

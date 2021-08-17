@@ -50,7 +50,7 @@ SWbemDateTime.SetFileTime( _
 *strFileTime* \[ En\]
 </dt> <dd>
 
-**Valor FILETIME** utilizado para establecer el objeto.
+**Valor FILETIME** utilizado para establecer el objeto .
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ El formato *de strFileTime* no es válido.
 
 ## <a name="remarks"></a>Comentarios
 
-Después de una llamada correcta a **SetFileTime,** el valor [**datetime**](datetime.md) siempre se interpreta como un valor absoluto (**datetime**) e [**IsInterval**](swbemdatetime-isinterval.md) se establece en **FALSE.**
+Después de una llamada correcta a **SetFileTime,** el valor [**datetime**](datetime.md) siempre se interpreta como un valor absoluto (**datetime**) y [**IsInterval**](swbemdatetime-isinterval.md) se establece en **FALSE.**
 
 ## <a name="examples"></a>Ejemplos
 
@@ -90,7 +90,7 @@ Para obtener ejemplos de cómo usar el objeto [**SWbemDateTime**](swbemdatetime.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -102,7 +102,7 @@ Para obtener ejemplos de cómo usar el objeto [**SWbemDateTime**](swbemdatetime.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

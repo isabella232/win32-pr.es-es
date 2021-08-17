@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración PrereadKeysGrbit'
-title: Enumeración PrereadKeysGrbit (Microsoft. ISAM. esent. Interop. Windows7)
+description: 'Más información sobre: PrereadKeysGrbit (enumeración)'
+title: Enumeración PrereadKeysGrbit (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: PrereadKeysGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows7.PrereadKeysGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.prereadkeysgrbit(v=EXCHG.10)
@@ -28,21 +28,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: dadd7622206fe29197aa56d5629b5a9e2931e162
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 35b88c1b6fab760782d7233b736f469565b9f7420bffdf097bed4d30554a447c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117703080"
 ---
-# <a name="prereadkeysgrbit-enumeration"></a>Enumeración PrereadKeysGrbit
+# <a name="prereadkeysgrbit-enumeration"></a>PrereadKeysGrbit (enumeración)
 
 Opciones de JetPrereadKeys.
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -73,12 +73,12 @@ public enum PrereadKeysGrbit
 <tr class="odd">
 <td></td>
 <td>Adelante</td>
-<td>Avance de prelectura.</td>
+<td>Leer previamente hacia delante.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Atrás</td>
-<td>Lectura inversa.</td>
+<td>Leer previamente hacia atrás.</td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +88,4 @@ public enum PrereadKeysGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

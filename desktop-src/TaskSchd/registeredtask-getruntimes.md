@@ -1,11 +1,11 @@
 ---
-title: RegisteredTask. GetRunTimes, método
-description: En el caso de scripting, obtiene las veces que la tarea registrada está programada para ejecutarse durante un período de tiempo especificado.
+title: Método RegisteredTask.GetRunTimes
+description: Para el scripting, obtiene las horas a las que está programada la ejecución de la tarea registrada durante un tiempo especificado.
 ms.assetid: fc3d93eb-3186-419f-9f6f-7d54f8ade1ad
 keywords:
 - Método GetRunTimes Programador de tareas
-- Método GetRunTimes Programador de tareas, objeto RegisteredTask
-- Programador de tareas de objeto RegisteredTask, método GetRunTimes
+- Método GetRunTimes Programador de tareas , objeto RegisteredTask
+- Objeto RegisteredTask Programador de tareas método , GetRunTimes
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c15aba82c5515578a3c58a485e47718d09176483
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 303dd08c576f31946207241b086fe945b3f1ac275c596496139d19f507670e30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117759670"
 ---
-# <a name="registeredtaskgetruntimes-method"></a>RegisteredTask. GetRunTimes, método
+# <a name="registeredtaskgetruntimes-method"></a>Método RegisteredTask.GetRunTimes
 
-En el caso de scripting, obtiene las veces que la tarea registrada está programada para ejecutarse durante un período de tiempo especificado.
+Para el scripting, obtiene las horas a las que está programada la ejecución de la tarea registrada durante un tiempo especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,31 +45,31 @@ RegisteredTask.GetRunTimes( _
 
 <dl> <dt>
 
-*Inicio* \[ de de\]
+*begin* \[ En\]
 </dt> <dd>
 
-La hora de inicio de la consulta.
+Hora de inicio de la consulta.
 
 </dd> <dt>
 
-*fin* \[ de de\]
+*end* \[ En\]
 </dt> <dd>
 
-La hora de finalización de la consulta.
+Hora de finalización de la consulta.
 
 </dd> <dt>
 
-*recuento* \[ enuncia\]
+*count* \[ out\]
 </dt> <dd>
 
-El número de horas programadas que se ejecutará la tarea.
+Número de veces programadas que se ejecutará la tarea.
 
 </dd> <dt>
 
-*rgstTaskTimes* \[ enuncia\]
+*rgstTaskTimes* \[ out\]
 </dt> <dd>
 
-Las horas programadas en las que se ejecutará la tarea.
+Las horas programadas que se ejecutará la tarea.
 
 </dd> </dl>
 
@@ -77,9 +77,9 @@ Las horas programadas en las que se ejecutará la tarea.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la tarea registrada contiene desencadenadores que se deshabilitan de forma individual, estos desencadenadores todavía afectarán a la siguiente hora de ejecución programada que se devuelva aunque estén deshabilitados.
+Si la tarea registrada contiene desencadenadores que están deshabilitados individualmente, estos desencadenadores seguirán afectando al siguiente tiempo de ejecución programado que se devuelve aunque estén deshabilitados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,9 +87,9 @@ Si la tarea registrada contiene desencadenadores que se deshabilitan de forma in
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

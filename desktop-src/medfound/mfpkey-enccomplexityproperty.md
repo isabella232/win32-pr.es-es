@@ -1,23 +1,23 @@
 ---
 description: Especifica la complejidad del algoritmo de codificación.
 ms.assetid: 5dd34818-f282-4859-b423-97e9c4944aec
-title: Propiedad MFPKEY_ENCCOMPLEXITY (Wmcodecdsp. h)
+title: MFPKEY_ENCCOMPLEXITY propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 51f50e7966a05affe8ae75869b670cf75f088b53
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d93abe02b50f862fec706f75449e00643228a3917bc22ca9dafa9285d9d46be3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117690130"
 ---
-# <a name="mfpkey_enccomplexity-property"></a>\_Propiedad ENCCOMPLEXITY de MFPKEY
+# <a name="mfpkey_enccomplexity-property"></a>Propiedad MFPKEY \_ ENCCOMPLEXITY
 
-Especifica la complejidad del algoritmo de codificación. El valor es un entero comprendido entre 0 y 100, donde 0 especifica el algoritmo menos complejo y 100 especifica el algoritmo más complejo.
+Especifica la complejidad del algoritmo de codificación. El valor es un entero entre 0 y 100, donde 0 especifica el algoritmo menos complejo y 100 especifica el algoritmo más complejo.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -27,32 +27,32 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 100 para Windows Media Audio 10 y Windows Media Audio 10 Professional
 
-100 para la versión de Windows Vista de Windows Media Audio 10 Lossless
+100 para la versión Windows Vista de Windows Media Audio 10 Sin pérdida
 
-0 para Windows 7 Release Windows Media Audio 10 Lossless
+0 para la versión Windows 7 Windows Media Audio 10 Sin pérdidas
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la [**propiedad \_ CONSTRAINECOMPLEXITY de MFPKEY**](mfpkey-constrainenccomplexityproperty.md) tiene un valor de **Variant \_ true**, el codificador ajusta la complejidad de su algoritmo según el valor de esta propiedad.
+Si la [**propiedad MFPKEY \_ CONSTRAINECOMPLEXITY**](mfpkey-constrainenccomplexityproperty.md) tiene un valor **de VARIANT \_ TRUE**, el codificador ajusta la complejidad de su algoritmo según el valor de esta propiedad.
 
-En el caso del codificador Windows Media Audio 10 y el codificador Windows Media Audio 10 Professional, si el valor de esta propiedad es 100, el codificador coloca una gran demanda en la CPU y genera la salida de mayor calidad. A medida que se reduce el valor de esta propiedad, se reduce la demanda de la CPU, pero también se reduce la calidad de la salida.
+Para el codificador Windows Media Audio 10 y el codificador Professional Windows Media Audio 10, si el valor de esta propiedad es 100, el codificador coloca una alta demanda en la CPU y genera la salida de mayor calidad. A medida que disminuye el valor de esta propiedad, la demanda en la CPU disminuye, pero también disminuye la calidad de la salida.
 
-En el caso del codificador de Windows Media Audio 10 sin pérdida de código, si el valor de esta propiedad es 0, el codificador pone una demanda baja en la CPU. A medida que aumenta el valor de esta propiedad, aumenta la demanda de la CPU y el tamaño de la salida del codificador se reduce ligeramente. La salida es sin pérdida, independientemente del valor de esta propiedad.
+Para el Windows media audio 10 sin pérdida, si el valor de esta propiedad es 0, el codificador coloca una baja demanda en la CPU. A medida que aumenta el valor de esta propiedad, aumenta la demanda en la CPU y el tamaño de la salida del codificador disminuye ligeramente. La salida no tiene pérdidas, independientemente del valor de esta propiedad.
 
-Si deja esta propiedad en su valor predeterminado de **Variant \_ false**, el codificador utiliza su algoritmo predeterminado. El algoritmo predeterminado depende del codificador que esté usando y de la versión de Windows que se esté ejecutando. En la tabla siguiente se describe el comportamiento predeterminado de las distintas combinaciones.
+Si deja esta propiedad en su valor predeterminado **de VARIANT \_ FALSE,** el codificador usa su algoritmo predeterminado. El algoritmo predeterminado depende del codificador que use y de la versión de Windows ejecuta. En la tabla siguiente se describe el comportamiento predeterminado de las distintas combinaciones.
 
 
 
 | Sistema operativo | Comportamiento predeterminado                                                                                                                                                                                                |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Windows Vista    | Los codificadores Windows Media Audio 10, Windows Media Audio 10 Professional y Windows Media Audio 10 sin pérdida utilizan el algoritmo más complejo de forma predeterminada.                                                    |
-| Windows 7        | Los codificadores Windows Media Audio 10 y Windows Media Audio 10 Professional usan el algoritmo más complejo de forma predeterminada. De forma predeterminada, el codificador sin pérdida de Windows Media Audio 10 usa el algoritmo menos complejo. |
+| Windows Vista    | Los codificadores sin pérdida Windows Media Audio 10, Windows Media Audio 10 Professional y Windows Media Audio 10 usan el algoritmo más complejo de forma predeterminada.                                                    |
+| Windows 7        | Los Windows media audio 10 y Windows media audio 1 Professional 0 usan el algoritmo más complejo de forma predeterminada. El Windows media audio 10 sin pérdida usa el algoritmo menos complejo de forma predeterminada. |
 
 
 
  
 
-Si la [**propiedad \_ CONSTRAINECOMPLEXITY de MFPKEY**](mfpkey-constrainenccomplexityproperty.md) tiene un valor de **Variant \_ false**, el codificador omite esta propiedad.
+Si la [**propiedad MFPKEY \_ CONSTRAINECOMPLEXITY**](mfpkey-constrainenccomplexityproperty.md) tiene un valor **de VARIANT \_ FALSE,** el codificador omite esta propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,9 +60,9 @@ Si la [**propiedad \_ CONSTRAINECOMPLEXITY de MFPKEY**](mfpkey-constrainenccompl
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ Si la [**propiedad \_ CONSTRAINECOMPLEXITY de MFPKEY**](mfpkey-constrainenccompl
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

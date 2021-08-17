@@ -1,6 +1,6 @@
 ---
 title: Tipo de matriz
-description: Una matriz es un tipo de datos Especial que contiene entre uno y dieciséis componentes. Cada componente de una matriz debe ser del mismo tipo.
+description: Una matriz es un tipo de datos especial que contiene entre uno y dieciséis componentes. Cada componente de una matriz debe ser del mismo tipo.
 ms.assetid: 728eb472-103d-4c7f-b6f6-e515fc024801
 keywords:
 - Tipo de matriz HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c580706a2ddae3e4a94c138a1ca0f6932457732a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: b9e6b98309c760a3da4d1e9c488e4aed049aa34f0b449042e8f00a02426cc513
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117726175"
 ---
 # <a name="matrix-type"></a>Tipo de matriz
 
-Una matriz es un tipo de datos Especial que contiene entre uno y dieciséis componentes. Cada componente de una matriz debe ser del mismo tipo.
+Una matriz es un tipo de datos especial que contiene entre uno y dieciséis componentes. Cada componente de una matriz debe ser del mismo tipo.
 
 
 
@@ -40,8 +40,8 @@ Una matriz es un tipo de datos Especial que contiene entre uno y dieciséis comp
 
 | Elemento                                                                                                                             | Descripción                                                                                                                                                                                                                                                                                       |
 |----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="TypeComponents"></span><span id="typecomponents"></span><span id="TYPECOMPONENTS"></span>**TypeComponents**<br/> | Un nombre único que contiene tres partes. La primera parte es uno de los tipos [escalares](dx-graphics-hlsl-data-types.md) . La segunda parte es el número de filas. La tercera parte es el número de columnas. El número de filas y columnas es un entero positivo comprendido entre 1 y 4, ambos incluidos.<br/> |
-| <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Name**<br/>                                         | Cadena ASCII que identifica de forma única el nombre de la variable.<br/>                                                                                                                                                                                                                            |
+| <span id="TypeComponents"></span><span id="typecomponents"></span><span id="TYPECOMPONENTS"></span>**TypeComponents**<br/> | Nombre único que contiene tres partes. La primera parte es uno de los [tipos escalares.](dx-graphics-hlsl-data-types.md) La segunda parte es el número de filas. La tercera parte es el número de columnas. El número de filas y columnas es un entero positivo entre 1 y 4 inclusive.<br/> |
+| <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nombre**<br/>                                         | Cadena ASCII que identifica de forma única el nombre de la variable.<br/>                                                                                                                                                                                                                            |
 
 
 
@@ -49,7 +49,7 @@ Una matriz es un tipo de datos Especial que contiene entre uno y dieciséis comp
 
 ## <a name="examples"></a>Ejemplos
 
-A continuación se muestran algunos ejemplos:
+Estos son algunos ejemplos:
 
 
 ```
@@ -65,7 +65,7 @@ float2x2 fMatrix = { 0.0f, 0.1, // row 1
 
 
 
-Una matriz se puede declarar con esta sintaxis también:
+Una matriz también se puede declarar mediante esta sintaxis:
 
 
 ```
@@ -74,7 +74,7 @@ matrix <Type, Number> VariableName
 
 
 
-El tipo de matriz utiliza corchetes angulares para especificar el tipo, el número de filas y el número de columnas. En este ejemplo se crea una matriz de punto flotante, con dos filas y dos columnas. Se puede usar cualquiera de los tipos de datos escalares.
+El tipo de matriz usa los corchetes angulares para especificar el tipo, el número de filas y el número de columnas. En este ejemplo se crea una matriz de punto flotante, con dos filas y dos columnas. Se puede usar cualquiera de los tipos de datos escalares.
 
 Este es un ejemplo:
 
@@ -91,7 +91,7 @@ matrix <float, 2, 2> fMatrix = { 0.0f, 0.1, // row 1
 
 <dl> <dt>
 
-[Tipos de datos (DirectX HLSL)](dx-graphics-hlsl-data-types.md)
+[Tipos de datos (HLSL de DirectX)](dx-graphics-hlsl-data-types.md)
 </dt> </dl>
 
  

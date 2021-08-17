@@ -1,7 +1,7 @@
 ---
 description: Parámetros predeterminados de efecto.
 ms.assetid: a8a24cf2-0ecd-4429-97d3-086ff49540a1
-title: Estructura D3DXEFFECTDEFAULT (D3dx9mesh. h)
+title: Estructura D3DXEFFECTDEFAULT (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: fee415cbd7d8ec28daa079dd2f224949402a813b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 41beda43807ace6b0f335dc1937f8843cbc11544e4842f86af98eb0e0bb0802a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731884"
 ---
-# <a name="d3dxeffectdefault-structure"></a>Estructura D3DXEFFECTDEFAULT
+# <a name="d3dxeffectdefault-structure"></a>D3DXEFFECTDEFAULT (estructura)
 
 Parámetros predeterminados de efecto.
 
@@ -60,7 +60,7 @@ Tipo: **[ **D3DXEFFECTDEFAULTTYPE**](./d3dxeffectdefaulttype.md)**
 
 </dd> <dd>
 
-Tipo de datos de pValue. Para obtener más información, consulte [ **D3DXEFFECTDEFAULTTYPE**](./d3dxeffectdefaulttype.md)
+Tipo de datos en pValue. Para obtener más información, [ **vea D3DXEFFECTDEFAULTTYPE.**](./d3dxeffectdefaulttype.md)
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Tamaño, en bytes, de los datos a los que señala pValue.
+Tamaño, en bytes, de los datos a los que apunta pValue.
 
 </dd> <dt>
 
@@ -92,7 +92,7 @@ Puntero a la ubicación de memoria que contiene los datos.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 
@@ -100,7 +100,7 @@ Puntero a la ubicación de memoria que contiene los datos.
 
 <dl> <dt>
 
-[Estructuras de efectos](dx9-graphics-reference-effects-structures.md)
+[Estructuras de efecto](dx9-graphics-reference-effects-structures.md)
 </dt> </dl>
 
  

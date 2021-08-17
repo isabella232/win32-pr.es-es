@@ -3,7 +3,7 @@ title: NM_HOVER de notificación (vista de lista) (Commctrl.h)
 description: Enviado por un control de vista de lista cuando el mouse mantiene el mouse sobre un elemento. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 0d4a2eee-9c98-43d1-bc05-226d91c0480a
 keywords:
-- NM_HOVER (vista de lista) código de notificación Windows controles
+- NM_HOVER (vista de lista) de código de notificación Windows controles
 topic_type:
 - apiref
 api_name:

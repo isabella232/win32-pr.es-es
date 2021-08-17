@@ -1,11 +1,11 @@
 ---
 title: Propiedad IVMVirtualPC UpTime (VPCCOMInterfaces.h)
-description: Recupera el número de segundos que Windows aplicación virtual de PC se ha estado ejecutando.
+description: Recupera el número de segundos que ha estado Windows aplicación de pc virtual.
 ms.assetid: 3007a961-2e8c-4674-aab6-4424d0d73eca
 keywords:
-- UpTime, propiedad Virtual PC
-- Propiedad UpTime Virtual PC , interfaz IVMVirtualPC
-- IVMVirtualPC interface Virtual PC , propiedad UpTime
+- Equipo virtual de la propiedad UpTime
+- Propiedad UpTime De PC virtual, interfaz IVMVirtualPC
+- IVMVirtualPC interface Virtual PC , Propiedad UpTime
 topic_type:
 - apiref
 api_name:
@@ -24,11 +24,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117752014"
 ---
-# <a name="ivmvirtualpcuptime-property"></a>Propiedad IVMVirtualPC::UpTime
+# <a name="ivmvirtualpcuptime-property"></a>IVMVirtualPC::UpTime, propiedad
 
 \[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Recupera el número de segundos que Windows aplicación virtual de PC se ha estado ejecutando.
+Recupera el número de segundos que ha estado Windows aplicación de pc virtual.
 
 Esta propiedad es de solo lectura.
 
@@ -45,7 +45,7 @@ HRESULT get_UpTime(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Número de segundos que la aplicación Windows virtual PC se ha estado ejecutando.
+Número de segundos que ha estado Windows aplicación de pc virtual.
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -56,7 +56,7 @@ Número de segundos que la aplicación Windows virtual PC se ha estado ejecutand
 | <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                                              | La operación se realizó correctamente.<br/>                                                        |
 | <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>                                | El parámetro es **NULL.**<br/>                                                           |
 | <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>                        | Se produjo un error inesperado.<br/>                                                    |
-| <dl> <dt>Máquina virtual \_ E \_ HARDWARE \_ VIRTUALIZATION \_ DISABLED</dt> <dt>0xA0040951</dt> </dl> | El procesador no admite extensiones de Virtualización acelerada por hardware (HAV).<br/> |
+| <dl> <dt>Máquina virtual \_ E \_ \_ VIRTUALIZACIÓN DE HARDWARE \_ DESHABILITADA</dt> <dt>0xA0040951</dt> </dl> | El procesador no admite extensiones de virtualización acelerada de hardware (HAV).<br/> |
 
 
 
@@ -64,7 +64,7 @@ Número de segundos que la aplicación Windows virtual PC se ha estado ejecutand
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
@@ -75,7 +75,7 @@ Número de segundos que la aplicación Windows virtual PC se ha estado ejecutand
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

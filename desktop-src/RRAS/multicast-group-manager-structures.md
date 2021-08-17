@@ -1,29 +1,29 @@
 ---
-title: Estructuras de administrador de grupo de multidifusión
-description: La API MGM usa las siguientes estructuras
+title: Estructuras del Administrador de grupos de multidifusión
+description: La API de MGM usa las siguientes estructuras
 ms.assetid: d09d4692-1471-4c2c-b72f-a515225b1693
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be65baabe4c93334ccd8a8127458ba1f3e70380a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9a8b02978eb9a616c448156a0310f60fa5053de24f449995f378ef756a8b215a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117790439"
 ---
-# <a name="multicast-group-manager-structures"></a>Estructuras de administrador de grupo de multidifusión
+# <a name="multicast-group-manager-structures"></a>Estructuras del Administrador de grupos de multidifusión
 
-La API MGM usa las siguientes estructuras:
+La API de MGM usa las estructuras siguientes:
 
-[**MGM \_ If \_ entry**](/windows/desktop/api/Mgm/ns-mgm-mgm_if_entry)
+[**ENTRADA IF DE MGM \_ \_**](/windows/desktop/api/Mgm/ns-mgm-mgm_if_entry)
 
-[**\_configuración del Protocolo de enrutamiento \_**](/windows/desktop/api/Mgm/ns-mgm-routing_protocol_config)
+[**CONFIGURACIÓN \_ DEL PROTOCOLO DE \_ ENRUTAMIENTO**](/windows/desktop/api/Mgm/ns-mgm-routing_protocol_config)
 
-[**\_entrada de grupo de origen \_**](/windows/desktop/api/Mgm/ns-mgm-source_group_entry)
+[**ENTRADA \_ DEL GRUPO DE \_ ORIGEN**](/windows/desktop/api/Mgm/ns-mgm-source_group_entry)
 
- 
+ 
 
- 
+ 
 
 
 

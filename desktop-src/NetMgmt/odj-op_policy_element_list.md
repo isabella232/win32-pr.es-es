@@ -1,20 +1,20 @@
 ---
 title: OP_POLICY_ELEMENT_LIST
-description: Definición de OP_POLICY_ELEMENT_LIST IDL
+description: OP_POLICY_ELEMENT_LIST definición de IDL
 ms.assetid: 1eebbdd2-655b-4bd3-938c-6bc687ffe7bb
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: 3c46e7208e6c142b9f58a7704be9bd3461c845b2
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.openlocfilehash: 1fde1bb1d2794be4fd1bf799282a0257b78ae213453566208ff64bcf7a312654
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "103797175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117796883"
 ---
-# <a name="op_policy_element_list-structure"></a>Estructura de OP_POLICY_ELEMENT_LIST
+# <a name="op_policy_element_list-structure"></a>OP_POLICY_ELEMENT_LIST estructura
 
-Define una clave del Registro raíz y una matriz de elementos de clave del registro que se van a configurar bajo esa clave.
+Define una clave raíz del Registro y una matriz de elementos de clave del Registro que se configurarán en esa clave.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,22 +32,22 @@ typedef struct _OP_POLICY_ELEMENT_LIST
 
 ### <a name="psource"></a>pSource
 
-Contiene la ruta de acceso del archivo directiva de grupo desde el que se produjeron los elementos contenidos.
+Contiene la ruta de acceso del directiva de grupo del que se han origen los elementos contenidos.
 
 ### <a name="ulrootkeyid"></a>ulRootKeyId
 
-Contiene el identificador de la clave del Registro raíz; Actualmente debe establecerse en HKEY_LOCAL_MACHINE.
+Contiene el identificador de la clave raíz del Registro; actualmente debe establecerse en HKEY_LOCAL_MACHINE.
 
 ### <a name="celements"></a>cElements
 
-Contiene el número de elementos de los mismos.
+Contiene el número de elementos de pElements.
 
-### <a name="pelements"></a>Los mismos
+### <a name="pelements"></a>pElements
 
-Contiene una matriz de elementos OP_POLICY_ELEMENT.
+Contiene una matriz de OP_POLICY_ELEMENT elementos.
 
 ## <a name="see-also"></a>Vea también
 
-[**Definiciones IDL de unión a dominio sin conexión**](odj-idl.md)
+[**Definiciones de IDL de unión a un dominio sin conexión**](odj-idl.md)
 
-[**\_elemento de directiva de OP \_**](odj-op_policy_element.md)
+[**ELEMENTO \_ DE DIRECTIVA DE \_ OPERACIÓN**](odj-op_policy_element.md)

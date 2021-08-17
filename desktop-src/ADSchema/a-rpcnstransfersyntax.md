@@ -1,10 +1,10 @@
 ---
-title: atributo rpc-Ns-Transfer-Syntax
+title: Atributo rpc-Ns-Transfer-Syntax
 description: UUID de la sintaxis de transferencia admitida por la entrada actual.
 ms.assetid: e40beedb-68f3-4af9-89a8-268c90693082
 ms.tgt_platform: multiple
 keywords:
-- Rpc-Ns-Transfer-Syntax attribute AD Schema (Esquema de AD del atributo rpc-Ns-Transfer-Syntax)
+- Rpc-Ns-Transfer-Syntax attribute AD Schema
 - RpcNsTransferSyntax attribute AD Schema
 topic_type:
 - apiref
@@ -21,22 +21,22 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118681554"
 ---
-# <a name="rpc-ns-transfer-syntax-attribute"></a>atributo rpc-Ns-Transfer-Syntax
+# <a name="rpc-ns-transfer-syntax-attribute"></a>Atributo rpc-Ns-Transfer-Syntax
 
 UUID de la sintaxis de transferencia admitida por la entrada actual.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | rpc-Ns-Transfer-Syntax                      |
 | Ldap-Display-Name | rpcNsTransferSyntax                         |
 | Size              | \-                                          |
-| Privilegio actualizar  | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.314                      |
 | System-Id-Guid    | 29401c4a-7a27-11d0-afd6-00c04fd930c9        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,14 +53,14 @@ UUID de la sintaxis de transferencia admitida por la entrada actual.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------|
 | Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Es de un solo valor       | True                                                        |
-| Está indexado             | True                                                        |
-| En el catálogo global      | False                                                       |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Verdadero                                                        |
+| Está indexado             | Verdadero                                                        |
+| En el catálogo global      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
@@ -74,14 +74,14 @@ UUID de la sintaxis de transferencia admitida por la entrada actual.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------|
 | Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Es de un solo valor       | True                                                        |
-| Está indexado             | True                                                        |
-| En el catálogo global      | False                                                       |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Verdadero                                                        |
+| Está indexado             | Verdadero                                                        |
+| En el catálogo global      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
@@ -95,14 +95,14 @@ UUID de la sintaxis de transferencia admitida por la entrada actual.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------|
 | Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Es de un solo valor       | True                                                        |
-| Está indexado             | True                                                        |
-| En el catálogo global      | False                                                       |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Verdadero                                                        |
+| Está indexado             | Verdadero                                                        |
+| En el catálogo global      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
@@ -116,14 +116,14 @@ UUID de la sintaxis de transferencia admitida por la entrada actual.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------|
 | Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Es de un solo valor       | True                                                        |
-| Está indexado             | True                                                        |
-| En el catálogo global      | False                                                       |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Verdadero                                                        |
+| Está indexado             | Verdadero                                                        |
+| En el catálogo global      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
@@ -137,14 +137,14 @@ UUID de la sintaxis de transferencia admitida por la entrada actual.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------|
 | Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Es de un solo valor       | True                                                        |
-| Está indexado             | True                                                        |
-| En el catálogo global      | False                                                       |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Verdadero                                                        |
+| Está indexado             | Verdadero                                                        |
+| En el catálogo global      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
@@ -158,14 +158,14 @@ UUID de la sintaxis de transferencia admitida por la entrada actual.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------|
 | Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | False                                                       |
-| Es de un solo valor       | True                                                        |
-| Está indexado             | True                                                        |
-| En el catálogo global      | False                                                       |
+| System-Only            | Falso                                                       |
+| Es de un solo valor       | Verdadero                                                        |
+| Está indexado             | Verdadero                                                        |
+| En el catálogo global      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |

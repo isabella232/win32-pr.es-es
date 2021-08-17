@@ -15,7 +15,7 @@ ms.locfileid: "117740343"
 
 En las secciones siguientes se describe la semántica del uso de operaciones de conexión en protocolos sin conexión como UDP e IPX.
 
--   [Conectarse a un par predeterminado](connecting-to-a-default-peer-2.md)
+-   [Conexión a un punto de conexión predeterminado](connecting-to-a-default-peer-2.md)
 -   [Volver a conectarse y desconectarse](reconnecting-and-disconnecting-2.md)
 -   [Uso de Sendto mientras está conectado](using-sendto-while-connected-2.md)
 

@@ -13,11 +13,11 @@ ms.locfileid: "117737308"
 ---
 # <a name="ambient-properties"></a>Propiedades ambiente
 
-Como mínimo, los contenedores ActiveX Control deben admitir las siguientes propiedades ambientales mediante el estándar dispids.
+Como mínimo, los contenedores ActiveX control deben admitir las siguientes propiedades ambientales mediante el estándar dispids.
 
 
 
-| Propiedad Ambient             | Desaconsulte          | Comentarios y condiciones                                                      |
+| Propiedad Ambient             | Despid          | Comentarios y condiciones                                                      |
 |------------------------------|-----------------|--------------------------------------------------------------------------|
 | LocaleID<br/>          | -705<br/> |   <br/>                                                          |
 | UserMode<br/>          | -709<br/> | Para contenedores que tienen entornos de usuario y ejecución diferentes.<br/> |

@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. effectHasPropertyPage
+title: EFFECTS.effectHasPropertyPage
 description: El atributo effectHasPropertyPage recupera un valor que indica si la visualización actual tiene una página de propiedades.
 ms.assetid: 6014d510-35b6-4b5c-802e-b425297c5be3
 keywords:
-- EFFECTs. effectHasPropertyPage Windows Media Player
+- EFFECTS.effectHasPropertyPage Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c60cef0e79238a07d5ba46c5ea097f6fd9d683c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 47b0c900257af5c9cda7b0a0bb21040b47b49792293033d89c82284e479fb182
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117749227"
 ---
-# <a name="effectseffecthaspropertypage"></a>EFFECTs. effectHasPropertyPage
+# <a name="effectseffecthaspropertypage"></a>EFFECTS.effectHasPropertyPage
 
-El atributo **effectHasPropertyPage** recupera un valor que indica si la visualización actual tiene una página de propiedades.
+El **atributo effectHasPropertyPage** recupera un valor que indica si la visualización actual tiene una página de propiedades.
 
 ``` syntax
         elementID.effectHasPropertyPage
@@ -29,7 +29,7 @@ El atributo **effectHasPropertyPage** recupera un valor que indica si la visuali
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de solo lectura.
+Este atributo es un valor booleano de **solo lectura.**
 
 
 
@@ -48,7 +48,7 @@ Este atributo es un **valor booleano** de solo lectura.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -56,7 +56,7 @@ Este atributo es un **valor booleano** de solo lectura.
 
 <dl> <dt>
 
-[**EFFECTs, elemento**](effects-element.md)
+[**EFFECTS, elemento**](effects-element.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Valor de compresión armónico (SH).
+description: Ajuste de compresión armónica esférica (SH).
 ms.assetid: 214d6efb-419d-4eea-8360-322885c26bc3
-title: Enumeración D3DXSHCOMPRESSQUALITYTYPE (D3dx9mesh. h)
+title: Enumeración D3DXSHCOMPRESSQUALITYTYPE (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: d61c70317505442ca4911a13dac8566f9bd7c6fb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 482483bb38c708c9b09004d48bd4f1e1e0ec0e4b9463a6d20f210b4fe8b1d44c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731283"
 ---
 # <a name="d3dxshcompressqualitytype-enumeration"></a>Enumeración D3DXSHCOMPRESSQUALITYTYPE
 
-Valor de compresión armónico (SH).
+Ajuste de compresión armónica esférica (SH).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -55,10 +55,10 @@ La compresión de datos es de alta calidad, pero es lenta de comprimir.
 
 </dd> <dt>
 
-<span id="D3DXSHCQUAL_FORCE_DWORD"></span><span id="d3dxshcqual_force_dword"></span>**D3DXSHCQUAL \_ forzar \_ DWORD**
+<span id="D3DXSHCQUAL_FORCE_DWORD"></span><span id="d3dxshcqual_force_dword"></span>**D3DXSHCQUAL \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase en un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, a
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, a
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](dx9-graphics-reference-d3dx-enums.md)
+[Enumeraciones D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> </dl>
 
  

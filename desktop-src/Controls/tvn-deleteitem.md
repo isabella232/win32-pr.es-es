@@ -3,7 +3,7 @@ title: TVN_DELETEITEM de notificación (Commctrl.h)
 description: Notifica a la ventana primaria de un control de vista de árbol que se está eliminando un elemento. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 0d8801e0-02ae-40c9-8625-83d98b434d0a
 keywords:
-- TVN_DELETEITEM de notificación Windows controles
+- TVN_DELETEITEM código de notificación Windows controles
 topic_type:
 - apiref
 api_name:

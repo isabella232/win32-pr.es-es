@@ -1,9 +1,9 @@
 ---
-title: Mostrar
+title: Reflejar
 description: Devuelve un vector de reflexión mediante un rayo de incidente y una superficie normal.
 ms.assetid: e321b399-f382-4585-83a6-a7da1f7b2327
 keywords:
-- reflejar HLSL
+- reflect HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 46c981f636a797ecc4e0dd341ce44ed886c202cb
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2abc7100eae846fc3d2f21b013676aa3dbc64574a7e8cdb8a14dc492ceb33f75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103793594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117725949"
 ---
-# <a name="reflect"></a>Mostrar
+# <a name="reflect"></a>Reflejar
 
 Devuelve un vector de reflexión mediante un rayo de incidente y una superficie normal.
 
 
 
-| refleje *RET* (*i*, *n*) |
+| *ret* reflect(*i*, *n*) |
 |-------------------------|
 
 
@@ -39,8 +39,8 @@ Devuelve un vector de reflexión mediante un rayo de incidente y una superficie 
 
 | Elemento                                                   | Descripción                                          |
 |--------------------------------------------------------|------------------------------------------------------|
-| <span id="i"></span><span id="I"></span>*Configur*<br/> | \[en \] un vector de incidente de punto flotante.<br/> |
-| <span id="n"></span><span id="N"></span>*n*<br/> | \[en \] un vector normal de punto flotante.<br/>   |
+| <span id="i"></span><span id="I"></span>*i*<br/> | \[en \] Un punto flotante, vector de incidente.<br/> |
+| <span id="n"></span><span id="N"></span>*N*<br/> | \[en \] Un vector normal de punto flotante.<br/>   |
 
 
 
@@ -48,27 +48,27 @@ Devuelve un vector de reflexión mediante un rayo de incidente y una superficie 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Un vector de reflexión de punto flotante.
+Vector de reflexión de punto flotante.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función calcula el vector de reflexión mediante la siguiente fórmula: v = i-2 \* n \* punto (i n).
+Esta función calcula el vector de reflexión mediante la fórmula siguiente: v = i - 2 \* n \* dot(i n) .
 
 ## <a name="type-description"></a>Descripción del tipo
 
 
 
-| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamaño                           |
+| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size                           |
 |-------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *i*   | [**medios**](dx-graphics-hlsl-intrinsic-functions.md) | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
-| *n*   | [**medios**](dx-graphics-hlsl-intrinsic-functions.md) | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | mismas dimensiones que la entrada *i* |
-| *direcc* | [**medios**](dx-graphics-hlsl-intrinsic-functions.md) | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | mismas dimensiones que la entrada *i* |
+| *i*   | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
+| *n*   | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *i* |
+| *Ret* | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *i* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -76,7 +76,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible |
 |------------------------------------------------------------------------------------|-----------|
-| Modelador [modelo 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) y modelos de sombreador más altos | sí       |
+| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) y modelos de sombreador superiores | Sí       |
 
 
 
@@ -86,7 +86,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

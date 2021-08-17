@@ -1,7 +1,7 @@
 ---
-description: Una estructura auxiliar que contiene información de tipo de miembro.
+description: Estructura auxiliar que contiene información de tipo de miembro.
 ms.assetid: 5580122d-c700-4632-8fcf-903519f2429e
-title: D3DXSHADER_TYPEINFO estructura (D3dx9shader. h)
+title: D3DXSHADER_TYPEINFO estructura (D3dx9shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: 71b9cc893cdcfdc9802aca173627cd9da4f9ca4b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2bd62cfc3531442f815a16148e23c281735f29e7097e5aa2b55fb03b0c0341c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731273"
 ---
-# <a name="d3dxshader_typeinfo-structure"></a>D3DXSHADER \_ TYPEINFO (estructura)
+# <a name="d3dxshader_typeinfo-structure"></a>Estructura TYPEINFO de D3DXSHADER \_
 
-Una estructura auxiliar que contiene información de tipo de miembro.
+Estructura auxiliar que contiene información de tipo de miembro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,40 +48,40 @@ typedef struct D3DXSHADER_TYPEINFO {
 **Clase**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Tipo de objeto de sombreador. Vea [**\_ clase D3DXPARAMETER**](./d3dxparameter-class.md).
+Tipo de objeto de sombreador. Vea [**D3DXPARAMETER \_ CLASS**](./d3dxparameter-class.md).
 
 </dd> <dt>
 
 **Tipo**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Tipo de datos. Consulte [**\_ tipo de D3DXPARAMETER**](./d3dxparameter-type.md).
+Tipo de datos. Vea [**D3DXPARAMETER \_ TYPE**](./d3dxparameter-type.md).
 
 </dd> <dt>
 
 **Filas**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número de filas de la matriz (matrices).
+Número de filas de matriz (matrices).
 
 </dd> <dt>
 
 **Columnas**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -92,18 +92,18 @@ Número de columnas (vectores y matrices).
 **Elementos**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Dimensión de la matriz.
+Dimensión de matriz.
 
 </dd> <dt>
 
 **StructMembers**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -118,11 +118,11 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Matriz de información de miembros de estructura, D3DXSHADER \_ STRUCTMEMBERINFO \[ *StructMembers* \] . Vea [**D3DXSHADER \_ STRUCTMEMBERINFO**](d3dxshader-structmemberinfo.md).
+Matriz de información de miembro de estructura, D3DXSHADER \_ STRUCTMEMBERINFO \[ *StructMembers* \] . Vea [**D3DXSHADER \_ STRUCTMEMBERINFO**](d3dxshader-structmemberinfo.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La información de tipo forma parte de [**D3DXSHADER \_ STRUCTMEMBERINFO**](d3dxshader-structmemberinfo.md).
 
@@ -132,7 +132,7 @@ La información de tipo forma parte de [**D3DXSHADER \_ STRUCTMEMBERINFO**](d3dx
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9shader. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9shader.h</dt> </dl> |
 
 
 
@@ -140,7 +140,7 @@ La información de tipo forma parte de [**D3DXSHADER \_ STRUCTMEMBERINFO**](d3dx
 
 <dl> <dt>
 
-[Estructuras de D3DX](dx9-graphics-reference-d3dx-structures.md)
+[Estructuras D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> <dt>
 
 [**D3DXSHADER \_ CONSTANTINFO**](d3dxshader-constantinfo.md)

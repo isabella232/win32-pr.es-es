@@ -1,6 +1,6 @@
 ---
-description: Recupera el identificador del Appbar de ocultación automático asociado a un borde de la pantalla. Si el sistema tiene varios monitores, se utiliza el monitor que contiene la barra de tareas principal.
-title: Mensaje de ABM_GETAUTOHIDEBAR (ShellAPI. h)
+description: Recupera el identificador de la barra de aplicaciones de autohide asociada a un borde de la pantalla. Si el sistema tiene varios monitores, se usa el monitor que contiene la barra de tareas principal.
+title: ABM_GETAUTOHIDEBAR mensaje (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 545dd1d9-8cbb-4ff3-b871-4908ecac56db
@@ -13,19 +13,19 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 979825a9dbc28a89e3579419542877faacbace45
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ce38caf8cc1ad39e682aa8650e08e4860a3406e33669008d6ceee65e0416149
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118051157"
 ---
-# <a name="abm_getautohidebar-message"></a>ABN \_ GETAUTOHIDEBAR
+# <a name="abm_getautohidebar-message"></a>Mensaje \_ GETAUTOHIDEBAR de ABM
 
-Recupera el identificador del Appbar de ocultación automático asociado a un borde de la pantalla. Si el sistema tiene varios monitores, se utiliza el monitor que contiene la barra de tareas principal.
+Recupera el identificador de la barra de aplicaciones de autohide asociada a un borde de la pantalla. Si el sistema tiene varios monitores, se usa el monitor que contiene la barra de tareas principal.
 
 > [!Note]  
-> Para consultar un Appbar de ocultación automáticamente en un monitor específico, use [**ABN \_ GETAUTOHIDEBAREX**](abm-getautohidebarex.md).
+> Para consultar una barra de aplicaciones de autohide en un monitor específico, use [**ABM \_ GETAUTOHIDEBAREX**](abm-getautohidebarex.md).
 
  
 
@@ -43,13 +43,13 @@ hwndAutoHide = (HWND) SHAppBarMessage(ABM_GETAUTOHIDEBAR, pabd);
 *pabd* 
 </dt> <dd>
 
-Puntero a una estructura [**APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) que especifica el borde de la pantalla. Debe especificar los miembros **cbSize** y **uEdge** al enviar este mensaje; se omiten todos los demás miembros.
+Puntero a una [**estructura APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) que especifica el borde de la pantalla. Debe especificar los **miembros cbSize** **y uEdge** al enviar este mensaje; se omiten todos los demás miembros.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador del Appbar de ocultación automáticamente. El valor devuelto es **null** si se produce un error o si no hay ningún Appbar de ocultación automático asociado al borde especificado.
+Devuelve el identificador a la barra de aplicaciones autohide. El valor devuelto es **NULL** si se produce un error o si no hay ninguna barra de aplicaciones autohide asociada al borde especificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Devuelve el identificador del Appbar de ocultación automáticamente. El valor d
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>ShellAPI. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
 
 
 
@@ -67,13 +67,13 @@ Devuelve el identificador del Appbar de ocultación automáticamente. El valor d
 
 <dl> <dt>
 
-[**ABN \_ SETAUTOHIDEBAR**](abm-setautohidebar.md)
+[**ABM \_ SETAUTOHIDEBAR**](abm-setautohidebar.md)
 </dt> <dt>
 
-[**ABN \_ GETAUTOHIDEBAREX**](abm-getautohidebarex.md)
+[**ABM \_ GETAUTOHIDEBAREX**](abm-getautohidebarex.md)
 </dt> <dt>
 
-[**ABN \_ SETAUTOHIDEBAREX**](abm-setautohidebarex.md)
+[**ABM \_ SETAUTOHIDEBAREX**](abm-setautohidebarex.md)
 </dt> </dl>
 
  

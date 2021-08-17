@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 969cdebcee34add15cbf6bbcfbb1048387b2d7e8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f881e3df820df87ea948893277950bce3ca289b8f9e0dcc6a4d34d46cca463ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117736084"
 ---
 # <a name="id3dxmatrixstackmultmatrix-method-d3dx10h"></a>Método ID3DXMATRIXStack::MultMatrix (D3DX10.h)
 
@@ -45,7 +45,7 @@ HRESULT MultMatrix(
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntero a la estructura D3DXMATRIX que se va a multiplicar con la matriz actual.
+Puntero a la estructura D3DXMATRIX que se va a multiplicar por la matriz actual.
 
 </dd> </dl>
 
@@ -79,7 +79,7 @@ Este método no agrega un elemento a la pila, reemplaza la matriz actual por el 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

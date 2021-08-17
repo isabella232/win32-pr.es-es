@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec4Hermite (D3dx9math.h): realiza una interpolación spline de Hermite con los vectores 4D especificados.'
+description: 'Función D3DXVec4Hermite (D3dx9math.h): realiza una interpolación spline hermite, mediante los vectores 4D especificados.'
 ms.assetid: 687d4dcf-ee75-4dda-b6d2-5ba0b5281a64
 title: Función D3DXVec4Hermite (D3dx9math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b08ed785c24ba9580be0fc7f620a471ea96184a8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a62d96181b4242073b9e6a2176d841add86cbfeab4238bfb4cbb538bfd88e1e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730733"
 ---
 # <a name="d3dxvec4hermite-function-d3dx9mathh"></a>Función D3DXVec4Hermite (D3dx9math.h)
 
@@ -111,7 +111,7 @@ La **función D3DXVec4Hermite** interpola de (positionA, tangentA) a (positionB,
 
 La interpolación spline es una generalización de la spline de facilidad de entrada y salida. La rampa es una función de preguntas y respuestas con las siguientes propiedades.
 
-Q(s) = Aszos + Bs' + Cs + D (y, por lo tanto, Q's) = 3Asmiento + 2B + C)
+Q(s) = Asntes + Bs ' + Cs + D (y, por lo tanto, Q's) = 3Asmiento + 2B + C)
 
 a) Q(0) = v1, por lo que Q'(0) = t1
 
@@ -136,11 +136,11 @@ Q(s) = (2v1 - 2v2 + t2 + t1)s así + (3v2 - 3v1 - 2t1 - t2)sntes + t1 + v1
 
 Que se puede reorganizar como:
 
-Q(s) = (2sntes - 3s además de 1)v1 + (-2sntes + 3s así)v2 + (sntes - 2s además de s)t1 + (sntes - sntes)t2
+Q(s) = (2sntes - 3s además de 1)v1 + (-2sntes + 3s): v2 + (sntes - 2s- s)t1 + (sntes - sntes)t2
 
-Las curvas spline de Hermite son útiles para controlar la animación porque la curva se ejecuta a través de todos los puntos de control. Además, dado que la posición y la tangente se especifican explícitamente en los extremos de cada segmento, es fácil crear una curva continua C2 siempre que se asegúrese de que la posición inicial y la tangente coinciden con los valores finales del último segmento.
+Las curvas spline de Hermite son útiles para controlar la animación porque la curva recorre todos los puntos de control. Además, dado que la posición y la tangente se especifican explícitamente en los extremos de cada segmento, es fácil crear una curva continua C2 siempre que se asegúrese de que la posición inicial y la tangente coinciden con los valores finales del último segmento.
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la **función D3DXVec4Hermite** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la **función D3DXVec4Hermite** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -153,7 +153,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

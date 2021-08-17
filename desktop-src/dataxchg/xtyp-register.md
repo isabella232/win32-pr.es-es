@@ -1,6 +1,6 @@
 ---
 title: XTYP_REGISTER transacción (Ddeml.h)
-description: Una función de devolución de llamada de datos dinámicos Exchange (DDE), DdeCallback, recibe el tipo de transacción XTYP REGISTER cada vez que una aplicación de servidor de la biblioteca de administración de datos dinámicos Exchange (DDEML) usa la función DdeNameService para registrar un nombre de servicio o cada vez que se inicia una aplicación que no es DDEML que admite el tema \_ System.
+description: Una función de devolución de llamada de datos dinámicos Exchange (DDE), DdeCallback, recibe el tipo de transacción XTYP REGISTER siempre que una aplicación de servidor de biblioteca de administración de datos dinámicos Exchange (DDEML) use la función DdeNameService para registrar un nombre de servicio o cada vez que se inicia una aplicación que no sea DDEML que admita el tema \_ System.
 ms.assetid: 465e9c10-1526-4e2a-8a46-5984043f5a93
 keywords:
 - XTYP_REGISTER datos de transacción Exchange
@@ -23,7 +23,7 @@ ms.locfileid: "118544754"
 ---
 # <a name="xtyp_register-transaction"></a>Transacción XTYP \_ REGISTER
 
-Una función de devolución de llamada de datos dinámicos Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe el tipo de transacción **XTYP \_ REGISTER** cada vez que una aplicación de servidor de la biblioteca de administración de datos dinámicos Exchange (DDEML) usa la función [**DdeNameService**](/windows/desktop/api/Ddeml/nf-ddeml-ddenameservice) para registrar un nombre de servicio o cada vez que se inicia una aplicación que no es DDEML que admite el tema System.
+Una función de devolución de llamada de datos dinámicos Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe el tipo de transacción **XTYP \_ REGISTER** cada vez que una aplicación de servidor de biblioteca de administración de datos dinámicos Exchange (DDEML) usa la función [**DdeNameService**](/windows/desktop/api/Ddeml/nf-ddeml-ddenameservice) para registrar un nombre de servicio o cada vez que se inicia una aplicación que no es DDEML que admite el tema System.
 
 
 ```C++
@@ -94,9 +94,9 @@ No se usa.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta transacción se filtra si la aplicación especificó la **marca CBF \_ SKIP \_ REGISTRATIONS** en la [**función DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
+Esta transacción se filtra si la aplicación especificó la **marca \_ CBF SKIP \_ REGISTRATIONS** en la [**función DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
 Una aplicación no puede bloquear este tipo de transacción; Se omite el código de retorno **\_ CBR BLOCK.**
 
@@ -106,7 +106,7 @@ Una aplicación debe usar el *parámetro hsz1* para agregar el nombre del servic
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                   |
@@ -114,7 +114,7 @@ Una aplicación debe usar el *parámetro hsz1* para agregar el nombre del servic
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

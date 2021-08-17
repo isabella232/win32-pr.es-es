@@ -1,10 +1,10 @@
 ---
-title: Método ID3DX11EffectVariable GetParentConstantBuffer (D3dx11effect. h)
-description: Obtiene un búfer de constantes. | Método ID3DX11EffectVariable GetParentConstantBuffer (D3dx11effect. h)
+title: Método ID3DX11EffectVariable GetParentConstantBuffer (D3dx11effect.h)
+description: Obtiene un búfer constante. | Método ID3DX11EffectVariable GetParentConstantBuffer (D3dx11effect.h)
 ms.assetid: 43b46b05-951e-4c52-8bc7-4bb5f657ea78
 keywords:
 - Método GetParentConstantBuffer Direct3D 11
-- Método GetParentConstantBuffer Direct3D 11, interfaz ID3DX11EffectVariable
+- Método GetParentConstantBuffer Direct3D 11 , interfaz ID3DX11EffectVariable
 - Interfaz ID3DX11EffectVariable Direct3D 11, método GetParentConstantBuffer
 topic_type:
 - apiref
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa424b91b72dca5539fd0f96a1380e86d1f23f58
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2319a72e50d83f3780b68de163dc370d5627c28ab4ab84f6621c11faf6df7805
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117734118"
 ---
-# <a name="id3dx11effectvariablegetparentconstantbuffer-method"></a>ID3DX11EffectVariable:: GetParentConstantBuffer (método)
+# <a name="id3dx11effectvariablegetparentconstantbuffer-method"></a>Método ID3DX11EffectVariable::GetParentConstantBuffer
 
-Obtiene un búfer de constantes.
+Obtiene un búfer constante.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,14 +45,14 @@ Este método no tiene parámetros.
 
 Tipo: **[ **ID3DX11EffectConstantBuffer**](id3dx11effectconstantbuffer.md)\***
 
-Un puntero a un [**ID3DX11EffectConstantBuffer**](id3dx11effectconstantbuffer.md).
+Puntero a [**id3DX11EffectConstantBuffer.**](id3dx11effectconstantbuffer.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las variables de efecto son de lectura o escritura en un búfer de constantes.
+Las variables de efecto son de lectura o de entrada escrita en un búfer constante.
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -62,8 +62,8 @@ Las variables de efecto son de lectura o escritura en un búfer de constantes.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

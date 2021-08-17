@@ -1,9 +1,9 @@
 ---
-title: Directiva pragma Def
-description: Directiva pragma que asigna manualmente un registro de sombreador de punto flotante.
+title: def pragma (directiva)
+description: Directiva Pragma que asigna manualmente un registro de sombreador de punto flotante.
 ms.assetid: 45db94c4-f6f6-4c88-9bf2-4eaa9abf7844
 keywords:
-- Directiva pragma Def
+- directiva pragma HLSL def
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2a921e17f8ddee4aaabfe50e75f42ce44812863d
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: fe6961f5fd8c05f291af3634c07de6befada0efa54586796ca881bffe893bf5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104996824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117726445"
 ---
-# <a name="def-pragma-directive"></a>Directiva pragma Def
+# <a name="def-pragma-directive"></a>def pragma (directiva)
 
-Directiva pragma que asigna manualmente un registro de sombreador de punto flotante.
+Directiva Pragma que asigna manualmente un registro de sombreador de punto flotante.
 
 
 
-| \#pragma DEF ( *destino*, *registro*, *val1*, *val2*,*val3*, *val4* ) |
+| \#pragma def( *target*, *register*, *val1*, *val2*,*val3*, *val4* ) |
 |---------------------------------------------------------------------|
 
 
@@ -39,29 +39,29 @@ Directiva pragma que asigna manualmente un registro de sombreador de punto flota
 
 | Elemento                                                                        | Descripción                                                                 |
 |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| <span id="target"></span><span id="TARGET"></span>*dirigir*<br/>       | Destino que contiene el registro que se va a asignar. <br/>                  |
-| <span id="register"></span><span id="REGISTER"></span>*el*<br/> | Registro del sombreador de punto flotante que se va a asignar. <br/>                     |
-| <span id="val0"></span><span id="VAL0"></span>*val0*<br/>             | Primer byte del valor que se va a asignar al registro especificado. <br/>  |
-| <span id="val1"></span><span id="VAL1"></span>*valor1*<br/>             | Segundo byte del valor que se va a asignar al registro especificado. <br/> |
-| <span id="val2"></span><span id="VAL2"></span>*val2*<br/>             | Tercer byte del valor que se va a asignar al registro especificado. <br/>  |
-| <span id="val3"></span><span id="VAL3"></span>*val3*<br/>             | Cuarto byte del valor que se va a asignar al registro especificado. <br/> |
+| <span id="target"></span><span id="TARGET"></span>*Objetivo*<br/>       | Destino que contiene el registro que se asignará. <br/>                  |
+| <span id="register"></span><span id="REGISTER"></span>*Registro*<br/> | Registro del sombreador de punto flotante que se asignará. <br/>                     |
+| <span id="val0"></span><span id="VAL0"></span>*val0*<br/>             | Primer byte del valor que se asignará al registro especificado. <br/>  |
+| <span id="val1"></span><span id="VAL1"></span>*val1*<br/>             | Segundo byte del valor que se asignará al registro especificado. <br/> |
+| <span id="val2"></span><span id="VAL2"></span>*val2*<br/>             | Tercer byte del valor que se asignará al registro especificado. <br/>  |
+| <span id="val3"></span><span id="VAL3"></span>*val3*<br/>             | Cuarto byte del valor que se asignará al registro especificado. <br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La pragma Def permite a un desarrollador rellenar previamente un registro de sombreador de punto flotante con el valor especificado. Esta pragma se usa con poca frecuencia.
+La pragma def permite a un desarrollador rellenar previamente un registro de sombreador de punto flotante con el valor especificado. Esta pragma se usa con poca frecuencia.
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Directivas de preprocesador (DirectX HLSL)](dx-graphics-hlsl-appendix-preprocessor.md)
+[Directivas de preprocesador (HLSL de DirectX)](dx-graphics-hlsl-appendix-preprocessor.md)
 </dt> <dt>
 
-[\#pragma (Directiva) (DirectX HLSL)](dx-graphics-hlsl-appendix-pre-pragma.md)
+[\#Directiva pragma (DirectX HLSL)](dx-graphics-hlsl-appendix-pre-pragma.md)
 </dt> </dl>
 
  

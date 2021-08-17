@@ -1,7 +1,7 @@
 ---
 description: Devuelve una colección de las extensiones asociadas al certificado.
 ms.assetid: 07793061-6f94-4467-bb01-aa65db657658
-title: ICertificate2::Extensions (método)
+title: ICertificate2::Extensions (Método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117771617"
 ---
-# <a name="icertificate2extensions-method"></a>ICertificate2::Extensions (método)
+# <a name="icertificate2extensions-method"></a>ICertificate2::Extensions (Método)
 
 \[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use [**la clase X509Certificate2**](/previous-versions/windows/embedded/hh424017(v=msdn.10)) en el espacio de nombres [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
@@ -48,7 +48,7 @@ Objeto [**Extensions**](extensions.md) que representa todas las extensiones asoc
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |

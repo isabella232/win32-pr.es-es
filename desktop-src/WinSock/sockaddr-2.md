@@ -1,5 +1,5 @@
 ---
-description: La estructura sockaddr varía en función del protocolo seleccionado.
+description: La estructura de sockaddr varía en función del protocolo seleccionado.
 ms.assetid: d1392e1c-2b20-425a-8adf-38e665fb6275
 title: sockaddr
 ms.topic: reference
@@ -12,22 +12,22 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: ccd4b98efc987630ab625e5c9788f0be16018e88
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: afdacd0b4579bcb73bfaaa2da0b3714c7d597d94c0d25020e7353e3afd168d71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117927327"
 ---
 # <a name="sockaddr"></a>sockaddr
 
-La estructura sockaddr varía en función del protocolo seleccionado. Excepto en el caso del parámetro de la *\* \_ familia sin* , el contenido de sockaddr se expresa en el orden de bytes de la red.
+La estructura de sockaddr varía en función del protocolo seleccionado. Excepto para el *parámetro de \* \_ familia sin,* el contenido de sockaddr se expresa en orden de bytes de red.
 
-Las funciones Winsock que usan sockaddr no se interpretan de forma estricta como punteros a una estructura sockaddr. La estructura se interpreta de manera diferente en el contexto de distintas familias de direcciones. Los únicos requisitos son que el primer **u \_ corto** es la familia de direcciones y el tamaño total del búfer de memoria en bytes es *namelen*.
+Las funciones winsock que usan sockaddr no se interpretan estrictamente como punteros a una estructura sockaddr. La estructura se interpreta de forma diferente en el contexto de distintas familias de direcciones. Los únicos requisitos son que la primera **u \_ short** sea la familia de direcciones y que el tamaño total del búfer de memoria en bytes sea *namelen.*
 
-La estructura de [**\_ almacenamiento de SOCKADDR**](/previous-versions/windows/desktop/legacy/ms740504(v=vs.85)) también almacena información de la dirección del socket y la estructura es lo suficientemente grande como para almacenar la información de la dirección IPv4 o IPv6. El uso de la estructura de **\_ almacenamiento de SOCKADDR** promueve la independencia de la familia de protocolos y de la versión del Protocolo, y simplifica el desarrollo. Se recomienda usar la estructura **de \_ almacenamiento SOCKADDR** en lugar de la estructura SOCKADDR. La estructura de **\_ almacenamiento de SOCKADDR** se admite en Windows Server 2003 y versiones posteriores.
+La [**estructura SOCKADDR \_ STORAGE**](/previous-versions/windows/desktop/legacy/ms740504(v=vs.85)) también almacena información de dirección de socket y la estructura es lo suficientemente grande como para almacenar información de direcciones IPv4 o IPv6. El uso de la **estructura SOCKADDR \_ STORAGE** promueve la independencia entre la familia de protocolos y la versión del protocolo, y simplifica el desarrollo. Se recomienda usar la **estructura SOCKADDR \_ STORAGE** en lugar de la estructura sockaddr. La **estructura SOCKADDR \_ STORAGE** se admite en Windows Server 2003 y versiones posteriores.
 
-La estructura sockaddr y sockaddr \_ en las estructuras siguientes se usan con IPv4. Otros protocolos usan estructuras similares.
+La estructura sockaddr y sockaddr en las estructuras siguientes \_ se usan con IPv4. Otros protocolos usan estructuras similares.
 
 ``` syntax
 struct sockaddr {
@@ -43,7 +43,7 @@ struct sockaddr_in {
 };
 ```
 
-Las \_ siguientes estructuras sockaddr IN6 y sockaddr \_ IN6 \_ anteriores se utilizan con IPv6.
+Las estructuras sockaddr \_ in6 y sockaddr in6 antiguas siguientes \_ se usan con \_ IPv6.
 
 ``` syntax
 struct sockaddr_in6 {
@@ -67,7 +67,7 @@ struct sockaddr_in6_old {
 };
 ```
 
-En el kit de desarrollo de software (SDK) de Microsoft Windows publicado para Windows Vista y versiones posteriores, **SOCKADDR** y **SOCKADDR \_ en** las etiquetas typedef se definen para SOCKADDR y SOCKADDR \_ en estructuras como se indica a continuación:
+En el Kit de desarrollo de software (SDK) de Microsoft Windows publicado para Windows Vista y versiones posteriores, las etiquetas de definición de tipo **SOCKADDR** y **SOCKADDR \_ IN** se definen para sockaddr y sockaddr en estructuras como se muestra a \_ continuación:
 
 ``` syntax
 typedef struct sockaddr {
@@ -92,11 +92,11 @@ typedef struct sockaddr_in {
 } SOCKADDR_IN, *PSOCKADDR_IN;
 ```
 
-En la Windows SDK publicada para Windows Vista y versiones posteriores, la organización de los archivos de encabezado ha cambiado y las estructuras sockaddr y sockaddr \_ de las estructuras se definen en el archivo de encabezado *Ws2def. h* , no en el archivo de encabezado *WinSock2. h* . El archivo de encabezado *Ws2def. h* se incluye automáticamente en el archivo de encabezado *WinSock2. h* . La \_ estructura sockaddr IN6 se define en el archivo de encabezado *Ws2ipdef. h* , no en el archivo de encabezado *Ws2tcpip. h* . El archivo de encabezado *Ws2ipdef. h* se incluye automáticamente en el archivo de encabezado *Ws2tcpip. h* . Los archivos de encabezado *Ws2def. h* y *Ws2ipdef. h* nunca deben usarse directamente.
+En el SDK de Windows publicado para Windows Vista y versiones posteriores, la organización de los archivos de encabezado ha cambiado y sockaddr y sockaddr en las estructuras se definen en el archivo de encabezado \_ *Ws2def.h,* no en el archivo de encabezado *Winsock2.h.* El archivo de encabezado Winsock2.h incluye automáticamente el archivo de encabezado *Ws2def.h.*  La estructura sockaddr in6 se define en el archivo de encabezado \_ *Ws2ipdef.h,* no en el archivo de encabezado *Ws2tcpip.h.* El *archivo de encabezado Ws2tcpip.h* incluye automáticamente el archivo de encabezado *Ws2tcpip.h.* Los *archivos de encabezado Ws2def.h* y *Ws2ipdef.h* nunca se deben usar directamente.
 
 ## <a name="example-code"></a>Código de ejemplo
 
-En el siguiente ejemplo se muestra el uso de la estructura **sockaddr** .
+En el ejemplo siguiente se muestra el uso de la **estructura sockaddr.**
 
 
 ```C++
@@ -130,7 +130,7 @@ bind( ListenSocket,(SOCKADDR*) &saServer, sizeof(saServer) );
 
 ## <a name="see-also"></a>Consulte también
 
-[**almacenamiento de SOCKADDR \_**](/previous-versions/windows/desktop/legacy/ms740504(v=vs.85))
+[**SOCKADDR \_ STORAGE**](/previous-versions/windows/desktop/legacy/ms740504(v=vs.85))
 
 
  

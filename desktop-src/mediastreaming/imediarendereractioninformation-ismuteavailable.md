@@ -1,11 +1,11 @@
 ---
-title: IMediaRendererActionInformation IsMuteAvailable, método
-description: Recupera un valor que indica si el DMR es capaz de silenciar el audio.
+title: Método IMediaRendererActionInformation IsMuteAvailable
+description: Recupera un valor que indica si la DMR es capaz de silenciar el audio.
 ms.assetid: F744C2D7-5518-4A9F-A71E-60CF0B312177
 keywords:
-- Método IsMuteAvailable API de streaming de multimedia
-- Método IsMuteAvailable API de streaming de multimedia, interfaz IMediaRendererActionInformation
-- Interfaz IMediaRendererActionInformation API de streaming de multimedia, método IsMuteAvailable
+- Método IsMuteAvailable de Media Streaming API
+- Media Streaming API del método IsMuteAvailable , interfaz IMediaRendererActionInformation
+- IMediaRendererActionInformation interface Media Streaming API , método IsMuteAvailable
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 96751a7f2f1aedcd9e29be981ffadf6c43bf4008
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 331e2831ff18656f23a3d7067b8ab472835bf4a25760f6e86a92302621048a48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117871072"
 ---
-# <a name="imediarendereractioninformationismuteavailable-method"></a>IMediaRendererActionInformation:: IsMuteAvailable (método)
+# <a name="imediarendereractioninformationismuteavailable-method"></a>IMediaRendererActionInformation::IsMuteAvailable (Método)
 
-Recupera un valor que indica si el DMR es capaz de silenciar el audio.
+Recupera un valor que indica si la DMR es capaz de silenciar el audio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,22 +41,22 @@ HRESULT IsMuteAvailable(
 
 <dl> <dt>
 
-*valor* \[ de enuncia\]
+*value* \[ out\]
 </dt> <dd>
 
-Valor booleano que es **true** si el DMR es capaz de silenciar el audio y **false** si no lo es.
+Valor booleano que es **True si** la DMR es capaz de silenciar el audio y **False** si no lo es.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 

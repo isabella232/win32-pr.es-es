@@ -3,7 +3,7 @@ title: CDN_INCLUDEITEM de notificación (Commdlg.h)
 description: Enviado por un cuadro de diálogo Abrir o Guardar como para determinar si el cuadro de diálogo debe mostrar un elemento en la lista de elementos de una carpeta de shell.
 ms.assetid: 0972a78d-e058-4bac-85bd-fbd4c3885552
 keywords:
-- CDN_INCLUDEITEM de diálogo del código de notificación
+- CDN_INCLUDEITEM cuadros de diálogo de código de notificación
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78f25ea90f8eb37c829cdc86e89f6d7e8cad2312
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 445ea8626d7ecc6c1c72cd13eebfc9811ae229b772787eae2625224d830bc25e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117721083"
 ---
-# <a name="cdn_includeitem-notification-code"></a>Código de notificación INCLUDEITEM de CDN \_
+# <a name="cdn_includeitem-notification-code"></a>\_CDN Código de notificación INCLUDEITEM
 
-\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
+\[A partir Windows Vista,  los  cuadros de diálogo Abrir y Guardar como comunes se han reemplazado por el cuadro [de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo común.\]
 
-Enviado por **un cuadro de** diálogo Abrir o Guardar como para determinar si el cuadro de diálogo debe mostrar un elemento en la lista de elementos de una carpeta de shell.  Cuando el usuario abre una carpeta, el cuadro de diálogo envía una notificación **\_ INCLUDEITEM** de CDN para cada elemento de la carpeta. El cuadro de diálogo envía esta notificación solo si se estableció la marca **OFN \_ ENABLEINCLUDENOTIFY** cuando se creó el cuadro de diálogo.
+Enviado por un **cuadro de** **diálogo** Abrir o Guardar como para determinar si el cuadro de diálogo debe mostrar un elemento en la lista de elementos de una carpeta de shell. Cuando el usuario abre una carpeta, el cuadro de diálogo envía una CDN **\_ INCLUDEITEM** para cada elemento de la carpeta. El cuadro de diálogo envía esta notificación solo si se estableció la marca **OFN \_ ENABLEINCLUDENOTIFY** cuando se creó el cuadro de diálogo.
 
 El [*procedimiento de enlace OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) recibe este mensaje en forma de mensaje WM [**\_ NOTIFY.**](../controls/wm-notify.md)
 
@@ -53,7 +53,7 @@ Este parámetro no se utiliza.
 
 Puntero a una [**estructura OFNOTIFYEX.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa)
 
-La [**estructura OFNOTIFYEX contiene**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa) una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) **cuyo** miembro de código indica el mensaje de **notificación \_ INCLUDEITEM de CDN.**
+La [**estructura OFNOTIFYEX**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa) contiene una  estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) cuyo miembro de código indica el CDN **de notificación \_ INCLUDEITEM.**
 
 El **miembro psf** de la [**estructura OFNOTIFYEX**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifyexa) es un puntero a una interfaz para la carpeta cuyos elementos se enumeran. El **miembro pidl** es un puntero a una lista de identificadores de elemento que identifica el elemento relativo a la carpeta.
 
@@ -67,7 +67,7 @@ Para incluir el elemento, devuelva un valor distinto de cero del procedimiento d
 
 ## <a name="remarks"></a>Comentarios
 
-El cuadro de diálogo siempre incluye elementos que tienen los atributos **SFGAO \_ FILESYSTEM** y **SFGAO \_ FILESYSANCESTOR,** independientemente del valor devuelto por **\_ CDN INCLUDEITEM**.
+El cuadro de diálogo siempre incluye elementos que tienen los atributos **SFGAO \_ FILESYSTEM** y **SFGAO \_ FILESYSANCESTOR,** independientemente del valor devuelto por **CDN \_ INCLUDEITEM**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,7 +81,7 @@ El cuadro de diálogo siempre incluye elementos que tienen los atributos **SFGAO
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

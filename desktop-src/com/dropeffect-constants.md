@@ -1,5 +1,5 @@
 ---
-title: Constantes DROPEFFECT (OleIdl. h)
+title: Constantes DROPEFFECT (OleIdl.h)
 description: Representa información sobre los efectos de una operación de arrastrar y colocar.
 ms.assetid: d8e46899-3fbf-4012-8dd3-67fa627526d5
 topic_type:
@@ -16,38 +16,38 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2b1888aa028d4e047a9a8ec1f54e2497fa28ce4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 05c9a4fa961b0da2e654d4672392104b95e718bbb176167c7bb715c39f25cfc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105696048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117736957"
 ---
-# <a name="dropeffect-constants"></a>Constantes de DROPEFFECT
+# <a name="dropeffect-constants"></a>Constantes DROPEFFECT
 
-Representa información sobre los efectos de una operación de arrastrar y colocar. La función [**DoDragDrop**](/windows/desktop/api/Ole2/nf-ole2-dodragdrop) y muchos de los métodos de [**IDropSource**](/windows/desktop/api/OleIdl/nn-oleidl-idropsource) y [**IDropTarget**](/windows/desktop/api/OleIdl/nn-oleidl-idroptarget) usan los valores de esta enumeración.
+Representa información sobre los efectos de una operación de arrastrar y colocar. La [**función DoDragDrop**](/windows/desktop/api/Ole2/nf-ole2-dodragdrop) y muchos de los métodos de [**IDropSource**](/windows/desktop/api/OleIdl/nn-oleidl-idropsource) [**e IDropTarget**](/windows/desktop/api/OleIdl/nn-oleidl-idroptarget) usan los valores de esta enumeración.
 
 
 
 | Constante o valor                                                                                                                                                                                                                            | Descripción                                                                                                                         |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="DROPEFFECT_NONE"></span><span id="dropeffect_none"></span><dl> <dt>**DROPEFFECT \_ NINGUNO**</dt> <dt>0</dt> </dl>                | El destino de colocación no puede aceptar los datos.<br/>                                                                                      |
-| <span id="DROPEFFECT_COPY"></span><span id="dropeffect_copy"></span><dl> <dt>**DROPEFFECT \_ COPIAR**</dt> <dt>1</dt> </dl>                | Drop da como resultado una copia. El origen de arrastre no toca los datos originales.<br/>                                               |
-| <span id="DROPEFFECT_MOVE"></span><span id="dropeffect_move"></span><dl> <dt>**DROPEFFECT \_ MOVIMIENTO**</dt> <dt>2</dt> </dl>                | El origen de arrastre debe quitar los datos. <br/>                                                                                     |
+| <span id="DROPEFFECT_NONE"></span><span id="dropeffect_none"></span><dl> <dt>**DROPEFFECT \_ NONE**</dt> <dt>0</dt> </dl>                | El destino de colocación no puede aceptar los datos.<br/>                                                                                      |
+| <span id="DROPEFFECT_COPY"></span><span id="dropeffect_copy"></span><dl> <dt>**DROPEFFECT \_ COPY**</dt> <dt>1</dt> </dl>                | Quitar los resultados de una copia. El origen de arrastre no toca los datos originales.<br/>                                               |
+| <span id="DROPEFFECT_MOVE"></span><span id="dropeffect_move"></span><dl> <dt>**DROPEFFECT \_ MOVE**</dt> <dt>2</dt> </dl>                | El origen de arrastre debe quitar los datos. <br/>                                                                                     |
 | <span id="DROPEFFECT_LINK"></span><span id="dropeffect_link"></span><dl> <dt>**DROPEFFECT \_ VÍNCULO**</dt> <dt>4</dt> </dl>                | Arrastrar origen debe crear un vínculo a los datos originales.<br/>                                                                   |
-| <span id="DROPEFFECT_SCROLL"></span><span id="dropeffect_scroll"></span><dl> <dt>**DROPEFFECT \_ DESPLAZAMIENTO**</dt> <dt>0x80000000</dt> </dl> | El desplazamiento está a punto de iniciarse o está ocurriendo actualmente en el destino. Este valor se usa además de los demás valores.<br/> |
+| <span id="DROPEFFECT_SCROLL"></span><span id="dropeffect_scroll"></span><dl> <dt>**DROPEFFECT \_ Scroll**</dt> <dt>0x80000000</dt> </dl> | El desplazamiento está a punto de iniciarse o se está produciendo actualmente en el destino. Este valor se usa además de los demás valores.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La aplicación siempre debe enmascarar los valores de la enumeración **DROPEFFECT** para garantizar la compatibilidad con implementaciones futuras. Actualmente, solo algunas de las posiciones de un valor de **DROPEFFECT** tienen significado. En el futuro, se agregarán más interpretaciones para los bits. Los orígenes de arrastre y los destinos de colocación deben enmascarar cuidadosamente estos valores adecuadamente antes de la comparación. Nunca deben comparar un **DROPEFFECT** con, por ejemplo, la copia DROPEFFECT, para lo que debe \_ hacer lo siguiente:
+La aplicación siempre debe enmascarar los valores de la **enumeración DROPEFFECT** para garantizar la compatibilidad con implementaciones futuras. Actualmente, solo algunas de las posiciones de un **valor DROPEFFECT** tienen significado. En el futuro, se agregarán más interpretaciones para los bits. Los orígenes de arrastre y los destinos de colocación deben enmascarar estos valores correctamente antes de compararlos. Nunca deben comparar un **DROPEFFECT con,** por ejemplo, DROPEFFECT \_ COPY haciendo lo siguiente:
 
 ``` syntax
 if (dwDropEffect == DROPEFFECT_COPY)... 
 ```
 
-En su lugar, la aplicación siempre debe enmascarar el valor o los valores que se buscan como si utilizara una de las técnicas siguientes:
+En su lugar, la aplicación siempre debe enmascarar el valor o los valores que se buscan como si usaran una de las técnicas siguientes:
 
 ``` syntax
 if (dwDropEffect & DROPEFFECT_COPY) == DROPEFFECT_COPY)...
@@ -55,7 +55,7 @@ if (dwDropEffect & DROPEFFECT_COPY) == DROPEFFECT_COPY)...
 if (dwDropEffect & DROPEFFECT_COPY)... 
 ```
 
-Esto permite la definición de nuevos efectos de colocación, a la vez que conserva la compatibilidad con versiones anteriores con el código existente.
+Esto permite la definición de nuevos efectos de colocación, al tiempo que se conserva la compatibilidad con versiones anteriores con el código existente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,7 +65,7 @@ Esto permite la definición de nuevos efectos de colocación, a la vez que conse
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>OleIdl. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>OleIdl.h</dt> </dl> |
 
 
 

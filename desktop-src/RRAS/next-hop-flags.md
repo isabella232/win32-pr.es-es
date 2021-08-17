@@ -20,7 +20,7 @@ ms.locfileid: "117790399"
 
 
 
-| Constante                     | Valor | Descripción                              |
+| Constante                     | Value | Descripción                              |
 |------------------------------|-------|------------------------------------------|
 | ESTADO \_ NEXTHOP DE RTM \_ \_ CREADO | 0     | Indica que se creó el próximo salto. |
 | ESTADO \_ NEXTHOP DE RTM \_ \_ ELIMINADO | 1     | Indica que se eliminó el próximo salto. |
@@ -33,9 +33,9 @@ ms.locfileid: "117790399"
 
 
 
-| Constante                    | Valor  | Descripción                                                                                                                                           |
+| Constante                    | Value  | Descripción                                                                                                                                           |
 |-----------------------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| MARCAS \_ NEXTHOP DE RTM \_ REMOTAS \_ | 0x0001 | Este próximo salto apunta a un destino remoto al que no se puede acceder directamente. Para obtener la ruta de acceso completa, el cliente debe realizar una búsqueda recursiva. |
+| MARCAS \_ NEXTHOP \_ REMOTAS DE RTM \_ | 0x0001 | Este próximo salto apunta a un destino remoto al que no se puede acceder directamente. Para obtener la ruta de acceso completa, el cliente debe realizar una búsqueda recursiva. |
 | MARCAS \_ NEXTHOP DE RTM \_ HACIA \_ ABAJO   | 0x0002 | Esta marca está reservada para su uso futuro.                                                                                                                 |
 
 
@@ -46,9 +46,9 @@ ms.locfileid: "117790399"
 
 
 
-| Constante                  | Valor | Descripción                 |
+| Constante                  | Value | Descripción                 |
 |---------------------------|-------|-----------------------------|
-| RTM \_ NEXTHOP \_ CHANGE \_ NEW | 0x01  | Se creó un nuevo próximo salto. |
+| RTM \_ NEXTHOP \_ CHANGE \_ NEW | 0x01  | Se ha creado un nuevo próximo salto. |
 
 
 

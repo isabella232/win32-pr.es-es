@@ -1,6 +1,6 @@
 ---
-title: FRC-vs
-description: Devuelve la parte fraccionaria de cada componente de entrada. | FRC-vs
+title: frc - vs
+description: Devuelve la parte fraccionera de cada componente de entrada. | frc - vs
 ms.assetid: 6b6a4475-b665-4de0-9423-88ea8103e606
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,46 +9,46 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6990d5489058d217888f34caf0305badc4cab46d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b2ecc6a1c903f78fb7c03442809f792e3ddb984d04975d3f5ecb0b5c918f7ab4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117907648"
 ---
-# <a name="frc---vs"></a>FRC-vs
+# <a name="frc---vs"></a>frc - vs
 
-Devuelve la parte fraccionaria de cada componente de entrada.
+Devuelve la parte fraccionera de cada componente de entrada.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| FRC DST, src |
+| frc dst, src |
 |--------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| frc                    | x    | x    | x    | x     | x    | x     |
+| Frc                    | x    | x    | x    | x     | x    | x     |
 
 
 
  
 
-En el fragmento de código siguiente se muestra conceptualmente cómo funciona la instrucción.
+El fragmento de código siguiente muestra conceptualmente cómo funciona la instrucción.
 
 
 ```
@@ -60,9 +60,9 @@ dest.w = src.w - (float)floor(src.w);
 
 
 
-La función Floor convierte el argumento que se pasa al entero más grande que es menor o igual que el argumento. Esto se convierte en un valor float y, a continuación, se resta pantalla el valor original. El valor fraccionario resultante oscila entre 0,0 y 1,0.
+La función floor convierte el argumento pasado en el entero mayor que es menor (o igual que) el argumento. Esto se convierte en un valor float y, a continuación, se resta el valor original. El valor fraccionrio resultante oscila entre 0,0 y 1,0.
 
-En el caso de la versión 1 \_ , las máscaras de escritura permitidas son. y y. XY (no se permite).
+Para la versión 1 1, las máscaras de escritura permitidas son \_ .y y .xy (no se permite .x).
 
 ## <a name="related-topics"></a>Temas relacionados
 

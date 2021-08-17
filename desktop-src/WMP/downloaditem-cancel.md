@@ -1,11 +1,11 @@
 ---
-title: DownloadItem.cancel (método)
+title: Método DownloadItem.cancel
 description: Nota En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método cancel cancela la descarga.
 ms.assetid: b3715fde-6a83-45fa-92ea-1cbffbee7274
 keywords:
 - cancel method Reproductor de Windows Media
-- cancel method Reproductor de Windows Media , DownloadItem (clase)
-- DownloadItem class Reproductor de Windows Media , cancel method
+- método cancel Reproductor de Windows Media , Clase DownloadItem
+- DownloadItem class Reproductor de Windows Media , cancel (método)
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117749736"
 ---
-# <a name="downloaditemcancel-method"></a>DownloadItem.cancel (método)
+# <a name="downloaditemcancel-method"></a>Método DownloadItem.cancel
 
 > [!Note]  
 > En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
@@ -57,14 +57,14 @@ Los elementos cancelados no se quitan de la colección de descarga. Los elemento
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

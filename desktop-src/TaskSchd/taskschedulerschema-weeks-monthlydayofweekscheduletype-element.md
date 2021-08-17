@@ -1,9 +1,9 @@
 ---
-title: Weeks (monthlyDayOfWeekScheduleType), elemento
+title: Elemento Weeks (monthlyDayOfWeekScheduleType)
 description: Especifica las semanas del mes en que se ejecuta la tarea.
 ms.assetid: c126d1e2-6e60-4067-9fc2-86c9522cce5d
 keywords:
-- Elemento weeks Programador de tareas
+- Elemento Weeks Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2e032b936353d2c89a84b5da684f681ea3c2b6d3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 81219236012146dac54965af471412369d5c5bb34319897d4d821bb10a730aee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757982"
 ---
-# <a name="weeks-monthlydayofweekscheduletype-element"></a>Weeks (monthlyDayOfWeekScheduleType), elemento
+# <a name="weeks-monthlydayofweekscheduletype-element"></a>Elemento Weeks (monthlyDayOfWeekScheduleType)
 
 Especifica las semanas del mes en que se ejecuta la tarea.
 
@@ -30,7 +30,7 @@ Especifica las semanas del mes en que se ejecuta la tarea.
  />
 ```
 
-El elemento **weeks** se define mediante el tipo complejo [**monthlyDayOfWeekScheduleType**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md) .
+El **elemento Weeks** se define mediante el tipo complejo [**monthlyDayOfWeekScheduleType.**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -38,7 +38,7 @@ El elemento **weeks** se define mediante el tipo complejo [**monthlyDayOfWeekSch
 
 | Elemento                                                                                                      | Derivado de                                                                                         | Descripción                                                                         |
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| [**ScheduleByMonthDayOfWeek**](taskschedulerschema-schedulebymonthdayofweek-calendartriggertype-element.md) | [**monthlyDayOfWeekScheduleType**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md) | Especifica un desencadenador que inicia un trabajo en una programación mensual de día de la semana.<br/> |
+| [**ScheduleByMonthDayOfWeek**](taskschedulerschema-schedulebymonthdayofweek-calendartriggertype-element.md) | [**monthlyDayOfWeekScheduleType**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md) | Especifica un desencadenador que inicia un trabajo según una programación mensual del día de la semana.<br/> |
 
 
 
@@ -52,17 +52,17 @@ El elemento **weeks** se define mediante el tipo complejo [**monthlyDayOfWeekSch
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de scripting, las semanas del mes se especifican mediante la propiedad [**MonthlyDOWTrigger. WeeksOfMonth**](monthlydowtrigger-weeksofmonth.md) .
+Para el desarrollo de scripting, las semanas del mes se especifican mediante la [**propiedad MonthlyDOWTrigger.WeeksOfMonth.**](monthlydowtrigger-weeksofmonth.md)
 
-En el desarrollo de C++, las semanas del mes se especifican mediante la propiedad [**IMonthlyDOWTrigger:: WeeksOfMonth**](/windows/desktop/api/taskschd/nf-taskschd-imonthlydowtrigger-get_weeksofmonth) .
+Para el desarrollo de C++, las semanas del mes se especifican mediante la propiedad [**IMonthlyDOWTrigger::WeeksOfMonth.**](/windows/desktop/api/taskschd/nf-taskschd-imonthlydowtrigger-get_weeksofmonth)
 
-Al especificar las semanas del mes, use 1-4 para especificar las cuatro primeras semanas del mes o use la cadena "Last" para indicar la última semana, independientemente de la semana en la que se encuentra.
+Al especificar las semanas del mes, use 1-4 para especificar las cuatro primeras semanas del mes o use la cadena "Last" para indicar la última semana independientemente de la semana que sea.
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente código XML define un calendario mensual de día de la semana que inicia la tarea el lunes de la primera semana para cada mes del año.
+El xml siguiente define un calendario mensual del día de la semana que inicia la tarea el lunes de la primera semana para cada mes del año.
 
 
 ```XML
@@ -98,8 +98,8 @@ El siguiente código XML define un calendario mensual de día de la semana que i
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -107,7 +107,7 @@ El siguiente código XML define un calendario mensual de día de la semana que i
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

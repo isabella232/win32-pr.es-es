@@ -1,7 +1,7 @@
 ---
 description: Envía una cadena Unicode al depurador para su presentación.
 ms.assetid: 26cf4750-8ca1-4a9a-8378-d65ed288b358
-title: Función OutputDebugStringWrapW (Shlwapip. h)
+title: Función OutputDebugStringWrapW (Shlwapip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - DllExport
 api_location:
 - Shlwapi.dll
-ms.openlocfilehash: e8213aee48a90a816e2968aac115159472ed7b8a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cce8754b01ddf156951964b7189b4a7189759c52cdcd08e08091ca62b2e950bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104997777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858794"
 ---
-# <a name="outputdebugstringwrapw-function"></a>OutputDebugStringWrapW función)
+# <a name="outputdebugstringwrapw-function"></a>Función OutputDebugStringWrapW
 
-\[Esta función está disponible para su uso en Windows XP. Puede que no esté disponible en versiones posteriores. Use [**OutputDebugStringW**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa) en su lugar.\]
+\[Esta función está disponible para su uso en Windows XP. Es posible que no esté disponible en versiones posteriores. Use [**OutputDebugStringW**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa) en su lugar.\]
 
 Envía una cadena Unicode al depurador para su presentación.
 
 > [!Note]  
-> **OutputDebugStringWrapW** es un contenedor para la función **OutputDebugStringW** . Vea la página [**OutputDebugString**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa) para obtener más notas de uso.
+> **OutputDebugStringWrapW es** un contenedor de la **función OutputDebugStringW.** Vea la [**página OutputDebugString**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa) para obtener más notas de uso.
 
  
 
@@ -46,12 +46,12 @@ void OutputDebugStringWrapW(
 
 <dl> <dt>
 
-*lpOutputString* \[ de\]
+*lpOutputString* \[ En\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
 
-Puntero a la cadena Unicode terminada en null que se va a mostrar.
+Puntero a la cadena Unicode terminada en NULL que se va a mostrar.
 
 </dd> </dl>
 
@@ -59,28 +59,28 @@ Puntero a la cadena Unicode terminada en null que se va a mostrar.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**OutputDebugStringWrapW** ofrece la posibilidad de usar cadenas Unicode en sistemas operativos anteriores a Windows XP. El método preferido es usar [**OutputDebugStringW**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa) junto con la capa de Microsoft para Unicode (MSLU).
+**OutputDebugStringWrapW proporciona** la capacidad de usar cadenas Unicode en sistemas operativos antes de Windows XP. El método preferido es usar [**OutputDebugStringW**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa) junto con la capa de Microsoft para Unicode (MSLU).
 
-Se debe llamar a **OutputDebugStringWrapW** directamente desde Shlwapi.dll, mediante el ordinal 115.
+**Se debe llamar a OutputDebugStringWrapW** directamente Shlwapi.dll, mediante ordinal 115.
 
-Si la aplicación no tiene ningún depurador, el depurador del sistema muestra la cadena. Si la aplicación no tiene ningún depurador y el depurador del sistema no está activo, **OutputDebugStringWrapW** no hace nada.
+Si la aplicación no tiene ningún depurador, el depurador del sistema muestra la cadena. Si la aplicación no tiene ningún depurador y el depurador del sistema no está activo, **OutputDebugStringWrapW no** hace nada.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shlwapip. h</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shlwapi.dll (versión 5,0 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shlwapip.h</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shlwapi.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

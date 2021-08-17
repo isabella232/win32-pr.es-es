@@ -13,7 +13,7 @@ ms.locfileid: "118551339"
 ---
 # <a name="advanced-data-binding"></a>Enlace de datos avanzado
 
-Hay un conjunto de interfaces de enlace de datos avanzadas que permiten que se admite un escenario de enlace de datos más complejo. Esta categoría de componentes abarca ese área de funcionalidad.
+Hay un conjunto de interfaces de enlace de datos avanzadas que permiten que se admite un escenario de enlace de datos más complejo. Esta categoría de componentes abarca esa área de funcionalidad.
 
 CATID - {157083E2-2368-11cf-87B9-00AA006C8166} CATID \_ VBDataBound
 

@@ -1,6 +1,6 @@
 ---
-title: Mensaje de WM_GETTITLEBARINFOEX (Winuser. h)
-description: Se envía para solicitar información de la barra de título extendida. Una ventana recibe este mensaje a través de su función WindowProc.
+title: WM_GETTITLEBARINFOEX mensaje (Winuser.h)
+description: Se envía para solicitar información extendida de la barra de título. Una ventana recibe este mensaje a través de su función WindowProc.
 ms.assetid: 0760dbf1-5b20-471c-bfd9-b8d28b52074b
 keywords:
 - WM_GETTITLEBARINFOEX menús de mensajes y otros recursos
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fea31326faf5953df0facf34b58b06d7766c2e7a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1acbe85afa1871caf796c70a9535f5646d2511317a0e9ee0564db55101a16449
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117869671"
 ---
-# <a name="wm_gettitlebarinfoex-message"></a>Mensaje de GETTITLEBARINFOEX de WM \_
+# <a name="wm_gettitlebarinfoex-message"></a>Mensaje \_ GETTITLEBARINFOEX de WM
 
-Se envía para solicitar información de la barra de título extendida. Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Se envía para solicitar información extendida de la barra de título. Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -39,20 +39,20 @@ Se envía para solicitar información de la barra de título extendida. Una vent
 *wParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza y debe ser 0.
+Este parámetro no se usa y debe ser 0.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**TITLEBARINFOEX**](/windows/win32/api/winuser/ns-winuser-titlebarinfoex) . El remitente del mensaje es responsable de la asignación de memoria para esta estructura. Establezca el miembro **cbSize** de esta estructura en `sizeof(TITLEBARINFOEX)` antes de pasar esta estructura con el mensaje.
+Puntero a una [**estructura TITLEBARINFOEX.**](/windows/win32/api/winuser/ns-winuser-titlebarinfoex) El remitente del mensaje es responsable de asignar memoria para esta estructura. Establezca el **miembro cbSize** de esta estructura en `sizeof(TITLEBARINFOEX)` antes de pasar esta estructura con el mensaje .
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el ejemplo siguiente se muestra cómo el receptor del mensaje convierte un valor **lParam** para recuperar la estructura [**TITLEBARINFOEX**](/windows/win32/api/winuser/ns-winuser-titlebarinfoex) .
+En el ejemplo siguiente se muestra cómo el receptor del mensaje convierte un **valor LPARAM** para recuperar la [**estructura TITLEBARINFOEX.**](/windows/win32/api/winuser/ns-winuser-titlebarinfoex)
 
 `TITLEBARINFOEX *ptinfo = (TITLEBARINFOEX *)lParam;`
 
@@ -62,9 +62,9 @@ En el ejemplo siguiente se muestra cómo el receptor del mensaje convierte un va
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ En el ejemplo siguiente se muestra cómo el receptor del mensaje convierte un va
 
 <dl> <dt>
 
-[Información general sobre menús](menus.md)
+[Introducción a los menús](menus.md)
 </dt> </dl>
 
  

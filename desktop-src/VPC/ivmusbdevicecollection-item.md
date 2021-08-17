@@ -1,11 +1,11 @@
 ---
-title: Propiedad ITEM IVMUSBDeviceCollection (VPCCOMInterfaces.h)
+title: Propiedad IVMUSBDeviceCollection Item (VPCCOMInterfaces.h)
 description: Recupera el objeto de dispositivo USB que corresponde al índice especificado.
 ms.assetid: 664a038e-7c86-43a9-a376-c913d431dc93
 keywords:
 - Propiedad de elemento Virtual PC
 - Propiedad de elemento Virtual PC , interfaz IVMUSBDeviceCollection
-- INTERFAZ IVMUSBDeviceCollection Pc virtual, propiedad Item
+- INTERFAZ IVMUSBDeviceCollection Pc virtual , propiedad Item
 topic_type:
 - apiref
 api_name:
@@ -26,7 +26,7 @@ ms.locfileid: "117752554"
 ---
 # <a name="ivmusbdevicecollectionitem-property"></a>IVMUSBDeviceCollection::Item, propiedad
 
-\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use el proveedor WMI de [Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera el objeto de dispositivo USB que corresponde al índice especificado.
 
@@ -56,7 +56,7 @@ El [**objeto IVMUSBDevice.**](ivmusbdevice.md)
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
 | <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente. <br/>                                                      |
 | <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>         | El *parámetro usbDevice* es **NULL.** <br/>                                             |
-| <dl> <dt>DISP \_ E \_ BADINDEX</dt> <dt>0x8002000B</dt> </dl>  | El índice del elemento solicitado no se corresponde con un elemento de esta colección. <br/> |
+| <dl> <dt>DISP \_ E \_ BADINDEX</dt> <dt>0x8002000B</dt> </dl>  | El índice del elemento solicitado no corresponde a un elemento de esta colección. <br/> |
 | <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/>                                                   |
 
 
@@ -65,7 +65,7 @@ El [**objeto IVMUSBDevice.**](ivmusbdevice.md)
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
@@ -76,7 +76,7 @@ El [**objeto IVMUSBDevice.**](ivmusbdevice.md)
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

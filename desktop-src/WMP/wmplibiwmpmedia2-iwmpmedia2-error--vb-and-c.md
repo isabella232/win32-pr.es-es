@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118331984"
 ---
-# <a name="iwmpmedia2error-property"></a>IWMPMedia2::Error, propiedad
+# <a name="iwmpmedia2error-property"></a>Propiedad IWMPMedia2::Error
 
 La **propiedad Error** obtiene una interfaz **IWMPErrorItem** si el elemento multimedia tiene una condición de error.
 

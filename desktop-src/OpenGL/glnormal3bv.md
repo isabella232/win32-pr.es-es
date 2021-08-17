@@ -1,9 +1,9 @@
 ---
-title: función glNormal3bv (GL. h)
-description: Establece el vector normal actual. | función glNormal3bv (GL. h)
+title: Función glNormal3bv (Gl.h)
+description: Establece el vector normal actual. | Función glNormal3bv (Gl.h)
 ms.assetid: 1d9be974-93c9-45ac-89f1-92c14ff1c242
 keywords:
-- glNormal3bv (función) OpenGL
+- Función glNormal3bv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d758c1768425ecb736096d59a49133ff4c8918c4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 10578bbf22aa2cb0e3415715999018db4a3aefd39933cd802e1abbc196d5b706
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105689797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117795609"
 ---
-# <a name="glnormal3bv-function"></a>glNormal3bv función)
+# <a name="glnormal3bv-function"></a>Función glNormal3bv
 
 Establece el vector normal actual.
 
@@ -40,7 +40,7 @@ void WINAPI glNormal3bv(
 
 <dl> <dt>
 
-*v* 
+*V* 
 </dt> <dd>
 
 Puntero a una matriz de tres elementos: las coordenadas x, y y z de la nueva normal actual.
@@ -51,17 +51,17 @@ Puntero a una matriz de tres elementos: las coordenadas x, y y z de la nueva nor
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La normal actual se establece en las coordenadas especificadas siempre que se llama a la función **glNormal3bv**.
+La normal actual se establece en las coordenadas dadas cada vez que se llama a la **función glNormal3bv.**
 
-Los argumentos byte, Short o Integer se convierten al formato de punto flotante mediante una asignación lineal que asigna el valor entero representable más positivo a 1,0 y el valor entero representable más negativo a-1,0.
+Los argumentos byte, corto o entero se convierten al formato de punto flotante mediante una asignación lineal que asigna el valor entero representable más positivo a 1,0 y el valor entero representable más negativo a -1,0.
 
-Las normales especificadas mediante **glNormal3bv** no necesitan tener una longitud de unidad. Si se habilita la normalización, las normales especificadas mediante **glNormal3bv** se normalizan después de la transformación. Puede controlar la normalización mediante [**glEnable**](glenable.md) y [**glDisable**](gldisable.md) con el argumento libro de contabilidad \_ . De forma predeterminada, la normalización está deshabilitada. Puede actualizar la normal actual en cualquier momento. En concreto, puede llamar a **glNormal3bv** entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md). Las siguientes funciones recuperan información relacionada con **glNormal3bv**:
+Las normales especificadas mediante **glNormal3bv** no necesitan tener longitud de unidad. Si la normalización está habilitada, las normales especificadas mediante **glNormal3bv** se normalizan después de la transformación. Puede controlar la normalización mediante [**glEnable**](glenable.md) y [**glDisable**](gldisable.md) con el argumento GL \_ NORMALIZE. De forma predeterminada, la normalización está deshabilitada. Puede actualizar el normal actual en cualquier momento. En concreto, puede llamar a **glNormal3bv** entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md). Las siguientes funciones recuperan información relacionada **con glNormal3bv**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ actual \_ normal
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ CURRENT \_ NORMAL
 
-[**glIsEnable**](glisenabled.md) con el argumento \_ normalizar libro de contabilidad
+[**glIsEnable con**](glisenabled.md) el argumento GL \_ NORMALIZE
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Las normales especificadas mediante **glNormal3bv** no necesitan tener una longi
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

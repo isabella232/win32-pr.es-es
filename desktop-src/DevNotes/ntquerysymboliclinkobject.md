@@ -1,7 +1,7 @@
 ---
 description: Recupera el destino de un vínculo simbólico.
 ms.assetid: 10a6676c-96f7-4758-8868-bbccd37b5019
-title: NtQuerySymbolicLinkObject función)
+title: Función NtQuerySymbolicLinkObject
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Ntdll.dll
-ms.openlocfilehash: c79b7b40e0d3c8622ee263d96836f738d76942ae
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 805f3de5da380c4749e58dd7467f1f4ccb2471119ffed81b79695a98feb1b090
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118003635"
 ---
-# <a name="ntquerysymboliclinkobject-function"></a>NtQuerySymbolicLinkObject función)
+# <a name="ntquerysymboliclinkobject-function"></a>Función NtQuerySymbolicLinkObject
 
 \[Esta función puede modificarse o no estar disponible en el futuro.\]
 
@@ -43,7 +43,7 @@ NTSTATUS WINAPI NtQuerySymbolicLinkObject(
 
 <dl> <dt>
 
-*LinkHandle* \[ de\]
+*LinkHandle* \[ En\]
 </dt> <dd>
 
 Identificador del objeto de vínculo simbólico.
@@ -53,24 +53,24 @@ Identificador del objeto de vínculo simbólico.
 *LinkTarget* \[ in, out\]
 </dt> <dd>
 
-Puntero a una cadena Unicode inicializada que recibe el destino del vínculo simbólico. Se deben establecer los miembros **MaximumLength** y **buffer** si se produce un error en la llamada.
+Puntero a una cadena Unicode inicializada que recibe el destino del vínculo simbólico. Los **miembros MaximumLength** y **Buffer** deben establecerse si se produce un error en la llamada.
 
 </dd> <dt>
 
 *ReturnedLength* \[ out, opcional\]
 </dt> <dd>
 
-Puntero a una variable que recibe la longitud de la cadena Unicode devuelta en el parámetro *LinkTarget* . Si la función devuelve **un \_ búfer de estado \_ demasiado \_ pequeño**, esta variable recibe el tamaño de búfer necesario.
+Puntero a una variable que recibe la longitud de la cadena Unicode devuelta en el *parámetro LinkTarget.* Si la función devuelve **STATUS \_ BUFFER TOO \_ \_ SMALL**, esta variable recibe el tamaño de búfer necesario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve el **estado \_ correcto** o un estado de error.
+La función devuelve **STATUS \_ SUCCESS o** un estado de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

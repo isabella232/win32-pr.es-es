@@ -1,9 +1,9 @@
 ---
-title: Tipo simple de weekType
+title: Tipo simple weekType
 description: Define los valores que se pueden usar en el elemento Week.
 ms.assetid: 83a525ae-020b-4528-9e14-1e7d9df7b8c0
 keywords:
-- Programador de tareas de tipo simple weekType
+- tipo simple weekType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6513efe0fe0ef4fcbf6b849627d09ec9da6feb82
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 923d5a5d672407f9d15fed62bd554853f23ce5b31debd6a7c331e4b1217f15fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757938"
 ---
-# <a name="weektype-simple-type"></a>Tipo simple de weekType
+# <a name="weektype-simple-type"></a>Tipo simple weekType
 
-Define los valores que se pueden usar en el elemento [**Week**](taskschedulerschema-week-weekstype-element.md) .
+Define los valores que se pueden usar en el [**elemento Week.**](taskschedulerschema-week-weekstype-element.md)
 
 ``` syntax
 <xs:simpleType name="weekType">
@@ -42,7 +42,7 @@ El tipo simple **weekType** es una **cadena** restringida por el siguiente patr�
 
 -   `[1-4]|Last`
 
-    Especifica el primer hasta la cuarta semana del mes (1-4) o siempre la última semana del mes.
+    Especifica la primera a la cuarta semana del mes (1-4) o siempre la última semana del mes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ El tipo simple **weekType** es una **cadena** restringida por el siguiente patr�
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -59,7 +59,7 @@ El tipo simple **weekType** es una **cadena** restringida por el siguiente patr�
 
 <dl> <dt>
 
-[Tipos simples de esquema de Programador de tareas](task-scheduler-schema-complex-types.md)
+[Programador de tareas simples de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

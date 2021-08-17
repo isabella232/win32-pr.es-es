@@ -1,5 +1,5 @@
 ---
-title: WM_DDE_DATA (Dde.h)
+title: WM_DDE_DATA mensaje (Dde.h)
 description: Una aplicación de servidor datos dinámicos Exchange (DDE) envía un mensaje WM DDE DATA a una aplicación cliente de DDE para pasar un elemento de datos al cliente o para notificar al cliente la disponibilidad de un elemento de \_ \_ datos.
 ms.assetid: ed6a65d3-b2a3-45f2-9600-291ce2ec8c0a
 keywords:
@@ -87,7 +87,7 @@ Después de procesar un **mensaje WM \_ DDE \_ DATA** en el que el objeto de mem
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                 |
@@ -95,7 +95,7 @@ Después de procesar un **mensaje WM \_ DDE \_ DATA** en el que el objeto de mem
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

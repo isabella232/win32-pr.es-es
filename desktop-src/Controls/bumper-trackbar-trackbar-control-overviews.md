@@ -14,7 +14,7 @@ ms.locfileid: "118414545"
 # <a name="trackbar-control-overview"></a>Información general sobre el control Trackbar
 
 -   [Acerca de los controles trackbar](trackbar-controls.md)
--   [Usar controles trackbar](using-trackbar-controls.md)
+-   [Usar controles Trackbar](using-trackbar-controls.md)
 
  
 

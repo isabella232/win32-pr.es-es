@@ -1,7 +1,7 @@
 ---
-description: Describe una pista de animación y especifica el peso, la velocidad y la posición de fusión de la pista en un momento dado.
+description: Describe una pista de animación y especifica la combinación de peso, velocidad y posición de la pista en un momento dado.
 ms.assetid: f1469b6f-861f-4b7d-a187-933092a5d257
-title: D3DXTRACK_DESC estructura (D3dx9anim. h)
+title: D3DXTRACK_DESC estructura (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: 12f1604cf954bcdd6a2a898fec5410804112e498
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cddabb3ea79951e35831c2cdc32e11baeb5c7c1c4ce174fd29d9382edb391953
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731122"
 ---
 # <a name="d3dxtrack_desc-structure"></a>D3DXTRACK \_ DESC (estructura)
 
-Describe una pista de animación y especifica el peso, la velocidad y la posición de fusión de la pista en un momento dado.
+Describe una pista de animación y especifica la combinación de peso, velocidad y posición de la pista en un momento dado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,61 +46,61 @@ typedef struct D3DXTRACK_DESC {
 **Prioridad**
 </dt> <dd>
 
-Tipo: **[ **D3DXPRIORITY \_ Type**](./d3dxpriority-type.md)**
+Tipo: **[ **D3DXPRIORITY \_ TYPE**](./d3dxpriority-type.md)**
 
 </dd> <dd>
 
-Tipo de prioridad, tal y como se define en [**D3DXPRIORITY \_ Type**](./d3dxpriority-type.md).
+Tipo de prioridad, tal como se define [**en D3DXPRIORITY \_ TYPE**](./d3dxpriority-type.md).
 
 </dd> <dt>
 
 **Peso**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Valor de peso. El peso determina la proporción de esta pista para mezclar con otras pistas.
+Valor de peso. El peso determina la proporción de esta pista que se va a combinar con otras pistas.
 
 </dd> <dt>
 
 **Velocidad**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Valor de velocidad. Se utiliza de forma similar a un multiplicador para escalar el período de la pista.
+Valor de velocidad. Esto se usa de forma similar a un multiplicador para escalar el período de la pista.
 
 </dd> <dt>
 
 **Position**
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Posición de hora de la pista, en el intervalo de tiempo local de su conjunto de animaciones actual.
+Posición de hora de la pista, en el período de tiempo local de su conjunto de animación actual.
 
 </dd> <dt>
 
-**Habilitar**
+**Habilitación**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Seguimiento habilitar/deshabilitar. Para habilitarlo, establézcalo en **true**. Para deshabilitar, establezca en **false**.
+Realice un seguimiento de la habilitación o deshabilitación. Para habilitarlo, establezca en **TRUE.** Para deshabilitarlo, establezca en **FALSE.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las pistas con la misma prioridad se mezclan juntas y los dos valores resultantes se combinan con el factor de mezcla de prioridad. Una pista debe tener una animación establecida (almacenada por separado) asociada.
+Las pistas con la misma prioridad se combinan y los dos valores resultantes se mezclan con el factor de combinación de prioridad. Una pista debe tener un conjunto de animaciones (almacenado por separado) asociado a él.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -108,7 +108,7 @@ Las pistas con la misma prioridad se mezclan juntas y los dos valores resultante
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9anim.h</dt> </dl> |
 
 
 
@@ -116,7 +116,7 @@ Las pistas con la misma prioridad se mezclan juntas y los dos valores resultante
 
 <dl> <dt>
 
-[Estructuras de D3DX](dx9-graphics-reference-d3dx-structures.md)
+[Estructuras D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> </dl>
 
  

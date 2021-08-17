@@ -46,7 +46,7 @@ Define un valor constante entero, que se debe cargar cada vez que un sombreador 
 
  
 
-La instrucción defi define una constante de sombreador de enteros cuyo valor se carga cada vez que se establece un sombreador en un dispositivo. Se denominan constantes inmediatas. Las constantes inmediatas tienen prioridad sobre las constantes establecidas por el método de API SetVertexShaderConstantI.
+La instrucción defi define una constante de sombreador de enteros cuyo valor se carga cada vez que un sombreador se establece en un dispositivo. Se denominan constantes inmediatas. Las constantes inmediatas tienen prioridad sobre las constantes establecidas por el método de API SetVertexShaderConstantI.
 
 Hay dos maneras de establecer una constante de entero en un sombreador.
 

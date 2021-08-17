@@ -1,7 +1,7 @@
 ---
-description: El método UseFeature del objeto instalador incrementa el recuento de uso de una característica determinada y devuelve el estado de la instalación de esa característica. Este método se debe usar para indicar que la intención de una aplicación es usar una característica.
+description: El método UseFeature del objeto Installer incrementa el recuento de uso de una característica determinada y devuelve el estado de instalación de esa característica. Este método debe usarse para indicar la intención de una aplicación de usar una característica.
 ms.assetid: c9ea812c-2f95-4ba4-ad8e-b96f7fc14bb1
-title: Instalador. UseFeature (método)
+title: Installer.UseFeature (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 355e7f4e64a5cb69ffc0371473cb0db1ac6313a7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b320ce72271bb7ee90ac85a376b103d868e6f740a2e853daf58bb478dc79ad6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118142181"
 ---
-# <a name="installerusefeature-method"></a>Instalador. UseFeature (método)
+# <a name="installerusefeature-method"></a>Installer.UseFeature (método)
 
-El método **UseFeature** del objeto [**instalador**](installer-object.md) incrementa el recuento de uso de una característica determinada y devuelve el estado de la instalación de esa característica. Este método se debe usar para indicar que la intención de una aplicación es usar una característica.
+El **método UseFeature** del objeto [**Installer**](installer-object.md) incrementa el recuento de uso de una característica determinada y devuelve el estado de instalación de esa característica. Este método debe usarse para indicar la intención de una aplicación de usar una característica.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,7 +58,7 @@ Identifica la característica que se va a usar.
 *InstallMode* 
 </dt> <dd>
 
-Este parámetro debe ser *msiInstallModeNoDetection*.
+Este parámetro debe ser *msiInstallModeNoDetection.*
 
 </dd> </dl>
 
@@ -66,9 +66,9 @@ Este parámetro debe ser *msiInstallModeNoDetection*.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método **UseFeature** solo debe usarse en las características que se sabe que se van a publicar. La aplicación debe determinar el estado de la característica mediante una llamada a la propiedad [**FeatureState**](installer-featurestate.md) o a la propiedad [**características**](installer-features.md) , o a sus equivalentes de API.
+El **método UseFeature** solo debe usarse en características conocidas que se publican. La aplicación debe determinar el estado de la característica llamando a la propiedad [**FeatureState**](installer-featurestate.md) o [**a la propiedad Features**](installer-features.md) o a sus equivalentes de API.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,9 +76,9 @@ El método **UseFeature** solo debe usarse en las características que se sabe q
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller se define como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_CPU_DESCRIPTOR_HANDLE estructura (D3dx12. h)
-description: Una estructura auxiliar para habilitar la inicialización sencilla de una \_ \_ estructura de identificador de descriptor de CPU de D3D12 \_ .
+title: CD3DX12_CPU_DESCRIPTOR_HANDLE estructura (D3dx12.h)
+description: Estructura del asistente para permitir la inicialización sencilla de una estructura handle del \_ DESCRIPTOR de CPU D3D12. \_ \_
 ms.assetid: 91736069-7D13-47B0-B78C-0F6F104F97EB
 keywords:
-- Estructura de CD3DX12_CPU_DESCRIPTOR_HANDLE
+- CD3DX12_CPU_DESCRIPTOR_HANDLE estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d1045202c531aa200745fc89ed067628a175486
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c7e6fd6ba75caccf19f3782e0c39581d1e652de0c4187c3c5a203bb5f3b7ceec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105649388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117913082"
 ---
-# <a name="cd3dx12_cpu_descriptor_handle-structure"></a>CD3DX12 \_ \_ estructura de identificador de descriptor de CPU \_
+# <a name="cd3dx12_cpu_descriptor_handle-structure"></a>Estructura DEL IDENTIFICADOR DEL \_ \_ DESCRIPTOR DE CPU CD3DX12 \_
 
-Una estructura auxiliar para habilitar la inicialización sencilla de una estructura de [**\_ \_ \_ identificador de descriptor de CPU de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle) .
+Estructura del asistente para permitir la inicialización sencilla de una estructura handle del [**\_ DESCRIPTOR de CPU \_ D3D12. \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,141 +54,141 @@ struct CD3DX12_CPU_DESCRIPTOR_HANDLE  : public D3D12_CPU_DESCRIPTOR_HANDLE{
 
 <dl> <dt>
 
-**\_Identificador de \_ descriptor de CPU de CD3DX12 \_ ()**
+**IDENTIFICADOR DEL DESCRIPTOR DE \_ CPU CD3DX12() \_ \_**
 </dt> <dd>
 
-Crea una nueva instancia no inicializada de un \_ \_ identificador de descriptor de CPU de CD3DX12 \_ .
+Crea una nueva instancia sin inicializar de un IDENTIFICADOR DE DESCRIPTOR DE CPU CD3DX12. \_ \_ \_
 
 </dd> <dt>
 
-**identificador de \_ descriptor de CPU de CD3DX12 explícito \_ \_ (const D3D12 \_ \_ identificador del descriptor de CPU \_ &o)**
+**identificador explícito del \_ DESCRIPTOR de CPU CD3DX12(const \_ \_ D3D12 \_ CPU DESCRIPTOR HANDLE &\_ \_ o)**
 </dt> <dd>
 
-Crea una nueva instancia de un \_ identificador de \_ descriptor de CPU de CD3DX12 \_ , inicializado con el contenido de otra estructura de [**\_ \_ \_ identificador de descriptor de CPU D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle) .
+Crea una nueva instancia de un IDENTIFICADOR DE DESCRIPTOR de CPU CD3DX12, inicializado con el contenido de otra estructura de IDENTIFICADOR \_ \_ DEL DESCRIPTOR de \_ [**\_ \_ CPU \_ D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle)
 
 </dd> <dt>
 
-**\_Identificador de \_ descriptor de CPU de CD3DX12 \_ ( \_ valor predeterminado de CD3DX12)**
+**IDENTIFICADOR DEL DESCRIPTOR DE CPU CD3DX12 \_ \_ \_ (CD3DX12 \_ PREDETERMINADO)**
 </dt> <dd>
 
-Crea una nueva instancia de un \_ identificador de \_ descriptor de CPU de CD3DX12 \_ , inicializado con los parámetros predeterminados (puntero establecido en cero).
+Crea una nueva instancia de un IDENTIFICADOR DE DESCRIPTOR DE CPU CD3DX12, inicializado con parámetros \_ \_ predeterminados \_ (puntero establecido en cero).
 
 </dd> <dt>
 
-**\_ \_ Identificador de descriptor de CPU de CD3DX12 \_ ( \_ \_ identificador de descriptor de CPU const D3D12 \_ &otro, int offsetScaledByIncrementSize)**
+**IDENTIFICADOR DEL \_ DESCRIPTOR DE CPU CD3DX12(const \_ \_ D3D12 \_ CPU DESCRIPTOR HANDLE &\_ \_ otros, INT offsetScaledByIncrementSize)**
 </dt> <dd>
 
-Crea una nueva instancia de un \_ identificador de \_ descriptor de CPU de CD3DX12 \_ , inicializando los siguientes parámetros:
+Crea una nueva instancia de un IDENTIFICADOR DE DESCRIPTOR DE CPU CD3DX12, \_ \_ \_ inicializando los parámetros siguientes:
 
-D3D12 \_ \_ identificador de descriptor de CPU \_ &otro
+Identificador del DESCRIPTOR de CPU D3D12 \_ \_ &\_ otros
 
-INT offsetScaledByIncrementSize: número de incrementos que se van a desplazar.
+INT offsetScaledByIncrementSize: número de incrementos por los que se va a desplazar.
 
 </dd> <dt>
 
-**\_ \_ Identificador de descriptor de CPU de CD3DX12 \_ ( \_ \_ identificador de descriptor de CPU const D3D12 \_ &otro, int offsetInDescriptors, uint descriptorIncrementSize)**
+**CD3DX12 \_ CPU \_ DESCRIPTOR \_ HANDLE(const D3D12 \_ CPU DESCRIPTOR HANDLE &\_ \_ other, INT offsetInDescriptors, UINT descriptorIncrementSize)**
 </dt> <dd>
 
-Crea una nueva instancia de un \_ identificador de \_ descriptor de CPU de CD3DX12 \_ , inicializando los siguientes parámetros:
+Crea una nueva instancia de un IDENTIFICADOR DE DESCRIPTOR DE CPU CD3DX12, \_ \_ \_ inicializando los parámetros siguientes:
 
-D3D12 \_ \_ identificador de descriptor de CPU \_ &otro
+Identificador del DESCRIPTOR de CPU D3D12 \_ \_ &\_ otros
 
 INT offsetInDescriptors: número de descriptores por los que se va a incrementar.
 
-UINT descriptorIncrementSize: cantidad por la que se va a incrementar para cada descriptor, incluido el relleno.
+Descriptor de UINTIncrementSize: cantidad por la que se va a incrementar para cada descriptor, incluido el relleno.
 
 </dd> <dt>
 
-**Offset (INT offsetInDescriptors, UINT descriptorIncrementSize)**
+**Offset(INT offsetInDescriptors, descriptor UINTIncrementSize)**
 </dt> <dd>
 
-Establece el desplazamiento en función del número especificado de descriptores y la cantidad de incremento para cada descriptor. Usa los siguientes parámetros:
+Establece el desplazamiento según el número especificado de descriptores y la cantidad que se va a incrementar para cada descriptor. Usa los parámetros siguientes:
 
 INT offsetInDescriptors: número de descriptores por los que se va a incrementar.
 
-UINT descriptorIncrementSize: cantidad por la que se va a incrementar para cada descriptor, incluido el relleno.
+Descriptor de UINTIncrementSize: cantidad por la que se va a incrementar para cada descriptor, incluido el relleno.
 
 </dd> <dt>
 
-**Offset (INT offsetScaledByIncrementSize)**
+**Offset(INT offsetScaledByIncrementSize)**
 </dt> <dd>
 
-Establece el desplazamiento en función del número de incrementos especificado. Usa los siguientes parámetros:
+Establece el desplazamiento en función del número de incrementos especificado. Usa los parámetros siguientes:
 
-INT offsetScaledByIncrementSize: número de incrementos que se van a desplazar.
+INT offsetScaledByIncrementSize: número de incrementos por los que se va a desplazar.
 
 </dd> <dt>
 
-**operador = = ( \_ en el \_ \_ identificador de descriptor de CPU const D3D12 \_ \_& otros) Const**
+**operator==( \_ In \_ const D3D12 \_ CPU DESCRIPTOR HANDLE& \_ \_ other) const**
 </dt> <dd>
 
-Comprueba la igualdad entre el identificador del \_ descriptor de la CPU de CD3DX12 actual \_ y el identificador de \_ descriptor de CPU D3D12 especificado o el identificador del descriptor \_ \_ \_ de \_ CPU CD3DX12 \_ \_ .
+Comprueba la igualdad entre el identificador actual del DESCRIPTOR de CPU CD3DX12 y el identificador del DESCRIPTOR de CPU D3D12 especificado o el identificador del \_ \_ DESCRIPTOR de CPU \_ \_ \_ \_ CD3DX12. \_ \_ \_
 
 </dd> <dt>
 
-**operador! = ( \_ en el \_ \_ identificador de descriptor de CPU const D3D12 \_ \_& otros) Const**
+**operator!=( \_ In \_ const D3D12 \_ CPU DESCRIPTOR HANDLE& \_ \_ other) const**
 </dt> <dd>
 
-Comprueba la desigualdad entre el identificador del descriptor de la CPU de CD3DX12 actual \_ \_ \_ y el identificador del descriptor de CPU de D3D12 o el identificador del descriptor de la \_ \_ \_ \_ CPU CD3DX12 \_ \_ .
+Comprueba si hay desigualdad entre el identificador actual del DESCRIPTOR de CPU CD3DX12 y el identificador del DESCRIPTOR de CPU D3D12 especificado o el identificador del \_ \_ DESCRIPTOR de CPU \_ \_ \_ \_ CD3DX12. \_ \_ \_
 
 </dd> <dt>
 
-**Operator = (const D3D12 \_ \_ identificador del descriptor de CPU \_ &otro)**
+**operator=(const D3D12 \_ CPU DESCRIPTOR HANDLE &\_ \_ other)**
 </dt> <dd>
 
-Establece el identificador del \_ descriptor de la CPU de CD3DX12 actual \_ \_ en los mismos valores que el identificador de descriptor de CPU D3D12 especificado o el identificador del descriptor \_ \_ \_ de \_ CPU CD3DX12 \_ \_ .
+Establece el identificador del DESCRIPTOR de CPU CD3DX12 actual en los mismos valores que el identificador del DESCRIPTOR de CPU D3D12 especificado o el identificador del DESCRIPTOR de \_ \_ CPU \_ \_ \_ \_ CD3DX12. \_ \_ \_
 
 </dd> <dt>
 
-**InitOffsetted en línea ( \_ en \_ const D3D12 \_ \_ identificador del descriptor de CPU \_ &base, int offsetScaledByIncrementSize)**
+**inline InitOffsetted( \_ In \_ const D3D12 \_ CPU DESCRIPTOR HANDLE &\_ \_ base, INT offsetScaledByIncrementSize)**
 </dt> <dd>
 
-Inicializa una estructura [**de \_ \_ \_ identificador de descriptor de CPU D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle) con el número de elementos especificado. Usa los siguientes parámetros:
+Inicializa una estructura HANDLE del DESCRIPTOR de [**\_ \_ CPU \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle) con el número especificado de elementos. Usa los parámetros siguientes:
 
-\_En \_ \_ \_ el identificador de descriptor de CPU const D3D12 \_ &base: la dirección base de la que se va a desplazar.
+\_En \_ const D3D12 CPU DESCRIPTOR HANDLE &base: dirección base desde la que se \_ va a \_ \_ desplazar.
 
-INT offsetScaledByIncrementSize: número de incrementos que se van a desplazar.
+INT offsetScaledByIncrementSize: número de incrementos por los que se va a desplazar.
 
 </dd> <dt>
 
-**InitOffsetted en línea ( \_ en \_ const D3D12 \_ \_ identificador del descriptor de CPU \_ &base, int offsetInDescriptors, uint descriptorIncrementSize)**
+**inline InitOffsetted( \_ In \_ const D3D12 \_ CPU DESCRIPTOR HANDLE &\_ \_ base, INT offsetInDescriptors, UINT descriptorIncrementSize)**
 </dt> <dd>
 
-Inicializa una estructura [**de \_ \_ \_ identificador de descriptor de CPU D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle) con un desplazamiento, utilizando el número especificado de descriptores del tamaño dado. Usa los siguientes parámetros:
+Inicializa una estructura HANDLE del DESCRIPTOR de [**\_ \_ CPU \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle) con un desplazamiento, utilizando el número especificado de descriptores del tamaño especificado. Usa los parámetros siguientes:
 
-\_En \_ \_ \_ el identificador de descriptor de CPU const D3D12 \_ &base: la dirección base de la que se va a desplazar.
+\_En \_ const D3D12 CPU DESCRIPTOR HANDLE &base: dirección base desde la que se \_ va a \_ \_ desplazar.
 
 INT offsetInDescriptors: número de descriptores por los que se va a desplazar.
 
-UINT descriptorIncrementSize: cantidad por la que se va a incrementar para cada descriptor, incluido el relleno.
+Descriptor de UINTIncrementSize: cantidad por la que se va a incrementar para cada descriptor, incluido el relleno.
 
 </dd> <dt>
 
-**Static inline InitOffsetted ( \_ salida \_ D3D12 \_ identificador \_ de descriptor \_ de CPU &identificador, \_ en \_ const D3D12 \_ CPU \_ \_ handler &base, int offsetScaledByIncrementSize)**
+**static inline InitOffsetted( \_ Out \_ D3D12 \_ CPU DESCRIPTOR HANDLE &\_ \_ handle, In \_ \_ const D3D12 \_ CPU DESCRIPTOR HANDLE &\_ \_ base, INT offsetScaledByIncrementSize)**
 </dt> <dd>
 
-Inicializa una estructura [**de \_ \_ \_ identificador de descriptor de CPU D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle) con un desplazamiento, utilizando el número especificado de descriptores del tamaño dado. Usa los siguientes parámetros:
+Inicializa una estructura HANDLE del DESCRIPTOR de [**\_ \_ CPU \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle) con un desplazamiento, utilizando el número especificado de descriptores del tamaño especificado. Usa los parámetros siguientes:
 
-\_Out \_ \_ &identificador \_ de descriptor de CPU D3D12 \_ : genera \_ el \_ identificador de descriptor de CPU D3D12 resultante \_ .
+\_Out \_ D3D12 CPU DESCRIPTOR HANDLE &handle (Controlador de descriptor de \_ CPU \_ \_ D3D12 de salida): genera el identificador del DESCRIPTOR de CPU D3D12 \_ \_ \_ resultante.
 
-\_En \_ \_ \_ el identificador de descriptor de CPU const D3D12 \_ &base: la dirección base de la que se va a desplazar.
+\_En \_ const D3D12 CPU DESCRIPTOR HANDLE &base: dirección base desde la que se \_ va a \_ \_ desplazar.
 
-INT offsetScaledByIncrementSize: número de incrementos que se van a desplazar.
+INT offsetScaledByIncrementSize: número de incrementos por los que se va a desplazar.
 
 </dd> <dt>
 
-**Static inline InitOffsetted ( \_ salida \_ D3D12 \_ identificador \_ de descriptor \_ de CPU &identificador, \_ en \_ const D3D12 \_ CPU \_ \_ handler &base, int offsetInDescriptors, uint descriptorIncrementSize)**
+**static inline InitOffsetted( \_ Out \_ D3D12 \_ CPU DESCRIPTOR HANDLE &\_ \_ handle, In \_ \_ const D3D12 \_ CPU DESCRIPTOR HANDLE &\_ \_ base, INT offsetInDescriptors, UINT descriptorIncrementSize)**
 </dt> <dd>
 
-Inicializa una estructura [**de \_ \_ \_ identificador de descriptor de CPU D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle) con un desplazamiento, utilizando el número especificado de descriptores del tamaño dado. Usa los siguientes parámetros:
+Inicializa una estructura HANDLE del DESCRIPTOR de [**\_ \_ CPU \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle) con un desplazamiento, utilizando el número especificado de descriptores del tamaño especificado. Usa los parámetros siguientes:
 
-\_Out \_ \_ &identificador \_ de descriptor de CPU D3D12 \_ : genera \_ el \_ identificador de descriptor de CPU D3D12 resultante \_ .
+\_Out \_ D3D12 CPU DESCRIPTOR HANDLE &handle (Controlador de descriptor de \_ CPU \_ \_ D3D12 de salida): genera el identificador del DESCRIPTOR de CPU D3D12 \_ \_ \_ resultante.
 
-\_En \_ \_ \_ el identificador de descriptor de CPU const D3D12 \_ &base: la dirección base de la que se va a desplazar.
+\_En \_ const D3D12 CPU DESCRIPTOR HANDLE &base: dirección base desde la que se \_ va a \_ \_ desplazar.
 
 INT offsetInDescriptors: número de descriptores por los que se va a desplazar.
 
-UINT descriptorIncrementSize: cantidad por la que se va a incrementar para cada descriptor, incluido el relleno.
+Descriptor de UINTIncrementSize: cantidad por la que se va a incrementar para cada descriptor, incluido el relleno.
 
 </dd> </dl>
 
@@ -198,7 +198,7 @@ UINT descriptorIncrementSize: cantidad por la que se va a incrementar para cada 
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 

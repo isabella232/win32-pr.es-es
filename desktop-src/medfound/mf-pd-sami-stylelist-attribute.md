@@ -1,29 +1,29 @@
 ---
-description: Contiene los nombres descriptivos de los estilos de intercambio de medios accesibles (SAMI) sincronizados definidos en el archivo SAMI.
+description: Contiene los nombres descriptivos de los estilos de intercambio multimedia accesible sincronizado (SAMI) definidos en el archivo SAMI.
 ms.assetid: bc679f0e-17f6-455c-8a00-1d435538ef86
-title: MF_PD_SAMI_STYLELIST atributo (Mfidl. h)
+title: MF_PD_SAMI_STYLELIST atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ebb07dd1713faa81fd02bfe7a32c81398cddb736
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7f57d418eb86c19d3aa2db12808dde810456c38ec6abd45fbece450b30f60f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117876178"
 ---
-# <a name="mf_pd_sami_stylelist-attribute"></a>MF \_ PD \_ Sami \_ STYLELIST (atributo)
+# <a name="mf_pd_sami_stylelist-attribute"></a>Atributo MF \_ PD \_ SAMI \_ STYLELIST
 
-Contiene los nombres descriptivos de los estilos de intercambio de medios accesibles (SAMI) sincronizados definidos en el archivo SAMI.
+Contiene los nombres descriptivos de los estilos de intercambio multimedia accesible sincronizado (SAMI) definidos en el archivo SAMI.
 
-El [origen de medios Sami](sami-media-source.md) establece este atributo en el descriptor de presentación que crea.
+El [origen de medios SAMI](sami-media-source.md) establece este atributo en el descriptor de presentación que crea.
 
 ## <a name="data-type"></a>Tipo de datos
 
 Byte array
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El BLOB de atributo tiene la estructura siguiente:
+El blob de atributos tiene la siguiente estructura:
 
 
 
@@ -43,13 +43,13 @@ Para cada cadena de estilo:
 
 **DWORD**
 
-Tamaño de la cadena en bytes, incluido el carácter **nulo** .
+Tamaño de la cadena en bytes, incluido el **carácter NULL.**
 
 4
 
 **LPWSTR**
 
-Cadena de caracteres anchos terminada en null que contiene el nombre del estilo.
+Cadena de caracteres anchos terminada en NULL que contiene el nombre del estilo.
 
 Varía
 
@@ -57,9 +57,9 @@ Varía
 
  
 
-Para establecer el estilo o recuperar el estilo actual, use la interfaz [**IMFSAMIStyle**](/windows/desktop/api/mfidl/nn-mfidl-imfsamistyle) .
+Para establecer el estilo o recuperar el estilo actual, use la [**interfaz IMFSAMIStyle.**](/windows/desktop/api/mfidl/nn-mfidl-imfsamistyle)
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -101,9 +101,9 @@ HRESULT DisplaySAMIStyleNames(IMFPresentationDescriptor *pPD)
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -111,22 +111,22 @@ HRESULT DisplaySAMIStyleNames(IMFPresentationDescriptor *pPD)
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
+[**ATTRIBUTEAttributes::GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
 </dt> <dt>
 
-[**IMFAttributes:: SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
+[**ATTRIBUTEAttributes::SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
 </dt> <dt>
 
 [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor)
 </dt> <dt>
 
-[Atributos de descriptor de presentación](presentation-descriptor-attributes.md)
+[Atributos del descriptor de presentación](presentation-descriptor-attributes.md)
 </dt> <dt>
 
-[Origen de medios SAMI](sami-media-source.md)
+[Origen multimedia SAMI](sami-media-source.md)
 </dt> </dl>
 
  

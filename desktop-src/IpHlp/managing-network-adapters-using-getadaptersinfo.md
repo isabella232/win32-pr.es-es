@@ -1,5 +1,5 @@
 ---
-description: La función GetAdaptersInfo rellena un puntero a una estructura INFO del adaptador de IP con información sobre los adaptadores de \_ \_ red asociados al sistema.
+description: La función GetAdaptersInfo rellena un puntero a una estructura INFO del ADAPTADOR DE IP con información sobre los adaptadores de \_ \_ red asociados al sistema.
 ms.assetid: 5bc72ee5-3065-4bfb-8dcb-8befb2a4bbd9
 title: Administración de adaptadores de red mediante GetAdaptersInfo
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "118644635"
 ---
 # <a name="managing-network-adapters-using-getadaptersinfo"></a>Administración de adaptadores de red mediante GetAdaptersInfo
 
-La [**función GetAdaptersInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo) rellena un puntero a una estructura INFO del adaptador [**\_ \_ de IP**](/windows/desktop/api/Iptypes/ns-iptypes-ip_adapter_info) con información sobre los adaptadores de red asociados al sistema.
+La [**función GetAdaptersInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo) rellena un puntero a una estructura INFO del [**ADAPTADOR DE IP \_ \_**](/windows/desktop/api/Iptypes/ns-iptypes-ip_adapter_info) con información sobre los adaptadores de red asociados al sistema.
 
 **Para usar GetAdaptersInfo**
 
-1.  Declare un puntero a una variable [**IP \_ ADAPTER \_ INFO**](/windows/desktop/api/Iptypes/ns-iptypes-ip_adapter_info) denominada *pAdapterInfo* y una variable **ULONG** denominada *ulOutBufLen*. Estas variables se pasan como parámetros a la [**función GetAdaptersInfo.**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo) Cree también una variable **DWORD** denominada *dwRetVal* (para comprobar errores).
+1.  Declare un puntero a una variable [**INFO del ADAPTADOR \_ \_ DE IP**](/windows/desktop/api/Iptypes/ns-iptypes-ip_adapter_info) denominada *pAdapterInfo* y una variable **ULONG** denominada *ulOutBufLen*. Estas variables se pasan como parámetros a [**la función GetAdaptersInfo.**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo) Cree también una variable **DWORD** denominada *dwRetVal* (para la comprobación de errores).
     ```C++
     IP_ADAPTER_INFO  *pAdapterInfo;
     ULONG            ulOutBufLen;
@@ -36,7 +36,7 @@ La [**función GetAdaptersInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-geta
 
     
 
-3.  Realice una llamada inicial [**a GetAdaptersInfo para**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo) obtener el tamaño necesario en la variable *ulOutBufLen.*
+3.  Realice una llamada inicial a [**GetAdaptersInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo) para obtener el tamaño necesario en la variable *ulOutBufLen.*
     > [!Note]  
     > Esta llamada a la función está pensada para producir un error y se usa para asegurarse de que la variable *ulOutBufLen* especifica un tamaño suficiente para contener toda la información devuelta a *pAdapterInfo*. Se trata de un modelo de programación común para estructuras de datos y funciones de este tipo.
 
@@ -52,7 +52,7 @@ La [**función GetAdaptersInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-geta
 
     
 
-4.  Realice una segunda llamada a [**GetAdaptersInfo,**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo)pasando *pAdapterInfo* y *ulOutBufLen* como parámetros y realizando la comprobación de errores general. Devuelve su valor a la variable **DWORD** *dwRetVal* (para una comprobación de errores más amplia).
+4.  Realice una segunda llamada a [**GetAdaptersInfo,**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo)pasando *pAdapterInfo* y *ulOutBufLen* como parámetros y realizando una comprobación de errores general. Devuelve su valor a la variable **DWORD** *dwRetVal* (para una comprobación de errores más amplia).
     ```C++
     if ((dwRetVal = GetAdaptersInfo( pAdapterInfo, &ulOutBufLen)) != ERROR_SUCCESS) {
         printf("GetAdaptersInfo call failed with %d\n", dwRetVal);

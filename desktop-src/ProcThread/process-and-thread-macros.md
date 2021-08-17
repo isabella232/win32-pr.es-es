@@ -1,19 +1,19 @@
 ---
-description: 'Las siguientes macros se utilizan con fibras:'
+description: 'Las macros siguientes se usan con fibras:'
 ms.assetid: 0b74596c-65b5-4aaf-98d7-8bc47cc870b4
 title: Macros de procesos y subprocesos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6910da90ef5148f61bdd6bacb8c82f8a00672462
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8ad6a1efa314752ed1e58fd950672fb76b821e31bc1b148daf4cb518b4cd52c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117793523"
 ---
 # <a name="process-and-thread-macros"></a>Macros de procesos y subprocesos
 
-Las siguientes macros se utilizan con fibras:
+Las macros siguientes se usan con fibras:
 
 -   [**GetCurrentFiber**](/windows/win32/api/winnt/nf-winnt-getcurrentfiber)
 -   [**GetFiberData**](/windows/win32/api/winnt/nf-winnt-getfiberdata)

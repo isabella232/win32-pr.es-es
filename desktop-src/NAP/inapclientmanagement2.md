@@ -1,10 +1,10 @@
 ---
-title: Interfaz INapClientManagement2 (NapManagement. h)
-description: Proporciona métodos para la administración del cliente de NAP. | Interfaz INapClientManagement2 (NapManagement. h)
+title: Interfaz INapClientManagement2 (NapManagement.h)
+description: Proporciona métodos para la administración de clientes NAP. | Interfaz INapClientManagement2 (NapManagement.h)
 ms.assetid: 3cf29bfe-471a-481a-903d-bf0479c57a08
 keywords:
-- Interfaz INapClientManagement2 NAP
-- Interfaz INapClientManagement2 NAP, descripción
+- NAP de interfaz INapClientManagement2
+- Nap de interfaz INapClientManagement2 , descrito
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3441b52ddf776337765f39d23528bc223a17b1e4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4f459e6fa0d883203bf52ebbd0aaab06ee93cef00d1fb52af3d670f71cf7ab52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104083678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800105"
 ---
 # <a name="inapclientmanagement2-interface"></a>Interfaz INapClientManagement2
 
@@ -29,7 +29,7 @@ ms.locfileid: "104083678"
 
  
 
-La interfaz **INapClientManagement2** proporciona métodos para la administración del cliente de NAP.
+La **interfaz INapClientManagement2** proporciona métodos para la administración de clientes NAP.
 
 > [!Note]  
 > Esta interfaz hereda todos los métodos de [**INapClientManagement**](inapclientmanagement.md) y se debe usar en su lugar.
@@ -38,19 +38,19 @@ La interfaz **INapClientManagement2** proporciona métodos para la administraci�
 
 ## <a name="members"></a>Miembros
 
-La interfaz **INapClientManagement2** hereda de [**INapClientManagement**](inapclientmanagement.md). **INapClientManagement2** también tiene estos tipos de miembros:
+La **interfaz INapClientManagement2** hereda de [**INapClientManagement**](inapclientmanagement.md). **INapClientManagement2** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **INapClientManagement2** tiene estos métodos.
+La **interfaz INapClientManagement2** tiene estos métodos.
 
 
 
 | Método                                                                                                    | Descripción                                                                                                |
 |:----------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| [**INapClientManagement2::GetSystemIsolationInfoEx**](inapclientmanagement2-getsystemisolationinfoex.md) | Recupera información sobre el estado de aislamiento y el estado de aislamiento extendido del cliente NAP.<br/> |
+| [**INapClientManagement2::GetSystemIsolationInfoEx**](inapclientmanagement2-getsystemisolationinfoex.md) | Recupera información sobre el estado de aislamiento y el estado de aislamiento extendido del cliente nap.<br/> |
 
 
 
@@ -62,10 +62,10 @@ La interfaz **INapClientManagement2** tiene estos métodos.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                         |
-| Encabezado<br/>                   | <dl> <dt>NapManagement. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapManagement. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                               |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                         |
+| Header<br/>                   | <dl> <dt>NapManagement.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapManagement.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>        |
 
 
@@ -77,7 +77,7 @@ La interfaz **INapClientManagement2** tiene estos métodos.
 [**INapClientManagement**](inapclientmanagement.md)
 </dt> <dt>
 
-[Interfaces NAP](nap-interfaces.md)
+[NAP Interfaces](nap-interfaces.md)
 </dt> <dt>
 
 [Referencia de NAP](nap-reference.md)

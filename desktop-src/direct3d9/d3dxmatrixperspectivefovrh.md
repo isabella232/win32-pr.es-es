@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXMatrixPerspectiveFovRH (D3dx9math.h): crea una matriz de proyección de perspectiva con la derecha basada en un campo de vista.'
+description: 'Función D3DXMatrixPerspectiveFovRH (D3dx9math.h): crea una matriz de proyección de perspectiva a la derecha basada en un campo de vista.'
 ms.assetid: 3f4bc5d8-90af-4fdc-bc0c-931407cd7a9b
 title: Función D3DXMatrixPerspectiveFovRH (D3dx9math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e8860a5d9fed13e8acdedfe67ed94a97911a6de0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 232c93709939c1371488a5f3a0aeadb2647001cf181270bcf9c357cc0d34042e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731681"
 ---
 # <a name="d3dxmatrixperspectivefovrh-function-d3dx9mathh"></a>Función D3DXMatrixPerspectiveFovRH (D3dx9math.h)
 
@@ -85,7 +85,7 @@ Valor Z del plano de vista cercano.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor Z del plano de vista lejana.
+Valor Z del plano de vista lejano.
 
 </dd> </dl>
 
@@ -93,11 +93,11 @@ Valor Z del plano de vista lejana.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es una matriz de proyección de perspectiva con la mano derecha.
+Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es una matriz de proyección de perspectiva a la derecha.
 
 ## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la función **D3DXMatrixPerspectiveFovRH** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXMatrixPerspectiveFovRH** se puede usar como parámetro para otra función.
 
 Para cambiar el eje de relación de aspecto, use la fórmula de cálculo: fovy = 2 * math.atan(math.tan(fovy * 0.5) / aspect). Como alternativa, agregue variables de relación de aspecto X e Y en la estructura para escalar el espacio de vista vertical: fovy = 2 * math.atan(math.tan(fovy * 0.5) / aspectY), aspect = aspectX * aspect Y.
 
@@ -128,7 +128,7 @@ xScale = yScale / aspect ratio
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
