@@ -1,26 +1,26 @@
 ---
-title: Interfaz IADsObjectOptions
-description: La interfaz IADsObjectOptions permite el acceso directo a la configuración y la recuperación de opciones específicas del proveedor.
+title: IADsObjectOptions (Interfaz)
+description: La interfaz IADsObjectOptions permite el acceso directo a la configuración y recuperación de opciones específicas del proveedor.
 ms.assetid: b4ac114f-1a23-4be6-af02-0c0d34a8f78f
 ms.tgt_platform: multiple
 keywords:
-- Interfaz IADsObjectOptions ADSI
-- IADsObjectOptions ADSI, usar
-- ADSI ADSI, código de ejemplo C/C++, uso de IADsObjectOptions
+- IADsObjectOptions Interface ADSI
+- IADsObjectOptions ADSI , mediante
+- ADSI ADSI , código de ejemplo C/C++ , mediante IADsObjectOptions
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3049d4dee7f6bf2e7ebb61f01f42ef9fc39271c1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 43701b4b846e4bf4e69dc8882397b5aba6b19ffc370ba418a34239782433073f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103993851"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117839928"
 ---
-# <a name="iadsobjectoptions-interface"></a>Interfaz IADsObjectOptions
+# <a name="iadsobjectoptions-interface"></a>IADsObjectOptions (Interfaz)
 
-La interfaz [**IADsObjectOptions**](/windows/desktop/api/Iads/nn-iads-iadsobjectoptions) permite el acceso directo a la configuración y la recuperación de opciones específicas del proveedor.
+La [**interfaz IADsObjectOptions**](/windows/desktop/api/Iads/nn-iads-iadsobjectoptions) permite el acceso directo a la configuración y recuperación de opciones específicas del proveedor.
 
-Una de las opciones del objeto Active Directory es devolver el nombre de host de un servidor. En el ejemplo de código siguiente se usa la interfaz para recuperar el nombre de host del servidor de catálogo global.
+Una de las Active Directory de objeto es devolver el nombre de host de un servidor. En el ejemplo de código siguiente se usa la interfaz para recuperar el nombre de host del servidor de catálogo global.
 
 
 ```C++
@@ -99,9 +99,9 @@ HRESULT GetGCServerName(VARIANT *vGCServer)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

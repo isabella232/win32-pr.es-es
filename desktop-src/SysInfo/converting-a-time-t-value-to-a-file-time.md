@@ -1,19 +1,19 @@
 ---
-description: Las funciones de hora incluidas en el tiempo de ejecución de C usan el \_ tipo de tiempo t para representar el número de segundos transcurridos desde la medianoche del 1 de enero de 1970. En el ejemplo siguiente se convierte un \_ valor de hora t en una hora de archivo mediante la función Int32x32To64.
+description: Las funciones de tiempo incluidas en el tiempo de ejecución de C usan el tipo t de tiempo para representar el número de segundos transcurridos desde la medianoche del 1 de enero de \_ 1970. En el ejemplo siguiente se convierte un valor \_ time t en una hora de archivo, mediante la función Int32x32To64.
 ms.assetid: f626c0b2-a5a1-475d-9a24-64e7b0407278
-title: Convertir un valor de time_t en una hora de archivo
+title: Convertir un valor time_t en una hora de archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee866efaed716fb12d2501337236afdb7cf641b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30fc7161e55bb235690f5c7d5fe0f4cd575bd7c902d5357606290def0509f6b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117764517"
 ---
-# <a name="converting-a-time_t-value-to-a-file-time"></a>Convertir un valor de hora \_ t en una hora de archivo
+# <a name="converting-a-time_t-value-to-a-file-time"></a>Convertir un valor time \_ t en una hora de archivo
 
-Las funciones de hora incluidas en el tiempo de ejecución de C usan el \_ tipo de tiempo t para representar el número de segundos transcurridos desde la medianoche del 1 de enero de 1970. En el ejemplo siguiente se convierte un \_ valor de hora t en una hora de archivo mediante la función [**Int32x32To64**](/windows/desktop/api/winnt/nf-winnt-int32x32to64) .
+Las funciones de tiempo incluidas en el tiempo de ejecución de C usan el tipo t de tiempo para representar el número de segundos transcurridos desde la medianoche del 1 de enero de \_ 1970. En el ejemplo siguiente se convierte un valor \_ time t en una hora de archivo, mediante la función [**Int32x32To64.**](/windows/desktop/api/winnt/nf-winnt-int32x32to64)
 
 
 ```C++
@@ -30,7 +30,7 @@ void TimetToFileTime( time_t t, LPFILETIME pft )
 
 
 
-Después de obtener un tiempo de archivo, puede convertir este valor a la hora del sistema mediante la función [**FileTimeToSystemTime**](/windows/win32/api/timezoneapi/nf-timezoneapi-filetimetosystemtime) .
+Después de obtener una hora de archivo, puede convertir este valor en la hora del sistema mediante la [**función FileTimeToSystemTime.**](/windows/win32/api/timezoneapi/nf-timezoneapi-filetimetosystemtime)
 
  
 

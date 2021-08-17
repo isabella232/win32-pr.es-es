@@ -3,7 +3,7 @@ title: Función WaveActiveMin
 description: Devuelve el valor mínimo de la expresión en todos los calles activas de la onda actual y la replica de nuevo en todos los sentidos activos.
 ms.assetid: BA762C02-894C-4AF9-A226-C1E3AAC286FF
 keywords:
-- Función WaveActiveMin HLSL
+- Función HlSL de WaveActiveMin
 topic_type:
 - apiref
 api_name:

@@ -1,41 +1,41 @@
 ---
-title: Notificaciones de cuadro de diálogo comunes
-description: . | Notificaciones de cuadro de diálogo comunes
+title: Notificaciones comunes de cuadro de diálogo
+description: . | Notificaciones comunes de cuadro de diálogo
 ms.assetid: 09b717f1-b6f8-4436-9c08-0b51767b9518
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8032e0acbacd590306d5fc1588ee95c2a494dcd4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0708fa941f95d32848e06adab6e9c2036b5f8db2048d66f90867a76a16a96734
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117720955"
 ---
-# <a name="common-dialog-box-notifications"></a>Notificaciones de cuadro de diálogo comunes
+# <a name="common-dialog-box-notifications"></a>Notificaciones comunes de cuadro de diálogo
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**FILEOK de CDN \_**](cdn-fileok.md)
--   [**FOLDERCHANGE de CDN \_**](cdn-folderchange.md)
--   [**ayuda de CDN \_**](cdn-help.md)
--   [**INCLUDEITEM de CDN \_**](cdn-includeitem.md)
--   [**INITDONE de CDN \_**](cdn-initdone.md)
--   [**SELCHANGE de CDN \_**](cdn-selchange.md)
--   [**SHAREVIOLATION de CDN \_**](cdn-shareviolation.md)
--   [**TYPECHANGE de CDN \_**](cdn-typechange.md)
+-   [**\_CDN FILEOK**](cdn-fileok.md)
+-   [**\_CDN FOLDERCHANGE**](cdn-folderchange.md)
+-   [**\_CDN Ayuda**](cdn-help.md)
+-   [**\_CDN INCLUDEITEM**](cdn-includeitem.md)
+-   [**\_CDN INITDONE**](cdn-initdone.md)
+-   [**\_CDN SELCHANGE**](cdn-selchange.md)
+-   [**\_CDN SHAREVIOLATION**](cdn-shareviolation.md)
+-   [**\_CDN TYPECHANGE**](cdn-typechange.md)
 -   [**COLOROKSTRING**](colorokstring.md)
 -   [**FILEOKSTRING**](fileokstring.md)
 -   [**FINDMSGSTRING**](findmsgstring.md)
 -   [**HELPMSGSTRING**](helpmsgstring.md)
 -   [**LBSELCHSTRING**](lbselchstring.md)
 -   [**SHAREVISTRING**](sharevistring.md)
--   [**\_ENVSTAMPRECT de PSD de WM \_**](wm-psd-envstamprect.md)
--   [**\_FULLPAGERECT de PSD de WM \_**](wm-psd-fullpagerect.md)
--   [**\_GREEKTEXTRECT de PSD de WM \_**](wm-psd-greektextrect.md)
--   [**\_MARGINRECT de PSD de WM \_**](wm-psd-marginrect.md)
--   [**\_MINMARGINRECT de PSD de WM \_**](wm-psd-minmarginrect.md)
--   [**\_PAGESETUPDLG de PSD de WM \_**](wm-psd-pagesetupdlg.md)
--   [**\_YAFULLPAGERECT de PSD de WM \_**](wm-psd-yafullpagerect.md)
+-   [**WM \_ PSD \_ ENVSTAMPRECT**](wm-psd-envstamprect.md)
+-   [**WM \_ PSD \_ FULLPAGERECT**](wm-psd-fullpagerect.md)
+-   [**WM \_ PSD \_ GREEKTEXTRECT**](wm-psd-greektextrect.md)
+-   [**WM \_ PSD \_ MARGINRECT**](wm-psd-marginrect.md)
+-   [**WM \_ PSD \_ MINMARGINRECT**](wm-psd-minmarginrect.md)
+-   [**WM \_ PSD \_ PAGESETUPDLG**](wm-psd-pagesetupdlg.md)
+-   [**WM \_ PSD \_ YAFULLPAGERECT**](wm-psd-yafullpagerect.md)
 
  
 

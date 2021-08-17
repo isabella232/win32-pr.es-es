@@ -1,21 +1,21 @@
 ---
-title: Bluetooth y operaciones de lectura o escritura
-description: Bluetooth es capaz de realizar todas las operaciones de lectura y escritura disponibles con Windows Sockets que se admiten actualmente con otras familias de direcciones.
+title: Bluetooth operaciones de lectura y escritura
+description: Bluetooth es capaz de realizar todas las operaciones de lectura y escritura disponibles con sockets de Windows que se admiten actualmente con otras familias de direcciones.
 ms.assetid: 1445aa04-38ca-47be-9483-d4133edbf3f4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5a3a8c1d92b45d4b540899f5594de72cf19896e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 15bedb264ae17efe1c84ca7826229edf9e9dccb9880ce670ff81dc019909583c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118172940"
 ---
-# <a name="bluetooth-and-read-or-write-operations"></a>Bluetooth y operaciones de lectura o escritura
+# <a name="bluetooth-and-read-or-write-operations"></a>Bluetooth operaciones de lectura y escritura
 
-Bluetooth es capaz de realizar todas las operaciones de lectura y escritura disponibles con Windows Sockets que se admiten actualmente con otras familias de direcciones.
+Bluetooth es capaz de realizar todas las operaciones de lectura y escritura disponibles con sockets de Windows que se admiten actualmente con otras familias de direcciones.
 
-Para obtener más información sobre las operaciones de lectura y escritura, vea [Windows Sockets](/windows/desktop/WinSock/windows-sockets-start-page-2).
+Para obtener más información sobre las operaciones de lectura y escritura, [vea Windows Sockets](/windows/desktop/WinSock/windows-sockets-start-page-2).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -36,6 +36,6 @@ Para obtener más información sobre las operaciones de lectura y escritura, vea
 [**sendto**](/windows/desktop/api/winsock/nf-winsock-sendto)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

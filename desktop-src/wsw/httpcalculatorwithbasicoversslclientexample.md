@@ -1,29 +1,29 @@
 ---
 title: HttpCalculatorWithBasicOverSslClientExample
-description: En este ejemplo se muestra cómo usar el proxy de servicio para comunicarse con un servicio de calculadora, con seguridad de transporte SSL y autenticación básica de encabezado HTTP.
+description: En este ejemplo se muestra cómo usar el proxy de servicio para hablar con un servicio de calculadora, con seguridad de transporte SSL y autenticación básica de encabezado HTTP.
 ms.assetid: be1a44e6-642c-42fa-8b95-bd8c6f335696
 keywords:
 - HttpCalculatorWithBasicOverSslClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3fc925c9cfc6f276d405a27ab931596559adf9d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 53e366d5181f2cc498756820a3c1ccf6345c1ebcff60353cb1ffc5e6338c7ae0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105714264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117841569"
 ---
 # <a name="httpcalculatorwithbasicoversslclientexample"></a>HttpCalculatorWithBasicOverSslClientExample
 
-En este ejemplo se muestra cómo usar el proxy de servicio para comunicarse con un servicio de calculadora, con seguridad de transporte SSL y autenticación básica de encabezado HTTP. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación del cliente se proporciona mediante un par de nombre de usuario/contraseña proporcionado en encabezados HTTP con el esquema básico.
+En este ejemplo se muestra cómo usar el proxy de servicio para hablar con un servicio de calculadora, con seguridad de transporte SSL y autenticación básica de encabezado HTTP. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación de cliente se proporciona mediante un par de nombre de usuario y contraseña proporcionado en encabezados HTTP mediante el esquema básico.
 
--   [HttpCalculatorWithBasicOverSslClient. cpp](#httpcalculatorwithbasicoversslclientcpp)
--   [CalculatorService. wsdl](#calculatorservicewsdl)
+-   [HttpCalculatorWithBasicOverSslClient.cpp](#httpcalculatorwithbasicoversslclientcpp)
+-   [CalculatorService.wsdl](#calculatorservicewsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="httpcalculatorwithbasicoversslclientcpp"></a>HttpCalculatorWithBasicOverSslClient. cpp
+## <a name="httpcalculatorwithbasicoversslclientcpp"></a>HttpCalculatorWithBasicOverSslClient.cpp
 
 
 ```C++
@@ -241,7 +241,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewsdl"></a>CalculatorService. wsdl
+## <a name="calculatorservicewsdl"></a>CalculatorService.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -366,9 +366,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

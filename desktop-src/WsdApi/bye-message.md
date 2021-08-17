@@ -1,28 +1,28 @@
 ---
-description: Un mensaje de WS-Discovery que se usa para anunciar la salida de un dispositivo o servicio de la red.
+description: Mensaje WS-Discovery que se usa para anunciar la salida de un dispositivo o servicio de la red.
 ms.assetid: 7b9abfcc-28ab-4f29-af69-6dc68e3f51b6
-title: Mensaje bye
+title: Mensaje de adiós
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26880e8b1d4eae7f366f797017b033f9f444fe1f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8276c05314b31782442bfdf6de998dd41241391de9dc94947409041c8f4aa420
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117738658"
 ---
-# <a name="bye-message"></a>Mensaje bye
+# <a name="bye-message"></a>Mensaje de adiós
 
-Un mensaje bye es un mensaje WS-Discovery que se usa para anunciar la salida de un dispositivo o servicio de la red. Para obtener más información acerca de los mensajes bye, consulte la sección 4,2 de la [especificación WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
+Un mensaje de adiós es un WS-Discovery que se usa para anunciar la salida de un dispositivo o servicio de la red. Para obtener más información sobre los mensajes de adiós, vea la sección 4.2 de [la especificación WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
 
-Los mensajes adiós no se solicitan. Los mensajes son opcionales.
+Los mensajes de adiós no se han solicitado. Los mensajes son opcionales.
 
 > [!Note]  
-> En este tema se muestra un mensaje de DPWS de ejemplo generado por los clientes y hosts de WSDAPI. WSDAPI analizará y aceptará otros mensajes conformes a DPWS que no se ajusten a este ejemplo. No use este ejemplo para comprobar la interoperabilidad de DPWS; en su lugar, use la [herramienta de interoperabilidad básica de WSDAPI (WSDBIT)](https://msdn.microsoft.com/library/cc264250.aspx) .
+> En este tema se muestra un mensaje DPWS de ejemplo generado por clientes y hosts de WSDAPI. WSDAPI analizará y aceptará otros mensajes compatibles con DPWS que no se ajusten a este ejemplo. No use este ejemplo para comprobar la interoperabilidad de DPWS; use la [herramienta de interoperabilidad básica WSDAPI (WSDBIT) en](https://msdn.microsoft.com/library/cc264250.aspx) su lugar.
 
  
 
-El siguiente mensaje SOAP muestra un mensaje bye de ejemplo.
+El siguiente mensaje SOAP muestra un mensaje de adiós de ejemplo.
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8" ?>
@@ -56,7 +56,7 @@ El siguiente mensaje SOAP muestra un mensaje bye de ejemplo.
 </soap:Body>
 ```
 
-Un mensaje bye tiene los siguientes puntos de enfoque.
+Un mensaje de adiós tiene los siguientes puntos de enfoque.
 
 
 
@@ -79,7 +79,7 @@ Un mensaje bye tiene los siguientes puntos de enfoque.
 <td><pre class="syntax" data-space="preserve"><code><wsa:Action>
     https://schemas.xmlsoap.org/ws/2005/04/discovery/Bye
 </wsa:Action></code></pre></td>
-<td>La acción bye SOAP identifica el mensaje como un mensaje bye.</td>
+<td>La acción Bye SOAP identifica el mensaje como un mensaje de adiós.</td>
 </tr>
 <tr class="even">
 <td>AppSequence</td>
@@ -87,14 +87,14 @@ Un mensaje bye tiene los siguientes puntos de enfoque.
     SequenceId=&quot;urn:uuid:369a7d7b-5f87-48a4-aa9a-189edf2a8772&quot;
     MessageNumber=&quot;21&quot;>
 </wsd:AppSequence></code></pre></td>
-<td>Contiene información de secuenciación de aplicaciones, que ayuda a mantener la secuencia de mensajes incluso si se reciben desordenados. El AppSequence se valida como se describe en <a href="appsequence-validation-rules.md">reglas de validación de AppSequence</a>.</td>
+<td>Contiene información de secuenciación de aplicaciones, que ayuda a mantener la secuencia de mensajes incluso si se reciben sin orden. AppSequence se valida como se describe en <a href="appsequence-validation-rules.md">Reglas de validación de AppSequence</a>.</td>
 </tr>
 <tr class="odd">
 <td>Dirección</td>
 <td><pre class="syntax" data-space="preserve"><code><wsa:Address>
     urn:uuid:37f86d35-e6ac-4241-964f-1d9ae46fb366
 </wsa:Address></code></pre></td>
-<td>Contiene la dirección del extremo que se va a desconectar.</td>
+<td>Contiene la dirección del punto de conexión sin conexión.</td>
 </tr>
 </tbody>
 </table>
@@ -107,10 +107,10 @@ Un mensaje bye tiene los siguientes puntos de enfoque.
 
 <dl> <dt>
 
-[Mensajes de intercambio de metadatos y detección](discovery-and-metadata-exchange-message-patterns.md)
+[Mensajes de detección y Exchange metadatos](discovery-and-metadata-exchange-message-patterns.md)
 </dt> <dt>
 
-[Mensaje de Hola](hello-message.md)
+[Mensaje hello](hello-message.md)
 </dt> </dl>
 
  

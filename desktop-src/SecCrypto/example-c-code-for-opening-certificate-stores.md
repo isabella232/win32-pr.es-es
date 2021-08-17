@@ -1,21 +1,21 @@
 ---
-description: En los siguientes ejemplos se proporciona código para abrir varios almacenes de certificados comunes. Estos ejemplos son una serie de fragmentos de código y no son programas independientes.
+description: En los ejemplos siguientes se proporciona código para abrir una variedad de almacenes de certificados comunes. Estos ejemplos son una serie de fragmentos de código y no son programas independientes.
 ms.assetid: 975a56d1-aa45-470e-b385-753baa1911ff
 title: Código C de ejemplo para abrir almacenes de certificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7ebf767fd98b4edca956bf338402ddd14efc26f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fc54577894c064e855396942139122678808307ee14a4f24474a25e2153ce6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117766066"
 ---
 # <a name="example-c-code-for-opening-certificate-stores"></a>Código C de ejemplo para abrir almacenes de certificados
 
-En los siguientes ejemplos se proporciona código para abrir varios almacenes de certificados comunes. Estos ejemplos son una serie de fragmentos de código y no son programas independientes.
+En los ejemplos siguientes se proporciona código para abrir una variedad de almacenes de certificados comunes. Estos ejemplos son una serie de fragmentos de código y no son programas independientes.
 
-En el ejemplo siguiente se abre mi almacén del sistema.
+En el ejemplo siguiente se abre el almacén Mi sistema.
 
 
 ```C++
@@ -78,7 +78,7 @@ else
 
 
 
-En el ejemplo siguiente se abre un almacén desde el disco. En el ejemplo se usa la función **CreateMyDACL** , que se define en el tema [crear una DACL](../secbp/creating-a-dacl.md) , para asegurarse de que el archivo abierto se crea con una DACL adecuada.
+En el ejemplo siguiente se abre un almacén desde el disco. En el ejemplo se **usa la función CreateMyDACL,** definida en el tema Creación de una [DACL,](../secbp/creating-a-dacl.md) para asegurarse de que el archivo abierto se crea con una DACL adecuada.
 
 
 ```C++
@@ -164,7 +164,7 @@ if(!(CloseHandle(hFile)))
 
 
 
-En el ejemplo siguiente se abre un almacén basado en archivos mediante el \_ nombre de archivo Prov del almacén de certificados \_ \_ .
+En el ejemplo siguiente se abre un almacén basado en archivos mediante CERT \_ STORE \_ PROV \_ FILENAME.
 
 
 ```C++
@@ -320,7 +320,7 @@ if(!(CertCloseStore(hRegStore, 0)))
 
 
 
-En el ejemplo siguiente se abre un almacén de certificados basado en un \# mensaje PKCS 7.
+En el ejemplo siguiente se abre un almacén de certificados basado en un mensaje PKCS \# 7.
 
 
 ```C++

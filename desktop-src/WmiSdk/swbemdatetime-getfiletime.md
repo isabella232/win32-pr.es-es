@@ -1,8 +1,8 @@
 ---
-description: Convierte un valor de fecha y hora en el formato de fecha y hora de CIM al formato FILETIME.
+description: Convierte un valor de fecha y hora en el formato CIM DATETIME al formato FILETIME.
 ms.assetid: 08e0761d-e735-454a-8429-2bd1eb331123
 ms.tgt_platform: multiple
-title: Método SWbemDateTime. GetFileTime (Wbemdisp. h)
+title: Método SWbemDateTime.GetFileTime (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,20 +16,20 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 3f8a8c85cb4c78be578187b1f55afce078fe7bd5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c35daf5b6e986b2519f127969edc5bbcf05a260bd23e8aa1168b1a7c20a5372
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104498052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117739451"
 ---
-# <a name="swbemdatetimegetfiletime-method"></a>SWbemDateTime. GetFileTime, método
+# <a name="swbemdatetimegetfiletime-method"></a>Método SWbemDateTime.GetFileTime
 
-El método **GetFileTime** del objeto [**SWbemDateTime**](swbemdatetime.md) convierte un valor de fecha y hora en el formato de fecha y hora [de CIM al](datetime.md) formato FILETIME.
+El **método GetFileTime** del objeto [**SWbemDateTime**](swbemdatetime.md) convierte un valor de fecha y hora en el formato [DATETIME](datetime.md) cim al formato FILETIME.
 
-Si el parámetro se establece en **true**, el valor devuelto representa una hora local para el cliente. De lo contrario, el valor devuelto es una hora UTC (hora universal coordinada). Una estructura de [fecha y hora](datetime.md) de **FILETIME** es un valor de 64 bits que representa el número de unidades de 100-nanosegundos desde el comienzo del 1 de enero de 1601. Instrumental de administración de Windows (WMI) trata los valores de **FILETIME** como representaciones de cadena de números de bits 64 sin signo.
+Si el parámetro se establece en **TRUE**, el valor devuelto representa una hora local para el cliente. De lo contrario, el valor devuelto es una hora universal coordinada (UTC). Una **estructura FILETIME** [DATETIME](datetime.md) es un valor de 64 bits que representa el número de unidades de 100 nanosegundos desde el 1 de enero de 1601. Windows Instrumental de administración (WMI) trata los valores **FILETIME** como representaciones de cadena de números de 64 bits sin signo.
 
-Para obtener una explicación de esta sintaxis, vea [convenciones de documentos para la API de scripting](document-conventions-for-the-scripting-api.md).
+Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,35 +46,35 @@ vDate = .GetFileTime( _
 
 <dl> <dt>
 
-*bIsLocaL* \[ en, opcional\]
+*bIsLocaL* \[ in, opcional\]
 </dt> <dd>
 
-Indica si el valor devuelto se interpreta como hora local. A continuación, la propiedad UTC contiene la hora local convertida en el desplazamiento correcto de hora universal coordinada (UTC). Si el valor es **false**, el valor se interpreta como UTC con un desplazamiento de cero (0).
+Indica si el valor devuelto se interpreta como hora local. A continuación, la propiedad UTC contiene la hora local convertida en el desplazamiento de hora universal coordinada (UTC) correcto. Si el valor es **FALSE**, el valor se interpreta como UTC con un desplazamiento de cero (0).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Fecha y hora en formato **FILETIME** .
+Fecha y hora en formato **FILETIME.**
 
 ## <a name="error-codes"></a>Códigos de error
 
-Después de completar el método **GetFileTime** , el objeto [Err](/previous-versions//sbf5ze0e(v=vs.85)) puede contener el código de error de la lista siguiente.
+Después de completar el **método GetFileTime,** el [objeto Err](/previous-versions//sbf5ze0e(v=vs.85)) puede contener el código de error en la lista siguiente.
 
 <dl> <dt>
 
-**wbemErrFailed** -2147749889 (0x80041001)
+**wbemErrFailed:** 2147749889 (0x80041001)
 </dt> <dd>
 
 Se produjo un error en la llamada.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**VT \_** Los valores Date y **FILETIME** no pueden contener campos comodín.
+**VT \_ Los valores DATE** **y FILETIME** no pueden contener campos comodín.
 
-Se produce un error en el método **GetFileTime** (wbemErrFailed) si alguna de las siguientes propiedades es **falsa**:
+Se produce un error **en el método GetFileTime** (wbemErrFailed) si alguna de las siguientes propiedades es **FALSE**:
 
 -   [**YearSpecified**](swbemdatetime-yearspecified.md)
 -   [**MonthSpecified**](swbemdatetime-monthspecified.md)
@@ -82,28 +82,28 @@ Se produce un error en el método **GetFileTime** (wbemErrFailed) si alguna de l
 -   [**HoursSpecified**](swbemdatetime-hoursspecified.md)
 -   [**MinutesSpecified**](swbemdatetime-minutesspecified.md)
 -   [**SecondsSpecified**](swbemdatetime-secondsspecified.md)
--   [**MicrosecondsSpecified**](swbemdatetime-microsecondsspecified.md)
--   [**UTCSpecified**](swbemdatetime-utcspecified.md)
+-   [**MicrosegundosSpecified**](swbemdatetime-microsecondsspecified.md)
+-   [**UTCEspecificado**](swbemdatetime-utcspecified.md)
 
-En una devolución correcta de [**SetFileTime**](swbemdatetime-setfiletime.md), todas estas propiedades se establecen en **true**.
+En una devolución correcta de [**SetFileTime,**](swbemdatetime-setfiletime.md)todas estas propiedades se establecen en **TRUE.**
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener ejemplos del uso del objeto [**SWbemDateTime**](swbemdatetime.md) para convertir valores de fecha y [**hora**](datetime.md) de CIM en el formato **FILETIME** o en el formato de **\_ fecha de VT** , vea [tareas de WMI: fechas y horas](wmi-tasks--dates-and-times.md). Para obtener una descripción del formato de fecha y hora **de CIM,** consulte [formato de fecha y hora](date-and-time-format.md).
+Para obtener ejemplos del uso del objeto [**SWbemDateTime**](swbemdatetime.md) para convertir valores [**DATETIME**](datetime.md) de CIM a y desde el formato **FILETIME** o el formato **VT \_ DATE,** vea [Tareas wmi:](wmi-tasks--dates-and-times.md)fechas y horas. Para obtener una descripción del formato **CIM DATETIME,** vea [Formato de fecha y hora](date-and-time-format.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemDateTime<br/>                                                         |
-| IID<br/>                      | \_ISWBEMDATETIME IID<br/>                                                          |
+| IID<br/>                      | IID \_ ISWbemDateTime<br/>                                                          |
 
 
 
@@ -111,13 +111,13 @@ Para obtener ejemplos del uso del objeto [**SWbemDateTime**](swbemdatetime.md) p
 
 <dl> <dt>
 
-[**SWbemDateTime. Getvardate (**](swbemdatetime-getvardate.md)
+[**SWbemDateTime.GetVarDate**](swbemdatetime-getvardate.md)
 </dt> <dt>
 
 [**SWbemDateTime**](swbemdatetime.md)
 </dt> <dt>
 
-[**DATETIME**](datetime.md)
+[**Datetime**](datetime.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-title: Recuperar atributos de objeto, seleccionar nuevos objetos
-description: Una aplicación puede recuperar los atributos de un lápiz, un pincel, una paleta, una fuente o un mapa de bits llamando a las funciones GetCurrentObject y GetObject.
+title: Recuperar atributos de objeto y seleccionar nuevos objetos
+description: Una aplicación puede recuperar los atributos de un lápiz, pincel, paleta, fuente o mapa de bits llamando a las funciones GetCurrentObject y GetObject.
 ms.assetid: 09d8412f-a67d-48d5-9c04-9233dee43cf9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b18dcef03bf769e8b2d11574429b64f481b1a79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61c58d946f61a6a83dcfeb2ddae24d735d3596e5e864cf672bab832d7db3aedf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117886156"
 ---
-# <a name="retrieve-object-attributes-select-new-objects"></a>Recuperar atributos de objeto, seleccionar nuevos objetos
+# <a name="retrieve-object-attributes-select-new-objects"></a>Recuperar atributos de objeto y seleccionar nuevos objetos
 
-Una aplicación puede recuperar los atributos de un lápiz, un pincel, una paleta, una fuente o un mapa de bits llamando a las funciones [**GetCurrentObject**](/windows/desktop/api/Wingdi/nf-wingdi-getcurrentobject) y [**GetObject**](/windows/desktop/api/Wingdi/nf-wingdi-getobject) . La función **GetCurrentObject** devuelve un identificador que identifica el objeto actualmente seleccionado en el controlador de dominio; la función **GetObject** devuelve una estructura que describe los atributos del objeto.
+Una aplicación puede recuperar los atributos de un lápiz, pincel, paleta, fuente o mapa de bits llamando a las funciones [**GetCurrentObject**](/windows/desktop/api/Wingdi/nf-wingdi-getcurrentobject) [**y GetObject.**](/windows/desktop/api/Wingdi/nf-wingdi-getobject) La **función GetCurrentObject** devuelve un identificador que identifica el objeto seleccionado actualmente en el controlador de dominio; La **función GetObject** devuelve una estructura que describe los atributos del objeto .
 
 En el ejemplo siguiente se muestra cómo una aplicación puede recuperar los atributos de pincel actuales y usar los datos recuperados para determinar si es necesario seleccionar un nuevo pincel.
 
@@ -63,7 +63,7 @@ En el ejemplo siguiente se muestra cómo una aplicación puede recuperar los atr
 
 > [!Note]
 >
-> La aplicación guardó el controlador de pincel original al llamar a la función [**SelectObject**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject) por primera vez. Este identificador se guarda para que el pincel original se pueda volver a seleccionar en el controlador de dominio una vez completada la última operación de dibujo con el nuevo pincel. Una vez que el pincel original se selecciona de nuevo en el controlador de dominio, se elimina el nuevo pincel y se libera memoria en el montón de GDI.
+> La aplicación guardó el identificador de pincel original al llamar a la [**función SelectObject**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject) la primera vez. Este identificador se guarda para que el pincel original se pueda volver a seleccionar en el controlador de dominio una vez completada la última operación de dibujo con el nuevo pincel. Después de volver a seleccionar el pincel original en el controlador de dominio, se elimina el nuevo pincel, lo que libera memoria en el montón GDI.
 
  
 

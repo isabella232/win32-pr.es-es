@@ -1,10 +1,10 @@
 ---
-title: Propiedad SystemMonitor. ReportValueType
-description: Recupera o establece un valor que determina si el histograma y las vistas de informe representan el último valor muestreado durante el intervalo de muestreo o un valor calculado del muestreo, como el valor del contador promedio o mínimo.
+title: Propiedad SystemMonitor.ReportValueType
+description: Recupera o establece un valor que determina si el gráfico histograma y vistas de informe representa el último valor muestreado durante el intervalo de muestreo o un valor calculado del muestreo, como el valor promedio o mínimo del contador.
 ms.assetid: add75744-c3ab-48ab-b567-28a072facfdd
 keywords:
-- Propiedad ReportValueType SysMon
-- Propiedad ReportValueType SysMon, clase SystemMonitor
+- ReportValueType, propiedad SysMon
+- Propiedad ReportValueType SysMon , clase SystemMonitor
 - Clase SystemMonitor SysMon, propiedad ReportValueType
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ffc340516f1d99bb77dcc5a31c03eb189d2d70a8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 95282c48ac30b13af07c124ea21f36f91c7ae658b10d290a109fdd1dcc7a5ee5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117955013"
 ---
-# <a name="systemmonitorreportvaluetype-property"></a>Propiedad SystemMonitor. ReportValueType
+# <a name="systemmonitorreportvaluetype-property"></a>Propiedad SystemMonitor.ReportValueType
 
-Recupera o establece un valor que determina si el histograma y las vistas de informe representan el último valor muestreado durante el intervalo de muestreo o un valor calculado del muestreo, como el valor del contador promedio o mínimo.
+Recupera o establece un valor que determina si el gráfico histograma y vistas de informe representa el último valor muestreado durante el intervalo de muestreo o un valor calculado del muestreo, como el valor promedio o mínimo del contador.
 
 Esta propiedad es de solo lectura.
 
@@ -40,11 +40,11 @@ Property ReportValueType As ReportValueTypeConstants
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Determina si el histograma y las vistas de informe representan el último valor muestreado durante el intervalo de muestreo o un valor calculado del intervalo de muestreo. Para obtener los valores posibles, vea [**ReportValueTypeConstants**](/windows/win32/api/isysmon/ne-isysmon-reportvaluetypeconstants).
+Determina si el gráfico de vistas Histograma e Informe es el último valor muestreado durante el intervalo de muestreo o un valor calculado a partir del intervalo de muestreo. Para obtener los valores posibles, [**vea ReportValueTypeConstants**](/windows/win32/api/isysmon/ne-isysmon-reportvaluetypeconstants).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-SYSMON omite este valor y usa [**ReportValueTypeConstants.sysmonDefaultValue**](/windows/win32/api/isysmon/ne-isysmon-reportvaluetypeconstants) si [**SystemMonitor. DisplayType**](systemmonitor-displaytype.md) no es [**DisplayTypeConstants.sysmonHistogram**](/windows/win32/api/isysmon/ne-isysmon-displaytypeconstants) o **DisplayTypeConstants.sysmonReport**.
+SYSMON omite este valor y usa [**ReportValueTypeConstants.sysmonDefaultValue**](/windows/win32/api/isysmon/ne-isysmon-reportvaluetypeconstants) si [**SystemMonitor.DisplayType**](systemmonitor-displaytype.md) noDisplayTypeConstants.sys [**monHistogram**](/windows/win32/api/isysmon/ne-isysmon-displaytypeconstants) **oDisplayTypeConstants.sysmonReport**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ SYSMON omite este valor y usa [**ReportValueTypeConstants.sysmonDefaultValue**](
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ SYSMON omite este valor y usa [**ReportValueTypeConstants.sysmonDefaultValue**](
 
 <dl> <dt>
 
-[**SystemMonitor**](systemmonitor.md)
+[**Systemmonitor**](systemmonitor.md)
 </dt> </dl>
 
  

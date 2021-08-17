@@ -1,6 +1,6 @@
 ---
-description: Estos elementos componen el esquema XML que se usa en el manifiesto de transferencia del Asistente para la publicación web y el orden de impresión en línea.
-title: Transferir esquema de manifiesto
+description: Estos elementos son el esquema XML utilizado en el manifiesto de transferencia de los asistentes publicación web y ordenación de impresión en línea.
+title: Esquema de manifiesto de transferencia
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 488b6fc9-ff85-4860-9cd5-61d5de7e15e8
@@ -9,18 +9,18 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: d0b57f1eb81169674c6c8d36e66c8a3cd21cf0e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30324e32e1bd841423318a37eb1472d673ffc53c6e745f54f9398cec73138239
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104997837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858861"
 ---
-# <a name="transfer-manifest-schema"></a>Transferir esquema de manifiesto
+# <a name="transfer-manifest-schema"></a>Esquema de manifiesto de transferencia
 
-Estos elementos componen el esquema XML que se usa en el manifiesto de transferencia del Asistente para la publicación web y el orden de impresión en línea.
+Estos elementos son el esquema XML utilizado en el manifiesto de transferencia de los asistentes publicación web y ordenación de impresión en línea.
 
-Los siguientes elementos se definen para el manifiesto de transferencia.
+Los elementos siguientes se definen para el manifiesto de transferencia.
 
 -   [cancelledpage](#syntax)
     -   [Sintaxis](#syntax)
@@ -30,7 +30,7 @@ Los siguientes elementos se definen para el manifiesto de transferencia.
     -   [Sintaxis](#syntax)
     -   [Atributos](#attributes)
     -   [Información de elemento](#element-information)
--   [Favoritos](#syntax)
+-   [Favorito](#syntax)
     -   [Sintaxis](#syntax)
     -   [Atributos](#attributes)
     -   [Información de elemento](#element-information)
@@ -38,11 +38,11 @@ Los siguientes elementos se definen para el manifiesto de transferencia.
     -   [Sintaxis](#syntax)
     -   [Atributos](#attributes)
     -   [Información de elemento](#element-information)
--   [FileList](#syntax)
+-   [Filelist](#syntax)
     -   [Sintaxis](#syntax)
     -   [Atributos](#attributes)
     -   [Información de elemento](#element-information)
--   [directorio](#syntax)
+-   [Carpeta](#syntax)
     -   [Sintaxis](#syntax)
     -   [Atributos](#attributes)
     -   [Información de elemento](#element-information)
@@ -74,7 +74,7 @@ Los siguientes elementos se definen para el manifiesto de transferencia.
     -   [Sintaxis](#syntax)
     -   [Atributos](#attributes)
     -   [Información de elemento](#element-information)
--   [cambiar el tamaño](#syntax)
+-   [Redimensionar](#syntax)
     -   [Sintaxis](#syntax)
     -   [Atributos](#attributes)
     -   [Información de elemento](#element-information)
@@ -97,7 +97,7 @@ Los siguientes elementos se definen para el manifiesto de transferencia.
 
 ## <a name="cancelledpage"></a>cancelledpage
 
-Especifica la página HTML del lado servidor que se va a mostrar antes de que el asistente se cierre cuando el usuario haga clic en el botón **Cancelar** .
+Especifica la página HTML del lado servidor que se mostrará antes de cerrar el asistente cuando el usuario haga clic en **el botón** Cancelar.
 
 ### <a name="syntax"></a>Sintaxis
 
@@ -119,7 +119,7 @@ Especifica la página HTML del lado servidor que se va a mostrar antes de que el
 
 | Atributo | Descripción                                                                                           |
 |-----------|-------------------------------------------------------------------------------------------------------|
-| href      | Obligatorio. Dirección URL de la página HTML del lado servidor que se va a mostrar cuando el usuario haga clic en el botón **Cancelar** . |
+| href      | Obligatorio. Dirección URL de la página HTML del lado servidor que se mostrará cuando el usuario haga clic en **el botón** Cancelar. |
 
 
 
@@ -139,7 +139,7 @@ Especifica la página HTML del lado servidor que se va a mostrar antes de que el
 
 ## <a name="failurepage"></a>failurepage
 
-Especifica la página HTML del lado servidor que se va a mostrar si la carga no se realiza correctamente.
+Especifica la página HTML del lado servidor que se mostrará si la carga no se realiza correctamente.
 
 ### <a name="syntax"></a>Sintaxis
 
@@ -161,7 +161,7 @@ Especifica la página HTML del lado servidor que se va a mostrar si la carga no 
 
 | Atributo | Descripción                                                                                |
 |-----------|--------------------------------------------------------------------------------------------|
-| href      | Obligatorio. Dirección URL de la página HTML del servidor que se va a mostrar si la carga no se realiza correctamente. |
+| href      | Obligatorio. Dirección URL de la página HTML del lado servidor que se va a mostrar si la carga no se realiza correctamente. |
 
 
 
@@ -179,9 +179,9 @@ Especifica la página HTML del lado servidor que se va a mostrar si la carga no 
 
  
 
-## <a name="favorite"></a>Favoritos
+## <a name="favorite"></a>Favorito
 
-Indica al asistente que cree una entrada de sitio web favorita en el menú **Favoritos** de la dirección URL especificada. Si no se especifica este elemento, el elemento [htmlui](#syntax) se usa en su lugar.
+Indica al asistente que cree una entrada de sitio web favorita en el **menú Favoritos** de la dirección URL especificada. Si no se especifica este elemento, el [elemento htmlui](#syntax) se usa en su lugar.
 
 ### <a name="syntax"></a>Sintaxis
 
@@ -205,9 +205,9 @@ Indica al asistente que cree una entrada de sitio web favorita en el menú **Fav
 
 | Atributo | Descripción                                                            |
 |-----------|------------------------------------------------------------------------|
-| comment   | Obligatorio. Comentario asociado a la entrada **Favoritos** .         |
-| href      | Obligatorio. Dirección URL de la entrada de **Favoritos** .                          |
-| name      | Necesario. El nombre de la dirección URL que aparece en el menú **Favoritos** . |
+| comment   | Obligatorio. Comentario asociado a la **entrada Favoritos.**         |
+| href      | Obligatorio. Dirección URL de la **entrada Favoritos.**                          |
+| name      | Necesario. Nombre de la dirección URL que aparece en **el menú Favoritos.** |
 
 
 
@@ -227,7 +227,7 @@ Indica al asistente que cree una entrada de sitio web favorita en el menú **Fav
 
 ## <a name="file"></a>archivo
 
-Describe un solo archivo que se va a copiar. Se pueden incluir varios elementos de [archivo](#syntax) en un solo nodo [FileList](#syntax) .
+Describe un único archivo que se va a copiar. Varios [elementos de](#syntax) archivo pueden estar contenidos en un único nodo de lista [de](#syntax) archivos.
 
 ### <a name="syntax"></a>Sintaxis
 
@@ -254,9 +254,9 @@ Describe un solo archivo que se va a copiar. Se pueden incluir varios elementos 
 
 | Atributo   | Descripción                                                                                                                                                                  |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ContentType | Opcional. Tipo MIME del archivo.                                                                                                                                         |
-| destination | Obligatorio. Una ruta de acceso sugerida para el archivo una vez cargado. Esta ruta de acceso es relativa a la dirección URL de destino del sitio de carga. El sitio de carga puede modificar este valor según sea necesario. |
-| extensión   | Opcional. La extensión de nombre de archivo del archivo.                                                                                                                               |
+| Contenttype | Opcional. Tipo MIME del archivo.                                                                                                                                         |
+| destination | Obligatorio. Ruta de acceso sugerida para el archivo una vez cargado. Esta ruta de acceso es relativa a la dirección URL de destino del sitio de carga. El sitio de carga puede modificar este valor según sea necesario. |
+| extensión   | Opcional. Extensión de nombre de archivo del archivo.                                                                                                                               |
 | id          | Obligatorio. Índice numérico del archivo.                                                                                                                                   |
 | tamaño        | Opcional. Tamaño del archivo, en bytes.                                                                                                                                    |
 | source      | Obligatorio. Ruta de acceso completa del sistema de archivos para el archivo.                                                                                                                            |
@@ -271,15 +271,15 @@ Describe un solo archivo que se va a copiar. Se pueden incluir varios elementos 
 
 | Elemento primario      | Elementos secundarios                                          |
 |---------------------|---------------------------------------------------------|
-| [FileList](#syntax) | [metadatos](#syntax), [post](#syntax), [cambiar tamaño](#syntax) |
+| [Filelist](#syntax) | [metadata](#syntax), [post ,](#syntax) [resize](#syntax) |
 
 
 
  
 
-## <a name="filelist"></a>FileList
+## <a name="filelist"></a>Filelist
 
-Contenedor de elementos que describen los archivos que se van a copiar. Varios elementos [FileList](#syntax) pueden estar contenidos en un único nodo [transfermanifest](#syntax) .
+Contenedor para los elementos que describen los archivos que se van a copiar. Varios [elementos filelist](#syntax) pueden estar contenidos en un único [nodo transfermanifest.](#syntax)
 
 ### <a name="syntax"></a>Sintaxis
 
@@ -321,7 +321,7 @@ Contenedor de elementos que describen los archivos que se van a copiar. Varios e
 
 ## <a name="folder"></a>folder
 
-Describe una carpeta en la que se almacenan los archivos. Varios elementos de [carpeta](#syntax) pueden estar contenidos en un único nodo de [folderList](#syntax) .
+Describe una carpeta en la que se almacenan los archivos. Varios [elementos de](#syntax) carpeta pueden estar contenidos en un único nodo de lista [de](#syntax) carpetas.
 
 ### <a name="syntax"></a>Sintaxis
 
@@ -343,7 +343,7 @@ Describe una carpeta en la que se almacenan los archivos. Varios elementos de [c
 
 | Atributo   | Descripción                                                                                                                                                                    |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| destination | Obligatorio. Una ruta de acceso sugerida para la carpeta una vez cargada. Esta ruta de acceso es relativa a la dirección URL de destino del sitio de carga. El sitio de carga puede modificar este valor según sea necesario. |
+| destination | Obligatorio. Ruta de acceso sugerida para la carpeta una vez cargada. Esta ruta de acceso es relativa a la dirección URL de destino del sitio de carga. El sitio de carga puede modificar este valor según sea necesario. |
 
 
 
@@ -363,7 +363,7 @@ Describe una carpeta en la que se almacenan los archivos. Varios elementos de [c
 
 ## <a name="folderlist"></a>folderlist
 
-Contenedor de elementos que describen los archivos que se van a copiar. Varios elementos [folderList](#syntax) pueden estar contenidos en un único nodo [transfermanifest](#syntax) .
+Contenedor para los elementos que describen los archivos que se van a copiar. Varios [elementos folderlist](#syntax) pueden estar contenidos en un único [nodo transfermanifest.](#syntax)
 
 ### <a name="syntax"></a>Sintaxis
 
@@ -387,7 +387,7 @@ Ninguno.
 
 | Elemento primario              | Elementos secundarios    |
 |-----------------------------|-------------------|
-| [transfermanifest](#syntax) | [directorio](#syntax) |
+| [transfermanifest](#syntax) | [Carpeta](#syntax) |
 
 
 
@@ -395,9 +395,9 @@ Ninguno.
 
 ## <a name="formdata"></a>formdata
 
-Describe datos de formulario codificados en HTML opcionales que se pueden transferir con los archivos. El servicio agrega este elemento si opta por cargar los archivos como una publicación de varias partes. Los datos del formulario, junto con información del elemento [post](#syntax) , se usan para crear el encabezado post.
+Describe los datos opcionales de formulario codificados en HTML que se pueden transferir con los archivos. El servicio agrega este elemento si decide cargar los archivos como una publicación de varias partes. Los datos del formulario, junto con la información del [elemento post,](#syntax) se usan para crear el encabezado de publicación.
 
-Varios elementos [formData](#syntax) pueden estar contenidos en un único nodo [uploadinfo](#syntax) .
+Varios [elementos formdata](#syntax) pueden estar contenidos en un único [nodo uploadinfo.](#syntax)
 
 ### <a name="syntax"></a>Sintaxis
 
@@ -439,7 +439,7 @@ Varios elementos [formData](#syntax) pueden estar contenidos en un único nodo [
 
 ## <a name="htmlui"></a>htmlui
 
-Dirección URL de la página HTML del servidor que se va a mostrar cuando se cierre el asistente. Este elemento crea una entrada de página web favorita en el menú **Favoritos** si el elemento [favorito](#syntax) está ausente y se especifica el nombre descriptivo del sitio de carga.
+Dirección URL de la página HTML del lado servidor que se mostrará cuando se cierre el asistente. Este elemento crea una entrada  de página [](#syntax) web favorita en el menú Favoritos si el elemento favorito está ausente y se especifica el nombre descriptivo del sitio de carga.
 
 ### <a name="syntax"></a>Sintaxis
 
@@ -461,7 +461,7 @@ Dirección URL de la página HTML del servidor que se va a mostrar cuando se cie
 
 | Atributo | Descripción                                                                          |
 |-----------|--------------------------------------------------------------------------------------|
-| href      | Obligatorio. Dirección URL de la página HTML del servidor que se va a mostrar cuando se cierre el asistente. |
+| href      | Obligatorio. Dirección URL de la página HTML del lado servidor que se mostrará cuando se cierre el asistente. |
 
 
 
@@ -481,7 +481,7 @@ Dirección URL de la página HTML del servidor que se va a mostrar cuando se cie
 
 ## <a name="imageproperty"></a>imageproperty
 
-Especifica una propiedad de imagen relacionada con el archivo. Varios elementos [imageproperty](#syntax) pueden estar contenidos en un solo nodo de [metadatos](#syntax) .
+Especifica una propiedad de imagen relacionada con el archivo. Varios [elementos imageproperty](#syntax) pueden estar contenidos en un único nodo [de metadatos.](#syntax)
 
 ### <a name="syntax"></a>Sintaxis
 
@@ -503,7 +503,7 @@ Especifica una propiedad de imagen relacionada con el archivo. Varios elementos 
 
 | Atributo | Descripción                                  |
 |-----------|----------------------------------------------|
-| id        | Obligatorio. IDENTIFICADOR de la propiedad determinada. |
+| id        | Obligatorio. Identificador de la propiedad concreta. |
 
 
 
@@ -523,7 +523,7 @@ Especifica una propiedad de imagen relacionada con el archivo. Varios elementos 
 
 ## <a name="metadata"></a>metadata
 
-Contenedor de elementos y texto que define los metadatos para el archivo determinado. Varios elementos de [metadatos](#syntax) pueden estar contenidos en un solo nodo de [archivo](#syntax) .
+Contenedor para elementos y texto que define metadatos para el archivo concreto. Varios [elementos de](#syntax) metadatos pueden estar contenidos en un único nodo [de](#syntax) archivo.
 
 ### <a name="syntax"></a>Sintaxis
 
@@ -555,7 +555,7 @@ Ninguno.
 
 ## <a name="netplace"></a>netplace
 
-Define el destino de un lugar de red que se crea en **mis sitios de red** cuando se completa la carga. La creación de un lugar de red se puede evitar a través del método [**IPublishingWizard:: Initialize**](/windows/desktop/api/Shobjidl/nf-shobjidl-ipublishingwizard-initialize) .
+Define el destino de un lugar de red que se crea en **Mis lugares de red** cuando se completa la carga. La creación de un lugar de red se puede impedir mediante el [**método IPublishingWizard::Initialize.**](/windows/desktop/api/Shobjidl/nf-shobjidl-ipublishingwizard-initialize)
 
 ### <a name="syntax"></a>Sintaxis
 
@@ -579,9 +579,9 @@ Define el destino de un lugar de red que se crea en **mis sitios de red** cuando
 
 | Atributo | Descripción                                                                                     |
 |-----------|-------------------------------------------------------------------------------------------------|
-| comment   | Obligatorio. El comentario que se muestra para el icono de ubicación de red cuando el cursor se sitúa sobre él.         |
-| href      | Obligatorio. Dirección URL de la entrada de ubicación de red.                                                   |
-| name      | Necesario. Nombre del icono de ubicación de red que aparece en la carpeta **mis sitios de red** . |
+| comment   | Obligatorio. Comentario que se muestra para el icono de lugar de red cuando el cursor se encuentra sobre él.         |
+| href      | Obligatorio. Dirección URL de la entrada de la posición de red.                                                   |
+| name      | Necesario. Nombre del icono de lugar de red que aparece en la **carpeta Mis lugares de** red. |
 
 
 
@@ -601,7 +601,7 @@ Define el destino de un lugar de red que se crea en **mis sitios de red** cuando
 
 ## <a name="post"></a>post
 
-Dirección URL a la que se debe exponer el archivo. El servicio agrega este elemento cuando la transferencia se realiza como una publicación de varias partes y, con [formData](#syntax), se usa para compilar el encabezado post. Si el servicio elige realizar la transferencia de archivos mediante World Wide Web la creación y control de versiones distribuidas (WebDAV), no debería agregar este elemento. Varios elementos [post](#syntax) pueden estar contenidos en un solo nodo [File](#syntax) .
+Dirección URL en la que se debe publicar el archivo. El servicio agrega este elemento cuando la transferencia se realiza como una publicación de varias partes y, con [formdata,](#syntax)se usa para compilar el encabezado post. Si el servicio decide realizar la transferencia de archivos mediante World Wide Web Distributed Authoring and Versioning (WebDAV), no debe agregar este elemento. Varios [elementos post](#syntax) pueden estar contenidos en un único nodo [de](#syntax) archivo.
 
 ### <a name="syntax"></a>Sintaxis
 
@@ -625,7 +625,7 @@ Dirección URL a la que se debe exponer el archivo. El servicio agrega este elem
 
 | Atributo | Descripción                                                                    |
 |-----------|--------------------------------------------------------------------------------|
-| nombreDeArchivo  | Opcional. Nombre del archivo expuesto.                                   |
+| nombreDeArchivo  | Opcional. Nombre de archivo del archivo publicado.                                   |
 | href      | Obligatorio. Dirección URL de la carpeta de destino.                                   |
 | name      | Necesario. Define el nombre de datos del formulario asociado a esta sección de la publicación. |
 
@@ -647,7 +647,7 @@ Dirección URL a la que se debe exponer el archivo. El servicio agrega este elem
 
 ## <a name="resize"></a>resize
 
-Define el escalado y la recompresión de un archivo de imagen en formato JPEG. Si el archivo de código fuente ya está en formato JPEG y es menor o igual que el ancho y el alto especificados, no se ajusta. Si el archivo de origen no es un archivo JPEG, se convierte. Se puede evitar el escalado, la recompresión y la conversión del archivo mediante el método [**IPublishingWizard:: Initialize**](/windows/desktop/api/Shobjidl/nf-shobjidl-ipublishingwizard-initialize) . Varios elementos de [tamaño](#syntax) pueden estar contenidos en un solo nodo de [archivo](#syntax) .
+Define el escalado y la recompresión de un archivo de imagen en formato JPEG. Si el archivo de origen ya está en formato JPEG y es menor o igual que el ancho y alto especificados, no tiene tamaño. Si el archivo de origen no es un archivo JPEG, se convierte. El escalado, la recompresión y la conversión del archivo se pueden evitar mediante el [**método IPublishingWizard::Initialize.**](/windows/desktop/api/Shobjidl/nf-shobjidl-ipublishingwizard-initialize) Varios [elementos de](#syntax) cambio de tamaño pueden estar contenidos en un único nodo [de](#syntax) archivo.
 
 ### <a name="syntax"></a>Sintaxis
 
@@ -671,9 +671,9 @@ Define el escalado y la recompresión de un archivo de imagen en formato JPEG. S
 
 | Atributo | Descripción                                                                                                                                                         |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| serie        | Obligatorio. Ancho de la imagen, en píxeles, después de la carga. Si este valor es 0, **CX** se calcula a partir del valor **CY** para conservar las dimensiones relativas.  |
-| cy        | Obligatorio. Alto de la imagen, en píxeles, después de la carga. Si este valor es 0, **CY** se calcula a partir del valor de **CX** para conservar las dimensiones relativas. |
-| calidad   | Obligatorio. El valor de calidad JPEG, entre 0 y 100, y 100 es la calidad más alta.                                                                            |
+| Cx        | Obligatorio. Ancho de la imagen, en píxeles, después de la carga. Si este valor es 0, **cx** se calcula a partir del valor **cy** para conservar las dimensiones relativas.  |
+| cy        | Obligatorio. Alto de la imagen, en píxeles, después de la carga. Si este valor es 0, **cy** se calcula a partir del **valor cx** para conservar las dimensiones relativas. |
+| calidad   | Obligatorio. El valor de calidad JPEG, entre 0 y 100, siendo 100 la calidad más alta.                                                                            |
 
 
 
@@ -693,7 +693,7 @@ Define el escalado y la recompresión de un archivo de imagen en formato JPEG. S
 
 ## <a name="successpage"></a>successpage
 
-Especifica la página HTML del lado servidor que se va a mostrar si la carga se realiza correctamente.
+Especifica la página HTML del lado servidor que se mostrará si la carga se realiza correctamente.
 
 ### <a name="syntax"></a>Sintaxis
 
@@ -715,7 +715,7 @@ Especifica la página HTML del lado servidor que se va a mostrar si la carga se 
 
 | Atributo | Descripción                                                                            |
 |-----------|----------------------------------------------------------------------------------------|
-| href      | Obligatorio. Dirección URL de la página HTML del servidor que se va a mostrar si la carga se realiza correctamente. |
+| href      | Obligatorio. Dirección URL de la página HTML del lado servidor que se va a mostrar si la carga se realiza correctamente. |
 
 
 
@@ -735,7 +735,7 @@ Especifica la página HTML del lado servidor que se va a mostrar si la carga se 
 
 ## <a name="target"></a>Destino
 
-Una carpeta de destino especificada en el formato UNC (Convención de nomenclatura universal) o como servidor WebDAV. El servicio agrega este destino para especificar una carpeta de destino si la transferencia utiliza un protocolo WebDAV o de sistema de archivos. Si el servicio elige realizar la transferencia de archivos como una publicación de varias partes, no debe agregar este elemento.
+Una carpeta de destino especificada en formato convención de nomenclatura universal (UNC) o como servidor WebDAV. El servicio agrega este destino para especificar una carpeta de destino si la transferencia usa un protocolo webDAV o del sistema de archivos. Si el servicio decide realizar la transferencia de archivos como una publicación de varias partes, no debe agregar este elemento.
 
 ### <a name="syntax"></a>Sintaxis
 
@@ -757,7 +757,7 @@ Una carpeta de destino especificada en el formato UNC (Convención de nomenclatu
 
 | Atributo | Descripción                                                                                                                 |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------|
-| href      | Obligatorio. Dirección URL de la carpeta de destino. Use el formulario **https://** para WebDAV o el formulario de **\\ \\ \\ recurso compartido de servidor** para UNC. |
+| href      | Obligatorio. Dirección URL de la carpeta de destino. Use el **https://** para WebDAV o el formulario **\\ \\ de recurso \\ compartido de** servidor para UNC. |
 
 
 
@@ -801,7 +801,7 @@ Ninguno.
 
 | Elemento primario | Elementos secundarios                                                    |
 |----------------|-------------------------------------------------------------------|
-| Ninguno           | [FileList](#syntax), [folderList](#syntax), [uploadinfo](#syntax) |
+| Ninguno           | [filelist,](#syntax) [folderlist,](#syntax) [uploadinfo](#syntax) |
 
 
 
@@ -809,7 +809,7 @@ Ninguno.
 
 ## <a name="uploadinfo"></a>uploadinfo
 
-Contenedor de elementos que proporcionan información del sitio de carga utilizado en la transacción. Varios elementos [uploadinfo](#syntax) pueden estar contenidos en un único nodo [transfermanifest](#syntax) .
+Contenedor para elementos que proporcionan información del sitio de carga utilizado en la transacción. Varios [elementos uploadinfo](#syntax) pueden estar contenidos en un único [nodo transfermanifest.](#syntax)
 
 ### <a name="syntax"></a>Sintaxis
 
@@ -831,7 +831,7 @@ Contenedor de elementos que proporcionan información del sitio de carga utiliza
 
 | Atributo    | Descripción                                                                 |
 |--------------|-----------------------------------------------------------------------------|
-| FriendlyName | Obligatorio. Un nombre descriptivo para el sitio web que se muestra en el asistente. |
+| friendlyname | Obligatorio. Nombre descriptivo del sitio web que se muestra en el asistente. |
 
 
 
@@ -843,7 +843,7 @@ Contenedor de elementos que proporcionan información del sitio de carga utiliza
 
 | Elemento primario              | Elementos secundarios                                                                                                                                           |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [transfermanifest](#syntax) | [cancelledpage](#syntax), [failurepage](#syntax), [Favorite](#syntax), [htmlui](#syntax), [netplace](#syntax), [successpage](#syntax), [target](#syntax) |
+| [transfermanifest](#syntax) | [cancelledpage](#syntax), [failurepage](#syntax), [favorite](#syntax), [htmlui](#syntax), [netplace](#syntax), [successpage](#syntax), [target](#syntax) |
 
 
 

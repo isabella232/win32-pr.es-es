@@ -43,16 +43,16 @@ HRESULT UpdateSkinnedMesh(
 
 <dl> <dt>
 
-*pTransforms* \[ En\]
+*pTransformTransforms* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Matriz de transformación de transformaciones de transformaciones.
+Matriz de transformación de los tejidos.
 
 </dd> <dt>
 
-*pIonalInvTransposeTransforms* \[ En\]
+*pTransformInvTransposeTransforms* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
@@ -83,11 +83,11 @@ Puntero al búfer que contiene los vértices de destino.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentarios
 
-Cuando se usa para la máscara de vértices con dos elementos de posición, este método desasocia el segundo elemento de posición con el inverso del pórtico en lugar del propio pórtico.
+Cuando se usa para la máscara de vértices con dos elementos de posición, este método desasoje el segundo elemento de posición con el inverso del pórtico en lugar del propio aspo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,7 +100,7 @@ Cuando se usa para la máscara de vértices con dos elementos de posición, este
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

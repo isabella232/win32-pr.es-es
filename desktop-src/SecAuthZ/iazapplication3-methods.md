@@ -26,7 +26,7 @@ La [**interfaz IAzApplication3**](/windows/desktop/api/Azroles/nn-azroles-iazapp
 -   [**OpenRoleAssignment (método)**](/windows/desktop/api/Azroles/nf-azroles-iazapplication3-openroleassignment)
 -   [**OpenRoleDefinition (método)**](/windows/desktop/api/Azroles/nf-azroles-iazapplication3-openroledefinition)
 -   [**OpenScope2 (método)**](/windows/desktop/api/Azroles/nf-azroles-iazapplication3-openscope2)
--   [**Método ScopeExists**](/windows/desktop/api/Azroles/nf-azroles-iazapplication3-scopeexists)
+-   [**ScopeExists (método)**](/windows/desktop/api/Azroles/nf-azroles-iazapplication3-scopeexists)
 
  
 

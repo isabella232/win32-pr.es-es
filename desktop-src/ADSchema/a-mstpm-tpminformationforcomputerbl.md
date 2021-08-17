@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TPM-TPM-Information-for-Computer-BL
-description: Este atributo vincula un objeto de TPM a los objetos de equipo asociados a él.
+title: Atributo ms-TPM-Tpm-Information-For-Computer-BL
+description: Este atributo vincula un objeto TPM a los objetos de equipo asociados a él.
 ms.assetid: 75f3d39a-afea-459d-a105-c1eb24066578
 ms.tgt_platform: multiple
 keywords:
-- Microsoft-TPM-TPM-Information-for-Computer-BL atributo AD Schema
-- msTPM-TpmInformationForComputerBL atributo AD Schema
+- Esquema de AD del atributo ms-TPM-Tpm-Information-For-Computer-BL
+- Esquema de AD del atributo msTPM-TpmInformationForComputerBL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 298f6b11ddfbad300585da45cfac96e9ccf4350d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2da1f274507aa590bb894246927c09d2e94039dc6f8a125612bc48df1a699f02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117837919"
 ---
-# <a name="ms-tpm-tpm-information-for-computer-bl-attribute"></a>atributo MS-TPM-TPM-Information-for-Computer-BL
+# <a name="ms-tpm-tpm-information-for-computer-bl-attribute"></a>Atributo ms-TPM-Tpm-Information-For-Computer-BL
 
-Este atributo vincula un objeto de TPM a los objetos de equipo asociados a él.
+Este atributo vincula un objeto TPM a los objetos de equipo asociados a él.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-TPM-TPM-Information-for-Computer-BL  |
-| Nombre para mostrar de LDAP | msTPM-TpmInformationForComputerBL       |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-TPM-Tpm-Information-For-Computer-BL  |
+| Ldap-Display-Name | msTPM-TpmInformationForComputerBL       |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2110                 |
-| System-ID-GUID    | 14fa84c9-8ecd-4348-bc91-6d3ced472ab7    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 14fa84c9-8ecd-4348-bc91-6d3ced472ab7    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -48,15 +48,15 @@ Este atributo vincula un objeto de TPM a los objetos de equipo asociados a él.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | 2183         |
+| Id. de vínculo                | 2183         |
 | MAPI-Id                | \-           |
-| System-Only            | True         |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Verdadero         |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

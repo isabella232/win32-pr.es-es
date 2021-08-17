@@ -1,5 +1,5 @@
 ---
-description: Implementa las interfaces IAxiService y IeAxiServiceCallback.
+description: Implementa las interfaces IAxiService e IeAxiServiceCallback.
 ms.assetid: 39f2ee3a-d4fd-4091-acd6-3d6b715bea75
 title: Objeto CIeAxiInstallerService
 ms.topic: reference
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: b5ae7ec2a2c904a523f3388fa08a3bf2e44fec9d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8e96600762db414fa93316098d5ba87dabfbc3138f516d3d69f1740d0d33d2b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783091"
 ---
 # <a name="cieaxiinstallerservice-object"></a>Objeto CIeAxiInstallerService
 
-El objeto **CIeAxiInstallerService** implementa las interfaces [**IAxiService**](ieaxiservice.md) y [**IeAxiServiceCallback**](ieaxiservicecallback.md) .
+El **objeto CIeAxiInstallerService** implementa las interfaces [**IAxiService**](ieaxiservice.md) e [**IeAxiServiceCallback.**](ieaxiservicecallback.md)
 
-Este objeto no se declara en un encabezado público. Las aplicaciones deben definirla. El siguiente fragmento del lenguaje de definición de interfaz (IDL) describe este objeto, incluido su CLSID.
+Este objeto no se declara en un encabezado público. Las aplicaciones deben definirla por sí mismas. El siguiente fragmento del lenguaje de definición de interfaz (IDL) describe este objeto, incluido su CLSID.
 
 ``` syntax
 [
@@ -43,12 +43,12 @@ Este objeto no se declara en un encabezado público. Las aplicaciones deben defi
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows Vista Ultimate \[ solo aplicaciones de escritorio\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista \[ Ultimate\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                 |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

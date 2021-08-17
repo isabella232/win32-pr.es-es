@@ -1,12 +1,12 @@
 ---
-title: Método SetClientProperty de la clase Win32_TSClientSetting
-description: El método SetClientProperty establece la propiedad LPTPortMapping, COMPortMapping, AudioMapping, ClipboardMapping, DriveMapping o WindowsPrinterMapping para la clase.
+title: Método SetClientProperty de la Win32_TSClientSetting clase
+description: El método SetClientProperty establece la propiedad LPTPortMapping, COMPortMapping, AudioMapping, ClipboardMapping, DriveMapping o WindowsPrinterMapping para la clase .
 ms.assetid: a8ad922f-d768-4708-9a67-c6b00580baed
 ms.tgt_platform: multiple
 keywords:
 - Método SetClientProperty Servicios de Escritorio remoto
-- Método SetClientProperty Servicios de Escritorio remoto, clase Win32_TSClientSetting
-- Win32_TSClientSetting de clase Servicios de Escritorio remoto, método SetClientProperty
+- Método SetClientProperty Servicios de Escritorio remoto , Win32_TSClientSetting clase
+- Win32_TSClientSetting clase Servicios de Escritorio remoto , método SetClientProperty
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a89bfdfd7c7f2c4b23f76b50ab671d74541f9dbe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 017a771022e0f5edc7d4abe22501fc8dfadc006e01ed2642f95f9c39f101eef8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118127021"
 ---
-# <a name="setclientproperty-method-of-the-win32_tsclientsetting-class"></a>Método SetClientProperty de la \_ clase TSClientSetting de Win32
+# <a name="setclientproperty-method-of-the-win32_tsclientsetting-class"></a>Método SetClientProperty de la clase \_ TSClientSetting de Win32
 
-El método **SetClientProperty** establece la **propiedad LPTPortMapping**, **COMPortMapping**, **AudioMapping**, **ClipboardMapping**, **DriveMapping** o **WindowsPrinterMapping** para la clase.
+El **método SetClientProperty** establece la propiedad **LPTPortMapping**, **COMPortMapping**, **AudioMapping**, **ClipboardMapping**, **DriveMapping** o **WindowsPrinterMapping** para la clase .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ uint32 SetClientProperty(
 
 <dl> <dt>
 
-*NombreDePropiedad* \[ de\]
+*PropertyName* \[ En\]
 </dt> <dd>
 
 Especifica la propiedad de cliente que el método está estableciendo.
@@ -58,7 +58,7 @@ Especifica la propiedad de cliente que el método está estableciendo.
 
 </dt> <dd>
 
-El método está estableciendo la propiedad **AudioMapping** .
+El método establece la **propiedad AudioMapping.**
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ El método está estableciendo la propiedad **AudioMapping** .
 
 </dt> <dd>
 
-El método está estableciendo la propiedad **ClipboardMapping** .
+El método establece la **propiedad ClipboardMapping.**
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ El método está estableciendo la propiedad **ClipboardMapping** .
 
 </dt> <dd>
 
-El método está estableciendo la propiedad **COMPortMapping** .
+El método establece la **propiedad COMPortMapping.**
 
 </dd> <dt>
 
@@ -91,7 +91,7 @@ El método está estableciendo la propiedad **COMPortMapping** .
 
 </dt> <dd>
 
-El método está estableciendo la propiedad **DriveMapping** .
+El método establece la **propiedad DriveMapping.**
 
 </dd> <dt>
 
@@ -102,7 +102,7 @@ El método está estableciendo la propiedad **DriveMapping** .
 
 </dt> <dd>
 
-El método está estableciendo la propiedad **LPTPortMapping** .
+El método establece la **propiedad LPTPortMapping.**
 
 </dd> <dt>
 
@@ -113,7 +113,7 @@ El método está estableciendo la propiedad **LPTPortMapping** .
 
 </dt> <dd>
 
-El método está estableciendo la propiedad **PNPRedirection** .
+El método establece la **propiedad PNPRedirection.**
 
 </dd> <dt>
 
@@ -124,25 +124,25 @@ El método está estableciendo la propiedad **PNPRedirection** .
 
 </dt> <dd>
 
-El método está estableciendo la propiedad **WindowsPrinterMapping** .
+El método establece la **propiedad WindowsPrinterMapping.**
 
 </dd> </dl> </dd> <dt>
 
-*Valor* \[ de de\]
+*Valor* \[ En\]
 </dt> <dd>
 
-Valor que indica si se debe habilitar o deshabilitar la propiedad especificada por el parámetro *PropertyName* .
+Valor que indica si se debe habilitar o deshabilitar la propiedad especificada por el *parámetro PropertyName.*
 
 <dt>
 
 <span id="0"></span>
 
-<span id="0"></span>**0,1**
+<span id="0"></span>**0**
 
 
 </dt> <dd>
 
-Deshabilite la propiedad.
+Deshabilite la propiedad .
 
 </dd> <dt>
 
@@ -153,17 +153,17 @@ Deshabilite la propiedad.
 
 </dt> <dd>
 
-Habilite la propiedad.
+Habilite la propiedad .
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI. Consulte [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores. El método devuelve un error si la propiedad de cliente especificada no está bajo el control de directiva de grupo o si la configuración de la propiedad no es válida para la invalidación por parte del servidor.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores. El método devuelve un error si la propiedad de cliente especificada no está bajo control de directiva de grupo o si la configuración de propiedad no es apta para su invalidación por parte del servidor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -173,8 +173,8 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 

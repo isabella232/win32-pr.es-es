@@ -1,9 +1,9 @@
 ---
-title: Username (elemento) (TLS)
-description: Obtenga información sobre el elemento username. Este elemento captura el nombre de usuario que se va a enviar en la EAP-Identity respuesta.
+title: Elemento Username (TLS)
+description: Obtenga información sobre el elemento Username. Este elemento captura el nombre de usuario que se va a enviar en la EAP-Identity respuesta.
 ms.assetid: dda4a7dd-36ba-418d-9b26-2818ef20854d
 keywords:
-- Username (elemento) EAPHost
+- Elemento EAPHost del nombre de usuario
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2975b425bc760979b33d83182d94469532944e46
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 6748ac8c352540d2288cf3bf3c790004d832ba47961fbc7b9e8211fa712ccb6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105705027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117720124"
 ---
-# <a name="username-element-tls"></a>Username (elemento) (TLS)
+# <a name="username-element-tls"></a>Elemento Username (TLS)
 
-El elemento **username** captura el nombre de usuario que se va a enviar en la EAP-Identity respuesta.
+El **elemento Username** captura el nombre de usuario que se va a enviar en la EAP-Identity respuesta.
 
-Si falta el elemento **username** , EAP-TLS usa el nombre del certificado al que se hace referencia en el elemento [**UserCert**](eaptlsuserpropertiesv1schema-usercert-eaptype-element.md) .
+Si el **elemento Username** no está presente, EAP-TLS usa el nombre del certificado al que se hace referencia en el [**elemento UserCert.**](eaptlsuserpropertiesv1schema-usercert-eaptype-element.md)
 
 ``` syntax
 <xs:element name="Username"
@@ -37,10 +37,10 @@ Si falta el elemento **username** , EAP-TLS usa el nombre del certificado al que
 
 
 
-| Role | Versiones mínimas admitidas del sistema operativo |
+| Rol | Versiones mínimas del sistema operativo admitidas |
 |------|-------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

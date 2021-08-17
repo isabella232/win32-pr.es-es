@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_DecimalValue
-description: Identifica la propiedad \_ PKEY \_ DecimalValue de la interfaz de usuario.
+description: Identifica la propiedad \_ DecimalValue de PKEY \_ de la interfaz de usuario.
 ms.assetid: 1bfa99c2-a31c-4524-9d1c-1b320e97c41a
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118201601"
 ---
 # <a name="ui_pkey_decimalvalue"></a>UI \_ PKEY \_ DecimalValue
 
-Identifica la propiedad \_ PKEY \_ DecimalValue de la interfaz de usuario.
+Identifica la propiedad \_ DecimalValue de PKEY \_ de la interfaz de usuario.
 
 ```
 propertyDescription

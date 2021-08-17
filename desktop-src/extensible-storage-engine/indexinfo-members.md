@@ -1,27 +1,27 @@
 ---
-description: 'Más información acerca de: miembros de IndexInfo'
-title: Miembros de IndexInfo
+description: 'Más información sobre: Miembros de IndexInfo'
+title: Miembros IndexInfo
 TOCTitle: IndexInfo members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.IndexInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.indexinfo_members(v=EXCHG.10)
 ms:contentKeyID: 55103271
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: abda2eab4a258c5bdc32c77132ac749af31be450
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f1ba99d4c42ab32fc7f2248dc069f24700a670fa6158fe17a7edca24ca8db7f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117706284"
 ---
-# <a name="indexinfo-members"></a>Miembros de IndexInfo
+# <a name="indexinfo-members"></a>Miembros IndexInfo
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Información sobre un índice esent. Esta no es una clase de interoperabilidad, pero la usan los métodos auxiliares de metadatos.
+Información sobre un índice de esent. No se trata de una clase de interoperabilidad, pero la usan los métodos auxiliares de metadatos.
 
-El tipo [IndexInfo](./indexinfo-class.md) expone los siguientes miembros.
+El [tipo IndexInfo](./indexinfo-class.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -37,17 +37,17 @@ El tipo [IndexInfo](./indexinfo-class.md) expone los siguientes miembros.
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350908(v=exchg.10).md">CompareOptions</a></td>
-<td>Obtiene el CompareOptions del índice.</td>
+<td>Obtiene compareOptions para el índice.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350921(v=exchg.10).md">CultureInfo</a></td>
-<td>Obtiene el objeto CultureInfo por el que se ordena el índice.</td>
+<td>Obtiene cultureInfo por el que se ordena el índice.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350907(v=exchg.10).md">Entradas</a></td>
-<td>Obtiene el número de entradas del índice. Este valor no es actual y solo se actualiza mediante API. JetComputeStats.</td>
+<td>Obtiene el número de entradas del índice. Este valor no es actual y solo lo actualiza Api.JetComputeStats.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -62,7 +62,7 @@ El tipo [IndexInfo](./indexinfo-class.md) expone los siguientes miembros.
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350926(v=exchg.10).md">Claves</a></td>
-<td>Obtiene el número de claves únicas del índice. Este valor no es actual y solo se actualiza mediante API. JetComputeStats.</td>
+<td>Obtiene el número de claves únicas del índice. Este valor no es actual y solo lo actualiza Api.JetComputeStats.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -72,7 +72,7 @@ El tipo [IndexInfo](./indexinfo-class.md) expone los siguientes miembros.
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn350928(v=exchg.10).md">Páginas</a></td>
-<td>Obtiene el número de páginas del índice. Este valor no es actual y solo se actualiza mediante API. JetComputeStats.</td>
+<td>Obtiene el número de páginas del índice. Este valor no es actual y solo lo actualiza Api.JetComputeStats.</td>
 </tr>
 </tbody>
 </table>
@@ -98,7 +98,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -108,7 +108,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -119,7 +119,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn350905(v=exchg.10).md">ToString</a></td>
-<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el <a href="dn350919(v=exchg.10).md">IndexInfo</a>actual. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>).</td>
+<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el <a href="dn350919(v=exchg.10).md">objeto IndexInfo actual.</a> (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -131,6 +131,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[Clase IndexInfo](./indexinfo-class.md)
+[IndexInfo (clase)](./indexinfo-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

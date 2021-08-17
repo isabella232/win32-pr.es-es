@@ -1,7 +1,7 @@
 ---
-description: El método IncremementPinVersion incrementa el número de versión en el conjunto de PIN.
+description: El método IncremementPinVersion incrementa el número de versión en el conjunto de pines.
 ms.assetid: e1b3ec33-104d-4a12-9b11-f8bea09690a7
-title: Método CBaseFilter. IncrementPinVersion (Amfilter. h)
+title: Método CBaseFilter.IncrementPinVersion (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 53e66ccd5bdd34c4767001403439f4372ff2938a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 01c82a5f506673b6145b468004bbc900d3acdb051f525df20930344137618e72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117824126"
 ---
-# <a name="cbasefilterincrementpinversion-method"></a>CBaseFilter. IncrementPinVersion, método
+# <a name="cbasefilterincrementpinversion-method"></a>Método CBaseFilter.IncrementPinVersion
 
-El `IncremementPinVersion` método incrementa el número de versión en el conjunto de PIN.
+El `IncremementPinVersion` método incrementa el número de versión en el conjunto de pines.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método incrementa la variable miembro [**CBaseFilter:: m \_ PinVersion**](cbasefilter-m-pinversion.md) . Si el filtro crea o destruye dinámicamente los pin, llame a este método cada vez que cambien los pin.
+Este método incrementa la variable [**miembro CBaseFilter::m \_ PinVersion.**](cbasefilter-m-pinversion.md) Si el filtro crea o destruye de forma dinámica los pines, llame a este método cada vez que cambien.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,16 +54,16 @@ Este método incrementa la variable miembro [**CBaseFilter:: m \_ PinVersion**](
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseFilter**](cbasefilter.md)
+[**CBaseFilter (clase)**](cbasefilter.md)
 </dt> <dt>
 
 [**CBaseFilter::GetPinVersion**](cbasefilter-getpinversion.md)

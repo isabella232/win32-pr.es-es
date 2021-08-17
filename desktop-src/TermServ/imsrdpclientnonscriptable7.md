@@ -1,10 +1,10 @@
 ---
 title: Interfaz IMsRdpClientNonScriptable7
-description: Proporciona acceso a las propiedades que no admiten scripts de la sesión remota de un cliente en el control ActiveX Escritorio remoto. Deriva de la interfaz IMsRdpClientNonScriptable6.
+description: Proporciona acceso a las propiedades noscriptables de la sesión remota de un cliente en el control Escritorio remoto ActiveX cliente. Deriva de la interfaz IMsRdpClientNonScriptable6.
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable7, descrito
+- Interfaz IMsRdpClientNonScriptable7 Servicios de Escritorio remoto
+- Interfaz IMsRdpClientNonScriptable7 Servicios de Escritorio remoto , descrito
 topic_type:
 - apiref
 api_name:
@@ -15,43 +15,43 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 8becf3bbf66ea18b2df87069ba38bab44c56db70
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 01065ef73d1a23f0ac9416a39c4af74042c883e3b4d7f596cb95f6c01043f662
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "105720244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117941112"
 ---
 # <a name="imsrdpclientnonscriptable7-interface"></a>Interfaz IMsRdpClientNonScriptable7
 
-Proporciona acceso a las propiedades que no admiten scripts de la sesión remota de un cliente en el control ActiveX Escritorio remoto. Deriva de la interfaz [**IMsRdpClientNonScriptable6**](imsrdpclientnonscriptable6.md) . Solo se puede tener acceso a los métodos de esta interfaz a través de vtable; no están disponibles para los clientes con scripts.
+Proporciona acceso a las propiedades noscriptables de la sesión remota de un cliente en el control Escritorio remoto ActiveX cliente. Deriva de la [**interfaz IMsRdpClientNonScriptable6.**](imsrdpclientnonscriptable6.md) Solo se puede acceder a los métodos de esta interfaz a través de la tabla virtual; no están disponibles para su uso en clientes que pueden incluir scripts.
 
 Una instancia de esta interfaz se obtiene llamando a [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) en el objeto [**IMsTscAx**](imstscax-interface.md) y pasando **IID \_ IMsRdpClientNonScriptable7**.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IMsRdpClientNonScriptable7** hereda de [**IMsRdpClientNonScriptable6**](imsrdpclientnonscriptable5.md). **IMsRdpClientNonScriptable7** también tiene estos tipos de miembros:
+La **interfaz IMsRdpClientNonScriptable7** hereda de [**IMsRdpClientNonScriptable6**](imsrdpclientnonscriptable5.md). **IMsRdpClientNonScriptable7** también tiene estos tipos de miembros:
 
 - [Métodos](#methods)
 - [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IMsRdpClientNonScriptable7** tiene estos métodos.
+La **interfaz IMsRdpClientNonScriptable7** tiene estos métodos.
 
 
 | Método            | Descripción              |
 |:------------------|:-------------------------|
-| [**DisableDpiCursorScalingForProcess**](imsrdpclientnonscriptable7-disabledpicursorscalingforprocess.md)       |  Deshabilita el escalado local del cursor del mouse recibido del servidor, asegurándose de que la forma del cursor se represente correctamente sin modificarla.                   |
+| [**DisableDpiCursorScalingForProcess**](imsrdpclientnonscriptable7-disabledpicursorscalingforprocess.md)       |  Deshabilita el escalado local del cursor del mouse recibido del servidor, lo que garantiza que la forma del cursor se represente correctamente sin modificaciones.                   |
 
 ### <a name="properties"></a>Propiedades
 
-La interfaz **IMsRdpClientNonScriptable7** tiene estas propiedades.
+La **interfaz IMsRdpClientNonScriptable7** tiene estas propiedades.
 
 | Propiedad         | Tipo de acceso           | Descripción            |
 |:-----------------|:----------------------|:-----------------------|
-| [**CameraRedirConfigCollection**](imsrdpclientnonscriptable7-cameraredirconfigcollection.md)      | Solo lectura |  Obtiene la colección de cámaras (y las configuraciones asociadas) que están disponibles para la redirección.   |
-| [**Portapapeles**](imsrdpclientnonscriptable7-clipboard.md)                       | Solo lectura |    Obtiene el controlador del portapapeles que se usa para sincronizar los portapapeles locales y remotos si está habilitada la sincronización manual del portapapeles.    |
+| [**CameraRedirConfigCollection**](imsrdpclientnonscriptable7-cameraredirconfigcollection.md)      | Solo lectura |  Obtiene la colección de cámaras (y las configuraciones asociadas) que están disponibles para el redireccionamiento.   |
+| [**Portapapeles**](imsrdpclientnonscriptable7-clipboard.md)                       | Solo lectura |    Obtiene el controlador del Portapapeles que se usa para sincronizar los Portapapeles locales y remotos si está habilitada la sincronización manual del Portapapeles.    |
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,22 +1,22 @@
 ---
-title: Propiedad MsRdpClientShell de IMsRdpClient5
-description: Recupera la interfaz de configuración de cliente con scripts IMsRdpClientShell.
+title: Propiedad MsRdpClient5 de IMsRdpClientShell
+description: Recupera la interfaz de configuración de cliente que admite scripts IMsRdpClientShell.
 ms.assetid: cc56cec4-779d-4b51-8e94-ae0dd9bae997
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad MsRdpClientShell
-- Propiedad MsRdpClientShell Servicios de Escritorio remoto, interfaz IMsRdpClient5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient5, propiedad MsRdpClientShell
-- Propiedad MsRdpClientShell Servicios de Escritorio remoto, interfaz IMsRdpClient6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient6, propiedad MsRdpClientShell
-- Propiedad MsRdpClientShell Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient7, propiedad MsRdpClientShell
-- Propiedad MsRdpClientShell Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient8, propiedad MsRdpClientShell
-- Propiedad MsRdpClientShell Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient9, propiedad MsRdpClientShell
-- Propiedad MsRdpClientShell Servicios de Escritorio remoto, interfaz IMsRdpClient10
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient10, propiedad MsRdpClientShell
+- Propiedad MsRdpClientShell Servicios de Escritorio remoto
+- Propiedad MsRdpClientShell Servicios de Escritorio remoto , interfaz IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto , propiedad MsRdpClientShell
+- Propiedad MsRdpClientShell Servicios de Escritorio remoto , interfaz IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , propiedad MsRdpClientShell
+- Propiedad MsRdpClientShell Servicios de Escritorio remoto , interfaz IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad MsRdpClientShell
+- Propiedad MsRdpClientShell Servicios de Escritorio remoto , interfaz IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad MsRdpClientShell
+- Propiedad MsRdpClientShell Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad MsRdpClientShell
+- Propiedad MsRdpClientShell Servicios de Escritorio remoto , interfaz IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto , propiedad MsRdpClientShell
 topic_type:
 - apiref
 api_name:
@@ -38,16 +38,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46129dc4736b50e8b6a650cc7a59f9b238da56e2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f56b403bb5fd754e95786c2a1d4012ccbbacd3e103b1ee02fbf290ff05d30d3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117942047"
 ---
-# <a name="imsrdpclient5msrdpclientshell-property"></a>IMsRdpClient5:: MsRdpClientShell (propiedad)
+# <a name="imsrdpclient5msrdpclientshell-property"></a>Propiedad IMsRdpClient5::MsRdpClientShell
 
-Recupera la interfaz de configuración de cliente con scripts [**IMsRdpClientShell**](imsrdpclientshell.md).
+Recupera la interfaz de configuración de cliente que admite scripts [**IMsRdpClientShell**](imsrdpclientshell.md).
 
 Esta propiedad es de solo lectura.
 
@@ -64,23 +64,23 @@ HRESULT get_MsRdpClientShell(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Puntero a la interfaz [**IMsRdpClientShell**](imsrdpclientshell.md) .
+Puntero [**de interfaz IMsRdpClientShell.**](imsrdpclientshell.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpClient5 se define como 4eb5335b-6429-477d-B922-e06a28ecd8bf<br/>       |
+| IID<br/>                      | IID \_ IMsRdpClient5 se define como 4eb5335b-6429-477d-b922-e06a28ecd8bf<br/>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

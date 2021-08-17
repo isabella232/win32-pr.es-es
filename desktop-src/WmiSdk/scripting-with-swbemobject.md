@@ -1,5 +1,5 @@
 ---
-description: El objeto de scripting SWbemObject es el objeto WMI genérico, que define las propiedades y los métodos que se pueden utilizar independientemente del objeto WMI específico al que está enlazado el objeto SWbemObject.
+description: El objeto de scripting SWbemObject es el objeto WMI genérico, que define propiedades y métodos que se pueden usar independientemente del objeto WMI específico al que está enlazado el objeto SWbemObject.
 ms.assetid: 33252b49-00d4-4c43-8abe-9368ed82f34b
 ms.tgt_platform: multiple
 title: Scripting con SWbemObject
@@ -10,18 +10,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3ce9a48779b13f1b1917ad189b2297b60329ba04
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d6ba0cccca8fcd62af490aa91ab1cc965fdad4d3682d99a8fda52151135500ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117739701"
 ---
 # <a name="scripting-with-swbemobject"></a>Scripting con SWbemObject
 
-El objeto de scripting [**SWbemObject**](swbemobject.md) es el objeto WMI genérico, que define las propiedades y los métodos que se pueden utilizar independientemente del objeto WMI específico al que está enlazado el objeto **SWbemObject** . Todos los objetos de WMI, como una instancia [**del \_ proceso de Win32**](/windows/desktop/CIMWin32Prov/win32-process) o cualquier otra clase de datos de WMI, se representan mediante [**SWbemObject**](swbemobject.md) y pueden usar las propiedades y métodos comunes de **SWbemObject** además de sus propias propiedades y métodos.
+El objeto de scripting [**SWbemObject**](swbemobject.md) es el objeto WMI genérico, que define propiedades y métodos que se pueden usar independientemente del objeto WMI específico al que está enlazado el objeto **SWbemObject.** Todos los objetos WMI, como una instancia de [**Win32 \_ Process**](/windows/desktop/CIMWin32Prov/win32-process) o cualquier otra clase de datos WMI, se representan mediante [**SWbemObject**](swbemobject.md) y pueden usar las propiedades y métodos comunes **de SWbemObject** además de sus propias propiedades y métodos concretos.
 
-Por ejemplo, use el siguiente script para obtener todas las instancias de un [**\_ proceso de Win32**](/windows/desktop/CIMWin32Prov/win32-process) llamando al método [**SWbemObject \_ . instances**](swbemobject-instances-.md) . ClsobjProcess representa la definición de clase de **\_ proceso de Win32** y un [**SWbemObject**](swbemobject.md).
+Por ejemplo, use el siguiente script para obtener todas las instancias de un proceso [**win32 \_**](/windows/desktop/CIMWin32Prov/win32-process) llamando al [**método SWbemObject.Instances. \_**](swbemobject-instances-.md) clsobjProcess representa la definición de clase Process de **Win32 \_** y [**un objeto SWbemObject.**](swbemobject.md)
 
 
 ```VB
@@ -36,7 +36,7 @@ Next
 
 
 
-En el ejemplo siguiente se obtiene una instancia específica [**del \_ servicio Win32**](/windows/desktop/CIMWin32Prov/win32-service) que representa el servicio de alerta y la almacena en objAlerter. A continuación, puede llamar a métodos [**SWbemObject**](swbemobject.md) , como Wscript. echo ObjAlerter. Path \_ , o a los métodos definidos por la clase de datos, como Wscript. echo objAlerter. state. objAlerter que representa una instancia del servicio de Win32 \_ y un **SWbemObject**.
+En el ejemplo siguiente se obtiene una instancia específica del servicio [**Win32 \_**](/windows/desktop/CIMWin32Prov/win32-service) que representa el servicio Alerter y se almacena en objAlerter. A continuación, puede llamar a métodos [**SWbemObject,**](swbemobject.md) como WScript.Echo objAlerter.Path , o a métodos definidos por la clase de datos, como \_ WScript.Echo objAlerter.State. objAlerter, que representa una instancia del servicio Win32 \_ y **un objeto SWbemObject.**
 
 
 ```VB
@@ -59,7 +59,7 @@ Next
 
 
 
-La llamada a [**SWbemObject. \_ instances**](swbemobject-instances-.md) obtiene otro objeto de scripting de WMI genérico, [**SWbemObjectSet**](swbemobjectset.md). Como se muestra, el objeto **SWbemObjectSet** se puede tratar como una [colección](accessing-a-collection.md).
+La llamada a [**SWbemObject.Instances \_**](swbemobject-instances-.md) obtiene otro objeto de scripting WMI genérico, [**SWbemObjectSet**](swbemobjectset.md). Como se muestra, **el objeto SWbemObjectSet** se puede tratar como una [colección](accessing-a-collection.md).
 
 
 ```VB
@@ -68,11 +68,11 @@ Set clsobjProcess = objWMIServices.Get("Win32_Process")
 
 
 
-Puede identificar los métodos de [**SWbemObject**](swbemobject.md) porque finalizan con un carácter de subrayado ( \_ ), por ejemplo, [**SWbemObject \_ . instances**](swbemobject-instances-.md).
+Puede identificar los métodos [**SWbemObject**](swbemobject.md) porque todos terminan con un carácter de subrayado ( ), por \_ ejemplo, [**SWbemObject.Instances \_**](swbemobject-instances-.md).
 
-[**SWbemObjectEx**](swbemobjectex.md) extiende las propiedades de [**SWbemObject**](swbemobject.md). Por ejemplo, ahora puede actualizar los datos de cualquier objeto WMI, como una instancia del proceso de [**Win32 \_**](/windows/desktop/CIMWin32Prov/win32-process), mediante una llamada a [**SWbemObjectEx. Refresh \_**](swbemobjectex-refresh-.md).
+[**SWbemObjectEx**](swbemobjectex.md) extiende las propiedades de [**SWbemObject**](swbemobject.md). Por ejemplo, ahora puede actualizar los datos de cualquier objeto WMI, como una instancia de [**Win32 \_ Process**](/windows/desktop/CIMWin32Prov/win32-process), mediante una llamada a [**SWbemObjectEx.Refresh \_**](swbemobjectex-refresh-.md).
 
-En el ejemplo siguiente se muestra cómo se pueden actualizar los datos de error de página de proceso del sistema cada cinco segundos.
+En el ejemplo siguiente se muestra cómo se pueden actualizar los datos de error de la página de proceso del sistema cada cinco segundos.
 
 
 ```VB
@@ -92,9 +92,9 @@ Next
 
 
 
-Para obtener más información sobre la actualización de datos mediante un objeto [**SWbemRefresher**](swbemrefresher.md) , vea [actualizar datos WMI en scripts](refreshing-wmi-data-in-scripts.md).
+Para obtener más información sobre cómo actualizar datos mediante [**un objeto SWbemRefresher,**](swbemrefresher.md) vea [Actualizar datos WMI en scripts](refreshing-wmi-data-in-scripts.md).
 
-[**SWbemObject. put \_**](swbemobject-put-.md) y [**PutAsync \_**](swbemobject-putasync-.md) permiten volver a escribir los cambios en cualquier objeto WMI. Estos métodos solo confirman los cambios en un objeto en el espacio de nombres donde se creó el objeto. Puede escribir el objeto en un espacio de nombres diferente mediante [**SWbemServicesEx. put**](swbemservicesex-put.md) o [**SWbemServicesEx. PutAsync**](swbemservicesex-putasync.md).
+[**SWbemObject.Put \_**](swbemobject-put-.md) y [**PutAsync \_**](swbemobject-putasync-.md) permiten volver a escribir los cambios en cualquier objeto WMI. Estos métodos solo confirman cambios en un objeto en el espacio de nombres donde se creó el objeto. Puede escribir el objeto en un espacio de nombres diferente mediante [**SWbemServicesEx.Put**](swbemservicesex-put.md) o [**SWbemServicesEx.PutAsync**](swbemservicesex-putasync.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -103,10 +103,10 @@ Para obtener más información sobre la actualización de datos mediante un obje
 [API de scripting para WMI](scripting-api-for-wmi.md)
 </dt> <dt>
 
-[Creación de un script de WMI](creating-a-wmi-script.md)
+[Crear un script WMI](creating-a-wmi-script.md)
 </dt> <dt>
 
-[Actualizar una instancia completa](updating-an-entire-instance.md)
+[Actualización de una instancia completa](updating-an-entire-instance.md)
 </dt> <dt>
 
 [Llamar a un método](calling-a-method.md)

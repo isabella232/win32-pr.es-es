@@ -1,7 +1,7 @@
 ---
 description: Asocia una instancia de un recurso asignado al grupo de recursos desde el que se asignó.
 ms.assetid: BA3168C7-E4F1-414B-827B-1A811069F223
-title: Msvm_ElementAllocatedFromPool (clase)
+title: Msvm_ElementAllocatedFromPool clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4d798c31fbcd8429007c53f3b156fc7c5922e7ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a68731bec7ae7ab8126fa6b76305257d4333f06012e619cd7a3c9a90bcc69283
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118148537"
 ---
-# <a name="msvm_elementallocatedfrompool-class"></a>MSVM \_ ElementAllocatedFromPool (clase)
+# <a name="msvm_elementallocatedfrompool-class"></a>Clase \_ ElementAllocatedFromPool de Msvm
 
 Asocia una instancia de un recurso asignado al grupo de recursos desde el que se asignó.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,33 +41,33 @@ class Msvm_ElementAllocatedFromPool : CIM_ElementAllocatedFromPool
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ ElementAllocatedFromPool** tiene estos tipos de miembros:
+La **clase \_ ElementAllocatedFromPool de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ ElementAllocatedFromPool** tiene estas propiedades.
+La **clase \_ ElementAllocatedFromPool de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **[ **CIM \_ ResourcePool**](/previous-versions//cc136903(v=vs.85))**
+Tipo de datos: **[ **Cim \_ ResourcePool**](/previous-versions//cc136903(v=vs.85))**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **invalidación**, **máx** . (1)
+Calificadores: **Override**, **Max** (1)
 </dt> </dl>
 
-Grupo de recursos. Esta propiedad se hereda de [**\_ ElementAllocatedFromPool CIM**](/previous-versions//cc150668(v=vs.85)).
+Grupo de recursos. Esta propiedad se hereda del [**elemento \_ CIMAllocatedFromPool**](/previous-versions//cc150668(v=vs.85)).
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **[ **CIM \_ LogicalElement**](/windows/desktop/CIMWin32Prov/cim-logicalelement)**
@@ -76,13 +76,13 @@ Tipo de datos: **[ **CIM \_ LogicalElement**](/windows/desktop/CIMWin32Prov/cim-
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Recurso asignado. Esta propiedad se hereda de [**\_ ElementAllocatedFromPool CIM**](/previous-versions//cc150668(v=vs.85)).
+Recurso asignado. Esta propiedad se hereda del [**elemento \_ CIMAllocatedFromPool**](/previous-versions//cc150668(v=vs.85)).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase **MSVM \_ ElementAllocatedFromPool** puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a **la clase \_ ElementAllocatedFromPool de Msvm** podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,10 +90,10 @@ El acceso a la clase **MSVM \_ ElementAllocatedFromPool** puede estar restringid
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -102,13 +102,13 @@ El acceso a la clase **MSVM \_ ElementAllocatedFromPool** puede estar restringid
 
 <dl> <dt>
 
-[**\_ELEMENTALLOCATEDFROMPOOL CIM**](cim-elementallocatedfrompool.md)
+[**Elemento \_ CIMAllocatedFromPool**](cim-elementallocatedfrompool.md)
 </dt> <dt>
 
-[**\_ELEMENTALLOCATEDFROMPOOL CIM**](/previous-versions//cc150668(v=vs.85))
+[**Elemento \_ CIMAllocatedFromPool**](/previous-versions//cc150668(v=vs.85))
 </dt> <dt>
 
-[**MSVM \_ ElementAllocatedFromPool (V1)**](/previous-versions/windows/desktop/virtual/msvm-elementallocatedfrompool)
+[**Elemento \_ MsvmAllocatedFromPool (V1)**](/previous-versions/windows/desktop/virtual/msvm-elementallocatedfrompool)
 </dt> <dt>
 
 [Clases de administración de recursos](resource-management-classes.md)

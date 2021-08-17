@@ -1,6 +1,6 @@
 ---
 title: SV_InnerCoverage
-description: Entrada SVCoverage representa información de rasterización conservadora subestimada (es decir, si se garantiza que un píxel esté totalmente \_ cubierto).
+description: Entrada SVCoverage representa información de rasterización conservadora infravalorada (es decir, si se garantiza que un píxel esté totalmente \_ cubierto).
 ms.assetid: 5BB3C3FB-E5ED-4395-B389-300DE67C984B
 keywords:
 - SV_InnerCoverage HLSL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 168f90c17c9e6837d696ebb6dac8f39dc6dfb366
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 172ee60cb85e69568c8cb226aa19fa325686726f42fc27c7aa21231b1a55ef28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117724383"
 ---
 # <a name="sv_innercoverage"></a>SV \_ InnerCoverage
 
-Entrada SVCoverage representa información de rasterización conservadora subestimada (es decir, si se garantiza que un píxel esté totalmente \_ cubierto).
+Entrada SVCoverage representa información de rasterización conservadora infravalorada (es decir, si se garantiza que un píxel esté totalmente \_ cubierto).
 
 ## <a name="type"></a>Tipo
 
@@ -37,7 +37,7 @@ Entrada SVCoverage representa información de rasterización conservadora subest
 
 ## <a name="remarks"></a>Comentarios
 
-Este valor generado por el sistema es necesario para la compatibilidad con el nivel 3 y solo está disponible en ese nivel. Esta entrada es mutuamente excluyente con la cobertura \_ SV; no se pueden usar ambos.
+Este valor generado por el sistema es necesario para la compatibilidad con el nivel 3 y solo está disponible en ese nivel. Esta entrada es mutuamente excluyente con la cobertura \_ SV; ambos no se pueden usar.
 
 Para acceder a SV InnerCoverage, debe declararse como un único componente de uno de los registros de entrada del \_ sombreador de píxeles. El modo de interpolación de la declaración debe ser constante (no se aplica la interpolación).
 

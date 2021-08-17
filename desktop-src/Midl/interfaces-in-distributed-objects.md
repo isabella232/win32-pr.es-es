@@ -1,31 +1,31 @@
 ---
 title: Interfaces en objetos distribuidos
-description: En el computación distribuida, una interfaz es una colección de definiciones y funciones remotas que permite que dos o más programas interoperen entre distintos contextos.
+description: En la computación distribuida, una interfaz es una colección de definiciones y funciones remotas que permite que dos o más programas interoperan entre distintos contextos.
 ms.assetid: d7cd6bf3-58ec-426d-850a-9c5456ed816d
 keywords:
-- interfaces MIDL, en objetos distribuidos
+- interfaces MIDL , en objetos distribuidos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64cbee13dcbab9ccaa6ef6ad3ad3880daa9b14ce
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8661e7e07f08d35151afe8fb256539ed574b0a0162178e3a9e63dc8c43c59ce8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104358926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117807142"
 ---
 # <a name="interfaces-in-distributed-objects"></a>Interfaces en objetos distribuidos
 
-En el computación distribuida, una interfaz es una colección de definiciones y funciones remotas que permite que dos o más programas interoperen entre distintos contextos. En una aplicación RPC, una interfaz especifica:
+En la computación distribuida, una interfaz es una colección de definiciones y funciones remotas que permite que dos o más programas interoperan entre distintos contextos. En una aplicación RPC, una interfaz especifica:
 
--   Cómo se identifican entre sí las aplicaciones cliente y servidor.
+-   Cómo se identifican las aplicaciones cliente y servidor entre sí.
 -   Cómo se transmiten los datos entre el cliente y el servidor.
 -   Procedimientos remotos a los que puede llamar la aplicación cliente.
 -   Tipos de datos para los parámetros y valores devueltos de los procedimientos remotos.
 
-El Lenguaje de definición de interfaz de Microsoft (MIDL) es para implementar interfaces utilizadas en aplicaciones distribuidas. Con MIDL, una aplicación puede tener una interfaz o varias. Cada interfaz especifica un contrato distribuido único entre los programas de cliente y servidor. Las aplicaciones basadas en llamadas a procedimiento remoto (RPC), el modelo de objetos componentes (COM) y el modelo de objetos componentes distribuido (DCOM) especifican sus interfaces mediante MIDL.
+La Lenguaje de definición de interfaz de Microsoft (MIDL) es para implementar interfaces usadas en aplicaciones distribuidas. Con MIDL, una aplicación puede tener una interfaz o muchas. Cada interfaz especifica un contrato distribuido único entre los programas de cliente y servidor. Las aplicaciones basadas en llamadas a procedimientos remotos (RPC), El modelo de objetos componentes (COM) y el Modelo de objetos componentes distribuidos (DCOM) especifican sus interfaces mediante MIDL.
 
-MIDL es similar a C y C++ en muchos sentidos. Para obtener información general sobre la escritura de interfaces MIDL, vea [desarrollar la interfaz](/windows/desktop/Rpc/developing-the-interface).
+MIDL se parece a C y C++ de muchas maneras. Para obtener información general sobre cómo escribir interfaces MIDL, vea [Desarrollo de la interfaz](/windows/desktop/Rpc/developing-the-interface).
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: Recupera los nombres de todos los recursos compartidos DDE de red que son de confianza en el contexto del proceso de llamada.
+description: Recupera los nombres de todos los recursos compartidos DDE de red de confianza en el contexto del proceso de llamada.
 ms.assetid: 8e2323a4-0c27-44e6-9598-08a3c1a88bd3
-title: Función NDdeTrustedShareEnum (Nddeapi. h)
+title: Función NDdeTrustedShareEnum (Nddeapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: caa3f7c20b95243e03c0c6025d1ff32d60443ab2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc8eefd335ad9c54e7dc4aefa5a1027785de1b9c33cd3346c8bb1c8a4872b939
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117695047"
 ---
-# <a name="nddetrustedshareenum-function"></a>NDdeTrustedShareEnum función)
+# <a name="nddetrustedshareenum-function"></a>Función NDdeTrustedShareEnum
 
-\[Ya no se admite DDE de red. Nddeapi.dll está presente en Windows Vista, pero todas las llamadas de función devuelven NDDE \_ no \_ implementado.\]
+\[Ya no se admite DDE de red. Nddeapi.dll está presente en Windows Vista, pero todas las llamadas de función devuelven NDDE \_ NOT \_ IMPLEMENTED.\]
 
-Recupera los nombres de todos los recursos compartidos DDE de red que son de confianza en el contexto del proceso de llamada.
+Recupera los nombres de todos los recursos compartidos DDE de red de confianza en el contexto del proceso de llamada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,53 +48,53 @@ UINT NDdeTrustedShareEnum(
 
 <dl> <dt>
 
-*lpszServer* \[ de\]
+*lpszServer* \[ En\]
 </dt> <dd>
 
 Nombre del servidor en el que reside el DSDM.
 
 </dd> <dt>
 
-*nLevel* \[ de\]
+*nLevel* \[ En\]
 </dt> <dd>
 
 Reservado. Este parámetro debe ser cero.
 
 </dd> <dt>
 
-*lpBuffer* \[ enuncia\]
+*lpBuffer* \[ out\]
 </dt> <dd>
 
-Un puntero a un búfer que recibe la lista de recursos compartidos DDE de confianza. La lista de recursos compartidos DDE de confianza se devuelve como una secuencia de cadenas separadas por null que finalizan con un carácter nulo doble al final. Este parámetro puede ser **NULL**. Si el valor de *lpBuffer* es **null**, el DSDM devuelve el tamaño del búfer necesario para contener la lista de recursos compartidos en el campo *lpcbTotalAvailable* .
+Puntero a un búfer que recibe la lista de recursos compartidos de DDE de confianza. La lista de recursos compartidos de DDE de confianza se devuelve como una secuencia de cadenas separadas por null que finalizan con un carácter nulo doble al final. Este parámetro puede ser **NULL**. Si *lpBuffer* es **NULL,** DSDM devuelve el tamaño de búfer necesario para contener la lista de recursos compartidos en el *campo lpcbTotalAvailable.*
 
 </dd> <dt>
 
-*cBufSize* \[ de\]
+*cBufSize* \[ En\]
 </dt> <dd>
 
-Tamaño del búfer de *lpBuffer* , en bytes. Este parámetro debe ser cero si *lpBuffer* es **null**.
+Tamaño del búfer *lpBuffer,* en bytes. Este parámetro debe ser cero si *lpBuffer* es **NULL.**
 
 </dd> <dt>
 
-*lpnEntriesRead* \[ enuncia\]
+*lpnEntriesRead* \[ out\]
 </dt> <dd>
 
-Puntero a una variable que recibe el número total de recursos compartidos de confianza que se enumeran. Este parámetro no puede ser **null**.
+Puntero a una variable que recibe el número total de recursos compartidos de confianza que se enumeran. Este parámetro no puede ser **NULL.**
 
 </dd> <dt>
 
-*lpcbTotalAvailable* \[ enuncia\]
+*lpcbTotalAvailable* \[ out\]
 </dt> <dd>
 
-Puntero a una variable que recibe el número total de bytes necesarios para almacenar la lista de recursos compartidos DDE de confianza. Este parámetro no puede ser **null**.
+Puntero a una variable que recibe el número total de bytes necesarios para almacenar la lista de recursos compartidos de DDE de confianza. Este parámetro no puede ser **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es NDDE \_ sin \_ error.
+Si la función se realiza correctamente, el valor devuelto es NDDE \_ NO \_ ERROR.
 
-Si se produce un error en la función, el valor devuelto es un código de error, que se puede traducir en un mensaje de error de texto mediante una llamada a [**NDdeGetErrorString**](nddegeterrorstring.md). Si el parámetro *lpBuffer* es **null**, devuelve NDDE \_ BUF \_ demasiado \_ pequeño.
+Si se produce un error en la función, el valor devuelto es un código de error, que se puede traducir en un mensaje de error de texto llamando a [**NDdeGetErrorString**](nddegeterrorstring.md). Si el *parámetro lpBuffer* **es NULL,** devuelve NDDE \_ BUF TOO \_ \_ SMALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -104,8 +104,8 @@ Si se produce un error en la función, el valor devuelto es un código de error,
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Nddeapi. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Nddeapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Nddeapi.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Nddeapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nddeapi.dll</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **NDdeTrustedShareEnumW** (Unicode) y **NDdeTrustedShareEnumA** (ANSI)<br/>    |
 
@@ -115,7 +115,7 @@ Si se produce un error en la función, el valor devuelto es un código de error,
 
 <dl> <dt>
 
-[Información general de Intercambio dinámico de datos de red](network-dynamic-data-exchange.md)
+[Información general sobre datos dinámicos Exchange red](network-dynamic-data-exchange.md)
 </dt> <dt>
 
 [Funciones DDE de red](network-dde-functions.md)

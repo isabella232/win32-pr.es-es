@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 15ba6b289ad106a8fad4a932b9c5d01e0a52dc18
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e0d905a3d73bb357e7988f4cc5a749740b796c1793ca912a2f3af471893d65f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117729018"
 ---
 # <a name="id3dxtextureshadersetmatrix-method"></a>Método ID3DXTextureShader::SetMatrix
 
@@ -46,7 +46,7 @@ HRESULT SetMatrix(
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de la matriz de constantes. Vea [D3DXHANDLE.](d3dxfx.md)
+Identificador único de la matriz de constantes. Vea [D3DXHANDLE](d3dxfx.md).
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Puntero a una matriz no transpuesta. Vea [**D3DXMATRIX.**](d3dxmatrix.md)
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -80,7 +80,7 @@ Una matriz no transpuesta contiene datos principales de fila; es decir, cada vec
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

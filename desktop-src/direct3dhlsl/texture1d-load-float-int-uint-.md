@@ -1,6 +1,6 @@
 ---
-title: 'Texture1D:: Load (int, int, uint) (función)'
-description: 'Lee los datos de textura y devuelve el estado de la operación. | Texture1D:: Load (int, int, uint) (función)'
+title: Función Texture1D::Load(int,int,uint)
+description: Lee los datos de textura y devuelve el estado de la operación. | Función Texture1D::Load(int,int,uint)
 ms.assetid: 5C489CBD-E4F6-4CB5-8E7E-EC34633D75B0
 keywords:
 - Carga de la función HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0c7733ab4802037d83dbb2b4ce523ff7bb57f729
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b266ad13c050073aeb62497d9833b1f2666e70f2f32f2f9de5099cf4bee29517
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117722996"
 ---
-# <a name="texture1dloadintintuint-function"></a>Texture1D:: Load (int, int, uint) (función)
+# <a name="texture1dloadintintuint-function"></a>Función Texture1D::Load(int,int,uint)
 
 Lee los datos de textura y devuelve el estado de la operación.
 
@@ -41,7 +41,7 @@ Lee los datos de textura y devuelve el estado de la operación.
 
 <dl> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
@@ -50,7 +50,7 @@ Las coordenadas de textura.
 
 </dd> <dt>
 
-*Desplazamiento* \[ de\]
+*Desplazamiento* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
@@ -59,12 +59,12 @@ Desplazamiento aplicado a las coordenadas de textura antes del muestreo.
 
 </dd> <dt>
 
-*Estado* \[ de enuncia\]
+*Estado* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Estado de la operación. No se puede tener acceso directamente al estado. en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** devuelve **true** si todos los valores de la operación de **ejemplo**, **recopilación** o **carga** correspondiente han tenido acceso a los mosaicos asignados en un [recurso en mosaico](/windows/desktop/direct3d11/direct3d-11-2-features). Si se tomó algún valor de un mosaico sin asignar, **CheckAccessFullyMapped** devuelve **false**.
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación Sample **,** **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
@@ -72,15 +72,15 @@ Estado de la operación. No se puede tener acceso directamente al estado. en su 
 
 Escriba:
 
-El tipo de valor devuelto coincide con el tipo en la declaración del objeto [**Texture1D**](sm5-object-texture1d.md) .
+El tipo de valor devuelto coincide con el tipo de la declaración para el [**objeto Texture1D.**](sm5-object-texture1d.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -92,7 +92,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
 <dl> <dt>
 
-[Cargar métodos](texture1d-load.md)
+[Métodos de carga](texture1d-load.md)
 </dt> <dt>
 
 [**Texture1D**](sm5-object-texture1d.md)

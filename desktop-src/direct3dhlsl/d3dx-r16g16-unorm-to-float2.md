@@ -1,9 +1,9 @@
 ---
 title: D3DX_R16G16_UNORM_to_FLOAT2 función
-description: Desempaqueta los datos del sombreador UNORM DXGI \_ FORMAT \_ R16G16 \_ en XMFLOAT2.
+description: Desempaqueta los datos del \_ \_ sombreador DXGI FORMAT R16G16 \_ UNORM en XMFLOAT2.
 ms.assetid: e82e2a47-f494-4085-8c02-1bac3088d29f
 keywords:
-- D3DX_R16G16_UNORM_to_FLOAT2 function HLSL
+- D3DX_R16G16_UNORM_to_FLOAT2 función HLSL
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117727377"
 ---
-# <a name="d3dx_r16g16_unorm_to_float2-function"></a>Función D3DX \_ R16G16 \_ UNORM \_ to \_ FLOAT2
+# <a name="d3dx_r16g16_unorm_to_float2-function"></a>Función D3DX \_ R16G16 \_ UNORM \_ a \_ FLOAT2
 
-Desempaqueta los datos del sombreador UNORM DXGI \_ FORMAT \_ R16G16 \_ en XMFLOAT2.
+Desempaqueta los datos del \_ \_ sombreador DXGI FORMAT R16G16 \_ UNORM en XMFLOAT2.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ Datos empaquetados del sombreador.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Datos del sombreador desempaquetados.
+Datos del sombreador desempaquetar.
 
 ## <a name="requirements"></a>Requisitos
 

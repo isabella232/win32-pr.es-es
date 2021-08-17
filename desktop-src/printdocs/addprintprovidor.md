@@ -1,7 +1,7 @@
 ---
 description: La función AddPrintProvidor instala un proveedor de impresión local y vincula los archivos de configuración, datos y proveedor.
 ms.assetid: f34549c3-0474-48ba-9307-5b36f02dbe1c
-title: Función AddPrintProvidor (winspool. h)
+title: Función AddPrintProvidor (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: adf5f914046eb82e070e3e9915325989ff868d1e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca968397441765455e74059201c128be53f50916e5e28212c700078f52124fe8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117868740"
 ---
-# <a name="addprintprovidor-function"></a>AddPrintProvidor función)
+# <a name="addprintprovidor-function"></a>Función AddPrintProvidor
 
-La función **AddPrintProvidor** instala un proveedor de impresión local y vincula los archivos de configuración, datos y proveedor.
+La **función AddPrintProvidor** instala un proveedor de impresión local y vincula los archivos de configuración, datos y proveedor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,24 +43,24 @@ BOOL AddPrintProvidor(
 
 <dl> <dt>
 
-*pName* \[ de\]
+*pName* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del servidor en el que se debe instalar el proveedor. En el caso de los sistemas que solo admiten la instalación local de proveedores, este parámetro debe ser **null**.
+Puntero a una cadena terminada en NULL que especifica el nombre del servidor en el que se debe instalar el proveedor. Para los sistemas que solo admiten la instalación local de proveedores, este parámetro debe ser **NULL.**
 
 </dd> <dt>
 
-*Nivel* \[ de de\]
+*Nivel* \[ En\]
 </dt> <dd>
 
-Nivel de la estructura a la que apunta *pProviderInfo* . Puede ser uno de los siguientes.
+Nivel de la estructura a la que *apunta pProviderInfo.* Puede ser uno de los siguientes.
 
 
 
-| Value                                                                                                | Significado                                                                            |
+| Valor                                                                                                | Significado                                                                            |
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <span id="1"></span><dl> <dt>**1**</dt> </dl> | La función usa una estructura [**PROVIDOR \_ info \_ 1**](providor-info-1.md) .<br/> |
-| <span id="2"></span><dl> <dt>**2**</dt> </dl> | La función usa una estructura de [**PROVIDOR \_ info \_ 2**](providor-info-2.md) .<br/> |
+| <span id="1"></span><dl> <dt>**1**</dt> </dl> | La función usa una [**estructura \_ PROVIDOR INFO \_ 1.**](providor-info-1.md)<br/> |
+| <span id="2"></span><dl> <dt>**2**</dt> </dl> | La función usa una [**estructura \_ PROVIDOR INFO \_ 2.**](providor-info-2.md)<br/> |
 
 
 
@@ -68,46 +68,46 @@ Nivel de la estructura a la que apunta *pProviderInfo* . Puede ser uno de los si
 
 </dd> <dt>
 
-*pProviderInfo* \[ de\]
+*pProviderInfo* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura de proveedor de impresión, tal y como se indica en el *nivel*.
+Puntero a una estructura de proveedor de impresión, como se indica en *Level*.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es un valor distinto de cero.
+Si la función se realiza correctamente, el valor devuelto es un valor distinto de cero.
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Se trata de una función de bloqueo o sincrónica y podría no volver inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que parezca que la aplicación no responde.
+> Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
-Antes de que una aplicación llame a la función **AddPrintProvidor** , todos los archivos requeridos por el proveedor deben copiarse en el directorio system32.
+Antes de que una aplicación llame a la función **AddPrintProvidor,** todos los archivos requeridos por el proveedor deben copiarse en el directorio SYSTEM32.
 
-Un proveedor agregado por **AddPrintProvidor** se puede quitar llamando a [**DeletePrintProvidor**](deleteprintprovidor.md).
+Se puede quitar un proveedor agregado **por AddPrintProvidor** llamando a [**DeletePrintProvidor**](deleteprintprovidor.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| Archivo DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| Archivo DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nombres Unicode y ANSI<br/>   | **AddPrintProvidorW** (Unicode) y **AddPrintProvidorA** (ANSI)<br/>                               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -120,10 +120,10 @@ Un proveedor agregado por **AddPrintProvidor** se puede quitar llamando a [**Del
 [**DeletePrintProvidor**](deleteprintprovidor.md)
 </dt> <dt>
 
-[**PROVIDOR \_ info \_ 1**](providor-info-1.md)
+[**PROVIDOR \_ INFO \_ 1**](providor-info-1.md)
 </dt> <dt>
 
-[**PROVIDOR \_ info \_ 2**](providor-info-2.md)
+[**PROVIDOR \_ INFO \_ 2**](providor-info-2.md)
 </dt> </dl>
 
  

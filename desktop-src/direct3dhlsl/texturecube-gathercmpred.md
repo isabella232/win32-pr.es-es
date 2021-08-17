@@ -3,7 +3,7 @@ title: Métodos TextureCube::TextureCube GatherCmpRed
 description: Muestrea y compara una textura y devuelve el componente rojo. | Métodos TextureCube::TextureCube GatherCmpRed
 ms.assetid: 614F9DD0-2A49-4F20-8967-3DD63D5B5F32
 keywords:
-- Métodos HLSL de GatherCmpRed
+- Métodos GatherCmpRed HLSL
 topic_type:
 - apiref
 api_type:
@@ -33,7 +33,7 @@ Muestrea y compara una textura y devuelve el componente rojo.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

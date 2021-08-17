@@ -1,7 +1,7 @@
 ---
-description: Crea un punto de referencia de una colección de sistemas virtuales.
+description: Crea un punto de referencia de una colección de sistema virtual.
 ms.assetid: 40ec5715-0dbc-43e3-a305-c8c31de60977
-title: Método CreateReferencePoint de la clase Msvm_CollectionReferencePointService
+title: Método CreateReferencePoint de la Msvm_CollectionReferencePointService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7681795ee18965e3e04b75c800e3e574d6627ea9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8e1745a02b643f035dd46d82e1686a8f5075157a7f749a701865028f3a7db162
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117994806"
 ---
-# <a name="createreferencepoint-method-of-the-msvm_collectionreferencepointservice-class"></a>Método CreateReferencePoint de la \_ clase CollectionReferencePointService de MSVM
+# <a name="createreferencepoint-method-of-the-msvm_collectionreferencepointservice-class"></a>Método CreateReferencePoint de la clase CollectionReferencePointService de Msvm \_
 
-Crea un punto de referencia de una colección de sistemas virtuales.
+Crea un punto de referencia de una colección de sistema virtual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,21 +43,21 @@ uint32 CreateReferencePoint(
 
 <dl> <dt>
 
-*Colección* \[ de de\]
+*Colección* \[ En\]
 </dt> <dd>
 
-Referencia a la colección de sistemas virtuales afectada.
+Referencia a la colección del sistema virtual afectada.
 
 </dd> <dt>
 
-*ReferencePointSettings* \[ de\]
+*ReferencePointSettings* \[ En\]
 </dt> <dd>
 
 Configuración de parámetros.
 
 </dd> <dt>
 
-*ReferencePointType* \[ de\]
+*ReferencePointType* \[ En\]
 </dt> <dd>
 
 Indica el tipo del punto de referencia.
@@ -73,23 +73,23 @@ Indica el tipo del punto de referencia.
 
 <span id="Log_based"></span><span id="log_based"></span><span id="LOG_BASED"></span>
 
-<span id="Log_based"></span><span id="log_based"></span><span id="LOG_BASED"></span>**Basado en el registro** (1)
+<span id="Log_based"></span><span id="log_based"></span><span id="LOG_BASED"></span>**Basado en registros** (1)
 
 
 </dt> <dd>
 
-Seguimiento del registro de réplica de Hyper-V.
+Seguimiento de registros de réplica de Hyper-V.
 
 </dd> <dt>
 
 <span id="RCT_based"></span><span id="rct_based"></span><span id="RCT_BASED"></span>
 
-<span id="RCT_based"></span><span id="rct_based"></span><span id="RCT_BASED"></span>**RCT basado** (2)
+<span id="RCT_based"></span><span id="rct_based"></span><span id="RCT_BASED"></span>**Basado en RCT** (2)
 
 
 </dt> <dd>
 
-Basado en Change Tracking resistente de los discos virtuales.
+Se basa en la Change Tracking resistente de discos virtuales.
 
 </dd> <dt>
 
@@ -102,7 +102,7 @@ Basado en Change Tracking resistente de los discos virtuales.
 
 <span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>
 
-<span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>**Específico del proveedor** (32768... 65535)
+<span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>**Específico del** proveedor (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
@@ -110,20 +110,20 @@ Basado en Change Tracking resistente de los discos virtuales.
 *ResultingReferencePointCollection* \[ in, out\]
 </dt> <dd>
 
-Punto de referencia resultante de una colección de sistemas virtuales.
+Punto de referencia resultante de una colección de sistema virtual.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación es de larga ejecución, opcionalmente se puede devolver un trabajo.
+Si la operación es de larga duración, opcionalmente se puede devolver un trabajo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si se realiza correctamente, devuelve 0 (sin errores) o 4096 (se inició el trabajo). de lo contrario, devuelve un error.
+Si se realiza correctamente, devuelve 0 (sin error) o 4096 (trabajo iniciado); de lo contrario, devuelva un error.
 
 <dl> <dt>
 
@@ -136,7 +136,7 @@ Si se realiza correctamente, devuelve 0 (sin errores) o 4096 (se inició el trab
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -154,31 +154,31 @@ Si se realiza correctamente, devuelve 0 (sin errores) o 4096 (se inició el trab
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MSVM \_ CollectionReferencePointService**](msvm-collectionreferencepointservice.md)
+[**Colección de \_ MsvmReferencePointService**](msvm-collectionreferencepointservice.md)
 </dt> </dl>
 
  

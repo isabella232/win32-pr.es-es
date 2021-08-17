@@ -4,12 +4,12 @@ description: Con una barra de progreso, los usuarios pueden seguir el progreso d
 ms.assetid: 067961fa-2fb1-4cd1-99a4-cbe2244c3913
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: f0bb693541f40b82c66409b9f6696456491ba687
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: b62240da0df0b284e8a5f7175131eaa9db18fc1743f9f8701019cc2efb390464
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117853831"
 ---
 # <a name="progress-bars"></a>Barras de progreso
 
@@ -33,7 +33,7 @@ Una barra de progreso típica.
 
 Para decidirte, intenta responder a estas preguntas:
 
--   **¿Se completará la operación en unos cinco segundos o menos?** Si es así, use un [indicador de actividad](inter-mouse.md) en su lugar, ya que mostrar una barra de progreso durante una duración tan corta sería distraer. Si la operación normalmente tarda cinco segundos o menos, pero a veces tarda más, comience con un puntero ocupado y convierta en una barra de progreso después de cinco segundos.
+-   **¿Se completará la operación en unos cinco segundos o menos?** Si es así, use un [indicador de actividad](inter-mouse.md) en su lugar, ya que mostrar una barra de progreso durante una duración tan corta sería una distracción. Si la operación normalmente tarda cinco segundos o menos, pero a veces tarda más, comience con un puntero ocupado y convierta en una barra de progreso después de cinco segundos.
 -   **¿Se usa una barra de progreso indeterminada para esperar a que el usuario complete una tarea?** En ese caso, no uses una barra de progreso. Las barras de progreso se usan para el progreso del equipo, no el del usuario.
 -   **¿Se combina una barra de progreso indeterminada con una animación?** Si es así, use solo la animación en su lugar. La barra de progreso indeterminada es efectivamente una animación genérica y no agrega ningún valor a la animación.
 -   **¿La operación es una tarea en segundo plano muy larga (más de dos minutos) para la que los usuarios están más interesados en la finalización que en el progreso?** Si es así, use [una notificación en](mess-notif.md) su lugar. En este caso, los usuarios hacen otras tareas mientras tanto y no supervisan el progreso. El uso de una notificación permite a los usuarios realizar otras tareas sin interrupciones. Entre los ejemplos de estas operaciones largas se incluyen la impresión, la copia de seguridad, los exámenes del sistema y las conversiones o transferencias masivas de datos.
@@ -88,7 +88,7 @@ Las barras de progreso tienen varios patrones de uso:
 <td><img src="images/progress-bars-image5.png" alt="Screen shot of progress bar with animation " /><br/> En este ejemplo, los usuarios pueden hacer clic en Detener para detener la operación y dejar el entorno en su estado actual.<br/></td>
 </tr>
 <tr class="even">
-<td><strong>Barras de progreso doble determinación modales</strong><br/> Indique el progreso de una operación de varios pasos mostrando el progreso del paso actual en la primera barra de progreso y el progreso general en la segunda barra.<br/></td>
+<td><strong>Barras de progreso doble determinación modal</strong><br/> Indique el progreso de una operación de varios pasos mostrando el progreso del paso actual en la primera barra de progreso y el progreso general en la segunda barra.<br/></td>
 <td>Dado que la primera barra de progreso proporciona poca información adicional y puede ser bastante distraída, no se recomienda este patrón. En su lugar, haga que todos los pasos de la operación compartan una parte del progreso y que una sola barra de progreso se complete una vez. <br/> <img src="images/progress-bars-image6.png" alt="Screen shot of current and overall progress bars " /><br/> En este ejemplo, la primera barra de progreso muestra el progreso del paso actual y la segunda barra de progreso muestra el progreso general.<br/>
 <blockquote>
 [!Note]<br />
@@ -113,8 +113,8 @@ Este patrón normalmente no es necesario y debe evitarse.
 
 |   Tipo de barra de progreso  | Descripción             |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Barras de progreso indeterminado modales**<br/> indica que una operación está en curso al mostrar una animación que se cycle continuamente a través de la barra de izquierda a derecha. <br/>   | Solo se usa para operaciones cuyo progreso general no se puede determinar, por lo que no hay ninguna noción de integridad. Las barras de progreso determinadas son preferibles porque indican el porcentaje aproximado de la operación que se ha completado y ayudan a los usuarios a determinar si merece la pena seguir esperando la operación. también son menos distraídas visualmente. <br/> ![captura de pantalla de la barra de progreso modal e indeterminada](images/progress-bars-image8.png)<br/> En este ejemplo, Windows Update una barra de progreso indeterminado modal para indicar el progreso mientras busca actualizaciones.<br/> |
-| **Modelar barras de progreso indeterminadas**<br/> indica que una operación está en curso al mostrar una animación que se cycle continuamente a través de la barra de izquierda a derecha.<br/> | A diferencia de las barras de progreso modal, los usuarios pueden realizar otras tareas mientras el procesamiento está en curso. estas barras de progreso se pueden mostrar en contexto o en una barra de estado. <br/> ![captura de pantalla de la barra de progreso fino en la ventana de Outlook ](images/progress-bars-image9.png)<br/> En este ejemplo, Microsoft Outlook usa una barra de progreso indeterminada modeless al rellenar las propiedades de contacto. Los usuarios pueden seguir usando la ventana de propiedades mientras este trabajo está en curso.<br/>                                                                                                                    |
+| **Barras de progreso indeterminado modales**<br/> indica que una operación está en curso al mostrar una animación que se cycle continuamente a través de la barra de izquierda a derecha. <br/>   | Solo se usa para operaciones cuyo progreso general no se puede determinar, por lo que no hay ninguna noción de integridad. Las barras de progreso determinadas son preferibles porque indican el porcentaje aproximado de la operación que se ha completado y ayudan a los usuarios a determinar si merece la pena seguir esperando la operación. también son menos distraídas visualmente. <br/> ![captura de pantalla de la barra de progreso modal e indeterminada](images/progress-bars-image8.png)<br/> En este ejemplo, Windows update usa una barra de progreso indeterminada modal para indicar el progreso mientras busca actualizaciones.<br/> |
+| **Modelar barras de progreso indeterminadas**<br/> indica que una operación está en curso al mostrar una animación que se cycle continuamente a través de la barra de izquierda a derecha.<br/> | A diferencia de las barras de progreso modal, los usuarios pueden realizar otras tareas mientras el procesamiento está en curso. estas barras de progreso se pueden mostrar en contexto o en una barra de estado. <br/> ![captura de pantalla de la barra de progreso fino en la ventana de Outlook ](images/progress-bars-image9.png)<br/> En este ejemplo, Microsoft Outlook una barra de progreso indeterminada modeless al rellenar las propiedades de contacto. Los usuarios pueden seguir usando la ventana de propiedades mientras este trabajo está en curso.<br/>                                                                                                                    |
 
 
 
@@ -143,9 +143,9 @@ Este patrón normalmente no es necesario y debe evitarse.
 
     ![captura de pantalla de la barra de progreso que muestra la velocidad de transferencia ](images/progress-bars-image11.png)
 
-    En este ejemplo, los usuarios pueden ver la tasa de transferencia. La baja velocidad de transferencia aquí sugiere la necesidad de usar una conexión de red de ancho de banda alto.
+    En este ejemplo, los usuarios pueden ver la tasa de transferencia. La baja velocidad de transferencia aquí sugiere la necesidad de usar una conexión de red de alto ancho de banda.
 
--   **No proporcione detalles innecesarios.** Por lo general, a los usuarios no les importan los detalles de la operación que se está realizando. Por ejemplo, a los usuarios de un programa de instalación no les importa el archivo específico que se copia o los componentes del sistema que se están registrando porque no tienen expectativas sobre estos detalles. Normalmente, una barra de progreso bien etiquetada solo proporciona información suficiente, por lo que proporcione información de progreso adicional solo si los usuarios pueden hacer algo con ella. Proporcionar detalles que no les importan a los usuarios hace que la experiencia del usuario sea demasiado complicada y técnica. Si necesita información más detallada para la depuración, no la muestre en las compilaciones de versión.
+-   **No proporcione detalles innecesarios.** Por lo general, a los usuarios no les importan los detalles de la operación que se está realizando. Por ejemplo, a los usuarios de un programa de instalación no les importa el archivo específico que se copia o los componentes del sistema que se están registrando porque no tienen expectativas sobre estos detalles. Normalmente, una barra de progreso bien etiquetada solo proporciona información suficiente, así que proporcione información de progreso adicional solo si los usuarios pueden hacer algo con ella. Proporcionar detalles que no les importan a los usuarios hace que la experiencia del usuario sea demasiado complicada y técnica. Si necesita información más detallada para la depuración, no la muestre en las compilaciones de versión.
 
     **Correcto:**
 
@@ -157,7 +157,7 @@ Este patrón normalmente no es necesario y debe evitarse.
 
     ![captura de pantalla de la barra de progreso que muestra la velocidad de transferencia ](images/progress-bars-image11.png)
 
-    En este ejemplo, Explorador de Windows copia los archivos seleccionados por el usuario, por lo que mostrar los nombres de archivo que se copian es significativo.
+    En este ejemplo, Windows explorer copia los archivos seleccionados por el usuario, por lo que mostrar los nombres de archivo que se copian es significativo.
 
     **Incorrecto:**
 
@@ -165,7 +165,7 @@ Este patrón normalmente no es necesario y debe evitarse.
 
     En este ejemplo, un programa de instalación proporciona detalles que no tienen sentido para el usuario.
 
--   **Proporcionar animaciones útiles.** Si se realizan bien, las animaciones mejoran la experiencia del usuario al ayudar a los usuarios a visualizar la operación. Las animaciones buenas tienen más impacto que el texto por sí solas. Por ejemplo, la barra de progreso del comando Eliminar de Outlook muestra el papelera de reciclaje para el destino si los archivos se pueden recuperar, pero no papelera de reciclaje si los archivos no se pueden recuperar.
+-   **Proporcione animaciones útiles.** Si se realizan bien, las animaciones mejoran la experiencia del usuario al ayudar a los usuarios a visualizar la operación. Las animaciones buenas tienen más impacto que el texto por sí solas. Por ejemplo, la barra de progreso del comando Outlook Delete muestra el papelera de reciclaje para el destino si los archivos se pueden recuperar, pero no papelera de reciclaje si los archivos no se pueden recuperar.
 
     ![captura de pantalla del progreso de la eliminación ](images/progress-bars-image14.png)
 
@@ -194,7 +194,7 @@ Este patrón normalmente no es necesario y debe evitarse.
 -   **No combine una barra de progreso con un puntero ocupado.** Use uno u otro, pero no ambos al mismo tiempo.
 -   **No use barras de progreso verticales.** Las barras de progreso horizontal tienen una asignación más natural y un mejor flujo.
 
-### <a name="determinate-progress-bars"></a>Barras de progreso determinadas
+### <a name="determinate-progress-bars"></a>Determinación de las barras de progreso
 
 -   **Use barras de progreso determinadas para** las operaciones que requieren una cantidad limitada de tiempo, incluso si esa cantidad de tiempo no se puede predecir con precisión. Las barras de progreso indeterminado muestran que se está haciendo el progreso, pero no proporcionan ninguna otra información. No elija una barra de progreso indeterminada solo en función de la posible falta de precisión.
 -   **Indique claramente la fase de progreso.** La barra de progreso debe ser capaz de indicar si la operación está al principio, al medio o al final de una operación. Por ejemplo, las barras de progreso que se lanzan inmediatamente hasta la finalización del 99 % y, a continuación, permanecen allí durante mucho tiempo son especialmente poco formatosas y desconciertas. En estos casos, la barra de progreso debe establecerse inicialmente en un 33 por ciento como máximo para indicar que la operación todavía está en la fase inicial.
@@ -206,7 +206,7 @@ Este patrón normalmente no es necesario y debe evitarse.
 
     ![captura de pantalla de la barra de progreso que se reinició ](images/progress-bars-image17.png)
 
-    En este ejemplo, la operación se ha movido al paso de copiar archivos y restablecer la barra de progreso de ese paso. Ahora, los usuarios no tienen idea de cuánto progreso se ha realizado o cuánto tiempo queda.
+    En este ejemplo, la operación se ha movido al paso de copia de archivos y se ha restablecido la barra de progreso de ese paso. Ahora, los usuarios no tienen idea de cuánto progreso se ha realizado o cuánto tiempo queda.
 
 -   **No haga una copia de seguridad del progreso.** Al igual que con un reinicio, una barra de progreso pierde su valor si hace una copia de seguridad. Aumente siempre el progreso de forma monónica. Sin embargo, puede tener una estimación de tiempo restante que aumente (así como disminuya) porque la tasa de progreso puede variar.
 
@@ -214,7 +214,7 @@ Este patrón normalmente no es necesario y debe evitarse.
 
 -   **Use barras de progreso indeterminadas solo para las operaciones cuyo progreso general no se puede determinar.** Use barras de progreso indeterminadas para las operaciones que requieren una cantidad de tiempo sin enlazar o que acceden a un número desconocido de objetos. Use tiempos de espera para proporcionar límites a las operaciones basadas en el tiempo.
 -   **Convierta en una barra de progreso determinada una vez que se pueda determinar el progreso general.** Por ejemplo, si tarda mucho más de dos segundos en determinar el número de objetos, puede usar una barra de progreso indeterminada mientras se cuentan los objetos y, a continuación, convertir en una barra de progreso determinada.
--   **No combine barras de progreso indeterminado con porcentaje completado o estimaciones de tiempo restante.** Si puede proporcionar esta información, use en su lugar una barra de progreso determinada.
+-   **No combine barras de progreso indeterminados con el porcentaje completado o el tiempo restante de las estimaciones.** Si puede proporcionar esta información, use en su lugar una barra de progreso determinada.
 -   **No combine barras de progreso indeterminadas con animaciones.** Una barra de progreso indeterminada es efectivamente una animación genérica, por lo que debe usar una o la otra, pero nunca ambas.
 
     **Correcto:**
@@ -285,7 +285,7 @@ Para las barras de progreso determinadas:
 
     s segundos restantes
 
-    **De lo contrario:**
+    **Lo contrario:**
 
     h hours, m minutes remaining
 
@@ -323,7 +323,7 @@ Para las barras de progreso determinadas:
 
 -   **Use barras de progreso de color rojo o amarillo solo para indicar el estado del progreso, no los resultados finales de una tarea.** Una barra de progreso roja o amarilla indica que los usuarios deben realizar alguna acción para completar la tarea. Si la condición no se puede recuperar, deje la barra de progreso en verde y muestre un mensaje de error.
 -   **Active la barra de progreso en rojo cuando haya una condición recuperable por el usuario que impida realizar más progresos.** Muestre un mensaje para explicar el problema y recomendar una solución.
--   Active la barra de progreso de color amarillo para indicar que el usuario ha pausado la tarea o que hay una condición que está **impediendo** el progreso, pero el progreso sigue teniendo lugar (como, por ejemplo, con una conectividad de red deficiente). Si el usuario se ha pausado, cambie la etiqueta del botón Pausar a Reanudar. Si se impide el progreso, muestre un mensaje para explicar el problema y recomendar una solución.
+-   Ponga la barra de progreso en amarillo para indicar que el usuario ha pausado la tarea o que hay una condición que está **impediendo** el progreso, pero el progreso sigue teniendo lugar (como, por ejemplo, con una conectividad de red deficiente). Si el usuario se ha pausado, cambie la etiqueta del botón Pausar a Reanudar. Si se impide el progreso, muestre un mensaje para explicar el problema y recomendar una solución.
 
 ### <a name="meters"></a>Metros
 
@@ -343,7 +343,7 @@ Tamaño y espaciado recomendados para las barras de progreso.
 
 ## <a name="labels"></a>Etiquetas
 
-### <a name="progress-bar-labels"></a>Etiquetas de barra de progreso
+### <a name="progress-bar-labels"></a>Etiquetas de la barra de progreso
 
 -   **Use una etiqueta concisa con un control de texto estático para indicar lo que está haciendo la operación.** Inicie la etiqueta con un verbo (por ejemplo, Copiar) y termine con puntos suspensivos. Esta etiqueta puede cambiar dinámicamente si la operación tiene varios pasos o está procesando varios objetos.
 -   No asigne una clave de [acceso única porque](glossary.md) el control no es interactivo.
@@ -358,21 +358,21 @@ Tamaño y espaciado recomendados para las barras de progreso.
 
 ### <a name="progress-bar-details"></a>Detalles de la barra de progreso
 
--   Proporcione detalles en texto estático, precediendo los datos con una etiqueta que termine con dos puntos. Especifique unidades (segundos, kilobytes, y así sucesivamente) después del texto de detalles.
+-   Proporcione detalles en texto estático, precedidos de los datos con una etiqueta que termine con dos puntos. Especifique unidades (segundos, kilobytes, entre otras) después del texto de detalles.
 
     **Correcto:**
 
     ![captura de pantalla de la barra de progreso que muestra la velocidad de transferencia ](images/progress-bars-image11.png)
 
-    En este ejemplo, los detalles se etiquetan correctamente.
+    En este ejemplo, los detalles están etiquetados correctamente.
 
     **Incorrecto:**
 
     ![captura de pantalla de la barra de progreso sin la etiqueta adecuada ](images/progress-bars-image25.png)
 
-    En este ejemplo, los detalles no están etiquetados, por lo que es necesario que los usuarios determinen su significado.
+    En este ejemplo, los detalles no están etiquetados, por lo que se requiere que los usuarios determinen su significado.
 
--   Use [el uso de mayúsculas y mayúsculas de estilo oración.](glossary.md)
+-   Use [mayúsculas de estilo oración.](glossary.md)
 -   Coloque los detalles debajo de la barra de progreso y alinee la etiqueta con el borde izquierdo de la barra de progreso.
 -   No dé el porcentaje completado o restante porque esa información la transmite la propia barra de progreso.
 
@@ -397,7 +397,7 @@ Tamaño y espaciado recomendados para las barras de progreso.
 
     En este ejemplo, el texto del título del cuadro de diálogo es una nueva declaración de la etiqueta de la barra de progreso. En su lugar, se debe usar el nombre del programa.
 
--   Si la barra de progreso se muestra en un cuadro de diálogo no modelo, optimice el título para mostrarlo en la barra de tareas colocando primero la información distintiva de forma concisa. Ejemplo: "66 % completado".
+-   Si la barra de progreso se muestra en un cuadro de diálogo de modelado, optimice el título para mostrarlo en la barra de tareas colocando primero la información distintiva de forma concisa. Ejemplo: "66 % completado".
 
  
 

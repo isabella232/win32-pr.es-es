@@ -4,18 +4,18 @@ ms.assetid: 0132ac94-b45b-438a-b96a-e77cfe522702
 title: Esperando varios objetos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6fc04d8737b0c404cf6296e1264fa86eb359be6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe4c8ac12585a32ede0fc96506fa770a19198b18fea833b42a5cf45c75be677b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765053"
 ---
 # <a name="waiting-for-multiple-objects"></a>Esperando varios objetos
 
-En el ejemplo siguiente se usa la función [**CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) para crear dos objetos de evento y la función [**CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) para crear un subproceso. A continuación, utiliza la función [**WaitForMultipleObjects**](/windows/win32/api/synchapi/nf-synchapi-waitformultipleobjects) para esperar a que el subproceso establezca el estado de uno de los objetos que se van a señalizar mediante la función [**SetEvent**](/windows/win32/api/synchapi/nf-synchapi-resetevent) .
+En el ejemplo siguiente se usa [**la función CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) para crear dos objetos de evento y la [**función CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) para crear un subproceso. A continuación, usa la función [**WaitForMultipleObjects**](/windows/win32/api/synchapi/nf-synchapi-waitformultipleobjects) para esperar a que el subproceso establezca el estado de uno de los objetos en señalado mediante la [**función SetEvent.**](/windows/win32/api/synchapi/nf-synchapi-resetevent)
 
-Para obtener un ejemplo en el que se espera un solo objeto, vea [usar objetos mutex](using-mutex-objects.md).
+Para obtener un ejemplo que espera un solo objeto, vea [Using Mutex Objects](using-mutex-objects.md).
 
 
 ```C++

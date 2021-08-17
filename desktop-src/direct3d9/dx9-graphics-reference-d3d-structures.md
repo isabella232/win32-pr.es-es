@@ -1,19 +1,19 @@
 ---
-description: Esta sección contiene información sobre las estructuras utilizadas con Direct3D.
+description: Esta sección contiene información sobre las estructuras usadas con Direct3D.
 ms.assetid: 0a13cb04-10cb-48a6-a709-ad4a56459f02
 title: Estructuras de Direct3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24b3e11f8760cf5ab13e32bfbf9d944d0dd55f5a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 5437b99c97bf58127d942e00a05ee2342844af4865f49ad894d10e67977afc3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730618"
 ---
 # <a name="direct3d-structures"></a>Estructuras de Direct3D
 
-Esta sección contiene información sobre las estructuras utilizadas con Direct3D.
+Esta sección contiene información sobre las estructuras usadas con Direct3D.
 
 -   [**D3DADAPTER \_ IDENTIFIER9**](d3dadapter-identifier9.md)
 -   [**D3DBOX**](d3dbox.md)
@@ -40,7 +40,7 @@ Esta sección contiene información sobre las estructuras utilizadas con Direct3
 
      
 
--   [**\_Parámetros de creación de D3DDEVICE \_**](d3ddevice-creation-parameters.md)
+-   [**PARÁMETROS DE CREACIÓN DE \_ DISPOSITIVOS D3D \_**](d3ddevice-creation-parameters.md)
 -   [**D3DDEVINFO \_ D3D9BANDWIDTHTIMINGS**](d3ddevinfo-d3d9bandwidthtimings.md)
 -   [**D3DDEVINFO \_ D3D9CACHEUTILIZATION**](d3ddevinfo-d3d9cacheutilization.md)
 -   [**D3DDEVINFO \_ D3D9INTERFACETIMINGS**](d3ddevinfo-d3d9interfacetimings.md)
@@ -73,12 +73,12 @@ Esta sección contiene información sobre las estructuras utilizadas con Direct3
 -   [**D3DGAMMARAMP**](d3dgammaramp.md)
 -   [**D3DINDEXBUFFER \_ DESC**](d3dindexbuffer-desc.md)
 -   [**D3DLIGHT9**](d3dlight9.md)
--   [**Cuadro de D3DLOCKED \_**](d3dlocked-box.md)
--   [**D3DLOCKED \_ Rect**](d3dlocked-rect.md)
+-   [**D3DLOCKED \_ BOX**](d3dlocked-box.md)
+-   [**D3DLOCKED \_ RECT**](d3dlocked-rect.md)
 -   [**D3DMATERIAL9**](d3dmaterial9.md)
 -   [**D3DMATRIX**](d3dmatrix.md)
 -   [**D3DMEMORYPRESSURE**](d3dmemorypressure.md)
--   [**Parámetros de D3DPRESENT \_**](d3dpresent-parameters.md)
+-   [**PARÁMETROS D3DPRESENT \_**](d3dpresent-parameters.md)
 -   
 
     |                                                                                                                                                                    |
@@ -91,12 +91,12 @@ Esta sección contiene información sobre las estructuras utilizadas con Direct3
 
 -   [**D3DPSHADERCAPS2 \_ 0**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dpshadercaps2_0)
 -   [**D3DRANGE**](d3drange.md)
--   [**Estado de D3DRASTER \_**](d3draster-status.md)
+-   [**D3DRASTER \_ STATUS**](d3draster-status.md)
 -   [**D3DRECT**](d3drect.md)
--   [**Información de D3DRECTPATCH \_**](d3drectpatch-info.md)
+-   [**INFORMACIÓN DE D3DRECTPATCH \_**](d3drectpatch-info.md)
 -   [**D3DRESOURCESTATS**](d3dresourcestats.md)
 -   [**D3DSURFACE \_ DESC**](d3dsurface-desc.md)
--   [**Información de D3DTRIPATCH \_**](d3dtripatch-info.md)
+-   [**INFORMACIÓN DE D3DTRIPATCH \_**](d3dtripatch-info.md)
 -   [**D3DVECTOR**](d3dvector.md)
 -   [**D3DVERTEXBUFFER \_ DESC**](d3dvertexbuffer-desc.md)
 -   [**D3DVERTEXELEMENT9**](d3dvertexelement9.md)

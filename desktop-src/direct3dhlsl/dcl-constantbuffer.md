@@ -49,7 +49,7 @@ Declara un búfer constante de sombreador.
 </tr>
 <tr class="even">
 <td><span id="AccessPattern"></span><span id="accesspattern"></span><span id="ACCESSPATTERN"></span><em>AccessPattern</em><br/></td>
-<td>[in] La forma en que el código del sombreador tendrá acceso al búfer, que es una de las siguientes: <br/> 
+<td>[in] La forma en que el código del sombreador tendrá acceso al búfer, que es uno de los siguientes: <br/> 
 <table>
 <thead>
 <tr class="header">

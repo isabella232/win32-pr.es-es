@@ -1,9 +1,9 @@
 ---
-title: Mensaje de BCM_GETIMAGELIST (commctrl. h)
-description: Obtiene la estructura del botón \_ ImageList que describe la lista de imágenes asignada a un control de botón. Puede enviar este mensaje explícitamente o utilizar la \_ macro Button GetImageList.
+title: BCM_GETIMAGELIST mensaje (Commctrl.h)
+description: Obtiene la estructura BUTTON \_ IMAGELIST que describe la lista de imágenes asignada a un control de botón. Puede enviar este mensaje explícitamente o usar la \_ macro Button GetImageList.
 ms.assetid: 79383758-53d4-4955-b472-befd338cbec6
 keywords:
-- BCM_GETIMAGELIST controles de mensajes de Windows
+- BCM_GETIMAGELIST controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b0c28e997e23d6df63150fe2283d04be1a8c0d4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ba74f358e80871ffad4822fd8088ca6aeb58521d8878254ed920356db5a6daf2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117833916"
 ---
-# <a name="bcm_getimagelist-message"></a>\_Mensaje GETIMAGELIST de BCM
+# <a name="bcm_getimagelist-message"></a>Mensaje \_ GETIMAGELIST de BCM
 
-Obtiene la estructura del [**botón \_ ImageList**](/windows/desktop/api/Commctrl/ns-commctrl-button_imagelist) que describe la lista de imágenes asignada a un control de botón. Puede enviar este mensaje explícitamente o utilizar la macro [**Button \_ GetImageList**](/windows/desktop/api/Commctrl/nf-commctrl-button_getimagelist) .
+Obtiene la [**estructura BUTTON \_ IMAGELIST**](/windows/desktop/api/Commctrl/ns-commctrl-button_imagelist) que describe la lista de imágenes asignada a un control de botón. Puede enviar este mensaje explícitamente o usar la macro [**\_ Button GetImageList.**](/windows/desktop/api/Commctrl/nf-commctrl-button_getimagelist)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,25 +32,25 @@ Obtiene la estructura del [**botón \_ ImageList**](/windows/desktop/api/Commctr
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**de \_ ImageList de botón**](/windows/desktop/api/Commctrl/ns-commctrl-button_imagelist) que contiene información de la lista de imágenes.
+Puntero a una estructura [**\_ BUTTON IMAGELIST**](/windows/desktop/api/Commctrl/ns-commctrl-button_imagelist) que contiene información de lista de imágenes.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el mensaje se realiza correctamente, devuelve **true**. En caso contrario, devuelve **false**.
+Si el mensaje se realiza correctamente, devuelve **TRUE.** De lo contrario, **devuelve FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -58,11 +58,11 @@ Si el mensaje se realiza correctamente, devuelve **true**. En caso contrario, de
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

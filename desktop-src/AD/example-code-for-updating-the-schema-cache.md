@@ -16,9 +16,9 @@ ms.locfileid: "118189796"
 ---
 # <a name="example-code-for-updating-the-schema-cache"></a>Código de ejemplo para actualizar la caché de esquemas
 
-Las siguientes funciones de C/C++ obtienen el nombre DNS del maestro de esquema (GetSchemaMasterDNSName) y actualizan la caché de esquemas en el maestro de esquema (UpdateSchemaMasterCache). Para usar estas funciones, llame a GetSchemaMasterDNSName para obtener el nombre DNS maestro del esquema, pase el nombre DNS maestro de esquema a UpdateSchemaMasterCache y llame a CoTaskMemFree en la cadena que contiene el nombre DNS maestro del esquema.
+Las siguientes funciones de C/C++ obtienen el nombre DNS del maestro de esquema (GetSchemaMasterDNSName) y actualizan la caché de esquemas en el maestro de esquema (UpdateSchemaMasterCache). Para usar estas funciones, llame a GetSchemaMasterDNSName para obtener el nombre DNS maestro de esquema, pase el nombre DNS maestro de esquema a UpdateSchemaMasterCache y llame a CoTaskMemFree en la cadena que contiene el nombre DNS maestro de esquema.
 
-Para obtener más información, vea [Actualizar la caché de esquemas.](updating-the-schema-cache.md)
+Para obtener más información, vea [Actualización de la caché de esquemas.](updating-the-schema-cache.md)
 
 
 ```C++

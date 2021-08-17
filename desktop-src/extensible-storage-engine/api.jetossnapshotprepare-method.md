@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetOSSnapshotPrepare (método)'
-title: Método API. JetOSSnapshotPrepare
+description: Más información sobre el método Api.JetOSSnapshotPrepare
+title: Método Api.JetOSSnapshotPrepare
 TOCTitle: 'JetOSSnapshotPrepare method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetOSSnapshotPrepare(Microsoft.Isam.Esent.Interop.JET_OSSNAPID@,Microsoft.Isam.Esent.Interop.SnapshotPrepareGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetossnapshotprepare(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0ac304cf522e7c99a2495925da8571b2139c0a69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d6e863c13ee46267e18133afc825e9362acfe44d58b64b22bc5105ab8c164bfe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117902965"
 ---
-# <a name="apijetossnapshotprepare-method"></a>Método API. JetOSSnapshotPrepare
+# <a name="apijetossnapshotprepare-method"></a>Método Api.JetOSSnapshotPrepare
 
-Comienza los preparativos para una sesión de instantánea. Una sesión de instantáneas es un breve intervalo de tiempo en el que el motor no emite ninguna e/s de escritura en el disco, de modo que el motor puede participar en una sesión de instantáneas de volumen (cuando está controlada por un escritor de instantáneas).
+Comienza los preparativos para una sesión de instantánea. Una sesión de instantánea es un breve intervalo de tiempo en el que el motor no emite ninguna E/S de escritura en el disco, de modo que el motor pueda participar en una sesión de instantáneas de volumen (cuando está controlado por un escritor de instantáneas).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,14 +62,14 @@ public static void JetOSSnapshotPrepare(
 #### <a name="parameters"></a>Parámetros
 
   - instantánea  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
     
     Devuelve el identificador de la sesión de instantánea.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. SnapshotPrepareGrbit](./snapshotpreparegrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.SnapshotPrepareGrbit](./snapshotpreparegrbit-enumeration.md)  
     
     Opciones de instantánea.
 
@@ -77,8 +77,8 @@ public static void JetOSSnapshotPrepare(
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

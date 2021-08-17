@@ -1,7 +1,7 @@
 ---
-description: Indica que se ha detenido la reproducción de DVD. Este evento se envía cuando se completa un título o un capítulo y el navegador de DVD no encuentra ninguna otra instrucción de bifurcación para la posterior reproducción. El evento no se envía cuando la aplicación detiene la reproducción.
+description: Indica que se ha detenido la reproducción de DVD. Este evento se envía cuando se completa un título o capítulo y el navegador de DVD no encuentra ninguna otra instrucción de bifurcación para la reproducción posterior. El evento no se envía cuando la aplicación detiene la reproducción.
 ms.assetid: c8617307-d70e-48af-8e85-69105595aa10
-title: EC_DVD_PLAYBACK_STOPPED (Dvdevcode. h)
+title: EC_DVD_PLAYBACK_STOPPED (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 2304d83aea532b764777b683c57c3bdd4d5df79a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7a5f0b1b66e9d78309e33981910da467757a2b606b967cee5b78e86c4cc0049b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820461"
 ---
-# <a name="ec_dvd_playback_stopped"></a>reproducción de DVD de EC \_ \_ \_ detenida
+# <a name="ec_dvd_playback_stopped"></a>REPRODUCCIÓN \_ DE DVD DE EC \_ \_ DETENIDA
 
-Indica que se ha detenido la reproducción de DVD. Este evento se envía cuando se completa un título o un capítulo y el [navegador de DVD](dvd-navigator-filter.md) no encuentra ninguna otra instrucción de bifurcación para la posterior reproducción. El evento no se envía cuando la aplicación detiene la reproducción.
+Indica que se ha detenido la reproducción de DVD. Este evento se envía cuando se completa un título o capítulo y el navegador [de DVD](dvd-navigator-filter.md) no encuentra ninguna otra instrucción de bifurcación para la reproducción posterior. El evento no se envía cuando la aplicación detiene la reproducción.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -31,7 +31,7 @@ Indica que se ha detenido la reproducción de DVD. Este evento se envía cuando 
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Un miembro de la enumeración [**\_ \_ Stopped de DVD PB**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_pb_stopped) , que indica por qué se detuvo la reproducción.
+Miembro de la enumeración [**DVD \_ PB \_ STOPPED,**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_pb_stopped) que indica por qué se detuvo la reproducción.
 
 </dd> <dt>
 
@@ -42,9 +42,9 @@ Cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este evento se desencadena en todos los dominios.
+Este evento se genera en todos los dominios.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,11 +52,11 @@ Este evento se desencadena en todos los dominios.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdevcode.h (incluir Dshow.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,17 +1,17 @@
 ---
 description: Contiene el identificador del elemento en el servicio de sincronización remota. Se usa para comparar un archivo del sistema con los que están disponibles en la nube.
 ms.assetid: 22d98d5c-58ac-4dfc-a7e7-74c2a58b730b
-title: System. Supplemental. ResourceId
+title: System.Supplemental.ResourceId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: effe24bf31fb6953a3d41458307452129f33672f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 993a0c6410b5fd009480dc03ba2f20bef37bd5a976b555614b8a55a35aac2177
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117864518"
 ---
-# <a name="systemsupplementalresourceid"></a>System. Supplemental. ResourceId
+# <a name="systemsupplementalresourceid"></a>System.Supplemental.ResourceId
 
 Contiene el identificador del elemento en el servicio de sincronización remota. Se usa para comparar un archivo del sistema con los que están disponibles en la nube.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

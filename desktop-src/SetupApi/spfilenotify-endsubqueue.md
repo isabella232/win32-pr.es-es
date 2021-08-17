@@ -1,19 +1,19 @@
 ---
-description: La notificación de ENDSUBQUEUE de SPFILENOTIFY \_ se envía a la función de devolución de llamada cuando la cola completa todas las operaciones de la subcola de eliminación, cambio de nombre o copia.
+description: La notificación SPFILENOTIFY ENDSUBQUEUE se envía a la función de devolución de llamada cuando la cola completa todas las operaciones de la subcola de eliminación, cambio de nombre \_ o copia.
 ms.assetid: 76bd027a-0f00-46e3-b502-0c97827308a8
-title: Mensaje de SPFILENOTIFY_ENDSUBQUEUE (setupapi. h)
+title: SPFILENOTIFY_ENDSUBQUEUE mensaje (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7eadc7546487b308313b7cb31088a22420e27af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72645aafbe94e3f90d11f8ccf65ed8c6006301db811bccd80936cadbf0478dcc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117964554"
 ---
-# <a name="spfilenotify_endsubqueue-message"></a>SPFILENOTIFY \_ ENDSUBQUEUE
+# <a name="spfilenotify_endsubqueue-message"></a>Mensaje SPFILENOTIFY \_ ENDSUBQUEUE
 
-La notificación de **\_ ENDSUBQUEUE de SPFILENOTIFY** se envía a la función de devolución de llamada cuando la cola completa todas las operaciones de la subcola de eliminación, cambio de nombre o copia.
+La **notificación SPFILENOTIFY \_ ENDSUBQUEUE** se envía a la función de devolución de llamada cuando la cola completa todas las operaciones de la subcola de eliminación, cambio de nombre o copia.
 
 
 ```C++
@@ -29,10 +29,10 @@ SPFILENOTIFY_ENDSUBQUEUE
 
 <dl> <dt>
 
-*Parámetro1* 
+*Param1* 
 </dt> <dd>
 
-Subcola que se ha completado. Este parámetro puede ser uno de los siguientes valores FILEOP \_ Delete, FILEOP \_ Rename o FILEOP \_ Copy.
+Subcola que se ha completado. Este parámetro puede ser uno de los siguientes valores FILEOP \_ DELETE, FILEOP \_ RENAME o FILEOP \_ COPY.
 
 </dd> <dt>
 
@@ -53,9 +53,9 @@ Se omite el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 

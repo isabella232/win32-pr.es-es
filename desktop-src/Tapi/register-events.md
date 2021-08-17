@@ -1,5 +1,5 @@
 ---
-description: En los ejemplos de código siguientes se muestra la implementación de un controlador de eventos simple, el registro de la interfaz de eventos TAPI principal, la configuración del filtro de eventos y el registro para las notificaciones de llamada.
+description: En los ejemplos de código siguientes se muestra la implementación de un controlador de eventos simple, el registro de la interfaz de eventos TAPI principal, la configuración del filtro de eventos y el registro de notificaciones de llamada.
 ms.assetid: e7662a26-d7b2-4bff-aa72-e38b58bc15df
 title: Registro de eventos
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "117761182"
 ---
 # <a name="register-events"></a>Registro de eventos
 
-En los ejemplos de código siguientes se muestra la implementación de un controlador de eventos simple, el registro de la interfaz de eventos TAPI principal, la configuración del filtro de eventos y el registro para las notificaciones de llamada.
+En los ejemplos de código siguientes se muestra la implementación de un controlador de eventos simple, el registro de la interfaz de eventos TAPI principal, la configuración del filtro de eventos y el registro de notificaciones de llamada.
 
 El controlador de eventos que se muestra es un ejemplo en lugar de un requisito. El objetivo principal es asegurarse de que el subproceso que recibe eventos realiza un procesamiento mínimo antes de pasar trabajo a otro subproceso. Esto evita que el controlador de eventos se convierta en un problema de rendimiento en situaciones de alta carga de eventos.
 
-Antes de usar este ejemplo de código, debe realizar las operaciones en [Inicializar TAPI](initialize-tapi.md) y [Seleccionar una dirección](select-an-address.md).
+Antes de usar este ejemplo de código, debe realizar las operaciones de [Inicializar TAPI](initialize-tapi.md) y [Seleccionar una dirección](select-an-address.md).
 
 > [!Note]  
 > Este ejemplo no tiene la comprobación de errores y las versiones adecuadas para el código de producción.

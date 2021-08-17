@@ -1,9 +1,9 @@
 ---
-title: 'RWByteAddressBuffer:: Load2 (uint) (función)'
-description: 'Obtiene dos valores. | RWByteAddressBuffer:: Load2 (uint) (función)'
+title: Función RWByteAddressBuffer::Load2(uint)
+description: Obtiene dos valores. | Función RWByteAddressBuffer::Load2(uint)
 ms.assetid: a00396cb-e68d-479e-ab3f-4c52f2cfc3bc
 keywords:
-- Load2 de función HLSL
+- Función Load2 HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7595477448deb087b94664100710690a6f386a94
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0f71fd2d0585803fb10de3fddfa29c10838d73e32ba7d63b5619be91b042cb71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117725062"
 ---
-# <a name="rwbyteaddressbufferload2uint-function"></a>RWByteAddressBuffer:: Load2 (uint) (función)
+# <a name="rwbyteaddressbufferload2uint-function"></a>Función RWByteAddressBuffer::Load2(uint)
 
 Obtiene dos valores.
 
@@ -36,7 +36,7 @@ uint2 Load2(
 
 <dl> <dt>
 
-*Dirección* \[ de de\]
+*address* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -51,13 +51,13 @@ Tipo: **uint2**
 
 Dos valores.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -72,7 +72,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 [Métodos Load2](rwbyteaddressbuffer-load2.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

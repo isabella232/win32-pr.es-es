@@ -1,11 +1,11 @@
 ---
-title: atributo MS-WMI-Author
+title: Atributo ms-WMI-Author
 description: Autor de una instancia de una clase.
 ms.assetid: 30f3763b-dc7d-4e01-a3a9-9246dd06299b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-WMI-Author
-- 'msWMI: esquema de AD de atributo de autor'
+- Esquema de AD del atributo ms-WMI-Author
+- Esquema de AD del atributo msWMI-Author
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c0cb7bf2d6215c3de3b4cf656d3777d94e8f719
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5f13ffe007e537fe8d3f63d99aafd768cce4e914af2afb454d3bfed285a908d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117837801"
 ---
-# <a name="ms-wmi-author-attribute"></a>atributo MS-WMI-Author
+# <a name="ms-wmi-author-attribute"></a>Atributo ms-WMI-Author
 
 Autor de una instancia de una clase.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Autor de MS-WMI                               |
-| Nombre para mostrar de LDAP | msWMI: autor                                |
-| Tamaño              | Menos de 25 caracteres.                    |
-| Actualizar privilegio  | Administrador de directiva de grupo                  |
+| CN                | ms-WMI-Author                               |
+| Ldap-Display-Name | msWMI-Author                                |
+| Size              | Menos de 25 caracteres.                    |
+| Actualizar privilegios  | directiva de grupo administrador                  |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1623                     |
-| System-ID-GUID    | 6366c0c1-6972-4e66-b3a5-1d52ad0c0547        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 6366c0c1-6972-4e66-b3a5-1d52ad0c0547        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,20 +52,20 @@ Autor de una instancia de una clase.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
-| System-Only            | False                                                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                                                       |
-| Está indexado             | False                                                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                               |
+| System-Only            | Falso                                                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-SOM**](c-mswmi-som.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ Autor de una instancia de una clase.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
-| System-Only            | False                                                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                                                       |
-| Está indexado             | False                                                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                               |
+| System-Only            | Falso                                                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-SOM**](c-mswmi-som.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Autor de una instancia de una clase.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
-| System-Only            | False                                                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                                                       |
-| Está indexado             | False                                                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                               |
+| System-Only            | Falso                                                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-SOM**](c-mswmi-som.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Autor de una instancia de una clase.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
-| System-Only            | False                                                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                                                       |
-| Está indexado             | False                                                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                               |
+| System-Only            | Falso                                                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-SOM**](c-mswmi-som.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -136,20 +136,20 @@ Autor de una instancia de una clase.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
-| System-Only            | False                                                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                                                       |
-| Está indexado             | False                                                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                               |
+| System-Only            | Falso                                                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-SOM**](c-mswmi-som.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 

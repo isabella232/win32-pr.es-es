@@ -1,6 +1,6 @@
 ---
 title: Función Texture2DArray::GatherGreen(S,float,int,uint)
-description: Devuelve los componentes verdes de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos. | Función Texture2DArray::GatherGreen(S,float,int,uint)
+description: Devuelve los componentes verdes de los cuatro valores de texel que se usarían en una operación de filtrado bi linear, junto con el estado de asignación de mosaicos. | Función Texture2DArray::GatherGreen(S,float,int,uint)
 ms.assetid: 90BEB8B3-F851-469B-B55A-E51CB8463CC8
 keywords:
 - Función GatherGreen HLSL
@@ -22,7 +22,7 @@ ms.locfileid: "117723749"
 ---
 # <a name="texture2darraygathergreensfloatintuint-function"></a>Función Texture2DArray::GatherGreen(S,float,int,uint)
 
-Devuelve los componentes verdes de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos.
+Devuelve los componentes verdes de los cuatro valores de texel que se usarían en una operación de filtrado bi linear, junto con el estado de asignación de mosaicos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,7 +74,7 @@ Desplazamiento aplicado a las coordenadas de textura antes del muestreo.
 
 Tipo: **uint**
 
-Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación Sample **,** **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación **Sample**, **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
@@ -86,7 +86,7 @@ Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
 ## <a name="remarks"></a>Comentarios
 
-Las muestras de textura se pueden usar para la interpolación bilineal.
+Los ejemplos de textura se pueden usar para la interpolación bilineal.
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
@@ -100,11 +100,11 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Métodos gatherGreen](texture2darray-gathergreen.md)
+[Métodos GatherGreen](texture2darray-gathergreen.md)
 </dt> </dl>
 
  
