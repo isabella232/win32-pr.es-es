@@ -1,21 +1,21 @@
 ---
-description: A continuación se encuentra el código fuente completo de la aplicación de cliente Winsock TCP/IP básica.
+description: A continuación se muestra el código fuente completo de la aplicación cliente TCP/IP básica de Winsock.
 ms.assetid: 42e003d8-1471-4f7f-b01a-23c7041036ea
-title: Completar el código de cliente Winsock
+title: Completar el código de cliente de Winsock
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a9000aa117f7262bcd11663eee6fe8f5791538b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54584b21e3236e8c82bc66f16586af8d07ad04af63be4b2229d76116f8aa7ad2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117741442"
 ---
-# <a name="complete-winsock-client-code"></a>Completar el código de cliente Winsock
+# <a name="complete-winsock-client-code"></a>Completar el código de cliente de Winsock
 
-A continuación se encuentra el código fuente completo de la aplicación de cliente Winsock TCP/IP básica.
+A continuación se muestra el código fuente completo de la aplicación cliente TCP/IP básica de Winsock.
 
-## <a name="winsock-client-source-code"></a>Código fuente del cliente Winsock
+## <a name="winsock-client-source-code"></a>Código fuente del cliente de Winsock
 
 
 ```C++
@@ -152,10 +152,10 @@ int __cdecl main(int argc, char **argv)
 
 <dl> <dt>
 
-[Introducción con Winsock](getting-started-with-winsock.md)
+[Tareas iniciales con Winsock](getting-started-with-winsock.md)
 </dt> <dt>
 
-[Ejecución del ejemplo de código de servidor y cliente Winsock](finished-server-and-client-code.md)
+[Ejecución del ejemplo de código de cliente y servidor de Winsock](finished-server-and-client-code.md)
 </dt> <dt>
 
 [Completar el código del servidor Winsock](complete-server-code.md)

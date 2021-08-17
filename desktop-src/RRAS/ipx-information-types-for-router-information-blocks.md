@@ -22,7 +22,7 @@ Los siguientes tipos de información se enumeran en Ipxrtdef.h. Use estos tipos 
 | TIPO DE INFORMACIÓN \_ DEL \_ ADAPTADOR DE \_ IPX                      | INFORMACIÓN DEL ADAPTADOR DE IPX \_ \_                                             |
 | TIPO DE INFORMACIÓN GLOBAL DE IPX \_ \_ \_                       | INFORMACIÓN GLOBAL DE IPX \_ \_                                              |
 | TIPO DE INFORMACIÓN \_ DE \_ INTERFAZ \_ IPX                    | [**INFORMACIÓN DE \_ IPX IF \_**](/windows/desktop/api/Ipxrtdef/ns-ipxrtdef-ipx_if_info)                           |
-| IPX \_ EN TIPO DE INFORMACIÓN GLOBAL DE FILTRO DE \_ \_ \_ \_ \_ TRÁFICO  | INFORMACIÓN GLOBAL \_ DEL FILTRO DE TRÁFICO \_ \_ IPX \_                             |
+| IPX \_ EN EL TIPO DE INFORMACIÓN GLOBAL DE FILTRO DE \_ \_ \_ \_ \_ TRÁFICO  | INFORMACIÓN GLOBAL \_ DEL FILTRO DE TRÁFICO \_ \_ IPX \_                             |
 | TIPO DE INFORMACIÓN GLOBAL DE FILTRO DE TRÁFICO DE SALIDA \_ \_ \_ \_ \_ DE \_ IPX | INFORMACIÓN GLOBAL \_ DEL FILTRO DE TRÁFICO \_ \_ IPX \_                             |
 | IPX \_ EN EL TIPO DE INFORMACIÓN DE FILTRO DE \_ \_ \_ \_ TRÁFICO          | INFORMACIÓN DEL FILTRO DE TRÁFICO IPX \_ \_ \_                                     |
 | TIPO DE INFORMACIÓN DE FILTRO DE TRÁFICO DE SALIDA \_ \_ \_ \_ DE \_ IPX         | INFORMACIÓN DEL FILTRO DE TRÁFICO IPX \_ \_ \_                                     |

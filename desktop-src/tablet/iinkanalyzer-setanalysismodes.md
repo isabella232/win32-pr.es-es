@@ -1,7 +1,7 @@
 ---
-description: Modifica las marcas que controlan cómo el IInkAnalyzer realiza el análisis de tinta.
+description: Modifica las marcas que controlan cómo IInkAnalyzer realiza el análisis de entrada de lápiz.
 ms.assetid: cb82edd0-1f15-4313-a286-1fcd715ac6df
-title: 'IInkAnalyzer:: SetAnalysisModes (método) (IACom. h)'
+title: Método IInkAnalyzer::SetAnalysisModes (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 826d31fd5b61db2332ef953d55b2cf6c6331995b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7edd167cd40b80a01fd2f23243c931fe6a15795da08d7735b6e2433c462ee01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119091514"
 ---
-# <a name="iinkanalyzersetanalysismodes-method"></a>IInkAnalyzer:: SetAnalysisModes (método)
+# <a name="iinkanalyzersetanalysismodes-method"></a>IInkAnalyzer::SetAnalysisModes (método)
 
-Modifica las marcas que controlan cómo el [**IInkAnalyzer**](iinkanalyzer.md) realiza el análisis de tinta.
+Modifica las marcas que controlan cómo [**IInkAnalyzer**](iinkanalyzer.md) realiza el análisis de entrada de lápiz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,31 +39,31 @@ HRESULT SetAnalysisModes(
 
 <dl> <dt>
 
-*analysisMode* \[ de\]
+*analysisMode* \[ En\]
 </dt> <dd>
 
-Combinación bit a bit de los valores de la enumeración [**AnalysisModes**](analysismodes.md) .
+Combinación bit a bit de los valores [**de enumeración AnalysisModes.**](analysismodes.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -73,16 +73,16 @@ Para obtener una descripción de los valores devueltos, vea [clases e interfaces
 [**AnalysisModes**](analysismodes.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: Analyze (método)**](iinkanalyzer-analyze.md)
+[**IInkAnalyzer::Analyze (Método)**](iinkanalyzer-analyze.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: BackgroundAnalyze (método)**](iinkanalyzer-backgroundanalyze.md)
+[**IInkAnalyzer::BackgroundAnalyze (Método)**](iinkanalyzer-backgroundanalyze.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: GetAnalysisModes (método)**](iinkanalyzer-getanalysismodes.md)
+[**IInkAnalyzer::GetAnalysisModes (Método)**](iinkanalyzer-getanalysismodes.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

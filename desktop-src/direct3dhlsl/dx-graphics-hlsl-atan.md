@@ -3,7 +3,7 @@ title: atan
 description: Devuelve la arcotangente del valor especificado.
 ms.assetid: e3ce3ac3-1012-414f-a193-102208083e39
 keywords:
-- HLSL de atan
+- atan HLSL
 topic_type:
 - apiref
 api_name:
@@ -77,7 +77,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

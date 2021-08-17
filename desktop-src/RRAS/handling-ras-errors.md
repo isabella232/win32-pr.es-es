@@ -15,9 +15,9 @@ ms.locfileid: "117791283"
 ---
 # <a name="handling-ras-errors"></a>Control de errores ras
 
-Cuando se produce un error, el Connection Manager remoto invoca el controlador de notificaciones del cliente. La notificación indica el estado de conexión cuando se produjo el error y un código que identifica el error. En estos casos, el controlador de notificaciones debe llamar [**a RasHangUp**](/windows/desktop/api/Ras/nf-ras-rashangupa) para finalizar la conexión RAS.
+Cuando se produce un error, el Connection Manager remoto invoca el controlador de notificaciones del cliente. La notificación indica el estado de conexión cuando se produjo el error y un código que identifica el error. En estos casos, el controlador de notificaciones debe llamar [**a RasHangUp para**](/windows/desktop/api/Ras/nf-ras-rashangupa) finalizar la conexión RAS.
 
-Los códigos de error que identifican errores RAS se definen en el archivo raserror.h. El cliente RAS puede usar la [**función RasGetErrorString**](/windows/desktop/api/Ras/nf-ras-rasgeterrorstringa) para obtener una cadena de presentación que describa el error. Consulte [Códigos de error de enrutamiento y acceso remoto](routing-and-remote-access-error-codes.md) para obtener una descripción de estos errores.
+Los códigos de error que identifican los errores ras se definen en el archivo raserror.h. El cliente RAS puede usar la [**función RasGetErrorString**](/windows/desktop/api/Ras/nf-ras-rasgeterrorstringa) para obtener una cadena de presentación que describa el error. Consulte [Códigos de error de enrutamiento y acceso remoto](routing-and-remote-access-error-codes.md) para obtener una descripción de estos errores.
 
  
 

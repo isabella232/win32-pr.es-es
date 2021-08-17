@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 903522b63754ff7972e4cdcf5221946442497896
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 51584bc38c49345f6bb1d940aed24a052e9a4f9cd05fc2dc84246a6ba1168fd0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953504"
 ---
-# <a name="ctransformfilterpause-method"></a>Método CTransformFilter.Pause
+# <a name="ctransformfilterpause-method"></a>CTransformFilter.Pause (método)
 
 El `Pause` método pausa el filtro. Este método implementa el [**método IMediaFilter::P ause.**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-pause)
 
@@ -46,7 +46,7 @@ Devuelve S \_ OK u otro valor **HRESULT.**
 
 ## <a name="remarks"></a>Comentarios
 
-Este método llama al [**método StartStreaming.**](ctransformfilter-startstreaming.md) El **método StartStreaming** no hace nada en la clase base, pero la clase derivada puede invalidarla.
+Este método llama al [**método StartStreaming.**](ctransformfilter-startstreaming.md) El **método StartStreaming** no hace nada en la clase base, pero la clase derivada puede invalidarlo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,12 +54,12 @@ Este método llama al [**método StartStreaming.**](ctransformfilter-startstream
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

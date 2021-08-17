@@ -73,7 +73,7 @@ Si hay [**un elemento PnPXDeviceCategory,**](pnpxdevicecategory.md)  al menos un
 
 
 
-| Etiqueta | Valor |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | No            |

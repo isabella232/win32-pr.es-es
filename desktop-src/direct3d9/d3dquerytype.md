@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 0778e879a6147c185964808ee4b4c302bd211ef3
-ms.sourcegitcommit: bfab92e16614d4fa54b044917358261232bda81a
+ms.openlocfilehash: b60f6a52f782efee8647828509e04b99a2ffd94489b9db215158090497947229
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "113489699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117732326"
 ---
 # <a name="d3dquerytype-enumeration"></a>D3DQUERYTYPE (enumeración)
 
@@ -70,7 +70,7 @@ Consulte el administrador de recursos. Para esta consulta, las marcas de comport
 <span id="D3DQUERYTYPE_VERTEXSTATS"></span><span id="d3dquerytype_vertexstats"></span>**D3DQUERYTYPE \_ VERTEXSTATS**
 </dt> <dd>
 
-Consultar estadísticas de vértices.
+Consulta de estadísticas de vértices.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Consulte todos y cada uno de los eventos asincrónicos emitidos desde llamadas A
 <span id="D3DQUERYTYPE_OCCLUSION"></span><span id="d3dquerytype_occlusion"></span>**OCLUSIÓN DE D3DQUERYTYPE \_**
 </dt> <dd>
 
-Una consulta de oclusión devuelve el número de píxeles que pasan las pruebas z. Estos píxeles son para los primitivos dibujados entre el problema [**de D3DISSUE \_ BEGIN**](d3dissue-begin.md) y [**D3DISSUE \_ END.**](d3dissue-end.md) Esto permite que una aplicación compruebe el resultado de oclusión en 0. Cero está totalmente ocluido, lo que significa que los píxeles no son visibles desde la posición actual de la cámara.
+Una consulta de oclusión devuelve el número de píxeles que pasan las pruebas z. Estos píxeles son para los primitivos dibujados entre el problema [**de D3DISSUE \_ BEGIN**](d3dissue-begin.md) y [**D3DISSUE \_ END.**](d3dissue-end.md) Esto permite a una aplicación comprobar el resultado de la oclusión en 0. Cero está totalmente ocluido, lo que significa que los píxeles no son visibles desde la posición actual de la cámara.
 
 </dd> <dt>
 
@@ -98,18 +98,18 @@ Devuelve una marca de tiempo de 64 bits.
 <span id="D3DQUERYTYPE_TIMESTAMPDISJOINT"></span><span id="d3dquerytype_timestampdisjoint"></span>**D3DQUERYTYPE \_ TIMESTAMPDISJOINT**
 </dt> <dd>
 
-Use esta consulta para notificar a una aplicación si la frecuencia del contador ha cambiado desde D3DQUERYTYPE \_ TIMESTAMP.
+Use esta consulta para notificar a una aplicación si la frecuencia del contador ha cambiado con respecto a la marca de tiempo D3DQUERYTYPE. \_
 
 </dd> <dt>
 
 <span id="D3DQUERYTYPE_TIMESTAMPFREQ"></span><span id="d3dquerytype_timestampfreq"></span>**D3DQUERYTYPE \_ TIMESTAMPFREQ**
 </dt> <dd>
 
-Este resultado de la consulta es **TRUE** si no se puede garantizar que los valores de las consultas TIMESTAMP de D3DQUERYTYPE sean continuos a lo largo de la duración de la consulta \_ D3DQUERYTYPE \_ TIMESTAMPDISJOINT. De lo contrario, el resultado de la **consulta es FALSE.**
+Este resultado de consulta es **TRUE** si no se puede garantizar que los valores de las consultas TIMESTAMP de D3DQUERYTYPE sean continuos a lo largo de la duración de la consulta \_ D3DQUERYTYPE \_ TIMESTAMPDISJOINT. De lo contrario, el resultado de la **consulta es FALSE.**
 
 </dd> <dt>
 
-<span id="D3DQUERYTYPE_PIPELINETIMINGS"></span><span id="d3dquerytype_pipelinetimings"></span>**CANALIZACIÓN \_ D3DQUERYTYPETIMINGS**
+<span id="D3DQUERYTYPE_PIPELINETIMINGS"></span><span id="d3dquerytype_pipelinetimings"></span>**D3DQUERYTYPE \_ PIPELINETIMINGS**
 </dt> <dd>
 
 Porcentaje de tiempo de procesamiento de datos de canalización.
@@ -123,7 +123,7 @@ Porcentaje de tiempo de procesamiento de datos en el controlador.
 
 </dd> <dt>
 
-<span id="D3DQUERYTYPE_VERTEXTIMINGS"></span><span id="d3dquerytype_vertextimings"></span>**VÉRTICES D3DQUERYTYPE \_**
+<span id="D3DQUERYTYPE_VERTEXTIMINGS"></span><span id="d3dquerytype_vertextimings"></span>**VÉRTICES \_ D3DQUERYTYPETIMINGS**
 </dt> <dd>
 
 Porcentaje de tiempo de procesamiento de datos del sombreador de vértices.
@@ -154,7 +154,7 @@ Mida el rendimiento de la tasa de aciertos de caché para texturas y vértices i
 <span id="D3DQUERYTYPE_MEMORYPRESSURE"></span><span id="d3dquerytype_memorypressure"></span>**D3DQUERYTYPE \_ MEMORYPRESSURE**
 </dt> <dd>
 
-Eficacia de la asignación de memoria contenida en una [**estructura D3DMEMORYPRESSURE.**](d3dmemorypressure.md)
+Eficiencia de la asignación de memoria contenida en una [**estructura D3DMEMORYPRESSURE.**](d3dmemorypressure.md)
 
 Diferencias entre Direct3D 9 y Direct3D 9Ex:
 
@@ -176,7 +176,7 @@ Diferencias entre Direct3D 9 y Direct3D 9Ex:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,15 +1,15 @@
 ---
-description: El método PlayAtTimeInTitle inicia la reproducción en el momento especificado dentro del título especificado.
+description: El método PlayAtTimeInTitle inicia la reproducción a la hora especificada dentro del título especificado.
 ms.assetid: 82726885-8393-409b-b8a1-29a8e9e9ac65
 title: Método PlayAtTimeInTitle
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c40373b4327b6df5fc341ca392c223d464a70a8b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a33640733f7333395a4affc4dedc0ae8db3e3558bf066584cb603dfc5f906f73
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119291275"
 ---
 # <a name="playattimeintitle-method"></a>Método PlayAtTimeInTitle
 
@@ -18,7 +18,7 @@ ms.locfileid: "104494201"
 
  
 
-El `PlayAtTimeInTitle` método inicia la reproducción en el momento especificado dentro del título especificado.
+El `PlayAtTimeInTitle` método inicia la reproducción a la hora especificada dentro del título especificado.
 
 ``` syntax
 MSWebDVD.PlayAtTimeInTitle(sTime, iTitle)
@@ -28,17 +28,17 @@ MSWebDVD.PlayAtTimeInTitle(sTime, iTitle)
 
 <dl> <dt>
 
-<span id="sTime"></span><span id="stime"></span><span id="STIME"></span>*sTime*
+<span id="sTime"></span><span id="stime"></span><span id="STIME"></span>*Stime*
 </dt> <dd>
 
-Especifica la hora a la que se inicia la reproducción como una cadena. La cadena debe tener el formato "HH: mm: SS: FF" (especificando horas, minutos, segundos, fotogramas).
+Especifica la hora a la que se inicia la reproducción como una cadena. La cadena debe tener el formato "hh:mm:ss:ff" (especificando horas, minutos, segundos, fotogramas).
 
 </dd> <dt>
 
 <span id="iTitle"></span><span id="ititle"></span><span id="ITITLE"></span>*iTitle*
 </dt> <dd>
 
-Especifica el índice del título como un entero.
+Especifica el índice del título como entero.
 
 </dd> </dl>
 
@@ -46,7 +46,7 @@ Especifica el índice del título como un entero.
 
 No de devuelve ningún valor.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

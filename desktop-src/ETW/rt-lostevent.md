@@ -1,7 +1,7 @@
 ---
-description: Esta clase de tipo de evento se usa para indicar que los eventos se han perdido en una sesión en tiempo real. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase de tipo de evento se usa para indicar que los eventos se perdieron en una sesión en tiempo real. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 19c747c0-2d9f-49c5-81e4-06a870371bac
-title: RT_LostEvent (clase)
+title: RT_LostEvent clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: b689dd95aa1e078572d33de64f245e4844698d5a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d0944b843c8deb38012242111b6c5057ccf7cb8557c69caefe9a87283d2ae418
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119328745"
 ---
 # <a name="rt_lostevent-class"></a>RT \_ LostEvent (clase)
 
-Esta clase de tipo de evento se usa para indicar que los eventos se han perdido en una sesión en tiempo real.
+Esta clase de tipo de evento se usa para indicar que los eventos se perdieron en una sesión en tiempo real.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,32 +36,32 @@ class RT_LostEvent : Lost_Event
 
 ## <a name="members"></a>Miembros
 
-La clase **RT \_ LostEvent** no define ningún miembro.
+La **clase \_ RT LostEvent** no define ningún miembro.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El tipo de evento RTLostEvent indica que se han perdido uno o varios eventos. El tipo de evento RTLostBuffer indica que se han perdido uno o más búferes. Los tipos de eventos RTLostEvent y RTLostBuffer se entregan antes de procesar los eventos del búfer.
+El tipo de evento RTLostEvent indica que se perdieron uno o varios eventos. El tipo de evento RTLostBuffer indica que se perdieron uno o varios búferes. Los tipos de eventos RTLostEvent y RTLostBuffer se entregan antes de procesar eventos desde el búfer.
 
-RTLostFile indica que se perdió el archivo de copia de seguridad utilizado por el registrador automático para capturar eventos.
+RTLostFile indica que se perdió el archivo de respaldo utilizado por AutoLogger para capturar eventos.
 
-Perder eventos depende de la frecuencia con la que se registran los eventos y de cuánto tiempo dedica el consumidor a procesar los eventos.
+La pérdida de eventos depende de la frecuencia con la que se registran los eventos y de cuánto tiempo dedica el consumidor a procesar los eventos.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                      |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_Evento perdido**](lost-event.md)
+[**Evento \_ perdido**](lost-event.md)
 </dt> </dl>
 
  

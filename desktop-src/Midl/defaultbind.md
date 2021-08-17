@@ -1,9 +1,9 @@
 ---
 title: defaultbind (atributo)
-description: El atributo \ defaultbind \ indica la única propiedad enlazable que mejor representa el objeto.
+description: El atributo \ defaultbind\ indica la propiedad enlazable única que mejor representa el objeto.
 ms.assetid: 8cf0922a-3d7c-404d-b4fd-edbd772987bf
 keywords:
-- defaultbind (atributo) MIDL
+- atributo defaultbind MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 518c11da8d5f9b0762843c5b69292562a94b80c4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: a981d0469219a32b5931507f5df6d742e84fa67e6676e44c24edfb823f521a3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117807301"
 ---
 # <a name="defaultbind-attribute"></a>defaultbind (atributo)
 
-El atributo **\[ defaultbind \]** indica la única propiedad enlazable que representa mejor el objeto.
+El **\[ atributo \] defaultbind** indica la propiedad enlazable única que mejor representa el objeto.
 
 ``` syntax
 [
@@ -37,28 +37,28 @@ interface | dispinterface interface-name
 
 <dl> <dt>
 
-*interfaz-atributo-lista* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Especifica una lista de uno o más atributos que se aplican a la interfaz en conjunto. Cuando dos o más atributos de interfaz están presentes, deben separarse con comas.
+Especifica una lista de uno o varios atributos que se aplican a la interfaz en su conjunto. Cuando hay dos o más atributos de interfaz, deben estar separados por comas.
 
 </dd> <dt>
 
-*nombre de interfaz* 
+*interface-name* 
 </dt> <dd>
 
 Especifica el nombre de la interfaz.
 
 </dd> <dt>
 
-*lista de atributos* 
+*attribute-list* 
 </dt> <dd>
 
-Especifica una lista de uno o más atributos que se aplican a la función. Cuando dos o más atributos de interfaz están presentes, deben separarse con comas.
+Especifica una lista de uno o varios atributos que se aplican a la función. Cuando hay dos o más atributos de interfaz, deben estar separados por comas.
 
 </dd> <dt>
 
-*ReturnType* 
+*returntype* 
 </dt> <dd>
 
 Especifica el tipo de valor devuelto de la función.
@@ -68,7 +68,7 @@ Especifica el tipo de valor devuelto de la función.
 *nombre-de-la-función* 
 </dt> <dd>
 
-Especifica el nombre de la función a la que se aplicará el atributo **\[ defaultbind \]** .
+Especifica el nombre de la función a la que se aplicará el atributo **\[ defaultbind. \]**
 
 </dd> <dt>
 
@@ -79,11 +79,11 @@ Lista de parámetros de función.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las propiedades que tienen el atributo **\[ defaultbind \]** también deben tener el **\[** atributo [**enlazable**](bindable.md) **\]** . Solo una propiedad de una interfaz o dispinterface puede tener el atributo **\[ defaultbind \]** .
+Las propiedades que tienen **\[ el atributo \] defaultbind** también deben tener el atributo **\[** [**enlazable.**](bindable.md) **\]** Solo una propiedad de una interfaz o dispinterface puede tener el **\[ atributo defaultbind. \]**
 
-Este atributo lo usan los contenedores que tienen un modelo de usuario que implica un enlace a un objeto en lugar de enlazar a una propiedad de un objeto. Un objeto puede admitir el enlace de datos pero no tiene este atributo.
+Los contenedores que tienen un modelo de usuario que implican el enlace a un objeto en lugar de enlazar a una propiedad de un objeto usan este atributo. Un objeto puede admitir el enlace de datos, pero no tiene este atributo.
 
 ### <a name="flags"></a>Marcas
 
@@ -120,12 +120,12 @@ interface MyObject : IUnknown
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

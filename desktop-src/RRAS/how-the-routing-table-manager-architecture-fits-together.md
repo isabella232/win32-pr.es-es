@@ -1,9 +1,9 @@
 ---
-title: Cómo encaja la arquitectura del administrador de tablas de enrutamiento
+title: Cómo encaja la arquitectura de Routing Table Manager
 description: En la ilustración siguiente se muestra la relación entre los distintos componentes de un enrutador.
 ms.assetid: 862566ce-47c4-424a-84c2-99f4c92efcc0
 keywords:
-- RTM, arquitectura
+- RTM, Arquitectura
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a1637eed71a89a6de4fa7dad6a4fea4a5918366f69ee05a490824699605a117a
@@ -13,7 +13,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117791379"
 ---
-# <a name="how-the-routing-table-manager-architecture-fits-together"></a>Cómo encaja la arquitectura del administrador de tablas de enrutamiento
+# <a name="how-the-routing-table-manager-architecture-fits-together"></a>Cómo encaja la arquitectura de Routing Table Manager
 
 En la ilustración siguiente se muestra la relación entre los distintos componentes de un enrutador.
 
@@ -25,7 +25,7 @@ En la ilustración siguiente se muestra la relación entre los clientes y los di
 
 ![relación entre clientes y componentes del administrador de tablas de enrutamiento](images/rtmentrel.png)
 
-El administrador de enrutadores inicia una o varias instancias del administrador de tablas de enrutamiento. Cuando se inician varias instancias del administrador de tablas de enrutamiento, el enrutador se ha configurado para que actúe como uno o varios enrutadores virtuales. Cada instancia del administrador de tablas de enrutamiento posee una o varias interfaces; cada interfaz solo puede ser propiedad de una instancia del administrador de tablas de enrutamiento.
+El administrador de enrutadores inicia una o varias instancias del administrador de tablas de enrutamiento. Cuando se inician varias instancias del administrador de tablas de enrutamiento, el enrutador se ha configurado para que actúe como uno o varios enrutadores virtuales. Cada instancia del administrador de tablas de enrutamiento posee una o varias interfaces. cada interfaz solo puede ser propiedad de una instancia del administrador de tablas de enrutamiento.
 
 Cada instancia del administrador de tablas de enrutamiento es independiente de las demás. no se intercambia ninguna información entre las instancias de .
 

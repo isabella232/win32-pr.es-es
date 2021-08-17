@@ -39,7 +39,7 @@ Estas son las consideraciones para los suplicadores con respecto a la directiva 
 [Configuración del método EAP Interfaz de usuario](configuring-the-eap-method-user-interface.md)
 </dt> <dt>
 
-[Implementar la compatibilidad In-Band NAP para los métodos EAP](enabling-in-band-nap-support.md)
+[Implementación de In-Band NAP para métodos EAP](enabling-in-band-nap-support.md)
 </dt> <dt>
 
 [Implementación de la compatibilidad de NAP con métodos EAP](implementing-nap-for-eap-methods.md)

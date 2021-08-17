@@ -1,7 +1,7 @@
 ---
-description: Determina si el controlador puede crear un comando de nivel de controlador o un búfer de vértice de la descripción especificada.
+description: Determina si el controlador puede crear un comando de nivel de controlador o un búfer de vértices de la descripción especificada.
 ms.assetid: c67492d9-c4ba-4206-8beb-3d67235192f9
-title: Función NtGdiDdCanCreateD3DBuffer (Ntgdi. h)
+title: Función NtGdiDdCanCreateD3DBuffer (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 849eb2ba9c1349c54c20703217989b0b92ee78e9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 777d22347c6a922407ef423a076ab3c1f876854b6c3aaf6aee7394aa3480f3b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956734"
 ---
-# <a name="ntgdiddcancreated3dbuffer-function"></a>NtGdiDdCanCreateD3DBuffer función)
+# <a name="ntgdiddcancreated3dbuffer-function"></a>Función NtGdiDdCanCreateD3DBuffer
 
-\[Esta función está sujeta a cambios en cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios del sistema operativo y ocultan muchas otras dificultades para interactuar directamente con los controladores de pantalla.\]
+\[Esta función está sujeta a cambios con cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios en el sistema operativo y ocultan muchas otras dificultades implicadas en la interacción directa con los controladores de pantalla.\]
 
-Determina si el controlador puede crear un comando de nivel de controlador o un búfer de vértice de la descripción especificada.
+Determina si el controlador puede crear un comando de nivel de controlador o un búfer de vértices de la descripción especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ DWORD APIENTRY NtGdiDdCanCreateD3DBuffer(
 
 <dl> <dt>
 
-*hDirectDraw* \[ de\]
+*hDirectDraw* \[ En\]
 </dt> <dd>
 
-Identificador de la [**estructura \_ \_ global DD DIRECTDRAW**](/windows/win32/api/ddrawint/ns-ddrawint-dd_directdraw_global) que representa el objeto DIRECTDRAW.
+Identificador de la [**estructura \_ GLOBAL DIRECTDRAW \_ de DD**](/windows/win32/api/ddrawint/ns-ddrawint-dd_directdraw_global) que representa el objeto DirectDraw.
 
 </dd> <dt>
 
 *puCanCreateSurfaceData* \[ in, out\]
 </dt> <dd>
 
-Puntero a una estructura [**DD \_ CANCREATESURFACEDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_cancreatesurfacedata) . Esta estructura contiene la información necesaria para que el controlador determine si se puede crear un búfer de comandos o de vértices.
+Puntero a una [**estructura \_ CANCREATESURFACEDATA de DD.**](/windows/win32/api/ddrawint/ns-ddrawint-dd_cancreatesurfacedata) Esta estructura contiene la información necesaria para que el controlador determine si se puede crear un comando o un búfer de vértices.
 
 </dd> </dl>
 
@@ -67,8 +67,8 @@ Puntero a una estructura [**DD \_ CANCREATESURFACEDATA**](/windows/win32/api/ddr
 
 | Código devuelto                                                                                              | Descripción                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_controlador DDHAL \_ controlado**</dt> </dl>    | El controlador ha realizado la operación y ha devuelto un código de retorno válido para esa operación. Si este código es DD \_ Aceptar, DirectDraw o Direct3D continúa con la función. De lo contrario, DirectDraw o Direct3D devuelve el código de error proporcionado por el controlador y anula la función.<br/>                                                                                 |
-| <dl> <dt>**\_NOTHANDLED del controlador DDHAL \_**</dt> </dl> | El controlador no tiene ningún comentario en la operación solicitada. Si el controlador debe haber implementado una devolución de llamada determinada, DirectDraw o Direct3D informa de una condición de error. De lo contrario, DirectDraw o Direct3D controla la operación como si la devolución de llamada del controlador no se hubiera definido ejecutando la implementación independiente de dispositivos DirectDraw o Direct3D.<br/> |
+| <dl> <dt>**CONTROLADOR DDHAL \_ \_ MANIPULADO**</dt> </dl>    | El controlador ha realizado la operación y ha devuelto un código de retorno válido para esa operación. Si este código es DD \_ correcto, DirectDraw o Direct3D continúa con la función . De lo contrario, DirectDraw o Direct3D devuelven el código de error proporcionado por el controlador y anulan la función.<br/>                                                                                 |
+| <dl> <dt>**CONTROLADOR DDHAL \_ \_ NO CONTROLADA**</dt> </dl> | El controlador no tiene ningún comentario sobre la operación solicitada. Si el controlador debe haber implementado una devolución de llamada determinada, DirectDraw o Direct3D notifica una condición de error. De lo contrario, DirectDraw o Direct3D controla la operación como si la devolución de llamada del controlador no se hubiera definido mediante la ejecución de la implementación independiente del dispositivo DirectDraw o Direct3D.<br/> |
 
 
 
@@ -82,7 +82,7 @@ Puntero a una estructura [**DD \_ CANCREATESURFACEDATA**](/windows/win32/api/ddr
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -90,7 +90,7 @@ Puntero a una estructura [**DD \_ CANCREATESURFACEDATA**](/windows/win32/api/ddr
 
 <dl> <dt>
 
-[Compatibilidad con clientes de nivel inferior de gráficos](-dxgkernel-low-level-client-support.md)
+[Compatibilidad con clientes de bajo nivel de gráficos](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9b9b0f5ae0e3fda05cd8bdd92ee73b826f81b970
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2115b804dfda537508247785d897757a3f25263e8ee528fdacfb1a91b0515045
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730813"
 ---
 # <a name="d3dxvec2transform-function-d3dx9mathh"></a>Función D3DXVec2Transform (D3dx9math.h)
 
@@ -77,7 +77,7 @@ Puntero a una [**estructura D3DXVECTOR4**](d3dxvector4.md) que es el vector tran
 
 ## <a name="remarks"></a>Comentarios
 
-Esta función transforma el vector *pV* (x, y, 0, 1) por el *pM de matriz.*
+Esta función transforma el vector *pV* (x, y, 0, 1) por la matriz *pM*.
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec2Transform** se puede usar como parámetro para otra función.
 
@@ -92,7 +92,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

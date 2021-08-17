@@ -1,6 +1,6 @@
 ---
 title: La type_from_xmit función
-description: Los códigos auxiliares llaman al tipo de la función xmit para convertir datos de su tipo transmitido al tipo que \_ se presenta a la \_ aplicación.
+description: Los códigos auxiliares llaman al tipo de la función xmit para convertir los datos de su tipo transmitido al tipo que \_ se presenta a la \_ aplicación.
 ms.assetid: 679a2738-a166-4e73-bca7-950f979ed97a
 keywords:
 - type_from_xmit
@@ -13,9 +13,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118923704"
 ---
-# <a name="the-type_from_xmit-function"></a>El tipo \_ de \_ xmit (Función)
+# <a name="the-type_from_xmit-function"></a>Tipo de \_ \_ xmit (Función)
 
-Los códigos auxiliares llaman al tipo de la función **\_ \_ xmit** para convertir datos de su tipo transmitido al tipo que se presenta a la aplicación. La función se define como:
+Los códigos auxiliares llaman al tipo de la función **\_ \_ xmit** para convertir los datos de su tipo transmitido al tipo que se presenta a la aplicación. La función se define como:
 
 ``` syntax
 void __RPC_USER <type>_from_xmit ( 
@@ -25,9 +25,9 @@ void __RPC_USER <type>_from_xmit (
 
 El primer parámetro es un puntero a los datos transmitidos. La función establece el segundo parámetro para que apunte a los datos presentados.
 
-El **tipo de la función \_ \_ xmit** debe administrar la memoria del tipo presentado. La función debe asignar memoria para toda la estructura de datos que comienza en la dirección indicada por el segundo parámetro, excepto para el propio parámetro (el código auxiliar asigna memoria para el nodo raíz y la pasa a la función). El valor del segundo parámetro no puede cambiar durante la llamada. La función puede cambiar el contenido de esa dirección.
+El **tipo de la función \_ \_ xmit** debe administrar la memoria del tipo presentado. La función debe asignar memoria para toda la estructura de datos que comienza en la dirección indicada por el segundo parámetro, excepto para el propio parámetro (el código auxiliar asigna memoria para el nodo raíz y la pasa a la función). El valor del segundo parámetro no puede cambiar durante la llamada. La función puede cambiar el contenido en esa dirección.
 
-En este ejemplo, la función DOUBLE \_ LINK \_ TYPE de \_ \_ xmit convierte la matriz de tamaño en una lista de vínculos dobles. La función conserva el puntero válido al principio de la lista, libera memoria asociada al resto de la lista y, a continuación, crea una nueva lista que comienza en el mismo puntero. La función usa una función de utilidad, **InsertNewNode**, para anexar un nodo de lista al final de la lista y para asignar los punteros *pNext* y *pPrevious* a los valores adecuados.
+En este ejemplo, la función DOUBLE \_ LINK \_ TYPE de \_ \_ xmit convierte la matriz de tamaño en una lista vinculada doble. La función conserva el puntero válido al principio de la lista, libera la memoria asociada al resto de la lista y, a continuación, crea una nueva lista que comienza en el mismo puntero. La función usa una función de utilidad, **InsertNewNode**, para anexar un nodo de lista al final de la lista y asignar los punteros *pNext* y *pPrevious* a los valores adecuados.
 
 
 ```C++

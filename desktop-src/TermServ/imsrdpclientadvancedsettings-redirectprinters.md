@@ -1,26 +1,26 @@
 ---
-title: Propiedad RedirectPrinters de IMsRdpClientAdvancedSettings
-description: Especifica si se permite la redirección de impresoras.
+title: Propiedad IMsRdpClientAdvancedSettings RedirectPrinters
+description: Especifica si se permite el redireccionamiento de impresoras.
 ms.assetid: 7d4f28a7-a99d-4d0b-ab51-832a78881900
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad RedirectPrinters
-- Propiedad RedirectPrinters Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad RedirectPrinters
-- Propiedad RedirectPrinters Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad RedirectPrinters
-- Propiedad RedirectPrinters Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad RedirectPrinters
-- Propiedad RedirectPrinters Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad RedirectPrinters
-- Propiedad RedirectPrinters Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad RedirectPrinters
-- Propiedad RedirectPrinters Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad RedirectPrinters
-- Propiedad RedirectPrinters Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad RedirectPrinters
-- Propiedad RedirectPrinters Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad RedirectPrinters
+- Propiedad RedirectPrinters Servicios de Escritorio remoto
+- Propiedad RedirectPrinters Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad RedirectPrinters
+- Propiedad RedirectPrinters Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad RedirectPrinters
+- Propiedad RedirectPrinters Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad RedirectPrinters
+- Propiedad RedirectPrinters Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad RedirectPrinters
+- Propiedad RedirectPrinters Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad RedirectPrinters
+- Propiedad RedirectPrinters Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad RedirectPrinters
+- Propiedad RedirectPrinters Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad RedirectPrinters
+- Propiedad RedirectPrinters Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad RedirectPrinters
 topic_type:
 - apiref
 api_name:
@@ -54,20 +54,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94fecc3b6f72b8706168c75d220d78fc49340752
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 91bb51e0701a57070e4a71d275ff419971a2ec81a0e1b6664157e40972dc92a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757462"
 ---
-# <a name="imsrdpclientadvancedsettingsredirectprinters-property"></a>IMsRdpClientAdvancedSettings:: RedirectPrinters (propiedad)
+# <a name="imsrdpclientadvancedsettingsredirectprinters-property"></a>IMsRdpClientAdvancedSettings::RedirectPrinters, propiedad
 
-Especifica si se permite la redirección de impresoras.
+Especifica si se permite el redireccionamiento de impresoras.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -84,15 +84,15 @@ HRESULT get_RedirectPrinters(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establezca este parámetro en **Variant \_ true** para permitir el redireccionamiento o **Variant \_ false** en caso contrario.
+Establezca este parámetro en **VARIANT \_ TRUE para permitir** el redireccionamiento o VARIANT **\_ FALSE** en caso contrario.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

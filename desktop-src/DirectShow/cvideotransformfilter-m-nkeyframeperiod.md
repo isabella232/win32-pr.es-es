@@ -1,7 +1,7 @@
 ---
-description: El intervalo observado más grande entre fotogramas clave.
+description: Intervalo observado más grande entre fotogramas clave.
 ms.assetid: 66a39b4f-9eed-4fc3-aa31-f832c951c8a1
-title: 'Miembro CVideoTransformFilter:: m_nKeyFramePeriod (Vtrans. h)'
+title: CVideoTransformFilter::m_nKeyFramePeriod miembro (Vtrans.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 264c5520a6c20bbed5aab6a96af0b3174ce01379
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7c22271f2ce73af343ce5877ee508ccbd31b392073600ef0d5a4519134e52341
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953384"
 ---
-# <a name="cvideotransformfilterm_nkeyframeperiod-member"></a>Miembro nKeyFramePeriod CVideoTransformFilter:: m \_
+# <a name="cvideotransformfilterm_nkeyframeperiod-member"></a>Miembro CVideoTransformFilter::m \_ nKeyFramePeriod
 
-El intervalo observado más grande entre fotogramas clave.
+Intervalo observado más grande entre fotogramas clave.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ int m_nKeyFramePeriod;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Vtrans. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Vtrans.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ int m_nKeyFramePeriod;
 
 <dl> <dt>
 
-[**Clase CVideoTransformFilter**](cvideotransformfilter.md)
+[**CVideoTransformFilter (clase)**](cvideotransformfilter.md)
 </dt> </dl>
 
  

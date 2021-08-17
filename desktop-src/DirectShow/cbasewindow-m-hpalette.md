@@ -1,7 +1,7 @@
 ---
 description: Identificador de la paleta de la ventana.
 ms.assetid: 0ab7d6b6-fe19-41d1-8a51-fee722148d1c
-title: 'Miembro CBaseWindow:: m_hPalette (Winutil. h)'
+title: CBaseWindow::m_hPalette miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b3a8089b144d7037ab93ba9d8ad66dfa6742af11
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3aa97162af52471080a0f6ad349de28a470495084975bbbfdfe390c6146e67aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954604"
 ---
-# <a name="cbasewindowm_hpalette-member"></a>Miembro hPalette CBaseWindow:: m \_
+# <a name="cbasewindowm_hpalette-member"></a>Miembro CBaseWindow::m \_ hPalette
 
 Identificador de la paleta de la ventana.
 
@@ -42,8 +42,8 @@ HPALETTE m_hPalette;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ HPALETTE m_hPalette;
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

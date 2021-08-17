@@ -15,7 +15,7 @@ ms.locfileid: "118749235"
 ---
 # <a name="introduction-to-microsoft-agent"></a>Introducción a Microsoft Agent
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 Microsoft Agent es un conjunto de servicios de software programables que admite la presentación de caracteres animados interactivos. Los desarrolladores pueden usar caracteres como asistentes interactivos para introducir, guiar, guiar o mejorar sus páginas web o aplicaciones, además del uso convencional de ventanas, menús y controles.
 

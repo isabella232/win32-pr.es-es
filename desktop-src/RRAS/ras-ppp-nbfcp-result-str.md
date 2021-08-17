@@ -3,7 +3,7 @@ title: RAS_PPP_NBFCP_RESULT estructura (Rassapi.h)
 description: La estructura RAS PPP NBFCP RESULT se usa para notificar el resultado de una operación de proyección \_ \_ de PPP \_ NetBEUI Framer (NBF) para un puerto.
 ms.assetid: 670bf125-cad5-481f-89e4-858e636316bd
 keywords:
-- RAS_PPP_NBFCP_RESULT estructura RAS
+- RAS_PPP_NBFCP_RESULT ras de estructura
 topic_type:
 - apiref
 api_name:
@@ -77,7 +77,7 @@ Cadena Unicode terminada en NULL que especifica el nombre NetBIOS de la estació
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
@@ -87,7 +87,7 @@ Cadena Unicode terminada en NULL que especifica el nombre NetBIOS de la estació
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,19 +1,19 @@
 ---
-description: Notifica a una aplicación cuando el IME seleccionado necesita la cadena convertida de la aplicación. La aplicación recibe este comando a través del \_ mensaje de solicitud del IME \_ de WM con los parámetros establecidos como se muestra a continuación.
+description: Notifica a una aplicación cuando el IME seleccionado necesita la cadena convertida de la aplicación. La aplicación recibe este comando a través del mensaje WM \_ IME \_ REQUEST con parámetros establecidos como se muestra a continuación.
 ms.assetid: 1a007bed-15e5-4400-9d2f-32e37e1765d2
-title: Código de notificación de IMR_DOCUMENTFEED (IMM. h)
+title: IMR_DOCUMENTFEED de notificación (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc4fe46f95b7ad17ba7bb7850ec3fb9ca980519f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cbef4c83d35fa02e2c879d76b9520df6d01588c07cb725b13e66888e9dd27722
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118948782"
 ---
-# <a name="imr_documentfeed-notification-code"></a>Código de notificación de IMR \_ DOCUMENTFEED
+# <a name="imr_documentfeed-notification-code"></a>Código de notificación \_ de IMR DOCUMENTFEED
 
-Notifica a una aplicación cuando el IME seleccionado necesita la cadena convertida de la aplicación. La aplicación recibe este comando a través del mensaje de [**\_ \_ solicitud del IME de WM**](wm-ime-request.md) con los parámetros establecidos como se muestra a continuación.
+Notifica a una aplicación cuando el IME seleccionado necesita la cadena convertida de la aplicación. La aplicación recibe este comando a través del mensaje [**WM \_ IME \_ REQUEST**](wm-ime-request.md) con parámetros establecidos como se muestra a continuación.
 
 
 ```C++
@@ -26,33 +26,33 @@ LRESULT IMR_DOCUMENTFEED
 
 <dl> <dt>
 
-<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*wParam*
+<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*Wparam*
 </dt> <dd>
 
 Establezca en IMR \_ DOCUMENTFEED.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Puntero a un búfer que va a contener la estructura [**RECONVERTSTRING**](/windows/win32/api/imm/ns-imm-reconvertstring) .
+Puntero a un búfer que contiene la [**estructura RECONVERTSTRING.**](/windows/win32/api/imm/ns-imm-reconvertstring)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la estructura de la cadena de reconversión actual. Si *lParam* se establece en **null**, la aplicación devuelve el tamaño necesario para que el búfer contenga la estructura. El comando devuelve 0 si no se realiza correctamente.
+Devuelve la estructura de cadena de reconversión actual. Si *lParam se* establece en **NULL,** la aplicación devuelve el tamaño necesario para que el búfer mantenga la estructura. El comando devuelve 0 si no se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El IME almacena en caché las cadenas convertidas para una mayor precisión de la conversión. Una limitación del almacenamiento en caché del IME es que pierde la cadena convertida en las siguientes circunstancias:
+El IME almacena en caché las cadenas convertida para una mayor precisión de conversión. Una limitación del almacenamiento en caché del IME es que pierde la cadena convertida en las siguientes circunstancias:
 
--   La posición del símbolo de intercalación para la aplicación se mueve mediante una clave, por ejemplo, una tecla de cursor.
--   La posición del símbolo de intercalación para la aplicación se mueve por el mouse.
+-   La posición del cursor de la aplicación se mueve mediante una clave, por ejemplo, una clave de cursor.
+-   El mouse mueve la posición del cursor de la aplicación.
 -   Se abre un nuevo documento.
 
-Con el comando **IMR \_ DOCUMENTFEED** , el IME puede actualizar las cadenas almacenadas en caché en cualquier momento. El uso de este comando mejora la precisión de la conversión.
+Con el **comando \_ DOCUMENTFEED de IMR,** el IME puede actualizar sus cadenas almacenadas en caché en cualquier momento. El uso de este comando mejora la precisión de la conversión.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ Con el comando **IMR \_ DOCUMENTFEED** , el IME puede actualizar las cadenas alm
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Imm.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -73,13 +73,13 @@ Con el comando **IMR \_ DOCUMENTFEED** , el IME puede actualizar las cadenas alm
 [Administrador de métodos de entrada](input-method-manager.md)
 </dt> <dt>
 
-[Comandos del administrador de métodos de entrada](input-method-manager-commands.md)
+[Comandos del Administrador de métodos de entrada](input-method-manager-commands.md)
 </dt> <dt>
 
 [**RECONVERTSTRING**](/windows/win32/api/imm/ns-imm-reconvertstring)
 </dt> <dt>
 
-[**\_solicitud de IME de WM \_**](wm-ime-request.md)
+[**SOLICITUD \_ DE WM IME \_**](wm-ime-request.md)
 </dt> </dl>
 
  

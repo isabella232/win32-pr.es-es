@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 19c87cbd5fd81100682225aa16256573c7f95be0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d6d559dc8a04500b4b208a87bcbda6841c21bf7c6e30f662a01cf943de286652
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117736004"
 ---
 # <a name="id3dxmatrixstackpop-method-d3dx10h"></a>Método ID3DXMATRIXStack::P op (D3DX10.h)
 
@@ -59,7 +59,7 @@ Tenga en cuenta que este método reduce el número de elementos de la pila en 1,
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

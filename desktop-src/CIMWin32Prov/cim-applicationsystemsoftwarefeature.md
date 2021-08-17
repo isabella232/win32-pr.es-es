@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM ApplicationSystemSoftwareFeature representa una asociación que identifica las características de software que componen un sistema de aplicación determinado. Las características de software se pueden incluir en diferentes productos.
+description: La clase Cim ApplicationSystemSoftwareFeature representa una asociación que identifica las características \_ de software que constituye un sistema de aplicación determinado. Las características de software se pueden incluir en distintos productos.
 ms.assetid: e40d0d64-f9f0-4c05-aef6-c759256e408b
 ms.tgt_platform: multiple
-title: CIM_ApplicationSystemSoftwareFeature (clase)
+title: CIM_ApplicationSystemSoftwareFeature clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6b13a15370b19583eef61fb36fda2d63fcb61989
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d751a4564e8ed7357abd9dae5b4773e7180c66a5d0a89781a40d672715e69b11
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322575"
 ---
-# <a name="cim_applicationsystemsoftwarefeature-class"></a>\_Clase ApplicationSystemSoftwareFeature de CIM
+# <a name="cim_applicationsystemsoftwarefeature-class"></a>Cim \_ ApplicationSystemSoftwareFeature (clase)
 
-La clase **CIM \_ ApplicationSystemSoftwareFeature** representa una asociación que identifica las características de software que componen un sistema de aplicación determinado. Las características de software se pueden incluir en diferentes productos.
+La **clase \_ Cim ApplicationSystemSoftwareFeature** representa una asociación que identifica las características de software que constituye un sistema de aplicación determinado. Las características de software se pueden incluir en distintos productos.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,13 +47,13 @@ class CIM_ApplicationSystemSoftwareFeature : CIM_SystemComponent
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ApplicationSystemSoftwareFeature** tiene estos tipos de miembros:
+La **clase \_ Cim ApplicationSystemSoftwareFeature** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ApplicationSystemSoftwareFeature** tiene estas propiedades.
+La **clase \_ Cim ApplicationSystemSoftwareFeature** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -66,10 +66,10 @@ Tipo de datos: **CIM \_ ApplicationSystem**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
+Calificadores: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
-[**\_ ApplicationSystem CIM**](cim-applicationsystem.md) que contiene el sistema primario de la asociación.
+Un [**sistema de aplicación \_ CIM**](cim-applicationsystem.md) que contiene el sistema primario de la asociación.
 
 </dd> <dt>
 
@@ -82,20 +82,20 @@ Tipo de datos: **CIM \_ SoftwareFeature**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Calificadores: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Un [**\_ SoftwareFeature CIM**](cim-softwarefeature.md) que contiene el elemento secundario que es un componente de un sistema.
+Cim [**\_ SoftwareFeature**](cim-softwarefeature.md) que contiene el elemento secundario que es un componente de un sistema.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ ApplicationSystemSoftwareFeature** se deriva de [**\_ SystemComponent de CIM**](cim-systemcomponent.md).
+La **clase \_ Cim ApplicationSystemSoftwareFeature** se deriva de [**CIM \_ SystemComponent**](cim-systemcomponent.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**\_SYSTEMCOMPONENT CIM**](cim-systemcomponent.md)
+[**CIM \_ SystemComponent**](cim-systemcomponent.md)
 </dt> </dl>
 
  

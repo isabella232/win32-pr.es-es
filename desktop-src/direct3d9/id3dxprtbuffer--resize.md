@@ -1,7 +1,7 @@
 ---
-description: Cambia el número de ejemplos contenidos en el búfer.
+description: Cambia el número de muestras contenidas en el búfer.
 ms.assetid: c3cceba8-0bbc-46e5-95d9-cdf58d8a2510
-title: 'ID3DXPRTBuffer:: Resize (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTBuffer::Resize (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c54044ffc9e166131faa16c9b438b497c658ef25
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5c6da4c5de4b38f5fe86b36622b7032e10ffe1be794ee8990ba19362cfd77d98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730078"
 ---
-# <a name="id3dxprtbufferresize-method"></a>ID3DXPRTBuffer:: Resize (método)
+# <a name="id3dxprtbufferresize-method"></a>Método ID3DXPRTBuffer::Resize
 
-Cambia el número de ejemplos contenidos en el búfer.
+Cambia el número de muestras contenidas en el búfer.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT Resize(
 
 <dl> <dt>
 
-*NewSize* \[ de\]
+*NewSize* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de muestras que se van a incluir en el búfer.
+Número de muestras que se incluirán en el búfer.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Número de muestras que se van a incluir en el búfer.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, se devolverá el valor siguiente: E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, se devolverá el siguiente valor, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

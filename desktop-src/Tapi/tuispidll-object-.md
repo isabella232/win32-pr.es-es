@@ -1,21 +1,21 @@
 ---
-description: El \_ objeto TUISPIDLL se define a continuación.
+description: El objeto TUISPIDLL \_ se define a continuación.
 ms.assetid: bc0f876d-2443-4c3c-b723-3f82dc6bf849
-title: TUISPIDLL_OBJECT_ (TSPI. h)
+title: TUISPIDLL_OBJECT_ (Tspi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9a4711478b98f1ab4983fd8c83a59772e5b370e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0e31ba14d49be298bc2b8b0013382ef146fac90b82804eea1adbb54704858b9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117944180"
 ---
-# <a name="tuispidll_object_"></a>\_objeto TUISPIDLL\_
+# <a name="tuispidll_object_"></a>OBJETO \_ TUISPIDLL\_
 
 <dl> <dt>
 
-<span id="TUISPIDLL_OBJECT_LINEID"></span><span id="tuispidll_object_lineid"></span>**\_objeto TUISPIDLL \_ LINEID**
+<span id="TUISPIDLL_OBJECT_LINEID"></span><span id="tuispidll_object_lineid"></span>**TUISPIDLL \_ OBJECT \_ LINEID**
 </dt> <dd> <dl> <dt>
 
  0x00000001
@@ -23,12 +23,12 @@ ms.locfileid: "105680536"
 
 
 
-*dwObjectID* es un identificador de dispositivo de línea (dwDeviceID).
+*dwObjectID es* un identificador de dispositivo de línea (dwDeviceID).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TUISPIDLL_OBJECT_PHONEID"></span><span id="tuispidll_object_phoneid"></span>**\_objeto TUISPIDLL \_ PHONEID**
+<span id="TUISPIDLL_OBJECT_PHONEID"></span><span id="tuispidll_object_phoneid"></span>**TUISPIDLL \_ OBJECT \_ PHONEID**
 </dt> <dd> <dl> <dt>
 
  0x00000002
@@ -36,12 +36,12 @@ ms.locfileid: "105680536"
 
 
 
-*dwObjectID* es un identificador de dispositivo de teléfono (dwDeviceID).
+*dwObjectID es* un identificador de dispositivo de teléfono (dwDeviceID).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TUISPIDLL_OBJECT_PROVIDERID"></span><span id="tuispidll_object_providerid"></span>**TUISPIDLL \_ objeto \_ PROVIDERID**
+<span id="TUISPIDLL_OBJECT_PROVIDERID"></span><span id="tuispidll_object_providerid"></span>**TUISPIDLL \_ OBJECT \_ PROVIDERID**
 </dt> <dd> <dl> <dt>
 
  0x00000003
@@ -49,12 +49,12 @@ ms.locfileid: "105680536"
 
 
 
-*dwObjectID* es un identificador de proveedor permanente.
+*dwObjectID es* un identificador de proveedor permanente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TUISPIDLL_OBJECT_DIALOGINSTANCE"></span><span id="tuispidll_object_dialoginstance"></span>**\_objeto TUISPIDLL \_ DIALOGINSTANCE**
+<span id="TUISPIDLL_OBJECT_DIALOGINSTANCE"></span><span id="tuispidll_object_dialoginstance"></span>**TUISPIDLL \_ OBJECT \_ DIALOGINSTANCE**
 </dt> <dd> <dl> <dt>
 
  0x00000004 
@@ -62,7 +62,7 @@ ms.locfileid: "105680536"
 
 
 
-*dwObjectID* es un identificador de instancia de cuadro de diálogo (HDRVDIALOGINSTANCE o HTAPIDIALOGINSTANCE, dependiendo del contexto).
+*dwObjectID es* un identificador de instancia de diálogo (HDRVDIALOGINSTANCE o HTAPIDIALOGINSTANCE, dependiendo del contexto).
 
 
 </dt> </dl> </dd> </dl>
@@ -73,8 +73,8 @@ ms.locfileid: "105680536"
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TSPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tspi.h</dt> </dl> |
 
 
 

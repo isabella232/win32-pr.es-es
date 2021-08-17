@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 73cd5d9b809a0eb442db57e91c3788d2548a8c33
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b8b1b64818f4c0903897dc5b1de83b1aaa963461e909edbbfc9ba8dc4a1f10f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119282965"
 ---
 # <a name="d3dxmatrixortholh-function-d3dx10mathh"></a>Función D3DXMatrixOrthoLH (D3DX10Math.h)
 
@@ -85,7 +85,7 @@ Valor z mínimo del volumen de vista que se conoce como z-near.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor z máximo del volumen de vista que se conoce como z-far.
+Valor z máximo del volumen de vista al que se hace referencia como z-far.
 
 </dd> </dl>
 
@@ -101,7 +101,7 @@ Todos los parámetros de la función D3DXMatrixOrthoLH son distancias en el espa
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXMatrixOrthoLH se puede usar como parámetro para otra función.
 
-Esta función usa la fórmula siguiente para calcular la matriz devuelta.
+Esta función usa la siguiente fórmula para calcular la matriz devuelta.
 
 
 ```
@@ -124,7 +124,7 @@ Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

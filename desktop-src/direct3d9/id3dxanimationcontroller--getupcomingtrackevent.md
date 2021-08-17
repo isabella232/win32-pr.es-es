@@ -1,7 +1,7 @@
 ---
-description: Devuelve un identificador de evento al siguiente evento programado para que se produzca después de un evento especificado en una pista de animación.
+description: Devuelve un identificador de evento al siguiente evento programado para producirse después de un evento especificado en una pista de animación.
 ms.assetid: 616b2de1-6107-4d18-ad2e-de2ef4560aee
-title: 'ID3DXAnimationController:: GetUpcomingTrackEvent (método) (D3dx9anim. h)'
+title: Método ID3DXAnimationController::GetUpcomingTrackEvent (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f863ce918f25c6b0975010f71a63f067c01f7345
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a6e2730a9649400af8cc0229cb69ab695044681fde43a29a1a784d212f8d2641
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119279035"
 ---
-# <a name="id3dxanimationcontrollergetupcomingtrackevent-method"></a>ID3DXAnimationController:: GetUpcomingTrackEvent (método)
+# <a name="id3dxanimationcontrollergetupcomingtrackevent-method"></a>Método ID3DXAnimationController::GetUpcomingTrackEvent
 
-Devuelve un identificador de evento al siguiente evento programado para que se produzca después de un evento especificado en una pista de animación.
+Devuelve un identificador de evento al siguiente evento programado para producirse después de un evento especificado en una pista de animación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ D3DXEVENTHANDLE GetUpcomingTrackEvent(
 
 <dl> <dt>
 
-*Seguimiento* \[ de de\]
+*Seguimiento* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Identificador de seguimiento.
 
 </dd> <dt>
 
-*hEvent* \[ de\]
+*hEvent* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**
 
-Identificador de evento de un evento especificado después del cual se va a buscar un evento siguiente. Si se establece en **null**, el método devolverá el siguiente evento programado.
+Identificador de evento para un evento especificado después del cual se va a buscar un evento siguiente. Si se establece **en NULL,** el método devolverá el siguiente evento programado.
 
 </dd> </dl>
 
@@ -63,14 +63,14 @@ Identificador de evento de un evento especificado después del cual se va a busc
 
 Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**
 
-Identificador de evento para el siguiente evento programado para ejecutarse en la pista especificada. Se devuelve **null** si no hay ningún evento nuevo programado.
+Identificador de evento para el siguiente evento programado para ejecutarse en la pista especificada. **Se** devuelve NULL si no se programa ningún evento nuevo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se puede usar de forma iterativa para buscar un evento deseado pasando de manera repetida **null** para hEvent.
+Este método se puede usar de forma iterativa para buscar un evento deseado pasando repetidamente **NULL** para hEvent.
 
 > [!Note]  
-> No itere más después de que el método devuelva **null**.
+> No itere más después de que el método haya devuelto **NULL.**
 
  
 
@@ -80,12 +80,12 @@ Este método se puede usar de forma iterativa para buscar un evento deseado pasa
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

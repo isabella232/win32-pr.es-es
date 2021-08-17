@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. MoveBeforeFirst (método)'
-title: Método API. MoveBeforeFirst
+description: Más información sobre el método Api.MoveBeforeFirst
+title: Método Api.MoveBeforeFirst
 TOCTitle: 'MoveBeforeFirst method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.MoveBeforeFirst(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.movebeforefirst(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1c3e49762c0d2be1f416181f5c07fb06b088d161
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43e886e6296848b17aafa88e39797f9655acd374fca6953b9efdbfbc7e1428bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105714945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117902381"
 ---
-# <a name="apimovebeforefirst-method"></a>Método API. MoveBeforeFirst
+# <a name="apimovebeforefirst-method"></a>Método Api.MoveBeforeFirst
 
-Coloca el cursor delante del primer registro de la tabla. El siguiente movimiento posterior colocará el cursor en el primer registro.
+Coloque el cursor antes del primer registro de la tabla. A continuación, un movimiento posterior colocará el cursor en el primer registro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,16 +61,16 @@ public static void MoveBeforeFirst(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Tabla que se va a colocar.
+    Tabla que se colocará.
 
 ## <a name="see-also"></a>Vea también
 
@@ -78,6 +78,6 @@ public static void MoveBeforeFirst(
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

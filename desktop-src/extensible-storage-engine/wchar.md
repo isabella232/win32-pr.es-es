@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: WCHAR'
+description: 'Más información sobre: WCHAR'
 title: WCHAR
 TOCTitle: WCHAR
 ms:assetid: 922431b3-bf9a-4aba-bc67-dd33d9aeaac0
@@ -15,17 +15,17 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1dfa86cbc771059d941027385090dcbd2f401855
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d35dd161816253b13b09c2f2f12e9aaa6d701d197546ee3e76cbf4b687236ae7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117701149"
 ---
 # <a name="wchar"></a>WCHAR
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="wchar"></a>WCHAR
 
@@ -58,12 +58,12 @@ Carácter Unicode de 16 bits.
 <td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Server</strong></p></td>
+<td><p><strong>Servidor</strong></p></td>
 <td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
+<td><p>Declarado en Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

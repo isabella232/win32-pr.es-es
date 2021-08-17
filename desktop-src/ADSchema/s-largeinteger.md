@@ -1,10 +1,10 @@
 ---
 title: Sintaxis de LargeInteger
-description: Representa un valor entero con signo de 64 bits.
+description: Representa un valor entero de 64 bits con signo.
 ms.assetid: b058943f-7bbe-4240-ae15-3557524a7788
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de sintaxis de LargeInteger
+- Esquema de AD de sintaxis LargeInteger
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d822420bf370f0de1a3165d105bba2013ebe9436
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 57af42ef8a1e23ea06f326588095d26ae0b1e71ae710d036d752ebff6ac2d38b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118174632"
 ---
 # <a name="largeinteger-syntax"></a>Sintaxis de LargeInteger
 
-Representa un valor entero con signo de 64 bits.
+Representa un valor entero de 64 bits con signo.
 
 
 
 | Entrada | Value |
 |--------------|------------------------------------------------------------------------------------|
 | Nombre         | LargeInteger                                                                       |
-| IDENTIFICADOR de sintaxis    | 2.5.5.16                                                                           |
-| IDENTIFICADOR DE OM        | 65                                                                                 |
-| Tipo MAPI    | \-                                                                                 |
-| Tipo ADS     | \_entero grande de ADSTYPE \_                                                            |
-| Tipo Variant | distribución de VT \_                                                                       |
-| Tipo de SDS     | Objeto COM que se puede convertir en un [**IADsLargeInteger**](/windows/desktop/api/iads/nn-iads-iadslargeinteger). |
+| Identificador de sintaxis    | 2.5.5.16                                                                           |
+| Id. de OM        | 65                                                                                 |
+| Tipo DE ARCHIVO    | \-                                                                                 |
+| ADS Type     | ADSTYPE \_ LARGE \_ INTEGER                                                            |
+| Tipo de variante | VT \_ DISPATCH                                                                       |
+| Tipo de SDS     | Objeto COM que se puede convertir en [**un IADsLargeInteger.**](/windows/desktop/api/iads/nn-iads-iadslargeinteger) |
 
 
 

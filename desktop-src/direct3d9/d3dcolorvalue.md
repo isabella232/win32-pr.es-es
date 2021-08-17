@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: c9b55fbf718382e9dca7e3999cce0cabe895a261
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b8c188e1b50905abd61184c7e1fe67d4253e920aa26d5d1782c1633d843bd282
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117733357"
 ---
 # <a name="d3dcolorvalue-structure-d3d9typesh"></a>Estructura D3DCOLORVALUE (D3D9Types.h)
 
@@ -49,7 +49,7 @@ Tipo: **float**
 
 </dd> <dd>
 
-Valor de punto flotante que especifica el componente rojo de un color. Este valor suele estar en el intervalo de 0,0 a 1,0. Un valor de 0,0 indica la ausencia completa del componente rojo, mientras que un valor de 1,0 indica que el rojo está totalmente presente.
+Valor de punto flotante que especifica el componente rojo de un color. Por lo general, este valor está en el intervalo de 0,0 a 1,0. Un valor de 0,0 indica la ausencia completa del componente rojo, mientras que un valor de 1,0 indica que el rojo está totalmente presente.
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ Tipo: **float**
 
 </dd> <dd>
 
-Valor de punto flotante que especifica el componente verde de un color. Este valor suele estar en el intervalo de 0,0 a 1,0. Un valor de 0,0 indica la ausencia completa del componente verde, mientras que un valor de 1,0 indica que el verde está totalmente presente.
+Valor de punto flotante que especifica el componente verde de un color. Por lo general, este valor está en el intervalo de 0,0 a 1,0. Un valor de 0,0 indica la ausencia completa del componente verde, mientras que un valor de 1,0 indica que el verde está totalmente presente.
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Tipo: **float**
 
 </dd> <dd>
 
-Valor de punto flotante que especifica el componente azul de un color. Este valor suele estar en el intervalo de 0,0 a 1,0. Un valor de 0,0 indica la ausencia completa del componente azul, mientras que un valor de 1,0 indica que el azul está totalmente presente.
+Valor de punto flotante que especifica el componente azul de un color. Por lo general, este valor está en el intervalo de 0,0 a 1,0. Un valor de 0,0 indica la ausencia completa del componente azul, mientras que un valor de 1,0 indica que el azul está totalmente presente.
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Tipo: **float**
 
 </dd> <dd>
 
-Valor de punto flotante que especifica el componente alfa de un color. Este valor suele estar en el intervalo de 0,0 a 1,0. Un valor de 0,0 indica totalmente transparente, mientras que un valor de 1,0 indica totalmente opaco.
+Valor de punto flotante que especifica el componente alfa de un color. Por lo general, este valor está en el intervalo de 0,0 a 1,0. Un valor de 0,0 indica totalmente transparente, mientras que un valor de 1,0 indica totalmente opaco.
 
 </dd> </dl>
 
@@ -100,7 +100,7 @@ Puede establecer los miembros de esta estructura en valores fuera del intervalo 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

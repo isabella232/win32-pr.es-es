@@ -1,9 +1,9 @@
 ---
-title: Enumeración VMDVDDriveEvent (VPCCOMInterfaces. h)
-description: Especifica los eventos de la unidad de DVD.
+title: Enumeración VMDVDDriveEvent (VPCCOMInterfaces.h)
+description: Especifica los eventos de unidad de DVD.
 ms.assetid: 17126138-614f-42d9-937e-1aca9393557c
 keywords:
-- Enumeración de VMDVDDriveEvent Virtual PC
+- VMDVDDriveEvent enumeration Virtual PC
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 967fcd545c0ddd24d01c5dc779929ef4639c6736
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 125e2f8f9d126e582d47376f5c23b56051d3f75d9af6493a1f273cc5be93195c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117751987"
 ---
 # <a name="vmdvddriveevent-enumeration"></a>Enumeración VMDVDDriveEvent
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Especifica los eventos de la unidad de DVD.
+Especifica los eventos de unidad de DVD.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -43,17 +43,17 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="vmDVDDriveEvent_OnInsert"></span><span id="vmdvddriveevent_oninsert"></span><span id="VMDVDDRIVEEVENT_ONINSERT"></span>**vmDVDDriveEvent \_ Insert**
+<span id="vmDVDDriveEvent_OnInsert"></span><span id="vmdvddriveevent_oninsert"></span><span id="VMDVDDRIVEEVENT_ONINSERT"></span>**vmDVDDriveEvent \_ OnInsert**
 </dt> <dd>
 
-Se adjunta una imagen ISO o se inserta un medio real en una unidad host.
+Se adjunta una imagen ISO o se insertan medios reales en una unidad host.
 
 </dd> <dt>
 
-<span id="vmDVDDriveEvent_OnEject"></span><span id="vmdvddriveevent_oneject"></span><span id="VMDVDDRIVEEVENT_ONEJECT"></span>**vmDVDDriveEvent \_ EJECT**
+<span id="vmDVDDriveEvent_OnEject"></span><span id="vmdvddriveevent_oneject"></span><span id="VMDVDDRIVEEVENT_ONEJECT"></span>**vmDVDDriveEvent \_ OnEject**
 </dt> <dd>
 
-Se ha expulsado el medio.
+Los medios se han expulsado.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Se ha expulsado el medio.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: TaskNamedValuePair.Value, propiedad
+title: Propiedad TaskNamedValuePair.Value
 description: Para el scripting, obtiene o establece el valor asociado a un nombre en un par nombre-valor.
 ms.assetid: 9bbf0c44-533f-48d6-a8ce-dca48f709c3f
 keywords:
 - Valor de propiedad Programador de tareas
-- Propiedad Value Programador de tareas objeto , TaskNamedValuePair
+- Propiedad Value Programador de tareas , objeto TaskNamedValuePair
 - Objeto TaskNamedValuePair Programador de tareas , propiedad Value
 topic_type:
 - apiref
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117758951"
 ---
-# <a name="tasknamedvaluepairvalue-property"></a>TaskNamedValuePair.Value, propiedad
+# <a name="tasknamedvaluepairvalue-property"></a>Propiedad TaskNamedValuePair.Value
 
 Para el scripting, obtiene o establece el valor asociado a un nombre en un par nombre-valor.
 
@@ -44,7 +44,7 @@ Valor asociado a un nombre en un par nombre-valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |

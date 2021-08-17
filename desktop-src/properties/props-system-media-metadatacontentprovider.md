@@ -4,12 +4,12 @@ ms.assetid: 6fb4f43b-e274-4be5-a128-5b20ad3c4203
 title: System.Media.MetadataContentProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08ae755992dc01df5bc990453ad445cad05a759a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2b0e8c7e43adc99735101f36f163dc24bcf834b0361ef64000346f67739896f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117683480"
 ---
 # <a name="systemmediametadatacontentprovider"></a>System.Media.MetadataContentProvider
 

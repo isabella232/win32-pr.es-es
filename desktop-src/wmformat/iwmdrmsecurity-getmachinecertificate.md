@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMSecurity GetMachineCertificate (wmdrmsdk. h)
-description: El método GetMachineCertificate recupera el certificado de equipo del subsistema DRM en el equipo cliente.
+title: Método IWMDRMSecurity GetMachineCertificate (Wmdrmsdk.h)
+description: El método GetMachineCertificate recupera el certificado de máquina del subsistema DRM en el equipo cliente.
 ms.assetid: 38b8e812-e997-4a63-b906-ebd26a5556be
 keywords:
-- Método GetMachineCertificate formato de Windows Media
-- Método GetMachineCertificate formato de Windows Media, interfaz IWMDRMSecurity
-- Interfaz IWMDRMSecurity formato de Windows Media, método GetMachineCertificate
+- Método GetMachineCertificate windows Media Format
+- Método GetMachineCertificate windows Media Format , interfaz IWMDRMSecurity
+- IWMDRMSecurity interface windows Media Format , GetMachineCertificate method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d6c66c54ab9528a458910def5978ec83b191654
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4fd85a3b74ee28e5faa8df5fc264d50366803f4073ec97a36920577d417e4f97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119084702"
 ---
-# <a name="iwmdrmsecuritygetmachinecertificate-method"></a>IWMDRMSecurity:: GetMachineCertificate (método)
+# <a name="iwmdrmsecuritygetmachinecertificate-method"></a>IWMDRMSecurity::GetMachineCertificate (método)
 
-El método **GetMachineCertificate** recupera el certificado de equipo del subsistema DRM en el equipo cliente.
+El **método GetMachineCertificate** recupera el certificado de máquina del subsistema DRM en el equipo cliente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,17 +46,17 @@ HRESULT GetMachineCertificate(
 
 <dl> <dt>
 
-*dwCertificateType* \[ de\]
+*dwCertificateType* \[ En\]
 </dt> <dd>
 
-Tipo de certificado que se va a recuperar. Establezca en uno de los valores de la tabla siguiente.
+Tipo de certificado que se recuperará. Establezca en uno de los valores de la tabla siguiente.
 
 
 
-| Value                        | Descripción                                                                           |
+| Valor                        | Descripción                                                                           |
 |------------------------------|---------------------------------------------------------------------------------------|
-| Tipo de certificado de WMDRM \_ \_ \_ v1 | El certificado se recuperará en el formato utilizado por los componentes heredados.            |
-| Tipo de certificado de WMDRM \_ \_ \_ V2 | El certificado se recuperará en el formato utilizado por los componentes de Windows Vista. |
+| TIPO DE CERTIFICADO WMDRM \_ \_ \_ V1 | El certificado se recuperará en el formato utilizado por los componentes heredados.            |
+| TIPO DE CERTIFICADO WMDRM \_ \_ \_ V2 | El certificado se recuperará en el formato utilizado por los componentes Windows Vista. |
 
 
 
@@ -64,36 +64,36 @@ Tipo de certificado que se va a recuperar. Establezca en uno de los valores de l
 
 </dd> <dt>
 
-*rgbVersion \[ 4 \]* \[\]
+*rgbVersion \[ 4 \]* \[ out\]
 </dt> <dd>
 
 Matriz de cuatro bytes que especifica la versión del subsistema DRM en el equipo cliente.
 
 </dd> <dt>
 
-*ppbCertificate* \[ enuncia\]
+*ppbCertificate* \[ out\]
 </dt> <dd>
 
-Dirección de una variable que recibe un puntero a los datos del certificado. Establezca en **null** para que el método proporcione el tamaño de búfer necesario para almacenar el certificado en *pcbCertificate*.
+Dirección de una variable que recibe un puntero a los datos del certificado. Se establece **en NULL** para que el método proporcione el tamaño de búfer necesario para contener el certificado *encertificate.*
 
 </dd> <dt>
 
-*pcbCertificate* \[ in, out\]
+*certificatecertificate* \[ in, out\]
 </dt> <dd>
 
-Tamaño del certificado en bytes. Si *ppbCertificate* es **null**, este valor se establecerá en el tamaño del certificado. Si *ppbCertificate* no es **null**, este valor debe establecerse en el tamaño del búfer.
+Tamaño del certificado en bytes. Si *ppbCertificate* es **NULL,** este valor se establecerá en el tamaño del certificado. Si *ppbCertificate* no es **NULL,** este valor debe establecerse en el tamaño del búfer.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -105,16 +105,16 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IWMDRMSecurity**](iwmdrmsecurity.md)
+[**IWMDRMSecurity (interfaz)**](iwmdrmsecurity.md)
 </dt> </dl>
 
  

@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1e7b4658e51f6f137795a935121dc90c047cf047
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d9208e3c0aad7ab05348056eaf70747aa23433e0ab5badec5da1f2baf063b1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497380"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118066311"
 ---
 # <a name="span-idwwan_profile_v4element_providerspanprovider"></a><span id="WWAN_profile_v4.element_Provider"></span>Proveedor
 
 Especifica un proveedor de red preferido en una lista de proveedores que se usarán en itinerancia.
 
-El valor de este elemento es una instancia del tipo complejo de [**providerType**](./schema-providertype-complextype.md) de v1.
+El valor de este elemento es una instancia del tipo complejo [**providerType**](./schema-providertype-complextype.md) v1.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
@@ -35,7 +35,7 @@ El valor de este elemento es una instancia del tipo complejo de [**providerType*
 [<DataRoamingPartners>](element-dataroamingpartners.md)  
 **<Provider>**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <Provider>
@@ -71,8 +71,8 @@ Ninguno.
 <tbody>
 <tr class="odd">
 <td><a href="element-dataroamingpartners.md">DataRoamingPartners</a></td>
-<td><p>Especifica una lista de proveedores de red preferidos en itinerancia.</p>
-<p>Para obtener más información, consulte la documentación del elemento <a href="../mbn/schema-dataroamingpartners-mbnprofile-element.md"><strong>DataRoamingPartners</strong></a> v1.</p></td>
+<td><p>Especifica una lista de proveedores de red preferidos al itinerancia.</p>
+<p>Para más información, consulte la documentación del elemento <a href="../mbn/schema-dataroamingpartners-mbnprofile-element.md"><strong>DataRoamingPartners</strong></a> v1.</p></td>
 </tr>
 </tbody>
 </table>

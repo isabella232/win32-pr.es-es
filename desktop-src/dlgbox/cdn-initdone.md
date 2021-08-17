@@ -3,7 +3,7 @@ title: CDN_INITDONE de notificación (Commdlg.h)
 description: Enviado por un cuadro de diálogo Abrir o Guardar como de estilo explorador cuando el sistema ha terminado de organizar los controles del cuadro de diálogo. El sistema mueve los controles estándar para hacer espacio para los controles del cuadro de diálogo secundario.
 ms.assetid: 337fccac-5444-442d-92f0-862c5302fa21
 keywords:
-- CDN_INITDONE de diálogo de código de notificación
+- CDN_INITDONE de diálogo del código de notificación
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6594c161d57a5d0772679477ee9bce2cda28ba12
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 032cf03b6205f2184986d28ca115060b3bf7a99991ef6256f3b87f995c33341d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117721056"
 ---
-# <a name="cdn_initdone-notification-code"></a>Código de notificación \_ INITDONE de CDN
+# <a name="cdn_initdone-notification-code"></a>\_CDN Código de notificación INITDONE
 
-\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
+\[A partir Windows Vista,  los  cuadros de diálogo Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
 
 Enviado por un cuadro de **diálogo** Abrir o Guardar **como** de estilo explorador cuando el sistema ha terminado de organizar los controles del cuadro de diálogo. El sistema mueve los controles estándar para hacer espacio para los controles del cuadro de diálogo secundario.
 
@@ -51,7 +51,7 @@ Este parámetro no se utiliza.
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) La **estructura OFNOTIFY contiene** una estructura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) **cuyo** miembro de código indica el mensaje de **notificación \_ INITDONE de CDN.**
+Puntero a una [**estructura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) La **estructura OFNOTIFY contiene** una  estructura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) cuyo miembro de código indica el CDN de notificación **\_ INITDONE.**
 
 </dd> </dl>
 
@@ -75,7 +75,7 @@ El sistema envía esta notificación solo si el cuadro de diálogo se creó con 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

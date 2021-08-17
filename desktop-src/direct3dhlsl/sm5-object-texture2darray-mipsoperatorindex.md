@@ -59,7 +59,7 @@ Posición del índice. El primer y segundo componentes contienen las coordenadas
 
 Tipo: **R**
 
-Una variable de recurso de solo lectura.
+Variable de recurso de solo lectura.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -88,7 +88,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -17,7 +17,7 @@ Conversión por componente de datos de punto flotante de precisión doble a dato
 
 
 
-| dtof dest \[ .mask \] , \[ - \] src \[ .swprendle \] , |
+| dtof dest \[ .mask \] , \[ - \] src \[ .swzzle \] , |
 |-------------------------------------------|
 
 
@@ -35,19 +35,19 @@ Conversión por componente de datos de punto flotante de precisión doble a dato
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Cada componente del origen se convierte de la representación de precisión doble a la representación de precisión sencilla mediante el redondeo round-to-nearest-even.
 
 Los swzzles válidos para el parámetro de origen son .xyzw, .xyxy, .zwxy, .zwzw.
 
-Las *máscaras dest* válidas son uno o dos componentes. Es decir: .x, .y, .z, .w, .xy, .xz, .xw, .yz, .yw, .zw El resultado de la primera conversión va al primer componente de la máscara y el resultado del segundo componente se encuentra en el segundo componente de la máscara, si está presente.
+Las máscaras *dest* válidas son uno o dos componentes. Es decir: .x, .y, .z, .w, .xy, .xz, .xw, .yz, .yw, .zw El resultado de la primera conversión va al primer componente de la máscara y el resultado del segundo componente va en el segundo componente de la máscara, si está presente.
 
 *Los componentes dest* son float32.
 
-*src* es un vec2 doble entre (x 32LSB, y 32MSB) y (z 32LSB, w 32MSB) después de swzzle.
+*src* es un vec2 doble entre (x 32LSB, y 32MSB) y (z 32LSB, w 32MSB) post swzzle.
 
-Para las conversiones<->float32, las implementaciones pueden respetar los desnormados float32 o vaciarlos.
+Para las conversiones< de >float32, las implementaciones pueden respetar los desnormados float32 o vaciarlos.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -69,12 +69,12 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
