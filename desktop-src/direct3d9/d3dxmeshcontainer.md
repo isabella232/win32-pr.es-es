@@ -1,7 +1,7 @@
 ---
-description: Encapsula un objeto Mesh en una jerarquía de fotogramas de transformación.
+description: Encapsula un objeto de malla en una jerarquía de marco de transformación.
 ms.assetid: 50e98230-7dc3-468a-92c4-8165e8fe242b
-title: Estructura D3DXMESHCONTAINER (D3dx9anim. h)
+title: Estructura D3DXMESHCONTAINER (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: f57daea26f42d8dd680d0259199b0df77badf510
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 192b60c34c8a15c34a759bda8fd4f3350956003914f40578bd9c5efa54c772df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731671"
 ---
-# <a name="d3dxmeshcontainer-structure"></a>Estructura D3DXMESHCONTAINER
+# <a name="d3dxmeshcontainer-structure"></a>D3DXMESHCONTAINER (estructura)
 
-Encapsula un objeto Mesh en una jerarquía de fotogramas de transformación.
+Encapsula un objeto de malla en una jerarquía de marco de transformación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,7 +64,7 @@ Tipo: **[ **D3DXMESHDATA**](d3dxmeshdata.md)**
 
 </dd> <dd>
 
-Tipo de datos en la malla. Vea [**D3DXMESHDATA**](d3dxmeshdata.md).
+Tipo de datos de la malla. Vea [**D3DXMESHDATA**](d3dxmeshdata.md).
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Tipo: **[ **LPD3DXMATERIAL**](d3dxmaterial.md)**
 
 </dd> <dd>
 
-Matriz de materiales de malla. Vea [**D3DXMATERIAL**](d3dxmaterial.md).
+Matriz de materiales de malla. Vea [**D3DXMATERIAL.**](d3dxmaterial.md)
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Tipo: **[ **LPD3DXEFFECTINSTANCE**](d3dxeffectinstance.md)**
 
 </dd> <dd>
 
-Puntero a un conjunto de parámetros de efectos predeterminados. Vea [**D3DXEFFECTINSTANCE**](d3dxeffectinstance.md).
+Puntero a un conjunto de parámetros de efecto predeterminados. Vea [**D3DXEFFECTINSTANCE.**](d3dxeffectinstance.md)
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número de materiales en la malla.
+Número de materiales de la malla.
 
 </dd> <dt>
 
@@ -108,7 +108,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
 </dd> <dd>
 
-Puntero a una matriz de tres DWORDs por triángulo de la malla que contiene información de adyacencia.
+Puntero a una matriz de tres DWORD por triángulo de la malla que contiene información de adyacencia.
 
 </dd> <dt>
 
@@ -126,7 +126,7 @@ Puntero a la interfaz de información de máscara. Vea [**ID3DXSkinInfo**](id3dx
 **pNextMeshContainer**
 </dt> <dd>
 
-Tipo: * * * * D3DXMESHCONTAINER **\***
+Tipo: *:D3DXMESHCONTAINER **\***
 
 </dd> <dd>
 
@@ -134,7 +134,7 @@ Puntero al siguiente contenedor de malla.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Una aplicación puede derivar de esta estructura para agregar otros datos.
 
@@ -144,7 +144,7 @@ Una aplicación puede derivar de esta estructura para agregar otros datos.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9anim.h</dt> </dl> |
 
 
 
@@ -152,7 +152,7 @@ Una aplicación puede derivar de esta estructura para agregar otros datos.
 
 <dl> <dt>
 
-[Estructuras de D3DX](dx9-graphics-reference-d3dx-structures.md)
+[Estructuras D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> </dl>
 
  

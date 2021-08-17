@@ -36,11 +36,11 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve los valores más recientes usados con [**MCIWNDM \_ SETZOOM.**](mciwndm-setzoom.md)
+Devuelve los valores más recientes usados [**con MCIWNDM \_ SETZOOM.**](mciwndm-setzoom.md)
 
 ## <a name="remarks"></a>Comentarios
 
-Un valor devuelto de 100 indica que la imagen no está zoomed. Un valor de 200 indica que la imagen se amplía al doble de su tamaño original. Un valor de 50 indica que la imagen se reduce a la mitad de su tamaño original.
+Un valor devuelto de 100 indica que la imagen no está zoomed. Un valor de 200 indica que la imagen se ha ampliado al doble de su tamaño original. Un valor de 50 indica que la imagen se reduce a la mitad de su tamaño original.
 
 ## <a name="requirements"></a>Requisitos
 

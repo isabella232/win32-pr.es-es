@@ -1,5 +1,5 @@
 ---
-description: Si esta directiva de sistema por equipo se establece en 1, un usuario o un administrador no pueden quitar las revisiones del equipo.
+description: Si esta directiva de sistema por equipo está establecida en 1, un usuario o un administrador no pueden quitar las revisiones del equipo.
 ms.assetid: e964cb2b-ceaa-4122-bf54-cf1eeab4bc25
 title: DisablePatchUninstall
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118378573"
 ---
 # <a name="disablepatchuninstall"></a>DisablePatchUninstall
 
-Si esta directiva de sistema [por](system-policy.md) equipo se establece en 1, un usuario o un administrador no pueden quitar las revisiones del equipo. El Windows de aplicaciones todavía puede quitar una revisión que ya no es aplicable a un producto. Si no se establece esta directiva, un usuario puede quitar una revisión del equipo solo si se le han concedido privilegios para quitar la revisión. Esto puede depender de si el usuario es administrador, de si la configuración de directiva [DisableMsi](disablemsi.md) y [AlwaysInstallEgregóted](alwaysinstallelevated.md) está establecida y de si la revisión se instaló en un contexto administrado por usuario, no administrado por usuario o por equipo.
+Si esta directiva de sistema [por](system-policy.md) equipo está establecida en 1, un usuario o un administrador no pueden quitar las revisiones del equipo. El Windows de aplicaciones todavía puede quitar una revisión que ya no es aplicable a un producto. Si no se establece esta directiva, un usuario puede quitar una revisión del equipo solo si se le han concedido privilegios para quitar la revisión. Esto puede depender de si el usuario es administrador, de si se ha establecido la configuración de directiva [DisableMsi](disablemsi.md) y [AlwaysInstallElevated,](alwaysinstallelevated.md) y de si la revisión se instaló en un contexto administrado por usuario, no administrado por usuario o por equipo.
 
 ## <a name="registry-key"></a>Clave del Registro
 

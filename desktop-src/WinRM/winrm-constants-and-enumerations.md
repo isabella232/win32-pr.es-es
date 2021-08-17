@@ -1,6 +1,6 @@
 ---
 title: Constantes y enumeraciones de WinRM
-description: Windows La administración remota tiene marcas de bits que se usan para crear sesiones y enumeraciones, así como para los tipos de acceso y la autenticación en un servidor proxy.
+description: Windows Administración remota tiene marcas de bits usadas en la creación de sesiones y enumeraciones, así como para los tipos de acceso y la autenticación en un servidor proxy.
 ms.assetid: 17e59245-26a3-4383-a741-4a09f3cfcec6
 ms.tgt_platform: multiple
 ms.topic: article
@@ -14,7 +14,7 @@ ms.locfileid: "117742941"
 ---
 # <a name="winrm-constants-and-enumerations"></a>Constantes y enumeraciones de WinRM
 
-Windows La administración remota tiene marcas de bits que se usan para crear sesiones y enumeraciones, así como para los tipos de acceso y la autenticación en un servidor proxy. En la lista siguiente se enumeran las distintas marcas de bits.
+Windows Administración remota tiene marcas de bits usadas en la creación de sesiones y enumeraciones, así como para los tipos de acceso y la autenticación en un servidor proxy. En la lista siguiente se enumeran las distintas marcas de bits.
 
 <dl> <dt>
 
@@ -35,14 +35,14 @@ Marcas usadas en *el parámetro flags* de la llamada a [**Session.Enumerate**](s
 <span id="WSManProxyAuthenticationFlags"></span><span id="wsmanproxyauthenticationflags"></span><span id="WSMANPROXYAUTHENTICATIONFLAGS"></span>[**WSManProxyAuthenticationFlags**](/windows/desktop/api/WSManDisp/ne-wsmandisp-wsmanproxyauthenticationflags)
 </dt> <dd>
 
-Marcas usadas en *el parámetro authenticationMechanism* de la llamada a [**IWSManConnectionOptionsEx2::SetProxy**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanconnectionoptionsex2-setproxy).
+Marcas usadas en el *parámetro authenticationMechanism* de la llamada [**a IWSManConnectionOptionsEx2::SetProxy**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanconnectionoptionsex2-setproxy).
 
 </dd> <dt>
 
 <span id="WSManProxyAccessTypeFlags"></span><span id="wsmanproxyaccesstypeflags"></span><span id="WSMANPROXYACCESSTYPEFLAGS"></span>[**WSManProxyAccessTypeFlags**](/windows/desktop/api/WSManDisp/ne-wsmandisp-wsmanproxyaccesstypeflags)
 </dt> <dd>
 
-Marcas usadas en *el parámetro accessType* de la llamada [**a IWSManConnectionOptionsEx2::SetProxy**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanconnectionoptionsex2-setproxy).
+Marcas usadas en el *parámetro accessType* de la llamada [**a IWSManConnectionOptionsEx2::SetProxy**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanconnectionoptionsex2-setproxy).
 
 </dd> </dl>
 

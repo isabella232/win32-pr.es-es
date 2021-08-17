@@ -45,13 +45,13 @@ Colección [**de ID.**](oids.md) Cada [**objeto OID**](oid.md) de la colección 
 
 ## <a name="remarks"></a>Comentarios
 
-Agregue ID de directiva de aplicación a la colección para especificar las directivas de aplicación que se deben usar para crear la cadena de confianza de certificados. Si la colección contiene al menos un [**objeto OID,**](oid.md) se omite el [**objeto EKU**](eku.md) devuelto por el [**método CertificateStatus.EKU.**](certificatestatus-eku.md)
+Agregue ID de directiva de aplicación a la colección para especificar las directivas de aplicación que se deben usar para crear la cadena de confianza de certificados. Si la colección contiene al menos un [**objeto OID,**](oid.md) se omite el objeto [**EKU**](eku.md) devuelto por el [**método CertificateStatus.EKU.**](certificatestatus-eku.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |

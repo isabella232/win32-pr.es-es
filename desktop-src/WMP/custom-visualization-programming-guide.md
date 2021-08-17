@@ -4,7 +4,7 @@ description: Guía de programación de visualizaciones personalizadas
 ms.assetid: a4e670b2-b70a-4f6b-8fc3-c4f5d855d723
 keywords:
 - Reproductor de Windows Media,visualizaciones
-- Reproductor de Windows Media complementos,visualizaciones
+- Reproductor de Windows Media complementos, visualizaciones
 - complementos, visualizaciones
 - visualizaciones, guía de programación
 - visualizaciones personalizadas, guía de programación

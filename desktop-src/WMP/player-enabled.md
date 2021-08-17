@@ -35,10 +35,10 @@ Esta propiedad es un booleano de lectura **y escritura.**
 
 
 
-| Valor | Descripción                                           |
+| Value | Descripción                                           |
 |-------|-------------------------------------------------------|
 | true  | Predeterminada. El control Reproductor de Windows Media está habilitado. |
-| false | El Reproductor de Windows Media está deshabilitado.         |
+| false | El control Reproductor de Windows Media está deshabilitado.         |
 
 
 
@@ -46,20 +46,20 @@ Esta propiedad es un booleano de lectura **y escritura.**
 
 ## <a name="remarks"></a>Comentarios
 
-Si **habilitado es** igual a false, durante la reproducción a pantalla completa Reproductor de Windows Media oculta los controles de usuario.
+Si **enabled** es igual a false, durante la reproducción a pantalla Reproductor de Windows Media oculta los controles de usuario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

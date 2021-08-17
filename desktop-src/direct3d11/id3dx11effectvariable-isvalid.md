@@ -1,11 +1,11 @@
 ---
-title: Método IsValid ID3DX11EffectVariable (D3dx11effect. h)
-description: Comparar el tipo de datos con los datos almacenados.
+title: Método ID3DX11EffectVariable IsValid (D3dx11effect.h)
+description: Compare el tipo de datos con los datos almacenados.
 ms.assetid: 3384afa3-6ae5-4c7c-b95d-4fe3c87cc2fe
 keywords:
-- IsValid (método) Direct3D 11
-- IsValid (método) Direct3D 11, ID3DX11EffectVariable (interfaz)
-- Interfaz ID3DX11EffectVariable Direct3D 11, IsValid (método)
+- Método IsValid Direct3D 11
+- Método IsValid Direct3D 11, interfaz ID3DX11EffectVariable
+- Interfaz ID3DX11EffectVariable Direct3D 11 , método IsValid
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5136005e675a6f5e54cc3863ef2d80ffadfb7c5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e198fcd1a5dc39823df8c707d97849c5115d818b784dd78b1e960ee2463087ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117734064"
 ---
-# <a name="id3dx11effectvariableisvalid-method"></a>ID3DX11EffectVariable:: IsValid (método)
+# <a name="id3dx11effectvariableisvalid-method"></a>Método ID3DX11EffectVariable::IsValid
 
-Comparar el tipo de datos con los datos almacenados.
+Compare el tipo de datos con los datos almacenados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **bool**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BOOL**](/windows/desktop/WinProg/windows-data-types)**
 
-**True** si la sintaxis es válida; en caso contrario, **false**.
+**TRUE** si la sintaxis es válida; en caso **contrario, FALSE**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método comprueba que el tipo de datos coincide con los datos almacenados después de convertir una interfaz en otra (mediante cualquiera de los métodos as).
+Este método comprueba que el tipo de datos coincide con los datos almacenados después de convertir una interfaz a otra (mediante cualquiera de los métodos As).
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -62,8 +62,8 @@ Este método comprueba que el tipo de datos coincide con los datos almacenados d
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

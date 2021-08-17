@@ -17,13 +17,13 @@ Windows Vista permite a los usuarios cambiar la configuración de puntos por pul
 
 ## <a name="scaling-in-windows-vista"></a>Escalado en Windows Vista
 
-El valor de ppp predeterminado es 96, lo que significa que 96 píxeles ocupan un ancho o alto de una pulgada notal. La medida exacta de una "pulgada" depende del tamaño y de la resolución física del monitor. Por ejemplo, en un monitor de 12 pulgadas de ancho, con una resolución horizontal de 1280 píxeles, una línea horizontal de 96 píxeles se amplía aproximadamente 9/10 de una pulgada.
+El valor de ppp predeterminado es 96, lo que significa que 96 píxeles ocupan un ancho o alto de una pulgada notional. La medida exacta de una "pulgada" depende del tamaño y de la resolución física del monitor. Por ejemplo, en un monitor de 12 pulgadas de ancho, con una resolución horizontal de 1280 píxeles, una línea horizontal de 96 píxeles se amplía aproximadamente 9/10 de una pulgada.
 
 Cambiar la configuración de ppp no es lo mismo que cambiar la resolución de pantalla. Con el escalado de ppp, el número de píxeles físicos en la pantalla sigue siendo el mismo. Sin embargo, el escalado se aplica al tamaño y la ubicación de los elementos de la interfaz de usuario. Este ajuste de escala se puede realizar automáticamente mediante el Administrador de ventanas de escritorio (DWM) para el escritorio y para las aplicaciones que no solicitan explícitamente para cambiar de escala.
 
-De hecho, cuando el usuario establece el factor de escala en 120 ppp, una pulgada vertical u horizontal en la pantalla se hace más grande en un 25 %. Todas las dimensiones se escalan en consecuencia. El desplazamiento de una ventana de los bordes superior e izquierdo de la pantalla aumenta un 25 %. El tamaño de la ventana aumenta en la misma proporción, junto con los desplazamientos y tamaños de todos los elementos de interfaz de usuario que contiene.
+De hecho, cuando el usuario establece el factor de escala en 120 ppp, una pulgada vertical u horizontal en la pantalla se hace más grande en un 25 %. Todas las dimensiones se escalan en consecuencia. El desplazamiento de una ventana de los bordes superior e izquierdo de la pantalla aumenta un 25 %. El tamaño de la ventana aumenta en la misma proporción, junto con los desplazamientos y tamaños de todos los elementos de la interfaz de usuario que contiene.
 
-De forma predeterminada, DWM no realiza el escalado para aplicaciones que no tienen en cuenta ppp cuando el usuario establece el valor de ppp en 120, pero lo hace cuando el valor de ppp está establecido en un valor personalizado de 144 o superior. Sin embargo, el usuario puede invalidar el comportamiento predeterminado.
+De forma predeterminada, dwm no realiza el escalado para aplicaciones que no tienen en cuenta ppp cuando el usuario establece el valor de ppp en 120, pero lo hace cuando el valor de ppp se establece en un valor personalizado de 144 o superior. Sin embargo, el usuario puede invalidar el comportamiento predeterminado.
 
 El escalado de pantalla crea nuevos desafíos para las aplicaciones a las que les preocupa de cualquier manera las coordenadas de pantalla. La pantalla contiene ahora dos sistemas de coordenadas: físico y lógico. Las coordenadas físicas de un punto son el desplazamiento real en píxeles desde la parte superior izquierda del origen. Las coordenadas lógicas son los desplazamientos de la manera que serían si se escalaran los propios píxeles.
 
@@ -39,16 +39,16 @@ Microsoft Active Accessibility no usa coordenadas lógicas. Los siguientes méto
 -   [**IAccessible::accLocation**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acclocation)
 -   [**AccessibleObjectFromPoint**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfrompoint)
 
-De forma predeterminada, Microsoft Active Accessibility aplicación cliente que se ejecuta en un entorno que no sea de 96 ppp no podrá obtener los resultados correctos de estas llamadas. Por ejemplo, dado que la posición del cursor está en coordenadas lógicas, el cliente no puede pasar simplemente estas coordenadas a [**AccessibleObjectFromPoint**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfrompoint) para obtener el elemento que está debajo del cursor.
+De forma predeterminada, Microsoft Active Accessibility aplicación cliente que se ejecuta en un entorno que no sea de 96 ppp no podrá obtener los resultados correctos de estas llamadas. Por ejemplo, como la posición del cursor está en coordenadas lógicas, el cliente no puede pasar simplemente estas coordenadas a [**AccessibleObjectFromPoint**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfrompoint) para obtener el elemento que está debajo del cursor.
 
 Además, una aplicación que crea una ventana fuera de su área cliente, como una aplicación de accesibilidad que resalta los elementos de la interfaz de usuario centrados, no creará la ventana en la ubicación de pantalla correcta, ya que la ventana se colocará en las coordenadas lógicas, no en las coordenadas físicas devueltas por [**IAccessible::accLocation**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acclocation).
 
 La solución se encuentra en dos partes:
 
--   Haga que la aplicación cliente tenga en cuenta los valores de ppp. Para ello, llame a la [**función SetProcessDPIAware en**](/windows/win32/api/winuser/nf-winuser-setprocessdpiaware) el inicio. Esta función hace que todo el proceso tenga en cuenta los valores de ppp, lo que significa que todas las ventanas que pertenecen al proceso no se escalan.
--   Use funciones que tienen en cuenta los valores de ppp. Por ejemplo, para obtener coordenadas de cursor, llame a [**la función GetPhysicalCursorPos.**](/windows/win32/api/winuser/nf-winuser-getphysicalcursorpos) No use [**GetCursorPos**](/windows/win32/api/winuser/nf-winuser-getcursorpos); su comportamiento en aplicaciones con reconocimiento de ppp no está definido.
+-   Haga que la aplicación cliente tenga en cuenta ppp. Para ello, llame a la [**función SetProcessDPIAware en**](/windows/win32/api/winuser/nf-winuser-setprocessdpiaware) el inicio. Esta función hace que todo el proceso tenga en cuenta los valores de ppp, lo que significa que todas las ventanas que pertenecen al proceso no se escalan.
+-   Use funciones que tienen en cuenta ppp. Por ejemplo, para obtener coordenadas de cursor, llame a la [**función GetPhysicalCursorPos.**](/windows/win32/api/winuser/nf-winuser-getphysicalcursorpos) No use [**GetCursorPos**](/windows/win32/api/winuser/nf-winuser-getcursorpos); su comportamiento en aplicaciones con reconocimiento de ppp no está definido.
 
-Si la aplicación realiza comunicación directa entre procesos con aplicaciones sin reconocimiento de ppp, puede que haya convertido entre coordenadas lógicas y físicas mediante las funciones [**PhysicalToLogicalPoint**](/windows/win32/api/winuser/nf-winuser-physicaltologicalpoint) y [**LogicalToPhysicalPoint.**](/windows/win32/api/winuser/nf-winuser-logicaltophysicalpoint)
+Si la aplicación realiza una comunicación directa entre procesos con aplicaciones que no tienen en cuenta ppp, es posible que haya convertido entre coordenadas lógicas y físicas mediante las funciones [**PhysicalToLogicalPoint**](/windows/win32/api/winuser/nf-winuser-physicaltologicalpoint) y [**LogicalToPhysicalPoint.**](/windows/win32/api/winuser/nf-winuser-logicaltophysicalpoint)
 
  
 

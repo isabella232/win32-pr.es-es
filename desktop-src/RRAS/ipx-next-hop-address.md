@@ -1,10 +1,10 @@
 ---
-title: Estructura de IPX_NEXT_HOP_ADDRESS (RTM. h)
-description: La \_ estructura de \_ dirección de próximo salto IPX \_ contiene la dirección del enrutador de próximo salto para una ruta IPX.
+title: IPX_NEXT_HOP_ADDRESS estructura (Rtm.h)
+description: La estructura IPX \_ NEXT HOP ADDRESS contiene la dirección del enrutador de próximo salto para una ruta \_ \_ IPX.
 ms.assetid: 079e3284-6238-4bcf-a17f-68ff86775f18
 keywords:
-- IPX_NEXT_HOP_ADDRESS de la estructura RAS
-- PIPX_NEXT_HOP_ADDRESS de puntero de estructura RAS
+- IPX_NEXT_HOP_ADDRESS ras de estructura
+- PIPX_NEXT_HOP_ADDRESS de estructura ras
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 99c3eb135f1d87050cd190fe47d0088fd1ab86f6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8abbb67f916960d015b26337734ffcff6f8e6551ab664bd4f4cc0d7511630a7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104488950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117790763"
 ---
-# <a name="ipx_next_hop_address-structure"></a>\_Estructura de dirección de próximo salto de IPX \_ \_
+# <a name="ipx_next_hop_address-structure"></a>Estructura IPX \_ NEXT \_ HOP \_ ADDRESS
 
-\[Esta API se ha sustituido por la API del [Administrador de tablas de enrutamiento versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API del administrador de tabla de enrutamiento versión 2.\]
+\[Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
-La estructura de **\_ dirección de próximo \_ salto \_ IPX** contiene la dirección del enrutador de próximo salto para una ruta IPX.
+La **estructura IPX \_ NEXT HOP \_ \_ ADDRESS** contiene la dirección del enrutador de próximo salto para una ruta IPX.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,10 +43,10 @@ typedef struct _IPX_NEXT_HOP_ADDRESS {
 
 <dl> <dt>
 
-**\_Mac Nha**
+**EQUIPOS \_ MAC**
 </dt> <dd>
 
-Especifica la dirección MAC del enrutador de próximo salto.
+Especifica la dirección MAC del enrutador del próximo salto.
 
 </dd> </dl>
 
@@ -59,7 +59,7 @@ Especifica la dirección MAC del enrutador de próximo salto.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                        |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>RTM. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl> |
 
 
 
@@ -67,13 +67,13 @@ Especifica la dirección MAC del enrutador de próximo salto.
 
 <dl> <dt>
 
-[Referencia de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 de Routing Table Manager](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Estructuras de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-structures.md)
+[Estructuras de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-structures.md)
 </dt> <dt>
 
-[**\_ruta IPX de RTM \_**](rtm-ipx-route.md)
+[**RTM \_ IPX \_ ROUTE**](rtm-ipx-route.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: No necesita una tableta pc para desarrollar aplicaciones de Tablet PC, pero necesita un equipo personal capaz de ejecutar el software que aparece más adelante en este tema.
+description: No necesita un tablet PC para desarrollar aplicaciones de Tablet PC, pero necesita un equipo personal capaz de ejecutar el software que aparece más adelante en este tema.
 ms.assetid: 82034950-78a7-4bab-b449-1b8ea7d90676
 title: El entorno de desarrollo
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118449218"
 ---
 # <a name="the-development-environment"></a>El entorno de desarrollo
 
-No necesita una tableta pc para desarrollar aplicaciones de Tablet PC, pero necesita un equipo personal capaz de ejecutar el software que aparece más adelante en este tema.
+No necesita un tablet PC para desarrollar aplicaciones de Tablet PC, pero necesita un equipo personal capaz de ejecutar el software que aparece más adelante en este tema.
 
 Se recomienda encarecidamente probar la aplicación en un tablet PC real para asegurarse de que se tienen en cuenta todas las diferencias en el hardware, como el digitalizador de mayor resolución.
 
@@ -48,14 +48,14 @@ Los componentes de la plataforma tablet PC se pueden instalar en Windows XP Prof
 
 Después de instalar el SDK de Windows en un sistema de Windows XP Professional o Windows Server 2003, tendrá todos los archivos de desarrollo necesarios para compilar aplicaciones de entrada de lápiz (como msbizut.h para un desarrollador COM). Sin embargo, no podrá ejecutar ni depurar la aplicación en ese sistema hasta que instale los archivos en tiempo de ejecución. Por ejemplo, en el caso de un desarrollador COM, inkobj.dll debe instalarse y registrarse. Dado que no está en un sistema donde existen estos archivos de plataforma, debe instalar los componentes de la plataforma de Tablet PC desde el módulo de combinación redistribuible, mstpcrt.msm, para obtener los archivos en tiempo de ejecución en el sistema.
 
-La manera más sencilla de instalar los entornos de ejecución de la plataforma en un sistema Windows XP Professional o Windows 2000 con fines de desarrollo es compilar el proyecto de instalación de ejemplo proporcionado con los ejemplos de PC móvil y tablet PC e implementarlo en la máquina de desarrollo.
+La manera más sencilla de instalar los entornos de ejecución de la plataforma en un sistema Professional o Windows 2000 de Windows XP para fines de desarrollo es compilar el proyecto de instalación de ejemplo proporcionado con los ejemplos de PC móvil y tablet PC e implementarlo en la máquina de desarrollo.
 
 > [!Note]  
 > Windows Vista y Windows XP Tablet PC Edition 2005 ya tienen instalados los componentes de la plataforma, por lo que no requieren pasos adicionales para ejecutar y depurar aplicaciones de Tablet PC.
 
  
 
-Los controles [InkEdit](inkedit-control-reference.md) e [InkPicture](inkpicture-control-reference.md) se pueden usar para recopilar entradas de lápiz en Windows 2000 con Service Pack 4 o Windows XP Professional con Service Pack 2 cuando los componentes de la plataforma de Tablet PC están presentes mediante la instalación de la versión 1.7 del SDK de Tablet PC, pero no pueden recopilar la entrada de lápiz en sistemas que no son de tableta que no tienen instalados los componentes de la plataforma tablet PC.
+Los controles [InkEdit](inkedit-control-reference.md) e [InkPicture](inkpicture-control-reference.md) se pueden usar para recopilar entradas de lápiz en Windows 2000 con Service Pack 4 o Windows XP Professional con Service Pack 2 cuando los componentes de la plataforma de Tablet PC están presentes mediante la instalación de la versión 1.7 del SDK de Tablet PC, pero no pueden recopilar entradas de lápiz en sistemas que no son de tableta que no tienen instalados los componentes de la plataforma tablet PC.
 
 El SDK Windows proporciona todos los componentes necesarios para desarrollar aplicaciones de Tablet PC en SKU que no son de tableta de Windows. Establezca la siguiente clave del Registro **DWORD** en 1 para recopilar entradas de lápiz en SKU que no son de tableta de Windows:
 

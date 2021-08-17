@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: e30a9e735d44fc5681d5cd3932baaf3cc90aa30d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1677c2cccbdf0b422696437736380bd0bb57542220a898332d72ec7a0562fd1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117769764"
 ---
 # <a name="certstoreprovgetctlproperty-callback-function"></a>Función de devolución de llamada CertStoreProvGetCTLProperty
 
-La función de devolución de llamada **CertStoreProvGetCTLProperty** recupera una propiedad especificada de una [*lista de certificados de confianza*](../secgloss/c-gly.md) (CTL).
+La **función de devolución de llamada CertStoreProvGetCTLProperty** recupera una propiedad especificada de una lista de certificados [*de confianza*](../secgloss/c-gly.md) (CTL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,51 +43,51 @@ BOOL WINAPI CertStoreProvGetCTLProperty(
 
 <dl> <dt>
 
-*hStoreProv* \[ de\]
+*hStoreProv* \[ En\]
 </dt> <dd>
 
-Identificador de **HCERTSTOREPROV** de un [*almacén de certificados*](../secgloss/c-gly.md).
+Identificador **de HCERTSTOREPROV** para un [*almacén de certificados.*](../secgloss/c-gly.md)
 
 </dd> <dt>
 
-*pCtlContext* \[ de\]
+*pCtlContext* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**de \_ contexto de CTL**](/windows/desktop/api/Wincrypt/ns-wincrypt-ctl_context) .
+Puntero a una [**estructura CONTEXT \_ de CTL.**](/windows/desktop/api/Wincrypt/ns-wincrypt-ctl_context)
 
 </dd> <dt>
 
-*dwPropId* \[ de\]
+*dwPropId* \[ En\]
 </dt> <dd>
 
 Indica un identificador de propiedad.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Los valores de marca necesarios.
+Cualquier valor de marca necesario.
 
 </dd> <dt>
 
-*pvData* \[ enuncia\]
+*pvData* \[ out\]
 </dt> <dd>
 
-Puntero a un búfer que va a contener el puntero a una estructura de [**\_ contexto de CTL**](/windows/desktop/api/Wincrypt/ns-wincrypt-ctl_context) que va a devolver la función. Para obtener el valor de *pcbData* antes de asignar memoria para el búfer, este parámetro se puede establecer en **null** en una primera llamada a la función.
+Puntero a un búfer que contiene el puntero a una estructura [**CONTEXT \_ de CTL**](/windows/desktop/api/Wincrypt/ns-wincrypt-ctl_context) que va a devolver la función. Para obtener el valor de *pwData antes* de asignar memoria para el búfer, este parámetro se puede establecer en **NULL** en una primera llamada a la función.
 
 </dd> <dt>
 
-*pcbData* \[ in, out\]
+*pwData* \[ in, out\]
 </dt> <dd>
 
-Un puntero a un **valor DWORD** que indica la longitud del búfer *pvData* .
+Puntero a un **DWORD** que indica la longitud del *búfer pvData.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, la función devuelve un valor distinto de cero.
+Si la función se realiza correctamente, la función devuelve un valor distinto de cero.
 
 Si se produce un error en la función, devuelve cero.
 
@@ -97,16 +97,16 @@ Si se produce un error en la función, devuelve cero.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_contexto CTL**](/windows/desktop/api/Wincrypt/ns-wincrypt-ctl_context)
+[**CONTEXTO DE \_ CTL**](/windows/desktop/api/Wincrypt/ns-wincrypt-ctl_context)
 </dt> </dl>
 
  

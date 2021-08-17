@@ -47,7 +47,7 @@ CAPICOM solo admite un único certificado para el [*almacén de tarjetas intelig
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |
@@ -56,7 +56,7 @@ CAPICOM solo admite un único certificado para el [*almacén de tarjetas intelig
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

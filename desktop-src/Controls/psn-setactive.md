@@ -47,7 +47,7 @@ Puntero a una [**estructura PSHNOTIFY**](/windows/desktop/api/Prsht/ns-prsht-psh
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero para aceptar la activación o -1 para activar la página siguiente o anterior (en función de si el usuario hizo clic en el botón **Siguiente** **o** Atrás). Para establecer la activación en una página determinada, devuelva el identificador de recurso de la página.
+Devuelve cero para aceptar la activación o -1 para activar la página siguiente  o anterior (en función de si el usuario hizo clic en el botón Siguiente **o** Atrás). Para establecer la activación en una página determinada, devuelva el identificador de recurso de la página.
 
 ## <a name="remarks"></a>Comentarios
 

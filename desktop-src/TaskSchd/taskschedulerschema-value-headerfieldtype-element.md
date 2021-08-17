@@ -3,7 +3,7 @@ title: Elemento Value (headerFieldType)
 description: Contiene el valor de un campo de encabezado en un mensaje de correo electrónico.
 ms.assetid: 4518a924-e519-4e2b-ad8c-2c39b046b5c8
 keywords:
-- Elemento Value Programador de tareas
+- Valor, elemento Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 50c90be3908da8e09726d6b812a533426faeefdb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0d346fbe0410a9085078f909dea5cef67788f5b1194e19be1bdb74529e4e56f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118355368"
 ---
 # <a name="value-headerfieldtype-element"></a>Elemento Value (headerFieldType)
 
@@ -30,7 +30,7 @@ Contiene el valor de un campo de encabezado en un mensaje de correo electrónico
  />
 ```
 
-El elemento de **valor** se define mediante el tipo complejo de [**headerFieldType**](taskschedulerschema-headerfieldtype-complextype.md) .
+El **elemento Value** se define mediante el tipo complejo [**headerFieldType.**](taskschedulerschema-headerfieldtype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -46,10 +46,10 @@ El elemento de **valor** se define mediante el tipo complejo de [**headerFieldTy
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

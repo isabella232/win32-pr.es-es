@@ -1,26 +1,26 @@
 ---
-title: Propiedad shutdownTimeout de IMsRdpClientAdvancedSettings
-description: Especifica el período de tiempo, en segundos, que se esperará a que el servidor responda a una solicitud de desconexión.
+title: IMsRdpClientAdvancedSettings shutdownTimeout, propiedad
+description: Especifica el tiempo, en segundos, que se esperará a que el servidor responda a una solicitud de desconexión.
 ms.assetid: 3fa935dc-d4b0-433b-ab67-a644fcf09006
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad shutdownTimeout
-- propiedad shutdownTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad shutdownTimeout
-- propiedad shutdownTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad shutdownTimeout
-- propiedad shutdownTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad shutdownTimeout
-- propiedad shutdownTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad shutdownTimeout
-- propiedad shutdownTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad shutdownTimeout
-- propiedad shutdownTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad shutdownTimeout
-- propiedad shutdownTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad shutdownTimeout
-- propiedad shutdownTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad shutdownTimeout
+- shutdownTimeout, propiedad Servicios de Escritorio remoto
+- Propiedad shutdownTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad shutdownTimeout
+- La propiedad shutdownTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad shutdownTimeout
+- Propiedad shutdownTimeout Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad shutdownTimeout
+- La propiedad shutdownTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad shutdownTimeout
+- Propiedad shutdownTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad shutdownTimeout
+- Propiedad shutdownTimeout Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad shutdownTimeout
+- Propiedad shutdownTimeout Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad shutdownTimeout
+- Propiedad shutdownTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad shutdownTimeout
 topic_type:
 - apiref
 api_name:
@@ -54,22 +54,22 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 868a011a0ce484f5bb2dd7d1ec610f4e3a436898
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b07af4f1292db7b11e0ae21a5a8fffdd680c60091379fb72128de97e5131b2fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757381"
 ---
-# <a name="imsrdpclientadvancedsettingsshutdowntimeout-property"></a>IMsRdpClientAdvancedSettings:: shutdownTimeout (propiedad)
+# <a name="imsrdpclientadvancedsettingsshutdowntimeout-property"></a>IMsRdpClientAdvancedSettings::shutdownTimeout, propiedad
 
-Especifica el período de tiempo, en segundos, que se esperará a que el servidor responda a una solicitud de desconexión.
+Especifica el tiempo, en segundos, que se esperará a que el servidor responda a una solicitud de desconexión.
 
 Si el servidor no responde dentro del tiempo especificado, el control de cliente se desconecta.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -90,11 +90,11 @@ La nueva hora, en segundos. El valor predeterminado de la propiedad es 10. El va
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

@@ -34,7 +34,7 @@ Este atributo solo se almacena en el archivo multimedia digital.
 
 La versión 2 de ID3 es una convención de etiquetado que se diseñó originalmente para MP3. Para más información, consulte el sitio web de la organización [ID3.](https://id3.org/)
 
-La constante Windows SDK de formato multimedia para este atributo es g \_ wszGenreID.
+La Windows SDK de formato multimedia para este atributo es g \_ wszGenreID.
 
 Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 

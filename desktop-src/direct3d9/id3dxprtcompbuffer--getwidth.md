@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7fc679a73ea864ef4aaca8b6dcd45cf459710a79
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fd6b443cb9b7b46a6b8b45781987f681911082ed6923eea80ec9fad79f34ff76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730014"
 ---
-# <a name="id3dxprtcompbuffergetwidth-method"></a>Método ID3DXPRTCompBuffer::GetWidth
+# <a name="id3dxprtcompbuffergetwidth-method"></a>Id3DXPRTCompBuffer::GetWidth (método)
 
 Recupera el ancho de la textura, en píxeles.
 
@@ -55,7 +55,7 @@ Devuelve el ancho de la textura, en píxeles.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

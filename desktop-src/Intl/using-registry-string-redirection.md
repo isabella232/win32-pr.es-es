@@ -1,5 +1,5 @@
 ---
-description: Storage de cadenas codificadas de forma fuerte en el Registro forma parte de un modelo de localización Windows Vista.
+description: Storage de cadenas codificadas de forma hard-code en el Registro forma parte de un modelo de localización Windows Vista.
 ms.assetid: 70185942-7d32-4151-a4e1-f71cf45e87af
 title: Uso del redireccionamiento de cadenas del Registro
 ms.topic: article
@@ -13,23 +13,23 @@ ms.locfileid: "118389421"
 ---
 # <a name="using-registry-string-redirection"></a>Uso del redireccionamiento de cadenas del Registro
 
-Storage de cadenas codificadas de forma fuerte en el Registro forma parte de un modelo de localización Windows Vista. NO es compatible con MUI. En el modelo actual, la interfaz de usuario del sistema operativo se ejecuta en archivos de recursos específicos del idioma sobre una base neutra del idioma. Los componentes del sistema operativo usan el Registro de manera neutra en el idioma.
+Storage de cadenas codificadas de forma hard-code en el Registro forma parte de un modelo de localización Windows Vista. NO es compatible con LAN. En el modelo actual, la interfaz de usuario del sistema operativo se ejecuta en archivos de recursos específicos del lenguaje sobre una base neutra del idioma. Los componentes del sistema operativo usan el registro de manera neutra en el idioma.
 
 LDAP solo usa cadenas del Registro redirigidas definidas por recursos de Win32 PE en el archivo de recursos del lenguaje base. El redireccionamiento se define por separado, por ejemplo, en un archivo .inf. Este tipo de almacenamiento permite al cargador de recursos seleccionar automáticamente los recursos de lenguaje correctos durante la carga del módulo de recursos.
 
 > [!Note]  
-> Este tema solo pertenece a los recursos de Win32 PE. Si usa recursos pe que no son de Win32, debe proporcionar un redireccionamiento de cadenas del Registro personalizado, si es necesario.
+> Este tema solo pertenece a los recursos de Win32 PE. Si usa recursos que no son de Win32 PE, debe proporcionar un redireccionamiento de cadenas del Registro personalizado, si es necesario.
 
  
 
-## <a name="create-a-language-neutral-resource"></a>Creación de un Language-Neutral recurso
+## <a name="create-a-language-neutral-resource"></a>Creación de un Language-Neutral personalizado
 
-Una aplicación DEA que se ejecuta en Windows Vista y versiones posteriores usa un recurso de cadena neutral del lenguaje para permitir el acceso a cadenas específicas del idioma almacenadas en una tabla de recursos de cadena. El código de aplicación que lee estos valores del Registro se describe en la sección Cargar un Language-Neutral valor del Registro de [Buscar cadenas redirigidas.](locating-redirected-strings.md)
+Una aplicación DE EXTENSIÓN que se ejecuta en Windows Vista y versiones posteriores usa un recurso de cadena neutral del lenguaje para permitir el acceso a cadenas específicas del lenguaje almacenadas en una tabla de recursos de cadena. El código de aplicación que lee estos valores del Registro se describe en la sección Cargar un Language-Neutral valor del Registro de [Buscar cadenas redirigidas.](locating-redirected-strings.md)
 
-Los datos de un valor de registro neutro en el idioma tienen el formato `@<PE-path>,-<stringID>[;<comment>]` " ", donde:
+Los datos de un valor de registro neutral del idioma tienen el formato " `@<PE-path>,-<stringID>[;<comment>]` ", donde:
 
 -   *PE-path* especifica la ruta de acceso del ejecutable. Puede especificar la ruta de acceso mediante una variable de entorno, como %ProgramFiles%, para admitir la implementación. Una alternativa para hacer referencia a la cadena es dejar fuera la información de la ruta de acceso del archivo. En este caso, la aplicación debe tener algunos medios, por ejemplo, otro valor del Registro, para comunicar su propio directorio de instalación.
--   *stringID* especifica el identificador de recurso numérico del recurso de cadena pertinente, que se implementa igual que cualquier otro recurso de cadena localizable.
+-   *stringID* especifica el identificador numérico del recurso de cadena pertinente, que se implementa igual que cualquier otro recurso de cadena localizable.
 -   *comment* especifica información opcional para la depuración o legibilidad del valor del Registro. Las funciones de API del Registro omiten el comentario al cargar la cadena.
 
 > [!Note]  
@@ -37,7 +37,7 @@ Los datos de un valor de registro neutro en el idioma tienen el formato `@<PE-pa
 
  
 
-Se introduce un valor del Registro sin espacio entre "," y "-". Un valor correcto del Registro es:
+Un valor del Registro se introduce sin un espacio entre "," y "-". Un valor correcto del Registro es:
 
 `shell32.dll,-22912`
 
@@ -51,26 +51,26 @@ Un ejemplo de Windows Vista es el valor del Registro con los datos siguientes:
 
 ## <a name="create-resources-for-shortcut-strings"></a>Crear recursos para cadenas de acceso directo
 
-Cuando la aplicación DEA muestra su nombre en la interfaz de usuario del shell, se muestra una cadena de información sobre el icono de la aplicación. Debe crear recursos de cadena para el nombre para mostrar de la aplicación y la cadena de información sobre información asociada para cada idioma admitido. Cuando los recursos estén listos, la aplicación puede usar las cadenas como se describe en La API de Shell para cargar cadenas de acceso directo desde la sección Registro de [Buscar cadenas redirigidas.](locating-redirected-strings.md)
+Cuando la aplicación DEAO muestra su nombre en la interfaz de usuario del shell, se muestra una cadena infotip para el icono de aplicación. Debe crear recursos de cadena para el nombre para mostrar de la aplicación y la cadena de información asociada para cada idioma admitido. Cuando los recursos estén listos, la aplicación puede usar las cadenas como se describe en Uso de la API de Shell para cargar cadenas de acceso directo desde la sección Registro de [Buscar cadenas redirigidas.](locating-redirected-strings.md)
 
-### <a name="prepare-resources-for-a-shortcut-created-with-windows-installer"></a>Preparar los recursos para un acceso directo creado con Windows instalador
+### <a name="prepare-resources-for-a-shortcut-created-with-windows-installer"></a>Preparar recursos para un acceso directo creado con Windows instalador
 
-Si usa el instalador Windows (MSI) para crear un acceso directo, los recursos de cadena incluyen el nombre para mostrar y la descripción del acceso directo. En la [tabla de](../msi/shortcut-table.md)métodos abreviados MSI , se hace referencia al archivo DLL de recursos en las columnas adecuadas y los identificadores de recursos del nombre para mostrar y la descripción del acceso directo se usan en las columnas de identificador de recursos correspondientes.
+Si usa el instalador Windows (MSI) para crear un acceso directo, los recursos de cadena incluyen el nombre para mostrar y la descripción del acceso directo. En la [tabla de](../msi/shortcut-table.md)métodos abreviados MSI , se hace referencia al archivo DLL de recursos en las columnas adecuadas y los identificadores de recursos para el nombre para mostrar y la descripción del acceso directo se usan en las columnas de identificador de recursos correspondientes.
 
-Para que el acceso directo de la aplicación funcione correctamente con la tecnología de recursos de MUI, tenga en cuenta los siguientes puntos al preparar las cadenas de acceso directo:
+Para que el acceso directo de la aplicación funcione correctamente con la tecnología de recursos DE LAN, tenga en cuenta los siguientes puntos al preparar las cadenas de acceso directo:
 
 -   Use variables de entorno o una ruta de acceso relativa para registrar el archivo DLL. Puede especificar @%systemroot% system32shell32.dll siempre que el tipo de cadena del \\ Registro sea REG EXPAND \\ \_ \_ SZ. El identificador de recurso de cadena para "Documento de texto" Shell32.dll es 12345.
 -   No use espacios alrededor de los símbolos "," y "-". Un ejemplo correcto es "shell32.dll,-22912".
 -   No use un nombre de archivo corto. Este tipo de nombre no funciona con el cargador de recursos.
 
-### <a name="prepare-resources-for-a-shortcut-using-inf-format"></a>Preparar recursos para un acceso directo mediante el formato INF
+### <a name="prepare-resources-for-a-shortcut-using-inf-format"></a>Preparación de recursos para un acceso directo mediante el formato INF
 
-Si usa el formato de archivo INF para crear cadenas de acceso directo, el archivo de recursos debe realizar la siguiente configuración del Registro. En estas instrucciones se da por supuesto el uso de la sintaxis ProfileItems de setup API.
+Si usa el formato de archivo INF para crear cadenas de acceso directo, el archivo de recursos debe realizar la siguiente configuración del Registro. En estas instrucciones se supone que se usa la sintaxis ProfileItems de setup API.
 
 1.  Cambie el valor de Información sobre información para que apunte a la referencia de redireccionamiento de cadenas, mediante la ruta de acceso y el identificador de recurso.
 2.  Agregue el nuevo valor DisplayResource en las secciones de instalación profileItems.
 
-A continuación se muestra un ejemplo en el que se muestra la adición de la aplicación Calculadora al **menú** Inicio:
+A continuación se muestra un ejemplo que muestra la adición de la aplicación Calculadora al **menú** Inicio:
 
 
 ```C++
@@ -87,7 +87,7 @@ A continuación se muestra un ejemplo en el que se muestra la adición de la apl
 
 
 
-Use la sintaxis que se muestra a continuación al usar INF para agregar elementos, por ejemplo, una carpeta Grupo de acceso, al **menú** Inicio. Esta sintaxis supone el uso de la compatibilidad con StartMenuItems del programa de instalación, similar a la \[ \] sintaxis usada en Syssetup.inf.
+Use la sintaxis que se muestra a continuación al usar INF para agregar elementos, por ejemplo, una carpeta Grupo de acceso, al **menú** Inicio. Esta sintaxis supone el uso de la compatibilidad con StartMenuItems del programa de instalación, similar a la sintaxis \[ \] usada en Syssetup.inf.
 
 
 ```C++
@@ -97,19 +97,19 @@ Use la sintaxis que se muestra a continuación al usar INF para agregar elemento
 
 
 
-Establezca la información *sobre el valor* en la referencia de cadena " `@<path>,-resID` ".
+Establezca la información *de valor en* la referencia de cadena " `@<path>,-resID` ".
 
-El nombre para mostrar viene determinado por los *valores resDLL* *y resID.* El *valor resID* especifica el identificador de recurso para un recurso de cadena asociado al archivo neutral del idioma. El *valor resDLL* especifica la ruta de acceso al archivo neutro del idioma.
+El nombre para mostrar viene determinado por los *valores resDLL* *y resID.* El *valor resID* especifica el identificador de recurso para un recurso de cadena asociado al archivo neutral del idioma. El *valor resDLL* especifica la ruta de acceso al archivo neutral del idioma.
 
 ## <a name="create-resources-for-friendly-document-type-names"></a>Crear recursos para nombres de tipo de documento descriptivos
 
-Debe implementar cadenas de nombre descriptivo e información sobre información para la aplicación como recursos de cadena. Para permitir que los nombres de tipo de documento descriptivos reaccionen al lenguaje de la interfaz de usuario, la aplicación debe registrar los nombres mediante el valor FriendlyTypeName en la clave de identificador de programa para el tipo de archivo. El valor predeterminado de la clave de identificador de programa debe conservarse para mantener la compatibilidad con versiones anteriores. Para obtener información sobre cómo obtener acceso a los nombres de la aplicación, vea Query Friendly Document Type Names (Nombres de tipo de documento descriptivos para consultas) en la sección Registry (Registro) de Locating Redirected Strings (Buscar [cadenas redirigidas).](locating-redirected-strings.md)
+Debe implementar cadenas de información y nombre descriptivos para la aplicación como recursos de cadena. Para permitir que los nombres de tipo de documento descriptivos reaccionen al lenguaje de la interfaz de usuario, la aplicación debe registrar los nombres con el valor FriendlyTypeName en la clave de identificador del programa para el tipo de archivo. El valor predeterminado de la clave de identificador del programa debe conservarse para mantener la compatibilidad con versiones anteriores. Para obtener información sobre cómo obtener acceso a los nombres de la aplicación, vea Query Friendly Document Type Names (Nombres de tipo de documento descriptivos para consultas) en la sección Registry (Registro) de Locating Redirected Strings (Buscar [cadenas redirigidas).](locating-redirected-strings.md)
 
 El trabajo específico implica los pasos siguientes:
 
-1.  Implemente el nombre descriptivo y las cadenas de información sobre información como recursos de cadena específicos del lenguaje.
-2.  Agregue el valor FriendlyTypeName en la clave del Registro del tipo de documento. Los datos del valor siguen el patrón " ", donde path indica que el ejecutable y `@<path>,-<resID>` *resID* es el identificador de recursos de un recurso de cadena localizable asociado a ese ejecutable. 
-3.  Especifique el valor del Registro de Información sobre información según el formato " `@<path>,-<resID>` ".
+1.  Implemente el nombre descriptivo y las cadenas de información como recursos de cadena específicos del lenguaje.
+2.  Agregue el valor FriendlyTypeName en la clave del Registro del tipo de documento. Los datos del valor siguen el patrón " ", donde path indica el ejecutable y `@<path>,-<resID>` *resID* es el identificador de recurso de un recurso de cadena localizable asociado a ese ejecutable. 
+3.  Especifique el valor del Registro infotip según el formato " `@<path>,-<resID>` ".
 
 En el ejemplo siguiente se muestra la configuración del Registro para un .txt archivo:
 
@@ -129,11 +129,11 @@ HKCR\txtfile
 
 
 
-## <a name="provide-resources-for-shell-verb-action-strings"></a>Proporcionar recursos para las cadenas de acción del verbo shell
+## <a name="provide-resources-for-shell-verb-action-strings"></a>Proporcionar recursos para cadenas de acción de verbo de shell
 
-Las cadenas de acción para determinados verbos, por ejemplo, "open" y "edit", se muestran en el menú emergente que se muestra cuando el usuario hace clic con el botón derecho en un archivo en Windows Explorer. La aplicación no tiene que especificar cadenas para verbos de shell comunes, ya que el shell tiene sus propios valores predeterminados habilitados para MUI para estos verbos. Sin embargo, debe proporcionar recursos de cadena localizables para las cadenas que representan verbos poco comunes.
+Las cadenas de acción para determinados verbos, por ejemplo, "open" y "edit", se muestran en el menú emergente que se muestra cuando el usuario hace clic con el botón derecho en un archivo en Windows Explorer. La aplicación no tiene que especificar cadenas para los verbos de shell comunes, ya que el shell tiene sus propios valores predeterminados habilitados para MUI para estos verbos. Sin embargo, debe proporcionar recursos de cadena localizables para las cadenas que representan verbos poco comunes.
 
-En los sistemas operativos xp Windows, las cadenas de los verbos de shell en el Registro se representan con la sintaxis siguiente, donde *verbo* especifica el nombre del verbo real:
+En los sistemas operativos XP anteriores Windows, las cadenas de los verbos de shell en el Registro se representan con la sintaxis siguiente, donde *verbo* especifica el nombre del verbo real:
 
 
 ```C++
@@ -175,11 +175,11 @@ HKCR\Sample.app\shell\Disc
 
 
 > [!Note]  
-> No se recomienda el registro del valor predeterminado anterior porque requiere una configuración diferente en Windows XP y versiones posteriores de la que se usó en sistemas operativos anteriores.
+> No se recomienda el registro del valor predeterminado anterior porque requiere una configuración diferente en Windows XP y versiones posteriores de la configuración usada en sistemas operativos anteriores.
 
  
 
-## <a name="create-resources-for-verb-protocol-and-auxusertype-strings"></a>Crear recursos para cadenas Verb, Protocol y AuxUserType
+## <a name="create-resources-for-verb-protocol-and-auxusertype-strings"></a>Creación de recursos para cadenas Verb, Protocol y AuxUserType
 
 Debe crear recursos de cadena localizables para las cadenas Verb, Protocol y AuxUserType. Use la siguiente configuración del Registro:
 
@@ -206,25 +206,25 @@ El valor especificado para LocalizedString solo contiene o reemplaza el valor de
 
 Este es un resumen que le ayudará a garantizar la configuración correcta del Registro:
 
--   Si CLSID tiene una clave INSERTABLE HKCR CLSID {clsid}, defina el valor predeterminado de \\ \\ CLSID mediante \\ HKCR \\ CLSID \\ {clsid} \\ LocalizedString.
--   Si CLSID tiene una o varias subclaves en el verbo HKCR \\ CLSID {clsid}, defina cada cadena de verbo individual mediante \\ \\ HKCR \\ CLSID \\ {clsid} \\ Verb xxx \\ \\ LocalizedString.
+-   Si CLSID tiene una clave INSERTABLE HKCR CLSID {clsid}, defina el valor predeterminado \\ \\ de CLSID mediante \\ HKCR \\ CLSID \\ {clsid} \\ LocalizedString.
+-   Si CLSID tiene una o varias subclaves en HKCR CLSID {clsid} Verb, defina cada cadena de verbo individual mediante \\ \\ \\ HKCR \\ CLSID \\ {clsid} \\ Verb xxx \\ \\ LocalizedString.
 -   Si CLSID tiene una o varias subclaves en HKCR {progid} Protocol Stdfileediting Verb, defina cada cadena de verbo individual mediante \\ \\ \\ \\ HKCR \\ {progid} \\ Protocol \\ Stdfileediting \\ Verb xxx \\ \\ LocalizedString.
--   Si CLSID tiene una o varias subclaves AuxiliarUserType enumeradas en HKCR \\ CLSID \\ {clsid} AuxUserType, defina cada entrada \\ de AuxUserType mediante HKCR \\ CLSID \\ {clsid} \\ AuxUserType \\ xxx \\ LocalizedString.
+-   Si CLSID tiene una o varias subclaves AuxUserType enumeradas en HKCR \\ CLSID \\ {clsid} \\ AuxUserType, defina cada entrada AuxUserType mediante HKCR \\ CLSID \\ {clsid} \\ AuxUserType \\ xxx \\ LocalizedString.
 
 ## <a name="create-a-resource-for-the-uninstall-program"></a>Crear un recurso para el programa de desinstalación
 
-Para registrar el programa de desinstalación de la aplicación, puede crear valores del Registro en la subclave de identificador único de la aplicación en la clave del Registro HKEY \_ LOCAL MACHINE Software Microsoft Windows \_ \\ \\ \\ \\ CurrentVersion \\ Uninstall. Los valores que se establecerán son: DisplayName, DisplayVersion, Publisher, ProductID, RegOwner, RegCompany, UrlInfoAbout, HelpTelephone, HelpLink, InstallLocation, InstallSource, InstallDate, Contact, Comments, DisplayIcon, Readme, UrlUpdateInfo.
+Para registrar el programa de desinstalación de la aplicación, puede crear valores del Registro en la subclave de identificador único de la aplicación en la clave del Registro HKEY \_ LOCAL MACHINE Software Microsoft Windows \_ \\ \\ \\ \\ CurrentVersion \\ Uninstall. Los valores que se deben establecer incluyen: DisplayName, DisplayVersion, Publisher, ProductID, RegOwner, RegCompany, UrlInfoAbout, HelpTelephone, HelpLink, InstallLocation, InstallSource, InstallDate, Contact, Comments, DisplayIcon, Readme, UrlUpdateInfo.
 
 > [!Note]  
-> Para habilitar la tecnología DEA para cada valor, puede anexar \_ "Localizado" al nombre del valor.
+> Para habilitar la tecnología DESA para cada valor, puede anexar \_ "Localizado" al nombre del valor.
 
  
 
-Los componentes del sistema operativo son necesarios para proporcionar un valor para DisplayName \_ Localizado de una manera específica de MUI. Debe colocar el nombre para mostrar en un archivo DLL, como Res.dll, como un recurso de cadena, suponiendo que el identificador sea 1245. A continuación, la aplicación puede registrar el nombre para mostrar como DisplayName Localized con el valor \_ "@ \\res.DLL,-1245". Todas las demás configuraciones del Registro deben conservarse tal y como están, incluido el valor original de DisplayName.
+Los componentes del sistema operativo son necesarios para proporcionar un valor para DisplayName \_ localizado de una manera específica de MUI. Debe colocar el nombre para mostrar en un archivo DLL, como Res.dll, como un recurso de cadena, suponiendo que el identificador sea 1245. A continuación, la aplicación puede registrar el nombre para mostrar como DisplayName Localized con el valor \_ "@ \\res.DLL,-1245". Todas las demás configuraciones del Registro deben conservarse tal como están, incluido el valor original de DisplayName.
 
 ## <a name="create-resources-for-sound-events"></a>Creación de recursos para eventos de sonido
 
-Windows asocia determinados eventos con archivos de sonido, por ejemplo, un evento de notificación de correo nuevo o un evento de alarma de batería crítica. La interfaz de usuario debe mostrar los nombres de evento y debe admitir la globalización. Por lo tanto, debe implementar un recurso de cadena localizable para la descripción de cada descripción del evento. Agregue un nuevo valor del Registro para cada nombre de evento, además del valor predeterminado codificado de forma predeterminada.
+Windows asocia determinados eventos a archivos de sonido, por ejemplo, un evento de notificación de correo nuevo o un evento de alarma de batería crítica. La interfaz de usuario debe mostrar los nombres de evento y admitir la globalización. Por lo tanto, debe implementar un recurso de cadena localizable para la descripción de cada descripción del evento. Agregue un nuevo valor del Registro para cada nombre de evento, además del valor predeterminado codificado de forma hard-coded.
 
 Haga lo siguiente para habilitar un evento de sonido:
 
@@ -276,9 +276,9 @@ HKCR,"CLSID\%CLSID_Media_Clip%","LocalizedString",,"@%systemroot%\system32\mplay
 
 La primera línea proporciona compatibilidad con versiones anteriores colocando una cadena de texto simple en el Registro como un nombre para mostrar predeterminado. La segunda línea proporciona acceso al nombre para mostrar compatible con HIPAA. Indica el identificador de cadena almacenado en Mplay32.exe. La cadena con el identificador 9217 en Mplay32.exe se puede asociar a valores de recursos de cadena para cualquier número de idiomas. Su nombre en inglés (Estados Unidos) es "Media Clip".
 
-## <a name="create-string-resources-for-microsoft-management-console-snap-ins"></a>Creación de recursos de cadena para Microsoft Management Console Snap-Ins
+## <a name="create-string-resources-for-microsoft-management-console-snap-ins"></a>Crear recursos de cadena para Microsoft Management Console Snap-Ins
 
-Debe crear un recurso de cadena localizable para cada Microsoft Management Console complemento mmc (MMC) que usa la aplicación DE INE. Dado que un complemento forma parte de una consola, tiene una interfaz de usuario y debe globalizarse para funcionar en más de un idioma.
+Debe crear un recurso de cadena localizable para cada Microsoft Management Console complemento mmc (MMC) usado por la aplicación DE INTERFAZ de usuario . Dado que un complemento forma parte de una consola, tiene una interfaz de usuario y debe globalizarse para funcionar en más de un idioma.
 
 En su mayor parte, los complementos MMC emiten los mismos problemas de globalización y localización que la propia aplicación DE EXTENSIÓN. Un complemento MMC debe reflejar su nombre en el Registro para mostrarlo. La entrada del Registro debe incluir una referencia indirecta a un recurso de cadena localizable y una cadena literal para la compatibilidad con versiones anteriores.
 
@@ -297,9 +297,9 @@ Algunos complementos registran otros valores de cadena del Registro que MMC no l
 
 ## <a name="create-string-resources-for-a-windows-service"></a>Creación de recursos de cadena para un Windows service
 
-Aunque un Windows normalmente tiene poca o ninguna interfaz de usuario, debe mostrar un nombre compatible con HIPAA y normalmente proporciona una descripción específica del lenguaje compatible con HIPAA. La clave del Registro que describe un servicio Windows solo admite el valor DisplayName para el nombre del servicio y el valor Description para la descripción del servicio.
+Aunque un Windows normalmente tiene poca o ninguna interfaz de usuario, debe mostrar un nombre compatible con HIPAA y normalmente proporciona una descripción específica del lenguaje compatible con HIPAA. La clave del Registro que describe un servicio Windows admite solo el valor DisplayName para el nombre del servicio y el valor Description para la descripción del servicio.
 
-Configuración para el servicio Windows se realizan desde la aplicación, como se describe en Establecer el nombre para mostrar y la descripción de un servicio Windows del Registro en Buscar [cadenas redirigidas.](locating-redirected-strings.md) Si la aplicación no establece los valores del Registro para la interfaz de usuario del servicio, los valores del Registro permanecen establecidos en inglés, incluso si la interfaz de usuario está en otro idioma.
+Configuración para el servicio Windows se realizan desde la aplicación, como se describe en Establecer el nombre para mostrar y la descripción de un servicio de Windows del Registro en Buscar [cadenas redirigidas.](locating-redirected-strings.md) Si la aplicación no establece los valores del Registro para la interfaz de usuario del servicio, los valores del Registro permanecen establecidos en inglés, incluso si la interfaz de usuario está en otro idioma.
 
 ## <a name="related-topics"></a>Temas relacionados
 

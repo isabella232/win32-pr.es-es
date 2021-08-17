@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Comctl32.dll
 ms.assetid: b2d9e3c7-8151-45ef-9658-bd33a87b4c9c
-ms.openlocfilehash: 34cd3dd9e5b9e62bbdd13b31d95e7205e4427de6
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: e5f97d1f50dae081eac00014415129d8a4c858a0e6e2c3406e1a6c4f6905c71c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117861402"
 ---
 # <a name="createmrulistw-function"></a>Función CreateMRUListW
 
@@ -55,7 +55,7 @@ Tipo: **int**
 
 Devuelve un identificador a la nueva lista de MRU o 0 en caso de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta función no se incluye en un encabezado o biblioteca públicos. Se puede acceder a él a través de [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) o extraerse de comctl32.dll por su ordinal, que es 400 para **CreateMRUListW**.
 
@@ -63,7 +63,7 @@ Esta función no se incluye en un encabezado o biblioteca públicos. Se puede ac
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                     |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |

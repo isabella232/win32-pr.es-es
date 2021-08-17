@@ -1,33 +1,33 @@
 ---
 description: Estas constantes se aplican a las variables de efecto.
 ms.assetid: ef996443-b558-4aa6-acc1-38f8a89c9855
-title: Constantes de D3D10_EFFECT_VARIABLE
+title: D3D10_EFFECT_VARIABLE constantes
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58d6367fe89f66ff90991b8493a03a6d1b4244f4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7541253fffd6671e01a8da38c06fd15924d45b461d5acc0e468fd17660746f42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117736076"
 ---
-# <a name="d3d10_effect_variable-constants"></a>Constantes de variable de \_ efecto de D3D10 \_
+# <a name="d3d10_effect_variable-constants"></a>Constantes DE VARIABLE \_ DE EFECTO D3D10 \_
 
 Estas constantes se aplican a las variables de efecto.
 
 
 
-| \#define                                       | Descripción  | Value                                                                                                                                                                                                                                                             |
+| \#Definir                                       | Descripción  | Value                                                                                                                                                                                                                                                             |
 |------------------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D3D10 \_ \_ anotación de variable de efecto \_            | 1 << 0 | Indica que se trata de una anotación o una variable global.                                                                                                                                                                                                        |
-| \_Variable de efecto D3D10 \_ \_ agrupada                | 1 << 1 | Indica que esta variable o búfer de constantes reside en un grupo de efectos. Si no se establece esta marca, la variable se encuentra en un efecto independiente o en un efecto secundario (los efectos independientes devuelven false desde [**ID3D10Effect:: IsPool**](/windows/desktop/api/D3D10Effect/nf-d3d10effect-id3d10effect-ispool)). |
-| \_Punto de \_ \_ enlace explícito \_ de variable de efecto de \_ D3D10 | 1 << 2 | Indica que la variable se ha enlazado explícitamente mediante la palabra clave Register.                                                                                                                                                                                 |
+| ANOTACIÓN DE \_ VARIABLE DE EFECTO D3D10 \_ \_            | 1 << 0 | Indica que se trata de una anotación o una variable global.                                                                                                                                                                                                        |
+| VARIABLE DE EFECTO D3D10 \_ \_ \_ AGRUPADA                | 1 << 1 | Indica que esta variable o búfer constante reside en un grupo de efectos. Si no se establece esta marca, la variable reside en un efecto independiente o en un efecto secundario (los efectos independientes devuelven false desde [**ID3D10Effect::IsPool**](/windows/desktop/api/D3D10Effect/nf-d3d10effect-id3d10effect-ispool). |
+| PUNTO DE ENLACE EXPLÍCITO DE \_ LA VARIABLE DE \_ EFECTO \_ \_ \_ D3D10 | 1 << 2 | Indica que la variable se ha enlazado explícitamente mediante la palabra clave register.                                                                                                                                                                                 |
 
 
 
  
 
-Estas marcas se definen como macros en d3d10effect. h.
+Estas marcas se definen como macros en d3d10effect.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 

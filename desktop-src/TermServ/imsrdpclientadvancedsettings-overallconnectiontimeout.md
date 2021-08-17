@@ -1,26 +1,26 @@
 ---
-title: Propiedad overallConnectionTimeout de IMsRdpClientAdvancedSettings
-description: Especifica la cantidad total de tiempo, en segundos, que el control de cliente espera a que se complete una conexión.
+title: Propiedad IMsRdpClientAdvancedSettings overallConnectionTimeout
+description: Especifica el tiempo total, en segundos, que el control de cliente espera a que se complete una conexión.
 ms.assetid: 02fb24e1-b5e4-4d8e-a1c2-a9bd62a69bed
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad overallConnectionTimeout
-- propiedad overallConnectionTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad overallConnectionTimeout
-- propiedad overallConnectionTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad overallConnectionTimeout
-- propiedad overallConnectionTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad overallConnectionTimeout
-- propiedad overallConnectionTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad overallConnectionTimeout
-- propiedad overallConnectionTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad overallConnectionTimeout
-- propiedad overallConnectionTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad overallConnectionTimeout
-- propiedad overallConnectionTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad overallConnectionTimeout
-- propiedad overallConnectionTimeout Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad overallConnectionTimeout
+- propiedad overallConnectionTimeout Servicios de Escritorio remoto
+- Propiedad overallConnectionTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad overallConnectionTimeout
+- Propiedad overallConnectionTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad overallConnectionTimeout
+- Propiedad overallConnectionTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad overallConnectionTimeout
+- Propiedad overallConnectionTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad overallConnectionTimeout
+- Propiedad overallConnectionTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad overallConnectionTimeout
+- Propiedad overallConnectionTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad overallConnectionTimeout
+- Propiedad overallConnectionTimeout Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad overallConnectionTimeout
+- Interfaz overallConnectionTimeout Servicios de Escritorio remoto , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad overallConnectionTimeout
 topic_type:
 - apiref
 api_name:
@@ -54,22 +54,22 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50de6687d3d5cbccb3f7fdab94eca5ba4f2331c6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 400a2a64e42424b49c5e9e6506eae0c7ab4391cbd6299ac18aa8d9a43b97bdc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757766"
 ---
-# <a name="imsrdpclientadvancedsettingsoverallconnectiontimeout-property"></a>IMsRdpClientAdvancedSettings:: overallConnectionTimeout (propiedad)
+# <a name="imsrdpclientadvancedsettingsoverallconnectiontimeout-property"></a>Propiedad IMsRdpClientAdvancedSettings::overallConnectionTimeout
 
-Especifica la cantidad total de tiempo, en segundos, que el control de cliente espera a que se complete una conexión.
+Especifica el tiempo total, en segundos, que el control de cliente espera a que se complete una conexión.
 
-Si transcurre el tiempo especificado antes de que se complete la conexión, el control se desconecta y llama al método [**IMsTscAxEvents:: OnDisconnection**](imstscaxevents-ondisconnected.md) .
+Si el tiempo especificado transcurre antes de que finalice la conexión, el control se desconecta y llama al método [**IMsTscAxEvents::OnDisconnected.**](imstscaxevents-ondisconnected.md)
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -90,11 +90,11 @@ La nueva hora, en segundos. El valor máximo es 600, que representa 10 minutos.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

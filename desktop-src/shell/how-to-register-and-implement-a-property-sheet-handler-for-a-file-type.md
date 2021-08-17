@@ -1,20 +1,20 @@
 ---
-description: Cuando el usuario hace clic con el botón secundario en un miembro de un tipo de archivo para mostrar la hoja de propiedades propiedades, el shell llama a los controladores de hoja de propiedades que se registran para el tipo de archivo. Cada controlador puede Agregar una página personalizada a la hoja de propiedades predeterminada.
+description: Cuando el usuario hace clic con el botón derecho en un miembro de un tipo de archivo para mostrar la hoja de propiedades Propiedades, el Shell llama a los controladores de hoja de propiedades registrados para el tipo de archivo. Cada controlador puede agregar una página personalizada a la hoja de propiedades predeterminada.
 title: Cómo registrar e implementar un controlador de hoja de propiedades para un tipo de archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77cf54886f7819fa910da23393c6db488ddfee72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ce0451071ba1f454ffae9ca1444f30428909946442f5aead853e74095d0c0c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118049811"
 ---
 # <a name="how-to-register-and-implement-a-property-sheet-handler-for-a-file-type"></a>Cómo registrar e implementar un controlador de hoja de propiedades para un tipo de archivo
 
-Cuando el usuario hace clic con el botón secundario en un miembro de un tipo de archivo para mostrar la hoja de propiedades propiedades, el shell llama a los controladores de hoja de propiedades que se registran para el tipo de archivo. Cada controlador puede Agregar una página personalizada a la hoja de propiedades predeterminada.
+Cuando el usuario hace clic con el botón derecho en un miembro de un tipo de archivo para mostrar la hoja de propiedades Propiedades, el Shell llama a los controladores de hoja de propiedades registrados para el tipo de archivo. Cada controlador puede agregar una página personalizada a la hoja de propiedades predeterminada.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
@@ -24,15 +24,15 @@ Cuando el usuario hace clic con el botón secundario en un miembro de un tipo de
 
 -   Descripción de los menús contextuales
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="step-1-registering-a-property-sheet-handler-for-a-file-type"></a>Paso 1: registrar un controlador de la hoja de propiedades para un tipo de archivo
+### <a name="step-1-registering-a-property-sheet-handler-for-a-file-type"></a>Paso 1: Registrar un controlador de hoja de propiedades para un tipo de archivo
 
-Además del registro de modelo de objetos componentes (COM) normal, agregue una subclave **PropertySheetHandlers** a la subclave **shellex** de la clave ProgID de la aplicación asociada al tipo de archivo. Cree una subclave de **PropertySheetHandlers** con el nombre del controlador y establezca el valor predeterminado en la forma de cadena del GUID del identificador de clase (CLSID) del controlador de la hoja de propiedades.
+Además del registro normal del Modelo de objetos componentes (COM), agregue una subclave **PropertySheetHandlers** a la **subclave shellex** de la clave ProgID de la aplicación asociada al tipo de archivo. Cree una subclave **de PropertySheetHandlers** con el nombre del controlador y establezca el valor predeterminado en el formato de cadena del GUID del identificador de clase (CLSID) del controlador de hoja de propiedades.
 
-Para agregar más de una página a la hoja de propiedades, registre un controlador para cada página. El número máximo de páginas que puede admitir una hoja de propiedades es 32. Para registrar varios controladores, cree una clave en la clave **shellex** para cada controlador, con el valor predeterminado establecido en el GUID de CLSID del controlador. No es necesario crear un objeto distinto para cada controlador, lo que significa que varios controladores pueden tener el mismo valor de GUID. Las páginas se mostrarán en el orden en que aparecen en **shellex**.
+Para agregar más de una página a la hoja de propiedades, registre un controlador para cada página. El número máximo de páginas que puede admitir una hoja de propiedades es 32. Para registrar varios controladores, cree una clave bajo la clave **shellex** para cada controlador, con el valor predeterminado establecido en el GUID de CLSID del controlador. No es necesario crear un objeto distinto para cada controlador, lo que significa que varios controladores pueden tener el mismo valor GUID. Las páginas se mostrarán en el orden en que sus claves aparecen en **shellex**.
 
-En el ejemplo siguiente se muestra una entrada del registro que habilita dos controladores de extensión de la hoja de propiedades para un tipo de archivo. MYP de ejemplo. En este ejemplo, se usa un objeto independiente para cada página, pero también se puede usar un único objeto para ambos.
+En el ejemplo siguiente se muestra una entrada del Registro que habilita dos controladores de extensión de hoja de propiedades para un tipo de archivo .myp de ejemplo. En este ejemplo, se usa un objeto independiente para cada página, pero también se podría usar un único objeto para ambos.
 
 ```
 HKEY_CLASSES_ROOT
@@ -57,25 +57,25 @@ HKEY_CLASSES_ROOT
                (Default) = {Page2 Property Sheet Handler CLSID GUID}
 ```
 
-### <a name="step-2-implementing-a-property-sheet-handler-for-a-file-type"></a>Paso 2: implementar un controlador de hoja de propiedades para un tipo de archivo
+### <a name="step-2-implementing-a-property-sheet-handler-for-a-file-type"></a>Paso 2: Implementar un controlador de hoja de propiedades para un tipo de archivo
 
-Además de la implementación general que se describe en [Cómo funcionan los controladores de hoja de propiedades](propsheet-handlers.md), un controlador de hoja de propiedades para un tipo de archivo también debe tener una implementación adecuada de la interfaz [**IShellPropSheetExt**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellpropsheetext) . Solo el método [**IShellPropSheetExt:: AddPages**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellpropsheetext-addpages) necesita una implementación que no sea de token. El shell no llama a [**IShellPropSheetExt:: ReplacePage**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellpropsheetext-replacepage).
+Además de la implementación general que se describe en Funcionamiento de los controladores de hoja de propiedades [,](propsheet-handlers.md)un controlador de hoja de propiedades para un tipo de archivo también debe tener una implementación adecuada de la interfaz [**IShellPropSheetExt.**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellpropsheetext) Solo el [**método IShellPropSheetExt::AddPages**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellpropsheetext-addpages) necesita una implementación sintoken. El shell no llama a [**IShellPropSheetExt::ReplacePage**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellpropsheetext-replacepage).
 
-El método [**IShellPropSheetExt:: AddPages**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellpropsheetext-addpages) permite que un controlador de hoja de propiedades agregue una página a una hoja de propiedades. El método tiene dos parámetros de entrada. El primero, *lpfnAddPage*, es un puntero a una función de devolución de llamada [*AddPropSheetPageProc*](/windows/win32/api/prsht/nc-prsht-lpfnaddpropsheetpage) que se usa para proporcionar al shell la información necesaria para agregar la página a la hoja de propiedades. El segundo, *lParam*, es un valor definido por el shell que no es procesado por el controlador. Simplemente se devuelve al shell cuando se llama a la función de devolución de llamada.
+El [**método IShellPropSheetExt::AddPages**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellpropsheetext-addpages) permite que un controlador de hoja de propiedades agregue una página a una hoja de propiedades. El método tiene dos parámetros de entrada. El primero, *lpfnAddPage*, es un puntero a una función de devolución de llamada [*AddPropSheetPageProc*](/windows/win32/api/prsht/nc-prsht-lpfnaddpropsheetpage) que se usa para proporcionar al Shell la información necesaria para agregar la página a la hoja de propiedades. El segundo, *lParam*, es un valor definido por Shell que el controlador no procesa. Simplemente se pasa al Shell cuando se llama a la función de devolución de llamada.
 
 El procedimiento general para implementar [**AddPages**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellpropsheetext-addpages) es el siguiente.
 
 **Implementar el método AddPages**
 
-1.  Asigne los valores adecuados a los miembros de una estructura [**PROPSHEETPAGE**](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v3) . En concreto:
-    -   Asigne la variable que contiene el recuento de referencias del controlador al miembro **pcRefParent** . Esta práctica evita que el objeto de controlador se descargue mientras la hoja de propiedades todavía se está mostrando.
-    -   También puede implementar una función de devolución de llamada [*PropSheetPageProc*](/windows/win32/api/prsht/nc-prsht-lpfnpspcallbacka) y asignar su puntero a un miembro **pfnCallback** . Se llama a esta función cuando se crea la página y cuando está a punto de ser destruida.
-2.  Cree el identificador de HPAGE de la página pasando la estructura [**PROPSHEETPAGE**](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v3) a la función [**CreatePropertySheetPage**](/windows/win32/api/prsht/nf-prsht-createpropertysheetpagea) .
-3.  Llame a la función a la que apunta *lpfnAddPage*. Establezca su primer parámetro en el identificador de HPAGE que se creó en el paso anterior. Establezca el segundo parámetro en el valor *lParam* que se pasó a [**AddPages**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellpropsheetext-addpages) por el shell.
-4.  Los mensajes asociados a la página se pasarán al procedimiento del cuadro de diálogo que se asignó al miembro **pfnDlgProc** de la estructura [**PROPSHEETPAGE**](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v3) .
-5.  Si ha asignado una función de devolución de llamada [*PropSheetPageProc*](/windows/win32/api/prsht/nc-prsht-lpfnpspcallbacka) a **pfnCallback**, se le llamará cuando la página esté a punto de ser destruida. Después, el controlador puede realizar las operaciones de limpieza necesarias, como liberar las referencias que contiene.
+1.  Asigne los valores adecuados a los miembros de una [**estructura PROPSHEETPAGE.**](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v3) En concreto:
+    -   Asigne la variable que contiene el recuento de referencias del controlador al **miembro pcRefParent.** Esta práctica impide que el objeto de controlador se descargue mientras se sigue mostrndo la hoja de propiedades.
+    -   También puede implementar una función de devolución [*de llamada PropSheetPageProc*](/windows/win32/api/prsht/nc-prsht-lpfnpspcallbacka) y asignar su puntero a un **miembro pfnCallback.** Se llama a esta función cuando se crea la página y cuando está a punto de destruirse.
+2.  Cree el identificador HPAGE de la página pasando la [**estructura PROPSHEETPAGE**](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v3) a la [**función CreatePropertySheetPage.**](/windows/win32/api/prsht/nf-prsht-createpropertysheetpagea)
+3.  Llame a la función a la que *apunta lpfnAddPage*. Establezca su primer parámetro en el identificador HPAGE que se creó en el paso anterior. Establezca su segundo parámetro en el *valor lParam* que el shell pasó a [**AddPages.**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellpropsheetext-addpages)
+4.  Los mensajes asociados a la página se pasarán al procedimiento del cuadro de diálogo que se asignó al **miembro pfnDlgProc** de la [**estructura PROPSHEETPAGE.**](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v3)
+5.  Si asignó una función de devolución de llamada [*PropSheetPageProc*](/windows/win32/api/prsht/nc-prsht-lpfnpspcallbacka) a **pfnCallback,** se llamará cuando la página esté a punto de destruirse. A continuación, el controlador puede realizar las operaciones de limpieza necesarias, como liberar las referencias que contiene.
 
-En el ejemplo de código siguiente se muestra una implementación de [**AddPages**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellpropsheetext-addpages) simple.
+En el ejemplo de código siguiente se muestra una implementación [**simple de AddPages.**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellpropsheetext-addpages)
 
 
 ```C++
@@ -119,11 +119,11 @@ STDMETHODIMP CShellPropSheetExt::AddPages(LPFNADDPROPSHEETPAGE, lpfnAddPage, LPA
 
 
 
-La variable **g \_ HINST** es el identificador de instancia de la dll y IDD \_ PAGEDLG es el identificador de recurso de la plantilla de cuadro de diálogo de la página. La función **PageDlgProc** es el procedimiento de cuadro de diálogo que controla los mensajes de la página. La variable **g \_ DllRefCount** contiene el recuento de referencias del objeto. El método [**AddPages**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellpropsheetext-addpages) llama a [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) para incrementar el recuento. Sin embargo, el recuento de referencias se libera mediante la función de devolución de llamada, **PageCallbackProc**, cuando la página está a punto de ser destruida.
+La **variable g \_ hInst** es el identificador de instancia del archivo DLL e IDD PAGEDLG es el identificador de recurso de la plantilla de cuadro \_ de diálogo de la página. La **función PageDlgProc** es el procedimiento de cuadro de diálogo que controla los mensajes de la página. La **variable g \_ DllRefCount** contiene el recuento de referencias del objeto. El [**método AddPages**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellpropsheetext-addpages) llama [**a AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) para incrementar el recuento. Sin embargo, la función de devolución de llamada **PageCallbackProc** libera el recuento de referencias cuando la página está a punto de destruirse.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener información general sobre cómo registrar controladores de extensión de Shell, vea [crear controladores de extensión de Shell](handlers.md).
+Para obtener una explicación general de cómo registrar controladores de extensión de Shell, vea [Creating Shell Extension Handlers](handlers.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

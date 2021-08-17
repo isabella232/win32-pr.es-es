@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de CBEN_ENDEDIT (commctrl. h)
-description: Se envía cuando el usuario ha finalizado una operación en el cuadro de edición o ha seleccionado un elemento de la lista desplegable del control. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: CBEN_ENDEDIT de notificación (Commctrl.h)
+description: Se envía cuando el usuario ha finalizado una operación dentro del cuadro de edición o ha seleccionado un elemento de la lista desplegable del control. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: b6b50951-7304-4499-b57b-a5b592de2190
 keywords:
-- CBEN_ENDEDIT controles de código de notificación de Windows
+- CBEN_ENDEDIT código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 679b9f878dbd8f7f374b461ee548f9ce2c62e281
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 22ae9205e84e4f1c0b10e516b1f406f2d167f1bc5cc38417a31379d20e16fcac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118413955"
 ---
-# <a name="cben_endedit-notification-code"></a>Código de notificación de CBEN \_ ENDEDIT
+# <a name="cben_endedit-notification-code"></a>Código de notificación ENDEDIT de CBEN \_
 
-Se envía cuando el usuario ha finalizado una operación en el cuadro de edición o ha seleccionado un elemento de la lista desplegable del control. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Se envía cuando el usuario ha finalizado una operación dentro del cuadro de edición o ha seleccionado un elemento de la lista desplegable del control. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,28 +43,28 @@ CBEN_ENDEDIT
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMCBEENDEDIT**](/windows/desktop/api/Commctrl/ns-commctrl-nmcbeendedita) que contiene información sobre cómo el usuario ha concluido la operación de edición.
+Puntero a una [**estructura NMCBEENDEDIT**](/windows/desktop/api/Commctrl/ns-commctrl-nmcbeendedita) que contiene información sobre cómo el usuario finalizó la operación de edición.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**False** para aceptar el código de notificación y permitir que el control muestre el elemento seleccionado; en caso contrario, **true**.
+**FALSE** para aceptar el código de notificación y permitir que el control muestre el elemento seleccionado; de lo contrario, **TRUE**.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **CBEN \_ ENDEDITW** (Unicode) y **CBEN \_ ENDEDITA** (ANSI)<br/>                 |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 0c858567-e17a-46a0-b3ff-a0dc8089b0cd
 title: elemento autoStatic
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9414470f56021d475fb7cf52e570ac2793228445
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 2f6b9a447e964c90354c909fc0399276d8ed69e7d1dfb3a493d5590a6470d0cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117738678"
 ---
 # <a name="autostatic-element"></a>elemento autoStatic
 

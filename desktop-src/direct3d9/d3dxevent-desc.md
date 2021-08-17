@@ -1,7 +1,7 @@
 ---
 description: Describe un evento de animación.
 ms.assetid: ddcdd143-bcbd-450c-a4df-914797a562e6
-title: D3DXEVENT_DESC estructura (D3dx9anim. h)
+title: D3DXEVENT_DESC estructura (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: 32e02e75d3d73569b60c466f45dace2c074a6b3e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d5569eccd5b99939cd50797ee73593ce5a2bfc8ddd60236e05218ddcca7f4383
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731813"
 ---
 # <a name="d3dxevent_desc-structure"></a>D3DXEVENT \_ DESC (estructura)
 
@@ -52,40 +52,40 @@ typedef struct D3DXEVENT_DESC {
 **Tipo**
 </dt> <dd>
 
-Tipo: **[ **D3DXEVENT \_ Type**](./d3dxevent-type.md)**
+Tipo: **[ **D3DXEVENT \_ TYPE**](./d3dxevent-type.md)**
 
 </dd> <dd>
 
-Tipo de evento, tal y como se define en [**D3DXEVENT \_ Type**](./d3dxevent-type.md).
+Tipo de evento, tal como se define en [**D3DXEVENT \_ TYPE**](./d3dxevent-type.md).
 
 </dd> <dt>
 
-**Dar**
+**Pista**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Identificador de la pista de eventos.
+Identificador de seguimiento de eventos.
 
 </dd> <dt>
 
 **StartTime**
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Hora de inicio del evento en tiempo global.
+Hora de inicio del evento en hora global.
 
 </dd> <dt>
 
-**Duration**
+**Duración**
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -96,51 +96,51 @@ Duración del evento en tiempo global.
 **Transición**
 </dt> <dd>
 
-Tipo: **[ **D3DXTRANSITION \_ Type**](./d3dxtransition-type.md)**
+Tipo: **[ **D3DXTRANSITION \_ TYPE**](./d3dxtransition-type.md)**
 
 </dd> <dd>
 
-Estilo de transición del evento, tal y como se define en [**D3DXTRANSITION \_ Type**](./d3dxtransition-type.md).
+Estilo de transición del evento, tal como se define en [**D3DXTRANSITION \_ TYPE**](./d3dxtransition-type.md).
 
 </dd> <dt>
 
 **Peso**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Ponderación del seguimiento del evento.
+Realizar un seguimiento del peso del evento.
 
 </dd> <dt>
 
 **Velocidad**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Velocidad de seguimiento para el evento.
+Realice un seguimiento de la velocidad del evento.
 
 </dd> <dt>
 
 **Position**
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Seguimiento de la posición del evento.
+Realizar un seguimiento de la posición del evento.
 
 </dd> <dt>
 
-**Habilitar**
+**Habilitación**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -154,7 +154,7 @@ Habilitar marca.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9anim.h</dt> </dl> |
 
 
 
@@ -162,7 +162,7 @@ Habilitar marca.
 
 <dl> <dt>
 
-[Estructuras de D3DX](dx9-graphics-reference-d3dx-structures.md)
+[Estructuras D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> </dl>
 
  

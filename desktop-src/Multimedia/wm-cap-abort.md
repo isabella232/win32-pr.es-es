@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_ABORT (VFW. h)
-description: El \_ mensaje de anulación de Cap de WM \_ detiene la operación de captura.
+title: WM_CAP_ABORT mensaje (Vfw.h)
+description: El mensaje ABORT de WM \_ CAP detiene la operación de \_ captura.
 ms.assetid: a0479d73-8422-4833-9e8a-c262ec386f58
 keywords:
-- Mensaje de WM_CAP_ABORT de Windows multimedia
+- WM_CAP_ABORT mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2843e3c4d59b62f2b58be20cef63ed0dc2e79d4b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 904edb47c371ee13ed3492fd9257e3933bf2f001010d7dd2b0177a7729500813
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800665"
 ---
-# <a name="wm_cap_abort-message"></a>\_Mensaje de anulación de Cap de WM \_
+# <a name="wm_cap_abort-message"></a>Mensaje \_ DE \_ ANULACIÓN DE WM CAP
 
-El mensaje de **\_ \_ anulación de Cap de WM** detiene la operación de captura. En el caso de la captura de pasos, los datos de la imagen recopilados hasta el momento del mensaje de **\_ \_ anulación del Cap de WM** se conservarán en el archivo de captura, pero el audio no se capturará. Puede enviar este mensaje explícitamente o mediante la macro [**capCaptureAbort**](/windows/desktop/api/Vfw/nf-vfw-capcaptureabort) .
+El **mensaje ABORT \_ \_ de WM CAP** detiene la operación de captura. En el caso de la captura de pasos, los datos de imagen recopilados hasta el punto del mensaje **WM \_ CAP \_ ABORT** se conservarán en el archivo de captura, pero no se capturará el audio. Puede enviar este mensaje explícitamente o mediante la [**macro capCaptureAbort.**](/windows/desktop/api/Vfw/nf-vfw-capcaptureabort)
 
 
 ```C++
@@ -36,13 +36,13 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La operación de captura debe proporcionar el uso de este mensaje.
+La operación de captura debe producir para usar este mensaje.
 
-Use el mensaje de [**\_ \_ detención de Cap de WM**](wm-cap-stop.md) para detener la captura de paso en la posición actual y, a continuación, capturar audio.
+Use el [**mensaje WM \_ CAP \_ STOP**](wm-cap-stop.md) para detener la captura de pasos en la posición actual y, a continuación, capturar audio.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Use el mensaje de [**\_ \_ detención de Cap de WM**](wm-cap-stop.md) para deten
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

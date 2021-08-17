@@ -1,7 +1,7 @@
 ---
-description: Transición de clave
+description: Transición de claves
 ms.assetid: 5d1ed2e4-82c2-4364-b8f0-22bba974bc22
-title: Transición de clave
+title: Transición de claves
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a9fc5b905b1650b6db6bb98b542193160825b8bd6dd74626ef9bddc91b118118
@@ -11,10 +11,10 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118397286"
 ---
-# <a name="key-transition"></a>Transición de clave
+# <a name="key-transition"></a>Transición de claves
 
 > [!Note]  
-> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -37,23 +37,23 @@ Propiedades
 | Propiedad   | Tipo  | Intervalo válido           | Descripción                                                                                                                                                                                                                                                | Se aplica a                     |
 |------------|-------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
 | Matiz        | int   | 0–360                 | Valor de matiz en el que se va a claver.                                                                                                                                                                                                                             | Matiz                            |
-| Invertir     | BOOL  | **FALSE** o **TRUE** | Valor booleano que indica si se debe invertir la operación predeterminada de la clave. Si **es FALSE,** los píxeles de la imagen de sobrease se hacen transparentes de la manera predeterminada. Si **es TRUE,** la operación invierte.                                                   | Croma, Hue, Luminance, Nonred |
-| KeyType    | int   | Consulte Comentarios           | Especifica el tipo de clave. Para obtener más información, vea la sección Comentarios.                                                                                                                                                                                              | All                            |
+| Invertir     | BOOL  | **FALSE** o **TRUE** | Valor booleano que indica si se debe invertir la operación predeterminada de la clave. Si **es FALSE,** los píxeles de la imagen de sobresaliendo se hacen transparentes de la manera predeterminada. Si **es TRUE,** la operación invierte.                                                   | Verón, Hue, Luminosidad, Nored |
+| KeyType    | int   | Consulte Comentarios.           | Especifica el tipo de clave. Para obtener más información, vea la sección Comentarios.                                                                                                                                                                                              | Todo                            |
 | Luminance  | int   | 0–100                 | Valor de luminosidad en el que se va a claver.                                                                                                                                                                                                                       | Luminance                      |
-| RGB        | DWORD | 0x0: 0xFFFFFF        | Color en el que se va a claver. El valor es un número hexadecimal con el formato 0x *RRGGBB*, donde *RR* es el valor rojo, *GG* es el valor verde y *BB* es el valor azul. (Rojo puro, verde y azul son 0xFF0000, 0x00FF00 y 0x0000FF, respectivamente). | Chroma                         |
-| Similitud | int   | 0–100                 | Intervalo de datos de color que se vuelve transparente. En valores más altos, una gama más amplia de colores similares es transparente.                                                                                                                                        | Croma, Nored                 |
+| RGB        | DWORD | 0x0: 0xFFFFFF        | Color en el que se va a claver. El valor es un número hexadecimal con el formato 0x *RRGGBB,* donde *RR* es el valor rojo, *GG* es el valor verde y *BB* es el valor azul. (Rojo puro, verde y azul son 0xFF0000, 0x00FF00 y 0x0000FF, respectivamente). | Chroma                         |
+| Similitud | int   | 0–100                 | Intervalo de datos de color que se vuelve transparente. En valores más altos, una gama más amplia de colores similares es transparente.                                                                                                                                        | Verón, nored                 |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El tipo de clave que se realiza depende del valor de la **propiedad KeyType,** que debe ser uno de los siguientes:
+El tipo de clave que se realiza depende del valor de la **propiedad KeyType,** que debe ser una de las siguientes:
 
 
 
-| Value | Enumeración       | Descripción                                           |
+| Valor | Enumeración       | Descripción                                           |
 |-------|-------------------|-------------------------------------------------------|
 | 0     | DXTKEY \_ RGB       | Tecla de descifrado (clave por valor RGB).                        |
 | 1     | DXTKEY \_ NONRED    | Clave nored. (Hace transparentes las áreas azul y verde). |

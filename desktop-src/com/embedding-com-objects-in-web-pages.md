@@ -1,5 +1,5 @@
 ---
-title: Inserción de objetos COM en páginas web
+title: Insertar objetos COM en páginas web
 description: Puede usar objetos COM en páginas web. Para ello, cree primero una instancia de ese objeto COM. Después de crear una instancia de objeto, puede usarla en scripts posteriores en esa página web.
 ms.assetid: 7e2c9da7-aeae-4206-8be9-1303240b2b1d
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117736896"
 ---
-# <a name="embedding-com-objects-in-web-pages"></a>Inserción de objetos COM en páginas web
+# <a name="embedding-com-objects-in-web-pages"></a>Insertar objetos COM en páginas web
 
 Puede usar objetos COM en páginas web. Para ello, cree primero una instancia de ese objeto COM. Después de crear una instancia de objeto, puede usarla en scripts posteriores en esa página web.
 
@@ -52,7 +52,7 @@ También puede crear una instancia de objeto COM en el script, si el lenguaje de
 
 Además del método CreateObject y el objeto ActiveXObject, tanto VBScript como JScript proporcionan el método GetObject, que devuelve una instancia de objeto.
 
-Una vez creado un objeto COM, puede hacer referencia a él en scripts posteriores mediante el identificador especificado en el atributo ID de la etiqueta OBJECT. En el ejemplo anterior, este identificador se especificó como "vid". Tenga en cuenta que el script que usa el objeto COM debe aparecer después de la etiqueta OBJECT o el script que crea la instancia del objeto; De lo contrario, el identificador de objeto no está definido. El siguiente script usa el objeto objXL para mostrar la información de versión de Microsoft Excel.
+Una vez creado un objeto COM, puede hacer referencia a él en scripts posteriores mediante el identificador especificado en el atributo ID de la etiqueta OBJECT. En el ejemplo anterior, este identificador se especificó como "vid". Tenga en cuenta que el script que usa el objeto COM debe aparecer después de la etiqueta OBJECT o el script que crea la instancia del objeto; De lo contrario, el identificador de objeto no está definido. El script siguiente usa el objeto objXL para mostrar la información de versión de Microsoft Excel.
 
 ``` syntax
 <SCRIPT LANGUAGE = "VBScript">
@@ -61,7 +61,7 @@ Una vez creado un objeto COM, puede hacer referencia a él en scripts posteriore
  
 ```
 
-Si va a escribir scripts insertados en una página web, el explorador también expone un modelo de objetos al que pueden acceder los scripts. El modelo utilizado por Internet Explorer se ajusta a la Document Object Model (DOM) propuesta por el World Wide Web Consortium (W3C).
+Si va a escribir scripts insertados en una página web, el explorador también expone un modelo de objetos al que pueden acceder los scripts. El modelo utilizado por Internet Explorer se ajusta al Document Object Model (DOM) propuesto por el World Wide Web Consortium (W3C).
 
 ## <a name="related-topics"></a>Temas relacionados
 

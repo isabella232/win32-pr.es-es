@@ -1,6 +1,6 @@
 ---
 title: EQUALIZERSETTINGS.bypass
-description: El atributo bypass especifica o recupera un valor que indica si el filtro de igualador se omite en el gráfico de filtros.
+description: El atributo de omisión especifica o recupera un valor que indica si el filtro de igualador se omite en el gráfico de filtros.
 ms.assetid: b189a6f1-e0d0-4cfa-9a99-73d3ccd705e0
 keywords:
 - EQUALIZERSETTINGS.bypass Reproductor de Windows Media
@@ -21,7 +21,7 @@ ms.locfileid: "117748943"
 ---
 # <a name="equalizersettingsbypass"></a>EQUALIZERSETTINGS.bypass
 
-El **atributo bypass** especifica o recupera un valor que indica si el filtro de igualador se omite en el gráfico de filtros.
+El **atributo** de omisión especifica o recupera un valor que indica si el filtro de igualador se omite en el gráfico de filtros.
 
 ``` syntax
         elementID.bypass
@@ -29,11 +29,11 @@ El **atributo bypass** especifica o recupera un valor que indica si el filtro de
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un booleano de lectura **y escritura.**
+Este atributo es un valor booleano de lectura **y escritura.**
 
 
 
-| Valor | Descripción                                |
+| Value | Descripción                                |
 |-------|--------------------------------------------|
 | true  | Predeterminada. Se omite el filtro del igualador. |
 | false | Se usa el filtro de igualador.              |
@@ -50,13 +50,13 @@ Si no se especifica este atributo, se conservará el valor anterior.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

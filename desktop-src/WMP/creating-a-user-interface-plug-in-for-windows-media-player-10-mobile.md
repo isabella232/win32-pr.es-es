@@ -23,7 +23,7 @@ ms.locfileid: "117750482"
 
 Reproductor de Windows Media 10 Mobile usa el mismo modelo de complemento de interfaz de usuario que el equipo de Reproductor de Windows Media. Sin embargo, Reproductor de Windows Media 10 Mobile solo puede interactuar con complementos de interfaz de usuario en segundo plano. Debido a los modelos de complemento similares, las mismas llamadas API que se aplican a los complementos de interfaz de usuario en segundo plano en el escritorio también se aplican a los complementos de interfaz de usuario en segundo plano en un dispositivo Windows Mobile.
 
-En las secciones siguientes se describe cómo crear un complemento de interfaz de usuario en segundo plano mediante el código generado por el asistente Reproductor de Windows Media complemento.
+En las secciones siguientes se describe cómo crear un complemento de interfaz de usuario en segundo plano mediante código generado por el asistente Reproductor de Windows Media complemento.
 
 
 

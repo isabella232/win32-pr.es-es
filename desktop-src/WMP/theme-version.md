@@ -1,9 +1,9 @@
 ---
-title: THEME. version
-description: El atributo version especifica o recupera el número de versión de Windows Media Player para el que se creó la máscara.
+title: THEME.version
+description: El atributo version especifica o recupera el número de Reproductor de Windows Media versión para el que se autorizó la máscara.
 ms.assetid: 74405b82-96a3-4ac2-aba2-24daceb0a429
 keywords:
-- TEMA. versión de Windows Media Player
+- Theme.version Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 08a8d4050f76219481541d27394fef47434855af
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a224275a581faa35f85094813d0d2378938fdf17398d57ca2eda0d740e748c72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117932539"
 ---
-# <a name="themeversion"></a>THEME. version
+# <a name="themeversion"></a>THEME.version
 
-El atributo **version** especifica o recupera el número de versión de Windows Media Player para el que se creó la máscara.
+El **atributo** version especifica o recupera el número de Reproductor de Windows Media versión para el que se autorizó la máscara.
 
 ``` syntax
 theme.version
@@ -37,7 +37,7 @@ Este atributo es un **número** (**float**). Especificar un valor para este atri
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -45,7 +45,7 @@ Este atributo es un **número** (**float**). Especificar un valor para este atri
 
 <dl> <dt>
 
-[**Elemento THEME**](theme-element.md)
+[**ELEMENTO THEME**](theme-element.md)
 </dt> </dl>
 
  

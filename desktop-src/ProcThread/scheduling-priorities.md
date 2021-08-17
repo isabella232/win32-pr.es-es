@@ -13,9 +13,9 @@ ms.locfileid: "117793317"
 ---
 # <a name="scheduling-priorities"></a>Prioridades de programación
 
-Los subprocesos se programan para ejecutarse en función de *su prioridad de programación.* A cada subproceso se le asigna una prioridad de programación. Los niveles de prioridad van de cero (prioridad más baja) a 31 (prioridad más alta). Solo el subproceso de página cero puede tener una prioridad de cero. (El subproceso de página cero es un subproceso del sistema responsable de la puesta a cero de las páginas libres cuando no hay ningún otro subproceso que deba ejecutarse).
+Los subprocesos se programan para ejecutarse en función de su *prioridad de programación.* A cada subproceso se le asigna una prioridad de programación. Los niveles de prioridad van de cero (prioridad más baja) a 31 (prioridad más alta). Solo el subproceso de página cero puede tener una prioridad de cero. (El subproceso de página cero es un subproceso del sistema responsable de la puesta a cero de las páginas libres cuando no hay ningún otro subproceso que deba ejecutarse).
 
-El sistema trata todos los subprocesos con la misma prioridad como iguales. El sistema asigna segmentos de tiempo de forma round robin a todos los subprocesos con la prioridad más alta. Si ninguno de estos subprocesos está listo para ejecutarse, el sistema asigna segmentos de tiempo de forma round robin a todos los subprocesos con la siguiente prioridad más alta. Si un subproceso de mayor prioridad está disponible para ejecutarse, el sistema deja de ejecutar el subproceso de prioridad inferior (sin permitirle terminar de usar su segmento de tiempo) y asigna un segmento de tiempo completo al subproceso de prioridad más alta. Para obtener más información, vea [Modificadores de contexto.](context-switches.md)
+El sistema trata todos los subprocesos con la misma prioridad como iguales. El sistema asigna segmentos de tiempo de forma round robin a todos los subprocesos con la prioridad más alta. Si ninguno de estos subprocesos está listo para ejecutarse, el sistema asigna segmentos de tiempo de forma round robin a todos los subprocesos con la prioridad más alta siguiente. Si un subproceso de mayor prioridad está disponible para ejecutarse, el sistema deja de ejecutar el subproceso de prioridad inferior (sin permitirle terminar de usar su segmento de tiempo) y asigna un segmento de tiempo completo al subproceso de prioridad más alta. Para obtener más información, vea [Modificadores de contexto.](context-switches.md)
 
 La prioridad de cada subproceso viene determinada por los criterios siguientes:
 
@@ -27,9 +27,9 @@ La clase de prioridad y el nivel de prioridad se combinan para formar la *priori
 ## <a name="priority-class"></a>Priority (clase)
 
 Cada proceso pertenece a una de las siguientes clases de prioridad:<dl> IDLE \_ PRIORITY \_ (CLASE)  
-CLASE \_ DE PRIORIDAD NORMAL \_ \_ INFERIOR  
-CLASE \_ PRIORITY \_ NORMAL  
-CLASE \_ POR ENCIMA DE LA PRIORIDAD \_ \_ NORMAL  
+CLASE \_ DE PRIORIDAD NORMAL POR \_ \_ DEBAJO DE LA NORMAL  
+CLASE \_ DE PRIORIDAD \_ NORMAL  
+CLASE \_ DE PRIORIDAD NORMAL POR ENCIMA DE LA \_ \_ NORMAL  
 CLASE \_ DE PRIORIDAD \_ ALTA  
 CLASE \_ PRIORITY EN \_ TIEMPO REAL  
 </dl>

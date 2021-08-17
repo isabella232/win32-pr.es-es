@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_SETTIMEFORMAT (VFW. h)
-description: El \_ mensaje MCIWNDM SETTIMEFORMAT establece el formato de hora de un dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro MCIWndSetTimeFormat.
+title: MCIWNDM_SETTIMEFORMAT mensaje (Vfw.h)
+description: El mensaje SETTIMEFORMAT de MCIWNDM \_ establece el formato de hora de un dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro MCIWndSetTimeFormat.
 ms.assetid: 7de82094-6d35-44fd-88e7-ebd18a558cfd
 keywords:
-- Mensaje de MCIWNDM_SETTIMEFORMAT de Windows multimedia
+- MCIWNDM_SETTIMEFORMAT mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bcec1f0db5accad93211bf1eb6f1c9297e2b9f33
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 79620aecba07b11ed63dfc43fd2d70b41728586b36649b4b13aace9d1364197c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104533801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117802899"
 ---
-# <a name="mciwndm_settimeformat-message"></a>MCIWNDM \_ SETTIMEFORMAT
+# <a name="mciwndm_settimeformat-message"></a>Mensaje SETTIMEFORMAT de MCIWNDM \_
 
-El mensaje **MCIWNDM \_ SETTIMEFORMAT** establece el formato de hora de un dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndSetTimeFormat**](/windows/desktop/api/Vfw/nf-vfw-mciwndsettimeformat) .
+El **mensaje \_ SETTIMEFORMAT de MCIWNDM** establece el formato de hora de un dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndSetTimeFormat.**](/windows/desktop/api/Vfw/nf-vfw-mciwndsettimeformat)
 
 
 ```C++
@@ -38,22 +38,22 @@ lParam = (LPARAM) (LPSTR) lp;
 
 <dl> <dt>
 
-<span id="lp"></span><span id="LP"></span>*LP*
+<span id="lp"></span><span id="LP"></span>*Lp*
 </dt> <dd>
 
-Puntero a un búfer que contiene la cadena terminada en null que indica el formato de hora. Especifique "frames" para establecer el formato de hora en los marcos o "MS" para establecer el formato de hora en milisegundos.
+Puntero a un búfer que contiene la cadena terminada en NULL que indica el formato de hora. Especifique "fotogramas" para establecer el formato de hora en fotogramas o "ms" para establecer el formato de hora en milisegundos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una aplicación puede especificar formatos de hora que no sean fotogramas o milisegundos, siempre que el dispositivo MCI admita los formatos. Los formatos no continuos, como las pistas y SMPTE, pueden hacer que la barra de seguimiento se comporte de forma errática. Para estos formatos de hora, puede que desee desactivar la barra de herramientas mediante la macro [**MCIWndChangeStyles**](/windows/desktop/api/Vfw/nf-vfw-mciwndchangestyles) y especificar el estilo de \_ ventana MCIWNDF NOPLAYBAR.
+Una aplicación puede especificar formatos de tiempo distintos de fotogramas o milisegundos, siempre y cuando los formatos sean compatibles con el dispositivo MCI. Los formatos no comunes, como tracks y SMPTE, pueden hacer que la barra de seguimiento se comporte de forma errática. Para estos formatos de tiempo, es posible que quiera desactivar la barra de herramientas mediante la macro [**MCIWndChangeStyles**](/windows/desktop/api/Vfw/nf-vfw-mciwndchangestyles) y especificando el estilo de ventana MCIWNDF \_ NOPLAYBAR.
 
-Si desea establecer el formato de hora en fotogramas o milisegundos, también puede usar la macro [**MCIWndUseFrames**](/windows/desktop/api/Vfw/nf-vfw-mciwnduseframes) o [**MCIWndUseTime**](/windows/desktop/api/Vfw/nf-vfw-mciwndusetime) . Para obtener una lista de formatos de hora, vea la macro [**MCIWndGetTimeFormat**](/windows/desktop/api/Vfw/nf-vfw-mciwndgettimeformat) .
+Si desea establecer el formato de hora en fotogramas o milisegundos, también puede usar la macro [**MCIWndUseFrames**](/windows/desktop/api/Vfw/nf-vfw-mciwnduseframes) o [**MCIWndUseTime.**](/windows/desktop/api/Vfw/nf-vfw-mciwndusetime) Para obtener una lista de formatos de hora, vea la macro [**MCIWndGetTimeFormat.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgettimeformat)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ Si desea establecer el formato de hora en fotogramas o milisegundos, también pu
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

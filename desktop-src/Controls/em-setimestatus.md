@@ -71,7 +71,7 @@ Devuelve el valor anterior del *parámetro lParam.*
 
 ## <a name="remarks"></a>Comentarios
 
-**Edición enriquecte:** No **se admite el mensaje EM \_ SETIMESTATUS.**
+**Edición enriqueceda:** No **se admite el mensaje EM \_ SETIMESTATUS.**
 
 ## <a name="requirements"></a>Requisitos
 

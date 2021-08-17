@@ -20,7 +20,7 @@ ms.locfileid: "118376107"
 <span id="_msi_reduced_ui_gly"></span><span id="_MSI_REDUCED_UI_GLY"></span>**interfaz de usuario reducida**
 </dt> <dd>
 
-Nivel de las funcionalidades de la [*interfaz de usuario interna del instalador.*](i-gly.md) Muestra solo cuadros de diálogo de modeless de creación. Para obtener más información, [vea Interfaz de usuario Levels](user-interface-levels.md).
+Nivel de las funcionalidades de la [*interfaz de usuario interna del instalador.*](i-gly.md) Muestra solo los cuadros de diálogo de modeless de creación. Para obtener más información, [vea Interfaz de usuario Levels](user-interface-levels.md).
 
 </dd> <dt>
 

@@ -45,7 +45,7 @@ Nuevo ancho en píxeles.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** el valor se estableció y **FALSE** en caso contrario.
+Devuelve **TRUE si** se estableció el valor y FALSE en **caso** contrario.
 
 ## <a name="requirements"></a>Requisitos
 

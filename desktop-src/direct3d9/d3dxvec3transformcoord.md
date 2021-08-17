@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e4e3514d4717262a7afab7ae808d747de3a1b635
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 12cb5f1b41cc4450173c3a2fc35d01afb00e1cab9984edabfa3684ab33b8228d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730815"
 ---
 # <a name="d3dxvec3transformcoord-function-d3dx9mathh"></a>Función D3DXVec3TransformCoord (D3dx9math.h)
 
@@ -79,7 +79,7 @@ Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) que es el vector tran
 
 Esta función transforma el vector, *pV* (x, y, z, 1), por la matriz, *pM*, proyectando el resultado de nuevo en w=1.
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXVec3TransformCoord** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec3TransformCoord** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,7 +92,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

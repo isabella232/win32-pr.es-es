@@ -68,9 +68,9 @@ Implements IWMPNetwork.getProxySettings
 
 | Valor | Descripción                                                                      |
 |-------|----------------------------------------------------------------------------------|
-| 0     | No se usa un servidor proxy.                                                |
+| 0     | No se está utilizando un servidor proxy.                                                |
 | 1     | Se está utilizando la configuración de proxy para el explorador actual (válido solo para HTTP). |
-| 2     | Se usa la configuración de proxy especificada manualmente.                            |
+| 2     | Se está utilizando la configuración de proxy especificada manualmente.                            |
 | 3     | La configuración del proxy se detecta automáticamente.                                      |
 
 
@@ -79,7 +79,7 @@ Implements IWMPNetwork.getProxySettings
 
 ## <a name="remarks"></a>Comentarios
 
-Se produce un error en este método a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
+Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
 ## <a name="examples"></a>Ejemplos
 

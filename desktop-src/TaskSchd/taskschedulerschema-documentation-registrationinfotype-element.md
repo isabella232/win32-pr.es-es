@@ -31,7 +31,7 @@ Especifica cualquier documentación adicional para la tarea.
  />
 ```
 
-El **tipo** complejo [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) define el elemento Documentation.
+El **elemento Documentation** se define mediante el tipo complejo [**registrationInfoType.**](taskschedulerschema-registrationinfotype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -47,7 +47,7 @@ El **tipo** complejo [**registrationInfoType**](taskschedulerschema-registration
 
 Para las aplicaciones de scripting, se especifica documentación de tareas adicional mediante el uso de [**laRegistrationInfo.Docpropiedad umentation.**](registrationinfo-documentation.md)
 
-Para las aplicaciones de C++, se especifica documentación de tareas adicional mediante la [**propiedad IRegistrationInfo::D ocumentation.**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_documentation)
+En el caso de las aplicaciones de C++, se especifica documentación de tareas adicional mediante la [**propiedad IRegistrationInfo::D ocumentation.**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_documentation)
 
 ## <a name="requirements"></a>Requisitos
 

@@ -4,31 +4,31 @@ ms.assetid: 4b0c4a83-623a-4378-9436-35ed120316af
 title: Compatibilidad con ASF en Media Foundation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ddb7774d0ddaee592cb583ffb771c900642ed216
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: db06c5a294e351b09d7f5327e8ee22891798671765bc5cc10eafd75785debde9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105707549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117880967"
 ---
 # <a name="asf-support-in-media-foundation"></a>Compatibilidad con ASF en Media Foundation
 
 Media Foundation admite archivos multimedia en el formato de sistemas avanzados (ASF):
 
--   Windows Media Video (archivos WMV)
--   Windows Media Audio (archivos WMA)
+-   Windows Vídeo multimedia (archivos WMV)
+-   Windows Audio multimedia (archivos WMA)
 
-Media Foundation proporciona varios objetos para leer y escribir archivos ASF. Estos objetos se proporcionan en dos capas arquitectónicas diferentes.
+Media Foundation proporciona varios objetos para leer y escribir archivos ASF. Estos objetos se proporcionan en dos capas de arquitectura diferentes.
 
-En primer lugar, la capa de *canalización* contiene objetos que funcionan dentro de la [canalización Media Foundation](media-foundation-pipeline.md) y que se ajustan a las API definidas por la canalización. La capa de canalización ASF contiene:
+En primer lugar, *la* capa de canalización contiene objetos que funcionan dentro de la canalización [Media Foundation y](media-foundation-pipeline.md) se ajustan a las API definidas por la canalización. La capa de canalización de ASF contiene:
 
--   [Origen de medios ASF](asf-media-source.md): analiza los archivos ASF y entrega los paquetes de datos de audio y vídeo.
--   [Códecs de Windows Media](windows-media-codecs.md): descodificar o codificar secuencias de audio o vídeo de Windows Media.
--   [Receptor de medios ASF](asf-media-sinks.md): recibe paquetes de datos y escribe un archivo ASF.
+-   [Origen multimedia de ASF:](asf-media-source.md)analiza los archivos ASF y entrega los paquetes de datos de audio y vídeo.
+-   [Windows códecs multimedia:](windows-media-codecs.md)descodificar o codificar Windows secuencias de audio o vídeo multimedia.
+-   [Receptor de medios de ASF:](asf-media-sinks.md)recibe paquetes de datos y escribe un archivo ASF.
 
-En segundo lugar, la capa de contenedor de WM proporciona un control de bajo nivel sobre el análisis y la escritura de un archivo ASF. La capa de canalización usa WMContainer internamente. Las aplicaciones también pueden usar WMContainer para el análisis y la escritura de ASF de bajo nivel.
+En segundo lugar, la capa de contenedor wm proporciona control de bajo nivel sobre el análisis y la escritura de un archivo ASF. La capa de canalización usa WMContainer internamente. Las aplicaciones también pueden usar WMContainer para el análisis y la escritura de ASF de bajo nivel.
 
-![diagrama que muestra los elementos de la capa de canalización y el contenedor de WM](images/asf-components.png)
+![diagrama que muestra los elementos de la capa de canalización y el contenedor wm](images/asf-components.png)
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -36,21 +36,21 @@ En segundo lugar, la capa de contenedor de WM proporciona un control de bajo niv
 
 | Tema                                                                         | Descripción                                                                                                        |
 |-------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [Estructura de archivos ASF](asf-file-structure.md)<br/>                       | Información general de la estructura de archivos ASF y los objetos proporcionados por Media Foundation para trabajar con archivos ASF.<br/> |
-| [Componentes ASF de capa de canalización](pipeline-layer-asf-components.md)<br/> | Describe cómo analizar y crear archivos ASF con la capa de canalización.<br/>                                   |
-| [Componentes de WMContainer ASF](wmcontainer-asf-components.md)<br/>       | Describe cómo analizar y crear archivos ASF con el nivel WMContainer.<br/>                                |
+| [Estructura de archivos asf](asf-file-structure.md)<br/>                       | Información general sobre la estructura de archivos de ASF y los objetos proporcionados por Media Foundation para trabajar con archivos ASF.<br/> |
+| [Componentes de ASF de capa de canalización](pipeline-layer-asf-components.md)<br/> | Describe cómo analizar y crear archivos ASF mediante la capa de canalización.<br/>                                   |
+| [Componentes de ASF de WMContainer](wmcontainer-asf-components.md)<br/>       | Describe cómo analizar y crear archivos ASF mediante la capa WMContainer.<br/>                                |
 
 
 
  
 
-Para obtener información detallada acerca de la estructura de un archivo ASF, consulte la especificación ASF, que se puede descargar desde este [sitio web de Microsoft](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=56de5ee4-51ca-46c6-903b-97390ad14fea).
+Para obtener información detallada sobre la estructura de un archivo ASF, consulte la especificación de ASF, que se puede descargar desde este sitio [web de Microsoft](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=56de5ee4-51ca-46c6-903b-97390ad14fea).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Guía de programación de Media Foundation](media-foundation-programming-guide.md)
+[Media Foundation de programación](media-foundation-programming-guide.md)
 </dt> </dl>
 
  

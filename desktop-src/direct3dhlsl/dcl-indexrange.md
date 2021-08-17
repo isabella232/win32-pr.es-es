@@ -18,7 +18,7 @@ ms.locfileid: "117727195"
 ---
 # <a name="dcl_indexrange-sm4---asm"></a>dcl \_ indexRange (sm4 - asm)
 
-Declara un intervalo de registros a los que tendrá acceso el índice (un entero calculado en el sombreador).
+Declara un intervalo de registros a los que se accederá mediante índice (un entero calculado en el sombreador).
 
 
 
@@ -53,7 +53,7 @@ Declara un intervalo de registros a los que tendrá acceso el índice (un entero
 </tr>
 <tr class="even">
 <td><span id="maxRegisterN"></span><span id="maxregistern"></span><span id="MAXREGISTERN"></span><em>maxRegisterN</em><br/></td>
-<td>[in] Último registro al que se tiene acceso por índice. La misma forma que <em>minRegister excepto</em> <em>N</em> es el número de registro.<br/></td>
+<td>[in] Último registro al que se accede por índice. El mismo formato que <em>minRegister excepto</em> <em>N</em> es el número de registro.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -64,15 +64,15 @@ Declara un intervalo de registros a los que tendrá acceso el índice (un entero
 
 Las restricciones siguientes se aplican a todos los registros:
 
--   Los registros min y max deben ser del mismo tipo y tener las mismas máscaras de componente (si se declaran máscaras).
--   Un registro puede tener varios intervalos de índice, siempre y cuando no se superpongan.
+-   Los registros mínimo y máximo deben ser del mismo tipo y tener las mismas máscaras de componente (si se declaran máscaras).
+-   Un registro puede tener varios intervalos de índice, siempre que no se superpongan.
 -   El número de registro mínimo debe ser menor que el número de registro máximo.
 -   Un registro de índice no puede contener [un valor del sistema](dx-graphics-hlsl-semantics.md).
--   La indexación de un registro fuera de la declaración de índice máximo genera resultados indefinidos.
+-   La indexación de un registro fuera de la declaración de índice máximo genera resultados no definidos.
 
 Los registros de entrada del sombreador de píxeles deben usar el mismo modo de interpolación; Los registros de salida del sombreador de píxeles no son indexables.
 
-Un registro de entrada del sombreador de geometría tiene dos dimensiones (eje de vértices, eje de atributos); el intervalo de índice solo se aplica al eje de atributos porque el eje de vértices siempre es totalmente indexable.
+Un registro de entrada del sombreador de geometría tiene dos dimensiones (eje de vértices, eje de atributos); el intervalo de índice solo se aplica al eje de atributo porque el eje de vértice siempre es totalmente indexable.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -86,7 +86,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Esta instrucción se incluye para ayudar a depurar un sombreador en ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
+Esta instrucción se incluye para ayudar a depurar un sombreador en el ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
 
 ## <a name="example"></a>Ejemplo
 
@@ -108,9 +108,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
 | [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
@@ -123,7 +123,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

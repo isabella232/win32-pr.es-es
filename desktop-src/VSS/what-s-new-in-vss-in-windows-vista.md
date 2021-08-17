@@ -17,7 +17,7 @@ Windows Vista presenta los siguientes cambios en el Servicio de instantáneas de
 
 Tenga en cuenta que todos los cambios de Windows Vista también se aplican a Windows Server 2008 y Windows Vista con Service Pack 1 (SP1).
 
-## <a name="new-vss-interfaces"></a>Nuevas interfaces vss
+## <a name="new-vss-interfaces"></a>Nuevas interfaces de VSS
 
 [**IVssBackupComponentsEx2**](/windows/desktop/api/VsBackup/nl-vsbackup-ivssbackupcomponentsex2)
 
@@ -27,9 +27,9 @@ Tenga en cuenta que todos los cambios de Windows Vista también se aplican a Win
 
 [**IVssDifferentialSoftwareSnapshotMgmt2**](/windows/desktop/api/VsMgmt/nn-vsmgmt-ivssdifferentialsoftwaresnapshotmgmt2)
 
-[**IVssExgvWriterMetadataEx2**](/windows/desktop/api/VsBackup/nl-vsbackup-ivssexaminewritermetadataex2)
+[**IVssExwriterMetadataEx2**](/windows/desktop/api/VsBackup/nl-vsbackup-ivssexaminewritermetadataex2)
 
-## <a name="new-vss-classes"></a>Nuevas clases vss
+## <a name="new-vss-classes"></a>Nuevas clases de VSS
 
 [**CVssWriterEx**](/windows/desktop/api/VsWriter/nl-vswriter-cvsswriterex)
 
@@ -41,7 +41,7 @@ Tenga en cuenta que todos los cambios de Windows Vista también se aplican a Win
 
 <dl> <dt>
 
-<span id="VSS_BACKUP_SCHEMA_enumeration"></span><span id="vss_backup_schema_enumeration"></span><span id="VSS_BACKUP_SCHEMA_ENUMERATION"></span>[**VSS \_ BACKUP \_ SCHEMA (enumeración)**](/windows/desktop/api/Vss/ne-vss-vss_backup_schema)
+<span id="VSS_BACKUP_SCHEMA_enumeration"></span><span id="vss_backup_schema_enumeration"></span><span id="VSS_BACKUP_SCHEMA_ENUMERATION"></span>[**VSS \_ Backup \_ SCHEMA (enumeración)**](/windows/desktop/api/Vss/ne-vss-vss_backup_schema)
 </dt> <dd>
 
 <dl> <dt>
@@ -49,11 +49,11 @@ Tenga en cuenta que todos los cambios de Windows Vista también se aplican a Win
 <span id="Added_values_"></span><span id="added_values_"></span><span id="ADDED_VALUES_"></span>Valores agregados:
 </dt> <dd>
 
-RESTAURACIÓN \_ AUTORITATIVA DE VSS BS \_ \_
+RESTAURACIÓN AUTORITATIVA DE VSS \_ BS \_ \_
 
 ESTADO DEL \_ SISTEMA INDEPENDIENTE DE VSS BS \_ \_ \_
 
-CAMBIO DE NOMBRE \_ DE LA RESTAURACIÓN DE VSS BS \_ \_
+CAMBIO DE NOMBRE DE LA RESTAURACIÓN DE VSS \_ BS \_ \_
 
 RESTAURACIÓN \_ \_ ROLLFORWARD DE VSS BS \_
 
@@ -89,10 +89,10 @@ VSS \_ VOLSNAP \_ ATTR \_ NOT \_ TRANSACTED
 
 </dd> </dl> </dd> </dl>
 
-## <a name="vss-event-tracing-and-logging"></a>Seguimiento y registro de eventos de VSS
+## <a name="vss-event-tracing-and-logging"></a>Registro y seguimiento de eventos de VSS
 
 -   El archivo de seguimiento de VSS ahora se puede encontrar en cualquier volumen local. En versiones de Windows anteriores a Windows Vista, el archivo de seguimiento de VSS no se podía encontrar en un volumen que estaba en el conjunto de instantáneas.
--   Muchas entradas del registro de eventos se han reelabdado para que se aclaren más.
+-   Muchas entradas del registro de eventos se han reelabdado para que se aclaren.
 -   Todas las entradas del registro de eventos de VSS ahora contienen información de contexto.
 
 ## <a name="vss-error-reporting"></a>Informes de errores de VSS
@@ -106,7 +106,7 @@ Las aplicaciones o servicios pueden usar la clave del Registro FilesNotToSnapsho
 
 ## <a name="backup-and-restore-application-compatibility"></a>Compatibilidad de aplicaciones de copia de seguridad y restauración
 
-Los desarrolladores de aplicaciones de copia de seguridad y restauración deben tener en cuenta ciertas características nuevas en Windows Vista y Windows Server 2008. Para obtener una lista de comprobación de compatibilidad de aplicaciones, vea [Compatibilidad de aplicaciones para copias de seguridad y restauración.](application-compatibility-for-backup-and-restore.md)
+Los desarrolladores de aplicaciones de copia de seguridad y restauración deben tener en cuenta ciertas características nuevas en Windows Vista y Windows Server 2008. Para obtener una lista de comprobación de compatibilidad de aplicaciones, vea [Compatibilidad de aplicaciones para copia de seguridad y restauración.](application-compatibility-for-backup-and-restore.md)
 
  
 

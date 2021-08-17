@@ -1,9 +1,9 @@
 ---
-title: Mensaje de CB_RESETCONTENT (Winuser. h)
+title: CB_RESETCONTENT mensaje (Winuser.h)
 description: Quita todos los elementos del cuadro de lista y el control de edición de un cuadro combinado.
 ms.assetid: 55203c34-87ca-46e9-a914-a480d43ccadd
 keywords:
-- CB_RESETCONTENT controles de mensajes de Windows
+- CB_RESETCONTENT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3567f31ef98fffe42e53c4811acc786d41ae9f78
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4918437d7b0d347e071386486b31e5f4b9d948b4ff55b4c6eea6e3afe93fb1c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117832253"
 ---
-# <a name="cb_resetcontent-message"></a>\_Mensaje RESETCONTENT CB
+# <a name="cb_resetcontent-message"></a>Mensaje \_ RESETCONTENT de CB
 
 Quita todos los elementos del cuadro de lista y el control de edición de un cuadro combinado.
 
@@ -32,38 +32,38 @@ Quita todos los elementos del cuadro de lista y el control de edición de un cua
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje siempre devuelve CB \_ bien.
+Este mensaje siempre devuelve CB \_ OKAY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si crea el cuadro combinado con un estilo dibujado por el propietario pero sin el estilo [**CBS \_ HASSTRINGS**](combo-box-styles.md) , el propietario del cuadro combinado recibirá un mensaje de [**WM \_ DELETEITEM**](wm-deleteitem.md) para cada elemento del cuadro combinado.
+Si crea el cuadro combinado con un estilo dibujado por el propietario pero sin el estilo [**\_ HASSTRINGS de CBS,**](combo-box-styles.md) el propietario del cuadro combinado recibe un mensaje [**\_ DELETEITEM**](wm-deleteitem.md) de WM para cada elemento del cuadro combinado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

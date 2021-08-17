@@ -3,7 +3,7 @@ title: DRM_LICENSE_STATE_DATA estructura (Drternals.h)
 description: La estructura \_ DRM LICENSE STATE DATA contiene información de licencia sobre un derecho DRM \_ \_ especificado.
 ms.assetid: 5ca577b5-d28b-4e36-8af7-6fae4300d464
 keywords:
-- DRM_LICENSE_STATE_DATA windows Media Format de estructura
+- DRM_LICENSE_STATE_DATA estructura windows Media Format
 - estructura windows Formato multimedia
 topic_type:
 - apiref

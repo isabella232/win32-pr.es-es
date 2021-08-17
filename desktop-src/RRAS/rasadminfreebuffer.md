@@ -1,9 +1,9 @@
 ---
-title: Función RasAdminFreeBuffer (rassapi. h)
+title: Función RasAdminFreeBuffer (Rassapi.h)
 description: La función RasAdminFreeBuffer libera la memoria asignada por RAS en nombre del autor de la llamada.
 ms.assetid: 6dfbba22-3af1-4771-8c22-506996f30c6b
 keywords:
-- RasAdminFreeBuffer función RAS
+- RasAdminFreeBuffer, función RAS
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bf86a3005a2b865b2096eddc5ffa9c0c33f848a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9550c072840fabf5d862e32f3bbdc6c26d3b32faf9cf6bf6dcfeae1be400e0a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117789100"
 ---
-# <a name="rasadminfreebuffer-function"></a>RasAdminFreeBuffer función)
+# <a name="rasadminfreebuffer-function"></a>Función RasAdminFreeBuffer
 
-\[Esta función se proporciona solo para la compatibilidad con versiones anteriores de Windows NT Server 4,0. Devuelve la \_ llamada \_ de error no \_ implementada en Windows Server 2003. Las aplicaciones deben usar la función [**MprAdminBufferFree**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminbufferfree) .\]
+\[Esta función solo se proporciona por compatibilidad con versiones anteriores Windows NT Server 4.0. Devuelve ERROR \_ CALL \_ NOT \_ IMPLEMENTED en Windows Server 2003. Las aplicaciones deben usar [**la función MprAdminBufferFree.**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminbufferfree)\]
 
-La función **RasAdminFreeBuffer** libera la memoria asignada por ras en nombre del autor de la llamada.
+La **función RasAdminFreeBuffer** libera la memoria asignada por RAS en nombre del autor de la llamada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ DWORD RasAdminFreeBuffer(
 
 <dl> <dt>
 
-*Puntero* \[ de de\]
+*Puntero* \[ En\]
 </dt> <dd>
 
 Puntero al búfer que se va a liberar.
@@ -51,7 +51,7 @@ Puntero al búfer que se va a liberar.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es ERROR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es ERROR \_ SUCCESS.
 
 Si se produce un error en la función, el valor devuelto puede ser el siguiente código de error.
 
@@ -59,17 +59,17 @@ Si se produce un error en la función, el valor devuelto puede ser el siguiente 
 
 | Value                                                                                                    | Significado                                        |
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>**ERROR \_ de \_ parámetro no válido**</dt> </dl> | El parámetro de *puntero* no es válido.<br/> |
+| <dl> <dt>**ERROR \_ PARÁMETRO NO \_ VÁLIDO**</dt> </dl> | El *parámetro Pointer* no es válido.<br/> |
 
 
 
  
 
-No hay información de error extendida para esta función; no llame a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+No hay ninguna información de error extendida para esta función; no llame a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use la función **RasAdminFreeBuffer** para liberar los búferes asignados por las funciones [**RasAdminPortEnum**](rasadminportenum.md) y [**RasAdminPortGetInfo**](rasadminportgetinfo.md) .
+Use la **función RasAdminFreeBuffer** para liberar los búferes asignados por las funciones [**RasAdminPortEnum**](rasadminportenum.md) y [**RasAdminPortGetInfo.**](rasadminportgetinfo.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Use la función **RasAdminFreeBuffer** para liberar los búferes asignados por l
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows 2000 Professional<br/>                                                   |
 | Fin de compatibilidad de servidor<br/> | Windows 2000 Server<br/>                                                         |
-| Encabezado<br/>                | <dl> <dt>Rassapi. h</dt> </dl>   |
-| Biblioteca<br/>               | <dl> <dt>Rassapi. lib</dt> </dl> |
+| Header<br/>                | <dl> <dt>Rassapi.h</dt> </dl>   |
+| Biblioteca<br/>               | <dl> <dt>Rassapi.lib</dt> </dl> |
 | Archivo DLL<br/>                   | <dl> <dt>Rassapi.dll</dt> </dl> |
 
 
@@ -89,7 +89,7 @@ Use la función **RasAdminFreeBuffer** para liberar los búferes asignados por l
 
 <dl> <dt>
 
-[Introducción al servicio de acceso remoto (RAS)](about-remote-access-service.md)
+[Introducción al Servicio de acceso remoto (RAS)](about-remote-access-service.md)
 </dt> <dt>
 
 [Funciones de administración del servidor RAS](ras-server-administration-functions.md)

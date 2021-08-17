@@ -1,5 +1,5 @@
 ---
-description: Escala todos los ejemplos asociados a una submesh determinada. El método es útil para calcular la dispersión de subsuperficie.
+description: Escala todos los ejemplos asociados a un submesh determinado. El método es útil para calcular la dispersión de subsuelo.
 ms.assetid: abb9ca6a-5fc2-4986-8a38-29998fe5e537
 title: Método ID3DXPRTEngine::ScaleMeshChunk (D3DX9Mesh.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "117729589"
 ---
 # <a name="id3dxprtenginescalemeshchunk-method"></a>Método ID3DXPRTEngine::ScaleMeshChunk
 
-Escala todos los ejemplos asociados a una submesh determinada. El método es útil para calcular la dispersión de subsuperficie.
+Escala todos los ejemplos asociados a un submesh determinado. El método es útil para calcular la dispersión de subsuelo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -73,7 +73,7 @@ Puntero a un [**objeto ID3DXPRTBuffer**](id3dxprtbuffer.md) para recibir muestra
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,7 +86,7 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se prod
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
 description: Establece o recupera el valor de una propiedad compartida.
 ms.assetid: 19ed8d50-3ac1-408e-9f25-09f284d025f1
-title: Clase SharedProperty (ComSvcs. h)
+title: Clase SharedProperty (ComSvcs.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,22 +11,22 @@ api_name:
 - SharedProperty
 api_type:
 - COM
-ms.openlocfilehash: a7a7857ad280ad722601bdced6c25d04b03dc0b3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9b0daa74c7329f8dc9f2566852d863715d22fd556ce3d4674dfaf246c17504b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117915787"
 ---
 # <a name="sharedproperty-class"></a>Clase SharedProperty
 
 Establece o recupera el valor de una propiedad compartida.
 
-Para obtener información general sobre el uso del Administrador de propiedades compartido en COM+, consulte [Administrador de propiedades compartido de com+](com--shared-property-manager.md).
+Para obtener información general sobre el uso del Administrador de propiedades compartido en COM+, vea [COM+ Shared Administrador de propiedades](com--shared-property-manager.md).
 
 ## <a name="when-to-implement"></a>Cuándo implementar
 
-Esta clase se implementa mediante COM+.
+COM+implementa esta clase.
 
 
 
@@ -40,13 +40,13 @@ Esta clase se implementa mediante COM+.
 
 ## <a name="when-to-use"></a>Cuándo se usa
 
-Utilice esta clase para tener acceso a los métodos de [**ISharedProperty**](/windows/desktop/api/ComSvcs/nn-comsvcs-isharedproperty).
+Use esta clase para tener acceso a los métodos [**de ISharedProperty**](/windows/desktop/api/ComSvcs/nn-comsvcs-isharedproperty).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Puede crear un objeto **SharedProperty** mediante los métodos [**CreateProperty**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createproperty) o [**CreatePropertyByPosition**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createpropertybyposition) de [**ISharedPropertyGroup**](/windows/desktop/api/ComSvcs/nn-comsvcs-isharedpropertygroup).
 
-Para usar esta clase desde Microsoft Visual Basic, agregue una referencia a la biblioteca de tipos de servicios COM+. Un objeto SharedProperty se crea llamando a los métodos [**CreateProperty**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createproperty) o [**CreatePropertyByPosition**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createpropertybyposition) del objeto [**SharedPropertyGroup**](sharedpropertygroup.md) .
+Para usar esta clase de Microsoft Visual Basic, agregue una referencia a la biblioteca de tipos de servicios COM+. Un objeto SharedProperty se crea llamando a los [**métodos CreateProperty**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createproperty) o [**CreatePropertyByPosition**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createpropertybyposition) del [**objeto SharedPropertyGroup.**](sharedpropertygroup.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ Para usar esta clase desde Microsoft Visual Basic, agregue una referencia a la b
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>ComSvcs. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>ComSvcs.h</dt> </dl> |
 
 
 

@@ -15,11 +15,11 @@ ms.locfileid: "118324453"
 
 Este tema contiene código de ejemplo que muestra cómo usar la interfaz [**IUIAutomationTreeWalker**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtreewalker) para recorrer y examinar los elementos del árbol de Automatización de la interfaz de usuario Microsoft. Describe los temas siguientes:
 
--   [Recorrer los descendientes de un elemento](#walking-through-descendants-of-an-element)
+-   [Recorrer descendientes de un elemento](#walking-through-descendants-of-an-element)
 -   [Recorrer los elementos antecesores](#walking-through-ancestor-elements)
 -   [Temas relacionados](#related-topics)
 
-## <a name="walking-through-descendants-of-an-element"></a>Recorrer los descendientes de un elemento
+## <a name="walking-through-descendants-of-an-element"></a>Recorrer descendientes de un elemento
 
 El ejemplo de código siguiente es una función recursiva que recorre todos los descendientes de un elemento de interfaz de usuario y muestra sus tipos de control en una lista jerárquica.
 

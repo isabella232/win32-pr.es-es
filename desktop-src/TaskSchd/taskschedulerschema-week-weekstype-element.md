@@ -3,7 +3,7 @@ title: Elemento Week (weeksType)
 description: Especifica una semana específica del mes.
 ms.assetid: 0cec07da-e9e7-43ef-9f54-48d00114ba1f
 keywords:
-- Programador de tareas de elemento Week
+- Elemento Week Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0487aa07e1f1132c998b6cb2ba0f518a9db57ce2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a999eaa5ec7d4ed36b86fc292f4c0d5e8c474fd1df8f5f4b9da5b90f2dcca641
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117758211"
 ---
 # <a name="week-weekstype-element"></a>Elemento Week (weeksType)
 
@@ -30,7 +30,7 @@ Especifica una semana específica del mes.
  />
 ```
 
-El elemento **Week** se define mediante el tipo complejo [**weeksType**](taskschedulerschema-weekstype-complextype.md) .
+El **tipo complejo weeksType** define el elemento [**Week.**](taskschedulerschema-weekstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -38,13 +38,13 @@ El elemento **Week** se define mediante el tipo complejo [**weeksType**](tasksch
 
 | Elemento                                                                                                        | Derivado de                                                   | Descripción                                                           |
 |----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|-----------------------------------------------------------------------|
-| [**Semanas (monthlyDayOfWeekScheduleType)**](taskschedulerschema-weeks-monthlydayofweekscheduletype-element.md) | [**weeksType**](taskschedulerschema-weekstype-complextype.md) | Especifica las semanas del mes en que se ejecuta la tarea.<br/> |
+| [**Weeks (monthlyDayOfWeekScheduleType)**](taskschedulerschema-weeks-monthlydayofweekscheduletype-element.md) | [**weeksType**](taskschedulerschema-weekstype-complextype.md) | Especifica las semanas del mes en que se ejecuta la tarea.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al especificar las semanas del mes, use los números 1-4 para las cuatro primeras semanas del mes o use la cadena "Last" para indicar la última semana del mes.
+Al especificar las semanas del mes, use los números 1 a 4 para las cuatro primeras semanas del mes o use la cadena "Last" para indicar esa última semana del mes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,8 +52,8 @@ Al especificar las semanas del mes, use los números 1-4 para las cuatro primera
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -61,7 +61,7 @@ Al especificar las semanas del mes, use los números 1-4 para las cuatro primera
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

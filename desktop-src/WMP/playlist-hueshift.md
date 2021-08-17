@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. hueShift
+title: PLAYLIST.hueShift
 description: El atributo hueShift especifica o recupera la cantidad por la que se desplaza el matiz de las imágenes desplegables.
 ms.assetid: 9d4d8b73-527e-43f3-a921-0576b8897918
 keywords:
-- Windows Media Player de lista de reproducción. hueShift
+- LISTA DE REPRODUCCIÓN.hueShift Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 99e9dbe89989ddd8f02d67ac8f14532b9b1fbf15
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4a615549c25b57ed9693843a09433200f73c8e4ffad131c2a4e4057932c5e92b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747086"
 ---
-# <a name="playlisthueshift"></a>Lista de reproducción. hueShift
+# <a name="playlisthueshift"></a>PLAYLIST.hueShift
 
-El atributo **hueShift** especifica o recupera la cantidad por la que se desplaza el matiz de las imágenes desplegables.
+El **atributo hueShift** especifica o recupera la cantidad por la que se desplaza el matiz de las imágenes desplegables.
 
 ``` syntax
         elementID.hueShift
@@ -29,9 +29,9 @@ El atributo **hueShift** especifica o recupera la cantidad por la que se desplaz
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura/escritura (**float**) con un valor comprendido entre 0,0 y 360,0 con un valor predeterminado de 0,0.
+Este atributo es un número de lectura y **escritura** **(float)** con un valor que va de 0,0 a 360,0 con un valor predeterminado de 0,0.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo cambia el valor de matiz de las imágenes especificadas por los atributos **dropDownBackgroundImage** y **dropDownImage** si se han especificado y hacen referencia a imágenes BMP de 8 bits.
 
@@ -41,7 +41,7 @@ Este atributo cambia el valor de matiz de las imágenes especificadas por los at
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -52,13 +52,13 @@ Este atributo cambia el valor de matiz de las imágenes especificadas por los at
 [**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**Lista de reproducción. dropDownBackgroundImage**](playlist-dropdownbackgroundimage.md)
+[**PLAYLIST.dropDownBackgroundImage**](playlist-dropdownbackgroundimage.md)
 </dt> <dt>
 
-[**Lista de reproducción. dropDownImage**](playlist-dropdownimage.md)
+[**PLAYLIST.dropDownImage**](playlist-dropdownimage.md)
 </dt> <dt>
 
-[**Lista de reproducción. saturación**](playlist-saturation.md)
+[**PLAYLIST.saturation**](playlist-saturation.md)
 </dt> </dl>
 
  

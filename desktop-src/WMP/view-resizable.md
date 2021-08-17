@@ -1,9 +1,9 @@
 ---
-title: VISTA. redimensionable
-description: El atributo de tamaño variable recupera un valor que indica si se puede cambiar el tamaño de la vista.
+title: VIEW.resizable
+description: El atributo que se puede cambiar de tamaño recupera un valor que indica si se puede cambiar el tamaño de VIEW.
 ms.assetid: 4f0e4f31-cf16-498f-823f-da43566043b1
 keywords:
-- VISTA. redimensionable de Windows Media Player
+- View.resizable Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed4d61973e34891d336ea5729ea40478c6c32808
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 622c732ce6a1218fa16bbe70c1ef18d53ba4211abfde9d39fc794ec862348033
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118332913"
 ---
-# <a name="viewresizable"></a>VISTA. redimensionable
+# <a name="viewresizable"></a>VIEW.resizable
 
-El atributo de tamaño **variable** recupera un valor que indica si se puede cambiar el tamaño de la **vista** .
+El **atributo que se puede cambiar** de tamaño recupera un valor que indica si se puede cambiar el tamaño de **VIEW.**
 
 ``` syntax
         elementID.resizable
@@ -29,7 +29,7 @@ El atributo de tamaño **variable** recupera un valor que indica si se puede cam
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **booleano** de solo lectura con un valor predeterminado igual al atributo **TitleBar** .
+Este atributo es un valor **booleano** de solo lectura con un valor predeterminado igual al atributo **titlebar.**
 
 
 
@@ -42,25 +42,25 @@ Este atributo es un **booleano** de solo lectura con un valor predeterminado igu
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si no hay ninguna **TitleBar** y, por tanto, no hay ninguna ventana o borde, debe utilizar el método **size** para cambiar el tamaño del elemento de **vista** .
+Si no hay ninguna **barra de título** y, por lo tanto, no hay ninguna ventana o borde, debe usar el método **size** para cambiar el tamaño del **elemento VIEW.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Elemento de vista**](view-element.md)
+[**ELEMENTO VIEW**](view-element.md)
 </dt> </dl>
 
  

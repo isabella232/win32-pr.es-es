@@ -1,7 +1,7 @@
 ---
-description: La \_ enumeración del algoritmo de tecla CAPICOM \_ define los algoritmos de clave.
+description: La enumeración CAPICOM \_ KEY \_ ALGORITHM define algoritmos clave.
 ms.assetid: 2274c0ae-fa92-4059-a638-94a5f982c0c7
-title: Enumeración CAPICOM_KEY_ALGORITHM (CAPICOM. h)
+title: CAPICOM_KEY_ALGORITHM enumeración (Capicom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: e72f19c6449729dca7d8c395596823214824ae44
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4952f11129763d4a60a65d49863f1a311f8f9ede968d6dffdc0337ca715acc0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117772460"
 ---
-# <a name="capicom_key_algorithm-enumeration"></a>\_Enumeración del algoritmo de tecla CAPICOM \_
+# <a name="capicom_key_algorithm-enumeration"></a>CAPICOM \_ KEY \_ ALGORITHM (enumeración)
 
-La enumeración del **\_ \_ algoritmo de tecla CAPICOM** define los algoritmos de clave.
+La **enumeración CAPICOM \_ KEY \_ ALGORITHM** define algoritmos clave.
 
 ## <a name="members"></a>Miembros
 
@@ -30,15 +30,15 @@ La enumeración del **\_ \_ algoritmo de tecla CAPICOM** define los algoritmos d
 
 | Miembro                             | Descripción                                | Value |
 |------------------------------------|--------------------------------------------|-------|
-| **\_algoritmo de tecla CAPICOM \_ \_ otro** | Use un algoritmo de clave alternativa.<br/> | 0     |
-| **\_algoritmo de clave CAPICOM \_ \_ RSA**   | Use el algoritmo de clave RSA.<br/>      | 1     |
-| **algoritmo de clave de CAPICOM \_ \_ \_ DSS**   | Usar el algoritmo de clave DSS.<br/>      | 2     |
+| **CAPICOM \_ KEY \_ ALGORITHM \_ OTHER** | Use un algoritmo de clave alternativo.<br/> | 0     |
+| **ALGORITMO CLAVE CAPICOM \_ \_ \_ RSA**   | Use el algoritmo de clave RSA.<br/>      | 1     |
+| **CAPICOM \_ KEY \_ ALGORITHM \_ DSS**   | Use el algoritmo de clave DSS.<br/>      | 2     |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta enumeración está reservada para un uso futuro.
+Esta enumeración está reservada para su uso futuro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Esta enumeración está reservada para un uso futuro.
 
 | Requisito | Value |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                |
-| Encabezado<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                |
+| Header<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 

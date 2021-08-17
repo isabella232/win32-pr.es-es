@@ -1,7 +1,7 @@
 ---
-description: Calcula el Radiance de origen resultante de un único rebote de luz interreflejada mediante el muestreo adaptable.
+description: Calcula el brillo de origen resultante de un único salto de luz interreferida, mediante el muestreo adaptable.
 ms.assetid: 61f8cecd-d95a-4f02-929e-02f2bce5bde9
-title: 'ID3DXPRTEngine:: ComputeBounceAdaptive (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTEngine::ComputeBounceAdaptive (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 787dee9719e0450dd39ebb19f4c06ee76013cb07
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: efe983a0160d46910e7b8d1e29d0042d801275ef70aef30f6050e0538b6f9927
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117729754"
 ---
-# <a name="id3dxprtenginecomputebounceadaptive-method"></a>ID3DXPRTEngine:: ComputeBounceAdaptive (método)
+# <a name="id3dxprtenginecomputebounceadaptive-method"></a>Método ID3DXPRTEngine::ComputeBounceAdaptive
 
-Calcula el Radiance de origen resultante de un único rebote de luz interreflejada mediante el muestreo adaptable. Este método genera nuevos vértices y caras en la malla para aproximar con más precisión la señal de transferencia Radiance (PRT) precalculada. Este método se puede usar para cualquier escena iluminada, incluido un modelo PRT basado en armónico (SH).
+Calcula el brillo de origen resultante de un único salto de luz interreferida, mediante el muestreo adaptable. Este método genera nuevos vértices y caras en la malla para aproximar de forma más precisa la señal de transferencia de radiancia precalutada (PRT). Este método se puede usar para cualquier escena de iluminación, incluido un modelo PRT basado en armónica esférica (SH).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,39 +45,39 @@ HRESULT ComputeBounceAdaptive(
 
 <dl> <dt>
 
-*pDataIn* \[ de\]
+*pDataIn* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de entrada que representa el objeto 3D del rebote de luz anterior. Este búfer de entrada debe tener asignado el número adecuado de canales de color para la simulación.
+Puntero a un objeto [**ID3DXPRTBuffer de**](id3dxprtbuffer.md) entrada que representa el objeto 3D de la luz anterior. Este búfer de entrada debe tener asignado el número adecuado de canales de color para la simulación.
 
 </dd> <dt>
 
-*AdaptiveThresh* \[ de\]
+*AdaptiveThresh* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Umbral del vector de PRT que se va a usar para subdividir los vértices de malla y caras. Si es menor que 1E-6F, se especifica un valor predeterminado de 1E-6F.
+Umbral en el vector PRT que se usará para subdividir vértices y caras de malla. Si es menor que 1e-6f, se especifica un valor predeterminado de 1e-6f.
 
 </dd> <dt>
 
-*MinEdgeLength* \[ de\]
+*MinEdgeLength* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Longitud mínima del borde de la superficie que se generará en el muestreo adaptable. Si el método determina que el valor es demasiado pequeño, se especifica un valor dependiente del modelo. Si es cero, se especifica un valor predeterminado de 4.
+Longitud mínima del borde de la cara que se generará en el muestreo adaptable. Si el método determina que el valor es demasiado pequeño, se especifica un valor dependiente del modelo. Si es cero, se especifica un valor predeterminado de 4.
 
 </dd> <dt>
 
-*MaxSubdiv* \[ de\]
+*MaxSubdiv* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Nivel máximo de subdivisión de una esfera que se usará en el muestreo adaptable.
+Nivel máximo de subdivisión de una cara que se usará en el muestreo adaptable.
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Nivel máximo de subdivisión de una esfera que se usará en el muestreo adaptab
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de salida. Este búfer de salida debe tener asignado el número adecuado de canales de color para la simulación.
+Puntero a un objeto [**ID3DXPRTBuffer de**](id3dxprtbuffer.md) salida. Este búfer de salida debe tener el número adecuado de canales de color asignados para la simulación.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de salida. Este búf
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) opcional que mantiene una suma en ejecución de pDataOut con cada cálculo de rebote de luz. Puede ser **null**.
+Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) opcional que mantiene una suma en ejecución de pDataOut con cada cálculo de desenlazamiento. Puede ser **NULL.**
 
 </dd> </dl>
 
@@ -103,7 +103,7 @@ Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) opcional que mantien
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,8 +111,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

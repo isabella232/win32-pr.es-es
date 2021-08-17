@@ -23,7 +23,7 @@ ms.locfileid: "118372699"
 ---
 # <a name="performing-file-io-on-riff-files"></a>Realizar E/S de archivos en archivos RIFF
 
-En el ejemplo siguiente se muestra cómo abrir un archivo RIFF para la E/S en búfer, así como cómo bajar, subir y leer fragmentos de "RIFF".
+En el ejemplo siguiente se muestra cómo abrir un archivo RIFF para la E/S en búfer, así como cómo bajar, subir y leer fragmentos "RIFF".
 
 
 ```C++
