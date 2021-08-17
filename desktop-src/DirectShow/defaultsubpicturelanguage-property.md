@@ -1,15 +1,15 @@
 ---
-description: La propiedad DefaultSubpictureLanguage recupera el idioma predeterminado de la subimagen.
+description: La propiedad DefaultSubpictureLanguage recupera el lenguaje de subimagen predeterminado.
 ms.assetid: 75451c01-2cd3-484a-b864-6681896b9796
 title: Propiedad DefaultSubpictureLanguage
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b24f8b3cd91530d005e428dc5679b9b89c4c21e0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 77ae061e8a752c17f9bbb111b3399b576eda55d0bd1ce1dd6a0c5084e66e5d00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953013"
 ---
 # <a name="defaultsubpicturelanguage-property"></a>Propiedad DefaultSubpictureLanguage
 
@@ -18,7 +18,7 @@ ms.locfileid: "104537966"
 
  
 
-La `DefaultSubpictureLanguage` propiedad recupera el idioma predeterminado de la subimagen.
+La `DefaultSubpictureLanguage` propiedad recupera el lenguaje de subimagen predeterminado.
 
 ``` syntax
 [ iLang = ] MSWebDVD.DefaultSubpictureLanguage
@@ -26,17 +26,17 @@ La `DefaultSubpictureLanguage` propiedad recupera el idioma predeterminado de la
 
 ## <a name="return-value"></a>Valor devuelto
 
-Returrn un valor LCID que contiene el identificador de idioma principal para el idioma de audio predeterminado.
+Vuelva a mostrar un valor LCID que contenga el identificador de idioma principal para el idioma de audio predeterminado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad es de solo lectura y no tiene ningún valor predeterminado.
+Esta propiedad es de solo lectura sin ningún valor predeterminado.
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**SelectDefaultSubpictureLanguage**](selectdefaultsubpicturelanguage-method.md)
+[**SeleccioneDefaultSubpictureLanguage**](selectdefaultsubpicturelanguage-method.md)
 </dt> </dl>
 
  

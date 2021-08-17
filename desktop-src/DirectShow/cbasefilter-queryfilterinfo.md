@@ -25,7 +25,7 @@ ms.locfileid: "119341745"
 ---
 # <a name="cbasefilterqueryfilterinfo-method"></a>Método CBaseFilter.QueryFilterInfo
 
-El `QueryFilterInfo` método recupera información sobre el filtro. Este método implementa el método [**IBaseFilter::QueryFilterInfo.**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-queryfilterinfo)
+El `QueryFilterInfo` método recupera información sobre el filtro. Este método implementa el [**método IBaseFilter::QueryFilterInfo.**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-queryfilterinfo)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ Devuelve S \_ OK o E \_ POINTER.
 
 Este método copia el nombre del filtro de la variable miembro [**CBaseFilter::m \_ pName**](cbasefilter-m-pname.md) en el **miembro achName** de la estructura FILTER \_ INFO. Si **m \_ pName** es **NULL,** el método establece **achName** en L' \\ 0'.
 
-El método establece el **miembro pGraph** de la estructura FILTER INFO igual a la variable miembro \_ [**CBaseFilter::m \_ pGraph**](cbasefilter-m-pgraph.md) e incrementa el recuento de referencias. El autor de la llamada debe liberar la interfaz.
+El método establece el **miembro pGraph** de la estructura FILTER INFO igual a la variable miembro \_ [**CBaseFilter::m \_ pGraph**](cbasefilter-m-pgraph.md) e incrementa el recuento de referencias. El autor de la llamada debe liberar la interfaz .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ El método establece el **miembro pGraph** de la estructura FILTER INFO igual a 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: Recupera los niveles actuales de luz de corte de CA y DC y el estado de energía actual.
+description: Recupera los niveles actuales de luz de ca y controlador de dominio y el estado de energía actual.
 ms.assetid: c7b7c302-6e92-46a7-b9a6-e3f2a3e44d1b
-title: Código de control de IOCTL_VIDEO_QUERY_DISPLAY_BRIGHTNESS (Ntddvdeo. h)
+title: IOCTL_VIDEO_QUERY_DISPLAY_BRIGHTNESS código de control (Ntddvdeo.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - HeaderDef
 api_location:
 - Ntddvdeo.h
-ms.openlocfilehash: 547501a28492aecfe06f63f95b0e007fc80d3d02
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 673930fbde301c031049316255c9bcee40fd4e6a4f3c362977caf6e0569c5f5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143418"
 ---
-# <a name="ioctl_video_query_display_brightness-control-code"></a>\_Consulta de vídeo ioctl \_ \_ Mostrar código de control de \_ brillo
+# <a name="ioctl_video_query_display_brightness-control-code"></a>Código de control DE PANTALLA DE LA CONSULTA DE VÍDEO \_ \_ \_ \_ DE IOCTL
 
-\[Este código de control está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. La compatibilidad con este código de control se ha quitado en Windows Server 2008 y Windows Vista. En su lugar, use la clase [**WmiMonitorBrightness**](/windows/desktop/WmiCoreProv/wmimonitorbrightness) .\]
+\[Este código de control está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. Se quitó la compatibilidad con este código de control Windows Server 2008 y Windows Vista. En su lugar, [**use la clase WmiMonitorBrightness.**](/windows/desktop/WmiCoreProv/wmimonitorbrightness)\]
 
-Recupera los niveles actuales de luz de corte de CA y DC y el estado de energía actual.
+Recupera los niveles actuales de luz de ca y controlador de dominio y el estado de energía actual.
 
-Para realizar esta operación, llame a la función [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) con los parámetros siguientes.
+Para realizar esta operación, llame a la [**función DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) con los parámetros siguientes.
 
 
 ```C++
@@ -51,35 +51,35 @@ BOOL DeviceIoControl(
 *hDevice* 
 </dt> <dd>
 
-Identificador de \\ \\ . \\ Dispositivo LCD. Para recuperar un identificador de dispositivo, llame a la función [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) .
+Identificador de \\ \\ . \\ Dispositivo USB. Para recuperar un identificador de dispositivo, llame a la [**función CreateFile.**](/windows/desktop/api/fileapi/nf-fileapi-createfilea)
 
 </dd> <dt>
 
 *dwIoControlCode* 
 </dt> <dd>
 
-Código de control de la operación. Este valor identifica la operación específica que se va a realizar y el tipo de dispositivo en el que se va a realizar. Use **ioctl \_ video \_ query \_ Display \_ Brightness** para esta operación.
+Código de control de la operación. Este valor identifica la operación específica que se va a realizar y el tipo de dispositivo en el que se va a realizar. Use **IOCTL \_ VIDEO QUERY DISPLAY \_ \_ \_ BRIGHTNESS** para esta operación.
 
 </dd> <dt>
 
 *lpInBuffer* 
 </dt> <dd>
 
-No se utiliza con esta operación; se establece en **null**.
+No se usa con esta operación; se establece en **NULL.**
 
 </dd> <dt>
 
 *nInBufferSize* 
 </dt> <dd>
 
-No se utiliza con esta operación; se establece en cero.
+No se usa con esta operación; se establece en cero.
 
 </dd> <dt>
 
 *lpOutBuffer* 
 </dt> <dd>
 
-Un puntero a un búfer que recibirá una estructura de [**\_ brillo**](/previous-versions/windows/desktop/legacy/aa372686(v=vs.85)) de la pantalla.
+Puntero a un búfer que recibirá una [**estructura DISPLAY \_ BRIGHTNESS.**](/previous-versions/windows/desktop/legacy/aa372686(v=vs.85))
 
 </dd> <dt>
 
@@ -95,24 +95,24 @@ Tamaño del búfer de salida, en bytes.
 
 Puntero a una variable que recibe el tamaño, en bytes, de los datos de salida devueltos.
 
-Si el búfer de salida es demasiado pequeño para devolver datos, se produce un error en la llamada, [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve el error de código \_ insuficiente \_ búfer y el recuento de bytes devuelto es cero.
+Si el búfer de salida es demasiado pequeño para devolver datos, se produce un error en la llamada, [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve el código de error ERROR INSUFFICIENT BUFFER y el recuento de bytes devuelto \_ \_ es cero.
 
-Si el búfer de salida es demasiado pequeño para contener todos los datos, pero puede contener algunas entradas, el sistema operativo devuelve tanto como cabe en la llamada, [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve el error del código de error \_ más \_ datos y *lpBytesReturned* indica la cantidad de datos devueltos. La aplicación debe volver a llamar a [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) con la misma operación, especificando un nuevo punto de partida.
+Si el búfer de salida es demasiado pequeño para contener todos los datos pero puede contener algunas entradas, el sistema operativo devuelve todo lo que cabe, se produce un error en la llamada, [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve el código de error ERROR MORE DATA y \_ \_ *lpBytesReturned* indica la cantidad de datos devueltos. La aplicación debe llamar de [**nuevo a DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) con la misma operación, especificando un nuevo punto de partida.
 
-Si *lpOverlapped* es **null** (Nonoverlapped de e/s), *lpBytesReturned* no puede ser **null**.
+Si *lpOverlapped* es **NULL** (E/S nooverlapped), *lpBytesReturned* no puede ser **NULL.**
 
-Si *lpOverlapped* no es **null** (e/s superpuesta), *lpBytesReturned* puede ser **null**. Si se trata de una operación superpuesta, puede recuperar el número de bytes devueltos mediante una llamada a la función [**GetOverlappedResult**](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) . Si *hDevice* está asociado a un puerto de finalización de e/s, puede obtener el número de bytes devueltos mediante una llamada a la función [**GetQueuedCompletionStatus**](/windows/desktop/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) .
+Si *lpOverlapped* no es **NULL** (E/S superpuesta), *lpBytesReturned* puede ser **NULL.** Si se trata de una operación superpuesta, puede recuperar el número de bytes devueltos llamando a la [**función GetOverlappedResult.**](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) Si *hDevice* está asociado a un puerto de finalización de E/S, puede obtener el número de bytes devueltos llamando a la [**función GetQueuedCompletionStatus.**](/windows/desktop/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus)
 
 </dd> <dt>
 
 *lpOverlapped* 
 </dt> <dd>
 
-Puntero a una estructura [**superpuesta**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) .
+Puntero a una [**estructura OVERLAPPED.**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped)
 
-Si *hDevice* se abrió con la marca de indicador de archivo \_ \_ superpuesto, *lpOverlapped* debe apuntar a una estructura [**superpuesta**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) válida. En este caso, la operación se realiza como una operación superpuesta (asincrónica). Si el dispositivo se ha abierto con la \_ marca de indicador de archivo \_ superpuesto y *lpOverlapped* es **null**, la función genera un error de manera imprevisible.
+Si *hDevice se* abrió con la marca \_ FILE FLAG \_ OVERLAPPED, *lpOverlapped* debe apuntar a una [**estructura OVERLAPPED**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) válida. En este caso, la operación se realiza como una operación superpuesta (asincrónica). Si el dispositivo se abrió con la marca FILE FLAG OVERLAPPED y lpOverlapped es NULL, se produce un error en la \_ \_ función de maneras imprevisibles.  
 
-Si se abrió *hDevice* sin especificar la marca de la marca de archivo \_ \_ superpuesta, se omite *lpOverlapped* y [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) no devuelve ningún resultado hasta que se haya completado la operación o hasta que se produzca un error.
+Si *hDevice* se abrió sin especificar la marca FILE \_ FLAG \_ OVERLAPPED, *lpOverlapped* se omite y [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) no se devuelve hasta que se haya completado la operación o hasta que se produzca un error.
 
 </dd> </dl>
 
@@ -124,9 +124,9 @@ Si se produce un error en la operación o está pendiente, [**DeviceIoControl**]
 
 ## <a name="remarks"></a>Comentarios
 
-El archivo de encabezado utilizado para compilar aplicaciones que incluyen esta funcionalidad, Ntddvdeo. h, se incluye en el kit de desarrollo de controladores (DDK) de Microsoft Windows. Para obtener información sobre cómo obtener el DDK, vea [https://www.microsoft.com/whdc/devtools/ddk/default.mspx](https://msdn.microsoft.com/windows/hardware/gg454513) .
+El archivo de encabezado que se usa para compilar aplicaciones que incluyen esta funcionalidad, Ntddvdeo.h, se incluye en microsoft Windows Driver Development Kit (DDK). Para obtener información sobre cómo obtener el DDK, vea [https://www.microsoft.com/whdc/devtools/ddk/default.mspx](https://msdn.microsoft.com/windows/hardware/gg454513) .
 
-Como alternativa, puede definir este código de control como se indica a continuación:
+Como alternativa, puede definir este código de control de la siguiente manera:
 
 ``` syntax
 #define IOCTL_VIDEO_QUERY_DISPLAY_BRIGHTNESS \
@@ -139,11 +139,11 @@ Como alternativa, puede definir este código de control como se indica a continu
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP1 \[\]<br/>                                  |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp1\]<br/>                                  |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
 | Fin de compatibilidad de cliente<br/>    | Windows XP con SP2<br/>                                                        |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003 R2<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Ntddvdeo. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Ntddvdeo.h</dt> </dl> |
 
 
 
@@ -157,10 +157,10 @@ Como alternativa, puede definir este código de control como se indica a continu
 [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol)
 </dt> <dt>
 
-[**brillo de la pantalla \_**](/previous-versions/windows/desktop/legacy/aa372686(v=vs.85))
+[**BRILLO DE \_ LA PANTALLA**](/previous-versions/windows/desktop/legacy/aa372686(v=vs.85))
 </dt> <dt>
 
-[**brillo de la pantalla del conjunto de \_ vídeos de ioctl \_ \_ \_**](ioctl-video-set-display-brightness.md)
+[**BRILLO DE PANTALLA \_ DEL CONJUNTO DE VÍDEOS \_ \_ DE \_ IOCTL**](ioctl-video-set-display-brightness.md)
 </dt> </dl>
 
  

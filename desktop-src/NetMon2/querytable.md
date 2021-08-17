@@ -1,7 +1,7 @@
 ---
-description: La estructura QUERYTABLE proporciona una lista de los equipos que usan actualmente Monitor de red para capturar datos de red.
+description: La estructura QUERYTABLE proporciona una lista de los equipos que actualmente usan Monitor de red para capturar datos de red.
 ms.assetid: b701a6d5-df6d-4ee9-b008-a568a410dc14
-title: Estructura QUERYTABLE (Netmon. h)
+title: Estructura QUERYTABLE (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 2b2976a56b43c55fccb9acb0c593b0dfd37e4404
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b8f291f055bfba159309b6c75a54d95514ed9c7614eb0456a4870e657f04209
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555375"
 ---
-# <a name="querytable-structure"></a>Estructura QUERYTABLE
+# <a name="querytable-structure"></a>QUERYTABLE (estructura)
 
-La estructura **QUERYTABLE** proporciona una lista de los equipos que usan actualmente monitor de red para capturar datos de red.
+La **estructura QUERYTABLE** proporciona una lista de los equipos que actualmente usan Monitor de red para capturar datos de red.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,24 +43,24 @@ typedef struct _QUERYTABLE {
 **nStationQueries**
 </dt> <dd>
 
-En la entrada, el número máximo de equipos que desea que Monitor de red devuelvan.
+En la entrada, el número máximo de equipos que Monitor de red devolver.
 
-En la salida, el número de estructuras [STATIONQUERY](stationquery.md) devueltas por monitor de red. Cada estructura **STATIONQUERY** representa un equipo que está capturando datos actualmente.
+En la salida, el número de estructuras [STATIONQUERY](stationquery.md) devueltas por Monitor de red. Cada **estructura STATIONQUERY** representa un equipo que captura datos actualmente.
 
 </dd> <dt>
 
 **StationQuery**
 </dt> <dd>
 
-En la entrada, una matriz de estructuras [STATIONQUERY](stationquery.md) vacías que contiene el número de elementos especificados en **nStationQueries**.
+En la entrada, una matriz de estructuras [STATIONQUERY vacías](stationquery.md) que contiene el número de elementos especificados en **nStationQueries**.
 
-En la salida, una estructura [STATIONQUERY](stationquery.md) rellena para cada equipo que está capturando datos. El número de elementos rellenados es devuelto por **nStationQueries**.
+En la salida, una estructura [STATIONQUERY rellena](stationquery.md) para cada equipo que captura datos. nStationQueries devuelve el número de elementos **rellenos.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La aplicación que realiza la llamada debe asignar la memoria para esta estructura y la matriz [STATIONQUERY](stationquery.md) , y se puede liberar después de que ya no se necesite la información.
+La aplicación que realiza la llamada debe asignar la memoria para esta estructura y la matriz [STATIONQUERY](stationquery.md) y liberarla después de que la información ya no sea necesaria.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ La aplicación que realiza la llamada debe asignar la memoria para esta estructu
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 
@@ -87,7 +87,7 @@ La aplicación que realiza la llamada debe asignar la memoria para esta estructu
 [IRTC::QueryStations](irtc-querystations.md)
 </dt> <dt>
 
-[IStas:: QueryStations](istats-querystations.md)
+[IStats::QueryStations](istats-querystations.md)
 </dt> <dt>
 
 [STATIONQUERY](stationquery.md)

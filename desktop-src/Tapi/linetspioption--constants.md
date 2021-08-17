@@ -1,19 +1,19 @@
 ---
-description: Las \_ constantes LINETSPIOPTION describe los proveedores de servicios de pedidos a los que se debe llamar.
+description: Las constantes LINETSPIOPTION \_ describen los proveedores de servicios de pedidos a los que se debe llamar.
 ms.assetid: af91f466-d87e-4767-a2c6-d882b9108f21
-title: Constantes de LINETSPIOPTION_ (TSPI. h)
+title: LINETSPIOPTION_ constantes (Tspi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45e8fa13047dcbad60472fac371b255f7533809c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a5d4a57edd80a83ab442313706fd40a2fbd79f545a0b3e9485e5d8c88b8c2f8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119404865"
 ---
-# <a name="linetspioption_-constants"></a>Constantes de LINETSPIOPTION \_
+# <a name="linetspioption_-constants"></a>LineTSPIOPTION \_ (Constantes)
 
-Las **\_ constantes LINETSPIOPTION** describe los proveedores de servicios de pedidos a los que se debe llamar.
+Las **constantes LINETSPIOPTION \_ describen** los proveedores de servicios de pedidos a los que se debe llamar.
 
 <dl> <dt>
 
@@ -22,7 +22,7 @@ Las **\_ constantes LINETSPIOPTION** describe los proveedores de servicios de pe
 
 
 
-TAPI debe llamar a las funciones de este proveedor de servicios de una en una; debe esperar de cada función para que devuelva (pero no para que se completen las funciones asincrónicas) antes de llamar a la misma función u otra, ya sea en el mismo subproceso o en otro diferente, en el mismo procesador o en otro diferente.
+TAPI debe llamar a las funciones de este proveedor de servicios de una en una; debe esperar a que cada función devuelva (pero no a que se completen las funciones asincrónicas) antes de llamar a la misma función u otra, ya sea en el mismo subproceso o en otro, en el mismo procesador o en otro diferente.
 
 
 </dt> </dl> </dd> </dl>
@@ -33,8 +33,8 @@ TAPI debe llamar a las funciones de este proveedor de servicios de una en una; d
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TSPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tspi.h</dt> </dl> |
 
 
 

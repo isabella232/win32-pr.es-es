@@ -1,5 +1,5 @@
 ---
-title: IMsRdpExtendedSettings (interfaz)
+title: Interfaz IMsRdpExtendedSettings
 description: Se usa para establecer y recuperar propiedades con nombre para el control de cliente.
 ms.assetid: b78eebc1-e514-4201-becf-770ee4a15187
 ms.tgt_platform: multiple
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119058903"
 ---
-# <a name="imsrdpextendedsettings-interface"></a>IMsRdpExtendedSettings (interfaz)
+# <a name="imsrdpextendedsettings-interface"></a>Interfaz IMsRdpExtendedSettings
 
 Se usa para establecer y recuperar propiedades con nombre para el control de cliente.
 
@@ -51,7 +51,7 @@ La **interfaz IMsRdpExtendedSettings** tiene estas propiedades.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                                                                                                                                                                                                                                                                                                                                       |

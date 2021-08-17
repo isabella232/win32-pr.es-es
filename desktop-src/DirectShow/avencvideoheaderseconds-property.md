@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119342405"
 ---
-# <a name="avencvideoheaderseconds-property"></a>Propiedad AVEncVideoHeaderSeconds
+# <a name="avencvideoheaderseconds-property"></a>AvEncVideoHeaderSeconds, propiedad
 
 Especifica el segundo número inicial en el encabezado de grupo de imágenes (GOP).
 
@@ -27,21 +27,21 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El intervalo válido de esta propiedad es de 0 a 59, ambos incluidos.
+El intervalo válido de esta propiedad es de 0 a 59, ambos inclusive.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
 | Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

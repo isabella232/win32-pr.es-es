@@ -13,9 +13,9 @@ ms.locfileid: "117738657"
 ---
 # <a name="appsequence-validation-rules"></a>Reglas de validación de AppSequence
 
-Información de AppSequence contenida en WS-Discovery de anuncio y respuesta[(Hello](hello-message.md), [ProbeMatches](probematches-message.md)y [ResolveMatches).](resolvematches-message.md) WSDAPI procesa y valida esta información antes de que estos mensajes se pasen a los componentes situados encima de la pila (como Explorador de red o una aplicación que llama a WSDAPI).
+Información de AppSequence contenida en WS-Discovery de anuncio y respuesta ([Hello](hello-message.md), [ProbeMatches](probematches-message.md)y [ResolveMatches](resolvematches-message.md)). WSDAPI procesa y valida esta información antes de que estos mensajes se pasen a componentes por encima de la pila (como Explorador de red o una aplicación que llama a WSDAPI).
 
-El siguiente XML muestra un elemento AppSequence de ejemplo. El prefijo wsd hace referencia al espacio de nombres `https://schemas.xmlsoap.org/ws/2005/04/discovery` .
+En el xml siguiente se muestra un elemento AppSequence de ejemplo. El prefijo wsd hace referencia al espacio de nombres `https://schemas.xmlsoap.org/ws/2005/04/discovery` .
 
 ``` syntax
 <wsd:AppSequence InstanceId="2"
@@ -24,11 +24,11 @@ El siguiente XML muestra un elemento AppSequence de ejemplo. El prefijo wsd hace
 </wsd:AppSequence>
 ```
 
-WSDAPI omite los mensajes obsoletos. Para cada dispositivo (identificado de forma única por la dirección del punto de conexión en el cuerpo SOAP), WSDAPI omite los mensajes con un valor MessageNumber de AppSequence inferior al último mensaje visto.
+WSDAPI omite los mensajes obsoletos. Para cada dispositivo (identificado de forma única por la dirección del punto de conexión en el cuerpo SOAP), WSDAPI omite los mensajes con un valor messageNumber de AppSequence inferior al último mensaje visto.
 
-WSDAPI omite los anuncios obsoletos de XAddr. Si appSequence InstanceId es inferior al último InstanceId visto, WSDAPI omite los XAddrs anunciados en el cuerpo SOAP. Además, si instanceId es el mismo que el anterior, pero MetadataVersion es menor que el último MetadataVersion, WSDAPI omite los XAddrs.
+WSDAPI omite los anuncios obsoletos de XAddr. Si AppSequence InstanceId es menor que el último InstanceId visto, WSDAPI omite los XAddrs anunciados en el cuerpo SOAP. Además, si instanceId es el mismo que el anterior, pero MetadataVersion es menor que el último MetadataVersion, WSDAPI omite los XAddrs.
 
-WSDAPI omite los mensajes WS-Discovery duplicados. Si dos mensajes WS-Discovery idénticos se envían a WSDAPI, solo se procesarán los primeros recibidos. Normalmente, esto solo es relevante para las aplicaciones que llaman directamente a las interfaces [**IWSDiscoveryPublisher**](/windows/desktop/api/WsdDisco/nn-wsddisco-iwsdiscoverypublisher) [**o IWSDiscoveryProvider.**](/windows/desktop/api/WsdDisco/nn-wsddisco-iwsdiscoveryprovider)
+WSDAPI omite los mensajes WS-Discovery duplicados. Si se envían dos WS-Discovery idénticos a WSDAPI, solo se procesará el primer mensaje recibido. Normalmente, esto solo es relevante para las aplicaciones que llaman directamente a las interfaces [**IWSDiscoveryPublisher**](/windows/desktop/api/WsdDisco/nn-wsddisco-iwsdiscoverypublisher) o [**IWSDiscoveryProvider.**](/windows/desktop/api/WsdDisco/nn-wsddisco-iwsdiscoveryprovider)
 
 ## <a name="related-topics"></a>Temas relacionados
 

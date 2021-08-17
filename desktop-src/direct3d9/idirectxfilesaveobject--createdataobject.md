@@ -1,7 +1,7 @@
 ---
 description: Crea un objeto de datos. En desuso.
 ms.assetid: bb0ef2cf-db76-40f6-968f-3599c58459a7
-title: 'IDirectXFileSaveObject:: CreateDataObject (método) (DXFile. h)'
+title: Método IDirectXFileSaveObject::CreateDataObject (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 7c5a67a72f6ff5a63730167d2fe2d12213a9ab72
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e1497ad06919833e0ba716877dc81b8df51a99361a49e43fa9a0f756e296040c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117728917"
 ---
-# <a name="idirectxfilesaveobjectcreatedataobject-method"></a>IDirectXFileSaveObject:: CreateDataObject (método)
+# <a name="idirectxfilesaveobjectcreatedataobject-method"></a>IDirectXFileSaveObject::CreateDataObject (método)
 
 Crea un objeto de datos. En desuso.
 
@@ -45,7 +45,7 @@ HRESULT CreateDataObject(
 
 <dl> <dt>
 
-*rguidTemplate* \[ de\]
+*rguidTemplate* \[ En\]
 </dt> <dd>
 
 Tipo: **[REFGUID](/openspecs/windows_protocols/ms-oaut/6e7d7108-c213-40bc-8294-ac13fe68fd50)**
@@ -54,25 +54,25 @@ GUID que representa la plantilla del objeto de datos.
 
 </dd> <dt>
 
-*szName* \[ de\]
+*szName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Puntero al nombre del objeto de datos. Especifique **null** si el objeto no tiene nombre.
+Puntero al nombre del objeto de datos. Especifique **NULL** si el objeto no tiene un nombre.
 
 </dd> <dt>
 
-*pguid* \[ de\]
+*pguid* \[ En\]
 </dt> <dd>
 
 Tipo: **[**GUID**](guid.md) \* const**
 
-Puntero a un GUID que representa el objeto de datos. Especifique **null** si el objeto no tiene un GUID.
+Puntero a un GUID que representa el objeto de datos. Especifique **NULL** si el objeto no tiene un GUID.
 
 </dd> <dt>
 
-*cbSize* \[ de\]
+*cbSize* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -81,12 +81,12 @@ Tamaño del objeto de datos, en bytes.
 
 </dd> <dt>
 
-*pvData* \[ de\]
+*pvData* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Puntero a un búfer que contiene todos los datos de miembro necesarios.
+Puntero a un búfer que contiene todos los datos necesarios del miembro.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Puntero a un búfer que contiene todos los datos de miembro necesarios.
 
 Tipo: **[ **LPDIRECTXFILEDATA**](idirectxfiledata.md)\***
 
-Dirección de un puntero a una interfaz [**IDirectXFileData**](idirectxfiledata.md) que representa el objeto de datos de archivo creado.
+Dirección de un puntero a una [**interfaz IDirectXFileData,**](idirectxfiledata.md) que representa el objeto de datos de archivo creado.
 
 </dd> </dl>
 
@@ -103,15 +103,15 @@ Dirección de un puntero a una interfaz [**IDirectXFileData**](idirectxfiledata.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los valores siguientes. DXFILEERR \_ BADALLOC DXFILEERR \_ BADVALUE
+Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes valores. DXFILEERR \_ BADALLOC DXFILEERR \_ BADVALUE
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si un objeto de referencia de datos hará referencia al objeto de datos, el parámetro szName o pguid no debe ser **null**.
+Si un objeto de referencia de datos hace referencia al objeto de datos, el parámetro szName o pguid debe ser distinto de **NULL.**
 
-Guarde las plantillas mediante el método [**IDirectXFileSaveObject:: SaveTemplates**](idirectxfilesaveobject--savetemplates.md) antes de guardar los datos creados por este método. Guarde los datos creados mediante el método [**IDirectXFileSaveObject:: savedata**](idirectxfilesaveobject--savedata.md) .
+Guarde las plantillas mediante el método [**IDirectXFileSaveObject::SaveTemplates**](idirectxfilesaveobject--savetemplates.md) antes de guardar los datos creados por este método. Guarde los datos creados mediante el [**método IDirectXFileSaveObject::SaveData.**](idirectxfilesaveobject--savedata.md)
 
-Si necesita guardar datos opcionales, use el método [**IDirectXFileData:: AddDataObject**](idirectxfiledata--adddataobject.md) después de usar este método y antes de usar [**IDirectXFileSaveObject:: savedata**](idirectxfilesaveobject--savedata.md). Si el objeto tiene objetos secundarios, agréguelos antes de llamar a **IDirectXFileSaveObject:: savedata**.
+Si necesita guardar datos opcionales, use el método [**IDirectXFileData::AddDataObject**](idirectxfiledata--adddataobject.md) después de usar este método y antes de [**usar IDirectXFileSaveObject::SaveData**](idirectxfilesaveobject--savedata.md). Si el objeto tiene objetos secundarios, agrégrélos antes de llamar a **IDirectXFileSaveObject::SaveData**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -119,8 +119,8 @@ Si necesita guardar datos opcionales, use el método [**IDirectXFileData:: AddDa
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 
@@ -134,7 +134,7 @@ Si necesita guardar datos opcionales, use el método [**IDirectXFileData:: AddDa
 [**IDirectXFileData::AddDataObject**](idirectxfiledata--adddataobject.md)
 </dt> <dt>
 
-[**IDirectXFileSaveObject:: SaveData**](idirectxfilesaveobject--savedata.md)
+[**IDirectXFileSaveObject::SaveData**](idirectxfilesaveobject--savedata.md)
 </dt> <dt>
 
 [**IDirectXFileSaveObject::SaveTemplates**](idirectxfilesaveobject--savetemplates.md)

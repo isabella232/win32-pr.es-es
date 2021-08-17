@@ -1,24 +1,24 @@
 ---
-description: Notifica a las aplicaciones que el sistema se está reanudando de la suspensión o hibernación. Este evento se entrega cada vez que el sistema se reanuda y no indica si un usuario está presente.
+description: Notifica a las aplicaciones que el sistema se está reanudando desde suspensión o hibernación. Este evento se entrega cada vez que el sistema se reanuda y no indica si un usuario está presente.
 ms.assetid: cd331f79-b64d-479e-aea8-5118ccc87224
-title: Evento PBT_APMRESUMEAUTOMATIC (WinUser. h)
+title: PBT_APMRESUMEAUTOMATIC evento (WinUser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a7a481dee356c85b3831fcace0c1ff127b0b276
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43e66fcd2201e9fb3c4feeb135843e92a350303b89a5c5045836428b9a326a30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143348"
 ---
-# <a name="pbt_apmresumeautomatic-event"></a>\_Evento PBT APMRESUMEAUTOMATIC
+# <a name="pbt_apmresumeautomatic-event"></a>Evento \_ PBT APMRESUMEAUTOMATIC
 
-Notifica a las aplicaciones que el sistema se está reanudando de la suspensión o hibernación. Este evento se entrega cada vez que el sistema se reanuda y no indica si un usuario está presente.
+Notifica a las aplicaciones que el sistema se está reanudando desde suspensión o hibernación. Este evento se entrega cada vez que el sistema se reanuda y no indica si un usuario está presente.
 
-Una ventana recibe este evento a través del mensaje de [**\_ POWERBROADCAST de WM**](wm-powerbroadcast.md) . Los parámetros *wParam* e *lParam* se establecen como se describe a continuación.
+Una ventana recibe este evento a través del [**mensaje \_ WM POWERBROADCAST.**](wm-powerbroadcast.md) Los *parámetros wParam* *y lParam* se establecen como se describe a continuación.
 
 > [!Note]  
-> En los sistemas Windows 10, versión 1507 o posterior, si el sistema se está reanudando de la suspensión solo para entrar inmediatamente en hibernación, este evento no se entrega. En este caso, no se envía un mensaje de [**\_ POWERBROADCAST de WM**](wm-powerbroadcast.md) .
+> En Windows 10, versión 1507 o posterior, si el sistema se reanuda de suspensión solo para entrar inmediatamente en hibernación, este evento no se entrega. En este caso, no se envía un mensaje [**WM \_ POWERBROADCAST.**](wm-powerbroadcast.md)
 
  
 
@@ -38,7 +38,7 @@ WindowProc( HWND hwnd,      // handle to window
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
 Identificador de la ventana.
@@ -47,7 +47,7 @@ Identificador de la ventana.
 
 | Value                                                                                                                                                                                                                                                                   | Significado                        |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| <span id="WM_POWERBROADCAST"></span><span id="wm_powerbroadcast"></span><dl> <dt>**[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)**</dt> <dt>536 (0x218)</dt> </dl> | Identificador de mensaje.<br/> |
+| <span id="WM_POWERBROADCAST"></span><span id="wm_powerbroadcast"></span><dl> <dt>**[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)**</dt> <dt>536 (0x218)</dt> </dl> | Identificador del mensaje.<br/> |
 
 
 
@@ -57,7 +57,7 @@ Identificador de la ventana.
 
 | Value                                                                                                                                                                                                                                                   | Significado                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
-| <span id="PBT_APMRESUMEAUTOMATIC"></span><span id="pbt_apmresumeautomatic"></span><dl> <dt>**PBT \_ APMRESUMEAUTOMATIC**</dt> <dt>18 (0X12)</dt> </dl> | Identificador del evento.<br/> |
+| <span id="PBT_APMRESUMEAUTOMATIC"></span><span id="pbt_apmresumeautomatic"></span><dl> <dt>**PBT \_ APMRESUMEAUTOMATIC**</dt> <dt>18 (0x12)</dt> </dl> | Identificador de evento.<br/> |
 
 
 
@@ -68,7 +68,7 @@ Identificador de la ventana.
 *lParam* 
 </dt> <dd>
 
-Sector debe ser cero.
+Reservado; debe ser cero.
 
 </dd> </dl>
 
@@ -76,9 +76,9 @@ Sector debe ser cero.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el sistema detecta cualquier actividad de usuario después de difundir PBT \_ APMRESUMEAUTOMATIC, difundirá un [evento \_ APMRESUMESUSPEND de PBT](pbt-apmresumesuspend.md) para que las aplicaciones sepan que pueden reanudar la interacción completa con el usuario.
+Si el sistema detecta cualquier actividad del usuario después de difundir PBT \_ APMRESUMEAUTOMATIC, difundirá un evento [ \_ PBT APMRESUMESUSPEND](pbt-apmresumesuspend.md) para que las aplicaciones sepan que pueden reanudar la interacción completa con el usuario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,9 +86,9 @@ Si el sistema detecta cualquier actividad de usuario después de difundir PBT \_
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -105,7 +105,7 @@ Si el sistema detecta cualquier actividad de usuario después de difundir PBT \_
 [PBT \_ APMRESUMESUSPEND](pbt-apmresumesuspend.md)
 </dt> <dt>
 
-[**POWERBROADCAST de WM \_**](wm-powerbroadcast.md)
+[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)
 </dt> </dl>
 
  

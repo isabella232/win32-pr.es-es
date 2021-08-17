@@ -74,7 +74,7 @@ La palabra de orden superior especifica la coordenada y del cursor. La coordenad
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Use el código siguiente para obtener la posición horizontal y vertical:
 

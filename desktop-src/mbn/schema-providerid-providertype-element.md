@@ -1,7 +1,7 @@
 ---
-description: Especifica el identificador del proveedor de la red de telefonía móvil.
+description: Especifica el identificador de proveedor de la red de telefonía móvil.
 ms.assetid: 5528dfec-eb1b-4af3-8d7d-03b458e5ae75
-title: ProviderID (providerType) (elemento)
+title: Elemento ProviderID (providerType)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,20 +11,20 @@ api_name:
 - ProviderID
 api_type:
 - Schema
-ms.openlocfilehash: 750e6c3f4397f710bb1ccbcea0286be68a89e145
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b40ac5abab2abf850d927c21f0de66ad419987f594f28dffcd380ead7f982d63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959795"
 ---
-# <a name="providerid-providertype-element"></a>ProviderID (providerType) (elemento)
+# <a name="providerid-providertype-element"></a>Elemento ProviderID (providerType)
 
-El elemento **ProviderID (providerType)** especifica el identificador del proveedor de la red de telefonía móvil.
+El **elemento ProviderID (providerType)** especifica el identificador de proveedor de la red de telefonía móvil.
 
 El elemento es una secuencia de dígitos con un máximo de 6 dígitos.
 
-Este elemento es necesario en el elemento de [**proveedor**](schema-provider-dataroamingpartners-element.md) .
+Este elemento es necesario dentro del [**elemento Provider.**](schema-provider-dataroamingpartners-element.md)
 
 ``` syntax
 <xs:element name="ProviderID"
@@ -32,7 +32,7 @@ Este elemento es necesario en el elemento de [**proveedor**](schema-provider-dat
  />
 ```
 
-El elemento **ProviderID** se define mediante el tipo complejo de [**providerType**](schema-providertype-complextype.md) .
+El tipo complejo [**providerType**](schema-providertype-complextype.md) define el elemento **ProviderID.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -40,7 +40,7 @@ El elemento **ProviderID** se define mediante el tipo complejo de [**providerTyp
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |
 
 
@@ -58,7 +58,7 @@ El elemento **ProviderID** se define mediante el tipo complejo de [**providerTyp
 **Posible elemento primario inmediato en la instancia de esquema**
 </dt> <dt>
 
-[**Proveedor (DataRoamingPartners)**](schema-provider-dataroamingpartners-element.md)
+[**Provider (DataRoamingPartners)**](schema-provider-dataroamingpartners-element.md)
 </dt> </dl>
 
  

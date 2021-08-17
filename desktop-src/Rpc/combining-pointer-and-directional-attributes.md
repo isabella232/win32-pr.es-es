@@ -1,26 +1,26 @@
 ---
-title: Combinación de atributos de puntero y direccional
+title: Combinar atributos de puntero y direccional
 description: Algunas advertencias se aplican a determinadas combinaciones de atributos direccionales y atributos de puntero.
 ms.assetid: f381af3e-0dad-4ce1-afb9-083402b6249c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23f81d4d6214cde1202bfdab37dbfbb42b2fbcb3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 40d66f745aba319a9d78f4cdf32e284a4160afd602b0dbb5a6c1e320255629a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103778877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118931738"
 ---
-# <a name="combining-pointer-and-directional-attributes"></a>Combinación de atributos de puntero y direccional
+# <a name="combining-pointer-and-directional-attributes"></a>Combinar atributos de puntero y direccional
 
-Algunas advertencias se aplican a determinadas combinaciones de atributos direccionales y atributos de puntero. Se describen en los temas siguientes:
+Algunas advertencias se aplican a determinadas combinaciones de atributos direccionales y atributos de puntero. Estos temas se tratan en los siguientes temas:
 
--   [Punteros de referencia de Out-Only insertados](embedded-out-only-reference-pointers.md)
--   [Solo no se aceptan parámetros únicos o de puntero completos](out-only-unique-or-full-pointer-parameters-not-accepted.md)
+-   [Punteros de Out-Only de referencia insertados](embedded-out-only-reference-pointers.md)
+-   [Parámetros de puntero únicos o completos no aceptados](out-only-unique-or-full-pointer-parameters-not-accepted.md)
 
- 
+ 
 
- 
+ 
 
 
 

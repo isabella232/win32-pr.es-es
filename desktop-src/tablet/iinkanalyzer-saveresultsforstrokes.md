@@ -1,7 +1,7 @@
 ---
-description: Guarda los resultados del análisis para los trazos especificados asociados a un IInkAnalyzer.
+description: Guarda los resultados del análisis de los trazos especificados asociados a un IInkAnalyzer.
 ms.assetid: 6ff29b95-6c76-4e3d-b4c0-5e7cb6a9ddf9
-title: 'IInkAnalyzer:: SaveResultsForStrokes (método) (IACom. h)'
+title: Método IInkAnalyzer::SaveResultsForStrokes (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 1371b056cf01beba75fdcbd427c526ed29d20c55
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd9a95ada1385fdbb6dbc5a1e22cde0ef319156ad7c3cd7782e911d06696af37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119091573"
 ---
-# <a name="iinkanalyzersaveresultsforstrokes-method"></a>IInkAnalyzer:: SaveResultsForStrokes (método)
+# <a name="iinkanalyzersaveresultsforstrokes-method"></a>IInkAnalyzer::SaveResultsForStrokes (método)
 
-Guarda los resultados del análisis para los trazos especificados asociados a un [**IInkAnalyzer**](iinkanalyzer.md).
+Guarda los resultados del análisis de los trazos especificados asociados a [**un IInkAnalyzer**](iinkanalyzer.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,14 +42,14 @@ HRESULT SaveResultsForStrokes(
 
 <dl> <dt>
 
-*ulStrokeIdsCount* \[ de\]
+*ulStrokeIdsCount* \[ En\]
 </dt> <dd>
 
 Número de identificadores de trazo en **plStrokeIds**.
 
 </dd> <dt>
 
-*plStrokeIds* \[ de\]
+*plStrokeIds* \[ En\]
 </dt> <dd>
 
 Matriz de identificadores de trazo.
@@ -59,7 +59,7 @@ Matriz de identificadores de trazo.
 *pulSerializedDataSize* \[ in, out\]
 </dt> <dd>
 
-Número de bytes de *ppbSerializedData*.
+Número de bytes de *ppbSerializedData.*
 
 </dd> <dt>
 
@@ -72,52 +72,52 @@ Puntero a los datos de análisis serializados.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
 > Para evitar una pérdida de memoria, llame a [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) en \* *ppbSerializedData* cuando ya no necesite la información.
 
  
 
-Este método guarda los resultados del análisis actual para los trazos especificados. Este método guarda los objetos [**IContextNode**](icontextnode.md) de hoja de tinta que contienen los trazos y todos los antecesores de esos nodos de contexto. Este método no guarda ningún nodo de datos de trazo o de sugerencia de análisis. Es responsabilidad de la aplicación sincronizar los resultados del análisis y los datos de trazo correspondientes, si persiste.
+Este método guarda los resultados del análisis actuales para los trazos especificados. Este método guarda los objetos [**IContextNode**](icontextnode.md) de hoja de lápiz que contienen los trazos y todos los antecesores de esos nodos de contexto. Este método no guarda ningún nodo de sugerencia de análisis o datos de trazo. Es responsabilidad de la aplicación sincronizar los resultados del análisis y los datos de trazo correspondientes, si persisten.
 
-Este método devuelve un código de error cuando se rellena parcialmente un objeto [**IContextNode**](icontextnode.md) que se va a guardar (vea [**IContextNode:: GetPartiallyPopulated**](icontextnode-getpartiallypopulated.md)).
+Este método devuelve un código de error cuando un objeto [**IContextNode**](icontextnode.md) que se va a guardar se rellena parcialmente (vea [**IContextNode::GetPartiallyPopulated).**](icontextnode-getpartiallypopulated.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: LoadResults (método)**](iinkanalyzer-loadresults.md)
+[**IInkAnalyzer::LoadResults (Método)**](iinkanalyzer-loadresults.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: SaveResults (método)**](iinkanalyzer-saveresults.md)
+[**IInkAnalyzer::SaveResults (Método)**](iinkanalyzer-saveresults.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: SaveResultsForNodes (método)**](iinkanalyzer-saveresultsfornodes.md)
+[**IInkAnalyzer::SaveResultsForNodes (Método)**](iinkanalyzer-saveresultsfornodes.md)
 </dt> <dt>
 
 [**IContextNode**](icontextnode.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

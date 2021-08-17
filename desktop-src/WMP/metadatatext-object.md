@@ -1,9 +1,9 @@
 ---
-title: Objeto MetadataText
-description: El objeto MetadataText proporciona una manera de recuperar los metadatos de los atributos de metadatos de texto complejos.
+title: MetadataText (objeto)
+description: El objeto MetadataText proporciona una manera de recuperar metadatos para atributos de metadatos textuales complejos.
 ms.assetid: cf8e4524-6fc5-4534-9542-6bdc7d34bca4
 keywords:
-- Objeto MetadataText Media Player de Windows
+- MetadataText Object Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b043a9050d03ca562159aa5be0c113084ac152fb
-ms.sourcegitcommit: 4f5016b1fbfd703dbf769c508db464c2518c0fa5
+ms.openlocfilehash: 2f79c4f4bb80855cf84d576c126e30dc5301c45ca6f1a7c34c5d54e57844abfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104419761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135028"
 ---
-# <a name="metadatatext-object"></a>Objeto MetadataText
+# <a name="metadatatext-object"></a>MetadataText (objeto)
 
-El objeto **MetadataText** proporciona una manera de recuperar los metadatos de los atributos de metadatos de texto complejos.
+El **objeto MetadataText** proporciona una manera de recuperar metadatos para atributos de metadatos textuales complejos.
 
-El objeto **MetadataText** admite las siguientes propiedades.
+El **objeto MetadataText** admite las siguientes propiedades.
 
 
 
@@ -35,7 +35,7 @@ El objeto **MetadataText** admite las siguientes propiedades.
 
 
 
- 
+ 
 
 Se tiene acceso al objeto **MetadataText** mediante el método siguiente.
 
@@ -47,9 +47,9 @@ Se tiene acceso al objeto **MetadataText** mediante el método siguiente.
 
 
 
- 
+ 
 
-Para fines de Ilustración, *reproductor*. *currentMedia*. **getItemInfoByType**(*Name*, *Language*, *index*) se usa en las secciones de sintaxis de referencia.
+Para fines ilustrativos, el *reproductor*. *currentMedia*. **getItemInfoByType**(*name*, *language*, *index*) se usa en las secciones de sintaxis de referencia.
 
 ## <a name="see-also"></a>Vea también
 
@@ -58,9 +58,9 @@ Para fines de Ilustración, *reproductor*. *currentMedia*. **getItemInfoByType**
 [**Referencia del modelo de objetos para scripting**](object-model-reference-for-scripting.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

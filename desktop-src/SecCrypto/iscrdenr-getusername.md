@@ -59,9 +59,9 @@ SCrdEnr.getUserName( _
 
 Este valor debe ser cero (0), SCARD ENROLL UPN NAME o \_ \_ \_ SCARD \_ ENROLL SAM \_ COMPATIBLE \_ \_ NAME.
 
-Si este valor es SCARD ENROLL UPN NAME, getUserName devuelve el nombre \_ \_ principal universal \_ (UPN) del usuario, como "  someone@example.com ".
+Si este valor es SCARD ENROLL UPN NAME, getUserName devuelve el nombre principal \_ \_ universal \_ (UPN) del usuario, como "  someone@example.com ".
 
-Si este valor es SCARD ENROLL SAM COMPATIBLE NAME, el método devuelve el nombre del administrador de acceso de seguridad (SAM) del usuario con el formato \_ \_ \_ \_ "USUARIO \\ DE DOMINIO".
+Si este valor es SCARD ENROLL SAM COMPATIBLE NAME, el método devuelve el nombre del administrador de acceso de seguridad (SAM) del usuario con el formato \_ \_ \_ \_ "DOMAIN \\ USER".
 
 Si este valor es cero, el método devuelve el nombre UPN del usuario si existe. Si el usuario no tiene un nombre UPN, el método devuelve el nombre SAM del usuario.
 
@@ -80,7 +80,7 @@ Puntero a una cadena que devuelve el nombre del usuario.
 
 Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método, devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
+Si se produce un error en el método , devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
 ### <a name="vb"></a>VB
 

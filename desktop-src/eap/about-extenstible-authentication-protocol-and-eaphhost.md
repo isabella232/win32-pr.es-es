@@ -1,29 +1,29 @@
 ---
 title: Acerca de EAP y EAPHost
-description: Obtenga información sobre el protocolo de autenticación extensible (EAP) y EAPHost. Vea recursos adicionales disponibles sobre EAP y EAPHost.
+description: Obtenga información sobre el Protocolo de autenticación extensible (EAP) y EAPHost. Vea recursos adicionales disponibles sobre EAP y EAPHost.
 ms.assetid: 2669c858-c4cc-4319-a29c-93fe2fe67f41
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29f6e087a96adff43e5c8300ae68e7c0980d4fa4
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 9323109f850d4782a5aed644f5a3fdfece42ac2ea122de4399ca584dd15299c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104078354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119117825"
 ---
 # <a name="about-eap-and-eaphost"></a>Acerca de EAP y EAPHost
 
 ## <a name="about-eaphost"></a>Acerca de EAPHost
 
-EAPHost implementa la máquina de Estados del Protocolo de autenticación extensible (EAP) y el marco de protocolo EAP, según [RFC 3748](https://go.microsoft.com/fwlink/p/?linkid=84063). Para obtener más información, consulte [acerca de EAPHost](about-eaphost.md).
+EAPHost implementa el equipo de estado del Protocolo de autenticación extensible (EAP) y el marco del protocolo EAP, según [RFC 3748](https://go.microsoft.com/fwlink/p/?linkid=84063). Para obtener más información, vea [Acerca de EAPHost.](about-eaphost.md)
 
-## <a name="about-extensible-authentication-protocol"></a>Acerca del Protocolo de autenticación extensible
+## <a name="about-extensible-authentication-protocol"></a>Acerca del protocolo de autenticación extensible
 
-EAP es un componente de red de Microsoft Windows que proporciona una infraestructura de protocolo de autenticación extensible (EAP). Para obtener más información, vea [acerca de EAP](about-extensible-authentication-protocol.md).
+EAP es un componente de redes Windows Microsoft que proporciona una infraestructura de Protocolo de autenticación extensible (EAP). Para obtener más información, vea [Acerca de EAP.](about-extensible-authentication-protocol.md)
 
- 
+ 
 
- 
+ 
 
 
 

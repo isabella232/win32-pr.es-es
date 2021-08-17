@@ -1,42 +1,42 @@
 ---
-title: Escritorio remoto control ActiveX
-description: Describe cómo utilizar el control ActiveX Escritorio remoto.
+title: Escritorio remoto ActiveX control
+description: Describe cómo usar el control Escritorio remoto ActiveX control .
 ms.assetid: 28DA1103-549F-4C56-B421-54CDFD1A4AF1
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79a80b9793432a46b5baec5841c18b591c031f34
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 63d2fb83de4d779421b1b2f933dadc0bbca490332ab81f8c43d823575ec64989
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105685660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058653"
 ---
-# <a name="remote-desktop-activex-control"></a>Escritorio remoto control ActiveX
+# <a name="remote-desktop-activex-control"></a>Escritorio remoto ActiveX control
 
-Describe cómo utilizar el control ActiveX Escritorio remoto.
+Describe cómo usar el control Escritorio remoto ActiveX control .
 
 ## <a name="in-this-section"></a>En esta sección
 
 <dl> <dt>
 
-[Usar el control ActiveX Escritorio remoto](using-remote-desktop-web-connection.md)
+[Uso del control Escritorio remoto ActiveX control](using-remote-desktop-web-connection.md)
 </dt> <dd>
 
-Cómo puede utilizar el control ActiveX Escritorio remoto para personalizar la experiencia del usuario Servicios de Escritorio remoto.
+Cómo puede usar el control Escritorio remoto ActiveX para personalizar la experiencia Servicios de Escritorio remoto usuario.
 
 </dd> <dt>
 
-[Referencia de controles ActiveX Escritorio remoto](remote-desktop-activex-control-reference.md)
+[Escritorio remoto ActiveX de control](remote-desktop-activex-control-reference.md)
 </dt> <dd>
 
-Los elementos de programación siguientes se utilizan con el Escritorio remoto control ActiveX.
+Los siguientes elementos de programación se usan con Escritorio remoto ActiveX control .
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

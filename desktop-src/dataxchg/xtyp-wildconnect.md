@@ -1,9 +1,9 @@
 ---
-title: XTYP_WILDCONNECT transacción (ddeml. h)
-description: Permite a un cliente establecer una conversación en cada uno de los pares nombre de servicio y nombre de tema del servidor que coinciden con el nombre de servicio y el nombre de tema especificados.
+title: XTYP_WILDCONNECT transacción (Ddeml.h)
+description: Permite que un cliente establezca una conversación en cada uno de los pares de nombre de servicio y nombre de tema del servidor que coincidan con el nombre de servicio y el nombre del tema especificados.
 ms.assetid: 4651e14f-ca13-412e-853d-326a13db78e4
 keywords:
-- Intercambio de datos de transacciones XTYP_WILDCONNECT
+- XTYP_WILDCONNECT datos de transacción Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc63d6c367aebc440418beaabb0a06f05b0df967
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5b2b170a8d2362dec6311f935a5bc0bb92fa16a9b04270afc59d8fe5ad5c19f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105705135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117914735"
 ---
-# <a name="xtyp_wildconnect-transaction"></a>XTYP \_ WILDCONNECT
+# <a name="xtyp_wildconnect-transaction"></a>Transacción WILDCONNECT de XTYP \_
 
-Permite a un cliente establecer una conversación en cada uno de los pares nombre de servicio y nombre de tema del servidor que coinciden con el nombre de servicio y el nombre de tema especificados. Una función de devolución de llamada de servidor Intercambio dinámico de datos (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe esta transacción cuando un cliente especifica un nombre de servicio **nulo** , un nombre de tema **nulo** o ambos en una llamada a la función [**DdeConnect**](/windows/desktop/api/Ddeml/nf-ddeml-ddeconnect) o [**DdeConnectList**](/windows/desktop/api/Ddeml/nf-ddeml-ddeconnectlist) .
+Permite que un cliente establezca una conversación en cada uno de los pares de nombre de servicio y nombre de tema del servidor que coincidan con el nombre de servicio y el nombre del tema especificados. Una función de devolución de llamada de servidor datos dinámicos Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe esta transacción cuando un cliente especifica un nombre de servicio **NULL,** un nombre de tema **NULL** o ambos en una llamada a la función [**DdeConnect**](/windows/desktop/api/Ddeml/nf-ddeml-ddeconnect) [**o DdeConnectList.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeconnectlist)
 
 
 ```C++
@@ -48,42 +48,42 @@ El tipo de transacción.
 *uFmt* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *hconv* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *hsz1* 
 </dt> <dd>
 
-Identificador del nombre del tema. Si este parámetro es **null**, el cliente solicita una conversación en todos los nombres de tema admitidos por el servidor.
+Identificador del nombre del tema. Si este parámetro es **NULL,** el cliente solicita una conversación en todos los nombres de tema que admite el servidor.
 
 </dd> <dt>
 
 *hsz2* 
 </dt> <dd>
 
-Identificador del nombre del servicio. Si este parámetro es **null**, el cliente solicita una conversación en todos los nombres de servicio admitidos por el servidor.
+Identificador del nombre del servicio. Si este parámetro es **NULL,** el cliente solicita una conversación en todos los nombres de servicio que admite el servidor.
 
 </dd> <dt>
 
 *hdata* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *dwData1* 
 </dt> <dd>
 
-Puntero a una estructura [**CONVCONTEXT**](/windows/win32/api/ddeml/ns-ddeml-convcontext) que contiene información de contexto para la conversación. Si el cliente no es una aplicación DDEML, este parámetro se establece en 0.
+Puntero a una [**estructura CONVCONTEXT**](/windows/win32/api/ddeml/ns-ddeml-convcontext) que contiene información de contexto para la conversación. Si el cliente no es una aplicación DDEML, este parámetro se establece en 0.
 
 </dd> <dt>
 
@@ -96,15 +96,15 @@ Especifica si el cliente es la misma instancia de aplicación que el servidor. S
 
 ## <a name="return-value"></a>Valor devuelto
 
-El servidor debe devolver un identificador de datos que identifique una matriz de estructuras [**HSZPAIR**](/windows/win32/api/ddeml/ns-ddeml-hszpair) . La matriz debe contener una estructura para cada par de nombre de servicio y nombre de tema que coincida con el par de nombre de servicio y nombre de tema solicitado por el cliente. La matriz debe terminar con un identificador de cadena **null** . El sistema envía la transacción de [**\_ \_ confirmación de conexión de XTYP**](xtyp-connect-confirm.md) al servidor para confirmar cada conversación y pasar los identificadores de conversación al servidor. El servidor no recibirá estas confirmaciones si especificó la marca **CBF \_ SKIP \_ Connect \_ Confirmations** en la función [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) .
+El servidor debe devolver un identificador de datos que identifique una matriz de [**estructuras HSZPAIR.**](/windows/win32/api/ddeml/ns-ddeml-hszpair) La matriz debe contener una estructura para cada par nombre-servicio y nombre-tema que coincida con el par nombre-servicio y nombre-tema solicitado por el cliente. Un identificador de cadena NULL debe terminar la **matriz.** El sistema envía la [**transacción XTYP \_ CONNECT \_ CONFIRM**](xtyp-connect-confirm.md) al servidor para confirmar cada conversación y pasar los identificadores de conversación al servidor. El servidor no recibirá estas confirmaciones si especificó la marca **CBF \_ SKIP CONNECT \_ \_ CONFIRMS** en la [**función DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
-El servidor debe devolver **null** para rechazar la transacción **XTYP \_ WILDCONNECT** .
+El servidor debe devolver **NULL para** rechazar la **transacción \_ XTYP WILDCONNECT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta transacción se filtra si la aplicación de servidor especificó la marca **CBF \_ FAIL \_ Connections** en la función [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) .
+Esta transacción se filtra si la aplicación de servidor especificó la **marca CBF \_ FAIL \_ CONNECTIONS** en la [**función DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
-Un servidor no puede bloquear este tipo de transacción; \_se omite el código de retorno del bloque CBR.
+Un servidor no puede bloquear este tipo de transacción; Se omite \_ el código de retorno CBR BLOCK.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -114,7 +114,7 @@ Un servidor no puede bloquear este tipo de transacción; \_se omite el código d
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>Ddeml. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ddeml.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -137,10 +137,10 @@ Un servidor no puede bloquear este tipo de transacción; \_se omite el código d
 [**HSZPAIR**](/windows/win32/api/ddeml/ns-ddeml-hszpair)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Biblioteca de administración de Intercambio dinámico de datos](dynamic-data-exchange-management-library.md)
+[datos dinámicos Exchange management library](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

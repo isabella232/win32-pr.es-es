@@ -3,16 +3,16 @@ title: Cambiar marcas de notificación
 description: Cambiar marcas de notificación
 ms.assetid: 1f1aef71-a2b7-49ad-a0bc-f61f10b701c9
 keywords:
-- Cambio
+- Change
 - Cambiar marcas de notificación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3e6d3015be29c84b6b93b47b373d05f96f4388b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3f5311e3313bf23c92972395143d288483181e7a69212115082a2f150d7d1bb2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117791839"
 ---
 # <a name="change-notification-flags"></a>Cambiar marcas de notificación
 
@@ -20,19 +20,19 @@ ms.locfileid: "104357176"
 
 | Constante                         | Value      | Descripción                                                                                                                                                           |
 |----------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_tipos de \_ cambio de número RTM \_          | 3          | Especifica el número de tipos de cambios utilizados actualmente por el administrador de tablas de enrutamiento.                                                                            |
-| tipo de cambio de RTM \_ \_ \_ All           | 0x0001     | Notifica al cliente cualquier cambio que se haya efectuado en un destino.                                                                                                                   |
-| tipo de cambio de RTM \_ \_ \_ mejor          | 0x0002     | Notifica al cliente los cambios en la mejor ruta o cuando cambia la mejor ruta.                                                                                     |
-| \_cambio de \_ \_ reenvío de tipos de RTM    | 0x0004     | Notifica al cliente los cambios de ruta más adecuados que afectan al reenvío (por ejemplo, los cambios en el próximo salto).                                                                      |
-| RTM \_ notifica \_ solo \_ los \_ dests marcados | 0x00010000 | Notifica al cliente los cambios en los destinos que el cliente ha marcado. Si no se especifica esta marca, se envían los mensajes de notificación de cambios para todos los destinos. |
+| TIPOS DE CAMBIO NUM DE RTM \_ \_ \_          | 3          | Especifica el número de tipos de cambio que usa actualmente el administrador de tablas de enrutamiento.                                                                            |
+| TIPO DE \_ CAMBIO RTM \_ \_ ALL           | 0x0001     | Notifica al cliente cualquier cambio en un destino.                                                                                                                   |
+| MEJOR CAMBIO \_ DE \_ TIPO DE \_ RTM          | 0x0002     | Notifica al cliente los cambios en la mejor ruta o cuando cambia la mejor ruta.                                                                                     |
+| REENVÍO DE TIPO \_ \_ DE CAMBIO \_ DE RTM    | 0x0004     | Notifica al cliente los mejores cambios de ruta que afectan al reenvío (por ejemplo, los cambios de próximo salto).                                                                      |
+| RTM \_ NOTIFY \_ ONLY \_ MARKED \_ DESTS | 0x00010000 | Notifica al cliente los cambios en los destinos que el cliente ha marcado. Si no se especifica esta marca, se envían mensajes de notificación de cambio para todos los destinos. |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

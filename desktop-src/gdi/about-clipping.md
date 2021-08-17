@@ -13,7 +13,7 @@ ms.locfileid: "119452385"
 ---
 # <a name="about-clipping"></a>Acerca del recorte
 
-Las aplicaciones usan el recorte de varias maneras. Las aplicaciones de procesamiento de texto y hoja de cálculo recortan la entrada del teclado para evitar que aparezca en los márgenes de una página o hoja de cálculo. El diseño asistido por PC (CAD) y las aplicaciones de dibujo recortan la salida de gráficos para evitar que sobrescriba los bordes de un dibujo o una imagen.
+Las aplicaciones usan el recorte de varias maneras. Las aplicaciones de procesamiento de texto y hoja de cálculo recortan la entrada de teclado para evitar que aparezca en los márgenes de una página o hoja de cálculo. El diseño asistido por PC (CAD) y las aplicaciones de dibujo recortan la salida de gráficos para evitar que sobrescriba los bordes de un dibujo o una imagen.
 
 Una *región de recorte* es una región con bordes que son líneas rectas o curvas. Una *ruta de acceso* de recorte es una región con bordes que son líneas rectas, curvas Bézier o combinaciones de ambos. Para obtener más información sobre las regiones, vea [Regiones](regions.md). Para obtener más información sobre las rutas de acceso, vea [Rutas de acceso](paths.md).
 

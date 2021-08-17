@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de TaskListType
+title: Tipo complejo TaskListType
 description: Define una lista de tareas que se usan para identificar los componentes de una aplicación.
 ms.assetid: 41a46967-7c5b-4555-9f65-bd9582c0c492
 keywords:
-- TaskListType tipo complejo EventLog
+- TaskListType, tipo complejo EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ad427743242ada8901e904fc4e03620ccc72f405
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d59457aaeeefeec4b490b4c399a2faafb4f62c22e67a600f741ccc16b3abcaad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117750911"
 ---
-# <a name="tasklisttype-complex-type"></a>Tipo complejo de TaskListType
+# <a name="tasklisttype-complex-type"></a>Tipo complejo TaskListType
 
 Define una lista de tareas que se usan para identificar los componentes de una aplicación.
 
@@ -42,7 +42,7 @@ Define una lista de tareas que se usan para identificar los componentes de una a
 
 | Elemento                                                       | Tipo                                                         | Descripción                                                       |
 |---------------------------------------------------------------|--------------------------------------------------------------|-------------------------------------------------------------------|
-| [**Task**](eventmanifestschema-task-tasklisttype-element.md) | [**TaskType**](eventmanifestschema-tasktype-complextype.md) | Define un componente o subcomponente de una aplicación.<br/> |
+| [**Tarea**](eventmanifestschema-task-tasklisttype-element.md) | [**TaskType**](eventmanifestschema-tasktype-complextype.md) | Define un componente o subcomponente de una aplicación.<br/> |
 
 
 
@@ -52,8 +52,8 @@ Define una lista de tareas que se usan para identificar los componentes de una a
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

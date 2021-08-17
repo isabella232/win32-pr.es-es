@@ -21,7 +21,7 @@ La [**interfaz IWSManResourceLocator**](/windows/desktop/api/WSManDisp/nn-wsmand
 -   [**AddOption (método)**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-addoption)
 -   [**AddSelector (método)**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-addselector)
 -   [**Método ClearOptions**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-clearoptions)
--   [**Método ClearSelectors**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-clearselectors)
+-   [**ClearSelectors (método)**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanresourcelocator-clearselectors)
 
  
 

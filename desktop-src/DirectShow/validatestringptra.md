@@ -55,9 +55,9 @@ Puntero a una cadena ANSI terminada en NULL.
 
 Esta macro no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta macro se omite a menos que se defina DEBUG, DEBUG o VFWROBUST cuando se DirectShow archivo de encabezado \_ de clase base.
+Esta macro se omite a menos que se defina DEBUG, DEBUG o VFWROBUST cuando se DirectShow archivo de encabezado de \_ clase base.
 
 ## <a name="requirements"></a>Requisitos
 

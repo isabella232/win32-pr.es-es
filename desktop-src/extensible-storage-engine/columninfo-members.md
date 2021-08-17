@@ -19,7 +19,7 @@ ms.locfileid: "119455155"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Información sobre una columna de Esent. No se trata de una clase de interoperabilidad, pero la usan los métodos auxiliares de metadatos.
+Información sobre una columna de Esent. No se trata de una clase de interoperabilidad, sino que la usan los métodos auxiliares de metadatos.
 
 El [tipo ColumnInfo](./columninfo-class.md) expone los miembros siguientes.
 
@@ -114,7 +114,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn334183(v=exchg.10).md">ToString</a></td>
-<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el <a href="dn334128(v=exchg.10).md">elemento ColumnInfo actual.</a> (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
+<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el <a href="dn334128(v=exchg.10).md">objeto ColumnInfo actual.</a> (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>

@@ -1,9 +1,9 @@
 ---
-title: Elemento String (StringTableType)
-description: Define una cadena traducida.
+title: string (StringTableType) (Elemento)
+description: Define una cadena localizada.
 ms.assetid: 845476a9-bcf4-4821-824c-06c9a9f64649
 keywords:
-- elemento de cadena EventLog
+- elemento string EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c46fc43366d6472e8047b529d847eefd5369c263
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 82eae0fa7007790995617b2c26bc5aff2bca720fb689b9ac468ef551d3400e05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136178"
 ---
-# <a name="string-stringtabletype-element"></a>Elemento String (StringTableType)
+# <a name="string-stringtabletype-element"></a>string (StringTableType) (Elemento)
 
-Define una cadena traducida.
+Define una cadena localizada.
 
 ``` syntax
 <xs:element name="string">
@@ -43,7 +43,7 @@ Define una cadena traducida.
 </xs:element>
 ```
 
-El elemento de **cadena** se define mediante el tipo complejo de [**StringTableType**](eventmanifestschema-stringtabletype-complextype.md) .
+El **tipo complejo StringTableType** define el elemento [**string.**](eventmanifestschema-stringtabletype-complextype.md)
 
 ## <a name="attributes"></a>Atributos
 
@@ -51,8 +51,8 @@ El elemento de **cadena** se define mediante el tipo complejo de [**StringTableT
 
 | Nombre       | Tipo   | Descripción                                                                           |
 |------------|--------|---------------------------------------------------------------------------------------|
-| id         | string | Identificador que identifica de forma única la cadena en la tabla de cadenas.<br/> |
-| stringType | string | No se utiliza.<br/>                                                                  |
+| id         | string | Identificador que identifica de forma única la cadena dentro de la tabla de cadenas.<br/> |
+| stringType | string | No se usa.<br/>                                                                  |
 | value      | string | Cadena localizada.<br/>                                                      |
 
 
@@ -63,8 +63,8 @@ El elemento de **cadena** se define mediante el tipo complejo de [**StringTableT
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

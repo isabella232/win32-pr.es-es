@@ -57,10 +57,10 @@ Propiedades de seguridad utilizadas por un sistema externo.
 |------------------------|-----------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
-| System-Only            | False                                                                       |
-| Es de un solo valor       | True                                                                        |
-| Está indexado             | False                                                                       |
-| En el catálogo global      | False                                                                       |
+| System-Only            | Falso                                                                       |
+| Es de un solo valor       | Verdadero                                                                        |
+| Está indexado             | Falso                                                                       |
+| En el catálogo global      | Falso                                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
@@ -78,10 +78,10 @@ Propiedades de seguridad utilizadas por un sistema externo.
 |------------------------|-----------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
-| System-Only            | False                                                                       |
-| Es de un solo valor       | True                                                                        |
-| Está indexado             | False                                                                       |
-| En el catálogo global      | False                                                                       |
+| System-Only            | Falso                                                                       |
+| Es de un solo valor       | Verdadero                                                                        |
+| Está indexado             | Falso                                                                       |
+| En el catálogo global      | Falso                                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
@@ -99,10 +99,10 @@ Propiedades de seguridad utilizadas por un sistema externo.
 |------------------------|-----------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
-| System-Only            | False                                                                       |
-| Es de un solo valor       | True                                                                        |
-| Está indexado             | False                                                                       |
-| En el catálogo global      | False                                                                       |
+| System-Only            | Falso                                                                       |
+| Es de un solo valor       | Verdadero                                                                        |
+| Está indexado             | Falso                                                                       |
+| En el catálogo global      | Falso                                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
@@ -120,10 +120,10 @@ Propiedades de seguridad utilizadas por un sistema externo.
 |------------------------|-----------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
-| System-Only            | False                                                                       |
-| Es de un solo valor       | True                                                                        |
-| Está indexado             | False                                                                       |
-| En el catálogo global      | False                                                                       |
+| System-Only            | Falso                                                                       |
+| Es de un solo valor       | Verdadero                                                                        |
+| Está indexado             | Falso                                                                       |
+| En el catálogo global      | Falso                                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
@@ -141,10 +141,10 @@ Propiedades de seguridad utilizadas por un sistema externo.
 |------------------------|-----------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
-| System-Only            | False                                                                       |
-| Es de un solo valor       | True                                                                        |
-| Está indexado             | False                                                                       |
-| En el catálogo global      | False                                                                       |
+| System-Only            | Falso                                                                       |
+| Es de un solo valor       | Verdadero                                                                        |
+| Está indexado             | Falso                                                                       |
+| En el catálogo global      | Falso                                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
@@ -162,10 +162,10 @@ Propiedades de seguridad utilizadas por un sistema externo.
 |------------------------|-----------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
-| System-Only            | False                                                                       |
-| Es de un solo valor       | True                                                                        |
-| Está indexado             | False                                                                       |
-| En el catálogo global      | False                                                                       |
+| System-Only            | Falso                                                                       |
+| Es de un solo valor       | Verdadero                                                                        |
+| Está indexado             | Falso                                                                       |
+| En el catálogo global      | Falso                                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |

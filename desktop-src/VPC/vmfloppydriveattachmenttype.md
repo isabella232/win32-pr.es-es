@@ -1,9 +1,9 @@
 ---
-title: Enumeración VMFloppyDriveAttachmentType (VPCCOMInterfaces. h)
-description: Especifica lo que se adjunta a una unidad de disquete.
+title: Enumeración VMFstonepyDriveAttachmentType (VPCCOMInterfaces.h)
+description: Especifica lo que está conectado a un disquete.
 ms.assetid: aba1be92-bd07-4edb-ad62-f8d76dbd19b9
 keywords:
-- Enumeración de VMFloppyDriveAttachmentType Virtual PC
+- VMFstonepyDriveAttachmentType (enumeración de PC virtual)
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a4a291778b2fea8039bf41fc04799a03421342f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7470db0a037c56de7eaa5f3f6566db7baa6e82c8362a5b75a17b537eca191a58
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136418"
 ---
-# <a name="vmfloppydriveattachmenttype-enumeration"></a>Enumeración VMFloppyDriveAttachmentType
+# <a name="vmfloppydriveattachmenttype-enumeration"></a>Enumeración VMFstonepyDriveAttachmentType
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Especifica lo que se adjunta a una unidad de disquete.
+Especifica lo que está conectado a un disquete.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -44,24 +44,24 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="vmFloppyDrive_None"></span><span id="vmfloppydrive_none"></span><span id="VMFLOPPYDRIVE_NONE"></span>**vmFloppyDrive \_ ninguno**
+<span id="vmFloppyDrive_None"></span><span id="vmfloppydrive_none"></span><span id="VMFLOPPYDRIVE_NONE"></span>**vmFstonepyDrive \_ None**
 </dt> <dd>
 
-No hay nada adjunto.
+No hay nada asociado.
 
 </dd> <dt>
 
-<span id="vmFloppyDrive_Image"></span><span id="vmfloppydrive_image"></span><span id="VMFLOPPYDRIVE_IMAGE"></span>**imagen de vmFloppyDrive \_**
+<span id="vmFloppyDrive_Image"></span><span id="vmfloppydrive_image"></span><span id="VMFLOPPYDRIVE_IMAGE"></span>**Imagen de vmFstonepyDrive \_**
 </dt> <dd>
 
 Hay un archivo de imagen de disquete conectado.
 
 </dd> <dt>
 
-<span id="vmFloppyDrive_HostDrive"></span><span id="vmfloppydrive_hostdrive"></span><span id="VMFLOPPYDRIVE_HOSTDRIVE"></span>**vmFloppyDrive \_ HostDrive**
+<span id="vmFloppyDrive_HostDrive"></span><span id="vmfloppydrive_hostdrive"></span><span id="VMFLOPPYDRIVE_HOSTDRIVE"></span>**vmFstonepyDrive \_ HostDrive**
 </dt> <dd>
 
-Hay una unidad de disquete de host conectada.
+Hay un disquete host conectado.
 
 </dd> </dl>
 
@@ -71,11 +71,11 @@ Hay una unidad de disquete de host conectada.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Hay una unidad de disquete de host conectada.
 
 <dl> <dt>
 
-[**IVMFloppyDrive:: Attachment**](ivmfloppydrive-attachment.md)
+[**IVMFstonepyDrive::Attachment**](ivmfloppydrive-attachment.md)
 </dt> </dl>
 
  

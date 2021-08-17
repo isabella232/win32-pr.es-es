@@ -1,27 +1,27 @@
 ---
-description: No es necesario que un proveedor admita las operaciones de instancia parcial. Sin embargo, un proveedor debe ser compatible con toda la semántica de una operación de instancia parcial, procesar una instancia completa o devolver un \_ \_ parámetro no compatible de WBEM E \_ .
+description: No es necesario que un proveedor admita ninguna operación de instancia parcial. Sin embargo, un proveedor debe admitir toda la semántica de una operación de instancia parcial, procesar una instancia completa o devolver WBEM \_ E \_ UNSUPPORTED \_ PARAMETER.
 ms.assetid: bc498655-ad6d-44f5-912d-9b7ee95825ec
 ms.tgt_platform: multiple
-title: Compatibilidad con operaciones de Partial-Instance
+title: Compatibilidad con Partial-Instance operaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05bf656688ffbcc6981c6a3e55dc480570ad0f98
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a2043c09ca129acab6976cabda2b854be464d26036cb5b9df1bc5b82989ccc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117922855"
 ---
-# <a name="supporting-partial-instance-operations"></a>Compatibilidad con operaciones de Partial-Instance
+# <a name="supporting-partial-instance-operations"></a>Compatibilidad con Partial-Instance operaciones
 
-No es necesario que un proveedor admita las operaciones de instancia parcial. Sin embargo, un proveedor debe ser compatible con toda la semántica de una operación de instancia parcial, procesar una instancia completa o devolver **un \_ \_ \_ parámetro no compatible de WBEM E**.
+No es necesario que un proveedor admita ninguna operación de instancia parcial. Sin embargo, un proveedor debe admitir toda la semántica de una operación de instancia parcial, procesar una instancia completa o devolver **WBEM \_ E \_ UNSUPPORTED \_ PARAMETER**.
 
 Al crear un proveedor que admita operaciones de instancia parcial, debe observar las siguientes reglas:
 
--   Reutilice el mismo objeto de contexto que WMI envía al proveedor. WMI usa el \_ \_ \_ \_ \_ valor con nombre "obtener solicitud de cliente ext" para evitar interbloqueos y quita este cliente antes de reenviar el objeto de contexto a un proveedor.
--   En el caso de las llamadas reentrantes a WMI que no requieran una operación de instancia parcial, asegúrese de volver a pasar el mismo objeto de contexto sin ninguna modificación. WMI recibe el objeto de contexto sin el \_ \_ \_ \_ valor con nombre "Get ext Client \_ Request" establecido y elimina todos los valores con nombre asociados a las operaciones de instancia parcial del objeto de contexto antes de pasarlos a otros proveedores. No cambiar el objeto de contexto impide que otros proveedores reciban operaciones de recuperación de instancia parcial destinadas a un objeto diferente no relacionado.
--   Para realizar una operación de instancia parcial reentrante mientras se lleva a cabo una solicitud, establezca el \_ \_ \_ \_ valor y la propiedad "obtener solicitud de cliente ext \_ " que faltan. Opcionalmente, puede modificar las propiedades en el \_ \_ \_ \_ valor con nombre "obtener propiedades ext" antes de volver a enviar el objeto de contexto a WMI con la llamada reentrante.
--   No tener acceso al objeto de contexto después de devolverlo a WMI durante una llamada reentrante; otros proveedores pueden modificar las listas de propiedades u otros valores durante la reentrada. Puede examinar o modificar el objeto de contexto solo mientras dure la llamada a [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) que implemente.
+-   Reutilice el mismo objeto de contexto que WMI envía al proveedor. WMI usa el valor con nombre \_ \_ "GET EXT CLIENT REQUEST" para evitar interbloqueos y quita este cliente antes de reenviar el objeto de contexto \_ \_ a un \_ proveedor.
+-   En el caso de las llamadas reentrante a WMI que no requieren una operación de instancia parcial, asegúrese de devolver el mismo objeto de contexto sin modificaciones. WMI recibe el objeto de contexto sin el conjunto de valores con nombre \_ \_ "GET \_ EXT CLIENT REQUEST" y elimina todos los valores con nombre \_ asociados a las operaciones de instancia parcial del objeto de contexto antes de pasarlo a otros \_ proveedores. No cambiar el objeto de contexto impide que otros proveedores reciban operaciones de recuperación de instancias parciales destinadas a un objeto diferente no relacionado.
+-   Para realizar una operación de instancia parcial reentrante mientras se lleva a cabo una solicitud, establezca el valor y la propiedad con nombre \_ \_ "GET \_ EXT \_ CLIENT \_ REQUEST" ausentes. Opcionalmente, puede modificar las propiedades del valor con nombre "GET EXT PROPERTIES" antes de devolver el objeto de contexto a WMI con la \_ \_ \_ \_ llamada reentrante.
+-   No acceda al objeto de contexto después de devolverlo a WMI durante una llamada reentrante; otros proveedores pueden modificar las listas de propiedades u otros valores durante la reenlazancia. Puede examinar o modificar el objeto de contexto solo mientras dure la llamada [**a IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) que implemente.
 
  
 

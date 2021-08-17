@@ -1,19 +1,19 @@
 ---
-title: Crear una instancia de File-Handler en un archivo DLL
-description: Crear una instancia de File-Handler en un archivo DLL
+title: Creación de una File-Handler en un archivo DLL
+description: Creación de una File-Handler en un archivo DLL
 ms.assetid: 0cf7ef72-c675-4a67-97b3-18cccfb7ddc1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c95a462d9c2f56abb5985904c4acc1fb12d10877
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 0023de28f660473a1747ff05528ec5360674754b5c0bcd34f5ae3a28cc39412f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103790876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144758"
 ---
-# <a name="creating-a-file-handler-instance-in-a-dll"></a>Crear una instancia de File-Handler en un archivo DLL
+# <a name="creating-a-file-handler-instance-in-a-dll"></a>Creación de una File-Handler en un archivo DLL
 
-Cuando una aplicación especifica el controlador de secuencia o el archivo DLL del controlador de archivos, el sistema busca en el registro por su identificador de clase y cargado. Después, el sistema llama a la función [**DllGetClassObject**](/previous-versions//dd797891(v=vs.85)) del archivo DLL para crear una instancia del controlador de archivo o de secuencia. En el ejemplo siguiente (escrito en C++) se muestra cómo un controlador de archivos crea una instancia.
+Cuando una aplicación especifica el controlador de archivos DLL o el controlador de secuencias, el sistema lo busca en el Registro por su identificador de clase y lo carga. A continuación, el sistema [**llama a la función DllGetClassObject**](/previous-versions//dd797891(v=vs.85)) del archivo DLL para crear una instancia del controlador de archivos o secuencias. En el ejemplo siguiente (escrito en C++) se muestra cómo un controlador de archivos crea una instancia de .
 
 
 ```C++
@@ -50,6 +50,6 @@ HRESULT CAVIFileCF::Create(const CLSID FAR&   rclsid,
 
 
 
- 
+ 
 
- 
+ 

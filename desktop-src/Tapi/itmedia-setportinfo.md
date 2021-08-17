@@ -1,21 +1,21 @@
 ---
 description: El método SetPortInfo establece el valor de puerto de 16 bits para el primer puerto y el número de puertos necesarios para una sesión.
 ms.assetid: 4726b39b-cd10-4630-8f38-8671db4f432b
-title: 'ITMedia:: SetPortInfo (método) (Sdpblb. h)'
+title: Método ITMedia::SetPortInfo (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c605c1768316871f6c3c9ec10f991f21c1643794
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0db052c631fee1427b4d31c9149a2ef68f8819d8cacb24b632dc9b2f61d198c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140318"
 ---
-# <a name="itmediasetportinfo-method"></a>ITMedia:: SetPortInfo (método)
+# <a name="itmediasetportinfo-method"></a>ItMedia::SetPortInfo (método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Los controles e interfaces de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **SetPortInfo** establece el valor de puerto de 16 bits para el primer puerto y el número de puertos necesarios para una sesión.
+El **método SetPortInfo** establece el valor de puerto de 16 bits para el primer puerto y el número de puertos necesarios para una sesión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,17 +33,17 @@ HRESULT SetPortInfo(
 
 <dl> <dt>
 
-*StartPort* \[ de\]
+*StartPort* \[ En\]
 </dt> <dd>
 
-Puerto de inicio. Puede ser un valor comprendido en el intervalo de 0-65535.
+Puerto de inicio. Puede ser un valor en el intervalo 0-65535.
 
 </dd> <dt>
 
-*NumPorts* \[ de\]
+*NumPorts* \[ En\]
 </dt> <dd>
 
-Número de puertos. Puede ser un valor comprendido en el intervalo de 0-65535.
+Número de puertos. Puede ser un valor en el intervalo 0-65535.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                   | Descripción                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | El parámetro *StartPort o NumPorts* no es válido.<br/>  |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | El *parámetro StartPort o NumPorts* no es válido.<br/>  |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/> |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>        | Error no especificado.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método aún no se ha implementado.<br/>                  |
 
@@ -65,9 +65,9 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función puede enviar datos a través de la conexión en formato no cifrado. por lo tanto, es posible que alguien que escucha en la red pueda leer los datos. El riesgo de seguridad de enviar los datos en texto no cifrado debe tenerse en cuenta antes de usar este método.
+Esta función puede enviar datos a través de la conexión sin cifrar; por lo tanto, alguien que intercepta en la red puede leer los datos. El riesgo de seguridad de enviar los datos en texto sin formato debe tenerse en cuenta antes de usar este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,9 +75,9 @@ Esta función puede enviar datos a través de la conexión en formato no cifrado
 
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

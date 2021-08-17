@@ -45,7 +45,7 @@ Número de versión del certificado.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |
@@ -54,7 +54,7 @@ Número de versión del certificado.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

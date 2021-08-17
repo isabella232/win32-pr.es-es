@@ -27,7 +27,7 @@ Atributo de vínculo hacia atrás [**para ms-DS-NC-RO-Replica-Locations**](a-msd
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | ms-DS-NC-RO-Replica-Locations-BL        |
 | Ldap-Display-Name | msDS-NC-RO-Replica-Locations-BL         |
@@ -36,7 +36,7 @@ Atributo de vínculo hacia atrás [**para ms-DS-NC-RO-Replica-Locations**](a-msd
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1968                 |
 | System-Id-Guid    | f547511c-5b2a-44cc-8358-992a88258164    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -50,14 +50,14 @@ Atributo de vínculo hacia atrás [**para ms-DS-NC-RO-Replica-Locations**](a-msd
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2115                            |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -71,14 +71,14 @@ Atributo de vínculo hacia atrás [**para ms-DS-NC-RO-Replica-Locations**](a-msd
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2115                            |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -92,14 +92,14 @@ Atributo de vínculo hacia atrás [**para ms-DS-NC-RO-Replica-Locations**](a-msd
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2115                            |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |

@@ -30,7 +30,7 @@ El **atributo UserPlaycountAfternoon** es el número de veces que el elemento se
 -   [Listas](playlist-attributes-ref.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo solo se almacena en la biblioteca.
 

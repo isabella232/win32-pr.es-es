@@ -5,41 +5,41 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: b0db31ca-caf7-4b21-afaa-c02e2c39f2ff
 keywords:
 - objetos
-- coordenadas del objeto
-- ortográfica
+- Coordenadas de objeto
+- Orthográfico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f52c65f05f0d8ee87b8b56d295556039b5686c74
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 67ac321052535e531a8ec465f497500433996a4138e061e6b4baef2aae84cd59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104078712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144167"
 ---
 # <a name="o-opengl"></a>O (OpenGL)
 
-[A](a.md) [B](b.md) [C](c.md) [D](d.md) [E](e.md) [F](f.md) [G](g.md) [H](h.md) [I](i.md) [J K](jk.md) [L](l.md) [M](m.md) [N](n.md) o [p](p.md) [Q](q.md) [R](r.md) [s](s.md) [T](t.md) [U V](u-v.md) [W](w.md) [X Y Z](x-y-z.md)
+[A](a.md) [B](b.md) [C](c.md) [D](d.md) [E](e.md) [F](f.md) [G](g.md) H [I](h.md) [](i.md) [J K](jk.md) [L](l.md) M [N](m.md) [O](n.md) [P](p.md) [Q](q.md) [R](r.md) [S](s.md) [T](t.md) U [V](u-v.md) [W](w.md) X Y [Z](x-y-z.md)
 
 <dl> <dt>
 
-<span id="opengl_object"></span><span id="OPENGL_OBJECT"></span>**objeto**
+<span id="opengl_object"></span><span id="OPENGL_OBJECT"></span>**Objeto**
 </dt> <dd>
 
-Modelo de coordenada de objetos que se representa como una colección de primitivas.
+Modelo de coordenadas de objetos que se representa como una colección de primitivas.
 
 </dd> <dt>
 
-<span id="opengl_object_coordinates"></span><span id="OPENGL_OBJECT_COORDINATES"></span>**coordenadas del objeto**
+<span id="opengl_object_coordinates"></span><span id="OPENGL_OBJECT_COORDINATES"></span>**Coordenadas de objeto**
 </dt> <dd>
 
-Sistema de coordenadas antes de cualquier transformación de OpenGL.
+Sistema de coordenadas antes de cualquier transformación openGL.
 
 </dd> <dt>
 
-<span id="opengl_orthographic"></span><span id="OPENGL_ORTHOGRAPHIC"></span>**ortográfica**
+<span id="opengl_orthographic"></span><span id="OPENGL_ORTHOGRAPHIC"></span>**Orthográfico**
 </dt> <dd>
 
-Proyección no perspectiva, como en algunos dibujos de ingeniería, sin escorzo.
+Proyección no específica, como en algunos dibujos de ingeniería, sin preesporización.
 
 </dd> </dl>
 

@@ -1,7 +1,7 @@
 ---
 description: Define el estilo de transición entre los valores de una animación de malla.
 ms.assetid: 4416ef28-ba6b-47ca-be7d-831daad619e5
-title: Enumeración D3DXTRANSITION_TYPE (D3dx9anim. h)
+title: D3DXTRANSITION_TYPE enumeración (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: 0ca6ef7f9dcee8e865a1cd4089aecd1bc239d5d4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f451b94fe204a82cd15c65e424cc214025aa670f82af5224897100cbc6f8f6e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730942"
 ---
-# <a name="d3dxtransition_type-enumeration"></a>\_Enumeración de tipo D3DXTRANSITION
+# <a name="d3dxtransition_type-enumeration"></a>Enumeración D3DXTRANSITION \_ TYPE
 
 Define el estilo de transición entre los valores de una animación de malla.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -41,7 +41,7 @@ typedef enum D3DXTRANSITION_TYPE {
 
 <dl> <dt>
 
-<span id="D3DXTRANSITION_LINEAR"></span><span id="d3dxtransition_linear"></span>**\_Lineal D3DXTRANSITION**
+<span id="D3DXTRANSITION_LINEAR"></span><span id="d3dxtransition_linear"></span>**D3DXTRANSITION \_ LINEAR**
 </dt> <dd>
 
 Transición lineal entre valores.
@@ -51,50 +51,50 @@ Transición lineal entre valores.
 <span id="D3DXTRANSITION_EASEINEASEOUT"></span><span id="d3dxtransition_easeineaseout"></span>**D3DXTRANSITION \_ EASEINEASEOUT**
 </dt> <dd>
 
-Aceleración de la transición spline de fácil entrada entre valores.
+Transición spline de fácil entrada y salida entre valores.
 
 </dd> <dt>
 
-<span id="D3DXTRANSITION_FORCE_DWORD"></span><span id="d3dxtransition_force_dword"></span>**D3DXTRANSITION \_ forzar \_ DWORD**
+<span id="D3DXTRANSITION_FORCE_DWORD"></span><span id="d3dxtransition_force_dword"></span>**D3DXTRANSITION \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase a un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El cálculo de la rampa de la entrada lenta a la salida se calcula de la manera siguiente:
+El cálculo de la rampa de la facilidad de entrada a la salida se calcula de la siguiente manera:
 
-<dl> Q (t) = 2 (x-y) t ³ + 3 (y-x) t ² + x  
+<dl> Q(t) = 2(x - y)t así + 3(y - x)t además de x  
 </dl>
 
-donde la rampa es una función Q (t) con las siguientes propiedades:
+donde la rampa es una función Q(t) con las siguientes propiedades:
 
--   Q (t) es una spline cúbica.
--   Q (t) se interpola entre x e y como t oscila entre 0 y 1.
--   Q (t) es horizontal cuando t = 0 y t = 1.
+-   Q(t) es una spline cúbica.
+-   Q(t) interpola entre x e y como intervalos t de 0 a 1.
+-   Q(t) es horizontal cuando t = 0 y t = 1.
 
 Matemáticamente, esto se traduce en:
 
-<dl> Q (t) = at ³ + BT ² + CT + D (y, por lo tanto, Q ' (t) = 3At ² + 2Bt + C)  
-2A) Q (0) = x  
-2B) Q (1) = y  
-3A) Q ' (0) = 0  
-3B) Q ' (1) = 0  
+<dl> Q(t) = At'+ Bt' + Ct + D (y, por lo tanto, Q'(t) = 3Atincompatibilidad + 2Bt + C)  
+2a) Q(0) = x  
+2b) Q(1) = y  
+3a) Q'(0) = 0  
+3b) Q'(1) = 0  
 </dl>
 
-Resolver para A, B, C, D:
+Solución de A, B, C, D:
 
-<dl> D = x (desde 2A)  
-C = 0 (de 3A)  
-3A + 2B = 0 (de 3B)  
-A + B = y-x (de 2B y D = x)  
+<dl> D = x (de 2a)  
+C = 0 (de 3a)  
+3A + 2B = 0 (de 3b)  
+A + B = y - x (de 2b y D = x)  
 </dl>
 
 Por lo tanto:
 
-<dl> A = 2 (x-y), B = 3 (y-x), C = 0, D = x  
+<dl> A = 2(x - y), B = 3(y - x), C = 0, D = x  
 </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -103,7 +103,7 @@ Por lo tanto:
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9anim.h</dt> </dl> |
 
 
 
@@ -111,7 +111,7 @@ Por lo tanto:
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](dx9-graphics-reference-d3dx-enums.md)
+[Enumeraciones D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> </dl>
 
  

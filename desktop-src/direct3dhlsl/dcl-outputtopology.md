@@ -1,6 +1,6 @@
 ---
-title: dcl_outputTopology (SM4-ASM)
-description: DCL \_ outputTopology (SM4-ASM)
+title: dcl_outputTopology (sm4 - asm)
+description: dcl \_ outputTopology (sm4 - asm)
 ms.assetid: a03a6feb-ec34-4655-a68c-a91e31e7140b
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,20 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e3b305d195ca09a1ef95c99624b47a50058021ca
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: b9648b1b662cb98bc762a479782e4d3742d4d32056fc9f15f43f58f8f4a89659
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103785009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117726946"
 ---
-# <a name="dcl_outputtopology-sm4---asm"></a>DCL \_ outputTopology (SM4-ASM)
+# <a name="dcl_outputtopology-sm4---asm"></a>dcl \_ outputTopology (sm4 - asm)
 
-Declara los datos de salida del sombreador de tipo primitivo.
+Declara los datos de salida del sombreador de geometría de tipo primitivo.
 
 
 
-| \_ *tipo* de outputTopology de DCL |
+| dcl \_ outputTopology *Type* |
 |----------------------------|
 
 
@@ -44,10 +44,10 @@ Declara los datos de salida del sombreador de tipo primitivo.
 </thead>
 <tbody>
 <tr class="odd">
-<td><span id="Type"></span><span id="type"></span><span id="TYPE"></span><em>Automáticamente</em><br/></td>
-<td>de Una topología primitiva de salida, que es uno de los valores siguientes: <br/>
+<td><span id="Type"></span><span id="type"></span><span id="TYPE"></span><em>Tipo</em><br/></td>
+<td>[in] Una topología primitiva de salida, que es uno de los siguientes valores: <br/>
 <ul>
-<li><em>pointlist</em></li>
+<li><em>Pointlist</em></li>
 <li><em>linestrip</em></li>
 <li><em>trianglestrip</em></li>
 </ul></td>
@@ -71,7 +71,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Esta instrucción se incluye para ayudar en la depuración de un sombreador en el ensamblado. no se puede crear un sombreador en lenguaje de ensamblado con el modelo de sombreador 4.
+Esta instrucción se incluye para ayudar a depurar un sombreador en ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
 
 ## <a name="example"></a>Ejemplo
 
@@ -84,7 +84,7 @@ dcl_outputTopology trianglestrip
 
 
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -92,12 +92,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -107,7 +107,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

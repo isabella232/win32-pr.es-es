@@ -18,7 +18,7 @@ La [**interfaz IX509CertificateRequestCmc2**](/windows/desktop/api/Certenroll/nn
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**Método CheckCertificateSignature**](/windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestcmc2-checkcertificatesignature)
--   [**CheckSignature (método)**](/windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestcmc2-checksignature)
+-   [**Método CheckSignature**](/windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestcmc2-checksignature)
 -   [**InitializeFromInnerRequestTemplate (método)**](/windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestcmc2-initializefrominnerrequesttemplate)
 -   [**InitializeFromTemplate (método)**](/windows/desktop/api/Certenroll/nf-certenroll-ix509certificaterequestcmc2-initializefromtemplate)
 

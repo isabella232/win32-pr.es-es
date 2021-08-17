@@ -1,7 +1,7 @@
 ---
 description: Define un proveedor y los contadores que proporciona.
 ms.assetid: 85299b01-5679-40f8-8aec-5c2ff8d7cfc8
-title: Tipo complejo de proveedor
+title: provider Complex Type
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6eec52139710d0ffafe06f22504a735e59312818
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4470754e710faf9f7abe5a94cfb2e08e6e79c1b0415110b96dbac35807556911
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061073"
 ---
-# <a name="provider-complex-type"></a>Tipo complejo de proveedor
+# <a name="provider-complex-type"></a>provider Complex Type
 
 Define un proveedor y los contadores que proporciona.
 
@@ -159,7 +159,7 @@ Define un proveedor y los contadores que proporciona.
 
 | Elemento        | Tipo                                                                   | Descripción                                                                                 |
 |----------------|------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| **counterSet** | [**Man: counterSet**](performance-counters-counterset-complex-type.md) | Identifica el conjunto de contadores que contiene uno o más contadores relacionados lógicamente.<br/> |
+| **counterSet** | [**man:counterSet**](performance-counters-counterset-complex-type.md) | Identifica el conjunto de contadores que contiene uno o varios contadores relacionados lógicamente.<br/> |
 
 
 
@@ -184,27 +184,27 @@ Define un proveedor y los contadores que proporciona.
 <tr class="odd">
 <td>applicationIdentity</td>
 <td><strong>xs:string</strong></td>
-<td>Nombre del archivo binario que contiene las cadenas de recursos localizadas, ya sea un archivo. exe o. dll (no incluya la ruta de acceso al archivo binario).<br/> La utilidad Lodctr.exe usa la ruta de acceso del parámetro opcional [<em>path</em>] para buscar el archivo binario. Por ejemplo, <strong>LODCTR</strong> [<strong>/m:</strong><em>manifest</em> [<em>rutaDeAcceso</em>]]. Si no incluye el parámetro [<em>path</em>], Lodctr.exe busca en la carpeta que contiene el manifiesto.<br/></td>
+<td>Nombre del archivo binario que contiene las cadenas de recursos localizadas, ya sea un archivo .exe o .dll (no incluya la ruta de acceso al archivo binario).<br/> La utilidad Lodctr.exe utiliza la ruta de acceso del parámetro opcional [<em>path</em>] para buscar el archivo binario. Por ejemplo, <strong>lodctr</strong> [<strong>/m:</strong><em>manifest</em> [<em>path</em>]]. Si no incluye el parámetro [<em>path</em>], Lodctr.exe busca en la carpeta que contiene el manifiesto.<br/></td>
 </tr>
 <tr class="even">
 <td>devolución de llamada</td>
 
-<td>Este atributo indica que desea recibir una notificación cuando un consumidor realiza ciertas acciones. <br/> Si incluye este atributo, la herramienta CTRPP utiliza la firma de la función de <a href="counterinitialize.md"><strong>Contrainicialización</strong></a> alternativa, que se usa para pasar el nombre de la función que implementa la función de devolución de llamada <a href="/windows/desktop/api/Perflib/nc-perflib-perflibrequest"><strong>ControlCallback</strong></a> .<br/> Como alternativa a especificar este atributo, puede usar el argumento <strong>-NotificationCallback</strong><a href="ctrpp.md">CTRPP</a> .<br/> <strong>Windows Vista:</strong> El único valor válido para este atributo es &quot; Custom &quot; . La utilidad <a href="ctrpp.md">CTRPP</a> genera la plantilla para una función de devolución de llamada <a href="/windows/desktop/api/Perflib/nc-perflib-perflibrequest"><strong>ControlCallback</strong></a> . La plantilla se incluye en el archivo. c que CTRPP generó. <br/> <br/></td>
+<td>Este atributo indica que desea recibir una notificación cuando un consumidor realiza determinadas acciones. <br/> Si incluye este atributo, la herramienta CTRPP usa la firma de función <a href="counterinitialize.md"><strong>CounterInitialize</strong></a> alternativa, que se usa para pasar el nombre de la función que implementa la función de devolución de llamada <a href="/windows/desktop/api/Perflib/nc-perflib-perflibrequest"><strong>ControlCallback.</strong></a><br/> Como alternativa a la especificación de este atributo, puede usar el <strong>argumento -NotificationCallback</strong><a href="ctrpp.md">CTRPP.</a><br/> <strong>Windows Vista:</strong> El único valor válido para este atributo es &quot; &quot; personalizado. La <a href="ctrpp.md">utilidad CTRPP</a> genera la plantilla para una función de devolución de llamada <a href="/windows/desktop/api/Perflib/nc-perflib-perflibrequest"><strong>ControlCallback.</strong></a> La plantilla se incluye en el archivo .c generado por CTRPP. <br/> <br/></td>
 </tr>
 <tr class="odd">
 <td>providerGuid</td>
-<td><a href="performance-counters-guidtype-simple-type.md"><strong>Man: GUIDType</strong></a></td>
-<td>GUID de cadena que identifica de forma única el proveedor en el manifiesto. El GUID debe ser único dentro del manifiesto.<br/> Solo tiene que proporcionar un nuevo GUID cuando la versión de la aplicación cambia (si admite instalaciones en paralelo).<br/></td>
+<td><a href="performance-counters-guidtype-simple-type.md"><strong>man:GUIDType</strong></a></td>
+<td>GUID de cadena que identifica de forma única el proveedor en el manifiesto. El GUID debe ser único dentro del manifiesto.<br/> Solo debe proporcionar un nuevo GUID cuando cambie la versión de la aplicación (si admite instalaciones en paralelo).<br/></td>
 </tr>
 <tr class="even">
 <td>providerName</td>
 <td><strong>xs:string</strong></td>
-<td>Nombre que se utiliza para crear el nombre de la clase de Win32_PerfRawData WMI. Si no especifica un nombre, los &quot; contadores &quot; se usan como el nombre de la clase.<br/></td>
+<td>Nombre que se usa para crear la clase WMI Win32_PerfRawData nombre de clase. Si no especifica un nombre, &quot; se usa Counters &quot; como nombre de la clase .<br/></td>
 </tr>
 <tr class="odd">
 <td>providerType</td>
 
-<td>Identifica si el proveedor es un proveedor de modo de usuario, un proveedor de modo kernel o un proveedor de controladores. Los valores posibles son los siguientes.<br/> 
+<td>Identifica si el proveedor es un proveedor en modo de usuario, un proveedor de modo kernel o un proveedor de controladores. Los valores posibles son los siguientes.<br/> 
 <table>
 <thead>
 <tr class="header">
@@ -214,12 +214,12 @@ Define un proveedor y los contadores que proporciona.
 </thead>
 <tbody>
 <tr class="odd">
-<td><span id="userMode"></span><span id="usermode"></span><span id="USERMODE"></span>En modo usuario<br/></td>
-<td>Especifique este modo para un componente de modo de usuario, como una aplicación, un archivo DLL o un controlador de modo de usuario. Las extensiones típicas para los componentes de modo de usuario son. exe o. dll. Este es el valor predeterminado.<br/></td>
+<td><span id="userMode"></span><span id="usermode"></span><span id="USERMODE"></span>userMode<br/></td>
+<td>Especifique este modo para un componente de modo de usuario, como una aplicación, un archivo DLL o un controlador en modo de usuario. Las extensiones típicas para los componentes en modo de usuario se .exe o .dll. Este es el valor predeterminado.<br/></td>
 </tr>
 <tr class="even">
-<td><span id="kernel"></span><span id="KERNEL"></span>Cronología<br/></td>
-<td>Especifique este modo para un componente de modo kernel como un controlador WDM o WDF. La extensión típica para los componentes de modo kernel es. sys.<br/> <strong>Windows Vista y Windows Server 2008:</strong> Este valor no se admite hasta Windows 7 y Windows Server 2008 R2.<br/></td>
+<td><span id="kernel"></span><span id="KERNEL"></span>Núcleo<br/></td>
+<td>Especifique este modo para un componente en modo kernel, como un controlador WDM o WDF. La extensión típica para los componentes en modo kernel es .sys.<br/> <strong>Windows Vista y Windows Server 2008:</strong> Este valor no se admite hasta Windows 7 y Windows Server 2008 R2.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -228,14 +228,14 @@ Define un proveedor y los contadores que proporciona.
 </tr>
 <tr class="even">
 <td>resourceBase</td>
-<td><a href="performance-counters-uint32type-simple-type.md"><strong>Man: UInt32Type</strong></a></td>
-<td><p>Define el valor de índice del recurso inicial que <a href="ctrpp.md">CTRPP</a> usa para generar los identificadores de recursos.</p></td>
+<td><a href="performance-counters-uint32type-simple-type.md"><strong>man:UInt32Type</strong></a></td>
+<td><p>Define el valor de índice de recursos inicial que <a href="ctrpp.md">CTRPP</a> usa para generar los identificadores de recursos.</p></td>
 </tr>
 <tr class="odd">
 <td>símbolo</td>
-<td><a href="performance-counters-csymboltype-simple-type.md"><strong>Man: CSymbolType</strong></a></td>
-<td><p>Nombre simbólico que identifica el proveedor. La herramienta <a href="ctrpp.md">CTRPP</a> crea una variable de identificador que se puede usar al llamar a funciones que requieren un identificador al proveedor (por ejemplo, <a href="/windows/desktop/api/Perflib/nf-perflib-perfsetulongcountervalue"><strong>PerfSetULongCounterValue</strong></a>). El nombre simbólico es el nombre de la variable.</p>
-<p>Si incluye el argumento <strong>-prefix</strong> al llamar a <a href="ctrpp.md">CTRPP</a>, la cadena de prefijo se agrega al principio del nombre simbólico.</p></td>
+<td><a href="performance-counters-csymboltype-simple-type.md"><strong>man:CSymbolType</strong></a></td>
+<td><p>Nombre simbólico que identifica el proveedor. La <a href="ctrpp.md">herramienta CTRPP</a> crea una variable HANDLE que se puede usar al llamar a funciones que requieren un identificador para el proveedor (por ejemplo, <a href="/windows/desktop/api/Perflib/nf-perflib-perfsetulongcountervalue"><strong>PerfSetULongCounterValue).</strong></a> El nombre simbólico es el nombre de la variable.</p>
+<p>Si incluye el <strong>argumento -prefix</strong> al llamar a <a href="ctrpp.md">CTRPP,</a>la cadena de prefijo se agrega al principio del nombre simbólico.</p></td>
 </tr>
 </tbody>
 </table>
@@ -248,8 +248,8 @@ Define un proveedor y los contadores que proporciona.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

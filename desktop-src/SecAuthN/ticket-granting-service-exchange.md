@@ -1,30 +1,30 @@
 ---
-description: Una vez que se ha establecido un vale de concesión de vales (TGT) y una clave de sesión para el cliente, el cliente puede solicitar una clave de sesión independiente y un vale para el servicio.
+description: Una vez que se han establecido un vale de concesión de vales (TGT) y una clave de sesión para el cliente, el cliente puede solicitar una clave de sesión y un vale independientes para el servicio.
 ms.assetid: b4f63642-9282-4e11-b40c-eec406b2dd2b
 title: Intercambio del servicio de concesión de vales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3b227ee551d762abd145ca56c6cced110b6a2dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a691235b3e7f0faed68f38f0663c7792e381666f441399397f7e653bbb550080
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117786573"
 ---
 # <a name="ticket-granting-service-exchange"></a>Intercambio del servicio de concesión de vales
 
-Una vez que se ha establecido un vale de concesión de vales (TGT) y una [*clave de sesión*](../secgloss/s-gly.md) para el cliente, el cliente puede solicitar una clave de sesión independiente y un vale para el servicio.
+Una vez que se han establecido [](../secgloss/s-gly.md) un vale de concesión de vales (TGT) y una clave de sesión para el cliente, el cliente puede solicitar una clave de sesión y un vale independientes para el servicio.
 
 **Para solicitar un vale para otro servicio**
 
-1.  El cliente Kerberos de la estación de trabajo del usuario solicita [*credenciales*](../secgloss/c-gly.md) para el servicio mediante el envío del [*centro de distribución de claves*](../secgloss/k-gly.md) (KDC), un mensaje de tipo KRB \_ TGS \_ req (solicitud de servicio de Kerberos Ticket-Granting). Este mensaje consta de la identidad del servicio para el que el cliente solicita credenciales, un mensaje de autenticador cifrado con la nueva clave de [*sesión*](../secgloss/s-gly.md)de inicio de sesión del usuario y el TGT obtenido del [intercambio del servicio de autenticación](authentication-service-exchange.md).
-2.  Cuando el KDC recibe un req de KRB \_ TGS \_ , el KDC descifra el TGT con su clave secreta y extrae la clave de sesión de inicio de sesión del usuario.
-3.  El KDC usa la [*clave de sesión*](../secgloss/s-gly.md) de inicio de sesión para descifrar el mensaje del autenticador del usuario y lo evalúa. Si el autenticador pasa la prueba, el KDC extrae los datos de autorización del usuario del TGT e invent una clave de sesión para que el usuario lo comparta con el servidor solicitado.
+1.  El cliente Kerberos de la estación [](../secgloss/c-gly.md) de trabajo del usuario solicita credenciales para el servicio mediante el envío, a [*Centro de distribución de claves*](../secgloss/k-gly.md) (KDC), de un mensaje de tipo KRB \_ TGS REQ (Solicitud de servicio Ticket-Granting \_ Kerberos). Este mensaje consta de la identidad del servicio para el que el cliente solicita credenciales, [](../secgloss/s-gly.md)un mensaje autenticador cifrado con la nueva clave de sesión de inicio de sesión del usuario y el TGT obtenido del servicio de autenticación [Exchange](authentication-service-exchange.md).
+2.  Cuando el KDC recibe un KRB \_ TGS REQ, el KDC descifra el TGT con su clave secreta y extrae la clave de sesión de inicio de sesión \_ del usuario.
+3.  El KDC usa la clave de [*sesión de inicio de sesión*](../secgloss/s-gly.md) para descifrar el mensaje autenticador del usuario y lo evalúa. Si el autenticador supera la prueba, el KDC extrae los datos de autorización del usuario del TGT e inventará una clave de sesión para que el usuario la comparta con el servidor solicitado.
 4.  El KDC cifra una copia de la clave de sesión de servicio con la clave de sesión de inicio de sesión del usuario.
-5.  El KDC inserta otra copia de la clave de sesión de servicio en un vale, junto con los datos de autorización del usuario, y cifra el vale con la [*clave maestra*](../secgloss/m-gly.md)del servidor.
-6.  El KDC envía estas credenciales de vuelta al cliente respondiendo con un mensaje de tipo KRB \_ TGS \_ REP (respuesta del servicio de Kerberos Ticket-Granting).
+5.  El KDC inserta otra copia de la clave de sesión de servicio en un vale, junto con los datos de autorización del usuario, y cifra el vale con la clave maestra [*del servidor*](../secgloss/m-gly.md).
+6.  El KDC devuelve estas credenciales al cliente respondiendo con un mensaje de tipo KRB \_ TGS \_ REP (Kerberos Ticket-Granting Service Reply).
 7.  Cuando el cliente recibe la respuesta, descifra la clave de sesión de servicio con la clave de sesión de inicio de sesión del usuario y almacena la clave de sesión de servicio en su caché de vales.
-8.  El cliente extrae el vale en el servidor y lo almacena en su caché de vales.
+8.  El cliente extrae el vale al servidor y lo almacena en su caché de vales.
 
  
 
