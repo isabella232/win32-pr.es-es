@@ -1,5 +1,5 @@
 ---
-description: La acción AllocateRegistrySpace garantiza que la cantidad de espacio libre del Registro especificado por la propiedad AVAILABLEFREEREG existe en el Registro.
+description: La acción AllocateRegistrySpace garantiza que la cantidad de espacio libre del Registro especificado por la propiedad AVAILABLEFREEREG existe en el registro.
 ms.assetid: bb6ac685-5ad8-48e6-9c03-9ca42268d727
 title: Acción AllocateRegistrySpace
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118639583"
 ---
 # <a name="allocateregistryspace-action"></a>Acción AllocateRegistrySpace
 
-La acción AllocateRegistrySpace garantiza que la cantidad de espacio libre del Registro especificado por la propiedad [**AVAILABLEFREEREG**](availablefreereg.md) existe en el registro.
+La acción AllocateRegistrySpace garantiza que la cantidad de espacio libre del Registro especificado por la propiedad [**AVAILABLEFREEREG**](availablefreereg.md) existe en el Registro.
 
 ## <a name="sequence-restrictions"></a>Restricciones de secuencia
 

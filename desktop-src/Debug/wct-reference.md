@@ -13,13 +13,13 @@ ms.locfileid: "118405432"
 ---
 # <a name="wct-reference"></a>Referencia de WCT
 
-Los siguientes elementos forman parte de la API de recorrido de cadena de espera:
+Los elementos siguientes forman parte de la API de recorrido de cadena de espera:
 
 -   [**Función CloseThreadWaitChainSession**](/windows/desktop/api/Wct/nf-wct-closethreadwaitchainsession)
 -   [**Función GetThreadWaitChain**](/windows/desktop/api/Wct/nf-wct-getthreadwaitchain)
 -   [**Función OpenThreadWaitChainSession**](/windows/desktop/api/Wct/nf-wct-openthreadwaitchainsession)
 -   [**Función RegisterWaitChainCOMCallback**](/windows/desktop/api/Wct/nf-wct-registerwaitchaincomcallback)
--   [**WAITCHAIN \_ Estructura DE \_ INFORMACIÓN DE NODE**](/windows/desktop/api/Wct/ns-wct-waitchain_node_info)
+-   [**WAITCHAIN \_ Estructura \_ DE INFORMACIÓN DE NODE**](/windows/desktop/api/Wct/ns-wct-waitchain_node_info)
 -   [*Función de devolución de llamada WaitChainCallback*](/windows/win32/api/wct/nc-wct-pwaitchaincallback)
 
  

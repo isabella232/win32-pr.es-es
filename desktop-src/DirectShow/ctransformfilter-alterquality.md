@@ -1,7 +1,7 @@
 ---
-description: El método AlterQuality notifica al filtro que se ha solicitado un cambio de calidad.
+description: El método AlterQuality notifica al filtro que se solicita un cambio de calidad.
 ms.assetid: 46743d6b-65cf-4d63-8913-114277d76da4
-title: Método CTransformFilter. AlterQuality (Transfrm. h)
+title: Método CTransformFilter.AlterQuality (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 592fc67dd5cee5e4f76b8171b6e842532d71371b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 06b9b136217c23f64bcd779f5c96189ca993646ffb29ce5316cf5913de8c9abd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119317155"
 ---
-# <a name="ctransformfilteralterquality-method"></a>CTransformFilter. AlterQuality, método
+# <a name="ctransformfilteralterquality-method"></a>Método CTransformFilter.AlterQuality
 
-El `AlterQuality` método notifica al filtro que se ha solicitado un cambio de calidad.
+El `AlterQuality` método notifica al filtro que se solicita un cambio de calidad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,31 +42,31 @@ virtual HRESULT AlterQuality(
 
 <dl> <dt>
 
-*respuestas* 
+*Q* 
 </dt> <dd>
 
-Estructura de [**calidad**](/windows/win32/api/strmif/ns-strmif-quality) que contiene el mensaje de control de calidad.
+[**Estructura de**](/windows/win32/api/strmif/ns-strmif-quality) calidad que contiene el mensaje de control de calidad.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que se muestran en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                             | Descripción                                                                           |
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl> | No controló el mensaje de calidad. El mensaje se debe pasar al nivel superior.<br/> |
-| <dl> <dt>**S \_ correcto**</dt> </dl>    | Controló el mensaje de calidad. No es necesario realizar ninguna acción.<br/>               |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | No controló el mensaje de calidad. El mensaje debe pasarse en sentido ascendente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Controló el mensaje de calidad. No es necesario realizar ninguna acción.<br/>               |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Invalide este método si el filtro puede realizar el control de calidad. Para obtener más información, vea [Administración de control de calidad](quality-control-management.md).
+Invalide este método si el filtro puede realizar el control de calidad. Para obtener más información, vea [Administración de control de calidad.](quality-control-management.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,16 +74,16 @@ Invalide este método si el filtro puede realizar el control de calidad. Para ob
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CTransformFilter**](ctransformfilter.md)
+[**CTransformFilter (clase)**](ctransformfilter.md)
 </dt> </dl>
 
  

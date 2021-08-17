@@ -39,7 +39,7 @@ virtual void GetAumidFromAppListEntry(
 
 <dl> <dt>
 
-*appListEntry* \[ in, opcional\]
+*appListEntry* \[ en, opcional\]
 </dt> <dd>
 
 Esta API no está disponible para todas las aplicaciones. A menos que Microsoft aprovisione especialmente la aplicación, las llamadas a estas API producirán un error en tiempo de ejecución.

@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 77d700e7847d0ad19a019985a4e19343ce8f383d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8b5ac8c1e8dd09b8f3a1078abde39523487afbe901d1e3013eade82170e4af11
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069945"
 ---
 # <a name="process_v2-class"></a>Clase Process \_ V2
 
@@ -54,28 +54,28 @@ Los consumidores de seguimiento de eventos pueden implementar un procesamiento e
 | **EVENT \_ TRACE \_ TYPE \_ START**(el valor del tipo de evento es 1)<br/> | Evento de inicio del proceso. La [**clase \_ MOF Process TypeGroup1**](process-typegroup1.md) define los datos de evento para este evento.                                                                                                        |
 | Valor de tipo de evento, 3                                             | Evento de inicio del proceso de recopilación de datos. Enumera los procesos que se están ejecutando actualmente en el momento en que se inicia la sesión del kernel. La [**clase \_ MOF Process TypeGroup1**](process-typegroup1.md) define los datos de evento para este evento. |
 | Valor de tipo de evento, 4                                             | Evento de proceso de recopilación de datos final. Enumera los procesos que se están ejecutando actualmente en el momento en que finaliza la sesión del kernel. La [**clase \_ MOF Process TypeGroup1**](process-typegroup1.md) define los datos de evento para este evento.     |
-| Valor del tipo de evento, 32                                            | Evento de contadores de rendimiento. La [**clase \_ MOF Process V2 \_ TypeGroup2**](process-v2-typegroup2.md) define los datos de evento para este evento.                                                                                          |
-| Valor del tipo de evento, 33                                            | Resumen de los contadores de rendimiento al principio de la sesión. La [**clase \_ MOF Process V2 \_ TypeGroup2**](process-v2-typegroup2.md) define los datos de evento para este evento.                                                     |
-| Valor del tipo de evento, 39                                            | Evento de proceso en desa desarrollo. La [**clase \_ MOF Process TypeGroup1**](process-typegroup1.md) define los datos de evento para este evento.                                                                                                      |
+| Valor de tipo de evento, 32                                            | Evento de contadores de rendimiento. La [**clase MOF Process \_ V2 \_ TypeGroup2**](process-v2-typegroup2.md) define los datos de evento para este evento.                                                                                          |
+| Valor de tipo de evento, 33                                            | Resumen de los contadores de rendimiento al principio de la sesión. La [**clase MOF Process \_ V2 \_ TypeGroup2**](process-v2-typegroup2.md) define los datos de evento para este evento.                                                     |
+| Valor de tipo de evento, 39                                            | Evento de proceso en desa desarrollo. La [**clase \_ MOF Process TypeGroup1**](process-typegroup1.md) define los datos de evento para este evento.                                                                                                      |
 
 
 
  
 
-Los eventos de inicio de procesos y subprocesos se pueden registrar en el contexto del proceso o subproceso primario. Como resultado, es posible que los **miembros ProcessId** y **ThreadId** de [**EVENT TRACE \_ \_ HEADER**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) no se correspondan con el proceso y el subproceso que se crean. Este es el motivo por el que estos eventos contienen los identificadores de proceso y subproceso en los datos del evento (además de los del encabezado de evento).
+Los eventos de inicio de procesos e subprocesos se pueden registrar en el contexto del proceso o subproceso primario. Como resultado, es posible que los **miembros ProcessId** y **ThreadId** de [**EVENT TRACE \_ \_ HEADER**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) no se correspondan con el proceso y el subproceso que se están creando. Este es el motivo por el que estos eventos contienen los identificadores de proceso y subproceso en los datos del evento (además de los del encabezado de evento).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Aplicaciones de escritorio de Windows Vista \[ \| para aplicaciones para UWP\]<br/>       |
-| Servidor mínimo compatible<br/> | Aplicaciones de escritorio de Windows Server 2008 \[ \| aplicaciones para UWP\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| para aplicaciones para UWP\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

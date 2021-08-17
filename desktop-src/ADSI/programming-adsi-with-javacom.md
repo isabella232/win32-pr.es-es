@@ -1,25 +1,25 @@
 ---
-title: Programar ADSI con Java/COM
-description: Con la máquina virtual de Microsoft para Java (máquina virtual de Microsoft) y el compilador de Microsoft Java, tiene acceso a todas las características de ADSI expuestas a través de los componentes COM ADSI, desde una aplicación Java/COM.
+title: Programación de ADSI con Java/COM
+description: Con la máquina virtual de Microsoft para Java (VM de Microsoft) y el compilador de Microsoft Java, tiene acceso a todas las características adsi expuestas a través de cualquier componente COM adsi, desde una aplicación Java/COM.
 ms.assetid: eda516b6-0f89-464f-a9d2-9bb4ca70fda5
 ms.tgt_platform: multiple
 keywords:
-- Programar ADSI con Java/COM AD
-- ADSI ADSI, usar, programación con Java/COM para
-- ADSI ADSI, código de ejemplo Java
-- ADSI ADSI, código de ejemplo Java, enlazar a un objeto ADSI e invocar métodos en ese objeto
+- Programación de ADSI con Java/COM AD
+- ADSI ADSI , mediante, programación java/COM para
+- ADSI ADSI, código de ejemplo java
+- ADSI ADSI, código de ejemplo java, enlace a un objeto ADSI e invocación de métodos en ese objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6899804208f9899823f266bc941bcf3c2dec372
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3e4778d1d1f71920f880fe38a71874283f7cd8628ae0376b3f9ce227305ab184
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118178979"
 ---
-# <a name="programming-adsi-with-javacom"></a>Programar ADSI con Java/COM
+# <a name="programming-adsi-with-javacom"></a>Programación de ADSI con Java/COM
 
-Con la máquina virtual de Microsoft para Java (máquina virtual de Microsoft) y el compilador de Microsoft Java, tiene acceso a todas las características de ADSI expuestas a través de los componentes COM ADSI, desde una aplicación Java/COM. En el siguiente ejemplo de código de Java se muestran los elementos necesarios para enlazar a un objeto ADSI e invocar métodos en ese objeto. Los métodos de objeto y las funciones de la API ADSI necesarios se exponen a través de Activeds.dll.
+Con la máquina virtual de Microsoft para Java (VM de Microsoft) y el compilador de Microsoft Java, tiene acceso a todas las características adsi expuestas a través de cualquier componente COM adsi, desde una aplicación Java/COM. En el siguiente ejemplo de código java se muestran los elementos necesarios para enlazar a un objeto ADSI e invocar métodos en ese objeto. Las funciones y los métodos de objeto de la API adsi necesarias se exponen a través de Activeds.dll.
 
 
 ```C++
@@ -54,28 +54,28 @@ public Class SimpleADSI
 
 
 
-El argumento de la primera instrucción **Import** hace referencia a las clases contenedoras de Java empaquetadas en Activeds.dll. Use Visual J++ para crear las clases contenedoras e incluirlas en el proyecto siguiendo el procedimiento que se indica a continuación.
+El argumento de la primera instrucción **import** hace referencia a las clases de contenedor de Java empaquetadas en Activeds.dll. Use Visual J++ para crear las clases contenedoras e incluirlas en el proyecto, siguiendo el procedimiento siguiente.
 
 **Para crear clases contenedoras e incluirlas en el proyecto**
 
-1.  En un proyecto de Visual J++, seleccione **Agregar contenedor com...** en el menú **proyecto** .
-2.  Seleccione "biblioteca de tipos Active DS" en los **componentes instalados:** en el cuadro de diálogo contenedores com. Si la biblioteca de tipos no se muestra en el cuadro de lista, haga clic en el botón **examinar...** , desplácese hasta el directorio donde se almacena activeds. tlb y, a continuación, seleccione la biblioteca de tipos.
+1.  En un proyecto de Visual J++, seleccione Add Com Wrapper... (Agregar contenedor **com...)** **Project** menú.
+2.  Seleccione "Active DS Type Library" (Biblioteca de tipos de Active DS) en **Componentes instalados:** en el cuadro de diálogo Contenedores COM. Si la biblioteca de tipos no se muestra en el cuadro de lista, haga clic en el botón **Examinar...,** vaya al directorio donde está almacenado Activeds.tlb y, a continuación, seleccione la biblioteca de tipos.
 
-Visual J++ crea el paquete activeds para las clases contenedoras de Java e incluye el paquete en la ruta de acceso predeterminada del proyecto. Para obtener más información, vea el paquete activeds en el panel de **exploración del proyecto** en la ventana de Visual J++.
+Visual J++ crea el paquete activeds para las clases de contenedor de Java e incluye el paquete en la ruta de acceso predeterminada del proyecto. Para obtener más información, vea el paquete activeds en el **Project explorar** en la ventana de Visual J++.
 
-Para obtener un objeto ADSI que no se pueda crear, use una de las funciones de la API ADSI expuestas, por ejemplo, [**ADsGetObject**](/windows/desktop/api/Adshlp/nf-adshlp-adsgetobject) o [**ADsOpenObject**](/windows/desktop/api/Adshlp/nf-adshlp-adsopenobject), que también se empaquetan en Activeds.dll. Microsoft J/Direct proporciona acceso a estas y otras API nativas. Esto se muestra en las dos últimas líneas del ejemplo de código anterior.
+Para obtener un objeto ADSI que no se puede crear de forma cocreada, use una de las funciones de API adsi expuestas, por ejemplo, [**ADsGetObject**](/windows/desktop/api/Adshlp/nf-adshlp-adsgetobject) o [**ADsOpenObject**](/windows/desktop/api/Adshlp/nf-adshlp-adsopenobject), que también se empaquetan en Activeds.dll. Microsoft J/Direct proporciona acceso a estas y a otras API nativas. Esto se ilustra en las dos últimas líneas del ejemplo de código anterior.
 
-Al compilar, asegúrese de que la extensión de idioma de Microsoft está habilitada. Para ello, seleccione **<project> propiedades...** en el menú **proyecto** de la ventana proyecto de Visual J++. A continuación, haga clic en la pestaña **compilar** en el cuadro de diálogo **<project> propiedades** . Desactive la casilla **deshabilitar extensiones de lenguaje de Microsoft** . Si compila desde la línea de comandos, use el modificador "/x-", por ejemplo:
+Al compilar, asegúrese de que la extensión de lenguaje de Microsoft está habilitada. Para ello, seleccione **<project> Propiedades... en** el **menú Project** en la ventana del proyecto de Visual J++. A continuación, haga clic **en la pestaña** Compilar del cuadro de **<project> diálogo** Propiedades. Desactive la **casilla Deshabilitar extensiones de lenguaje de Microsoft** . Si se compila desde la línea de comandos, use el modificador "/x-", por ejemplo:
 
-**JVC/x-SimpleADSI. Java**
+**/ x- SimpleADSI.java**
 
-Por último, para que la máquina virtual cargue el componente COM, la biblioteca de vínculos dinámicos (DLL) debe estar visible en la ruta de acceso del sistema. Si se devuelve un error "Java. lang. UnsatisfiedLinkError", establezca la ruta de acceso para incluir la ruta de acceso que contiene el archivo DLL necesario. Por ejemplo, si se ha instalado Activeds.dll en c: \\ ADSI \\ lib, emita el siguiente comando desde la línea de comandos:
+Por último, para que la máquina virtual cargue el componente COM, la biblioteca de vínculos dinámicos (DLL) debe estar visible en la ruta de acceso del sistema. Si se devuelve un error "java.lang.UnsatisfiedLinkError", establezca PATH para incluir la ruta de acceso que contiene el archivo DLL necesario. Por ejemplo, si Activeds.dll se ha instalado en c: adsi lib, emita el siguiente comando \\ desde la línea de \\ comandos:
 
-**establecer ruta de acceso =% PATH%; c: \\ ADSI \\ lib**
+**set PATH = %PATH%; c: \\ adsi \\ lib**
 
- 
+ 
 
- 
+ 
 
 
 

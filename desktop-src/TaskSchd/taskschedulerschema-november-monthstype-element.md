@@ -1,9 +1,9 @@
 ---
-title: Elemento de noviembre (monthsType)
+title: Elemento November (monthsType)
 description: Especifica que la tarea se ejecuta en noviembre.
 ms.assetid: 45f8c47b-3884-4f18-8275-f29f82ee32e2
 keywords:
-- Programador de tareas del elemento de noviembre
+- Elemento November Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 295b63a4ff4dad1ec07504bb43c4a471d4389159
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 170fa1cef23fb992b651ab4675fb3f782df10a347fcff52c865b7774039cac03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117758411"
 ---
-# <a name="november-monthstype-element"></a>Elemento de noviembre (monthsType)
+# <a name="november-monthstype-element"></a>Elemento November (monthsType)
 
 Especifica que la tarea se ejecuta en noviembre.
 
@@ -30,7 +30,7 @@ Especifica que la tarea se ejecuta en noviembre.
 </xs:element>
 ```
 
-El elemento de **noviembre** se define mediante el tipo complejo de [**monthsType**](taskschedulerschema-monthstype-complextype.md) .
+El **elemento November** se define mediante el tipo complejo [**monthsType.**](taskschedulerschema-monthstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -38,14 +38,14 @@ El elemento de **noviembre** se define mediante el tipo complejo de [**monthsTyp
 
 | Elemento                                                                                                          | Derivado de                                                     | Descripción                                                                                                |
 |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [**Meses (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Especifica los meses del año en los que se ejecuta la tarea para una programación mensual de día de la semana.<br/> |
-| [**Meses (monthlyScheduleType)**](taskschedulerschema-months-monthlyscheduletype-element.md)                   | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Especifica los meses del año en los que se ejecuta la tarea para una programación mensual.<br/>             |
+| [**Months (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Especifica los meses del año durante los que se ejecuta la tarea para una programación mensual del día de la semana.<br/> |
+| [**Months (monthlyScheduleType)**](taskschedulerschema-months-monthlyscheduletype-element.md)                   | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Especifica los meses del año durante los que se ejecuta la tarea para una programación mensual.<br/>             |
 
 
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente código XML define un calendario de meses que ejecuta la tarea en noviembre.
+El siguiente XML define un calendario de meses que ejecuta la tarea en noviembre.
 
 
 ```XML
@@ -62,8 +62,8 @@ El siguiente código XML define un calendario de meses que ejecuta la tarea en n
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -71,7 +71,7 @@ El siguiente código XML define un calendario de meses que ejecuta la tarea en n
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

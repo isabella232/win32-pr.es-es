@@ -1,9 +1,9 @@
 - name: Servicios
   href: services.md
   items:
-    - name: Novedades de servicios para Windows 8
+    - name: Novedades de los servicios para Windows 8
       href: what-s-new-in-services-for-windows-8.md
-    - name: Novedades de servicios para Windows 7
+    - name: Novedades de los servicios para Windows 7
       href: what-s-new-in-services.md
     - name: Cambios de servicio para Windows Vista
       href: service-changes-for-windows-vista.md
@@ -17,7 +17,7 @@
               href: database-of-installed-services.md
             - name: Inicio automático de servicios
               href: automatically-starting-services.md
-            - name: Inicio de servicios a petición
+            - name: Iniciar servicios a petición
               href: starting-services-on-demand.md
             - name: Lista de registros de servicio
               href: service-record-list.md
@@ -28,17 +28,17 @@
           items:
             - name: Punto de entrada de servicio
               href: service-entry-point.md
-            - name: Función ServiceMain del servicio
+            - name: Service ServiceMain (Función)
               href: service-servicemain-function.md
             - name: Función de controlador de control de servicio
               href: service-control-handler-function.md
-            - name: Transiciones de estado del servicio
+            - name: Transiciones de estado de servicio
               href: service-status-transitions.md
             - name: Recepción de eventos en un servicio
               href: receiving-events-in-a-service.md
             - name: Servicios multiproceso
               href: multithreaded-services.md
-            - name: Servicios y el registro
+            - name: Servicios y el Registro
               href: services-and-the-registry.md
             - name: Servicios y unidades redirigidas
               href: services-and-redirected-drives.md
@@ -47,13 +47,13 @@
         - name: Programas de configuración de servicio
           href: service-configuration-programs.md
           items:
-            - name: 'Instalación, eliminación y enumeración del servicio'
+            - name: 'Instalación, eliminación y enumeración de servicios'
               href: service-installation-removal-and-enumeration.md
             - name: Configuración de servicio
               href: service-configuration.md
             - name: Configuración de un servicio mediante SC
               href: configuring-a-service-using-sc.md
-        - name: Programas de control de servicios
+        - name: Programas de control de servicio
           href: service-control-programs.md
           items:
             - name: Inicio del servicio
@@ -65,15 +65,15 @@
         - name: Cuentas de usuario de servicio
           href: service-user-accounts.md
           items:
-            - name: Cuenta LocalService
+            - name: Cuenta de LocalService
               href: localservice-account.md
-            - name: Cuenta NetworkService
+            - name: Cuenta de NetworkService
               href: networkservice-account.md
-            - name: Cuenta LocalSystem
+            - name: Cuenta de LocalSystem
               href: localsystem-account.md
         - name: Servicios interactivos
           href: interactive-services.md
-        - name: Derechos de acceso y seguridad del servicio
+        - name: Seguridad del servicio y derechos de acceso
           href: service-security-and-access-rights.md
         - name: Depuración de un servicio
           href: debugging-a-service.md
@@ -93,7 +93,7 @@
               href: writing-a-servicemain-function.md
             - name: Escribir una función de controlador de control
               href: writing-a-control-handler-function.md
-        - name: Tareas del programa de configuración del servicio
+        - name: Tareas del programa de configuración de servicio
           href: service-configuration-program-tasks.md
           items:
             - name: Instalación de un servicio
@@ -102,18 +102,18 @@
               href: deleting-a-service.md
             - name: Cambiar la configuración de un servicio
               href: changing-a-service-configuration.md
-            - name: Consultar la configuración de un servicio
+            - name: Consulta de la configuración de un servicio
               href: querying-a-service-s-configuration.md
         - name: Tareas del programa de control de servicios
           href: service-control-program-tasks.md
           items:
             - name: Iniciar un servicio
               href: starting-a-service.md
-            - name: Detener un servicio
+            - name: Detención de un servicio
               href: stopping-a-service.md
-            - name: Modificar la DACL para un servicio
+            - name: Modificar la DACL de un servicio
               href: modifying-the-dacl-for-a-service.md
-        - name: El ejemplo de servicio completo
+        - name: Ejemplo de servicio completo
           href: the-complete-service-sample.md
           items:
             - name: Sample.mc
@@ -122,7 +122,7 @@
               href: svc-cpp.md
             - name: SvcConfig.cpp
               href: svcconfig-cpp.md
-            - name: SvcControl. cpp
+            - name: SvcControl.cpp
               href: svccontrol-cpp.md
     - name: Referencia de servicio
       href: service-reference.md

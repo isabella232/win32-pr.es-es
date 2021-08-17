@@ -4,16 +4,16 @@ description: IAgentCharacter GetTTSSpeed
 ms.assetid: 25526ef7-581f-489c-a299-bd3b5ac9ea61
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 551074e1647cffc88e0b5f9f530cea931cd21ff9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 33e7fbe4cbba7eaed22f49865e1a0f0994c512867fb6f233ef2bbfa01dcaafcf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104419203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119609875"
 ---
 # <a name="iagentcharactergetttsspeed"></a>IAgentCharacter::GetTTSSpeed
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT GetTTSSpeed(
@@ -21,9 +21,9 @@ HRESULT GetTTSSpeed(
 );
 ```
 
-Recupera la configuración de la velocidad de salida TTS del carácter.
+Recupera la configuración de velocidad de salida de TTS del carácter.
 
--   Devuelve S \_ OK para indicar que la operación se realizó correctamente.
+-   Devuelve S \_ OK para indicar que la operación se ha realizado correctamente.
 
 <dl> <dt>
 
@@ -34,13 +34,13 @@ Dirección de una variable que recibe la velocidad de salida del carácter en pa
 
 </dd> </dl>
 
-Aunque la aplicación no puede escribir este valor, puede incluir etiquetas de velocidad en el texto de salida que acelerarán temporalmente la salida de un utterance determinado.
+Aunque la aplicación no puede escribir este valor, puede incluir etiquetas de velocidad en el texto de salida que acelerarán temporalmente la salida de una expresión determinada.
 
-Esta propiedad devuelve el valor actual de la velocidad de salida de habla para el carácter. En el caso de los caracteres que usan la salida de TTS, la propiedad devuelve la salida de TTS real para el carácter. Si TTS no está habilitado o el carácter no admite la salida de TTS, el valor refleja la configuración de usuario para la velocidad de salida.
+Esta propiedad devuelve la configuración de velocidad de salida de habla actual para el carácter. Para los caracteres que usan la salida de TTS, la propiedad devuelve la salida de TTS real para el carácter. Si TTS no está habilitado o el carácter no admite la salida de TTS, la configuración refleja la configuración del usuario para la velocidad de salida.
 
- 
+ 
 
- 
+ 
 
 
 

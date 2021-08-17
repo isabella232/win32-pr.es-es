@@ -49,7 +49,7 @@ proxyClass
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**Archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo del generador de código.<br/> <br/> |
 
 
 

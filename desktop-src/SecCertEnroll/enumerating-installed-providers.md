@@ -1,17 +1,17 @@
 ---
 description: En el ejemplo siguiente se muestra cómo usar la API de inscripción de certificados para enumerar los proveedores instalados en un equipo.
 ms.assetid: d7fa03d5-775c-41f3-9fef-8929bd25ed92
-title: Enumerar los proveedores instalados
+title: Enumeración de proveedores instalados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cddefe6cb85bc57c42313693ac86f4e2ea763d45
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dcc29e017e78ecda9c8f3bf12ac0b9925c1817dee3de836b5cf6091bbe6ec3c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117779895"
 ---
-# <a name="enumerating-installed-providers"></a>Enumerar los proveedores instalados
+# <a name="enumerating-installed-providers"></a>Enumeración de proveedores instalados
 
 En el ejemplo siguiente se muestra cómo usar la API de inscripción de certificados para enumerar los proveedores instalados en un equipo.
 
@@ -118,7 +118,7 @@ HRESULT enumProviders(void)
 
 <dl> <dt>
 
-[Descripción de los proveedores de servicios criptográficos](understanding-cryptographic-providers.md)
+[Descripción de los proveedores criptográficos](understanding-cryptographic-providers.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_COLUMNLIST. columnidCp'
-title: Propiedad JET_COLUMNLIST. columnidCp
+description: 'Más información sobre: JET_COLUMNLIST.columnidCp'
+title: JET_COLUMNLIST.columnidCp, propiedad
 TOCTitle: 'columnidCp property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_COLUMNLIST.columnidCp
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columnlist.columnidcp(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e6273df56b588419f2e5ce091a66aeb6912070e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e523850d41543c55c6662d53c5fe74aa4b18f4dae42a313ab8c149355411e378
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968385"
 ---
-# <a name="jet_columnlistcolumnidcp-property"></a>Propiedad JET_COLUMNLIST. columnidCp
+# <a name="jet_columnlistcolumnidcp-property"></a>JET_COLUMNLIST.columnidCp, propiedad
 
 Obtiene el columnid de la columna de la tabla temporal que almacena la página de códigos de la columna.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public JET_COLUMNID columnidCp { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_COLUMNLIST (clase)](./jet-columnlist-class.md)
+[JET_COLUMNLIST clase](./jet-columnlist-class.md)
 
-[Miembros de JET_COLUMNLIST](./jet-columnlist-members.md)
+[JET_COLUMNLIST miembros](./jet-columnlist-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,6 +1,6 @@
 ---
-title: M4x4-PS
-description: Multiplica un vector de cuatro componentes por una matriz de 4x4. | M4x4-PS
+title: m4x4 - ps
+description: Multiplica un vector de 4 componentes por una matriz de 4x4. | m4x4 - ps
 ms.assetid: 2a9915a3-f396-4108-97f7-d70c5262ff59
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,39 +9,39 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 93f2da73c45151f5287f3acf773efb4bd57d21e1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f7dfba3713bcd376c369a17d4856b64965e2e83c22ff03b282d4c9880d6c8700
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117906865"
 ---
-# <a name="m4x4---ps"></a>M4x4-PS
+# <a name="m4x4---ps"></a>m4x4 - ps
 
-Multiplica un vector de cuatro componentes por una matriz de 4x4.
+Multiplica un vector de 4 componentes por una matriz de 4x4.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| M4x4 DST, src0, SRC1 |
+| m4x4 dst, src0, src1 |
 |----------------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino. El resultado es un vector de cuatro componentes.
+-   dst es el registro de destino. El resultado es un vector de 4 componentes.
 -   src0 es un registro de origen que representa un vector de 4 componentes.
--   SRC1 es un registro de origen que representa una matriz de 4x4, que corresponde al primer de 4 registros consecutivos.
+-   src1 es un registro de origen que representa una matriz 4x4, que corresponde al primero de cuatro registros consecutivos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | m4x4                  |      |      |      |      | x    | x    | x     | x    | x     |
 
@@ -49,11 +49,11 @@ Multiplica un vector de cuatro componentes por una matriz de 4x4.
 
  
 
-Se necesita la máscara xyzw (valor predeterminado) para el registro de destino. Los modificadores Negate y swizzle se permiten para src0, pero no para SRC1.
+La máscara xyzw (valor predeterminado) es necesaria para el registro de destino. Se permiten modificadores negate y swzzle para src0, pero no para src1.
 
-Los modificadores swizzle y Negate no son válidos para el registro src0. Los registros de DST y src0 no pueden ser los mismos.
+Los modificadores swzzle y negate no son válidos para el registro src0. Los registros dst y src0 no pueden ser los mismos.
 
-En el fragmento de código siguiente se muestran las operaciones realizadas.
+El siguiente fragmento de código muestra las operaciones realizadas.
 
 
 ```
@@ -65,9 +65,9 @@ dest.w = (src0.x*src4.x) + (src0.y*src4.y) + (src0.z*src4.z) + (src0.w*src4.w);
 
 
 
-El vector de entrada se encuentra en el registro src0. La matriz 4x4 de entrada está en el registro SRC1 y los tres registros superiores siguientes, tal como se muestra en la siguiente expansión.
+El vector de entrada está en el registro src0. La matriz 4x4 de entrada se encuentra en el registro src1 y los tres registros superiores siguientes, como se muestra en la expansión siguiente.
 
-Esta operación se utiliza normalmente para transformar una posición por una matriz de proyección. Esta instrucción se implementa como un conjunto de productos de puntos, como se muestra aquí.
+Esta operación se usa normalmente para transformar una posición mediante una matriz de proyección. Esta instrucción se implementa como un conjunto de productos de punto, como se muestra aquí.
 
 
 ```

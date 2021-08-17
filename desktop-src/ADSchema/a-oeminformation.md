@@ -1,11 +1,11 @@
 ---
-title: OEM-Information atributo)
+title: OEM-Information atributo
 description: Para contener información de OEM. Ya no se usa. Aquí para la compatibilidad con versiones anteriores.
 ms.assetid: d456f9e0-da88-4f3a-897a-1a9f42f4b7b9
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de OEM-Information
-- oEMInformation esquema de AD de atributos
+- OEM-Information esquema de AD del atributo
+- Esquema de AD del atributo oEMInformation
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 700baa4453d0ce88c2c6a316cef88244c6a96687
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 28a9440f2ef5dbb6ed4c1899b8439a442767ab1692acda2c38d280d56eb62be0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442345"
 ---
-# <a name="oem-information-attribute"></a>OEM-Information atributo)
+# <a name="oem-information-attribute"></a>OEM-Information atributo
 
 Para contener información de OEM. Ya no se usa. Aquí para la compatibilidad con versiones anteriores.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | OEM-Information                             |
-| Nombre para mostrar de LDAP | oEMInformation                              |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | oEMInformation                              |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.151                      |
-| System-ID-GUID    | bf9679ea-0de6-11d0-a285-00aa003049e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf9679ea-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,20 +53,20 @@ Para contener información de OEM. Ya no se usa. Aquí para la compatibilidad co
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Para contener información de OEM. Ya no se usa. Aquí para la compatibilidad co
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Para contener información de OEM. Ya no se usa. Aquí para la compatibilidad co
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Para contener información de OEM. Ya no se usa. Aquí para la compatibilidad co
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Para contener información de OEM. Ya no se usa. Aquí para la compatibilidad co
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Para contener información de OEM. Ya no se usa. Aquí para la compatibilidad co
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Clases usadas en        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

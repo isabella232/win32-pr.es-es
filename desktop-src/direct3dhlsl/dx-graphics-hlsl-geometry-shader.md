@@ -11,12 +11,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e06bbc184a4b5f82d5edaaf7fdbfbd55f1906f12
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 5b95f0bb99bd3a225afb7a63824b301b102030a4f132caa7a2a4ff1743eefb58
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120149"
 ---
 # <a name="geometry-shader-object"></a>Geometry-Shader objeto
 
@@ -61,7 +61,7 @@ Un objeto de sombreador de geometría procesa primitivas enteras. Use la sintaxi
 | *Punto*        | Lista de puntos                                                    |
 | *Línea*         | Lista de líneas o franja de líneas                                       |
 | *Triángulo*     | Lista de triángulos o franja de triángulos                               |
-| *ydj*      | Lista de líneas con adyacencia o franja de líneas con adyacencia         |
+| *ydj*      | Lista de líneas con adyacencia o franja de línea con adyacencia         |
 | *triangleadj*  | Lista de triángulos con adyacencia o franja de triángulo con adyacencia |
 
 
@@ -70,7 +70,7 @@ Un objeto de sombreador de geometría procesa primitivas enteras. Use la sintaxi
 
 *DataType*  -  \[ en \] Un tipo de datos de entrada; puede ser cualquier tipo de datos [HLSL](dx-graphics-hlsl-data-types.md).
 
-*Nombre:* nombre del argumento; se trata de una cadena ASCII.
+*Name:* nombre del argumento; se trata de una cadena ASCII.
 
 *NumElements:* tamaño de matriz de la entrada, que depende de *PrimitiveType,* como se muestra en la tabla siguiente.
 

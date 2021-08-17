@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_REPLACESEL (Winuser. h)
-description: Reemplaza el texto seleccionado en un control de edición o un control Rich Edit con el texto especificado.
+title: EM_REPLACESEL mensaje (Winuser.h)
+description: Reemplaza el texto seleccionado en un control de edición o un control de edición enriquecido por el texto especificado.
 ms.assetid: 525e6f5a-f52f-4bab-bc76-caa484729897
 keywords:
-- EM_REPLACESEL controles de mensajes de Windows
+- EM_REPLACESEL controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d9745b870a310626a6cbbbddbef118a63c64479
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 478550432aa8c03a081e8de214cdd7e8337a46eca2676a0531b177a81ff20a54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831186"
 ---
-# <a name="em_replacesel-message"></a>\_Mensaje REPLACESEL em
+# <a name="em_replacesel-message"></a>Mensaje \_ DE EM REPLACESEL
 
-Reemplaza el texto seleccionado en un control de edición o un control Rich Edit con el texto especificado.
+Reemplaza el texto seleccionado en un control de edición o un control de edición enriquecido por el texto especificado.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,48 +32,48 @@ Reemplaza el texto seleccionado en un control de edición o un control Rich Edit
 *wParam* 
 </dt> <dd>
 
-Especifica si se puede deshacer la operación de reemplazo. Si es **true**, se puede deshacer la operación. Si es **false** , la operación no se puede deshacer.
+Especifica si la operación de reemplazo se puede deshacer. Si es **TRUE,** la operación se puede deshacer. Si es **FALSE,** la operación no se puede deshacer.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a una cadena terminada en null que contiene el texto de reemplazo.
+Puntero a una cadena terminada en NULL que contiene el texto de reemplazo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use el **mensaje \_ REPLACESEL em** para reemplazar solo una parte del texto en un control de edición. Para reemplazar todo el texto, use el mensaje de [**WM \_ SETTEXT**](/windows/desktop/winmsg/wm-settext) .
+Use el **mensaje EM \_ REPLACESEL** para reemplazar solo una parte del texto en un control de edición. Para reemplazar todo el texto, use el [**mensaje \_ SETTEXT de WM.**](/windows/desktop/winmsg/wm-settext)
 
-Si no hay ninguna selección, el texto de sustitución se inserta en el símbolo de intercalación.
+Si no hay ninguna selección, el texto de reemplazo se inserta en el símbolo de inserción.
 
-**Edición enriquecida:** Compatible con Microsoft Rich Edit 1,0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecidas con las distintas versiones del sistema, vea acerca de los [controles Rich Edit](about-rich-edit-controls.md).
+**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [Acerca de los controles rich edit](about-rich-edit-controls.md).
 
-En un control Rich Edit, el texto de reemplazo toma el formato del carácter en el símbolo de intercalación o, si hay una selección, del primer carácter de la selección.
+En un control de edición enriquecido, el texto de reemplazo toma el formato del carácter en el carácter de careta o, si hay una selección, del primer carácter de la selección.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**SETTEXT de WM \_**](/windows/desktop/winmsg/wm-settext)
+[**WM \_ SETTEXT**](/windows/desktop/winmsg/wm-settext)
 </dt> </dl>
 
  

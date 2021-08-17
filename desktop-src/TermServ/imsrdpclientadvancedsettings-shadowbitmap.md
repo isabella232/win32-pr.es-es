@@ -1,26 +1,26 @@
 ---
-title: Propiedad ShadowBitmap de IMsRdpClientAdvancedSettings
-description: Especifica si se deben usar los mapas de bits de sombra.
+title: IMsRdpClientAdvancedSettings ShadowBitmap, propiedad
+description: Especifica si se deben usar mapas de bits de sombra.
 ms.assetid: b329e367-7579-466d-877a-16253f85e5a2
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad ShadowBitmap
-- Propiedad ShadowBitmap Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad ShadowBitmap
-- Propiedad ShadowBitmap Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad ShadowBitmap
-- Propiedad ShadowBitmap Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad ShadowBitmap
-- Propiedad ShadowBitmap Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad ShadowBitmap
-- Propiedad ShadowBitmap Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad ShadowBitmap
-- Propiedad ShadowBitmap Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad ShadowBitmap
-- Propiedad ShadowBitmap Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad ShadowBitmap
-- Propiedad ShadowBitmap Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad ShadowBitmap
+- Propiedad ShadowBitmap Servicios de Escritorio remoto
+- Propiedad ShadowBitmap Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad ShadowBitmap
+- Propiedad ShadowBitmap Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad ShadowBitmap
+- Propiedad ShadowBitmap Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad ShadowBitmap
+- Propiedad ShadowBitmap Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad ShadowBitmap
+- Propiedad ShadowBitmap Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad ShadowBitmap
+- Propiedad ShadowBitmap Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad ShadowBitmap
+- Propiedad ShadowBitmap Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad ShadowBitmap
+- Propiedad ShadowBitmap Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad ShadowBitmap
 topic_type:
 - apiref
 api_name:
@@ -54,24 +54,24 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc6c43862b498fe5828d2746666c5e414de4c71e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d04e41845bc3c7ebb32b5b6300c5ccd1bc9d1444ef86497e613bc833c220cec1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757442"
 ---
-# <a name="imsrdpclientadvancedsettingsshadowbitmap-property"></a>IMsRdpClientAdvancedSettings:: ShadowBitmap (propiedad)
+# <a name="imsrdpclientadvancedsettingsshadowbitmap-property"></a>IMsRdpClientAdvancedSettings::ShadowBitmap, propiedad
 
-\[Esta propiedad no es compatible. A partir de Windows Server 2008 y Windows 7, las llamadas a **ShadowBitmap** siempre devuelven **S \_ false**.\]
+\[Esta propiedad no es compatible. A partir Windows Server 2008 y Windows 7, las llamadas a **ShadowBitmap** siempre **devuelven S \_ FALSE**.\]
 
-Especifica si se deben usar los mapas de bits de sombra.
+Especifica si se deben usar mapas de bits de sombra.
 
-Los mapas de bits de sombra siempre están deshabilitados en el modo de pantalla completa, por lo que esta propiedad no tiene ningún efecto en el modo de pantalla completa.
+Los mapas de bits de sombra siempre están deshabilitados en modo de pantalla completa, por lo que esta propiedad no tiene ningún efecto en el modo de pantalla completa.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -88,11 +88,11 @@ HRESULT get_ShadowBitmap(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establezca este parámetro en 0 para deshabilitar la característica o un valor distinto de cero para habilitar la característica. La deshabilitación de esta característica normalmente mejora el rendimiento, pero puede producir artefactos al pintar pantallas.
+Establezca este parámetro en 0 para deshabilitar la característica o un valor distinto de cero para habilitar la característica. Deshabilitar esta característica normalmente mejora el rendimiento, pero puede dar lugar a artefactos al pintar pantallas.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,7 +1,7 @@
 ---
-description: D3DXSHADER \_ estructura CONSTANTINFO
+description: Estructura CONSTANTINFO de D3DXSHADER \_
 ms.assetid: 0c42cea7-559e-4475-b66a-e932a9cb42de
-title: D3DXSHADER_CONSTANTINFO estructura (D3dx9shader. h)
+title: D3DXSHADER_CONSTANTINFO estructura (D3dx9shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: e90c0085035e78b9bc3ce1c48642157d8badc924
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 34a9238ac7ab401a25874d65390ccfacb4dba68a9ccc4438500a1171e25e5e13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122835"
 ---
-# <a name="d3dxshader_constantinfo-structure"></a>D3DXSHADER \_ estructura CONSTANTINFO
+# <a name="d3dxshader_constantinfo-structure"></a>Estructura CONSTANTINFO de D3DXSHADER \_
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,25 +50,25 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Desplazamiento desde el principio de esta estructura, en bytes, a la cadena que contiene la información de constante.
+Desplazamiento desde el principio de esta estructura, en bytes, a la cadena que contiene la información constante.
 
 </dd> <dt>
 
 **RegisterSet**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Conjunto de registros. Vea [**D3DXREGISTER \_ set**](./d3dxregister-set.md).
+Conjunto de registros. Vea [**D3DXREGISTER \_ SET**](./d3dxregister-set.md).
 
 </dd> <dt>
 
 **RegisterIndex**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -79,7 +79,7 @@ Tipo: **[ **Word**](../winprog/windows-data-types.md)**
 **RegisterCount**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -90,7 +90,7 @@ Número de registros.
 **Reserved**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -98,18 +98,18 @@ Reservado.
 
 </dd> <dt>
 
-**Requerida**
+**TypeInfo**
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Desplazamiento desde el principio de esta estructura, en bytes, a la cadena que contiene la información de [**\_ TYPEINFO de D3DXSHADER**](d3dxshader-typeinfo.md) .
+Desplazamiento desde el principio de esta estructura, en bytes, a la cadena que contiene la información [**\_ TYPEINFO de D3DXSHADER.**](d3dxshader-typeinfo.md)
 
 </dd> <dt>
 
-**DefaultValue**
+**Defaultvalue**
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -126,7 +126,7 @@ Desplazamiento desde el principio de esta estructura, en bytes, a la cadena que 
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9shader. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9shader.h</dt> </dl> |
 
 
 
@@ -134,7 +134,7 @@ Desplazamiento desde el principio de esta estructura, en bytes, a la cadena que 
 
 <dl> <dt>
 
-[Estructuras de D3DX](dx9-graphics-reference-d3dx-structures.md)
+[Estructuras D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> </dl>
 
  

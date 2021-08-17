@@ -1,11 +1,11 @@
 ---
-title: IPSec-ISAKMP-atributo de referencia
-description: El atributo IPSec-ISAKMP-Reference solo es para uso interno.
+title: Atributo Ipsec-ISAKMP-Reference
+description: El atributo Ipsec-ISAKMP-Reference es solo para uso interno.
 ms.assetid: a21513e8-9ae5-4690-a7a3-c1caaf9579cc
 ms.tgt_platform: multiple
 keywords:
-- IPSec-ISAKMP-referencia esquema de AD de atributos
-- ipsecISAKMPReference esquema de AD de atributos
+- Esquema de AD del atributo Ipsec-ISAKMP-Reference
+- Esquema de AD del atributo ipsecISAKMPReference
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0afa1f753fe86f5953d805610c0d60c721c60abe
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3ba959bf501fa2954671c5474347ff75a8cb21fa4a3e578161ade403a43d7467
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322545"
 ---
-# <a name="ipsec-isakmp-reference-attribute"></a>IPSec-ISAKMP-atributo de referencia
+# <a name="ipsec-isakmp-reference-attribute"></a>Atributo Ipsec-ISAKMP-Reference
 
-El atributo **IPSec-ISAKMP-Reference** solo es para uso interno.
+El **atributo Ipsec-ISAKMP-Reference** es solo para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | IPSec-ISAKMP-referencia                  |
-| Nombre para mostrar de LDAP | ipsecISAKMPReference                    |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | Ipsec-ISAKMP-Reference                  |
+| Ldap-Display-Name | ipsecISAKMPReference                    |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.626                  |
-| System-ID-GUID    | b40ff820-427a-11d1-a9c2-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | b40ff820-427a-11d1-a9c2-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -53,15 +53,15 @@ El atributo **IPSec-ISAKMP-Reference** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -74,15 +74,15 @@ El atributo **IPSec-ISAKMP-Reference** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -95,15 +95,15 @@ El atributo **IPSec-ISAKMP-Reference** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -116,15 +116,15 @@ El atributo **IPSec-ISAKMP-Reference** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -137,15 +137,15 @@ El atributo **IPSec-ISAKMP-Reference** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -158,15 +158,15 @@ El atributo **IPSec-ISAKMP-Reference** solo es para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |

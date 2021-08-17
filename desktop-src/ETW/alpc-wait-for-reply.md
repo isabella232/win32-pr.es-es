@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de espera de respuesta de ALPC. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para esperar eventos de respuesta de ALPC. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 9aaa2c93-41cc-4025-80f9-b7740a37c4d8
-title: ALPC_Wait_For_Reply (clase)
+title: ALPC_Wait_For_Reply clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 898077511db25ec7f53bc075ecb845d04e540626
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 05b2f2e867e3e95e8ba0916ad288363db7ad8b6a7753f956df5415529d8ec5e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070315"
 ---
-# <a name="alpc_wait_for_reply-class"></a>ALPC- \_ esperar \_ para la \_ clase de respuesta
+# <a name="alpc_wait_for_reply-class"></a>ALPC \_ Wait For Reply \_ \_ (Clase)
 
-Esta clase es la clase de tipo de evento para los eventos de espera de respuesta de ALPC.
+Esta clase es la clase de tipo de evento para esperar eventos de respuesta de ALPC.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,26 +38,26 @@ class ALPC_Wait_For_Reply : ALPC
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ Wait \_ for \_ reply de ALPC** tiene estos tipos de miembros:
+La **clase WAIT For Reply \_ \_ \_ de ALPC** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ Wait \_ for \_ reply de ALPC** tiene estas propiedades.
+La **clase Wait For Reply \_ \_ \_ de ALPC** tiene estas propiedades.
 
 <dl> <dt>
 
-**Identificador**
+**MessageID**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador de mensaje.
+Identificador del mensaje.
 
 </dd> </dl>
 
@@ -67,8 +67,8 @@ Identificador de mensaje.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

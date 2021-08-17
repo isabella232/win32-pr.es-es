@@ -1,9 +1,9 @@
 ---
-title: Mensaje de RB_GETBANDINFO (commctrl. h)
+title: RB_GETBANDINFO mensaje (Commctrl.h)
 description: Recupera información sobre una banda especificada en un control rebar.
 ms.assetid: c2a76c91-7d44-4278-823d-bd263520e7a8
 keywords:
-- RB_GETBANDINFO controles de mensajes de Windows
+- RB_GETBANDINFO controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b87715cf61b4eb2726eab83d500330721f41719f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3b0ae509699c23ad24b9b97451178f4711ab52176a9c15aeef757bab85c861c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118409446"
 ---
-# <a name="rb_getbandinfo-message"></a>Mensaje de GETBANDINFO de RB \_
+# <a name="rb_getbandinfo-message"></a>Mensaje \_ GETBANDINFO de RB
 
 Recupera información sobre una banda especificada en un control rebar.
 
@@ -41,32 +41,32 @@ Recupera información sobre una banda especificada en un control rebar.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**REBARBANDINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfoa) que recibirá la información de la banda solicitada. Antes de enviar este mensaje, debe establecer el miembro **cbSize** de esta estructura en el tamaño de la estructura **REBARBANDINFO** y establecer el miembro **fMask** en los elementos que desea recuperar. Además, debe establecer el miembro **CCH** de la estructura **REBARBANDINFO** en el tamaño del búfer **lpText** cuando \_ se especifica RBBIM Text.
+Puntero a una [**estructura REBARBANDINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfoa) que recibirá la información de banda solicitada. Antes de enviar este mensaje, debe establecer el miembro **cbSize** de esta estructura en el tamaño de la estructura **REBARBANDINFO** y establecer el miembro **fMask** en los elementos que desea recuperar. Además, debe establecer el miembro **cch** de la estructura **REBARBANDINFO** en el tamaño del búfer **lpText** cuando se especifica RBBIM \_ TEXT.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto o cero de lo contrario.
+Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **RB \_ GETBANDINFOW** (Unicode) y **RB \_ GETBANDINFOA** (ANSI)<br/>             |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_SETBANDINFO RB**](rb-setbandinfo.md)
+[**RB \_ SETBANDINFO**](rb-setbandinfo.md)
 </dt> </dl>
 
  

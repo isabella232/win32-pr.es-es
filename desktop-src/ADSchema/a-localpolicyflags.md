@@ -5,7 +5,7 @@ ms.assetid: 1f2fa723-507a-4e27-a325-8bd6f6cb6bd6
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD del atributo Local-Policy-Flags
-- esquema de AD del atributo localPolicyFlags
+- Esquema de AD del atributo localPolicyFlags
 topic_type:
 - apiref
 api_name:
@@ -32,7 +32,7 @@ Marcas que determinan dónde obtiene un equipo su directiva. Local-Policy-Refere
 | CN                | Local-Policy-Flags                   |
 | Ldap-Display-Name | localPolicyFlags                     |
 | Size              | \-                                   |
-| Privilegio actualizar  | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.56                |
 | System-Id-Guid    | bf96799e-0de6-11d0-a285-00aa003049e2 |
@@ -57,10 +57,10 @@ Marcas que determinan dónde obtiene un equipo su directiva. Local-Policy-Refere
 |------------------------|-------------------------------------------|
 | Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Es de un solo valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
@@ -78,10 +78,10 @@ Marcas que determinan dónde obtiene un equipo su directiva. Local-Policy-Refere
 |------------------------|-------------------------------------------|
 | Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Es de un solo valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
@@ -99,10 +99,10 @@ Marcas que determinan dónde obtiene un equipo su directiva. Local-Policy-Refere
 |------------------------|-------------------------------------------|
 | Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Es de un solo valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
@@ -120,10 +120,10 @@ Marcas que determinan dónde obtiene un equipo su directiva. Local-Policy-Refere
 |------------------------|-------------------------------------------|
 | Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Es de un solo valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
@@ -141,10 +141,10 @@ Marcas que determinan dónde obtiene un equipo su directiva. Local-Policy-Refere
 |------------------------|-------------------------------------------|
 | Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Es de un solo valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
@@ -162,10 +162,10 @@ Marcas que determinan dónde obtiene un equipo su directiva. Local-Policy-Refere
 |------------------------|-------------------------------------------|
 | Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Es de un solo valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
