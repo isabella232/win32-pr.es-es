@@ -1,7 +1,7 @@
 ---
 description: La variable miembro m \_ hPalette es un identificador de la paleta lógica que administra este objeto.
 ms.assetid: 8c73adc1-0c01-4518-a0dd-17c7bff6c92b
-title: Miembro CImagePalette::m_hPalette (Winutil.h)
+title: CImagePalette::m_hPalette miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:

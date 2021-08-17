@@ -1,5 +1,5 @@
 ---
-description: 'Método Reset de la Msvm_S3DisplayController clase : solicita un restablecimiento.'
+description: 'Método reset de la Msvm_S3DisplayController clase : solicita un restablecimiento.'
 ms.assetid: bd28a4be-7dec-4520-a917-3fcbb566b1d8
 title: Método Reset de la Msvm_S3DisplayController clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 492a420384b760500c54e1c3c481638bcd2ee7d4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c914f5e32e379c003cb0b29ad196084c7bb5303cf9143ce45dc00c9b6c6920d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117810911"
 ---
 # <a name="reset-method-of-the-msvm_s3displaycontroller-class"></a>Método Reset de la clase S3DisplayController de Msvm \_
 
@@ -53,7 +53,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -63,7 +63,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

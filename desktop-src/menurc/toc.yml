@@ -126,7 +126,7 @@
       items:
         - name: Acerca de los carets
           href: about-carets.md
-        - name: Uso de los carets
+        - name: Uso de carets
           href: using-carets.md
         - name: Referencia de caret
           href: caret-reference.md
@@ -212,7 +212,7 @@
           href: about-icons.md
         - name: Usar iconos
           href: using-icons.md
-        - name: Referencia de icono
+        - name: Referencia de iconos
           href: icon-reference.md
           items:
             - name: Funciones de icono
@@ -813,7 +813,7 @@
                   href: f.md
                 - name: I
                   href: i.md
-                - name: 'No'
+                - name: 'N'
                   href: n.md
                 - name: O
                   href: o.md
@@ -882,5 +882,5 @@
           href: mrmpackagingoptions.md
         - name: Enumeración MrmPlatformVersion
           href: mrmplatformversion.md
-        - name: MrmResourceIndexerMessageSeverity (enumeración)
+        - name: Enumeración MrmResourceIndexerMessageSeverity
           href: mrmresourceindexermessageseverity.md

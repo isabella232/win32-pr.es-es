@@ -1,7 +1,7 @@
 ---
-description: El método GetIPortableDeviceKeyCollectionValue recupera un valor de IPortableDeviceKeyCollection (tipo VT \_ desconocido) especificado por una clave.
+description: El método GetIPortableDeviceKeyCollectionValue recupera un valor IPortableDeviceKeyCollection (tipo VT \_ UNKNOWN) especificado por una clave.
 ms.assetid: 131c8e05-9224-4db4-bdf6-0fd9c563e049
-title: 'IPortableDeviceValues:: GetIPortableDeviceKeyCollectionValue (método) (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValues::GetIPortableDeviceKeyCollectionValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 7868b71790f6dbb7525fcd1be49b197042a196f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 13a7ccde6a7cf5a73c78cc382341f7d750d9032cbfd8d69bdcfd3e318eeccece
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118194106"
 ---
-# <a name="iportabledevicevaluesgetiportabledevicekeycollectionvalue-method"></a>IPortableDeviceValues:: GetIPortableDeviceKeyCollectionValue (método)
+# <a name="iportabledevicevaluesgetiportabledevicekeycollectionvalue-method"></a>Método IPortableDeviceValues::GetIPortableDeviceKeyCollectionValue
 
-El método **GetIPortableDeviceKeyCollectionValue** recupera un valor de **IPORTABLEDEVICEKEYCOLLECTION** (tipo VT \_ desconocido) especificado por una clave.
+El **método GetIPortableDeviceKeyCollectionValue** recupera un valor **IPortableDeviceKeyCollection** (tipo VT \_ UNKNOWN) especificado por una clave.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,31 +41,31 @@ HRESULT GetIPortableDeviceKeyCollectionValue(
 
 <dl> <dt>
 
-*clave* \[ de de\]
+*key* \[ En\]
 </dt> <dd>
 
-Clave **REFPROPERTYKEY** que especifica el elemento que se va a recuperar.
+Clave **REFPROPERTYKEY** que especifica el elemento que se recuperará.
 
 </dd> <dt>
 
-*ppValue* \[ enuncia\]
+*ppValue* \[ out\]
 </dt> <dd>
 
-Puntero al puntero de la interfaz [**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) recuperada. El autor de la llamada es responsable de llamar a **Release** en la interfaz recuperada.
+Puntero al puntero de interfaz [**IPortableDeviceKeyCollection recuperado.**](iportabledevicekeycollection.md) El autor de la llamada es responsable de **llamar a Release** en la interfaz recuperada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                                                            | Descripción                                                                                      |
 |------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                                   | El método se ha llevado a cabo de forma correcta.<br/>                                                                 |
-| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La propiedad especificada por *key* no es una interfaz **IPortableDeviceKeyCollection** .<br/> |
-| <dl> <dt>**HRESULT \_ de \_ Win32 (error \_ no \_ encontrado)**</dt> </dl> | La propiedad especificada por la *clave* no está en la colección.<br/>                             |
+| <dl> <dt>**S \_ OK**</dt> </dl>                                   | El método se ha llevado a cabo de forma correcta.<br/>                                                                 |
+| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La propiedad especificada por *key no* es una **interfaz IPortableDeviceKeyCollection.**<br/> |
+| <dl> <dt>**HRESULT \_ DE \_ WIN32(ERROR \_ NO \_ ENCONTRADO)**</dt> </dl> | La propiedad especificada por *key no* está en la colección.<br/>                             |
 
 
 
@@ -73,7 +73,7 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo de cómo usar este método, vea [recuperar eventos de servicio admitidos](retrieving-supported-events.md).
+Para obtener un ejemplo de cómo usar este método, vea [Recuperación de eventos de servicio admitidos.](retrieving-supported-events.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,16 +81,16 @@ Para obtener un ejemplo de cómo usar este método, vea [recuperar eventos de se
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::SetIPortableDeviceKeyCollectionValue**](iportabledevicevalues-setiportabledevicekeycollectionvalue.md)
@@ -99,7 +99,7 @@ Para obtener un ejemplo de cómo usar este método, vea [recuperar eventos de se
 [Recuperación de eventos de servicio admitidos](retrieving-supported-events.md)
 </dt> <dt>
 
-[Recuperando métodos de servicio admitidos](retrieving-supported-methods.md)
+[Recuperar métodos de servicio admitidos](retrieving-supported-methods.md)
 </dt> </dl>
 
  

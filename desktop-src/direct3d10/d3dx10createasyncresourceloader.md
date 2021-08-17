@@ -1,7 +1,7 @@
 ---
-description: Cree un cargador de recursos asíncronos.
+description: Cree un cargador de recursos asincrónicos.
 ms.assetid: 1b3eb21c-4ba6-4910-b2f0-2ffa4ae50e47
-title: Función D3DX10CreateAsyncResourceLoader (D3DX10Async. h)
+title: Función D3DX10CreateAsyncResourceLoader (D3DX10Async.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Async.h
-ms.openlocfilehash: 0539817ffff75c28af41289fc5197f6440a915bd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bedb3559ead576c074dafed526fc0ebfefebaf5c3e53a6559223af346e7f9c98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118303460"
 ---
-# <a name="d3dx10createasyncresourceloader-function"></a>D3DX10CreateAsyncResourceLoader función)
+# <a name="d3dx10createasyncresourceloader-function"></a>Función D3DX10CreateAsyncResourceLoader
 
-Cree un cargador de recursos asíncronos.
+Cree un cargador de recursos asincrónicos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,16 +41,16 @@ HRESULT D3DX10CreateAsyncResourceLoader(
 
 <dl> <dt>
 
-*hSrcModule* \[ de\]
+*hSrcModule* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **HMODULE**](../winprog/windows-data-types.md)**
 
-Identificador del módulo de recursos. Use la [función GetModuleHandle](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea) para obtener el identificador.
+Controle el módulo de recursos. Use [la función GetModuleHandle](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea) para obtener el identificador.
 
 </dd> <dt>
 
-*pSrcResource* \[ de\]
+*pSrcResource* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
@@ -59,12 +59,12 @@ Nombre del recurso en hSrcModule. Si la configuración del compilador requiere U
 
 </dd> <dt>
 
-*ppDataLoader* \[ enuncia\]
+*ppDataLoader* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10DataLoader**](id3dx10dataloader.md)\*\***
 
-La dirección de un puntero al procesador de datos asincrónicos (consulte la [**interfaz ID3DX10DataProcessor**](id3dx10dataprocessor.md)).
+Dirección de un puntero al procesador de datos asincrónicos (vea [**ID3DX10DataProcessor Interface**](id3dx10dataprocessor.md)).
 
 </dd> </dl>
 
@@ -72,7 +72,7 @@ La dirección de un puntero al procesador de datos asincrónicos (consulte la [*
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,15 +80,15 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Async. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Async.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Funciones de De uso general](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[De uso general functions](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

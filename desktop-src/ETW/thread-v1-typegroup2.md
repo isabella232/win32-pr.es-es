@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de fin de subproceso. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de finalización de subprocesos. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: c495bf22-04ce-4285-8e7e-152e4ab65823
-title: Thread_V1_TypeGroup2 (clase)
+title: Thread_V1_TypeGroup2 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 3e56590127b2317813d7431a1cc646fbe76e35a9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d00e2d535cdc0fe14d2ae0f48fb7809f627b24fe19cdaff5d63750ee9b5f2c42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814242"
 ---
-# <a name="thread_v1_typegroup2-class"></a>\_ \_ Clase TypeGroup2 de Thread v1
+# <a name="thread_v1_typegroup2-class"></a>Clase \_ \_ TypeGroup2 de Thread V1
 
-Esta clase es la clase de tipo de evento para los eventos de fin de subproceso.
+Esta clase es la clase de tipo de evento para los eventos de finalización de subprocesos.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,49 +40,49 @@ class Thread_V1_TypeGroup2 : Thread_V1
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ \_ TypeGroup2 del subproceso v1** tiene estos tipos de miembros:
+La **clase \_ \_ TypeGroup2 de Thread V1** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ TypeGroup2 del subproceso v1** tiene estas propiedades.
+La **clase Thread \_ V1 \_ TypeGroup2** tiene estas propiedades.
 
 <dl> <dt>
 
 ProcessId
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1)
+Calificadores: WmiDataId(1)
 </dt> </dl>
 
 Identificador de proceso del subproceso implicado en el evento.
 
-**Windows Server 2003:** Contiene el calificador de formato ("x").
+**Windows Server 2003:** Contiene el calificador Format("x").
 
 </dd> <dt>
 
 TThreadId
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2)
+Calificadores: WmiDataId(2)
 </dt> </dl>
 
 Identificador de subproceso del subproceso implicado en el evento.
 
-**Windows Server 2003:** Contiene el calificador de formato ("x").
+**Windows Server 2003:** Contiene el calificador Format("x").
 
 </dd> </dl>
 
@@ -92,8 +92,8 @@ Identificador de subproceso del subproceso implicado en el evento.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
@@ -101,7 +101,7 @@ Identificador de subproceso del subproceso implicado en el evento.
 
 <dl> <dt>
 
-[**Subproceso \_ v1**](thread-v1.md)
+[**Subproceso \_ V1**](thread-v1.md)
 </dt> </dl>
 
  

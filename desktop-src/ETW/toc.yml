@@ -19,7 +19,7 @@
             - name: Configuración e inicio de una sesión de seguimiento de eventos
               href: configuring-and-starting-an-event-tracing-session.md
               items:
-                - name: Ejemplo que crea una sesión y habilita un proveedor clásico o basado en manifiestos
+                - name: Ejemplo en el que se crea una sesión y se habilita un proveedor clásico o basado en manifiestos
                   href: example-that-creates-a-session-and-enables-a-manifest-based-provider.md
             - name: Configuración e inicio de una sesión de SystemTraceProvider
               href: configuring-and-starting-a-systemtraceprovider-session.md
@@ -37,7 +37,7 @@
               href: configuring-and-starting-a-private-logger-session.md
             - name: Actualizar una sesión de seguimiento de eventos
               href: updating-an-event-tracing-session.md
-            - name: Recuperación de datos adicionales de seguimiento de eventos
+            - name: Recuperación de datos de seguimiento de eventos adicionales
               href: retrieving-additional-event-tracing-data.md
         - name: Proporcionar eventos
           href: providing-events.md
@@ -51,7 +51,7 @@
                   href: tracing-events.md
                 - name: Escribir eventos de WPP
                   href: windows-software-trace-preprocessor.md
-                - name: Obtener un GUID de proveedor y clase
+                - name: Obtención de un GUID de clase y proveedor
                   href: obtaining-a-provider-and-class-guid.md
                 - name: Rasgos del proveedor
                   href: provider-traits.md
@@ -65,9 +65,9 @@
             - name: Publicación del esquema de eventos
               href: publishing-your-event-schema.md
               items:
-                - name: Publicación del esquema de eventos para un proveedor basado en manifiestos
+                - name: Publicar el esquema de eventos para un proveedor basado en manifiestos
                   href: publishing-your-event-schema-for-a-manifest-base-provider.md
-                - name: Publicación del esquema de eventos para un proveedor clásico
+                - name: Publicar el esquema de eventos para un proveedor clásico
                   href: publishing-your-event-schema-for-a-classic-provider.md
         - name: Consumo de eventos
           href: consuming-events.md
@@ -98,9 +98,9 @@
         - name: Constantes de seguimiento de eventos
           href: event-tracing-constants.md
           items:
-            - name: Constantes del registrador de kernel nt
+            - name: Constantes del registrador de kernel de NT
               href: nt-kernel-logger-constants.md
-            - name: Constantes de modo de registro
+            - name: Constantes del modo de registro
               href: logging-mode-constants.md
         - name: Macros de seguimiento de eventos
           href: event-tracing-macros.md

@@ -5,45 +5,45 @@ ms.assetid: 6c9e0dbf-59a2-4db9-8fb8-0dbfda5cf38b
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 303e0a708c2b52225af83475674e5f60d1a8418d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 46e155e4d8467722e9ac5eae04189ed3ba8333f65ec162ffb50f6b9268cf8a92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117751046"
 ---
 # <a name="removing-an-event-source-from-a-collector-initiated-subscription"></a>Quitar un origen de eventos de una suscripción iniciada por el recopilador
 
-Puede quitar un origen de eventos de una suscripción iniciada por el recopilador sin eliminar toda la suscripción. Debe conocer la dirección del origen de eventos que desea eliminar. Puede encontrar la dirección de un origen de eventos que está asociada a una suscripción mediante el ejemplo de C++ que se muestra en [Mostrar las propiedades de una suscripción del recopilador de eventos](displaying-the-properties-of-an-event-collector-subscription.md)o puede escribir el siguiente comando en el símbolo del sistema:
+Puede quitar un origen de eventos de una suscripción iniciada por el recopilador sin eliminar toda la suscripción. Debe conocer la dirección del origen del evento que desea eliminar. Puede encontrar la dirección de un origen de eventos asociado a una suscripción mediante el ejemplo de C++ que se muestra en [Mostrar](displaying-the-properties-of-an-event-collector-subscription.md)las propiedades de una suscripción del recopilador de eventos, o puede escribir el siguiente comando en el símbolo del sistema:
 
-**wecutil GS** *SubscriptionName*
+**wecutil gs** *SubscriptionName*
 
-Para enumerar las suscripciones actuales en un equipo local, puede utilizar el ejemplo de código de C++ que se muestra en [enumerar las suscripciones del recopilador de eventos](listing-event-collector-subscriptions.md)o puede escribir el siguiente comando en el símbolo del sistema:
+Para enumerar las suscripciones actuales en un equipo local, puede usar el ejemplo de código de C++ que se muestra en Enumerar suscripciones del recopilador de eventos [o](listing-event-collector-subscriptions.md)puede escribir el siguiente comando en el símbolo del sistema:
 
 **wecutil es**
 
 > [!Note]
 >
-> Puede usar este ejemplo para quitar un origen de eventos de una suscripción iniciada por el Recopilador o puede escribir el siguiente comando en el símbolo del sistema:
+> Puede usar este ejemplo para quitar un origen de eventos de una suscripción iniciada por el recopilador o puede escribir el siguiente comando en el símbolo del sistema:
 >
-> **wecutil SS** *SubscriptionName*  * */esa: * * * EventSourceAddress* **/res**
+> **wecutil ss** *SubscriptionName* **/esa:**_EventSourceAddress_ **/res**
 >
 > *EventSourceAddress* puede ser localhost para el equipo local o un nombre de dominio completo para un equipo remoto.
 
- 
+ 
 
 Este ejemplo sigue una serie de pasos para quitar un origen de eventos de una suscripción iniciada por el recopilador.
 
 **Para quitar un origen de eventos de una suscripción iniciada por el recopilador**
 
-1.  Para abrir la suscripción existente, proporcione el nombre y los derechos de acceso de la suscripción como parámetros para la función [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . Para obtener más información sobre los derechos de acceso, consulte [**constantes del recopilador de eventos de Windows**](windows-event-collector-constants.md).
-2.  Obtiene la matriz de orígenes de eventos de la suscripción mediante una llamada a la función [**EcGetSubscriptionProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) . Para obtener más información sobre las propiedades de suscripción que se pueden recuperar, consulte la enumeración de [**identificador de propiedad de suscripción de EC \_ \_ \_**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) .
-3.  Busque el origen de eventos especificado en la matriz de orígenes de eventos de la suscripción mediante una llamada a la función [**EcGetObjectArrayProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetobjectarrayproperty) . El valor de la propiedad **EcSubscriptionEventSourceAddress** será localhost para el equipo local o será un nombre de dominio completo para un equipo remoto. Para obtener más información sobre las propiedades de origen de eventos que se pueden recuperar, vea la enumeración ID. de **\_ propiedad de suscripción de \_ \_ EC** .
-4.  Elimine el origen de eventos de la suscripción mediante una llamada a la función [**EcRemoveObjectArrayElement**](/windows/desktop/api/Evcoll/nf-evcoll-ecremoveobjectarrayelement) .
-5.  Guarde la suscripción mediante una llamada a la función [**EcSaveSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription) .
-6.  Cierre la suscripción mediante una llamada a la función [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .
+1.  Abra la suscripción existente proporcionando el nombre de la suscripción y los derechos de acceso como parámetros para la [**función EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Para obtener más información sobre los derechos de acceso, [**vea Windows Event Collector Constants**](windows-event-collector-constants.md).
+2.  Obtenga la matriz de orígenes de eventos de la suscripción mediante una llamada a la [**función EcGetSubscriptionProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) Para obtener más información sobre las propiedades de suscripción que se pueden recuperar, vea la [**\_ enumeración EC SUBSCRIPTION \_ PROPERTY \_ ID.**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id)
+3.  Busque el origen de eventos especificado en la matriz de orígenes de eventos de la suscripción llamando a la [**función EcGetObjectArrayProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetobjectarrayproperty) El valor de la **propiedad EcSubscriptionEventSourceAddress** será Localhost para el equipo local o será un nombre de dominio completo para un equipo remoto. Para obtener más información sobre las propiedades de origen de eventos que se pueden recuperar, vea la **enumeración EC \_ SUBSCRIPTION PROPERTY \_ \_ ID.**
+4.  Elimine el origen del evento de la suscripción mediante una llamada a [**la función EcRemoveObjectArrayElement.**](/windows/desktop/api/Evcoll/nf-evcoll-ecremoveobjectarrayelement)
+5.  Guarde la suscripción mediante una llamada a [**la función EcSaveSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription)
+6.  Cierre la suscripción mediante una llamada a la [**función EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
-En el ejemplo de código de C++ siguiente se muestra cómo quitar un origen de eventos de una suscripción del recopilador de eventos.
+En el siguiente ejemplo de código de C++ se muestra cómo quitar un origen de eventos de una suscripción del recopilador de eventos.
 
 
 ```C++
@@ -322,15 +322,15 @@ DWORD GetEventSourceProperty(EC_OBJECT_ARRAY_PROPERTY_HANDLE hArray,
 [Mostrar las propiedades de una suscripción del recopilador de eventos](displaying-the-properties-of-an-event-collector-subscription.md)
 </dt> <dt>
 
-[Enumerar las suscripciones del recopilador de eventos](listing-event-collector-subscriptions.md)
+[Enumerar suscripciones del recopilador de eventos](listing-event-collector-subscriptions.md)
 </dt> <dt>
 
-[Referencia del recopilador de eventos de Windows](windows-event-collector-reference.md)
+[Windows Referencia del recopilador de eventos](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

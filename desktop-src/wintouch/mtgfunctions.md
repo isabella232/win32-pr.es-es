@@ -1,5 +1,5 @@
 ---
-title: Funciones (Windows táctiles)
+title: Funciones (Windows gestos táctiles)
 description: Esta sección contiene funciones para Windows gestos táctiles.
 ms.assetid: 830031d1-eb8d-45d4-b66e-3f4fbb96ae13
 keywords:
@@ -15,11 +15,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118435386"
 ---
-# <a name="functions-windows-touch-gestures"></a>Funciones (Windows táctiles)
+# <a name="functions-windows-touch-gestures"></a>Funciones (Windows gestos táctiles)
 
 Esta sección contiene funciones para Windows gestos táctiles.
 
-Las funciones siguientes se usan para Windows gestos táctiles.
+Las siguientes funciones se usan para Windows gestos táctiles.
 
 
 

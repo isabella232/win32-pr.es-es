@@ -13,14 +13,14 @@ ms.locfileid: "118395500"
 ---
 # <a name="configuring-and-starting-the-global-logger-session"></a>Configuración e inicio de la sesión de registrador global
 
-La sesión de seguimiento de eventos del registrador global registra los eventos que se producen al principio del proceso de arranque del sistema operativo. Las aplicaciones y los controladores de dispositivos pueden usar la sesión del registrador global para capturar seguimientos antes de que el usuario inicie sesión. Tenga en cuenta que algunos controladores de dispositivo, como los controladores de dispositivos de disco, no se cargan en el momento en que comienza la sesión del registrador global.
+La sesión de seguimiento de eventos del registrador global registra los eventos que se producen al principio del proceso de arranque del sistema operativo. Las aplicaciones y los controladores de dispositivos pueden usar la sesión de Registrador global para capturar seguimientos antes de que el usuario inicie sesión. Tenga en cuenta que algunos controladores de dispositivo, como los controladores de dispositivos de disco, no se cargan en el momento en que comienza la sesión del registrador global.
 
 > [!Note]  
-> Si va a crear una sesión de registrador global en Windows Vista, considere la posibilidad de crear una [sesión de AutoLogger](configuring-and-starting-an-autologger-session.md) en su lugar.
+> Si va a crear una sesión de Registrador global en Windows Vista, considere la posibilidad de crear una [sesión de Registrador automático](configuring-and-starting-an-autologger-session.md) en su lugar.
 
  
 
-El Registro se usa para configurar la sesión del registrador global. Agregue la **clave GlobalLogger** a la siguiente clave del Registro, si aún no está presente:
+El Registro se usa para configurar la sesión de Registrador global. Agregue la **clave GlobalLogger** a la siguiente clave del Registro, si aún no está presente:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -30,7 +30,7 @@ HKEY_LOCAL_MACHINE
             \WMI
 ```
 
-En la tabla siguiente se describen los valores que puede definir para la **clave GlobalLogger.** Debe tener privilegios de administrador para especificar estos valores del Registro. Los valores del Registro afectan a todos los proveedores que registren eventos en la sesión del registrador global. El **valor** Start es el único valor necesario para iniciar la sesión del registrador global. todos los demás valores tienen una configuración predeterminada que se usa si el valor no está presente en el Registro. Normalmente, debe usar los valores predeterminados. Si especifica un valor que ETW no admite, ETW invalidará el valor.
+En la tabla siguiente se describen los valores que puede definir para la **clave GlobalLogger.** Debe tener privilegios de administrador para especificar estos valores del Registro. Los valores del Registro afectan a todos los proveedores que registren eventos en la sesión del registrador global. El **valor** De inicio es el único valor necesario para iniciar la sesión del registrador global; todos los demás valores tienen valores predeterminados que se usan si el valor no está presente en el Registro. Normalmente, debe usar los valores predeterminados. Si especifica un valor que ETW no admite, ETW invalidará el valor.
 
 
 
@@ -56,7 +56,7 @@ En la tabla siguiente se describen los valores que puede definir para la **clave
 <tr class="even">
 <td><strong>BufferSize</strong></td>
 <td><strong>REG_DWORD</strong></td>
-<td>Tamaño de cada búfer, en kilobytes. Este valor debe ser inferior a un megabyte. ETW usa el tamaño de la memoria física para calcular este valor. <br/></td>
+<td>Tamaño de cada búfer, en kilobytes. Este valor debe ser menor que un megabyte. ETW usa el tamaño de la memoria física para calcular este valor. <br/></td>
 </tr>
 <tr class="odd">
 <td><strong>ClockType</strong></td>
@@ -72,17 +72,17 @@ Para obtener una descripción de cada tipo de reloj, vea el <strong>miembro Clie
 <tr class="even">
 <td><strong>EnableKernelFlags</strong></td>
 <td><strong>Reg_binary</strong></td>
-<td>Use este valor para habilitar uno o varios proveedores de kernel. Si habilita los proveedores de kernel, la sesión del registrador global cambiará su nombre a NT Kernel Logger cuando se inicie. Para ver los valores posibles, <strong>vea el miembro EnableFlags</strong> <a href="/windows/win32/api/evntrace/ns-evntrace-event_trace_properties"><strong>de EVENT_TRACE_PROPERTIES</strong></a>.<br/></td>
+<td>Use este valor para habilitar uno o varios proveedores de kernel. Si habilita proveedores de kernel, la sesión de Registrador global cambiará su nombre a NT Kernel Logger cuando se inicie. Para obtener los valores posibles, <strong>vea el miembro EnableFlags</strong> <a href="/windows/win32/api/evntrace/ns-evntrace-event_trace_properties"><strong>de EVENT_TRACE_PROPERTIES</strong></a>.<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>FileCounter</strong></td>
 <td><strong>REG_DWORD</strong></td>
-<td>Número de archivos de registro de seguimiento de eventos generados por sesiones de Registrador global. El sistema incrementa este valor hasta que alcanza el valor de <strong>FileMax</strong>. A continuación, restablece el valor a 0. Este contador impide que el sistema sobrescriba un archivo de registro de seguimiento del registrador global. <br/></td>
+<td>Número de archivos de registro de seguimiento de eventos generados por sesiones de Registrador global. El sistema incrementa este valor hasta que alcanza el valor de <strong>FileMax.</strong> A continuación, restablece el valor a 0. Este contador impide que el sistema sobrescriba un archivo de registro de seguimiento del registrador global. <br/></td>
 </tr>
 <tr class="even">
 <td><strong>FileMax</strong></td>
 <td><strong>REG_DWORD</strong></td>
-<td>Número máximo de archivos de registro de seguimiento de eventos permitidos en el sistema. Cuando el número de registros de seguimiento alcanza el máximo especificado, el sistema comienza a sobrescribir los registros, empezando por el más antiguo. <br/> Si el archivo de registro especificado en <strong>FileName</strong> existe, ETW anexa el valor <strong>fileCounter</strong> al nombre de archivo. Por ejemplo, si se usa el nombre de archivo de registro predeterminado, el formulario es %SystemRoot%\System32\LogFiles\WMI\GlobalLogger.etl.NNNN. <br/> El valor predeterminado es 0, lo que significa que no hay ningún máximo. <br/></td>
+<td>Número máximo de archivos de registro de seguimiento de eventos permitidos en el sistema. Cuando el número de registros de seguimiento alcanza el máximo especificado, el sistema comienza a sobrescribir los registros, empezando por el más antiguo. <br/> Si existe el archivo de registro especificado en <strong>FileName,</strong> ETW anexa el valor <strong>fileCounter</strong> al nombre de archivo. Por ejemplo, si se usa el nombre de archivo de registro predeterminado, el formulario es %SystemRoot%\System32\LogFiles\WMI\GlobalLogger.etl.NNNN. <br/> El valor predeterminado es 0, lo que significa que no hay ningún máximo. <br/></td>
 </tr>
 <tr class="odd">
 <td><strong>FileName</strong></td>
@@ -92,17 +92,17 @@ Para obtener una descripción de cada tipo de reloj, vea el <strong>miembro Clie
 <tr class="even">
 <td><strong>FlushTimer</strong></td>
 <td><strong>REG_DWORD</strong></td>
-<td>Con qué frecuencia, en segundos, se vacían forzadamente los búferes de seguimiento. El tiempo mínimo de vaciado es de 1 segundo. Este vaciado forzado se suma al vaciado automático que se produce cuando un búfer está lleno y cuando se detiene la sesión de seguimiento. <br/> En el caso de un registrador en tiempo real, un valor de cero (el valor predeterminado) significa que el tiempo de vaciado se establecerá en 1 segundo. Un registrador en tiempo real es cuando <strong>LogFileMode</strong> se establece <strong>en EVENT_TRACE_REAL_TIME_MODE</strong>.<br/> El valor predeterminado es 0. De forma predeterminada, los búferes solo se vacían cuando están llenos. <br/></td>
+<td>Con qué frecuencia, en segundos, los búferes de seguimiento se vacían a la fuerza. El tiempo mínimo de vaciado es de 1 segundo. Este vaciado forzado se suma al vaciado automático que se produce cuando un búfer está lleno y cuando se detiene la sesión de seguimiento. <br/> En el caso de un registrador en tiempo real, un valor de cero (el valor predeterminado) significa que el tiempo de vaciado se establecerá en 1 segundo. Un registrador en tiempo real es cuando <strong>LogFileMode</strong> se establece en <strong>EVENT_TRACE_REAL_TIME_MODE</strong>.<br/> El valor predeterminado es 0. De forma predeterminada, los búferes solo se vacían cuando están llenos. <br/></td>
 </tr>
 <tr class="odd">
 <td><strong>LogFileMode</strong></td>
 <td><strong>REG_DWORD</strong></td>
-<td>Especifica las opciones de sesión de registro. Para obtener valores, vea <a href="logging-mode-constants.md">Constantes de modo de registro.</a> Estos valores se admiten en Windows Vista y versiones posteriores. <br/></td>
+<td>Especifica las opciones de sesión de registro. Para obtener valores, vea <a href="logging-mode-constants.md">Constantes de modo de registro</a>. Estos valores se admiten en Windows Vista y versiones posteriores. <br/></td>
 </tr>
 <tr class="even">
 <td><strong>MaximumBuffers</strong></td>
 <td><strong>REG_DWORD</strong></td>
-<td>Número máximo de búferes que se asignarán. Normalmente, este valor es el número mínimo de búferes más veinte. ETW usa el tamaño del búfer y el tamaño de la memoria física para calcular este valor. Este valor debe ser mayor o igual que el valor de <strong>MinimumBuffers.</strong><br/></td>
+<td>Número máximo de búferes que se asignarán. Normalmente, este valor es el número mínimo de búferes más veinte. ETW usa el tamaño del búfer y el tamaño de memoria física para calcular este valor. Este valor debe ser mayor o igual que el valor de <strong>MinimumBuffers.</strong><br/></td>
 </tr>
 <tr class="odd">
 <td><strong>MaxFileSize</strong></td>
@@ -112,7 +112,7 @@ Para obtener una descripción de cada tipo de reloj, vea el <strong>miembro Clie
 <tr class="even">
 <td><strong>MinimumBuffers</strong></td>
 <td><strong>REG_DWORD</strong></td>
-<td>Número mínimo de búferes que se asignarán cuando se inicie la sesión del registrador global. El número mínimo de búferes que puede especificar es dos búferes por procesador. Por ejemplo, en un único equipo procesador, el número mínimo de búferes es dos. <br/> El valor predeterminado en un sistema de un solo procesador es 0x3.<br/></td>
+<td>Número mínimo de búferes que se asignarán cuando se inicie la sesión del registrador global. El número mínimo de búferes que puede especificar es de dos búferes por procesador. Por ejemplo, en un equipo con un solo procesador, el número mínimo de búferes es dos. <br/> El valor predeterminado en un sistema de un solo procesador es 0x3.<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>Estado</strong></td>
@@ -126,7 +126,7 @@ Para obtener una descripción de cada tipo de reloj, vea el <strong>miembro Clie
 
  
 
-Una vez que se ha modificado el Registro y se ha reiniciado el equipo, la sesión del registrador global se inicia automáticamente y se usa como cualquier otra sesión con una excepción: se usa el identificador constante del identificador de registrador global de WMI (definido en \_ \_ Wmistr.h) para hacer referencia a la sesión del registrador \_ global. Esta constante se puede usar como argumento para cualquier función de seguimiento de eventos que acepte un identificador de sesión. En las funciones que aceptan un nombre de sesión, use GLOBAL \_ LOGGER \_ NAME.
+Una vez modificado el Registro y reiniciado el equipo, la sesión del registrador global se inicia automáticamente y se usa como cualquier otra sesión con una excepción: use el identificador de constante del registrador global de WMI (definido en \_ \_ Wmistr.h) para hacer referencia a la sesión del registrador \_ global. Esta constante se puede usar como argumento para cualquier función de seguimiento de eventos que acepte un identificador de sesión. En las funciones que aceptan un nombre de sesión, use GLOBAL \_ LOGGER \_ NAME.
 
 El controlador del registrador global no llama a la [**función EnableTrace**](/windows/win32/api/evntrace/nf-evntrace-enabletrace) para habilitar proveedores. El proveedor es responsable de determinar si se inicia la sesión del registrador global y, a continuación, habilitarse.
 

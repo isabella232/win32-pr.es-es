@@ -13,7 +13,7 @@ ms.locfileid: "118477660"
 ---
 # <a name="iagentcommandgetenabled"></a>IAgentCommand::GetEnabled
 
-\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT GetEnabled(

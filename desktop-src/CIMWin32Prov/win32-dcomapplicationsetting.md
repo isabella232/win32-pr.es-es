@@ -35,7 +35,7 @@ ms.locfileid: "118417737"
 ---
 # <a name="win32_dcomapplicationsetting-class"></a>Clase \_ DCOMApplicationSetting de Win32
 
-La **clase WMI \_ DCOMApplicationSetting** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 representa la configuración de una aplicación DCOM. Contiene opciones de configuración de DCOM asociadas a la **clave AppID** en el Registro. Estas opciones son válidas en los componentes agrupados lógicamente en la clase de aplicación dada.
+La **clase WMI \_ DCOMApplicationSetting** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 representa la configuración de una aplicación DCOM. Contiene opciones de configuración de DCOM asociadas a **la clave AppID** en el Registro. Estas opciones son válidas en los componentes agrupados lógicamente en la clase de aplicación dada.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 

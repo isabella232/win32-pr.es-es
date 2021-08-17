@@ -1,26 +1,26 @@
 ---
 title: Efecto de escala
-description: Utilice este efecto para escalar o reducir verticalmente una imagen. El efecto tiene seis modos de escalado más cercanos, lineal, cúbico, Multimuestra lineal, anisotrópico y de alta calidad cúbicos.
+description: Use este efecto para escalar o reducir verticalmente una imagen. El efecto tiene seis modos de escalado vecino más próximo, lineal, cúbico, lineal de varias muestras, anisotropo y cúbico de alta calidad.
 ms.assetid: 99DFA8DB-384B-4F64-90A2-0D3D7E1ACF27
 keywords:
 - efecto de escala
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad3af77bc24db387fff0854e0432c270fa2ce6d5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d3a28e71dfb552a35bf138c245a82937bd600e61acd8b4a82b42cbc8d9d66a65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118003671"
 ---
 # <a name="scale-effect"></a>Efecto de escala
 
-Utilice este efecto para escalar o reducir verticalmente una imagen. El efecto tiene seis modos de escala: vecino más cercano, lineal, cúbico, Multimuestra lineal, anisotrópico y de alta calidad cúbico.
+Use este efecto para escalar o reducir verticalmente una imagen. El efecto tiene seis modos de escalado: vecino más próximo, lineal, cúbico, lineal de varias muestras, anisotropo y cúbico de alta calidad.
 
 El CLSID para este efecto es CLSID \_ D2D1Scale.
 
 -   [Imagen de ejemplo](#example-image)
--   [Propiedades del efecto](#effect-properties)
+-   [Propiedades de efecto](#effect-properties)
     -   [Modos de borde](#border-modes)
 -   [Modos de interpolación](#interpolation-modes)
 -   [Mapa de bits de salida](#output-bitmap)
@@ -29,13 +29,13 @@ El CLSID para este efecto es CLSID \_ D2D1Scale.
 
 ## <a name="example-image"></a>Imagen de ejemplo
 
-En este ejemplo se muestra el efecto de escala de zoom en 2 veces la entrada y recortada al tamaño original.
+En este ejemplo se muestra el efecto de escala al acercar 2 veces la entrada y recortar hasta el tamaño original.
 
 
 
 | Antes                                                     |
 |------------------------------------------------------------|
-| ![imagen anterior al efecto.](images/default-before.jpg) |
+| ![la imagen antes del efecto.](images/default-before.jpg) |
 | Después                                                      |
 | ![la imagen después de la transformación.](images/22-scale.png)     |
 
@@ -60,7 +60,7 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Propiedades del efecto
+## <a name="effect-properties"></a>Propiedades de efecto
 
 
 
@@ -71,35 +71,35 @@ m_d2dContext->EndDraw();
 </colgroup>
 <thead>
 <tr class="header">
-<th>Enumeración de índice y nombre para mostrar</th>
+<th>Enumeración de nombre para mostrar e índice</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Escala<br/> D2D1_SCALE_PROP_SCALE<br/></td>
-<td>La cantidad de escala en la dirección X e y como una relación entre el tamaño de salida y el tamaño de entrada. Esta propiedad es D2D1_VECTOR_2Fdefined: (escala X, escala Y). Las cantidades de escala son FLOAT, sin unidades y deben ser positivas o 0.<br/> El tipo es D2D1_VECTOR_2F.<br/> El valor predeterminado es {1.0 f, 1.0 f}.<br/></td>
+<td>La cantidad de escala en la dirección X e Y como proporción del tamaño de salida con respecto al tamaño de entrada. Esta propiedad es D2D1_VECTOR_2Fdefined como: (escala X, escala Y). Las cantidades de escala son FLOAT, sin unidad y deben ser positivas o 0.<br/> El tipo es D2D1_VECTOR_2F.<br/> El valor predeterminado es {1.0f, 1.0f}.<br/></td>
 </tr>
 <tr class="even">
 <td>CenterPoint<br/> D2D1_SCALE_PROP_CENTER_POINT<br/></td>
-<td>Punto central de escalado de imagen. Esta propiedad es una D2D1_VECTOR_2F definida como: (punto X, punto Y). Las unidades están en DIP.<br/> Use la propiedad punto central para escalar alrededor de un punto que no sea la esquina superior izquierda.<br/> El tipo es D2D1_VECTOR_2F.<br/> El valor predeterminado es {0.0 f, 0.0 f}.<br/></td>
+<td>Punto central de escalado de imágenes. Esta propiedad es un D2D1_VECTOR_2F definido como: (punto X, punto Y). Las unidades están en DIP.<br/> Use la propiedad de punto central para escalar alrededor de un punto distinto de la esquina superior izquierda.<br/> El tipo es D2D1_VECTOR_2F.<br/> El valor predeterminado es {0,0f, 0,0f}.<br/></td>
 </tr>
 <tr class="odd">
 <td>BorderMode<br/> D2D1_SCALE_PROP_BORDER_MODE<br/></td>
-<td>El modo que se usa para calcular el borde de la imagen, es decir, es flexible o difícil. Vea <a href="#border-modes">modos de borde</a> para obtener más información. <br/> El tipo es D2D1_BORDER_MODE.<br/> El valor predeterminado es D2D1_BORDER_MODE_SOFT.<br/></td>
+<td>Modo utilizado para calcular el borde de la imagen, suave o duro. Consulte <a href="#border-modes">Modos de borde</a> para obtener más información. <br/> El tipo es D2D1_BORDER_MODE.<br/> El valor predeterminado es D2D1_BORDER_MODE_SOFT.<br/></td>
 </tr>
 <tr class="even">
 <td>Nitidez<br/> D2D1_SCALE_PROP_SHARPNESS<br/></td>
-<td>En el modo de interpolación cúbico de alta calidad, el nivel de nitidez del filtro de escalado es un valor de tipo float entre 0 y 1. Los valores son no unitarias. Puede usar la nitidez para ajustar la calidad de una imagen al reducir la escala de la imagen.<br/> El factor de nitidez afecta a la forma del kernel. Cuanto mayor sea el factor de nitidez, menor será el kernel.<br/>
+<td>En el modo de interpolación cúbica de alta calidad, el nivel de ni sharpness del filtro de escalado como un valor float entre 0 y 1. Los valores no tienen unidad. Puede usar la nidez para ajustar la calidad de una imagen al reducir verticalmente la imagen.<br/> El factor de niguidad afecta a la forma del kernel. Cuanto mayor sea el factor de nifilidad, menor será el kernel.<br/>
 <blockquote>
 [!Note]<br />
-Esta propiedad solo afecta al modo de interpolación cúbico de alta calidad.
+Esta propiedad solo afecta al modo de interpolación cúbica de alta calidad.
 </blockquote>
-<br/> El tipo es FLOAT.<br/> El valor predeterminado es 0.0 f.<br/></td>
+<br/> El tipo es FLOAT.<br/> El valor predeterminado es 0,0f.<br/></td>
 </tr>
 <tr class="odd">
 <td>InterpolationMode<br/> D2D1_SCALE_PROP_INTERPOLATION_MODE<br/></td>
-<td>El modo de interpolación que el efecto usa para escalar la imagen. Hay 6 modos de escala que abarcan la calidad y la velocidad. Vea <a href="#interpolation-modes">modos de interpolación</a> para obtener más información. <br/> El tipo es D2D1_SCALE_INTERPOLATION_MODE.<br/> El valor predeterminado es D2D1_SCALE_INTERPOLATION_MODE_LINEAR.<br/></td>
+<td>Modo de interpolación que usa el efecto para escalar la imagen. Hay 6 modos de escala que varían en calidad y velocidad. Consulte <a href="#interpolation-modes">Modos de interpolación</a> para obtener más información. <br/> El tipo es D2D1_SCALE_INTERPOLATION_MODE.<br/> El valor predeterminado es D2D1_SCALE_INTERPOLATION_MODE_LINEAR.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -114,8 +114,8 @@ Esta propiedad solo afecta al modo de interpolación cúbico de alta calidad.
 
 | Nombre                     | Descripción                                                                                                                                                                                                                                                              |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D2D1 \_ modo de borde \_ \_ flexible | El efecto rellena la imagen de entrada con píxeles negros transparentes para muestras fuera de los límites de entrada cuando aplica el kernel de circunvolución. Esto crea un borde flexible para la imagen y, en el proceso, expande el mapa de bits de salida por el tamaño del kernel.<br/> |
-| D2D1 \_ del \_ modo de borde \_ | El efecto extiende la imagen de entrada con una transformación de borde de tipo de reflejo para las muestras fuera de los límites de entrada. El tamaño del mapa de bits de salida es igual al tamaño del mapa de bits de entrada.<br/>                                                                       |
+| MODO DE BORDE D2D1 \_ \_ \_ SOFT | El efecto delimita la imagen de entrada con píxeles negros transparentes para muestras fuera de los límites de entrada cuando aplica el kernel de convolución. Esto crea un borde flexible para la imagen y, en el proceso, expande el mapa de bits de salida según el tamaño del kernel.<br/> |
+| D2D1 \_ BORDER \_ MODE \_ HARD | El efecto extiende la imagen de entrada con una transformación de borde de tipo reflejo para muestras fuera de los límites de entrada. El tamaño del mapa de bits de salida es igual al tamaño del mapa de bits de entrada.<br/>                                                                       |
 
 
 
@@ -129,49 +129,49 @@ Esta propiedad solo afecta al modo de interpolación cúbico de alta calidad.
 
 | Enumeración                                             | Descripción                                                                                                                                                                                          |
 |---------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D2D1 \_ modo de interpolación de escala de la \_ \_ \_ proximidad más cercano \_     | Muestrea el punto único más cercano y lo usa. Este modo utiliza menos tiempo de procesamiento, pero genera la imagen de menor calidad.                                                                           |
-| \_ \_ \_ Modo lineal de interpolación de escala D2D1 \_                | Utiliza un ejemplo de cuatro puntos y una interpolación lineal. Este modo usa más tiempo de procesamiento que el modo vecino más cercano, pero genera una imagen de mayor calidad.                                           |
-| \_Modo de \_ interpolación de escala D2D1 \_ \_ cúbico                 | Usa un kernel cúbico de ejemplo 16 para la interpolación. Este modo utiliza la mayor parte del tiempo de procesamiento, pero genera una imagen de mayor calidad.                                                                        |
-| \_Modo de \_ interpolación de escala D2D1 \_ \_ \_ Multimuestra \_ lineal | Usa 4 muestras lineales dentro de un solo píxel para el suavizado de contorno adecuado. Este modo es adecuado para reducir verticalmente en pequeñas cantidades de imágenes con pocos píxeles.                                              |
-| \_Modo de \_ interpolación de escala D2D1 \_ \_ anisotrópico           | Utiliza el filtrado anisotrópico para muestrear un patrón según la forma transformada del mapa de bits.                                                                                                     |
-| D2D1 \_ modo de interpolación de escala de \_ \_ \_ alta \_ calidad \_ cúbico  | Usa un kernel cúbico de alta calidad de tamaño variable para realizar una downscale previa de la imagen si downscaling está implicado en la matriz de transformación. A continuación, usa el modo de interpolación cúbico para la salida final. |
+| D2D1 \_ SCALE \_ INTERPOLATION \_ MODE \_ NEAREST \_ NEIGHBOR     | Muestrea el punto único más cercano y lo usa. Este modo usa menos tiempo de procesamiento, pero genera la imagen de menor calidad.                                                                           |
+| MODO DE INTERPOLACIÓN A ESCALA D2D1 \_ \_ \_ \_ LINEAL                | Usa una muestra de cuatro puntos e interpolación lineal. Este modo usa más tiempo de procesamiento que el modo vecino más cercano, pero genera una imagen de mayor calidad.                                           |
+| MODO DE INTERPOLACIÓN DE ESCALA D2D1 \_ \_ \_ \_ CÚBICA                 | Usa un kernel cúbica de 16 muestras para la interpolación. Este modo usa el mayor tiempo de procesamiento, pero genera una imagen de mayor calidad.                                                                        |
+| MODO DE INTERPOLACIÓN A ESCALA D2D1 \_ \_ MULTI SAMPLE \_ \_ \_ \_ LINEAR | Usa 4 muestras lineales dentro de un solo píxel para un suavizado de alias de borde bueno. Este modo es bueno para reducir verticalmente en pequeñas cantidades en imágenes con pocos píxeles.                                              |
+| MODO DE INTERPOLACIÓN A ESCALA D2D1 \_ \_ \_ \_ ANISOTROPIC           | Usa el filtrado anisotropico para muestrear un patrón según la forma transformada del mapa de bits.                                                                                                     |
+| MODO DE INTERPOLACIÓN DE ESCALA D2D1 \_ \_ \_ \_ \_ CÚBICA DE ALTA \_ CALIDAD  | Usa un kernel cúbica de alta calidad de tamaño variable para realizar una escala previa a la baja de la imagen si la escalación está implicada en la matriz de transformación. A continuación, usa el modo de interpolación cúbica para la salida final. |
 
 
 
  
 
 > [!Note]  
-> Si no selecciona un modo, el efecto tiene como valor predeterminado el \_ modo de interpolación de escala D2D1 \_ \_ \_ lineal.
+> Si no selecciona un modo, el efecto tiene como valor predeterminado D2D1 \_ SCALE INTERPOLATION MODE LINEAR (MODO DE INTERPOLACIÓN DE ESCALA D2D1 \_ \_ \_ LINEAL).
 
  
 
 > [!Note]  
-> El modo anisotrópico genera mapas MIP al escalar; sin embargo, si establece la propiedad **Cached** en true en los efectos que se aplican a este efecto, no se generarán los mapas MIP cada vez para imágenes suficientemente pequeñas.
+> El modo anisotropico genera mapas MIP al escalar; sin embargo, si establece la propiedad **Cached** en true en los efectos que se introducen en este efecto, los mapas MIP no se generarán cada vez para imágenes lo suficientemente pequeñas.
 
  
 
 ## <a name="output-bitmap"></a>Mapa de bits de salida
 
-La ubicación y el tamaño del mapa de bits de salida dependen del factor de escala especificado y del punto central.
+La ubicación y el tamaño del mapa de bits de salida dependen del factor de escala y el punto central especificados.
 
-Puede calcular el tamaño del mapa de bits de salida con esta ecuación:<dl> BitmapSize? (Píxeles) = escala \* ¿Tamaño del mapa de bits original? (DIP) \* (UserDPI/96)  
-BitmapSize<sub>y</sub>(píxeles) =<sub></sub> \* tamaño del mapa de bits original<sub>y</sub> (DIP) \* (UserDPI/96)  
+Puede calcular el tamaño del mapa de bits de salida mediante esta ecuación:<dl> BitmapSize? (Píxeles)=¿Escala? \* ¿Tamaño de mapa de bits original? (DIP) \* (UserDPI/96)  
+BitmapSize<sub>y</sub>(píxeles)=Escala<sub>y tamaño de</sub>mapa de bits original \* <sub>y</sub> (DIP) \* (UserDPI/96)  
 </dl>
 
-El efecto redondea las fracciones de píxeles hasta el píxel entero más próximo.
+El efecto redondea fracciones de píxeles hasta el píxel entero más cercano.
 
-La ubicación del mapa de bits es (0,0) o el valor de la propiedad de punto central.
+La ubicación del mapa de bits es (0, 0) o el valor de la propiedad de punto central.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows 8 y actualización de la plataforma para aplicaciones de escritorio de Windows 7 aplicaciones de la \[ \| tienda Windows\] |
-| Servidor mínimo compatible | Windows 8 y actualización de la plataforma para aplicaciones de escritorio de Windows 7 aplicaciones de la \[ \| tienda Windows\] |
-| Encabezado                   | d2d1effects. h                                                                      |
-| Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
+| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows store\] |
+| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows store\] |
+| Header                   | d2d1effects.h                                                                      |
+| Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

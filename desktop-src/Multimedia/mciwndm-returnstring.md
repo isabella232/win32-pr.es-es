@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_RETURNSTRING (VFW. h)
-description: El \_ mensaje RETURNSTRING de MCIWNDM recupera la respuesta al comando de cadena MCI más reciente enviado a un dispositivo MCI.
+title: MCIWNDM_RETURNSTRING mensaje (Vfw.h)
+description: El mensaje RETURNSTRING de MCIWNDM recupera la respuesta al comando de cadena MCI más reciente enviado \_ a un dispositivo MCI.
 ms.assetid: 36a5222c-a63c-4b8c-ad0c-a00477e95b96
 keywords:
-- Mensaje de MCIWNDM_RETURNSTRING de Windows multimedia
+- MCIWNDM_RETURNSTRING mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b99307bd7d61a70db594d0a696cceccd6d246a3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d2ea9624c70245c67f0f6a78af68bf291ae3ce60ba65ae2cd273008bbc914ec2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137662"
 ---
-# <a name="mciwndm_returnstring-message"></a>MCIWNDM \_ RETURNSTRING
+# <a name="mciwndm_returnstring-message"></a>Mensaje RETURNSTRING de MCIWNDM \_
 
-El **mensaje \_ RETURNSTRING de MCIWNDM** recupera la respuesta al comando de cadena MCI más reciente enviado a un dispositivo MCI. La información de la respuesta se proporciona como una cadena terminada en NULL. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndReturnString**](/windows/desktop/api/Vfw/nf-vfw-mciwndreturnstring) .
+El **mensaje \_ RETURNSTRING de MCIWNDM** recupera la respuesta al comando de cadena MCI más reciente enviado a un dispositivo MCI. La información de la respuesta se proporciona como una cadena terminada en NULL. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndReturnString.**](/windows/desktop/api/Vfw/nf-vfw-mciwndreturnstring)
 
 
 ```C++
@@ -38,27 +38,27 @@ lParam = (LPARAM) (LPVOID) lp;
 
 <dl> <dt>
 
-<span id="len"></span><span id="LEN"></span>*terminado*
+<span id="len"></span><span id="LEN"></span>*Len*
 </dt> <dd>
 
 Tamaño, en bytes, del búfer.
 
 </dd> <dt>
 
-<span id="lp"></span><span id="LP"></span>*LP*
+<span id="lp"></span><span id="LP"></span>*Lp*
 </dt> <dd>
 
-Puntero a un búfer definido por la aplicación que va a contener la cadena terminada en NULL.
+Puntero a un búfer definido por la aplicación para contener la cadena terminada en NULL.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un entero que corresponde a la cadena MCI.
+Devuelve un entero correspondiente a la cadena MCI.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la cadena terminada en NULL es más larga que el búfer, la cadena se trunca.
+Si la cadena terminada en NULL es mayor que el búfer, la cadena se trunca.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Si la cadena terminada en NULL es más larga que el búfer, la cadena se trunca.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

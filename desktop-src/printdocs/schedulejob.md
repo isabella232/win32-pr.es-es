@@ -43,9 +43,9 @@ BOOL ScheduleJob(
 *hPrinter* \[ En\]
 </dt> <dd>
 
-Identificador de la impresora para el trabajo de impresión. Debe ser una impresora local que esté configurada como una impresora en cola. Si *hPrinter es* un identificador de una conexión de impresora remota o si la impresora está configurada para impresión directa, se produce un error en la **función ScheduleJob.** Use la [**función OpenPrinter**](openprinter.md) [**o AddPrinter**](addprinter.md) para recuperar un identificador de impresora.
+Identificador de la impresora para el trabajo de impresión. Debe ser una impresora local que esté configurada como una impresora en cola. Si *hPrinter es* un identificador para una conexión de impresora remota o si la impresora está configurada para impresión directa, se produce un error **en la función ScheduleJob.** Use la [**función OpenPrinter**](openprinter.md) [**o AddPrinter**](addprinter.md) para recuperar un identificador de impresora.
 
-*hPrinter debe* ser el mismo identificador de impresora especificado en la llamada a [**AddJob**](addjob.md) que obtuvo el identificador del trabajo de impresión *dwJobID.*
+*hPrinter debe* ser el mismo identificador de impresora especificado en la llamada a [**AddJob**](addjob.md) que obtuvo el *identificador del trabajo de impresión dwJobID.*
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Si la función no se realiza correctamente, el valor devuelto es cero.
 
 Debe llamar correctamente a la [**función AddJob**](addjob.md) antes de llamar **a la función ScheduleJob.** **AddJob** obtiene el identificador del trabajo de impresión que se pasa **a ScheduleJob** como *dwJobID.* Ambas llamadas deben usar el mismo valor para *hPrinter.*
 
-La **función ScheduleJob** busca un archivo Spool válido. Si hay un archivo de cola de impresión no válido o si está vacío, **ScheduleJob** elimina tanto el archivo de cola como la entrada del trabajo de impresión correspondiente en el cola de impresión.
+La **función ScheduleJob** comprueba si hay un archivo de cola válido. Si hay un archivo de cola de impresión no válido, o si está vacío, **ScheduleJob** elimina tanto el archivo de cola como la entrada del trabajo de impresión correspondiente en el cola de impresión.
 
 ## <a name="requirements"></a>Requisitos
 

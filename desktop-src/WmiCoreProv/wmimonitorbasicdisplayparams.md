@@ -1,5 +1,5 @@
 ---
-description: Representa las características básicas de pantalla de un monitor de equipo.
+description: Representa las características de visualización básicas de un monitor de equipo.
 ms.assetid: 08405e7f-7824-4e44-9f37-da9bb5619cd6
 title: Clase WmiMonitorBasicDisplayParams
 ms.topic: reference
@@ -20,16 +20,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: e457757a3542bbfc8ded7536396458ef3e592714
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 958eb9134062d5380a2afda77eeaad3034a2da7430d2f6a3094916ceae211e4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117926787"
 ---
 # <a name="wmimonitorbasicdisplayparams-class"></a>Clase WmiMonitorBasicDisplayParams
 
-La clase WMI **WmiMonitorBasicDisplayParams** representa las características básicas de pantalla de un monitor de equipo. El valor de la propiedad **VideoInputType** indica si el monitor es analógico o digital. Los datos de esta clase se corresponden con los datos del bloque básico de parámetros de presentación/características de la Asociación de vídeo electrónica estándar (VESA) estándar mejorado de identificación de visualización extendida (E-EDID).
+La clase WMI **WmiMonitorBasicDisplayParams** representa las características de presentación básicas de un monitor de equipo. El valor de la **propiedad VideoInputType** indica si el monitor es análogo o digital. Los datos de esta clase corresponden a los datos del bloque Basic Display Parameters/Features del estándar E-EDID (Enhanced Extended Display Identification Data, E-EDID) de Video Electronics Standard Association (VESA) Enhanced Display Identification Data (E-EDID).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,13 +48,13 @@ class WmiMonitorBasicDisplayParams : MSMonitorClass
 
 ## <a name="members"></a>Miembros
 
-La clase **WmiMonitorBasicDisplayParams** tiene estos tipos de miembros:
+La **clase WmiMonitorBasicDisplayParams** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **WmiMonitorBasicDisplayParams** tiene estas propiedades.
+La **clase WmiMonitorBasicDisplayParams** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -74,13 +74,13 @@ Indica el monitor activo.
 **DisplayTransferCharacteristic**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Visualización de la característica de transferencia (100 \* gamma-100).
+Mostrar la característica de transferencia (100 \* Gamma-100).
 
 </dd> <dt>
 
@@ -93,7 +93,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
 Nombre de la instancia de monitor específica.
@@ -103,26 +103,26 @@ Nombre de la instancia de monitor específica.
 **MaxHorizontalImageSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tamaño máximo de imagen horizontal en centímetros. Para obtener más información, vea la sección Comentarios.
+Tamaño máximo de la imagen horizontal en centímetros. Para obtener más información, vea la sección Comentarios.
 
 </dd> <dt>
 
 **MaxVerticalImageSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tamaño máximo de imagen vertical en centímetros. Para obtener más información, vea la sección Comentarios.
+Tamaño máximo de la imagen vertical en centímetros. Para obtener más información, vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -135,14 +135,14 @@ Tipo de datos: **[ **SupportedDisplayFeaturesDescriptor**](supporteddisplayfeatu
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Mostrar las características admitidas por el monitor.
+Mostrar características compatibles con el monitor.
 
 </dd> <dt>
 
 **VideoInputType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -152,9 +152,9 @@ Tipo de entrada de vídeo.
 
 
 
-| Value                                                                              | Significado            |
+| Valor                                                                              | Significado            |
 |------------------------------------------------------------------------------------|--------------------|
-| <dl> <dt>0 (0X0)</dt> </dl> | Analógico<br/>  |
+| <dl> <dt>0 (0x0)</dt> </dl> | Analógico<br/>  |
 | <dl> <dt>1 (0x1)</dt> </dl> | Digital<br/> |
 
 
@@ -163,25 +163,25 @@ Tipo de entrada de vídeo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**MaxHorizontalImageSize** y **MaxVerticalImageSize** representan las dimensiones de imagen máximas que el monitor puede mostrar correctamente para todo el conjunto de combinaciones de control de tiempo y formato admitidas. La dimensión de imagen máxima se define mediante el estándar de definición de área de imagen de vídeo (VIAD) de VESA y se redondea al centímetro más cercano. El sistema del equipo host puede usar estos datos para seleccionar el tamaño y la relación de aspecto de la imagen que permitirá el texto escalado correctamente. Tenga en cuenta que, si uno o ambos de estos campos son cero, el sistema no realiza suposiciones sobre el tamaño de presentación. Por ejemplo, puede que el tamaño de una pantalla de proyección no esté determinado.
+**MaxHorizontalImageSize** y **MaxVerticalImageSize** representan las dimensiones de imagen máximas que el monitor puede mostrar correctamente para todo el conjunto de combinaciones de formato y control de tiempo admitidas. La dimensión de imagen máxima se define mediante VESA Video Image Area Definition (VIAD) Standard y se redondea al más cercano. El sistema del equipo host puede usar estos datos para seleccionar el tamaño de la imagen y la relación de aspecto que permitirán escalar correctamente el texto. Tenga en cuenta que, si alguno de estos campos o ambos son cero, el sistema no realiza ninguna suposición sobre el tamaño de presentación. Por ejemplo, el tamaño de una presentación de proyección puede ser indeterminado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
-| Espacio de nombres<br/>                | \\WMI raíz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Wmi \\ raíz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

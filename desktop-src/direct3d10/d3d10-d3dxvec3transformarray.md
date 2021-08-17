@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: bc38f0ef634763d9a5be85795a897b483431aede
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 00e8c2325b395a929af42abda4218a2458a8d964116a04f28ebac1ff72a877f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117914698"
 ---
 # <a name="d3dxvec3transformarray-function-d3dx10mathh"></a>Función D3DXVec3TransformArray (D3DX10Math.h)
 
@@ -58,7 +58,7 @@ Puntero a la [**matriz D3DXVECTOR4**](d3d10-d3dxvector4.md) que es el resultado 
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Paso entre vectores en el flujo de datos de salida.
+Pasos entre vectores en el flujo de datos de salida.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Puntero a la matriz [**D3DXVECTOR3 de**](d3d10-d3dxvector3.md) origen.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Paso entre vectores en el flujo de datos de entrada.
+Pasos entre vectores en el flujo de datos de entrada.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

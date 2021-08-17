@@ -1,6 +1,6 @@
 ---
-title: Tipos complejos de esquema de eaptlsconnectionpropertiesv2
-description: Obtenga información sobre el esquema eaptlsconnectionpropertiesv2. Este esquema define el tipo complejo de TLSExtensionsType.
+title: Tipos complejos de esquema eaptlsconnectionpropertiesv2
+description: Obtenga información sobre el esquema eaptlsconnectionpropertiesv2. Este esquema define el tipo complejo TLSExtensionsType.
 ms.assetid: 439a1621-0a8b-4a2b-8e69-46d99594ded9
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0d4840545e7b6d262da50d985fbf4b09e78c2e85
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 1755297226ce87e46667a313158b905a5d89df46a1c49307acbda885704df3d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104488299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117720178"
 ---
-# <a name="eaptlsconnectionpropertiesv2-schema-complex-types"></a>Tipos complejos de esquema de eaptlsconnectionpropertiesv2
+# <a name="eaptlsconnectionpropertiesv2-schema-complex-types"></a>Tipos complejos de esquema eaptlsconnectionpropertiesv2
 
 El esquema eaptlsconnectionpropertiesv2 define los siguientes tipos complejos.
 
@@ -35,9 +35,9 @@ El esquema eaptlsconnectionpropertiesv2 define los siguientes tipos complejos.
 [Esquema eaptlsconnectionpropertiesv2](eaptlsconnectionpropertiesv2schema-schema.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

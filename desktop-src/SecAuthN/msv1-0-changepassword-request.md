@@ -1,21 +1,21 @@
 ---
-description: La \_ estructura de solicitud MSV1 0 \_ CHANGEPASSWORD \_ está obsoleta.
+description: La estructura MSV1 \_ 0 \_ CHANGEPASSWORD \_ REQUEST está obsoleta.
 ms.assetid: 2a7fa224-65db-451b-8dce-c62c588dbab0
 title: MSV1_0_CHANGEPASSWORD_REQUEST
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b424d545895b7f971a32dc8ac0ab34c2fa03c5a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a340789a273a20725d5d0c56044f8091cc02d651bdfedf25960d3cda38a9b797
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117786744"
 ---
-# <a name="msv1_0_changepassword_request"></a>\_Solicitud MSV1 0 \_ CHANGEPASSWORD \_
+# <a name="msv1_0_changepassword_request"></a>SOLICITUD DE CAMBIO DE CONTRASEÑA DE MSV1 \_ 0 \_ \_
 
-La \_ estructura de solicitud MSV1 0 \_ CHANGEPASSWORD \_ está obsoleta.
+La estructura MSV1 \_ 0 \_ CHANGEPASSWORD \_ REQUEST está obsoleta.
 
-Para las solicitudes de cambio de contraseña, vea [**NetUserChangePassword**](/windows/win32/api/lmaccess/nf-lmaccess-netuserchangepassword).
+Para las solicitudes de cambio de contraseña, [**vea NetUserChangePassword.**](/windows/win32/api/lmaccess/nf-lmaccess-netuserchangepassword)
 
  
 

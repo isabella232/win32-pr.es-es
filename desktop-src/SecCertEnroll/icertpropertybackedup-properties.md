@@ -1,19 +1,19 @@
 ---
 description: La interfaz ICertPropertyBackedUp expone las siguientes propiedades.
 ms.assetid: 5CEFFEE5-0DE4-47B8-9556-32BADDE5DD1C
-title: Propiedades de ICertPropertyBackedUp
+title: Propiedades ICertPropertyBackedUp
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e8ef7c06ca9f2efb61303372ba28d02f3a94d11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 241dce3943daf4b863ddc089fd54b23fdbe2b61cbf8452ca6fbb5b28dbaa56cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002535"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117778964"
 ---
-# <a name="icertpropertybackedup-properties"></a>Propiedades de ICertPropertyBackedUp
+# <a name="icertpropertybackedup-properties"></a>Propiedades ICertPropertyBackedUp
 
-La interfaz [**ICertPropertyBackedUp**](/windows/desktop/api/CertEnroll/nn-certenroll-icertpropertybackedup) expone las siguientes propiedades.
+La [**interfaz ICertPropertyBackedUp**](/windows/desktop/api/CertEnroll/nn-certenroll-icertpropertybackedup) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 

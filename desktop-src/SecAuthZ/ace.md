@@ -1,21 +1,21 @@
 ---
-description: Enumera los tipos ACE definidos actualmente.
+description: Enumera los tipos ace definidos actualmente.
 ms.assetid: 980b8242-2ba2-469f-b834-da7d3fb22e14
-title: ACE (Winnt. h)
+title: ACE (Winnt.h)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e4d06b3457e4df6aea38d3e35acf4f7aaa4e2f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de555170bc8b7c1594b38adaa95d19b7e9ace54c8241fc971ea9f5383cf3e115
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117785224"
 ---
-# <a name="ace"></a>PERMISO
+# <a name="ace"></a>as
 
-Una **ACE** es una [*entrada de control de acceso*](/windows/desktop/SecGloss/a-gly) en una [*lista de control de acceso*](/windows/desktop/SecGloss/a-gly) (ACL).
+Una **ACE es** una entrada de control de [*acceso*](/windows/desktop/SecGloss/a-gly) en una lista de control [*de acceso*](/windows/desktop/SecGloss/a-gly) (ACL).
 
-En la tabla siguiente se enumeran los tipos **ACE** definidos actualmente.
+En la tabla siguiente se enumeran los tipos **ace** definidos actualmente.
 
 
 
@@ -27,7 +27,7 @@ En la tabla siguiente se enumeran los tipos **ACE** definidos actualmente.
 </colgroup>
 <thead>
 <tr class="header">
-<th>Tipo de ACE</th>
+<th>Tipo ace</th>
 <th>Estructura</th>
 <th>Tipo de ACL</th>
 </tr>
@@ -102,7 +102,7 @@ En la tabla siguiente se enumeran los tipos **ACE** definidos actualmente.
 <li>Alarma del sistema</li>
 </ul></td>
 <td><a href="/windows/desktop/api/Winnt/ns-winnt-system_alarm_ace"><strong>SYSTEM_ALARM_ACE</strong></a></td>
-<td>System</td>
+<td>Sistema</td>
 </tr>
 <tr class="even">
 <td><ul>
@@ -110,7 +110,7 @@ En la tabla siguiente se enumeran los tipos **ACE** definidos actualmente.
 <li>Permite la devolución de llamada durante la comprobación de acceso</li>
 </ul></td>
 <td><a href="/windows/desktop/api/Winnt/ns-winnt-system_alarm_callback_ace"><strong>SYSTEM_ALARM_CALLBACK_ACE</strong></a></td>
-<td>System</td>
+<td>Sistema</td>
 </tr>
 <tr class="odd">
 <td><ul>
@@ -119,7 +119,7 @@ En la tabla siguiente se enumeran los tipos **ACE** definidos actualmente.
 <li>Permite la devolución de llamada durante la comprobación de acceso</li>
 </ul></td>
 <td><a href="/windows/desktop/api/Winnt/ns-winnt-system_alarm_callback_object_ace"><strong>SYSTEM_ALARM_CALLBACK_OBJECT_ACE</strong></a></td>
-<td>System</td>
+<td>Sistema</td>
 </tr>
 <tr class="even">
 <td><ul>
@@ -127,14 +127,14 @@ En la tabla siguiente se enumeran los tipos **ACE** definidos actualmente.
 <li>Específico del objeto</li>
 </ul></td>
 <td><a href="/windows/desktop/api/winnt/ns-winnt-system_alarm_object_ace"><strong>SYSTEM_ALARM_OBJECT_ACE</strong></a></td>
-<td>System</td>
+<td>Sistema</td>
 </tr>
 <tr class="odd">
 <td><ul>
 <li>Auditoría del sistema</li>
 </ul></td>
 <td><a href="/windows/desktop/api/Winnt/ns-winnt-system_audit_ace"><strong>SYSTEM_AUDIT_ACE</strong></a></td>
-<td>System</td>
+<td>Sistema</td>
 </tr>
 <tr class="even">
 <td><ul>
@@ -142,7 +142,7 @@ En la tabla siguiente se enumeran los tipos **ACE** definidos actualmente.
 <li>Permite la devolución de llamada durante la comprobación de acceso</li>
 </ul></td>
 <td><a href="/windows/desktop/api/Winnt/ns-winnt-system_audit_callback_ace"><strong>SYSTEM_AUDIT_CALLBACK_ACE</strong></a></td>
-<td>System</td>
+<td>Sistema</td>
 </tr>
 <tr class="odd">
 <td><ul>
@@ -151,7 +151,7 @@ En la tabla siguiente se enumeran los tipos **ACE** definidos actualmente.
 <li>Permite la devolución de llamada durante la comprobación de acceso</li>
 </ul></td>
 <td><a href="/windows/desktop/api/Winnt/ns-winnt-system_audit_callback_object_ace"><strong>SYSTEM_AUDIT_CALLBACK_OBJECT_ACE</strong></a></td>
-<td>System</td>
+<td>Sistema</td>
 </tr>
 <tr class="even">
 <td><ul>
@@ -159,7 +159,7 @@ En la tabla siguiente se enumeran los tipos **ACE** definidos actualmente.
 <li>Específico del objeto</li>
 </ul></td>
 <td><a href="/windows/desktop/api/Winnt/ns-winnt-system_alarm_object_ace"><strong>SYSTEM_AUDIT_OBJECT_ACE</strong></a></td>
-<td>System</td>
+<td>Sistema</td>
 </tr>
 </tbody>
 </table>
@@ -168,10 +168,10 @@ En la tabla siguiente se enumeran los tipos **ACE** definidos actualmente.
 
  
 
-No se admiten actualmente las ACE de alarma y del sistema específico del sistema.
+Actualmente no se admiten las ACE de alarma del sistema y de alarma del sistema específicas del objeto.
 
 > [!Note]  
-> Cada ACE se inicia con una estructura de [**\_ encabezado ACE**](/windows/desktop/api/Winnt/ns-winnt-ace_header) . El formato de los datos que siguen al encabezado varía según el tipo de ACE especificado en el encabezado.
+> Cada ACE comienza con una [**estructura \_ ACE HEADER.**](/windows/desktop/api/Winnt/ns-winnt-ace_header) El formato de los datos que sigue al encabezado varía según el tipo ace especificado en el encabezado.
 
  
 
@@ -181,31 +181,31 @@ No se admiten actualmente las ACE de alarma y del sistema específico del sistem
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>Winnt. h (incluye Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                   |
+| Header<br/>                   | <dl> <dt>Winnt.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**AddAce**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-addace)
 </dt> <dt>
 
-[**\_ACE permitido de acceso \_**](/windows/desktop/api/Winnt/ns-winnt-access_allowed_ace)
+[**ACE \_ DE \_ ACCESO PERMITIDO**](/windows/desktop/api/Winnt/ns-winnt-access_allowed_ace)
 </dt> <dt>
 
-[**ACE de acceso \_ denegado \_**](/windows/desktop/api/Winnt/ns-winnt-access_denied_ace)
+[**ACE \_ DE ACCESO \_ DENEGADO**](/windows/desktop/api/Winnt/ns-winnt-access_denied_ace)
 </dt> <dt>
 
 [**ACL**](/windows/desktop/api/Winnt/ns-winnt-acl)
 </dt> <dt>
 
-[**\_ACE de alarma del sistema \_**](/windows/desktop/api/Winnt/ns-winnt-system_alarm_object_ace)
+[**ACE \_ DE ALARMA DEL \_ SISTEMA**](/windows/desktop/api/Winnt/ns-winnt-system_alarm_object_ace)
 </dt> <dt>
 
-[**\_ACE de auditoría del sistema \_**](/windows/desktop/api/Winnt/ns-winnt-system_audit_ace)
+[**ACE \_ DE AUDITORÍA DEL \_ SISTEMA**](/windows/desktop/api/Winnt/ns-winnt-system_audit_ace)
 </dt> </dl>
 

@@ -1,38 +1,38 @@
 ---
-description: En este tema se describen los métodos para resolver un nombre del mismo nivel mediante las API del proveedor de espacio de nombres PNRP.
+description: En este tema se de abordan los métodos para resolver un nombre del mismo nivel mediante las API del proveedor de espacios de nombres PNRP.
 ms.assetid: 7b21ec52-bc29-447e-9c46-34b9115574e0
 title: Resolución de un nombre de mismo nivel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e7f3aa59d3dc3be89f35ce9d6eca58bed1ce137
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7aefcae37c8853982fff8f4e925641ab9c650b8946766983fa437f9df18e01d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117794448"
 ---
 # <a name="resolving-a-peer-name"></a>Resolución de un nombre de mismo nivel
 
-En este tema se describen los métodos para resolver un nombre del mismo nivel mediante las API del proveedor de espacio de nombres PNRP.
+En este tema se de abordan los métodos para resolver un nombre del mismo nivel mediante las API del proveedor de espacios de nombres PNRP.
 
 Al resolver un nombre del mismo nivel, debe proporcionar la siguiente información:
 
 -   [Nombre del mismo nivel](peer-names.md)
--   [Resolver criterios](/windows/desktop/api/Pnrpdef/ne-pnrpdef-pnrp_resolve_criteria)
--   Nombre de la nube en la que se va a resolver el nombre del mismo nivel
--   Dirección IP, que es opcional y se utiliza como una sugerencia.
+-   [Resolución de criterios](/windows/desktop/api/Pnrpdef/ne-pnrpdef-pnrp_resolve_criteria)
+-   Nombre de nube en el que se va a resolver el nombre del mismo nivel
+-   Dirección IP, que es opcional y se usa como sugerencia
 
 ## <a name="resolving-a-peer-name"></a>Resolución de un nombre de mismo nivel
 
-Después de proporcionar un nombre de mismo nivel, los criterios de resolución, el nombre de la nube y la dirección IP opcional, deben realizarse los siguientes pasos para completar la resolución de un nombre de mismo nivel:
+Después de proporcionar un nombre del mismo nivel, resolver criterios, nombre de nube y la dirección IP opcional, se deben realizar los pasos siguientes para completar la resolución de un nombre del mismo nivel:
 
--   Llame a [**WSALookupServiceBegin**](pnrp-and-wsalookupservicebegin.md) para iniciar el proceso y devolver un identificador.
--   Llame a [**WSALookupServiceNext**](pnrp-and-wsalookupservicenext.md) para resolver el nombre del mismo nivel.
--   Llame a [**WSALookupServiceEnd**](pnrp-and-wsalookupserviceend.md) para completar el proceso.
+-   Llame a [**WSALookupServiceBegin**](pnrp-and-wsalookupservicebegin.md) para comenzar el proceso y devolver un identificador.
+-   Llame [**a WSALookupServiceNext para**](pnrp-and-wsalookupservicenext.md) resolver el nombre del mismo nivel.
+-   Llame [**a WSALookupServiceEnd**](pnrp-and-wsalookupserviceend.md) para completar el proceso.
 
-## <a name="an-example-of-resolving-a-peer-name"></a>Ejemplo de resolución de un nombre de mismo nivel
+## <a name="an-example-of-resolving-a-peer-name"></a>Un ejemplo de resolución de un nombre del mismo nivel
 
-En el fragmento de código siguiente se muestra cómo resolver un nombre del mismo nivel. En el ejemplo se supone que se devolverá una dirección TCP/IP.
+El siguiente fragmento de código muestra cómo resolver un nombre del mismo nivel. En el ejemplo se supone que se devolverá una dirección TCP/IP.
 
 
 ```C++

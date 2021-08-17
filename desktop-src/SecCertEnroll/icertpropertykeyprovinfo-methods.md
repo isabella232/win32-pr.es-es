@@ -4,16 +4,16 @@ ms.assetid: 70BA96BE-E2A3-4CD7-BE24-5644ED81EA89
 title: Métodos ICertPropertyKeyProvInfo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2f766f7d085a985e0438ee38b1b98d577efce0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab26972d7423d7d1f94de165699b26fb64a96022c9b01abda4ae3038659826b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117778815"
 ---
 # <a name="icertpropertykeyprovinfo-methods"></a>Métodos ICertPropertyKeyProvInfo
 
-La interfaz [**ICertPropertyKeyProvInfo**](/windows/desktop/api/CertEnroll/nn-certenroll-icertpropertykeyprovinfo) expone los métodos siguientes.
+La [**interfaz ICertPropertyKeyProvInfo**](/windows/desktop/api/CertEnroll/nn-certenroll-icertpropertykeyprovinfo) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

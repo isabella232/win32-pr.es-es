@@ -4,12 +4,12 @@ ms.assetid: abfc84d5-954f-4524-b3cb-5c5b9cfc7fa0
 title: MFPKEY_COMPLEXITYEX propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20579bcf7a06dc11f47cbef6a53629f3a36b48dc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e658e438909677f326372caa9e4da533e350b7133cc647b8f56562d09ad949e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117873542"
 ---
 # <a name="mfpkey_complexityex-property"></a>Propiedad MFPKEY \_ COMPLEXITYEX
 
@@ -31,8 +31,8 @@ El valor predeterminado depende de la versión del codificador de vídeo, como s
 
 | Versión del codificador                 | Valor predeterminado |
 |---------------------------------|---------------|
-| Windows Media Video codificador 9   | 3             |
-| Windows Media Video codificador 7/8 | 1             |
+| Windows Codificador Media Video 9   | 3             |
+| Windows Codificador Media Video 7/8 | 1             |
 
 
 
@@ -46,8 +46,8 @@ Los valores posibles dependen de la versión del codificador de vídeo, como se 
 
 | Versión del codificador                 | Valores posibles  |
 |---------------------------------|------------------|
-| Windows Media Video codificador 9   | 0, 1, 2, 3, 4, 5 |
-| Windows Media Video codificador 7/8 | 0, 1             |
+| Windows Codificador Media Video 9   | 0, 1, 2, 3, 4, 5 |
+| Windows Codificador Media Video 7/8 | 0, 1             |
 
 
 
@@ -55,9 +55,9 @@ Los valores posibles dependen de la versión del codificador de vídeo, como se 
 
 ## <a name="remarks"></a>Comentarios
 
-Los valores más bajos hacen que el códec use algoritmos de codificación menos complicados. Aunque los algoritmos más sencillos generan resultados de menor calidad, el proceso de codificación es más rápido y requiere menos capacidad de procesamiento. Esto puede ser importante al codificar contenido desde un origen en directo porque el codificador debe procesar las entradas lo suficientemente rápido como para mantenerse al día con el origen.
+Los valores inferiores hacen que el códec use algoritmos de codificación menos complicados. Aunque los algoritmos más sencillos generan resultados de menor calidad, el proceso de codificación es más rápido y requiere menos potencia de procesamiento. Esto puede ser importante al codificar contenido desde un origen en directo porque el codificador debe procesar las entradas lo suficientemente rápido como para mantenerse al día con el origen.
 
-Cualquier valor asignado a esta propiedad se omitirá si la propiedad [MFPKEY \_ COMPRESSIONOPTIMIZATIONTYPE](mfpkey-compressionoptimizationtypeproperty.md) está establecida en 1. En ese caso, MFPKEY \_ COMPLEXITYEX se establece automáticamente en 3.
+Cualquier valor asignado a esta propiedad se omitirá si la propiedad [ \_ MFPKEY COMPRESSIONOPTIMIZATIONTYPE](mfpkey-compressionoptimizationtypeproperty.md) está establecida en 1. En ese caso, MFPKEY \_ COMPLEXITYEX se establece automáticamente en 3.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,9 +65,9 @@ Cualquier valor asignado a esta propiedad se omitirá si la propiedad [MFPKEY \_
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Left (propiedad, objeto PropertySheet)
+title: Left (Propiedad, objeto PropertySheet)
 description: Obtenga información sobre la propiedad de objeto Left PropertySheet. Microsoft Agent está en desuso a partir Windows 7.
 ms.assetid: 81b90391-300f-4100-98fe-7657223e3bfd
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118476363"
 ---
-# <a name="left-property-propertysheet-object"></a>Left (propiedad, objeto PropertySheet)
+# <a name="left-property-propertysheet-object"></a>Left (Propiedad, objeto PropertySheet)
 
 \[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
@@ -27,7 +27,7 @@ Devuelve un valor entero que especifica el borde izquierdo actual, en píxeles, 
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-*agent,. PropertySheet.Left**
+*agent!". PropertySheet.Left**
 
 </dd> </dl>
 

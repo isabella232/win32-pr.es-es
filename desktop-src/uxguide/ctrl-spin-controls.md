@@ -36,7 +36,7 @@ Aunque los controles de número se usan para la entrada numérica, la entrada no
 Para decidirte, intenta responder a estas preguntas:
 
 -   **¿Se usa el control para la entrada numérica?** Si no es así, use otro control, como [una lista](/windows/desktop/uxguide/ctrl-drop) desplegable o un control [deslizante,](ctrl-sliders.md)para seleccionar entre un conjunto fijo de valores. Use barras de desplazamiento para desplazarse.
--   **¿Los usuarios creen que el valor es una cantidad relativa, no un valor numérico?** Si es así, use un control deslizante en su lugar. Use cuadros de número solo para valores numéricos exactos conocidos. Por ejemplo, al ajustar el volumen, los usuarios piensan en términos de bajo o medio, y no piensan que deben ajustar el valor de volumen en 2 o 5.
+-   **¿Los usuarios creen que el valor es una cantidad relativa, no un valor numérico?** Si es así, use un control deslizante en su lugar. Use cuadros de número solo para valores numéricos exactos y conocidos. Por ejemplo, al ajustar el volumen, los usuarios piensan en términos de bajo o medio, y no piensan que deben ajustar el valor de volumen en 2 o 5.
 -   **¿El control está emparejado con un cuadro de texto?** Si no es así, no lo use. Los controles de número no deben usarse solos ni con otros tipos de controles además de un cuadro de texto.
 
     **Incorrecto:**
@@ -58,7 +58,7 @@ Para decidirte, intenta responder a estas preguntas:
 
     Aunque los controles de número se pueden usar para cualquier entrada numérica, son ineficaces en situaciones distintas de estas.
 
--   **¿Es útil el control de número?** ¿Se usa el control en un contexto en el que es probable que los usuarios estén usando el mouse? Si no es así, considere un control de giro opcional.
+-   **¿Es útil el control de número?** ¿Se usa el control en un contexto en el que es probable que los usuarios utilicen el mouse? Si no es así, considere un control de giro opcional.
 -   **¿Son las listas desplegables de controles del mismo nivel?** Si hay otras listas desplegables, considere la posibilidad de usar una lista desplegable para mantener la coherencia.
 
     ![captura de pantalla del cuadro de diálogo con listas desplegables ](images/ctrl-spin-controls-image4.png)
@@ -108,7 +108,7 @@ Usa el control deslizante si:
 
     En el ejemplo correcto, el control de número se coloca dentro de su cuadro de texto asociado.
 
--   **Deshabilite un control de giro cuando su cuadro de texto asociado esté deshabilitado.** El control de número es un método de entrada complementario, nunca el único método de entrada.
+-   **Deshabilite un control de giro cuando se deshabilite su cuadro de texto asociado.** El control de número es un método de entrada complementario, nunca el único método de entrada.
 
 ### <a name="values"></a>Valores
 
@@ -152,7 +152,7 @@ Usa el control deslizante si:
 
 Al hacer referencia a controles de giro:
 
--   No consulte los controles de giro en la documentación del usuario. En su lugar, consulte la etiqueta del cuadro de texto asociado.
+-   No haga referencia a los controles de giro en la documentación del usuario. En su lugar, consulte la etiqueta del cuadro de texto asociado.
 -   Consulte controles de giro y cuadros de giro solo en programación y otra documentación técnica.
 
 Ejemplo: en el **cuadro Fecha,** escriba o seleccione la parte de la fecha que desea cambiar.

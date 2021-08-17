@@ -108,7 +108,7 @@ Tamaño, en bytes, del búfer al que hace referencia *ppValidatedPrintTicket.*
 *pbstrErrorMessage* \[ out, opcional\]
 </dt> <dd>
 
-Puntero a una cadena que especifica qué, si hay algo, no es válido sobre el vale de impresión en *pBasePrintTicket* o *pDeltaPrintTicket*. Si ambos son válidos, este valor es **NULL.** Si *pbstrErrorMessage* no es **NULL cuando** la función vuelve, el autor de la llamada debe liberar la cadena con [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring).
+Puntero a una cadena que especifica qué, si hay algo, no es válido sobre el vale de impresión en *pBasePrintTicket* o *pDeltaPrintTicket*. Si ambos son válidos, este valor es **NULL.** Si *pbstrErrorMessage* no es **NULL cuando** se devuelve la función, el autor de la llamada debe liberar la cadena con [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring).
 
 </dd> </dl>
 

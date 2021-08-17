@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_ROOT_DESCRIPTOR_TABLE1 estructura (D3dx12. h)
-description: Una estructura auxiliar para habilitar la inicialización sencilla de una \_ \_ estructura TABLE1 del descriptor raíz D3D12 \_ .
+title: CD3DX12_ROOT_DESCRIPTOR_TABLE1 estructura (D3dx12.h)
+description: Estructura auxiliar para permitir la inicialización sencilla de una estructura DE DESCRIPTOR RAÍZ TABLE1 de D3D12. \_ \_ \_
 ms.assetid: 82AC1948-92AA-4A4D-B443-717E9BF3046D
 keywords:
-- Estructura de CD3DX12_ROOT_DESCRIPTOR_TABLE1
+- CD3DX12_ROOT_DESCRIPTOR_TABLE1 estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e3538e5e1e199fdb6f8c7473af4996ccd7b7f1f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4570629b810fb7a088c7cfd88e3626412d5580beb1891a1a30daf9ffabede5d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117733997"
 ---
-# <a name="cd3dx12_root_descriptor_table1-structure"></a>CD3DX12 \_ \_ estructura TABLE1 del descriptor raíz \_
+# <a name="cd3dx12_root_descriptor_table1-structure"></a>Estructura TABLE1 del \_ \_ DESCRIPTOR RAÍZ \_ DE CD3DX12
 
-Una estructura auxiliar para habilitar la inicialización sencilla de una estructura [**\_ \_ \_ TABLE1 del descriptor raíz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor_table1) .
+Estructura auxiliar para permitir la inicialización sencilla de una estructura [**DE \_ DESCRIPTOR RAÍZ \_ \_ TABLE1 de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor_table1)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,52 +45,52 @@ struct CD3DX12_ROOT_DESCRIPTOR_TABLE1  : public D3D12_ROOT_DESCRIPTOR_TABLE1{
 
 <dl> <dt>
 
-**CD3DX12 \_ root \_ descriptor \_ TABLE1 ()**
+**CD3DX12 \_ ROOT \_ DESCRIPTOR \_ TABLE1()**
 </dt> <dd>
 
-Crea una nueva instancia no inicializada de un \_ \_ descriptor de raíz CD3DX12 \_ TABLE1.
+Crea una nueva instancia sin inicializar de un DESCRIPTOR RAÍZ TABLE1 de CD3DX12. \_ \_ \_
 
 </dd> <dt>
 
-**descriptor de raíz CD3DX12 explícito \_ \_ \_ TABLE1 (const D3D12 \_ raíz \_ \_ Table1 &o)**
+**EXPLICIT CD3DX12 \_ \_ ROOT DESCRIPTOR \_ TABLE1(const D3D12 \_ ROOT DESCRIPTOR \_ \_ TABLE1 &o)**
 </dt> <dd>
 
-Crea una nueva instancia de un \_ \_ descriptor de raíz CD3DX12 \_ Table1, inicializada con el contenido de otra estructura [**\_ \_ \_ TABLE1 del descriptor raíz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor_table1) .
+Crea una nueva instancia de un DESCRIPTOR RAÍZ TABLE1 de CD3DX12, inicializado con el contenido de otra estructura DE \_ DESCRIPTOR RAÍZ \_ \_ [**\_ \_ \_ TABLE1 de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor_table1)
 
 </dd> <dt>
 
-**CD3DX12 \_ root \_ descriptor \_ TABLE1 (uint NUMDESCRIPTORRANGES, const D3D12 \_ descriptor \_ RANGE1 \* \_ pDescriptorRanges)**
+**CD3DX12 \_ \_ ROOT DESCRIPTOR \_ TABLE1(UINT numDescriptorRanges, const D3D12 \_ DESCRIPTOR \_ RANGE1 \* \_ pDescriptorRanges)**
 </dt> <dd>
 
-Crea una nueva instancia de un \_ \_ descriptor raíz CD3DX12 \_ TABLE1, inicializando los siguientes parámetros:
+Crea una nueva instancia de un DESCRIPTOR RAÍZ TABLE1 de CD3DX12, \_ \_ \_ inicializando los parámetros siguientes:
 
 UINT numDescriptorRanges
 
-const [**D3D12 \_ descriptor \_ RANGE1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range1) \* \_ pDescriptorRanges
+const [**D3D12 \_ DESCRIPTOR \_ RANGE1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range1) \* \_ pDescriptorRanges
 
 </dd> <dt>
 
-**Init en línea (UINT numDescriptorRanges, const D3D12 \_ descriptor \_ RANGE1 \* \_ pDescriptorRanges)**
+**inline Init(UINT numDescriptorRanges, const D3D12 \_ DESCRIPTOR \_ RANGE1 \* \_ pDescriptorRanges)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
 
 UINT numDescriptorRanges
 
-const [**D3D12 \_ descriptor \_ RANGE1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range1) \* \_ pDescriptorRanges
+const [**D3D12 \_ DESCRIPTOR \_ RANGE1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range1) \* \_ pDescriptorRanges
 
 </dd> <dt>
 
-**Inicial inline init (D3D12 \_ root \_ descriptor \_ TABLE1 &RootDescriptorTable, uint NUMDESCRIPTORRANGES, const D3D12 \_ descriptor \_ RANGE1 \* \_ pDescriptorRanges)**
+**static inline Init(D3D12 \_ ROOT \_ DESCRIPTOR \_ TABLE1 &rootDescriptorTable, UINT numDescriptorRanges, const D3D12 \_ DESCRIPTOR \_ RANGE1 \* \_ pDescriptorRanges)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
 
-[**D3D12 \_ Descriptor de raíz \_ \_ TABLE1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor_table1) &rootDescriptorTable
+[**D3D12 \_ ROOT \_ DESCRIPTOR \_ TABLE1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor_table1) &rootDescriptorTable
 
 UINT numDescriptorRanges
 
-const [**D3D12 \_ descriptor \_ RANGE1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range1) \* \_ pDescriptorRanges
+const [**D3D12 \_ DESCRIPTOR \_ RANGE1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range1) \* \_ pDescriptorRanges
 
 </dd> </dl>
 
@@ -100,7 +100,7 @@ const [**D3D12 \_ descriptor \_ RANGE1**](/windows/desktop/api/d3d12/ns-d3d12-d3
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -108,7 +108,7 @@ const [**D3D12 \_ descriptor \_ RANGE1**](/windows/desktop/api/d3d12/ns-d3d12-d3
 
 <dl> <dt>
 
-[**D3D12 \_ el \_ descriptor raíz \_ TABLE1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor_table1)
+[**D3D12 \_ ROOT \_ DESCRIPTOR \_ TABLE1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor_table1)
 </dt> <dt>
 
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)

@@ -1,49 +1,49 @@
 ---
-description: Opciones de compilación de HLSL.
+description: Opciones de compilación HLSL.
 ms.assetid: vs|directx_sdk|~\d3d10_shader.htm
-title: Constantes de D3D10_SHADER
+title: D3D10_SHADER constantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f16480e2aceada7f5ed05912eca59cc88886ac9b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2e965c050d3643e80b493875b27ba5a9b774b351487e191584f40297819758f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104496439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118303528"
 ---
-# <a name="d3d10_shader-constants"></a>D3D10 \_ constantes de sombreador
+# <a name="d3d10_shader-constants"></a>Constantes SHADER de D3D10 \_
 
-Opciones de compilación de HLSL.
+Opciones de compilación HLSL.
 
 
 
-| \#define                                        | Descripción                                                                                                                                                                                                                                    |
+| \#Definir                                        | Descripción                                                                                                                                                                                                                                    |
 |-------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_Sombreador de D3D10 \_ evitar el control de \_ flujo \_             | Indique al compilador que no permita el control de flujo (cuando sea posible).                                                                                                                                                                                       |
-| \_Depuración de sombreador D3D10 \_                            | Inserte la información de archivo de depuración/línea/tipo/símbolo.                                                                                                                                                                                                |
-| El \_ sombreador D3D10 \_ habilita la \_ rigurosidad               | De forma predeterminada, el compilador de HLSL deshabilita la limitación en la sintaxis desusada. Si se especifica esta marca, se habilita la limitación, lo que podría no permitir la sintaxis heredada.                                                                                         |
-| \_Sombreador D3D10 \_ habilitar \_ compatibilidad con versiones anteriores \_ | Esto permite a los sombreadores más antiguos compilar en 4 \_ destinos.                                                                                                                                                                                         |
-| D3D10 \_ Shader \_ Force \_ vs \_ software \_ no \_ OPT     | Compilar un sombreador de vértices para el siguiente perfil de sombreador más alto. Esta opción activa la depuración (y optimiza la desactivación).                                                                                                                           |
-| \_Sombreador D3D10 \_ Force \_ \_ Software PS \_ no \_ OPT     | Compilar un sombreador de píxeles para el siguiente perfil del sombreador más alto. Esta opción activa la depuración (y optimiza la desactivación).                                                                                                                            |
-| D3D10 del \_ sombreador \_ IEEE \_                 | Habilita la limitación IEEE.                                                                                                                                                                                                                       |
-| \_Sombreador de D3D10 \_ sin \_ sombreador                    | Deshabilita los sombreadores. El uso de esta marca hará que el compilador no extraiga la expresión estática para su evaluación.                                                                                                                                 |
-| D3D10 \_ optimización del sombreador \_ \_ LEVEL0             | Nivel de optimización más bajo. Puede generar código más lento, pero lo hará más rápidamente. Esto puede resultar útil en un ciclo de desarrollo de sombreador muy iterativo.                                                                                             |
-| D3D10 \_ optimización del sombreador \_ \_ Level1             | Segundo nivel de optimización inferior.                                                                                                                                                                                                              |
-| D3D10 \_ optimización del sombreador \_ \_ LEVEL2             | Segundo nivel de optimización más alto.                                                                                                                                                                                                             |
-| D3D10 \_ optimización del sombreador \_ \_ level3             | Nivel de optimización más alto. Producirá el mejor código posible, pero puede tardar mucho más tiempo en hacerlo. Esto será útil para las compilaciones finales de una aplicación donde el rendimiento es el factor más importante.                                 |
-| D3D10 \_ fila de matriz del módulo de sombreador \_ \_ \_ \_ principal         | A menos que se especifique explícitamente, las matrices se empaquetarán en orden principal de fila en la entrada y la salida del sombreador.                                                                                                                                   |
-| D3D10 \_ columna de matriz del módulo de sombreador \_ \_ \_ \_ principal      | A menos que se especifique explícitamente, las matrices se empaquetarán en el orden principal de la columna en la entrada y la salida del sombreador. Esto suele ser más eficaz, ya que permite que se realice la multiplicación de matrices vectoriales mediante una serie de productos de punto. |
-| \_Precisión parcial del sombreador D3D10 \_ \_               | Forzar que todos los cálculos se realicen con precisión parcial; Esto puede ejecutarse más rápido en el hardware.                                                                                                                                                |
-| El \_ sombreador D3D10 \_ prefiere el \_ control de flujo \_            | Indique al compilador que use Flow-Control (cuando sea posible).                                                                                                                                                                                             |
-| \_ \_ Omitir optimización de sombreador de D3D10 \_               | Omitir optimización durante la generación de código; se suele recomendar solo para la depuración.                                                                                                                                                                |
-| \_ \_ Omitir validación de sombreador de D3D10 \_                 | No valide el código generado con respecto a las capacidades y restricciones conocidas. Úselo solo con los sombreadores que se hayan compilado correctamente en el pasado. Los sombreadores siempre se validan mediante DirectX antes de que se establezcan en el dispositivo.         |
-| Las \_ advertencias del sombreador D3D10 \_ \_ son \_ errores            | Informe al compilador de HLSL para que trate todas las advertencias como errores al compilar el código del sombreador. En el caso del nuevo código del sombreador, debe usar esta opción para resolver todas las advertencias y garantizar el menor número posible de defectos de código difíciles de encontrar.             |
+| SOMBREADOR D3D10 \_ EVITE EL CONTROL DE \_ \_ \_ FLUJO             | Diga al compilador que no permita el control de flujo (cuando sea posible).                                                                                                                                                                                       |
+| DEPURACIÓN DEL SOMBREADOR D3D10 \_ \_                            | Inserte la información del archivo de depuración, la línea, el tipo o el símbolo.                                                                                                                                                                                                |
+| EL SOMBREADOR D3D10 \_ \_ HABILITA LA \_ STRICTNESS               | De forma predeterminada, el compilador HLSL deshabilita el estricto en la sintaxis en desuso. Si se especifica esta marca, se habilita la estrictaza, lo que puede no permitir la sintaxis heredada.                                                                                         |
+| EL SOMBREADOR D3D10 \_ HABILITA LA COMPATIBILIDAD CON VERSIONES \_ \_ \_ ANTERIORES | Esto permite que los sombreadores más antiguos se compilen en 4 \_ 0 destinos.                                                                                                                                                                                         |
+| D3D10 \_ SHADER \_ FORCE \_ VS \_ SOFTWARE \_ NO \_ OPT     | Compile un sombreador de vértices para el siguiente perfil de sombreador más alto. Esta opción activa la depuración (y las optimizaciones se desactivan).                                                                                                                           |
+| D3D10 \_ SHADER \_ FORCE \_ PS \_ SOFTWARE \_ NO \_ OPT     | Compile un sombreador de píxeles para el siguiente perfil de sombreador más alto. Esta opción activa la depuración (y las optimizaciones se desactivan).                                                                                                                            |
+| ESTRICTAD10 DEL \_ SOMBREADOR D3D10 \_ IEEE \_                 | Habilita la integridad de IEEE.                                                                                                                                                                                                                       |
+| SOMBREADOR D3D10 \_ \_ SIN \_ PRESHADER                    | Deshabilita los preshaders. El uso de esta marca hará que el compilador no extraiga la expresión estática para la evaluación.                                                                                                                                 |
+| D3D10 \_ SHADER \_ OPTIMIZATION \_ LEVEL0             | Nivel de optimización más bajo. Puede generar código más lento, pero lo hará más rápidamente. Esto puede ser útil en un ciclo de desarrollo de sombreador muy iterativo.                                                                                             |
+| D3D10 \_ SHADER \_ OPTIMIZATION \_ LEVEL1             | Segundo nivel de optimización más bajo.                                                                                                                                                                                                              |
+| D3D10 \_ SHADER \_ OPTIMIZATION \_ LEVEL2             | Segundo nivel de optimización más alto.                                                                                                                                                                                                             |
+| D3D10 \_ SHADER \_ OPTIMIZATION \_ LEVEL3             | Nivel de optimización más alto. Producirá el mejor código posible, pero puede tardar mucho más tiempo en hacerlo. Esto será útil para las compilaciones finales de una aplicación donde el rendimiento es el factor más importante.                                 |
+| D3D10 \_ SHADER \_ PACK \_ MATRIX \_ ROW \_ MAJOR         | A menos que se especifique explícitamente, las matrices se empaquetarán en orden de fila principal en la entrada y salida del sombreador.                                                                                                                                   |
+| COLUMNA PRINCIPAL DE LA MATRIZ DEL \_ \_ PAQUETE DE SOMBRAS \_ \_ D3D10 \_      | A menos que se especifique explícitamente, las matrices se empaquetarán en orden de columna principal en la entrada y salida del sombreador. Por lo general, esto es más eficaz, ya que permite realizar la multiplicación de matrices vectoriales mediante una serie de productos de punto. |
+| PRECISIÓN PARCIAL DEL SOMBREADOR D3D10 \_ \_ \_               | Forzar que todos los cálculos se realizan con precisión parcial; esto puede ejecutarse más rápido en algún hardware.                                                                                                                                                |
+| SOMBREADOR D3D10 \_ PREFIERE EL CONTROL DE \_ \_ \_ FLUJO            | Diga al compilador que use el control de flujo (cuando sea posible).                                                                                                                                                                                             |
+| OPTIMIZACIÓN DE SKIP \_ DEL \_ SOMBREADOR D3D10 \_               | Omitir optimización durante la generación de código; generalmente se recomienda solo para la depuración.                                                                                                                                                                |
+| VALIDACIÓN DE SKIP \_ DEL SOMBREADOR D3D10 \_ \_                 | No valide el código generado con las funcionalidades y restricciones conocidas. Use esta opción solo con sombreadores que se hayan compilado correctamente en el pasado. DirectX siempre valida los sombreadores antes de establecerse en el dispositivo.         |
+| LAS ADVERTENCIAS DEL SOMBREADOR D3D10 \_ \_ SON \_ \_ ERRORES            | Informe al compilador HLSL de que trate todas las advertencias como errores al compilar el código del sombreador. Para el nuevo código de sombreador, debe usar esta opción para poder resolver todas las advertencias y garantizar el menor número posible de defectos de código difíciles de encontrar.             |
 
 
 
  
 
-Estas constantes se definen como macros en d3d10shader. h.
+Estas constantes se definen como macros en d3d10shader.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 

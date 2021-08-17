@@ -2,7 +2,7 @@
 description: Representa un descriptor de seguridad.
 ms.assetid: 1ade1751-52a2-4ada-8255-323321111663
 ms.tgt_platform: multiple
-title: __SecurityDescriptor (clase)
+title: __SecurityDescriptor clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,16 +20,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 5f305387a29d1d1569addafd127f53c98246e1a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c248a437651396811f71c04e72dd8b209c5d10823f49d03abbe7e9d9ee6b6867
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118110202"
 ---
-# <a name="__securitydescriptor-class"></a>\_\_SecurityDescriptor (clase)
+# <a name="__securitydescriptor-class"></a>\_\_Clase SecurityDescriptor
 
-La clase del sistema de Resumen de **\_ \_ SecurityDescriptor** representa un [*descriptor de seguridad*](/windows/desktop/SecGloss/s-gly).
+La **\_ \_ clase del sistema abstracta SecurityDescriptor** representa un [*descriptor de seguridad*](/windows/desktop/SecGloss/s-gly).
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -49,39 +49,39 @@ class __SecurityDescriptor
 
 ## <a name="members"></a>Miembros
 
-La clase **\_ \_ SecurityDescriptor** tiene estos tipos de miembros:
+La **\_ \_ clase SecurityDescriptor** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **\_ \_ SecurityDescriptor** tiene estas propiedades.
+La **\_ \_ clase SecurityDescriptor** tiene estas propiedades.
 
 <dl> <dt>
 
 **ControlFlags**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Marcas de bits que proporcionan información sobre el contenido y el formato del descriptor. Vea la propiedad **ControlFlags** de la [**clase \_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) para obtener una descripción de las marcas.
+Marcas de bits que proporcionan información sobre el contenido y el formato del descriptor. Consulte la **propiedad ControlFlags** en la [**clase \_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) para obtener una descripción de las marcas.
 
 </dd> <dt>
 
-**DACL**
+**Dacl**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **[**\_ \_ ACE**](--ace.md)**
+Tipo de datos: **[**\_ \_ matriz ACE**](--ace.md)**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Matriz de entradas [**\_ \_ ACE**](--ace.md) que especifican el acceso al objeto.
+Matriz de [**\_ \_ entradas ACE**](--ace.md) que especifican el acceso al objeto .
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ Tipo de datos: **[ **\_ \_ ACE**](--ace.md)**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-ACE que identifica el administrador de confianza que representa el grupo del objeto.
+ACE que identifica al administrador de confianza que representa el grupo del objeto.
 
 </dd> <dt>
 
@@ -107,11 +107,11 @@ Tipo de datos: **[ **\_ \_ ACE**](--ace.md)**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-ACE que identifica el administrador de confianza que representa el propietario del objeto.
+ACE que identifica al administrador de confianza que representa al propietario del objeto.
 
 </dd> <dt>
 
-**SACL**
+**Sacl**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **[ **\_ \_ ACE**](--ace.md)**
@@ -120,26 +120,26 @@ Tipo de datos: **[ **\_ \_ ACE**](--ace.md)**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de entradas [**\_ \_ ACE**](--ace.md) que identifica los usuarios y los grupos para los que se recopila información de auditoría.
+Matriz de [**\_ \_ entradas ACE**](--ace.md) que identifica usuarios y grupos para los que se recopila información de auditoría.
 
 </dd> <dt>
 
-**HORA de \_ creación**
+**HORA \_ CREADA**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Hora en el formato de [ \_ fecha y](cim-datetime.md) hora de CIM cuando se creó el descriptor de seguridad.
+Hora en el [formato \_ DATETIME de CIM](cim-datetime.md) en la que se creó el descriptor de seguridad.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta clase proporciona propiedades heredadas por el [**\_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor). Para obtener más información, vea [objetos de descriptor de seguridad de WMI](wmi-security-descriptor-objects.md) y cambiar la [seguridad de acceso en objetos protegibles](changing-access-security-on-securable-objects.md). Para obtener más información sobre las ACE, vea [componentes de Access Control](/windows/desktop/SecAuthZ/access-control-components).
+Esta clase proporciona propiedades heredadas por [**Win32 \_ SecurityDescriptor.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) Para obtener más información, vea [Objetos descriptores de seguridad WMI y](wmi-security-descriptor-objects.md) Cambiar la seguridad de acceso en objetos [protegibles.](changing-access-security-on-securable-objects.md) Para obtener más información sobre las ACE, [vea Access Control Components](/windows/desktop/SecAuthZ/access-control-components).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -160,10 +160,10 @@ Esta clase proporciona propiedades heredadas por el [**\_ SecurityDescriptor de 
 [Clases del sistema WMI](wmi-system-classes.md)
 </dt> <dt>
 
-[**SecurityDescriptor de Win32 \_**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
+[**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
 </dt> <dt>
 
-[Mantenimiento de la seguridad de WMI](maintaining-wmi-security.md)
+[Mantener la seguridad de WMI](maintaining-wmi-security.md)
 </dt> </dl>
 
  

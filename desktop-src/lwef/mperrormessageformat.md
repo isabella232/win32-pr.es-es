@@ -1,9 +1,9 @@
 ---
-title: Función MpErrorMessageFormat (MpClient. h)
+title: Función MpErrorMessageFormat (MpClient.h)
 description: Devuelve un mensaje de error con formato basado en un código de error.
 ms.assetid: C125FCE4-3BB0-4608-BBF3-E7FEF17D0807
 keywords:
-- Función MpErrorMessageFormat características de entorno heredado de Windows
+- Función MpErrorMessageFormat Heredada de Windows environment
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a3499b3be885b29135d22b470da4143cfb23ea6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 124bf9e2c5c2ecc18f286b99f0c3b93695abd3f6a40853fcc47de580edef5db4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883512"
 ---
-# <a name="mperrormessageformat-function"></a>MpErrorMessageFormat función)
+# <a name="mperrormessageformat-function"></a>Función MpErrorMessageFormat
 
 Devuelve un mensaje de error con formato basado en un código de error.
 
@@ -42,7 +42,7 @@ HRESULT WINAPI MpErrorMessageFormat(
 
 <dl> <dt>
 
-*hMpHandle* \[ de\]
+*hMpHandle* \[ En\]
 </dt> <dd>
 
 Tipo: **MPHANDLE**
@@ -51,21 +51,21 @@ Identificador de la interfaz del administrador de protección contra malware. La
 
 </dd> <dt>
 
-*hrError* \[ de\]
+*hrError* \[ En\]
 </dt> <dd>
 
 Tipo: **HRESULT**
 
-Un código de error basado en **HRESULT**.
+Código de error basado en **HRESULT.**
 
 </dd> <dt>
 
-*pwszErrorDesc* \[ enuncia\]
+*pwszErrorDesc* \[ out\]
 </dt> <dd>
 
-Tipo: **LPWStr \** _
+Tipo: **LPWSTR \***
 
-Devuelve un mensaje de error con formato basado en _hrError *. Esta cadena se debe liberar mediante [**MpFreeMemory**](mpfreememory.md).
+Devuelve un mensaje de error con formato basado en *hrError*. Esta cadena debe liberarse mediante [**MpFreeMemory.**](mpfreememory.md)
 
 </dd> </dl>
 
@@ -73,26 +73,26 @@ Devuelve un mensaje de error con formato basado en _hrError *. Esta cadena se de
 
 Tipo: **HRESULT**
 
-Si la función se ejecuta correctamente, el valor devuelto es **S \_ OK**.
+Si la función se realiza correctamente, el valor devuelto es **S \_ OK**.
 
-Si se produce un error en la función, el valor devuelto es un código **HRESULT** erróneo.
+Si se produce un error en la función, el valor devuelto es un **código HRESULT** con errores.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función es capaz de dar formato a los códigos de error del sistema, además de códigos de error específicos devueltos por las funciones de protección contra malware. Los códigos de error **HRESULT** específicos de las funciones de protección contra malware tienen una instalación de 0x50. A continuación se muestra una lista de un subconjunto de códigos de error específicos de protección contra malware que pueden ser devueltos por diversas funciones de protección contra malware. Con la macro **HRESULT \_ del \_ \_ Estado de MP**, los siguientes códigos de error se pueden convertir en **HRESULT**. Vea también [códigos de error del motor de antimalware de Forefront Client Security](https://support.microsoft.com/kb/939359) para obtener una lista de otros códigos de error posibles.
+Esta función es capaz de aplicar formato a los códigos de error del sistema además de códigos de error específicos devueltos por las funciones de protección contra malware. Los códigos de error **HRESULT** específicos de las funciones de protección contra malware tienen una 0x50. A continuación se muestra una lista de un subconjunto de los códigos de error específicos de la protección contra malware que pueden devolver varias funciones de protección contra malware. Con la macro **HRESULT \_ FROM MP \_ \_ STATUS**, los siguientes códigos de error se pueden convertir en **HRESULT**. Consulte también [Códigos de error del motor antimalware](https://support.microsoft.com/kb/939359) de Forefront Client Security para obtener una lista de otros códigos de error posibles.
 
 
 
 | Código de error                              | Descripción                                                                                                                 |
 |-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| ERROR de procesador \_ MP \_                     | No se ha cargado ningún motor en el servicio antimalware para realizar la operación solicitada.                                              |
-| ERROR de \_ MP \_ sin \_ memoria                   | El motor de antimalware ha encontrado una situación de falta de memoria.                                                               |
-| ERROR de \_ eliminación del módulo de administración \_ \_               | No se pudo realizar la operación de eliminación de una amenaza concreta.                                                                              |
-| ERROR de \_ cuarentena del módulo de administración \_ \_           | No se pudo realizar la operación de cuarentena para una amenaza concreta.                                                                          |
-| \_ \_ \_ no \_ se encontró la amenaza del módulo de administración           | La amenaza específica ya no existe en el sistema.                                                                         |
-| ERROR \_ al \_ quitar MP \_ no \_ compatible       | No se admite la operación de eliminación de una amenaza concreta dentro del tipo de contenedor.                                          |
-| ERROR de \_ MP \_ quitar \_ contenedor inmutable \_ | Debido a la Directiva del motor, no se admite una operación de eliminación de una amenaza específica dentro de un contenedor bloqueado. (Archivos de correo electrónico). |
-| ERROR \_ MP \_ BADDB \_ OLDENGINE             | La solicitud de actualización de firma proporcionó un motor o archivos de firma antiguos.                                                    |
+| ERROR \_ MP \_ NOENGINE                     | No se carga ningún motor en el servicio antimalware para realizar la operación solicitada.                                              |
+| ERROR \_ MP \_ NO \_ MEMORY                   | El motor antimalware no ha encontrado ninguna situación de memoria.                                                               |
+| ERROR \_ AL QUITAR EL \_ MP \_               | Error en la operación de eliminación de una amenaza específica.                                                                              |
+| ERROR AL \_ PONER EN CUARENTENA EL \_ MP \_           | Error en la operación de cuarentena para una amenaza específica.                                                                          |
+| ERROR \_ NO SE ENCONTRÓ LA AMENAZA DE \_ \_ MP \_           | La amenaza específica ya no existe en el sistema.                                                                         |
+| NO \_ SE ADMITE LA \_ \_ ELIMINACIÓN DE MP DE \_ ERROR       | No se admite la operación de eliminación de una amenaza específica dentro del tipo de contenedor.                                          |
+| ERROR \_ MP \_ REMOVE \_ IMMUTABLE \_ CONTAINER | Debido a la directiva del motor, no se admite una operación de eliminación de una amenaza específica dentro de un contenedor bloqueado. (Archivos de correo). |
+| ERROR \_ MP \_ BADDB \_ OLDENGINE             | La solicitud de actualización de firma proporcionaba un motor o archivos de firma más antiguos.                                                    |
 
 
 
@@ -102,26 +102,26 @@ Esta función es capaz de dar formato a los códigos de error del sistema, adem�
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**MpFreeMemory**](mpfreememory.md)
 </dt> <dt>
 
-[**MpManagerOpen**](mpmanageropen.md)
+[**MpManagerAbrir**](mpmanageropen.md)
 </dt> <dt>
 
-[Códigos de error del motor de antimalware de Forefront Client Security](https://support.microsoft.com/kb/939359)
+[Códigos de error del motor antimalware de Forefront Client Security](https://support.microsoft.com/kb/939359)
 </dt> </dl>
 
  

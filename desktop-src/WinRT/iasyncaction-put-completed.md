@@ -1,7 +1,7 @@
 ---
 description: Establece el método al que se llama cuando se completa la acción asincrónica.
 ms.assetid: 632800E4-D02B-4D45-8A9B-B373AC938558
-title: IAsyncAction::p ut_Completed método
+title: IAsyncAction::p ut_Completed (Método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Windows.Foundation.idl
-ms.openlocfilehash: ec26401aeeed61445b0f244880864366fd5c6118
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aff219d5e6847c64034eed1b057e300ea601eedaa8aa7a131f1467aeacc42422
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118323168"
 ---
-# <a name="iasyncactionput_completed-method"></a>IAsyncAction: \_ método completado:p UT
+# <a name="iasyncactionput_completed-method"></a>Método IAsyncAction::p ut \_ Completed
 
 Establece el método al que se llama cuando se completa la acción asincrónica.
 
@@ -39,34 +39,34 @@ HRESULT put_Completed(
 
 <dl> <dt>
 
-*controlador* \[ de enuncia\]
+*controlador* \[ out\]
 </dt> <dd>
 
-Tipo: **[**AsyncActionCompletedHandler**](asyncactioncompletedhandler.md) \** _
+Tipo: **[ **AsyncActionCompletedHandler**](asyncactioncompletedhandler.md)\***
 
-El método que controla la notificación de finalización.
+Método que controla la notificación de finalización.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                    |
-| Encabezado<br/>                   | <dl> <dt>Windows. Foundation. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Windows. Foundation.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

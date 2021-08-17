@@ -1,9 +1,9 @@
 ---
-title: frac
-description: Devuelve la parte fraccionaria (o decimal) de x; que es mayor o igual que 0 y menor que 1.
+title: Frac
+description: Devuelve la parte fraccional (o decimal) de x; que es mayor o igual que 0 y menor que 1.
 ms.assetid: 4e85390f-2b1a-402b-b932-09b80097f7e6
 keywords:
-- HLSL de frac
+- frac HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 468bddc34f22f9bb5f34871102678e1765148b11
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: acc2553a59509ab6a8ad4c1ed5ec11df8c775763963a77f60c074bdf43d389f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104488218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117726263"
 ---
-# <a name="frac"></a>frac
+# <a name="frac"></a>Frac
 
-Devuelve la parte fraccionaria (o decimal) de x; que es mayor o igual que 0 y menor que 1.
+Devuelve la parte fraccional (o decimal) de x; que es mayor o igual que 0 y menor que 1.
 
-Vea también [trunc](./dx-graphics-hlsl-trunc.md).
+Consulte también [trunc](./dx-graphics-hlsl-trunc.md).
 
-| *RET* frac (*x*) |
+| *ret* frac(*x*) |
 |-----------------|
 
 
@@ -39,7 +39,7 @@ Vea también [trunc](./dx-graphics-hlsl-trunc.md).
 
 | Elemento                                                   | Descripción                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*x1*<br/> | \[en \] el valor especificado.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[en \] El valor especificado.<br/> |
 
 
 
@@ -47,22 +47,22 @@ Vea también [trunc](./dx-graphics-hlsl-trunc.md).
 
 ## <a name="return-value"></a>Valor devuelto
 
-Parte fraccionaria del parámetro *x* .
+Parte fraccional del *parámetro x.*
 
 ## <a name="type-description"></a>Descripción del tipo
 
 
 
-| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamaño                           |
+| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **Vector** o **matriz** | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
-| *direcc* | igual que la entrada *x*                                                                                              | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | mismas dimensiones que la entrada *x* |
+| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vector** o **matriz** | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
+| *Ret* | igual que la entrada *x*                                                                                              | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -70,7 +70,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible |
 |------------------------------------------------------------------------------------|-----------|
-| Modelador [modelo 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador más altos | sí       |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | Sí       |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1  |
 
 
@@ -81,7 +81,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

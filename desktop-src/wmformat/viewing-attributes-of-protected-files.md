@@ -3,55 +3,55 @@ title: Ver atributos de archivos protegidos
 description: Ver atributos de archivos protegidos
 ms.assetid: fbfa1a1b-afd0-4f61-86ae-488716e16355
 keywords:
-- SDK de Windows Media Format, ver atributos de archivos protegidos
-- SDK de Windows Media Format, atributos de archivos protegidos
-- SDK de Windows Media Format, archivos protegidos
-- Advanced Systems Format (ASF), ver atributos de archivos protegidos
-- ASF (formato de sistemas avanzados), ver atributos de archivos protegidos
-- Advanced Systems Format (ASF), atributos de archivos protegidos
+- Windows SDK de formato multimedia, visualización de atributos de archivos protegidos
+- Windows SDK de formato multimedia, atributos de archivos protegidos
+- Windows SDK de formato multimedia, archivos protegidos
+- Formato de sistemas avanzados (ASF), visualización de atributos de archivos protegidos
+- ASF (formato de sistemas avanzados), visualización de atributos de archivos protegidos
+- Formato de sistemas avanzados (ASF), atributos de archivos protegidos
 - ASF (formato de sistemas avanzados), atributos de archivos protegidos
-- Advanced Systems Format (ASF), archivos protegidos
+- Formato de sistemas avanzados (ASF), archivos protegidos
 - ASF (formato de sistemas avanzados), archivos protegidos
-- Administración de derechos digitales (DRM), ver atributos de archivos protegidos
-- DRM (administración de derechos digitales), ver atributos de archivos protegidos
-- Administración de derechos digitales (DRM), atributos de archivos protegidos
+- administración de derechos digitales (DRM), visualización de atributos de archivos protegidos
+- DRM (administración de derechos digitales), visualización de atributos de archivos protegidos
+- administración de derechos digitales (DRM), atributos de archivos protegidos
 - DRM (administración de derechos digitales), atributos de archivos protegidos
-- Administración de derechos digitales (DRM), archivos protegidos
+- administración de derechos digitales (DRM), archivos protegidos
 - DRM (administración de derechos digitales), archivos protegidos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 642e9f580c3dffa1d3785985d548a5f971cfc218
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 37cd09e61dbd5515d643cbffe8cce809d0f828e8d153858c78ee52db7e714344
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103788686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117844918"
 ---
 # <a name="viewing-attributes-of-protected-files"></a>Ver atributos de archivos protegidos
 
-En algunos escenarios, puede que necesite recuperar determinados atributos DRM en un archivo sin tener acceso realmente al contenido del archivo. Esta funcionalidad es útil, por ejemplo, en aplicaciones que procesan lotes de archivos de maneras diferentes en función de la información del encabezado de archivo. En versiones anteriores del SDK de Windows Media Format, las aplicaciones tenían que vincularse a la biblioteca estática de DRM para poder abrir cualquier archivo protegido. Las aplicaciones que no tienen la biblioteca DRM pueden utilizar la interfaz [**IWMDRMEditor:: GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmeditor-getdrmproperty) en el objeto editor de metadatos para examinar determinados atributos DRM.
+En algunos escenarios, es posible que tenga que recuperar determinados atributos DRM en un archivo sin acceder realmente al contenido del archivo. Esta funcionalidad es útil, por ejemplo, en aplicaciones que procesan lotes de archivos de diferentes maneras en función de la información del encabezado de archivo. En versiones anteriores del SDK Windows Media Format, las aplicaciones tenían que vincularse a la biblioteca estática drm para abrir cualquier archivo protegido. Las aplicaciones que no tienen la biblioteca DRM pueden usar la interfaz [**IWMDRMEditor::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmeditor-getdrmproperty) en el objeto del editor de metadatos para examinar determinados atributos DRM.
 
 > [!Note]  
 > DRM no es compatible con la versión basada en x64 de este SDK.
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Lista de atributos de DRM**](drm-attribute-list.md)
+[**Lista de atributos DRM**](drm-attribute-list.md)
 </dt> <dt>
 
-[**Habilitar la compatibilidad con DRM**](enabling-drm-support.md)
+[**Habilitación de la compatibilidad con DRM**](enabling-drm-support.md)
 </dt> <dt>
 
-[**Interfaz IWMDRMEditor**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmeditor)
+[**IWMDRMEditor (Interfaz)**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmeditor)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

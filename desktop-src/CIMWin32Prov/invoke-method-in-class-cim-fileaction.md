@@ -1,8 +1,8 @@
 ---
-description: El método Invoke de la \_ clase CIM FileAction toma una acción concreta. Los detalles de cómo realiza la acción el método son específicos de la implementación. Este método se hereda de la \_ acción CIM.
+description: El método Invoke de la clase FileAction de CIM \_ realiza una acción determinada. Los detalles de cómo el método realiza la acción son específicos de la implementación. Este método se hereda de la acción \_ CIM.
 ms.assetid: f7514d67-4141-4d1a-bdfd-83aa062291aa
 ms.tgt_platform: multiple
-title: Método Invoke de la clase CIM_FileAction
+title: Método Invoke de la CIM_FileAction clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b1d0a877936a27a681a20e5ffd73da9dda77dcf4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 773af1441d7866fdff1a9720e5324c04dfa442c4506b03f3cb75abd1efb04934
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104274917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117834689"
 ---
-# <a name="invoke-method-of-the-cim_fileaction-class"></a>Método Invoke de la \_ clase CIM FileAction
+# <a name="invoke-method-of-the-cim_fileaction-class"></a>Método Invoke de la clase \_ FileAction de CIM
 
-El método **Invoke** de la clase [**CIM \_ FileAction**](cim-fileaction.md) toma una acción concreta. Los detalles de cómo realiza la acción el método son específicos de la implementación. Este método se hereda de [**la \_ acción CIM**](cim-action.md).
+El **método Invoke** de la clase [**\_ FileAction de CIM**](cim-fileaction.md) realiza una acción determinada. Los detalles de cómo el método realiza la acción son específicos de la implementación. Este método se hereda de la [**acción \_ CIM**](cim-action.md).
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,36 +47,36 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si se realiza correctamente, 1 (uno) si no se admite el método, y cualquier otro número para indicar un error.
+Devuelve un valor de 0 (cero) si se ejecuta correctamente, 1 (uno) si no se admite el método y cualquier otro número para indicar un error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no está implementado actualmente por WMI. Para usar este método, debe implementarlo en su propio proveedor.
+Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[\_FILEACTION CIM](invoke-method-in-class-cim-fileaction.md)
+[CIM \_ FileAction](invoke-method-in-class-cim-fileaction.md)
 </dt> <dt>
 
-[**\_FILEACTION CIM**](cim-fileaction.md)
+[**CIM \_ FileAction**](cim-fileaction.md)
 </dt> </dl>
 
  

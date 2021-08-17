@@ -1,12 +1,12 @@
 ---
-title: Método WSMan. SessionFlagSkipCACheck (WSManDisp. h)
-description: Devuelve el valor de la marca de autenticación WSManFlagSkipCACheck para su uso en el parámetro flags de WSMan. CreateSession.
+title: Método WSMan.SessionFlagSkipCACheck (WSManDisp.h)
+description: Devuelve el valor de la marca de autenticación WSManFlagSkipCACheck para su uso en el parámetro flags de WSMan.CreateSession.
 ms.assetid: a67cadb3-c20a-4a58-a13b-5bbd23c547d1
 ms.tgt_platform: multiple
 keywords:
-- Método SessionFlagSkipCACheck Administración remota de Windows
-- Administración remota de Windows método SessionFlagSkipCACheck, objeto WSMan
-- Administración remota de Windows de objeto WSMan, método SessionFlagSkipCACheck
+- Método SessionFlagSkipCACheck Windows administración remota
+- Método SessionFlagSkipCACheck Windows de administración remota , objeto WSMan
+- Objeto WSMan Windows administración remota, método SessionFlagSkipCACheck
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e536112b16ad8cbab3cebb2de582a2e0ea8aec0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fe24e10ca7a568a6dc9b3af6efed6e31a3a9fde5acac70e2badab37d24373350
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117742034"
 ---
-# <a name="wsmansessionflagskipcacheck-method"></a>WSMan. SessionFlagSkipCACheck (método)
+# <a name="wsmansessionflagskipcacheck-method"></a>Método WSMan.SessionFlagSkipCACheck
 
-El método **WSMan. SessionFlagSkipCACheck** devuelve el valor de la marca de autenticación **WSManFlagSkipCACheck** para su uso en el parámetro *Flags* de [**WSMan. createSession**](wsman-createsession.md). Este método proporciona una sintaxis más eficaz para usar la constante, de modo que los scripts no sean necesarios para establecer un valor constante. Para obtener más información sobre cómo llamar a este método y ejemplos de código, vea [constantes de sesión](session-constants.md).
+El **método WSMan.SessionFlagSkipCACheck** devuelve el valor de la marca de autenticación **WSManFlagSkipCACheck** para su uso en el parámetro *flags* de [**WSMan.CreateSession**](wsman-createsession.md). Este método proporciona una sintaxis más eficaz para usar la constante para que los scripts no sean necesarios para establecer un valor constante. Para obtener más información sobre cómo llamar a este método y ejemplos de código, vea [Constantes de sesión](session-constants.md).
 
-**WSManFlagSkipCACheck** es una constante de la enumeración **\_ \_ WSManSessionFlags** . Para obtener más información, consulte [**constantes de autenticación**](authentication-constants.md).
+**WSManFlagSkipCACheck es** una constante en la **\_ \_ enumeración WSManSessionFlags.** Para obtener más información, vea [**Constantes de autenticación**](authentication-constants.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ WSMan.SessionFlagSkipCACheck( _
 
 <dl> <dt>
 
-*marcas* \[ de enuncia\]
+*flags* \[ out\]
 </dt> <dd>
 
 Valor de la constante.
@@ -54,7 +54,7 @@ Valor de la constante.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,9 +64,9 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 
@@ -78,7 +78,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 [**WSMan**](wsman.md)
 </dt> <dt>
 
-[**De sesión**](session.md)
+[**Sesión**](session.md)
 </dt> </dl>
 
  

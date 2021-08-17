@@ -1,9 +1,9 @@
 ---
-title: Atributo radioformat
-description: El atributo radioformat es una descripción del tipo de contenido proporcionado por la estación de radio.
+title: Atributo RadioFormat
+description: El atributo RadioFormat es una descripción del tipo de contenido proporcionado por la estación de radio.
 ms.assetid: f614ea24-bd82-4efe-8240-400a62e5b5f2
 keywords:
-- Media Player de atributos de radioformato
+- Atributo RadioFormat Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,42 +12,42 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37dd942521374abe029bed05d63d64b03a134316
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5e1aa70f89d8f75f4e52472f463bcf5cac298a65a73e5b528b43398dbcc6802e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118333876"
 ---
-# <a name="radioformat-attribute"></a>Atributo radioformat
+# <a name="radioformat-attribute"></a>Atributo RadioFormat
 
-El atributo **radioformat** es una descripción del tipo de contenido proporcionado por la estación de radio.
+El **atributo RadioFormat** es una descripción del tipo de contenido proporcionado por la estación de radio.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de radio](radio-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo solo se almacena en la biblioteca.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------|
-| Versión<br/> | Solo Windows Media Player 9 series<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 solo<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

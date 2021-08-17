@@ -1,11 +1,11 @@
 ---
-title: LogFiles. Remove (método)
+title: Método LogFiles.Remove
 description: Quita la instancia de LogFileItem especificada de la colección.
 ms.assetid: d2885ffd-5957-472c-9a67-2f1469d9b48b
 keywords:
-- Quitar método SysMon
-- Remove (método) SysMon, logfiles (clase)
-- Logfiles (clase) SysMon, Remove (método)
+- Método Remove SysMon
+- Método Remove SysMon , clase LogFiles
+- Clase LogFiles SysMon , método Remove
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 057607c57db600ca7a28c8a5bb6d75d5570829cb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c12c0bae91df3baf421638665a5587612e6d1404c3300cf02b0308b7bef7d016
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117955445"
 ---
-# <a name="logfilesremove-method"></a>LogFiles. Remove (método)
+# <a name="logfilesremove-method"></a>Método LogFiles.Remove
 
 Quita la instancia de [**LogFileItem**](logfileitem.md) especificada de la colección.
 
@@ -42,10 +42,10 @@ LogFiles.Remove( _
 
 <dl> <dt>
 
-*Índice* \[ de de\]
+*index* \[ En\]
 </dt> <dd>
 
-Índice de entero del archivo de registro que se va a quitar de la colección. El índice está basado en uno.
+Índice entero del archivo de registro que se quitará de la colección. El índice se basa en uno.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ LogFiles.Remove( _
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**Antes de Windows Vista:** No se pueden quitar archivos de registro de la [**colección de archivos de registro**](systemmonitor-logfiles.md) si el valor de [**SystemMonitor. DataSourceType**](systemmonitor-datasourcetype.md) está establecido en sysmonLogFiles.
+**Antes de Windows Vista:** No se pueden quitar [](systemmonitor-logfiles.md) archivos de registro de la colección de archivos de registro si el valor de [**SystemMonitor.DataSourceType**](systemmonitor-datasourcetype.md) está establecido en sysmonLogFiles.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,7 +65,7 @@ Este método no devuelve ningún valor.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 

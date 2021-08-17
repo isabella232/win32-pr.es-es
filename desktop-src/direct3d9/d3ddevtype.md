@@ -1,7 +1,7 @@
 ---
 description: Define los tipos de dispositivo.
 ms.assetid: 2bcdc476-7c42-4152-b107-58366faf2abd
-title: Enumeración D3DDEVTYPE (D3D9Types. h)
+title: Enumeración D3DDEVTYPE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 2be365ffbbe5bf778379c7be060c85c0b099422f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d311706d328a5d05668a4d1dcddb032f17fba0c69e48286f899875a8da6a650e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117732995"
 ---
-# <a name="d3ddevtype-enumeration"></a>Enumeración D3DDEVTYPE
+# <a name="d3ddevtype-enumeration"></a>D3DDEVTYPE (enumeración)
 
 Define los tipos de dispositivo.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -43,50 +43,50 @@ typedef enum D3DDEVTYPE {
 
 <dl> <dt>
 
-<span id="D3DDEVTYPE_HAL"></span><span id="d3ddevtype_hal"></span>**\_Hal D3DDEVTYPE**
+<span id="D3DDEVTYPE_HAL"></span><span id="d3ddevtype_hal"></span>**D3DDEVTYPE \_ HAN**
 </dt> <dd>
 
-Rasterización de hardware. El sombreado se realiza con el software, el hardware o la transformación y la iluminación mixtas.
+Rasterización de hardware. El sombreado se realiza con software, hardware o transformación e iluminación mixtas.
 
 </dd> <dt>
 
 <span id="D3DDEVTYPE_NULLREF"></span><span id="d3ddevtype_nullref"></span>**D3DDEVTYPE \_ NULLREF**
 </dt> <dd>
 
-Inicialice Direct3D en un equipo que no tenga hardware ni rasterización de referencia disponible y habilite los recursos para la creación de contenido 3D. Vea la sección Comentarios.
+Inicialice Direct3D en un equipo que no tenga disponible el hardware ni la rasterización de referencia, y habilite los recursos para la creación de contenido 3D. Vea la sección Comentarios.
 
 </dd> <dt>
 
-<span id="D3DDEVTYPE_REF"></span><span id="d3ddevtype_ref"></span>**Referencia de D3DDEVTYPE \_**
+<span id="D3DDEVTYPE_REF"></span><span id="d3ddevtype_ref"></span>**D3DDEVTYPE \_ REF**
 </dt> <dd>
 
-Las características de Direct3D se implementan en el software; sin embargo, el rasterizador de referencia hace uso de instrucciones de CPU especiales siempre que sea posible.
+Las características de Direct3D se implementan en software; sin embargo, el rasterizador de referencia hace uso de instrucciones especiales de CPU siempre que puede.
 
-El dispositivo de referencia se instala con el Windows SDK 8,0 o posterior y está pensado como ayuda para la depuración solo para el desarrollo.
+El dispositivo de referencia se instala mediante Windows SDK 8.0 o posterior y está pensado como ayuda para depurar solo para el desarrollo.
 
 </dd> <dt>
 
 <span id="D3DDEVTYPE_SW"></span><span id="d3ddevtype_sw"></span>**D3DDEVTYPE \_ SW**
 </dt> <dd>
 
-Un dispositivo de software acoplable que se ha registrado con [**IDirect3D9:: RegisterSoftwareDevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-registersoftwaredevice).
+Un dispositivo de software conectable que se ha registrado con [**IDirect3D9::RegisterSoftwareDevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-registersoftwaredevice).
 
 </dd> <dt>
 
-<span id="D3DDEVTYPE_FORCE_DWORD"></span><span id="d3ddevtype_force_dword"></span>**D3DDEVTYPE \_ forzar \_ DWORD**
+<span id="D3DDEVTYPE_FORCE_DWORD"></span><span id="d3ddevtype_force_dword"></span>**D3DDEVTYPE \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase a un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se producirá un error en todos los métodos de la interfaz [**IDirect3D9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3d9) que toman un tipo de dispositivo **D3DDEVTYPE** si \_ se especifica D3DDEVTYPE NULLREF. Para usar estos métodos, sustituya D3DDEVTYPE \_ ref en la llamada al método.
+Todos los métodos de [**la interfaz IDirect3D9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3d9) que toman un tipo de dispositivo **D3DDEVTYPE** producirán un error si se especifica D3DDEVTYPE \_ NULLREF. Para usar estos métodos, sustituya D3DDEVTYPE \_ REF en la llamada al método .
 
-Se \_ debe crear un dispositivo de referencia D3DDEVTYPE en la \_ memoria temporal de D3DPOOL, a menos que se requieran búferes de vértices y de índices. Para admitir los búferes de vértices y de índices, cree el dispositivo en D3DPOOL \_ SYSTEMMEM Memory.
+Se debe crear un dispositivo D3DDEVTYPE REF en la memoria SCRATCH de D3DPOOL, a menos que se requieran búferes de \_ \_ vértices e índices. Para admitir búferes de vértices e índices, cree el dispositivo en la memoria SYSTEMMEM de D3DPOOL. \_
 
-Si D3dref9.dll está instalado, Direct3D usará el rasterizador de referencia para crear un \_ tipo de dispositivo D3DDEVTYPE Ref, incluso si \_ se especifica D3DDEVTYPE NULLREF. Si D3dref9.dll no está disponible y \_ se especifica D3DDEVTYPE NULLREF, Direct3D no representará ni presentará la escena.
+Si D3dref9.dll está instalado, Direct3D usará el rasterizador de referencia para crear un tipo de dispositivo D3DDEVTYPE REF, incluso si se especifica \_ D3DDEVTYPE \_ NULLREF. Si D3dref9.dll no está disponible y se especifica D3DDEVTYPE NULLREF, Direct3D no representará \_ ni presentará la escena.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -94,7 +94,7 @@ Si D3dref9.dll está instalado, Direct3D usará el rasterizador de referencia pa
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -120,7 +120,7 @@ Si D3dref9.dll está instalado, Direct3D usará el rasterizador de referencia pa
 [**IDirect3D9::GetDeviceCaps**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3d9-getdevicecaps)
 </dt> <dt>
 
-[**\_Parámetros de creación de D3DDEVICE \_**](d3ddevice-creation-parameters.md)
+[**PARÁMETROS DE CREACIÓN DE DISPOSITIVOS D3D \_ \_**](d3ddevice-creation-parameters.md)
 </dt> </dl>
 
  

@@ -1,74 +1,74 @@
 ---
-title: Configuración del registro de esquema personalizado
-description: Configuración del registro de esquema personalizado
+title: Registro de esquemas personalizados Configuración
+description: Registro de esquemas personalizados Configuración
 ms.assetid: ded2b492-7755-4ba5-87cf-720a79ec79de
 keywords:
-- Windows Media Player, configuración del registro de esquema personalizado
-- Media Player de Windows, esquemas
-- Media Player de Windows, registro
-- registro, configuración de esquema personalizado
-- registro, esquemas
-- registro, configuración para Windows Media Player
+- Reproductor de Windows Media, configuración del Registro de esquemas personalizados
+- Reproductor de Windows Media,schemes
+- Reproductor de Windows Media,registry
+- registry,custom scheme settings
+- registry,schemes
+- registry,settings for Reproductor de Windows Media
 - esquemas
-- configuración del registro de esquema personalizado
+- configuración del Registro de esquemas personalizados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a02649d9536140fff0ff0d3188a5b25feb49688
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: af1f20b69570a18d256049bb0e785099e43b091d080e4f9f65e62655c3103d68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117750398"
 ---
-# <a name="custom-scheme-registry-settings"></a>Configuración del registro de esquema personalizado
+# <a name="custom-scheme-registry-settings"></a>Registro de esquemas personalizados Configuración
 
-Los esquemas son protocolos personalizados. Windows Media Player mantiene una lista de esquemas del registro en el equipo del usuario. Cuando el usuario intenta reproducir un archivo multimedia digital, el reproductor comprueba primero si el SDK de Windows Media Format es compatible con el esquema. Si no es así, el reproductor comprueba el esquema con la lista del registro. Si se encuentra una coincidencia, el reproductor comprueba un valor que indica qué tecnología subyacente, o *tiempo de ejecución* (como Microsoft DirectShow o el SDK de Windows Media Format), se puede usar para reproducir el archivo. Si no se encuentra ninguna coincidencia, el reproductor presenta al usuario un cuadro de diálogo de advertencia que solicita permiso al usuario para intentar reproducir el archivo. Si transmite por secuencias archivos multimedia digitales mediante un esquema de protocolo personalizado, puede evitar que esta advertencia aparezca en el equipo del usuario registrando el esquema y proporcionando un valor para el tiempo de ejecución.
+Los esquemas son protocolos personalizados. Reproductor de Windows Media mantiene una lista de esquemas en el Registro en el equipo del usuario. Cuando el usuario intenta reproducir un archivo multimedia digital, el Reproductor comprueba primero si el SDK Windows Media Format admite el esquema. Si no es así, el reproductor comprueba el esquema con la lista del Registro. Si se encuentra una coincidencia, el Reproductor comprueba un valor que indica qué tecnología subyacente o tiempo de ejecución *(como* Microsoft DirectShow o el SDK de formato multimedia de Windows) se pueden usar para reproducir el archivo. Si no se encuentra ninguna coincidencia, el reproductor presenta al usuario un cuadro de diálogo de advertencia que solicita permiso al usuario para intentar reproducir el archivo. Si transmite archivos multimedia digitales mediante un esquema de protocolo personalizado, puede evitar que esta advertencia aparezca en el equipo del usuario registrando el esquema y proporcionando un valor para el tiempo de ejecución.
 
-La lista de esquemas se mantiene como un conjunto de claves del registro que coinciden con los esquemas registrados, sin los dos puntos y las dos barras diagonales (://). Por ejemplo, la clave para el esquema wmhtml://, que se usa para transmitir multimedia enriquecidas, se denomina "wmhtml". Se mantiene una lista independiente para el equipo local y para cada usuario. En el caso del equipo local, las claves de esquema son subclaves de la siguiente clave del registro:
+La lista de esquemas se mantiene como un conjunto de claves del Registro que coinciden con los esquemas registrados, sin los dos puntos y las dos barras diagonales (://). Por ejemplo, la clave del esquema de wmhtml://, que se usa para transmitir medios enriquecidos, se denomina "wmhtml". Se mantiene una lista independiente para la máquina local y para cada usuario. Para la máquina local, las claves de esquema son subclaves de la siguiente clave del Registro:
 
-**HKEY \_ local \_ Machine \\ software \\ Microsoft \\ multimedia \\ WMPlayer \\ schemes\\**
+**HKEY \_ LOCAL \_ MACHINE \\ Software \\ Microsoft \\ Multimedia \\ WMPlayer \\ Schemes\\**
 
-Por ejemplo, la clave del esquema wmhtml://para el equipo local es:
+Por ejemplo, la clave del esquema de wmhtml:// para la máquina local es:
 
-**HKEY \_ local \_ Machine \\ software \\ Microsoft \\ multimedia \\ WMPlayer \\ schemes \\ wmhtml**
+**HKEY \_ LOCAL MACHINE Software Microsoft Multimedia \_ \\ \\ \\ \\ WMPlayer \\ Schemes \\ wmhtml**
 
 Para cambiar los valores de esta clave o para crear una nueva subclave, el usuario actual debe ser administrador del equipo.
 
-Para usuarios individuales, las claves de esquema son subclaves de la siguiente clave del registro:
+Para usuarios individuales, las claves de esquema son subclaves de la siguiente clave del Registro:
 
-**HKEY \_ Current \_ User \\ software \\ Microsoft \\ MediaPlayer \\ Player \\ schemes\\**
+**HKEY \_ CURRENT \_ USER \\ Software \\ Microsoft \\ MediaPlayer \\ Player \\ Schemes\\**
 
-Por ejemplo, la clave del esquema wmhtml://para el usuario actual es:
+Por ejemplo, la clave del esquema wmhtml:// para el usuario actual es:
 
-**HKEY \_ Current \_ User \\ software \\ Microsoft \\ MediaPlayer \\ Player \\ schemes \\ wmhtml**
+**HKEY \_ CURRENT USER Software Microsoft \_ \\ \\ \\ MediaPlayer Player \\ \\ Schemes \\ wmhtml**
 
-Al comprobar los esquemas registrados, el reproductor comprueba primero los valores ubicados en **HKEY \_ local \_ Machine**. Si no se encuentra ninguno para el esquema actual, el reproductor comprueba después los valores de **HKEY \_ Current \_ User**. Si no se encuentra ninguno para el esquema actual, el reproductor muestra la advertencia al usuario.
+Al comprobar los esquemas registrados, el reproductor comprueba primero los valores ubicados en **HKEY \_ LOCAL \_ MACHINE**. Si no se encuentra ninguno para el esquema actual, el reproductor comprueba los valores en **HKEY \_ CURRENT \_ USER**. Si no se encuentra ninguno para el esquema actual, el reproductor muestra la advertencia al usuario.
 
-Cada subclave de esquema puede contener uno de los siguientes valores posibles para el *tiempo de ejecución*.
+Cada subclave de esquema puede contener uno de los siguientes valores posibles *para* runtime.
 
 
 
 | Value | Descripción                                |
 |-------|--------------------------------------------|
-| 6     | Se representa mediante el SDK de Windows Media Format. |
-| 7     | Se representa mediante Microsoft DirectShow.         |
+| 6     | Representación mediante el SDK Windows Media Format. |
+| 7     | Representar mediante Microsoft DirectShow.         |
 
 
 
- 
+ 
 
-Cambiar el valor *en tiempo de ejecución* de un esquema compatible con el SDK de Windows Media Format no tendrá ningún efecto. El reproductor siempre usará el SDK de Windows Media Format como tiempo de ejecución para los esquemas compatibles con el SDK de Windows Media Format. Este valor del registro está diseñado para permitir la configuración en tiempo de ejecución para esquemas personalizados.
+Cambiar el *valor en* tiempo de ejecución de un esquema que Windows EL SDK de formato multimedia no tendrá ningún efecto. El Reproductor siempre usará el SDK Windows Media Format como tiempo de ejecución para los esquemas que admite Windows SDK de formato multimedia. Este valor del Registro está diseñado para permitir la configuración en tiempo de ejecución para esquemas personalizados.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Configuración del registro**](registry-settings.md)
+[**Configuración del Registro**](registry-settings.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

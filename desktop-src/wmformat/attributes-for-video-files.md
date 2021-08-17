@@ -18,9 +18,9 @@ ms.locfileid: "118434614"
 ---
 # <a name="attributes-for-video-files"></a>Atributos para archivos de vídeo
 
-En esta sección se enumeran los atributos que se usan habitualmente para los archivos de vídeo. Se recomienda establecer atributos para los archivos de acuerdo con estas listas para asegurarse de que los archivos son totalmente compatibles con una amplia variedad de aplicaciones de reproducción. Los atributos de esta sección se enumeran en tres categorías: principal, secundaria y terciaria.
+En esta sección se enumeran los atributos que se usan habitualmente para los archivos de vídeo. Se recomienda establecer atributos para los archivos según estas listas para asegurarse de que los archivos son totalmente compatibles con una amplia variedad de aplicaciones de reproducción. Los atributos de esta sección se enumeran en tres categorías: principal, secundaria y terciaria.
 
-Los atributos principales transmiten la información más básica sobre un archivo. Si va a crear archivos de vídeo para su distribución, este es el conjunto mínimo de atributos que debe usar.
+Los atributos principales transmiten la información más básica sobre un archivo. Si va a crear archivos de vídeo para la distribución, este es el conjunto mínimo de atributos que debe usar.
 
 Los atributos secundarios contienen metadatos comunes que son importantes, pero no universales para todos los archivos de vídeo.
 
@@ -31,11 +31,11 @@ Los atributos terciarios deben incluirse según sea necesario, pero no son esenc
 -   [**Autor**](author.md)
 -   [**Título**](title.md)
 -   [**WM/ContentDistributor**](wm-contentdistributor.md)
--   [**WM/DVDID**](wm-dvdid.md) (si está disponible; de lo contrario, use [**WM/WMCollectionID**](wm-wmcollectionid.md), [**WM/WMCollectionGroupID**](wm-wmcollectiongroupid.md)y [**WM/WMContentID**](wm-wmcontentid.md))
+-   [**WM/DVDID (si está**](wm-dvdid.md) disponible; de lo contrario, use [**WM/WMCollectionID**](wm-wmcollectionid.md), [**WM/WMCollectionGroupID**](wm-wmcollectiongroupid.md)y [**WM/WMContentID**](wm-wmcontentid.md))
 -   [**WM/Genre**](wm-genre.md)
 -   [**WM/MediaClassPrimaryID**](wm-mediaprimaryid.md)
 -   [**WM/MediaClassSecondaryID**](wm-mediasecondaryid.md)
--   [**WM/Proveedor**](wm-provider.md)
+-   [**WM/Provider**](wm-provider.md)
 
 ## <a name="secondary-attributes-for-video"></a>Atributos secundarios para vídeo
 

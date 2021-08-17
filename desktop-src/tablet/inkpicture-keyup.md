@@ -1,19 +1,19 @@
 ---
-description: Se produce cuando se suelta una tecla mientras el control InkPicture tiene el foco.
+description: Se produce cuando se libera una clave mientras el control InkPicture tiene el foco.
 ms.assetid: e22633b5-40fe-4b94-a660-684c4f5c96f3
-title: Evento InkPicture. KeyUp (Msinkaut. h)
+title: Evento InkPicture.KeyUp (Msyecciónut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c2390b6cbb7b91ab8e447df912e591ea37248e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 481e06556f3b4797f04e6b818ea5952d4275bf66467c7d6d0a0bd0e370c6ea12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118218426"
 ---
-# <a name="inkpicturekeyup-event"></a>InkPicture. KeyUp (evento)
+# <a name="inkpicturekeyup-event"></a>Evento InkPicture.KeyUp
 
-Se produce cuando se suelta una tecla mientras el control [InkPicture](inkpicture-control-reference.md) tiene el foco.
+Se produce cuando se libera una clave mientras el control [InkPicture](inkpicture-control-reference.md) tiene el foco.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,14 +34,14 @@ void KeyUp(
 *KeyCode* \[ in, out\]
 </dt> <dd>
 
-Valor ASCII de la tecla que se va a presionar.
+Valor ASCII de la tecla que se está pulsando.
 
 </dd> <dt>
 
-*Desplazamiento* \[ in, out\]
+*Mayús* \[ in, out\]
 </dt> <dd>
 
-Estado de la tecla Mayús.
+Estado de la tecla MAYÚS.
 
 </dd> </dl>
 
@@ -49,24 +49,24 @@ Estado de la tecla Mayús.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método de evento se define en la interfaz **\_ IInkPictureEvents** . La interfaz **\_ IInkPictureEvents** implementa la interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de DISPID \_ IPEKeyUp.
+Este método de evento se define en la **\_ interfaz IInkPictureEvents.** La **\_ interfaz IInkPictureEvents** implementa la [**interfaz IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de DISPID \_ IPEKeyUp.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

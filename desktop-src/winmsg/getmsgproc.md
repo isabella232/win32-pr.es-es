@@ -1,7 +1,7 @@
 ---
 UID: ''
 title: Función de devolución de llamada GetMsgProc
-description: El sistema llama a esta función cuando una función de mensaje recibe un mensaje de una cola de mensajes de aplicación.
+description: El sistema llama a esta función cuando una función de mensaje obtiene un mensaje de una cola de mensajes de aplicación.
 old-location: ''
 ms.assetid: na
 ms.date: 04/05/2019
@@ -32,22 +32,22 @@ api_name: ''
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: aa055e4184cdc9be5bb60a421ad5937bbfd15393
-ms.sourcegitcommit: 4c00910ed754d7d0a68c9a833751d714c06e3b39
+ms.openlocfilehash: e5c51f2abe8b3660ae40bae05c13428e0622fd4d5c4b8020fea8caa924a35681
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "105696062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118200797"
 ---
-# <a name="getmsgproc-function"></a>GetMsgProc función)
+# <a name="getmsgproc-function"></a>Función GetMsgProc
 
-## <a name="-description"></a>-Descripción
+## <a name="-description"></a>-description
 
-Función de devolución de llamada definida por la aplicación o definida por la biblioteca que se usa con la función [SetWindowsHookEx](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw) . El sistema llama a esta función siempre que la función [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage) o [PeekMessage](/windows/desktop/api/winuser/nf-winuser-peekmessagew) recupere un mensaje de una cola de mensajes de aplicación.
+Función de devolución de llamada definida por la aplicación o definida por la biblioteca que se usa con la [función SetWindowsHookEx.](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw) El sistema llama a esta función cada vez que la función [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage) [o PeekMessage](/windows/desktop/api/winuser/nf-winuser-peekmessagew) ha recuperado un mensaje de una cola de mensajes de aplicación.
 Antes de devolver el mensaje recuperado al autor de la llamada, el sistema pasa el mensaje al procedimiento de enlace.
 
-El tipo **HOOKPROC** define un puntero a esta función de devolución de llamada.
-**GetMsgProc** es un marcador de posición para el nombre de la función definida por la aplicación o por la biblioteca.
+El **tipo HOOKPROC** define un puntero a esta función de devolución de llamada.
+**GetMsgProc es** un marcador de posición para el nombre de función definido por la aplicación o definido por la biblioteca.
 
 ```cpp
 LRESULT CALLBACK GetMsgProc(
@@ -57,55 +57,55 @@ LRESULT CALLBACK GetMsgProc(
 );
 ```
 
-## <a name="-parameters"></a>parámetros de
+## <a name="-parameters"></a>-parameters
 
-### <a name="code-in"></a>código [in]
+### <a name="code-in"></a>code [in]
 
 Tipo: **int**
 
 Especifica si el procedimiento de enlace debe procesar el mensaje.
-Si el *código* es **HC_ACTION**, el procedimiento de enlace debe procesar el mensaje.
-Si el *código* es menor que cero, el procedimiento de enlace debe pasar el mensaje a la función [CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex) sin más procesamiento y debe devolver el valor devuelto por **CallNextHookEx**.
+Si *el* código **HC_ACTION**, el procedimiento de enlace debe procesar el mensaje.
+Si *el* código es menor que cero, el procedimiento de enlace debe pasar el mensaje a la función [CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex) sin más procesamiento y debe devolver el valor devuelto por **CallNextHookEx**.
 
 ### <a name="wparam-in"></a>wParam [in]
 
-Tipo: **wParam**
+Tipo: **WPARAM**
 
 Especifica si el mensaje se ha quitado de la cola.
 Este parámetro puede ser uno de los valores siguientes.
 
 | Valor | Significado |
 |-------|---------|
-| **PM_NOREMOVE** 0x0000 | El mensaje no se ha quitado de la cola. (Una aplicación llamada la función **PeekMessage** , que especifica la marca **PM_NOREMOVE** ). |
-| **PM_REMOVE** 0x0001 | El mensaje se ha quitado de la cola. (Una aplicación llamada **GetMessage**, o llamada a la función  **PeekMessage** , que especifica la marca de **PM_REMOVE** ).|
+| **PM_NOREMOVE** 0x0000 | El mensaje no se ha quitado de la cola. (Una aplicación denominada función **PeekMessage,** que especifica la **marca PM_NOREMOVE).** |
+| **PM_REMOVE** 0x0001 | El mensaje se ha quitado de la cola. (Una aplicación denominada **GetMessage** o la función  **PeekMessage,** especificando el **PM_REMOVE** marca).|
 
 ### <a name="lparam-in"></a>lParam [in]
 
-Tipo: **lParam**
+Tipo: **LPARAM**
 
-Puntero a una estructura [MSG](/windows/desktop/api/winuser/ns-winuser-msg) que contiene detalles sobre el mensaje.
+Puntero a una [estructura MSG](/windows/desktop/api/winuser/ns-winuser-msg) que contiene detalles sobre el mensaje.
 
-## <a name="-returns"></a>-Devuelve
+## <a name="-returns"></a>-returns
 
-Si el *código* es menor que cero, el procedimiento de enlace debe devolver el valor devuelto por [CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex).
+Si *el* código es menor que cero, el procedimiento de enlace debe devolver el valor devuelto por [CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex).
 
-Si el *código* es mayor o igual que cero, se recomienda encarecidamente llamar a **CallNextHookEx** y devolver el valor que devuelve; de lo contrario, otras aplicaciones que tengan instalado [WH_GETMESSAGE](about-hooks.md) enlaces no recibirán notificaciones de enlace y se comportarán de forma incorrecta como resultado.
+Si *el* código es mayor o igual que cero, se recomienda encarecidamente llamar a **CallNextHookEx** y devolver el valor que devuelve. De lo contrario, otras aplicaciones que tienen instalados [WH_GETMESSAGE](about-hooks.md) de enlace no recibirán notificaciones de enlace y pueden comportarse incorrectamente como resultado.
 Si el procedimiento de enlace no llama a **CallNextHookEx**, el valor devuelto debe ser cero.
 
-## <a name="-remarks"></a>-Comentarios
+## <a name="-remarks"></a>-remarks
 
-El procedimiento de enlace **GetMsgProc** puede examinar o modificar el mensaje.
-Una vez que el procedimiento de enlace devuelve el control al sistema, la función **GetMessage** o **PeekMessage** devuelve el mensaje, junto con cualquier modificación, a la aplicación que lo llamó originalmente.
+El **procedimiento de enlace GetMsgProc** puede examinar o modificar el mensaje.
+Una vez que el procedimiento de enlace devuelve el control al sistema, la función **GetMessage** o **PeekMessage** devuelve el mensaje, junto con las modificaciones, a la aplicación que lo llamó originalmente.
 
-Una aplicación instala este procedimiento de enlace especificando el tipo de enlace de **WH_GETMESSAGE** y un puntero al procedimiento de enlace en una llamada a la función **SetWindowsHookEx** .
+Una aplicación instala este procedimiento de  enlace especificando WH_GETMESSAGE tipo de enlace y un puntero al procedimiento de enlace en una llamada a la **función SetWindowsHookEx.**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex)
 
 [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage)
 
-[MENSAJE](/windows/desktop/api/winuser/ns-winuser-msg)
+[Msg](/windows/desktop/api/winuser/ns-winuser-msg)
 
 [PeekMessage](/windows/desktop/api/winuser/nf-winuser-peekmessagew)
 

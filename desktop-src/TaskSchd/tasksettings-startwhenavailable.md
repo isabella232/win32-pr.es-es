@@ -1,11 +1,11 @@
 ---
-title: Propiedad TaskSettings. StartWhenAvailable
-description: En el caso de scripting, obtiene o establece un valor booleano que indica que el Programador de tareas puede iniciar la tarea en cualquier momento después de que haya transcurrido su hora programada.
+title: Propiedad TaskSettings.StartWhenAvailable
+description: Para el scripting, obtiene o establece un valor booleano que indica que el Programador de tareas puede iniciar la tarea en cualquier momento después de que haya transcurrido su hora programada.
 ms.assetid: 911de67c-baf8-4346-9b4c-e39e5f96c0fe
 keywords:
-- Programador de tareas de la propiedad StartWhenAvailable
-- Programador de tareas de la propiedad StartWhenAvailable, objeto TaskSettings
-- Programador de tareas de objeto TaskSettings, propiedad StartWhenAvailable
+- Propiedad StartWhenAvailable Programador de tareas
+- Propiedad StartWhenAvailable Programador de tareas , objeto TaskSettings
+- Objeto TaskSettings Programador de tareas , propiedad StartWhenAvailable
 topic_type:
 - apiref
 api_name:
@@ -16,20 +16,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 63325fbf7aa9186e5748294c2ef57302efa0c79b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a0ed43a04bba63d0e760866684df15c4cae5e80a1b3338d122408756f4cec46e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757928"
 ---
-# <a name="tasksettingsstartwhenavailable-property"></a>Propiedad TaskSettings. StartWhenAvailable
+# <a name="tasksettingsstartwhenavailable-property"></a>Propiedad TaskSettings.StartWhenAvailable
 
-En el caso de scripting, obtiene o establece un valor booleano que indica que el Programador de tareas puede iniciar la tarea en cualquier momento después de que haya transcurrido su hora programada.
+Para el scripting, obtiene o establece un valor booleano que indica que el Programador de tareas puede iniciar la tarea en cualquier momento después de que haya transcurrido su hora programada.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -40,15 +40,15 @@ TaskSettings.StartWhenAvailable As Boolean
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Si es true, la propiedad indica que el Programador de tareas puede iniciar la tarea en cualquier momento después de que haya transcurrido su hora programada. El valor predeterminado es False.
+Si es True, la propiedad indica que el Programador de tareas puede iniciar la tarea en cualquier momento después de que haya transcurrido su hora programada. El valor predeterminado es False.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad solo se aplica a las tareas basadas en tiempo con un límite final o tareas basadas en el tiempo que se establecen para repetirse infinitamente.
+Esta propiedad solo se aplica a las tareas basadas en tiempo con un límite final o tareas basadas en tiempo que se establecen para repetirse infinitamente.
 
-Las tareas que se inician después de que transcurra la hora programada (debido a que la propiedad [**StartWhenAvailable**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_startwhenavailable) se establece en true) se ponen en cola en la cola del servicio Programador de tareas de las tareas y se inician después de un retraso. El retraso predeterminado es de 10 minutos.
+Las tareas que se inician una vez transcurrido el tiempo programado (debido a que la propiedad [**StartWhenAvailable**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_startwhenavailable) se establece en True) se ponen en cola en la cola de tareas del servicio Programador de tareas y se inician después de un retraso. El retraso predeterminado es de 10 minutos.
 
-Al leer o escribir XML para una tarea, esta configuración se especifica en el elemento [**StartWhenAvailable**](taskschedulerschema-startwhenavailable-settingstype-element.md) del esquema de programador de tareas.
+Al leer o escribir XML para una tarea, esta configuración se especifica en el [**elemento StartWhenAvailable**](taskschedulerschema-startwhenavailable-settingstype-element.md) del Programador de tareas esquema.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,9 +56,9 @@ Al leer o escribir XML para una tarea, esta configuración se especifica en el e
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

@@ -1,5 +1,5 @@
 ---
-description: Una vez que un controlador de dispositivo ha convertido un archivo de diario completo en comandos de dispositivo sin formato, el archivo de comandos convertidos se pasa de nuevo al administrador de trabajos de cola.
+description: Una vez que un controlador de dispositivo ha convertido un archivo de diario completo en comandos de dispositivo sin formato, el archivo de comandos convertidos se vuelve a pasar al administrador de trabajos en cola.
 ms.assetid: 149e44d0-052a-48ba-8f65-59eab193c785
 title: Monitores de puerto
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118470935"
 ---
 # <a name="port-monitors"></a>Monitores de puerto
 
-Una vez que un controlador de dispositivo ha convertido un archivo de diario completo en comandos de dispositivo sin formato, el archivo de comandos convertidos se pasa de nuevo al administrador de trabajos de cola. El colador envía estos comandos de bajo nivel a un monitor. Un monitor de puerto es un .dll que pasa los comandos de dispositivo sin procesar a través de la red, a través de un puerto paralelo o a través de un puerto serie al dispositivo de impresora. Los monitores de puerto personalizados se pueden instalar para admitir el paso de datos del dispositivo a través de otros puertos de comunicación.
+Una vez que un controlador de dispositivo ha convertido un archivo de diario completo en comandos de dispositivo sin formato, el archivo de comandos convertidos se vuelve a pasar al administrador de trabajos en cola. El colador envía estos comandos de bajo nivel a un monitor. Un monitor de puerto es un .dll que pasa los comandos de dispositivo sin procesar a través de la red, a través de un puerto paralelo o a través de un puerto serie al dispositivo de impresora. Se pueden instalar monitores de puerto personalizados para admitir el paso de datos del dispositivo a través de otros puertos de comunicación.
 
 Use las siguientes funciones para trabajar con monitores de puerto.
 

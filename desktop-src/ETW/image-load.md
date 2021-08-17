@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de imagen. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de imagen. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 70ec0542-16d3-4186-a346-7f3c44dedf67
-title: Image_Load (clase)
+title: Image_Load clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,18 +24,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 647879b972c7cff2c086f656f76fa8decedb49a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44b957fbc1f8ffad78ec73d03a81fa45a8733a53e0e1d78fb31e48b9129a9e93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118394655"
 ---
-# <a name="image_load-class"></a>Clase de carga de imagen \_
+# <a name="image_load-class"></a>Image \_ Load (clase)
 
 Esta clase es la clase de tipo de evento para los eventos de imagen.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,26 +60,26 @@ class Image_Load : Image
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ carga** de la imagen tiene estos tipos de miembros:
+La **clase Image \_ Load** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ carga** de la imagen tiene estas propiedades.
+La **clase Image \_ Load** tiene estas propiedades.
 
 <dl> <dt>
 
 DefaultBase
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (7), puntero
+Calificadores: WmiDataId(7), Pointer
 </dt> </dl>
 
 Dirección base predeterminada.
@@ -95,23 +95,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (12), StringTermination ("NullTerminated"), Format ("w")
+Calificadores: WmiDataId(12), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
-Nombre de archivo y extensión del archivo DLL o la imagen ejecutable.
+Nombre de archivo y extensión de la dll o la imagen ejecutable.
 
 </dd> <dt>
 
 ImageBase
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), puntero
+Calificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
 Dirección base de la aplicación en la que se carga la imagen.
@@ -121,13 +121,13 @@ Dirección base de la aplicación en la que se carga la imagen.
 ImageCheckSum
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4)
+Calificadores: WmiDataId(4)
 </dt> </dl>
 
 Suma de comprobación de imagen.
@@ -137,31 +137,31 @@ Suma de comprobación de imagen.
 ImageSize
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2), puntero
+Calificadores: WmiDataId(2), Pointer
 </dt> </dl>
 
-Tamaño de la imagen que se está cargando.
+Tamaño de la imagen que se va a cargar.
 
-Al utilizar esta propiedad, el tamaño del tipo de datos de esta propiedad es realmente \_ t. El calificador de puntero se usa para determinar si el tamaño \_ t es de 4 bytes o de 8 bytes.
+Al consumir esta propiedad, el tipo de datos de esta propiedad es realmente de tamaño \_ t. El calificador Pointer se usa para determinar si el tamaño \_ t es de 4 o 8 bytes.
 
 </dd> <dt>
 
 ProcessId
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3)
+Calificadores: WmiDataId(3)
 </dt> </dl>
 
 Identifica el proceso en el que se carga la imagen.
@@ -171,13 +171,13 @@ Identifica el proceso en el que se carga la imagen.
 Reserved0
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (6)
+Calificadores: WmiDataId(6)
 </dt> </dl>
 
 Reservado.
@@ -187,13 +187,13 @@ Reservado.
 Reserved1
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (8)
+Calificadores: WmiDataId(8)
 </dt> </dl>
 
 Reservado.
@@ -203,13 +203,13 @@ Reservado.
 Reserved2
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (9)
+Calificadores: WmiDataId(9)
 </dt> </dl>
 
 Reservado.
@@ -219,13 +219,13 @@ Reservado.
 Reserved3
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (10)
+Calificadores: WmiDataId(10)
 </dt> </dl>
 
 Reservado.
@@ -235,13 +235,13 @@ Reservado.
 Reserved4
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (11)
+Calificadores: WmiDataId(11)
 </dt> </dl>
 
 Reservado.
@@ -251,20 +251,20 @@ Reservado.
 TimeDateStamp
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5)
+Calificadores: WmiDataId(5)
 </dt> </dl>
 
-Fecha y hora en que se cargó o descargó la imagen.
+Hora y fecha en que se cargó o descargó la imagen.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los eventos DCStart y DCEnd enumeran todas las imágenes cargadas al principio y al final del seguimiento, respectivamente.
 
@@ -272,24 +272,24 @@ Los eventos DCStart y DCEnd enumeran todas las imágenes cargadas al principio y
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Imagen**](image.md)
 </dt> <dt>
 
-[**Imagen \_ v0**](image-v0.md)
+[**Imagen \_ V0**](image-v0.md)
 </dt> <dt>
 
-[**Imagen \_ v1**](image-v1.md)
+[**Imagen \_ V1**](image-v1.md)
 </dt> </dl>
 
  

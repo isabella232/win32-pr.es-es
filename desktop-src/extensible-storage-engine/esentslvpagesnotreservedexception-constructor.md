@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSLVPagesNotReservedException'
-title: Constructor de EsentSLVPagesNotReservedException
+description: 'Más información sobre: Constructor EsentSLVPagesNotReservedException'
+title: Constructor EsentSLVPagesNotReservedException
 TOCTitle: 'EsentSLVPagesNotReservedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVPagesNotReservedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvpagesnotreservedexception.esentslvpagesnotreservedexception(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d61828a8961ee0cc2deada82bf06ad0a214fc338
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d980d1be456e7a733a023455e7a6731480fcdad577038ef0c59b36b33a796ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117896967"
 ---
-# <a name="esentslvpagesnotreservedexception-constructor"></a>Constructor de EsentSLVPagesNotReservedException
+# <a name="esentslvpagesnotreservedexception-constructor"></a>Constructor EsentSLVPagesNotReservedException
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,4 +58,4 @@ public EsentSLVPagesNotReservedException()
 
 [Miembros de EsentSLVPagesNotReservedException](./esentslvpagesnotreservedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

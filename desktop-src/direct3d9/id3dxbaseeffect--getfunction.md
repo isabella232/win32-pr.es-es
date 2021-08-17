@@ -1,7 +1,7 @@
 ---
 description: Obtiene el identificador de una función.
 ms.assetid: 97c82c28-4402-4605-8247-44d6f38bfa20
-title: 'ID3DXBaseEffect:: GetFunction ((método) (D3DX9Effect. h)'
+title: Método ID3DXBaseEffect::GetFunction (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: de0567b605f4a892c1f8274a346a74acfbbc0442
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ff3627c27ce6fa4eac0e166276a94dd5f4c1dd62bc4f8b38ccdd52c365a332fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118094172"
 ---
-# <a name="id3dxbaseeffectgetfunction-method"></a>ID3DXBaseEffect:: GetFunction ((método)
+# <a name="id3dxbaseeffectgetfunction-method"></a>Método ID3DXBaseEffect::GetFunction
 
 Obtiene el identificador de una función.
 
@@ -40,10 +40,10 @@ D3DXHANDLE GetFunction(
 
 <dl> <dt>
 
-*Índice* \[ de de\]
+*Índice* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Índice de función.
 
@@ -53,7 +53,7 @@ Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Devuelve el identificador de la función especificada, o **null** si el índice no era válido. Vea [identificadores (Direct3D 9)](handles.md).
+Devuelve el identificador de la función especificada o **NULL** si el índice no era válido. Vea [Identificadores (Direct3D 9).](handles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Devuelve el identificador de la función especificada, o **null** si el índice 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

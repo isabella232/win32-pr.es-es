@@ -1,37 +1,37 @@
 ---
-title: Adquisición de licencias silenciosa
-description: Adquisición de licencias silenciosa
+title: Adquisición silenciosa de licencias
+description: Adquisición silenciosa de licencias
 ms.assetid: bf88f1bb-0cbb-4c30-92e0-3d342977d67f
 keywords:
-- SDK de Windows Media Format, adquisición de licencias silenciosa
-- SDK de Windows Media Format, licencias
-- Administración de derechos digitales (DRM), adquisición de licencias silenciosa
-- DRM (administración de derechos digitales), adquisición de licencias silenciosa
-- Administración de derechos digitales (DRM), licencias
+- Windows SDK de formato multimedia, adquisición silenciosa de licencias
+- Windows SDK de formato multimedia, licencias
+- administración de derechos digitales (DRM), adquisición silenciosa de licencias
+- DRM (administración de derechos digitales), adquisición silenciosa de licencias
+- administración de derechos digitales (DRM),licencias
 - DRM (administración de derechos digitales), licencias
-- API extendidas del cliente DRM, adquisición de licencias silenciosa
-- API extendidas de cliente, adquisición de licencias silenciosa
-- adquisición de licencias silenciosa
-- licencias, adquisición de licencias silenciosa
+- API extendidas de cliente DRM, adquisición silenciosa de licencias
+- API extendidas de cliente, adquisición silenciosa de licencias
+- adquisición silenciosa de licencias
+- licenses,silent license acquisition
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7ef92eaf4e347e8eb30f56c1111ec5b27f1e62d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7eff454ce673230f0c7dbe6f64afbf46e9bbe8b5f948609f5fb67d647a4151ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118197467"
 ---
-# <a name="silent-license-acquisition"></a>Adquisición de licencias silenciosa
+# <a name="silent-license-acquisition"></a>Adquisición silenciosa de licencias
 
-La adquisición de licencias silenciosa solo requiere una única llamada de método que controle todas las comunicaciones de red con el servidor de licencias de forma asincrónica.
+La adquisición silenciosa de licencias solo requiere una sola llamada de método que controle todas las comunicaciones de red con el servidor de licencias de forma asincrónica.
 
-Este tipo de adquisición de licencias se usa normalmente como respuesta al usuario final que intenta tener acceso al contenido protegido, por ejemplo, intentando reproducir un archivo protegido en una aplicación del reproductor de media. Dado que la adquisición de licencia silenciosa obtiene la licencia con una sola llamada, no se puede usar si se requiere una entrada adicional del usuario, como el pago del contenido.
+Este tipo de adquisición de licencias normalmente se usa como respuesta al usuario final que intenta acceder a contenido protegido, por ejemplo, intentando reproducir un archivo protegido en una aplicación del reproductor multimedia. Dado que la adquisición de licencias silenciosas obtiene la licencia con una sola llamada, no se puede usar si se requiere una entrada adicional del usuario, como el pago por el contenido.
 
-Para realizar una adquisición de licencias silenciosa, siga estos pasos:
+Para realizar la adquisición silenciosa de licencias, siga estos pasos:
 
-1.  Llame al método [**IWMDRMLicenseManagement:: AcquireLicense**](iwmdrmlicensemanagement-acquirelicense.md) . Pase el encabezado DRM del archivo protegido como el parámetro *bstrHeaderData* . Especifique los derechos que desea conceder a la licencia en el parámetro *bstrActions* . Por último, establezca el parámetro *dwFlags* en la licencia de adquisición de WMDRM en \_ \_ \_ modo silencioso.
-2.  Eventos de captura para la interfaz [**IWMDRMLicenseManagement**](iwmdrmlicensemanagement.md) . Cuando reciba el evento **MEWMDRMLicenseAcquisitionCompleted** , compruebe su código de retorno llamando al método **IMFMediaEvent:: getStatus** , que se documenta en la documentación de Media Foundation. Si el valor **HRESULT** recuperado es un código de éxito, la licencia se descargó correctamente y está en el almacén de licencias local listo para su uso.
+1.  Llame al [**método IWMDRMLicenseManagement::AcquireLicense.**](iwmdrmlicensemanagement-acquirelicense.md) Pase el encabezado DRM del archivo protegido como *parámetro bstrHeaderData.* Especifique los derechos que desea que conceda la licencia en el *parámetro bstrActions.* Por último, establezca el *parámetro dwFlags* en WMDRM \_ ACQUIRE LICENSE \_ \_ SILENT.
+2.  Captura de eventos para [**la interfaz IWMDRMLicenseManagement.**](iwmdrmlicensemanagement.md) Cuando reciba el evento **MEWMDRMLicenseAcquisitionCompleted,** compruebe su código de retorno llamando al método **IMFMediaEvent::GetStatus,** que se documenta en la documentación Media Foundation datos. Si el valor **HRESULT** recuperado es un código correcto, la licencia se descargó correctamente y está en el almacén de licencias local listo para su uso.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -40,12 +40,12 @@ Para realizar una adquisición de licencias silenciosa, siga estos pasos:
 [**Adquisición de licencias**](acquiring-licenses.md)
 </dt> <dt>
 
-[**Usar el modelo de eventos Media Foundation**](using-the-media-foundation-model.md)
+[**Uso del Media Foundation de eventos**](using-the-media-foundation-model.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

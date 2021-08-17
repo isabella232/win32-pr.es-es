@@ -1,11 +1,11 @@
 ---
-title: Método IVMVirtualMachine RemoveDVDROMDrive (VPCCOMInterfaces. h)
+title: Método IVMVirtualMachine RemoveDVDROMDrive (VPCCOMInterfaces.h)
 description: Quita la unidad de CD o DVD especificada de la máquina virtual.
 ms.assetid: 1c45c271-bead-41f6-8371-448d385a1288
 keywords:
-- Método RemoveDVDROMDrive Virtual PC
-- Método RemoveDVDROMDrive Virtual PC, interfaz IVMVirtualMachine
-- Interfaz IVMVirtualMachine Virtual PC, método RemoveDVDROMDrive
+- RemoveDVDROMDrive method Virtual PC
+- RemoveDVDROMDrive, método Virtual PC, interfaz IVMVirtualMachine
+- IVMVirtualMachine interface Virtual PC , Método RemoveDVDROMDrive
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf0962b388c318d5abebdbd7a021a4466e644a28
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 693d8eebe30c347b41a2b9b0b115c09f6fea75cd8744baa97aa3aca5cd0d1916
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117752284"
 ---
-# <a name="ivmvirtualmachineremovedvdromdrive-method"></a>IVMVirtualMachine:: RemoveDVDROMDrive (método)
+# <a name="ivmvirtualmachineremovedvdromdrive-method"></a>IVMVirtualMachine::RemoveDVDROMDrive (método)
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Quita la unidad de CD o DVD especificada de la máquina virtual.
 
@@ -44,7 +44,7 @@ HRESULT RemoveDVDROMDrive(
 
 <dl> <dt>
 
-*dvdDrive* \[ de\]
+*dvdDrive* \[ En\]
 </dt> <dd>
 
 Unidad que se va a quitar.
@@ -59,18 +59,18 @@ Este método puede devolver uno de estos valores.
 
 | Código o valor devuelto                                                                                                                                                            | Descripción                                                           |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> <dt>0</dt> </dl>                                  | La operación se realizó correctamente.<br/>                              |
-| <dl> <dt>**E \_ PUNTERO**</dt> <dt>0x80004003</dt> </dl>                    | El parámetro es **null**.<br/>                                 |
-| <dl> <dt>**Máquina virtual \_ 0xA0040207 de \_ máquina virtual \_ desconocida**</dt> <dt></dt> </dl>            | La configuración es desconocida.<br/>                              |
-| <dl> <dt>**Máquina virtual \_ \_Máquina virtual en \_ ejecución \_ o \_ guardada**</dt> <dt>0xA004020B</dt> </dl> | La máquina virtual está en estado en ejecución o guardada.<br/>        |
-| <dl> <dt>**Máquina virtual \_ Unidad E 0xA0040502 \_ \_ no válida**</dt> <dt></dt> </dl>         | La unidad especificada no está conectada a esta ubicación de bus.<br/> |
-| <dl> <dt>**DISP \_ . E \_ excepción**</dt> <dt>0x80020009</dt> </dl>            | Se produjo un error inesperado.<br/>                          |
+| <dl> <dt>**S \_ Ok**</dt> <dt>0</dt> </dl>                                  | La operación se realizó correctamente.<br/>                              |
+| <dl> <dt>**E \_ Puntero**</dt> <dt>0x80004003</dt> </dl>                    | El parámetro es **NULL.**<br/>                                 |
+| <dl> <dt>**Máquina virtual \_ E \_ VM \_ UNKNOWN**</dt> <dt>0xA0040207</dt> </dl>            | La configuración es desconocida.<br/>                              |
+| <dl> <dt>**Máquina virtual \_ E \_ MÁQUINA VIRTUAL EN EJECUCIÓN O GUARDADA \_ \_ \_ 0XA004020B**</dt> <dt></dt> </dl> | La máquina virtual está en estado en ejecución o guardado.<br/>        |
+| <dl> <dt>**Máquina virtual \_ E \_ UNIDAD \_ NO VÁLIDA**</dt> <dt>0xA0040502</dt> </dl>         | La unidad especificada no está conectada a esta ubicación de bus.<br/> |
+| <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl>            | Se produjo un error inesperado.<br/>                          |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Solo puede quitar una unidad de CD o DVD existente de una máquina virtual detenida.
 
@@ -80,12 +80,12 @@ Solo puede quitar una unidad de CD o DVD existente de una máquina virtual deten
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMVirtualMachine se define como f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMVirtualMachine se define como \_ f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
 
 
 

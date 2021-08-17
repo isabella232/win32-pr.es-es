@@ -1,10 +1,10 @@
 ---
-title: Propiedad de atributo DNS-host-name-Attributes
-description: Contiene los atributos DNS-host-name y MS-DS-Additional-DNS-host-name.
+title: Conjunto de propiedades DNS-Host-Name-Attributes
+description: Contiene los atributos DNS-Host-Name y ms-DS-Additional-Dns-Host-Name.
 ms.assetid: c5adb4a4-0d83-4f34-ac61-5f3fa2def69c
 ms.tgt_platform: multiple
 keywords:
-- DNS-host-name-propiedad Attributes Set AD Schema
+- Esquema de AD del conjunto de propiedades DNS-Host-Name-Attributes
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c17445dcaa76e1c3a46e39cafb403321ea337bc3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 224c720d442770ee65726c832b7f21c5932a43fb5852e7a8c403bf5d3006248c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105651432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836218"
 ---
-# <a name="dns-host-name-attributes-property-set"></a>Propiedad de atributo DNS-host-name-Attributes
+# <a name="dns-host-name-attributes-property-set"></a>Conjunto de propiedades DNS-Host-Name-Attributes
 
-Contiene los atributos DNS-host-name y MS-DS-Additional-DNS-host-name.
+Contiene los atributos DNS-Host-Name y ms-DS-Additional-Dns-Host-Name.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | DNS-host-name-Attributes             |
+| CN           | Dns-Host-Name-Attributes             |
 | Display-Name | Atributos de nombre de host DNS             |
 | Rights-GUID  | 72e39547-7b18-11d1-adef-00c04fd8d5cd |
 
@@ -46,11 +46,11 @@ Contiene los atributos DNS-host-name y MS-DS-Additional-DNS-host-name.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Computer**](c-computer.md)<br/>                                                                                           |
-| Localización: ID. de presentación | 60                                                                                                                                  |
-| Miembros del conjunto de propiedades    | [**Nombre del host DNS**](a-dnshostname.md)<br/> [**MS-DS-Additional-DNS-host-name**](a-msds-additionaldnshostname.md)<br/> |
+| Localization-Display-ID | 60                                                                                                                                  |
+| Miembros del conjunto de propiedades    | [**DNS-Host-Name**](a-dnshostname.md)<br/> [**ms-DS-Additional-Dns-Host-Name**](a-msds-additionaldnshostname.md)<br/> |
 
 
 
@@ -58,11 +58,11 @@ Contiene los atributos DNS-host-name y MS-DS-Additional-DNS-host-name.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Computer**](c-computer.md)<br/>                                                                                           |
-| Localización: ID. de presentación | 60                                                                                                                                  |
-| Miembros del conjunto de propiedades    | [**Nombre del host DNS**](a-dnshostname.md)<br/> [**MS-DS-Additional-DNS-host-name**](a-msds-additionaldnshostname.md)<br/> |
+| Localization-Display-ID | 60                                                                                                                                  |
+| Miembros del conjunto de propiedades    | [**DNS-Host-Name**](a-dnshostname.md)<br/> [**ms-DS-Additional-Dns-Host-Name**](a-msds-additionaldnshostname.md)<br/> |
 
 
 
@@ -70,11 +70,11 @@ Contiene los atributos DNS-host-name y MS-DS-Additional-DNS-host-name.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Computer**](c-computer.md)<br/>                                                                                           |
-| Localización: ID. de presentación | 60                                                                                                                                  |
-| Miembros del conjunto de propiedades    | [**Nombre del host DNS**](a-dnshostname.md)<br/> [**MS-DS-Additional-DNS-host-name**](a-msds-additionaldnshostname.md)<br/> |
+| Localization-Display-ID | 60                                                                                                                                  |
+| Miembros del conjunto de propiedades    | [**DNS-Host-Name**](a-dnshostname.md)<br/> [**ms-DS-Additional-Dns-Host-Name**](a-msds-additionaldnshostname.md)<br/> |
 
 
 
@@ -82,11 +82,11 @@ Contiene los atributos DNS-host-name y MS-DS-Additional-DNS-host-name.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Computer**](c-computer.md)<br/> [**Cuenta de servicio de MS-DS-Managed**](c-msds-managedserviceaccount.md)<br/>          |
-| Localización: ID. de presentación | 60                                                                                                                                  |
-| Miembros del conjunto de propiedades    | [**Nombre del host DNS**](a-dnshostname.md)<br/> [**MS-DS-Additional-DNS-host-name**](a-msds-additionaldnshostname.md)<br/> |
+| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/>          |
+| Localization-Display-ID | 60                                                                                                                                  |
+| Miembros del conjunto de propiedades    | [**DNS-Host-Name**](a-dnshostname.md)<br/> [**ms-DS-Additional-Dns-Host-Name**](a-msds-additionaldnshostname.md)<br/> |
 
 
 
@@ -94,11 +94,11 @@ Contiene los atributos DNS-host-name y MS-DS-Additional-DNS-host-name.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Computer**](c-computer.md)<br/> [**Cuenta de servicio de MS-DS-Managed**](c-msds-managedserviceaccount.md)<br/>          |
-| Localización: ID. de presentación | 60                                                                                                                                  |
-| Miembros del conjunto de propiedades    | [**Nombre del host DNS**](a-dnshostname.md)<br/> [**MS-DS-Additional-DNS-host-name**](a-msds-additionaldnshostname.md)<br/> |
+| Applies-To              | [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/>          |
+| Localization-Display-ID | 60                                                                                                                                  |
+| Miembros del conjunto de propiedades    | [**DNS-Host-Name**](a-dnshostname.md)<br/> [**ms-DS-Additional-Dns-Host-Name**](a-msds-additionaldnshostname.md)<br/> |
 
 
 

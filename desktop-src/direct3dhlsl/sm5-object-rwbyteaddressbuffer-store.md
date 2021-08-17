@@ -1,5 +1,5 @@
 ---
-title: 'RWByteAddressBuffer:: Store (función)'
+title: RWByteAddressBuffer::Store (Función)
 description: Establece un valor.
 ms.assetid: edfda955-602c-44f4-adc3-77b61c9dcd05
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9e161e4fb64d09e41c6529954e63b2ace55207e9
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: 5be699a28eea213b8847f32a3b66f53739a7db86ee5964bd97559a6d534fff6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104983774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117724947"
 ---
-# <a name="store-function"></a>Función de almacenamiento
+# <a name="store-function"></a>Función Store
 
 Establece un valor.
 
@@ -28,8 +28,8 @@ Establece un valor.
 
 ``` syntax
 void Store(
-  in uint address,
-  in uint value
+  in uint address,
+  in uint value
 );
 ```
 
@@ -37,7 +37,7 @@ void Store(
 
 <dl> <dt>
 
-*Dirección* \[ de de\]
+*address* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -46,7 +46,7 @@ Dirección de entrada en bytes, que debe ser un múltiplo de 4.
 
 </dd> <dt>
 
-*valor* \[ de de\]
+*value* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -59,19 +59,19 @@ Un valor de entrada.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -80,12 +80,12 @@ Esta función se admite para los siguientes tipos de sombreadores:
 [RWByteAddressBuffer](sm5-object-rwbyteaddressbuffer.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

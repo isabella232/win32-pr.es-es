@@ -1,19 +1,19 @@
 ---
-description: Se produce cuando se inicia la recepción de los datos de respuesta.
+description: Se produce cuando los datos de respuesta comienzan a recibirse.
 ms.assetid: 7245725b-40dd-4282-b681-f0b2c191db94
-title: 'Evento IWinHttpRequestEvents:: OnResponseStart'
+title: Evento IWinHttpRequestEvents::OnResponseStart
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a299c535dd854bff07f2c24989096f7b9e49fc3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8cb08273bfbab92e957b932f463ce4b91ee53e3663dcd886f5e02b73698fff3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117744228"
 ---
-# <a name="iwinhttprequesteventsonresponsestart-event"></a>Evento IWinHttpRequestEvents:: OnResponseStart
+# <a name="iwinhttprequesteventsonresponsestart-event"></a>Evento IWinHttpRequestEvents::OnResponseStart
 
-El evento **OnResponseStart** se produce cuando se inicia la recepción de los datos de respuesta.
+El **evento OnResponseStart** tiene lugar cuando los datos de respuesta comienzan a recibirse.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -31,14 +31,14 @@ void OnResponseStart(
 
 <dl> <dt>
 
-*Estado* \[ de de\]
+*Estado* \[ En\]
 </dt> <dd>
 
-Recibe el código de estado estándar devuelto con los datos de respuesta. Los códigos de estado se definen en [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt).
+Recibe el código de estado estándar devuelto con los datos de respuesta. Los códigos de estado se definen [en RFC 2616.](https://www.ietf.org/rfc/rfc2616.txt)
 
 </dd> <dt>
 
-*ContentType* \[ de\]
+*ContentType* \[ En\]
 </dt> <dd>
 
 Especifica el tipo de contenido recibido, como "text/html" o "image/gif".
@@ -49,14 +49,14 @@ Especifica el tipo de contenido recibido, como "text/html" o "image/gif".
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para que se produzca este evento, utilice [**Open**](iwinhttprequest-open.md) para enviar una conexión http en modo asincrónico y utilice [**send**](iwinhttprequest-send.md) para enviar una solicitud de datos a un servidor de Internet.
+Para que se produzca este evento, use [**Abrir**](iwinhttprequest-open.md) para enviar una conexión HTTP en modo asincrónico y use [**Enviar**](iwinhttprequest-send.md) para enviar una solicitud de datos a un servidor de Internet.
 
-Este es el primer evento de WinHTTP que debe producirse después del [**envío**](iwinhttprequest-send.md).
+Este es el primer evento WinHTTP que se produce después de [**enviar**](iwinhttprequest-send.md).
 
 > [!Note]  
-> En Windows XP y Windows 2000, consulte la sección [requisitos de tiempo de ejecución](winhttp-start-page.md) de la página de inicio de winhttp.
+> Para Windows XP y Windows 2000, consulte la sección [Requisitos](winhttp-start-page.md) en tiempo de ejecución de la página de inicio de WinHTTP.
 
  
 
@@ -66,10 +66,10 @@ Este es el primer evento de WinHTTP que debe producirse después del [**envío**
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional con las \[ aplicaciones de escritorio de SP3 únicamente\]<br/>            |
-| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server con \[ solo aplicaciones de escritorio de SP3\]<br/>         |
-| Redistribuible<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o posterior en Windows XP y Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>            |
+| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
+| Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Este es el primer evento de WinHTTP que debe producirse después del [**envío**
 [**WinHttpRequest**](winhttprequest.md)
 </dt> <dt>
 
-[Versiones de WinHTTP](winhttp-versions.md)
+[Versiones winHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

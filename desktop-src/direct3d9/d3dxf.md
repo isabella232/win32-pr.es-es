@@ -4,12 +4,12 @@ ms.assetid: 813a2b4b-6577-4cdf-a2e6-e06870638354
 title: D3DXF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e230fc08ac4d7f8713959f2025f67262046ecea5
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: d286ad4cf64133683de026893beb9fa081899e6b170e4b3adb478798eb4b3edf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118096080"
 ---
 # <a name="d3dxf"></a>D3DXF
 
@@ -21,10 +21,10 @@ En la tabla siguiente se especifica el tipo de datos de archivo:
 
 
 
-| \#define para el formato de archivo     | Valor | Descripción                                                                                    |
+| \#define para El formato de archivo     | Value | Descripción                                                                                    |
 |-------------------------------|-------|------------------------------------------------------------------------------------------------|
 | D3DXF \_ FILEFORMAT \_ BINARY     | 0     | Archivo binario con formato heredado. Vea [X File Reference (Legacy) [Referencia de archivo X (heredado)].](dx9-graphics-reference-x-file.md) |
-| TEXTO DEL FORMATO DE \_ ARCHIVO D3DXF \_       | 1     | Archivo de texto.                                                                                     |
+| TEXTO DEL FORMATO DE ARCHIVO D3DXF \_ \_       | 1     | Archivo de texto.                                                                                     |
 | FORMATO DE ARCHIVO D3DXF \_ \_ COMPRIMIDO | 2     | Archivo comprimido. Con esta marca, también debe especificar el formato binario o el formato de texto.   |
 
 
@@ -37,7 +37,7 @@ En la tabla siguiente se especifican las opciones de carga de archivos con archi
 
 
 
-| \#Definir                      | Valor | Descripción                |
+| \#Definir                      | Value | Descripción                |
 |-------------------------------|-------|----------------------------|
 | D3DXF \_ FILELOAD \_ FromFile     | 0     | Cargar datos desde un archivo.     |
 | D3DXF \_ FILELOAD \_ FROMWFILE    | 1     | Cargar datos desde un archivo.     |
@@ -54,7 +54,7 @@ En la tabla siguiente se especifican las opciones de guardado y carga de archivo
 
 
 
-| \#Definir                 | Valor | Descripción                    |
+| \#Definir                 | Value | Descripción                    |
 |--------------------------|-------|--------------------------------|
 | D3DXF \_ FILESAVE \_ TOFILE  | 0     | Guarde en un archivo.                |
 | D3DXF \_ FILESAVE \_ TOWFILE | 1     | Guarde en un archivo de caracteres anchos. |

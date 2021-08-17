@@ -1,36 +1,36 @@
 ---
-description: Directrices generales para implementar códecs sin formato
+description: Directrices generales para implementar códecs RAW
 ms.assetid: 47b3b226-4642-41d2-b05c-bc12583047aa
-title: Directrices generales para implementar códecs sin formato
+title: Directrices generales para implementar códecs RAW
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f774e5d254330e3274daccb6062f35baa443144
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5081edfc6f49dc1d145fc3e2ce7e5f993fb2e7e250aeb0f1091579dd3f45461
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118204633"
 ---
-# <a name="general-guidelines-for-implementing-raw-codecs"></a>Directrices generales para implementar códecs sin formato
+# <a name="general-guidelines-for-implementing-raw-codecs"></a>Directrices generales para implementar códecs RAW
 
-En comparación con los tipos de imagen no sin procesar, como JPEG o TIFF, hay dos diferencias importantes en el modo en que se espera que los formatos de imagen sin procesar se comporten en Windows:
+En comparación con los tipos de imágenes que no son RAW, como JPEG o TIFF, hay dos diferencias importantes en cómo se espera que los formatos de imagen RAW se comporten en Windows:
 
--   La mayoría de los formatos de imagen sin procesar se supone que son de "solo lectura" y, probablemente, no admiten la codificación de píxeles en formato sin procesar. Sin embargo, dado que Windows Imaging Component (WIC) requiere un codificador para admitir la reescritura de metadatos, los autores de códecs sin formato deben planear la implementación de al menos una clase de codificador esqueleto.
--   La descodificación de una imagen sin formato de tamaño completo puede tardar mucho tiempo en comparación con otros formatos. Por esta razón, Microsoft recomienda que se tomen ciertos enfoques para minimizar la latencia de descodificación y garantizar la compatibilidad con escenarios como la representación rápida de miniaturas y vistas previas.
+-   Se supone que la mayoría de los formatos de imagen RAW son de "solo lectura" y probablemente no admitirán la codificación de píxeles en formato RAW. Sin embargo, dado Windows Imaging Component (WIC) requiere un codificador para admitir la reescribición de metadatos, los autores de códecs RAW deben planear implementar al menos una clase de codificador de esqueleto.
+-   La decodificación de una imagen RAW de tamaño completo puede tardar mucho tiempo en comparación con otros formatos. Por este motivo, Microsoft recomienda adoptar determinados enfoques para minimizar la latencia de lacoding y para garantizar la compatibilidad con escenarios como la representación rápida de miniaturas y vistas previas.
 
-    Por ejemplo, todos los autores de códecs sin formato deben implementar la interfaz [**IWICBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsourcetransform) , que proporciona un mecanismo para notificar al descodificador de antemano el tamaño del mapa de bits de destino, lo que permite la descodificación optimizada en un tamaño de imagen de salida más pequeño.
+    Por ejemplo, todos los autores de códecs RAW deben implementar la interfaz [**IWICBitmapSourceTransform,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsourcetransform) que proporciona un mecanismo para notificar al descodificador antes del tamaño del mapa de bits de destino, lo que permite descodificar optimizado a un tamaño de imagen de salida más pequeño.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Información general sobre componentes de Windows Imaging](-wic-about-windows-imaging-codec.md)
+[Windows Información general sobre los componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
-[Instrucciones de WIC para formatos de imagen RAW de cámara](-wic-rawguidelines.md)
+[Directrices de WIC para formatos de imagen raw de cámara](-wic-rawguidelines.md)
 </dt> <dt>
 
 [Cómo escribir un códec de WIC-Enabled](-wic-howtowriteacodec.md)
