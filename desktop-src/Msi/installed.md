@@ -13,7 +13,7 @@ ms.locfileid: "118633528"
 ---
 # <a name="installed-property"></a>Propiedad instalada
 
-La **propiedad Instalado** solo se establece si el producto está instalado por equipo o para el usuario actual. Esta propiedad no se establece si el producto está instalado para un usuario diferente.
+La **propiedad Instalado** solo se establece si el producto está instalado por equipo o para el usuario actual. Esta propiedad no se establece si el producto está instalado para otro usuario.
 
 La **propiedad Instalado** se puede usar en expresiones condicionales para determinar si un producto está instalado por equipo o para el usuario actual. Por ejemplo, la propiedad se puede usar en la columna condicional de una tabla de secuencia o para diferenciar entre una primera instalación y una instalación de mantenimiento.
 
@@ -25,9 +25,9 @@ El valor de la [**propiedad ProductVersion**](productversion.md) es la versión 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Representa un servicio switch.
+description: Representa un servicio de conmutador.
 ms.assetid: cf6319fa-7d69-4820-b0e0-775aad8b190c
 title: CIM_SwitchService clase
 ms.topic: reference
@@ -26,7 +26,7 @@ ms.locfileid: "118646787"
 ---
 # <a name="cim_switchservice-class"></a>Cim \_ SwitchService (clase)
 
-Representa un servicio switch.
+Representa un servicio de conmutador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ class CIM_SwitchService : CIM_ForwardingService
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ CIM SwitchService** tiene estos tipos de miembros:
+La **clase CIM \_ SwitchService** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
@@ -65,7 +65,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| BRIDGE-MIB.dot1dBaseBridgeAddress"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SwitchService**.**BridgeAddressType**")
 </dt> </dl>
 
-Dirección del servicio switch, que es una parte del identificador único del servicio.
+Dirección del servicio de conmutador, que es una parte del identificador único del servicio.
 
 </dd> <dt>
 
@@ -115,7 +115,7 @@ Formato de direccionamiento usado para el puente y la **propiedad BridgeAddress.
 
 <span id="MAC___Spanning_Tree_Priority"></span><span id="mac___spanning_tree_priority"></span><span id="MAC___SPANNING_TREE_PRIORITY"></span>
 
-**MAC + prioridad de árbol de expansión** (5)
+**Mac + Prioridad del árbol de expansión** (5)
 
 
 </dt> <dd></dd> </dl>
@@ -188,7 +188,7 @@ Número de puertos de conmutador controlados por este servicio de conmutación.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -198,7 +198,7 @@ Número de puertos de conmutador controlados por este servicio de conmutación.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

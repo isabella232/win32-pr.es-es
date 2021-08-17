@@ -1,6 +1,6 @@
 ---
 title: Función D3DX11CompileFromResource (D3DX11async.h)
-description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Nota En lugar de usar esta función, se recomienda usar funciones de recursos y, a continuación, compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación HLSL, como la API D3DCompile. Compile un sombreador o un efecto a partir de un recurso.
+description: 'Nota: La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Nota En lugar de usar esta función, se recomienda usar funciones de recursos y, a continuación, compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación HLSL, como la API D3DCompile. Compile un sombreador o un efecto a partir de un recurso.'
 ms.assetid: ececa469-f5e3-4cb3-befe-0ed1a5a57671
 keywords:
 - Función D3DX11CompileFromResource Direct3D 11
@@ -68,7 +68,7 @@ HRESULT D3DX11CompileFromResource(
 
 Tipo: **[ **HMODULE**](/windows/desktop/WinProg/windows-data-types)**
 
-Identificador del módulo de recursos que contiene el sombreador. HMODULE se puede obtener con la [función GetModuleHandle](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea).
+Identificador del módulo de recursos que contiene el sombreador. HMODULE se puede obtener con [la función GetModuleHandle](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea).
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Identificador del módulo de recursos que contiene el sombreador. HMODULE se pue
 
 Tipo: **[ **LPCTSTR**](/windows/desktop/WinProg/windows-data-types)**
 
-Nombre del recurso que contiene el sombreador. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos se resuelve en LPCSTR.
+Nombre del recurso que contiene el sombreador. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos se resuelve en LPCSTR.
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Opcional. Puntero a una matriz de definiciones de macro (vea [**D3D10 \_ SHADER 
 
 Tipo: **[ **LPD3D10INCLUDE**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))**
 
-Opcional. Puntero a una interfaz para controlar archivos de incluyen. Si se establece en **NULL,** se producirá un error de compilación si un sombreador contiene una \# include.
+Opcional. Puntero a una interfaz para controlar archivos de incluyen. Si se establece en **NULL,** se producirá un error de compilación si un sombreador contiene un \# valor de include.
 
 </dd> <dt>
 
@@ -113,7 +113,7 @@ Opcional. Puntero a una interfaz para controlar archivos de incluyen. Si se esta
 
 Tipo: **[ **LPCSTR**](/windows/desktop/WinProg/windows-data-types)**
 
-Nombre de la función de punto de entrada del sombreador donde comienza la ejecución del sombreador. Al compilar un efecto, **D3DX11CompileFromResource** omite *pFunctionName*; Se recomienda establecer *pFunctionName* en **NULL** porque es una buena práctica de programación establecer un parámetro de puntero en **NULL** si la función llamada no lo usará.
+Nombre de la función de punto de entrada de sombreador donde comienza la ejecución del sombreador. Al compilar un efecto, **D3DX11CompileFromResource** omite *pFunctionName*; Se recomienda establecer *pFunctionName* en **NULL** porque es una buena práctica de programación establecer un parámetro de puntero en **NULL** si la función llamada no lo usará.
 
 </dd> <dt>
 
@@ -135,12 +135,12 @@ Marcas [**de compilación de sombreador**](/windows/desktop/direct3dhlsl/d3dcomp
 
 </dd> <dt>
 
-*Marcas2* \[ En\]
+*Flags2* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Marcas [**de compilación de efecto**](/windows/desktop/direct3dhlsl/d3dcompile-effect-constants). Al compilar un sombreador y no un archivo de efecto, **D3DX11CompileFromResource** omite *Flags2*; Se recomienda establecer *Flags2* en cero porque es una buena práctica de programación establecer un parámetro que no sea de punto de referencia en cero si la función a la que se llama no lo usará.
+Marcas [**de compilación de efecto**](/windows/desktop/direct3dhlsl/d3dcompile-effect-constants). Al compilar un sombreador y no un archivo de efecto, **D3DX11CompileFromResource** omite *Flags2*; Se recomienda establecer *Flags2* en cero porque es una buena práctica de programación establecer un parámetro que no sea de punto en cero si la función llamada no lo usará.
 
 </dd> <dt>
 
@@ -149,7 +149,7 @@ Marcas [**de compilación de efecto**](/windows/desktop/direct3dhlsl/d3dcompile-
 
 Tipo: **[ **ID3DX11ThreadPump**](id3dx11threadpump.md)\***
 
-Puntero a una interfaz de bombeo de subprocesos (vea [**ID3DX11ThreadPump Interface**](id3dx11threadpump.md)). Use **NULL** para especificar que esta función no debe devolver hasta que se complete.
+Puntero a una interfaz de bombeo de subprocesos [**(vea Interfaz ID3DX11ThreadPump**](id3dx11threadpump.md)). Use **NULL** para especificar que esta función no debe devolverse hasta que se complete.
 
 </dd> <dt>
 
@@ -188,11 +188,11 @@ El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Di
 
 **D3DX11CompileFromResource** devuelve E INVALIDARG si se proporciona un valor distinto de NULL al parámetro pHResult al proporcionar NULL al \_ parámetro *pPump.*    Para obtener más información sobre esta situación, vea Comentarios.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para obtener más información **sobre D3DX11CompileFromResource**, vea [**D3DCompile**](/windows/desktop/direct3dhlsl/d3dcompile).
 
-Debe proporcionar **NULL al** parámetro *pHResult* si también proporciona **NULL** al *parámetro pPump.* De lo contrario, no se puede crear posteriormente un sombreador mediante el código de sombreador compilado que **D3DX11CompileFromResource** devuelve en la memoria a la que apunta *el parámetro ppShader.* Para crear un sombreador a partir de código de sombreador compatible, llame a uno de los métodos de interfaz [**ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device) siguientes:
+Debe proporcionar **NULL al** parámetro *pHResult* si también proporciona **NULL** al *parámetro pPump.* De lo contrario, no se puede crear posteriormente un sombreador mediante el código de sombreador compilado que **D3DX11CompileFromResource** devuelve en la memoria a la que apunta el *parámetro ppShader.* Para crear un sombreador a partir de código de sombreador compatible, llame a uno de los siguientes [**métodos de interfaz ID3D11Device:**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device)
 
 -   [**CreateComputeShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createcomputeshader)
 -   [**CreateDomainShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createdomainshader)
@@ -215,7 +215,7 @@ Además, si proporciona un valor distinto de **NULL** a *pHResult* al proporcion
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

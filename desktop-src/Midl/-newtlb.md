@@ -31,9 +31,9 @@ midl /newtlb filename
 
 Este modificador no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En versiones recientes de Windows, este modificador no hace nada. En las versiones no admitidas de Windows, la especificación de este modificador en la línea de comandos de MIDL generará un error.
+En versiones recientes de Windows, este modificador no hace nada. En versiones no admitidas de Windows, la especificación de este modificador en la línea de comandos de MIDL generará un error.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -41,7 +41,7 @@ En versiones recientes de Windows, este modificador no hace nada. En las version
 
 **midl filename.idl**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

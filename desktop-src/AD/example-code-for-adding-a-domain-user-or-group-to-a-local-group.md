@@ -16,7 +16,7 @@ ms.locfileid: "118694693"
 ---
 # <a name="example-code-for-adding-a-domain-user-or-group-to-a-local-group"></a>Código de ejemplo para agregar un usuario o grupo de dominio a un grupo local
 
-En el siguiente ejemplo de código de C++ se agrega un usuario o grupo de dominio a un grupo Windows local en un servidor miembro o en un equipo que se ejecuta en una estación de trabajo nt o Windows 2000 Professional.
+En el ejemplo de código de C++ siguiente se agrega un usuario o grupo de dominio Windows a un grupo local en un servidor miembro o en un equipo que se ejecuta en una estación de trabajo nt o Windows 2000 Professional.
 
 
 ```C++
@@ -106,7 +106,7 @@ HRESULT AddDomainUserToLocalGroup(LPCWSTR pwszComputerName,
 
 
 
-En el ejemplo Visual Basic código siguiente se agrega un usuario o grupo de dominio Windows a un grupo local en un servidor miembro o en un equipo que se ejecuta en una estación de trabajo nt o Windows 2000 Professional.
+En el ejemplo Visual Basic de código siguiente se agrega un usuario o grupo de dominio a un grupo Windows local en un servidor miembro o en un equipo que se ejecuta en una estación de trabajo nt o Windows 2000 Professional.
 
 
 ```VB

@@ -49,7 +49,7 @@ Posición del índice. El primer componente contiene la coordenada x. El segundo
 
 Tipo: **R**
 
-Variable de recurso.
+Una variable de recurso.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -72,7 +72,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 [RWTexture1DArray](sm5-object-rwtexture1darray.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

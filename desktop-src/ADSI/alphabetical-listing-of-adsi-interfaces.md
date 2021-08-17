@@ -4,7 +4,7 @@ description: La tabla siguiente contiene una lista alfabética de todas las inte
 ms.assetid: 23661784-e303-4e05-a358-8e00fb05b959
 ms.tgt_platform: multiple
 keywords:
-- Lista alfabética de interfaces ADSI ADSI
+- Lista alfabética de ADSI interfaces ADSI
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 9d101357760026c42ae0969832691a2d557c64363220fe662565c0dd3923ad40
@@ -31,7 +31,7 @@ La tabla siguiente contiene una lista alfabética de todas las interfaces ADSI.
 | **IADsAggregator**                                             | Obsoletos                    |
 | [**IADsBackLink**](/windows/desktop/api/Iads/nn-iads-iadsbacklink)                           | Tipo de datos                   |
 | [**IADsCaseIgnoreList**](/windows/desktop/api/Iads/nn-iads-iadscaseignorelist)               | Tipo de datos                   |
-| [**IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass)                                 | Schema                      |
+| [**IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass)                                 | Esquema                      |
 | [**IADsCollection**](/windows/desktop/api/Iads/nn-iads-iadscollection)                       | Objeto persistente           |
 | [**IADsComputer**](/windows/desktop/api/Iads/nn-iads-iadscomputer)                           | Objeto persistente           |
 | [**IADsComputerOperations**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations)       | Objeto dinámico              |
@@ -66,7 +66,7 @@ La tabla siguiente contiene una lista alfabética de todas las interfaces ADSI.
 | [**IADsPrintJobOperations**](/windows/desktop/api/Iads/nn-iads-iadsprintjoboperations)       | Objeto dinámico              |
 | [**IADsPrintQueue**](/windows/desktop/api/Iads/nn-iads-iadsprintqueue)                       | Objeto persistente           |
 | [**IADsPrintQueueOperations**](/windows/desktop/api/Iads/nn-iads-iadsprintqueueoperations)   | Objeto dinámico              |
-| [**IADsProperty**](/windows/desktop/api/Iads/nn-iads-iadsproperty)                           | Schema                      |
+| [**IADsProperty**](/windows/desktop/api/Iads/nn-iads-iadsproperty)                           | Esquema                      |
 | [**IADsPropertyEntry**](/windows/desktop/api/Iads/nn-iads-iadspropertyentry)                 | Caché de propiedades              |
 | [**IADsPropertyList**](/windows/desktop/api/Iads/nn-iads-iadspropertylist)                   | Caché de propiedades              |
 | [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue)                 | Caché de propiedades              |
@@ -77,7 +77,7 @@ La tabla siguiente contiene una lista alfabética de todas las interfaces ADSI.
 | [**IADsService**](/windows/desktop/api/Iads/nn-iads-iadsservice)                             | Objeto persistente           |
 | [**IADsServiceOperations**](/windows/desktop/api/Iads/nn-iads-iadsserviceoperations)         | Objeto dinámico              |
 | [**IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession)                             | Objeto dinámico              |
-| [**IADsSyntax**](/windows/desktop/api/Iads/nn-iads-iadssyntax)                               | Schema                      |
+| [**IADsSyntax**](/windows/desktop/api/Iads/nn-iads-iadssyntax)                               | Esquema                      |
 | [**IADsTimestamp**](/windows/desktop/api/Iads/nn-iads-iadstimestamp)                         | Tipo de datos                   |
 | [**IADsTsUserEx**](/windows/desktop/api/tsuserex/nn-tsuserex-iadstsuserex)                      | Datos de usuario de Terminal Services |
 | [**IADsTypedName**](/windows/desktop/api/Iads/nn-iads-iadstypedname)                         | Tipo de datos                   |

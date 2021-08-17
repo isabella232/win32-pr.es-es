@@ -38,13 +38,13 @@ Especifica una o varias expresiones de lenguaje C. Cada expresión se evalúa co
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El **\[ atributo max \_ is \]** no se corresponde necesariamente con el número de elementos de la matriz. Para una matriz de tamaño *n* en C, donde el primer elemento de matriz es el elemento número cero, el valor máximo de un índice de matriz válido *es n*–1.
+El **\[ atributo max \_ is \]** no se corresponde necesariamente con el número de elementos de la matriz. Para una matriz de tamaño *n* en C, donde el primer elemento de matriz es el número de elemento cero, el valor máximo de un índice de matriz válido *es n*–1.
 
 El **\[ atributo max \_ is \]** no se puede usar como atributo de campo al mismo tiempo que **\[** [**el atributo size \_ is.**](size-is.md) **\]**
 
-Aunque es legal usar el atributo **\[ \_ max is \]** con una expresión constante, hacerlo es ineficaz e innecesario. Por ejemplo, use una matriz de tamaño fijo:
+Aunque es legal usar el atributo **\[ max \_ is \]** con una expresión constante, hacerlo es ineficaz e innecesario. Por ejemplo, use una matriz de tamaño fijo:
 
 ``` syntax
 /* transmits values of a[0]... a[MAX_SIZE-1] */ 

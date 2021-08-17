@@ -66,7 +66,7 @@ Nombre del elemento.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Use el **\[ atributo \]** personalizado para definir su propio atributo. Por ejemplo, puede crear un atributo con valores de cadena que proporciona el ProgID para una clase.
 
@@ -78,7 +78,7 @@ Para recuperar un valor de atributo personalizado, llame a uno de los siguientes
 -   ITypeInfo2::GetVarCustData(index, rguid, pvarval)
 -   ITypeInfo2::GetParamCustData(indexFunc, indexParam, rguid, pvarVal)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

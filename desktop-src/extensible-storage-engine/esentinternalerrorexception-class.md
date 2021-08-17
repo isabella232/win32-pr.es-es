@@ -33,7 +33,7 @@ ms.locfileid: "118494830"
 ---
 # <a name="esentinternalerrorexception-class"></a>Clase EsentInternalErrorException
 
-Clase base para JET_err. Excepciones internalError.
+Clase base para JET_err. Excepciones InternalError.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 

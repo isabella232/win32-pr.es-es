@@ -17,11 +17,11 @@ ICE55 valida que todos los objetos LockPermission existen y tienen valores de pe
 
 ## <a name="result"></a>Resultado
 
-ICE55 publica un error si no existe un LockObject enumerado en la tabla [LockPermissions](lockpermissions-table.md) o si no se especifica ningún nivel de privilegio en la columna Permission.
+ICE55 publica un error si un LockObject que aparece en la tabla [LockPermissions](lockpermissions-table.md) no existe o si no se especifica ningún nivel de privilegio en la columna Permission.
 
 ## <a name="example"></a>Ejemplo
 
-ICE55 notificaría los siguientes errores para el ejemplo.
+ICE55 notificaría los errores siguientes para el ejemplo.
 
 ``` syntax
 LockObject 'File1'.'File'.''.'guest' in the LockPermissions table 
@@ -47,7 +47,7 @@ Could not find item 'File3' in table 'File' which is referenced
 
 
 
-| Archivo  | Versión | Lenguajes |
+| Archivo  | Versión | Lenguaje |
 |-------|---------|----------|
 | Archivo1 | Archivo2   |          |
 | Archivo2 | 1.0.0.0 | 3082     |

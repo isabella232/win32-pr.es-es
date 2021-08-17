@@ -14,7 +14,7 @@ ms.locfileid: "118690380"
 ---
 # <a name="stdfactcpp"></a>STDFACT. Cpp
 
-En el componente de proveedor de ejemplo, un ejemplo de código que muestra la implementación [**estándar de IClassFactory**](/windows/win32/api/unknwn/nn-unknwn-iclassfactory) está en Stdfact.cpp. Para obtener más información, vea **IClassFactory**.
+En el componente de proveedor de ejemplo, un ejemplo de código que muestra la implementación [**estándar de IClassFactory**](/windows/win32/api/unknwn/nn-unknwn-iclassfactory) está en Stdfact.cpp. Para obtener más información, vea **IClassFactory.**
 
  
 

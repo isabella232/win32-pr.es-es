@@ -56,7 +56,7 @@ Esto solo está disponible para el desarrollo basado en C++.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(uint16_t)"><strong>XMUNIBBLE4 (uint16_t)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUNIBBLE</code> partir de una variable que contiene datos de componentes en un formato <code>uint16_t</code> empaquetado. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> a partir de una variable que contiene datos <code>uint16_t</code> de componente en un formato empaquetado. <br/>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUNIBBLE</code> partir de una variable que contiene datos de componente en un formato <code>uint16_t</code> empaquetado. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> a partir de una variable que contiene datos <code>uint16_t</code> de componentes en un formato empaquetado. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -83,7 +83,7 @@ Este constructor solo está disponible en C++.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(float_float_float_float)"><strong>XMUNIBBLE4 (float,float,float,float)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUNIBBLE4</code> partir de <code>float</code> cuatro argumentos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> a partir de <code>float</code> cuatro argumentos. <br/>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUNIBBLE4</code> partir de <code>float</code> cuatro argumentos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4 a</strong></a> partir de <code>float</code> cuatro argumentos. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -92,7 +92,7 @@ Este constructor solo está disponible en C++.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(float_float_float_float)"><strong>XMUNIBBLE4 (uint8_t,uint8_t,uint8_t,uint8_t)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUNIBBLE4</code> partir de <code>uint8_t</code> cuatro argumentos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> a partir de <code>uint8_t</code> cuatro argumentos. <br/>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUNIBBLE4</code> partir de <code>uint8_t</code> cuatro argumentos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4 a</strong></a> partir de <code>uint8_t</code> cuatro argumentos. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.

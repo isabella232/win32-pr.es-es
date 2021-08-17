@@ -23,7 +23,7 @@ Entre las aplicaciones y servicios que pueden usar Synchronization Manager se in
 -   Microsoft Office que necesitan preparar archivos para su uso sin conexión.
 -   Almacenamiento en caché del lado cliente que le permite almacenar en caché los archivos localmente.
 -   Exploradores que pueden almacenar en caché páginas HTML localmente.
--   Programas de correo electrónico que pueden almacenar en caché los mensajes de correo electrónico localmente.
+-   Programas de correo que pueden almacenar en caché los mensajes de correo electrónico localmente.
 -   Bases de datos que pueden almacenar información localmente.
 
  

@@ -1,6 +1,6 @@
 ---
 title: Argumentos de función
-description: Una función toma uno o varios argumentos de entrada; use la siguiente sintaxis para declarar cada argumento.
+description: Una función toma uno o varios argumentos de entrada; use la sintaxis siguiente para declarar cada argumento.
 ms.assetid: 80e0dbc8-26b7-4250-bb01-6856fc70f6b8
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,7 +18,7 @@ ms.locfileid: "118514768"
 ---
 # <a name="function-arguments"></a>Argumentos de función
 
-Una función toma uno o varios argumentos de entrada; use la siguiente sintaxis para declarar cada argumento.
+Una función toma uno o varios argumentos de entrada; use la sintaxis siguiente para declarar cada argumento.
 
 
 
@@ -30,9 +30,9 @@ Una función toma uno o varios argumentos de entrada; use la siguiente sintaxis 
 
  
 
-\[Nombre \] de tipo modificador : Semantic : \[ \] \[ Interpolation Modifier = \] \[ Initializer(s)\]
+\[Nombre \] de tipo \[ modificador: Semantic : \] \[ Interpolation Modifier \] \[ = Initializer(s)\]
 
-Si hay varios argumentos de función, se separan mediante comas.
+Si hay varios argumentos de función, están separados por comas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -52,7 +52,7 @@ Si hay varios argumentos de función, se separan mediante comas.
 <tbody>
 <tr class="odd">
 <td><span id="InputModifier"></span><span id="inputmodifier"></span><span id="INPUTMODIFIER"></span><strong>InputModifier</strong><br/></td>
-<td>Término opcional que identifica un argumento como una entrada, una salida o ambos.<br/> 
+<td>Término opcional que identifica un argumento como entrada, salida o ambos.<br/> 
 <table>
 <tbody>
 <tr class="odd">
@@ -73,18 +73,18 @@ Si hay varios argumentos de función, se separan mediante comas.
 </tr>
 <tr class="odd">
 <td><strong>uniforme</strong></td>
-<td>Datos constantes de solo entrada</td>
+<td>Datos constantes solo de entrada</td>
 </tr>
 </tbody>
 </table>
 
 <p> </p>
-<p>Los parámetros siempre se pasan por valor. en indica que el valor del parámetro debe copiarse en de la aplicación que realiza la llamada antes de que comience la función. out indica que se debe copiar el último valor del parámetro y devolverlo a la aplicación que realiza la llamada cuando se devuelve la función. inout es una forma abreviada para especificar ambos.</p>
-<p>Un valor uniforme procede de un registro constante; cada sombreador de vértices o invocación de sombreador de píxeles ve el mismo valor inicial para una variable uniforme. Las variables globales se tratan como si se declararon uniformes. Para las funciones que no son de nivel superior, uniform es sinónimo de <strong>en</strong>. Si no se especifica ningún uso de parámetros, se supone que el uso de parámetros está <strong>en</strong>.</p></td>
+<p>Los parámetros siempre se pasan por valor. en indica que el valor del parámetro se debe copiar en de la aplicación que realiza la llamada antes de que comience la función. out indica que se debe copiar el último valor del parámetro y devolverlo a la aplicación que realiza la llamada cuando se devuelve la función. inout es una forma abreviada para especificar ambos.</p>
+<p>Un valor uniforme procede de un registro constante; cada sombreador de vértices o invocación de sombreador de píxeles ve el mismo valor inicial para una variable uniforme. Las variables globales se tratan como si se declararon uniformes. Para las funciones que no son de nivel superior, uniform es sinónimo de <strong>en</strong>. Si no se especifica ningún uso de parámetros, se supone que el uso del parámetro está <strong>en</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><span id="Type"></span><span id="type"></span><span id="TYPE"></span><strong>Tipo</strong></p></td>
-<td><p>El tipo de argumento; puede ser cualquier tipo HLSL <a href="dx-graphics-hlsl-data-types.md">válido.</a></p></td>
+<td><p>Tipo de argumento; puede ser cualquier tipo HLSL <a href="dx-graphics-hlsl-data-types.md">válido.</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><span id="Name"></span><span id="name"></span><span id="NAME"></span><strong>Nombre</strong></p></td>
@@ -111,9 +111,9 @@ Si hay varios argumentos de función, se separan mediante comas.
 
 ## <a name="remarks"></a>Comentarios
 
-Los argumentos de función se enumeran en una lista de argumentos separados por comas en una declaración de función. Al igual que en las funciones de C, cada argumento debe tener un nombre de parámetro y un tipo declarados; Opcionalmente, un argumento para una función HLSL puede incluir una semántica, un valor inicial y una entrada de sombreador de píxeles puede incluir un tipo de interpolación.
+Los argumentos de función se enumeran en una lista de argumentos separados por comas en una declaración de función. Al igual que en las funciones de C, cada argumento debe tener un nombre de parámetro y un tipo declarados; Un argumento para una función HLSL opcionalmente puede incluir una semántica, un valor inicial y una entrada de sombreador de píxeles puede incluir un tipo de interpolación.
 
-El *tipo* de un argumento de función podría ser una estructura, que podría incluir un modificador de interpolación por miembro. Si el argumento de función también tiene un modificador de interpolación, el modificador de argumento de función invalida los modificadores de interpolación declarados dentro del tipo.
+El *tipo* de un argumento de función podría ser una estructura, que podría incluir un modificador de interpolación por miembro. Si el argumento de función también tiene un modificador de interpolación, el modificador de argumento de función invalida los modificadores de interpolación declarados dentro de Type.
 
 ## <a name="examples"></a>Ejemplos
 

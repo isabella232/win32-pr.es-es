@@ -13,9 +13,9 @@ ms.locfileid: "118715505"
 ---
 # <a name="speech-and-accessibility"></a>Voz y accesibilidad
 
-Para que las aplicaciones sean accesibles, la información sobre el contenido de la pantalla debe exponerse mediante las utilidades de reconocimiento de voz. Estas utilidades necesitan identificar y dar nombre a controles específicos para que puedan reconocer un nombre de control que se habla y manipular ese control en respuesta a los comandos hablados.
+Para que las aplicaciones sean accesibles, la información sobre el contenido de la pantalla debe exponerse mediante las utilidades de reconocimiento de voz. Estas utilidades deben identificar y dar nombre a controles específicos para que puedan reconocer un nombre de control que se habla y manipular ese control en respuesta a los comandos hablados.
 
-Por ejemplo, al usar una utilidad de entrada de voz, un usuario podría decir "Archivo", luego "Configuración de página" para elegir el elemento de menú de comandos correspondiente y, a continuación, decir "Horizontal" para activar la casilla correspondiente. Debe exponer la información sobre estos elementos para lograr el objetivo deseado.
+Por ejemplo, cuando se usa una utilidad de entrada de voz, un usuario podría decir "Archivo", luego "Configuración de página" para elegir el elemento de menú de comandos correspondiente y, a continuación, decir "Horizontal" para activar la casilla correspondiente. Debe exponer la información sobre estos elementos para lograr el objetivo deseado.
 
 En los temas siguientes se describe el uso de la voz y las directrices de accesibilidad.
 

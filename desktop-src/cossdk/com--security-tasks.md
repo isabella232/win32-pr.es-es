@@ -13,7 +13,7 @@ ms.locfileid: "118548657"
 ---
 # <a name="com-security-tasks"></a>Tareas de seguridad de COM+
 
-En los temas siguientes de esta sección se proporcionan instrucciones paso a paso para usar los servicios de seguridad COM+.
+En los temas siguientes de esta sección se proporcionan instrucciones paso a paso para usar servicios de seguridad COM+.
 
 
 
@@ -22,7 +22,7 @@ En los temas siguientes de esta sección se proporcionan instrucciones paso a pa
 | [Configuración de Role-Based seguridad](configuring-role-based-security.md)<br/>                                                   | Explica cómo definir roles para la aplicación, asignarlos a recursos y habilitar la comprobación de acceso para realizarse en varios niveles.<br/> |
 | [Administración de usuarios en roles](managing-users-in-roles.md)<br/>                                                                   | Explica cómo rellenar roles predefinidos con usuarios.<br/>                                                                                     |
 | [Establecer un nivel de autenticación para una aplicación de servidor](setting-an-authentication-level-for-a-server-application.md)<br/> | Explica cómo establecer un nivel de autenticación para determinar administrativamente cómo se realizará la autenticación para una aplicación de servidor.<br/>  |
-| [Habilitación de la autenticación para una aplicación de biblioteca](enabling-authentication-for-a-library-application.md)<br/>               | Explica cómo establecer un nivel de autenticación para determinar administrativamente cómo se realizará la autenticación para una aplicación de biblioteca.<br/> |
+| [Habilitar la autenticación para una aplicación de biblioteca](enabling-authentication-for-a-library-application.md)<br/>               | Explica cómo establecer un nivel de autenticación para determinar administrativamente cómo se realizará la autenticación para una aplicación de biblioteca.<br/> |
 | [Establecer un nivel de suplantación](setting-an-impersonation-level.md)<br/>                                                     | Explica cómo conceder una autoridad de suplantación en las llamadas realizadas desde la aplicación.<br/>                                                    |
 | [Configuración de la directiva de restricción de software](configuring-the-software-restriction-policy.md)<br/>                           | Explica cómo establecer la directiva de restricción de software para aplicaciones COM+.<br/>                                                                |
 

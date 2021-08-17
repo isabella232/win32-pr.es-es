@@ -1,6 +1,6 @@
 ---
 title: Función D3DX11CompileFromMemory (D3DX11async.h)
-description: 'Nota: La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Nota En lugar de usar esta función, se recomienda compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación HLSL, como la API D3DCompile. Compile un sombreador o un efecto que se carga en memoria.'
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store. Nota En lugar de usar esta función, se recomienda compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación HLSL, como D3DCompile API. Compile un sombreador o un efecto que se carga en memoria.
 ms.assetid: 3396560f-f411-4c66-9f22-03c0050c74b0
 keywords:
 - Función D3DX11CompileFromMemory Direct3D 11
@@ -186,9 +186,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-**D3DX11CompileFromMemory** devuelve E INVALIDARG si se proporciona un valor NULL distinto de NULL al parámetro pHResult al proporcionar NULL al \_ parámetro *pPump.*    Para obtener más información sobre esta situación, vea Comentarios.
+**D3DX11CompileFromMemory** devuelve E INVALIDARG si se proporciona no NULL al parámetro pHResult al proporcionar NULL al \_ parámetro *pPump.*    Para obtener más información sobre esta situación, vea Comentarios.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para obtener más información **sobre D3DX11CompileFromMemory**, vea [**D3DCompile**](/windows/desktop/direct3dhlsl/d3dcompile).
 
@@ -215,7 +215,7 @@ Además, si proporciona un valor distinto de **NULL** a *pHResult* al proporcion
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

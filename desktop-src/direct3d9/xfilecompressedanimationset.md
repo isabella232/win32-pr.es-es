@@ -96,7 +96,7 @@ Tamaño mínimo del búfer, en bytes, necesario para contener datos comprimidos 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

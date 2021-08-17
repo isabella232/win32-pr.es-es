@@ -39,7 +39,7 @@ En este tema se muestra cómo usar uno de los efectos incluidos en XAPOFX en una
 
     
 
-3.  Rellene una [**estructura \_ EFFECT \_ CHAIN de XAUDIO2**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_effect_chain) con datos.
+3.  Rellene una [**estructura EFFECT \_ \_ CHAIN de XAUDIO2**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_effect_chain) con datos.
 
     ```
     XAUDIO2_EFFECT_CHAIN chain;
@@ -58,11 +58,11 @@ En este tema se muestra cómo usar uno de los efectos incluidos en XAPOFX en una
     
 
     > [!Note]  
-    > También puede aplicar una cadena de efectos a una voz al crear la voz pasando la cadena como parámetro a [**IXAudio2::CreateSourceVoice,**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createsourcevoice) [**IXAudio2::CreateSubmixVoice**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createsubmixvoice)o [**IXAudio2::CreateMasteringVoice**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createmasteringvoice).
+    > También puede aplicar una cadena de efectos a una voz al crear la voz pasando la cadena como parámetro a [**IXAudio2::CreateSourceVoice,**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createsourcevoice) [**IXAudio2::CreateSubmixVoice**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createsubmixvoice)o [**IXAudio2::CreateMasteringVoice.**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createmasteringvoice)
 
      
 
-5.  Libere el efecto con IUnknown::Release. Al crear un XAPO, tendrá un recuento de referencias de 1. Cuando el XAPO se pasa a XAudio2 con [**SetEffectChain,**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectchain)XAudio2 incrementa el recuento de referencias en el XAPO. Liberar la referencia del cliente a XAPO permite que XAudio2 tome posesión del XAPO. Si XAudio2 tiene la única referencia al XAPO, esta referencia se elimina cuando XAudio2 ya no la usa. Si el código de cliente necesita mantener una referencia al XAPO (por ejemplo, para reutilizarlo más adelante), puede omitir este paso.
+5.  Libere el efecto con IUnknown::Release. Al crear un XAPO, tendrá un recuento de referencias de 1. Cuando el XAPO se pasa a XAudio2 con [**SetEffectChain,**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectchain)XAudio2 incrementa el recuento de referencias en el XAPO. Liberar la referencia del cliente a XAPO permite que XAudio2 tome posesión del XAPO. Si XAudio2 tiene la única referencia a XAPO, esta referencia se elimina cuando XAudio2 ya no la usa. Si el código de cliente necesita mantener una referencia a XAPO (por ejemplo, para reutilizarlo más adelante), puede omitir este paso.
 
     ```
     pXAPO->Release();
@@ -70,9 +70,9 @@ En este tema se muestra cómo usar uno de los efectos incluidos en XAPOFX en una
 
     
 
-6.  Rellene la estructura de parámetros, si la hay, asociada al efecto.
+6.  Rellene la estructura de parámetros, si la hubiera, asociada al efecto.
 
-    En este caso, la estructura PARAMETERS de [**FXREVERB \_**](/windows/desktop/api/xapofx/ns-xapofx-fxreverb_parameters) se usa para establecer el tamaño de habitación y la reverberación que debe usar el efecto de reverberación.
+    En este caso, la estructura PARAMETERS de [**FXREVERB \_**](/windows/desktop/api/xapofx/ns-xapofx-fxreverb_parameters) se usa para establecer el tamaño de habitación y la habitación que debe usar el efecto de reverberación.
 
     ```
     FXREVERB_PARAMETERS XAPOParameters;
@@ -82,7 +82,7 @@ En este tema se muestra cómo usar uno de los efectos incluidos en XAPOFX en una
 
     
 
-7.  Pase la estructura del parámetro de efecto al efecto mediante una llamada a la función [**SetEffectParameters**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectparameters) en la voz a la que está asociado el efecto.
+7.  Pase la estructura de parámetros de efecto al efecto mediante una llamada a la función [**SetEffectParameters**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectparameters) en la voz a la que está asociado el efecto.
 
     ```
     hr = pVoice->SetEffectParameters( 0, &XAPOParameters, sizeof( FXREVERB_PARAMETERS ) );

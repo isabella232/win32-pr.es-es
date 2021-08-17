@@ -44,7 +44,7 @@ Los valores de parámetro permitidos para **numthreads** dependen de la versión
 
  
 
-En la ilustración siguiente se muestra la relación entre los parámetros pasados a [**ID3D11DeviceContext::D ispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch), Dispatch(5,3,2), los valores especificados en el atributo numthreads, numthreads(10,8,3) y los valores que se pasarán al sombreador de proceso para los valores del sistema relacionados con subprocesos [(SV \_ GroupIndex](sv-groupindex.md),[SV \_ DispatchThreadID](sv-dispatchthreadid.md),[SV \_ GroupThreadID](sv-groupthreadid.md),[SV \_ GroupID).](sv-groupid.md)
+En la ilustración siguiente se muestra la relación entre los parámetros pasados a [**ID3D11DeviceContext::D ispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch), Dispatch(5,3,2), los valores especificados en el atributo numthreads, numthreads(10,8,3) y los valores que se pasarán al sombreador de proceso para los valores del sistema relacionados con subprocesos [(SV \_ GroupIndex](sv-groupindex.md),[SV \_ DispatchThreadID](sv-dispatchthreadid.md),[SV \_ GroupThreadID](sv-groupthreadid.md),[SV \_ GroupID](sv-groupid.md)).
 
 ![ilustración de la relación entre distribución, grupos de subprocesos y subprocesos](images/threadgroupids.png)
 
@@ -67,7 +67,7 @@ Este atributo se admite en los siguientes tipos de sombreadores:
 [Atributos del modelo de sombreador 5](d3d11-graphics-reference-sm5-attributes.md)
 </dt> <dt>
 
-[Shader Model 5](d3d11-graphics-reference-sm5.md)
+[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

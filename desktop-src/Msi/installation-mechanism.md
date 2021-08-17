@@ -17,7 +17,7 @@ Hay dos fases para un proceso de instalación correcto: adquisición y ejecució
 
 ## <a name="acquisition"></a>Adquisición
 
-Al principio de la fase de adquisición, una aplicación o un usuario indica al instalador que instale una característica o una aplicación. A continuación, el instalador progresa a través de las acciones especificadas en las tablas de secuencia de la base de datos de instalación. Estas acciones consultan la base de datos de instalación y generan un script que proporciona un procedimiento paso a paso para realizar la instalación.
+Al principio de la fase de adquisición, una aplicación o un usuario indica al instalador que instale una característica o una aplicación. A continuación, el instalador avanza por las acciones especificadas en las tablas de secuencia de la base de datos de instalación. Estas acciones consultan la base de datos de instalación y generan un script que proporciona un procedimiento paso a paso para realizar la instalación.
 
 ## <a name="execution"></a>Ejecución
 

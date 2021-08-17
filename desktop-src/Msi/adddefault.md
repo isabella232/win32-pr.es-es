@@ -17,7 +17,7 @@ El valor de la **propiedad ADDDEFAULT** es una lista de características delimit
 
 Una característica que aparece en la **propiedad ADDDEFAULT** se instala en el mismo estado de instalación que si el usuario solicitara una instalación a petición de la característica. El estado viene determinado por los bits que se establecen para la característica en la columna Atributos de la tabla de características [y](feature-table.md)qué bits se establecen para los componentes de características en la columna Atributos de la tabla [de componentes](component-table.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los nombres de características distinguen mayúsculas de minúsculas.
 
@@ -47,7 +47,7 @@ El instalador establece la propiedad [**Preselected**](preselected.md) en un val
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 

@@ -23,7 +23,7 @@ ms.locfileid: "118544764"
 ---
 # <a name="xtyp_advstart-transaction"></a>Transacción ADVSTART de XTYP \_
 
-Un cliente usa la **transacción \_ ADVSTART de XTYP** para establecer un bucle de asesoramiento con un servidor. Una datos dinámicos Exchange de devolución de llamada de servidor (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe esta transacción cuando un cliente especifica **\_ XTYP ADVSTART** como parámetro *wType* de la función [**DdeClientTransaction.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
+Un cliente usa la **transacción \_ ADVSTART de XTYP** para establecer un bucle de asesoramiento con un servidor. Una datos dinámicos Exchange de devolución de llamada de servidor (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe esta transacción cuando un cliente especifica **\_ XTYP ADVSTART como** el parámetro *wType* de la [**función DdeClientTransaction.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
 
 
 ```C++
@@ -95,11 +95,11 @@ No se usa.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Una función de devolución de llamada de servidor debe devolver **TRUE para** permitir un bucle advise en el par de nombre de tema y nombre de elemento especificado, o **FALSE** para denegar el bucle advise. Si la función de devolución de llamada devuelve **TRUE**, las llamadas posteriores a la función [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) realizadas por el servidor en el mismo par de nombre de tema y nombre de elemento hace que el sistema envíe transacciones [**de \_ ADIQ de XTYP**](xtyp-advreq.md) al servidor.
+Una función de devolución de llamada de servidor debe devolver **TRUE** para permitir un bucle advise en el par de nombre de tema y nombre de elemento especificado, o **FALSE** para denegar el bucle advise. Si la función de devolución de llamada devuelve **TRUE**, las llamadas posteriores al servidor a la función [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) en el mismo par de nombre de tema y nombre de elemento hace que el sistema envíe transacciones [**\_ XTYP ADBIZQ**](xtyp-advreq.md) al servidor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si un cliente solicita un bucle de asesoramiento en un nombre de tema, nombre de elemento y formato de datos para un bucle de asesoramiento que ya está establecido, la biblioteca de administración de datos dinámicos Exchange (DDEML) no crea un bucle de asesoramiento duplicado, sino que modifica las marcas de bucle de aviso **(XTYPF \_ ACKREQ** y **XTYPF \_ NODATA)** para que coincidan con la solicitud más reciente.
+Si un cliente solicita un bucle de asesoramiento en un nombre de tema, nombre de elemento y formato de datos para un bucle de asesoramiento que ya está establecido, la biblioteca de administración de datos dinámicos Exchange (DDEML) no crea un bucle de asesoramiento duplicado, sino que modifica las marcas de bucle de aviso **(XTYPF \_ ACKREQ** y **\_ XTYPF NODATA)** para que coincidan con la solicitud más reciente.
 
 Esta transacción se filtra si la aplicación de servidor especificó la **marca CBF \_ FAIL \_ ADVISES** en la [**función DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
@@ -107,7 +107,7 @@ Esta transacción se filtra si la aplicación de servidor especificó la **marca
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                   |
@@ -115,7 +115,7 @@ Esta transacción se filtra si la aplicación de servidor especificó la **marca
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

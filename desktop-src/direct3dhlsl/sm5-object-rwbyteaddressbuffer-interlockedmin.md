@@ -56,7 +56,7 @@ Valor de entrada.
 
 </dd> <dt>
 
-*valor \_ original de* \[ salida\]
+*valor \_ de salida* \[ original\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
@@ -92,7 +92,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [RWByteAddressBuffer](sm5-object-rwbyteaddressbuffer.md)
 </dt> <dt>
 
-[Shader Model 5](d3d11-graphics-reference-sm5.md)
+[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

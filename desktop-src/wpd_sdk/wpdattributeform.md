@@ -24,7 +24,7 @@ ms.locfileid: "118696283"
 
 El **tipo de enumeración WpdAttributeForm** describe cómo una propiedad almacena sus valores.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -78,7 +78,7 @@ El valor de propiedad representa un identificador de objeto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta enumeración la usa la [propiedad \_ WPD PROPERTY \_ ATTRIBUTE \_ FORM](attributes.md) para describir cómo se almacenan los datos de una propiedad.
 
@@ -92,7 +92,7 @@ Esta enumeración la usa la [propiedad \_ WPD PROPERTY \_ ATTRIBUTE \_ FORM](att
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

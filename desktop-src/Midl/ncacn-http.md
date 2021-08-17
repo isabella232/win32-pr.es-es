@@ -45,7 +45,7 @@ Puerto TCP/IP conocido (estático) en el que escucha el proceso del servidor RPC
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La identificación de Microsoft Internet Information Server (IIS) como familia de protocolos permite que las aplicaciones cliente y servidor se comuniquen a través de Internet mediante Microsoft Internet Information Server (IIS) como proxy. Dado que las llamadas se tunelización a través de un puerto HTTP establecido, pueden cruzar firewalls.
 

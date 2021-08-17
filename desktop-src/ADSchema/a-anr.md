@@ -27,7 +27,7 @@ Atributo ambiguo de resolución de nombres que se va a usar al elegir entre obje
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------------------|
 | CN                | Anr                                                               |
 | Ldap-Display-Name | Anr                                                               |
@@ -36,7 +36,7 @@ Atributo ambiguo de resolución de nombres que se va a usar al elegir entre obje
 | Frecuencia de actualización  | Cuando es necesario agregar o quitar un atributo de la lista de ANR. |
 | Attribute-Id      | 1.2.840.113556.1.4.1208                                           |
 | System-Id-Guid    | 45b01500-c419-11d1-ero9-0080c76670c0                              |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                       |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                       |
 
 
 
@@ -54,14 +54,14 @@ Atributo ambiguo de resolución de nombres que se va a usar al elegir entre obje
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Es de un solo valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
@@ -75,14 +75,14 @@ Atributo ambiguo de resolución de nombres que se va a usar al elegir entre obje
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Es de un solo valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
@@ -96,14 +96,14 @@ Atributo ambiguo de resolución de nombres que se va a usar al elegir entre obje
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Es de un solo valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
@@ -117,14 +117,14 @@ Atributo ambiguo de resolución de nombres que se va a usar al elegir entre obje
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Es de un solo valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
@@ -138,14 +138,14 @@ Atributo ambiguo de resolución de nombres que se va a usar al elegir entre obje
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Es de un solo valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
@@ -159,14 +159,14 @@ Atributo ambiguo de resolución de nombres que se va a usar al elegir entre obje
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Es de un solo valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
@@ -180,14 +180,14 @@ Atributo ambiguo de resolución de nombres que se va a usar al elegir entre obje
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Es de un solo valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |

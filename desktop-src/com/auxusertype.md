@@ -3,7 +3,7 @@ title: AuxUserType
 description: Especifica el nombre para mostrar corto de una aplicación y los nombres de aplicación.
 ms.assetid: 3367eb68-01f4-4cb9-b1d0-27554c28b68d
 keywords:
-- Com de clave del Registro AuxUserType
+- Tecla del Registro AuxUserType COM
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f1dbec8e873e6f6cfcb5fdb29468c1f09c0a7a6935280054e129ddac0b49e282
@@ -27,7 +27,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
          3 = ApplicationName
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La longitud máxima recomendada para *ShortDisplayName* es de 15 caracteres. Este nombre se usa en los menús, incluidos los menús emergentes.
 

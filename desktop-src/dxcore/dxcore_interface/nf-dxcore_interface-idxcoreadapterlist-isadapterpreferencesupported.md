@@ -41,4 +41,4 @@ Devuelve `true` si el sistema operativo actual entiende el tipo de ordenación. 
 
 ## <a name="see-also"></a>Consulte también
 
-[IDXCoreAdapterList,](./nn-dxcore_interface-idxcoreadapterlist.md) [referencia de DXCore,](../dxcore-reference.md) [uso de DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)
+[IDXCoreAdapterList](./nn-dxcore_interface-idxcoreadapterlist.md), [Referencia de DXCore](../dxcore-reference.md), [Uso de DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)

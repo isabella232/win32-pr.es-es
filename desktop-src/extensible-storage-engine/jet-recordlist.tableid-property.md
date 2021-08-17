@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_RECORDLIST. TABLEID (propiedad)'
-title: JET_RECORDLIST. TABLEID (propiedad)
+description: 'Más información sobre: JET_RECORDLIST.tableid'
+title: JET_RECORDLIST.tableid, propiedad
 TOCTitle: 'tableid property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RECORDLIST.tableid
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_recordlist.tableid(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9140bc662592f20c2c54606666ab76099326fd56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d777ed3d16ceacc058cfc447fc6a00d21238e8fe849255d8d35b9cb6a263e8fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118764023"
 ---
-# <a name="jet_recordlisttableid-property"></a>JET_RECORDLIST. TABLEID (propiedad)
+# <a name="jet_recordlisttableid-property"></a>JET_RECORDLIST.tableid, propiedad
 
-Obtiene TABLEID de la tabla temporal. Debe cerrarse cuando la tabla ya no se necesite.
+Obtiene el tableid de la tabla temporal. Debe cerrarse cuando la tabla ya no sea necesaria.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public JET_TABLEID tableid { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_RECORDLIST (clase)](./jet-recordlist-class.md)
+[JET_RECORDLIST clase](./jet-recordlist-class.md)
 
-[Miembros de JET_RECORDLIST](./jet-recordlist-members.md)
+[JET_RECORDLIST miembros](./jet-recordlist-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

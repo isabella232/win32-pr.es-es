@@ -1,7 +1,7 @@
 ---
 description: Define un sistema virtual planeado.
 ms.assetid: f129554b-e43e-4c3a-8418-d5d810f4c4b5
-title: Método DefinePlannedSystem de la clase Msvm_VirtualSystemManagementService
+title: Método DefinePlannedSystem de la Msvm_VirtualSystemManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: d5e9fa8a49e86850d044216a3d95e3d4dd756fc0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 398f0c11f748cb9dc4865cb1ccb94f24409bda104bbcb55ec00ffde62a17188b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117810490"
 ---
-# <a name="defineplannedsystem-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método DefinePlannedSystem de la \_ clase VirtualSystemManagementService de MSVM
+# <a name="defineplannedsystem-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método DefinePlannedSystem de la clase \_ VirtualSystemManagementService de Msvm
 
 Define un sistema virtual planeado.
 
-La entrada que no se ha especificado completamente puede rellenarse con valores predeterminados.
+La entrada que no se especifica completamente se puede rellenar con valores predeterminados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,38 +45,38 @@ uint32 DefinePlannedSystem(
 
 <dl> <dt>
 
-*Configuración* \[ de\]
+*SystemSettings* \[ En\]
 </dt> <dd>
 
-La configuración del sistema para el sistema virtual.
+Configuración del sistema para el sistema virtual.
 
 </dd> <dt>
 
-*ResourceSettings* \[ de\]
+*ResourceSettings* \[ En\]
 </dt> <dd>
 
-La configuración de recursos del sistema virtual.
+Configuración de recursos para el sistema virtual.
 
 </dd> <dt>
 
-*ReferenceConfiguration* \[ de\]
+*ReferenceConfiguration* \[ En\]
 </dt> <dd>
 
-Un [**\_ VirtualSystemSettingData de CIM**](cim-virtualsystemsettingdata.md) que contiene la configuración de referencia.
+Cim [**\_ VirtualSystemSettingData que**](cim-virtualsystemsettingdata.md) contiene la configuración de referencia.
 
 </dd> <dt>
 
-*ResultingSystem* \[ enuncia\]
+*ResultingSystem* \[ out\]
 </dt> <dd>
 
-Un [**\_ ComputerSystem de CIM**](cim-computersystem.md) que contiene el sistema resultante.
+Un [**equipo \_ CIMSystem**](cim-computersystem.md) que contiene el sistema resultante.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -95,7 +95,7 @@ Si se ejecuta correctamente, devuelve 0 o 4096; de lo contrario, devuelve un err
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -107,10 +107,10 @@ Si se ejecuta correctamente, devuelve 0 o 4096; de lo contrario, devuelve un err
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -119,10 +119,10 @@ Si se ejecuta correctamente, devuelve 0 o 4096; de lo contrario, devuelve un err
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -131,7 +131,7 @@ Si se ejecuta correctamente, devuelve 0 o 4096; de lo contrario, devuelve un err
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

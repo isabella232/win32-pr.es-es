@@ -1,6 +1,6 @@
 ---
 title: Recopilar información de uso de memoria para un proceso
-description: Para determinar la eficacia de la aplicación, puede que desee examinar su uso de memoria. En el código de ejemplo siguiente se usa la función GetProcessMemoryInfo para obtener información sobre el uso de memoria de un proceso.
+description: Para determinar la eficacia de la aplicación, puede que desee examinar su uso de memoria. El código de ejemplo siguiente usa la función GetProcessMemoryInfo para obtener información sobre el uso de memoria de un proceso.
 ms.assetid: 23641bf8-3653-4cb9-8008-cd99137ca268
 ms.topic: article
 ms.date: 05/31/2018

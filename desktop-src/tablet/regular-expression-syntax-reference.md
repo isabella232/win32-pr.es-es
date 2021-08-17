@@ -27,7 +27,7 @@ Los operadores siguientes son válidos para crear expresiones regulares para def
 
 
 
-| Operator      | Descripción                                                                           |
+| Operador      | Descripción                                                                           |
 |---------------|---------------------------------------------------------------------------------------|
 | \*<br/> | Operador unario postfijo que significa cero o más apariciones del operando.<br/> |
 | +<br/>  | Operador unario postfijo que significa una o varias apariciones del operando.<br/>  |
@@ -39,7 +39,7 @@ Los operadores siguientes son válidos para crear expresiones regulares para def
 
  
 
-La implementación de Microsoft de expresiones regulares para reconocedores de escritura a mano permite aplicaciones repetidas de operadores unarios postfijos. Por ejemplo, a \* \* = (a \* ) = a , \* \* b?? = (b?)? = b?. También permiten repeticiones no consecutivas, por ejemplo: ? \* \* = ((a \* )?) \* = (a ) = a \* \* \* . Esto es diferente de .NET Framework expresiones regulares, que solo permiten ? operador que se va a repetir.
+La implementación de Microsoft de expresiones regulares para reconocedores de escritura a mano permite aplicaciones repetidas de operadores unarios postfijos. Por ejemplo, a \* \* = (a \* ) = a , \* \* b?? = (b?)? = b?. También permiten repeticiones no consecutivas, por ejemplo: ? \* \* = ((a \* )?) \* = (a ) = a \* \* \* . Esto es diferente de .NET Framework expresiones regulares, que solo permiten el ? operador que se va a repetir.
 
 Otra diferencia de .NET Framework expresiones regulares es que las expresiones regulares de escritura a mano no admiten una expresión vacía designada con un par vacío de paréntesis, ().
 
@@ -67,7 +67,7 @@ No se admiten los siguientes operadores de expresión regular al crear expresion
 
 
 
-| Operator                                     | Descripción                                                         |
+| Operador                                     | Descripción                                                         |
 |----------------------------------------------|---------------------------------------------------------------------|
 | .<br/>                                 | Carácter de punto.<br/>                                        |
 | \[\]<br/>                              | Corchetes. Use paréntesis para agrupar elementos.<br/>     |

@@ -13,7 +13,7 @@ ms.locfileid: "118546872"
 ---
 # <a name="security-call-context-information"></a>Información de contexto de llamada de seguridad
 
-La seguridad basada en roles se basa en un mecanismo general que le permite recuperar información de seguridad relacionada con todos los llamadores ascendentes de la cadena de llamadas al componente. Esta información solo está disponible cuando tiene habilitada la comprobación de roles de nivel de componente. Para obtener más información sobre cómo establecer la seguridad de nivel de componente, vea [Establecer un nivel de seguridad para las comprobaciones de acceso.](setting-a-security-level-for-access-checks.md)
+La seguridad basada en roles se basa en un mecanismo general que le permite recuperar información de seguridad relacionada con todos los llamadores ascendentes de la cadena de llamadas al componente. Esta información solo está disponible cuando tiene habilitada la comprobación de roles de nivel de componente. Para obtener más información sobre cómo establecer la seguridad de nivel de componente, vea Establecer un nivel de seguridad para [las comprobaciones de acceso.](setting-a-security-level-for-access-checks.md)
 
 Puede usar la interfaz [**ISecurityCallContext para acceder**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallcontext) a la información de contexto de llamada de seguridad mediante programación. Para obtener una descripción, vea [Seguridad de componentes mediante programación.](programmatic-component-security.md)
 

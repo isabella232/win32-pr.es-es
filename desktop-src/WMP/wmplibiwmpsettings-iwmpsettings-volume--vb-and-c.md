@@ -27,7 +27,7 @@ ms.locfileid: "118568402"
 
 La **propiedad volume** obtiene o establece el volumen de reproducción actual.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -48,7 +48,7 @@ Public Property volume As System.Int32
 
 **System.Int32 que** es el nivel de volumen, que va de 0 a 100.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Un valor de cero no especifica ningún volumen (muted). Un valor de 100 especifica el volumen completo. Si no se especifica ningún valor para esta propiedad, el valor predeterminado es la última configuración de volumen establecida para Reproductor de Windows Media.
 
@@ -56,7 +56,7 @@ Un valor de cero no especifica ningún volumen (muted). Un valor de 100 especifi
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -64,7 +64,7 @@ Un valor de cero no especifica ningún volumen (muted). Un valor de 100 especifi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

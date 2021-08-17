@@ -57,7 +57,7 @@ Puntero a la [**estructura D3DXPLANE**](d3dxplane.md) que es el resultado de la 
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) que define uno de los puntos usados para construir el plano.
+Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) definiendo uno de los puntos usados para construir el plano.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) que define uno de lo
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) que define uno de los puntos usados para construir el plano.
+Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) definiendo uno de los puntos usados para construir el plano.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) que define uno de lo
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) que define uno de los puntos usados para construir el plano.
+Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) definiendo uno de los puntos usados para construir el plano.
 
 </dd> </dl>
 
@@ -87,7 +87,7 @@ Puntero a la [**estructura D3DXPLANE**](d3dxplane.md) construida a partir de los
 
 ## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXPlaneFromPoints** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXPlaneFromPoints** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 

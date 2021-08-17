@@ -13,7 +13,7 @@ ms.locfileid: "118560620"
 ---
 # <a name="winsat-samples"></a>Ejemplos de WinSAT
 
-\[Los ejemplos de WinSAT pueden modificarse o no estar disponibles para las versiones después Windows 8.1.\]
+\[Los ejemplos de WinSAT pueden modificarse o no estar disponibles para las versiones después de Windows 8.1.\]
 
 La Windows System Assessment Tool (WinSAT) proporciona los ejemplos siguientes en el [SDK Windows .](https://msdn.microsoft.com/windows/bb980924.aspx)
 

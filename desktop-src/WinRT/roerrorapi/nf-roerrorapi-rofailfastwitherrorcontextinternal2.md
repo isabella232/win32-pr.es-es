@@ -49,7 +49,7 @@ HRESULT **asociado** al error actual. La excepción se produce para cualquier va
 
 Tipo: **[ULONG](../../winprog/windows-data-types.md)**
 
-Número de elementos de la matriz *aStowedExceptionPointers.*
+Número de elementos de la *matriz aStowedExceptionPointers.*
 
 `aStowedExceptionPointers`
 
@@ -61,7 +61,7 @@ Matriz de punteros a [**STOWED_EXCEPTION_INFORMATION_V2**](../../wer/stowed-exce
 
 Esta función no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 **RoFailFastWithErrorContextInternal2** no está asociado a una biblioteca de importación ni a un archivo de encabezado. Puede llamarla primero mediante la función [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw) (para cargar ) y, a continuación, llamando a la función GetProcAddress para recuperar la dirección `ComBase.dll` de **RoFailFastWithErrorContextInternal2**. [](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
@@ -75,6 +75,6 @@ Para obtener más información, [vea Función RoFailFastWithErrorContext](/windo
 | **Library** | N/D |
 | **Dll** | ComBase.dll |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [Función RoFailFastWithErrorContext](/windows/win32/api/roerrorapi/nf-roerrorapi-rofailfastwitherrorcontext)

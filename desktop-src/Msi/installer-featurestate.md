@@ -22,7 +22,7 @@ ms.locfileid: "118631279"
 ---
 # <a name="installerfeaturestate-property"></a>Installer.FeatureState, propiedad
 
-La propiedad **FeatureState** de solo lectura devuelve el estado instalado de una característica.
+La propiedad **FeatureState de** solo lectura devuelve el estado instalado de una característica.
 
 Esta propiedad es de solo lectura.
 
@@ -37,20 +37,20 @@ propVal = Installer.FeatureState
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta propiedad devuelve uno de los valores siguientes.
 
 
 
-| Value                     | Descripción                                      |
+| Valor                     | Descripción                                      |
 |---------------------------|--------------------------------------------------|
 | msiInstallStateAbsent     | La característica no está instalada.                    |
-| msiInstallStateAdvertised | La característica se anuncia.                       |
+| msiInstallStateAdvertised | Se anuncia la característica.                       |
 | msiInstallStateLocal      | La característica se instala para ejecutarse localmente.         |
 | msiInstallStateSource     | La característica se instala para ejecutarse desde el origen.     |
-| msiInstallStateInvalidArg | Se pasó un parámetro no válido a la función . |
-| msiInstallStateUnknown    | Se desconoce el código de producto o el identificador de característica.       |
+| msiInstallStateInvalidArg | Se pasó un parámetro no válido a la función. |
+| msiInstallStateUnknown    | Se desconoce el código de producto o el identificador de la característica.       |
 | msiInstallStateBadConfig  | Los datos de configuración están dañados.               |
 
 
@@ -65,15 +65,15 @@ La **propiedad FeatureState** no valida que la característica sea accesible.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

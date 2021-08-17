@@ -34,11 +34,11 @@ endpoint("ncacn_nb_tcp:[port-name]")
 *port-name* 
 </dt> <dd>
 
-Especifica un valor opcional de 8 bits que va de 1 a 254. Los valores de menor que 0x20 están reservados. Si no *se especifica el valor de nombre* de puerto, el servicio de asignación de puntos de conexión selecciona el valor del puerto.
+Especifica un valor opcional de 8 bits que va de 1 a 254. Los valores de menos de 0x20 están reservados. Si no *se especifica el valor de nombre* de puerto, el servicio de asignación de puntos de conexión selecciona el valor del puerto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La sintaxis de la cadena de puerto NetBIOS, como todas las cadenas de puerto, se define mediante la implementación de transporte y es independiente de la especificación de IDL. El compilador MIDL realiza una comprobación de sintaxis limitada, pero no garantiza que la especificación del punto de conexión sea correcta. Algunas clases de errores se pueden notifican en tiempo de ejecución en lugar de en tiempo de compilación.
 

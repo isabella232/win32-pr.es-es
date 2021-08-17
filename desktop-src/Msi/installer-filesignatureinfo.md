@@ -22,7 +22,7 @@ ms.locfileid: "118630786"
 ---
 # <a name="installerfilesignatureinfo-method"></a>Método Installer.FileSignatureInfo
 
-El **método FileSignatureInfo** del objeto [**Installer**](installer-object.md) toma la ruta de acceso a un archivo y devuelve una SAFEARRAY de bytes que representan el hash o el certificado codificado. Los valores se pueden usar para rellenar las tablas [MsiDigitalSignature,](msidigitalsignature-table.md) [MsiPatchCertificate](msipatchcertificate-table.md)y [MsiDigitalCertificate.](msidigitalcertificate-table.md)
+El **método FileSignatureInfo** del objeto [**Installer**](installer-object.md) toma la ruta de acceso a un archivo y devuelve una SAFEARRAY de bytes que representan el hash o el certificado codificado. A continuación, los valores se pueden usar para rellenar las tablas [MsiDigitalSignature,](msidigitalsignature-table.md) [MsiPatchCertificate](msipatchcertificate-table.md)y [MsiDigitalCertificate.](msidigitalcertificate-table.md)
 
 Para obtener más información, vea el [**tipo de datos SAFEARRAY**](/windows/win32/api/oaidl/ns-oaidl-safearray).
 
@@ -61,7 +61,7 @@ Marcas de casos de error especiales.
 
 | Marca                                                                                                                                                                                                                                                                                                                                    | Significado                                                                                                                                                                                                                                                                                                                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="msiSignatureOptionInvalidHashFatal"></span><span id="msisignatureoptioninvalidhashfatal"></span><span id="MSISIGNATUREOPTIONINVALIDHASHFATAL"></span><dl> <dt>**msiSignatureOptionInvalidHashFatal**</dt> <dt>1</dt> </dl> | Con *Opciones* establecido en msiSignatureOptionInvalidHashFatal, **FileSignatureInfo** siempre devuelve un error irrespeto para un hash no válido. <br/> Si *Options* no está establecido en msiSignatureOptionInvalidHashFatal y *Format* está establecido en msiSignatureInfoCertificate, **FileSignatureInfo** no devuelve un error para un hash no válido.<br/> |
+| <span id="msiSignatureOptionInvalidHashFatal"></span><span id="msisignatureoptioninvalidhashfatal"></span><span id="MSISIGNATUREOPTIONINVALIDHASHFATAL"></span><dl> <dt>**msiSignatureOptionInvalidHashFatal**</dt> <dt>1</dt> </dl> | Con *Opciones* establecidas en msiSignatureOptionInvalidHashFatal, **FileSignatureInfo** siempre devuelve un error irrespeto para un hash no válido. <br/> Si *Options* no está establecido en msiSignatureOptionInvalidHashFatal y *Format* está establecido en msiSignatureInfoCertificate, **FileSignatureInfo** no devuelve un error para un hash no válido.<br/> |
 
 
 
@@ -91,7 +91,7 @@ Información de firma solicitada.
 
 Si se realiza correctamente, el método devuelve [una SAFEARRAY](/windows/win32/api/oaidl/ns-oaidl-safearray) de bytes que contienen el hash o el certificado codificado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para crear una instalación firmada totalmente verificada mediante automatización, use el método **FileSignatureInfo** para rellenar las tablas [MsiDigitalCertificate,](msidigitalcertificate-table.md) [MsiPatchCertificate](msipatchcertificate-table.md)y [MsiDigitalSignature.](msidigitalsignature-table.md) Para obtener más información, [vea Creación de una instalación firmada totalmente comprobada mediante Automation.](authoring-a-fully-verified-signed-installation-using-automation.md)
 
@@ -99,15 +99,15 @@ Para crear una instalación firmada totalmente verificada mediante automatizaci�
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-title: Atributo acs-time-of-day
+title: Atributo ACS-Time-Of-Day
 description: Horas del día en las que se aplica esta directiva.
 ms.assetid: aacd604a-45cb-4815-bc6b-332cf090f4a2
 ms.tgt_platform: multiple
@@ -21,13 +21,13 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118689271"
 ---
-# <a name="acs-time-of-day-attribute"></a>Atributo acs-time-of-day
+# <a name="acs-time-of-day-attribute"></a>Atributo ACS-Time-Of-Day
 
 Horas del día en las que se aplica esta directiva.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Hora del día de ACS                             |
 | Ldap-Display-Name | aCSTimeOfDay                                |
@@ -36,7 +36,7 @@ Horas del día en las que se aplica esta directiva.
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.756                      |
 | System-Id-Guid    | 7f561279-5301-11d1-a9c5-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,14 +53,14 @@ Horas del día en las que se aplica esta directiva.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Es de un solo valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
@@ -74,14 +74,14 @@ Horas del día en las que se aplica esta directiva.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Es de un solo valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
@@ -95,14 +95,14 @@ Horas del día en las que se aplica esta directiva.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Es de un solo valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
@@ -116,14 +116,14 @@ Horas del día en las que se aplica esta directiva.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Es de un solo valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
@@ -137,14 +137,14 @@ Horas del día en las que se aplica esta directiva.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Es de un solo valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
@@ -158,14 +158,14 @@ Horas del día en las que se aplica esta directiva.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Es de un solo valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |

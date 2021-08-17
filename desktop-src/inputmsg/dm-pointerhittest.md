@@ -23,7 +23,7 @@ ms.locfileid: "118482476"
 ---
 # <a name="dm_pointerhittest-message"></a>DM_POINTERHITTEST mensaje
 
-\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
 Se envía a una ventana, cuando se detecta por primera vez la entrada de puntero, con el fin de determinar el destino de entrada más probable para [la manipulación directa.](/previous-versions/windows/desktop/directmanipulation/direct-manipulation-portal)
 

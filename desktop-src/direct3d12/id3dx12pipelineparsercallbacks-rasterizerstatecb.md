@@ -1,6 +1,6 @@
 ---
 title: Método ID3DX12PipelineParserCallbacks RasterizerStateCb (D3DX12.h)
-description: Llama a la devolución de llamada del subobjeto de descripción del estado del rasterizador de un objeto que implementa esta interfaz.
+description: Llama a la devolución de llamada del subobjeto de descripción de estado del rasterizador de un objeto que implementa esta interfaz.
 ms.assetid: 125FC6EC-B749-4EE2-9D34-14BD12993BDC
 keywords:
 - Método RasterizerStateCb
@@ -26,7 +26,7 @@ ms.locfileid: "118528625"
 ---
 # <a name="id3dx12pipelineparsercallbacksrasterizerstatecb-method"></a>Método ID3DX12PipelineParserCallbacks::RasterizerStateCb
 
-Llama a la devolución de llamada del subobjeto de descripción del estado del rasterizador de un objeto que implementa esta interfaz.
+Llama a la devolución de llamada del subobjeto de descripción de estado del rasterizador de un objeto que implementa esta interfaz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,7 +68,7 @@ No devuelve nada.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

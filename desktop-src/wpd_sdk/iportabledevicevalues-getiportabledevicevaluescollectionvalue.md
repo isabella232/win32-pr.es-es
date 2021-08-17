@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118697083"
 ---
-# <a name="iportabledevicevaluesgetiportabledevicevaluescollectionvalue-method"></a>IPortableDeviceValues::GetIPortableDeviceValuesCollectionValue (método)
+# <a name="iportabledevicevaluesgetiportabledevicevaluescollectionvalue-method"></a>IPortableDeviceValues::GetIPortableDeviceValuesCollectionValue (Método)
 
 El **método GetIPortableDeviceValuesCollectionValue** recupera un valor **IPortableDeviceValuesCollection** (tipo VT \_ UNKNOWN) especificado por una clave.
 
@@ -73,7 +73,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo de cómo usar este método, vea [Retrieving the Rendering Capabilities Supported by a Device](retrieving-the-rendering-capabilities-supported-by-a-device.md).
+Para obtener un ejemplo de cómo usar este método, vea [Recuperación de las funcionalidades de representación compatibles con un dispositivo](retrieving-the-rendering-capabilities-supported-by-a-device.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,11 +86,11 @@ Para obtener un ejemplo de cómo usar este método, vea [Retrieving the Renderin
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
+[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [Recuperar las funcionalidades de representación admitidas por un dispositivo](retrieving-the-rendering-capabilities-supported-by-a-device.md)

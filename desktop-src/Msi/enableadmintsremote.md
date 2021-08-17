@@ -13,7 +13,7 @@ ms.locfileid: "118637109"
 ---
 # <a name="enableadmintsremote"></a>EnableAdminTSRemote
 
-A partir Windows Server 2008 y Windows Vista, esta directiva ya no tiene ningún efecto. Un administrador puede realizar una instalación desde la sesión de consola de un servidor de Terminal Server. Un administrador también puede realizar una instalación desde una sesión de cliente del servidor de Terminal Server.
+A partir Windows Server 2008 y Windows Vista, esta directiva ya no tiene ningún efecto. Un administrador puede realizar una instalación desde la sesión de consola de un servidor de Terminal Server. Un administrador también puede realizar una instalación desde una sesión de cliente del servidor terminal.
 
 Para obtener más información, [vea Terminal Services](/windows/desktop/TermServ/terminal-services-portal) en Microsoft Windows Software Development Kit (SDK).
 
@@ -29,7 +29,7 @@ Establecer esta directiva de sistema [por](system-policy.md) máquina permite a 
 
 **REG \_ DWORD**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para obtener más información, vea también Using [Windows Installer with a Terminal Server](using-windows-installer-with-a-terminal-server.md).
 

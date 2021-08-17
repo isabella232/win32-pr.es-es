@@ -13,7 +13,7 @@ ms.locfileid: "118477953"
 ---
 # <a name="iagentcharacterexsethelpfilename"></a>IAgentCharacterEx::SetHelpFileName
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT SetHelpFileName(
@@ -34,12 +34,12 @@ Nombre de archivo de ayuda del carácter.
 
 </dd> </dl>
 
-Si ha creado un archivo de Ayuda de Windows para la aplicación y ha establecido la propiedad [**HelpFile**](helpfile-property.md) del carácter, Microsoft Agent llama automáticamente a la Ayuda cuando [**HelpModeOn**](helpmodeon-property.md) está establecido en **True** y el usuario hace clic en el carácter o selecciona un comando en el menú emergente. Si hay un número de contexto en la propiedad [**HelpContextID**](helpcontextid-property.md) del comando seleccionado, la Ayuda muestra un tema correspondiente al contexto de Ayuda actual; de lo contrario, muestra "No hay tema de Ayuda asociado a este elemento".
+Si ha creado un archivo de Ayuda de Windows para la aplicación y ha establecido la propiedad [**HelpFile**](helpfile-property.md) del carácter, Microsoft Agent llama automáticamente a la Ayuda cuando [**HelpModeOn**](helpmodeon-property.md) está establecido en **True** y el usuario hace clic en el carácter o selecciona un comando en su menú emergente. Si hay un número de contexto en la [**propiedad HelpContextID**](helpcontextid-property.md) del comando seleccionado, la Ayuda muestra un tema correspondiente al contexto de Ayuda actual; de lo contrario, muestra "Sin tema de Ayuda asociado a este elemento".
 
 Esta propiedad solo se aplica al uso del carácter por parte de la aplicación cliente; la configuración no afecta a otros clientes del carácter u otros caracteres de la aplicación cliente.
 
 > [!Note]  
-> La compilación de un archivo de Ayuda requiere microsoft Windows compilador de Ayuda.
+> La compilación de un archivo de Ayuda requiere el compilador Windows Ayuda de Microsoft.
 
  
 
