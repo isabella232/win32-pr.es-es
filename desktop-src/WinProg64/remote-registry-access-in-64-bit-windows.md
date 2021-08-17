@@ -1,9 +1,9 @@
 ---
-title: Acceso remoto al Registro en aplicaciones de 64 Windows
+title: Acceso remoto al Registro en archivos de 64 Windows
 description: El redirector del registro proporciona acceso remoto al registro en un servidor de 64 Windows a través de la función RegConnectRegistry.
 ms.assetid: 7873c1e2-53fb-4c93-bf4c-251a13cd8db7
 keywords:
-- acceso remoto al registro de 64 bits Windows programación
+- programación de acceso remoto al registro Windows 64 bits
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 2f066641b080ace60a62c882a4abd0190e20537259517a2e789b4d450e352349
@@ -13,9 +13,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118561456"
 ---
-# <a name="remote-registry-access-in-64-bit-windows"></a>Acceso remoto al Registro en aplicaciones de 64 Windows
+# <a name="remote-registry-access-in-64-bit-windows"></a>Acceso remoto al Registro en archivos de 64 Windows
 
-El redirector del registro proporciona acceso remoto al registro en un servidor de 64 Windows a través de la [**función RegConnectRegistry.**](/windows/desktop/api/winreg/nf-winreg-regconnectregistrya)
+El redirector del Registro proporciona acceso remoto al registro en un servidor de 64 Windows a través de la [**función RegConnectRegistry.**](/windows/desktop/api/winreg/nf-winreg-regconnectregistrya)
 
 Si el cliente es una aplicación de 32 bits, accede a la vista predeterminada del Registro de 32 bits del servidor. Si el cliente es una aplicación de 64 bits, accede a la vista del Registro de 64 bits.
 

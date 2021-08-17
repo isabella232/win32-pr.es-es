@@ -1,8 +1,8 @@
 ---
-description: EnableIPSec&\# 8194; El método de clase WMI habilita el protocolo de seguridad de Internet (IPsec) en un adaptador de red habilitado para TCP/IP.
+description: EnableIPSec&\# 8194; El método de clase WMI habilita la seguridad de protocolo de Internet (IPsec) en un adaptador de red habilitado para TCP/IP.
 ms.assetid: 0a45d864-606d-4adb-9b51-62d46a0d68b1
 ms.tgt_platform: multiple
-title: Método EnableIPSec de la clase Win32_NetworkAdapterConfiguration
+title: Método EnableIPSec de la Win32_NetworkAdapterConfiguration clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6988d68f9939752e3c8c2c9ace063b895a2d3720
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3a4b13d7cdd083fd5b343741823c8a7136ce1603941ba525978ecec4f73e4b1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118419493"
 ---
-# <a name="enableipsec-method-of-the-win32_networkadapterconfiguration-class"></a>Método EnableIPSec de la \_ clase NetworkAdapterConfiguration de Win32
+# <a name="enableipsec-method-of-the-win32_networkadapterconfiguration-class"></a>Método EnableIPSec de la clase \_ NetworkAdapterConfiguration de Win32
 
-El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableIPSec** habilita el protocolo de seguridad de Internet (IPSec) en un adaptador de red habilitado para TCP/IP.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableIPSec** habilita la seguridad de protocolo de Internet (IPsec) en un adaptador de red habilitado para TCP/IP.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,34 +44,34 @@ uint32 EnableIPSec(
 
 <dl> <dt>
 
-*IPSecPermitTCPPorts* \[ de\]
+*IPSecPermitTCPPorts* \[ En\]
 </dt> <dd>
 
-Lista de puertos a los que se va a conceder el permiso de acceso para TCP. Un valor numérico de 0 (cero) indica que se concede permiso de acceso para todos los puertos. Una matriz vacía indica que no se va a conceder permiso de acceso a ningún puerto.
+Lista de puertos a los que se va a conceder permiso de acceso para TCP. Un valor numérico de 0 (cero) indica que se concede permiso de acceso para todos los puertos. Una matriz vacía indica que no se va a conceder permiso de acceso a ningún puerto.
 
 </dd> <dt>
 
-*IPSecPermitUDPPorts* \[ de\]
+*IPSecPermitUDPPorts* \[ En\]
 </dt> <dd>
 
-Lista de puertos a los que se va a conceder el permiso de acceso para UDP. Un valor numérico de 0 (cero) indica que se concede permiso de acceso para todos los puertos. Una matriz vacía indica que no se va a conceder permiso de acceso a ningún puerto.
+Lista de puertos a los que se va a conceder permiso de acceso para UDP. Un valor numérico de 0 (cero) indica que se concede permiso de acceso para todos los puertos. Una matriz vacía indica que no se va a conceder permiso de acceso a ningún puerto.
 
 </dd> <dt>
 
-*IPSecPermitIPProtocols* \[ de\]
+*IPSecPermitIPProtocols* \[ En\]
 </dt> <dd>
 
-Lista de protocolos que se pueden ejecutar a través de la dirección IP. Un valor numérico de 0 (cero) indica que se concede permiso de acceso para todos los protocolos. Una matriz vacía indica que no se concede permiso de acceso a ningún protocolo.
+Lista de protocolos permitidos para ejecutarse a través de la dirección IP. Un valor numérico de 0 (cero) indica que se concede permiso de acceso para todos los protocolos. Una matriz vacía indica que no se concede permiso de acceso a ningún protocolo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requiere un reinicio, 1 (uno) para una finalización correcta cuando se requiere un reinicio, y cualquier otro número si se produce un error. Para obtener más información sobre los códigos de error, vea [**constantes error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requiere un reinicio, 1 (uno) para una finalización correcta cuando se requiere un reinicio y cualquier otro número si se produce un error. Para obtener más información sobre los códigos de error, vea [**Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
-**Finalización correcta, no se requiere ningún reinicio**
+**Finalización correcta, no se requiere reinicio**
 </dt> <dd>
 
 0
@@ -80,12 +80,12 @@ Finalización correcta, no es necesario reiniciar.
 
 </dd> <dt>
 
-**Finalización correcta, se requiere un reinicio**
+**Finalización correcta, reinicio necesario**
 </dt> <dd>
 
 1
 
-Finalización correcta, se requiere un reinicio.
+Finalización correcta, reinicio necesario.
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ Finalización correcta, se requiere un reinicio.
 
 64
 
-El método no se admite en esta plataforma.
+Método no compatible con esta plataforma.
 
 </dd> <dt>
 
@@ -116,12 +116,12 @@ Máscara de subred no válida.
 
 </dd> <dt>
 
-**Se produjo un error al procesar una instancia devuelta**
+**Error al procesar una instancia que se devolvió**
 </dt> <dd>
 
 67
 
-Se produjo un error al procesar una instancia devuelta.
+Error al procesar una instancia que se devolvió.
 
 </dd> <dt>
 
@@ -134,7 +134,7 @@ Parámetro de entrada no válido.
 
 </dd> <dt>
 
-**Se especificaron más de 5 puertas de enlace**
+**Más de 5 puertas de enlace especificadas**
 </dt> <dd>
 
 69
@@ -161,12 +161,12 @@ Dirección IP de puerta de enlace no válida.
 
 </dd> <dt>
 
-**Se produjo un error al obtener acceso al registro para obtener la información solicitada.**
+**Error al acceder al Registro para obtener la información solicitada**
 </dt> <dd>
 
 72
 
-Error al obtener acceso al registro para obtener la información solicitada.
+Error al acceder al Registro para obtener la información solicitada.
 
 </dd> <dt>
 
@@ -188,12 +188,12 @@ Nombre de host no válido.
 
 </dd> <dt>
 
-**No hay definido ningún servidor WINS principal/secundario**
+**No se ha definido ningún servidor WINS principal o secundario**
 </dt> <dd>
 
 75
 
-No hay definido ningún servidor WINS principal ni secundario.
+No se ha definido ningún servidor WINS principal o secundario.
 
 </dd> <dt>
 
@@ -215,12 +215,12 @@ Ruta de acceso del sistema no válida.
 
 </dd> <dt>
 
-**No se pudo copiar el archivo**
+**Error de copia de archivos**
 </dt> <dd>
 
 78
 
-No se pudo copiar el archivo.
+Error de copia de archivos.
 
 </dd> <dt>
 
@@ -251,7 +251,7 @@ No se puede configurar el servicio DHCP.
 
 </dd> <dt>
 
-**No se puede renovar la concesión DHCP**
+**No se puede renovar la concesión dhcp**
 </dt> <dd>
 
 82
@@ -260,7 +260,7 @@ No se puede renovar la concesión DHCP.
 
 </dd> <dt>
 
-**No se puede liberar la concesión DHCP**
+**No se puede liberar la concesión dhcp**
 </dt> <dd>
 
 83
@@ -283,16 +283,16 @@ IP no habilitada en el adaptador.
 
 85
 
-IPX no está habilitado en el adaptador.
+IPX no habilitado en el adaptador.
 
 </dd> <dt>
 
-**Error de límite de número de trama/red**
+**Error de límites de número de marco o red**
 </dt> <dd>
 
 86
 
-Error de límite de número de trama o de red.
+Error de límites de número de red o marco.
 
 </dd> <dt>
 
@@ -323,7 +323,7 @@ Número de red duplicado.
 
 </dd> <dt>
 
-**Parámetro fuera de los límites**
+**Parámetro fuera de límites**
 </dt> <dd>
 
 90
@@ -337,11 +337,11 @@ Parámetro fuera de los límites.
 
 91
 
-Acceso denegado.
+Acceso denegado:
 
 </dd> <dt>
 
-**Memoria agotada**
+**No hay memoria suficiente**
 </dt> <dd>
 
 92
@@ -364,7 +364,7 @@ Ya existe.
 
 94
 
-No se encuentra la ruta de acceso, el archivo o el objeto.
+Ruta de acceso, archivo u objeto no encontrado.
 
 </dd> <dt>
 
@@ -395,21 +395,21 @@ Interfaz no configurable.
 
 </dd> <dt>
 
-**No se pudieron liberar o renovar todas las concesiones DHCP**
+**No todas las concesiones DHCP se pueden liberar o renovar**
 </dt> <dd>
 
 98
 
-No todas las concesiones DHCP se pueden liberar o renovar.
+No todas las concesiones DHCP se podrían liberar o renovar.
 
 </dd> <dt>
 
-**DHCP no está habilitado en el adaptador**
+**DHCP no habilitado en el adaptador**
 </dt> <dd>
 
 100
 
-DHCP no está habilitado en el adaptador.
+DHCP no habilitado en el adaptador.
 
 </dd> <dt>
 
@@ -420,42 +420,42 @@ DHCP no está habilitado en el adaptador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los puertos están protegidos solo cuando la propiedad **IPFilterSecurityEnabled** en [**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md) es **true**.
+Los puertos solo se protegen **cuando la propiedad IPFilterSecurityEnabled** de [**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md) es **true.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de VBScript [Habilitar IPSec en un adaptador de red](https://Gallery.TechNet.Microsoft.Com/ff821218-c392-42fb-a77c-c3eab899587c) , en la galería de TechNet, se usa **EnableIPSec** para habilitar la seguridad IP para un adaptador de red.
+En [el ejemplo habilitar IPSec en](https://Gallery.TechNet.Microsoft.Com/ff821218-c392-42fb-a77c-c3eab899587c) un adaptador de red de VBScript, en la Galería de TechNet, se usa **EnableIPSec** para habilitar la seguridad IP para un adaptador de red.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
+[**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas de WMI: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas wmi: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tareas de WMI: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Compatibilidad con IPv6 e IPv4 en WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

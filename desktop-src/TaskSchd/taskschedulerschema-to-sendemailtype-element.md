@@ -1,9 +1,9 @@
 ---
-title: En (sendEmailType) (elemento)
+title: Elemento To (sendEmailType)
 description: Contiene las direcciones de correo electrónico a las que se enviará el correo electrónico.
 ms.assetid: bf3aa878-967b-4ebd-9397-a2a499686a9f
 keywords:
-- Al elemento Programador de tareas
+- Elemento To Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b9e0643220915ecb1c8f2cd1fe842e0dc3f21d8f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2367686e308eb33287dafc3ce274d039b71534048fea07bc313e0542af4e2041
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118355645"
 ---
-# <a name="to-sendemailtype-element"></a>En (sendEmailType) (elemento)
+# <a name="to-sendemailtype-element"></a>Elemento To (sendEmailType)
 
 Contiene las direcciones de correo electrónico a las que se enviará el correo electrónico.
 
@@ -30,7 +30,7 @@ Contiene las direcciones de correo electrónico a las que se enviará el correo 
  />
 ```
 
-El elemento **to** se define mediante el tipo complejo de [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) .
+El tipo complejo [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) define el elemento **To.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -42,20 +42,20 @@ El elemento **to** se define mediante el tipo complejo de [**sendEmailType**](ta
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de C++, vea [**to (propiedad) de IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_to).
+Para el desarrollo de C++, vea [**To Property of IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_to).
 
-Para el desarrollo de scripts, vea [**EmailAction.to**](emailaction-to.md).
+Para el desarrollo de scripts, [**consulte EmailAction.To**](emailaction-to.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

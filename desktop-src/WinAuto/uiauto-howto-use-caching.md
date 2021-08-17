@@ -1,19 +1,19 @@
 ---
 title: Uso del Almacenamiento en caché
-description: Este tema contiene código de ejemplo que muestra cómo usar las capacidades de almacenamiento en caché (o captura masiva) del árbol de automatización de la interfaz de usuario de Microsoft.
+description: Este tema contiene código de ejemplo que muestra cómo usar las funcionalidades de almacenamiento en caché (o captura masiva) de Microsoft Automatización de la interfaz de usuario árbol.
 ms.assetid: d72fa637-35ca-4c28-922d-263f469cb1c8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8758621a8499202b820a6ffc3459fade57c2a485
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a020f200384f88e1e4f06f9418676e8fc567851424ed03b1c36e2e6299f98e45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105714161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133258"
 ---
 # <a name="how-to-use-caching"></a>Uso del Almacenamiento en caché
 
-Este tema contiene código de ejemplo que muestra cómo usar las capacidades de almacenamiento en caché (o captura masiva) del árbol de automatización de la interfaz de usuario de Microsoft. Se tratan los temas siguientes:
+Este tema contiene código de ejemplo que muestra cómo usar las funcionalidades de almacenamiento en caché (o captura masiva) de Microsoft Automatización de la interfaz de usuario árbol. Describe los temas siguientes:
 
 -   [Capturar propiedades y patrones de control en la memoria caché](#fetching-properties-and-control-patterns-into-the-cache)
 -   [Recuperar propiedades y patrones de control de la memoria caché](#retrieving-properties-and-control-patterns-from-the-cache)
@@ -21,7 +21,7 @@ Este tema contiene código de ejemplo que muestra cómo usar las capacidades de 
 
 ## <a name="fetching-properties-and-control-patterns-into-the-cache"></a>Capturar propiedades y patrones de control en la memoria caché
 
-En el ejemplo de código siguiente se muestra una función que recupera elementos de un control de lista y almacena en caché el patrón de control SelectionItem y la propiedad Name de cada elemento. De forma predeterminada, los elementos de la lista se devuelven con una referencia completa, de modo que todas las propiedades actuales siguen estando disponibles.
+En el ejemplo de código siguiente se muestra una función que recupera elementos de un control de lista y almacena en caché el patrón de control SelectionItem y la propiedad Name de cada elemento. De forma predeterminada, los elementos de lista se devuelven con una referencia completa, por lo que todas las propiedades actuales siguen estando disponibles.
 
 
 ```C++
@@ -69,7 +69,7 @@ cleanup:
 
 ## <a name="retrieving-properties-and-control-patterns-from-the-cache"></a>Recuperar propiedades y patrones de control de la memoria caché
 
-En el código siguiente se muestra cómo recuperar las propiedades y los patrones de control de la memoria caché. Recupera el patrón de control SelectionItem y la propiedad Name para un elemento de lista.
+En el código siguiente se muestra cómo recuperar propiedades y patrones de control de la memoria caché. Recupera el patrón de control SelectionItem y la propiedad Name para un elemento de lista.
 
 
 ```C++
@@ -124,18 +124,18 @@ HRESULT GetCachedListItem(IUIAutomationElement* pItem)
 
 <dl> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Propiedades y patrones de control de la automatización de la interfaz de usuario](uiauto-cachingforclients.md)
+[Almacenar en Automatización de la interfaz de usuario propiedades y patrones de control](uiauto-cachingforclients.md)
 </dt> <dt>
 
-[Temas de procedimientos para clientes de automatización de la interfaz de usuario](uiauto-howto-topics-for-uiautomation-clients.md)
+[Temas de ayuda para Automatización de la interfaz de usuario clientes](uiauto-howto-topics-for-uiautomation-clients.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

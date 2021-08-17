@@ -1,9 +1,9 @@
 ---
-title: Atributo videoformat
-description: El atributo videoformat es un código FourCC que identifica el formato de vídeo del elemento.
+title: Atributo VideoFormat
+description: El atributo VideoFormat es un código FourCC que identifica el formato de vídeo del elemento.
 ms.assetid: 1f92f40e-a604-49d9-a7a4-3f50afe2f0f7
 keywords:
-- Media Player de atributos de videoformat
+- Atributo VideoFormat Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,40 +12,40 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c68e1e763a3b6d04dbcd8c8afec8d29ccc136954
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a4a74e811a3edab92a2c7a17f14f1fbd65ea8abe46176cd121e6f182621db035
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118333041"
 ---
-# <a name="videoformat-attribute"></a>Atributo videoformat
+# <a name="videoformat-attribute"></a>Atributo VideoFormat
 
-El atributo **videoformat** es un código FourCC que identifica el formato de vídeo del elemento.
+El **atributo VideoFormat** es un código FourCC que identifica el formato de vídeo del elemento.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 11<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

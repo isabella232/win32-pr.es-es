@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: Windows7Grbits. Compressed Field'
-title: Campo Windows7Grbits. Compressed (Microsoft. ISAM. esent. Interop. Windows7)
+description: 'Más información sobre: Campo Windows7Grbits.Compressed'
+title: Campo Windows7Grbits.Compressed (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: Compressed field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows7.Windows7Grbits.Compressed
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.windows7grbits.compressed(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0edb0d923aa66adef07856e0a0af00f11ccbb570
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e15de3a1a8a150ea95ca18d02f3809c70bf18db06cbb5097fa54f50686283fa0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117701159"
 ---
-# <a name="windows7grbitscompressed-field"></a>Campo Windows7Grbits. Compressed
+# <a name="windows7grbitscompressed-field"></a>Campo Windows7Grbits.Compressed
 
 Intente comprimir los datos al almacenarlos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ value = Windows7Grbits.Compressed
 public const SetColumnGrbit Compressed
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -61,4 +61,4 @@ public const SetColumnGrbit Compressed
 
 [Miembros de Windows7Grbits](./windows7grbits-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

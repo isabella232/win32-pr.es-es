@@ -1,11 +1,11 @@
 ---
-title: IWMPMediaCollection getByAlbum, método
-description: El método getByAlbum devuelve una interfaz IWMPPlaylist que proporciona acceso a los elementos multimedia del álbum especificado.
+title: Método IWMPMediaCollection getByAlbum
+description: El método getByAlbum devuelve una interfaz IWMPPlaylist que proporciona acceso a elementos multimedia del álbum especificado.
 ms.assetid: 26f004c0-de46-4792-8212-9d4ac749bb21
 keywords:
-- método getByAlbum de Windows Media Player
-- método getByAlbum Windows Media Player, interfaz IWMPMediaCollection
-- Interfaz IWMPMediaCollection Windows Media Player, método getByAlbum
+- Método getByAlbum Reproductor de Windows Media
+- Método getByAlbum Reproductor de Windows Media , interfaz IWMPMediaCollection
+- Interfaz IWMPMediaCollection Reproductor de Windows Media , método getByAlbum
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c455e9bd61038a4d72bb6537d7c62b30a5d0b733
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 07137068961447b9f311dbdb765d34fbf2689ca80fd2035e8a60ebe27e4037bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117929768"
 ---
-# <a name="iwmpmediacollectiongetbyalbum-method"></a>IWMPMediaCollection:: getByAlbum (método)
+# <a name="iwmpmediacollectiongetbyalbum-method"></a>IWMPMediaCollection::getByAlbum (método)
 
-El método **getByAlbum** devuelve una interfaz **IWMPPlaylist** que proporciona acceso a los elementos multimedia del álbum especificado.
+El **método getByAlbum** devuelve una **interfaz IWMPPlaylist** que proporciona acceso a elementos multimedia del álbum especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,26 +53,26 @@ Implements IWMPMediaCollection.getByAlbum
 
 <dl> <dt>
 
-*bstrAlbum* \[ de\]
+*bstrAlbum* \[ En\]
 </dt> <dd>
 
-**System. String** que es el título del álbum.
+**System.String que** es el título del álbum.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Una interfaz **WMPLib. IWMPPlaylist** para los elementos multimedia recuperados.
+Interfaz **WMPLib.IWMPPlaylist** para los elementos multimedia recuperados.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
-Hay dos maneras de recuperar una interfaz **IWMPMediaCollection** y el comportamiento del método **getByAlbum** depende de cuál de esas dos maneras se usa. Si recupera la interfaz llamando a [AxWindowsMediaPlayer. mediaCollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md), el método **getByAlbum** devuelve todos los elementos multimedia de la biblioteca. Sin embargo, si recupera la interfaz llamando a [IWMPLibrary. mediaCollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), el método **getByAlbum** devuelve solo los elementos de audio de la biblioteca que pertenecen al álbum especificado.
+Hay dos maneras de recuperar una interfaz **IWMPMediaCollection** y el comportamiento del método **getByAlbum** depende de cuál de esas dos maneras se use. Si recupera la interfaz llamando a [AxWindowsMediaPlayer.mediaCollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md), el **método getByAlbum** devuelve todos los elementos multimedia de la biblioteca. Sin embargo, si recupera la interfaz llamando a [IWMPLibrary.mediaCollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), el método **getByAlbum** devuelve solo los elementos de audio de la biblioteca que pertenecen al álbum especificado.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **getByAlbum** para crear una lista de reproducción de elementos multimedia cuando el usuario hace clic en un botón. La lista de reproducción contiene elementos con el álbum especificado por el usuario en un cuadro de texto. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa getByAlbum para** crear una lista de reproducción de elementos multimedia cuando el usuario hace clic en un botón. La lista de reproducción contiene elementos con el álbum especificado por el usuario en un cuadro de texto. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -126,7 +126,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

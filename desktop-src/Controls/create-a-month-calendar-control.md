@@ -4,34 +4,34 @@ description: En este tema se muestra cómo crear dinámicamente un control de ca
 ms.assetid: 35ADDA85-5D7D-46F4-A637-99FEE4592B3B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82f3824618e9801b68eb67b13c64c638a5057481
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 22f0fbc819a79b05842db75c1871e8150b311444e6055d076a9831b0bc42486b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103797337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831821"
 ---
 # <a name="how-to-create-a-month-calendar-control"></a>Cómo crear un control de calendario mensual
 
-En este tema se muestra cómo crear dinámicamente un control de calendario mensual mediante la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) .
+En este tema se muestra cómo crear dinámicamente un control de calendario mensual mediante la [**función CreateWindowEx.**](/windows/desktop/api/winuser/nf-winuser-createwindowexa)
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
-Para crear un control de calendario mensual, utilice la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y especifique [**la \_ clase MONTHCAL**](common-control-window-classes.md) como clase de ventana. Primero debe registrar la clase de ventana mediante una llamada a la función [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) , especificando el bit de **\_ \_ las clases de fecha de ICC** en la estructura [**InitCommonControlsEx**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) correspondiente.
+Para crear un control de calendario mensual, use la [**función CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y especifique [**MONTHCAL \_ CLASS**](common-control-window-classes.md) como clase de ventana. En primer lugar, debe registrar la clase de ventana llamando a la función [**InitCommonControlsEx,**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) especificando el bit **DE CLASES DE \_ FECHA \_ DE JAVA** EN LA ESTRUCTURA [**INITCOMMONCONTROLSEX**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) que lo acompaña.
 
-En el ejemplo siguiente se muestra cómo crear un control de calendario mensual en un cuadro de diálogo no modal existente. Tenga en cuenta que los valores de tamaño pasados a [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) son ceros. Dado que el tamaño mínimo necesario depende de la fuente que utiliza el control, en el ejemplo se usa la macro [**MonthCal \_ GetMinReqRect**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getminreqrect) para solicitar información de tamaño y, a continuación, se cambia el tamaño del control llamando a [**SetWindowPos**](/windows/desktop/api/winuser/nf-winuser-setwindowpos). Si posteriormente cambia la fuente con [**WM \_ SETFONT**](/windows/desktop/winmsg/wm-setfont), las dimensiones del control no cambiarán. Debe llamar de nuevo a **MonthCal \_ GetMinReqRect** y cambiar el tamaño del control para que se ajuste a la nueva fuente.
+En el ejemplo siguiente se muestra cómo crear un control de calendario mensual en un cuadro de diálogo modeless existente. Tenga en cuenta que los valores de tamaño pasados [**a CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) son todos ceros. Dado que el tamaño mínimo necesario depende de la fuente que use el control, en el ejemplo se usa la macro [**\_ MonthCal GetMinReqRect**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getminreqrect) para solicitar información de tamaño y, a continuación, se cambia el tamaño del control mediante una llamada a [**SetWindowPos**](/windows/desktop/api/winuser/nf-winuser-setwindowpos). Si posteriormente cambia la fuente con [**WM \_ SETFONT**](/windows/desktop/winmsg/wm-setfont), las dimensiones del control no cambiarán. Debe llamar de **nuevo a MonthCal \_ GetMinReqRect y** cambiar el tamaño del control para que se ajuste a la nueva fuente.
 
 
 

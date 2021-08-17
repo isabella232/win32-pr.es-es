@@ -1,29 +1,29 @@
 ---
 title: CMainWindow
-description: En el ejemplo de código siguiente se muestra este procedimiento.
+description: En el código de ejemplo siguiente se muestra este procedimiento.
 ms.assetid: a2998232-db71-48ce-b14b-5e17de147172
 keywords:
 - CMainWindow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc3e9cb538246dfa6931a2f036ba75cab5e962a7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 45f67fd2a00bb6f3ab082499e5ca2a4a991a9fb33159a4f43c05923ae393efcf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117962472"
 ---
 # <a name="cmainwindow"></a>CMainWindow
 
-El sistema operativo Microsoft Windows traduce las siguientes acciones de usuario en mensajes de ventana estándar y los envía al procedimiento Main en la aplicación **StoClien** :
+Microsoft Windows sistema operativo traduce las siguientes acciones de usuario en mensajes de ventana estándar y los envía al procedimiento principal de la **aplicación StoClien:**
 
--   El usuario hace clic en el botón primario del mouse, o el modificador de la punta del lápiz en los dispositivos de Tablet PC, para iniciar una secuencia de dibujo de línea.
+-   El usuario hace clic en el botón izquierdo del mouse o en el conmutador de propina de lápiz en los dispositivos de tableta para iniciar una secuencia de dibujo de línea.
 -   El usuario hace clic y mantiene presionado el botón y mueve el mouse para dibujar una línea.
--   La secuencia finaliza cuando se suelta el botón primario del mouse.
+-   La secuencia finaliza cuando se libera el botón izquierdo del mouse.
 
-En el ejemplo de código siguiente se muestra este procedimiento.
+En el código de ejemplo siguiente se muestra este procedimiento.
 
-## <a name="cmainwindowwindowproc-stocliencpp"></a>CMainWindow:: WindowProc (STOCLIEN. CPP
+## <a name="cmainwindowwindowproc-stocliencpp"></a>CMainWindow::WindowProc (STOCLIEN. CPP)
 
 
 ```C++
@@ -122,17 +122,17 @@ LRESULT CMainWindow::WindowProc(
 
 
 
-Una secuencia de dibujo de líneas se inicia cuando el mensaje de LBUTTONDOWN de WM entrega los datos de la \_ posición del mouse.
+Una secuencia de dibujo de línea se inicia cuando el mensaje \_ WM LBUTTONDOWN entrega datos de posición del mouse.
 
-CMainWindow tiene un puntero al objeto CGuiPaper y llama al método [**CGuiPaper:: InkStart**](cguipaper-methods.md) para iniciar la secuencia de dibujo de línea.
+CMainWindow tiene un puntero al objeto CGuiPaper y llama al método [**CGuiPaper::InkStart**](cguipaper-methods.md) para iniciar la secuencia de dibujo de línea.
 
-A medida que se mueve el mouse a Draw, se proporciona una secuencia de mensajes de la **\_ MOUSEMOVE de WM** independientes que contienen los datos de la posición del mouse al método [CGuiPaper:: InkDraw](cguipaper-methods.md) .
+A medida que el mouse se mueve para dibujarse, se proporciona una secuencia de mensajes **\_ WM MOUSEMOVE** independientes que contienen datos de posición del mouse al método [CGuiPaper::InkDraw.](cguipaper-methods.md)
 
-Cuando se suelta el botón primario del mouse, se recibe el mensaje de **\_ LBUTTONUP de WM** . El método [CGuiPaper:: InkStop](cguipaper-methods.md) detiene la secuencia de dibujo de línea.
+Cuando se libera el botón izquierdo del mouse, se recibe el mensaje **\_ WM LBUTTONUP.** El [método CGuiPaper::InkStop](cguipaper-methods.md) detiene la secuencia de dibujo de línea.
 
- 
+ 
 
- 
+ 
 
 
 

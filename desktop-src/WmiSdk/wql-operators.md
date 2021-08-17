@@ -18,7 +18,7 @@ El Windows lenguaje de consulta de instrumentación de administración de recurs
 
 
 
-| Operator       | Descripción              |
+| Operador       | Descripción              |
 |----------------|--------------------------|
 | =              | Igual a                 |
 | <           | Menor que                |
@@ -31,7 +31,7 @@ El Windows lenguaje de consulta de instrumentación de administración de recurs
 
  
 
-Hay algunos operadores específicos de WQL adicionales: IS, IS NOT, ISA y LIKE. Los operadores IS y IS NOT solo son válidos en la cláusula WHERE si la constante es **NULL.** Por ejemplo, las consultas siguientes son válidas:
+Hay algunos operadores específicos de WQL adicionales: IS, IS NOT, ISA y LIKE. Los operadores IS e IS NOT solo son válidos en la cláusula WHERE si la constante es **NULL.** Por ejemplo, las siguientes consultas son válidas:
 
 
 ```sql
@@ -68,7 +68,7 @@ SELECT * FROM Meta_Class WHERE __Class LIKE "%Win32%"
 
 
 
-Para obtener más información sobre la sintaxis y el uso de este operador, vea [Operador LIKE](like-operator.md).
+Para obtener más información sobre la sintaxis y el uso de este operador, vea [OPERADOR LIKE](like-operator.md).
 
  
 

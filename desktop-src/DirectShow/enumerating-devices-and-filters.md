@@ -1,35 +1,35 @@
 ---
-description: Enumerar dispositivos y filtros
+description: Enumeración de dispositivos y filtros
 ms.assetid: 334bba2a-7477-4115-9ce0-d4495c1fc290
-title: Enumerar dispositivos y filtros
+title: Enumeración de dispositivos y filtros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e69997a4af4f3160f0b338bc9c595adea83a5354
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9a53f4a36e2bf994cfeab34a49444d104b2213a839bb1fa8bd2aa4d70e0003b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118401779"
 ---
-# <a name="enumerating-devices-and-filters"></a>Enumerar dispositivos y filtros
+# <a name="enumerating-devices-and-filters"></a>Enumeración de dispositivos y filtros
 
-A veces, una aplicación necesita buscar un filtro determinado en el sistema del usuario. Por ejemplo, una aplicación de captura de vídeo puede mostrar una lista de dispositivos de captura disponibles. Dado que DirectShow usa una arquitectura basada en componentes, no puede saber en tiempo de diseño qué filtros están instalados en el sistema del usuario. Esto es especialmente cierto para los filtros que representan dispositivos de hardware. DirectShow proporciona dos componentes que buscan los filtros registrados:
+A veces, una aplicación debe buscar un filtro determinado en el sistema del usuario. Por ejemplo, una aplicación de captura de vídeo podría mostrar una lista de dispositivos de captura disponibles. Dado DirectShow utiliza una arquitectura basada en componentes, no puede saber en tiempo de diseño qué filtros están instalados en el sistema del usuario. Esto es especialmente cierto para los filtros que representan dispositivos de hardware. DirectShow proporciona dos componentes que localizan filtros registrados:
 
--   El [enumerador de dispositivos del sistema](system-device-enumerator.md) busca filtros por su categoría.
--   El [asignador de filtros](filter-mapper.md) busca filtros según los criterios de búsqueda proporcionados por la aplicación.
+-   El [enumerador de dispositivos del](system-device-enumerator.md) sistema busca filtros por su categoría.
+-   El [Asignador de filtros](filter-mapper.md) busca filtros según los criterios de búsqueda proporcionados por la aplicación.
 
-Los enumeradores descritos en esta sección siguen el formato estándar que utilizan las interfaces de enumeración COM. Para obtener más información, vea el tema "IEnumXXXX" en el kit de desarrollo de software (SDK) de la plataforma de Microsoft.
+Los enumeradores que se de analizan en esta sección siguen el formato estándar que usan las interfaces de enumeración COM. Para obtener más información, vea el tema "IEnumXXXX" en el Kit de desarrollo de software (SDK) de la plataforma de Microsoft.
 
 Esta sección contiene los siguientes temas:
 
--   [Usar el enumerador de dispositivos del sistema](using-the-system-device-enumerator.md)
--   [Usar el asignador de filtros](using-the-filter-mapper.md)
+-   [Uso del enumerador de dispositivos del sistema](using-the-system-device-enumerator.md)
+-   [Uso del asignador de filtros](using-the-filter-mapper.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Tareas básicas de DirectShow](basic-directshow-tasks.md)
+[Tareas DirectShow básicas](basic-directshow-tasks.md)
 </dt> </dl>
 
  

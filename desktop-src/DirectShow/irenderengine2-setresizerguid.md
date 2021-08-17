@@ -1,7 +1,7 @@
 ---
-description: El método SetResizerGUID especifica el CLSID de un filtro de cambio de tamaño de vídeo personalizado.
+description: El método SetResizerGUID especifica el CLSID de un filtro de tamaño de vídeo personalizado.
 ms.assetid: 709a6e7f-64ae-406d-bb6d-29f6c65b63a8
-title: 'IRenderEngine2:: SetResizerGUID (método) (QEDIT. h)'
+title: Método IRenderEngine2::SetResizerGUID (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 864053c2c5def6ef1b23ca2c2ee712664e132079
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e650a250333ac784e599d0bce820ef390a937f49bff2371b1b7a52b18d9d0ad6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117818540"
 ---
-# <a name="irenderengine2setresizerguid-method"></a>IRenderEngine2:: SetResizerGUID (método)
+# <a name="irenderengine2setresizerguid-method"></a>IRenderEngine2::SetResizerGUID (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `SetResizerGUID` método especifica el CLSID de un filtro de cambio de tamaño de vídeo personalizado. Llame a este método para reemplazar el filtro de cambio de tamaño predeterminado utilizado por los servicios de edición de DirectShow. El filtro debe registrarse como un objeto COM en el sistema del usuario y debe ser compatible con la interfaz [**IResize**](iresize.md) .
+El `SetResizerGUID` método especifica el CLSID de un filtro de tamaño de vídeo personalizado. Llame a este método para reemplazar el filtro de tamaño predeterminado que usa DirectShow Editing Services. El filtro debe estar registrado como un objeto COM en el sistema del usuario y debe admitir la [**interfaz IResize.**](iresize.md)
 
-Llame a este método antes de llamar a [**IRenderEngine:: ConnectFrontEnd**](irenderengine-connectfrontend.md).
+Llame a este método antes de llamar [**a IRenderEngine::ConnectFrontEnd**](irenderengine-connectfrontend.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ HRESULT SetResizerGUID(
 
 <dl> <dt>
 
-*ResizerGuid* \[ de\]
+*ResizerGuid* \[ En\]
 </dt> <dd>
 
 CLSID del filtro.
@@ -56,11 +56,11 @@ CLSID del filtro.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para revertir al tamaño DES predeterminado, use el siguiente CLSID:
+Para revertir al cambio de tamaño de DES predeterminado, use el siguiente CLSID:
 
 
 ```C++
@@ -72,12 +72,12 @@ DEFINE_GUID(CLSID_Resize,
 
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -85,19 +85,19 @@ DEFINE_GUID(CLSID_Resize,
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | DirectX 9,0 o posterior<br/>                                                         |
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Versión<br/> | DirectX 9.0 o posterior<br/>                                                         |
+| Header<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> <dt>
 
 [**Interfaz IRenderEngine2**](irenderengine2.md)

@@ -1,8 +1,8 @@
 ---
-description: El método Reset de la \_ clase ParallelController de CIM solicita un restablecimiento del dispositivo lógico.
+description: El método Reset de la clase \_ Cim ParallelController solicita un restablecimiento del dispositivo lógico.
 ms.assetid: 7cdd46b5-b054-4322-bb05-dd9fd6d54f13
 ms.tgt_platform: multiple
-title: Método Reset de la clase CIM_ParallelController
+title: Método Reset de la CIM_ParallelController clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,19 +14,19 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 83fed0b2df0c0470878ed560aedde6de74719184
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 512164337a6cdeb68dc1370c1f7c7540ffe6eb8242c75c4904d90c41cd267e55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104538926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118418576"
 ---
-# <a name="reset-method-of-the-cim_parallelcontroller-class"></a>Método Reset de la \_ clase ParallelController de CIM
+# <a name="reset-method-of-the-cim_parallelcontroller-class"></a>Método Reset de la clase \_ Cim ParallelController
 
-El método **RESET** de la \_ clase ParallelController de CIM solicita un restablecimiento del dispositivo lógico. Este método se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+El **método Reset** de la clase Cim \_ ParallelController solicita un restablecimiento del dispositivo lógico. Este método se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,36 +45,36 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 (cero) si la solicitud se ejecutó correctamente, 1 (uno) si no se admite la solicitud y otro valor si se produjo un error.
+Devuelve 0 (cero) si la solicitud se ejecutó correctamente, 1 (uno) si no se admite la solicitud y algún otro valor si se produjo un error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no está implementado actualmente por WMI. Para usar este método, debe implementarlo en su propio proveedor.
+Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[\_PARALLELCONTROLLER CIM](reset-method-in-class-cim-parallelcontroller.md)
+[CIM \_ ParallelController](reset-method-in-class-cim-parallelcontroller.md)
 </dt> <dt>
 
-[**\_PARALLELCONTROLLER CIM**](cim-parallelcontroller.md)
+[**CIM \_ ParallelController**](cim-parallelcontroller.md)
 </dt> </dl>
 
  

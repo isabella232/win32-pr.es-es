@@ -1,52 +1,52 @@
 ---
-description: Un subárbol es un grupo lógico de claves, subclaves y valores del registro que tiene un conjunto de archivos auxiliares que contienen copias de seguridad de sus datos.
+description: Un subárbol es un grupo lógico de claves, subclaves y valores del Registro que tiene un conjunto de archivos compatibles que contienen copias de seguridad de sus datos.
 ms.assetid: fe517d88-7b03-4dc3-b3db-6a92665bca8e
-title: Subárboles del registro
+title: Subárboles del Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05f942a275855c710de53a0d93df0b4654dd596f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 11920a7b70a8aeb78b08aee2c25b89c4de5457b5cb96a480fc1f75fff6c6a35a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117763632"
 ---
-# <a name="registry-hives"></a>Subárboles del registro
+# <a name="registry-hives"></a>Subárboles del Registro
 
-Un *subárbol* es un grupo lógico de claves, subclaves y valores del registro que tiene un conjunto de archivos auxiliares que se cargan en la memoria cuando se inicia el sistema operativo o cuando un usuario inicia sesión.
+Un *subárbol* es un grupo lógico de claves, subclaves y valores del Registro que tiene un conjunto de archivos compatibles cargados en memoria cuando se inicia el sistema operativo o un usuario inicia sesión.
 
-Cada vez que un usuario nuevo inicia sesión en un equipo, se crea un nuevo Hive para ese usuario con un archivo independiente para el perfil de usuario. Esto se denomina *subárbol de Perfil de usuario*. El subárbol de un usuario contiene información específica del registro relativa a la configuración de la aplicación del usuario, el escritorio, el entorno, las conexiones de red y las impresoras. Los subárboles de Perfil de usuario se encuentran en la clave de **\_ usuarios HKEY** .
+Cada vez que un nuevo usuario inicia sesión en un equipo, se crea un nuevo subárbol para ese usuario con un archivo independiente para el perfil de usuario. Esto se denomina subárbol *del perfil de usuario.* El subárbol de un usuario contiene información específica del Registro relativa a la configuración de la aplicación, el escritorio, el entorno, las conexiones de red y las impresoras del usuario. Los subárboles de perfil de usuario se encuentran bajo la **clave HKEY \_ USERS.**
 
-Los archivos de registro tienen los dos formatos siguientes: estándar y más reciente. El formato estándar es el único formato que admite Windows 2000. También se admite en versiones posteriores de Windows por compatibilidad con versiones anteriores. El formato más reciente se admite a partir de Windows XP. En las versiones de Windows que admiten el formato más reciente, los siguientes subárboles siguen usando el formato estándar: **HKEY \_ Current \_ User**, **HKEY \_ local \_ Machine \\ Sam**, **HKEY \_ local \_ Machine \\ Security** y **HKEY \_ users \\ . Valor predeterminado**; el resto de subárboles usan el formato más reciente.
+Los archivos del Registro tienen los dos formatos siguientes: estándar y más reciente. El formato estándar es el único formato admitido por Windows 2000. También es compatible con versiones posteriores de Windows compatibilidad con versiones anteriores. El formato más reciente se admite a partir de Windows XP. En las versiones de Windows admiten el formato más reciente, los siguientes subárboles siguen utilizando el formato estándar: **HKEY \_ CURRENT \_ USER**, **HKEY \_ LOCAL MACHINE \_ \\ SAM**, **HKEY LOCAL MACHINE \_ \_ \\ Security** y **HKEY USERS \_ \\ . DEFAULT**; todos los demás subárboles usan el formato más reciente.
 
-La mayoría de los archivos auxiliares para los subárboles se encuentran en el directorio% SystemRoot% \\ system32 \\ config. Estos archivos se actualizan cada vez que un usuario inicia sesión. Las extensiones de nombre de archivo de los archivos de estos directorios o, en algunos casos, una falta de extensión, indican el tipo de datos que contienen. En la tabla siguiente se enumeran estas extensiones junto con una descripción de los datos del archivo.
+La mayoría de los archivos compatibles con los subárboles se encuentran en el directorio %SystemRoot% \\ System32 \\ Config. Estos archivos se actualizan cada vez que un usuario inicia sesión. Las extensiones de nombre de archivo de los archivos de estos directorios, o en algunos casos la falta de una extensión, indican el tipo de datos que contienen. En la tabla siguiente se enumeran estas extensiones junto con una descripción de los datos del archivo.
 
 
 
 | Extensión       | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ninguno<br/> | Una copia completa de los datos de Hive.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| . Alt<br/> | Una copia de seguridad del subárbol de **\_ \_ \\ sistema del equipo local HKEY** crítico. Solo la clave del sistema tiene un archivo. Alt.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| .log<br/> | Un registro de transacciones de los cambios en las entradas de claves y valores del subárbol.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| . SAV<br/> | Una copia de seguridad de un subárbol.<br/> **Windows Server 2003 y Windows XP/2000:** Copias de los archivos de Hive tal como se encontraban al final de la fase de modo de texto del programa de instalación. El programa de instalación de tiene dos fases: el modo de texto y el modo de gráficos. El subárbol se copia en un archivo. SAV después de la fase de modo de texto del programa de instalación para protegerlo de los errores que pueden producirse si se produce un error en la fase del programa de instalación en modo gráfico. Si se produce un error en el programa de instalación durante la fase de modo gráficos, solo se repite la fase de modo gráfico cuando se reinicia el equipo. el archivo. SAV se usa para restaurar los datos de Hive.<br/> |
+| .alt<br/> | Copia de seguridad del subárbol **crítico del sistema HKEY LOCAL \_ \_ MACHINE. \\** Solo la clave del sistema tiene un archivo .alt.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| .log<br/> | Registro de transacciones de cambios en las claves y entradas de valor en el subárbol.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| .sav<br/> | Copia de seguridad de un subárbol.<br/> **Windows Server 2003 y Windows XP/2000:** Copias de los archivos de Hive mientras miraban al final de la fase de modo de texto en el programa de instalación. El programa de instalación tiene dos fases: modo de texto y modo gráfico. El subárbol se copia en un archivo .sav después de la fase de modo de texto de la instalación para protegerlo frente a errores que pueden producirse si se produce un error en la fase del modo gráfico de la instalación. Si se produce un error en la instalación durante la fase del modo gráfico, solo se repite la fase del modo gráfico cuando se reinicia el equipo; el archivo .sav se usa para restaurar los datos de Hive.<br/> |
 
 
 
  
 
-En la tabla siguiente se enumeran los subárboles estándar y sus archivos auxiliares.
+En la tabla siguiente se enumeran los subárboles estándar y sus archivos compatibles.
 
 
 
-| Subárbol del registro                      | Archivos auxiliares                           |
+| Subárbol del Registro                      | Archivos de compatibilidad                           |
 |------------------------------------|--------------------------------------------|
-| **HKEY \_ \_ configuración actual**          | System, System. Alt, System. log, System. SAV |
-| **HKEY \_ Current \_ User**            | Ntuser. dat, Ntuser. dat. log                 |
-| **HKEY \_ \_ equipo local \\ Sam**      | Sam, Sam. log, Sam. SAV                      |
-| **HKEY \_ local \_ Machine \\ Security** | Security, Security. log, Security. SAV       |
-| **HKEY \_ \_ software de máquina local \\** | Software, software. log, software. SAV       |
-| **HKEY \_ \_ \\ sistema del equipo local**   | System, System. Alt, System. log, System. SAV |
-| **\_los usuarios HKEY \\ . PREDETERMINADA**          | Default. log, default. SAV          |
+| **CONFIGURACIÓN ACTUAL DE HKEY \_ \_**          | System, System.alt, System.log, System.sav |
+| **USUARIO ACTUAL DE HKEY \_ \_**            | Ntuser.dat, Ntuser.dat.log                 |
+| **HKEY \_ LOCAL \_ MACHINE \\ SAM**      | Sam, Sam.log, Sam.sav                      |
+| **HKEY \_ LOCAL \_ MACHINE \\ Security** | Security, Security.log, Security.sav       |
+| **HKEY \_ LOCAL \_ MACHINE \\ Software** | Software, Software.log, Software.sav       |
+| **Sistema HKEY \_ LOCAL \_ \\ MACHINE**   | System, System.alt, System.log, System.sav |
+| **HKEY \_ USERS \\ . Predeterminado**          | Default, Default.log, Default.sav          |
 
 
 

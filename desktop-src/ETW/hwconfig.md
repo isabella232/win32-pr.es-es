@@ -1,7 +1,7 @@
 ---
-description: La clase HWConfig es la clase primaria para los eventos de configuración de hardware en Windows XP. La siguiente sintaxis se simplifica desde el código MOF.
+description: La clase HWConfig es la clase primaria para los eventos de configuración de hardware en Windows XP. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 47f062c0-fdf0-4beb-906d-257571324de9
-title: Clase HWConfig
+title: HWConfig (clase)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: cfb194e09701dbc52b00279b624877f09ffac24b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e1d4b8f69784729ffe5d51f3068b03fc0b4154182b2d05f2896e4556a05f7eba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118394685"
 ---
-# <a name="hwconfig-class"></a>Clase HWConfig
+# <a name="hwconfig-class"></a>HWConfig (clase)
 
-La clase **HWConfig** es la clase primaria para los eventos de configuración de hardware en Windows XP.
+La **clase HWConfig** es la clase primaria para los eventos de configuración de hardware en Windows XP.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,26 +36,26 @@ class HWConfig : MSNT_SystemTrace
 
 ## <a name="members"></a>Miembros
 
-La clase **HWConfig** no define ningún miembro.
+La **clase HWConfig** no define ningún miembro.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Estos eventos proporcionan la configuración de hardware del equipo. A diferencia de otros eventos del registrador del kernel de NT, la sesión del kernel genera automáticamente eventos de configuración de hardware; No habilite estos eventos al iniciar la sesión del registrador del kernel de NT.
+Estos eventos proporcionan la configuración de hardware del equipo. A diferencia de otros eventos del registrador de kernel de NT, la sesión del kernel genera automáticamente eventos de configuración de hardware; no se habilitan estos eventos al iniciar la sesión del registrador de kernel nt.
 
-**Windows 2000:** No compatible.
+**Windows 2000:** No se admite.
 
-Para los eventos de configuración de hardware en Windows Vista y Windows Server 2003, vea la clase [SystemConfig](systemconfig.md) .
+Para eventos de configuración de hardware en Windows Vista y Windows Server 2003, vea la [clase SystemConfig.](systemconfig.md)
 
-Los consumidores de seguimiento de eventos pueden implementar un procesamiento especial para los eventos de configuración de hardware llamando a la función [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) y especificando [**EventTraceConfigGuid**](nt-kernel-logger-constants.md) como parámetro *pGuid* . Utilice los siguientes tipos de eventos para identificar el evento de configuración de hardware real al consumir eventos.
+Los consumidores de seguimiento de eventos pueden implementar un procesamiento especial para eventos de configuración de hardware llamando a la función [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) y [**especificando EventTraceConfigGuid**](nt-kernel-logger-constants.md) como parámetro *pGuid.* Use los siguientes tipos de eventos para identificar el evento de configuración de hardware real al consumir eventos.
 
 
 
 | Tipo de evento                                                                      | Descripción                                                                                                                                      |
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Evento \_ de TRACE \_ Type \_ config \_ CPU**(el valor de tipo de evento es 10)<br/>          | Evento de configuración de CPU. Las clases MOF de [**HWConfig \_ CPU**](hwconfig-cpu.md) definen los datos de evento para este evento.                            |
-| **Evento \_ de Tipo de seguimiento \_ \_ configuración de \_ LOGICALDISK**(el valor de tipo de evento es 12)<br/>  | Evento de configuración de disco lógico. La clase MOF de las clases MOF de [**HWConfig \_ LogDisk**](hwconfig-logdisk.md) define los datos de evento para este evento. |
-| **Evento \_ de Tipo de seguimiento \_ \_ config de \_ NIC**(el valor de tipo de evento es 13)<br/>          | Evento de configuración de NIC. Las clases MOF de la [**\_ NIC HWConfig**](hwconfig-nic.md) definen los datos de evento para este evento.                            |
-| **Evento \_ de Tipo de seguimiento \_ \_ configuración de \_ DiscoFísico**(el valor de tipo de evento es 11)<br/> | Evento de configuración de disco físico. Las clases MOF de [**HWConfig \_ PhyDisk**](hwconfig-phydisk.md) definen los datos de evento para este evento.          |
+| **EVENTO \_ TRACE \_ TYPE \_ CONFIG \_ CPU**(el valor del tipo de evento es 10)<br/>          | Evento de configuración de CPU. Las [**clases HWConfig \_ CPU**](hwconfig-cpu.md) MOF definen los datos de evento para este evento.                            |
+| **EVENTO \_ TRACE \_ TYPE \_ CONFIG \_ LOGICALDISK**(el valor del tipo de evento es 12)<br/>  | Evento de configuración de disco lógico. La clase MOF de las clases MOF [**de HWConfig \_ LogDisk**](hwconfig-logdisk.md) define los datos de evento para este evento. |
+| **EVENTO \_ TRACE \_ TYPE \_ CONFIG \_ NIC**(el valor del tipo de evento es 13)<br/>          | Evento de configuración de NIC. Las [**clases MOF \_ de NIC HWConfig**](hwconfig-nic.md) definen los datos de evento para este evento.                            |
+| **EVENTO \_ TRACE \_ TYPE \_ CONFIG \_ PHYSICALDISK**(el valor del tipo de evento es 11)<br/> | Evento de configuración de disco físico. Las [**clases MOF \_ de HWConfig PhyDisk**](hwconfig-phydisk.md) definen los datos de evento para este evento.          |
 
 
 
@@ -65,27 +65,27 @@ Los consumidores de seguimiento de eventos pueden implementar un procesamiento e
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
+[**SystemTrace de MSNT \_**](msnt-systemtrace.md)
 </dt> <dt>
 
-[**\_CPU HWConfig**](hwconfig-cpu.md)
+[**HWConfig \_ CPU**](hwconfig-cpu.md)
 </dt> <dt>
 
 [**HWConfig \_ LogDisk**](hwconfig-logdisk.md)
 </dt> <dt>
 
-[**NIC de HWConfig \_**](hwconfig-nic.md)
+[**HWConfig \_ NIC**](hwconfig-nic.md)
 </dt> <dt>
 
 [**HWConfig \_ PhyDisk**](hwconfig-phydisk.md)

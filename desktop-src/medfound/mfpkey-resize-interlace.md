@@ -1,15 +1,15 @@
 ---
-description: 'MFPKEY_RESIZE_INTERLACE propiedad : especifica si el flujo de entrada está entrelazado.'
+description: 'MFPKEY_RESIZE_INTERLACE propiedad: especifica si el flujo de entrada está entrelazado.'
 ms.assetid: 01ee0766-06ed-4255-9057-2fe033a772cd
 title: MFPKEY_RESIZE_INTERLACE propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45d0efe93901a08322a05dbed2515f76b04a214b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4c614865d0c8a49238b9c8d6f7714787bb22aaadaa317a8a3a0405a7f51c87be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117873039"
 ---
 # <a name="mfpkey_resize_interlace-property"></a>Propiedad MFPKEY \_ RESIZE \_ INTERLACE
 
@@ -25,7 +25,7 @@ VT \_ BOOL
 
 ## <a name="applies-to"></a>Se aplica a
 
--   [Video Resizer DSP](videoresizer.md)
+-   [DSP de cambio de tamaño de vídeo](videoresizer.md)
 
 ## <a name="remarks"></a>Comentarios
 
@@ -33,7 +33,7 @@ Utilice uno de los valores siguientes:
 
 
 
-| Valor     | Descripción |
+| Value     | Descripción |
 |-----------|-------------|
 | VT \_ FALSE | progresivo |
 | VT \_ TRUE  | Interlaced  |
@@ -48,15 +48,15 @@ Si no se establece esta propiedad, el DSP usa el tipo de medio de entrada para d
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

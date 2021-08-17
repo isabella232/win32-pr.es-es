@@ -13,9 +13,9 @@ ms.locfileid: "117751441"
 ---
 # <a name="vss-metadata-components"></a>Componentes de metadatos de VSS
 
-Fundamental para organizar los archivos de los que se va a realizar una copia de seguridad o restauración del escritor es el concepto de un [*componente*](vssgloss-c.md).
+El concepto de componente es fundamental para organizar los archivos de los que se va a realizar una copia de seguridad o restauración del sistema de [*escritura.*](vssgloss-c.md)
 
-Los componentes permiten a un sistema de escritura indicar a un motor de copia de seguridad cómo se van a organizar sus archivos, las dependencias entre archivos y qué tipo de datos pueden contener esos archivos. Esto permite que un motor de copia de seguridad decida cómo almacenar archivos para obtener la máxima eficacia.
+Los componentes permiten a un escritor indicar a un motor de copia de seguridad cómo se van a organizar sus archivos, las dependencias entre archivos y qué tipo de datos pueden contener esos archivos. Esto permite que un motor de copia de seguridad decida cómo almacenar archivos para lograr la máxima eficacia.
 
 Además, las aplicaciones basadas en VSS usan componentes como bloques de creación para sus metadatos y el medio para la comunicación entre escritor y solicitante.
 
@@ -23,12 +23,12 @@ Los escritores y solicitantes almacenan información sobre los componentes por s
 
 La información de componentes de los documentos de metadatos del escritor incluye lo siguiente:
 
--   Información de un único escritor en cada documento
--   Todos los componentes de ese escritor, [](vssgloss-e.md) tanto si se [](vssgloss-i.md) pueden incluir explícitamente como si deben incluirse implícitamente en una operación de copia de seguridad o restauración
+-   Información de un solo escritor en cada documento
+-   Todos los componentes de ese escritor, [](vssgloss-e.md) tanto si se pueden incluir explícitamente como si deben incluirse implícitamente [*en*](vssgloss-i.md) una operación de copia de seguridad o restauración
 -   [*Información de ruta de*](vssgloss-l.md) acceso lógica utilizada para asociar un componente seleccionable para copia de seguridad con un determinado no seleccionable para los componentes de copia de seguridad, formando así un conjunto de componentes
--   La [*información del conjunto de*](vssgloss-f.md) archivos (ruta de acceso, especificación de archivo y marca de recursividad) administrada para cada componente
+-   La [*información del conjunto*](vssgloss-f.md) de archivos (ruta de acceso, especificación de archivo y marca de recursividad) administrada para cada componente
 
-Los documentos de metadatos del escritor también contienen información de metadatos de nivel de escritor, como métodos de restauración y asignaciones de ubicación alternativas para la restauración. Los documentos de metadatos del escritor son de solo lectura. La interfaz para examinar esta información es [**IVssWMComponent.**](/windows/desktop/api/VsBackup/nl-vsbackup-ivsswmcomponent)
+Los documentos de metadatos de escritor también contienen información de metadatos de nivel de escritor, como métodos de restauración y asignaciones de ubicación alternativas para la restauración. Los documentos de metadatos del escritor son de solo lectura. La interfaz para examinar esta información es [**IVssWMComponent.**](/windows/desktop/api/VsBackup/nl-vsbackup-ivsswmcomponent)
 
 La información de componentes de los documentos de componentes de copia de seguridad incluye lo siguiente:
 
@@ -36,15 +36,15 @@ La información de componentes de los documentos de componentes de copia de segu
 -   Información de metadatos de nivel de escritor, como asignaciones de ubicación alternativas y restauración
 -   Información de estado que describe una operación de copia de seguridad o restauración
 
-Los documentos de componente de copia de seguridad no contienen información sobre los conjuntos de [*archivos de los componentes.*](vssgloss-f.md) Los documentos de componente de copia de seguridad no son de solo lectura y el escritor puede modificarlo. La interfaz para acceder a esta información es [**IVssComponent.**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent)
+Los documentos de componentes de copia de seguridad no contienen información sobre los conjuntos de [*archivos de los componentes.*](vssgloss-f.md) Los documentos de componente de copia de seguridad no son de solo lectura y el escritor puede modificarlo. La interfaz para acceder a esta información es [**IVssComponent.**](/windows/desktop/api/VsWriter/nl-vswriter-ivsscomponent)
 
 El ciclo de vida y la relación entre las dos expresiones de un componente se pueden entender de la siguiente manera:
 
 -   Los escritores son responsables de las definiciones iniciales de los componentes.
 -   Un solicitante examina los metadatos de todos los escritores y sus componentes.
--   A partir de la información de selección y ruta de acceso lógica de los componentes, un solicitante determina qué componentes se deben incluir explícitamente, que se pueden incluir explícitamente, que definen conjuntos de componentes y que son miembros de conjuntos de componentes.
--   Un solicitante agrega los componentes que requieren inclusión explícita e incluye implícitamente subcomponentes en conjuntos de componentes [*(cuya*](/windows) información no está en el documento componentes de copia de seguridad).
--   Al controlar eventos, los escritores y solicitantes pueden modificar y examinar la información del componente almacenada en el documento Componentes de copia de seguridad para coordinar su actividad.
+-   A partir de la información de selección y ruta de acceso lógica de los componentes, un solicitante determina qué componentes deben incluirse explícitamente, que se pueden incluir explícitamente, que definen conjuntos de componentes y que son miembros de conjuntos de componentes.
+-   Un solicitante agrega esos componentes que requieren inclusión explícita e incluye implícitamente subcomponentes en conjuntos de componentes [*(cuya*](/windows) información no está en el documento Componentes de copia de seguridad).
+-   Al controlar eventos, los escritores y solicitantes pueden modificar y examinar la información de componentes almacenada en el documento Componentes de copia de seguridad para coordinar su actividad.
 
 Tanto el escritor como la información del componente de versiones del solicitante son necesarios para ejecutar correctamente las operaciones de copia de seguridad y restauración, y ambos deben almacenarse con cualquier dato de copia de seguridad:
 

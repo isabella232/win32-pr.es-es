@@ -1,11 +1,11 @@
 ---
-title: IWMPQuery addCondition, método
-description: El método addCondition agrega una condición a la consulta compuesta mediante la lógica y.
+title: Método addCondition de IWMPQuery
+description: El método addCondition agrega una condición a la consulta compuesta mediante la lógica AND.
 ms.assetid: 4594ee6f-b153-4d53-b3ee-cd1718a4d5dc
 keywords:
-- método addCondition de Windows Media Player
-- método addCondition Windows Media Player, interfaz IWMPQuery
-- Interfaz IWMPQuery Windows Media Player, método addCondition
+- Método addCondition Reproductor de Windows Media
+- Método addCondition Reproductor de Windows Media , interfaz IWMPQuery
+- Interfaz IWMPQuery Reproductor de Windows Media , método addCondition
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9de3015ef0389fef82934cbd8e9326b6f9ec2307
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fe85999c60364827d483f81d14ff88602c9b2831c16e7cff8a3e17076b77671d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117745710"
 ---
-# <a name="iwmpqueryaddcondition-method"></a>IWMPQuery:: addCondition (método)
+# <a name="iwmpqueryaddcondition-method"></a>IWMPQuery::addCondition (método)
 
-El método **addCondition** agrega una condición a la consulta compuesta mediante la lógica **y** .
+El **método addCondition** agrega una condición a la consulta compuesta mediante **la lógica AND.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,24 +57,24 @@ Implements IWMPQuery.addCondition
 
 <dl> <dt>
 
-*bstrAttribute* \[ de\]
+*bstrAttribute* \[ En\]
 </dt> <dd>
 
-**System. String** que es el nombre del atributo que se va a agregar a la consulta.
+**System.String que** es el nombre del atributo que se va a agregar a la consulta.
 
 </dd> <dt>
 
-*bstrOperator* \[ de\]
+*bstrOperator* \[ En\]
 </dt> <dd>
 
-**System. String** que es el operador. Vea la sección Comentarios para ver los valores admitidos.
+**System.String que** es el operador . Consulte Comentarios para ver los valores admitidos.
 
 </dd> <dt>
 
-*bstrValue* \[ de\]
+*bstrValue* \[ En\]
 </dt> <dd>
 
-**System. String** que es el valor del atributo.
+**System.String que** es el valor del atributo.
 
 </dd> </dl>
 
@@ -82,15 +82,15 @@ Implements IWMPQuery.addCondition
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las condiciones contenidas en una consulta compuesta se organizan en grupos de condiciones. Varias condiciones dentro de un grupo de condiciones se concatenan siempre mediante la lógica **y** . Los grupos de condiciones siempre se concatenan entre sí mediante la lógica **o** . Para iniciar un nuevo grupo de condiciones, llame a [IWMPQuery. beginNextGroup](wmplibiwmpquery-iwmpquery-beginnextgroup--vb-and-c.md).
+Las condiciones contenidas en una consulta compuesta se organizan en grupos de condiciones. Varias condiciones dentro de un grupo de condiciones siempre se concatenan mediante la **lógica AND.** Los grupos de condiciones siempre se concatenan entre sí mediante la **lógica OR.** Para iniciar un nuevo grupo de condiciones, llame [a IWMPQuery.beginNextGroup](wmplibiwmpquery-iwmpquery-beginnextgroup--vb-and-c.md).
 
-Las consultas compuestas que usan **IWMPQuery** no distinguen mayúsculas de minúsculas.
+Las consultas compuestas **que usan IWMPQuery** no distinguen mayúsculas de minúsculas.
 
-Puede encontrar una lista de valores para el parámetro *bstrAttribute* en [referencia de atributo alfabético](alphabetical-attribute-reference.md).
+Puede encontrar una lista de valores para *el parámetro bstrAttribute* en [Referencia alfabética de atributos](alphabetical-attribute-reference.md).
 
-En la tabla siguiente se enumeran los valores admitidos para *bstrOperator*.
+En la tabla siguiente se enumeran los valores admitidos *para bstrOperator.*
 
 
 
@@ -98,7 +98,7 @@ En la tabla siguiente se enumeran los valores admitidos para *bstrOperator*.
 |---------------------|----------------|
 | BeginsWith          | Cadenas        |
 | Contiene            | Cadenas        |
-| Equals              | Todos los tipos      |
+| Es igual que              | Todos los tipos      |
 | GreaterThan         | Números, fechas |
 | GreaterThanOrEquals | Números, fechas |
 | LessThan            | Números, fechas |
@@ -113,7 +113,7 @@ En la tabla siguiente se enumeran los valores admitidos para *bstrOperator*.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea una consulta, se le agregan dos condiciones y se utiliza esa consulta para extraer los resultados de la consulta como una colección de cadenas. Los resultados se muestran en un cuadro de lista. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se crea una consulta, se le agregan dos condiciones y se usa esa consulta para extraer los resultados de la consulta como una colección de cadenas. A continuación, los resultados se muestran en un cuadro de lista. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -171,7 +171,7 @@ Next i
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 11.<br/>                                                                                    |
+| Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -181,19 +181,19 @@ Next i
 
 <dl> <dt>
 
-[**Referencia de atributo alfabético**](alphabetical-attribute-reference.md)
+[**Referencia alfabética de atributos**](alphabetical-attribute-reference.md)
 </dt> <dt>
 
-[**IWMPMediaCollection2. createQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-createquery--vb-and-c.md)
+[**IWMPMediaCollection2.createQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-createquery--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMediaCollection2. getPlaylistByQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getplaylistbyquery--vb-and-c.md)
+[**IWMPMediaCollection2.getPlaylistByQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getplaylistbyquery--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMediaCollection2. getStringCollectionByQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getstringcollectionbyquery--vb-and-c.md)
+[**IWMPMediaCollection2.getStringCollectionByQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getstringcollectionbyquery--vb-and-c.md)
 </dt> <dt>
 
-[**Interfaz IWMPQuery**](iwmpquery--vb-and-c.md)
+[**IWMPQuery (interfaz)**](iwmpquery--vb-and-c.md)
 </dt> </dl>
 
  

@@ -1,28 +1,28 @@
 ---
-description: Esta subrutina toma una cadena que se va a cifrar, una cadena de contraseña que se utilizará para generar una clave de cifrado y el nombre de un archivo en el que se escribirá el mensaje cifrado.
+description: Esta subrutina toma una cadena que se va a cifrar, una cadena de contraseña que se usará para generar una clave de cifrado y el nombre de un archivo donde se escribirá el mensaje cifrado.
 ms.assetid: 9ad3199a-bca1-4990-80da-80744e349047
 title: Cifrado de un mensaje en CAPICOM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8039586736c09673644cacc90759e8d5f25b6e1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a3ef531fa75fc4d99a423ffbb6c0edd591caf6b1939f12fea439e7f9fbc80dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117766197"
 ---
 # <a name="encrypting-a-message-in-capicom"></a>Cifrado de un mensaje en CAPICOM
 
-\[CAPICOM es un componente de solo bits de 32 que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use la .NET Framework para implementar características de seguridad. Para obtener más información, vea [alternativas al uso de CAPICOM](alternatives-to-using-capicom.md).\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use el .NET Framework para implementar características de seguridad. Para obtener más información, [vea Alternativas al uso de CAPICOM.](alternatives-to-using-capicom.md)\]
 
-Esta subrutina toma una cadena que se va a cifrar, una cadena de contraseña que se utilizará para generar una clave de cifrado y el nombre de un archivo en el que se escribirá el mensaje cifrado. Todos los parámetros se pasan a la subrutina por valores. Para descifrar el mensaje, se debe usar la misma cadena de contraseña. Si se pierde la contraseña, el texto no se puede descifrar. La privacidad del mensaje se pierde si un destinatario no deseado obtiene acceso a la contraseña.
+Esta subrutina toma una cadena que se va a cifrar, una cadena de contraseña que se usará para generar una clave de cifrado y el nombre de un archivo donde se escribirá el mensaje cifrado. Todos los parámetros se pasan a la subrutina por valores. Para descifrar el mensaje, se debe usar la misma cadena de contraseña. Si se pierde la contraseña, el texto no se puede descifrar. La privacidad del mensaje se pierde si un destinatario no deseado obtiene acceso a la contraseña.
 
 > [!Note]  
-> CAPICOM no admite el tipo de \# contenido de PKCS 7 EncryptedData, pero usa una estructura ASN no estándar para EncryptedData. Como resultado, solo CAPICOM puede descifrar un objeto EncryptedData de CAPICOM.
+> CAPICOM no admite el tipo de contenido PkCS 7 EncryptedData, pero usa una estructura ASN no estándar \# para EncryptedData. Como resultado, solo CAPICOM puede descifrar un objeto CAPICOM EncryptedData.
 
  
 
-En cualquier error de CAPICOM, se devuelve un valor decimal negativo de la propiedad **Err. Number** . Para obtener más información, consulte el [**\_ \_ código de error de CAPICOM**](capicom-error-code.md). Para obtener información acerca de los valores decimales positivos de **Err. Number**, consulte Winerror. h.
+En cualquier error CAPICOM, se devuelve un valor decimal negativo de la **propiedad Err.Number.** Para obtener más información, [**vea CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Para obtener información sobre los valores decimales positivos de **Err.Number,** vea Winerror.h.
 
 
 ```VB

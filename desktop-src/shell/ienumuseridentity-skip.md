@@ -1,7 +1,7 @@
 ---
-description: 'IEnumUserIdentity:: Skip no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use cuentas de usuario con cambio rápido de usuario y Escritorio remoto.'
+description: IEnumUserIdentity::Skip no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use cuentas de usuario con cambio rápido de usuario y Escritorio remoto.
 ms.assetid: bb19ae50-b384-48fb-9272-15e3e3eaa9d0
-title: 'IEnumUserIdentity:: Skip (método) (Msident. h)'
+title: Método IEnumUserIdentity::Skip (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: cedd4f3c6e9736e26cbf8d58f27f805f0f5d33a9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ced6a1a9ce463f82b6b33275339216edabc02737928e985a294154e579523575
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117678932"
 ---
-# <a name="ienumuseridentityskip-method"></a>IEnumUserIdentity:: Skip (método)
+# <a name="ienumuseridentityskip-method"></a>IEnumUserIdentity::Skip (Método)
 
-\[**IEnumUserIdentity:: Skip** no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use [cuentas de usuario con cambio rápido de usuario y escritorio remoto](fastuserswitching.md).\]
+\[**IEnumUserIdentity::Skip** no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, [use cuentas de usuario con cambio rápido de usuario Escritorio remoto](fastuserswitching.md).\]
 
-Omite un número determinado de interfaces de identidad de usuario en la enumeración. Se utiliza al recuperar interfaces.
+Omite un número determinado de interfaces de identidad de usuario en la enumeración . Se usa al recuperar interfaces.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,10 +41,10 @@ HRESULT Skip(
 
 <dl> <dt>
 
-*Celt* \[ de\]
+*celta* \[ En\]
 </dt> <dd>
 
-Tipo: **ULong**
+Tipo: **ULONG**
 
 Número de interfaces que se van a omitir.
 
@@ -54,11 +54,11 @@ Número de interfaces que se van a omitir.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-[**IEnumUserIdentity**](ienumuseridentity.md) mantiene un recuento interno que especifica la interfaz que se va a recuperar. Para incrementar este recuento sin recuperar interfaces, llame a este método. Para restablecer el recuento, llame a [**IEnumUserIdentity:: RESET**](ienumuseridentity-reset.md).
+[**IEnumUserIdentity mantiene**](ienumuseridentity.md) un recuento interno que especifica qué interfaz se encuentra junto a la recuperación. Para incrementar este recuento sin recuperar interfaces, llame a este método. Para restablecer el recuento, llame a [**IEnumUserIdentity::Reset**](ienumuseridentity-reset.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,12 +66,12 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                  |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                         |
-| Encabezado<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 
@@ -83,13 +83,13 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 [**IEnumUserIdentity**](ienumuseridentity.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: RESET**](ienumuseridentity-reset.md)
+[**IEnumUserIdentity::Reset**](ienumuseridentity-reset.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: Next**](ienumuseridentity-next.md)
+[**IEnumUserIdentity::Next**](ienumuseridentity-next.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: GetCount**](ienumuseridentity-getcount.md)
+[**IEnumUserIdentity::GetCount**](ienumuseridentity-getcount.md)
 </dt> </dl>
 
  

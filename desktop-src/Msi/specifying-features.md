@@ -1,5 +1,5 @@
 ---
-description: Microsoft Installer permite a los usuarios instalar y quitar bloques de funcionalidad de la aplicación que se conoce como características Windows Instalador de aplicaciones.
+description: Microsoft Installer permite a los usuarios instalar y quitar bloques de la funcionalidad de la aplicación a la que se hace referencia como Windows installer.
 ms.assetid: 88268c5c-57c5-49f8-92df-1ad8f30a70c2
 title: Especificar características
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118624699"
 ---
 # <a name="specifying-features"></a>Especificar características
 
-Microsoft Installer permite a los usuarios instalar y quitar bloques de funcionalidad de la aplicación que se conoce como características Windows [instalador de .](windows-installer-features.md) En esta sección agregará información a la base de datos de instalación sobre las características que están disponibles para el ejemplo Bloc de notas instalación. Para obtener más información, vea [Grupo de tablas principales y](core-tables-group.md) Componentes y [características.](components-and-features.md)
+Microsoft Installer permite a los usuarios instalar y quitar bloques de la funcionalidad de la aplicación a la que se hace referencia [Windows características del instalador](windows-installer-features.md). En esta sección agregará información a la base de datos de instalación sobre las características que están disponibles para el Bloc de notas ejemplo. Para obtener más información, [vea Grupo de tablas principales](core-tables-group.md) y Componentes y [características.](components-and-features.md)
 
 En Bloc de notas ejemplo se instalan características en una jerarquía de características primarias y secundarias. En la lista siguiente, se aplica sangría a las características secundarias en relación con su característica primaria. Las características deben mostrarse en este orden en el [control SelectionTree](selectiontree-control.md) de la interfaz de usuario (UI).
 
@@ -43,10 +43,10 @@ Use un editor de bases de datos para MNP2000.msi y escriba los datos siguientes 
 
 | Característica  | Elemento \_ primario de la característica | Título         | Descripción                | Mostrar | Nivel | Directorio\_ | Atributos |
 |----------|-----------------|---------------|----------------------------|---------|-------|-------------|------------|
-| Artes     |                 | Artes          | Eventos de eventos de eventos en Red Park.   | 20      | 3     | NOTEPADDIR  | 0          |
+| Artes     |                 | Artes          | Eventos de eventos en Red Park.   | 20      | 3     | NOTEPADDIR  | 0          |
 | Béisbol | Deporte           | Béisbol      | Juegos de béisbol             | 17      | 3     | SPORTDIR    | 32         |
-| Concierto  | Artes            | Concierto       | Eventos de un concertado en Red Park | 21      | 3     | ASÍNSTEDIR     | 2          |
-| Baile    | Artes            | Baile         | Eventos de música en Red Park   | 23      | 3     | ASÍNSTEDIR     | 2          |
+| Concierto  | Artes            | Concierto       | Eventos de un concierto en Red Park | 21      | 3     | NOCIONESDIR     | 2          |
+| Baile    | Artes            | Baile         | Eventos de música en Red Park   | 23      | 3     | NOCIONESDIR     | 2          |
 | Fútbol | Deporte           | Fútbol      | Partidos de fútbol             | 19      | 3     | SPORTDIR    | 2          |
 | Puerta     |                 | Puerta          | Admisiones de Red Park      | 6       | 3     | NOTEPADDIR  | 0          |
 | Ayuda     | Bloc de notas         | Ayuda          | Archivo de ayuda.                 | 5       | 3     | NOTEPADDIR  | 1          |

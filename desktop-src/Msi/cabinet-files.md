@@ -1,33 +1,33 @@
 ---
-description: Un contenedor es un archivo único, normalmente con una extensión. cab, que almacena los archivos comprimidos en una biblioteca de archivos.
+description: Un archivador es un único archivo, normalmente con .cab extensión, que almacena archivos comprimidos en una biblioteca de archivos.
 ms.assetid: df240302-b875-49bf-8e62-7a35204c35fb
-title: Archivos. cab
+title: Archivos archivadores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c7b54ae737785abc33edd46c9e53edc93fcd288
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2331b60c42bf975856987d1e13d67c95bc01fa685f99f49543650c48347cac49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118380735"
 ---
-# <a name="cabinet-files"></a>Archivos. cab
+# <a name="cabinet-files"></a>Archivos archivadores
 
-Un contenedor es un archivo único, normalmente con una extensión. cab, que almacena los archivos comprimidos en una biblioteca de archivos. El formato de archivo. cab es una manera eficaz de empaquetar varios archivos, ya que la compresión se realiza a través de los límites de los archivos, lo que mejora significativamente la razón de compresión.
+Un archivador es un único archivo, normalmente con .cab extensión, que almacena archivos comprimidos en una biblioteca de archivos. El formato de archivador es una manera eficaz de empaquetar varios archivos porque la compresión se realiza a través de los límites del archivo, lo que mejora significativamente la relación de compresión.
 
-Los desarrolladores pueden usar una herramienta de creación de archivos. cab como Makecab.exe para crear archivos. cab para su uso con paquetes de instalador. La utilidad de Makecab.exe se incluye en los [componentes de Windows SDK para Windows Installer desarrolladores](platform-sdk-components-for-windows-installer-developers.md).
+Los desarrolladores pueden usar una herramienta de creación de archivos archivados, como Makecab.exe para crear archivos de archivador para usarlos con paquetes del instalador. La utilidad Makecab.exe se incluye en los componentes del SDK de Windows [para Windows programadores del instalador](platform-sdk-components-for-windows-installer-developers.md).
 
-Los desarrolladores también pueden utilizar una herramienta de creación de archivos. cab como Cabarc.exe para crear archivos. cab para su uso con paquetes de instalador. Esta herramienta escribe en la estructura del archivo. cab de Diamond.
+Los desarrolladores también pueden usar una herramienta de creación de archivos de archivador, Cabarc.exe para crear archivos archivadores para usarlos con paquetes del instalador. Esta herramienta escribe en la estructura del gabinete Diamond.
 
-Las claves de archivo de los archivos almacenados dentro de un archivo. cab deben coincidir con las entradas de la columna File de la [tabla File](file-table.md) y la secuencia de archivos del archivo. cab debe coincidir con la secuencia de archivos especificada en la columna Sequence. Para obtener más información, consulte [uso de archivadores y orígenes comprimidos](using-cabinets-and-compressed-sources.md).
+Las claves de archivo de los archivos almacenados dentro de un [](file-table.md) archivo de archivador deben coincidir con las entradas de la columna Archivo de la tabla Archivo y la secuencia de archivos del archivador debe coincidir con la secuencia de archivos especificada en la columna Secuencia . Para obtener más información, [vea Using Cabinets and Compressed Sources](using-cabinets-and-compressed-sources.md).
 
-Los archivos grandes pueden dividirse entre dos o más archivos. cab. No puede haber más de 15 archivos en un archivo contenedor que abarque al siguiente archivo. cab. Por ejemplo, si tiene tres archivos. cab, el primero puede tener 15 archivos que abarcan el segundo archivo. cab y el segundo archivo. cab puede tener 15 archivos que abarcan el tercer archivo. cab.
+Los archivos grandes se pueden dividir entre dos o más archivos de archivador. No puede haber más de 15 archivos en un solo archivo de archivador que se extiende al siguiente archivo de archivador. Por ejemplo, si tiene tres archivos de archivador, el primer gabinete puede tener 15 archivos que abarcan el segundo archivo de archivador y el segundo archivo de archivador puede tener 15 archivos que abarcan el tercer archivo de archivador.
 
-El instalador extrae los archivos de un archivo. cab, ya que los necesita la instalación y los instala en el mismo orden en el que se almacenan en el archivo. cab. Los requisitos de espacio para instalar un archivo almacenado en un archivo. cab no son diferentes a los de la instalación de un archivo sin comprimir.
+El instalador extrae los archivos de un gabinete a medida que los necesita la instalación y los instala en el mismo orden en que se almacenan en el archivo de archivador. Los requisitos de espacio para instalar un archivo almacenado en un archivador no son diferentes de para instalar un archivo sin comprimir.
 
-Un archivo. cab se puede ubicar dentro o fuera del archivo. msi. A partir de Windows Installer 5,0 que se ejecuta en Windows 7 o Windows Server 2008 R2, el instalador guarda los archivadores que están incrustados en el archivo. msi antes de almacenar en caché el paquete de instalación.
+Un archivo de archivador se puede encontrar dentro o fuera del .msi archivo. A partir de Windows Installer 5.0 que se ejecuta en Windows 7 o Windows Server 2008 R2, el instalador guarda todos los gabinetes insertados en el archivo .msi antes de almacenar en caché el paquete de instalación.
 
-**[Windows Installer 4,5 o una versión anterior](not-supported-in-windows-installer-4-5.md):** Para conservar espacio en disco, el instalador siempre quita todos los gabinetes que están incrustados en el archivo. msi antes de almacenar en caché el paquete de instalación en el equipo del usuario.
+**[Windows Instalador 4.5 o anterior:](not-supported-in-windows-installer-4-5.md)** Para ahorrar espacio en disco, el instalador siempre quita los gabinetes insertados en el archivo .msi antes de almacenar en caché el paquete de instalación en el equipo del usuario.
 
  
 

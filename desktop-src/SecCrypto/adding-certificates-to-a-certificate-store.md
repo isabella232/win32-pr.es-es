@@ -4,28 +4,28 @@ ms.assetid: a1cb6e1e-0702-4f73-827e-3f9e9237b4b6
 title: Agregar certificados a un almacén de certificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6f4c018be697f48e40d52480f49694762fb956f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e3c4b2fafbcd11bf2d984dfd5b5a575f67dc4f6d3c70337de399ca6076029ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104545670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117774040"
 ---
 # <a name="adding-certificates-to-a-certificate-store"></a>Agregar certificados a un almacén de certificados
 
-\[CAPICOM es un componente de solo bits de 32 que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use la .NET Framework para implementar características de seguridad. Para obtener más información, vea [alternativas al uso de CAPICOM](alternatives-to-using-capicom.md).\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista, Windows XP. En su lugar, use el .NET Framework para implementar características de seguridad. Para obtener más información, [vea Alternativas al uso de CAPICOM.](alternatives-to-using-capicom.md)\]
 
-Los [*certificados*](../secgloss/c-gly.md) se pueden agregar o quitar de los [*almacenes de certificados*](../secgloss/c-gly.md) si el almacén se abre con permiso de lectura y escritura. No se concede permiso de lectura y escritura a los almacenes de Active Directory. Aunque los certificados se pueden agregar o quitar de los almacenes de memoria, los cambios en los almacenes de memoria no se conservan entre las sesiones.
+[*Los certificados*](../secgloss/c-gly.md) se pueden agregar o quitar de [*los*](../secgloss/c-gly.md) almacenes de certificados si el almacén se abre con permiso de lectura y escritura. El permiso de lectura y escritura no se concede a Active Directory almacenes. Aunque los certificados se pueden agregar o quitar de los almacenes de memoria, los cambios en los almacenes de memoria no se conservan entre sesiones.
 
-Los certificados se pueden agregar a un almacén de certificados abierto con permisos de lectura y escritura mediante el método **Add** . Se puede quitar un certificado de un almacén de certificados que se abre con permiso de lectura y escritura mediante el método **Remove** . Se pueden crear nuevas tiendas y guardarlas en el \_ almacén de usuarios actual de CAPICOM y en las \_ ubicaciones del almacén de \_ \_ máquinas locales de CAPICOM \_ \_ . Los almacenes recién creados en cualquiera de estas ubicaciones pueden abrirse con permisos de lectura y escritura.
+Los certificados se pueden agregar a un almacén de certificados que se abre con permiso de lectura y escritura mediante el **método Add.** Un certificado se puede quitar de un almacén de certificados que se abre con permiso de lectura y escritura mediante el **método Remove.** Se pueden crear y guardar nuevas tiendas en las ubicaciones CAPICOM \_ CURRENT USER STORE y \_ \_ CAPICOM \_ LOCAL MACHINE \_ \_ STORE. Las tiendas recién creadas en cualquiera de estas ubicaciones se pueden abrir con permiso de lectura y escritura.
 
-En el ejemplo siguiente, se abren dos almacenes de certificados. Los certificados de asuntos con los apellidos que empiezan por F se recuperan del almacén de Active Directory. El almacén de \_ usuarios actual de CAPICOM, el almacén de \_ \_ \_ almacenamiento de CA de CAPICOM, \_ se abre como un almacén de lectura y escritura, y el primer certificado de la colección de certificados del almacén de Active Directory se agrega a los certificados del almacén de CA de CAPICOM \_ \_ .
+En el ejemplo siguiente, se abren dos almacenes de certificados. Los certificados de asuntos con apellidos que comienzan por F se recuperan del almacén Active Directory datos. A continuación, el almacén de usuarios actuales de CAPICOM, el almacén de CA STORE de CAPICOM se abre como almacén de lectura y escritura y el primer certificado de la colección de certificados del almacén de Active Directory se agrega a los certificados del almacén de ca de \_ \_ \_ \_ \_ CAPICOM. \_ \_
 
-Para fines de demostración, en el ejemplo se muestra la apertura de almacenes en el \_ almacén de memoria CAPICOM, el almacén de \_ usuarios actual de CAPICOM \_ y las ubicaciones del almacén de \_ \_ \_ máquinas locales de CAPICOM \_ \_ . En el ejemplo se muestra cómo exportar todos los certificados de un almacén abierto, cómo escribir los certificados exportados en un archivo, cómo volver a leerlos e importarlos en un almacén diferente. Los certificados recién importados se enumeran y se muestran.
+Con fines de demostración, en el ejemplo se muestra la apertura de tiendas en las ubicaciones CAPICOM \_ MEMORY \_ STORE, CAPICOM CURRENT USER STORE y \_ \_ \_ CAPICOM \_ LOCAL MACHINE \_ \_ STORE. En el ejemplo se muestra cómo exportar todos los certificados de un almacén abierto, escribir los certificados exportados en un archivo, volver a leerlos e importarlos en otro almacén. Los certificados recién importados se enumeran y se muestran.
 
-En cualquier error de CAPICOM, se devuelve un valor decimal negativo de **Err. Number** . Para obtener más información, consulte el [**\_ \_ código de error de CAPICOM**](capicom-error-code.md). Para obtener información acerca de los valores decimales positivos de **Err. Number**, consulte Winerror. h.
+En cualquier error CAPICOM, se devuelve un valor decimal negativo **de Err.Number.** Para obtener más información, vea [**CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Para obtener información sobre los valores decimales positivos **de Err.Number,** vea Winerror.h.
 
-En el ejemplo siguiente se muestra cómo abrir almacenes de certificados utilizando el enlace temprano en la declaración de los objetos **Store** y en la creación de una instancia de esos objetos.
+En el ejemplo siguiente se muestra cómo abrir almacenes de certificados mediante el enlace temprano en la declaración de los objetos **Store** y en la creación de una instancia de esos objetos.
 
 
 ```VB

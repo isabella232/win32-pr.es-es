@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_DRAW_CHANGEPALETTE (VFW. h)
-description: El mensaje CHANGEPALETTE de ICM de \_ Draw \_ notifica a un controlador de representación que la paleta de películas está cambiando. Puede enviar este mensaje explícitamente o mediante la macro ICDrawChangePalette.
+title: ICM_DRAW_CHANGEPALETTE mensaje (Vfw.h)
+description: El ICM \_ DRAW \_ CHANGEPALETTE notifica a un controlador de representación que la paleta de películas está cambiando. Puede enviar este mensaje explícitamente o mediante la macro ICDrawChangePalette.
 ms.assetid: 974fc0d8-d0c7-4a82-af84-68b53f753259
 keywords:
-- Mensaje de ICM_DRAW_CHANGEPALETTE de Windows multimedia
+- ICM_DRAW_CHANGEPALETTE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6364abb2c535158b2e64ff311041b00490c5958c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e936c7dce397910ef70a80e2efa7f3e031ab8a61b8f59fece158d5c28e9e1270
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117987601"
 ---
-# <a name="icm_draw_changepalette-message"></a>\_Mensaje CHANGEPALETTE de Draw ICM \_
+# <a name="icm_draw_changepalette-message"></a>\_ICM Draw \_ CHANGEPALETTE message
 
-El **mensaje \_ \_ CHANGEPALETTE de ICM de Draw** notifica a un controlador de representación que la paleta de películas está cambiando. Puede enviar este mensaje explícitamente o mediante la macro [**ICDrawChangePalette**](/windows/desktop/api/Vfw/nf-vfw-icdrawchangepalette) .
+El **ICM \_ DRAW \_ CHANGEPALETTE notifica** a un controlador de representación que la paleta de películas está cambiando. Puede enviar este mensaje explícitamente o mediante la macro [**ICDrawChangePalette.**](/windows/desktop/api/Vfw/nf-vfw-icdrawchangepalette)
 
 
 ```C++
@@ -41,15 +41,15 @@ lParam = 0;
 <span id="lpbiInput"></span><span id="lpbiinput"></span><span id="LPBIINPUT"></span>*lpbiInput*
 </dt> <dd>
 
-Puntero a una estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el nuevo formato y la tabla de colores opcional.
+Puntero a una [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el nuevo formato y la tabla de colores opcional.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve ICERR \_ OK si es correcto o **false** en caso contrario.
+Devuelve ICERR \_ OK si se realiza correctamente o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este mensaje debe ser compatible con los controladores de representación instalables que dibujan DIB con una estructura interna que incluye una paleta.
 
@@ -61,7 +61,7 @@ Este mensaje debe ser compatible con los controladores de representación instal
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

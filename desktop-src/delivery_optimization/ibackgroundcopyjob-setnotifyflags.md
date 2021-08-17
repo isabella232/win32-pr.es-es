@@ -50,7 +50,7 @@ Establezca una o varias de las marcas siguientes para identificar los eventos qu
 
 
 
-| Value                                                                                                                                                                                                                                                                                    | Significado                                                                                                                                                                                                                |
+| Valor                                                                                                                                                                                                                                                                                    | Significado                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="BG_NOTIFY_JOB_TRANSFERRED"></span><span id="bg_notify_job_transferred"></span><dl> <dt>**BG_NOTIFY_JOB_TRANSFERRED**</dt> <dt>0x0001</dt> </dl>                          | Se han transferido todos los archivos del trabajo.<br/>                                                                                                                                                          |
 | <span id="BG_NOTIFY_JOB_ERROR"></span><span id="bg_notify_job_error"></span><dl> <dt>**BG_NOTIFY_JOB_ERROR**</dt> <dt>0x0002</dt> </dl>                                            | Se ha producido un error.<br/>                                                                                                                                                                                      |
@@ -80,7 +80,7 @@ Este método devuelve los siguientes **valores HRESULT,** así como otros.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Use el **método SetNotifyFlags** junto con [**IBackgroundCopyJob::SetNotifyInterface**](ibackgroundcopyjob-setnotifyinterface.md).
 
@@ -88,7 +88,7 @@ Use el **método SetNotifyFlags** junto con [**IBackgroundCopyJob::SetNotifyInte
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
@@ -100,7 +100,7 @@ Use el **método SetNotifyFlags** junto con [**IBackgroundCopyJob::SetNotifyInte
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

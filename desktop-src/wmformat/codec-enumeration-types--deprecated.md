@@ -1,9 +1,9 @@
 ---
 title: Tipos de enumeración de códecs
-description: Para obtener la documentación actual Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | Tipos de enumeración de códecs
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (API de códecs de audio y vídeo multimedia y DSP). | Tipos de enumeración de códecs
 ms.assetid: 7a6a0a56-7927-431f-a33c-626075b16de6
 keywords:
-- Formato multimedia de windows de tipos de enumeración de códecs
+- Tipos de enumeración de códecs formato multimedia de windows
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "117849186"
 ---
 # <a name="codec-enumeration-types"></a>Tipos de enumeración de códecs
 
-Para obtener la documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP APIs (API](/previous-versions//dd464626(v=vs.85)) de códecs multimedia y DSP).
+Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP API (API](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
 
  
 

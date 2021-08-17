@@ -28,10 +28,10 @@ Se trata de **un valor \_ REG DWORD.**
 
 
 
-| Valor | Descripción                                                                               |
+| Value | Descripción                                                                               |
 |-------|-------------------------------------------------------------------------------------------|
 | 0     | Deshabilita las Windows store tras la migración de Windows 7 a Windows 8.                   |
-| 1     | No agrega el SID DE \_ TODOS LOS \_ PAQUETES DE APLICACIONES a las restricciones COM. Este es el valor predeterminado. |
+| 1     | No agrega el \_ SID DE TODOS LOS \_ PAQUETES DE APLICACIONES a las restricciones COM. Este es el valor predeterminado. |
 
 
 

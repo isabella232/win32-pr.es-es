@@ -3,73 +3,73 @@ title: Propiedades de DRM
 description: Propiedades de DRM
 ms.assetid: 862fc8bc-6e40-4496-862a-c12c8a382116
 keywords:
-- SDK de Windows Media Format, propiedades de DRM
-- Advanced Systems Format (ASF), propiedades de DRM
-- ASF (formato de sistemas avanzados), propiedades de DRM
-- Administración de derechos digitales (DRM), propiedades
-- DRM (administración de derechos digitales), propiedades
+- Windows SDK de formato multimedia, propiedades de DRM
+- Formato de sistemas avanzados (ASF), propiedades drm
+- ASF (formato de sistemas avanzados), propiedades drm
+- administración de derechos digitales (DRM),properties
+- DRM (administración de derechos digitales),propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb8542d360c38ab3f12406462cefc0454e7eae33
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9d553d644a6f3ec7130262d0e8567a4aa6ceab53286b24248607b1928991f51d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117848271"
 ---
 # <a name="drm-properties"></a>Propiedades de DRM
 
-En la tabla siguiente se enumeran las propiedades DRM que las aplicaciones pueden obtener o establecer al escribir o leer archivos protegidos. Estas propiedades no son atributos de archivo; no se escriben en el encabezado de archivo ASF.
+En la tabla siguiente se enumeran las propiedades de DRM que las aplicaciones pueden obtener o establecer al escribir o leer archivos protegidos. Estas propiedades no son atributos de archivo; no se escriben en el encabezado de archivo ASF.
 
 
 
 | Propiedad DRM                                                                             | Identificador global                               | Tipo de datos             |
 |------------------------------------------------------------------------------------------|-------------------------------------------------|-----------------------|
-| [**\_ACTIONALLOWED DRM**](drm-actionallowed.md)                                          | g \_ wszWMDRM \_ ActionAllowed                      | **tipo de WMT \_ \_ bool**   |
-| [**Copia de seguridad de \_ ActionAllowed de DRM \_**](drm-actionallowed-backup.md)                           | g \_ wszWMDRM \_ ActionAllowed \_ backup              | **tipo de WMT \_ \_ bool**   |
-| [**\_CollaborativePlay ACTIONALLOWED \_ DRM**](drm-actionallowed-collaborativeplay.md)     | g \_ wszWMDRM \_ ActionAllowed \_ CollaborativePlay   | **tipo de WMT \_ \_ bool**   |
-| [**\_Copia de ActionAllowed de DRM \_**](drm-actionallowed-copy.md)                               | g \_ wszWMDRM \_ ActionAllowed \_                | **tipo de WMT \_ \_ bool**   |
-| [**\_CopyToCD ACTIONALLOWED \_ DRM**](drm-actionallowed-copytocd.md)                       | g \_ wszWMDRM \_ ActionAllowed \_ CopyToCD            | **tipo de WMT \_ \_ bool**   |
-| [**\_CopyToNonSDMIDevice ACTIONALLOWED \_ DRM**](drm-actionallowed-copytononsdmidevice.md) | g \_ wszWMDRM \_ ActionAllowed \_ CopyToNonSDMIDevice | **tipo de WMT \_ \_ bool**   |
-| [**\_CopyToSDMIDevice ACTIONALLOWED \_ DRM**](drm-actionallowed-copytosdmidevice.md)       | g \_ wszWMDRM \_ ActionAllowed \_ CopyToSDMIDevice    | **tipo de WMT \_ \_ bool**   |
-| [**\_Reproducción de ACTIONALLOWED DRM \_**](drm-actionallowed-playback.md)                       | g \_ wszWMDRM \_ ActionAllowed \_ reproducción            | **tipo de WMT \_ \_ bool**   |
-| [**\_PlaylistBurn ACTIONALLOWED \_ DRM**](drm-actionallowed-playlistburn.md)               | g \_ wszWMDRM \_ ActionAllowed \_ PlaylistBurn        | **tipo de WMT \_ \_ bool**   |
-| [**\_BASELICENSEACQURL DRM**](drm-baselicenseacqurl.md)                                  | g \_ wszWMDRM \_ BaseLicenseAcqURL                  | **\_cadena de tipo WMT \_** |
-| [**\_Marcas DRM**](drm-flags.md)                                                          | g \_ marcas de wszWMDRM \_                              | **tipo de WMT \_ \_ DWORD**  |
-| [**\_HEADERSIGNPRIVKEY DRM**](drm-headersignprivkey.md)                                  | g \_ wszWMDRM \_ HeaderSignPrivKey                  | **\_cadena de tipo WMT \_** |
-| [**\_ISDRM DRM**](drm-isdrm.md)                                                          | g \_ wszIsDRM                                     | **tipo de WMT \_ \_ bool**   |
-| [**\_ISDRMCACHED DRM**](drm-isdrmcached.md)                                              | g \_ wszIsDRMCached                               | **tipo de WMT \_ \_ bool**   |
-| [**\_KEYSEED DRM**](drm-keyseed.md)                                                      | g \_ wszWMDRM \_ KeySeed                            | **\_cadena de tipo WMT \_** |
-| [**Nivel de DRM \_**](drm-level.md)                                                          | \_nivel g wszWMDRM \_                              | **tipo de WMT \_ \_ DWORD**  |
-| [**\_LICENSEID DRM**](drm-licenseid.md)                                                  | g \_ wszWMDRM \_ LicenseID                          | **\_cadena de tipo WMT \_** |
-| [**\_LICENSESTATE DRM**](drm-licensestate.md)                                            | g \_ wszWMDRM \_ LicenseState                       | **tipo de WMT \_ \_ DWORD**  |
-| [**\_CollaborativePlay LICENSESTATE \_ DRM**](drm-licensestate-collaborativeplay.md)       | g \_ wszWMDRM \_ LicenseState \_ CollaborativePlay    | **tipo de WMT \_ \_ binario** |
-| [**\_Copia de LicenseState de DRM \_**](drm-licensestate-copy.md)                                 | g \_ wszWMDRM \_ LicenseState \_                 | **tipo de WMT \_ \_ binario** |
-| [**\_CopyToCD LICENSESTATE \_ DRM**](drm-licensestate-copytocd.md)                         | g \_ wszWMDRM \_ LicenseState \_ CopyToCD             | **tipo de WMT \_ \_ binario** |
-| [**\_CopyToSDMIDevice LICENSESTATE \_ DRM**](drm-licensestate-copytosdmidevice.md)         | g \_ wszWMDRM \_ LicenseState \_ CopyToSDMIDevice     | **tipo de WMT \_ \_ binario** |
-| [**\_CopyToNonSDMIDevice LICENSESTATE \_ DRM**](drm-licensestate-copytononsdmidevice.md)   | g \_ wszWMDRM \_ LicenseState \_ CopyToNonSDMIDevice  | **tipo de WMT \_ \_ binario** |
-| [**\_Reproducción de LICENSESTATE DRM \_**](drm-licensestate-playback.md)                         | g \_ wszWMDRM \_ LicenseState \_ reproducción             | **tipo de WMT \_ \_ binario** |
-| [**\_PlaylistBurn LICENSESTATE \_ DRM**](drm-licensestate-playlistburn.md)                 | g \_ wszWMDRM \_ LicenseState \_ PlaylistBurn         | **tipo de WMT \_ \_ binario** |
-| [**Derechos de DRM \_**](drm-rights.md)                                                        | g \_ wszWMDRM \_ derechos                             | **\_cadena de tipo WMT \_** |
-| [**\_SAPLEVEL DRM**](drm-saplevel--deprecated.md)                                        | g \_ wszWMDRM \_ SAPLEVEL                           | **\_cadena de tipo WMT \_** |
-| [**Usar \_ \_ DRM avanzada**](use-advanced-drm.md)                                           | g \_ wszWMUse \_ \_ DRM avanzada                      | **tipo de WMT \_ \_ bool**   |
-| [**Usar \_ DRM**](use-drm.md)                                                              | g \_ wszWMUse \_ DRM                                | **tipo de WMT \_ \_ bool**   |
-| [**Revocación de WMDRMNET \_**](wmdrmnet-revocation.md)                                      | g \_ \_ revocación de wszWMDRMNET                      | **\_cadena de tipo WMT \_** |
+| [**Acción \_ drmAllowed**](drm-actionallowed.md)                                          | g \_ wszWMDRM \_ ActionAllowed                      | **TIPO WMT \_ \_ BOOL**   |
+| [**Acción \_ DRMAllowed \_ Backup**](drm-actionallowed-backup.md)                           | g \_ wszWMDRM \_ ActionAllowed \_ Backup              | **TIPO WMT \_ \_ BOOL**   |
+| [**Acción \_ drmAllowed \_ CollaborativePlay**](drm-actionallowed-collaborativeplay.md)     | g \_ wszWMDRM \_ ActionAllowed \_ CollaborativePlay   | **TIPO WMT \_ \_ BOOL**   |
+| [**Acción \_ de DRMAllowed \_ Copy**](drm-actionallowed-copy.md)                               | g \_ wszWMDRM \_ ActionAllowed \_ Copy                | **TIPO WMT \_ \_ BOOL**   |
+| [**Acción \_ de DRMAllowed \_ CopyToCD**](drm-actionallowed-copytocd.md)                       | g \_ wszWMDRM \_ ActionAllowed \_ CopyToCD            | **TIPO WMT \_ \_ BOOL**   |
+| [**Acción \_ de DRMAllowed \_ CopyToNonSDMIDevice**](drm-actionallowed-copytononsdmidevice.md) | g \_ wszWMDRM \_ ActionAllowed \_ CopyToNonSDMIDevice | **TIPO WMT \_ \_ BOOL**   |
+| [**Acción \_ de DRMAllowed \_ CopyToSDMIDevice**](drm-actionallowed-copytosdmidevice.md)       | g \_ wszWMDRM \_ ActionAllowed \_ CopyToSDMIDevice    | **TIPO WMT \_ \_ BOOL**   |
+| [**Acción de \_ DRMAllowed \_ Playback**](drm-actionallowed-playback.md)                       | g \_ wszWMDRM \_ ActionAllowed \_ Playback            | **TIPO WMT \_ \_ BOOL**   |
+| [**Acción de \_ DRMAllowed Playlist Playlist (Lista de \_ reproducción permitido)**](drm-actionallowed-playlistburn.md)               | g \_ wszWMDRM \_ ActionAllowed Playlist (Lista de reproducción \_ permitido)        | **TIPO WMT \_ \_ BOOL**   |
+| [**DRM \_ BaseLicenseAcqURL**](drm-baselicenseacqurl.md)                                  | g \_ wszWMDRM \_ BaseLicenseAcqURL                  | **CADENA DE \_ TIPO \_ WMT** |
+| [**Marcas \_ DRM**](drm-flags.md)                                                          | g \_ wszWMDRM \_ Flags                              | **DWORD \_ DE TIPO \_ WMT**  |
+| [**Encabezado \_ DRMSignPrivKey**](drm-headersignprivkey.md)                                  | g \_ wszWMDRM \_ HeaderSignPrivKey                  | **CADENA DE \_ TIPO \_ WMT** |
+| [**DRM \_ IsDRM**](drm-isdrm.md)                                                          | g \_ wszIsDRM                                     | **TIPO WMT \_ \_ BOOL**   |
+| [**DRM \_ IsDRMCached**](drm-isdrmcached.md)                                              | g \_ wszIsDRMCached                               | **TIPO WMT \_ \_ BOOL**   |
+| [**DRM \_ KeySeed**](drm-keyseed.md)                                                      | g \_ wszWMDRM \_ KeySeed                            | **CADENA DE \_ TIPO \_ WMT** |
+| [**Nivel de \_ DRM**](drm-level.md)                                                          | g \_ wszWMDRM \_ Level                              | **DWORD \_ DE TIPO \_ WMT**  |
+| [**Id. de licencia de DRM \_**](drm-licenseid.md)                                                  | g \_ wszWMDRM \_ LicenseID                          | **CADENA DE \_ TIPO \_ WMT** |
+| [**DRM \_ LicenseState**](drm-licensestate.md)                                            | g \_ wszWMDRM \_ LicenseState                       | **DWORD \_ DE TIPO \_ WMT**  |
+| [**DRM \_ LicenseState \_ CollaborativePlay**](drm-licensestate-collaborativeplay.md)       | g \_ wszWMDRM \_ LicenseState \_ CollaborativePlay    | **BINARIO DE \_ TIPO \_ WMT** |
+| [**Copia \_ de LicenseState de DRM \_**](drm-licensestate-copy.md)                                 | g \_ wszWMDRM \_ LicenseState \_ Copy                 | **BINARIO DE \_ TIPO \_ WMT** |
+| [**DRM \_ LicenseState \_ CopyToCD**](drm-licensestate-copytocd.md)                         | g \_ wszWMDRM \_ LicenseState \_ CopyToCD             | **BINARIO DE \_ TIPO \_ WMT** |
+| [**DRM \_ LicenseState \_ CopyToSDMIDevice**](drm-licensestate-copytosdmidevice.md)         | g \_ wszWMDRM \_ LicenseState \_ CopyToSDMIDevice     | **BINARIO DE \_ TIPO \_ WMT** |
+| [**DRM \_ LicenseState \_ CopyToNonSDMIDevice**](drm-licensestate-copytononsdmidevice.md)   | g \_ wszWMDRM \_ LicenseState \_ CopyToNonSDMIDevice  | **BINARIO DE \_ TIPO \_ WMT** |
+| [**DRM \_ LicenseState \_ Playback**](drm-licensestate-playback.md)                         | g \_ wszWMDRM \_ LicenseState \_ Playback             | **BINARIO DE \_ TIPO \_ WMT** |
+| [**Lista \_ de reproducción de DRM LicenseState \_**](drm-licensestate-playlistburn.md)                 | g \_ wszWMDRM LicenseState Playlist Playlist Playlist (Lista de reproducción de wszWMDRM \_ \_ LicenseState)         | **BINARIO DE \_ TIPO \_ WMT** |
+| [**Derechos de \_ DRM**](drm-rights.md)                                                        | g \_ wszWMDRM \_ Rights                             | **CADENA DE \_ TIPO \_ WMT** |
+| [**DRM \_ SAPLEVEL**](drm-saplevel--deprecated.md)                                        | g \_ wszWMDRM \_ SAPLEVEL                           | **CADENA DE \_ TIPO \_ WMT** |
+| [**Uso \_ de \_ DRM avanzado**](use-advanced-drm.md)                                           | g \_ wszWMUse \_ Advanced \_ DRM                      | **TIPO WMT \_ \_ BOOL**   |
+| [**Uso de \_ DRM**](use-drm.md)                                                              | g \_ wszWMUse \_ DRM                                | **TIPO WMT \_ \_ BOOL**   |
+| [**Revocación de \_ WMDRMNET**](wmdrmnet-revocation.md)                                      | g \_ wszWMDRMNET \_ Revocation                      | **CADENA DE \_ TIPO \_ WMT** |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Lista de atributos de DRM**](drm-attribute-list.md)
+[**Lista de atributos DRM**](drm-attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Usar formas predefinidas
-description: En este artículo se describe el uso de formas predefinidas en VML, una característica que está en desuso a partir de Windows Internet Explorer 9.
+description: En este artículo se describe el uso de formas predefinidas en VML, una característica que está en desuso a partir Windows Internet Explorer 9.
 ms.assetid: 9a2e8b5a-b1d0-4a73-b058-24dac1f0b655
 keywords:
 - Taller web, formas predefinidas
@@ -8,13 +8,13 @@ keywords:
 - Lenguaje de marcado de vectores (VML), formas predefinidas
 - VML (Lenguaje de marcado de vectores), formas predefinidas
 - gráficos vectoriales, formas predefinidas
-- Formas de VML predefinidas
+- Formas de VML, predefinidas
 - formas predefinidas
 - Lenguaje de marcado de vectores (VML), elemento rect
 - VML (Lenguaje de marcado de vectores), elemento rect
 - vector graphics,rect element
 - elemento rect
-- Elementos VML, rect
+- Elementos de VML, rect
 - Lenguaje de marcado de vectores (VML), elemento roundrect
 - VML (Lenguaje de marcado de vectores), elemento roundrect
 - vector graphics,roundrect element
@@ -25,7 +25,7 @@ keywords:
 - gráficos vectoriales, elemento de línea
 - elemento line
 - Elementos de VML, línea
-- Lenguaje de marcado de vectores (VML), elemento de polilínea
+- Lenguaje de marcado de vectores (VML),elemento de polilínea
 - VML (Lenguaje de marcado de vectores),elemento de polilínea
 - gráficos vectoriales, elemento de polilínea
 - elemento de polilínea
@@ -42,16 +42,16 @@ keywords:
 - Elementos de VML, arc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b410cf288a3ba63e4c1d745fd962a445b0b220b8
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: c1f389a3a2670bd487799063df6bfcec59f28945ed09cad119fccd88e40f01b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117753914"
 ---
 # <a name="using-predefined-shapes"></a>Usar formas predefinidas
 
-En este tema se describe VML, una característica que está en desuso a partir de Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
 > A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
@@ -64,7 +64,7 @@ En este tema:
 
 -   [Rect](#roundrect)
 -   [roundrect](#roundrect)
--   [line](#polyline)
+-   [Línea](#polyline)
 -   [Polilínea](#polyline)
 -   [curva](#curve)
 -   [Arco](#arc)
@@ -88,7 +88,7 @@ strokecolor="red" strokeweight="3.5pt"/>
 
 
 
-Para obtener más información sobre este elemento, vea la [especificación de VML](https://WWW.w3.org/TR/NOTE-VML#-toc416858405) . (Nota: La especificación de VML no tiene un marcador para el `<rect>` elemento).
+Para obtener más información sobre este elemento, consulte la [especificación de VML](https://WWW.w3.org/TR/NOTE-VML#-toc416858405) . (Nota: La especificación de VML no tiene un marcador para el `<rect>` elemento).
 
 [![volver a la parte ](images/top.gif) superior Volver a la parte superior](#top)
 
@@ -111,7 +111,7 @@ strokecolor="red" strokeweight="2pt"/>
 
 
 
-Para obtener más información sobre este elemento, vea la [especificación de VML](https://WWW.w3.org/TR/NOTE-VML#-toc416858405) .
+Para obtener más información sobre este elemento, consulte la [especificación de VML](https://WWW.w3.org/TR/NOTE-VML#-toc416858405) .
 
 [![volver a la parte ](images/top.gif) superior Volver a la parte superior](#top)
 
@@ -147,7 +147,7 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-Para obtener más información sobre este elemento, vea la [especificación de VML](https://WWW.w3.org/TR/NOTE-VML#-toc416858402) .
+Para obtener más información sobre este elemento, consulte la [especificación de VML](https://WWW.w3.org/TR/NOTE-VML#-toc416858402) .
 
 [![volver a la parte ](images/top.gif) superior Volver a la parte superior](#top)
 
@@ -169,7 +169,7 @@ strokecolor="red" strokeweight="2pt"/>
 
 
 
-Para obtener más información sobre este elemento, vea la [especificación de VML](https://WWW.w3.org/TR/NOTE-VML#-toc416858403) .
+Para obtener más información sobre este elemento, consulte la [especificación de VML](https://WWW.w3.org/TR/NOTE-VML#-toc416858403) .
 
 [![volver a la parte ](images/top.gif) superior Volver a la parte superior](#top)
 
@@ -192,7 +192,7 @@ to="300pt,0" strokecolor="red" strokeweight="3pt"/>
 
 
 
-Para obtener más información sobre este elemento, vea la [especificación de VML](https://WWW.w3.org/TR/NOTE-VML#-toc416858404) .
+Para obtener más información sobre este elemento, consulte la [especificación de VML](https://WWW.w3.org/TR/NOTE-VML#-toc416858404) .
 
 [![volver a la parte ](images/top.gif) superior Volver a la parte superior](#top)
 
@@ -249,7 +249,7 @@ Para obtener más información sobre este elemento, vea la [especificación de V
 
 ## <a name="summary"></a>Resumen
 
-Puede usar elementos predefinidos de VML como , , , , , , y para dibujar gráficos fácilmente en una página web y, a continuación, personalizar esos gráficos simplemente cambiando sus atributos `<oval>` `<line>` de `<polyline>` `<curve>` `<rect>` `<roundrect>` `<arc>` propiedad.
+Puede usar elementos predefinidos de VML como , , , , , , y para dibujar fácilmente gráficos en una página web y, a continuación, personalizar esos gráficos simplemente cambiando sus atributos `<oval>` `<line>` de `<polyline>` `<curve>` `<rect>` `<roundrect>` `<arc>` propiedad.
 
  
 

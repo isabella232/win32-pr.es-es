@@ -1,9 +1,9 @@
 ---
-title: Mensaje de RB_GETROWHEIGHT (commctrl. h)
+title: RB_GETROWHEIGHT mensaje (Commctrl.h)
 description: Recupera el alto de una fila especificada en un control rebar.
 ms.assetid: 1ff6a32e-b344-4dbc-b4a4-fb13f11a9d8c
 keywords:
-- RB_GETROWHEIGHT controles de mensajes de Windows
+- RB_GETROWHEIGHT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27ce137eef6168d95abfe493a6f22ab66d58460b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3ac650fb50f1b6594964ec0bf10d23a8c8b6b75ff82e14af44bb63e2c9cf8af8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118409419"
 ---
-# <a name="rb_getrowheight-message"></a>Mensaje de GETROWHEIGHT de RB \_
+# <a name="rb_getrowheight-message"></a>Mensaje \_ GETROWHEIGHT de RB
 
 Recupera el alto de una fila especificada en un control rebar.
 
@@ -41,21 +41,21 @@ Recupera el alto de una fila especificada en un control rebar.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **uint** que representa el alto de la fila, en píxeles.
+Devuelve un **valor UINT** que representa el alto de la fila, en píxeles.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para recuperar el número de filas de un control rebar, utilice el mensaje de [**\_ ingetrowcount de RB**](rb-getrowcount.md) .
+Para recuperar el número de filas de un control rebar, use el [**mensaje \_ GETROWCOUNT de RB.**](rb-getrowcount.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

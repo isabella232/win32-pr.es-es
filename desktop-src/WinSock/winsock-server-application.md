@@ -22,7 +22,7 @@ En las secciones siguientes se describen los pasos restantes para crear una apli
 -   [Recepción y envío de datos en el servidor](receiving-and-sending-data-on-the-server.md)
 -   [Desconectar el servidor](disconnecting-the-server.md)
 
-## <a name="complete-server-source-code"></a>Completar código fuente del servidor
+## <a name="complete-server-source-code"></a>Código fuente completo del servidor
 
 -   [Completar código de servidor](complete-server-code.md)
 

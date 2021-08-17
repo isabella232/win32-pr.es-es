@@ -3,26 +3,26 @@ title: Mensajes de datos de usuario
 description: Mensajes de datos de usuario
 ms.assetid: 3670f113-e951-4fe7-83c5-28388b35b148
 keywords:
-- Mensaje WM_CAP_GET_USER_DATA
-- Mensaje WM_CAP_SET_USER_DATA
-- capGetUserData (macro)
-- capSetUserData (macro)
+- WM_CAP_GET_USER_DATA mensaje
+- WM_CAP_SET_USER_DATA mensaje
+- CapGetUserData macro
+- CapSetUserData macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3305dbb836a5c384707310b919380ebdf7b850f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e194a4efc14bb60e06410086219a944741ba042e1b9fb024456a29c6abde01c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118370845"
 ---
 # <a name="user-data-messages"></a>Mensajes de datos de usuario
 
-Puede asociar datos a una ventana de captura mediante el uso de los mensajes [](/windows/desktop/api/Vfw/nf-vfw-capsetuserdata) de [](/windows/desktop/api/Vfw/nf-vfw-capgetuserdata) [**\_ \_ \_ \_ datos**](wm-cap-set-user-data.md) de usuario Cap de [**WM \_ \_ obtener \_ \_ datos de usuario**](wm-cap-get-user-data.md) y límite de WM establecido (o las macros capGetUserData y capSetUserData). Puede recuperar un valor de datos **Long** mediante el mensaje de datos de \_ usuario Cap get de WM \_ \_ \_ y establecer un valor de datos **largo** mediante el mensaje de datos de usuario del conjunto de límites de WM \_ \_ \_ \_ .
+Puede asociar datos a una ventana de captura mediante los mensajes [**\_ GET USER \_ \_ \_ DATA**](wm-cap-get-user-data.md) de WM CAP y [**WM CAP SET USER \_ \_ \_ \_ DATA**](wm-cap-set-user-data.md) (o las macros [**capGetUserData**](/windows/desktop/api/Vfw/nf-vfw-capgetuserdata) y [**capSetUserData).**](/windows/desktop/api/Vfw/nf-vfw-capsetuserdata) Puede recuperar un valor de datos **LONG** mediante el mensaje GET USER DATA de WM CAP y establecer un valor de datos LONG mediante el mensaje \_ WM CAP SET USER \_ \_ \_  \_ \_ \_ \_ DATA.
 
- 
+ 
 
- 
+ 
 
 
 

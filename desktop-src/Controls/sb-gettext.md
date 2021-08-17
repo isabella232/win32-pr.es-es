@@ -1,9 +1,9 @@
 ---
-title: Mensaje de SB_GETTEXT (commctrl. h)
+title: SB_GETTEXT mensaje (Commctrl.h)
 description: Recupera el texto de la parte especificada de una ventana de estado.
 ms.assetid: 95bef9ff-04e5-431e-bc79-06d8498fcab0
 keywords:
-- SB_GETTEXT controles de mensajes de Windows
+- SB_GETTEXT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e90b132c3f934188aea36afd86d53ab8f75bdadb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 05967d41d86ad039e39259c8179a9e768e8fbbf76e5112b531048ac0ed7b56bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118168740"
 ---
-# <a name="sb_gettext-message"></a>\_Mensaje GETTEXT de SB
+# <a name="sb_gettext-message"></a>Mensaje \_ SB GETTEXT
 
 Recupera el texto de la parte especificada de una ventana de estado.
 
@@ -34,43 +34,43 @@ Recupera el texto de la parte especificada de una ventana de estado.
 *wParam* 
 </dt> <dd>
 
-Índice de base cero del elemento del que se va a recuperar el texto.
+Índice de base cero del elemento del que se va a recuperar texto.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero al búfer que recibe el texto como una cadena terminada en NULL. Use el [**mensaje \_ GETTEXTLENGTH de SB**](sb-gettextlength.md) para determinar el tamaño requerido del búfer.
+Puntero al búfer que recibe el texto como una cadena terminada en NULL. Use el [**mensaje SB \_ GETTEXTLENGTH**](sb-gettextlength.md) para determinar el tamaño necesario del búfer.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 32 bits que consta de valores de 2 16 bits. La palabra baja especifica la longitud, en caracteres, del texto. La palabra alta especifica el tipo de operación que se usa para dibujar el texto. El tipo puede ser uno de los valores siguientes.
+Devuelve un valor de 32 bits que consta de dos valores de 16 bits. La palabra baja especifica la longitud, en caracteres, del texto. La palabra alta especifica el tipo de operación que se usa para dibujar el texto. El tipo puede ser uno de los siguientes valores.
 
 
 
 | Código devuelto                                                                                    | Descripción                                                                               |
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| <dl> <dt>**0,1**</dt> </dl>               | El texto se dibuja con un borde para que aparezca inferior al plano de la ventana.<br/>  |
-| <dl> <dt>**SBT \_ NOborders**</dt> </dl>  | El texto se dibuja sin bordes.<br/>                                             |
-| <dl> <dt>**SBT \_ emergente**</dt> </dl>     | El texto se dibuja con un borde para que aparezca más arriba que el plano de la ventana.<br/> |
-| <dl> <dt>**SBT \_ RTLREADING**</dt> </dl> | El texto se muestra en la dirección opuesta del texto de la ventana primaria.<br/>  |
+| <dl> <dt>**0**</dt> </dl>               | El texto se dibuja con un borde para que aparezca más bajo que el plano de la ventana.<br/>  |
+| <dl> <dt>**SBT \_ NOBORDERS**</dt> </dl>  | El texto se dibuja sin bordes.<br/>                                             |
+| <dl> <dt>**SBT \_ POPOUT**</dt> </dl>     | El texto se dibuja con un borde que aparece más arriba que el plano de la ventana.<br/> |
+| <dl> <dt>**SBT \_ RTLREADING**</dt> </dl> | El texto se muestra en la dirección opuesta del texto en la ventana primaria.<br/>  |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**Advertencia de seguridad:** El uso incorrecto de este mensaje puede poner en peligro la seguridad del programa. Este mensaje no proporciona una manera de conocer el tamaño del búfer. Si usa este mensaje, llame primero a [**SB \_ GETTEXTLENGTH**](sb-gettextlength.md) para obtener el número de caracteres necesarios y, a continuación, llame al mensaje para recuperar la cadena. Si espera antes de llamar a la **\_ GETTEXT de SB** , el texto podría cambiar, invalidando de este modo el valor devuelto de **SB \_ GETTEXTLENGTH**. Debe revisar las [consideraciones de seguridad: controles de Microsoft Windows](sec-comctls.md) antes de continuar.
+**Advertencia de seguridad:** El uso incorrecto de este mensaje puede poner en peligro la seguridad del programa. Este mensaje no proporciona una manera de conocer el tamaño del búfer. Si usa este mensaje, llame primero a [**SB \_ GETTEXTLENGTH**](sb-gettextlength.md) para obtener el número de caracteres necesarios y, a continuación, llame al mensaje para recuperar la cadena. Si espera antes de llamar a **SB \_ GETTEXT,** el texto podría cambiar, invalidando así el valor devuelto **de SB \_ GETTEXTLENGTH**. Debe revisar consideraciones [de seguridad: Microsoft Windows antes](sec-comctls.md) de continuar.
 
-Este mensaje devuelve un máximo de 65.535 caracteres. Si la cadena de texto es más larga, se trunca.
+Este mensaje devuelve un máximo de 65 535 caracteres. Si la cadena de texto es mayor que eso, se trunca.
 
-Si el texto tiene el \_ tipo de dibujo OWNERDRAW SBT, este mensaje devuelve el valor de 32 bits asociado al texto en lugar de la longitud y el tipo de operación.
+Si el texto tiene el tipo de dibujo SBT OWNERDRAW, este mensaje devuelve el valor de 32 bits asociado al texto en lugar de la longitud y el tipo \_ de operación.
 
-Texto normal de la pantalla de Windows de izquierda a derecha (LTR). Las ventanas se pueden *reflejar* para mostrar idiomas como el hebreo o el árabe que se leen de derecha a izquierda (RTL). Si \_ se establece SBT RTLREADING, la cadena *lParam* lee en la dirección opuesta del texto de la ventana primaria.
+Las ventanas normales muestran texto de izquierda a derecha (LTR). Windows se puede reflejar *para* mostrar idiomas como hebreo o árabe que leen de derecha a izquierda (RTL). Si se establece SBT \_ RTLREADING, la cadena *lParam* lee en la dirección opuesta del texto de la ventana primaria.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,10 +78,10 @@ Texto normal de la pantalla de Windows de izquierda a derecha (LTR). Las ventana
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
-| Nombres Unicode y ANSI<br/>   | **SB \_ GETTEXTW** (Unicode) y **\_ gettext gettexta** (ANSI)<br/>                     |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Nombres Unicode y ANSI<br/>   | **SB \_ GETTEXTW** (Unicode) y **SB \_ GETTEXTA** (ANSI)<br/>                     |
 
 
 
@@ -89,7 +89,7 @@ Texto normal de la pantalla de Windows de izquierda a derecha (LTR). Las ventana
 
 <dl> <dt>
 
-[**SETTEXT de SB \_**](sb-settext.md)
+[**SB \_ SETTEXT**](sb-settext.md)
 </dt> </dl>
 
  

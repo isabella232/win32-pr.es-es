@@ -1,7 +1,7 @@
 ---
-description: La función GetSpoolFileHandle recupera un identificador para el archivo de cola asociado al trabajo enviado actualmente por la aplicación.
+description: La función GetSpoolFileHandle recupera un identificador para el archivo spool asociado al trabajo enviado actualmente por la aplicación.
 ms.assetid: df6f28b3-66a6-4fb7-bdde-40cd7d934c5f
-title: Función GetSpoolFileHandle (winspool. h)
+title: Función GetSpoolFileHandle (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - WinSpool.drv
-ms.openlocfilehash: 9ac4dd4b0db9a59cc0140872ff04f89adaf8b6c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10b0b36333e51dfb5c831f6c74e00c6930ccbb9d1ce31646fed0d689abc7f639
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117686698"
 ---
-# <a name="getspoolfilehandle-function"></a>GetSpoolFileHandle función)
+# <a name="getspoolfilehandle-function"></a>Función GetSpoolFileHandle
 
-La función **GetSpoolFileHandle** recupera un identificador para el archivo de cola asociado al trabajo enviado actualmente por la aplicación.
+La **función GetSpoolFileHandle** recupera un identificador para el archivo spool asociado al trabajo enviado actualmente por la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,26 +41,26 @@ HANDLE GetSpoolFileHandle(
 
 <dl> <dt>
 
-*hPrinter* \[ de\]
+*hPrinter* \[ En\]
 </dt> <dd>
 
-Identificador de la impresora a la que se envió el trabajo. Debe ser el mismo identificador que se usó para enviar el trabajo. (Use la función [**OpenPrinter**](openprinter.md) o [**AddPrinter (**](addprinter.md) para recuperar un identificador de impresora).
+Identificador de la impresora a la que se envió el trabajo. Debe ser el mismo identificador que se usó para enviar el trabajo. (Use la [**función OpenPrinter**](openprinter.md) [**o AddPrinter**](addprinter.md) para recuperar un identificador de impresora).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve un identificador para el archivo de cola.
+Si la función se realiza correctamente, devuelve un identificador al archivo spool.
 
-Si se produce un error en la función, devuelve un **\_ \_ valor de identificador no válido**.
+Si se produce un error en la función, devuelve **INVALID \_ HANDLE \_ VALUE**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Con el identificador del archivo de cola de impresión, la aplicación puede escribir en el archivo de cola de impresión con llamadas a [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile) seguido de [**CommitSpoolData**](commitspooldata.md).
+Con el identificador del archivo spool, la aplicación puede escribir en el archivo spool con llamadas a [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile) seguidas de [**CommitSpoolData**](commitspooldata.md).
 
-La aplicación no debe llamar a [**ClosePrinter**](closeprinter.md) en *hPrinter* hasta que haya tenido acceso por última vez al archivo de cola de impresión. Después, debe llamar a [**CloseSpoolFileHandle**](closespoolfilehandle.md) seguido de **ClosePrinter**. Los intentos de obtener acceso al identificador de la cola de impresión una vez cerrado el *hPrinter* original producirán un error aunque no se haya cerrado el propio identificador de archivo. **CloseSpoolFileHandle** producirá un error si se llama primero a **ClosePrinter** .
+La aplicación no debe llamar a [**ClosePrinter**](closeprinter.md) en *hPrinter* hasta que haya accedido al archivo spool por última vez. A continuación, [**debe llamar a CloseSpoolFileHandle**](closespoolfilehandle.md) seguido de **ClosePrinter**. Los intentos de acceder al identificador de archivo de cola después de que se haya cerrado *el hPrinter* original producirán un error incluso si el propio identificador de archivo no se ha cerrado. **CloseSpoolFileHandle producirá** un error si se llama primero a **ClosePrinter.**
 
-Esta función producirá un error si se llama antes de que el trabajo de impresión haya terminado de poner en cola.
+Se producirá un error en esta función si se llama a antes de que el trabajo de impresión haya terminado de crear la cola.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,11 +68,11 @@ Esta función producirá un error si se llama antes de que el trabajo de impresi
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| Archivo DLL<br/>                      | <dl> <dt>WinSpool. drv</dt> </dl>                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                      |
+| Header<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| Archivo DLL<br/>                      | <dl> <dt>WinSpool.drv</dt> </dl>                   |
 | Nombres Unicode y ANSI<br/>   | **GetSpoolFileHandleW** (Unicode) y **GetSpoolFileHandleA** (ANSI)<br/>                           |
 
 
@@ -90,7 +90,7 @@ Esta función producirá un error si se llama antes de que el trabajo de impresi
 [**OpenPrinter**](openprinter.md)
 </dt> <dt>
 
-[**AddPrinter (**](addprinter.md)
+[**Addprinter**](addprinter.md)
 </dt> <dt>
 
 [**ClosePrinter**](closeprinter.md)

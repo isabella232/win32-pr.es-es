@@ -1,47 +1,47 @@
 ---
-description: Monitor de red usa la función de exportación de DllMain para identificar la existencia del analizador y liberar recursos que Monitor de red utiliza para almacenar información sobre el analizador.
+description: Monitor de red utiliza la función de exportación DllMain para identificar la existencia del analizador y liberar recursos que Monitor de red usa para almacenar información sobre el analizador.
 ms.assetid: 1741a12c-3645-4e83-b97f-37e67218c5eb
-title: Implementar el analizador de DllMain
+title: Implementación del analizador de DllMain
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55dd1ab7432920ac7496643c7c6f9aa0692daf56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb79ab862c64d8d99359965fec6c0d1ca8bf3cf9e35fdf58f1cbc063d5c3e6c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118132944"
 ---
-# <a name="implementing-dllmain-parser"></a>Implementar el analizador de DllMain
+# <a name="implementing-dllmain-parser"></a>Implementación del analizador de DllMain
 
-Monitor de red usa la función de exportación de **DllMain** para identificar la existencia del analizador y liberar recursos que monitor de red utiliza para almacenar información sobre el analizador.
+Monitor de red utiliza la función de exportación **DllMain** para identificar la existencia del analizador y liberar recursos que Monitor de red usa para almacenar información sobre el analizador.
 
-Cuando Monitor de red llama a **DllMain** por primera vez, el archivo DLL del analizador llama a [**CreateProtocol**](createprotocol.md) para hacer lo siguiente:
+Cuando Monitor de red a **DllMain** por primera vez, el archivo DLL del analizador llama a [**CreateProtocol**](createprotocol.md) para hacer lo siguiente:
 
 -   Especifique el protocolo que detecta el analizador.
--   Proporcione puntos de entrada para las funciones de exportación de analizador restantes que Monitor de red llamadas.
+-   Proporcione puntos de entrada para las funciones de exportación del analizador restantes que Monitor de red llamadas.
 
-Cuando Monitor de red llama a **DllMain** por última vez, **DllMain** llama a [**DestroyProtocol**](destroyprotocol.md) para liberar todos los recursos que monitor de red utiliza para almacenar información sobre el analizador.
+Cuando Monitor de red **a DllMain** por última vez, **DllMain** llama a [**DestroyProtocol**](destroyprotocol.md) para liberar todos los recursos que Monitor de red usa para almacenar información sobre el analizador.
 
-En el procedimiento siguiente se identifican los pasos necesarios para implementar **DllMain**.
+El procedimiento siguiente identifica los pasos necesarios para implementar **DllMain**.
 
 **Para implementar DllMain**
 
-1.  Especifique la estructura [**ENTRYPOINTS**](entrypoints.md) para la función [**CreateProtocol**](createprotocol.md) y la variable de conexión global. La variable Attach se usa para realizar el seguimiento del número de instancias de protocolo que se están ejecutando.
-2.  Observe el valor del parámetro de *comando* que establece el sistema operativo.
+1.  Especifique la [**estructura ENTRYPOINTS**](entrypoints.md) para la [**función CreateProtocol**](createprotocol.md) y la variable global Attach. La variable Attach se usa para realizar un seguimiento del número de instancias de protocolo que se están ejecutando.
+2.  Mire el valor del parámetro *Command* que establece el sistema operativo.
 
-    Si el parámetro de *comando* se establece en la Asociación de proceso de dll \_ y Attach \_ es 0, llame a [**CreateProtocol**](createprotocol.md) para proporcionar el nombre del protocolo y los puntos de entrada para las siguientes funciones de exportación.
+    Si el *parámetro Command* se establece en DLL PROCESS ATTACH y Attach es 0, llame a \_ \_ [**CreateProtocol**](createprotocol.md) para proporcionar el nombre de protocolo y los puntos de entrada para las siguientes funciones de exportación.
 
     -   **Registro**
     -   **Eliminar registro**
     -   **RecognizeFrame**
     -   **AttachProperties**
-    -   **FormatProperties** (solo es necesario si monitor de red mostrarán las propiedades del Protocolo).
+    -   **FormatProperties** (solo es necesario si Monitor de red mostrará las propiedades del protocolo).
 
-    Si el parámetro de *comando* se establece en \_ la \_ desasociación de proceso de dll y Attach es 0, llame a [**DestroyProtocol**](destroyprotocol.md) con el identificador de instancia que devuelve [**CreateProtocol**](createprotocol.md) .
+    Si el *parámetro Command* se establece en DLL PROCESS DETACH y Attach es 0, llame a DestroyProtocol mediante el identificador de instancia que \_ devuelve \_ [**CreateProtocol.**](createprotocol.md) [](destroyprotocol.md)
 
-3.  Devuelve **true** porque la función del analizador **DllMain** siempre debe devolver **true**.
+3.  Devuelve **TRUE** porque la función del analizador **DllMain** siempre debe devolver **TRUE**.
 
-La siguiente es una implementación básica de **DllMain**. En el ejemplo de código se usa una instrucción Case para capturar valores del parámetro de *comando* con el fin de determinar si se debe llamar a [**CreateProtocol**](createprotocol.md) o [**DestroyProtocol**](destroyprotocol.md) .
+A continuación se muestra una implementación básica **de DllMain**. En el ejemplo de código se usa una instrucción case para capturar valores del parámetro *Command* para determinar si se debe llamar a [**CreateProtocol**](createprotocol.md) o [**DestroyProtocol.**](destroyprotocol.md)
 
 ``` syntax
 #include <windows.h>

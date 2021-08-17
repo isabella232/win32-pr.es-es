@@ -1,6 +1,6 @@
 ---
-title: API del complemento WinRM
-description: La interfaz de programación de aplicaciones (API) del complemento WinRM proporciona funcionalidad que permite a un usuario escribir complementos mediante la implementación de determinadas API para operaciones y URI de recursos admitidos.
+title: API de complemento winRM
+description: La interfaz de programación de aplicaciones (API) del complemento WinRM proporciona funcionalidad que permite a un usuario escribir complementos mediante la implementación de determinadas API para operaciones y URI de recursos compatibles.
 ms.assetid: d3e103c1-221b-441b-8bcb-883e3f2a4c1a
 ms.tgt_platform: multiple
 ms.topic: article
@@ -12,11 +12,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117742783"
 ---
-# <a name="winrm-plug-in-api"></a>API del complemento WinRM
+# <a name="winrm-plug-in-api"></a>API de complemento winRM
 
-Windows Los complementos de administración remota son bibliotecas nativas de vínculos dinámicos (DLL) que se unen y amplían la funcionalidad de WinRM. La interfaz de programación de aplicaciones (API) del complemento WinRM proporciona funcionalidad que permite [](windows-remote-management-glossary.md) a un usuario escribir complementos mediante la implementación de determinadas API para operaciones y URI de recursos admitidos. Una vez configurados los complementos para el servicio WinRM o Internet Information Services (IIS), se cargan en el host de WinRM o en el host de IIS, respectivamente. Las solicitudes remotas se enrutan a estos puntos de entrada del complemento para llevar a cabo operaciones.
+Windows Los complementos de administración remota son bibliotecas nativas de vínculos dinámicos (DLL) que se conecta y amplían la funcionalidad de WinRM. La interfaz de programación de aplicaciones (API) del complemento WinRM proporciona funcionalidad que permite [](windows-remote-management-glossary.md) a un usuario escribir complementos mediante la implementación de determinadas API para operaciones y URI de recursos compatibles. Una vez configurados los complementos para el servicio WinRM o Internet Information Services (IIS), se cargan en el host de WinRM o en el host de IIS, respectivamente. Las solicitudes remotas se enrutan a estos puntos de entrada de complemento para llevar a cabo operaciones.
 
-La sección de referencia de la API del complemento WinRM contiene información detallada sobre los siguientes elementos de API:
+La sección referencia de la API del complemento WinRM contiene información detallada sobre los siguientes elementos de API:
 
 -   [Puntos de entrada del complemento de autorización](authorization-plug-in-entry-points.md)
 -   [Métodos de complemento de autorización](authorization-plug-in-methods.md)

@@ -1,41 +1,41 @@
 ---
-description: Especifica si un descodificador expone los tipos de salida IYUV/i420 (adecuados para la transcodificación) antes de otros formatos.
+description: Especifica si un descodificador expone tipos de salida IYUV/I420 (adecuados para la transcodificación) antes que otros formatos.
 ms.assetid: 8505CFA1-210A-4DA8-B92A-FCE62F0310E5
-title: MFT_DECODER_EXPOSE_OUTPUT_TYPES_IN_NATIVE_ORDER atributo (Mftransform. h)
+title: MFT_DECODER_EXPOSE_OUTPUT_TYPES_IN_NATIVE_ORDER atributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01ecf074fa0767552a48e3238374dbd02f077404
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46b91492054215aee5a63dbcf0adf300d74933a0859a2d71256e7e4352deba9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103812608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117872344"
 ---
-# <a name="mft_decoder_expose_output_types_in_native_order-attribute"></a>\_DEScodificador \_ de MFT \_ exponer \_ tipos \_ de salida en el \_ atributo de \_ orden nativo
+# <a name="mft_decoder_expose_output_types_in_native_order-attribute"></a>EL DESCODIFICADOR DE MFT \_ EXPONE LOS TIPOS DE SALIDA EN EL atributo NATIVE \_ \_ \_ \_ \_ \_ ORDER
 
-Especifica si un descodificador expone los tipos de salida IYUV/i420 (adecuados para la transcodificación) antes de otros formatos.
+Especifica si un descodificador expone tipos de salida IYUV/I420 (adecuados para la transcodificación) antes que otros formatos.
 
 ## <a name="data-type"></a>Tipo de datos
 
 **UINT32**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo es una sugerencia para que el descodificador organice su lista de tipos de salida en un orden determinado, en función del uso previsto, ya sea de reproducción o de transcodificación.
+Este atributo es una sugerencia para que el descodificador organice su lista de tipos de salida en un orden determinado, en función del uso previsto, ya sea reproducción o transcodificación.
 
-Para la mayoría de los formatos de codificación (H. 264, MPEG-2, WMV), los descodificadores de vídeo de Microsoft Media Foundation admiten varias salidas YUV comunes, como NV12, YV12, YUY2, IYUV y i420. El descodificador ofrece una lista ordenada de tipos de salida a través de su método [**IMFTransform:: GetOutputAvailableType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype) .
+Para la mayoría de los formatos de codificación (H.264, MPEG-2, WMV), los descodificadores de vídeo de Microsoft Media Foundation admiten varias salidas YUV comunes, como NV12, YV12, YUY2, IYUV e I420. El descodificador ofrece una lista ordenada de tipos de salida a través de [**su método IMFTransform::GetOutputAvailableType.**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype)
 
-Para la reproducción, NV12 es el formato más eficaz y ampliamente compatible. Por consiguiente, de forma predeterminada, los descodificadores suelen ofrecer NV12 como primer tipo de salida en la lista. Esto minimiza el tiempo necesario para resolver el tipo de medio al compilar una topología de reproducción. Para la transcodificación, sin embargo, IYUV o i420 son más eficaces para la CPU y suelen ser preferidas por los codificadores.
+Para la reproducción, NV12 es el formato más eficaz y ampliamente compatible. Por lo tanto, de forma predeterminada, los descodificadores suelen ofrecer NV12 como primer tipo de salida de la lista. Esto minimiza el tiempo necesario para resolver el tipo de medio al crear una topología de reproducción. Sin embargo, para la transcodificación, IYUV o I420 son más eficaces para la CPU y suelen ser preferidos por los codificadores.
 
-Si un descodificador admite este atributo, el atributo tiene el siguiente comportamiento:
+Si un descodificador admite este atributo, el atributo tiene el comportamiento siguiente:
 
--   Si el atributo tiene un valor distinto de cero, IYUV y i420 aparecen en primer lugar en la lista de tipos de medios de salida. Esta configuración es más eficaz para la transcodificación.
--   Si el atributo es cero, NV12 aparece en primer lugar en la lista de tipos de medios de salida. Esta configuración es la más eficaz para la reproducción y es el valor predeterminado.
+-   Si el atributo tiene un valor distinto de cero, IYUV e I420 aparecen primero en la lista de tipos de medios de salida. Esta configuración es más eficaz para la transcodificación.
+-   Si el atributo es cero, NV12 aparece primero en la lista de tipos de medios de salida. Esta configuración es más eficaz para la reproducción y es el valor predeterminado.
 
 Para establecer este atributo:
 
-1.  Llame a [**IMFTransform:: GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes) en el descodificador para obtener un puntero [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) .
-2.  Llame a [**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32) para agregar el atributo.
+1.  Llame [**a IMFTransform::GetAttributes en**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes) el descodificador para obtener un puntero [**DEATTRIBUTEAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
+2.  Llame [**aATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32) para agregar el atributo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,9 +43,9 @@ Para establecer este atributo:
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                        |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
-| Encabezado<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -53,7 +53,7 @@ Para establecer este atributo:
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

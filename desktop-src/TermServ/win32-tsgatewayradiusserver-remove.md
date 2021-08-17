@@ -1,12 +1,12 @@
 ---
-title: Método Remove de la clase Win32_TSGatewayRADIUSServer
-description: Quita el servidor de Servicio de autenticación remota telefónica de usuario (RADIUS) actual.
+title: Método Remove de la Win32_TSGatewayRADIUSServer clase
+description: Quita el servidor Servicio de autenticación remota telefónica de usuario (RADIUS) actual.
 ms.assetid: 915f6d38-ba6a-4994-8bb9-bfddb9aa6ff8
 ms.tgt_platform: multiple
 keywords:
 - Quitar método Servicios de Escritorio remoto
-- Quitar Servicios de Escritorio remoto de método, Win32_TSGatewayRADIUSServer interfaz
-- Win32_TSGatewayRADIUSServer Servicios de Escritorio remoto de interfaz, Remove (método)
+- Remove method Servicios de Escritorio remoto , Win32_TSGatewayRADIUSServer interface
+- Win32_TSGatewayRADIUSServer interfaz Servicios de Escritorio remoto , Remove (método)
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a91fc4a3ba8bf638dcffd76e3bf3517795674fa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 446a9ea6a9f2bdb4fada3fed38952988c0284b5bc4055503784c232255586407
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118126579"
 ---
-# <a name="remove-method-of-the-win32_tsgatewayradiusserver-class"></a>Método Remove de la \_ clase Win32 TSGatewayRADIUSServer
+# <a name="remove-method-of-the-win32_tsgatewayradiusserver-class"></a>Método Remove de la clase \_ TSGatewayRADIUSServer de Win32
 
-Quita el servidor de Servicio de autenticación remota telefónica de usuario (RADIUS) actual.
+Quita el servidor Servicio de autenticación remota telefónica de usuario (RADIUS) actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,13 +43,13 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 

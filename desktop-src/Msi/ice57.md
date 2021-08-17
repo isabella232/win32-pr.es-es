@@ -1,5 +1,5 @@
 ---
-description: ICE57 valida que los componentes individuales no mezclan datos por equipo y por usuario. Esta acción personalizada de ICE comprueba las entradas del Registro, los archivos, las rutas de acceso de clave de directorio y los accesos directos no anunciados.
+description: ICE57 valida que los componentes individuales no mezclan datos por equipo y por usuario. Esta acción personalizada de ICE comprueba las entradas del Registro, los archivos, las rutas de acceso de las claves de directorio y los accesos directos no anunciados.
 ms.assetid: 3c82efa7-9cf3-4bcd-8ec4-b81d1d7aa0a6
 title: ICE57
 ms.topic: article
@@ -13,15 +13,15 @@ ms.locfileid: "118635166"
 ---
 # <a name="ice57"></a>ICE57
 
-ICE57 valida que los componentes individuales no mezclan datos por equipo y por usuario. Esta acción personalizada de ICE comprueba las entradas del Registro, los archivos, las rutas de acceso de clave de directorio y los accesos directos no anunciados.
+ICE57 valida que los componentes individuales no mezclan datos por equipo y por usuario. Esta acción personalizada de ICE comprueba las entradas del Registro, los archivos, las rutas de acceso de las claves de directorio y los accesos directos no anunciados.
 
-La combinación de datos por usuario y por máquina en el mismo componente podría dar lugar solo a una instalación parcial del componente para algunos usuarios en un entorno de varios usuarios.
+La combinación de datos por usuario y por máquina en el mismo componente podría dar lugar solo a la instalación parcial del componente para algunos usuarios en un entorno de varios usuarios.
 
 Vea la [**propiedad ALLUSERS.**](allusers.md)
 
 ## <a name="result"></a>Resultado
 
-ICE57 envía un error si encuentra algún componente que contenga entradas del Registro por equipo y por usuario, archivos, rutas de acceso de clave de directorio o accesos directos no anunciados.
+ICE57 publica un error si encuentra algún componente que contenga entradas del Registro por equipo y por usuario, archivos, rutas de acceso de clave de directorio o accesos directos no anunciados.
 
 ## <a name="example"></a>Ejemplo
 
@@ -47,7 +47,7 @@ Component 'Component4' has both per-user data and
 
 | Componente  | Directorio  | Atributos | KeyPath |
 |------------|------------|------------|---------|
-| Componente1 | DirectorioA | 0          | ArchivoA   |
+| Componente1 | DirectorioA | 0          | Archivo A   |
 | Componente 2 | DirectorioA | 4          | RegKeyB |
 | Componente 3 | DirectorioA | 0          | FileC   |
 | Componente 4 | DirectorioA | 4          | RegKeyD |
@@ -77,7 +77,7 @@ Component 'Component4' has both per-user data and
 
 | Archivo  | Componente\_ |
 |-------|-------------|
-| ArchivoA | Componente1  |
+| Archivo A | Componente1  |
 | FileB | Componente 2  |
 | FileC | Componente 3  |
 | Presentado | Componente 4  |
@@ -99,7 +99,7 @@ Component 'Component4' has both per-user data and
 
  
 
-Para corregir los errores, reorganize la aplicación de forma que cada componente contenga solo recursos por usuario o por equipo, y no ambos.
+Para corregir los errores, reorganice la aplicación de forma que cada componente contenga solo recursos por usuario o por equipo, y no ambos.
 
 El primer mensaje de error se publica porque Component1 contiene FileA (por equipo) y la clave del Registro HKCU RegKeyA (por usuario).
 

@@ -51,7 +51,7 @@ Especifica la ubicación, el [*almacén de certificados*](glossary.md)y el asunt
 
 El valor devuelto es **S \_ OK on** success o un valor de error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La cadena especificada en el parámetro *ClientCertificate* consta de la ubicación del certificado, el almacén de certificados y el nombre del sujeto delimitados por barras diagonales inversas. Para obtener más información sobre los componentes de la cadena de certificado, vea [Certificados de cliente](ssl-in-winhttp.md).
 
@@ -68,7 +68,7 @@ Microsoft Windows HTTP Services (WinHTTP) no proporciona certificados de cliente
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de scripting siguiente se muestra cómo seleccionar un certificado de cliente para enviar con una solicitud. Se elige un certificado con el asunto "Mi Middle-Tier certificado" del almacén de certificados "Personal" en el Registro en **HKEY \_ LOCAL \_ MACHINE**. Dado que este ejemplo de código es específico de Microsoft JScript, que usa la barra diagonal inversa como carácter de escape, se necesitan dos barras diagonales inversas adyacentes para delimitar los componentes de la cadena de certificado.
+En el ejemplo de scripting siguiente se muestra cómo seleccionar un certificado de cliente para enviar con una solicitud. Se elige un certificado con el asunto "Mi certificado Middle-Tier" del almacén de certificados "Personal" en el Registro en **HKEY \_ LOCAL \_ MACHINE**. Dado que este ejemplo de código es específico de Microsoft JScript, que usa la barra diagonal inversa como carácter de escape, se requieren dos barras diagonales inversas adyacentes para delimitar los componentes de la cadena de certificado.
 
 
 ```JScript
@@ -92,7 +92,7 @@ HttpReq.Send();
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>            |
 | Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
@@ -103,7 +103,7 @@ HttpReq.Send();
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

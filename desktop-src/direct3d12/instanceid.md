@@ -1,5 +1,5 @@
 ---
-description: Identificador proporcionado por el usuario para la instancia en la instancia de la estructura de aceleración de nivel inferior dentro de la estructura de nivel superior.
+description: Identificador proporcionado por el usuario para la instancia de en la instancia de la estructura de aceleración de nivel inferior dentro de la estructura de nivel superior.
 ms.assetid: ''
 title: InstanceId
 ms.localizationpriority: low
@@ -21,7 +21,7 @@ ms.locfileid: "118528317"
 ---
 # <a name="instanceid"></a>InstanceId
 
-Identificador proporcionado por el usuario para la instancia en la instancia de la estructura de aceleración de nivel inferior dentro de la estructura de nivel superior.
+Identificador proporcionado por el usuario para la instancia de en la instancia de la estructura de aceleración de nivel inferior dentro de la estructura de nivel superior.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,7 +32,7 @@ uint InstanceID();
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Se puede llamar a esta función desde los siguientes tipos de sombreador de raytracción:
 
@@ -46,7 +46,7 @@ Se puede llamar a esta función desde los siguientes tipos de sombreador de rayt
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

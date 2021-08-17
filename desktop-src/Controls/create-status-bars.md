@@ -4,40 +4,40 @@ description: Puede crear una barra de estado mediante la función CreateStatusWi
 ms.assetid: 4ED4BFD3-904D-4198-8152-5DD13CA7C189
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c133d7c7e15e5f43d198f21cadff54bcb4be14c2
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: e7075c8d8896d59a5711d5ee80be4af90948ee4ee99a441fbbf1140cd7452c4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104078419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118413193"
 ---
 # <a name="how-to-create-status-bars"></a>Cómo crear barras de estado
 
-Puede crear una barra de estado mediante la función [**CreateStatusWindow**](/windows/desktop/api/Commctrl/nf-commctrl-createstatuswindowa) o mediante la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y especificando la clase de ventana [**STATUSCLASSNAME**](common-control-window-classes.md) .
+Puede crear una barra de estado mediante la función [**CreateStatusWindow**](/windows/desktop/api/Commctrl/nf-commctrl-createstatuswindowa) o mediante la [**función CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y especificando la clase de ventana [**STATUSCLASSNAME.**](common-control-window-classes.md)
 
-Después de crear la barra de estado, puede dividirla en elementos, establecer el texto de cada parte y controlar la apariencia de la ventana mediante mensajes de la barra de estado.
+Después de crear la barra de estado, puede dividirla en partes, establecer el texto de cada parte y controlar la apariencia de la ventana mediante mensajes de barra de estado.
 
 > [!Note]  
-> Para asegurarse de que se carga el archivo DLL de control común, use primero la función [**InitCommonControls**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrols) .
+> Para asegurarse de que se carga el archivo DLL de control común, use primero [**la función InitCommonControls.**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrols)
 
- 
+ 
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 ### <a name="create-a-status-bar"></a>Crear una barra de estado
 
-En el ejemplo siguiente se muestra cómo crear una barra de estado que tiene un control de tamaño y dividir la ventana en cuatro partes iguales basadas en el ancho del área cliente de la ventana primaria.
+En el ejemplo siguiente se muestra cómo crear una barra de estado que tenga un control de tamaño y dividir la ventana en cuatro partes iguales en función del ancho del área cliente de la ventana primaria.
 
 
 ```C++
@@ -112,9 +112,9 @@ HWND DoCreateStatusBar(HWND hwndParent, int idStatus, HINSTANCE
 [Usar barras de estado](using-status-bars.md)
 </dt> <dt>
 
-[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

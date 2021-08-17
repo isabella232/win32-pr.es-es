@@ -1,19 +1,19 @@
 ---
-description: Una o dos propiedades que se van a mostrar en la sección de título del panel de vista previa.
+description: Una o dos propiedades que se mostrarán en la sección de título del panel de vista previa.
 ms.assetid: f5ba6fb6-d3d7-4825-8a82-d767147103e7
-title: System. proplist. PreviewTitle
+title: System.PropList.PreviewTitle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 307f425d02383f07261d69e6328e44b017c557aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 399632707ab414ad07fafd37473cc15bc4e4f5236ef843f918c9bc8a4fb56b45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105648495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118465209"
 ---
-# <a name="systemproplistpreviewtitle"></a>System. proplist. PreviewTitle
+# <a name="systemproplistpreviewtitle"></a>System.PropList.PreviewTitle
 
-Una o dos propiedades que se van a mostrar en la sección de título del panel de vista previa. La segunda propiedad opcional se muestra como un subtítulo. Regístrese en el regvalue de "PreviewTitle".
+Una o dos propiedades que se mostrarán en la sección de título del panel de vista previa. La segunda propiedad opcional se muestra como subtítulo. Regístrese en el valor reg de "PreviewTitle".
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

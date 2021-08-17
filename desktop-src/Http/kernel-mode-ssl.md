@@ -1,61 +1,61 @@
 ---
-title: SSL de modo kernel
-description: SSL de modo kernel
+title: Modo kernel SSL
+description: Modo kernel SSL
 ms.assetid: ada82704-cb7d-4e98-8c87-76c7bfbd098b
 keywords:
-- SSL de modo kernel
+- Modo kernel SSL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 737ac7c6c25bac6e7b66d91aa967fc6fa550459b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3c9dcfeb87b1a98539d7bd6a3b8b82dcfd5ee41fc9ad4c4c306f4c399aebd18a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393923"
 ---
-# <a name="kernel-mode-ssl"></a>SSL de modo kernel
+# <a name="kernel-mode-ssl"></a>Modo kernel SSL
 
-SSL de modo kernel se presentó en Windows Server 2003 con Service Pack 1 (SP1) con compatibilidad limitada. En el caso de los equipos que ejecutan Windows Server 2003 con SP1, debe establecerse una clave del registro para habilitar SSL de kernel. En el caso de los equipos que ejecutan Windows Server 2008 y Windows Vista, se proporciona compatibilidad total con el modo kernel para SSL.
+Ssl en modo kernel se introdujo en Windows Server 2003 con Service Pack 1 (SP1) con compatibilidad limitada. Para los equipos que se ejecutan Windows Server 2003 con SP1, se debe establecer una clave del Registro para habilitar SSL del kernel. En el caso de los equipos Windows Server 2008 y Windows Vista, se proporciona compatibilidad completa del modo kernel con SSL.
 
-En las secciones siguientes se describe la compatibilidad con SSL de modo kernel:
+En las secciones siguientes se describe la compatibilidad con SSL en modo kernel:
 
--   Modos de kernel SSL en Windows Server 2003 con SP1
--   SSL en modo kernel en Windows Server 2008 y Windows Vista
+-   Kernel Modes SSL in Windows Server 2003 with SP1
+-   Modo kernel SSL en Windows Server 2008 y Windows Vista
 
-## <a name="kernel-modes-ssl-in-windows-server-2003-with-sp1"></a>Modos de kernel SSL en Windows Server 2003 con SP1
+## <a name="kernel-modes-ssl-in-windows-server-2003-with-sp1"></a>Kernel Modes SSL in Windows Server 2003 with SP1
 
-En Windows Server 2003 con SP1, la API de servidor HTTP ofrece la opción de ejecutar la seguridad SSL en modo kernel (el valor predeterminado es SSL de modo usuario). La característica de modo kernel mejora el rendimiento de SSL moviendo las operaciones de cifrado y descifrado al kernel, con lo que se reduce el número de transiciones entre el modo kernel y el modo de usuario.
+En Windows Server 2003 con SP1, la API del servidor HTTP proporciona la opción de ejecutar la seguridad SSL en modo kernel (ssl en modo de usuario es el valor predeterminado). La característica de modo kernel mejora el rendimiento de SSL al mover las operaciones de cifrado y descifrado al kernel, lo que reduce el número de transiciones entre el modo kernel y el modo de usuario.
 
 Las siguientes características no se admiten cuando SSL se ejecuta en modo kernel:
 
 -   Certificados de cliente
--   Cifrados de RC2
--   Protocolo PCT 1,0
--   Los cambios en la configuración del certificado de servidor requieren un reinicio del servicio HTTP
+-   Cifrados RC2
+-   Protocolo PCT 1.0
+-   Los cambios de configuración del certificado de servidor requieren un reinicio del servicio HTTP
 -   Compatibilidad con cifrado masivo y descarga
 
 ## <a name="configuring-kernel-mode-ssl"></a>Configuración de SSL en modo kernel
 
-SSL de modo kernel se controla mediante el valor del registro **EnableKernelSSL** y se habilita estableciendo el valor en 1. Al habilitar SSL en modo kernel, se deshabilitará el modo de usuario SSL y es necesario reiniciar el servicio HTTP para que surta efecto. La clave del registro **EnableKernelSSL** se encuentra en:
+Ssl en modo kernel se controla mediante el valor del Registro **EnableKernelSSL** y se habilita estableciendo el valor en 1. La habilitación de SSL en modo kernel deshabilitará ssl en modo de usuario y requiere que el servicio HTTP se reinicie para que suba efecto. La clave del Registro **EnableKernelSSL** se encuentra en:
 
-**HKEY \_ \_** \\ Parámetros http **del sistema** de equipo local \\ **CurrentControlSet** \\ **Services** \\  \\  \\ **EnableKernelSSL**
+**HKEY \_ Parámetros \_** HTTP de Local Machine \\  \\ **System CurrentControlSet** \\ **Services** \\  \\  \\ **EnableKernelSSL**
 
-## <a name="kernel-mode-ssl-in-windows-server-2008-and-windows-vista"></a>SSL en modo kernel en Windows Server 2008 y Windows Vista
+## <a name="kernel-mode-ssl-in-windows-server-2008-and-windows-vista"></a>Modo kernel SSL en Windows Server 2008 y Windows Vista
 
-En el caso de los equipos que ejecutan Windows Server 2008 y Windows Vista, la API del servidor HTTP incluye la funcionalidad SSL mejorada.
+En el caso de los equipos Windows Server 2008 y Windows Vista, la API del servidor HTTP ofrece una funcionalidad SSL mejorada.
 
 Se admiten las siguientes características nuevas:
 
--   Compatibilidad completa con certificados de cliente en modo kernel SSL
--   SSL de modo kernel para todas las transacciones HTTP SSL
+-   Compatibilidad completa con certificados de cliente en el modo kernel SSL
+-   SSL en modo kernel para todas las transacciones HTTP SSL
 -   Compatibilidad con cifrado masivo y descarga
--   Protocolo PCT 1,0
--   Cifrados de RC2
--   Mayor rendimiento en el modo de usuario SSL
+-   Protocolo PCT 1.0
+-   Cifrados RC2
+-   Mayor rendimiento sobre SSL en modo de usuario
 
 ## <a name="configuration"></a>Configuración
 
-SSL de modo kernel se puede configurar a través de dos valores de registro en la clave HTTP Parameters que se encuentra en:
+SSL en modo kernel se puede configurar a través de dos valores del Registro en la clave parámetros HTTP ubicada en:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -68,15 +68,15 @@ HKEY_LOCAL_MACHINE
                   DisableSslCertChainCacheOnlyUrlRetrieval
 ```
 
-Un usuario debe tener privilegios de administrador o sistema local para modificar los valores del registro y ver o modificar los archivos de registro y la carpeta que los contiene.
+Un usuario debe tener privilegios de administrador o sistema local para modificar los valores del Registro y ver o modificar los archivos de registro y la carpeta que los contiene.
 
-La información de configuración de los valores del registro se lee cuando se inicia el controlador de la API del servidor HTTP. Como resultado, si se cambia la configuración, el controlador debe detenerse y reiniciarse para leer los nuevos valores. Esto puede realizarse mediante los siguientes comandos de la consola:
+La información de configuración de los valores del Registro se lee cuando se inicia el controlador de API del servidor HTTP. Como resultado, si se cambia la configuración, el controlador debe detenerse y reiniciarse para leer los nuevos valores. Esto se puede lograr mediante los siguientes comandos de consola:
 
 **net stop http**
 
 **net start http**
 
-En la tabla siguiente se enumeran los valores de configuración del registro.
+En la tabla siguiente se enumeran los valores de configuración del Registro.
 
 
 
@@ -87,27 +87,27 @@ En la tabla siguiente se enumeran los valores de configuración del registro.
 </colgroup>
 <thead>
 <tr class="header">
-<th>Valor del registro</th>
+<th>Valor del Registro</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>EnableKernelSSL</td>
-<td><strong>Windows Server 2008 y Windows Vista:</strong> Este valor del registro está obsoleto.<br/></td>
+<td><strong>Windows Server 2008 y Windows Vista:</strong> Este valor del Registro está obsoleto.<br/></td>
 </tr>
 <tr class="even">
 <td>EnableSslCloseNotify</td>
-<td>Valor <strong>DWORD</strong> que se establece en <strong>true</strong> para habilitar la notificación de cierre o <strong>false</strong> para deshabilitar el requisito de notificación de cierre. Close: Notify está deshabilitado de forma predeterminada.<br/> Cuando está habilitada la notificación de cierre, se requiere la aplicación cliente para enviar un mensaje de notificación de cierre antes de cerrar las conexiones TCP. La API del servidor HTTP también envía una notificación de cierre antes de cerrar la conexión.<br/> Cuando está habilitada la notificación de cierre y el cliente envía un mensaje de notificación de cierre, la API del servidor HTTP volverá a usar la sesión SSL en futuras conexiones con el cliente. Si el cliente no envía una notificación de cierre, la API del servidor HTTP no volverá a usar la misma sesión SSL en conexiones futuras. Por lo tanto, se desencadena un protocolo de enlace SSL completo en la nueva conexión, con lo que se reduce el rendimiento. <br/>
+<td>Valor <strong>DWORD</strong> que se establece en <strong>TRUE para</strong> habilitar close-notify o <strong>FALSE</strong> para deshabilitar el requisito de notificación de cierre. La notificación de cierre está deshabilitada de forma predeterminada.<br/> Cuando está habilitada la notificación de cierre, la aplicación cliente debe enviar un mensaje de notificación de cierre antes de cerrar las conexiones TCP. La API del servidor HTTP también envía una notificación de cierre antes de cerrar la conexión.<br/> Cuando close-notify está habilitado y el cliente envía un mensaje de notificación de cierre, la API del servidor HTTP reutilizará la sesión SSL en futuras conexiones al cliente. Si el cliente no envía una notificación de cierre, la API del servidor HTTP no reutilizará la misma sesión SSL en futuras conexiones. Por lo tanto, se desencadena un protocolo de enlace SSL completo en la nueva conexión, lo que reduce el rendimiento. <br/>
 <blockquote>
 [!Note]<br />
-Habilitar Close-Notify ayuda a mitigar los ataques de truncamiento contra las solicitudes y respuestas HTTPS.
+La habilitación de la notificación de cierre ayuda a mitigar los ataques de truncamiento contra las solicitudes y respuestas HTTPS.
 </blockquote>
-<br/> <br/> Cuando se deshabilita la notificación de cierre, la API del servidor HTTP vuelve a usar la sesión SSL para futuras conexiones.<br/></td>
+<br/> <br/> Cuando se deshabilita la notificación de cierre, la API del servidor HTTP reutiliza la sesión SSL para futuras conexiones.<br/></td>
 </tr>
 <tr class="odd">
 <td>DisableSslCertChainCacheOnlyUrlRetrieval</td>
-<td>Valor <strong>DWORD</strong> que se establece en <strong>true</strong> para permitir que la API del servidor http recupere certificados intermedios desde Internet o desde el almacén local, o bien <strong>false</strong> para recuperar certificados intermedios solo del almacén local. El valor del registro predeterminado es <strong>false</strong>.<br/> De forma predeterminada, la API del servidor HTTP crea una cadena de certificados de cliente mediante la recuperación de los certificados intermedios del almacén de entidades de certificación intermedio en la cuenta del equipo local. Establecer este valor en <strong>true</strong> permite que la API del servidor http recupere los certificados intermedios no solo del almacén local, sino también de la entidad de certificación intermedia en Internet.<br/></td>
+<td>Valor <strong>DWORD</strong> que se establece en <strong>TRUE</strong> para permitir que la API del servidor HTTP recupere certificados intermedios de Internet o del almacén local, o <strong>FALSE</strong> para recuperar certificados intermedios solo del almacén local. El valor predeterminado del Registro es <strong>FALSE.</strong><br/> De forma predeterminada, la API del servidor HTTP crea una cadena de certificados de cliente mediante la recuperación de los certificados intermedios del almacén de la entidad de certificación intermedia en la cuenta de equipo local. Al establecer este valor en <strong>TRUE,</strong> la API del servidor HTTP puede recuperar los certificados intermedios no solo del almacén local, sino también de la entidad de certificación intermedia de Internet.<br/></td>
 </tr>
 </tbody>
 </table>

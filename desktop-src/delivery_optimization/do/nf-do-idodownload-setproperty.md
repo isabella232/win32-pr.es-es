@@ -38,11 +38,11 @@ HRESULT SetProperty(
 
 `propId`
 
-Identificador de propiedad necesario que se debe establecer (de tipo **DODownloadProperty**).
+Identificador de propiedad necesario para establecer (de tipo **DODownloadProperty).**
 
 `propVal`
 
-Valor de propiedad que se establece, almacenado en **variant.**
+Valor de propiedad que se establece, almacenado en **una variant**.
 
 ## <a name="return-value"></a>Valor devuelto
 

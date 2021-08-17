@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_DBID. Lista de sobrecargas del método ToString'
+description: 'Más información sobre: JET_DBID. Lista de sobrecargas del método ToString'
 title: JET_DBID. Lista de sobrecargas del método ToString
 TOCTitle: 'ToString method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.JET_DBID.ToString
@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 97fb6b251ca369adcdd55e6b5ead4d36624b6d6e
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 8051840b178d70e204c7a6f88cc575b7e1ab7b18301ba7900073d001dcb15d70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118486375"
 ---
 # <a name="jet_dbidtostring-method-overload-list"></a>JET_DBID. Lista de sobrecargas del método ToString
 
@@ -40,11 +40,11 @@ Incluir miembros heredados
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="hh596160(v=exchg.10).md">ToString()</a></td>
-<td>Generar una representación de cadena de la estructura. (Invalida <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType. ToString ()</a>).</td>
+<td>Genere una representación de cadena de la estructura . (Invalida <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType.ToString()</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh557823(v=exchg.10).md">ToString (String, IFormatProvider)</a></td>
+<td><a href="hh557823(v=exchg.10).md">ToString(String, IFormatProvider)</a></td>
 <td>Da formato al valor de la instancia actual usando el formato especificado.</td>
 </tr>
 </tbody>
@@ -53,12 +53,12 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_DBID](./jet-dbid-structure.md)
+[JET_DBID estructura](./jet-dbid-structure.md)
 
-[Miembros de JET_DBID](./jet-dbid-members.md)
+[JET_DBID miembros](./jet-dbid-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

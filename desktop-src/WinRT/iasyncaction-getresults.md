@@ -43,15 +43,15 @@ Tipo: **HRESULT**
 
 Este método siempre devuelve **S \_ OK**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Llamar al **método GetResults** no tiene ningún efecto si la implementación actual tiene un tipo dinámico [**de IAsyncAction.**](/windows/win32/api/windows.foundation/nn-windows-foundation-iasyncaction)
+Llamar al **método GetResults** no tiene ningún efecto si la implementación actual tiene un tipo dinámico [**de IAsyncAction**](/windows/win32/api/windows.foundation/nn-windows-foundation-iasyncaction).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                    |
@@ -59,7 +59,7 @@ Llamar al **método GetResults** no tiene ningún efecto si la implementación a
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

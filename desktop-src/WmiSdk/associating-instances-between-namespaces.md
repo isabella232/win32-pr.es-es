@@ -22,7 +22,7 @@ En el procedimiento siguiente se describe cómo asociar instancias entre espacio
 
 1.  Comience la definición de clase con el [**calificador de cadena Association.**](meta-qualifiers.md)
 
-    Los **calificadores JoinOn,** [**Association**](meta-qualifiers.md) **y Union** son mutuamente excluyentes.
+    Los **calificadores JoinOn,** [**Association**](meta-qualifiers.md)y **Union** son mutuamente excluyentes.
 
 2.  Cree las consultas que definen las instancias de origen usadas en la clase de vista con el [**calificador ViewSources.**](viewsources-qualifier.md)
 3.  Defina los nombres y la ubicación de los espacios de nombres en los que se encuentran las instancias de origen con el [**calificador ViewSpaces.**](viewspaces-qualifier.md)
@@ -32,7 +32,7 @@ En el procedimiento siguiente se describe cómo asociar instancias entre espacio
 
 5.  Etiquete las propiedades pertinentes con el **calificador Directo.**
 
-    El **calificador Directo** impide que el proveedor de vistas asigna la referencia de asociación etiquetada a una referencia de vista.
+    El **calificador Directo** impide que el proveedor de vistas a mapping la referencia de asociación etiquetada a una referencia de vista.
 
 En los ejemplos de código siguientes se muestra cómo crear clases de vista de asociación.
 

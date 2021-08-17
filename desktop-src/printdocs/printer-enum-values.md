@@ -1,7 +1,7 @@
 ---
-description: La \_ estructura de valores enum de impresora \_ especifica el nombre del valor, el tipo y los datos para un valor de configuración de impresora devuelto por la función EnumPrinterDataEx.
+description: La estructura PRINTER ENUM VALUES especifica el nombre del valor, el tipo y los datos de un valor de configuración de impresora devuelto por la \_ \_ función EnumPrinterDataEx.
 ms.assetid: 87eb1452-0d9d-46bd-8af8-0542a11a929b
-title: Estructura de PRINTER_ENUM_VALUES (winspool. h)
+title: PRINTER_ENUM_VALUES estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: ea73318db7a91fa4d422624b1c3c0c6f09d97cb0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a2b6fd8e548353dbede634d7b3bbaa08023d5e7bc2c8bc4cefbe37f7aba494ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118470582"
 ---
-# <a name="printer_enum_values-structure"></a>\_Estructura de valores de enumeración de impresora \_
+# <a name="printer_enum_values-structure"></a>Estructura PRINTER \_ ENUM \_ VALUES
 
-La estructura de **\_ \_ valores enum de impresora** especifica el nombre del valor, el tipo y los datos para un valor de configuración de impresora devuelto por la función [**EnumPrinterDataEx**](enumprinterdataex.md) .
+La **estructura PRINTER \_ ENUM \_ VALUES** especifica el nombre del valor, el tipo y los datos de un valor de configuración de impresora devuelto por la [**función EnumPrinterDataEx.**](enumprinterdataex.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,35 +48,35 @@ typedef struct _PRINTER_ENUM_VALUES {
 **pValueName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del valor recuperado.
+Puntero a una cadena terminada en NULL que especifica el nombre del valor recuperado.
 
 </dd> <dt>
 
 **cbValueName**
 </dt> <dd>
 
-El número de bytes en el miembro **pValueName** , incluido el carácter nulo de terminación.
+Número de bytes del miembro **pValueName,** incluido el carácter NULL de terminación.
 
 </dd> <dt>
 
 **dwType**
 </dt> <dd>
 
-Código que indica el tipo de datos al que apunta el miembro **pdata** . Para obtener una lista de los códigos de tipo posibles, vea [Registry Value Types](/windows/desktop/SysInfo/registry-value-types).
+Código que indica el tipo de datos a los que apunta el **miembro pData.** Para obtener una lista de los códigos de tipo posibles, vea [Tipos de valor del Registro](/windows/desktop/SysInfo/registry-value-types).
 
 </dd> <dt>
 
 **pData**
 </dt> <dd>
 
-Puntero a un búfer que contiene los datos para el valor recuperado.
+Puntero a un búfer que contiene los datos del valor recuperado.
 
 </dd> <dt>
 
 **cbData**
 </dt> <dd>
 
-Número de bytes recuperados en el búfer de **pdata** .
+Número de bytes recuperados en el **búfer pData.**
 
 </dd> </dl>
 
@@ -84,23 +84,23 @@ Número de bytes recuperados en el búfer de **pdata** .
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nombres Unicode y ANSI<br/>   | **\_ \_ Enumeración \_ de impresora VALUESW** (Unicode) y **\_ \_ \_ valores de enumeración de impresora** (ANSI)<br/>                 |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nombres Unicode y ANSI<br/>   | **\_ PRINTER \_ ENUM \_ VALUESW** (Unicode) e **\_ PRINTER \_ ENUM \_ VALUESA** (ANSI)<br/>                 |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de LA API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**EnumPrinterDataEx**](enumprinterdataex.md)

@@ -23,7 +23,7 @@ Esta sección contiene información de referencia sobre las interfaces COM propo
 | Tema                                                           | Descripción                                       |
 |-----------------------------------------------------------------|---------------------------------------------------|
 | [**ID3DX11FFT**](/windows/desktop/api/d3dcsx/nn-d3dcsx-id3dx11fft)<br/>                     | Encapsula los FFT inversos y hacia delante.<br/> |
-| [**ID3DX11Scan**](/windows/desktop/api/d3dcsx/nn-d3dcsx-id3dx11scan)<br/>                   | Contexto de examen.<br/>                          |
+| [**ID3DX11Scan**](/windows/desktop/api/d3dcsx/nn-d3dcsx-id3dx11scan)<br/>                   | Análisis del contexto.<br/>                          |
 | [**ID3DX11SegmentedScan**](/windows/desktop/api/d3dcsx/nn-d3dcsx-id3dx11segmentedscan)<br/> | Contexto de examen segmentado.<br/>                |
 
 

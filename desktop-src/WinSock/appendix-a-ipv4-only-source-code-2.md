@@ -1,5 +1,5 @@
 ---
-description: Código fuente del ejemplo de Platform Software Development Kit (SDK) Simplec.c y Simple.c.
+description: Código fuente del ejemplo del Kit de desarrollo de software (SDK) de plataforma Simplec.c y Simple.c.
 ms.assetid: d6509917-05ce-4b8e-b1aa-04f07d947392
 title: 'Apéndice A: Código fuente solo IPv4'
 ms.topic: article
@@ -20,12 +20,12 @@ En este apéndice se proporciona el código fuente de los ejemplos de Platform S
 
 > [!WARNING]
 >
-> Este código se incluye en esta guía para contrastar el código independiente de la versión IP que se proporciona en el Apéndice B. Este código de ejemplo se proporciona con fines de comparación y para proporcionar una referencia clara y disponible al leer esta guía de IPv6. Se proporciona una versión independiente de la versión IP de este código fuente en apéndice [B: Código](appendix-b-ip-version-agnostic-source-code-2.md)fuente independiente de la versión ip .
+> Este código se incluye en esta guía para contrastar el código independiente de la versión de IP que se proporciona en el Apéndice B. Este código de ejemplo se proporciona con fines de comparación y para proporcionar una referencia clara y disponible al leer esta guía de IPv6. Se proporciona una versión independiente de la versión IP de este código fuente en el Apéndice [B: Código](appendix-b-ip-version-agnostic-source-code-2.md)fuente independiente de la versión de IP .
 
  
 
 > [!Note]  
-> Al comparar el código fuente del Apéndice A (solo IPv4) y el Apéndice B (independiente de la versión de IP), se obtiene una idea de los cambios necesarios para modificar la aplicación de sockets de Windows para agregar compatibilidad con IPv6.
+> Al comparar el código fuente del Apéndice A (solo IPv4) y el Apéndice B (independiente de la versión de IP), se obtiene una idea de los cambios necesarios para modificar la aplicación Windows Sockets para agregar compatibilidad con IPv6.
 
  
 

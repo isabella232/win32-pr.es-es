@@ -1,6 +1,6 @@
 ---
 title: Elemento Name (networkSettingsType)
-description: Contiene el nombre de un perfil de red. El nombre se usa para mostrar.
+description: Contiene el nombre de un perfil de red. El nombre se usa con fines para mostrar.
 ms.assetid: 86e4e68d-3c36-41eb-8563-d7d5125a5957
 keywords:
 - Nombre, elemento Programador de tareas
@@ -22,7 +22,7 @@ ms.locfileid: "117758514"
 ---
 # <a name="name-networksettingstype-element"></a>Elemento Name (networkSettingsType)
 
-Contiene el nombre de un perfil de red. El nombre se usa para mostrar.
+Contiene el nombre de un perfil de red. El nombre se usa con fines para mostrar.
 
 ``` syntax
 <xs:element name="Name"
@@ -31,7 +31,7 @@ Contiene el nombre de un perfil de red. El nombre se usa para mostrar.
  />
 ```
 
-El **tipo complejo networkSettingsType** define el elemento [**Name.**](taskschedulerschema-networksettingstype-complextype.md)
+El **tipo** complejo [**networkSettingsType**](taskschedulerschema-networksettingstype-complextype.md) define el elemento Name.
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -45,7 +45,7 @@ El **tipo complejo networkSettingsType** define el elemento [**Name.**](tasksche
 
 ## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de C++, vea [**Propiedad Name de INetworkSettings.**](/windows/desktop/api/taskschd/nf-taskschd-inetworksettings-get_name)
+Para el desarrollo de C++, [**vea Propiedad Name de INetworkSettings.**](/windows/desktop/api/taskschd/nf-taskschd-inetworksettings-get_name)
 
 Para el desarrollo de scripts, [**consulte NetworkSettings.Name**](networksettings-name.md).
 
@@ -53,7 +53,7 @@ Para el desarrollo de scripts, [**consulte NetworkSettings.Name**](networksettin
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

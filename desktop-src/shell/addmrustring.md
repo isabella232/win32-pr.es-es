@@ -1,5 +1,5 @@
 ---
-description: Agrega una cadena a la parte superior de la lista usada más recientemente (MRU).
+description: Agrega una cadena a la parte superior de la lista de mru usada más recientemente.
 title: Función AddMRUStringW
 ms.topic: reference
 ms.date: 05/31/2018
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Comctl32.dll
 ms.assetid: ad94a442-8492-412c-a4f2-ac6e7c5327d7
-ms.openlocfilehash: b62e23cd0604273559e36e561970dd62f117c11d
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 4ac72c44b670466f10cd708b81b1a84f93a349afcb0d81473ed5e6578c20617a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117861597"
 ---
 # <a name="addmrustringw-function"></a>Función AddMRUStringW
 
-\[Esta función está disponible a través de Windows XP con Service Pack 2 (SP2) y Windows Server 2003. Podría modificarse o no estar disponible en versiones posteriores de Windows. \]
+\[Esta función está disponible a través Windows XP con Service Pack 2 (SP2) y Windows Server 2003. Podría modificarse o no estar disponible en versiones posteriores de Windows. \]
 
 Agrega una cadena a la parte superior de la lista de mru usada más recientemente.
 
@@ -57,7 +57,7 @@ Identificador de la lista de MRU.
 
 Tipo: **LPCTSTR**
 
-Puntero a los datos. Puede ser una cadena o, si se creó la lista de MRU con la **marca \_ BINARY de MRU,** datos binarios. En el caso de los datos binarios, el primer **DWORD** indica su tamaño.
+Puntero a los datos. Puede ser una cadena o, si se creó la lista de MRU con la marca BINARY de **MRU, \_** datos binarios. En el caso de los datos binarios, el **primer DWORD** indica su tamaño.
 
 </dd> </dl>
 
@@ -67,15 +67,15 @@ Tipo: **int**
 
 Devuelve un valor no negativo si se realiza correctamente; de lo contrario, -1.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no se incluye en un encabezado o biblioteca públicos. Se puede acceder a él a través de [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) o extraerse de comctl32.dll por su ordinal, que es 401 **para AddMRUStringW**.
+Esta función no se incluye en un encabezado o biblioteca públicos. Se puede acceder a él a través de [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) o extraerse de comctl32.dll por su ordinal, que es 401 para **AddMRUStringW**.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                     |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |

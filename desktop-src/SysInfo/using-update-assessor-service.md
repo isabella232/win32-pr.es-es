@@ -1,21 +1,21 @@
 ---
-description: Para usar la API de la plataforma de evaluación de WaaS, cree una instancia de la interfaz IWaaSAssessor y, a continuación, llame al método GetOSUpdateAssessment.
+description: Para usar la API de waaS Assessment Platform, cree una instancia de la interfaz IWaaSAssessor y, a continuación, llame al método GetOSUpdateAssessment.
 ms.assetid: 810D4057-8319-4B9B-9098-CD7987CB292C
 title: Uso de la plataforma de evaluación de WaaS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed3a7d70e3dab0c75aea266f2a1874931e5e5d4e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 08401222b11036047a6c03e98cccaa9dc65e6f6a7cf39470480479c217549d57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118884246"
 ---
 # <a name="using-the-waas-assessment-platform"></a>Uso de la plataforma de evaluación de WaaS
 
-Para usar la API de la plataforma de evaluación de WaaS, cree una instancia de la interfaz [**IWaaSAssessor**](/windows/desktop/api/waasapi/nn-waasapi-iwaasassessor) y, a continuación, llame al método [**GetOSUpdateAssessment**](/windows/desktop/api/waasapi/nf-waasapi-iwaasassessor-getosupdateassessment) . Si se ejecuta correctamente, el parámetro de *resultado* generará un objeto [**OSUpdateAssessment**](/windows/win32/api/waasapitypes/ns-waasapitypes-osupdateassessment) , que contendrá la información pertinente.
+Para usar la API de waaS Assessment Platform, cree una instancia de la interfaz [**IWaaSAssessor**](/windows/desktop/api/waasapi/nn-waasapi-iwaasassessor) y, a continuación, llame al [**método GetOSUpdateAssessment.**](/windows/desktop/api/waasapi/nf-waasapi-iwaasassessor-getosupdateassessment) Si se ejecuta correctamente, el *parámetro result* genera un [**objeto OSUpdateAssessment,**](/windows/win32/api/waasapitypes/ns-waasapitypes-osupdateassessment) que contendrá la información pertinente.
 
-En el ejemplo de código siguiente se muestra cómo recuperar una evaluación del sistema operativo desde el sistema local mediante el método IWaaSAssessor. GetOSUpdateAssessment.
+En el ejemplo de código siguiente se muestra cómo recuperar una evaluación del sistema operativo del sistema local mediante el método IWaaSAssessor.GetOSUpdateAssessment.
 
 
 ```C++

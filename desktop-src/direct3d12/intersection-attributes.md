@@ -28,7 +28,7 @@ struct BuiltInTriangleIntersectionAttributes
 };
 ```
 
-[Los sombreadores de](any-hit-shader.md) impacto [y los](closest-hit-shader.md) más cercanos invocados mediante la intersección de triángulos de función fija deben usar esta estructura para los atributos de impacto. Dados los atributos a0, a1 y a2 para los tres vértices de un triángulo, barycentrics.x es el peso de a1 y barycentrics.y es el peso de a2.  Por ejemplo, la aplicación puede interpolar haciendo: a = a0 + barycentrics.x * (a1-a0) + barycentrics.y* (a2 – a0).
+[Los sombreadores de](any-hit-shader.md) impacto [y los](closest-hit-shader.md) más cercanos invocados mediante la intersección de triángulos de función fija deben usar esta estructura para los atributos de impacto. Dados los atributos a0, a1 y a2 para los tres vértices de un triángulo, barycentrics.x es el peso de a1 y barycentrics.y es el peso de a2.  Por ejemplo, la aplicación puede interpolarse haciendo: a = a0 + barycentrics.x * (a1-a0) + barycentrics.y* (a2 – a0).
 
 ## <a name="axis-aligned-bounding-box-for-procedural-primitive-intersection"></a>Rectángulo de selección alineado con el eje para la intersección primitiva de procedimientos
 

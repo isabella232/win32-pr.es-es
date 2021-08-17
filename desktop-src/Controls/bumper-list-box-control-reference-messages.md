@@ -4,12 +4,12 @@ description: Mensajes de cuadro de lista
 ms.assetid: 6594bfd1-550f-47ba-9b92-551f2a5c08a6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 344e08b3fa34969d1602f730e41400bc02ef19ab
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 71bdcbac0af6473d872e8260946280c25d24dc424a5b6a5c66013788157e5dd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103914538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117833405"
 ---
 # <a name="list-box-messages"></a>Mensajes de cuadro de lista
 
@@ -18,9 +18,9 @@ ms.locfileid: "103914538"
 -   [**LB \_ ADDFILE**](lb-addfile.md)
 -   [**LB \_ ADDSTRING**](lb-addstring.md)
 -   [**LB \_ DELETESTRING**](lb-deletestring.md)
--   [**DIR de LB \_**](lb-dir.md)
+-   [**LB \_ DIR**](lb-dir.md)
 -   [**LB \_ FINDSTRING**](lb-findstring.md)
--   [**LB \_ FindExactString con**](lb-findstringexact.md)
+-   [**LB \_ FINDSTRINGEXACT**](lb-findstringexact.md)
 -   [**LB \_ GETANCHORINDEX**](lb-getanchorindex.md)
 -   [**LB \_ GETCARETINDEX**](lb-getcaretindex.md)
 -   [**LB \_ GETCOUNT**](lb-getcount.md)
@@ -30,14 +30,14 @@ ms.locfileid: "103914538"
 -   [**LB \_ GETITEMHEIGHT**](lb-getitemheight.md)
 -   [**LB \_ GETITEMRECT**](lb-getitemrect.md)
 -   [**LB \_ GETLISTBOXINFO**](lb-getlistboxinfo.md)
--   [**equilibro \_ de lb**](lb-getlocale.md)
+-   [**LB \_ GETLOCALE**](lb-getlocale.md)
 -   [**LB \_ GETSEL**](lb-getsel.md)
 -   [**LB \_ GETSELCOUNT**](lb-getselcount.md)
 -   [**LB \_ GETSELITEMS**](lb-getselitems.md)
--   [**\_apgettext GETTEXT**](lb-gettext.md)
+-   [**LB \_ GETTEXT**](lb-gettext.md)
 -   [**LB \_ GETTEXTLEN**](lb-gettextlen.md)
 -   [**LB \_ GETTOPINDEX**](lb-gettopindex.md)
--   [**' LB \_ INITSTORAGE**](lb-initstorage.md)
+-   [**LB \_ INITSTORAGE**](lb-initstorage.md)
 -   [**LB \_ INSERTSTRING**](lb-insertstring.md)
 -   [**LB \_ ITEMFROMPOINT**](lb-itemfrompoint.md)
 -   [**LB \_ RESETCONTENT**](lb-resetcontent.md)

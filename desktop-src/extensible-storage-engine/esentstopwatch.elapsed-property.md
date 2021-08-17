@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: EsentStopwatch. Elapsed (propiedad)'
-title: Propiedad EsentStopwatch. Elapsed
+description: 'Más información sobre: Propiedad EsentStopwatch.Elapsed'
+title: Propiedad EsentStopwatch.Elapsed
 TOCTitle: 'Elapsed property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.EsentStopwatch.Elapsed
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentstopwatch.elapsed(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5609d22ec8702bcf02ff36857e469a0426558e90
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02d60a19f799d5470711e9479b7ce0b28e190cdc63a23f853aa45a02d60aa70d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118490502"
 ---
-# <a name="esentstopwatchelapsed-property"></a>Propiedad EsentStopwatch. Elapsed
+# <a name="esentstopwatchelapsed-property"></a>Propiedad EsentStopwatch.Elapsed
 
 Obtiene el tiempo total transcurrido medido por la instancia actual.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,9 +60,9 @@ public TimeSpan Elapsed { get; private set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. TimeSpan](/dotnet/api/system.timespan)  
+Tipo: [System.TimeSpan](/dotnet/api/system.timespan)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
@@ -70,4 +70,4 @@ Tipo: [System. TimeSpan](/dotnet/api/system.timespan)
 
 [Miembros de EsentStopwatch](./esentstopwatch-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

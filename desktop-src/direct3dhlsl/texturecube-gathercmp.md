@@ -1,9 +1,9 @@
 ---
-title: 'Métodos TextureCube:: TextureCube GatherCmp'
-description: 'Muestras y comparan una textura y devuelven todos los componentes. | Métodos TextureCube:: TextureCube GatherCmp'
+title: Métodos de TextureCube::TextureCube GatherCmp
+description: Muestrea y compara una textura y devuelve todos los componentes. | Métodos de TextureCube::TextureCube GatherCmp
 ms.assetid: EEC90CF8-9479-45D7-A9CE-74FC8DC3B1B5
 keywords:
-- GatherCmp métodos HLSL
+- Métodos HLSL de GatherCmp
 topic_type:
 - apiref
 api_type:
@@ -12,18 +12,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: bbd3bc4c6a69c5ea708447904581c82ee60e773e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 712773239b8c444cbd3e0b97408e681cfbd80e9ead3b7dd76ff962a28897b27c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117722385"
 ---
-# <a name="texturecubegathercmp-methods"></a>TextureCube:: GatherCmp (métodos)
+# <a name="texturecubegathercmp-methods"></a>Métodos TextureCube::GatherCmp
 
-En el caso de cuatro valores de textura de una [**TextureCube**](texturecube.md) que se utilizarían en una operación de filtrado bilineal, devuelve su comparación con un valor de comparación.
+Para cuatro valores de texel de [**un Objeto TextureCube**](texturecube.md) que se usaría en una operación de filtrado bi lineal, devuelve su comparación con un valor de comparación.
 
-Consulte la documentación sobre [gather4_c](./gather4-c--sm5---asm-.md) para obtener más información que describa la instrucción DXBC subyacente.
+Consulte la documentación [sobre](./gather4-c--sm5---asm-.md) gather4_c para obtener más información sobre la instrucción DXBC subyacente.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -31,7 +31,7 @@ Consulte la documentación sobre [gather4_c](./gather4-c--sm5---asm-.md) para ob
 
 | Método                                                                       | Descripción                                                                                                      |
 |:-----------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------|
-| [**GatherCmp (S, Float, Float, uint)**](tcube-gathercmp-s-float-float-uint-.md) | Muestras y comparan una textura y devuelven los cuatro componentes junto con el estado de la operación.<br/> |
+| [**GatherCmp(S,float,float,uint)**](tcube-gathercmp-s-float-float-uint-.md) | Muestrea y compara una textura y devuelve los cuatro componentes junto con el estado de la operación.<br/> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración GotoSecondaryIndexBookmarkGrbit'
-title: Enumeración GotoSecondaryIndexBookmarkGrbit
+description: 'Más información sobre: GotoSecondaryIndexBookmarkGrbit (enumeración)'
+title: GotoSecondaryIndexBookmarkGrbit (enumeración)
 TOCTitle: GotoSecondaryIndexBookmarkGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.GotoSecondaryIndexBookmarkGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.gotosecondaryindexbookmarkgrbit(v=EXCHG.10)
@@ -28,21 +28,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f38b5f26abc4dfafb95d5560b3ff1def4267527c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 733647a8cf53fa93c9779674890005de4ead1aa57f15853c255c5ac5a8e13904
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118487985"
 ---
-# <a name="gotosecondaryindexbookmarkgrbit-enumeration"></a>Enumeración GotoSecondaryIndexBookmarkGrbit
+# <a name="gotosecondaryindexbookmarkgrbit-enumeration"></a>GotoSecondaryIndexBookmarkGrbit (enumeración)
 
-Opciones para [JetGotoSecondaryIndexBookmark (JET_SESID, JET_TABLEID, \[ \] , Int32, \[ \] , Int32, GotoSecondaryIndexBookmarkGrbit)](./api.jetgotosecondaryindexbookmark-method.md).
+Opciones de [JetGotoSecondaryIndexBookmark(JET_SESID, JET_TABLEID, \[ \] , Int32, \[ \] , Int32, GotoSecondaryIndexBookmarkGrbit)](./api.jetgotosecondaryindexbookmark-method.md).
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -72,20 +72,20 @@ public enum GotoSecondaryIndexBookmarkGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>BookmarkPermitVirtualCurrency</td>
-<td>En caso de que ya no se pueda encontrar la entrada de índice, el cursor se dejará situado donde esa entrada de índice se haya encontrado previamente. La operación todavía producirá un error con JET_errRecordDeleted; sin embargo, será posible moverse a la entrada de índice siguiente o anterior en relación con la entrada de índice que ahora falta.</td>
+<td>En caso de que ya no se pueda encontrar la entrada de índice, el cursor se colocará en la posición donde se encontró anteriormente esa entrada de índice. La operación seguirá con errores con JET_errRecordDeleted; sin embargo, será posible pasar a la entrada de índice siguiente o anterior en relación con la entrada de índice que ahora falta.</td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
