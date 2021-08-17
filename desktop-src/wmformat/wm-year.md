@@ -37,13 +37,13 @@ g \_ wszWMYear
 
 | Tipo de archivo | Valor de ejemplo |
 |-----------|---------------|
-| All       | "2002"        |
+| Todo       | "2002"        |
 
 
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

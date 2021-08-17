@@ -1,25 +1,25 @@
 ---
-description: En el ejemplo siguiente, se lee un mensaje de texto simple en un archivo y se abre un almacén de certificados que contiene los certificados de los destinatarios del mensaje previsto.
+description: En el ejemplo siguiente, se lee un mensaje de texto no cifrado desde un archivo y se abre un almacén de certificados que contiene los certificados de los destinatarios de mensajes deseados.
 ms.assetid: 7ae672d3-e11d-453c-b9c0-354d21830ae4
-title: Envío de un mensaje de datos con doble cifrado
+title: Envío de un mensaje de datos sobres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f59c04418a2f1d0186ddc0d88c30e7cc790c715b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9d93c73e22a9ac98e08d12164e78aa585a6b2ba3da6f47bf53675a7320bc206e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900365"
 ---
-# <a name="sending-an-enveloped-data-message"></a>Envío de un mensaje de datos con doble cifrado
+# <a name="sending-an-enveloped-data-message"></a>Envío de un mensaje de datos sobres
 
-\[CAPICOM es un componente de solo bits de 32 que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use la .NET Framework para implementar características de seguridad. Para obtener más información, vea [alternativas al uso de CAPICOM](alternatives-to-using-capicom.md).\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use el .NET Framework para implementar características de seguridad. Para obtener más información, [vea Alternativas al uso de CAPICOM.](alternatives-to-using-capicom.md)\]
 
-En el ejemplo siguiente, se lee un mensaje de texto simple en un archivo y se abre un almacén de certificados que contiene los certificados de los destinatarios del mensaje previsto. Todos los certificados del almacén se agregan como destinatarios del mensaje, el mensaje está sobre y el mensaje con doble cifrado se escribe en un archivo.
+En el ejemplo siguiente, se lee un mensaje de texto no cifrado desde un archivo y se abre un almacén de certificados que contiene los certificados de los destinatarios de mensajes deseados. Todos los certificados del almacén se agregan como destinatarios del mensaje, el mensaje está sobre y el mensaje sobre se escribe en un archivo.
 
-Se puede agregar código adicional para mostrar los certificados que se van a agregar como destinatarios del mensaje, para comprobar los certificados antes de que se agreguen como destinatarios previstos, o para elegir los que se van a agregar.
+Se puede agregar código adicional para mostrar los certificados que se agregan como destinatarios del mensaje, comprobar esos certificados antes de agregarse como destinatarios previstos o elegir los que se van a agregar.
 
-En cualquier error de CAPICOM, se devuelve un valor decimal negativo de **Err. Number** . Para obtener más información, consulte el [**\_ \_ código de error de CAPICOM**](capicom-error-code.md). Para obtener información acerca de los valores decimales positivos de **Err. Number**, consulte Winerror. h.
+En cualquier error CAPICOM, se devuelve un valor decimal negativo **de Err.Number.** Para obtener más información, vea [**CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Para obtener información sobre los valores decimales positivos **de Err.Number,** vea Winerror.h.
 
 
 ```VB

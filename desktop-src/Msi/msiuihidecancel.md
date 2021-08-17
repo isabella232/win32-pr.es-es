@@ -13,15 +13,15 @@ ms.locfileid: "118943993"
 ---
 # <a name="msiuihidecancel-property"></a>Propiedad MsiUIHideCancel
 
-El instalador establece la propiedad **MsiUIHideCancel** en 1 cuando se ha establecido el nivel de interfaz de usuario interno para incluir INSTALLUILEVEL HIDECANCEL con la función \_ [**MsiSetInternalUI**](/windows/desktop/api/Msi/nf-msi-msisetinternalui) o la propiedad [UILevel](installer-uilevel.md)del objeto [**Installer**](installer-object.md) o mediante opciones de línea de [comandos](command-line-options.md).
+El instalador establece la propiedad **MsiUIHideCancel** en 1 cuando se ha establecido el nivel de interfaz de usuario interno para incluir INSTALLUILEVEL HIDECANCEL con la función \_ [](command-line-options.md) [**MsiSetInternalUI**](/windows/desktop/api/Msi/nf-msi-msisetinternalui) o la propiedad [UILevel](installer-uilevel.md)del objeto [**Installer**](installer-object.md) o mediante opciones de línea de comandos .
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

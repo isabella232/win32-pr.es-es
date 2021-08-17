@@ -33,7 +33,7 @@ La acción InstallFiles debe ir después de [la acción InstallValidate](install
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La acción InstallFiles funciona en los archivos especificados en la [tabla File](file-table.md). Cada archivo se instala en función del estado de instalación del componente asociado del archivo en la [tabla Component](component-table.md). Solo los archivos cuyos componentes se resuelven en **el estado msiInstallStatelocal** son aptos para la copia.
 

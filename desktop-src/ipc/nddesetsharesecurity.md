@@ -26,7 +26,7 @@ ms.locfileid: "118481829"
 
 \[Ya no se admite DDE de red. Nddeapi.dll está presente en Windows Vista, pero todas las llamadas de función devuelven NDDE \_ NOT \_ IMPLEMENTED.\]
 
-Establece el descriptor de seguridad asociado al recurso compartido de DDE. Esto suele hacerse después de editar la DACL asignada al recurso compartido de DDE.
+Establece el descriptor de seguridad asociado al recurso compartido de DDE. Esto se hace normalmente después de editar la DACL asignada al recurso compartido de DDE.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,7 +70,7 @@ Valor [**DE \_ INFORMACIÓN DE**](/windows/desktop/SecAuthZ/security-information
 *pSD* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**\_ DE DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que contiene información de seguridad. Este parámetro no puede ser **NULL** y debe apuntar a un descriptor de seguridad válido.
+Puntero a una estructura [**\_ DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que contiene información de seguridad. Este parámetro no puede ser **NULL** y debe apuntar a un descriptor de seguridad válido.
 
 </dd> </dl>
 
@@ -82,7 +82,7 @@ Si se produce un error en la función, el valor devuelto es un código de error,
 
 ## <a name="remarks"></a>Comentarios
 
-Para modificar el [**\_ DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) asociado a un recurso compartido DDE en DSDM, el usuario debe tener el privilegio adecuado; el creador del recurso compartido tiene este privilegio.
+Para modificar el [**\_ DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) asociado a un recurso compartido de DDE en DSDM, el usuario debe tener el privilegio adecuado; el creador del recurso compartido tiene este privilegio.
 
 ## <a name="requirements"></a>Requisitos
 

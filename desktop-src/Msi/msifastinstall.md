@@ -19,7 +19,7 @@ El valor de la **propiedad MSIFASTINSTALL** puede ser una combinación de los va
 
 
 
-| Value | Significado                                                                      |
+| Valor | Significado                                                                      |
 |-------|------------------------------------------------------------------------------|
 | 0     | Valor predeterminado                                                                |
 | 1     | No se guarda ningún punto de restauración del sistema para esta instalación.                      |
@@ -36,7 +36,7 @@ El valor de la **propiedad MSIFASTINSTALL** puede ser una combinación de los va
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 

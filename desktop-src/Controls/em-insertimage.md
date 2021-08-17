@@ -58,7 +58,7 @@ Devuelve S \_ OK si se realiza correctamente o uno de los siguientes códigos de
 
 | Código devuelto                                                                                    | Descripción                                                   |
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| <dl> <dt>**E \_ FAIL**</dt> </dl>        | No se puede insertar la imagen. <br/>                          |
+| <dl> <dt>**E \_ ERROR**</dt> </dl>        | No se puede insertar la imagen. <br/>                          |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>   | El *parámetro lParam* es NULL o apunta a una imagen no válida. |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insuficiente disponible.<br/>                  |
 
@@ -66,7 +66,7 @@ Devuelve S \_ OK si se realiza correctamente o uno de los siguientes códigos de
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si la selección es un punto de inserción, el blob de imagen se inserta en el punto de inserción.
 

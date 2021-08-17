@@ -1,7 +1,7 @@
 ---
-description: Proporciona sobrecargas de operador y conversiones de tipo para las estructuras D3DXFLOAT16.
+description: Proporciona sobrecargas de operador y conversión de tipos para estructuras D3DXFLOAT16.
 ms.assetid: d287efb5-d15e-46dc-924d-012e1a108efc
-title: Extensiones de D3DXFLOAT16 (D3dx9math. h)
+title: Extensiones D3DXFLOAT16 (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: f97e8917f453e7c2c2db99b8f894d557d7b7909f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 63b3dfa3ae42ead2088193c42b2eef86c05ebb82c04d4a07162fb26970c5d29c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104083722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118526149"
 ---
-# <a name="d3dxfloat16-extensions"></a>Extensiones de D3DXFLOAT16
+# <a name="d3dxfloat16-extensions"></a>Extensiones D3DXFLOAT16
 
-Proporciona sobrecargas de operador y conversiones de tipo para las estructuras [**D3DXFLOAT16**](d3dxfloat16.md) .
+Proporciona sobrecargas de operador y conversión de tipos [**para estructuras D3DXFLOAT16.**](d3dxfloat16.md)
 
 ``` syntax
 typedef struct D3DXFLOAT16
@@ -50,11 +50,11 @@ Tipos derivados: \* LPD3DXFLOAT16
 
 ## <a name="members"></a>Miembros
 
-Para obtener más información sobre los miembros de la estructura, consulte D3DXFLOAT16.
+Para obtener más información sobre los miembros de estructura, consulte D3DXFLOAT16.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las sobrecargas de operador y las conversiones de tipo para esta estructura se implementan en d3dx9math. INL.
+Las sobrecargas de operador y las conversión de tipos para esta estructura se implementan en d3dx9math.inl.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,15 +62,15 @@ Las sobrecargas de operador y las conversiones de tipo para esta estructura se i
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9math. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9math.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Estructuras de D3DX](dx9-graphics-reference-d3dx-structures.md)
+[Estructuras D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> </dl>
 
  

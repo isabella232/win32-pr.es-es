@@ -1,6 +1,6 @@
 ---
 title: g_wszWMVCMaxBitrate (Wmcodecdsp.h)
-description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | g_wszWMVCMaxBitrate (Wmcodecdsp.h)
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (API de códecs de audio y vídeo multimedia y DSP). | g_wszWMVCMaxBitrate (Wmcodecdsp.h)
 ms.assetid: 2637d302-107b-4697-b9a2-4917a9ef8e04
 keywords:
 - g_wszWMVCMaxBitrate windows Media Format
@@ -23,7 +23,7 @@ ms.locfileid: "118703409"
 ---
 # <a name="g_wszwmvcmaxbitrate"></a>g \_ wszWMVCMaxBitrate
 
-Para obtener la documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP APIs (API](/previous-versions//dd464626(v=vs.85)) de códecs multimedia y DSP).
+Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP API (API](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
 
 ## <a name="requirements"></a>Requisitos
 

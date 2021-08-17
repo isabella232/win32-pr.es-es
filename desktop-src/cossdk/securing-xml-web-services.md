@@ -16,7 +16,7 @@ ms.locfileid: "118546968"
 El acceso a las aplicaciones COM+ expuestas como servicios web XML se controla mediante el servidor web IIS, que procesa las solicitudes entrantes. También puede configurar IIS para requerir que las comunicaciones con el autor de la llamada se lleve a cabo a través de un canal seguro establecido mediante el protocolo Capa de sockets seguros (SSL).
 
 > [!Note]  
-> Un servicio web XML protegido no admite el acceso WKO a través de WSDL. En su lugar, los clientes que han instalado el .NET Framework versión 1.1 pueden llamarlo en modo DESEDI. Si los clientes de terceros necesitan acceder al servicio web XML a través de WSDL, debe permitir el acceso anónimo.
+> Un servicio web XML protegido no admite el acceso WKO a través de WSDL. En su lugar, los clientes que han instalado la .NET Framework versión 1.1 pueden llamarlo en modo DESEDI. Si los clientes de terceros necesitan acceder al servicio web XML a través de WSDL, debe permitir el acceso anónimo.
 
  
 
@@ -29,7 +29,7 @@ El acceso a las aplicaciones COM+ expuestas como servicios web XML se controla m
 
 Para seleccionar el mecanismo de autenticación de un servicio web XML, siga estos pasos:
 
-1.  Haga clic con el botón **derecho en Mi PC** en el escritorio y haga clic en **Administrar.**
+1.  Haga clic con el botón **derecho Mi PC** en el escritorio y haga clic **en Administrar.**
 
 2.  En **Servicios y aplicaciones e** Internet Information **Service,** busque el icono correspondiente al directorio raíz virtual del servicio web XML. Haga clic con el botón derecho en el icono de directorio y elija **Propiedades.**
 
@@ -38,7 +38,7 @@ Para seleccionar el mecanismo de autenticación de un servicio web XML, siga est
 4.  En el **cuadro de diálogo Métodos** de autenticación, en **Acceso** autenticado , use las casillas para seleccionar los mecanismos de autenticación que desea permitir. Haga clic en **Aceptar**.
 
     > [!Note]  
-    > Puede configurar IIS para autenticar a los llamadores mediante cualquiera de las siguientes opciones en el cuadro de diálogo Métodos de autenticación de **IIS:** Autenticación integrada de **Windows**, Autenticación implícita para servidores de dominio **Windows,** Autenticación básica (la contraseña se envía en texto no **enviado)** o autenticación **de .NET Passport**. También puede permitir el acceso anónimo.
+    > Puede configurar IIS para autenticar a los llamadores mediante cualquiera de las siguientes opciones en el cuadro de diálogo Métodos de autenticación de **IIS:** Autenticación integrada de **Windows**, Autenticación implícita para servidores de dominio de **Windows**, Autenticación básica (la contraseña se envía en texto no **enviado)** o autenticación **de .NET Passport**. También puede permitir el acceso anónimo.
 
      
 
@@ -46,7 +46,7 @@ Para seleccionar el mecanismo de autenticación de un servicio web XML, siga est
 
 Para permitir el acceso anónimo no seguro a un servicio web XML, siga estos pasos:
 
-1.  Haga clic con el botón **derecho en Mi PC** en el escritorio y haga clic en **Administrar.**
+1.  Haga clic con el botón **derecho Mi PC** en el escritorio y haga clic **en Administrar.**
 
 2.  En **Servicios y aplicaciones e** Internet Information **Service,** busque el icono correspondiente al directorio raíz virtual del servicio web XML. Haga clic con el botón derecho en el icono de directorio y elija **Propiedades.**
 

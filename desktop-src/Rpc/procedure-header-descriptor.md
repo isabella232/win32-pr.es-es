@@ -60,7 +60,7 @@ Los identificadores explícitos pueden ser primitivos, genéricos y contexto; el
 
 Por convención, el tipo de identificador para las interfaces DCOM es FC \_ AUTO \_ HANDLE.
 
-Las marcas de IA<campo 1> es una máscara de \_ 8 bits de las marcas siguientes.
+Las marcas de IA<campo 1> es una máscara de 8 bits \_ de las marcas siguientes.
 
 
 
@@ -95,7 +95,7 @@ Las marcas siguientes están sobrecargadas.
 
  
 
-Las marcas rpc<campo 4> describe cómo establecer el \_ **campo RpcFlags** de la [**estructura RPC \_ MESSAGE.**](/windows/desktop/api/RpcdceP/ns-rpcdcep-rpc_message) Este campo solo está presente si las marcas de Oi<1> campo \_ tiene Oi \_ HAD \_ RPCFLAGS establecido. Si este campo no está presente, las marcas RPC del procedimiento remoto son cero.
+Las marcas rpc<campo 4> describe cómo establecer el \_ **campo RpcFlags** de la [**estructura RPC \_ MESSAGE.**](/windows/desktop/api/RpcdceP/ns-rpcdcep-rpc_message) Este campo solo está presente si las marcas de IA<1> campo \_ tiene Oi \_ HAD \_ RPCFLAGS establecido. Si este campo no está presente, las marcas RPC del procedimiento remoto son cero.
 
 > [!Note]  
 > Para mejorar el rendimiento, los intérpretes asincrónicos siempre tienen presentes las \_ marcas rpc<4> campo.
@@ -104,7 +104,7 @@ Las marcas rpc<campo 4> describe cómo establecer el \_ **campo RpcFlags** de la
 
 El campo \_ proc num<2> proporciona el número de procedimiento del procedimiento.
 
-El tamaño de pila<2> proporciona el tamaño total de todos los parámetros de la pila, incluido cualquier valor devuelto o \_ puntero.
+El tamaño de pila<2> proporciona el tamaño total de todos los parámetros de la pila, incluidos los valores devueltos o \_ puntero.
 
 La descripción \_ explícita del identificador<> campo se describe más adelante en este \_ documento. Este campo no está presente si el procedimiento usa un identificador implícito.
 

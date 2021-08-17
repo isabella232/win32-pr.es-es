@@ -59,9 +59,9 @@ Posición del índice. Contiene las coordenadas (x, y).
 
 Tipo: **R**
 
-Variable de recurso de solo lectura.
+Una variable de recurso de solo lectura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ### <a name="usage-example"></a>Ejemplo de uso
 
@@ -88,14 +88,14 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Texture2D](sm5-object-texture2d.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

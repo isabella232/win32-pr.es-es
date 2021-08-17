@@ -1,7 +1,7 @@
 ---
-description: Alfa también se puede proporcionar en un material. Para habilitar el material alfa, establezca el estado de representación del material difuso para que el tiempo de ejecución use los componentes de color difuso de material en lugar de los componentes de color difuso del vértice.
+description: Alfa también se puede proporcionar en un material. Para habilitar el material alfa, establezca el estado de representación del material difuso para que el tiempo de ejecución use los componentes de color difuso de material en lugar de los componentes de color difuso de vértice.
 ms.assetid: fd477d8f-d838-4a08-a8c6-38678798e0b0
-title: Material alfa (Direct3D 9)
+title: Material Alfa (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 9a70ed4a3f5bcaf38f4ace079af5b2e1804af0e24340e5004898c9ed26707d40
@@ -11,9 +11,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118798982"
 ---
-# <a name="material-alpha-direct3d-9"></a>Material alfa (Direct3D 9)
+# <a name="material-alpha-direct3d-9"></a>Material Alfa (Direct3D 9)
 
-Alfa también se puede proporcionar en un material. Para habilitar el material alfa, establezca el estado de representación del material difuso para que el tiempo de ejecución use los componentes de color difuso de material en lugar de los componentes de color difuso del vértice.
+Alfa también se puede proporcionar en un material. Para habilitar el material alfa, establezca el estado de representación del material difuso para que el tiempo de ejecución use los componentes de color difuso de material en lugar de los componentes de color difuso de vértice.
 
 
 ```
@@ -39,7 +39,7 @@ m_pd3dDevice->SetMaterial(&mtrl);
 
 <dl> <dt>
 
-[Combinación alfa](alpha-blending.md)
+[Alpha Blending](alpha-blending.md)
 </dt> </dl>
 
  

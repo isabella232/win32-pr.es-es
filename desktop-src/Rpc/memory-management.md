@@ -1,6 +1,6 @@
 ---
 title: Administración de memoria (RPC)
-description: En los temas siguientes se describe cómo los programas RPC asignan y desasignan la memoria de los datos pasados entre los programas cliente y servidor.
+description: En los temas siguientes se describe cómo los programas RPC asignan y desasignan la memoria de los datos pasados entre los programas de cliente y servidor.
 ms.assetid: b56ccac1-84cb-4687-bdd2-21ee716b472a
 keywords:
 - Llamada a procedimiento remoto RPC, descrita, administración de memoria
@@ -15,14 +15,14 @@ ms.locfileid: "118928401"
 ---
 # <a name="memory-management-rpc"></a>Administración de memoria (RPC)
 
-En los temas siguientes se describe cómo los programas RPC asignan y desasignan la memoria de los datos pasados entre los programas cliente y servidor.
+En los temas siguientes se describe cómo los programas RPC asignan y desasignan la memoria de los datos pasados entre los programas de cliente y servidor.
 
 -   [Introducción a la administración de memoria RPC](introduction-to-rpc-memory-management.md)
 -   [Cómo se asigna y desasigna la memoria](how-memory-is-allocated-and-deallocated.md)
 -   [Modelos de administración de memoria](memory-management-models.md)
 -   [Quién ¿Administra la memoria?](who-manages-memory-.md)
--   [Memoria huérfana](memory-orphaning.md)
--   [Resumen de reglas de asignación de memoria](summary-of-memory-allocation-rules.md)
+-   [Huérfano de memoria](memory-orphaning.md)
+-   [Resumen de las reglas de asignación de memoria](summary-of-memory-allocation-rules.md)
 
  
 

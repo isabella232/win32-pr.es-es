@@ -3,7 +3,7 @@ title: Elemento ToggleButton
 description: Representa un control Botón de alternancia.
 ms.assetid: f26a90e6-9e9a-4fde-8753-50b8b1d09f80
 keywords:
-- ToggleButton, elemento Windows Cinta de opciones
+- ToggleButton, elemento Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -47,7 +47,7 @@ Representa un control [Botón de alternancia.](windowsribbon-controls-togglebutt
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -56,7 +56,7 @@ Representa un control [Botón de alternancia.](windowsribbon-controls-togglebutt
 <td><strong>ApplicationDefaults.IsChecked</strong><br/></td>
 <td>Boolean<br/></td>
 <td>No<br/></td>
-<td>Este atributo solo es válido cuando <strong>el elemento ToggleButton</strong> es un elemento secundario <a href="windowsribbon-element-quickaccesstoolbar-applicationdefaults.md"><strong>de QuickAccessToolbar.ApplicationDefaults.</strong></a> <br/> Restringido a uno de los siguientes valores:<br/> <br/>
+<td>Este atributo solo es válido cuando <strong>el elemento ToggleButton</strong> es un elemento secundario de <a href="windowsribbon-element-quickaccesstoolbar-applicationdefaults.md"><strong>QuickAccessToolbar.ApplicationDefaults.</strong></a> <br/> Restringido a uno de los siguientes valores:<br/> <br/>
 <dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Predeterminada. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="even">
@@ -93,19 +93,19 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Opcional o obligatorio, en función del elemento primario.
+Opcional o obligatorio, según el elemento primario.
 
 Puede producirse como máximo una vez para cada [**elemento SplitButton.ButtonItem.**](windowsribbon-element-splitbutton-buttonitem.md)
 
-Puede producirse una o varias veces para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**Group**](windowsribbon-element-group.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**MenuGroup**](windowsribbon-element-menugroup.md), [**QuickAccessToolbar.ApplicationDefaults,**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md) [**SplitButton**](windowsribbon-element-splitbutton.md) [**o SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
+Puede producirse una o varias veces para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**Group**](windowsribbon-element-group.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**MenuGroup**](windowsribbon-element-menugroup.md), [**QuickAccessToolbar.ApplicationDefaults,**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md) [**SplitButton**](windowsribbon-element-splitbutton.md)o [**SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
 ## <a name="examples"></a>Ejemplos
 
 En el ejemplo siguiente se muestra el marcado básico para el **elemento ToggleButton.**
 
-En esta sección de código se muestra **una declaración de elemento ToggleButton** dentro del elemento [**QuickAccessToolbar.ApplicationDefaults.**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md)
+En esta sección del código se muestra **una declaración de elemento ToggleButton** dentro del elemento [**QuickAccessToolbar.ApplicationDefaults.**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md)
 
 
 ```XML

@@ -17,15 +17,15 @@ La aplicación WpdServicesApiSample incluye código que muestra cómo una aplica
 
 Cuando el usuario elige la opción "0" en la línea de comandos, la aplicación invoca el método **EnumerateContactsServices** que se encuentra en el módulo ServiceEnumeration.cpp. Este método muestra una lista de todos los dispositivos conectados que admiten el servicio Contactos.
 
-Por ejemplo, si WpdServiceSampleDriver es el único dispositivo instalado, la aplicación devuelve tres campos de datos: un nombre descriptivo ("dispositivo de ejemplo"), un fabricante ("Windows grupo de dispositivos portátiles") y una descripción ("Dispositivo de servicio de contactos 2000").
+Por ejemplo, si WpdServiceSampleDriver es el único dispositivo instalado, la aplicación devuelve tres campos de datos: un nombre descriptivo ("dispositivo de ejemplo"), un fabricante ("grupo de dispositivos portátiles de Windows") y una descripción ("Dispositivo de servicio de contactos 2000").
 
 El **método EnumerateContactsServices** realiza las siguientes tareas:
 
 -   Crea una [**interfaz IPortableDeviceManager para**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicemanager) controlar la enumeración de los dispositivos instalados.
--   Crea una [**interfaz IPortableDeviceServiceManager para**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager) controlar la enumeración de los servicios en cada dispositivo.
+-   Crea una [**interfaz IPortableDeviceServiceManager**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager) para controlar la enumeración de los servicios en cada dispositivo.
 -   Recorre en iteración los dispositivos instalados, busca el servicio Contactos y muestra la información del dispositivo para cualquier dispositivo que admita este servicio.
 
-El código siguiente muestra el **método EnumerateContactsServices.**
+En el código siguiente se muestra **el método EnumerateContactsServices.**
 
 
 ```C++
@@ -150,7 +150,7 @@ void EumerateContactsServices(CAtlArray<PWSTR>& ContactsServicePnpIDs)
 [**IPortableDeviceManager (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicemanager)
 </dt> <dt>
 
-[**IPortableDeviceServiceManager (interfaz)**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager)
+[**IPortableDeviceServiceManager (Interfaz)**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager)
 </dt> <dt>
 
 [WpdServicesApiSample](wpdapisample-sample-service-application.md)

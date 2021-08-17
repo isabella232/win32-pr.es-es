@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118527585"
 ---
-# <a name="d3dmaterial9-structure"></a>D3DMATERIAL9 (estructura)
+# <a name="d3dmaterial9-structure"></a>Estructura D3DMATERIAL9
 
 Especifica las propiedades de material.
 

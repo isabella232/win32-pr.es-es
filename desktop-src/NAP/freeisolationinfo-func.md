@@ -1,9 +1,9 @@
 ---
-title: Función FreeIsolationInfo (NapUtil. h)
+title: Función FreeIsolationInfo (NapUtil.h)
 description: Libera una estructura de datos IsolationInfo.
 ms.assetid: 639cfa74-0823-4a19-9cbe-dd6f0a38e7eb
 keywords:
-- FreeIsolationInfo función NAP
+- Función NAP de FreeIsolationInfo
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45ed154d35b32edab0f1a68d84f78c10cfd1cfe0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 031fd49bbdda7c0b36481776ba3c9dca8ea6d1c236b0010ada319b9a51f989df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118940652"
 ---
-# <a name="freeisolationinfo-function"></a>FreeIsolationInfo función)
+# <a name="freeisolationinfo-function"></a>Función FreeIsolationInfo
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-La función **FreeIsolationInfo** libera una estructura de datos [**IsolationInfo**](/windows/win32/api/naptypes/ns-naptypes-isolationinfo) .
+La **función FreeIsolationInfo** libera una estructura [**de datos IsolationInfo.**](/windows/win32/api/naptypes/ns-naptypes-isolationinfo)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,20 +45,20 @@ NAPAPI VOID WINAPI FreeIsolationInfo(
 
 <dl> <dt>
 
-*isolationInfo* \[ de\]
+*isolationInfo* \[ En\]
 </dt> <dd>
 
-Puntero a la estructura de datos [**IsolationInfo**](/windows/win32/api/naptypes/ns-naptypes-isolationinfo) que se va a liberar.
+Puntero a la estructura [**de datos IsolationInfo**](/windows/win32/api/naptypes/ns-naptypes-isolationinfo) que se liberará.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Todas las interfaces COM que admite el sistema NAP usan reglas estándar de administración de memoria COM y los asignadores de memoria COM (**CoTaskMemAlloc** y **CoTaskMemFree**):
+Todas las interfaces COM compatibles con el sistema NAP usan reglas de administración de memoria COM estándar y los asignadores de memoria COM (**CoTaskMemAlloc** y **CoTaskMemFree**):
 
--   El autor de la llamada asigna y libera los parámetros **in** .
--   El destinatario asigna los parámetros **out** y el llamador los libera mediante **CoTaskMem**.
--   Los parámetros **in/out** son asignados por el autor de la llamada, liberados y reasignados por el destinatario y, en última instancia, liberados por el llamador, mediante **CoTaskMem**.
+-   **El** autor de la llamada asigna y libera los parámetros de .
+-   **El** destinatario asigna los parámetros out y el autor de la llamada lo libera **mediante CoTaskMem**.
+-   **El autor de** la llamada asigna los parámetros de entrada y salida, los libera y reasigna el destinatario y, en última instancia, los libera el autor de la llamada, mediante **CoTaskMem**.
 
 Todas las funciones NAP para liberar memoria también liberan todos los punteros incrustados.
 
@@ -68,9 +68,9 @@ Todas las funciones NAP para liberar memoria también liberan todos los punteros
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>NapUtil. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl> |
 
 

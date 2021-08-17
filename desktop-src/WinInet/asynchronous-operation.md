@@ -41,9 +41,9 @@ El funcionamiento de forma asincrónica tiene varias ventajas. Por ejemplo:
 
 ## <a name="scenarios"></a>Escenarios
 
-Supongamos que la aplicación debe descargar los precios del café de los sitios Downfall Coffee & Tea y Fourth Coffee y comparar los precios. El sitio cuarto café normalmente tiene un tiempo de respuesta más lento, por lo que la aplicación debe descargar la información de Downfall Coffee & Tea primero.
+Supongamos que la aplicación debe descargar los precios del café de los sitios Downfall Coffee & Tea y Fourth Coffee y comparar los precios. El sitio cuarto café normalmente tiene un tiempo de respuesta más lento, por lo que la aplicación debe descargar la información de Downfall Coffee & Té primero.
 
-Se desarrollan dos versiones de la aplicación. Uno funciona sincrónicamente, descargando primero los precios desde el sitio downfall Coffee & Té y, después, los precios desde el sitio cuarto café. El segundo funciona de forma asincrónica, enviando solicitudes a ambos sitios y descargando los precios cuando estén disponibles.
+Se desarrollan dos versiones de la aplicación. Uno funciona de forma sincrónica, descargando primero los precios del sitio downfall Coffee & Tea y, después, los precios del sitio cuarto café. El segundo funciona de forma asincrónica, enviando solicitudes a ambos sitios y descargando los precios cuando estén disponibles.
 
 En la tabla siguiente se muestra lo que ocurriría si el cuarto sitio de café fuera más rápido en un día determinado.
 
@@ -51,10 +51,10 @@ En la tabla siguiente se muestra lo que ocurriría si el cuarto sitio de café f
 
 | Evento                                                            | Versión sincrónica                        | Versión asincrónica                                     |
 |------------------------------------------------------------------|--------------------------------------------|----------------------------------------------------------|
-| Inicio                                                            | Envío de una solicitud a Downfall Coffee & Té      | Envío de solicitudes a Downfall Coffee & Té y Cuarto Café |
+| Inicio                                                            | Envío de una solicitud a Downfall Coffee & Tea      | Envío de solicitudes a Downfall Coffee & Té y Cuarto Café |
 | Solicitud de la versión asincrónica a Cuarto café completado | En espera                                    | Descarga de los precios de Cuarto café                       |
-| Solicitud a Downfall Coffee & Té completado                       | Descarga de precios de Downfall Coffee & Tea | Descarga de precios de Downfall Coffee & Tea               |
-| Después de descargar los precios del & de café downfall Coffee              | Envío de una solicitud a Cuarto café              | Comparación de precios                                           |
+| Solicitud a Downfall Coffee & Té completado                       | Descarga de precios de Downfall Coffee & Té | Descarga de precios de Downfall Coffee & Té               |
+| Después de que se descarguen los precios & downfall Coffee & té              | Envío de una solicitud a Cuarto café              | Comparación de precios                                           |
 | Comparación de la versión asincrónica completada                      | En espera                                    | Operación completada                                       |
 | Solicitud de la versión sincrónica a Cuarto café completado  | Descarga de los precios de Cuarto café         | N/D                                                      |
 | Después de descargar los precios del cuarto café                      | Comparación de precios                             | N/D                                                      |
@@ -106,7 +106,7 @@ Funciones que se pueden usar de forma asincrónica
  
 
 > [!Note]  
-> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones o servicios de servidor, use [Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones o servicios de servidor, use [Microsoft Windows HTTP Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
  
 

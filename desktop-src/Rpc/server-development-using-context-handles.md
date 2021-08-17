@@ -1,6 +1,6 @@
 ---
 title: Desarrollo del servidor mediante identificadores de contexto
-description: Desde la perspectiva del desarrollo de programas de servidor, un identificador de contexto es un puntero sin tipo. Los programas de servidor inicializan identificadores de contexto señalando a los datos en memoria o en alguna otra forma de almacenamiento (como archivos en discos).
+description: Desde la perspectiva del desarrollo de programas de servidor, un identificador de contexto es un puntero sin tipo. Los programas de servidor inicializan identificadores de contexto señalando los datos en la memoria o en alguna otra forma de almacenamiento (por ejemplo, archivos en discos).
 ms.assetid: 6a1aabca-4cb9-401c-90c7-0cff7a69b7b6
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118925341"
 ---
 # <a name="server-development-using-context-handles"></a>Desarrollo del servidor mediante identificadores de contexto
 
-Desde la perspectiva del desarrollo de programas de servidor, un identificador de contexto es un puntero sin tipo. Los programas de servidor inicializan identificadores de contexto señalando a los datos en memoria o en alguna otra forma de almacenamiento (como archivos en discos).
+Desde la perspectiva del desarrollo de programas de servidor, un identificador de contexto es un puntero sin tipo. Los programas de servidor inicializan identificadores de contexto señalando los datos en la memoria o en alguna otra forma de almacenamiento (por ejemplo, archivos en discos).
 
 Por ejemplo, suponga que un cliente usa un identificador de contexto para solicitar una serie de actualizaciones a un registro de una base de datos. El cliente llama a un procedimiento remoto en el servidor y le pasa una clave de búsqueda. El programa de servidor busca la clave de búsqueda en la base de datos y obtiene el número de registro entero del registro correspondiente. A continuación, el servidor puede apuntar un puntero a void en una ubicación de memoria que contenga el número de registro. Cuando se devuelve, el procedimiento remoto tendría que devolver el puntero como un identificador de contexto a través de su valor devuelto o su lista de parámetros. El cliente tendría que pasar el puntero al servidor cada vez que llamó a procedimientos remotos para actualizar el registro. Durante cada una de estas operaciones de actualización, el servidor convertiría el puntero void en un puntero a un entero.
 
@@ -113,7 +113,7 @@ void RemoteClose(PPCONTEXT_HANDLE_TYPE pphContext)
 
 
 > [!Note]  
-> Aunque se espera que el cliente pase un identificador de contexto válido a una llamada con atributos direccionales de entrada y salida, RPC no rechaza los identificadores de contexto NULL para esta combinación \[ \] de atributos direccionales.  El **identificador** de contexto NULL se pasa al servidor como un **puntero NULL.** El código de servidor para las llamadas que contienen un identificador de contexto de entrada y salida debe escribirse para evitar una infracción de acceso cuando se recibe \[ \] un puntero **NULL.**
+> Aunque se espera que el cliente pase un identificador de contexto válido a una llamada con atributos de entrada y salida, RPC no rechaza los identificadores de contexto NULL para esta combinación de atributos \[ \] direccionales.  El **identificador** de contexto NULL se pasa al servidor como un **puntero NULL.** El código de servidor para las llamadas que contienen un identificador de contexto de entrada y salida debe escribirse para evitar una infracción de acceso cuando se recibe \[ \] un puntero **NULL.**
 
  
 

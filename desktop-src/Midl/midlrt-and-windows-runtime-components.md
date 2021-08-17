@@ -1,6 +1,6 @@
 ---
 title: MIDLRT y componentes Windows Runtime
-description: Muestra cómo crear archivos de metadatos (.winmd) que representan la API para componentes Windows runtime personalizados.
+description: Muestra cómo crear archivos de metadatos (.winmd) que representan la API para componentes personalizados Windows runtime.
 ms.assetid: 7830A5DB-9696-4A93-948B-51DA46A5143C
 keywords:
 - MIDL del compilador MIDL
@@ -17,10 +17,10 @@ ms.locfileid: "118642909"
 ---
 # <a name="midlrt-and-windows-runtime-components"></a>MIDLRT y componentes Windows Runtime
 
-Muestra cómo crear archivos de metadatos (.winmd) que representan la API para componentes Windows runtime personalizados.
+Muestra cómo crear archivos de metadatos (.winmd) que representan la API para componentes personalizados Windows runtime.
 
 
-Use el compilador MIDLRT para compilar archivos de metadatos (.winmd) para los componentes Windows runtime personalizados.
+Use el compilador MIDLRT para compilar archivos de metadatos (.winmd) para los componentes personalizados Windows runtime.
 
 Cuando se generan los archivos de metadatos, puede crearlos en un paquete más eficaz mediante la utilidad MDMERGE. Para obtener más información, vea [MDMERGE y archivos de metadatos](mdmerge-and-metadata-files.md).
 

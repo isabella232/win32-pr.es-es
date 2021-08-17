@@ -43,11 +43,11 @@ No hay elementos secundarios.
 
 | Elemento                                                   |
 |-----------------------------------------------------------|
-| [**Cadena**](windowsribbon-element-string.md)<br/> |
+| [**String**](windowsribbon-element-string.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
@@ -57,13 +57,13 @@ El valor de **String.Id** debe ser único.
 
 El identificador está asociado a una definición de cadena en el archivo de encabezado de la cinta de opciones, por ejemplo, `#define strSave 59999` .
 
-Este elemento contiene un valor de la unión de los tipos *xs:positiveInteger* y *xs:string.* El valor está restringido a un valor entero entre 2 y 59999, ambos incluidos o 0x2 y 0xea5f en hexadecimal, inclusivo.
+Este elemento contiene un valor de la unión de tipos *xs:positiveInteger* y *xs:string.* El valor está restringido a un valor entero comprendido entre 2 y 59999, inclusivo o 0x2 y 0xea5f en hexadecimal, inclusivo.
 
 La longitud máxima es de 10 caracteres con ceros iniciales opcionales.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado de [**un elemento Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) con **una String.Id** de datos.
+En el ejemplo siguiente se muestra el marcado de un [**elemento Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) **con String.Id** declaración.
 
 
 ```XML
@@ -84,7 +84,7 @@ En el ejemplo siguiente se muestra el marcado de [**un elemento Command.LabelTit
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>              |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 

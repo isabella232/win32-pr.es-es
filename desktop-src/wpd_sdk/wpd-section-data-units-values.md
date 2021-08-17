@@ -24,7 +24,7 @@ ms.locfileid: "118696262"
 
 La **enumeración \_ WPD SECTION \_ DATA UNITS \_ \_ VALUES** indica las unidades de una sección de datos a la que se hace referencia.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -64,7 +64,7 @@ Las unidades especificadas se especifican en milisegundos.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

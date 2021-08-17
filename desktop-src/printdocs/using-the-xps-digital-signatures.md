@@ -1,5 +1,5 @@
 ---
-description: En este tema se enumeran las interfaces de firma digital de LA API de documentos XPS.
+description: En este tema se enumeran las interfaces de firma digital de document API xps.
 ms.assetid: dc27aa2d-66b3-4dbc-afa1-bab3507c44e1
 title: XPS OM Digital Signatures
 ms.topic: article
@@ -13,14 +13,14 @@ ms.locfileid: "118469322"
 ---
 # <a name="xps-om-digital-signatures"></a>XPS OM Digital Signatures
 
-En este tema se enumeran las interfaces de firma digital de LA API de documentos XPS.
+En este tema se enumeran las interfaces de firma digital de document API xps.
 
 XPS OM admite firmas digitales; sin embargo, también se puede acceder directamente a las firmas digitales de un documento XPS sin necesidad de crear una OM XPS. Para obtener más información sobre cómo acceder a las firmas digitales XPS sin XPS OM, consulte [XPS Digital Signature API](xps-digital-signatures.md).
 
 <dl>
 
 [**IXpsOMSignatureBlockResource (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomsignatureblockresource)  
-[**IXpsOMSignatureBlockResourceCollection (Interfaz)**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomsignatureblockresourcecollection)  
+[**Interfaz IXpsOMSignatureBlockResourceCollection**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomsignatureblockresourcecollection)  
 </dl>
 
 ## <a name="related-topics"></a>Temas relacionados

@@ -22,9 +22,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119437185"
 ---
-# <a name="em_setzoom-message"></a>Mensaje \_ SETZOOM EM
+# <a name="em_setzoom-message"></a>Mensaje \_ DE EM SETZOOM
 
-Establece la relación de zoom para un control de edición multilínea o un control de edición enriquecido. La relación debe ser un valor entre 1/64 y 64. El control de edición debe tener el estilo extendido **\_ ES EX \_ ZOOMABLE;** para que este mensaje tenga efecto, vea [Editar estilos extendidos de control.](edit-control-window-extended-styles.md)
+Establece la relación de zoom para un control de edición multilínea o un control de edición enriquecido. La relación debe ser un valor entre 1/64 y 64. El control de edición debe tener el estilo extendido **ES \_ EX \_ ZOOMABLE** establecido; para que este mensaje suba efecto, vea [Editar estilos extendidos de control](edit-control-window-extended-styles.md).
 
 ## <a name="parameters"></a>Parámetros
 
@@ -33,7 +33,7 @@ Establece la relación de zoom para un control de edición multilínea o un cont
 *wParam* 
 </dt> <dd>
 
-Numerador de la relación de zoom.
+Numerador de la proporción de zoom.
 
 </dd> <dt>
 
@@ -46,7 +46,7 @@ Denominador de la relación de zoom. Estos parámetros pueden tener los siguient
 
 | Value                                                                                                                                                                                                                                                              | Significado                                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="Both_0"></span><span id="both_0"></span><span id="BOTH_0"></span><dl> <dt>**Ambos 0**</dt> </dl>                                                                                                   | Desactiva el zoom mediante el mensaje **EM \_ SETZOOM** (el zoom todavía puede producirse [**con TxGetExtent).**](/windows/desktop/api/Textserv/nf-textserv-itexthost-txgetextent)<br/> |
+| <span id="Both_0"></span><span id="both_0"></span><span id="BOTH_0"></span><dl> <dt>**Ambos 0**</dt> </dl>                                                                                                   | Desactiva el zoom mediante el mensaje **\_ EM SETZOOM** (el zoom todavía puede producirse [**con TxGetExtent).**](/windows/desktop/api/Textserv/nf-textserv-itexthost-txgetextent)<br/> |
 | <span id="1_64____wParam___lParam____64"></span><span id="1_64____wparam___lparam____64"></span><span id="1_64____WPARAM___LPARAM____64"></span><dl> <dt>**1/64 < (wParam/lParam) < 64**</dt> </dl> | Zooms display by the zoom ratio numerator/denominator<br/>                                                                                |
 
 
@@ -61,9 +61,9 @@ Si se acepta la nueva configuración de zoom, el valor devuelto es **TRUE.**
 
 Si no se acepta la nueva configuración de zoom, el valor devuelto es **FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**Editar:** Compatible con Windows 10 1809 y versiones posteriores. El control de edición debe tener el estilo extendido **\_ ES EX \_ ZOOMABLE;** para que este mensaje tenga efecto, vea [Editar estilos extendidos de control.](edit-control-window-extended-styles.md) Para obtener información sobre el control de edición, vea [Editar controles](about-edit-controls.md).
+**Editar:** Compatible con Windows 10 1809 y versiones posteriores. El control de edición debe tener el estilo extendido **ES \_ EX \_ ZOOMABLE** establecido; para que este mensaje suba efecto, vea [Editar estilos extendidos de control](edit-control-window-extended-styles.md). Para obtener información sobre el control de edición, vea [Editar controles](about-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 

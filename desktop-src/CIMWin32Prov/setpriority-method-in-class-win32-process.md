@@ -21,11 +21,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118675574"
 ---
-# <a name="setpriority-method-of-the-win32_process-class"></a>Método SetPriority de la clase Win32 \_ Process
+# <a name="setpriority-method-of-the-win32_process-class"></a>Método SetPriority de la clase Process de Win32 \_
 
 El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetPriority** intenta cambiar la prioridad de ejecución del proceso.
 
-En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,13 +56,13 @@ Nueva clase de prioridad para el proceso. Tenga en cuenta que estos valores son 
 
 </dt> <dd>
 
-Se especifica para un proceso con subprocesos que se ejecutan solo cuando el sistema está inactivo. Los subprocesos de un proceso que se ejecutan en una clase de prioridad superior adelantan los subprocesos del proceso, por ejemplo, un protector de pantalla. Los procesos secundarios heredan la clase idle-priority.
+Se especifica para un proceso con subprocesos que se ejecutan solo cuando el sistema está inactivo. Los subprocesos de un proceso que se ejecutan en una clase de prioridad superior adelantan los subprocesos del proceso, por ejemplo, un protector de pantalla. Los procesos secundarios heredan la clase de prioridad inactiva.
 
 </dd> <dt>
 
 <span id="Below_Normal"></span><span id="below_normal"></span><span id="BELOW_NORMAL"></span>
 
-<span id="Below_Normal"></span><span id="below_normal"></span><span id="BELOW_NORMAL"></span>**Por debajo de Normal** (16384)
+<span id="Below_Normal"></span><span id="below_normal"></span><span id="BELOW_NORMAL"></span>**Por debajo de normal** (16384)
 
 
 </dt> <dd>
@@ -100,7 +100,7 @@ Indica un proceso que tiene prioridad por encima de **NORMAL \_ PRIORITY \_ CLAS
 
 </dt> <dd>
 
-Se especifica para un proceso que realiza tareas de tiempo crítico que se deben ejecutar inmediatamente. Los subprocesos del proceso tienen prioridad sobre los subprocesos de aquellos procesos de clase de prioridad normal o inactiva. Un ejemplo es el Lista de tareas, que debe responder rápidamente cuando lo llama el usuario, independientemente de la carga en el sistema operativo. Debe tener mucho cuidado al usar la clase de prioridad alta, ya que una aplicación de clase de prioridad alta puede usar casi todo el tiempo de CPU disponible.
+Se especifica para un proceso que realiza tareas críticas en el tiempo que se deben ejecutar inmediatamente. Los subprocesos del proceso tienen prioridad sobre los subprocesos de aquellos procesos de clase de prioridad normal o inactiva. Un ejemplo es el Lista de tareas, que debe responder rápidamente cuando lo llame el usuario, independientemente de la carga en el sistema operativo. Debe tener mucho cuidado al usar la clase de prioridad alta, ya que una aplicación de clase de prioridad alta puede usar casi todo el tiempo de CPU disponible.
 
 </dd> <dt>
 
@@ -111,7 +111,7 @@ Se especifica para un proceso que realiza tareas de tiempo crítico que se deben
 
 </dt> <dd>
 
-Se especifica para un proceso que tiene la prioridad más alta posible. Los subprocesos del proceso adelantan los subprocesos de todos los demás procesos, incluidos los procesos del sistema operativo que realizan tareas importantes. Por ejemplo, un proceso en tiempo real que se ejecuta durante más de un intervalo muy breve puede hacer que las cachés de disco no se vacíen o que un mouse deje de responder.
+Se especifica para un proceso que tiene la prioridad más alta posible. Los subprocesos del proceso adelantan los subprocesos de todos los demás procesos, incluidos los procesos del sistema operativo que realizan tareas importantes. Por ejemplo, un proceso en tiempo real que se ejecuta durante más de un intervalo muy breve puede hacer que las memorias caché de disco no se vacíen o que un mouse deje de responder.
 
 </dd> </dl> </dd> </dl>
 
@@ -142,19 +142,19 @@ Devuelve uno de los valores enumerados en la lista siguiente o un valor diferent
 **Otros** (22 4294967295)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para establecer la prioridad en Tiempo real, el autor de la llamada debe tener **SeIncreaseBasePriorityPrivilege** (**SE INC BASE PRIORITY \_ \_ \_ \_ PRIVILEGE**). Sin este privilegio, la prioridad más alta que se puede establecer en es Alta prioridad.
+Para establecer la prioridad en Tiempo real, el autor de la llamada debe tener **SeIncreaseBasePriorityPrivilege** (**SE INC BASE PRIORITY \_ \_ \_ \_ PRIVILEGE**). Sin este privilegio, la prioridad más alta se puede establecer en es Alta prioridad.
 
 ## <a name="examples"></a>Ejemplos
 
-El [ejemplo modify the priority of a running process](https://Gallery.TechNet.Microsoft.Com/23615ee7-cccb-43c2-b994-6106ce2fc05e) VBScript cambia la prioridad de una instancia en ejecución de Notepad.exe normal a por encima de normal.
+El [ejemplo modificar la prioridad de](https://Gallery.TechNet.Microsoft.Com/23615ee7-cccb-43c2-b994-6106ce2fc05e) un proceso en ejecución de VBScript cambia la prioridad de una instancia en ejecución de Notepad.exe normal a superior a normal.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -164,7 +164,7 @@ El [ejemplo modify the priority of a running process](https://Gallery.TechNet.Mi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

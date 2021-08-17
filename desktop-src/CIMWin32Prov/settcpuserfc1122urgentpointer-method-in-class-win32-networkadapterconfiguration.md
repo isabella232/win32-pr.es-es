@@ -1,5 +1,5 @@
 ---
-description: El método estático de la clase WMI SetTcpUseRFC1122UrgentPointer se usa para especificar si TCP usa la especificación RFC 1122 para los datos urgentes o el modo que usan los sistemas derivados de Diseño de software (BSD) de Berkeley.
+description: El método estático de la clase WMI SetTcpUseRFC1122UrgentPointer se usa para especificar si TCP usa la especificación RFC 1122 para datos urgentes o el modo que usan los sistemas derivados de Diseño de software de Berkeley (BSD).
 ms.assetid: f8d07690-2723-4bc3-b15f-a24d575456a7
 ms.tgt_platform: multiple
 title: Método SetTcpUseRFC1122UrgentPointer de la Win32_NetworkAdapterConfiguration clase
@@ -23,9 +23,9 @@ ms.locfileid: "119439245"
 ---
 # <a name="settcpuserfc1122urgentpointer-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetTcpUseRFC1122UrgentPointer de la clase \_ NetworkAdapterConfiguration de Win32
 
-El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetTcpUseRFC1122UrgentPointer** se usa para especificar si TCP usa la especificación RFC 1122 para los datos urgentes o el modo que usan los sistemas derivados de Diseño de software (BSD) de Berkeley.
+El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetTcpUseRFC1122UrgentPointer** se usa para especificar si TCP usa la especificación RFC 1122 para datos urgentes o el modo que usan los sistemas derivados de Diseño de software de Berkeley (BSD).
 
-En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,7 +60,7 @@ Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requi
 
 0
 
-Finalización correcta, no se requiere reinicio.
+Finalización correcta, no es necesario reiniciar.
 
 </dd> <dt>
 
@@ -240,7 +240,7 @@ No se puede configurar el servicio DHCP.
 
 82
 
-No se puede renovar la concesión dhcp.
+No se puede renovar la concesión DHCP.
 
 </dd> <dt>
 
@@ -258,7 +258,7 @@ No se puede liberar la concesión DHCP.
 
 84
 
-Ip no habilitada en el adaptador.
+IP no habilitada en el adaptador.
 
 </dd> <dt>
 
@@ -271,7 +271,7 @@ IPX no habilitado en el adaptador.
 
 </dd> <dt>
 
-**Error de límites de número de marco/red**
+**Error de límites de número de marco o red**
 </dt> <dd>
 
 86
@@ -280,7 +280,7 @@ Error de límites de número de red o marco.
 
 </dd> <dt>
 
-**Tipo de fotograma no válido**
+**Tipo de marco no válido**
 </dt> <dd>
 
 87
@@ -404,13 +404,13 @@ DHCP no habilitado en el adaptador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 RFC 1122 y BSD interpretan el puntero urgente en el encabezado TCP y la longitud de los datos urgentes de forma diferente. No son interoperables. El valor predeterminado es el modo BSD.
 
 ## <a name="examples"></a>Ejemplos
 
-El [ejemplo modificar el uso urgente](https://Gallery.TechNet.Microsoft.Com/0ff22a90-0be6-4914-8db7-aaf72cbea9cb) de puntero para todos los adaptadores de red de VBScript configura un equipo para que use la especificación RFC 1122 para los datos urgentes.
+El [ejemplo modificar el uso urgente](https://Gallery.TechNet.Microsoft.Com/0ff22a90-0be6-4914-8db7-aaf72cbea9cb) de punteros para todos los adaptadores de red de VBScript configura un equipo para que use la especificación RFC 1122 para los datos urgentes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -436,7 +436,7 @@ El [ejemplo modificar el uso urgente](https://Gallery.TechNet.Microsoft.Com/0ff2
 [**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas wmi: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas WMI: Redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
 [Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)

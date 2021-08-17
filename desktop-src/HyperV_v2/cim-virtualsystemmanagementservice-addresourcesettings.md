@@ -24,7 +24,7 @@ ms.locfileid: "118646473"
 
 Agrega recursos a una configuración del sistema virtual.
 
-Cuando se aplica a una configuración del sistema virtual de "estado", como efecto secundario se agregan recursos al sistema virtual activo.
+Cuando se aplica a una configuración de sistema virtual de "estado", como efecto secundario se agregan recursos al sistema virtual activo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,34 +47,34 @@ uint32 AddResourceSettings(
 *AffectedConfiguration* \[ En\]
 </dt> <dd>
 
-Una [**referencia CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) a la configuración del sistema virtual afectada.
+Referencia [**de CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) a la configuración del sistema virtual afectada.
 
 </dd> <dt>
 
 *ResourceSettings* \[ En\]
 </dt> <dd>
 
-Matriz de cadenas que contiene una instancia incrustada de la clase [**\_ CIM ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) que describe los aspectos virtuales de un recurso virtual que se va a agregar al sistema virtual.
+Matriz de cadenas que contiene una instancia incrustada de la clase [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) que describe los aspectos virtuales de un recurso virtual que se va a agregar al sistema virtual.
 
 </dd> <dt>
 
 *ResultingResourceSettings* \[ out\]
 </dt> <dd>
 
-Matriz de referencias a instancias de la clase [**\_ CIM ResourceAllocationSettingData que**](cim-resourceallocationsettingdata.md) representa aspectos virtuales de los recursos virtuales agregados.
+Matriz de referencias a instancias de la clase [**CIM \_ ResourceAllocationSettingData que**](cim-resourceallocationsettingdata.md) representan aspectos virtuales de los recursos virtuales agregados.
 
 </dd> <dt>
 
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación es de larga duración, opcionalmente se puede devolver un trabajo. En este caso, las instancias de la clase [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) que representan la configuración de recursos agregada están disponibles a través de la asociación **CIM \_ ConreteComponent desde** la instancia de la clase CIM [**\_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) que representa la configuración del sistema virtual afectada.
+Si la operación es de larga duración, opcionalmente se puede devolver un trabajo. En este caso, las instancias de la clase [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) que representan la configuración de recursos agregada están disponibles a través de la asociación **CIM \_ ConreteComponent** desde la instancia de la clase [**CIM \_ VirtualSystemSettingData que representa**](cim-virtualsystemsettingdata.md) la configuración del sistema virtual afectada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -109,7 +109,7 @@ Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un er
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -119,7 +119,7 @@ Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un er
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -30,7 +30,7 @@ Notifica a una aplicación cliente cuando se completa su marcador.
 <span id="dwBookMarkID"></span><span id="dwbookmarkid"></span><span id="DWBOOKMARKID"></span>*dwBookMarkID*
 </dt> <dd>
 
-Identificador del marcador que dio lugar a la activación del evento.
+Identificador del marcador que dese provocó el evento.
 
 </dd> </dl>
 

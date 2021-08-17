@@ -1,6 +1,6 @@
 ---
 title: CDM_GETFOLDERIDLIST mensaje (Commdlg.h)
-description: Recupera la dirección de la lista de identificadores de elemento correspondiente a la carpeta que un cuadro de diálogo Abrir o Guardar como de estilo explorador tiene abierto actualmente.
+description: Recupera la dirección de la lista de identificadores de elemento correspondiente a la carpeta que un cuadro de diálogo Abrir o Guardar como del estilo explorador tiene abierto actualmente.
 ms.assetid: 9d2d2c35-ff1d-43de-ab0b-c96e0f1e9e24
 keywords:
 - CDM_GETFOLDERIDLIST cuadros de diálogo de mensaje
@@ -23,9 +23,9 @@ ms.locfileid: "118786202"
 ---
 # <a name="cdm_getfolderidlist-message"></a>Mensaje \_ GETFOLDERIDLIST de CDM
 
-\[A partir Windows Vista,  los  cuadros de diálogo Abrir y Guardar como comunes se han reemplazado por el cuadro [de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca de cuadros de diálogo común.\]
+\[A partir Windows Vista,  los  cuadros de diálogo Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
 
-Recupera la dirección de la lista de identificadores de  elemento correspondiente a la carpeta que un cuadro de diálogo Abrir o Guardar **como** de estilo explorador tiene abierto actualmente. El cuadro de diálogo se debe haber creado con la **marca OFN \_ EXPLORER;** de lo contrario, se produce un error en el mensaje.
+Recupera la dirección de la lista de identificadores de  elemento correspondiente a la carpeta que un cuadro de diálogo Abrir o Guardar **como** del estilo explorador tiene abierto actualmente. El cuadro de diálogo debe haber sido creado con la **marca OFN \_ EXPLORER;** de lo contrario, se produce un error en el mensaje.
 
 
 ```C++
@@ -60,7 +60,7 @@ Si el mensaje se realiza correctamente, el valor devuelto es el tamaño, en byte
 
 Si se produce un error, el valor devuelto es menor que cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La macro correspondiente es la siguiente:
 
@@ -72,7 +72,7 @@ int CommDlg_OpenSave_GetFolderIDList(hwnd, lparam, wparam);
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
@@ -80,7 +80,7 @@ int CommDlg_OpenSave_GetFolderIDList(hwnd, lparam, wparam);
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: estructura de JET_DBINFOUPGRADE'
+description: 'Más información sobre: JET_DBINFOUPGRADE estructura'
 title: Estructura de JET_DBINFOUPGRADE
 TOCTitle: JET_DBINFOUPGRADE Structure
 ms:assetid: dd8a881a-33b5-4314-8cfb-b1d75ad37b21
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9652b0050805ad116a7087cb2ec4cd146255b6a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f8a62245ee4b09ec3e8764e6d4e51841fa057c789bdc2fb4a142380d62e8d598
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112184"
 ---
 # <a name="jet_dbinfoupgrade-structure"></a>Estructura de JET_DBINFOUPGRADE
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_dbinfoupgrade-structure"></a>Estructura de JET_DBINFOUPGRADE
 
-La estructura **JET_DBINFOUPGRADE** contiene información sobre el estado de actualización de la base de datos. Este valor se recupera solo si **JET_DBINFOUPGRADE** se pasó a [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) o [JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md). Esta estructura no es necesaria para las versiones actuales del sistema operativo del motor de base de datos.
+La **JET_DBINFOUPGRADE** contiene información sobre el estado de actualización de la base de datos. Este valor solo se recupera si **JET_DBINFOUPGRADE** a [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) o [JetGetDatabaseFileInfo.](./jetgetdatabasefileinfo-function.md) Esta estructura no es necesaria para las versiones actuales del sistema operativo del motor de base de datos.
 
 ```cpp
     typedef struct {
@@ -53,43 +53,43 @@ La estructura **JET_DBINFOUPGRADE** contiene información sobre el estado de act
 
 **cbStruct**
 
-Se establece en el tamaño de la estructura **JET_DBINFOUPGRADE** , en bytes.
+Se establece en el tamaño de la **estructura JET_DBINFOUPGRADE,** en bytes.
 
 **cbFilesizeLow**
 
-**Valor DWORD** inferior que refleja el tamaño actual del archivo de la base de datos.
+DWORD **bajo que** refleja el tamaño de archivo actual de la base de datos.
 
 **cbFilesizeHigh**
 
-**Valor DWORD** alto que refleja el tamaño actual del archivo de la base de datos.
+DWORD **alto que** refleja el tamaño de archivo actual de la base de datos.
 
 **cbFreeSpaceRequiredLow**
 
-**Valor DWORD** inferior del espacio libre en disco estimado necesario para una actualización en contexto.
+DWORD **bajo de** espacio libre estimado en disco necesario para una actualización local.
 
 **cbFreeSpaceRequiredHigh**
 
-**Valor DWORD** alto del espacio libre en disco estimado necesario para una actualización en contexto.
+DWORD **elevado de** espacio libre estimado en disco necesario para una actualización local.
 
 **csecToUpgrade**
 
-El tiempo estimado necesario para la actualización, en segundos.
+Tiempo estimado necesario para actualizar, en segundos.
 
 **ulFlags**
 
-Un campo de bits formado por cero o más de las marcas siguientes: **fUpgradable**, **fAlreadyUpgraded**.
+Campo de bits de cero o más de las marcas siguientes: **fUpgradable**, **fAlreadyUpgraded**.
 
 **fUpgradable**
 
-La base de datos es actualizable.
+La base de datos se puede actualizar.
 
 **fAlreadyUpgraded**
 
 La base de datos se actualiza al formato de base de datos actual.
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
-Una **JET_DBINFOUPGRADE** estructura se rellena mediante una llamada a [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) o [JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md). Si la función no se ejecuta correctamente, el contenido de la estructura es indefinido.
+Una **JET_DBINFOUPGRADE** estructura se rellena mediante una llamada a [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) o [JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md). Si la función no se realiza correctamente, el contenido de la estructura no está definido.
 
 ### <a name="requirements"></a>Requisitos
 
@@ -104,12 +104,12 @@ Una **JET_DBINFOUPGRADE** estructura se rellena mediante una llamada a [JetGetDa
 <td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Server</strong></p></td>
+<td><p><strong>Servidor</strong></p></td>
 <td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
+<td><p>Declarado en Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

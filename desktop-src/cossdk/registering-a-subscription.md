@@ -13,7 +13,7 @@ ms.locfileid: "118547115"
 ---
 # <a name="registering-a-subscription"></a>Registro de una suscripción
 
-Después de haber registrado una clase de eventos en el catálogo de COM+, puede agregar suscriptores a la clase de eventos y suscripciones a los suscriptores. Las suscripciones pueden suscribirse a un único método o a todos los métodos de una interfaz. Para recibir llamadas en más de un método , pero no en todos los métodos, de una interfaz, debe agregar una suscripción para cada método al que desee recibir una llamada. La herramienta de administración Servicios de componentes puede buscar en el catálogo de COM+ clases de eventos registradas que admitan las interfaces implementadas por el suscriptor y le ofrece la opción de suscribirse. Elija el publicador que le ofrece los eventos deseados.
+Después de haber registrado una clase de eventos en el catálogo de COM+, puede agregar suscriptores a la clase de eventos y suscripciones a los suscriptores. Las suscripciones pueden suscribirse a un único método o a todos los métodos de una interfaz. Para recibir llamadas en más de un método , pero no en todos los métodos, de una interfaz, debe agregar una suscripción para cada método al que quiera recibir una llamada. La herramienta de administración servicios de componentes puede buscar clases de eventos registrados en el catálogo de COM+ que admitan las interfaces implementadas por el suscriptor y le ofrece la opción de suscribirse. Elija el publicador que le ofrece los eventos deseados.
 
 Para agregar suscriptores al componente de suscriptor, siga estos pasos:
 

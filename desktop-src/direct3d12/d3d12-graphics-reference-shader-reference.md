@@ -1,5 +1,5 @@
 ---
-title: Referencia del sombreador (gráficos de Direct3D 12)
+title: Referencia de sombreador (gráficos de Direct3D 12)
 description: En esta sección se tratan las API de Direct3D 12 declaradas en d3d12shader.h, que ayudan a crear y administrar sombreadores programables. Los sombreadores son programas ejecutables que se programan exclusivamente mediante HLSL.
 ms.assetid: d2e414bd-02ed-4f55-90ad-d17c322ec728
 ms.localizationpriority: low
@@ -12,7 +12,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118530623"
 ---
-# <a name="shader-reference-direct3d-12-graphics"></a>Referencia del sombreador (gráficos de Direct3D 12)
+# <a name="shader-reference-direct3d-12-graphics"></a>Referencia de sombreador (gráficos de Direct3D 12)
 
 En esta sección se tratan las API de Direct3D 12 declaradas en d3d12shader.h, que ayudan a crear y administrar sombreadores programables. Los sombreadores son programas ejecutables que se programan exclusivamente mediante HLSL.
 

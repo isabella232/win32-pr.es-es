@@ -60,7 +60,7 @@ HRESULT D3DX11GetImageInfoFromResource(
 
 Tipo: **[ **HMODULE**](/windows/desktop/WinProg/windows-data-types)**
 
-Módulo donde se carga el recurso. Establezca este parámetro en **NULL para** especificar el módulo asociado a la imagen que el sistema operativo usó para crear el proceso actual.
+Módulo donde se carga el recurso. Establezca este parámetro en **NULL** para especificar el módulo asociado a la imagen que el sistema operativo usó para crear el proceso actual.
 
 </dd> <dt>
 
@@ -106,9 +106,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser el siguiente: D3DERR \_ INVALIDCALL
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada a la función se resuelve en **D3DX11GetImageInfoFromResourceW**. De lo contrario, la llamada de función se resuelve en **D3DX11GetImageInfoFromResourceA** porque se usan cadenas ANSI.
+La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada de función se resuelve en **D3DX11GetImageInfoFromResourceW**. De lo contrario, la llamada de función se resuelve en **D3DX11GetImageInfoFromResourceA** porque se usan cadenas ANSI.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -121,7 +121,7 @@ La configuración del compilador también determina la versión de la función. 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

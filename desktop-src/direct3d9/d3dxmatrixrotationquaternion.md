@@ -69,7 +69,7 @@ Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) creada a partir del cua
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXMatrixRotationQuaternion** se puede usar como parámetro para otra función.
 
-Para obtener información sobre cómo calcular valores de cuaternión a partir de un vector de dirección (x, y, z) y un ángulo de rotación, vea [**D3DXQUATERNION**](d3dxquaternion.md).
+Para obtener información sobre cómo calcular valores de cuaternión a partir de un vector de dirección (x, y, z ) y un ángulo de rotación, vea [**D3DXQUATERNION**](d3dxquaternion.md).
 
 ## <a name="requirements"></a>Requisitos
 

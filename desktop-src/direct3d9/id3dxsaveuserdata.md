@@ -50,7 +50,7 @@ La **interfaz ID3DXSaveUserData** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El tipo LPD3DXSAVEUSERDATA se define como un puntero a esta interfaz.
 
@@ -73,7 +73,7 @@ typedef interface ID3DXSaveUserData *LPD3DXSAVEUSERDATA;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

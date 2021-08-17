@@ -1,5 +1,5 @@
 ---
-description: Determina si el Panel de entrada está listo para que se muestra la lista autocompletar.
+description: Determina si el Panel de entrada está listo para que se muestra la lista de autocompletar.
 ms.assetid: 1e0d4bc6-e6a3-4123-a381-00a41ed9c848
 title: Método ITipAutocompleteClient::RequestShowUI (TipAutoComplete.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118449798"
 ---
 # <a name="itipautocompleteclientrequestshowui-method"></a>ITipAutocompleteClient::RequestShowUI (método)
 
-Determina si el Panel de entrada está listo para que se muestra la lista autocompletar.
+Determina si el Panel de entrada está listo para que se muestra la lista de autocompletar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Identificador de ventana de la interfaz de usuario de lista de autocompletar.
 *pfAllowShowing* \[ out\]
 </dt> <dd>
 
-**FALSE** si el cliente recomienda no mostrar la interfaz de usuario de la lista de autocompletar. **TRUE** si el proveedor de autocompletar puede mostrar la interfaz de usuario de lista.
+**FALSE** si el cliente recomienda no mostrar la interfaz de usuario de lista de autocompletar. **TRUE** si el proveedor de autocompletar puede mostrar la interfaz de usuario de lista.
 
 </dd> </dl>
 
@@ -69,9 +69,9 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El proveedor de autocompletar llama a este método cuando está a punto de mostrar la interfaz de usuario autocompletar. Si el estado interno del cliente no permite que el proveedor muestre la interfaz de usuario, *pfAllowShowing* se establecerá en **FALSE.** Por ejemplo, cuando el texto se envía al campo desde la máscara de escritura a mano en el panel de entrada de Tablet PC y el usuario empieza a infieren inmediatamente, el cliente recomendará no mostrar la interfaz de usuario autocompletar, para evitar la destructuración de la entrada manuscrita del usuario, estableciendo *pfAllowShowing* en **FALSE.**
+El proveedor de autocompletar llama a este método cuando está a punto de mostrar la interfaz de usuario autocompletar. Si el estado interno del cliente no permite que el proveedor muestre la interfaz de usuario, *pfAllowShowing* se establecerá en **FALSE.** Por ejemplo, cuando el texto se envía al campo desde la máscara de escritura a mano en el panel de entrada de Tablet PC y el usuario empieza a infierirse inmediatamente, el cliente recomendará no mostrar la interfaz de usuario autocompletar, para evitar la destructición de la entrada manuscrita del usuario, estableciendo *pfAllowShowing* en **FALSE.**
 
 Llame **a RequestShowUI** para establecer el identificador de ventana de lista de autocompletar emergente antes de llamar al método [**ITipAutocompleteClient::P referredRects**](itipautocompleteclient-preferredrects.md). Si no lo hace, se producirá un error **E \_ INVALIDARG** al llamar a **PreferredRects**.
 
@@ -79,16 +79,16 @@ Llame **a RequestShowUI** para establecer el identificador de ventana de lista d
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                                       |
 | Header<br/>                   | <dl> <dt>TipAutoComplete.h (también requiere Peninputpanel \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Tiptsf.dll</dt> </dl>                                           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

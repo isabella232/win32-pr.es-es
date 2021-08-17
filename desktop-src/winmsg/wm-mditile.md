@@ -13,7 +13,7 @@ ms.locfileid: "118436222"
 ---
 # <a name="wm_mditile-message"></a>Mensaje \_ MDITILE de WM
 
-Una aplicación envía el mensaje **\_ MDITILE** de WM a una ventana de cliente de interfaz de múltiples documentos (MDI) para organizar todas sus ventanas secundarias MDI en un formato de icono.
+Una aplicación envía el **mensaje \_ MDITILE** de WM a una ventana de cliente de interfaz de múltiples documentos (MDI) para organizar todas sus ventanas secundarias MDI en un formato de icono.
 
 
 ```C++
@@ -33,7 +33,7 @@ Opción de tiling. Este parámetro puede ser uno de los siguientes valores, comb
 
 
 
-| Value                                                                                                                                                                                                                                    | Significado                                |
+| Valor                                                                                                                                                                                                                                    | Significado                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
 | <span id="MDITILE_HORIZONTAL"></span><span id="mditile_horizontal"></span><dl> <dt>**MDITILE \_ Horizontal**</dt> <dt>0x0001</dt> </dl> | Ventanas de iconos horizontalmente.<br/> |
 | <span id="MDITILE_VERTICAL"></span><span id="mditile_vertical"></span><dl> <dt>**MDITILE \_ Vertical**</dt> <dt>0x0000</dt> </dl>       | Ventanas de iconos verticalmente.<br/>   |
@@ -63,7 +63,7 @@ Si se produce un error en el mensaje, el valor devuelto es **FALSE.**
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
@@ -71,7 +71,7 @@ Si se produce un error en el mensaje, el valor devuelto es **FALSE.**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -33,7 +33,7 @@ Un bloque de instrucciones también indica subád ámbito. Las variables declara
 
 <dl> <dt>
 
-[Instrucciones (HLSL de DirectX)](dx-graphics-hlsl-statements.md)
+[Instrucciones (DirectX HLSL)](dx-graphics-hlsl-statements.md)
 </dt> </dl>
 
  

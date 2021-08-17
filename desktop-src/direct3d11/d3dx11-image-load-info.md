@@ -1,6 +1,6 @@
 ---
 title: D3DX11_IMAGE_LOAD_INFO estructura (D3DX11tex.h)
-description: 'Nota: La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Opcionalmente, proporcione información a las API del cargador de texturas para controlar cómo se cargan las texturas. | D3DX11_IMAGE_LOAD_INFO estructura (D3DX11tex.h)'
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Opcionalmente, proporcione información a las API del cargador de texturas para controlar cómo se cargan las texturas. | D3DX11_IMAGE_LOAD_INFO estructura (D3DX11tex.h)
 ms.assetid: 6cd2f590-4e15-41e6-9f04-cd91eeb082db
 keywords:
 - D3DX11_IMAGE_LOAD_INFO estructura direct3D 11
@@ -98,7 +98,7 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Nivel de mapa mip de resolución más alto de la textura. Si es mayor que 0, después de cargar la textura FirstMipLevel se asignará al nivel 0 de mapa mip.
+El nivel de mapa mip de resolución más alto de la textura. Si es mayor que 0, después de cargar la textura FirstMipLevel se asignará al nivel 0 de mipmap.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Número máximo de niveles de mapa mip en la textura. Vea los comentarios en [**D3D11 \_ TEX1D \_ SRV**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_tex1d_srv). El uso de 0 o D3DX11 DEFAULT hará que se cree una cadena \_ de asignación mip completa.
+Número máximo de niveles de mapa mip en la textura. Vea los comentarios en [**D3D11 \_ TEXAS1D \_ SRV**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_tex1d_srv). El uso de 0 o D3DX11 DEFAULT hará que se cree una \_ cadena de asignación mip completa.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Tipo: **[ **D3D11 \_ USAGE**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage)**
 
 </dd> <dd>
 
-La manera en que el recurso de textura está pensado para usarse. Vea [**D3D11 USAGE ( \_ USO de D3D11).**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage)
+La forma en que el recurso de textura está pensado para usarse. Vea [**D3D11 USAGE ( \_ USO de D3D11).**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage)
 
 </dd> <dt>
 
@@ -142,7 +142,7 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Permisos de acceso que tendrá la CPU para el recurso de textura. Consulte [**D3D11 \_ CPU ACCESS \_ \_ FLAG**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_cpu_access_flag).
+Permisos de acceso que tendrá la CPU para el recurso de textura. Consulte [**D3D11 CPU ACCESS FLAG (MARCA \_ DE ACCESO DE CPU \_ D3D11). \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_cpu_access_flag)
 
 </dd> <dt>
 
@@ -153,7 +153,7 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Propiedades de recursos varios (vea [**D3D11 \_ RESOURCE \_ MISC \_ FLAG**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)).
+Propiedades de recursos varios (consulte [**D3D11 \_ RESOURCE \_ MISC \_ FLAG**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)).
 
 </dd> <dt>
 
@@ -175,7 +175,7 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Filtre la textura mediante el filtro especificado (solo cuando se vuelva amuestrear). Vea [**D3DX11 \_ FILTER \_ FLAG**](d3dx11-filter-flag.md).
+Filtre la textura mediante el filtro especificado (solo al volver amuestrear). Vea [**D3DX11 \_ FILTER \_ FLAG**](d3dx11-filter-flag.md).
 
 </dd> <dt>
 
@@ -186,29 +186,29 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Filtre los niveles de mip de textura mediante el filtro especificado (solo si se generan mapas MIP). Los valores válidos son D3DX11 \_ FILTER \_ NONE, D3DX11 \_ FILTER \_ POINT, D3DX11 FILTER LINEAR o \_ \_ D3DX11 \_ FILTER \_ TRIANGLE. Vea [**D3DX11 \_ FILTER \_ FLAG**](d3dx11-filter-flag.md).
+Filtre los niveles de mip de textura mediante el filtro especificado (solo si se generan mapas mip). Los valores válidos son D3DX11 \_ FILTER \_ NONE, D3DX11 \_ FILTER \_ POINT, D3DX11 FILTER LINEAR o \_ \_ D3DX11 \_ FILTER \_ TRIANGLE. Vea [**D3DX11 \_ FILTER \_ FLAG**](d3dx11-filter-flag.md).
 
 </dd> <dt>
 
 **pSrcInfo**
 </dt> <dd>
 
-Tipo: **[ **INFORMACIÓN DE \_ IMAGEN \_ D3DX11**](d3dx11-image-info.md)\***
+Tipo: **[ **D3DX11 \_ IMAGE \_ INFO**](d3dx11-image-info.md)\***
 
 </dd> <dd>
 
-Información sobre la imagen original. Vea [**INFORMACIÓN DE LA IMAGEN \_ \_ D3DX11.**](d3dx11-image-info.md) Se puede obtener con [**D3DX11GetImageInfoFromFile**](d3dx11getimageinfofromfile.md), [**D3DX11GetImageInfoFromMemory**](d3dx11getimageinfofrommemory.md)o [**D3DX11GetImageInfoFromResource**](d3dx11getimageinfofromresource.md).
+Información sobre la imagen original. Vea [**D3DX11 IMAGE INFO ( Información de imagen de D3DX11). \_ \_**](d3dx11-image-info.md) Se puede obtener con [**D3DX11GetImageInfoFromFile,**](d3dx11getimageinfofromfile.md) [**D3DX11GetImageInfoFromMemory**](d3dx11getimageinfofrommemory.md)o [**D3DX11GetImageInfoFromResource**](d3dx11getimageinfofromresource.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al inicializar la estructura, puede establecer cualquier miembro en D3DX11 DEFAULT y D3DX la inicializará con un valor predeterminado de la textura de origen cuando se cargue \_ la textura.
 
 Esta estructura la pueden usar las API que:
 
--   Cree recursos, como [**D3DX11CreateTextureFromFile**](d3dx11createtexturefromfile.md) y [**D3DX11CreateShaderResourceViewFromFile**](d3dx11createshaderresourceviewfromfile.md).
--   Cree procesadores de datos, [**como D3DX11CreateAsyncTextureInfoProcessor**](d3dx11createasynctextureinfoprocessor.md) o [**D3DX11CreateAsyncShaderResourceViewProcessor**](d3dx11createasyncshaderresourceviewprocessor.md).
+-   Cree recursos, como [**D3DX11CreateTextureFromFile**](d3dx11createtexturefromfile.md) y [**D3DX11CreateShaderResourceViewFromFile.**](d3dx11createshaderresourceviewfromfile.md)
+-   Cree procesadores de datos, [**como D3DX11CreateAsyncTextureInfoProcessor**](d3dx11createasynctextureinfoprocessor.md) o [**D3DX11CreateAsyncShaderResourceViewProcessor.**](d3dx11createasyncshaderresourceviewprocessor.md)
 
 Los valores predeterminados son:
 
@@ -260,7 +260,7 @@ D3DX11_IMAGE_LOAD_INFO LoadInfo;
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -25,7 +25,7 @@ propertyDescription
       type = VT_UI4
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La interfaz de usuario PKEY CategoryId la usa una aplicación para consultar los id. de las categorías que se usan para agrupar elementos relacionados \_ en un control de \_ galería.
 

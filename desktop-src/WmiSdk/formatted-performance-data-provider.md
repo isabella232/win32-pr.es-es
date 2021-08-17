@@ -1,5 +1,5 @@
 ---
-description: Proporciona los valores calculados \# (&0034;cooked&\# 0034;) datos del contador de rendimiento. Proporciona datos dinámicos a las clases WMI derivadas de Win32 \_ PerfFormattedData. También se conoce como proveedor de contadores preparado.
+description: Proporciona los valores calculados (&\# 0034;cooked&\# 0034;) datos del contador de rendimiento. Proporciona datos dinámicos a las clases WMI derivadas de Win32 \_ PerfFormattedData. También se conoce como proveedor de contadores preparado.
 ms.assetid: 59823f7c-3046-4608-99df-1f43e2934e7e
 ms.tgt_platform: multiple
 title: Proveedor de datos de rendimiento con formato

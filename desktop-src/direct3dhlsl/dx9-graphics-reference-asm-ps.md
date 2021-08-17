@@ -9,33 +9,33 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f962038c8f0f6eb4bc836da5ad7b667d454fa5e9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9a6efea68568fa62705d463bbcdad367151d7e51ce820ff0a052b388724006dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104983735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118512845"
 ---
 # <a name="pixel-shaders"></a>Sombreadores de píxeles
 
--   [PS \_ 1 \_ , PS \_ 1 \_ 2, PS 1 \_ \_ 3, PS \_ 1 \_ 4](dx9-graphics-reference-asm-ps-1-x.md)
--   [PS \_ 2 \_ 0](dx9-graphics-reference-asm-ps-2-0.md)
--   [PS \_ 2 \_ x](dx9-graphics-reference-asm-ps-2-x.md)
--   [PS \_ 3 \_ 0](dx9-graphics-reference-asm-ps-3-0.md)
--   [Registra](dx9-graphics-reference-asm-ps-registers.md)
+-   [ps \_ 1 \_ 1, ps \_ 1 \_ 2, ps \_ 1 \_ 3, ps \_ 1 \_ 4](dx9-graphics-reference-asm-ps-1-x.md)
+-   [ps \_ 2 \_ 0](dx9-graphics-reference-asm-ps-2-0.md)
+-   [ps \_ 2 \_ x](dx9-graphics-reference-asm-ps-2-x.md)
+-   [ps \_ 3 \_ 0](dx9-graphics-reference-asm-ps-3-0.md)
+-   [Registros](dx9-graphics-reference-asm-ps-registers.md)
 -   [Instrucciones del sombreador de píxeles](dx9-graphics-reference-asm-ps-instructions.md)
--   [Diferencias entre el sombreador de píxeles](dx9-graphics-reference-asm-ps-differences.md)
+-   [Diferencias del sombreador de píxeles](dx9-graphics-reference-asm-ps-differences.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Referencia del sombreador de ASM](dx9-graphics-reference-asm.md)
+[Referencia del sombreador asm](dx9-graphics-reference-asm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

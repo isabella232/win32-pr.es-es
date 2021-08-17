@@ -49,11 +49,11 @@ Datos que se enviarán al servidor.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es **S \_ OK si se** ejecuta correctamente o un valor de error en caso contrario.
+El valor devuelto es **S \_ OK on** success o un valor de error de lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La solicitud que se va a enviar se definió en una llamada anterior al [**método Open.**](iwinhttprequest-open.md) La aplicación que realiza la llamada puede proporcionar datos que se enviarán al servidor a través del *parámetro Body.* Si el [*verbo HTTP*](glossary.md) del objeto [**Open**](iwinhttprequest-open.md) es "GET", este método envía la solicitud sin *Cuerpo*, incluso si la proporciona la aplicación que realiza la llamada.
+La solicitud que se va a enviar se definió en una llamada anterior al [**método**](iwinhttprequest-open.md) Open. La aplicación que realiza la llamada puede proporcionar datos que se enviarán al servidor a través del *parámetro Body.* Si el [*verbo HTTP*](glossary.md) del objeto [**Open**](iwinhttprequest-open.md) es "GET", este método envía la solicitud sin *Cuerpo*, incluso si la proporciona la aplicación que realiza la llamada.
 
 > [!Note]  
 > Para Windows XP y Windows 2000, consulte la sección [Requisitos](winhttp-start-page.md) en tiempo de ejecución de la página de inicio de WinHttp.
@@ -189,7 +189,7 @@ WinHttpReq.Send("Post data");
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>            |
 | Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
@@ -200,7 +200,7 @@ WinHttpReq.Send("Post data");
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

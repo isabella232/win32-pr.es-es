@@ -41,9 +41,9 @@ Interrumpe la animación del carácter especificado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede usarlo para sincronizar la animación entre caracteres. Por ejemplo, si otro carácter está en una animación de bucle, este método detendrá el bucle y pasará a la animación siguiente de la cola del carácter. No puede interrumpir una animación de caracteres que no esté usando (que no haya cargado).
+Puede usarlo para sincronizar la animación entre caracteres. Por ejemplo, si otro carácter está en una animación en bucle, este método detendrá el bucle y pasará a la siguiente animación de la cola del carácter. No se puede interrumpir una animación de caracteres que no está usando (que no se ha cargado).
 
 Para especificar el parámetro de solicitud, debe crear una variable y asignar la solicitud de animación que desea interrumpir:
 
@@ -81,7 +81,7 @@ Para especificar el parámetro de solicitud, debe crear una variable y asignar l
 
 
 
-No se puede interrumpir la animación del mismo carácter que se especifica en este método porque el servidor pone en cola el método **Interrupt** en la cola de animación de ese carácter. Por lo tanto, solo puede usar **Interrumpir para** detener la animación de otro carácter que haya cargado.
+No se puede interrumpir la animación del mismo carácter que se especifica en este método porque el servidor pone en cola el método **Interrupt** en la cola de animación de ese carácter. Por lo tanto, solo puede usar **Interrupción** para detener la animación de otro carácter que haya cargado.
 
 Si declara una referencia de objeto y la establece en este método, devuelve un [**objeto Request.**](/windows/desktop/lwef/the-request-object)
 

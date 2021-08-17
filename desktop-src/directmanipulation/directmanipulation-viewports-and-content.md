@@ -36,7 +36,7 @@ Se crea una ventanilla mediante una llamada [**a CreateViewport**](/windows/win3
 - *El contenido principal* es el único elemento intrínseco dentro de una ventanilla que responde a manipulaciones de entrada e inercia. El contenido principal se crea al mismo tiempo que la ventanilla y no se puede agregar ni quitar de una ventanilla. Puede personalizar el comportamiento del contenido principal mediante puntos de instantánea (que se analizarán más adelante).
 - *El contenido secundario* se mueve en relación con el movimiento del contenido principal. El contenido secundario se crea por separado desde la ventanilla y se puede agregar o quitar de una ventanilla. Todas las transformaciones de contenido secundarias se calculan en función de la transformación del contenido principal. Se pueden aplicar reglas específicas para cambiar cómo se calcula la transformación en función del propósito previsto del elemento, identificado por su CLSID durante la creación.
 
-En este diagrama que muestra antes y después de una panorámica, se ha usado un único contacto para desplazarse por el contenido principal. Aunque el usuario no interactúa directamente con el indicador de movimiento panorámico (contenido secundario), el contenido secundario se mueve a medida que se desplaza el contenido principal. Esto proporciona indicaciones visuales sobre hasta qué punto el usuario ha pasado.
+En este diagrama que muestra antes y después de una panorámica, se ha usado un único contacto para desplazarse por el contenido principal. Aunque el usuario no interactúa directamente con el indicador de movimiento panorámico (contenido secundario), el contenido secundario se mueve a medida que se desplaza el contenido principal. Esto proporciona indicaciones visuales sobre hasta qué punto el usuario ha pasado desatendido.
 
 ![diagrama que muestra antes y después de un panorámica](images/dm-art-2.png)
 
@@ -46,13 +46,13 @@ Después de crear la ventanilla. configure su comportamiento mediante una config
 
 *El movimiento panorámico* cambia la posición del contenido a lo largo del eje horizontal o vertical, o ambos, a medida que el usuario se desplazará. Al configurar la traducción en ambos ejes, el contenido se mueve libremente en cualquier dirección.
 
-Para restringir el movimiento del contenido, configure *los raíles*, normalmente en el eje horizontal y vertical. Si la interacción de un usuario se encuentra principalmente a lo largo de un  único eje (representado por las regiones azules en el diagrama siguiente), el panorámica se vuelve en raíl y el contenido solo se mueve a lo largo del eje de raíl. Si el usuario se ha panorámicado y está actualmente en el raíl y realiza una segunda panorámica mientras el contenido está en inercia, la nueva panorámica sigue siendo de ráime.
+Para restringir el movimiento del contenido, configure *los raíles*, normalmente en el eje horizontal y vertical. Si la interacción de un usuario se encuentra principalmente a lo largo de un  único eje (representado por las regiones azules en el diagrama siguiente), el panorámica se vuelve en raíl y el contenido solo se mueve a lo largo del eje de raíl. Si el usuario se ha panorámicado y está actualmente en el raíl y realiza una segunda panorámica mientras el contenido está en inercia, la nueva panorámica sigue siendo de raíl.
 
 ![diagrama que muestra el contenido dentro de una ventanilla en un panorámica con raíl](images/dm-art-3.png)
 
 Ejemplo: se configura una ventanilla para el movimiento panorámico horizontal y vertical. En el primer fotograma, el contacto aparece. En el segundo, se inicia una panorámica vertical y el contacto está bloqueado en el raíl vertical. Por último, una vez que el panorámica está en el raíl, solo se usa el componente vertical de una panorámica diagonal para mover el contenido.
 
-Si el usuario se desplaza diagonalmente de forma que no se encuentra en las regiones de detección de raíles (las regiones blancas), el panorámica se descarrila y el contenido se moverá libremente en ambos ejes. 
+Si el usuario se desplaza diagonalmente de forma que no se encuentra en las regiones de detección de raíles (las regiones blancas), la panorámica se descarrila y el contenido se moverá libremente en ambos ejes. 
 
 ![diagrama que muestra el contenido que se mueve en una panorámica sin barreras](images/dm-art-4.png)
 
@@ -64,7 +64,7 @@ Puede invalidar este comportamiento especificando el centro de desbloqueo, que e
 
 ![diagrama que muestra el zoom del contenido con el centro de zoom desbloqueado](images/dm-art-6.png)
 
- La inercia es la disminución gradual de una manipulación, tanto de movimiento panorámico como de zoom, después de que todos los contactos se hayan elevado (en el caso de la entrada táctil) o después de la entrada del teclado o del mouse (como hacer clic en una barra de desplazamiento o presionar las teclas de dirección). Cuando un usuario manipula el contenido, la manipulación no se detiene inmediatamente después de que se eleva el contacto. En su lugar, el contenido continúa en la dirección y la velocidad actuales, ralentizando gradualmente hasta una detención.
+ La inercia es la disminución gradual de una manipulación, tanto de movimiento panorámico como de zoom, después de que se hayan elevado todos los contactos (en el caso de la entrada táctil) o después de la entrada del teclado o del mouse (como hacer clic en una barra de desplazamiento o presionar las teclas de dirección). Cuando un usuario manipula el contenido, la manipulación no se detiene inmediatamente después de que se eleva el contacto. En su lugar, el contenido continúa en la dirección y la velocidad actuales, con lo que se ralentiza gradualmente hasta que se detiene.
 
 ## <a name="snap-points-and-boundaries"></a>Puntos de ajuste y límites
 
@@ -72,7 +72,7 @@ Una animación de inercia tiene lugar después de que finaliza la manipulación 
 
 Hay dos fragmentos de información que definen la animación de inercia:
 
-- Punto de resto de la animación: la posición final final del componente de transformación determinado.
+- El punto de resto de la animación: la posición final final del componente de transformación determinado.
 - Duración de la animación, curva y velocidad: se determinan por el tipo del punto de resto.
 
 La animación de inercia se ve afectada por los puntos de ajuste y los límites. Los límites especifican los puntos de reposo máximo y mínimo para el contenido. Si el contenido alcanza un límite durante la inercia, se aplicará una animación de límites. Los puntos de ajuste se definen en el contenido principal para modificar el punto de resto y modificar la propia curva de animación de inercia.
@@ -90,14 +90,14 @@ Hay dos grupos de tipos de punto de instantánea:
 
 En el diagrama siguiente se muestra cómo los tipos de punto de ajuste modifican la posición restante de la animación de inercia.
 
-![diagrama que muestra cómo interactúan la inercia y los puntos de ajuste](images/dm-snappoint-states-1.png)
+![diagrama que muestra cómo interactúan los puntos de inercia y de ajuste](images/dm-snappoint-states-1.png)
 
 En este diagrama, el punto de inicio de inercia se etiqueta como "Inicio" y la posición final de inercia natural en ausencia de puntos de ajuste como "Final". Las líneas verticales marcan los distintos puntos de ajuste. En esta tabla se describe cómo cada tipo de punto de instantánea afectará a la posición final de la animación.
 
 | Tipo de punto         | Descripción                                                                                |
 |--------------------|--------------------------------------------------------------------------------------------|
-| Single obligatorio   | Se elige el punto de ajuste P1 porque es el primer punto de ajuste en la dirección de la inercia.     |
-| Varios obligatorios | Se elige el punto de ajuste P2 porque está más cerca del punto final en la dirección de la inercia. |
+| Single obligatorio   | Se elige el punto de ajuste P1 porque es el primer punto de ajuste en la dirección de la inercia     |
+| Varios obligatorios | Se elige el punto de ajuste P2 porque está más cerca del punto final en la dirección de la inercia |
 | Opcional único    | Se elige el punto de ajuste P1 porque es el primer punto de instantánea encontrado durante la inercia.      |
 | Múltiplo opcional  | Se elige el punto de ajuste P2 porque está cerca del punto final natural.                           |
 
@@ -107,7 +107,7 @@ En este diagrama, el punto de inicio de inercia se etiqueta como "Inicio" y la p
 
 El desplazamiento del punto de instantánea y el sistema de coordenadas se aplican mediante la API [**SetSnapCoordinate,**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationprimarycontent-setsnapcoordinate) que desplaza todos los puntos de ajuste o intervalos de ajuste mediante el sistema de desplazamiento y coordenadas especificado.
 
-El sistema de coordenadas es muy útil en escenarios rtl, donde se quieren describir los puntos de ajuste del borde izquierdo del contenido en la dirección inversa. En el diagrama anterior, [**SetSnapCoordinate**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationprimarycontent-setsnapcoordinate) se usa con la marca **DIRECTMANIPULATION \_ MOTION \_ TRANSLATEX** y **DIRECTMANIPULATION \_ COORDINATE \_ MIRRORED,** que desplaza automáticamente los puntos de ajuste del borde izquierdo del contenido y los proporciona en orden de derecha a izquierda: S1 está en 0px, S2 a 50 px (y así sucesivamente). Cualquier conjunto de desplazamiento que use **SetSnapCoordinate** desplazará aún más desde este borde izquierdo del contenido automáticamente, incluido el factor de escala correcto.
+El sistema de coordenadas es muy útil en escenarios rtl, donde se quieren describir los puntos de ajuste del borde izquierdo del contenido en la dirección inversa. En el diagrama anterior, [**SetSnapCoordinate**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationprimarycontent-setsnapcoordinate) se usa con la marca **DIRECTMANIPULATION \_ MOTION \_ TRANSLATEX** y **DIRECTMANIPULATION \_ COORDINATE \_ MIRRORED,** que desplaza automáticamente los puntos de ajuste desde el borde izquierdo del contenido y los proporciona en orden de derecha a izquierda: S1 está en 0px, S2 en 50 px (y así sucesivamente). Cualquier conjunto de desplazamiento que use **SetSnapCoordinate** desplazará aún más desde este borde izquierdo del contenido automáticamente, incluido el factor de escala correcto.
 
 Casi siempre usará [**SetSnapCoordinate**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationprimarycontent-setsnapcoordinate) con el parámetro *de* origen establecido para evitar establecer puntos de ajuste fuera del área de contenido.
 
@@ -152,7 +152,7 @@ A medida que se procesa la entrada, la ventanilla administra el estado de intera
 
 ![diagrama que muestra los estados de interacción de directmanipulation](images/dm-states-diagram.png)
 
-- Building: la ventanilla se está creando y aún no puede procesar la entrada. Para procesar la entrada, llame a [**IDirectManipulationViewport::Enable**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-enable). Si **no** se llama a Enable, la ventanilla pasa al estado Deshabilitado.
+- Building: la ventanilla se está creando y aún no puede procesar la entrada. Para procesar la entrada, llame a [**IDirectManipulationViewport::Enable**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-enable). Si **no** se llama a Habilitar, la ventanilla pasa al estado Deshabilitado.
 
     > [!Note]  
     > Este es el estado inicial de la interacción.
@@ -161,11 +161,11 @@ A medida que se procesa la entrada, la ventanilla administra el estado de intera
 
 - En ejecución: la ventanilla está procesando actualmente la entrada y actualizando el contenido. Cuando se eleva el contacto, la ventanilla pasa a Inercia, si está configurada.
 
-- Inercia: el contenido se mueve en una animación de inercia. Una vez completada la inercia, la ventanilla pasará a Listo. Si se ha establecido la deshabilitación automática en la ventanilla, pasará de Inercia a Listo y, a continuación, a Deshabilitada.
+- Inercia: el contenido se mueve en una animación de inercia. Una vez completada la inercia, la ventanilla pasará a Listo. Si se ha establecido la deshabilitación automática en la ventanilla, pasará de Inercia a Listo y, a continuación, a Deshabilitado.
 
 - Listo: la ventanilla está lista para procesar la entrada. Cuando un contacto baja (se llama a [**SetContact)**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setcontact) y se detecta una manipulación, la ventanilla pasa a En ejecución.
 
-- Suspendido: la ventanilla puede convertirse en Suspendida cuando su entrada se ha promocionado a un elemento primario en la [**cadena SetContact.**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setcontact) Esto se describe con más detalle en [Varias ventanillas: pruebas de acceso y jerarquía de ventanillas.](directmanipulation-multiple-vieports.md)
+- Suspendido: la ventanilla puede convertirse en Suspendida cuando su entrada se ha promocionado a un elemento primario en la [**cadena SetContact.**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setcontact) Esto se describe con más detalle en Varias [ventanillas: pruebas de acceso y jerarquía de ventanillas.](directmanipulation-multiple-vieports.md)
 
 - Deshabilitado: la ventanilla no procesará la entrada ni realizará devoluciones de llamada. Una ventanilla se puede deshabilitar desde varios estados mediante una llamada a [**IDirectManipulationViewport::D isable**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-disable). Si se ha establecido la deshabilitación automática en la ventanilla, pasará automáticamente a Deshabilitado después de procesar una manipulación. Para volver a habilitar una ventanilla deshabilitada, llame a [**IDirectManipulationViewport::Enable**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-enable).
 

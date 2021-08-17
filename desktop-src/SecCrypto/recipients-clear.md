@@ -47,14 +47,14 @@ Este método no devuelve ningún valor. Una aplicación que usa este método deb
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

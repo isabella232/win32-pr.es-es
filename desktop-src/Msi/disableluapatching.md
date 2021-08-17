@@ -13,15 +13,15 @@ ms.locfileid: "118637782"
 ---
 # <a name="disableluapatching"></a>DisableLUAPatching
 
-Si esta directiva de sistema por equipo se establece en "1", el instalador impide que los usuarios que no son administradores usen la aplicación de revisión de control de cuentas de usuario [(UAC)](user-account-control--uac--patching.md) para cualquier aplicación instalada en el equipo. Cuando la directiva del sistema por máquina no se establece en 0, los usuarios que no son administradores pueden aplicar revisiones de usuario con privilegios mínimos a las aplicaciones habilitadas para la aplicación de revisiones de cuentas de usuario con privilegios mínimos.
+Si esta directiva de sistema por equipo se establece en "1", el instalador impide que los usuarios que no son administradores usen la aplicación de revisiones de control de cuentas de usuario [(UAC)](user-account-control--uac--patching.md) para cualquier aplicación instalada en el equipo. Cuando la directiva del sistema por máquina no se establece en 0, los usuarios que no son administradores pueden aplicar revisiones de usuario con privilegios mínimos a las aplicaciones habilitadas para la aplicación de revisiones de cuentas de usuario con privilegios mínimos.
 
 Use la [**propiedad MSIDISABLELUAPATCHING**](msidisableluapatching.md) para evitar la aplicación de revisiones con privilegios mínimos.
 
-La directiva DisableLUAPatching está disponible a partir de Windows installer versión 3.0.
+La directiva DisableLUAPatching está disponible a partir de Windows Installer versión 3.0.
 
 ## <a name="registry-key"></a>Clave del Registro
 
-**HKEY \_ Local \_ MACHINE** \\ **Software** \\ **Policies** \\ **Microsoft** \\ **Windows** \\ **Installer**
+**HKEY \_ Local \_ Machine** \\ **Software** \\ **Policies** \\ **Microsoft** \\ **Windows** \\ **Installer**
 
 ## <a name="data-type"></a>Tipo de datos
 

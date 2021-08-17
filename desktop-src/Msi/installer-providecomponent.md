@@ -88,7 +88,7 @@ Define el modo de instalación. Este parámetro puede ser uno de los valores que
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El **método ProvideComponent** combina la funcionalidad de [**UseFeature,**](installer-usefeature.md) [**ConfigureFeature**](installer-configurefeature.md)y [**ComponentPath.**](installer-componentpath.md) El **método ProvideComponent** simplifica la secuencia de llamada, pero también incrementa el recuento de uso y se debe usar con precaución para evitar recuentos de uso inexactos. El **método ProvideComponent** también proporciona menos flexibilidad que una serie de llamadas individuales a los métodos y propiedades mencionados anteriormente.
 
@@ -100,15 +100,15 @@ La opción msiInstallModeExisting no se puede usar en combinación con marcas ms
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,29 +1,29 @@
 ---
-description: Un uso estándar de una firma es firmar un texto y guardar ese texto firmado en un archivo. También se puede enviar el texto firmado a través de Internet. El mensaje firmado está en \# formato PKCS 7.
+description: Un uso estándar de una firma es firmar un texto y guardarlo en un archivo. El texto firmado también se puede enviar a través de Internet. El mensaje firmado está en formato PKCS \# 7.
 ms.assetid: 67a36123-4fce-4d40-83c3-b9668221276b
-title: Firmar un documento
+title: Firma de un documento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ce1754cdfa1e89c23525474bae880dc2809c242
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 526bc4cd98d6cab40efc884a2377f3720c9849dbb7f6c1d4e8da5d49898bfa64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898169"
 ---
-# <a name="signing-a-document"></a>Firmar un documento
+# <a name="signing-a-document"></a>Firma de un documento
 
-\[CAPICOM es un componente de solo bits de 32 que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use la .NET Framework para implementar características de seguridad. Para obtener más información, vea [alternativas al uso de CAPICOM](alternatives-to-using-capicom.md).\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use el .NET Framework para implementar características de seguridad. Para obtener más información, [vea Alternativas al uso de CAPICOM.](alternatives-to-using-capicom.md)\]
 
-Un uso estándar de una firma es firmar un texto y guardar ese texto firmado en un archivo. También se puede enviar el texto firmado a través de Internet. El mensaje firmado está en \# formato PKCS 7.
+Un uso estándar de una firma es firmar un texto y guardarlo en un archivo. El texto firmado también se puede enviar a través de Internet. El mensaje firmado está en formato PKCS \# 7.
 
-En este ejemplo, la firma se crea para el contenido separado (cuando el contenido no se incluye con la firma). Una firma desasociada se utilizaría normalmente si el destinatario de la firma tiene una copia del texto con firma exacto. En el ejemplo siguiente, el mensaje original y la firma desasociada se escriben en archivos independientes.
+En este ejemplo, se crea la firma para el contenido desasociado (cuando el contenido no se incluye con la firma). Una firma desasociada se usaría con mayor frecuencia si el destinatario de la firma tiene una copia del texto firmado exacto. En el ejemplo siguiente, el mensaje original y la firma desasociada se escriben en archivos independientes.
 
-En cualquier error de CAPICOM, se devuelve un valor decimal negativo de **Err. Number** . Para obtener más información, consulte el [**\_ \_ código de error de CAPICOM**](capicom-error-code.md). Para obtener información acerca de los valores decimales positivos de **Err. Number**, consulte Winerror. h.
+En cualquier error CAPICOM, se devuelve un valor decimal negativo **de Err.Number.** Para obtener más información, vea [**CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Para obtener información sobre los valores decimales positivos **de Err.Number,** vea Winerror.h.
 
-Al crear una firma se usa la [*clave privada*](../secgloss/p-gly.md)del firmante. Solo se puede crear una firma si está disponible el certificado del firmante con una clave privada asociada. Este ejemplo del método **Sign** no especifica un firmante. Si no se especifica un firmante y ningún certificado de **CAPICOM \_ My \_ Store** tiene una clave privada asociada, se produce un error en el método **Sign** . Si un solo certificado de **CAPICOM \_ My \_ Store** tiene una clave privada asociada, el certificado y su clave privada se usan para crear la firma. Si hay más de un certificado en la tienda **CAPICOM \_ My \_ Store** que tiene una clave privada asociada, aparece un cuadro de diálogo y el usuario puede elegir el certificado que se usará para crear la firma.
+Al crear una firma se usa la clave privada [*del firmante.*](../secgloss/p-gly.md) Solo se puede crear una firma si el certificado del firmante con una clave privada asociada está disponible. Este ejemplo del **método Sign** no especifica un firmante. Si no se especifica un firmante y no hay ningún certificado en **CAPICOM \_ MY \_ STORE** tiene una clave privada asociada, se produce un error **en el método Sign.** Si uno y solo un certificado de **CAPICOM \_ MY \_ STORE** tiene una clave privada asociada, ese certificado y su clave privada se usan para crear la firma. Si más de un certificado del almacén **CAPICOM \_ MY \_ STORE** tiene una clave privada asociada, aparece un cuadro de diálogo y el usuario puede elegir el certificado que se usará para crear la firma.
 
-Cuando una aplicación basada en Web usa el método **Sign** , siempre se muestra un mensaje y se requiere el permiso del usuario antes de crear una firma que use la clave privada de dicho firmante.
+Cuando una aplicación basada en web usa el método **Sign,** siempre se muestra un símbolo del sistema y se requiere el permiso del usuario antes de crear una firma que use esa clave privada del firmante.
 
 
 ```VB
@@ -94,10 +94,10 @@ End Sub
 
 <dl> <dt>
 
-[**Store. Open**](store-open.md)
+[**Store.Open**](store-open.md)
 </dt> <dt>
 
-[**Certificado de firmante**](signer-certificate.md)
+[**Signer.Certificate**](signer-certificate.md)
 </dt> <dt>
 
 [**Atributo**](attribute.md)

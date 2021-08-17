@@ -89,7 +89,7 @@ Un [**\_ dispositivo lógico CIM**](cim-logicaldevice.md) que describe el dispos
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La **clase \_ AssociatedMemory** de CIM se deriva de [**la dependencia \_ CIM**](cim-dependency.md).
 

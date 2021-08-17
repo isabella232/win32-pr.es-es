@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118403851"
 ---
-# <a name="avencddatodconvertertype-property"></a>AvEncDDAtoDConverterType, propiedad
+# <a name="avencddatodconvertertype-property"></a>Propiedad AVEncDAtoDConverterType
 
 Especifica el tipo de conversión de análogo a digital (A/D) para una secuencia de audio Dolby Digital. Esta propiedad se aplica a los codificadores de audio Dolby Digital.
 
@@ -23,7 +23,7 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-guid"></a>GUID de propiedad
 
-**CODECAPI \_ AVEncDDAtoDConverterType**
+**CODECAPI \_ AVEncDAtoDConverterType**
 
 ## <a name="property-value"></a>Valor de propiedad
 

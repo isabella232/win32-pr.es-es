@@ -24,7 +24,7 @@ ms.locfileid: "118922394"
 
 \[El **método FreeIStreamMemoryPtr** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
-El **método FreeIStreamMemoryPtr** libera el puntero de bytes que apunta al bloque de memoria HGLOBAL administrado por una interfaz COM **de IStream.**
+El **método FreeIStreamMemoryPtr** libera el puntero de bytes que apunta al bloque de memoria HGLOBAL administrado por una interfaz COM **IStream.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -66,7 +66,7 @@ El método devuelve uno de los siguientes valores posibles:
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Memoria asignada correctamente.<br/>                                                        |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Hay algún problema con uno o varios de los parámetros pasados a la función.<br/> |
-| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | Un parámetro de tipo de puntero era incorrecto.<br/>                                            |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | Un parámetro de tipo puntero era incorrecto.<br/>                                            |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay suficiente memoria libre para satisfacer la solicitud.<br/>                                            |
 
 
@@ -75,15 +75,15 @@ El método devuelve uno de los siguientes valores posibles:
 
 ## <a name="remarks"></a>Comentarios
 
-Esta función libera completamente y limpiamente el puntero de bytes que apunta al bloque de memoria HGLOBAL administrado por la **interfaz IStream.** Una llamada a [**GetAtIStreamMemory**](iscardtypeconv-getatistreammemory.md)adquiere el puntero de bytes.
+Esta función libera de forma completa y limpia el puntero de bytes que apunta al bloque de memoria HGLOBAL administrado por la **interfaz IStream.** Una llamada a [**GetAtIStreamMemory**](iscardtypeconv-getatistreammemory.md)adquiere el puntero de bytes.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
@@ -94,7 +94,7 @@ Esta función libera completamente y limpiamente el puntero de bytes que apunta 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

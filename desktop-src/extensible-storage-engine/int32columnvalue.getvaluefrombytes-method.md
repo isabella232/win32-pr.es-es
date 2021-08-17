@@ -83,7 +83,7 @@ protected override void GetValueFromBytes(
 
 <!-- end list -->
 
-  - count  
+  - recuento  
     Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Número de bytes que se van a descodificar.
@@ -95,7 +95,7 @@ protected override void GetValueFromBytes(
     
     Error devuelto de ESENT.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -1,25 +1,25 @@
 ---
-description: La siguiente función se usa con los archivadores.
+description: La siguiente función se usa con gabinetes.
 ms.assetid: f857c85b-7fc6-447a-b694-c99ecdda45cc
-title: Funciones de archivo. cab
+title: Funciones de archivo de archivador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fc072cd3b8c4540b5f701d5a510f8c4ab85dcbf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a80f607ea855f79f29754d6139fa419150fb746b6ba4eabc7f6cc121199bf862
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118887877"
 ---
-# <a name="cabinet-file-functions"></a>Funciones de archivo. cab
+# <a name="cabinet-file-functions"></a>Funciones de archivo de archivador
 
-La siguiente función se usa con los archivadores.
+La siguiente función se usa con gabinetes.
 
 
 
 | Función                                           | Descripción                                                    |
 |----------------------------------------------------|----------------------------------------------------------------|
-| [**SetupIterateCabinet**](/windows/desktop/api/Setupapi/nf-setupapi-setupiteratecabineta) | Devuelve una notificación para cada archivo almacenado en un archivo. cab. |
+| [**SetupIterateCabinet**](/windows/desktop/api/Setupapi/nf-setupapi-setupiteratecabineta) | Devuelve una notificación para cada archivo almacenado en un archivo archivador. |
 
 
 

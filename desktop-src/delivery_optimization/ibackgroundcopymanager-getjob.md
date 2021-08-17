@@ -1,6 +1,6 @@
 ---
-title: Método GetJob de IBackgroundCopyManager (Deliveryoptimization.h)
-description: Recupera un trabajo especificado de la cola de transferencia. Normalmente, la aplicación conserva el identificador del trabajo, por lo que más adelante puede recuperar el trabajo de la cola.
+title: Método IBackgroundCopyManager GetJob (Deliveryoptimization.h)
+description: Recupera un trabajo especificado de la cola de transferencia. Normalmente, la aplicación conserva el identificador de trabajo, por lo que más adelante puede recuperar el trabajo de la cola.
 ms.assetid: ED551A6B-66C7-47E9-93DA-E231BD637522
 keywords:
 - Método GetJob
@@ -26,7 +26,7 @@ ms.locfileid: "118542293"
 ---
 # <a name="ibackgroundcopymanagergetjob-method"></a>IBackgroundCopyManager::GetJob (método)
 
-Recupera un trabajo especificado de la cola de transferencia. Normalmente, la aplicación conserva el identificador del trabajo, por lo que más adelante puede recuperar el trabajo de la cola.
+Recupera un trabajo especificado de la cola de transferencia. Normalmente, la aplicación conserva el identificador de trabajo, por lo que más adelante puede recuperar el trabajo de la cola.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,14 +47,14 @@ HRESULT GetJob(
 *JobID* \[ En\]
 </dt> <dd>
 
-Identifica el trabajo que se recupera de la cola de transferencia. El [**método CreateJob**](ibackgroundcopymanager-createjob.md) devuelve el identificador del trabajo.
+Identifica el trabajo que se recuperará de la cola de transferencia. El [**método CreateJob**](ibackgroundcopymanager-createjob.md) devuelve el identificador del trabajo.
 
 </dd> <dt>
 
 *ppJob* \[ out\]
 </dt> <dd>
 
-Puntero [**de interfaz IBackgroundCopyJob**](ibackgroundcopyjob-.md) al trabajo especificado por *JobID.* Cuando haya terminado, libere *ppJob*.
+Puntero [**de interfaz IBackgroundCopyJob**](ibackgroundcopyjob-.md) al trabajo especificado por *JobID*. Cuando haya terminado, libere *ppJob*.
 
 </dd> </dl>
 
@@ -78,7 +78,7 @@ Este método devuelve los siguientes **valores HRESULT,** así como otros.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
@@ -90,7 +90,7 @@ Este método devuelve los siguientes **valores HRESULT,** así como otros.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

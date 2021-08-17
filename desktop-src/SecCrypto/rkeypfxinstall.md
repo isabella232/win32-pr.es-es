@@ -1,7 +1,7 @@
 ---
 description: No se admite la función RKeyPFXInstall.
 ms.assetid: 061e3d9d-fc92-4204-92f3-f3425afdbe27
-title: Función RKeyPFXInstall (Rkeysvcc. h)
+title: Función RKeyPFXInstall (Rkeysvcc.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Rkeysvcc.h
-ms.openlocfilehash: 4908b7224a02f5a28b876b1ff67cbcec7d23df5f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f19a01e9132bf9c4b1e281a75b0e0d7a27b4f9c7f299eefdd47bef8d60daea97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900550"
 ---
-# <a name="rkeypfxinstall-function"></a>RKeyPFXInstall función)
+# <a name="rkeypfxinstall-function"></a>Función RKeyPFXInstall
 
-No se admite la función **RKeyPFXInstall** .
+No **se admite la función RKeyPFXInstall.**
 
-**Windows Server 2003:** La función **RKeyPFXInstall** instala un certificado en un equipo remoto. Tenga en cuenta que este comportamiento ha cambiado con Windows Server 2003 con Service Pack 1 (SP1).
+**Windows Server 2003:** La **función RKeyPFXInstall** instala un certificado en un equipo remoto. Tenga en cuenta que este comportamiento ha cambiado con Windows Server 2003 con Service Pack 1 (SP1).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,38 +44,38 @@ ULONG RKeyPFXInstall(
 
 <dl> <dt>
 
-*hKeySvcCli* \[ de\]
+*hKeySvcCli* \[ En\]
 </dt> <dd>
 
-Identificador [**de \_ controlador de KEYSVCC**](keysvcc-handle.md) abierto previamente por [**RKeyOpenKeyService**](rkeyopenkeyservice.md). El identificador representa el equipo remoto que recibirá el certificado. Este valor no puede ser **null**.
+Identificador [**KEYSVCC \_ HANDLE**](keysvcc-handle.md) abierto previamente [**por RKeyOpenKeyService**](rkeyopenkeyservice.md). El identificador representa el equipo remoto que recibirá el certificado. Este valor no puede ser **NULL.**
 
 </dd> <dt>
 
-*pPFX* \[ de\]
+*pPFX* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**de \_ blobs de KEYSVC**](keysvc-blob.md) que representa el certificado que se va a instalar. El BLOB está en formato [*PKCS \# 12*](../secgloss/p-gly.md) .
+Puntero a una estructura [**KEYSVC \_ BLOB**](keysvc-blob.md) que representa el certificado que se debe instalar. El BLOB está en [*formato PKCS \# 12.*](../secgloss/p-gly.md)
 
 </dd> <dt>
 
-*pPassword* \[ de\]
+*pPassword* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**de \_ \_ cadena Unicode KEYSVC**](keysvc-unicode-string.md) que representa la contraseña del BLOB. Cuando haya terminado de usar la contraseña, borre la contraseña de la memoria mediante una llamada a la función [**SecureZeroMemory**](/previous-versions/windows/desktop/legacy/aa366877(v=vs.85)) . Para obtener más información sobre cómo proteger las contraseñas, consulte [Administrar contraseñas](../secbp/handling-passwords.md).
+Puntero a una estructura [**DE \_ CADENA UNICODE \_ KEYSVC**](keysvc-unicode-string.md) que representa la contraseña del BLOB. Cuando haya terminado de usar la contraseña, borre la contraseña de la memoria mediante una llamada a la [**función SecureZeroMemory.**](/previous-versions/windows/desktop/legacy/aa366877(v=vs.85)) Para obtener más información sobre la protección de contraseñas, vea [Control de contraseñas.](../secbp/handling-passwords.md)
 
 </dd> <dt>
 
-*ulFlags* \[ de\]
+*ulFlags* \[ En\]
 </dt> <dd>
 
-Marcas que especifican las opciones de instalación del certificado. Este parámetro puede ser un cero o una combinación de los valores siguientes.
+Marcas que especifican las opciones de instalación del certificado. Este parámetro puede ser cero o una combinación de los valores siguientes.
 
 
 
-| Value                                                                                                                                                                                                                                     | Significado                                                                                      |
+| Valor                                                                                                                                                                                                                                     | Significado                                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| <span id="CRYPT_EXPORTABLE"></span><span id="crypt_exportable"></span><dl> <dt>**Cifrado \_ Exportable**</dt><dt></dt> </dl>              | Las claves importadas se marcan como exportables.<br/>                                           |
-| <span id="CRYPT_MACHINE_KEYSET"></span><span id="crypt_machine_keyset"></span><dl> <dt>**Cifrado \_ \_conjunto de claves de equipo**</dt><dt></dt> </dl> | Las claves privadas se almacenan en el equipo remoto y no en el usuario actual.<br/> |
+| <span id="CRYPT_EXPORTABLE"></span><span id="crypt_exportable"></span><dl> <dt>**CRYPT \_ EXPORTABLE**</dt><dt></dt> </dl>              | Las claves importadas se marcan como exportables.<br/>                                           |
+| <span id="CRYPT_MACHINE_KEYSET"></span><span id="crypt_machine_keyset"></span><dl> <dt>**CRYPT \_ CONJUNTO \_ DE CLAVES DE LA MÁQUINA**</dt><dt></dt> </dl> | Las claves privadas se almacenan en el equipo remoto y no en el usuario actual.<br/> |
 
 
 
@@ -87,21 +87,21 @@ Marcas que especifican las opciones de instalación del certificado. Este parám
 
 Si la función se realiza correctamente, el valor devuelto es S \_ OK.
 
-Si se produce un error en la función, el valor devuelto es un **ULong** que indica el error.
+Si se produce un error en la función, el valor devuelto es **un ULONG** que indica el error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Rkeysvcc. h</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Rkeysvcc.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

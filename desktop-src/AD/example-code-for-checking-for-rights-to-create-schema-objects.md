@@ -1,6 +1,6 @@
 ---
 title: Código de ejemplo para comprobar los derechos para crear objetos de esquema
-description: En el siguiente ejemplo de código de C/C++ se muestra una función que comprueba el atributo allowedChildClassesEffective en el contenedor de esquemas (el puntero IAD al contenedor de esquemas se pasa como parámetro) para las clases attributeSchema y classSchema.
+description: En el siguiente ejemplo de código de C/C++ se muestra una función que comprueba el atributo allowedChildClassesEffective en el contenedor de esquema (el puntero IAD al contenedor de esquema se pasa como parámetro) para las clases attributeSchema y classSchema.
 ms.assetid: 3abc2351-a3cf-4a6c-9a13-15dd51723883
 ms.tgt_platform: multiple
 keywords:
@@ -16,7 +16,7 @@ ms.locfileid: "118694487"
 ---
 # <a name="example-code-for-checking-for-rights-to-create-schema-objects"></a>Código de ejemplo para comprobar los derechos para crear objetos de esquema
 
-En el siguiente ejemplo de código de C/C++ se muestra una función que comprueba el atributo **allowedChildClassesEffective** en el contenedor de esquemas (el puntero IAD al contenedor de esquemas se pasa como parámetro) para las clases **attributeSchema** y **classSchema.** Devuelve **S \_ OK si** ambas clases aparecen en **allowedChildClassesEffective.** Si ambos no lo están, devuelve **S \_ FALSE**.
+En el siguiente ejemplo de código de C/C++ se muestra una función que comprueba el atributo **allowedChildClassesEffective** en el contenedor de esquema (el puntero IAD al contenedor de esquema se pasa como parámetro) para las clases **attributeSchema** y **classSchema.** Devuelve **S \_ OK si** ambas clases aparecen en **allowedChildClassesEffective.** Si ambos no lo están, devuelve **S \_ FALSE.**
 
 
 ```C++

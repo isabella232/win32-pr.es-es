@@ -1,5 +1,5 @@
 ---
-description: El evento SetTargetPath notifica al instalador que compruebe y establezca la ruta de acceso seleccionada. Si la ruta de acceso no es válida para escribirla, el instalador bloquea más controlEvents asociados al control.
+description: El evento SetTargetPath notifica al instalador que compruebe y establezca la ruta de acceso seleccionada. Si la ruta de acceso no es válida para escribirse, el instalador bloquea más ControlEvents asociados al control.
 ms.assetid: 5649da99-1541-47ab-9d2e-b33a705998ec
 title: SetTargetPath ControlEvent
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118625075"
 ---
 # <a name="settargetpath-controlevent"></a>SetTargetPath ControlEvent
 
-El evento SetTargetPath notifica al instalador que compruebe y establezca la ruta de acceso seleccionada. Si la ruta de acceso no es válida para escribirla, el instalador bloquea más controlEvents asociados al control.
+El evento SetTargetPath notifica al instalador que compruebe y establezca la ruta de acceso seleccionada. Si la ruta de acceso no es válida para escribirse, el instalador bloquea más ControlEvents asociados al control.
 
 Este evento se puede publicar mediante un [control PushButton o](pushbutton-control.md)un [control SelectionTree](selectiontree-control.md). Este evento debe crearse en la [tabla ControlEvent](controlevent-table.md).
 
@@ -33,9 +33,9 @@ Ninguno.
 
 ## <a name="typical-use"></a>Uso típico
 
-Un control [PushButton](pushbutton-control.md) de un cuadro de diálogo de exploración está asociado a este evento en la [tabla ControlEvent](controlevent-table.md) para comprobar la ruta de acceso seleccionada antes de volver al cuadro de diálogo de selección.
+Un control [PushButton](pushbutton-control.md) de un cuadro de diálogo examinar está asociado a este evento en la [tabla ControlEvent](controlevent-table.md) para comprobar la ruta de acceso seleccionada antes de volver al cuadro de diálogo de selección.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 No intente configurar la ruta de acceso de destino si los componentes que usan esas rutas de acceso ya están instalados para el usuario actual o para otro usuario. Compruebe la [**propiedad ProductState**](productstate.md) antes de publicar SetTargetPath ControlEvent para determinar si el producto que contiene el componente está instalado.
 

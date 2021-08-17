@@ -19,7 +19,7 @@ ms.locfileid: "118775785"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para JET_err. Excepciones de MultiValuedIndexViolation.
+Clase base para JET_err. Excepciones MultiValuedIndexViolation.
 
 El [tipo EsentMultiValuedIndexViolationException](./esentmultivaluedindexviolationexception-class.md) expone los miembros siguientes.
 

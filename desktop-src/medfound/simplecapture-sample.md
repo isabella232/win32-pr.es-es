@@ -1,25 +1,25 @@
 ---
-description: Muestra cómo obtener una vista previa de vídeo desde un dispositivo de captura de vídeo mediante la API de MFPlay.
+description: Muestra cómo obtener una vista previa del vídeo desde un dispositivo de captura de vídeo mediante la API MFPlay.
 ms.assetid: 6e2b1636-9d24-40e6-9ed4-e17d1af6a044
 title: Ejemplo de SimpleCapture
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da6fd255ad4c69254eb6ff64bdb99731e0c5ba9b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b05c0843749e41e3a80aaa9342c709b3434ec5c4886d3b5184698da4cbc0d36e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119101794"
 ---
 # <a name="simplecapture-sample"></a>Ejemplo de SimpleCapture
 
-\[En desuso. La API de MFPlay se puede quitar de las versiones futuras de Windows. Las aplicaciones deben usar el [lector de origen](source-reader.md) para la captura de vídeo.\]
+\[Obsoleto. La API MFPlay puede quitarse de futuras versiones de Windows. Las aplicaciones deben usar el [Lector de origen para](source-reader.md) la captura de vídeo.\]
 
-Muestra cómo obtener una vista previa de vídeo desde un dispositivo de captura de vídeo mediante la API de MFPlay.
+Muestra cómo obtener una vista previa del vídeo desde un dispositivo de captura de vídeo mediante la API MFPlay.
 
-## <a name="apis-demonstrated"></a>API mostradas
+## <a name="apis-demonstrated"></a>API demostradas
 
-Este ejemplo muestra las siguientes interfaces de Microsoft Media Foundation:
+En este ejemplo se muestran las siguientes Microsoft Media Foundation interfaces:
 
 -   [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource)
 -   [**IMFPMediaItem**](/windows/desktop/api/mfplay/nn-mfplay-imfpmediaitem)
@@ -32,7 +32,7 @@ Este ejemplo muestra las siguientes interfaces de Microsoft Media Foundation:
 
 | Producto                                                        | Versión   |
 |----------------------------------------------------------------|-----------|
-| [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx) | Windows 7 |
+| [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx) | Windows 7 |
 
 
 
@@ -40,7 +40,7 @@ Este ejemplo muestra las siguientes interfaces de Microsoft Media Foundation:
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-Este ejemplo está disponible en el [repositorio de github de ejemplos de Windows clásico](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/SimpleCapture).
+Este ejemplo está disponible en el repositorio [de GitHub Windows ejemplos clásicos.](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/SimpleCapture)
 
 ## <a name="related-topics"></a>Temas relacionados
 

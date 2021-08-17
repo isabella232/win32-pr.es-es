@@ -1,5 +1,5 @@
 ---
-description: El Windows utiliza las estructuras siguientes.
+description: El Windows utiliza las siguientes estructuras.
 ms.assetid: b94b009a-9595-428e-824c-0b75368b868f
 title: Estructuras del instalador
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118630218"
 ---
 # <a name="installer-structures"></a>Estructuras del instalador
 
-El Windows utiliza las estructuras siguientes.
+El Windows utiliza las siguientes estructuras.
 
 -   [**MSIFILEHASHINFO**](/windows/desktop/api/Msi/ns-msi-msifilehashinfo)
 -   [**MSIPATCHSEQUENCEINFO**](/windows/win32/api/msi/ns-msi-msipatchsequenceinfoa)

@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118706436"
 ---
-# <a name="ui_pkey_label"></a>Etiqueta \_ PKEY de la interfaz de \_ usuario
+# <a name="ui_pkey_label"></a>UI \_ PKEY \_ Label
 
 Identifica la propiedad ui \_ PKEY \_ Label.
 
@@ -25,16 +25,16 @@ propertyDescription
       type = VT_LPWSTR
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una aplicación usa ui PKEY Label para consultar el texto de etiqueta de \_ pestañas, grupos, botones, elementos de la galería y otros controles \_ de la cinta de opciones.
+Una aplicación usa ui PKEY Label para consultar el texto de la etiqueta de \_ pestañas, grupos, botones, elementos de la galería y otros controles \_ de la cinta de opciones.
 
 > [!Note]  
 > Windows 8 y versiones más recientes: la [imagen del botón Menú](windowsribbon-controls-applicationmenu.md) de la aplicación ha cambiado a la etiqueta: **Archivo**. Se recomienda no usar Archivo como etiqueta para ninguna de sus propias pestañas.
 
  
 
-El valor de propiedad es una cadena restringida a cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.
+El valor de propiedad es una cadena restringida a cualquier secuencia de caracteres, incluidos los espacios en blanco y los caracteres de salto de línea.
 
 > [!Note]  
 > Use la referencia de caracteres XML de juego de caracteres universales (UCS) `&#xA;` para especificar un salto de línea.
@@ -43,9 +43,9 @@ El valor de propiedad es una cadena restringida a cualquier secuencia de caracte
 
 No se admite la alineación derecha.
 
-La longitud máxima de la etiqueta PKEY de la interfaz de \_ usuario está sin \_ enlazar.
+La longitud máxima de la etiqueta \_ PKEY de \_ la interfaz de usuario está sin enlazar.
 
-Si un comando se expone a través de un elemento de menú y el valor de [**Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) o ui PKEY Label contiene una letra precedida de una y comercial, como se muestra en el ejemplo siguiente, esta letra se trata como una tecla y un acelerador de teclado para ese comando mediante el marco de la cinta \_ \_ de opciones.
+Si un comando se expone a través de un elemento de menú y el valor de [**Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) o UI PKEY Label contiene una letra precedida de una y comercial, como se muestra en el ejemplo siguiente, esta letra se trata como una información sobre teclas y un acelerador de teclado para ese comando por el marco de la cinta \_ \_ de opciones.
 
 
 ```XML

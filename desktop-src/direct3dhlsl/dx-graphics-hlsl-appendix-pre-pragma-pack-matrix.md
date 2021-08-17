@@ -1,5 +1,5 @@
 ---
-title: pack_matrix directiva pragma
+title: pack_matrix pragma (directiva)
 description: Directiva Pragma que especifica la alineación de empaquetado para matrices.
 ms.assetid: e77dc007-d915-4d78-9fff-d44d4999e4da
 keywords:
@@ -51,7 +51,7 @@ Directiva Pragma que especifica la alineación de empaquetado para matrices.
 <tbody>
 <tr class="odd">
 <td><span id="alignment"></span><span id="ALIGNMENT"></span><em>Alineación</em><br/></td>
-<td>Alineación que se establecerá para matrices. Este parámetro puede tomar uno de los valores enumerados en la tabla siguiente. <br/> 
+<td>Alineación que se establece para matrices. Este parámetro puede tomar uno de los valores enumerados en la tabla siguiente. <br/> 
 <table>
 <thead>
 <tr class="header">
@@ -62,7 +62,7 @@ Directiva Pragma que especifica la alineación de empaquetado para matrices.
 <tbody>
 <tr class="odd">
 <td>column_major</td>
-<td>Predeterminada. Establece la alineación de empaquetado de la matriz en la columna principal.</td>
+<td>Predeterminada. Establece la alineación del empaquetado de la matriz en la columna principal.</td>
 </tr>
 <tr class="even">
 <td>row_major</td>
@@ -82,7 +82,7 @@ Directiva Pragma que especifica la alineación de empaquetado para matrices.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se establece la alineación de empaquetado de matriz en fila principal.
+En el ejemplo siguiente se establece la alineación de empaquetado de matriz en la fila principal.
 
 
 ```
@@ -98,7 +98,7 @@ En el ejemplo siguiente se establece la alineación de empaquetado de matriz en 
 [Directivas de preprocesador (HLSL de DirectX)](dx-graphics-hlsl-appendix-preprocessor.md)
 </dt> <dt>
 
-[\#directiva pragma (DirectX HLSL)](dx-graphics-hlsl-appendix-pre-pragma.md)
+[\#Directiva pragma (DirectX HLSL)](dx-graphics-hlsl-appendix-pre-pragma.md)
 </dt> </dl>
 
  

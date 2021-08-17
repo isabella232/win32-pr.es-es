@@ -3,29 +3,29 @@ title: Listas de reproducción y el objeto MediaCollection
 description: Listas de reproducción y el objeto MediaCollection
 ms.assetid: 3c98ceed-2545-4774-998b-c1db0d172a81
 keywords:
-- Windows Media Player, listas de reproducción
-- Modelo de objetos de Windows Media Player, listas de reproducción
+- Reproductor de Windows Media,listas de reproducción
+- Reproductor de Windows Media modelo de objetos, listas de reproducción
 - modelo de objetos, listas de reproducción
-- Windows Media Player Mobile, listas de reproducción
-- Control ActiveX de Windows Media Player, listas de reproducción
-- Control ActiveX móvil de Windows Media Player, listas de reproducción
-- Control ActiveX, listas de reproducción
-- listas de reproducción, objeto MediaCollection
-- listas de reproducción de metarchivos, objeto MediaCollection
-- Listas de reproducción de metarchivo de Windows Media, objeto MediaCollection
+- Reproductor de Windows Media Móvil, listas de reproducción
+- Reproductor de Windows Media ActiveX control,listas de reproducción
+- Reproductor de Windows Media Control de ActiveX móviles, listas de reproducción
+- ActiveX control,listas de reproducción
+- playlists,objeto MediaCollection
+- listas de reproducción de metarchivo, objeto MediaCollection
+- Windows Listas de reproducción de metarchivos multimedia, objeto MediaCollection
 - Objeto MediaCollection
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 334b693046e6c78e92a4af901816b57bb9c4cddc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9b1a0bba2e966e51523dc24965c2f2a066767b059f26a08fde9ee5856a1694df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118334458"
 ---
 # <a name="playlists-and-the-mediacollection-object"></a>Listas de reproducción y el objeto MediaCollection
 
-El objeto **MediaCollection** proporciona acceso a varias listas de reproducción especiales e incluye un método para crear una nueva lista de reproducción a partir de un metarchivo.
+El **objeto MediaCollection** proporciona acceso a una variedad de listas de reproducción especiales e incluye un método para crear una nueva lista de reproducción a partir de un metarchivo.
 
 Los métodos siguientes recuperan listas de reproducción especiales:
 
@@ -38,11 +38,11 @@ Los métodos siguientes recuperan listas de reproducción especiales:
 
 Como sugieren sus nombres, estos métodos recuperan listas de reproducción que contienen todos los elementos multimedia de la biblioteca que coinciden con determinados criterios.
 
-Tenga cuidado de no confundir el *MediaCollection*. método **getByName** con *PlaylistCollection*. método **getByName** . El método **MediaCollection** devuelve un objeto de **lista de reproducción** que contiene todos los elementos multimedia que tienen el nombre especificado. El método **PlaylistCollection** devuelve un objeto **PlaylistArray** que contiene todas las listas de reproducción que tienen el nombre especificado.
+Tenga cuidado de no confundir *MediaCollection.* **Método getByName** con *PlaylistCollection*. **Método getByName.** El **método MediaCollection** devuelve un objeto **Playlist** que contiene todos los elementos multimedia que tienen el nombre especificado. El **método PlaylistCollection** devuelve un **objeto PlaylistArray** que contiene todas las listas de reproducción que tienen el nombre especificado.
 
-Puede usar *MediaCollection*. **agregue** el método para agregar listas de reproducción y elementos multimedia a la biblioteca. Para agregar una lista de reproducción, pase el método a la ruta de acceso al metarchivo que define la lista de reproducción. El método siempre devuelve un objeto **multimedia** . No se puede convertir entre objetos **multimedia** y de **lista de reproducción** . Para trabajar con la lista de reproducción que ha agregado, recupere el objeto de **lista de reproducción** que tiene el mismo nombre que el objeto **multimedia** .
+Puede usar *MediaCollection*. **Agregar** método para agregar listas de reproducción, así como elementos multimedia a la biblioteca. Para agregar una lista de reproducción, pase al método la ruta de acceso al metarchivo que define la lista de reproducción. El método siempre devuelve un **objeto** Media. No se puede convertir entre **objetos Multimedia** y **Lista de** reproducción. Para trabajar con la lista de reproducción que agregó, recupere el objeto **Lista de** reproducción que tiene el mismo nombre que el **objeto** Multimedia.
 
-En el siguiente ejemplo de C# se muestra cómo recuperar los elementos multimedia por tipo mediante **MediaCollection**. método **getByAttribute** . Este código recupera los nombres de todos los atributos asociados a un tipo determinado, así como el estado de lectura/escritura o de solo lectura de esos atributos. Genera un único archivo que contiene listas de atributos para los tipos audio, vídeo, radio, lista de reproducción, otros, música y fotografías.
+En el siguiente ejemplo de C# se muestra cómo recuperar medios por tipo mediante **MediaCollection**. **Método getByAttribute.** Este código recupera los nombres de todos los atributos asociados a un tipo determinado, así como el estado de lectura/escritura o de solo lectura de esos atributos. Genera un único archivo que contiene listas de atributos para los tipos Audio, Vídeo, Radio, Lista de reproducción, Otros, Música y Foto.
 
 
 ```C++
@@ -111,19 +111,19 @@ IWMPMedia Media = Player.mediaCollection.add("c:\\testPlayList.asx");
 
 
 
-Las listas de reproducción estáticas incluyen elementos multimedia específicos. Las listas de reproducción automáticas buscan en la biblioteca cada vez que se abren y pueden contener diferentes elementos multimedia en momentos diferentes. Puede Agregar listas de reproducción estáticas y automáticas a la biblioteca mediante *MediaCollection*. **agregue** el método. También puede Agregar listas de reproducción estáticas mediante *PlaylistCollection*. método **importPlaylist** .
+Las listas de reproducción estáticas incluyen elementos multimedia específicos. Las listas de reproducción automáticas buscan en la biblioteca cada vez que se abren y pueden contener diferentes elementos multimedia en momentos diferentes. Puede agregar listas de reproducción estáticas y automáticas a la biblioteca mediante *MediaCollection*. **add** method. También puede agregar listas de reproducción estáticas mediante *PlaylistCollection*. **Método importPlaylist.**
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Administrar listas de reproducción**](managing-playlists.md)
+[**Administración de listas de reproducción**](managing-playlists.md)
 </dt> <dt>
 
 [**Objeto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Objeto Playlist**](playlist-object.md)
+[**Objeto de lista de reproducción**](playlist-object.md)
 </dt> <dt>
 
 [**Objeto PlaylistCollection**](playlistcollection-object.md)
@@ -135,9 +135,9 @@ Las listas de reproducción estáticas incluyen elementos multimedia específico
 [**Listas de reproducción estáticas y automáticas**](static-and-auto-playlists.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

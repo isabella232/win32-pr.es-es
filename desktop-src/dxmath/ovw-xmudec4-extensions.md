@@ -1,5 +1,5 @@
 ---
-description: XMUDEC4describe un vector 4D con componentes x-, y-y z- representados como valores enteros de 10 bits sin signo y w-component como un valor entero sin signo de 2 bits.
+description: XMUDEC4describe un vector 4D con componentes x-, y- y z- representados como valores enteros de 10 bits sin signo y w-component como un valor entero sin signo de 2 bits.
 ms.assetid: 9861c484-b80d-41a6-a938-322fd8cafdad
 title: Extensiones XMUDEC4
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118500902"
 ---
 # <a name="xmudec4-extensions"></a>Extensiones XMUDEC4
 
-[**XMUDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudec4)describe un vector 4D con componentes x-, y-y z- representados como valores enteros de 10 bits sin signo y w-component como un valor entero sin signo de 2 bits.
+[**XMUDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudec4)describe un vector 4D con componentes x-, y- y z- representados como valores enteros de 10 bits sin signo y w-component como un valor entero de 2 bits sin signo.
 
 > [!Note]  
 > Las características enumeradas aquí solo están disponibles al desarrollar con C++.

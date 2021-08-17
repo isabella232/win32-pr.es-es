@@ -1,5 +1,5 @@
 ---
-description: Uso compartido de sockets Windows sockets (Winsock).
+description: Uso compartido de sockets Windows Sockets (Winsock).
 ms.assetid: dad31820-6f60-4c3b-9cdf-e301a5ffce48
 title: Sockets compartidos en el SPI
 ms.topic: article
@@ -17,7 +17,7 @@ El uso compartido de sockets entre Windows sockets se implementa como se muestra
 
 Es responsabilidad del proveedor de servicios realizar las operaciones necesarias en el contexto del proceso de origen y crear una estructura INFO de [**WSAPROTOCOL \_**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) que se reconocerá cuando aparezca posteriormente como un parámetro de [**WSPSocket en**](/windows/desktop/api/Ws2spi/nc-ws2spi-lpwspsocket) el contexto de los procesos de destino. El **miembro dwProviderReserved** de la estructura **\_ INFO de WSAPROTOCOL** está disponible para el uso del proveedor de servicios y se puede usar para almacenar cualquier información de contexto útil, incluido un identificador duplicado.
 
-Este mecanismo está diseñado para ser adecuado para las versiones multiproceso de un solo subproceso y preferentes de Windows. Sin embargo, tenga en cuenta que los sockets se pueden compartir entre subprocesos de un proceso determinado sin usar la función [**WSPDuplicateSocket,**](/previous-versions/windows/hardware/network/ff566282(v=vs.85)) ya que un descriptor de socket es válido en todos los subprocesos de un proceso.
+Este mecanismo está diseñado para ser adecuado tanto para versiones multiproceso de subproceso único como para versiones multiproceso preferentes de Windows. Sin embargo, tenga en cuenta que los sockets se pueden compartir entre subprocesos de un proceso determinado sin usar la función [**WSPDuplicateSocket,**](/previous-versions/windows/hardware/network/ff566282(v=vs.85)) ya que un descriptor de socket es válido en todos los subprocesos de un proceso.
 
 Como se describe en la sección [Asignación](descriptor-allocation-2.md)de descriptores , cuando se asignan nuevos descriptores de socket, los proveedores IFS deben llamar a [**WPUModifyIFSHandle**](/windows/desktop/api/Ws2spi/nf-ws2spi-wpumodifyifshandle) y los proveedores que no sean IFS deben llamar a [**WPUCreateSocketHandle**](/windows/desktop/api/Ws2spi/nf-ws2spi-wpucreatesockethandle).
 

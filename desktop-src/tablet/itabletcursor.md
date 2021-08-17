@@ -1,7 +1,7 @@
 ---
 description: Representa un objeto de lápiz óptico.
 ms.assetid: c55945b7-59df-49b5-b25f-fa96056889fc
-title: ITabletCursor (interfaz)
+title: Interfaz ITabletCursor
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118716943"
 ---
-# <a name="itabletcursor-interface"></a>ITabletCursor (interfaz)
+# <a name="itabletcursor-interface"></a>Interfaz ITabletCursor
 
 Representa un objeto de lápiz óptico.
 
@@ -49,7 +49,7 @@ La **interfaz ITabletCursor** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 No utilice esta interfaz.
 
@@ -89,7 +89,7 @@ interface ITabletCursor : IUnknown
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |

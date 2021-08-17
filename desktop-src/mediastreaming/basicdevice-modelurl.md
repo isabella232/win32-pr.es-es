@@ -1,11 +1,11 @@
 ---
-title: Propiedad BasicDevice. ModelUrl
+title: BasicDevice.ModelUrl, propiedad
 description: Obtiene la dirección URL del modelo del dispositivo.
 ms.assetid: 90422ADF-DC44-44B0-802A-D75FDCDE54B5
 keywords:
-- Propiedad ModelUrl API de streaming de multimedia
-- Propiedad ModelUrl API de streaming de multimedia, interfaz BasicDevice
-- Interfaz BasicDevice API de streaming de multimedia, propiedad ModelUrl
+- Propiedad ModelUrl de Media Streaming API
+- ModelUrl, propiedad Media Streaming API, interfaz BasicDevice
+- Interfaz basicDevice Media Streaming API, propiedad ModelUrl
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8b8732a397fa0208e96672d5e4ade298315875cd
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f5e8b8d295b1ec557940149f20c5f1ce791ae0bf36cf93e05b056541b4ced2a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100867"
 ---
-# <a name="basicdevicemodelurl-property"></a>Propiedad BasicDevice. ModelUrl
+# <a name="basicdevicemodelurl-property"></a>BasicDevice.ModelUrl, propiedad
 
 Obtiene la dirección URL del modelo del dispositivo.
 
@@ -33,7 +33,7 @@ Esta propiedad es de solo lectura.
 
 ```C++
 HRESULT get_ModelUrl(
-  [out] HSTRING *value
+  [out] HSTRING *value
 );
 ```
 
@@ -43,13 +43,13 @@ HRESULT get_ModelUrl(
 
 Puntero a la dirección URL del modelo del dispositivo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

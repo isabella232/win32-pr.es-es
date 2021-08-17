@@ -13,7 +13,7 @@ ms.locfileid: "118752007"
 ---
 # <a name="enabled-property-balloon-object"></a>Propiedad Enabled (objeto Balloon)
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
@@ -31,7 +31,7 @@ Devuelve si el globo de palabras está habilitado para el carácter especificado
 
 
 
-| Value     | Descripción              |
+| Valor     | Descripción              |
 |-----------|--------------------------|
 | **True**  | El globo está habilitado.  |
 | **False** | El globo está deshabilitado. |
@@ -42,9 +42,9 @@ Devuelve si el globo de palabras está habilitado para el carácter especificado
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **propiedad Enabled** devuelve un valor booleano que especifica si el globo está habilitado. El estado predeterminado del globo de palabras se establece como parte de la definición de un carácter cuando el carácter se compila en el Editor de caracteres de Microsoft Agent. Si se define un carácter para no admitir el globo de palabras, esta propiedad siempre será **False** para el carácter.
+La **propiedad Enabled** devuelve un valor booleano que especifica si el globo está habilitado. El estado predeterminado del globo de palabras se establece como parte de la definición de un carácter cuando el carácter se compila en el Editor de caracteres de Microsoft Agent. Si se define un carácter para no admitir la palabra globo, esta propiedad siempre será **False** para el carácter.
 
  
 

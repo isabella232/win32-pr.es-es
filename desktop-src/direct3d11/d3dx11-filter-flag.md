@@ -31,7 +31,7 @@ ms.locfileid: "118537006"
 
 Marcas de filtrado de textura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -171,7 +171,7 @@ D3DX11 realiza automáticamente la corrección gamma (para convertir datos de co
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

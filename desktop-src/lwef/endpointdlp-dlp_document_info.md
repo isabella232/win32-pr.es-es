@@ -1,6 +1,6 @@
 ---
 description: Especifica información sobre un documento asociado a una operación DLP de punto de conexión.
-title: DLP_DOCUMENT_INFO estructura (endpointdlp.h)
+title: Estructura DLP_DOCUMENT_INFO (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
 topic_type:
@@ -12,12 +12,12 @@ api_type:
 - COM
 api_location:
 - endpointdlp.h
-ms.openlocfilehash: d588b627a4d5a88162cb0af67df1b5bf4fd943f1
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 8aa4b6c961b4e80786e9ada480949245b032750499b38f0deead44f97a2d88fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118479768"
 ---
 # <a name="dlp_document_info-structure"></a>DLP_DOCUMENT_INFO estructura
 
@@ -44,7 +44,7 @@ typedef struct _DLP_DOCUMENT_INFO {
 *Versión* \[ En\]
 </dt> <dd>
 
-DWORD que especifica la versión de la API. Este valor siempre debe ser **DLP_DOCUMENT_INFO_V_LATEST**. Esta constante se define en la lista de archivos de encabezado de ejemplo endpointdlp.h del artículo Prevención de [pérdida de datos de punto de conexión.](endpointdlp-endpoint-data-loss-prevention.md)
+DWORD que especifica la versión de LA API. Este valor siempre debe ser **DLP_DOCUMENT_INFO_V_LATEST**. Esta constante se define en la lista de archivos de encabezado de ejemplo endpointdlp.h del artículo Prevención de [pérdida de datos de punto de conexión.](endpointdlp-endpoint-data-loss-prevention.md)
 
 </dd> </dl>
 
@@ -75,7 +75,7 @@ LPCWSTR que especifica la ruta de acceso al archivo de respaldo real del documen
 
 
 
-| Requisito          |    Value                   |
+| Requisito          |    Valor                   |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, versión 1809 (10.0; Compilación 17763)           |
 

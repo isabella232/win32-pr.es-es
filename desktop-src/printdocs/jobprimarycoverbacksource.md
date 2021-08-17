@@ -1,5 +1,5 @@
 ---
-description: Obtenga información sobre el elemento JobPrimaryCoverBackSource, que especifica el origen de una hoja principal de cobertura trasera personalizada para el trabajo.
+description: Obtenga información sobre el elemento JobPrimaryCoverBackSource, que especifica el origen de una hoja principal de cobertura posterior personalizada para el trabajo.
 ms.assetid: b5c8e79c-cdae-4c53-b594-915726423b4f
 title: JobPrimaryCoverBackSource
 ms.topic: article
@@ -84,7 +84,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

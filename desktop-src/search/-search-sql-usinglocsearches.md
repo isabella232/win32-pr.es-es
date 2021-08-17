@@ -13,11 +13,11 @@ ms.locfileid: "118462463"
 ---
 # <a name="using-localized-searches"></a>Uso de búsquedas localizadas
 
-Microsoft Windows Search admite la búsqueda unicode completa. Puede indexar documentos que usan Unicode y crear consultas de búsqueda que usen identificadores y literales Unicode. Sin embargo, la configuración de idioma de una aplicación o del sistema operativo puede tener efectos de gran alcance sobre cómo funciona Windows Search.
+Microsoft Windows Search admite la búsqueda unicode completa. Puede indexar documentos que usan Unicode y crear consultas de búsqueda que usen identificadores y literales Unicode. Sin embargo, la configuración de idioma de una aplicación o del sistema operativo puede tener efectos de gran alcance en el funcionamiento de Windows Search.
 
 Esta sección contiene los siguientes temas:
 
--   [Document and System Locale Configuración](-search-sql-docandlocalesystemsettings.md)
+-   [Documentación y configuración regional del sistema Configuración](-search-sql-docandlocalesystemsettings.md)
 -   [Especificar idiomas](-search-sql-specifyinglanguages.md)
 
  

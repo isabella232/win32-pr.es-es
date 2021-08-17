@@ -1,19 +1,19 @@
 ---
-description: Indica la fecha y la hora de creación de un documento. Esta información se almacena en el documento, no se obtiene del sistema de archivos.
+description: Indica la fecha y hora en que se creó un documento. Esta información se almacena en el documento, no se obtiene del sistema de archivos.
 ms.assetid: 00d8faa6-6b9c-4981-aeb1-17f8f14b1926
 title: System.Document. DateCreated
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b50ae3ef5f6a5c27454e6b408a03e63a4c6228e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1aae38ac3c5f77a42240e4b0e2ada41751182a5da2fab8e0a8914de639936a25
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118466765"
 ---
 # <a name="systemdocumentdatecreated"></a>System.Document. DateCreated
 
-Indica la fecha y la hora de creación de un documento. Esta información se almacena en el documento, no se obtiene del sistema de archivos.
+Indica la fecha y hora en que se creó un documento. Esta información se almacena en el documento, no se obtiene del sistema de archivos.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -46,9 +46,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -63,7 +63,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -75,7 +75,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -93,7 +93,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

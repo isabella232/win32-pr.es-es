@@ -17,7 +17,7 @@ El **objeto DivisionResult** representa una instantánea del análisis de diseñ
 
 Puede obtener información del objeto **DivisionResult** por tipo de elemento estructural, como dibujo o líneas de escritura a mano. El **objeto DivisionResult** puede persistir después **de destruir** el objeto Divider. En Automation, este objeto se denomina objeto [**IInkDivisionResult Interface.**](/windows/desktop/api/msinkaut15/nn-msinkaut15-iinkdivisionresult)
 
-La [**propiedad Strokes**](/windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivisionresult-get_strokes) del **objeto DivisionResult** contiene una copia de la colección **Strokes** del objeto **Divider** en el momento en que se creó el objeto **DivisionResult.**
+La [**propiedad Strokes**](/windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivisionresult-get_strokes) del objeto **DivisionResult** contiene una copia de la colección **Strokes** del objeto **Divider** en el momento en que se creó el objeto **DivisionResult.**
 
 La [**enumeración InkDivisionType**](/windows/win32/api/msinkaut15/ne-msinkaut15-inkdivisiontype) define los tipos de elementos estructurales que el análisis de diseño reconoce.
 

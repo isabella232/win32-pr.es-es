@@ -84,7 +84,7 @@ Un [**dispositivo \_ lógico CIM**](cim-logicaldevice.md) que describe las propi
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La **clase \_ DeviceBus de Win32** se deriva de [**la dependencia CIM \_**](cim-dependency.md).
 
@@ -92,7 +92,7 @@ La **clase \_ DeviceBus de Win32** se deriva de [**la dependencia CIM \_**](cim-
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -102,7 +102,7 @@ La **clase \_ DeviceBus de Win32** se deriva de [**la dependencia CIM \_**](cim-
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

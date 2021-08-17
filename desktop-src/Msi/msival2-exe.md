@@ -13,9 +13,9 @@ ms.locfileid: "118943882"
 ---
 # <a name="msival2exe"></a>Msival2.exe
 
-Msival2.exe es una utilidad de línea de comandos que puede ejecutar un conjunto de evaluadores de coherencia [interno: ICEs](internal-consistency-evaluators-ices.md).
+Msival2.exe es una utilidad de línea de comandos que puede ejecutar un conjunto de evaluadores de coherencia [internos: ICEs](internal-consistency-evaluators-ices.md).
 
-Esta herramienta solo está disponible en los componentes Windows [SDK para desarrolladores Windows Installer](platform-sdk-components-for-windows-installer-developers.md).
+Esta herramienta solo está disponible en los componentes del [SDK Windows para Windows instalador de .](platform-sdk-components-for-windows-installer-developers.md)
 
 Para obtener más información sobre los TIC y el archivo CSV, vea [Using Internal Consistency Evaluators](using-internal-consistency-evaluators.md).
 

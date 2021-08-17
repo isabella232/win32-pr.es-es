@@ -3,7 +3,7 @@ title: Biblioteca de la utilidad OpenGL
 description: Biblioteca de la utilidad OpenGL
 ms.assetid: 54a7cdce-b38d-416a-a59d-827b6fb76b47
 keywords:
-- Utilidad OpenGL,OpenGL (GLU)
+- OpenGL,OpenGL (Utilidad) (GLU)
 - Utilidad OpenGL (GLU)
 - Biblioteca glu OpenGL
 ms.topic: article
@@ -24,7 +24,7 @@ La biblioteca de la utilidad OpenGL (GLU) contiene varios grupos de funciones qu
 
  
 
-Muchas de estas funciones se describen en las secciones anteriores de la documenation a medida que surgen sus temas. Estas funciones se enumeran aquí para que sean completas. Aquí se describen las funciones GLU que no se describen en las secciones anteriores. Para obtener descripciones más detalladas de estas funciones, consulte el *Manual de referencia de OpenGL.* En esta sección se agrupan las funciones GLU relacionadas, como se muestra a continuación:
+Muchas de estas funciones se describen en las secciones anteriores de la documenation a medida que surgen sus temas. Estas funciones se enumeran aquí para que sean completas. Aquí se describen las funciones GLU que no se describen en las secciones anteriores. Para obtener descripciones más detalladas de estas funciones, consulte el *Manual de referencia de OpenGL*. En esta sección se agrupan las funciones GLU relacionadas, como se muestra a continuación:
 
 -   [Inicializando](initializing.md)
 -   [Manipulación de imágenes para su uso en Texturing](manipulating-images-for-use-in-texturing.md)

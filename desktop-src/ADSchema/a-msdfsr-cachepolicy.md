@@ -27,16 +27,16 @@ Opciones de directiva de caché a petición.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ms-DFSR-CachePolicy                  |
 | Ldap-Display-Name | msDFSR-CachePolicy                   |
 | Size              | \-                                   |
-| Actualizar privilegios  | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.29           |
 | System-Id-Guid    | db7a08e7-fc76-4569-a45f-f5ecb66a88b5 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -50,14 +50,14 @@ Opciones de directiva de caché a petición.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Es de un solo valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
@@ -71,14 +71,14 @@ Opciones de directiva de caché a petición.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Es de un solo valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
@@ -92,14 +92,14 @@ Opciones de directiva de caché a petición.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Es de un solo valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |

@@ -68,7 +68,7 @@ Elemento administrado de la asociación.
 **SettingData**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ SettingData**
+Tipo de datos: **Cim \_ SettingData**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -85,7 +85,7 @@ Los datos de configuración de la asociación.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |

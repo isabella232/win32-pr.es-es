@@ -15,7 +15,7 @@ ms.locfileid: "118943352"
 
 El modelo de objetos Mergemod.dll se organiza de la siguiente manera:
 
-![Modelo de objetos para mergemod.dll](images/mergobj.png)
+![modelo de objetos para mergemod.dll](images/mergobj.png)
 
 El [objeto Merge](merge-object.md) es el objeto principal del modelo. El [**objeto GetFiles**](getfiles-object.md) es un objeto secundario. Las dependencias son colecciones de [**objetos de dependencia.**](dependency-object.md) Los errores son colecciones de [**objetos Error**](error-object.md).
 

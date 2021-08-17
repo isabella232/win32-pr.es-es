@@ -13,9 +13,9 @@ ms.locfileid: "118380320"
 ---
 # <a name="command-line-options"></a>Opciones de la línea de comandos
 
-El programa ejecutable que interpreta paquetes e instala productos es Msiexec.exe. Tenga en cuenta que Msiexec también establece un nivel de error en la devolución que corresponde a los [códigos de error del sistema](/windows/desktop/Debug/system-error-codes). Las opciones de la línea de comandos no tienen en cuenta las mayúsculas y minúsculas.
+El programa ejecutable que interpreta paquetes e instala productos es Msiexec.exe. Tenga en cuenta que Msiexec también establece un nivel de error en la devolución que corresponde a los [códigos de error del sistema](/windows/desktop/Debug/system-error-codes). Las opciones de línea de comandos no tienen en cuenta mayúsculas de minúsculas.
 
-Las opciones de línea de comandos de la tabla siguiente están disponibles con Windows Installer 3.0 y versiones anteriores. Las [opciones de configuración Command-Line instalador](standard-installer-command-line-options.md) estándar también están disponibles a partir Windows Installer 3.0.
+Las opciones de línea de comandos de la tabla siguiente están disponibles con Windows Installer 3.0 y versiones anteriores. Las [opciones de configuración Command-Line instalador](standard-installer-command-line-options.md) estándar también están disponibles a partir de Windows Installer 3.0.
 
 
 
@@ -41,7 +41,7 @@ Las opciones de línea de comandos de la tabla siguiente están disponibles con 
 <tr class="even">
 <td><strong>/f</strong></td>
 <td>[p|o|e|d|c|a|u|m|s|v] <em>Paquete</em> | <em>ProductCode</em></td>
-<td>Repara un producto. Esta opción omite los valores de propiedad especificados en la línea de comandos. La lista de argumentos predeterminada para esta opción es "omus". Esta opción comparte la misma lista de argumentos que la <a href="reinstallmode.md"><strong>propiedad REINSTALLMODE.</strong></a><br/> p: solo se vuelve a instalar si falta el archivo.<br/> o: se vuelve a instalar si falta el archivo o si hay instalada una versión anterior.<br/> e: se vuelve a instalar si falta el archivo o si hay instalada una versión igual o anterior.<br/> d : se vuelve a instalar si falta el archivo o si hay instalada una versión diferente.<br/> c: se vuelve a instalar si falta el archivo o la suma de comprobación almacenada no coincide con el valor calculado. Solo repara los archivos que tienen <strong>msidbFileAttributesChecksum</strong> en la columna Atributos de la <a href="file-table.md">tabla File.</a><br/> a : fuerza la reinstalación de todos los archivos.<br/> u: reescribe todas las entradas del Registro específicas del usuario necesarias.<br/> m: reescribe todas las entradas del Registro específicas del equipo necesarias.<br/> s: sobrescribe todos los accesos directos existentes.<br/> v: se ejecuta desde el origen y vuelve a almacenar en caché el paquete local. No use la opción <strong>v</strong> reinstall para la primera instalación de una aplicación o característica.<br/></td>
+<td>Repara un producto. Esta opción omite los valores de propiedad especificados en la línea de comandos. La lista de argumentos predeterminada para esta opción es "omus". Esta opción comparte la misma lista de argumentos que la <a href="reinstallmode.md"><strong>propiedad REINSTALLMODE.</strong></a><br/> p: solo se vuelve a instalar si falta el archivo.<br/> o: se vuelve a instalar si falta el archivo o si hay instalada una versión anterior.<br/> e: se vuelve a instalar si falta el archivo o si hay instalada una versión igual o anterior.<br/> d : se vuelve a instalar si falta el archivo o si hay instalada una versión diferente.<br/> c: se vuelve a instalar si falta el archivo o la suma de comprobación almacenada no coincide con el valor calculado. Solo repara los archivos que tienen <strong>msidbFileAttributesChecksum en</strong> la columna Atributos de la <a href="file-table.md">tabla</a> File.<br/> a : fuerza la reinstalación de todos los archivos.<br/> u: reescribe todas las entradas del Registro específicas del usuario necesarias.<br/> m: reescribe todas las entradas del Registro específicas del equipo necesarias.<br/> s: sobrescribe todos los accesos directos existentes.<br/> v: se ejecuta desde el origen y vuelve a almacenar en caché el paquete local. No use la opción <strong>v</strong> reinstall para la primera instalación de una aplicación o característica.<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>/a</strong></td>
@@ -55,16 +55,16 @@ Las opciones de línea de comandos de la tabla siguiente están disponibles con 
 </tr>
 <tr class="odd">
 <td><strong>/j</strong></td>
-<td>[u|m] <em>Empaquetador</em><br/> [u|m] <em>Package</em><strong>/t</strong><em>Transform List</em><br/> <em>or</em><br/> [u|m] <em>Package</em><strong>/g</strong><em>LanguageID</em><br/></td>
+<td>[u|m] <em>Packageor</em><br/> [u|m] <em>Package</em><strong>/t</strong><em>Transform List</em><br/> <em>or</em><br/> [u|m] <em>Package</em><strong>/g</strong><em>LanguageID</em><br/></td>
 <td>Anuncia un producto. Esta opción omite los valores de propiedad especificados en la línea de comandos.<br/> u: anuncia al usuario actual.<br/> m: anuncia a todos los usuarios de la máquina.<br/> g: identificador de idioma.<br/> t: aplica la transformación al paquete anunciado.<br/></td>
 </tr>
 <tr class="even">
 <td><strong>/L</strong></td>
 <td>[i|w|e|a|r|u|c|m|o|p|v|x|+|!| *] <em>Archivo de registro</em></td>
-<td>Escribe información de registro en un archivo de registro en la ruta de acceso existente especificada. La ruta de acceso a la ubicación del archivo de registro ya debe existir. El instalador no crea la estructura de directorios para el archivo de registro. Las marcas indican qué información se va a registrar. Si no se especifica ninguna marca, el valor predeterminado es "iandermo".<br/> i: mensajes de estado.<br/> w : advertencias nofatales.<br/> e: todos los mensajes de error.<br/> a : inicio de acciones.<br/> r: registros específicos de la acción.<br/> u : solicitudes de usuario.<br/> c: parámetros iniciales de la interfaz de usuario.<br/> m: información de salida irresal o de memoria no útil.<br/> o: mensajes de espacio fuera del disco.<br/> p: propiedades de terminal.<br/> v: salida detallada.<br/> x: información de depuración adicional. <strong>Windows Installer 2.0:</strong> No se admite. La opción x está disponible con Windows Installer versión 3.0.3790.2180 y posteriores.<br/> <br/> + - Anexe al archivo existente.<br/> ! - Vacíe cada línea en el registro.<br/> &quot;*&quot; - Comodín, registre toda la información excepto las opciones v y x. Para incluir las opciones v y x, especifique &quot; /l* vx &quot; .<br/>
+<td>Escribe información de registro en un archivo de registro en la ruta de acceso existente especificada. La ruta de acceso a la ubicación del archivo de registro ya debe existir. El instalador no crea la estructura de directorios para el archivo de registro. Las marcas indican qué información se va a registrar. Si no se especifica ninguna marca, el valor predeterminado es "i lamemo".<br/> i: mensajes de estado.<br/> w : advertencias nofatales.<br/> e: todos los mensajes de error.<br/> a : inicio de acciones.<br/> r: registros específicos de la acción.<br/> u: solicitudes de usuario.<br/> c: parámetros iniciales de la interfaz de usuario.<br/> m: información de salida irresal o de memoria.<br/> o : mensajes de espacio fuera del disco.<br/> p: propiedades del terminal.<br/> v: salida detallada.<br/> x: información de depuración adicional. <strong>Windows Installer 2.0:</strong> No se admite. La opción x está disponible con Windows Installer versión 3.0.3790.2180 y versiones posteriores.<br/> <br/> + - Anexe al archivo existente.<br/> ! - Vacíe cada línea en el registro.<br/> &quot;*&quot; - Carácter comodín, registre toda la información excepto las opciones v y x. Para incluir las opciones v y x, especifique &quot; /l* vx &quot; .<br/>
 <blockquote>
 [!Note]<br />
-Para obtener más información sobre todos los métodos disponibles para establecer el modo de registro, vea <a href="normal-logging.md">Registro normal</a> en la sección Registro <a href="windows-installer-logging.md">Windows instalador.</a>
+Para obtener más información sobre todos los métodos que están disponibles para establecer el modo de registro, vea <a href="normal-logging.md">Registro normal</a> en la sección Registro Windows <a href="windows-installer-logging.md">instalador.</a>
 </blockquote>
 <br/></td>
 </tr>
@@ -73,10 +73,10 @@ Para obtener más información sobre todos los métodos disponibles para estable
 <td><em>Nombre</em>
 <blockquote>
 [!Note]<br />
-La longitud del <em>nombre de</em> archivo no debe tener más de ocho caracteres.
+La longitud del <em>nombre de archivo</em> no debe tener más de ocho caracteres.
 </blockquote>
 <br/></td>
-<td>Genera un archivo .mif de estado de SMS. Debe usarse con las opciones de instalación (-i), eliminación (-x), instalación administrativa (-a) o reinstalación (-f). El ISMIF32.DLL se instala como parte de SMS y debe estar en la ruta de acceso.<br/> Los campos del archivo mif de estado se rellenan con la siguiente información:<br/> Fabricante: <a href="author-summary.md"> <strong>autor</strong></a><br/> Producto: número <a href="revision-number-summary.md"> <strong>de revisión</strong></a><br/> Versión: <a href="subject-summary.md"> <strong>asunto</strong></a><br/> Configuración regional: <a href="template-summary.md"> <strong>plantilla</strong></a><br/> Número de serie: no establecido<br/> Instalación: se establece ISMIF32.DLL en &quot; DateTime&quot;<br/> InstallStatus: &quot; correcto o con &quot; &quot; errores&quot;<br/> Descripción: mensajes de error en el orden siguiente: 1) Mensajes de error generados por el instalador. 2) Recurso de Msi.dll si la instalación no pudo comenzar o el usuario salió. 3) Archivo de mensaje de error del sistema. 4) Mensaje con formato: &quot; error del instalador &quot; %i, donde %i es un error devuelto desde Msi.dll.<br/></td>
+<td>Genera un archivo .mif de estado de SMS. Debe usarse con las opciones de instalación (-i), quitar (-x), instalación administrativa (-a) o reinstalar (-f). El ISMIF32.DLL se instala como parte de SMS y debe estar en la ruta de acceso.<br/> Los campos del archivo mif de estado se rellenan con la siguiente información:<br/> Fabricante: <a href="author-summary.md"> <strong>autor</strong></a><br/> Producto: número <a href="revision-number-summary.md"> <strong>de revisión</strong></a><br/> Versión: <a href="subject-summary.md"> <strong>asunto</strong></a><br/> Configuración regional: <a href="template-summary.md"> <strong>plantilla</strong></a><br/> Número de serie: no establecido<br/> Instalación: se establece ISMIF32.DLL en &quot; DateTime&quot;<br/> InstallStatus: &quot; correcto o con &quot; &quot; errores&quot;<br/> Descripción: mensajes de error en el orden siguiente: 1) Mensajes de error generados por el instalador. 2) Recurso de Msi.dll si no se pudo iniciar la instalación o si el usuario no pudo salir. 3) Archivo de mensaje de error del sistema. 4) Mensaje con formato: &quot; error del instalador &quot; %i, donde %i es un error devuelto desde Msi.dll.<br/></td>
 </tr>
 <tr class="even">
 <td><strong>/p</strong></td>
@@ -96,7 +96,7 @@ La longitud del <em>nombre de</em> archivo no debe tener más de ocho caracteres
 <tr class="odd">
 <td><strong>/y</strong></td>
 <td><em>Módulo</em></td>
-<td>Llama a la función del <strong>sistema DllRegisterServer para</strong> registrar automáticamente los módulos pasados en la línea de comandos. Especifique la ruta de acceso completa al archivo DLL. Por ejemplo, para MY_FILE.DLL en la carpeta actual puede usar:<br/> <strong>msiexec /y .\MY_FILE.DLL</strong><br/> Esta opción solo se usa para la información del Registro que no se puede agregar mediante las tablas del Registro del .msi archivo.<br/></td>
+<td>Llama a la función del <strong>sistema DllRegisterServer para</strong> registrar automáticamente los módulos pasados en la línea de comandos. Especifique la ruta de acceso completa al archivo DLL. Por ejemplo, para MY_FILE.DLL en la carpeta actual puede usar:<br/> <strong>msiexec /y .\MY_FILE.DLL</strong><br/> Esta opción solo se usa para la información del Registro que no se puede agregar mediante las tablas del Registro .msi archivo.<br/></td>
 </tr>
 <tr class="even">
 <td><strong>/z</strong></td>
@@ -106,7 +106,7 @@ La longitud del <em>nombre de</em> archivo no debe tener más de ocho caracteres
 <tr class="odd">
 <td><strong>/c</strong></td>
 
-<td>Anuncia una nueva instancia del producto. Debe usarse junto con /t. Disponible a partir de Windows Installer que se incluye con Windows Server 2003 y Windows XP con Service Pack 1 (SP1).<br/></td>
+<td>Anuncia una nueva instancia del producto. Debe usarse junto con /t. Disponible a partir de la versión Windows Installer que se incluye con Windows Server 2003 y Windows XP con Service Pack 1 (SP1).<br/></td>
 </tr>
 <tr class="even">
 <td><strong>/n</strong></td>
@@ -120,7 +120,7 @@ La longitud del <em>nombre de</em> archivo no debe tener más de ocho caracteres
 
  
 
-Las opciones /i, /x, /f \[ p o e d c a u m s \| v \| , \| \| \| \| \| \| \| \] /j u m , \[ \| \] /a, /p, /y y /z no deben usarse juntas. La única excepción a esta regla es que la aplicación de revisiones a una [instalación administrativa](administrative-installation.md) requiere el uso de /p y /a. Las opciones /t, /c y /g solo se deben usar con /j. Las opciones /l y /q se pueden usar con /i, /x, /f \[ p o e d c a u m s \| v \| , \| \| \| \| \| \| \| \] /j u m , \[ \| \] /a y /p. La opción /n se puede usar con /i, /f, /x y /p.
+Las opciones /i, /x, /f \[ p o e d c a u m s \| v \| , \| \| \| \| \| \| \| \] /j u m , \[ \| \] /a, /p, /y y /z no deben usarse juntas. La única excepción a esta regla es que la aplicación de revisiones a una [instalación administrativa](administrative-installation.md) requiere el uso de /p y /a. Las opciones /t, /c y /g solo se deben usar con /j. Las opciones /l y /q se pueden usar con /i, /x, /f \[ p o e d c a u m s \| v \| , \| \| \| \| \| \| \| \] /j u \[ \| \] m, /a y /p. La opción /n se puede usar con /i, /f, /x y /p.
 
 Para instalar un producto desde A: \\Example.msi, instale el producto como se muestra a continuación:
 
@@ -138,7 +138,7 @@ Sintaxis incorrecta:
 
 **msiexec /i PROPERTY=VALUE A: \\Example.msi**
 
-Los valores de propiedad que son cadenas literales deben incluirse entre comillas. Incluya los espacios en blanco de la cadena entre las marcas.
+Los valores de propiedad que son cadenas literales deben ir entre comillas. Incluya los espacios en blanco de la cadena entre las marcas.
 
 **msiexec /i A: \\Example.msi PROPERTY="Embedded White Space"**
 
@@ -170,7 +170,7 @@ Al aplicar revisiones a un producto específico, las opciones /i y /p no se pued
 
 **msiexec /i A: \\Example.msi PATCH=msipatch.msp;msipatch2.msp /qb**
 
-La [**propiedad PATCH**](patch.md) no se puede establecer en una línea de comandos, cuando se usa la opción /p. Si la **propiedad PATCH** se establece cuando se usa la opción /p, el valor de la propiedad **PATCH** se omite y se sobrescribe.
+La [**propiedad PATCH**](patch.md) no se puede establecer en una línea de comandos cuando se usa la opción /p. Si la **propiedad PATCH** se establece cuando se usa la opción /p, el valor de la propiedad **PATCH** se omite y se sobrescribe.
 
  
 

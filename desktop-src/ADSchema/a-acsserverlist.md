@@ -27,7 +27,7 @@ Contiene los nombres DNS de los Windows NT que pueden ejecutar ACS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | ACS-Server-List                             |
 | Ldap-Display-Name | aCSServerList                               |
@@ -36,7 +36,7 @@ Contiene los nombres DNS de los Windows NT que pueden ejecutar ACS.
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1312                     |
 | System-Id-Guid    | 7cbd59a5-3b90-11d2-90cc-00c04fd91ab1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,14 +53,14 @@ Contiene los nombres DNS de los Windows NT que pueden ejecutar ACS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Es de un solo valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
@@ -74,14 +74,14 @@ Contiene los nombres DNS de los Windows NT que pueden ejecutar ACS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Es de un solo valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
@@ -95,14 +95,14 @@ Contiene los nombres DNS de los Windows NT que pueden ejecutar ACS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Es de un solo valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
@@ -116,14 +116,14 @@ Contiene los nombres DNS de los Windows NT que pueden ejecutar ACS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Es de un solo valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
@@ -137,14 +137,14 @@ Contiene los nombres DNS de los Windows NT que pueden ejecutar ACS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Es de un solo valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
@@ -158,14 +158,14 @@ Contiene los nombres DNS de los Windows NT que pueden ejecutar ACS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Es de un solo valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |

@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_DBID métodos'
+description: 'Más información sobre: JET_DBID métodos'
 title: JET_DBID métodos
 TOCTitle: JET_DBID methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_DBID
@@ -19,7 +19,7 @@ ms.locfileid: "118766617"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_DBID](./jet-dbid-structure.md) muestra los miembros siguientes.
+El [JET_DBID](./jet-dbid-structure.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -78,7 +78,7 @@ El [JET_DBID](./jet-dbid-structure.md) muestra los miembros siguientes.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

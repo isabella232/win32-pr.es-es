@@ -18,7 +18,7 @@ ms.locfileid: "118690530"
 
 Para establecer una contraseña de usuario, use [**el método IADsUser.SetPassword.**](/windows/desktop/api/Iads/nf-iads-iadsuser-setpassword)
 
-El proveedor LDAP para Active Directory utiliza uno de los tres procesos para establecer la contraseña (los directorios LDAP de terceros, como i Proto, no usan este proceso de autenticación de contraseña). El método puede variar según la configuración de red. Los métodos de establecer contraseña se producen en el orden siguiente:
+El proveedor LDAP para Active Directory utiliza uno de los tres procesos para establecer la contraseña (los directorios LDAP de terceros, como i Kerberos, no usan este proceso de autenticación de contraseña). El método puede variar según la configuración de red. Los métodos de establecer contraseña se producen en el orden siguiente:
 
 -   En primer lugar, el proveedor LDAP intenta usar LDAP a través de una conexión SSL de 128 bits. Para que LDAP SSL funcione correctamente, el servidor LDAP debe tener instalado el certificado de autenticación de servidor adecuado y los clientes que ejecutan el código ADSI deben confiar en la autoridad que emitió esos certificados. Tanto el servidor como el cliente deben admitir el cifrado de 128 bits.
 -   En segundo lugar, si la conexión SSL no se realiza correctamente, el proveedor LDAP intenta usar Kerberos. En Windows 2000, es posible que Kerberos no admita la autenticación entre bosques. Las mejoras posteriores a Kerberos admiten la autenticación entre bosques.

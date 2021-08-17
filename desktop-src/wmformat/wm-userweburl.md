@@ -31,7 +31,7 @@ g \_ wszWMUserWebURL
 
 [**WM \_ USER \_ WEB \_ URL**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_user_web_url) (**WMT TYPE \_ \_ BINARY**)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118515869"
 ---
-# <a name="d3dx_int4_to_r8g8b8a8_sint-function"></a>Función SINT de D3DX \_ INT4 \_ a \_ R8G8B8A8 \_
+# <a name="d3dx_int4_to_r8g8b8a8_sint-function"></a>Función SINT de D3DX INT4 a \_ \_ \_ R8G8B8A8 \_
 
 Empaqueta el XMINT4 especificado de nuevo en un SINT DXGI \_ FORMAT \_ R8G8B8A8. \_
 

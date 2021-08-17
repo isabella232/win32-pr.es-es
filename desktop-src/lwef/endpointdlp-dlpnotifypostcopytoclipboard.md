@@ -64,7 +64,7 @@ Devuelve void.
 
 
 
-| Requisito          |    Value                   |
+| Requisito          |    Valor                   |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, versión 1809 (10.0; Compilación 17763)           |
 | Archivo DLL<br/>                      | EndpointDlp.dll |

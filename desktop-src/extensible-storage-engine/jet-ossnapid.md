@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_ossnapid"></a>JET_OSSNAPID
 
-El **JET_OSSNAPID** tipo de datos contiene un identificador para una instantánea de la base de datos.
+El **JET_OSSNAPID** de datos contiene un identificador para una instantánea de la base de datos.
 
 ```cpp
     typedef JET_API_PTR JET_OSSNAPID;
@@ -39,7 +39,7 @@ El **JET_OSSNAPID** tipo de datos contiene un identificador para una instantáne
 
 JET_OSSNAPID
 
-Identificador de una instantánea de la base de datos. Este identificador se usa en los elementos de la API de JET que están implicados en la copia de seguridad de instantáneas.
+Identificador de una instantánea de la base de datos. Este identificador se usa en elementos de la API jet que están implicados en la copia de seguridad de instantáneas.
 
 **NULL** se puede usar para indicar un identificador no válido.
 

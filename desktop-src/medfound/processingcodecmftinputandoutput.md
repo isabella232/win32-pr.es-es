@@ -1,25 +1,25 @@
 ---
-description: Procesamiento de entrada y salida de MFT de códecs
+description: Procesamiento de entrada y salida de MFT de códec
 ms.assetid: 2d012508-de13-411f-9102-22e47faddffd
-title: Procesamiento de entrada y salida de MFT de códecs
+title: Procesamiento de entrada y salida de MFT de códec
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1af3a16fa1855574f1b7618bc0d41bf85c15412f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c3cbec9b92ae11d8f1f3722f2cb2540a5b5b01bb5d680e448d298a36ec682ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119101844"
 ---
-# <a name="processing-codec-mft-input-and-output"></a>Procesamiento de entrada y salida de MFT de códecs
+# <a name="processing-codec-mft-input-and-output"></a>Procesamiento de entrada y salida de MFT de códec
 
-Cuando haya configurado el tipo de entrada y el tipo de salida de una MFT, puede empezar a procesar las muestras de datos. Pase ejemplos a la MFT para su procesamiento mediante el método [**IMFTransform::P rocessinput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput) y, a continuación, recupere el ejemplo procesado llamando a [**IMFTransform::P rocessoutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput). Debe establecer las marcas de tiempo y duraciones precisas para todos los ejemplos de entrada pasados. Las marcas de tiempo no son estrictamente necesarias pero ayudan a mantener la sincronización de audio y vídeo. Si no dispone de las marcas de tiempo para los ejemplos, es mejor dejarlas de usar valores inciertos.
+Cuando haya configurado el tipo de entrada y el tipo de salida para un MFT, puede empezar a procesar ejemplos de datos. Se pasan ejemplos al MFT para su procesamiento mediante el método [**IMFTransform::P rocessInput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput) y, a continuación, se recupera el ejemplo procesado mediante una llamada a [**IMFTransform::P rocessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput). Debe establecer marcas de tiempo y duraciones precisas para todas las muestras de entrada pasadas. Las marcas de tiempo no son estrictamente necesarias, pero ayudan a mantener la sincronización de audio y vídeo. Si no tiene las marcas de tiempo de los ejemplos, es mejor dejarlos fuera que usar valores no seguros.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Trabajar con códec MFTs](workingwithcodecmfts.md)
+[Trabajar con códecs MFT](workingwithcodecmfts.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
 title: Referencia de WinINet
-description: Los siguientes elementos forman parte de la API de WinINet.
+description: Los elementos siguientes forman parte de la API de WinINet.
 ms.assetid: dd2f8246-ea82-49cb-973f-157fb77c8c08
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118561947"
 ---
 # <a name="wininet-reference"></a>Referencia de WinINet
 
-Los siguientes elementos forman parte de la API de WinINet.
+Los elementos siguientes forman parte de la API de WinINet.
 
 -   [Funciones de WinINet](wininet-functions.md)
 -   [Estructuras de WinINet](wininet-structures.md)

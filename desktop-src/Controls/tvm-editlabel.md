@@ -43,7 +43,7 @@ Controle el elemento que se editará.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador al control de edición utilizado para editar el texto del elemento si se realiza correctamente o **NULL** en caso contrario.
+Devuelve el identificador al control de edición utilizado para editar el texto del elemento si se realiza correctamente o **NULL en caso** contrario.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -51,7 +51,7 @@ Este mensaje envía un [código de notificación \_ BEGINLABELEDIT](tvn-beginlab
 
 Cuando el usuario completa o cancela la edición, el control de edición se destruye y el identificador ya no es válido. Puede crear subclases del control de edición, pero no destruirlo.
 
-El control debe tener el foco antes de enviar este mensaje al control . El foco se puede establecer mediante la [**función SetFocus.**](/windows/desktop/api/winuser/nf-winuser-setfocus)
+El control debe tener el foco antes de enviar este mensaje al control. El foco se puede establecer mediante la [**función SetFocus.**](/windows/desktop/api/winuser/nf-winuser-setfocus)
 
 ## <a name="requirements"></a>Requisitos
 

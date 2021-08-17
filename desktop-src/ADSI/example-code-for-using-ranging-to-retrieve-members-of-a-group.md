@@ -1,11 +1,11 @@
 ---
 title: Código de ejemplo para usar Ranging para recuperar miembros de un grupo
-description: En el ejemplo de código siguiente se usa ActiveX Objetos de directorio (ADO) para recuperar los miembros de un grupo.
+description: En el ejemplo de código siguiente se usa ActiveX Directory Objects (ADO) para recuperar los miembros de un grupo.
 ms.assetid: baebefd5-7ac6-4d36-a5a4-0796d790abee
 ms.tgt_platform: multiple
 keywords:
 - Código de ejemplo para usar Ranging para recuperar miembros de un ADSI de grupo
-- ejemplo de código C/C++ ADSI , mediante el uso de ranging para recuperar miembros de un grupo
+- ejemplo de código ADSI de C/C++, con que se usa para recuperar miembros de un grupo
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 31d68920d19135387ec76003ca621472ea9266102d84930e4af84e13b886335b
@@ -17,9 +17,9 @@ ms.locfileid: "118691848"
 ---
 # <a name="example-code-for-using-ranging-to-retrieve-members-of-a-group"></a>Código de ejemplo para usar Ranging para recuperar miembros de un grupo
 
-En el ejemplo de código siguiente se usa ActiveX Objetos de directorio (ADO) para recuperar los miembros de un grupo.
+En el ejemplo de código siguiente se usa ActiveX Directory Objects (ADO) para recuperar los miembros de un grupo.
 
-El siguiente fragmento de código requiere una referencia a la biblioteca microsoft ActiveX Data Objects 6.0.
+El fragmento de código siguiente requiere una referencia a Microsoft ActiveX Data Objects 6.0 Library.
 
 
 ```VB

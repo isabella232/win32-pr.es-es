@@ -25,7 +25,7 @@ ms.locfileid: "118419459"
 
 El **método eliminar** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) elimina el archivo de paginación lógico (o directorio) especificado en la ruta de acceso del objeto.
 
-En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 

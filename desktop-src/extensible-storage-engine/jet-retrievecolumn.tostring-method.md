@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_RETRIEVECOLUMN. ToString (método)'
-title: JET_RETRIEVECOLUMN. ToString (método)
+description: 'Más información sobre: JET_RETRIEVECOLUMN. Método ToString'
+title: JET_RETRIEVECOLUMN. Método ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_RETRIEVECOLUMN.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_retrievecolumn.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bf93085b8e78913d561be5413ebe291c69bdf777
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e6577dbe378eb2a4ca3edf4366b5f61dbbd4bdcd02b5d8a6b9ee65652879d0bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107237"
 ---
-# <a name="jet_retrievecolumntostring-method"></a>JET_RETRIEVECOLUMN. ToString (método)
+# <a name="jet_retrievecolumntostring-method"></a>JET_RETRIEVECOLUMN. Método ToString
 
-Devuelve una [cadena](/dotnet/api/system.string) que representa el [JET_RETRIEVECOLUMN](./jet-retrievecolumn-class.md)actual.
+Devuelve un [objeto String](/dotnet/api/system.string) que representa el objeto [JET_RETRIEVECOLUMN](./jet-retrievecolumn-class.md).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Cadena](/dotnet/api/system.string) que representa el [JET_RETRIEVECOLUMN](./jet-retrievecolumn-class.md)actual.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Cadena [que](/dotnet/api/system.string) representa el objeto [JET_RETRIEVECOLUMN](./jet-retrievecolumn-class.md).  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_RETRIEVECOLUMN (clase)](./jet-retrievecolumn-class.md)
+[JET_RETRIEVECOLUMN clase](./jet-retrievecolumn-class.md)
 
-[Miembros de JET_RETRIEVECOLUMN](./jet-retrievecolumn-members.md)
+[JET_RETRIEVECOLUMN miembros](./jet-retrievecolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

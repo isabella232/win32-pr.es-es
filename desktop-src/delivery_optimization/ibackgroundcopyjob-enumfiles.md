@@ -58,9 +58,9 @@ Este método devuelve **S_OK** correcto o uno de los valores **HRESULT COM** est
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1709 \[ solo aplicaciones de escritorio\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
 | Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
@@ -70,7 +70,7 @@ Este método devuelve **S_OK** correcto o uno de los valores **HRESULT COM** est
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
