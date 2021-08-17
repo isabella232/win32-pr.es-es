@@ -1,5 +1,5 @@
 ---
-description: Dado que en muchos casos solo podrá depurar una parte de la funcionalidad de los componentes en el entorno de Microsoft Visual Basic, habrá situaciones en las que deberá depurar los componentes compilados con Visual Basic una vez compilados. Como el Visual Basic no lo habilita, en su lugar debe usar el Microsoft Visual C++ de trabajo.
+description: Dado que en muchos casos solo podrá depurar una parte de la funcionalidad de los componentes en el entorno de Microsoft Visual Basic, habrá situaciones en las que deberá depurar los componentes compilados con Visual Basic después de que se hayan compilado. Como el Visual Basic no lo habilita, en su lugar debe usar el Microsoft Visual C++ de trabajo.
 ms.assetid: a58c5884-3c2d-4699-8b19-277003912dfd
 title: Depuración de componentes Visual Basic compilados
 ms.topic: article
@@ -13,17 +13,17 @@ ms.locfileid: "119128787"
 ---
 # <a name="debugging-compiled-visual-basic-components"></a>Depuración de componentes Visual Basic compilados
 
-Dado que en muchos casos solo podrá depurar una parte de la funcionalidad del componente dentro del entorno de Microsoft Visual Basic, habrá situaciones en las que deberá depurar los componentes compilados con Visual Basic después de que se hayan compilado. Como el Visual Basic no lo habilita, en su lugar debe usar el Microsoft Visual C++ de trabajo.
+Dado que en muchos casos solo podrá depurar una parte de la funcionalidad del componente en el entorno de Microsoft Visual Basic, habrá situaciones en las que deberá depurar los componentes compilados con Visual Basic una vez compilados. Como el Visual Basic no lo habilita, debe usar el Microsoft Visual C++ de trabajo.
 
-**Para depurar un componente Visual Basic en el Visual C++ de depuración**
+**Para depurar un componente Visual Basic en el entorno Visual C++ trabajo**
 
 1.  En Visual Basic 6.0, abra el Visual Basic proyecto que desea depurar.
 
 2.  En el **menú Archivo** , haga clic en **Crear YourProject.dll**.
 
-3.  En el cuadro **de diálogo Crear Project,** haga clic en **Opciones**.
+3.  En el **cuadro de diálogo Crear Project,** haga clic en **Opciones**.
 
-4.  En el **cuadro Project propiedades,**  en la  pestaña Compilar ,  haga clic en Compilar en código nativo y sin optimización y active la casilla Crear información de **depuración** simbólica.
+4.  En el **cuadro Project propiedades,** en  la pestaña  Compilar ,  haga clic en Compilar en código nativo y sin optimización y active la casilla Crear información de **depuración** simbólica.
 
 5.  Haga **clic en Aceptar** y, a continuación, en **Aceptar** de nuevo para compilar el proyecto.
 
@@ -44,9 +44,9 @@ Dado que en muchos casos solo podrá depurar una parte de la funcionalidad del c
 
 11. En el menú **Project,** haga clic **Configuración**.
 
-12. En el **Project Configuración** de diálogo, en la **pestaña Depurar** , seleccione **General** en el **cuadro** Categoría .
+12. En el **Project Configuración** de diálogo, en la **pestaña Depurar** , **seleccione General** en el **cuadro** Categoría .
 
-13. En el **cuadro Ejecutable** para la sesión de depuración, escriba la ruta de acceso completa para Dllhost.exe, seguida de un argumento que especifique el identificador de proceso de la aplicación COM+ que contiene el componente. Encontrará el identificador de proceso en la **pestaña** General  del cuadro de diálogo Propiedades de la aplicación COM+. A continuación se muestra un ejemplo: C: \\ Winnt \\ System32 \\Dllhost.exe /ProcessID:{ <processID> }.
+13. En el **cuadro Ejecutable** para la sesión de depuración, escriba la ruta de acceso completa para Dllhost.exe, seguida de un argumento que especifique el identificador de proceso de la aplicación COM+ que contiene el componente. Encontrará el identificador de proceso en la **pestaña** General  del cuadro de diálogo Propiedades de la aplicación COM+. Este es un ejemplo: C: \\ Winnt \\ System32 \\Dllhost.exe /ProcessID:{ <processID> }.
 
 14. Haga clic en **Aceptar**.
 
@@ -54,7 +54,7 @@ Dado que en muchos casos solo podrá depurar una parte de la funcionalidad del c
 
 <dl> <dt>
 
-[Compatibilidad con la depuración de Visual Basic COM+ contrastada con MTS](com--visual-basic-debugging-support-contrasted-with-mts.md)
+[Compatibilidad de depuración de Visual Basic COM+ contrastada con MTS](com--visual-basic-debugging-support-contrasted-with-mts.md)
 </dt> <dt>
 
 [Depuración en el IDE de Visual Basic](debugging-in-the-visual-basic-ide.md)

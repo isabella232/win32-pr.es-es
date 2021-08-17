@@ -1,7 +1,7 @@
 ---
 description: El elemento timeline define la escala de tiempo. Este elemento es el nodo raíz del archivo XML.
 ms.assetid: db1da09f-d9b2-43fa-8dec-e3dc11cbfafa
-title: Elemento timeline (Windows.ui.xaml.media.animation.h)
+title: elemento timeline (Windows.ui.xaml.media.animation.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,17 +13,17 @@ api_type:
 - HeaderDef
 api_location:
 - windows.ui.xaml.media.animation.h
-ms.openlocfilehash: 97e87dbbcfbcefb8968f6bbe43e9df94277e3d7a
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: f94dd76206aabbe39e443dac5ab277e499face91c94a6a69b3fe5ee29eb67c70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951674"
 ---
 # <a name="timeline-element"></a>elemento timeline
 
 > [!Note]  
-> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -40,7 +40,7 @@ El `timeline` elemento define la escala de tiempo. Este elemento es el nodo raí
 | Etiqueta | Value |
 |----------|-------------------------------------------------------|
 | Parent   | Ninguno. Este elemento debe ser el nodo raíz del archivo. |
-| Children | [**group**](group-element.md)                        |
+| Children | [**Grupo**](group-element.md)                        |
 
 
 
@@ -65,7 +65,7 @@ El `timeline` elemento define la escala de tiempo. Este elemento es el nodo raí
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

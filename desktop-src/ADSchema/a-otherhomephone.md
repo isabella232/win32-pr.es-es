@@ -1,11 +1,11 @@
 ---
 title: Teléfono-Home-Other
-description: Lista de números de teléfono de casa alternativos.
+description: Una lista de números de teléfono de inicio alternativos.
 ms.assetid: 502e0a9d-301c-4c2e-98c3-8efe75c8b0cf
 ms.tgt_platform: multiple
 keywords:
 - Teléfono-Home-Other attribute AD Schema
-- otherHomePhone attribute AD Schema (Esquema de AD del atributo otherHomePhone)
+- Esquema de AD del atributo otherHomePhone
 topic_type:
 - apiref
 api_name:
@@ -23,17 +23,17 @@ ms.locfileid: "118960154"
 ---
 # <a name="phone-home-other-attribute"></a>Teléfono-Home-Other
 
-Lista de números de teléfono de casa alternativos.
+Una lista de números de teléfono de inicio alternativos.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | Teléfono-Home-Other                                                                 |
 | Ldap-Display-Name | otherHomePhone                                                                   |
 | Size              | \-                                                                               |
-| Actualizar privilegios  | Administrador de dominio o propietario de la cuenta.                                           |
-| Frecuencia de actualización  | Cuando se crea el registro del usuario y siempre que sea necesario cambiar el número de teléfono. |
+| Privilegio actualizar  | Administrador de dominio o propietario de la cuenta.                                           |
+| Frecuencia de actualización  | Cuando se crea el registro del usuario y cada vez que es necesario cambiar el número de teléfono. |
 | Attribute-Id      | 1.2.840.113556.1.2.277                                                           |
 | System-Id-Guid    | f0f8ffa2-1191-11d0-a060-00aa006c33ed                                             |
 | Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
@@ -53,7 +53,7 @@ Lista de números de teléfono de casa alternativos.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |
@@ -74,7 +74,7 @@ Lista de números de teléfono de casa alternativos.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |
@@ -95,7 +95,7 @@ Lista de números de teléfono de casa alternativos.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |
@@ -116,7 +116,7 @@ Lista de números de teléfono de casa alternativos.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |
@@ -137,7 +137,7 @@ Lista de números de teléfono de casa alternativos.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |
@@ -158,7 +158,7 @@ Lista de números de teléfono de casa alternativos.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |

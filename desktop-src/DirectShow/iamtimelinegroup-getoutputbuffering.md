@@ -24,7 +24,7 @@ ms.locfileid: "119428495"
 # <a name="iamtimelinegroupgetoutputbuffering-method"></a>IamTimelineGroup::GetOutputBuffering (método)
 
 > [!Note]  
-> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -56,7 +56,7 @@ Recibe el número de fotogramas almacenados en búfer.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -83,10 +83,10 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 <dl> <dt>
 
-[**IamTimelineGroup (interfaz)**](iamtimelinegroup.md)
+[**IAMTimelineGroup (interfaz)**](iamtimelinegroup.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

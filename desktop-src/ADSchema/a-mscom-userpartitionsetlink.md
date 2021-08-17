@@ -27,7 +27,7 @@ Vínculo que se usa para asociar un usuario a un conjunto de particiones COM+.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|-----------------------------------------|
 | CN                | ms-COM-UserPartitionSetLink             |
 | Ldap-Display-Name | msCOM-UserPartitionSetLink              |
@@ -52,7 +52,7 @@ Vínculo que se usa para asociar un usuario a un conjunto de particiones COM+.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |
@@ -73,7 +73,7 @@ Vínculo que se usa para asociar un usuario a un conjunto de particiones COM+.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |
@@ -94,7 +94,7 @@ Vínculo que se usa para asociar un usuario a un conjunto de particiones COM+.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |
@@ -115,7 +115,7 @@ Vínculo que se usa para asociar un usuario a un conjunto de particiones COM+.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |
@@ -136,7 +136,7 @@ Vínculo que se usa para asociar un usuario a un conjunto de particiones COM+.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |

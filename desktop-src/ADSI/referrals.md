@@ -18,7 +18,7 @@ ms.locfileid: "119444025"
 
 Las referencias se producen cuando el servidor que está consultando no contiene los datos, pero puede encontrarlos. El servidor de destino devuelve el conjunto de resultados, que puede incluir los datos reales y una referencia a otro servidor para recuperar los datos adicionales. Al habilitar *la búsqueda de* referencias , el código de cliente ADSI subyacente usará los datos de referencia para intentar recuperar el objeto de destino del servidor descrito en los datos de referencia. Tenga en cuenta que la deshabilitación de la búsqueda de referencias puede dar lugar a un conjunto de resultados más pequeño, mientras que la habilitación de la búsqueda de referencias puede hacer que una consulta abarque muchos servidores. Cuando sea posible, la solución recomendada es usar el catálogo global.
 
-Para obtener más información sobre las referencias y la búsqueda de referencias en Active Directory, vea [Referencias.](/windows/desktop/AD/referrals)
+Para obtener más información sobre las referencias y la búsqueda de referencias en Active Directory, vea [Referencias](/windows/desktop/AD/referrals).
 
 Por ejemplo, cuando un cliente indica al servidor A (A) que consulte un objeto de usuario (U), A puede sugerir que el cliente continúe la búsqueda en el servidor B (B) si U no reside en A, pero se sabe que está en B. El cliente tiene la opción de buscar la referencia o no. Las referencias de búsqueda liberan al cliente de requerir un reconocimiento avanzado de la funcionalidad de cada servidor. Sin embargo, el cliente debe especificar el tipo de referencias que debe hacer un servidor.
 
@@ -50,8 +50,8 @@ En la mayoría de los casos, la búsqueda de referencias será transparente para
 Para obtener más información sobre el uso de las opciones de búsqueda de referencias con una interfaz de búsqueda específica, consulte:
 
 -   [Recomendación de referencias con IDirectorySearch](referral-chasing-with-idirectorysearch.md)
--   [Buscar con objetos ActiveX datos](searching-with-activex-data-objects-ado.md)
--   [Búsqueda con OLE DB](searching-with-ole-db.md)
+-   [Buscar con ActiveX objetos de datos](searching-with-activex-data-objects-ado.md)
+-   [Buscar con OLE DB](searching-with-ole-db.md)
 
  
 

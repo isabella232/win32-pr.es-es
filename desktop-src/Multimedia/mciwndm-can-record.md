@@ -36,7 +36,7 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** el dispositivo admite grabación o **FALSE** en caso contrario.
+Devuelve **TRUE si** el dispositivo admite grabación o **FALSE** de lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,6 +1,6 @@
 ---
 title: D3DX_R8G8B8A8_UNORM_to_FLOAT4 función
-description: Desempaqueta los datos del sombreador UNORM DXGI \_ FORMAT \_ R8G8B8A8 \_ en XMFLOAT4. | D3DX_R8G8B8A8_UNORM_to_FLOAT4 función
+description: Desempaqueta los datos del \_ \_ sombreador DXGI FORMAT R8G8B8A8 \_ UNORM en XMFLOAT4. | D3DX_R8G8B8A8_UNORM_to_FLOAT4 función
 ms.assetid: 94430f29-4872-4ecd-99b9-72f3b77c47f2
 keywords:
 - D3DX_R8G8B8A8_UNORM_to_FLOAT4 función HLSL
@@ -21,9 +21,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118793461"
 ---
-# <a name="d3dx_r8g8b8a8_unorm_to_float4-function"></a>Función D3DX \_ R8G8B8A8 \_ UNORM \_ to \_ FLOAT4
+# <a name="d3dx_r8g8b8a8_unorm_to_float4-function"></a>Función D3DX \_ R8G8B8A8 \_ UNORM \_ a \_ FLOAT4
 
-Desempaqueta los datos del sombreador UNORM DXGI \_ FORMAT \_ R8G8B8A8 \_ en XMFLOAT4.
+Desempaqueta los datos del \_ \_ sombreador DXGI FORMAT R8G8B8A8 \_ UNORM en XMFLOAT4.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ Datos empaquetados del sombreador.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Datos del sombreador desempaquetados.
+Datos del sombreador desempaquetar.
 
 ## <a name="requirements"></a>Requisitos
 

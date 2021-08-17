@@ -1,17 +1,17 @@
 ---
 description: Indica si el dispositivo está en itinerancia.
 ms.assetid: d2382e96-7ca4-42e4-8e5b-89f1da736904
-title: System. Devices. roaming
+title: System.Devices.Roaming
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f482bb306eeeed03592ae18bb7a8f63c109f2f0d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2f13e9de3eb6c4b1d71bcfc0ac541ea5311cdf7160c3f18c0711aa3f76993ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103909910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119097204"
 ---
-# <a name="systemdevicesroaming"></a>System. Devices. roaming
+# <a name="systemdevicesroaming"></a>System.Devices.Roaming
 
 Indica si el dispositivo está en itinerancia.
 
@@ -51,9 +51,9 @@ propertyDescription
             defineToken = ROAMING_UNKNOWN_STATUS
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -68,7 +68,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -80,7 +80,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -98,7 +98,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

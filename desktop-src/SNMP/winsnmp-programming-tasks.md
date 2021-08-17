@@ -4,12 +4,12 @@ description: En la tabla siguiente se resumen los procedimientos de programació
 ms.assetid: 70c24042-bf44-4484-8e5e-d117e2ba28d5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7543a0fef8fff3f2ef1672ee29d72b0f82b75af7
-ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
+ms.openlocfilehash: 007ed1a50688ceff7cdd3bfd9916c1726773cf5ecb2e175af99880950c5c3db8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "114436630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142798"
 ---
 # <a name="winsnmp-programming-tasks"></a>Tareas de programación de WinSNMP
 
@@ -43,7 +43,7 @@ En la tabla siguiente se resumen los procedimientos de programación básicos qu
 </tr>
 <tr class="even">
 <td>Cree una o varias listas de enlaces de variables para la incorporación en una PDU.</td>
-<td>Use <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcreatevbl"><strong>SnmpCreateVbl</strong></a>, <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpduplicatevbl"><strong>SnmpDuplicateVbl</strong></a>, <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsetvb"><strong>SnmpSetVb</strong></a>. Vea <a href="working-with-variable-binding-lists.md">Trabajar con listas de enlaces de variables</a>.<br/>
+<td>Use <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcreatevbl"><strong>SnmpCreateVbl</strong></a>, <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpduplicatevbl"><strong>SnmpDuplicateVbl,</strong></a> <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsetvb"><strong>SnmpSetVb</strong></a>. Vea <a href="working-with-variable-binding-lists.md">Trabajar con listas de enlaces de variables</a>.<br/>
 <blockquote>
 [!Note]<br />
 Es posible que la aplicación tenga que llamar a otras <a href="winsnmp-functions.md">funciones de enlace de variables</a> para crear la lista de enlaces de variables.
@@ -77,7 +77,7 @@ Es posible que la aplicación tenga que llamar a otras <a href="winsnmp-function
 </tr>
 <tr class="even">
 <td>Cierre la aplicación WinSNMP.</td>
-<td>Use <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcleanup"><strong>SnmpCleanup.</strong></a> Consulte <a href="opening-and-closing-a-winsnmp-application.md">Apertura y cierre de una aplicación WinSNMP.</a><br/></td>
+<td>Use <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcleanup"><strong>SnmpCleanup</strong></a>. Consulte <a href="opening-and-closing-a-winsnmp-application.md">Apertura y cierre de una aplicación WinSNMP.</a><br/></td>
 </tr>
 </tbody>
 </table>
@@ -98,7 +98,7 @@ Los temas siguientes contienen información adicional sobre otros conceptos gene
 
  
 
-Además, es posible que la aplicación WinSNMP tenga que incorporar llamadas a las siguientes funciones de WinSNMP: [**SnmpFreeVbl,**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreevbl) [**SnmpFreeEntity,**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreeentity) [**SnmpFreeDescriptor,**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreedescriptor) [**SnmpFreeContext**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreecontext)y [**SnmpFreePdu.**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreepdu) Esto permite a la implementación de Microsoft WinSNMP liberar objetos de memoria winSNMP. Como regla general, la aplicación WinSNMP debe liberar todos los recursos asignados como resultado de una llamada a una función WinSNMP. Para obtener más información sobre la desasignación de recursos, vea [Allocating WinSNMP Memory Objects](allocating-winsnmp-memory-objects.md).
+Además, es posible que la aplicación WinSNMP tenga que incorporar llamadas a las siguientes funciones de WinSNMP: [**SnmpFreeVbl,**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreevbl) [**SnmpFreeEntity,**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreeentity) [**SnmpFreeDescriptor,**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreedescriptor) [**SnmpFreeContext**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreecontext)y [**SnmpFreePdu.**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreepdu) Esto permite a la implementación de Microsoft WinSNMP liberar objetos de memoria WinSNMP. Como regla general, la aplicación WinSNMP debe liberar todos los recursos asignados como resultado de una llamada a una función WinSNMP. Para obtener información adicional sobre la desasignación de recursos, vea [Allocating WinSNMP Memory Objects](allocating-winsnmp-memory-objects.md).
 
  
 

@@ -23,11 +23,11 @@ g \_ wszWMVCForceFrameHeight
 
 VT \_ I4
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede establecer este valor y la propiedad [ \_ FORCEFRAMEWIDTH de MFPKEY](mfpkey-forceframewidthproperty.md) para forzar al codificador a codificar la secuencia de vídeo con un tamaño de fotograma menor que los tamaños de fotograma de entrada o salida. Cuando se descodifica, se cambia el tamaño del vídeo a su resolución de entrada original.
+Puede establecer este valor y la propiedad [ \_ MFPKEY FORCEFRAMEWIDTH](mfpkey-forceframewidthproperty.md) para forzar al codificador a codificar la secuencia de vídeo con un tamaño de fotograma menor que los tamaños de fotograma de entrada o salida. Cuando se descodifica, se cambia el tamaño del vídeo a su resolución de entrada original.
 
-Las dimensiones de marco válidas en cualquiera de los ejes son de 2 a 8192 píxeles. Las dimensiones de marco deben ser divisibles entre 2.
+Las dimensiones de marco válidas en cualquiera de los ejes son de 2 a 8192 píxeles. Las dimensiones de marco deben ser divisibles por 2.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,7 +35,7 @@ Las dimensiones de marco válidas en cualquiera de los ejes son de 2 a 8192 píx
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 

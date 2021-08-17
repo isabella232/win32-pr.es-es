@@ -26,12 +26,12 @@ Reservado para uso futuro.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | ms-net-ieee-8023-GP-PolicyReserved                    |
 | Ldap-Display-Name | ms-net-ieee-8023-GP-PolicyReserved                    |
 | Size              | \-                                                    |
-| Privilegio actualizar  | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1956                               |
 | System-Id-Guid    | d3c527c7-2606-4deb-8cfd-18426feec8ce                  |
@@ -49,14 +49,14 @@ Reservado para uso futuro.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
-| System-Only            | False                                                                             |
-| Es de un solo valor       | True                                                                              |
-| Está indexado             | False                                                                             |
-| En el catálogo global      | False                                                                             |
+| System-Only            | Falso                                                                             |
+| Es de un solo valor       | Verdadero                                                                              |
+| Está indexado             | Falso                                                                             |
+| En el catálogo global      | Falso                                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
 | Range-Lower            | \-                                                                                |
 | Range-Upper            | \-                                                                                |
@@ -70,14 +70,14 @@ Reservado para uso futuro.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
-| System-Only            | False                                                                             |
-| Es de un solo valor       | True                                                                              |
-| Está indexado             | False                                                                             |
-| En el catálogo global      | False                                                                             |
+| System-Only            | Falso                                                                             |
+| Es de un solo valor       | Verdadero                                                                              |
+| Está indexado             | Falso                                                                             |
+| En el catálogo global      | Falso                                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
 | Range-Lower            | \-                                                                                |
 | Range-Upper            | \-                                                                                |
@@ -91,14 +91,14 @@ Reservado para uso futuro.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
-| System-Only            | False                                                                             |
-| Es de un solo valor       | True                                                                              |
-| Está indexado             | False                                                                             |
-| En el catálogo global      | False                                                                             |
+| System-Only            | Falso                                                                             |
+| Es de un solo valor       | Verdadero                                                                              |
+| Está indexado             | Falso                                                                             |
+| En el catálogo global      | Falso                                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
 | Range-Lower            | \-                                                                                |
 | Range-Upper            | \-                                                                                |

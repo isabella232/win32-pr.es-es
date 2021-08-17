@@ -27,7 +27,7 @@ El **atributo dhcp-Unique-Key** no se usa actualmente.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | dhcp-Unique-Key                      |
 | Ldap-Display-Name | dhcpUniqueKey                        |
@@ -53,7 +53,7 @@ El **atributo dhcp-Unique-Key** no se usa actualmente.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -74,7 +74,7 @@ El **atributo dhcp-Unique-Key** no se usa actualmente.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -95,7 +95,7 @@ El **atributo dhcp-Unique-Key** no se usa actualmente.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -116,7 +116,7 @@ El **atributo dhcp-Unique-Key** no se usa actualmente.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -137,7 +137,7 @@ El **atributo dhcp-Unique-Key** no se usa actualmente.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -158,7 +158,7 @@ El **atributo dhcp-Unique-Key** no se usa actualmente.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |

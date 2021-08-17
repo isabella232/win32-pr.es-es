@@ -1,19 +1,19 @@
 ---
-description: 'TAGREF: contiene el índice de una entrada y su información DE ETIQUETA en una base de datos de correcciones de compatibilidad (shim).'
+description: 'TAGREF: contiene el índice de una entrada y su información de ETIQUETA en una base de datos shim.'
 ms.assetid: e7d83dca-13a5-4396-b50b-0d068209c03c
 title: TAGREF
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34e27a60847630e7bbd8e07ccf005dfd7b474d7a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2bf5a9de8da025e8278ab0bca7ccbe16d70d16b782591181f6ce6ce74a010a39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075788"
 ---
 # <a name="tagref"></a>TAGREF
 
-Contiene el índice de una entrada y su información tag en una base de datos de correcciones de compatibilidad (shim).
+Contiene el índice de una entrada y su información tag en una base de datos shim.
 
 
 ```C++
@@ -24,7 +24,7 @@ typedef DWORD TAGREF;
 
 ## <a name="remarks"></a>Comentarios
 
-Un **TAGREF es específico** de una base de datos shim y es válido en varias bases de datos. Puede ser un valor entero que representa el índice o uno de los valores siguientes:
+Un **TAGREF es específico** de una base de datos shim y es válido en varias bases de datos. Puede ser un valor entero que representa el índice o uno de los siguientes valores:
 
 <dl> <dt>
 
@@ -46,14 +46,14 @@ Indica una etiqueta de lista raíz que se puede usar como elemento primario para
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ Indica una etiqueta de lista raíz que se puede usar como elemento primario para
 [**etiqueta**](tag.md)
 </dt> <dt>
 
-[Tipos TAG](tag-types.md)
+[Tipos DE ETIQUETA](tag-types.md)
 </dt> <dt>
 
 [**TAGID**](tagid.md)

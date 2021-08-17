@@ -1,21 +1,21 @@
 ---
-description: Para actualizar las propiedades de una sesión de seguimiento de eventos, llame a la función ControlTrace con el código de control de actualización de control de seguimiento de eventos \_ \_ \_ .
+description: Para actualizar las propiedades de una sesión de seguimiento de eventos, llame a la función ControlTrace mediante el código de control EVENT \_ TRACE \_ CONTROL \_ UPDATE.
 ms.assetid: 1496bf88-a989-4fa1-888a-90385c4ca8ee
 title: Actualizar una sesión de seguimiento de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e580c2e84dec6682e5fad323fe0cad427300a21
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dfa4f092211d59dda080906f01380f8751fbc099f79dc8f1cd8ea1f7a2ba36fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119383345"
 ---
 # <a name="updating-an-event-tracing-session"></a>Actualizar una sesión de seguimiento de eventos
 
-Para actualizar las propiedades de una sesión de seguimiento de eventos, llame a la función [**ControlTrace**](/windows/win32/api/evntrace/nf-evntrace-controltracea) con el código de control de **actualización de control de seguimiento de eventos \_ \_ \_** . Puede especificar la sesión que se va a actualizar mediante un identificador de sesión Obtenido de una llamada anterior a [**StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea)o un nombre de sesión. Las propiedades de la sesión de seguimiento de eventos se actualizan con los valores especificados en la estructura de [**\_ \_ propiedades de seguimiento de eventos**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) . Solo puede actualizar un subconjunto de las propiedades. Para obtener una lista de las propiedades que se pueden actualizar, vea el parámetro *Properties* de la función **ControlTrace** .
+Para actualizar las propiedades de una sesión de seguimiento de eventos, llame a la [**función ControlTrace**](/windows/win32/api/evntrace/nf-evntrace-controltracea) mediante el código de control **EVENT TRACE CONTROL \_ \_ \_ UPDATE.** Puede especificar la sesión que se va a actualizar mediante un identificador de sesión obtenido de una llamada anterior a [**StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea)o un nombre de sesión. Las propiedades de la sesión de seguimiento de eventos se actualizan con los valores especificados en la [**estructura EVENT \_ TRACE \_ PROPERTIES.**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) Solo puede actualizar un subconjunto de las propiedades. Para obtener una lista de las propiedades que puede actualizar, vea el *parámetro Properties* de la **función ControlTrace.**
 
-Si la llamada a [**ControlTrace**](/windows/win32/api/evntrace/nf-evntrace-controltracea) se realiza correctamente, la estructura de [**propiedades de \_ seguimiento \_ de eventos**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) se actualiza para reflejar los nuevos valores de propiedad. La estructura también contendrá las nuevas estadísticas de ejecución de la sesión de seguimiento de eventos.
+Si la [**llamada a ControlTrace**](/windows/win32/api/evntrace/nf-evntrace-controltracea) se realiza correctamente, la [**estructura EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) se actualiza para reflejar los nuevos valores de propiedad. La estructura también contendrá las nuevas estadísticas de ejecución para la sesión de seguimiento de eventos.
 
 En el ejemplo siguiente se muestra cómo actualizar la sesión de seguimiento de eventos de kernel. En el ejemplo se consultan los valores de propiedad actuales y se actualiza la estructura antes de actualizar la sesión.
 
@@ -105,19 +105,19 @@ cleanup:
 
 <dl> <dt>
 
-[Configurar e iniciar una sesión de registrador privado](configuring-and-starting-a-private-logger-session.md)
+[Configuración e inicio de una sesión de registrador privado](configuring-and-starting-a-private-logger-session.md)
 </dt> <dt>
 
-[Configurar e iniciar una sesión de SystemTraceProvider](configuring-and-starting-a-systemtraceprovider-session.md)
+[Configuración e inicio de una sesión de SystemTraceProvider](configuring-and-starting-a-systemtraceprovider-session.md)
 </dt> <dt>
 
-[Configurar e iniciar una sesión de registrador automático](configuring-and-starting-an-autologger-session.md)
+[Configuración e inicio de una sesión de Registrador automático](configuring-and-starting-an-autologger-session.md)
 </dt> <dt>
 
-[Configurar e iniciar una sesión de seguimiento de eventos](configuring-and-starting-an-event-tracing-session.md)
+[Configuración e inicio de una sesión de seguimiento de eventos](configuring-and-starting-an-event-tracing-session.md)
 </dt> <dt>
 
-[Configuración e inicio de la sesión del registrador del kernel de NT](configuring-and-starting-the-nt-kernel-logger-session.md)
+[Configuración e inicio de la sesión del registrador de kernel de NT](configuring-and-starting-the-nt-kernel-logger-session.md)
 </dt> </dl>
 
  

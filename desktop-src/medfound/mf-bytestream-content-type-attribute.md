@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118974014"
 ---
-# <a name="mf_bytestream_content_type-attribute"></a>Atributo \_ BYTESTREAM \_ CONTENT TYPE \_ de MF
+# <a name="mf_bytestream_content_type-attribute"></a>Atributo \_ MF BYTESTREAM \_ CONTENT \_ TYPE
 
 Especifica el tipo MIME de una secuencia de bytes.
 
@@ -29,15 +29,15 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                                                    |
-| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| para aplicaciones para UWP\]<br/>                                              |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                                              |
 | Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

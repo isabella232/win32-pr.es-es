@@ -1,9 +1,9 @@
 ---
 title: NM_RCLICK de notificación (barra de herramientas) (Commctrl.h)
-description: Enviado por un control de barra de herramientas cuando el usuario hace clic en la barra de herramientas con el botón derecho del mouse. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
+description: Lo envía un control de barra de herramientas cuando el usuario hace clic en la barra de herramientas con el botón derecho del mouse. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: e9d2d871-e922-444d-a76c-e73f249ed410
 keywords:
-- NM_RCLICK código de notificación (barra de herramientas) Windows controles
+- NM_RCLICK (barra de herramientas) de código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118958074"
 ---
 # <a name="nm_rclick-toolbar-notification-code"></a>Código de notificación de NM \_ RCLICK (barra de herramientas)
 
-Enviado por un control de barra de herramientas cuando el usuario hace clic en la barra de herramientas con el botón derecho del mouse. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
+Lo envía un control de barra de herramientas cuando el usuario hace clic en la barra de herramientas con el botón derecho del mouse. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -47,13 +47,13 @@ Puntero a una [**estructura NMMOUSE**](/windows/win32/api/commctrl/ns-commctrl-n
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **FALSE** para permitir que el control de la barra de herramientas realice el procesamiento predeterminado del evento o **TRUE** para evitar que el control procese el evento.
+Devuelve **FALSE** para permitir que el control de barra de herramientas realice el procesamiento predeterminado del evento o **TRUE** para evitar que el control procese el evento.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |

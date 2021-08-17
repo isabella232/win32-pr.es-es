@@ -4,23 +4,23 @@ ms.assetid: 086b1dbe-43d5-427f-a9dc-36203b4435c9
 title: Track
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b27efa347f99d665599725cc294f8d5e4106eed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39484562368660d49da8be4b07c45ef56bcd1157b488e19163d871ddc106b97c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951524"
 ---
 # <a name="track"></a>Track
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El objeto Track contiene objetos Source. Para crear este objeto, llame al método [**IAMTimeline:: CreateEmptyNode**](iamtimeline-createemptynode.md) .
+El objeto track contiene objetos de origen. Para crear este objeto, llame al [**método IAMTimeline::CreateEmptyNode.**](iamtimeline-createemptynode.md)
 
-El objeto Track expone las siguientes interfaces:
+El objeto track expone las interfaces siguientes:
 
 -   [**IAMTimelineEffectable**](iamtimelineeffectable.md)
 -   [**IAMTimelineObj**](iamtimelineobj.md)

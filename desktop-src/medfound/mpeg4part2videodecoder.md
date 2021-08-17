@@ -15,7 +15,7 @@ ms.locfileid: "118973024"
 
 El descodificador MPEG4 Part 2 Video descodifica secuencias de vídeo codificadas según el estándar MPEG4 Parte 2.
 
-Puede crear una instancia del descodificador mpeg4, parte 2, vídeo llamando **a CoCreateInstance**. Para crear una instancia del descodificador que se comporta como un objeto multimedia DirectX (DMO), use el identificador de clase **CLSID \_ CMpeg4sDecMediaObject**. Para crear una posición del descodificador que se comporte como una transformación de Media Foundation (MFT), use el identificador de clase **CLSID \_ CMpeg4sDecMFT**.
+Puede crear una instancia del descodificador mpeg4, parte 2, vídeo llamando **a CoCreateInstance**. Para crear una instancia del descodificador que se comporte como un objeto multimedia DirectX (DMO), use el identificador de clase **CLSID \_ CMpeg4sDecMediaObject**. Para crear una posición del descodificador que se comporte como una transformación de Media Foundation (MFT), use el identificador de clase **CLSID \_ CMpeg4sDecMFT**.
 
 ## <a name="input-types"></a>Tipos de entrada
 
@@ -30,7 +30,7 @@ El descodificador MPEG4 Part 2 Video admite los siguientes tipos de medios de en
 
 ## <a name="output-types"></a>Tipos de salida
 
-El descodificador MPEG4 Part 2 Video admite los siguientes subtipos de medios de salida cuando actúa como DMO.
+El descodificador de vídeo MPEG4, parte 2, admite los siguientes subtipos de medios de salida cuando actúa como un DMO.
 
 -   MEDIASUBTYPE \_ YV12
 -   MEDIASUBTYPE \_ NV12
@@ -114,11 +114,11 @@ En la tabla siguiente se muestran los perfiles y niveles, junto con las resoluci
 
  
 
-Para obtener más información sobre los perfiles y niveles, vea la especificación MPEG4 Parte 2 (ISO/IEC 14496-2): Tecnología de la información-- Codificación de objetos audio visuales -- Parte 2: Visual.
+Para obtener más información sobre los perfiles y los niveles, vea la especificación MPEG4 Parte 2 (ISO/IEC 14496-2): Tecnología de la información-- Codificación de objetos audio visuales -- Parte 2: Visual.
 
 ## <a name="decoder-properties"></a>Propiedades del descodificador
 
-Para establecer propiedades en el descodificador MPEG4 Part 2 Video, use la [**interfaz ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi) o [**la interfaz DEATTRIBUTEAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
+Para establecer propiedades en el descodificador mpeg4, parte 2, vídeo, use la [**interfaz ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi) o [**la interfaz DEATTRIBUTEAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
 
 El descodificador MPEG4 Part 2 Video admite las siguientes propiedades.
 
@@ -162,7 +162,7 @@ Los identificadores únicos globales (GUID) de los subtipos de medios RGB difier
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                 |
@@ -171,7 +171,7 @@ Los identificadores únicos globales (GUID) de los subtipos de medios RGB difier
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

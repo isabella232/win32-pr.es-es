@@ -31,7 +31,7 @@ Especifica cómo realiza el Programador de tareas tareas durante el mantenimient
  />
 ```
 
-El **tipo complejo maintenanceSettingsType** define el elemento [**MaintenanceSettings.**](taskschedulerschema-maintenancesettingstype-complextype.md)
+El tipo complejo [**maintenanceSettingsType**](taskschedulerschema-maintenancesettingstype-complextype.md) define el elemento **MaintenanceSettings.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -86,7 +86,7 @@ El siguiente XML define un elemento de configuración que indica a Programador d
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

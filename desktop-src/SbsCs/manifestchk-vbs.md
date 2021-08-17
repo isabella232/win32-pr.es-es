@@ -1,51 +1,51 @@
 ---
-description: El archivo VBScript Manifestchk.vbs es una herramienta de validación proporcionada en el kit de desarrollo de software (SDK) de Microsoft Windows que valida los archivos de manifiesto de la aplicación y el ensamblado.
+description: El archivo VBScript Manifestchk.vbs es una herramienta de validación proporcionada en el Kit de desarrollo de software (SDK) de Microsoft Windows que valida los archivos de manifiesto de aplicación y ensamblado.
 ms.assetid: 8269cb92-bd3f-411f-8395-fe06ed550cc5
 title: Manifestchk.vbs
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09aff347fbd8b6f44c4e38f123870fa5ee8df572
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 686843d1b4ab099d44a33b715f65564a12834f54ed6e8f62310df0aedbe53de1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142058"
 ---
 # <a name="manifestchkvbs"></a>Manifestchk.vbs
 
-El archivo VBScript Manifestchk.vbs es una herramienta de validación proporcionada en el kit de desarrollo de software (SDK) de Microsoft Windows que valida los archivos de manifiesto de la aplicación y el ensamblado.
+El archivo VBScript Manifestchk.vbs es una herramienta de validación proporcionada en el Kit de desarrollo de software (SDK) de Microsoft Windows que valida los archivos de manifiesto de aplicación y ensamblado.
 
-La ejecución de este ejemplo requiere Windows Script Host. Para obtener más información acerca de Windows Script Host, consulte la sección Windows Script Host de la Windows SDK. Windows Script Host es en realidad dos hosts. CScript.exe es la versión que permite ejecutar scripts desde el símbolo del sistema. CScript.exe proporciona modificadores de la línea de comandos para establecer las propiedades del script.
+La ejecución de este ejemplo requiere Windows host de script. Para obtener más información sobre Windows host de script, consulte la Windows host de script del SDK de Windows. Windows El host de script es en realidad dos hosts. CScript.exe es la versión que permite ejecutar scripts desde el símbolo del sistema. CScript.exe proporciona modificadores de línea de comandos para establecer las propiedades del script.
 
 El formato de línea de comandos es el siguiente:
 
-**Cscript el manifestchk.vbs/s:** *\[ unidad: \] \[ ruta de acceso \] schemafilename* **/m:** *\[ unidad: \] \[ ruta de acceso \] manifestfilename* **\[ /q \] /t:** *opción*
+**Cscript //nologo manifestchk.vbs /s:** *\[ unidad: \] \[ path \] schemafilename* **/m:** *\[ unidad: \] \[ path \] manifestfilename* **\[ /q \] /t:** *option*
 
-En la tabla siguiente se describen las marcas definidas para Manifestchk.vbs.
+Las marcas definidas para Manifestchk.vbs se describen en la tabla siguiente.
 
 
 
 | Marca | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| /s   | Especifica el nombre del archivo de esquema de manifiesto con el que validar los manifiestos. Vea el esquema en el [esquema del archivo de manifiesto](manifest-file-schema.md).                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| /m   | Especifica el nombre del archivo de manifiesto que se va a validar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| /q   | Suprime todos los resultados en la consola.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| /t   | Especifica el tipo de archivo de manifiesto. Los valores válidos son: AM valida el [esquema del archivo de manifiesto](manifest-file-schema.md) de un manifiesto de [ensamblado](assembly-manifests.md) o un [manifiesto de aplicación](application-manifests.md)<br/> El equipo valida el [esquema del archivo de configuración del publicador](publisher-configuration-file-schema.md) de un archivo de configuración del [publicador](publisher-configuration-files.md)<br/> AC valide el esquema del archivo de configuración de la aplicación de un [archivo de configuración](application-configuration-files.md)de la aplicación.<br/> |
+| /s   | Especifica el nombre del archivo de esquema de manifiesto con el que se validarán los manifiestos. Vea el esquema en Esquema [de archivo de manifiesto.](manifest-file-schema.md)                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| /m   | Especifica el nombre del archivo de manifiesto que se validará.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| /q   | Suprime todas las salidas de la consola.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| /t   | Especifica el tipo de archivo de manifiesto. Los valores válidos son: AM Validate the [manifest file schema](manifest-file-schema.md) of an assembly manifest [or](assembly-manifests.md) [application manifest](application-manifests.md)<br/> PC Valide el [esquema del archivo de configuración del publicador](publisher-configuration-file-schema.md) de un archivo de configuración del [publicador](publisher-configuration-files.md)<br/> AC Valide el esquema del archivo de configuración de la aplicación de un [archivo de configuración de la aplicación](application-configuration-files.md).<br/> |
 
 
 
  
 
-Si no se especifica la marca/q, Manifestchk.vbs muestra información detallada acerca del primer error encontrado en el archivo y muestra un mensaje que indica si el proceso de validación se realizó correctamente o no.
+Si no se especifica la marca /q, Manifestchk.vbs muestra información detallada sobre el primer error encontrado en el archivo y muestra un mensaje que indica si el proceso de validación se ha realizado correctamente o no.
 
 Esta utilidad comprueba lo siguiente:
 
--   Una línea de comandos válida.
--   Está instalada la versión 3 de MSXML.
--   Que el manifiesto usa XML con formato correcto.
--   Que el manifiesto acepta con el esquema proporcionado. Tenga en cuenta que Manifestchk.vbs comprueba el archivo de manifiesto basándose solo en lo que se especifica en el esquema proporcionado. Para ver un ejemplo de un esquema de manifiesto, consulte [esquema del archivo de manifiesto](manifest-file-schema.md).
+-   Línea de comandos válida.
+-   Esa MSXML versión 3 está instalada.
+-   Que el manifiesto usa XML bien formado.
+-   Que el manifiesto está de acuerdo con el esquema proporcionado. Tenga en Manifestchk.vbs comprueba el archivo de manifiesto solo en función de lo que se especifica en el esquema proporcionado. Para obtener un ejemplo de un esquema de manifiesto, vea [Esquema de archivo de manifiesto.](manifest-file-schema.md)
 
-Cscript.exe devuelve un valor de 0 si el proceso de validación se realizó correctamente y 1 si no se realizó correctamente. Devuelve 2 si hay un error en un argumento de la línea de comandos.
+Cscript.exe devuelve un valor de 0 si el proceso de validación se ha realizado correctamente y 1 si no se ha realizado correctamente. Devuelve 2 si hay un error en un argumento de línea de comandos.
 
 ## <a name="related-topics"></a>Temas relacionados
 

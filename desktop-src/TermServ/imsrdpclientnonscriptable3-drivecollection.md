@@ -1,26 +1,26 @@
 ---
-title: Propiedad DriveCollection de IMsRdpClientNonScriptable3
-description: Recupera la colección de objetos de unidad que se va a redirigir.
+title: Propiedad IMsRdpClientNonScriptable3 DriveCollection
+description: Recupera la colección de objetos de unidad que se redirigirán.
 ms.assetid: 5aaac605-584b-442e-9d67-1cb8213a70b3
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad DriveCollection
-- Propiedad DriveCollection Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable3, propiedad DriveCollection
-- Propiedad DriveCollection Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable4, propiedad DriveCollection
-- Propiedad DriveCollection Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable5, propiedad DriveCollection
-- Servicios de Escritorio remoto de la propiedad DriveCollection, objeto MsRdpClient5
-- Servicios de Escritorio remoto de objeto MsRdpClient5, propiedad DriveCollection
-- Servicios de Escritorio remoto de la propiedad DriveCollection, objeto MsRdpClient6
-- Servicios de Escritorio remoto de objeto MsRdpClient6, propiedad DriveCollection
-- Servicios de Escritorio remoto de la propiedad DriveCollection, objeto MsRdpClient7
-- Servicios de Escritorio remoto de objeto MsRdpClient7, propiedad DriveCollection
-- Servicios de Escritorio remoto de la propiedad DriveCollection, objeto MsRdpClient8
-- Servicios de Escritorio remoto de objeto MsRdpClient8, propiedad DriveCollection
-- Servicios de Escritorio remoto de la propiedad DriveCollection, objeto MsRdpClient9
-- Servicios de Escritorio remoto de objeto MsRdpClient9, propiedad DriveCollection
+- Propiedad DriveCollection Servicios de Escritorio remoto
+- Propiedad DriveCollection Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable3
+- Interfaz IMsRdpClientNonScriptable3 Servicios de Escritorio remoto , propiedad DriveCollection
+- Propiedad DriveCollection Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable4
+- Interfaz IMsRdpClientNonScriptable4 Servicios de Escritorio remoto , propiedad DriveCollection
+- Propiedad DriveCollection Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable5
+- Interfaz IMsRdpClientNonScriptable5 Servicios de Escritorio remoto , propiedad DriveCollection
+- Propiedad DriveCollection Servicios de Escritorio remoto , objeto MsRdpClient5
+- Objeto MsRdpClient5 Servicios de Escritorio remoto , propiedad DriveCollection
+- Propiedad DriveCollection Servicios de Escritorio remoto , objeto MsRdpClient6
+- Objeto MsRdpClient6 Servicios de Escritorio remoto , propiedad DriveCollection
+- Propiedad DriveCollection Servicios de Escritorio remoto , objeto MsRdpClient7
+- Objeto MsRdpClient7 Servicios de Escritorio remoto , propiedad DriveCollection
+- Propiedad DriveCollection Servicios de Escritorio remoto , objeto MsRdpClient8
+- Objeto MsRdpClient8 Servicios de Escritorio remoto , propiedad DriveCollection
+- Propiedad DriveCollection Servicios de Escritorio remoto , objeto MsRdpClient9
+- Objeto MsRdpClient9 Servicios de Escritorio remoto , propiedad DriveCollection
 topic_type:
 - apiref
 api_name:
@@ -41,16 +41,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37d4bfcaa52d483adc8b0d0885d8316f10ce01d1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 95cc25d53014936e3adab4f12d5c92cfcbb7b35c7b663c4a2c1f7f77fb467fb4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001145"
 ---
-# <a name="imsrdpclientnonscriptable3drivecollection-property"></a>IMsRdpClientNonScriptable3::D propiedad riveCollection
+# <a name="imsrdpclientnonscriptable3drivecollection-property"></a>IMsRdpClientNonScriptable3::D riveCollection
 
-Recupera la colección de objetos de unidad que se va a redirigir.
+Recupera la colección de objetos de unidad que se redirigirán.
 
 Esta propiedad es de solo lectura.
 
@@ -67,7 +67,7 @@ HRESULT get_DriveCollection(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Recupera la colección de objetos Drive de tipo [**IMSRdpDrive**](imsrdpdrive.md).
+Recupera la colección de objetos de unidad de tipo [**IMSRdpDrive**](imsrdpdrive.md).
 
 ## <a name="requirements"></a>Requisitos
 

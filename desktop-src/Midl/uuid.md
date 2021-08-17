@@ -1,9 +1,9 @@
 ---
 title: uuid (atributo)
-description: El atributo \ UUID \ interface designa un identificador único universal (UUID) que se asigna a la interfaz y que lo distingue de otras interfaces.
+description: El atributo de interfaz \ uuid\ designa un identificador único universal (UUID) que se asigna a la interfaz y que lo distingue de otras interfaces.
 ms.assetid: 72cf12f5-49cd-440d-9665-73211509d050
 keywords:
-- atributo de UUID (MIDL)
+- atributo uuid MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5688bafe8343bdc1ab508a4e65984cc15c88b124
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 7ce85ad2014e1f0563e2c20af7abec3cc476fab330b38340162f28fd390a5f8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103784072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066645"
 ---
 # <a name="uuid-attribute"></a>uuid (atributo)
 
-El atributo **\[ UUID \]** interface designa un identificador único universal (UUID) que se asigna a la interfaz y que lo distingue de otras interfaces.
+El atributo de interfaz **\[ uuid \]** designa un identificador único universal (UUID) que se asigna a la interfaz y que lo distingue de otras interfaces.
 
 ``` syntax
 uuid (string-uuid) 
@@ -32,28 +32,28 @@ uuid ("string-uuid")
 
 <dl> <dt>
 
-*cadena: UUID* 
+*string-uuid* 
 </dt> <dd>
 
-Especifica una cadena que consta de 8 dígitos hexadecimales seguidos de un guion y, a continuación, tres grupos de 4 dígitos hexadecimales, seguidos de un guion y 12 dígitos hexadecimales. Puede incluir la cadena UUID entre comillas, excepto cuando se usa el modificador de compilador MIDL [**/OSF**](-osf.md).
+Especifica una cadena formada por 8 dígitos hexadecimales seguidos de un guion, tres grupos de 4 dígitos hexadecimales cada uno seguidos de un guion y, a continuación, 12 dígitos hexadecimales. Puede incluir la cadena UUID entre comillas, excepto cuando se usa el modificador del compilador MIDL [**/osf**](-osf.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La biblioteca en tiempo de ejecución utiliza el UUID de la interfaz que el atributo **\[ UUID \]** designa para ayudar a establecer la comunicación entre las aplicaciones cliente y servidor. El atributo **\[ UUID \]** puede aparecer en la lista de atributos de interfaz para una interfaz RPC o una interfaz com.
+La biblioteca en tiempo de ejecución usa el UUID de interfaz que el atributo **\[ uuid \]** designa para ayudar a establecer la comunicación entre las aplicaciones cliente y servidor. El **\[ atributo \] uuid** puede aparecer en la lista de atributos de interfaz para una interfaz RPC o una interfaz COM.
 
-En el caso de una interfaz RPC, la lista de atributos de interfaz debe incluir el atributo **\[ UUID \]** o el **\[** [](local.md) **\]** atributo local y el que elija debe aparecer exactamente una vez. Si la lista incluye el atributo **\[ UUID \]** , también puede incluir el atributo **\[** [**version**](version.md) **\]** .
+Para una interfaz RPC, la lista de atributos de interfaz debe incluir el atributo **\[ \] uuid** o el atributo local, y el que elija debe **\[** [](local.md) **\]** producirse exactamente una vez. Si la lista incluye el **\[ atributo uuid, \]** también puede incluir el atributo **\[** [**de**](version.md) **\]** versión.
 
-En el caso de una interfaz COM (identificada por el atributo de la interfaz de **\[** [**objeto**](object.md) **\]** ), la lista de atributos de interfaz debe incluir el atributo de **\[ UUID \]** , pero no puede incluir el atributo de **\[ versión \]** . La lista de una interfaz COM puede incluir el atributo **\[ local \]** aunque el atributo **\[ UUID \]** esté presente.
+Para una interfaz COM (identificada por el atributo de interfaz de objeto), la lista de atributos de interfaz debe incluir el atributo **\[** [](object.md) **\]** **\[ uuid, \]** **\[ \]** pero no puede incluir el atributo de versión. La lista de una interfaz COM puede incluir el **\[ atributo \] local** aunque el atributo **\[ uuid \]** esté presente.
 
-Microsoft RPC es compatible con una extensión de DCE IDL que permite escribir el UUID entre comillas dobles ("" "). El formulario entrecomillado es necesario para los preprocesadores del compilador de C que interpretan los números de UUID como números de punto flotante.
+Microsoft RPC admite una extensión para DCE IDL que permite incluir el UUID entre comillas dobles ("" ""). El formato entre comillas es necesario para los preprocesadores del compilador de C que interpretan los números UUID como números de punto flotante.
 
-Todos los valores UUID deben ser generados por el equipo para garantizar la exclusividad. Use la utilidad uuidgen para generar valores únicos de UUID.
+Todos los valores UUID deben generarse en el equipo para garantizar la unidad. Use la utilidad Uuidgen para generar valores UUID únicos.
 
-El UUID y los números de versión de la interfaz se usan para determinar si el cliente puede enlazar con el servidor. Para que el cliente se enlace al servidor, el UUID especificado en las interfaces de cliente y de servidor debe ser el mismo.
+El UUID y los números de versión de la interfaz se usan para determinar si el cliente puede enlazarse al servidor. Para que el cliente se enlace al servidor, el UUID especificado en las interfaces de cliente y servidor debe ser el mismo.
 
-Tenga en cuenta que una interfaz sin atributos se puede importar en un archivo IDL base. Sin embargo, la interfaz debe contener solo tipos de contenido sin procedimientos. Si hay un procedimiento incluido en la interfaz, se debe especificar un atributo local o UUID.
+Tenga en cuenta que una interfaz sin atributos se puede importar en un archivo IDL base. Sin embargo, la interfaz solo debe contener tipos de datos sin procedimientos. Si incluso hay un procedimiento contenido en la interfaz, se debe especificar un atributo uuid o local.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -70,13 +70,13 @@ uuid("6B29FC40-CA47-1067-B31D-00DD010662DA")
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**interfaz**](interface.md)
+[**Interfaz**](interface.md)
 </dt> <dt>
 
-[**localizar**](local.md)
+[**Local**](local.md)
 </dt> <dt>
 
-[**objeto**](object.md)
+[**object**](object.md)
 </dt> <dt>
 
 [**/osf**](-osf.md)
@@ -85,9 +85,9 @@ uuid("6B29FC40-CA47-1067-B31D-00DD010662DA")
 [**Versión**](version.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

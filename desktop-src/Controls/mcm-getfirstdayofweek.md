@@ -37,7 +37,7 @@ Recupera el primer día de la semana para un control de calendario mensual. Pued
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un **valor DWORD** que contiene dos valores. La palabra alta es un valor **BOOL** distinto de cero si el primer día de la semana se establece en un valor distinto de LOCALE \_ IFIRSTDAYOFWEEK o cero en caso contrario. La palabra baja es un valor INT que representa el primer día de la semana, donde 0 es lunes, 1 es martes, y así sucesivamente.
+Devuelve un **valor DWORD** que contiene dos valores. La palabra alta es un valor **BOOL** distinto de cero si el primer día de la semana se establece en un valor distinto de LOCALE IFIRSTDAYOFWEEK, o cero en caso \_ contrario. La palabra baja es un valor INT que representa el primer día de la semana, donde 0 es lunes, 1 es martes, y así sucesivamente.
 
 ## <a name="requirements"></a>Requisitos
 

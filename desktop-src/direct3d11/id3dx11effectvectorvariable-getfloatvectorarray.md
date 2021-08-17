@@ -1,5 +1,5 @@
 ---
-title: Método ID3DX11EffectVectorVariable GetFloatVectorArray (D3dx11effect. h)
+title: Método ID3DX11EffectVectorVariable GetFloatVectorArray (D3dx11effect.h)
 description: Obtiene una matriz de vectores de cuatro componentes que contienen datos de punto flotante.
 ms.assetid: 30ecbd97-c16d-4ea9-b7d9-364887f42a04
 keywords:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18a4c53b884c623ca3d11fb4a9a44660ce21d8a8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 09b36f67fabad3da759200b6d839e3e4555201869ac3ec3b0c0307f58312daf6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104987073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124480"
 ---
-# <a name="id3dx11effectvectorvariablegetfloatvectorarray-method"></a>ID3DX11EffectVectorVariable:: GetFloatVectorArray (método)
+# <a name="id3dx11effectvectorvariablegetfloatvectorarray-method"></a>Método ID3DX11EffectVectorVariable::GetFloatVectorArray
 
 Obtiene una matriz de vectores de cuatro componentes que contienen datos de punto flotante.
 
@@ -48,27 +48,27 @@ HRESULT GetFloatVectorArray(
 *pData* 
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* float**
 
-Puntero al principio de los datos que se van a establecer.
+Puntero al inicio de los datos que se establecerán.
 
 </dd> <dt>
 
 *Offset* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Debe establecerse en 0; está reservado para uso futuro.
+Debe establecerse en 0; se reserva para su uso futuro.
 
 </dd> <dt>
 
 *Recuento* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Número de elementos de matriz que se van a establecer.
+Número de elementos de matriz que se establecerán.
 
 </dd> </dl>
 
@@ -76,12 +76,12 @@ Número de elementos de matriz que se van a establecer.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -91,8 +91,8 @@ Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphi
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Propiedad ComHandlerAction. Data
-description: Para scripting, obtiene o establece datos adicionales asociados al controlador.
+title: ComHandlerAction.Data, propiedad
+description: Para el scripting, obtiene o establece datos adicionales asociados al controlador.
 ms.assetid: bf4d3e77-4b2b-4622-b26b-a8f7e9aa687b
 keywords:
-- Programador de tareas de propiedades de datos
-- Programador de tareas de propiedad de datos, objeto ComHandlerAction
-- Programador de tareas de objeto ComHandlerAction, propiedad de datos
+- Propiedades de datos Programador de tareas
+- Propiedad data Programador de tareas , objeto ComHandlerAction
+- Objeto ComHandlerAction Programador de tareas , propiedad Data
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15743c3f787a591a4644081fdd63189829d2eab1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 254457941d55d9a6b130ec504563236e60baf7ba1a1d44d5851ed3c712634afb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139608"
 ---
-# <a name="comhandleractiondata-property"></a>Propiedad ComHandlerAction. Data
+# <a name="comhandleractiondata-property"></a>ComHandlerAction.Data, propiedad
 
-Para scripting, obtiene o establece datos adicionales asociados al controlador.
+Para el scripting, obtiene o establece datos adicionales asociados al controlador.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -40,9 +40,9 @@ ComHandlerAction.Data As String
 
 Argumentos necesarios para el controlador.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al leer o escribir XML, los datos de un controlador COM se especifican en el elemento de [**datos**](taskschedulerschema-data-comhandlertype-element.md) del esquema de programador de tareas.
+Al leer o escribir XML, los datos de un controlador COM se especifican en el [**elemento Data**](taskschedulerschema-data-comhandlertype-element.md) del Programador de tareas esquema.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,9 +50,9 @@ Al leer o escribir XML, los datos de un controlador COM se especifican en el ele
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

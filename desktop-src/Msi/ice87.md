@@ -35,7 +35,7 @@ ICE87 publica la advertencia siguiente.
 
 | Advertencia de ICE87                                                                                                                        | Descripción                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| La propiedad ' \[ 1 \] ' no debe crearse en la tabla Property. Si lo hace, el producto no se desinstalará correctamente. | La propiedad especificada no debe establecerse en la [tabla Property](property-table.md). Establezca la propiedad en una línea de comandos en su lugar. |
+| La propiedad ' \[ 1 \] ' no debe crearse en la tabla Property. Si lo hace, es posible que el producto no se desinstale correctamente | La propiedad especificada no debe establecerse en la [tabla Property](property-table.md). Establezca la propiedad en una línea de comandos en su lugar. |
 
 
 

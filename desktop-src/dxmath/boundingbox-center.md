@@ -1,19 +1,19 @@
 ---
-description: Centro del BoundingBox.
+description: Centro de BoundingBox.
 ms.assetid: d6cc1de6-69ad-4bda-af4b-f8c86bd2c11e
-title: BoundingBox. Center (DirectXCollision. h)
+title: BoundingBox.Center (DirectXCollision.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4e9f0f3377a94bfeebb83c76d6a4ab94c4e7165
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d02d0f7c70491f2259670b6f8db3f883eaa8e5e295683c2a15c5f47208fdfa73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118622"
 ---
-# <a name="boundingboxcenter"></a>BoundingBox. Center
+# <a name="boundingboxcenter"></a>BoundingBox.Center
 
-Centro del BoundingBox.
+Centro de BoundingBox.
 
 
 ```C++
@@ -23,11 +23,11 @@ public:
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ### <a name="platform-requirements"></a>Requisitos de la plataforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK para Windows 8. Se admite para aplicaciones de escritorio de Win32, aplicaciones de la tienda Windows y Windows Phone 8 aplicaciones.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK Windows para Windows 8. Compatible con aplicaciones de escritorio Win32, Windows store y Windows Phone 8 aplicaciones.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,8 +35,8 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK p
 
 | Requisito | Value |
 |----------------------|-----------------------------------------------------------------------------------------------|
-| Espacio de nombres<br/> | Usar DirectX.<br/>                                                                       |
-| Encabezado<br/>    | <dl> <dt>DirectXCollision. h</dt> </dl> |
+| Espacio de nombres<br/> | Use DirectX.<br/>                                                                       |
+| Header<br/>    | <dl> <dt>DirectXCollision.h</dt> </dl> |
 
 
 

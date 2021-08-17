@@ -15,7 +15,7 @@ ms.locfileid: "119447465"
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe la ubicación de salida instalada en un dispositivo o la lista completa de ubicaciones admitidas para un dispositivo. Las palabras clave JobOutputBin, DocumentOutputBin y PageOutputBin son mutuamente excluyentes solo se debe especificar una en un documento PrintTicket o Capacidades de impresión.
+Describe la ubicación de salida instalada en un dispositivo o la lista completa de ubicaciones admitidas para un dispositivo. Las palabras clave JobOutputBin, DocumentOutputBin y PageOutputBin son mutuamente excluyentes; solo se debe especificar una en un documento PrintTicket o Capacidades de impresión.
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)

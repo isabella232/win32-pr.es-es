@@ -54,7 +54,7 @@ Marcas opcionales; debe establecerse en 0.
 
 Tipo: **LPWSTR \***
 
-Dirección de un puntero de cadena que recibe el nombre de vista predeterminado. La memoria de la cadena se asigna con [**SHStrDup**](/windows/desktop/api/Shlwapi/nf-shlwapi-shstrdupa).
+Dirección de un puntero de cadena que recibe el nombre de vista predeterminado. La memoria de la cadena se asigna con [**SHStrDup.**](/windows/desktop/api/Shlwapi/nf-shlwapi-shstrdupa)
 
 </dd> </dl>
 

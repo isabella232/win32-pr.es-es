@@ -1,21 +1,21 @@
 ---
-description: El método EnumerateStreams enumera las secuencias actualmente con los participantes. Este método se proporciona para las aplicaciones de C y C++. Las aplicaciones cliente de automatización, como las escritas en Visual Basic, deben usar el \_ método get streams.
+description: El método EnumerateStreams enumera las secuencias actualmente con los participantes. Este método se proporciona para aplicaciones de C y C++. Las aplicaciones cliente de Automation, como las escritas en Visual Basic, deben usar el método get \_ Secuencias.
 ms.assetid: 69db198d-fb4c-482b-bf49-5c636ac2f86b
-title: 'ITParticipant:: EnumerateStreams (método) (Ipmsp. h)'
+title: Método ITParticipant::EnumerateStreams (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbc92c617ed4baee3ecc33aec65cbdcf50986a27
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e1ec901c81bb0df666877ee06462b88da965b41bedd961e71cebbf25cd78ee30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140308"
 ---
-# <a name="itparticipantenumeratestreams-method"></a>ITParticipant:: EnumerateStreams (método)
+# <a name="itparticipantenumeratestreams-method"></a>ItParticipant::EnumerateStreams (método)
 
-\[**EnumerateStreams** no está disponible para su uso en Windows Vista, windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[**EnumerateStreams** no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **EnumerateStreams** enumera las secuencias actualmente con los participantes. Este método se proporciona para las aplicaciones de C y C++. Las aplicaciones cliente de automatización, como las escritas en Visual Basic, deben usar el método [**Get \_ streams**](itparticipant-get-streams.md) .
+El **método EnumerateStreams** enumera las secuencias actualmente con los participantes. Este método se proporciona para aplicaciones de C y C++. Las aplicaciones cliente de Automation, como las escritas en Visual Basic, deben usar el [**método get \_ Secuencias.**](itparticipant-get-streams.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,10 +32,10 @@ HRESULT EnumerateStreams(
 
 <dl> <dt>
 
-*ppEnumStream* \[ enuncia\]
+*ppEnumStream* \[ out\]
 </dt> <dd>
 
-Puntero al puntero de la interfaz [**IEnumStream**](/windows/desktop/api/tapi3if/nn-tapi3if-ienumstream) .
+Puntero al [**puntero de interfaz IEnumStream.**](/windows/desktop/api/tapi3if/nn-tapi3if-ienumstream)
 
 </dd> </dl>
 
@@ -47,16 +47,16 @@ Este método puede devolver uno de estos valores.
 
 | Value                                                                                     | Significado                                                         |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>      | El método se realizó correctamente.<br/>                                    |
-| <dl> <dt>**\_puntero E**</dt> </dl> | El parámetro *ppEnumStream* no es un puntero válido.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | El método se realizó correctamente.<br/>                                    |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl> | El *parámetro ppEnumStream* no es un puntero válido.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-TAPI llama al método **AddRef** en la interfaz [**IEnumStream**](/windows/desktop/api/tapi3if/nn-tapi3if-ienumstream) devuelta por **ITParticipant:: EnumerateStreams**. La aplicación debe llamar a **Release** en la interfaz **IEnumStream** para liberar recursos asociados a ella.
+TAPI llama al **método AddRef** en la [**interfaz IEnumStream**](/windows/desktop/api/tapi3if/nn-tapi3if-ienumstream) devuelta por **ITParticipant::EnumerateStreams**. La aplicación debe llamar **a Release** en la **interfaz IEnumStream** para liberar recursos asociados a ella.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,9 +64,9 @@ TAPI llama al método **AddRef** en la interfaz [**IEnumStream**](/windows/deskt
 
 | Requisito | Value |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                |
-| Encabezado<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                |
+| Header<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | Archivo DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 
@@ -78,7 +78,7 @@ TAPI llama al método **AddRef** en la interfaz [**IEnumStream**](/windows/deskt
 [**ITParticipant**](itparticipant.md)
 </dt> <dt>
 
-[**obtener \_ secuencias**](itparticipant-get-streams.md)
+[**obtener \_ Secuencias**](itparticipant-get-streams.md)
 </dt> <dt>
 
 [**IEnumStream**](/windows/desktop/api/tapi3if/nn-tapi3if-ienumstream)

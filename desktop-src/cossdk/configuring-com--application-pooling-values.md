@@ -1,5 +1,5 @@
 ---
-description: Puede usar las siguientes instrucciones para configurar los valores de agrupación de aplicaciones COM+ para la aplicación COM+.
+description: Puede usar las instrucciones siguientes para configurar los valores de agrupación de aplicaciones COM+ para la aplicación COM+.
 ms.assetid: faba5cb7-745e-4fdf-a3e0-62132da4a843
 title: Configuración de valores de agrupación de aplicaciones COM+
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "119128977"
 ---
 # <a name="configuring-com-application-pooling-values"></a>Configuración de valores de agrupación de aplicaciones COM+
 
-Puede usar las siguientes instrucciones para configurar los valores de agrupación de aplicaciones COM+ para la aplicación COM+.
+Puede usar las instrucciones siguientes para configurar los valores de agrupación de aplicaciones COM+ para la aplicación COM+.
 
 > [!Note]  
 > Las aplicaciones de biblioteca tienen las propiedades de reciclaje y agrupación de su proceso de host.
@@ -24,9 +24,9 @@ Puede usar las siguientes instrucciones para configurar los valores de agrupaci�
 
 Para configurar la agrupación de aplicaciones COM+ para una aplicación COM+, siga estos pasos:
 
-1.  En el árbol de consola de la herramienta administrativa Servicios de componentes, haga clic con el botón derecho en la aplicación COM+ que quiera agrupar y, a continuación, haga clic en **Propiedades**.
+1.  En el árbol de consola de la herramienta administrativa Servicios de componentes, haga clic con el botón derecho en la aplicación COM+ que quiera agrupar y, a continuación, haga clic en **Propiedades.**
 
-2.  En la pestaña **Agrupación & reciclaje,** en Agrupación de aplicaciones **,** escriba un valor para Tamaño de grupo **,** en función del número de instancias de la aplicación que quiera tener en ejecución.
+2.  En la pestaña **Agrupación de & Reciclaje,** en Agrupación de aplicaciones **,** escriba un valor para Tamaño de grupo **,** en función del número de instancias de la aplicación que quiera que se ejecuten.
 
 3.  Haga clic en **Aceptar**.
 
@@ -78,7 +78,7 @@ End Function
 
 
 
-Para usar la función , proporcione un valor de cadena para el nombre de aplicación del servidor COM+ y un valor entero para la configuración de agrupación de aplicaciones deseada. En el Visual Basic siguiente se muestra cómo establecer el valor de agrupación de aplicaciones en 15 para la aplicación denominada "MyApplication":
+Para usar la función, proporcione un valor de cadena para el nombre de la aplicación del servidor COM+ y un valor entero para la configuración de agrupación de aplicaciones deseada. En el Visual Basic siguiente se muestra cómo establecer el valor de agrupación de aplicaciones en 15 para la aplicación denominada "MyApplication":
 
 
 ```VB
@@ -94,7 +94,7 @@ End Sub
 
 ## <a name="cc"></a>C/C++
 
-La siguiente función de C++ muestra cómo puede establecer el valor de agrupación de aplicaciones COM+ (representado por su propiedad ConcurrentApps) para cualquier aplicación de servidor COM+ que elija. El método ErrorDescription se describe en [Interpretación de códigos de error](interpreting-error-codes.md).
+La siguiente función de C++ muestra cómo puede establecer el valor de agrupación de aplicaciones COM+ (representado por su propiedad ConcurrentApps) para cualquier aplicación de servidor COM+ que elija. El método ErrorDescription se describe en [Interpretación de códigos de error.](interpreting-error-codes.md)
 
 
 ```C++
@@ -214,7 +214,7 @@ catch(HRESULT hr) {  // Replace with specific error handling.
 
 
 
-Para usar la función , proporcione un valor de cadena para el nombre de aplicación del servidor COM+ y un valor entero para la configuración de agrupación de aplicaciones deseada. El siguiente código de C++ muestra cómo establecer el valor de agrupación de aplicaciones en 15 para la aplicación denominada "MyApplication":
+Para usar la función, proporcione un valor de cadena para el nombre de la aplicación del servidor COM+ y un valor entero para la configuración de agrupación de aplicaciones deseada. El siguiente código de C++ muestra cómo establecer el valor de agrupación de aplicaciones en 15 para la aplicación denominada "MyApplication":
 
 ``` syntax
 #define _WIN32_DCOM  // To use CoInitializeEx()

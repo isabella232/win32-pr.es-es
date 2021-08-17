@@ -1,28 +1,28 @@
 ---
-title: Obtener acceso a medios
-description: Obtener acceso a medios
+title: Acceso a medios
+description: Acceso a medios
 ms.assetid: 18ea844d-98c9-4168-9af2-161dda52f6bd
 keywords:
-- Listas de reproducción de metarchivos de Windows Media, acceso a medios
+- Windows Listas de reproducción de metarchivo multimedia, acceso a medios
 - listas de reproducción, acceso a medios
-- listas de reproducción de metarchivos, acceso a medios
-- Listas de reproducción de metarchivos de Windows Media, acceso a medios
-- listas de reproducción, acceso a medios
-- listas de reproducción de metarchivos, acceso a medios
-- Listas de reproducción de metarchivo de Windows Media, controlar la reproducción
+- listas de reproducción de metarchivo, acceso a medios
+- Windows Listas de reproducción de metarchivo multimedia, acceso multimedia
+- listas de reproducción, acceso multimedia
+- listas de reproducción de metarchivo, acceso multimedia
+- Windows Listas de reproducción de metarchivo multimedia, controlar la reproducción
 - listas de reproducción, controlar la reproducción
-- listas de reproducción de metarchivos, controlar la reproducción
-- Listas de reproducción de metarchivos de Windows Media, configuración de duración
-- listas de reproducción, configuración de la duración
-- listas de reproducción de metarchivos, establecer duración
-- Windows Media Player, acceso a medios
-- Media Player de Windows, acceso a medios
-- Windows Media Player, controlar la reproducción
-- Windows Media Player, establecer la duración
-- obtener acceso a medios
+- listas de reproducción de metarchivo, controlar la reproducción
+- Windows Listas de reproducción de metarchivo multimedia, establecer la duración
+- playlists,setting duration
+- listas de reproducción de metarchivo, establecer la duración
+- Reproductor de Windows Media, acceso a medios
+- Reproductor de Windows Media,acceso multimedia
+- Reproductor de Windows Media, controlar la reproducción
+- Reproductor de Windows Media, establecer la duración
 - acceso a medios
+- acceso multimedia
 - controlar la reproducción
-- configuración de la duración
+- duración de la configuración
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -30,31 +30,31 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c5a995a6816e3c46a002bd1ea924c9ea9a207000
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c1a0846be4e8b9b62e424ce24d1b1800bc361c6a28f52a323c6bfa8511ae040b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956405"
 ---
-# <a name="accessing-media"></a>Obtener acceso a medios
+# <a name="accessing-media"></a>Acceso a medios
 
-Use listas de reproducción para especificar y controlar los archivos multimedia o multimedia de streaming que reproduce Windows Media Player.
+Use listas de reproducción para especificar y controlar los archivos multimedia o multimedia de streaming que Reproductor de Windows Media reproducir.
 
-Use el elemento **entry** para especificar un elemento multimedia único (un archivo multimedia o una secuencia en directo) y los elementos secundarios (como imágenes, vínculos **MOREINFO** y texto **abstracto** ). Use un elemento **ENTRYREF** para especificar una lista de reproducción. Una lista de reproducción puede contener uno o varios elementos de **entrada** o **ENTRYREF** . Windows Media Player ejecuta una lista de reproducción empezando por la primera entrada y reproduciendo cada entrada a su vez hasta que se complete la lista.
+Use el **elemento ENTRY** para especificar un único elemento multimedia (un archivo multimedia o una secuencia en vivo) y cualquier elemento secundario (como imágenes, vínculos **MOREINFO** y **texto ABSTRACTo).** Use un **elemento ENTRYREF** para especificar una lista de reproducción. Una lista de reproducción puede contener uno o varios **elementos ENTRY** **o ENTRYREF.** Reproductor de Windows Media una lista de reproducción empezando por la primera entrada y, a continuación, reproduciendo cada entrada a su vez hasta que finalice la lista.
 
-Un elemento de **entrada** puede apuntar a cualquier tipo de medio que Windows Media Player pueda reproducir. Esto incluye no solo archivos. WMA,. wmv,. ASF y. avi, por nombrar algunos, pero también secuencias en directo. Mediante el uso de una serie de elementos **entry** o **ENTRYREF** para hacer referencia a contenido multimedia, puede usar una lista de reproducción para enviar un flujo único compuesto por varios orígenes. Los flujos a los que se hace referencia se reproducirán secuencialmente y el visor lo verá como una secuencia continua. Por ejemplo, la lista de reproducción puede contener dos elementos de **entrada** : una introducción estándar de un archivo de Windows Media con una extensión. WMA y una secuencia de medios de Windows activa.
+Un **elemento ENTRY** puede apuntar a cualquier tipo de medio que Reproductor de Windows Media reproducir. Esto incluye no solo archivos .wma, .wmv, .asf y .avi, por nombrar algunos, sino también transmisiones en vivo. Mediante el uso de una serie de **elementos ENTRY** o **ENTRYREF** para hacer referencia al contenido multimedia, puede usar una lista de reproducción para enviar una única secuencia que consta de varios orígenes. Las secuencias a las que se hace referencia se reproducirán secuencialmente y el visor las verá como una secuencia continua. Por ejemplo, la lista de reproducción puede contener dos elementos **ENTRY:** una introducción estándar de un archivo Windows Media con una extensión .wma y una secuencia multimedia Windows en directo.
 
 > [!Note]  
-> Una lista de reproducción no debe contener vínculos a archivos multimedia que tengan contenido creado con versiones diferentes de Rights Management digitales (DRM). En una lista de reproducción de metarchivo, si hay vínculos para archivos multimedia con contenido de DRM versión 1 y para archivos multimedia creados con versiones posteriores de DRM, Windows Media Player solo reproducirá el contenido de DRM versión 1.
+> Una lista de reproducción no debe contener vínculos a archivos multimedia que tengan contenido creado con diferentes versiones de Digital Rights Management (DRM). En una lista de reproducción de metarchivo, si hay vínculos para archivos multimedia con contenido drm versión 1 y para archivos multimedia creados con versiones posteriores de DRM, Reproductor de Windows Media reproducirá solo el contenido de la versión 1 de DRM.
 
- 
+ 
 
 ## <a name="controlling-playback"></a>Controlar la reproducción
 
-Use listas de reproducción para controlar no solo qué clip multimedia se reproduce, sino también qué partes del clip se reproducen y cómo. Puede usar listas de reproducción para definir un conjunto de clips que se repiten o se repiten, para establecer la duración de la reproducción y para asignar las horas de inicio, así como los marcadores de inicio y finalización de cada entrada. Los elementos **STARTTIME**, **STARTMARKER** y **ENDMARKER** funcionan junto con los marcadores del archivo multimedia.
+Use listas de reproducción para controlar no solo qué clip multimedia se reproduce, sino también qué partes del clip se reproducen y cómo. Puede usar listas de reproducción para definir un conjunto de clips que se va a recorrer en bucle o repetir, para establecer la duración del juego y para asignar horas de inicio y marcadores de inicio y finalización para cada entrada. Los **elementos STARTTIME,** **STARTMARKER** y **ENDMARKER** funcionan junto con marcadores en el archivo multimedia.
 
-Por ejemplo, la siguiente lista de reproducción usa un banner de AD y el vínculo de **MOREINFO** asociado en una **entrada** y hace referencia a **STARTMARKER** y **ENDMARKER**.
+Por ejemplo, la siguiente lista de reproducción usa un banner de anuncio y el vínculo **MOREINFO** asociado en una **entrada** y hace referencia a **STARTMARKER** **y ENDMARKER**.
 
 
 ```XML
@@ -91,29 +91,29 @@ Por ejemplo, la siguiente lista de reproducción usa un banner de AD y el víncu
 
 
 
-## <a name="setting-duration"></a>Configuración de la duración
+## <a name="setting-duration"></a>Establecer duración
 
-Use el elemento **Duration** para especificar cuánto tiempo se reproduce un clip o un conjunto de clips. También puede usar el atributo **PREVIEWMODE** del elemento **ASX** junto con el elemento **PREVIEWDURATION** para especificar cuánto tiempo se reproduce un clip o un conjunto de clips. Establezca el atributo **PREVIEWMODE** en sí para usar el elemento **PREVIEWDURATION** para especificar cuánto tiempo se va a reproducir el clip asociado. Los elementos **PREVIEWDURATION** y **Duration** tienen el mismo comportamiento.
+Use el **elemento DURATION** para especificar cuánto tiempo se va a reproducir un clip o un conjunto de clips. También puede usar el atributo **PREVIEWMODE** del elemento **ASX** junto con el elemento **PREVIEWDURATION** para especificar cuánto tiempo se debe reproducir un clip o un conjunto de clips. Establezca el **atributo PREVIEWMODE** en YES para usar el **elemento PREVIEWDURATION** para especificar cuánto tiempo se reproducirá el clip asociado. Los **elementos PREVIEWDURATION** **y DURATION** tienen el mismo comportamiento.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Listas de reproducción de metarchivos**](metafile-playlists.md)
+[**Listas de reproducción de metarchivo**](metafile-playlists.md)
 </dt> <dt>
 
-[**Usar listas de reproducción de metarchivo**](using-metafile-playlists.md)
+[**Uso de listas de reproducción de metarchivo**](using-metafile-playlists.md)
 </dt> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Guía de metarchivo de Windows Media**](windows-media-metafile-guide.md)
+[**Windows Guía de metarchivo multimedia**](windows-media-metafile-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

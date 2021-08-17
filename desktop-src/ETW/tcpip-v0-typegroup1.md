@@ -18,12 +18,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 96df2214aff9b5be6f10a1f08f6e6ea2e015c6b5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 29211ae7a5aca5abc33af545ba581c4baf82f1dac51c72b910f8251560ea92d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069575"
 ---
 # <a name="tcpip_v0_typegroup1-class"></a>Clase \_ TypeGroup1 de TcpIp V0 \_
 
@@ -54,7 +54,7 @@ La **clase \_ \_ TypeGroup1 de TcpIp V0** tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ TypeGroup1 de TcpIp V0** tiene estas propiedades.
+La **clase \_ \_ TypeGroup1 tcpIp V0** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -158,14 +158,14 @@ Número de puerto de origen.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                   |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

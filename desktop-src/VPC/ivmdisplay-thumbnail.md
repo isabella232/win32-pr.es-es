@@ -3,7 +3,7 @@ title: Propiedad IVMDisplay Thumbnail (VPCCOMInterfaces.h)
 description: Recupera una matriz de píxeles que representa una imagen en miniatura de la pantalla de la máquina virtual. | Propiedad IVMDisplay Thumbnail (VPCCOMInterfaces.h)
 ms.assetid: e7b57f16-eec1-4461-acfb-742976eff14a
 keywords:
-- Propiedad thumbnail virtual PC
+- Propiedad Thumbnail de Virtual PC
 - Propiedad thumbnail Virtual PC, interfaz IVMDisplay
 - IVMDisplay interface Virtual PC , Propiedad Thumbnail
 topic_type:
@@ -26,7 +26,7 @@ ms.locfileid: "119473335"
 ---
 # <a name="ivmdisplaythumbnail-property"></a>IVMDisplay::Thumbnail, propiedad
 
-\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use el proveedor WMI de [Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera una matriz de píxeles que representa una imagen en miniatura de la pantalla de la máquina virtual.
 
@@ -45,7 +45,7 @@ HRESULT get_Thumbnail(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Variante de tipo VT ARRAY VT VARIANT que contiene entradas de tipo \_ \| VT \_ UI4, una para cada píxel de la \_ miniatura.
+Variante de tipo VT ARRAY VT VARIANT que contiene entradas de tipo \_ VT UI4, una para \| cada píxel de la \_ \_ miniatura.
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -59,7 +59,7 @@ Variante de tipo VT ARRAY VT VARIANT que contiene entradas de tipo \_ \| VT \_ U
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta interfaz devuelve la miniatura de forma menos eficaz que [**\_ el método GenerateThumbnail,**](ivmdisplay--generatethumbnail.md) pero se puede usar desde clientes de scripting. La miniatura siempre tiene 64 píxeles de ancho por 48 píxeles de alto. Cada píxel es de 32 bits. Los primeros 64 elementos de la matriz son la primera fila de píxeles de la miniatura, los 64 elementos siguientes son la segunda fila, y así sucesivamente.
 
@@ -72,7 +72,7 @@ Esta interfaz devuelve la miniatura de forma menos eficaz que [**\_ el método G
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
 | Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
-| Product<br/>                  | Windows Virtual PC<br/>                                                                 |
+| Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
 | Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 | IID<br/>                      | IID IVMDisplay se define como \_ 960895e9-f743-4498-96aa-261f867e7fc5<br/>                 |
 

@@ -1,23 +1,23 @@
 ---
-description: La Directiva de metadatos de fotos para la propiedad System. Photo. saturación.
+description: Directiva de metadatos de fotos para la propiedad System.Photo.Saturation.
 ms.assetid: 1dbb7515-7022-404c-928a-9eb09e43e7a7
-title: Directiva de metadatos de la foto System. Photo. saturación
+title: Directiva de metadatos de fotos System.Photo.Saturation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dcb2b199458f063f2c28d7f6780a6ea907f76f90
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1be1c5be7a0663d5f57823dcb704b843f56e6076713de3682e4b12d6b533ff48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087018"
 ---
-# <a name="systemphotosaturation-photo-metadata-policy"></a>Directiva de metadatos de la foto System. Photo. saturación
+# <a name="systemphotosaturation-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Photo.Saturation
 
-La Directiva de metadatos de fotos para la propiedad [System. Photo. saturación](../properties/props-system-photo-saturation.md) .
+Directiva de metadatos de fotos para [la propiedad System.Photo.Saturation.](../properties/props-system-photo-saturation.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-Saturación de la fotografía de PKEY \_ \_
+Saturación de \_ fotos PKEY \_
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,7 +27,7 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ UI4
 
@@ -37,7 +37,7 @@ UShort
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
@@ -45,23 +45,23 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /app1/IFD/Exif/{ushort = 41993} | ushort      |
-| 2     | /XMP/Exif: saturación          | unicode     |
+| 1     | /app1/ifd/exif/{ushort=41993} | ushort      |
+| 2     | /xmp/exif:Saturation          | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /app1/IFD/Exif/{ushort = 41993} | ushort      |
-| 2     | /XMP/Exif: saturación          | unicode     |
+| 1     | /app1/ifd/exif/{ushort=41993} | ushort      |
+| 2     | /xmp/exif:Saturation          | unicode     |
 
 
 
@@ -71,10 +71,10 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                          |
+| Pedido | Ruta de acceso                          |
 |-------|-------------------------------|
-| 1     | /app1/IFD/Exif/{ushort = 41993} |
-| 2     | /XMP/Exif: saturación          |
+| 1     | /app1/ifd/exif/{ushort=41993} |
+| 2     | /xmp/exif:saturation          |
 
 
 
@@ -86,23 +86,23 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                     | Formato de disco |
+| Pedido | Ruta de acceso                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/Exif/{ushort = 41993} | ushort      |
-| 2     | /IFD/XMP/Exif: saturación | unicode     |
+| 1     | /ifd/exif/{ushort=41993} | ushort      |
+| 2     | /ifd/xmp/exif:Saturation | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                     | Formato de disco |
+| Pedido | Ruta de acceso                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/Exif/{ushort = 41993} | ushort      |
-| 2     | /IFD/XMP/Exif: saturación | unicode     |
+| 1     | /ifd/exif/{ushort=41993} | ushort      |
+| 2     | /ifd/xmp/exif:Saturation | unicode     |
 
 
 
@@ -112,22 +112,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                     |
+| Pedido | Ruta de acceso                     |
 |-------|--------------------------|
-| 1     | /IFD/Exif/{ushort = 41993} |
-| 2     | /IFD/XMP/Exif: saturación |
+| 1     | /ifd/exif/{ushort=41993} |
+| 2     | /ifd/xmp/exif:saturation |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. Photo. saturación](../properties/props-system-photo-saturation.md)
+[System.Photo.Saturation](../properties/props-system-photo-saturation.md)
 </dt> </dl>
 
  

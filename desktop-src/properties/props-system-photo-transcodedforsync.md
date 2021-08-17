@@ -1,5 +1,5 @@
 ---
-description: VT BOOL que indica si la imagen se ha transcodificado \_ para sincronizarse con un dispositivo externo.
+description: Un VT BOOL que indica si la imagen se ha transcodificado para \_ sincronizarse con un dispositivo externo.
 ms.assetid: c7f50095-97ad-4e21-bd7c-de4cf595badb
 title: System.Photo.TranscodedForSync
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118969984"
 ---
 # <a name="systemphototranscodedforsync"></a>System.Photo.TranscodedForSync
 
-VT BOOL que indica si la imagen se ha transcodificado \_ para sincronizarse con un dispositivo externo.
+Un VT BOOL que indica si la imagen se ha transcodificado para \_ sincronizarse con un dispositivo externo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 

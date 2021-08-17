@@ -28,7 +28,7 @@ ms.locfileid: "119321045"
 La **\_ asociación Cim FileStorage** vincula el sistema de archivos y los archivos lógicos que se abordan a través del sistema de archivos.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -60,7 +60,7 @@ La **clase \_ Cim FileStorage** tiene estas propiedades.
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ FileSystem**
+Tipo de datos: **Cim \_ FileSystem**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -99,7 +99,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -109,7 +109,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -7,14 +7,14 @@ keywords:
 - Windows SDK de formato multimedia, claves de contenido
 - Windows SDK de formato multimedia, código de ejemplo
 - Windows SDK de formato multimedia, ejemplos de código
-- administración de derechos digitales (DRM), claves de sesión
-- DRM (administración de derechos digitales), claves de sesión
-- administración de derechos digitales (DRM), claves de contenido
-- DRM (administración de derechos digitales), claves de contenido
-- digital rights management (DRM), código de ejemplo
+- administración de derechos digitales (DRM),claves de sesión
+- DRM (administración de derechos digitales),claves de sesión
+- administración de derechos digitales (DRM),claves de contenido
+- DRM (administración de derechos digitales),claves de contenido
+- administración de derechos digitales (DRM),código de ejemplo
 - DRM (administración de derechos digitales),código de ejemplo
-- administración de derechos digitales (DRM), ejemplos de código
-- DRM (administración de derechos digitales), ejemplos de código
+- administración de derechos digitales (DRM),ejemplos de código
+- DRM (administración de derechos digitales),ejemplos de código
 - API extendidas de cliente DRM, claves de sesión
 - API extendidas de cliente, claves de sesión
 - API extendidas de cliente DRM, claves de contenido
@@ -36,7 +36,7 @@ ms.locfileid: "118964144"
 ---
 # <a name="create-session-key-example"></a>Ejemplo de creación de clave de sesión
 
-La clave de sesión se usa para proteger la clave de contenido. En el código siguiente se muestra cómo crear una clave de sesión, pero se dejan fuera los detalles de la generación aleatoria de claves.
+La clave de sesión se usa para proteger la clave de contenido. El código siguiente muestra cómo crear una clave de sesión, pero deja fuera los detalles de la generación aleatoria de claves.
 
 
 ```C++

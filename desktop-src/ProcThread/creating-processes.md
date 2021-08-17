@@ -1,19 +1,19 @@
 ---
-description: La función CreateProcess crea un nuevo proceso, que se ejecuta independientemente del proceso de creación. Sin embargo, para simplificar, la relación se conoce como una relación de elementos primarios y secundarios.
+description: La función CreateProcess crea un nuevo proceso, que se ejecuta independientemente del proceso de creación. Sin embargo, para simplificar, la relación se conoce como relación de elementos primarios y secundarios.
 ms.assetid: 4c3f76a3-e9f5-4d73-b5ef-eabfa9d6e4d4
 title: Crear procesos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75606a3006bf63359b3e52cf2172b8bc2d77ed56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be8e5e4340f5c956e964b74ab134a7618a4c4bf0fa44eee1989a0457741d7bc6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143108"
 ---
 # <a name="creating-processes"></a>Crear procesos
 
-La función [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) crea un nuevo proceso, que se ejecuta independientemente del proceso de creación. Sin embargo, para simplificar, la relación se conoce como una relación de elementos primarios y secundarios.
+La [**función CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) crea un nuevo proceso, que se ejecuta independientemente del proceso de creación. Sin embargo, para simplificar, la relación se conoce como relación de elementos primarios y secundarios.
 
 En el código siguiente se muestra cómo crear un proceso.
 
@@ -66,9 +66,9 @@ void _tmain( int argc, TCHAR *argv[] )
 
 
 
-Si [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) se ejecuta correctamente, devuelve una estructura de [**\_ información de proceso**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_information) que contiene identificadores e identificadores para el nuevo proceso y su subproceso principal. Los identificadores de subprocesos y procesos se crean con derechos de acceso completo, aunque el acceso se puede restringir si se especifican descriptores de seguridad. Cuando ya no necesite estos identificadores, ciérrelo mediante la función [**CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle) .
+Si [**CreateProcess se**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) realiza correctamente, devuelve una estructura [**PROCESS \_ INFORMATION**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_information) que contiene identificadores y identificadores para el nuevo proceso y su subproceso principal. Los identificadores de subproceso y proceso se crean con derechos de acceso completos, aunque el acceso se puede restringir si se especifican descriptores de seguridad. Cuando ya no necesite estos identificadores, conéctelos mediante la [**función CloseHandle.**](/windows/desktop/api/handleapi/nf-handleapi-closehandle)
 
-También puede crear un proceso mediante la función [**CreateProcessAsUser**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) o [**CreateProcessWithLogonW**](/windows/desktop/api/WinBase/nf-winbase-createprocesswithlogonw) . Esto le permite especificar el contexto de seguridad de la cuenta de usuario en la que se ejecutará el proceso.
+También puede crear un proceso mediante las [**funciones CreateProcessAsUser**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) [**o CreateProcessWithLogonW.**](/windows/desktop/api/WinBase/nf-winbase-createprocesswithlogonw) Esto le permite especificar el contexto de seguridad de la cuenta de usuario en la que se ejecutará el proceso.
 
  
 

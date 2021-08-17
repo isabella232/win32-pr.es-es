@@ -1,74 +1,74 @@
 ---
-title: Cuadro emergente de contexto
-description: Un elemento emergente de contexto es el control principal en la vista ContextPopup del marco de la cinta de opciones de Windows.
+title: Elemento emergente de contexto
+description: Un elemento Popup de contexto es el control principal en la vista ContextPopup del marco Windows cinta de opciones.
 ms.assetid: c41b888a-15aa-4c47-ad73-5dc30b5fa6f9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c77441cc3cdcc9212d27d2230d76d2618f1831ab
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 15424aa8b2b82580218eb3663e4b157bce321fdde027e03101ce2cf38626aac2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105676423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964423"
 ---
-# <a name="context-popup"></a>Cuadro emergente de contexto
+# <a name="context-popup"></a>Elemento emergente de contexto
 
-Un elemento emergente de contexto es el control principal en la [**vista ContextPopup**](windowsribbon-element-contextpopup.md) del marco de la cinta de opciones de Windows. Se trata de un sistema de menús contextuales enriquecido que solo expone el marco de trabajo como una extensión a una implementación de la cinta de opciones; el marco no expone el elemento emergente de contexto como control independiente.
+Un elemento Popup de contexto es el control principal en [**la vista ContextPopup**](windowsribbon-element-contextpopup.md) del marco Windows cinta de opciones. Se trata de un sistema de menús contextuales enriquecido que el marco solo expone como una extensión a una implementación de cinta de opciones; el marco no expone el elemento emergente de contexto como control independiente.
 
 -   [Componentes del elemento emergente de contexto](#context-popup)
 -   [Implementar el elemento emergente de contexto](#implement-the-context-popup)
     -   [marcado](#markup)
     -   [Código](#code)
--   [Propiedades de elemento emergente de contexto](#context-popup-properties)
+-   [Propiedades emergentes de contexto](#context-popup-properties)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="components-of-the-context-popup"></a>Componentes del elemento emergente de contexto
 
-El elemento emergente de contexto es un contenedor lógico para el menú contextual y Mini-Toolbar los subcontrols que se exponen a través de los elementos de marcado [**ContextMenu**](windowsribbon-element-contextmenu.md) y [**MiniToolbar**](windowsribbon-element-minitoolbar.md) , respectivamente:
+Context Popup es un contenedor lógico para el menú contextual y Mini-Toolbar secundarios que se exponen a través de los elementos de marcado [**ContextMenu**](windowsribbon-element-contextmenu.md) y [**MiniToolbar,**](windowsribbon-element-minitoolbar.md) respectivamente:
 
--   El [**ContextMenu**](windowsribbon-element-contextmenu.md) expone un menú de comandos y galerías.
--   [**MiniToolbar**](windowsribbon-element-minitoolbar.md) expone una barra de herramientas flotante de varios comandos, galerías y controles complejos, como el [control de fuente](windowsribbon-controls-fontcontrol.md) y el [cuadro combinado](windowsribbon-controls-combobox.md).
+-   [**ContextMenu**](windowsribbon-element-contextmenu.md) expone un menú de comandos y galerías.
+-   [**MiniToolbar expone**](windowsribbon-element-minitoolbar.md) una barra de herramientas flotante de varios comandos, galerías y controles complejos, como el [control](windowsribbon-controls-fontcontrol.md) de fuentes y el [cuadro combinado](windowsribbon-controls-combobox.md).
 
-Cada subcontrol puede aparecer como máximo una vez en una ventana emergente de contexto.
+Cada subcontrol puede aparecer como máximo una vez en un elemento emergente de contexto.
 
-La siguiente captura de pantalla muestra el contexto emergente y sus subcontrols constituyentes.
+En la captura de pantalla siguiente se muestra el elemento emergente de contexto y sus subdominios constituyentes.
 
-![captura de pantalla con llamadas que muestran los componentes de interfaz de usuario contextual de la cinta.](images/controls/contextpopup.png)
+![captura de pantalla con llamadas que muestran los componentes contextuales de la interfaz de usuario de la cinta de opciones.](images/controls/contextpopup.png)
 
-El elemento emergente de contexto es puramente conceptual y no expone ninguna funcionalidad de la interfaz de usuario, como la posición o el ajuste de tamaño.
+Context Popup es puramente conceptual y no expone ninguna funcionalidad de interfaz de usuario propiamente dicha, como el posicionamiento o el tamaño.
 
 > [!Note]  
-> La ventana emergente contextual se muestra normalmente al hacer clic con el botón secundario en el mouse (o mediante el método abreviado de teclado Mayús + F10) en un objeto de interés. Sin embargo, la aplicación define los pasos necesarios para mostrar el elemento emergente de contexto.
+> La ventana emergente de contexto se muestra normalmente haciendo clic con el botón derecho en el mouse (o a través del método abreviado de teclado MAYÚS+F10) en un objeto de interés. Sin embargo, la aplicación define los pasos necesarios para mostrar el elemento emergente de contexto.
 
- 
+ 
 
 ## <a name="implement-the-context-popup"></a>Implementar el elemento emergente de contexto
 
-De forma similar a otros controles de marcos de cinta de Windows, el elemento emergente de contexto se implementa a través de un componente de marcado que especifica los detalles de presentación y un componente de código que rige su funcionalidad.
+De forma similar a otros controles del marco de Windows Ribbon, context popup se implementa a través de un componente de marcado que especifica sus detalles de presentación y un componente de código que rige su funcionalidad.
 
-En la tabla siguiente se enumeran los controles que admite cada subcontrol emergente de contexto.
+En la tabla siguiente se enumeran los controles admitidos por cada subcontrol emergente de contexto.
 
 
 
 | Control                                                                  | Mini-Toolbar | Menú contextual |
 |--------------------------------------------------------------------------|--------------|--------------|
 | [Botón](windowsribbon-controls-button.md)                              | x            | x            |
-| [Casilla de verificación](windowsribbon-controls-checkbox.md)                         | x            | x            |
+| [Casilla](windowsribbon-controls-checkbox.md)                         | x            | x            |
 | [Cuadro combinado](windowsribbon-controls-combobox.md)                         | x            |              |
 | [Botón desplegable](windowsribbon-controls-dropdownbutton.md)            | x            | x            |
-| [Selector de colores desplegables](windowsribbon-controls-dropdowncolorpicker.md) | x            | x            |
+| [Lista desplegable Selector de colores](windowsribbon-controls-dropdowncolorpicker.md) | x            | x            |
 | [Galería desplegable](windowsribbon-controls-dropdowngallery.md)          | x            | x            |
-| [Control de fuente](windowsribbon-controls-fontcontrol.md)                   | x            |              |
-| [Botón ayuda](windowsribbon-controls-helpbutton.md)                     |              |              |
-| [En la galería de la cinta de opciones](windowsribbon-controls-inribbongallery.md)          |              |              |
+| [Control de fuentes](windowsribbon-controls-fontcontrol.md)                   | x            |              |
+| [Botón Ayuda](windowsribbon-controls-helpbutton.md)                     |              |              |
+| [Galería en la cinta de opciones](windowsribbon-controls-inribbongallery.md)          |              |              |
 | [Spinner](windowsribbon-controls-spinner.md)                            |              |              |
-| [Botón de expansión](windowsribbon-controls-splitbutton.md)                   | x            | x            |
-| [Galería de botones de expansión](windowsribbon-controls-splitbuttongallery.md)    | x            | x            |
-| [Botón de alternancia](windowsribbon-controls-togglebutton.md)                 | x            | x            |
+| [Botón De división](windowsribbon-controls-splitbutton.md)                   | x            | x            |
+| [Galería de botones de división](windowsribbon-controls-splitbuttongallery.md)    | x            | x            |
+| [Botón De alternancia](windowsribbon-controls-togglebutton.md)                 | x            | x            |
 
 
 
- 
+ 
 
 ### <a name="markup"></a>marcado
 
@@ -76,17 +76,17 @@ Cada subcontrol emergente de contexto debe declararse individualmente en el marc
 
 ### <a name="mini-toolbar"></a>Mini-Toolbar
 
-Al agregar controles a una minibarra de herramientas emergente de contexto, se deben tener en cuenta las dos recomendaciones siguientes:
+Al agregar controles a una mini barra de herramientas emergente de contexto, se deben tener en cuenta las dos recomendaciones siguientes:
 
--   Los controles deben ser muy reconocibles y proporcionar una funcionalidad obvia. La familiaridad es la clave, ya que las etiquetas e información sobre herramientas no se exponen para los controles de Mini-Toolbar.
--   Cada comando expuesto por un control se debe presentar en otro lugar de la interfaz de usuario de la cinta de opciones. La Mini-Toolbar no admite la navegación con el teclado.
+-   Los controles deben ser muy reconocibles y proporcionar una funcionalidad obvia. La familiaridad es clave, ya que las etiquetas y la información sobre herramientas no se exponen para Mini-Toolbar controles.
+-   Cada comando expuesto por un control debe presentarse en otra parte de la interfaz de usuario de la cinta de opciones. El Mini-Toolbar no admite la navegación mediante el teclado.
 
-En el ejemplo siguiente se muestra el marcado básico de un elemento [**MiniToolbar**](windowsribbon-element-minitoolbar.md) que contiene tres controles [Button](windowsribbon-controls-button.md) .
+En el ejemplo siguiente se muestra el marcado básico para un [**elemento MiniToolbar**](windowsribbon-element-minitoolbar.md) que contiene tres [controles Button.](windowsribbon-controls-button.md)
 
 > [!Note]  
-> Se especifica un elemento [**MenuGroup**](windowsribbon-element-menugroup.md) para cada fila de controles de la minibarra de herramientas.
+> Se [**especifica un elemento MenuGroup**](windowsribbon-element-menugroup.md) para cada fila de controles de la barra de herramientas pequeña.
 
- 
+ 
 
 
 ```C++
@@ -103,12 +103,12 @@ En el ejemplo siguiente se muestra el marcado básico de un elemento [**MiniTool
 
 ### <a name="context-menu"></a>Menú contextual
 
-En el ejemplo siguiente se muestra el marcado básico para un elemento [**ContextMenu**](windowsribbon-element-contextmenu.md) que contiene tres controles de [botón](windowsribbon-controls-button.md) .
+En el ejemplo siguiente se muestra el marcado básico para un [**elemento ContextMenu**](windowsribbon-element-contextmenu.md) que contiene tres [controles Button.](windowsribbon-controls-button.md)
 
 > [!Note]  
-> Cada conjunto de controles del elemento [**MenuGroup**](windowsribbon-element-menugroup.md) está separado por una barra horizontal en el menú contextual.
+> Cada conjunto de controles del [**elemento MenuGroup**](windowsribbon-element-menugroup.md) está separado por una barra horizontal en el menú contextual.
 
- 
+ 
 
 
 ```C++
@@ -123,11 +123,11 @@ En el ejemplo siguiente se muestra el marcado básico para un elemento [**Contex
 
 
 
-Aunque un elemento emergente de contexto puede contener como máximo uno de cada subcontrol, son válidos varias declaraciones de elementos [**ContextMenu**](windowsribbon-element-contextmenu.md) y [**MiniToolbar**](windowsribbon-element-minitoolbar.md) en el marcado de la cinta de opciones. Esto permite que una aplicación admita varias combinaciones de controles de menú contextual y Mini-Toolbar, en función de los criterios definidos por la aplicación, como el contexto del área de trabajo.
+Aunque un elemento Popup de contexto puede contener como máximo uno de cada subcontrol, varias declaraciones de elementos [**ContextMenu**](windowsribbon-element-contextmenu.md) y [**MiniToolbar**](windowsribbon-element-minitoolbar.md) en el marcado de la cinta de opciones son válidas. Esto permite que una aplicación admita varias combinaciones de menú contextual y controles Mini-Toolbar, en función de los criterios definidos por la aplicación, como el contexto del área de trabajo.
 
-Para obtener más información, vea el elemento [**ContextMap**](windowsribbon-element-contextmap.md) .
+Para obtener más información, vea el [**elemento ContextMap.**](windowsribbon-element-contextmap.md)
 
-En el ejemplo siguiente se muestra el marcado básico para el elemento [**ContextPopup**](windowsribbon-element-contextpopup.md) .
+En el ejemplo siguiente se muestra el marcado básico para el [**elemento ContextPopup.**](windowsribbon-element-contextpopup.md)
 
 
 ```C++
@@ -160,9 +160,9 @@ En el ejemplo siguiente se muestra el marcado básico para el elemento [**Contex
 
 ### <a name="code"></a>Código
 
-Para invocar un elemento emergente de contexto, se llama al método [**IUIContextualUI:: ShowAtLocation**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicontextualui-showatlocation) cuando la ventana de nivel superior de la aplicación de cinta recibe una notificación de CONTEXTMENU de WM \_ .
+Para invocar un elemento Popup de contexto, se llama al método [**IUIContextualUI::ShowAtLocation**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicontextualui-showatlocation) cuando la ventana de nivel superior de la aplicación ribbon recibe una notificación \_ CONTEXTMENU de WM.
 
-En este ejemplo se muestra cómo controlar la \_ notificación de CONTEXTMENU de WM en el método WndProc () de la aplicación de cinta.
+En este ejemplo se muestra cómo controlar la notificación WM CONTEXTMENU en el \_ método WndProc() de la aplicación Ribbon.
 
 
 ```C++
@@ -177,11 +177,11 @@ case WM_CONTEXTMENU:
 
 
 
-En el ejemplo siguiente se muestra cómo una aplicación de la cinta de opciones puede mostrar el elemento emergente de contexto en una ubicación de pantalla específica mediante el método [**IUIContextualUI:: ShowAtLocation**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicontextualui-showatlocation) .
+En el ejemplo siguiente se muestra cómo una aplicación de cinta de opciones puede mostrar context popup en una ubicación de pantalla específica mediante el [**método IUIContextualUI::ShowAtLocation.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicontextualui-showatlocation)
 
-GetCurrentContext () tiene un valor de `cmdContextMap` tal y como se define en el ejemplo de marcación anterior.
+GetCurrentContext() tiene un valor de `cmdContextMap` tal como se define en el ejemplo de marcado anterior.
 
-g \_ pApplication es una referencia a la interfaz [**IUIFramework**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiframework) .
+g \_ pApplication es una referencia a la [**interfaz IUIFramework.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiframework)
 
 
 ```C++
@@ -207,27 +207,27 @@ HRESULT ShowContextualUI(POINT& ptLocation, HWND hWnd)
 
 
 
-La referencia a [**IUIContextualUI**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicontextualui) se puede liberar antes de que se descarte el elemento emergente de contexto, tal como se muestra en el ejemplo anterior. Sin embargo, se debe liberar la referencia en algún momento para evitar pérdidas de memoria.
+La referencia a [**IUIContextualUI**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicontextualui) se puede liberar antes de que se descarte context popup, como se muestra en el ejemplo anterior. Sin embargo, la referencia debe liberarse en algún momento para evitar pérdidas de memoria.
 
 > [!Caution]  
-> El Mini-Toolbar tiene un efecto de atenuación integrado que se basa en la proximidad del puntero del mouse. Por esta razón, se recomienda que el Mini-Toolbar se muestre lo más cerca posible del puntero del mouse. De lo contrario, debido a los mecanismos de presentación conflictivos, es posible que el Mini-Toolbar no se represente de la manera esperada.
+> El Mini-Toolbar tiene un efecto de atenuación integrado que se basa en la proximidad del puntero del mouse. Por este motivo, se recomienda que el Mini-Toolbar se muestre lo más cerca posible del puntero del mouse. De lo contrario, debido a los mecanismos de visualización en conflicto, Mini-Toolbar no se representará según lo previsto.
 
- 
+ 
 
-## <a name="context-popup-properties"></a>Propiedades de elemento emergente de contexto
+## <a name="context-popup-properties"></a>Propiedades emergentes de contexto
 
-No hay claves de propiedad asociadas al control emergente de contexto.
+No hay claves de propiedad asociadas al control Context Popup.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Biblioteca de controles de Windows Ribbon Framework](windowsribbon-controls-entry.md)
+[Windows Biblioteca de controles del marco de opciones](windowsribbon-controls-entry.md)
 </dt> <dt>
 
-[Ejemplo de ContextPopup](windowsribbon-contextpopupsample.md)
+[Ejemplo contextPopup](windowsribbon-contextpopupsample.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

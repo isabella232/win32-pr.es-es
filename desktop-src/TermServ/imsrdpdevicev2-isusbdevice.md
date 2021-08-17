@@ -4,9 +4,9 @@ description: Especifica si el dispositivo es para el redireccionamiento USB.
 ms.assetid: df4c9764-ad96-4f35-9537-3890293a944c
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad IsUSBDevice
-- Propiedad IsUSBDevice Servicios de Escritorio remoto, interfaz IMsRdpDeviceV2
-- Servicios de Escritorio remoto de la interfaz IMsRdpDeviceV2, propiedad IsUSBDevice
+- Propiedad IsUSBDevice Servicios de Escritorio remoto
+- Propiedad IsUSBDevice Servicios de Escritorio remoto , interfaz IMsRdpDeviceV2
+- Interfaz IMsRdpDeviceV2 Servicios de Escritorio remoto , propiedad IsUSBDevice
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3741972fdd81887713e75ed5b596e0ba1a10fd3f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e03e2572912487cb924f65350dbdd7818d07d2a7b172d18cb28fab87335a00dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138568"
 ---
-# <a name="imsrdpdevicev2isusbdevice-property"></a>IMsRdpDeviceV2:: IsUSBDevice (propiedad)
+# <a name="imsrdpdevicev2isusbdevice-property"></a>Propiedad IMsRdpDeviceV2::IsUSBDevice
 
 Especifica si el dispositivo es para el redireccionamiento USB.
 
@@ -44,7 +44,7 @@ HRESULT get_IsUSBDevice(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**true** si el dispositivo es para el redireccionamiento USB; en caso contrario, **false**.
+**true** si el dispositivo es para el redireccionamiento USB; de lo contrario, **false**.
 
 ## <a name="requirements"></a>Requisitos
 

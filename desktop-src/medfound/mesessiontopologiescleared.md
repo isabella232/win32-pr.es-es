@@ -1,29 +1,29 @@
 ---
-description: 'La inicia la sesión de medios cuando el método IMFMediaSession:: ClearTopologies se completa de forma asincrónica.'
+description: Lo genera la sesión multimedia cuando el método IMFMediaSession::ClearTopologies se completa de forma asincrónica.
 ms.assetid: 2017d13b-8dc2-48f9-a21e-7b826e174edf
-title: Evento MESessionTopologiesCleared (Mfobjects. h)
+title: Evento MESessionTopologiesCleared (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 551e98607a8d23d9333527337bbd7d038ed0b340
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cee6b9107f6584de3f9621aeaecc95ffb6bf7bbb8741e59d5e32d3efe33d5ae6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119357125"
 ---
 # <a name="mesessiontopologiescleared-event"></a>Evento MESessionTopologiesCleared
 
-La inicia la sesión de medios cuando el método [**IMFMediaSession:: ClearTopologies**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-cleartopologies) se completa de forma asincrónica.
+Lo genera la sesión multimedia cuando el [**método IMFMediaSession::ClearTopologies**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-cleartopologies) se completa de forma asincrónica.
 
 ## <a name="event-values"></a>Valores de evento
 
-Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) son los siguientes.
+Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluyen lo siguiente.
 
 
 
 | VARTYPE              | Descripción                           |
 |----------------------|---------------------------------------|
-| VT \_ vacío<br/> | Sin datos del evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Sin datos del evento.<br/> <br/> |
 
 
 
@@ -33,9 +33,9 @@ Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desk
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desk
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> </dl>
 
  

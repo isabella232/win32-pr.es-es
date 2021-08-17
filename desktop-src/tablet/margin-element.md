@@ -1,7 +1,7 @@
 ---
 description: Define las líneas de margen dibujadas en la página.
 ms.assetid: c3047706-affd-4feb-9d48-cfb4c7dd6fa0
-title: Margin(Elemento)
+title: Elemento Margin
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: b0ff764585919ff144ebc25ac568caf1af74410a2f337beb03d5ce484f7d1abe
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119350445"
 ---
-# <a name="margin-element"></a>Margin(Elemento)
+# <a name="margin-element"></a>Elemento Margin
 
 Define las líneas de margen dibujadas en la página.
 

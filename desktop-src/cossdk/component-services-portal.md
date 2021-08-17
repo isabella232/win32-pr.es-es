@@ -1,40 +1,40 @@
 ---
 description: Extiende las aplicaciones escritas mediante tecnologías basadas en COM.
 ms.assetid: b21a6b08-c17c-4fcc-bc60-39037bc9902f
-title: COM+ (servicios de componentes)
+title: COM+ (Servicios de componentes)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b778c31957ddfe3f71db23b2f5be2a3ee681fde0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 02f582096e7f14dc6c415459284e809d4a84098b4e36a143d4e5bc2735605ede
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128987"
 ---
-# <a name="com-component-services"></a>COM+ (servicios de componentes)
+# <a name="com-component-services"></a>COM+ (Servicios de componentes)
 
 ## <a name="purpose"></a>Propósito
 
-COM+ es una evolución del modelo de objetos componentes (COM) de Microsoft y de Microsoft Transaction Server (MTS). COM+ se basa en y extiende las aplicaciones escritas mediante COM, MTS y otras tecnologías basadas en COM. COM+ controla muchas de las tareas de administración de recursos que tenía antes de programar, como la asignación de subprocesos y la seguridad. COM+ también hace que las aplicaciones sean más escalables proporcionando agrupación de subprocesos, agrupación de objetos y activación de objetos Just-in-Time. COM+ también ayuda a proteger la integridad de los datos al proporcionar compatibilidad con las transacciones, incluso si una transacción abarca varias bases de datos a través de una red.
+COM+ es una evolución de Microsoft Component Object Model (COM) y Microsoft Transaction Server (MTS). COM+ se basa en aplicaciones escritas con COM, MTS y otras tecnologías basadas en COM y amplía sus aplicaciones. COM+ controla muchas de las tareas de administración de recursos que antes tenía que programar, como la asignación de subprocesos y la seguridad. COM+ también hace que las aplicaciones sea más escalables al proporcionar agrupación de subprocesos, agrupación de objetos y activación de objetos Just-In-Time. COM+ también ayuda a proteger la integridad de los datos proporcionando compatibilidad con transacciones, incluso si una transacción abarca varias bases de datos a través de una red.
 
 ## <a name="where-applicable"></a>Donde sea aplicable
 
-COM+ se puede usar para desarrollar aplicaciones distribuidas críticas para la empresa para Windows.
+COM+ se puede usar para desarrollar aplicaciones distribuidas y críticas para toda la empresa para Windows.
 
-Si es administrador del sistema, instalará, implementará y configurará las aplicaciones COM+ y sus componentes. Si es un programador de aplicaciones, escribirá componentes y los integrará como aplicaciones. Si es un proveedor de herramientas, va a desarrollar o modificar herramientas para que funcionen en el entorno de COM+.
+Si es administrador del sistema, instalará, implementará y configurará aplicaciones COM+ y sus componentes. Si es programador de aplicaciones, escribirá componentes e los integrará como aplicaciones. Si es proveedor de herramientas, desarrollará o modificará herramientas para que funcionen en el entorno com+.
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-COM+ está diseñado principalmente para los desarrolladores de Microsoft Visual C++ y Microsoft Visual Basic.
+COM+ está diseñado principalmente para desarrolladores de Microsoft Visual C++ y Microsoft Visual Basic.
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 
-La versión 1,5 de COM+ se incluye en Windows a partir de Windows XP y Windows Server 2003. La versión 1,0 de COM+ se incluye en Windows 2000.
+COM+ versión 1.5 se incluye en Windows a partir de Windows XP y Windows Server 2003. COM+ versión 1.0 se incluye en Windows 2000.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [Novedades de COM+ 1,5](what-s-new-in-com--1-5.md)
--   [Información general sobre desarrolladores de COM+](com--developers-overview.md)
+-   [Novedades de COM+ 1.5](what-s-new-in-com--1-5.md)
+-   [Introducción a los desarrolladores de COM+](com--developers-overview.md)
 -   [Servicios COM+](com--services.md)
 -   [Tareas generales de COM+](com--general-tasks.md)
 -   [Referencia de COM+](com--reference.md)

@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Métodos IWbemRefresher
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6900c77930ebbe5e48f61b688bb70511351b650d
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 24fae4e364fad535ffa0e779b4f237abaeeef57f8b10d51220c152abc2ec74cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105697948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131287"
 ---
 # <a name="iwbemrefresher-methods"></a>Métodos IWbemRefresher
 
-La interfaz [**IWbemRefresher**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemrefresher) expone los métodos siguientes.
+La [**interfaz IWbemRefresher**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemrefresher) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

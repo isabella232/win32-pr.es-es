@@ -26,7 +26,7 @@ Derecho extendido usado por directiva de grupo motor para determinar si un GPO s
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |--------------|--------------------------------------|
 | CN           | Aplicar directiva de grupo                   |
 | Display-Name | Aplicar directiva de grupo                   |
@@ -47,7 +47,7 @@ Derecho extendido usado por directiva de grupo motor para determinar si un GPO s
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------------|---------------------------------------------------------------------|
 | Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 | Localization-Display-ID | 47                                                                  |
@@ -58,7 +58,7 @@ Derecho extendido usado por directiva de grupo motor para determinar si un GPO s
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------------|---------------------------------------------------------------------|
 | Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 | Localization-Display-ID | 47                                                                  |
@@ -69,7 +69,7 @@ Derecho extendido usado por directiva de grupo motor para determinar si un GPO s
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------------|---------------------------------------------------------------------|
 | Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 | Localization-Display-ID | 47                                                                  |
@@ -80,7 +80,7 @@ Derecho extendido usado por directiva de grupo motor para determinar si un GPO s
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------------|---------------------------------------------------------------------|
 | Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 | Localization-Display-ID | 47                                                                  |
@@ -91,7 +91,7 @@ Derecho extendido usado por directiva de grupo motor para determinar si un GPO s
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------------|---------------------------------------------------------------------|
 | Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 | Localization-Display-ID | 47                                                                  |
@@ -102,7 +102,7 @@ Derecho extendido usado por directiva de grupo motor para determinar si un GPO s
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------------|---------------------------------------------------------------------|
 | Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 | Localization-Display-ID | 47                                                                  |

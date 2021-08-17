@@ -1,5 +1,5 @@
 ---
-title: Métodos IDCompositionScaleTransform3D SetCenterX (Dcomp. h)
+title: Métodos SetCenterX de IDCompositionScaleTransform3D (Dcomp.h)
 description: Cambia o anima el valor de la propiedad CenterX de una transformación de escala 3D.
 ms.assetid: 959F8530-D2D5-46BC-9F29-F1DFC8029C12
 keywords:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: f1a86bc4fcd4c92ba65c8238f93c932a104ffa62
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d6e435efff94e2e837d93bc35cc08e397cb4b4ae215563f476733f2b72efe7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118839"
 ---
-# <a name="idcompositionscaletransform3dsetcenterx-methods"></a>IDCompositionScaleTransform3D:: SetCenterX (métodos)
+# <a name="idcompositionscaletransform3dsetcenterx-methods"></a>Métodos IDCompositionScaleTransform3D::SetCenterX
 
-Cambia o anima el valor de la propiedad CenterX de una transformación de escala 3D. La propiedad CenterX especifica la coordenada x del punto sobre el que se realiza el ajuste de escala.
+Cambia o anima el valor de la propiedad CenterX de una transformación de escala 3D. La propiedad CenterX especifica la coordenada x del punto sobre el que se realiza el escalado.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Cambia o anima el valor de la propiedad CenterX de una transformación de escala
 
 | Método                                                                                                          | Descripción                                            |
 |:----------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------|
-| [**SetCenterX (float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setcenterx(float))                                     | Cambia el valor de la propiedad CenterX.<br/>  |
-| [**SetCenterX (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setcenterx(idcompositionanimation)) | Anima el valor de la propiedad CenterX.<br/> |
+| [**SetCenterX(float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setcenterx(float))                                     | Cambia el valor de la propiedad CenterX.<br/>  |
+| [**SetCenterX(IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setcenterx(idcompositionanimation)) | Anima el valor de la propiedad CenterX.<br/> |
 
 
 
@@ -40,15 +40,15 @@ Cambia o anima el valor de la propiedad CenterX de una transformación de escala
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Dcomp. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Dcomp. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows solo 8 \[ aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2012 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
