@@ -1,11 +1,11 @@
 ---
-title: Player. error (evento)
-description: El evento de error se produce cuando hay una condición de error.
+title: Evento Player.Error
+description: El evento Error se produce cuando hay una condición de error.
 ms.assetid: 1e418a56-ae81-4ff0-b721-3390be08970d
 keywords:
-- Evento de error de Windows Media Player
-- Evento de error Windows Media Player, clase Player
-- Clase de reproductor Windows Media Player, evento de error
+- Evento de error Reproductor de Windows Media
+- Evento de error Reproductor de Windows Media , clase Player
+- Player class Reproductor de Windows Media , Error event
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a99411773994ad012155eea5a203ed341d50b460
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6a7e4642eef19b4edc4b1aa5bc75022a307d279d0d60482af0c7e2f0a9368c06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134818"
 ---
-# <a name="playererror-event"></a>Player. error (evento)
+# <a name="playererror-event"></a>Evento Player.Error
 
-El evento de **error** se produce cuando hay una condición de error.
+El **evento Error** se produce cuando hay una condición de error.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ Este evento no devuelve un valor.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se crea un controlador de eventos para mostrar el texto de Descripción del primer error en la cola de errores. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se crea un controlador de eventos para mostrar el texto de descripción del primer error en la cola de errores. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -70,7 +70,7 @@ alert(errDesc);
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -79,10 +79,10 @@ alert(errDesc);
 
 <dl> <dt>
 
-[**ErrorItem. errorDescription**](erroritem-errordescription.md)
+[**ErrorItem.errorDescription**](erroritem-errordescription.md)
 </dt> <dt>
 
-[**Error. Item**](error-item.md)
+[**Error.item**](error-item.md)
 </dt> <dt>
 
 [**Objeto Player**](player-object.md)

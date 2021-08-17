@@ -1,8 +1,8 @@
 ---
-description: Representa una propiedad de dispositivo PnP que se compone de una matriz de \_ elementos SecurityDescriptor de Win32.
+description: Representa una propiedad de dispositivo PnP que consta de una matriz de elementos \_ SecurityDescriptor de Win32.
 ms.assetid: EDE24CDA-50C9-49C0-842E-C68891426AD6
 ms.tgt_platform: multiple
-title: Win32_PnPDevicePropertySecurityDescriptorArray (clase)
+title: Win32_PnPDevicePropertySecurityDescriptorArray clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,16 +19,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 550290a19c275108d52472129084b80ef81b71e3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8024dccf49d6ade3fb7d7345e814beb12db66540369cb8031f518c2629945b4c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971905"
 ---
-# <a name="win32_pnpdevicepropertysecuritydescriptorarray-class"></a>\_Clase Win32 PnPDevicePropertySecurityDescriptorArray
+# <a name="win32_pnpdevicepropertysecuritydescriptorarray-class"></a>Clase Win32 \_ PnPDevicePropertySecurityDescriptorArray
 
-Representa una propiedad de dispositivo PnP que se compone de una matriz de elementos [**\_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) .
+Representa una propiedad de dispositivo PnP que consta de una matriz de [**elementos \_ SecurityDescriptor de Win32.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -57,10 +57,10 @@ La **clase \_ PnPDevicePropertySecurityDescriptorArray de Win32** tiene estas pr
 
 <dl> <dt>
 
-**Data**
+**Datos**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **[**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)**
+Tipo de datos: **[**matriz \_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -70,7 +70,7 @@ Valor de propiedad.
 
 </dd> <dt>
 
-**ID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -94,13 +94,13 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Valor del par de Name-Value de claves que identifica la propiedad de **datos** .
+Valor del par de Name-Value clave que identifica la **propiedad** Data.
 
 Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 </dd> <dt>
 
-**Clave**
+**Keyname**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -109,7 +109,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del par de Name-Value de claves que identifica la propiedad de **datos** .
+Nombre del par de Name-Value clave que identifica la **propiedad** Data.
 
 Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
@@ -124,7 +124,7 @@ Tipo de datos: **Uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de la propiedad de **datos** .
+Tipo de la **propiedad** Data.
 
 Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
@@ -225,7 +225,7 @@ Los valores posibles son.
 
 <span id="Guid"></span><span id="guid"></span><span id="GUID"></span>
 
-**GUID** (13)
+**Guid** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -319,7 +319,7 @@ Los valores posibles son.
 **Reserved**
 
 
-</dt> <dd>26 –</dd> <dt>
+</dt> <dd>26–4097</dd> <dt>
 
 <span id="SByteArray"></span><span id="sbytearray"></span><span id="SBYTEARRAY"></span>
 
@@ -337,14 +337,14 @@ Los valores posibles son.
 
 <span id="Int16Array"></span><span id="int16array"></span><span id="INT16ARRAY"></span>
 
-**, Int16array** (4100)
+**Int16Array** (4100)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="UInt16Array"></span><span id="uint16array"></span><span id="UINT16ARRAY"></span>
 
-**, Uint16array** (4101)
+**UInt16Array** (4101)
 
 
 </dt> <dd></dd> <dt>
@@ -477,7 +477,7 @@ Los valores posibles son.
 
 <span id="Unknown_-_check_in_devpropdef.h"></span><span id="unknown_-_check_in_devpropdef.h"></span><span id="UNKNOWN_-_CHECK_IN_DEVPROPDEF.H"></span>
 
-**Unknown-check en devpropdef. h** (4120)
+**Desconocido: check in devpropdef.h** (4120)
 
 
 </dt> <dd></dd> <dt>
@@ -494,7 +494,7 @@ Los valores posibles son.
 **Reserved**
 
 
-</dt> <dd>8218:4294967295</dd> </dl>
+</dt> <dd>8218–4294967295</dd> </dl>
 
 </dd> </dl>
 
@@ -504,10 +504,10 @@ Los valores posibles son.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>Cimwin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -516,7 +516,7 @@ Los valores posibles son.
 
 <dl> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> <dt>
 
 [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md)

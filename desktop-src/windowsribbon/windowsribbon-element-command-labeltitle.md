@@ -1,9 +1,9 @@
 ---
-title: Command. LabelTitle (propiedad)
+title: Propiedad Command.LabelTitle
 description: Representa un título de etiqueta.
 ms.assetid: 97378ec3-7988-4e39-9cf5-c382b246c5c9
 keywords:
-- Command. LabelTitle (propiedad) cinta de Windows
+- Command.LabelTitle, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed6d6c72ddd60cca63834fdcf21cf8f8b726ad22
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c44995d3f17b165c38f9fe7490a33e5d140c8d2b375d5d6b625bb00e3228b21e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810795"
 ---
-# <a name="commandlabeltitle-property"></a>Command. LabelTitle (propiedad)
+# <a name="commandlabeltitle-property"></a>Propiedad Command.LabelTitle
 
 Representa un título de etiqueta.
 
@@ -41,7 +41,7 @@ No hay atributos.
 
 | Elemento                                                   | Descripción                                   |
 |-----------------------------------------------------------|-----------------------------------------------|
-| [**String@**](windowsribbon-element-string.md)<br/> | Puede aparecer como máximo una vez<br/> <br/> |
+| [**String**](windowsribbon-element-string.md)<br/> | Puede producirse como máximo una vez<br/> <br/> |
 
 
 
@@ -55,31 +55,31 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse al menos una vez para cada [**comando**](windowsribbon-element-command.md).
+Puede producirse como máximo una vez para cada [**comando**](windowsribbon-element-command.md).
 
-**Command. LabelTitle** puede contener un valor de tipo *xs: String* restringido a cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.
+**Command.LabelTitle puede** contener un valor de tipo *xs:string* restringido a cualquier secuencia de caracteres, incluidos los espacios en blanco y los caracteres de salto de línea.
 
 > [!Note]  
-> Use la referencia de caracteres XML del juego de caracteres universal (UCS) `&#xA;` para especificar un salto de línea.
+> Use la referencia de caracteres XML de juego de caracteres universales (UCS) `&#xA;` para especificar un salto de línea.
 
  
 
-La longitud máxima es sin límite.
+La longitud máxima no está desenlazada.
 
-Si no se proporciona ningún valor para **Command. LabelTitle**, se requiere el elemento secundario [**String**](windowsribbon-element-string.md) .
+Si no se proporciona ningún valor para **Command.LabelTitle**, se [**requiere**](windowsribbon-element-string.md) el elemento secundario String.
 
 > [!Note]  
-> Si **Command. LabelTitle** contiene un valor y un elemento secundario de [**cadena**](windowsribbon-element-string.md) , la **cadena** tiene prioridad.
+> Si **Command.LabelTitle contiene** un valor y un elemento secundario [**String,**](windowsribbon-element-string.md) **String** tiene prioridad.
 
  
 
-**Command. LabelTitle** solo admite la alineación izquierda.
+**Command.LabelTitle solo** admite la alineación izquierda.
 
-Si un comando se expone a través de un elemento de menú y el valor de la [ \_ \_ etiqueta](windowsribbon-reference-properties-uipkey-label.md) **Command. LabelTitle** o UI PKEY contiene una letra precedida por un símbolo de y comercial, como se muestra en el ejemplo siguiente, esta letra se trata como un KeyTip y una tecla de aceleración para ese comando por el marco de la cinta de opciones.
+Si un comando se expone a través de un elemento de menú y el valor de **Command.LabelTitle** o UI [ \_ PKEY \_ Label](windowsribbon-reference-properties-uipkey-label.md) contiene una letra precedida de una y comercial, como se muestra en el ejemplo siguiente, esta letra se trata como una información sobre teclas y un acelerador de teclado para ese comando por el marco de la cinta de opciones.
 
 
 ```XML
@@ -92,7 +92,7 @@ Si un comando se expone a través de un elemento de menú y el valor de la [ \_ 
 
 
 
-Para mostrar una y comercial en una etiqueta, escape la designación de carácter especial con un signo de y comercial ( `&&` ), tal y como se muestra en el ejemplo siguiente.
+Para mostrar una y comercial en una etiqueta, escape la designación de caracteres especiales con una y comercial doble ( ) como se muestra `&&` en el ejemplo siguiente.
 
 
 ```XML
@@ -107,7 +107,7 @@ Para mostrar una y comercial en una etiqueta, escape la designación de carácte
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado de un elemento [**Command**](windowsribbon-element-command.md) con una declaración **Command. LabelTitle** .
+En el ejemplo siguiente se muestra el marcado de un [**elemento Command**](windowsribbon-element-command.md) con una **declaración Command.LabelTitle.**
 
 
 ```XML
@@ -137,8 +137,8 @@ En el ejemplo siguiente se muestra el marcado de un elemento [**Command**](windo
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -146,7 +146,7 @@ En el ejemplo siguiente se muestra el marcado de un elemento [**Command**](windo
 
 <dl> <dt>
 
-[\_Etiqueta PKEY de IU \_](windowsribbon-reference-properties-uipkey-label.md)
+[UI \_ PKEY \_ Label](windowsribbon-reference-properties-uipkey-label.md)
 </dt> </dl>
 
  

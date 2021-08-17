@@ -43,7 +43,7 @@ HRESULT TrackInputRect(
 *prcInput* \[ out\]
 </dt> <dd>
 
-Nuevo rectángulo de ventana de entrada después de actualizar la asignación entre la ventana y las coordenadas del digitalizador.
+Nuevo rectángulo de ventana de entrada después de actualizar la asignación entre las coordenadas de ventana y digitalizador.
 
 </dd> </dl>
 
@@ -70,7 +70,7 @@ Llame a este método cada vez que cambie la ubicación de la ventana en la panta
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
@@ -78,7 +78,7 @@ Llame a este método cada vez que cambie la ubicación de la ventana en la panta
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

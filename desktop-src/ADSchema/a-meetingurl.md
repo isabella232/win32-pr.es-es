@@ -26,7 +26,7 @@ Dirección web de la reunión.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | meetingURL                                                                       |
 | Ldap-Display-Name | meetingURL                                                                       |
@@ -52,14 +52,14 @@ Dirección web de la reunión.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | False                                   |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Falso                                   |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
@@ -73,14 +73,14 @@ Dirección web de la reunión.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | False                                   |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Falso                                   |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
@@ -94,14 +94,14 @@ Dirección web de la reunión.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | False                                   |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Falso                                   |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
@@ -115,14 +115,14 @@ Dirección web de la reunión.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | False                                   |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Falso                                   |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
@@ -136,14 +136,14 @@ Dirección web de la reunión.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | False                                   |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Falso                                   |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
@@ -157,14 +157,14 @@ Dirección web de la reunión.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | False                                   |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Falso                                   |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |

@@ -27,7 +27,7 @@ Vínculo hacia atrás para el atributo Has-Master-NCs. Nombre distintivo de sus 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|-----------------------------------------|
 | CN                | Mastered-By                             |
 | Ldap-Display-Name | masteredBy                              |
@@ -54,14 +54,14 @@ Vínculo hacia atrás para el atributo Has-Master-NCs. Nombre distintivo de sus 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 77                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -75,14 +75,14 @@ Vínculo hacia atrás para el atributo Has-Master-NCs. Nombre distintivo de sus 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 77                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -96,14 +96,14 @@ Vínculo hacia atrás para el atributo Has-Master-NCs. Nombre distintivo de sus 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 77                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -117,14 +117,14 @@ Vínculo hacia atrás para el atributo Has-Master-NCs. Nombre distintivo de sus 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 77                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -138,14 +138,14 @@ Vínculo hacia atrás para el atributo Has-Master-NCs. Nombre distintivo de sus 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 77                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -159,14 +159,14 @@ Vínculo hacia atrás para el atributo Has-Master-NCs. Nombre distintivo de sus 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 77                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -180,14 +180,14 @@ Vínculo hacia atrás para el atributo Has-Master-NCs. Nombre distintivo de sus 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 77                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |

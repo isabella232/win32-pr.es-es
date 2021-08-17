@@ -1,5 +1,5 @@
 ---
-description: 'Método Reset de la Msvm_ShutdownComponent clase : solicita un restablecimiento.'
+description: 'Método reset de la Msvm_ShutdownComponent clase : solicita un restablecimiento.'
 ms.assetid: cdd14090-4ea1-4547-b8a5-fd40f7e494f5
 title: Método Reset de la Msvm_ShutdownComponent clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 77c651ce429764edba069be21b246a8623cd0e76
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 39142fbc4596c44b8d6b028656ac172b78b66f8fc31590e49b0b666ccd64d528
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950394"
 ---
 # <a name="reset-method-of-the-msvm_shutdowncomponent-class"></a>Método Reset de la clase \_ ShutdownComponent de Msvm
 
@@ -53,7 +53,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -63,7 +63,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

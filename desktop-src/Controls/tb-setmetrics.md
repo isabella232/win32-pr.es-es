@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_SETMETRICS (commctrl. h)
+title: TB_SETMETRICS mensaje (Commctrl.h)
 description: Establece las métricas de un control de barra de herramientas.
 ms.assetid: 60e35d65-6291-4a55-a4cf-19b5b1db8a65
 keywords:
-- TB_SETMETRICS controles de mensajes de Windows
+- TB_SETMETRICS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5320ecc85f0a44c4c80868ae5699b051e1ac1781
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1c152d0fd1bfef894b1d54db768984697ebef2c9b82ac6d2663401363a338b3c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967915"
 ---
-# <a name="tb_setmetrics-message"></a>\_Mensaje SETMETRICS TB
+# <a name="tb_setmetrics-message"></a>Mensaje \_ DE TB SETMETRICS
 
 Establece las métricas de un control de barra de herramientas.
 
@@ -35,18 +35,18 @@ Establece las métricas de un control de barra de herramientas.
 *lParam* 
 </dt> <dd>
 
-Estructura [**TBMETRICS**](/windows/desktop/api/Commctrl/ns-commctrl-tbmetrics) que contiene las métricas de la barra de herramientas que se van a establecer.
+[**Estructura TBMETRICS que**](/windows/desktop/api/Commctrl/ns-commctrl-tbmetrics) contiene las métricas de la barra de herramientas que se establecerán.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto.
+No se usa el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -56,9 +56,9 @@ No se utiliza el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

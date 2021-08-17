@@ -1,14 +1,14 @@
 ---
-title: Propiedad AudioCaptureRedirectionMode de IMsRdpClientAdvancedSettings7
+title: Propiedad IMsRdpClientAdvancedSettings7 AudioCaptureRedirectionMode
 description: Especifica o recupera un valor booleano que indica si el dispositivo de entrada de audio predeterminado se redirige desde el cliente a la sesión remota.
 ms.assetid: e75add5e-4652-41a7-b2cb-2c60793cd079
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad AudioCaptureRedirectionMode
-- Propiedad AudioCaptureRedirectionMode Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad AudioCaptureRedirectionMode
-- Propiedad AudioCaptureRedirectionMode Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad AudioCaptureRedirectionMode
+- Propiedad AudioCaptureRedirectionMode Servicios de Escritorio remoto
+- Propiedad AudioCaptureRedirectionMode Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad AudioCaptureRedirectionMode
+- Propiedad AudioCaptureRedirectionMode Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad AudioCaptureRedirectionMode
 topic_type:
 - apiref
 api_name:
@@ -24,20 +24,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c752315067ed70103da2e048e9e8f613665ae919
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2be6083a3b609a558830b9e7b837acce179ac7a098315b2bfeeacca800bfdc85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138798"
 ---
-# <a name="imsrdpclientadvancedsettings7audiocaptureredirectionmode-property"></a>IMsRdpClientAdvancedSettings7:: AudioCaptureRedirectionMode (propiedad)
+# <a name="imsrdpclientadvancedsettings7audiocaptureredirectionmode-property"></a>Propiedad IMsRdpClientAdvancedSettings7::AudioCaptureRedirectionMode
 
 Especifica o recupera un valor booleano que indica si el dispositivo de entrada de audio predeterminado se redirige desde el cliente a la sesión remota.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -54,7 +54,7 @@ HRESULT get_AudioCaptureRedirectionMode(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un **valor \_ booleano Variant** que especifica si se redirige la captura de audio. Especifique **Variant \_ true** si desea que se redirija la captura de audio.
+Valor **VARIANT \_ BOOL** que especifica si se redirige la captura de audio. Especifique **VARIANT \_ TRUE** si desea que se redirija la captura de audio.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ Un **valor \_ booleano Variant** que especifica si se redirige la captura de aud
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                             |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                                |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>           |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>           |

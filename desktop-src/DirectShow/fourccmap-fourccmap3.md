@@ -51,7 +51,7 @@ Puntero al identificador único global **(GUID).**
 
 ## <a name="remarks"></a>Comentarios
 
-Si este objeto se construye con el código **FOURCC,** se crea un **GUID** para que coincida con él. Si este objeto se crea con un **GUID existente,** el **valor FOURCC** del objeto se establece en cero. A partir de entonces, el **valor FOURCC** se puede establecer o recuperar mediante las funciones miembro [**SetFOURCC**](fourccmap-setfourcc.md) y [**GetFOURCC,**](fourccmap-getfourcc.md) respectivamente.
+Si este objeto se construye con el código **FOURCC,** se crea un **GUID** para que coincida con él. Si este objeto se crea con un **GUID existente,** el **valor FOURCC** del objeto se establece en cero. A partir de entonces, **el valor FOURCC** se puede establecer o recuperar mediante las funciones miembro [**SetFOURCC**](fourccmap-setfourcc.md) y [**GetFOURCC,**](fourccmap-getfourcc.md) respectivamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,7 +60,7 @@ Si este objeto se construye con el código **FOURCC,** se crea un **GUID** para 
 | Encabezado  | Fourcc.h (incluir Secuencias.h) |
 | Biblioteca | Strmbase.lib (compilaciones comerciales); Strmbasd.lib (compilaciones de depuración) |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

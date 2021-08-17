@@ -1,9 +1,9 @@
 ---
-title: Controls. isAvailable
-description: La propiedad isAvailable indica si un tipo especificado de información está disponible o se puede realizar una acción especificada. | Controls. isAvailable
+title: Controls.isAvailable
+description: La propiedad isAvailable indica si un tipo de información especificado está disponible o se puede realizar una acción especificada. | Controls.isAvailable
 ms.assetid: d2bfaa67-eac9-4fc4-9424-636ddb4b35d6
 keywords:
-- Windows Media Player Controls. isAvailable
+- Controls.isAvailable Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61afa07596a55208be63bd29759fd5f9f3e10170
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 502343b7654241a00e9efb33acc6f5de842c6fb6bad650f24839a5fe7febf9b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135748"
 ---
-# <a name="controlsisavailable"></a>Controls. isAvailable
+# <a name="controlsisavailable"></a>Controls.isAvailable
 
-La propiedad **isavailable** indica si un tipo especificado de información está disponible o se puede realizar una acción especificada.
+La **propiedad isAvailable** indica si un tipo de información especificado está disponible o se puede realizar una acción especificada.
 
 ``` syntax
 player.controls.isAvailable(
@@ -41,17 +41,17 @@ player.controls.isAvailable(
 
 | String          | Descripción                                                                                                                                                       |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| currentItem     | Determina si el usuario puede establecer la propiedad **CurrentItem** .                                                                                                 |
+| Currentitem     | Determina si el usuario puede establecer la **propiedad currentItem.**                                                                                                 |
 | currentMarker   | Determina si el usuario puede buscar un marcador específico.                                                                                                        |
 | currentPosition | Determina si el usuario puede buscar una posición específica en el archivo. Algunos archivos no admiten búsquedas.                                                       |
-| fastForward     | Determina si el archivo admite el reenvío rápido y si se puede invocar la funcionalidad. Muchos tipos de archivo (o secuencias en directo) no admiten fastForward. |
-| fastReverse     | Determina si el archivo admite fastReverse y si se puede invocar esa funcionalidad. Muchos tipos de archivo (o secuencias en directo) no admiten fastReverse.     |
-| Siguiente            | Determina si el usuario puede buscar la siguiente entrada en una lista de reproducción.                                                                                             |
-| pause           | Determina si el método **PAUSE** está disponible.                                                                                                             |
-| reproducción            | Determina si el método **Play** está disponible.                                                                                                              |
+| fastForward     | Determina si el archivo admite el reenvío rápido y si se puede invocar esa funcionalidad. Muchos tipos de archivo (o transmisiones en vivo) no admiten fastForward. |
+| fastReverse     | Determina si el archivo admite fastReverse y si se puede invocar esa funcionalidad. Muchos tipos de archivo (o transmisiones en vivo) no admiten fastReverse.     |
+| Siguiente            | Determina si el usuario puede buscar a la siguiente entrada de una lista de reproducción.                                                                                             |
+| pause           | Determina si el método **pause** está disponible.                                                                                                             |
+| Jugar            | Determina si el **método de reproducción** está disponible.                                                                                                              |
 | previous        | Determina si el usuario puede buscar la entrada anterior en una lista de reproducción.                                                                                         |
-| paso            | Determina si el método **Step** está disponible durante la reproducción.                                                                                              |
-| stop            | Determina si el método de **detención** está disponible.                                                                                                              |
+| paso            | Determina si el método **step** está disponible durante la reproducción.                                                                                              |
+| stop            | Determina si el **método stop** está disponible.                                                                                                              |
 
 
 
@@ -59,11 +59,11 @@ player.controls.isAvailable(
 
 ## <a name="return-values"></a>Valores devueltos
 
-Este método devuelve un valor **booleano** .
+Este método devuelve un **valor booleano.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea un elemento de botón HTML que busca la posición inicial del elemento multimedia actual. El código JScript usa **isavailable** para comprobar que el archivo admite la operación de búsqueda. El objeto **Player** se creó con ID = "Player".
+En el ejemplo siguiente se crea un elemento HTML BUTTON que busca en la posición inicial del elemento multimedia actual. El JScript usa **isAvailable para** comprobar que el archivo admite la operación de búsqueda. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -83,7 +83,7 @@ En el ejemplo siguiente se crea un elemento de botón HTML que busca la posició
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/>                               |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/>                               |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

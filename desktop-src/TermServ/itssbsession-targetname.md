@@ -5,8 +5,8 @@ ms.assetid: 5ab4cdd6-9f5f-4253-9b80-6cc35cff8b79
 ms.tgt_platform: multiple
 keywords:
 - Propiedad TargetName Servicios de Escritorio remoto
-- Propiedad TargetName Servicios de Escritorio remoto, interfaz ITsSbSession
-- Servicios de Escritorio remoto de la interfaz ITsSbSession, propiedad TargetName
+- Propiedad TargetName Servicios de Escritorio remoto , interfaz ITsSbSession
+- Interfaz ITsSbSession Servicios de Escritorio remoto , propiedad TargetName
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc703a32faedd250115da0b95215e620a8c15e19
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cfbc1e26aa4bf55a59b6405921d49e6b1aafa14e63a1e487caca9a7c036b1524
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138318"
 ---
-# <a name="itssbsessiontargetname-property"></a>ITsSbSession:: TargetName (propiedad)
+# <a name="itssbsessiontargetname-property"></a>Propiedad ITsSbSession::TargetName
 
 Recupera el nombre del destino en el que se creó esta sesión.
 
@@ -44,7 +44,7 @@ HRESULT get_TargetName(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un puntero a una variable **BSTR** que recibe el nombre del destino en el que se creó esta sesión.
+Puntero a una variable **BSTR** que recibe el nombre del destino en el que se creó esta sesión.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Un puntero a una variable **BSTR** que recibe el nombre del destino en el que se
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                       |
-| IDL<br/>                      | <dl> <dt>Sbtsv. idl</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Sbtsv.idl</dt> </dl> |
 
 
 

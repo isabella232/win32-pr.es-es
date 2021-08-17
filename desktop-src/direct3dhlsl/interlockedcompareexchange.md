@@ -1,9 +1,9 @@
 ---
-title: Función InterlockedCompareExchange (referencia de HLSL)
+title: Función InterlockedCompareExchange (referencia hlsl)
 description: Compara de forma atómica el destino con el valor de comparación. Si son idénticos, el destino se sobrescribe con el valor de entrada. El valor original se establece en el valor original del destino.
 ms.assetid: 85d1ba58-8e79-41cd-abd6-7ffff59839c7
 keywords:
-- InterlockedCompareExchange de función HLSL
+- Función HLSL interlockedCompareExchange
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 74bc189996752d754599bf4547e8baa4d9fb74cc
-ms.sourcegitcommit: 12e9b14501d51641b690ee0cf764e2b91eb9a140
+ms.openlocfilehash: 46cf8c3fb0e3bc0b21c5bf8bc3d946851ce213b765731518d252495250071228
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "104997025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119259"
 ---
-# <a name="interlockedcompareexchange-function-hlsl-reference"></a>Función InterlockedCompareExchange (referencia de HLSL)
+# <a name="interlockedcompareexchange-function-hlsl-reference"></a>Función InterlockedCompareExchange (referencia hlsl)
 
 Compara de forma atómica el destino con el valor de comparación. Si son idénticos, el destino se sobrescribe con el valor de entrada. El valor original se establece en el valor original del destino.
 
@@ -28,10 +28,10 @@ Compara de forma atómica el destino con el valor de comparación. Si son idént
 
 ``` syntax
 void InterlockedCompareExchange(
-  in  R dest,
-  in  T compare_value,
-  in  T value,
-  out T original_value
+  in  R dest,
+  in  T compare_value,
+  in  T value,
+  out T original_value
 );
 ```
 
@@ -39,7 +39,7 @@ void InterlockedCompareExchange(
 
 <dl> <dt>
 
-*dest* \[ de\]
+*dest* \[ En\]
 </dt> <dd>
 
 Tipo: **R**
@@ -53,11 +53,11 @@ Dirección de destino.
 
 Tipo: **T**
 
-El valor de comparación.
+Valor de comparación.
 
 </dd> <dt>
 
-*valor* \[ de de\]
+*value* \[ En\]
 </dt> <dd>
 
 Tipo: **T**
@@ -66,7 +66,7 @@ Valor de entrada.
 
 </dd> <dt>
 
-*\_ valor original* \[ fuera\]
+*valor \_ de salida* \[ original\]
 </dt> <dd>
 
 Tipo: **T**
@@ -79,16 +79,16 @@ El valor original.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Compara atómicamente el valor al que hace referencia *dest* con *el \_ valor de Compare*, almacena el *valor* en la ubicación a la que hace referencia *dest* si los valores coinciden, devuelve el valor original de *dest* en el *\_ valor original*. Esta operación solo se puede realizar en recursos con tipo **int** o **uint** y variables de memoria compartida. Hay dos usos posibles para esta función. El primero es cuando R es un tipo de variable de memoria compartida. En este caso, la función realiza la operación en el registro de memoria compartida al que hace referencia *dest*. El segundo escenario es cuando R es un tipo de variable de recurso. En este escenario, la función realiza la operación en la ubicación del recurso a la que hace referencia *dest*. Esta operación solo está disponible cuando R es legible y grabable.
+Compara de forma atómica el valor al que  hace referencia *dest* con el valor compare *, \_* almacena el valor en la ubicación a la que hace referencia *dest* si los valores coinciden, devuelve el valor original *de dest* en el valor *original. \_* Esta operación solo se puede realizar en recursos con tipo **int** **o uint** y variables de memoria compartida. Hay dos usos posibles para esta función. La primera es cuando R es un tipo de variable de memoria compartida. En este caso, la función realiza la operación en el registro de memoria compartida al que hace referencia *dest*. El segundo escenario es cuando R es un tipo de variable de recurso. En este escenario, la función realiza la operación en la ubicación de recursos a la que hace referencia *dest*. Esta operación solo está disponible cuando R es legible y grabable.
 
 > [!Note]  
-> Si llama a **InterlockedCompareExchange** en un bucle for o [**While**](dx-graphics-hlsl-while.md) del sombreador [**de**](dx-graphics-hlsl-for.md) cálculo, para compilar correctamente, debe usar el atributo **\[ Allow \_ UAV \_ Condition \]** en dicho bucle.
+> Si llama [**a**](dx-graphics-hlsl-for.md) **InterlockedCompareExchange** [](dx-graphics-hlsl-while.md) en un bucle de sombreador for o while, para compilar correctamente, debe usar el atributo **\[ allow \_ uav \_ condition \]** en ese bucle.
 
- 
+ 
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -96,25 +96,25 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 5](d3d11-graphics-reference-sm5.md) y versiones posteriores | sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
 
 
 
- 
+ 
 
 Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      |  x   |  x     |  x       | x     | x       |
 
 
 
- 
+ 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -124,9 +124,9 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

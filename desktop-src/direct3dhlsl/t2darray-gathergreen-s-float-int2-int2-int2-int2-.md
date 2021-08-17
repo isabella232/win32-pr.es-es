@@ -104,9 +104,9 @@ Tipo: **TemplateType**
 
 Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las muestras de textura se pueden usar para la interpolación bilineal.
+Los ejemplos de textura se pueden usar para la interpolación bilineal.
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
@@ -120,11 +120,11 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Métodos gatherGreen](texture2darray-gathergreen.md)
+[Métodos GatherGreen](texture2darray-gathergreen.md)
 </dt> </dl>
 
  

@@ -16,14 +16,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 86f6d695afa2e05c87a076cf88ed8023e9416beb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 18b85c95121513057aad24fd4534a552cdb219973ea46a9a3360870dabc39ba8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069785"
 ---
-# <a name="registry_v0_typegroup1-class"></a>Clase \_ \_ TypeGroup1 del Registro V0
+# <a name="registry_v0_typegroup1-class"></a>Clase \_ \_ TypeGroup1 de Registry V0
 
 Esta clase es la clase de tipo de evento para los eventos del Registro.
 
@@ -102,7 +102,7 @@ Nombre de la clave del Registro.
 
 </dd> <dt>
 
-Status
+Estado
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint32**
@@ -122,14 +122,14 @@ Valor NTSTATUS de la operación del Registro.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

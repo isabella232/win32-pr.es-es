@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración SpaceHintsGrbit'
-title: Enumeración SpaceHintsGrbit
+description: 'Más información sobre: Enumeración SpaceHintsGrbit'
+title: SpaceHintsGrbit (enumeración)
 TOCTitle: SpaceHintsGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.SpaceHintsGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.spacehintsgrbit(v=EXCHG.10)
@@ -44,21 +44,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ffc78aab444c73f7ff0eae7ff0eaa84e134ee9bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a2ee172355b48e64f62f2b18477373269d81ae060460ad34ff45dbad33a91b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978535"
 ---
-# <a name="spacehintsgrbit-enumeration"></a>Enumeración SpaceHintsGrbit
+# <a name="spacehintsgrbit-enumeration"></a>SpaceHintsGrbit (enumeración)
 
 Opciones para [JET_SPACEHINTS](./jet-spacehints-class.md).
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -88,23 +88,23 @@ public enum SpaceHintsGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>SpaceHintUtilizeParentSpace</td>
-<td>Esto cambia la Directiva de asignación interna para obtener espacio jerárquicamente desde el elemento primario inmediato del árbol B.</td>
+<td>Esto cambia la directiva de asignación interna para obtener espacio jerárquicamente del elemento primario inmediato de un árbol B.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CreateHintAppendSequential</td>
-<td>Este bit habilitará el comportamiento de anexar División para aumentar según la dinámica de crecimiento de la tabla (establecida por cbMinExtent, ulGrowth, cbMaxExtent).</td>
+<td>Este bit permitirá que el comportamiento de división append crezca según la dinámica de crecimiento de la tabla (establecido por cbMinExtent, ulGrowth, cbMaxExtent).</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>CreateHintHotpointSequential</td>
-<td>Este bit permitirá que el comportamiento de división Hotpoint crezca según la dinámica de crecimiento de la tabla (establecida por cbMinExtent, ulGrowth, cbMaxExtent).</td>
+<td>Este bit permitirá que el comportamiento de división de punto de acceso rápido crezca según la dinámica de crecimiento de la tabla (establecida por cbMinExtent, ulGrowth, cbMaxExtent).</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -114,12 +114,12 @@ public enum SpaceHintsGrbit
 <tr class="even">
 <td></td>
 <td>RetrieveHintTableScanForward</td>
-<td>Al establecer esta opción, el cliente indica que el examen secuencial hacia delante es el patrón de uso predominante de esta tabla.</td>
+<td>Al establecer esto, el cliente indica que el examen secuencial hacia delante es el patrón de uso predominante de esta tabla.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RetrieveHintTableScanBackward</td>
-<td>Al establecer esta opción, el cliente indica que el examen secuencial hacia atrás es el patrón de uso predominante de esta tabla.</td>
+<td>Al establecer esto, el cliente indica que el examen secuencial hacia atrás es el patrón de uso predominante de esta tabla.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -134,7 +134,7 @@ public enum SpaceHintsGrbit
 <tr class="even">
 <td></td>
 <td>DeleteHintTableSequential</td>
-<td>La aplicación espera que esta tabla se limpie en orden secuencialmente (de la clave más baja a la más alta).</td>
+<td>La aplicación espera que esta tabla se limpie en orden secuencialmente (de la clave más baja a la clave más alta).</td>
 </tr>
 </tbody>
 </table>
@@ -144,4 +144,4 @@ public enum SpaceHintsGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

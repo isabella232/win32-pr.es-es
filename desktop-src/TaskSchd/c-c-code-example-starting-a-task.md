@@ -1,19 +1,19 @@
 ---
-title: Ejemplo de código de C/C++ que inicia una tarea
-description: En este ejemplo se intenta ejecutar una tarea existente. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+title: Ejemplo de código de C/C++ al iniciar una tarea
+description: En este ejemplo se intenta ejecutar una tarea existente. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 ms.assetid: e4f38f8a-3488-4802-913b-f627ecca8bb2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c9fa9ba112b642aa5e14abc3b408c1536c527d9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e11abcbd4581db306b8ca60f478e9b2927e531b7dd2fd8461742f4dc1c93a169
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139628"
 ---
-# <a name="cc-code-example-starting-a-task"></a>Ejemplo de código de C/C++: iniciar una tarea
+# <a name="cc-code-example-starting-a-task"></a>Ejemplo de código de C/C++: Iniciar una tarea
 
-En este ejemplo se intenta ejecutar una tarea existente. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+En este ejemplo se intenta ejecutar una tarea existente. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 
 
 ```C++
@@ -101,12 +101,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

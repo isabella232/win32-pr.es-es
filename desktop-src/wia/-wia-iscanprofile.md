@@ -38,10 +38,10 @@ La **interfaz IScanProfile** tiene estos métodos.
 
 | Método                                                     | Descripción                                                                                                                                         |
 |:-----------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetAllPropIDs**](-wia-iscanprofile-getallpropids.md)   | Obtiene todos los IDs de propiedad disponibles en un perfil.<br/>                                                                                            |
+| [**GetAllPropIDs**](-wia-iscanprofile-getallpropids.md)   | Obtiene todos los iDs de propiedad disponibles en un perfil.<br/>                                                                                            |
 | [**GetDeviceID**](-wia-iscanprofile-getdeviceid.md)       | Devuelve el identificador del dispositivo.<br/>                                                                                                            |
 | [**GetGUID**](-wia-iscanprofile-getguid.md)               | Devuelve el GUID del perfil.<br/>                                                                                                         |
-| [**GetItem**](-wia-iscanprofile-getitem.md)               | Obtiene el GUID de la categoría del elemento WIA 2.0 al que está asociado el perfil.<br/>                                                   |
+| [**GetItem**](-wia-iscanprofile-getitem.md)               | Obtiene el GUID de la categoría del elemento de WIA 2.0 al que está asociado el perfil.<br/>                                                   |
 | [**GetName**](-wia-iscanprofile-getname.md)               | Obtiene el nombre descriptivo del perfil.<br/>                                                                                                   |
 | [**GetNumPropIDS**](-wia-iscanprofile-getnumpropids.md)   | Obtiene el número de identificaciónes de propiedad de un perfil.<br/>                                                                                            |
 | [**Getproperty**](-wia-iscanprofile-getproperty.md)       | Obtiene el valor de las propiedades secundarias especificadas en el `<Properties>` elemento de un perfil de examen.<br/>                                            |
@@ -56,7 +56,7 @@ La **interfaz IScanProfile** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Cualquier [**dispositivo IWiaItem2**](-wia-iwiaitem2.md) puede tener un perfil de examen. Sin embargo, **los elementos IWiaItem2** de los tipos WIA CATEGORY FINISHED FILE y \_ \_ \_ WIA CATEGORY ROOT no pueden \_ tener \_ perfiles.
 
@@ -64,17 +64,17 @@ Si un perfil de examen se guarda mediante el método [**IScanProfile::Save,**](-
 
 Para crear una instancia de un **objeto IScanProfile,** use el [**método IScanProfileMgr::CreateProfile.**](-wia-iscanprofilemgr-createprofile.md) Para obtener una referencia a un perfil de examen que ya se ha guardado en el disco, use el [**método IScanProfileMgr::OpenProfile.**](-wia-iscanprofilemgr-openprofile.md)
 
-Todos los perfiles de examen tienen los siguientes elementos: `<ProfileGUID>, <DeviceID>, <ProfileName>, <WiaItem>` y `<Properties>` . El perfil predeterminado de un dispositivo también tiene un `<Default>` elemento .
+Todos los perfiles de examen tienen los siguientes elementos: `<ProfileGUID>, <DeviceID>, <ProfileName>, <WiaItem>` , y `<Properties>` . El perfil predeterminado de un dispositivo también tiene un `<Default>` elemento .
 
 Los `<ProfileGUID>` elementos y no se pueden cambiar después de crear el `<DeviceID>` perfil. Los valores del elemento `<ProfileName>` y del elemento se pueden cambiar después de crear el `<WiaItem>` perfil. El `<Default>` elemento se puede agregar o eliminar. Esto se puede hacer mediante programación con los métodos [**IScanProfile::SetName**](-wia-iscanprofile-setname.md), [**IScanProfile::SetItem**](-wia-iscanprofile-setitem.md)e [**IScanProfileMgr::SetDefault.**](-wia-iscanprofilemgr-setdefault.md) Los usuarios también pueden cambiar estas propiedades mediante el [**método IScanProfileUI::ScanProfileDialog.**](-wia-iscanprofileui-scanprofiledialog.md)
 
-El `<Properties>` elemento contiene elementos `<Property>` secundarios. Úselos para agregar cualquier elemento o propiedad de dispositivo de WIA 2.0 al perfil. También puede desarrollar sus propios hijos de `<Property>` imagen. Esto hace que el esquema de perfil de examen sea extensible. (Para obtener más información sobre cómo extender el esquema, vea [Definir](-wia-defining-custom-properties.md)propiedades personalizadas , [**IScanProfile::GetProperty**](-wia-iscanprofile-getproperty.md)e [**IScanProfile::SetProperty).**](-wia-iscanprofile-setproperty.md)
+El `<Properties>` elemento contiene elementos `<Property>` secundarios. Úselos para agregar cualquier propiedad de dispositivo o elemento de WIA 2.0 al perfil. También puede desarrollar sus propios hijos de aducción de `<Property>` imágenes. Esto hace que el esquema de perfil de examen sea extensible. (Para obtener más información sobre cómo extender el esquema, vea [Definición](-wia-defining-custom-properties.md)de propiedades personalizadas , [**IScanProfile::GetProperty**](-wia-iscanprofile-getproperty.md)e [**IScanProfile::SetProperty).**](-wia-iscanprofile-setproperty.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
@@ -82,7 +82,7 @@ El `<Properties>` elemento contiene elementos `<Property>` secundarios. Úselos 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

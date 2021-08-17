@@ -1,48 +1,48 @@
 ---
 title: Supervisión de aplicaciones
-description: En este tema se describe cómo se pueden usar los elementos de la biblioteca de administración de Intercambio dinámico de datos para crear una aplicación que supervise la actividad de intercambio dinámico de datos en el sistema.
+description: En este tema se describe cómo se pueden usar los elementos de datos dinámicos Exchange Management Library para crear una aplicación que supervisa la actividad de intercambio dinámico de datos en el sistema.
 ms.assetid: 6705dc8e-d1e9-4057-9fa2-42cd5cf818af
 keywords:
-- Interfaz de usuario de Windows, Intercambio dinámico de datos (DDE)
-- Intercambio dinámico de datos (DDE), supervisar aplicaciones
-- DDE (Intercambio dinámico de datos), supervisar aplicaciones
-- intercambio de datos, Intercambio dinámico de datos (DDE)
-- Interfaz de usuario de Windows, biblioteca de administración de Intercambio dinámico de datos (DDEML)
-- Biblioteca de administración de Intercambio dinámico de datos (DDEML), supervisar aplicaciones
-- DDEML (biblioteca de administración de Intercambio dinámico de datos), supervisar aplicaciones
-- intercambio de datos, biblioteca de administración de Intercambio dinámico de datos (DDEML)
+- Windows Interfaz de usuario,datos dinámicos Exchange (DDE)
+- datos dinámicos Exchange (DDE),aplicaciones de supervisión
+- DDE (datos dinámicos Exchange),aplicaciones de supervisión
+- intercambio de datos, datos dinámicos Exchange (DDE)
+- Windows Interfaz de usuario,datos dinámicos Exchange Management Library (DDEML)
+- datos dinámicos Exchange Management Library (DDEML), aplicaciones de supervisión
+- DDEML (datos dinámicos Exchange management library),monitoring applications
+- intercambio de datos,datos dinámicos Exchange Management Library (DDEML)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1f75685d4caa15e519485b2d8b37983faa35366
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8fbf6db1faa765378ea2b22b1146de770e9c94b14cf7e9e511ab862be48369c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128557"
 ---
 # <a name="monitoring-applications"></a>Supervisión de aplicaciones
 
-Los elementos de la API de la biblioteca de administración de Intercambio dinámico de datos (DDEML) se pueden usar para crear una aplicación que supervise la actividad de Intercambio dinámico de datos (DDE) en el sistema. Al igual que cualquier aplicación DDEML, una aplicación de supervisión DDE contiene una función de devolución de llamada DDE. DDEML notifica a la función de devolución de llamada DDE de una aplicación de supervisión cada vez que se produce un evento DDE, pasando información sobre el evento a la función de devolución de llamada. Normalmente, la aplicación muestra la información en una ventana o la escribe en un archivo.
+Los elementos de API de datos dinámicos Exchange Management Library (DDEML) se pueden usar para crear una aplicación que supervisa datos dinámicos Exchange actividad de datos dinámicos Exchange (DDE) en el sistema. Al igual que cualquier aplicación DDEML, una aplicación de supervisión de DDE contiene una función de devolución de llamada de DDE. DDEML notifica a la función de devolución de llamada DDE de una aplicación de supervisión cada vez que se produce un evento DDE y pasa información sobre el evento a la función de devolución de llamada. Normalmente, la aplicación muestra la información en una ventana o la escribe en un archivo.
 
-Para recibir notificaciones de DDEML, una aplicación se debe haber registrado como monitor DDE especificando la \_ marca de monitor APPCLASS en una llamada a la función [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) . En esta misma llamada, la aplicación puede especificar una o más marcas de monitor para indicar los tipos de eventos para los que el método DDEML debe notificar a la función de devolución de llamada de la aplicación. Una aplicación puede especificar las marcas de supervisión siguientes:
+Para recibir notificaciones de DDEML, una aplicación debe registrarse como monitor de DDE especificando la marca APPCLASS MONITOR en una llamada a la función \_ [**DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) En esta misma llamada, la aplicación puede especificar una o varias marcas de supervisión para indicar los tipos de eventos para los que la DDEML va a notificar a la función de devolución de llamada de la aplicación. Una aplicación puede especificar las siguientes marcas de supervisión:
 
 
 
 | Marca          | Descripción                                                                                                                                                                                                                                         |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_devoluciones de llamada MF | Notifica a la función de devolución de llamada cada vez que se envía una transacción a cualquier función de devolución de llamada DDE del sistema.                                                                                                                                           |
-| MF \_ conv      | Notifica a la función de devolución de llamada cada vez que se establece o finaliza una conversación.                                                                                                                                                                |
-| errores de MF \_    | Notifica a la función de devolución de llamada cada vez que se produce un error DDEML.                                                                                                                                                                                       |
-| \_información de HSZ MF \_ | Notifica a la función de devolución de llamada cada vez que una aplicación DDEML crea, libera o incrementa el recuento de uso de un identificador de cadena o cada vez que se libera un identificador de cadena como resultado de una llamada a la función [**DdeUninitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeuninitialize) . |
-| \_vínculos MF     | Notifica a la función de devolución de llamada cada vez que se inicia o finaliza un bucle de notificación.                                                                                                                                                                         |
-| MF \_ POSTMSGS  | Notifica a la función de devolución de llamada cada vez que el sistema o una aplicación envía un mensaje DDE.                                                                                                                                                           |
-| MF \_ SENDMSGS  | Notifica a la función de devolución de llamada cada vez que el sistema o una aplicación envía un mensaje DDE.                                                                                                                                                           |
+| DEVOLUCIONES DE LLAMADA DE MF \_ | Notifica a la función de devolución de llamada cada vez que se envía una transacción a cualquier función de devolución de llamada DDE del sistema.                                                                                                                                           |
+| MF \_ CONV      | Notifica a la función de devolución de llamada cada vez que se establece o finaliza una conversación.                                                                                                                                                                |
+| ERRORES DE \_ MF    | Notifica a la función de devolución de llamada cada vez que se produce un error DDEML.                                                                                                                                                                                       |
+| MF \_ HSZ \_ INFO | Notifica a la función de devolución de llamada cada vez que una aplicación DDEML crea, libera o incrementa el recuento de uso de un identificador de cadena o cada vez que se libera un identificador de cadena como resultado de una llamada a la función [**DdeUninitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeuninitialize) |
+| VÍNCULOS \_ DE MF     | Notifica a la función de devolución de llamada cada vez que se inicia o finaliza un bucle advise.                                                                                                                                                                         |
+| MF \_ POSTMSGS  | Notifica a la función de devolución de llamada cada vez que el sistema o una aplicación publica un mensaje DDE.                                                                                                                                                           |
+| MF \_ SENDMSGS  | Notifica a la función de devolución de llamada cada vez que el sistema o una aplicación envían un mensaje DDE.                                                                                                                                                           |
 
 
 
- 
+ 
 
-En el ejemplo siguiente se muestra cómo registrar una aplicación de supervisión DDE para que su función de devolución de llamada DDE reciba notificaciones de todos los eventos DDE.
+En el ejemplo siguiente se muestra cómo registrar una aplicación de supervisión de DDE para que su función de devolución de llamada de DDE reciba notificaciones de todos los eventos DDE.
 
 
 ```
@@ -69,24 +69,24 @@ if (DdeInitialize(
 
 
 
-El DDEML informa a una aplicación de supervisión de un evento DDE mediante el envío de una transacción del [**\_ monitor XTYP**](xtyp-monitor.md) a la función de devolución de llamada DDE de la aplicación. Durante esta transacción, DDEML pasa una marca de monitor que especifica el tipo de evento DDE que se ha producido y un identificador a un objeto DDE que contiene información detallada sobre el evento. DDEML proporciona un conjunto de estructuras que la aplicación puede usar para extraer la información del objeto DDE. Existe una estructura correspondiente para cada tipo de evento DDE.
+DDEML informa a una aplicación de supervisión de un evento DDE mediante el envío de una transacción [**XTYP \_ MONITOR**](xtyp-monitor.md) a la función de devolución de llamada DDE de la aplicación. Durante esta transacción, DDEML pasa una marca de monitor que especifica el tipo de evento DDE que se ha producido y un identificador a un objeto DDE que contiene información detallada sobre el evento. DDEML proporciona un conjunto de estructuras que la aplicación puede usar para extraer la información del objeto DDE. Hay una estructura correspondiente para cada tipo de evento DDE.
 
 
 
 | Estructura                                  | Descripción                                                       |
 |--------------------------------------------|-------------------------------------------------------------------|
 | [**MONCBSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-moncbstruct)     | Contiene información sobre una transacción.                         |
-| [**MONCONVSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monconvstruct) | Contiene información acerca de una conversación.                        |
-| [**MONERRSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monerrstruct)   | Contiene información acerca del error de DDE más reciente.                  |
-| [**MONLINKSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monlinkstruct) | Contiene información sobre un bucle de notificación.                        |
+| [**MONCONVSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monconvstruct) | Contiene información sobre una conversación.                        |
+| [**MONERRSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monerrstruct)   | Contiene información sobre el error DDE más reciente.                  |
+| [**MONLINKSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monlinkstruct) | Contiene información sobre un bucle advise.                        |
 | [**MONHSZSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monhszstructa)   | Contiene información sobre un identificador de cadena.                       |
-| [**MONMSGSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monmsgstruct)   | Contiene información acerca de un mensaje DDE enviado o expuesto. |
+| [**MONMSGSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monmsgstruct)   | Contiene información sobre un mensaje DDE que se envió o publicó. |
 
 
 
- 
+ 
 
-En el ejemplo siguiente se muestra la función de devolución de llamada DDE de una aplicación de supervisión DDE que da formato a la información sobre cada evento de identificador de cadena y, a continuación, muestra la información en una ventana. La función utiliza la estructura [**MONHSZSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monhszstructa) para extraer la información del objeto DDE.
+En el ejemplo siguiente se muestra la función de devolución de llamada DDE de una aplicación de supervisión de DDE que da formato a información sobre cada evento de identificador de cadena y, a continuación, muestra la información en una ventana. La función usa la [**estructura MONHSZSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monhszstructa) para extraer la información del objeto DDE.
 
 
 ```
@@ -189,9 +189,9 @@ DWORD dwData2;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

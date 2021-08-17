@@ -4,16 +4,16 @@ description: Obtenga información sobre la propiedad Visible del objeto Command,
 ms.assetid: 80137e16-4646-4251-b1c0-bca39ff7a233
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af4efec1ad8a97d6412a560a81836273b93ebf2b
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 07ebc5dee52ff3ab388674bd844e476f0bcc768595b1ba5e69d3c3be5435553f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975465"
 ---
 # <a name="visible-property-command-object"></a>Propiedad Visible (objeto Command)
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
@@ -41,9 +41,9 @@ Devuelve o establece si el [**comando**](/windows/desktop/lwef/the-command-objec
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Establezca esta propiedad en **False** cuando quiera incluir la entrada de voz para sus propias interfaces sin que aparezcan en el menú emergente del carácter. Si establece [](/windows/desktop/lwef/the-command-object) la propiedad [**Caption**](caption-property.md) de un objeto Command en la cadena vacía (""), el texto del título no aparecerá en el menú emergente (por ejemplo, como una línea en blanco), independientemente de su configuración de propiedad [**Visible.**](visible-property.md)
+Establezca esta propiedad en **False** cuando quiera incluir la entrada de voz para sus propias interfaces sin que aparezcan en el menú emergente del carácter. Si establece [](/windows/desktop/lwef/the-command-object) la propiedad [**Caption**](caption-property.md) de un objeto Command en la cadena vacía (""), el texto del título no aparecerá en el menú emergente (por ejemplo, como una línea en blanco), independientemente de su valor de propiedad [**Visible.**](visible-property.md)
 
 El [**valor de**](visible-property.md) la propiedad Visible de la colección [**Commands**](/windows/desktop/lwef/the-command-object) primaria de un objeto [**Command**](/windows/desktop/lwef/the-commands-collection-object) no afecta al valor de propiedad **Visible** del **comando**.
 

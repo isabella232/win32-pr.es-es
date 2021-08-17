@@ -13,7 +13,7 @@ ms.locfileid: "118953204"
 ---
 # <a name="declaring-filter-information"></a>Declarar información de filtro
 
-El primer paso es declarar la información del filtro, si es necesario. DirectShow define las siguientes estructuras para describir filtros, pines y tipos de medios:
+El primer paso es declarar la información del filtro, si es necesario. DirectShow define las estructuras siguientes para describir filtros, pines y tipos de medios:
 
 
 
@@ -21,13 +21,13 @@ El primer paso es declarar la información del filtro, si es necesario. DirectSh
 |---------------------------------------------------------|-------------------------|
 | [**FILTRO DE \_ AMOVIESETUP**](amoviesetup-filter.md)       | Describe un filtro.     |
 | [**PIN de \_ AMOVIESETUP**](amoviesetup-pin.md)             | Describe un pin.        |
-| [**MEDIATYPE DE \_ AMOVIESETUP**](amoviesetup-mediatype.md) | Describe un tipo de medio. |
+| [**AMOVIESETUP \_ MEDIATYPE**](amoviesetup-mediatype.md) | Describe un tipo de medio. |
 
 
 
  
 
-Estas estructuras están anidadas. La estructura FILTER de **AMOVEIESETUP \_** tiene un puntero a una matriz de estructuras pin de **\_ AMOVIESETUP** y cada una de ellas tiene un puntero a una matriz de estructuras **\_ MEDIATYPE de AMOVEIESETUP.** Juntas, estas estructuras proporcionan suficiente información para que la [**interfaz IFilterMapper2**](/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2) busque un filtro. No son una descripción completa de un filtro. Por ejemplo, si el filtro crea varias instancias del mismo pin, debe declarar solo una estructura de PIN de [**AMOVIESETUP \_**](amoviesetup-pin.md) para ese pin. Además, no se requiere un filtro para admitir todas las combinaciones de tipos de medios que registra; ni es necesario registrar todos los tipos de medios que admite.
+Estas estructuras están anidadas. La estructura FILTER de **AMOVEIESETUP \_** tiene un puntero a una matriz de estructuras de PIN de **\_ AMOVIESETUP** y cada una de ellas tiene un puntero a una matriz de estructuras **\_ MEDIATYPE de AMOVEIESETUP.** Juntas, estas estructuras proporcionan información suficiente para que la [**interfaz IFilterMapper2**](/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2) busque un filtro. No son una descripción completa de un filtro. Por ejemplo, si el filtro crea varias instancias del mismo pin, debe declarar solo una estructura de PIN de [**AMOVIESETUP \_**](amoviesetup-pin.md) para ese pin. Además, no se requiere un filtro para admitir todas las combinaciones de tipos de medios que registra. ni es necesario registrar todos los tipos de medios que admite.
 
 Declare las estructuras de configuración como variables globales dentro del archivo DLL. En el ejemplo siguiente se muestra un filtro con un pin de salida:
 
@@ -63,13 +63,13 @@ AMOVIESETUP_FILTER sudFilterReg = {
 
 
 
-El nombre del filtro se declara como una variable global estática, porque se volverá a usar en otro lugar.
+El nombre del filtro se declara como una variable global estática, porque se usará de nuevo en otro lugar.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Registro de filtros DirectShow filtros](how-to-register-directshow-filters.md)
+[Cómo registrar filtros de DirectShow datos](how-to-register-directshow-filters.md)
 </dt> </dl>
 
  

@@ -33,7 +33,7 @@ ms.locfileid: "119454665"
 ---
 # <a name="esentinvaliddatabaseexception-class"></a>Clase EsentInvalidDatabaseException
 
-Clase base para JET_err. Excepciones invalidDatabase.
+Clase base para JET_err. Excepciones InvalidDatabase.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones invalidDatabase.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

@@ -1,19 +1,19 @@
 ---
-description: Indica si los medios de almacenamiento son extraíbles.
+description: Indica si el medio de almacenamiento es extraíble.
 ms.assetid: 32090053-5666-4562-b9f0-d6394bdb9801
-title: System. Storage. RemovableMedia
+title: Sistema. Storage. RemovableMedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd5278723e1755869168014ed799ccf098477679
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: d6b721f508f0c20ed4f847133d772ca971afda3d8feff87b7a97a33c842884cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104547414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095692"
 ---
-# <a name="systemstorageremovablemedia"></a>System. Storage. RemovableMedia
+# <a name="systemstorageremovablemedia"></a>Sistema. Storage. RemovableMedia
 
-Indica si los medios de almacenamiento son extraíbles.
+Indica si el medio de almacenamiento es extraíble.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Boolean
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

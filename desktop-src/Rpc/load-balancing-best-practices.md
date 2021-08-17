@@ -17,7 +17,7 @@ Se deben seguir varios procedimientos recomendados al configurar y configurar el
 
 En primer lugar, se debe establecer la seguridad en las llamadas LBS entrantes y salientes. Esto significa que ambas claves opcionales del Registro [NoSecurity](configuring-load-balancing.md) no deben estar presentes o deben establecerse en cero.
 
-En segundo lugar, se debe prestar atención a la solución de equilibrio de carga de front-end que se usa junto con la solución de equilibrio de carga de RPC. Por ejemplo, si el equilibrador de carga front-end usa un equilibrio round robin carga simple, debe existir un número impar de servidores en la granja de servidores. Esto es para mitigar la posibilidad de que todas las conexiones sean reenviadas y, por tanto, atendidas por el mismo servidor o servidores.
+En segundo lugar, se debe prestar atención a la solución de equilibrio de carga de front-end que se usa junto con la solución de equilibrio de carga de RPC. Por ejemplo, si el equilibrador de carga front-end usa un equilibrio round robin carga simple, debe existir un número impar de servidores en la granja de servidores. Esto es para mitigar la posibilidad de que todas las conexiones sean reenviadas y, por tanto, atendidas por el mismo servidor o servidor.
 
 Por motivos de seguridad, normalmente es conveniente tener un firewall que controle el acceso a los servidores proxy RPC. Si se emplea una solución de firewall basada en puertos, los puntos de conexión RPC deben ser estáticos para limitar el número de puertos que se abren en el firewall. En Windows Server 2008 y versiones posteriores de Windows, RPC proporciona un mecanismo para asignar un puerto estático a puntos de conexión dinámicos. Esto se logra a través de los comandos de firewall netsh de RPC. Un conjunto de comandos de ejemplo para establecer la interfaz LBS en el puerto estático de 3010 es:
 
@@ -34,7 +34,7 @@ netsh rpc filter add condition field=ep_value matchtype=equal data=w3010
 netsh rpc filter add filter
 ```
 
-El comando rpc netsh se puede usar para establecer un punto de conexión estático para cualquier interfaz dinámica o estática. Esto resulta útil al restringir el acceso a una máquina que ejecuta una solución de firewall basada en puertos. Si se Windows solución de firewall, la interfaz RPC se puede bloquear o habilitar sin tener que asignarla a un puerto específico. Para más información, consulte la referencia [de comandos del firewall de netsh rpc.](/previous-versions/windows/it-pro/windows-server-2003/cc784909(v=ws.10))
+El comando netsh rpc se puede usar para establecer un punto de conexión estático para cualquier interfaz dinámica o estática. Esto resulta útil al restringir el acceso a una máquina que ejecuta una solución de firewall basada en puertos. Si se Windows solución de firewall, la interfaz RPC se puede bloquear o habilitar sin tener que asignarla a un puerto específico. Para más información, consulte la referencia [de comandos del firewall de netsh RPC.](/previous-versions/windows/it-pro/windows-server-2003/cc784909(v=ws.10))
 
  
 

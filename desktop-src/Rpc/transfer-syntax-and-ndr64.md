@@ -1,22 +1,22 @@
 ---
-title: Sintaxis de transfer y NDR64
-description: El protocolo de conexión NDR, también conocido como sintaxis de transferencia, habilita las llamadas RPC para atravesar la red.
+title: Sintaxis de transferencia y QL64
+description: El protocolo de conexión LDA, también conocido como sintaxis de transferencia, permite que las llamadas RPC atraviese la red.
 ms.assetid: 30b3843a-172c-4d08-beed-c68bcb68daaf
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1dfec9bc1569ef9a42d0bc844c3b098736f714ab
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 433e68689ec4c960adbb43ddc19ec3e9e37765db57cfe6bf87c86c096720b771
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104077789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011233"
 ---
-# <a name="transfer-syntax-and-ndr64"></a>Sintaxis de transfer y NDR64
+# <a name="transfer-syntax-and-ndr64"></a>Sintaxis de transferencia y QL64
 
-El protocolo de conexión NDR, también conocido como sintaxis de transferencia, habilita las llamadas RPC para atravesar la red. El protocolo de conexión define la representación de conexión de una llamada RPC, como el orden en el que se serializan los miembros de datos, la alineación de los datos en la conexión, la información adicional incluida con los datos y otros problemas. El protocolo NDR64 es una extensión de la sintaxis de transferencia de NDR basada en 32 bits, creada específicamente para permitir que los desarrolladores que tienen como destino sistemas de 64 bits logren un rendimiento optimizado.
+El protocolo de conexión LDA, también conocido como sintaxis de transferencia, permite que las llamadas RPC atraviese la red. El protocolo de conexión define la representación de conexión de una llamada RPC, como el orden en que se serializan los miembros de datos, la alineación de los datos en la conexión, la información adicional incluida con los datos y otros problemas. El protocolo UNIX64 es una extensión de la sintaxis de transferencia de QL basada en 32 bits, creada específicamente para permitir que los desarrolladores que tienen como destino sistemas de 64 bits consigan un rendimiento optimizado.
 
-Las diferencias entre el formato de conexión de NDR y el formato de NDR64 se dirigen al tamaño diferente de los punteros en un entorno de 64 bits, así como a otros problemas. La mecánica de NDR64 se controla mediante RPC. Los desarrolladores solo necesitan usar el modificador de línea de comandos/[**Protocol**](/windows/desktop/Midl/-protocol)**All** MIDL para obtener las ventajas de NDR64 en plataformas de 64 bits. NDR64 solo está disponible en plataformas de 64 bits.
+Las diferencias entre el formato de conexión de MOUSE y el formato de conexión MOUSE64 abordan el diferente tamaño de los punteros en un entorno de 64 bits, así como otros problemas. Rpc controla la mecánica de RPC. Los desarrolladores solo necesitan usar [**el**](/windows/desktop/Midl/-protocol)modificador de línea de comandos **/all** MIDL para obtener las ventajas de UNIX64 en plataformas de 64 bits. UNIX64 solo está disponible en plataformas de 64 bits.
 
- 
+ 
 
- 
+ 

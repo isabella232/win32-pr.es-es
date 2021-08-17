@@ -95,11 +95,11 @@ Tipo: **HRESULT**
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Una aplicación invoca este método para crear un objeto de extensión que implementa una de las interfaces de extensión del controlador WIA 2.0. **IWiaItem2::GetExtension** almacena la dirección de la interfaz de extensión del objeto de extensión en el *parámetro riidExtensionInterface.* A continuación, la aplicación usa el puntero de interfaz para llamar a sus métodos.
 
-Las aplicaciones deben llamar [al método IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) en los punteros de interfaz que reciben a través del *parámetro riidExtensionInterface.*
+Las aplicaciones deben llamar [al método IUnknown::Release en](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) los punteros de interfaz que reciben a través del parámetro *riidExtensionInterface.*
 
 ## <a name="examples"></a>Ejemplos
 

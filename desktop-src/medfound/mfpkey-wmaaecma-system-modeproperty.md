@@ -31,11 +31,11 @@ VT \_ I4
 
 El valor de esta propiedad es un miembro de la [enumeración AEC \_ SYSTEM \_ MODE.](/windows/desktop/api/wmcodecdsp/ne-wmcodecdsp-aec_system_mode)
 
-La propiedad debe ser uno de los siguientes valores.
+La propiedad debe ser uno de los valores siguientes.
 
 
 
-| Valor | Descripción                                 |
+| Value | Descripción                                 |
 |-------|---------------------------------------------|
 | 0     | Modo solo de cancelación de eco de audio (AEC)     |
 | 2     | Modo de procesamiento de matriz de micrófonos (MAP) |
@@ -52,7 +52,7 @@ Debe establecer esta propiedad antes de usar el DSP de captura de voz. Después 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
@@ -60,7 +60,7 @@ Debe establecer esta propiedad antes de usar el DSP de captura de voz. Después 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

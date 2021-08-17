@@ -1,78 +1,78 @@
 ---
 title: Mantenimiento automático (Programador de tareas)
-description: La actividad de mantenimiento hace referencia a una aplicación o un proceso que ayuda a mantener el estado y el rendimiento de un equipo Windows.
+description: La actividad de mantenimiento hace referencia a una aplicación o proceso que ayuda a mantener el estado y el rendimiento de un Windows equipo.
 ms.assetid: 1D38341B-15AA-422F-AED1-647FCDE69E2E
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 456383eeb75c3b29bf575357d4b17d5f8a66234b
-ms.sourcegitcommit: 857e701bbd35004661bb047e1f24622af9ff1dd7
+ms.openlocfilehash: 43fe72159ac5fd14c2dcc80126e572fa1475ed52ffd5710b74621cf00ad40a39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "104421562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139308"
 ---
 # <a name="automatic-maintenance"></a>Mantenimiento automático
 
-La actividad de mantenimiento hace referencia a una aplicación o un proceso que ayuda a mantener el estado y el rendimiento de un equipo Windows. El mantenimiento incluye mantener actualizados el sistema operativo Windows (SO) y las aplicaciones, comprobar la seguridad y ejecutar exámenes de malware. La administración automática de Windows (WAM) es un conjunto de mejoras en la API de Programador de tareas que puede usar para vincular las aplicaciones a la programación de mantenimiento de Windows. En concreto, el WAM le permite agregar actividades que requieren una programación normal, pero que no tienen requisitos de tiempo exactos. En su lugar, WAM se basa en el sistema operativo para elegir el momento adecuado para activar la tarea a lo largo del día. El sistema elige esas horas en función de un impacto mínimo en el usuario, el rendimiento del equipo y la eficacia energética.
+La actividad de mantenimiento hace referencia a una aplicación o proceso que ayuda a mantener el estado y el rendimiento de un Windows equipo. El mantenimiento incluye mantener el Windows operativo (SO) y las aplicaciones actualizados, comprobar la seguridad y ejecutar exámenes en busca de malware. Windows Administración automática (WAM) es un conjunto de mejoras en la API de Programador de tareas que puede usar para vincular las aplicaciones a la programación de mantenimiento Windows aplicaciones. En concreto, WAM permite agregar actividades que requieren programación periódica, pero que no tienen requisitos de tiempo exactos. En su lugar, WAM se basa en el sistema operativo para elegir la hora adecuada para activar la tarea a lo largo del día. El sistema elige esas horas en función del impacto mínimo en el usuario, el rendimiento del equipo y la eficiencia energética.
 
-## <a name="how-scheduled-maintenance-works"></a>Cómo funciona el mantenimiento programado
+## <a name="how-scheduled-maintenance-works"></a>Funcionamiento del mantenimiento programado
 
-Programador de tareas tareas de mantenimiento son tareas oportunistas que se ejecutan cuando el equipo está inactivo y con corriente alterna. Uno de los principales objetivos de las tareas de mantenimiento es minimizar el impacto en el equipo mediante la programación de mantenimiento solo cuando el equipo está conectado a la corriente alterna e inactivo (es decir, cuando no se usa o se aleja del equipo). Hoy en día, la idea del mantenimiento es que el equipo trabaje con la mínima interrupción para el usuario. Por lo tanto, la hora de mantenimiento de estilo anterior (hablaremos más sobre esto en la sección reactivación **&mdash; diaria de mantenimiento automático** más adelante en este tema) se ha mejorado con el fin de aprovechar estos períodos inactivos. Aunque se puede seguir aprovechando la hora de mantenimiento, la ejecución del mantenimiento oportunista es mejor para el mantenimiento del sistema.
+Programador de tareas tareas de mantenimiento son tareas oportunistas que se ejecutan cuando la máquina está inactiva y con alimentación de CA. Uno de los principales objetivos de las tareas de mantenimiento es minimizar el impacto en el equipo mediante la programación del mantenimiento solo cuando el equipo está conectado a la alimentación de CA e inactivo (es decir, cuando no usa o ha salido de la máquina). En la actualidad, la idea de mantenimiento es que la máquina funcione con la menor interrupción para el usuario. Por lo tanto, la hora de mantenimiento **&mdash;** de estilo antiguo (se habla más sobre esto en la sección Reactivación diaria de mantenimiento automático más adelante en este tema) se ha mejorado para aprovechar estos períodos de inactividad. Aunque todavía se puede aprovechar la hora de mantenimiento, la ejecución del mantenimiento oportunista es mejor para el estado del sistema.
 
-Es posible que la tarea se encuentre en caso de que el equipo no dedique mucho tiempo a estar inactivos y con corriente alterna. Asegúrese de que el escenario seguirá proporcionando valor al usuario, incluso si se retrasa. Si el usuario está utilizando activamente el equipo, el sistema aplaza el mantenimiento hasta un momento posterior. El sistema también suspende cualquier tarea de mantenimiento en ejecución si el usuario vuelve a usar el equipo.
+Es posible que la tarea se haya quedado inactiva si una máquina no pasa mucho tiempo inactiva y con alimentación de CA. Asegúrese de que el escenario seguirá proporcionando valor al usuario, aunque se retrase. Si el usuario usa activamente la máquina, el sistema aplaza el mantenimiento hasta un momento posterior. El sistema también suspende cualquier tarea de mantenimiento en ejecución si el usuario vuelve a usar el equipo.
 
-El sistema reinicia una tarea de mantenimiento suspendida durante el siguiente período de inactividad; sin embargo, el sistema no suspenderá ninguna tarea marcada como crítica. En su lugar, el sistema permite que se complete una tarea crítica, independientemente de la acción del usuario.
+El sistema reinicia una tarea de mantenimiento suspendida durante el siguiente período de inactividad. sin embargo, el sistema no suspenderá ninguna tarea marcada como crítica. En su lugar, el sistema permite que se complete una tarea crítica, independientemente de la acción del usuario.
 
-Debido a la naturaleza de la programación, es posible que algunas tareas programadas no finalicen: quizás haya demasiados eventos programados para caber en la ventana de mantenimiento de una hora, o quizás el equipo simplemente no esté encendido. En tales casos, puede definir una tarea con una fecha límite. Una fecha límite se define como un período de tiempo periódico en el que el sistema debe realizar correctamente la tarea al menos una vez.
+Debido a la naturaleza de la programación, es posible que algunas tareas programadas no finalicen: quizás haya demasiados eventos programados para caber en la ventana de mantenimiento de una hora o quizás el equipo simplemente no se haya activado. En tales casos, puede definir una tarea con una fecha límite. Una fecha límite se define como un período de tiempo periódico en el que el sistema debe realizar correctamente la tarea al menos una vez.
 
-Si una tarea pierde una fecha límite, el programador de mantenimiento seguirá intentando ejecutar la tarea durante la ventana de mantenimiento. Además, el programador no se limitará a un límite de tiempo de 1 hora normal. En su lugar, el programador amplía la duración de la ventana de mantenimiento para completar la tarea retrasada.
+Si una tarea no cumple una fecha límite, el programador de mantenimiento seguirá intentando ejecutar la tarea durante la ventana de mantenimiento. Además, el programador no se limitará al límite de tiempo normal de 1 hora. En su lugar, el programador amplía la duración de la ventana de mantenimiento para completar la tarea retrasada.
 
-Una vez que el sistema completa la tarea (incluso con un código de error de error), el intento se considera correcto. Después de un intento correcto, Scheduler se restablece a la programación de mantenimiento normal e intentará realizar la tarea durante el siguiente período.
+Una vez que el sistema completa la tarea (incluso con un código de error), el intento se considera correcto. Después de un intento correcto, el programador se restablece a la programación de mantenimiento normal e intentará realizar la tarea durante el siguiente período.
 
-## <a name="automatic-maintenancemdashdaily-wakeup"></a>Activación diaria de mantenimiento automático &mdash;
+## <a name="automatic-maintenancemdashdaily-wakeup"></a>Reactivación diaria &mdash; de mantenimiento automático
 
-En Windows 7, una tarea de mantenimiento se ejecuta exclusivamente durante la *hora de mantenimiento*, el valor predeterminado es 3 AM y se puede configurar mediante Directiva de grupo. El equipo se reactivará del modo de espera, ejecutará las tareas de mantenimiento y volverá a entrar en suspensión. Esta sesión diaria se limitó a una duración máxima de 1 hora por intento. Esto permitiría que el sistema realizara el mantenimiento diariamente, a partir de las 3 AM de forma predeterminada. Tenga en cuenta que el usuario puede volver a programar la hora a la que se desencadena el mantenimiento mediante la configuración de estas opciones.
+En Windows 7, una tarea de mantenimiento se ejecuta exclusivamente durante la hora de mantenimiento *,* con un valor predeterminado de 3 a. m. y configurable a través de directiva de grupo. La máquina se reactivaría de modo de espera, ejecutaría tareas de mantenimiento y volvería a suspensión. Esta sesión diaria se limitó a una duración máxima de 1 hora por intento. Esto permitiría que el sistema realizara tareas de mantenimiento diariamente, empezando a las 3 a. m. de forma predeterminada. Tenga en cuenta que el usuario puede volver a programar la hora a la que se desencadena el mantenimiento mediante la configuración de estas opciones.
 
-Con la llegada de los equipos portátiles y el intenso enfoque en la duración de la batería, las máquinas ya no están configuradas para permitir la activación S3 en la mayoría de los casos y, por lo general, de Doze a S4 (hibernación) tan pronto como sea posible, para ahorrar batería. En respuesta a estos cambios, Programador de tareas (> Win7) ejecuta tareas de mantenimiento siempre que están pendientes y el equipo está inactivo y con corriente alterna.
+Con la llegada de los portátiles y el enfoque pesado en la duración de la batería, las máquinas ya no están configuradas para permitir la reactivación S3 en la mayoría de las circunstancias y, por lo general, Doze-To-S4 (hibernar) lo antes posible, para ahorrar batería. En respuesta a estos cambios, Programador de tareas (> Win7) ejecuta tareas de mantenimiento cada vez que se les debe, y la máquina está inactiva y con alimentación de CA.
 
-Esta configuración se puede configurar en el panel de control.
+Esta configuración se puede configurar en Panel de control.
 
-Abra el **Panel**  >  **de control sistema y**  >  **seguridad de seguridad y** mantenimiento  >  **mantenimiento automático**.
+Abra **Panel de control**  >  **Sistema y seguridad**  >  **Seguridad y mantenimiento**  >  **Mantenimiento automático**.
 
-Por lo tanto, en función de cómo se configuran las máquinas y las tareas, es posible que el comportamiento de la activación diaria no se produzca de la manera esperada debido a esta nueva configuración. En primer lugar, puede determinar si el equipo es compatible con S3 o compatible con CS (modo de espera conectado).
+Por lo tanto, en función de cómo estén configuradas las máquinas y las tareas, es posible que el comportamiento de reactivación diaria no se produzca hoy como se esperaba debido a esta nueva configuración. En primer lugar, puede determinar si la máquina es compatible con S3 o con CS (espera conectada).
 Para ello, abra un símbolo del sistema de Power Shell con privilegios elevados y ejecute el siguiente comando.
 
 ```console
 powercfg /a
 ```
 
-Hora de mantenimiento, si la máquina está configurada correctamente, sigue funcionando, pero si no es así,
-  - Compruebe la configuración del BIOS para la configuración de reactivación. 
-  - Compruebe si permitir temporizador de activación está habilitado en las opciones de energía.
-    Vaya a **Panel de control**  >  opciones **de hardware y sonido**  >  **Opciones de energía**  >  **Editar configuración del plan**  >  **Cambiar configuración avanzada de energía** > haga clic en **suspender**  >  **permitir temporizador de activación**.
+La hora de mantenimiento, si la máquina está configurada correctamente, sigue funcionando, pero si no es así,
+  - Compruebe la configuración del BIOS para wake settings (Configuración de reactivación). 
+  - Compruebe si Permitir temporizador de reactivación está habilitado en Opciones de energía.
+    Vaya a **Panel de control** Hardware and Sound Opciones de energía Edit Plan Configuración Change advanced power settings (Cambiar configuración avanzada de energía) > haga clic en Sleep Allow Wake Timer (Permitir temporizador  >    >    >    >     >  **de reactivación de suspensión).**
   - Compruebe si la tarea programada está configurada con lo siguiente.
-      * MaintenanceSettings: la tarea debe configurarse con período, fecha límite.
-      * Habilitada: la tarea debe estar habilitada.
+      * MaintenanceSettings: la tarea debe configurarse con Período, Fecha límite.
+      * Habilitado: la tarea debe estar habilitada.
       * WakeToRun: la tarea debe tener permiso para reactivar la máquina.
-  - Para programar las reactivaciones desde CS, el equipo debe ser compatible con AOAC.
-  - Para programar activaciones en máquinas S3,
-      * Compruebe si el equipo entró en S3 con corriente alterna.
-      * El sistema debe tener **habilitada la reactivación** en Directiva de grupo para el mantenimiento.
+  - Para programar reactivaciones desde CS, la máquina debe ser compatible con AOAC.
+  - Para programar reactivaciones en máquinas S3,
+      * Compruebe si la máquina entró en S3 en la alimentación de ca.
+      * El sistema debe tener **Wake Enabled en** directiva de grupo para mantenimiento.
  
-El modo de espera conectado es el estado del sistema que puede escribir un sistema compatible con AOAC.
+Espera conectada es el estado del sistema que puede especificar un sistema compatible con AOAC.
 
-Vea las diferencias entre el modo de espera moderno y S3 en el tema [modo de espera moderno frente a S3](/windows-hardware/design/device-experiences/modern-standby-vs-s3).
+Vea las diferencias entre modern standby y S3 en el tema [Modern Standby vs S3](/windows-hardware/design/device-experiences/modern-standby-vs-s3).
 
-## <a name="defining-an-automatic-maintenance-task"></a>Definir una tarea de mantenimiento automática
+## <a name="defining-an-automatic-maintenance-task"></a>Definición de una Mantenimiento automático tarea
 
-Puede convertir cualquier Programador de tareas tarea en una tarea de mantenimiento. Para ello, debe confirmar que la aplicación se puede suspender. A continuación, debe extender la definición de tarea con los nuevos elementos [**MaintenanceSettings**](taskschedulerschema-maintenancesettings-maintenancesettingstype-element.md) y [**AllowStartOnDemand**](taskschedulerschema-allowstartondemand-settingstype-element.md) .
+Puede convertir cualquier tarea Programador de tareas en una tarea de mantenimiento. Para ello, debe confirmar que la aplicación se puede suspender. A continuación, debe extender la definición de tarea con los [**nuevos elementos MaintenanceSettings**](taskschedulerschema-maintenancesettings-maintenancesettingstype-element.md) [**y AllowStartOnDemand.**](taskschedulerschema-allowstartondemand-settingstype-element.md)
 
-La principal preocupación de la creación de una tarea de mantenimiento es asegurarse de que el sistema puede suspender y reiniciar la tarea. Probablemente, el sistema suspenderá una tarea de mantenimiento varias veces; por lo tanto, debe asegurarse de que la aplicación pueda guardar su propio estado y, a continuación, reanudar en un momento arbitrario. Esto garantiza que el sistema no realiza la misma parte de la tarea varias veces.
+La principal preocupación con la creación de una tarea de mantenimiento es asegurarse de que el sistema puede suspender y reiniciar la tarea. Es probable que el sistema suspenda varias veces una tarea de mantenimiento. Por lo tanto, debe asegurarse de que la aplicación pueda guardar su propio estado y, a continuación, reanudarla en un momento arbitrario. Esto garantiza que el sistema no realiza la misma parte de la tarea repetidamente.
 
-Una vez que se haya asegurado de que la aplicación se puede suspender y reanudar correctamente, puede usar los elementos **MaintenanceSettings** y **AllowStartOnDemand** para definir la programación. **MaintenanceSettings** se define según el período, la fecha límite y la exclusividad.
+Una vez que haya asegurado que la aplicación se puede suspender y reanudar correctamente, puede usar los elementos **MaintenanceSettings** y **AllowStartOnDemand** para definir la programación. **MaintenanceSettings** se define según el período, la fecha límite y la exclusividad.
 
--   El **período** es obligatorio y define la frecuencia con que se debe realizar la tarea. Normalmente, esto se define en términos de un ciclo de varios días, como "una vez cada 5 días". Un período debe ser al menos un día, lo que significa que no se puede programar una tarea para que se produzca varias veces en un día.
--   La **fecha límite** es opcional y define cuánto tiempo puede no realizarse el programador para completar la tarea antes de notificar al usuario o realizar el mantenimiento de emergencia. La fecha límite debe ser mayor que el período, lo que significa que el sistema debe tener la oportunidad de intentar la tarea al menos una vez antes de notificar al usuario.
--   Además, una tarea de mantenimiento se puede definir opcionalmente como *exclusiva*. Una tarea exclusiva se ejecuta de forma independiente de otras tareas de mantenimiento. Normalmente, una tarea exclusiva es aquella que usa una gran cantidad de recursos, como una gran cantidad de tiempo de CPU o acceso exclusivo a una base de datos. El sistema completa todas las tareas de mantenimiento no exclusivas antes de iniciar una tarea exclusiva. Por lo tanto, debe declarar una tarea como exclusiva solo cuando sea necesario.
+-   El **período** es obligatorio y define la frecuencia con la que se debe producir la tarea. Normalmente, esto se define en términos de un ciclo de varios días, como "una vez cada 5 días". Un período debe ser al menos un día, lo que significa que no se puede programar que una tarea se produzca varias veces al día.
+-   La **fecha límite** es opcional y define cuánto tiempo el programador puede no completar la tarea antes de notificar al usuario o realizar un mantenimiento de emergencia. La fecha límite debe ser mayor que el período, lo que significa que el sistema debe tener la oportunidad de intentar la tarea al menos una vez antes de notificar al usuario.
+-   Además, una tarea de mantenimiento se puede definir opcionalmente como *exclusiva.* Una tarea exclusiva se ejecuta independiente de otras tareas de mantenimiento. Normalmente, una tarea exclusiva es aquella que usa una gran cantidad de recursos, como una gran cantidad de tiempo de CPU o acceso exclusivo a una base de datos. El sistema completa todas las tareas de mantenimiento no exclusivas antes de iniciar una tarea exclusiva. Por lo tanto, debe declarar una tarea como exclusiva solo cuando sea necesario.
 
-En cambio, **AllowStartOnDemand** simplemente indica que el sistema o el usuario puede iniciar la tarea en cualquier momento. Esto permite al sistema iniciar la tarea durante el mantenimiento normal. De lo contrario, tendría que establecer un desencadenador único para la tarea.
+En cambio, **AllowStartOnDemand** simplemente indica que el sistema o el usuario pueden iniciar la tarea en cualquier momento. Esto permite al sistema iniciar la tarea durante el mantenimiento normal. De lo contrario, tendría que establecer un desencadenador único para la tarea.

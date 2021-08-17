@@ -1,9 +1,9 @@
 ---
-title: Métodos IDCompositionBrightnessEffect SetWhitePointX (Dcomp. h)
+title: Métodos IDCompositionBrightnessEffect SetWhitePointX (Dcomp.h)
 description: Establece el valor x del punto blanco.
 ms.assetid: a35c4a79-bf30-3334-1cea-ddd055427a0f
 keywords:
-- Métodos SetWhitePointX DirectComposition
+- Métodos De SetWhitePointX DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 70f3d53339b513baff56f11d9c707f6895ad80d8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 78512800ae0db84971dac7f3ee190409f912a1229791f3601048bf8ea198b414
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105719014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119019"
 ---
-# <a name="idcompositionbrightnesseffectsetwhitepointx-methods"></a>IDCompositionBrightnessEffect:: SetWhitePointX (métodos)
+# <a name="idcompositionbrightnesseffectsetwhitepointx-methods"></a>Métodos IDCompositionBrightnessEffect::SetWhitePointX
 
 Establece el valor x del punto blanco.
 
@@ -40,11 +40,11 @@ Establece el valor x del punto blanco.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

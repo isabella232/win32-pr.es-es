@@ -1,7 +1,7 @@
 ---
-description: Indica si se está reproduciendo un bloque de ángulo y se pueden realizar cambios en el ángulo.
+description: Indica si se reproduce un bloque angular y se pueden realizar cambios de ángulo.
 ms.assetid: 15593841-3162-4598-86bc-1debca22b284
-title: EC_DVD_ANGLES_AVAILABLE (Dvdevcode. h)
+title: EC_DVD_ANGLES_AVAILABLE (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: e4d2abb17b329323cf4a21128da5dba927b48d4a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e95c692aed8ac6c709ff0db1d6056fc59219fa73f5aa2e4cfb9b31b2c1a03d94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015993"
 ---
-# <a name="ec_dvd_angles_available"></a>ángulos de DVD de EC \_ \_ \_ disponibles
+# <a name="ec_dvd_angles_available"></a>ÁNGULOS \_ DE DVD EC \_ \_ DISPONIBLES
 
-Indica si se está reproduciendo un bloque de ángulo y se pueden realizar cambios en el ángulo.
+Indica si se reproduce un bloque angular y se pueden realizar cambios de ángulo.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -31,7 +31,7 @@ Indica si se está reproduciendo un bloque de ángulo y se pueden realizar cambi
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valor booleano (**bool**) que indica si se está reproduciendo un bloque de ángulo. Cero (0) indica que la reproducción no está en un bloque de ángulo y los ángulos no están disponibles, uno (1) indica que se está reproduciendo un bloque de ángulo y se pueden realizar cambios de ángulo.
+Valor **booleano (BOOL)** que indica si se reproduce un bloque angular. Cero (0) indica que la reproducción no está en un bloque angular y que los ángulos no están disponibles, uno (1) indica que se reproduce un bloque angular y se pueden realizar cambios de ángulo.
 
 </dd> <dt>
 
@@ -42,9 +42,9 @@ Cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los cambios de ángulo no se restringen a los bloques de ángulo y la manifestación del cambio de ángulo solo puede verse en un bloque de ángulo.
+Los cambios de ángulo no están restringidos a los bloques angulares y la demostración del cambio de ángulo solo se puede ver en un bloque angular.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Los cambios de ángulo no se restringen a los bloques de ángulo y la manifestac
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdevcode.h (incluir Dshow.h)</dt> </dl> |
 
 
 

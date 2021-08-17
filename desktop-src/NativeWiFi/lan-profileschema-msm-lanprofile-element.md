@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: e9e58895ae36a304e713ecdb21b4008a2027e8c8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 25334050e95ff20cf35ed1071bf2b1c006e29c0f9374923199a96c09bbae0471
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065085"
 ---
 # <a name="msm-lanprofile-element"></a>Elemento MSM (LANProfile)
 
@@ -56,7 +56,7 @@ El elemento MSM (LANProfile) contiene la configuración del módulo específico 
 </xs:element>
 ```
 
-El elemento **MSM** se define mediante el elemento [**LANProfile**](lan-profileschema-lanprofile-element.md) .
+El **elemento MSM** se define mediante el [**elemento LANProfile.**](lan-profileschema-lanprofile-element.md)
 
 ## <a name="child-elements"></a>Elementos secundarios
 
@@ -64,9 +64,9 @@ El elemento **MSM** se define mediante el elemento [**LANProfile**](lan-profiles
 
 | Elemento                                                                 | Tipo    | Descripción                                                                                                                              |
 |-------------------------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [**OneXEnabled**](lan-profileschema-onexenabled-security-element.md)   | boolean | Especifica si el servicio de configuración automática de redes cableadas intentará la autenticación del puerto mediante 802.1 X.<br/>       |
-| [**OneXEnforced**](lan-profileschema-onexenforced-security-element.md) | boolean | Especifica si el servicio de configuración automática para redes cableadas requiere el uso de 802.1 X para la autenticación de puertos. <br/> |
-| [**bursátil**](lan-profileschema-security-msm-element.md)              |         | Contiene la configuración de seguridad. <br/>                                                                                                  |
+| [**OneXEnabled**](lan-profileschema-onexenabled-security-element.md)   | boolean | Especifica si el servicio de configuración automática para redes cableadas intentará la autenticación de puerto mediante 802.1X.<br/>       |
+| [**OneXEnforced**](lan-profileschema-onexenforced-security-element.md) | boolean | Especifica si el servicio de configuración automática para redes cableadas requiere el uso de 802.1X para la autenticación de puertos. <br/> |
+| [**Seguridad**](lan-profileschema-security-msm-element.md)              |         | Contiene la configuración de seguridad. <br/>                                                                                                  |
 
 
 
@@ -76,8 +76,8 @@ El elemento **MSM** se define mediante el elemento [**LANProfile**](lan-profiles
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

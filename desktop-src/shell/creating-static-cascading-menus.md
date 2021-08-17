@@ -18,9 +18,9 @@ ms.locfileid: "119456335"
 ---
 # <a name="creating-static-cascading-menus"></a>Crear menús estáticos en cascada
 
-En Windows 7 y versiones posteriores, la implementación del menú en cascada se admite a través de la configuración del Registro. Antes de Windows 7, la creación de menús en cascada solo era posible a través de la implementación de la [**interfaz IContextMenu.**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-icontextmenu) En Windows 7 y versiones posteriores, debe recurrir a las soluciones basadas en código del Modelo de objetos componentes (COM) solo cuando los métodos estáticos no sean suficientes.
+En Windows 7 y versiones posteriores, la implementación del menú en cascada se admite a través de la configuración del Registro. Antes de Windows 7, la creación de menús en cascada solo era posible mediante la implementación de la [**interfaz IContextMenu.**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-icontextmenu) En Windows 7 y versiones posteriores, debe recurrir a las soluciones basadas en código del Modelo de objetos componentes (COM) solo cuando los métodos estáticos no son suficientes.
 
-En la captura de pantalla siguiente se proporciona un ejemplo de un menú en cascada.
+La siguiente captura de pantalla proporciona un ejemplo de un menú en cascada.
 
 ![captura de pantalla que muestra un ejemplo de un menú en cascada](images/file-assoc/filecascademenu2ndex.png)
 

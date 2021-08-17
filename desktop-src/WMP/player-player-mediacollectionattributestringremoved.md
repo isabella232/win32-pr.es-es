@@ -1,10 +1,10 @@
 ---
 title: Evento Player.MediaCollectionAttributeStringRemoved
-description: El evento MediaCollectionAttributeStringRemoved tiene lugar cuando se quita un valor de atributo de la biblioteca. | Evento Player.MediaCollectionAttributeStringRemoved
+description: El evento MediaCollectionAttributeStringRemoved se produce cuando se quita un valor de atributo de la biblioteca. | Evento Player.MediaCollectionAttributeStringRemoved
 ms.assetid: f1253996-10d1-42fa-89f9-1e52ca830aea
 keywords:
 - Evento MediaCollectionAttributeStringRemoved Reproductor de Windows Media
-- Evento MediaCollectionAttributeStringRemoved Reproductor de Windows Media , clase Player
+- Evento MediaCollectionAttributeStringRemoved Reproductor de Windows Media clase , Player
 - Clase player Reproductor de Windows Media evento , MediaCollectionAttributeStringRemoved
 topic_type:
 - apiref
@@ -46,7 +46,7 @@ Player.MediaCollectionAttributeStringRemoved(
 *bstrAttribName* 
 </dt> <dd>
 
-**Cadena** que especifica el nombre del atributo. Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea la referencia Reproductor de Windows Media [atributo](attribute-reference.md).
+**Cadena** que especifica el nombre del atributo. Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea la referencia Reproductor de Windows Media [atributo .](attribute-reference.md)
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Este evento no devuelve un valor.
 
 Cuando se quita un elemento multimedia de la biblioteca, sus metadatos se quitan del **objeto MediaCollection** y este evento se desencadena para cada atributo quitado.
 
-El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media y se puede acceder a un método o pasarlo a un método en un archivo JScript importado con el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la mayúscula.
+El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media y se puede tener acceso a un método de un archivo JScript importado con el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la inclusión en mayúsculas.
 
 **Reproductor de Windows Media 10 Mobile:** Este evento no se admite.
 
@@ -73,14 +73,14 @@ El valor de los parámetros de evento se especifica mediante Reproductor de Wind
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

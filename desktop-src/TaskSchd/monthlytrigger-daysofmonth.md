@@ -1,11 +1,11 @@
 ---
-title: Propiedad MonthlyTrigger. DaysOfMonth
-description: En el caso de scripting, obtiene o establece los días del mes durante los que se ejecuta la tarea.
+title: MonthlyTrigger.DaysOfMonth, propiedad
+description: Para el scripting, obtiene o establece los días del mes durante los que se ejecuta la tarea.
 ms.assetid: 4da80d0f-ae0c-4e56-b51b-6ee6ab309d7c
 keywords:
-- Programador de tareas de la propiedad DaysOfMonth
-- Programador de tareas de la propiedad DaysOfMonth, objeto MonthlyTrigger
-- Programador de tareas de objeto MonthlyTrigger, propiedad DaysOfMonth
+- Propiedad DaysOfMonth Programador de tareas
+- Propiedad DaysOfMonth Programador de tareas objeto , MonthlyTrigger
+- Objeto MonthlyTrigger Programador de tareas propiedad , DaysOfMonth
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81a3bd671266cfbe459218367fadf20fd52f94a7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b256295b98105f79b144285d4aec77768f0648fc327be8be29d3f203586fe484
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139408"
 ---
-# <a name="monthlytriggerdaysofmonth-property"></a>Propiedad MonthlyTrigger. DaysOfMonth
+# <a name="monthlytriggerdaysofmonth-property"></a>MonthlyTrigger.DaysOfMonth, propiedad
 
-En el caso de scripting, obtiene o establece los días del mes durante los que se ejecuta la tarea.
+Para el scripting, obtiene o establece los días del mes durante los que se ejecuta la tarea.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -38,9 +38,9 @@ MonthlyTrigger.DaysOfMonth As long
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Máscara bit a bit que indica los días del mes en los que se ejecuta la tarea.
+Máscara bit a bit que indica los días del mes durante los que se ejecuta la tarea.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
@@ -83,7 +83,7 @@ Máscara bit a bit que indica los días del mes en los que se ejecuta la tarea.
 
  
 
-Al leer o escribir su propio XML para una tarea, los días del mes se especifican mediante el elemento [**DaysOfMonth**](taskschedulerschema-daysofmonth-monthlyscheduletype-element.md) del esquema de programador de tareas.
+Al leer o escribir su propio XML para una tarea, los días del mes se especifican mediante el [**elemento DaysOfMonth**](taskschedulerschema-daysofmonth-monthlyscheduletype-element.md) del esquema Programador de tareas datos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,9 +91,9 @@ Al leer o escribir su propio XML para una tarea, los días del mes se especifica
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

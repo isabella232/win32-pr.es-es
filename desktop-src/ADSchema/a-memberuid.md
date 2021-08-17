@@ -4,7 +4,7 @@ description: Contiene los nombres de inicio de sesión de los miembros de un gru
 ms.assetid: e5679a3a-e4e6-4203-9c85-49cd19a551d5
 ms.tgt_platform: multiple
 keywords:
-- MemberUid attribute AD Schema
+- Esquema de AD del atributo memberUid
 topic_type:
 - apiref
 api_name:
@@ -31,7 +31,7 @@ Contiene los nombres de inicio de sesión de los miembros de un grupo.
 | CN                | memberUid                            |
 | Ldap-Display-Name | memberUid                            |
 | Size              | \-                                   |
-| Actualizar privilegios  | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.12                     |
 | System-Id-Guid    | 03dab236-672e-4f61-ab64-f77d2dc2ffab |
@@ -54,10 +54,10 @@ Contiene los nombres de inicio de sesión de los miembros de un grupo.
 |------------------------|-----------------------------------------------|
 | Id. de vínculo                | \-                                            |
 | MAPI-Id                | \-                                            |
-| System-Only            | False                                         |
-| Es de un solo valor       | False                                         |
-| Está indexado             | False                                         |
-| En el catálogo global      | False                                         |
+| System-Only            | Falso                                         |
+| Es de un solo valor       | Falso                                         |
+| Está indexado             | Falso                                         |
+| En el catálogo global      | Falso                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                  |
 | Range-Lower            | \-                                            |
 | Range-Upper            | \-                                            |
@@ -75,10 +75,10 @@ Contiene los nombres de inicio de sesión de los miembros de un grupo.
 |------------------------|-----------------------------------------------|
 | Id. de vínculo                | \-                                            |
 | MAPI-Id                | \-                                            |
-| System-Only            | False                                         |
-| Es de un solo valor       | False                                         |
-| Está indexado             | False                                         |
-| En el catálogo global      | False                                         |
+| System-Only            | Falso                                         |
+| Es de un solo valor       | Falso                                         |
+| Está indexado             | Falso                                         |
+| En el catálogo global      | Falso                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                  |
 | Range-Lower            | \-                                            |
 | Range-Upper            | \-                                            |
@@ -96,10 +96,10 @@ Contiene los nombres de inicio de sesión de los miembros de un grupo.
 |------------------------|-----------------------------------------------|
 | Id. de vínculo                | \-                                            |
 | MAPI-Id                | \-                                            |
-| System-Only            | False                                         |
-| Es de un solo valor       | False                                         |
-| Está indexado             | False                                         |
-| En el catálogo global      | False                                         |
+| System-Only            | Falso                                         |
+| Es de un solo valor       | Falso                                         |
+| Está indexado             | Falso                                         |
+| En el catálogo global      | Falso                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                  |
 | Range-Lower            | \-                                            |
 | Range-Upper            | \-                                            |
@@ -117,10 +117,10 @@ Contiene los nombres de inicio de sesión de los miembros de un grupo.
 |------------------------|-----------------------------------------------|
 | Id. de vínculo                | \-                                            |
 | MAPI-Id                | \-                                            |
-| System-Only            | False                                         |
-| Es de un solo valor       | False                                         |
-| Está indexado             | False                                         |
-| En el catálogo global      | False                                         |
+| System-Only            | Falso                                         |
+| Es de un solo valor       | Falso                                         |
+| Está indexado             | Falso                                         |
+| En el catálogo global      | Falso                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                  |
 | Range-Lower            | \-                                            |
 | Range-Upper            | \-                                            |
@@ -130,7 +130,7 @@ Contiene los nombres de inicio de sesión de los miembros de un grupo.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

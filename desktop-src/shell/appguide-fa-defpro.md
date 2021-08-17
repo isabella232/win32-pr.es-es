@@ -24,13 +24,13 @@ Esta sección sobre las directrices de aplicación para asociaciones de archivos
 -   [Ejemplo de asociación de archivos](fa-sample-scenarios.md)
 -   [Administración de aplicaciones predeterminadas](vista-managing-defaults.md)
 -   [Programas predeterminados](default-programs.md)
--   [Establecer el acceso al programa y los valores predeterminados del equipo (SPAD)](cpl-setprogramaccess.md)
+-   [Establecer el acceso a programas y los valores predeterminados del equipo (SPAD)](cpl-setprogramaccess.md)
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
 Para obtener información conceptual relacionada, vea los temas siguientes:
 
--   Para obtener información sobre el registro de aplicaciones a través del Registro que no es específico de establecer los valores predeterminados del equipo de acceso al programa (SPAD) o establecer los programas predeterminados (SYDP) Panel de control, vea Registro de [aplicaciones.](app-registration.md)
+-   Para obtener información sobre el registro de aplicaciones a través del Registro que no es específico de los elementos Set Program Access Computer Defaults (SPAD) o Set Your Default Programs (SYDP) Panel de control, vea [Application Registration](app-registration.md).
 -   Para obtener información adicional, vea [Tipos de archivo y asociaciones de archivo](fa-intro.md).
 
  

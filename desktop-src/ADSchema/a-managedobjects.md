@@ -4,7 +4,7 @@ description: Contiene la lista de objetos administrados por el usuario. Los obje
 ms.assetid: 59b76431-03a5-4839-8800-ef03d26b66cc
 ms.tgt_platform: multiple
 keywords:
-- Managed-Objects esquema de AD de atributo
+- Managed-Objects esquema de AD del atributo
 - Esquema de AD del atributo managedObjects
 topic_type:
 - apiref
@@ -27,13 +27,13 @@ Contiene la lista de objetos administrados por el usuario. Los objetos enumerado
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|------------------------------------------------------------------------------------|
 | CN                | Managed-Objects                                                                    |
 | Ldap-Display-Name | managedObjects                                                                     |
 | Size              | \-                                                                                 |
-| Actualizar privilegios  | El sistema establece este valor.                                                   |
-| Frecuencia de actualización  | Cuando se crea el registro de usuarios y cada vez que los objetos administrados necesitan cambiar. |
+| Privilegio actualizar  | El sistema establece este valor.                                                   |
+| Frecuencia de actualización  | Cuando se crea el registro de usuarios y cada vez que es necesario cambiar los objetos administrados. |
 | Attribute-Id      | 1.2.840.113556.1.4.654                                                             |
 | System-Id-Guid    | 0296c124-40da-11d1-a9c0-0000f80367c1                                               |
 | Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md)                                            |
@@ -54,14 +54,14 @@ Contiene la lista de objetos administrados por el usuario. Los objetos enumerado
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 73                              |
 | MAPI-Id                | 0x8024                          |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -75,14 +75,14 @@ Contiene la lista de objetos administrados por el usuario. Los objetos enumerado
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 73                              |
 | MAPI-Id                | 0x8024                          |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -96,14 +96,14 @@ Contiene la lista de objetos administrados por el usuario. Los objetos enumerado
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 73                              |
 | MAPI-Id                | 0x8024                          |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -117,14 +117,14 @@ Contiene la lista de objetos administrados por el usuario. Los objetos enumerado
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 73                              |
 | MAPI-Id                | 0x8024                          |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -138,14 +138,14 @@ Contiene la lista de objetos administrados por el usuario. Los objetos enumerado
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 73                              |
 | MAPI-Id                | 0x8024                          |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -159,14 +159,14 @@ Contiene la lista de objetos administrados por el usuario. Los objetos enumerado
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 73                              |
 | MAPI-Id                | 0x8024                          |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -180,14 +180,14 @@ Contiene la lista de objetos administrados por el usuario. Los objetos enumerado
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 73                              |
 | MAPI-Id                | 0x8024                          |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |

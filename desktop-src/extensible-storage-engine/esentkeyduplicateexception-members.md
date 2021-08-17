@@ -19,9 +19,9 @@ ms.locfileid: "119454635"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para JET_err. Excepciones de KeyDuplicate.
+Clase base para JET_err. Excepciones keyDuplicate.
 
-El [tipo EsentKeyDuplicateException](./esentkeyduplicateexception-class.md) expone los miembros siguientes.
+El [tipo EsentKeyDuplicateException](./esentkeyduplicateexception-class.md) expone los siguientes miembros.
 
 ## <a name="constructors"></a>Constructores
 
@@ -58,7 +58,7 @@ Superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">

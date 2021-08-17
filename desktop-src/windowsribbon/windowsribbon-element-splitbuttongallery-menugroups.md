@@ -3,7 +3,7 @@ title: Propiedad SplitButtonGallery.MenuGroups
 description: Representa un contenedor para un conjunto de elementos de menú desplegable en un control SplitButtonGallery.
 ms.assetid: e30fcf9a-488b-423a-8bc4-fccbc78f74de
 keywords:
-- Propiedad SplitButtonGallery.MenuGroups Windows Cinta de opciones
+- Propiedad SplitButtonGallery.MenuGroups Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -55,7 +55,7 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Obligatorio.
 

@@ -29,9 +29,9 @@ El **atributo elementType** recupera el tipo del elemento (por ejemplo, BUTTON).
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una cadena **de** solo lectura que indica el nombre del elemento.
+Este atributo es una cadena de **solo** lectura que indica el nombre del elemento.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo es útil para determinar el tipo de elemento que ha desencadenado un evento y escribir un controlador de eventos genérico para esta clase de elementos.
 

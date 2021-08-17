@@ -5,7 +5,7 @@ ms.assetid: 491e0dd5-38e5-47a5-9c94-f1d27d297f8d
 keywords:
 - Método isMemberOf Reproductor de Windows Media
 - Método isMemberOf Reproductor de Windows Media , interfaz IWMPMedia
-- Interfaz IWMPMedia Reproductor de Windows Media método , isMemberOf
+- Interfaz IWMPMedia Reproductor de Windows Media , método isMemberOf
 topic_type:
 - apiref
 api_name:
@@ -72,7 +72,7 @@ Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Pa
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa isMemberOf** para probar si el elemento multimedia actual es miembro de la lista de reproducción denominada All Música. Si no es así, el elemento multimedia actual se anexa a la lista de reproducción. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
+En el ejemplo siguiente se **usa isMemberOf** para probar si el elemento multimedia actual es miembro de la lista de reproducción denominado All Música. Si no es así, el elemento multimedia actual se anexa a la lista de reproducción. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -110,7 +110,7 @@ End If
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -118,7 +118,7 @@ End If
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
 description: Recupera todos los encabezados de respuesta HTTP.
 ms.assetid: 68b13d4c-5afd-486d-8b78-a7eef0f59a24
-title: 'IWinHttpRequest:: GetAllResponseHeaders (método)'
+title: IWinHttpRequest::GetAllResponseHeaders (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 74c113216cf41e2f9816176dd28ba5e84208c635
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d853cfd80038081865eeefbbc456f470485b69a2dae02384e91e8b4d78d90810
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133108"
 ---
-# <a name="iwinhttprequestgetallresponseheaders-method"></a>IWinHttpRequest:: GetAllResponseHeaders (método)
+# <a name="iwinhttprequestgetallresponseheaders-method"></a>IWinHttpRequest::GetAllResponseHeaders (método)
 
-El método **GetAllResponseHeaders** recupera todos los encabezados de respuesta http.
+El **método GetAllResponseHeaders** recupera todos los encabezados de respuesta HTTP.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ HRESULT GetAllResponseHeaders(
 
 <dl> <dt>
 
-*Encabezados de* \[ out, retval\]
+*Encabezados* \[ out, retval\]
 </dt> <dd>
 
 Recibe la información de encabezado resultante.
@@ -49,20 +49,20 @@ Recibe la información de encabezado resultante.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es correcto si se ejecuta correctamente o un valor de error en caso contrario. **\_**
+El valor devuelto es **S \_ OK si se** ejecuta correctamente o un valor de error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método devuelve todos los encabezados contenidos en la respuesta del servidor más reciente. Los encabezados individuales se delimitan mediante una combinación de retorno de carro y avance de línea (ASCII 13 y 10). La última entrada va seguida de dos delimitadores (13, 10, 13, 10). Invoque este método solo después de que se haya llamado al método [**send**](iwinhttprequest-send.md) .
+Este método devuelve todos los encabezados incluidos en la respuesta del servidor más reciente. Los encabezados individuales se delimitan mediante una combinación de retorno de carro y avance de línea (ASCII 13 y 10). La última entrada va seguida de dos delimitadores (13, 10, 13, 10). Invoque este método solo después [**de llamar**](iwinhttprequest-send.md) al método Send.
 
 > [!Note]  
-> En Windows XP y Windows 2000, consulte la sección [requisitos de tiempo de ejecución](winhttp-start-page.md) de la página de inicio de winhttp.
+> Para Windows XP y Windows 2000, consulte la sección [Requisitos](winhttp-start-page.md) en tiempo de ejecución de la página de inicio de WinHTTP.
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y obtener todos los encabezados de la respuesta. Este ejemplo debe ejecutarse desde un símbolo del sistema.
+En el ejemplo siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y obtener todos los encabezados de la respuesta. Este ejemplo se debe ejecutar desde un símbolo del sistema.
 
 
 ```C++
@@ -154,7 +154,7 @@ int main(int argc, char* argv[])
 
 
 
-En el siguiente ejemplo de scripting se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y obtener todos los encabezados de la respuesta.
+En el ejemplo de scripting siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y obtener todos los encabezados de la respuesta.
 
 
 ```JScript
@@ -179,11 +179,11 @@ WScript.Echo( WinHttpReq.GetAllResponseHeaders());
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional con las \[ aplicaciones de escritorio de SP3 únicamente\]<br/>            |
-| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server con \[ solo aplicaciones de escritorio de SP3\]<br/>         |
-| Redistribuible<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o posterior en Windows XP y Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winhttp. lib</dt> </dl>     |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>            |
+| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
+| Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | Archivo DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
@@ -201,7 +201,7 @@ WScript.Echo( WinHttpReq.GetAllResponseHeaders());
 [**GetResponseHeader**](iwinhttprequest-getresponseheader.md)
 </dt> <dt>
 
-[Versiones de WinHTTP](winhttp-versions.md)
+[Versiones winHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

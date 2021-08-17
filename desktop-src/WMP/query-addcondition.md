@@ -1,11 +1,11 @@
 ---
-title: Query. addCondition (método)
-description: El método addCondition agrega una condición al objeto de consulta mediante la lógica y.
+title: Método Query.addCondition
+description: El método addCondition agrega una condición al objeto Query mediante la lógica AND.
 ms.assetid: 29b5d372-eddf-4b70-882b-d2dde79d9287
 keywords:
-- método addCondition de Windows Media Player
-- método addCondition de Windows Media Player, clase de consulta
-- Clase de consulta de Windows Media Player, método addCondition
+- Método addCondition Reproductor de Windows Media
+- Método addCondition Reproductor de Windows Media , clase Query
+- Clase de consulta Reproductor de Windows Media , método addCondition
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4035d2877cf0081e9153277c88feb545a529568d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 53a3eed0a7923b93861eabc30d115a7726046d0595b7c57625d9a9afaf9c7523
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746594"
 ---
-# <a name="queryaddcondition-method"></a>Query. addCondition (método)
+# <a name="queryaddcondition-method"></a>Método Query.addCondition
 
-El método **addCondition** agrega una condición al objeto de **consulta** mediante la lógica y.
+El **método addCondition** agrega una condición al **objeto Query** mediante la lógica AND.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,21 +44,21 @@ Query.addCondition(
 
 <dl> <dt>
 
-*atributo* \[ de de\]
+*atributo* \[ En\]
 </dt> <dd>
 
 **Cadena** que contiene el nombre del atributo.
 
 </dd> <dt>
 
-*operador* \[ de de\]
+*operador* \[ En\]
 </dt> <dd>
 
-**Cadena** que contiene el operador. Vea la sección Comentarios para ver los valores admitidos.
+**Cadena** que contiene el operador . Consulte Comentarios para ver los valores admitidos.
 
 </dd> <dt>
 
-*valor* \[ de de\]
+*value* \[ En\]
 </dt> <dd>
 
 **Cadena** que contiene el valor del atributo.
@@ -69,23 +69,23 @@ Query.addCondition(
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las consultas compuestas que usan la **consulta** no distinguen mayúsculas de minúsculas.
+Las consultas compuestas **que usan consulta** no distinguen mayúsculas de minúsculas.
 
-Puede encontrar una lista de valores para el parámetro de *atributo* en la sección de [referencia de atributo alfabético](alphabetical-attribute-reference.md) .
+Puede encontrar una lista de valores para *el parámetro de* atributo en la sección Referencia [alfabética de](alphabetical-attribute-reference.md) atributos.
 
-Las condiciones contenidas en un objeto de **consulta** se organizan en grupos de condiciones. Varias condiciones dentro de un grupo de condiciones se concatenan siempre mediante la lógica y. Los grupos de condiciones siempre se concatenan entre sí mediante la lógica o. Para iniciar un nuevo grupo de condiciones, llame a **query. beginNextGroup**.
+Las condiciones contenidas en un **objeto Query** se organizan en grupos de condiciones. Varias condiciones dentro de un grupo de condiciones siempre se concatenan mediante la lógica AND. Los grupos de condiciones siempre se concatenan entre sí mediante la lógica OR. Para iniciar un nuevo grupo de condiciones, llame **a Query.beginNextGroup**.
 
 En la tabla siguiente se enumeran los valores admitidos para el *operador*.
 
 
 
-| Operator            | Se aplica a     |
+| Operador            | Se aplica a     |
 |---------------------|----------------|
 | BeginsWith          | Cadenas        |
 | Contiene            | Cadenas        |
-| Equals              | Todos los tipos      |
+| Es igual que              | Todos los tipos      |
 | GreaterThan         | Números, fechas |
 | GreaterThanOrEquals | Números, fechas |
 | LessThan            | Números, fechas |
@@ -100,7 +100,7 @@ En la tabla siguiente se enumeran los valores admitidos para el *operador*.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa **query. addCondition** y **query. beginNextGroup** para realizar una consulta de ejemplo.
+En el JScript siguiente se **usan Query.addCondition** y **Query.beginNextGroup** para realizar una consulta de ejemplo.
 
 
 ```JScript
@@ -140,7 +140,7 @@ var Playlist = Player.mediaCollection.getPlaylistByQuery(
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 11.<br/>                                                |
+| Versión<br/> | Reproductor de Windows Media 11.<br/>                                                |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -149,7 +149,7 @@ var Playlist = Player.mediaCollection.getPlaylistByQuery(
 
 <dl> <dt>
 
-[**MediaCollection. createQuery**](mediacollection-createquery.md)
+[**MediaCollection.createQuery**](mediacollection-createquery.md)
 </dt> <dt>
 
 [**MediaCollection.getPlaylistByQuery**](mediacollection-getplaylistbyquery.md)
@@ -158,10 +158,10 @@ var Playlist = Player.mediaCollection.getPlaylistByQuery(
 [**MediaCollection.getStringCollectionByQuery**](mediacollection-getstringcollectionbyquery.md)
 </dt> <dt>
 
-[**Query (objeto)**](query-object.md)
+[**Objeto Query**](query-object.md)
 </dt> <dt>
 
-[**Consulta. beginNextGroup**](query-beginnextgroup.md)
+[**Query.beginNextGroup**](query-beginnextgroup.md)
 </dt> </dl>
 
  

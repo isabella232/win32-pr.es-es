@@ -1,11 +1,11 @@
 ---
-title: RunningTask. STOP (método)
-description: En el caso de scripting, detiene esta instancia de la tarea.
+title: Método RunningTask.Stop
+description: Para el scripting, detiene esta instancia de la tarea.
 ms.assetid: 2692f72c-efdc-4496-b19e-717d211a2b93
 keywords:
 - Detener método Programador de tareas
-- Método STOP Programador de tareas, objeto RunningTask
-- Programador de tareas de objeto RunningTask, método STOP
+- Método Stop Programador de tareas , objeto RunningTask
+- Objeto RunningTask Programador de tareas método , Stop
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c9f655001684cb51de525ebc6ac852fbd478ca08
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3428e523ca4ea997c5f8d2e21ed4d678856c602e19dae864a452efce177f1761
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975015"
 ---
-# <a name="runningtaskstop-method"></a>RunningTask. STOP (método)
+# <a name="runningtaskstop-method"></a>Método RunningTask.Stop
 
-En el caso de scripting, detiene esta instancia de la tarea.
+Para el scripting, detiene esta instancia de la tarea.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,9 +50,9 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

@@ -1,10 +1,10 @@
 ---
-title: clase ms-Authz-Central-Access-Rule
-description: Clase que define las reglas de acceso central que se usan para construir una directiva de acceso central.
+title: ms-Authz-Central-Access-Rule (clase)
+description: Clase que define las reglas de acceso central usadas para construir una directiva de acceso central.
 ms.assetid: 5831179c-c6ae-4980-b0f5-538faa190b60
 ms.tgt_platform: multiple
 keywords:
-- ms-Authz-Central-Access-Rule class AD Schema
+- Esquema de AD de la clase ms-Authz-Central-Access-Rule
 - Esquema de AD de la clase msAuthz-CentralAccessRule
 topic_type:
 - apiref
@@ -21,17 +21,17 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119323715"
 ---
-# <a name="ms-authz-central-access-rule-class"></a>clase ms-Authz-Central-Access-Rule
+# <a name="ms-authz-central-access-rule-class"></a>ms-Authz-Central-Access-Rule (clase)
 
-Clase que define las reglas de acceso central que se usan para construir una directiva de acceso central.
+Clase que define las reglas de acceso central usadas para construir una directiva de acceso central.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | ms-Authz-Central-Access-Rule         |
 | Ldap-Display-Name | msAuthz-CentralAccessRule            |
-| Actualizar privilegios  | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Schema-Id-Guid    | 5b4a06dc-251c-4edb-8813-0bdd71327226 |
 
@@ -47,7 +47,7 @@ Clase que define las reglas de acceso central que se usan para construir una dir
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------|
 | System-Only                 | Falso                                                                                        |
 | Object-Category             | 1                                                                                            |
@@ -66,13 +66,13 @@ Clase que define las reglas de acceso central que se usan para construir una dir
 
 ## <a name="windows-server-2012-attributes"></a>Windows Server 2012 Atributos
 
-Esta clase contiene los atributos siguientes para Windows Server 2012:
+Esta clase contiene los siguientes atributos para Windows Server 2012:
 
 
 
 | Atributo                                                                                    | Mandatory | Derivado de                     |
 |----------------------------------------------------------------------------------------------|-----------|----------------------------------|
-| [**Admin-Description**](a-admindescription.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>  |
+| [**Descripción del administrador**](a-admindescription.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Admin-Display-Name**](a-admindisplayname.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Atributos permitidos**](a-allowedattributes.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)                         | Falso     | [**Arriba**](c-top.md)<br/>  |
@@ -80,8 +80,8 @@ Esta clase contiene los atributos siguientes para Windows Server 2012:
 | [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)                    | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                                | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Canonical-Name**](a-canonicalname.md)                                                    | Falso     | [**Arriba**](c-top.md)<br/>  |
-| [**Common-Name**](a-cn.md)                                                                  | Falso     | [**Arriba**](c-top.md)<br/>  |
-| [**Create-Time-Stamp**](a-createtimestamp.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>  |
+| [**Nombre común**](a-cn.md)                                                                  | Falso     | [**Arriba**](c-top.md)<br/>  |
+| [**Crear marca de tiempo**](a-createtimestamp.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Descripción**](a-description.md)                                                         | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Nombre para mostrar**](a-displayname.md)                                                        | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Display-Name-Printable**](a-displaynameprintable.md)                                     | Falso     | [**Arriba**](c-top.md)<br/>  |
@@ -103,7 +103,7 @@ Esta clase contiene los atributos siguientes para Windows Server 2012:
 | [**Último elemento primario conocido**](a-lastknownparent.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Objetos administrados**](a-managedobjects.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Mastered-By**](a-masteredby.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>  |
-| [**Modificación de marca de tiempo**](a-modifytimestamp.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>  |
+| [**Modify-Time-Stamp**](a-modifytimestamp.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**ms-Authz-Effective-Security-Policy**](a-msauthz-effectivesecuritypolicy.md)              | Falso     | **ms-Authz-Central-Access-Rule** |
 | [**ms-Authz-Last-Effective-Security-Policy**](a-msauthz-lasteffectivesecuritypolicy.md)     | Falso     | **ms-Authz-Central-Access-Rule** |
 | [**ms-Authz-Proposed-Security-Policy**](a-msauthz-proposedsecuritypolicy.md)                | Falso     | **ms-Authz-Central-Access-Rule** |
@@ -161,12 +161,12 @@ Esta clase contiene los atributos siguientes para Windows Server 2012:
 | [**Object-Class**](a-objectclass.md)                                                        | Verdadero      | [**Arriba**](c-top.md)<br/>  |
 | [**Guid de objeto**](a-objectguid.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Object-Version**](a-objectversion.md)                                                    | Falso     | [**Arriba**](c-top.md)<br/>  |
-| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>  |
+| [**Otros objetos well-known-objects**](a-otherwellknownobjects.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)                    | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Posibles inferiores**](a-possibleinferiors.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>  |
-| [**Direcciones proxy**](a-proxyaddresses.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>  |
+| [**Direcciones de proxy**](a-proxyaddresses.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                                   | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Rdn**](a-name.md)                                                                        | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>  |
@@ -177,23 +177,23 @@ Esta clase contiene los atributos siguientes para Windows Server 2012:
 | [**Revisión**](a-revision.md)                                                               | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>  |
-| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                               | Falso     | [**Arriba**](c-top.md)<br/>  |
+| [**Mostrar solo en vista avanzada**](a-showinadvancedviewonly.md)                               | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Site-Object-BL**](a-siteobjectbl.md)                                                     | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Structural-Object-Class**](a-structuralobjectclass.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Sub refs**](a-subrefs.md)                                                                | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Marcas del sistema**](a-systemflags.md)                                                        | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**USN cambiado**](a-usnchanged.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>  |
-| [**Creado por USN**](a-usncreated.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>  |
+| [**UsN creado**](a-usncreated.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**USN-Intersite**](a-usnintersite.md)                                                      | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**USN-Source**](a-usnsource.md)                                                            | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Wbem-Path**](a-wbempath.md)                                                              | Falso     | [**Arriba**](c-top.md)<br/>  |
-| [**Well-Known-Objects**](a-wellknownobjects.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>  |
+| [**Objetos conocidos**](a-wellknownobjects.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Cuándo se ha cambiado**](a-whenchanged.md)                                                        | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**Cuando se crea**](a-whencreated.md)                                                        | Falso     | [**Arriba**](c-top.md)<br/>  |
-| [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)                                                       | Falso     | [**Arriba**](c-top.md)<br/>  |
+| [**WWW-Página principal**](a-wwwhomepage.md)                                                       | Falso     | [**Arriba**](c-top.md)<br/>  |
 | [**WWW-Page-Other**](a-url.md)                                                              | Falso     | [**Arriba**](c-top.md)<br/>  |
 
 

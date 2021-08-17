@@ -1,6 +1,6 @@
 ---
 title: Atributo GPC-Machine-Extension-Names
-description: Usado por el objeto directiva de grupo para las directivas de equipo.
+description: Utilizado por el objeto directiva de grupo para las directivas de equipo.
 ms.assetid: a5e00bf6-d311-4ccd-a2cf-4f7506fec419
 ms.tgt_platform: multiple
 keywords:
@@ -23,11 +23,11 @@ ms.locfileid: "119305605"
 ---
 # <a name="gpc-machine-extension-names-attribute"></a>Atributo GPC-Machine-Extension-Names
 
-Usado por el objeto directiva de grupo para las directivas de equipo.
+Utilizado por el objeto directiva de grupo para las directivas de equipo.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|---------------------------------------------------------------------------------|
 | CN                | GPC-Machine-Extension-Names                                                     |
 | Ldap-Display-Name | gPCMachineExtensionNames                                                        |
@@ -53,7 +53,7 @@ Usado por el objeto directiva de grupo para las directivas de equipo.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
@@ -74,7 +74,7 @@ Usado por el objeto directiva de grupo para las directivas de equipo.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
@@ -95,7 +95,7 @@ Usado por el objeto directiva de grupo para las directivas de equipo.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
@@ -116,7 +116,7 @@ Usado por el objeto directiva de grupo para las directivas de equipo.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
@@ -137,7 +137,7 @@ Usado por el objeto directiva de grupo para las directivas de equipo.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
@@ -158,7 +158,7 @@ Usado por el objeto directiva de grupo para las directivas de equipo.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |

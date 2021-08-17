@@ -1,7 +1,7 @@
 ---
-description: Sistema. Música. Director
+description: Sistema. Música. Director de orquesta
 ms.assetid: cb04c41f-35e3-4483-9bc5-5e4f2e45042f
-title: Sistema. Música. Director
+title: Sistema. Música. Director de orquesta
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 0582247442cd9de71b79a7741dc1b6f1927b9c8b8084f5ae103d54c6620d58b4
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118970204"
 ---
-# <a name="systemmusicconductor"></a>Sistema. Música. Director
+# <a name="systemmusicconductor"></a>Sistema. Música. Director de orquesta
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 

@@ -1,7 +1,7 @@
 ---
-description: El método QueryId recupera un identificador para el código PIN.
+description: El método QueryId recupera un identificador para el pin.
 ms.assetid: 6050292e-6203-4a79-87bf-47394624cb32
-title: CSourceStream. QueryId (método, source. h)
+title: Método CSourceStream.QueryId (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 267748fe4ce1eeec4650544a2f72069df897a366
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1bd8582d16022c9d5dfd60eb87847d564ef69203e329ff37eaa9c2964a11794c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119317515"
 ---
-# <a name="csourcestreamqueryid-method"></a>CSourceStream. QueryId (método)
+# <a name="csourcestreamqueryid-method"></a>Método CSourceStream.QueryId
 
-El `QueryId` método recupera un identificador para el código PIN.
+El `QueryId` método recupera un identificador para el pin.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,32 +45,32 @@ HRESULT QueryId(
 *Id* 
 </dt> <dd>
 
-Puntero a una variable que recibe una cadena que contiene el identificador del PIN.
+Puntero a una variable que recibe una cadena que contiene el identificador de pin.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que se muestran en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                       | Descripción                                 |
 |---------------------------------------------------------------------------------------------------|---------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>              | Correcto.<br/>                         |
+| <dl> <dt>**S \_ OK**</dt> </dl>              | Correcto.<br/>                         |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>     | Memoria insuficiente.<br/>             |
-| <dl> <dt>**\_puntero E**</dt> </dl>         | Argumento de puntero **nulo** .<br/>       |
-| <dl> <dt>**VFW \_ E \_ no \_ encontrado**</dt> </dl> | No se encontró el PIN en el filtro.<br/> |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>         | **Argumento de** puntero NULL.<br/>       |
+| <dl> <dt>**VFW \_ E \_ NO \_ ENCONTRADO**</dt> </dl> | No se encontró el pin en el filtro.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método implementa el método [**IPin:: queryId**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryid) . Para construir una cadena de identificador, el PIN llama al método [**CSource:: FindPinNumber**](csource-findpinnumber.md) con sí mismo como parámetro. El método **FindPinNumber** devuelve el número PIN, indizado desde cero. `QueryId` incrementa el valor devuelto en uno y convierte el resultado en una cadena. Por ejemplo, el primer PIN se convierte en "1"; el segundo PIN se convierte en "2"; etc.
+Este método implementa el [**método IPin::QueryId.**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryid) Para construir una cadena de identificador, el pin llama al [**método CSource::FindPinNumber**](csource-findpinnumber.md) con sí mismo como parámetro. El **método FindPinNumber** devuelve el número de pin, indexado a partir de cero. `QueryId` incrementa el valor devuelto en uno y convierte el resultado en una cadena. Por ejemplo, el primer pin se convierte en "1"; el segundo pin se convierte en "2"; y así sucesivamente.
 
-Si este método devuelve VFW \_ E \_ no \_ encontrado, indica que la matriz de PIN del filtro no es válida, supuestamente causada por un error en el filtro.
+Si este método devuelve VFW E NOT FOUND, indica que la matriz de pines del filtro no es \_ \_ válida, presumiblemente causada por un \_ error en el filtro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,8 +78,8 @@ Si este método devuelve VFW \_ E \_ no \_ encontrado, indica que la matriz de P
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Source. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Source.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -87,7 +87,7 @@ Si este método devuelve VFW \_ E \_ no \_ encontrado, indica que la matriz de P
 
 <dl> <dt>
 
-[**Clase CSourceStream**](csourcestream.md)
+[**CSourceStream (clase)**](csourcestream.md)
 </dt> </dl>
 
  

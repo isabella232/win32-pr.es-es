@@ -22,7 +22,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118972204"
 ---
-# <a name="imediarendereractioninformationplayspeeds-method"></a>Método IMediaRendererActionInformation::P laySpeeds
+# <a name="imediarendereractioninformationplayspeeds-method"></a>IMediaRendererActionInformation::P laySpeeds (método)
 
 Recupera la lista completa de valores [**de PlaySpeed**](/previous-versions/windows/desktop/api/windows.media.streaming/ns-windows-media-streaming-playspeed) aceptados por la DMR.
 
@@ -44,7 +44,7 @@ HRESULT PlaySpeeds(
 *value* \[ out\]
 </dt> <dd>
 
-Recibe un vector de [**estructuras PlaySpeed**](/previous-versions/windows/desktop/api/windows.media.streaming/ns-windows-media-streaming-playspeed) que especifican la lista completa de valores **de PlaySpeed** aceptados por la DMR.
+Recibe un vector de [**estructuras PlaySpeed**](/previous-versions/windows/desktop/api/windows.media.streaming/ns-windows-media-streaming-playspeed) que especifica la lista completa de valores **playSpeed** aceptados por la DMR.
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

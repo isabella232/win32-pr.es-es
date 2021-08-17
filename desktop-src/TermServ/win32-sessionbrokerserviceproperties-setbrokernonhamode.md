@@ -1,12 +1,12 @@
 ---
-title: Método SetBrokerNonHAMode de la clase Win32_SessionBrokerServiceProperties
-description: Migra datos de la SQL Server central a una base de datos local. También configura el servidor de agente para usar la base de datos local.
+title: Método SetBrokerNonHAMode de la Win32_SessionBrokerServiceProperties clase
+description: Migra datos del centro de SQL Server a una base de datos local. También configura el servidor de agente para que use la base de datos local.
 ms.assetid: a73908be-0cc8-4512-842c-439d5cf18ed4
 ms.tgt_platform: multiple
 keywords:
 - Método SetBrokerNonHAMode Servicios de Escritorio remoto
-- Método SetBrokerNonHAMode Servicios de Escritorio remoto, clase Win32_SessionBrokerServiceProperties
-- Win32_SessionBrokerServiceProperties de clase Servicios de Escritorio remoto, método SetBrokerNonHAMode
+- Método SetBrokerNonHAMode Servicios de Escritorio remoto , Win32_SessionBrokerServiceProperties clase
+- Win32_SessionBrokerServiceProperties clase Servicios de Escritorio remoto , método SetBrokerNonHAMode
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ef811bf8024f8e89f9739461dfa8499891077f3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 34daa0817056975a6b15164dd29edcbcc86cd7cd9475f753e91500845ce089a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058420"
 ---
-# <a name="setbrokernonhamode-method-of-the-win32_sessionbrokerserviceproperties-class"></a>Método SetBrokerNonHAMode de la \_ clase SessionBrokerServiceProperties de Win32
+# <a name="setbrokernonhamode-method-of-the-win32_sessionbrokerserviceproperties-class"></a>Método SetBrokerNonHAMode de la clase \_ SessionBrokerServiceProperties de Win32
 
-Migra datos de la SQL Server central a una base de datos local. También configura el servidor de agente para usar la base de datos local.
+Migra datos del centro de SQL Server a una base de datos local. También configura el servidor de agente para que use la base de datos local.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ uint32 SetBrokerNonHAMode(
 
 <dl> <dt>
 
-*connStringToCentralDBRdcms* \[ de\]
+*connStringToCentralDBRdcms* \[ En\]
 </dt> <dd>
 
 Cadena de conexión a la base de datos central.
@@ -58,8 +58,8 @@ Cadena de conexión a la base de datos central.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                         |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 
@@ -68,7 +68,7 @@ Cadena de conexión a la base de datos central.
 
 <dl> <dt>
 
-[**Win32 \_ SessionBrokerServiceProperties**](win32-sessionbrokerserviceproperties.md)
+[**SessionBrokerServiceProperties de Win32 \_**](win32-sessionbrokerserviceproperties.md)
 </dt> </dl>
 
  

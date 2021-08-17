@@ -1,17 +1,17 @@
 ---
 description: Versión del archivo de imagen intercambiable (EXIF).
 ms.assetid: 5a45acfa-fceb-4fc9-b758-f9a14965ef80
-title: System. Photo. EXIFVersion
+title: System.Photo.EXIFVersion
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08e3420b5dbdbb94871e56cb82fbf240275308f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46fdfc275bc8af116e9ba1e9a0dfae3b086f9d39660d1b91814bfae275838936
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095977"
 ---
-# <a name="systemphotoexifversion"></a>System. Photo. EXIFVersion
+# <a name="systemphotoexifversion"></a>System.Photo.EXIFVersion
 
 Versión del archivo de imagen intercambiable (EXIF).
 
@@ -30,15 +30,15 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Exchangeable Image File Format para las cámaras digitales fijas: versión Exif 2,2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format para cámaras digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
 [propertyDescription](./propdesc-schema-propertydescription.md)
@@ -50,7 +50,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -62,7 +62,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -80,7 +80,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

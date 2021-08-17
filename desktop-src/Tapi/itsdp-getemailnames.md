@@ -1,21 +1,21 @@
 ---
-description: El método GetEmailNames obtiene una matriz de nombres de correo electrónico asociada al BLOB de la Conferencia.
+description: El método GetEmailNames obtiene una matriz de nombres de correo electrónico asociados al blob de conferencia.
 ms.assetid: e51f25d7-41e5-408e-930b-396c7ac24437
-title: 'ITSdp:: GetEmailNames (método) (Sdpblb. h)'
+title: Método ITSdp::GetEmailNames (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31f0200b5cc6ea0422f47a323cd1c57d7e0f9a5d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f74ea369210a6ca32e47bb3359000195c544374b7352da96570f6d0f58f2af4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140268"
 ---
-# <a name="itsdpgetemailnames-method"></a>ITSdp:: GetEmailNames (método)
+# <a name="itsdpgetemailnames-method"></a>ItSdp::GetEmailNames (método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Las interfaces y los controles de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **GetEmailNames** obtiene una matriz de nombres de correo electrónico asociada al BLOB de la Conferencia.
+El **método GetEmailNames** obtiene una matriz de nombres de correo electrónico asociados al blob de conferencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,17 +33,17 @@ HRESULT GetEmailNames(
 
 <dl> <dt>
 
-*pAddresses* \[ enuncia\]
+*pAddresses* \[ out\]
 </dt> <dd>
 
-Puntero **Variant** a una matriz SafeArray de **BSTR** s que enumera las direcciones de correo electrónico.
+**Puntero VARIANT** a una SAFEARRAY de **BSTR** que enumera direcciones de correo electrónico.
 
 </dd> <dt>
 
-*pNames* \[ enuncia\]
+*pNames* \[ out\]
 </dt> <dd>
 
-Puntero **Variant** a una matriz SafeArray de nombres de lista **BSTR** s.
+**Puntero VARIANT** a una SAFEARRAY de nombres de lista de **BSTR.**
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                   | Descripción                                                               |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                              |
-| <dl> <dt>**\_puntero E**</dt> </dl>     | El parámetro *pAddresses* o *pNames* no es un puntero válido.<br/> |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/>           |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                              |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | El *parámetro pAddresses* o *pNames* no es un puntero válido.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/>           |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>        | Error no especificado.<br/>                                             |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método aún no se ha implementado.<br/>                            |
 
@@ -65,9 +65,9 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las listas a las que apuntan *pAddresses* y *pNames* tienen la misma longitud.
+Las listas a *las que apuntan pAddresses* y *pNames* tienen la misma longitud.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,9 +75,9 @@ Las listas a las que apuntan *pAddresses* y *pNames* tienen la misma longitud.
 
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

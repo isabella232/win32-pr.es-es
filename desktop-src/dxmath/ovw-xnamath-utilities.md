@@ -1,19 +1,19 @@
 ---
-description: Enumera las funciones de utilidad que proporciona DirectXMath.
+description: Enumera las funciones de utilidad proporcionadas por DirectXMath.
 ms.assetid: 4d46fd96-55ca-cb66-f878-caf7894535ae
-title: Funciones de utilidad de la biblioteca DirectXMath
+title: Funciones de la utilidad DirectXMath Library
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fc2d13a8fe89db3562f5726df8567c0ae9101df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87c64e0a6f71bd307fb0c1bed55fe10ed33f43aee909e6d8493659a342282f23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118175"
 ---
-# <a name="directxmath-library-utility-functions"></a>Funciones de utilidad de la biblioteca DirectXMath
+# <a name="directxmath-library-utility-functions"></a>Funciones de la utilidad DirectXMath Library
 
-Enumera las funciones de utilidad que proporciona DirectXMath.
+Enumera las funciones de utilidad proporcionadas por DirectXMath.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,13 +23,13 @@ Enumera las funciones de utilidad que proporciona DirectXMath.
 |-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | [**XMComparisonAllFalse**](/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparisonallfalse)<br/>             | Comprueba el valor de comparación para determinar si todos los componentes comparados son false.<br/>                            |
 | [**XMComparisonAllInBounds**](/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparisonallinbounds)<br/>       | Comprueba el valor de comparación para determinar si todos los componentes comparados están dentro de los límites establecidos.<br/>                |
-| [**XMComparisonAllTrue**](/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparisonalltrue)<br/>               | Comprueba el valor de comparación para determinar si todos los componentes comparados son true.<br/>                             |
+| [**XMComparisonAllTrue**](/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparisonalltrue)<br/>               | Comprueba el valor de comparación para determinar si todos los componentes comparados son verdaderos.<br/>                             |
 | [**XMComparisonAnyFalse**](/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparisonanyfalse)<br/>             | Comprueba el valor de comparación para determinar si alguno de los componentes comparados es false.<br/>                            |
 | [**XMComparisonAnyOutOfBounds**](/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparisonanyoutofbounds)<br/> | Comprueba el valor de comparación para determinar si alguno de los componentes comparados está fuera de los límites establecidos.<br/>           |
 | [**XMComparisonAnyTrue**](/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparisonanytrue)<br/>               | Comprueba el valor de comparación para determinar si alguno de los componentes comparados es true.<br/>                             |
-| [**XMComparisonMixed**](/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparisonmixed)<br/>                   | Comprueba el valor de comparación para determinar si los componentes comparados tenían resultados mixtos; algunos son true y otros falsos.<br/> |
-| [**XMFresnelTerm**](/windows/win32/api/directxmath/nf-directxmath-xmfresnelterm)<br/>                           | Calcula el término Fresnel para la luz no polarizada.<br/>                                                              |
-| [**XMVerifyCPUSupport**](/windows/win32/api/directxmath/nf-directxmath-xmverifycpusupport)<br/>                 | Indica si la biblioteca de DirectXMath es compatible con la plataforma actual.<br/>                                             |
+| [**XMComparisonMixed**](/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparisonmixed)<br/>                   | Comprueba el valor de comparación para determinar si los componentes comparados tenían resultados mixtos, algunos verdaderos y otros falsos.<br/> |
+| [**XMFresnelTerm**](/windows/win32/api/directxmath/nf-directxmath-xmfresnelterm)<br/>                           | Calcula el término Fresnel para la luz nopolarizada.<br/>                                                              |
+| [**XMVerifyCPUSupport**](/windows/win32/api/directxmath/nf-directxmath-xmverifycpusupport)<br/>                 | Indica si la biblioteca DirectXMath admite la plataforma actual.<br/>                                             |
 
 
 
@@ -39,7 +39,7 @@ Enumera las funciones de utilidad que proporciona DirectXMath.
 
 <dl> <dt>
 
-[Funciones de la biblioteca de DirectXMath](ovw-xnamath-reference-functions.md)
+[Funciones de la biblioteca DirectXMath](ovw-xnamath-reference-functions.md)
 </dt> </dl>
 
  

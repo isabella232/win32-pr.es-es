@@ -1,7 +1,7 @@
 ---
-description: El \_ método put AlphaRamp especifica la propiedad de rampa alfa. La rampa alfa es el porcentaje por el que se ajustan los valores alfa de la imagen original. Por ejemplo, si la rampa alfa es 0,5, los valores alfa de la imagen se reducen al 50%.
+description: El método \_ put AlphaRamp especifica la propiedad de rampa alfa. La rampa alfa es el porcentaje por el que se ajustan los valores alfa de la imagen original. Por ejemplo, si la rampa alfa es 0,5, los valores alfa de la imagen se reducen un 50 %.
 ms.assetid: 19ea5828-54fc-43a1-be7c-f6c12cf84648
-title: 'IDxtAlphaSetter: método de ut_AlphaRamp de:p (QEDIT. h)'
+title: Método IDxtAlphaSetter::p ut_AlphaRamp (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: fc6c0eb4d5286081de9abe0c7c6d58092d111573
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 88661c40ea0824d643909f688a7d86251c434e0e3dcc88d8a3aec97dcb6b40c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952734"
 ---
-# <a name="idxtalphasetterput_alpharamp-method"></a>IDxtAlphaSetter::p \_ método AlphaRamp UT
+# <a name="idxtalphasetterput_alpharamp-method"></a>Método IDxtAlphaSetter::p ut \_ AlphaRamp
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `put_AlphaRamp` método especifica la propiedad de rampa alfa. La rampa alfa es el porcentaje por el que se ajustan los valores alfa de la imagen original. Por ejemplo, si la rampa alfa es 0,5, los valores alfa de la imagen se reducen al 50%.
+El `put_AlphaRamp` método especifica la propiedad de rampa alfa. La rampa alfa es el porcentaje por el que se ajustan los valores alfa de la imagen original. Por ejemplo, si la rampa alfa es 0,5, los valores alfa de la imagen se reducen un 50 %.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,28 +45,28 @@ HRESULT put_AlphaRamp(
 
 <dl> <dt>
 
-*Alfa* \[ de\]
+*Alfa* \[ En\]
 </dt> <dd>
 
-La rampa alfa como un porcentaje. Por ejemplo, 1,0 es 100%. Para deshabilitar esta propiedad, establezca un valor negativo.
+Rampa alfa como porcentaje. Por ejemplo, 1,0 es 100 %. Para deshabilitar esta propiedad, establezca un valor negativo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si establece esta propiedad en un valor no negativo, también debe deshabilitar la propiedad alfa llamando a **Put \_ Alpha** con un valor negativo. De lo contrario, el efecto no se representará correctamente.
+Si establece esta propiedad en un valor no negativo, también debe deshabilitar la propiedad alfa mediante una llamada a **put \_ Alpha** con un valor negativo. De lo contrario, el efecto no se representará correctamente.
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ Si establece esta propiedad en un valor no negativo, también debe deshabilitar 
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -85,10 +85,10 @@ Si establece esta propiedad en un valor no negativo, también debe deshabilitar 
 
 <dl> <dt>
 
-[**Interfaz IDxtAlphaSetter**](idxtalphasetter.md)
+[**IDxtAlphaSetter (interfaz)**](idxtalphasetter.md)
 </dt> <dt>
 
-[**IDxtAlphaSetter::p el \_ alfa de UT**](idxtalphasetter-put-alpha.md)
+[**IDxtAlphaSetter::put \_ Alpha**](idxtalphasetter-put-alpha.md)
 </dt> </dl>
 
  

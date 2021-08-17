@@ -1,5 +1,5 @@
 ---
-description: 'Método RequestStateChange de la Msvm_StorageJob: solicita un cambio de estado.'
+description: 'Método RequestStateChange de la Msvm_StorageJob clase : solicita un cambio de estado.'
 ms.assetid: 2960bc44-f2af-49c6-9c33-5d9e1ad8056c
 title: Método RequestStateChange de la Msvm_StorageJob clase
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: e15f28af892e713f8bd6897b2d75b6b227886ad1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6190f27e13771180564a2b943e9db4b8f1437c2a46c1626f1a028015a3fc7a69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950203"
 ---
-# <a name="requeststatechange-method-of-the-msvm_storagejob-class"></a>Método RequestStateChange de la clase StorageJob de Msvm \_
+# <a name="requeststatechange-method-of-the-msvm_storagejob-class"></a>Método RequestStateChange de la clase \_ StorageJob de Msvm
 
 Solicita un cambio de estado.
 
@@ -119,7 +119,7 @@ Coloca el trabajo en un estado de servicio específico del proveedor. Es posible
 *TimeoutPeriod* \[ En\]
 </dt> <dd>
 
-Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar el período de tiempo de espera. Un valor de 0 o **Null** indica que el cliente no tiene requisitos de tiempo para la transición. Si esta propiedad no contiene 0 o **Null** y la implementación no admite este parámetro, se debe devolver un código de retorno 4098 **(No** se admite el uso del parámetro de tiempo de espera).
+Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar el período de tiempo de espera. Un valor de 0 o **Null** indica que el cliente no tiene ningún requisito de tiempo para la transición. Si esta propiedad no contiene 0 o **Null** y la implementación no admite este parámetro, se debe devolver un código de retorno 4098 (**Use Of Timeout Parameter Not Supported**).
 
 </dd> </dl>
 
@@ -169,7 +169,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -179,7 +179,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

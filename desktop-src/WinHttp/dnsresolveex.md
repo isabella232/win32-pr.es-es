@@ -1,7 +1,7 @@
 ---
-description: Resolver una cadena de host en su dirección IP
+description: Resolución de una cadena de host en su dirección IP
 ms.assetid: 32d70f10-803b-484d-a9e0-d4c61a8d897f
-title: dnsResolveEx función)
+title: Función dnsResolveEx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 1c63ba3e20653c41864394d9c563c851f2aab5e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0f0100367d4fad6d6e0b013e5d552f733086e6ddd5bc720779ef1fb5b65cdce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133228"
 ---
-# <a name="dnsresolveex-function"></a>dnsResolveEx función)
+# <a name="dnsresolveex-function"></a>Función dnsResolveEx
 
-Resolver una cadena de host en su dirección IP
+Resolución de una cadena de host en su dirección IP
 
 ## <a name="parameters"></a>Parámetros
 
@@ -36,11 +36,11 @@ Cadena que contiene el host HTTP que se proporciona a FindProxyForUrl.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Cadena delimitada por signos de punto y coma que contiene direcciones IPv6 e IPv4, o una cadena vacía si el host no se pueda resolver.
+Cadena delimitada por punto y coma que contiene direcciones IPv6 e IPv4 o una cadena vacía si el host no se puede resolver.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los implementadores de FindProxyforURLEx deben agregar código que interrumpa la cadena de direcciones IP delimitadas por punto y coma en direcciones independientes.
+Los implementadores FindProxyforURLEx deben agregar código que divide la cadena de direcciones IP delimitadas por punto y coma en direcciones independientes.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -53,10 +53,10 @@ dnsResolveEx("testmachine1");
 
 <dl> <dt>
 
-[Definiciones de API de aplicación auxiliar de proxy compatible con IPv6](ipv6-aware-proxy-helper-api-definitions.md)
+[Definiciones de API del asistente de proxy compatibles con IPv6](ipv6-aware-proxy-helper-api-definitions.md)
 </dt> <dt>
 
-[Extensiones IPv6 para el formato de archivo de configuración automática de navegador](ipv6-extensions-to-navigator-auto-config-file-format.md)
+[Extensiones IPv6 para el formato de archivo de configuración automática del navegador](ipv6-extensions-to-navigator-auto-config-file-format.md)
 </dt> </dl>
 
  

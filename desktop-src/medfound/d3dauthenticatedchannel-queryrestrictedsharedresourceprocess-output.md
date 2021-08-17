@@ -72,9 +72,9 @@ Un identificador de proceso. Si el **miembro ProcessIdentifier** es igual a **PR
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El Administrador de ventanas de escritorio de Administrador de ventanas de escritorio (DWM) se identifica estableciendo **ProcessIdentifier** igual a **PROCESSIDTYPE \_ DWM.** Otros procesos se identifican estableciendo el identificador de proceso **en ProcessHandle** y estableciendo **ProcessIdentifier** igual a **PROCESSIDTYPE \_ HANDLE**.
+El Administrador de ventanas de escritorio de Administrador de ventanas de escritorio (DWM) se identifica estableciendo **ProcessIdentifier** como **PROCESSIDTYPE \_ DWM.** Otros procesos se identifican estableciendo el identificador de proceso **en ProcessHandle** y estableciendo **ProcessIdentifier** igual a **PROCESSIDTYPE \_ HANDLE**.
 
 ## <a name="requirements"></a>Requisitos
 

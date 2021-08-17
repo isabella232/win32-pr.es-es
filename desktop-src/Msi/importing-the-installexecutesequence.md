@@ -13,13 +13,13 @@ ms.locfileid: "119430775"
 ---
 # <a name="importing-the-installexecutesequence"></a>Importación de InstallExecuteSequence
 
-En [la tabla InstallExecuteSequence](installexecutesequence-table.md) se enumeran las acciones que se ejecutan cuando el instalador ejecuta la acción [INSTALL de nivel superior.](install-action.md) Vea [Grupo de tablas de procedimientos de](installation-procedure-tables-group.md)instalación , Uso de una tabla de [secuencia](using-a-sequence-table.md)y Ejemplo detallado de tabla [de secuencia.](sequence-table-detailed-example.md)
+En [la tabla InstallExecuteSequence](installexecutesequence-table.md) se enumeran las acciones que se ejecutan cuando el instalador ejecuta la acción [INSTALL de nivel superior.](install-action.md) Vea [Grupo de tablas de procedimientos de](installation-procedure-tables-group.md)instalación , Uso de una tabla de [secuencia](using-a-sequence-table.md)y Ejemplo detallado de tabla [de secuencias](sequence-table-detailed-example.md).
 
 Si en [](importing-a-blank-database.md) la sección Importación de una base de datos en blanco usó uisample.msi desde el SDK del instalador de Windows, las tablas de secuencia de la copia de MNP2000.msi ya contienen las secuencias de acciones sugeridas descritas en Uso de una tabla de [secuencia.](using-a-sequence-table.md) No es necesario realizar ningún cambio en estas secuencias para crear el Bloc de notas de instalación.
 
 Use el editor de bases de datos para MNP2000.msi y escriba los datos siguientes en la tabla InstallExecuteSequence.
 
-[InstallExecuteSequence Table](installexecutesequence-table.md)
+[Tabla InstallExecuteSequence](installexecutesequence-table.md)
 
 
 
@@ -81,7 +81,7 @@ Use el editor de bases de datos para MNP2000.msi y escriba los datos siguientes 
 | UnregisterComPlus        |               | 2100     |
 | UnregisterExtensionInfo  |               | 2800     |
 | UnregisterFonts          |               | 2.500     |
-| Anulación del registroMIMEInfo       |               | 3000     |
+| UnregisterMIMEInfo       |               | 3000     |
 | UnregisterProgIdInfo     |               | 2900     |
 | UnregisterTypeLibraries  |               | 2300     |
 | ValidateProductID        |               | 700      |

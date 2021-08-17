@@ -74,7 +74,7 @@ Tipo: **BOOL**
 
 ## <a name="remarks"></a>Comentarios
 
-Esta función no se declara en un encabezado ni se exporta por nombre desde un .dll archivo. Debe cargarse desde Shell32.dll como ordinal 703 para **GUIDFromStringA** y ordinal 704 para **GUIDFromStringW.**
+Esta función no se declara en un encabezado ni se exporta por nombre desde un .dll archivo. Se debe cargar desde Shell32.dll como ordinal 703 para **GUIDFromStringA** y ordinal 704 para **GUIDFromStringW.**
 
 También se puede acceder a Shlwapi.dll como ordinal 269 para **GUIDFromStringA** y ordinal 270 para **GUIDFromStringW.**
 
@@ -82,9 +82,9 @@ También se puede acceder a Shlwapi.dll como ordinal 269 para **GUIDFromStringA*
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                            |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **GUIDFromStringW** (Unicode) y **GUIDFromStringA** (ANSI)<br/>                |

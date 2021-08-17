@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_DWMCOLORIZATIONCOLORCHANGED (Winuser. h)
-description: Informa a todas las ventanas de nivel superior que el color de coloración ha cambiado.
+title: WM_DWMCOLORIZATIONCOLORCHANGED mensaje (Winuser.h)
+description: Informa a todas las ventanas de nivel superior de que el color de color ha cambiado.
 ms.assetid: 6118d41b-f0b4-4034-aa98-d8757f18ca0d
 keywords:
-- WM_DWMCOLORIZATIONCOLORCHANGED Administrador de ventanas de escritorio de mensaje
+- WM_DWMCOLORIZATIONCOLORCHANGED mensaje Administrador de ventanas de escritorio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc99d42fe2d4af77fa4534945a3396dda9c02b25
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5bdbb854821f2a25565241700d28964b2d32319bccb8226c3d7d789c0e457fff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094595"
 ---
-# <a name="wm_dwmcolorizationcolorchanged-message"></a>Mensaje de DWMCOLORIZATIONCOLORCHANGED de WM \_
+# <a name="wm_dwmcolorizationcolorchanged-message"></a>Mensaje \_ DWMCOLORIZATIONCOLORCHANGED de WM
 
-Informa a todas las ventanas de nivel superior que el color de coloración ha cambiado.
+Informa a todas las ventanas de nivel superior de que el color de color ha cambiado.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,14 +32,14 @@ Informa a todas las ventanas de nivel superior que el color de coloración ha ca
 *wParam* 
 </dt> <dd>
 
-Especifica el nuevo color de color. El formato de color es 0xAARRGGBB.
+Especifica el nuevo color de coloración. El formato de color es 0xAARRGGBB.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Especifica si el nuevo color se mezcla con opacidad.
+Especifica si el nuevo color se combina con opacidad.
 
 </dd> </dl>
 
@@ -47,21 +47,21 @@ Especifica si el nuevo color se mezcla con opacidad.
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
-[**DwmGetColorizationColor**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmgetcolorizationcolor) se utiliza para determinar el valor de color actual.
+[**DwmGetColorizationColor**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmgetcolorizationcolor) se usa para determinar el valor de color actual.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 

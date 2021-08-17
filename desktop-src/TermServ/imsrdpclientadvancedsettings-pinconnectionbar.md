@@ -1,26 +1,26 @@
 ---
-title: Propiedad PinConnectionBar de IMsRdpClientAdvancedSettings
+title: Propiedad IMsRdpClientAdvancedSettings PinConnectionBar
 description: Especifica el estado de la barra de conexión de la interfaz de usuario.
 ms.assetid: b1f9cb02-3ee3-4574-a874-2584b0d5b47e
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad PinConnectionBar
-- Propiedad PinConnectionBar Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad PinConnectionBar
-- Propiedad PinConnectionBar Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad PinConnectionBar
-- Propiedad PinConnectionBar Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad PinConnectionBar
-- Propiedad PinConnectionBar Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad PinConnectionBar
-- Propiedad PinConnectionBar Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad PinConnectionBar
-- Propiedad PinConnectionBar Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad PinConnectionBar
-- Propiedad PinConnectionBar Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad PinConnectionBar
-- Propiedad PinConnectionBar Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad PinConnectionBar
+- PinConnectionBar, propiedad Servicios de Escritorio remoto
+- Propiedad PinConnectionBar Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad PinConnectionBar
+- Propiedad PinConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad PinConnectionBar
+- Propiedad PinConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad PinConnectionBar
+- Propiedad PinConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad PinConnectionBar
+- Propiedad PinConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad PinConnectionBar
+- Propiedad PinConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad PinConnectionBar
+- Propiedad PinConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad PinConnectionBar
+- Propiedad PinConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad PinConnectionBar
 topic_type:
 - apiref
 api_name:
@@ -54,22 +54,22 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0da294d933026194d7307a7fa0a175575761809e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b2b16f5a1aedac7a7baa099e8586439b005842d7c1bdc11958d51def8fb45fb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058993"
 ---
-# <a name="imsrdpclientadvancedsettingspinconnectionbar-property"></a>IMsRdpClientAdvancedSettings::P propiedad inConnectionBar
+# <a name="imsrdpclientadvancedsettingspinconnectionbar-property"></a>IMsRdpClientAdvancedSettings::P inConnectionBar
 
 Especifica el estado de la barra de conexión de la interfaz de usuario.
 
-Esta propiedad devuelve **E \_ NOTIMPL** si el contenedor llama al método [**IObjectSafety:: SetInterfaceSafetyOptions**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768225(v=vs.85)) .
+Esta propiedad devuelve **E \_ NOTIMPL** si el contenedor llama al [**método IObjectSafety::SetInterfaceSafetyOptions.**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768225(v=vs.85))
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -86,15 +86,15 @@ HRESULT get_PinConnectionBar(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Al establecer esta propiedad en **Variant \_ true** , el estado se establece en "lowerd", es decir, no es visible para el usuario y no está disponible para la entrada. **Variante \_ FALSE** establece el estado en "generated" y disponible para los datos proporcionados por el usuario.
+Si se establece esta propiedad en **VARIANT \_ TRUE,** el estado se establece en "lowered", es decir, es invisible para el usuario y no está disponible para la entrada. **VARIANT \_ FALSE** establece el estado en "elevado" y disponible para la entrada del usuario.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

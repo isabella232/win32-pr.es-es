@@ -1,6 +1,6 @@
 ---
 UID: NF:ntw.EtwEventUnregister
-title: EtwEventUnregister función)
+title: Función EtwEventUnregister
 description: Anula el registro de un evento.
 old-location: ''
 ms.assetid: na
@@ -10,8 +10,8 @@ ms.topic: reference
 req.header: ntetw.h
 req.include-header: ''
 req.target-type: Windows
-req.target-min-winverclnt: Windows 10, version 1803 [desktop apps \| UWP apps]
-req.target-min-winversvr: Windows 10, version 1803 [desktop apps \| UWP apps]
+req.target-min-winverclnt: Windows 10, version 1803 [desktop apps \| UWP apps]
+req.target-min-winversvr: Windows 10, version 1803 [desktop apps \| UWP apps]
 req.kmdf-ver: ''
 req.umdf-ver: ''
 req.ddi-compliance: ''
@@ -36,23 +36,23 @@ api_name:
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: e61de5aa1c050aedd2c82dec471765baa7e6cdd7
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f2918aa3eb5ca3440496aa1f6ef51363045d5b8704b8b6fca059e68ba19a112d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104149242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070105"
 ---
-# <a name="etweventunregister-function"></a>EtwEventUnregister función)
+# <a name="etweventunregister-function"></a>Función EtwEventUnregister
 
 
 ## <a name="description"></a>Descripción
 
 
-El <b>EtwEventUnregister</b> anula el registro de un evento.
+<b>EtwEventUnregister</b> anula el registro de un evento.
             
 
-Los proveedores solo pueden llamar a esta función desde su función <a href="/windows/desktop/ETW/controlcallback">ControlCallback</a> .
+Los proveedores solo pueden llamar a esta función desde su <a href="/windows/desktop/ETW/controlcallback">función ControlCallback.</a>
 
 
 ## <a name="parameters"></a>Parámetros
@@ -75,7 +75,7 @@ Devuelve un valor HRESULT.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 

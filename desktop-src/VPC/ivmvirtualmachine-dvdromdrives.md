@@ -26,7 +26,7 @@ ms.locfileid: "119471825"
 ---
 # <a name="ivmvirtualmachinedvdromdrives-property"></a>IVMVirtualMachine::D VDROMDrives
 
-\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use el proveedor WMI de [Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera una colección enumerable de unidades de CD y DVD conectadas a la máquina virtual.
 
@@ -69,7 +69,7 @@ Objeto [**IVMDVDDriveCollection.**](ivmdvddrivecollection.md)
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
 | Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
-| Product<br/>                  | Windows Virtual PC<br/>                                                                 |
+| Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
 | Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 | IID<br/>                      | IID IVMVirtualMachine se define como \_ f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
 

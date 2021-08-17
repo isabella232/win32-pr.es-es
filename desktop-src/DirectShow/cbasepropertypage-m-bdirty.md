@@ -1,7 +1,7 @@
 ---
-description: La \_ marca m bDirty indica si alguna de las propiedades ha cambiado. Establezca esta marca en TRUE si el usuario cambia las propiedades a través de los controles de cuadro de diálogo.
+description: La marca \_ m bDirty indica si alguna de las propiedades ha cambiado. Establezca esta marca en TRUE si el usuario cambia las propiedades a través de los controles de cuadro de diálogo.
 ms.assetid: 7455a45b-4d6d-410a-aed6-7003d4ed2183
-title: 'Miembro CBasePropertyPage:: m_bDirty (Cprop. h)'
+title: CBasePropertyPage::m_bDirty miembro (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 85e3481c66925b667e8791328c84afeb18fe90e6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fd6737b7317c5bd86e756bfbd45d9d69e461f92ecc007d739203519170ee57f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955044"
 ---
-# <a name="cbasepropertypagem_bdirty-member"></a>Miembro bDirty CBasePropertyPage:: m \_
+# <a name="cbasepropertypagem_bdirty-member"></a>Miembro CBasePropertyPage::m \_ bDirty
 
-La marca **m \_ bDirty** indica si alguna de las propiedades ha cambiado. Establezca esta marca en **true** si el usuario cambia las propiedades a través de los controles de cuadro de diálogo.
+La **marca \_ m bDirty** indica si alguna de las propiedades ha cambiado. Establezca esta marca en **TRUE si** el usuario cambia las propiedades a través de los controles de cuadro de diálogo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ BOOL m_bDirty;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Cprop. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Cprop.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ BOOL m_bDirty;
 
 <dl> <dt>
 
-[**Clase CBasePropertyPage**](cbasepropertypage.md)
+[**CBasePropertyPage (clase)**](cbasepropertypage.md)
 </dt> </dl>
 
  

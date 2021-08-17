@@ -1,12 +1,12 @@
 ---
-title: Propiedad IsCompositeDevice de IMsRdpDeviceV2
+title: IMsRdpDeviceV2 IsCompositeDevice, propiedad
 description: Especifica si el dispositivo es un dispositivo compuesto.
 ms.assetid: cc54f3f0-de0b-4f75-b5a1-4f061ac95ab5
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad IsCompositeDevice
-- Propiedad IsCompositeDevice Servicios de Escritorio remoto, interfaz IMsRdpDeviceV2
-- Servicios de Escritorio remoto de la interfaz IMsRdpDeviceV2, propiedad IsCompositeDevice
+- Propiedad IsCompositeDevice Servicios de Escritorio remoto
+- Propiedad IsCompositeDevice Servicios de Escritorio remoto interfaz , IMsRdpDeviceV2
+- Interfaz IMsRdpDeviceV2 Servicios de Escritorio remoto , propiedad IsCompositeDevice
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2341544543f436272486a839ffdd3ee68a4a4478
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c271c78eabd007641033d7171edc4b4ced1a70b9f18eb366fb30a8bac75254f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138558"
 ---
-# <a name="imsrdpdevicev2iscompositedevice-property"></a>IMsRdpDeviceV2:: IsCompositeDevice (propiedad)
+# <a name="imsrdpdevicev2iscompositedevice-property"></a>IMsRdpDeviceV2::IsCompositeDevice, propiedad
 
 Especifica si el dispositivo es un dispositivo compuesto.
 
@@ -44,7 +44,7 @@ HRESULT get_IsCompositeDevice(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**true** si el dispositivo es un dispositivo compuesto; en caso contrario, **false**.
+**true** si el dispositivo es un dispositivo compuesto; de lo contrario, **false**.
 
 ## <a name="requirements"></a>Requisitos
 

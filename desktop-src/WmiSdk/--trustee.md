@@ -1,8 +1,8 @@
 ---
-description: La \_ \_ clase de sistema abstracta de administrador de confianza representa un administrador de confianza. Se puede usar un nombre o un SID (matriz de bytes).
+description: La \_ \_ clase de sistema abstracta Trustee representa a un administrador de confianza. Se puede usar un nombre o un SID (matriz de bytes).
 ms.assetid: 92d17c7c-ebca-4dd0-80d8-6edd999ca394
 ms.tgt_platform: multiple
-title: __Trustee (clase)
+title: __Trustee clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,16 +20,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 5c6ba04760e924ffe9d86916cffdb82ea2488219
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac1e80bceb3dc584a22e342780bbf32660276868e473ff33ff01d6c2ad65d504
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104547182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131958"
 ---
-# <a name="__trustee-class"></a>\_\_Trustee (clase)
+# <a name="__trustee-class"></a>\_\_Clase de administrador de confianza
 
-La clase de sistema abstracta de [**\_ \_ Administrador de confianza**](--securitydescriptor.md) representa un administrador de [*confianza*](/windows/desktop/SecGloss/t-gly). Se puede usar un nombre o un SID (matriz de bytes).
+La clase de sistema [**\_ \_ abstracta Trustee**](--securitydescriptor.md) representa a un [*administrador de confianza.*](/windows/desktop/SecGloss/t-gly) Se puede usar un nombre o un SID (matriz de bytes).
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -49,13 +49,13 @@ class __Trustee
 
 ## <a name="members"></a>Miembros
 
-La clase **\_ \_ Trustee** tiene estos tipos de miembros:
+La **\_ \_ clase Trustee** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **\_ \_ Trustee** tiene estas propiedades.
+La **\_ \_ clase Trustee** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -65,10 +65,10 @@ La clase **\_ \_ Trustee** tiene estas propiedades.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Parte del dominio de la cuenta.
+Parte de dominio de la cuenta.
 
 </dd> <dt>
 
@@ -78,33 +78,33 @@ Parte del dominio de la cuenta.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Parte del nombre de la cuenta.
+Nombre de la parte de la cuenta.
 
 </dd> <dt>
 
 **SID**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-El SID del administrador de confianza en el formato de la matriz de bytes binaria.
+SID del administrador de confianza en el formato de matriz de bytes binarios.
 
 </dd> <dt>
 
 **SidLength**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Longitud del SID en bytes.
@@ -117,29 +117,29 @@ Longitud del SID en bytes.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-SID del administrador de confianza en el formato de cadena, por ejemplo, "S-1-1-0".
+SID del administrador de confianza en formato de cadena, por ejemplo, "S-1-1-0".
 
 </dd> <dt>
 
-**HORA de \_ creación**
+**HORA \_ CREADA**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Hora en el formato de [ \_ fecha y](cim-datetime.md) hora de CIM cuando se creó el descriptor de seguridad.
+Hora en el [formato \_ DATETIME de CIM](cim-datetime.md) en la que se creó el descriptor de seguridad.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta clase proporciona propiedades heredadas por la clase [**de \_ Administrador de confianza de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-trustee) , que es miembro de la clase [**\_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) . Para obtener más información, vea [objetos de descriptor de seguridad de WMI](wmi-security-descriptor-objects.md) y cambiar la [seguridad de acceso en objetos protegibles](changing-access-security-on-securable-objects.md). Para obtener más información sobre las ACE, vea [componentes de Access Control](/windows/desktop/SecAuthZ/access-control-components).
+Esta clase proporciona propiedades heredadas por la clase De confianza de [**\_ Win32,**](/previous-versions/windows/desktop/secrcw32prov/win32-trustee) que es miembro de la clase [**\_ SecurityDescriptor de Win32.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) Para obtener más información, vea [Objetos descriptores de seguridad WMI y](wmi-security-descriptor-objects.md) Cambiar la seguridad de acceso en objetos [protegibles.](changing-access-security-on-securable-objects.md) Para obtener más información sobre las ACE, [vea Access Control Components](/windows/desktop/SecAuthZ/access-control-components).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -160,10 +160,10 @@ Esta clase proporciona propiedades heredadas por la clase [**de \_ Administrador
 [Clases del sistema WMI](wmi-system-classes.md)
 </dt> <dt>
 
-[**Administrador de confianza de Win32 \_**](/previous-versions/windows/desktop/secrcw32prov/win32-trustee)
+[**Administrador de \_ Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-trustee)
 </dt> <dt>
 
-[Mantenimiento de la seguridad de WMI](maintaining-wmi-security.md)
+[Mantener la seguridad de WMI](maintaining-wmi-security.md)
 </dt> </dl>
 
  

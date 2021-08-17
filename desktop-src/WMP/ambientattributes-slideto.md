@@ -56,7 +56,7 @@ El **método slideTo** mueve el control a una nueva ubicación. El control se mu
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método es diferente de **moveTo**, que crea un movimiento lineal al mover el control. El movimiento no lineal creado por este método es un movimiento deslizante que se acelera a partir de una velocidad de cero al principio del movimiento y se reduce a cero al final, y se detiene sin problemas.
 
