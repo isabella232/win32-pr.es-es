@@ -1,11 +1,11 @@
 ---
-title: Schema-Update atributo)
-description: El atributo Schema-Update no se usa actualmente.
+title: Schema-Update atributo
+description: El Schema-Update no se usa actualmente.
 ms.assetid: 520c8e3f-4327-41c2-9ddf-15d1e5fb3f58
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Schema-Update
-- schemaUpdate esquema de AD de atributos
+- Schema-Update esquema de AD de atributo
+- Esquema de AD del atributo schemaUpdate
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e1359f86af315b31d9b885e81114d72885ed658
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2ba88675b9f0672c220030496c1ba96dee395dfc956316dd2d37a96e7f989a8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923275"
 ---
-# <a name="schema-update-attribute"></a>Schema-Update atributo)
+# <a name="schema-update-attribute"></a>Schema-Update atributo
 
-El atributo **Schema-Update** no se usa actualmente.
+El **atributo Schema-Update** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------------------------|
 | CN                | Schema-Update                                                 |
-| Nombre para mostrar de LDAP | schemaUpdate                                                  |
-| Tamaño              | \-                                                            |
-| Actualizar privilegio  | \-                                                            |
+| Ldap-Display-Name | schemaUpdate                                                  |
+| Size              | \-                                                            |
+| Actualizar privilegios  | \-                                                            |
 | Frecuencia de actualización  | \-                                                            |
 | Attribute-Id      | 1.2.840.113556.1.4.481                                        |
-| System-ID-GUID    | 1e2d06b4-ac8f-11d0-afe3-00c04fd930c9                          |
-| Sintaxis            | [**String(Generalized-Time)**](s-string-generalized-time.md) |
+| System-Id-Guid    | 1e2d06b4-ac8f-11d0-afe3-00c04fd930c9                          |
+| Syntax            | [**String(Generalized-Time)**](s-string-generalized-time.md) |
 
 
 
@@ -44,7 +44,7 @@ El atributo **Schema-Update** no se usa actualmente.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -54,20 +54,20 @@ El atributo **Schema-Update** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Clases usadas en        | [**DMD**](c-dmd.md)<br/> |
+| Clases usadas en        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -75,41 +75,41 @@ El atributo **Schema-Update** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Clases usadas en        | [**DMD**](c-dmd.md)<br/> |
+| Clases usadas en        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Clases usadas en        | [**DMD**](c-dmd.md)<br/> |
+| Clases usadas en        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -117,20 +117,20 @@ El atributo **Schema-Update** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Clases usadas en        | [**DMD**](c-dmd.md)<br/> |
+| Clases usadas en        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -138,20 +138,20 @@ El atributo **Schema-Update** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Clases usadas en        | [**DMD**](c-dmd.md)<br/> |
+| Clases usadas en        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -159,20 +159,20 @@ El atributo **Schema-Update** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Clases usadas en        | [**DMD**](c-dmd.md)<br/> |
+| Clases usadas en        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -180,20 +180,20 @@ El atributo **Schema-Update** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Clases usadas en        | [**DMD**](c-dmd.md)<br/> |
+| Clases usadas en        | [**Dmd**](c-dmd.md)<br/> |
 
 
 

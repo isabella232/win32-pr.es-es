@@ -1,11 +1,11 @@
 ---
 title: Método IDWriteTextLayout3 SetLineSpacing
-description: Establecer el espaciado de línea. | Método IDWriteTextLayout3 SetLineSpacing
+description: Establezca el espaciado de línea. | Método IDWriteTextLayout3 SetLineSpacing
 ms.assetid: 1bfca257-189c-4d18-628c-aff8217d2775
 keywords:
-- Escritura directa del método SetLineSpacing
-- Método SetLineSpacing direct write , interfaz IDWriteTextLayout3
-- Método SetLineSpacing de la interfaz IDWriteTextLayout3
+- SetLineSpacing method Direct Write
+- Método SetLineSpacing Direct Write , interfaz IDWriteTextLayout3
+- Interfaz IDWriteTextLayout3 Escritura directa, método SetLineSpacing
 topic_type:
 - apiref
 api_name:
@@ -25,7 +25,7 @@ ms.locfileid: "118649383"
 ---
 # <a name="idwritetextlayout3setlinespacing-method"></a>Método IDWriteTextLayout3::SetLineSpacing
 
-Establecer el espaciado de línea.
+Establezca el espaciado de línea.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,17 +57,17 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                 |
-| Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone silverlight 8.1 y Windows runtime\]<br/> |
+| Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/> |
 | Biblioteca<br/>                  | <dl> <dt>Dwrite.lib</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>Dwrite.dll</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

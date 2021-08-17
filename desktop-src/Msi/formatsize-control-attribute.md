@@ -39,7 +39,7 @@ Si este bit se establece para un control de texto estático, el control intenta 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para establecer este atributo en un control , incluya los bits FormatSize en la columna Atributos del registro del control en la [tabla de control](control-table.md). El texto del control debe establecerse en una cadena que represente un número expresado en unidades de 512 bytes. El texto de las cadenas de unidad se define en la tabla [UIText](uitext-table.md). La propiedad LeftUnit controla el posicionamiento de la cadena de [**unidad.**](leftunit.md) Si la **propiedad LeftUnit** se define como cualquier valor, la cadena de unidad aparece antes del valor numérico. Si aparece algo distinto de caracteres numéricos en el texto asociado al control , el valor mostrado no está definido.
 

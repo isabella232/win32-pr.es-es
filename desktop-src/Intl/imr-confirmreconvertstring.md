@@ -1,19 +1,19 @@
 ---
-description: Notifica a una aplicación cuando el IME debe cambiar la estructura RECONVERTSTRING. La aplicación recibe este comando a través del \_ mensaje de solicitud del IME \_ de WM con la configuración de parámetros, como se muestra a continuación.
+description: Notifica a una aplicación cuando el IME necesita cambiar la estructura RECONVERTSTRING. La aplicación recibe este comando a través del mensaje WM \_ IME \_ REQUEST con la configuración de parámetros, como se muestra a continuación.
 ms.assetid: 035a7072-d292-4883-bc3e-d1e9ed64d9ec
-title: Código de notificación de IMR_CONFIRMRECONVERTSTRING (IMM. h)
+title: IMR_CONFIRMRECONVERTSTRING de notificación (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c500a155be14f447bb07ad506e12d5bece66e225
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a0fd1c38c7552d09489c51b9acc897f679aa3a218e86bbba222225fcff57e90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103813683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118948802"
 ---
-# <a name="imr_confirmreconvertstring-notification-code"></a>Código de notificación de IMR \_ CONFIRMRECONVERTSTRING
+# <a name="imr_confirmreconvertstring-notification-code"></a>Código de notificación \_ CONFIRMRECONVERTSTRING de IMR
 
-Notifica a una aplicación cuando el IME debe cambiar la estructura [**RECONVERTSTRING**](/windows/win32/api/imm/ns-imm-reconvertstring) . La aplicación recibe este comando a través del mensaje de [**\_ \_ solicitud del IME de WM**](wm-ime-request.md) con la configuración de parámetros, como se muestra a continuación.
+Notifica a una aplicación cuando el IME necesita cambiar la [**estructura RECONVERTSTRING.**](/windows/win32/api/imm/ns-imm-reconvertstring) La aplicación recibe este comando a través del mensaje [**WM \_ IME \_ REQUEST**](wm-ime-request.md) con la configuración de parámetros, como se muestra a continuación.
 
 
 ```C++
@@ -26,29 +26,29 @@ LRESULT IMR_CONFIRMRECONVERTSTRING
 
 <dl> <dt>
 
-<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*wParam*
+<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*Wparam*
 </dt> <dd>
 
 Establezca en IMR \_ CONFIRMRECONVERTSTRING.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Puntero a una estructura de [**RECONVERTSTRING**](/windows/win32/api/imm/ns-imm-reconvertstring) desde el IME. Para obtener más información, vea la sección Comentarios.
+Puntero a una [**estructura RECONVERTSTRING**](/windows/win32/api/imm/ns-imm-reconvertstring) desde el IME. Para obtener más información, vea la sección Comentarios.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si la aplicación acepta la estructura [**RECONVERTSTRING**](/windows/win32/api/imm/ns-imm-reconvertstring) modificada. De lo contrario, el comando devuelve 0 y el IME usa la estructura **RECONVERTSTRING** original.
+Devuelve un valor distinto de cero si la aplicación acepta la estructura [**RECONVERTSTRING**](/windows/win32/api/imm/ns-imm-reconvertstring) modificada. De lo contrario, el comando devuelve 0 y el IME usa la **estructura RECONVERTSTRING** original.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La aplicación rellena la estructura [**RECONVERTSTRING**](/windows/win32/api/imm/ns-imm-reconvertstring) al recibir el comando [IMR \_ RECONVERTSTRING](imr-reconvertstring.md) .
+La aplicación rellena la estructura [**RECONVERTSTRING**](/windows/win32/api/imm/ns-imm-reconvertstring) al recibir el comando [ \_ IMR RECONVERTSTRING.](imr-reconvertstring.md)
 
-Una vez que la aplicación ha controlado una [IMR \_ RECONVERTSTRING](imr-reconvertstring.md), el IME podría o no ajustar la estructura [**RECONVERTSTRING**](/windows/win32/api/imm/ns-imm-reconvertstring) . El IME envía una \_ solicitud del IME \_ de WM con **IMR \_ CONFIRMRECONVERTSTRING** para confirmar los cambios en la estructura **RECONVERTSTRING** . Si la aplicación devuelve **true** para **IMR \_ CONFIRMRECONVERTSTRING**, el IME genera una nueva cadena de composición basada en la estructura **RECONVERTSTRING** para el comando **IMR \_ CONFIRMRECONVERTSTRING** . Si la aplicación devuelve **false** para **IMR \_ CONFIRMRECONVERTSTRING**, el IME genera una nueva cadena de composición basada en la estructura **RECONVERTSTRING** original especificada por la aplicación en el \_ comando IMR RECONVERTSTRING.
+Después de que la aplicación haya [manipulado IMR \_ RECONVERTSTRING,](imr-reconvertstring.md)el IME podría ajustar o no la [**estructura RECONVERTSTRING.**](/windows/win32/api/imm/ns-imm-reconvertstring) El IME envía LA \_ SOLICITUD DE WM IME con \_ **IMR \_ CONFIRMRECONVERTSTRING** para confirmar los cambios en la **estructura RECONVERTSTRING.** Si la aplicación devuelve **TRUE para** **IMR \_ CONFIRMRECONVERTSTRING,** el IME genera una nueva cadena de composición basada en la estructura **RECONVERTSTRING** para el comando **\_ CONFIRMRECONVERTSTRING de IMR.** Si la aplicación devuelve **FALSE** para **\_ IMR CONFIRMRECONVERTSTRING,** el IME genera una nueva cadena de composición basada en la estructura **RECONVERTSTRING** original especificada por la aplicación en el comando \_ RECONVERTSTRING de IMR.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,7 +58,7 @@ Una vez que la aplicación ha controlado una [IMR \_ RECONVERTSTRING](imr-reconv
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Imm.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Una vez que la aplicación ha controlado una [IMR \_ RECONVERTSTRING](imr-reconv
 [Administrador de métodos de entrada](input-method-manager.md)
 </dt> <dt>
 
-[Comandos del administrador de métodos de entrada](input-method-manager-commands.md)
+[Comandos del Administrador de métodos de entrada](input-method-manager-commands.md)
 </dt> <dt>
 
 [IMR \_ RECONVERTSTRING](imr-reconvertstring.md)
@@ -78,7 +78,7 @@ Una vez que la aplicación ha controlado una [IMR \_ RECONVERTSTRING](imr-reconv
 [**RECONVERTSTRING**](/windows/win32/api/imm/ns-imm-reconvertstring)
 </dt> <dt>
 
-[**\_solicitud de IME de WM \_**](wm-ime-request.md)
+[**SOLICITUD \_ DE WM IME \_**](wm-ime-request.md)
 </dt> </dl>
 
  

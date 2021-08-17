@@ -4,8 +4,8 @@ description: Vínculo hacia atrás Az-Operation a Az-Task objetos que se vincula
 ms.assetid: e369c2bb-876d-4dc1-8c09-c9a60b958428
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo ms-DS-Operations-For-Az-Task-BL
-- Esquema de AD del atributo msDS-OperationsForAzTaskBL
+- ms-DS-Operations-For-Az-Task-BL attribute AD Schema
+- msDS-OperationsForAzTaskBL attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -27,16 +27,16 @@ Vínculo hacia atrás Az-Operation a Az-Task objetos que se vinculan a él.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | ms-DS-Operations-For-Az-Task-BL         |
 | Ldap-Display-Name | msDS-OperationsForAzTaskBL              |
 | Size              | \-                                      |
-| Privilegio actualizar  | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | El sistema establece este valor.        |
 | Attribute-Id      | 1.2.840.113556.1.4.1809                 |
 | System-Id-Guid    | a637d211-5739-4ed1-89b2-88974548bc59    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -52,14 +52,14 @@ Vínculo hacia atrás Az-Operation a Az-Task objetos que se vinculan a él.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2019                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -73,14 +73,14 @@ Vínculo hacia atrás Az-Operation a Az-Task objetos que se vinculan a él.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2019                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -94,14 +94,14 @@ Vínculo hacia atrás Az-Operation a Az-Task objetos que se vinculan a él.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2019                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -115,14 +115,14 @@ Vínculo hacia atrás Az-Operation a Az-Task objetos que se vinculan a él.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2019                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -136,14 +136,14 @@ Vínculo hacia atrás Az-Operation a Az-Task objetos que se vinculan a él.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2019                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |

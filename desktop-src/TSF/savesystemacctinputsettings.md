@@ -1,9 +1,9 @@
 ---
-title: SaveSystemAcctInputSettings función)
-description: Aplica la configuración del servicio de texto y la distribución del teclado del usuario al subárbol cuentas del sistema.
+title: Función SaveSystemAcctInputSettings
+description: Aplica el diseño del teclado del usuario y la configuración del servicio de texto al subárbol de cuentas del sistema.
 ms.assetid: 73782637-3784-46d9-ba93-0527a2527412
 keywords:
-- SaveSystemAcctInputSettings función de servicios de texto
+- Función SaveSystemAcctInputSettings Text Services Framework
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e45d590b80a9119d78eac8363a493ecd6c7b70d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c60b9743ebbf54ce7189499f7295d44377c272b6d7cfcf5693259f12657bf06c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118875299"
 ---
-# <a name="savesystemacctinputsettings-function"></a>SaveSystemAcctInputSettings función)
+# <a name="savesystemacctinputsettings-function"></a>Función SaveSystemAcctInputSettings
 
-Aplica la configuración del servicio de texto y la distribución del teclado del usuario al subárbol cuentas del sistema.
+Aplica el diseño del teclado del usuario y la configuración del servicio de texto al subárbol de cuentas del sistema.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,17 +41,17 @@ BOOL CALLBACK SaveSystemAcctInputSettings(
 
 <dl> <dt>
 
-*hwndParent* \[ de\]
+*hwndParent* \[ En\]
 </dt> <dd>
 
-Ventana primaria para el cuadro de diálogo de advertencia. El cuadro de diálogo de advertencia no se muestra siempre y se muestra correctamente. Si este parámetro es **null**, no se mostrará el cuadro de diálogo de advertencia.
+Ventana primaria del cuadro de diálogo de advertencia. El cuadro de diálogo advertencia no siempre se muestra y aparece correctamente. Si este parámetro es **NULL,** no se mostrará el cuadro de diálogo de advertencia.
 
 </dd> <dt>
 
-*hSourceRegKey* \[ de\]
+*hSourceRegKey* \[ En\]
 </dt> <dd>
 
-La clave del Registro raíz de la configuración del usuario que se va a copiar.
+Clave raíz del Registro de la configuración de usuario que se va a copiar.
 
 </dd> </dl>
 
@@ -61,23 +61,23 @@ La clave del Registro raíz de la configuración del usuario que se va a copiar.
 
 | Código devuelto                                                                          | Descripción                               |
 |--------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**REALES**</dt> </dl>  | La función se realizó correctamente.<br/>   |
-| <dl> <dt>**ES**</dt> </dl> | Se ha producido un error no especificado.<br/> |
+| <dl> <dt>**Verdad**</dt> </dl>  | La función se ha realizado correctamente.<br/>   |
+| <dl> <dt>**Falso**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El subárbol de la cuenta del sistema es HKEY \_ users \\ . DEFAULT, HKEY \_ users \\ s-1-5-19 y HKEY \_ users \\ s-1-5-20.
+El subárbol de la cuenta del sistema es HKEY \_ USERS \\ . DEFAULT, HKEY \_ USERS \\ S-1-5-19 y HKEY \_ USERS \\ S-1-5-20.
 
 ## <a name="examples"></a>Ejemplos
 
-No hay ninguna biblioteca de importación disponible que defina esta función, por lo que es necesario obtener un puntero a esta función mediante [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress). En el ejemplo siguiente se muestra cómo obtener un puntero a esta función.
+No hay disponible ninguna biblioteca de importación que defina esta función, por lo que es necesario obtener un puntero a esta función mediante [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress). En el ejemplo siguiente se muestra cómo obtener un puntero a esta función.
 
 > [!Note]  
-> El uso incorrecto de [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) puede poner en peligro la seguridad de la aplicación mediante la carga de una DLL incorrecta. Consulte el [orden de búsqueda de la biblioteca de vínculos dinámicos](/windows/desktop/Dlls/dynamic-link-library-search-order) para obtener información sobre cómo cargar correctamente los archivos DLL con diferentes versiones de Microsoft Windows.
+> El [**uso incorrecto de LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) puede poner en peligro la seguridad de la aplicación al cargar el archivo DLL incorrecto. Consulte [Orden de búsqueda de la biblioteca de](/windows/desktop/Dlls/dynamic-link-library-search-order) vínculos dinámicos para obtener información sobre cómo cargar correctamente archivos DLL con diferentes versiones de Microsoft Windows.
 
  
 
@@ -115,8 +115,8 @@ else
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                 |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
 | Archivo DLL<br/>                      | <dl> <dt>Input.dll</dt> </dl> |
 
 

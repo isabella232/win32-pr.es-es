@@ -81,7 +81,7 @@ Puntero a una cadena terminada en NULL para el nombre de CSP.
 *dwProviderType* \[ En\]
 </dt> <dd>
 
-Valor **DWORD que** representa el tipo de proveedor criptográfico. Para obtener más información, vea [Tipos de proveedor de servicios criptográficos.](cryptographic-provider-types.md)
+Valor **DWORD** que representa el tipo de proveedor criptográfico. Para obtener más información, vea [Tipos de proveedor de servicios criptográficos](cryptographic-provider-types.md).
 
 </dd> <dt>
 
@@ -95,21 +95,21 @@ Puntero a una cadena terminada en NULL que contiene el nombre de un archivo de c
 *pwszKeyContainerName* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en NULL para el nombre del contenedor de claves privadas.
+Puntero a una cadena terminada en NULL para el nombre del contenedor de clave privada.
 
 </dd> <dt>
 
 *pdwKeySpec* \[ out\]
 </dt> <dd>
 
-Puntero a un **valor DWORD** para el tipo de clave del contenedor devuelto con *phCryptProv* y *ppwszTmpContainer*.
+Puntero a un **valor DWORD para** el tipo de clave del contenedor devuelto con *phCryptProv* y *ppwszTmpContainer*.
 
 </dd> <dt>
 
 *ppwszTmpContainer* \[ out, opcional\]
 </dt> <dd>
 
-Dirección de un puntero a una cadena terminada en NULL para el nombre del contenedor de claves temporal. La **función PvkGetCryptProv** proporciona e inicializa el contenedor temporal. Al llamar **a PvkGetCryptProv,** la dirección debe apuntar a un **valor** NULL.
+Dirección de un puntero a una cadena terminada en NULL para el nombre del contenedor de claves temporales. La **función PvkGetCryptProv** proporciona e inicializa el contenedor temporal. Al llamar **a PvkGetCryptProv**, la dirección debe apuntar a un **valor NULL.**
 
 </dd> <dt>
 
@@ -124,21 +124,21 @@ Puntero a un identificador para el CSP.
 
 Si el método se realiza correctamente, devuelve **S \_ OK**.
 
-Si se produce un error en el método, devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
+Si se produce un error en el método , devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **función PvkGetCryptProv** intenta primero obtener el identificador del proveedor del nombre del contenedor de claves especificado por el *parámetro pwszKeyContainerName.* Si pasa **NULL para** el parámetro *pwszKeyContainerName,* **PvkGetCryptProv** intenta obtener el proveedor del archivo de clave privada especificado en el *parámetro pwszPvkFile.*
+La **función PvkGetCryptProv** intenta primero obtener el identificador del proveedor del nombre del contenedor de claves especificado por el *parámetro pwszKeyContainerName.* Si pasa **NULL para** el parámetro *pwszKeyContainerName,* **PvkGetCryptProv** intenta obtener el proveedor del archivo de clave privada especificado en el parámetro *pwszPvkFile.*
 
-Cuando haya terminado de usar el CSP, libera el identificador del proveedor y el contenedor de claves temporales mediante una llamada a la [**función PvkFreeCryptProv.**](pvkfreecryptprov.md)
+Cuando haya terminado de usar csp, libera el identificador del proveedor y el contenedor de claves temporales mediante una llamada a [**la función PvkFreeCryptProv.**](pvkfreecryptprov.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Archivo DLL<br/>                      | <dl> <dt>Mssign32.dll</dt> </dl> |
 

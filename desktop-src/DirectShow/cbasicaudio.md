@@ -1,7 +1,7 @@
 ---
-description: La clase CBasicAudio implementa los métodos IDispatch de la interfaz IBasicAudio. Los métodos IBasicAudio restantes se dejan como métodos virtuales puros y se deben implementar mediante una clase derivada.
+description: La clase CBasicAudio implementa los métodos IDispatch de la interfaz IBasicAudio. Los métodos IBasicAudio restantes se quedan como métodos virtuales puros y deben implementarse mediante una clase derivada.
 ms.assetid: 6772ade4-84c5-443f-a8b5-0e8e12263f76
-title: Clase CBasicAudio (Ctlutil. h)
+title: CBasicAudio (clase, Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,20 +16,20 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e2d52b07284d10d82122e52e41b185799e12d458
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f511df84b93372fda1e557b4ebd12011fa8ef41beca9eb3d190c049564021031
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074489"
 ---
-# <a name="cbasicaudio-class"></a>Clase CBasicAudio
+# <a name="cbasicaudio-class"></a>CBasicAudio (clase)
 
-![jerarquía de clases cbasicaudio](images/cutil07.png)
+![Jerarquía de clases cbasicaudio](images/cutil07.png)
 
-La `CBasicAudio` clase implementa los métodos **IDispatch** de la interfaz [**IBasicAudio**](/windows/desktop/api/Control/nn-control-ibasicaudio) . Los métodos **IBasicAudio** restantes se dejan como métodos virtuales puros y se deben implementar mediante una clase derivada.
+La `CBasicAudio` clase implementa los métodos **IDispatch** de la [**interfaz IBasicAudio.**](/windows/desktop/api/Control/nn-control-ibasicaudio) Los métodos **IBasicAudio** restantes se quedan como métodos virtuales puros y deben implementarse mediante una clase derivada.
 
-Los métodos **IDispatch** de esta clase son implementaciones estándar y no se describen aquí en detalle.
+Los **métodos IDispatch** de esta clase son implementaciones estándar y no se describen en detalle aquí.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,8 +37,8 @@ Los métodos **IDispatch** de esta clase son implementaciones estándar y no se 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -46,7 +46,7 @@ Los métodos **IDispatch** de esta clase son implementaciones estándar y no se 
 
 <dl> <dt>
 
-[**Clase CBaseDispatch**](cbasedispatch.md)
+[**CBaseDispatch (clase)**](cbasedispatch.md)
 </dt> </dl>
 
  

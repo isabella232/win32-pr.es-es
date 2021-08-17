@@ -1,13 +1,13 @@
 ---
 title: File Secuencias (Windows Media Format 11 SDK)
-description: Archivo Secuencias
+description: Archivos Secuencias
 ms.assetid: 6a4ad6ef-dc53-4d31-8de5-ce35c343244b
 keywords:
-- Windows SDK de formato multimedia, secuencias de archivo
-- Formato de sistemas avanzados (ASF), secuencias de archivos
+- Windows SDK de formato multimedia, secuencias de archivos
+- Advanced Systems Format (ASF),file streams
 - ASF (formato de sistemas avanzados), secuencias de archivos
 - Windows SDK de formato multimedia, secuencias
-- Formato de sistemas avanzados (ASF), secuencias
+- Formato de sistemas avanzados (ASF),streams
 - ASF (formato de sistemas avanzados), secuencias
 - secuencias de archivos
 ms.topic: article
@@ -19,7 +19,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118703913"
 ---
-# <a name="file-streams"></a>Archivo Secuencias
+# <a name="file-streams"></a>Archivos Secuencias
 
 Una secuencia de archivos contiene uno o varios archivos de datos. Al transferir información de archivo como una secuencia, debe adjuntar el nombre de archivo a cada ejemplo de la secuencia. Para obtener información sobre cómo adjuntar información relacionada a ejemplos, vea [Extensiones de unidad de datos](data-unit-extensions.md).
 
@@ -27,7 +27,7 @@ Una secuencia de archivos contiene uno o varios archivos de datos. Al transferir
 
 <dl> <dt>
 
-[**Errores arbitrarios Secuencias**](arbitrary-streams.md)
+[**Datos arbitrarios Secuencias**](arbitrary-streams.md)
 </dt> <dt>
 
 [**Configuración de la transferencia de archivos Secuencias**](configuring-file-transfer-streams.md)

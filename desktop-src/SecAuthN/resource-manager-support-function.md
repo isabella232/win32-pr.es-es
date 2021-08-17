@@ -1,25 +1,25 @@
 ---
-description: Libera la memoria asignada mediante el uso del \_ designador de longitud de asignación AUTOasignada, lo que simplifica el uso de las otras funciones de Resource Manager.
+description: Libera la memoria asignada mediante el uso del designador de longitud AUTOALLOCATE de SCARD, lo que simplifica el uso de las demás funciones del administrador \_ de recursos.
 ms.assetid: 3194d539-db2d-45fc-9f78-99e763b21057
-title: Administrador de recursos función de compatibilidad
+title: Resource Manager support (Función)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7351587d036a0491ade4bdcfe2776f06d4804a3c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41c84fa5e63124c22b97f89217bf2bdbbeaa996638ee26368143624fb482bb5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118919134"
 ---
-# <a name="resource-manager-support-function"></a>Administrador de recursos función de compatibilidad
+# <a name="resource-manager-support-function"></a>Resource Manager support (Función)
 
-La siguiente función libera la memoria asignada mediante el uso del \_ designador de longitud de asignación de forma AUTOasignada, lo que simplifica el uso de las demás funciones de [*Resource Manager*](../secgloss/r-gly.md) .
+La siguiente función libera la memoria asignada mediante el uso del designador de longitud AUTOALLOCATE de SCARD, lo que simplifica el uso de las demás funciones del administrador \_ [*de*](../secgloss/r-gly.md) recursos.
 
 
 
 | Tema                                      | Descripción                                                     |
 |--------------------------------------------|-----------------------------------------------------------------|
-| [**SCardFreeMemory**](/windows/desktop/api/Winscard/nf-winscard-scardfreememory) | Liberar memoria devuelta mediante el uso de la \_ asignación de asignación de memoria. |
+| [**SCardFreeMemory**](/windows/desktop/api/Winscard/nf-winscard-scardfreememory) | Liberar memoria devuelta mediante el uso de SCARD \_ AUTOALLOCATE. |
 
 
 

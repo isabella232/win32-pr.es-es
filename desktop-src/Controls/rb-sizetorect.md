@@ -1,9 +1,9 @@
 ---
-title: Mensaje de RB_SIZETORECT (commctrl. h)
-description: Intenta encontrar el mejor diseño de las bandas del rectángulo especificado.
+title: RB_SIZETORECT mensaje (Commctrl.h)
+description: Intenta encontrar el mejor diseño de las bandas para el rectángulo especificado.
 ms.assetid: c6242b54-bd65-489b-b417-9680cc39b64a
 keywords:
-- RB_SIZETORECT controles de mensajes de Windows
+- RB_SIZETORECT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3db5727ee8c94d2473b503c9a81b7669bb829a0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ba63630fc64f56dff914b4fb576ecc6cef43d12d192606a5088924fd6a5832e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078558"
 ---
-# <a name="rb_sizetorect-message"></a>Mensaje de SIZETORECT de RB \_
+# <a name="rb_sizetorect-message"></a>Mensaje \_ SIZETORECT de RB
 
-Intenta encontrar el mejor diseño de las bandas del rectángulo especificado.
+Intenta encontrar el mejor diseño de las bandas para el rectángulo especificado.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -35,27 +35,27 @@ Intenta encontrar el mejor diseño de las bandas del rectángulo especificado.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**Rect**](/previous-versions//dd162897(v=vs.85)) que especifica el rectángulo al que se debe ajustar el tamaño del control rebar.
+Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que especifica el rectángulo al que se debe cambiar el tamaño del control rebar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si se ha producido un cambio de diseño o cero en caso contrario.
+Devuelve un valor distinto de cero si se produjo un cambio de diseño o cero en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las bandas rebar se organizarán y ajustarán según sea necesario para ajustarse al rectángulo. Se cambiará el tamaño de las bandas que tengan el estilo RBBS VARIABLEHEIGHT de la \_ manera más uniforme posible para ajustar el rectángulo. El alto de un rebar horizontal o el ancho de un rebar vertical puede cambiar en función del nuevo diseño.
+Las bandas de rebar se organizarán y ajustarán según sea necesario para ajustarse al rectángulo. Las bandas que tienen el estilo VARIABLEHEIGHT de RBBS se cambiarán de tamaño de la forma más uniforme \_ posible para ajustarse al rectángulo. El alto de un rebar horizontal o el ancho de una barra vertical pueden cambiar, dependiendo del nuevo diseño.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

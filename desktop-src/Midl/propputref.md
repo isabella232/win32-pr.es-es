@@ -59,7 +59,7 @@ Cero o más parámetros para el procedimiento remoto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Una función que tenga el **\[ atributo propputref \]** también debe tener, como último parámetro, un puntero que tenga el atributo **\[** [**in.**](in.md) **\]**
 

@@ -73,7 +73,7 @@ Esta función no tiene ningún archivo .lib asociado. Debe usar [**LoadLibrary**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
@@ -82,7 +82,7 @@ Esta función no tiene ningún archivo .lib asociado. Debe usar [**LoadLibrary**
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

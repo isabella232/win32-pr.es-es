@@ -57,7 +57,7 @@ Instancia incrustada de la [**clase Msvm \_ VirtualSystemSettingData**](msvm-vir
 
 Tipo: **\[ \] cadena**
 
-Número de instancias insertadas de la clase [**\_ ResourceAllocationSettingData de Msvm**](msvm-resourceallocationsettingdata.md) (o clases derivadas de la misma). Juntas, estas instancias describen los recursos virtuales de la máquina virtual. Se creará un conjunto predeterminado de dispositivos para la máquina virtual, independientemente de si se establece este parámetro. Por ejemplo, el procesador y la memoria se crean y configuran automáticamente con valores predeterminados.
+Número de instancias incrustadas de la clase [**\_ ResourceAllocationSettingData de Msvm**](msvm-resourceallocationsettingdata.md) (o clases derivadas de las mismas). Juntas, estas instancias describen los recursos virtuales de la máquina virtual. Se creará un conjunto predeterminado de dispositivos para la máquina virtual independientemente de si se establece este parámetro. Por ejemplo, el procesador y la memoria se crean y configuran automáticamente con valores predeterminados.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Número de instancias insertadas de la clase [**\_ ResourceAllocationSettingData
 
 Tipo: **CIM \_ VirtualSystemSettingData**
 
-Referencia a una instancia de la clase [**Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que es el objeto de nivel superior de una configuración de máquina virtual de referencia. La configuración de referencia se usa para complementar la configuración de la nueva máquina virtual si los parámetros *SystemSettings* y *ResourceSettings* no proporcionaron la información respectiva.
+Referencia a una instancia de la clase [**Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que es el objeto de nivel superior de una configuración de máquina virtual de referencia. La configuración de referencia se usa para complementar la configuración de la nueva máquina virtual si los parámetros *SystemSettings* y *ResourceSettings* no proporcionaron la información correspondiente.
 
 </dd> <dt>
 
@@ -82,9 +82,9 @@ Referencia a una instancia de la clase [**\_ ComputerSystem de CIM**](/windows/d
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Tipo: **CIM \_ ConcreteJob**
+Tipo: **Cim \_ ConcreteJob**
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -123,15 +123,15 @@ Si este método se ejecuta sincrónicamente, devuelve 0 si se ejecuta correctame
 **Específico del** proveedor (32768..65535)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a [**la clase \_ VirtualSystemManagementService de Msvm**](msvm-virtualsystemmanagementservice.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
+El acceso a [**la clase Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
@@ -141,7 +141,7 @@ El acceso a [**la clase \_ VirtualSystemManagementService de Msvm**](msvm-virtua
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

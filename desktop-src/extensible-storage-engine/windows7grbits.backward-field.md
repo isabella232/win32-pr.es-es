@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: campo Windows7Grbits. backward'
-title: Campo Windows7Grbits. backward (Microsoft. ISAM. esent. Interop. Windows7)
+description: Más información sobre el campo Windows7Grbits.Backward
+title: Campo Windows7Grbits.Backward (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: Backward field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows7.Windows7Grbits.Backward
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.windows7grbits.backward(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: db7ee56e727bc4f4cf0407271add28bb34cdb28e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bde8efa30a0d6d093228168c3b14020882197e00dd35d237e64f93a2c7544da4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119106663"
 ---
-# <a name="windows7grbitsbackward-field"></a>Campo Windows7Grbits. backward
+# <a name="windows7grbitsbackward-field"></a>Campo Windows7Grbits.Backward
 
-Sugerencia que el recorrido secuencial estará en dirección hacia atrás.
+Sugerencia de que el recorrido secuencial estará en dirección hacia atrás.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,4 +61,4 @@ public const SetTableSequentialGrbit Backward
 
 [Miembros de Windows7Grbits](./windows7grbits-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

@@ -1,10 +1,10 @@
 ---
-title: MPRESERVED_DATA estructura (MpClient. h)
+title: MPRESERVED_DATA estructura (MpClient.h)
 description: Datos de notificación reservados.
 ms.assetid: C92206BD-6E56-4B7D-ABB1-DC1149AE141D
 keywords:
-- MPRESERVED_DATA estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPRESERVED_DATA características de entorno heredado de Windows
+- MPRESERVED_DATA estructura heredada de Windows environment
+- PMPRESERVED_DATA puntero de estructura heredado Windows environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b1e08184da71fe857cb412ef986c986a0c59baa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: faabacdcfb581f9b4fc7e9d9a42464dd61e152ca533865acfb7231a711f02317
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747659"
 ---
-# <a name="mpreserved_data-structure"></a>\_Estructura de datos MPRESERVED
+# <a name="mpreserved_data-structure"></a>Estructura DE DATOS MPRESERVED \_
 
 Datos de notificación reservados.
 
@@ -56,11 +56,11 @@ Tamaño de los datos reservados, en bytes.
 **pbReservedData**
 </dt> <dd>
 
-Tipo: **byte \***
+Tipo: **\* BYTE**
 
 </dd> <dd>
 
-Puntero a los datos reservados.
+Puntero a datos reservados.
 
 </dd> </dl>
 
@@ -68,11 +68,11 @@ Puntero a los datos reservados.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

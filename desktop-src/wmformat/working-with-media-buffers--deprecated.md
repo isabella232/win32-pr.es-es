@@ -1,6 +1,6 @@
 ---
 title: Trabajar con búferes multimedia (Windows SDK de formato multimedia 11)
-description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows MEDIA Audio and Video Codec and DSP API (API de códecs de audio y vídeo multimedia y DSP). | Trabajar con búferes multimedia (Windows SDK de formato multimedia 11)
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (API de códecs de audio y vídeo multimedia y DSP). | Trabajar con búferes multimedia (Windows SDK de formato multimedia 11)
 ms.assetid: 45428737-3f72-44b5-9606-69fa8aba308c
 keywords:
 - Trabajar con búferes multimedia windows Formato multimedia
@@ -21,7 +21,7 @@ ms.locfileid: "118697756"
 ---
 # <a name="working-with-media-buffers-windows-media-format-11-sdk"></a>Trabajar con búferes multimedia (Windows SDK de formato multimedia 11)
 
-Para obtener la documentación actual Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP API (API](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
+Para obtener documentación actual sobre los códecs Windows multimedia y los procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP API (API](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
 
  
 

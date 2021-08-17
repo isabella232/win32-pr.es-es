@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: SystemParameters. EnableAdvanced (propiedad)'
-title: Propiedad SystemParameters. EnableAdvanced
+description: 'Más información sobre: Propiedad SystemParameters.EnableAdvanced'
+title: Propiedad SystemParameters.EnableAdvanced
 TOCTitle: 'EnableAdvanced property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.SystemParameters.EnableAdvanced
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.enableadvanced(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e311685bf5ef436be11d4593523aceee73b955b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 07fd683ad6f2f0d2a9afd88b46a7786131e15c370c9046945ad3e9594a533391
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107008"
 ---
-# <a name="systemparametersenableadvanced-property"></a>Propiedad SystemParameters. EnableAdvanced
+# <a name="systemparametersenableadvanced-property"></a>Propiedad SystemParameters.EnableAdvanced
 
-Obtiene o establece un valor que indica si el motor de base de datos acepta o rechaza los cambios en un subconjunto de los parámetros del sistema. Este parámetro se usa junto con la [configuración](./systemparameters.configuration-property.md) para evitar que algunos parámetros del sistema se establezcan fuera de los valores predeterminados de la configuración seleccionada. Compatible con Windows Vista y up. Se omite en Windows XP y Windows Server 2003.
+Obtiene o establece un valor que indica si el motor de base de datos acepta o rechaza los cambios en un subconjunto de los parámetros del sistema. Este parámetro se usa junto con [Configuration](./systemparameters.configuration-property.md) para evitar que algunos parámetros del sistema se establezcan fuera de los valores predeterminados de la configuración seleccionada. Compatible con Windows Vista y versiones 2. Se omite en Windows XP y Windows Server 2003.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -61,14 +61,14 @@ public static bool EnableAdvanced { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [SystemParameters (clase)](./systemparameters-class.md)
 
-[Miembros de SystemParameters](./systemparameters-members.md)
+[Miembros SystemParameters](./systemparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

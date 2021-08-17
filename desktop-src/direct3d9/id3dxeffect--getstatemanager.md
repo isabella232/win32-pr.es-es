@@ -1,7 +1,7 @@
 ---
-description: Obtiene el efecto administrador de estado.
+description: Obtiene el administrador de estado del efecto.
 ms.assetid: 4a09eb2a-2393-40b0-81b9-3c27998c2b77
-title: 'ID3DXEffect:: GetStateManager (método) (D3DX9Effect. h)'
+title: Método ID3DXEffect::GetStateManager (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 293b642dfecfa4cc14426addf2567d43dffa7233
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6700447485d83f2610149b809065ab02140a2e6cf068508b6571d5132844fb0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119121646"
 ---
-# <a name="id3dxeffectgetstatemanager-method"></a>ID3DXEffect:: GetStateManager (método)
+# <a name="id3dxeffectgetstatemanager-method"></a>Método ID3DXEffect::GetStateManager
 
-Obtiene el efecto administrador de estado.
+Obtiene el administrador de estado del efecto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT GetStateManager(
 
 <dl> <dt>
 
-*ppManager* \[ enuncia\]
+*ppManager* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXEFFECTSTATEMANAGER**](id3dxeffectstatemanager.md)\***
 
-Devuelve un puntero al administrador de Estados. Vea [**ID3DXEffectStateManager**](id3dxeffectstatemanager.md).
+Devuelve un puntero al administrador de estado. Vea [**ID3DXEffectStateManager**](id3dxeffectstatemanager.md).
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Devuelve un puntero al administrador de Estados. Vea [**ID3DXEffectStateManager*
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-[**ID3DXEffectStateManager**](id3dxeffectstatemanager.md) es una interfaz implementada por el usuario que facilita las devoluciones de llamada en una aplicación para establecer el estado del dispositivo de un efecto.
+[**ID3DXEffectStateManager es**](id3dxeffectstatemanager.md) una interfaz implementada por el usuario que ofrece devoluciones de llamada en una aplicación para establecer el estado del dispositivo a partir de un efecto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: 2f74c44de172d9235d9768b8f484405b5e8fb7fe
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 73e33bb10f32a3bf2defeb2c92d9bf97d830b1c7a2b36449594ff3c62751bc29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955944"
 ---
 # <a name="ienumpstoreprovidersskip-method"></a>IEnumPStoreProviders::Skip (Método)
 
-\[El almacenamiento protegido (Pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede no estar disponible en versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura que proporcionan las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
+\[Protected Storage (Pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede que no esté disponible en versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura que proporcionan las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
 Omite el siguiente número especificado de elementos en la secuencia de enumeración.
 
@@ -50,7 +50,7 @@ Número de tipos de proveedor que se omitirán.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es **un valor HRESULT.**
+El valor devuelto es un **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ El valor devuelto es **un valor HRESULT.**
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

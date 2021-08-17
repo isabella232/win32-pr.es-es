@@ -1,6 +1,6 @@
 ---
-title: Función D3DX11PreprocessShaderFromResource (D3DX11async. h)
-description: Tenga en cuenta que la biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de la tienda Windows. Tenga en cuenta que, en lugar de usar esta función, se recomienda usar la API de D3DPreprocess. Cree un sombreador a partir de un recurso sin compilarlo.
+title: Función D3DX11PreprocessShaderFromResource (D3DX11async.h)
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Nota En lugar de usar esta función, se recomienda usar la API D3DPreprocess. Cree un sombreador a partir de un recurso sin compilarlo.
 ms.assetid: 13362ad6-f02e-4899-8962-4f7d4750ff69
 keywords:
 - Función D3DX11PreprocessShaderFromResource Direct3D 11
@@ -15,22 +15,22 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 645d872e983cabbcd81aab05a59ee8f1f83cc403
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 34aef8bad8220e9f579560c8e47477a96313bbddd9ed6970710ffffc263da35e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124660"
 ---
-# <a name="d3dx11preprocessshaderfromresource-function"></a>D3DX11PreprocessShaderFromResource función)
+# <a name="d3dx11preprocessshaderfromresource-function"></a>Función D3DX11PreprocessShaderFromResource
 
 > [!Note]  
-> La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para aplicaciones de la tienda Windows.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
 
  
 
 > [!Note]  
-> En lugar de usar esta función, se recomienda usar la API de [**D3DPreprocess**](/windows/desktop/direct3dhlsl/d3dpreprocess) .
+> En lugar de usar esta función, se recomienda usar la API [**D3DPreprocess.**](/windows/desktop/direct3dhlsl/d3dpreprocess)
 
  
 
@@ -59,7 +59,7 @@ HRESULT D3DX11PreprocessShaderFromResource(
 
 <dl> <dt>
 
-*hModule* \[ de\]
+*hModule* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **HMODULE**](/windows/desktop/WinProg/windows-data-types)**
@@ -68,75 +68,75 @@ Identificador del módulo de recursos que contiene el sombreador. HMODULE se pue
 
 </dd> <dt>
 
-*pResourceName* \[ de\]
+*pResourceName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](/windows/desktop/WinProg/windows-data-types)**
 
-Nombre del recurso en el servidor hModule que contiene el sombreador. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos se resuelve como LPCSTR.
+Nombre del recurso en el lado hModule que contiene el sombreador. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos se resuelve en LPCSTR.
 
 </dd> <dt>
 
-*pSrcFileName* \[ de\]
+*pSrcFileName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](/windows/desktop/WinProg/windows-data-types)**
 
-Opcional. Nombre del archivo de efectos, que solo se usa para los mensajes de error. Puede ser **null**.
+Opcional. Nombre de archivo de efecto, que solo se usa para los mensajes de error. Puede ser **NULL.**
 
 </dd> <dt>
 
-*pDefines* \[ de\]
+*pDefines* \[ En\]
 </dt> <dd>
 
-Tipo: **D3D11 de \_ sombreador \_ \* const**
+Tipo: **const D3D11 \_ SHADER \_ MACRO \***
 
-Una matriz terminada en NULL de macros de sombreador; Establezca este **valor en NULL** para no especificar ninguna macro.
+Matriz terminada en NULL de macros de sombreador; establezca esta opción **en NULL** para no especificar macros.
 
 </dd> <dt>
 
-*pInclude* \[ de\]
+*pInclude* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3D10INCLUDE**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))**
 
-Puntero a una interfaz de inclusión; Establezca este **valor en NULL** para especificar que no hay ningún archivo de inclusión.
+Puntero a una interfaz include; establezca esta opción **en NULL** para especificar que no hay ningún archivo de include.
 
 </dd> <dt>
 
-*pPump* \[ de\]
+*pPump* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX11ThreadPump**](id3dx11threadpump.md)\***
 
-Un puntero a una interfaz de bombeo de subprocesos (consulte la [**interfaz ID3DX11ThreadPump**](id3dx11threadpump.md)). Use **null** para especificar que esta función no debe devolver hasta que se complete.
+Puntero a una interfaz de bombeo de subprocesos (vea [**ID3DX11ThreadPump Interface**](id3dx11threadpump.md)). Use **NULL** para especificar que esta función no debe devolver hasta que se complete.
 
 </dd> <dt>
 
-*ppShaderText* \[ enuncia\]
+*ppShaderText* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/desktop/api/d3dcommon/nn-d3dcommon-id3d10blob)\*\***
 
-Puntero a la memoria que contiene el sombreador sin compilar.
+Puntero a la memoria que contiene el sombreador nocompilado.
 
 </dd> <dt>
 
-*ppErrorMsgs* \[ enuncia\]
+*ppErrorMsgs* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/desktop/api/d3dcommon/nn-d3dcommon-id3d10blob)\*\***
 
-Dirección de un puntero a la memoria que contiene errores de creación de efectos, si hay alguno.
+Dirección de un puntero a la memoria que contiene errores de creación de efectos, si se produjo alguno.
 
 </dd> <dt>
 
-*pHResult* \[ enuncia\]
+*pHResult* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)\***
 
-Puntero al valor devuelto. Puede ser **null**. Si *pPump* no es **null**, *pHResult* debe ser una ubicación de memoria válida hasta que se complete la ejecución asincrónica.
+Puntero al valor devuelto. Puede ser **NULL.** Si *pPump* no es **NULL,** *pHResult* debe ser una ubicación de memoria válida hasta que se complete la ejecución asincrónica.
 
 </dd> </dl>
 
@@ -144,7 +144,7 @@ Puntero al valor devuelto. Puede ser **null**. Si *pPump* no es **null**, *pHRes
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que se muestran en [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -152,8 +152,8 @@ El valor devuelto es uno de los valores que se muestran en [códigos de retorno 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX11async. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX11. lib</dt> </dl>    |
+| Encabezado<br/>  | <dl> <dt>D3DX11async.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX11.lib</dt> </dl>    |
 
 
 
@@ -161,7 +161,7 @@ El valor devuelto es uno de los valores que se muestran en [códigos de retorno 
 
 <dl> <dt>
 
-[Funciones de D3DX](d3d11-graphics-reference-d3dx11-functions.md)
+[Funciones D3DX](d3d11-graphics-reference-d3dx11-functions.md)
 </dt> </dl>
 
  

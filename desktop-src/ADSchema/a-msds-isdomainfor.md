@@ -27,7 +27,7 @@ Vínculo hacia atrás [**para ms-DS-Has-Domain-NCs**](a-msds-hasdomainncs.md). I
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | ms-DS-Is-Domain-For                     |
 | Ldap-Display-Name | msDS-IsDomainFor                        |
@@ -36,7 +36,7 @@ Vínculo hacia atrás [**para ms-DS-Has-Domain-NCs**](a-msds-hasdomainncs.md). I
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1933                 |
 | System-Id-Guid    | ff155a2a-44e5-4de0-8318-13a58988de4f    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -50,14 +50,14 @@ Vínculo hacia atrás [**para ms-DS-Has-Domain-NCs**](a-msds-hasdomainncs.md). I
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2027                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -71,14 +71,14 @@ Vínculo hacia atrás [**para ms-DS-Has-Domain-NCs**](a-msds-hasdomainncs.md). I
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2027                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -92,14 +92,14 @@ Vínculo hacia atrás [**para ms-DS-Has-Domain-NCs**](a-msds-hasdomainncs.md). I
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2027                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |

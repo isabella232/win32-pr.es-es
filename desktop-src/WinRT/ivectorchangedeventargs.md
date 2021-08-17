@@ -49,7 +49,7 @@ La **interfaz IVectorChangedEventArgs** tiene estos métodos.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                       |

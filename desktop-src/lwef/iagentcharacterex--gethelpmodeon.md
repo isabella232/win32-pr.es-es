@@ -13,7 +13,7 @@ ms.locfileid: "118750793"
 ---
 # <a name="iagentcharacterexgethelpmodeon"></a>IAgentCharacterEx::GetHelpModeOn
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT GetHelpModeOn(
@@ -36,7 +36,7 @@ Dirección de una variable que recibe **True si** el modo de Ayuda está en para
 
 Cuando esta propiedad se establece en **True,** el puntero del mouse cambia a la imagen de Ayuda contextual cuando se mueve sobre el carácter o sobre el menú emergente del carácter. Cuando el usuario hace clic o arrastra el carácter o hace clic en un elemento del menú emergente del carácter, el servidor desencadena el evento [**IAgentNotifySinkEx::HelpComplete**](https://www.bing.com/search?q=**IAgentNotifySinkEx::HelpComplete**) y sale del modo ayuda.
 
-En el modo de Ayuda, el servidor no envía los eventos [**IAgentNotifySink::Click**](iagentnotifysink--click.md), [**IAgentNotifySink::D ragStart,**](iagentnotifysink--dragstart.md) [**IAgentNotifySink::D ragComplete**](iagentnotifysink--dragcomplete.md)e [**IAgentNotifySink::Command,**](iagentnotifysink--command.md) a menos que la propiedad [**GetAutoPopupMenu**](https://www.bing.com/search?q=**GetAutoPopupMenu**) devuelva **True.** En ese caso, el servidor enviará el evento **IAgentNotifySink::Click** (no sale del modo de Ayuda), pero solo para el botón derecho del mouse para que pueda mostrar el menú emergente.
+En el modo ayuda, el servidor no envía los eventos [**IAgentNotifySink::Click**](iagentnotifysink--click.md), [**IAgentNotifySink::D ragStart,**](iagentnotifysink--dragstart.md) [**IAgentNotifySink::D ragComplete**](iagentnotifysink--dragcomplete.md)e [**IAgentNotifySink::Command,**](iagentnotifysink--command.md) a menos que la propiedad [**GetAutoPopupMenu**](https://www.bing.com/search?q=**GetAutoPopupMenu**) devuelva **True.** En ese caso, el servidor enviará el evento **IAgentNotifySink::Click** (no sale del modo ayuda), pero solo para que el botón derecho del mouse le permita mostrar el menú emergente.
 
 Esta propiedad solo se aplica al uso del carácter por parte de la aplicación cliente; la configuración no afecta a otros clientes del carácter u otros caracteres de la aplicación cliente.
 

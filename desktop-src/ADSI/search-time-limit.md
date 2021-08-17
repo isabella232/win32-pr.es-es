@@ -23,8 +23,8 @@ Algunos servidores pueden imponer su propio límite de tiempo administrativo. En
 Para obtener más información sobre el uso de la opción de límite de tiempo de búsqueda con una interfaz de búsqueda específica, vea:
 
 -   [Límite de tiempo del servidor con IDirectorySearch](server-time-limit-with-idirectorysearch.md)
--   [Buscar con objetos ActiveX datos](searching-with-activex-data-objects-ado.md)
--   [Búsqueda con OLE DB](searching-with-ole-db.md)
+-   [Buscar con ActiveX objetos de datos](searching-with-activex-data-objects-ado.md)
+-   [Buscar con OLE DB](searching-with-ole-db.md)
 
  
 

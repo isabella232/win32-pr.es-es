@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_ENUMCOLUMNID. rgtagSequence'
-title: Propiedad JET_ENUMCOLUMNID. rgtagSequence
+description: 'Más información sobre: JET_ENUMCOLUMNID.rgtagSequence'
+title: JET_ENUMCOLUMNID.rgtagSequence, propiedad
 TOCTitle: 'rgtagSequence property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMNID.rgtagSequence
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_enumcolumnid.rgtagsequence(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1d61d69fb9f22a31f07ee2eb0b4116a13761d961
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 026432a6d5b2363df09640141ec9f190d6637258692ce8233b32c004a1dbde86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118765971"
 ---
-# <a name="jet_enumcolumnidrgtagsequence-property"></a>Propiedad JET_ENUMCOLUMNID. rgtagSequence
+# <a name="jet_enumcolumnidrgtagsequence-property"></a>JET_ENUMCOLUMNID.rgtagSequence, propiedad
 
-Obtiene o establece la matriz de índices basados en uno en la matriz de valores de columna de una columna determinada. Un único elemento es un itagSequence que se define en JET_RETRIEVECOLUMN. Un valor de itagSequence de 0 (cero) significa "SKIP". Un itagSequence de 1 significa devolver el valor de la primera columna de la columna, 2 significa el segundo, etc.
+Obtiene o establece la matriz de índices basados en uno en la matriz de valores de columna de una columna determinada. Un único elemento es una itagSequence que se define en JET_RETRIEVECOLUMN. Una itagSequence de 0 (cero) significa "skip". Una itagSequence de 1 significa devolver el primer valor de columna de la columna, 2 significa la segunda, y así sucesivamente.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public int[] rgtagSequence { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Automáticamente \[\]  
+Tipo: \[\]  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_ENUMCOLUMNID (clase)](./jet-enumcolumnid-class.md)
+[JET_ENUMCOLUMNID clase](./jet-enumcolumnid-class.md)
 
-[Miembros de JET_ENUMCOLUMNID](./jet-enumcolumnid-members.md)
+[JET_ENUMCOLUMNID miembros](./jet-enumcolumnid-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

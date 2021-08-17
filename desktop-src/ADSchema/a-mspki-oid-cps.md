@@ -1,11 +1,11 @@
 ---
-title: atributo MS-PKI-OID-CPS
-description: La CPS (declaración de directiva de certificados) para el OID de la Directiva de emisor Enterprise.
+title: Atributo ms-PKI-OID-CPS
+description: CPS (Declaración de directiva de certificado) para el OID de la directiva de emisor de empresa.
 ms.assetid: 94c5115e-a8d2-49d1-9fd2-f362e95550dc
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-PKI-OID-CPS
-- Atributo mspki-OID-esquema de AD de atributos de CPS
+- Esquema de AD del atributo ms-PKI-OID-CPS
+- Esquema de AD del atributo msPKI-OID-CPS
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 218fc0eabe7311f46dba769f84b972a495138d3a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 25c9b9dddfe9b3af1f31537d83e7f4cad062df722269d002d7b2b80a5358b1c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960374"
 ---
-# <a name="ms-pki-oid-cps-attribute"></a>atributo MS-PKI-OID-CPS
+# <a name="ms-pki-oid-cps-attribute"></a>Atributo ms-PKI-OID-CPS
 
-La CPS (declaración de directiva de certificados) para el OID de la Directiva de emisor Enterprise.
+CPS (Declaración de directiva de certificado) para el OID de la directiva de emisor de empresa.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------------------------------------------------------------|
-| CN                | MS-PKI-OID-CPS                                                                             |
-| Nombre para mostrar de LDAP | Atributo mspki-OID-CPS                                                                              |
-| Tamaño              | \-                                                                                         |
-| Actualizar privilegio  | Administrador de empresa                                                                   |
-| Frecuencia de actualización  | Siempre que se crea una nueva plantilla o se editan los atributos de las plantillas existentes. |
+| CN                | ms-PKI-OID-CPS                                                                             |
+| Ldap-Display-Name | msPKI-OID-CPS                                                                              |
+| Size              | \-                                                                                         |
+| Actualizar privilegios  | Administrador de empresa                                                                   |
+| Frecuencia de actualización  | Cada vez que se crea una plantilla o se editan los atributos de una plantilla existente. |
 | Attribute-Id      | 1.2.840.113556.1.4.1672                                                                    |
-| System-ID-GUID    | 5f49940e-a79f-4a51-bb6f-3d446a54dc6b                                                       |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                                |
+| System-Id-Guid    | 5f49940e-a79f-4a51-bb6f-3d446a54dc6b                                                       |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                                |
 
 
 
@@ -54,18 +54,18 @@ La CPS (declaración de directiva de certificados) para el OID de la Directiva d
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Clases usadas en        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ La CPS (declaración de directiva de certificados) para el OID de la Directiva d
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Clases usadas en        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ La CPS (declaración de directiva de certificados) para el OID de la Directiva d
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Clases usadas en        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 
@@ -117,18 +117,18 @@ La CPS (declaración de directiva de certificados) para el OID de la Directiva d
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Clases usadas en        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ La CPS (declaración de directiva de certificados) para el OID de la Directiva d
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Clases usadas en        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 

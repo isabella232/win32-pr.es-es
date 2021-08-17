@@ -1,6 +1,6 @@
 ---
 title: Estado de la tecla modificadora
-description: Indica qué teclas modificadoras de teclado se presionaron en el momento en que se generó la entrada.
+description: Indica qué teclas modificadoras de teclado se presionaron en el momento en que se generaba la entrada.
 ms.assetid: 721f5109-67ab-4242-921e-580c2dc0463b
 topic_type:
 - apiref
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 115ee8d33d8f54ab145026152af28b6d565a7935
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ec041ffd62bb028f2839d45b00743714cea375f4e66c0723cb7fe9bfb279445f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118756885"
 ---
 # <a name="modifier-key-state"></a>Estado de la tecla modificadora
 
-Indica qué teclas modificadoras de teclado se presionaron en el momento en que se generó la entrada.
+Indica qué teclas modificadoras de teclado se presionaron en el momento en que se generaba la entrada.
 
 <dl> <dt>
 
@@ -56,15 +56,15 @@ Se presionó una tecla Ctrl.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

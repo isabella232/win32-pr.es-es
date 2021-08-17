@@ -31,7 +31,7 @@ En este tema se incluyen las siguientes secciones.
 
 
 
-| Product                                | Versión mínima del producto |
+| Producto                                | Versión mínima del producto |
 |----------------------------------------|-------------------------|
 | Windows                                | Windows Vista           |
 | Kit de desarrollo de software de Windows (SDK) | 6.1                     |
@@ -44,17 +44,17 @@ Para obtener requisitos adicionales, consulte el archivo Léame incluido con el 
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-| Location      | Dirección URL de ruta de acceso                                                                                             |
+| Ubicación      | Dirección URL de ruta de acceso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Ejemplo de NameSpaceTreeControl](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/namespacetreecontrol) |
 
 ## <a name="building-the-sample"></a>Generar el ejemplo
 
-Para obtener instrucciones sobre cómo compilar el ejemplo, consulte el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, vea el archivo Léame incluido con el ejemplo.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-Para obtener instrucciones sobre cómo compilar el ejemplo, consulte el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, vea el archivo Léame incluido con el ejemplo.
 
  
 

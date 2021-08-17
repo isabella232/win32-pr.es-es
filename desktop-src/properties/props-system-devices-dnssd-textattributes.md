@@ -1,19 +1,19 @@
 ---
-description: Datos de texto asociados a la instancia de servicio. Cada cadena normalmente es un par clave-valor, separados por &\# 0034; =&\# 0034;.
+description: Datos de texto asociados a la instancia de servicio. Cada cadena suele ser un par clave-valor, separado por &\# 0034;=&\# 0034;.
 ms.assetid: c514c9c9-7d5b-4c4a-b99a-723597b5b801
-title: System. Devices. dnssd. TextAttributes
+title: System.Devices.Dnssd.TextAttributes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 593a27c590fd9e5939b256607e450b592c89268a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 15dfd926a80106a9baa2b14a5b26baa3ad03a77d4aa7e651cfce87b8aebbc034
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118728322"
 ---
-# <a name="systemdevicesdnssdtextattributes"></a>System. Devices. dnssd. TextAttributes
+# <a name="systemdevicesdnssdtextattributes"></a>System.Devices.Dnssd.TextAttributes
 
-Datos de texto asociados a la instancia de servicio. Cada cadena normalmente es un par clave-valor, separados por "=".
+Datos de texto asociados a la instancia de servicio. Cada cadena suele ser un par clave-valor, separado por "=".
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

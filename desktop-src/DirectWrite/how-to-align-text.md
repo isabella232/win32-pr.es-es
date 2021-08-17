@@ -13,7 +13,7 @@ ms.locfileid: "118650375"
 ---
 # <a name="how-to-align-text"></a>Alineación de texto
 
-Puede alinear DirectWrite texto mediante el método [**SetTextAlignment**](/windows/win32/api/dwrite/nf-dwrite-idwritetextformat-settextalignment) de la interfaz [**IDWriteTextFormat,**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) como se muestra [en](direct-write-portal.md) el código siguiente que centra el texto.
+Puede alinear [DirectWrite](direct-write-portal.md) texto mediante el método [**SetTextAlignment**](/windows/win32/api/dwrite/nf-dwrite-idwritetextformat-settextalignment) de la interfaz [**IDWriteTextFormat,**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) como se muestra en el código siguiente que centra el texto.
 
 
 ```C++

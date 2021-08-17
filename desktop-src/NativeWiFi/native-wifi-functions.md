@@ -1,22 +1,22 @@
 ---
-description: Las siguientes funciones permiten a los desarrolladores de software usar la funcionalidad proporcionada por WiFi nativo.
+description: Las siguientes funciones permiten a los desarrolladores de software usar la funcionalidad proporcionada por Native Wifi.
 ms.assetid: c1816d68-48b2-4d3d-a8c8-4a243a4b3f3b
-title: Funciones WiFi nativas
+title: Funciones wi-fi nativas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce48b8f61f6558668c742e566eb53e3d32c8baa8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b846a53626b2da6f492e20bee44a5b5909878c0c49becb530fa9701db18f19ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065046"
 ---
-# <a name="native-wifi-functions"></a>Funciones WiFi nativas
+# <a name="native-wifi-functions"></a>Funciones wi-fi nativas
 
-Las siguientes funciones permiten usar la funcionalidad proporcionada por Wi-Fi nativo.
+Las siguientes funciones permiten usar la funcionalidad proporcionada por Native Wifi.
 
--   [**\_devolución de \_ llamada de notificación de receptor de pantalla de \_ WFD \_**](wfd-display-sink-notification-callback.md)
--   [**\_devolución de \_ \_ llamada completa de sesión abierta de WFD \_**](/windows/win32/api/wlanapi/nc-wlanapi-wfd_open_session_complete_callback)
+-   [**DEVOLUCIÓN DE LLAMADA \_ DE NOTIFICACIÓN DEL RECEPTOR DE VISUALIZACIÓN \_ \_ \_ DE WFD**](wfd-display-sink-notification-callback.md)
+-   [**DEVOLUCIÓN DE \_ LLAMADA COMPLETA DE SESIÓN ABIERTA \_ \_ \_ DE WFD**](/windows/win32/api/wlanapi/nc-wlanapi-wfd_open_session_complete_callback)
 -   [**WFDCancelOpenSession**](/windows/win32/api/wlanapi/nf-wlanapi-wfdcancelopensession)
 -   [**WFDDisplaySinkCloseSession**](wfdclosedisplaysinksession.md)
 -   [**WFDCloseHandle**](/windows/win32/api/wlanapi/nf-wlanapi-wfdclosehandle)
@@ -27,7 +27,7 @@ Las siguientes funciones permiten usar la funcionalidad proporcionada por Wi-Fi 
 -   [**WFDStartOpenSession**](/windows/win32/api/wlanapi/nf-wlanapi-wfdstartopensession)
 -   [**WFDDisplaySinkStop**](wfdstopdisplaysink.md)
 -   [**WFDUpdateDeviceVisibility**](/windows/win32/api/wlanapi/nf-wlanapi-wfdupdatedevicevisibility)
--   [**devolución de llamada de \_ notificación de WLAN \_**](/windows/win32/api/wlanapi/nc-wlanapi-wlan_notification_callback)
+-   [**DEVOLUCIÓN \_ DE LLAMADA DE NOTIFICACIÓN DE WLAN \_**](/windows/win32/api/wlanapi/nc-wlanapi-wlan_notification_callback)
 -   [**WlanAllocateMemory**](/windows/win32/api/wlanapi/nf-wlanapi-wlanallocatememory)
 -   [**WlanCloseHandle**](/windows/win32/api/wlanapi/nf-wlanapi-wlanclosehandle)
 -   [**WlanConnect**](/windows/win32/api/wlanapi/nf-wlanapi-wlanconnect)

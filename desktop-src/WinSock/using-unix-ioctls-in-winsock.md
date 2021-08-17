@@ -13,7 +13,7 @@ ms.locfileid: "118558867"
 ---
 # <a name="using-unix-ioctls-in-winsock"></a>Uso UNIX Ioctls en Winsock
 
-El comando **SIOCGIFCONF** proporcionado por la mayoría de las implementaciones de UNIX se admite en forma de funciones [**WSAIoctl**](/windows/desktop/api/Winsock2/nf-winsock2-wsaioctl) y [**WSPIoctl**](/previous-versions/windows/hardware/network/ff566296(v=vs.85)) con el comando **SIO \_ GET INTERFACE \_ \_ LIST**. Este comando devuelve la lista de interfaces configuradas y sus parámetros.
+El comando **SIOCGIFCONF** proporcionado por la mayoría de las implementaciones UNIX se admite en forma de funciones [**WSAIoctl**](/windows/desktop/api/Winsock2/nf-winsock2-wsaioctl) y [**WSPIoctl**](/previous-versions/windows/hardware/network/ff566296(v=vs.85)) con el comando **SIO \_ GET INTERFACE \_ \_ LIST**. Este comando devuelve la lista de interfaces configuradas y sus parámetros.
 
 > [!Note]  
 > La compatibilidad con este comando es obligatoria para los Windows de servicio TCP/IP compatibles con Sockets 2.

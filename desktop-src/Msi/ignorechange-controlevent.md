@@ -1,5 +1,5 @@
 ---
-description: El control DirectoryList publica el control IgnoreChange ControlEvent cuando la carpeta seleccionada cambia de un directorio a otro del control . Este evento debe crearse en la tabla EventMapping.
+description: El control DirectoryList publica el control IgnoreChange ControlEvent cuando se cambia la carpeta seleccionada de un directorio a otro directorio del control. Este evento debe crearse en la tabla EventMapping.
 ms.assetid: 4d3128a1-cbe3-457c-83b5-8f6ec1a7ba29
 title: IgnoreChange ControlEvent
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118634463"
 ---
 # <a name="ignorechange-controlevent"></a>IgnoreChange ControlEvent
 
-El [control DirectoryList](directorylist-control.md) publica el control IgnoreChange ControlEvent cuando la carpeta seleccionada cambia de un directorio a otro del control . Este evento debe crearse en la [tabla EventMapping](eventmapping-table.md).
+El [control DirectoryList](directorylist-control.md) publica el control IgnoreChange ControlEvent cuando se cambia la carpeta seleccionada de un directorio a otro directorio del control. Este evento debe crearse en la [tabla EventMapping](eventmapping-table.md).
 
 Este control ControlEvent requiere que la interfaz de usuario se ejecute en el [*nivel completo de la interfaz de*](f-gly.md) usuario. Este evento no funcionará con una interfaz de usuario [*reducida o*](r-gly.md) una interfaz de [*usuario básica.*](b-gly.md) Para obtener información, [vea Interfaz de usuario Levels](user-interface-levels.md).
 
@@ -23,7 +23,7 @@ Este control ControlEvent requiere que la interfaz de usuario se ejecute en el [
 
 ## <a name="argument"></a>Argumento
 
-Este control ControlEvent no usa ningún argumento.
+Este control ControlEvent no usa un argumento.
 
 ## <a name="action-on-subscribers"></a>Acción en suscriptores
 

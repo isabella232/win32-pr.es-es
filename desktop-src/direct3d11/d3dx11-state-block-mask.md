@@ -1,9 +1,9 @@
 ---
-title: D3DX11_STATE_BLOCK_MASK estructura (D3dx11effect. h)
+title: D3DX11_STATE_BLOCK_MASK estructura (D3dx11effect.h)
 description: Indica el estado del dispositivo.
 ms.assetid: 42044a6d-6a11-4f90-889a-82e7954da6c7
 keywords:
-- D3DX11_STATE_BLOCK_MASK estructura de Direct3D 11
+- D3DX11_STATE_BLOCK_MASK estructura direct3D 11
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41236c541fc251902a7a0a5ad6030a28dd36e3a4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8087f45ad94fe3e45f78a1be9d86b30f6f7e3f2c9161b9c4498865b12582436e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124940"
 ---
-# <a name="d3dx11_state_block_mask-structure"></a>\_Estructura de \_ máscara de bloque de estado D3DX11 \_
+# <a name="d3dx11_state_block_mask-structure"></a>Estructura STATE \_ BLOCK \_ \_ MASK de D3DX11
 
 Indica el estado del dispositivo.
 
@@ -83,10 +83,10 @@ typedef struct _D3DX11_STATE_BLOCK_MASK {
 
 <dl> <dt>
 
-**VIRTUAL**
+**Vs**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -97,51 +97,51 @@ Valor booleano que indica si se debe guardar el estado del sombreador de vértic
 **VSSamplers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de muestreadores de sombreador de vértices. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de muestra.
+Matriz de muestreadores de sombreador de vértices. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de muestreador.
 
 </dd> <dt>
 
 **VSShaderResources**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de recursos del sombreador de vértices. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de recursos.
+Matriz de recursos de sombreador de vértices. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de recursos.
 
 </dd> <dt>
 
 **VSConstantBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de búferes de constantes de sombreador de vértices. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de búfer constante.
+Matriz de búferes constantes del sombreador de vértices. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de búfer constante.
 
 </dd> <dt>
 
 **VSInterfaces**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de interfaces del sombreador de vértices. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de interfaz.
+Matriz de interfaces de sombreador de vértices. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de interfaz.
 
 </dd> <dt>
 
-**!**
+**Hs**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -152,40 +152,40 @@ Valor booleano que indica si se debe guardar el estado del sombreador de casco.
 **HSSamplers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de muestreadores de sombreador de casco. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de muestra.
+Matriz de muestreadores de sombreador de casco. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de muestreador.
 
 </dd> <dt>
 
 **HSShaderResources**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de recursos del sombreador de casco. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de recursos.
+Matriz de recursos de sombreador de casco. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de recursos.
 
 </dd> <dt>
 
 **HSConstantBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de búferes de constantes de sombreador de casco. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de búfer constante.
+Matriz de búferes constantes de sombreador de casco. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de búfer constante.
 
 </dd> <dt>
 
 **HSInterfaces**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -193,10 +193,10 @@ Matriz de interfaces de sombreador de casco. La matriz es una máscara de bits d
 
 </dd> <dt>
 
-**DIRECTORIO**
+**DS**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -207,40 +207,40 @@ Valor booleano que indica si se debe guardar el estado del sombreador de dominio
 **DSSamplers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de muestreadores de sombreador de dominio. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de muestra.
+Matriz de muestreadores de sombreador de dominio. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de muestreador.
 
 </dd> <dt>
 
 **DSShaderResources**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de recursos del sombreador de dominio. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de recursos.
+Matriz de recursos de sombreador de dominio. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de recursos.
 
 </dd> <dt>
 
 **DSConstantBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de búferes de constantes de sombreador de dominio. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de búfer.
+Matriz de búferes constantes de sombreador de dominio. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de búfer.
 
 </dd> <dt>
 
 **DSInterfaces**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -251,7 +251,7 @@ Matriz de interfaces de sombreador de dominio. La matriz es una máscara de bits
 **GS**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -262,40 +262,40 @@ Valor booleano que indica si se debe guardar el estado del sombreador de geometr
 **GSSamplers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de muestreadores de sombreador de geometría. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de muestra.
+Matriz de muestreadores de sombreador de geometría. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de muestreador.
 
 </dd> <dt>
 
 **GSShaderResources**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de recursos del sombreador de geometría. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de recursos.
+Matriz de recursos de sombreador de geometría. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de recursos.
 
 </dd> <dt>
 
 **GSConstantBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de búferes de constantes de sombreador de geometría. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de búfer.
+Matriz de búferes constantes de sombreador de geometría. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de búfer.
 
 </dd> <dt>
 
 **GSInterfaces**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -303,10 +303,10 @@ Matriz de interfaces de sombreador de geometría. La matriz es una máscara de b
 
 </dd> <dt>
 
-**PS**
+**Ps**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -317,40 +317,40 @@ Valor booleano que indica si se debe guardar el estado del sombreador de píxele
 **PSSamplers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de muestreadores de sombreador de píxeles. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de muestra.
+Matriz de muestreadores de sombreador de píxeles. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de muestreador.
 
 </dd> <dt>
 
 **PSShaderResources**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de recursos del sombreador de píxeles. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de recursos.
+Matriz de recursos de sombreador de píxeles. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de recursos.
 
 </dd> <dt>
 
 **PSConstantBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de búferes de constantes de sombreador de píxeles. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de búfer constante.
+Matriz de búferes constantes de sombreador de píxeles. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de búfer constante.
 
 </dd> <dt>
 
 **PSInterfaces**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -361,84 +361,84 @@ Matriz de interfaces de sombreador de píxeles. La matriz es una máscara de bit
 **PSUnorderedAccessViews**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booleano que indica si se van a guardar las vistas de acceso desordenado del sombreador de píxeles.
+Valor booleano que indica si se deben guardar las vistas de acceso desordenadas del sombreador de píxeles.
 
 </dd> <dt>
 
 **CS**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booleano que indica si se debe guardar el estado del sombreador de cálculo.
+Valor booleano que indica si se debe guardar el estado del sombreador de proceso.
 
 </dd> <dt>
 
 **CSSamplers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de muestreadores de sombreador de proceso. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de muestra.
+Matriz de muestreadores de sombreador de proceso. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de muestreador.
 
 </dd> <dt>
 
 **CSShaderResources**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de recursos del sombreador de cálculo. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de recursos.
+Matriz de recursos de sombreador de proceso. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de recursos.
 
 </dd> <dt>
 
 **CSConstantBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de búferes de constantes de sombreador de cálculo. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de búfer constante.
+Matriz de búferes constantes de sombreador de proceso. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de búfer constante.
 
 </dd> <dt>
 
 **CSInterfaces**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de interfaces de sombreador de cálculo. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de interfaz.
+Matriz de interfaces de sombreador de proceso. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de interfaz.
 
 </dd> <dt>
 
 **CSUnorderedAccessViews**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booleano que indica si se van a guardar las vistas de acceso desordenado del sombreador de cálculo.
+Valor booleano que indica si se deben guardar las vistas de acceso desordenadas del sombreador de proceso.
 
 </dd> <dt>
 
 **IAVertexBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -449,7 +449,7 @@ Matriz de búferes de vértices. La matriz es una máscara de bits de varios byt
 **IAIndexBuffer**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -460,84 +460,84 @@ Valor booleano que indica si se debe guardar el estado del búfer de índice.
 **IAInputLayout**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booleano que indica si se va a guardar el estado de diseño de entrada.
+Valor booleano que indica si se debe guardar el estado de diseño de entrada.
 
 </dd> <dt>
 
 **IAPrimitiveTopology**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booleano que indica si se va a guardar el estado de la topología primitiva.
+Valor booleano que indica si se debe guardar el estado de la topología primitiva.
 
 </dd> <dt>
 
 **OMRenderTargets**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booleano que indica si se deben guardar los Estados de destinos de representación.
+Valor booleano que indica si se deben guardar los estados de destino de representación.
 
 </dd> <dt>
 
 **OMDepthStencilState**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booleano que indica si se va a guardar el estado de la galería de símbolos de profundidad.
+Valor booleano que indica si se debe guardar el estado de la galería de símbolos de profundidad.
 
 </dd> <dt>
 
 **OMBlendState**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booleano que indica si se va a guardar el estado de Blend.
+Valor booleano que indica si se debe guardar el estado de mezcla.
 
 </dd> <dt>
 
 **RSViewports**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booleano que indica si se van a guardar los Estados de las ventanillas.
+Valor booleano que indica si se deben guardar los estados de las ventanillas.
 
 </dd> <dt>
 
 **RSScissorRects**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booleano que indica si se deben guardar los Estados de rectángulos en tijera.
+Valor booleano que indica si se deben guardar los estados de los rectángulos de rectángulos de rectángulos.
 
 </dd> <dt>
 
 **RSRasterizerState**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -548,28 +548,28 @@ Valor booleano que indica si se debe guardar el estado del rasterizador.
 **SOBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booleano que indica si se van a guardar los Estados de los búferes de flujo de salida.
+Valor booleano que indica si se deben guardar los estados de los búferes de flujo de salida.
 
 </dd> <dt>
 
 **Predicación**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booleano que indica si se va a guardar el estado de predication.
+Valor booleano que indica si se debe guardar el estado de predicado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una máscara de bloque de estado indica el dispositivo que cambia un paso o una técnica.
+Una máscara de bloque de estado indica los estados del dispositivo que cambia un paso o una técnica.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -577,7 +577,7 @@ Una máscara de bloque de estado indica el dispositivo que cambia un paso o una 
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx11effect. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx11effect.h</dt> </dl> |
 
 
 
@@ -585,7 +585,7 @@ Una máscara de bloque de estado indica el dispositivo que cambia un paso o una 
 
 <dl> <dt>
 
-[Effects 11 estructuras](d3d11-graphics-reference-effects11-structures.md)
+[Estructuras de efectos 11](d3d11-graphics-reference-effects11-structures.md)
 </dt> </dl>
 
  

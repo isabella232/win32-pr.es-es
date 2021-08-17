@@ -27,7 +27,7 @@ Vínculo hacia atrás desde un grupo o usuario que no son miembros a grupos Az q
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | ms-DS-Non-Members-BL                    |
 | Ldap-Display-Name | msDS-NonMembersBL                       |
@@ -36,7 +36,7 @@ Vínculo hacia atrás desde un grupo o usuario que no son miembros a grupos Az q
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1794                 |
 | System-Id-Guid    | 2a8c68fc-3a7a-4e87-8720-fe77c51cbe74    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -52,14 +52,14 @@ Vínculo hacia atrás desde un grupo o usuario que no son miembros a grupos Az q
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2015                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -73,14 +73,14 @@ Vínculo hacia atrás desde un grupo o usuario que no son miembros a grupos Az q
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2015                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -94,14 +94,14 @@ Vínculo hacia atrás desde un grupo o usuario que no son miembros a grupos Az q
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2015                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -115,14 +115,14 @@ Vínculo hacia atrás desde un grupo o usuario que no son miembros a grupos Az q
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2015                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -136,14 +136,14 @@ Vínculo hacia atrás desde un grupo o usuario que no son miembros a grupos Az q
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2015                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |

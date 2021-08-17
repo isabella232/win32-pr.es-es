@@ -1,29 +1,29 @@
 ---
-title: Claves del registro y entradas para una tienda en línea de tipo 2
-description: Claves del registro y entradas para una tienda en línea de tipo 2
+title: Claves y entradas del Registro para un almacén en línea de tipo 2
+description: Claves y entradas del Registro para un almacén en línea de tipo 2
 ms.assetid: 17dff940-3884-488a-9016-29bb47c51caf
 keywords:
-- Windows Media Player tiendas en línea, registro
+- Reproductor de Windows Media en línea,registro
 - tiendas en línea, registro
 - tipo 2 tiendas en línea, registro
-- registro, tipo 2 tiendas en línea
+- registry,type 2 online stores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 685a26514730e7c370c698cbc9c64c29366c35ee
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: c01a5494f56a4c3fa7ea91d9537f6177453a1df54f684aa73c347029574f8dde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104149120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746456"
 ---
-# <a name="registry-keys-and-entries-for-a-type-2-online-store"></a>Claves del registro y entradas para una tienda en línea de tipo 2
+# <a name="registry-keys-and-entries-for-a-type-2-online-store"></a>Claves y entradas del Registro para un almacén en línea de tipo 2
 
 > [!Note]  
-> En esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-Para que una tienda en línea de tipo 2 esté disponible en Windows Media Player, el proveedor de la tienda en línea debe crear las siguientes subclaves del registro y entradas en el equipo del usuario.
+Para que un almacén en línea de tipo 2 esté disponible en Reproductor de Windows Media, el proveedor de tiendas en línea debe crear las siguientes subclaves y entradas del Registro en el equipo del usuario.
 
 
 ```C++
@@ -42,47 +42,47 @@ Para que una tienda en línea de tipo 2 esté disponible en Windows Media Player
 
 
 
-En la sintaxis del registro anterior, los símbolos en cursiva son marcadores de posición para los nombres y los identificadores únicos globales (GUID) que son específicos de la tienda en línea. En la tabla siguiente se describen esos marcadores de posición.
+En la sintaxis del Registro anterior, los símbolos en cursiva son marcadores de posición para nombres e identificadores únicos globales (GUID) que son específicos del almacén en línea. En la tabla siguiente se describen esos marcadores de posición.
 
 
 
 | Marcador de posición    | Descripción                                                                                                                                                                                                                                                                                                                                                                                            |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *keyName*      | Cadena acordada entre Microsoft y la tienda en línea. Esta cadena identifica de forma única la tienda en línea. Ejemplo: "Proseware"<br/>                                                                                                                                                                                                                                                          |
-| *flags*        | Un or **bit a** bit de uno o más marcadores de capacidad de complemento estas marcas especifican si Windows Media Player debe llamar a métodos concretos de [IWMPSubscriptionService](/previous-versions/windows/desktop/api/subscriptionservices/nn-subscriptionservices-iwmpsubscriptionservice) y [IWMPSubscriptionService2](/previous-versions/windows/desktop/api/subscriptionservices/nn-subscriptionservices-iwmpsubscriptionservice2). Para obtener información sobre las marcas admitidas, vea la tabla de marcas de capacidad de complementos que se indican a continuación de esta tabla. Ejemplo: 00000037<br/> |
-| *CLSID*        | GUID que es el identificador de clase (CLSID) de la clase que implementa **IWMPSubscriptionService** en el complemento de la tienda en línea. Este GUID debe estar en formato de registro, completar con las llaves. Formato: {xxxxxxxx-XXXX-XXXX-XXXX-XXXXXXXXXXXX}<br/>                                                                                                                                    |
-| *FriendlyName* | Un nombre descriptivo para la tienda en línea. Ejemplo: "servicio de música de Proseware"<br/>                                                                                                                                                                                                                                                                                                                     |
-| *pluginName*   | Un nombre para el complemento de la tienda en línea. Ejemplo: "complemento de servicio de Proseware"<br/>                                                                                                                                                                                                                                                                                                                  |
+| *keyName*      | Cadena acordado entre Microsoft y la tienda en línea. Esta cadena identifica de forma única el almacén en línea. Ejemplo: "Proseware"<br/>                                                                                                                                                                                                                                                          |
+| *flags*        | OR bit  a bit de una o varias marcas de funcionalidad del complemento Estas marcas especifican si Reproductor de Windows Media debe llamar a métodos concretos de [IWMPSubscriptionService](/previous-versions/windows/desktop/api/subscriptionservices/nn-subscriptionservices-iwmpsubscriptionservice) e [IWMPSubscriptionService2.](/previous-versions/windows/desktop/api/subscriptionservices/nn-subscriptionservices-iwmpsubscriptionservice2) Para obtener información sobre las marcas admitidas, consulte la tabla de marcas de funcionalidad del complemento que sigue a esta tabla. Ejemplo: 00000037<br/> |
+| *Clsid*        | GUID que es el identificador de clase (CLSID) de la clase que implementa **IWMPSubscriptionService** en el complemento del almacén en línea. Este GUID debe estar en formato del Registro, junto con las llaves. Formato: {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}<br/>                                                                                                                                    |
+| *friendlyname* | Un nombre descriptivo para la tienda en línea. Ejemplo: "Proseware Música Service"<br/>                                                                                                                                                                                                                                                                                                                     |
+| *pluginName*   | Nombre del complemento de la tienda en línea. Ejemplo: "Complemento de servicio de Proseware"<br/>                                                                                                                                                                                                                                                                                                                  |
 | *className*    | Nombre de la clase que implementa **IWMPSubscriptionService** en el complemento de la tienda en línea. Ejemplo: "CProsewareService"<br/>                                                                                                                                                                                                                                                                |
-| *moduleName*   | Ruta de acceso completa al archivo DLL que implementa el complemento de la tienda en línea. Ejemplo: "C: \\ archivos de programa \\ Proseware \\ProsewareService.dll"<br/>                                                                                                                                                                                                                                                |
+| *moduleName*   | Ruta de acceso completa al archivo DLL que implementa el complemento de la tienda en línea. Ejemplo: "C: \\ Archivos \\ de programa Proseware \\ProsewareService.dll"<br/>                                                                                                                                                                                                                                                |
 
 
 
  
 
-En la tabla siguiente se describen las marcas de capacidad del complemento.
+En la tabla siguiente se describen las marcas de funcionalidad del complemento.
 
 
 
 | Marca                                    | Value | Descripción                                                                                                                                                                                                                        |
 |-----------------------------------------|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| límite de suscripción \_ \_ ALLOWPLAY            | 0X1   | Windows Media Player debe llamar a [IWMPSubscriptionService:: allowPlay](/previous-versions/windows/desktop/api/subscriptionservices/nf-subscriptionservices-iwmpsubscriptionservice-allowplay).                                                                                                                      |
-| límite de suscripción \_ \_ ALLOWCDBURN          | 0X2   | Windows Media Player debe llamar a [IWMPSubscriptionService:: allowCDBurn](/previous-versions/windows/desktop/api/subscriptionservices/nf-subscriptionservices-iwmpsubscriptionservice-allowcdburn).                                                                                                                  |
-| límite de suscripción \_ \_ ALLOWPDATRANSFER     | 0X4   | Windows Media Player debe llamar a [IWMPSubscriptionService:: allowPDATransfer](/previous-versions/windows/desktop/api/subscriptionservices/nf-subscriptionservices-iwmpsubscriptionservice-allowpdatransfer).                                                                                                        |
-| límite de suscripción \_ \_ BACKGROUNDPROCESSING | 0X8   | Windows Media Player debe llamar a [IWMPSubscriptionService:: startBackgroundProcessing](/previous-versions/windows/desktop/api/subscriptionservices/nf-subscriptionservices-iwmpsubscriptionservice-startbackgroundprocessing).                                                                                      |
-| límite de suscripción \_ \_ DEVICEAVAILABLE      | 0X10  | Windows Media Player debe llamar a [IWMPSubscriptionService2::D eviceavailable](/previous-versions/windows/desktop/api/subscriptionservices/nf-subscriptionservices-iwmpsubscriptionservice2-deviceavailable).                                                                                                        |
-| límite de suscripción \_ \_ PREPAREFORSYNC       | 0X20  | Windows Media Player debe llamar a [IWMPSubscriptionService2::P repareforsync](/previous-versions/windows/desktop/api/subscriptionservices/nf-subscriptionservices-iwmpsubscriptionservice2-prepareforsync).                                                                                                          |
-| Cap de suscripción \_ v1 \_                  | 0XF   | Predeterminada. Este valor se usa si no se registra ninguno. Esto es equivalente a la combinación de Cap de suscripción \_ \_ ALLOWPLAY, el límite de la suscripción \_ ALLOWCDBURN, el límite de la \_ suscripción \_ \_ ALLOWPDATRANSFER y el límite de la suscripción \_ \_ BACKGROUNDPROCESSING. |
+| LÍMITE \_ DE SUSCRIPCIÓN \_ ALLOWPLAY            | 0X1   | Reproductor de Windows Media llamar a [IWMPSubscriptionService::allowPlay](/previous-versions/windows/desktop/api/subscriptionservices/nf-subscriptionservices-iwmpsubscriptionservice-allowplay).                                                                                                                      |
+| LÍMITE \_ DE SUSCRIPCIÓN \_ ALLOWCDCOMBINACIÓN          | 0X2   | Reproductor de Windows Media llamar a [IWMPSubscriptionService::allowCDConexión](/previous-versions/windows/desktop/api/subscriptionservices/nf-subscriptionservices-iwmpsubscriptionservice-allowcdburn).                                                                                                                  |
+| LÍMITE \_ DE \_ SUSCRIPCIÓN ALLOWPDATRANSFER     | 0X4   | Reproductor de Windows Media llamar a [IWMPSubscriptionService::allowPDATransfer](/previous-versions/windows/desktop/api/subscriptionservices/nf-subscriptionservices-iwmpsubscriptionservice-allowpdatransfer).                                                                                                        |
+| \_BACKGROUNDPROCESSING DEL LÍMITE DE \_ SUSCRIPCIÓN | 0X8   | Reproductor de Windows Media llamar a [IWMPSubscriptionService::startBackgroundProcessing](/previous-versions/windows/desktop/api/subscriptionservices/nf-subscriptionservices-iwmpsubscriptionservice-startbackgroundprocessing).                                                                                      |
+| DISPOSITIVO \_ DE LÍMITE DE SUSCRIPCIÓN \_ DISPONIBLE      | 0X10  | Reproductor de Windows Media llamar a [IWMPSubscriptionService2::d eviceAvailable](/previous-versions/windows/desktop/api/subscriptionservices/nf-subscriptionservices-iwmpsubscriptionservice2-deviceavailable).                                                                                                        |
+| LÍMITE \_ DE SUSCRIPCIÓN \_ PREPAREFORSYNC       | 0X20  | Reproductor de Windows Media llamar a [IWMPSubscriptionService2::p repareForSync](/previous-versions/windows/desktop/api/subscriptionservices/nf-subscriptionservices-iwmpsubscriptionservice2-prepareforsync).                                                                                                          |
+| LÍMITES \_ DE SUSCRIPCIÓN \_ V1                  | 0XF   | Predeterminada. Este valor se usa si no se registra ninguno. Esto equivale a combinar SUBSCRIPTION \_ CAP \_ ALLOWPLAY, SUBSCRIPTION \_ CAP \_ ALLOWCDTRANSFER, \_ SUBSCRIPTION CAP \_ ALLOWPDATRANSFER y SUBSCRIPTION CAP \_ \_ BACKGROUNDPROCESSING. |
 
 
 
  
 
-**Entradas del registro para desarrollo y pruebas**
+**Entradas del Registro para desarrollo y pruebas**
 
-Cuando empiece a desarrollar la tienda en línea, Microsoft le proporcionará dos claves: una clave de prueba y una clave de producción. Durante la fase de desarrollo y pruebas, la tienda en línea aparecerá en Windows Media Player solo si la clave de prueba o la clave de producción se encuentra en el registro del equipo del usuario. Para obtener más información acerca de las claves de prueba y de producción, consulte [claves de prueba y producción para una tienda en línea de tipo 2](test-and-production-keys-for-a-type-2-online-store.md).
+Cuando empiece a desarrollar su tienda en línea, Microsoft le proporciona dos claves: una clave de prueba y una clave de producción. Durante la fase de desarrollo y pruebas, la tienda en línea aparecerá en Reproductor de Windows Media solo si la clave de prueba o la clave de producción están en el registro del equipo del usuario. Para obtener más información sobre las claves de prueba y producción, vea Claves de prueba y [producción para un almacén en línea de tipo 2.](test-and-production-keys-for-a-type-2-online-store.md)
 
-Coloque la clave de prueba o de producción en la siguiente ubicación del registro.
+Coloque la clave de prueba o producción en la siguiente ubicación del Registro.
 
 
 ```C++
@@ -92,7 +92,7 @@ Coloque la clave de prueba o de producción en la siguiente ubicación del regis
 
 
 
-Tenga en cuenta que el valor de la entrada del registro TestParameter puede especificar varias claves de prueba o de producción. Por ejemplo, supongamos que Proseware tiene una clave de prueba de "1234" y Contoso tiene una clave de prueba de "2345". La siguiente entrada del registro especifica que los almacenes de pruebas para Proseware y contoso aparecerán en Windows Media Player.
+Tenga en cuenta que el valor de la entrada del Registro TestParameter puede especificar varias claves de prueba o producción. Por ejemplo, supongamos que Proseware tiene una clave de prueba de "1234" y Contoso tiene una clave de prueba de "2345". La siguiente entrada del Registro especifica que los almacenes de prueba para Proseware y Contoso aparecerán en Reproductor de Windows Media.
 
 
 ```C++
@@ -102,9 +102,9 @@ Tenga en cuenta que el valor de la entrada del registro TestParameter puede espe
 
 
 
-**Entrada del registro ActiveService**
+**Entrada del Registro ActiveService**
 
-Cuando el usuario activa una tienda en línea, Windows Media Player escribe información en el registro que identifica la tienda en línea activa. Windows Media Player coloca la información en la siguiente ubicación del registro en el equipo del usuario.
+Cuando el usuario activa una tienda en línea, Reproductor de Windows Media escribe información en el registro que identifica la tienda en línea activa. Reproductor de Windows Media la información en la siguiente ubicación del Registro en el equipo del usuario.
 
 
 ```C++
@@ -114,7 +114,7 @@ Cuando el usuario activa una tienda en línea, Windows Media Player escribe info
 
 
 
-En la sintaxis del registro anterior, *serviceInfo* es un marcador de posición para una cadena que contiene información descriptiva acerca de la tienda en línea activa.
+En la sintaxis del Registro anterior, *serviceInfo* es un marcador de posición para una cadena que contiene información descriptiva sobre el almacén en línea activo.
 
 ## <a name="related-topics"></a>Temas relacionados
 

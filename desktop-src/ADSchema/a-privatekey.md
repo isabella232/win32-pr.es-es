@@ -1,11 +1,11 @@
 ---
-title: Private-Key atributo)
+title: Private-Key atributo
 description: Una clave privada cifrada.
 ms.assetid: 24837506-b15e-4476-9bf3-de3d5d388f15
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Private-Key
-- privateKey esquema de AD de atributos
+- Private-Key esquema de AD del atributo
+- Esquema de AD del atributo privateKey
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 929b31e817d01601597458948b6bd6a92b14b690
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a063e0707402752036f2137a9331adfad74fe05485febd502e3900c35f296252
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923485"
 ---
-# <a name="private-key-attribute"></a>Private-Key atributo)
+# <a name="private-key-attribute"></a>Private-Key atributo
 
 Una clave privada cifrada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Private-Key                                           |
-| Nombre para mostrar de LDAP | privateKey                                            |
-| Tamaño              | 8 bytes                                               |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | privateKey                                            |
+| Size              | 8 bytes                                               |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.101                                |
-| System-ID-GUID    | bf967a03-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf967a03-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -53,20 +53,20 @@ Una clave privada cifrada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Una clave privada cifrada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Una clave privada cifrada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Una clave privada cifrada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Una clave privada cifrada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Una clave privada cifrada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

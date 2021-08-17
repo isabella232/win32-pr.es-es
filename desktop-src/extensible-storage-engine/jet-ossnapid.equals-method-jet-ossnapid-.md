@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_OSSNAPID. Equals (método JET_OSSNAPID)'
-title: JET_OSSNAPID. Equals (método JET_OSSNAPID)
+description: 'Más información sobre: JET_OSSNAPID. Método Equals (JET_OSSNAPID)'
+title: JET_OSSNAPID. Método Equals (JET_OSSNAPID)
 TOCTitle: Equals method (JET_OSSNAPID)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_OSSNAPID.Equals(Microsoft.Isam.Esent.Interop.JET_OSSNAPID)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_ossnapid.equals(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 383b8641cb9f0ee37da0ae3ddabd8311ab38495f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e9abae88f2649bb1e49a324e336e4305568b11780e0456052ba82fe96f6993f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107693"
 ---
-# <a name="jet_ossnapidequals-method-jet_ossnapid"></a>JET_OSSNAPID. Equals (método JET_OSSNAPID)
+# <a name="jet_ossnapidequals-method-jet_ossnapid"></a>JET_OSSNAPID. Método Equals (JET_OSSNAPID)
 
-Devuelve un valor que indica si esta instancia es igual a otra instancia de.
+Devuelve un valor que indica si esta instancia es igual a otra instancia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,27 +58,27 @@ public bool Equals(
 #### <a name="parameters"></a>Parámetros
 
   - Otros  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
     
     Instancia de que se va a comparar con esta instancia.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias son iguales.  
 
 #### <a name="implements"></a>Implementaciones
 
-[IEquatable \<T\> . Es igual a (T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
+[IEquatable \<T\> . Equals(T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_OSSNAPID](./jet-ossnapid-structure.md)
+[JET_OSSNAPID estructura](./jet-ossnapid-structure.md)
 
-[Miembros de JET_OSSNAPID](./jet-ossnapid-members.md)
+[JET_OSSNAPID miembros](./jet-ossnapid-members.md)
 
-[Equals (sobrecarga)](./jet-ossnapid.equals-method.md)
+[Sobrecarga igual a](./jet-ossnapid.equals-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

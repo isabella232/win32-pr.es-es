@@ -1,10 +1,10 @@
 ---
 title: atributo unstructuredAddress
-description: Dirección IP del enrutador (por ejemplo 100.11.22.33).
+description: Dirección IP del enrutador (por ejemplo, 100.11.22.33).
 ms.assetid: 60ca9fb4-c897-47cd-9bbe-751fff2e290a
 ms.tgt_platform: multiple
 keywords:
-- unstructuredAddress esquema de AD de atributos
+- Esquema de AD del atributo unstructuredAddress
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 811f69c2670a3913a44c255c058f12374ed6ed4f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8dd18851058321615c9d89958f77ffc733300a84cd29998d2b3e024d66f723bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105651428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922965"
 ---
 # <a name="unstructuredaddress-attribute"></a>atributo unstructuredAddress
 
@@ -26,16 +26,16 @@ Dirección IP del enrutador (por ejemplo: 100.11.22.33).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | unstructuredAddress                         |
-| Nombre para mostrar de LDAP | unstructuredAddress                         |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | unstructuredAddress                         |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113549.1.9.8                        |
-| System-ID-GUID    | 50950839-cc4c-4491-863a-fcf942d684b7        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 50950839-cc4c-4491-863a-fcf942d684b7        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -51,15 +51,15 @@ Dirección IP del enrutador (por ejemplo: 100.11.22.33).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -72,15 +72,15 @@ Dirección IP del enrutador (por ejemplo: 100.11.22.33).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -93,15 +93,15 @@ Dirección IP del enrutador (por ejemplo: 100.11.22.33).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -114,15 +114,15 @@ Dirección IP del enrutador (por ejemplo: 100.11.22.33).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -135,15 +135,15 @@ Dirección IP del enrutador (por ejemplo: 100.11.22.33).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

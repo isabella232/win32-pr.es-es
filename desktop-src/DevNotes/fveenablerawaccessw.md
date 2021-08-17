@@ -1,7 +1,7 @@
 ---
 description: Habilita o deshabilita la lectura y escritura de sectores de disco.
 ms.assetid: 885e4db1-a131-4727-80ab-3be8c591b766
-title: FveEnableRawAccessW función)
+title: Función FveEnableRawAccessW
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Fveapi.dll
-ms.openlocfilehash: 5b4a367c3566c1475f856783d800ec43e21071e2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 050983663b782d40c330092919b8fc29060cbba057a16d147b80c6ea477cbf54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956094"
 ---
-# <a name="fveenablerawaccessw-function"></a>FveEnableRawAccessW función)
+# <a name="fveenablerawaccessw-function"></a>Función FveEnableRawAccessW
 
 Habilita o deshabilita la lectura y escritura de sectores de disco.
 
@@ -40,31 +40,31 @@ HRESULT FveEnableRawAccessW(
 
 <dl> <dt>
 
-*VolumeName* \[ de\]
+*VolumeName* \[ En\]
 </dt> <dd>
 
-Un identificador único para el volumen de disco.
+Identificador único para el volumen de disco.
 
 </dd> <dt>
 
-*Habilitado* \[ de\]
+*Habilitado* \[ En\]
 </dt> <dd>
 
-Si **es true**, permite el acceso al volumen sin formato. Si es **false**, no se permite el acceso al volumen sin procesar. Si ya se ha habilitado el acceso sin procesar, pero este valor es **false**, el volumen se vuelve a montar y a validar.
+Si **es TRUE,** permite el acceso al volumen sin formato. Si **es FALSE,** no se permite el acceso al volumen sin formato. Si ya se ha habilitado el acceso sin procesar pero este valor es **FALSE,** el volumen se vuelve a montar y se vuelve a validar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve uno de los siguientes códigos u otro código de error si se produce un error.
+Esta función devuelve uno de los códigos siguientes u otro código de error si se produce un error.
 
 
 
 | Código o valor devuelto                                                                                                                                                           | Descripción                                                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> <dt>0 (0X0)</dt> </dl>                           | La función se realizó correctamente.<br/>                                            |
-| <dl> <dt>**S \_ FALSE**</dt> <dt>1 (0x1)</dt> </dl>                        | Enabled es **false** y el volumen no estaba ya en modo de acceso sin procesar.<br/> |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> <dt>2147942405 (0x80070005)</dt> </dl> | No se puede bloquear el volumen.<br/>                                            |
+| <dl> <dt>**S \_ Ok**</dt> <dt>0 (0x0)</dt> </dl>                           | La función se ha realizado correctamente.<br/>                                            |
+| <dl> <dt>**S \_ FALSE**</dt> <dt>1 (0x1)</dt> </dl>                        | Habilitado es **FALSE** y el volumen aún no estaba en modo de acceso sin formato.<br/> |
+| <dl> <dt>**E \_ ACCESSDENIED**</dt> <dt>2147942405 (0x80070005)</dt> </dl> | El volumen no se puede bloquear.<br/>                                            |
 
 
 
@@ -76,8 +76,8 @@ Esta función devuelve uno de los siguientes códigos u otro código de error si
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
 | Archivo DLL<br/>                      | <dl> <dt>Fveapi.dll</dt> </dl> |
 
 

@@ -1,7 +1,7 @@
 ---
-description: Genera un conjunto de claves de sesión de protocolo de Capa de sockets seguros (SSL).
+description: Genera un conjunto de claves de sesión Capa de sockets seguros protocolo ssl (SSL).
 ms.assetid: 88465f30-8591-411e-8618-8a381d4c22e9
-title: Función SslGenerateSessionKeys (Sslprovider. h)
+title: Función SslGenerateSessionKeys (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: cf8e20008d2a77cae3a47728f4e38fff8ae0b09b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a9d7a25e5dd2035bd0b060ae11904e351489309b3a5e3c65c0e1582dce77500
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906177"
 ---
-# <a name="sslgeneratesessionkeys-function"></a>SslGenerateSessionKeys función)
+# <a name="sslgeneratesessionkeys-function"></a>Función SslGenerateSessionKeys
 
-La función **SslGenerateSessionKeys** genera un conjunto de claves de sesión de [*Protocolo de capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) (SSL).
+La **función SslGenerateSessionKeys** genera un conjunto de claves [*de Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) de sesión (SSL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,42 +44,42 @@ SECURITY_STATUS WINAPI SslGenerateSessionKeys(
 
 <dl> <dt>
 
-*hSslProvider* \[ de\]
+*hSslProvider* \[ En\]
 </dt> <dd>
 
 Identificador de la instancia del proveedor del protocolo SSL.
 
 </dd> <dt>
 
-*hMasterKey* \[ de\]
+*hMasterKey* \[ En\]
 </dt> <dd>
 
-Identificador del objeto de [*clave maestra*](/windows/desktop/SecGloss/m-gly) .
+Identificador del objeto [*de clave*](/windows/desktop/SecGloss/m-gly) maestra.
 
 </dd> <dt>
 
-*phReadKey* \[ enuncia\]
+*phReadKey* \[ out\]
 </dt> <dd>
 
 Puntero al identificador de clave de lectura devuelto.
 
 </dd> <dt>
 
-*phWriteKey* \[ enuncia\]
+*phWriteKey* \[ out\]
 </dt> <dd>
 
 Puntero al identificador de clave de escritura devuelto.
 
 </dd> <dt>
 
-*pParameterList* \[ de\]
+*pParameterList* \[ En\]
 </dt> <dd>
 
-Puntero a una matriz de búferes de [**NCryptBuffer**](https://msdn.microsoft.com/library/Aa376245(v=VS.85).aspx) que contienen información utilizada como parte de la operación de intercambio de claves. El conjunto preciso de búferes depende del protocolo y el conjunto de cifrado que se utiliza. Como mínimo, la lista contendrá búferes que contengan los valores aleatorios proporcionados por el cliente y el servidor.
+Puntero a una matriz de búferes [**NCryptBuffer**](https://msdn.microsoft.com/library/Aa376245(v=VS.85).aspx) que contienen información utilizada como parte de la operación de intercambio de claves. El conjunto preciso de búferes depende del protocolo y del conjunto de cifrado que se usa. Como mínimo, la lista contendrá búferes que contienen los valores aleatorios proporcionados por el cliente y el servidor.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Este parámetro se reserva para uso futuro.
@@ -88,19 +88,19 @@ Este parámetro se reserva para uso futuro.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve cero.
+Si la función se realiza correctamente, devuelve cero.
 
 Si se produce un error en la función, devuelve un valor de error distinto de cero.
 
-Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
+Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 
 
 | Código o valor devuelto                                                                                                                                                       | Descripción                                                              |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| <dl> <dt>**NTE \_ NO hay \_ memoria**</dt> <dt>0x8009000EL</dt> </dl>         | No hay suficiente memoria disponible para asignar los búferes necesarios.<br/> |
-| <dl> <dt>**NTE \_ \_Identificador no válido**</dt> <dt>0x80090026L</dt> </dl>    | Uno de los identificadores proporcionados no es válido.<br/>                     |
-| <dl> <dt>**NTE \_ \_Parámetro no válido**</dt> <dt>0x80090027L</dt> </dl> | El parámetro *phReadKey* o *phWriteKey* es NULL.<br/>            |
+| <dl> <dt>**NTE \_ NO \_ MEMORY**</dt> <dt>0x8009000EL</dt> </dl>         | No hay suficiente memoria disponible para asignar los búferes necesarios.<br/> |
+| <dl> <dt>**NTE \_ IDENTIFICADOR \_ NO VÁLIDO**</dt> <dt>0x80090026L</dt> </dl>    | Uno de los identificadores proporcionados no es válido.<br/>                     |
+| <dl> <dt>**NTE \_ PARÁMETRO \_ NO VÁLIDO**</dt> <dt>0x80090027L</dt> </dl> | El *parámetro phReadKey* *o phWriteKey* es NULL.<br/>            |
 
 
 
@@ -110,11 +110,11 @@ Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

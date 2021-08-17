@@ -170,7 +170,7 @@ HRESULT get_User(
 **UserPath**
 </dt> <dd> <dl>
 
-El ADsPath del objeto de usuario para el usuario de esta sesión.
+ADsPath del objeto de usuario para el usuario de esta sesión.
 
 <dt>
 
@@ -293,7 +293,7 @@ Cleanup:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -303,7 +303,7 @@ Cleanup:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -5,7 +5,7 @@ ms.assetid: c7f9d81d-a9c3-4be9-8ead-cf3d59352dbb
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD del atributo MS-SQL-UnicodeSortOrder
-- Esquema de AD del atributo mS-SQL-UnicodeSortOrder
+- mS-SQL-UnicodeSortOrder attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -27,16 +27,16 @@ Criterio de ordenación Unicode para la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | MS-SQL-UnicodeSortOrder              |
 | Ldap-Display-Name | mS-SQL-UnicodeSortOrder              |
 | Size              | 4 bytes                              |
-| Privilegio actualizar  | Administrador de dominio                 |
+| Actualizar privilegios  | Administrador de dominio                 |
 | Frecuencia de actualización  | Al iniciar el sistema.                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1372              |
 | System-Id-Guid    | 72dc918a-ccee-11d2-9993-0000f87a57d4 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -53,14 +53,14 @@ Criterio de ordenación Unicode para la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Es de un solo valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
@@ -74,14 +74,14 @@ Criterio de ordenación Unicode para la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Es de un solo valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
@@ -95,14 +95,14 @@ Criterio de ordenación Unicode para la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Es de un solo valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
@@ -116,14 +116,14 @@ Criterio de ordenación Unicode para la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Es de un solo valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
@@ -137,14 +137,14 @@ Criterio de ordenación Unicode para la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Es de un solo valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
@@ -158,14 +158,14 @@ Criterio de ordenación Unicode para la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Es de un solo valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |

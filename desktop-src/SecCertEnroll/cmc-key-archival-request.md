@@ -1,5 +1,5 @@
 ---
-description: El ejemplo siguiente contiene una solicitud de archivo de clave de CMC. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
+description: El ejemplo siguiente contiene una solicitud de archivo de clave CMC. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
 ms.assetid: e418ef57-90de-4374-b607-52823bbdd429
 title: Solicitud de archivo de clave de CMC
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118901622"
 ---
 # <a name="cmc-key-archival-request"></a>Solicitud de archivo de clave de CMC
 
-El ejemplo siguiente contiene una solicitud de archivo de clave de CMC. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
+El ejemplo siguiente contiene una solicitud de archivo de clave CMC. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
 
 ``` syntax
 [NewRequest]
@@ -27,7 +27,7 @@ CertificateTemplate=User
 
 Esta configuración genera la siguiente salida de ejemplo. La configuración especifica el asunto, el tipo de solicitud (CMC) y el nombre de la plantilla. La plantilla Usuario especifica que:
 
--   La solicitud debe usar el proveedor de servicios criptográficos base de Microsoft 1.0 o el proveedor de servicios criptográficos mejorado de Microsoft 1.0.
+-   La solicitud debe usar el proveedor criptográfico base de Microsoft 1.0 o el proveedor criptográfico mejorado de Microsoft 1.0.
 -   El nombre del sujeto debe crearse a partir Active Directory.
 -   La solicitud incluye las extensiones Nombre de plantilla de certificado, Uso mejorado de clave (EKU) y Uso de claves. La extensión EKU especifica que el certificado emitido se puede usar para Sistema de cifrado de archivos (EFS), correo electrónico seguro y autenticación de cliente.
 

@@ -1,31 +1,31 @@
 ---
-description: Tipos de datos de transmisión por secuencias multimedia
+description: Tipos de datos de streaming multimedia
 ms.assetid: 750a7992-e2ef-4149-b1c8-c5201f6af035
-title: Tipos de datos de transmisión por secuencias multimedia
+title: Tipos de datos de streaming multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 790aad321c72e1efaa7fd78b74bce24f42637ba8
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 13a47bf2209f1b784c99a06fe4893dfae9f9acc7bb5a2bcaf92240b738d66804
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105689676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952194"
 ---
-# <a name="multimedia-streaming-data-types"></a>Tipos de datos de transmisión por secuencias multimedia
+# <a name="multimedia-streaming-data-types"></a>Tipos de datos de streaming multimedia
 
 > [!Note]  
-> Esta API está en desuso. Las nuevas aplicaciones no deben utilizarla.
+> Esta API está en desuso. Las nuevas aplicaciones no deben usarla.
 
  
 
-Las interfaces de streaming multimedia de Microsoft DirectShow usan los siguientes tipos de datos.
+Las interfaces DirectShow streaming multimedia de Microsoft usan los siguientes tipos de datos.
 
 
 
 | Tipo de datos                           | Descripción                                            |
 |-------------------------------------|--------------------------------------------------------|
 | [**MSPID**](mspid.md)              | Identifica el propósito de una secuencia multimedia.              |
-| [**tiempo de secuencia \_**](stream-time.md) | Define el tipo de datos utilizado para expresar los tiempos de referencia. |
+| [**STREAM \_ TIME**](stream-time.md) | Define el tipo de datos utilizado para expresar los tiempos de referencia. |
 
 
 

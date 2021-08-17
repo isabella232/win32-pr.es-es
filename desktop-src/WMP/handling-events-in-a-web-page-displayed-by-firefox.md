@@ -1,47 +1,47 @@
 ---
-title: Control de eventos en una página web que se muestra en Firefox
-description: Control de eventos en una página web que se muestra en Firefox
+title: Controlar eventos en una página web mostrada por Firefox
+description: Controlar eventos en una página web mostrada por Firefox
 ms.assetid: 361c46ff-36e2-4497-a511-86b0439e9437
 keywords:
-- Windows Media Player, incrustar el control ActiveX
-- Modelo de objetos de Windows Media Player, incrustar el control ActiveX
-- modelo de objetos, incrustar el control ActiveX
-- Windows Media Player Mobile, incrustar el control ActiveX
-- Control ActiveX de Windows Media Player, incrustación
-- Control ActiveX móvil de Windows Media Player, incrustación
-- Control ActiveX, incrustación
-- Control ActiveX de Windows Media Player, páginas web
-- Control ActiveX móvil de Windows Media Player, páginas web
-- Control ActiveX, páginas web
-- Control ActiveX de Windows Media Player, control de eventos
-- Control ActiveX de Windows Media Player Mobile, control de eventos
-- Control ActiveX, control de eventos
-- incrustación, páginas web
-- Incrustación de páginas web, control de eventos
-- Windows Media Player, Firefox
-- Modelo de objetos de Windows Media Player, Firefox
+- Reproductor de Windows Media, insertar ActiveX control
+- Reproductor de Windows Media modelo de objetos, insertar ActiveX control
+- object model,embedding ActiveX control
+- Reproductor de Windows Media Mobile,embedding ActiveX control
+- Reproductor de Windows Media ActiveX control, inserción
+- Reproductor de Windows Media Control de ActiveX móvil, inserción
+- ActiveX control, inserción
+- Reproductor de Windows Media ActiveX control, páginas web
+- Reproductor de Windows Media Control de ActiveX móviles,páginas web
+- ActiveX control, páginas web
+- Reproductor de Windows Media ActiveX control de eventos, control de eventos
+- Reproductor de Windows Media Control de ActiveX móviles, control de eventos
+- ActiveX control, control de eventos
+- embedding,Web pages
+- Inserción de páginas web, control de eventos
+- Reproductor de Windows Media,Firefox
+- Reproductor de Windows Media modelo de objetos,Firefox
 - modelo de objetos, Firefox
-- Windows Media Player Mobile, Firefox
-- Control ActiveX de Windows Media Player, Firefox
-- Control ActiveX móvil de Windows Media Player, Firefox
-- Control ActiveX, Firefox
+- Reproductor de Windows Media Mobile,Firefox
+- Reproductor de Windows Media ActiveX control, Firefox
+- Reproductor de Windows Media Control de ActiveX móvil,Firefox
+- ActiveX control, Firefox
 - Firefox, control de eventos
-- Incrustación de páginas web, Firefox
-- eventos, Firefox
+- Inserción de páginas web, Firefox
+- events,Firefox
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b9659d1920ffc4d5e39f4cd44e15e24b08f6ddc
-ms.sourcegitcommit: e22adfb0dd3bb989e59455baedb4d905a877a240
+ms.openlocfilehash: e971caef18114b670678fc76d0515858bee77a94a5e3f8b5c24ca5322177b8e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "104357822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748420"
 ---
-# <a name="handling-events-in-a-web-page-displayed-by-firefox"></a>Control de eventos en una página web que se muestra en Firefox
+# <a name="handling-events-in-a-web-page-displayed-by-firefox"></a>Controlar eventos en una página web mostrada por Firefox
 
-Al incrustar el control Media Player de Windows en una página web, puede escribir un script que controle los eventos. Para obtener una lista de eventos generados por el control Player, consulte [objeto Player](player-object.md).
+Al insertar el control Reproductor de Windows Media en una página web, puede escribir un script que controle los eventos. Para obtener una lista de los eventos que genera el control Player, vea [Player Object](player-object.md).
 
-Si el tipo MIME asociado a un control de reproductor incrustado es application/x-MS-WMP, puede escribir controladores de eventos con el siguiente formato:
+Si el tipo mime asociado a un control Player incrustado es application/x-ms-wmp, puede escribir controladores de eventos que tengan el formato siguiente:
 
 
 ```HTML
@@ -52,7 +52,7 @@ Si el tipo MIME asociado a un control de reproductor incrustado es application/x
 
 
 
-donde *eventName* es el nombre de un evento de Windows Media Player y *params* es una lista de los parámetros del evento. Por ejemplo, el código siguiente tiene un controlador para el evento [PlayStateChange](player-player-playstatechange.md) .
+donde *EventName* es el nombre de un Reproductor de Windows Media evento y *Params* es una lista de los parámetros del evento. Por ejemplo, el código siguiente tiene un controlador para el [evento PlayStateChange.](player-player-playstatechange.md)
 
 
 ```HTML
@@ -69,9 +69,9 @@ donde *eventName* es el nombre de un evento de Windows Media Player y *params* e
 
 
 
-Si tiene varias instancias del control Player en una página web y usa el formato que se muestra en el ejemplo anterior, cada controlador de eventos está asociado a una instancia específica del control Player. En el ejemplo anterior, solo se llama al controlador de eventos cuando el estado de reproducción cambia para el control que tiene ID = "Player".
+Si tiene varias instancias del control Player en una página web y usa el formato que se muestra en el ejemplo anterior, cada controlador de eventos está asociado a una instancia específica del control Player. En el ejemplo anterior, solo se llama al controlador de eventos cuando cambia el estado de reproducción para el control que tiene id="Player".
 
-Si el tipo MIME asociado a un control de reproductor incrustado no es application/x-MS-WMP, puede escribir controladores de eventos con el siguiente formato:
+Si el tipo mime asociado a un control Player incrustado no es application/x-ms-wmp, puede escribir controladores de eventos que tengan el formato siguiente:
 
 
 ```HTML
@@ -83,7 +83,7 @@ Si el tipo MIME asociado a un control de reproductor incrustado no es applicatio
 
 
 
-donde *eventName* es el nombre de un evento de Windows Media Player y *params* es una lista de los parámetros del evento. Por ejemplo, el código siguiente tiene un controlador para el evento **PlayStateChange** .
+donde *EventName* es el nombre de un Reproductor de Windows Media evento y *Params* es una lista de los parámetros del evento. Por ejemplo, el código siguiente tiene un controlador para el **evento PlayStateChange.**
 
 
 ```HTML
@@ -104,23 +104,23 @@ donde *eventName* es el nombre de un evento de Windows Media Player y *params* e
 
 
 
-Si tiene varias instancias del control Player en una página web y usa el formato que se muestra en el ejemplo anterior, cada controlador de eventos está asociado a todas las instancias del control Player y se llama al controlador de eventos cuando cambia el estado de reproducción para cualquier control de reproductor en la página.
+Si tiene varias instancias del control Player en una página web y usa el formato que se muestra en el ejemplo anterior, cada controlador de eventos está asociado a todas las instancias del control Player y se llama al controlador de eventos cuando cambia el estado de reproducción de cualquier control Player de la página.
 
 > [!Note]  
-> Si el tipo MIME no es application/x-MS-WMP, el evento **DoubleClick** se envía como OnDSDblClickEvt (no OnDSDoubleClickEvt) por compatibilidad con la versión 6,4 del control Player.
+> Si el tipo mime no es application/x-ms-wmp, el evento **DoubleClick** se envía como OnDSDblClickEvt (no OnDSDoubleClickEvt) por compatibilidad con la versión 6.4 del control Player.
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Uso del control de Media Player de Windows con Firefox**](using-the-windows-media-player-control-with-firefox.md)
+[**Uso del Reproductor de Windows Media control con Firefox**](using-the-windows-media-player-control-with-firefox.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

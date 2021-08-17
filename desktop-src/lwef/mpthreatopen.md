@@ -3,7 +3,7 @@ title: Función MpThreatOpen (MpClient.h)
 description: Devuelve un identificador de enumeración para recuperar amenazas.
 ms.assetid: E1178F0C-E9C0-4532-AE9B-452770600DF2
 keywords:
-- Función MpThreatOpen heredada Windows environment
+- Función MpThreatOpen Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -61,7 +61,7 @@ Se usa para controlar el origen de la enumeración de amenazas. Este parámetro 
 
 
 
-| Value                                                                                                                                                                                                 | Significado                                                                                                            |
+| Valor                                                                                                                                                                                                 | Significado                                                                                                            |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
 | <span id="MPTHREAT_SOURCE_SCAN"></span><span id="mpthreat_source_scan"></span><dl> <dt>**EXAMEN DE ORIGEN \_ DE MPTHREAT \_**</dt> </dl>                   | Amenazas asociadas al identificador de examen específico.<br/>                                              |
 | <span id="MPTHREAT_SOURCE_ACTIVE"></span><span id="mpthreat_source_active"></span><dl> <dt>**ORIGEN DE MPTHREAT \_ \_ ACTIVO**</dt> </dl>             | Amenazas que están activas actualmente en el sistema.<br/>                                                        |
@@ -85,7 +85,7 @@ Se usa para filtrar las amenazas enumeradas en función del tipo de detección. 
 
 
 
-| Value                                                                                                                                                                                           | Significado                                                                                                       |
+| Valor                                                                                                                                                                                           | Significado                                                                                                       |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | <span id="MPTHREAT_TYPE_KNOWNBAD"></span><span id="mpthreat_type_knownbad"></span><dl> <dt>**TIPO MPTHREAT \_ \_ KNOWNBAD**</dt> </dl>       | La detección se realiza en función de una firma, emulación u otro método de detección de amenazas específico.<br/> |
 | <span id="MPTHREAT_TYPE_SUSPICIOUS"></span><span id="mpthreat_type_suspicious"></span><dl> <dt>**TIPO MPTHREAT \_ \_ SOSPECHOSO**</dt> </dl> | La detección se realiza en función de la supervisión del comportamiento.<br/>                                               |
@@ -120,7 +120,7 @@ Si se produce un error en la función, el valor devuelto es un **código HRESULT
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                    |
@@ -129,7 +129,7 @@ Si se produce un error en la función, el valor devuelto es un **código HRESULT
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

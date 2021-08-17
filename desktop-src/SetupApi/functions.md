@@ -1,21 +1,21 @@
 ---
-description: 'Las siguientes funciones forman parte de la API de configuración:'
+description: 'Las siguientes funciones forman parte de la API de instalación:'
 ms.assetid: 0a9518b7-f231-48f2-ba50-5b802f8ccaed
 title: Funciones (API de instalación)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24051c52d7c7555e1e1b84c03fafd6faf6ad1b96
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e2bf2b8797faa22576fc78deb58e46fd1f2a140721b0d71df469812fabab314
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118886885"
 ---
 # <a name="functions-setup-api"></a>Funciones (API de instalación)
 
-\[Estas funciones están disponibles para su uso en los sistemas operativos que se indican en las secciones requisitos. Podrán modificarse o no estar disponibles en versiones posteriores. SetupAPI ya no debe usarse para instalar aplicaciones. En su lugar, use el Windows Installer para desarrollar instaladores de aplicaciones. SetupAPI se sigue usando para instalar controladores de dispositivos.\]
+\[Estas funciones están disponibles para su uso en los sistemas operativos indicados en las secciones Requisitos. Podrán modificarse o no estar disponibles en versiones posteriores. SetupAPI ya no debe usarse para instalar aplicaciones. En su lugar, use Windows Installer para desarrollar instaladores de aplicaciones. SetupAPI se sigue utilizando para instalar controladores de dispositivo.\]
 
-Las siguientes funciones forman parte de la API de configuración:
+Las siguientes funciones forman parte de la API de instalación:
 
 -   [**InstallHinfSection**](/windows/desktop/api/Setupapi/nf-setupapi-installhinfsectiona)
 -   [**SetupAddInstallSectionToDiskSpaceList**](/windows/desktop/api/Setupapi/nf-setupapi-setupaddinstallsectiontodiskspacelista)

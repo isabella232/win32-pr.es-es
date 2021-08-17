@@ -1,5 +1,5 @@
 ---
-title: In-Context de función de enlace de enlace
+title: In-Context de la función hook
 description: Por motivos de rendimiento, los desarrolladores de cliente registran funciones de enlace en contexto.
 ms.assetid: 14b48920-a291-4519-b005-e559263a0e83
 ms.topic: article
@@ -11,9 +11,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118565593"
 ---
-# <a name="in-context-hook-function-precautions"></a>In-Context de función de enlace de enlace
+# <a name="in-context-hook-function-precautions"></a>In-Context de la función hook
 
-Por motivos de rendimiento, los desarrolladores de cliente registran funciones de enlace en contexto. Sin embargo, dado que estas funciones de enlace se asignan al espacio de direcciones del servidor, los desarrolladores de cliente y servidor deben tomar precauciones para asegurarse de que el procesamiento de eventos se lleva a término sin problemas.
+Por motivos de rendimiento, los desarrolladores de cliente registran funciones de enlace en contexto. Sin embargo, dado que estas funciones de enlace se asignan al espacio de direcciones del servidor, los desarrolladores de cliente y servidor deben tomar precauciones para asegurarse de que el procesamiento de eventos se lleva a buen término.
 
 ## <a name="precautions-for-client-developers"></a>Precauciones para los desarrolladores de cliente
 
@@ -30,11 +30,11 @@ Los desarrolladores de servidores deben tener en cuenta que las aplicaciones cli
 
 ## <a name="invalid-interface-pointers"></a>Punteros de interfaz no válidos
 
-Cuando un cliente llama a [**AccessibleObjectFromEvent**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent) dentro de una función de enlace en contexto, el puntero de interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) que se devuelve apunta directamente al código en el espacio de direcciones del servidor. Si el cliente llama a una propiedad de interfaz mediante este puntero, la biblioteca del Modelo de objetos componentes (COM) no está implicada en la serialización (empaquetado y envío de parámetros de interfaz a través de los límites del proceso) ni en la desempaquetar (desempaquetar los parámetros que se han enviado a través de los límites del proceso) y no detecta si se destruye un objeto.
+Cuando un cliente llama a [**AccessibleObjectFromEvent**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent) dentro de una función de enlace en contexto, el puntero de interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) que se devuelve apunta directamente al código en el espacio de direcciones del servidor. Si el cliente llama a una propiedad de interfaz mediante este puntero, la biblioteca del modelo de objetos componentes (COM) no está implicada en la serialización (empaquetado y envío de parámetros de interfaz a través de los límites del proceso) ni en la desempaquetar (desempaquetar parámetros que se han enviado a través de los límites del proceso) y no detecta si se destruye un objeto.
 
-Si el cliente llama a una propiedad de interfaz a un objeto que se destruye, el puntero de interfaz no válido produce un error de protección general en el espacio de direcciones del servidor, a menos que el servidor detecte esta situación.
+Si el cliente llama a una propiedad de interfaz a un objeto que se destruye, el puntero de interfaz no válido produce un error de protección general en el espacio de direcciones del servidor a menos que el servidor detecte esta situación.
 
-Para protegerse frente a punteros de interfaz no válidos, los servidores crean [objetos proxy](creating-proxy-objects.md) que encapsulan objetos accesibles y supervisan la duración de los objetos accesibles. Por ejemplo, cuando un cliente llama a una propiedad [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) para obtener información sobre un objeto, el proxy comprueba si el objeto accesible sigue estando disponible y, si es así, reenvía la solicitud del cliente al objeto accesible. Si se destruye el objeto accesible, el proxy devuelve un error al cliente.
+Para protegerse frente a punteros de interfaz no válidos, los servidores crean [objetos proxy](creating-proxy-objects.md) que encapsulan objetos accesibles y supervisan la duración de los objetos accesibles. Por ejemplo, cuando un cliente llama a una propiedad [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) para obtener información sobre un objeto , el proxy comprueba si el objeto accesible sigue estando disponible y, si es así, reenvía la solicitud del cliente al objeto accesible. Si se destruye el objeto accesible, el proxy devuelve un error al cliente.
 
  
 

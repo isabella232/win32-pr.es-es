@@ -1,6 +1,6 @@
 ---
 title: Función DDCCIGetVCPFeature
-description: Obtiene el valor actual, el valor máximo y el tipo de código de un Panel de control virtual (VCP) para un monitor.
+description: Obtiene el valor actual, el valor máximo y el tipo de código de un código Panel de control virtual (VCP) para un monitor.
 ms.assetid: 7749d45c-a0d5-44ee-8f91-811677cbf59f
 keywords:
 - Configuración del monitor de la función DDCCIGetVCPFeature
@@ -28,7 +28,7 @@ ms.locfileid: "118641003"
 
  
 
-Obtiene el valor actual, el valor máximo y el tipo de código de un Panel de control virtual (VCP) para un monitor.
+Obtiene el valor actual, el valor máximo y el tipo de código de un código Panel de control virtual (VCP) para un monitor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -88,7 +88,7 @@ Recibe el valor máximo del código VCP.
 
 Si el método se realiza correctamente, devuelve **STATUS \_ SUCCESS**. De lo contrario, devuelve un código de error **NTSTATUS.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Las aplicaciones deben [**llamar a GetVCPFeatureAndVCPFeatureReply en**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-getvcpfeatureandvcpfeaturereply) lugar de llamar a esta función.
 
@@ -98,7 +98,7 @@ Esta función no tiene ninguna biblioteca de importación asociada. Para llamar 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
@@ -106,7 +106,7 @@ Esta función no tiene ninguna biblioteca de importación asociada. Para llamar 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

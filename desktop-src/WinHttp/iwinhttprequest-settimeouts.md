@@ -75,7 +75,7 @@ Valor de tiempo de espera aplicado al recibir un paquete de datos de respuesta d
 
 El valor devuelto es **S \_ OK on** success o un valor de error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Todos los parámetros son obligatorios. Un valor de 0 o -1 establece un tiempo de espera para esperar infinitamente. Un valor mayor que 0 establece el valor de tiempo de espera en milisegundos. Por ejemplo, 30 000 establecería el tiempo de espera en 30 segundos. Todos los valores negativos distintos de -1 hacen que este método no se pueda usar.
 
@@ -208,7 +208,7 @@ WinHttpReq.Send();
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>            |
 | Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
@@ -219,7 +219,7 @@ WinHttpReq.Send();
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

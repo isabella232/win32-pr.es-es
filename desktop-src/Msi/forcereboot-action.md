@@ -17,11 +17,11 @@ La acción ForceReboot solicita al usuario que reinicie el sistema durante la in
 
 Si la instalación tiene una interfaz de usuario, el instalador muestra un cuadro de diálogo en cada acción ForceReboot que solicita al usuario que reinicie el sistema. El usuario debe responder a este aviso antes de continuar con la instalación. Si la instalación no tiene ninguna interfaz de usuario, el sistema se reinicia automáticamente en la acción ForceReboot.
 
-Si el instalador determina que es necesario reiniciar, automáticamente solicita al usuario que se reinicie al final de la instalación, independientemente de si hay o no alguna acción ForceReboot o ScheduleReboot en la secuencia. Por ejemplo, el instalador solicita automáticamente un reinicio si necesita reemplazar los archivos usados durante la instalación.
+Si el instalador determina que es necesario reiniciar, se solicita automáticamente al usuario que se reinicie al final de la instalación, independientemente de si hay o no alguna acción ForceReboot o ScheduleReboot en la secuencia. Por ejemplo, el instalador solicita automáticamente un reinicio si necesita reemplazar los archivos usados durante la instalación.
 
 Suprimir determinados mensajes de reinicio estableciendo la [**propiedad REBOOT.**](reboot.md)
 
-Si el Windows encuentra la acción ForceReboot o [ScheduleReboot](schedulereboot-action.md) durante una instalación de varios [paquetes,](multiple-package-installations.md)el instalador detendrá y revertirá la instalación. Se pueden instalar otros paquetes que pertenezcan a la instalación de varios paquetes, que no contengan una acción ForceReboot o ScheduleReboot.
+Si el instalador Windows encuentra la acción ForceReboot o [](multiple-package-installations.md) [ScheduleReboot](schedulereboot-action.md) durante una instalación de varios paquetes, el instalador detendrá y revertirá la instalación. Se pueden instalar otros paquetes que pertenezcan a la instalación de varios paquetes, que no contengan una acción ForceReboot o ScheduleReboot.
 
 ## <a name="sequence-restrictions"></a>Restricciones de secuencia
 
@@ -43,9 +43,9 @@ La acción ForceReboot debe estar entre [InstallInitialize](installinitialize-ac
 
 No hay ningún mensaje ActionData.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La acción ForceReboot siempre debe usarse con una instrucción condicional de modo que el instalador desencadene un reinicio solo cuando sea necesario. Por ejemplo, solo puede ser necesario reiniciar si se reemplaza un archivo determinado o si se instala un componente determinado. Cada instalación de producto es única y puede ser necesaria una acción personalizada para determinar si es necesario reiniciar. La condición de la acción ForceReboot normalmente usa la [**propiedad AFTERREBOOT.**](afterreboot.md)
+La acción ForceReboot siempre debe usarse con una instrucción condicional de modo que el instalador desencadene un reinicio solo cuando sea necesario. Por ejemplo, solo puede ser necesario reiniciar si se reemplaza un archivo determinado o se instala un componente determinado. Cada instalación de producto es única y puede ser necesaria una acción personalizada para determinar si es necesario reiniciar. La condición de la acción ForceReboot normalmente usa la [**propiedad AFTERREBOOT.**](afterreboot.md)
 
 ForceReboot ejecuta las operaciones del sistema generadas por las acciones anteriores antes de solicitar un reinicio o un reinicio. Por ejemplo, las operaciones del sistema [generadas por InstallFiles](installfiles-action.md) y [WriteRegistryValues](writeregistryvalues-action.md) se ejecutan antes de reiniciar.
 

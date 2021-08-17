@@ -33,7 +33,7 @@ La acción DuplicateFiles debe ir después de [la acción InstallFiles](installf
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La acción DuplicateFiles procesa una entrada de tabla [DuplicateFile](duplicatefile-table.md) solo si el componente vinculado a esa entrada se instala localmente. Para obtener más información, vea [Tabla de componentes](component-table.md).
 

@@ -1,9 +1,9 @@
 ---
-title: 'Métodos Load RWBuffer:: RWBuffer'
-description: Obtiene un valor de un RWBuffer.
+title: Métodos RWBuffer::RWBuffer Load
+description: Obtiene un valor de rwbuffer.
 ms.assetid: 85A8F1C9-6896-4E3A-AFDF-B82D1D3E96EA
 keywords:
-- Cargar métodos HLSL
+- Métodos de carga HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 017a2aeb1cbbbda051c4349c3837f574a97f7557
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: 1a365643558d8bc31c63dd2d3c0e40a2ecc5fb8b6d63a08c5dd5aaa1bb13c4a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104419783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118791466"
 ---
-# <a name="rwbufferload-methods"></a>RWBuffer:: Load (métodos)
+# <a name="rwbufferload-methods"></a>RWBuffer::Load (métodos)
 
-Obtiene un valor de un [**RWBuffer**](sm5-object-rwbuffer.md).
+Obtiene un valor de [**rwbuffer.**](sm5-object-rwbuffer.md)
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,12 +29,12 @@ Obtiene un valor de un [**RWBuffer**](sm5-object-rwbuffer.md).
 
 | Método                                              | Descripción                                                       |
 |:----------------------------------------------------|:------------------------------------------------------------------|
-| [**Load (int, uint)**](rwbuffer-load-float-uint-.md) | Lee los datos de búfer y devuelve el estado de la operación.<br/> |
-| [**Load (int)**](rwbuffer-load-float-.md)           | Lee los datos del búfer.<br/>                                     |
+| [**Load(int,uint)**](rwbuffer-load-float-uint-.md) | Lee los datos del búfer y devuelve el estado de la operación.<br/> |
+| [**Load(int)**](rwbuffer-load-float-.md)           | Lee los datos del búfer.<br/>                                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

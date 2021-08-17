@@ -1,7 +1,7 @@
 ---
-description: Convierte una matriz de bytes en una cadena empaquetada como binaria.
+description: Convierte una matriz de bytes en una cadena empaquetada binariamente.
 ms.assetid: 8db4597d-612c-4535-895e-984d29fc173d
-title: Utilities. ByteArrayToBinaryString (método)
+title: Método Utilities.ByteArrayToBinaryString
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 117cb593b77499f6f5c9e402a79e36410375647e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 33d499f1c7750335b1f4159647907d39c27dd74952e89b1da31b118d2812de12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105689909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118896411"
 ---
-# <a name="utilitiesbytearraytobinarystring-method"></a>Utilities. ByteArrayToBinaryString (método)
+# <a name="utilitiesbytearraytobinarystring-method"></a>Método Utilities.ByteArrayToBinaryString
 
-\[El método **ByteArrayToBinaryString** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos.\]
+\[El **método ByteArrayToBinaryString** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos.\]
 
-El método **ByteArrayToBinaryString** convierte una matriz de bytes en una cadena empaquetada como binaria.
+El **método ByteArrayToBinaryString** convierte una matriz de bytes en una cadena empaquetada binariamente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,10 +41,10 @@ Utilities.ByteArrayToBinaryString( _
 
 <dl> <dt>
 
-*varByteArray* \[ de\]
+*varByteArray* \[ En\]
 </dt> <dd>
 
-Matriz de bytes que se va a convertir en una cadena empaquetada como binaria.
+Matriz de bytes que se convertirá en una cadena empaquetada binariamente.
 
 </dd> </dl>
 
@@ -56,18 +56,18 @@ Cadena empaquetada binaria que contiene el resultado de la conversión.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Sectores públicos**](utilities.md)
+[**Utilidades**](utilities.md)
 </dt> </dl>
 
  

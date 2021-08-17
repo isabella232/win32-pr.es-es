@@ -1,23 +1,23 @@
 ---
 description: Ajusta el brillo.
 ms.assetid: 1b3f56eb-3f22-4120-ba6c-331eccd5d303
-title: Propiedad MFPKEY_COLOR_BRIGHTNESS (Wmcodecdsp. h)
+title: MFPKEY_COLOR_BRIGHTNESS propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 685ab934a91f1843183fcfa88bb94c83e602db27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a43969dff8d743e493916303c31e3d57760a2b025bfadaeaf8cc03e7e25430d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119954655"
 ---
-# <a name="mfpkey_color_brightness-property"></a>Propiedad de brillo de \_ color MFPKEY \_
+# <a name="mfpkey_color_brightness-property"></a>Propiedad COLOR BRIGHTNESS de MFPKEY \_ \_
 
 Ajusta el brillo.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -31,11 +31,11 @@ VT \_ I4
 
 -   [DSP de transformación de control de color](colorcontroltransform.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El ajuste de brillo se realiza agregando un valor al canal de luminancia.
+El ajuste de brillo se realiza agregando un valor al canal luma.
 
-Esta propiedad tiene un intervalo de-127 a 127. Cero indica que no hay ningún cambio en el brillo.
+Esta propiedad tiene un intervalo de -127 a 127. Cero indica que no hay ningún cambio en el brillo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,9 +43,9 @@ Esta propiedad tiene un intervalo de-127 a 127. Cero indica que no hay ningún c
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -53,7 +53,7 @@ Esta propiedad tiene un intervalo de-127 a 127. Cero indica que no hay ningún c
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

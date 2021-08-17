@@ -1,7 +1,7 @@
 ---
-description: La macro reminds genera un recordatorio en tiempo de compilación. Esta macro genera una cadena que incluye la cadena de parámetro, el nombre del archivo de código fuente y el número de línea.
+description: La macro REMIND genera un recordatorio en tiempo de compilación. Esta macro genera una cadena que incluye la cadena de parámetro, el nombre del archivo de origen y el número de línea.
 ms.assetid: 12043df5-ed68-4980-91aa-7598d8ab1951
-title: RECORDAR (Wxdebug. h)
+title: REMIND (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 305e5df628244293b643da8882f57dd83041c4c6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c17ec8fac190cd98803a0dfa85acff015d0ac2c18ce712cc87316dd2dca181bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952124"
 ---
-# <a name="remind"></a>TE
+# <a name="remind"></a>Recordar
 
-La `REMIND` macro genera un recordatorio en tiempo de compilación. Esta macro genera una cadena que incluye la cadena de parámetro, el nombre del archivo de código fuente y el número de línea.
+La `REMIND` macro genera un recordatorio en tiempo de compilación. Esta macro genera una cadena que incluye la cadena de parámetro, el nombre del archivo de origen y el número de línea.
 
 ``` syntax
 REMIND(strLiteral);
@@ -42,7 +42,7 @@ Cadena de texto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta macro es útil para generar advertencias en tiempo de compilación:
 
@@ -59,8 +59,8 @@ Esta macro es útil para generar advertencias en tiempo de compilación:
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxdebug. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxdebug.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

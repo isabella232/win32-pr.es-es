@@ -34,7 +34,7 @@ Para más información, consulte la documentación del elemento [**DataRoamingPa
 [<MBNProfileExt>](element-mbnprofileext.md)  
 **<DataRoamingPartners>**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <DataRoamingPartners>
@@ -45,7 +45,7 @@ Para más información, consulte la documentación del elemento [**DataRoamingPa
 </DataRoamingPartners>
 ```
 
-### <a name="key"></a>Key
+### <a name="key"></a>Clave
 
 `+`   requerido (uno o varios)
 

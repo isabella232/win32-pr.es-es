@@ -1,5 +1,5 @@
 ---
-description: 'Clase Process: esta clase es la clase primaria para los eventos de proceso. La sintaxis siguiente se simplifica a partir del código MOF.'
+description: 'Clase process: esta clase es la clase primaria para los eventos de proceso. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: a505c693-2169-499b-bd32-42fa9bd69d2f
 title: Process (clase)
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 8085bae0d00ebe830efff420744f6b7e9b4bf23c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 25c21e5f301d88f3790900c70873d9485161f5041d28bb1a30f3bb85082a9bd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069905"
 ---
 # <a name="process-class"></a>Process (clase)
 
@@ -59,20 +59,20 @@ Los consumidores de seguimiento de eventos pueden implementar un procesamiento e
 
  
 
-Los eventos de inicio de procesos y subprocesos se pueden registrar en el contexto del proceso o subproceso primario. Como resultado, es posible que los **miembros ProcessId** y **ThreadId** de [**EVENT TRACE \_ \_ HEADER**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) no se correspondan con el proceso y el subproceso que se crean. Este es el motivo por el que estos eventos contienen los identificadores de proceso y subproceso en los datos del evento (además de los del encabezado de evento).
+Los eventos de inicio de procesos e subprocesos se pueden registrar en el contexto del proceso o subproceso primario. Como resultado, es posible que los **miembros ProcessId** y **ThreadId** de [**EVENT TRACE \_ \_ HEADER**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) no se correspondan con el proceso y el subproceso que se están creando. Este es el motivo por el que estos eventos contienen los identificadores de proceso y subproceso en los datos del evento (además de los del encabezado de evento).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Aplicaciones de escritorio de Windows Vista \[ \| para aplicaciones para UWP\]<br/>       |
-| Servidor mínimo compatible<br/> | Aplicaciones de escritorio de Windows Server 2008 \[ \| aplicaciones para UWP\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| para aplicaciones para UWP\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

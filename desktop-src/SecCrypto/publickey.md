@@ -52,7 +52,7 @@ El **objeto PublicKey** tiene estas propiedades.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 No se puede crear el objeto **PublicKey.**
 
@@ -62,7 +62,7 @@ El método [**Certificate.PublicKey**](certificate-publickey.md) usa el objeto *
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |

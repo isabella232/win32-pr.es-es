@@ -94,7 +94,7 @@ Matriz que contiene los identificadores de VLAN a los que puede acceder el conmu
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
@@ -104,7 +104,7 @@ Matriz que contiene los identificadores de VLAN a los que puede acceder el conmu
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

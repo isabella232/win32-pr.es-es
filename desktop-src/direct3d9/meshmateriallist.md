@@ -32,7 +32,7 @@ Donde:
 -   nFaceIndexes: DWORD. Número de índices.
 -   faceIndexes \[ nFaceIndexes: \] matriz de DWORD que contiene los índices faciales.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

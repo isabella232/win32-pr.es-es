@@ -1,11 +1,11 @@
 ---
-title: Atributo de nombre de formulario de impresión
+title: Atributo Print-Form-Name
 description: Nombre del formulario cargado actualmente.
 ms.assetid: a8211c91-3730-4bb5-bd06-9ef3094bf688
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de nombre de formulario de impresión
-- printFormName esquema de AD de atributos
+- Esquema de AD del atributo Print-Form-Name
+- Esquema de AD del atributo printFormName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce321d2167747dd2817fa880dc7f3fe68827935c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 87518122205e8609193f6b89fd781e10a3845ec75f8b5ebf2d6b3a4750774d27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923645"
 ---
-# <a name="print-form-name-attribute"></a>Atributo de nombre de formulario de impresión
+# <a name="print-form-name-attribute"></a>Atributo Print-Form-Name
 
 Nombre del formulario cargado actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Print-form-Name                             |
-| Nombre para mostrar de LDAP | printFormName                               |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | Print-Form-Name                             |
+| Ldap-Display-Name | printFormName                               |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.235                      |
-| System-ID-GUID    | 281416cb-1968-11d0-a28f-00aa003049e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 281416cb-1968-11d0-a28f-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,15 +53,15 @@ Nombre del formulario cargado actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -74,15 +74,15 @@ Nombre del formulario cargado actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -95,15 +95,15 @@ Nombre del formulario cargado actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -116,15 +116,15 @@ Nombre del formulario cargado actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -137,15 +137,15 @@ Nombre del formulario cargado actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -158,15 +158,15 @@ Nombre del formulario cargado actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |

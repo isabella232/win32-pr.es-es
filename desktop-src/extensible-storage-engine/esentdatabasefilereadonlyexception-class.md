@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentDatabaseFileReadOnlyException'
+description: 'Más información sobre: Clase EsentDatabaseFileReadOnlyException'
 title: Clase EsentDatabaseFileReadOnlyException
 TOCTitle: EsentDatabaseFileReadOnlyException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentDatabaseFileReadOnlyException
@@ -24,31 +24,31 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d9a086aa4ba07125b437114fcf3b52ca705f1851
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec4c7d29b19e1c3e58561836e2ce9d5dfcf547e3b9a9082e2021ab5ce3cb2fa4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118781246"
 ---
 # <a name="esentdatabasefilereadonlyexception-class"></a>Clase EsentDatabaseFileReadOnlyException
 
-Clase base para JET_err. Excepciones DatabaseFileReadOnly.
+Clase base para JET_err. Excepciones de DatabaseFileReadOnly.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentUsageException](./esentusageexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentDatabaseFileReadOnlyException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentUsageException](./esentusageexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentDatabaseFileReadOnlyException  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -68,10 +68,10 @@ public sealed class EsentDatabaseFileReadOnlyException : EsentUsageException
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [Miembros de EsentDatabaseFileReadOnlyException](./esentdatabasefilereadonlyexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
