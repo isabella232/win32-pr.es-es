@@ -36,7 +36,7 @@ Muestrea y compara un [**objeto Texture2D**](sm5-object-texture2d.md) y devuelve
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Indica que una página de memoria se ha quitado del uso del sistema debido a errores excesivos de comprobación y corrección de errores de hardware (ECC). Esta clase solo está disponible en sistemas de 64 Windows bits.
+description: Indica que se ha quitado una página de memoria del uso del sistema debido a errores excesivos de comprobación y corrección de errores de hardware (ECC). Esta clase solo está disponible en sistemas de 64 Windows bits.
 ms.assetid: 364a2520-8d7c-44f2-95f6-eea9a5531975
 title: MSMCAEvent_MemoryPageRemoved clase
 ms.topic: reference
@@ -92,11 +92,11 @@ Tipo de acceso: solo lectura
 
 Dirección de la página de memoria que se ha quitado.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La **clase \_ MemoryPageRemoved de MSMCAEvent** se deriva de [**WMIEvent**](wmievent.md).
 
@@ -104,7 +104,7 @@ La **clase \_ MemoryPageRemoved de MSMCAEvent** se deriva de [**WMIEvent**](wmie
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                         |
@@ -114,7 +114,7 @@ La **clase \_ MemoryPageRemoved de MSMCAEvent** se deriva de [**WMIEvent**](wmie
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

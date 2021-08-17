@@ -14,13 +14,13 @@ ms.locfileid: "118650355"
 # <a name="xml-parser"></a>Analizador XML
 
 > [!Note]  
-> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
 El objeto Analizador XML convierte entre los archivos de proyecto XML y las escalas de tiempo. Para crear este objeto, llame a **CoCreateInstance**.
 
-El objeto Analizador XML expone la siguiente interfaz:
+El objeto Analizador XML expone la interfaz siguiente:
 
 -   [**IXml2Dex**](ixml2dex.md)
 

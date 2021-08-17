@@ -1,5 +1,5 @@
 ---
-description: Más información sobre el método Update.Cancel
+description: 'Más información sobre: Método Update.Cancel'
 title: Método Update.Cancel
 TOCTitle: 'Cancel method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Update.Cancel
@@ -53,7 +53,7 @@ instance.Cancel()
 public void Cancel()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

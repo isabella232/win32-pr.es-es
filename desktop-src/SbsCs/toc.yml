@@ -14,7 +14,7 @@
           href: about-shared-assemblies-.md
         - name: Acerca de los ensamblados privados
           href: about-private-assemblies-.md
-        - name: Secuencia de búsqueda de ensamblado
+        - name: Secuencia de búsqueda de ensamblados
           href: assembly-searching-sequence.md
         - name: Uso compartido de ensamblados en paralelo
           href: side-by-side-assembly-sharing.md
@@ -23,7 +23,7 @@
           items:
             - name: Configuración predeterminada
               href: default-configuration.md
-            - name: Configuración del publicador
+            - name: Publisher Configuración
               href: publisher-configuration.md
             - name: Configuración por aplicación
               href: per-application-configuration.md
@@ -35,47 +35,47 @@
           href: assembly-versions.md
         - name: Redirección de DLL/COM en Windows
           href: dll-com-redirection-on-windows.md
-    - name: Usar aplicaciones aisladas y ensamblados en paralelo
+    - name: Uso de aplicaciones aisladas y ensamblados en paralelo
       href: using-isolated-applications-and-side-by-side-assemblies.md
       items:
-        - name: Usar ensamblados en paralelo
+        - name: Uso de ensamblados en paralelo
           href: using-side-by-side-assemblies.md
-        - name: Instalar ensamblados en paralelo
+        - name: Instalación de ensamblados en paralelo
           href: installing-side-by-side-assemblies.md
           items:
-            - name: Instalar ensamblados en paralelo como ensamblados privados
+            - name: Instalación de ensamblados en paralelo como ensamblados privados
               href: installing-side-by-side-assemblies-as-private-assemblies.md
             - name: Instalar ensamblados en paralelo como ensamblados compartidos
               href: installing-side-by-side-assemblies-as-shared-assemblies.md
               items:
-                - name: Crear archivos y catálogos firmados
+                - name: Creación de archivos y catálogos firmados
                   href: creating-signed-files-and-catalogs.md
                 - name: Ejemplo de firma de ensamblado
                   href: assembly-signing-example.md
-        - name: 'Habilitar un ensamblado en una aplicación que hospeda un archivo DLL, una extensión o un panel de control'
+        - name: 'Habilitar un ensamblado en una aplicación que hospeda un archivo DLL, una extensión o una Panel de control'
           href: enabling-an-assembly-in-an-application-hosting-a-dll-extension-or-control-panel.md
         - name: Habilitar un ensamblado en una aplicación sin extensiones
           href: enabling-an-assembly-in-an-application-without-extensions.md
         - name: 'Habilitar controles comunes actualizados, estilos visuales y temas'
           href: enabling-updated-common-controls-visual-styles-and-themes.md
-        - name: Uso de la API de contexto de activación
+        - name: Uso de Activation Context API
           href: using-the-activation-context-api.md
           items:
-            - name: Recuento de referencias contextos de activación
+            - name: Contextos de activación de recuento de referencias
               href: reference-counting-activation-contexts.md
             - name: Buscar ensamblados
               href: searching-for-assemblies.md
             - name: Buscar archivos de ensamblado
               href: searching-for-assembly-files.md
-            - name: Crear clases de Windows en paralelo
+            - name: Creación de clases de Windows en paralelo
               href: creating-side-by-side-windows-classes.md
-            - name: Crear Registration-Free objetos COM
+            - name: Crear Registration-Free com
               href: creating-registration-free-com-objects.md
             - name: 'Usar subprocesos, procedimientos asincrónicos y mensajes de ventana'
               href: using-threads--asynchronous-procedures--and-window-messages.md
             - name: Especificar un contexto de activación predeterminado
               href: specifying-a-default-activation-context.md
-            - name: Actualización de componentes de la aplicación
+            - name: Actualizar componentes de la aplicación
               href: updating-application-components.md
             - name: Llamar a ensamblados
               href: calling-into-assemblies.md
@@ -85,28 +85,28 @@
               href: using-callbacks-from-hosted-components.md
             - name: Aislar componentes
               href: isolating-components.md
-        - name: Uso de ensamblados con una interfaz de usuario multilingüe
+        - name: Uso de ensamblados con un Interfaz de usuario
           href: using-assemblies-with-a-multilanguage-user-interface.md
         - name: Usar ensamblados en paralelo como un recurso
           href: using-side-by-side-assemblies-as-a-resource.md
         - name: Corregir una aplicación existente mediante un ensamblado privado
           href: fixing-an-existing-application-using-a-private-assembly.md
-    - name: Instrucciones para crear ensamblados en paralelo
+    - name: Directrices para crear ensamblados en paralelo
       href: guidelines-for-creating-side-by-side-assemblies.md
       items:
-        - name: ¿Debe proporcionar un componente compartido como ensamblado simultáneo?
+        - name: ¿Debe proporcionar un componente compartido como un ensamblado en paralelo?
           href: should-you-provide-a-shared-component-as-a-side-by-side-assembly.md
-        - name: Crear un archivo DLL para un ensamblado en paralelo
+        - name: Creación de un archivo DLL para un ensamblado en paralelo
           href: authoring-a-dll-for-a-side-by-side-assembly.md
-        - name: Crear almacenamiento de estado para ensamblados en paralelo
+        - name: Estado de Storage para ensamblados en paralelo
           href: authoring-state-storage-for-side-by-side-assemblies.md
     - name: Referencia de ensamblados en paralelo
       href: side-by-side-assemblies-reference.md
       items:
-        - name: API de ensamblados en paralelo
+        - name: API de ensamblado en paralelo
           href: side-by-side-assembly-api.md
           items:
-            - name: Enumeraciones de ensamblados en paralelo
+            - name: Enumeraciones de ensamblado en paralelo
               href: enumerations.md
               items:
                 - name: ASM_CMP_FLAGS
@@ -120,9 +120,9 @@
             - name: Funciones de ensamblado en paralelo
               href: side-by-side-assembly-functions.md
               items:
-                - name: Createassemblycache (
+                - name: CreateAssemblyCache
                   href: /windows/desktop/api/Winsxs/nf-winsxs-createassemblycache
-                - name: Createassemblynameobject (
+                - name: CreateAssemblyNameObject
                   href: /windows/desktop/api/Winsxs/nf-winsxs-createassemblynameobject
             - name: Interfaces de ensamblado en paralelo
               href: side-by-side-assembly-interfaces.md
@@ -145,7 +145,7 @@
                       href: /windows/desktop/api/winsxs/nf-winsxs-iassemblycacheitem-commit
                     - name: Método CreateStream
                       href: /windows/desktop/api/winsxs/nf-winsxs-iassemblycacheitem-createstream
-                - name: IAssemblyName
+                - name: Iassemblyname
                   href: /windows/desktop/api/winsxs/nn-winsxs-iassemblyname
                   items:
                     - name: Clone (Método)
@@ -178,13 +178,13 @@
               href: application-manifests.md
             - name: Archivos de configuración de la aplicación
               href: application-configuration-files.md
-            - name: Archivos de configuración del publicador
+            - name: Publisher Archivos de configuración
               href: publisher-configuration-files.md
-            - name: Esquema del archivo de manifiesto
+            - name: Esquema de archivo de manifiesto
               href: manifest-file-schema.md
             - name: Esquema del archivo de configuración de la aplicación
               href: application-configuration-file-schema.md
-            - name: Esquema del archivo de configuración del publicador
+            - name: Publisher Esquema del archivo de configuración
               href: publisher-configuration-file-schema.md
         - name: Referencia de contexto de activación
           href: activation-context-reference.md
@@ -211,7 +211,7 @@
               href: /windows/desktop/api/Winbase/nf-winbase-queryactctxsettingsw
             - name: ReleaseActCtx
               href: /windows/desktop/api/Winbase/nf-winbase-releaseactctx
-            - name: ZombifyActCtx
+            - name: HexadecimalfyActCtx
               href: /windows/desktop/api/Winbase/nf-winbase-zombifyactctx
             - name: ACTIVATION_CONTEXT_ASSEMBLY_DETAILED_INFORMATION
               href: /windows/win32/api/Winnt/ns-winnt-activation_context_assembly_detailed_information
@@ -246,7 +246,7 @@
               href: mt-exe.md
             - name: Pktextract.exe
               href: pktextract-exe.md
-        - name: Objeto Microsoft. Windows. ActCtx
+        - name: Microsoft. Windows. Objeto ActCtx
           href: microsoft-windows-actctx-object.md
           items:
             - name: Propiedad manifest
@@ -258,7 +258,7 @@
     - name: Glosario
       href: glossary-sbscs.md
       items:
-        - name: Un
+        - name: A
           href: a-sbscs-gly.md
         - name: D
           href: d-sbscs-gly.md

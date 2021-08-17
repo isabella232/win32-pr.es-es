@@ -1,7 +1,7 @@
 ---
-description: Consulta si el asignador usa ejemplos de medios de solo lectura.
+description: Consulta si el asignador usa ejemplos multimedia de solo lectura.
 ms.assetid: 2cb692da-f030-4265-afe4-b1608b51fd47
-title: Método CBaseInputPin. IsReadOnly (Amfilter. h)
+title: Método CBaseInputPin.IsReadOnly (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 93d1e7930631328a277ce7332f483ee264b2d525
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 45a8fc563e9377f7308ad9ea702b16f48ea9723aa13902ef29d60e2da903ffda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017043"
 ---
-# <a name="cbaseinputpinisreadonly-method"></a>CBaseInputPin. IsReadOnly (método)
+# <a name="cbaseinputpinisreadonly-method"></a>Método CBaseInputPin.IsReadOnly
 
-Consulta si el asignador usa ejemplos de medios de solo lectura.
+Consulta si el asignador usa ejemplos multimedia de solo lectura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor de la variable miembro [**CBaseInputPin:: m \_ bReadOnly**](cbaseinputpin-m-breadonly.md) .
+Devuelve el valor de la variable [**miembro CBaseInputPin::m \_ bReadOnly.**](cbaseinputpin-m-breadonly.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve el valor de la variable miembro [**CBaseInputPin:: m \_ bReadOnly**](cb
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve el valor de la variable miembro [**CBaseInputPin:: m \_ bReadOnly**](cb
 
 <dl> <dt>
 
-[**Clase CBaseInputPin**](cbaseinputpin.md)
+[**CBaseInputPin (clase)**](cbaseinputpin.md)
 </dt> </dl>
 
  

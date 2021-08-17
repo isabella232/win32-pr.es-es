@@ -20,7 +20,7 @@ ms.locfileid: "118963814"
 ---
 # <a name="wm-asf-writer-filter-windows-media-format-11-sdk"></a>Filtro wm asf writer (Windows DE formato multimedia 11)
 
-El filtro WM ASF Writer acepta un número variable de flujos de entrada y crea un archivo ASF. El filtro controla toda la compresión y la multiplexación (aunque se puede omitir el mecanismo de compresión). Puede usar el filtro WM ASF Writer en varios escenarios, como la captura de vídeo digital (DV), la recom Audio-Video presión de audio y la conversión de archivos multimedia digitales entrelazados (AVI) o MPEG para streaming de red. Este filtro proporciona la única manera de crear archivos de Audio multimedia Windows Microsoft y Windows vídeo multimedia en DirectShow.
+El filtro WM ASF Writer acepta un número variable de flujos de entrada y crea un archivo ASF. El filtro controla toda la compresión y la multiplexación (aunque se puede omitir el mecanismo de compresión). Puede usar el filtro WM ASF Writer en varios escenarios, como la captura de vídeo digital (DV), la re Audio-Video compresión de audio y la conversión de archivos multimedia digitales entrelazados (AVI) o MPEG para streaming de red. Este filtro proporciona la única manera de crear archivos de audio multimedia Windows Microsoft y Windows de vídeo multimedia en DirectShow.
 
 Para obtener más información, vea [Creating ASF Files in DirectShow](creating-asf-files-in-directshow.md).
 

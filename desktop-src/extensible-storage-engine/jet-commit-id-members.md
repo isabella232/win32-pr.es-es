@@ -19,7 +19,7 @@ ms.locfileid: "118767085"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Contexto de información rodea los datos emitidos JET_PFNEMITLOGDATA.
+Contexto de información rodeaba los datos emitidos JET_PFNEMITLOGDATA.
 
 El [JET_COMMIT_ID](./jet-commit-id-class.md) muestra los miembros siguientes.
 
@@ -127,7 +127,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

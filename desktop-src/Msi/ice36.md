@@ -1,5 +1,5 @@
 ---
-description: ICE36 valida que cada icono de la tabla Icono aparece al menos una vez en la propiedad ARPPRODUCTICON o en las tablas Class, ProgId o Shortcut.
+description: ICE36 valida que todos los iconos de la tabla Icono aparecen al menos una vez en la propiedad ARPPRODUCTICON o en las tablas Class, ProgId o Shortcut.
 ms.assetid: d502c0a9-17e5-467a-8b02-8b254e77b96b
 title: ICE36
 ms.topic: article
@@ -15,13 +15,13 @@ ms.locfileid: "118635308"
 
 ICE36 valida que todos los iconos de la tabla Icono aparecen al menos una vez en la [**propiedad ARPPRODUCTICON**](arpproducticon.md) o en las tablas [Class](class-table.md), [ProgId](progid-table.md) [o Shortcut.](shortcut-table.md)
 
-Durante el anuncio, el instalador instala todos los iconos enumerados en la [tabla Icono](icon-table.md) en el equipo del usuario. Tener iconos sin usar en la tabla Icono no impide que la instalación se ejecute, pero aumenta innecesariamente el tamaño del archivo .msi y el tiempo y el espacio necesarios para anunciar una característica.
+Durante el anuncio, el instalador instala todos los iconos enumerados en la [tabla Icono](icon-table.md) en el equipo del usuario. Tener iconos sin usar en la tabla Icon no impide que la instalación se ejecute, pero aumenta innecesariamente el tamaño del archivo .msi y el tiempo y el espacio necesarios para anunciar una característica.
 
 Si no se hace referencia a un icono en la propiedad o tabla y no se proporciona ninguna interfaz de usuario para crear una referencia en tiempo de ejecución, debe quitar el icono para lograr un mejor rendimiento.
 
 ## <a name="result"></a>Resultado
 
-ICE36 publica un mensaje si hay un icono en la tabla Icono al [](shortcut-table.md) que no se hace referencia en las tablas Clase [,](class-table.md) [ProgId](progid-table.md)o Acceso directo y si no se proporciona ninguna interfaz de usuario para crear dicha referencia en tiempo de ejecución.
+ICE36 publica un mensaje si hay un icono en la tabla Icon al que no se hace referencia en las tablas [Class](class-table.md), [ProgId](progid-table.md)o [Shortcut](shortcut-table.md) y si no se proporciona ninguna interfaz de usuario para crear dicha referencia en tiempo de ejecución.
 
 ## <a name="example"></a>Ejemplo
 
@@ -35,7 +35,7 @@ Icon Bloat. Icon Icon4 is not used in the Class, Shortcut, or ProgID table. This
 
 
 
-| Nombre  | data     |
+| Nombre  | Datos     |
 |-------|----------|
 | Icono1 | Control1 |
 | Icono2 | Control2 |

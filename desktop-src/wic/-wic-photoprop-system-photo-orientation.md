@@ -1,23 +1,23 @@
 ---
-description: La Directiva de metadatos de fotos para la propiedad System. Photo. Orientation.
+description: Directiva de metadatos de fotos para la propiedad System.Photo.Orientation.
 ms.assetid: 27e6d4f5-39d5-4cb4-88bc-b0d61ccaa2f3
-title: Directiva de metadatos de foto de System. Photo. Orientation
+title: Directiva de metadatos de fotos System.Photo.Orientation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a28f4f350cd1a4c24d71ec737b4679aea2f7cab5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87f9496942e6be971e0e047596125669fc9112cf82bce6eb02ec7e1cdbddc4de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087071"
 ---
-# <a name="systemphotoorientation-photo-metadata-policy"></a>Directiva de metadatos de foto de System. Photo. Orientation
+# <a name="systemphotoorientation-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Photo.Orientation
 
-La Directiva de metadatos de fotos para la propiedad [System. Photo. Orientation](../properties/props-system-photo-meteringmode.md) .
+Directiva de metadatos de fotos para [la propiedad System.Photo.Orientation.](../properties/props-system-photo-meteringmode.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-PKEY \_ orientación de la foto \_
+Orientación de la foto PKEY \_ \_
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,7 +27,7 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ UI2
 
@@ -37,7 +37,7 @@ UShort
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
@@ -45,23 +45,23 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                   | Formato de disco |
+| Pedido | Ruta de acceso                   | Formato de disco |
 |-------|------------------------|-------------|
-| 1     | /app1/IFD/{ushort = 274} | ushort      |
-| 2     | /XMP/TIFF: orientación  | unicode     |
+| 1     | /app1/ifd/{ushort=274} | ushort      |
+| 2     | /xmp/tiff:Orientation  | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                   | Formato de disco |
+| Pedido | Ruta de acceso                   | Formato de disco |
 |-------|------------------------|-------------|
-| 1     | /app1/IFD/{ushort = 274} | ushort      |
-| 2     | /XMP/TIFF: orientación  | unicode     |
+| 1     | /app1/ifd/{ushort=274} | ushort      |
+| 2     | /xmp/tiff:Orientation  | unicode     |
 
 
 
@@ -71,10 +71,10 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                   |
+| Pedido | Ruta de acceso                   |
 |-------|------------------------|
-| 1     | /app1/IFD/{ushort = 274} |
-| 2     | /XMP/TIFF: orientación  |
+| 1     | /app1/ifd/{ushort=274} |
+| 2     | /xmp/tiff:orientation  |
 
 
 
@@ -86,23 +86,23 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/{ushort = 274}         | ushort      |
-| 2     | /IFD/XMP/TIFF: orientación | unicode     |
+| 1     | /ifd/{ushort=274}         | ushort      |
+| 2     | /ifd/xmp/tiff:Orientation | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/{ushort = 274}         | ushort      |
-| 2     | /IFD/XMP/TIFF: orientación | unicode     |
+| 1     | /ifd/{ushort=274}         | ushort      |
+| 2     | /ifd/xmp/tiff:Orientation | unicode     |
 
 
 
@@ -112,22 +112,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                      |
+| Pedido | Ruta de acceso                      |
 |-------|---------------------------|
-| 1     | /IFD/{ushort = 274}         |
-| 2     | /IFD/XMP/TIFF: orientación |
+| 1     | /ifd/{ushort=274}         |
+| 2     | /ifd/xmp/tiff:orientation |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. Photo. Orientation](../properties/props-system-photo-meteringmode.md)
+[System.Photo.Orientation](../properties/props-system-photo-meteringmode.md)
 </dt> </dl>
 
  

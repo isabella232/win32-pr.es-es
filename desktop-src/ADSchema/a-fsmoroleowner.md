@@ -27,7 +27,7 @@ Operación de Single-Master flexible: nombre distintivo del controlador de domin
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|-----------------------------------------|
 | CN                | FSMO-Role-Owner                         |
 | Ldap-Display-Name | fSMORoleOwner                           |
@@ -54,7 +54,7 @@ Operación de Single-Master flexible: nombre distintivo del controlador de domin
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
@@ -75,7 +75,7 @@ Operación de Single-Master flexible: nombre distintivo del controlador de domin
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
@@ -96,7 +96,7 @@ Operación de Single-Master flexible: nombre distintivo del controlador de domin
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
@@ -117,7 +117,7 @@ Operación de Single-Master flexible: nombre distintivo del controlador de domin
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
@@ -138,7 +138,7 @@ Operación de Single-Master flexible: nombre distintivo del controlador de domin
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
@@ -159,7 +159,7 @@ Operación de Single-Master flexible: nombre distintivo del controlador de domin
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
@@ -180,7 +180,7 @@ Operación de Single-Master flexible: nombre distintivo del controlador de domin
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |

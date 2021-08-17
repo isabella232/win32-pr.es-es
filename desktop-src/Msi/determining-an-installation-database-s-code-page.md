@@ -15,7 +15,7 @@ ms.locfileid: "118637854"
 
 Para determinar la página de códigos de una base de datos, llame a [**MsiDatabaseExport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta) con *hDatabase* establecido en el identificador de la base de datos y *szTableName* establecido en \_ ForceCodepage. Esto exporta un archivo de texto con una extensión .idt. Las dos primeras líneas de este archivo están en blanco. La tercera línea es el número de página de códigos ANSI, seguido de una pestaña, seguido del nombre \_ ForceCodepage. Vea también [Control de páginas de códigos de tablas importadas y exportadas.](code-page-handling-of-imported-and-exported-tables.md)
 
-En el SDK del instalador [](database-export.md) de Windows se proporciona un ejemplo de cómo determinar la página de códigos mediante el método Export como parte de la utilidad WiLangId.vbs. Para obtener más información sobre el uso WiLangId.vbs vea el tema: Administrar lenguaje [y página de códigos](manage-language-and-codepage.md).
+Se proporciona un ejemplo de determinación de la página de códigos mediante el método [**Export**](database-export.md) en el SDK del instalador de Windows como parte de la utilidad WiLangId.vbs. Para obtener más información sobre cómo WiLangId.vbs vea el tema: [Administrar lenguaje y página de códigos](manage-language-and-codepage.md).
 
  
 

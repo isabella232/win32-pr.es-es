@@ -50,7 +50,7 @@ La causa del evento, que puede ser los siguientes valores:
 
 
 
-| Value                                                                         | Descripción                                                                          |
+| Valor                                                                         | Descripción                                                                          |
 |-------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | **const unsigned short** **CSHELPCAUSE \_ COMMAND = 1;**<br/>             | El usuario seleccionó un comando proporcionado por la aplicación.                            |
 | **const unsigned short** **CSHELPCAUSE \_ OTHERPROGRAM = 2;**<br/>        | El usuario seleccionó el [**objeto Commands**](/windows/desktop/lwef/the-commands-collection-object) de otro cliente. |

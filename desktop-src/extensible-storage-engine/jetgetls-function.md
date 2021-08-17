@@ -130,7 +130,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 <tr class="odd">
 <td><p>JET_errLSNotSet</p></td>
 <td><p>No se pudo devolver el identificador de contexto porque no hay ningún identificador de contexto asociado actualmente al objeto solicitado.</p>
-<p><strong>Nota  </strong> Este error no se devuelve si JET_bitLSReset se especifica pero no se ha asociado ningún identificador de contexto al objeto solicitado.</p></td>
+<p><strong>Nota  </strong> Este error no se devuelve si JET_bitLSReset se especifica pero no se ha asociado ningún identificador de contexto con el objeto solicitado.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errNotInitialized</p></td>

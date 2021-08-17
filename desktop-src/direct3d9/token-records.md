@@ -31,8 +31,8 @@ Un registro de longitud variable. El token va seguido de un valor de recuento qu
 | Campo | Tipo       | Tamaño (bytes) | Contenido                       |
 |-------|------------|--------------|--------------------------------|
 | token | WORD       | 2            | nombre del \_ token                    |
-| count | DWORD      | 4            | Longitud del campo de nombre, en bytes |
-| name  | Matriz BYTE | count        | Nombre ASCII                     |
+| recuento | DWORD      | 4            | Longitud del campo de nombre, en bytes |
+| name  | Matriz BYTE | recuento        | Nombre ASCII                     |
 
 
 
@@ -47,8 +47,8 @@ Un registro de longitud variable. El token va seguido de un valor de recuento qu
 | Campo      | Tipo       | Tamaño (bytes) | Contenido                         |
 |------------|------------|--------------|----------------------------------|
 | token      | WORD       | 2            | cadena de \_ token                    |
-| count      | DWORD      | 4            | Longitud del campo de cadena en bytes  |
-| Cadena     | Matriz BYTE | count        | Cadena ASCII                     |
+| recuento      | DWORD      | 4            | Longitud del campo de cadena en bytes  |
+| Cadena     | Matriz BYTE | recuento        | Cadena ASCII                     |
 | Terminator | DWORD      | 4            | TOKEN \_ SEMICOLON o TOKEN \_ COMMA |
 
 
@@ -90,31 +90,31 @@ Un registro de longitud fija. El token va seguido de los cuatro campos de datos 
 
 ## <a name="token_integer_list"></a>LISTA \_ DE ENTEROS \_ DE TOKEN
 
-Un registro de longitud variable. El token va seguido de un valor de recuento que especifica el número de enteros siguientes en el campo de lista. Para mejorar la eficacia, las listas de enteros consecutivos deben estar compuestas en una sola lista.
+Registro de longitud variable. El token va seguido de un valor count que especifica el número de enteros que siguen en el campo de lista. Para mejorar la eficacia, las listas de enteros consecutivos deben estar compuestas en una sola lista.
 
 
 
 | Campo | Tipo  | Tamaño (bytes) | Contenido                         |
 |-------|-------|--------------|----------------------------------|
 | token | WORD  | 2            | tOKEN \_ INTEGER \_ LISt             |
-| count | DWORD | 4            | Número de enteros en el campo de lista |
-| list  | DWORD | Recuento de 4 x    | Lista de enteros                     |
+| recuento | DWORD | 4            | Número de enteros en el campo de lista |
+| list  | DWORD | 4 x count    | Lista de enteros                     |
 
 
 
  
 
-## <a name="token_float_list"></a>LISTA \_ DE FLOTANTES \_ DE TOKEN
+## <a name="token_float_list"></a>LISTA \_ FLOTANTE DE \_ TOKENS
 
-Un registro de longitud variable. El token va seguido de un valor de recuento que especifica el número de elementos float o double que siguen en el campo de lista. El tamaño del valor de punto flotante (float o double) viene determinado por el valor de float size especificado en el encabezado de archivo. Para mejorar la eficacia, los LIST FLOAT de TOKEN \_ \_ consecutivos deben estar compuestos en una sola lista.
+Registro de longitud variable. El token va seguido de un valor de recuento que especifica el número de elementos float o double que siguen en el campo de lista. El tamaño del valor de punto flotante (float o double) viene determinado por el valor de float size especificado en el encabezado de archivo. Para mejorar la eficacia, los LIST FLOAT de TOKEN \_ \_ consecutivos deben estar compuestos en una sola lista.
 
 
 
 | Campo | Tipo               | Tamaño (bytes)   | Contenido                                  |
 |-------|--------------------|----------------|-------------------------------------------|
 | token | WORD               | 2              | tOKEN \_ FLOAT \_ LISt                        |
-| count | DWORD              | 4              | Número de flotantes o dobles en el campo de lista |
-| list  | Matriz float/double | Recuento de 4 u 8 x | Lista float o double                      |
+| recuento | DWORD              | 4              | Número de flotantes o dobles en el campo de lista |
+| list  | Matriz float/double | Recuento de 4 u 8 x | Lista flotante o doble                      |
 
 
 

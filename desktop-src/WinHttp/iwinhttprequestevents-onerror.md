@@ -60,16 +60,16 @@ Este evento no devuelve un valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>            |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>            |
 | Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
 | Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
 | Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -79,7 +79,7 @@ Este evento no devuelve un valor.
 [**WinHttpRequest**](winhttprequest.md)
 </dt> <dt>
 
-[Versiones de WinHTTP](winhttp-versions.md)
+[Versiones winHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

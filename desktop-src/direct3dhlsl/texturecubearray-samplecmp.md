@@ -1,6 +1,6 @@
 ---
-title: Métodos TextureCubeArray::TextureCubeArray SampleCmp
-description: Muestrea una textura con un valor de comparación para rechazar muestras. | Métodos TextureCubeArray::TextureCubeArray SampleCmp
+title: Métodos SampleCmp de TextureCubeArray::TextureCubeArray
+description: Muestrea una textura mediante un valor de comparación para rechazar muestras. | Métodos SampleCmp de TextureCubeArray::TextureCubeArray
 ms.assetid: 62B5C163-9FB8-4567-B63F-34234C938874
 keywords:
 - Métodos HLSL de SampleCmp
@@ -21,7 +21,7 @@ ms.locfileid: "118786273"
 ---
 # <a name="texturecubearraysamplecmp-methods"></a>Métodos TextureCubeArray::SampleCmp
 
-Muestrea una textura con un valor de comparación para rechazar muestras.
+Muestrea una textura mediante un valor de comparación para rechazar muestras.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,13 +29,13 @@ Muestrea una textura con un valor de comparación para rechazar muestras.
 
 | Método                                                                                        | Descripción                                                                                                                                                                           |
 |:----------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SampleCmp(S,float,float)**](dx-graphics-hlsl-to-samplecmp.md)                             | Muestrea una textura con un valor de comparación para rechazar muestras.<br/>                                                                                                             |
-| [**SampleCmp(S,float,float,float)**](tcubearray-samplecmp-s-float-float-float-.md)           | Muestrea una textura con un valor de comparación para rechazar muestras, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra.<br/>                                     |
-| [**SampleCmp(S,float,float,float,uint)**](tcubearray-samplecmp-s-float-float-float-uint-.md) | Muestrea una textura con un valor de comparación para rechazar muestras, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra. Devuelve el estado de la operación.<br/> |
+| [**SampleCmp(S,float,float)**](dx-graphics-hlsl-to-samplecmp.md)                             | Muestrea una textura mediante un valor de comparación para rechazar muestras.<br/>                                                                                                             |
+| [**SampleCmp(S,float,float,float)**](tcubearray-samplecmp-s-float-float-float-.md)           | Muestrea una textura, usando un valor de comparación para rechazar muestras, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra.<br/>                                     |
+| [**SampleCmp(S,float,float,float,uint)**](tcubearray-samplecmp-s-float-float-float-uint-.md) | Muestrea una textura, usando un valor de comparación para rechazar muestras, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra. Devuelve el estado de la operación.<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

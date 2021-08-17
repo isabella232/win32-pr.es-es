@@ -1,5 +1,5 @@
 ---
-description: Una franja de línea es una primitiva que se compone de segmentos de línea conectados.
+description: Una franja de líneas es una primitiva que se compone de segmentos de línea conectados.
 ms.assetid: 73905718-a4c6-4f73-beef-4cccac7eea8c
 title: Franjas de línea
 ms.topic: article
@@ -13,13 +13,13 @@ ms.locfileid: "118799641"
 ---
 # <a name="line-strips"></a>Franjas de línea
 
-Una franja de línea es una primitiva que se compone de segmentos de línea conectados. La aplicación puede usar franjas de líneas para crear polígonos que no están cerrados. Un polígono cerrado es un polígono cuyo último vértice está conectado a su primer vértice mediante un segmento de línea. Si la aplicación crea polígonos basados en franjas de líneas, no se garantiza que los vértices sean coplanares.
+Una franja de líneas es una primitiva que se compone de segmentos de línea conectados. La aplicación puede usar franjas de línea para crear polígonos que no están cerrados. Un polígono cerrado es un polígono cuyo último vértice está conectado a su primer vértice mediante un segmento de línea. Si la aplicación crea polígonos basados en franjas de línea, no se garantiza que los vértices sean coplanares.
 
-En la ilustración siguiente se muestra una franja de línea representada.
+En la ilustración siguiente se muestra una franja de líneas representado.
 
 ![ilustración de una franja de líneas](images/linstrip.gif)
 
-En el código siguiente se muestra cómo crear vértices para esta franja de líneas.
+El código siguiente muestra cómo crear vértices para esta franja de líneas.
 
 
 ```
@@ -41,7 +41,7 @@ CUSTOMVERTEX Vertices[] =
 
 
 
-En el ejemplo de código siguiente se muestra cómo representar una franja de línea en Direct3D 9 mediante [**IDirect3DDevice9::D rawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) .
+En el ejemplo de código siguiente se muestra cómo representar una franja de líneas en Direct3D 9 mediante [**IDirect3DDevice9::D rawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) .
 
 
 ```

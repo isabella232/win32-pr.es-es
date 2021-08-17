@@ -3,8 +3,8 @@ title: Propiedad AddItem de IPropertyFilterCollection (WdsSharedIDL.h)
 description: Agrega un nuevo filtro a la colección.
 ms.assetid: 01078e7a-811a-4dfb-b122-4801f39413d8
 keywords:
-- Características heredadas del entorno de Windows addItem
-- Propiedades addItem heredadas Windows environment features , IPropertyFilterCollection (interfaz)
+- Características del entorno de Windows propiedad AddItem
+- AddItem property Legacy Windows Environment Features , IPropertyFilterCollection (Interfaz IPropertyFilterCollection)
 - IPropertyFilterCollection interface Legacy Windows Environment Features , AddItem property
 topic_type:
 - apiref
@@ -24,10 +24,10 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118755452"
 ---
-# <a name="ipropertyfiltercollectionadditem-property"></a>IPropertyFilterCollection::AddItem, propiedad
+# <a name="ipropertyfiltercollectionadditem-property"></a>Propiedad IPropertyFilterCollection::AddItem
 
 > [!NOTE]
-> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API Windows Search en](../search/-search-reference-entry-page.md) su lugar. 
+> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la API [Windows Search en](../search/-search-reference-entry-page.md) su lugar. 
 
 Agrega un nuevo filtro a la colección.
 
@@ -54,8 +54,8 @@ devuelve un puntero a la dirección del nuevo filtro.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio de SP1 \[\]<br/>                             |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio sp1 \[\]<br/>                             |
 | Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 2.6.5<br/>                                             |
 | Header<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 

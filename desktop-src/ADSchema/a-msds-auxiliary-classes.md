@@ -27,7 +27,7 @@ Este atributo enumera las clases auxiliares que se han asociado dinámicamente a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------------------------------|
 | CN                | ms-DS-Auxiliary-Classes                                         |
 | Ldap-Display-Name | msDS-Auxiliary-Classes                                          |
@@ -36,7 +36,7 @@ Este atributo enumera las clases auxiliares que se han asociado dinámicamente a
 | Frecuencia de actualización  | \-                                                              |
 | Attribute-Id      | 1.2.840.113556.1.4.1458                                         |
 | System-Id-Guid    | c4af1073-ee50-4be0-b8c0-89a41fe99bios                            |
-| Sintaxis            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
+| Syntax            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
 
 
 
@@ -53,14 +53,14 @@ Este atributo enumera las clases auxiliares que se han asociado dinámicamente a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | True         |
-| Es de un solo valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
+| System-Only            | Verdadero         |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
@@ -74,14 +74,14 @@ Este atributo enumera las clases auxiliares que se han asociado dinámicamente a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | True         |
-| Es de un solo valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
+| System-Only            | Verdadero         |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
@@ -95,14 +95,14 @@ Este atributo enumera las clases auxiliares que se han asociado dinámicamente a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | True         |
-| Es de un solo valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
+| System-Only            | Verdadero         |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
@@ -116,14 +116,14 @@ Este atributo enumera las clases auxiliares que se han asociado dinámicamente a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | True         |
-| Es de un solo valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
+| System-Only            | Verdadero         |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
@@ -137,14 +137,14 @@ Este atributo enumera las clases auxiliares que se han asociado dinámicamente a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | True         |
-| Es de un solo valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
+| System-Only            | Verdadero         |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
@@ -158,14 +158,14 @@ Este atributo enumera las clases auxiliares que se han asociado dinámicamente a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | True         |
-| Es de un solo valor       | False        |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
+| System-Only            | Verdadero         |
+| Es de un solo valor       | Falso        |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |

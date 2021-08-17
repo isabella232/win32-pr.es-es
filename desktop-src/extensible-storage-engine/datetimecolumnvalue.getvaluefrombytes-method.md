@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: DateTimeColumnValue. GetValueFromBytes (método)'
-title: DateTimeColumnValue. GetValueFromBytes, método
+description: 'Más información sobre: Método DateTimeColumnValue.GetValueFromBytes'
+title: Método DateTimeColumnValue.GetValueFromBytes
 TOCTitle: 'GetValueFromBytes method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.DateTimeColumnValue.GetValueFromBytes(System.Byte[],System.Int32,System.Int32,System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.datetimecolumnvalue.getvaluefrombytes(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0b30acf865a31c7dcaccffab0d156eacbb0e59ce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88ab0291e21839ccb666a3d9343a79787a5dad48c8ab8debbd1aafd17a8ab573
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103819374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119117535"
 ---
-# <a name="datetimecolumnvaluegetvaluefrombytes-method"></a>DateTimeColumnValue. GetValueFromBytes, método
+# <a name="datetimecolumnvaluegetvaluefrombytes-method"></a>Método DateTimeColumnValue.GetValueFromBytes
 
 Dados los datos recuperados de ESENT, descodifique los datos y establezca el valor en el objeto ColumnValue.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,37 +70,37 @@ protected override void GetValueFromBytes(
 #### <a name="parameters"></a>Parámetros
 
   - value  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
     Matriz de bytes.
 
 <!-- end list -->
 
   - startIndex  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Posición inicial dentro de los bytes.
 
 <!-- end list -->
 
-  - count  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+  - recuento  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Número de bytes que se van a descodificar.
 
 <!-- end list -->
 
   - err  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Error devuelto desde ESENT.
+    Error devuelto de ESENT.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase DateTimeColumnValue](./datetimecolumnvalue-class.md)
+[DateTimeColumnValue (clase)](./datetimecolumnvalue-class.md)
 
-[Miembros de DateTimeColumnValue](./datetimecolumnvalue-members.md)
+[Miembros DateTimeColumnValue](./datetimecolumnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

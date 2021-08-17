@@ -54,7 +54,7 @@ Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|-------------------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>WindowsCodecsExt.dll</dt> </dl> |
 

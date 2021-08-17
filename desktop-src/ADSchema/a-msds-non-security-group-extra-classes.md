@@ -27,7 +27,7 @@ Nombres comunes de las clases no estándar que se pueden agregar a un grupo que 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | ms-DS-non-Security-Group-Extra-Classes      |
 | Ldap-Display-Name | msDS-non-Security-Group-Extra-Classes       |
@@ -36,7 +36,7 @@ Nombres comunes de las clases no estándar que se pueden agregar a un grupo que 
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1689                     |
 | System-Id-Guid    | 2de144fc-1f52-486f-bdf4-16fcc3084e54        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,14 +52,14 @@ Nombres comunes de las clases no estándar que se pueden agregar a un grupo que 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
 | Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Es de un solo valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
@@ -73,14 +73,14 @@ Nombres comunes de las clases no estándar que se pueden agregar a un grupo que 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
 | Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Es de un solo valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
@@ -94,14 +94,14 @@ Nombres comunes de las clases no estándar que se pueden agregar a un grupo que 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
 | Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Es de un solo valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
@@ -115,14 +115,14 @@ Nombres comunes de las clases no estándar que se pueden agregar a un grupo que 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
 | Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Es de un solo valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
@@ -136,14 +136,14 @@ Nombres comunes de las clases no estándar que se pueden agregar a un grupo que 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
 | Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Es de un solo valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
@@ -153,9 +153,9 @@ Nombres comunes de las clases no estándar que se pueden agregar a un grupo que 
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En la lista siguiente se identifican las clases estándar que se pueden agregar a un grupo a través del Usuarios y equipos de Active Directory complemento.
+En la lista siguiente se identifican las clases estándar que se pueden agregar a un grupo a través Usuarios y equipos de Active Directory complemento.
 
 -   [**Group (Grupo)**](c-group.md)
 -   [**Usuario**](c-user.md)
@@ -163,7 +163,7 @@ En la lista siguiente se identifican las clases estándar que se pueden agregar 
 -   [**Contacto**](c-contact.md)
 -   [**Computer**](c-computer.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

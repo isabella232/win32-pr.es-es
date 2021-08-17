@@ -1,10 +1,10 @@
 ---
 title: WMDRM_LICENSE_FILTER estructura (Wmdrmsdk.h)
-description: La estructura WMDRM LICENSE FILTER define parámetros de filtrado \_ para su uso al crear una \_ enumeración de licencias.
+description: La estructura WMDRM \_ LICENSE FILTER define parámetros de filtrado para su uso al crear una \_ enumeración de licencias.
 ms.assetid: 43bbbfdc-1ec4-44a6-8245-96853bbeea86
 keywords:
-- WMDRM_LICENSE_FILTER structure windows Media Format
-- Estructura de windows Formato multimedia
+- WMDRM_LICENSE_FILTER windows Media Format de estructura
+- estructura windows Formato multimedia
 topic_type:
 - apiref
 api_name:
@@ -54,7 +54,7 @@ Especifica un número de versión mínimo para las licencias devueltas.
 **bstrKID**
 </dt> <dd>
 
-Especifica un identificador de clave para el que filtrar licencias. Solo se incluirán en la enumeración las licencias con el identificador de clave especificado.
+Especifica un identificador de clave para el que filtrar las licencias. En la enumeración solo se incluirán las licencias con el identificador de clave especificado.
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Especifica los orígenes de contenido protegido que se incluirán en la búsqued
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El método [**IWMDRMLicenseManagement::CreateLicenseEnumeration**](iwmdrmlicensemanagement-createlicenseenumeration.md) usa esta estructura.
 
@@ -86,7 +86,7 @@ El método [**IWMDRMLicenseManagement::CreateLicenseEnumeration**](iwmdrmlicense
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

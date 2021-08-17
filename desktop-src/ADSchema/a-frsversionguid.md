@@ -27,12 +27,12 @@ Si está presente, cambiar este valor indica que se ha realizado un cambio de co
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | FRS-Version-GUID                                      |
 | Ldap-Display-Name | fRSVersionGUID                                        |
 | Size              | \-                                                    |
-| Actualizar privilegios  | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.43                                 |
 | System-Id-Guid    | 26d9736c-6070-11d1-a9c6-0000f80367c1                  |
@@ -53,7 +53,7 @@ Si está presente, cambiar este valor indica que se ha realizado un cambio de co
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
@@ -74,7 +74,7 @@ Si está presente, cambiar este valor indica que se ha realizado un cambio de co
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
@@ -95,7 +95,7 @@ Si está presente, cambiar este valor indica que se ha realizado un cambio de co
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
@@ -116,7 +116,7 @@ Si está presente, cambiar este valor indica que se ha realizado un cambio de co
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
@@ -137,7 +137,7 @@ Si está presente, cambiar este valor indica que se ha realizado un cambio de co
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
@@ -158,7 +158,7 @@ Si está presente, cambiar este valor indica que se ha realizado un cambio de co
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |

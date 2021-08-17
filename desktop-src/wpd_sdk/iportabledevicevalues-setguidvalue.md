@@ -84,7 +84,7 @@ Si un valor existente tiene la misma clave especificada por el parámetro *key,*
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

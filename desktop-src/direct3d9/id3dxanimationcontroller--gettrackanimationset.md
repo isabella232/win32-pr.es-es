@@ -1,7 +1,7 @@
 ---
-description: Obtiene el conjunto de animaciones para la pista especificada.
+description: Obtiene el conjunto de animaciones para la pista determinada.
 ms.assetid: d40669ac-c391-4912-82d6-28c366a0f1dc
-title: 'ID3DXAnimationController:: GetTrackAnimationSet (método) (D3dx9anim. h)'
+title: Método ID3DXAnimationController::GetTrackAnimationSet (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a7ba397fb876d94aa48f635785737ab0448ecef6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 23ee81fa6e704e73c1bf1a8e3064a5832731f2e5336e9725d3666409133a5106
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122116"
 ---
-# <a name="id3dxanimationcontrollergettrackanimationset-method"></a>ID3DXAnimationController:: GetTrackAnimationSet (método)
+# <a name="id3dxanimationcontrollergettrackanimationset-method"></a>Método ID3DXAnimationController::GetTrackAnimationSet
 
-Obtiene el conjunto de animaciones para la pista especificada.
+Obtiene el conjunto de animaciones para la pista determinada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT GetTrackAnimationSet(
 
 <dl> <dt>
 
-*Seguimiento* \[ de de\]
+*Seguimiento* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Identificador de seguimiento.
 
 </dd> <dt>
 
-*ppAnimSet* \[ enuncia\]
+*ppAnimSet* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXANIMATIONSET**](id3dxanimationset.md)\***
 
-Puntero a la animación [**ID3DXAnimationSet**](id3dxanimationset.md) establecida para la pista especificada.
+Puntero al conjunto [**de animaciones ID3DXAnimationSet**](id3dxanimationset.md) para la pista determinada.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntero a la animación [**ID3DXAnimationSet**](id3dxanimationset.md) establecid
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los valores siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

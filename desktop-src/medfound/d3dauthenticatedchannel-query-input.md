@@ -20,9 +20,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118974694"
 ---
-# <a name="d3dauthenticatedchannel_query_input-structure"></a>Estructura DE ENTRADA DE CONSULTA D3DAUTHENTICATEDCHANNEL \_ \_
+# <a name="d3dauthenticatedchannel_query_input-structure"></a>D3DAUTHENTICATEDCHANNEL \_ QUERY \_ INPUT structure
 
-Contiene datos de entrada [**para el método IDirect3DAuthenticatedChannel9::Query.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
+Contiene datos de entrada para [**el método IDirect3DAuthenticatedChannel9::Query.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ typedef struct _D3DAUTHENTICATEDCHANNEL_QUERY_INPUT {
 **Querytype**
 </dt> <dd>
 
-GUID que especifica la consulta. Para obtener una lista de valores, [vea Content Protection Consultas](content-protection-queries.md).
+GUID que especifica la consulta. Para obtener una lista de valores, [vea Content Protection Queries](content-protection-queries.md).
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Número de secuencia de consulta. Al principio de la sesión, genere un número 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
@@ -74,7 +74,7 @@ Número de secuencia de consulta. Al principio de la sesión, genere un número 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

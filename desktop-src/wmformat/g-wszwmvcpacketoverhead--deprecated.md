@@ -1,6 +1,6 @@
 ---
 title: g_wszWMVCPacketOverhead (Wmcodecdsp.h)
-description: Para obtener la documentación actual Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | g_wszWMVCPacketOverhead (Wmcodecdsp.h)
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP API (API de códecs de audio y vídeo multimedia y DSP). | g_wszWMVCPacketOverhead (Wmcodecdsp.h)
 ms.assetid: 76d412e0-8c7f-4bc8-b8c1-974c495856ba
 keywords:
 - g_wszWMVCPacketOverhead windows Media Format
@@ -23,7 +23,7 @@ ms.locfileid: "118703336"
 ---
 # <a name="g_wszwmvcpacketoverhead"></a>g \_ wszWMVCPacketOverhead
 
-Para obtener la documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP APIs (API](/previous-versions//dd464626(v=vs.85)) de códecs multimedia y DSP).
+Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señales digitales, consulte Windows [Media Audio and Video Codec y LAS API de DSP.](/previous-versions//dd464626(v=vs.85))
 
 ## <a name="requirements"></a>Requisitos
 

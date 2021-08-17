@@ -5,7 +5,7 @@ ms.assetid: 2507c764-a2cf-42f9-ad44-eaf040b78891
 keywords:
 - Método getLibraryByType Reproductor de Windows Media
 - Método getLibraryByType Reproductor de Windows Media , interfaz IWMPLibraryServices
-- Interfaz IWMPLibraryServices Reproductor de Windows Media , método getLibraryByType
+- Interfaz IWMPLibraryServices Reproductor de Windows Media método , getLibraryByType
 topic_type:
 - apiref
 api_name:
@@ -58,7 +58,7 @@ Implements IWMPLibraryServices.getLibraryByType
 *wmplt* \[ En\]
 </dt> <dd>
 
-Valor de la **enumeración WMPLib.WMPLibraryType** que especifica el tipo de biblioteca que se debe recuperar.
+Valor de la **enumeración WMPLib.WMPLibraryType** que especifica el tipo de biblioteca que se recuperará.
 
 </dd> <dt>
 
@@ -75,13 +75,13 @@ Interfaz **WMPLib.IWMPLibrary** para la biblioteca que se devuelve.
 
 ## <a name="remarks"></a>Comentarios
 
-Solo hay una biblioteca local y las bibliotecas de discos solo están disponibles en los CD y DVD de datos que contienen contenido multimedia.
+Solo hay una biblioteca local y las bibliotecas de discos solo están disponibles en LOS CD y DVD de datos que contienen contenido multimedia.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -89,7 +89,7 @@ Solo hay una biblioteca local y las bibliotecas de discos solo están disponible
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

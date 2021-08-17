@@ -1,23 +1,23 @@
 ---
-description: El proxy de propiedad de la Directiva de metadatos de la foto System. GPS. ImgDirection.
+description: Proxy de propiedad para la directiva de metadatos de fotos System.GPS.ImgDirection.
 ms.assetid: 735e7a00-78f9-4384-aec7-8caa1fdb3ac3
-title: Proxy System. GPS. ImgDirection
+title: System.GPS.ImgDirection Proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 69cdcf9a94d17299fc6434689398812be50fba94
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6b283b67ecba8862fc24290c5cd7d9c257d66275329b50cb0fb97e0f5618028a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087263"
 ---
-# <a name="systemgpsimgdirection-proxy"></a>Proxy System. GPS. ImgDirection
+# <a name="systemgpsimgdirection-proxy"></a>System.GPS.ImgDirection Proxy
 
-El proxy de propiedad de la Directiva de metadatos de la foto System. GPS. ImgDirection.
+Proxy de propiedad para la directiva de metadatos de fotos System.GPS.ImgDirection.
 
 ### <a name="description"></a>Descripción
 
-El proxy de propiedad devuelve un par racional a a través del miembro uhVal de [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) .
+El proxy de propiedad devuelve un par racionalizado a través del [miembro PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) uhVal.
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,25 +27,25 @@ JPEG, TIFF
 
 Sí
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ UI8
 
 ### <a name="denominator"></a>Denominador
 
-HighPart de uhVal.
+HighPart de la clase uhVal.
 
-### <a name="numerator"></a>Numera
+### <a name="numerator"></a>Numerador
 
-LowPart de uhVal.
+LowPart de la clase uhVal.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. GPS. ImgDirection](../properties/props-system-gps-imgdirection.md)
+[System.GPS.ImgDirection](../properties/props-system-gps-imgdirection.md)
 </dt> </dl>
 
  

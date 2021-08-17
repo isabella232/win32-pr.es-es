@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. replaceItem
-description: El método replaceItem reemplaza el texto que se encuentra en el índice especificado por el texto especificado.
+title: LISTBOX.replaceItem
+description: El método replaceItem reemplaza el texto del índice especificado por el texto especificado.
 ms.assetid: 8dc05dc6-4f89-4ae6-8a28-cbc418449694
 keywords:
-- LISTBOX. replaceItem Windows Media Player
+- ListBOX.replaceItem Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 74592feb9bc58e23853b886ee2383744e36b9cff
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4524b479490dff81b9a114ca957c7c40282ded130d2bf35dba8c58a6197eab17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135218"
 ---
-# <a name="listboxreplaceitem"></a>LISTBOX. replaceItem
+# <a name="listboxreplaceitem"></a>LISTBOX.replaceItem
 
-El método **replaceItem** reemplaza el texto que se encuentra en el índice especificado por el texto especificado.
+El **método replaceItem** reemplaza el texto del índice especificado por el texto especificado.
 
 ``` syntax
         elementID.replaceItem(index, text)
@@ -32,14 +32,14 @@ El método **replaceItem** reemplaza el texto que se encuentra en el índice esp
 
 <dl> <dt>
 
-<span id="index"></span><span id="INDEX"></span>*ajustar*
+<span id="index"></span><span id="INDEX"></span>*Índice*
 </dt> <dd>
 
-**Número** (**largo**) que contiene el índice de la línea que se va a recuperar.
+**Number** (**long**) que contiene el índice de la línea que se recuperará.
 
 </dd> <dt>
 
-<span id="text"></span><span id="TEXT"></span>*negrita*
+<span id="text"></span><span id="TEXT"></span>*Texto*
 </dt> <dd>
 
 **Cadena** que contiene el nuevo texto.
@@ -56,7 +56,7 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 

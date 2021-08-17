@@ -1,6 +1,6 @@
 ---
 title: PeapServerAcceptAllPurposeCert
-description: La clave del Registro PeapServerAcceptAllPurposeCert determina si se aceptan certificados de uso completo para la autenticación peap.
+description: La clave del Registro PeapServerAcceptAllPurposeCert determina si se aceptan certificados de uso completo para la autenticación PEAP.
 ms.assetid: 59C58459-7735-4733-9F95-646864802D70
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118784687"
 ---
 # <a name="peapserveracceptallpurposecert"></a>PeapServerAcceptAllPurposeCert
 
-La clave del Registro PeapServerAcceptAllPurposeCert determina si se aceptan certificados de uso completo para la autenticación peap.
+La clave del Registro PeapServerAcceptAllPurposeCert determina si se aceptan certificados de uso completo para la autenticación PEAP.
 
 ## <a name="registry-entry"></a>Entrada del Registro
 
@@ -22,13 +22,13 @@ HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Rasman\PPP\EAP\25
    PeapServerAcceptAllPurposeCert = value
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Se trata de **un valor \_ REG DWORD.**
 
 
 
-| Value        | Descripción                                                                                                 |
+| Valor        | Descripción                                                                                                 |
 |--------------|-------------------------------------------------------------------------------------------------------------|
 | 1            | El servidor y el cliente aceptan certificados de uso general enviados por la otra parte para la autenticación EAP-TLS.       |
 | Otros valores | El servidor y el cliente no aceptan certificados de uso general enviados por la otra parte para la autenticación EAP-TLS |

@@ -27,7 +27,7 @@ Lista de servicios del dominio de confianza. NO lo usa AD.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Additional-Trusted-Service-Names            |
 | Ldap-Display-Name | additionalTrustedServiceNames               |
@@ -36,7 +36,7 @@ Lista de servicios del dominio de confianza. NO lo usa AD.
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.889                      |
 | System-Id-Guid    | 032160be-9824-11d1-aec0-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,14 +53,14 @@ Lista de servicios del dominio de confianza. NO lo usa AD.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
 | Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Es de un solo valor       | False                                                |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Falso                                                |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
@@ -74,14 +74,14 @@ Lista de servicios del dominio de confianza. NO lo usa AD.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
 | Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Es de un solo valor       | False                                                |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Falso                                                |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
@@ -95,14 +95,14 @@ Lista de servicios del dominio de confianza. NO lo usa AD.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
 | Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Es de un solo valor       | False                                                |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Falso                                                |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
@@ -116,14 +116,14 @@ Lista de servicios del dominio de confianza. NO lo usa AD.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
 | Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Es de un solo valor       | False                                                |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Falso                                                |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
@@ -137,14 +137,14 @@ Lista de servicios del dominio de confianza. NO lo usa AD.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
 | Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Es de un solo valor       | False                                                |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Falso                                                |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
@@ -158,14 +158,14 @@ Lista de servicios del dominio de confianza. NO lo usa AD.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
 | Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Es de un solo valor       | False                                                |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Falso                                                |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |

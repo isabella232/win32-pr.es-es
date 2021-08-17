@@ -25,7 +25,7 @@ La acción CostFinalize debe ejecutarse antes de iniciar cualquier secuencia [](
 
 No hay ningún mensaje ActionData.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La acción CostFinalize consulta la [tabla Condición](condition-table.md) para determinar qué características están programadas para instalarse. El costo se realiza para cada componente de la [tabla](component-table.md) Component.
 

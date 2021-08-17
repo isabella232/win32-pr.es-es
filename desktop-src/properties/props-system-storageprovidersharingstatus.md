@@ -1,19 +1,19 @@
 ---
-description: Esta propiedad representa el estado del recurso compartido más permisivo para el archivo o la carpeta especificados por el proveedor de almacenamiento. Los Estados de los recursos compartidos de más a menos permisivos son propiedad > propiedad > pública > compartida > privada. StorageProviderSharingStatus es una propiedad de solo lectura.
+description: Esta propiedad representa un estado de recurso compartido más permisivo para el archivo o carpeta especificado por el proveedor de almacenamiento. Los estados de recurso compartido de más a menos permisivos son Propiedad de > Propiedad > Public > Shared > Private.StorageProviderSharingStatus es una propiedad de solo lectura.
 ms.assetid: c3b93159-4279-4b27-b006-ab73e0beee9c
-title: System. StorageProviderSharingStatus
+title: System.StorageProviderSharingStatus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02b5b6b23b3a541037511eee3ae7201252e4ec3c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cde6e48cd8870e23801b8cccd8340f8146305ec5d350d71f9ccb27893530c22a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095672"
 ---
-# <a name="systemstorageprovidersharingstatus"></a>System. StorageProviderSharingStatus
+# <a name="systemstorageprovidersharingstatus"></a>System.StorageProviderSharingStatus
 
-Esta propiedad representa el estado del recurso compartido más permisivo para el archivo o la carpeta especificados por el proveedor de almacenamiento. Los Estados de los recursos compartidos de más a menos permisivos son propiedad > propiedad > pública > compartida > privada. StorageProviderSharingStatus es una propiedad de solo lectura.
+Esta propiedad representa un estado de recurso compartido más permisivo para el archivo o carpeta especificado por el proveedor de almacenamiento. Los estados de recurso compartido de más a menos permisivos son Propiedad de > Propiedad > Public > Shared > Private.StorageProviderSharingStatus es una propiedad de solo lectura.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1
 
@@ -73,9 +73,9 @@ propertyDescription
             defineToken = STORAGE_PROVIDER_SHARINGSTATUS_PUBLIC_COOWNED
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -90,7 +90,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -102,7 +102,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -120,7 +120,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

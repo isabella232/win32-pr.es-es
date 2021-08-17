@@ -1,7 +1,7 @@
 ---
-description: Recupera los datos para uno de los miembros del objeto o los datos de todos los miembros. En desuso.
+description: Recupera los datos de uno de los miembros del objeto o los datos de todos los miembros. En desuso.
 ms.assetid: 2a227705-371e-41f1-af5d-20e652cd07f6
-title: 'IDirectXFileData:: GetData (método) (DXFile. h)'
+title: Método IDirectXFileData::GetData (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: ed52aaf0b4c740b675129c81843c0bd49c7f428e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 428bff1f3fd76cd7c4589d5084435f8a675ab0d73bf0ff02052b2212d2c2dea9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117728971"
 ---
-# <a name="idirectxfiledatagetdata-method"></a>IDirectXFileData:: GetData (método)
+# <a name="idirectxfiledatagetdata-method"></a>IDirectXFileData::GetData (método)
 
-Recupera los datos para uno de los miembros del objeto o los datos de todos los miembros. En desuso.
+Recupera los datos de uno de los miembros del objeto o los datos de todos los miembros. En desuso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ HRESULT GetData(
 
 <dl> <dt>
 
-*szMember* \[ de\]
+*szMember* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Puntero al nombre del miembro para el que se van a recuperar datos. Especifique **null** para recuperar los datos de todos los miembros necesarios.
+Puntero al nombre del miembro para el que se recuperan los datos. Especifique **NULL** para recuperar todos los datos de los miembros necesarios.
 
 </dd> <dt>
 
-*PCB* \[ enuncia\]
+*sizesize* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntero para recibir el tamaño de búfer de ppvData, en bytes.
+Puntero para recibir el tamaño del búfer ppvData, en bytes.
 
 </dd> <dt>
 
-*ppvData* \[ enuncia\]
+*ppvData* \[ out\]
 </dt> <dd>
 
-Tipo: **void \* \***
+Tipo: **\* \* void**
 
-Dirección de un puntero al búfer para recibir los datos asociados a szMember. Si szMember es **null**, ppvData se establece para que apunte a un búfer que contiene todos los datos de los miembros necesarios en un bloque de memoria contiguo.
+Dirección de un puntero al búfer para recibir los datos asociados a szMember. Si szMember es **NULL,** ppvData se establece para que apunte a un búfer que contiene todos los datos de los miembros necesarios en un bloque contiguo de memoria.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Dirección de un puntero al búfer para recibir los datos asociados a szMember. 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores: DXFILEERR \_ BADARRAYSIZE, DXFILEERR \_ BADDATAREFERENCE, DXFILEERR \_ BADVALUE.
+Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes valores: DXFILEERR \_ BADARRAYSIZE, DXFILEERR \_ BADDataReference, DXFILEERR \_ BADVALUE.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método recupera los datos para los miembros necesarios de un objeto de datos, pero no los datos de los miembros (secundarios) opcionales. Use [**IDirectXFileData:: GetNextObject**](idirectxfiledata--getnextobject.md) para recuperar objetos secundarios.
+Este método recupera los datos de los miembros necesarios de un objeto de datos, pero no de los miembros opcionales (secundarios). Use [**IDirectXFileData::GetNextObject para**](idirectxfiledata--getnextobject.md) recuperar objetos secundarios.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ Este método recupera los datos para los miembros necesarios de un objeto de dat
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

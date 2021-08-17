@@ -27,16 +27,16 @@ Criterio de ordenación para la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | MS-SQL-SortOrder                            |
 | Ldap-Display-Name | mS-SQL-SortOrder                            |
 | Size              | \-                                          |
 | Privilegio actualizar  | Administrador de dominio                        |
-| Frecuencia de actualización  | En la configuración del sistema.                            |
+| Frecuencia de actualización  | En la instalación del sistema.                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1371                     |
 | System-Id-Guid    | 6ddc42c0-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,14 +53,14 @@ Criterio de ordenación para la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Es de un solo valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
@@ -74,14 +74,14 @@ Criterio de ordenación para la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Es de un solo valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
@@ -95,14 +95,14 @@ Criterio de ordenación para la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Es de un solo valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
@@ -116,14 +116,14 @@ Criterio de ordenación para la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Es de un solo valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
@@ -137,14 +137,14 @@ Criterio de ordenación para la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Es de un solo valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
@@ -158,14 +158,14 @@ Criterio de ordenación para la instancia actual de SQL Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
 | Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Es de un solo valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |

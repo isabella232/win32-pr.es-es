@@ -86,9 +86,9 @@ Cero o más parámetros para el procedimiento remoto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El **\[ atributo \] usesgetlasterror** se puede establecer en un punto de entrada de módulo, si ese punto de entrada usa la función [**Windows SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) para devolver códigos de error. El atributo indica al autor de la llamada que, si se produce un error al llamar a esa función, el autor de la llamada puede llamar a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) para recuperar el código de error.
+El **\[ atributo \] usesgetlasterror** se puede establecer en un punto de entrada del módulo, si ese punto de entrada usa la función [**Windows SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) para devolver códigos de error. El atributo indica al autor de la llamada que, si se produce un error al llamar a esa función, el autor de la llamada puede llamar a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) para recuperar el código de error.
 
 ## <a name="examples"></a>Ejemplos
 

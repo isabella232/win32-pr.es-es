@@ -36,7 +36,7 @@ LRESULT CALLBACK WindowProc(
 *wParam* 
 </dt> <dd>
 
-Identificador de la región de actualización de la ventana. La región de actualización se recorta al marco de la ventana.
+Identificador de la región de actualización de la ventana. La región de actualización se recorta al marco de ventana.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ case WM_NCPAINT:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
@@ -84,7 +84,7 @@ case WM_NCPAINT:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -13,7 +13,7 @@ ms.locfileid: "118750217"
 ---
 # <a name="iagentcommandexgethelpcontextid"></a>IAgentCommandEx::GetHelpContextID
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT GetHelpContextID(
@@ -34,7 +34,7 @@ Dirección de una variable que recibe el número de contexto del tema de ayuda a
 
 </dd> </dl>
 
-Si ha creado un archivo de Ayuda de Windows para la aplicación y ha establecido la propiedad [**HelpFile**](helpfile-property.md) del carácter en este archivo, Microsoft Agent llama automáticamente a help cuando [**HelpModeOn**](helpmodeon-property.md) está establecido en **True** y el usuario selecciona el comando. Si hay un número de contexto en [**HelpContextID,**](helpcontextid-property-com.md)el Agente llama a la Ayuda y busca el tema identificado por el número de contexto actual. El número de contexto actual es el valor de **HelpContextID** para el comando.
+Si ha creado un archivo de Ayuda de Windows para la aplicación y ha establecido la propiedad [**HelpFile**](helpfile-property.md) del carácter en este archivo, Microsoft Agent llama automáticamente a la Ayuda cuando [**HelpModeOn**](helpmodeon-property.md) está establecido en **True** y el usuario selecciona el comando. Si hay un número de contexto en [**HelpContextID,**](helpcontextid-property-com.md)el Agente llama a la Ayuda y busca el tema identificado por el número de contexto actual. El número de contexto actual es el valor de **HelpContextID** para el comando.
 
 > [!Note]  
 > La compilación de un archivo de Ayuda requiere microsoft Windows compilador de Ayuda.

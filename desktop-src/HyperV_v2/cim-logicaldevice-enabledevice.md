@@ -24,9 +24,9 @@ ms.locfileid: "118648530"
 
 El método EnableDevice ha quedado en desuso en lugar del método RequestStateChange más general que se superpone directamente con la funcionalidad proporcionada por este método.
 
-Solicita que logicalDevice esté habilitado ("Habilitado" parámetro de entrada = TRUE) o deshabilitado (= FALSE). Si se realiza correctamente, las propiedades StatusInfo/EnabledState del dispositivo deben reflejar el estado deseado (habilitado o deshabilitado). Tenga en cuenta que la función de este método se superpone con la propiedad RequestedState. RequestedState se agregó al modelo para mantener un registro (es decir, un valor persistente) de la última solicitud de estado. La invocación del método EnableDevice debe establecer la propiedad RequestedState correctamente.
+Solicita que el dispositivo lógico esté habilitado ("Habilitado" parámetro de entrada = TRUE) o deshabilitado (= FALSE). Si se realiza correctamente, las propiedades StatusInfo/EnabledState del dispositivo deben reflejar el estado deseado (habilitado o deshabilitado). Tenga en cuenta que la función de este método se superpone con la propiedad RequestedState. RequestedState se agregó al modelo para mantener un registro (es decir, un valor persistente) de la última solicitud de estado. La invocación del método EnableDevice debe establecer la propiedad RequestedState correctamente.
 
-El código de retorno debe ser 0 si la solicitud se ejecutó correctamente, 1 si no se admite la solicitud y algún otro valor si se produjo un error. En una subclase, se podría especificar el conjunto de códigos de retorno posibles, mediante un calificador ValueMap en el método . Las cadenas a las que se "traduce" el contenido de ValueMap también se pueden especificar en la subclase como calificador de matriz Values.
+El código de retorno debe ser 0 si la solicitud se ejecutó correctamente, 1 si no se admite la solicitud y algún otro valor si se produjo un error. En una subclase, se podría especificar el conjunto de códigos de retorno posibles mediante un calificador ValueMap en el método . Las cadenas a las que se "traduce" el contenido de ValueMap también se pueden especificar en la subclase como calificador de matriz Values.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,13 +52,13 @@ Si es TRUE, habilite el dispositivo, si es FALSE, deshabilite el dispositivo.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -68,7 +68,7 @@ Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

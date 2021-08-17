@@ -13,11 +13,11 @@ ms.locfileid: "118662758"
 ---
 # <a name="building-filter-graphs-to-write-asf-files"></a>Compilar gráficos de filtro para escribir archivos ASF
 
-Al crear Windows contenido basado en multimedia, las aplicaciones suelen usar uno de los escenarios siguientes:
+Al crear Windows contenido basado en multimedia, las aplicaciones suelen usar uno de los siguientes escenarios:
 
--   Convertir o transcodificación de contenido de otro formato a Windows formato multimedia.
--   Insertar contenido que no se Windows basado en multimedia (formatos de flujo nativos) en archivos ASF.
--   Captura de datos en directo y codificación inmediatamente en Windows Media Format.
+-   Convertir o transcodificación de contenido de otro formato en formato Windows multimedia.
+-   Insertar contenido que no está basado Windows multimedia (formatos de flujo nativos) en archivos ASF.
+-   Capturar datos en directo y codificar inmediatamente en Windows media format.
 
 Transcodificación de archivos ASF
 
@@ -29,11 +29,11 @@ En la ilustración siguiente se muestran las configuraciones de gráfico de filt
 
 ![Gráfico de filtros de transcodificación](images/asf-transcode.png)
 
-Insertar formatos de secuencia nativos en archivos ASF
+Insertar formatos de flujo nativos en archivos ASF
 
-De forma predeterminada, el filtro WM ASF Writer espera secuencias de audio y vídeo sin comprimir en sus pasadores de entrada y usa los códecs Windows Media Audio y Windows Media Video para comprimir las secuencias. Sin embargo, el contenedor de archivos asf se puede usar para cualquier tipo de datos. Al colocar datos multimedia digitales en un contenedor de archivos ASF, puede agregar características proporcionadas por ASF, como metadatos y administración de derechos digitales (DRM), sin tener que transcodificar el contenido.
+De forma predeterminada, el filtro WM ASF Writer espera secuencias de audio y vídeo sin comprimir en sus pines de entrada y usa los códecs Windows Media Audio y Windows Media Video para comprimir las secuencias. Sin embargo, el contenedor de archivos asf se puede usar para cualquier tipo de datos. Al colocar datos multimedia digitales en un contenedor de archivos ASF, puede agregar características proporcionadas por ASF, como metadatos y administración de derechos digitales (DRM), sin tener que transcodificar el contenido.
 
-Para crear un archivo ASF que contenga contenido que no esté basado en medios de Windows, la aplicación debe comprimir la secuencia en el gráfico de filtro ascendente al escritor de ASF de WM y omitir el mecanismo de compresión de WM ASF Writer llamando a [**IConfigAsfWriter2::SetParam**](/previous-versions/windows/desktop/api/Dshowasf/nf-dshowasf-iconfigasfwriter2-setparam) como se muestra a continuación:
+Para crear un archivo ASF que contenga contenido que no esté basado en medios de Windows, la aplicación debe comprimir la secuencia en el gráfico de filtros ascendente al escritor de ASF wm y omitir el mecanismo de compresión de WM ASF Writer mediante una llamada a [**IConfigAsfWriter2::SetParam**](/previous-versions/windows/desktop/api/Dshowasf/nf-dshowasf-iconfigasfwriter2-setparam) como se muestra a continuación:
 
 
 ```C++
@@ -44,7 +44,7 @@ pConfigAsfWriter2->SetParam(AM_CONFIGASFWRITER_PARAM_DONTCOMPRESS,TRUE,0)
 
 A continuación, configure el filtro con el perfil deseado. Es esencial que el tipo de medio del flujo de entrada coincida exactamente con el formato del perfil. En algunos casos, puede ser necesario examinar el formato del flujo de entrada y crear un perfil personalizado para que coincida con él.
 
-Cuando conecte WM ASF Writer al filtro ascendente, use el método IGraphBuilder::ConnectDirect. No use ningún método de "conexión inteligente", como IGraphBuilder::Conectar o IGraphBuilder::RenderFile, para conectar el filtro, ya que esto deshabilitará el modo de "omisión de compresión" del filtro.
+Al conectar WM ASF Writer al filtro ascendente, use el método IGraphBuilder::ConnectDirect. No use ningún método de "conexión inteligente", como IGraphBuilder::Conectar o IGraphBuilder::RenderFile, para conectar el filtro, ya que esto deshabilitará el modo de "compresión de omisión" del filtro.
 
 Capturar directamente desde un dispositivo a un archivo ASF
 
@@ -57,7 +57,7 @@ Para obtener más información sobre cómo crear gráficos de captura de vídeo 
 -   [Captura de audio](audio-capture.md)
 -   [Captura de vídeo](video-capture.md)
 
-Wm ASF Writer no se ejecutará a menos que todos sus pines estén conectados. Si configura WM ASF Writer con el perfil de sistema predeterminado (no recomendado) o cualquier perfil con secuencias de audio y vídeo, se creará un pin de entrada para cada secuencia y cada uno de esos pines debe estar conectado. Si no piensa capturar audio, por ejemplo, asegúrese de configurar el filtro con un perfil de solo vídeo para que no se cree ninguna marca de audio.
+Wm ASF Writer no se ejecutará a menos que todos sus pines estén conectados. Si configura WM ASF Writer con el perfil del sistema predeterminado (no recomendado) o cualquier perfil con secuencias de audio y vídeo, se creará un pin de entrada para cada secuencia y cada uno de esos pines debe estar conectado. Si no piensa capturar audio, por ejemplo, asegúrese de configurar el filtro con un perfil de solo vídeo para que no se cree ninguna clavija de audio.
 
 ## <a name="related-topics"></a>Temas relacionados
 

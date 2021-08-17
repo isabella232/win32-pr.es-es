@@ -85,7 +85,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor. D3DERR \_ INVALIDCALL
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 [**Los elementos de textura de clase 2**](id3dxtexturegutterhelper.md) se generan mediante el remuestreo de las clases 1 y 4.
 
@@ -100,7 +100,7 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se prod
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

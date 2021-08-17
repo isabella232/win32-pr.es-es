@@ -45,7 +45,7 @@ HRESULT GetWindow(
 
 Tipo: **HWND\***
 
-HWND usado por el controlador de errores de la aplicación, el controlador de errores del controlador y el controlador de errores predeterminado para los cuadros de diálogo de mensajes de dispositivo (tanto de error como informativos). El valor de salida puede ser **NULL.**
+HWND usado por el controlador de errores de la aplicación, el controlador de errores del controlador y el controlador de errores predeterminado para los cuadros de diálogo de mensaje de dispositivo (tanto de error como informativos). El valor de salida puede ser **NULL.**
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |

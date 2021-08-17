@@ -1,23 +1,23 @@
 ---
-description: La \_ clase de archivo de archivos CIM expone los métodos siguientes.
+description: La clase \_ Cim DataFile expone los métodos siguientes.
 ms.assetid: 5BCAB342-B42C-4507-AB90-0C9E79F9D863
 ms.tgt_platform: multiple
-title: Métodos CIM_DataFile
+title: CIM_DataFile métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c4caa89ca851b2197b7f2eec1b110f7ed063f8f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 12c351fc7fbd4527888e5ffd6f8ffcb2db8b7d3c2f03be914f73e329406e3163
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104496295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080809"
 ---
-# <a name="cim_datafile-methods"></a>\_Métodos de archivo de archivos CIM
+# <a name="cim_datafile-methods"></a>Métodos \_ de archivo de datos CIM
 
-La clase de [**\_ archivo de archivos CIM**](cim-datafile.md) expone los métodos siguientes.
+La [**clase \_ Cim DataFile**](cim-datafile.md) expone los métodos siguientes.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -25,17 +25,17 @@ La clase de [**\_ archivo de archivos CIM**](cim-datafile.md) expone los método
 
 -   [**Método ChangeSecurityPermissions**](changesecuritypermissions-method-in-class-cim-datafile.md)
 -   [**Método ChangeSecurityPermissionsEx**](changesecuritypermissionsex-method-in-class-cim-datafile.md)
--   [**Compress (método)**](compress-method-in-class-cim-datafile.md)
+-   [**Método Compress**](compress-method-in-class-cim-datafile.md)
 -   [**Método CompressEx**](compressex-method-in-class-cim-datafile.md)
--   [**Copy (método)**](copy-method-in-class-cim-datafile.md)
+-   [**Método copy**](copy-method-in-class-cim-datafile.md)
 -   [**Método CopyEx**](copyex-method-in-class-cim-datafile.md)
--   [**Delete (método)**](delete-method-in-class-cim-datafile.md)
+-   [**Método Delete**](delete-method-in-class-cim-datafile.md)
 -   [**Método DeleteEx**](deleteex-method-in-class-cim-datafile.md)
 -   [**Método GetEffectivePermission**](geteffectivepermission-method-in-class-cim-datafile.md)
 -   [**Cambio de nombre del método**](rename-method-in-class-cim-datafile.md)
 -   [**Método TakeOwnerShip**](takeownership-method-in-class-cim-datafile.md)
 -   [**Método TakeOwnerShipEx**](takeownershipex-method-in-class-cim-datafile.md)
--   [**UNCOMPRESS (método)**](uncompress-method-in-class-cim-datafile.md)
+-   [**Descomprimir método**](uncompress-method-in-class-cim-datafile.md)
 -   [**Método UncompressEx**](uncompressex-method-in-class-cim-datafile.md)
 
  

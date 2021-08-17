@@ -1,7 +1,7 @@
 ---
 description: Especifica los atributos de un IInkAnalysisRecognizer.
 ms.assetid: e9577d83-0212-4f2f-88d7-e9153ec9fae5
-title: Enumeración RecognizerCapabilities (IACom. h)
+title: Enumeración RecognizerCapabilities (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - IACom.h
-ms.openlocfilehash: b2471e77fec02900804de831fc1197c071b9f566
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96e932b8e47f323198e1b0cc87da0df7839a593a76850c00c2c2e4d095854851
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119091455"
 ---
 # <a name="recognizercapabilities-enumeration"></a>Enumeración RecognizerCapabilities
 
-Especifica los atributos de un [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md).
+Especifica los atributos de un [**IInkAnalysisRecognizer.**](iinkanalysisrecognizer.md)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -57,80 +57,80 @@ typedef enum RecognizerCapabilities {
 
 <dl> <dt>
 
-<span id="RC_None"></span><span id="rc_none"></span><span id="RC_NONE"></span>**RC \_ ninguno**
+<span id="RC_None"></span><span id="rc_none"></span><span id="RC_NONE"></span>**RC \_ None**
 </dt> <dd>
 
-No se especificó ninguna funcionalidad.
+No se especifica ninguna funcionalidad.
 
 </dd> <dt>
 
 <span id="RC_DoNotCare"></span><span id="rc_donotcare"></span><span id="RC_DONOTCARE"></span>**RC \_ DoNotCare**
 </dt> <dd>
 
-Omite todas las demás marcas que se establecen.
+Omite todas las demás marcas establecidas.
 
 </dd> <dt>
 
-<span id="RC_Object"></span><span id="rc_object"></span><span id="RC_OBJECT"></span>**RC ( \_ objeto)**
+<span id="RC_Object"></span><span id="rc_object"></span><span id="RC_OBJECT"></span>**RC \_ (objeto)**
 </dt> <dd>
 
-Admite el reconocimiento de objetos; de lo contrario, solo reconoce el texto.
+Admite el reconocimiento de objetos; de lo contrario, solo reconoce texto.
 
 </dd> <dt>
 
 <span id="RC_FreeInput"></span><span id="rc_freeinput"></span><span id="RC_FREEINPUT"></span>**RC \_ FreeInput**
 </dt> <dd>
 
-Admite la entrada libre, donde la tinta se escribe sin el uso de una guía de reconocimiento, como una línea o un cuadro.
+Admite entrada libre, donde se introduce la entrada de lápiz sin el uso de una guía de reconocimiento, como una línea o un cuadro.
 
 </dd> <dt>
 
 <span id="RC_LinedInput"></span><span id="rc_linedinput"></span><span id="RC_LINEDINPUT"></span>**RC \_ LinedInput**
 </dt> <dd>
 
-Admite la entrada con líneas, que es similar a escribir en papel con líneas.
+Admite entradas alineadas, que es similar a escribir en papel forrado.
 
 </dd> <dt>
 
 <span id="RC_BoxedInput"></span><span id="rc_boxedinput"></span><span id="RC_BOXEDINPUT"></span>**RC \_ BoxedInput**
 </dt> <dd>
 
-Admite la entrada de conversión boxing, donde cada carácter o palabra se escribe en un cuadro.
+Admite la entrada con caja, donde cada carácter o palabra se introduce en un cuadro.
 
 </dd> <dt>
 
 <span id="RC_CharacterAutoCompletionInput"></span><span id="rc_characterautocompletioninput"></span><span id="RC_CHARACTERAUTOCOMPLETIONINPUT"></span>**RC \_ CharacterAutoCompletionInput**
 </dt> <dd>
 
-Admite Autocompletar caracteres. Los reconocedores que admiten la función autocompletar caracteres requieren una entrada de conversión boxing.
+Admite el carácter Autocompletar. Los reconocedores que admiten el carácter Autocompletar requieren entrada con formato boxed.
 
 </dd> <dt>
 
 <span id="RC_RightAndDown"></span><span id="rc_rightanddown"></span><span id="RC_RIGHTANDDOWN"></span>**RC \_ RightAndDown**
 </dt> <dd>
 
-Admite la entrada de escritura a mano en orden correcto y hacia abajo, como en idiomas occidentales y en algunos idiomas de Asia oriental.
+Admite la entrada de escritura a mano en orden correcto y descendente, como en idiomas del oeste y algunos idiomas de Asia Oriental.
 
 </dd> <dt>
 
 <span id="RC_LeftAndDown"></span><span id="rc_leftanddown"></span><span id="RC_LEFTANDDOWN"></span>**RC \_ LeftAndDown**
 </dt> <dd>
 
-Admite la entrada de escritura a mano en orden izquierdo y hacia abajo, como en los idiomas hebreo y árabe.
+Admite la entrada de escritura a mano en orden izquierdo y descendente, como en idiomas hebreo y árabe.
 
 </dd> <dt>
 
 <span id="RC_DownAndLeft"></span><span id="rc_downandleft"></span><span id="RC_DOWNANDLEFT"></span>**RC \_ DownAndLeft**
 </dt> <dd>
 
-Admite la entrada de escritura a mano en orden descendente y izquierdo, como en algunos idiomas de Asia oriental.
+Admite la escritura a mano de entradas en orden hacia abajo y a la izquierda, como en algunos idiomas de Este de Asia.
 
 </dd> <dt>
 
 <span id="RC_DownAndRight"></span><span id="rc_downandright"></span><span id="RC_DOWNANDRIGHT"></span>**RC \_ DownAndRight**
 </dt> <dd>
 
-Admite la entrada de escritura a mano en orden descendente y derecho, como en algunos idiomas de Asia oriental.
+Admite la entrada de escritura a mano en orden descendente y correcto, como en algunos idiomas de Asia Oriental.
 
 </dd> <dt>
 
@@ -144,76 +144,76 @@ Admite texto escrito en ángulos arbitrarios.
 <span id="RC_Lattice"></span><span id="rc_lattice"></span><span id="RC_LATTICE"></span>**RC \_ Lattice**
 </dt> <dd>
 
-Permite devolver Lattice como una cadena alternativa para los resultados de reconocimiento de escritura a mano.
+Admite la devolución de un entramado como una cadena alternativa para los resultados del reconocimiento de escritura a mano.
 
 </dd> <dt>
 
 <span id="RC_AdviseInkChange"></span><span id="rc_adviseinkchange"></span><span id="RC_ADVISEINKCHANGE"></span>**RC \_ AdviseInkChange**
 </dt> <dd>
 
-Admite la interrupción del reconocimiento en segundo plano, como cuando ha cambiado la tinta.
+Admite la interrupción del reconocimiento de fondo, como cuando ha cambiado la entrada de lápiz.
 
 </dd> <dt>
 
 <span id="RC_StrokeReorder"></span><span id="rc_strokereorder"></span><span id="RC_STROKEREORDER"></span>**RC \_ StrokeReorder**
 </dt> <dd>
 
-Admite el orden de los trazos, espaciales y temporales, como parte de la operación de reconocimiento. [**IInkAnalyzer**](iinkanalyzer.md) no reordena los trazos antes de enviar la entrada manuscrita al [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md).
+Admite que el orden del trazo, espacial y temporal, se controla como parte de la operación de reconocimiento. [**IInkAnalyzer no**](iinkanalyzer.md) reordena los trazos antes de enviar la entrada de lápiz a [**IInkAnalysisRecognizer.**](iinkanalysisrecognizer.md)
 
 </dd> <dt>
 
-<span id="RC_Personalizable"></span><span id="rc_personalizable"></span><span id="RC_PERSONALIZABLE"></span>**RC \_ personalizable**
+<span id="RC_Personalizable"></span><span id="rc_personalizable"></span><span id="RC_PERSONALIZABLE"></span>**RC \_ Personalizable**
 </dt> <dd>
 
-Admite escritura a mano personalizada, en la que el reconocedor mejora el reconocimiento cuando se expone a la misma escritura a mano a lo largo del tiempo.
+Admite escritura a mano personalizada, donde el reconocedor mejora el reconocimiento cuando se expone a la misma escritura a mano a lo largo del tiempo.
 
 </dd> <dt>
 
 <span id="RC_PrefersArbitraryAngle"></span><span id="rc_prefersarbitraryangle"></span><span id="RC_PREFERSARBITRARYANGLE"></span>**RC \_ PrefersArbitraryAngle**
 </dt> <dd>
 
-La [**IInkAnalyzer**](iinkanalyzer.md) no necesita girar la escritura a mano hasta una orientación horizontal antes de enviar la tinta a [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md).
+[**IInkAnalyzer**](iinkanalyzer.md) no necesita girar la escritura a mano a una orientación horizontal antes de enviar la entrada de lápiz a [**IInkAnalysisRecognizer.**](iinkanalysisrecognizer.md)
 
 </dd> <dt>
 
 <span id="RC_PrefersParagraphBreaking"></span><span id="rc_prefersparagraphbreaking"></span><span id="RC_PREFERSPARAGRAPHBREAKING"></span>**RC \_ PrefersParagraphBreaking**
 </dt> <dd>
 
-El [**IInkAnalyzer**](iinkanalyzer.md) debe enviar párrafos completos de entrada manuscrita al [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md), lo que permite al **IInkAnalysisRecognizer** realizar el salto de línea y la separación de palabras (o caracteres).
+[**IInkAnalyzer**](iinkanalyzer.md) debe enviar párrafos completos de lápiz al [**IInkAnalysisRecognizer,**](iinkanalysisrecognizer.md)lo que permite al **IInkAnalysisRecognizer** realizar la separación de línea y la separación de palabras (o caracteres).
 
 </dd> <dt>
 
 <span id="RC_PrefersSegmentationRecognition"></span><span id="rc_preferssegmentationrecognition"></span><span id="RC_PREFERSSEGMENTATIONRECOGNITION"></span>**RC \_ PrefersSegmentationRecognition**
 </dt> <dd>
 
-Reconoce solo una palabra o carácter por cada operación de reconocimiento. [**IInkAnalyzer**](iinkanalyzer.md) realiza la segmentación en la escritura a mano y envía un solo segmento cada vez a [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md).
+Reconoce solo una palabra o carácter por operación de reconocimiento. [**IInkAnalyzer**](iinkanalyzer.md) realiza la segmentación en la escritura a mano y envía solo un segmento a la vez al [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta enumeración permite una combinación bit a bit de sus valores de miembro. Utilice esta enumeración para buscar un reconocedor de tinta instalado que admita los atributos necesarios.
+Esta enumeración permite una combinación bit a bit de sus valores de miembro. Use esta enumeración para buscar un reconocedor de lápiz instalado que admita los atributos que necesita.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IInkAnalysisRecognizer::GetCapabilities**](iinkanalysisrecognizer-getcapabilities.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

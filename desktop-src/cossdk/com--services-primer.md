@@ -15,7 +15,7 @@ ms.locfileid: "119129037"
 
 COM+ proporciona un modelo de programación simple para usar sus servicios automáticos. Simplemente puede establecer estos servicios como atributos declarativos en los componentes y sus métodos. Al establecer estos atributos, COM+ entrega automáticamente los servicios solicitados al objeto según sea necesario.
 
-En esta guía se muestran los servicios COM+ en acción recorrindo el código de componente de ejemplo en tres pasos definidos. La complejidad de la información se compila a medida que avanzan los pasos. El código se centra en el modelo de programación simplificado, mediante el procesamiento de transacciones para demostrar los principios básicos de COM+.
+En este primer paso se muestran los servicios COM+ en acción mediante el recorrido por el código de componente de ejemplo en tres pasos definidos. La complejidad de la información se compila a medida que progresan los pasos. El código se centra en el modelo de programación simplificado, mediante el procesamiento de transacciones para demostrar los principios básicos de COM+.
 
 Cada uno de los pasos siguientes ilustra un aspecto fundamental de los servicios COM+:
 
@@ -36,7 +36,7 @@ Cada uno de los pasos siguientes ilustra un aspecto fundamental de los servicios
 [Configuración de aplicaciones COM+](configuring-com--applications.md)
 </dt> <dt>
 
-[Contextos y modelos de subprocesamiento de COM+](com--contexts-and-threading-models.md)
+[Contextos COM+ y modelos de subprocesamiento](com--contexts-and-threading-models.md)
 </dt> <dt>
 
 [Creación de aplicaciones COM+](creating-com--applications.md)

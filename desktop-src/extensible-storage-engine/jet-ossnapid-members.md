@@ -1,27 +1,27 @@
 ---
-description: 'Más información acerca de: JET_OSSNAPID miembros'
-title: Miembros de JET_OSSNAPID
+description: 'Más información sobre: JET_OSSNAPID miembros'
+title: JET_OSSNAPID miembros
 TOCTitle: JET_OSSNAPID members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.JET_OSSNAPID
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_ossnapid_members(v=EXCHG.10)
 ms:contentKeyID: 39515429
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: a4610cd98275f9565931fb3d52021018f12b6235
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: efc50b8dddb8545befc90e9995632b8a5f60a4fd45de418a502bf51c5b9043d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104570006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979685"
 ---
-# <a name="jet_ossnapid-members"></a>Miembros de JET_OSSNAPID
+# <a name="jet_ossnapid-members"></a>JET_OSSNAPID miembros
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Un JET_OSSNAPID contiene un identificador de una instantánea de una base de datos.
+Un JET_OSSNAPID contiene un identificador para una instantánea de una base de datos.
 
-El tipo de [JET_OSSNAPID](./jet-ossnapid-structure.md) expone los siguientes miembros.
+El [JET_OSSNAPID](./jet-ossnapid-structure.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -36,8 +36,8 @@ El tipo de [JET_OSSNAPID](./jet-ossnapid-structure.md) expone los siguientes mie
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
-<td><a href="hh566820(v=exchg.10).md">Nulo</a></td>
-<td>Obtiene un JET_OSSNAPID nulo.</td>
+<td><a href="hh566820(v=exchg.10).md">Nula</a></td>
+<td>Obtiene un valor null JET_OSSNAPID.</td>
 </tr>
 </tbody>
 </table>
@@ -58,27 +58,27 @@ Superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh596770(v=exchg.10).md">Equals (Object)</a></td>
-<td>Devuelve un valor que indica si esta instancia es igual a otra instancia de. (Invalida <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType. Equals (Object)</a>).</td>
+<td><a href="hh596770(v=exchg.10).md">Equals(Object)</a></td>
+<td>Devuelve un valor que indica si esta instancia es igual a otra instancia. (Invalida <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType.Equals(Object)</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh163478(v=exchg.10).md">Es igual a (JET_OSSNAPID)</a></td>
-<td>Devuelve un valor que indica si esta instancia es igual a otra instancia de.</td>
+<td><a href="hh163478(v=exchg.10).md">Equals(JET_OSSNAPID)</a></td>
+<td>Devuelve un valor que indica si esta instancia es igual a otra instancia.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="hh557831(v=exchg.10).md">GetHashCode</a></td>
-<td>Devuelve el código hash de esta instancia. (Invalida <a href="/dotnet/api/system.valuetype.gethashcode#System_ValueType_GetHashCode">ValueType. GetHashCode ()</a>).</td>
+<td>Devuelve el código hash de esta instancia. (Invalida <a href="/dotnet/api/system.valuetype.gethashcode#System_ValueType_GetHashCode">ValueType.GetHashCode()</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="even">
@@ -89,11 +89,11 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="hh596143(v=exchg.10).md">ToString()</a></td>
-<td>Generar una representación de cadena de la estructura. (Invalida <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType. ToString ()</a>).</td>
+<td>Genere una representación de cadena de la estructura . (Invalida <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType.ToString()</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh557619(v=exchg.10).md">ToString (String, IFormatProvider)</a></td>
+<td><a href="hh557619(v=exchg.10).md">ToString(String, IFormatProvider)</a></td>
 <td>Da formato al valor de la instancia actual usando el formato especificado.</td>
 </tr>
 </tbody>
@@ -129,10 +129,10 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_OSSNAPID](./jet-ossnapid-structure.md)
+[JET_OSSNAPID estructura](./jet-ossnapid-structure.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

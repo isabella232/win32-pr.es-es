@@ -33,13 +33,13 @@ Este tema se divide en las secciones siguientes.
 
 ## <a name="about-screen-savers"></a>Acerca de los protectores de pantalla
 
-La aplicación De escritorio del Windows Panel de control permite a los usuarios seleccionar entre una lista de protectores de pantalla, especificar cuánto tiempo debe transcurrir antes de que se inicie el protector de pantalla, configurar protectores de pantalla y protectores de pantalla de vista previa. Los protectores de pantalla se cargan automáticamente Windows se inicia o cuando un usuario activa el protector de pantalla a través del Panel de control.
+La aplicación De escritorio del Windows Panel de control permite a los usuarios seleccionar entre una lista de protectores de pantalla, especificar cuánto tiempo debe transcurrir antes de que se inicie el protector de pantalla, configurar protectores de pantalla y protectores de pantalla de vista previa. Los protectores de pantalla se cargan automáticamente Windows inicio o cuando un usuario activa el protector de pantalla a través del Panel de control.
 
 Una vez elegido un protector de pantalla, Windows las pulsaciones de tecla y los movimientos del mouse y, a continuación, inicia el protector de pantalla después de un período de inactividad. Sin embargo, Windows inicia el protector de pantalla si existe alguna de las condiciones siguientes:
 
 -   La aplicación activa no es una Windows basada en aplicaciones.
 -   Hay una ventana de entrenamiento basado en equipos (CBT).
--   La aplicación activa recibe el mensaje [ \_ WM SYSCOMMAND](../menurc/wm-syscommand.md) con el parámetro *wParam* establecido en el valor SC SCREENSAVE, pero no pasa el mensaje a la \_ función [DefWindowProc.](/windows/win32/api/winuser/nf-winuser-defwindowproca)
+-   La aplicación activa recibe el [mensaje \_ WM SYSCOMMAND](../menurc/wm-syscommand.md) con el parámetro *wParam* establecido en el valor SC SCREENSAVE, pero no pasa el mensaje a la \_ función [DefWindowProc.](/windows/win32/api/winuser/nf-winuser-defwindowproca)
 
 **Contexto de seguridad del protector de pantalla**
 
@@ -53,7 +53,7 @@ El contexto de seguridad determina el nivel de operaciones con privilegios que s
 
 **Windows Vista y versiones posteriores:** Si la directiva habilita la protección con contraseña, el protector de pantalla se inicia independientemente de lo que haga una aplicación con la notificación SC \_ SCREENSAVE.
 
-Los protectores de pantalla contienen funciones exportadas específicas, definiciones de recursos y declaraciones de variables. La biblioteca de protectores de pantalla contiene la **función principal** y otro código de inicio necesario para un protector de pantalla. Cuando se inicia un protector de pantalla, el código de inicio de la biblioteca de protectores de pantalla crea una ventana de pantalla completa. La clase de ventana de esta ventana se declara de la siguiente manera:
+Los protectores de pantalla contienen funciones exportadas específicas, definiciones de recursos y declaraciones de variables. La biblioteca de protectores de pantalla contiene la **función principal** y otro código de inicio necesario para un protector de pantalla. Cuando se inicia un protector de pantalla, el código de inicio de la biblioteca de protectores de pantalla crea una ventana de pantalla completa. La clase window de esta ventana se declara de la siguiente manera:
 
 
 ```
@@ -108,7 +108,7 @@ Una de las tres funciones necesarias en un módulo de protector de pantalla es [
 
  
 
-La segunda función necesaria en un módulo de protector de pantalla [**es ScreenSaverConfigureDialog.**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverconfiguredialog) Esta función muestra un cuadro de diálogo que permite al usuario configurar el protector de pantalla (una aplicación debe proporcionar una plantilla de cuadro de diálogo correspondiente). Windows muestra el cuadro de diálogo de configuración  cuando el usuario selecciona el botón Setup (Configuración) en el cuadro de diálogo Panel de control screen saver (Protector de pantalla de la aplicación).
+La segunda función necesaria en un módulo de protector de pantalla [**es ScreenSaverConfigureDialog.**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverconfiguredialog) Esta función muestra un cuadro de diálogo que permite al usuario configurar el protector de pantalla (una aplicación debe proporcionar una plantilla de cuadro de diálogo correspondiente). Windows muestra el cuadro de diálogo de  configuración cuando el usuario selecciona el botón Configurar del cuadro de diálogo Panel de control protector de pantalla de la aplicación.
 
 La tercera función necesaria en un módulo de protector de pantalla [**es RegisterDialogClasses.**](/windows/desktop/api/scrnsave/nf-scrnsave-registerdialogclasses) Todas las aplicaciones de protector de pantalla deben llamar a esta función. Sin embargo, las aplicaciones que no requieren ventanas especiales o controles personalizados en el cuadro de diálogo de configuración simplemente pueden devolver **TRUE**. Las aplicaciones que requieren ventanas especiales o controles personalizados deben usar esta función para registrar las clases de ventana correspondientes.
 
@@ -423,7 +423,7 @@ EXPORTS
 
 ### <a name="installing-new-screen-savers"></a>Instalación de nuevos protectores de pantalla
 
-Al compilar la lista de protectores de pantalla disponibles, el Panel de control busca en el directorio Windows Startup los archivos con la extensión .scr. Dado que los protectores de pantalla son archivos ejecutables Windows estándar con extensiones .exe, debe cambiarles el nombre para que tengan extensiones .scr y copiarlas en el directorio correcto.
+Al compilar la lista de protectores de pantalla disponibles, el Panel de control busca en el directorio de inicio Windows archivos con la extensión .scr. Dado que los protectores de pantalla son archivos ejecutables Windows estándar con extensiones .exe, debe cambiarles el nombre para que tengan extensiones .scr y copiarlas en el directorio correcto.
 
 ### <a name="adding-help-to-the-screen-saver-configuration-dialog-box"></a>Agregar ayuda al cuadro de diálogo Configuración del protector de pantalla
 

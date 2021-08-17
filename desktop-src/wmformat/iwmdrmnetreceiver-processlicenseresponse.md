@@ -4,7 +4,7 @@ description: El método ProcessLicenseResponse procesa la respuesta de licencia 
 ms.assetid: b6d04651-746b-474e-8a02-6b7cbee9db46
 keywords:
 - Formato multimedia de windows del método ProcessLicenseResponse
-- Método ProcessLicenseResponse windows Media Format , IWMDRMNetReceiver (interfaz)
+- Método ProcessLicenseResponse windows Media Format , interfaz IWMDRMNetReceiver
 - IWMDRMNetReceiver interface windows Media Format , ProcessLicenseResponse method
 topic_type:
 - apiref
@@ -62,14 +62,14 @@ Tamaño de la respuesta en bytes.
 *ppbWMDRMNetLicenseRepresentation* \[ out\]
 </dt> <dd>
 
-Dirección de una variable que recibe la dirección de la representación de licencia interna de la licencia contenida en el mensaje de respuesta de licencia. Cuando termine con estos datos, debe liberar la memoria mediante una llamada **a CoTaskMemFree**. Este parámetro se puede establecer en **NULL si** no se necesita la representación de licencia.
+Dirección de una variable que recibe la dirección de la representación interna de la licencia para la licencia contenida en el mensaje de respuesta de licencia. Cuando termine con estos datos, debe liberar la memoria llamando a **CoTaskMemFree**. Este parámetro puede establecerse en **NULL si** no se necesita la representación de licencia.
 
 </dd> <dt>
 
 *pwWMDRMNetLicenseRepresentation* \[ out\]
 </dt> <dd>
 
-Dirección de una variable que recibe el tamaño de la representación de licencia. Debe establecerse en **NULL** si *ppbWMDRMNetLicenseRepresentation* es **NULL.**
+Dirección de una variable que recibe el tamaño de la representación de licencia. Debe establecerse en **NULL si** *ppbWMDRMNetLicenseRepresentation* es **NULL.**
 
 </dd> </dl>
 
@@ -81,14 +81,14 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 | Código devuelto                                                                                                | Descripción                                              |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**NS \_ E \_ DRM \_ RIV \_ TOO \_ SMALL**</dt> </dl> | Se necesita una lista de revocación de contenido actualizada.<br/> |
+| <dl> <dt>**NS \_ E \_ DRM \_ RIV DEMASIADO \_ \_ PEQUEÑO**</dt> </dl> | Se necesita una lista de revocación de contenido actualizada.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>                       | El método se ha llevado a cabo de forma correcta.<br/>                         |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La respuesta de licencia procesada mediante este método debe corresponder al último desafío de licencia generado en el equipo cliente.
 
@@ -102,11 +102,11 @@ La respuesta de licencia procesada mediante este método debe corresponder al ú
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IWMDRMNetReceiver (interfaz)**](iwmdrmnetreceiver.md)
+[**Interfaz IWMDRMNetReceiver**](iwmdrmnetreceiver.md)
 </dt> <dt>
 
 [**IWMDRMNetReceiver::GetLicenseChallenge**](iwmdrmnetreceiver-getlicensechallenge.md)

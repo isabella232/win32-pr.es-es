@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5f5435b7e88a5424db9457fac077495fcfd8828a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6d91d0711ab523179e05c0b8f51098a6e44c308a96328bff2feb942dc9bab067
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118803699"
 ---
 # <a name="d3dxvec4transformarray-function-d3dx9mathh"></a>Función D3DXVec4TransformArray (D3dx9math.h)
 
@@ -107,9 +107,9 @@ Puntero a una [**estructura D3DXVECTOR4**](d3dxvector4.md) que es la matriz tran
 
 ## <a name="remarks"></a>Comentarios
 
-Esta función transforma la matriz *pV* (x, y, 0, 1) mediante la matriz *pM*.
+Esta función transforma la matriz *pV* (x, y, 0, 1) por la matriz *pM*.
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec4TransformArray** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXVec4TransformArray** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 

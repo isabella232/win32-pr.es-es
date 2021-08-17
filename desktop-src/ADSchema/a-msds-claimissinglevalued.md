@@ -27,7 +27,7 @@ Para un objeto de tipo de notificación, este atributo identifica si el tipo de 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ms-DS-Claim-Is-Single-Valued         |
 | Ldap-Display-Name | msDS-ClaimIsSingleValued             |
@@ -36,7 +36,7 @@ Para un objeto de tipo de notificación, este atributo identifica si el tipo de 
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2160              |
 | System-Id-Guid    | cd789fb9-96b4-4648-8219-ca378161af38 |
-| Sintaxis            | [**Booleana**](s-boolean.md)         |
+| Syntax            | [**Booleana**](s-boolean.md)         |
 
 
 
@@ -48,14 +48,14 @@ Para un objeto de tipo de notificación, este atributo identifica si el tipo de 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
-| System-Only            | True                                                                                                            |
-| Es de un solo valor       | True                                                                                                            |
-| Está indexado             | False                                                                                                           |
-| En el catálogo global      | False                                                                                                           |
+| System-Only            | Verdadero                                                                                                            |
+| Es de un solo valor       | Verdadero                                                                                                            |
+| Está indexado             | Falso                                                                                                           |
+| En el catálogo global      | Falso                                                                                                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |

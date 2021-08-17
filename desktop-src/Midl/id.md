@@ -66,7 +66,7 @@ Cero o más parámetros de función.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Use el atributo **\[ id \]** cuando desee asignar un DISPID estándar (como DISPID VALUE, DISPID NEWENUM, etc.) a un método o propiedad, o cuando implemente su propio \_ \_ **IDispatch::Invoke** en lugar de delegar a **DispInvoke** / **ITypeInfo::Invoke**.
 

@@ -1,6 +1,6 @@
 ---
-title: Funciones de configuración del método del mismo nivel EAPHost
-description: Obtenga información sobre las funciones de configuración del método del mismo nivel de EAPHost. Consulte una lista de las funciones de configuración y vea los recursos adicionales disponibles.
+title: Funciones de configuración del método del mismo nivel eaphost
+description: Obtenga información sobre las funciones de configuración del método del mismo nivel de EAPHost. Consulte una lista de las funciones de configuración y vea los recursos disponibles adicionales.
 ms.assetid: ba5c90b2-5185-4810-84a2-d08e62e8105c
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118785200"
 ---
-# <a name="eaphost-peer-method-configuration-functions"></a>Funciones de configuración del método del mismo nivel EAPHost
+# <a name="eaphost-peer-method-configuration-functions"></a>Funciones de configuración del método del mismo nivel eaphost
 
 Las funciones de configuración de EAP Peer Method API son las siguientes.
 
@@ -25,12 +25,12 @@ Las funciones de configuración de EAP Peer Method API son las siguientes.
 | [**EapPeerFreeErrorMemory**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerfreeerrormemory)                                                  | Libera toda la memoria específica del error de EAP devuelta por las API del mismo nivel de EapHost.                                                                                                                                                                                               |
 | [**EapPeerFreeMemory**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerfreememory)                                                            | Libera toda la memoria asignada por los parámetros OUT del método EAP.                                                                                                                                                                                                      |
 | [**EapPeerInvokeConfigUI**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerinvokeconfigui)                                                    | Genera el cuadro de diálogo de interfaz de usuario de configuración de conexión específica del método EAP en el cliente.                                                                                                                                                                   |
-| [**EapPeerInvokeIdentityUI**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerinvokeidentityui)                                                | Genera un cuadro de diálogo de interfaz de usuario interactivo personalizado para obtener información de identidad de usuario para el método EAP en el cliente.                                                                                                                                          |
-| [**EapPeerInvokeInteractiveUI**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerinvokeinteractiveui)                                          | Genera un cuadro de diálogo de interfaz de usuario interactivo personalizado para el método EAP en el cliente.                                                                                                                                                                              |
+| [**EapPeerInvokeIdentityUI**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerinvokeidentityui)                                                | Genera un cuadro de diálogo de interfaz de usuario interactiva personalizada para obtener información de identidad de usuario para el método EAP en el cliente.                                                                                                                                          |
+| [**EapPeerInvokeInteractiveUI**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerinvokeinteractiveui)                                          | Genera un cuadro de diálogo de interfaz de usuario interactiva personalizada para el método EAP en el cliente.                                                                                                                                                                              |
 | [**EapPeerQueryCredentialInputFields**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerquerycredentialinputfields)                            | Define la implementación de una función específica del método EAP que obtiene los campos de entrada de credenciales de inicio de sesión único (SSO) de EAP para ese método EAP.                                                                                                              |
 | [**EapPeerQueryInteractiveUIInputFields**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerqueryinteractiveuiinputfields)                      | Define la implementación de una función de suplicación eap que obtiene los campos de entrada para los componentes de interfaz de usuario interactivos que se deben generar en el suplicante.                                                                                                     |
 | [**EapPeerQueryUIBlobFromInteractiveUIInputFields**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerqueryuiblobfrominteractiveuiinputfields)  | Convierte la información del usuario en un BLOB de usuario que pueden consumir las funciones en tiempo de ejecución de EAPHost.                                                                                                                                                                   |
-| [**EapPeerQueryUserBlobFromCredentialInputFields**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerqueryuserblobfromcredentialinputfields) | Define la implementación de una función específica del método EAP que genera un blob de credenciales de usuario eap a partir de una estructura DE MATRIZ DE CAMPOS DE ENTRADA DE CONFIGURACIÓN DE EAP que contiene datos de credenciales proporcionados por un usuario suplicante. [**\_ \_ \_ \_**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_config_input_field_array) |
+| [**EapPeerQueryUserBlobFromCredentialInputFields**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeerqueryuserblobfromcredentialinputfields) | Define la implementación de una función específica del método EAP que genera un blob de credenciales de usuario eap a partir de una estructura [**EAP CONFIG INPUT FIELD \_ \_ \_ \_ ARRAY**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_config_input_field_array) que contiene datos de credenciales proporcionados por un usuario suplicante. |
 
 
 
@@ -40,7 +40,7 @@ Las funciones de configuración de EAP Peer Method API son las siguientes.
 
 <dl> <dt>
 
-[Funciones del método del mismo Run-Time EAPHost](eaphost-peer-method-run-time-functions.md)
+[Funciones del método del mismo nivel eaphost Run-Time](eaphost-peer-method-run-time-functions.md)
 </dt> </dl>
 
  

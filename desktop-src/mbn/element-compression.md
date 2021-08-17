@@ -27,7 +27,7 @@ ms.locfileid: "118745117"
 
 Especifica si se usará la compresión en el vínculo de datos para la transferencia de encabezados y datos.
 
-Para obtener más información, vea la documentación del elemento [**Compression**](./schema-compression-contexttype-element.md) v1.
+Para obtener más información, consulte la documentación del elemento [**Compression**](./schema-compression-contexttype-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
@@ -39,7 +39,7 @@ Para obtener más información, vea la documentación del elemento [**Compressio
 &nbsp;&nbsp;[\<Context\>](element-1-context.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<Compression\>**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <Compression>

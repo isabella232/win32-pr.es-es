@@ -70,7 +70,7 @@ protected EsentStateException(
     
     Contexto de la deserialización.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

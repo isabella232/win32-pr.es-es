@@ -1,10 +1,10 @@
 ---
-description: Representa un punto 4D con coordenadas de punto flotante (Double) de 64 bits.
+description: Representa un punto 4D con coordenadas de punto flotante de 64 bits (doble).
 MS-HAID: vspixengine.PixEnginePoint4D
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Estructura PixEnginePoint4D
+title: Estructura DesenginePoint4D
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: B64925AF-7F38-4DB7-9613-E63BAC187F74
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 9a56d89d11ed4dff33d6f35d793e24d7195121f1
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2ca929459658af64243e8895f97b81cfd18e1f0e6cde9349dc4cba5625cb54c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119289"
 ---
-# <a name="span-idvspixenginepixenginepoint4dspanpixenginepoint4d-structure"></a><span id="vspixengine.pixenginepoint4d"></span>Estructura PixEnginePoint4D
+# <a name="span-idvspixenginepixenginepoint4dspanpixenginepoint4d-structure"></a><span id="vspixengine.pixenginepoint4d"></span>Estructura DesenginePoint4D
 
-Representa un punto 4D con coordenadas de punto flotante (Double) de 64 bits.
+Representa un punto 4D con coordenadas de punto flotante de 64 bits (doble).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,11 +47,11 @@ Posición del punto en el eje Y.
 Posición del punto en el eje Z.
 
 **W**  
-Valor del componente de W homogéneo.
+Valor del componente W homogéneo.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

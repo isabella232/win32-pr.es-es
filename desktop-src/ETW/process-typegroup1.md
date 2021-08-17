@@ -21,14 +21,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: bd67059f5257dad9b66e1c21f642fef04f03719e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b1a172b7c3c09ca5735e9e58da2003fcb3790f584cda5809e393ae721393e6a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070035"
 ---
-# <a name="process_typegroup1-class"></a>Clase \_ Process TypeGroup1
+# <a name="process_typegroup1-class"></a>Clase \_ TypeGroup1 de proceso
 
 Esta clase es la clase de tipo de evento para los eventos de proceso.
 
@@ -140,7 +140,7 @@ Tipo de acceso: solo lectura
 Calificadores: WmiDataId(3), Format("x")
 </dt> </dl>
 
-Identificador único del proceso que crea este proceso. Los números de identificador de proceso se reutilizan, por lo que solo identifican un proceso durante la vigencia de ese proceso. Es posible que el proceso identificado por ParentProcessId finalice, por lo que ParentProcessId puede no hacer referencia a un proceso en ejecución. También es posible que ParentProcessId se refiere incorrectamente a un proceso que reutiliza un identificador de proceso.
+Identificador único del proceso que crea este proceso. Los números de identificador de proceso se reutilizan, por lo que solo identifican un proceso para la duración de ese proceso. Es posible que el proceso identificado por ParentProcessId finalice, por lo que ParentProcessId puede no hacer referencia a un proceso en ejecución. También es posible que ParentProcessId se refiere incorrectamente a un proceso que reutiliza un identificador de proceso.
 
 </dd> <dt>
 
@@ -172,7 +172,7 @@ Tipo de acceso: solo lectura
 Calificadores: WmiDataId(4)
 </dt> </dl>
 
-Identificador único que genera un sistema operativo cuando crea una nueva sesión. Una sesión abarca un período de tiempo desde el inicio de sesión hasta la cierre de sesión desde un sistema específico.
+Identificador único que genera un sistema operativo cuando crea una nueva sesión. Una sesión abarca un período de tiempo desde el inicio de sesión hasta la cierre de sesión de un sistema específico.
 
 </dd> <dt>
 
@@ -216,14 +216,14 @@ Los tipos de eventos DCStart y DCEnd enumeran el proceso que se está ejecutando
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

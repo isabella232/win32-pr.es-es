@@ -16,7 +16,7 @@ ms.locfileid: "118761935"
 El color se define como una combinación de tres colores principales rojo, verde y azul. el sistema identifica un color al darle un valor de color (a veces denominado triplete RGB), que consta de tres valores de 8 bits que especifican las intensidades de sus componentes de color. El negro tiene la intensidad mínima para rojo, verde y azul, por lo que el valor de color para el negro es (0, 0, 0). El blanco tiene la intensidad máxima para rojo, verde y azul, por lo que su valor de color es (255, 255, 255).
 
 > [!Note]  
-> Si la coincidencia de colores de imagen está habilitada, la definición de color y el significado de un valor de color dependen del tipo de espacio de color que se establece actualmente para el contexto del dispositivo.
+> Si la coincidencia de colores de imagen está habilitada, la definición de color y el significado de un valor de color dependen del tipo de espacio de color que está establecido actualmente para el contexto del dispositivo.
 
  
 

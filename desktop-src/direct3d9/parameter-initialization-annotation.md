@@ -42,7 +42,7 @@ El valor predeterminado es una cadena vacía.
 
 <dl> <dt>
 
-[Referencia de anotaciones y semánticas estándar de DirectX](dx9-graphics-reference-effects-dxsas.md)
+[Referencia de semántica y anotaciones estándar de DirectX](dx9-graphics-reference-effects-dxsas.md)
 </dt> </dl>
 
  

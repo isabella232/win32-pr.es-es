@@ -1,6 +1,6 @@
 ---
-title: Modelo de sombreador 2
-description: El modelo de sombreador 2 agregó capacidades adicionales al modelo de sombreador 1.
+title: Shader Model 2
+description: El modelo de sombreador 2 agregó funcionalidades adicionales al modelo de sombreador 1.
 ms.assetid: 53c367d2-5b6a-4afa-894a-8ab9927169d5
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 88bd2f6292687c5387fadf65f8f43437904168cc
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 23b4caa0e4da92e992eb0486f5a998ad7d21016dc691563f29589c5fc9ab5310
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "104997036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119979"
 ---
-# <a name="shader-model-2"></a>Modelo de sombreador 2
+# <a name="shader-model-2"></a>Shader Model 2
 
-El modelo de sombreador 2 agregó capacidades adicionales al [modelo de sombreador 1](dx-graphics-hlsl-sm1.md).
+El modelo de sombreador 2 agregó funcionalidades adicionales al [modelo de sombreador 1.](dx-graphics-hlsl-sm1.md)
 
 
 
@@ -35,30 +35,30 @@ El modelo de sombreador 2 agregó capacidades adicionales al [modelo de sombread
 <tr class="even">
 <td>Conjunto de instrucciones</td>
 <td><ul>
-<li><a href="dx-graphics-hlsl-intrinsic-functions.md"><strong>Funciones de HLSL</strong></a></li>
-<li>Instrucciones de ensamblado (consulte las instrucciones <a href="dx9-graphics-reference-asm-vs-instructions-vs-2-0.md">-vs_2_0</a>, <a href="dx9-graphics-reference-asm-vs-instructions-vs-2-x.md">instructions-vs_2_x</a>, <a href="dx9-graphics-reference-asm-ps-instructions-ps-2-0.md">instrucciones de ps_2_0</a>, <a href="dx9-graphics-reference-asm-ps-instructions-ps-2-x.md">ps_2_x instrucciones</a>)</li>
+<li><a href="dx-graphics-hlsl-intrinsic-functions.md"><strong>Funciones HLSL</strong></a></li>
+<li>Instrucciones de ensamblado (vea <a href="dx9-graphics-reference-asm-vs-instructions-vs-2-0.md">Instrucciones - vs_2_0</a>, Instrucciones - <a href="dx9-graphics-reference-asm-vs-instructions-vs-2-x.md">vs_2_x</a> <a href="dx9-graphics-reference-asm-ps-instructions-ps-2-0.md">,</a>instrucciones de ps_2_0 , <a href="dx9-graphics-reference-asm-ps-instructions-ps-2-x.md">ps_2_x instrucciones</a>)</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Conjunto de registros</td>
 <td><ul>
-<li>Registros del sombreador de píxeles (consulte <a href="dx9-graphics-reference-asm-ps-registers-ps-2-0.md">registros de ps_2_0</a>, registros de <a href="dx9-graphics-reference-asm-ps-registers-ps-2-x.md">ps_2_x</a>)</li>
-<li>Registros del sombreador de vértices (consulte <a href="dx9-graphics-reference-asm-vs-registers-vs-2-0.md">registros-vs_2_0</a>, <a href="dx9-graphics-reference-asm-vs-registers-vs-2-x.md">registros-vs_2_x</a>)</li>
+<li>Registros de sombreador de píxeles <a href="dx9-graphics-reference-asm-ps-registers-ps-2-0.md">(vea ps_2_0 registros</a>, <a href="dx9-graphics-reference-asm-ps-registers-ps-2-x.md">ps_2_x registros</a>)</li>
+<li>Registros del sombreador de <a href="dx9-graphics-reference-asm-vs-registers-vs-2-0.md">vértices</a>(vea Registros - vs_2_0 , <a href="dx9-graphics-reference-asm-vs-registers-vs-2-x.md">Registros - vs_2_x</a>)</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Sombreador de píxeles máximo</td>
+<td>Máximo del sombreador de píxeles</td>
 <td><ul>
-<li>ps_2_0-32 textura + 64 aritmética</li>
-<li>ps_2_x-96 como mínimo y hasta el número de ranuras de D3DCAPS9. D3DPSHADERCAPS2_0. NumInstructionSlots. Consulte D3DPSHADERCAPS2_0</li>
+<li>ps_2_0: 32 texturas + 64 aritméticas</li>
+<li>ps_2_x: 96 como mínimo y hasta el número de ranuras en D3DCAPS9. D3DPSHADERCAPS2_0.NumInstructionSlots. Consulte D3DPSHADERCAPS2_0</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Sombreador de vértices máximo</td>
+<td>Máximo del sombreador de vértices</td>
 <td>256 instrucciones</td>
 </tr>
 <tr class="even">
-<td>Perfiles del sombreador</td>
+<td>Perfiles de sombreador</td>
 <td>ps_2_0, ps_2_x, vs_2_0, vs_2_x</td>
 </tr>
 </tbody>
@@ -66,12 +66,12 @@ El modelo de sombreador 2 agregó capacidades adicionales al [modelo de sombread
 
 
 
- 
+ 
 
-Para obtener más información sobre el modelo de sombreador 2, consulte:
+Para más información sobre el modelo de sombreador 2, consulte:
 
--   [Sombreador de píxeles 2,0](dx9-graphics-reference-asm-ps-2-0.md), [sombreador de píxeles 2. x](dx9-graphics-reference-asm-ps-2-x.md)
--   [Sombreador de vértices 2,0](dx9-graphics-reference-asm-vs-2-0.md), [sombreador de vértices 2. x](dx9-graphics-reference-asm-vs-2-x.md)
+-   [Sombreador de píxeles 2.0,](dx9-graphics-reference-asm-ps-2-0.md) [Sombreador de píxeles 2.x](dx9-graphics-reference-asm-ps-2-x.md)
+-   [Sombreador de vértices 2.0](dx9-graphics-reference-asm-vs-2-0.md), [Sombreador de vértices 2.x](dx9-graphics-reference-asm-vs-2-x.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -80,9 +80,9 @@ Para obtener más información sobre el modelo de sombreador 2, consulte:
 [Modelos de sombreador frente a perfiles de sombreador](dx-graphics-hlsl-models.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

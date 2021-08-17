@@ -41,13 +41,13 @@ Valor de cadena que se establece en el nombre para mostrar del usuario.
 
 ## <a name="remarks"></a>Comentarios
 
-Esta propiedad contiene el "nombre descriptivo" del usuario. Su valor no está necesariamente definido.
+Esta propiedad contiene el "nombre descriptivo" del usuario. Su valor no se define necesariamente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
@@ -55,7 +55,7 @@ Esta propiedad contiene el "nombre descriptivo" del usuario. Su valor no está n
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -35,7 +35,7 @@ ms.locfileid: "118766011"
 ---
 # <a name="jet_enumcolumncbdata-property"></a>JET_ENUMCOLUMN.cbData, propiedad
 
-Obtiene el tamaño del valor que se enumeró para la columna. Este miembro solo se usa si [err](./jet-enumcolumn.err-property.md) es igual a [ColumnSingleValue.](./jet-wrn-enumeration.md)
+Obtiene el tamaño del valor enumerado para la columna. Este miembro solo se usa si [err](./jet-enumcolumn.err-property.md) es igual a [ColumnSingleValue.](./jet-wrn-enumeration.md)
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)

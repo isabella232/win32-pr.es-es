@@ -66,7 +66,7 @@ Los valores devueltos de este método los implementa un programador de aplicacio
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

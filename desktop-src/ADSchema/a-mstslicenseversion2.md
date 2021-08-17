@@ -1,6 +1,6 @@
 ---
 title: Atributo MS-TS-LicenseVersion2
-description: Versión del segundo servidor de terminal server por cal de usuario.
+description: Versión del segundo servidor terminal por cal de usuario.
 ms.assetid: 9e4bc586-365a-4a46-a623-e686d305a159
 ms.tgt_platform: multiple
 keywords:
@@ -23,16 +23,16 @@ ms.locfileid: "118960164"
 ---
 # <a name="ms-ts-licenseversion2-attribute"></a>Atributo MS-TS-LicenseVersion2
 
-Versión del segundo servidor de terminal server por cal de usuario.
+Versión del segundo servidor terminal por cal de usuario.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | MS-TS-LicenseVersion2                       |
 | Ldap-Display-Name | msTSLicenseVersion2                         |
 | Size              | \-                                          |
-| Actualizar privilegios  | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2001                     |
 | System-Id-Guid    | 4b0df103-8d97-45d9-ad69-85c3080ba4e7        |
@@ -50,7 +50,7 @@ Versión del segundo servidor de terminal server por cal de usuario.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
@@ -71,7 +71,7 @@ Versión del segundo servidor de terminal server por cal de usuario.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
@@ -92,7 +92,7 @@ Versión del segundo servidor de terminal server por cal de usuario.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |

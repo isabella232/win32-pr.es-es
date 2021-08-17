@@ -1,9 +1,9 @@
 ---
 title: EQUALIZERSETTINGS.nextPreset
-description: El método nextPreset aplica el siguiente valor preestablecido del ecualizador.
+description: El método nextPreset aplica el siguiente valor preestablecido del igualador.
 ms.assetid: 67d40ec9-2744-4d63-aa56-0ee20496e896
 keywords:
-- EQUALIZERSETTINGS. nextPreset Windows Media Player
+- EQUALIZERSETTINGS.nextPreset Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b464c0fca9b38a14a65a24185e51813e4520eee0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 715c5ee514cf2818cbab8b5553cab9565a2b448e47d1f6fe2282f17940cfc5b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748700"
 ---
 # <a name="equalizersettingsnextpreset"></a>EQUALIZERSETTINGS.nextPreset
 
-El método **nextPreset** aplica el siguiente valor preestablecido del ecualizador.
+El **método nextPreset** aplica el siguiente valor preestablecido del igualador.
 
 ``` syntax
         elementID.nextPreset()
@@ -36,9 +36,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el valor predeterminado actual es el último disponible, el primer valor preestablecido se convierte en actual.
+Si el valor preestablecido actual es el último disponible, el primer valor preestablecido se hace actual.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -69,7 +69,7 @@ Si el valor predeterminado actual es el último disponible, el primer valor pree
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 

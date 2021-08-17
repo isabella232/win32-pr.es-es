@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118973584"
 ---
-# <a name="mf_mt_audio_valid_bits_per_sample-attribute"></a>Atributo \_ MF MT AUDIO VALID BITS PER \_ \_ \_ \_ \_ SAMPLE
+# <a name="mf_mt_audio_valid_bits_per_sample-attribute"></a>Atributo MF \_ MT AUDIO VALID BITS PER \_ \_ \_ \_ \_ SAMPLE
 
 Número de bits válidos de datos de audio en cada muestra de audio.
 
@@ -21,7 +21,7 @@ Número de bits válidos de datos de audio en cada muestra de audio.
 
 ## <a name="remarks"></a>Comentarios
 
-El **atributo MF MT AUDIO VALID BITS PER \_ \_ \_ \_ \_ \_ SAMPLE** se usa para los formatos de audio que contienen relleno después de cada muestra de audio. El tamaño total de cada muestra de audio, incluidos los bits de relleno, se proporciona en el atributo [**MF MT AUDIO BITS PER \_ \_ \_ \_ \_ SAMPLE.**](mf-mt-audio-bits-per-sample-attribute.md)
+El **atributo MF MT AUDIO VALID BITS PER \_ \_ \_ \_ \_ \_ SAMPLE** se usa para formatos de audio que contienen relleno después de cada muestra de audio. El tamaño total de cada muestra de audio, incluidos los bits de relleno, se proporciona en el atributo [**MF MT AUDIO BITS PER \_ \_ \_ \_ \_ SAMPLE.**](mf-mt-audio-bits-per-sample-attribute.md)
 
 Si el **atributo MF MT AUDIO VALID BITS PER \_ \_ \_ \_ \_ \_ SAMPLE** no está establecido, use el atributo [**MF MT AUDIO BITS PER \_ \_ \_ \_ \_ SAMPLE**](mf-mt-audio-bits-per-sample-attribute.md) para buscar el número de bits válidos por muestra.
 
@@ -35,15 +35,15 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
-| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| para aplicaciones para UWP\]<br/>                        |
 | Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -59,7 +59,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[Atributos de tipo multimedia](media-type-attributes.md)
+[Atributos de tipo de medio](media-type-attributes.md)
 </dt> </dl>
 
  

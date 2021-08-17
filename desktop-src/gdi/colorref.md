@@ -30,7 +30,7 @@ Al especificar un color [RGB explícito,](/windows/desktop/api/Wingdi/nf-wingdi-
 
 `0x00bbggrr`
 
-El byte de orden bajo contiene un valor para la intensidad relativa de rojo; el segundo byte contiene un valor para verde; y el tercer byte contiene un valor para blue. El byte de orden superior debe ser cero. El valor máximo de un solo byte es 0xFF.
+El byte de orden bajo contiene un valor para la intensidad relativa de rojo; el segundo byte contiene un valor para verde; y el tercer byte contiene un valor para azul. El byte de orden superior debe ser cero. El valor máximo de un solo byte es 0xFF.
 
 Para crear un valor de color **COLORREF,** use la [macro RGB.](/windows/desktop/api/Wingdi/nf-wingdi-rgb) Para extraer los valores individuales de los componentes rojo, verde y azul de un valor de color, use las macros [**GetRValue**](/windows/desktop/api/Wingdi/nf-wingdi-getrvalue), [GetGValue](/windows/desktop/api/Wingdi/nf-wingdi-getgvalue)y [GetBValue,](/windows/desktop/api/Wingdi/nf-wingdi-getbvalue) respectivamente.
 

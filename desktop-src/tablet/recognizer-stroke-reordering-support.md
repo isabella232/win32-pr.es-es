@@ -15,7 +15,7 @@ ms.locfileid: "118966844"
 
 Los reconocedores de Microsoft del script latino admiten la reordenación de trazos.
 
-Los reconocedores de escritura a mano de Microsoft del script latino no dependen de los trazos de una línea que se escribe en un orden determinado. En su lugar, los reconocedores ordenn los trazos internamente en función de las relaciones espaciales entre los trazos. Por ejemplo, los reconocedores de script latino admiten el escenario común en el que alguien vuelve a una línea para escribir un paréntesis izquierdo, "(", o para agregar comillas.
+Los reconocedores de escritura a mano de Microsoft del script latino no dependen de los trazos de una línea que se escribe en un orden determinado. En su lugar, los reconocedores ordenn los trazos internamente en función de las relaciones espaciales entre los trazos. Por ejemplo, los reconocedores del script latino admiten el escenario común en el que alguien vuelve a una línea para escribir un paréntesis izquierdo, "(", o para agregar comillas.
 
  
 

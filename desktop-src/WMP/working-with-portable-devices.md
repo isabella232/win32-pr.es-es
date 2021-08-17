@@ -7,8 +7,8 @@ keywords:
 - Reproductor de Windows Media de objetos, dispositivos portátiles
 - modelo de objetos, dispositivos portátiles
 - Reproductor de Windows Media ActiveX, dispositivos portátiles
-- ActiveX control, dispositivos portátiles
-- Reproductor de Windows Media Control de ActiveX móviles, dispositivos portátiles
+- ActiveX, dispositivos portátiles
+- Reproductor de Windows Media Control ActiveX dispositivos móviles, dispositivos portátiles
 - Reproductor de Windows Media Dispositivos móviles y portátiles
 - dispositivos portátiles, acerca de
 ms.topic: article
@@ -123,7 +123,7 @@ long CMainDlg::GetSelectedDeviceIndex()
 
 
 
-## <a name="user-interface-state-is-managed-by-a-single-function"></a>Interfaz de usuario state se administra mediante una sola función
+## <a name="user-interface-state-is-managed-by-a-single-function"></a>Interfaz de usuario estado se administra mediante una sola función
 
 La función SetUIState administra la interfaz de usuario.
 

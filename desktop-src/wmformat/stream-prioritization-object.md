@@ -1,10 +1,10 @@
 ---
-title: Objeto Stream Prioritization
-description: Objeto Stream Prioritization
+title: Objeto De priorización de secuencias
+description: Objeto De priorización de secuencias
 ms.assetid: cb0345ce-6847-435b-8cbb-f8b93856af9f
 keywords:
 - Windows SDK de formato multimedia, objetos de priorización de secuencias
-- Advanced Systems Format (ASF), objetos de priorización de secuencias
+- Formato de sistemas avanzados (ASF), objetos de priorización de secuencias
 - ASF (formato de sistemas avanzados), objetos de priorización de secuencias
 - objects,stream prioritization objects
 - objetos de priorización de secuencias
@@ -18,7 +18,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118699972"
 ---
-# <a name="stream-prioritization-object"></a>Objeto Stream Prioritization
+# <a name="stream-prioritization-object"></a>Objeto De priorización de secuencias
 
 Un objeto de priorización de secuencias se usa para especificar un orden de importancia para las secuencias de un perfil. Cuando la reproducción completa no es posible debido a limitaciones de velocidad de bits, las secuencias de prioridad más baja serán las primeras en descartarse.
 
@@ -29,7 +29,7 @@ Los objetos de priorización de secuencias se pueden crear para los datos de pri
 | Método                                                                                          | Descripción                                                                  |
 |-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | [**IWMProfile3::CreateNewStreamPrioritization**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofile3-createnewstreamprioritization) | Crea un objeto de priorización de secuencias sin datos.                     |
-| [**IWMProfile3::GetStreamPrioritization**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofile3-getstreamprioritization)             | Crea un objeto de priorización de secuencia rellenado con datos del perfil. |
+| [**IWMProfile3::GetStreamPrioritization**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofile3-getstreamprioritization)             | Crea un objeto de priorización de secuencias rellenado con datos del perfil. |
 
 
 
@@ -47,9 +47,9 @@ Ambos métodos de la tabla anterior establecen un puntero a una **interfaz IWMSt
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Solo puede existir una priorización de secuencias para un perfil determinado. Si crea una nueva priorización de secuencia para un perfil que ya contiene una priorización de secuencia, se eliminará la anterior.
+Solo puede existir una priorización de secuencias para un perfil determinado. Si crea una nueva priorización de secuencias para un perfil que ya contiene una priorización de secuencia, se eliminará la anterior.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -58,7 +58,7 @@ Solo puede existir una priorización de secuencias para un perfil determinado. S
 [**Objetos**](objects.md)
 </dt> <dt>
 
-[**Objeto de perfil**](profile-object.md)
+[**Objeto De perfil**](profile-object.md)
 </dt> <dt>
 
 [**Uso de la priorización de secuencias**](using-stream-prioritization.md)

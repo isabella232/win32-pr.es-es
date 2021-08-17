@@ -3,8 +3,8 @@ title: Método ResetSecondaries de la MicrosoftDNS_Zone clase
 description: El método ResetSecondaries restablece las direcciones IP de los servidores DNS secundarios de la zona.
 ms.assetid: b9a47714-f180-40cf-831a-f59e804a4ca2
 keywords:
-- ResetSecondaries method DNS
-- ResetSecondaries method DNS , MicrosoftDNS_Zone class
+- Dns del método ResetSecondaries
+- Método DNS ResetSecondaries , MicrosoftDNS_Zone clase
 - MicrosoftDNS_Zone clase DNS , método ResetSecondaries
 topic_type:
 - apiref
@@ -61,14 +61,14 @@ Especifica la seguridad que se va a aplicar y debe ser una de las siguientes:
 -   ZONA \_ SECSECURE \_ NO \_ SECURITY
 -   ZONE \_ SECSECURE \_ NS \_ ONLY
 -   ZONE \_ SECSECURE \_ LIST \_ ONLY
--   ZONA \_ SECSECURE \_ NO \_ XFR
+-   ZONE \_ SECSECURE \_ NO \_ XFR
 
 </dd> <dt>
 
 *NotifyServers* \[ En\]
 </dt> <dd>
 
-Dirección IP de los servidores DNS que se notificarán cuando cambie la zona.
+Dirección IP de los servidores DNS a los que se notificará cuando cambie la zona.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ La configuración de notificación y debe ser una de las siguientes:
 
 -   ZONE \_ NOTIFY \_ OFF
 -   NOTIFICACIÓN \_ DE ZONA A TODAS LAS \_ \_ SECUNDARIAS
--   ZONE NOTIFY LIST ONLY (SOLO \_ LISTA DE NOTIFICACIONES DE \_ \_ ZONA)
+-   SOLO LISTA \_ DE NOTIFICACIONES \_ DE \_ ZONA
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
@@ -107,14 +107,14 @@ Este método no devuelve ningún valor.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [**Zona MicrosoftDNS \_**](microsoftdns-zone.md)
 </dt> <dt>
 
-[**Método AgeAllRecords de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-ageallrecords.md)
+[**Método AgeAllRecords de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-ageallrecords.md)
 </dt> <dt>
 
 [**Método ChangeZoneType de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-changezonetype.md)
@@ -123,13 +123,13 @@ Este método no devuelve ningún valor.
 [**Método CreateZone de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-createzone.md)
 </dt> <dt>
 
-[**Método ForceRefresh de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-forcerefresh.md)
+[**Método ForceRefresh de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-forcerefresh.md)
 </dt> <dt>
 
-[**Método GetDistinguishedName de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-getdistinguishedname.md)
+[**Método GetDistinguishedName de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-getdistinguishedname.md)
 </dt> <dt>
 
-[**Método PauseZone de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-pausezone.md)
+[**Método PauseZone de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-pausezone.md)
 </dt> <dt>
 
 [**Método ReloadZone de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-reloadzone.md)
@@ -138,7 +138,7 @@ Este método no devuelve ningún valor.
 [**Método ResumeZone de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-resumezone.md)
 </dt> <dt>
 
-[**Método UpdateFromDS de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-updatefromds.md)
+[**Método UpdateFromDS de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-updatefromds.md)
 </dt> <dt>
 
 [**Método WriteBackZone de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-writebackzone.md)

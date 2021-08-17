@@ -102,7 +102,7 @@ Código de estado de columna que resulta de la enumeración de la columna.
 
 Matriz de valores de columna que se enumeraron para la columna. El búfer de salida se devuelve en memoria que se asignó mediante la devolución de llamada [compatible](/cpp/c-runtime-library/reference/realloc?view=vs-2019) con reasignación que se proporcionó a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
-Este búfer de salida se usa cuando el código de estado de la columna no es igual a JET_wrnColumnSingleValue. Para obtener más información, [vea JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Este búfer de salida se usa cuando el código de estado de columna no es igual a JET_wrnColumnSingleValue. Para obtener más información, [vea JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
 Se devuelve si "err \! = JET_wrnColumnSingleValue".
 
@@ -110,7 +110,7 @@ Se devuelve si "err \! = JET_wrnColumnSingleValue".
 
 Matriz de valores de columna que se enumeraron para la columna. El búfer de salida se devuelve en memoria que se asignó mediante la devolución de llamada [compatible](/cpp/c-runtime-library/reference/realloc?view=vs-2019) con reasignación que se proporcionó a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
-Este búfer de salida se usa cuando el código de estado de la columna no es igual a JET_wrnColumnSingleValue. Para obtener más información, [vea JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Este búfer de salida se usa cuando el código de estado de columna no es igual a JET_wrnColumnSingleValue. Para obtener más información, [vea JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
 Se devuelve si "err \! = JET_wrnColumnSingleValue".
 

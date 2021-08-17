@@ -343,7 +343,7 @@ Descripción de cómo se presenta un servicio en el equipo host. Esta propiedad 
 
 <span id="ADS_SERVICE_KERNEL_DRIVER"></span><span id="ads_service_kernel_driver"></span>
 
-CONTROLADOR \_ DEL KERNEL DEL SERVICIO \_ \_ ADS** (0x00000001)
+ADS \_ SERVICE \_ KERNEL \_ DRIVER** (0x00000001)
 
 
 </dt> <dd></dd> <dt>
@@ -561,7 +561,7 @@ Cleanup:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -571,7 +571,7 @@ Cleanup:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

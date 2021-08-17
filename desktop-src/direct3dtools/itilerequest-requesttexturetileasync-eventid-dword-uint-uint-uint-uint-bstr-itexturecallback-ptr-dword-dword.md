@@ -1,10 +1,10 @@
 ---
-description: Solicita que obtenga el contenido de una textura en mosaico como. Archivo DDS (DirectDraw Surface).
+description: Solicita obtener el contenido de una textura en mosaico como . Archivo DDS (DirectDraw Surface).
 MS-HAID: vspixengine.ITileRequest\_RequestTextureTileAsync\_EventID\_DWORD\_UINT\_UINT\_UINT\_UINT\_BSTR\_ITextureCallback\_ptr\_DWORD\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'ITileRequest:: RequestTextureTileAsync (método)'
+title: ITileRequest::RequestTextureTileAsync (método)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: E3F4FAC2-E7D9-4FDF-BE64-73D3EA175A8F
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: e22c3b54c1e04242805d698c37a1d4dd2709fa0b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 20e67b9cd6d05e32488246306edb80d35fc8c6379fe4054f2cb1d7858f8e7402
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119469"
 ---
-# <a name="span-idvspixengineitilerequest_requesttexturetileasync_eventid_dword_uint_uint_uint_uint_bstr_itexturecallback_ptr_dword_dwordspanitilerequestrequesttexturetileasync-method"></a><span id="vspixengine.itilerequest_requesttexturetileasync_eventid_dword_uint_uint_uint_uint_bstr_itexturecallback_ptr_dword_dword"></span>ITileRequest:: RequestTextureTileAsync (método)
+# <a name="span-idvspixengineitilerequest_requesttexturetileasync_eventid_dword_uint_uint_uint_uint_bstr_itexturecallback_ptr_dword_dwordspanitilerequestrequesttexturetileasync-method"></a><span id="vspixengine.itilerequest_requesttexturetileasync_eventid_dword_uint_uint_uint_uint_bstr_itexturecallback_ptr_dword_dword"></span>ITileRequest::RequestTextureTileAsync (método)
 
-Solicita que obtenga el contenido de una textura en mosaico como. Archivo DDS (DirectDraw Surface).
+Solicita obtener el contenido de una textura en mosaico como . Archivo DDS (DirectDraw Surface).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,43 +48,43 @@ HRESULT RequestTextureTileAsync(
 
 ## <a name="parameters"></a>Parámetros
 
-*eventID*   
+*Eventid*   
 Evento especificado con el que se va a hacer coincidir el contenido del búfer (por ejemplo, un destino de representación podría cambiar con el tiempo).
 
 *textureFileptr*   
 Dirección del objeto de textura especificado.
 
 *tileSubresource*   
-Subrecurso especificado del mosaico.
+El subrecurso especificado del icono.
 
 *tileX*   
-Posición X del mosaico especificado.
+Posición X del icono especificado.
 
-*en mosaico*   
-Posición Y de mosaico especificada.
+*tileY*   
+Posición Y del icono especificado.
 
 *tileZ*   
-Posición Z del mosaico especificado.
+Posición Z del icono especificado.
 
 *ddsFilename*   
-Cadena COM que contiene la ruta de acceso del archivo. DDS donde se escriben los resultados.
+Cadena COM que contiene el nombre de ruta de acceso del archivo .dds donde se escriben los resultados.
 
 *pRequestCallback*   
-Dirección de devolución de llamada que se utiliza para notificar al host los resultados.
+Dirección de devolución de llamada utilizada para notificar al host de resultados.
 
 *requestCookie*   
-Cookie que identifica de forma única la solicitud y que se puede usar para indicar que se va a cancelar.
+Cookie que identifica de forma única la solicitud y se puede usar para indicar que se cancele.
 
 *progressIntervalMsecs*   
-No se utiliza.
+No se usa.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vea también
 

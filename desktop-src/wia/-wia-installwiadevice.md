@@ -1,5 +1,5 @@
 ---
-description: La función InstallWiaDevice instala un Windows adquisición de imágenes (WIA) como dispositivo enumerado raíz. Puede aparecer una advertencia de seguridad si algún archivo o coinstalador de instalación no está firmado digitalmente y es de confianza.
+description: La función InstallWiaDevice instala un dispositivo de adquisición de imágenes de Windows (WIA) como dispositivo enumerado en la raíz. Puede aparecer una advertencia de seguridad si algún archivo de instalación o coinstalador no está firmado digitalmente y es de confianza.
 ms.assetid: c7de27f5-5994-4fce-a6ec-6e7cfae2e591
 title: Función InstallWiaDevice (Wia.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118965844"
 ---
 # <a name="installwiadevice-function"></a>Función InstallWiaDevice
 
-La **función InstallWiaDevice** instala un Windows adquisición de imágenes (WIA) como dispositivo enumerado raíz. Puede aparecer una advertencia de seguridad si algún archivo o coinstalador de instalación no está firmado digitalmente y es de confianza.
+La **función InstallWiaDevice** instala un dispositivo de adquisición de imágenes de Windows (WIA) como dispositivo enumerado en la raíz. Puede aparecer una advertencia de seguridad si algún archivo de instalación o coinstalador no está firmado digitalmente y es de confianza.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,10 +61,10 @@ Si se produce un error en la función, devuelve un código de error de Win32.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
 | Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
 | Biblioteca<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
