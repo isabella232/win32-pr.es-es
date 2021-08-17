@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3d051894a6706cf8d58b81a85003666513f2a956
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d86aa735f8bafba6da5d697dc89b5e97469a6181de30862515ba8b94190d9cab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122845"
 ---
 # <a name="d3dxmatrixperspectiveoffcenterrh-function-d3dx9mathh"></a>Función D3DXMatrixPerspectiveOffCenterRH (D3dx9math.h)
 
@@ -82,7 +82,7 @@ Valor Y mínimo del volumen de vista.
 
 </dd> <dt>
 
-*t* \[ in\]
+*t* \[ en\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -96,7 +96,7 @@ Valor Y máximo del volumen de vista.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor z mínimo del volumen de vista.
+Valor Z mínimo del volumen de vista.
 
 </dd> <dt>
 
@@ -113,7 +113,7 @@ Valor z máximo del volumen de vista.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es una matriz de proyección de perspectiva personalizada y a la derecha.
+Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es una matriz de proyección de perspectiva personalizada y con la mano derecha.
 
 ## <a name="remarks"></a>Comentarios
 

@@ -1,5 +1,5 @@
 ---
-description: En este tema se enumeran los métodos AddLines de la clase GraphicsPath. Para obtener una lista completa de los métodos de la clase GraphicsPath, vea GraphicsPath.
+description: En este tema se enumeran los métodos AddLines de la clase GraphicsPath. Para obtener una lista completa de los métodos para la clase GraphicsPath, vea GraphicsPath.
 ms.assetid: 39055c59-6d88-4b46-bc4c-cf2a4a927d29
 title: Métodos GraphicsPath.AddLines
 ms.date: 07/02/2019
@@ -13,7 +13,7 @@ ms.locfileid: "119964715"
 ---
 # <a name="graphicspathaddlines-methods"></a>Métodos GraphicsPath.AddLines
 
-En este tema se enumeran los métodos AddLines de la [**clase GraphicsPath.**](/windows/win32/api/gdipluspath/nl-gdipluspath-graphicspath) Para obtener una lista completa de métodos para la **clase GraphicsPath,** vea [**GraphicsPath**](/windows/win32/api/gdipluspath/nl-gdipluspath-graphicspath).
+En este tema se enumeran los métodos AddLines de la [**clase GraphicsPath.**](/windows/win32/api/gdipluspath/nl-gdipluspath-graphicspath) Para obtener una lista completa de los métodos para la **clase GraphicsPath,** vea [**GraphicsPath**](/windows/win32/api/gdipluspath/nl-gdipluspath-graphicspath).
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 

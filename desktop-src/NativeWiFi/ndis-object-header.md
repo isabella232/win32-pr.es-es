@@ -1,7 +1,7 @@
 ---
-description: Empaqueta la información sobre el tipo de objeto, la versión y el tamaño necesaria en muchas estructuras NDIS 6,0.
+description: Empaqueta la información de tipo de objeto, versión y tamaño necesaria en muchas estructuras de NDIS 6.0.
 ms.assetid: 0dfb6022-1d8d-4bd9-bde3-2ee6d683f223
-title: NDIS_OBJECT_HEADER estructura (Ntddndis. h)
+title: NDIS_OBJECT_HEADER estructura (Ntddndis.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - ntddndis.h
-ms.openlocfilehash: fe28a87eeb1457bace0b72a386bcb07667b24a64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f9f4a4ef2a833081cde0c3c7ca4d395e59743944291a95d7680c241191988b35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065055"
 ---
-# <a name="ndis_object_header-structure"></a>Estructura de encabezado de \_ objeto NDIS \_
+# <a name="ndis_object_header-structure"></a>Estructura NDIS \_ OBJECT \_ HEADER
 
-La estructura de **\_ \_ encabezado de objeto NDIS** empaqueta la información sobre el tipo de objeto, la versión y el tamaño necesaria en muchas estructuras NDIS 6,0.
+La **estructura \_ OBJECT HEADER \_ de NDIS** empaqueta la información de tipo de objeto, versión y tamaño necesaria en muchas estructuras de NDIS 6.0.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,7 +58,7 @@ Especifica el número de revisión de esta estructura.
 **Tamaño**
 </dt> <dd>
 
-Especifica el tamaño total, en bytes, de la estructura NDIS que contiene el **\_ \_ encabezado de objeto NDIS**. Este tamaño incluye el tamaño del miembro **de \_ \_ encabezado de objeto NDIS** y de todos los demás miembros de la estructura.
+Especifica el tamaño total, en bytes, de la estructura NDIS que contiene **el NDIS \_ OBJECT \_ HEADER**. Este tamaño incluye el tamaño del miembro **\_ OBJECT HEADER \_ de NDIS** y de todos los demás miembros de la estructura.
 
 </dd> </dl>
 
@@ -68,10 +68,10 @@ Especifica el tamaño total, en bytes, de la estructura NDIS que contiene el **\
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP con SP3 \[ solo aplicaciones de escritorio\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                       |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                                                        |
-| Encabezado<br/>                   | <dl> <dt>Ntddndis. h (incluye Windot11. h)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Ntddndis.h (incluye Windot11.h)</dt> </dl> |
 
 
 
@@ -79,7 +79,7 @@ Especifica el tamaño total, en bytes, de la estructura NDIS que contiene el **\
 
 <dl> <dt>
 
-[**\_Lista de BSSID de DOT11 \_**](dot11-bssid-list.md)
+[**DOT11 \_ BSSID \_ LIST**](dot11-bssid-list.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: enumeración JET_DbInfo'
-title: Enumeración JET_DbInfo
+description: 'Más información sobre: enumeración JET_DbInfo datos'
+title: JET_DbInfo enumeración
 TOCTitle: JET_DbInfo enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_DbInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfo(v=EXCHG.10)
@@ -48,19 +48,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 39c6c3175c08e4f7644ad4f0b41137e12e84f71d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c364b89ccb50542130c988a643fed594a34e370e5adb5e9d0a13f77eab5b04d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112234"
 ---
-# <a name="jet_dbinfo-enumeration"></a>Enumeración JET_DbInfo
+# <a name="jet_dbinfo-enumeration"></a>JET_DbInfo enumeración
 
-Niveles de información para recuperar información de base de datos.
+Niveles de información para recuperar la información de la base de datos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -99,12 +99,12 @@ public enum JET_DbInfo
 <tr class="odd">
 <td></td>
 <td>Opciones</td>
-<td>Devuelve un <a href="hh579532(v=exchg.10).md">OpenDatabaseGrbit</a>. Indica si la base de datos se abre en modo exclusivo. Si la base de datos está en modo exclusivo, se devolverá <a href="hh579532(v=exchg.10).md">Exclusive</a> , de lo contrario se devuelve cero. No se devuelven otras opciones de grbit de la base de datos para JetAttachDatabase y JetOpenDatabase.</td>
+<td>Devuelve un <a href="hh579532(v=exchg.10).md">objeto OpenDatabaseGrbit.</a> Esto indica si la base de datos se abre en modo exclusivo. Si la base de datos está en modo exclusivo, se devolverá <a href="hh579532(v=exchg.10).md">Exclusive;</a> de lo contrario, se devolverá cero. No se devuelven otras opciones de bits grbit de base de datos para JetAttachDatabase y JetOpenDatabase.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Transacciones</td>
-<td>Devuelve un número uno mayor que el nivel máximo en el que se pueden anidar las transacciones. Si se llama a <a href="dn292105(v=exchg.10).md">JetBeginTransaction (JET_SESID)</a> (en un modo de anidamiento, es decir, en la misma sesión, sin commit o rollback) tantas veces como este valor, se devolverá la última llamada a <a href="hh564840(v=exchg.10).md">TransTooDeep</a> (Int32).</td>
+<td>Devuelve un número uno mayor que el nivel máximo en el que se pueden anidar las transacciones. Si se llama a <a href="dn292105(v=exchg.10).md">JetBeginTransaction(JET_SESID)</a> (de forma anidada, es decir, en la misma sesión, sin confirmación ni reversión) tantas veces como este valor, en la última llamada se devolverá <a href="hh564840(v=exchg.10).md">TransTooDeep</a> (Int32).</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -113,28 +113,28 @@ public enum JET_DbInfo
 </tr>
 <tr class="even">
 <td></td>
-<td>Filesize</td>
+<td>Tamaño</td>
 <td>Devuelve el archivo de la base de datos, en páginas (Int32).</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SpaceOwned</td>
-<td>Devuelve el espacio de la base de datos, en páginas (Int32).</td>
+<td>Devuelve el espacio de propiedad de la base de datos, en páginas (Int32).</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>SpaceAvailable</td>
+<td>Espacio disponible</td>
 <td>Devuelve el espacio disponible en la base de datos, en páginas (Int32).</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>Varios</td>
-<td>Devuelve un objeto <a href="hh538867(v=exchg.10).md">JET_DBINFOMISC</a> .</td>
+<td>Devuelve un <a href="hh538867(v=exchg.10).md">JET_DBINFOMISC</a> objeto .</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DBInUse</td>
-<td>Devuelve un valor booleano que indica si la base de datos está adjunta (booleana).</td>
+<td>Devuelve un valor booleano que indica si la base de datos está asociada (booleano).</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -150,8 +150,8 @@ public enum JET_DbInfo
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

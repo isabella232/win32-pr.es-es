@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118557949"
 ---
-# <a name="__eventproviderregistration-class"></a>\_\_EventProviderRegistration (clase)
+# <a name="__eventproviderregistration-class"></a>\_\_Clase EventProviderRegistration
 
 La **\_ \_ clase del sistema EventProviderRegistration** se usa para registrar proveedores de eventos con Windows Management Instrumentation (WMI).
 
@@ -77,7 +77,7 @@ Ruta de acceso del objeto al proveedor de eventos. Esta propiedad se hereda de [
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Solo los administradores pueden registrar o eliminar un proveedor de eventos mediante la creación de una instancia de [**\_ \_ Win32Provider**](--win32provider.md) y [**\_ \_ EventProviderRegistration**](--eventconsumerproviderregistration.md). La **\_ \_ clase EventProviderRegistration** se deriva de [**\_ \_ ProviderRegistration.**](--providerregistration.md)
 
@@ -85,7 +85,7 @@ Solo los administradores pueden registrar o eliminar un proveedor de eventos med
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
@@ -93,7 +93,7 @@ Solo los administradores pueden registrar o eliminar un proveedor de eventos med
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

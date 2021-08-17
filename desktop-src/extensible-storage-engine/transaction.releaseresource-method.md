@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: método Transaction. ReleaseResource'
-title: Método Transaction. ReleaseResource
+description: Más información sobre el método Transaction.ReleaseResource
+title: Método Transaction.ReleaseResource
 TOCTitle: 'ReleaseResource method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Transaction.ReleaseResource
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.transaction.releaseresource(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 78d3dc358b6c7c5dfe297132fd83f08c64693c85
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c9ca7a00a5c824b9f73db5d9e5f225a772a34e8d0d67f36d17a46958dffa78d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107049"
 ---
-# <a name="transactionreleaseresource-method"></a>Método Transaction. ReleaseResource
+# <a name="transactionreleaseresource-method"></a>Método Transaction.ReleaseResource
 
-Se llama cuando la transacción se desecha mientras está activa. Esto debería revertir la transacción.
+Se llama cuando la transacción se elimina mientras está activa. Esto debería revertir la transacción.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ protected override void ReleaseResource()
 
 [Miembros de transacción](./transaction-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

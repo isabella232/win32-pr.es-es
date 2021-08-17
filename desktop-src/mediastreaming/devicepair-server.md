@@ -1,11 +1,11 @@
 ---
-title: Propiedad del servidor DevicePair (Asptlb. h)
-description: Obtiene el servidor para el par de dispositivo básico activo.
+title: Propiedad DevicePair Server (Asptlb.h)
+description: Obtiene el servidor para el par de dispositivos básico activo.
 ms.assetid: 25FD523F-36C7-4165-BBB2-6A3410D896EF
 keywords:
-- Propiedad de servidor API de streaming de multimedia
-- Propiedad de servidor API de streaming de multimedia, interfaz DevicePair
-- Interfaz DevicePair API de streaming de multimedia, propiedad de servidor
+- Propiedad de servidor Media Streaming API
+- Propiedad de servidor Media Streaming API, interfaz DevicePair
+- Interfaz DevicePair Media Streaming API, propiedad Server
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eec2c28e8118f6cf11e89c7ab4a5ba04abd8b8f5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d0939a27d96de8f2c8ff53ffd7b0bd766292b873450fb138d0877e916c691f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100729"
 ---
-# <a name="devicepairserver-property"></a>DevicePair:: Server (propiedad)
+# <a name="devicepairserver-property"></a>DevicePair::Server, propiedad
 
-Obtiene el servidor para el par de dispositivo básico activo.
+Obtiene el servidor para el par de dispositivos básico activo.
 
 Esta propiedad es de solo lectura.
 
@@ -43,7 +43,7 @@ HRESULT get_Server(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Recibe un objeto [**ActiveBasicDevice**](/previous-versions/windows/desktop/legacy/dn385755(v=vs.85)) que representa el dispositivo de servidor.
+Recibe un [**objeto ActiveBasicDevice**](/previous-versions/windows/desktop/legacy/dn385755(v=vs.85)) que representa el dispositivo del servidor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,11 +51,11 @@ Recibe un objeto [**ActiveBasicDevice**](/previous-versions/windows/desktop/lega
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Asptlb. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Asptlb.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

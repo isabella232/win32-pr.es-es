@@ -1,12 +1,12 @@
 ---
-title: Método WSMan. SessionFlagUseBasic (WSManDisp. h)
-description: Devuelve el valor de la marca de autenticación WSManFlagUseBasic para su uso en el parámetro flags del método WSMan. CreateSession.
+title: Método WSMan.SessionFlagUseBasic (WSManDisp.h)
+description: Devuelve el valor de la marca de autenticación WSManFlagUseBasic para su uso en el parámetro flags del método WSMan.CreateSession.
 ms.assetid: 789ecef9-7871-43af-9d63-018f1d99bd09
 ms.tgt_platform: multiple
 keywords:
-- Método SessionFlagUseBasic Administración remota de Windows
-- Administración remota de Windows método SessionFlagUseBasic, objeto WSMan
-- Administración remota de Windows de objeto WSMan, método SessionFlagUseBasic
+- Método SessionFlagUseBasic Windows administración remota
+- Método SessionFlagUseBasic Windows de administración remota , objeto WSMan
+- Objeto WSMan Windows administración remota, método SessionFlagUseBasic
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41641e0398791ab46c81f71f967f2d43700a2984
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bf908ad4cbe70f9480c23dbc26d5a0593212a285cd541ad70605e990e30792d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117742007"
 ---
-# <a name="wsmansessionflagusebasic-method"></a>WSMan. SessionFlagUseBasic (método)
+# <a name="wsmansessionflagusebasic-method"></a>Método WSMan.SessionFlagUseBasic
 
-El método **wsman. SessionFlagUseBasic** devuelve el valor de la marca de autenticación **WSManFlagUseBasic** para su uso en el parámetro *Flags* del método [**WSMan. createSession**](wsman-createsession.md) . Este método proporciona una sintaxis más eficaz para usar la constante, de modo que los scripts no sean necesarios para establecer un valor constante. Para obtener más información sobre cómo llamar a este método, vea [constantes de sesión](session-constants.md).
+El **método WSMan.SessionFlagUseBasic** devuelve el valor de la marca de autenticación **WSManFlagUseBasic** para su uso en el parámetro *flags* del [**método WSMan.CreateSession.**](wsman-createsession.md) Este método proporciona una sintaxis más eficaz para usar la constante para que los scripts no sean necesarios para establecer un valor constante. Para obtener más información sobre cómo llamar a este método, vea [Constantes de sesión](session-constants.md).
 
-**WSManFlagUseBasic** es una constante de la enumeración **\_ \_ WSManSessionFlags** . Para obtener más información, consulte [**constantes de autenticación**](authentication-constants.md).
+**WSManFlagUseBasic es** una constante en la **\_ \_ enumeración WSManSessionFlags.** Para obtener más información, vea [**Constantes de autenticación**](authentication-constants.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ WSMan.SessionFlagUseBasic( _
 
 <dl> <dt>
 
-*marcas* \[ de enuncia\]
+*flags* \[ out\]
 </dt> <dd>
 
 Valor de la constante.
@@ -54,7 +54,7 @@ Valor de la constante.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,9 +64,9 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 
@@ -78,7 +78,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 [**WSMan**](wsman.md)
 </dt> <dt>
 
-[**De sesión**](session.md)
+[**Sesión**](session.md)
 </dt> </dl>
 
  

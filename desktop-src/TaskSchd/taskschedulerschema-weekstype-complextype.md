@@ -3,7 +3,7 @@ title: weeksType Complex Type
 description: Define el elemento secundario y la información de secuenciación para el elemento Week.
 ms.assetid: c9e8814c-b8f9-426d-943d-ca3efa5d914b
 keywords:
-- weeksType tipo complejo Programador de tareas
+- Tipo complejo weeksType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -50,14 +50,14 @@ Define el elemento secundario y la información de secuenciación para el [**ele
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

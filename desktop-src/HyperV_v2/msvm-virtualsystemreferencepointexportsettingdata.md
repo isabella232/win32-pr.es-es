@@ -1,7 +1,7 @@
 ---
-description: Proporciona información adicional que se va a usar con el método ExportReferencePoint de la \_ clase VirtualSystemReferencePointService de MSVM.
+description: Proporciona información adicional que se usará con el método ExportReferencePoint de la clase Msvm \_ VirtualSystemReferencePointService.
 ms.assetid: 4897fad4-3a3f-47bc-837d-2e36434b3fab
-title: Msvm_VirtualSystemReferencePointExportSettingData (clase)
+title: Msvm_VirtualSystemReferencePointExportSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 65fc16f409fd79782ec4a91f223dfc754563f8bb
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 2b3fc743d8431d76582553979bb25e1269df970d70187c65c2bddd1014834c76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104083570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147948"
 ---
-# <a name="msvm_virtualsystemreferencepointexportsettingdata-class"></a>MSVM \_ VirtualSystemReferencePointExportSettingData (clase)
+# <a name="msvm_virtualsystemreferencepointexportsettingdata-class"></a>Clase Msvm \_ VirtualSystemReferencePointExportSettingData
 
-Proporciona información adicional que se va a usar con el método [**ExportReferencePoint**](msvm-virtualsystemreferencepointservice-exportreferencepoint.md) de la clase [**\_ VirtualSystemReferencePointService de MSVM**](msvm-virtualsystemreferencepointservice.md) .
+Proporciona información adicional que se usará con el [**método ExportReferencePoint**](msvm-virtualsystemreferencepointservice-exportreferencepoint.md) de la clase [**Msvm \_ VirtualSystemReferencePointService.**](msvm-virtualsystemreferencepointservice.md)
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -41,20 +41,20 @@ class Msvm_VirtualSystemReferencePointExportSettingData : CIM_SettingData
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ VirtualSystemReferencePointExportSettingData** tiene estos tipos de miembros:
+La **clase Msvm \_ VirtualSystemReferencePointExportSettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ VirtualSystemReferencePointExportSettingData** tiene estas propiedades.
+La **clase Msvm \_ VirtualSystemReferencePointExportSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
 **BaseReferencePoint**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **cadena**
+Tipo de datos: **Cadena**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -67,13 +67,13 @@ Ruta de acceso del punto de referencia base con respecto a la exportación que s
 **DisksToExport**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **Matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificadores de instancia de WMI de los discos para los que se deben exportar los datos.
+Los iDs de instancia wmi de los discos para los que se deben exportar los datos.
 
 </dd> </dl>
 
@@ -83,10 +83,10 @@ Identificadores de instancia de WMI de los discos para los que se deben exportar
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -95,7 +95,7 @@ Identificadores de instancia de WMI de los discos para los que se deben exportar
 
 <dl> <dt>
 
-[**SettingData de CIM \_**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> </dl>
 
  

@@ -1,12 +1,12 @@
 ---
-title: Propiedad de etiqueta ITsSbTaskInfo
+title: Propiedad ITsSbTaskInfo Label
 description: Recupera la etiqueta que describe el propósito de la tarea.
 ms.assetid: 075de6a4-53b0-43b0-9bca-03bf312fff6e
 ms.tgt_platform: multiple
 keywords:
-- Propiedad de etiqueta Servicios de Escritorio remoto
-- Propiedad etiqueta Servicios de Escritorio remoto, interfaz ITsSbTaskInfo
-- Servicios de Escritorio remoto de la interfaz ITsSbTaskInfo, propiedad label
+- Etiqueta de propiedad Servicios de Escritorio remoto
+- Propiedad Label Servicios de Escritorio remoto , interfaz ITsSbTaskInfo
+- Interfaz ITsSbTaskInfo Servicios de Escritorio remoto , propiedad Label
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e1f85aaea366cf002d4ec1bacce8f29a6aa67fdb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e2414dd83d44add4084a4176f575817875e933f9770039e49b02364bd8103cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138308"
 ---
-# <a name="itssbtaskinfolabel-property"></a>ITsSbTaskInfo:: Label (propiedad)
+# <a name="itssbtaskinfolabel-property"></a>Propiedad ITsSbTaskInfo::Label
 
 Recupera la etiqueta que describe el propósito de la tarea.
 
@@ -44,7 +44,7 @@ HRESULT get_Label(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un puntero a un valor **BSTR** que contiene la etiqueta.
+Puntero a un **valor BSTR** que contiene la etiqueta.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Un puntero a un valor **BSTR** que contiene la etiqueta.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                       |
-| IDL<br/>                      | <dl> <dt>Sbtsv. idl</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Sbtsv.idl</dt> </dl> |
 
 
 

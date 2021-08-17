@@ -1,5 +1,5 @@
 ---
-title: Otras constantes de sesión (WSManDisp. h)
+title: Otras constantes de sesión (WSManDisp.h)
 description: Especifique la codificación, el cifrado y el puerto de nombre de entidad de seguridad de servicio.
 ms.assetid: a921b7bc-1f40-427c-971f-c0bc9c9f6887
 ms.tgt_platform: multiple
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 236e69d80db2ad30b8cc2934b6b2016d7eecbed6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fcd9d2cf44063dfb1a7ec1bfcbb0fe785d1747d34e84ef2c2d8c78598e6e6b0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117743330"
 ---
 # <a name="other-session-constants"></a>Otras constantes de sesión
 
-Constantes, enumeradas en la lista siguiente, en la enumeración **\_ \_ WSManSessionFlags** que especifican la codificación, el cifrado y el puerto de nombre de entidad de seguridad de servicio.
+Constantes, enumeradas en la lista siguiente, en la enumeración **\_ \_ WSManSessionFlags** que especifican el puerto de codificación, cifrado y nombre de entidad de seguridad de servicio.
 
 <dl> <dt>
 
@@ -39,7 +39,7 @@ Constantes, enumeradas en la lista siguiente, en la enumeración **\_ \_ WSManSe
 
 Envía la solicitud en UTF8 en lugar de UTF16.
 
-El método de scripting asociado es [**WSMan. SessionFlagUTF8**](wsman-sessionflagutf8.md) y el método de C++ es [**IWSManEx. SessionFlagUTF8**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-sessionflagutf8).
+El método de scripting asociado es [**WSMan.SessionFlagUTF8**](wsman-sessionflagutf8.md) y el método de C++ [**es IWSManEx.SessionFlagUTF8.**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-sessionflagutf8)
 
 
 </dt> </dl> </dd> <dt>
@@ -52,9 +52,9 @@ El método de scripting asociado es [**WSMan. SessionFlagUTF8**](wsman-sessionfl
 
 
 
-No Cifre los mensajes enviados a través de la red. Esta configuración solo se permite si el [*agente de escucha*](windows-remote-management-glossary.md) está configurado de modo que **AllowUnencrypted** esté establecido en **true**.
+No cifre los mensajes enviados a través de la red. Esta opción solo se permite si el [*agente de escucha*](windows-remote-management-glossary.md) está configurado para que **AllowUnencrypted** se establezca en **True.**
 
-El método de scripting asociado es [**WSMan. SessionFlagNoEncryption**](wsman-sessionflagnoencryption.md) y el método de C++ es [**IWSManEx. SessionFlagNoEncryption**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-sessionflagnoencryption).
+El método de scripting asociado es [**WSMan.SessionFlagNoEncryption y**](wsman-sessionflagnoencryption.md) el método de C++ [**es IWSManEx.SessionFlagNoEncryption.**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-sessionflagnoencryption)
 
 
 </dt> </dl> </dd> <dt>
@@ -67,9 +67,9 @@ El método de scripting asociado es [**WSMan. SessionFlagNoEncryption**](wsman-s
 
 
 
-Especifique el puerto de nombre de entidad de seguridad de servicio (SPN) al conectarse directamente al hardware de BMC remoto, también conocido como conexión [*fuera de banda*](windows-remote-management-glossary.md) . Dado que el equipo servidor WinRM y el hardware de BMC pueden compartir la misma dirección IP, esta marca indica que se debe usar el número de puerto de SPN para determinar si la conexión es al servicio o directamente al BMC. Para obtener más información, vea [formatos de nombre para SPN únicos](/windows/desktop/AD/name-formats-for-unique-spns).
+Especifique el puerto de nombre de entidad de seguridad de servicio (SPN) al conectarse directamente al hardware de BMC remoto, también conocido como conexión fuera [*de*](windows-remote-management-glossary.md) banda. Dado que tanto el equipo del servidor WinRM como el hardware de BMC pueden compartir la misma dirección IP, esta marca indica que el número de puerto de SPN debe usarse para determinar si la conexión es al servicio o directamente al BMC. Para obtener más información, vea [Formatos de nombre para SPN únicos.](/windows/desktop/AD/name-formats-for-unique-spns)
 
-El método de scripting asociado es [**WSMan. SessionFlagEnableSPNServerPort**](wsman-sessionflagenablespnserverport.md) y el método de C++ es [**IWSManEx. SessionFlagEnableSPNServerPort**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-sessionflagenablespnserverport).
+El método de scripting asociado es [**WSMan.SessionFlagEnableSPNServerPort**](wsman-sessionflagenablespnserverport.md) y el método de C++ [**es IWSManEx.SessionFlagEnableSPNServerPort.**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-sessionflagenablespnserverport)
 
 
 </dt> </dl> </dd> <dt>
@@ -95,8 +95,8 @@ Envía la solicitud en UTF16.
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
 
 
 

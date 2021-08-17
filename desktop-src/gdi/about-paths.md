@@ -16,7 +16,7 @@ ms.locfileid: "119355235"
 Una ruta de acceso es uno de los objetos asociados a un contexto de dispositivo (DC). Sin embargo, a diferencia de los objetos predeterminados (el lápiz, el pincel y la fuente) que forman parte de cualquier controlador de dominio nuevo, no hay ninguna ruta de acceso predeterminada. Para obtener más información sobre los controlador de dominio, vea [Contextos de dispositivo.](device-contexts.md)
 
 -   [Creación de rutas de acceso](path-creation.md)
--   [Rutas de acceso esquemateadas y rellenas](outlined-and-filled-paths.md)
+-   [Rutas de acceso con contorno y rellenas](outlined-and-filled-paths.md)
 -   [Transformaciones de rutas de acceso](transformations-of-paths.md)
 -   [Trazados de recorte y efectos gráficos](clip-paths-and-graphic-effects.md)
 -   [Conversión de rutas de acceso a regiones](conversion-of-paths-to-regions.md)

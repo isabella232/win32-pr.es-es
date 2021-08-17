@@ -1,25 +1,25 @@
 ---
-description: Al agregar compatibilidad con IPv6, debe asegurarse de que la aplicación define las estructuras de datos con el tamaño adecuado.
+description: Al agregar compatibilidad con IPv6, debe asegurarse de que la aplicación define estructuras de datos con el tamaño correcto.
 ms.assetid: 2bf353e2-38d5-462c-9e6c-65886b617215
-title: Cambiar las estructuras de datos para IPv6 Winsock Appications
+title: Cambio de estructuras de datos para aplicaciones Winsock de IPv6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2c91e19ed733d111bd4e12d824da6ee1a988e9e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2999c0d0c5a335c1367165c227fc1aad805579db5a790a19d316a1624e922947
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117741555"
 ---
-# <a name="changing-data-structures-for-ipv6-winsock-appications"></a>Cambiar las estructuras de datos para IPv6 Winsock Appications
+# <a name="changing-data-structures-for-ipv6-winsock-appications"></a>Cambio de estructuras de datos para aplicaciones Winsock de IPv6
 
-Al agregar compatibilidad con IPv6, debe asegurarse de que la aplicación define las estructuras de datos con el tamaño adecuado. El tamaño de una dirección IPv6 es mucho mayor que una dirección IPv4. Las estructuras que están codificadas de forma rígida para controlar el tamaño de una dirección IPv4 al almacenar una dirección IP provocarán problemas en la aplicación y se deben modificar.
+Al agregar compatibilidad con IPv6, debe asegurarse de que la aplicación define estructuras de datos con el tamaño correcto. El tamaño de una dirección IPv6 es mucho mayor que una dirección IPv4. Las estructuras codificadas de forma segura para controlar el tamaño de una dirección IPv4 al almacenar una dirección IP provocarán problemas en la aplicación y se deben modificar.
 
 Procedimiento recomendado
 
-El mejor enfoque para asegurarse de que las estructuras tienen el tamaño correcto es usar la estructura de [**\_ almacenamiento de SOCKADDR**](/previous-versions/windows/desktop/legacy/ms740504(v=vs.85)) . La estructura de **\_ almacenamiento de SOCKADDR** es independiente de la versión de la dirección IP. Cuando la estructura de **\_ almacenamiento de SOCKADDR** se usa para almacenar direcciones IP, las direcciones IPv4 e IPv6 se pueden controlar correctamente con una base de código.
+El mejor enfoque para asegurarse de que las estructuras tienen el tamaño correcto es usar la estructura [**DE ALMACENAMIENTO \_ SOCKADDR.**](/previous-versions/windows/desktop/legacy/ms740504(v=vs.85)) La **estructura SOCKADDR \_ STORAGE** es independiente de la versión de la dirección IP. Cuando se usa la estructura **SOCKADDR \_ STORAGE** para almacenar direcciones IP, las direcciones IPv4 e IPv6 se pueden controlar correctamente con una base de código.
 
-En el ejemplo siguiente, que es un extracto tomado del archivo Server. c que se encuentra en el Apéndice B, se identifica un uso adecuado de la estructura de **\_ almacenamiento de SOCKADDR** . Observe que la estructura, cuando se usa correctamente como se muestra en este ejemplo, controla correctamente una dirección IPv4 o IPv6.
+En el ejemplo siguiente, que es un extracto tomado del archivo Server.c que se encuentra en el Apéndice B, se identifica un uso adecuado de la estructura DE ALMACENAMIENTO **DE SOCKADDR. \_** Observe que la estructura, cuando se usa correctamente como se muestra en este ejemplo, controla correctamente una dirección IPv4 o IPv6.
 
 
 ```C++
@@ -76,27 +76,27 @@ int main(int argc, char **argv)
 
 
 > [!Note]  
-> La estructura de [**\_ almacenamiento de SOCKADDR**](/previous-versions/windows/desktop/legacy/ms740504(v=vs.85)) es nueva en Windows XP.
+> La [**estructura SOCKADDR \_ STORAGE**](/previous-versions/windows/desktop/legacy/ms740504(v=vs.85)) es nueva para Windows XP.
 
  
 
 Código que se debe evitar
 
-Normalmente, muchas aplicaciones usan la estructura [**sockaddr**](sockaddr-2.md) para almacenar direcciones independientes del protocolo o la **sockaddr \_ en** la estructura de las direcciones IP. Ni la estructura sockaddr ni la **sockaddr \_ en** la estructura son lo suficientemente grandes como para contener las direcciones IPv6 y, por tanto, las dos son insuficientes si la aplicación va a ser compatible con IPv6.
+Normalmente, muchas aplicaciones usaban la estructura [**sockaddr**](sockaddr-2.md) para almacenar direcciones independientes del protocolo o **el sockaddr \_** en la estructura de las direcciones IP. Ni la estructura sockaddr ni la estructura **sockaddr \_** en la estructura son lo suficientemente grandes como para contener direcciones IPv6 y, por tanto, ambas son insuficientes si la aplicación va a ser compatible con IPv6.
 
-Tarea de codificación
+Tarea De codificación
 
-**Para modificar la base de código existente de IPv4 a IPv4 e IPv6: interoperabilidad**
+**Para modificar la base de código existente de IPv4 a interoperabilidad IPv4 e IPv6**
 
-1.  Adquiera la utilidad Checkv4.exe. La utilidad se incluye con el kit de desarrollo de software (SDK) de Microsoft Windows, que está disponible a través de su suscripción a MSDN o desde la web como descarga.
-2.  Ejecute la utilidad Checkv4.exe en el código. Obtenga información acerca de cómo ejecutar la utilidad Checkv4.exe en los archivos de la sección sobre [el uso de la utilidad Checkv4.exe](using-the-checkv4-exe-utility-2.md).
-3.  La utilidad le alerta sobre el uso de **sockaddr** o **sockaddr \_ en** las estructuras y proporciona recomendaciones sobre cómo reemplazar con el [**\_ almacenamiento sockaddr**](/previous-versions/windows/desktop/legacy/ms740504(v=vs.85))de la estructura compatible con IPv6.
-4.  Reemplace todas las instancias de este tipo, y el código asociado, según corresponda, para utilizar la estructura de **\_ almacenamiento de SOCKADDR** .
+1.  Adquiera la utilidad Checkv4.exe. La utilidad se incluye con el Kit de desarrollo de software (SDK) de Microsoft Windows, que está disponible a través de su suscripción a MSDN o desde la web como descarga.
+2.  Ejecute la utilidad Checkv4.exe en el código. Obtenga información sobre cómo ejecutar la utilidad Checkv4.exe en los archivos en la sección Uso de [la utilidad Checkv4.exe .](using-the-checkv4-exe-utility-2.md)
+3.  La utilidad le avisa del uso de **sockaddr** o **sockaddr \_** en estructuras y proporciona recomendaciones sobre cómo reemplazar por la estructura compatible con IPv6 [**SOCKADDR \_ STORAGE**](/previous-versions/windows/desktop/legacy/ms740504(v=vs.85)).
+4.  Reemplace estas instancias y el código asociado según corresponda para usar la estructura **SOCKADDR \_ STORAGE.**
 
-Como alternativa, puede buscar en el código base las instancias de **sockaddr** y **sockaddr \_ en** las estructuras y cambiar todo el uso (y otro código asociado, según corresponda) a la estructura de **\_ almacenamiento sockaddr** .
+Como alternativa, puede buscar en la base de código instancias de **sockaddr** y **sockaddr \_** en estructuras, y cambiar todo ese uso (y otro código asociado, según corresponda) a la estructura **SOCKADDR \_ STORAGE.**
 
 > [!Note]  
-> Las estructuras de **\_ almacenamiento** **addrinfo** y SOCKADDR incluyen los miembros de la familia de protocolos y direcciones (familia **AI \_** y **\_ familia SS**), respectivamente. RFC 2553 especifica el miembro de la **\_ familia de AI** de [**addrinfo**](/windows/win32/api/ws2def/ns-ws2def-addrinfoa) como int, mientras que la **\_ familia SS** se especifica como un valor corto; como tal, una copia directa entre esos miembros produce un error del compilador.
+> Las **estructuras addrinfo** y **SOCKADDR \_ STORAGE** incluyen los miembros de la familia de protocolos y direcciones **(familia ai \_** y **ss \_**), respectivamente. RFC 2553 especifica el miembro de la familia **\_ ai** de [**addrinfo**](/windows/win32/api/ws2def/ns-ws2def-addrinfoa) como int, mientras que la familia **\_ ss** se especifica como una corta; por lo tanto, una copia directa entre esos miembros produce un error del compilador.
 
  
 
@@ -104,22 +104,22 @@ Como alternativa, puede buscar en el código base las instancias de **sockaddr**
 
 <dl> <dt>
 
-[Guía de IPv6 para aplicaciones de Windows Sockets](ipv6-guide-for-windows-sockets-applications-2.md)
+[Guía de IPv6 para Windows sockets](ipv6-guide-for-windows-sockets-applications-2.md)
 </dt> <dt>
 
-[Sockets de doble pila para aplicaciones Winsock de IPv6](dual-stack-sockets.md)
+[Sockets de pila doble para aplicaciones Winsock IPv6](dual-stack-sockets.md)
 </dt> <dt>
 
-[Llamadas de función para aplicaciones Winsock de IPv6](function-calls-2.md)
+[Llamadas de función para aplicaciones IPv6 Winsock](function-calls-2.md)
 </dt> <dt>
 
-[Uso de direcciones IPv4 codificadas](use-of-hardcoded-ipv4-addresses-2.md)
+[Uso de direcciones IPv4 codificadas de forma rígida](use-of-hardcoded-ipv4-addresses-2.md)
 </dt> <dt>
 
-[Problemas de la interfaz de usuario para las aplicaciones Winsock de IPv6](user-interface-issues-2.md)
+[Interfaz de usuario problemas de aplicaciones IPv6 Winsock](user-interface-issues-2.md)
 </dt> <dt>
 
-[Protocolos subyacentes para aplicaciones Winsock de IPv6](underlying-protocols-2.md)
+[Protocolos subyacentes para aplicaciones IPv6 Winsock](underlying-protocols-2.md)
 </dt> </dl>
 
  

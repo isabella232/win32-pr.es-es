@@ -14,21 +14,21 @@ ms.locfileid: "118928654"
 ---
 # <a name="l-rpc"></a>L (RPC)
 
-[A](a-glos.md) [B](b-glos.md) [C](c-glos.md) [D](d-glos.md) [E](e-glos.md) [F](f-glos.md) G H [I](i-glos.md) J K L M [N](m-glos.md) [O](n-glos.md) [](o-glos.md) [P](p-glos.md) [Q](q.md) [R](r-glos.md) [S](s-glos.md) [T](t-glos.md) [U](u-glos.md) [V](v-glos.md) [W](w-glos.md) X Y Z
+[A](a-glos.md) [B](b-glos.md) [C](c-glos.md) [D](d-glos.md) [E](e-glos.md) [F](f-glos.md) G H [I](i-glos.md) J K L M [N](m-glos.md) [O](n-glos.md) [](o-glos.md) [P P](p-glos.md) [Q](q.md) [R](r-glos.md) [S](s-glos.md) [T](t-glos.md) [U](u-glos.md) [V](v-glos.md) [W](w-glos.md) X Y Z
 
 <dl> <dt>
 
 <span id="_rpc_lrpc_glos"></span><span id="_RPC_LRPC_GLOS"></span>**llamada a procedimiento remoto local (LRPC)**
 </dt> <dd>
 
-Llamada a procedimiento remoto a otro proceso en el mismo equipo que el proceso de llamada.
+Llamada de procedimiento remoto a otro proceso en el mismo equipo que el proceso de llamada.
 
 </dd> <dt>
 
 <span id="_rpc_locator_glos"></span><span id="_RPC_LOCATOR_GLOS"></span>**Localizador**
 </dt> <dd>
 
-Microsoft Windows proveedor de servicios de nombres. Consulte también [*el servicio de nombres*](n-glos.md).
+Microsoft Windows proveedor de servicios de nombre. Consulte también [*el servicio de nombres*](n-glos.md).
 
 </dd> </dl>
 

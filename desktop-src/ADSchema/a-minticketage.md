@@ -27,7 +27,7 @@ Este atributo determina el período de tiempo mínimo, en horas, que se puede us
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Min-Ticket-Age                       |
 | Ldap-Display-Name | minTicketAge                         |
@@ -36,7 +36,7 @@ Este atributo determina el período de tiempo mínimo, en horas, que se puede us
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.80                |
 | System-Id-Guid    | bf9679c4-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Intervalo**](s-interval.md)       |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -53,14 +53,14 @@ Este atributo determina el período de tiempo mínimo, en horas, que se puede us
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
 | Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Es de un solo valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
@@ -74,14 +74,14 @@ Este atributo determina el período de tiempo mínimo, en horas, que se puede us
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
 | Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Es de un solo valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
@@ -95,14 +95,14 @@ Este atributo determina el período de tiempo mínimo, en horas, que se puede us
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
 | Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Es de un solo valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
@@ -116,14 +116,14 @@ Este atributo determina el período de tiempo mínimo, en horas, que se puede us
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
 | Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Es de un solo valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
@@ -137,14 +137,14 @@ Este atributo determina el período de tiempo mínimo, en horas, que se puede us
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
 | Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Es de un solo valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
@@ -158,14 +158,14 @@ Este atributo determina el período de tiempo mínimo, en horas, que se puede us
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
 | Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Es de un solo valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |

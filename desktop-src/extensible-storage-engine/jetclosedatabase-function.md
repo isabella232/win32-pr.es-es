@@ -32,7 +32,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jetclosedatabase-function"></a>JetCloseDatabase (Función)
 
-La **función JetCloseDatabase** cierra un archivo de base de datos que se abrió anteriormente [con JetOpenDatabase](./jetopendatabase-function.md).
+La **función JetCloseDatabase** cierra un archivo de base de datos que se abrió previamente [con JetOpenDatabase](./jetopendatabase-function.md).
 
 ```cpp
     JET_ERR JET_API JetCloseDatabase(
@@ -101,7 +101,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 <td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Server</strong></p></td>
+<td><p><strong>Servidor</strong></p></td>
 <td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">

@@ -46,7 +46,7 @@ HRESULT SetWorldViewRH(
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntero a una [**D3DXMATRIX**](d3dxmatrix.md) que contiene una transformación mundial. Si **es NULL,** la matriz de identidad se usa para la transformación del mundo.
+Puntero a [**D3DXMATRIX que**](d3dxmatrix.md) contiene una transformación del mundo. Si **es NULL,** la matriz de identidad se usa para la transformación del mundo.
 
 </dd> <dt>
 
@@ -65,9 +65,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor. D3DERR \_ INVALIDCALL
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se requiere una llamada a este método (o a [**ID3DXSprite::SetWorldViewLH**](id3dxsprite--setworldviewlh.md)) si el sprite se representará con el valor de marca [BACKTOFRONT D3DXSprite \_ \_ HISTOGRAM,](d3dxsprite.md)D3DXSprite \_ \_ SORT DEPTH \_ FRONTTOBACK o \_ D3DXSprite \_ \_ SORT DEPTH \_ BACKTOFRONT en \_ [**ID3DXSprite::Begin**](id3dxsprite--begin.md).
+Se requiere una llamada a este método (o a [**ID3DXSprite::SetWorldViewLH)**](id3dxsprite--setworldviewlh.md)si el sprite se representará con el valor de marca [BACKTOFRONT D3DXSprite \_ \_ HISTOGRAM,](d3dxsprite.md)D3DXSprite \_ \_ SORT DEPTH \_ FRONTTOBACK o \_ D3DXSprite \_ \_ SORT DEPTH \_ BACKTOFRONT en \_ [**ID3DXSprite::Begin**](id3dxsprite--begin.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ Se requiere una llamada a este método (o a [**ID3DXSprite::SetWorldViewLH**](id
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

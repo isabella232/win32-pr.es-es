@@ -1,9 +1,9 @@
 ---
-title: Tipo simple de nonEmptyStringType
-description: Define los valores utilizados para una cadena de texto que no está vacía.
+title: Tipo simple nonEmptyStringType
+description: Define los valores usados para una cadena de texto no vacía.
 ms.assetid: cb3b1ca6-4531-467c-a27a-b27a62233514
 keywords:
-- Programador de tareas de tipo simple nonEmptyString
+- Tipo simple nonEmptyString Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ab9c9fa84c510fc4e67f6f63664a58d6d4093709
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6359240c2baba14460ab4478c31c490725646130ea2181efdcb8e92a94090d5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117758421"
 ---
-# <a name="nonemptystringtype-simple-type"></a>Tipo simple de nonEmptyStringType
+# <a name="nonemptystringtype-simple-type"></a>Tipo simple nonEmptyStringType
 
-Define los valores utilizados para una cadena de texto que no está vacía.
+Define los valores usados para una cadena de texto no vacía.
 
 ``` syntax
 <xs:simpleType name="nonEmptyString">
@@ -38,7 +38,7 @@ Define los valores utilizados para una cadena de texto que no está vacía.
 
 ## <a name="enumeration-values"></a>Valores de enumeración
 
-El tipo simple **nonEmptyString** define el siguiente valor.
+El **tipo simple nonEmptyString** define el valor siguiente.
 
 
 
@@ -54,8 +54,8 @@ El tipo simple **nonEmptyString** define el siguiente valor.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

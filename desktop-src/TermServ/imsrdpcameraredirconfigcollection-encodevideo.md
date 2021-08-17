@@ -1,6 +1,6 @@
 ---
 title: Propiedad EncodeVideo de la interfaz IMsRdpCameraRedirConfigCollection
-description: Especifica si la secuencia de vídeo está codificada en H.264 o no.
+description: Especifica si la secuencia de vídeo está codificada o no en H.264.
 ms.tgt_platform: multiple
 keywords:
 - Codificación de la propiedad EncodeVideo Servicios de Escritorio remoto
@@ -27,11 +27,11 @@ ms.locfileid: "119475965"
 ---
 # <a name="imsrdpcameraredirconfigcollectionencodevideo-property"></a>IMsRdpCameraRedirConfigCollection::EncodeVideo, propiedad
 
-Especifica si la secuencia de vídeo está codificada en H.264 o no.
+Especifica si la secuencia de vídeo está codificada o no en H.264.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```C++
 HRESULT put_EncodeVideo(
@@ -45,7 +45,7 @@ HRESULT get_EncodeVideo(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Valor que indica si la secuencia de vídeo está codificada o no en H.264.
+Valor que indica si la secuencia de vídeo está codificada en H.264 o no.
 
 ## <a name="requirements"></a>Requisitos
 

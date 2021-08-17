@@ -1,9 +1,9 @@
 ---
 title: GetRenderTargetSampleCount
-description: Obtiene el número de muestras para un destino de representación.
+description: Obtiene el número de ejemplos para un destino de representación.
 ms.assetid: e813134e-c58c-4845-b519-c1074993801e
 keywords:
-- HLSL de GetRenderTargetSampleCount
+- GetRenderTargetSampleCount HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 96c159a2ed63684b4bad2cbc6fa789c2dbd76edf
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 54414d7af326c1a069585f9d5deaa3e728d421a65490c5b9f5322b98e06f531e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104487162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120139"
 ---
 # <a name="getrendertargetsamplecount"></a>GetRenderTargetSampleCount
 
-Obtiene el número de muestras para un destino de representación.
+Obtiene el número de ejemplos para un destino de representación.
 
 
 
-| *Uint* GetRenderTargetSampleCount() |
+| *UINT* GetRenderTargetSampleCount() |
 |-------------------------------------|
 
 
@@ -39,7 +39,7 @@ Obtiene el número de muestras para un destino de representación.
 
 | Elemento                                                                                 | Descripción |
 |--------------------------------------------------------------------------------------|-------------|
-| <span id="None"></span><span id="none"></span><span id="NONE"></span>Ninguna<br/> |             |
+| <span id="None"></span><span id="none"></span><span id="NONE"></span>Ninguno<br/> |             |
 
 
 
@@ -47,13 +47,13 @@ Obtiene el número de muestras para un destino de representación.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Número de muestras.
+Número de ejemplos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use esta función y [**GetRenderTargetSamplePosition**](dx-graphics-hlsl-getrendertargetsampleposition.md) para averiguar el número y la posición de las ubicaciones de muestreo para un destino de representación.
+Use esta función y [**GetRenderTargetSamplePosition para**](dx-graphics-hlsl-getrendertargetsampleposition.md) averiguar el número y la posición de las ubicaciones de muestreo de un destino de representación.
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -61,9 +61,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                        | Compatible |
 |---------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 4](dx-graphics-hlsl-sm4.md) y versiones posteriores | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)           | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)           | no        |
+| [Modelos de sombreador 4](dx-graphics-hlsl-sm4.md) y superiores | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)           | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)           | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)           | No        |
 
 
@@ -74,7 +74,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

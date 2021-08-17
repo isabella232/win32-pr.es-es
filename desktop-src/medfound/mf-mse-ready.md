@@ -1,7 +1,7 @@
 ---
-description: Define los diferentes Estados preparados de la extensión de origen multimedia.
+description: Define los distintos estados listos de la extensión de origen de medios.
 ms.assetid: 7455B92F-CC2D-4743-935D-F5EBFD834397
-title: Enumeración MF_MSE_READY
+title: MF_MSE_READY enumeración
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: bff2155a2cb2cb21d4c25d868f95472f47f15b1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 28f476c32abbffa8faadd8a7c527f07d81632eee10f1c6cfc54eacc926b4f4e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104581"
 ---
-# <a name="mf_mse_ready-enumeration"></a>\_ \_ Enumeración preparada para MSE de MF
+# <a name="mf_mse_ready-enumeration"></a>Enumeración \_ MF MSE \_ READY
 
-Define los diferentes Estados preparados de la extensión de origen multimedia.
+Define los distintos estados listos de la extensión de origen de medios.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -41,24 +41,24 @@ typedef enum _MF_MSE_READY {
 
 <dl> <dt>
 
-<span id="MF_MSE_READY_CLOSED"></span><span id="mf_mse_ready_closed"></span>**MF \_ MSE \_ preparado \_ cerrado**
+<span id="MF_MSE_READY_CLOSED"></span><span id="mf_mse_ready_closed"></span>**MF \_ MSE \_ READY \_ CLOSED**
 </dt> <dd>
 
-El origen del medio está cerrado.
+El origen de medios está cerrado.
 
 </dd> <dt>
 
-<span id="MF_MSE_READY_OPEN"></span><span id="mf_mse_ready_open"></span>**MF \_ MSE \_ listo \_ abierto**
+<span id="MF_MSE_READY_OPEN"></span><span id="mf_mse_ready_open"></span>**MF \_ MSE \_ READY \_ OPEN**
 </dt> <dd>
 
-El origen del medio está abierto.
+El origen multimedia está abierto.
 
 </dd> <dt>
 
-<span id="MF_MSE_READY_ENDED"></span><span id="mf_mse_ready_ended"></span>**MF \_ MSE \_ preparado \_ terminado**
+<span id="MF_MSE_READY_ENDED"></span><span id="mf_mse_ready_ended"></span>**MF \_ MSE \_ READY \_ ENDED**
 </dt> <dd>
 
-El origen de los medios ha finalizado.
+El origen del medio ha finalizado.
 
 </dd> </dl>
 
@@ -66,19 +66,19 @@ El origen de los medios ha finalizado.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Enumeraciones de Media Foundation](media-foundation-enumerations.md)
+[Media Foundation enumeraciones](media-foundation-enumerations.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: atributo de hora de propagación de MS-DNS
-description: Atributo que se usa para definir en segundos el tiempo esperado necesario para propagar los cambios de zona a través de Active Directory.
+title: Atributo ms-DNS-Propagation-Time
+description: Atributo que se usa para definir en segundos el tiempo esperado necesario para propagar los cambios de zona a través Active Directory.
 ms.assetid: ca48d956-f88f-440f-bbc9-23015130f393
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de tiempo de propagación de MS-DNS
-- msDN-PropagationTime atributo AD Schema
+- Esquema de AD del atributo ms-DNS-Propagation-Time
+- Esquema de AD del atributo msDNS-PropagationTime
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6885d9dabb1d5d41cec20cc6922671f54b1a8a1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: aaf2dca0a2370dbddee78641d07d5bfe2068856b62e1ce42d1779e137f731bda
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119297585"
 ---
-# <a name="ms-dns-propagation-time-attribute"></a>atributo de hora de propagación de MS-DNS
+# <a name="ms-dns-propagation-time-attribute"></a>Atributo ms-DNS-Propagation-Time
 
-Atributo que se usa para definir en segundos el tiempo esperado necesario para propagar los cambios de zona a través de Active Directory.
+Atributo que se usa para definir en segundos el tiempo esperado necesario para propagar los cambios de zona a través Active Directory.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DNS-propagación-hora              |
-| Nombre para mostrar de LDAP | msDN: PropagationTime                |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DNS-Propagation-Time              |
+| Ldap-Display-Name | msDNS-PropagationTime                |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2147              |
-| System-ID-GUID    | ba340d47-2181-4ca0-a2f6-fae4479dab2a |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | ba340d47-2181-4ca0-a2f6-fae4479dab2a |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -48,15 +48,15 @@ Atributo que se usa para definir en segundos el tiempo esperado necesario para p
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000008                               |

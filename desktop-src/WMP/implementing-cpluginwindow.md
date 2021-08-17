@@ -3,8 +3,8 @@ title: Implementación de CPluginWindow
 description: Implementación de CPluginWindow
 ms.assetid: b22723ce-f373-43b1-a098-86a8dbcf485e
 keywords:
-- Reproductor de Windows Media complementos, clase CPluginWindow
-- plug-ins,CPluginWindow (clase)
+- Reproductor de Windows Media complementos,CPluginWindow (clase)
+- complementos, CPluginWindow (clase)
 - complementos de interfaz de usuario, clase CPluginWindow
 - Complementos de interfaz de usuario, clase CPluginWindow
 - CPluginWindow (clase)
@@ -20,13 +20,13 @@ ms.locfileid: "117748140"
 ---
 # <a name="implementing-cpluginwindow"></a>Implementación de CPluginWindow
 
-La clase CPluginWindow proporciona la interfaz de usuario al complemento. En el caso del complemento Search UI, esta clase  contiene el código del botón Buscar y el código que inicia la página de búsqueda cuando se hace clic en el botón.
+La clase CPluginWindow proporciona la interfaz de usuario al complemento. En el caso del complemento de interfaz de usuario  de búsqueda, esta clase contiene el código del botón Buscar y el código que inicia la página de búsqueda cuando se hace clic en el botón.
 
 El asistente proporciona una implementación básica de CPluginWindow en el archivo de encabezado CPluginWindow.h. Para que todo sea sencillo, el complemento search ui modificará este archivo directamente, aunque normalmente se colocarían adiciones extensas en un archivo CPluginWindow.cpp independiente.
 
 En las secciones siguientes se describe lo que debe hacer para implementar CPluginWindow:
 
--   [El mapa de mensajes](the-message-map.md)
+-   [Mapa de mensajes](the-message-map.md)
 -   [The Constructor](the-constructor.md)
 -   [El método OnPaint](the-onpaint-method.md)
 -   [El método OnCreate](the-oncreate-method.md)

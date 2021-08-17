@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 53eab5993ee737efe866c73a550e6b216edaac3b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a817ac4e092eb9d8be2e4e2da02af051ae957dc97655b45e4e48dbe85b115ca3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119121508"
 ---
 # <a name="id3dxeffectstatemanagersetpixelshaderconstanti-method"></a>Método ID3DXEffectStateManager::SetPixelShaderConstantI
 
@@ -89,7 +89,7 @@ El método implementado por el usuario debe devolver S \_ OK. Si se produce un e
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

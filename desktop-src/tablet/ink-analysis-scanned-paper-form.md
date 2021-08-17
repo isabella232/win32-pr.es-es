@@ -20,7 +20,7 @@ En este ejemplo se muestra cómo usar Análisis de entrada de lápiz para crear 
 En esta aplicación de ejemplo se muestran las siguientes características de Ink Analysis API y Windows Forms Ink Controls:
 
 -   Carga de un formulario de papel digitalizado. El ejemplo importa el formulario de una imagen en .png formato.
--   Recopilar y representar la entrada manuscrita sobre el formulario digitalizado.
+-   Recopilar y representar la entrada de lápiz sobre el formulario digitalizado.
 -   Usar un [objeto InkAnalyzer](/previous-versions/ms583671(v=vs.100)) para analizar la escritura a mano.
 -   Generar objetos [AnalysisHintNode para](/previous-versions/ms573018(v=vs.100)) mejorar los resultados de escritura a mano.
 -   Rellenar cuadros de texto a partir de sugerencias de análisis.
@@ -28,12 +28,12 @@ En esta aplicación de ejemplo se muestran las siguientes características de In
 
 ## <a name="project-references"></a>Referencias del proyecto
 
-El ejemplo está disponible como una aplicación Windows Forms o Windows Presentation Foundation aplicación. La versión Windows Forms hace referencia a:
+El ejemplo está disponible como una Windows forms o Windows Presentation Foundation aplicación. La versión Windows Forms hace referencia a:
 
 -   Microsoft.Ink.dll
 -   Microsoft.Ink.Analysis.dll
 
-La Windows Presentation Foundation hace referencia a IAWinFX.dll además de los archivos DLL Windows Presentation Foundation principales.
+La Windows Presentation Foundation referencia a IAWinFX.dll además de los archivos DLL Windows Presentation Foundation principales.
 
 > [!Note]  
 > La Windows Presentation Foundation de este ejemplo (que se encuentra en el directorio XAML) requiere que las extensiones de Windows Presentation Foundation para Microsoft Visual Studio 2005 se instalen en el sistema.

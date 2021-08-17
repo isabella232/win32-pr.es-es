@@ -1,7 +1,7 @@
 ---
 description: Determina el producto cruzado de dos vectores 3D.
 ms.assetid: c9623f35-c8fc-4fbe-87b6-0e5bb8ebd5e8
-title: Función D3DXVec3Cross (D3dx9math. h)
+title: Función D3DXVec3Cross (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ba0d8a80690f43d5f8e9f6df55aa3b2e0db23dc2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3fdf2a5d3c3771056f169900df519d90a183798d6f5c60df0904444dbce5fd9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122579"
 ---
-# <a name="d3dxvec3cross-function"></a>D3DXVec3Cross función)
+# <a name="d3dxvec3cross-function"></a>Función D3DXVec3Cross
 
 Determina el producto cruzado de dos vectores 3D.
 
@@ -47,25 +47,25 @@ D3DXVECTOR3* D3DXVec3Cross(
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntero a la estructura [**D3DXVECTOR3**](d3dxvector3.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXVECTOR3**](d3dxvector3.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*pV1* \[ de\]
+*pV1* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a una estructura de [**D3DXVECTOR3**](d3dxvector3.md) de origen.
+Puntero a una estructura [**D3DXVECTOR3 de**](d3dxvector3.md) origen.
 
 </dd> <dt>
 
-*pV2* \[ de\]
+*pV2* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a una estructura de [**D3DXVECTOR3**](d3dxvector3.md) de origen.
+Puntero a una estructura [**D3DXVECTOR3 de**](d3dxvector3.md) origen.
 
 </dd> </dl>
 
@@ -73,9 +73,9 @@ Puntero a una estructura de [**D3DXVECTOR3**](d3dxvector3.md) de origen.
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntero a una estructura [**D3DXVECTOR3**](d3dxvector3.md) que es el producto cruzado de dos vectores 3D.
+Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) que es el producto cruzado de dos vectores 3D.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta función determina el producto cruzado con el código siguiente.
 
@@ -92,7 +92,7 @@ v.z = pV1->x * pV2->y - pV1->y * pV2->x;
 
 
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro *pOut* . De esta manera, la función **D3DXVec3Cross** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec3Cross** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,8 +100,8 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

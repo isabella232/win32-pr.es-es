@@ -21,7 +21,7 @@ ms.locfileid: "118927679"
 <span id="_rpc_odl_glos"></span><span id="_RPC_ODL_GLOS"></span>**Lenguaje de descripción de objetos (ODL)**
 </dt> <dd>
 
-Subconjunto de [*atributos MIDL,*](m-glos.md) palabras clave, instrucciones y directivas que se usan para definir bibliotecas de tipos para aplicaciones ole automation.
+Subconjunto de [*atributos MIDL,*](m-glos.md) palabras clave, instrucciones y directivas que se usan para definir bibliotecas de tipos para aplicaciones de automatización OLE.
 
 </dd> <dt>
 

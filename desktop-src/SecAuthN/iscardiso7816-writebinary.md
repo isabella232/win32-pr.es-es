@@ -1,5 +1,5 @@
 ---
-description: El método WriteBinary construye un comando de unidad de datos de protocolo de aplicación (APDU) que escribe valores binarios en un archivo elemental.
+description: El método WriteBinary construye un comando de unidad de datos de protocolo de aplicación (APDU) que escribe valores binarios en un archivo básico.
 ms.assetid: e38273d5-4eb0-4c0b-829a-c78e511a38bc
 title: Método ISCardISO7816::WriteBinary (Scardssp.h)
 ms.topic: reference
@@ -24,15 +24,15 @@ ms.locfileid: "118922924"
 
 \[El **método WriteBinary** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
-El **método WriteBinary** construye un comando [*de*](../secgloss/a-gly.md) unidad de datos de protocolo de aplicación (APDU) que escribe valores binarios en un archivo elemental.
+El **método WriteBinary** construye un comando [*de*](../secgloss/a-gly.md) unidad de datos de protocolo de aplicación (APDU) que escribe valores binarios en un archivo básico.
 
 En función de los atributos de archivo, el comando realiza una de las siguientes operaciones:
 
--   OR lógico de los bits ya presentes en la tarjeta con los bits dados en el comando APDU (el estado borrado lógico de los bits del archivo es 0).
--   AND lógico de los bits ya presentes en la tarjeta con los bits dados en el comando APDU (el estado borrado lógico de los bits del archivo es 1).
+-   EL OR lógico de los bits ya presentes en la tarjeta con los bits dados en el comando APDU (el estado borrado lógico de los bits del archivo es 0).
+-   And lógico de los bits que ya están presentes en la tarjeta con los bits dados en el comando APDU (el estado borrado lógico de los bits del archivo es 1).
 -   Escritura única en la tarjeta de los bits dados en el comando APDU.
 
-Cuando no se da ninguna indicación en el byte de codificación de datos, se aplica el comportamiento lógico OR.
+Cuando no se indica ninguna indicación en el byte de codificación de datos, se aplica el comportamiento lógico OR.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -76,9 +76,9 @@ Puntero a la cadena de unidades de datos que se va a escribir.
 *ppCmd* \[ in, out\]
 </dt> <dd>
 
-En la entrada, puntero a un [**objeto de interfaz ISCardCmd**](iscardcmd.md) o **NULL.**
+En la entrada, puntero a un objeto de interfaz [**ISCardCmd**](iscardcmd.md) o **NULL.**
 
-Al devolverse, se rellena con el comando APDU construido por esta operación. Si *ppCmd* se estableció en **NULL,** [*se*](../secgloss/s-gly.md) crea internamente un objeto [**ISCardCmd**](iscardcmd.md) de tarjeta inteligente y se devuelve a través del *puntero ppCmd.*
+En la devolución, se rellena con el comando APDU construido por esta operación. Si *ppCmd* se estableció en **NULL,** [*se*](../secgloss/s-gly.md) crea internamente un objeto [**ISCardCmd**](iscardcmd.md) de tarjeta inteligente y se devuelve a través del *puntero ppCmd.*
 
 </dd> </dl>
 
@@ -101,13 +101,13 @@ El método devuelve uno de los siguientes valores posibles.
 
 ## <a name="remarks"></a>Comentarios
 
-El comando encapsulado solo se puede realizar [](../secgloss/s-gly.md) si el estado de seguridad de la tarjeta inteligente satisface los atributos de seguridad del archivo elemental que se está procesando.
+El comando encapsulado solo se puede realizar [](../secgloss/s-gly.md) si el estado de seguridad de la tarjeta inteligente satisface los atributos de seguridad del archivo básico que se está procesando.
 
-Cuando el comando contiene un identificador elemental corto válido, establece el archivo como archivo elemental actual.
+Cuando el comando contiene un identificador básico corto válido, establece el archivo como archivo básico actual.
 
 Cuando se ha aplicado una operación binaria de escritura a una unidad de datos de una EF de escritura única, cualquier operación de escritura adicional que haga referencia a esta unidad de datos se anulará si el contenido de la unidad de datos o el indicador de estado borrado lógico (si existe) asociado a esta unidad de datos es diferente del estado borrado lógico.
 
-Los archivos elementales sin una estructura transparente no se pueden escribir en . El comando encapsulado anula si se aplica a un archivo elemental sin una estructura transparente.
+Los archivos elementales sin una estructura transparente no se pueden escribir en . El comando encapsulado anula si se aplica a un archivo básico sin una estructura transparente.
 
 Para obtener una lista de todos los métodos proporcionados por esta interfaz, vea [**ISCardISO7816**](iscardiso7816.md).
 
@@ -117,9 +117,9 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
@@ -130,7 +130,7 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

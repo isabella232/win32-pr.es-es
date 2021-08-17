@@ -1,8 +1,8 @@
 ---
-description: El calificador de contratipo contiene el valor entero para el tipo de contador de propiedad para las propiedades de \_ las clases PerfRawData de Win32. CookingType contiene las constantes para los tipos de fórmula de propiedad de \_ las clases PerfFormattedData de Win32.
+description: El calificador CounterType contiene el valor entero del tipo de contador de propiedades para las propiedades de las clases \_ PerfRawData de Win32. El valor Dentipo contiene las constantes para los tipos de fórmulas de propiedad en las clases \_ PerfFormattedData de Win32.
 ms.assetid: aa79fcdb-503f-4928-b2b7-f07baeaf9fb5
 ms.tgt_platform: multiple
-title: Calificador de tipo
+title: Calificador CounterType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,63 +13,63 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 883ee7aa2f230756d62294d46e6402fe7f962d4e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7795633355eccdc19da235a56d211f4913ac532e9df51f6d30f33635f9b2d39a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131447"
 ---
-# <a name="countertype-qualifier"></a>Calificador de tipo
+# <a name="countertype-qualifier"></a>Calificador CounterType
 
-El calificador de **contratipo** contiene el valor entero para el tipo de contador de propiedad para las propiedades de las clases [**\_ PerfRawData de Win32**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) . **CookingType** contiene las constantes para los tipos de fórmula de propiedad de las clases [**\_ PerfFormattedData de Win32**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata) .
+El **calificador CounterType** contiene el valor entero del tipo de contador de propiedades para las propiedades de las clases [**\_ PerfRawData de Win32.**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) **El valor Dentipo contiene** las constantes para los tipos de fórmulas de propiedad en las clases [**\_ PerfFormattedData de Win32.**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata)
 
-Para obtener más información y un desglose de los tipos de contador por función, vea [tipos de contadores](/previous-versions/windows/it-pro/windows-server-2003/cc785636(v=ws.10)).
+Para obtener más información y un desglose de los tipos de contador por función, vea [Tipos de contador](/previous-versions/windows/it-pro/windows-server-2003/cc785636(v=ws.10)).
 
 
 
-| Tipo | CookingType                              |
+| CounterType | Método Desinserción                              |
 |-------------|------------------------------------------|
-| 0           | contador de rendimiento \_ \_ RAWCOUNT \_ Hex             |
-| 256         | contador de rendimiento de \_ \_ \_ RAWCOUNT grande \_ Hex      |
-| 2816        | \_texto del contador de rendimiento \_                      |
-| 65536       | contador de rendimiento \_ \_ RAWCOUNT                  |
-| 65792       | contador de rendimiento \_ \_ grande \_ RAWCOUNT           |
-| 73728       | RENDIMIENTO \_ doble \_ sin formato                        |
-| 4195328     | \_Delta de contador de rendimiento \_                     |
-| 4195584     | \_ \_ diferencia grande de contador de rendimiento \_              |
-| 4260864     | \_contador de ejemplo de rendimiento \_                    |
-| 4523008     | tipo de contador de rendimiento \_ \_ QUEUELEN \_            |
-| 4523264     | \_tipo de \_ \_ QUEUELEN grande de contador \_ de rendimiento     |
-| 5571840     | Contador de rendimiento de \_ \_ \_ tipo QUEUELEN de 100 NS \_     |
-| 6620416     | \_tipo de \_ \_ QUEUELEN de \_ tiempo \_ del contador de rendimiento |
-| 272696320   | contador \_ de rendimiento \_                   |
-| 272696576   | \_recuento masivo de contadores de rendimiento \_ \_               |
-| 537003008   | fracción de rendimiento \_ sin procesar \_                      |
-| 541132032   | \_temporizador de contadores de rendimiento \_                     |
-| 541525248   | \_ \_ temporizador del sistema de precisión de rendimiento \_           |
-| 542180608   | \_Temporizador de 100NSEC de rendimiento \_                     |
-| 542573824   | \_Temporizador de \_ 100 de precisión de rendimiento \_            |
-| 543229184   | \_temporizador de \_ tiempo de Perf \_                   |
-| 543622400   | \_temporizador de \_ objeto de precisión de rendimiento \_           |
-| 549585920   | \_fracción de ejemplo de rendimiento \_                   |
-| 557909248   | \_ \_ INV del contador de rendimiento \_                |
-| 558957824   | \_INV 100NSEC \_ del temporizador \_ de rendimiento                |
-| 574686464   | contador de rendimiento de \_ \_ varios \_ temporizadores              |
-| 575735040   | \_ \_ Temporizador múltiple de rendimiento 100NSEC \_              |
-| 591463680   | contador de rendimiento de \_ \_ varios \_ temporizadores \_         |
-| 592512256   | \_Inv de \_ \_ temporizador múltiple \_ de rendimiento 100NSEC         |
-| 805438464   | \_temporizador de promedio de rendimiento \_                     |
-| 807666944   | \_tiempo transcurrido de rendimiento \_                      |
-| 1073742336  | contador de rendimiento \_ \_ NoData                    |
-| 1073874176  | media de rendimiento en \_ \_ masa                      |
-| 1073939457  | \_base de ejemplo de rendimiento \_                       |
-| 1073939458  | \_base de promedio de rendimiento \_                      |
-| 1073939459  | \_base sin procesar de rendimiento \_                          |
-| 1073939712  | marca de tiempo de precisión de rendimiento \_ \_               |
-| 1073939715  | \_ \_ base sin formato de alto rendimiento \_                   |
-| 1107494144  | contador de rendimiento de \_ \_ varias \_ bases               |
-| 2147483648  | \_tipo de \_ histograma del contador de rendimiento \_           |
+| 0           | PERF \_ COUNTER \_ RAWCOUNT \_ HEX             |
+| 256         | PERF \_ COUNTER \_ LARGE \_ RAWCOUNT \_ HEX      |
+| 2816        | TEXTO DEL \_ CONTADOR DE \_ RENDIMIENTO                      |
+| 65536       | PERF \_ COUNTER \_ RAWCOUNT                  |
+| 65792       | PERF \_ COUNTER \_ LARGE \_ RAWCOUNT           |
+| 73728       | PERF \_ DOUBLE \_ RAW                        |
+| 4195328     | PERF \_ COUNTER \_ DELTA                     |
+| 4195584     | PERF \_ COUNTER \_ LARGE \_ DELTA              |
+| 4260864     | CONTADOR DE \_ EJEMPLO DE \_ PERF                    |
+| 4523008     | PERF \_ COUNTER \_ QUEUELEN \_ TYPE            |
+| 4523264     | TIPO \_ \_ QUEUELEN GRANDE DE \_ CONTADOR DE RENDIMIENTO \_     |
+| 5571840     | PERF \_ COUNTER \_ 100NS \_ QUEUELEN \_ TYPE     |
+| 6620416     | PERF \_ COUNTER \_ OBJ \_ TIME \_ QUEUELEN \_ TYPE |
+| 272696320   | CONTADOR \_ DE RENDIMIENTO \_                   |
+| 272696576   | RECUENTO MASIVO DE \_ \_ CONTADORES DE RENDIMIENTO \_               |
+| 537003008   | PERF \_ RAW \_ FRACTION                      |
+| 541132032   | TEMPORIZADOR DE CONTADOR DE RENDIMIENTO \_ \_                     |
+| 541525248   | TEMPORIZADOR DEL \_ SISTEMA DE PRECISIÓN DE \_ \_ PERF           |
+| 542180608   | TEMPORIZADOR DE \_ PERF 100NSEC \_                     |
+| 542573824   | TEMPORIZADOR PERF \_ PRECISION \_ 100NS \_            |
+| 543229184   | TEMPORIZADOR DE \_ TIEMPO DE PERF \_ \_ OBJ                   |
+| 543622400   | TEMPORIZADOR DE OBJETOS \_ DE \_ PRECISIÓN PERF \_           |
+| 549585920   | FRACCIÓN DE EJEMPLO DE PERF \_ \_                   |
+| 557909248   | INV DEL \_ TEMPORIZADOR DE CONTADOR DE \_ \_ RENDIMIENTO                |
+| 558957824   | PERF \_ 100NSEC \_ TIMER \_ INV                |
+| 574686464   | TEMPORIZADOR MÚLTIPLE \_ DE CONTADOR \_ DE RENDIMIENTO \_              |
+| 575735040   | TEMPORIZADOR MÚLTIPLE PERF \_ 100NSEC \_ \_              |
+| 591463680   | INV DE \_ \_ VARIOS \_ TEMPORIZADORES DEL \_ CONTADOR DE RENDIMIENTO         |
+| 592512256   | PERF \_ 100NSEC \_ MULTI \_ TIMER \_ INV         |
+| 805438464   | TEMPORIZADOR PROMEDIO DE RENDIMIENTO \_ \_                     |
+| 807666944   | PERF \_ ELAPSED \_ TIME                      |
+| 1073742336  | PERF \_ COUNTER \_ NODATA                    |
+| 1073874176  | PERF \_ AVERAGE \_ BULK                      |
+| 1073939457  | BASE DE \_ EJEMPLO DE \_ PERF                       |
+| 1073939458  | PERF \_ AVERAGE \_ BASE                      |
+| 1073939459  | BASE SIN \_ PROCESAR DE \_ PERF                          |
+| 1073939712  | MARCA DE TIEMPO DE PRECISIÓN DE PERF \_ \_               |
+| 1073939715  | BASE SIN \_ \_ PROCESAR GRANDE DE \_ PERF                   |
+| 1107494144  | PERF \_ COUNTER \_ MULTI \_ BASE               |
+| 2147483648  | TIPO DE \_ HISTOGRAMA DEL CONTADOR \_ DE RENDIMIENTO \_           |
 
 
 
@@ -90,7 +90,7 @@ Para obtener más información y un desglose de los tipos de contador por funci�
 
 <dl> <dt>
 
-[Calificadores específicos de las clases de rendimiento de WMI](qualifiers-specific-to-wmi-performance-classes.md)
+[Calificadores específicos de las clases de rendimiento wmi](qualifiers-specific-to-wmi-performance-classes.md)
 </dt> </dl>
 
  

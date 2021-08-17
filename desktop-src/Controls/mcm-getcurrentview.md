@@ -51,7 +51,7 @@ Vista actual. Uno de los siguientes valores.
 
 | Código devuelto                                                                                  | Descripción              |
 |----------------------------------------------------------------------------------------------|--------------------------|
-| <dl> <dt>**MCMV \_ MONTH**</dt> </dl>   | Vista mensual.<br/> |
+| <dl> <dt>**MES DE \_ MCMV**</dt> </dl>   | Vista mensual.<br/> |
 | <dl> <dt>**MCMV \_ YEAR**</dt> </dl>    | Vista anual.<br/>  |
 | <dl> <dt>**MCMV \_ DECADE**</dt> </dl>  | Vista de década.<br/>  |
 | <dl> <dt>**MCMV \_ CENTURY**</dt> </dl> | Vista del siglo.<br/> |

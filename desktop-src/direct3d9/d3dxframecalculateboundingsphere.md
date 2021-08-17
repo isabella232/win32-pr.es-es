@@ -1,7 +1,7 @@
 ---
 description: Calcula la esfera de límite de todas las mallas de la jerarquía de fotogramas.
 ms.assetid: 8c3f5a9e-73ff-4d83-8f85-a3fc2a9a53f7
-title: Función D3DXFrameCalculateBoundingSphere (D3dx9anim. h)
+title: Función D3DXFrameCalculateBoundingSphere (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f10043d2c897bf6ab24c442b8e134f31221c498e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a8a4706fcbd421072e2b82cd9e228fe24c35651c17ce4ab0f48e05b946946fb4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119123221"
 ---
-# <a name="d3dxframecalculateboundingsphere-function"></a>D3DXFrameCalculateBoundingSphere función)
+# <a name="d3dxframecalculateboundingsphere-function"></a>Función D3DXFrameCalculateBoundingSphere
 
 Calcula la esfera de límite de todas las mallas de la jerarquía de fotogramas.
 
@@ -42,7 +42,7 @@ HRESULT D3DXFrameCalculateBoundingSphere(
 
 <dl> <dt>
 
-*pFrameRoot* \[ de\]
+*pFrameRoot* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXFRAME**](d3dxframe.md) \***
@@ -51,7 +51,7 @@ Puntero al nodo raíz.
 
 </dd> <dt>
 
-*pObjectCenter* \[ enuncia\]
+*pObjectCenter* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXVECTOR3**](d3dxvector3.md)**
@@ -60,10 +60,10 @@ Devuelve el centro de la esfera de límite.
 
 </dd> <dt>
 
-*pObjectRadius* \[ enuncia\]
+*pObjectRadius* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
 Devuelve el radio de la esfera de límite.
 
@@ -73,7 +73,7 @@ Devuelve el radio de la esfera de límite.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los valores siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

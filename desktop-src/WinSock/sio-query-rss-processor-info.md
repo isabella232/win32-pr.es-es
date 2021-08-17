@@ -159,7 +159,7 @@ La estructura [**PROCESSOR \_ NUMBER devuelta**](/windows/desktop/api/winnt/ns-w
 
 Si el socket es un socket UDP, el socket debe estar conectado para que LA IOCTL DE INFORMACIÓN DEL PROCESADOR RSS DE CONSULTA DE SIO funcione correctamente. **\_ \_ \_ \_**
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [**PROCESSOR_NUMBER**](/windows/desktop/api/winnt/ns-winnt-processor_number)
 

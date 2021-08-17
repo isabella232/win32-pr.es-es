@@ -4,18 +4,18 @@ ms.assetid: 69114875-f3e0-45e9-8e87-1f4e9de08db1
 title: Marcadores de dibujo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 497b725e3a266e296950394a9bb9b2b76a17cb25
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b5e05c651bf95aa48a8ef11fd0819523ee5da7652e27ecebaeff8ee9de4f1e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117887123"
 ---
 # <a name="drawing-markers"></a>Marcadores de dibujo
 
-Puede usar las funciones de línea para dibujar marcadores. Un marcador es un símbolo que se centra en un punto. Las aplicaciones de dibujo usan marcadores para designar puntos de inicio, puntos finales y puntos de control. Las aplicaciones de hojas de cálculo usan marcadores para designar puntos de interés en un gráfico.
+Puede usar las funciones de línea para dibujar marcadores. Un marcador es un símbolo centrado sobre un punto. Las aplicaciones de dibujo usan marcadores para designar puntos iniciales, finales y puntos de control. Las aplicaciones de hoja de cálculo usan marcadores para designar puntos de interés en un gráfico o gráfico.
 
-En el ejemplo de código siguiente, la función de marcador definida por la aplicación crea un marcador mediante las funciones [**MoveToEx**](/windows/desktop/api/Wingdi/nf-wingdi-movetoex) y [**lineTo**](/windows/desktop/api/Wingdi/nf-wingdi-lineto) . Estas funciones dibujan dos líneas de intersección, 20 píxeles de longitud, centradas en las coordenadas del cursor.
+En el ejemplo de código siguiente, la función Marker definida por la aplicación crea un marcador mediante las [**funciones MoveToEx**](/windows/desktop/api/Wingdi/nf-wingdi-movetoex) [**y LineTo.**](/windows/desktop/api/Wingdi/nf-wingdi-lineto) Estas funciones dibujan dos líneas intersecantes, de 20 píxeles de longitud, centradas sobre las coordenadas del cursor.
 
 
 ```C++
@@ -35,7 +35,7 @@ void Marker(LONG x, LONG y, HWND hwnd)
 
 
 
-El sistema almacena las coordenadas del cursor en el parámetro *lParam* del mensaje de [**\_ LBUTTONDOWN de WM**](../inputdev/wm-lbuttondown.md) cuando el usuario presiona el botón primario del mouse. En el código siguiente se muestra cómo una aplicación obtiene estas coordenadas, determina si se encuentran dentro de su área cliente y las pasa a la función de marcador para dibujar el marcador.
+El sistema almacena las coordenadas del cursor en el parámetro *lParam* del mensaje [**\_ WM LBUTTONDOWN**](../inputdev/wm-lbuttondown.md) cuando el usuario presiona el botón izquierdo del mouse. El código siguiente muestra cómo una aplicación obtiene estas coordenadas, determina si se encuentran dentro de su área de cliente y las pasa a la función Marker para dibujar el marcador.
 
 
 ```C++

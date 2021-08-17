@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_OSSNAPID'
-title: Estructura de JET_OSSNAPID
+description: 'Más información sobre: JET_OSSNAPID estructura'
+title: JET_OSSNAPID estructura
 TOCTitle: JET_OSSNAPID structure
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_OSSNAPID
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_ossnapid(v=EXCHG.10)
@@ -24,21 +24,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 215bd8f096ba9c1788f4db70a014cab48b74afa7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13c68c7e441df06d1c51ddfbf0da66226b42c453183e82c5bda79e8a472c7928
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118073914"
 ---
-# <a name="jet_ossnapid-structure"></a>Estructura de JET_OSSNAPID
+# <a name="jet_ossnapid-structure"></a>JET_OSSNAPID estructura
 
-Un JET_OSSNAPID contiene un identificador de una instantánea de una base de datos.
+Un JET_OSSNAPID contiene un identificador para una instantánea de una base de datos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -61,6 +61,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_OSSNAPID](./jet-ossnapid-members.md)
+[JET_OSSNAPID miembros](./jet-ossnapid-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentTooManySplitsException'
-title: Constructor de EsentTooManySplitsException
+description: 'Más información sobre: Constructor EsentTooManySplitsException'
+title: Constructor EsentTooManySplitsException
 TOCTitle: 'EsentTooManySplitsException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTooManySplitsException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenttoomanysplitsexception.esenttoomanysplitsexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c2c548f23aaf37a79e32a655c0e0993ccddc3d04
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 49daaa63806c8004946e416308ef617da4429ef987f3aaba323864b5bd8ef4a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112987"
 ---
-# <a name="esenttoomanysplitsexception-constructor"></a>Constructor de EsentTooManySplitsException
+# <a name="esenttoomanysplitsexception-constructor"></a>Constructor EsentTooManySplitsException
 
 Inicializa una nueva instancia de la clase EsentTooManySplitsException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentTooManySplitsException()
 
 [Miembros de EsentTooManySplitsException](./esenttoomanysplitsexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

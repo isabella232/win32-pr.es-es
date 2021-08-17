@@ -13,7 +13,7 @@ ms.locfileid: "119403945"
 ---
 # <a name="the-telephony-service-provider-ui-dll-interface"></a>Interfaz DLL de la interfaz de usuario del proveedor de servicios de telefonía
 
-En Telefonía de Microsoft, los proveedores de servicios de telefonía se ejecutan en un proceso independiente de las aplicaciones de telefonía. Los proveedores de servicios se comunican con TAPISRV a través de la interfaz del proveedor de servicios de telefonía (TSPI) y se ejecutan en su proceso. interfaz de aplicaciones para TAPI, que se cargan en el contexto de la aplicación.
+En Telefonía de Microsoft, los proveedores de servicios de telefonía se ejecutan en un proceso independiente de las aplicaciones de telefonía. Los proveedores de servicios se comunican con TAPISRV a través de la interfaz del proveedor de servicios de telefonía (TSPI) y se ejecutan en su proceso; interfaz de aplicaciones para TAPI, que se cargan en el contexto de la aplicación.
 
 Los componentes de TAPI usan diversos mecanismos de comunicación entre procesos para transmitir solicitudes de función y mensajes entre aplicaciones y proveedores de servicios. Las aplicaciones y los proveedores de servicios pueden estar ejecutándose no solo en procesos independientes, sino en sistemas completamente independientes. Por lo tanto, los proveedores de servicios no pueden mostrar cuadros de diálogo en el proceso o incluso en el equipo en el que se ejecutan. La interfaz de usuario se debe invocar desde dentro del contexto de la aplicación, en el equipo en el que se ejecuta la aplicación.
 

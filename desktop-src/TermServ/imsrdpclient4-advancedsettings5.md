@@ -1,24 +1,24 @@
 ---
-title: Propiedad AdvancedSettings5 de IMsRdpClient4
+title: Propiedad IMsRdpClient4 AdvancedSettings5
 description: Recupera un puntero a una interfaz IMsRdpClientAdvancedSettings4.
 ms.assetid: 2dd0cc5f-7822-485f-8b3f-12407af1e091
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad AdvancedSettings5
-- Propiedad AdvancedSettings5 Servicios de Escritorio remoto, interfaz IMsRdpClient4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient4, propiedad AdvancedSettings5
-- Propiedad AdvancedSettings5 Servicios de Escritorio remoto, interfaz IMsRdpClient5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient5, propiedad AdvancedSettings5
-- Propiedad AdvancedSettings5 Servicios de Escritorio remoto, interfaz IMsRdpClient6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient6, propiedad AdvancedSettings5
-- Propiedad AdvancedSettings5 Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient7, propiedad AdvancedSettings5
-- Propiedad AdvancedSettings5 Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient8, propiedad AdvancedSettings5
-- Propiedad AdvancedSettings5 Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient9, propiedad AdvancedSettings5
-- Propiedad AdvancedSettings5 Servicios de Escritorio remoto, interfaz IMsRdpClient10
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient10, propiedad AdvancedSettings5
+- Propiedad AdvancedSettings5 Servicios de Escritorio remoto
+- Propiedad AdvancedSettings5 Servicios de Escritorio remoto interfaz , IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto propiedad , AdvancedSettings5
+- Propiedad AdvancedSettings5 Servicios de Escritorio remoto interfaz , IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto propiedad , AdvancedSettings5
+- Propiedad AdvancedSettings5 Servicios de Escritorio remoto interfaz , IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto propiedad , AdvancedSettings5
+- Propiedad AdvancedSettings5 Servicios de Escritorio remoto interfaz , IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad AdvancedSettings5
+- Propiedad AdvancedSettings5 Servicios de Escritorio remoto interfaz , IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto propiedad , AdvancedSettings5
+- Propiedad AdvancedSettings5 Servicios de Escritorio remoto interfaz , IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto propiedad , AdvancedSettings5
+- Propiedad AdvancedSettings5 Servicios de Escritorio remoto interfaz , IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto propiedad , AdvancedSettings5
 topic_type:
 - apiref
 api_name:
@@ -42,16 +42,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ad96588b2109375aed23c1024ef925936cb3368
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8cb8efd8fae25be768a1b758389b5ca7c20a9f3f8b414e62acb865fecf83eeda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138958"
 ---
-# <a name="imsrdpclient4advancedsettings5-property"></a>IMsRdpClient4:: AdvancedSettings5 (propiedad)
+# <a name="imsrdpclient4advancedsettings5-property"></a>Propiedad IMsRdpClient4::AdvancedSettings5
 
-Recupera un puntero a una interfaz [**IMsRdpClientAdvancedSettings4**](imsrdpclientadvancedsettings4.md) .
+Recupera un puntero a una [**interfaz IMsRdpClientAdvancedSettings4.**](imsrdpclientadvancedsettings4.md)
 
 Esta propiedad es de solo lectura.
 
@@ -68,17 +68,17 @@ HRESULT get_AdvancedSettings5(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Puntero a la interfaz [**IMsRdpClientAdvancedSettings4**](imsrdpclientadvancedsettings4.md) . La interfaz se puede utilizar para establecer la configuración avanzada del control de cliente.
+Puntero a la [**interfaz IMsRdpClientAdvancedSettings4.**](imsrdpclientadvancedsettings4.md) La interfaz se puede usar para establecer la configuración avanzada para el control de cliente.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Si el método se ejecuta correctamente, se devuelve **S \_ OK** . Cualquier otro valor **HRESULT** indica que se produjo un error en la llamada.
+Si el método se realiza correctamente, **se devuelve S \_ OK.** Cualquier otro **valor HRESULT** indica que se ha dado error en la llamada.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No se puede establecer esta propiedad cuando el control está conectado.
+Esta propiedad no se puede establecer cuando el control está conectado.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

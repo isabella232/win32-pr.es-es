@@ -1,7 +1,7 @@
 ---
 description: Puntero al asignador que creó este ejemplo.
 ms.assetid: b4faccec-9124-4ae6-8662-ac5eb017328a
-title: 'Miembro CMediaSample:: m_pAllocator (Amfilter. h)'
+title: CMediaSample::m_pAllocator miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ac2943c08b881badd8e15ea0633952ccc973a534
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 646c6fb7f8236aca87b5aebd1d30fd67750d960da4445d45bf45d8b601320274
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156547"
 ---
-# <a name="cmediasamplem_pallocator-member"></a>Miembro pAllocator CMediaSample:: m \_
+# <a name="cmediasamplem_pallocator-member"></a>Miembro CMediaSample::m \_ pAllocator
 
 Puntero al asignador que creó este ejemplo.
 
@@ -36,9 +36,9 @@ CBaseAllocator *m_pAllocator;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Aunque el ejemplo mantiene un puntero al asignador, no contiene un recuento de referencias. En su lugar, el asignador incrementa su propio recuento de referencias en el método [**IMemAllocator:: getBuffer**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-getbuffer) y se publica en el método [**IMemAllocator:: ReleaseBuffer**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-releasebuffer) . Esto garantiza que el asignador estará disponible siempre que otro objeto esté usando el ejemplo.
+Aunque el ejemplo mantiene un puntero al asignador, no contiene un recuento de referencias. En su lugar, el asignador incrementa su propio recuento de referencias en el método [**IMemAllocator::GetBuffer**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-getbuffer) y se libera en el método [**IMemAllocator::ReleaseBuffer.**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-releasebuffer) Esto garantiza que el asignador estará disponible siempre que otro objeto use el ejemplo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Aunque el ejemplo mantiene un puntero al asignador, no contiene un recuento de r
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Aunque el ejemplo mantiene un puntero al asignador, no contiene un recuento de r
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

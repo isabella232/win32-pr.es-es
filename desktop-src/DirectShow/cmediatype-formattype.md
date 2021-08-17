@@ -1,7 +1,7 @@
 ---
 description: El método FormatType recupera el tipo de formato.
 ms.assetid: 7a4c38be-0f6e-430c-aca4-012cf33f6e5b
-title: Método CMediaType. FormatType (mtype. h)
+title: Método CMediaType.FormatType (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fd67280b0dd40662898bb32fa39732e06e4b750d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f7cea7c46f58e9f8387e6976d8df1305eddb954c5de98602a01e5df05eb4232
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016363"
 ---
-# <a name="cmediatypeformattype-method"></a>CMediaType. FormatType (método)
+# <a name="cmediatypeformattype-method"></a>Método CMediaType.FormatType
 
 El `FormatType` método recupera el tipo de formato.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero al miembro **formatType** .
+Devuelve un puntero al miembro **formattype.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve un puntero al miembro **formatType** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Mtype. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Mtype.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve un puntero al miembro **formatType** .
 
 <dl> <dt>
 
-[**Clase CMediaType**](cmediatype.md)
+[**CMediaType (clase)**](cmediatype.md)
 </dt> </dl>
 
  

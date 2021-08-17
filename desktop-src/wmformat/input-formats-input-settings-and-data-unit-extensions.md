@@ -25,9 +25,9 @@ ms.locfileid: "118702017"
 ---
 # <a name="input-formats-input-settings-and-data-unit-extensions"></a>Formatos de entrada, Configuración y extensiones de unidad de datos
 
-El objeto de escritor admite la configuración de entrada, los formatos de entrada y las extensiones de unidad de datos, que le permiten controlar las características del sistema de escritura. No siempre es obvio qué métodos usar para controlar una característica específica.
+El objeto de escritor admite la configuración de entrada, los formatos de entrada y las extensiones de unidad de datos, que le permiten controlar las características del escritor. No siempre es obvio qué métodos usar para controlar una característica específica.
 
-Los formatos de entrada son formatos multimedia que describen las propiedades básicas de los medios que se pasan al escritor para la codificación. Por ejemplo, el tamaño del fotograma y el espacio de color del vídeo de entrada se describen mediante el formato de entrada.
+Los formatos de entrada son formatos multimedia que describen las propiedades básicas de los medios que se pasan al escritor para la codificación. Por ejemplo, el tamaño del marco y el espacio de color del vídeo de entrada se describen mediante el formato de entrada.
 
 La configuración de entrada son características de los datos de entrada más allá de los conceptos básicos o información sobre las transformaciones que se realizan en los datos. La configuración de vídeo entrelazada y la información sobre un sistema de marca de agua son ejemplos de configuración de entrada.
 

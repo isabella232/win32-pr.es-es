@@ -58,10 +58,10 @@ Atributo calculado que representa la fecha en que se cambió por última vez est
 |------------------------|-----------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
-| System-Only            | True                                                                        |
-| Es de un solo valor       | True                                                                        |
-| Está indexado             | False                                                                       |
-| En el catálogo global      | False                                                                       |
+| System-Only            | Verdadero                                                                        |
+| Es de un solo valor       | Verdadero                                                                        |
+| Está indexado             | Falso                                                                       |
+| En el catálogo global      | Falso                                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
@@ -79,10 +79,10 @@ Atributo calculado que representa la fecha en que se cambió por última vez est
 |------------------------|-----------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
-| System-Only            | True                                                                        |
-| Es de un solo valor       | True                                                                        |
-| Está indexado             | False                                                                       |
-| En el catálogo global      | False                                                                       |
+| System-Only            | Verdadero                                                                        |
+| Es de un solo valor       | Verdadero                                                                        |
+| Está indexado             | Falso                                                                       |
+| En el catálogo global      | Falso                                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
@@ -100,10 +100,10 @@ Atributo calculado que representa la fecha en que se cambió por última vez est
 |------------------------|-----------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
-| System-Only            | True                                                                        |
-| Es de un solo valor       | True                                                                        |
-| Está indexado             | False                                                                       |
-| En el catálogo global      | False                                                                       |
+| System-Only            | Verdadero                                                                        |
+| Es de un solo valor       | Verdadero                                                                        |
+| Está indexado             | Falso                                                                       |
+| En el catálogo global      | Falso                                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
@@ -121,10 +121,10 @@ Atributo calculado que representa la fecha en que se cambió por última vez est
 |------------------------|-----------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
-| System-Only            | True                                                                        |
-| Es de un solo valor       | True                                                                        |
-| Está indexado             | False                                                                       |
-| En el catálogo global      | False                                                                       |
+| System-Only            | Verdadero                                                                        |
+| Es de un solo valor       | Verdadero                                                                        |
+| Está indexado             | Falso                                                                       |
+| En el catálogo global      | Falso                                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
@@ -142,10 +142,10 @@ Atributo calculado que representa la fecha en que se cambió por última vez est
 |------------------------|-----------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
-| System-Only            | True                                                                        |
-| Es de un solo valor       | True                                                                        |
-| Está indexado             | False                                                                       |
-| En el catálogo global      | False                                                                       |
+| System-Only            | Verdadero                                                                        |
+| Es de un solo valor       | Verdadero                                                                        |
+| Está indexado             | Falso                                                                       |
+| En el catálogo global      | Falso                                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
@@ -163,10 +163,10 @@ Atributo calculado que representa la fecha en que se cambió por última vez est
 |------------------------|-----------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
-| System-Only            | True                                                                        |
-| Es de un solo valor       | True                                                                        |
-| Está indexado             | False                                                                       |
-| En el catálogo global      | False                                                                       |
+| System-Only            | Verdadero                                                                        |
+| Es de un solo valor       | Verdadero                                                                        |
+| Está indexado             | Falso                                                                       |
+| En el catálogo global      | Falso                                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
@@ -184,10 +184,10 @@ Atributo calculado que representa la fecha en que se cambió por última vez est
 |------------------------|-----------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
-| System-Only            | True                                                                        |
-| Es de un solo valor       | True                                                                        |
-| Está indexado             | False                                                                       |
-| En el catálogo global      | False                                                                       |
+| System-Only            | Verdadero                                                                        |
+| Es de un solo valor       | Verdadero                                                                        |
+| Está indexado             | Falso                                                                       |
+| En el catálogo global      | Falso                                                                       |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |

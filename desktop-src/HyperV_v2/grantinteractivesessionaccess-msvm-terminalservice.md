@@ -1,7 +1,7 @@
 ---
-description: Concede acceso a la sesión interactiva de la máquina virtual a la lista de confianzas especificada.
+description: Concede acceso a la sesión interactiva de la máquina virtual a la lista de administradores de confianza especificada.
 ms.assetid: 8a82170d-067b-47e5-a15f-21d6c04128d2
-title: Método GrantInteractiveSessionAccess de la clase Msvm_TerminalService
+title: Método GrantInteractiveSessionAccess de la Msvm_TerminalService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: b8bd49805b5fdc5545a81e4f0b816fe35a6c37b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39fd1e77eeea7429a2ef225226b964e44f1384295dc798c1b93611f282674fb2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682335"
 ---
-# <a name="grantinteractivesessionaccess-method-of-the-msvm_terminalservice-class"></a>Método GrantInteractiveSessionAccess de la \_ clase TerminalService de MSVM
+# <a name="grantinteractivesessionaccess-method-of-the-msvm_terminalservice-class"></a>Método GrantInteractiveSessionAccess de la clase TerminalService de Msvm \_
 
-Concede acceso a la sesión interactiva de la máquina virtual a la lista de confianzas especificada.
+Concede acceso a la sesión interactiva de la máquina virtual a la lista de administradores de confianza especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,24 +41,24 @@ uint32 GrantInteractiveSessionAccess(
 
 <dl> <dt>
 
-*ComputerSystem* \[ de\]
+*ComputerSystem* \[ En\]
 </dt> <dd>
 
-Una referencia a una instancia de la clase [**MSVM \_ ComputerSystem**](msvm-computersystem.md) que representa la máquina virtual a la que se concederá el acceso.
+Referencia a una instancia de la clase [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) que representa la máquina virtual a la que se concederá acceso.
 
 </dd> <dt>
 
-*Confianzas* \[ de\]
+*Administradores de confianza* \[ En\]
 </dt> <dd>
 
-Matriz de cadenas, cada una de las cuales identifica un administrador de confianza al que se concederá acceso a la sesión interactiva de la máquina virtual. Los identificadores de confianza deben especificarse en formato compatible con SAM de Windows o en formato de cadena de SID de Windows.
+Matriz de cadenas, cada una de las que identifica un administrador de confianza al que se le concederá acceso a la sesión interactiva de la máquina virtual. Los identificadores de administrador de confianza deben especificarse Windows formato compatible con SAM o Windows de cadena SID.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Este método devuelve uno de los valores siguientes.
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -95,10 +95,10 @@ Este método devuelve uno de los valores siguientes.
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -107,10 +107,10 @@ Este método devuelve uno de los valores siguientes.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -119,7 +119,7 @@ Este método devuelve uno de los valores siguientes.
 
 <dl> <dt>
 
-[**MSVM \_ TerminalService**](msvm-terminalservice.md)
+[**TerminalService de Msvm \_**](msvm-terminalservice.md)
 </dt> </dl>
 
  

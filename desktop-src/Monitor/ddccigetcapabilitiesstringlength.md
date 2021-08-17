@@ -1,9 +1,9 @@
 ---
-title: DDCCIGetCapabilitiesStringLength función)
-description: Obtiene la longitud de una cadena de funciones para un monitor.
+title: Función DDCCIGetCapabilitiesStringLength
+description: Obtiene la longitud de una cadena de funcionalidades para un monitor.
 ms.assetid: 8a26d17b-1535-49c7-8cfb-48feb283a3c4
 keywords:
-- Configuración del monitor de función DDCCIGetCapabilitiesStringLength
+- Configuración del monitor de la función DDCCIGetCapabilitiesStringLength
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28d82e2f0667d542c8fa4c9255fde765e4cea81d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dd30aeb1e71d88b649478d0ecd1c3052dbbe32372909882f73ae77db6e4dbc1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105651390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066615"
 ---
-# <a name="ddccigetcapabilitiesstringlength-function"></a>DDCCIGetCapabilitiesStringLength función)
+# <a name="ddccigetcapabilitiesstringlength-function"></a>Función DDCCIGetCapabilitiesStringLength
 
 > [!IMPORTANT]
-> La API de configuración de monitor usa esta función para tener acceso a la funcionalidad del controlador de pantalla. Las aplicaciones no deben llamar a esta función.
+> La API de configuración de monitor usa esta función para acceder a la funcionalidad del controlador de pantalla. Las aplicaciones no deben llamar a esta función.
 
  
 
-Obtiene la longitud de una cadena de funciones para un monitor.
+Obtiene la longitud de una cadena de funcionalidades para un monitor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,29 +46,29 @@ NTSTATUS WINAPI DDCCIGetCapabilitiesStringLength(
 
 <dl> <dt>
 
-*hMonitor* \[ de\]
+*hMonitor* \[ En\]
 </dt> <dd>
 
 Identificador de un monitor físico.
 
 </dd> <dt>
 
-*pdwLength* \[ enuncia\]
+*pdwLength* \[ out\]
 </dt> <dd>
 
-Recibe la longitud de la cadena de funciones, en caracteres, incluido el carácter nulo de terminación.
+Recibe la longitud de la cadena de funcionalidades, en caracteres, incluido el carácter nulo de terminación.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve el **estado \_ correcto**. De lo contrario, devuelve un código de error **NTSTATUS** .
+Si el método se realiza correctamente, devuelve **STATUS \_ SUCCESS**. De lo contrario, devuelve un código de error **NTSTATUS.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las aplicaciones deben llamar a [**GetCapabilitiesStringLength**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-getcapabilitiesstringlength) en lugar de llamar a esta función.
+Las aplicaciones deben [**llamar a GetCapabilitiesStringLength en**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-getcapabilitiesstringlength) lugar de llamar a esta función.
 
-Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe utilizar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Gdi32.dll.
+Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe usar las [**funciones LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Gdi32.dll.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,8 +76,8 @@ Esta función no tiene ninguna biblioteca de importación asociada. Para llamar 
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                 |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
 | Archivo DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 

@@ -1,7 +1,7 @@
 ---
-description: Recupera el texto de Estado HTTP.
+description: Recupera el texto de estado HTTP.
 ms.assetid: 480babbd-432c-4722-98df-a73ba5928e1f
-title: 'IWinHttpRequest:: StatusText (propiedad)'
+title: IWinHttpRequest::StatusText, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 41288d87b8194caf3a2a14cc89cd5acbffec902c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a200e4e4988d5e75b3a605fe9b7b37bb316832ed6d986842e15c3cac1c73bac6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117744390"
 ---
-# <a name="iwinhttprequeststatustext-property"></a>IWinHttpRequest:: StatusText (propiedad)
+# <a name="iwinhttprequeststatustext-property"></a>IWinHttpRequest::StatusText, propiedad
 
-La propiedad **statusText** recupera el texto de estado http.
+La **propiedad StatusText** recupera el texto de estado HTTP.
 
 Esta propiedad es de solo lectura.
 
@@ -49,24 +49,24 @@ StatusText = WinHttpRequest.StatusText
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**BSTR** que recibe el texto de estado http.
+**BSTR que** recibe el texto de estado HTTP.
 
 ## <a name="error-codes"></a>Códigos de error
 
-El valor devuelto es correcto si se ejecuta correctamente o un valor de error en caso contrario. **\_**
+El valor devuelto es **S \_ OK on** success o un valor de error de lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Recupera la parte de texto de la línea de respuesta del servidor, haciendo que esté disponible el "descriptivo" equivalente al código de Estado HTTP numérico. Los resultados de esta propiedad solo son válidos después de que el método [**send**](iwinhttprequest-send.md) se haya completado correctamente.
+Recupera la parte de texto de la línea de respuesta del servidor, lo que hace que esté disponible el equivalente "fácil de usar" al código de estado HTTP numérico. Los resultados de esta propiedad son válidos solo después de que el [**método Send**](iwinhttprequest-send.md) se haya completado correctamente.
 
 > [!Note]  
-> En Windows XP y Windows 2000, consulte la sección [requisitos de tiempo de ejecución](winhttp-start-page.md) de la página de inicio de winhttp.
+> Para Windows XP y Windows 2000, consulte la sección [Requisitos](winhttp-start-page.md) en tiempo de ejecución de la página de inicio de WinHTTP.
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP, mostrar el [**Estado**](iwinhttprequest-status.md) y **statusText** y leer el texto de la respuesta. Este ejemplo debe ejecutarse desde un símbolo del sistema.
+En el ejemplo siguiente se muestra cómo abrir una [](iwinhttprequest-status.md) conexión HTTP, enviar una solicitud HTTP, mostrar status y **statustext** y leer el texto de respuesta. Este ejemplo debe ejecutarse desde un símbolo del sistema.
 
 
 ```C++
@@ -165,7 +165,7 @@ int main()
 
 
 
-En el ejemplo de scripting siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP, mostrar el [**Estado**](iwinhttprequest-status.md) y **statusText** y leer los encabezados de respuesta.
+En el ejemplo de scripting siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP, mostrar [**status**](iwinhttprequest-status.md) **y statustext** y leer los encabezados de respuesta.
 
 
 ```JScript
@@ -193,11 +193,11 @@ WScript.Echo( WinHttpReq.GetAllResponseHeaders());
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional con las \[ aplicaciones de escritorio de SP3 únicamente\]<br/>            |
-| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server con \[ solo aplicaciones de escritorio de SP3\]<br/>         |
-| Redistribuible<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o posterior en Windows XP y Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winhttp. lib</dt> </dl>     |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>            |
+| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
+| Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | Archivo DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
@@ -212,10 +212,10 @@ WScript.Echo( WinHttpReq.GetAllResponseHeaders());
 [**WinHttpRequest**](winhttprequest.md)
 </dt> <dt>
 
-[**Status**](iwinhttprequest-status.md)
+[**Estado**](iwinhttprequest-status.md)
 </dt> <dt>
 
-[Versiones de WinHTTP](winhttp-versions.md)
+[Versiones winHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

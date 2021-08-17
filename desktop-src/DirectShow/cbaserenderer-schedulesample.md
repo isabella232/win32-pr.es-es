@@ -1,7 +1,7 @@
 ---
-description: El método ScheduleSample programa un ejemplo para la representación.
+description: El método ScheduleSample programa un ejemplo para su representación.
 ms.assetid: 08c218d1-6d0a-4c66-bbde-a39e5d31561c
-title: Método CBaseRenderer. ScheduleSample (Renbase. h)
+title: Método CBaseRenderer.ScheduleSample (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c340e54f35b353820b128681cfbc0c5798d38849
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 88e728b90078ab11a6215dad60a88b819b2c513071637e2aa5c6b6ed7226189b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118157597"
 ---
-# <a name="cbaserendererschedulesample-method"></a>CBaseRenderer. ScheduleSample, método
+# <a name="cbaserendererschedulesample-method"></a>Método CBaseRenderer.ScheduleSample
 
-El `ScheduleSample` método programa un ejemplo para la representación.
+El `ScheduleSample` método programa un ejemplo para su representación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ virtual BOOL ScheduleSample(
 *pMediaSample* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) del ejemplo.
+Puntero a la interfaz [**IMediaSample del**](/windows/desktop/api/Strmif/nn-strmif-imediasample) ejemplo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si se ha programado el ejemplo, o **false** si se ha quitado el ejemplo.
+Devuelve **TRUE** si el ejemplo se programó o **FALSE** si se ha eliminado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En primer lugar, este método determina si el ejemplo se debe representar inmediatamente, se representa en el futuro o se quita. (Para ello, llama al método [**CBaseRenderer:: GetSampleTimes**](cbaserenderer-getsampletimes.md) ). Si el ejemplo se debe representar inmediatamente, el método señala al evento [**CBaseRenderer:: m \_ RenderEvent**](cbaserenderer-m-renderevent.md) . Si el ejemplo se debe representar en el futuro, el método llama al método [**IReferenceClock:: AdviseTime**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-advisetime) para la programación.
+Este método determina primero si el ejemplo debe representarse inmediatamente, representarse en el futuro o descartarse. (Para ello, llama al método [**CBaseRenderer::GetSampleTimes).**](cbaserenderer-getsampletimes.md) Si el ejemplo se debe representar inmediatamente, el método señala el evento [**CBaseRenderer::m \_ RenderEvent.**](cbaserenderer-m-renderevent.md) Si el ejemplo se debe representar en el futuro, el método llama al método [**IReferenceClock::AdviseTime**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-advisetime) para la programación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ En primer lugar, este método determina si el ejemplo se debe representar inmedi
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ En primer lugar, este método determina si el ejemplo se debe representar inmedi
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

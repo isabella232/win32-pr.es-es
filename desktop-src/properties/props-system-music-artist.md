@@ -1,17 +1,17 @@
 ---
-description: System.Music.Artist
+description: Sistema. Música. Artista
 ms.assetid: 99094e2f-e3be-4561-b0a5-4ad3934cd1d8
-title: System.Music.Artist
+title: Sistema. Música. Artista
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e87f78be072303bd2f2e1141dd7ed95dcf8a916
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a4a1082c4dbc37a2c34a87cfcfc45105e26bc3b7bbb281d71cf6706a9bd8435d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970244"
 ---
-# <a name="systemmusicartist"></a>System.Music.Artist
+# <a name="systemmusicartist"></a>Sistema. Música. Artista
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 

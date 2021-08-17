@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_FILE_SAVEDIB (VFW. h)
-description: El \_ mensaje SAVEDIB del archivo Cap de WM \_ \_ copia el marco actual en un archivo DIB. Puede enviar este mensaje explícitamente o mediante la macro capFileSaveDIB.
+title: WM_CAP_FILE_SAVEDIB mensaje (Vfw.h)
+description: El mensaje SAVEDIB DEL ARCHIVO DE CAP DE WM \_ copia el marco actual en un archivo \_ \_ DIB. Puede enviar este mensaje explícitamente o mediante la macro capFileSaveDIB.
 ms.assetid: bf6d343b-9236-4e68-bbda-2ed6e197a5cb
 keywords:
-- Mensaje de WM_CAP_FILE_SAVEDIB de Windows multimedia
+- WM_CAP_FILE_SAVEDIB mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2155febfdac1b3f24133df47ce206c8e5ec33d3a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 66d6dd9b8675e1fb8625349afc4b3f86347d71d605407d5c99fbca291ade744d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803815"
 ---
-# <a name="wm_cap_file_savedib-message"></a>\_ \_ Mensaje SAVEDIB de archivo Cap de WM \_
+# <a name="wm_cap_file_savedib-message"></a>Mensaje \_ SAVEDIB DE ARCHIVO DE CAP \_ DE WM \_
 
-El **mensaje \_ \_ \_ SAVEDIB del archivo Cap de WM** copia el marco actual en un archivo DIB. Puede enviar este mensaje explícitamente o mediante la macro [**capFileSaveDIB**](/windows/desktop/api/Vfw/nf-vfw-capfilesavedib) .
+El **mensaje \_ \_ \_ SAVEDIB DEL ARCHIVO DE CAP** DE WM copia el marco actual en un archivo DIB. Puede enviar este mensaje explícitamente o mediante la [**macro capFileSaveDIB.**](/windows/desktop/api/Vfw/nf-vfw-capfilesavedib)
 
 
 ```C++
@@ -41,17 +41,17 @@ lParam = (LPARAM) (LPVOID) (LPSTR) (szName);
 <span id="szName"></span><span id="szname"></span><span id="SZNAME"></span>*szName*
 </dt> <dd>
 
-Puntero a la cadena terminada en null que contiene el nombre del archivo DIB de destino.
+Puntero a la cadena terminada en NULL que contiene el nombre del archivo DIB de destino.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
 
-Si se produce un error y se establece una función de devolución de llamada de error con el mensaje de [**\_ error de devolución de \_ \_ llamada \_ de Cap de WM**](wm-cap-set-callback-error.md) , se llama a la función de devolución de llamada de error.
+Si se produce un error y se establece una función de devolución de llamada de error mediante el mensaje [**DE ERROR WM CAP SET \_ \_ \_ CALLBACK, \_**](wm-cap-set-callback-error.md) se llama a la función de devolución de llamada de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si el controlador de captura proporciona fotogramas en un formato comprimido, esta llamada intenta descomprimir el marco antes de escribir el archivo.
 
@@ -63,7 +63,7 @@ Si el controlador de captura proporciona fotogramas en un formato comprimido, es
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

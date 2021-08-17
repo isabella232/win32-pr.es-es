@@ -3,7 +3,7 @@ title: Elemento ControlNameMap
 description: Representa un contenedor para los nombres de control en una plantilla de diseño SizeDefinition personalizada.
 ms.assetid: b4bceb90-a9a3-42d7-a85b-bf6e4e02784b
 keywords:
-- ControlNameMap, elemento de la cinta de opciones de Windows
+- ControlNameMap, elemento Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 42654af7f81730d01f9c699de7041ba24be185e9
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: c0c4ac8856af52b47db18f52c6dd0147819444427aefb34c2484f6661f0f010d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111442916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117850994"
 ---
 # <a name="controlnamemap-element"></a>Elemento ControlNameMap
 
@@ -161,7 +161,7 @@ En el ejemplo de código siguiente se muestra el marcado básico para una planti
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -23,7 +23,7 @@ Para obtener una aplicación de captura de ejemplo que admita más característi
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-Para descargar los ejemplos DirectShow SDK, instale la versión más reciente del [SDK Windows SDK.](https://msdn.microsoft.com/windowsvista/bb980924.aspx)
+Para descargar los ejemplos DirectShow SDK, instale la versión más reciente del [SDK de Windows.](https://msdn.microsoft.com/windowsvista/bb980924.aspx)
 
 Este ejemplo se instala en la siguiente ruta de acceso: *\[ Sdk \] Root* Samples Multimedia DirectShow Capture \\ \\ \\ \\ \\ PlayCap.
 

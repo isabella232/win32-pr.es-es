@@ -27,7 +27,7 @@ Referencia wmi a una definición de tipo para un objeto de directiva.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | ms-WMI-TargetType                           |
 | Ldap-Display-Name | msWMI-TargetType                            |
@@ -52,7 +52,7 @@ Referencia wmi a una definición de tipo para un objeto de directiva.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
@@ -73,7 +73,7 @@ Referencia wmi a una definición de tipo para un objeto de directiva.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
@@ -94,7 +94,7 @@ Referencia wmi a una definición de tipo para un objeto de directiva.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
@@ -115,7 +115,7 @@ Referencia wmi a una definición de tipo para un objeto de directiva.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
@@ -136,7 +136,7 @@ Referencia wmi a una definición de tipo para un objeto de directiva.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |

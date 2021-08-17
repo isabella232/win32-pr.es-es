@@ -35,14 +35,14 @@ SV StencilRef representa el valor de referencia de la galería de símbolos del 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La especificación del valor de referencia del sombreador en el sombreador de píxeles está disponible en D3D11.3 y D3D12. Consulte
 
 -   [D3D11.3 Valor de referencia de galería de símbolos especificado](/windows/desktop/direct3d11/shader-specified-stencil-reference-value)
 -   [Valor de referencia de galería de símbolos especificado del sombreador D3D12](/windows/desktop/direct3d12/shader-specified-stencil-reference-value)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

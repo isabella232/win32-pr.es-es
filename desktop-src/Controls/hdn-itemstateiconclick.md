@@ -1,9 +1,9 @@
 ---
-title: Mensaje de HDN_ITEMSTATEICONCLICK (commctrl. h)
-description: Notifica a la ventana primaria de un control de encabezado que el usuario hizo clic en el icono de estado de un elemento. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: HDN_ITEMSTATEICONCLICK mensaje (Commctrl.h)
+description: Notifica a la ventana primaria de un control de encabezado que el usuario hizo clic en el icono de estado de un elemento. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: a1969579-3a69-49ff-b06e-4b7450146a92
 keywords:
-- HDN_ITEMSTATEICONCLICK controles de mensajes de Windows
+- HDN_ITEMSTATEICONCLICK controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95e5e162b78c829e60494f6e8ff81af3ca97eee4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cba2e475ec3037ab00c379cf0c9ea371d5a336b80458c68e974a7122d9a2427a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119435255"
 ---
-# <a name="hdn_itemstateiconclick-message"></a>HDN \_ ITEMSTATEICONCLICK
+# <a name="hdn_itemstateiconclick-message"></a>Mensaje \_ ITEMSTATEICONCLICK de HDN
 
-Notifica a la ventana primaria de un control de encabezado que el usuario hizo clic en el icono de estado de un elemento. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de encabezado que el usuario hizo clic en el icono de estado de un elemento. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -55,9 +55,9 @@ No de devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

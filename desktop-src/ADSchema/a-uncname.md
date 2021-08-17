@@ -1,10 +1,10 @@
 ---
 title: UNC-Name atributo
-description: Nombre de convención de nomenclatura universal para impresoras y volúmenes compartidos.
+description: Nombre de la convención de nomenclatura universal para impresoras y volúmenes compartidos.
 ms.assetid: 967fd0dc-10af-4482-bc2c-1d1dc13dee39
 ms.tgt_platform: multiple
 keywords:
-- UNC-Name esquema de AD de atributo
+- UNC-Name esquema de AD del atributo
 - Esquema de AD del atributo uNCName
 topic_type:
 - apiref
@@ -23,20 +23,20 @@ ms.locfileid: "118681601"
 ---
 # <a name="unc-name-attribute"></a>UNC-Name atributo
 
-Nombre de convención de nomenclatura universal para impresoras y volúmenes compartidos.
+Nombre de la convención de nomenclatura universal para impresoras y volúmenes compartidos.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------------|
 | CN                | UNC-Name                                      |
 | Ldap-Display-Name | uNCName                                       |
 | Size              | \-                                            |
-| Actualizar privilegios  | Administrador de dominio                          |
+| Privilegio actualizar  | Administrador de dominio                          |
 | Frecuencia de actualización  | Cuando se crean nuevos volúmenes o colas de impresión. |
 | Attribute-Id      | 1.2.840.113556.1.4.137                        |
 | System-Id-Guid    | bf967a64-0de6-11d0-a285-00aa003049e2          |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)   |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)   |
 
 
 
@@ -53,14 +53,14 @@ Nombre de convención de nomenclatura universal para impresoras y volúmenes com
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                |
-| Es de un solo valor       | True                                                                                                                                                 |
-| Está indexado             | True                                                                                                                                                 |
-| En el catálogo global      | True                                                                                                                                                 |
+| System-Only            | Falso                                                                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                                                                 |
+| Está indexado             | Verdadero                                                                                                                                                 |
+| En el catálogo global      | Verdadero                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                   |
@@ -74,14 +74,14 @@ Nombre de convención de nomenclatura universal para impresoras y volúmenes com
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                                                                                        |
-| System-Only            | False                                                                                                                                                                                     |
-| Es de un solo valor       | True                                                                                                                                                                                      |
-| Está indexado             | True                                                                                                                                                                                      |
-| En el catálogo global      | True                                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                      |
+| Está indexado             | Verdadero                                                                                                                                                                                      |
+| En el catálogo global      | Verdadero                                                                                                                                                                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                              |
 | Range-Lower            | \-                                                                                                                                                                                        |
 | Range-Upper            | \-                                                                                                                                                                                        |
@@ -95,14 +95,14 @@ Nombre de convención de nomenclatura universal para impresoras y volúmenes com
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                                                                                                                |
-| Es de un solo valor       | True                                                                                                                                                                                                                                                                 |
-| Está indexado             | True                                                                                                                                                                                                                                                                 |
-| En el catálogo global      | True                                                                                                                                                                                                                                                                 |
+| System-Only            | Falso                                                                                                                                                                                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                                                                 |
+| Está indexado             | Verdadero                                                                                                                                                                                                                                                                 |
+| En el catálogo global      | Verdadero                                                                                                                                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                   |
@@ -116,14 +116,14 @@ Nombre de convención de nomenclatura universal para impresoras y volúmenes com
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                                                                                                                |
-| Es de un solo valor       | True                                                                                                                                                                                                                                                                 |
-| Está indexado             | True                                                                                                                                                                                                                                                                 |
-| En el catálogo global      | True                                                                                                                                                                                                                                                                 |
+| System-Only            | Falso                                                                                                                                                                                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                                                                 |
+| Está indexado             | Verdadero                                                                                                                                                                                                                                                                 |
+| En el catálogo global      | Verdadero                                                                                                                                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                   |
@@ -137,14 +137,14 @@ Nombre de convención de nomenclatura universal para impresoras y volúmenes com
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                                                                                                                |
-| Es de un solo valor       | True                                                                                                                                                                                                                                                                 |
-| Está indexado             | True                                                                                                                                                                                                                                                                 |
-| En el catálogo global      | True                                                                                                                                                                                                                                                                 |
+| System-Only            | Falso                                                                                                                                                                                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                                                                 |
+| Está indexado             | Verdadero                                                                                                                                                                                                                                                                 |
+| En el catálogo global      | Verdadero                                                                                                                                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                   |
@@ -158,14 +158,14 @@ Nombre de convención de nomenclatura universal para impresoras y volúmenes com
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                                                                                                                |
-| Es de un solo valor       | True                                                                                                                                                                                                                                                                 |
-| Está indexado             | True                                                                                                                                                                                                                                                                 |
-| En el catálogo global      | True                                                                                                                                                                                                                                                                 |
+| System-Only            | Falso                                                                                                                                                                                                                                                                |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                                                                 |
+| Está indexado             | Verdadero                                                                                                                                                                                                                                                                 |
+| En el catálogo global      | Verdadero                                                                                                                                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                   |

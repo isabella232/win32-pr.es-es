@@ -119,7 +119,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método se ejecuta de forma asincrónica. Devuelve inmediatamente después de llamarse y, a continuación, genera un evento **MEWMDRMLicenseAcquisitionCompleted** cuando se completa el procesamiento. En el caso de las operaciones de adquisición de licencias no silenciosas, el valor del evento obtenido mediante una llamada a **IMFMediaEvent::GetValue** es un **puntero IUnknown.** Puede llamar al **método QueryInterface** de la interfaz **IUnknown** recuperada para obtener una instancia de la [**interfaz IWMDRMNonSilentLicenseAquisition.**](iwmdrmnonsilentlicenseaquisition.md)
 
@@ -136,7 +136,7 @@ Para obtener más información sobre el uso de los métodos asincrónicos de Win
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

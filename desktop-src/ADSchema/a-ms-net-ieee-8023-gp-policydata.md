@@ -1,6 +1,6 @@
 ---
 title: Atributo ms-net-ieee-8023-GP-PolicyData
-description: Contiene todos los valores de configuración y los datos que directiva de grupo configuración de las redes cableadas 802.3.
+description: Contiene toda la configuración y los datos que directiva de grupo configuración para las redes cableadas 802.3.
 ms.assetid: 9c68252f-cd0c-409f-9c57-1d00be246d20
 ms.tgt_platform: multiple
 keywords:
@@ -22,7 +22,7 @@ ms.locfileid: "119300165"
 ---
 # <a name="ms-net-ieee-8023-gp-policydata-attribute"></a>Atributo ms-net-ieee-8023-GP-PolicyData
 
-Contiene todos los valores de configuración y los datos que directiva de grupo configuración de las redes cableadas 802.3.
+Contiene toda la configuración y los datos que directiva de grupo configuración para las redes cableadas 802.3.
 
 
 
@@ -31,7 +31,7 @@ Contiene todos los valores de configuración y los datos que directiva de grupo 
 | CN                | ms-net-ieee-8023-GP-PolicyData              |
 | Ldap-Display-Name | ms-net-ieee-8023-GP-PolicyData              |
 | Size              | \-                                          |
-| Privilegio actualizar  | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1955                     |
 | System-Id-Guid    | 8398948b-7457-4d91-bd4d-8d7ed669c9f7        |
@@ -53,10 +53,10 @@ Contiene todos los valores de configuración y los datos que directiva de grupo 
 |------------------------|-----------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
-| System-Only            | False                                                                             |
-| Es de un solo valor       | True                                                                              |
-| Está indexado             | False                                                                             |
-| En el catálogo global      | False                                                                             |
+| System-Only            | Falso                                                                             |
+| Es de un solo valor       | Verdadero                                                                              |
+| Está indexado             | Falso                                                                             |
+| En el catálogo global      | Falso                                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
 | Range-Lower            | \-                                                                                |
 | Range-Upper            | \-                                                                                |
@@ -74,10 +74,10 @@ Contiene todos los valores de configuración y los datos que directiva de grupo 
 |------------------------|-----------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
-| System-Only            | False                                                                             |
-| Es de un solo valor       | True                                                                              |
-| Está indexado             | False                                                                             |
-| En el catálogo global      | False                                                                             |
+| System-Only            | Falso                                                                             |
+| Es de un solo valor       | Verdadero                                                                              |
+| Está indexado             | Falso                                                                             |
+| En el catálogo global      | Falso                                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
 | Range-Lower            | \-                                                                                |
 | Range-Upper            | \-                                                                                |
@@ -95,10 +95,10 @@ Contiene todos los valores de configuración y los datos que directiva de grupo 
 |------------------------|-----------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
-| System-Only            | False                                                                             |
-| Es de un solo valor       | True                                                                              |
-| Está indexado             | False                                                                             |
-| En el catálogo global      | False                                                                             |
+| System-Only            | Falso                                                                             |
+| Es de un solo valor       | Verdadero                                                                              |
+| Está indexado             | Falso                                                                             |
+| En el catálogo global      | Falso                                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
 | Range-Lower            | \-                                                                                |
 | Range-Upper            | \-                                                                                |

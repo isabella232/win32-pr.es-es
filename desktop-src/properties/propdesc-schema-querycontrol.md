@@ -1,23 +1,23 @@
 ---
-description: No se admite en Windows 7 y versiones posteriores. Especifica el control que se va a usar en el generador de consultas.
+description: No se admite en Windows 7 y versiones posteriores. Especifica qué control se va a usar en el generador de consultas.
 ms.assetid: 7d79c2fe-c63d-4ac5-8dd6-1a6103e53245
-title: Consulta
+title: queryControl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 448b47038f82afb9f860209bfe89eb9e6eecb890
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34f05800fc026c61a4ea50098fb1d8f4deb98d971c9eecfed478d71bd3c01033
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823565"
 ---
-# <a name="querycontrol"></a>Consulta
+# <a name="querycontrol"></a>queryControl
 
-No se admite en Windows 7 y versiones posteriores. Especifica el control que se va a usar en el generador de consultas. Solo debe haber un elemento [consulta]() para cada elemento [displayInfo](./propdesc-schema-displayinfo.md) .
+No se admite en Windows 7 y versiones posteriores. Especifica qué control se va a usar en el generador de consultas. Solo debe haber un [elemento queryControl]() para cada [elemento displayInfo.](./propdesc-schema-displayinfo.md)
 
-Si hay varios elementos, se usa el último. Si no se proporciona ningún elemento [consulta]() , los valores de atributo predeterminados se aplican a la descripción de la propiedad.
+Si hay varios elementos, se usa el último. Si no se proporciona ningún elemento [queryControl,]() la configuración predeterminada del atributo se aplica a la descripción de la propiedad.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -51,7 +51,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 
 | Elemento primario                                   | Elementos secundarios |
 |--------------------------------------------------|----------------|
-| [displayInfo](./propdesc-schema-displayinfo.md) | None           |
+| [displayInfo](./propdesc-schema-displayinfo.md) | Ninguno           |
 
 
 
@@ -75,7 +75,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 <tbody>
 <tr class="odd">
 <td>control</td>
-<td>Público. Opcional. El valor predeterminado es &quot; default &quot; . Estos son los valores válidos. 
+<td>Público. Opcional. El valor predeterminado &quot; es Default &quot; . Estos son los valores válidos. 
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -90,7 +90,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 <tbody>
 <tr class="odd">
 <td>Valor predeterminado</td>
-<td>Predeterminada. Utiliza el control predeterminado, basado en el <typeInfo type=&quot;&quot;> atributo. A continuación se enumeran los tipos predeterminados. Cualquier otro tipo da como resultado el uso del &quot; control de texto &quot; . 
+<td>Predeterminada. Usa el control predeterminado, basado en el <typeInfo type=&quot;&quot;> atributo . A continuación se enumeran los tipos predeterminados. Cualquier otro tipo da como resultado el uso del &quot; &quot; control Texto. 
 <table>
 <thead>
 <tr class="header">
@@ -112,7 +112,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 <td>NumericText</td>
 </tr>
 <tr class="even">
-<td>Número o tamaño (enumeración)</td>
+<td>Number o Size (enumeración)</td>
 <td>List</td>
 </tr>
 <tr class="odd">
@@ -130,7 +130,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 </tr>
 <tr class="even">
 <td>Boolean</td>
-<td>Utiliza el control booleano.</td>
+<td>Usa el control booleano .</td>
 </tr>
 <tr class="odd">
 <td>Calendario</td>
@@ -138,11 +138,11 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 </tr>
 <tr class="even">
 <td>CheckboxDropList</td>
-<td>Utiliza el control de lista con las casillas.</td>
+<td>Usa el control de lista con casillas.</td>
 </tr>
 <tr class="odd">
-<td>Plegable</td>
-<td>Utiliza el control de lista desplegable.</td>
+<td>DropList</td>
+<td>Usa el control de lista desplegable.</td>
 </tr>
 <tr class="even">
 <td>MultiValueText</td>

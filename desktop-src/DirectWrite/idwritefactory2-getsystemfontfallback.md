@@ -3,8 +3,8 @@ title: Método IDWriteFactory2 GetSystemFontFallback
 description: Crea un objeto de reserva de fuentes a partir de la lista de reserva de fuentes del sistema.
 ms.assetid: 7F2BDB39-2CB4-4DB7-BBBA-74B0C07E7420
 keywords:
-- GetSystemFontFallback method Direct Write
-- Método GetSystemFontFallback Direct Write , interfaz IDWriteFactory2
+- Escritura directa del método GetSystemFontFallback
+- Método GetSystemFontFallback direct write , interfaz IDWriteFactory2
 - Método Direct Write de la interfaz IDWriteFactory2, GetSystemFontFallback
 topic_type:
 - apiref
@@ -56,7 +56,7 @@ Tipo: **HRESULT**
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

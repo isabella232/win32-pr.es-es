@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: e75ab6b796f23399b453a6c7eebfe0d40e3b7b49
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d245a96181e194479b0c5e115b3b3aea89096da8176713047578a93264e470da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119852365"
 ---
 # <a name="d3dx10createasynctextureprocessor-function"></a>Función D3DX10CreateAsyncTextureProcessor
 
@@ -90,7 +90,7 @@ Esta API crea una interfaz de procesador de datos y carga la textura; [**D3DX10C
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

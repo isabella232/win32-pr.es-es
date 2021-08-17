@@ -33,15 +33,15 @@ Declara un registro temporal indexable.
 
 | Elemento                                                                                                                           | Descripción                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| <span id="N"></span><span id="n"></span>*N*<br/>                                                                         | \[en \] Un entero que denota el número de registro.<br/>                              |
-| <span id="_size_"></span><span id="_SIZE_"></span>*\[Tamaño\]*<br/>                                                        | \[en \] Un valor entero opcional. Número de elementos de la matriz de registro.<br/>  |
+| <span id="N"></span><span id="n"></span>*N*<br/>                                                                         | \[en \] Entero que denota el número de registro.<br/>                              |
+| <span id="_size_"></span><span id="_SIZE_"></span>*\[Tamaño\]*<br/>                                                        | \[en \] Un valor entero opcional. Número de elementos de la matriz de registros.<br/>  |
 | <span id="ComponentCount"></span><span id="componentcount"></span><span id="COMPONENTCOUNT"></span>*ComponentCount*<br/> | \[en \] Un valor entero opcional. Número de componentes de la matriz de registro.<br/> |
 
 
 
  
 
-Un registro contiene suficiente espacio para un valor de cuatro componentes de 32 bits; el número de elementos de la matriz de registros temporales (indexables y no [indexables)](dcl-temps.md)no puede superar 4096.
+Un registro contiene suficiente espacio para un valor de cuatro componentes de 32 bits; El número de elementos de la matriz de registros temporales (indexable y no [indexable)](dcl-temps.md)no puede superar 4096.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -55,7 +55,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Esta instrucción se incluye para ayudar a depurar un sombreador en el ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
+Esta instrucción se incluye para ayudar a depurar un sombreador en ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
 
 ## <a name="example"></a>Ejemplo
 
@@ -77,12 +77,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -92,7 +92,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

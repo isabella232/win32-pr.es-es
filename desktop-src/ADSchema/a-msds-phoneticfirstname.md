@@ -27,7 +27,7 @@ Contiene el nombre fonético o el nombre de la persona.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | ms-DS-Phonetic-First-Name                   |
 | Ldap-Display-Name | msDS-PhoneticFirstName                      |
@@ -36,7 +36,7 @@ Contiene el nombre fonético o el nombre de la persona.
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1942                     |
 | System-Id-Guid    | 4b1cba4e-302f-4134-ac7c-f01f6c797843        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -50,14 +50,14 @@ Contiene el nombre fonético o el nombre de la persona.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x8C8E                                                             |
-| System-Only            | False                                                              |
-| Es de un solo valor       | True                                                               |
-| Está indexado             | True                                                               |
-| En el catálogo global      | True                                                               |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Verdadero                                                               |
+| En el catálogo global      | Verdadero                                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
@@ -71,14 +71,14 @@ Contiene el nombre fonético o el nombre de la persona.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x8C8E                                                             |
-| System-Only            | False                                                              |
-| Es de un solo valor       | True                                                               |
-| Está indexado             | True                                                               |
-| En el catálogo global      | True                                                               |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Verdadero                                                               |
+| En el catálogo global      | Verdadero                                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
@@ -92,14 +92,14 @@ Contiene el nombre fonético o el nombre de la persona.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x8C8E                                                             |
-| System-Only            | False                                                              |
-| Es de un solo valor       | True                                                               |
-| Está indexado             | True                                                               |
-| En el catálogo global      | True                                                               |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Verdadero                                                               |
+| En el catálogo global      | Verdadero                                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |

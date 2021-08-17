@@ -1,7 +1,7 @@
 ---
-description: El método SetRepaintStatus habilita o deshabilita los eventos Repaint.
+description: El método SetRepaintStatus habilita o deshabilita los eventos de repintado.
 ms.assetid: 94ae4935-459e-4009-9f64-c7c5b14504ae
-title: Método CBaseRenderer. SetRepaintStatus (Renbase. h)
+title: Método CBaseRenderer.SetRepaintStatus (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 39822b535680a699654e969abc316c10c54ba51b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 748d0091bd3d2eae11773a9f94b62ceeb92b2d3ca64049f1a1981e38bf222e8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016853"
 ---
-# <a name="cbaserenderersetrepaintstatus-method"></a>CBaseRenderer. SetRepaintStatus, método
+# <a name="cbaserenderersetrepaintstatus-method"></a>Método CBaseRenderer.SetRepaintStatus
 
-El `SetRepaintStatus` método habilita o deshabilita los eventos Repaint.
+El `SetRepaintStatus` método habilita o deshabilita los eventos de repintado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ void SetRepaintStatus(
 *bRepaint* 
 </dt> <dd>
 
-Valor booleano que indica si están habilitados los eventos Repaint. Si **es true**, el filtro enviará los eventos de [**EC \_ Repaint**](ec-repaint.md) al administrador de gráficos de filtro. De lo contrario, no enviará \_ eventos de Repaint de EC.
+Valor booleano que indica si los eventos de repintado están habilitados. Si **es TRUE,** el filtro enviará eventos [**EC \_ REPAINT**](ec-repaint.md) al administrador de gráficos de filtros. De lo contrario, no enviará eventos \_ EC REPAINT.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Valor booleano que indica si están habilitados los eventos Repaint. Si **es tru
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método garantiza que el administrador de gráficos de filtro no se inunda con eventos de Repaint de EC redundantes \_ . Una vez que el filtro envía un evento [**re \_ Repaint**](ec-repaint.md) , llama a este método con el valor **true**. El filtro no envía más eventos de \_ Repaint de EC hasta que reciba más datos.
+Este método garantiza que el administrador de gráficos de filtro no se inunde con eventos \_ EC REPAINT redundantes. Una vez que el filtro envía [**un evento EC \_ REPAINT,**](ec-repaint.md) llama a este método con el valor **TRUE**. El filtro no envía más eventos \_ EC REPAINT hasta que recibe más datos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Este método garantiza que el administrador de gráficos de filtro no se inunda 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Este método garantiza que el administrador de gráficos de filtro no se inunda 
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

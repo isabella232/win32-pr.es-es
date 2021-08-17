@@ -1,7 +1,7 @@
 ---
 description: Recupera una matriz de identificadores para los trazos dentro del objeto IContextNode.
 ms.assetid: 2420afec-6859-449b-92d8-0f4327281852
-title: 'IContextNode:: GetStrokeIds (método) (IACom. h)'
+title: Método IContextNode::GetStrokeIds (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 25592cd245eba135fa7e459ff3c5c5207fc6ff0a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ebe66d514b20fc558adce39c013cf559fbc63bb38f772bff73b0819c10426960
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967383"
 ---
-# <a name="icontextnodegetstrokeids-method"></a>IContextNode:: GetStrokeIds (método)
+# <a name="icontextnodegetstrokeids-method"></a>IContextNode::GetStrokeIds (método)
 
-Recupera una matriz de identificadores para los trazos dentro del objeto [**IContextNode**](icontextnode.md) .
+Recupera una matriz de identificadores para los trazos dentro del [**objeto IContextNode.**](icontextnode.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,22 +43,22 @@ HRESULT GetStrokeIds(
 *pulStrokeIdsCount* \[ in, out\]
 </dt> <dd>
 
-Número de trazos. No se utiliza el valor que se pasa.
+Número de trazos. No se usa el valor que se pasa.
 
 </dd> <dt>
 
-*pplStrokes* \[ enuncia\]
+*pplStrokes* \[ out\]
 </dt> <dd>
 
-Puntero a la matriz de identificadores de trazo para este objeto [**IContextNode**](icontextnode.md) .
+Puntero a la matriz de identificadores de trazo para este [**objeto IContextNode.**](icontextnode.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
 > Para evitar una pérdida de memoria, use [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) para liberar la memoria de \* *pplStrokes* cuando ya no necesite la información.
@@ -71,9 +71,9 @@ Para obtener una descripción de los valores devueltos, vea [clases e interfaces
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -91,7 +91,7 @@ Para obtener una descripción de los valores devueltos, vea [clases e interfaces
 [**IContextNode::GetStrokeCount**](icontextnode-getstrokecount.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

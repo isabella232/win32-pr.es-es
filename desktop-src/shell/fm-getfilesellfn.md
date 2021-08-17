@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 461fd171-d47f-41d6-953e-8e497e023ab1
-ms.openlocfilehash: e991d2705f74aa8822dcef89878e9762f22b08dc
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 2074fb1e631edf1795b8f0d15ea9f0d40e90556d527899873ef88195c2367576
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860772"
 ---
 # <a name="fm_getfilesellfn-message"></a>Mensaje \_ GETFILESELLFN de FM
 
@@ -46,7 +46,7 @@ Dirección de una [**estructura \_ GETFILESEL de FMS**](fms-getfilesel.md) que r
 
 Devuelve el índice de base cero del archivo seleccionado que se recuperó.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Solo las extensiones que admiten nombres de archivo largos (por ejemplo, extensiones compatibles con la red) deben usar este mensaje.
 
@@ -56,7 +56,7 @@ Una extensión puede usar el [**mensaje \_ FM GETSELCOUNTLFN**](fm-getselcountlf
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |

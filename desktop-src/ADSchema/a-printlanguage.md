@@ -1,11 +1,11 @@
 ---
-title: Print-Language atributo)
-description: El lenguaje de descripción de página compatible (por ejemplo, PostScript, PCL).
+title: Print-Language atributo
+description: El lenguaje de descripción de página admitido (por ejemplo, PostScript, PCL).
 ms.assetid: 454f2425-012f-4a2d-b383-7e1e626b0871
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Print-Language
-- printLanguage esquema de AD de atributos
+- Print-Language esquema de AD de atributo
+- Esquema de AD del atributo printLanguage
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac354fe2053ae82405adf96e2ff709ab891ecd77
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f2db3f709a07ac5ee79e7fc73df95ec3d6381b9e839370fe20fc2d067b4f0193
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837911"
 ---
-# <a name="print-language-attribute"></a>Print-Language atributo)
+# <a name="print-language-attribute"></a>Print-Language atributo
 
-El lenguaje de descripción de página compatible (por ejemplo, PostScript, PCL).
+El lenguaje de descripción de página admitido (por ejemplo, PostScript, PCL).
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | Print-Language                              |
-| Nombre para mostrar de LDAP | printLanguage                               |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | printLanguage                               |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.246                      |
-| System-ID-GUID    | 281416d6-1968-11d0-a28f-00aa003049e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 281416d6-1968-11d0-a28f-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ El lenguaje de descripción de página compatible (por ejemplo, PostScript, PCL)
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | False                                          |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Falso                                          |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
@@ -76,13 +76,13 @@ El lenguaje de descripción de página compatible (por ejemplo, PostScript, PCL)
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | False                                          |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Falso                                          |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
@@ -97,13 +97,13 @@ El lenguaje de descripción de página compatible (por ejemplo, PostScript, PCL)
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | False                                          |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Falso                                          |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
@@ -118,13 +118,13 @@ El lenguaje de descripción de página compatible (por ejemplo, PostScript, PCL)
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | False                                          |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Falso                                          |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
@@ -139,13 +139,13 @@ El lenguaje de descripción de página compatible (por ejemplo, PostScript, PCL)
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | False                                          |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Falso                                          |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
@@ -160,13 +160,13 @@ El lenguaje de descripción de página compatible (por ejemplo, PostScript, PCL)
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | False                                          |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Falso                                          |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
