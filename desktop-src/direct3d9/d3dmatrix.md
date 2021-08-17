@@ -1,7 +1,7 @@
 ---
 description: Describe una matriz.
 ms.assetid: d6b98a32-e745-4724-b8ce-a81a3f5416f3
-title: D3DMATRIX (D3D9Types. h)
+title: D3DMATRIX (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 6b4339d2e44e1add46103bae58ad3e02c8a6509b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ee4c67a4a743d3bff1cfc5ca88b6691e995f78a9fb01fe36aabc4ae6aca66e6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117732370"
 ---
 # <a name="d3dmatrix"></a>D3DMATRIX
 
@@ -47,15 +47,15 @@ Tipos derivados: \* LPD3DMATRIX
 
 | Elemento                                                        | Descripción                                                                                                                                                                                                     |
 |-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="_ij"></span><span id="_IJ"></span>\_ij<br/> | Matriz de puntos flotantes que representan una matriz 4x4, donde i es el número de fila y j es el número de columna. Por ejemplo, \_ 34 significa lo mismo que \[ ₃ ₄ \] , el componente de la tercera fila y la cuarta columna.<br/> |
+| <span id="_ij"></span><span id="_IJ"></span>\_Ij<br/> | Matriz de flotantes que representan una matriz de 4x4, donde i es el número de fila y j es el número de columna. Por ejemplo, 34 significa lo mismo que a₃₄ , el componente de \_ la tercera fila y la cuarta \[ \] columna.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En Direct3D, el \_ elemento 34 de una matriz de proyección no puede ser un número negativo. Si su aplicación necesita usar un valor negativo en esta ubicación, debe escalar toda la matriz de proyección en-1 en su lugar.
+En Direct3D, el \_ elemento 34 de una matriz de proyección no puede ser un número negativo. Si la aplicación necesita usar un valor negativo en esta ubicación, debe escalar toda la matriz de proyección en -1 en su lugar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ En Direct3D, el \_ elemento 34 de una matriz de proyección no puede ser un núm
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

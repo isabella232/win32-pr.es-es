@@ -22,8 +22,8 @@ Media [Streaming API proporciona](media-streaming-api-portal.md) las enumeracion
 | Tema                                                   | Descripción                                                                               |
 |---------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | [**ConnectionStatus**](connectionstatus.md)<br/> | Representa el estado del dispositivo en la red como se ha visto por última vez.<br/>                |
-| [**DeviceTypes**](devicetypes.md)<br/>           | Describe los tipos de dispositivos DLNA admitidos por Media Streaming API.<br/> |
-| [**TransportState**](transportstate.md)<br/>     | Define los estados de transporte disponibles, tal como se define en las directrices de UPnP.<br/>      |
+| [**DeviceTypes**](devicetypes.md)<br/>           | Describe los tipos de dispositivos DLNA compatibles con Media Streaming API.<br/> |
+| [**TransportState**](transportstate.md)<br/>     | Define los estados de transporte disponibles tal como se definen en las directrices de UPnP.<br/>      |
 | [**TransportStatus**](transportstatus.md)<br/>   | Define el estado de transporte disponible tal como se define en las directrices de UPnP.<br/>      |
 
 

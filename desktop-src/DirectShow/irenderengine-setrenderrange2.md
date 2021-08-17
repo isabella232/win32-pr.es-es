@@ -28,7 +28,7 @@ ms.locfileid: "118397576"
 
  
 
-El `SetRenderRange2` método establece el intervalo de tiempo en la escala de tiempo que se va a representar. Este método es equivalente a [**IRenderEngine::SetRenderRange**](irenderengine-setrenderrange.md), pero toma valores de tipo **double**.
+El `SetRenderRange2` método establece el intervalo de tiempo de la escala de tiempo que se va a representar. Este método es equivalente a [**IRenderEngine::SetRenderRange**](irenderengine-setrenderrange.md), pero toma valores de tipo **double**.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -83,7 +83,7 @@ Devuelve uno de los siguientes **valores HRESULT:**
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -102,10 +102,10 @@ Devuelve uno de los siguientes **valores HRESULT:**
 
 <dl> <dt>
 
-[**IRenderEngine (interfaz)**](irenderengine.md)
+[**IRenderEngine (Interfaz)**](irenderengine.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

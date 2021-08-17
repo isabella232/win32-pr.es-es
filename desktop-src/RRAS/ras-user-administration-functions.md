@@ -1,17 +1,17 @@
 ---
-title: Funciones de administración de usuarios de RAS
-description: Usar las siguientes funciones para administrar usuarios de acceso telefónico
+title: Funciones de administración de usuarios ras
+description: Use las siguientes funciones para administrar usuarios de acceso telefónico
 ms.assetid: e58fa4a6-16d3-4953-bf21-887d08e25af7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf8c1e7df962eff2064dac06da256f3a78e8ed17
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: be0965a2befbe8a52ff91c2a1323a0455072fbe696d29f5a3cbb15e40e3b7c00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104488162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117789146"
 ---
-# <a name="ras-user-administration-functions"></a>Funciones de administración de usuarios de RAS
+# <a name="ras-user-administration-functions"></a>Funciones de administración de usuarios ras
 
 Use las siguientes funciones para administrar usuarios de acceso telefónico:
 
@@ -20,8 +20,8 @@ Use las siguientes funciones para administrar usuarios de acceso telefónico:
 -   [**MprAdminUserGetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminusergetinfo)
 -   [**MprAdminUserSetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminusersetinfo)
 
-Para obtener una lista de los usuarios actuales de un dominio determinado, utilice la función [**NetQueryDisplayInformation**](/windows/win32/api/lmaccess/nf-lmaccess-netquerydisplayinformation) . El prototipo de esta función se encuentra en el archivo de encabezado lmaccess. h.
+Para obtener una lista de usuarios actuales en un dominio determinado, use la [**función NetQueryDisplayInformation.**](/windows/win32/api/lmaccess/nf-lmaccess-netquerydisplayinformation) El prototipo de esta función está en el archivo de encabezado lmaccess.h.
 
- 
+ 
 
- 
+ 

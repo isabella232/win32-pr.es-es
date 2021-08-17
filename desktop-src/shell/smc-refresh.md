@@ -1,6 +1,6 @@
 ---
-description: Envía una notificación de que los menús se han actualizado por completo y se puede restablecer su estado.
-title: Mensaje de SMC_REFRESH (shobjidl. h)
+description: Envía una notificación de que los menús se han actualizado completamente y puede restablecer el estado.
+title: SMC_REFRESH mensaje (Shobjidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 8c79d9d5-b7dc-4271-9edb-93b40606c9be
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: aab18245c6502d4d3424e6ed6727eceb5a329d48
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 31ac0164ed3cd69dbeb71adc44c6e3a15b9092db79c7972800068dc06a378786
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118047006"
 ---
-# <a name="smc_refresh-message"></a>Mensaje de actualización de SMC \_
+# <a name="smc_refresh-message"></a>Mensaje DE ACTUALIZACIÓN de SMC \_
 
-Envía una notificación de que los menús se han actualizado por completo y se puede restablecer su estado.
+Envía una notificación de que los menús se han actualizado completamente y puede restablecer el estado.
 
 
 ```C++
@@ -38,11 +38,11 @@ Este mensaje no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devolver S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
+El método [**IShellMenuCallback::CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,8 +52,8 @@ El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_c
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Shobjidl. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shobjidl. idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

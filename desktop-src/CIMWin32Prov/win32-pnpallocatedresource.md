@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI PnPAllocatedResource Association de Win32 representa una asociación entre dispositivos lógicos y recursos del sistema.
+description: La clase WMI de \_ asociación PnPAllocatedResource de Win32 representa una asociación entre dispositivos lógicos y recursos del sistema.
 ms.assetid: e3cef457-cf88-4df5-8db8-b0495f636904
 ms.tgt_platform: multiple
-title: Win32_PnPAllocatedResource (clase)
+title: Win32_PnPAllocatedResource clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 353009016c8d4d54cdc92fb8f0ed062567dded6f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 492bd510965499393b399e8e02c1b901fc33f9abc00acf191899c5bb6b8b6d71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118008949"
 ---
-# <a name="win32_pnpallocatedresource-class"></a>\_Clase Win32 PnPAllocatedResource
+# <a name="win32_pnpallocatedresource-class"></a>Clase \_ PnPAllocatedResource de Win32
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ PnPAllocatedResource** Association de Win32 representa una asociación entre dispositivos lógicos y recursos del sistema. Esta clase se usa para detectar los recursos que están en uso por un dispositivo específico, como una solicitud de interrupción (IRQ) o un canal de acceso directo a memoria (DMA).
+La clase WMI **de \_ asociación PnPAllocatedResource** [de](../wmisdk/retrieving-a-class.md) Win32 representa una asociación entre dispositivos lógicos y recursos del sistema. Esta clase se usa para detectar los recursos que un dispositivo específico está utilizando, como un canal de interrupción de la requestación (IRQ) o de acceso directo a memoria (DMA).
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -61,14 +61,14 @@ Tipo de datos: **CIM \_ SystemResource**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("antecedente"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("CIM \| CIM \_ SystemResource")
+Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("Antecedente"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("CIM \| \_ SystemResource")
 </dt> </dl>
 
-Referencia a la instancia de [**\_ SystemResource de CIM**](cim-systemresource.md) que representa las propiedades de un recurso del sistema disponible para el dispositivo lógico. Esta propiedad se hereda de [**la \_ dependencia CIM**](cim-dependency.md).
+Referencia a la [**instancia \_ systemResource de CIM**](cim-systemresource.md) que representa las propiedades de un recurso del sistema disponible para el dispositivo lógico. Esta propiedad se hereda de la [**dependencia \_ CIM**](cim-dependency.md).
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **Win32 \_ PnPEntity**
@@ -77,16 +77,16 @@ Tipo de datos: **Win32 \_ PnPEntity**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("dependiente"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| lógico CIM CIM \_ ")
+Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("Dependent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) \| ("CIM \_ LogicalDevice")
 </dt> </dl>
 
-Referencia a la instancia de [**Win32 \_ PnPEntity**](win32-pnpentity.md) que representa las propiedades del dispositivo lógico usando los recursos del sistema asignados a él. Esta propiedad se hereda de [**la \_ dependencia CIM**](cim-dependency.md).
+Referencia a la [**instancia de Win32 \_ PnPEntity**](win32-pnpentity.md) que representa las propiedades del dispositivo lógico mediante los recursos del sistema asignados a él. Esta propiedad se hereda de la [**dependencia \_ CIM**](cim-dependency.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ PnPAllocatedResource de Win32** se deriva de [**\_ AllocatedResource de CIM**](cim-allocatedresource.md).
+La **clase \_ PnPAllocatedResource de Win32** se deriva de [**CIM \_ AllocatedResource**](cim-allocatedresource.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,8 +96,8 @@ La **clase \_ PnPAllocatedResource de Win32** se deriva de [**\_ AllocatedResour
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,10 +106,10 @@ La **clase \_ PnPAllocatedResource de Win32** se deriva de [**\_ AllocatedResour
 
 <dl> <dt>
 
-[**\_ALLOCATEDRESOURCE CIM**](cim-allocatedresource.md)
+[**CIM \_ AllocatedResource**](cim-allocatedresource.md)
 </dt> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

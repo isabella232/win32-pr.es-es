@@ -42,13 +42,13 @@ Descriptor de seguridad asociado a la tarea.
 
 ## <a name="remarks"></a>Comentarios
 
-Al leer o escribir XML para una tarea, el descriptor de seguridad de la tarea se especifica mediante el [**elemento SecurityDescriptor**](taskschedulerschema-securitydescriptor-registrationinfotype-element.md) del Programador de tareas esquema.
+Al leer o escribir XML para una tarea, el descriptor de seguridad de la tarea se especifica mediante el [**elemento SecurityDescriptor**](taskschedulerschema-securitydescriptor-registrationinfotype-element.md) del esquema Programador de tareas datos.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
@@ -57,7 +57,7 @@ Al leer o escribir XML para una tarea, el descriptor de seguridad de la tarea se
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

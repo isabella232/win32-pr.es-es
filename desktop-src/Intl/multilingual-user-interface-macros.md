@@ -1,29 +1,29 @@
 ---
-description: 'MUI proporciona las siguientes macros, que se usan para recuperar información de una estructura FILEMUIINFO:'
+description: 'LA PROPIEDAD proporciona las macros siguientes, que se usan para recuperar información de una estructura FILEMUIINFO:'
 ms.assetid: d910d922-33f5-48ff-be0a-1ac11a13383a
-title: Macros de interfaz de usuario multilingüe
+title: Interfaz de usuario multilingüe Macros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4e41150ccadc68fbb5921ae295e464c91a8bbc4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 408200fccab9914c60d2dbc7a7f17a4de9c1f2c2b9c424c3beab1210aa875d82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118390808"
 ---
-# <a name="multilingual-user-interface-macros"></a>Macros de interfaz de usuario multilingüe
+# <a name="multilingual-user-interface-macros"></a>Interfaz de usuario multilingüe Macros
 
-MUI proporciona las siguientes macros, que se usan para recuperar información de una estructura [**FILEMUIINFO**](/windows/desktop/api/Winnls/ns-winnls-filemuiinfo) :
+LA PROPIEDAD proporciona las macros siguientes, que se usan para recuperar información de una [**estructura FILEMUIINFO:**](/windows/desktop/api/Winnls/ns-winnls-filemuiinfo)
 
 <dl>
 
-[**FILEMUIINFO \_ obtener \_ referencia cultural**](/windows/desktop/api/Winnls/nf-winnls-filemuiinfo_get_culture)  
-[**FILEMUIINFO \_ Get \_ Main \_ TYPEID**](/windows/desktop/api/Winnls/nf-winnls-filemuiinfo_get_main_typeid)  
-[**FILEMUIINFO \_ obtener \_ \_ typeid principal**](/windows/desktop/api/Winnls/nf-winnls-filemuiinfo_get_main_typeids)  
-[**FILEMUIINFO \_ obtener \_ \_ TYPENAMES principal**](/windows/desktop/api/Winnls/nf-winnls-filemuiinfo_get_main_typenames)  
-[**FILEMUIINFO \_ Get \_ mui \_ TYPEID**](/windows/desktop/api/Winnls/nf-winnls-filemuiinfo_get_mui_typeid)  
-[**FILEMUIINFO \_ obtener \_ typeid de MUI \_**](/windows/desktop/api/Winnls/nf-winnls-filemuiinfo_get_mui_typeids)  
-[**FILEMUIINFO \_ obtener \_ TYPENAMES de MUI \_**](/windows/desktop/api/Winnls/nf-winnls-filemuiinfo_get_mui_typenames)  
+[**FILEMUIINFO \_ GET \_ CULTURE**](/windows/desktop/api/Winnls/nf-winnls-filemuiinfo_get_culture)  
+[**FILEMUIINFO \_ GET \_ MAIN \_ TYPEID**](/windows/desktop/api/Winnls/nf-winnls-filemuiinfo_get_main_typeid)  
+[**FILEMUIINFO \_ GET \_ MAIN \_ TYPEIDS**](/windows/desktop/api/Winnls/nf-winnls-filemuiinfo_get_main_typeids)  
+[**FILEMUIINFO \_ GET \_ MAIN \_ TYPENAMES**](/windows/desktop/api/Winnls/nf-winnls-filemuiinfo_get_main_typenames)  
+[**FILEMUIINFO \_ GET \_ MIME \_ TYPEID**](/windows/desktop/api/Winnls/nf-winnls-filemuiinfo_get_mui_typeid)  
+[**FILEMUIINFO \_ GET \_ MIME \_ TYPEIDS**](/windows/desktop/api/Winnls/nf-winnls-filemuiinfo_get_mui_typeids)  
+[**FILEMUIINFO \_ GET \_ MIME \_ TYPENAMES**](/windows/desktop/api/Winnls/nf-winnls-filemuiinfo_get_mui_typenames)  
 </dl>
 
  

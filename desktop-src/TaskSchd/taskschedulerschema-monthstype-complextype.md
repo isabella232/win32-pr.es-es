@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de monthsType
-description: Define los elementos secundarios e información de secuenciación para los elementos months (monthlyDayOfWeekScheduleType) y months (monthlyScheduleType).
+title: tipo complejo monthsType
+description: Define los elementos secundarios y la información de secuenciación para los elementos Months (monthlyDayOfWeekScheduleType) y Months (monthlyScheduleType).
 ms.assetid: f1faa67a-2f5f-4a00-a1df-2d44e218278b
 keywords:
-- tipo complejo de monthsType Programador de tareas
+- monthsType tipo complejo Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e6a19000073fd12e05aa915921850264979a0541
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a0873f07cc76af9fab827c3df98a8f08ef300de93d4ae6b316809ba32aac87ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117758751"
 ---
-# <a name="monthstype-complex-type"></a>Tipo complejo de monthsType
+# <a name="monthstype-complex-type"></a>tipo complejo monthsType
 
-Define los elementos secundarios e información de secuenciación para los elementos [**months (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) y [**months (monthlyScheduleType)**](taskschedulerschema-months-monthlyscheduletype-element.md) .
+Define los elementos secundarios y la información de secuenciación para los elementos [**Months (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) y [**Months (monthlyScheduleType).**](taskschedulerschema-months-monthlyscheduletype-element.md)
 
 ``` syntax
 <xs:complexType name="monthsType">
@@ -118,8 +118,8 @@ Define los elementos secundarios e información de secuenciación para los eleme
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -127,7 +127,7 @@ Define los elementos secundarios e información de secuenciación para los eleme
 
 <dl> <dt>
 
-[Tipos complejos de esquema Programador de tareas](task-scheduler-schema-complex-types.md)
+[Programador de tareas complejos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

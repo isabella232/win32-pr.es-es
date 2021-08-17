@@ -27,7 +27,7 @@ ms.locfileid: "118434731"
 ---
 # <a name="about-the-windows-media-drm-client-extended-apis"></a>Acerca de Windows API extendidas del cliente DRM multimedia
 
-Las Windows interfaces de programación de aplicaciones extendidas (API) de Rights Management Media Digital Rights Management (DRM) permiten a los desarrolladores de aplicaciones administrar las operaciones DRM del lado cliente.
+Las interfaces de programación de aplicaciones (API) extendidas (API) de Windows Media Digital Rights Management (DRM) permiten a los desarrolladores de aplicaciones administrar las operaciones DRM del lado cliente.
 
 Esta información general contiene las secciones siguientes.
 
@@ -35,9 +35,9 @@ Esta información general contiene las secciones siguientes.
 
 | Sección                                                                                                              | Descripción                                                                                                |
 |----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [Información general de Windows DRM multimedia](overview-of-windows-media-drm.md)                                                   | Proporciona una introducción sencilla del proceso DRM.                                                             |
+| [Introducción a Windows DRM multimedia](overview-of-windows-media-drm.md)                                                   | Proporciona una introducción sencilla del proceso DRM.                                                             |
 | [Conceptos](drmconcepts.md)                                                                                          | Describe los conceptos fundamentales para comprender Windows API extendidas del cliente DRM multimedia.                    |
-| [Introducción a los usuarios del SDK Windows Media Format](introduction-for-users-of-the-windows-media-format-sdk.md) | Proporciona información sobre el uso de estas API junto con el SDK Windows Media Format.              |
+| [Introducción a los usuarios del SDK Windows Media Format](introduction-for-users-of-the-windows-media-format-sdk.md) | Proporciona información sobre el uso de estas API junto con Windows SDK de formato multimedia.              |
 | [Importar y exportar contenido protegido con DRM](importing-and-exporting-drm-protected-content.md)                   | Describe el rol principal de las API extendidas de Windows DRM multimedia.                                  |
 | [Aplicaciones de ejemplo](drm-sample-applications.md)                                                                   | Describe las aplicaciones de ejemplo y el código de ejemplo contenidos en Windows API extendidas del cliente DRM multimedia. |
 | [Para obtener más información](drm-for-more-information.md)                                                                 | Describe dónde encontrar recursos adicionales Windows DRM multimedia en el sitio web de Microsoft.                  |

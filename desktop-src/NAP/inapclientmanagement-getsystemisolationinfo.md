@@ -58,7 +58,7 @@ Puntero a un puntero a una estructura [**IsolationInfo**](/windows/win32/api/nap
 *unknownConnections* \[ out\]
 </dt> <dd>
 
-Puntero a una marca que indica si alguna de las conexiones está en un estado desconocido. Si alguno de ellos es , la marca se establece en **TRUE**; De lo contrario, la marca se establece **en FALSE.**
+Puntero a una marca que indica si alguna de las conexiones está en un estado desconocido. Si alguno de ellos lo es, la marca se establece en **TRUE**; De lo contrario, la marca se establece **en FALSE.**
 
 </dd> </dl>
 

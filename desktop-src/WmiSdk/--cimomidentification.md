@@ -2,7 +2,7 @@
 description: Describe la instalación local de WMI.
 ms.assetid: 907b65b2-a853-40f4-8b36-5a05a2b1cf85
 ms.tgt_platform: multiple
-title: __CIMOMIdentification (clase)
+title: __CIMOMIdentification clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_type:
 - Schema
 api_location:
 - Root
-ms.openlocfilehash: a8590a2a83cdbc9bd06575cf17ddbe65138a4a31
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50d81fb8cfc5580ad0868df307771c493c0919e1bf2ce4de4b67d48db034a0d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118321115"
 ---
-# <a name="__cimomidentification-class"></a>\_\_Clase CIMOMIdentification
+# <a name="__cimomidentification-class"></a>\_\_CIMOMIdentification (clase)
 
-La clase del sistema **\_ \_ CIMOMIdentification** describe la instalación local de WMI. Se trata de una clase singleton; solo hay una instancia. La clase **\_ \_ CIMOMIdentification** solo está disponible en los **espacios de nombres raíz y raíz** **\\ predeterminados** . Los usuarios consultan la instancia para obtener información sobre la instalación de WMI.
+La **\_ \_ clase del sistema CIMOMIdentification** describe la instalación local de WMI. Se trata de una clase singleton; solo hay una instancia. La **\_ \_ clase CIMOMIdentification** solo está disponible en los espacios de nombres **Root** y **Root \\ Default.** Los usuarios consultan la instancia de para obtener información sobre la instalación de WMI.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -46,13 +46,13 @@ class __CIMOMIdentification : __SystemClass
 
 ## <a name="members"></a>Miembros
 
-La clase **\_ \_ CIMOMIdentification** tiene estos tipos de miembros:
+La **\_ \_ clase CIMOMIdentification** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **\_ \_ CIMOMIdentification** tiene estas propiedades.
+La **\_ \_ clase CIMOMIdentification** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -65,9 +65,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha y hora de instalación. Esta propiedad está vacía después de instalar el sistema operativo por primera vez.
+Fecha y hora de la instalación. Esta propiedad está vacía después de instalar el sistema operativo por primera vez.
 
-Si se ha eliminado el repositorio WMI y, a continuación, se ha creado de nuevo, esta propiedad contiene la fecha y la hora de creación del repositorio de nuevo.
+Si el repositorio WMI se ha eliminado y luego se ha creado de nuevo, esta propiedad contiene la fecha y hora en que se vuelve a crear el repositorio.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica la versión de la imagen real que contiene el servicio WMI que creó el repositorio Modelo de información común (CIM). Dado que el formato del repositorio puede cambiar entre las versiones de WMI, esta propiedad permite futuras actualizaciones de WMI para determinar si se debe actualizar la base de datos. El formato es:
+Indica la versión de la imagen real que contiene el servicio WMI que creó el repositorio Modelo de información común (CIM). Dado que el formato del repositorio puede cambiar entre versiones de WMI, esta propiedad permite que futuras actualizaciones de WMI determinen si se debe actualizar la base de datos. El formato es:
 
 "1.00.183.0000"
 
@@ -97,7 +97,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica la versión de la imagen real que contiene el servicio WMI que creó el repositorio CIM. Dado que el formato del repositorio puede cambiar entre las versiones de WMI, esta propiedad permite futuras actualizaciones de WMI para determinar si se debe actualizar la base de datos. El formato es:
+Indica la versión de la imagen real que contiene el servicio WMI que creó el repositorio CIM. Dado que el formato del repositorio puede cambiar entre versiones de WMI, esta propiedad permite que futuras actualizaciones de WMI determinen si se debe actualizar la base de datos. El formato es:
 
 "1.00.183.0000"
 
@@ -118,13 +118,13 @@ Directorio de instalación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **\_ \_ CIMOMIdentification** se deriva de [**\_ \_ SystemClass**](--systemclass.md), que no tiene propiedades.
+La **\_ \_ clase CIMOMIdentification** se deriva de [**\_ \_ SystemClass**](--systemclass.md), que no tiene propiedades.
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente ejemplo de código de VBScript describe cómo mostrar la información de identificación del modelo de objetos CIM y se tomó del directorio de ejemplo en \\ \\ archivos de programa \\ Microsoft SDK \\ Windows \\ v 7.0 \\ Samples \\ sysmgmt \\ WMI \\ scripting.
+En el siguiente ejemplo de código de VBScript se describe cómo mostrar la información de identificación del modelo de objetos CIM y se tomó del directorio de ejemplo en Archivos de programa SDK de Microsoft Windows script wmi de sysmgmt de ejemplos \\ \\ \\ \\ \\ v7.0. \\ \\ \\ \\
 
 
 ```VB
@@ -141,7 +141,7 @@ end if
 
 
 
-El siguiente ejemplo de código Perl describe cómo mostrar la información de identificación del modelo de objetos CIM y se tomó del directorio de ejemplo en \\ \\ archivos de programa \\ Microsoft SDK \\ Windows \\ v 7.0 \\ Samples \\ sysmgmt \\ WMI \\ scripting.
+En el siguiente ejemplo de código Perl se describe cómo mostrar la información de identificación del modelo de objetos CIM y se ha tomado del directorio de ejemplo en Archivos de programa SDK de Microsoft Windows script wmi de sysmgmt de ejemplos \\ \\ \\ \\ \\ v7.0. \\ \\ \\ \\
 
 
 ```Perl
@@ -170,7 +170,7 @@ else
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
@@ -178,7 +178,7 @@ else
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

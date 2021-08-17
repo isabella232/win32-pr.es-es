@@ -48,7 +48,7 @@ typedef struct _RAS_PPP_PROJECTION_RESULT {
 **nbf**
 </dt> <dd>
 
-Estructura [**RAS \_ PPP \_ NBFCP \_ RESULT**](ras-ppp-nbfcp-result-str.md) que informa del resultado de una operación de proyección ppp NetBEUI Framer (NBF).
+Estructura [**RAS \_ PPP \_ NBFCP \_ RESULT**](ras-ppp-nbfcp-result-str.md) que informa del resultado de una operación de proyección de PPP NetBEUI Framer (NBF).
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Estructura [**RAS \_ PPP \_ IPCP \_ RESULT**](ras-ppp-ipcp-result-str.md) que in
 **Ipx**
 </dt> <dd>
 
-Estructura [**DE \_ \_ RESULTADOs DE IPXCP \_ de PPP ras**](ras-ppp-ipxcp-result-str.md) que informa del resultado de una operación de proyección de paquetes de trabajo Exchange de trabajo de PPP (IPX).
+Estructura [**DE \_ \_ RESULTADOs DE IPXCP \_ de PPP ras**](ras-ppp-ipxcp-result-str.md) que informa del resultado de una operación de proyección de paquetes de trabajo Exchange ppp (IPX).
 
 </dd> <dt>
 
@@ -81,7 +81,7 @@ Esta estructura informa de los resultados de proyección para los protocolos Net
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
@@ -91,7 +91,7 @@ Esta estructura informa de los resultados de proyección para los protocolos Net
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

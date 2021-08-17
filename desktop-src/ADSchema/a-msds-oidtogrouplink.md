@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-OIDToGroup-Link
-description: En el caso de un OID, identifica el objeto de grupo correspondiente a la Directiva de emisión representada por este OID.
+title: Atributo ms-DS-OIDToGroup-Link
+description: Para un OID, identifica el objeto de grupo que corresponde a la directiva de emisión representada por este OID.
 ms.assetid: aebd0803-9c8f-4a33-8982-739941d65754
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-OIDToGroup-Link
-- Esquema de AD de atributo msDS-OIDToGroupLink
+- Esquema de AD del atributo ms-DS-OIDToGroup-Link
+- Esquema de AD del atributo msDS-OIDToGroupLink
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61d562cb2ac1c07b5dd0507bc8b059662e3abc55
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7acd07f3d1d323b300f914724cfc3d75492eb65631eef8b0331b974d4f54379b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118014426"
 ---
-# <a name="ms-ds-oidtogroup-link-attribute"></a>atributo MS-DS-OIDToGroup-Link
+# <a name="ms-ds-oidtogroup-link-attribute"></a>Atributo ms-DS-OIDToGroup-Link
 
-En el caso de un OID, identifica el objeto de grupo correspondiente a la Directiva de emisión representada por este OID.
+Para un OID, identifica el objeto de grupo que corresponde a la directiva de emisión representada por este OID.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-OIDToGroup-Link                   |
-| Nombre para mostrar de LDAP | msDS-OIDToGroupLink                     |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DS-OIDToGroup-Link                   |
+| Ldap-Display-Name | msDS-OIDToGroupLink                     |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2051                 |
-| System-ID-GUID    | f9c9a57c-3941-438d-bebf-0edaf2aca187    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | f9c9a57c-3941-438d-bebf-0edaf2aca187    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -51,18 +51,18 @@ En el caso de un OID, identifica el objeto de grupo correspondiente a la Directi
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | 2164                                                               |
+| Id. de vínculo                | 2164                                                               |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Clases usadas en        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 
@@ -72,18 +72,18 @@ En el caso de un OID, identifica el objeto de grupo correspondiente a la Directi
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | 2164                                                               |
+| Id. de vínculo                | 2164                                                               |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Clases usadas en        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 

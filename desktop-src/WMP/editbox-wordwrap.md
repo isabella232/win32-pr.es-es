@@ -1,9 +1,9 @@
 ---
-title: EDITBOX. wordWrap
-description: El atributo wordWrap especifica o recupera un valor que indica si está habilitado el ajuste de palabras.
+title: EDITBOX.wordWrap
+description: El atributo wordWrap especifica o recupera un valor que indica si el ajuste de línea está habilitado.
 ms.assetid: 027817f0-e077-4db5-8216-f9a9f41fd210
 keywords:
-- EDITBOX. wordWrap Windows Media Player
+- EDITBOX.wordWrap Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fefe92691a150571ce16b0c80d187540d58f5f6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2f9e02ff9665eac98717e1d316899a78f9b3b5908e5e41b3928b5cda541b96c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117749257"
 ---
-# <a name="editboxwordwrap"></a>EDITBOX. wordWrap
+# <a name="editboxwordwrap"></a>EDITBOX.wordWrap
 
-El atributo **WordWrap** especifica o recupera un valor que indica si está habilitado el ajuste de palabras.
+El **atributo wordWrap** especifica o recupera un valor que indica si el ajuste de línea está habilitado.
 
 ``` syntax
         elementID.wordWrap
@@ -29,13 +29,13 @@ El atributo **WordWrap** especifica o recupera un valor que indica si está habi
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **booleano** de lectura/escritura con un valor predeterminado de true.
+Este atributo es un booleano **de** lectura y escritura con un valor predeterminado de true.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo solo es útil cuando **editStyle** se establece en "Multiline".
+Este atributo solo es útil cuando **editStyle** se establece en "multilínea".
 
-Si el ajuste de palabra está deshabilitado y el texto no cabe en el control, el texto se trunca.
+Si el ajuste de línea está deshabilitado y el texto no cabe en el control , el texto se trunca.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Si el ajuste de palabra está deshabilitado y el texto no cabe en el control, el
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 
@@ -54,7 +54,7 @@ Si el ajuste de palabra está deshabilitado y el texto no cabe en el control, el
 [**Elemento EDITBOX**](editbox-element.md)
 </dt> <dt>
 
-[**EDITBOX. editStyle**](editbox-editstyle.md)
+[**EDITBOX.editStyle**](editbox-editstyle.md)
 </dt> </dl>
 
  

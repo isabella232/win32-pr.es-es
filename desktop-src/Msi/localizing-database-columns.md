@@ -1,5 +1,5 @@
 ---
-description: Modifique cualquiera de las demás columnas localizables de la base MNPFren.msi datos mediante un editor de tablas como Orca o SQL consultas.
+description: Modifique cualquiera de las demás columnas localizables de la base de datos MNPFren.msi mediante un editor de tablas, como Orca o SQL consultas.
 ms.assetid: b62cf529-71a0-47ff-99ea-a182c0fe4479
 title: Localización de columnas de base de datos
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "118629460"
 ---
 # <a name="localizing-database-columns"></a>Localización de columnas de base de datos
 
-Modifique cualquiera de las demás columnas localizables de la base MNPFren.msi datos mediante un editor de tablas como Orca o SQL consultas. Para determinar qué columnas de una tabla determinada se pueden localizar a otro idioma, consulte el tema de referencia de esa tabla de base de datos. Vea [Tablas de base de](database-tables.md) datos para obtener una lista de todas las tablas de base de datos.
+Modifique cualquiera de las demás columnas localizables de la base de datos MNPFren.msi mediante un editor de tablas, como Orca o SQL consultas. Para determinar qué columnas de una tabla determinada se pueden localizar a otro idioma, vea el tema de referencia de esa tabla de base de datos. Vea [Tablas de base de](database-tables.md) datos para obtener una lista de todas las tablas de base de datos.
 
 Por ejemplo, es posible que el campo Texto de algunos registros de la [tabla Control](control-table.md) tenga que traducirse al francés. La cadena "¿Está seguro de que desea cancelar la instalación \[ de \] ProductName?" en el [cuadro de diálogo Cancelar](cancel-dialog.md) se puede modificar en esta tabla para que se muestre en francés. El registro original en .msi archivo aparece como sigue.
 
-[Tabla de](control-table.md) control (parcial) del archivo de .msi original
+[Tabla de](control-table.md) control (parcial) del archivo .msi original
 
 
 
@@ -45,9 +45,9 @@ Puede usar un editor de tablas para modificar el campo Texto, como el editor de 
 
  
 
-Si el usuario cancela la instalación de MNPFren.msi,  aparece el cuadro de diálogo Cancelar en el que se muestra el texto: "Ötes-vous sör de vouloir que prescindía de l'installation de MNP2000?".
+Si el usuario cancela la instalación de MNPFren.msi,  aparece el cuadro de diálogo Cancelar que muestra el texto: "Ötes-vous sör de vouloir displayinger l'installation de MNP2000?"
 
-Cuando se usa este método para localizar el texto de la interfaz de usuario en un idioma diferente, se debe probar la interfaz de usuario localizada para asegurarse de que el tamaño de los controles es lo suficientemente grande como para mostrar todo el texto localizado. Debe probarse con todas las configuraciones de tamaño de fuente que están disponibles para mostrarse. El texto localizado puede requerir más espacio que el texto original y puede truncarse si se muestra en un control demasiado pequeño.
+Cuando se usa este método para localizar el texto de la interfaz de usuario en un idioma diferente, se debe probar la interfaz de usuario localizada para asegurarse de que el tamaño de los controles es lo suficientemente grande como para mostrar todo el texto localizado. Esto debe probarse con todas las configuraciones de tamaño de fuente que están disponibles para mostrarse. El texto localizado puede requerir más espacio que el texto original y puede truncarse si se muestra en un control demasiado pequeño.
 
 [Continuar](updating-productlanguage-and-productcode-properties.md)
 

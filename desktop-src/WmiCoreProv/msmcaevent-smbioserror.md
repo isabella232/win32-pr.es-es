@@ -122,7 +122,7 @@ Nivel de gravedad del error notificado.
 
 
 
-| Value                                                                                                | Significado                |
+| Valor                                                                                                | Significado                |
 |------------------------------------------------------------------------------------------------------|------------------------|
 | <span id="0"></span><dl> <dt>**0**</dt> </dl> | Recuperable<br/> |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Grave<br/>       |
@@ -217,7 +217,7 @@ Tipo de evento.
 
 
 
-| Value                                                                                                  | Significado                                                                                                                     |
+| Valor                                                                                                  | Significado                                                                                                                     |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
 | <span id="0"></span><dl> <dt>**0**</dt> </dl>   | Reservado.<br/>                                                                                                        |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl>   | Error de memoria ECC de un solo bit.<br/>                                                                                     |
@@ -250,7 +250,7 @@ Tipo de evento.
 
 </dd> <dt>
 
-**Type**
+**Tipo**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint32**
@@ -278,7 +278,7 @@ Para obtener más información sobre el **uso de valores uint64** en scripts, ve
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La **clase MSMCAEvent \_ SMBIOSError** se deriva de [**WMIEvent**](wmievent.md).
 
@@ -286,7 +286,7 @@ La **clase MSMCAEvent \_ SMBIOSError** se deriva de [**WMIEvent**](wmievent.md).
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                         |
@@ -296,7 +296,7 @@ La **clase MSMCAEvent \_ SMBIOSError** se deriva de [**WMIEvent**](wmievent.md).
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

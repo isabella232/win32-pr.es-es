@@ -1,6 +1,6 @@
 ---
-title: Guía del desarrollador para Active Accessibility clientes
-description: Guía del desarrollador para Active Accessibility clientes
+title: Guía del desarrollador para clientes Active Accessibility desarrolladores
+description: Guía del desarrollador para clientes Active Accessibility desarrolladores
 ms.assetid: 0a17cc30-2340-47b1-97ba-79c1de48d359
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118325432"
 ---
-# <a name="developers-guide-for-active-accessibility-clients"></a>Guía del desarrollador para Active Accessibility clientes
+# <a name="developers-guide-for-active-accessibility-clients"></a>Guía del desarrollador para clientes Active Accessibility desarrolladores
 
 Esta sección está para desarrolladores cliente que usan Microsoft Active Accessibility para obtener información sobre los elementos de la interfaz de usuario.
 

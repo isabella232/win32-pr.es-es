@@ -1,5 +1,5 @@
 ---
-description: Transformación escalar utilizada por Drawing o InkWord.
+description: Transformación escalar usada por drawing o InkWord.
 ms.assetid: 88fc3b90-9ec6-41c0-9267-ed5b585ea07b
 title: Elemento ScalarTransform
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118449345"
 ---
 # <a name="scalartransform-element"></a>Elemento ScalarTransform
 
-Transformación escalar utilizada por [**Drawing**](drawing-element.md) o [**InkWord.**](inkword-element.md)
+Transformación escalar utilizada por [**drawing**](drawing-element.md) o [**InkWord.**](inkword-element.md)
 
 ## <a name="definition"></a>Definición
 
@@ -35,17 +35,17 @@ Ninguno.
 
 
 
-| Atributo | Tipo           | Obligatorio | Descripción | Valores posibles     |
+| Atributo | Tipo           | Requerido | Descripción | Valores posibles     |
 |-----------|----------------|----------|-------------|---------------------|
-| **Mat1**  | **xs:decimal** | Obligatorio |             | Cualquier número decimal. |
-| **Mat2**  | **xs:decimal** | Obligatorio |             | Cualquier número decimal. |
-| **Mat3**  | **xs:decimal** | Obligatorio |             | Cualquier número decimal. |
-| **Mat4**  | **xs:decimal** | Obligatorio |             | Cualquier número decimal. |
-| **Mat5**  | **xs:decimal** | Obligatorio |             | Cualquier número decimal. |
-| **Mat6**  | **xs:decimal** | Obligatorio |             | Cualquier número decimal. |
-| **Mat7**  | **xs:decimal** | Obligatorio |             | Cualquier número decimal. |
-| **Mat8**  | **xs:decimal** | Obligatorio |             | Cualquier número decimal. |
-| **Mat9**  | **xs:decimal** | Obligatorio |             | Cualquier número decimal. |
+| **Mat1**  | **xs:decimal** | Requerido |             | Cualquier número decimal. |
+| **Mat2**  | **xs:decimal** | Requerido |             | Cualquier número decimal. |
+| **Mat3**  | **xs:decimal** | Requerido |             | Cualquier número decimal. |
+| **Mat4**  | **xs:decimal** | Requerido |             | Cualquier número decimal. |
+| **Mat5**  | **xs:decimal** | Requerido |             | Cualquier número decimal. |
+| **Mat6**  | **xs:decimal** | Requerido |             | Cualquier número decimal. |
+| **Mat7**  | **xs:decimal** | Requerido |             | Cualquier número decimal. |
+| **Mat8**  | **xs:decimal** | Requerido |             | Cualquier número decimal. |
+| **Mat9**  | **xs:decimal** | Requerido |             | Cualquier número decimal. |
 
 
 

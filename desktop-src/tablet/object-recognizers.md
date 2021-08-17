@@ -20,11 +20,11 @@ Además de reconocer texto, los reconocedores pueden reconocer una clase de obje
 -   Ecuaciones matemáticas
 -   Flow de gráfico
 
-Normalmente, los objetos que reconoce este reconocedor están en una relación espacial o funcional bidimensional entre sí. Por ejemplo, dentro de las relaciones complejas de una ecuación matemática, un reconocedor puede devolver resultados diferentes para un límite superior en una integral definitiva en lugar de un numerador en una fracción.
+Normalmente, los objetos reconocidos por este reconocedor están en una relación espacial o funcional bidimensional entre sí. Por ejemplo, dentro de las relaciones complejas de una ecuación matemática, un reconocedor puede devolver resultados diferentes para un límite superior en un entero definido en lugar de un numerador en una fracción.
 
 Debido a la naturaleza muy general de estas relaciones, es muy difícil definir el conjunto de interfaces que funcionarán para cada reconocedor de objetos.
 
-La tecnología de tablet PC proporciona un marco básico para los reconocedores de objetos en las interfaces de automatización y biblioteca administrada. Sin embargo, debe desarrollar interfaces personalizadas que describan relaciones espaciales complejas entre objetos reconocidos para cada reconocedor de objetos. En concreto, para los reconocedores de objetos, la plataforma proporciona el objeto [**RecognizerContext**](inkrecognizercontext-class.md) básico para asociar el objeto [**Ink**](inkdisp-class.md) con el contexto del reconocedor y para llamar al reconocedor para realizar el reconocimiento.
+La tecnología de pc de tableta proporciona un marco básico para los reconocedores de objetos en las interfaces de automatización y biblioteca administrada. Sin embargo, debe desarrollar interfaces personalizadas que describan relaciones espaciales complejas entre objetos reconocidos para cada reconocedor de objetos. En concreto, para los reconocedores de objetos, la plataforma proporciona el objeto [**RecognizerContext**](inkrecognizercontext-class.md) básico para asociar el objeto [**Ink**](inkdisp-class.md) al contexto del reconocedor y para llamar al reconocedor para realizar el reconocimiento.
 
  
 

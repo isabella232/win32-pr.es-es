@@ -2,7 +2,7 @@
 description: Representa una propiedad de dispositivo PnP de tipo Sint64.
 ms.assetid: AA6D505D-505B-4C79-921B-F37926B89FCA
 ms.tgt_platform: multiple
-title: Win32_PnPDevicePropertySint64 (clase)
+title: Win32_PnPDevicePropertySint64 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,16 +19,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: fd4767382181f45408e0fb4a361fa77e5a863c2b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d7a8de344860a0f4f475c3c3503c041429f4ec0ba6780a8a1b0ee49a5bfed70c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104496703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118008794"
 ---
-# <a name="win32_pnpdevicepropertysint64-class"></a>\_Clase Win32 PnPDevicePropertySint64
+# <a name="win32_pnpdevicepropertysint64-class"></a>Clase Win32 \_ PnPDevicePropertySint64
 
-Representa una propiedad de dispositivo PnP de tipo **Sint64**.
+Representa una propiedad de dispositivo PnP de tipo **Sint64.**
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -47,17 +47,17 @@ class Win32_PnPDevicePropertySint64 : Win32_PnPDeviceProperty
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ PnPDevicePropertySint64 de Win32** tiene estos tipos de miembros:
+La **clase Win32 \_ PnPDevicePropertySint64** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ PnPDevicePropertySint64 de Win32** tiene estas propiedades.
+La **clase Win32 \_ PnPDevicePropertySint64** tiene estas propiedades.
 
 <dl> <dt>
 
-**Data**
+**Datos**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **Sint64**
@@ -70,7 +70,7 @@ Valor de propiedad.
 
 </dd> <dt>
 
-**ID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -94,13 +94,13 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Valor del par de Name-Value de claves que identifica la propiedad de **datos** .
+Valor del par de Name-Value clave que identifica la **propiedad** Data.
 
 Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 </dd> <dt>
 
-**Clave**
+**Keyname**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -109,7 +109,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del par de Name-Value de claves que identifica la propiedad de **datos** .
+Nombre del par de Name-Value clave que identifica la **propiedad** Data.
 
 Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
@@ -124,7 +124,7 @@ Tipo de datos: **Uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de la propiedad de **datos** .
+Tipo de la **propiedad** Data.
 
 Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
@@ -225,7 +225,7 @@ Los valores posibles son.
 
 <span id="Guid"></span><span id="guid"></span><span id="GUID"></span>
 
-**GUID** (13)
+**Guid** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -319,7 +319,7 @@ Los valores posibles son.
 **Reserved**
 
 
-</dt> <dd>26 –</dd> <dt>
+</dt> <dd>26–4097</dd> <dt>
 
 <span id="SByteArray"></span><span id="sbytearray"></span><span id="SBYTEARRAY"></span>
 
@@ -337,14 +337,14 @@ Los valores posibles son.
 
 <span id="Int16Array"></span><span id="int16array"></span><span id="INT16ARRAY"></span>
 
-**, Int16array** (4100)
+**Int16Array** (4100)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="UInt16Array"></span><span id="uint16array"></span><span id="UINT16ARRAY"></span>
 
-**, Uint16array** (4101)
+**UInt16Array** (4101)
 
 
 </dt> <dd></dd> <dt>
@@ -477,7 +477,7 @@ Los valores posibles son.
 
 <span id="Unknown_-_check_in_devpropdef.h"></span><span id="unknown_-_check_in_devpropdef.h"></span><span id="UNKNOWN_-_CHECK_IN_DEVPROPDEF.H"></span>
 
-**Unknown-check en devpropdef. h** (4120)
+**Desconocido: check in devpropdef.h** (4120)
 
 
 </dt> <dd></dd> <dt>
@@ -494,7 +494,7 @@ Los valores posibles son.
 **Reserved**
 
 
-</dt> <dd>8218:4294967295</dd> </dl>
+</dt> <dd>8218–4294967295</dd> </dl>
 
 </dd> </dl>
 
@@ -504,10 +504,10 @@ Los valores posibles son.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>Cimwin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

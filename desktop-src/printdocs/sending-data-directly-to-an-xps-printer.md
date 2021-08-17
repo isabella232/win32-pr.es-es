@@ -15,7 +15,7 @@ ms.locfileid: "118470157"
 
 En este tema se describe cómo enviar datos de control de impresora directamente a impresoras que usan controladores de impresora XPSDrv.
 
-En los pasos siguientes se describe cómo enviar datos directamente a una impresora. Estos pasos también se ilustran en el ejemplo de código siguiente.
+En los pasos siguientes se describe cómo enviar datos directamente a una impresora. Estos pasos también se muestran en el ejemplo de código siguiente.
 
 1.  Llame [**a OpenPrinter**](openprinter.md) para obtener un identificador para la impresora.
 2.  Inicialice [**una estructura DOCINFO**](/windows/desktop/api/wingdi/ns-wingdi-docinfoa) con los datos de la impresora.

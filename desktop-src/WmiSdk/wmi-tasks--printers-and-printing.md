@@ -1,5 +1,5 @@
 ---
-description: Las tareas WMI para impresoras e impresión administran y obtienen datos sobre impresoras, como buscar o establecer la impresora predeterminada. Para obtener otros ejemplos, vea ScriptCenter de TechNet en https://www.microsoft.com/technet .
+description: Las tareas WMI para impresoras e impresión administran y obtienen datos sobre impresoras, como buscar o establecer la impresora predeterminada. Para ver otros ejemplos, consulte ScriptCenter de TechNet en https://www.microsoft.com/technet .
 ms.assetid: 56aa8043-08cc-42c9-82b0-f1328cd52ff8
 ms.tgt_platform: multiple
 title: 'Tareas wmi: impresoras e impresión'
@@ -19,7 +19,7 @@ ms.locfileid: "118311999"
 ---
 # <a name="wmi-tasks-printers-and-printing"></a>Tareas wmi: impresoras e impresión
 
-Las tareas WMI para impresoras e impresión administran y obtienen datos sobre impresoras, como buscar o establecer la impresora predeterminada. Para obtener otros ejemplos, vea ScriptCenter de TechNet en [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+Las tareas WMI para impresoras e impresión administran y obtienen datos sobre impresoras, como buscar o establecer la impresora predeterminada. Para ver otros ejemplos, consulte ScriptCenter de TechNet en [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
 Los ejemplos de script que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información sobre cómo usar el script para obtener datos de equipos remotos, vea [Conectarse a WMI en un equipo remoto.](connecting-to-wmi-on-a-remote-computer.md)
 
@@ -28,17 +28,17 @@ En el procedimiento siguiente se describe cómo ejecutar un script.
 
 **Para ejecutar un script**
 
-1.  Copie el código y guárdelo en un archivo con una extensión .vbs, como *filename.vbs*. Asegúrese de que el editor de texto no agrega una .txt extensión al archivo.
+1.  Copie el código y guárdelo en un archivo con una extensión .vbs, *comofilename.vbs*. Asegúrese de que el editor de texto no agrega una .txt extensión al archivo.
 2.  Abra una ventana del símbolo del sistema y vaya al directorio donde guardó el archivo.
 3.  Escriba **cscript filename.vbs** en el símbolo del sistema.
-4.  Si no puede acceder a un registro de eventos, compruebe si está ejecutando desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
+4.  Si no puede acceder a un registro de eventos, compruebe si se ejecuta desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
 
 > [!Note]  
 > De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts WMI pueden generar grandes cantidades de salida, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del *script* filename.vbsa *outfile.txt*.
 
  
 
-En la tabla siguiente se enumeran ejemplos de script que se pueden usar para obtener varios tipos de datos del equipo local.
+En la tabla siguiente se muestran ejemplos de script que se pueden usar para obtener varios tipos de datos del equipo local.
 
 
 
@@ -169,7 +169,7 @@ Next</code></pre></td>
 </tr>
 <tr class="even">
 <td>... determinar la impresora predeterminada de un equipo?</td>
-<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-printer"><strong>Win32_Printer</strong></a> y compruebe si la <strong>propiedad Default</strong> es <strong>True.</strong></p>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-printer"><strong>Win32_Printer</strong></a> clase y compruebe si la <strong>propiedad Default</strong> es <strong>True.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -225,7 +225,7 @@ Next</code></pre></td>
 [Tareas wmi para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Ejemplos de aplicaciones wmi de C++](wmi-c---application-examples.md)
+[Ejemplos de aplicación C++ de WMI](wmi-c---application-examples.md)
 </dt> <dt>
 
 [TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)

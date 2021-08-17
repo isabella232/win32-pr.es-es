@@ -1,9 +1,9 @@
 ---
 title: dispinterface (atributo)
-description: La instrucción dispinterface define un conjunto de propiedades y métodos en los que se puede llamar a IDispatch Invoke.
+description: La instrucción dispinterface define un conjunto de propiedades y métodos en los que puede llamar a IDispatch Invoke.
 ms.assetid: d85a8e2b-0155-4d68-bb38-e86f4807e7de
 keywords:
-- atributo dispinterface MIDL
+- Atributo dispinterface MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f7cc2b6087b53ff81aa7270a209266dd8248884
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 3df65adc3bfa486907df0465f2fca5a1427f6d0b1eb89b5c02e6f199be71e9e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103904591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118384672"
 ---
 # <a name="dispinterface-attribute"></a>dispinterface (atributo)
 
-La instrucción **dispinterface** define un conjunto de propiedades y métodos en los que se puede llamar a **IDispatch:: Invoke**. Se puede definir una interfaz dispinterface indicando explícitamente el conjunto de métodos y propiedades admitidos (sintaxis 1), o bien enumerando una sola interfaz (sintaxis 2).
+La **instrucción dispinterface** define un conjunto de propiedades y métodos en los que puede llamar a **IDispatch::Invoke**. Una interfaz dispinterface se puede definir enumerando explícitamente el conjunto de métodos y propiedades admitidos (sintaxis 1) o enumerando una sola interfaz (sintaxis 2).
 
 ``` syntax
 [
@@ -51,65 +51,65 @@ dispinterface dispinterface-name
 *attributes* 
 </dt> <dd>
 
-Especifica los atributos que se aplican a toda la **dispinterface**. Se aceptan los siguientes atributos: **\[** [**HelpString**](helpstring.md) **\]** , **\[** [**HelpContext**](helpcontext.md) **\]** , **\[** [**HelpFile**](helpfile.md) **\]** , **\[** [**Hidden**](hidden.md) **\]** , **\[** [**nonextensible (**](nonextensible.md) **\]** , **\[** [**oleautomation**](oleautomation.md) **\]** , **\[** [**Restricted**](restricted.md) **\]** , **\[** [**UUID**](uuid.md) **\]** y **\[** [**version**](version.md) **\]** .
+Especifica los atributos que se aplican a toda **la interfaz dispinterface**. Se aceptan los atributos siguientes: **\[** [**helpstring**](helpstring.md) **\]** , **\[** [**helpcontext**](helpcontext.md) **\]** , **\[** [**helpfile**](helpfile.md), **\]** **\[** [**hidden**](hidden.md), **\]** **\[** [**nonextensible,**](nonextensible.md) **\]** **\[** [**oleautomation**](oleautomation.md), **\]** **\[** [**restricted**](restricted.md), **\]** **\[** [**uuid**](uuid.md)y **\]** **\[** [**version**](version.md) **\]** .
 
 </dd> <dt>
 
-*dispinterface: nombre* 
+*dispinterface-name* 
 </dt> <dd>
 
-Nombre por el que se conoce la **dispinterface** en la biblioteca de tipos. Este nombre debe ser único en la biblioteca de tipos.
+Nombre por el que se **conoce la interfaz dispinterface** en la biblioteca de tipos. Este nombre debe ser único dentro de la biblioteca de tipos.
 
 </dd> <dt>
 
-*lista de propiedades* 
+*property-list* 
 </dt> <dd>
 
-(Sintaxis 1) Lista opcional de propiedades admitidas por el objeto, declaradas en forma de variables. Esta es la forma abreviada para declarar las funciones de propiedad en la lista de métodos. Vea la sección Comentarios para obtener más información.
+(Sintaxis 1) Lista opcional de propiedades admitidas por el objeto , declaradas en forma de variables. Este es el formato corto para declarar las funciones de propiedad en la lista de métodos. Consulte la sección de comentarios para obtener más información.
 
 </dd> <dt>
 
-*lista de métodos* 
+*method-list* 
 </dt> <dd>
 
-(Sintaxis 1) Lista que consta de un prototipo de función para cada método y propiedad de la **dispinterface**. Puede aparecer cualquier número de definiciones de función en *methlist*. Una función de *methlist* tiene el formato siguiente:
+(Sintaxis 1) Lista que contiene un prototipo de función para cada método y propiedad de **la interfaz dispinterface**. Cualquier número de definiciones de función puede aparecer en *la lista de methlist.* Una función de *methlist* tiene el formato siguiente:
 
-**\[ \] ***attributes***** *ReturnType methname Type paramName ***(*** params * * *);**
+**\[**_atributos_ *_\]_* *returntype methname type paramname***(**_params_*_);_*
 
-Se aceptan los siguientes atributos en un método de una **interfaz dispinterface**: **\[ HelpString \]**, **\[ HelpContext \]**, **\[** [**propget**](propget.md) **\]** , **\[** [**PROPPUT**](propput.md) **\]** , **\[** [**PROPPUTREF**](propputref.md) **\]** , **\[** [**String**](string.md) **\]** y **\[** [**vararg**](vararg.md) **\]** . Si se especifica **\[ \] vararg** , el último parámetro debe ser una matriz segura de tipo **Variant** .
+Los atributos siguientes se aceptan en un método en una **interfaz dispinterface:** **\[ \] helpstring**, **\[ helpcontext \]**, **\[** [**propget,**](propget.md) **\]** **\[** [**propput,**](propput.md) **\]** **\[** [**propputref**](propputref.md), **\]** **\[** [**string**](string.md)y **\]** **\[** [**.**](vararg.md) **\]** Si **\[ se \] especifica ,** el último parámetro debe ser una matriz segura de tipo **VARIANT.**
 
-La lista de parámetros es una lista delimitada por comas, donde cada elemento tiene el formato siguiente:
+La lista de parámetros es una lista delimitada por comas, cada elemento de la que tiene la forma siguiente:
 
-**\[***sus***\]**
+**\[**_Atributos_*_\]_*
 
 El *tipo* puede ser cualquier tipo declarado o integrado, o un puntero a cualquier tipo. Los atributos de los parámetros son:
 
-**\[**[**in**](in.md) **\]** , **\[** [**out**](out-idl.md) **\]** , **\[** [**Optional**](optional.md) **\]** , **\[ String \]**
+**\[**[**en**](in.md) **\]** , **\[** [**out**](out-idl.md) **\]** , **\[** [**opcional**](optional.md) **\]** , **\[ cadena \]**
 
 </dd> <dt>
 
-*nombre de interfaz* 
+*interface-name* 
 </dt> <dd>
 
-(Sintaxis 2) Nombre de la interfaz que se va a declarar como interfaz IDispatch.
+(Sintaxis 2) Nombre de la interfaz que se declara como interfaz IDispatch.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El compilador MIDL acepta el siguiente orden de parámetros (de izquierda a derecha):
+El compilador MIDL acepta la siguiente ordenación de parámetros (de izquierda a derecha):
 
-1.  Parámetros obligatorios (parámetros que no tienen los \[ \] atributos DefaultValue u \[ opcional \] ),
-2.  parámetros opcionales con o sin el \[ \] atributo DefaultValue,
-3.  parámetros con el \[ \] atributo opcional y sin el \[ \] atributo DefaultValue,
-4.  \[parámetro [**LCID**](lcid.md) \] , si existe,
-5.  \[[**retval**](retval.md) \] parámetro
+1.  Parámetros obligatorios (parámetros que no tienen el \[ valor predeterminado u atributos \] \[ \] opcionales),
+2.  Parámetros opcionales con o sin el \[ atributo \] defaultvalue,
+3.  parámetros con el \[ atributo opcional y sin el atributo \] \[ \] defaultvalue,
+4.  \[[**Parámetro lcid,**](lcid.md) \] si lo hay,
+5.  \[[**retval**](retval.md) \] Parámetro
 
-Las funciones de método se especifican exactamente como se describe en la página de referencia del [**módulo**](module.md) , con la excepción de que \[ [](entry.md) \] no se permite el atributo de entrada. Tenga en cuenta que STDOLE32. TLB (STDOLE. TLB en sistemas de 16 bits) debe importarse, ya que una **dispinterface** hereda de IDispatch.
+Las funciones de método se especifican exactamente como se describe en la página de referencia del [**módulo,**](module.md) salvo que no se permite \[ [](entry.md) \] el atributo de entrada. Tenga en cuenta que STDOLE32. TLB (STDOLE. TLB en sistemas de 16 bits) debe importarse, porque **una interfaz dispinterface** hereda de IDispatch.
 
-Puede declarar propiedades en las listas propiedades o métodos. Al declarar las propiedades en la lista de propiedades, no se indica el tipo de acceso que admite la propiedad (es decir, get, Put o putref). Especifique el \[ atributo [**ReadOnly**](readonly.md) \] para las propiedades que no admiten Put o putref. Si declara las funciones de propiedad en la lista de métodos, las funciones de una propiedad tienen el mismo identificador.
+Puede declarar propiedades en las listas de propiedades o métodos. La declaración de propiedades en la lista de propiedades no indica el tipo de acceso que admite la propiedad (es decir, get, put o putref). Especifique el \[ [**atributo readonly**](readonly.md) \] para las propiedades que no admiten put o putref. Si declara las funciones de propiedad en la lista de métodos, todas las funciones de una propiedad tienen el mismo identificador.
 
-Con la primera sintaxis, las propiedades: y METHODS: Tags son obligatorias. \[ [](id.md) \] También se requiere el atributo ID en cada miembro. Por ejemplo:
+Con la primera sintaxis, se requieren las etiquetas properties: y methods: . El \[ [**atributo id**](id.md) \] también es necesario en cada miembro. Por ejemplo:
 
 ``` syntax
 properties: 
@@ -118,9 +118,9 @@ methods:
     [id(1)] HRESULT Show();
 ```
 
-A diferencia de los miembros de interfaz, los miembros dispinterface no pueden usar el atributo [**retval**](retval.md) para devolver un valor además de un código de error HRESULT. El \[ [](lcid.md) \] atributo LCID tampoco es válido para dispinterfaces, porque IDispatch:: Invoke pasa un LCID. Sin embargo, es posible volver a declarar una interfaz que utilice estos atributos.
+A diferencia de los miembros de interfaz, los miembros dispinterface no pueden usar el atributo [**retval**](retval.md) para devolver un valor además de un código de error HRESULT. El \[ [**atributo lcid**](lcid.md) \] tampoco es válido para las interfaces dispinterface, porque IDispatch::Invoke pasa un LCID. Sin embargo, es posible volver a declarar una interfaz que use estos atributos.
 
-Con la segunda sintaxis, las interfaces que admiten IDispatch y que se declaran anteriormente en un script ODL se pueden volver a declarar como interfaces IDispatch como se indica a continuación:
+Con la segunda sintaxis, las interfaces que admiten IDispatch y se declaran anteriormente en un script ODL se pueden volver a declarar como interfaces IDispatch como las siguientes:
 
 ``` syntax
 dispinterface helloPro 
@@ -129,14 +129,14 @@ dispinterface helloPro
 };
 ```
 
-En el ejemplo anterior se declaran todos los miembros de Hello y todos los miembros que Hello hereda como compatibles con IDispatch. En este caso, si Hello se declaró anteriormente con \[ \] \[ los miembros LCID y retval \] que devolvieron Valores HRESULT, MkTypLib quitaría cada \[ \] parámetro de LCID y el tipo de valor devuelto HRESULT, y en su lugar marcaría el tipo de valor devuelto como el del \[ \] parámetro retval.
+En el ejemplo anterior se declaran todos los miembros de hello y todos los miembros que hello hereda como compatibles con IDispatch. En este caso, si hello se declarase anteriormente con miembros lcid y retval que devolvían \[ \] \[ \] HESULT, MkTypLib quitaría cada \[ parámetro lcid \] \[ y tipo \] de valor devuelto HRESULT y, en su lugar, marcaría el tipo de valor devuelto como el del parámetro retval.
 
 > [!Note]  
-> La herramienta Mktyplib.exe está obsoleta. En su lugar, utilice el compilador de MIDL.
+> La Mktyplib.exe está obsoleta. En su lugar, use el compilador MIDL.
 
- 
+ 
 
-Las propiedades y los métodos de una interfaz dispinterface no forman parte de la VTBL de la dispinterface. Por consiguiente, [CreateStdDispatch](/windows/win32/api/oleauto/nf-oleauto-createstddispatch) y [DispInvoke](/windows/win32/api/oleauto/nf-oleauto-dispinvoke) no se pueden usar para implementar IDispatch:: Invoke. La dispinterface se utiliza cuando una aplicación necesita exponer funciones existentes que no son VTBL a través de la automatización. Estas aplicaciones pueden implementar IDispatch:: Invoke examinando el parámetro dispidMember y llamando directamente a la función correspondiente.
+Las propiedades y los métodos de una interfaz dispinterface no forman parte del VTBL de la interfaz dispinterface. Por lo tanto, [CreateStdDispatch](/windows/win32/api/oleauto/nf-oleauto-createstddispatch) y [DispInvoke](/windows/win32/api/oleauto/nf-oleauto-dispinvoke) no se pueden usar para implementar IDispatch::Invoke. La interfaz dispinterface se usa cuando una aplicación necesita exponer funciones existentes que no son VTBL a través de Automation. Estas aplicaciones pueden implementar IDispatch::Invoke examinando el parámetro dispidMember y llamando directamente a la función correspondiente.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -193,19 +193,19 @@ dispinterface MyObject
 [**helpstring**](helpstring.md)
 </dt> <dt>
 
-[**plusvalía**](hidden.md)
+[**Oculto**](hidden.md)
 </dt> <dt>
 
-[**de**](in.md)
+[**En**](in.md)
 </dt> <dt>
 
-[**interfaz**](interface.md)
+[**Interfaz**](interface.md)
 </dt> <dt>
 
 [TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
@@ -214,10 +214,10 @@ dispinterface MyObject
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**opta**](optional.md)
+[**Opcional**](optional.md)
 </dt> <dt>
 
-[**enuncia**](out-idl.md)
+[**out**](out-idl.md)
 </dt> <dt>
 
 [**nonextensible**](nonextensible.md)
@@ -226,22 +226,22 @@ dispinterface MyObject
 [**propget**](propget.md)
 </dt> <dt>
 
-[**PROPPUT**](propput.md)
+[**propput**](propput.md)
 </dt> <dt>
 
-[**PROPPUTREF**](propputref.md)
+[**propputref**](propputref.md)
 </dt> <dt>
 
 [**oleautomation**](oleautomation.md)
 </dt> <dt>
 
-[**Restrict**](restricted.md)
+[**Restringido**](restricted.md)
 </dt> <dt>
 
-[**string**](string.md)
+[**Cadena**](string.md)
 </dt> <dt>
 
-[**uuid**](uuid.md)
+[**Uuid**](uuid.md)
 </dt> <dt>
 
 [**vararg**](vararg.md)
@@ -250,6 +250,6 @@ dispinterface MyObject
 [**Versión**](version.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

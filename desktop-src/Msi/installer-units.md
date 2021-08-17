@@ -1,5 +1,5 @@
 ---
-description: Una Windows interfaz de usuario del instalador de Windows es aproximadamente igual a un duodécimo (1/12) el alto del tamaño de fuente de MS Sans Serif de 10 puntos.
+description: Una unidad de interfaz de usuario del instalador de Windows es aproximadamente igual a la duodécima (1/12) altura del tamaño de fuente MS Sans Serif de 10 puntos.
 ms.assetid: 5ef6dee1-71e7-446b-b526-5c6c4e7525f2
 title: Unidades del instalador
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118629991"
 ---
 # <a name="installer-units"></a>Unidades del instalador
 
-Una Windows interfaz de usuario del instalador de Windows es aproximadamente igual a un duodécimo (1/12) el alto del tamaño de fuente de MS Sans Serif de 10 puntos. El tamaño relativo de los cuadros de diálogo, los controles y las fuentes puede cambiar en función del tamaño de fuente usado en la interfaz de usuario. Para garantizar la visualización correcta de la interfaz de usuario, los desarrolladores de instalación siempre deben probar su aplicación con los tamaños de fuente reales.
+Una unidad de interfaz de usuario del instalador de Windows es aproximadamente igual a la duodécima (1/12) altura del tamaño de fuente MS Sans Serif de 10 puntos. El tamaño relativo de los cuadros de diálogo, los controles y las fuentes puede cambiar en función del tamaño de fuente usado en la interfaz de usuario. Para garantizar la presentación correcta de la interfaz de usuario, los desarrolladores de configuración siempre deben probar su aplicación con los tamaños de fuente reales.
 
  
 

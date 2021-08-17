@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETTYPOGRAPHYOPTIONS (RichEdit. h)
-description: Devuelve el estado actual de las opciones tipográficas de un control Rich Edit.
+title: EM_GETTYPOGRAPHYOPTIONS mensaje (Richedit.h)
+description: Devuelve el estado actual de las opciones de tipografía de un control de edición enriquecido.
 ms.assetid: 6ff5980e-3201-4b0f-9a03-3de78730ce33
 keywords:
-- EM_GETTYPOGRAPHYOPTIONS controles de mensajes de Windows
+- EM_GETTYPOGRAPHYOPTIONS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d692639ba6c8cea758abe694faed3a46e3f65be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d575550e2c239ee5b689deb5874a9803c581151b54100ab227a24d4f29941973
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831176"
 ---
-# <a name="em_gettypographyoptions-message"></a>\_Mensaje GETTYPOGRAPHYOPTIONS em
+# <a name="em_gettypographyoptions-message"></a>Mensaje \_ EM GETTYPOGRAPHYOPTIONS
 
-Devuelve el estado actual de las opciones tipográficas de un control Rich Edit.
+Devuelve el estado actual de las opciones de tipografía de un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,52 +32,52 @@ Devuelve el estado actual de las opciones tipográficas de un control Rich Edit.
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve las opciones de tipografía actuales. Para obtener una lista de opciones, consulte [**em \_ SETTYPOGRAPHYOPTIONS**](em-settypographyoptions.md).
+Devuelve las opciones de tipografía actuales. Para obtener una lista de opciones, [**vea EM \_ SETTYPOGRAPHYOPTIONS**](em-settypographyoptions.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede activar el salto de línea avanzado enviando el mensaje [**\_ SETTYPOGRAPHYOPTIONS em**](em-settypographyoptions.md) . El control Rich Edit también puede activar el salto de línea avanzado y normal automáticamente si es necesario para determinados idiomas.
+Puede activar la separación de línea avanzada mediante el envío [**del mensaje EM \_ SETTYPOGRAPHYOPTIONS.**](em-settypographyoptions.md) El control de edición enriquecido también puede desactivar automáticamente la separación de línea avanzada y normal si es necesario para determinados idiomas.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Redistribuible<br/>          | Edición enriquecida 3,0<br/>                                                              |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Redistribuible<br/>          | Rich Edit 3.0<br/>                                                              |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Referencia**
 </dt> <dt>
 
-[**\_SETTYPOGRAPHYOPTIONS em**](em-settypographyoptions.md)
+[**EM \_ SETTYPOGRAPHYOPTIONS**](em-settypographyoptions.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Acerca de los controles Rich Edit](about-rich-edit-controls.md)
+[Acerca de los controles rich edit](about-rich-edit-controls.md)
 </dt> </dl>
 
  

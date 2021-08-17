@@ -38,11 +38,11 @@ Define un patrón que especifica una versión de una tarea.
 
 ## <a name="patterns"></a>Patrones
 
-El tipo simple **versionType** es **una cadena** restringida por el siguiente patrón:
+El **tipo simple versionType** es una **cadena** que está restringida por el siguiente patrón:
 
 -   `\d+(\.\d+){1,3}`
 
-    Un doble seguido de uno, dos o tres dobles. Por ejemplo, 1.2 o 1.2.3.
+    Un double seguido de uno, dos o tres dobles. Por ejemplo, 1.2 o 1.2.3.
 
 ## <a name="requirements"></a>Requisitos
 

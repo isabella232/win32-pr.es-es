@@ -40,9 +40,9 @@ Los calificadores se pueden dividir en calificadores estándar, calificadores CI
 
 -   Calificador único
 
-    Un calificador único es un calificador definido específicamente para una nueva clase por un proveedor de clases. Por ejemplo, el [**calificador Units**](standard-qualifiers.md) es un calificador no estándar específico del proveedor. Puede crear sus propios calificadores para usarlos con el proveedor. Para obtener más información sobre cómo crear un proveedor, vea [Desarrollar un proveedor WMI.](developing-a-wmi-provider.md)
+    Un calificador único es un calificador definido específicamente para una nueva clase por un proveedor de clases. Por ejemplo, el [**calificador Units**](standard-qualifiers.md) es un calificador específico del proveedor no estándar. Puede crear sus propios calificadores para usarlos con el proveedor. Para obtener más información sobre cómo crear un proveedor, vea [Desarrollar un proveedor WMI.](developing-a-wmi-provider.md)
 
-Independientemente de lo que haga el calificador, el proceso principal que realice es usar el calificador en el código MOF. Para obtener más información, [vea Aplicar un calificador](applying-a-qualifier.md). Puede describir aún más un calificador con un formato de calificador. Un calificador contiene más información sobre cómo un proveedor debe usar un calificador. Para obtener más información, vea [Describing a Qualifier with a Qualifier Flavor](describing-a-qualifier-with-a-qualifier-flavor.md).
+Independientemente de lo que haga el calificador, el proceso principal que realice es usar el calificador en el código MOF. Para obtener más información, vea [Aplicar un calificador](applying-a-qualifier.md). Puede describir aún más un calificador con un formato de calificador. Un calificador contiene más información sobre cómo un proveedor debe usar un calificador. Para obtener más información, vea [Describing a Qualifier with a Qualifier Flavor](describing-a-qualifier-with-a-qualifier-flavor.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

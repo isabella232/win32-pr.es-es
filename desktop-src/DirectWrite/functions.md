@@ -23,5 +23,5 @@ DirectWrite proporciona la siguiente función. Todas las demás operaciones se r
 
 | Tema                                                         | Descripción                                                                                                             |
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [**DWriteCreateFactory**](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory)<br/> | Crea un DirectWrite de fábrica que se usa para la creación posterior de objetos DirectWrite individuales.<br/> |
-| [**DWriteCoreCreateFactory (DWriteCore)**](/windows/windows-app-sdk/api/win32/dwrite_core/nf-dwrite_core-dwritecorecreatefactory)<br/> | Crea un DirectWrite de generador que se usa para la creación posterior de objetos DWriteCore individuales.<br/> |
+| [**DWriteCreateFactory**](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory)<br/> | Crea un DirectWrite de generador que se usa para la creación posterior de objetos DirectWrite individuales.<br/> |
+| [**DWriteCoreCreateFactory (DWriteCore)**](/windows/windows-app-sdk/api/win32/dwrite_core/nf-dwrite_core-dwritecorecreatefactory)<br/> | Crea un DirectWrite de generador que se usa para la posterior creación de objetos DWriteCore individuales.<br/> |

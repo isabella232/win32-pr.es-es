@@ -4,8 +4,8 @@ description: Devuelve el valor de la marca de enumeración EnumerationFlagHierar
 ms.assetid: 18b564e6-dda1-44b9-b445-26c6183b6af9
 ms.tgt_platform: multiple
 keywords:
-- Método EnumerationFlagHierarchyShallow Windows administración remota
-- Método EnumerationFlagHierarchyShallow Windows de administración remota , objeto WSMan
+- Método EnumerationFlagHierarchyShallow Windows Remote Management
+- Método EnumerationFlagHierarchyShallow Windows remote management , objeto WSMan
 - Objeto WSMan Windows administración remota , método EnumerationFlagHierarchyShallow
 topic_type:
 - apiref
@@ -28,7 +28,7 @@ ms.locfileid: "117742304"
 
 El **método EnumerationFlagHierarchyShallow** devuelve el valor de la marca de enumeración **EnumerationFlagHierarchyShallow** para su uso en el parámetro *flags* [**de Session.Enumerate**](session-enumerate.md). Este método proporciona una sintaxis más eficaz para usar la constante para que los scripts no sean necesarios para establecer un valor constante. Para obtener más información sobre cómo llamar a este método, vea [Constantes de sesión](session-constants.md).
 
-**EnumerationFlagHierarchyShallow es una** constante en la enumeración **\_ WSManEnumFlags** y se describe en [**Constantes de enumeración**](enumeration-constants.md).
+**EnumerationFlagHierarchyShallow es una** constante de la enumeración **\_ WSManEnumFlags** y se describe en [**Constantes de enumeración**](enumeration-constants.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,7 +60,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
@@ -71,7 +71,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

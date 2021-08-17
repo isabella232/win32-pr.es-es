@@ -15,7 +15,7 @@ ms.locfileid: "118471038"
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica el ancho de la página a la dirección de orientación de la fuente (Referencia [PostScript especificación](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)de formato de archivo de descripción de impresora ).
+Especifica el ancho de la página hasta la dirección de orientación de la fuente (Referencia [PostScript especificación de](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)formato de archivo de descripción de impresora ).
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)

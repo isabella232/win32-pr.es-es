@@ -1,41 +1,41 @@
 ---
-title: Cómo crear un cuadro de lista de Owner-Drawn
+title: Cómo crear un cuadro de Owner-Drawn de datos
 description: En este tema se muestra cómo implementar un cuadro de lista dibujado por el propietario.
 ms.assetid: AE6E8943-DC03-4A21-9F0A-9C70C6BD7481
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81b48a56ca188fb2c277cc822dcb9a343205a331
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 2994c88aec9f3c11ae856136103cf3327d53a2b72c5b2e8903e187ece01bf0f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103995768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118413203"
 ---
-# <a name="how-to-create-an-owner-drawn-list-box"></a>Cómo crear un cuadro de lista de Owner-Drawn
+# <a name="how-to-create-an-owner-drawn-list-box"></a>Cómo crear un cuadro de Owner-Drawn de datos
 
 En este tema se muestra cómo implementar un cuadro de lista dibujado por el propietario.
 
-En el ejemplo de código C++ de este tema se muestra cómo dibujar un cuadro de lista que contiene cinco elementos dibujados por el propietario: cuatro implementaciones de dibujo y una bifurcación. Cada elemento de lista aparece como un mapa de bits seguido del nombre del objeto. Un botón solicita al usuario que seleccione un elemento que no sea como el resto. Al elegir el botón con la bifurcación seleccionada, se muestra un "¿está bien!" y cierra el cuadro de diálogo. Al elegir el botón con cualquier otro elemento de la lista seleccionado, se muestra una "intentar de nuevo". "Hola mundo".
+En el ejemplo de código de C++ de este tema se muestra cómo dibujar un cuadro de lista que contiene cinco elementos dibujados por el propietario: cuatro implementos de dibujo y una bifurcación. Cada elemento de lista aparece como un mapa de bits seguido del nombre del objeto. Un botón solicita al usuario que seleccione un elemento que no sea como los demás. Al elegir el botón con la bifurcación seleccionada se muestra el mensaje "You're right!" (Tiene razón). y cierra el cuadro de diálogo. Al elegir el botón con cualquier otro elemento de lista seleccionado, se muestra el mensaje "Intentarlo de nuevo". no encontrada".
 
-El cuadro de lista tiene los estilos [**lb \_ OWNERDRAWFIXED**](list-box-styles.md) y [**lb \_ HASSTRINGS**](list-box-styles.md) , además de los estilos de cuadro de lista estándar.
+El cuadro de lista tiene los [**estilos \_ LBS OWNERDRAWFIXED**](list-box-styles.md) y [**LBS \_ HASSTRINGS,**](list-box-styles.md) además de los estilos de cuadro de lista estándar.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
 Para inicializar un cuadro de lista dibujado por el propietario, la aplicación debe cargar la cadena de texto y el mapa de bits asociado para cada elemento del cuadro de lista.
 
-En el siguiente ejemplo de código de C++, el procedimiento de cuadro de diálogo inicializa el cuadro de lista, la **lista de IDC \_ \_**, enviando el mensaje de lb para establecer el texto y, a continuación, envía el mensaje [**lb \_ SETITEMDATA**](lb-setitemdata.md) para asociar un mapa de bits a cada elemento del cuadro de lista. [**\_**](lb-addstring.md) El código también establece el alto de cada elemento del cuadro de lista procesando el mensaje de [**\_ MEASUREITEM de WM**](wm-measureitem.md) y dibuja el texto y el mapa de bits para cada elemento mediante el procesamiento del mensaje de [**\_ DRAWITEM**](wm-drawitem.md)
+En el siguiente ejemplo de código de C++, el procedimiento del cuadro de diálogo inicializa el cuadro de **lista, IDC \_ LIST \_ STUFF**, enviando el mensaje [**LB \_ ADDSTRING**](lb-addstring.md) para establecer el texto y, a continuación, envía el mensaje [**LB \_ SETITEMDATA**](lb-setitemdata.md) para asociar un mapa de bits con cada elemento de cuadro de lista. El código también establece el alto de cada elemento de cuadro de lista procesando el mensaje [**\_ MEASUREITEM**](wm-measureitem.md) de WM y dibuja el texto y el mapa de bits de cada elemento procesando el [**mensaje \_ DRAWITEM de WM.**](wm-drawitem.md)
 
 
 
@@ -268,7 +268,7 @@ INT_PTR CALLBACK DlgDrawProc(HWND hDlg, UINT message,
 
 <dl> <dt>
 
-[Referencia de control de cuadro de lista](bumper-list-box-list-box-control-reference.md)
+[Referencia del control Cuadro de lista](bumper-list-box-list-box-control-reference.md)
 </dt> <dt>
 
 [Acerca de los cuadros de lista](about-list-boxes.md)

@@ -13,13 +13,13 @@ ms.locfileid: "118449656"
 ---
 # <a name="no-touch-deployment-web-sample"></a>No-Touch web de implementación
 
-En este ejemplo se muestra cómo implementar una aplicación de Tablet PC administrada a través de la Web mediante la implementación sin tocar. Debe estar familiarizado con los conceptos que se deban tratar en Implementación sin contacto [en .NET Framework](/documentation/?url=%2flibrary%2fdv_vstechart%2fhtml%2fvbtchno-touchdeploymentinnetframework.asp). El equipo debe tener Microsoft Internet Information Services (IIS) instalado para ejecutar este ejemplo.
+En este ejemplo se muestra cómo implementar una aplicación de Tablet PC administrada a través de la Web mediante la implementación sin tocar. Debe estar familiarizado con los conceptos que se deban tratar en Implementación sin contacto [en la .NET Framework](/documentation/?url=%2flibrary%2fdv_vstechart%2fhtml%2fvbtchno-touchdeploymentinnetframework.asp). El equipo debe tener Microsoft Internet Information Services (IIS) instalado para ejecutar este ejemplo.
 
-## <a name="overview"></a>Introducción
+## <a name="overview"></a>Información general
 
-Con la implementación sin tocar, las aplicaciones de escritorio de Tablet PCWindows Forms se han creado mediante las clases del sistema. Windows. El espacio de nombres de formularios de Microsoft .NET Framework y microsoft Windows XP Tablet PC Edition Development Kit 1.7 se puede descargar, instalar y ejecutar directamente en los equipos de los usuarios sin ninguna modificación de los componentes del registro o del sistema compartido.
+Con la implementación sin tocar, las aplicaciones de escritorio de Tablet PCWindows Forms se han creado mediante las clases del sistema. Windows. El espacio de nombres de formularios de Microsoft .NET Framework y microsoft Windows XP Tablet PC Edition Development Kit 1.7 se puede descargar, instalar y ejecutar directamente en los equipos de los usuarios sin que se altere el registro ni los componentes compartidos del sistema.
 
-En este ejemplo se toma el proyecto original de Ejemplo de [formulario](auto-claims-form-sample.md)de notificaciones automáticas, AutoClaims y se proporciona un proyecto de instalador, AutoClaims \_ NoTouchWeb. Una vez compilado y ejecutado, el proyecto de instalador crea una nueva raíz virtual, también denominada AutoClaims \_ NoTouchWeb. El instalador copia un archivo, default.htm, que incluye un vínculo al AutoClaims.exe ensamblado. Para iniciar la aplicación cliente enriquecte, vaya a la raíz virtual con Microsoft Internet Explorer y, a continuación, haga clic en el vínculo de la página default.htm búsqueda.
+En este ejemplo se toma el proyecto original de [Ejemplo](auto-claims-form-sample.md)de formulario de notificaciones automáticas, AutoClaims y se proporciona un proyecto de instalador, AutoClaims \_ NoTouchWeb. Una vez compilado y ejecutado, el proyecto de instalador crea una nueva raíz virtual, también denominada AutoClaims \_ NoTouchWeb. El instalador copia un archivo, default.htm, que incluye un vínculo al AutoClaims.exe ensamblado. Para iniciar la aplicación cliente enriquecte, vaya a la raíz virtual con Microsoft Internet Explorer y, a continuación, haga clic en el vínculo de la página default.htm búsqueda.
 
 > [!Note]  
 > Debe navegar a la raíz virtual mediante IIS (por ejemplo, y no directamente a través del sistema de archivos para que la aplicación funcione en el dominio Internet Explorer https://localhost/AutoClaims\_NoTouchWeb/default.htm) aplicación.

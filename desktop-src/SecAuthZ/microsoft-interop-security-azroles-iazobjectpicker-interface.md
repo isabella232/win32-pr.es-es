@@ -1,5 +1,5 @@
 ---
-description: Vínculos a la documentación de los métodos y propiedades del contenedor de interoperabilidad de IAzObjectPicker.
+description: Vínculos a la documentación de los métodos y propiedades de contenedor de interoperabilidad de IAzObjectPicker.
 ms.assetid: 8b3db64c-0772-4810-96bf-6c9334c9bc4c
 title: Interfaz Microsoft.Interop.Security.AzRoles.IAzObjectPicker
 ms.topic: reference
@@ -69,7 +69,7 @@ La **interfaz Microsoft.Interop.Security.AzRoles.IAzObjectPicker** tiene estas p
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |---------------------|-------------------------------------------------------------------------------------------------------------------|
 | Ensamblado<br/> | <dl> <dt>Microsoft.Interop.Security.Azroles.dll</dt> </dl> |
 

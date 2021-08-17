@@ -1,47 +1,47 @@
 ---
-title: Configuración del registro de supervisión de carpetas
-description: Configuración del registro de supervisión de carpetas
+title: Supervisión de carpetas Configuración
+description: Supervisión de carpetas Configuración
 ms.assetid: 563aeaec-0759-4b0c-a8e9-a9a2b3092515
 keywords:
-- Windows Media Player, configuración del registro de supervisión de carpetas
-- Windows Media Player, configuración del registro de supervisión de carpetas de archivos
-- Media Player de Windows, registro
+- Reproductor de Windows Media, configuración del Registro de supervisión de carpetas
+- Reproductor de Windows Media del Registro de supervisión de carpetas de archivos
+- Reproductor de Windows Media,registry
 - registro, configuración de supervisión de carpetas
-- configuración de supervisión de carpeta de archivos, registro
-- registro, configuración para Windows Media Player
-- configuración del registro de supervisión de carpetas
-- configuración del registro de supervisión de carpeta de archivos
+- configuración de supervisión del registro y de la carpeta de archivos
+- registry,settings for Reproductor de Windows Media
+- configuración del Registro de supervisión de carpetas
+- Configuración del Registro de supervisión de carpetas de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 233076d1fc807dd5cdd79e9b4985ef752fba0815
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: ac3e5e99c633c58a68b3579c55d38e6ad5b2415d9faac8d6c3438251c5a83459
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104421526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748447"
 ---
-# <a name="folder-monitoring-registry-settings"></a>Configuración del registro de supervisión de carpetas
+# <a name="folder-monitoring-registry-settings"></a>Supervisión de carpetas Configuración
 
-Windows Media Player 9 series o posterior pueden supervisar las carpetas de archivos para los nuevos archivos multimedia digitales. Cuando el reproductor detecta un nuevo archivo en una carpeta supervisada, agrega automáticamente el archivo a la biblioteca. En el caso de Windows Media Player 9 a Windows Media Player 11, los usuarios pueden cambiar la lista de carpetas supervisadas haciendo clic en **supervisar carpetas** en la pestaña biblioteca del cuadro de diálogo **Opciones** . En Windows Media Player 12, un usuario puede cambiar la lista de carpetas supervisadas siguiendo las instrucciones del tema [Agregar elementos a la biblioteca de Windows Media Player](https://windows.microsoft.com/windows7/Add-items-to-the-Windows-Media-Player-Library). En Windows Media Player 9 a Windows Media Player 11, puede agregar mediante programación una carpeta para su supervisión agregando un valor al registro. En Windows Media Player 12, no puede usar el registro para agregar o quitar mediante programación las carpetas que se van a supervisar.
+Reproductor de Windows Media serie 9 o posterior puede supervisar carpetas de archivos para nuevos archivos multimedia digitales. Cuando el reproductor detecta un nuevo archivo en una carpeta supervisada, agrega automáticamente el archivo a la biblioteca. Para Reproductor de Windows Media 9 a Reproductor de Windows Media 11, los usuarios pueden cambiar la lista de carpetas supervisadas haciendo clic en **Supervisar** carpetas en la pestaña biblioteca del cuadro **de** diálogo Opciones . Para Reproductor de Windows Media 12, un usuario puede cambiar la lista de carpetas supervisadas siguiendo las instrucciones del tema Add [items to the Reproductor de Windows Media Library](https://windows.microsoft.com/windows7/Add-items-to-the-Windows-Media-Player-Library). Para Reproductor de Windows Media 9 a Reproductor de Windows Media 11, puede agregar mediante programación una carpeta que se supervisará agregando un valor al Registro. Para Reproductor de Windows Media 12, no puede usar el Registro para agregar o quitar carpetas que se supervisarán mediante programación.
 
-En Windows Media Player 9 a Windows Media Player 11, para agregar una carpeta que se va a supervisar, primero debe crear o modificar dos valores en la siguiente clave del registro:
+Para Reproductor de Windows Media 9 a Reproductor de Windows Media 11, para agregar una carpeta para la supervisión, primero debe crear o modificar dos valores en la siguiente clave del Registro:
 
-**HKEY \_ Current \_ User \\ software \\ Microsoft \\ MediaPlayer \\ Preferences\\**
+**HKEY \_ CURRENT USER Software \_ \\ \\ Preferencias de Microsoft \\ MediaPlayer \\\\**
 
-Los valores nuevos deben tener el nombre siguiente.
+Los nuevos valores deben tener el nombre siguiente.
 
 
 
 | Nombre                           | Tipo           | Descripción                                                                                                                                                                                                                                                                    |
 |--------------------------------|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **TrackFoldersDirectories**    | **\_valor DWORD reg** | Valor **DWORD** que representa el recuento de carpetas que se van a supervisar. Debe coincidir con el número de valores **TrackFoldersDirectories ** * * X.                                                                                                                                         |
-| **TrackFoldersDirectories * * * X* | **Registro \_ SZ**    | Valor de cadena que representa la ruta de acceso de la carpeta que se va a supervisar. Cada carpeta que se va a supervisar requiere un valor independiente. El sufijo *X* es un entero que siempre debe comenzar en 0 y, a continuación, incrementar en 1. Windows Media Player también supervisa las subcarpetas de la carpeta especificada. |
+| **TrackFoldersDirectories**    | **REG \_ DWORD** | Valor **DWORD** que representa el recuento de carpetas que se supervisarán. Debe coincidir con el recuento de **valores TrackFoldersDirectories**_X._                                                                                                                                         |
+| **TrackFoldersDirectories**_X_ | **REG \_ SZ**    | Valor de cadena que representa la ruta de acceso de la carpeta que se supervisará. Cada carpeta que se supervisará requiere un valor independiente. El sufijo *X* es un entero que siempre debe comenzar en 0 y, a continuación, incrementar en 1. Reproductor de Windows Media también supervisa las subcarpetas de la carpeta especificada. |
 
 
 
- 
+ 
 
-Por ejemplo, para agregar la primera carpeta que se va a supervisar, agregue el valor siguiente:
+Por ejemplo, para agregar la primera carpeta que se supervisará, agregue el siguiente valor:
 
 
 ```C++
@@ -63,7 +63,7 @@ A continuación, cree el valor de recuento:
 
 
 
-Para agregar una segunda carpeta para supervisar, agregue el valor siguiente:
+Para agregar una segunda carpeta para supervisar, agregue el siguiente valor:
 
 
 ```C++
@@ -89,12 +89,12 @@ A continuación, incremente el valor de recuento:
 
 <dl> <dt>
 
-[**Configuración del registro**](registry-settings.md)
+[**Configuración del Registro**](registry-settings.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

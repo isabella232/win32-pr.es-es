@@ -1,5 +1,5 @@
 ---
-description: La propiedad INSTALLLEVEL es el nivel inicial en el que se seleccionan las características \# &0034;ON&0034; para la instalación de \# forma predeterminada.
+description: La propiedad INSTALLLEVEL es el nivel inicial en el que se seleccionan las características &\# 0034;ON&0034; para la instalación de \# forma predeterminada.
 ms.assetid: 5051cc46-837a-4446-a54c-4bd4081a424c
 title: Propiedad INSTALLLEVEL
 ms.topic: reference
@@ -19,7 +19,7 @@ La **propiedad INSTALLLEVEL** es el nivel inicial en el que las características
 
 Si no se especifica ningún valor, el valor predeterminado del nivel de instalación es 1.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El nivel de instalación especificado por la **propiedad INSTALLLEVEL** se puede invalidar mediante las siguientes propiedades:
 
@@ -42,9 +42,9 @@ Un administrador puede deshabilitar permanentemente una característica aplicand
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_PUT_DEST mensaje (Vfw.h)
-description: El mensaje PUT DEST de MCIWNDM redefine las coordenadas del rectángulo de destino que se usa para acercar o ampliar las imágenes de un archivo AVI durante \_ \_ la reproducción. Puede enviar este mensaje explícitamente o mediante la macro MCIWndPutDest.
+description: El mensaje PUT DEST de MCIWNDM redefine las coordenadas del rectángulo de destino usado para acercar o ajustar las imágenes de un archivo AVI durante \_ \_ la reproducción. Puede enviar este mensaje explícitamente o mediante la macro MCIWndPutDest.
 ms.assetid: 0b13d473-ef93-41a2-bbb2-09fbf264493e
 keywords:
 - MCIWNDM_PUT_DEST mensaje Windows Multimedia
@@ -23,7 +23,7 @@ ms.locfileid: "118373583"
 ---
 # <a name="mciwndm_put_dest-message"></a>Mensaje PUT \_ DEST de MCIWNDM \_
 
-El **mensaje PUT \_ \_ DEST de MCIWNDM** redefine las coordenadas del rectángulo de destino que se usa para acercar o ampliar las imágenes de un archivo AVI durante la reproducción. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndPutDest.**](/windows/desktop/api/Vfw/nf-vfw-mciwndputdest)
+El **mensaje PUT \_ \_ DEST de MCIWNDM** redefine las coordenadas del rectángulo de destino usado para acercar o ajustar las imágenes de un archivo AVI durante la reproducción. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndPutDest.**](/windows/desktop/api/Vfw/nf-vfw-mciwndputdest)
 
 
 ```C++
@@ -47,7 +47,7 @@ Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que c
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 

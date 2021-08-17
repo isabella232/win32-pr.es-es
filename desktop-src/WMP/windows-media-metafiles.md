@@ -1,16 +1,16 @@
 ---
-title: Metaarchivos de Windows Media
-description: Metaarchivos de Windows Media
+title: Windows Metarchivos multimedia
+description: Windows Metarchivos multimedia
 ms.assetid: 77af7d15-52ac-496c-8037-51827adf0250
 keywords:
-- Metaarchivos de Windows Media, acerca de
-- Media Player de Windows, metaarchivos
-- Windows Media Player, metaarchivos de Windows Media
-- metaarchivos, acerca de
-- Windows Media, metaarchivos
-- Listas de reproducción de metarchivos de Windows Media, acerca de
+- Windows Metarchivos multimedia, acerca de
+- Reproductor de Windows Media,metarchivos
+- Reproductor de Windows Media,Windows metarchivos multimedia
+- metarchivos, acerca de
+- Windows Multimedia, metarchivos
+- Windows Listas de reproducción de metarchivo multimedia, acerca de
 - listas de reproducción, acerca de
-- listas de reproducción de metarchivos, acerca de
+- listas de reproducción de metarchivo, acerca de
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -18,20 +18,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 385b149e07e9d30df4e11a21f8e7aa4b05e06910
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e9060de5f33956dde0cf288a3125af2a89f97bb841faeda8e0638cd5ab29334a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116628"
 ---
-# <a name="windows-media-metafiles"></a>Metaarchivos de Windows Media
+# <a name="windows-media-metafiles"></a>Windows Metarchivos multimedia
 
-Esta referencia documenta los metaarchivos de Windows Media, que utilizan las extensiones de nombre de archivo. Wax,. wvx,. WMX y. ASX. Contiene secciones de la guía de programación y de información general, así como una sección de referencia completa de etiquetas de elementos de metarchivo, sus atributos y valores, y condiciones especiales relacionadas con cada elemento.
+Esta referencia documenta Windows metarchivos multimedia, que usan las extensiones de nombre de archivo .desenlace, .wvx, .wmx y .asx. Contiene secciones de información general y guía de programación, y una sección de referencia completa sobre las etiquetas de elementos de metarchivo, sus atributos y valores, y condiciones especiales relacionadas con cada elemento.
 
-Un metarchivo es un archivo que contiene información sobre otros archivos. Se puede usar un metarchivo para mostrar un grupo de archivos de contenido multimedia que se reproducirán en orden. Las listas de reproducción de metarchivos de Windows Media, simplemente denominadas listas de reproducción en este documento de referencia, son una de las características más eficaces de las tecnologías de Microsoft Windows Media. Las listas de reproducción le permiten controlar y personalizar el contenido multimedia. Por ejemplo, con las listas de reproducción puede programar el contenido para que se reproduzca en sucesión o inserte clips de publicidad o de interés especial en una presentación. Una mayor ventaja de las listas de reproducción es que, en lugar de reproducir un flujo, detener, iniciar el siguiente flujo y, a continuación, esperar a que finalice el almacenamiento en búfer, Windows Media Services y Windows Media Player funcionan juntos para reproducir los clips uno tras otro con un tiempo mínimo de almacenamiento en búfer o una interrupción entre ellos.
+Un metarchivo es un archivo que contiene información sobre otros archivos. Un metarchivo se puede usar para enumerar un grupo de archivos de contenido multimedia que se van a reproducir en orden. Windows Las listas de reproducción de metarchivos multimedia, simplemente denominadas listas de reproducción en este documento de referencia, son una de las características más eficaces de Microsoft Windows Media Technologies. Las listas de reproducción permiten controlar y personalizar el contenido multimedia. Por ejemplo, con las listas de reproducción, puede programar contenido para reproducirlo en sucesión o insertar clips de publicidad o de interés especial en una presentación. Una ventaja adicional de las listas de reproducción es que, en lugar de reproducir una secuencia, detener, iniciar la siguiente secuencia y, a continuación, esperar a que finalice el almacenamiento en búfer, Servicios de Windows Media y Reproductor de Windows Media funcionan conjuntamente para reproducir los clips uno tras otro con un tiempo de almacenamiento en búfer mínimo o una interrupción entre ellos.
 
-Las tecnologías de Windows Media y otros productos de Internet proporcionan las herramientas necesarias para comprender los datos demográficos de los usuarios y personalizar dinámicamente una difusión o un mensaje para usuarios individuales.
+Windows Las tecnologías multimedia y otros productos de Internet proporcionan las herramientas necesarias para comprender los datos demográficos de los usuarios y personalizar dinámicamente una difusión o un mensaje para usuarios individuales.
 
 Esta referencia se divide en las secciones siguientes.
 
@@ -39,24 +39,24 @@ Esta referencia se divide en las secciones siguientes.
 
 | Sección                                                                  | Descripción                                                                                                                                                                         |
 |--------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Acerca de los metaarchivos de Windows Media](about-windows-media-metafiles.md)       | Presenta los elementos de metarchivo de Windows Media y describe su finalidad.                                                                                                             |
-| [Guía de metarchivo de Windows Media](windows-media-metafile-guide.md)         | Detalla los pasos necesarios para crear los metaarchivos. En los ejemplos se muestra cómo usar etiquetas de elementos para tareas específicas.                                                                 |
-| [Referencia de metarchivos de Windows Media](windows-media-metafile-reference.md) | Explica con detalle cada uno de los elementos de metarchivo, sus atributos y valores, y condiciones especiales relacionadas con cada uno de ellos. Explica las extensiones de nombre de archivo de metarchivo y su uso correcto. |
+| [Acerca Windows metarchivos multimedia](about-windows-media-metafiles.md)       | Presenta Windows elementos de metarchivo multimedia y describe su propósito.                                                                                                             |
+| [Windows Guía de metarchivo multimedia](windows-media-metafile-guide.md)         | Detalla los pasos necesarios para crear metarchivos. En los ejemplos se muestra cómo usar etiquetas de elemento para tareas específicas.                                                                 |
+| [Windows Referencia de metarchivo multimedia](windows-media-metafile-reference.md) | Explica en detalle cada uno de los elementos del metarchivo, sus atributos y valores, y las condiciones especiales relacionadas con cada uno. Explica las extensiones de nombre de archivo de metarchivo y su uso adecuado. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**SDK de Media Player de Windows**](windows-media-player-sdk.md)
+[**Reproductor de Windows Media Sdk**](windows-media-player-sdk.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

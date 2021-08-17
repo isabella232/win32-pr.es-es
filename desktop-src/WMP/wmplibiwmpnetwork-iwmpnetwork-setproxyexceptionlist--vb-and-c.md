@@ -1,11 +1,11 @@
 ---
-title: IWMPNetwork setProxyExceptionList, método
-description: El método setProxyExceptionList especifica la lista de excepciones de proxy. | IWMPNetwork setProxyExceptionList, método
+title: Método IWMPNetwork setProxyExceptionList
+description: El método setProxyExceptionList especifica la lista de excepciones de proxy. | Método IWMPNetwork setProxyExceptionList
 ms.assetid: a7a5e9ad-f71f-431e-9a53-b56456778104
 keywords:
-- método setProxyExceptionList de Windows Media Player
-- método setProxyExceptionList Windows Media Player, interfaz IWMPNetwork
-- Interfaz IWMPNetwork Windows Media Player, método setProxyExceptionList
+- Método setProxyExceptionList Reproductor de Windows Media
+- Método setProxyExceptionList Reproductor de Windows Media , interfaz IWMPNetwork
+- Interfaz IWMPNetwork Reproductor de Windows Media , método setProxyExceptionList
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5dad011dee8e1199e6111be60acfec41d85d1e58
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eddfd3ce8495c02fc6ae352f918349ff7174afb99e69d9e1ba8aa19c45d1a49d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117745767"
 ---
-# <a name="iwmpnetworksetproxyexceptionlist-method"></a>IWMPNetwork:: setProxyExceptionList (método)
+# <a name="iwmpnetworksetproxyexceptionlist-method"></a>IWMPNetwork::setProxyExceptionList (método)
 
-El método **setProxyExceptionList** especifica la lista de excepciones de proxy.
+El **método setProxyExceptionList** especifica la lista de excepciones de proxy.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,17 +55,17 @@ Implements IWMPNetwork.setProxyExceptionList
 
 <dl> <dt>
 
-*bstrProtocol* \[ de\]
+*bstrProtocol* \[ En\]
 </dt> <dd>
 
-**System. String** que es el nombre del protocolo. Para obtener una lista de protocolos admitidos, consulte [protocolos y tipos de archivo admitidos](supported-protocols-and-file-types.md).
+**System.String que** es el nombre del protocolo. Para obtener una lista de los protocolos admitidos, vea [Protocolos y tipos de archivo admitidos.](supported-protocols-and-file-types.md)
 
 </dd> <dt>
 
-*pbstrExceptionList* \[ de\]
+*pbstrExceptionList* \[ En\]
 </dt> <dd>
 
-**System. String** que es una lista de hosts delimitados por punto y coma para los que se omite el servidor proxy. Los espacios iniciales y finales no deben estar presentes.
+**System.String que** es una lista delimitada por punto y coma de hosts para los que se omite el servidor proxy. Los espacios iniciales y finales no deben estar presentes.
 
 </dd> </dl>
 
@@ -73,19 +73,19 @@ Implements IWMPNetwork.setProxyExceptionList
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta es una lista de equipos, dominios y/o direcciones que omitirán el servidor proxy cuando la parte del host de la dirección URL de destino coincida con una entrada de la lista.
+Se trata de una lista de equipos, dominios o direcciones que omitirán el servidor proxy cuando la parte del host de la dirección URL de destino coincida con una entrada de la lista.
 
-El \* carácter se puede usar como carácter comodín para enumerar entradas. Por ejemplo, \* . com coincidiría con todos los hosts del dominio com, mientras \* que 67. coincidiría con todos los hosts de la clase 67 A la subred.
+El \* carácter se puede usar como carácter comodín para enumerar entradas. Por ejemplo, .com coincidiría con todos los hosts del dominio com, mientras que 67. coincidiría con todos los hosts de la subred de la \* \* clase A 67.
 
-Este método no tiene ningún efecto a menos que el valor recuperado de **IWMPNetwork. getProxySettings** es 2 (use la configuración manual).
+Este método no tiene ningún efecto a menos que el valor recuperado de **IWMPNetwork.getProxySettings** sea 2 (use la configuración manual).
 
-Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o en la intranet.
+Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se usa **setProxyExceptionList** para especificar una lista de hosts para los que se omite el servidor proxy cuando se usa el protocolo MMS. La nueva lista se recupera de un cuadro de texto cuando se hace clic en un botón. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo de código siguiente se **usa setProxyExceptionList para** especificar una lista de hosts para los que se omite el servidor proxy cuando se usa el protocolo MMS. La nueva lista se recupera de un cuadro de texto cuando se hace clic en un botón. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -142,7 +142,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -155,10 +155,10 @@ End Sub
 [**Interfaz IWMPNetwork (VB y C#)**](iwmpnetwork--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. getProxyExceptionList (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxyexceptionlist--vb-and-c.md)
+[**IWMPNetwork.getProxyExceptionList (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxyexceptionlist--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. getProxySettings (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
+[**IWMPNetwork.getProxySettings (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
 </dt> </dl>
 
  

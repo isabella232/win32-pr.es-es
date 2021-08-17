@@ -23,7 +23,7 @@ Especifica el lenguaje utilizado por una secuencia en un archivo de formato de s
 
 Este atributo se aplica a los descriptores de flujo para el contenido de ASF. El valor es un índice en la lista de idiomas contenida en el atributo [**\_ MF PD \_ ASF \_ LANGLIST.**](mf-pd-asf-langlist-attribute.md)
 
-Este atributo corresponde al campo Stream Language ID Index (Índice de id. de lenguaje de stream) del objeto Extended Stream Properties (Propiedades de secuencia extendidas). Para obtener más información, consulte la especificación de ASF.
+Este atributo corresponde al campo Stream Language ID Index (Índice de id. de lenguaje de stream) del objeto Propiedades de secuencia extendidas. Para obtener más información, consulte la especificación de ASF.
 
 El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) genera este atributo a partir de los metadatos de ASF. La aplicación puede crear el descriptor de flujo para la secuencia desde el descriptor de presentación llamando a [**IMFPresentationDescriptor::GetStreamDescriptorByIndex**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorbyindex).
 

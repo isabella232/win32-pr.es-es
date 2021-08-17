@@ -1,6 +1,6 @@
 ---
 title: SB_GETUNICODEFORMAT mensaje (Commctrl.h)
-description: 'SB_GETUNICODEFORMAT mensaje: recupera la marca de formato de caracteres Unicode para el control.'
+description: 'SB_GETUNICODEFORMAT mensaje: recupera la marca de formato de caracteres Unicode para el control .'
 ms.assetid: 0b2b543a-b1ef-452c-9b34-c5fbbac4aaa9
 keywords:
 - SB_GETUNICODEFORMAT controles de Windows mensaje

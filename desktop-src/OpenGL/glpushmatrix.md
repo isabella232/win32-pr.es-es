@@ -23,7 +23,7 @@ ms.locfileid: "117795140"
 ---
 # <a name="glpushmatrix-function"></a>Función glPushMatrix
 
-Las **funciones glPushMatrix** [**y glPopMatrix**](glpopmatrix.md) insertan y devuelven la pila de matriz actual.
+Las **funciones glPushMatrix** y [**glPopMatrix**](glpopmatrix.md) insertan y devuelven la pila de matriz actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,11 +59,11 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 ## <a name="remarks"></a>Comentarios
 
-Hay una pila de matrices para cada uno de los modos de matriz. En el \_ modo MODELVIEW de GL, la profundidad de la pila es al menos 32. En los otros dos modos, GL \_ PROJECTION y GL \_ TEXTURE, la profundidad es al menos 2. La matriz actual en cualquier modo es la matriz en la parte superior de la pila para ese modo.
+Hay una pila de matrices para cada uno de los modos de matriz. En el \_ modo GL MODELVIEW, la profundidad de la pila es al menos 32. En los otros dos modos, GL \_ PROJECTION y GL \_ TEXTURE, la profundidad es al menos 2. La matriz actual en cualquier modo es la matriz en la parte superior de la pila para ese modo.
 
-La **función glPushMatrix** inserta la pila de matriz actual en una, duplicando la matriz actual. Es decir, después de una **llamada a glPushMatrix,** la matriz de la parte superior de la pila es idéntica a la que está debajo de ella. La **función glPopMatrix** muestra la pila de matriz actual, reemplazando la matriz actual por la que hay debajo en la pila. Inicialmente, cada una de las pilas contiene una matriz, una matriz de identidad.
+La **función glPushMatrix** presiona una vez la pila de matriz actual, duplicando la matriz actual. Es decir, después de una **llamada a glPushMatrix,** la matriz de la parte superior de la pila es idéntica a la que hay debajo de ella. La **función glPopMatrix** muestra la pila de matriz actual, reemplazando la matriz actual por la que está debajo de ella en la pila. Inicialmente, cada una de las pilas contiene una matriz, una matriz de identidad.
 
-Las siguientes funciones recuperan información relacionada **con glPushMatrix** y **glPopMatrix**:
+Las funciones siguientes recuperan información relacionada **con glPushMatrix** y **glPopMatrix**:
 
 [**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MATRIX \_ MODE
 
@@ -89,7 +89,7 @@ Las siguientes funciones recuperan información relacionada **con glPushMatrix**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -99,7 +99,7 @@ Las siguientes funciones recuperan información relacionada **con glPushMatrix**
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

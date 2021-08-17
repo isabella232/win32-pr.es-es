@@ -1,6 +1,6 @@
 ---
 title: Función Texture2DArray::GatherCmpRed(S,float,float,int)
-description: Para cuatro valores de texel que se usarían en una operación de filtrado bi lineal, devuelve una comparación de su componente rojo con un valor de comparación. | Función Texture2DArray::GatherCmpRed(S,float,float,int)
+description: Para cuatro valores de texel que se usarían en una operación de filtrado bi linear, devuelve una comparación de su componente rojo con un valor de comparación. | Función Texture2DArray::GatherCmpRed(S,float,float,int)
 ms.assetid: aa7fadf8-fe96-406a-9c93-9ae0c59ef087
 keywords:
 - Función GatherCmpRed HLSL
@@ -22,7 +22,7 @@ ms.locfileid: "117724616"
 ---
 # <a name="texture2darraygathercmpredsfloatfloatint-function"></a>Función Texture2DArray::GatherCmpRed(S,float,float,int)
 
-Para cuatro valores de texel que se usarían en una operación de filtrado bi lineal, devuelve una comparación de su componente rojo con un valor de comparación.
+Para cuatro valores de texel que se usarían en una operación de filtrado bi linear, devuelve una comparación de su componente rojo con un valor de comparación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -66,7 +66,7 @@ Valor que se compara con cada valor muestreado.
 
 </dd> <dt>
 
-*desplazamiento* \[ En\]
+*offset* \[ En\]
 </dt> <dd>
 
 Tipo: **int2**
@@ -83,7 +83,7 @@ Un valor de cuatro componentes, cada componente es el resultado de una comparaci
 
 ## <a name="remarks"></a>Comentarios
 
-Las muestras de textura se pueden usar para la interpolación bilineal.
+Los ejemplos de textura se pueden usar para la interpolación bilineal.
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
@@ -97,14 +97,14 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Métodos GatherCmpRed](texture2darray-gathercmpred.md)
 </dt> <dt>
 
-[Shader Model 5](d3d11-graphics-reference-sm5.md)
+[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

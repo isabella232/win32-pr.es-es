@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: EsentVersion. SupportsWindows7Features (propiedad)'
-title: Propiedad EsentVersion. SupportsWindows7Features
+description: 'Más información sobre: Propiedad EsentVersion.SupportsWindows7Features'
+title: Propiedad EsentVersion.SupportsWindows7Features
 TOCTitle: 'SupportsWindows7Features property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.EsentVersion.SupportsWindows7Features
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentversion.supportswindows7features(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cd312651dc73d63726fd04ad30fadaa79bebf7e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9abefdd11f2fe6a356eda4799f92cac5cfe53aa4a2306aa8337d90f2eaa55d7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118077927"
 ---
-# <a name="esentversionsupportswindows7features-property"></a>Propiedad EsentVersion. SupportsWindows7Features
+# <a name="esentversionsupportswindows7features-property"></a>Propiedad EsentVersion.SupportsWindows7Features
 
-Obtiene un valor que indica si la versión actual de ESENT admite características disponibles en la versión de Windows 7 de ESENT.
+Obtiene un valor que indica si la versión actual de ESENT admite características disponibles en Windows versión 7 de ESENT.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -57,7 +57,7 @@ public static bool SupportsWindows7Features { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -67,4 +67,4 @@ Tipo: [System. Boolean](/dotnet/api/system.boolean)
 
 [Miembros de EsentVersion](./esentversion-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

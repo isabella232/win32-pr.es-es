@@ -62,7 +62,7 @@ Si las direcciones no son las mismas, el valor devuelto es **FALSE.**
 
 ## <a name="remarks"></a>Comentarios
 
-Para que **la función CompareFrameDestAddress** devuelva correctamente, el tipo de dirección de destino debe coincidir con el tipo de dirección especificado en el *parámetro lpAddress.*
+Para que **la función CompareFrameDestAddress** se devuelva correctamente, el tipo de dirección de destino debe coincidir con el tipo de dirección especificado en el *parámetro lpAddress.*
 
 Monitor de red proporciona otras dos funciones, [CompareFrameSourceAddress](compareframesourceaddress.md) y [CompareAddresses,](compareaddresses.md)que puede usar para comparar direcciones. La **función CompareFrameSourceAddress** compara una dirección determinada con la dirección de origen del marco y la **función CompareAddress** compara dos direcciones determinadas.
 

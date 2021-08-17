@@ -1,21 +1,21 @@
 ---
 description: En este tema se muestra cómo cargar un IWICBitmapFrameDecode desde un recurso de aplicación.
 ms.assetid: 2260ad3a-44d4-4fe2-aa8c-608ffc11fbfb
-title: Cómo cargar un mapa de bits desde un recurso (componente de Windows Imaging)
+title: Cómo cargar un mapa de bits desde un recurso (Windows de creación de imágenes)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: deb33ad57b3b9dac1cb5d98719c681adb38c11de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88bc10766ed6720e60dd85a9600107c883da80d7b326ddd810b6261e509915da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118034747"
 ---
-# <a name="how-to-load-a-bitmap-from-a-resource-windows-imaging-component"></a>Cómo cargar un mapa de bits desde un recurso (componente de Windows Imaging)
+# <a name="how-to-load-a-bitmap-from-a-resource-windows-imaging-component"></a>Cómo cargar un mapa de bits desde un recurso (Windows de creación de imágenes)
 
-En este tema se muestra cómo cargar un [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) desde un recurso de aplicación.
+En este tema se muestra cómo cargar [**un IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) desde un recurso de aplicación.
 
-1.  En el archivo de definición de recursos de la aplicación (. RC), defina el recurso. En el ejemplo siguiente se define un `Image` recurso denominado `IDR_SAMPLE_IMAGE` .
+1.  En el archivo de definición de recursos de aplicación (.rc), defina el recurso. En el ejemplo siguiente se define `Image` un recurso denominado `IDR_SAMPLE_IMAGE` .
 
     ```C++
     IDR_SAMPLE_IMAGE IMAGE "turtle.jpg"
@@ -23,9 +23,9 @@ En este tema se muestra cómo cargar un [**IWICBitmapFrameDecode**](/windows/des
 
     
 
-    El recurso se agregará a los recursos de la aplicación cuando se compile la aplicación.
+    El recurso se agregará a los recursos de la aplicación cuando se haya creado la aplicación.
 
-2.  Cargue el recurso de la aplicación.
+2.  Cargue el recurso desde la aplicación.
 
     ```C++
     HRESULT hr = S_OK;
@@ -78,7 +78,7 @@ En este tema se muestra cómo cargar un [**IWICBitmapFrameDecode**](/windows/des
 
     
 
-4.  Use el método [**CreateStream (**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createstream) para crear un objeto [**IWICStream**](/windows/desktop/api/Wincodec/nn-wincodec-iwicstream) e inicializarlo con el puntero de memoria de imagen.
+4.  Use el [**método CreateStream**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createstream) para crear un [**objeto IWICStream**](/windows/desktop/api/Wincodec/nn-wincodec-iwicstream) e inicializarlo mediante el puntero de memoria de imagen.
 
     ```C++
     // Create a WIC stream to map onto the memory.
@@ -96,7 +96,7 @@ En este tema se muestra cómo cargar un [**IWICBitmapFrameDecode**](/windows/des
 
     
 
-5.  Cree una [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) desde el nuevo objeto de secuencia mediante el método [**CreateDecoderFromStream**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromstream) .
+5.  Cree un [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) a partir del nuevo objeto de secuencia mediante el [**método CreateDecoderFromStream.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromstream)
 
     ```C++
     // Create a decoder for the stream.
@@ -111,7 +111,7 @@ En este tema se muestra cómo cargar un [**IWICBitmapFrameDecode**](/windows/des
 
     
 
-6.  Recupere un [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) de la imagen descodificada.
+6.  Recupere un [**IWICBitmapFrameDecode de**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) la imagen descodificada.
 
     ```C++
     // Retrieve the initial frame.
@@ -122,7 +122,7 @@ En este tema se muestra cómo cargar un [**IWICBitmapFrameDecode**](/windows/des
 
     
 
-    Este código solo recupera el primer `0` fotograma () de la imagen. En el caso de las imágenes con varios marcos, use [**GetFrameCount**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getframecount) para determinar el número de fotogramas de la imagen.
+    Este código solo recupera el primer fotograma `0` () de la imagen. En el caso de las imágenes con varios marcos, use [**GetFrameCount**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getframecount) para determinar el número de fotogramas de la imagen.
 
 ## <a name="see-also"></a>Consulte también
 

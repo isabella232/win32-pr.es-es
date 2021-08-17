@@ -13,7 +13,7 @@ ms.locfileid: "118413183"
 ---
 # <a name="custom-draw"></a>Dibujo personalizado
 
-El dibujo personalizado no es un control común; es un servicio que proporcionan muchos controles comunes. El servicio de dibujo personalizado permite a una aplicación mayor flexibilidad a la hora de personalizar la apariencia de un control. La aplicación puede aprovechar las notificaciones de dibujo personalizadas para cambiar fácilmente la fuente que se usa para mostrar elementos o dibujar manualmente un elemento sin tener que realizar un dibujo de propietario completo.
+El dibujo personalizado no es un control común; es un servicio que proporcionan muchos controles comunes. El servicio de dibujo personalizado permite a una aplicación mayor flexibilidad a la hora de personalizar la apariencia de un control. La aplicación puede aprovechar las notificaciones de dibujo personalizadas para cambiar fácilmente la fuente usada para mostrar elementos o dibujar manualmente un elemento sin tener que realizar un dibujo completo del propietario.
 
 Esta sección contiene información sobre los elementos de programación utilizados con el dibujo personalizado.
 

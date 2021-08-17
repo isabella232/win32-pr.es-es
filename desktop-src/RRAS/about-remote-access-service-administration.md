@@ -1,11 +1,11 @@
 ---
 title: Acerca de la administración del servicio de acceso remoto
-description: Windows 2000 y versiones posteriores proporcionan un conjunto de funciones para administrar los permisos de usuario y los puertos en servidores RAS.
+description: Windows sistemas operativos 2000 y versiones posteriores proporcionan un conjunto de funciones para administrar los permisos de usuario y los puertos en servidores RAS.
 ms.assetid: 95c6dceb-e3a9-421e-b43f-88b18b9e64ff
 keywords:
 - RRAS del servicio de enrutamiento y acceso remoto, administración de RAS
 - RRAS del servicio de enrutamiento y acceso remoto, administración de RAS, descrito
-- RAS Administration RRAS
+- RRAS de administración de RAS
 - RRAS de administración de RAS, descrito
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,7 +18,7 @@ ms.locfileid: "117792288"
 ---
 # <a name="about-remote-access-service-administration"></a>Acerca de la administración del servicio de acceso remoto
 
-Windows 2000 y versiones posteriores proporcionan un conjunto de funciones para administrar los permisos de usuario y los puertos en servidores RAS. Con estas funciones, puede desarrollar una aplicación de administración de servidores RAS para realizar las siguientes tareas:
+Windows sistemas operativos 2000 y versiones posteriores proporcionan un conjunto de funciones para administrar los permisos de usuario y los puertos en servidores RAS. Con estas funciones, puede desarrollar una aplicación de administración de servidores RAS para realizar las siguientes tareas:
 
 -   Enumerar los usuarios que tienen un conjunto especificado de permisos RAS
 -   Asignación o revocación de permisos RAS para un usuario especificado
@@ -27,7 +27,7 @@ Windows 2000 y versiones posteriores proporcionan un conjunto de funciones para 
 -   Restablecer los contadores de estadísticas para un puerto especificado
 -   Desconectar un puerto especificado
 
-También puede instalar un archivo DLL de administración del servidor RAS para auditar las conexiones de usuario y asignar direcciones IP a los usuarios de acceso telefónico. El archivo DLL exporta un conjunto de funciones a las que el servidor RAS llama cada vez que un usuario intenta conectarse o desconectarse.
+También puede instalar un archivo DLL de administración del servidor RAS para auditar las conexiones de usuario y asignar direcciones IP a los usuarios de acceso telefónico. El archivo DLL exporta un conjunto de funciones a las que llama el servidor RAS cada vez que un usuario intenta conectarse o desconectarse.
 
 En esta documentación se describen los temas siguientes:
 
@@ -35,7 +35,7 @@ En esta documentación se describen los temas siguientes:
 -   [Administración de usuarios ras](ras-user-administration.md)
 -   [Administración de puertos y servidores RAS](ras-server-and-port-administration.md)
 -   [DLL de administración de RAS](ras-administration-dll.md)
--   [Instalación del Registro DLL de administración de RAS](ras-administration-dll-registry-setup.md)
+-   [Instalación del Registro dll de administración de RAS](ras-administration-dll-registry-setup.md)
 
  
 

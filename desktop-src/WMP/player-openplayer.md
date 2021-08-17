@@ -1,11 +1,11 @@
 ---
-title: Player. openPlayer (método)
-description: El método openPlayer abre Windows Media Player mediante la dirección URL especificada. | Player. openPlayer (método)
+title: Método Player.openPlayer
+description: El método openPlayer se Reproductor de Windows Media con la dirección URL especificada. | Método Player.openPlayer
 ms.assetid: 9ddd63c9-f4a0-490a-8543-51ad0fa74a26
 keywords:
-- método openPlayer de Windows Media Player
-- método openPlayer Windows Media Player, clase Player
-- Clase Player Media Player Windows, método openPlayer
+- Método openPlayer Reproductor de Windows Media
+- Método openPlayer Reproductor de Windows Media , Clase Player
+- Clase player Reproductor de Windows Media , método openPlayer
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3378df48f961f1aa5e3fccec72e79b7f1c26ff08
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 42245ec29f7d7caeac17f116d1f592f74f10ba95716d5d16734ecd21bbcbb60d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747573"
 ---
-# <a name="playeropenplayer-method"></a>Player. openPlayer (método)
+# <a name="playeropenplayer-method"></a>Método Player.openPlayer
 
-El método **openPlayer** abre Windows Media Player mediante la dirección URL especificada.
+El **método openPlayer** se Reproductor de Windows Media con la dirección URL especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ Player.openPlayer(
 
 <dl> <dt>
 
-*Dirección URL* \[ de\]
+*Dirección URL* \[ En\]
 </dt> <dd>
 
-**Cadena** que representa la dirección URL del elemento multimedia que se va a reproducir.
+**Cadena** que representa la dirección URL del elemento multimedia que se reproducirá.
 
 </dd> </dl>
 
@@ -53,13 +53,13 @@ Player.openPlayer(
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método inicia Windows Media Player con la dirección URL especificada como elemento multimedia actual. Si el reproductor se cerró previamente en modo de máscara, se abrirá con la última máscara elegida por el usuario. De lo contrario, el reproductor se abre en modo completo.
+Este método inicia Reproductor de Windows Media con la dirección URL especificada establecida como el elemento multimedia actual. Si el reproductor se cerró previamente en modo de máscara, se abrirá con la última máscara elegida por el usuario. De lo contrario, el reproductor se abre en modo completo.
 
-Si se llama a este método desde un control PlayerActiveX de Windows Media incrustado en modo remoto, su comportamiento es idéntico al de *PlayerApplication*. método **switchToPlayerApplication** .
+Si se llama a este método desde un control Windows Media PlayerActiveX insertado en modo remoto, su comportamiento es idéntico al *de PlayerApplication*. **Método switchToPlayerApplication.**
 
-**Windows Media Player 10 Mobile:** Este método no se admite.
+**Reproductor de Windows Media 10 Mobile:** No se admite este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Si se llama a este método desde un control PlayerActiveX de Windows Media incru
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/>                                 |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

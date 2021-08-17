@@ -28,7 +28,7 @@ ms.locfileid: "118399625"
 
  
 
-El método redondea los valores de tiempo especificados al límite de marco más cercano, tal como `FixMediaTimes2` se define en la velocidad de fotogramas de salida. Este método es equivalente a [**IAMTimelineSrc::FixMediaTimes**](iamtimelinesrc-fixmediatimes.md), pero toma [**valores REFTIME.**](reftime.md)
+El `FixMediaTimes2` método redondea los valores de tiempo especificados al límite de fotogramas más cercano, tal como se define en la velocidad de fotogramas de salida. Este método es equivalente a [**IAMTimelineSrc::FixMediaTimes**](iamtimelinesrc-fixmediatimes.md), pero toma [**valores REFTIME.**](reftime.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Puntero a una variable que contiene la hora de inicio, en segundos. Si la llamad
 *pStop* 
 </dt> <dd>
 
-Puntero a una variable que contiene la hora de detenerse, en segundos. Si la llamada se realiza correctamente, esta variable se establece en el tiempo redondeado.
+Puntero a una variable que contiene el tiempo de detenerse, en segundos. Si la llamada se realiza correctamente, esta variable se establece en el tiempo redondeado.
 
 </dd> </dl>
 
@@ -94,7 +94,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 [**IamTimelineSrc (interfaz)**](iamtimelinesrc.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

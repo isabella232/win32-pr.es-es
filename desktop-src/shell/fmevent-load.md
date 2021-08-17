@@ -1,7 +1,7 @@
 ---
-description: Se envía a un archivo DLL de extensión cuando el administrador de archivos está cargando el archivo DLL.
+description: Se envía a un archivo DLL de extensión cuando el Administrador de archivos carga el archivo DLL.
 ms.assetid: 9d673ab8-c468-4b46-b96e-1adfaa9f85fb
-title: Mensaje de FMEVENT_LOAD (Wfext. h)
+title: FMEVENT_LOAD mensaje (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Wfext.h
-ms.openlocfilehash: de7a950e3f17c9b2cee2b66a047d289ca29b6b56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8001ca861b77755ea7f5ee829a9af490c2f426dcd6179f2fe84831c624bb4ef5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860660"
 ---
-# <a name="fmevent_load-message"></a>Mensaje de carga de FMEVENT \_
+# <a name="fmevent_load-message"></a>Mensaje DE \_ CARGA DE FMEVENT
 
-Se envía a un archivo DLL de extensión cuando el administrador de archivos está cargando el archivo DLL.
+Se envía a un archivo DLL de extensión cuando el Administrador de archivos carga el archivo DLL.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -38,31 +38,31 @@ Debe ser cero.
 *lpfmsld* 
 </dt> <dd>
 
-La dirección de una estructura de [**\_ carga de FMS**](fms-load.md) que especifica el valor Delta del elemento de menú.
+Dirección de una estructura [**LOAD \_ de FMS**](fms-load.md) que especifica el valor delta del elemento de menú.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Un archivo DLL de extensión debe devolver **true** para continuar cargando el archivo dll. Si el archivo DLL devuelve **false**, el administrador de archivos llama a la función [**FreeLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary) y finaliza cualquier comunicación con el archivo dll de extensión.
+Un archivo DLL de extensión debe devolver **TRUE** para continuar cargando el archivo DLL. Si el archivo DLL devuelve **FALSE,** el Administrador de archivos llama a la [**función FreeLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary) y finaliza cualquier comunicación con el archivo DLL de extensión.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una aplicación debe rellenar los miembros **dwSize**, **szMenuName** y **hMenu** en la estructura de [**\_ carga de FMS**](fms-load.md) . También debe guardar el valor del miembro **wMenuDelta** y usarlo para identificar los elementos de menú al modificar el menú.
+Una aplicación debe rellenar los **miembros dwSize**, **szMenuName** y **hMenu** en la [**estructura LOAD \_ de FMS.**](fms-load.md) También debe guardar el valor del miembro **wMenuDelta** y usarlo para identificar los elementos de menú al modificar el menú.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,19 +1,19 @@
 ---
-description: Recupera las métricas de calidad de la cancelación de eco acústico (AEC) del DSP de captura de voz.
+description: Recupera métricas de calidad sobre la cancelación de eco acústico (AEC) del DSP de captura de voz.
 ms.assetid: de2e86ae-0469-471f-9105-0bb38a59b428
-title: Propiedad MFPKEY_WMAAECMA_QUALITY_METRICS (Wmcodecdsp. h)
+title: MFPKEY_WMAAECMA_QUALITY_METRICS propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3740630bc23c4e3e0e824e55b4e34bcd8b1347f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2186876279ee45e34444866c206a7729c0674c8dff1bc57c255ca205e911edae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117689270"
 ---
-# <a name="mfpkey_wmaaecma_quality_metrics-property"></a>\_Propiedad de \_ \_ métricas de calidad de MFPKEY WMAAECMA
+# <a name="mfpkey_wmaaecma_quality_metrics-property"></a>Propiedad MFPKEY \_ WMAAECMA \_ QUALITY \_ METRICS
 
-Recupera las métricas de calidad de la cancelación de eco acústico (AEC) del DSP de captura de voz.
+Recupera métricas de calidad sobre la cancelación de eco acústico (AEC) del DSP de captura de voz.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -21,11 +21,11 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 ## <a name="data-type"></a>Tipo de datos
 
-BLOB de VT \_
+VT \_ BLOB
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de esta propiedad es una estructura de [ \_ struct AecQualityMetrics](/windows/win32/api/wmcodecdsp/ns-wmcodecdsp-aecqualitymetrics_struct) . Esta propiedad es de solo lectura.
+El valor de esta propiedad es una [estructura \_ Struct AecQualityMetrics.](/windows/win32/api/wmcodecdsp/ns-wmcodecdsp-aecqualitymetrics_struct) Esta propiedad es de solo lectura.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ El valor de esta propiedad es una estructura de [ \_ struct AecQualityMetrics](/
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ El valor de esta propiedad es una estructura de [ \_ struct AecQualityMetrics](/
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
 [DSP de captura de voz](voicecapturedmo.md)

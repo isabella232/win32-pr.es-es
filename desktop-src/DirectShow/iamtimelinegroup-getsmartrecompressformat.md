@@ -48,7 +48,7 @@ HRESULT GetSmartRecompressFormat(
 *ppFormat* 
 </dt> <dd>
 
-Recibe un puntero a una [**estructura SCompFmt0,**](scompfmt0.md) que se convierte como un puntero a un objeto long. Si se produce un error en el método , el valor se establece en **NULL.**
+Recibe un puntero a una [**estructura SCompFmt0,**](scompfmt0.md) que se convierte como un puntero a un objeto long. Si se produce un error en el método, el valor se establece en **NULL.**
 
 </dd> </dl>
 

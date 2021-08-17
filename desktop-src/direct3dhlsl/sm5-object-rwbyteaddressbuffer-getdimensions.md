@@ -1,9 +1,9 @@
 ---
-title: 'RWByteAddressBuffer:: Getdimensions ((función)'
-description: 'Obtiene la longitud del búfer. | RWByteAddressBuffer:: Getdimensions ((función)'
+title: FUNCIÓN RWByteAddressBuffer::GetDimensions
+description: Obtiene la longitud del búfer. | FUNCIÓN RWByteAddressBuffer::GetDimensions
 ms.assetid: 7d78aa0d-75b8-43d5-85d9-0a6fb04ae64f
 keywords:
-- Getdimensions (de función HLSL
+- Función GetDimensions HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0d22b6f655802d77a92611fe8699a405aa323873
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2271f563251cfdb9c6f2a2174c91dc8c271c7354a2b10b9b2e7e55cb4af09d0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117725150"
 ---
-# <a name="rwbyteaddressbuffergetdimensions-function"></a>RWByteAddressBuffer:: Getdimensions ((función)
+# <a name="rwbyteaddressbuffergetdimensions-function"></a>FUNCIÓN RWByteAddressBuffer::GetDimensions
 
 Obtiene la longitud del búfer.
 
@@ -36,12 +36,12 @@ void GetDimensions(
 
 <dl> <dt>
 
-*atenuar* \[\]
+*dim* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-La longitud, en bytes, del búfer.
+Longitud, en bytes, del búfer.
 
 </dd> </dl>
 
@@ -49,13 +49,13 @@ La longitud, en bytes, del búfer.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

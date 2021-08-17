@@ -1,37 +1,37 @@
 ---
-description: Describe cómo enviar un OM XPS a una impresora como un documento XPS.
+description: Describe cómo enviar un XPS OM a una impresora como un documento XPS.
 ms.assetid: eb1068c4-6a6a-4ef2-8ed6-033a6a2c273b
-title: Imprimir un OM XPS
+title: Imprimir una OM XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c01ae1081c4f0c58c66efedc30406e310dd8dd9c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 12f1386352cff1556a5ce2403f34ebe4258c4110d4c3bf455990f3f1eb226d17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118470908"
 ---
-# <a name="print-an-xps-om"></a>Imprimir un OM XPS
+# <a name="print-an-xps-om"></a>Imprimir una OM XPS
 
-Describe cómo enviar un OM XPS a una impresora como un documento XPS.
+Describe cómo enviar un XPS OM a una impresora como un documento XPS.
 
-Para obtener instrucciones sobre cómo imprimir un OM XPS que contenga un documento XPS completo, consulte [imprimir un OM de XPS completo](#print-a-complete-xps-om). Para contener un documento XPS, un OM XPS debe incluir los elementos enumerados en [crear un OM XPS en blanco](create-a-blank-xps-om.md).
+Para obtener instrucciones sobre cómo imprimir un XPS OM que contiene un documento XPS completo, vea [Imprimir un XPS OM completo.](#print-a-complete-xps-om) Para contener un documento XPS, un OM XPS debe incluir los elementos enumerados en Crear una OM [XPS en blanco.](create-a-blank-xps-om.md)
 
-Para obtener instrucciones sobre cómo imprimir un OM XPS que se está creando o procesando una página a la vez, consulte [impresión incremental de un OM XPS](#incrementally-print-an-xps-om).
+Para obtener instrucciones sobre cómo imprimir una OM XPS que se crea o procesa una página a la vez, vea Impresión incremental de una [om XPS](#incrementally-print-an-xps-om).
 
-Antes de usar estos ejemplos de código en el programa, lea la declinación de responsabilidades en [las tareas comunes de programación de documentos XPS](common-xps-document-tasks.md).
+Antes de usar estos ejemplos de código en el programa, lea la declinación de responsabilidades en [Tareas comunes de programación de documentos XPS](common-xps-document-tasks.md).
 
 En este tema, aprenderá a realizar las siguientes tareas:
 
--   [Imprimir un OM XPS completo](#print-a-complete-xps-om)
--   [Impresión incremental de un OM XPS](#incrementally-print-an-xps-om)
+-   [Imprimir una OM XPS completa](#print-a-complete-xps-om)
+-   [Impresión incremental de una om xps](#incrementally-print-an-xps-om)
 -   [Temas relacionados](#related-topics)
 
-## <a name="print-a-complete-xps-om"></a>Imprimir un OM XPS completo
+## <a name="print-a-complete-xps-om"></a>Imprimir una OM XPS completa
 
-Cuando un OM XPS contiene un documento XPS completo, el método [**WriteToStream**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackage-writetostream) de la interfaz [**IXpsOMPackage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackage) puede enviar el contenido del OM XPS a una impresora o una cola de impresión.
+Cuando un XPS OM contiene un documento XPS completo, el método [**WriteToStream**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackage-writetostream) de la interfaz [**IXpsOMPackage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackage) puede enviar el contenido de XPS OM a una impresora o una cola de impresión.
 
-Para detectar cuándo se ha completado el trabajo de impresión, cree un identificador de evento como se muestra en el ejemplo siguiente.
+Para detectar cuándo se ha completado el trabajo de impresión, cree un identificador de eventos como se muestra en el ejemplo siguiente.
 
 
 ```C++
@@ -46,14 +46,14 @@ Para detectar cuándo se ha completado el trabajo de impresión, cree un identif
 
 
 
-Para imprimir un OM XPS completo:
+Para imprimir un XPS OM completo:
 
-1.  Cree un nuevo flujo de trabajo de impresión mediante una llamada a [**StartXpsPrintJob**](/windows/win32/api/xpsprint/nf-xpsprint-startxpsprintjob).
-2.  Envíe el contenido del OM XPS a la secuencia llamando al método [**WriteToStream**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackage-writetostream) del paquete.
-3.  Cierre el flujo de trabajo de impresión llamando al método **Close** de la secuencia.
+1.  Cree una nueva secuencia de trabajo de impresión mediante [**una llamada a StartXpsPrintJob**](/windows/win32/api/xpsprint/nf-xpsprint-startxpsprintjob).
+2.  Envíe el contenido de XPS OM a la secuencia mediante una llamada al [**método WriteToStream del**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackage-writetostream) paquete.
+3.  Cierre la secuencia del trabajo de impresión mediante una llamada al **método Close de la** secuencia.
 4.  Espere a que el trabajo de impresión señale que se ha completado.
 5.  Compruebe el estado de finalización.
-6.  Cierre y libere recursos.
+6.  Cierre y libere los recursos.
 
 
 ```C++
@@ -126,11 +126,11 @@ Para imprimir un OM XPS completo:
 
 
 
-## <a name="incrementally-print-an-xps-om"></a>Impresión incremental de un OM XPS
+## <a name="incrementally-print-an-xps-om"></a>Impresión incremental de una om xps
 
-Puede enviar los componentes de documento de un OM XPS a un trabajo de impresora de forma incremental; para ello, cree una secuencia de trabajo de impresión XPS y, a continuación, pase los componentes de documento individuales al flujo de trabajo de impresión, de uno en uno. La secuencia en la que se envían los componentes de documento determina cómo aparecerán en el documento terminado. Por lo tanto, antes de que un programa pueda llamar al código de este ejemplo, debe organizar correctamente los componentes del documento.
+Puede enviar los componentes de documento de una om xps a un trabajo de impresora de forma incremental mediante la creación de un flujo de trabajo de impresión XPS y, a continuación, pasar los componentes de documento individuales al flujo de trabajos de impresión, de uno en uno. La secuencia en la que se envían los componentes del documento determina cómo aparecerán en el documento finalizado. Por lo tanto, antes de que un programa pueda llamar al código de este ejemplo, debe organizar correctamente los componentes del documento.
 
-Antes de utilizar las interfaces de XPS OM, inicialice COM en el subproceso, tal y como se muestra en el código de ejemplo siguiente.
+Antes de usar interfaces XPS OM, inicialice COM en el subproceso como se muestra en el código de ejemplo siguiente.
 
 
 ```C++
@@ -140,7 +140,7 @@ Antes de utilizar las interfaces de XPS OM, inicialice COM en el subproceso, tal
 
 
 
-Para supervisar la finalización del trabajo de impresión, cree un identificador de evento, tal como se muestra en el código de ejemplo siguiente.
+Para supervisar la finalización del trabajo de impresión, cree un identificador de eventos como se muestra en el código de ejemplo siguiente.
 
 
 ```C++
@@ -156,22 +156,22 @@ Para supervisar la finalización del trabajo de impresión, cree un identificado
 
 
 
-Cree un nuevo flujo de trabajo de impresión y un nuevo escritor de paquetes. Pase cada uno de los componentes del documento a los métodos del escritor de paquetes correspondientes en la misma secuencia en que aparecerán en el documento terminado.
+Cree un nuevo flujo de trabajo de impresión y un nuevo escritor de paquetes. Pase cada uno de los componentes del documento a los métodos de escritor de paquetes correspondientes en la misma secuencia que aparecerán en el documento finalizado.
 
-Inicie cada documento nuevo y agréguele páginas. Después de pasar todos los componentes de documento al flujo de trabajo de impresión, cierre el flujo, espere a que finalice el trabajo de impresión y, a continuación, cierre y libere los recursos abiertos.
+Inicie cada documento nuevo y, a continuación, agrégréle páginas. Después de pasar todos los componentes del documento al flujo de trabajo de impresión, cierre la secuencia, espere a que se complete el trabajo de impresión y, a continuación, cierre y libere los recursos abiertos.
 
-1.  Cree un nuevo flujo de trabajo de impresión mediante una llamada a [**StartXpsPrintJob**](/windows/win32/api/xpsprint/nf-xpsprint-startxpsprintjob).
-2.  Cree un URI de elemento para la parte FixedDocumentSequence.
-3.  Cree un nuevo escritor de paquetes en el flujo de trabajo de impresión.
+1.  Cree una nueva secuencia de trabajo de impresión mediante [**una llamada a StartXpsPrintJob**](/windows/win32/api/xpsprint/nf-xpsprint-startxpsprintjob).
+2.  Cree un URI de elemento para el elemento FixedDocumentSequence.
+3.  Cree un nuevo escritor de paquetes en la secuencia de trabajos de impresión.
 4.  Para cada documento que se va a escribir:
-    1.  Cree un nuevo URI de elemento para la parte FixedDocument.
+    1.  Cree un nuevo URI de elemento para el elemento FixedDocument.
     2.  Inicie un nuevo documento en el escritor de paquetes.
-    3.  Para cada página del documento actual, cree un URI de elemento para la parte FixedPage y agregue la página al escritor de paquetes.
-5.  Después de agregar todas las páginas al escritor de paquetes, ciérrela.
-6.  Cierre el flujo de trabajo de impresión.
+    3.  Para cada página del documento actual, cree un URI de elemento para el elemento FixedPage y agregue la página al escritor de paquetes.
+5.  Una vez que se hayan agregado todas las páginas al escritor de paquetes, cándalo.
+6.  Cierre la secuencia del trabajo de impresión.
 7.  Espere a que se complete el trabajo de impresión.
 8.  Compruebe el estado de finalización.
-9.  Cierre y libere recursos abiertos.
+9.  Cierre y libere los recursos abiertos.
 
 
 ```C++
@@ -411,7 +411,7 @@ Inicie cada documento nuevo y agréguele páginas. Después de pasar todos los c
 
 
 
-Cuando el programa está escribiendo los componentes de documento incrementalmente, tal como se muestra en este ejemplo, debe generar los nombres de las partes de cada elemento de documento que envía al flujo de trabajo de impresión. En el ejemplo anterior, el URI de la parte FixedDocumentSequence se crea a partir de una cadena estática porque solo hay una parte de este tipo en el documento XPS. El URI de cada elemento FixedPage y FixedDocument debe ser único en el documento XPS. La creación del URI del elemento mediante el índice de estos componentes puede ayudar a garantizar que la cadena de URI resultante sea única en el documento XPS.
+Cuando el programa escribe los componentes del documento de forma incremental, como se muestra en este ejemplo, debe generar los nombres de los elementos para cada elemento del documento que envía al flujo de trabajo de impresión. En el ejemplo anterior, el URI de la parte FixedDocumentSequence se crea a partir de una cadena estática porque hay uno y solo uno de estos elementos en el documento XPS. El URI de cada elemento FixedPage y FixedDocument debe ser único dentro del documento XPS. La creación del URI de la parte mediante el índice de estos componentes puede ayudar a garantizar que la cadena de URI resultante sea única en el documento XPS.
 
 
 ```C++
@@ -449,7 +449,7 @@ HRESULT MakePagePartUri (
 
 
 
-Para obtener más información sobre la estructura de un documento XPS, consulte [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf).
+Para obtener más información sobre la estructura de un documento XPS, vea [el XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -458,13 +458,13 @@ Para obtener más información sobre la estructura de un documento XPS, consulte
 **Pasos siguientes**
 </dt> <dt>
 
-[Escribir un OM XPS en un documento XPS](write-an-xps-om-to-an-xps-document.md)
+[Escribir una om xps en un documento XPS](write-an-xps-om-to-an-xps-document.md)
 </dt> <dt>
 
 **Se usa en esta sección**
 </dt> <dt>
 
-[**Fall**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex)
+[**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex)
 </dt> <dt>
 
 [**CreateEvent**](/windows/desktop/api/synchapi/nf-synchapi-createeventa)
@@ -488,16 +488,16 @@ Para obtener más información sobre la estructura de un documento XPS, consulte
 [**StartXpsPrintJob**](/windows/win32/api/xpsprint/nf-xpsprint-startxpsprintjob)
 </dt> <dt>
 
-[**WaitForSingleObject**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject)
+[**Waitforsingleobject**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject)
 </dt> <dt>
 
 **Para obtener más información**
 </dt> <dt>
 
-[Inicializar un OM XPS](xps-object-model-initialization.md)
+[Inicialización de una instancia de XPS OM](xps-object-model-initialization.md)
 </dt> <dt>
 
-[Referencia de la API de documentos XPS](xps-programming-reference.md)
+[Referencia de LA API del documento XPS](xps-programming-reference.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

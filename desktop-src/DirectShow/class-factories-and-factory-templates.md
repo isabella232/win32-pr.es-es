@@ -37,7 +37,7 @@ La ventaja de esta arquitectura es que puede definir solo algunas cosas específ
 
 <dl> <dt>
 
-[Cómo crear un archivo DLL DirectShow filtro](how-to-create-a-dll.md)
+[Cómo crear un archivo DLL DirectShow filtro de archivos](how-to-create-a-dll.md)
 </dt> </dl>
 
  

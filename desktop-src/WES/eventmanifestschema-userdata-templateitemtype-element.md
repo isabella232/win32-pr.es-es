@@ -1,6 +1,6 @@
 ---
 title: Elemento UserData (TemplateItemType)
-description: Fragmento XML que se utiliza para representar los datos de evento.
+description: Fragmento XML que se usa para representar los datos del evento.
 ms.assetid: 2b327a2c-8900-488f-b92d-991c25e580c4
 keywords:
 - Elemento UserData EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8954e76256b86a7b982efb1ab23831052d29ee6b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d22abfbcc1d57e3bc94792c36ddd98cec66c722ac401de051cc32440d43253f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117750813"
 ---
 # <a name="userdata-templateitemtype-element"></a>Elemento UserData (TemplateItemType)
 
-Fragmento XML que se utiliza para representar los datos de evento.
+Fragmento XML que se usa para representar los datos del evento.
 
 ``` syntax
 <xs:element name="UserData"
@@ -30,7 +30,7 @@ Fragmento XML que se utiliza para representar los datos de evento.
  />
 ```
 
-El elemento **UserData** se define mediante el tipo complejo [**TemplateItemType**](eventmanifestschema-templateitemtype-complextype.md) .
+El tipo complejo [**TemplateItemType**](eventmanifestschema-templateitemtype-complextype.md) define el elemento **UserData.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **UserData** se define mediante el tipo complejo [**TemplateItemType
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento **UserData** se define mediante el tipo complejo [**TemplateItemType
 **Elemento primario**
 </dt> <dt>
 
-[**plantilla (TemplateListType)**](eventmanifestschema-template-templatelisttype-element.md)
+[**template (TemplateListType)**](eventmanifestschema-template-templatelisttype-element.md)
 </dt> </dl>
 
  

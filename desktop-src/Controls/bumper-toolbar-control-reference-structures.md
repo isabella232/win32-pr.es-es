@@ -1,6 +1,6 @@
 ---
-title: Estructuras de control de barra de herramientas
-description: Estructuras de control de barra de herramientas
+title: Estructuras de control de la barra de herramientas
+description: Estructuras de control de la barra de herramientas
 ms.assetid: 0db291f3-b558-434f-8dde-eddff5b82ba6
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118415829"
 ---
-# <a name="toolbar-control-structures"></a>Estructuras de control de barra de herramientas
+# <a name="toolbar-control-structures"></a>Estructuras de control de la barra de herramientas
 
 ## <a name="in-this-section"></a>En esta sección
 

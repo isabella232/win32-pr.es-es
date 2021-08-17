@@ -38,7 +38,7 @@ Define la familia de la fuente textpath. Lectura/escritura **Cadena**.
 
 **Comentarios:**
 
-Define el nombre de fuente. Se pueden usar nombres específicos, como Arial, o tipos genéricos, como serif, sans-serif, cursive, pornográfica o monospace. Los valores son los mismos que los atributos de estilo HTML estándar.
+Define el nombre de fuente. Se pueden usar nombres específicos, como Arial, o tipos genéricos como serif, sans-serif, cursive, recursive o monospace. Los valores son los mismos que los atributos de estilo HTML estándar.
 
 *Atributo estándar de VML*
 

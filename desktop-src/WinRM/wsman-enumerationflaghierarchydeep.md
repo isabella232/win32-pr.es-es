@@ -4,9 +4,9 @@ description: Devuelve el valor de la marca de enumeración EnumerationFlagHierar
 ms.assetid: b84b82fa-0b2e-418e-850f-6d7a4749fdc1
 ms.tgt_platform: multiple
 keywords:
-- Método EnumerationFlagHierarchyDeep Windows remote management
+- Método EnumerationFlagHierarchyDeep Windows Remote Management
 - Método EnumerationFlagHierarchyDeep Windows remote management , objeto WSMan
-- Objeto WSMan Windows administración remota , método EnumerationFlagHierarchyDeep
+- WSMan object Windows Remote Management , EnumerationFlagHierarchyDeep method
 topic_type:
 - apiref
 api_name:
@@ -60,7 +60,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
@@ -71,7 +71,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

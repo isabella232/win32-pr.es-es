@@ -63,7 +63,7 @@ Intervalo de tiempo después del cual WMI libera un proveedor de eventos. Puede 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La **\_ \_ clase EventSinkCacheControl** se deriva de [**\_ \_ CacheControl**](--cachecontrol.md). Para obtener más información sobre el uso de esta clase, vea [Unloading a Provider](unloading-a-provider.md).
 
@@ -71,7 +71,7 @@ La **\_ \_ clase EventSinkCacheControl** se deriva de [**\_ \_ CacheControl**](-
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
@@ -79,7 +79,7 @@ La **\_ \_ clase EventSinkCacheControl** se deriva de [**\_ \_ CacheControl**](-
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

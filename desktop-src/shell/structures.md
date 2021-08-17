@@ -1,6 +1,6 @@
 ---
-description: En esta sección se describen las estructuras del shell de Windows.
-title: Estructuras de Shell
+description: En esta sección se describen las Windows shell.
+title: Estructuras de shell
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 814ae153-39b3-49ee-9da1-efe7e649c73e
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 5bbda4cd81c3db2dff664b9d16d2db60aa8f12f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa046223ba3aa6a6e98d6e74f623aeaad9e85d3a10148bb688eb385c0e7c22fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104986062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117675808"
 ---
-# <a name="shell-structures"></a>Estructuras de Shell
+# <a name="shell-structures"></a>Estructuras de shell
 
-En esta sección se describen las estructuras del shell de Windows.
+En esta sección se describen las Windows shell.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -46,59 +46,59 @@ En esta sección se describen las estructuras del shell de Windows.
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shellapi/ns-shellapi-appbardata"><strong>APPBARDATA</strong></a><br/></td>
-<td>Contiene información sobre un mensaje de Appbar del sistema.<br/></td>
+<td>Contiene información sobre un mensaje de la barra de aplicaciones del sistema.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Appmgmt/ns-appmgmt-appcategoryinfo"><strong>APPCATEGORYINFO</strong></a><br/></td>
-<td>Proporciona información de categoría de aplicación para agregar o quitar programas en el panel de control. La estructura <a href="/windows/desktop/api/Appmgmt/ns-appmgmt-appcategoryinfolist"><strong>APPCATEGORYINFOLIST</strong></a> se usa para crear una lista completa de categorías para un publicador de aplicaciones.<br/></td>
+<td>Proporciona información sobre la categoría de aplicación para Agregar o quitar programas en Panel de control. La <a href="/windows/desktop/api/Appmgmt/ns-appmgmt-appcategoryinfolist"><strong>estructura APPCATEGORYINFOLIST</strong></a> se usa para crear una lista completa de categorías para un publicador de aplicaciones.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Appmgmt/ns-appmgmt-appcategoryinfolist"><strong>APPCATEGORYINFOLIST</strong></a><br/></td>
-<td>Proporciona una lista de las categorías de aplicaciones admitidas desde un publicador de aplicaciones para agregar o quitar programas en el panel de control. <br/></td>
+<td>Proporciona una lista de categorías de aplicaciones admitidas de un publicador de aplicaciones para agregar o quitar programas en Panel de control. <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shappmgr/ns-shappmgr-appinfodata"><strong>APPINFODATA</strong></a><br/></td>
-<td>Proporciona información sobre una aplicación publicada en la utilidad agregar o quitar programas del panel de control.<br/></td>
+<td>Proporciona información sobre una aplicación publicada en la utilidad Agregar o quitar programas Panel de control aplicación.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shellapi/ns-shellapi-associationelement"><strong>ASSOCIATIONELEMENT</strong></a><br/></td>
-<td>Define la información que usa <a href="/windows/desktop/api/Shellapi/nf-shellapi-assoccreateforclasses"><strong>AssocCreateForClasses</strong></a> para recuperar una interfaz <a href="/windows/desktop/api/shlwapi/nn-shlwapi-iqueryassociations"><strong>IQueryAssociations</strong></a> para una asociación de archivo determinada.<br/></td>
+<td>Define la información utilizada por <a href="/windows/desktop/api/Shellapi/nf-shellapi-assoccreateforclasses"><strong>AssocCreateForClasses para</strong></a> recuperar una <a href="/windows/desktop/api/shlwapi/nn-shlwapi-iqueryassociations"><strong>interfaz IQueryAssociations</strong></a> para una asociación de archivos determinada.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlobj/ns-shlobj-bandinfosfb"><strong>BANDINFOSFB</strong></a><br/></td>
-<td>Contiene información acerca de una banda de carpetas. Esta estructura se utiliza con los métodos <a href="/windows/desktop/api/shlobj/nf-shlobj-ishellfolderband-getbandinfosfb"><strong>IShellFolderBand:: GetBandInfoSFB</strong></a> y <a href="/windows/desktop/api/shlobj/nf-shlobj-ishellfolderband-setbandinfosfb"><strong>IShellFolderBand:: SetBandInfoSFB</strong></a> .<br/></td>
+<td>Contiene información sobre una banda de carpetas. Esta estructura se usa con los métodos <a href="/windows/desktop/api/shlobj/nf-shlobj-ishellfolderband-getbandinfosfb"><strong>IShellFolderBand::GetBandInfoSFB</strong></a> <a href="/windows/desktop/api/shlobj/nf-shlobj-ishellfolderband-setbandinfosfb"><strong>e IShellFolderBand::SetBandInfoSFB.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/win32/api/shobjidl_core/ns-shobjidl_core-bandsiteinfo"><strong>BANDSITEINFO</strong></a><br/></td>
-<td>Contiene información sobre un sitio de banda. Esta estructura se utiliza con los métodos <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ibandsite-getbandsiteinfo"><strong>IBandSite:: GetBandSiteInfo</strong></a> y <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ibandsite-setbandsiteinfo"><strong>IBandSite:: SetBandSiteInfo</strong></a> .<br/></td>
+<td>Contiene información sobre un sitio de banda. Esta estructura se usa con los métodos <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ibandsite-getbandsiteinfo"><strong>IBandSite::GetBandSiteInfo</strong></a> <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ibandsite-setbandsiteinfo"><strong>e IBandSite::SetBandSiteInfo.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shdeprecated/ns-shdeprecated-basebrowserdatalh"><strong>BASEBROWSERDATA</strong></a><br/></td>
-<td>Contiene miembros protegidos de la clase base. <a href="/windows/desktop/api/Shdeprecated/ns-shdeprecated-basebrowserdatalh"><strong>BASEBROWSERDATA</strong></a> define el estado del explorador y se usa con <a href="/windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-getbasebrowserdata"><strong>IBrowserService2:: GetBaseBrowserData</strong></a> y <a href="/windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-putbasebrowserdata"><strong>IBrowserService2::P utbasebrowserdata</strong></a>.<br/></td>
+<td>Contiene miembros protegidos de la clase base. <a href="/windows/desktop/api/Shdeprecated/ns-shdeprecated-basebrowserdatalh"><strong>BASEBROWSERDATA define</strong></a> el estado del explorador y se usa con <a href="/windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-getbasebrowserdata"><strong>IBrowserService2::GetBaseBrowserData</strong></a> e <a href="/windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-putbasebrowserdata"><strong>IBrowserService2::P utBaseBrowserData</strong></a>.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/previous-versions/windows/desktop/legacy/cc136564(v=vs.85)"><strong>BORDERWIDTHS</strong></a><br/></td>
-<td>Define las coordenadas de las esquinas superior izquierda e inferior derecha de un rectángulo del borde.<br/></td>
+<td>Define las coordenadas de las esquinas superior izquierda e inferior derecha de un rectángulo de borde.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa"><strong>BROWSEINFO</strong></a><br/></td>
-<td>Contiene los parámetros de la función <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shbrowseforfoldera"><strong>SHBrowseForFolder</strong></a> y recibe información sobre la carpeta seleccionada por el usuario.<br/></td>
+<td>Contiene parámetros para la <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shbrowseforfoldera"><strong>función SHBrowseForFolder</strong></a> y recibe información sobre la carpeta seleccionada por el usuario.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shobjidl_core/ns-shobjidl_core-category_info"><strong>CATEGORY_INFO</strong></a><br/></td>
-<td>Contiene información de categoría. Una categoría de componentes es un grupo de clases de modelo de objetos componentes (COM) relacionadas lógicamente que comparten un identificador de categoría común (CATId).<br/></td>
+<td>Contiene información de categoría. Una categoría de componente es un grupo de clases de modelo de objetos componentes (COM) relacionadas lógicamente que comparten un identificador de categoría común (CATID).<br/></td>
 </tr>
 <tr class="even">
-<td><a href="/windows/win32/api/shlobj_core/ns-shlobj_core-cida"><strong>PREPARADO</strong></a><br/></td>
-<td>Se usa con el formato de Portapapeles <a href="clipboard.md">CFSTR_SHELLIDLIST</a> para transferir el puntero a una lista de identificadores de elementos (PIDL) de uno o más objetos de espacio de nombres de Shell.<br/></td>
+<td><a href="/windows/win32/api/shlobj_core/ns-shlobj_core-cida"><strong>Cida</strong></a><br/></td>
+<td>Se usa con el <a href="clipboard.md">CFSTR_SHELLIDLIST</a> del Portapapeles para transferir el puntero a una lista de identificadores de elemento (PIDL) de uno o varios objetos de espacio de nombres de Shell.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shobjidl_core/ns-shobjidl_core-cm_columninfo"><strong>CM_COLUMNINFO</strong></a><br/></td>
-<td>Define la información de columna. Lo usan los miembros de la interfaz <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-icolumnmanager"><strong>IColumnManager</strong></a> .<br/></td>
+<td>Define información de columna. Usado por los miembros de la <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-icolumnmanager"><strong>interfaz IColumnManager.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shobjidl_core/ns-shobjidl_core-cminvokecommandinfo"><strong>CMINVOKECOMMANDINFO</strong></a><br/></td>
-<td>Contiene la información necesaria para <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-icontextmenu-invokecommand"><strong>IContextMenu:: InvokeCommand</strong></a> para invocar un comando de menú contextual.<br/></td>
+<td>Contiene información necesaria para <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-icontextmenu-invokecommand"><strong>que IContextMenu::InvokeCommand</strong></a> invoque un comando de menú contextual.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shobjidl_core/ns-shobjidl_core-cminvokecommandinfoex"><strong>CMINVOKECOMMANDINFOEX</strong></a><br/></td>
@@ -109,12 +109,12 @@ En esta sección se describen las estructuras del shell de Windows.
 <td>Se usa genéricamente para filtrar elementos.<br/></td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/win32/api/shlobj_core/ns-shlobj_core-component"><strong>PONE</strong></a><br/></td>
-<td>Lo utiliza Windows 2000 para almacenar información sobre un componente. Esta estructura reemplaza a la estructura <a href="/windows/win32/api/shlobj_core/ns-shlobj_core-ie4component"><strong>IE4COMPONENT</strong></a> .<br/></td>
+<td><a href="/windows/win32/api/shlobj_core/ns-shlobj_core-component"><strong>Componente</strong></a><br/></td>
+<td>Usado por Windows 2000 para contener información sobre un componente. Esta estructura reemplaza a la <a href="/windows/win32/api/shlobj_core/ns-shlobj_core-ie4component"><strong>estructura IE4COMPONENT.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/win32/api/shlobj_core/ns-shlobj_core-componentsopt"><strong>COMPONENTSOPT</strong></a><br/></td>
-<td>Contiene las opciones de elementos de escritorio.<br/></td>
+<td>Contiene las opciones del elemento de escritorio.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/win32/api/shlobj_core/ns-shlobj_core-comppos"><strong>COMPPOS</strong></a><br/></td>
@@ -122,11 +122,11 @@ En esta sección se describen las estructuras del shell de Windows.
 </tr>
 <tr class="even">
 <td><a href="/windows/win32/api/shlobj_core/ns-shlobj_core-compstateinfo"><strong>COMPSTATEINFO</strong></a><br/></td>
-<td>Lo utiliza Windows 2000 para almacenar información sobre el estado de un componente.<br/></td>
+<td>Usado por Windows 2000 para contener información sobre el estado de un componente.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Syncmgr/ns-syncmgr-confirm_conflict_item"><strong>CONFIRM_CONFLICT_ITEM</strong></a><br/></td>
-<td>Define la estructura de los elementos de conflicto.<br/></td>
+<td>Define la estructura de elementos de conflicto.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Syncmgr/ns-syncmgr-confirm_conflict_result_info"><strong>CONFIRM_CONFLICT_RESULT_INFO</strong></a><br/></td>
@@ -134,7 +134,7 @@ En esta sección se describen las estructuras del shell de Windows.
 </tr>
 <tr class="odd">
 <td><a href="/windows/win32/api/cpl/ns-cpl-cplinfo"><strong>CPLINFO</strong></a><br/></td>
-<td>Contiene información de recursos y un valor definido por la aplicación para un cuadro de diálogo compatible con una aplicación del panel de control. La función <a href="/windows/desktop/api/cpl/nc-cpl-applet_proc"><strong>CPlApplet</strong></a> de la aplicación del panel de control devuelve esta información al panel de control en respuesta a un mensaje <a href="cpl-inquire.md"><strong>CPL_INQUIRE</strong></a> .<br/></td>
+<td>Contiene información de recursos y un valor definido por la aplicación para un cuadro de diálogo compatible con Panel de control aplicación. La <a href="/windows/desktop/api/cpl/nc-cpl-applet_proc"><strong>función CPlApplet</strong></a> de la aplicación Panel de control devuelve esta información al Panel de control en respuesta a un <a href="cpl-inquire.md"><strong>mensaje CPL_INQUIRE</strong></a> aplicación.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Credentialprovider/ns-credentialprovider-credential_provider_credential_serialization"><strong>CREDENTIAL_PROVIDER_CREDENTIAL_SERIALIZATION</strong></a><br/></td>
@@ -142,116 +142,116 @@ En esta sección se describen las estructuras del shell de Windows.
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Credentialprovider/ns-credentialprovider-credential_provider_field_descriptor"><strong>CREDENTIAL_PROVIDER_FIELD_DESCRIPTOR</strong></a><br/></td>
-<td>Describe un solo campo de una credencial. Por ejemplo, una cadena o una imagen de usuario.<br/></td>
+<td>Describe un único campo de una credencial. Por ejemplo, una cadena o una imagen de usuario.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-csfv"><strong>CSFV</strong></a><br/></td>
-<td>Se usa con la función <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreateshellfolderviewex"><strong>SHCreateShellFolderViewEx</strong></a> .<br/></td>
+<td>Se usa con <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreateshellfolderviewex"><strong>la función SHCreateShellFolderViewEx.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/win32/api/shlobj_core/ns-shlobj_core-datablock_header"><strong>DATABLOCK_HEADER</strong></a><br/></td>
-<td>Actúa como encabezado para algunas de las estructuras de datos adicionales que usa <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllinkdatalist"><strong>IShellLinkDataList</strong></a>.<br/></td>
+<td>Actúa como encabezado de algunas de las estructuras de datos adicionales que <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllinkdatalist"><strong>usa IShellLinkDataList</strong></a>.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-defcontextmenu"><strong>DEFCONTEXTMENU</strong></a><br/></td>
-<td>Contiene información del menú contextual utilizada por <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatedefaultcontextmenu"><strong>SHCreateDefaultContextMenu</strong></a>.<br/></td>
+<td>Contiene información de menú contextual utilizada por <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatedefaultcontextmenu"><strong>SHCreateDefaultContextMenu.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shobjidl_core/ns-shobjidl_core-delegateitemid"><strong>DELEGATEITEMID</strong></a><br/></td>
-<td>Lo usan las carpetas de delegado en lugar de una estructura de <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a> estándar.<br/></td>
+<td>Usado por las carpetas delegadas en lugar de una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>estructura ITEMIDLIST</strong></a> estándar.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-detailsinfo"><strong>DETAILSINFO</strong></a><br/></td>
-<td>Contiene información detallada de un elemento de carpeta de Shell. Se usa con la notificación <a href="sfvm-getdetailsof.md"><strong>SFVM_GETDETAILSOF</strong></a> .<br/></td>
+<td>Contiene información detallada de un elemento de carpeta de Shell. Se usa con la <a href="sfvm-getdetailsof.md"><strong>SFVM_GETDETAILSOF</strong></a> notificación.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-dfmics"><strong>DFMICS</strong></a><br/></td>
-<td>Contiene argumentos adicionales usados por <a href="dfm-invokecommandex.md"><strong>DFM_INVOKECOMMANDEX</strong></a>.<br/></td>
+<td>Contiene argumentos adicionales utilizados <a href="dfm-invokecommandex.md"><strong>por DFM_INVOKECOMMANDEX</strong></a>.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/ns-shlwapi-dllversioninfo"><strong>DLLVERSIONINFO</strong></a><br/></td>
-<td>Recibe información de versión específica de la DLL. Se usa con la función <a href="/windows/desktop/api/Shlwapi/nc-shlwapi-dllgetversionproc"><strong>DllGetVersion</strong></a> . <br/>
+<td>Recibe información de versión específica de DLL. Se usa con la <a href="/windows/desktop/api/Shlwapi/nc-shlwapi-dllgetversionproc"><strong>función DllGetVersion.</strong></a> <br/>
 <blockquote>
 [!Note]<br />
-En lugar de esta estructura, puede usar la estructura <a href="/windows/desktop/api/Shlwapi/ns-shlwapi-dllversioninfo2"><strong>DLLVERSIONINFO2</strong></a> .
+En lugar de esta estructura, puede usar la <a href="/windows/desktop/api/Shlwapi/ns-shlwapi-dllversioninfo2"><strong>estructura DLLVERSIONINFO2.</strong></a>
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/ns-shlwapi-dllversioninfo2"><strong>DLLVERSIONINFO2</strong></a><br/></td>
-<td>Recibe información de versión específica de la DLL. Se usa con la función <a href="/windows/desktop/api/Shlwapi/nc-shlwapi-dllgetversionproc"><strong>DllGetVersion</strong></a> .<br/></td>
+<td>Recibe información de versión específica de DLL. Se usa con la <a href="/windows/desktop/api/Shlwapi/nc-shlwapi-dllgetversionproc"><strong>función DllGetVersion.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-dropdescription"><strong>DROPDESCRIPTION</strong></a><br/></td>
-<td>Describe la imagen y el texto adjunto de un objeto Drop.<br/></td>
+<td>Describe la imagen y el texto que lo acompaña para un objeto drop.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-dropfiles"><strong>DROPFILES</strong></a><br/></td>
-<td>Define el formato del portapapeles <a href="clipboard.md">CF_HDROP</a> . Los datos siguientes son una lista de nombres de archivo terminada en NULL.<br/></td>
+<td>Define el formato <a href="clipboard.md">CF_HDROP</a> portapapeles. Los datos siguientes son una lista de nombres de archivo terminada en un valor NULL doble.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-exp_darwin_link"><strong>EXP_DARWIN_LINK</strong></a><br/></td>
-<td>Contiene un bloque de datos adicional usado por <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllinkdatalist"><strong>IShellLinkDataList</strong></a>. Contiene el identificador de Windows Installer del vínculo.<br/></td>
+<td>Contiene un bloque de datos adicional usado por <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllinkdatalist"><strong>IShellLinkDataList.</strong></a> Contiene el identificador del instalador Windows vínculo.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-exp_propertystorage"><strong>EXP_PROPERTYSTORAGE</strong></a><br/></td>
-<td>Almacena información sobre el estado del vínculo de Shell. Esta estructura se usa para las secciones de datos adicionales etiquetadas con EXP_PROPERTYSTORAGE_SIG.<br/></td>
+<td>Almacena información sobre el estado del vínculo de Shell. Esta estructura se usa para secciones de datos adicionales etiquetadas con EXP_PROPERTYSTORAGE_SIG.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-exp_special_folder"><strong>EXP_SPECIAL_FOLDER</strong></a><br/></td>
-<td>Contiene un bloque de datos adicional usado por <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllinkdatalist"><strong>IShellLinkDataList</strong></a>. Contiene información de carpeta especial.<br/></td>
+<td>Contiene un bloque de datos adicional utilizado por <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllinkdatalist"><strong>IShellLinkDataList</strong></a>. Contiene información de carpeta especial.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-exp_sz_link"><strong>EXP_SZ_LINK</strong></a><br/></td>
-<td>Contiene un bloque de datos adicional usado por <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllinkdatalist"><strong>IShellLinkDataList</strong></a>. Contiene cadenas de entorno expansibles para el icono o el destino.<br/></td>
+<td>Contiene un bloque de datos adicional utilizado por <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllinkdatalist"><strong>IShellLinkDataList</strong></a>. Contiene cadenas de entorno ampliables para el icono o destino.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="ext-button.md"><strong>EXT_BUTTON</strong></a><br/></td>
-<td>Contiene información sobre un botón que un archivo DLL de extensión del administrador de archivos agrega a la barra de herramientas del administrador de archivos.<br/></td>
+<td>Contiene información sobre un botón que un archivo DLL de extensión del Administrador de archivos está agregando a la barra de herramientas del Administrador de archivos.<br/></td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/shobjidl_core/ns-shobjidl_core-extrasearch"><strong>Extrasearch</strong></a><br/></td>
-<td>Lo usa un objeto de enumerador <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ienumextrasearch"><strong>IEnumExtraSearch</strong></a> para devolver información sobre los objetos de búsqueda admitidos por un objeto de carpeta de Shell.<br/></td>
+<td><a href="/windows/desktop/api/shobjidl_core/ns-shobjidl_core-extrasearch"><strong>EXTRASEARCH</strong></a><br/></td>
+<td>Usado por un <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ienumextrasearch"><strong>objeto enumerador IEnumExtraSearch para</strong></a> devolver información sobre los objetos de búsqueda admitidos por un objeto Carpeta de shell.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-file_attributes_array"><strong>FILE_ATTRIBUTES_ARRAY</strong></a><br/></td>
-<td>Contiene la definición de formato del portapapeles para CFSTR_FILE_ATTRIBUTES_ARRAY.<br/></td>
+<td>Contiene la definición de formato del Portapapeles CFSTR_FILE_ATTRIBUTES_ARRAY.<br/></td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-filedescriptora"><strong>SCRIPTO</strong></a><br/></td>
-<td>Describe las propiedades de un archivo que se está copiando mediante el portapapeles durante una operación de <a href="dragdrop.md">arrastrar y colocar</a> de Microsoft ActiveX.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-filedescriptora"><strong>FILEDESCRIPTOR</strong></a><br/></td>
+<td>Describe las propiedades de un archivo que se copia mediante el Portapapeles <a href="dragdrop.md"></a> durante una operación de arrastrar y colocar ActiveX Microsoft.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-filegroupdescriptora"><strong>FILEGROUPDESCRIPTOR</strong></a><br/></td>
-<td>Define el formato del portapapeles CF_FILEGROUPDESCRIPTOR.<br/></td>
+<td>Define el formato CF_FILEGROUPDESCRIPTOR del Portapapeles.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="fms-getdriveinfo.md"><strong>FMS_GETDRIVEINFO</strong></a><br/></td>
-<td>Contiene información acerca de la unidad seleccionada en la ventana del administrador de archivos activo (la ventana Directorio o la ventana Resultados de la búsqueda).<br/></td>
+<td>Contiene información sobre la unidad seleccionada en la ventana activa del Administrador de archivos (la ventana de directorio o la ventana Resultados de la búsqueda).<br/></td>
 </tr>
 <tr class="even">
 <td><a href="fms-getfilesel.md"><strong>FMS_GETFILESEL</strong></a><br/></td>
-<td>Contiene información sobre un archivo seleccionado en la ventana del administrador de archivos activo (la ventana Directorio o la ventana Resultados de la búsqueda).<br/></td>
+<td>Contiene información sobre un archivo seleccionado en la ventana activa del Administrador de archivos (la ventana de directorio o la ventana Resultados de la búsqueda).<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="fms-helpstring.md"><strong>FMS_HELPSTRING</strong></a><br/></td>
-<td>Contiene información que utiliza el administrador de archivos para agregar una cadena de ayuda para un elemento de comando de menú o barra de herramientas.<br/></td>
+<td>Contiene información que el Administrador de archivos usa para agregar una cadena de Ayuda para un elemento de comando de menú o barra de herramientas.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="fms-load.md"><strong>FMS_LOAD</strong></a><br/></td>
-<td>Contiene información que utiliza el administrador de archivos para agregar un menú personalizado proporcionado por un archivo DLL de extensión del administrador de archivos. La estructura también proporciona un valor Delta que el archivo DLL de extensión puede utilizar para manipular el menú personalizado una vez que el administrador de archivos ha cargado el menú.<br/></td>
+<td>Contiene información que el Administrador de archivos usa para agregar un menú personalizado proporcionado por un archivo DLL de extensión del Administrador de archivos. La estructura también proporciona un valor delta que el archivo DLL de extensión puede usar para manipular el menú personalizado después de que el Administrador de archivos haya cargado el menú.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="fms-toolbarload.md"><strong>FMS_TOOLBARLOAD</strong></a><br/></td>
-<td>Contiene información acerca de los botones personalizados que se van a agregar a la barra de herramientas del administrador de archivos. Los botones los proporciona un archivo DLL de extensión del administrador de archivos.<br/></td>
+<td>Contiene información sobre los botones personalizados que se van a agregar a la barra de herramientas del Administrador de archivos. Los botones los proporciona un archivo DLL de extensión del Administrador de archivos.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shobjidl_core/ns-shobjidl_core-foldersettings"><strong>FOLDERSETTINGS</strong></a><br/></td>
-<td>Contiene información de la vista de carpetas.<br/></td>
+<td>Contiene información de vista de carpeta.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlobj/ns-shlobj-fvshowinfo"><strong>FVSHOWINFO</strong></a><br/></td>
-<td>Contiene información que el visor de archivos utiliza para mostrar un archivo.<br/></td>
+<td>Contiene información que el visor de archivos usa para mostrar un archivo.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/win32/api/winuser/ns-winuser-helpinfo"><strong>HELPINFO</strong></a><br/></td>
@@ -259,35 +259,35 @@ En lugar de esta estructura, puede usar la estructura <a href="/windows/desktop/
 </tr>
 <tr class="odd">
 <td><a href="/windows/win32/api/winuser/ns-winuser-helpwininfow"><strong>HELPWININFO</strong></a><br/></td>
-<td>Contiene el tamaño y la posición de una ventana de ayuda primaria o secundaria. Una aplicación puede establecer esta información mediante una llamada a la función <a href="/windows/desktop/api/Winuser/nf-winuser-winhelpa"><strong>WinHelp</strong></a> con el valor HELP_SETWINPOS.<br/></td>
+<td>Contiene el tamaño y la posición de una ventana de Ayuda principal o secundaria. Una aplicación puede establecer esta información llamando a la <a href="/windows/desktop/api/Winuser/nf-winuser-winhelpa"><strong>función WinHelp</strong></a> con el HELP_SETWINPOS valor.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/win32/api/shlobj_core/ns-shlobj_core-ie4component"><strong>IE4COMPONENT</strong></a><br/></td>
-<td>Lo utilizan Microsoft Internet Explorer 4,0 y Microsoft Internet Explorer 4,01 para contener información acerca de un componente. Con Windows 2000, se reemplaza por la estructura del <a href="/windows/win32/api/shlobj_core/ns-shlobj_core-component"><strong>componente</strong></a> .<br/></td>
+<td>Usado por Microsoft Internet Explorer 4.0 y Microsoft Internet Explorer 4.01 para contener información sobre un componente. Con Windows 2000, se reemplaza por la <a href="/windows/win32/api/shlobj_core/ns-shlobj_core-component"><strong>estructura COMPONENT.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a><br/></td>
-<td>Contiene una lista de identificadores de elementos.<br/></td>
+<td>Contiene una lista de identificadores de elemento.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-itemspacing"><strong>ITEMSPACING</strong></a><br/></td>
-<td>Almacena las dimensiones de los dos tamaños posibles de espaciado de iconos que se pueden mostrar: pequeño y grande. Usado por <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ishellfolderview-getitemspacing"><strong>IShellFolderView:: GetItemSpacing</strong></a>.<br/></td>
+<td>Almacena las dimensiones de los dos tamaños posibles de espaciado de iconos que están disponibles para su presentación: pequeño y grande. Usado por <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ishellfolderview-getitemspacing"><strong>IShellFolderView::GetItemSpacing.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shobjidl_core/ns-shobjidl_core-knownfolder_definition"><strong>KNOWNFOLDER_DEFINITION</strong></a><br/></td>
 <td>Define los detalles de una carpeta conocida.<br/></td>
 </tr>
 <tr class="even">
-<td><a href="/windows/win32/api/shtypes/ns-shtypes-logfontw"><strong>NDPTECGDI</strong></a><br/></td>
+<td><a href="/windows/win32/api/shtypes/ns-shtypes-logfontw"><strong>LOGFONT</strong></a><br/></td>
 <td>Define los atributos de una fuente.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="mruinfo.md"><strong>MRUINFO</strong></a><br/></td>
-<td>Contiene información que define una nueva lista de elementos usados más recientemente (MRU). Usado por <a href="createmrulist.md"><strong>CreateMRUListW</strong></a>.<br/></td>
+<td>Contiene información que define una nueva lista usada más recientemente (MRU). Usado por <a href="createmrulist.md"><strong>CreateMRUListW.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/win32/api/winuser/ns-winuser-multikeyhelpw"><strong>MULTIKEYHELP</strong></a><br/></td>
-<td>Especifica una palabra clave que se va a buscar y la tabla de palabras clave que se va a buscar en la ayuda de Windows.<br/></td>
+<td>Especifica una palabra clave que se va a buscar y la tabla de palabras clave que se va a buscar Windows Ayuda.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/win32/api/shellapi/ns-shellapi-nc_address"><strong>NC_ADDRESS</strong></a><br/></td>
@@ -299,132 +299,132 @@ En lugar de esta estructura, puede usar la estructura <a href="/windows/desktop/
 </tr>
 <tr class="odd">
 <td><a href="/windows/win32/api/cpl/ns-cpl-newcplinfow"><strong>NEWCPLINFO</strong></a><br/></td>
-<td>Contiene información de recursos y un valor definido por la aplicación para un cuadro de diálogo compatible con una aplicación del panel de control.<br/></td>
+<td>Contiene información de recursos y un valor definido por la aplicación para un cuadro de diálogo compatible con una Panel de control aplicación.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shellapi/ns-shellapi-notifyicondataa"><strong>NOTIFYICONDATA</strong></a><br/></td>
-<td>Contiene información que el sistema necesita para mostrar notificaciones en el área de notificación. Utilizado por <a href="/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona"><strong>Shell_NotifyIcon</strong></a>.<br/></td>
+<td>Contiene información que el sistema necesita para mostrar las notificaciones en el área de notificación. Usado por <a href="/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona"><strong>Shell_NotifyIcon</strong></a>.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shellapi/ns-shellapi-notifyiconidentifier"><strong>NOTIFYICONIDENTIFIER</strong></a><br/></td>
-<td>Contiene la información utilizada por <a href="/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicongetrect"><strong>Shell_NotifyIconGetRect</strong></a> para identificar el icono para el que se va a recuperar el rectángulo delimitador.<br/></td>
+<td>Contiene información utilizada por <a href="/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicongetrect"><strong>Shell_NotifyIconGetRect</strong></a> para identificar el icono para el que se va a recuperar el rectángulo delimitador.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-nresarray"><strong>NRESARRAY</strong></a><br/></td>
-<td>Define el formato del portapapeles CF_NETRESOURCE.<br/></td>
+<td>Define el formato CF_NETRESOURCE portapapeles.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shobjidl/ns-shobjidl-nstccustomdraw"><strong>NSTCCUSTOMDRAW</strong></a><br/></td>
-<td>Estructura de dibujo personalizada utilizada por los métodos <a href="/windows/desktop/api/Shobjidl/nn-shobjidl-inamespacetreecontrolcustomdraw"><strong>INameSpaceTreeControlCustomDraw</strong></a> .<br/></td>
+<td>Estructura de dibujo personalizada utilizada por <a href="/windows/desktop/api/Shobjidl/nn-shobjidl-inamespacetreecontrolcustomdraw"><strong>los métodos INameSpaceTreeControlCustomDraw.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-nt_console_props"><strong>NT_CONSOLE_PROPS</strong></a><br/></td>
-<td>Contiene un bloque de datos adicional usado por <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllinkdatalist"><strong>IShellLinkDataList</strong></a>. Contiene las propiedades de la consola.<br/></td>
+<td>Contiene un bloque de datos adicional utilizado por <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllinkdatalist"><strong>IShellLinkDataList</strong></a>. Contiene las propiedades de la consola.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-nt_fe_console_props"><strong>NT_FE_CONSOLE_PROPS</strong></a><br/></td>
-<td>Contiene un bloque de datos adicional usado por <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllinkdatalist"><strong>IShellLinkDataList</strong></a>. Contiene la página de códigos de la consola.<br/></td>
+<td>Contiene un bloque de datos adicional utilizado por <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllinkdatalist"><strong>IShellLinkDataList</strong></a>. Contiene la página de códigos de la consola.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shellapi/ns-shellapi-open_printer_props_infoa"><strong>OPEN_PRINTER_PROPS_INFO</strong></a><br/></td>
-<td>Identifica una hoja de propiedades determinada en las páginas de propiedades de una impresora y si esa hoja de propiedades debe ser modal. Opcionalmente, se usa con la función <a href="/windows/desktop/api/Shellapi/nf-shellapi-shinvokeprintercommanda"><strong>SHInvokePrinterCommand</strong></a> .<br/></td>
+<td>Identifica una hoja de propiedades determinada en las páginas de propiedades de una impresora y si esa hoja de propiedades debe ser modal. Opcionalmente se usa con la <a href="/windows/desktop/api/Shellapi/nf-shellapi-shinvokeprintercommanda"><strong>función SHInvokePrinterCommand.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-openasinfo"><strong>OPENASINFO</strong></a><br/></td>
-<td>Almacena información de la función <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shopenwithdialog"><strong>SHOpenWithDialog</strong></a> .<br/></td>
+<td>Almacena información para la <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shopenwithdialog"><strong>función SHOpenWithDialog.</strong></a><br/></td>
 </tr>
 <tr class="even">
-<td><a href="/windows/desktop/api/Shobjidl/ns-shobjidl-overlapped"><strong>SUPERPUESTA</strong></a><br/></td>
-<td>Contiene información que se usa en las operaciones de entrada/salida (e/s) asincrónicas (superpuestas).<br/></td>
+<td><a href="/windows/desktop/api/Shobjidl/ns-shobjidl-overlapped"><strong>Comprometidos</strong></a><br/></td>
+<td>Contiene información usada en la entrada y salida (E/S) asincrónicas (superpuestas).<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/win32/api/shlwapi/ns-shlwapi-parsedurlw"><strong>PARSEDURL</strong></a><br/></td>
-<td>Lo utiliza la función <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-parseurla"><strong>ParseURL</strong></a> para devolver la dirección URL analizada.<br/></td>
+<td>Usado por la <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-parseurla"><strong>función ParseURL</strong></a> para devolver la dirección URL analizada.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shobjidl_core/ns-shobjidl_core-persist_folder_target_info"><strong>PERSIST_FOLDER_TARGET_INFO</strong></a><br/></td>
-<td>Especifica la carpeta de destino de un acceso directo a la carpeta y sus atributos. Esta estructura la usan <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipersistfolder3-getfoldertargetinfo"><strong>IPersistFolder3:: GetFolderTargetInfo</strong></a> y <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipersistfolder3-initializeex"><strong>IPersistFolder3:: InitializeEx</strong></a>.<br/></td>
+<td>Especifica la carpeta de destino de un acceso directo de carpeta y sus atributos. <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipersistfolder3-getfoldertargetinfo"><strong>IPersistFolder3::GetFolderTargetInfo</strong></a> e <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipersistfolder3-initializeex"><strong>IPersistFolder3::InitializeEx</strong></a>usan esta estructura.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shobjidl_core/ns-shobjidl_core-previewhandlerframeinfo"><strong>PREVIEWHANDLERFRAMEINFO</strong></a><br/></td>
-<td>Estructura de la tabla de aceleradores. Usado por <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipreviewhandlerframe-getwindowcontext"><strong>IPreviewHandlerFrame:: GetWindowContext</strong></a>.<br/></td>
+<td>Estructura de la tabla de aceleradores. Usado por <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipreviewhandlerframe-getwindowcontext"><strong>IPreviewHandlerFrame::GetWindowContext</strong></a>.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Profinfo/ns-profinfo-profileinfoa"><strong>PROFILEINFO</strong></a><br/></td>
-<td>Contiene información que se usa al cargar o descargar un perfil de usuario.<br/></td>
+<td>Contiene información utilizada al cargar o descargar un perfil de usuario.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shappmgr/ns-shappmgr-pubappinfo"><strong>PUBAPPINFO</strong></a><br/></td>
-<td>Proporciona información sobre una aplicación publicada desde un publicador de aplicaciones para <strong>Agregar o quitar programas</strong> en el panel de control.<br/></td>
+<td>Proporciona información sobre una aplicación publicada de un publicador de aplicaciones para <strong>agregar o</strong> quitar programas en Panel de control.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-qcminfo"><strong>QCMINFO</strong></a><br/></td>
-<td>Contiene información para combinar elementos de menú en los menús del explorador de Windows.<br/></td>
+<td>Contiene información para combinar elementos de menú en Windows menús del Explorador.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/ns-shlwapi-qitab"><strong>QITAB</strong></a><br/></td>
-<td>Lo utiliza la función <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-qisearch"><strong>QISearch</strong></a> para describir una sola interfaz.<br/></td>
+<td>Usado por la <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-qisearch"><strong>función QISearch</strong></a> para describir una sola interfaz.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/win32/api/propidl/ns-propidl-serializedpropertyvalue"><strong>SERIALIZEDPROPERTYVALUE</strong></a><br/></td>
-<td>Intervalo de memoria de tipo arbitrario que representa una estructura <a href="/windows/win32/api/propidl/ns-propidl-propvariant"><strong>PROPVARIANT</strong></a> serializada. Los programas no deben inspeccionar el contenido de un <a href="/windows/win32/api/propidl/ns-propidl-serializedpropertyvalue"><strong>SERIALIZEDPROPERTYVALUE</strong></a>; en su lugar, deben manipularlo con las funciones <a href="/windows/desktop/api/propvarutil/nf-propvarutil-stgserializepropvariant"><strong>StgSerializePropVariant</strong></a> y <a href="/windows/desktop/api/propvarutil/nf-propvarutil-stgdeserializepropvariant"><strong>StgDeserializePropVariant</strong></a> .<br/></td>
+<td>Intervalo de memoria de tipo arbitrario que representa una estructura <a href="/windows/win32/api/propidl/ns-propidl-propvariant"><strong>PROPVARIANT serializada.</strong></a> Los programas no deben inspeccionar el contenido de <a href="/windows/win32/api/propidl/ns-propidl-serializedpropertyvalue"><strong>SERIALIZEDPROPERTYVALUE</strong></a>; en su lugar, deben manipularlo con las <a href="/windows/desktop/api/propvarutil/nf-propvarutil-stgserializepropvariant"><strong>funciones StgSerializePropVariant</strong></a> y <a href="/windows/desktop/api/propvarutil/nf-propvarutil-stgdeserializepropvariant"><strong>StgDeserializePropVariant.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-sfv_create"><strong>SFV_CREATE</strong></a><br/></td>
-<td>Esta estructura se usa con la función <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreateshellfolderview"><strong>SHCreateShellFolderView</strong></a> .<br/></td>
+<td>Esta estructura se usa con la <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreateshellfolderview"><strong>función SHCreateShellFolderView.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlobj/ns-shlobj-sfv_setitempos"><strong>SFV_SETITEMPOS</strong></a><br/></td>
-<td>Almacena la información de posición de un elemento. Se usa con <a href="sfvm-setitempos.md"><strong>SFVM_SETITEMPOS</strong></a>de mensajes.<br/></td>
+<td>Almacena información de posición para un elemento. Se usa con el <a href="sfvm-setitempos.md"><strong>SFVM_SETITEMPOS</strong></a>.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-sfvm_helptopic_data"><strong>SFVM_HELPTOPIC_DATA</strong></a><br/></td>
-<td>Contiene el nombre de un archivo de ayuda HTML y un tema en ese archivo. Se usa con la notificación <a href="sfvm-gethelptopic.md"><strong>SFVM_GETHELPTOPIC</strong></a> . Esta estructura requiere cadenas Unicode.<br/></td>
+<td>Contiene el nombre de un archivo de Ayuda HTML y un tema de ese archivo. Se usa con la <a href="sfvm-gethelptopic.md"><strong>SFVM_GETHELPTOPIC</strong></a> notificación. Esta estructura requiere cadenas Unicode.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-sfvm_proppage_data"><strong>SFVM_PROPPAGE_DATA</strong></a><br/></td>
-<td>Contiene los detalles de una página que se va a agregar a la hoja de <strong>propiedades</strong> de un objeto.<br/></td>
+<td>Contiene los detalles de una página que se va a agregar a la hoja <strong>Propiedades de un</strong> objeto.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-shardappidinfo"><strong>SHARDAPPIDINFO</strong></a><br/></td>
-<td>Contiene los datos que usa <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shaddtorecentdocs"><strong>SHAddToRecentDocs</strong></a> para identificar un elemento (en este caso, como <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem"><strong>IShellItem</strong></a>) y el proceso al que está asociado.<br/></td>
+<td>Contiene datos utilizados por <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shaddtorecentdocs"><strong>SHAddToRecentDocs</strong></a> para identificar un elemento (en este caso, como <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem"><strong>IShellItem)</strong></a>y el proceso al que está asociado.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-shardappidinfoidlist"><strong>SHARDAPPIDINFOIDLIST</strong></a><br/></td>
-<td>Contiene los datos que usa <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shaddtorecentdocs"><strong>SHAddToRecentDocs</strong></a> para identificar un elemento (en este caso, por un PIDL absoluto) y el proceso al que está asociado.<br/></td>
+<td>Contiene datos utilizados por <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shaddtorecentdocs"><strong>SHAddToRecentDocs</strong></a> para identificar un elemento (en este caso, mediante un PIDL absoluto) y el proceso al que está asociado.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-shardappidinfolink"><strong>SHARDAPPIDINFOLINK</strong></a><br/></td>
-<td>Contiene los datos que usa <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shaddtorecentdocs"><strong>SHAddToRecentDocs</strong></a> para identificar un elemento, en este caso a través de un <a href="/windows/desktop/api/Shobjidl_core/nn-shobjidl_core-ishelllinka"><strong>IShellLink</strong></a>, y el proceso al que está asociado.<br/></td>
+<td>Contiene datos utilizados por <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shaddtorecentdocs"><strong>SHAddToRecentDocs</strong></a> para identificar un elemento, en este caso a través de <a href="/windows/desktop/api/Shobjidl_core/nn-shobjidl_core-ishelllinka"><strong>un IShellLink</strong></a>y el proceso al que está asociado.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-shchangenotifyentry"><strong>SHChangeNotifyEntry</strong></a><br/></td>
-<td>Contiene y recibe información de las notificaciones de cambio. Esta estructura se usa con la función <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotifyregister"><strong>SHChangeNotifyRegister</strong></a> y la notificación <a href="sfvm-queryfsnotify.md"><strong>SFVM_QUERYFSNOTIFY</strong></a> .<br/></td>
+<td>Contiene y recibe información para las notificaciones de cambio. Esta estructura se usa con la <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotifyregister"><strong>función SHChangeNotifyRegister</strong></a> y la <a href="sfvm-queryfsnotify.md"><strong>SFVM_QUERYFSNOTIFY</strong></a> notificación.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlobj/ns-shlobj-shcolumndata"><strong>SHCOLUMNDATA</strong></a><br/></td>
-<td>Contiene información que identifica un archivo determinado. Lo usa <a href="/windows/desktop/api/shlobj/nf-shlobj-icolumnprovider-getitemdata"><strong>IColumnProvider:: GetItemData</strong></a> al solicitar datos para un archivo determinado.<br/></td>
+<td>Contiene información que identifica un archivo determinado. <a href="/windows/desktop/api/shlobj/nf-shlobj-icolumnprovider-getitemdata"><strong>IColumnProvider::GetItemData</strong></a> lo usa al solicitar datos para un archivo determinado.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/shell/objects"><strong>SHCOLUMNID</strong></a><br/></td>
-<td>Especifica el identificador de FMTID/PID de una columna que se mostrará en la vista de detalles del explorador de Windows. <br/>
+<td>Especifica el identificador FMTID/PID de una columna que se mostrará en la Windows detalles del explorador. <br/>
 <blockquote>
 [!Note]<br />
-A partir de Windows Vista, <a href="/windows/desktop/shell/objects"><strong>SHCOLUMNID</strong></a> se considera un formulario heredado y no debe usarse. En su lugar, use la estructura <a href="/windows/desktop/api/wtypes/ns-wtypes-propertykey"><strong>PROPERTYKEY</strong></a> .
+A partir Windows Vista, <a href="/windows/desktop/shell/objects"><strong>SHCOLUMNID</strong></a> se considera un formulario heredado y no se debe usar. En su lugar, use la <a href="/windows/desktop/api/wtypes/ns-wtypes-propertykey"><strong>estructura PROPERTYKEY.</strong></a>
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlobj/ns-shlobj-shcolumninfo"><strong>SHCOLUMNINFO</strong></a><br/></td>
-<td>Contiene información sobre las propiedades de una columna. Lo usa <a href="/windows/desktop/api/shlobj/nf-shlobj-icolumnprovider-getcolumninfo"><strong>IColumnProvider:: GetColumnInfo</strong></a>.<br/></td>
+<td>Contiene información sobre las propiedades de una columna. <a href="/windows/desktop/api/shlobj/nf-shlobj-icolumnprovider-getcolumninfo"><strong>IColumnProvider::GetColumnInfo</strong></a>lo usa.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlobj/ns-shlobj-shcolumninit"><strong>SHCOLUMNINIT</strong></a><br/></td>
-<td>Pasa información de inicialización a <a href="/windows/desktop/api/shlobj/nf-shlobj-icolumnprovider-initialize"><strong>IColumnProvider:: Initialize</strong></a>.<br/></td>
+<td>Pasa información de inicialización <a href="/windows/desktop/api/shlobj/nf-shlobj-icolumnprovider-initialize"><strong>a IColumnProvider::Initialize</strong></a>.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-shdescriptionid"><strong>SHDESCRIPTIONID</strong></a><br/></td>
-<td>Recibe datos del elemento en respuesta a una llamada a <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetdatafromidlista"><strong>SHGetDataFromIDList</strong></a>.<br/></td>
+<td>Recibe datos de elemento en respuesta a una llamada a <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetdatafromidlista"><strong>SHGetDataFromIDList</strong></a>.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shobjidl_core/ns-shobjidl_core-shdragimage"><strong>SHDRAGIMAGE</strong></a><br/></td>
@@ -432,23 +432,23 @@ A partir de Windows Vista, <a href="/windows/desktop/shell/objects"><strong>SHCO
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shobjidl_core/ns-shobjidl_core-shell_item_resource"><strong>SHELL_ITEM_RESOURCE</strong></a><br/></td>
-<td>Define el recurso del elemento de Shell.<br/></td>
+<td>Define el recurso de elemento de Shell.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shtypes/ns-shtypes-shelldetails"><strong>SHELLDETAILS</strong></a><br/></td>
-<td>Informa de información detallada sobre un elemento en una carpeta de Shell.<br/></td>
+<td>Proporciona información detallada sobre un elemento de una carpeta de Shell.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shellapi/ns-shellapi-shellexecuteinfoa"><strong>SHELLEXECUTEINFO</strong></a><br/></td>
-<td>Contiene información utilizada por <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa"><strong>ShellExecuteEx</strong></a>.<br/></td>
+<td>Contiene información utilizada por <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa"><strong>ShellExecuteEx.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-shellflagstate"><strong>SHELLFLAGSTATE</strong></a><br/></td>
-<td>Contiene un conjunto de marcas que indican la configuración de Shell actual. Esta estructura se usa con la función <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetsettings"><strong>SHGetSettings</strong></a> .<br/></td>
+<td>Contiene un conjunto de marcas que indican la configuración actual del shell. Esta estructura se usa con la <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetsettings"><strong>función SHGetSettings.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-shellstatea"><strong>SHELLSTATE</strong></a><br/></td>
-<td>Contiene la configuración del estado del shell. Esta estructura se usa con la función <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetsetsettings"><strong>SHGetSetSettings</strong></a> .<br/></td>
+<td>Contiene la configuración del estado del shell. Esta estructura se usa con la <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetsetsettings"><strong>función SHGetSetSettings.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shellapi/ns-shellapi-shfileinfoa"><strong>SHFILEINFO</strong></a><br/></td>
@@ -456,40 +456,40 @@ A partir de Windows Vista, <a href="/windows/desktop/shell/objects"><strong>SHCO
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa"><strong>SHFILEOPSTRUCT</strong></a><br/></td>
-<td>Contiene información que utiliza la función <a href="/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa"><strong>SHFileOperation</strong></a> para realizar operaciones de archivo. <br/>
+<td>Contiene información que la <a href="/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa"><strong>función SHFileOperation</strong></a> usa para realizar operaciones de archivo. <br/>
 <blockquote>
 [!Note]<br />
-A partir de Windows Vista, se recomienda el uso de la interfaz <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileoperation"><strong>IFileOperation</strong></a> en esta función.
+A Windows Vista, se recomienda usar la interfaz <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileoperation"><strong>IFileOperation</strong></a> sobre esta función.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-shfoldercustomsettings"><strong>SHFOLDERCUSTOMSETTINGS</strong></a><br/></td>
-<td>Contiene la configuración de carpeta personalizada. Esta estructura se usa con la función <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetsetfoldercustomsettings"><strong>SHGetSetFolderCustomSettings</strong></a> .<br/></td>
+<td>Contiene la configuración de carpeta personalizada. Esta estructura se usa con la <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetsetfoldercustomsettings"><strong>función SHGetSetFolderCustomSettings.</strong></a><br/></td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>SHITEMID</strong></a><br/></td>
+<td><a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>LUGAR DE LA INSOND</strong></a><br/></td>
 <td>Define un identificador de elemento.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shellapi/ns-shellapi-shnamemappinga"><strong>SHNAMEMAPPING</strong></a><br/></td>
-<td>Contiene los nombres de ruta de acceso antiguos y nuevos de cada archivo que se ha desenviado, copiado o cuyo nombre se ha cambiado mediante la función <a href="/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa"><strong>SHFileOperation</strong></a> .<br/></td>
+<td>Contiene los nombres de ruta de acceso antiguos y nuevos para cada archivo que la <a href="/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa"><strong>función SHFileOperation</strong></a> ha movido, copiado o cambiado de nombre.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shellapi/ns-shellapi-shqueryrbinfo"><strong>SHQUERYRBINFO</strong></a><br/></td>
-<td>Contiene la información de tamaño y recuento de elementos recuperada por la función <a href="/windows/desktop/api/Shellapi/nf-shellapi-shqueryrecyclebina"><strong>SHQueryRecycleBin</strong></a> .<br/></td>
+<td>Contiene la información de tamaño y recuento de elementos recuperada por la <a href="/windows/desktop/api/Shellapi/nf-shellapi-shqueryrecyclebina"><strong>función SHQueryRecycleBin.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shellapi/ns-shellapi-shstockiconinfo"><strong>SHSTOCKICONINFO</strong></a><br/></td>
-<td>Recibe la información usada para recuperar un icono de la shell de existencias. Esta estructura se usa en una llamada <a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetstockiconinfo"><strong>SHGetStockIconInfo</strong></a>.<br/></td>
+<td>Recibe la información utilizada para recuperar un icono de Shell de existencias. Esta estructura se usa en una llamada <a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetstockiconinfo"><strong>a SHGetStockIconInfo</strong></a>.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/win32/api/shappmgr/ns-shappmgr-slowappinfo"><strong>SLOWAPPINFO</strong></a><br/></td>
-<td>Proporciona información de aplicación especializada para <strong>Agregar o quitar programas</strong> en el panel de control. Esta estructura no es aplicable a las aplicaciones publicadas.<br/></td>
+<td>Proporciona información de aplicación especializada <strong>para agregar o quitar programas</strong> en Panel de control. Esta estructura no es aplicable a las aplicaciones publicadas.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/win32/api/shobjidl_core/ns-shobjidl_core-smcshchangenotifystruct"><strong>SMCSHCHANGENOTIFYSTRUCT</strong></a><br/></td>
-<td>Contiene información sobre la notificación de cambios. Lo usa <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm"><strong>IShellMenuCallback:: CallbackSM</strong></a>.<br/></td>
+<td>Contiene información sobre la notificación de cambios. La usa <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm"><strong>IShellMenuCallback::CallbackSM.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/win32/api/shobjidl_core/ns-shobjidl_core-smdata"><strong>SMDATA</strong></a><br/></td>
@@ -501,71 +501,71 @@ A partir de Windows Vista, se recomienda el uso de la interfaz <a href="/windows
 </tr>
 <tr class="odd">
 <td><a href="/windows/win32/api/urlmon/ns-urlmon-softdistinfo"><strong>SOFTDISTINFO</strong></a><br/></td>
-<td>Contiene información acerca de una actualización de software.<br/></td>
+<td>Contiene información sobre una actualización de software.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shobjidl_core/ns-shobjidl_core-sortcolumn"><strong>SORTCOLUMN</strong></a><br/></td>
-<td>Almacena información sobre cómo ordenar una columna que se muestra en la vista de carpetas.<br/></td>
+<td>Almacena información sobre cómo ordenar una columna que se muestra en la vista de carpeta.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shtypes/ns-shtypes-strret"><strong>STRRET</strong></a><br/></td>
-<td>Contiene cadenas devueltas por los métodos de la interfaz <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellfolder"><strong>IShellFolder</strong></a> .<br/></td>
+<td>Contiene cadenas devueltas desde los métodos <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellfolder"><strong>de interfaz IShellFolder.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shobjidl_core/ns-shobjidl_core-sv2cvw2_params"><strong>SV2CVW2_PARAMS</strong></a><br/></td>
-<td>Contiene los parámetros para el método <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellview2-createviewwindow2"><strong>IShellView2:: CreateViewWindow2</strong></a> .<br/></td>
+<td>Contiene los parámetros del método <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellview2-createviewwindow2"><strong>IShellView2::CreateViewWindow2.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/shell/objects-cpp"><strong>SYNC_HANDLER_ITEM_INFO</strong></a><br/></td>
-<td>Define un controlador para una sincronización programada. Se usa con <a href="/previous-versions/windows/desktop/isync-schedule/bb774680(v=vs.85)"><strong>ISyncSchedule:: AddItem</strong></a>.<br/></td>
+<td>Define un controlador para una sincronización programada. Se usa <a href="/previous-versions/windows/desktop/isync-schedule/bb774680(v=vs.85)"><strong>con ISyncSchedule::AddItem</strong></a>.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Syncmgr/ns-syncmgr-syncmgr_conflict_id_info"><strong>SYNCMGR_CONFLICT_ID_INFO</strong></a><br/></td>
-<td>Describe la estructura de información de ID. de conflicto.<br/></td>
+<td>Describe la estructura de información del identificador de conflicto.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/win32/api/mobsync/ns-mobsync-syncmgrhandlerinfo"><strong>SYNCMGRHANDLERINFO</strong></a><br/></td>
-<td>Proporciona información sobre el controlador para su uso en el método <a href="/windows/desktop/api/Mobsync/nf-mobsync-isyncmgrsynchronize-gethandlerinfo"><strong>ISyncMgrSynchronize:: GetHandlerInfo</strong></a> .<br/></td>
+<td>Proporciona información sobre el controlador para su uso en el <a href="/windows/desktop/api/Mobsync/nf-mobsync-isyncmgrsynchronize-gethandlerinfo"><strong>método ISyncMgrSynchronize::GetHandlerInfo.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/win32/api/mobsync/ns-mobsync-syncmgritem"><strong>SYNCMGRITEM</strong></a><br/></td>
-<td>Proporciona información sobre los elementos que se enumeran en la interfaz <a href="/windows/desktop/api/mobsync/nn-mobsync-isyncmgrenumitems"><strong>ISyncMgrEnumItems</strong></a> .<br/></td>
+<td>Proporciona información sobre los elementos que enumera la <a href="/windows/desktop/api/mobsync/nn-mobsync-isyncmgrenumitems"><strong>interfaz ISyncMgrEnumItems.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/win32/api/mobsync/ns-mobsync-syncmgrlogerrorinfo"><strong>SYNCMGRLOGERRORINFO</strong></a><br/></td>
-<td>Proporciona información de error para su uso en el método <a href="/windows/desktop/api/Mobsync/nf-mobsync-isyncmgrsynchronizecallback-logerror"><strong>ISyncMgrSynchronizeCallback:: LogError</strong></a> .<br/></td>
+<td>Proporciona información de error para su uso en <a href="/windows/desktop/api/Mobsync/nf-mobsync-isyncmgrsynchronizecallback-logerror"><strong>el método ISyncMgrSynchronizeCallback::LogError.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/win32/api/mobsync/ns-mobsync-syncmgrprogressitem"><strong>SYNCMGRPROGRESSITEM</strong></a><br/></td>
-<td>Proporciona información de estado mientras una sincronización está en curso. Esta estructura se usa con el método <a href="/windows/desktop/api/Mobsync/nf-mobsync-isyncmgrsynchronizecallback-progress"><strong>ISyncMgrSynchronizeCallback::P rogress</strong></a> y corresponde a un único elemento de sincronización.<br/></td>
+<td>Proporciona información de estado mientras hay una sincronización en curso. Esta estructura se usa con el método <a href="/windows/desktop/api/Mobsync/nf-mobsync-isyncmgrsynchronizecallback-progress"><strong>ISyncMgrSynchronizeCallback::P rogress</strong></a> y corresponde a un único elemento de sincronización.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlobj/ns-shlobj-tbinfo"><strong>TBINFO</strong></a><br/></td>
-<td>Se usa con la <a href="sfvm-getbuttoninfo.md"><strong>SFVM_GETBUTTONINFO</strong></a> notificación para especificar el número de botones que se van a agregar a la barra de herramientas, así como el modo en que se agregan.<br/></td>
+<td>Se usa con <a href="sfvm-getbuttoninfo.md"><strong>la SFVM_GETBUTTONINFO</strong></a> para especificar el número de botones que se van a agregar a la barra de herramientas, así como cómo se agregan.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shobjidl_core/ns-shobjidl_core-thumbbutton"><strong>THUMBBUTTON</strong></a><br/></td>
-<td>Lo usan los métodos de la interfaz <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-itaskbarlist3"><strong>ITaskbarList3</strong></a> para definir botones usados en una barra de herramientas incrustada en la representación en miniatura de una ventana.<br/></td>
+<td>Usado por los métodos de la <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-itaskbarlist3"><strong>interfaz ITaskbarList3</strong></a> para definir los botones usados en una barra de herramientas incrustada en la representación en miniatura de una ventana.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/win32/api/shlobj_core/ns-shlobj_core-wallpaperopt"><strong>WALLPAPEROPT</strong></a><br/></td>
-<td>Contiene las opciones de presentación del papel tapiz. Se usa con miembros de la interfaz <a href="/windows/desktop/api/shlobj_core/nn-shlobj_core-iactivedesktop"><strong>IActiveDesktop</strong></a> .<br/></td>
+<td>Contiene las opciones de visualización del papel tapiz. Se usa con miembros de la <a href="/windows/desktop/api/shlobj_core/nn-shlobj_core-iactivedesktop"><strong>interfaz IActiveDesktop.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Tlogstg/ns-tlogstg-windowdata"><strong>WINDOWDATA</strong></a><br/></td>
-<td>Almacena los datos de la ventana.<br/></td>
+<td>Almacena datos de ventana.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Thumbcache/ne-thumbcache-wts_contextflags"><strong>WTS_CONTEXTFLAGS</strong></a><br/></td>
-<td>Especifica el contexto de una extracción en miniatura. Usado por <a href="/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailsettings-setcontext"><strong>IThumbnailSettings:: SetContext</strong></a>.<br/></td>
+<td>Especifica el contexto de una extracción de miniaturas. Usado por <a href="/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailsettings-setcontext"><strong>IThumbnailSettings::SetContext</strong></a>.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Thumbcache/ne-thumbcache-wts_flags"><strong>WTS_FLAGS</strong></a><br/></td>
-<td>Valores usados por <a href="/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailcache-getthumbnail"><strong>IThumbnailCache:: GetThumbnail</strong></a> para especificar las opciones de extracción y visualización de la imagen en miniatura.<br/></td>
+<td>Valores usados <a href="/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailcache-getthumbnail"><strong>por IThumbnailCache::GetThumbnail para</strong></a> especificar opciones para la extracción y visualización de la imagen en miniatura.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Thumbcache/ns-thumbcache-wts_thumbnailid"><strong>WTS_THUMBNAILID</strong></a><br/></td>
-<td>Contiene un identificador único para una miniatura en la caché en miniatura del sistema.<br/></td>
+<td>Contiene un identificador único para una miniatura en la caché de miniaturas del sistema.<br/></td>
 </tr>
 </tbody>
 </table>

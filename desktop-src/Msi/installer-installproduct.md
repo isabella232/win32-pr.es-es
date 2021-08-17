@@ -1,7 +1,7 @@
 ---
 description: El método InstallProduct del objeto Installer abre un paquete del instalador e inicializa una sesión de instalación.
 ms.assetid: 6828ca34-3cf1-4738-882d-9ff1450f1014
-title: Método Installer.InstallProduct
+title: Installer.InstallProduct (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118630397"
 ---
-# <a name="installerinstallproduct-method"></a>Método Installer.InstallProduct
+# <a name="installerinstallproduct-method"></a>Installer.InstallProduct (método)
 
 El **método InstallProduct** del objeto [**Installer**](installer-object.md) abre un paquete del instalador e inicializa una sesión de instalación.
 
@@ -60,19 +60,19 @@ Para realizar una instalación administrativa, incluya ACTION=ADMIN en *property
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para quitar completamente un producto, establezca REMOVE=ALL en *propertyValues*. Para obtener más información, vea [**PROPIEDAD REMOVE.**](remove.md)
+Para quitar completamente un producto, establezca REMOVE=ALL en *propertyValues*. Para obtener más información, vea [**REMOVE property.**](remove.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
 
 
 

@@ -14,21 +14,21 @@ ms.locfileid: "117751201"
 ---
 # <a name="t-volume-shadow-copy-service"></a>T (Servicio de instantáneas de volumen)
 
-[A](vssgloss-a.md) [B](vssgloss-b.md) [C](vssgloss-c.md) [D](vssgloss-d.md) [E](vssgloss-e.md) [F](vssgloss-f.md) G [H](vssgloss-g.md) [](vssgloss-h.md) [I](vssgloss-i.md) J K [L M](vssgloss-l.md) N [O](vssgloss-n.md) [](vssgloss-o.md) [P P](vssgloss-p.md) Q [R](vssgloss-r.md) [S](vssgloss-s.md) T U [V](vssgloss-v.md) [W](vssgloss-w.md) X Y Z
+[A](vssgloss-a.md) [B](vssgloss-b.md) [C](vssgloss-c.md) [D](vssgloss-d.md) [E](vssgloss-e.md) [F](vssgloss-f.md) [G](vssgloss-g.md) H [I](vssgloss-h.md) [](vssgloss-i.md) J K [L](vssgloss-l.md) M [N O](vssgloss-n.md) [](vssgloss-o.md) [P](vssgloss-p.md) Q [R](vssgloss-r.md) [S](vssgloss-s.md) T U [V](vssgloss-v.md) [W](vssgloss-w.md) X Y Z
 
 <dl> <dt>
 
 <span id="base.vssgloss_thaw_event"></span><span id="BASE.VSSGLOSS_THAW_EVENT"></span>**Evento Thaw**
 </dt> <dd>
 
-Evento de VSS emitido por VSS que indica que se ha completado una inmovilización de instantáneas. Se usa para quitar los preparativos de un escritor para una inmovilización. Consulte también [*inmovilizar*](vssgloss-f.md), [*instantánea .*](vssgloss-s.md)
+Evento de VSS emitido por VSS que indica que se ha completado una inmovilización de instantáneas. Se usa para quitar los preparativos de un escritor para una inmovilización. Vea también [*inmovilizar*](vssgloss-f.md), [*instantánea .*](vssgloss-s.md)
 
 </dd> <dt>
 
 <span id="base.vssgloss_transportable_shadow_copy"></span><span id="BASE.VSSGLOSS_TRANSPORTABLE_SHADOW_COPY"></span>**instantánea transportable**
 </dt> <dd>
 
-Instantánea que se puede mover de un sistema a otro. Normalmente, una instantánea transportable no se encuentra localmente. Consulte también [*instantáneas que se han presentado.*](vssgloss-s.md)
+Instantánea que se puede mover de un sistema a otro. Normalmente, una instantánea transportable no se superficie localmente. Consulte también [*instantáneas que se han presentado.*](vssgloss-s.md)
 
 </dd> </dl>
 

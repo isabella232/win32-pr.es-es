@@ -15,7 +15,7 @@ ms.locfileid: "118326728"
 
 ## <a name="text"></a>Texto
 
-El {0} borde del rectángulo notificado es incoherente con la prueba de impacto del {1} rect en el punto {2} .
+El {0} borde del rectángulo notificado es incoherente con la prueba de acceso al {1} rect en el punto {2} .
 
 ## <a name="type"></a>Tipo
 

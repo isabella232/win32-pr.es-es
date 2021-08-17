@@ -106,7 +106,7 @@ Tipo: [System.Collections.Generic.IEnumerable](/dotnet/api/system.collections.ge
 
 Interfaz [IEnumerable \<T\> ](/dotnet/api/system.collections.generic.ienumerable-1?view=netframework-4.8) que se puede usar para enumerar las clases CIM.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [CimInstance (clase)](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832336(v=vs.85))  
 [Espacio de nombres Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))

@@ -27,18 +27,18 @@ La [clase Del proveedor del Registro](/previous-versions/windows/desktop/regprov
 
 -   Cree o elimine valores con nombre, que se denominan entradas cuando están bajo claves.
 
-    Use el nombre de un nuevo valor y [**SetBinaryValue**](/previous-versions/windows/desktop/regprov/setbinaryvalue-method-in-class-stdregprov), [**SetDWORDValue,**](/previous-versions/windows/desktop/regprov/setdwordvalue-method-in-class-stdregprov) [**SetExpandedStringValue,**](/previous-versions/windows/desktop/regprov/setexpandedstringvalue-method-in-class-stdregprov) [**SetMultiStringValue**](/previous-versions/windows/desktop/regprov/setmultistringvalue-method-in-class-stdregprov)o [**SetStringValue**](/previous-versions/windows/desktop/regprov/setstringvalue-method-in-class-stdregprov) para crear un valor con nombre. Use [**DeleteValue**](/previous-versions/windows/desktop/regprov/deletevalue-method-in-class-stdregprov) para eliminar un valor con nombre.
+    Use el nombre de un nuevo valor y [**SetBinaryValue,**](/previous-versions/windows/desktop/regprov/setbinaryvalue-method-in-class-stdregprov) [**SetDWORDValue,**](/previous-versions/windows/desktop/regprov/setdwordvalue-method-in-class-stdregprov) [**SetExpandedStringValue,**](/previous-versions/windows/desktop/regprov/setexpandedstringvalue-method-in-class-stdregprov) [**SetMultiStringValue**](/previous-versions/windows/desktop/regprov/setmultistringvalue-method-in-class-stdregprov)o [**SetStringValue**](/previous-versions/windows/desktop/regprov/setstringvalue-method-in-class-stdregprov) para crear un valor con nombre. Use [**DeleteValue**](/previous-versions/windows/desktop/regprov/deletevalue-method-in-class-stdregprov) para eliminar un valor con nombre.
 
 -   Cambie los valores con nombre.
 
-    Use el nombre de un valor y los métodos Set (identificados en el elemento con viñetas anterior) para cambiar los valores con nombre existentes bajo una clave. Debe conocer el nombre de un valor para cambiarlo. Si no conoce los nombres de valor de una clave, use el método [**EnumValues**](/previous-versions/windows/desktop/regprov/enumvalues-method-in-class-stdregprov) para obtener los nombres.
+    Use el nombre de un valor y los métodos Set (identificados en el elemento con viñetas anterior) para cambiar los valores con nombre existentes bajo una clave. Debe conocer el nombre de un valor para cambiarlo. Si no conoce los nombres de valor de una clave, use el [**método EnumValues**](/previous-versions/windows/desktop/regprov/enumvalues-method-in-class-stdregprov) para obtener los nombres.
 
-En este tema se de abordan las siguientes secciones:
+En este tema se de abordan las secciones siguientes:
 
--   [Creación de una clave del Registro mediante VBScript](#creating-a-registry-key-using-vbscript)
--   [Creación de un valor de registro con nombre mediante PowerShell y VBScript](#creating-a-named-registry-value-using-powershell-and-vbscript)
+-   [Crear una clave del Registro mediante VBScript](#creating-a-registry-key-using-vbscript)
+-   [Crear un valor del Registro con nombre mediante PowerShell y VBScript](#creating-a-named-registry-value-using-powershell-and-vbscript)
 
-## <a name="creating-a-registry-key-using-vbscript"></a>Creación de una clave del Registro mediante VBScript
+## <a name="creating-a-registry-key-using-vbscript"></a>Crear una clave del Registro mediante VBScript
 
 Dado que el Registro es la base de datos de configuración central para el sistema operativo, las aplicaciones y los servicios, tenga cuidado al escribir cambios en los valores del Registro o eliminar claves.
 
@@ -85,9 +85,9 @@ $reg = [wmiclass]"\\$strComputer\root\default:StdRegprov"
 
 
 
-## <a name="creating-a-named-registry-value-using-powershell-and-vbscript"></a>Creación de un valor de registro con nombre mediante PowerShell y VBScript
+## <a name="creating-a-named-registry-value-using-powershell-and-vbscript"></a>Crear un valor del Registro con nombre mediante PowerShell y VBScript
 
-En el ejemplo de código siguiente se muestra cómo crear un valor con nombre denominado **MultiStringValue** en la clave **\_ \_** \\  \\ **MyKey** \\ **MySubKey** de HKEY LOCAL MACHINE SOFTWARE que crea el script anterior. El script llama [**a StdRegProv.SetMultiStringValue para**](/previous-versions/windows/desktop/regprov/setmultistringvalue-method-in-class-stdregprov) escribir valores de cadena en un nuevo valor con nombre.
+En el ejemplo de código siguiente se muestra cómo crear un valor con nombre denominado **MultiStringValue** bajo la clave **\_ \_** \\  \\ **MyKey** \\ **MySubKey** de HKEY LOCAL MACHINE SOFTWARE que crea el script anterior. El script llama [**a StdRegProv.SetMultiStringValue para**](/previous-versions/windows/desktop/regprov/setmultistringvalue-method-in-class-stdregprov) escribir valores de cadena en un nuevo valor con nombre.
 
 
 ```VB
@@ -132,4 +132,4 @@ $multiValues = $reg.GetMultiStringValue($HKEY_LOCAL_MACHINE, $strKeyPath, $strVa
 $multiValues.sValue
 ```
 
-Con WMI, no se puede establecer la seguridad de acceso en una clave del Registro. Sin embargo, el [**método StdRegProv.CheckAccess**](/previous-versions/windows/desktop/regprov/checkaccess-method-in-class-stdregprov) compara la configuración de seguridad del usuario actual con el descriptor de seguridad de una clave del Registro para determinar si el usuario tiene un permiso específico, como **KEY SET \_ \_ VALUE**.
+Con WMI, no se puede establecer la seguridad de acceso en una clave del Registro. Sin embargo, el método [**StdRegProv.CheckAccess**](/previous-versions/windows/desktop/regprov/checkaccess-method-in-class-stdregprov) compara la configuración de seguridad del usuario actual con el descriptor de seguridad de una clave del Registro para determinar si el usuario tiene un permiso específico, como **KEY SET \_ \_ VALUE**.

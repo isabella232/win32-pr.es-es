@@ -15,7 +15,7 @@ ms.locfileid: "118407951"
 
 En esta sección se proporciona información y código de ejemplo para implementar controles de edición.
 
-Los controles de edición se usan normalmente en cuadros de diálogo, pero también se pueden usar en el área de cliente de una ventana estándar. Los controles de edición de una sola línea son útiles para recuperar una sola cadena del usuario. Los controles de edición multilínea permiten implementar la mayoría de las características de un procesador de palabras simple en la aplicación.
+Los controles de edición se usan normalmente en cuadros de diálogo, pero también se pueden usar en el área cliente de una ventana estándar. Los controles de edición de una sola línea son útiles para recuperar una sola cadena del usuario. Los controles de edición multilínea permiten implementar la mayoría de las características de un procesador de texto simple en la aplicación.
 
 Se tratan los temas siguientes.
 
@@ -26,7 +26,7 @@ Se tratan los temas siguientes.
 | Tema                                                                                      | Descripción                                                                                                                                     |
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Cómo crear un control de edición de una sola línea](use-a-single-line--edit-control.md)<br/> | En este tema se muestra cómo crear un cuadro de diálogo que contiene un control de edición de una sola línea. <br/>                                        |
-| [Cómo crear un control de edición multilínea](use-a-multiline-edit-control.md)<br/>      | En este tema se muestra cómo implementar un procesador de palabras simple agregando un control de edición multilínea al área cliente de una ventana. <br/> |
+| [Cómo crear un control de edición multilínea](use-a-multiline-edit-control.md)<br/>      | En este tema se muestra cómo implementar un procesador de palabras simple mediante la adición de un control de edición multilínea al área cliente de una ventana. <br/> |
 
 
 

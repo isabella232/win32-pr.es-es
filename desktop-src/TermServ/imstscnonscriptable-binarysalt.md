@@ -87,7 +87,7 @@ Devuelve **E \_ NOTIMPL**.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
@@ -99,7 +99,7 @@ Devuelve **E \_ NOTIMPL**.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

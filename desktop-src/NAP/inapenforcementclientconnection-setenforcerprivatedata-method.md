@@ -1,11 +1,11 @@
 ---
 title: Método INapEnforcementClientConnection SetEnforcerPrivateData (NapEnforcementClient.h)
-description: Lo usa el ejecutor para establecer datos privados.
+description: Lo usa el aplicador para establecer datos privados.
 ms.assetid: 56f6fec7-47ec-4b2c-b8c8-a4d519ba0f91
 keywords:
 - Método NAP de SetEnforcerPrivateData
 - Método NAP de SetEnforcerPrivateData, interfaz INapEnforcementClientConnection
-- INapEnforcementClientConnection interface NAP , SetEnforcerPrivateData method
+- Interfaz INapEnforcementClientConnection NAP, método SetEnforcerPrivateData
 topic_type:
 - apiref
 api_name:
@@ -30,7 +30,7 @@ ms.locfileid: "118368104"
 
  
 
-El ejecutor usa el método **INapEnforcementClientConnection::SetEnforcerPrivateData** para establecer datos privados.
+El aplicador usa el método **INapEnforcementClientConnection::SetEnforcerPrivateData** para establecer datos privados.
 
 ## <a name="syntax"></a>Sintaxis
 

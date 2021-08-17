@@ -1,5 +1,5 @@
 ---
-description: 'Método IMpeg2PsiParser::GetCountOfPrograms: la implementación de este método se proporciona como código de ejemplo con DirectShow SDK. No se admite DirectShow API.'
+description: 'Método IMpeg2PsiParser::GetCountOfPrograms: la implementación de este método se proporciona como código de ejemplo con el SDK DirectShow. No se admite DirectShow API.'
 ms.assetid: 282dd779-9aca-46e3-a791-cb9ea86f637d
 title: IMpeg2PsiParser::GetCountOfPrograms (método)
 ms.topic: reference

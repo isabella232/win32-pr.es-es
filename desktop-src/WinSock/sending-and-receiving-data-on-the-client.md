@@ -1,21 +1,21 @@
 ---
-description: En el código siguiente se muestran las funciones SEND y RECV utilizadas por el cliente una vez establecida una conexión.
+description: El código siguiente muestra las funciones send y recv usadas por el cliente una vez establecida una conexión.
 ms.assetid: 9c6d366d-2bc6-4c92-8d0b-21c51e08ed4f
-title: Enviar y recibir datos en el cliente
+title: Envío y recepción de datos en el cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36d91ee507d78bc2638a6d3f7383cd6a930651e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3150c853f50e8626451cc344179645289058df928600d71bf437dc95d9738986
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117740566"
 ---
-# <a name="sending-and-receiving-data-on-the-client"></a>Enviar y recibir datos en el cliente
+# <a name="sending-and-receiving-data-on-the-client"></a>Envío y recepción de datos en el cliente
 
-En el código siguiente se muestran las funciones [**send**](/windows/desktop/api/Winsock2/nf-winsock2-send) y [**RECV**](/windows/desktop/api/winsock/nf-winsock-recv) utilizadas por el cliente una vez establecida una conexión.
+El código siguiente muestra las [**funciones send**](/windows/desktop/api/Winsock2/nf-winsock2-send) [**y recv**](/windows/desktop/api/winsock/nf-winsock-recv) usadas por el cliente una vez establecida una conexión.
 
-## <a name="client"></a>Remoto
+## <a name="client"></a>Cliente
 
 
 ```C++
@@ -63,18 +63,18 @@ do {
 
 
 
-Las funciones [**send**](/windows/desktop/api/Winsock2/nf-winsock2-send) y [**RECV**](/windows/desktop/api/winsock/nf-winsock-recv) devuelven un valor entero del número de bytes enviados o recibidos, respectivamente, o un error. Cada función también toma los mismos parámetros: el socket activo, un búfer **Char** , el número de bytes que se van a enviar o recibir y las marcas que se van a utilizar.
+Las [**funciones send**](/windows/desktop/api/Winsock2/nf-winsock2-send) y [**recv**](/windows/desktop/api/winsock/nf-winsock-recv) devuelven un valor entero del número de bytes enviados o recibidos, respectivamente, o un error. Cada función también toma los mismos parámetros: el socket activo, un búfer **char,** el número de bytes que se envían o reciben y cualquier marca que se va a usar.
 
-Siguiente paso: [desconectar el cliente](disconnecting-the-client.md)
+Paso siguiente: [Desconectar el cliente](disconnecting-the-client.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Introducción con Winsock](getting-started-with-winsock.md)
+[Tareas iniciales con Winsock](getting-started-with-winsock.md)
 </dt> <dt>
 
-[Aplicación cliente Winsock](winsock-client-application.md)
+[Aplicación cliente winsock](winsock-client-application.md)
 </dt> <dt>
 
 [Conexión a un socket](connecting-to-a-socket.md)

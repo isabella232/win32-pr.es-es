@@ -1,5 +1,5 @@
 ---
-description: Define un atributo de un contador que especifica cómo se muestran los datos del contador en una aplicación de consumidor.
+description: Define un atributo de un contador que especifica cómo se muestran los datos del contador en una aplicación consumidora.
 ms.assetid: 3749501b-4f3e-42e5-b1d5-2700b6d4a48a
 title: tipo complejo counterAttribute
 ms.topic: reference
@@ -18,7 +18,7 @@ ms.locfileid: "117793739"
 ---
 # <a name="counterattribute-complex-type"></a>tipo complejo counterAttribute
 
-Define un atributo de un contador que especifica cómo se muestran los datos del contador en una aplicación de consumidor.
+Define un atributo de un contador que especifica cómo se muestran los datos del contador en una aplicación consumidora.
 
 ``` syntax
 <xs:complexType name="counterAttribute">
@@ -70,7 +70,7 @@ Define un atributo de un contador que especifica cómo se muestran los datos del
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

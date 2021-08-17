@@ -1,5 +1,5 @@
 ---
-description: El instalador establece la propiedad SharedWindows cuando el sistema funciona como shared Windows.
+description: El instalador establece la propiedad SharedWindows cuando el sistema funciona como Compartido Windows.
 ms.assetid: 22dd5ee9-25d3-4bc6-9181-13095497a1d3
 title: Propiedad SharedWindows
 ms.topic: reference
@@ -13,15 +13,15 @@ ms.locfileid: "118624709"
 ---
 # <a name="sharedwindows-property"></a>Propiedad SharedWindows
 
-El instalador establece la **propiedad SharedWindows** cuando el sistema funciona como shared Windows.
+El instalador establece la **propiedad SharedWindows** cuando el sistema funciona como Compartido Windows.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

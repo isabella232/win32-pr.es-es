@@ -2,7 +2,7 @@
 description: El método Reset de la clase CIM \_ UninterruptiblePowerSupply solicita un restablecimiento del dispositivo lógico.
 ms.assetid: be04a10d-267c-4001-93ac-408a133ca923
 ms.tgt_platform: multiple
-title: Método Reset de la clase CIM_UninterruptiblePowerSupply clase
+title: Método Reset de la CIM_UninterruptiblePowerSupply clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:

@@ -17,7 +17,7 @@ Las acciones personalizadas escritas JScript o Visual Basic, Scripting Edition (
 
 
 
-| Valor devuelto              | Value        | Descripción                                                                                                |
+| Valor devuelto              | Valor        | Descripción                                                                                                |
 |---------------------------|--------------|------------------------------------------------------------------------------------------------------------|
 | msiDoActionStatusNoAction | 0            | Acción no ejecutada.                                                                                       |
 | msiDoActionStatusSuccess  | IDOK = 1     | La acción se completó correctamente.                                                                             |
@@ -30,9 +30,9 @@ Las acciones personalizadas escritas JScript o Visual Basic, Scripting Edition (
 
  
 
-Tenga en cuenta Windows instalador traduce los valores devueltos de todas las acciones cuando escribe el valor devuelto en el archivo de registro. Por ejemplo, si el valor devuelto de la acción aparece como 1 (uno) en el archivo de registro, significa que la acción devolvió msiDoActionStatusSuccess. Para obtener más información sobre esta traducción, vea [Registro de valores devueltos de acción](logging-of-action-return-values.md).
+Tenga en Windows instalador traduce los valores devueltos de todas las acciones cuando escribe el valor devuelto en el archivo de registro. Por ejemplo, si el valor devuelto de la acción aparece como 1 (uno) en el archivo de registro, significa que la acción devolvió msiDoActionStatusSuccess. Para obtener más información sobre esta traducción, vea [Registro de valores devueltos de acción](logging-of-action-return-values.md).
 
-Para devolver un valor distinto de correcto de una acción personalizada de script, debe usar un destino de función para la acción personalizada. La función de destino se especifica en la columna Target de [la tabla CustomAction](customaction-table.md).
+Para devolver un valor distinto de correcto de una acción personalizada de script, debe usar un destino de función para la acción personalizada. La función de destino se especifica en la columna Destino de la [tabla CustomAction](customaction-table.md).
 
 En el ejemplo de script siguiente se muestra cómo devolver una acción personalizada de VBScript correcta o con errores.
 

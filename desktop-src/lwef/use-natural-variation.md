@@ -13,7 +13,7 @@ ms.locfileid: "118474513"
 ---
 # <a name="use-natural-variation"></a>Usar variación natural
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 Aunque la coherencia de la presentación en la interfaz convencional de la aplicación, como los menús y los cuadros de diálogo, hace que la interfaz sea más predecible, varía la animación y la salida hablada en la interfaz del carácter. La variación adecuada de las respuestas del carácter proporciona una interfaz más natural. Si un carácter siempre se dirige al usuario exactamente de la misma manera; Por ejemplo, si siempre dice las mismas palabras, es probable que el usuario considere que el carácter es pesado, desinteresado o incluso desconfiado. La comunicación humana rara vez implica una repetición precisa. Incluso cuando se repite algo en una situación similar, podemos cambiar las palabras, los gestos o la expresión facial.
 

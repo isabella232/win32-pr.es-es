@@ -43,7 +43,7 @@ El procedimiento siguiente define cómo crear la suscripción de eventos SEL par
 
 2.  Cree una suscripción de eventos ejecutando el siguiente comando en una ventana del símbolo del sistema (el programa Wecutil.exe se encuentra en el directorio %SYSTEMROOT% \\ System32).:
 
-    **Wecutil cs** *<path> \\wsmanselrg.xml*
+    **Cs de Wecutil** *<path> \\wsmanselrg.xml*
 
 3.  Asegúrese de que la suscripción está activa ejecutando el siguiente comando en una ventana del símbolo del sistema:
 

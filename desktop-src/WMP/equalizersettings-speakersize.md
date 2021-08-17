@@ -33,7 +33,7 @@ Este atributo es un número de **lectura** y escritura (long) que contiene uno d
 
 
 
-| Valor | Descripción                              |
+| Value | Descripción                              |
 |-------|------------------------------------------|
 | 0     | Los hablantes actuales son auriculares.     |
 | 1     | Los hablantes actuales tienen un tamaño normal. |
@@ -53,13 +53,13 @@ Este atributo se omite si **enhancedAudio** está establecido en false.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

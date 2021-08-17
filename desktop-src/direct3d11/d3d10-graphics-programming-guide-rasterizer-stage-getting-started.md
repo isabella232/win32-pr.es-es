@@ -1,25 +1,25 @@
 ---
-title: Introducción con la fase de rasterizador
-description: En esta sección se describe la configuración de la ventanilla, el rectángulo de tijeras, el estado de rasterizador y el muestreo múltiple.
+title: Tareas iniciales con la fase rasterizadora
+description: En esta sección se describe el establecimiento de la ventanilla, el rectángulo de las manos, el estado del rasterizador y el muestreo múltiple.
 ms.assetid: d78c3845-76fd-4bd7-a603-bb1d8c66ac49
 keywords:
-- muestreo múltiple, estado de rasterizador (Direct3D 10)
+- multimuestreo, estado de rasterizador (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac95a15221f6fd4bd422e96c0686816afb35d4e8
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8e819dd92dd9c07a71f3830d3b67e371bc3d0e0c98f62fa36fdcf8ee3550ecd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117914006"
 ---
-# <a name="getting-started-with-the-rasterizer-stage"></a>Introducción con la fase de rasterizador
+# <a name="getting-started-with-the-rasterizer-stage"></a>Tareas iniciales con la fase rasterizadora
 
-En esta sección se describe la configuración de la ventanilla, el rectángulo de tijeras, el estado de rasterizador y el muestreo múltiple.
+En esta sección se describe el establecimiento de la ventanilla, el rectángulo de las manos, el estado del rasterizador y el muestreo múltiple.
 
 ## <a name="set-the-viewport"></a>Establecer la ventanilla
 
-Una ventanilla asigna las posiciones de los vértices (en el espacio de recorte) en las posiciones de destino de representación. En este paso se escalan las posiciones 3D en el espacio 2D. Un destino de representación se orienta con los ejes Y que apuntan hacia abajo; Esto requiere que las coordenadas Y se invierten durante la escala de la ventanilla. Además, las extensiones x e y (rango de los valores x e y) se escalan para ajustarse al tamaño de la ventanilla según las fórmulas siguientes:
+Una ventanilla asigna posiciones de vértice (en el espacio de recorte) en posiciones de destino de representación. Este paso escala las posiciones 3D en un espacio 2D. Un destino de representación está orientado con los ejes Y apuntando hacia abajo; esto requiere que las coordenadas Y se voltearán durante la escala de la ventanilla. Además, las extensiones x e y (intervalo de los valores x e y) se escalan para ajustarse al tamaño de la ventanilla según las fórmulas siguientes:
 
 
 ```
@@ -30,7 +30,7 @@ Z = Viewport.MinDepth + Z * (Viewport.MaxDepth - Viewport.MinDepth)
 
 
 
-El tutorial 1 crea una ventanilla 640 × 480 con [**D3D11 \_ viewport**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_viewport) y llamando a [**ID3D11DeviceContext:: RSSetViewports**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports).
+El tutorial 1 crea una ventanilla 640 × 480 mediante [**D3D11 \_ VIEWPORT**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_viewport) y llamando a [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports).
 
 
 ```
@@ -46,19 +46,19 @@ El tutorial 1 crea una ventanilla 640 × 480 con [**D3D11 \_ viewport**](/window
 
 
 
-La descripción de la ventanilla especifica el tamaño de la ventanilla, el intervalo al que se va a asignar profundidad (mediante *MinDepth* y *maxdepth*), y la posición de la parte superior izquierda de la ventanilla. *MinDepth* debe ser menor o igual que *maxdepth*; el intervalo de *MinDepth* y *MaxDepth* está entre 0,0 y 1,0, ambos incluidos. Es habitual que la ventanilla se asigne a un destino de representación, pero no es necesario; Además, la ventanilla no tiene que tener el mismo tamaño o la misma posición que el destino de representación.
+La descripción de la ventanilla especifica el tamaño de la ventanilla, el intervalo al que se va a asignar la profundidad (mediante *MinDepth* y *MaxDepth)* y la posición de la parte superior izquierda de la ventanilla. *MinDepth* debe ser menor o igual que *MaxDepth*; El intervalo de *MinDepth* y *MaxDepth* está entre 0,0 y 1,0, ambos inclusive. Es habitual que la ventanilla se asigne a un destino de representación, pero no es necesario; Además, la ventanilla no tiene que tener el mismo tamaño o posición que el destino de representación.
 
-Puede crear una matriz de ventanillas, pero solo se puede aplicar una a una salida primitiva del sombreador de geometría. Solo se puede establecer una ventanilla activa a la vez. La canalización usa una ventanilla predeterminada (y un rectángulo de tijeras, que se describe en la sección siguiente) durante la rasterización. El valor predeterminado es siempre la primera ventanilla (o rectángulo en tijera) de la matriz. Para realizar una selección por primitivo de la ventanilla en el sombreador de geometría, especifique la semántica ViewportArrayIndex en el componente de salida GS adecuado en la declaración de la firma de salida GS.
+Puede crear una matriz de ventanillas, pero solo se puede aplicar una a una salida primitiva del sombreador de geometría. Solo se puede establecer una ventanilla activa a la vez. La canalización usa una ventanilla predeterminada (y un rectángulo de rectángulo de rectángulos, que se describe en la sección siguiente) durante la rasterización. El valor predeterminado es siempre la primera ventanilla (o rectángulo de rectángulo) de la matriz. Para realizar una selección por primitiva de la ventanilla en el sombreador de geometría, especifique la semántica ViewportArrayIndex en el componente de salida GS adecuado en la declaración de firma de salida de GS.
 
-El número máximo de ventanillas (y rectángulos en tijeras) que se pueden enlazar a la fase de rasterizador en cualquier momento es 16 (especificado por la **\_ ventanilla \_ de D3D11 y el \_ recuento de objetos de SCISSORRECT \_ \_ \_ por \_ canalización**).
+El número máximo de ventanillas (y rectángulos de rectángulos de rectángulos) que se pueden enlazar a la fase de rasterizador en cualquier momento es 16 (especificado por **D3D11 \_ \_ VIEWPORT Y \_ VIEWPORTRECT \_ OBJECT COUNT PER \_ \_ \_ PIPELINE**).
 
-## <a name="set-the-scissor-rectangle"></a>Establecer el rectángulo en tijera
+## <a name="set-the-scissor-rectangle"></a>Establecer el rectángulo de rectángulo de rectángulos de rectángulos
 
-Un rectángulo en tijeras le ofrece otra oportunidad de reducir el número de píxeles que se enviarán a la fase de fusión de salida. Los píxeles que se encuentran fuera del rectángulo de tijera se descartan. El tamaño del rectángulo en tijera se especifica en enteros. Solo se puede aplicar un rectángulo en tijera (basado en *ViewportArrayIndex* en la [semántica del valor del sistema](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-semantics)) a un triángulo durante la rasterización.
+Un rectángulo de rectángulo de rectángulos le ofrece otra oportunidad para reducir el número de píxeles que se enviarán a la fase de fusión de salida. Se descartan los píxeles situados fuera del rectángulo de rectángulos. El tamaño del rectángulo de rectángulo de rectángulo se especifica en enteros. Durante la rasterización, solo se puede aplicar un rectángulo de rectángulos (basado en *ViewportArrayIndex* en la [semántica](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-semantics)de valores del sistema) a un triángulo.
 
-Para habilitar el rectángulo en tijeras, use el miembro *ScissorEnable* (en [**D3D11 \_ rasterizador \_ DESC1**](/windows/desktop/api/D3D11_1/ns-d3d11_1-cd3d11_rasterizer_desc1)). El rectángulo entre tijeras predeterminado es un rectángulo vacío; es decir, todos los valores Rect son 0. En otras palabras, si no configura el rectángulo en tijera y los tijeras están habilitados, no enviará ningún píxel a la fase de fusión de salida. La configuración más común consiste en inicializar el rectángulo de tijeras con el tamaño de la ventanilla.
+Para habilitar el rectángulo de rectángulo de rectángulo, use el miembro [**\_ \_ DesC1 de Rasterizer de D3D11 ( en D3D11 RASTERIZER ).**](/windows/desktop/api/D3D11_1/ns-d3d11_1-cd3d11_rasterizer_desc1)  El rectángulo de rectángulo de rectángulo predeterminado es un rectángulo vacío; Es decir, todos los valores de rect son 0. En otras palabras, si no configura el rectángulo de rectángulo de rectángulos y el relleno está habilitado, no enviará ningún píxel a la fase de fusión de salida. La configuración más común es inicializar el rectángulo de relleno al tamaño de la ventanilla.
 
-Para establecer una matriz de rectángulos con tijeras en el dispositivo, llame a [**ID3D11DeviceContext:: RSSetScissorRects**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetscissorrects) con [**D3D11 \_ Rect**](d3d11-rect.md).
+Para establecer una matriz de rectángulos en el dispositivo, llame a [**ID3D11DeviceContext::RSSetScissorRects**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetscissorrects) con [**D3D11 \_ RECT**](d3d11-rect.md).
 
 
 ```
@@ -75,13 +75,13 @@ D3D11_RECT rects[1];
 
 Este método toma dos parámetros: (1) el número de rectángulos de la matriz y (2) una matriz de rectángulos.
 
-La canalización utiliza un índice de rectángulo de tijeras predeterminado durante la rasterización (el valor predeterminado es un rectángulo de tamaño cero con el recorte deshabilitado). Para invalidar esto, especifique la \_ semántica de VP ViewportArrayIndex para un componente de salida GS en la declaración de la firma de salida GS. Esto hará que la fase GS marque este componente de salida GS como un componente generado por el sistema con esta semántica. La fase de rasterizador reconoce esta semántica y usará el parámetro al que se adjunta como índice de rectángulo en tijera para tener acceso a la matriz de rectángulos con tijeras. No se olvide de indicar a la fase de rasterizador que use el rectángulo de tijeras que define al habilitar el valor de *ScissorEnable* en la descripción de rasterizador antes de crear el objeto de rasterizador.
+La canalización usa un índice de rectángulo predeterminado durante la rasterización (el valor predeterminado es un rectángulo de tamaño cero con recorte deshabilitado). Para invalidar esto, especifique la semántica SV \_ ViewportArrayIndex para un componente de salida GS en la declaración de firma de salida de GS. Esto hará que la fase GS marque este componente de salida de GS como un componente generado por el sistema con esta semántica. La fase del rasterizador reconoce esta semántica y usará el parámetro al que está asociado como índice del rectángulo de rectángulos. No olvide decir a la fase del rasterizador que use el rectángulo de relleno que defina habilitando el valor *Desenable en* la descripción del rasterizador antes de crear el objeto rasterizador.
 
-## <a name="set-rasterizer-state"></a>Establecer estado de rasterizador
+## <a name="set-rasterizer-state"></a>Establecer el estado del rasterizador
 
-A partir de Direct3D 10, el estado de rasterizador se encapsula en un objeto de estado de rasterizador. Puede crear hasta 4096 objetos de estado de rasterizador que se pueden establecer en el dispositivo pasando un identificador al objeto de estado.
+A partir de Direct3D 10, el estado del rasterizador se encapsula en un objeto de estado de rasterizador. Puede crear hasta 4096 objetos de estado de rasterizador que, a continuación, se pueden establecer en el dispositivo pasando un identificador al objeto de estado.
 
-Use [**ID3D11Device1:: CreateRasterizerState1**](/windows/desktop/api/D3D11_1/nf-d3d11_1-id3d11device1-createrasterizerstate1) para crear un objeto de estado de rasterizador a partir de una descripción de rasterizador (consulte [**D3D11 \_ rasterizador \_ DESC1**](/windows/desktop/api/D3D11_1/ns-d3d11_1-cd3d11_rasterizer_desc1)).
+Use [**ID3D11Device1::CreateRasterizerState1**](/windows/desktop/api/D3D11_1/nf-d3d11_1-id3d11device1-createrasterizerstate1) para crear un objeto de estado de rasterizador a partir de una descripción de rasterizador (vea [**D3D11 \_ RASTERIZER \_ DESC1**](/windows/desktop/api/D3D11_1/ns-d3d11_1-cd3d11_rasterizer_desc1)).
 
 
 ```
@@ -104,14 +104,14 @@ Use [**ID3D11Device1:: CreateRasterizerState1**](/windows/desktop/api/D3D11_1/nf
 
 
 
-Este conjunto de estado de ejemplo lleva a cabo quizás la configuración de rasterizador más básica:
+Este conjunto de estado de ejemplo realiza quizás la configuración de rasterizador más básica:
 
 -   Modo de relleno sólido
--   Desactivación o eliminación de caras atrás; asuma el orden de bobinado en sentido contrario a las agujas del reloj para primitivos
--   Desactivar la diferencia de profundidad, habilitar el almacenamiento en búfer de profundidad y habilitar el rectángulo en tijera
--   Desactivar el suavizado de contorno de línea y muestreo múltiple
+-   Quitar o quitar caras; asumir el orden de sinuoso en el sentido contrario a las agujas del reloj para las primitivas
+-   Desactivar el sesgo de profundidad, pero habilitar el almacenamiento en búfer de profundidad y habilitar el rectángulo de relleno
+-   Desactivar el suavizado multimuestreo y el suavizado de alias de línea
 
-Además, las operaciones básicas de rasterizador siempre incluyen lo siguiente: recorte (al frustum de vista), División de perspectiva y escala de la ventanilla. Después de crear correctamente el objeto de estado de rasterizador, establézcalo en el dispositivo de la siguiente manera:
+Además, las operaciones básicas de rasterizador incluyen siempre lo siguiente: recorte (al frustum de vista), división de perspectiva y escala de ventanilla. Después de crear correctamente el objeto de estado del rasterizador, estadón en el dispositivo de la siguiente manera:
 
 
 ```
@@ -122,18 +122,18 @@ Además, las operaciones básicas de rasterizador siempre incluyen lo siguiente:
 
 ### <a name="multisampling"></a>Muestreo múltiple
 
-Muestreo múltiple muestrea algunos o todos los componentes de una imagen con una resolución superior (seguida de una disminución de nivel de la resolución original) para reducir el formato de alias más visible causado por los bordes de polígonos de dibujo. Aunque el muestreo múltiple requiere muestras de subpíxeles, las GPU modernas implementan el multimuestreo para que un sombreador de píxeles se ejecute una vez por píxel. Esto proporciona un equilibrio aceptable entre el rendimiento (especialmente en una aplicación enlazada con GPU) y el suavizado de contorno de la imagen final.
+El muestreo múltiple muestra algunos o todos los componentes de una imagen con una resolución más alta (seguido de una reducción a la resolución original) para reducir la forma más visible de alias causada por el dibujo de bordes de polígono. Aunque la multimuestreo requiere ejemplos de subpíxeles, las GPU modernas implementan multimuestreo para que un sombreador de píxeles se ejecute una vez por píxel. Esto proporciona un equilibrio aceptable entre el rendimiento (especialmente en una aplicación enlazada a GPU) y el suavizado de alias de la imagen final.
 
-Para usar el muestreo múltiple, establezca el campo habilitar en la descripción de la [**rasterización**](/windows/desktop/api/D3D11_1/ns-d3d11_1-cd3d11_rasterizer_desc1), cree un destino de representación de muestreo múltiple y lea el destino de representación con un sombreador para resolver los ejemplos en un color de un solo píxel o llame a [**ID3D11DeviceContext:: ResolveSubresource**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-resolvesubresource) para resolver los ejemplos mediante la tarjeta de vídeo. El escenario más común es dibujar en uno o varios destinos de representación multimuestreados.
+Para usar multimuestreo, establezca el campo enable en la descripción de [**rasterización**](/windows/desktop/api/D3D11_1/ns-d3d11_1-cd3d11_rasterizer_desc1), cree un destino de representación multimuestreo y lea el destino de representación con un sombreador para resolver los ejemplos en un color de un solo píxel o llame a [**ID3D11DeviceContext::ResolveSubresource**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-resolvesubresource) para resolver los ejemplos mediante la tarjeta de vídeo. El escenario más común es dibujar en uno o varios destinos de representación multimuestreo.
 
-El muestreo múltiple es independiente de si se usa o no una máscara de ejemplo, se habilita la opción [de alfa a cobertura](d3d10-graphics-programming-guide-blend-state.md) o las operaciones de estarcido (que siempre se realizan por muestra).
+La multimuestreo es independiente de si se usa o no una máscara de [muestra,](d3d10-graphics-programming-guide-blend-state.md) de si está habilitada la cobertura alfa o de las operaciones de galería de símbolos (que siempre se realizan por muestra).
 
-Las pruebas de profundidad se ven afectadas por el muestreo múltiple:
+Las pruebas de profundidad se ven afectadas por la multimuestreo:
 
--   Cuando se habilita el muestreo múltiple, la profundidad se interpola por muestra y la prueba de profundidad/estarcido se realiza por ejemplo. el color de salida del sombreador de píxeles se duplica para todas las muestras de paso. Si el sombreador de píxeles genera profundidad, el valor de profundidad se duplica para todos los ejemplos (aunque este escenario pierde la ventaja de la multimuestreo).
--   Cuando el muestreo múltiple está deshabilitado, las pruebas de profundidad y estarcido se siguen realizando por ejemplo, pero la profundidad no se interpola por muestra.
+-   Cuando se habilita la multimuestreo, la profundidad se interpola por muestra y la prueba de profundidad o galería de símbolos se realiza por muestra. El color de salida del sombreador de píxeles está duplicado para todas las muestras que pasan. Si el sombreador de píxeles genera profundidad, el valor de profundidad se duplica para todas las muestras (aunque este escenario pierde la ventaja de la multimuestreo).
+-   Cuando se deshabilita la multimuestreo, las pruebas de profundidad o galería de símbolos se siguen haciendo por muestra, pero la profundidad no se interpola por muestra.
 
-No hay restricciones para mezclar la representación multimuestreada y no multimuestreada en un único destino de representación. Si habilita el muestreo múltiple y dibuja en un destino de representación no multimuestreado, se produce el mismo resultado que si no se hubiera habilitado el muestreo múltiple; el muestreo se realiza con una sola muestra por píxel.
+No hay ninguna restricción para mezclar la representación multimuestreo y no multimuestreo dentro de un único destino de representación. Si habilita la multimuestreo y dibuja en un destino de representación no multimuestreo, se produce el mismo resultado que si no se habilitara la multimuestreo. el muestreo se realiza con una sola muestra por píxel.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -142,6 +142,6 @@ No hay restricciones para mezclar la representación multimuestreada y no multim
 [Etapa del rasterizador](d3d10-graphics-programming-guide-rasterizer-stage.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

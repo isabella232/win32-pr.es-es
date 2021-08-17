@@ -13,7 +13,7 @@ ms.locfileid: "118390835"
 ---
 # <a name="mui-system-settings-application-sample"></a>MUI: Ejemplo de aplicación Configuración sistema
 
-La aplicación de ejemplo que se describe en este tema es una sencilla aplicación Hello IAM que admite la configuración del sistema para sus lenguajes de interfaz de usuario.
+La aplicación de ejemplo que se describe en este tema es una sencilla aplicación Hello MUI que admite la configuración del sistema para sus lenguajes de interfaz de usuario.
 
 
 ```C++

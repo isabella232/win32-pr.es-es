@@ -35,7 +35,7 @@ Declara un registro de salida que contiene un [parámetro de valor del](dx-graph
 |------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="oN"></span><span id="on"></span><span id="ON"></span>o *N*<br/>                                                     | \[en \] Un registro de datos de salida; *N* es un entero que denota el número de registro.<br/>                                                      |
 | <span id="_.mask_"></span><span id="_.MASK_"></span>*\[.mask\]*<br/>                                                         | \[en \] Opcional. Máscara de componente (.xyzw) que especifica cuál de los componentes de registro se va a usar.<br/>                                        |
-| <span id="systemValueName"></span><span id="systemvaluename"></span><span id="SYSTEMVALUENAME"></span>*systemValueName*<br/> | \[en El nombre del valor del sistema que es una cadena (vea semántica de valores \] [del sistema](dx-graphics-hlsl-semantics.md)) sin el prefijo \_ "SV".<br/> |
+| <span id="systemValueName"></span><span id="systemvaluename"></span><span id="SYSTEMVALUENAME"></span>*systemValueName*<br/> | \[en El nombre del valor del sistema, que es una cadena (vea semántica del valor del \] [sistema](dx-graphics-hlsl-semantics.md)) sin el prefijo \_ "SV".<br/> |
 
 
 
@@ -53,7 +53,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Esta instrucción se incluye para ayudar a depurar un sombreador en ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
+Esta instrucción se incluye para ayudar a depurar un sombreador en el ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
 
 ## <a name="example"></a>Ejemplo
 
@@ -74,9 +74,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
 | [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
@@ -89,7 +89,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: clase ColumnStream'
-title: Clase ColumnStream
+description: 'Más información sobre: Clase ColumnStream'
+title: ColumnStream (clase)
 TOCTitle: ColumnStream class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.ColumnStream
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnstream(v=EXCHG.10)
@@ -24,28 +24,28 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: eea249347acd18ec71f03fcdc82b8a2baa1da9ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec768d48a03216a7cad72b5125c9444437f78a7738c2986235174fb5eac24623
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118083878"
 ---
-# <a name="columnstream-class"></a>Clase ColumnStream
+# <a name="columnstream-class"></a>ColumnStream (clase)
 
-Esta clase proporciona una interfaz de streaming a una columna de valor largo (es decir, una columna de tipo [LongBinary](./jet-coltyp-enumeration.md) o [LongText](./jet-coltyp-enumeration.md)).
+Esta clase proporciona una interfaz de streaming a una columna de valor largo (es decir, una columna de tipo [LongBinary](./jet-coltyp-enumeration.md) [o LongText).](./jet-coltyp-enumeration.md)
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   [System.MarshalByRefObject](/dotnet/api/system.marshalbyrefobject)  
-    [System. IO. Stream](/dotnet/api/system.io.stream)  
-      Microsoft. ISAM. esent. Interop. ColumnStream  
+    [System.IO.Stream](/dotnet/api/system.io.stream)  
+      Microsoft.Isam.Esent.Interop.ColumnStream  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -67,6 +67,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de ColumnStream](./columnstream-members.md)
+[Miembros ColumnStream](./columnstream-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

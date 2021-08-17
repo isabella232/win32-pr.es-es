@@ -4,9 +4,9 @@ description: Estructuras DrawDib
 ms.assetid: dde56eae-2f20-4c76-9d3d-8f8fe84217a9
 keywords:
 - Windows multimedia, estructuras DrawDib
-- multimedia, estructuras DrawDib
+- estructuras multimedia, DrawDib
 - Vídeo para Windows (VFW), estructuras DrawDib
-- VFW (vídeo para Windows),estructuras DrawDib
+- VFW (vídeo para Windows), estructuras DrawDib
 - DrawDib,structures
 - DrawDib reference,structures
 - referencia de DrawDib,structures
