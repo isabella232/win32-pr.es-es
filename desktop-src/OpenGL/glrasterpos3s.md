@@ -52,7 +52,7 @@ Especifica la coordenada x para la posición de trama actual.
 *y* 
 </dt> <dd>
 
-Especifica la coordenada y para la posición de trama actual.
+Especifica la coordenada Y para la posición de trama actual.
 
 </dd> <dt>
 
@@ -73,13 +73,13 @@ OpenGL mantiene una posición 3D en coordenadas de ventana. Esta posición, deno
 
 La posición de trama actual consta de tres coordenadas de ventana *(x, y, z),* un valor *w* de coordenada de recorte, una distancia de coordenada de ojo, un bit válido y las coordenadas de textura y datos de color asociados. La *coordenada w* es una coordenada de recorte, porque *w* no se proyecta en coordenadas de ventana. La [función glRasterPos4](glrasterpos-functions.md) especifica las coordenadas de objeto *x, y, z* y *w* explícitamente. La función glRasterPos3 especifica las coordenadas de objeto *x, y* y *z* explícitamente, mientras que *w* se establece implícitamente en uno. La función glRasterPos2 usa los valores de argumento para *x* e *y* mientras se establece implícitamente *z* y *w* en cero y uno.
 
-Las coordenadas de objeto presentadas [por glRasterPos](glrasterpos-functions.md) se tratan igual que las de un [comando glVertex.](glvertex-functions.md) Se transforman mediante las matrices de proyección y vista de modelo actuales y se pasan a la fase de recorte. Si el vértice no se encuentra en la selección, se proyecta y escala a coordenadas de ventana, que se convierten en la nueva posición de trama actual, y se establece la marca GL \_ CURRENT \_ RASTER POSITION \_ \_ VALID. Si se hace la selección del vértice, se borra el bit válido y la posición del trama actual y las coordenadas de color y textura asociadas no están definidas.
+Las coordenadas de objeto presentadas [por glRasterPos](glrasterpos-functions.md) se tratan igual que las de un [comando glVertex.](glvertex-functions.md) Se transforman mediante las matrices de proyección y vista de modelo actuales y se pasan a la fase de recorte. Si no se encuentra el vértice, se proyecta y escala a coordenadas de ventana, que se convierten en la nueva posición de trama actual, y se establece la marca GL \_ CURRENT \_ RASTER POSITION \_ \_ VALID. Si se hace la selección del vértice, se borra el bit válido y la posición del trama actual y las coordenadas de color y textura asociadas no están definidas.
 
 La posición de trama actual también incluye algunos datos de color asociados y coordenadas de textura. Si la iluminación está habilitada, GL CURRENT RASTER COLOR, en modo RGBA o GL CURRENT RASTER INDEX, en modo de índice de color, se establece en el color generado por el cálculo de iluminación \_ \_ \_ \_ \_ \_ (vea [glLight](gllight-functions.md), [glLightModel](gllightmodel-functions.md)y [**glShadeModel).**](glshademodel.md) Si la iluminación está deshabilitada, se usa el color actual (en modo RGBA, la variable de estado GL CURRENT COLOR) o el índice de color (en modo de índice de color, variable de estado GL CURRENT INDEX) para actualizar el color de \_ \_ trama \_ \_ actual.
 
 Del mismo modo, GL CURRENT RASTER TEXTURE COORDS se actualiza como una función de GL CURRENT TEXTURE COORDS, en función de la matriz de textura y las funciones de generación de \_ \_ \_ \_ \_ \_ \_ texturas [(vea glTexGen](gltexgen-functions.md)). Por último, la distancia desde el origen del sistema de coordenadas de los ojos hasta el vértice, tal como se transforma solo mediante la matriz modelview, reemplaza a GL \_ CURRENT \_ RASTER \_ DISTANCE.
 
-Inicialmente, la posición del trama actual es (0,0,0,1), la distancia de trama actual es 0, se establece el bit válido, el color RGBA asociado es (1,1,1,1), el índice de color asociado es 1 y las coordenadas de textura asociadas son (0, 0, 0, 1). En el modo RGBA, GL CURRENT RASTER INDEX siempre es 1; en el modo de índice de color, el color RGBA de trama actual siempre \_ \_ mantiene su valor \_ inicial.
+Inicialmente, la posición de trama actual es (0,0,0,1), la distancia de trama actual es 0, se establece el bit válido, el color RGBA asociado es (1,1,1,1), el índice de color asociado es 1 y las coordenadas de textura asociadas son (0, 0, 0, 1). En el modo RGBA, GL CURRENT RASTER INDEX siempre es 1; en el modo de índice de color, el color RGBA de trama actual siempre \_ \_ mantiene su valor \_ inicial.
 
 > [!Note]  
 > [GlRasterPos](glrasterpos-functions.md) y [**glBitmap**](glbitmap.md)modifican la posición del trama.
@@ -107,7 +107,7 @@ Las siguientes funciones recuperan información relacionada [con glRasterPos](gl
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -117,7 +117,7 @@ Las siguientes funciones recuperan información relacionada [con glRasterPos](gl
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

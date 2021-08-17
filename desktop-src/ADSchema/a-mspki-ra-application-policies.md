@@ -27,7 +27,7 @@ El OID de directiva de aplicación de RA necesario en las firmas de contador de 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|--------------------------------------------------------------------------------------------|
 | CN                | ms-PKI-RA-Application-Policies                                                             |
 | Ldap-Display-Name | msPKI-RA-Application-Policies                                                              |
@@ -52,7 +52,7 @@ El OID de directiva de aplicación de RA necesario en las firmas de contador de 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
@@ -73,7 +73,7 @@ El OID de directiva de aplicación de RA necesario en las firmas de contador de 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
@@ -94,7 +94,7 @@ El OID de directiva de aplicación de RA necesario en las firmas de contador de 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
@@ -115,7 +115,7 @@ El OID de directiva de aplicación de RA necesario en las firmas de contador de 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
@@ -136,7 +136,7 @@ El OID de directiva de aplicación de RA necesario en las firmas de contador de 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |

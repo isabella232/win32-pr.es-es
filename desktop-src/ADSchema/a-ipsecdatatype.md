@@ -27,12 +27,12 @@ El **atributo Ipsec-Data-Type** es solo para uso interno.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | Ipsec-Data-Type                      |
 | Ldap-Display-Name | ipsecDataType                        |
 | Size              | \-                                   |
-| Privilegio actualizar  | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.622               |
 | System-Id-Guid    | b40ff81e-427a-11d1-a9c2-0000f80367c1 |
@@ -53,7 +53,7 @@ El **atributo Ipsec-Data-Type** es solo para uso interno.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -74,7 +74,7 @@ El **atributo Ipsec-Data-Type** es solo para uso interno.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -95,7 +95,7 @@ El **atributo Ipsec-Data-Type** es solo para uso interno.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -116,7 +116,7 @@ El **atributo Ipsec-Data-Type** es solo para uso interno.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -137,7 +137,7 @@ El **atributo Ipsec-Data-Type** es solo para uso interno.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -158,7 +158,7 @@ El **atributo Ipsec-Data-Type** es solo para uso interno.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |

@@ -19,7 +19,7 @@ ms.locfileid: "117740414"
 
 ## <a name="description"></a>Descripción
 
-El código de control **\_ SIO LOOPBACK \_ FAST \_ PATH** configura un socket TCP para una menor latencia y operaciones más rápidas en la interfaz de bucleback.
+El código de control **\_ SIO LOOPBACK \_ FAST \_ PATH** configura un socket TCP para una menor latencia y operaciones más rápidas en la interfaz de bucles bucles.
 
 **Importante**  **Sio \_ LOOPBACK \_ FAST \_ PATH** está en desuso y no se recomienda su uso en el código.
 
@@ -146,7 +146,7 @@ Para obtener información de error extendida, llame [**a WSAGetLastError**](/win
 | **WSAEINVAL** | Se proporcionó un argumento no válido. Este error se devuelve si el parámetro *dwIoControlCode* no es un comando válido, un parámetro de entrada especificado no es aceptable o el comando no es aplicable al tipo de socket especificado. |
 | **WSAENETDOWN** | Una operación de socket encontró una red inactiva. Este error se devuelve si se ha producido un error en el subsistema de red. |
 | **WSAENOTSOCK** | Se intentó realizar una operación en algo que no es un socket. Este error se devuelve si el descriptor *s* no es un socket. |
-| **WSAEOPNOTSUPP** | La operación intentada no se admite para el tipo de objeto al que se hace referencia. Este error se devuelve si no se admite el comando IOCTL especificado. Este error también se devuelve si el proveedor de transporte no FAST **\_ \_ \_ SIO LOOPBACK FAST PATH** IOCTL. |
+| **WSAEOPNOTSUPP** | La operación intentada no se admite para el tipo de objeto al que se hace referencia. Este error se devuelve si no se admite el comando IOCTL especificado. Este error también se devuelve si el proveedor de transporte no admite FAST **\_ \_ \_ SIO LOOPBACK FAST PATH** IOCTL. |
 
 ## <a name="remarks"></a>Comentarios
 
@@ -157,7 +157,7 @@ Esta IOCTL debe usarse en ambos lados de la sesión de bucle recuperación.
 La ruta de acceso rápida de bucles de retorno TCP se admite mediante la interfaz de bucleback IPv4 o IPv6.
 
 El socket que planea iniciar la solicitud de conexión debe aplicar esta IOCTL antes de realizar la solicitud de conexión.
-Por lo tanto, el socket usado por la función [**connect**](/windows/desktop/api/winsock2/nf-winsock2-connect), [**ConnectEx**](/windows/desktop/api/mswsock/nc-mswsock-lpfn_connectex), [**WSAConnect,**](/windows/desktop/api/winsock2/nf-winsock2-wsaconnect) [**WSAConnectByList**](/windows/desktop/api/winsock2/nf-winsock2-wsaconnectbylist)o [**WSAConnectByName**](/windows/desktop/api/winsock2/nf-winsock2-wsaconnectbynamew) para iniciar la conexión debe aplicar esta IOCTL para usar la ruta de acceso rápida para las operaciones de bucles de retorno.
+Por lo tanto, el socket usado por la función [**connect**](/windows/desktop/api/winsock2/nf-winsock2-connect), [**ConnectEx,**](/windows/desktop/api/mswsock/nc-mswsock-lpfn_connectex) [**WSAConnect,**](/windows/desktop/api/winsock2/nf-winsock2-wsaconnect) [**WSAConnectByList**](/windows/desktop/api/winsock2/nf-winsock2-wsaconnectbylist)o [**WSAConnectByName**](/windows/desktop/api/winsock2/nf-winsock2-wsaconnectbynamew) para iniciar la conexión debe aplicar esta IOCTL para usar la ruta de acceso rápida para las operaciones de bucles de retorno.
 
 El socket que escucha la solicitud de conexión debe aplicar esta IOCTL antes de aceptar la conexión.
 Por lo tanto, el socket utilizado por la función de escucha debe aplicar esta IOCTL para que todos los sockets aceptados usen la ruta de acceso rápida para el bucle de retorno.
@@ -168,23 +168,23 @@ Una vez que una aplicación establece la conexión en una interfaz de bucleback 
 La aplicación **de SIO \_ LOOPBACK \_ FAST \_ PATH** a un socket que se conectará a una ruta de acceso sin bucles no tendrá ningún efecto.
 
 Esta optimización del bucleback TCP da como resultado paquetes que fluyen a través de la capa de transporte (TL) en lugar del bucleback tradicional a través de la capa de red.
-Esta optimización mejora la latencia de los paquetes de bucleback.
-Una vez que una aplicación opta por una configuración de nivel de conexión para usar la ruta de acceso rápida de bucles de retorno, todos los paquetes seguirán la ruta de acceso del bucle de retorno.
-En el caso de las comunicaciones de bucles bucles, no se espera la congestión ni la caída de paquetes.
-La noción de control de congestión y entrega confiable en TCP no será necesaria.
+Esta optimización mejora la latencia de los paquetes de bucles de retorno.
+Una vez que una aplicación opte por una configuración de nivel de conexión para usar la ruta de acceso rápida de bucle atrás, todos los paquetes seguirán la ruta de acceso del bucle de retorno.
+Para las comunicaciones de bucle atrás, no se espera congestión ni pérdida de paquetes.
+La noción de control de congestión y entrega confiable en TCP será innecesaria.
 Sin embargo, esto no es cierto para el control de flujo.
-Sin control de flujo, el remitente puede sobrecargar el búfer de recepción, lo que conduce a un comportamiento erróneo del bucle de retorno TCP.
+Sin el control de flujo, el remitente puede sobrecargar el búfer de recepción, lo que conduce a un comportamiento erróneo del bucleback TCP.
 El control de flujo en la ruta de acceso de bucle recuperación optimizada para TCP se mantiene colocando las solicitudes de envío en una cola.
 Cuando el búfer de recepción está lleno, la pila TCP/IP garantiza que los envíos no se completan hasta que se mantiene el control de flujo de mantenimiento de la cola.
 
-Las conexiones de bucles de retorno rápido de ruta de acceso TCP en presencia de una llamada a Windows Filtering Platform (WFP) para los datos de conexión deben tomar la ruta de acceso lenta no optimizada para el bucle de retorno.
+Las conexiones de bucle atrás de ruta de acceso rápida TCP en presencia de una llamada Windows Filtering Platform (WFP) para los datos de conexión deben tomar la ruta de acceso lenta no optimizada para bucles de recuperación.
 Por lo tanto, los filtros WFP impedirán que se utilice esta nueva ruta de acceso rápida de bucles de retorno.
-Cuando se habilita un filtro WFP, el sistema usará la ruta de acceso lenta incluso si se estableció el BUCLE DE **SIO \_ FAST \_ \_ PATH** IOCTL.
+Cuando se habilita un filtro WFP, el sistema usará la ruta de acceso lenta incluso si se estableció el BUCLE DE BUCLE FAST **\_ \_ \_ RUTA** DE ACCESO DE SIO.
 Esto garantiza que las aplicaciones en modo de usuario tengan la funcionalidad de seguridad de WFP completa.
 
 De forma predeterminada, **SIO \_ LOOPBACK \_ FAST \_ PATH** está deshabilitado.
 
-Solo se admite un subconjunto de las opciones de socket TCP/IP cuando se usa **SIO \_ LOOPBACK \_ FAST \_ PATH** IOCTL para habilitar la ruta de acceso rápida de bucleback en un socket.
+Solo se admite un subconjunto de las opciones de socket TCP/IP cuando se usa **SIO \_ LOOPBACK \_ FAST \_ PATH** IOCTL para habilitar la ruta de acceso rápida de bucle de retroceso en un socket.
 La lista de opciones admitidas incluye lo siguiente:
 
 * **TTL de IP \_**
@@ -192,24 +192,24 @@ La lista de opciones admitidas incluye lo siguiente:
 * **SALTOS \_ DE UNIDIFUSIÓN IPV6 \_**
 * **IPV6 \_ UNICAST \_ IF**
 * **IPV6 \_ V6ONLY**
-* **ACEPTACIÓN \_ \_ CONDICIONAL**
+* **ACEPTACIÓN \_ \_ CONDICIONAL DE SO**
 * **SO \_ EXCLUSIVEADDRUSE**
-* **ESCALABILIDAD \_ DE \_ PUERTOS SO**
+* **ESCALABILIDAD \_ DE \_ PUERTOS**
 * **SO \_ RCVBUF**
-* **ASÍ QUE \_ REUSEADDR**
+* **POR LO \_ TANTO, REUSEADDR**
 * **TCP \_ BSDURGENT**
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [**IPPROTO_IP sockets**](/windows/desktop/winsock/ipproto-ip-socket-options)
 
-[**IPPROTO_IPV6 de sockets**](/windows/desktop/winsock/ipproto-ipv6-socket-options)
+[**IPPROTO_IPV6 sockets**](/windows/desktop/winsock/ipproto-ipv6-socket-options)
 
-[**IPPROTO_TCP de sockets**](/windows/desktop/winsock/ipproto-tcp-socket-options)
+[**IPPROTO_TCP sockets**](/windows/desktop/winsock/ipproto-tcp-socket-options)
 
 [**Zócalo**](/windows/desktop/api/winsock2/nf-winsock2-socket)
 
-[**SOL_SOCKET de sockets**](/windows/desktop/winsock/sol-socket-socket-options)
+[**SOL_SOCKET sockets**](/windows/desktop/winsock/sol-socket-socket-options)
 
 [**WSAGetLastError**](/windows/desktop/api/winsock2/nf-winsock2-wsagetlasterror)
 

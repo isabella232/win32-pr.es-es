@@ -1,11 +1,11 @@
 ---
-title: IWMPQuery beginNextGroup, método
-description: El método beginNextGroup comienza un nuevo grupo de condiciones. | IWMPQuery beginNextGroup, método
+title: Método beginNextGroup de IWMPQuery
+description: El método beginNextGroup comienza un nuevo grupo de condiciones. | Método beginNextGroup de IWMPQuery
 ms.assetid: 15d20c9f-2ce7-4a86-9054-b7317ebe1a0a
 keywords:
-- método beginNextGroup de Windows Media Player
-- método beginNextGroup Windows Media Player, interfaz IWMPQuery
-- Interfaz IWMPQuery Windows Media Player, método beginNextGroup
+- Método beginNextGroup Reproductor de Windows Media
+- Método beginNextGroup Reproductor de Windows Media , interfaz IWMPQuery
+- Interfaz IWMPQuery Reproductor de Windows Media método , beginNextGroup
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 866727f821fb40b6bf09f3ee2cf0231c4ffc3005
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 56a5e0622140aacd2668b1ea145e6a36f7fb2b0ecd243adacc313301d5fb7220
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117745730"
 ---
-# <a name="iwmpquerybeginnextgroup-method"></a>IWMPQuery:: beginNextGroup (método)
+# <a name="iwmpquerybeginnextgroup-method"></a>IWMPQuery::beginNextGroup (método)
 
-El método **beginNextGroup** comienza un nuevo grupo de condiciones.
+El **método beginNextGroup** comienza un nuevo grupo de condiciones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,13 +53,13 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El inicio de un nuevo grupo de condiciones implica que se ha completado el grupo de condiciones actual. El nuevo grupo de condiciones siempre se concatena al grupo de condiciones anterior mediante la lógica **o** .
+El inicio de un nuevo grupo de condiciones implica que ha completado el grupo de condiciones actual. El nuevo grupo de condiciones siempre se concatena con el grupo de condiciones anterior mediante la **lógica OR.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea una consulta compleja mediante la combinación de dos grupos, cada uno de los cuales contiene una condición. Los resultados de la consulta se extraen como una colección de cadenas y se muestran en un cuadro de lista. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se crea una consulta compleja mediante la combinación de dos grupos que contienen una condición. Los resultados de la consulta se extraen como una colección de cadenas y se muestran en un cuadro de lista. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -129,7 +129,7 @@ Next i
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 11.<br/>                                                                                    |
+| Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -139,13 +139,13 @@ Next i
 
 <dl> <dt>
 
-[**IWMPMediaCollection2. createQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-createquery--vb-and-c.md)
+[**IWMPMediaCollection2.createQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-createquery--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMediaCollection2. getPlaylistByQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getplaylistbyquery--vb-and-c.md)
+[**IWMPMediaCollection2.getPlaylistByQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getplaylistbyquery--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMediaCollection2. getStringCollectionByQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getstringcollectionbyquery--vb-and-c.md)
+[**IWMPMediaCollection2.getStringCollectionByQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getstringcollectionbyquery--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaz IWMPQuery (VB y C#)**](iwmpquery--vb-and-c.md)

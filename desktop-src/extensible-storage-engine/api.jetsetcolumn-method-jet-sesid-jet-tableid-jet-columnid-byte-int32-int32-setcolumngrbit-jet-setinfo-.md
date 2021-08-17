@@ -29,7 +29,7 @@ ms.locfileid: "119977811"
 ---
 # <a name="apijetsetcolumn-method-jet_sesid-jet_tableid-jet_columnid-byte--int32-int32-setcolumngrbit-jet_setinfo"></a>Método Api.JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, Byte, Int32, Int32, SetColumnGrbit, JET_SETINFO)
 
-La función JetSetColumn modifica un valor de columna única en un registro modificado que se va a insertar o actualizar el registro actual. Puede sobrescribir un valor existente, agregar un nuevo valor a una secuencia de valores de una columna con varios valores, quitar un valor de una secuencia de valores de una columna de varios valores o actualizar todo o parte de un valor largo (una columna de tipo [LongText](./jet-coltyp-enumeration.md) o [LongBinary).](./jet-coltyp-enumeration.md)
+La función JetSetColumn modifica un valor de columna único en un registro modificado que se va a insertar o para actualizar el registro actual. Puede sobrescribir un valor existente, agregar un nuevo valor a una secuencia de valores de una columna con varios valores, quitar un valor de una secuencia de valores de una columna de varios valores o actualizar todo o parte de un valor largo (una columna de tipo [LongText](./jet-coltyp-enumeration.md) o [LongBinary](./jet-coltyp-enumeration.md)).
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -82,7 +82,7 @@ public static JET_wrn JetSetColumn(
   - sesid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sesión que realiza la actualización.
+    Sesión que está realizando la actualización.
 
 <!-- end list -->
 
@@ -96,7 +96,7 @@ public static JET_wrn JetSetColumn(
   - columnid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
     
-    Columnid que se establece.
+    Columnid que se establecerá.
 
 <!-- end list -->
 
@@ -117,7 +117,7 @@ public static JET_wrn JetSetColumn(
   - dataOffset  
     Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Desplazamiento en el búfer de datos desde el que se establecen los datos.
+    Desplazamiento en el búfer de datos desde el que se establecerán los datos.
 
 <!-- end list -->
 
@@ -142,11 +142,11 @@ Valor de advertencia.
 
 Se trata de una versión solo interna de la API que toma un búfer de datos y un desplazamiento en el búfer.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

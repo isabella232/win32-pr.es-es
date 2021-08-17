@@ -1,26 +1,26 @@
 ---
-title: Propiedad MaximizeShell de IMsRdpClientAdvancedSettings
+title: IMsRdpClientAdvancedSettings MaximizeShell, propiedad
 description: Especifica si se deben maximizar los programas iniciados con la propiedad StartProgram.
 ms.assetid: d8c194b6-04ef-495f-a763-7e18064230e6
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad MaximizeShell
-- Propiedad MaximizeShell Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad MaximizeShell
-- Propiedad MaximizeShell Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad MaximizeShell
-- Propiedad MaximizeShell Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad MaximizeShell
-- Propiedad MaximizeShell Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad MaximizeShell
-- Propiedad MaximizeShell Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad MaximizeShell
-- Propiedad MaximizeShell Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad MaximizeShell
-- Propiedad MaximizeShell Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad MaximizeShell
-- Propiedad MaximizeShell Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad MaximizeShell
+- Maximizar la propiedad de Servicios de Escritorio remoto
+- Propiedad MaximizeShell Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto propiedad , MaximizeShell
+- Propiedad MaximizeShell Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto propiedad , MaximizeShell
+- Propiedad MaximizeShell Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto propiedad , MaximizeShell
+- Propiedad MaximizeShell Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto propiedad , MaximizeShell
+- Propiedad MaximizeShell Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto propiedad , MaximizeShell
+- Propiedad MaximizeShell Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto propiedad , MaximizeShell
+- Propiedad MaximizeShell Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto propiedad , MaximizeShell
+- Propiedad MaximizeShell Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto propiedad , MaximizeShell
 topic_type:
 - apiref
 api_name:
@@ -54,20 +54,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02c172dd71fcf57f2028f6ba64c93ceaeec2ffb2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a00e73210407b6011c2cfd3dbb0ccc514306915a903710fa4ae90d7ebe2b3f1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059003"
 ---
-# <a name="imsrdpclientadvancedsettingsmaximizeshell-property"></a>IMsRdpClientAdvancedSettings:: MaximizeShell (propiedad)
+# <a name="imsrdpclientadvancedsettingsmaximizeshell-property"></a>IMsRdpClientAdvancedSettings::MaximizeShell, propiedad
 
-Especifica si se deben maximizar los programas iniciados con la propiedad [**StartProgram**](imstscsecuredsettings-startprogram.md) .
+Especifica si se deben maximizar los programas iniciados con la propiedad [**StartProgram.**](imstscsecuredsettings-startprogram.md)
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -88,11 +88,11 @@ Establezca este parámetro en 0 para deshabilitar la característica o un valor 
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

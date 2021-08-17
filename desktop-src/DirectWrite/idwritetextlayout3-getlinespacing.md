@@ -1,11 +1,11 @@
 ---
-title: IDWriteTextLayout3 GetLineSpacing, método
-description: Obtiene la información de espaciado de línea.
+title: Método IDWriteTextLayout3 GetLineSpacing
+description: Obtiene información de espaciado de línea.
 ms.assetid: 6b93a3ec-c8ea-2e64-45b5-51565d6de173
 keywords:
 - Método GetLineSpacing de escritura directa
-- Método GetLineSpacing de escritura directa, interfaz IDWriteTextLayout3
-- Interfaz IDWriteTextLayout3 Direct Write, método GetLineSpacing
+- Método GetLineSpacing direct write , interfaz IDWriteTextLayout3
+- Método GetLineSpacing de la interfaz IDWriteTextLayout3
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 303030a5674f39c160804ae2dad5b91050d82f37
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 96444f0e50cbb79074c6fc6d8b041d91c0751616ec5afe7024704709a2240947
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964015"
 ---
-# <a name="idwritetextlayout3getlinespacing-method"></a>IDWriteTextLayout3:: GetLineSpacing (método)
+# <a name="idwritetextlayout3getlinespacing-method"></a>Método IDWriteTextLayout3::GetLineSpacing
 
-Obtiene la información de espaciado de línea.
+Obtiene información de espaciado de línea.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ HRESULT GetLineSpacing(
 
 <dl> <dt>
 
-*lineSpacingOptions* \[ enuncia\]
+*lineSpacingOptions* \[ out\]
 </dt> <dd>
 
-Cómo administrar el espacio entre las líneas.
+Cómo administrar el espacio entre líneas.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,10 +59,10 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                 |
-| Teléfono mínimo compatible<br/>  | Windows Phone 8,1 \[ Windows Phone aplicaciones de Windows Runtime Silverlight 8,1 y\]<br/> |
-| Biblioteca<br/>                  | <dl> <dt>Dwrite. lib</dt> </dl>   |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                 |
+| Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/> |
+| Biblioteca<br/>                  | <dl> <dt>Dwrite.lib</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>Dwrite.dll</dt> </dl>   |
 
 

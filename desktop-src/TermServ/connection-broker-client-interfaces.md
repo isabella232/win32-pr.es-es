@@ -23,14 +23,14 @@ La API Conexión a Escritorio remoto broker define las interfaces siguientes.
 [**IConnectionBrokerClient**](iconnectionbrokerclient.md)
 </dt> <dd>
 
-Proporciona los métodos necesarios para usar el Conexión a Escritorio remoto Broker.
+Proporciona los métodos necesarios para usar el cliente Conexión a Escritorio remoto Broker.
 
 </dd> <dt>
 
 [**IConnectionBrokerRequest**](iconnectionbrokerrequest.md)
 </dt> <dd>
 
-Proporciona los métodos necesarios para obtener los resultados del método [**IConnectionBrokerClient::GetTargetInfo**](iconnectionbrokerclient-gettargetinfo.md) asincrónico.
+Proporciona los métodos necesarios para obtener los resultados del método [**asincrónico IConnectionBrokerClient::GetTargetInfo.**](iconnectionbrokerclient-gettargetinfo.md)
 
 </dd> </dl>
 

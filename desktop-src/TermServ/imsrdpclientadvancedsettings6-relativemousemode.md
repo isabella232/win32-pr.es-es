@@ -1,16 +1,16 @@
 ---
-title: Propiedad RelativeMouseMode de IMsRdpClientAdvancedSettings6
+title: Propiedad IMsRdpClientAdvancedSettings6 RelativeMouseMode
 description: Especifica si el mouse debe usar el modo relativo.
 ms.assetid: 29ae9575-ce60-4999-9601-18413ae739e6
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad RelativeMouseMode
-- Propiedad RelativeMouseMode Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad RelativeMouseMode
-- Propiedad RelativeMouseMode Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad RelativeMouseMode
-- Propiedad RelativeMouseMode Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad RelativeMouseMode
+- Propiedad RelativeMouseMode Servicios de Escritorio remoto
+- Propiedad RelativeMouseMode Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad RelativeMouseMode
+- Propiedad RelativeMouseMode Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad RelativeMouseMode
+- Propiedad RelativeMouseMode Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad RelativeMouseMode
 topic_type:
 - apiref
 api_name:
@@ -29,20 +29,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31c575acefbfef54dc4c858f465f0cdde2ce8bc7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9cfe0551cf02f94f3494fde5ebf49ffb60c2bd4a966db1efb5f0dfeb3bd9e4bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138818"
 ---
-# <a name="imsrdpclientadvancedsettings6relativemousemode-property"></a>IMsRdpClientAdvancedSettings6:: RelativeMouseMode (propiedad)
+# <a name="imsrdpclientadvancedsettings6relativemousemode-property"></a>Propiedad IMsRdpClientAdvancedSettings6::RelativeMouseMode
 
-Especifica si el mouse debe usar el modo relativo. Contiene **Variant \_ true** si el mouse está en modo relativo o **Variant \_ false** si el mouse está en modo absoluto.
+Especifica si el mouse debe usar el modo relativo. Contiene **VARIANT \_ TRUE** si el mouse está en modo relativo o **VARIANT \_ FALSE** si el mouse está en modo absoluto.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -61,9 +61,9 @@ HRESULT get_RelativeMouseMode(
 
 Contiene el nuevo valor de propiedad.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El modo de mouse indica la forma en que el control ActiveX calcula las coordenadas del mouse que envía al servidor de host de sesión de Escritorio remoto (host de sesión de escritorio remoto). Cuando el mouse está en modo relativo, el control ActiveX calcula las coordenadas del mouse con respecto a la última posición del mouse. Cuando el mouse está en modo absoluto, el control ActiveX calcula las coordenadas del mouse relativas al escritorio del servidor host de sesión de escritorio remoto.
+El modo de mouse indica cómo el control ActiveX calcula las coordenadas del mouse que envía al servidor Escritorio remoto session host (host de sesión de Escritorio remoto). Cuando el mouse está en modo relativo, el control ActiveX calcula las coordenadas del mouse con respecto a la última posición del mouse. Cuando el mouse está en modo absoluto, el control ActiveX calcula las coordenadas del mouse con respecto al escritorio del servidor host de sesión de Escritorio remoto.
 
 ## <a name="requirements"></a>Requisitos
 

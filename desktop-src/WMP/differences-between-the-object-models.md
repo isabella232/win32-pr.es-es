@@ -25,14 +25,14 @@ ms.locfileid: "117749746"
 
 Hay dos diferencias principales entre el modelo de objetos Reproductor de Windows Media 6.4 y el modelo de objetos Reproductor de Windows Media 7 o posterior.
 
--   **CLSID** El Reproductor de Windows Media de objetos 7 o posterior es una salida completa del modelo de objetos de la versión 6.4. La especificación del modelo de objetos componentes (COM) requiere que todas las interfaces existentes sigan funcionando en las nuevas versiones de un componente COM. Esto significa que se pueden agregar nuevas interfaces a un componente COM, pero las interfaces existentes nunca se deben modificar, lo que garantiza que el código de cliente anterior siempre funcionará con el componente concreto que se diseñó para usar. Por lo tanto, Reproductor de Windows Media control ActiveX 7 o posterior tiene un nuevo identificador de clase: 6BF52A52-394A-11D3-B153-00C04F79FAA6. Si desea aprovechar la nueva funcionalidad del control para esta versión, debe cambiar el CLSID.
--   **Modelo jerárquico de objetos** Si ha estado usando el control Reproductor de Windows Media 6.4 ActiveX, es posible que haya observado que se tiene acceso a todas las propiedades, métodos y eventos a través del mismo objeto: el objeto **Player.** Por el contrario, Reproductor de Windows Media modelo de objetos 7 o posterior se organiza como una jerarquía de objetos. El **objeto Player** sigue siendo el objeto raíz, pero ahora se accede a las funciones a través de una variedad de objetos secundarios.
+-   **CLSID** El Reproductor de Windows Media de objetos 7 o posterior es una salida completa del modelo de objetos de la versión 6.4. La especificación del modelo de objetos componentes (COM) requiere que todas las interfaces existentes sigan funcionando en nuevas versiones de un componente COM. Esto significa que se pueden agregar nuevas interfaces a un componente COM, pero nunca se deben modificar las interfaces existentes, lo que garantiza que el código de cliente anterior siempre funcionará con el componente concreto que se diseñó para usar. Por lo tanto, el control Reproductor de Windows Media 7 o posterior ActiveX tiene un nuevo identificador de clase: 6BF52A52-394A-11D3-B153-00C04F79FAA6. Si desea aprovechar las ventajas de la nueva funcionalidad del control para esta versión, debe cambiar el CLSID.
+-   **Modelo jerárquico de objetos** Si ha estado usando el control Reproductor de Windows Media 6.4 ActiveX, es posible que haya observado que se tiene acceso a todas las propiedades, métodos y eventos a través del mismo objeto: el objeto **Player.** Por el contrario, Reproductor de Windows Media modelo de objetos 7 o posterior se organiza como una jerarquía de objetos. El **objeto Player** sigue siendo el objeto raíz, pero ahora se accede a las funciones a través de diversos objetos secundarios.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Guía de migración de modelos de objetos**](object-model-migration-guide.md)
+[**Guía de migración del modelo de objetos**](object-model-migration-guide.md)
 </dt> </dl>
 
  

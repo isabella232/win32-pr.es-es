@@ -27,7 +27,7 @@ ms.locfileid: "119444395"
 
 La **clase CFolderItemsFDF** hereda de [**CFolderItems,**](class-cfolderitems-class.md) pero no tiene miembros adicionales.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 FDF significa *From Different Folders (Desde carpetas diferentes).*
 

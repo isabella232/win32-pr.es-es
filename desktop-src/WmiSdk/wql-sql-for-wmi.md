@@ -60,7 +60,7 @@ El lenguaje de consulta de WMI (WQL) es un subconjunto del American National Sta
 </tr>
 <tr class="even">
 <td><a href="wql-operators.md">ISA</a></td>
-<td>Operador que aplica una consulta a las subclases de una clase especificada. Para obtener más información, vea <a href="isa-operator-for-event-queries.md">ISA Operator for Event Queries</a>, <a href="isa-operator-for-data-queries.md">ISA Operator for Data Queries</a>y <a href="isa-operator-for-schema-queries.md">ISA Operator for Schema Queries</a>.<br/></td>
+<td>Operador que aplica una consulta a las subclases de una clase especificada. Para obtener más información, vea <a href="isa-operator-for-event-queries.md">Isa Operator for Event Queries</a>, <a href="isa-operator-for-data-queries.md">ISA Operator for Data Queries</a>y <a href="isa-operator-for-schema-queries.md">ISA Operator for Schema Queries</a>.<br/></td>
 </tr>
 <tr class="odd">
 <td>KEYSONLY<br/></td>
@@ -97,7 +97,7 @@ El lenguaje de consulta de WMI (WQL) es un subconjunto del American National Sta
 </tr>
 <tr class="odd">
 <td><a href="where-clause.md">WHERE</a></td>
-<td>Limita el ámbito de una consulta de datos, eventos o esquemas.<br/></td>
+<td>Limita el ámbito de una consulta de datos, eventos o esquema.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="within-clause.md">WITHIN</a></td>
@@ -129,7 +129,7 @@ El lenguaje de consulta de WMI (WQL) es un subconjunto del American National Sta
 [Formatos de fecha admitidos por WQL](wql-supported-date-formats.md)
 </dt> <dt>
 
-[Formatos de hora compatibles con WQL](wql-supported-time-formats.md)
+[Formatos de tiempo compatibles con WQL](wql-supported-time-formats.md)
 </dt> </dl>
 
  

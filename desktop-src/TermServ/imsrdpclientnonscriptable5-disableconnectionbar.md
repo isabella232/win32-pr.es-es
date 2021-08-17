@@ -1,12 +1,12 @@
 ---
 title: Propiedad DisableConnectionBar de IMsRdpClientNonScriptable5
-description: Especifica si el control ActiveX Escritorio remoto debe deshabilitar la barra de conexión.
+description: Especifica si el control Escritorio remoto ActiveX debe deshabilitar la barra de conexión.
 ms.assetid: 82c57b93-f976-43e6-97f9-3602bf97e466
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad DisableConnectionBar
-- Propiedad DisableConnectionBar Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable5, propiedad DisableConnectionBar
+- Propiedad DisableConnectionBar Servicios de Escritorio remoto
+- Propiedad DisableConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientNonScriptable5
+- Interfaz IMsRdpClientNonScriptable5 Servicios de Escritorio remoto , propiedad DisableConnectionBar
 topic_type:
 - apiref
 api_name:
@@ -18,20 +18,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a129d4781db69a564eecbca3a715c3c5ccf1a9cc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4f74fce650eb82514538eed7066b937c29f8618aba1eab7531f3bdb7e1127da5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138748"
 ---
-# <a name="imsrdpclientnonscriptable5disableconnectionbar-property"></a>IMsRdpClientNonScriptable5::D propiedad isableConnectionBar
+# <a name="imsrdpclientnonscriptable5disableconnectionbar-property"></a>IMsRdpClientNonScriptable5::D isableConnectionBar
 
-Especifica si el control ActiveX Escritorio remoto debe deshabilitar la barra de conexión. Si esta propiedad contiene **Variant \_ true**, la barra de conexión debe estar deshabilitada. Si esta propiedad contiene **Variant \_ false**, la barra de conexión debe estar habilitada.
+Especifica si el control Escritorio remoto ActiveX debe deshabilitar la barra de conexión. Si esta propiedad contiene **VARIANT \_ TRUE**, se debe deshabilitar la barra de conexión. Si esta propiedad contiene **VARIANT \_ FALSE,** la barra de conexión debe estar habilitada.
 
 Esta propiedad es de solo escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -52,11 +52,11 @@ Especifica el nuevo valor de propiedad.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                          |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                          |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                             |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>        |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>        |
-| IID<br/>                      | IID \_ IMsRdpClientNonScriptable5 se define como 4f6996d5-d7b1-412C-b0ff-063718566907<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientNonScriptable5 se define como 4f6996d5-d7b1-412c-b0ff-063718566907<br/> |
 
 
 

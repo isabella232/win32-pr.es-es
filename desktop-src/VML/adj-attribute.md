@@ -1,26 +1,26 @@
 ---
-title: ADJ (atributo)
-description: ADJ (atributo)
+title: Atributo Adj
+description: Atributo Adj
 ms.assetid: f0f31e6c-9dde-4082-88a2-da2d0012b9ae
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff83371cbca29ee687875343976b312466d6a78c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 85869500cc3e9f86e0f48e67f63cfd9e6ed2cff5580caa04994169a9e4b50df8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105676408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137148"
 ---
-# <a name="adj-attribute"></a>ADJ (atributo)
+# <a name="adj-attribute"></a>Atributo Adj
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Especifica un valor de ajuste que se usa para definir los valores de una fórmula. Lectura/escritura **Cadena**.
+Especifica un valor de ajuste utilizado para definir los valores de una fórmula. Lectura/escritura **Cadena**.
 
 **Se aplica a**
 
@@ -28,19 +28,19 @@ Especifica un valor de ajuste que se usa para definir los valores de una fórmul
 
 **Sintaxis de etiquetas**
 
-<v: *elemento* ADJ = " *expresión* " >
+<v: *element* adj=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . ADJ = "*expresión*"
+*element* .adj="*expression*"
 
-*expresión* = de *elemento*. ADJ
+*expresión* = *elemento*.adj
 
 **Comentarios:**
 
-**ADJ** se utiliza para proporcionar puntos ajustables para una fórmula. Si se usa en etiquetas, **ADJ** es una cadena delimitada por comas de hasta 8 valores. Algunos valores se pueden omitir. Por ejemplo, "0, 1, 2, 4, 5, 7" sería una cadena válida pero la cuarta y la séptima parte de los elementos no tendrían valores (los elementos se cuentan a partir de 0).
+**Adj** se usa para proporcionar puntos ajustables para una fórmula. Si se usa en etiquetas, **Adj** es una cadena delimitada por comas de hasta 8 valores. Se pueden omitir algunos valores. Por ejemplo, "0,1,2,,4,5,7" sería una cadena válida, pero el cuarto y el séptimo elemento no tendrían valores (los elementos se cuentan a partir de 0).
 
-En el caso de scripting, **ADJ** usa el tipo de datos [IVgAdjustments](msdn-online-vml-ivgadjustments-data-type.md) .
+Para el scripting, **Adj** usa el tipo de datos [IVgAdjustments.](msdn-online-vml-ivgadjustments-data-type.md)
 
 *Atributo estándar de VML*
 
@@ -50,7 +50,7 @@ En el caso de scripting, **ADJ** usa el tipo de datos [IVgAdjustments](msdn-onli
 
 **Ejemplo**
 
-Se crea un cuadrado simple con ajustes. En primer lugar, se crea la cadena de **ajust** para definir ocho valores de ajuste. A continuación, se hace referencia a cada valor de ajuste en una de las ocho fórmulas, con cada valor de ajuste precedido por un signo de número ( \# ). Por último, una ruta de acceso se define mediante una cadena que hace referencia a las fórmulas, con cada fórmula precedida por el símbolo de arroba (@).
+Se crea un cuadrado simple con ajustes. En primer **lugar, se** crea la cadena Adj para definir ocho valores de ajuste. A continuación, una de las ocho fórmulas hace referencia a cada valor de ajuste, con cada valor de ajuste precisado por un símbolo de signo de número ( \# ). Por último, una ruta de acceso se define mediante una cadena que hace referencia a las fórmulas, con cada fórmula precarizada por el símbolo de signo "at" (@).
 
 
 ```HTML
@@ -75,8 +75,8 @@ Se crea un cuadrado simple con ajustes. En primer lugar, se crea la cadena de **
 
 
 
-[Ejemplo del atributo ADJ](/previous-versions/bb229662(v=vs.85)) (requiere Microsoft Internet Explorer 5 o posterior).
+[Ejemplo de atributo Adj](/previous-versions/bb229662(v=vs.85)) (requiere Microsoft Internet Explorer 5 o superior).
 
- 
+ 
 
- 
+ 

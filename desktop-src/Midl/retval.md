@@ -1,9 +1,9 @@
 ---
 title: retval (atributo)
-description: El atributo/retval \ designa el parámetro que recibe el valor devuelto del miembro.
+description: El atributo \ retval\ designa el parámetro que recibe el valor devuelto del miembro.
 ms.assetid: 3a5f1469-7828-4c38-b58f-195a47b2a66f
 keywords:
-- atributo de retval MIDL
+- atributo retval MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04b53aa2b8ab66737bd4d97710fe942ee73bf0b8
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 72655883b24c83890cf2f5604cb8f7335c6943b32e5e69611dba415689b03e22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103904523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146308"
 ---
 # <a name="retval-attribute"></a>retval (atributo)
 
-El atributo **\[ retval \]** designa el parámetro que recibe el valor devuelto del miembro.
+El **\[ atributo \] retval** designa el parámetro que recibe el valor devuelto del miembro.
 
 ``` syntax
 return-type function-name(
@@ -33,60 +33,60 @@ return-type function-name(
 
 <dl> <dt>
 
-*tipo de valor devuelto* 
+*return-type* 
 </dt> <dd>
 
-El tipo de datos del valor devuelto del procedimiento remoto.
+Tipo de datos del valor devuelto del procedimiento remoto.
 
 </dd> <dt>
 
 *nombre-de-la-función* 
 </dt> <dd>
 
-Nombre que se usa para invocar el procedimiento remoto.
+Nombre utilizado para invocar el procedimiento remoto.
 
 </dd> <dt>
 
-*opcional: atributos* 
+*optional-attributes* 
 </dt> <dd>
 
-Cero o más atributos de MIDL.
+Cero o más atributos MIDL.
 
 </dd> <dt>
 
 *tipo de datos* 
 </dt> <dd>
 
-Tipo de los datos que se pasan a través del parámetro.
+Tipo de los datos pasados a través del parámetro .
 
 </dd> <dt>
 
-*param: nombre* 
+*param-name* 
 </dt> <dd>
 
 Nombre del identificador del parámetro.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede usar el atributo **\[ retval \]** en los parámetros de los miembros de interfaz que describen métodos u obtienen propiedades. (El atributo es obligatorio en el último parámetro de un método que tenga **\[** [**propget**](propget.md) **\]** atributo). El parámetro debe tener el **\[** atributo [**out**](out-idl.md) **\]** y debe ser un tipo de puntero.
+Puede usar el atributo **\[ retval \]** en parámetros de miembros de interfaz que describen métodos u obtienen propiedades. (El atributo es necesario en el último parámetro de un método que tiene el **\[** [**propget**](propget.md) **\]** attribute). El parámetro debe tener el **\[** [**atributo out**](out-idl.md) **\]** y debe ser un tipo de puntero.
 
-No se puede aplicar el **\[** atributo [**opcional**](optional.md) **\]** a un parámetro **\[ \] retval** .
+No se puede aplicar el **\[** [**atributo**](optional.md) **\]** opcional a un parámetro **\[ retval. \]**
 
-El compilador MIDL acepta el siguiente orden de parámetros (de izquierda a derecha):
+El compilador MIDL acepta la siguiente ordenación de parámetros (de izquierda a derecha):
 
-1.  Parámetros obligatorios (parámetros que no tienen los **\[** atributos [**DefaultValue**](defaultvalue.md) **\]** u **\[** [**opcional**](optional.md) **\]** ).
-2.  Parámetros opcionales con o sin el **\[** atributo [**DefaultValue**](defaultvalue.md) **\]** .
-3.  Parámetros con el **\[** atributo [**opcional**](optional.md) **\]** y sin el **\[** atributo [**DefaultValue**](defaultvalue.md) **\]** .
-4.  **\[** parámetro [**LCID**](lcid.md) **\]** , si existe.
-5.  parámetro **\[ retval \]** .
+1.  Parámetros obligatorios (parámetros que no tienen el **\[** [**valor predeterminado**](defaultvalue.md) **\]** u atributos **\[** [**opcionales).**](optional.md) **\]**
+2.  Parámetros opcionales con o sin el **\[** [**atributo defaultvalue.**](defaultvalue.md) **\]**
+3.  Parámetros con el **\[** [**atributo opcional**](optional.md) **\]** y sin el atributo **\[** [**defaultvalue.**](defaultvalue.md) **\]**
+4.  **\[**[**Parámetro lcid,**](lcid.md) **\]** si lo hay.
+5.  **\[ parámetro \] retval.**
 
-Los parámetros con el atributo **\[ retval \]** no se muestran en exploradores orientados al usuario.
+Los parámetros con **\[ el atributo retval \]** no se muestran en los exploradores orientados al usuario.
 
 ### <a name="flags"></a>Marcas
 
-IDLFLAG \_ FRETVAL
+IDLFLAG \_ ESTAVAL
 
 ## <a name="examples"></a>Ejemplos
 
@@ -99,25 +99,25 @@ HRESULT MyOtherMethod([out, retval] VARIANT_BOOL* ReturnVal);
 
 <dl> <dt>
 
-[**DefaultValue**](defaultvalue.md)
+[**Defaultvalue**](defaultvalue.md)
 </dt> <dt>
 
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**LCID**](lcid.md)
+[**Lcid**](lcid.md)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[**opta**](optional.md)
+[**Opcional**](optional.md)
 </dt> <dt>
 
-[**enuncia**](out-idl.md)
+[**out**](out-idl.md)
 </dt> <dt>
 
 [**propget**](propget.md)
@@ -126,6 +126,6 @@ HRESULT MyOtherMethod([out, retval] VARIANT_BOOL* ReturnVal);
 [**TYPEFLAGS**](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

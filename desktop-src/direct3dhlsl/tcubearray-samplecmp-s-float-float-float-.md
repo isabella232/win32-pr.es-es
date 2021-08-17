@@ -1,6 +1,6 @@
 ---
 title: Función SampleCmp::SampleCmp(S,float,float,float) para TextureCubeArray
-description: Muestrea una textura con un valor de comparación para rechazar muestras, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra. | Función SampleCmp::SampleCmp(S,float,float,float) para TextureCubeArray
+description: Muestrea una textura, usando un valor de comparación para rechazar muestras, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra. | Función SampleCmp::SampleCmp(S,float,float,float) para TextureCubeArray
 ms.assetid: A8824A82-A3FD-4FEE-BC10-56843997BBCE
 keywords:
 - Función SampleCmp HLSL
@@ -22,7 +22,7 @@ ms.locfileid: "117723303"
 ---
 # <a name="samplecmpsamplecmpsfloatfloatfloat-function-for-texturecubearray"></a>Función SampleCmp::SampleCmp(S,float,float,float) para TextureCubeArray
 
-Muestrea una textura con un valor de comparación para rechazar muestras, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra.
+Muestrea una textura, usando un valor de comparación para rechazar muestras, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,7 +60,7 @@ Las coordenadas de textura. El tipo de argumento depende del tipo texture-object
 
 
 
-| Texture-Object tipo                    | Tipo de parámetro |
+| Texture-Object type                    | Tipo de parámetro |
 |----------------------------------------|----------------|
 | Texture1D                              | FLOAT          |
 | Texture1DArray, Texture2D              | float2         |
@@ -87,7 +87,7 @@ Valor de punto flotante que se usará como valor de comparación.
 
 Tipo: **float**
 
-Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pasa 2,0f para el valor de fijación, asegúrese de que ninguna muestra individual tiene acceso a un nivel de mip inferior a 2,0f.
+Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pasa 2,0f para el valor de la fijación, asegúrese de que ninguna muestra individual acceda a un nivel de mip inferior a 2,0f.
 
 </dd> </dl>
 
@@ -95,13 +95,13 @@ Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pa
 
 Tipo: **[ **DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-Formato de textura, que es uno de los valores con tipo enumerados [**en DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+El formato de textura, que es uno de los valores con tipo enumerados en [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Métodos sampleCmp](texturecubearray-samplecmp.md)
+[Métodos SampleCmp](texturecubearray-samplecmp.md)
 </dt> <dt>
 
 [**TextureCubeArray**](texturecubearray.md)

@@ -3,32 +3,32 @@ title: Elementos necesarios
 description: Elementos necesarios
 ms.assetid: 6aabbdcc-f834-4908-b25a-1dfce038132a
 keywords:
-- Aspectos móviles de Windows Media Player, elementos
-- aspectos, elementos
+- Reproductor de Windows Media Máscaras móviles, elementos
+- skins,elements
 - archivos de definición de máscara, elementos
 - elementos, archivos de definición de máscara
-- elementos, Windows Media Player Mobile
+- elements,Reproductor de Windows Media Mobile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e1f05ba51b83fad6585d24c3ad19830598b8975
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 18433e20c914cdc4b276857f97aab6a692d1d11c811660c73620b09a5b9a0f55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103776411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746314"
 ---
 # <a name="required-elements"></a>Elementos necesarios
 
-Debe proporcionar los elementos siguientes en el archivo de definición de máscara:
+Debe proporcionar los siguientes elementos en el archivo de definición de máscara:
 
--   **Encabezado.** El encabezado principal del archivo de definición de máscara es obligatorio. Para obtener información sobre la versión de encabezado, vea la tabla en la sección [creación de un archivo de definición de máscara](creating-a-skin-definition-file.md) .
--   **Sección de descripción.** La sección Descripción es necesaria cuando se crean máscaras para Windows Media Player 9 series para Windows Mobile. Debe ser la primera sección del archivo de definición de máscara y debe especificar valores válidos para las dimensiones. Especificar un valor para la orientación es opcional.
--   **Sección de mapas de bits.** La sección de mapas de bits es obligatoria. Además, la sección de mapas de bits debe especificar nombres válidos para los archivos de fondo, deshabilitado, insertado, región y súper imagen.
--   **archivos de imagen.** Debe proporcionar los archivos Background, Disabled, Push, region y Super Image como parte de la máscara. Si va a crear máscaras para Windows Media Player 10 Mobile o posterior, no es necesario incluir archivos de región o de superimagen.
+-   **Rúbrica.** Se requiere el encabezado del archivo de definición de máscara principal. Para obtener información sobre la versión del encabezado, vea la tabla de la [sección Creación de un archivo de definición de máscara.](creating-a-skin-definition-file.md)
+-   **Sección Descripción.** La sección Descripción es necesaria al crear máscaras para Reproductor de Windows Media serie 9 para Windows Mobile. Debe ser la primera sección del archivo de definición de máscara y debe especificar valores válidos para Dimensiones. Especificar un valor para Orientation es opcional.
+-   **Sección Mapas de bits.** Se requiere la sección Mapas de bits. Además, la sección Mapas de bits debe especificar nombres válidos para los archivos background, disabled, pushed, region y super image.
+-   **archivos de imagen.** Debe proporcionar los archivos background, Disabled, Pushed, Region y Super image como parte de la máscara. Si va a crear máscaras para Reproductor de Windows Media 10 Mobile o posterior, no es necesario incluir archivos de imagen de región o super.
 
-Si crea una máscara solo con imágenes definidas, la máscara será visible, pero no proporcionará ninguna funcionalidad significativa al usuario. Si decide crear una máscara sin botones, quizás para evitar que el usuario omita un determinado contenido, tenga en cuenta que todavía es posible asignar funcionalidad a los botones de hardware del dispositivo.
+Si crea una máscara con solo imágenes definidas, la máscara estará visible, pero no ofrecerá ninguna funcionalidad significativa al usuario. Si decide crear una máscara sin botones, quizás para evitar que el usuario omita cierto contenido, tenga en cuenta que todavía es posible asignar funcionalidad a los botones de hardware del dispositivo.
 
-Los archivos Thumb son obligatorios y el trackbars no se puede usar sin Thumbs.
+Los archivos thumb son necesarios y las barras de seguimiento no se pueden usar sin thumbs.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -37,9 +37,9 @@ Los archivos Thumb son obligatorios y el trackbars no se puede usar sin Thumbs.
 [**Archivo de definición de máscara**](skin-definition-file-mobile.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

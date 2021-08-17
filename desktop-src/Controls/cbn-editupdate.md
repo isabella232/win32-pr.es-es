@@ -23,7 +23,7 @@ ms.locfileid: "119314735"
 ---
 # <a name="cbn_editupdate-notification-code"></a>Código de notificación EDITUPDATE de CBN \_
 
-Se envía cuando la parte del control de edición de un cuadro combinado está a punto de mostrar texto modificado. Este código de notificación se envía después de que el control haya dado formato al texto, pero antes de mostrar el texto. La ventana primaria del cuadro combinado recibe este código de notificación a través del [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
+Se envía cuando la parte del control de edición de un cuadro combinado está a punto de mostrar texto modificado. Este código de notificación se envía después de que el control haya dado formato al texto, pero antes de que muestre el texto. La ventana primaria del cuadro combinado recibe este código de notificación a través del [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ CBN_EDITUPDATE
 *wParam* 
 </dt> <dd>
 
-LOWORD [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador de control del cuadro combinado. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
+Loword [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador de control del cuadro combinado. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Identificador del cuadro combinado.
 
 ## <a name="remarks"></a>Comentarios
 
-Si el cuadro combinado tiene el estilo [**\_ DROPDOWNLIST de CBS,**](combo-box-styles.md) no se envía este código de notificación.
+Si el cuadro combinado tiene el estilo [**\_ DROPDOWNLIST de CBS,**](combo-box-styles.md) este código de notificación no se envía.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,7 +69,7 @@ Si el cuadro combinado tiene el estilo [**\_ DROPDOWNLIST de CBS,**](combo-box-s
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

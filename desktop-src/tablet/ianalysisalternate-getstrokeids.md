@@ -43,7 +43,7 @@ HRESULT GetStrokeIds(
 *pulStrokeIdsCount* \[ in, out\]
 </dt> <dd>
 
-Puntero a un **ULONG** que se establece en el número de identificadores de trazo asociados a [**este objeto IAnalysisAlternate.**](ianalysisalternate.md)
+Puntero a un **ULONG** que se establece en el número de identificadores de trazo asociados a [**este elemento IAnalysisAlternate.**](ianalysisalternate.md)
 
 </dd> <dt>
 
@@ -52,7 +52,7 @@ Puntero a un **ULONG** que se establece en el número de identificadores de traz
 
 \[out, size \_ is( \* *pulStrokeIdsCount* \* sizeof(LONG))\]
 
-Matriz de **LONG de** longitud *pulStrokeIdsCount* que se establece en los identificadores de trazo asociados a [**esta clase IAnalysisAlternate.**](ianalysisalternate.md)
+Matriz de **LONG de longitud** *pulStrokeIdsCount* que se establece en los identificadores de trazo asociados a [**este elemento IAnalysisAlternate.**](ianalysisalternate.md)
 
 </dd> </dl>
 
@@ -71,7 +71,7 @@ Para obtener una descripción de los valores [devueltos, vea Clases e interfaces
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
@@ -80,7 +80,7 @@ Para obtener una descripción de los valores [devueltos, vea Clases e interfaces
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

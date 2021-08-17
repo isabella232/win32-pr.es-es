@@ -90,7 +90,7 @@ En el caso de las aplicaciones de escritorio win32, puede usar el Runtime de sim
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

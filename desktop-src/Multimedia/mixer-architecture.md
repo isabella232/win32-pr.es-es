@@ -1,39 +1,39 @@
 ---
-title: Arquitectura de mezclador
-description: Arquitectura de mezclador
+title: Mixer Arquitectura
+description: Mixer Arquitectura
 ms.assetid: 11d650bf-c258-4818-88b7-9fdc71a8d859
 keywords:
-- audio multimedia, arquitectura de mezclador
-- arquitectura de audio y mezclador
-- Mezcladores de audio, arquitectura
-- Mezcladores de audio, líneas de audio
+- audio multimedia, arquitectura mezcladora
+- audio, arquitectura mezcladora
+- mezcladores de audio, arquitectura
+- mezcladores de audio, líneas de audio
 - líneas de audio
-- Mezcladores de audio, controles
-- audio multimedia, controles de mezclador
-- audio, controles de mezclador
+- mezcladores de audio, controles
+- audio multimedia, controles mezcladores
+- audio, controles mezcladores
 - mezcladores, líneas de audio
 - mezcladores, arquitectura
 - mezcladores, controles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 447b0cdc44a33237aa7e0c726a5eb533b3bc7d0e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c3f435396dd2a8d5983f596628711dfd01afe7111e75af1dc2060f5c6c4ef0a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065615"
 ---
-# <a name="mixer-architecture"></a>Arquitectura de mezclador
+# <a name="mixer-architecture"></a>Mixer Arquitectura
 
-El elemento básico de la arquitectura del mezclador es una *línea de audio*. Una línea de audio se compone de uno o varios canales de datos procedentes de un único origen o de un recurso del sistema. Por ejemplo, una línea de audio estéreo tiene dos canales de datos, pero se considera una sola línea de audio porque se origina a partir de un único origen.
+El elemento básico de la arquitectura del mezclador es una *línea de audio*. Una línea de audio consta de uno o varios canales de datos procedentes de un único origen o un recurso del sistema. Por ejemplo, una línea de audio estéreo tiene dos canales de datos, pero se considera una sola línea de audio porque se origina desde un único origen.
 
-La arquitectura del mezclador proporciona servicios de enrutamiento para administrar las líneas de audio de un equipo. Puede usar los servicios de enrutamiento si tiene instalados los dispositivos de hardware y los controladores de software adecuados. La arquitectura del mezclador permite que varias líneas de origen de audio se asignen a una sola línea de audio de destino.
+La arquitectura del mezclador proporciona servicios de enrutamiento para administrar líneas de audio en un equipo. Puede usar los servicios de enrutamiento si tiene instalados los dispositivos de hardware y los controladores de software adecuados. La arquitectura del mezclador permite que varias líneas de origen de audio se asignen a una sola línea de audio de destino.
 
-Cada línea de audio puede tener controles de mezclador asociados. Un control de mezclador puede realizar cualquier número de funciones (como el volumen del control), en función de las características de la línea de audio asociada.
+Cada línea de audio puede tener controles mezcladores asociados. Un control mezclador puede realizar cualquier número de funciones (como el volumen de control), dependiendo de las características de la línea de audio asociada.
 
- 
+ 
 
- 
+ 
 
 
 

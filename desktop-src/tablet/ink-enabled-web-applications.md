@@ -1,33 +1,33 @@
 ---
-description: En el ejemplo de blog de tinta se muestran varias técnicas útiles que se pueden usar en aplicaciones web habilitadas para tinta.
+description: El ejemplo ink Blog muestra varias técnicas útiles que se pueden usar en aplicaciones web habilitadas para lápiz.
 ms.assetid: 4a5a453d-e3c1-40e6-b0eb-99009f0024dd
-title: Ink-Enabled aplicaciones Web
+title: Ink-Enabled Web Applications
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b14e368c1d2e97e35afa6d72a0fe082f304c5fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf8097bd55c34abbcb4469d74642e9dbc9a5f29e3b0b7110a76543fd40f5b1ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118043496"
 ---
-# <a name="ink-enabled-web-applications"></a>Ink-Enabled aplicaciones Web
+# <a name="ink-enabled-web-applications"></a>Ink-Enabled Web Applications
 
-En el ejemplo de [blog de tinta](ink-blog-web-sample.md) se muestran varias técnicas útiles que se pueden usar en aplicaciones web habilitadas para tinta. Entre ellas se incluyen: probar si el equipo cliente puede admitir controles habilitados para tinta, enviar datos de tinta a un servidor y Mostrar datos de tinta en una página web.
+El [ejemplo ink Blog](ink-blog-web-sample.md) muestra varias técnicas útiles que se pueden usar en aplicaciones web habilitadas para lápiz. Estas incluyen: probar si la máquina cliente puede admitir controles habilitados para entrada de lápiz, enviar datos de entrada de lápiz a un servidor y mostrar datos de entrada de lápiz en una página web.
 
-## <a name="testing-ink-enablement"></a>Comprobar la habilitación de la tinta
+## <a name="testing-ink-enablement"></a>Prueba de la habilitación de entrada de lápiz
 
-Puede ser útil para probar si el equipo cliente puede mostrar controles habilitados para tinta. Esto le permite tener thewebpageshow un control si el cliente es un Tablet PC o uno diferente si no lo es. Una manera de probarlo es intentar crear un objeto como [InkOverlay](/previous-versions/ms833057(v=msdn.10)), que solo se puede crear en una máquina que tenga instalado el sistema operativo Windows Vista, Windows XP Tablet PC Edition o el kit de desarrollo de software (SDK) de Windows XP Tablet PC Edition. Si crea el objeto dentro de un bloque try/catch y detecta cualquier excepción que se produzca (a menudo se inicia una excepción [FileNotFoundException](/previous-versions/windows/) para indicar que no se puede encontrar el ensamblado con este control), puede detectar si el equipo cliente puede admitir controles habilitados para tinta. En el ejemplo, este código se puede encontrar en el constructor de la `InkArea` clase.
+Puede ser útil probar si la máquina cliente puede mostrar controles habilitados para entrada de lápiz. Esto le permite tener la páginawebmostrar un control si el cliente es un tablet PC o otro diferente si no lo es. Una manera de probar esto es intentar crear un objeto como [InkOverlay](/previous-versions/ms833057(v=msdn.10)), que solo se puede crear en una máquina que tenga instalado el kit de desarrollo de software (SDK) de Windows Vista, Windows XP Tablet PC Edition o Windows XP Tablet PC Edition Software Development Kit (SDK). Si crea el objeto dentro de un bloque try/catch y detecta las excepciones que se inician (a menudo se produce una [excepción FileNotFoundException](/previous-versions/windows/) para indicar que no se encuentra el ensamblado con este control), puede detectar si el equipo cliente puede admitir controles habilitados para lápiz. En el ejemplo, este código se puede encontrar en el constructor de la `InkArea` clase .
 
-## <a name="submitting-ink-data"></a>Enviar datos de tinta
+## <a name="submitting-ink-data"></a>Envío de datos de entrada de lápiz
 
-Una manera sencilla de enviar datos es tomar los datos del control habilitado para la entrada de lápiz, transferirlos a un formulario oculto y, a continuación, enviar el formulario. La entrada de lápiz se puede serializar utilizando el método [Save](/previous-versions/dotnet/netframework-3.5/ms571335(v=vs.90)) y, a continuación, se convierte en una cadena. En el ejemplo, el formulario oculto se define en AddBlog. aspx y la serialización de la tinta se controla en `InkArea.SerializeInkData` , donde la tinta se serializa en una imagen GIF. (Tenga en cuenta que también se puede serializar de forma similar en otros formatos, como el formato serializado de tinta (ISF)).
+Una manera sencilla de enviar datos es tomar los datos del control habilitado para lápiz, transferirlo a un formulario oculto y, a continuación, enviar el formulario. La entrada de lápiz se puede serializar mediante [el método Save](/previous-versions/dotnet/netframework-3.5/ms571335(v=vs.90)) y, a continuación, se convierte en una cadena. En el ejemplo, el formulario oculto se define en AddBlog.aspx y la serialización de entrada de lápiz se controla en , donde la entrada de lápiz se serializa en una `InkArea.SerializeInkData` imagen GIF. (Tenga en cuenta que también se podría serializar de forma similar en otros formatos, como el formato serializado de entrada de lápiz (ISF).
 
-## <a name="displaying-ink-data"></a>Mostrar datos de tinta
+## <a name="displaying-ink-data"></a>Mostrar datos de entrada de lápiz
 
-En el ejemplo, AddBlog. aspx. CS tiene un método llamado `Page_Load` que recupera los datos que se publican en el servidor y los guarda en archivos. A continuación, genera páginas web en el servidor que contiene etiquetas IMG que hacen referencia a los archivos con las imágenes GIF. Ahora solo tiene que ir a esas páginas para ver las imágenes de la tinta. (Tenga en cuenta que si ha serializado la tinta con un formato diferente, como el formato serializado de entrada de lápiz (ISF), deberá convertir la tinta en una imagen del servidor para mostrarla en clientes que no sean tabletas).
+En el ejemplo, AddBlog.aspx.cs tiene un método denominado que recupera los datos que se publican en el servidor y `Page_Load` los guarda en archivos. A continuación, genera páginas web en el servidor que contienen etiquetas img que hacen referencia a los archivos con las imágenes GIF. Ahora solo tiene que ir a esas páginas para ver imágenes de la entrada de lápiz. (Tenga en cuenta que si hubiera serializado la entrada de lápiz con un formato diferente, como Ink Serialized Format (ISF), tendría que convertir la entrada de lápiz en una imagen en el servidor para mostrarla en clientes que no son tabletas).
 
-Los clientes de Tablet PC pueden volver a cargar la entrada manuscrita en un control habilitado para tinta y permitir que el usuario edite la tinta mediante ISF. Esto es así incluso para la entrada de lápiz guardada con el valor **GIF** de la enumeración [PersistenceFormat](/previous-versions/ms827245(v=msdn.10)) , porque los datos de ISF están contenidos en los metadatos GIF.
+Los clientes de Tablet PC pueden volver a cargar la entrada de lápiz en un control habilitado para la entrada de lápiz y permitir que el usuario edite la entrada de lápiz mediante ISF. Esto es así incluso para la entrada de lápiz guardada con el valor **Gif** de la enumeración [PersistenceFormat,](/previous-versions/ms827245(v=msdn.10)) porque los datos de ISF están contenidos en los metadatos GIF.
 
  
 

@@ -1,7 +1,7 @@
 ---
 description: Recupera el nombre de la entidad de certificación (CA) especificada para una plantilla de certificado determinada.
 ms.assetid: e921710a-7c74-4fda-91e1-fbad45889984
-title: 'ISCrdEnr:: getCAName (método)'
+title: Método ISCrdEnr::getCAName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: b62b0a7e871a29ff0a8edd28eb8cd5e18e97c1a8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6de5d1108ab09c9658af307d6a67c5a94a5dc35514720a221540de263f516c9a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119960294"
 ---
-# <a name="iscrdenrgetcaname-method"></a>ISCrdEnr:: getCAName (método)
+# <a name="iscrdenrgetcaname-method"></a>Método ISCrdEnr::getCAName
 
-El método **getCAName** recupera el nombre de la entidad de [*certificación*](../secgloss/c-gly.md) (CA) especificada para una plantilla de certificado determinada.
+El **método getCAName** recupera el nombre de la entidad de certificación [*(CA)*](../secgloss/c-gly.md) especificada para una plantilla de certificado determinada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,21 +54,21 @@ SCrdEnr.getCAName( _
 
 <dl> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Un valor que determina si el nombre hace referencia al nombre de la entidad de certificación o al nombre del equipo de la CA. Si este valor es PPAC \_ ENROLL \_ CA nombre del \_ equipo \_ (definido como 0x01), el nombre hace referencia al nombre del equipo de la CA; de lo contrario, el nombre hace referencia al nombre de la CA.
+Valor que determina si el nombre hace referencia al nombre de la entidad de certificación o al nombre del equipo de la entidad de certificación. Si este valor es SCARD ENROLL CA MACHINE NAME (definido como 0x01), el nombre hace referencia al nombre del equipo de la entidad de certificación; de lo contrario, el nombre hace referencia al nombre de \_ \_ la entidad de \_ \_ certificación.
 
 </dd> <dt>
 
-*bstrCertTemplateName* \[ de\]
+*bstrCertTemplateName* \[ En\]
 </dt> <dd>
 
 Nombre de la plantilla de certificado.
 
 </dd> <dt>
 
-*pbstrCAName* \[ enuncia\]
+*pbstrCAName* \[ out\]
 </dt> <dd>
 
 Puntero a una cadena que devuelve el nombre de la entidad de certificación.
@@ -79,17 +79,17 @@ Puntero a una cadena que devuelve el nombre de la entidad de certificación.
 
 ### <a name="c"></a>C++
 
-Si el método se ejecuta correctamente, el método devuelve S \_ correcto.
+Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método, devuelve un valor **HRESULT** que indica el error. Para obtener una lista de los códigos de error comunes, vea [Valores HRESULT comunes](common-hresult-values.md).
+Si se produce un error en el método , devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
 ### <a name="vb"></a>VB
 
-Cadena que representa el nombre de la entidad de certificación.
+Cadena que representa el nombre de la CA.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El nombre predeterminado de la entidad de certificación es el nombre de la lista de entidades de certificación disponibles.
+El nombre de ca predeterminado es el nombre de la lista disponible de CA.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,9 +98,9 @@ El nombre predeterminado de la entidad de certificación es el nombre de la list
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Archivo DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr se define como 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID ISCrdEnr se define como \_ 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 

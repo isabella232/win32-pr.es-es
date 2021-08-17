@@ -1,7 +1,7 @@
 ---
-description: Establece las credenciales que se van a usar con un servidor HTTP, ya sea un servidor proxy o un servidor de origen.
+description: Establece las credenciales que se usarán con un servidor HTTP, ya sea un servidor proxy o un servidor de origen.
 ms.assetid: d96c6e76-92b8-4ad7-8ca7-a9acbed523ff
-title: 'IWinHttpRequest:: SetCredentials (método)'
+title: IWinHttpRequest::SetCredentials (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 46b0dfb321763a3b3bfe622e116f2e76c5e59423
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9246352e78472461bfbfe37569d9bd631905fda03c87571ed7ed3dad04edb797
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117744471"
 ---
-# <a name="iwinhttprequestsetcredentials-method"></a>IWinHttpRequest:: SetCredentials (método)
+# <a name="iwinhttprequestsetcredentials-method"></a>IWinHttpRequest::SetCredentials (método)
 
-El método **SetCredentials** establece las credenciales que se van a usar con un servidor http, ya sea un servidor proxy o un servidor de origen.
+El **método SetCredentials** establece las credenciales que se usarán con un servidor HTTP, ya sea un servidor proxy o un servidor de origen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,31 +42,31 @@ HRESULT SetCredentials(
 
 <dl> <dt>
 
-*Nombre de usuario* \[ de\]
+*UserName* \[ En\]
 </dt> <dd>
 
 Especifica el nombre de usuario para la autenticación.
 
 </dd> <dt>
 
-*Contraseña* \[ de de\]
+*Contraseña* \[ En\]
 </dt> <dd>
 
-Especifica la contraseña para la autenticación. Este parámetro se omite si *bstrUserName* es **null** o falta.
+Especifica la contraseña para la autenticación. Este parámetro se omite si *bstrUserName* es **NULL o** falta.
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
-Especifica el momento en que [**IWinHttpRequest**](iwinhttprequest-interface.md) usa las credenciales. Puede ser uno de los valores siguientes.
+Especifica cuándo [**IWinHttpRequest usa**](iwinhttprequest-interface.md) credenciales. Puede ser uno de los siguientes valores.
 
 
 
 | Value                                                                                                               | Significado                                        |
 |---------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>\_SETCREDENTIALS HTTPREQUEST \_ para \_ servidor</dt> </dl> | Las credenciales se pasan a un servidor.<br/> |
-| <dl> <dt>\_SETCREDENTIALS HTTPREQUEST \_ para \_ proxy</dt> </dl>  | Las credenciales se pasan a un proxy.<br/>  |
+| <dl> <dt>HTTPREQUEST \_ SETCREDENTIALS \_ FOR \_ SERVER</dt> </dl> | Las credenciales se pasan a un servidor.<br/> |
+| <dl> <dt>HTTPREQUEST \_ SETCREDENTIALS \_ FOR \_ PROXY</dt> </dl>  | Las credenciales se pasan a un proxy.<br/>  |
 
 
 
@@ -76,22 +76,22 @@ Especifica el momento en que [**IWinHttpRequest**](iwinhttprequest-interface.md)
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es correcto si se ejecuta correctamente o un valor de error en caso contrario. **\_**
+El valor devuelto es **S \_ OK on** success o un valor de error de lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método devuelve un valor de error si una llamada a [**Open**](iwinhttprequest-open.md) no se ha completado correctamente. Se supone que se debe producir cierta medida de interacción con un servidor proxy o un servidor de origen antes de que los usuarios puedan establecer credenciales para la sesión. Además, hasta que los usuarios sepan qué esquemas de autenticación son compatibles, no pueden dar formato a las credenciales.
+Este método devuelve un valor de error si una llamada a [**Open**](iwinhttprequest-open.md) no se ha completado correctamente. Se supone que debe producirse alguna medida de interacción con un servidor proxy o un servidor de origen antes de que los usuarios puedan establecer credenciales para la sesión. Además, hasta que los usuarios no sepan qué esquemas de autenticación se admiten, no pueden dar formato a las credenciales.
 
 > [!Note]  
-> En Windows XP y Windows 2000, consulte la sección [requisitos de tiempo de ejecución](winhttp-start-page.md) de la página de inicio de winhttp.
+> Para Windows XP y Windows 2000, consulte la sección [Requisitos](winhttp-start-page.md) en tiempo de ejecución de la página de inicio de WinHTTP.
 
  
 
-Para autenticarse tanto en el servidor como en el proxy, la aplicación debe llamar dos veces a **SetCredentials** ; en primer lugar, con el parámetro *Flags* establecido en **HttpRequest \_ SETCREDENTIALS \_ para \_ Server** y en Second, con el parámetro *Flags* establecido en **HttpRequest \_ SETCREDENTIALS \_ for \_ proxy**.
+Para autenticarse con el servidor y el proxy, la aplicación debe llamar a **SetCredentials dos** veces; primero con el *parámetro Flags* establecido en **HTTPREQUEST \_ SETCREDENTIALS \_ FOR \_ SERVER** y, en segundo lugar, con el parámetro *Flags* establecido en **HTTPREQUEST \_ SETCREDENTIALS \_ FOR \_ PROXY.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo abrir una conexión HTTP, establecer credenciales para el servidor, enviar una solicitud HTTP y leer el texto de la respuesta. Este ejemplo debe ejecutarse desde un símbolo del sistema.
+En el ejemplo siguiente se muestra cómo abrir una conexión HTTP, establecer credenciales para el servidor, enviar una solicitud HTTP y leer el texto de respuesta. Este ejemplo debe ejecutarse desde un símbolo del sistema.
 
 
 ```C++
@@ -191,7 +191,7 @@ int main()
 
 
 
-En el ejemplo de scripting siguiente se muestra cómo abrir una conexión HTTP, establecer las credenciales del servidor, establecer las credenciales de un proxy si se usa uno, enviar una solicitud HTTP y leer el texto de la respuesta.
+En el ejemplo de scripting siguiente se muestra cómo abrir una conexión HTTP, establecer credenciales para el servidor, establecer credenciales para un proxy si se usa, enviar una solicitud HTTP y leer el texto de respuesta.
 
 
 ```JScript
@@ -285,11 +285,11 @@ WScript.Echo(WinHttpReq.GetAllResponseHeaders());
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional con las \[ aplicaciones de escritorio de SP3 únicamente\]<br/>            |
-| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server con \[ solo aplicaciones de escritorio de SP3\]<br/>         |
-| Redistribuible<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o posterior en Windows XP y Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winhttp. lib</dt> </dl>     |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>            |
+| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
+| Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | Archivo DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
@@ -304,7 +304,7 @@ WScript.Echo(WinHttpReq.GetAllResponseHeaders());
 [**WinHttpRequest**](winhttprequest.md)
 </dt> <dt>
 
-[Versiones de WinHTTP](winhttp-versions.md)
+[Versiones winHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

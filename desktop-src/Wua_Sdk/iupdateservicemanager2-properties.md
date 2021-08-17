@@ -1,19 +1,19 @@
 ---
-description: La interfaz IUpdateServiceManager2 define la propiedad siguiente.
+description: La interfaz IUpdateServiceManager2 define la siguiente propiedad.
 ms.assetid: af23ca81-d6c3-4adf-9a66-b4cfe9bf8538
 title: Propiedades de IUpdateServiceManager2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47d6d48940a8a49842e1d5536832aeaa76a72afc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ea38e7373f4b508d7df5a05ea5c741f17d1b4465cbcb5877ef2bb01a5d7388b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130427"
 ---
 # <a name="iupdateservicemanager2-properties"></a>Propiedades de IUpdateServiceManager2
 
-La interfaz [**IUpdateServiceManager2**](/windows/desktop/api/Wuapi/nn-wuapi-iupdateservicemanager2) define la propiedad siguiente.
+La [**interfaz IUpdateServiceManager2**](/windows/desktop/api/Wuapi/nn-wuapi-iupdateservicemanager2) define la siguiente propiedad.
 
 
 

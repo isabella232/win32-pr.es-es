@@ -1,6 +1,6 @@
 ---
 title: Método SetCurrentRedirectableAddresses de la Win32_TSSessionDirectory clase
-description: Establece la lista configurada de direcciones aptas para DNS que se pueden usar para el redireccionamiento.
+description: Establece la lista configurada de direcciones válidas para DNS que se pueden usar para el redireccionamiento.
 ms.assetid: cad6a8a8-fdf1-406e-abeb-37acb396ac16
 ms.tgt_platform: multiple
 keywords:
@@ -26,7 +26,7 @@ ms.locfileid: "117756105"
 ---
 # <a name="setcurrentredirectableaddresses-method-of-the-win32_tssessiondirectory-class"></a>Método SetCurrentRedirectableAddresses de la clase TSSessionDirectory de Win32 \_
 
-El **método SetCurrentRedirectableAddresses establece** la lista configurada de direcciones aptas para DNS que se pueden usar para el redireccionamiento.
+El **método SetCurrentRedirectableAddresses** establece la lista configurada de direcciones aptas para DNS que se pueden usar para el redireccionamiento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,23 +70,23 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 ## <a name="remarks"></a>Comentarios
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

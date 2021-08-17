@@ -1,45 +1,45 @@
 ---
-title: Definiciones de compilador de C para proxy/códigos auxiliares
-description: El archivo de encabezado rpcproxy. h incluye las siguientes definiciones de macro, cada una de las cuales puede ser útil al compilar una aplicación COM distribuida. Estas macros se invocan con el modificador de preprocesador/D (o-D) en el tiempo de compilación de C.
+title: Definiciones de C-Compiler para proxy/código auxiliar
+description: El archivo de encabezado Rpcproxy.h incluye las siguientes definiciones de macro, cada una de las cuales puede resultar cómoda al compilar una aplicación COM distribuida. Estas macros se invocan con el modificador de preprocesador /D (o -D) en tiempo de compilación de C.
 ms.assetid: 697f0b63-76ae-410d-8bbf-bb95295ffba9
 keywords:
-- MIDL del compilador de MIDL, compilador de C, definiciones de proxy/código auxiliar
+- MIDL del compilador MIDL, compilador de C, definiciones de proxy/stubs
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af1504c600c3f86a934ab3daa132b041c7310af3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f12b9fd1e2688545137dba870816c1765102ce3593d09ea3cb062bd8250c7c28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117807847"
 ---
-# <a name="c-compiler-definitions-for-proxystubs"></a>Definiciones de compilador de C para proxy/códigos auxiliares
+# <a name="c-compiler-definitions-for-proxystubs"></a>Definiciones de C-Compiler para proxy/código auxiliar
 
-El archivo de encabezado rpcproxy. h incluye las siguientes definiciones de macro, cada una de las cuales puede ser útil al compilar una aplicación COM distribuida. Estas macros se invocan con el modificador de preprocesador [**/d**](-d.md) (o-D) en el tiempo de compilación de C.
+El archivo de encabezado Rpcproxy.h incluye las siguientes definiciones de macro, cada una de las cuales puede resultar cómoda al compilar una aplicación COM distribuida. Estas macros se invocan con el modificador de preprocesador [**/D**](-d.md) (o -D) en tiempo de compilación de C.
 
 
 
 | MACRO                                                                                                                                                                                           | Descripción                                                                                                                                                                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| REGISTRAR \_ dll de proxy \_                                                                                                                                                                            | Genera funciones **DllMain**, **DllRegisterServer** y **DllUnregisterServer** para registrar automáticamente un archivo dll de proxy.                                                                                       |
-| CLSID de PROXY \_ =<clsid>                                                                                                                                                                      | Especifica un identificador de clase para el servidor. Si no se define esta macro, el CLSID predeterminado es el primer identificador de interfaz que encuentra el compilador MIDL en la especificación IDL para el servidor proxy/código auxiliar. |
-| El \_ CLSID del proxy \_ es = {0x *8hexdigits*, 0x *4hexdigits*, 0x *4hexdigits*, {0x *2hexdigits*, 0x *2hexdigits*, 0x *2hexdigits*, 0x *2hexdigits*, 0x *2hexdigits*, 0x *2hexdigits*, 0x *2hexdigits*, 0x *2hexdigits*,}} | Especifica el valor del identificador de clase del servidor en formato hexadecimal binario.                                                                                                                                           |
+| REGISTRAR \_ DLL DE \_ PROXY                                                                                                                                                                            | Genera las **funciones DllMain,** **DllRegisterServer** y **DllUnregisterServer** para registrar automáticamente un archivo DLL de proxy.                                                                                       |
+| PROXY \_ CLSID=<clsid>                                                                                                                                                                      | Especifica un identificador de clase para el servidor. Si no se define esta macro, el CLSID predeterminado es el primer identificador de interfaz que el compilador MIDL encuentra en la especificación de IDL para el servidor Proxy/Stub. |
+| PROXY \_ CLSID \_ IS={0x *8hexdigits*, 0x *4hexdigits*,0x *4hexdigits*, {0x *2hexdigits,0x**2hexdigits*, 0x *2hexdigits*,0x *2hexdigits,**0x 2hexdigits,0x**2hexdigits,* 0x *2hexdigits,0x**2hexdigits*,}} | Especifica el valor del identificador de clase del servidor en formato hexadecimal binario.                                                                                                                                           |
 
 
 
- 
+ 
 
-Al definir la **macro Register \_ proxy \_ dll** al compilar dlldata. c, el archivo dll de serialización de proxy/stub incluirá automáticamente las definiciones predeterminadas para las funciones **DllMain**, **DllRegisterServer** y **DllUnregisterServer** . Puede usar estas funciones para registrar automáticamente el archivo DLL del proxy en el registro del sistema.
+Al definir la macro **REGISTER \_ PROXY \_ DLL** al compilar Dlldata.c, el archivo DLL de serialización de proxy/stub incluirá automáticamente definiciones predeterminadas para las funciones **DllMain,** **DllRegisterServer** y **DllUnregisterServer.** Puede usar estas funciones para registrar de forma automática el archivo DLL de proxy en el registro del sistema.
 
-Este código de registro predeterminado usa el GUID de la primera interfaz que se encuentra como CLSID para registrar todo el servidor DLL de proxy/código auxiliar. COM más adelante utiliza este CLSID para buscar y cargar el servidor proxy/stub compilado para el cálculo de referencias de cualquiera de las interfaces que el servidor está registrado para controlar. Cuando una aplicación realiza una llamada a un método de interfaz que cruza los límites de subprocesos, procesos o equipos, COM usa la entrada del registro del identificador de interfaz para buscar la entrada del registro CLSID para el servidor de serialización de proxy/código auxiliar. A continuación, usa este CLSID para cargar el servidor (si aún no está cargado), de modo que se pueda calcular la llamada a la interfaz.
+Este código de registro predeterminado usa el GUID de la primera interfaz encontrada como CLSID para registrar todo el servidor DLL de proxy o código auxiliar. COM usa más adelante este CLSID para buscar y cargar el servidor proxy/stub compilado para la serialización de cualquiera de las interfaces que el servidor está registrado para controlar. Cuando una aplicación realiza una llamada al método de interfaz que cruza los límites de subprocesos, procesos o equipos, COM usa la entrada del Registro del identificador de interfaz para buscar la entrada del Registro CLSID para el servidor de serialización de proxy o código auxiliar. A continuación, usa este CLSID para cargar el servidor (si aún no está cargado) para que la llamada a la interfaz se pueda serializar.
 
-Use la **macro \_ CLSID** = <clsid> de proxy si desea especificar explícitamente el CLSID del servidor proxy/código auxiliar en lugar de confiar en el CLSID predeterminado. Por ejemplo, si va a compilar un archivo DLL de serialización estándar como su propio servidor COM en proceso, o si necesita definir su propio **DllMain** para controlar la Asociación del proceso de dll \_ \_ .
+Use la **macro \_ CLSID de PROXY** cuando desee especificar explícitamente el CLSID del servidor proxy/stub en lugar de basarse en el = <clsid> CLSID predeterminado. Por ejemplo, si está creando un archivo DLL de serialización estándar como su propio servidor COM en proceso, o si necesita definir su propio **archivo DllMain** para controlar DLL \_ PROCESS \_ ATTACH.
 
-Usar **CLSID de proxy \_ \_ es**= macro en lugar **de \_ CLSID del proxy** para definir el valor del CLSID en el formato hexadecimal binario que utiliza la macro de **definición de \_ GUID** .
+Use **PROXY \_ CLSID \_ IS**= macro en lugar de **\_ CLSID** de PROXY para definir el valor del CLSID en el formato hexadecimal binario que usa la macro **DEFINE \_ GUID.**
 
-Tenga en cuenta también que cuando se ejecuta la función predeterminada **DllRegisterServer** , se registra el servidor con ThreadingModel = both.
+Tenga en cuenta también que cuando se ejecuta la función **DllRegisterServer** predeterminada, registra el servidor con ThreadingModel=Both.
 
-En el siguiente ejemplo de archivo make se usa la **\_ \_ dll del proxy de registro** y el **proxy \_ CLSID**= macros:
+En el siguiente ejemplo de archivo Make se usan las macros **REGISTER \_ PROXY \_ DLL** y **PROXY \_ CLSID**= :
 
 ``` syntax
 example.h example.tlb example_p.c example_i.c dlldata.c : example.idl
@@ -59,11 +59,11 @@ proxy.dll : $(PROXYSTUBOBJX) example.def
     regsvr32 /s proxy.dll
 ```
 
-Para obtener más información sobre la opción de preprocesador [**/d**](-d.md) , consulte la documentación del compilador de C.
+Para obtener más información sobre la opción de preprocesador [**/D,**](-d.md) consulte la documentación del compilador de C.
 
- 
+ 
 
- 
+ 
 
 
 

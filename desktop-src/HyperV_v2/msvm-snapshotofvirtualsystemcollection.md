@@ -1,7 +1,7 @@
 ---
-description: Asocia el \_ SnapshotCollection MSVM a los objetos MSVM \_ VirtualSystemCollection correspondientes.
+description: Asocia Msvm \_ SnapshotCollection a los objetos Msvm \_ VirtualSystemCollection correspondientes.
 ms.assetid: 4dbfe21f-e700-4266-aedb-236c57c424f6
-title: Msvm_SnapshotOfVirtualSystemCollection (clase)
+title: Msvm_SnapshotOfVirtualSystemCollection clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ae3c9c146cea8a8af98f4d3071ee7339d53eb6b1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 151a54c99376cdf7d9e5f2e14fa0fd3c903d3659c12310212304a1a2b2f2e339
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950254"
 ---
-# <a name="msvm_snapshotofvirtualsystemcollection-class"></a>MSVM \_ SnapshotOfVirtualSystemCollection (clase)
+# <a name="msvm_snapshotofvirtualsystemcollection-class"></a>Clase Msvm \_ SnapshotOfVirtualSystemCollection
 
-Asocia el [**\_ SnapshotCollection MSVM**](msvm-snapshotcollection.md) a los objetos [**MSVM \_ VirtualSystemCollection**](msvm-virtualsystemcollection.md) correspondientes.
+Asocia [**Msvm \_ SnapshotCollection a**](msvm-snapshotcollection.md) los objetos [**Msvm \_ VirtualSystemCollection**](msvm-virtualsystemcollection.md) correspondientes.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -41,13 +41,13 @@ class Msvm_SnapshotOfVirtualSystemCollection : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ SnapshotOfVirtualSystemCollection** tiene estos tipos de miembros:
+La **clase \_ SnapshotOfVirtualSystemCollection de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ SnapshotOfVirtualSystemCollection** tiene estas propiedades.
+La **clase \_ SnapshotOfVirtualSystemCollection de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -60,26 +60,26 @@ Tipo de datos: **CIM \_ CollectionOfMSEs**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Un objeto [**CIM \_ CollectionOfMSEs**](cim-collectionofmses.md) que representa el objeto independiente de esta asociación.
+Colección [**\_ CIMOfMSE**](cim-collectionofmses.md) que representa el objeto independiente de esta asociación.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ colección CIM**
+Tipo de datos: **Colección CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent")
 </dt> </dl>
 
-[**\_ Colección CIM**](cim-collection.md) que representa el objeto que depende del **antecedente.**
+Colección [**CIM \_ que**](cim-collection.md) representa el objeto que depende del **antecedente.**
 
 </dd> </dl>
 
@@ -89,10 +89,10 @@ Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidaci
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -101,7 +101,7 @@ Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidaci
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> </dl>
 
  

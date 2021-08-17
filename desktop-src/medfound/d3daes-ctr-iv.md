@@ -1,5 +1,5 @@
 ---
-description: Contiene un vector de inicialización (IV) para el cifrado de bloques del modo CTR (AES-CTR) de 12 Estándar de cifrado avanzado 8 bits.
+description: Contiene un vector de inicialización (IV) para el cifrado de bloques de Estándar de cifrado avanzado de 128 bits en modo CTR (AES-CTR).
 ms.assetid: 2ee738c2-d56c-4a50-94b8-b7180918aa8c
 title: D3DAES_CTR_IV estructura (D3d9types.h)
 ms.topic: reference
@@ -20,9 +20,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118974794"
 ---
-# <a name="d3daes_ctr_iv-structure"></a>Estructura de D3DAES \_ CTR \_ IV
+# <a name="d3daes_ctr_iv-structure"></a>Estructura D3DAES \_ CTR \_ IV
 
-Contiene un vector de inicialización (IV) para el cifrado de bloques del modo CTR (AES-CTR) de 12 Estándar de cifrado avanzado 8 bits.
+Contiene un vector de inicialización (IV) para el cifrado de bloques de Estándar de cifrado avanzado de 128 bits en modo CTR (AES-CTR).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ typedef struct _D3DAES_CTR_IV {
 **IV**
 </dt> <dd>
 
-El IV, en formato big-endian.
+Iv, en formato big-endian.
 
 </dd> <dt>
 
@@ -64,15 +64,15 @@ Para obtener más información, [**vea DXVA2 \_ AES \_ CTR \_ IV**](/windows/des
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                              |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                 |
 | Header<br/>                   | <dl> <dt>D3d9types.h (incluir D3d9.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

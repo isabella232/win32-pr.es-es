@@ -1,5 +1,5 @@
 ---
-description: Objeto de carga de datos usado por la interfaz ID3DX10ThreadPump para cargar datos de forma asincrónica.
+description: Objeto de carga de datos utilizado por la interfaz ID3DX10ThreadPump para cargar datos de forma asincrónica.
 ms.assetid: bda2414c-bbab-47ac-b23a-f58fb86e732d
 title: Interfaz ID3DX10DataLoader (D3DX10.h)
 ms.topic: reference
@@ -40,7 +40,7 @@ La **interfaz ID3DX10DataLoader** tiene estos métodos.
 | Método                                             | Descripción                                                                                                                                                                                                                        |
 |:---------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Descomprimir**](id3dx10dataloader-decompress.md) | Se usa para descomprimir los datos codificados. Normalmente, esto se usaría para cargar recursos desde sistemas de archivos, como archivos ZIP. Al cargar desde un recurso sin comprimir, la fase de descompresión no tiene que realizar ningún trabajo.<br/> |
-| [**Destruir**](id3dx10dataloader-destroy.md)       | Lo usa una [**interfaz ID3DX10ThreadPump para**](id3dx10threadpump.md) destruir el cargador una vez completado un elemento de trabajo.<br/>                                                                                                   |
+| [**Destruir**](id3dx10dataloader-destroy.md)       | Usado por una [**interfaz ID3DX10ThreadPump para**](id3dx10threadpump.md) destruir el cargador una vez completado un elemento de trabajo.<br/>                                                                                                   |
 | [**Cargar**](id3dx10dataloader-load.md)             | Usado por una [**interfaz ID3DX10ThreadPump**](id3dx10threadpump.md) para cargar datos desde un disco.<br/>                                                                                                                            |
 
 
@@ -49,7 +49,7 @@ La **interfaz ID3DX10DataLoader** tiene estos métodos.
 
 ## <a name="remarks"></a>Comentarios
 
-Este objeto se puede heredar y sus miembros se pueden volver a definir. Esto le permitiría personalizar la API para cargar y descomprimir sus propios formatos de archivo personalizados.
+Este objeto se puede heredar y sus miembros se pueden volver a definir. Si lo hace, podrá personalizar la API para cargar y descomprimir sus propios formatos de archivo personalizados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ Este objeto se puede heredar y sus miembros se pueden volver a definir. Esto le 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

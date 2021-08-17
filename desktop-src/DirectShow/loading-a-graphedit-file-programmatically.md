@@ -1,19 +1,19 @@
 ---
-description: Cargar un archivo GraphEdit mediante programación
+description: Carga de un archivo GraphEdit mediante programación
 ms.assetid: 0e1cff4e-43f8-4d0a-b7a7-b6d0278e9e4a
-title: Cargar un archivo GraphEdit mediante programación
+title: Carga de un archivo GraphEdit mediante programación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a9a4780ead7b65d883bdd48917c6372425612435
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: faf2bdff86a47e740e6cb177a70a7b1e12ffc7c865d8ad231f6ada9122f286d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104495064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118153183"
 ---
-# <a name="loading-a-graphedit-file-programmatically"></a>Cargar un archivo GraphEdit mediante programación
+# <a name="loading-a-graphedit-file-programmatically"></a>Carga de un archivo GraphEdit mediante programación
 
-Una aplicación puede usar la interfaz **IPersistStream** para cargar un archivo GraphEdit (. GRF). Use el código siguiente:
+Una aplicación puede usar la **interfaz IPersistStream** para cargar un archivo GraphEdit (.grf). Use el código siguiente:
 
 
 ```C++
@@ -55,17 +55,17 @@ HRESULT LoadGraphFile(IGraphBuilder *pGraph, const WCHAR* wszName)
 
 
 > [!Note]  
-> La llamada a **IPersistStream:: Load** en el ejemplo de código anterior puede devolver un error de DirectShow o un código de operación correcta. Para obtener una lista de los posibles valores devueltos, vea [códigos de error y de éxito](error-and-success-codes.md).
+> La llamada a **IPersistStream::Load** en el ejemplo de código anterior puede devolver un error DirectShow código correcto. Para obtener una lista de posibles valores devueltos, vea [Códigos de error y de éxito.](error-and-success-codes.md)
 
  
 
-Los archivos GraphEdit están destinados únicamente a pruebas y depuración. No están diseñadas para que las usen las aplicaciones de usuario final.
+Los archivos GraphEdit están diseñados solo para pruebas y depuraciones. No están diseñados para su uso por las aplicaciones de usuario final.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Simular la compilación de gráficos con GraphEdit](simulating-graph-building-with-graphedit.md)
+[Simulación de Graph building con GraphEdit](simulating-graph-building-with-graphedit.md)
 </dt> <dt>
 
 [**StgIsStorageFile**](/windows/win32/api/coml2api/nf-coml2api-stgisstoragefile)

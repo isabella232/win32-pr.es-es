@@ -3,7 +3,7 @@ title: Método Modify de la MicrosoftDNS_TXTType clase
 description: El método Modify actualiza un registro de recursos text (TXT).
 ms.assetid: af61057e-95be-4290-83da-a63f01ead476
 keywords:
-- Modificación del DNS del método
+- Modificación del dns del método
 - Modificar el método DNS , MicrosoftDNS_TXTType clase
 - MicrosoftDNS_TXTType clase DNS , Método Modify
 topic_type:
@@ -61,7 +61,7 @@ Texto descriptivo, cuya semántica depende del dominio propietario.
 *RR* \[ out, ref\]
 </dt> <dd>
 
-Referencia al nuevo objeto.
+Referencia al nuevo objeto .
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Cualquier parámetro no especificado se deja sin modificar en el registro modifi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
@@ -86,7 +86,7 @@ Cualquier parámetro no especificado se deja sin modificar en el registro modifi
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

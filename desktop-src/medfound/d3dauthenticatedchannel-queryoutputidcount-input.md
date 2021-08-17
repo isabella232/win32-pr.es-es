@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119449475"
 ---
-# <a name="d3dauthenticatedchannel_queryoutputidcount_input-structure"></a>Estructura DE ENTRADA D3DAUTHENTICATEDCHANNEL \_ QUERYOUTPUTIDCOUNT \_
+# <a name="d3dauthenticatedchannel_queryoutputidcount_input-structure"></a>D3DAUTHENTICATEDCHANNEL \_ QUERYOUTPUTIDCOUNT \_ INPUT structure
 
 Contiene datos de entrada para una [**consulta D3DAUTHENTICATEDQUERY \_ OUTPUTIDCOUNT.**](d3dauthenticatedquery-outputidcount.md)
 
@@ -70,7 +70,7 @@ Identificador de la sesión criptográfica.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
 | Header<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 

@@ -19,24 +19,24 @@ La Windows adquisición de imágenes (WIA) es una API y una interfaz de controla
 -   Minimice los problemas de interoperabilidad.
 -   Enumerar los dispositivos de adquisición de imágenes disponibles.
 -   Cree conexiones a varios dispositivos simultáneamente.
--   Consultar las propiedades de los dispositivos de forma estándar y ampliable.
+-   Consulta las propiedades de los dispositivos de forma estándar y ampliable.
 -   Adquirir datos de dispositivo mediante mecanismos de transferencia estándar y de alto rendimiento.
--   Mantener las propiedades de la imagen entre transferencias de datos.
+-   Mantener las propiedades de imagen entre transferencias de datos.
 -   Recibir notificaciones de una amplia variedad de eventos de dispositivo.
 
 WIADDI está diseñado para minimizar la cantidad de código que un proveedor de hardware debe escribir, a la vez que mantiene la flexibilidad para crear soluciones individuales. Esto se logra mediante:
 
--   Proporcionar una biblioteca de servicio de dispositivo estándar que realiza la mayoría de las operaciones del controlador.
+-   Proporcionar una biblioteca de servicio de dispositivos estándar que realiza la mayoría de las operaciones del controlador.
 -   Promover estándares de comunicaciones de dispositivos del sector para que un controlador WIA admita la mayoría de los dispositivos WIA. Por ejemplo, Protocolo de transferencia de imágenes (PTP).
--   Permitir que el controlador de dispositivo admita interfaces personalizadas, a la vez que no requiere que use la biblioteca de servicio de dispositivos estándar. Sin embargo, los controladores todavía necesitan implementar las interfaces WIA estándar.
+-   Permitir que el controlador de dispositivo admita interfaces personalizadas, sin necesidad de que use la biblioteca de servicio de dispositivos estándar. Sin embargo, los controladores todavía necesitan implementar las interfaces WIA estándar.
 
 En esta sección se presenta una breve introducción a la interfaz WIA en las áreas siguientes:
 
 -   [Arquitectura de WIA](-wia-wia-architecture.md)
--   [Compatibilidad con LAN](-wia-sti-compatibility.md)
--   [Compatibilidad con TNEL](-wia-twain-compatibility.md)
+-   [Compatibilidad con ASS](-wia-sti-compatibility.md)
+-   [Compatibilidad con T PLUGIN](-wia-twain-compatibility.md)
 -   [WiA Administrador de dispositivos](-wia-wia-device-manager.md)
--   [Biblioteca de servicios minidriver de WIA](-wia-wia-minidriver-service-library.md)
+-   [Biblioteca del servicio WIA Minidriver](-wia-wia-minidriver-service-library.md)
 -   [WIA Minidriver](-wia-wia-minidriver.md)
 
  

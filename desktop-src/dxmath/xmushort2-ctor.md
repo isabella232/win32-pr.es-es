@@ -56,7 +56,7 @@ Este constructor solo está disponible en C++.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmushort2-xmushort2(float_float)"><strong>XMUSHORT2 (float,float)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUSHORT2</code> partir de dos <code>float</code> argumentos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2"><strong>XMUSHORT2</strong></a> a partir de dos <code>float</code> argumentos. <br/>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUSHORT2</code> partir de <code>float</code> dos argumentos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2"><strong>XMUSHORT2</strong></a> a partir de <code>float</code> dos argumentos. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -65,7 +65,7 @@ Este constructor solo está disponible en C++.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ee420629(v=vs.85)"><strong>XMUSHORT2 (const float*)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUSHORT2</code> partir de un argumento de matriz de dos <code>float</code> elementos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2"><strong>XMUSHORT2</strong></a> a partir de un argumento de matriz <code>float</code> de dos elementos. <br/>
+<td style="text-align: left;">Inicializa una nueva instancia de a partir <code>XMUSHORT2</code> de un argumento de matriz de dos <code>float</code> elementos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2"><strong>XMUSHORT2</strong></a> a partir de un argumento de matriz <code>float</code> de dos elementos. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -83,7 +83,7 @@ Este constructor solo está disponible en C++.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmushort2-xmushort2(uint16_t_uint16_t)"><strong>XMUSHORT2 (uint16_t,uint16_t)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUSHORT2</code> partir de dos <code>uint16_t</code> argumentos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2"><strong>XMUSHORT2</strong></a> a partir de dos <code>uint16_t</code> argumentos. <br/>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUSHORT2</code> partir de <code>uint16_t</code> dos argumentos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2"><strong>XMUSHORT2</strong></a> a partir de <code>uint16_t</code> dos argumentos. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -95,7 +95,7 @@ Este constructor solo está disponible en C++.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

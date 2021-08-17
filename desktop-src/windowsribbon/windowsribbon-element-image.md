@@ -1,9 +1,9 @@
 ---
-title: Elemento Image (Marco de la cinta de opciones de Windows)
+title: Elemento Image (Windows Ribbon Framework)
 description: Representa una imagen.
 ms.assetid: 2c71bb16-93ac-484f-b81b-1b95842472b3
 keywords:
-- Cinta de opciones de Windows del elemento Image
+- Elemento Image Windows Cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fe0b9afb51697d50de9cb80886cf829b90c81262
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: aad95d62be63434653908d54a290c3213fd22bf644150b70fa995e86bf5e39af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111442896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931455"
 ---
 # <a name="image-element"></a>Elemento Image
 
@@ -61,7 +61,7 @@ Representa una imagen.
 <td>xs:positiveInteger union xs:string<br/></td>
 <td>No<br/></td>
 <td>Identificador de recurso único. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (La unión de xs:positiveInteger y xs:string)<br/> </dt> <dd> Valor entero comprendido entre 2 y 59999, ambos incluidos, 0x2 y 0xea5f en formato hexadecimal, inclusivo. <br/> La longitud máxima es de 10 caracteres, incluidos los ceros iniciales opcionales. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (La unión de xs:positiveInteger y xs:string)<br/> </dt> <dd> Valor entero comprendido entre 2 y 59999, inclusivo o 0x2 y 0xea5f en hexadecimal, inclusivo. <br/> La longitud máxima es de 10 caracteres, incluidos los ceros iniciales opcionales. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>MinDPI</strong><br/></td>

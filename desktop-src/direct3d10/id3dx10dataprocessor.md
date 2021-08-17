@@ -1,5 +1,5 @@
 ---
-description: Objeto de procesamiento de datos utilizado por la interfaz ID3DX10ThreadPump para procesar los datos cargados de forma asincrónica.
+description: Objeto de procesamiento de datos utilizado por la interfaz ID3DX10ThreadPump para procesar datos cargados de forma asincrónica.
 ms.assetid: c932f558-10da-45fc-a833-8ed86fa065ab
 title: Interfaz ID3DX10DataProcessor (D3DX10.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "119128377"
 ---
 # <a name="id3dx10dataprocessor-interface"></a>Interfaz ID3DX10DataProcessor
 
-Objeto de procesamiento de datos utilizado [**por la interfaz ID3DX10ThreadPump para**](id3dx10threadpump.md) procesar los datos cargados de forma asincrónica.
+Objeto de procesamiento de datos utilizado [**por la interfaz ID3DX10ThreadPump**](id3dx10threadpump.md) para procesar datos cargados de forma asincrónica.
 
 ## <a name="members"></a>Miembros
 
@@ -40,7 +40,7 @@ La **interfaz ID3DX10DataProcessor** tiene estos métodos.
 | Método                                                                | Descripción                                                                                                                         |
 |:----------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------|
 | [**CreateDeviceObject**](id3dx10dataprocessor-createdeviceobject.md) | Cree un objeto de dispositivo.<br/>                                                                                                  |
-| [**Destruir**](id3dx10dataprocessor-destroy.md)                       | Lo usa una [**interfaz ID3DX10ThreadPump para**](id3dx10threadpump.md) destruir el procesador una vez completado un elemento de trabajo.<br/> |
+| [**Destruir**](id3dx10dataprocessor-destroy.md)                       | Usado por una [**interfaz ID3DX10ThreadPump**](id3dx10threadpump.md) para destruir el procesador una vez completado un elemento de trabajo.<br/> |
 | [**Proceso**](id3dx10dataprocessor-process.md)                       | Procesar algunos datos.<br/>                                                                                                       |
 
 
@@ -62,7 +62,7 @@ Este objeto se puede heredar y sus miembros se pueden volver a definir. Esto le 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: Comprueba si un puntero está alineado con un límite especificado. En caso contrario, esta macro invoca la macro Assert. Se omite en las compilaciones comerciales.
+description: Comprueba si un puntero está alineado con un límite especificado. Si no es así, esta macro invoca la macro ASSERT. Se omite en las compilaciones comerciales.
 ms.assetid: 4d9ec3a9-7107-45a3-a7aa-28d6e38fa92a
-title: Macro DbgAssertAligned (Wxdebug. h)
+title: Macro DbgAssertAligned (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Wxdebug.h
-ms.openlocfilehash: 22b357f7f28e9df04ce36636e3972dbadc3036a6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 36b835ccd7fd82e226eb76dfb45ca4cfcd034a713da0d3639e91fba8aa7e4fca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953354"
 ---
-# <a name="dbgassertaligned-macro"></a>DbgAssertAligned (macro)
+# <a name="dbgassertaligned-macro"></a>Macro DbgAssertAligned
 
-Comprueba si un puntero está alineado con un límite especificado. En caso contrario, esta macro invoca la macro [**Assert**](assert.md) . Se omite en las compilaciones comerciales.
+Comprueba si un puntero está alineado con un límite especificado. Si no es así, esta macro invoca la macro [**ASSERT.**](assert.md) Se omite en las compilaciones comerciales.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,23 +40,23 @@ void DbgAssertAligned(
 
 <dl> <dt>
 
-*ptr* 
+*Ptr* 
 </dt> <dd>
 
 Variable de puntero.
 
 </dd> <dt>
 
-*ecuación* 
+*Alineación* 
 </dt> <dd>
 
-Alineación requerida.
+Alineación necesaria.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Esta macro no devuelve ningún valor.
+Esta macro no devuelve un valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ Esta macro no devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wxdebug. h (incluir streams. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wxdebug.h (incluir Secuencias.h)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Esta macro no devuelve ningún valor.
 
 <dl> <dt>
 
-[Macros Assert y Breakpoint](assert-and-breakpoint-macros.md)
+[Aserción y macros de punto de interrupción](assert-and-breakpoint-macros.md)
 </dt> </dl>
 
  

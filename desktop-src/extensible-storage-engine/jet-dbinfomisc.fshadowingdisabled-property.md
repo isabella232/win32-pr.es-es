@@ -35,12 +35,12 @@ ms.locfileid: "119453985"
 ---
 # <a name="jet_dbinfomiscfshadowingdisabled-property"></a>JET_DBINFOMISC.fShadowingDisabled, propiedad
 
-Obtiene un valor que indica si está habilitado el sombreado de catálogo. Este valor es solo para uso interno.
+Obtiene un valor que indica si está habilitado el sombreado del catálogo. Este valor es solo para uso interno.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

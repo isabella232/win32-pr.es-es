@@ -1,21 +1,21 @@
 ---
-title: Premultiplicar efecto
-description: Utilice este efecto para convertir una imagen de unpremultiplied Alpha en alfa premultiplicado.
+title: Efecto premultiplicado
+description: Use este efecto para convertir una imagen de alfa sin multiplicar a alfa premultiplicado.
 ms.assetid: 8A5F55C6-3AC7-48B4-87D8-C19D8B4EA0DD
 keywords:
-- premultiplicar efecto
+- efecto premultiplicado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a01a8a9ba005ed688a96254856897b3514f05fd5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1af158ab8f885c51d2dce15d5bfbc5c24f34f6a980ebc8e8f4631617d31a2a48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996708"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075029"
 ---
-# <a name="premultiply-effect"></a>Premultiplicar efecto
+# <a name="premultiply-effect"></a>Efecto premultiplicado
 
-Utilice este efecto para convertir una imagen de unpremultiplied Alpha en alfa premultiplicado. El efecto reemplaza cada píxel `P = {R, G, B, A}` de entrada por `P' = {R*A, G*A, B*A, A}` en la salida.
+Use este efecto para convertir una imagen de alfa sin multiplicar a alfa premultiplicado. El efecto reemplaza cada píxel de entrada `P = {R, G, B, A}` por `P' = {R*A, G*A, B*A, A}` en la salida.
 
 Este efecto no tiene propiedades.
 
@@ -31,10 +31,10 @@ El tamaño del mapa de bits de salida es el mismo que el tamaño del mapa de bit
 
 | Requisito | Value |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows 8 y actualización de la plataforma para aplicaciones de escritorio de Windows 7 aplicaciones de la \[ \| tienda Windows\] |
-| Servidor mínimo compatible | Windows 8 y actualización de la plataforma para aplicaciones de escritorio de Windows 7 aplicaciones de la \[ \| tienda Windows\] |
-| Encabezado                   | d2d1effects. h                                                                      |
-| Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
+| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows store\] |
+| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows store\] |
+| Header                   | d2d1effects.h                                                                      |
+| Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

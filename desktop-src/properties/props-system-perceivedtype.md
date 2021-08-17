@@ -1,19 +1,19 @@
 ---
-description: El tipo de archivo percibido basado en su tipo canónico.
+description: Tipo de archivo percibido en función de su tipo canónico.
 ms.assetid: dc5122a1-43b3-4c91-a44f-315fec5b4862
 title: System.PerceivedType
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fc0be5e2ba481d113981efc264c4da66428e675
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7fa74fcb51163bf1f4d694ec11d9db820f97ffa34f4e57d0f7a85689d051697c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118052483"
 ---
 # <a name="systemperceivedtype"></a>System.PerceivedType
 
-El tipo de archivo percibido basado en su tipo canónico.
+Tipo de archivo percibido en función de su tipo canónico.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -157,9 +157,9 @@ propertyDescription
             text = Contacts
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h. El shell asigna automáticamente este valor.
+Los valores PKEY se definen en Propkey.h. El shell asigna automáticamente este valor.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -174,7 +174,7 @@ Los valores PKEY se definen en Propkey. h. El shell asigna automáticamente este
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -186,7 +186,7 @@ Los valores PKEY se definen en Propkey. h. El shell asigna automáticamente este
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -204,7 +204,7 @@ Los valores PKEY se definen en Propkey. h. El shell asigna automáticamente este
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

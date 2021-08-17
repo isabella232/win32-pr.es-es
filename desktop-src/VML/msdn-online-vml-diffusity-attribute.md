@@ -20,7 +20,7 @@ En este tema se describe VML, una característica que está en desuso a partir W
 
  
 
-Define la cantidad de luz reflejada a partir de una forma extruida. Lectura/escritura **NumberNumber**.
+Define la cantidad de luz reflejada a partir de una forma extruida. Lectura/escritura **Numbernumber .**
 
 **Se aplica a**
 
@@ -32,7 +32,7 @@ Define la cantidad de luz reflejada a partir de una forma extruida. Lectura/escr
 
 **Sintaxis de script**
 
-*Element* .diffusity="*expression*"
+*element* .diffusity="*expression*"
 
 *expresión* = *elemento*.diffusity
 

@@ -1,5 +1,5 @@
 ---
-description: Las tareas WMI de los servicios obtienen información sobre los servicios, incluidos los servicios dependientes o antecedentes. Para obtener otros ejemplos, vea ScriptCenter de TechNet en https://www.microsoft.com/technet .
+description: Las tareas WMI de los servicios obtienen información sobre los servicios, incluidos los servicios dependientes o antecedentes. Para ver otros ejemplos, consulte ScriptCenter de TechNet en https://www.microsoft.com/technet .
 ms.assetid: 1cd92981-c074-4ff7-a32c-ce492e6d6aa5
 ms.tgt_platform: multiple
 title: 'Tareas wmi: servicios'
@@ -19,7 +19,7 @@ ms.locfileid: "117738834"
 ---
 # <a name="wmi-tasks-services"></a>Tareas wmi: servicios
 
-Las tareas WMI de los servicios obtienen información sobre los servicios, incluidos los servicios dependientes o antecedentes. Para obtener otros ejemplos, vea ScriptCenter de TechNet en [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+Las tareas WMI de los servicios obtienen información sobre los servicios, incluidos los servicios dependientes o antecedentes. Para ver otros ejemplos, consulte ScriptCenter de TechNet en [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
 Los ejemplos de script que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información sobre cómo usar el script para obtener datos de equipos remotos, vea [Conectarse a WMI en un equipo remoto.](connecting-to-wmi-on-a-remote-computer.md)
 
@@ -27,17 +27,17 @@ En el procedimiento siguiente se describe cómo ejecutar un script.
 
 **Para ejecutar un script**
 
-1.  Copie el código y guárdelo en un archivo con una extensión .vbs, como *filename.vbs*. Asegúrese de que el editor de texto no agrega una .txt al archivo.
+1.  Copie el código y guárdelo en un archivo con una extensión .vbs, *comofilename.vbs*. Asegúrese de que el editor de texto no agrega una .txt extensión al archivo.
 2.  Abra una ventana del símbolo del sistema y vaya al directorio donde guardó el archivo.
 3.  Escriba **cscript filename.vbs** en el símbolo del sistema.
-4.  Si no puede acceder a un registro de eventos, compruebe si está ejecutando desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
+4.  Si no puede acceder a un registro de eventos, compruebe si se ejecuta desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
 
 > [!Note]  
-> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts WMI pueden generar grandes cantidades de salida, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del *script* filename.vbsa *outfile.txt*.
+> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts WMI pueden generar grandes cantidades de salida, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del script *filename.vbs* a *outfile.txt*.
 
  
 
-En la tabla siguiente se enumeran ejemplos de script que se pueden usar para obtener varios tipos de datos del equipo local.
+En la tabla siguiente se muestran ejemplos de script que se pueden usar para obtener varios tipos de datos del equipo local.
 
 
 
@@ -55,7 +55,7 @@ En la tabla siguiente se enumeran ejemplos de script que se pueden usar para obt
 </thead>
 <tbody>
 <tr class="odd">
-<td>... determinar qué servicios se ejecutan y cuáles no?</td>
+<td>... determinar qué servicios se están ejecutando y cuáles no?</td>
 <td>Use la <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> clase para comprobar el estado de todos los servicios. La propiedad state le permite saber si un servicio está detenido o en ejecución.<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
@@ -190,7 +190,7 @@ Next
 </tr>
 <tr class="even">
 <td>... ¿Cambiar contraseñas de cuenta de servicio mediante un script?</td>
-<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> y el <a href="/windows/desktop/CIMWin32Prov/change-method-in-class-win32-service"><strong>método Change.</strong></a></p>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> clase y el <a href="/windows/desktop/CIMWin32Prov/change-method-in-class-win32-service"><strong>método Change.</strong></a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -220,7 +220,7 @@ Next</code></pre></td>
 </tr>
 <tr class="odd">
 <td>.. determinar qué servicios puedo detener?</td>
-<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> y compruebe el valor de la <strong>propiedad AcceptStop.</strong></p>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> clase y compruebe el valor de la <strong>propiedad AcceptStop.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -265,7 +265,7 @@ Next</code></pre></td>
 </tr>
 <tr class="even">
 <td>... ¿Buscar los servicios que deben ejecutarse antes de poder iniciar el servicio DHCP?</td>
-<td><p>Consulta de <a href="associators-of-statement.md">ASSOCIATORS DE Win32_Service</a> clase denominada DHCP que se encuentran en la clase Win32_DependentService y tienen Dependent en la propiedad <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong></strong></a> &quot; &quot; <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong></strong></a> &quot; &quot; <strong>Role.</strong> <strong>Rol</strong> significa el rol del servicio DHCP: en este caso, depende de los demás servicios que se inician.</p>
+<td><p>Consulta de <a href="associators-of-statement.md">ASSOCIATORS DE Win32_Service</a> clase denominada DHCP que se encuentran en la clase Win32_DependentService y tienen Dependent en la propiedad <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong></strong></a> &quot; &quot; <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong></strong></a> &quot; &quot; <strong>Role.</strong> <strong>Rol</strong> significa el rol del servicio DHCP: en este caso, depende de los demás servicios que se están iniciando.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -312,8 +312,8 @@ Get-WmiObject -Query $query -Namespace &quot;root\cimv2&quot; | format-list Disp
 </div></td>
 </tr>
 <tr class="odd">
-<td>... buscar los servicios que requieren que el servicio WMI (Winmgmt) se ejecute antes de que puedan iniciarse?</td>
-<td><p>Consulta de <a href="associators-of-statement.md">ASSOCIATORS DE Win32_Service</a> clase denominada DHCP que se encuentran en la clase Win32_DependentService y tienen <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong></strong></a> &quot; &quot; <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong></strong></a> &quot; antecedentes en la propiedad &quot; <strong>Role.</strong> <strong>Rol</strong> significa el rol del servicio rasman: en este caso, es necesario iniciar antes que los servicios dependientes.</p>
+<td>... buscar los servicios que requieren que el servicio WMI (Winmgmt) se esté ejecutando antes de que puedan iniciarse?</td>
+<td><p>Consulta de <a href="associators-of-statement.md">ASSOCIATORS DE</a> Win32_Service clase denominada DHCP que se encuentran en la clase Win32_DependentService y tienen <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong></strong></a> &quot; &quot; <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong></strong></a> &quot; antecedentes en la propiedad &quot; <strong>Role.</strong> <strong>Rol</strong> significa el rol del servicio rasman: en este caso, es anterior a debe iniciarse antes que los servicios dependientes.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -374,7 +374,7 @@ Get-WmiObject -Query $query -Namespace &quot;root\cimv2&quot; | format-list Name
 [Tareas wmi para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Ejemplos de aplicaciones wmi de C++](wmi-c---application-examples.md)
+[Ejemplos de aplicación C++ de WMI](wmi-c---application-examples.md)
 </dt> <dt>
 
 [TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)
