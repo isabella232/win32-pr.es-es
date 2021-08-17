@@ -1,7 +1,7 @@
 ---
-description: Comprueba y descarga un objeto ActiveX.
+description: Comprueba y descarga un ActiveX objeto .
 ms.assetid: a477c6dc-32a7-4d17-a997-6df4967d6c55
-title: 'IeAxiService:: Initialize (método)'
+title: IeAxiService::Initialize (Método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 2b2e388f955c968220223519150fc4dc5b7af4a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 911d955f84d81b225a1b4062e47b2b9b6ab6d058aa6df2e6a72a8d40242345a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119414895"
 ---
-# <a name="ieaxiserviceinitialize-method"></a>IeAxiService:: Initialize (método)
+# <a name="ieaxiserviceinitialize-method"></a>IeAxiService::Initialize (Método)
 
-El método **Initialize** comprueba y descarga un objeto ActiveX. Si el objeto cumple los requisitos de la Directiva, este método inicializa un objeto del sistema que instala el objeto ActiveX.
+El **método Initialize** comprueba y descarga un ActiveX objeto . Si el objeto cumple los requisitos de directiva, este método inicializa un objeto del sistema que instala ActiveX objeto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,58 +44,58 @@ SECURITY_STATUS Initialize(
 
 <dl> <dt>
 
-*hwndParent* \[ de\]
+*hwndParent* \[ En\]
 </dt> <dd>
 
 Identificador de la ventana primaria de la ventana que está intentando instalar el control ActiveX.
 
 </dd> <dt>
 
-*dwClientPID* \[ de\]
+*dwClientPID* \[ En\]
 </dt> <dd>
 
-IDENTIFICADOR de proceso del proceso que realiza la llamada.
+Identificador de proceso del proceso que realiza la llamada.
 
 </dd> <dt>
 
-*bstrDesktop* \[ de\]
+*bstrDesktop* \[ En\]
 </dt> <dd>
 
-Escritorio del objeto.
+El escritorio del objeto.
 
 </dd> <dt>
 
-*bstrClsID* \[ de\]
+*bstrClsID* \[ En\]
 </dt> <dd>
 
-IDENTIFICADOR de clase del objeto ActiveX que se va a instalar.
+Identificador de clase del objeto ActiveX instalar.
 
 </dd> <dt>
 
-*bstrURL* \[ de\]
+*bstrURL* \[ En\]
 </dt> <dd>
 
-Dirección URL del objeto ActiveX que se va a instalar.
+Dirección URL del objeto ActiveX instalar.
 
 </dd> <dt>
 
-*pbstrNonce* \[ enuncia\]
+*pbstrNonce* \[ out\]
 </dt> <dd>
 
-Contexto que se puede utilizar para compartir información de estado en llamadas a otros métodos utilizados para comprobar y descargar el objeto ActiveX.
+Contexto que se puede usar para compartir información de estado en llamadas a otros métodos usados para comprobar y descargar el ActiveX objeto.
 
 </dd> <dt>
 
-*ppISyncBrokerInterface* \[ enuncia\]
+*ppISyncBrokerInterface* \[ out\]
 </dt> <dd>
 
-Puntero a la instancia de la interfaz [**IeAxiSystemInstaller**](ieaxisysteminstaller.md) que instala el control ActiveX.
+Puntero a la instancia de la [**interfaz IeAxiSystemInstaller**](ieaxisysteminstaller.md) que instala el control ActiveX control .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es S \_ OK.
+Si la función se realiza correctamente, el valor devuelto es S \_ OK.
 
 Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes códigos de error.
 
@@ -103,7 +103,7 @@ Si se produce un error en la función, el valor devuelto puede ser uno de los si
 
 | Código o valor devuelto                                                                                                                                                              | Descripción                                            |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| <dl> <dt>**Confianza \_ de E \_ \_ no \_**</dt> es de confianza <dt>0x800B0004</dt> </dl> | El objeto ActiveX no debe estar instalado.<br/> |
+| <dl> <dt>**TRUST \_ E \_ ASUNTO \_ NO \_ DE**</dt> <dt>CONFIANZA 0x800B0004</dt> </dl> | El ActiveX no debe instalarse.<br/> |
 
 
 
@@ -113,15 +113,15 @@ Si se produce un error en la función, el valor devuelto puede ser uno de los si
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows Vista Ultimate \[ solo aplicaciones de escritorio\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista \[ Ultimate\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                 |
 | IID<br/>                      | IID \_ IeAxiService se define como E9E92380-9ECD-4982-A0EB-6815A56CCF27<br/>                           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

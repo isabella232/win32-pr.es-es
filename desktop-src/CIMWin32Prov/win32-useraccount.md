@@ -1,8 +1,8 @@
 ---
-description: La de Win32 \_ cuentadeusuario&\# 32; La clase WMI contiene información acerca de una cuenta de usuario en un equipo que ejecuta Windows.
+description: UserAccount de Win32 \_&\# 32; La clase WMI contiene información sobre una cuenta de usuario en un sistema informático que ejecuta Windows.
 ms.assetid: 747b2ce2-ae38-47de-bf3a-97058df56a7a
 ms.tgt_platform: multiple
-title: Win32_UserAccount (clase)
+title: Win32_UserAccount clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -30,23 +30,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b5af83f7a52e9f3db9dbaa4a959bfe01ae740746
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: df907b1686677db8ea895d8788055567e24dc7be7ffe758bcfa82801591a0dfb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104080137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922755"
 ---
-# <a name="win32_useraccount-class"></a>Win32 \_ cuentadeusuario (clase)
+# <a name="win32_useraccount-class"></a>Clase UserAccount de Win32 \_
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ cuentadeusuario de Win32** contiene información acerca de una cuenta de usuario en un equipo que ejecuta Windows.
+La **clase WMI \_ UserAccount** [de](../wmisdk/retrieving-a-class.md) Win32 contiene información sobre una cuenta de usuario en un equipo que ejecuta Windows.
 
 > [!Note]  
-> Dado que el **nombre** y el **dominio** son propiedades clave, la enumeración de **Win32 \_ cuentadeusuario** en una red de gran tamaño puede afectar negativamente al rendimiento. Llamar a **GetObject** o consultar una instancia específica tiene menos impacto.
+> Dado que name **y** **domain son propiedades** clave, la enumeración de UserAccount de **Win32 \_** en una red grande puede afectar negativamente al rendimiento. Llamar **a GetObject** o consultar una instancia específica tiene menos impacto.
 
  
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -75,20 +75,20 @@ class Win32_UserAccount : Win32_Account
 
 ## <a name="members"></a>Miembros
 
-La clase **Win32 \_ cuentadeusuario** tiene estos tipos de miembros:
+La **clase \_ UserAccount de Win32** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ cuentadeusuario** tiene estos métodos.
+La **clase \_ UserAccount de Win32** tiene estos métodos.
 
 
 
 | Método                                                     | Descripción                                             |
 |:-----------------------------------------------------------|:--------------------------------------------------------|
-| [**Cambiar el nombre**](rename-method-in-class-win32-useraccount.md) | Permite cambiar el nombre de la cuenta de usuario.<br/> |
+| [**Renombrar**](rename-method-in-class-win32-useraccount.md) | Permite cambiar el nombre de la cuenta de usuario.<br/> |
 
 
 
@@ -96,23 +96,23 @@ La clase **Win32 \_ cuentadeusuario** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **Win32 \_ cuentadeusuario** tiene estas propiedades.
+La **clase \_ UserAccount de Win32** tiene estas propiedades.
 
 <dl> <dt>
 
 **AccountType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Network Management Structures \| [**User \_ info \_ 2**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_2) \| usri2 \_ flags")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("marcas usri2 de Estructuras de administración de redes win32API \| USER INFO \| [**\_ \_ 2")**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_2) \| \_
 </dt> </dl>
 
-Marcas que describen las características de una cuenta de usuario de Windows.
+Marcas que describen las características de una cuenta Windows usuario.
 
 <dt>
 
@@ -123,7 +123,7 @@ Marcas que describen las características de una cuenta de usuario de Windows.
 
 </dt> <dd>
 
-**FI \_ - \_ cuenta duplicada temporal \_**
+**CUENTA DUPLICADA TEMPORAL DE UF \_ \_ \_**
 
 Cuenta de usuario local para los usuarios que tienen una cuenta principal en otro dominio. Esta cuenta solo proporciona acceso de usuario a este dominio, no a ningún dominio que confíe en este dominio.
 
@@ -136,9 +136,9 @@ Cuenta de usuario local para los usuarios que tienen una cuenta principal en otr
 
 </dt> <dd>
 
-**\_cuenta normal de fi \_**
+**CUENTA \_ NORMAL DE \_ UF**
 
-Tipo de cuenta predeterminado que representa a un usuario típico.
+Tipo de cuenta predeterminado que representa un usuario típico.
 
 </dd> <dt>
 
@@ -149,35 +149,35 @@ Tipo de cuenta predeterminado que representa a un usuario típico.
 
 </dt> <dd>
 
-**cuenta de confianza entre \_ dominios \_ \_**
+**CUENTA DE \_ CONFIANZA DE UF \_ \_ INTERDOMAIN**
 
-Cuenta para un dominio del sistema que confía en otros dominios.
+Cuenta de un dominio del sistema que confía en otros dominios.
 
 </dd> <dt>
 
 <span id="Workstation_trust_account"></span><span id="workstation_trust_account"></span><span id="WORKSTATION_TRUST_ACCOUNT"></span>
 
-<span id="Workstation_trust_account"></span><span id="workstation_trust_account"></span><span id="WORKSTATION_TRUST_ACCOUNT"></span>**Cuenta de confianza de estación de trabajo** (4096)
+<span id="Workstation_trust_account"></span><span id="workstation_trust_account"></span><span id="WORKSTATION_TRUST_ACCOUNT"></span>**Cuenta de confianza de estación** de trabajo (4096)
 
 
 </dt> <dd>
 
-**cuenta de confianza de estación de trabajo de fi \_ \_ \_**
+**CUENTA DE CONFIANZA \_ DE LA ESTACIÓN DE TRABAJO DE \_ \_ UF**
 
-Cuenta de equipo para un equipo que ejecuta Windows y que es miembro de este dominio.
+Cuenta de equipo para un sistema de equipo Windows que es miembro de este dominio.
 
 </dd> <dt>
 
 <span id="Server_trust_account"></span><span id="server_trust_account"></span><span id="SERVER_TRUST_ACCOUNT"></span>
 
-<span id="Server_trust_account"></span><span id="server_trust_account"></span><span id="SERVER_TRUST_ACCOUNT"></span>**Cuenta de confianza de servidor** (8192)
+<span id="Server_trust_account"></span><span id="server_trust_account"></span><span id="SERVER_TRUST_ACCOUNT"></span>**Cuenta de confianza del** servidor (8192)
 
 
 </dt> <dd>
 
-**\_cuenta de \_ confianza de servidor de up \_**
+**CUENTA DE \_ CONFIANZA \_ DEL SERVIDOR \_ UF**
 
-Cuenta para un controlador de dominio de copia de seguridad del sistema que es miembro de este dominio.
+Cuenta de un controlador de dominio de copia de seguridad del sistema que sea miembro de este dominio.
 
 </dd> </dl>
 
@@ -192,12 +192,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**displayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
 Dominio y nombre de usuario de la cuenta.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -210,28 +210,28 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Descripción")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Description")
 </dt> </dl>
 
 Descripción de la cuenta.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**Deshabilitada**
+**Deshabilitado**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Network Management Structures \| User \_ info \| fi \_ ACCOUNTDISABLE")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| \_ \| UF \_ ACCOUNTDISABLE")
 </dt> </dl>
 
-La cuenta de usuario de Windows está deshabilitada.
+Windows cuenta de usuario está deshabilitada.
 
 </dd> <dt>
 
@@ -244,10 +244,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("domain"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Network Management Functions \| domainname")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("Domain"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Functions \| domainname")
 </dt> </dl>
 
-Nombre del dominio de Windows al que pertenece una cuenta de usuario, por ejemplo: "NA-SALES".
+Nombre del dominio Windows al que pertenece una cuenta de usuario, por ejemplo: "NA-SALES".
 
 </dd> <dt>
 
@@ -257,31 +257,31 @@ Nombre del dominio de Windows al que pertenece una cuenta de usuario, por ejempl
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Network Management Structures \| [**User \_ info \_ 2**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_2) \| **usri2 \_ Full \_ Name**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 2**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_2) \| **usri2 \_ full \_ name**")
 </dt> </dl>
 
-Nombre completo de un usuario local, por ejemplo: "dan Wilson".
+Nombre completo de un usuario local, por ejemplo: "Dan Apellido".
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](../wmisdk/standard-qualifiers.md) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Fecha de instalación")
 </dt> </dl>
 
-Fecha en que el objeto está instalado. Esta propiedad no necesita un valor para indicar que el objeto está instalado.
+Fecha en que se instala el objeto. Esta propiedad no necesita un valor para indicar que el objeto está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -294,12 +294,12 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **fijos**](../wmisdk/standard-wmi-qualifiers.md)
+Calificadores: [ **Corregido**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
-Si es **true**, la cuenta se define en el equipo local.
+Si **es true**, la cuenta se define en el equipo local.
 
-Esta propiedad se hereda de [**la \_ cuenta de Win32**](win32-account.md).
+Esta propiedad se hereda de la [**cuenta de \_ Win32.**](win32-account.md)
 
 </dd> <dt>
 
@@ -309,13 +309,13 @@ Esta propiedad se hereda de [**la \_ cuenta de Win32**](win32-account.md).
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Network Management Structures \| [**User \_ info \_ 2**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_2) \| **up \_ bloqueos**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 2**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_2) \| **UF \_ LOCKOUT**")
 </dt> </dl>
 
-Si es **true**, la cuenta de usuario está bloqueada en el sistema operativo Windows.
+Si **es true**, la cuenta de usuario está bloqueada del Windows operativo.
 
 </dd> <dt>
 
@@ -328,14 +328,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("Name"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Network Management Structure \| Name")
+Calificadores: [**Invalidación**](../wmisdk/standard-qualifiers.md) ("Nombre"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Nombre de estructuras de administración de red win32API") \| \|
 </dt> </dl>
 
-Nombre de la cuenta de usuario de Windows en el dominio que especifica la propiedad de **dominio** de esta clase.
+Nombre de la Windows usuario en el dominio que especifica la propiedad **Domain** de esta clase.
 
 Ejemplo: "danwilson".
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -345,13 +345,13 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Network Management Structures \| [**\_ info \_ 2**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_2) \| **up \_ passwd \_ peralte \_ perchange**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 2**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_2) \| **UF \_ PASSWD \_ CANT \_ CHANGE**")
 </dt> </dl>
 
-Si **es true**, se puede cambiar la contraseña de esta cuenta de usuario.
+Si **es true,** se puede cambiar la contraseña de esta cuenta de usuario.
 
 </dd> <dt>
 
@@ -361,13 +361,13 @@ Si **es true**, se puede cambiar la contraseña de esta cuenta de usuario.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Network Management Structures \| [**User \_ info \_ 2**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_2) \| **up not \_ \_ expiren \_ passwd**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 2**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_2) \| **UF \_ DONT EXPIRE \_ \_ PASSWD**")
 </dt> </dl>
 
-Si **es true**, la contraseña de esta cuenta de usuario expira.
+Si **es true,** la contraseña de esta cuenta de usuario expira.
 
 </dd> <dt>
 
@@ -377,13 +377,13 @@ Si **es true**, la contraseña de esta cuenta de usuario expira.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Network Management Structures \| [**User \_ info \_ 2**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_2) \| **up \_ passwd \_ NOTREQD**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USER INFO \| [**\_ \_ 2**](/windows/win32/api/lmaccess/ns-lmaccess-user_info_2) \| **UF \_ PASSWD \_ NOTREQD")**
 </dt> </dl>
 
-Si es **true**, se requiere una contraseña en una cuenta de usuario de Windows. Si **es false**, esta cuenta no requiere una contraseña.
+Si **es true,** se requiere una contraseña en una Windows de usuario. Si **es false,** esta cuenta no requiere una contraseña.
 
 </dd> <dt>
 
@@ -396,30 +396,30 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**fixed**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| (identificadores de seguridad (SID)")
+Calificadores: [**Corregido,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Identificadores de seguridad \| (SID) de Win32API")
 </dt> </dl>
 
-Identificador de seguridad (SID) para esta cuenta. Un SID es un valor de cadena de longitud variable que se usa para identificar un administrador de confianza. Cada cuenta tiene un SID único que emite una autoridad, como un dominio de Windows. El SID se almacena en la base de datos de seguridad. Cuando un usuario inicia sesión, el sistema recupera el SID del usuario de la base de datos, coloca el SID en el token de acceso del usuario y, a continuación, usa el SID en el token de acceso del usuario para identificar al usuario en todas las interacciones posteriores con la seguridad de Windows. Cada SID es un identificador único para un usuario o grupo, y otro usuario o grupo no puede tener el mismo SID.
+Identificador de seguridad (SID) de esta cuenta. Un SID es un valor de cadena de longitud variable que se usa para identificar a un administrador de confianza. Cada cuenta tiene un SID único que una autoridad, como un dominio Windows, emite. El SID se almacena en la base de datos de seguridad. Cuando un usuario inicia sesión, el sistema recupera el SID de usuario de la base de datos, coloca el SID en el token de acceso de usuario y, a continuación, usa el SID en el token de acceso de usuario para identificar al usuario en todas las interacciones posteriores con Windows seguridad. Cada SID es un identificador único para un usuario o grupo, y un usuario o grupo diferente no puede tener el mismo SID.
 
-Esta propiedad se hereda de [**la \_ cuenta de Win32**](win32-account.md).
+Esta propiedad se hereda de la [**cuenta de \_ Win32.**](win32-account.md)
 
 </dd> <dt>
 
-**SID**
+**SIDType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**fixed**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Access Control tipos de enumeración \| [**\_ nombre SID \_ usar**](/windows/win32/api/winnt/ne-winnt-sid_name_use)")
+Calificadores: [**Fixed**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Access Control enumeration types \| [**SID NAME \_ \_ USE**](/windows/win32/api/winnt/ne-winnt-sid_name_use)")
 </dt> </dl>
 
 Valor enumerado que especifica el tipo de SID.
 
-Esta propiedad se hereda de [**la \_ cuenta de Win32**](win32-account.md).
+Esta propiedad se hereda de la [**cuenta de \_ Win32.**](win32-account.md)
 
 <dt>
 
@@ -497,12 +497,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**displayName**](../wmisdk/standard-qualifiers.md) ("status")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Estado actual de un objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL", que es un elemento como una unidad de disco duro habilitada para SMART que puede estar funcionando correctamente, pero predice un error en un futuro próximo. Los Estados no operativos incluyen: "error", "iniciando", "detención" y "servicio", que se puede aplicar durante la resilverización de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo.
+Estado actual de un objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail", que es un elemento como una unidad de disco duro habilitada para SMART que puede funcionar correctamente, pero predice un error en un futuro próximo. Los estados no de operación incluyen: "Error", "Starting", "Stopping" y "Service", que se pueden aplicar durante la resilización reflejada de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son los siguientes:
 
@@ -510,108 +510,108 @@ Los valores son los siguientes:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error de pred")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detener** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **Win32 \_ cuentadeusuario** se deriva de la [**\_ cuenta de Win32**](win32-account.md).
+La **clase \_ UserAccount de Win32** se deriva de [**la cuenta de Win32. \_**](win32-account.md)
 
 > [!Note]  
-> No se devuelve un error para un intento de escribir en una propiedad de solo lectura, y el valor de la propiedad permanece inalterado.
+> No se devuelve un error para un intento de escribir en una propiedad de solo lectura y el valor de la propiedad permanece sin cambios.
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo de la [lista de cuentas de usuario locales que usan](https://Gallery.TechNet.Microsoft.Com/827623f5-eb55-4035-8f57-25c4afb444cd) código de VBScript de WMI en la galería de TechNet usa **Win32 \_ cuentadeusuario** para devolver información acerca de las cuentas de usuario local que se encuentran en un equipo.
+El ejemplo de código List [Local User Accounts Using WMI](https://Gallery.TechNet.Microsoft.Com/827623f5-eb55-4035-8f57-25c4afb444cd) VBScript de la Galería de TechNet usa UserAccount de **Win32 \_** para devolver información sobre las cuentas de usuario locales que se encuentran en un equipo.
 
-[Convertir el SID en la cuenta de usuario y la cuenta de usuario en SID](https://Gallery.TechNet.Microsoft.Com/f1c83aed-fe60-48d5-90ab-22388fcbd54f) El ejemplo de código de PowerShell en la galería de TechNet usa **Win32 \_ cuentadeusuario** para traducir un SID a una cuenta de usuario o una cuenta de usuario a Sid.
+[Traducir SID a cuenta de usuario y cuenta de usuario a SID](https://Gallery.TechNet.Microsoft.Com/f1c83aed-fe60-48d5-90ab-22388fcbd54f) El ejemplo de código de PowerShell de la Galería de TechNet usa **\_ UserAccount de Win32** para traducir un SID a una cuenta de usuario o a una cuenta de usuario a SID.
 
-En el ejemplo de código de VBScript siguiente se muestra cómo obtener el nombre completo de un usuario en un equipo local. El nombre completo es el nombre de idioma, por ejemplo, una persona puede tener el nombre de usuario "kensanchez" y el nombre completo puede ser "Ken Sánchez", por lo que debe sustituir el nombre de dominio real y el nombre de usuario de "MyDomainName" y "nombre de usuario". Para una consulta eficaz, debe especificar las propiedades de dominio y nombre de usuario.
+En el siguiente ejemplo de código VBScript se muestra cómo obtener el nombre completo de un usuario en un equipo local. El nombre completo es el nombre de idioma humano, por ejemplo, una persona puede tener el nombre de usuario "kensandomain" y el nombre completo puede ser "Ken Sandomain", por lo que sustituya el nombre de dominio real y el nombre de usuario por "MyDomainName" y "MyUserName". Para una consulta eficaz, debe especificar las propiedades de dominio y nombre de usuario.
 
-Si es administrador de un equipo remoto, puede asignar el nombre del equipo remoto para strComputer (en lugar de ".") y, a continuación, usar el siguiente tipo de script para obtener el nombre completo de una cuenta de usuario en un equipo local, desde un equipo remoto.
+Si es administrador en un equipo remoto, puede asignar el nombre del equipo remoto para strComputer (en lugar de ".") y, a continuación, usar el siguiente tipo de script para obtener el nombre completo de una cuenta de usuario en un equipo local, desde un equipo remoto.
 
 
 ```VB
@@ -652,21 +652,21 @@ using System.Management;
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_Cuenta Win32**](win32-account.md)
+[**Cuenta \_ win32**](win32-account.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

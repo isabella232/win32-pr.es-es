@@ -1,35 +1,35 @@
 ---
-title: Usar SAMI con el control de Media Player de Windows en un explorador
-description: Usar SAMI con el control de Media Player de Windows en un explorador
+title: Uso de SAMI con Reproductor de Windows Media Control en un explorador
+description: Uso de SAMI con Reproductor de Windows Media Control en un explorador
 ms.assetid: 41906e57-adaa-4df7-86ba-19b8a757e216
 keywords:
-- Windows Media Player, intercambio de multimedia accesible sincronizado (SAMI)
-- Modelo de objetos de Windows Media Player, intercambio de contenido multimedia accesible sincronizado (SAMI)
-- modelo de objetos, intercambio de multimedia accesible sincronizado (SAMI)
-- Windows Media Player Mobile, intercambio de multimedia accesible sincronizado (SAMI)
-- Control ActiveX de Windows Media Player, intercambio de multimedia accesible sincronizado (SAMI)
-- Control ActiveX móvil de Windows Media Player, intercambio de contenido multimedia accesible sincronizado (SAMI)
-- Control ActiveX, intercambio de multimedia accesible sincronizado (SAMI)
-- Intercambio de contenido multimedia accesible sincronizado (SAMI), archivos
-- SAMI (intercambio de multimedia accesible sincronizado), archivos
-- Intercambio de multimedia accesible sincronizado (SAMI), código de ejemplo
-- SAMI (intercambio de multimedia accesible sincronizado), código de ejemplo
+- Reproductor de Windows Media,Synchronized Accessible Media Interchange (SAMI)
+- Reproductor de Windows Media modelo de objetos, Intercambio multimedia accesible sincronizado (SAMI)
+- modelo de objetos, intercambio multimedia accesible sincronizado (SAMI)
+- Reproductor de Windows Media Intercambio multimedia accesible móvil y sincronizado (SAMI)
+- Reproductor de Windows Media ActiveX control, Intercambio multimedia accesible sincronizado (SAMI)
+- Reproductor de Windows Media Control ActiveX móvil, intercambio multimedia accesible sincronizado (SAMI)
+- ActiveX control,Intercambio multimedia accesible sincronizado (SAMI)
+- Intercambio multimedia accesible sincronizado (SAMI),files
+- SAMI (intercambio multimedia accesible sincronizado), archivos
+- Intercambio multimedia accesible sincronizado (SAMI), código de ejemplo
+- SAMI (intercambio de medios accesible sincronizado),código de ejemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b651c3af117942d56ffc5334323913d26cdf6f99
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d277f2849e6036d85bc8c03940a7dbd59df8b81083ca88240ebd68be768fde9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134348"
 ---
-# <a name="using-sami-with-the-windows-media-player-control-in-a-browser"></a>Usar SAMI con el control de Media Player de Windows en un explorador
+# <a name="using-sami-with-the-windows-media-player-control-in-a-browser"></a>Uso de SAMI con Reproductor de Windows Media Control en un explorador
 
-En lugar de crear un archivo SAMI para cada estilo de fuente o lenguaje, puede declarar diferentes clases de estilo en un archivo mediante scripting básico y el modelo de objetos de control de Windows Media Player. Puede crear controles personalizados que permitan al usuario elegir entre las distintas opciones de estilo y lenguaje. Además, tiene un control completo sobre el diseño de la interfaz del reproductor y la personalización de cada función.
+En lugar de crear un archivo SAMI para cada estilo de fuente o lenguaje, puede declarar clases de estilo diferentes en un archivo mediante el scripting básico y el modelo de objetos Reproductor de Windows Media control. Puede crear controles personalizados que permitan al usuario elegir entre las distintas opciones de estilo y lenguaje. Además, tiene un control completo sobre el diseño de la interfaz player y la personalización de cada función.
 
-Para obtener información detallada sobre cómo insertar el control Media Player de Windows en una página web, vea [ejemplo simple de scripting en una página web](simple-example-of-scripting-in-a-web-page.md).
+Para obtener información detallada sobre cómo insertar el control Reproductor de Windows Media en una página web, vea Ejemplo simple de [scripting en una página web](simple-example-of-scripting-in-a-web-page.md).
 
-En el ejemplo de código siguiente se muestra cómo usar subtítulos cerrados con el control de Windows Media Player incrustado en una página web. Incluye controles que permiten al usuario seleccionar el estilo y el idioma de la fuente.
+En el código de ejemplo siguiente se muestra cómo usar subtítulos con el control Reproductor de Windows Media insertado en una página web. Incluye controles para permitir al usuario seleccionar el estilo de fuente y el idioma.
 
 
 ```C++
@@ -116,12 +116,12 @@ En el ejemplo de código siguiente se muestra cómo usar subtítulos cerrados co
 
 <dl> <dt>
 
-[**Agregar subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
+[**Adición de subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

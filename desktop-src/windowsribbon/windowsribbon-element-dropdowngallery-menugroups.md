@@ -1,9 +1,9 @@
 ---
-title: Propiedad DropDownGallery. MenuGroups
-description: Representa un contenedor para un conjunto de elementos de menú desplegable en un control de la galería de Drop-Down.
+title: DropDownGallery.MenuGroups, propiedad
+description: Representa un contenedor para un conjunto de elementos de menú desplegable en un control Drop-Down galería.
 ms.assetid: 594f6ae5-760e-456d-98cd-04ecae0bae99
 keywords:
-- DropDownGallery. MenuGroups (propiedad) cinta de Windows
+- DropDownGallery.MenuGroups, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67fcaeb81020cf4c317bf065c25a770d2a77e21f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ffdc52877884ac3a6407a0c7ed9f511cf78f8bcb5c125beb5f2ed19e651b83da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105720230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119393064"
 ---
-# <a name="dropdowngallerymenugroups-property"></a>Propiedad DropDownGallery. MenuGroups
+# <a name="dropdowngallerymenugroups-property"></a>DropDownGallery.MenuGroups, propiedad
 
-Representa un contenedor para un conjunto de elementos de menú desplegable en un control de la [Galería](windowsribbon-controls-dropdowngallery.md) desplegable.
+Representa un contenedor para un conjunto de elementos de menú desplegable en un control [Galería desplegable.](windowsribbon-controls-dropdowngallery.md)
 
 ## <a name="usage"></a>Uso
 
@@ -41,7 +41,7 @@ No hay atributos.
 
 | Elemento                                                         | Descripción                                     |
 |-----------------------------------------------------------------|-------------------------------------------------|
-| [**MenuGroup**](windowsribbon-element-menugroup.md)<br/> | Debe aparecer al menos una vez<br/> <br/> |
+| [**MenuGroup**](windowsribbon-element-menugroup.md)<br/> | Debe producirse al menos una vez<br/> <br/> |
 
 
 
@@ -55,17 +55,17 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Obligatorio.
 
-Debe aparecer exactamente una vez para cada elemento [**DropDownGallery**](windowsribbon-element-dropdowngallery.md) .
+Debe producirse exactamente una vez [**para cada elemento DropDownGallery.**](windowsribbon-element-dropdowngallery.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para el elemento **DropDownGallery. MenuGroups** .
+En el ejemplo siguiente se muestra el marcado básico para **el elemento DropDownGallery.MenuGroups.**
 
-En esta sección de código se muestra la declaración de control **DropDownGallery. MenuGroups** en un espacio de comandos de la [Galería](windowsribbon-controls-dropdowngallery.md) desplegable.
+En esta sección de código se muestra la declaración de control **DropDownGallery.MenuGroups** en un espacio de comandos [de la galería](windowsribbon-controls-dropdowngallery.md) desplegable.
 
 
 ```XML
@@ -100,18 +100,18 @@ En esta sección de código se muestra la declaración de control **DropDownGall
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Control Galería desplegable**](windowsribbon-element-dropdowngallery.md)
+[**Control galería desplegable**](windowsribbon-element-dropdowngallery.md)
 </dt> <dt>
 
 [Trabajar con galerías](ribbon-controls-galleries.md)

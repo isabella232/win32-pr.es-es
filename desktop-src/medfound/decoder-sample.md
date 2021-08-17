@@ -4,29 +4,29 @@ ms.assetid: 941e5400-e679-41f4-9830-3548dc6037aa
 title: Ejemplo de descodificador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dd7586534876cfa7f530e675b0342a92bf46b8a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 290f8b2db32b12d535feaeef65f37b77e1a29115cd8844a8d8aad29fb7ce699a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119449395"
 ---
 # <a name="decoder-sample"></a>Ejemplo de descodificador
 
 Muestra cómo escribir un descodificador para Microsoft Media Foundation.
 
-En este ejemplo se implementa un descodificador de vídeo de MPEG-1 ficticio que muestra el código de tiempo para cada fotograma de vídeo. Realmente no descodifica MPEG-1 fragmentada. En la imagen siguiente se muestra la salida de vídeo del descodificador.
+En este ejemplo se implementa un descodificador de vídeo MPEG-1 ficticio que muestra el código de hora de cada fotograma de vídeo. En realidad, no descodifica la secuencia de bits MPEG-1. En la imagen siguiente se muestra la salida de vídeo del descodificador.
 
 ![captura de pantalla de un fotograma de vídeo desde el descodificador](images/decodersample.png)
 
 > [!Note]  
-> Antes de la Windows SDK para Windows 7, este ejemplo se incluyó como parte del [ejemplo MPEG1Source](mpeg1source-sample.md).
+> Antes del SDK Windows para Windows 7, este ejemplo se incluía como parte del [ejemplo MPEG1Source](mpeg1source-sample.md).
 
  
 
-## <a name="apis-demonstrated"></a>API mostradas
+## <a name="apis-demonstrated"></a>API demostradas
 
-Este ejemplo muestra las siguientes interfaces de Media Foundation:
+En este ejemplo se muestran las Media Foundation siguientes:
 
 -   [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)
 
@@ -36,7 +36,7 @@ Este ejemplo muestra las siguientes interfaces de Media Foundation:
 
 | Producto                                                        | Versión   |
 |----------------------------------------------------------------|-----------|
-| [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx) | Windows 7 |
+| [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx) | Windows 7 |
 
 
 
@@ -44,7 +44,7 @@ Este ejemplo muestra las siguientes interfaces de Media Foundation:
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-Este ejemplo está disponible en el [repositorio de github de ejemplos de Windows clásico](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/Decoder).
+Este ejemplo está disponible en el repositorio [de github Windows ejemplos clásicos](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/Decoder).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -56,7 +56,7 @@ Este ejemplo está disponible en el [repositorio de github de ejemplos de Window
 [Media Foundation transformaciones](media-foundation-transforms.md)
 </dt> <dt>
 
-[Escribir una MFT personalizada](writing-a-custom-mft.md)
+[Escritura de un MFT personalizado](writing-a-custom-mft.md)
 </dt> </dl>
 
  

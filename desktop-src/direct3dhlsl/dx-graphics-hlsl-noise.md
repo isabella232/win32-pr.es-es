@@ -1,6 +1,6 @@
 ---
 title: noise
-description: Genera un valor aleatorio mediante el algoritmo Perlen-Noise.
+description: Genera un valor aleatorio mediante el algoritmo perlin-noise.
 ms.assetid: 0188a7f3-9955-4e1c-9370-ef1d8aff3765
 keywords:
 - HLSL de ruido
@@ -13,21 +13,21 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6a4dc01eaeb8276527d5d78b07a250d2a6fb1ab9
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 5eb93d32e7730b6840700bba9dc5a629bf3180f83673581f8589a254d467cff8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104421645"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120109"
 ---
 # <a name="noise"></a>noise
 
-Genera un valor aleatorio mediante el algoritmo Perlen-Noise.
+Genera un valor aleatorio mediante el algoritmo perlin-noise.
 
 
 
 
-| *RET* (*x*) |
+| *ret* noise(*x*) |
 |------------------|
 
 
@@ -40,7 +40,7 @@ Genera un valor aleatorio mediante el algoritmo Perlen-Noise.
 
 | Elemento                                                   | Descripción                                                                    |
 |--------------------------------------------------------|--------------------------------------------------------------------------------|
-| <span id="x"></span><span id="X"></span>*x1*<br/> | \[en \] un vector de punto flotante a partir del cual se generará el ruido de Perl.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[en \] Un vector de punto flotante a partir del cual se va a generar el ruido de Perlin.<br/> |
 
 
 
@@ -48,26 +48,26 @@ Genera un valor aleatorio mediante el algoritmo Perlen-Noise.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Valor de ruido de Perlen dentro de un intervalo entre-1 y 1.
+Valor de ruido de Perlin dentro de un intervalo entre -1 y 1.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores de ruido de Perlen cambian sin problemas de un punto a otro en un espacio, lo que crea valores de aspecto natural y generados de forma aleatoria. Puede usar Perlen ruido para generar texturas de procedimientos para efectos como humo y fuego.
+Los valores de ruido de perlin cambian sin problemas de un punto a otro en un espacio, creando valores naturales generados aleatoriamente. Puede usar el ruido de Perlin para generar texturas de procedimientos para efectos como humo y incendio.
 
 ## <a name="type-description"></a>Descripción del tipo
 
 
 
-| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamaño |
+| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size |
 |-------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|------|
-| *x*   | [**medios**](dx-graphics-hlsl-intrinsic-functions.md) | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera  |
-| *direcc* | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md) | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | 1    |
+| *x*   | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera  |
+| *Ret* | [**Escalar**](dx-graphics-hlsl-intrinsic-functions.md) | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | 1    |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -75,8 +75,8 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible           |
 |------------------------------------------------------------------------------------|---------------------|
-| Modelador [modelo 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador más altos | no                  |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sí ( \_ solo TX 1 \_ 0) |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | No                  |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sí (solo tx \_ 1 \_ 0) |
 
 
 
@@ -86,7 +86,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

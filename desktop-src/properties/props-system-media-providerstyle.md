@@ -1,17 +1,17 @@
 ---
 description: Estilo de música o vídeo, proporcionado por el proveedor de metadatos.
 ms.assetid: e5334993-c621-4e26-a317-e2639b7e490e
-title: System. Media. ProviderStyle
+title: System.Media.ProviderStyle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa6b53fe8c3e7bef6cab2925e19ba550525daddb
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: f519d7e111674aa8137224b84f4eb1bd80444bd4f0d33b9235e5e74513b10bad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103820255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970344"
 ---
-# <a name="systemmediaproviderstyle"></a>System. Media. ProviderStyle
+# <a name="systemmediaproviderstyle"></a>System.Media.ProviderStyle
 
 Estilo de música o vídeo, proporcionado por el proveedor de metadatos.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

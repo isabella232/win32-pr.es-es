@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentUnicodeLanguageValidationFailureException'
-title: Constructor de EsentUnicodeLanguageValidationFailureException
+description: 'Más información sobre: Constructor EsentUnicodeLanguageValidationFailureException'
+title: Constructor EsentUnicodeLanguageValidationFailureException
 TOCTitle: 'EsentUnicodeLanguageValidationFailureException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentUnicodeLanguageValidationFailureException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentunicodelanguagevalidationfailureexception.esentunicodelanguagevalidationfailureexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 231649956701b4eefe672eb8553d3dbb7ab868e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa5cc0711f085cc42e94f6013d028b7bc5e64f238f65cf9fcc95076a6f0b424a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105648405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119618535"
 ---
-# <a name="esentunicodelanguagevalidationfailureexception-constructor"></a>Constructor de EsentUnicodeLanguageValidationFailureException
+# <a name="esentunicodelanguagevalidationfailureexception-constructor"></a>Constructor EsentUnicodeLanguageValidationFailureException
 
 Inicializa una nueva instancia de la clase EsentUnicodeLanguageValidationFailureException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentUnicodeLanguageValidationFailureException()
 public EsentUnicodeLanguageValidationFailureException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentUnicodeLanguageValidationFailureException()
 
 [Miembros de EsentUnicodeLanguageValidationFailureException](./esentunicodelanguagevalidationfailureexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

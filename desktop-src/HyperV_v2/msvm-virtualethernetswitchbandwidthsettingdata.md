@@ -1,7 +1,7 @@
 ---
-description: Representa la configuración de ancho de banda para un conmutador virtual.
+description: Representa la configuración de ancho de banda de un conmutador virtual.
 ms.assetid: bc6f8cd3-f74a-4f4a-9ffe-a88def3966d9
-title: Msvm_VirtualEthernetSwitchBandwidthSettingData (clase)
+title: Msvm_VirtualEthernetSwitchBandwidthSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,18 +19,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ec94409366761ee208d3e8a6af59a4d07527d82f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b176cb09efdcb701cdf9cd2c4c85bda54c4ebb03712568b5e1c8240d41277c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148168"
 ---
-# <a name="msvm_virtualethernetswitchbandwidthsettingdata-class"></a>MSVM \_ VirtualEthernetSwitchBandwidthSettingData (clase)
+# <a name="msvm_virtualethernetswitchbandwidthsettingdata-class"></a>Clase Msvm \_ VirtualEthernetSwitchBandwidthSettingData
 
-Representa la configuración de ancho de banda para un conmutador virtual.
+Representa la configuración de ancho de banda de un conmutador virtual.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,13 +49,13 @@ class Msvm_VirtualEthernetSwitchBandwidthSettingData : Msvm_EthernetSwitchFeatur
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ VirtualEthernetSwitchBandwidthSettingData** tiene estos tipos de miembros:
+La **clase \_ VirtualEthernetSwitchBandwidthSettingData de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ VirtualEthernetSwitchBandwidthSettingData** tiene estas propiedades.
+La **clase Msvm \_ VirtualEthernetSwitchBandwidthSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -68,7 +68,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de la clase [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) y siempre se establece en "configuración de ancho de banda del conmutador Ethernet".
+Breve descripción del objeto. Esta propiedad se hereda de la clase [**\_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) de CIM y siempre se establece en "Ethernet Switch Bandwidth Configuración".
 
 </dd> <dt>
 
@@ -78,13 +78,13 @@ Breve descripción del objeto. Esta propiedad se hereda de la clase [**CIM \_ Ma
 Tipo de datos: **UINT64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Especifica la reserva de ancho de banda absoluta para los flujos no clasificados en el adaptador subyacente.
+Especifica la reserva de ancho de banda absoluto para los flujos sin clasificar en el adaptador subyacente.
 
 </dd> <dt>
 
@@ -94,13 +94,13 @@ Especifica la reserva de ancho de banda absoluta para los flujos no clasificados
 Tipo de datos: **UINT64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Especifica la reserva de ancho de banda en peso para los flujos no clasificados en el adaptador subyacente.
+Especifica la reserva de ancho de banda en peso para los flujos sin clasificar en el adaptador subyacente.
 
 </dd> <dt>
 
@@ -113,7 +113,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre está establecida en "representa la configuración del ancho de banda del conmutador".
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Representa la configuración del ancho de banda del conmutador".
 
 </dd> <dt>
 
@@ -126,7 +126,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda del [**\_ SettingData de CIM**](/previous-versions//cc136911(v=vs.85))y siempre se establece en "configuración de ancho de banda del conmutador Ethernet".
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85))y siempre se establece en "Ethernet Switch Bandwidth Configuración".
 
 </dd> <dt>
 
@@ -139,10 +139,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda del [**\_ SettingData de CIM**](/previous-versions//cc136911(v=vs.85)) y siempre se establece en "Microsoft: \\ *GUID* de definición \\ default".
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)) y siempre se establece en "Microsoft:Definition \\ *GUID* \\ Default".
 
 </dd> </dl>
 
@@ -152,10 +152,10 @@ Identifica de forma única una instancia de esta clase. Esta propiedad se hereda
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

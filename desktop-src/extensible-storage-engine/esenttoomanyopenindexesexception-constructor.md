@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentTooManyOpenIndexesException'
-title: Constructor de EsentTooManyOpenIndexesException
+description: 'Más información sobre: Constructor EsentTooManyOpenIndexesException'
+title: Constructor EsentTooManyOpenIndexesException
 TOCTitle: 'EsentTooManyOpenIndexesException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTooManyOpenIndexesException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenttoomanyopenindexesexception.esenttoomanyopenindexesexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6b102ef803ee42923fa5bdd4bc78b11b0ca74d61
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8b87a8f76938a226813925f905d2abaf502a986693dc8601c98d9a7f268dbff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119363065"
 ---
-# <a name="esenttoomanyopenindexesexception-constructor"></a>Constructor de EsentTooManyOpenIndexesException
+# <a name="esenttoomanyopenindexesexception-constructor"></a>Constructor EsentTooManyOpenIndexesException
 
 Inicializa una nueva instancia de la clase EsentTooManyOpenIndexesException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentTooManyOpenIndexesException()
 public EsentTooManyOpenIndexesException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentTooManyOpenIndexesException()
 
 [Miembros de EsentTooManyOpenIndexesException](./esenttoomanyopenindexesexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

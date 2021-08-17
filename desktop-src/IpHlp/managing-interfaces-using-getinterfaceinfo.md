@@ -1,23 +1,23 @@
 ---
-description: La función GetInterfaceInfo rellena un puntero a una estructura de \_ información de interfaz IP \_ con información sobre las interfaces asociadas al sistema.
+description: La función GetInterfaceInfo rellena un puntero a una estructura DE INFORMACIÓN DE INTERFAZ IP con \_ \_ información sobre las interfaces asociadas al sistema.
 ms.assetid: 0cc18e14-7329-49b0-bb07-912fa403db46
-title: Administrar interfaces mediante GetInterfaceInfo
+title: Administración de interfaces mediante GetInterfaceInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39a8ad420f8a2d4fdbacc2bf01e65f5d9fbc9d8e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1cc2afa6fe0b520e1cc5f952b44bc94052b630f4335bd739b4d7c3582d16e277
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146748"
 ---
-# <a name="managing-interfaces-using-getinterfaceinfo"></a>Administrar interfaces mediante GetInterfaceInfo
+# <a name="managing-interfaces-using-getinterfaceinfo"></a>Administración de interfaces mediante GetInterfaceInfo
 
-La función [**GetInterfaceInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getinterfaceinfo) rellena un puntero a una estructura [**de \_ \_ información de interfaz IP**](/windows/desktop/api/Ipexport/ns-ipexport-ip_interface_info) con información sobre las interfaces asociadas al sistema.
+La [**función GetInterfaceInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getinterfaceinfo) rellena un puntero a una estructura [**DE INFORMACIÓN DE \_ \_ INTERFAZ IP**](/windows/desktop/api/Ipexport/ns-ipexport-ip_interface_info) con información sobre las interfaces asociadas al sistema.
 
 **Para usar GetInterfaceInfo**
 
-1.  Declare un puntero a un objeto de [**\_ \_ información de interfaz IP**](/windows/desktop/api/Ipexport/ns-ipexport-ip_interface_info) denominado `pInfo` y un objeto **ULong** denominado `ulOutBufLen` . Declare también un objeto **DWORD** denominado `dwRetVal` (usado para la comprobación de errores).
+1.  Declare un puntero a un [**objeto IP \_ INTERFACE \_ INFO**](/windows/desktop/api/Ipexport/ns-ipexport-ip_interface_info) denominado `pInfo` y un objeto **ULONG** denominado `ulOutBufLen` . Declare también un **objeto DWORD** denominado `dwRetVal` (usado para la comprobación de errores).
     ```C++
         ULONG               ulOutBufLen;
         DWORD               dwRetVal;
@@ -30,7 +30,7 @@ La función [**GetInterfaceInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
 
 2.  Asigne memoria para las estructuras.
     > [!Note]  
-    > El tamaño de `ulOutBufLen` no es suficiente para contener la información. Vea el siguiente paso.
+    > El tamaño de `ulOutBufLen` no es suficiente para contener la información. Consulte el paso siguiente.
 
      
 
@@ -42,9 +42,9 @@ La función [**GetInterfaceInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
 
     
 
-3.  Realice una llamada inicial a [**GetInterfaceInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getinterfaceinfo) para obtener el tamaño necesario en la `ulOutBufLen` variable.
+3.  Realice una llamada inicial a [**GetInterfaceInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getinterfaceinfo) para obtener el tamaño necesario en la `ulOutBufLen` variable .
     > [!Note]  
-    > Esta llamada a la función está pensada para producir un error y se utiliza para asegurarse de que la `ulOutBufLen` variable especifica un tamaño suficiente para contener toda la información devuelta a `pInfo` . Se trata de un modelo de programación común en la aplicación auxiliar de IP para las estructuras de datos y las funciones de este tipo.
+    > Esta llamada a la función está pensada para producir un error y se usa para asegurarse de que la variable especifica un tamaño suficiente para contener toda la `ulOutBufLen` información devuelta a `pInfo` . Se trata de un modelo de programación común en el asistente de IP para estructuras de datos y funciones de este tipo.
 
      
 
@@ -58,7 +58,7 @@ La función [**GetInterfaceInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
 
     
 
-4.  Realice una segunda llamada a [**GetInterfaceInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getinterfaceinfo) con la comprobación de errores general y devuelva su valor a la variable **DWORD** `dwRetVal` (para la comprobación de errores más avanzada).
+4.  Realice una segunda llamada a [**GetInterfaceInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getinterfaceinfo) con comprobación de errores general y devuelva su valor a la variable **DWORD** `dwRetVal` (para una comprobación de errores más avanzada).
     ```C++
         if ((dwRetVal = GetInterfaceInfo(pInterfaceInfo, &ulOutBufLen)) != NO_ERROR) {
             printf("  GetInterfaceInfo failed with error: %d\n", dwRetVal);
@@ -67,7 +67,7 @@ La función [**GetInterfaceInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
 
     
 
-5.  Si la llamada se realizó correctamente, acceda a los datos de la `pInfo` estructura de datos.
+5.  Si la llamada se ha realizado correctamente, acceda a los datos desde la `pInfo` estructura de datos.
 
     ```C++
             printf("  GetInterfaceInfo succeeded.\n");
@@ -85,11 +85,11 @@ La función [**GetInterfaceInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
     
 
     > [!Note]  
-    > % WS en la primera línea denota una cadena de tipo ancho. Se utiliza porque el atributo **Name** de la estructura [**de \_ \_ \_ asignación de índice del adaptador de IP**](/windows/desktop/api/Ipexport/ns-ipexport-ip_adapter_index_map) `Adapter` es **WCHAR**, que es una cadena Unicode.
+    > %ws en la primera línea denota una cadena ancha. Esto se usa porque el **atributo Name** de la estructura [**INDEX \_ \_ \_ MAP**](/windows/desktop/api/Ipexport/ns-ipexport-ip_adapter_index_map) del ADAPTADOR DE IP es `Adapter` un **WCHAR**, que es una cadena Unicode.
 
      
 
-6.  Libere cualquier memoria asignada para la estructura *Pinfo* .
+6.  Libera cualquier memoria asignada para la *estructura pInfo.*
     ```C++
         if (pInterfaceInfo) {
             free(pInterfaceInfo);
@@ -99,9 +99,9 @@ La función [**GetInterfaceInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
 
     
 
-Siguiente paso: [Administración de direcciones IP mediante GetIpAddrTable](managing-ip-addresses-using-getipaddrtable.md)
+Paso siguiente: [Administración de direcciones IP mediante GetIpAddrTable](managing-ip-addresses-using-getipaddrtable.md)
 
-Paso anterior: [Administración de adaptadores de red con GetAdaptersInfo](managing-network-adapters-using-getadaptersinfo.md)
+Paso anterior: [Administración de adaptadores de red mediante GetAdaptersInfo](managing-network-adapters-using-getadaptersinfo.md)
 
  
 

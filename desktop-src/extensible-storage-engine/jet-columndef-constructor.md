@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_COLUMNDEF constructor'
-title: Constructor de JET_COLUMNDEF
+description: 'Más información sobre: constructor de JET_COLUMNDEF'
+title: JET_COLUMNDEF constructor
 TOCTitle: 'JET_COLUMNDEF constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_COLUMNDEF.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columndef.jet_columndef(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d3f88ea8190a58c6bf9d20154fcf2a9f8c9f40af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 376a4c31d13ced5d6de78774134ed58bb35b74290ea382273164802531aa84da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475395"
 ---
-# <a name="jet_columndef-constructor"></a>Constructor de JET_COLUMNDEF
+# <a name="jet_columndef-constructor"></a>JET_COLUMNDEF constructor
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,12 +50,12 @@ Dim instance As New JET_COLUMNDEF()
 public JET_COLUMNDEF()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_COLUMNDEF (clase)](./jet-columndef-class.md)
+[JET_COLUMNDEF clase](./jet-columndef-class.md)
 
-[Miembros de JET_COLUMNDEF](./jet-columndef-members.md)
+[JET_COLUMNDEF miembros](./jet-columndef-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

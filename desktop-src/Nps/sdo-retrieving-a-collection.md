@@ -1,25 +1,25 @@
 ---
-title: Recuperación de una colección
-description: Recuperación de una colección
+title: Recuperar una colección
+description: Recuperar una colección
 ms.assetid: b9090ad5-564c-4f48-b7bd-24617d582d2e
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 517acfa320069f9c94ee291e9215459d27ba25ad
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 343f00ee28475d1e6180646a0e548c18d51701afed587c99582dad7dc60d094c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103995435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063315"
 ---
-# <a name="retrieving-a-collection"></a>Recuperación de una colección
+# <a name="retrieving-a-collection"></a>Recuperar una colección
 
 > [!Note]  
-> Se ha cambiado el nombre del servicio de autenticación de Internet (IAS) a partir de Windows Server 2008. El contenido de este tema se aplica a IAS y NPS. En todo el texto, NPS se usa para hacer referencia a todas las versiones del servicio, incluidas las versiones mencionadas originalmente como IAS.
+> El nombre del Servicio de autenticación de Internet (IAS) se cambió a Servidor de directivas de red (NPS) a partir Windows Server 2008. El contenido de este tema se aplica a IAS y NPS. A lo largo del texto, NPS se usa para hacer referencia a todas las versiones del servicio, incluidas las versiones a las que se hizo referencia originalmente como IAS.
 
- 
+ 
 
-El código siguiente recupera la recopilación de clientes para el servidor de directivas de redes.
+El código siguiente recupera la colección de clientes para el servidor de directivas de red.
 
 
 ```C++
@@ -109,33 +109,33 @@ El código siguiente recupera la recopilación de clientes para el servidor de d
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La variable pSdoServiceControl contiene un puntero a un objeto de datos de servidor para NPS. Para obtener más información, vea el tema [recuperar un SDO de servicio](/windows/desktop/Nps/sdo-retrieving-a-service-sdo).
+La variable pSdoServiceControl contiene un puntero a un objeto de datos de servidor para NPS. Para obtener más información, vea el tema [Recuperación de un SDO de servicio.](/windows/desktop/Nps/sdo-retrieving-a-service-sdo)
 
-La variable vtClientsCollection es de tipo [ \_ variante \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278648(v=vs.60)). Un \_ \_ objeto Variant t encapsula, o agrega, el tipo de datos [**Variant**](/windows/win32/api/oaidl/ns-oaidl-variant) . La clase administra la asignación y desasignación de recursos, y realiza llamadas de función a [**VariantInit**](/windows/win32/api/oleauto/nf-oleauto-variantinit) y [**VariantClear**](/windows/win32/api/oleauto/nf-oleauto-variantclear) según corresponda.
+La variable vtClientsCollection es de tipo [ \_ variant \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278648(v=vs.60)). Un objeto variant t encapsula o incluye \_ el tipo de datos \_ [**VARIANT.**](/windows/win32/api/oaidl/ns-oaidl-variant) La clase administra la asignación y desasignación de recursos, y realiza llamadas de función [**a VariantInit**](/windows/win32/api/oleauto/nf-oleauto-variantinit) [**y VariantClear**](/windows/win32/api/oleauto/nf-oleauto-variantclear) según corresponda.
 
-Después de la llamada a "pSdo->GetProperty ()", la variable vtProtocolsCollection especifica un objeto. El miembro **pdispVal** de vtProtocolsCollection contiene un puntero a la interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) para el objeto.
+Después de llamar a "pSdo->GetProperty()", la variable vtProtocolsCollection especifica un objeto . El **miembro pdispVal** de vtProtocolsCollection contiene un puntero a la [**interfaz IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) del objeto .
 
-El código de ejemplo anterior se puede adaptar para recuperar otras recopilaciones de NPS, por ejemplo, las colecciones de controladores de solicitud NPS. El tipo de enumeración [**IASPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-iasproperties) enumera los valores que corresponden a las colecciones de NPS disponibles.
+El código de ejemplo anterior se puede adaptar para recuperar otras colecciones nps, por ejemplo, las colecciones de controladores de solicitudes nps. El [**tipo de enumeración IASPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-iasproperties) enumeraba los valores que corresponden a las colecciones NPS disponibles.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[\_variante \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278648(v=vs.60))
+[\_variant \_ t](/previous-versions/visualstudio/visual-studio-6.0/aa278648(v=vs.60))
 </dt> <dt>
 
 [**IASPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-iasproperties)
 </dt> <dt>
 
-[**ISdo:: GetProperty**](/windows/desktop/api/sdoias/nf-sdoias-isdo-getproperty)
+[**ISdo::GetProperty**](/windows/desktop/api/sdoias/nf-sdoias-isdo-getproperty)
 </dt> <dt>
 
 [**ISdoCollection**](/windows/desktop/api/sdoias/nn-sdoias-isdocollection)
 </dt> <dt>
 
-[Recuperación de un SDO de servicio](/windows/desktop/Nps/sdo-retrieving-a-service-sdo)
+[Recuperar un SDO de servicio](/windows/desktop/Nps/sdo-retrieving-a-service-sdo)
 </dt> <dt>
 
 [**VariantClear**](/windows/win32/api/oleauto/nf-oleauto-variantclear)
@@ -144,9 +144,9 @@ El código de ejemplo anterior se puede adaptar para recuperar otras recopilacio
 [**VariantInit**](/windows/win32/api/oleauto/nf-oleauto-variantinit)
 </dt> <dt>
 
-[**VARIANTE**](/windows/win32/api/oaidl/ns-oaidl-variant)
+[**Variante**](/windows/win32/api/oaidl/ns-oaidl-variant)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

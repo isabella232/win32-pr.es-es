@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_RSTINFO (clase)'
-title: JET_RSTINFO (clase)
+description: 'Más información sobre: JET_RSTINFO clase'
+title: JET_RSTINFO clase
 TOCTitle: JET_RSTINFO class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_RSTINFO
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_rstinfo(v=EXCHG.10)
@@ -24,14 +24,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 964f1cb335fd0adf1a38759c4ec0aa243f1df506
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 002c54dd1631a8e9edbf5397c69ea7d7dc684dd7507b2fb6c3c0961d51b228a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119473485"
 ---
-# <a name="jet_rstinfo-class"></a>JET_RSTINFO (clase)
+# <a name="jet_rstinfo-class"></a>JET_RSTINFO clase
 
 Contiene parámetros de entrada y salida opcionales para JetRetrieveColumn.
 
@@ -40,10 +40,10 @@ Contiene parámetros de entrada y salida opcionales para JetRetrieveColumn.
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_RSTINFO  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -68,6 +68,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_RSTINFO](./jet-rstinfo-members.md)
+[JET_RSTINFO miembros](./jet-rstinfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

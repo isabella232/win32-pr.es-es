@@ -1,19 +1,19 @@
 - name: Artículos sobre gráficos de DirectX
   href: directx-graphics-articles-portal.md
   items:
-    - name: Actualización de la plataforma para Windows 7
+    - name: Actualización de plataforma para Windows 7
       href: platform-update-for-windows-7.md
     - name: Mejoras de Direct3D 9Ex
       href: direct3d-9ex-improvements.md
     - name: Uso compartido de la superficie entre las API de gráficos de Windows
       href: surface-sharing-between-windows-graphics-apis.md
-    - name: Guía de Windows Advanced Rasterization Platform (WARP)
+    - name: Windows Guía de Advanced Rasterization Platform (WARP)
       href: directx-warp.md
     - name: API de gráficos en Windows
       href: graphics-apis-in-windows-vista.md
     - name: Implementación de Direct3D 11 para desarrolladores de juegos
       href: direct3d11-deployment.md
-    - name: 'Infraestructura de gráficos de DirectX (DXGI): procedimientos recomendados'
+    - name: 'Infraestructura de gráficos de DirectX (DXGI): Procedimientos recomendados'
       href: dxgi-best-practices.md
-    - name: Pantallas de rango dinámico alto y color avanzado
+    - name: Pantallas de alto rango dinámico y color avanzado
       href: high-dynamic-range.md

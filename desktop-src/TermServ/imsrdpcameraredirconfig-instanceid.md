@@ -4,8 +4,8 @@ description: Obtiene el identificador de instancia de la cámara.
 ms.tgt_platform: multiple
 keywords:
 - Propiedad InstanceId Servicios de Escritorio remoto
-- Propiedad InstanceId Servicios de Escritorio remoto, interfaz IMsRdpCameraRedirConfig
-- IMsRdpCameraRedirConfig interface Servicios de Escritorio remoto, InstanceId (propiedad)
+- Propiedad InstanceId Servicios de Escritorio remoto , interfaz IMsRdpCameraRedirConfig
+- Interfaz IMsRdpCameraRedirConfig Servicios de Escritorio remoto , propiedad InstanceId
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 42654e84f64b25a051a78963339ca95d4ebf760f
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 621c865f9727cf484430d00609dcfcfac2431a514cf2bade714fdd4d81b0408c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104274603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119401005"
 ---
-# <a name="imsrdpcameraredirconfiginstanceid-property"></a>IMsRdpCameraRedirConfig:: InstanceId (propiedad)
+# <a name="imsrdpcameraredirconfiginstanceid-property"></a>Propiedad IMsRdpCameraRedirConfig::InstanceId
 
 Obtiene el identificador de instancia de la cámara.
 
@@ -40,7 +40,7 @@ HRESULT get_InstanceId(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El identificador de instancia de la cámara.
+Identificador de instancia de la cámara.
 
 ## <a name="requirements"></a>Requisitos
 

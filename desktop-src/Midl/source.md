@@ -1,9 +1,9 @@
 ---
 title: source (atributo)
-description: El atributo \ Source \ indica que un miembro de una coclase, propiedad o método es un origen de eventos. Para un miembro de una coclase, este atributo significa que se llama al miembro en lugar de implementarlo.
+description: El atributo \ source\ indica que un miembro de una coclase, propiedad o método es un origen de eventos. Para un miembro de una coclase, este atributo significa que se llama al miembro en lugar de implementarse.
 ms.assetid: fbd5411a-e614-4643-810a-f3765e7ec16d
 keywords:
-- atributo de origen MIDL
+- MIDL del atributo de origen
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 621e97fd20b6b96d275044dc7cbe701faee29712
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 08f7039505846d7a35bbd0e077456905c0d29ad13be398fe673ca5c1f8da25e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103995130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066685"
 ---
 # <a name="source-attribute"></a>source (atributo)
 
-El atributo de **\[ origen \]** indica que un miembro de una [**coclase**](coclass.md), propiedad o método es un origen de eventos. Para un miembro de una **coclase**, este atributo significa que se llama al miembro en lugar de implementarlo.
+El **\[ atributo \]** source indica que un miembro de una [**coclase**](coclass.md), propiedad o método es un origen de eventos. Para un miembro de una **coclase**, este atributo significa que se llama al miembro en lugar de implementarse.
 
 ``` syntax
 [
@@ -40,42 +40,42 @@ coclass coclass-name
 
 <dl> <dt>
 
-*coclase: atributos* 
+*coclass-attributes* 
 </dt> <dd>
 
 Cero o más atributos que se aplicarán a la [**coclase**](coclass.md).
 
 </dd> <dt>
 
-*nombre de coclase* 
+*coclass-name* 
 </dt> <dd>
 
 Identificador de nombre de la [**coclase**](coclass.md).
 
 </dd> <dt>
 
-*opcional: atributos* 
+*optional-attributes* 
 </dt> <dd>
 
-Cero o más atributos de MIDL.
+Cero o más atributos MIDL.
 
 </dd> <dt>
 
-*tipo de instrucción* 
+*statement-type* 
 </dt> <dd>
 
 Puede ser [**interface**](interface.md) o [**dispinterface**](dispinterface.md).
 
 </dd> <dt>
 
-*nombre de instrucción* 
+*statement-name* 
 </dt> <dd>
 
-Nombre de la [**interfaz**](interface.md) o [**dispinterface**](dispinterface.md).
+Nombre de la [**interfaz o**](interface.md) [**dispinterface**](dispinterface.md).
 
 </dd> <dt>
 
-*tipo de objeto* 
+*object-type* 
 </dt> <dd>
 
 Tipo del objeto que devuelve el método. Este objeto es un origen de eventos.
@@ -85,24 +85,24 @@ Tipo del objeto que devuelve el método. Este objeto es un origen de eventos.
 *nombre-de-la-función* 
 </dt> <dd>
 
-Nombre de un método en una [**interfaz**](interface.md) o [**dispinterface**](dispinterface.md).
+Nombre de un método en una [**interfaz o**](interface.md) [**dispinterface**](dispinterface.md).
 
 </dd> <dt>
 
-*opcional-parameter-list* 
+*optional-parameter-list* 
 </dt> <dd>
 
 Cero o más parámetros de método.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En una propiedad o método, el atributo de **\[ origen \]** indica que el miembro devuelve un objeto o una variante que es un origen de eventos. El objeto implementa **IConnectionPointContainer**.
+En una propiedad o método, el atributo **\[ de \]** origen indica que el miembro devuelve un objeto o VARIANT que es un origen de eventos. El objeto implementa **IConnectionPointContainer**.
 
 ### <a name="flags"></a>Marcas
 
-IMPLTYPEFLAG \_ FSOURCE, VARFLAG \_ source, FUNCFLAG \_ source
+IMPLTYPEFLAG \_ FSOURCE, VARFLAG \_ SOURCE, FUNCFLAG \_ SOURCE
 
 ## <a name="examples"></a>Ejemplos
 
@@ -118,24 +118,24 @@ IMPLTYPEFLAG \_ FSOURCE, VARFLAG \_ source, FUNCFLAG \_ source
 [**coclase**](coclass.md)
 </dt> <dt>
 
-[**dispinterface**](dispinterface.md)
+[**Dispinterface**](dispinterface.md)
 </dt> <dt>
 
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**interfaz**](interface.md)
+[**Interfaz**](interface.md)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: midl_pragma atributo Warning
-description: Use la \_ opción de advertencia pragma MIDL para invalidar temporalmente el comportamiento del mensaje de advertencia de MIDL en tiempo de compilación.
+title: midl_pragma de advertencia
+description: Use la opción midl pragma warning para invalidar temporalmente el comportamiento del mensaje de advertencia \_ de MIDL en tiempo de compilación.
 ms.assetid: d32a3d3f-5c4d-4f93-a72a-2224ceed0012
 keywords:
-- midl_pragma el atributo de advertencia MIDL
+- midl_pragma atributo de advertencia MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b7e1e2c2a1d818216245e45a9129018a3ba2e1c
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 0ae8e902d1e58ff216f36ae8003dc8f3f553a32005136ef2a86201bd17279107
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103904014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067095"
 ---
-# <a name="midl_pragma-warning-attribute"></a>\_pragma MIDL Warning (atributo)
+# <a name="midl_pragma-warning-attribute"></a>Midl \_ pragma warning attribute
 
-Use la opción de **\_ ADVERTENCIA pragma MIDL** para invalidar temporalmente el comportamiento del mensaje de advertencia de MIDL en tiempo de compilación.
+Use la **opción midl \_ pragma warning** para invalidar temporalmente el comportamiento del mensaje de advertencia de MIDL en tiempo de compilación.
 
 ``` syntax
 midl_pragma warning ( warning_option : message_list )
@@ -31,23 +31,23 @@ midl_pragma warning ( warning_option : message_list )
 
 <dl> <dt>
 
-*opción de advertencia \_* 
+*opción \_ warning* 
 </dt> <dd>
 
-La opción de advertencia puede ser una de las siguientes: deshabilitar, habilitar, valor predeterminado.
+La opción de advertencia puede ser una de las siguientes: disable, enable, default.
 
 </dd> <dt>
 
-*lista de mensajes \_* 
+*lista de \_ mensajes* 
 </dt> <dd>
 
-Una lista de números de mensaje separados por espacios.
+Lista de números de mensaje separados por espacios.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La Directiva pragma se puede usar como una directiva pragma del compilador de C. Es decir, deshabilita, habilita o vuelve al comportamiento predeterminado de una advertencia de MIDL determinada.
+La pragma se puede usar como una pragma del compilador de C. Es decir, deshabilita, habilita o vuelve al comportamiento predeterminado para una advertencia MIDL determinada.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -64,9 +64,9 @@ midl_pragma warning( disable: 2007 )   // file already imported midl_pragma warn
 [**pragma**](pragma.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

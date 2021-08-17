@@ -1,19 +1,19 @@
 ---
-description: Se envía cuando se debe borrar el fondo de la ventana (por ejemplo, cuando se cambia el tamaño de una ventana). El mensaje se envía para preparar una parte invalidada de una ventana para su dibujo.
+description: Se envía cuando se debe borrar el fondo de la ventana (por ejemplo, cuando se cambia el tamaño de una ventana). El mensaje se envía para preparar una parte invalidada de una ventana para pintar.
 ms.assetid: 3bdc37da-227c-4be1-bf0b-99704b8acbe1
-title: Mensaje de WM_ERASEBKGND (Winuser. h)
+title: WM_ERASEBKGND mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dccde6ab4efa8a6589fe7d422dd9e1c04e425f9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1c74c3b0d1dd2e31e88715d0668f53676759c27cb986b6549fe9e001ab394579
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931785"
 ---
-# <a name="wm_erasebkgnd-message"></a>Mensaje de ERASEBKGND de WM \_
+# <a name="wm_erasebkgnd-message"></a>Mensaje \_ ERASEBND de WM
 
-Se envía cuando se debe borrar el fondo de la ventana (por ejemplo, cuando se cambia el tamaño de una ventana). El mensaje se envía para preparar una parte invalidada de una ventana para su dibujo.
+Se envía cuando se debe borrar el fondo de la ventana (por ejemplo, cuando se cambia el tamaño de una ventana). El mensaje se envía para preparar una parte invalidada de una ventana para pintar.
 
 
 ```C++
@@ -46,11 +46,11 @@ Tipo: **LRESULT**
 
 Una aplicación debe devolver un valor distinto de cero si borra el fondo; de lo contrario, debe devolver cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) borra el fondo mediante el pincel de fondo de clase especificado por el miembro **hbrBackground** de la estructura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) . Si **hbrBackground** es **null**, la aplicación debe procesar el mensaje de **\_ ERASEBKGND de WM** y borrar el fondo.
+La [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) borra el fondo mediante el pincel de fondo de clase especificado por el **miembro hbrBackground** de la [**estructura WNDCLASS.**](/windows/win32/api/winuser/ns-winuser-wndclassa) Si **hbrBackground** es **NULL,** la aplicación debe procesar el **mensaje \_ ERASEB RGPDND de WM** y borrar el fondo.
 
-Una aplicación debe devolver un valor distinto de cero en respuesta a **WM \_ ERASEBKGND** si procesa el mensaje y borra el fondo; esto indica que no es necesario borrar más. Si la aplicación devuelve cero, la ventana permanecerá marcada para borrarse. (Normalmente, esto indica que el miembro **fErase** de la estructura [**paintstruct (**](/windows/win32/api/winuser/ns-winuser-paintstruct) será **true**).
+Una aplicación debe devolver un valor distinto de cero en respuesta a **WM \_ ERASEBLONGND** si procesa el mensaje y borra el fondo; esto indica que no se requiere ningún borrado adicional. Si la aplicación devuelve cero, la ventana permanecerá marcada para borrarse. (Normalmente, esto indica que el **miembro fErase** de la [**estructura PAINTSTRUCT**](/windows/win32/api/winuser/ns-winuser-paintstruct) será **TRUE).**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,7 +60,7 @@ Una aplicación debe devolver un valor distinto de cero en respuesta a **WM \_ E
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -77,7 +77,7 @@ Una aplicación debe devolver un valor distinto de cero en respuesta a **WM \_ E
 [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Iconos](../menurc/icons.md)
@@ -89,7 +89,7 @@ Una aplicación debe devolver un valor distinto de cero en respuesta a **WM \_ E
 [**BeginPaint**](/windows/win32/api/winuser/nf-winuser-beginpaint)
 </dt> <dt>
 
-[**PAINTSTRUCT (**](/windows/win32/api/winuser/ns-winuser-paintstruct)
+[**PAINTSTRUCT**](/windows/win32/api/winuser/ns-winuser-paintstruct)
 </dt> </dl>
 
  

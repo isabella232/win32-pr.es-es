@@ -1,7 +1,7 @@
 ---
 description: Coloca un elemento en la cola.
 ms.assetid: 8ac41d80-e7d5-4b3f-9f09-c3d39c94c490
-title: Método CQueue. PutQueueObject (Wxutil. h)
+title: Método CQueue.PutQueueObject (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5371c843bb348f50539535a3df9a0f6aed00893e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8e6e3539b12f81421e90de1f8311210aa2acb77173be2991bd6f15a1c84d39ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119539016"
 ---
-# <a name="cqueueputqueueobject-method"></a>CQueue. PutQueueObject, método
+# <a name="cqueueputqueueobject-method"></a>Método CQueue.PutQueueObject
 
 Coloca un elemento en la cola.
 
@@ -45,7 +45,7 @@ void PutQueueObject(
 *object* 
 </dt> <dd>
 
-Objeto de tipo **T** (el tipo de plantilla).
+Objeto de tipo **T** (tipo de plantilla).
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Objeto de tipo **T** (el tipo de plantilla).
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se bloquea hasta que haya espacio en la cola del elemento.
+Este método se bloquea hasta que hay espacio en la cola para el elemento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Este método se bloquea hasta que haya espacio en la cola del elemento.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Este método se bloquea hasta que haya espacio en la cola del elemento.
 
 <dl> <dt>
 
-[**Clase CQueue**](cqueue.md)
+[**CQueue (clase)**](cqueue.md)
 </dt> </dl>
 
  

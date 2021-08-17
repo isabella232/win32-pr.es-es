@@ -4,37 +4,37 @@ description: Atributo de plano VML
 ms.assetid: e1de630b-8e25-4052-b316-251046f73e98
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04f279f008adf8f12f78d6edd790cc533678adc9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c85312c8c2987105859b9f773fa102723c64c30c688dedd34fb9578bd370452e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103995355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119334215"
 ---
 # <a name="vml-plane-attribute"></a>Atributo de plano VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Especifica el plano que se encuentra en los ángulos rectos de la extrusión. Lectura/escritura **Cadena**.
+Especifica el plano que está en ángulos derecho para la extrusión. Lectura/escritura **Cadena**.
 
 **Se aplica a**
 
-[Trusión](msdn-online-vml-extrusion-element.md)
+[Extrusión](msdn-online-vml-extrusion-element.md)
 
 **Sintaxis de etiquetas**
 
-<o: *elemento* plano = " *expresión* " >
+<o: *element* plane=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . Plane = "*expresión*"
+*element* .plane="*expression*"
 
-*expresión* = de *elemento*. plano
+*expresión* = *elemento*.plane
 
 **Comentarios:**
 
@@ -44,16 +44,16 @@ Estos valores incluyen:
 
 | Value | Descripción                                            |
 |-------|--------------------------------------------------------|
-| xy    | La extrusión está en los ángulos correctos para el plano XY. Valor predeterminado |
-| ZX    | La extrusión está en ángulos rectos al plano ZX.         |
-| YZ    | La extrusión está en los ángulos correctos para el plano YZ.         |
+| xy    | La extrusión está en ángulos derecho hacia el plano xy. Valor predeterminado |
+| Zx    | La extrusión está en ángulos derecho hacia el plano zx.         |
+| Yz    | La extrusión se encuentra en ángulos a la derecha del plano yz.         |
 
 
 
- 
+ 
 
-*Microsoft Office atributo Extensions*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

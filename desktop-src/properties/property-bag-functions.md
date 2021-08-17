@@ -1,19 +1,19 @@
 ---
-description: En esta sección se describe un conjunto de funciones auxiliares de Windows usadas con objetos IPropertyBag.
+description: En esta sección se describe un conjunto de funciones auxiliares Windows que se usan con objetos IPropertyBag.
 ms.assetid: 4ef85855-7eb6-43ec-bf29-1223eaf1a0cc
 title: Funciones del bolsa de propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b694c579c76be96b00fa8392344ac59bdc0ce42f
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 7b33bdcced7c030a476a3ec303ac30b5c5d0f722bceea5358678ba1a2fe6f790
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110550200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970944"
 ---
 # <a name="property-bag-functions"></a>Funciones del bolsa de propiedades
 
-En esta sección se describe un conjunto de funciones auxiliares de Windows usadas con [**objetos IPropertyBag.**](/windows/win32/api/oaidl/nn-oaidl-ipropertybag)
+En esta sección se describe un conjunto de Windows auxiliares que se usan con [**objetos IPropertyBag.**](/windows/win32/api/oaidl/nn-oaidl-ipropertybag)
 
 
 
@@ -48,7 +48,7 @@ En esta sección se describe un conjunto de funciones auxiliares de Windows usad
 | [**PSPropertyBag \_ WritePropertyKey**](/windows/win32/api/propsys/nf-propsys-pspropertybag_writepropertykey) | Establece la clave de propiedad de una propiedad en un bolsa de propiedades especificado.<br/>                                                  |
 | [**PSPropertyBag \_ WriteRECTL**](/windows/win32/api/propsys/nf-propsys-pspropertybag_writerectl)             | Almacena las coordenadas de un rectángulo almacenado en una propiedad contenida en un bolsa de propiedades especificado.<br/>                 |
 | [**PSPropertyBag \_ WriteSHORT**](/windows/win32/api/propsys/nf-propsys-pspropertybag_writeshort)             | Establece el **valor de** datos SHORT de una propiedad en un bolsa de propiedades.<br/>                                                    |
-| [**PSPropertyBag \_ WriteStr**](/windows/win32/api/propsys/nf-propsys-pspropertybag_writestr)                 | Establece el **valor de datos** de cadena de una propiedad en un bolsa de propiedades.<br/>                                                   |
+| [**PSPropertyBag \_ WriteStr**](/windows/win32/api/propsys/nf-propsys-pspropertybag_writestr)                 | Establece el **valor de** datos de cadena de una propiedad en un bolsa de propiedades.<br/>                                                   |
 | [**PSPropertyBag \_ WriteStream**](/windows/win32/api/propsys/nf-propsys-pspropertybag_writestream)           | Establece el flujo de datos almacenado en una propiedad determinada contenida en un bolsa de propiedades especificado.<br/>                            |
 | [**PSPropertyBag \_ WriteULONGLONG**](/windows/win32/api/propsys/nf-propsys-pspropertybag_writeulonglong)     | Establece un **valor de datos ULONGLONG** de una propiedad en un bolsa de propiedades.<br/>                                                |
 | [**PSPropertyBag \_ WriteUnknown**](/windows/win32/api/propsys/nf-propsys-pspropertybag_writeunknown)         | Establece una propiedad determinada de un valor de datos desconocido en un bolsa de propiedades.<br/>                                                 |

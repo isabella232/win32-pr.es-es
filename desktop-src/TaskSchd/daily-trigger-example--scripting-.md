@@ -1,6 +1,6 @@
 ---
 title: Ejemplo de desencadenador diario (scripting)
-description: En este ejemplo de scripting se muestra cómo crear una tarea que ejecute el Bloc de notas a las 8 00 AM todos los días.
+description: En este ejemplo de scripting se muestra cómo crear una tarea que Bloc de notas a las 8:00 a. m. todos los días.
 ms.assetid: a13bd54d-b45a-46e5-8281-d080f50f6bef
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,29 +9,29 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3399934786e1cd0f95ca020c92027ccafafa5272
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 530d687264af9d2e7dbd4e9d05cf7dde39a449d3249c3576a35edc8a9e9f088d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139538"
 ---
 # <a name="daily-trigger-example-scripting"></a>Ejemplo de desencadenador diario (scripting)
 
-En este ejemplo de scripting se muestra cómo crear una tarea que ejecute el Bloc de notas a las 8:00 AM todos los días. La tarea contiene un desencadenador diario que especifica un límite de inicio para activar el desencadenador y para especificar la hora del día en que se ejecuta la tarea, un intervalo de desencadenador para especificar que la tarea se ejecuta todos los días y un límite de fin para desactivar el desencadenador. En el ejemplo también se muestra cómo establecer un patrón de repetición para que el desencadenador repita la tarea. La tarea también contiene una acción ejecutable que ejecuta el Bloc de notas.
+En este ejemplo de scripting se muestra cómo crear una tarea que Bloc de notas a las 8:00 a. m. todos los días. La tarea contiene un desencadenador diario que especifica un límite de inicio para activar el desencadenador y para especificar la hora del día en que se ejecuta la tarea, un intervalo de desencadenador para especificar que la tarea se ejecuta todos los días y un límite final para desactivar el desencadenador. En el ejemplo también se muestra cómo establecer un patrón de repetición para que el desencadenador repita la tarea. La tarea también contiene una acción ejecutable que ejecuta Bloc de notas.
 
-En el procedimiento siguiente se describe cómo programar una tarea para que inicie un ejecutable a las 8:00 AM todos los días. (Estos pasos corresponden a los comentarios de código que se incluyen en el código de ejemplo).
+En el procedimiento siguiente se describe cómo programar una tarea para iniciar un ejecutable a las 8:00 a. m. todos los días. (Estos pasos corresponden a los comentarios de código incluidos en el código de ejemplo).
 
-**Para programar el inicio del Bloc de notas a las 8:00 A.M. todos los días**
+**Para programar Bloc de notas iniciar a las 8:00 a. m. todos los días**
 
-1.  Cree un objeto [**TaskService**](taskservice.md) . Este objeto permite crear la tarea en una carpeta especificada.
-2.  Obtener una carpeta de tareas y crear una tarea. Use el método [**TaskService. GetFolder**](taskservice-getfolder.md) para obtener la carpeta donde se almacena la tarea y el método [**TaskService. newtask**](taskservice-newtask.md) para crear el objeto [**TaskDefinition**](taskdefinition.md) que representa la tarea.
-3.  Defina la información sobre la tarea mediante el objeto [**TaskDefinition**](taskdefinition.md) . Use la propiedad [**TaskDefinition. Settings**](taskdefinition-settings.md) para definir la configuración que determina cómo el servicio de programador de tareas realiza la tarea y la propiedad [**TaskDefinition. RegistrationInfo**](taskdefinition-registrationinfo.md) para definir la información que describe la tarea.
-4.  Cree un desencadenador diario mediante la propiedad [**TaskDefinition. Triggers**](taskdefinition-triggers.md) . Esta propiedad proporciona acceso al objeto [**TriggerCollection**](triggercollection.md) que se usa para crear el desencadenador. Use el método [**TriggerCollection. Create**](triggercollection-create.md) (especificando el tipo de desencadenador que desea crear) para crear un desencadenador diario. Cuando cree el desencadenador, establezca el límite de inicio para activar el desencadenador y especifique la hora del día en que se ejecuta la tarea, el intervalo entre los días y el límite final para desactivar el desencadenador. En el ejemplo siguiente se muestra cómo establecer un patrón de repetición para que el desencadenador repita la tarea.
-5.  Cree una acción para que la tarea se ejecute mediante la propiedad [**TaskDefinition. Actions**](taskdefinition-actions.md) . Esta propiedad proporciona acceso al objeto [**ActionCollection**](actioncollection.md) que se usa para crear la acción. Use el método [**ActionCollection. Create**](actioncollection-create.md) para especificar el tipo de acción que desea crear. En este ejemplo se usa un objeto [**ExecAction**](execaction.md) , que representa una acción que ejecuta una operación de línea de comandos.
-6.  Registre la tarea mediante el método [**TaskFolder. RegisterTaskDefinition**](taskfolder-registertaskdefinition.md) . En este ejemplo, la tarea iniciará el Bloc de notas a las 8:00 A.M. todos los días.
+1.  Cree un [**objeto TaskService.**](taskservice.md) Este objeto permite crear la tarea en una carpeta especificada.
+2.  Obtenga una carpeta de tareas y cree una tarea. Use el [**método TaskService.GetFolder**](taskservice-getfolder.md) para obtener la carpeta donde se almacena la tarea y el método [**TaskService.NewTask**](taskservice-newtask.md) para crear el objeto [**TaskDefinition**](taskdefinition.md) que representa la tarea.
+3.  Defina información sobre la tarea mediante el [**objeto TaskDefinition.**](taskdefinition.md) Use la propiedad [**TaskDefinition.Configuración**](taskdefinition-settings.md) para definir la configuración que determina cómo realiza la tarea el servicio Programador de tareas y la propiedad [**TaskDefinition.RegistrationInfo**](taskdefinition-registrationinfo.md) para definir la información que describe la tarea.
+4.  Cree un desencadenador diario mediante la [**propiedad TaskDefinition.Triggers.**](taskdefinition-triggers.md) Esta propiedad proporciona acceso al [**objeto TriggerCollection**](triggercollection.md) que se usa para crear el desencadenador. Use el [**método TriggerCollection.Create**](triggercollection-create.md) (especificando el tipo de desencadenador que desea crear) para crear un desencadenador diario. Cuando cree el desencadenador, establezca el límite de inicio para activar el desencadenador y especifique la hora del día en que se ejecuta la tarea, el intervalo entre los días y el límite final para desactivar el desencadenador. En el ejemplo siguiente se muestra cómo establecer un patrón de repetición para que el desencadenador repita la tarea.
+5.  Cree una acción para que la tarea se ejecute mediante la [**propiedad TaskDefinition.Actions.**](taskdefinition-actions.md) Esta propiedad proporciona acceso al [**objeto ActionCollection**](actioncollection.md) utilizado para crear la acción. Use el [**método ActionCollection.Create**](actioncollection-create.md) para especificar el tipo de acción que desea crear. En este ejemplo se [**usa un objeto ExecAction,**](execaction.md) que representa una acción que ejecuta una operación de línea de comandos.
+6.  Registre la tarea mediante el [**método TaskFolder.RegisterTaskDefinition.**](taskfolder-registertaskdefinition.md) En este ejemplo, la tarea se iniciará Bloc de notas a las 8:00 a. m. todos los días.
 
-En el siguiente ejemplo de VBScript se muestra cómo programar una tarea para ejecutar el Bloc de notas todos los días a las 8:00 A.M.
+En el siguiente ejemplo de VBScript se muestra cómo programar una tarea para Bloc de notas todos los días a las 8:00 a. m.
 
 
 ```VB
@@ -138,12 +138,12 @@ WScript.Echo "Task submitted."
 
 <dl> <dt>
 
-[Usar el Programador de tareas](using-the-task-scheduler.md)
+[Uso del Programador de tareas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

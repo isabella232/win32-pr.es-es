@@ -1,22 +1,22 @@
 ---
-title: Uso de Servicios de Escritorio remoto canales virtuales
-description: Para implementar un canal virtual, se proporcionan los módulos de servidor y cliente de la aplicación de un canal virtual.
+title: Uso Servicios de Escritorio remoto canales virtuales
+description: Para implementar un canal virtual, proporcione los módulos de servidor y cliente de la aplicación de un canal virtual.
 ms.assetid: 3b378071-ebd6-47b0-8a9c-3e671505011a
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 539eafca38c19855fdb057ceeb6e79cb4613773a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f538259134d539104e55706578778931a1180a1901a9891eec7f62f1f40144b8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103774287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119423745"
 ---
-# <a name="using-remote-desktop-services-virtual-channels"></a>Uso de Servicios de Escritorio remoto canales virtuales
+# <a name="using-remote-desktop-services-virtual-channels"></a>Uso Servicios de Escritorio remoto canales virtuales
 
-Para implementar un canal virtual, se proporcionan los módulos de servidor y cliente de la aplicación de un canal virtual. El módulo de servidor puede ser una aplicación de modo de usuario o un controlador en modo kernel. El módulo cliente debe ser un archivo DLL.
+Para implementar un canal virtual, proporcione los módulos de servidor y cliente de la aplicación de un canal virtual. El módulo de servidor puede ser una aplicación en modo de usuario o un controlador en modo kernel. El módulo de cliente debe ser un archivo DLL.
 
-Para obtener descripciones de estos módulos, vea los temas siguientes.
+Para obtener descripciones de estos módulos, consulte los temas siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -25,21 +25,21 @@ Para obtener descripciones de estos módulos, vea los temas siguientes.
 [Aplicación de servidor de canal virtual](virtual-channel-server-application.md)
 </dt> <dd>
 
-El módulo de servidor de una aplicación que usa canales virtuales debe ser una aplicación de modo de usuario que se ejecute en una sesión de cliente en el servidor de host de sesión de Escritorio remoto (host de sesión de escritorio remoto). Tenga en cuenta que debe proporcionar un método para iniciar la aplicación de servidor.
+El módulo de servidor de una aplicación que usa canales virtuales debe ser una aplicación en modo de usuario que se ejecute en una sesión de cliente en el servidor Escritorio remoto Session Host (Host de sesión de Escritorio remoto). Tenga en cuenta que debe proporcionar un método para iniciar la aplicación de servidor.
 
 </dd> <dt>
 
 [DLL de cliente de canal virtual](virtual-channel-client-dll.md)
 </dt> <dd>
 
-El cliente de una aplicación de canales virtuales es un archivo DLL que se carga durante la inicialización del Servicios de Escritorio remoto en el equipo cliente. El archivo DLL debe estar registrado en el equipo cliente.
+El cliente de una aplicación de canales virtuales es un archivo DLL que se carga durante la Servicios de Escritorio remoto inicialización en el equipo cliente. El archivo DLL debe estar registrado en el equipo cliente.
 
 </dd> <dt>
 
 [Registro de cliente de canal virtual](virtual-channel-client-registration.md)
 </dt> <dd>
 
-Debe almacenar el nombre del archivo DLL de cliente en el registro.
+Debe almacenar el nombre del archivo DLL de cliente en el Registro.
 
 </dd> <dt>
 
@@ -57,11 +57,11 @@ Las API de canal virtual dinámico (DVC) amplían las API de canal virtual exist
 
 </dd> </dl>
 
-Si ha habilitado la aplicación de un canal virtual en la implementación de Servicios de Escritorio remoto, también puede hacer que la aplicación esté disponible para los equipos cliente que tienen acceso al servidor host de sesión de escritorio remoto por medio del control ActiveX Escritorio remoto. Para obtener más información, vea [usar el control ActiveX escritorio remoto con canales virtuales](using-the-remote-desktop-activex-control-with-virtual-channels.md).
+Si ha habilitado la aplicación de un canal virtual en la implementación de Servicios de Escritorio remoto, también puede hacer que la aplicación esté disponible para los equipos cliente que acceden al servidor host de sesión de Escritorio remoto mediante el control Escritorio remoto ActiveX remoto. Para obtener más información, [vea Using the Escritorio remoto ActiveX Control with Virtual Channels](using-the-remote-desktop-activex-control-with-virtual-channels.md).
 
- 
+ 
 
- 
+ 
 
 
 

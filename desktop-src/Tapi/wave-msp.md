@@ -1,19 +1,19 @@
 ---
-description: La Wavemsp.dll de Wave MSP se ajusta a profesionales heredado escrito antes de la introducción de MSP en la arquitectura de streaming basada en TAPI 3S MSP.
+description: El MSP de Wave Wavemsp.dll se adapta a los TSP heredados escritos antes de la introducción de los MSP en la arquitectura de streaming basada en MSP de TAPI 3s.
 ms.assetid: 203fcd7b-bf9d-48ad-9452-1f6357c82946
 title: Wave MSP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 927a2545fd3da6a5ea186a6716d49222e5efb1a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 27c65b465564df4aff658a0de85a8e2f2ae0520522820c4e322234e20fac42bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139708"
 ---
 # <a name="wave-msp"></a>Wave MSP
 
-Wave MSP (Wavemsp.dll) se ajusta a profesionales heredado escrito antes de la introducción de MSP en la arquitectura de streaming basada en MSP de TAPI 3. Algunos de los profesionales heredados exponen los identificadores de dispositivo de onda, que eran un medio para que la aplicación controlara la transmisión por secuencias en TAPI 2,1. Tapi3.dll usa wave MSP para cualquier TSP que no tiene su propio MSP pero que tiene un dispositivo de onda.
+El MSP de Wave (Wavemsp.dll) se ajusta a los TSP heredados escritos antes de la introducción de los MSP en la arquitectura de streaming basada en MSP de TAPI 3. Algunos de los TSP heredados exponen identificadores de dispositivos de onda, que eran un medio para que la aplicación controlara el streaming en TAPI 2.1. Tapi3.dll usa Wave MSP para cualquier TSP que no tenga su propio MSP, pero que tenga un dispositivo wave.
 
 Wave MSP se instala con Windows 2000.
 

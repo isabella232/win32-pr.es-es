@@ -1,6 +1,6 @@
 ---
-description: Notifica que hay un recuadro informativo que se va a mostrar para el botón de contenido adicional asociado al elemento especificado por la estructura SMDATA correspondiente.
-title: Mensaje de SMC_DISPLAYCHEVRONTIP (shobjidl. h)
+description: Le notifica que se va a mostrar una información sobre el botón de contenido adicional asociado al elemento especificado por la estructura SMDATA adjunta.
+title: SMC_DISPLAYCHEVRONTIP mensaje (Shobjidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: e4ec4839-e49a-4563-9bc9-79f9d4d54658
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 09e01fc6ea169d8dcbf5758ace341198166a3a9e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f1107af5cd621bafbc1e463101cee2ea57236b9d29844d6183963134b50ce3ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104497884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968174"
 ---
-# <a name="smc_displaychevrontip-message"></a>Mensaje de DISPLAYCHEVRONTIP de SMC \_
+# <a name="smc_displaychevrontip-message"></a>Mensaje \_ DISPLAYCHEVRONTIP de SMC
 
-Notifica que hay un recuadro informativo que se va a mostrar para el botón de contenido adicional asociado al elemento especificado por la estructura [**SMDATA**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-smdata) correspondiente.
+Le notifica que se va a mostrar una información sobre el botón de contenido adicional asociado al elemento especificado por la estructura [**SMDATA**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-smdata) adjunta.
 
 
 ```C++
@@ -38,11 +38,11 @@ Este mensaje no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Vuelva \_ a aceptar para mostrar el recuadro informativo. Devuelve S \_ false para impedir que se muestre el recuadro informativo.
+Devuelve S \_ OK para mostrar la información. Devuelve S FALSE para evitar que se muestre \_ la información.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
+El método [**IShellMenuCallback::CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,8 +52,8 @@ El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_c
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Shobjidl. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shobjidl. idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

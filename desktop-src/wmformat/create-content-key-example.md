@@ -1,36 +1,36 @@
 ---
-title: Ejemplo de creación de una clave de contenido
-description: Ejemplo de creación de una clave de contenido
+title: Ejemplo de creación de clave de contenido
+description: Ejemplo de creación de clave de contenido
 ms.assetid: 8e75bac3-d1fb-4a72-8088-fe5ff0899ac2
 keywords:
-- SDK de Windows Media Format, claves de contenido
-- SDK de Windows Media Format, código de ejemplo
-- SDK de Windows Media Format, ejemplos de código
-- Administración de derechos digitales (DRM), claves de contenido
+- Windows SDK de formato multimedia, claves de contenido
+- Windows SDK de formato multimedia, código de ejemplo
+- Windows SDK de formato multimedia, ejemplos de código
+- administración de derechos digitales (DRM), claves de contenido
 - DRM (administración de derechos digitales), claves de contenido
-- Administración de derechos digitales (DRM), código de ejemplo
-- DRM (administración de derechos digitales), código de ejemplo
-- Administración de derechos digitales (DRM), ejemplos de código
+- digital rights management (DRM), código de ejemplo
+- DRM (administración de derechos digitales),código de ejemplo
+- administración de derechos digitales (DRM), ejemplos de código
 - DRM (administración de derechos digitales), ejemplos de código
-- API extendidas del cliente DRM, claves de contenido
-- API extendidas del cliente, claves de contenido
-- API extendidas del cliente DRM, código de ejemplo
+- API extendidas de cliente DRM, claves de contenido
+- API extendidas de cliente, claves de contenido
+- API extendidas de cliente DRM, código de ejemplo
 - API extendidas de cliente, código de ejemplo
-- API extendidas del cliente DRM, ejemplos de código
+- API extendidas de cliente DRM, ejemplos de código
 - API extendidas de cliente, ejemplos de código
 - claves de contenido
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 881dfd0d318d7d699b44ca9c3f77f22f9acfc689
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c97c63f55cd825de197ea7e13d9215971e1d3153aabb23ee41924a65f91849c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931485"
 ---
-# <a name="create-content-key-example"></a>Ejemplo de creación de una clave de contenido
+# <a name="create-content-key-example"></a>Ejemplo de creación de clave de contenido
 
-La clave de contenido se usa para cifrar los ejemplos de medios para la importación de DRM de Windows Media. En el ejemplo de código siguiente se muestra cómo crear e inicializar una estructura de clave de contenido.
+La clave de contenido se usa para cifrar ejemplos multimedia para la Windows DRM multimedia. En el ejemplo de código siguiente se muestra cómo crear e inicializar una estructura de clave de contenido.
 
 
 ```C++
@@ -119,9 +119,9 @@ EXIT:
 [**Ejemplos de importación de DRM**](drm-import-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,64 +1,64 @@
 ---
-title: Funciones comunes (Internet de Windows)
-description: Los diferentes protocolos de Internet (como FTP y http) usan varias de las mismas funciones de WinINet para controlar la información en Internet.
+title: Funciones comunes (Windows Internet)
+description: Los distintos protocolos de Internet (como ftp y http) usan varias de las mismas funciones de WinINet para controlar la información en Internet.
 ms.assetid: c80768cf-c8c0-4bdf-9ea2-f82c92ade05a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1893b085da1b3e77228e4a9abf75acc166d84726
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: ed7b6a68c2633175eca793f48b2180b7212905762ca0f58290436aa17ae9a728
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105714511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119132898"
 ---
-# <a name="common-functions-windows-internet"></a>Funciones comunes (Internet de Windows)
+# <a name="common-functions-windows-internet"></a>Funciones comunes (Windows Internet)
 
-Los diferentes protocolos de Internet (como FTP y http) usan varias de las mismas funciones de WinINet para controlar la información en Internet. Estas funciones comunes controlan sus tareas de forma coherente, independientemente del protocolo concreto al que se aplican. Las aplicaciones pueden usar estas funciones para crear funciones de uso general que controlan las tareas en los diferentes protocolos (como la lectura de archivos para FTP y http).
+Los distintos protocolos de Internet (como ftp y http) usan varias de las mismas funciones de WinINet para controlar la información en Internet. Estas funciones comunes controlan sus tareas de forma coherente, independientemente del protocolo concreto al que se aplican. Las aplicaciones pueden usar estas funciones para crear funciones de uso general que controlan tareas en los distintos protocolos (por ejemplo, leer archivos para ftp y http).
 
-Las funciones comunes de controlan las tareas siguientes:
+Las funciones comunes controlan las siguientes tareas:
 
--   Descargar recursos de Internet ([**InternetReadFile**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile), [**InternetSetFilePointer**](/windows/desktop/api/Wininet/nf-wininet-internetsetfilepointer), [**InternetFindNextFile**](/windows/desktop/api/Wininet/nf-wininet-internetfindnextfilea)y [**InternetQueryDataAvailable**](/windows/desktop/api/Wininet/nf-wininet-internetquerydataavailable)).
--   Configurar operaciones asincrónicas ([**InternetSetStatusCallback**](/windows/desktop/api/Wininet/nf-wininet-internetsetstatuscallback)).
--   Ver y cambiar opciones ([**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) y [**InternetQueryOption**](/windows/desktop/api/Wininet/nf-wininet-internetqueryoptiona)).
--   Cerrar todos los tipos de identificadores de [**HINTERNET**](appendix-a-hinternet-handles.md) ([**InternetCloseHandle**](/windows/desktop/api/Wininet/nf-wininet-internetclosehandle)).
--   Colocar y quitar bloqueos en los recursos ([**InternetLockRequestFile**](/windows/desktop/api/Wininet/nf-wininet-internetlockrequestfile) y [**InternetUnlockRequestFile**](/windows/desktop/api/Wininet/nf-wininet-internetunlockrequestfile)).
+-   Descarga de recursos de Internet [**(InternetReadFile,**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile) [**InternetSetFilePointer,**](/windows/desktop/api/Wininet/nf-wininet-internetsetfilepointer) [**InternetFindNextFile**](/windows/desktop/api/Wininet/nf-wininet-internetfindnextfilea)e [**InternetQueryDataAvailable**](/windows/desktop/api/Wininet/nf-wininet-internetquerydataavailable)).
+-   Configuración de operaciones asincrónicas ([**InternetSetStatusCallback**](/windows/desktop/api/Wininet/nf-wininet-internetsetstatuscallback)).
+-   Ver y cambiar opciones ([**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) e [**InternetQueryOption**](/windows/desktop/api/Wininet/nf-wininet-internetqueryoptiona)).
+-   Cerrar todos los tipos [**de identificadores HINTERNET**](appendix-a-hinternet-handles.md) ([**InternetCloseHandle**](/windows/desktop/api/Wininet/nf-wininet-internetclosehandle)).
+-   Colocación y eliminación de bloqueos en recursos [**(InternetLockRequestFile**](/windows/desktop/api/Wininet/nf-wininet-internetlockrequestfile) e [**InternetUnlockRequestFile).**](/windows/desktop/api/Wininet/nf-wininet-internetunlockrequestfile)
 
-## <a name="using-common-functions"></a>Usar funciones comunes
+## <a name="using-common-functions"></a>Uso de funciones comunes
 
-En la tabla siguiente se enumeran las funciones comunes incluidas en las funciones de WinINet. Las funciones comunes se pueden usar en diferentes tipos de identificadores de [**HINTERNET**](appendix-a-hinternet-handles.md) o se pueden usar durante diferentes tipos de sesiones.
+En la tabla siguiente se enumeran las funciones comunes incluidas en las funciones de WinINet. Las funciones comunes se pueden usar en diferentes tipos de [**identificadores HINTERNET**](appendix-a-hinternet-handles.md) o se pueden usar durante diferentes tipos de sesiones.
 
 
 
 | Función                                                         | Descripción                                                                                                                                                                                                                                             |
 |------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**InternetFindNextFile**](/windows/desktop/api/Wininet/nf-wininet-internetfindnextfilea)             | Continúa la enumeración o búsqueda de archivos. Requiere un identificador creado por la función [**FtpFindFirstFile**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea)o [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) .                                                                            |
-| [**InternetLockRequestFile**](/windows/desktop/api/Wininet/nf-wininet-internetlockrequestfile)       | Permite al usuario colocar un bloqueo en el archivo que se está usando. Esta función requiere un identificador devuelto por la función [**FtpOpenFile**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea), [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta)o [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) . |
-| [**InternetQueryDataAvailable**](/windows/desktop/api/Wininet/nf-wininet-internetquerydataavailable) | Recupera la cantidad de datos disponibles. Requiere un identificador creado por la función [**FtpOpenFile**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea)o [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) .                                                                                    |
-| [**InternetQueryOption**](/windows/desktop/api/Wininet/nf-wininet-internetqueryoptiona)               | Recupera el valor de una opción de Internet.                                                                                                                                                                                                            |
-| [**InternetReadFile**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile)                     | Lee los datos de la dirección URL. Requiere un identificador creado por la función [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla), [**FtpOpenFile**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea)o [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) .                                                                |
-| [**InternetSetFilePointer**](/windows/desktop/api/Wininet/nf-wininet-internetsetfilepointer)         | Establece la posición para la siguiente lectura en un archivo. Requiere un identificador creado por [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) (solo en una dirección URL http) o un identificador creado por [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) mediante el verbo HTTP GET.                 |
+| [**InternetFindNextFile**](/windows/desktop/api/Wininet/nf-wininet-internetfindnextfilea)             | Continúa la enumeración o búsqueda de archivos. Requiere un identificador creado por la [**función FtpFindFirstFile**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea)o [**InternetOpenUrl.**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla)                                                                            |
+| [**InternetLockRequestFile**](/windows/desktop/api/Wininet/nf-wininet-internetlockrequestfile)       | Permite al usuario colocar un bloqueo en el archivo que se está utilizando. Esta función requiere un identificador devuelto por la [**función FtpOpenFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea) [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta)o [**InternetOpenUrl.**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) |
+| [**InternetQueryDataAvailable**](/windows/desktop/api/Wininet/nf-wininet-internetquerydataavailable) | Recupera la cantidad de datos disponibles. Requiere un identificador creado por la [**función FtpOpenFile**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea)o [**HttpOpenRequest.**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta)                                                                                    |
+| [**InternetQueryOption**](/windows/desktop/api/Wininet/nf-wininet-internetqueryoptiona)               | Recupera la configuración de una opción de Internet.                                                                                                                                                                                                            |
+| [**InternetReadFile**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile)                     | Lee los datos de la dirección URL. Requiere un identificador creado por [**la función InternetOpenUrl,**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) [**FtpOpenFile**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea)o [**HttpOpenRequest.**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta)                                                                |
+| [**InternetSetFilePointer**](/windows/desktop/api/Wininet/nf-wininet-internetsetfilepointer)         | Establece la posición de la siguiente lectura en un archivo. Requiere un identificador creado por [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) (solo en una dirección URL HTTP) o un identificador creado por [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) mediante el verbo HTTP GET.                 |
 | [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona)                   | Establece una opción de Internet.                                                                                                                                                                                                                                |
-| [**InternetSetStatusCallback**](/windows/desktop/api/Wininet/nf-wininet-internetsetstatuscallback)   | Establece una función de devolución de llamada que recibe información de estado. Asigna una función de devolución de llamada al identificador de [**HINTERNET**](appendix-a-hinternet-handles.md) designado y a todos los identificadores derivados de ella.                                                      |
-| [**InternetUnlockRequestFile**](/windows/desktop/api/Wininet/nf-wininet-internetunlockrequestfile)   | Desbloquea un archivo que se ha bloqueado mediante la función [**InternetLockRequestFile**](/windows/desktop/api/Wininet/nf-wininet-internetlockrequestfile) .                                                                                                                                           |
+| [**InternetSetStatusCallback**](/windows/desktop/api/Wininet/nf-wininet-internetsetstatuscallback)   | Establece una función de devolución de llamada que recibe información de estado. Asigna una función de devolución de llamada al identificador [**HINTERNET**](appendix-a-hinternet-handles.md) designado y a todos los identificadores derivados de él.                                                      |
+| [**InternetUnlockRequestFile**](/windows/desktop/api/Wininet/nf-wininet-internetunlockrequestfile)   | Desbloquea un archivo bloqueado mediante la [**función InternetLockRequestFile.**](/windows/desktop/api/Wininet/nf-wininet-internetlockrequestfile)                                                                                                                                           |
 
 
 
  
 
-Leer archivos, buscar el siguiente archivo, manipular opciones y configurar operaciones asincrónicas es común a las funciones que admiten varios protocolos y tipos de identificador de [**HINTERNET**](appendix-a-hinternet-handles.md) .
+La lectura de archivos, la búsqueda del siguiente archivo, la manipulación de opciones y la configuración de operaciones asincrónicas son comunes a las funciones que admiten varios protocolos y tipos de identificador [**HINTERNET.**](appendix-a-hinternet-handles.md)
 
 ### <a name="reading-files"></a>Leer archivos
 
-La función [**InternetReadFile**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile) se usa para descargar recursos de un [**identificador HINTERNET**](appendix-a-hinternet-handles.md) devuelto por la función [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla), [**FtpOpenFile**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea)o [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) .
+La [**función InternetReadFile**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile) se usa para descargar recursos de un identificador [**HINTERNET**](appendix-a-hinternet-handles.md) devuelto por la función [**InternetOpenUrl,**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) [**FtpOpenFile**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea)o [**HttpOpenRequest.**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta)
 
-[**InternetReadFile**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile) acepta una variable de puntero void que contiene la dirección de un búfer y un puntero a una variable que contiene la longitud del búfer. La función devuelve los datos en el búfer y la cantidad de datos descargados en el búfer.
+[**InternetReadFile**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile) acepta una variable de puntero void que contiene la dirección de un búfer y un puntero a una variable que contiene la longitud del búfer. La función devuelve los datos del búfer y la cantidad de datos descargados en el búfer.
 
-Las funciones WinINet proporcionan dos técnicas para descargar un recurso completo:
+Las funciones de WinINet proporcionan dos técnicas para descargar un recurso completo:
 
--   La función [**InternetQueryDataAvailable**](/windows/desktop/api/Wininet/nf-wininet-internetquerydataavailable) .
--   Los valores devueltos de [**InternetReadFile**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile).
+-   La [**función InternetQueryDataAvailable.**](/windows/desktop/api/Wininet/nf-wininet-internetquerydataavailable)
+-   Valores devueltos de [**InternetReadFile.**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile)
 
-[**InternetQueryDataAvailable**](/windows/desktop/api/Wininet/nf-wininet-internetquerydataavailable) toma el identificador [**HINTERNET**](appendix-a-hinternet-handles.md) creado por [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla), [**FtpOpenFile**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea)o [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) (después de llamar a [**HttpSendRequest**](/windows/desktop/api/Wininet/nf-wininet-httpsendrequesta) en el identificador) y devuelve el número de bytes disponibles. La aplicación debe asignar un búfer igual al número de bytes disponibles, más 1 para el carácter **nulo** de terminación y usar ese búfer con [**InternetReadFile**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile). Este método no siempre funciona porque [**InternetQueryDataAvailable**](/windows/desktop/api/Wininet/nf-wininet-internetquerydataavailable) comprueba el tamaño de archivo que aparece en el encabezado y no el archivo real. La información del archivo de encabezado podría estar obsoleta o falta el archivo de encabezado, ya que actualmente no es necesario en todos los estándares.
+[**InternetQueryDataAvailable**](/windows/desktop/api/Wininet/nf-wininet-internetquerydataavailable) toma el identificador [**HINTERNET**](appendix-a-hinternet-handles.md) creado por [**InternetOpenUrl,**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) [**FtpOpenFile**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea)o [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) (después de llamar a [**HttpSendRequest**](/windows/desktop/api/Wininet/nf-wininet-httpsendrequesta) en el identificador) y devuelve el número de bytes disponibles. La aplicación debe asignar un búfer igual al número de bytes disponibles, más 1 para el carácter **nulo** de terminación, y usar ese búfer [**con InternetReadFile**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile). Este método no siempre funciona porque [**InternetQueryDataAvailable**](/windows/desktop/api/Wininet/nf-wininet-internetquerydataavailable) está comprobando el tamaño del archivo que aparece en el encabezado y no el archivo real. La información del archivo de encabezado podría estar obsoleta o podría faltar el archivo de encabezado, ya que actualmente no es necesaria en todos los estándares.
 
 En el ejemplo siguiente se lee el contenido del recurso al que tiene acceso el identificador hResource y se muestra en el cuadro de edición indicado por intCtrlID.
 
@@ -182,9 +182,9 @@ int WINAPI Dumper(HWND hX, int intCtrlID, HINTERNET hResource)
 
 
 
-[**InternetReadFile**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile) devuelve cero bytes leídos y se completa correctamente cuando se han leído todos los datos disponibles. Esto permite que una aplicación use [**InternetReadFile**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile) en un bucle para descargar los datos y salir cuando devuelva cero bytes leídos y se complete correctamente.
+[**InternetReadFile devuelve**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile) cero bytes leídos y se completa correctamente cuando se han leído todos los datos disponibles. Esto permite que una aplicación use [**InternetReadFile**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile) en un bucle para descargar los datos y salir cuando devuelve cero bytes leídos y se completa correctamente.
 
-En el ejemplo siguiente se lee el recurso desde Internet y se muestra el recurso en el cuadro de edición indicado por intCtrlID. El identificador de [**HINTERNET**](appendix-a-hinternet-handles.md) , HINTERNET, fue devuelto por [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla), [**FtpOpenFile**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea)o [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) (después de ser enviado por [**HttpSendRequest**](/windows/desktop/api/Wininet/nf-wininet-httpsendrequesta)).
+En el ejemplo siguiente se lee el recurso de Internet y se muestra el recurso en el cuadro de edición indicado por intCtrlID. [**InternetOpenUrl,**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) [**FtpOpenFile**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea)o [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) devolvieron el identificador [**HINTERNET,**](appendix-a-hinternet-handles.md) hInternet , o HttpOpenRequest (después de ser enviado por [**HttpSendRequest).**](/windows/desktop/api/Wininet/nf-wininet-httpsendrequesta)
 
 
 ```C++
@@ -296,11 +296,11 @@ int WINAPI Dump(HWND hX, int intCtrlID, HINTERNET hResource)
 
 ### <a name="finding-the-next-file"></a>Buscar el siguiente archivo
 
-La función [**InternetFindNextFile**](/windows/desktop/api/Wininet/nf-wininet-internetfindnextfilea) se usa para buscar el siguiente archivo en una búsqueda de archivos mediante los parámetros de búsqueda y el identificador [**HINTERNET**](appendix-a-hinternet-handles.md) de [**FtpFindFirstFile**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea)o [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla).
+La [**función InternetFindNextFile**](/windows/desktop/api/Wininet/nf-wininet-internetfindnextfilea) se usa para buscar el siguiente archivo en una búsqueda de archivos, mediante los parámetros de búsqueda y el identificador [**HINTERNET**](appendix-a-hinternet-handles.md) de [**FtpFindFirstFile**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea)o [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla).
 
-Para completar una búsqueda de archivos, siga llamando a [**InternetFindNextFile**](/windows/desktop/api/Wininet/nf-wininet-internetfindnextfilea) con el identificador [**HINTERNET**](appendix-a-hinternet-handles.md) devuelto por [**FtpFindFirstFile**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea), o [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) hasta que se produzca un error en la función con el mensaje de error extendido [ \_ no hay \_ más \_ archivos](wininet-errors.md). Para obtener la información de error extendida, llame a la función [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) .
+Para completar una búsqueda de archivos, siga llamada a [**InternetFindNextFile**](/windows/desktop/api/Wininet/nf-wininet-internetfindnextfilea) mediante el identificador [**HINTERNET**](appendix-a-hinternet-handles.md) devuelto por [**FtpFindFirstFile**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea)o [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) hasta que se produce un error en la función con el mensaje de error [extendido ERROR NO MORE \_ \_ \_ FILES](wininet-errors.md). Para obtener la información de error extendida, llame a [**la función GetLastError.**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)
 
-En el ejemplo siguiente se muestra el contenido de un directorio FTP en el cuadro de lista indicado por lstDirectory. El identificador de [**HINTERNET**](appendix-a-hinternet-handles.md) , hConnect, es un identificador devuelto por la función [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) después de establecer una sesión de FTP.
+En el ejemplo siguiente se muestra el contenido de un directorio FTP en el cuadro de lista indicado por lstDirectory. El [**identificador HINTERNET,**](appendix-a-hinternet-handles.md) hConnect, es un identificador devuelto por la función [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) después de establecer una sesión FTP.
 
 
 ```C++
@@ -432,33 +432,33 @@ bool WINAPI DisplayDir( HWND hX,
 
 
 
-### <a name="manipulating-options"></a>Manipular opciones
+### <a name="manipulating-options"></a>Manipulación de opciones
 
-[**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) y [**InternetQueryOption**](/windows/desktop/api/Wininet/nf-wininet-internetqueryoptiona) se usan para manipular las opciones de Wininet.
+[**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) e [**InternetQueryOption**](/windows/desktop/api/Wininet/nf-wininet-internetqueryoptiona) se usan para manipular las opciones de WinINet.
 
-[**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) acepta una variable que indica la opción que se va a establecer, un búfer para contener el valor de la opción y un puntero que contiene la dirección de la variable que contiene la longitud del búfer.
+[**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) acepta una variable que indica la opción que se establece, un búfer para contener el valor de opción y un puntero que contiene la dirección de la variable que contiene la longitud del búfer.
 
-[**InternetQueryOption**](/windows/desktop/api/Wininet/nf-wininet-internetqueryoptiona) acepta una variable que indica la opción de recuperación, un búfer para contener la configuración de opción y un puntero que contiene la dirección de la variable que contiene la longitud del búfer.
+[**InternetQueryOption**](/windows/desktop/api/Wininet/nf-wininet-internetqueryoptiona) acepta una variable que indica la opción que se debe recuperar, un búfer para contener el valor de opción y un puntero que contiene la dirección de la variable que contiene la longitud del búfer.
 
-### <a name="setting-up-asynchronous-operations"></a>Configurar operaciones asincrónicas
+### <a name="setting-up-asynchronous-operations"></a>Configuración de operaciones asincrónicas
 
-De forma predeterminada, las funciones WinINet funcionan sincrónicamente. Una aplicación puede solicitar una operación asincrónica estableciendo la marca [ \_ \_ Async de marca de Internet](api-flags.md) en la llamada a la función [**InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena) . Todas las llamadas futuras realizadas en los identificadores derivados del identificador devuelto desde [**InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena) se realizan de forma asincrónica.
+De forma predeterminada, las funciones de WinINet funcionan sincrónicamente. Una aplicación puede solicitar una operación asincrónica estableciendo la marca [ \_ INTERNET FLAG \_ ASYNC](api-flags.md) en la llamada a la [**función InternetOpen.**](/windows/desktop/api/Wininet/nf-wininet-internetopena) Todas las llamadas futuras realizadas en los identificadores derivados del identificador devuelto [**de InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena) se realizan de forma asincrónica.
 
-La lógica para la operación asincrónica frente a la sincrónica es permitir que una aplicación de un único subproceso Maximice su uso de la CPU sin tener que esperar a que se complete la e/s de red. Por lo tanto, dependiendo de la solicitud, la operación puede completarse de forma sincrónica o asincrónica. La aplicación debe comprobar el código de retorno. Si una función devuelve **false** o **null**, y [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve un error de \_ e/s \_ pendiente, la solicitud se ha realizado de forma asincrónica y se vuelve a llamar a la aplicación con la solicitud de estado de Internet \_ \_ \_ completa cuando se completa la función.
+La lógica de la operación asincrónica frente a la sincrónica es permitir que una aplicación de un solo subproceso maximice su uso de la CPU sin tener que esperar a que se complete la E/S de red. Por lo tanto, en función de la solicitud, la operación podría completarse de forma sincrónica o asincrónica. La aplicación debe comprobar el código de retorno. Si una función devuelve **FALSE** o **NULL,** y [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve ERROR IO PENDING, la solicitud se ha realizado de forma asincrónica y la aplicación se llama de nuevo con LA SOLICITUD DE ESTADO DE INTERNET COMPLETE cuando se ha completado la \_ \_ \_ \_ \_ función.
 
-Para comenzar la operación asincrónica, la aplicación debe establecer la [marca \_ \_ Async de marca de Internet](api-flags.md) en su llamada a [**InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena). A continuación, la aplicación debe registrar una función de devolución de llamada válida mediante [**InternetSetStatusCallback**](/windows/desktop/api/Wininet/nf-wininet-internetsetstatuscallback).
+Para comenzar la operación asincrónica, la aplicación debe establecer la marca [ \_ INTERNET FLAG \_ ASYNC](api-flags.md) en su llamada a [**InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena). A continuación, la aplicación debe registrar una función de devolución de llamada válida, [**mediante InternetSetStatusCallback**](/windows/desktop/api/Wininet/nf-wininet-internetsetstatuscallback).
 
-Después de registrar una función de devolución de llamada para un identificador, todas las operaciones en ese identificador pueden generar indicaciones de estado, siempre que el valor de contexto que se proporcionó cuando se creó el identificador no sea cero. Proporcionar un valor de contexto cero obliga a que una operación se complete de forma sincrónica, aunque se especificó la [marca de Internet \_ \_ Async](api-flags.md) en [**InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena).
+Después de registrar una función de devolución de llamada para un identificador, todas las operaciones en ese identificador pueden generar indicaciones de estado, siempre que el valor de contexto que se proporcionó cuando se creó el identificador no fuera cero. Si se proporciona un valor de contexto cero, una operación se completa sincrónicamente, aunque [internet \_ FLAG \_ ASYNC](api-flags.md) se especificó en [**InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena).
 
-Las indicaciones de estado proporcionan a la aplicación comentarios sobre el progreso de las operaciones de red, como la resolución de un nombre de host, la conexión a un servidor y la recepción de datos. Se pueden realizar tres indicaciones de estado de uso especial para un identificador:
+Las indicaciones de estado dan a la aplicación comentarios sobre el progreso de las operaciones de red, como resolver un nombre de host, conectarse a un servidor y recibir datos. Se pueden realizar tres indicaciones de estado de propósito especial para un identificador:
 
--   \_ \_ \_ El cierre del identificador de estado de Internet es la última indicación de estado que se realiza para un identificador.
--   \_ \_ Identificador de estado \_ de Internet creado indica cuándo se crea inicialmente el identificador.
--   La \_ solicitud de estado de Internet \_ \_ completa indica que se ha completado una operación asincrónica.
+-   INTERNET \_ STATUS HANDLE CLOSING es la última indicación de estado que se realiza para un \_ \_ identificador.
+-   INTERNET \_ STATUS HANDLE CREATED indica cuándo se crea \_ \_ inicialmente el identificador.
+-   INTERNET \_ STATUS REQUEST COMPLETE indica que se ha completado una operación \_ \_ asincrónica.
 
-La aplicación debe comprobar la estructura de [**\_ \_ resultados asincrónicos de Internet**](/windows/desktop/api/Wininet/ns-wininet-internet_async_result) para determinar si la operación se realizó correctamente o no después de recibir una indicación de estado de Internet \_ \_ \_ rellenada.
+La aplicación debe comprobar la estructura DE RESULTADOS DE [**INTERNET \_ ASYNC \_**](/windows/desktop/api/Wininet/ns-wininet-internet_async_result) para determinar si la operación se ha completado correctamente o no después de recibir una indicación INTERNET STATUS REQUEST \_ \_ \_ COMPLETE.
 
-En el ejemplo siguiente se muestra un ejemplo de una función de devolución de llamada y una llamada a [**InternetSetStatusCallback**](/windows/desktop/api/Wininet/nf-wininet-internetsetstatuscallback) para registrar la función como la función de devolución de llamada.
+En el ejemplo siguiente se muestra un ejemplo de una función de devolución de llamada y una llamada a [**InternetSetStatusCallback**](/windows/desktop/api/Wininet/nf-wininet-internetsetstatuscallback) para registrar la función como función de devolución de llamada.
 
 
 ```C++
@@ -484,9 +484,9 @@ INTERNET_STATUS_CALLBACK dwISC =
 
 
 
-### <a name="closing-hinternet-handles"></a>Cerrar los identificadores de HINTERNET
+### <a name="closing-hinternet-handles"></a>Cierre de identificadores HINTERNET
 
-Todos los identificadores de [**HINTERNET**](appendix-a-hinternet-handles.md) se pueden cerrar mediante la función [**InternetCloseHandle**](/windows/desktop/api/Wininet/nf-wininet-internetclosehandle) . Las aplicaciones cliente deben cerrar todos los identificadores de **HINTERNET** derivados del identificador **HINTERNET** que están intentando cerrar antes de llamar a [**InternetCloseHandle**](/windows/desktop/api/Wininet/nf-wininet-internetclosehandle) en el identificador.
+Todos [**los identificadores HINTERNET**](appendix-a-hinternet-handles.md) se pueden cerrar mediante [**la función InternetCloseHandle.**](/windows/desktop/api/Wininet/nf-wininet-internetclosehandle) Las aplicaciones cliente deben cerrar todos los **identificadores HINTERNET** derivados del identificador **HINTERNET** que están intentando cerrar antes de llamar a [**InternetCloseHandle**](/windows/desktop/api/Wininet/nf-wininet-internetclosehandle) en el identificador.
 
 En el ejemplo siguiente se muestra la jerarquía de identificadores.
 
@@ -513,14 +513,14 @@ InternetCloseHandle(hRootHandle);
 
 
 
-### <a name="locking-and-unlocking-resources"></a>Bloquear y desbloquear recursos
+### <a name="locking-and-unlocking-resources"></a>Bloqueo y desbloqueo de recursos
 
-La función [**InternetLockRequestFile**](/windows/desktop/api/Wininet/nf-wininet-internetlockrequestfile) permite a una aplicación asegurarse de que el recurso almacenado en caché asociado al identificador de [**HINTERNET**](appendix-a-hinternet-handles.md) que se ha pasado no desaparece de la caché. Si otra descarga intenta confirmar un recurso que tiene la misma dirección URL que el archivo bloqueado, la memoria caché evita la eliminación del archivo mediante una eliminación segura. Una vez que la aplicación llama a la función [**InternetUnlockRequestFile**](/windows/desktop/api/Wininet/nf-wininet-internetunlockrequestfile) , se concede permiso a la memoria caché para eliminar el archivo.
+La [**función InternetLockRequestFile**](/windows/desktop/api/Wininet/nf-wininet-internetlockrequestfile) permite a una aplicación asegurarse de que el recurso almacenado en caché asociado al identificador [**HINTERNET**](appendix-a-hinternet-handles.md) que se le pasa no desaparece de la memoria caché. Si otra descarga intenta confirmar un recurso que tiene la misma dirección URL que el archivo bloqueado, la memoria caché evita quitar el archivo mediante una eliminación segura. Una vez que la aplicación llama [**a la función InternetUnlockRequestFile,**](/windows/desktop/api/Wininet/nf-wininet-internetunlockrequestfile) la memoria caché tiene permiso para eliminar el archivo.
 
-Si se ha establecido la marca [Internet Flag not cache \_ \_ \_ \_ Write](api-flags.md) o [Internet \_ Flag not \_ \_ Cache](api-flags.md) , [**InternetLockRequestFile**](/windows/desktop/api/Wininet/nf-wininet-internetlockrequestfile) crea un archivo temporal con la extensión tmp, a menos que el identificador esté conectado a un recurso https. Si la función tiene acceso a un recurso https y a la marca de INTERNET no se ha \_ \_ \_ establecido ninguna escritura en caché \_ (o se ha establecido la marca de Internet como no \_ \_ \_ almacenada en caché), [**InternetLockRequestFile**](/windows/desktop/api/Wininet/nf-wininet-internetlockrequestfile) produce un error.
+Si se ha establecido la marca [INTERNET FLAG NO CACHE \_ \_ \_ \_ WRITE](api-flags.md) o [INTERNET FLAG \_ \_ DONT \_ CACHE,](api-flags.md) [**InternetLockRequestFile**](/windows/desktop/api/Wininet/nf-wininet-internetlockrequestfile) crea un archivo temporal con la extensión TMP, a menos que el identificador esté conectado a un recurso https. Si la función tiene acceso a un recurso https y se ha establecido INTERNET \_ FLAG NO CACHE WRITE \_ \_ \_ (o INTERNET FLAG \_ \_ DONT \_ CACHE), [**InternetLockRequestFile**](/windows/desktop/api/Wininet/nf-wininet-internetlockrequestfile) produce un error.
 
 > [!Note]  
-> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. En el caso de servicios o implementaciones de servidor, use los [servicios http de Microsoft Windows (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones o servicios de servidor, use [Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
  
 

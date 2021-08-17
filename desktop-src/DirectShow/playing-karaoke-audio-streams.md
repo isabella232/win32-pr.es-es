@@ -1,28 +1,28 @@
 ---
-description: Reproducir flujos de audio de karaoke
+description: Reproducir audio de audio Secuencias
 ms.assetid: 1a8d0f42-35b8-4743-9ae7-619b99936f76
-title: Reproducir flujos de audio de karaoke
+title: Reproducir audio de audio Secuencias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 907bfa3e359915cf537de75cdc739630fe607d97
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b10912761034feb9ed82c85625324cd3091514b2c492c66b4e49af711d7d2152
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105677146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119213305"
 ---
-# <a name="playing-karaoke-audio-streams"></a>Reproducir flujos de audio de karaoke
+# <a name="playing-karaoke-audio-streams"></a>Reproducir audio de audio Secuencias
 
-El navegador de DVD puede reproducir discos DVD-Video con secuencias de audio de karaoke, pero la reproducción de karaoke también requiere un descodificador que admita la combinación de Karaoke de multicanal. En concreto, el descodificador debe admitir el [**conjunto de propiedades de Karaoke de DVD**](dvd-karaoke-property-set.md) ( \_ propiedad \_ DVDKARAOKE).
+El navegador de DVD puede reproducir DVD-Video con secuencias de audio de audio, pero la reproducción de audio también requiere un descodificador que admita la mezcla multicanal de audio. En concreto, el descodificador debe admitir el conjunto de propiedades [**DVD Dvd Dvd (AM**](dvd-karaoke-property-set.md) \_ PROPERTY \_ DVDKARAOKE).
 
-Los discos de karaoke son un tipo de disco DVD-Video y tienen la misma estructura de navegación. Las canciones suelen tener el formato de títulos y los títulos se pueden agrupar en conjuntos de títulos basados en el rendimiento, estilo musical u otros criterios. La diferencia principal entre el karaoke y otros tipos de DVD-Videos es la secuencia de audio. Los discos de karaoke contienen audio multicanal, normalmente Dolby AC-3. Los canales 0 y 1 siempre contienen la música instrumental de fondo, mientras que los canales del 2 al 5 pueden contener cualquier combinación de voces guía, Melodies de guía y efectos sonoros. Una aplicación de Karaoke puede controlar el volumen y el altavoz de destino para cada canal auxiliar.
+Los discos de Res son un tipo de DVD-Video disco y tienen la misma estructura de navegación. Por lo general, las canciones tienen el formato de títulos y los títulos se pueden agrupar en conjuntos de títulos en función del intérprete, el estilo música u otros criterios. La principal diferencia entre ambos tipos de DVD-Videos es la secuencia de audio. Todos los discos de Disco duro contienen audio multicanal, normalmente Dolby AC-3. Los canales 0 y 1 siempre contienen la música instrumental de fondo, mientras que los canales del 2 al 5 pueden contener cualquier combinación de voces de guía, músicas de guía y efectos de sonido. Una aplicación de punto de conexión puede controlar el volumen y el altavoz de destino para cada canal auxiliar.
 
-Cuando el navegador de DVD detecta el contenido de karaoke en un disco y entra en el modo de karaoke, informa al descodificador, que debe silenciar los tres canales superiores (los canales auxiliares) hasta que una aplicación Active explícitamente cualquiera de ellos. Las tareas básicas de una aplicación de karaoke son:
+Cuando el navegador de DVD detecta contenido de canal en un disco y entra en modo de vídeo, informa al descodificador, que, a continuación, debe silenciar los tres canales superiores (los canales auxiliares) hasta que una aplicación haya activado explícitamente alguno de ellos o todos ellos. Las tareas básicas de una aplicación son:
 
-1.  Determine el número de canales auxiliares y su contenido mediante métodos [**IDvdInfo2**](/windows/desktop/api/Strmif/nn-strmif-idvdinfo2) .
-2.  Proporcione una interfaz de usuario que muestre el contenido del canal y permita a los usuarios activar o desactivar cualquier canal auxiliar en cualquier momento, mediante [**IDvdControl2:: SelectKaraokeAudioPresentationMode**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-selectkaraokeaudiopresentationmode).
+1.  Determine el número de canales auxiliares y su contenido mediante [**métodos IDvdInfo2.**](/windows/desktop/api/Strmif/nn-strmif-idvdinfo2)
+2.  Proporcione una interfaz de usuario que muestre el contenido del canal y permita a los usuarios activar o desactivar cualquier canal auxiliar en cualquier momento, mediante [**IDvdControl2::SelectKaraokeAudioPresentationMode**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-selectkaraokeaudiopresentationmode).
 
-Estos pasos se ilustran en la aplicación de ejemplo de DVD en DVDCore. cpp en el método **GetAudioAttributes** .
+Estos pasos se ilustran en la aplicación DVD Sample de DVDCore.cpp en el **método GetAudioAttributes.**
 
 ## <a name="related-topics"></a>Temas relacionados
 

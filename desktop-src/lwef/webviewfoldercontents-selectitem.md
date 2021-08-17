@@ -3,9 +3,9 @@ title: Método WebViewFolderContents.SelectItem (Shldisp.h)
 description: 'Método WebViewFolderContents.SelectItem: establece el estado de selección de un elemento en la vista.'
 ms.assetid: c0e163ee-1951-476c-807a-781e26766d99
 keywords:
-- Características heredadas del entorno de Windows del método SelectItem
-- SelectItem method Legacy Windows Environment Features , WebViewFolderContents (Objeto WebViewFolderContents)
-- WebViewFolderContents object Legacy Windows Environment Features , SelectItem method (Características heredadas del entorno de Windows del objeto WebViewFolderContents), método SelectItem
+- Método SelectItem Legacy Windows Environment Features
+- Método SelectItem Legacy Windows Environment Features , Objeto WebViewFolderContents
+- Objeto WebViewFolderContents Características heredadas del Windows , método SelectItem
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66e2d05c010199f05826df7ed4591e8c7c1723e2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d144801e62962f4071b6c8e60147326908a9b4f7787e0d4ac549be9c51fa3c97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119960625"
 ---
 # <a name="webviewfoldercontentsselectitem-method"></a>Método WebViewFolderContents.SelectItem
 
@@ -101,7 +101,7 @@ Coloque el elemento en modo de edición.
 
 </dt> <dd>
 
-Anule la selección de todos los elementos menos el especificado.
+Anule la selección de todos los elementos, menos el elemento especificado.
 
 </dd> <dt>
 
@@ -171,9 +171,9 @@ En el ejemplo siguiente se muestra el uso adecuado de este método para JScript 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

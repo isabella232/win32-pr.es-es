@@ -1,9 +1,9 @@
 ---
-title: VÍDEO. cursor
-description: El atributo cursor especifica o recupera el valor del cursor que se utiliza cuando el mouse está sobre un área en la que se hace clic del vídeo.
+title: VIDEO.cursor
+description: El atributo cursor especifica o recupera el valor del cursor que se usa cuando el mouse está sobre un área en la que se puede hacer clic del vídeo.
 ms.assetid: 2faaf9cd-47be-47d5-ad4e-8f3bb322d812
 keywords:
-- VÍDEO. cursor Windows Media Player
+- Video.cursor Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c23ab90b974ad5a7f9cfaf9fcc598371cd0697f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 73c39b40412a02e145b8063f473272184e1d7cf03caaa170de19bde7fad37a50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134248"
 ---
-# <a name="videocursor"></a>VÍDEO. cursor
+# <a name="videocursor"></a>VIDEO.cursor
 
-El atributo **cursor** especifica o recupera el valor del cursor que se utiliza cuando el mouse está sobre un área en la que se hace clic del vídeo.
+El **atributo** cursor especifica o recupera el valor del cursor que se usa cuando el mouse está sobre un área en la que se puede hacer clic del vídeo.
 
 ``` syntax
         elementID.cursor
@@ -29,30 +29,30 @@ El atributo **cursor** especifica o recupera el valor del cursor que se utiliza 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura.
+Este atributo es una cadena de lectura **y escritura.**
 
 
 
 | Value            | Descripción                                                                                 |
 |------------------|---------------------------------------------------------------------------------------------|
 | sistema           | Cursor dependiente de la plataforma (normalmente una flecha).                                               |
-| casilla             | Casilla.                                                                                       |
-| help             | Flecha con signo de interrogación que indica que la ayuda está disponible.                                      |
-| sizeall          | Flecha de cuatro puntas que señala al norte, sur, este y oeste.                                   |
-| sizenesw         | Flecha de doble punta que apunta al noreste y al suroeste.                                      |
-| tamaños de           | Flecha de dos puntas que apunta al norte y al sur.                                              |
-| sizenwse         | Flecha de dos puntas que apunta al noroeste y al sudeste.                                      |
-| sizewe           | Flecha de dos puntas que apunta al oeste y al este.                                                |
-| flecha arriba          | Flecha vertical que señala hacia arriba.                                                             |
-| \*. ani o \* . cur | Cualquier archivo. ani o. cur (debe estar en el mismo directorio que el archivo. WMS o en el archivo. WMZ). |
+| Mano             | Mano.                                                                                       |
+| ayuda             | Flecha con signo de interrogación que indica que la Ayuda está disponible.                                      |
+| sizeall          | Flecha de cuatro puntas que apunta al norte, sur, este y oeste.                                   |
+| sizenesw         | Flecha de doble punta que apunta hacia el noreste y el suroeste.                                      |
+| sizens           | Flecha de doble punta que apunta hacia el norte y el sur.                                              |
+| sizenwse         | Flecha de doble punta que apunta al noroeste y al sudeste.                                      |
+| sizewe           | Flecha de doble punta que apunta hacia el oeste y el este.                                                |
+| arriba          | Flecha vertical que apunta hacia arriba.                                                             |
+| \*.ani o \* .cur | Cualquier archivo .ani o .cur (debe estar en el mismo directorio que el archivo .wms o en el archivo .wmz). |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para fines de representación, el sistema es el cursor predeterminado. El valor predeterminado recuperado de este atributo es "" (cadena vacía).
+Con fines de representación, el sistema es el cursor predeterminado. El valor predeterminado recuperado de este atributo es "" (cadena vacía).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,7 +60,7 @@ Para fines de representación, el sistema es el cursor predeterminado. El valor 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -68,7 +68,7 @@ Para fines de representación, el sistema es el cursor predeterminado. El valor 
 
 <dl> <dt>
 
-[**Elemento de vídeo**](video-element.md)
+[**Elemento VIDEO**](video-element.md)
 </dt> </dl>
 
  

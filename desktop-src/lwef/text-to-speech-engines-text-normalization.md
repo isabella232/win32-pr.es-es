@@ -1,39 +1,39 @@
 ---
-title: Normalización del texto de los motores de conversión de texto a voz
-description: Normalización del texto de los motores de conversión de texto a voz
+title: Normalización de texto de motores de texto a voz
+description: Normalización de texto de motores de texto a voz
 ms.assetid: 1974d47b-4877-47e3-89d8-fd70967e7605
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb7bda7cb8041e31ef8e741df4d3f5d807610f1f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0cd195212d52d9107aa8112c156bfd8dd6b33d00d2161bec624d182f0f12f78e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105704647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119347925"
 ---
-# <a name="text-to-speech-engines-text-normalization"></a>Normalización del texto de los motores de conversión de texto a voz
+# <a name="text-to-speech-engines-text-normalization"></a>Normalización de texto de motores de texto a voz
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-La normalización es el proceso de identificar números, abreviaturas, acrónimos y idiomatics y transformarlos en texto completo según sea necesario, normalmente basado en el contexto de la oración.
+La normalización es el proceso de identificar números, abreviaturas, acrónimos e idiomas y transformarlos en texto completo según sea necesario, normalmente en función del contexto de la frase.
 
-Por ejemplo, si usa&el motor de conversión de mayúsculas y minúsculas de TruVoice, la frase:
+Por ejemplo, mediante L&H TruVoice American English TTS Engine, la frase:
 
-King George VI de Inglaterra Falleci el 6 de febrero de 1952.
+El padre Juan VI de Irlanda, fallecida el 6 de febrero de 1952.
 
-se leerán en **contexto normal** como:
+se leerá en el **contexto normal** como:
 
-   Rey George V I de Inglaterra, muerto el seis de febrero de 19 52.
+   El padre Carlos V I de Francia, fallecida el seis de febrero, diecinueve cincuenta y dos.
 
-Pero en el **contexto de correo electrónico**, se leerá como:
+Pero en **contexto de correo electrónico,** se leerá como:
 
-   Rey George el sexto de Inglaterra, fallecido el sexto de febrero de 19 52.
+   El sexto de Reino Unido, padre de Irlanda, fallecida el sexto de febrero, diecinueve cincuenta y dos.
 
-Puede encontrar información sobre el uso de la etiqueta **Context** Speech en la documentación de programación del agente [etiquetas de salida de voz del agente de Microsoft](microsoft-agent-speech-output-tags.md).
+Puede encontrar información sobre el uso **de la etiqueta De** voz de contexto en la documentación de programación del Agente [Etiquetas de salida de voz de Microsoft Agent](microsoft-agent-speech-output-tags.md).
 
- 
+ 
 
- 
+ 
 
 
 

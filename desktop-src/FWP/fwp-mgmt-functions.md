@@ -1,25 +1,25 @@
 ---
 title: Funciones de administración
-description: Las funciones de administración de la plataforma de filtrado de Windows (WFP) para el motor de filtro son las siguientes.
+description: Las Windows de administración de la Plataforma de filtrado de filtros (WFP) para el motor de filtros son las siguientes.
 ms.assetid: 983eb1bb-af6b-42cf-8148-ed3a0e3102a9
 keywords:
-- Funciones de API Management de la plataforma de filtrado de Windows
+- Windows Funciones de filtrado de API Management plataforma
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ab42fc22d6e51e85a1e03f4835ee510917ff534
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 0163119df45f278d4c5e0c4a2f2563cdc16db4e4994e17a2aba5ea7cc621f383
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105685712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069215"
 ---
 # <a name="management-functions"></a>Funciones de administración
 
-Las funciones de administración de la plataforma de filtrado de Windows (WFP) para el motor de filtro son las siguientes.
+Las Windows de administración de la Plataforma de filtrado de filtros (WFP) para el motor de filtros son las siguientes.
 
 Administración de llamadas
 
--   [**FWPM \_ llamada de \_ cambio \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_callout_change_callback0)
+-   [**FWPM \_ CALLOUT \_ CHANGE \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_callout_change_callback0)
 -   [**FwpmCalloutAdd0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmcalloutadd0)
 -   [**FwpmCalloutCreateEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmcalloutcreateenumhandle0)
 -   [**FwpmCalloutDeleteById0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmcalloutdeletebyid0)
@@ -36,7 +36,7 @@ Administración de llamadas
 
 Administración de objetos de conexión
 
--   [**\_CALLBACK0 de conexión FWPM \_**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_connection_callback0)
+-   [**FWPM \_ CONNECTION \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_connection_callback0)
 -   [**FwpmConnectionCreateEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmconnectioncreateenumhandle0)
 -   [**FwpmConnectionDestroyEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmconnectiondestroyenumhandle0)
 -   [**FwpmConnectionEnum0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmconnectionenum0)
@@ -49,9 +49,9 @@ Administración de objetos de conexión
 
 Administración de eventos
 
--   FWPM \_ \_ devolución de llamada de evento NET \_ :
-    -   [**FWPM \_ NET \_ Event \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_net_event_callback0) (Windows 7)
-    -   [**FWPM \_ NET \_ Event \_ CALLBACK1**](/windows/desktop/api/fwpmu/nc-fwpmu-fwpm_net_event_callback1) (Windows 8)
+-   DEVOLUCIÓN DE LLAMADA DE EVENTOS DE FWPM \_ \_ \_ NET:
+    -   [**FWPM \_ NET \_ EVENT \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_net_event_callback0) (Windows 7)
+    -   [**FWPM \_ NET \_ EVENT \_ CALLBACK1**](/windows/desktop/api/fwpmu/nc-fwpmu-fwpm_net_event_callback1) (Windows 8)
 -   [**FwpmNetEventCreateEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmneteventcreateenumhandle0)
 -   [**FwpmNetEventDestroyEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmneteventdestroyenumhandle0)
 -   FwpmNetEventEnum:
@@ -68,7 +68,7 @@ Administración de eventos
 
 Administración de filtros
 
--   [**FWPM \_ filtro de \_ cambio \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_filter_change_callback0)
+-   [**FWPM \_ FILTER \_ CHANGE \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_filter_change_callback0)
 -   [**FwpmFilterAdd0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmfilteradd0)
 -   [**FwpmFilterCreateEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmfiltercreateenumhandle0)
 -   [**FwpmFilterDeleteById0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmfilterdeletebyid0)
@@ -94,10 +94,10 @@ Administración de capas
 -   [**FwpmLayerGetSecurityInfoByKey0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmlayergetsecurityinfobykey0)
 -   [**FwpmLayerSetSecurityInfoByKey0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmlayersetsecurityinfobykey0)
 
-Administración de contexto de proveedor
+Administración del contexto del proveedor
 
--   [**Cambio de contexto del proveedor de FWPM \_ \_ \_ \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_provider_context_change_callback0)
--   FwpmProviderContextAdd:
+-   [**FWPM \_ PROVIDER \_ CONTEXT \_ CHANGE \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_provider_context_change_callback0)
+-   FwpmProviderContextAgregue:
     -   [**FwpmProviderContextAdd0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmprovidercontextadd0) (Windows Vista)
     -   [**FwpmProviderContextAdd1**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmprovidercontextadd1) (Windows 7)
     -   [**FwpmProviderContextAdd2**](/windows/desktop/api/fwpmu/nf-fwpmu-fwpmprovidercontextadd2) (Windows 8)
@@ -125,7 +125,7 @@ Administración de contexto de proveedor
 
 Administración de proveedores
 
--   [**\_CALLBACK0 de \_ cambio de proveedor de FWPM \_**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_provider_change_callback0)
+-   [**FWPM \_ PROVIDER \_ CHANGE \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_provider_change_callback0)
 -   [**FwpmProviderAdd0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmprovideradd0)
 -   [**FwpmProviderCreateEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmprovidercreateenumhandle0)
 -   [**FwpmProviderDeleteByKey0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmproviderdeletebykey0)
@@ -152,7 +152,7 @@ Administración de sesiones
 
 Administración de subcapas
 
--   [**\_Cambio de SUBcapa de FWPM \_ \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_sublayer_change_callback0)
+-   [**FWPM \_ SUBLAYER \_ CHANGE \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_sublayer_change_callback0)
 -   [**FwpmSubLayerAdd0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayeradd0)
 -   [**FwpmSubLayerCreateEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayercreateenumhandle0)
 -   [**FwpmSubLayerDeleteByKey0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayerdeletebykey0)
@@ -167,7 +167,7 @@ Administración de subcapas
 
 Administración de puertos del sistema
 
--   [**FWPM \_ puertos del sistema \_ \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_system_ports_callback0)
+-   [**FWPM \_ SYSTEM \_ PORTS \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_system_ports_callback0)
 -   [**FwpmSystemPortsGet0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsystemportsget0)
 -   [**FwpmSystemPortsSubscribe0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsystemportssubscribe0)
 -   [**FwpmSystemPortsUnsubscribe0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsystemportsunsubscribe0)
@@ -178,14 +178,14 @@ Administración de transacciones
 -   [**FwpmTransactionBegin0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmtransactionbegin0)
 -   [**FwpmTransactionCommit0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmtransactioncommit0)
 
-Administración de vSwitch
+vSwitch Management
 
--   [**\_Evento FWPM \_ VSWITCH \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_vswitch_event_callback0)
+-   [**FWPM \_ VSWITCH \_ EVENT \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_vswitch_event_callback0)
 -   [**FwpmvSwitchEventsGetSecurityInfo0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmvswitcheventsgetsecurityinfo0)
 -   [**FwpmvSwitchEventsSetSecurityInfo0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmvswitcheventssetsecurityinfo0)
 -   [**FwpmvSwitchEventSubscribe0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmvswitcheventsubscribe0)
 -   [**FwpmvSwitchEventUnsubscribe0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmvswitcheventunsubscribe0)
 
- 
+ 
 
- 
+ 

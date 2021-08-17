@@ -1,5 +1,5 @@
 ---
-description: 'Método ID3DXBaseEffect::SetMatrixPointerArray: establece una matriz de punteros en matrices no transaccionadas.'
+description: 'Método ID3DXBaseEffect::SetMatrixPointerArray: establece una matriz de punteros a matrices no transpuestas.'
 ms.assetid: f2e62470-6882-49d8-ae12-6c5b79dd5c99
 title: Método ID3DXBaseEffect::SetMatrixPointerArray (D3DX9Shader.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: cfe30e0132cfa237ddbccc24758b35e102a62b0c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 488123ed9a5f9f73c033bced2336f8cd6a36da1275a1b135db26f17a2da416c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119121844"
 ---
 # <a name="id3dxbaseeffectsetmatrixpointerarray-method"></a>Método ID3DXBaseEffect::SetMatrixPointerArray
 
@@ -73,7 +73,7 @@ Número de matrices de la matriz.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -92,7 +92,7 @@ Si las matrices de destino son menores que las matrices de origen, se omitirán 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,11 +1,11 @@
 ---
-title: RegistrationInfo. version (propiedad)
-description: En el caso de scripting, obtiene o establece el número de versión de la tarea.
+title: RegistrationInfo.Version, propiedad
+description: Para el scripting, obtiene o establece el número de versión de la tarea.
 ms.assetid: 5f200948-b4ff-495c-9578-2a93b34fd75b
 keywords:
-- Propiedad versión Programador de tareas
-- Propiedad version Programador de tareas, objeto RegistrationInfo
-- Objeto RegistrationInfo Programador de tareas, propiedad version
+- Propiedad Version Programador de tareas
+- Propiedad Version Programador de tareas , objeto RegistrationInfo
+- Objeto RegistrationInfo Programador de tareas , propiedad Version
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c312878383c5361317a765cbf84a503244c188a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b08ef170004b7c9791f18cf65360c2446d5c87a6b835fb6fbcb048f47892c470
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059993"
 ---
-# <a name="registrationinfoversion-property"></a>RegistrationInfo. version (propiedad)
+# <a name="registrationinfoversion-property"></a>RegistrationInfo.Version, propiedad
 
-En el caso de scripting, obtiene o establece el número de versión de la tarea.
+Para el scripting, obtiene o establece el número de versión de la tarea.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -40,9 +40,9 @@ RegistrationInfo.Version As String
 
 Número de versión de la tarea.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al leer o escribir XML para una tarea, el número de versión de la tarea se especifica utilizando el elemento [**version**](taskschedulerschema-version-registrationinfotype-element.md) del esquema programador de tareas.
+Al leer o escribir XML para una tarea, el número de versión de la tarea se especifica mediante el elemento [**Version**](taskschedulerschema-version-registrationinfotype-element.md) del Programador de tareas esquema.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,9 +50,9 @@ Al leer o escribir XML para una tarea, el número de versión de la tarea se esp
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

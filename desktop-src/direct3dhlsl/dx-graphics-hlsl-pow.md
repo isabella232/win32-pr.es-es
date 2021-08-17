@@ -3,7 +3,7 @@ title: pow
 description: Devuelve el valor especificado elevado a la potencia especificada.
 ms.assetid: 1d64452c-81c7-4ef5-a332-13e0263c2cd1
 keywords:
-- HLSL de Pow
+- pow HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f190c374b6c0ac42d41862eb918f0c0482b6d785
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a9d26e150d611df12f2e042d2e20c06ab82172bbc3d2f241ee1ce3a4725f1193
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104488210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120079"
 ---
 # <a name="pow"></a>pow
 
@@ -26,7 +26,7 @@ Devuelve el valor especificado elevado a la potencia especificada.
 
 
 
-| *RET* Pow (*x*, *y*) |
+| *ret* pow(*x*, *y*) |
 |---------------------|
 
 
@@ -39,8 +39,8 @@ Devuelve el valor especificado elevado a la potencia especificada.
 
 | Elemento                                                   | Descripción                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*x1*<br/> | \[en \] el valor especificado.<br/> |
-| <span id="y"></span><span id="Y"></span>*sí*<br/> | \[con \] la potencia especificada.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[en \] El valor especificado.<br/> |
+| <span id="y"></span><span id="Y"></span>*y*<br/> | \[en \] La potencia especificada.<br/> |
 
 
 
@@ -48,22 +48,22 @@ Devuelve el valor especificado elevado a la potencia especificada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Parámetro *x* elevado a la potencia del parámetro *y* .
+Parámetro *x* elevado a la potencia del *parámetro y.*
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función intrínseca de el HLSL de **Pow** calcula *x*<sup>y</sup>.
+La función intrínseca HLSL **pow** calcula *x*<sup>y</sup>.
 
 
 
 | X      | Y      | Resultado                                                                      |
 |--------|--------|-----------------------------------------------------------------------------|
 | < 0 | cualquiera    | NAN                                                                         |
-| >0 | = = 0   | 1                                                                           |
-| = = 0   | >0 | 0                                                                           |
-| = = 0   | < 0 | inf                                                                         |
-| >0 | < 0 | 1/X<sup>-y</sup>                                                            |
-| = = 0   | = = 0   | Depende del procesador de gráficos concreto<br/> 0, 1 o NAN<br/> |
+| >0 | == 0   | 1                                                                           |
+| == 0   | >0 | 0                                                                           |
+| == 0   | < 0 | inf                                                                         |
+| >0 | < 0 | 1/X<sup>-Y</sup>                                                            |
+| == 0   | == 0   | Depende del procesador de gráficos concreto<br/> 0, o 1, o NAN<br/> |
 
 
 
@@ -73,17 +73,17 @@ La función intrínseca de el HLSL de **Pow** calcula *x*<sup>y</sup>.
 
 
 
-| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamaño                           |
+| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **Vector** o **matriz** | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
-| *y*   | igual que la entrada *x*                                                                                              | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | mismas dimensiones que la entrada *x* |
-| *direcc* | igual que la entrada *x*                                                                                              | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | mismas dimensiones que la entrada *x* |
+| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vector** o **matriz** | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
+| *y*   | igual que la entrada *x*                                                                                              | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *x* |
+| *Ret* | igual que la entrada *x*                                                                                              | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -91,8 +91,8 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible           |
 |------------------------------------------------------------------------------------|---------------------|
-| Modelador [modelo 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador más altos | sí                 |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sí ( \_ solo vs 1 \_ 1) |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | Sí                 |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sí (solo \_ frente a \_ 1 1) |
 
 
 
@@ -102,7 +102,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

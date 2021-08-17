@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shdocvw.dll
 ms.assetid: 7faf758a-daa0-47f5-9f95-61fe3d8286ea
-ms.openlocfilehash: 64bf83a88584c5d97994726696d4fb3a1e971bdf
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 7ad7270f9054b875eabcb1fd9f5a7ab2e299a5916d55ef4630988921b6b2f4ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119455575"
 ---
 # <a name="dshellwindowseventswindowregistered-method"></a>DShellWindowsEvents.WindowRegistered (método)
 
@@ -54,7 +54,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-A una ventana se le concede una cookie cuando se registra como una ventana de Shell. Para obtener más información, vea [**Registrar**](/windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-register).
+Se concede una cookie a una ventana cuando se registra como una ventana de Shell. Para obtener más información, vea [**Registrar**](/windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-register).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,12 +62,12 @@ A una ventana se le concede una cookie cuando se registra como una ventana de Sh
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Producto<br/> | Internet Explorer 5<br/>                                                                                           |
+| Product<br/> | Internet Explorer 5<br/>                                                                                           |
 | Archivo DLL<br/>     | <dl> <dt>Shdocvw.dll (versión 5.00.2014.0216 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -77,7 +77,7 @@ A una ventana se le concede una cookie cuando se registra como una ventana de Sh
 [**WindowRevoked**](dshellwindowsevents-windowrevoked.md)
 </dt> <dt>
 
-[**Register**](/windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-register)
+[**Registro**](/windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-register)
 </dt> <dt>
 
 [**RegisterPending**](/windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-registerpending)

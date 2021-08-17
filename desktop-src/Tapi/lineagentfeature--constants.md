@@ -1,19 +1,19 @@
 ---
-description: Las \_ constantes LINEAGENTFEATURE muestran las características que están disponibles para un agente en una dirección.
+description: Las constantes LINEAGENTFEATURE enumera las características \_ disponibles para un agente en una dirección.
 ms.assetid: 5953eb49-08ac-4c13-9fd3-df5473f96af8
-title: Constantes de LINEAGENTFEATURE_ (TAPI. h)
+title: LINEAGENTFEATURE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 572246531e4259b5a77c649a251bfe28a138d831
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8bdd0ab13602f1a585697eba955f84cc23b940ec46c577b371a5f42e491c0d8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060743"
 ---
-# <a name="lineagentfeature_-constants"></a>Constantes de LINEAGENTFEATURE \_
+# <a name="lineagentfeature_-constants"></a>LineAGENTFEATURE \_ (Constantes)
 
-Las **\_ constantes LINEAGENTFEATURE** muestran las características que están disponibles para un agente en una dirección.
+Las **constantes LINEAGENTFEATURE \_** enumera las características disponibles para un agente en una dirección.
 
 <dl> <dt>
 
@@ -22,7 +22,7 @@ Las **\_ constantes LINEAGENTFEATURE** muestran las características que están 
 
 
 
-La función [**lineAgentSpecific**](/windows/desktop/api/Tapi/nf-tapi-lineagentspecific) se puede invocar en esta dirección.
+La [**función lineAgentSpecific**](/windows/desktop/api/Tapi/nf-tapi-lineagentspecific) se puede invocar en esta dirección.
 
 
 </dt> </dl> </dd> <dt>
@@ -32,7 +32,7 @@ La función [**lineAgentSpecific**](/windows/desktop/api/Tapi/nf-tapi-lineagents
 
 
 
-La función [**lineGetAgentActivityList**](/windows/desktop/api/Tapi/nf-tapi-linegetagentactivitylista) se puede invocar en esta dirección.
+La [**función lineGetAgentActivityList**](/windows/desktop/api/Tapi/nf-tapi-linegetagentactivitylista) se puede invocar en esta dirección.
 
 
 </dt> </dl> </dd> <dt>
@@ -42,7 +42,7 @@ La función [**lineGetAgentActivityList**](/windows/desktop/api/Tapi/nf-tapi-lin
 
 
 
-La función [**lineGetAgentGroupList**](/windows/desktop/api/Tapi/nf-tapi-linegetagentgrouplista) se puede invocar en esta dirección.
+La [**función lineGetAgentGroupList**](/windows/desktop/api/Tapi/nf-tapi-linegetagentgrouplista) se puede invocar en esta dirección.
 
 
 </dt> </dl> </dd> <dt>
@@ -52,7 +52,7 @@ La función [**lineGetAgentGroupList**](/windows/desktop/api/Tapi/nf-tapi-linege
 
 
 
-La función [**lineSetAgentActivity**](/windows/desktop/api/Tapi/nf-tapi-linesetagentactivity) se puede invocar en esta dirección.
+La [**función lineSetAgentActivity**](/windows/desktop/api/Tapi/nf-tapi-linesetagentactivity) se puede invocar en esta dirección.
 
 
 </dt> </dl> </dd> <dt>
@@ -62,7 +62,7 @@ La función [**lineSetAgentActivity**](/windows/desktop/api/Tapi/nf-tapi-lineset
 
 
 
-La función [**lineSetAgentGroup**](/windows/desktop/api/Tapi/nf-tapi-linesetagentgroup) se puede invocar en esta dirección.
+La [**función lineSetAgentGroup**](/windows/desktop/api/Tapi/nf-tapi-linesetagentgroup) se puede invocar en esta dirección.
 
 
 </dt> </dl> </dd> <dt>
@@ -72,7 +72,7 @@ La función [**lineSetAgentGroup**](/windows/desktop/api/Tapi/nf-tapi-linesetage
 
 
 
-La función [**lineSetAgentState**](/windows/desktop/api/Tapi/nf-tapi-linesetagentstate) se puede invocar en esta dirección.
+La [**función lineSetAgentState**](/windows/desktop/api/Tapi/nf-tapi-linesetagentstate) se puede invocar en esta dirección.
 
 
 </dt> </dl> </dd> </dl>
@@ -83,8 +83,8 @@ La función [**lineSetAgentState**](/windows/desktop/api/Tapi/nf-tapi-linesetage
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

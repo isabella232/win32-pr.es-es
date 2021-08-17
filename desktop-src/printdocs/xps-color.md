@@ -49,16 +49,16 @@ El formato de la estructura depende del valor de *colorType*.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma para Windows aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Platform Update for Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                          |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Server 2008 aplicaciones \[ \| para UWP\]<br/> |
 | Header<br/>                   | <dl> <dt>Xpsobjectmodel.h</dt> </dl>                                              |
 | Idl<br/>                      | <dl> <dt>XpsObjectModel.idl</dt> </dl>                                            |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

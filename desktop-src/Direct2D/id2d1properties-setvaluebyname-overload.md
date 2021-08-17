@@ -1,9 +1,9 @@
 ---
-title: Métodos de ID2D1Properties SetValueByName (D2d1 \_ 1. h)
+title: Métodos SetValueByName de ID2D1Properties (D2d1 \_ 1.h)
 description: Establece la propiedad con nombre en el valor especificado.
 ms.assetid: E00C7BDA-B950-435E-AFD8-216FB0E3BA8C
 keywords:
-- SetValueByName métodos de sobrecarga métodos Direct2D
+- Métodos de sobrecarga SetValueByName Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 271c5b97838135d06613ed795deeee729a52c691
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c0bf6f5ba22571378a0b88bcb78842cfc81c39705673e2e14e5d1fda496040dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119259025"
 ---
-# <a name="id2d1propertiessetvaluebyname-methods"></a>ID2D1Properties:: SetValueByName (métodos)
+# <a name="id2d1propertiessetvaluebyname-methods"></a>Métodos ID2D1Properties::SetValueByName
 
 Establece la propiedad con nombre en el valor especificado.
 
@@ -30,8 +30,8 @@ Establece la propiedad con nombre en el valor especificado.
 | Método                                                                                                                                                           | Descripción                                                                         |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------|
 | [**SetValueByName (PCWSTR, const template &lt; T &gt; )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-setvaluebyname(pcwstr_constt_))                                                     | Establece la propiedad con nombre en el valor especificado. Se trata de una sobrecarga de plantilla.<br/> |
-| [**SetValueByName (PCWSTR, const BYTE \* , UINT32)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-setvaluebyname(pcwstr_constbyte_uint32))                                                                        | Establece la propiedad con nombre en el valor especificado. <br/>                             |
-| [**SetValueByName (PCWSTR, \_ tipo de propiedad D2D1 \_ , const byte, datasize)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-setvaluebyname(pcwstr_d2d1_property_type_constbyte_uint32)) | Establece la propiedad con nombre en el valor especificado. <br/>                             |
+| [**SetValueByName (PCWSTR , const BYTE \* , UINT32)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-setvaluebyname(pcwstr_constbyte_uint32))                                                                        | Establece la propiedad con nombre en el valor especificado. <br/>                             |
+| [**SetValueByName (PCWSTR, D2D1 \_ PROPERTY \_ TYPE, CONST BYTE, dataSize)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-setvaluebyname(pcwstr_d2d1_property_type_constbyte_uint32)) | Establece la propiedad con nombre en el valor especificado. <br/>                             |
 
 
 
@@ -41,7 +41,7 @@ Establece la propiedad con nombre en el valor especificado.
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D2d1 \_ 1. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D2d1 \_ 1.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de EN_OLEOPFAILED (RichEdit. h)
-description: Notifica a la ventana primaria de un control Rich Edit que se ha producido un error en una acción del usuario en un objeto de modelo de objetos componentes (COM). Un control Rich Edit envía este código de notificación en forma de mensaje de \_ notificación de WM.
+title: EN_OLEOPFAILED de notificación (Richedit.h)
+description: Notifica a la ventana primaria de un control de edición enriquecido que una acción del usuario en un objeto del Modelo de objetos componentes (COM) ha dado error. Un control de edición enriquecido envía este código de notificación en forma de mensaje WM \_ NOTIFY.
 ms.assetid: b674c36f-2454-473e-8e1c-368c0afd8c34
 keywords:
-- EN_OLEOPFAILED controles de código de notificación de Windows
+- EN_OLEOPFAILED código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 139c51642c8cb6d5efd369cf6b373068604439b0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8a0391bfc61ff9350758ac81ff6f54fb1cff61d0dd1ebbcb2b8ef02ada9fe3fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119436685"
 ---
-# <a name="en_oleopfailed-notification-code"></a>\_Código de notificación en OLEOPFAILED
+# <a name="en_oleopfailed-notification-code"></a>Código de notificación DE EN \_ OLEOPFAILED
 
-Notifica a la ventana primaria de un control Rich Edit que se ha producido un error en una acción del usuario en un objeto de modelo de objetos componentes (COM). Un control Rich Edit envía este código de notificación en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de edición enriquecido que una acción del usuario en un objeto del Modelo de objetos componentes (COM) ha dado error. Un control de edición enriquecido envía este código de notificación en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -49,9 +49,9 @@ Estructura [**ENOLEOPFAILED**](/windows/desktop/api/Richedit/ns-richedit-enoleop
 
 Este código de notificación devuelve cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La ventana primaria siempre obtendrá un mensaje [**de \_ notificación de WM**](wm-notify.md) para este evento, pero no requiere que se envíe una máscara de notificación con [**em \_**](em-seteventmask.md).
+La ventana primaria siempre recibirá un mensaje [**WM \_ NOTIFY**](wm-notify.md) para este evento, no requiere una máscara de notificación enviada con [**EM \_ SETEVENTMASK**](em-seteventmask.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ La ventana primaria siempre obtendrá un mensaje [**de \_ notificación de WM**]
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

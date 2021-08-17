@@ -1,23 +1,23 @@
 ---
 description: El ejemplo siguiente es el código fuente necesario para crear un archivo DLL simple, Myputs.dll.
 ms.assetid: 3b11a83b-9943-4b66-8d0d-4a236ad5ffb8
-title: Creación de una biblioteca de Dynamic-Link simple
+title: Crear una biblioteca de Dynamic-Link simple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 572c25c87a3130739a55fcccfc9d8f9c6514d812
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47c3708f98c6b916c54940bc1667ebc4827b29c78596f55102331491aca29e65
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963795"
 ---
-# <a name="creating-a-simple-dynamic-link-library"></a>Creación de una biblioteca de Dynamic-Link simple
+# <a name="creating-a-simple-dynamic-link-library"></a>Crear una biblioteca de Dynamic-Link simple
 
-El ejemplo siguiente es el código fuente necesario para crear un archivo DLL simple, Myputs.dll. Define una función simple de impresión de cadenas llamada allocas. La DLL allocas no define una función de punto de entrada, porque está vinculada a la biblioteca en tiempo de ejecución de C y no tiene funciones de inicialización o limpieza propias para realizar.
+El ejemplo siguiente es el código fuente necesario para crear un archivo DLL simple, Myputs.dll. Define una función sencilla de impresión de cadenas denominada myPuts. El archivo DLL de Myputs no define una función de punto de entrada, porque está vinculada a la biblioteca en tiempo de ejecución de C y no tiene funciones propias de inicialización o limpieza para realizar.
 
-Para compilar el archivo DLL, siga las instrucciones de la documentación que se incluye con las herramientas de desarrollo.
+Para compilar el archivo DLL, siga las instrucciones de la documentación incluida con las herramientas de desarrollo.
 
-Para obtener un ejemplo en el que se usan allocas, vea [usar la vinculación dinámica de Load-Time](using-load-time-dynamic-linking.md) o [usar Run-Time vinculación dinámica](using-run-time-dynamic-linking.md).
+Para obtener un ejemplo en el que se usa myPuts, vea [Using Load-Time Dynamic Linking](using-load-time-dynamic-linking.md) or [Using Run-Time Dynamic Linking](using-run-time-dynamic-linking.md).
 
 
 ```C++

@@ -1,31 +1,31 @@
 ---
 title: Operaciones de servicio del lado servidor
-description: En esta sección se describen las operaciones de servicio del lado de servicio.
+description: En esta sección se describen las operaciones de servicio del lado del servicio.
 ms.assetid: d209cf2f-47f5-4025-8af4-1626c867a66a
 keywords:
-- Servicios Web de operaciones de servicio del lado servidor para Windows
+- Servicios web de operaciones de servicio del lado servidor para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c7ad5a327c1cb79278aa562bfaa1753f008a542
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 1f1656e56df08d00a0551946c4e52898beccd4d1a37a5bd96c63eb2066928fe1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104421631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119344635"
 ---
 # <a name="server-side-service-operations"></a>Operaciones de servicio del lado servidor
 
-En esta sección se describen las operaciones de servicio del lado de servicio.
+En esta sección se describen las operaciones de servicio del lado del servicio.
 
 
-El siguiente es el diseño de una operación de servicio del lado servidor
+A continuación se muestra el diseño de una operación de servicio del lado servidor
 
--   contexto de la [ \_ \_ operación const WS](ws-operation-context.md) \* : el [contexto](context.md)de la operación.
--   Parámetros de operaciones de servicio: parámetros que pertenecen a la operación de servicio.
--   [**Async WS \_ Async \_ Context**](/windows/desktop/api/WebServices/ns-webservices-ws_async_context) \* asyncContext: contexto asincrónico para ejecutar las operaciones de servicio de forma asincrónica.
--   [WS \_ ](ws-error.md) \* Error: objeto de error enriquecido.
+-   Contexto de [contexto de operación de WS: \_ \_ ](ws-operation-context.md) \* contexto de la [operación](context.md).
+-   Parámetros de operaciones de servicio: parámetros pertenecientes a la operación de servicio.
+-   const [**WS \_ ASYNC \_ CONTEXT**](/windows/desktop/api/WebServices/ns-webservices-ws_async_context) \* asyncContext: contexto asincrónico para ejecutar las operaciones de servicio de forma asincrónica.
+-   [WS \_ Error de](ws-error.md) \* error: objeto de error enriquecido.
 
 ``` syntax
 HRESULT CALLBACK Add(const WS_OPERATION_CONTEXT* context, 
@@ -40,25 +40,25 @@ HRESULT CALLBACK Add(const WS_OPERATION_CONTEXT* context,
 
 ## <a name="fault-and-error-handling"></a>Control de errores y errores
 
-El lado del servidor debe utilizar errores para proporcionar condiciones de error al cliente. Para ello, puede devolver un valor HRESULT con errores e insertar el error en el objeto de error.
+El lado servidor debe usar errores para entregar condiciones de error al cliente. Para ello, devuelve un HRESULT con errores e inserta el error en el objeto de error.
 
-Si el error no se establece en el objeto de error y se devuelve un error HRESULT, la infraestructura intentará devolver un error al cliente. El nivel de detalles que se revela al cliente en este caso se controla mediante la propiedad servicio de divulgación de errores de la [**\_ propiedad de servicio \_ \_ \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_service_property_id) en el [host del servicio](service-host.md).
+Si el error no se establece en el objeto de error y se devuelve un HRESULT de error, la infraestructura intentará devolver un error al cliente. El nivel de detalles que se revela al cliente en este caso se controla mediante la propiedad del servicio [**WS \_ SERVICE PROPERTY FAULT \_ \_ \_ DISCLOSURE**](/windows/desktop/api/WebServices/ne-webservices-ws_service_property_id) en el [host de servicio](service-host.md).
 
-## <a name="call-completion"></a>Finalización de llamada
+## <a name="call-completion"></a>Finalización de llamadas
 
-Se dice que una llamada en una operación de servicio del lado servidor sincrónica se ha completado cuando devuelve el control al host del servicio. En el caso de una operación de servicio asincrónica, una llamada se considera completada una vez que la notificación de devolución de llamada la emite la implementación de la operación de servicio.
+Se dice que una llamada en una operación de servicio del lado servidor sincrónica se ha completado cuando alguna de las dos ha devuelto el control al host de servicio. Para una operación de servicio asincrónica, una llamada se considera completada una vez que la implementación de la operación de servicio emite la notificación de devolución de llamada.
 
 ## <a name="call-lifetime"></a>Duración de la llamada
 
-Se debe tener especial cuidado al implementar una operación de servicio en el servidor sobre su duración. La duración de una llamada puede afectar en gran medida al tiempo que tarda el host del servicio en cerrarse.
+Debe tener especial cuidado al implementar una operación de servicio del lado servidor sobre su duración. La duración de una llamada puede afectar en gran medida al tiempo que tarda el host de servicio en apagarse.
 
-Si se espera que una operación de servicio en el servidor se bloquee debido a una operación enlazada de e/s, se recomienda que registre una devolución de llamada de cancelación para que se le notifique si el host del servicio se anula o cuando el cliente cierra la conexión subyacente.
+Si se espera que una operación de servicio del lado servidor se bloquee debido a alguna operación enlazada a E/S, se recomienda registrar una devolución de llamada de cancelación de modo que se notifique si se anula el host de servicio o cuando el cliente cierra la conexión subyacente.
 
-## <a name="server-side-service-operations-and-memory-consideration"></a>Consideración de las operaciones del servicio del servidor y de la memoria
+## <a name="server-side-service-operations-and-memory-consideration"></a>Consideración de memoria y operaciones del servicio del lado servidor
 
-Si una operación de servicio necesita asignar memoria para sus parámetros salientes, debe usar el objeto de [ \_ montón WS](ws-heap.md) disponible en el [ \_ \_ contexto de la operación WS](ws-operation-context.md).
+Si una operación de servicio necesita asignar memoria para sus parámetros de salida, debe usar el objeto [ \_ HEAP](ws-heap.md) de WS disponible a través de [WS \_ OPERATION \_ CONTEXT](ws-operation-context.md).
 
-Ejemplo: operación de servicio y \_ montón de WS
+Ejemplo: Operación de servicio y WS \_ HEAP
 
 ``` syntax
 HRESULT CALLBACK ProcessOrder (const WS_OPERATION_CONTEXT* context, const ULONG orderNumber, OrderReceipt** orderReceipt, const WS_ASYNC_CONTEXT* asyncContext, WS_ERROR* error)
@@ -79,12 +79,12 @@ HRESULT CALLBACK ProcessOrder (const WS_OPERATION_CONTEXT* context, const ULONG 
 
 ## <a name="return-values"></a>Valores devueltos
 
--   WS \_ S \_ Async: la llamada se completará en Async.
--   WS \_ S \_ End: la llamada se completó correctamente, el servidor no espera ningún [ \_ mensaje WS](ws-message.md) del cliente más allá de esta llamada. Si llega otro \_ mensaje WS, el servidor debería anular el canal.
--   NoError/todos los demás valores HRESULT correctos: llamada completada correctamente. Tenga en cuenta que se recomienda que la aplicación no devuelva HRESULT, y que no se haya podido completar correctamente la operación de servicio.
--   Todo con un error HRESULT: un error se devuelve al cliente si hay uno disponible en WS \_ error. De lo contrario, se devuelve un error genérico al cliente. Vea la explicación del error anterior.
+-   WS \_ S \_ ASYNC: la llamada se completará de forma asincrónica.
+-   WS S END: la llamada se completó correctamente, el servidor no espera ningún \_ \_ mensaje [WS \_ ](ws-message.md) del cliente más allá de esta llamada. Si aparece otro mensaje \_ WS, el servidor debe anular el canal.
+-   NOERROR/All other success HRESULTS: la llamada se completó correctamente. Tenga en cuenta que se recomienda que la aplicación no devuelva HRESULT otro y noerror para completar correctamente la operación de servicio.
+-   Todo con un HRESULT de error: se devuelve un error al cliente si hay uno disponible en error de \_ WS. De lo contrario, se envía un error genérico al cliente. Consulte la explicación de errores anterior.
 
-Consulte [cancelación de llamadas](call-cancellation.md).
+Consulte Cancelación [de llamadas.](call-cancellation.md)
 
  
 

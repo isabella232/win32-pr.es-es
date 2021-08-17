@@ -1,19 +1,19 @@
 ---
-description: Windows carga y ejecuta el archivo DLL estándar de Microsoft GINA (MSGina.dll). Para cargar un GINA diferente, debe modificar un valor de clave del registro.
+description: Windows carga y ejecuta el archivo DLL estándar de Microsoft GINA (MSGina.dll). Para cargar una GINA diferente, debe modificar un valor de clave del Registro.
 ms.assetid: 408511af-4430-4dd7-a2a1-c32b375821c4
-title: Cargar y ejecutar un archivo DLL de GINA
+title: Carga y ejecución de un archivo DLL de GINA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6242ac0124d85d280d951cbc0bfbdbe748fde0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10a4e8d68a1e1846a28e1db9402d730834768a132a7c502021fd101f20926f54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140958"
 ---
-# <a name="loading-and-running-a-gina-dll"></a>Cargar y ejecutar un archivo DLL de GINA
+# <a name="loading-and-running-a-gina-dll"></a>Carga y ejecución de un archivo DLL de GINA
 
-Windows carga y ejecuta el archivo DLL estándar de Microsoft GINA (MSGina.dll). Para cargar un [*Gina*](../secgloss/g-gly.md)diferente, debe modificar el siguiente valor de clave del registro:
+Windows carga y ejecuta el archivo DLL estándar de Microsoft GINA (MSGina.dll). Para cargar una [*GINA diferente,*](../secgloss/g-gly.md)debe modificar el siguiente valor de clave del Registro:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -31,7 +31,7 @@ HKEY_LOCAL_MACHINE
 </dl>
 ```
 
-Si el valor de la clave GinaDLL está presente, debe contener el nombre de un archivo DLL de GINA, que [*Winlogon*](../secgloss/w-gly.md) cargará y usará.
+Si el valor de clave GinaDLL está presente, debe contener el nombre de un archivo DLL de GINA que [*Winlogon*](../secgloss/w-gly.md) cargará y usará.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -43,10 +43,10 @@ Si el valor de la clave GinaDLL está presente, debe contener el nombre de un ar
 [Funciones de exportación de GINA](authentication-functions.md)
 </dt> <dt>
 
-[Estructuras GINA](authentication-structures.md)
+[Estructuras de GINA](authentication-structures.md)
 </dt> <dt>
 
-[Terminal Services funciones GINA](terminal-services-gina-functions.md)
+[Funciones GINA de Terminal Services](terminal-services-gina-functions.md)
 </dt> </dl>
 
  

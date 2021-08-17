@@ -1,7 +1,7 @@
 ---
 description: La función PdhVbGetOneCounterPath muestra un cuadro de diálogo que permite al usuario examinar los contadores de rendimiento disponibles y seleccionar un contador.
 ms.assetid: a42406ef-70e0-464d-90f8-fef9e1c3471d
-title: PdhVbGetOneCounterPath función)
+title: Función PdhVbGetOneCounterPath
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - DllExport
 api_location:
 - Pdh.dll
-ms.openlocfilehash: 980665372d49f483e3fb59b7571ec38fa9c2851a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da6cc5b476373a55135d91d21163f15cb04379fff9d7c7c2cf1342451a5a201d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061163"
 ---
-# <a name="pdhvbgetonecounterpath-function"></a>PdhVbGetOneCounterPath función)
+# <a name="pdhvbgetonecounterpath-function"></a>Función PdhVbGetOneCounterPath
 
-La función **PdhVbGetOneCounterPath** muestra un cuadro de diálogo que permite al usuario examinar los contadores de rendimiento disponibles y seleccionar un contador. El contador seleccionado se devuelve en la variable *PathString* . La variable *PathString* se debe dimensionar e inicializar antes de que se llame a esta función, y la variable *PathLength* debe indicar el tamaño de la dimensión.
+La **función PdhVbGetOneCounterPath** muestra un cuadro de diálogo que permite al usuario examinar los contadores de rendimiento disponibles y seleccionar un contador. El contador seleccionado se devuelve en la variable *PathString.* La variable *PathString* se debe dimensionar e inicializar antes de llamar a esta función, y la variable *PathLength* debe indicar el tamaño dimensionado.
 
 > [!IMPORTANT]
-> La función que se describe en este tema puede modificarse o no estar disponible en el futuro. En su lugar, Microsoft recomienda que use las funciones descritas en [funciones de contadores de rendimiento](performance-counters-functions.md).
+> La función que describe este tema puede modificarse o no estar disponible en el futuro. En su lugar, Microsoft recomienda usar las funciones descritas en [Funciones de contadores de rendimiento](performance-counters-functions.md).
 
-Función PdhVbGetOneCounterPath ( \_ ByVal PathString As String, \_ ByVal PathLength as Long, \_ ByVal DetailLevel as Long, \_ ByVal CaptionString As String \_ ) as Long
+Función PdhVbGetOneCounterPath( \_ ByVal PathString as String, \_ ByVal PathLength As Long, \_ ByVal DetailLevel as Long, \_ ByVal CaptionString as String \_ ) as Long
 
 ## <a name="parameters"></a>Parámetros
 
@@ -36,30 +36,30 @@ Función PdhVbGetOneCounterPath ( \_ ByVal PathString As String, \_ ByVal PathLe
 *PathString* 
 </dt> <dd>
 
-Variable de cadena inicializada utilizada para recibir la ruta de acceso del contador seleccionada por el usuario.
+Variable de cadena inicializada que se usa para recibir la ruta de acceso del contador seleccionada por el usuario.
 
 </dd> <dt>
 
 *PathLength* 
 </dt> <dd>
 
-Longitud del PathString inicializado.
+Longitud del objeto PathString inicializado.
 
 </dd> <dt>
 
 *DetailLevel* 
 </dt> <dd>
 
-Tipos de contadores que se van a mostrar en el cuadro de diálogo. Este parámetro puede ser uno de los valores siguientes.
+Tipos de contadores que se mostrarán en el cuadro de diálogo. Este parámetro puede ser uno de los valores siguientes.
 
 
 
 | Valor                                                                                                                                                                               | Significado                                                                                                                                                 |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="PERF_DETAIL_ADVANCED"></span><span id="perf_detail_advanced"></span><dl> <dt>**detalle de rendimiento \_ \_ avanzado**</dt> </dl> | Contadores que es probable que el usuario avanzado entienda, además de los contadores de usuario inexperto.<br/>                                            |
-| <span id="PERF_DETAIL_EXPERT"></span><span id="perf_detail_expert"></span><dl> <dt>**\_experto en detalles de rendimiento \_**</dt> </dl>       | Los contadores que es probable que comprenda el desarrollador de software y el usuario experto, además de los contadores para los usuarios principiantes y avanzados.<br/> |
-| <span id="PERF_DETAIL_NOVICE"></span><span id="perf_detail_novice"></span><dl> <dt>**\_experto en detalles de rendimiento \_**</dt> </dl>       | Solo los contadores que es probable que comprenda el usuario principiante.<br/>                                                                                  |
-| <span id="PERF_DETAIL_WIZARD"></span><span id="perf_detail_wizard"></span><dl> <dt>**\_Asistente para detalles de rendimiento \_**</dt> </dl>       | Todos los contadores del sistema.<br/>                                                                                                                  |
+| <span id="PERF_DETAIL_ADVANCED"></span><span id="perf_detail_advanced"></span><dl> <dt>**DETALLES \_ AVANZADOS DE PERF \_**</dt> </dl> | Contadores que es probable que el usuario avanzado comprenda, además de los contadores de usuario principiante.<br/>                                            |
+| <span id="PERF_DETAIL_EXPERT"></span><span id="perf_detail_expert"></span><dl> <dt>**PERF \_ DETAIL \_ EXPERT**</dt> </dl>       | Contadores que es probable que el usuario experto y el desarrollador de software comprendan, además de los contadores para los usuarios principiantes y avanzados.<br/> |
+| <span id="PERF_DETAIL_NOVICE"></span><span id="perf_detail_novice"></span><dl> <dt>**PERF \_ DETAIL \_ NOVICE**</dt> </dl>       | Solo los contadores que es probable que comprenda el usuario principiante.<br/>                                                                                  |
+| <span id="PERF_DETAIL_WIZARD"></span><span id="perf_detail_wizard"></span><dl> <dt>**ASISTENTE PARA DETALLES \_ DE PERF \_**</dt> </dl>       | Todos los contadores del sistema.<br/>                                                                                                                  |
 
 
 
@@ -76,7 +76,7 @@ Variable de cadena que contiene el texto que se mostrará en la barra de título
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve el número de caracteres que se escriben en el búfer de *PathString* .
+La función devuelve el número de caracteres escritos en el búfer *PathString.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,9 +84,9 @@ La función devuelve el número de caracteres que se escriben en el búfer de *P
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                               |
-| Biblioteca<br/>                  | <dl> <dt>PDH. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
+| Biblioteca<br/>                  | <dl> <dt>Pdh.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Pdh.dll</dt> </dl> |
 
 

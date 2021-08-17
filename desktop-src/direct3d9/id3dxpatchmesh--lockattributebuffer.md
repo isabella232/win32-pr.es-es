@@ -1,7 +1,7 @@
 ---
-description: Bloquea el búfer de atributo.
+description: Bloquea el búfer de atributos.
 ms.assetid: 6e05e613-ca93-41b0-a3b3-a9564ada3b0c
-title: 'ID3DXPatchMesh:: LockAttributeBuffer (método) (D3DX9Mesh. h)'
+title: Método ID3DXPatchMesh::LockAttributeBuffer (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 71e50fdc27f3f50b560324c74f5a1609f900772d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9b3c550037e156ea5584b65af6d6adb1cb666614de257c590a8d4944283ebdfc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105670266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120769"
 ---
-# <a name="id3dxpatchmeshlockattributebuffer-method"></a>ID3DXPatchMesh:: LockAttributeBuffer (método)
+# <a name="id3dxpatchmeshlockattributebuffer-method"></a>Método ID3DXPatchMesh::LockAttributeBuffer
 
-Bloquea el búfer de atributo.
+Bloquea el búfer de atributos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,17 +41,17 @@ HRESULT LockAttributeBuffer(
 
 <dl> <dt>
 
-*marcas* \[ de de\]
+*flags* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinación de cero o más marcas de bloqueo que describen el tipo de bloqueo que se va a realizar. Para este método, las marcas válidas son:
+Combinación de cero o más marcas de bloqueo que describen el tipo de bloqueo que se debe realizar. Para este método, las marcas válidas son:
 
--   \_Descartar D3DLOCK
--   \_No se \_ pudo \_ Actualizar D3DLOCK
+-   D3DLOCK \_ DISCARD
+-   D3DLOCK \_ NO \_ DIRTY \_ UPDATE
 -   D3DLOCK \_ NOSYSLOCK
--   D3DLOCK \_ ReadOnly
+-   D3DLOCK \_ READONLY
 
 Para obtener una descripción de las marcas, vea [D3DLOCK](d3dlock.md).
 
@@ -62,7 +62,7 @@ Para obtener una descripción de las marcas, vea [D3DLOCK](d3dlock.md).
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\*\***
 
-Dirección de un puntero a un búfer que contiene un valor DWORD para cada una de las caras de la malla.
+Dirección de un puntero a un búfer que contiene un DWORD para cada cara de la malla.
 
 </dd> </dl>
 
@@ -70,11 +70,11 @@ Dirección de un puntero a un búfer que contiene un valor DWORD para cada una d
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Normalmente, el búfer de atributo está bloqueado, se escribe en él y, a continuación, se desbloquea para leerlo.
+Normalmente, el búfer de atributos se bloquea, se escribe en y, a continuación, se desbloquea para su lectura.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,12 +82,12 @@ Normalmente, el búfer de atributo está bloqueado, se escribe en él y, a conti
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
