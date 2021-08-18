@@ -1,32 +1,32 @@
 ---
-title: Usar la devolución de llamada en estado
-description: Usar la devolución de llamada en estado
+title: Uso de la devolución de llamada OnStatus
+description: Uso de la devolución de llamada OnStatus
 ms.assetid: 598e2d13-709b-42a3-ae06-b8c7d208ca9e
 keywords:
-- SDK de Windows Media Format, método de devolución de llamada de estado
-- SDK de Windows Media Format, interfaz IWMStatusCallback
-- Método de devolución de llamada de estado, acerca de
+- Windows SDK de formato multimedia, método de devolución de llamada OnStatus
+- Windows SDK de formato multimedia, interfaz IWMStatusCallback
+- Método de devolución de llamada OnStatus,about
 - IWMStatusCallback
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56e96b8d7fd75fd8a1d97a56c8b09304c51d0238
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 8eb1f2ae8ef64204435d7837b75258b77ec12f516103caeb936e82f979049ab4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103994926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027123"
 ---
-# <a name="using-the-onstatus-callback"></a>Usar la devolución de llamada en estado
+# <a name="using-the-onstatus-callback"></a>Uso de la devolución de llamada OnStatus
 
-Varios objetos del SDK de formato de Windows Media llaman al método de devolución de llamada [**IWMStatusCallback::**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) OnFormat. En **Estado** recibe mensajes que representan cambios en el estado de las operaciones del SDK.
+Varios objetos del SDK de Windows multimedia llaman al método de devolución de llamada [**IWMStatusCallback::OnStatus.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) **OnStatus** recibe mensajes que representan los cambios en el estado de las operaciones del SDK.
 
-Para usar el método de devolución de llamada en **Estado** , debe implementar una clase en la aplicación que herede de la interfaz [**IWMStatusCallback**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstatuscallback) . Incluya código para su versión de en **Estado** en la clase. En los ejemplos incluidos con este SDK se pueden encontrar varios ejemplos de implementaciones de **Estado** . Para obtener más información acerca de los ejemplos, vea [aplicaciones de ejemplo](sample-applications.md).
+Para usar el método de devolución de llamada **OnStatus,** debe implementar una clase en la aplicación que herede de la [**interfaz IWMStatusCallback.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstatuscallback) Incluya código para la versión de **OnStatus** en la clase . Puede encontrar varios **ejemplos de implementaciones de OnStatus** en los ejemplos incluidos con este SDK. Para obtener más información sobre los ejemplos, vea [Aplicaciones de ejemplo](sample-applications.md).
 
-Debe asociar la implementación de la devolución de llamada de estado con varios objetos del SDK de Windows Media Format. Cada objeto tiene una forma diferente de crear esta asociación. Para obtener una lista de los métodos que asocian objetos específicos, vea la página de referencia de **IWMStatusCallback** .
+Debe asociar la implementación de la devolución de llamada de estado con varios objetos del SDK Windows Media Format. Cada objeto tiene una manera diferente de realizar esta asociación. Para obtener una lista de los métodos que asocian objetos específicos, vea la página de **referencia de IWMStatusCallback.**
 
-Los mensajes de estado que se pueden recibir en **Estado** se definen en el tipo de enumeración [**\_ Estado de WMT**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_status) .
+Los mensajes de estado que puede recibir **OnStatus** se definen en el tipo [**de enumeración WMT \_ STATUS.**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_status)
 
-Puede elegir qué mensajes desea interceptar y qué omitir. Sin embargo, es necesario responder a algunos mensajes de estado para determinadas características. Por ejemplo, al usar el lector asincrónico, el método [**IWMReader:: Open**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreader-open) abre un archivo de forma asincrónica. La única forma de saber cuándo se ha abierto el archivo es atrapar el \_ mensaje abierto de MWT. Normalmente, los mensajes a los que responde son notificaciones de la finalización de las tareas asincrónicas.
+Puede elegir qué mensajes se capturan y cuáles se omitirán. Sin embargo, es necesario responder a algunos mensajes de estado para determinadas características. Por ejemplo, cuando se usa el lector asincrónico, el [**método IWMReader::Open**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreader-open) abre un archivo de forma asincrónica. La única manera de saber cuándo se ha abierto el archivo es capturar el mensaje DE LA \_ VENTANA ABIERTA. Normalmente, los mensajes a los que responde son notificaciones de la finalización de tareas asincrónicas.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -35,9 +35,9 @@ Puede elegir qué mensajes desea interceptar y qué omitir. Sin embargo, es nece
 [**Usar los métodos de devolución de llamada**](using-the-callback-methods.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

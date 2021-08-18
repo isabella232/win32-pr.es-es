@@ -4,22 +4,22 @@ ms.assetid: 464bd562-e49f-4099-b66e-48b7caf230bb
 title: TopoEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57b2edeefc151ca16a8a528411e98df5a0999e36
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 11aab79d94f9b0f7a99ff8d2200271c4ff80f8805322cda951d71e82323251fa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112905"
 ---
 # <a name="topoedit"></a>TopoEdit
 
 TopoEdit es una herramienta visual para compilar y probar topologías. Con TopoEdit, puede realizar las siguientes tareas:
 
--   Cree una topología agregando varios nodos de topología, como los nodos de origen, transformación y salida.
--   Conecte y resuelva la estructura de la topología.
+-   Cree una topología agregando varios nodos de topología, como nodos de origen, transformación y salida.
+-   Conectar y resuelva la estructura de topología.
 -   Pruebe la funcionalidad de la topología a través de la reproducción.
 
-TopoEdit está disponible en el Windows SDK, empezando por el Windows SDK para Windows Server 2008.
+TopoEdit está disponible en el SDK de Windows, empezando por Windows SDK para Windows Server 2008.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -27,14 +27,14 @@ TopoEdit está disponible en el Windows SDK, empezando por el Windows SDK para W
 
 | Tema                                                                                          | Descripción                                                                                      |
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [Introducción a TopoEdit](introduction-to-topoedit.md)                                       | Proporciona información sobre la instalación y ejecución de la herramienta. Describe la interfaz de usuario de la herramienta. |
+| [Introducción a TopoEdit](introduction-to-topoedit.md)                                       | Proporciona información sobre cómo instalar y ejecutar la herramienta. Describe la interfaz de usuario de la herramienta. |
 | [Compilar topologías mediante TopoEdit](building-topologies-by-using-topoedit.md)             | Describe cómo crear una topología agregando y conectando nodos individuales.                     |
-| [Creación de una topología de reproducción con TopoEdit](building-a-playback-topology-with-topoedit.md)   | Describe cómo crear automáticamente una topología de reproducción.                                       |
-| [Creación de una topología de transcodificación con TopoEdit](building-a-transcode-topology-with-topoedit.md) | Describe cómo crear una topología de transcodificación automáticamente.                                      |
-| [Actividades del nodo de topología de registro](logging-topology-node-activities.md)                       | Proporciona información sobre cómo recopilar información de registro sobre un nodo de topología seleccionado.    |
-| [Controles de reproducción en TopoEdit](playback-controls-in-topoedit.md)                             | Describe los controles de reproducción de la herramienta, como reproducir, pausar, detener y cambiar tasa.              |
-| [Guardar y cargar topologías](saving-and-loading-topologies.md)                             | Proporciona información acerca de cómo guardar una topología como archivo XML y cargar una topología guardada.        |
-| [Ver información de la topología](viewing-topology-information.md)                               | Describe los atributos asociados a los nodos de topología.                                             |
+| [Creación de una topología de reproducción con TopoEdit](building-a-playback-topology-with-topoedit.md)   | Describe cómo crear una topología de reproducción automáticamente.                                       |
+| [Creación de una topología de transcodificación con TopoEdit](building-a-transcode-topology-with-topoedit.md) | Describe cómo crear automáticamente una topología de transcodificación.                                      |
+| [Registro de actividades de nodo de topología](logging-topology-node-activities.md)                       | Proporciona información sobre cómo recopilar información de registro sobre un nodo de topología seleccionado.    |
+| [Controles de reproducción en TopoEdit](playback-controls-in-topoedit.md)                             | Describe los controles de reproducción de la herramienta, como reproducir, pausar, detener y cambiar la velocidad.              |
+| [Guardar y cargar topologías](saving-and-loading-topologies.md)                             | Proporciona información sobre cómo guardar una topología como un archivo XML y cargar una topología guardada.        |
+| [Ver información de topología](viewing-topology-information.md)                               | Describe los atributos asociados a los nodos de topología.                                             |
 
 
 
@@ -60,7 +60,7 @@ TopoEdit está disponible en el Windows SDK, empezando por el Windows SDK para W
 [Acerca de Media Foundation](about-the-media-foundation-sdk.md)
 </dt> <dt>
 
-[Herramientas de Media Foundation](media-foundation-tools.md)
+[Media Foundation Tools](media-foundation-tools.md)
 </dt> </dl>
 
  

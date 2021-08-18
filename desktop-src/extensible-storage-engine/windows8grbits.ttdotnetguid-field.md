@@ -33,7 +33,7 @@ ms.locfileid: "117889232"
 ---
 # <a name="windows8grbitsttdotnetguid-field"></a>Campo Windows8Grbits.TTDotNetGuid
 
-Esta opción solicita que la tabla temporal ordene columnas de tipo JET_coltypGUID según .NET Framework criterio de ordenación GUID.
+Esta opción solicita que la tabla temporal ordene las columnas de tipo JET_coltypGUID según .NET Framework criterio de ordenación GUID.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -53,7 +53,7 @@ value = Windows8Grbits.TTDotNetGuid
 public const TempTableGrbit TTDotNetGuid
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

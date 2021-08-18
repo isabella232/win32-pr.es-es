@@ -1,7 +1,7 @@
 ---
 description: La función PdhVbGetCounterPathElements analiza una cadena de ruta de acceso de contador de rendimiento completa en sus elementos individuales.
 ms.assetid: 5459c7dd-e8b6-48cd-a33f-cafdc64dd9ee
-title: PdhVbGetCounterPathElements función)
+title: Función PdhVbGetCounterPathElements
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - DllExport
 api_location:
 - Pdh.dll
-ms.openlocfilehash: 003374141b0454d730ba4b844715bd6f00b544da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fecd9ecac573ecc1a5afabcfc4a14bf6fd1ca5cee7b44387ea910b0cf1a5820d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011333"
 ---
-# <a name="pdhvbgetcounterpathelements-function"></a>PdhVbGetCounterPathElements función)
+# <a name="pdhvbgetcounterpathelements-function"></a>Función PdhVbGetCounterPathElements
 
-La función **PdhVbGetCounterPathElements** analiza una cadena de ruta de acceso de contador de rendimiento completa en sus elementos individuales. Cada una de las variables de cadena debe tener el mismo tamaño (*BufferSize*) y estar dimensionada e inicializada antes de que se use en esta función.
+La **función PdhVbGetCounterPathElements** analiza una cadena de ruta de acceso de contador de rendimiento completa en sus elementos individuales. Cada una de las variables de cadena debe tener el mismo tamaño *(BufferSize*) y tener dimensiones e inicializarse antes de que se utilice en esta función.
 
 > [!IMPORTANT]
-> La función que se describe en este tema puede modificarse o no estar disponible en el futuro. En su lugar, Microsoft recomienda que use las funciones descritas en [funciones de contadores de rendimiento](performance-counters-functions.md).
+> La función que describe este tema puede modificarse o no estar disponible en el futuro. En su lugar, Microsoft recomienda usar las funciones descritas en [Funciones de contadores de rendimiento](performance-counters-functions.md).
 
-Function PdhVbGetCounterPathElements ( \_ ByVal PathString As String, \_ ByVal MachineName As String, \_ ByVal objectname As String, \_ ByVal nombreDeInstancia As String, \_ ByVal ParentInstance As String, \_ ByVal Contraname As String, \_ ByVal BufferSize as Long \_ ) as Long
+Función PdhVbGetCounterPathElements( \_ ByVal PathString as String, \_ ByVal MachineName as String, \_ ByVal ObjectName as String, \_ ByVal InstanceName as String, \_ ByVal ParentInstance as String, \_ ByVal CounterName as String, \_ ByVal BufferSize as Long \_ ) as Long
 
 ## <a name="parameters"></a>Parámetros
 
@@ -43,35 +43,35 @@ Cadena de ruta de acceso de contador que se va a dividir en sus elementos indivi
 *MachineName* 
 </dt> <dd>
 
-Cadena que recibirá el nombre del equipo.
+Cadena para recibir el nombre del equipo.
 
 </dd> <dt>
 
 *ObjectName* 
 </dt> <dd>
 
-Cadena que va a recibir el nombre del objeto.
+Cadena para recibir el nombre del objeto.
 
 </dd> <dt>
 
 *InstanceName* 
 </dt> <dd>
 
-Cadena que recibirá el nombre de instancia, si se utiliza.
+Cadena para recibir el nombre de instancia, si se usa.
 
 </dd> <dt>
 
 *ParentInstance* 
 </dt> <dd>
 
-Cadena que recibirá la instancia primaria, si se utiliza.
+Cadena para recibir la instancia primaria, si se usa.
 
 </dd> <dt>
 
 *CounterName* 
 </dt> <dd>
 
-Cadena que va a recibir el nombre del contador.
+Cadena para recibir el nombre del contador.
 
 </dd> <dt>
 
@@ -84,17 +84,17 @@ Tamaño máximo de cada variable de cadena utilizada como parámetro para esta l
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve un entero **largo** igual a error de \_ éxito.
+Si la función se realiza correctamente, devuelve un **entero Long** igual a ERROR \_ SUCCESS.
 
-Si se produce un error en la función, el valor devuelto es un [código de error del sistema](/windows/desktop/Debug/system-error-codes) o un [código de error de PDH](pdh-error-codes.md). Los valores posibles son los siguientes.
+Si se produce un error en la función, el valor devuelto es un [código de error del sistema](/windows/desktop/Debug/system-error-codes) o un código de error [PDH](pdh-error-codes.md). A continuación se den los valores posibles.
 
 
 
 | Código devuelto                                                                                                     | Descripción                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| <dl> <dt>**PDH \_ argumento no válido \_**</dt> </dl>           | Uno o varios de los búferes de cadena no tienen el tamaño correcto.<br/>                          |
-| <dl> <dt>**PDH \_ más \_ datos**</dt> </dl>                  | Uno o varios de los elementos de la ruta de acceso del contador son demasiado grandes para la longitud del búfer de retorno.<br/> |
-| <dl> <dt>**\_error de \_ asignación de memoria de PDH \_**</dt> </dl> | No se pudo asignar un búfer de memoria temporal.<br/>                                   |
+| <dl> <dt>**PDH \_ INVALID \_ ARGUMENT**</dt> </dl>           | Uno o varios de los búferes de cadena no tienen el tamaño correcto.<br/>                          |
+| <dl> <dt>**PDH \_ MORE \_ DATA**</dt> </dl>                  | Uno o varios de los elementos de la ruta de acceso del contador son demasiado grandes para la longitud del búfer devuelto.<br/> |
+| <dl> <dt>**ERROR DE \_ ASIGNACIÓN DE \_ MEMORIA PDH \_**</dt> </dl> | No se pudo asignar un búfer de memoria temporal.<br/>                                   |
 
 
 
@@ -106,9 +106,9 @@ Si se produce un error en la función, el valor devuelto es un [código de error
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                               |
-| Biblioteca<br/>                  | <dl> <dt>PDH. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
+| Biblioteca<br/>                  | <dl> <dt>Pdh.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Pdh.dll</dt> </dl> |
 
 

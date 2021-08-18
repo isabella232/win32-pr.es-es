@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec2TransformNormal (D3DX10Math.h): transforma el vector 2D normal por la matriz dada.'
+description: 'Función D3DXVec2TransformNormal (D3DX10Math.h): transforma el vector 2D normal por la matriz especificada.'
 ms.assetid: fc238bb1-155f-4018-9c92-16352726920d
 title: Función D3DXVec2TransformNormal (D3DX10Math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 403562ab779ebf532e1c1ebcec4ce21a2beadd7a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4c1e60f200a8812a25150c153852a63bcd18949162fee0eb136794afbc0fa671
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990655"
 ---
 # <a name="d3dxvec2transformnormal-function-d3dx10mathh"></a>Función D3DXVec2TransformNormal (D3DX10Math.h)
 
@@ -81,7 +81,7 @@ Esta función transforma el vector (pV->x, pV->y, 0, 0) por la matriz a la que a
 
 Si desea transformar un normal, la matriz que pase a esta función debe ser la transponer del inverso de la matriz que se usaría para transformar un punto.
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la **función D3DXVec2TransformNormal** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la **función D3DXVec2TransformNormal** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -94,7 +94,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

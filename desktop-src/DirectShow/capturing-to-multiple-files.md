@@ -1,19 +1,19 @@
 ---
-description: Capturar en varios archivos
+description: Captura en varios archivos
 ms.assetid: 6073a891-e9f5-442d-a2d9-3a7b97f7f735
-title: Capturar en varios archivos
+title: Captura en varios archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b40091acff8edffbe84550b03d1ccd4073ddb6b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 79ce7a1b4b91a0f78031a661e2c2e10895b4a21b1cfb068ca505429468a3af1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017583"
 ---
-# <a name="capturing-to-multiple-files"></a>Capturar en varios archivos
+# <a name="capturing-to-multiple-files"></a>Captura en varios archivos
 
-Después de haber capturado el vídeo en un archivo, puede cambiar a un archivo nuevo si detiene el gráfico y establece el nombre de archivo en el filtro del [escritor de archivos](file-writer-filter.md) . Llame al método [**IFileSinkFilter:: SetFileName**](/windows/desktop/api/Strmif/nf-strmif-ifilesinkfilter-setfilename) en el escritor de archivos. Puede obtener un puntero a la interfaz [**IFileSinkFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesinkfilter) al compilar el gráfico, a través del parámetro *PSink* del método SetOutputFileName. El código siguiente muestra cómo hacerlo:
+Después de capturar vídeo en un archivo, puede cambiar a un nuevo archivo deteniendo el gráfico y estableciendo el nombre de archivo en el filtro [Escritor de](file-writer-filter.md) archivos. Llame al [**método IFileSinkFilter::SetFileName**](/windows/desktop/api/Strmif/nf-strmif-ifilesinkfilter-setfilename) en el escritor de archivos. Puede obtener un puntero a la interfaz [**IFileSinkFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesinkfilter) al compilar el gráfico, a través del *parámetro pSink* del método SetOutputFileName. El código siguiente muestra cómo hacerlo:
 
 
 ```C++
@@ -46,7 +46,7 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[Capturar vídeo en un archivo](capturing-video-to-a-file.md)
+[Captura de vídeo en un archivo](capturing-video-to-a-file.md)
 </dt> </dl>
 
  

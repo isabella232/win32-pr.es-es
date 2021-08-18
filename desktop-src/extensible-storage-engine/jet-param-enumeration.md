@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: enumeración JET_param'
-title: Enumeración JET_param
+description: 'Más información sobre: enumeración JET_param datos'
+title: JET_param enumeración
 TOCTitle: JET_param enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_param
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_param(v=EXCHG.10)
@@ -102,19 +102,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c84524aad68d3d7a95201e61a2753e86ead91bd2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ee244bd68171abb296baf1941c79199122b121793d5107ee8866eac87be0776
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119473925"
 ---
-# <a name="jet_param-enumeration"></a>Enumeración JET_param
+# <a name="jet_param-enumeration"></a>JET_param enumeración
 
-ESENT parámetros del sistema.
+Parámetros del sistema ESENT.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -153,7 +153,7 @@ public enum JET_param
 <tr class="even">
 <td></td>
 <td>TempPath</td>
-<td>Este parámetro indica la ruta de acceso del sistema de archivos relativa o absoluta de la carpeta o el archivo que contendrá la base de datos temporal de la instancia. Si la ruta de acceso es a una carpeta que contendrá la base de datos temporal, debe terminar con un carácter de barra diagonal inversa.</td>
+<td>Este parámetro indica la ruta de acceso del sistema de archivos relativa o absoluta de la carpeta o archivo que contendrá la base de datos temporal de la instancia. Si la ruta de acceso es a una carpeta que contendrá la base de datos temporal, debe terminarse con un carácter de barra diagonal inversa.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -163,37 +163,37 @@ public enum JET_param
 <tr class="even">
 <td></td>
 <td>BaseName</td>
-<td>Este parámetro establece el prefijo de tres letras que se usa para muchos de los archivos utilizados por el motor de base de datos. Por ejemplo, el archivo de punto de comprobación se denomina EDB. CHK de forma predeterminada porque EDB es el nombre base predeterminado.</td>
+<td>Este parámetro establece el prefijo de tres letras utilizado para muchos de los archivos usados por el motor de base de datos. Por ejemplo, el archivo de punto de comprobación se denomina EDB. CHK de forma predeterminada porque EDB es el nombre base predeterminado.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>EventSource</td>
-<td>Este parámetro proporciona una cadena específica de la aplicación que se agregará a los mensajes del registro de eventos emitidos por el motor de base de datos. Esto permite la correlación sencilla de mensajes de registro de eventos con la aplicación de origen. De forma predeterminada, se usará el nombre del archivo ejecutable de la aplicación host.</td>
+<td>Este parámetro proporciona una cadena específica de la aplicación que se agregará a los mensajes del registro de eventos emitidos por el motor de base de datos. Esto permite una correlación sencilla de los mensajes del registro de eventos con la aplicación de origen. De forma predeterminada, se usará el nombre ejecutable de la aplicación host.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>MaxSessions</td>
-<td>Este parámetro reserva el número solicitado de recursos de sesión para su uso por parte de una instancia de. Un recurso de sesión se corresponde directamente con un tipo de datos JET_SESID. Esta configuración afectará a la cantidad de sesiones que se pueden usar al mismo tiempo.</td>
+<td>Este parámetro reserva el número solicitado de recursos de sesión para su uso por una instancia de . Un recurso de sesión corresponde directamente a un JET_SESID de datos. Esta configuración afectará al número de sesiones que se pueden usar al mismo tiempo.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>MaxOpenTables</td>
-<td>Este parámetro reserva el número solicitado de recursos de árbol B + para su uso por parte de una instancia de. Este valor afectará al número de tablas que se pueden usar al mismo tiempo.</td>
+<td>Este parámetro reserva el número solicitado de recursos de árbol B+ para su uso por una instancia de . Esta configuración afectará al número de tablas que se pueden usar al mismo tiempo.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>MaxCursors</td>
-<td>Este parámetro reserva el número solicitado de recursos de cursor para su uso por parte de una instancia de. Un recurso cursor se corresponde directamente con un tipo de datos JET_TABLEID. Este valor afectará al número de cursores que se pueden usar al mismo tiempo. Un recurso de cursor no puede compartirse por sesiones diferentes, por lo que este parámetro debe establecerse en un valor suficientemente grande para que cada sesión pueda usar tantos cursores como sean necesarios.</td>
+<td>Este parámetro reserva el número solicitado de recursos de cursor para su uso por una instancia de . Un recurso de cursor corresponde directamente a un JET_TABLEID de datos. Esta configuración afectará al número de cursores que se pueden usar al mismo tiempo. Diferentes sesiones no pueden compartir un recurso de cursor, por lo que este parámetro debe establecerse en un valor lo suficientemente grande para que cada sesión pueda usar tantos cursores como sean necesarios.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>MaxVerPages</td>
-<td>Este parámetro reserva el número solicitado de páginas del almacén de versiones para su uso por parte de una instancia de.</td>
+<td>Este parámetro reserva el número solicitado de páginas del almacén de versiones para que las use una instancia de .</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>MaxTemporaryTables</td>
-<td>Este parámetro reserva el número solicitado de recursos de tabla temporal para su uso por parte de una instancia de. Esta configuración afectará al número de tablas temporales que se pueden usar al mismo tiempo. Si este parámetro del sistema se establece en cero, no se creará ninguna base de datos temporal y se producirá un error en cualquier actividad que requiera el uso de la base de datos temporal. Esta configuración puede ser útil para evitar la e/s necesaria para crear la base de datos temporal si se sabe que no se va a usar.
+<td>Este parámetro reserva el número solicitado de recursos de tabla temporal para que los use una instancia de . Esta configuración afectará al número de tablas temporales que se pueden usar al mismo tiempo. Si este parámetro del sistema se establece en cero, no se creará ninguna base de datos temporal y se producirá un error en cualquier actividad que requiera el uso de la base de datos temporal. Esta configuración puede ser útil para evitar la E/S necesaria para crear la base de datos temporal si se sabe que no se usará.
 <p>El uso de una tabla temporal también requiere un recurso de cursor.</p></td>
 </tr>
 <tr class="odd">
@@ -204,133 +204,133 @@ public enum JET_param
 <tr class="even">
 <td></td>
 <td>LogBuffers</td>
-<td>Este parámetro configurará la cantidad de memoria que se usa para almacenar en caché las entradas de registro antes de que se escriban en el archivo de registro de transacciones. La unidad para este parámetro es el tamaño de sector del volumen que contiene los archivos de registro de transacciones. El tamaño del sector es casi siempre de 512 bytes, por lo que es seguro suponer ese tamaño para la unidad. Este parámetro afecta al rendimiento. Cuando el motor de base de datos está sometido a una carga de actualización pesada, este búfer puede llenarse con mucha rapidez. Un tamaño de caché mayor para el archivo de registro de transacciones es fundamental para un buen rendimiento de actualización en una condición de carga elevada. Se sabe que el valor predeterminado es demasiado pequeño para este caso. No establezca este parámetro en un número de búferes mayor (en bytes) de la mitad del tamaño de un archivo de registro de transacciones.</td>
+<td>Este parámetro configurará la cantidad de memoria utilizada para almacenar en caché las entradas de registro antes de que se escriban en el archivo de registro de transacciones. La unidad de este parámetro es el tamaño del sector del volumen que contiene los archivos de registro de transacciones. El tamaño del sector es casi siempre de 512 bytes, por lo que es seguro suponer ese tamaño para la unidad. Este parámetro tiene un impacto en el rendimiento. Cuando el motor de base de datos está bajo una carga de actualización intensa, este búfer puede estar lleno muy rápidamente. Un tamaño de caché mayor para el archivo de registro de transacciones es fundamental para un buen rendimiento de actualización en una condición de carga tan alta. Se sabe que el valor predeterminado es demasiado pequeño para este caso. No establezca este parámetro en un número de búferes mayor (en bytes) que la mitad del tamaño de un archivo de registro de transacciones.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CircularLog</td>
-<td>Este parámetro configura el modo en que el motor de base de datos administra los archivos de registro de transacciones. Cuando el registro circular está desactivado, todos los archivos de registro de transacciones que se generan se conservan en el disco hasta que ya no son necesarios porque se ha realizado una copia de seguridad completa de la base de datos. Cuando el registro circular está activado, solo se conservan en el disco los archivos de registro de transacciones que son más jóvenes que el punto de control actual. La ventaja de este modo es que las copias de seguridad no son necesarias para retirar los archivos de registro de transacciones antiguos.</td>
+<td>Este parámetro configura cómo administra el motor de base de datos los archivos de registro de transacciones. Cuando el registro circular está desactivado, todos los archivos de registro de transacciones que se generan se conservan en el disco hasta que ya no se necesitan porque se ha realizado una copia de seguridad completa de la base de datos. Cuando el registro circular está en, solo los archivos de registro de transacciones que son más pequeños que el punto de control actual se conservan en el disco. La ventaja de este modo es que las copias de seguridad no son necesarias para retirar los archivos de registro de transacciones antiguos.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DbExtensionSize</td>
-<td>Este parámetro controla la cantidad de espacio que se agrega a un archivo de base de datos cada vez que necesita crecer para alojar más datos. El tamaño está en páginas de base de datos.</td>
+<td>Este parámetro controla la cantidad de espacio que se agrega a un archivo de base de datos cada vez que necesita crecer para dar cabida a más datos. El tamaño está en páginas de base de datos.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>PageTempDBMin</td>
-<td>Este parámetro controla el tamaño inicial de la base de datos temporal. El tamaño está en páginas de base de datos. Un tamaño de cero indica que se debe usar el tamaño predeterminado de una base de datos normal. A menudo, es deseable que las aplicaciones pequeñas configuren la base de datos temporal para que sea lo más pequeña posible. Si se establece este parámetro en SystemParameters. PageTempDBSmallest, se logrará la base de datos temporal más pequeña posible.</td>
+<td>Este parámetro controla el tamaño inicial de la base de datos temporal. El tamaño está en páginas de base de datos. Un tamaño de cero indica que se debe usar el tamaño predeterminado de una base de datos normal. A menudo es conveniente que las aplicaciones pequeñas configuren la base de datos temporal para que sea lo más pequeña posible. Si establece este parámetro en SystemParameters.PageTempDBSmallest, se logrará la base de datos temporal más pequeña posible.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>CacheSizeMax</td>
-<td>Este parámetro configura el tamaño máximo de la caché de páginas de base de datos. El tamaño está en páginas de base de datos. Si este parámetro se deja en su valor predeterminado, el tamaño máximo de la memoria caché se establecerá en el tamaño de la memoria física cuando se llame a JetInit.</td>
+<td>Este parámetro configura el tamaño máximo de la memoria caché de páginas de la base de datos. El tamaño está en páginas de base de datos. Si este parámetro se deja en su valor predeterminado, el tamaño máximo de la memoria caché se establecerá en el tamaño de la memoria física cuando se llame a JetInit.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CheckpointDepthMax</td>
-<td>Este parámetro controla el modo en que se vacían las páginas de base de datos de forma agresiva desde la memoria caché de páginas de base de datos para minimizar la cantidad de tiempo que se tarda en recuperarse de un bloqueo. El parámetro es un umbral en bytes para el número de archivos de registro de transacciones que se deben reproducir después de un bloqueo. Si el registro circular está habilitado mediante JET_param. CircularLog este parámetro también controlará la cantidad aproximada de archivos de registro de transacciones que se conservarán en el disco.</td>
+<td>Este parámetro controla la forma agresiva en que las páginas de base de datos se vacían de la caché de páginas de la base de datos para minimizar la cantidad de tiempo que se va a tardar en recuperarse de un bloqueo. El parámetro es un umbral en bytes para saber cuántos archivos de registro de transacciones se deben reproducir después de un bloqueo. Si el registro circular está habilitado mediante JET_param. CircularLog, a continuación, este parámetro también controlará la cantidad aproximada de archivos de registro de transacciones que se conservarán en el disco.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>OutstandingIOMax</td>
-<td>Este parámetro controla el número de operaciones de e/s de archivos de base de datos que se pueden poner en cola por disco en el sistema operativo host al mismo tiempo. Un valor mayor para este parámetro puede ayudar significativamente al rendimiento de una aplicación de base de datos grande.</td>
+<td>Este parámetro controla cuántas E/S de archivos de base de datos se pueden poner en cola por disco en el sistema operativo host a la vez. Un valor mayor para este parámetro puede ayudar significativamente al rendimiento de una aplicación de base de datos grande.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>StartFlushThreshold</td>
-<td>Este parámetro controla si la memoria caché de páginas de base de datos empieza a expulsar páginas de la memoria caché para dejar espacio a las páginas que no están almacenadas en caché. Cuando el número de búferes de página en la memoria caché cae por debajo de este umbral, se iniciará un proceso en segundo plano para reponer ese grupo de búferes disponibles. Este umbral siempre es relativo al tamaño máximo de la memoria caché establecido por JET_paramCacheSizeMax. Este umbral también debe ser siempre inferior al umbral de detención establecido por JET_paramStopFlushThreshold. El alto de distancia del umbral de inicio determinará el tiempo de respuesta que debe tener la caché de páginas de base de datos para generar los búferes disponibles antes de que la aplicación los necesite. Un umbral de inicio alto proporcionará al proceso en segundo plano más tiempo para reaccionar. Sin embargo, un umbral de inicio alto implica un umbral de detención mayor y reduce el tamaño efectivo de la caché de páginas de base de datos para las páginas modificadas (Windows 2000) o para todas las páginas (Windows XP y versiones posteriores).</td>
+<td>Este parámetro controla cuándo comienza la caché de páginas de la base de datos a expulsar páginas de la memoria caché para dar espacio a las páginas que no están almacenadas en caché. Cuando el número de búferes de página de la memoria caché cae por debajo de este umbral, se inicia un proceso en segundo plano para reponer ese grupo de búferes disponibles. Este umbral siempre es relativo al tamaño máximo de caché establecido por JET_paramCacheSizeMax. Este umbral también debe ser siempre menor que el umbral de detección establecido por JET_paramStopFlushThreshold. El alto de distancia del umbral de inicio determinará el tiempo de respuesta que debe tener la caché de páginas de la base de datos para generar búferes disponibles antes de que la aplicación los necesite. Un umbral de inicio alto dará al proceso en segundo plano más tiempo para reaccionar. Sin embargo, un umbral de inicio alto implica un umbral de detección más alto y eso reducirá el tamaño efectivo de la memoria caché de páginas de base de datos para las páginas modificadas (Windows 2000) o para todas las páginas (Windows XP y versiones posteriores).</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>StopFlushThreshold</td>
-<td>Este parámetro controla cuándo la memoria caché de páginas de base de datos termina la expulsando páginas de la memoria caché para dejar espacio a las páginas que no están almacenadas en caché. Cuando el número de búferes de página de la memoria caché supera este umbral, se detiene el proceso en segundo plano que se inició para reponer el grupo de búferes disponibles. Este umbral siempre es relativo al tamaño máximo de la memoria caché establecido por JET_paramCacheSizeMax. Este umbral también debe ser siempre mayor que el umbral de inicio establecido por JET_paramStartFlushThreshold. La distancia entre el umbral de inicio y el umbral de detención afecta a la eficacia con la que el proceso en segundo plano vacía las páginas de la base de datos. Una brecha más grande hará que sea más probable que se combinen las escrituras en páginas vecinas. Sin embargo, un umbral de detención alta reducirá el tamaño efectivo de la caché de páginas de base de datos para las páginas modificadas (Windows 2000) o para todas las páginas (Windows XP y versiones posteriores).</td>
+<td>Este parámetro controla cuándo termina la caché de páginas de la base de datos expulsando páginas de la memoria caché para dar espacio a las páginas que no están almacenadas en caché. Cuando el número de búferes de página de la memoria caché supera este umbral, se detiene el proceso en segundo plano que se inició para reponer ese grupo de búferes disponibles. Este umbral siempre es relativo al tamaño máximo de caché establecido por JET_paramCacheSizeMax. Este umbral también debe ser siempre mayor que el umbral inicial establecido por JET_paramStartFlushThreshold. La distancia entre el umbral inicial y el umbral de detección afecta a la eficacia con la que el proceso en segundo plano vacía las páginas de la base de datos. Una brecha mayor hará que sea más probable que se combinen las escrituras en páginas vecinos. Sin embargo, un umbral de detección alto reducirá el tamaño efectivo de la caché de páginas de la base de datos para las páginas modificadas (Windows 2000) o para todas las páginas (Windows XP y versiones posteriores).</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>Recuperación</td>
-<td>Este parámetro es el modificador principal que controla la recuperación tras bloqueo de una instancia de. Si este parámetro se establece en &quot; on &quot; , se usará Aries Style Recovery para que todas las bases de datos de la instancia tengan un estado coherente en caso de que se produzca un bloqueo del proceso o del equipo. Si este parámetro se establece en &quot; OFF &quot; , todas las bases de datos de la instancia se administrarán sin la ventaja de la recuperación tras bloqueo. Es decir, que si la instancia no se cierra correctamente con JetTerm antes de que el proceso salga o cierre el equipo, el contenido de todas las bases de datos de esa instancia estará dañado.</td>
+<td>Este parámetro es el conmutador maestro que controla la recuperación de bloqueos de una instancia. Si este parámetro se establece en On, se usará la recuperación de estilo ARIES para poner todas las bases de datos de la instancia en un estado coherente en caso de un bloqueo de proceso &quot; &quot; o máquina. Si este parámetro se establece en Desactivado, todas las bases de datos de la instancia se administrarán &quot; sin la ventaja de la &quot; recuperación de bloqueos. Es decir, si la instancia no se apaga correctamente mediante JetTerm antes de que el proceso salga o se apague la máquina, el contenido de todas las bases de datos de esa instancia se dañará.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>EnableOnlineDefrag</td>
-<td>Este parámetro controla el comportamiento de la desfragmentación con conexión cuando se inicia con <a href="dn292130(v=exchg.10).md">JetDefragment (JET_SESID, JET_DBID, String, Int32, Int32, DefragGrbit)</a> y <a href="dn292145(v=exchg.10).md">JetDefragment2 (JET_SESID, JET_DBID, String, Int32, Int32, JET_CALLBACK, DefragGrbit)</a>.</td>
+<td>Este parámetro controla el comportamiento de la desfragmentación en línea cuando se inicia mediante <a href="dn292130(v=exchg.10).md">JetDefragment(JET_SESID, JET_DBID, String, Int32, Int32, DefragGrbit)</a> y <a href="dn292145(v=exchg.10).md">JetDefragment2(JET_SESID, JET_DBID, String, Int32, Int32, JET_CALLBACK, DefragGrbit).</a></td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CacheSize</td>
-<td>Este parámetro se puede utilizar para controlar el tamaño de la memoria caché de páginas de base de datos en tiempo de ejecución. Normalmente, la memoria caché ajustará automáticamente su tamaño como una función de los niveles de actividad de la base de datos y del equipo. Si la aplicación establece este parámetro en cero, la memoria caché ajustará su propio tamaño de esta manera. Sin embargo, si la aplicación establece este parámetro en un valor distinto de cero, la memoria caché se ajustará a ese tamaño de destino.</td>
+<td>Este parámetro se puede usar para controlar el tamaño de la caché de páginas de la base de datos en tiempo de ejecución. Normalmente, la memoria caché ajustará automáticamente su tamaño como una función de los niveles de actividad de la base de datos y la máquina. Si la aplicación establece este parámetro en cero, la memoria caché ajustará su propio tamaño de esta manera. Sin embargo, si la aplicación establece este parámetro en un valor distinto de cero, la memoria caché se ajustará a ese tamaño de destino.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>EnableIndexChecking</td>
-<td>Cuando este parámetro es true, todas las bases de datos se comprueban en el momento de la JetAttachDatabase para los índices de las columnas de clave Unicode compiladas con una versión anterior de la biblioteca NLS en el sistema operativo. Esto debe hacerse porque el motor de base de datos conserva las claves de ordenación generadas por LCMapStringW y el valor de estas claves de ordenación cambia de Release a Release. Si se detecta que un índice principal está en este estado, JetAttachDatabase siempre producirá un error con JET_err. PrimaryIndexCorrupted. Si se detecta que algún índice secundario está en este estado, hay dos resultados posibles. Si AttachDatabaseGrbit. DeleteCorruptIndexes se pasó a JetAttachDatabase, se eliminarán estos índices y se devolverá JET_wrnCorruptIndexDeleted de JetAttachDatabase. Estos índices deberán volver a crearse en la aplicación. Si AttachDatabaseGrbit. DeleteCorruptIndexes no se pasó a JetAttachDatabase, se producirá un error en la llamada con JET_errSecondaryIndexCorrupted.</td>
+<td>Cuando este parámetro es true, todas las bases de datos se comprueban a la hora de JetAttachDatabase en busca de índices sobre columnas de clave Unicode que se crearon con una versión anterior de la biblioteca NLS en el sistema operativo. Esto debe hacerse porque el motor de base de datos conserva las claves de ordenación generadas por LCMapStringW y el valor de estas claves de ordenación cambia de versión a versión. Si se detecta que un índice principal está en este estado, JetAttachDatabase siempre producirá un error con JET_err. PrimaryIndexCorrupted. Si se detecta que algún índice secundario está en este estado, hay dos resultados posibles. Si attachDatabaseGrbit.DeleteCorruptIndexes se pasó a JetAttachDatabase, estos índices se eliminarán y JET_wrnCorruptIndexDeleted se devolverán desde JetAttachDatabase. La aplicación deberá volver a crear estos índices. Si AttachDatabaseGrbit.DeleteCorruptIndexes no se pasó a JetAttachDatabase, se producirá un error en la llamada JET_errSecondaryIndexCorrupted.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>EventSourceKey</td>
-<td>Este parámetro se puede utilizar para controlar qué registro de eventos utiliza el motor de base de datos para sus mensajes de registro de eventos. De forma predeterminada, todos los mensajes del registro de eventos Irán al registro de eventos de la aplicación. Si se configura el nombre de la clave del registro para otro registro de eventos, los mensajes del registro de eventos Irán en su lugar.</td>
+<td>Este parámetro se puede usar para controlar qué registro de eventos usa el motor de base de datos para sus mensajes de registro de eventos. De forma predeterminada, todos los mensajes del registro de eventos irán al registro de eventos de la aplicación. Si el nombre de la clave del Registro para otro registro de eventos está configurado, los mensajes del registro de eventos irán allí en su lugar.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>NoInformationEvent</td>
-<td>Cuando este parámetro es true, se suprimen los mensajes de registro de eventos informativos que normalmente generará el motor de base de datos.</td>
+<td>Cuando este parámetro es true, se suprimirán los mensajes del registro de eventos informativos que normalmente generaría el motor de base de datos.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>EventLoggingLevel</td>
-<td>Configura el nivel de detalle de los mensajes EventLog que el motor de base de datos emite al registro de eventos. Los números más altos producirán mensajes de registro de eventos más detallados.</td>
+<td>Configura el nivel de detalle de los mensajes del registro de eventos emitidos al registro de eventos por el motor de base de datos. Los números más altos darán como resultado mensajes de registro de eventos más detallados.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DeleteOutOfRangeLogs</td>
-<td>Elimine los archivos de registro que no coinciden (se pueden generar) durante la recuperación de software.</td>
+<td>Elimine los archivos de registro que no coinciden (generación por generación) durante la recuperación flexible.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CacheSizeMin</td>
-<td>Este parámetro configura el tamaño mínimo de la caché de páginas de base de datos. El tamaño está en páginas de base de datos.</td>
+<td>Este parámetro configura el tamaño mínimo de la caché de páginas de la base de datos. El tamaño está en páginas de base de datos.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>PreferredVerPages</td>
-<td>Este parámetro representa un umbral relativo a MaxVerPages que controla el uso discrecional de páginas de versión por parte del motor de base de datos. Si el tamaño del almacén de versiones supera este umbral, cualquier información que solo se use para tareas en segundo plano opcionales, como la recuperación del espacio eliminado en la base de datos, se sacrifica en su lugar para conservar el espacio para la información transaccional.</td>
+<td>Este parámetro representa un umbral relativo a MaxVerPages que controla el uso discrecional de páginas de versión por parte del motor de base de datos. Si el tamaño del almacén de versiones supera este umbral, cualquier información que solo se utilice para tareas en segundo plano opcionales, como reclamar espacio eliminado en la base de datos, se sacrificará para conservar espacio para la información transaccional.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DatabasePageSize</td>
-<td>Este parámetro configura el tamaño de página para la base de datos. El tamaño de página es la unidad más pequeña de asignación de espacio posible para un archivo de base de datos. El tamaño de página de la base de datos también es muy importante, ya que establece el límite superior del tamaño de un registro individual en la base de datos.
-<p>En este momento, solo se admite un tamaño de página de base de datos por proceso. Esto significa que, si se encuentra en un único proceso que contiene diferentes aplicaciones que usan el motor de base de datos, todos deben aceptar un tamaño de página de base de datos.</p></td>
+<td>Este parámetro configura el tamaño de página de la base de datos. El tamaño de página es la unidad de espacio más pequeña posible para un archivo de base de datos. El tamaño de página de la base de datos también es muy importante porque establece el límite superior en el tamaño de un registro individual de la base de datos.
+<p>En este momento, solo se admite un tamaño de página de base de datos por proceso. Esto significa que si está en un único proceso que contiene aplicaciones diferentes que usan el motor de base de datos, todos deben coincidir en un tamaño de página de base de datos.</p></td>
 </tr>
 <tr class="even">
 <td></td>
 <td>ErrorToString</td>
-<td>Este parámetro se puede utilizar para convertir un JET_ERR en una cadena. Solo debe usarse con JetGetSystemParameter.</td>
+<td>Este parámetro se puede usar para convertir un JET_ERR en una cadena. Solo se debe usar con JetGetSystemParameter.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RuntimeCallback</td>
-<td>Configura el motor con un delegado <a href="hh566065(v=exchg.10).md">JET_CALLBACK</a> . Se puede llamar a esta devolución de llamada por los siguientes motivos: <a href="hh564847(v=exchg.10).md">FreeCursorLS</a>, <a href="hh564847(v=exchg.10).md">FreeTableLS</a> o <a href="hh564847(v=exchg.10).md">null</a>. Para obtener más información, vea <a href="dn334015(v=exchg.10).md">JetSetLS (JET_SESID, JET_TABLEID, JET_LS, LsGrbit)</a> . Actualmente no se puede recuperar este parámetro.</td>
+<td>Configura el motor con un <a href="hh566065(v=exchg.10).md">JET_CALLBACK</a> delegado. Se puede llamar a esta devolución de llamada por los siguientes motivos: <a href="hh564847(v=exchg.10).md">FreeCursorLS,</a> <a href="hh564847(v=exchg.10).md">FreeTableLS</a> o <a href="hh564847(v=exchg.10).md">Null.</a> Consulte <a href="dn334015(v=exchg.10).md">JetSetLS(JET_SESID, JET_TABLEID, JET_LS, LsGrbit)</a> para obtener más información. Este parámetro no se puede recuperar actualmente.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>CleanupMismatchedLogFiles</td>
-<td>Este parámetro controla el resultado de JetInit cuando el motor de base de datos está configurado para empezar a usar archivos de registro de transacciones en un disco con un tamaño diferente del configurado. Normalmente, <a href="dn292210(v=exchg.10).md">JetInit (JET_INSTANCE)</a> recuperará correctamente las bases de datos, pero producirá un error con <a href="hh564840(v=exchg.10).md">LogFileSizeMismatchDatabasesConsistent</a> para indicar que el tamaño del archivo de registro está mal configurado. Sin embargo, cuando este parámetro se establece en true, el motor de base de datos eliminará silenciosamente todos los archivos de registro antiguos, iniciará un nuevo conjunto de archivos de registro de transacciones con el tamaño del archivo de registro configurado. Este parámetro es útil cuando la aplicación desea cambiar de forma transparente el tamaño del archivo de registro de transacciones todavía funciona de forma transparente en los escenarios de actualización y restauración.</td>
+<td>Este parámetro controla el resultado de JetInit cuando el motor de base de datos está configurado para empezar a usar archivos de registro de transacciones en el disco que tienen un tamaño diferente al configurado. Normalmente, <a href="dn292210(v=exchg.10).md">JetInit(JET_INSTANCE)</a> recuperará correctamente las bases de datos, pero producirá un error <a href="hh564840(v=exchg.10).md">con LogFileSizeMismatchDatabasesConsistent</a> para indicar que el tamaño del archivo de registro está mal configurado. Sin embargo, cuando este parámetro se establece en true, el motor de base de datos eliminará silenciosamente todos los archivos de registro antiguos e iniciará un nuevo conjunto de archivos de registro de transacciones con el tamaño de archivo de registro configurado. Este parámetro es útil cuando la aplicación desea cambiar de forma transparente su tamaño de archivo de registro de transacciones, pero sigue funcionando de forma transparente en escenarios de actualización y restauración.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>ExceptionAction</td>
-<td>Este parámetro controla lo que ocurre cuando se produce una excepción en el motor de base de datos o en el código al que llama el motor de base de datos. Cuando se establece en JET_ExceptionMsgBox, se producirá cualquier excepción en el filtro de excepciones no controladas de Windows. Esto hará que la excepción se controle como un error de aplicación. La intención es evitar que el código de aplicación intente detectar erróneamente y omitir una excepción generada por el motor de base de datos. Esto no se permite porque podrían producirse daños en la base de datos. Si la aplicación desea administrar correctamente estas excepciones, la protección se puede deshabilitar estableciendo este parámetro en JET_ExceptionNone.</td>
+<td>Este parámetro controla lo que sucede cuando el motor de base de datos o el código a los que llama el motor de base de datos inician una excepción. Cuando se establece en JET_ExceptionMsgBox, se producirá cualquier excepción en el Windows de excepciones no controladas. Esto dará lugar a que la excepción se controle como un error de aplicación. La intención es evitar que el código de la aplicación intente detectar y omitir erróneamente una excepción generada por el motor de base de datos. Esto no se puede permitir porque podría producirse un daño en la base de datos. Si la aplicación desea controlar correctamente estas excepciones, la protección se puede deshabilitar estableciendo este parámetro en JET_ExceptionNone.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>CreatePathIfNotExist</td>
-<td>Cuando este parámetro se establece en true, cualquier carpeta que no se encuentre en una ruta de acceso del sistema de archivos utilizada por el motor de base de datos se creará en modo silencioso. De lo contrario, se producirá un error en la operación que utiliza la ruta de acceso del sistema de archivos que faltan con JET_err. InvalidPath.</td>
+<td>Cuando este parámetro se establece en true, se creará silenciosamente cualquier carpeta que falte en una ruta de acceso del sistema de archivos que use el motor de base de datos. De lo contrario, se producirá un error en la operación que usa la ruta de acceso del sistema de archivos que falta JET_err. InvalidPath.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>OneDatabasePerSession</td>
-<td>Cuando este parámetro es true, solo se permite abrir una base de datos mediante JetOpenDatabase por una sesión determinada al mismo tiempo. La base de datos temporal se excluye de esta restricción.</td>
+<td>Cuando este parámetro es true, solo una sesión determinada puede abrir una base de datos mediante JetOpenDatabase a la vez. La base de datos temporal se excluye de esta restricción.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -340,7 +340,7 @@ public enum JET_param
 <tr class="odd">
 <td></td>
 <td>VersionStoreTaskQueueMax</td>
-<td>Este parámetro controla el número de elementos de trabajo de limpieza en segundo plano que se pueden poner en cola en el grupo de subprocesos del motor de base de datos al mismo tiempo.</td>
+<td>Este parámetro controla el número de elementos de trabajo de limpieza en segundo plano que se pueden poner en cola en el grupo de subprocesos del motor de base de datos en cualquier momento.</td>
 </tr>
 </tbody>
 </table>
@@ -350,4 +350,4 @@ public enum JET_param
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

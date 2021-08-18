@@ -1,11 +1,11 @@
 ---
-title: Atributo de revisión del sistema operativo
+title: Atributo Operating-System-Hotfix
 description: Nivel de revisión del sistema operativo.
 ms.assetid: 46fc7eb2-9e68-4036-be71-2d38766f8b4b
 ms.tgt_platform: multiple
 keywords:
-- 'Sistema operativo: esquema de AD de atributo de revisión'
-- operatingSystemHotfix esquema de AD de atributos
+- Esquema de AD del atributo Operating-System-Hotfix
+- Esquema de AD del atributo operatingSystemHotfix
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c32ced3ea760eab9d97828369b51ec596d561ebd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f0ece851b703c543740716ec042331c4ede69aa79b7dc06b4ee9fdce8c974c4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442155"
 ---
-# <a name="operating-system-hotfix-attribute"></a>Atributo de revisión del sistema operativo
+# <a name="operating-system-hotfix-attribute"></a>Atributo Operating-System-Hotfix
 
 Nivel de revisión del sistema operativo.
 
@@ -29,13 +29,13 @@ Nivel de revisión del sistema operativo.
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | Sistema operativo: revisión                     |
-| Nombre para mostrar de LDAP | operatingSystemHotfix                       |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | Revisión del sistema operativo                     |
+| Ldap-Display-Name | operatingSystemHotfix                       |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.415                      |
-| System-ID-GUID    | bd951b3c-9c96-11d0-afdd-00c04fd930c9        |
+| System-Id-Guid    | bd951b3c-9c96-11d0-afdd-00c04fd930c9        |
 | Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,13 +55,13 @@ Nivel de revisión del sistema operativo.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
+| Es de un solo valor       | True                                                                                     |
 | Está indexado             | False                                                                                    |
 | En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
@@ -76,13 +76,13 @@ Nivel de revisión del sistema operativo.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
+| Es de un solo valor       | True                                                                                     |
 | Está indexado             | False                                                                                    |
 | En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
@@ -97,13 +97,13 @@ Nivel de revisión del sistema operativo.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
+| Es de un solo valor       | True                                                                                     |
 | Está indexado             | False                                                                                    |
 | En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
@@ -118,13 +118,13 @@ Nivel de revisión del sistema operativo.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
+| Es de un solo valor       | True                                                                                     |
 | Está indexado             | False                                                                                    |
 | En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
@@ -139,13 +139,13 @@ Nivel de revisión del sistema operativo.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
+| Es de un solo valor       | True                                                                                     |
 | Está indexado             | False                                                                                    |
 | En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
@@ -160,13 +160,13 @@ Nivel de revisión del sistema operativo.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
+| Es de un solo valor       | True                                                                                     |
 | Está indexado             | False                                                                                    |
 | En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |

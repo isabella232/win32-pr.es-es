@@ -4,22 +4,22 @@ ms.assetid: a3279492-a154-418d-ab25-45ec458ad483
 title: GetSignerCert
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: beff3e220fc8f0c95992c4a14a3dc8b5f5d19fab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e7288ed92ace5cf6982402a9b449c1bb91170d617604fab061f1836756ef1ac3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119006643"
 ---
 # <a name="getsignercert"></a>GetSignerCert
 
-La función **GetSignerCert** pasa por (enumera) los certificados de un [*almacén de certificados*](../secgloss/c-gly.md) hasta que se encuentra un certificado con una clave de firma. Si se encuentra un certificado, se devuelve un puntero al certificado. Este código muestra:
+La **función GetSignerCert** pasa por (enumera) los [](../secgloss/c-gly.md) certificados de un almacén de certificados hasta que se encuentra un certificado con una clave de firma. Si se encuentra un certificado, se devuelve un puntero al certificado. En este código se muestra lo siguiente:
 
 -   Buscar un certificado con una propiedad de certificado.
--   Comprobando la propiedad.
--   Devolver un puntero al [**\_ contexto de certificado**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) donde se encontró el atributo.
+-   Comprobar esa propiedad.
+-   Devolver un puntero al [**CONTEXTO \_ DE CERT**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) donde se encontró el atributo.
 
-Este código usa un controlador de errores denominado **MyHandleError**. Para ver la implementación de este controlador de errores, vea el tema [**MyHandleError**](myhandleerror.md) .
+Este código usa un controlador de errores denominado **MyHandleError.** Para ver la implementación de este controlador de errores, vea el [**tema MyHandleError.**](myhandleerror.md)
 
 
 ```C++

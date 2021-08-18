@@ -1,42 +1,42 @@
 ---
 description: aplica un algoritmo hash y codifica un mensaje de texto y, a continuación, descodifica y comprueba el mensaje.
 ms.assetid: effe4080-63c1-4f35-a5e3-e7e60754b28f
-title: 'Programa C de ejemplo: codificar y descodificar un mensaje con hash'
+title: 'Programa C de ejemplo: codificación y codificación de un mensaje con hash'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5904a684d02a81acba1502162c779b9f124d3dbe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1119ff8c54e0a181e5b99cdb70b6a3a62825a7d2b05879a85547bee4bcb7c310
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007723"
 ---
-# <a name="example-c-program-encoding-and-decoding-a-hashed-message"></a>Programa C de ejemplo: codificar y descodificar un mensaje con hash
+# <a name="example-c-program-encoding-and-decoding-a-hashed-message"></a>Programa C de ejemplo: codificación y codificación de un mensaje con hash
 
-En el siguiente ejemplo se [*aplica un algoritmo hash*](../secgloss/h-gly.md) y se codifica un mensaje de texto y, a continuación, se descodifica y se comprueba el mensaje.
+En el ejemplo [*siguiente se*](../secgloss/h-gly.md) aplica un algoritmo hash y se codifica un mensaje de texto y, a continuación, se descodifica y se comprueba el mensaje.
 
-Aunque, por simplicidad, las dos funciones diferentes se han combinado en este ejemplo, en un valor más realista, las dos partes se utilizarían por separado.
+Aunque, para simplificar, las dos funciones diferentes se han combinado en este ejemplo, en un valor más realista, las dos partes se usarían por separado.
 
-En este ejemplo se muestran las siguientes tareas y funciones de CryptoAPI:
+En este ejemplo se muestran las siguientes tareas y funciones cryptoAPI:
 
--   Llamar a [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) para adquirir un proveedor de CSP.
--   Usar [**CryptMsgCalculateEncodedLength**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength) para calcular la longitud del mensaje codificado.
+-   Llamar [**a CryptAcquireContext para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) adquirir un proveedor de CSP.
+-   Usar [**CryptMsgCalculateEncodedLength para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength) calcular la longitud del mensaje codificado.
 -   Asignación de memoria para un búfer que contiene los datos codificados.
 -   Abrir un mensaje para codificar mediante [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode).
 -   Agregar contenido al mensaje para codificar mediante [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate).
--   Usar [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam) para copiar el mensaje codificado en el búfer asignado.
--   Abrir un mensaje para descodificar con [**CryptMsgOpenToDecode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode).
--   Agregar el mensaje codificado al mensaje que se va a descodificar mediante [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate).
+-   Usar [**CryptMsgGetParam para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam) copiar el mensaje codificado en el búfer asignado.
+-   Abrir un mensaje para descodificar mediante [**CryptMsgOpenToDecode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode).
+-   Agregar el mensaje codificado al mensaje para descodificar mediante [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate).
 -   Crear un puntero duplicado al mensaje mediante [**CryptMsgDuplicate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgduplicate).
--   Comprobando el tipo de mensaje con [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
--   Uso de [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam) para descodificar el mensaje.
--   Comprobando el hash mediante [**CryptMsgControl**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcontrol).
--   Uso de [**CryptMsgClose**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgclose) para liberar el identificador de mensaje.
--   Uso de [**CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext) para liberar el CSP.
+-   Comprobar el tipo de mensaje [**con CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
+-   Usar [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam) para descodificar el mensaje.
+-   Comprobar el hash mediante [**CryptMsgControl**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcontrol).
+-   Usar [**CryptMsgClose para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgclose) liberar el identificador del mensaje.
+-   Uso [**de CryptReleaseContext para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext) liberar el CSP.
 
-En este ejemplo se usa la función [**MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo.
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo.
 
-El código de esta y otras funciones auxiliares también se enumeran en [funciones de de uso general](general-purpose-functions.md).
+El código de esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

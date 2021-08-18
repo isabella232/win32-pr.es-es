@@ -1,57 +1,57 @@
 ---
-description: La biblioteca de utilidades de D3DX proporciona la interfaz ID3DXMATRIXStack.
+description: La biblioteca de utilidades D3DX proporciona la interfaz ID3DXMATRIXStack.
 ms.assetid: e3cfb29e-4ef6-4b48-ad6b-f0371f526507
-title: Pilas de matrices (Direct3D 9)
+title: Pilas de matriz (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d535307fb99d8743b910f2f3f8c6d55e197748e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a480236bc42142b725e232a9fb92807be73fb03097104a0cc4fc08643f4361af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044342"
 ---
-# <a name="matrix-stacks-direct3d-9"></a>Pilas de matrices (Direct3D 9)
+# <a name="matrix-stacks-direct3d-9"></a>Pilas de matriz (Direct3D 9)
 
-La biblioteca de utilidades de D3DX proporciona la interfaz [**ID3DXMATRIXStack**](id3dxmatrixstack.md) . Proporciona un mecanismo para permitir que las matrices se inserten en una pila de matriz y se extraigan de ella. Implementar una pila de matriz es una manera eficaz de realizar un seguimiento de las matrices mientras se atraviesa una jerarquía de transformación.
+La biblioteca de utilidades D3DX proporciona la [**interfaz ID3DXMATRIXStack.**](id3dxmatrixstack.md) Proporciona un mecanismo para permitir que las matrices se puedan insertar y sacar de una pila de matriz. La implementación de una pila de matrices es una manera eficaz de realizar un seguimiento de las matrices mientras se recorre una jerarquía de transformación.
 
-La biblioteca de utilidades de D3DX usa una pila de matrices para almacenar transformaciones como matrices. Los distintos métodos de la interfaz [**ID3DXMATRIXStack**](id3dxmatrixstack.md) se ocupan de la matriz actual o de la matriz que se encuentra en la parte superior de la pila. Puede borrar la matriz actual con el método [**ID3DXMATRIXStack:: LoadIdentity**](id3dxmatrixstack--loadidentity.md) . Para especificar explícitamente una matriz determinada que se va a cargar como la matriz de transformación actual, use el método [**ID3DXMATRIXStack:: LoadMatrix**](id3dxmatrixstack--loadmatrix.md) . Después, puede llamar al método [**ID3DXMATRIXStack:: MultMatrix**](id3dxmatrixstack--multmatrix.md) o [**ID3DXMATRIXStack:: MultMatrixLocal**](id3dxmatrixstack--multmatrixlocal.md) para multiplicar la matriz actual por la matriz especificada.
+La biblioteca de utilidades D3DX usa una pila de matrices para almacenar transformaciones como matrices. Los distintos métodos de la [**interfaz ID3DXMATRIXStack**](id3dxmatrixstack.md) tratan con la matriz actual o la matriz ubicada en la parte superior de la pila. Puede borrar la matriz actual con el [**método ID3DXMATRIXStack::LoadIdentity.**](id3dxmatrixstack--loadidentity.md) Para especificar explícitamente una determinada matriz que se cargará como la matriz de transformación actual, use el [**método ID3DXMATRIXStack::LoadMatrix.**](id3dxmatrixstack--loadmatrix.md) A continuación, puede llamar al método [**ID3DXMATRIXStack::MultMatrix**](id3dxmatrixstack--multmatrix.md) o al método [**ID3DXMATRIXStack::MultMatrixLocal**](id3dxmatrixstack--multmatrixlocal.md) para multiplicar la matriz actual por la matriz especificada.
 
-El método [**ID3DXMATRIXStack::P OP**](id3dxmatrixstack--pop.md) permite volver a la matriz de transformación anterior y el método [**ID3DXMATRIXStack::P uscripción**](id3dxmatrixstack--push.md) agrega una matriz de transformación a la pila.
+El [**método ID3DXMATRIXStack::P op**](id3dxmatrixstack--pop.md) permite volver a la matriz de transformación anterior y el método [**ID3DXMATRIXStack::P ush**](id3dxmatrixstack--push.md) agrega una matriz de transformación a la pila.
 
-Las matrices individuales de la pila de matriz se representan como matrices homogéneas 4x4, definidas por la estructura [**D3DXMATRIX**](d3dxmatrix.md) de la biblioteca de utilidades de D3DX.
+Las matrices individuales de la pila de matrices se representan como matrices homogéneos 4x4, definidas por la estructura D3DXMATRIX de la biblioteca de utilidades [**D3DXMATRIX.**](d3dxmatrix.md)
 
-La biblioteca de utilidades de D3DX proporciona una pila de matriz a través de un objeto de modelo de objetos componentes (COM).
+La biblioteca de utilidades D3DX proporciona una pila de matrices a través de un objeto de modelo de objetos componentes (COM).
 
-## <a name="implementing-a-scene-hierarchy"></a>Implementar una jerarquía de escenas
+## <a name="implementing-a-scene-hierarchy"></a>Implementación de una jerarquía de escena
 
-Una pila de matriz simplifica la construcción de modelos jerárquicos, en los que los objetos complicados se construyen a partir de una serie de objetos más simples.
+Una pila de matriz simplifica la construcción de modelos jerárquicos, en los que los objetos complicados se construyen a partir de una serie de objetos más sencillos.
 
-Normalmente, una estructura de datos de árbol representa una escena o una transformación. Cada nodo de la estructura de datos de árbol contiene una matriz. Una matriz determinada representa el cambio en los sistemas de coordenadas del elemento primario del nodo al nodo. Por ejemplo, si está modelando un brazo humano, podría implementar la jerarquía que se muestra en el diagrama siguiente.
+Una jerarquía de escena o transformación normalmente se representa mediante una estructura de datos de árbol. Cada nodo de la estructura de datos de árbol contiene una matriz. Una matriz determinada representa el cambio en los sistemas de coordenadas del nodo primario al nodo. Por ejemplo, si está modelando un arm humano, puede implementar la jerarquía que se muestra en el diagrama siguiente.
 
-![diagrama de la jerarquía de un brazo humano](images/stack1.png)
+![diagrama de la jerarquía de un arm humano](images/stack1.png)
 
-En esta jerarquía, la matriz de cuerpo coloca el cuerpo del mundo. La matriz UpperArm contiene el giro del hombro, la matriz LowerArm contiene el giro del codo y la matriz de la mano contiene el giro de la muñeca. Para determinar si la mano es relativa al mundo, debe multiplicar todas las matrices del cuerpo hacia abajo a la mano.
+En esta jerarquía, la matriz Body coloca el cuerpo en el mundo. La matriz UpperArm contiene la rotación del cuello, la matriz LowerArm contiene la rotación del cuello y la matriz hand contiene la rotación de la mano. Para determinar dónde está la mano en relación con el mundo, se multiplican todas las matrices de Cuerpo hacia abajo por Mano juntas.
 
-La jerarquía anterior es demasiado simplista, porque cada nodo solo tiene un elemento secundario. Si empieza a modelar la mano con más detalle, probablemente agregará dedos y un control Thumb. Cada dígito puede agregarse a la jerarquía como elemento secundario, tal y como se muestra en el diagrama siguiente.
+La jerarquía anterior es demasiado simplista, porque cada nodo tiene solo un elemento secundario. Si empieza a modelar la mano con más detalle, probablemente agregará dedos y un dedo. Cada dígito se puede agregar a la jerarquía como elementos secundarios de Hand, como se muestra en el diagrama siguiente.
 
-![diagrama de la jerarquía de una mano](images/stack2.png)
+![diagrama de la jerarquía de una mano humana](images/stack2.png)
 
-Si recorre el gráfico completo del brazo en orden con prioridad a la profundidad, recorriendo el recorrido hasta un trazado como sea posible antes de pasar a la siguiente ruta de acceso: para dibujar la escena, realice una secuencia de representación segmentada. Por ejemplo, para representar la mano y los dedos, implemente el siguiente patrón.
+Si recorre el gráfico completo del arm en primer lugar en profundidad (recorriendo un trazado lo más lejos posible antes de pasar a la ruta de acceso siguiente) para dibujar la escena, realizará una secuencia de representación segmentada. Por ejemplo, para representar la mano y los dedos, implemente el siguiente patrón.
 
-1.  Inserte la matriz de mano en la pila de la matriz.
+1.  Insertar la matriz hand en la pila de matriz.
 2.  Dibuje la mano.
-3.  Inserte la matriz Thumb en la pila de la matriz.
-4.  Dibuje el control Thumb.
-5.  Extrae la matriz Thumb de la pila.
-6.  Inserte el dedo 1 matriz en la pila de la matriz.
+3.  Inserta la matriz Thumb en la pila de matriz.
+4.  Dibuje el control.
+5.  Quitar la matriz Thumb de la pila.
+6.  Inserta la matriz Finger 1 en la pila de matriz.
 7.  Dibuje el primer dedo.
-8.  Extrae la matriz de dedo 1 de la pila.
-9.  Inserte el dedo 2 matriz en la pila de la matriz. Puede continuar de esta manera hasta que se representen todos los dedos y el control de posición.
+8.  Quitar la matriz Dedo 1 de la pila.
+9.  Inserta la matriz Finger 2 en la pila de matriz. Continúe de esta manera hasta que se represente todos los dedos y el dedo.
 
-Una vez que haya terminado de representar los dedos, verá la matriz de mano fuera de la pila.
+Una vez que haya terminado de representar los dedos, quitaría la matriz Hand de la pila.
 
-Puede seguir este proceso básico en el código con los ejemplos siguientes. Cuando se encuentra un nodo durante la búsqueda con prioridad a la profundidad de la estructura de datos de árbol, inserte la matriz en la parte superior de la pila de la matriz.
+Puede seguir este proceso básico en el código con los ejemplos siguientes. Cuando encuentre un nodo durante la búsqueda por primera vez en profundidad de la estructura de datos del árbol, presione la matriz en la parte superior de la pila de matrices.
 
 
 ```
@@ -62,7 +62,7 @@ MatrixStack->MultMatrix(pNode->matrix);
 
 
 
-Cuando haya terminado con un nodo, desactive la matriz de la parte superior de la pila de la matriz.
+Cuando haya terminado con un nodo, despeda la matriz de la parte superior de la pila de matrices.
 
 
 ```
@@ -71,7 +71,7 @@ MatrixStack->Pop();
 
 
 
-De esta manera, la matriz de la parte superior de la pila siempre representa la transformación mundial del nodo actual. Por lo tanto, antes de dibujar cada nodo, debe establecer la matriz de Direct3D.
+De este modo, la matriz de la parte superior de la pila siempre representa la transformación mundial del nodo actual. Por lo tanto, antes de dibujar cada nodo, debe establecer la matriz de Direct3D.
 
 
 ```
@@ -80,7 +80,7 @@ pD3DDevice->SetTransform(D3DTS_WORLDMATRIX(0), *MatrixStack->GetTop());
 
 
 
-Para obtener más información sobre los métodos específicos que se pueden realizar en una pila de matrices de D3DX, vea el tema de referencia de [**ID3DXMATRIXStack**](id3dxmatrixstack.md) .
+Para obtener más información sobre los métodos específicos que puede realizar en una pila de matriz D3DX, vea el tema de referencia [**ID3DXMATRIXStack.**](id3dxmatrixstack.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

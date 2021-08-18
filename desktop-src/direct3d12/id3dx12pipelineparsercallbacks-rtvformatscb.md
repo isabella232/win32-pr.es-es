@@ -1,6 +1,6 @@
 ---
-title: Método ID3DX12PipelineParserCallbacks RTVFormatsCb (D3DX12. h)
-description: Llama a la devolución de llamada de subobjeto de matriz de formato de destino de representación de un objeto que implementa esta interfaz.
+title: Método ID3DX12PipelineParserCallbacks RTVFormatsCb (D3DX12.h)
+description: Llama a la devolución de llamada del subobjeto de matriz de formato de destino de representación de un objeto que implementa esta interfaz.
 ms.assetid: 0D5F0BC4-D9E2-4B16-99B5-509454AF8C02
 keywords:
 - Método RTVFormatsCb
@@ -17,16 +17,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: caaa1df508e1a448de3851d408f9aad5ac94d957
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d826bd2c2f3c5f1c0783a4be2cba132e4874f5a54776c227590dd87f5365d347
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045443"
 ---
-# <a name="id3dx12pipelineparsercallbacksrtvformatscb-method"></a>ID3DX12PipelineParserCallbacks:: RTVFormatsCb (método)
+# <a name="id3dx12pipelineparsercallbacksrtvformatscb-method"></a>Método ID3DX12PipelineParserCallbacks::RTVFormatsCb
 
-Llama a la devolución de llamada de subobjeto de matriz de formato de destino de representación de un objeto que implementa esta interfaz.
+Llama a la devolución de llamada del subobjeto de matriz de formato de destino de representación de un objeto que implementa esta interfaz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,12 +43,12 @@ void RTVFormatsCb(
 
 <dl> <dt>
 
-*RTVFormats* \[ CLI\]
+*RTVFormats* \[ Ref\]
 </dt> <dd>
 
-Type: **const [**D3D12 \_ RT \_ format \_ array**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_rt_format_array)**
+Tipo: **const [**D3D12 \_ RT FORMAT \_ \_ ARRAY**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_rt_format_array)**
 
-Detalles del subobjeto de matriz de formato de destino de representación analizado desde una secuencia de estado de canalización.
+Detalles del subobjeto de matriz de formato de destino de representación que se analiza desde una secuencia de estado de canalización.
 
 </dd> </dl>
 
@@ -62,8 +62,8 @@ No devuelve nada.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX12. h</dt> </dl>  |
-| Biblioteca<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX12.h</dt> </dl>  |
+| Biblioteca<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 
@@ -72,13 +72,13 @@ No devuelve nada.
 
 <dl> <dt>
 
-[Interfaces auxiliares de Direct3D 12](helper-interfaces-for-d3d12.md)
+[Interfaces auxiliares para Direct3D 12](helper-interfaces-for-d3d12.md)
 </dt> <dt>
 
 [**ID3DX12PipelineParserCallbacks**](id3dx12pipelineparsercallbacks.md)
 </dt> <dt>
 
-[**\_Matriz de \_ formato D3D12 RT \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_rt_format_array)
+[**MATRIZ DE FORMATO D3D12 \_ RT \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_rt_format_array)
 </dt> </dl>
 
  

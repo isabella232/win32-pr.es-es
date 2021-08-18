@@ -1,33 +1,33 @@
 ---
-description: configuración regional \_ SDURATION
+description: CONFIGURACIÓN REGIONAL \_ DE LA CONFIGURACIÓN REGIONAL
 ms.assetid: 45ffd7ed-f964-4948-8679-cf960b5c1e0e
 title: LOCALE_SDURATION
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d00740d2f041794b36e8f0e0d8ad2d25723bc12e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: acb7031c5e9ddc3173fe7f10117eaad8c72820b1d3b81a82da33f6541901a933
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105670006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147368"
 ---
-# <a name="locale_sduration"></a>configuración regional \_ SDURATION
+# <a name="locale_sduration"></a>CONFIGURACIÓN REGIONAL \_ DE LA CONFIGURACIÓN REGIONAL
 
-**Windows Vista y versiones posteriores:** Formato de duración de tiempo compuesto por las imágenes de formato que aparecen en la tabla siguiente. El formato es similar al formato de la [configuración regional \_ STIMEFORMAT](locale-stime-constants.md). En el caso de \_ la configuración regional STIMEFORMAT, este formato también puede incluir cualquier cadena de caracteres entre comillas simples. Los formatos pueden incluir, por ejemplo, "h:mm: SS" o "d" d "h'h". En comparación con la configuración regional \_ STIMEFORMAT, hay imágenes de formato adicionales para las fracciones de segundo. Dado que este formato es para Duration, no Time, no especifica un sistema de reloj de 12 o 24 horas, ni incluye un indicador AM/PM. Esta constante se puede usar, por ejemplo, para una aplicación de varios medios que muestra la hora de archivo o una aplicación de eventos deportivos que muestra las horas de finalización.
+**Windows Vista y versiones posteriores:** Formato de duración de tiempo compuesto por imágenes de formato enumeradas en la tabla siguiente. El formato es similar al formato de [LOCALE \_ STIMEFORMAT](locale-stime-constants.md). En cuanto a LOCALE STIMEFORMAT, este formato también puede incluir cualquier \_ cadena de caracteres entre comillas simples. Los formatos pueden incluir, por ejemplo, "h:mm:ss" o "d'd 'h'h 'm'm 's.fff's'". En comparación con LOCALE STIMEFORMAT, hay imágenes de formato adicionales \_ para fracciones de segundo. Dado que este formato es de duración, no de tiempo, no especifica un sistema de reloj de 12 o 24 horas, ni incluye un indicador am/PM. Esta constante se puede usar, por ejemplo, para una aplicación multi multimedia que muestra la hora del archivo o una aplicación de eventos deportivos que muestra los tiempos de terminación.
 
 
 
 | Value | Significado                                                                                                                                                                                                                             |
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| h     | Horas sin ceros a la izquierda para las horas de un solo dígito                                                                                                                                                                                  |
-| hh    | Horas con ceros a la izquierda para las horas de un solo dígito                                                                                                                                                                                     |
-| m     | Minutos sin ceros a la izquierda para los minutos con un solo dígito                                                                                                                                                                              |
-| MM    | Minutos con ceros a la izquierda para los minutos con un solo dígito                                                                                                                                                                                 |
-| s     | Segundos sin ceros a la izquierda para los segundos de un solo dígito                                                                                                                                                                              |
-| ss    | Segundos con ceros a la izquierda para los segundos de un solo dígito                                                                                                                                                                                 |
+| h     | Horas sin ceros iniciales para horas de un solo dígito                                                                                                                                                                                  |
+| hh    | Horas con ceros a la izquierda para horas de un solo dígito                                                                                                                                                                                     |
+| m     | Minutos sin ceros iniciales para minutos de un solo dígito                                                                                                                                                                              |
+| MM    | Minutos con ceros a la izquierda para minutos de un solo dígito                                                                                                                                                                                 |
+| s     | Segundos sin ceros iniciales para segundos de un solo dígito                                                                                                                                                                              |
+| ss    | Segundos con ceros iniciales para segundos de un solo dígito                                                                                                                                                                                 |
 | f     | Décimas de segundo                                                                                                                                                                                                                  |
 | ff    | Centésimas de segundo                                                                                                                                                                                                              |
-| fff   | Milésimas de segundo; el carácter "f" puede tener hasta nueve horas consecutivas (fffffffff), aunque la compatibilidad con los temporizadores de frecuencia está limitada a 100 nanosegundos; Si hay nueve caracteres presentes, los dos últimos dígitos siempre son cero |
+| fff   | Milésimas de segundo; el carácter "f" puede producirse hasta nueve veces consecutivas (fffffffff), aunque la compatibilidad con temporizadores de frecuencia está limitada a 100 nanosegundos. si hay nueve caracteres, los dos últimos dígitos siempre son cero |
 
 
 

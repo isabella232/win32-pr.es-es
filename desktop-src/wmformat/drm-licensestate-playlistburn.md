@@ -1,9 +1,9 @@
 ---
 title: DRM_LicenseState_PlaylistBurn
-description: La \_ propiedad PlaylistBurn de LicenseState de DRM \_ contiene una \_ estructura de datos de estado de la licencia de WM \_ \_ que contiene detalles sobre cómo se ha aplicado este derecho al contenido.
+description: La propiedad LicenseState Playlist Playlist Playlist De DRM contiene una estructura WM LICENSE STATE DATA que contiene detalles sobre cómo se ha aplicado este derecho \_ \_ al \_ \_ \_ contenido.
 ms.assetid: 21d2a284-1f0c-499a-94fd-f66d6437bd49
 keywords:
-- DRM_LicenseState_PlaylistBurn formato de Windows Media
+- DRM_LicenseState_PlaylistBurn windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,28 +12,28 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 812fe11f1318eadcc37fde242187695ef5101387
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 362689f9a6946674c5102fa4c73042c08d610197d6e771c3159fbe5fc959e846
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103995269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119708975"
 ---
-# <a name="drm_licensestate_playlistburn"></a>\_PlaylistBurn LICENSESTATE \_ DRM
+# <a name="drm_licensestate_playlistburn"></a>Lista \_ de reproducción de DRM LicenseState \_
 
-La **propiedad \_ \_ PlaylistBurn de LicenseState de DRM** contiene una estructura de [**\_ \_ \_ datos de estado**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) de la licencia de WM que contiene detalles sobre cómo se ha aplicado este derecho al contenido.
+La **propiedad \_ LicenseState Playlist Playlist Playlist \_ De DRM** contiene una estructura WM LICENSE STATE [**\_ \_ \_ DATA**](/previous-versions/windows/desktop/legacy/dd757942(v=vs.85)) que contiene detalles sobre cómo se ha aplicado este derecho al contenido.
 
 ## <a name="global-constant"></a>Constante global
 
-g \_ wszWMDRM \_ LicenseState \_ PlaylistBurn
+g \_ wszWMDRM LicenseState Playlist Playlist Playlist (Lista de reproducción de wszWMDRM \_ \_ LicenseState)
 
 ## <a name="data-type"></a>Tipo de datos
 
-**tipo de WMT \_ \_ binario**
+**BINARIO DE \_ TIPO \_ WMT**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se trata de una propiedad de solo lectura que se recupera mediante [**IWMDRMReader:: GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).
+Se trata de una propiedad de solo lectura que se recupera mediante [**IWMDRMReader::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).
 
 ## <a name="see-also"></a>Vea también
 
@@ -42,6 +42,6 @@ Se trata de una propiedad de solo lectura que se recupera mediante [**IWMDRMRead
 [**Propiedades de DRM**](drm-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,30 +1,30 @@
 ---
-description: La clase de LogicalDevice de CIM \_ expone los métodos siguientes.
+description: La clase LogicalDevice de CIM \_ expone los métodos siguientes.
 ms.assetid: 74961DA0-0AE9-4B47-8FE7-541705BCDAB7
 ms.tgt_platform: multiple
-title: Métodos CIM_LogicalDevice
+title: CIM_LogicalDevice métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dee970428510a3bf1e00b0c854607eb68c061fff
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3717a6fb90d71360927dee2ba5c68c11cc0b385d7eebac310961f011a8e7a988
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104538968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119438426"
 ---
-# <a name="cim_logicaldevice-methods"></a>Métodos de LogicalDevice de CIM \_
+# <a name="cim_logicaldevice-methods"></a>Métodos \_ LogicalDevice de CIM
 
-La clase de [**\_ LogicalDevice de CIM**](cim-logicaldevice.md) expone los métodos siguientes.
+La [**clase \_ LogicalDevice**](cim-logicaldevice.md) de CIM expone los métodos siguientes.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. ACTUALMENTE, WMI solo admite los [esquemas de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**RESET (método)**](reset-method-in-class-cim-logicaldevice.md)
--   [**SetPowerState (método)**](setpowerstate-method-in-class-cim-logicaldevice.md)
+-   [**Método de restablecimiento**](reset-method-in-class-cim-logicaldevice.md)
+-   [**Método SetPowerState**](setpowerstate-method-in-class-cim-logicaldevice.md)
 
  
 

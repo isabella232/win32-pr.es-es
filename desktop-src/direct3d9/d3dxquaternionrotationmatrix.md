@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXQuaternionRotationMatrix (D3dx9math.h): crea un cuaternión a partir de una matriz de rotación.'
+description: 'Función D3DXQuaternionRotationMatrix (D3dx9math.h): compila un cuaternión a partir de una matriz de rotación.'
 ms.assetid: 4fafb1aa-5d6f-46e6-84b1-e0bac22952d2
 title: Función D3DXQuaternionRotationMatrix (D3dx9math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9b0ff8529f32d398ac208cff3214fccfdb2ade81
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fb3ad57cc34a7b16b15c49195e39004094a33e2a168c7a3ff2f5f7eb77c267dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988455"
 ---
 # <a name="d3dxquaternionrotationmatrix-function-d3dx9mathh"></a>Función D3DXQuaternionRotationMatrix (D3dx9math.h)
 
@@ -82,7 +82,7 @@ Use [**D3DXQuaternionNormalize para cualquier**](d3dxquaternionnormalize.md) ent
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

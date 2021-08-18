@@ -1,26 +1,26 @@
 ---
-title: Atributo Top de VML
-description: Atributo Top de VML
+title: Atributo principal de VML
+description: Atributo principal de VML
 ms.assetid: faad0c76-3566-4a51-962b-971667df2025
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2c76a39035bc3dd3f0ae348280561e614d7dab4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 60176fc9ac60f62c3692fa29b54fde4af8277d1c35fb2204768911d2bd8ae1f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119395825"
 ---
-# <a name="vml-top-attribute"></a>Atributo Top de VML
+# <a name="vml-top-attribute"></a>Atributo principal de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define la posición de la forma en relación con el elemento situado encima de él en el flujo de la página. Lectura/escritura **Cadena**.
+Define la posición de la forma con respecto al elemento situado encima de ella en el flujo de la página. Lectura/escritura **Cadena**.
 
 **Se aplica a**
 
@@ -28,19 +28,19 @@ Define la posición de la forma en relación con el elemento situado encima de �
 
 **Sintaxis de etiquetas**
 
-<v: *Element* style = "Top: *Expression* " >
+<v: *element* style="top: *expression* ">
 
 **Sintaxis de script**
 
-*Element* . Style.Top = "*expresión*"
+*element* .style.top="*expression*"
 
-*expresión* = de *elemento*. Style.Top
+*expresión* = *elemento*.style.top
 
 **Comentarios:**
 
-El atributo **Top** es similar al atributo **Top** de HTML estándar para los estilos.
+El **atributo Top** es similar al atributo HTML **Top** estándar para los estilos.
 
-Las unidades se pueden asignar al elemento primario o pueden estar en unidades absolutas. Este atributo no se puede escribir para las formas alineadas en línea.
+Las unidades se pueden asignar al elemento primario o pueden estar en unidades absolutas. Es posible que este atributo no se escriba para las formas delimitadas en línea.
 
 Estos valores incluyen:
 
@@ -48,13 +48,13 @@ Estos valores incluyen:
 
 | Value      | Descripción                                                                                                                                                      |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Automático       | Posición predeterminada de un elemento en el flujo de la página.                                                                                                          |
-| units      | Número con un designador de unidades absolutas (cm, mm, PDA, PT, PC o PX) o un designador de unidades relativas (EM o ex). Si no se especifica ninguna unidad, se supone que se trata de píxeles (PX). |
+| Auto       | Posición predeterminada de un elemento en el flujo de la página.                                                                                                          |
+| units      | Número con un designador de unidades absolutas (cm, mm, in, pt, pc o px) o un designador de unidades relativas (em o ex). Si no se da ninguna unidad, se suponen píxeles (px). |
 | percentage | Valor expresado como porcentaje del alto del objeto primario.                                                                                                   |
 
 
 
- 
+ 
 
 *Atributo estándar de VML*
 
@@ -64,7 +64,7 @@ Estos valores incluyen:
 
 **Ejemplo**
 
-El borde superior de la forma es de 5 píxeles por debajo del objeto que lo precede en el flujo de la página.
+El borde superior de la forma está 5 píxeles por debajo del objeto que lo precede en el flujo de la página.
 
 
 ```HTML
@@ -75,8 +75,8 @@ El borde superior de la forma es de 5 píxeles por debajo del objeto que lo prec
 
 
 
-[Ejemplo de atributo Top](/previous-versions/bb264098(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o posterior).
+[Ejemplo de atributo superior](/previous-versions/bb264098(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o superior).
 
- 
+ 
 
- 
+ 

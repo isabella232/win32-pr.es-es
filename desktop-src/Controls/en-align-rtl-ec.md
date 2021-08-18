@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de EN_ALIGN_RTL_EC (Winuser. h)
-description: Se envía cuando el usuario ha cambiado la dirección del control de edición de derecha a izquierda. La ventana primaria del control de edición recibe este código de notificación a través de un mensaje de comando de WM \_ .
+title: EN_ALIGN_RTL_EC de notificación (Winuser.h)
+description: Se envía cuando el usuario ha cambiado la dirección del control de edición a de derecha a izquierda. La ventana primaria del control de edición recibe este código de notificación a través de un mensaje \_ WM COMMAND.
 ms.assetid: c53bc808-48c6-4a8f-ae5d-af2164fe419a
 keywords:
-- EN_ALIGN_RTL_EC controles de código de notificación de Windows
+- EN_ALIGN_RTL_EC código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eca94073b86ea44b192360e593f4b76d4227cf82
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d16b44ecd143715eb5c1bc895ca5c20fa066b17b71ab31ee667e2d6b2b6a0852
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119437095"
 ---
-# <a name="en_align_rtl_ec-notification-code"></a>\_Código de notificación en align \_ RTL \_ EC
+# <a name="en_align_rtl_ec-notification-code"></a>Código de notificación EC DE EN \_ ALIGN \_ RTL \_
 
-Se envía cuando el usuario ha cambiado la dirección del control de edición de derecha a izquierda. La ventana primaria del control de edición recibe este código de notificación a través de un mensaje de [**\_ comando de WM**](/windows/desktop/menurc/wm-command) .
+Se envía cuando el usuario ha cambiado la dirección del control de edición a de derecha a izquierda. La ventana primaria del control de edición recibe este código de notificación a través de un [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ EN_ALIGN_RTL_EC
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene el identificador del control de edición. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica el código de notificación.
+LOWORD [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador del control de edición. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
 
 </dd> <dt>
 
@@ -55,9 +55,9 @@ Identificador del control de edición que envía el código de notificación.
 
 ## <a name="remarks"></a>Observaciones
 
-Si hay un idioma bidireccional instalado en el sistema, por ejemplo, el árabe o el hebreo, puede cambiar la dirección del control de edición mediante CTRL + LSHIFT (de izquierda a derecha) y CTRL + RSHIFT (de derecha a izquierda).
+Si hay un idioma bidireccional instalado en el sistema, por ejemplo, árabe o hebreo, puede cambiar la dirección del control de edición mediante CTRL+LSHIFT (de izquierda a derecha) y CTRL+RSHIFT (de derecha a izquierda).
 
-**Edición enriquecida:** No se admite este código de notificación.
+**Edición enriquecte:** No se admite este código de notificación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,9 +65,9 @@ Si hay un idioma bidireccional instalado en el sistema, por ejemplo, el árabe o
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Si hay un idioma bidireccional instalado en el sistema, por ejemplo, el árabe o
 
 <dl> <dt>
 
-[**comando de WM \_**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

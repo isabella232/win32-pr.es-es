@@ -1,38 +1,38 @@
 ---
-description: Solicitar reconocimiento de texto
+description: Solicitud de reconocimiento de texto
 ms.assetid: 9db9045d-b289-4c6c-9b17-ddbc2c1d3089
-title: Solicitar reconocimiento de texto
+title: Solicitud de reconocimiento de texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db2442cfa1e26185c4c8d882fe71bb178911f4d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f8efd4fe8b2f37c134480aa1b057705af8826bbf7490b1dc4d40fb5a2755b043
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147058"
 ---
-# <a name="requesting-text-recognition"></a>Solicitar reconocimiento de texto
+# <a name="requesting-text-recognition"></a>Solicitud de reconocimiento de texto
 
-La aplicación llama a la función [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) para solicitar el reconocimiento de texto desde un servicio Els específico. El servicio se debe haber descubierto en una llamada anterior a [**MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices), tal y como se describe en [**enumeración y liberación de servicios**](enumerating-and-freeing-services.md).
+La aplicación llama a la [**función MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) para solicitar el reconocimiento de texto de un servicio ELS específico. El servicio debe haber sido detectado en una llamada anterior a [**MappingGetServices**](/windows/desktop/api/Elscore/nf-elscore-mappinggetservices), como se describe en [**Enumeración y liberar servicios**](enumerating-and-freeing-services.md).
 
 > [!Note]  
-> La plataforma puede procesar llamadas [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) de forma sincrónica o asincrónica.
+> La plataforma puede procesar [**las llamadas a MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) de forma sincrónica o asincrónica.
 
  
 
-[**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) controla los siguientes tipos de texto:
+[**MappingRecognizeText controla**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) los siguientes tipos de texto:
 
--   Detección de idioma de Microsoft. UTF-16, forma de normalización C, texto para el que se va a determinar el idioma.
--   Detección de scripts de Microsoft. Texto UTF-16 para el que se determinan los intervalos de scripts.
--   Servicios transliterales. Texto UTF-16 escrito en el script de origen (sistema de escritura).
+-   Detección de idioma de Microsoft. UTF-16, formato de normalización C, texto para el que se va a determinar el idioma.
+-   Detección de scripts de Microsoft. Texto UTF-16 para el que se van a determinar los intervalos de script.
+-   Servicios de transliteración. Texto UTF-16 escrito en script de origen (sistema de escritura).
 
-## <a name="use-synchronous-text-recognition"></a>Usar el reconocimiento de texto sincrónico
+## <a name="use-synchronous-text-recognition"></a>Uso del reconocimiento de texto sincrónico
 
-En esta sección se proporcionan instrucciones para realizar el reconocimiento de texto sincrónico de varias maneras.
+En esta sección se proporcionan instrucciones para varias maneras de realizar el reconocimiento de texto sincrónico.
 
-**Reconocimiento de texto sincrónico con el servicio Microsoft Detección de idioma**
+**Reconocimiento de texto sincrónico con Microsoft Detección de idioma Service**
 
-En el ejemplo siguiente se muestra el uso de [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) con el servicio Microsoft detección de idioma y se imprimen todos los resultados recuperados por el servicio. El formato de salida de este servicio es una estructura de [**\_ \_ rango de datos de asignación**](/windows/desktop/api/Elscore/ns-elscore-mapping_data_range) única con su miembro de **pdata** que apunta a una matriz de cadenas con formato de doble terminación null de Unicode. Cada cadena de la matriz termina en NULL y se usa una cadena vacía para especificar el final de la matriz. El contenido de la matriz son nombres de idioma ordenados por confianza.
+En el ejemplo siguiente se muestra el uso de [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) con el servicio microsoft Detección de idioma e imprime todos los resultados recuperados por el servicio. El formato de salida de este servicio es una única estructura [**MAPPING \_ DATA \_ RANGE**](/windows/desktop/api/Elscore/ns-elscore-mapping_data_range) con su miembro **pData** que apunta a una matriz de cadenas con formato de registro terminada en doble null Unicode. Cada cadena de la matriz termina en NULL y se usa una cadena vacía para especificar el final de la matriz. El contenido de la matriz son nombres de idioma ordenados por confianza.
 
 
 ```C++
@@ -124,10 +124,10 @@ void PrintAllResults(PMAPPING_PROPERTY_BAG pBag)
 
 **Reconocimiento de texto sincrónico con el servicio de detección de scripts de Microsoft**
 
-En el ejemplo siguiente se muestra el uso de [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) con el servicio de detección de scripts de Microsoft y se imprimen todos los resultados recuperados. El formato de salida de este servicio es una matriz de estructuras de [**\_ \_ intervalos de datos de asignación**](/windows/desktop/api/Elscore/ns-elscore-mapping_data_range) , cada una de las cuales especifica texto escrito en el mismo script. Los caracteres comunes (Zyyy) se agregan al intervalo anterior, o al siguiente intervalo si el intervalo anterior no existe. El miembro **pdata** de cada estructura apunta a una cadena terminada en NULL de Unicode que contiene el nombre Unicode estándar del script para el intervalo determinado.
+En el ejemplo siguiente se muestra el uso de [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) con el servicio de detección de scripts de Microsoft e imprime todos los resultados recuperados. El formato de salida de este servicio es una matriz de estructuras [**MAPPING \_ DATA \_ RANGE,**](/windows/desktop/api/Elscore/ns-elscore-mapping_data_range) cada una de las que especifica texto escrito en el mismo script. Los caracteres comunes (Zyyy) se agregan al intervalo anterior o al intervalo siguiente si el intervalo anterior no existe. El **miembro pData** de cada estructura apunta a una cadena terminada en null Unicode que contiene el nombre Unicode estándar del script para el intervalo determinado.
 
 > [!Note]  
-> A partir de Windows 7, el servicio de detección de scripts de Microsoft cumple con Unicode 5,1.
+> A partir Windows 7, el servicio de detección de scripts de Microsoft cumple con Unicode 5.1.
 
  
 
@@ -224,11 +224,11 @@ void PrintAllResults(PMAPPING_PROPERTY_BAG pBag)
 
 
 
-**Reconocimiento de texto sincrónico con el servicio de transliteración de cirílico a latín de Microsoft**
+**Reconocimiento de texto sincrónico con Microsoft Cyrillic to Latin Transliteration Service**
 
-En el ejemplo siguiente se muestra el uso de [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) con el servicio de transliteración de cirílico a latín de Microsoft y se imprimen los resultados recuperados. Tenga en cuenta las dos formas diferentes de enumerar este servicio, ya sea por GUID o por categoría y por script de entrada.
+En el ejemplo siguiente se muestra el uso de [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) con el servicio de transliteración cirílico a latino de Microsoft e imprime los resultados recuperados. Tenga en cuenta las dos maneras diferentes de enumerar este servicio, ya sea por GUID o por categoría y script de entrada.
 
-El formato de salida es el mismo para todos los servicios de transliteración disponibles. Es una estructura de [**\_ \_ rango de datos de asignación**](/windows/desktop/api/Elscore/ns-elscore-mapping_data_range) única con su miembro **pdata** que apunta a una matriz de caracteres Unicode que representa el texto original transliterado en el script de salida aplicando solo las reglas del servicio de transliteración específico. Este servicio no termina en NULL si la entrada no contiene el carácter nulo de terminación.
+El formato de salida es el mismo para todos los servicios de transliteración disponibles. Es una única estructura [**MAPPING \_ DATA \_ RANGE**](/windows/desktop/api/Elscore/ns-elscore-mapping_data_range) con su miembro **pData** que apunta a una matriz de caracteres Unicode que representa el texto original transliterado en el script de salida aplicando solo las reglas del servicio de transliteración específico. Este servicio no finaliza null en su salida si la entrada no contiene el carácter nulo de terminación.
 
 
 ```C++
@@ -341,7 +341,7 @@ void PrintAllResults(PMAPPING_PROPERTY_BAG pBag)
 
 **Reconocimiento de texto sincrónico con una llamada a todos los servicios disponibles**
 
-En el ejemplo siguiente se muestra el uso de [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) con todos los servicios disponibles y se imprimen los resultados recuperados de todos los servicios. Este ejemplo proporciona una buena ilustración del funcionamiento de cada servicio. Al examinar la salida de la aplicación de ejemplo, es fácil averiguar lo que sucede internamente con los servicios. En este ejemplo también se muestra que casi todo el código usado para llamar a cualquiera de los servicios de ELS es el mismo.
+En el ejemplo siguiente se muestra el uso de [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) con todos los servicios disponibles e imprime los resultados recuperados para todos los servicios. En este ejemplo se proporciona una buena ilustración del funcionamiento de cada servicio. Al ver la salida de la aplicación de ejemplo, es fácil averiguar lo que sucede internamente con los servicios. En este ejemplo también se muestra que casi todo el código usado para llamar a cualquiera de los servicios de ELS es el mismo.
 
 
 ```C++
@@ -483,11 +483,11 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 
-## <a name="use-asynchronous-text-recognition"></a>Usar el reconocimiento de texto asincrónico
+## <a name="use-asynchronous-text-recognition"></a>Uso del reconocimiento de texto asincrónico
 
-En el ejemplo siguiente se muestra el uso de [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) para el reconocimiento de texto asincrónico. Cuando se utiliza la devolución de llamada, la aplicación debe asegurarse de que el contenedor de propiedades, el texto de entrada, las opciones y el servicio sean válidos hasta que finalice la ejecución de la devolución de llamada.
+En el ejemplo siguiente se muestra el uso [**de MappingRecognizeText para**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) el reconocimiento de texto asincrónico. Cuando se usa la devolución de llamada, la aplicación debe asegurarse de que el bolsa de propiedades, el texto de entrada, las opciones y el servicio sean válidos hasta que la devolución de llamada haya terminado de ejecutarse.
 
-La aplicación debe llamar a [**MappingFreePropertyBag**](/windows/desktop/api/Elscore/nf-elscore-mappingfreepropertybag) inmediatamente después de que la función de devolución de llamada consume el contenedor. Para obtener más información, vea [proporcionar devoluciones de llamada para los servicios Els](providing-callbacks-for-els-services.md).
+La aplicación debe llamar a [**MappingFreePropertyBag inmediatamente**](/windows/desktop/api/Elscore/nf-elscore-mappingfreepropertybag) después de que la función de devolución de llamada consuma el bolsa. Para obtener más información, vea [Proporcionar devoluciones de llamada para los servicios de ELS.](providing-callbacks-for-els-services.md)
 
 
 ```C++
@@ -616,7 +616,7 @@ void RecognizeCallback(PMAPPING_PROPERTY_BAG pBag, LPVOID data, DWORD dwDataSize
 [Uso de servicios lingüísticos extendidos](using-extended-linguistic-services.md)
 </dt> <dt>
 
-[Proporcionar devoluciones de llamada para los servicios ELS](providing-callbacks-for-els-services.md)
+[Proporcionar devoluciones de llamada para los servicios DE ELS](providing-callbacks-for-els-services.md)
 </dt> <dt>
 
 [**MappingFreePropertyBag**](/windows/desktop/api/Elscore/nf-elscore-mappingfreepropertybag)

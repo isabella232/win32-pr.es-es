@@ -1,9 +1,9 @@
 ---
-title: TEXT. scrollingAmount
-description: El atributo scrollingAmount especifica o recupera el número de píxeles que el texto se mueve durante cada movimiento de desplazamiento.
+title: TEXT.scrollingAmount
+description: El atributo scrollingAmount especifica o recupera el número de píxeles que el texto mueve durante cada movimiento de desplazamiento.
 ms.assetid: 46f74531-69dd-4505-8937-5b48b6e9be7b
 keywords:
-- Media Player de Windows TEXT. scrollingAmount
+- TEXT.scrollingAmount Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66de7bfc6001f10c429d05c480dc315edfe72f76
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2a8d5b703c02c2d3049f98a934980f1dbf8b1c5beceaca4d97158ea68c13db9a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119466965"
 ---
-# <a name="textscrollingamount"></a>TEXT. scrollingAmount
+# <a name="textscrollingamount"></a>TEXT.scrollingAmount
 
-El atributo **scrollingAmount** especifica o recupera el número de píxeles que el texto se mueve durante cada movimiento de desplazamiento.
+El **atributo scrollingAmount** especifica o recupera el número de píxeles que el texto mueve durante cada movimiento de desplazamiento.
 
 ``` syntax
         elementID.scrollingAmount
@@ -29,32 +29,32 @@ El atributo **scrollingAmount** especifica o recupera el número de píxeles que
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura/escritura positivo (**int**) con un valor predeterminado de 6.
+Este atributo es un número positivo de lectura y **escritura** (**int**) con un valor predeterminado de 6.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desplazamiento suave, **scrollingAmount** debe ser pequeño. Para un dibujo rápido con grandes huecos, el **scrollingAmount** debe ser mayor. Si **scrolling** = "false", **scrollingAmount** se omite.
+Para un desplazamiento suave, **scrollingAmount** debe ser pequeño. Para dibujar rápidamente con espacios grandes, **scrollingAmount** debe ser mayor. Si **se desplaza** ="false", se omite **scrollingAmount.**
 
-Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se utilizan los atributos del elemento de **texto** .
+Vea el [atributo value](text-value.md) para obtener un ejemplo que ilustra cómo se usan los atributos del **elemento TEXT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Elemento TEXT**](text-element.md)
 </dt> <dt>
 
-[**TEXTO. desplazamiento**](text-scrolling.md)
+[**TEXT.scrolling**](text-scrolling.md)
 </dt> </dl>
 
  

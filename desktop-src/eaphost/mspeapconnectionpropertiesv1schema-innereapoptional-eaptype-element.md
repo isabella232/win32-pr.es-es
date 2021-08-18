@@ -1,9 +1,9 @@
 ---
 title: Elemento InnerEapOptional (EapType)
-description: Obtenga información sobre el elemento InnerEapOptional (EapType). Este elemento indica si se va a realizar el acceso de invitado.
+description: Obtenga información sobre el elemento InnerEapOptional (EapType). Este elemento indica si se debe realizar el acceso GUEST.
 ms.assetid: 2d314c89-5415-407f-84c3-c4c5c8957b39
 keywords:
-- Elemento InnerEapOptional EAPHost
+- Elemento INNEREapOptional EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: be63845f389936656172b4cbb4e42de659bbf0e1
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 372163b39ea788b5c03bd25aedcc44aee172d58080fb94e3333a029a514962a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104149620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119404595"
 ---
 # <a name="innereapoptional-eaptype-element"></a>Elemento InnerEapOptional (EapType)
 
-El elemento **InnerEapOptional (EapType)** indica si se va a realizar el acceso de invitado.
+El **elemento InnerEapOptional (EapType)** indica si se debe realizar el acceso GUEST.
 
 ``` syntax
 <xs:element name="InnerEapOptional"
@@ -31,20 +31,20 @@ El elemento **InnerEapOptional (EapType)** indica si se va a realizar el acceso 
  />
 ```
 
-El elemento **InnerEapOptional** se define mediante el elemento [**EapType**](mspeapconnectionpropertiesv1schema-eaptype-element.md) .
+El elemento [**EapType**](mspeapconnectionpropertiesv1schema-eaptype-element.md) define el elemento **InnerEapOptional.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el elemento **InnerEapOptional** es true, el elemento [**EAP**](baseeapconnectionpropertiesv1schema-eap-element.md) debe estar presente y describir el método interno y su configuración; Si es FALSE, PEAP realizará el acceso de invitado. El elemento **InnerEapOptional** es opcional.
+Si el **elemento InnerEapOptional** es TRUE, el elemento [**Eap**](baseeapconnectionpropertiesv1schema-eap-element.md) debe estar presente y describir el método interno y su configuración. si es FALSE, PEAP realizará el acceso GUEST. El **elemento InnerEapOptional** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima admitida del sistema operativo |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Las tablas siguientes son una lista alfabética de referencia rápida de las funciones y estructuras tapi, junto con las versiones de TAPI asociadas a cada elemento.
+description: Las tablas siguientes son una lista alfabética de referencia rápida de las funciones y estructuras de TAPI, junto con las versiones de TAPI asociadas a cada elemento.
 ms.assetid: 38fb3b72-4648-4c44-ad58-af81a5de5623
 title: Elementos TAPI por versión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 006b511656f0150f652c44896d7297fe20279d82
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 59fb0033dc5d6fcfb63e7b5f7790fa39b6967284d7c44013d29245532b018841
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002783"
 ---
 # <a name="tapi-elements-by-version"></a>Elementos TAPI por versión
 
-Las tablas siguientes son una lista alfabética de referencia rápida de las funciones y estructuras tapi, junto con las versiones de TAPI asociadas a cada elemento.
+Las tablas siguientes son una lista alfabética de referencia rápida de las funciones y estructuras de TAPI, junto con las versiones de TAPI asociadas a cada elemento.
 
 | Función TAPI                                                     | Uso con versiones tapi |
 |--------------------------------------------------------------------|--------------------------|
@@ -149,7 +149,7 @@ Las tablas siguientes son una lista alfabética de referencia rápida de las fun
 | [**phoneInitializeEx**](/windows/desktop/api/Tapi/nf-tapi-phoneinitializeexa) | 2.0, 2.1, 2.2 |
 | [**phoneNegotiateAPIVersion**](/windows/desktop/api/Tapi/nf-tapi-phonenegotiateapiversion) | 1.3, 1.4, 2.0, 2.1, 2.2 |
 | [**phoneNegotiateExtVersion**](/windows/desktop/api/Tapi/nf-tapi-phonenegotiateextversion) | 1.3, 1.4, 2.0, 2.1, 2.2 |
-| [**phoneAbrir**](/windows/desktop/api/Tapi/nf-tapi-phoneopen) | 1.3, 1.4, 2.0, 2.1, 2.2 |
+| [**phoneOpen**](/windows/desktop/api/Tapi/nf-tapi-phoneopen) | 1.3, 1.4, 2.0, 2.1, 2.2 |
 | [**phoneSetButtonInfo**](/windows/desktop/api/Tapi/nf-tapi-phonesetbuttoninfo) | 1.3, 1.4, 2.0, 2.1, 2.2 |
 | [**phoneSetData**](/windows/desktop/api/Tapi/nf-tapi-phonesetdata) | 1.3, 1.4, 2.0, 2.1, 2.2 |
 | [**phoneSetDisplay**](/windows/desktop/api/Tapi/nf-tapi-phonesetdisplay) | 1.3, 1.4, 2.0, 2.1, 2.2 |

@@ -2,7 +2,7 @@
 description: Establece los parámetros del recurso compartido.
 ms.assetid: 592d0fa6-c865-4f70-89c3-b58204a8c5a6
 ms.tgt_platform: multiple
-title: Método SetShareInfo de la clase Win32_ClusterShare
+title: Método SetShareInfo de la Win32_ClusterShare clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: bda6fe36d1168045ea9f8d331ff334920ed1dd19
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 07245e97e091f607d142de57c00109d3671bd81b5f34b9062681229090ff6b50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119439405"
 ---
-# <a name="setshareinfo-method-of-the-win32_clustershare-class"></a>Método SetShareInfo de la \_ clase ClusterShare de Win32
+# <a name="setshareinfo-method-of-the-win32_clustershare-class"></a>Método SetShareInfo de la clase ClusterShare de Win32 \_
 
 Establece los parámetros del recurso compartido.
 
@@ -45,21 +45,21 @@ uint32 SetShareInfo(
 *MaximumAllowed* \[ en, opcional\]
 </dt> <dd>
 
-Límite en el número máximo de usuarios a los que se les permite usar este recurso al mismo tiempo.
+Limite el número máximo de usuarios que pueden usar este recurso simultáneamente.
 
 </dd> <dt>
 
-*Descripción* \[ de en, opcional\]
+*Descripción* \[ en, opcional\]
 </dt> <dd>
 
 Describe el recurso que se comparte.
 
 </dd> <dt>
 
-*Acceso a* \[ en, opcional\]
+*Acceso* \[ en, opcional\]
 </dt> <dd>
 
-Descriptor de seguridad para permisos de nivel de usuario. Un descriptor de seguridad contiene información sobre el permiso, el propietario y las capacidades de acceso del recurso. Para obtener más información, [**vea \_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor).
+Descriptor de seguridad para permisos de nivel de usuario. Un descriptor de seguridad contiene información sobre las funcionalidades de permiso, propietario y acceso del recurso. Para obtener más información, [**vea Seguridad de Win32Descriptor. \_**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
 
 </dd> </dl>
 
@@ -69,10 +69,10 @@ Descriptor de seguridad para permisos de nivel de usuario. Un descriptor de segu
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                    |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                       |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>Cimwin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -81,7 +81,7 @@ Descriptor de seguridad para permisos de nivel de usuario. Un descriptor de segu
 
 <dl> <dt>
 
-[**Win32 \_ ClusterShare**](win32-clustershare.md)
+[**ClusterShare de Win32 \_**](win32-clustershare.md)
 </dt> </dl>
 
  

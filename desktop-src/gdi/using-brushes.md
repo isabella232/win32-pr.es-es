@@ -1,27 +1,27 @@
 ---
-description: Puede usar un pincel para pintar el interior de prácticamente cualquier forma mediante una función de la interfaz de dispositivo gráfico (GDI).
+description: Puede usar un pincel para pintar el interior de prácticamente cualquier forma mediante una función de interfaz de dispositivo gráfico (GDI).
 ms.assetid: 64cd6e82-7a0d-4b5e-b491-450f37eea43a
 title: Uso de pinceles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b65ad4b14ba445642f224b0002eb1e7517c1008b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c42e09dc5731ceba7961dfd66b296df531897f2915cff53ccdacf1b5b5740160
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104545118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119037503"
 ---
 # <a name="using-brushes"></a>Uso de pinceles
 
-Puede usar un pincel para pintar el interior de prácticamente cualquier forma mediante una función de la interfaz de dispositivo gráfico (GDI). Esto incluye los interiores de rectángulos, elipses, polígonos y rutas de acceso. En función de los requisitos de la aplicación, puede usar un pincel sólido de un color especificado, un pincel de bolsa, un pincel de trama o un pincel de trama.
+Puede usar un pincel para pintar el interior de prácticamente cualquier forma mediante una función de interfaz de dispositivo gráfico (GDI). Esto incluye los interiores de rectángulos, elipses, polígonos y trazados. En función de los requisitos de la aplicación, puede usar un pincel sólido de un color especificado, un pincel de existencias, un pincel de sombreado o un pincel de patrón.
 
-Esta sección contiene ejemplos de código que muestran la creación de un cuadro de diálogo de pincel personalizado. El cuadro de diálogo contiene una cuadrícula que representa el mapa de bits que el sistema utiliza como pincel. Un usuario puede utilizar esta cuadrícula para crear un mapa de bits de pincel de patrón y, a continuación, ver el patrón personalizado haciendo clic en el botón **patrón de prueba** .
+Esta sección contiene ejemplos de código que muestran la creación de un cuadro de diálogo de pincel personalizado. El cuadro de diálogo contiene una cuadrícula que representa el mapa de bits que el sistema usa como pincel. Un usuario puede usar esta cuadrícula para crear un mapa de bits de pincel de patrón y, a continuación, ver el patrón personalizado haciendo clic en el **botón Patrón de** prueba.
 
-En la ilustración siguiente se muestra un patrón creado mediante el cuadro de diálogo **pincel personalizado** .
+En la ilustración siguiente se muestra un patrón creado mediante el cuadro **de diálogo Pincel** personalizado .
 
-![captura de pantalla del cuadro de diálogo pincel personalizado](images/custbrush.png)
+![captura de pantalla del cuadro de diálogo de pincel personalizado](images/custbrush.png)
 
-Para mostrar un cuadro de diálogo, primero debe crear una plantilla de cuadro de diálogo. La siguiente plantilla de cuadro de diálogo define el cuadro de diálogo **pincel personalizado** .
+Para mostrar un cuadro de diálogo, primero debe crear una plantilla de cuadro de diálogo. La siguiente plantilla de cuadro de diálogo define el **cuadro de diálogo Pincel** personalizado.
 
 
 ```C++
@@ -42,9 +42,9 @@ END
 
 
 
-El cuadro de diálogo **pincel personalizado** contiene cinco controles: una ventana de cuadrícula de mapa de bits, una ventana de visualización de patrones y tres botones de control, con la etiqueta **modelo de prueba**, **Aceptar** y **Cancelar**. El botón de preinstalación del **patrón de prueba** permite al usuario ver el patrón. La plantilla de cuadro de diálogo especifica las dimensiones generales de la ventana de cuadro de diálogo, asigna un valor a cada control, especifica la ubicación de cada control, etc. Para obtener más información, consulte [cuadros de diálogo](../dlgbox/dialog-boxes.md).
+El **cuadro de diálogo** Pincel personalizado contiene cinco controles: una ventana de cuadrícula de mapa de bits, una ventana de visualización de patrones y tres botones de inserción, con la etiqueta **Patrón** de prueba **,** Aceptar y **Cancelar**. El **botón de inserción** Patrón de prueba permite al usuario ver el patrón. La plantilla de cuadro de diálogo especifica las dimensiones generales de la ventana del cuadro de diálogo, asigna un valor a cada control, especifica la ubicación de cada control, etc. Para obtener más información, vea [Cuadros de diálogo](../dlgbox/dialog-boxes.md).
 
-Los valores de control de la plantilla de cuadro de diálogo son constantes que se han definido como se indica a continuación en el archivo de encabezado de la aplicación.
+Los valores de control de la plantilla de cuadro de diálogo son constantes que se han definido como se muestra a continuación en el archivo de encabezado de la aplicación.
 
 
 ```C++
@@ -57,7 +57,7 @@ Los valores de control de la plantilla de cuadro de diálogo son constantes que 
 
 
 
-Después de crear una plantilla de cuadro de diálogo e incluirla en el archivo de definición de recursos de la aplicación, debe escribir un procedimiento de diálogo. Este procedimiento procesa los mensajes que el sistema envía al cuadro de diálogo. En el siguiente fragmento del código fuente de una aplicación se muestra el procedimiento de cuadro de diálogo para el cuadro de diálogo **pincel personalizado** y las dos funciones definidas por la aplicación a las que llama.
+Después de crear una plantilla de cuadro de diálogo e incluirla en el archivo de definición de recursos de la aplicación, debe escribir un procedimiento de diálogo. Este procedimiento procesa los mensajes que el sistema envía al cuadro de diálogo. El siguiente extracto del código fuente de una aplicación muestra el procedimiento de cuadro de diálogo para el cuadro de diálogo **Pincel** personalizado y las dos funciones definidas por la aplicación a las que llama.
 
 
 ```C++
@@ -291,26 +291,26 @@ DWORD RetrieveWidth(LPTSTR cArray, int iLength)
 
 
 
-El procedimiento de cuadro de diálogo para el cuadro de diálogo **pincel personalizado** procesa cuatro mensajes, tal y como se describe en la tabla siguiente.
+El procedimiento de cuadro de diálogo para el **cuadro de diálogo Pincel** personalizado procesa cuatro mensajes, como se describe en la tabla siguiente.
 
 
 
 | Message                                          | Acción                                                                                                                                                                                                                                                                                                     |
 |--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**INITDIALOG de WM \_**](../dlgbox/wm-initdialog.md)   | Recupera un identificador de ventana y las dimensiones de los controles de la ventana de cuadrícula y del pincel de patrón, calcula las dimensiones de una sola celda en el control de ventana de cuadrícula e inicializa una matriz de coordenadas de celda de cuadrícula.                                                                                           |
-| [**pintura de WM \_**](wm-paint.md)                    | Dibuja el patrón de cuadrícula en el control de ventana de cuadrícula.                                                                                                                                                                                                                                                         |
-| [**LBUTTONDOWN de WM \_**](../inputdev/wm-lbuttondown.md) | Determina si el cursor se encuentra dentro del control de ventana de cuadrícula cuando el usuario presiona el botón primario del mouse. Si es así, el procedimiento de cuadro de diálogo invierte la celda de cuadrícula adecuada y registra el estado de esa celda en una matriz de bits que se usa para crear el mapa de bits para el pincel personalizado.              |
-| [**comando de WM \_**](../menurc/wm-command.md)         | Procesa la entrada para los tres controles de botón de control. Si el usuario hace clic en el botón **patrón de prueba** , el procedimiento del cuadro de diálogo pinta el control patrón de prueba con el nuevo patrón de pincel personalizado. Si el usuario hace clic en el botón **Aceptar** o **Cancelar** , el procedimiento del cuadro de diálogo realiza acciones según corresponda. |
+| [**WM \_ INITDIALOG**](../dlgbox/wm-initdialog.md)   | Recupera un identificador de ventana y dimensiones para los controles grid-window y pattern-brush, calcula las dimensiones de una sola celda en el control de ventana de cuadrícula e inicializa una matriz de coordenadas de celda de cuadrícula.                                                                                           |
+| [**WM \_ PAINT**](wm-paint.md)                    | Dibuja el patrón de cuadrícula en el control de ventana de cuadrícula.                                                                                                                                                                                                                                                         |
+| [**WM \_ LBUTTONDOWN**](../inputdev/wm-lbuttondown.md) | Determina si el cursor está dentro del control de ventana de cuadrícula cuando el usuario presiona el botón izquierdo del mouse. Si es así, el procedimiento del cuadro de diálogo invierte la celda de cuadrícula adecuada y registra el estado de esa celda en una matriz de bits que se usa para crear el mapa de bits para el pincel personalizado.              |
+| [**COMANDO \_ WM**](../menurc/wm-command.md)         | Procesa la entrada de los tres controles de botón de inserción. Si el usuario hace clic en el botón **Patrón** de prueba, el procedimiento del cuadro de diálogo pinta el control Patrón de prueba con el nuevo patrón de pincel personalizado. Si el usuario hace clic en los **botones Aceptar** **o Cancelar,** el procedimiento del cuadro de diálogo realiza acciones en consecuencia. |
 
 
 
  
 
-Para obtener más información acerca de los mensajes y el procesamiento de mensajes, consulte [mensajes y colas](../winmsg/messages-and-message-queues.md)de mensajes.
+Para obtener más información sobre los mensajes y el procesamiento de mensajes, vea [Mensajes y colas de mensajes.](../winmsg/messages-and-message-queues.md)
 
-Después de escribir el procedimiento del cuadro de diálogo, incluya la definición de función para el procedimiento en el archivo de encabezado de la aplicación y, a continuación, llame al procedimiento del cuadro de diálogo en el punto adecuado de la aplicación.
+Después de escribir el procedimiento del cuadro de diálogo, incluya la definición de función del procedimiento en el archivo de encabezado de la aplicación y, a continuación, llame al procedimiento del cuadro de diálogo en el punto adecuado de la aplicación.
 
-En el siguiente fragmento del archivo de encabezado de la aplicación se muestra la definición de función para el procedimiento de cuadro de diálogo y las dos funciones a las que llama.
+El siguiente extracto del archivo de encabezado de la aplicación muestra la definición de función para el procedimiento del cuadro de diálogo y las dos funciones a las que llama.
 
 
 ```C++
@@ -321,7 +321,7 @@ DWORD RetrieveWidth(LPTSTR, int);
 
 
 
-Por último, el código siguiente muestra cómo se llama al procedimiento de cuadro de diálogo desde el archivo de código fuente de la aplicación.
+Por último, el código siguiente muestra cómo se llama al procedimiento del cuadro de diálogo desde el archivo de código fuente de la aplicación.
 
 
 ```C++

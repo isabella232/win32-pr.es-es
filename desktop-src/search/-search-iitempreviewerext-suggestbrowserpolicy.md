@@ -1,5 +1,5 @@
 ---
-description: Sugiere la directiva de seguridad que se va a aplicar al explorador.
+description: Sugiere que la directiva de seguridad se aplique al explorador.
 ms.assetid: 73541611-2024-4c33-ab03-e3204244c46c
 title: IItemPreviewerExt::SuggestBrowserPolicy (método)
 ms.topic: reference
@@ -21,7 +21,7 @@ ms.locfileid: "118969764"
 ---
 # <a name="iitempreviewerextsuggestbrowserpolicy-method"></a>IItemPreviewerExt::SuggestBrowserPolicy (método)
 
-Sugiere la directiva de seguridad que se va a aplicar al explorador.
+Sugiere que la directiva de seguridad se aplique al explorador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ HRESULT SuggestBrowserPolicy(
 
 Tipo: **DWORD**
 
-Identificador de contexto de la operación. Invalide el valor predeterminado de *dwContext* para establecer el identificador de contexto en un valor de su elección.
+Identificador de contexto de la operación. Invalide el valor predeterminado de *dwContext* para establecer el identificador de contexto en el valor que elija.
 
 </dd> <dt>
 
@@ -67,23 +67,23 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 La [**interfaz IItemPreviewerExt**](-search-iitempreviewerext.md) solo se admite en Windows XP y Windows Server 2003 y ya no se debe usar.
 
-Para obtener una vista previa de los datos adjuntos con un controlador de protocolo de terceros en equipos que ejecutan Windows XP o Windows Server 2003, puede ser necesario usar la interfaz [**IItemPreviewerExt**](-search-iitempreviewerext.md) y las siguientes API: las interfaces [**ISearchProtocolUI,**](-search-isearchprotocolui.md) [**IItemPropertyBag**](iitempropertybag.md) e [**ISearchItem,**](-search-isearchitem.md) la estructura [**LINKINFO**](-search-linkinfo.md) y la [**enumeración LINKTYPE.**](-search-linktype.md)
+Para obtener una vista previa de los datos adjuntos con un controlador de protocolo de terceros en equipos que ejecutan Windows XP o Windows Server 2003, puede que sea necesario usar la interfaz [**IItemPreviewerExt**](-search-iitempreviewerext.md) y las siguientes API: las interfaces [**ISearchProtocolUI,**](-search-isearchprotocolui.md) [**IItemPropertyBag**](iitempropertybag.md) e [**ISearchItem,**](-search-isearchitem.md) la estructura [**LINKINFO**](-search-linkinfo.md) y la enumeración [**LINKTYPE.**](-search-linktype.md)
 
-Se recomienda encarecidamente usar la marca **\_ \_ BROWSERPOLICY UNTRUSTED CONTENT** para deshabilitar cualquier posibilidad de que la versión preliminar pueda ejecutar script o ActiveX. El **método IItemPreviewerExt::SuggestBrowserPolicy** puede devolver información sobre si el elemento en vista previa es de confianza o no. Esto permitirá que el control de tridente del elemento de vista previa ejecute el script e incluso ActiveX controles. Dado que el programa de vista previa suele usar archivos temporales para generar la versión preliminar, esto puede dar lugar a una ejecución inesperada de código y script en la zona Equipo local.
+Se recomienda encarecidamente usar la marca **BROWSERPOLICY \_ UNTRUSTED \_ CONTENT** para deshabilitar cualquier posibilidad de que la versión preliminar pueda ejecutar script o ActiveX. El **método IItemPreviewerExt::SuggestBrowserPolicy** puede devolver información sobre si el elemento que se está visualizando es de confianza o no. Esto permitirá que el control tridente del vista previa ejecute el script e incluso ActiveX controles. Dado que el programa de vista previa suele usar archivos temporales para generar la vista previa, esto puede dar lugar a una ejecución inesperada de código y script en la zona Equipo local.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/> |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 | Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 3.0<br/>          |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

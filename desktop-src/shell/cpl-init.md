@@ -1,19 +1,19 @@
 ---
-description: Se envía a la función CPlApplet de una aplicación del panel de control para solicitarle que realice una inicialización global, especialmente la asignación de memoria.
+description: Se envía a la función CPlApplet de una Panel de control aplicación para solicitarle que realice la inicialización global, especialmente la asignación de memoria.
 ms.assetid: 0e7e9b14-9f44-496e-a518-5d3ae92868c5
-title: Mensaje de CPL_INIT (CPL. h)
+title: CPL_INIT mensaje (Cpl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f5206d773a7a0b1786b8c95104bbcf71561d120
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8be6acdf58822e6f10f35880a97a7b5bbb9ce0b7bbbf7556b4c18c3f7ad96f72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119456375"
 ---
-# <a name="cpl_init-message"></a>CPL \_ mensaje init
+# <a name="cpl_init-message"></a>Mensaje \_ INIT de CPL
 
-Se envía a la función [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) de una aplicación del panel de control para solicitarle que realice una inicialización global, especialmente la asignación de memoria.
+Se envía a la [**función CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) de una Panel de control aplicación para solicitarle que realice la inicialización global, especialmente la asignación de memoria.
 
 
 ```C++
@@ -47,15 +47,15 @@ Se envía a la función [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_pro
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la inicialización se realiza correctamente, la función [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) debe devolver un valor distinto de cero. De lo contrario, debe devolver cero.
+Si la inicialización se realiza correctamente, [**la función CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) debe devolver un valor distinto de cero. De lo contrario, debería devolver cero.
 
-Si [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) devuelve cero, la aplicación de control finaliza la comunicación y libera el archivo DLL que contiene la aplicación del panel de control.
+Si [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) devuelve cero, la aplicación de control finaliza la comunicación y libera el archivo DLL que contiene Panel de control aplicación.
 
 ## <a name="remarks"></a>Observaciones
 
-Dado que esta es la única manera en que una aplicación del panel de control puede indicar una condición de error, la aplicación debe asignar memoria en respuesta a este mensaje.
+Dado que esta es la única manera en que una Panel de control puede indicar una condición de error, la aplicación debe asignar memoria en respuesta a este mensaje.
 
-Este mensaje se envía inmediatamente después de que se cargue el archivo DLL que contiene la aplicación.
+Este mensaje se envía inmediatamente después de cargar el archivo DLL que contiene la aplicación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,9 +63,9 @@ Este mensaje se envía inmediatamente después de que se cargue el archivo DLL q
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                      |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                      |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>CPL. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Cpl.h</dt> </dl> |
 
 
 

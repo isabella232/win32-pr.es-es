@@ -4,12 +4,12 @@ ms.assetid: b3951c03-e869-42ae-82d3-2616861ce361
 title: System.Document. HiddenSlideCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1e20a168e7ae37f3a390b73d0f539c663511493
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 691abf62a8fa974f8f660747df62f98b0c6096de480bef936106a12d122064bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119445255"
 ---
 # <a name="systemdocumenthiddenslidecount"></a>System.Document. HiddenSlideCount
 
@@ -29,7 +29,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

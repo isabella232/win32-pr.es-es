@@ -1,23 +1,23 @@
 ---
-description: 'El método IDirect3DDevice9:: SetStreamSource enlaza un búfer de vértice a un flujo de datos de dispositivo, creando una asociación entre los datos de vértice y uno de varios puertos de flujo de datos que alimentan las funciones de procesamiento primitiva.'
+description: El método IDirect3DDevice9::SetStreamSource enlaza un búfer de vértices a un flujo de datos de dispositivo, lo que crea una asociación entre los datos del vértice y uno de los varios puertos de flujo de datos que alimentan las funciones de procesamiento primitivo.
 ms.assetid: ef317537-3095-435d-b0f2-83cb3b385da2
 title: Establecer el origen de la secuencia (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76d0c296b79d258be6eee2d683979081673d5d04
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 91bd760b23204de2c6ccd313b164ac7536c7db2d3e2da26d7e40b7d98daa60a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044243"
 ---
 # <a name="setting-the-stream-source-direct3d-9"></a>Establecer el origen de la secuencia (Direct3D 9)
 
-El método [**IDirect3DDevice9:: SetStreamSource**](/windows/desktop/api) enlaza un búfer de vértice a un flujo de datos de dispositivo, creando una asociación entre los datos de vértice y uno de varios puertos de flujo de datos que alimentan las funciones de procesamiento primitiva. Las referencias reales a los datos de la secuencia no se producen hasta que se llama a un método de dibujo, como [**IDirect3DDevice9::D rawprimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive).
+El [**método IDirect3DDevice9::SetStreamSource**](/windows/desktop/api) enlaza un búfer de vértices a un flujo de datos de dispositivo, lo que crea una asociación entre los datos del vértice y uno de los varios puertos de flujo de datos que alimentan las funciones de procesamiento primitivo. Las referencias reales a los datos de flujo no se producen hasta que se llama a un método de dibujo, como [**IDirect3DDevice9::D rawPrimitive.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive)
 
-Un flujo se define como una matriz uniforme de datos de componentes, donde cada componente consta de uno o varios elementos que representan una sola entidad, como posición, normal, color, etc. El parámetro STRIDE especifica el tamaño del componente, en bytes.
+Una secuencia se define como una matriz uniforme de datos de componentes, donde cada componente consta de uno o varios elementos que representan una sola entidad, como la posición, la normal, el color, etc. El parámetro Stride especifica el tamaño del componente, en bytes.
 
-El código siguiente muestra cómo establecer el origen de la secuencia y dibujar su contenido. La \_ variable g pVB es un LPDIRECT3DVERTEXBUFFER9 que contiene datos de vértice.
+En el código siguiente se muestra cómo establecer el origen de la secuencia y dibujar su contenido. La variable \_ g pVB es un LPDIRECT3DVERTEXBUFFER9 que contiene datos de vértices.
 
 
 ```
@@ -38,7 +38,7 @@ if( SUCCEEDED( g_pd3dDevice->BeginScene() ) )
 
 
 
-Para obtener más información sobre este código, vea el tutorial siguiente: [tutorial 3: usar matrices](https://msdn.microsoft.com/library/Ee418892(v=VS.85).aspx)
+Para obtener más información sobre este código, vea el siguiente tutorial: [Tutorial 3: Uso de matrices](https://msdn.microsoft.com/library/Ee418892(v=VS.85).aspx)
 
 ## <a name="related-topics"></a>Temas relacionados
 

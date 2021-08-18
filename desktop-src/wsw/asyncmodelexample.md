@@ -1,31 +1,31 @@
 ---
 title: Ejemplo de función asincrónica
-description: Este ejemplo muestra cómo implementar y llamar a funciones asincrónicas.
+description: En este ejemplo se muestra cómo implementar y llamar a funciones asincrónicas.
 ms.assetid: e71bd231-c69c-409f-874c-a0798b844ee6
 keywords:
-- Servicios Web de AsyncModelExample para Windows
+- Servicios web AsyncModelExample para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbfc0963ef1f62a5458f9353245e96959be2f32d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3c2c5470596bf34a2d0d0e96311445de262f68c13f2684a26bac7f773cd2959f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119444765"
 ---
 # <a name="asynchronous-function-example"></a>Ejemplo de función asincrónica
 
-Este ejemplo muestra cómo implementar y llamar a funciones asincrónicas.
+En este ejemplo se muestra cómo implementar y llamar a funciones asincrónicas.
 
 El ejemplo consta de las siguientes partes:
 
--   La función Add, que agregará dos números de forma sincrónica o asincrónica. Crea un subproceso como detalle de implementación para el caso asincrónico.
--   La función CallAddSync invoca las funciones Add sincrónicamente.
--   La función CallAddAsync invoca las funciones de adición de forma asincrónica.
+-   Función Add que agregará dos números de forma sincrónica o asincrónica. Crea un subproceso como un detalle de implementación para el caso asincrónico.
+-   La función CallAddSync invoca las funciones Add de forma sincrónica.
+-   La función CallAddAsync invoca las funciones Add de forma asincrónica.
 
-## <a name="asyncmodelcpp"></a>AsyncModel. cpp
+## <a name="asyncmodelcpp"></a>AsyncModel.cpp
 
 
 ```C++
@@ -383,9 +383,9 @@ int __cdecl wmain(int argc, __in_ecount(argc) wchar_t **argv)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

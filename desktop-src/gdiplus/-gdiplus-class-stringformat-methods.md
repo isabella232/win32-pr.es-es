@@ -1,21 +1,21 @@
 ---
-description: En este tema se enumeran los métodos de la clase StringFormat. Para obtener una lista de clases completa, vea StringFormat (clase).
+description: En este tema se enumeran los métodos de la clase StringFormat. Para obtener una lista de clases completa, vea StringFormat (Clase).
 ms.assetid: 5a24308a-b899-469b-b9e2-703f1f171e63
-title: StringFormat (métodos)
+title: Métodos StringFormat
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 725c30024b92495e03ce35a7bf0ef3165edd55b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2265bde07f361883e5a34cc68df32f6f117039b1c23f8919e2ead38dfeadce34
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120115245"
 ---
-# <a name="stringformat-methods"></a>StringFormat (métodos)
+# <a name="stringformat-methods"></a>Métodos StringFormat
 
-En este tema se enumeran los métodos de la clase [**StringFormat**](/windows/desktop/api/gdiplusstringformat/nl-gdiplusstringformat-stringformat) . Para obtener una lista de clases completa, vea **StringFormat (clase**).
+En este tema se enumeran los métodos de [**la clase StringFormat.**](/windows/desktop/api/gdiplusstringformat/nl-gdiplusstringformat-stringformat) Para obtener una lista de clases completa, vea **StringFormat (Clase).**
 
--   [**Clonar**](/windows/desktop/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-clone)
+-   [**Clon**](/windows/desktop/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-clone)
 -   [**GenericDefault**](/windows/desktop/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-genericdefault)
 -   [**GenericTypographic**](/windows/desktop/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-generictypographic)
 -   [**GetAlignment**](/windows/desktop/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-getalignment)

@@ -1,7 +1,7 @@
 ---
 description: El método AddBefore inserta una lista antes de la posición especificada.
 ms.assetid: a4c0dbec-64a0-445b-95e5-000603cc0264
-title: Método CBaseList. AddBefore (Wxlist. h)
+title: Método CBaseList.AddBefore (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6a3c25b2dd545b3e6698404bf00f82d1086bfb81
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2b4f85536b6a9372f164f596f96758a503096dbb0a5e5ed55adab42bc406b053
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016973"
 ---
-# <a name="cbaselistaddbefore-method"></a>CBaseList. AddBefore, método
+# <a name="cbaselistaddbefore-method"></a>Método CBaseList.AddBefore
 
 El `AddBefore` método inserta una lista antes de la posición especificada.
 
@@ -50,20 +50,20 @@ Posición antes de la que se va a insertar la lista.
 
 </dd> <dt>
 
-*pList* 
+*Plist* 
 </dt> <dd>
 
-Puntero a la lista que se va a insertar.
+Puntero a la lista que se insertará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true si es** correcto. De lo contrario, devuelve **false**.
+Devuelve **TRUE si** se realiza correctamente. De lo contrario, **devuelve FALSE**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los indicadores de posición existentes, incluido el especificado en el parámetro *pos* , siguen siendo válidos. Si se produce un error en el método, es posible que se hayan agregado algunos elementos.
+Los indicadores de posición existentes, incluido el especificado en el parámetro *pos,* siguen siendo válidos. Si se produce un error en el método , es posible que se hayan agregado algunos de los elementos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Los indicadores de posición existentes, incluido el especificado en el parámet
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Los indicadores de posición existentes, incluido el especificado en el parámet
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

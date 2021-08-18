@@ -5,7 +5,7 @@ ms.assetid: 4d96a949-96f6-4208-b6a0-903122ca7ae7
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD del atributo MS-TS-Property02
-- msTSProperty02 esquema de AD de atributos
+- Esquema de AD del atributo msTSProperty02
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55e2c5658fcb8a6bd042723c87704227f131c625
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4fe3cf124ae363ab23268370ae9bc59f73c051ead9c5305cef2bd04b76358be4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105660041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507885"
 ---
 # <a name="ms-ts-property02-attribute"></a>Atributo MS-TS-Property02
 
@@ -30,13 +30,13 @@ Reservado para uso futuro.
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | MS-TS-Property02                            |
-| Nombre para mostrar de LDAP | msTSProperty02                              |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | msTSProperty02                              |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1992                     |
-| System-ID-GUID    | 3586f6ac-51b7-4978-ab42-f936463198e7        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 3586f6ac-51b7-4978-ab42-f936463198e7        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,18 +52,18 @@ Reservado para uso futuro.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                          |
+| Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
-| System-Only            | False                                                                       |
-| Tiene un único valor       | False                                                                       |
-| Está indexado             | True                                                                        |
-| En el catálogo global      | False                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                |
+| System-Only            | Falso                                                                       |
+| Es de un solo valor       | Falso                                                                       |
+| Está indexado             | Verdadero                                                                        |
+| En el catálogo global      | Falso                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | 0                                                                           |
 | Range-Upper            | 32767                                                                       |
 | Search-Flags           | 0x00000001                                                                  |
 | System-Flags           | 0x00000010                                                                  |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Reservado para uso futuro.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                          |
+| Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
-| System-Only            | False                                                                       |
-| Tiene un único valor       | False                                                                       |
-| Está indexado             | True                                                                        |
-| En el catálogo global      | False                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                |
+| System-Only            | Falso                                                                       |
+| Es de un solo valor       | Falso                                                                       |
+| Está indexado             | Verdadero                                                                        |
+| En el catálogo global      | Falso                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | 0                                                                           |
 | Range-Upper            | 32767                                                                       |
 | Search-Flags           | 0x00000001                                                                  |
 | System-Flags           | 0x00000010                                                                  |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -94,13 +94,13 @@ Reservado para uso futuro.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                          |
+| Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
-| System-Only            | False                                                                       |
-| Tiene un único valor       | False                                                                       |
-| Está indexado             | True                                                                        |
-| En el catálogo global      | False                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                |
+| System-Only            | Falso                                                                       |
+| Es de un solo valor       | Falso                                                                       |
+| Está indexado             | Verdadero                                                                        |
+| En el catálogo global      | Falso                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | 0                                                                           |
 | Range-Upper            | 32767                                                                       |
 | Search-Flags           | 0x00000001                                                                  |

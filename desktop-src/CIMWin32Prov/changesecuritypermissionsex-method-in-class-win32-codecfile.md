@@ -2,7 +2,7 @@
 description: Cambia los permisos de seguridad para el archivo de códec especificado en la ruta de acceso del objeto (este método es una versión extendida del método ChangeSecurityPermissions).
 ms.assetid: 3eac4ae1-3c0e-4e81-8b23-9ad8698f723c
 ms.tgt_platform: multiple
-title: Método ChangeSecurityPermissionsEx de la clase Win32_CodecFile
+title: Método ChangeSecurityPermissionsEx de la Win32_CodecFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 549c55a5066bdaba4699ec76ed3b7be23eb28b96
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3a025bd9be527237b16022d6544f024e6aa10d294637b16de1df31e43cfa830b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323085"
 ---
-# <a name="changesecuritypermissionsex-method-of-the-win32_codecfile-class"></a>Método ChangeSecurityPermissionsEx de la \_ clase CodecFile de Win32
+# <a name="changesecuritypermissionsex-method-of-the-win32_codecfile-class"></a>Método ChangeSecurityPermissionsEx de la clase CodecFile win32 \_
 
-El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ChangeSecurityPermissionsEx** cambia los permisos de seguridad para el archivo de códec especificado en la ruta de acceso del objeto (este método es una versión extendida del método [**ChangeSecurityPermissions**](changesecuritypermissions-method-in-class-win32-directory.md) ). Si el archivo lógico es un directorio, este método es recursivo y cambia los permisos de seguridad de todos los archivos y subdirectorios que contiene el directorio.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ChangeSecurityPermissionsEx** cambia los permisos de seguridad para el archivo de códec especificado en la ruta de acceso del objeto (este método es una versión extendida del [**método ChangeSecurityPermissions).**](changesecuritypermissions-method-in-class-win32-directory.md) Si el archivo lógico es un directorio, este método es recursivo y cambia los permisos de seguridad de todos los archivos y subdirectorios que contiene el directorio.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,17 +46,17 @@ uint32 ChangeSecurityPermissionsEx(
 
 <dl> <dt>
 
-*SecurityDescriptor* \[ de\]
+*SecurityDescriptor* \[ En\]
 </dt> <dd>
 
-Expresión que se resuelve como una instancia de [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor). Este descriptor contiene nuevos permisos de seguridad para la instancia de [**Win32 \_ CodecFile**](win32-codecfile.md).
+Expresión que se resuelve en una instancia de [**\_ SecurityDescriptor de Win32.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) Este descriptor contiene nuevos permisos de seguridad para la instancia de [**\_ CodecFile de Win32.**](win32-codecfile.md)
 
 </dd> <dt>
 
-*Opción* \[ de de\]
+*Opción* \[ En\]
 </dt> <dd>
 
-Privilegio de seguridad real que se va a modificar. Por ejemplo, para cambiar el propietario y la seguridad de la lista de control de acceso discrecional (DACL), use lo siguiente:
+Privilegio de seguridad real que se va a modificar. Por ejemplo, para cambiar la seguridad de la lista de control de acceso discrecional (DACL) y del propietario, use lo siguiente:
 
 `Option = 1 + 4`
 
@@ -68,29 +68,29 @@ O bien
 
 <span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>
 
-<span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>**Cambiar \_ \_ \_ Información de seguridad del propietario** (1 (0x1))
+<span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>**CAMBIO \_ INFORMACIÓN \_ DE \_ SEGURIDAD DEL** PROPIETARIO (1 (0x1))
 
 
 </dt> <dd>
 
-Cambiar el propietario del archivo lógico.
+Cambie el propietario del archivo lógico.
 
 </dd> <dt>
 
 <span id="CHANGE_GROUP_SECURITY_INFORMATION"></span><span id="change_group_security_information"></span>
 
-<span id="CHANGE_GROUP_SECURITY_INFORMATION"></span><span id="change_group_security_information"></span>**Cambiar \_ \_ \_ Información de seguridad de grupo** (2 (0X2))
+<span id="CHANGE_GROUP_SECURITY_INFORMATION"></span><span id="change_group_security_information"></span>**CAMBIO \_ INFORMACIÓN \_ DE \_ SEGURIDAD DE** GRUPO (2 (0x2))
 
 
 </dt> <dd>
 
-Cambiar el grupo del archivo lógico.
+Cambie el grupo del archivo lógico.
 
 </dd> <dt>
 
 <span id="CHANGE_DACL_SECURITY_INFORMATION"></span><span id="change_dacl_security_information"></span>
 
-<span id="CHANGE_DACL_SECURITY_INFORMATION"></span><span id="change_dacl_security_information"></span>**Cambiar \_ \_ \_ Información de seguridad de DACL** (4 (0x4))
+<span id="CHANGE_DACL_SECURITY_INFORMATION"></span><span id="change_dacl_security_information"></span>**CAMBIO \_ INFORMACIÓN DE \_ SEGURIDAD \_ DE DACL** (4 (0x4))
 
 
 </dt> <dd>
@@ -101,33 +101,33 @@ Cambie la lista de control de acceso discrecional (DACL) del archivo lógico.
 
 <span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>
 
-<span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>**Cambiar \_ \_ \_ Información de seguridad de SACL** (8 (0x8))
+<span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>**CAMBIO \_ INFORMACIÓN \_ DE SEGURIDAD \_ DE SACL** (8 (0x8))
 
 
 </dt> <dd>
 
-Cambie la lista de control de acceso de sistema (SACL) del archivo lógico.
+Cambie la lista de control de acceso del sistema (SACL) del archivo lógico.
 
 </dd> </dl> </dd> <dt>
 
-*StopFileName* \[ enuncia\]
+*StopFileName* \[ out\]
 </dt> <dd>
 
-Nombre del archivo o directorio en el que se produjo un error en el método **ChangeSecurityPermissionsEx** . Este parámetro es NULL cuando el método se ejecuta correctamente.
+Nombre del archivo o directorio en el que se **ha fallado el método ChangeSecurityPermissionsEx.** Este parámetro es null cuando el método se realiza correctamente.
 
 </dd> <dt>
 
 *StartFileName* \[ en, opcional\]
 </dt> <dd>
 
-Asigna un nombre al archivo o directorio secundario que se va a usar como punto de partida para **ChangeSecurityPermissionsEx**. Normalmente, el parámetro *StartFileName* es el parámetro *StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es null, la operación se realiza en el archivo o directorio especificado en la llamada [**ExecMethod**](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemservices-execmethod) .
+Denomina el archivo o directorio secundario que se usará como punto de partida para **ChangeSecurityPermissionsEx.** Normalmente, el *parámetro StartFileName* es el *parámetro StopFileName* que especifica el archivo o directorio donde se produjo un error de la llamada al método anterior. Si este parámetro es NULL, la operación se realiza en el archivo o directorio especificado en la [**llamada a ExecMethod.**](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemservices-execmethod)
 
 </dd> <dt>
 
 *Recursivo* \[ en, opcional\]
 </dt> <dd>
 
-Si **es true**, los cambios de propiedad se aplican de forma recursiva a los archivos y directorios del directorio que especifica la instancia de [**\_ LogicalFile de CIM**](cim-logicalfile.md) . En el caso de las instancias de archivo, se omite el parámetro de entrada *recursivo* .
+Si **es true**, los cambios de propiedad se aplican de forma recursiva a los archivos y directorios del directorio que especifica la instancia de [**\_ LogicalFile**](cim-logicalfile.md) de CIM. En el caso de las instancias de archivo, se omite el parámetro de entrada *recursivo.*
 
 </dd> </dl>
 
@@ -142,7 +142,7 @@ Devuelve un valor de 0 (cero) si se cambian los permisos y un número diferente 
 
 0
 
-La solicitud es correcta.
+La solicitud se realiza correctamente.
 
 </dd> <dt>
 
@@ -160,7 +160,7 @@ Acceso denegado.
 
 8
 
-Se produjo un error no especificado.
+Error no especificado.
 
 </dd> <dt>
 
@@ -196,7 +196,7 @@ El sistema de archivos no es un sistema de archivos NTFS.
 
 12
 
-La plataforma no es Windows NT ni Windows 2000.
+La plataforma no se Windows NT ni Windows 2000.
 
 </dd> <dt>
 
@@ -236,7 +236,7 @@ El archivo de inicio especificado no es válido.
 
 </dd> <dt>
 
-**Privilegio no mantenido**
+**Privilegios no mantenidos**
 </dt> <dd>
 
 17
@@ -262,8 +262,8 @@ Un parámetro especificado no es válido.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -275,7 +275,7 @@ Un parámetro especificado no es válido.
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Win32 \_ CodecFile**](win32-codecfile.md)
+[**CodecFile de Win32 \_**](win32-codecfile.md)
 </dt> </dl>
 
  

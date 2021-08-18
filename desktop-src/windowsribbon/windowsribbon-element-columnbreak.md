@@ -3,7 +3,7 @@ title: Elemento ColumnBreak
 description: Representa un separador vertical (visible u oculto) en plantillas de diseño SizeDefinition personalizadas.
 ms.assetid: 5979d3e6-366b-4c47-810f-90fb8039af8d
 keywords:
-- Cinta de opciones de Windows del elemento ColumnBreak
+- Barra de opciones del Windows ColumnBreak
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b5bff1682cdf55b44092a176abd6dc7e935220a7
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: beaf97a34a062b3461cf2101cb436fb1ba131d00e8656186fd434045bdef30bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119393085"
 ---
 # <a name="columnbreak-element"></a>Elemento ColumnBreak
 
@@ -182,7 +182,7 @@ En el ejemplo siguiente se muestra el marcado básico para un **elemento ColumnB
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

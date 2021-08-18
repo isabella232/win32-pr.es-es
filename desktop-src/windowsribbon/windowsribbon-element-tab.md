@@ -1,9 +1,9 @@
 ---
 title: Tab (Elemento)
-description: Representa una pestaña de núcleo o contextual.
+description: Representa una pestaña básica o contextual.
 ms.assetid: 2e73a89c-4d31-4075-93c8-e43213a20791
 keywords:
-- Tab, elemento de la cinta de opciones de Windows
+- Cinta de opciones Windows elemento Tab
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 410326961df84f6ae62d3c43bee3e651c9533066
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 64f5bffb6a81a1efd112c3f52f5d1276f893e9cfb059a5f240a6c8c73b990c3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119441645"
 ---
 # <a name="tab-element"></a>Tab (Elemento)
 
-Representa una [pestaña de](windowsribbon-controls-tab.md) núcleo [o contextual.](windowsribbon-controls-tabgroup.md)
+Representa una [pestaña](windowsribbon-controls-tab.md) [básica o contextual.](windowsribbon-controls-tabgroup.md)
 
 ## <a name="usage"></a>Uso
 
@@ -49,7 +49,7 @@ Representa una [pestaña de](windowsribbon-controls-tab.md) núcleo [o contextua
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -58,7 +58,7 @@ Representa una [pestaña de](windowsribbon-controls-tab.md) núcleo [o contextua
 <td><strong>ApplicationModes</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Solo es válido <a href="windowsribbon-element-menugroup.md"><strong>si MenuGroup</strong></a> es el elemento primario.<br/> <br/>
+<td>Válido solo si <a href="windowsribbon-element-menugroup.md"><strong>MenuGroup</strong></a> es el elemento primario.<br/> <br/>
 <dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena que contiene una lista separada por comas de enteros entre 0 y 31.<br/> El espacio en blanco es válido y se omite.<br/> Longitud máxima: 250 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
@@ -95,21 +95,21 @@ Representa una [pestaña de](windowsribbon-controls-tab.md) núcleo [o contextua
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Necesario.
+Obligatorio.
 
 Debe producirse al menos una vez para cada [**elemento Ribbon.Tabs**](windowsribbon-element-ribbon-tabs.md) [**o TabGroup.**](windowsribbon-element-tabgroup.md)
 
 **Tab admite** los [modos de aplicación](ribbon-applicationmodes.md).
 
-Si [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) está presente para el elemento **Tab,** se requiere una entrada para cada elemento [**Group**](windowsribbon-element-group.md) y su tamaño ideal en **ScalingPolicy.IdealSizes.**
+Si [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) está presente para el elemento **Tab,** se requiere una entrada para cada elemento [**Group**](windowsribbon-element-group.md) y su tamaño ideal en **ScalingPolicy.IdealSizes**.
 
 ## <a name="examples"></a>Ejemplos
 
 En el ejemplo siguiente se muestra el marcado básico para el **elemento Tab.**
 
-En esta sección de código se muestran las **declaraciones del** comando Tab para una **pestaña** Inicio.
+En esta sección de código se muestran las **declaraciones de** comando de tabulación para una **pestaña** Inicio.
 
 
 ```XML
@@ -177,7 +177,7 @@ En esta sección de código se muestran las **declaraciones del** comando Tab pa
 
 
 
-En esta sección de código se muestran las **declaraciones de** control Tab.
+En esta sección de código se muestran las **declaraciones del** control Tab.
 
 
 ```XML

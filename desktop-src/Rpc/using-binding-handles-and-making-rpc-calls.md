@@ -1,19 +1,19 @@
 ---
 title: Usar identificadores de enlace y realizar llamadas RPC
-description: Un error común entre los programadores de RPC es el control de todas las excepciones.
+description: Un error común entre los programadores de RPC es controlar todas las excepciones.
 ms.assetid: 5b452129-4060-49f9-9400-8585fb5714a4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b285fc3030b92e2616c850bf79c73e37f0341c9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1f1350e29344d09f42417a30fa3d32729d7ddd02247b17f80bccd0ae537c6c8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010813"
 ---
 # <a name="using-binding-handles-and-making-rpc-calls"></a>Usar identificadores de enlace y realizar llamadas RPC
 
-Un error común entre los programadores de RPC es el control de todas las excepciones. Muchos programadores estructuran los identificadores de excepción como los siguientes:
+Un error común entre los programadores de RPC es controlar todas las excepciones. Muchos programadores estructuran sus identificadores de excepciones de la siguiente manera:
 
 ``` syntax
     RpcTryExcept
@@ -27,7 +27,7 @@ Un error común entre los programadores de RPC es el control de todas las excepc
     RpcEndExcept
 ```
 
-El problema con este controlador es que detecta todos los errores, incluidos los errores del programa cliente. La detección de errores en el programa cliente dificulta la depuración. La manera correcta de estructurar un controlador de excepciones es la siguiente:
+El problema con este controlador es que detecta todos los errores, incluidos los errores del programa cliente. Detectar errores en el programa cliente dificulta la depuración. La manera adecuada de estructurar un controlador de excepciones es la siguiente:
 
 ``` syntax
     RpcTryExcept
@@ -57,20 +57,20 @@ El problema con este controlador es que detecta todos los errores, incluidos los
     RpcEndExcept
 ```
 
-Este controlador de excepciones tiene la ventaja de permitir un determinado intervalo de errores a través de. Estos errores nunca serán devueltos por el servidor, ya que indican un problema del lado cliente.
+Este controlador de excepciones tiene la ventaja de dejar pasar un determinado intervalo de errores. El servidor nunca devolverá estos errores, ya que indican un problema del lado cliente.
 
-Además, se recomienda el uso de los atributos estricto de identificador de **\[** [ \_ contexto \_](/windows/desktop/Midl/strict-context-handle) **\]** y de **\[** [ \_ \_ \_ identificador de contexto estricto](/windows/desktop/Midl/type-strict-context-handle)para asegurarse de que **\]** el tiempo de ejecución de RPC crea un identificador de contexto en una interfaz que solo se puede pasar como argumento a los métodos de esa interfaz. Si lo hace, se evitarán errores de servidor que se producen cuando los identificadores de contexto se abren y pasan entre diferentes interfaces que existen dentro del mismo proceso.
+Además, se recomienda usar los atributos strict **\[** [ \_ context \_ handle](/windows/desktop/Midl/strict-context-handle) y type strict context **\]** **\[** [ \_ \_ \_ handle](/windows/desktop/Midl/type-strict-context-handle)para asegurarse de que el tiempo de ejecución de RPC crea un identificador de contexto en una interfaz que se puede pasar como argumento solo a los métodos de esa **\]** interfaz. Si lo hace, evitará los errores del servidor que se producen cuando se abren los identificadores de contexto y se pasan entre distintas interfaces que existen dentro del mismo proceso.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[\_identificador de contexto estricto \_](/windows/desktop/Midl/strict-context-handle)
+[strict \_ context \_ handle](/windows/desktop/Midl/strict-context-handle)
 </dt> <dt>
 
-[escribir \_ el \_ identificador de contexto STRICT \_](/windows/desktop/Midl/type-strict-context-handle)
+[identificador \_ de contexto estricto de \_ \_ tipo](/windows/desktop/Midl/type-strict-context-handle)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,207 +1,207 @@
 ---
-title: Servicios de Escritorio remoto estructuras de API
-description: Muestra las estructuras que se usan con Servicios de Escritorio remoto API.
+title: Servicios de Escritorio remoto de API
+description: Enumera las estructuras que se usan con Servicios de Escritorio remoto API.
 ms.assetid: 5d467241-499c-4038-8d9c-4244457e484f
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22fb8de65f7f234f85eb8071cc66743c9c26cc9b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fe3161d7c8e8b295e42930af1edcc79b7c60d83b61097b4d02661c1b11b5f1a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000105"
 ---
-# <a name="remote-desktop-services-api-structures"></a>Servicios de Escritorio remoto estructuras de API
+# <a name="remote-desktop-services-api-structures"></a>Servicios de Escritorio remoto de API
 
-Las siguientes estructuras se usan con la API de Servicios de Escritorio remoto.
+Las siguientes estructuras se usan con Servicios de Escritorio remoto API.
 
 ## <a name="in-this-section"></a>En esta sección
 
 <dl> <dt>
 
-[**DEF. de canal \_**](/windows/desktop/api/Pchannel/ns-pchannel-tagchannel_def)
+[**CHANNEL \_ DEF**](/windows/desktop/api/Pchannel/ns-pchannel-tagchannel_def)
 </dt> <dd>
 
-Contiene el nombre y las opciones de un canal virtual Servicios de Escritorio remoto.
+Contiene el nombre y las opciones de un Servicios de Escritorio remoto canal virtual.
 
 </dd> <dt>
 
-[**\_puntos de entrada de canal \_**](/windows/win32/api/cchannel/ns-cchannel-channel_entry_points)
+[**PUNTOS DE \_ ENTRADA DEL \_ CANAL**](/windows/win32/api/cchannel/ns-cchannel-channel_entry_points)
 </dt> <dd>
 
-Contiene punteros a las funciones a las que llama un archivo DLL del lado cliente para tener acceso a los canales virtuales.
+Contiene punteros a las funciones a las que llama un archivo DLL del lado cliente para acceder a los canales virtuales.
 
 </dd> <dt>
 
-[**\_encabezado de PDU de canal \_**](/windows/win32/api/pchannel/ns-pchannel-channel_pdu_header)
+[**ENCABEZADO \_ PDU DEL \_ CANAL**](/windows/win32/api/pchannel/ns-pchannel-channel_pdu_header)
 </dt> <dd>
 
-Contiene información sobre un bloque de datos que recibe el servidor de un canal virtual.
+Contiene información sobre un bloque de datos que recibe el final del servidor de un canal virtual.
 
 </dd> <dt>
 
 [**LSKeyPack**](lskeypack.md)
 </dt> <dd>
 
-Contiene información sobre un paquete de claves de licencias de Servicios de Escritorio remoto específico.
+Contiene información sobre un paquete de Servicios de Escritorio remoto de licencias específico.
 
 </dd> <dt>
 
 [**LSLicense**](lslicense.md)
 </dt> <dd>
 
-Contiene información acerca de una licencia de Servicios de Escritorio remoto específica.
+Contiene información sobre una licencia de Servicios de Escritorio remoto específica.
 
 </dd> <dt>
 
 [**WTSCLIENT**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtsclienta)
 </dt> <dd>
 
-Contiene información sobre un cliente de Conexión a Escritorio remoto (RDC).
+Contiene información sobre un cliente Conexión a Escritorio remoto (RDC).
 
 </dd> <dt>
 
 [**WTSCONFIGINFO**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtsconfiginfoa)
 </dt> <dd>
 
-Contiene información sobre una sesión de Servicios de Escritorio remoto.
+Contiene información sobre una Servicios de Escritorio remoto sesión.
 
 </dd> <dt>
 
 [**WTSINFO**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtsinfoa)
 </dt> <dd>
 
-Contiene información sobre una sesión de Servicios de Escritorio remoto.
+Contiene información sobre una Servicios de Escritorio remoto sesión.
 
 </dd> <dt>
 
 [**WTSINFOEX**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtsinfoexa)
 </dt> <dd>
 
-Contiene una Unión de [**\_ nivel WTSINFOEX**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtsinfoex_level_a) que contiene información extendida sobre una sesión de servicios de escritorio remoto.
+Contiene una [**unión WTSINFOEX \_ LEVEL**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtsinfoex_level_a) que contiene información extendida sobre una Servicios de Escritorio remoto sesión.
 
 </dd> <dt>
 
-[**WTSINFOEX \_ Level1**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtsinfoex_level1_a)
+[**WTSINFOEX \_ LEVEL1**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtsinfoex_level1_a)
 </dt> <dd>
 
-Contiene información extendida sobre una sesión de Servicios de Escritorio remoto.
+Contiene información extendida sobre una Servicios de Escritorio remoto sesión.
 
 </dd> <dt>
 
 [**WTSLISTENERCONFIG**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtslistenerconfiga)
 </dt> <dd>
 
-Contiene información sobre un agente de escucha de Servicios de Escritorio remoto.
+Contiene información sobre un agente de Servicios de Escritorio remoto agente de escucha.
 
 </dd> <dt>
 
-[**\_dirección IP de WTSSBX \_**](/windows/win32/api/tssbx/ns-tssbx-wtssbx_ip_address)
+[**DIRECCIÓN IP DE WTSSBX \_ \_**](/windows/win32/api/tssbx/ns-tssbx-wtssbx_ip_address)
 </dt> <dd>
 
-Contiene información acerca de la dirección IP de un recurso de red.
+Contiene información sobre la dirección IP de un recurso de red.
 
 </dd> <dt>
 
-[**información de conexión a la \_ máquina WTSSBX \_ \_**](/windows/win32/api/tssbx/ns-tssbx-wtssbx_machine_connect_info)
+[**INFORMACIÓN DE CONEXIÓN DE \_ LA MÁQUINA WTSSBX \_ \_**](/windows/win32/api/tssbx/ns-tssbx-wtssbx_machine_connect_info)
 </dt> <dd>
 
-Contiene información acerca de un equipo que acepta conexiones remotas.
+Contiene información sobre un equipo que acepta conexiones remotas.
 
 </dd> <dt>
 
-[**información de la \_ máquina WTSSBX \_**](/windows/win32/api/tssbx/ns-tssbx-wtssbx_machine_info)
+[**INFORMACIÓN DE LA MÁQUINA WTSSBX \_ \_**](/windows/win32/api/tssbx/ns-tssbx-wtssbx_machine_info)
 </dt> <dd>
 
-Contiene información acerca de un equipo y su estado actual.
+Contiene información sobre un equipo y su estado actual.
 
 </dd> <dt>
 
-[**\_información de sesión de WTSSBX \_**](/windows/win32/api/tssbx/ns-tssbx-wtssbx_session_info)
+[**INFORMACIÓN DE SESIÓN DE WTSSBX \_ \_**](/windows/win32/api/tssbx/ns-tssbx-wtssbx_session_info)
 </dt> <dd>
 
-Contiene información sobre las sesiones que están disponibles para el agente de Conexión a Escritorio remoto (agente de conexión a escritorio remoto).
+Contiene información sobre las sesiones que están disponibles para Conexión a Escritorio remoto Broker (Agente de conexión a Escritorio remoto).
 
 </dd> <dt>
 
-[**\_notificación WTSSESSION**](/windows/win32/api/winuser/ns-winuser-wtssession_notification)
+[**NOTIFICACIÓN \_ WTSSESSION**](/windows/win32/api/winuser/ns-winuser-wtssession_notification)
 </dt> <dd>
 
-Proporciona información sobre la notificación de cambio de sesión. Un servicio recibe esta estructura en su función [*HandlerEx*](/windows/desktop/api/winsvc/nc-winsvc-lphandler_function_ex) en respuesta a un evento de cambio de sesión.
+Proporciona información sobre la notificación de cambio de sesión. Un servicio recibe esta estructura en su [*función HandlerEx*](/windows/desktop/api/winsvc/nc-winsvc-lphandler_function_ex) en respuesta a un evento de cambio de sesión.
 
 </dd> <dt>
 
 [**WTSUSERCONFIG**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wtsuserconfiga)
 </dt> <dd>
 
-Contiene información de configuración para un usuario en un controlador de dominio o un servidor de host de sesión de Escritorio remoto (host de sesión de escritorio remoto).
+Contiene información de configuración para un usuario en un controlador de dominio o Escritorio remoto de host de sesión (host de sesión de Escritorio remoto).
 
 </dd> <dt>
 
-[**\_dirección de cliente de WTS \_**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wts_client_address)
+[**\_WTS DIRECCIÓN \_ DE CLIENTE**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wts_client_address)
 </dt> <dd>
 
-Contiene la dirección de red de cliente de una sesión de Servicios de Escritorio remoto.
+Contiene la dirección de red del cliente de una Servicios de Escritorio remoto sesión.
 
 </dd> <dt>
 
-[**\_pantalla de cliente de WTS \_**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wts_client_display)
+[**\_WTS PRESENTACIÓN \_ DEL CLIENTE**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wts_client_display)
 </dt> <dd>
 
-Contiene información acerca de la presentación de un cliente de Conexión a Escritorio remoto (RDC).
+Contiene información sobre la presentación de un cliente Conexión a Escritorio remoto (RDC).
 
 </dd> <dt>
 
-[**\_información del proceso de WTS \_**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wts_process_infoa)
+[**\_WTS INFORMACIÓN DEL \_ PROCESO**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wts_process_infoa)
 </dt> <dd>
 
-Contiene información sobre un proceso que se ejecuta en un servidor host de sesión de escritorio remoto.
+Contiene información sobre un proceso que se ejecuta en un servidor host de sesión de Escritorio remoto.
 
 </dd> <dt>
 
-[**información del proceso de WTS \_ \_ \_ ex**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wts_process_info_exa)
+[**\_WTS PROCESS \_ INFO \_ EX**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wts_process_info_exa)
 </dt> <dd>
 
-Contiene información extendida sobre un proceso que se ejecuta en un servidor host de sesión de escritorio remoto.
+Contiene información ampliada sobre un proceso que se ejecuta en un servidor host de sesión de Escritorio remoto.
 
 </dd> <dt>
 
-[**\_información del producto de WTS \_**](https://msdn.microsoft.com/library/Mt283722(v=VS.85).aspx)
+[**\_WTS INFORMACIÓN DEL \_ PRODUCTO**](https://msdn.microsoft.com/library/Mt283722(v=VS.85).aspx)
 </dt> <dd>
 
-Los detalles de la licencia de producto necesarios para conectarse a un servidor de Terminal Server.
+Detalles de la licencia de producto necesaria para conectarse a un servidor terminal.
 
 </dd> <dt>
 
-[**\_información del servidor de WTS \_**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wts_server_infoa)
+[**\_WTS SERVER \_ INFO**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wts_server_infoa)
 </dt> <dd>
 
-Contiene información acerca de un servidor de Servicios de Escritorio remoto específico.
+Contiene información sobre un servidor Servicios de Escritorio remoto específico.
 
 </dd> <dt>
 
-[**\_dirección de sesión de WTS \_**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wts_session_address)
+[**\_WTS DIRECCIÓN DE \_ SESIÓN**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wts_session_address)
 </dt> <dd>
 
 Contiene la dirección IP virtual asignada a una sesión.
 
 </dd> <dt>
 
-[**\_información de sesión de WTS \_**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wts_session_infoa)
+[**\_WTS INFORMACIÓN DE \_ SESIÓN**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wts_session_infoa)
 </dt> <dd>
 
-Contiene información sobre una sesión de cliente en un servidor host de sesión de escritorio remoto.
+Contiene información sobre una sesión de cliente en un servidor host de sesión de Escritorio remoto.
 
 </dd> <dt>
 
-[**Información de sesión de WTS \_ \_ \_ 1**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wts_session_info_1a)
+[**\_WTS INFORMACIÓN \_ DE SESIÓN \_ 1**](/windows/desktop/api/Wtsapi32/ns-wtsapi32-wts_session_info_1a)
 </dt> <dd>
 
-Contiene información extendida sobre una sesión de cliente en un servidor host de sesión de escritorio remoto o en un servidor de Host de virtualización de Escritorio remoto (host de virtualización de escritorio remoto).
+Contiene información ampliada sobre una sesión de cliente en un servidor host de sesión de Escritorio remoto o Escritorio remoto virtualización de host (Host de virtualización de Escritorio remoto).
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 

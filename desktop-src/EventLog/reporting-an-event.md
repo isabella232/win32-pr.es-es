@@ -1,19 +1,19 @@
 ---
-description: Para notificar eventos, debe definir primero los eventos en un archivo de texto de mensaje. Para obtener más información sobre cómo escribir un archivo de texto de mensaje, vea archivos de texto de mensaje. A continuación se muestra el archivo de texto del mensaje que se usa en este ejemplo.
+description: Para notificar eventos, primero debe definir los eventos en un archivo de texto de mensaje. Para obtener más información sobre cómo escribir un archivo de texto de mensaje, vea Archivos de texto de mensaje. A continuación se muestra el archivo de texto del mensaje usado en este ejemplo.
 ms.assetid: ace31e17-a638-414f-8518-9b944118047b
 title: Informes de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 644163c5838b703d28db628c643c5cd12c73c22e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a52c5fe2abba47adb3b1b7bdf7d5562da8e57eb26aa21fe8448871c940cf2c34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103812883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015433"
 ---
 # <a name="reporting-events"></a>Informes de eventos
 
-Para notificar eventos, debe definir primero los eventos en un archivo de texto de mensaje. Para obtener más información sobre cómo escribir un archivo de texto de mensaje, vea [archivos de texto de mensaje](message-text-files.md). A continuación se muestra el archivo de texto del mensaje que se usa en este ejemplo.
+Para notificar eventos, primero debe definir los eventos en un archivo de texto de mensaje. Para obtener más información sobre cómo escribir un archivo de texto de mensaje, vea [Archivos de texto de mensaje](message-text-files.md). A continuación se muestra el archivo de texto del mensaje usado en este ejemplo.
 
 
 ```C++
@@ -124,15 +124,15 @@ gallons%0
 
 Para compilar el archivo de texto del mensaje, use el siguiente comando:
 
-**MC-U provider.mc**
+**mc -U provider.mc**
 
 Para compilar los recursos generados por el compilador de mensajes, use el siguiente comando:
 
-**proveedor RC. RC**
+**rc provider.rc**
 
-Para crear la DLL solo de recursos que contiene los recursos de la cadena de tabla de mensajes, use el siguiente comando (puede ejecutar el comando desde un símbolo del sistema de Visual Studio):
+Para crear el archivo DLL de solo recursos que contiene los recursos de cadena de tabla de mensajes, use el siguiente comando (puede ejecutar el comando desde un símbolo del sistema Visual Studio mensaje):
 
-**Link-dll-NOENTRY Provider. res**
+**link -dll -noentry provider.res**
 
 A continuación se muestra el archivo de encabezado generado por el compilador para el archivo de texto del mensaje anterior. Incluya el archivo de encabezado en el proyecto.
 
@@ -273,7 +273,7 @@ A continuación se muestra el archivo de encabezado generado por el compilador p
 
 
 
-En el ejemplo siguiente se muestra cómo usar la función [**ReportEvent**](/windows/desktop/api/Winbase/nf-winbase-reporteventa) para escribir los eventos definidos en el archivo de texto del mensaje anterior.
+En el ejemplo siguiente se muestra cómo usar la [**función ReportEvent**](/windows/desktop/api/Winbase/nf-winbase-reporteventa) para escribir los eventos definidos en el archivo de texto del mensaje anterior.
 
 
 ```C++
@@ -356,19 +356,19 @@ cleanup:
 
 
 
-Antes de ejecutar este ejemplo, registre el proveedor en el registro. Para obtener más información sobre la configuración del registro, consulte [orígenes de eventos](event-sources.md). Agregue "MyEventProvider" como una clave del registro en la siguiente clave:
+Antes de ejecutar este ejemplo, registre el proveedor en el registro. Para obtener más información sobre la configuración del Registro, vea [Orígenes de eventos](event-sources.md). Agregue "MyEventProvider" como clave del Registro bajo la siguiente clave:
 
-**HKEY \_ local \_ Machine \\ System \\ CurrentControlSet \\ Services \\ EventLog \\ Application**
+**HKEY \_ LOCAL \_ MACHINE \\ SYSTEM \\ CurrentControlSet \\ services \\ eventlog \\ Application**
 
-A continuación se muestran los valores del registro que se van a establecer para la clave del registro "MyEventProvider".
+A continuación se muestran los valores del Registro que se establecerán para la clave del Registro "MyEventProvider".
 
 | Nombre del valor           | Tipo       | Datos de valor           |
 |----------------------|------------|----------------------|
-| CategoryCount        | \_valor DWORD reg | 0x00000003           |
-| CategoryMessageFile  | Registro \_ SZ    | *ruta de acceso* \\provider.dll |
-| EventMessageFile     | Registro \_ SZ    | *ruta de acceso* \\provider.dll |
-| ParameterMessageFile | Registro \_ SZ    | *ruta de acceso* \\provider.dll |
-| TypesSupported       | \_valor DWORD reg | 0x00000007           |
+| CategoryCount        | REG \_ DWORD | 0x00000003           |
+| CategoryMessageFile  | REG \_ SZ    | *ruta de acceso* \\provider.dll |
+| EventMessageFile     | REG \_ SZ    | *ruta de acceso* \\provider.dll |
+| ParameterMessageFile | REG \_ SZ    | *ruta de acceso* \\provider.dll |
+| TypesSupported       | REG \_ DWORD | 0x00000007           |
 
 
 

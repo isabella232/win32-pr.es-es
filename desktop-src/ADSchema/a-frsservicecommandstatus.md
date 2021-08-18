@@ -1,11 +1,11 @@
 ---
-title: Atributo FRS-Service-Command-status
+title: Atributo FRS-Service-Command-Status
 description: Respuesta del último comando emitido a un miembro.
 ms.assetid: 96938191-7460-4ac3-b33d-534e76d4b8df
 ms.tgt_platform: multiple
 keywords:
-- 'FRS: atributo Service-Command-status esquema de AD AD'
-- fRSServiceCommandStatus esquema de AD de atributos
+- Esquema de AD del atributo FRS-Service-Command-Status
+- Esquema de AD del atributo fRSServiceCommandStatus
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec9c7fdad2518ee5c55a2e0f5a0ffc3c011d30e1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 30e09f85f5e9f057a3f74826f32fd9783466a72e4d5a76201fec80db866fb113
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323495"
 ---
-# <a name="frs-service-command-status-attribute"></a>Atributo FRS-Service-Command-status
+# <a name="frs-service-command-status-attribute"></a>Atributo FRS-Service-Command-Status
 
 Respuesta del último comando emitido a un miembro.
 
@@ -29,14 +29,14 @@ Respuesta del último comando emitido a un miembro.
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | FRS-Service-Command-status                  |
-| Nombre para mostrar de LDAP | fRSServiceCommandStatus                     |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | FRS-Service-Command-Status                  |
+| Ldap-Display-Name | fRSServiceCommandStatus                     |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.879                      |
-| System-ID-GUID    | 2a132582-9373-11d1-aebc-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 2a132582-9373-11d1-aebc-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Respuesta del último comando emitido a un miembro.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 512                                                      |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Respuesta del último comando emitido a un miembro.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 512                                                      |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Respuesta del último comando emitido a un miembro.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 512                                                      |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Respuesta del último comando emitido a un miembro.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 512                                                      |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Respuesta del último comando emitido a un miembro.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 512                                                      |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Respuesta del último comando emitido a un miembro.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 512                                                      |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> |
+| Clases usadas en        | [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 

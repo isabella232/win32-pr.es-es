@@ -1,25 +1,25 @@
 ---
 title: Compilación sin conexión
-description: La herramienta de compilador de efectos (fxc.exe) está diseñada para la compilación sin conexión de los sombreadores HLSL.
+description: La herramienta de compilador de efectos (fxc.exe) está diseñada para la compilación sin conexión de sombreadores HLSL.
 ms.assetid: 56806335-a0c7-4247-b40d-ba93486a88ac
 keywords:
-- FXC, compilación sin conexión
+- fxc, compilación sin conexión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e7c2bf96a24cb586a5d229a395cbf6dc0cb9ee1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 88a15d3a71dbfb79541a75bd38cb28140d832b45e75a88a52b2d0c8988865f12
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103793582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119406335"
 ---
 # <a name="offline-compiling"></a>Compilación sin conexión
 
-La herramienta de compilador de efectos (fxc.exe) está diseñada para la compilación sin conexión de los sombreadores HLSL.
+La herramienta de compilador de efectos (fxc.exe) está diseñada para la compilación sin conexión de sombreadores HLSL.
 
-## <a name="compiling-with-the-current-compiler"></a>Compilar con el compilador actual
+## <a name="compiling-with-the-current-compiler"></a>Compilación con el compilador actual
 
-Los modelos de sombreador admitidos por el compilador actual se muestran en [perfiles](dx-graphics-tools-fxc-syntax.md). En este ejemplo se compila un sombreador de píxeles para el destino del modelo de sombreador 5,1.
+Los modelos de sombreador admitidos por el compilador actual se muestran en [Perfiles](dx-graphics-tools-fxc-syntax.md). En este ejemplo se compila un sombreador de píxeles para el destino del modelo de sombreador 5.1.
 
 ```
 fxc /T ps_5_1 /Fo PixelShader1.fxc PixelShader1.hlsl
@@ -27,29 +27,29 @@ fxc /T ps_5_1 /Fo PixelShader1.fxc PixelShader1.hlsl
 
 En este ejemplo:
 
--   PS \_ 5 \_ 1 es el perfil de destino.
--   PixelShader1. FXC es el archivo de objeto de salida que contiene el sombreador compilado.
--   PixelShader1. HLSL es el origen.
+-   ps \_ 5 \_ 1 es el perfil de destino.
+-   PixelShader1.fxc es el archivo de objeto de salida que contiene el sombreador compilado.
+-   PixelShader1.hlsl es el origen.
 
 ```
 fxc /Od /Zi /T ps_5_1 /Fo PixelShader1.fxc PixelShader1.hlsl
 ```
 
-Las opciones de depuración incluyen opciones adicionales para deshabilitar las optimizaciones del compilador (OD) y habilitar la información de depuración (Zi) como los números de línea y los símbolos.
+Las opciones de depuración incluyen opciones adicionales para deshabilitar las optimizaciones del compilador (Od) y habilitar la información de depuración (Zi), como números de línea y símbolos.
 
-Para obtener una lista completa de las opciones de línea de comandos, vea la página [Sintaxis](dx-graphics-tools-fxc-syntax.md) .
+Para obtener una lista completa de las opciones de línea de comandos, vea la [página Sintaxis.](dx-graphics-tools-fxc-syntax.md)
 
-## <a name="compiling-with-the-legacy-compiler"></a>Compilar con el compilador heredado
+## <a name="compiling-with-the-legacy-compiler"></a>Compilación con el compilador heredado
 
-A partir de Direct3D 10, ya no se admiten algunos modelos de sombreador. Estos incluyen modelos de sombreador de píxeles: PS \_ 1 \_ 1, PS \_ 1 \_ 2, PS \_ 1 \_ 3 y PS \_ 1 \_ 4, que admiten recursos muy limitados y dependen del hardware. El compilador se ha rediseñado con el modelo de sombreador 2 (o superior), lo que permite mayores eficiencias con la compilación. Esto requiere que se ejecute en hardware que admita los modelos de sombreador 2 y superiores.
+A partir de Direct3D 10, ya no se admiten algunos modelos de sombreador. Estos incluyen modelos de sombreador de píxeles: ps \_ \_ 1 1, ps \_ \_ 2, ps \_ 1 3 y ps \_ \_ 1 \_ 4 que admiten recursos muy limitados y dependen del hardware. El compilador se ha rediseñado con el modelo de sombreador 2 (o superior) que permite mayores eficiencias con la compilación. Por supuesto, esto requerirá que se ejecute en hardware que admita los modelos de sombreador 2 y superiores.
 
-Tenga en cuenta también que debe consultar las notas de la versión del SDK asociadas a su versión del compilador FXC para el comportamiento afectado por el modificador/GEC.
+Tenga en cuenta también que debe consultar las notas de la versión del SDK asociadas a la versión del compilador de FXC para conocer el comportamiento afectado por el modificador /Gec.
 
-## <a name="using-the-effect-compiler-tool-in-a-subprocess"></a>Usar la herramienta de compilador de efectos en un subproceso
+## <a name="using-the-effect-compiler-tool-in-a-subprocess"></a>Uso de la herramienta del compilador de efectos en un subproceso
 
-Si una aplicación genera fxc.exe como subproceso, es importante asegurarse de que la aplicación comprueba y Lee los datos de los conductos de salida o de error pasados a la función CreateProcess. Si la aplicación solo espera a que finalice el subproceso y una de las canalizaciones se llena, el subproceso nunca finalizará.
+Si fxc.exe genera una aplicación como un subproceso, es importante asegurarse de que la aplicación comprueba y lee los datos de las canalizaciones de salida o de error que se pasan a la función CreateProcess. Si la aplicación solo espera a que finalice el subproceso y una de las canalizaciones se llena, el subproceso nunca finalizará.
 
-En el ejemplo de código siguiente se muestra la espera en un subproceso y la lectura de las canalizaciones de salida y de error adjuntas al subproceso. El contenido de la `WaitHandles` matriz se corresponde con los identificadores del subproceso, la canalización de stdout y la canalización para stderr.
+El código de ejemplo siguiente muestra la espera en un subproceso y la lectura de las canalizaciones de salida y error asociadas al subproceso. El contenido de la matriz corresponde a los identificadores del subproceso, la canalización para stdout y la `WaitHandles` canalización para stderr.
 
 ```cpp
 HANDLE WaitHandles[] = {
@@ -83,8 +83,8 @@ while (1)
 }
 ```
 
-Para obtener información adicional sobre cómo generar un proceso, vea la página de referencia de [**CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa).
+Para obtener información adicional sobre cómo generar un proceso, consulte la página de referencia [**de CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa).
 
 ## <a name="related-topics"></a>Temas relacionados
 
-* [Efecto: herramienta de compilador](fxc.md)
+* [Herramienta Del compilador de efectos](fxc.md)

@@ -1,10 +1,10 @@
 ---
-title: atributo ipServiceProtocol
-description: Contiene la sección del mapa de servicios que almacena el número de protocolo para un servicio de UNIX.
+title: Atributo ipServiceProtocol
+description: Contiene la sección del mapa de servicios que almacena el número de protocolo para un UNIX servicio.
 ms.assetid: 44ab7637-c9c0-4d7c-898c-a9de45f75ccb
 ms.tgt_platform: multiple
 keywords:
-- ipServiceProtocol esquema de AD de atributos
+- Esquema de AD del atributo ipServiceProtocol
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 874b08d687ac621e15ae9b2268dcabef21e4c2aa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4951a8927671edd569f91b51449e4f0d4ff6f326da35a138681626f96852abf4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322385"
 ---
-# <a name="ipserviceprotocol-attribute"></a>atributo ipServiceProtocol
+# <a name="ipserviceprotocol-attribute"></a>Atributo ipServiceProtocol
 
-Contiene la sección del mapa de servicios que almacena el número de protocolo para un servicio de UNIX.
+Contiene la sección del mapa de servicios que almacena el número de protocolo para un UNIX servicio.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | ipServiceProtocol                    |
-| Nombre para mostrar de LDAP | ipServiceProtocol                    |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | ipServiceProtocol                    |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.16                     |
-| System-ID-GUID    | cd96ec0b-1ed6-43b4-b26b-f170b645883f |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | cd96ec0b-1ed6-43b4-b26b-f170b645883f |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -52,13 +52,13 @@ Contiene la sección del mapa de servicios que almacena el número de protocolo 
 
 | Entrada | Value |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | False                                       |
-| Tiene un único valor       | True                                        |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Verdadero                                        |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -73,13 +73,13 @@ Contiene la sección del mapa de servicios que almacena el número de protocolo 
 
 | Entrada | Value |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | False                                       |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -94,13 +94,13 @@ Contiene la sección del mapa de servicios que almacena el número de protocolo 
 
 | Entrada | Value |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | False                                       |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -115,13 +115,13 @@ Contiene la sección del mapa de servicios que almacena el número de protocolo 
 
 | Entrada | Value |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | False                                       |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |

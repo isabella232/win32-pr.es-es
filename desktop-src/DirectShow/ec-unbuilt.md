@@ -1,19 +1,19 @@
 ---
-description: El \_ evento no compilado de EC lo envía el control de vídeo cuando se ha anulado el gráfico. Este evento no se reenvía a las aplicaciones.
+description: El control de vídeo envía el \_ evento EC UNBUILT cuando se ha roto un gráfico. Este evento no se reenvía a las aplicaciones.
 ms.assetid: fb38ad3e-c2a8-4329-87a4-9e2437a7c4ca
-title: EC_UNBUILT (DShow. h)
+title: EC_UNBUILT (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79e2a0e3fe47100c52da607afcfcdc2cdd520232
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f2bba711e2709c93aad7cbef773b972c1b7ceb963b0721681bebab0bd1568e78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015873"
 ---
-# <a name="ec_unbuilt"></a>EC no \_ compilado
+# <a name="ec_unbuilt"></a>EC \_ UNBUILT
 
-El \_ evento no compilado de EC lo envía el control de vídeo cuando se ha anulado el gráfico. Este evento no se reenvía a las aplicaciones.
+El control de vídeo envía el \_ evento EC UNBUILT cuando se ha roto un gráfico. Este evento no se reenvía a las aplicaciones.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -43,7 +43,7 @@ Ninguno.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

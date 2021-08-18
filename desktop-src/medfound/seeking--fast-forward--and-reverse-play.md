@@ -1,32 +1,32 @@
 ---
-description: En este tema se muestra código de ejemplo para administrar los cambios de búsqueda y tasa cuando se usa la sesión multimedia para la reproducción.
+description: En este tema se muestra código de ejemplo para administrar las búsquedas y la velocidad de los cambios cuando se usa la sesión multimedia para la reproducción.
 ms.assetid: 50bf4c05-99c0-4cf0-aaca-8ee717cafd12
-title: Búsqueda, avance rápido y reproducción inversa
+title: Búsqueda, Inserción rápida y reproducción inversa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68c42e4ab2bbf5bd3ac1057ce4bb0e09fceddc44
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e49fb8731b005da12adf51880f4375c6610348ac73bd0bdc592e8478383df676
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034783"
 ---
-# <a name="seeking-fast-forward-and-reverse-play"></a>Búsqueda, avance rápido y reproducción inversa
+# <a name="seeking-fast-forward-and-reverse-play"></a>Búsqueda, Inserción rápida y reproducción inversa
 
-En este tema se muestra código de ejemplo para administrar los cambios de búsqueda y tasa cuando se usa la [sesión multimedia](media-session.md) para la reproducción.
+En este tema se muestra código de ejemplo para administrar la búsqueda y la velocidad de los cambios cuando se usa la [sesión multimedia](media-session.md) para la reproducción.
 
-Cuando se usa la sesión multimedia para la reproducción, una aplicación puede buscar y cambiar la velocidad de reproducción de la siguiente manera:
+Cuando se usa la sesión multimedia para la reproducción, una aplicación puede buscar y cambiar la velocidad de reproducción como se muestra a continuación:
 
--   Para buscar, llame a [**IMFMediaSession:: Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start) y especifique la posición de búsqueda.
--   Para cambiar la velocidad de reproducción, use la interfaz [**IMFRateControl**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol) como se describe en [control de velocidad](rate-control.md).
--   Para obtener fotogramas de vídeo actualizados durante la búsqueda, establezca la velocidad de reproducción en cero antes de llamar a [**IMFMediaSession:: Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start). Esta operación se denomina *limpieza*. (Consulte [Cómo realizar la limpieza](how-to-perform-scrubbing.md)).
+-   Para buscar, llame [**a IMFMediaSession::Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start) y especifique la posición de búsqueda.
+-   Para cambiar la velocidad de reproducción, use la interfaz [**IMFRateControl**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol) como se describe en [Control de velocidad.](rate-control.md)
+-   Para obtener fotogramas de vídeo actualizados durante la búsqueda, establezca la velocidad de reproducción en cero antes de llamar a [**IMFMediaSession::Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start). Esta operación se denomina *limpieza.* (Vea [How to Perform Scrubbing](how-to-perform-scrubbing.md)[Cómo realizar limpieza]).
 
-Sin embargo, para crear la mejor experiencia de usuario, debe tener en cuenta los siguientes comportamientos:
+Sin embargo, para crear la mejor experiencia de usuario, debe tener en cuenta los comportamientos siguientes:
 
--   La búsqueda es asincrónica y la sesión multimedia pone en cola todas las solicitudes de búsqueda en una cola FIFO. Si envía varias solicitudes de búsqueda, es posible que la interfaz de usuario se ejecute antes del estado real de la reproducción. Por ejemplo, supongamos que la aplicación implementa una barra de búsqueda. Si el usuario arrastra la barra de búsqueda hacia delante y hacia atrás, puede haber un retraso mientras se ejecutan las búsquedas hacia delante. Mientras haya una búsqueda en curso, debe almacenar en caché las solicitudes de búsqueda del usuario. Cuando se complete la operación de búsqueda actual, envíe la solicitud de búsqueda más reciente del usuario y descarte las demás.
--   Algunas transiciones de velocidad no se permiten en algunos Estados de transporte. Por ejemplo, no se permite cambiar de la reproducción hacia delante a la reproducción inversa mientras se reproduce. Las transiciones admitidas se describen en [**IMFRateControl:: SetRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-setrate). Los cambios de velocidad también son asíncronos.
+-   La búsqueda es asincrónica y la sesión multimedia pone en cola todas las solicitudes de búsqueda en una cola FIFO. Si envía varias solicitudes de búsqueda, la interfaz de usuario podría ejecutarse antes del estado de reproducción real. Por ejemplo, suponga que la aplicación implementa una barra de búsqueda. Si el usuario arrastra la barra de búsqueda hacia delante y hacia atrás, puede haber un retraso mientras se ejecutan las búsquedas hacia delante. Mientras una búsqueda está en curso, debe almacenar en caché las solicitudes de búsqueda del usuario. Cuando se complete la operación de búsqueda actual, envíe la solicitud de búsqueda más reciente del usuario y descarte las demás.
+-   Algunas transiciones de velocidad no se permiten en algunos estados de transporte. Por ejemplo, no se permite cambiar de reproducción hacia delante a reproducción inversa durante la reproducción. Las transiciones admitidas se describen [**en IMFRateControl::SetRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-setrate). Los cambios de velocidad también son asincrónicos.
 
-La siguiente clase auxiliar se puede usar para administrar solicitudes de búsqueda y tasas de cambio. Mientras una operación asincrónica está pendiente, la clase almacena en caché las solicitudes de búsqueda o cambio de velocidad. Cuando se completa la operación actual, la clase envía la solicitud más reciente, si existe. La clase también administra el estado de transporte para evitar cambios de frecuencia no válidos.
+La siguiente clase auxiliar se puede usar para administrar las solicitudes de búsqueda y la tasa de cambios. Mientras hay una operación asincrónica pendiente, la clase almacena en caché las solicitudes de búsqueda o cambio de velocidad. Cuando se completa la operación actual, la clase envía la solicitud más reciente, si la hay. La clase también administra el estado de transporte para evitar cambios de velocidad no válidos.
 
 Esta es la declaración de la clase PlayerSeeking.
 
@@ -1091,7 +1091,7 @@ done:
 
 <dl> <dt>
 
-[Control de tasa](rate-control.md)
+[Control de velocidad](rate-control.md)
 </dt> <dt>
 
 [Reproducción de audio y vídeo](audio-video-playback.md)
