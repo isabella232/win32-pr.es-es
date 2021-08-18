@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSLVFileIOException'
-title: Constructor de EsentSLVFileIOException
+description: 'Más información sobre: Constructor EsentSLVFileIOException'
+title: Constructor EsentSLVFileIOException
 TOCTitle: 'EsentSLVFileIOException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVFileIOException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvfileioexception.esentslvfileioexception(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a2251ba7c545abd2bcda6cbd449f035f1918e64e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3cab88a0cbd2ce04dc4d513cfcbf66faeab3fc38273dee11048654cc4f323b64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118981295"
 ---
-# <a name="esentslvfileioexception-constructor"></a>Constructor de EsentSLVFileIOException
+# <a name="esentslvfileioexception-constructor"></a>Constructor EsentSLVFileIOException
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Dim instance As New EsentSLVFileIOException()
 public EsentSLVFileIOException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -58,4 +58,4 @@ public EsentSLVFileIOException()
 
 [Miembros de EsentSLVFileIOException](./esentslvfileioexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
 description: Cree un cargador de archivos asincrónicos.
 ms.assetid: 1b79fba5-e7f0-4160-9cec-ffea94f84fde
-title: Función D3DX10CreateAsyncFileLoader (D3DX10Async. h)
+title: Función D3DX10CreateAsyncFileLoader (D3DX10Async.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Async.h
-ms.openlocfilehash: e98bccf709fa4a6d921e266148b94fd8623429ef
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cfb30de406843831745ab56ced1f3dc0552536ea4a8d45c7f3da4ae078e036e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753395"
 ---
-# <a name="d3dx10createasyncfileloader-function"></a>D3DX10CreateAsyncFileLoader función)
+# <a name="d3dx10createasyncfileloader-function"></a>Función D3DX10CreateAsyncFileLoader
 
 Cree un cargador de archivos asincrónicos.
 
@@ -40,21 +40,21 @@ HRESULT D3DX10CreateAsyncFileLoader(
 
 <dl> <dt>
 
-*pFileName* \[ de\]
+*pFileName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Nombre del archivo que se va a cargar. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos se resuelve como LPCSTR.
+Nombre del archivo que se va a cargar. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos se resuelve en LPCSTR.
 
 </dd> <dt>
 
-*ppDataLoader* \[ enuncia\]
+*ppDataLoader* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10DataLoader**](id3dx10dataloader.md)\*\***
 
-Dirección de un puntero al cargador de datos asincrónicos (vea [**ID3DX10DataLoader (interfaz**](id3dx10dataloader.md))).
+Dirección de un puntero al cargador de datos asincrónicos (vea [**ID3DX10DataLoader Interface**](id3dx10dataloader.md)).
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ Dirección de un puntero al cargador de datos asincrónicos (vea [**ID3DX10DataL
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Async. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Async.h</dt> </dl> |
 
 
 
@@ -78,7 +78,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 <dl> <dt>
 
-[Funciones de De uso general](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[De uso general Functions](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

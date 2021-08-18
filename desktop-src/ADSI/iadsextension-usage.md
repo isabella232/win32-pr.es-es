@@ -7,23 +7,23 @@ keywords:
 - extensiones ADSI, IADsExtension
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a844d320b28548e9e9998881fd2a09815d1882e9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fbab6813a87701fe2d7e130a03540476412c9e13b9d5d3ca96bdd0e63b2dad54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023493"
 ---
 # <a name="iadsextension-usage"></a>Uso de IADsExtension
 
-[**IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension) es una interfaz opcional implementada por el escritor de la extensión cuando se cumple al menos una de las siguientes condiciones:
+[**IADsExtension es una**](/windows/desktop/api/Iads/nn-iads-iadsextension) interfaz opcional implementada por el escritor de extensiones cuando se cumple al menos una de las condiciones siguientes:
 
--   El componente de extensión requiere una notificación de inicialización, tal y como se define en **ADSI \_ ext \_ * dwCode*** en el método [**Operate**](/windows/desktop/api/Iads/nf-iads-iadsextension-operate) .
+-   El componente de extensión requiere una notificación de inicialización tal como se define en **ADSI \_ EXT \_ *dwCode*** en el [**método Operate.**](/windows/desktop/api/Iads/nf-iads-iadsextension-operate)
 -   La extensión admite una interfaz dual o de distribución.
 
-Si un componente de extensión admite la interfaz [**IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension) por primera razón, los métodos [**IADsExtension::P rivategetidsofnames**](/windows/desktop/api/Iads/nf-iads-iadsextension-privategetidsofnames) y [**IADsExtension::P rivateinvoke**](/windows/desktop/api/Iads/nf-iads-iadsextension-privateinvoke) pueden devolver **E \_ NOTIMPL**. Como alternativa, si un componente de extensión admite una interfaz dual o de distribución, el método de [**operación**](/windows/desktop/api/Iads/nf-iads-iadsextension-operate) puede omitir los datos y devolver un **valor HRESULT** de **E \_ NOTIMPL**.
+Si un componente de extensión admite la [**interfaz IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension) por primera vez, los [**métodos IADsExtension::P rivateGetIDsOfNames**](/windows/desktop/api/Iads/nf-iads-iadsextension-privategetidsofnames) e [**IADsExtension::P rivateInvoke**](/windows/desktop/api/Iads/nf-iads-iadsextension-privateinvoke) pueden devolver **E \_ NOTIMPL**. Como alternativa, si un componente de extensión admite una interfaz dual o de distribución , el [**método Operate**](/windows/desktop/api/Iads/nf-iads-iadsextension-operate) puede omitir los datos y devolver un **valor HRESULT** de **E \_ NOTIMPL**.
 
-En el código siguiente se muestra una extensión que implementa [**IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension).
+El código siguiente muestra una extensión que implementa [**IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension).
 
 
 ```C++
@@ -67,9 +67,9 @@ STDMETHOD(PrivateInvoke)(DISPID dispidMember, REFIID riid, LCID lcid, WORD wFlag
 
 
 
- 
+ 
 
- 
+ 
 
 
 

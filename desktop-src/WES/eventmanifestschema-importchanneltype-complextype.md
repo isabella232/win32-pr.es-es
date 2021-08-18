@@ -3,7 +3,7 @@ title: Tipo complejo ImportChannelType
 description: Identifica un canal definido por otro proveedor o en un manifiesto que contiene una sección de metadatos.
 ms.assetid: da14d837-0ed8-4d85-9820-46c77753768d
 keywords:
-- Tipo complejo EventLog de ImportChannelType
+- EventLog de tipo complejo ImportChannelType
 topic_type:
 - apiref
 api_name:
@@ -57,11 +57,11 @@ Identifica un canal definido por otro proveedor o en un manifiesto que contiene 
 |--------|-------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | chid   | token                                                             | Identificador que identifica de forma única el canal en la lista de canales que el proveedor define o importa. Use este valor al hacer referencia a este canal en una definición de evento. Si no especifica un identificador de canal, use el nombre del canal para hacer referencia a este canal en una definición de evento.<br/>  |
 | name   | anyURI                                                            | Nombre del canal que se importará.<br/>                                                                                                                                                                                                                                                                          |
-| símbolo | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Símbolo que se usará para hacer referencia al canal de la aplicación. El [**compilador de mensajes (MC.exe)**](message-compiler--mc-exe-.md) usa el símbolo para crear una constante para el canal en el archivo de encabezado que genera el compilador. Si no especifica un símbolo, el compilador genera uno automáticamente.<br/> |
+| símbolo | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Símbolo que se usará para hacer referencia al canal en la aplicación. El [**compilador de mensajes (MC.exe)**](message-compiler--mc-exe-.md) usa el símbolo para crear una constante para el canal en el archivo de encabezado que genera el compilador. Si no especifica un símbolo, el compilador genera uno automáticamente.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El manifiesto que definió el canal importado debe instalarse antes de que el proveedor escriba eventos; De lo contrario, los eventos no se pueden escribir en el canal (la operación de escritura se realiza correctamente, los eventos simplemente no se escriben en el canal).
 

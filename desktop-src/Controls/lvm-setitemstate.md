@@ -47,7 +47,7 @@ Puntero a una [**estructura LVITEM.**](/windows/win32/api/commctrl/ns-commctrl-l
 
 Si envía este mensaje explícitamente, devuelve **TRUE** si se realiza correctamente o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El valor de estado de un elemento incluye un conjunto de marcas de bits que indican el estado del elemento. El valor de estado también puede incluir índices de lista de imágenes que indican la imagen de estado del elemento y la imagen superpuesta.
 

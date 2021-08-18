@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JetRegisterCallback (función)'
+description: 'Más información sobre: JetRegisterCallback (Función)'
 title: Función JetRegisterCallback
 TOCTitle: JetRegisterCallback Function
 ms:assetid: 04c82fac-ffa2-477f-b4dd-59bbf1dde3c8
@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 26ca7559488182f2d687d5c678639e108792f413
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a13415d8174a48e7e9f33d1459ca9a0a07271421101e65236f8f03263ea2a898
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849665"
 ---
 # <a name="jetregistercallback-function"></a>Función JetRegisterCallback
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jetregistercallback-function"></a>Función JetRegisterCallback
 
-La función **JetRegisterCallback** permite a la aplicación configurar el motor de base de datos para emitir notificaciones a la aplicación para eventos concretos. Estas notificaciones están asociadas a una tabla específica y permanecen en vigor solo hasta que se cierre la instancia que contiene la tabla con [JetTerm](./jetterm-function.md).
+La **función JetRegisterCallback permite** a la aplicación configurar el motor de base de datos para emitir notificaciones a la aplicación para eventos específicos. Estas notificaciones están asociadas a una tabla específica y permanecen en vigor solo hasta que la instancia que contiene la tabla se cierre mediante [JetTerm](./jetterm-function.md).
 
-**Windows XP: JetRegisterCallback** se presentó en Windows XP.
+**Windows XP: JetRegisterCallback** se introdujo en Windows XP.
 
 ```cpp
     JET_ERR JET_API JetRegisterCallback(
@@ -53,31 +53,31 @@ La función **JetRegisterCallback** permite a la aplicación configurar el motor
 
 Sesión que se va a usar para esta llamada.
 
-*TABLEID*
+*tableid*
 
 Cursor que se va a usar para esta llamada.
 
 *cbtyp*
 
-Máscara de bits formada por las razones de devolución de llamada para las que la aplicación desea recibir notificaciones.
+Máscara de bits compuesta por las razones de devolución de llamada por las que la aplicación desea recibir notificaciones.
 
-Para crear esta máscara de bits, simplemente o juntos, los motivos de devolución de llamada válidos de la enumeración [JET_CBTYP](./jet-cbtyp.md) .
+Para crear esta máscara de bits, simplemente o juntos motivos de devolución de llamada válidos de [la enumeración JET_CBTYP](./jet-cbtyp.md) bits.
 
 *pCallback*
 
-Puntero de función a la función de devolución de llamada para la aplicación.
+Puntero de función a la función de devolución de llamada de la aplicación.
 
 *pvContext*
 
-Especifica un puntero de contexto que se asignará a la función de devolución de llamada para la aplicación.
+Especifica un puntero de contexto que se va a dar a la función de devolución de llamada para la aplicación.
 
 *phCallbackId*
 
-Devuelve un identificador que se puede usar más adelante para cancelar el registro de la función de devolución de llamada especificada mediante [JetUnregisterCallback](./jetunregistercallback-function.md).
+Devuelve un identificador que se puede usar más adelante para cancelar el registro de la función de devolución de llamada dada [mediante JetUnregisterCallback](./jetunregistercallback-function.md).
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -97,15 +97,15 @@ Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de lo
 </tr>
 <tr class="even">
 <td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>No es posible completar la operación porque se ha interrumpido toda la actividad en la instancia asociada a la sesión como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
+<td><p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInstanceUnavailable</p></td>
-<td><p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irrecuperable que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos. Este error solo se devolverá en Windows XP y versiones posteriores.</p></td>
+<td><p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos. Este error solo lo devolverán Windows XP y versiones posteriores.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidParameter</p></td>
-<td><p>Uno de los parámetros proporcionados contenía un valor inesperado o contenía un valor que no tenía sentido cuando se combinó con el valor de otro parámetro. Este error lo devolverá <strong>JetRegisterCallback</strong> cuando:</p>
+<td><p>Uno de los parámetros proporcionados contenía un valor inesperado o contenía un valor que no tenía sentido cuando se combinaba con el valor de otro parámetro. <strong>JetRegisterCallback</strong> devolverá este error cuando:</p>
 <ul>
 <li><p><em>cbtyp</em> es cero,</p></li>
 <li><p><em>pCallback</em> es NULL.</p></li>
@@ -114,7 +114,7 @@ Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de lo
 </tr>
 <tr class="odd">
 <td><p>JET_errNotInitialized</p></td>
-<td><p>No es posible completar la operación porque todavía no se ha inicializado la instancia asociada a la sesión.</p></td>
+<td><p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errRestoreInProgress</p></td>
@@ -122,7 +122,7 @@ Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de lo
 </tr>
 <tr class="odd">
 <td><p>JET_errSessionSharingViolation</p></td>
-<td><p>No se puede usar la misma sesión para más de un subproceso al mismo tiempo. Este error solo se devolverá en Windows XP y versiones posteriores.</p></td>
+<td><p>No se puede usar la misma sesión para más de un subproceso al mismo tiempo. Este error solo lo devolverán Windows XP y versiones posteriores.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errTermInProgress</p></td>
@@ -132,13 +132,13 @@ Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de lo
 </table>
 
 
-Si se ejecuta correctamente, la devolución de llamada especificada se registrará para los motivos de devolución de llamada especificados con la tabla asociada al cursor especificado. No se producirá ningún cambio en el estado de la base de datos.
+Si se ejecuta correctamente, la devolución de llamada especificada se registrará por los motivos de devolución de llamada especificados con la tabla asociada al cursor especificado. No se producirá ningún cambio en el estado de la base de datos.
 
 En caso de error, la devolución de llamada no se registrará. No se producirá ningún cambio en el estado de la base de datos.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
-Este método proporciona un medio para que la aplicación asocie las devoluciones de llamada volátiles a una tabla en una base de datos. Si la aplicación desea asociar devoluciones de llamada persistentes con una tabla en la base de datos, debe pasar la devolución de llamada a [JET_TABLECREATE](./jet-tablecreate-structure.md) mediante [JetCreateTableColumnIndex](./jetcreatetablecolumnindex-function.md).
+Este método proporciona un medio para que la aplicación asocie devoluciones de llamada volátiles a una tabla de una base de datos. Si la aplicación desea asociar devoluciones de llamada persistentes a una tabla de la base de datos, debe pasar la devolución de llamada a [JET_TABLECREATE](./jet-tablecreate-structure.md) mediante [JetCreateTableColumnIndex](./jetcreatetablecolumnindex-function.md).
 
 #### <a name="requirements"></a>Requisitos
 
@@ -153,19 +153,19 @@ Este método proporciona un medio para que la aplicación asocie las devolucione
 <td><p>Requiere Windows Vista o Windows XP.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Server</strong></p></td>
+<td><p><strong>Servidor</strong></p></td>
 <td><p>Requiere Windows Server 2008 o Windows Server 2003.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
+<td><p>Declarado en Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
+<td><p>Use ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>DLL</strong></p></td>
+<td><p><strong>Dll</strong></p></td>
 <td><p>Requiere ESENT.dll.</p></td>
 </tr>
 </tbody>

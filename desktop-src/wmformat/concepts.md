@@ -1,32 +1,32 @@
 ---
-title: Conceptos del SDK de Windows Media Format
-description: Obtenga información acerca de los conceptos del SDK de Windows Media Format, como perfiles, formatos y velocidad de bits.
+title: Windows Conceptos del SDK de formato multimedia
+description: Obtenga información sobre Windows del SDK de formato multimedia, como perfiles, formatos y velocidad de bits.
 ms.assetid: 02beae02-ee8e-40e0-b7c9-b17894c9627e
 keywords:
-- SDK de Windows Media Format, conceptos
-- SDK de Windows Media Format, conceptos clave
+- Windows SDK de formato multimedia, conceptos
+- Windows SDK de formato multimedia, conceptos clave
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90782514f767c2c50080a7d9ac329285afcdff6c
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: 3d09b42ea43c79d4f1d247b8e3261064a649d4505206362888744619d172e56b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "105718587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027963"
 ---
-# <a name="windows-media-format-sdk-concepts"></a>Conceptos del SDK de Windows Media Format
+# <a name="windows-media-format-sdk-concepts"></a>Windows Conceptos del SDK de formato multimedia
 
-En esta sección se presentan los conceptos clave que hay detrás del SDK de Windows Media Format. Se tratan los temas siguientes.
+En esta sección se presentan los conceptos clave que hay detrás Windows SDK de formato multimedia. Se tratan los temas siguientes.
 
--   [Archivos de formato de sistema avanzado (ASF)](advanced-systems-format--asf--files.md)
+-   [Archivos de formato de sistemas avanzados (ASF)](advanced-systems-format--asf--files.md)
 -   [Perfiles](profiles.md)
 -   [Ejemplos de medios](media-samples.md)
--   [Entradas, secuencias y salidas](inputs-streams-and-outputs.md)
+-   [Entradas, Secuencias salidas](inputs-streams-and-outputs.md)
 -   [Formatos](formats.md)
 -   [Velocidad de bits](bit-rate.md)
--   [Metadatos](metadata.md)
+-   [Metadata](metadata.md)
 -   [Tiempo de presentación](presentation-time.md)
--   [Almacenar contenido en búfer](buffering-content.md)
+-   [Almacenamiento en búfer de contenido](buffering-content.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

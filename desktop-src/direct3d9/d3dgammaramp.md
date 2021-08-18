@@ -1,7 +1,7 @@
 ---
 description: Contiene datos de rampa rojo, verde y azul.
 ms.assetid: c596f47a-6c09-4b97-ab2f-b1da3d851aa4
-title: Estructura D3DGAMMARAMP (D3D9Types. h)
+title: Estructura D3DGAMMARAMP (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 496885b8267d339c7617ec24b884fa193f8d9945
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fbd3acc35b7fd4998f5ba536c1fe4a28cf2a17153bf24aacde1f9f39bbbcd09e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751005"
 ---
-# <a name="d3dgammaramp-structure"></a>Estructura D3DGAMMARAMP
+# <a name="d3dgammaramp-structure"></a>D3DGAMMARAMP (estructura)
 
 Contiene datos de rampa rojo, verde y azul.
 
@@ -41,36 +41,36 @@ typedef struct D3DGAMMARAMP {
 
 <dl> <dt>
 
-**alerta**
+**Rojo**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Matriz de 256 elemento de WORD que describe la rampa gamma roja.
+Matriz de 256 elementos WORD que describe la rampa gamma roja.
 
 </dd> <dt>
 
-**verde**
+**Verde**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Matriz de 256 elemento de WORD que describe la rampa gamma verde.
+Matriz de 256 elementos WORD que describe la rampa gamma verde.
 
 </dd> <dt>
 
-**azul**
+**Azul**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Matriz de 256 elemento de WORD que describe la rampa gamma azul.
+Matriz de 256 elementos WORD que describe la rampa gamma azul.
 
 </dd> </dl>
 
@@ -80,7 +80,7 @@ Matriz de 256 elemento de WORD que describe la rampa gamma azul.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

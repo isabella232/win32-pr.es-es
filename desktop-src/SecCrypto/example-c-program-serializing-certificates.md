@@ -1,30 +1,30 @@
 ---
-description: En el ejemplo siguiente se muestra cómo serializar un contexto de certificado y sus propiedades en un formulario que se puede almacenar en un archivo, enviar con un mensaje de correo electrónico o transmitir de otro modo a otro usuario.
+description: En el ejemplo siguiente se muestra cómo serializar un contexto de certificado y sus propiedades en un formulario que se puede almacenar en un archivo, enviarse con un mensaje de correo electrónico o transmitirse de otro modo a otro usuario.
 ms.assetid: cda7fa68-debe-40e6-8c4a-536dacccc2d1
-title: 'Programa C de ejemplo: serialización de certificados'
+title: 'Programa C de ejemplo: Serialización de certificados'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7efee0269a587e659605d375472f6e0ba16673d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8931c0d45a8117257d3af4e9430c60e990a50646529f5bcb43a8d3349e35a0e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007523"
 ---
-# <a name="example-c-program-serializing-certificates"></a>Programa C de ejemplo: serialización de certificados
+# <a name="example-c-program-serializing-certificates"></a>Programa C de ejemplo: Serialización de certificados
 
-En el ejemplo siguiente se muestra cómo serializar un [*contexto de certificado*](../secgloss/c-gly.md) y sus propiedades en un formulario que se puede almacenar en un archivo, enviar con un mensaje de correo electrónico o transmitir de otro modo a otro usuario. En el ejemplo también se muestra cómo se puede volver a cambiar el certificado serializado a un certificado y se agrega a un almacén de certificados. El mismo proceso también funciona con las [*CRL*](../secgloss/c-gly.md) y las [*CTL*](../secgloss/c-gly.md) mediante [**CertSerializeCRLStoreElement**](/windows/desktop/api/Wincrypt/nf-wincrypt-certserializecrlstoreelement) y [**CertSerializeCTLStoreElement**](/windows/desktop/api/Wincrypt/nf-wincrypt-certserializectlstoreelement).
+En el ejemplo siguiente [](../secgloss/c-gly.md) se muestra cómo serializar un contexto de certificado y sus propiedades en un formulario que se puede almacenar en un archivo, enviarse con un mensaje de correo electrónico o transmitirse de otro modo a otro usuario. En el ejemplo también se muestra cómo se puede volver a cambiar el certificado serializado a un certificado y agregarlo a un almacén de certificados. El mismo proceso también funciona con [*CRL*](../secgloss/c-gly.md) y [*CTL*](../secgloss/c-gly.md) mediante [**CertSerializeCRLStoreElement**](/windows/desktop/api/Wincrypt/nf-wincrypt-certserializecrlstoreelement) y [**CertSerializeCTLStoreElement.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certserializectlstoreelement)
 
-En este ejemplo se muestran las siguientes tareas y funciones de CryptoAPI:
+En este ejemplo se muestran las siguientes tareas y funciones cryptoAPI:
 
--   Apertura de un almacén de certificados del sistema mediante [**CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
--   Apertura de un almacén de certificados con [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
+-   Abrir un almacén de certificados del sistema [**mediante CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
+-   Abrir un almacén de certificados [**mediante CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
 -   Recuperar un certificado de un almacén mediante [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore).
--   Obtener el nombre del sujeto del certificado mediante [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
--   Crear un formulario serializado de un [*contexto de certificado*](../secgloss/c-gly.md) y sus propiedades mediante [**CertSerializeCertificateStoreElement**](/windows/desktop/api/Wincrypt/nf-wincrypt-certserializecertificatestoreelement).
--   Crear un nuevo certificado a partir de una cadena serializada y agregarlo a un almacén de certificados mediante [**CertAddSerializedElementToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddserializedelementtostore).
--   El uso de [**CertAddEncodedCertificateToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddencodedcertificatetostore) para crear un nuevo certificado a partir de la parte codificada de un certificado existente.
--   Usar [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore) para cerrar un almacén de certificados.
+-   Obtener el nombre del sujeto del certificado mediante [**CertGetNameString.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa)
+-   Crear una forma serializada de un contexto [*de certificado y*](../secgloss/c-gly.md) sus propiedades mediante [**CertSerializeCertificateStoreElement**](/windows/desktop/api/Wincrypt/nf-wincrypt-certserializecertificatestoreelement).
+-   Crear un nuevo certificado a partir de una cadena serializada y agregarlo a un almacén de certificados [**mediante CertAddSerializedElementToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddserializedelementtostore).
+-   Usar [**CertAddEncodedCertificateToStore para**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddencodedcertificatetostore) crear un nuevo certificado a partir de la parte codificada de un certificado existente.
+-   Uso [**de CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore) para cerrar un almacén de certificados.
 
 
 ```C++

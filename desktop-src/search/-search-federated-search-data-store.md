@@ -23,7 +23,7 @@ Este tema se organiza de la siguiente manera:
 -   [Envío de consultas y devolución de resultados de búsqueda en RSS o Atom](#sending-queries-and-returning-search-results-in-rss-or-atom)
     -   [Ejemplo de una salida de fuente RSS](#example-of-an-rss-feed-output)
 -   [Asignación automática a Windows shell](#automatic-mapping-to-windows-shell-properties)
--   [Descripción de cómo Mapas de Windows elementos a tipos de archivo](#understanding-how-windows-maps-items-to-file-types)
+-   [Descripción de cómo Mapas de Windows a tipos de archivo](#understanding-how-windows-maps-items-to-file-types)
 -   [Evitar posibles barreras para habilitar un almacén de datos](#avoiding-potential-barriers-to-enabling-a-data-store)
 -   [Recursos adicionales](#additional-resources)
 -   [Temas relacionados](#related-topics)
@@ -97,7 +97,7 @@ Para obtener información más detallada sobre la asignación de propiedades, ve
 
 ## <a name="automatic-mapping-to-windows-shell-properties"></a>Asignación automática a Windows shell
 
-Dentro de los elementos de la fuente RSS, puede elegir incluir otros elementos XML que se asignan automáticamente a Windows del sistema shell. Para ello, incluya un elemento denominado después de la propiedad Windows Shell y con el prefijo Windows espacio de nombres del sistema shell. En el ejemplo siguiente se muestra la declaración de espacio de `win=" http://schemas.microsoft.com/windows/2008/propertynamespace"` nombres y la inclusión de un elemento para la asignación de propiedades `win:System.Contact.PrimaryEmailAddress` :
+Dentro de los elementos de la fuente RSS, puede elegir incluir otros elementos XML que se asignan automáticamente a Windows del sistema shell. Para ello, incluya un elemento denominado después de la propiedad Windows Shell y con el prefijo del espacio de nombres del sistema Windows Shell. En el ejemplo siguiente se muestra la declaración de espacio de `win=" http://schemas.microsoft.com/windows/2008/propertynamespace"` nombres y la inclusión de un elemento para la asignación de propiedades `win:System.Contact.PrimaryEmailAddress` :
 
 
 ```
@@ -123,7 +123,7 @@ http://schemas.microsoft.com/windows/2008/propertynamespace
 
 **Acerca de Windows del sistema shell**
 
-Windows define una lista completa de propiedades [del sistema](../properties/props.md) y el formato de tipo de valor necesario para cada propiedad. La documentación de la propiedad Shell de ventana [System.FileExtension,](../properties/props-system-fileextension.md) por ejemplo, especifica que el valor debe contener el punto inicial (".docx" y no "docx").
+Windows una lista completa de propiedades [del sistema](../properties/props.md) y el formato de tipo de valor necesario para cada propiedad. La documentación de la propiedad Shell de ventana [System.FileExtension,](../properties/props-system-fileextension.md) por ejemplo, especifica que el valor debe contener el punto inicial (".docx" y no "docx").
 
 **Valores de fecha y hora**
 
@@ -140,9 +140,9 @@ Los desarrolladores de .NET deben usar la clase DateTime con `ToString("R") ` pa
 
 Para obtener información más detallada sobre la asignación de propiedades, vea "Elementos extendidos en la búsqueda federada de Windows" en [Creating an OpenSearch Description File in Windows Federated Search](-search-federated-search-osdx-file.md).
 
-## <a name="understanding-how-windows-maps-items-to-file-types"></a>Descripción de cómo Mapas de Windows elementos a tipos de archivo
+## <a name="understanding-how-windows-maps-items-to-file-types"></a>Descripción de cómo Mapas de Windows a tipos de archivo
 
-La búsqueda en la interfaz Windows Explorer permite a los usuarios tratar los resultados como archivos cuando un elemento RSS apunta a un archivo almacenado de forma remota. El usuario puede arrastrar y colocar elementos en el escritorio, y la interfaz de usuario de Windows Explorer muestra el icono correcto y proporciona el menú contextual adecuado. Si el elemento RSS no apunta a un archivo almacenado de forma remota, el archivo se trata como un vínculo y los usuarios pueden realizar acciones en él, como crear un acceso directo o abrirlo en el explorador.
+La búsqueda en la interfaz Windows Explorer permite a los usuarios tratar los resultados como archivos cuando un elemento RSS apunta a un archivo almacenado de forma remota. El usuario puede arrastrar y colocar elementos en el escritorio, y la interfaz de usuario Windows Explorer muestra el icono correcto y proporciona el menú contextual adecuado. Si el elemento RSS no apunta a un archivo almacenado de forma remota, el archivo se trata como un vínculo y los usuarios pueden realizar acciones en él, como crear un acceso directo o abrirlo en el explorador.
 
 En el diagrama de flujo siguiente se muestra Windows determina el tipo de archivo de un elemento.
 
@@ -158,8 +158,8 @@ Por ejemplo, si el elemento tiene una dirección URL de vínculo que usa una rut
 Si el elemento usa el gabinete RSS estándar o el elemento **media:content de MediaRSS,** el proveedor [de OpenSearch](https://github.com/dewitt/opensearch) asume que el elemento es un archivo e identifica la extensión de nombre de archivo de la siguiente manera:
 
 -   Si la [propiedad System.FileExtension](../properties/props-system-fileextension.md) Windows Shell se ha asignado para el elemento, el proveedor usa esa extensión de nombre de archivo.
--   Si no se ha asignado la propiedad [System.FileExtension](../properties/props-system-fileextension.md) Windows Shell, el proveedor usa el atributo **Type** especificado en el gabinete o elemento content. Este elemento debe contener una `MIMEType` cadena, como `"image/jpeg"` . Si está asociado a una extensión de nombre de archivo registrada en el equipo cliente, el elemento se considera `MIMEType` un archivo de ese tipo. Si no está asociado a una extensión de nombre de archivo registrada en el equipo cliente, el elemento `MIMEType` se trata como un tipo de vínculo web. El [OpenSearch](https://github.com/dewitt/opensearch) no intenta analizar el atributo **Url** para buscar la extensión de nombre de archivo.
--   Si está asociado a una extensión de nombre de archivo registrada en el equipo cliente, el proveedor determina si la extensión de nombre de archivo es un tipo de archivo web conocido `MIMEType` (.htm, .html, .asp, .aspx, .php, .mq, .stm). Si es así, el tipo de archivo se considera un tipo de vínculo web; de lo contrario, se considera un tipo de archivo. Por ejemplo, si está asociado .htm la extensión de nombre de archivo, ese elemento se considera un vínculo web en lugar de como un tipo .htm `MIMEType "text/html"` archivo.
+-   Si no se ha asignado la propiedad [System.FileExtension](../properties/props-system-fileextension.md) Windows Shell, el proveedor usa el atributo **Type** especificado en el gabinete o el elemento content. Este elemento debe contener una `MIMEType` cadena, como `"image/jpeg"` . Si está asociado a una extensión de nombre de archivo registrada en el equipo cliente, el elemento se considera `MIMEType` un archivo de ese tipo. Si no está asociado a una extensión de nombre de archivo registrada en el equipo cliente, el elemento `MIMEType` se trata como un tipo de vínculo web. El [OpenSearch](https://github.com/dewitt/opensearch) no intenta analizar el atributo **Url** para buscar la extensión de nombre de archivo.
+-   Si está asociado a una extensión de nombre de archivo registrada en el equipo cliente, el proveedor determina si la extensión de nombre de archivo es un tipo de archivo web conocido `MIMEType` (.htm, .html, .asp, .aspx, .php, .mq, .stm). Si es así, el tipo de archivo se considera un tipo de vínculo web; de lo contrario, se considera un tipo de archivo. Por ejemplo, si está asociado a la extensión .htm nombre de archivo, ese elemento se considera un vínculo web en lugar de como un tipo .htm `MIMEType "text/html"` archivo.
 
 ## <a name="avoiding-potential-barriers-to-enabling-a-data-store"></a>Evitar posibles barreras para habilitar un almacén de datos
 
@@ -188,7 +188,7 @@ Sin embargo, hay alternativas que pueden evitar barreras para habilitar un almac
 **Para usar un motor de búsqueda existente cuando no se puede habilitar un almacén de datos público:**
 
 1.  Use un motor de búsqueda público que ya [admita OpenSearch](https://github.com/dewitt/opensearch) con RSS. Para ello, proporcione a los usuarios un archivo .osdx que tenga una plantilla de dirección URL que restrinja los resultados solo a los del dominio específico.
-2.  Vea el ejemplo siguiente de una [OpenSearch](https://github.com/dewitt/opensearch) para buscar solo el contenido de la Ayuda para Windows mediante una consulta en live.com.
+2.  Vea el ejemplo siguiente de una [descripción OpenSearch](https://github.com/dewitt/opensearch) para buscar solo el contenido de la Ayuda Windows mediante una consulta en live.com.
 
     ```
     <?xml version="1.0" encoding="UTF-8"?>
@@ -206,7 +206,7 @@ Sin embargo, hay alternativas que pueden evitar barreras para habilitar un almac
 **Para usar un servidor de indexación existente que admita OpenSearch cuando no se puedan habilitar los índices o almacenes de datos empresariales propietarios:**
 
 1.  Seleccione un servidor de indexación existente que [admita OpenSearch](https://github.com/dewitt/opensearch) indexar el contenido, como SharePoint Search Server.
-2.  Cree un archivo .osdx que restrinja los resultados del índice SharePoint a solo los del servidor mediante su sintaxis KeyWord dentro de la plantilla de dirección URL.
+2.  Cree un archivo .osdx que restrinja los resultados del índice de SharePoint solo a los del servidor mediante su sintaxis KeyWord dentro de la plantilla de dirección URL.
 
 **Para escribir un almacén de datos del lado cliente si una solución solo del lado servidor no funciona:**
 
@@ -220,7 +220,7 @@ Sin embargo, hay alternativas que pueden evitar barreras para habilitar un almac
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
-Para obtener información adicional sobre cómo implementar la federación de búsqueda en almacenes de datos remotos mediante tecnologías de OpenSearch en Windows 7 y versiones posteriores, vea "Recursos adicionales" en Búsqueda federada [en Windows](/previous-versions//dd742958(v=vs.85)).
+Para obtener información adicional sobre cómo implementar la federación de búsqueda en almacenes de datos remotos mediante tecnologías de OpenSearch en Windows 7 y versiones posteriores, vea "Recursos adicionales" en [Búsqueda federada en Windows](/previous-versions//dd742958(v=vs.85)).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -238,7 +238,7 @@ Para obtener información adicional sobre cómo implementar la federación de b�
 [Crear un archivo OpenSearch descripción en Windows búsqueda federada](-search-federated-search-osdx-file.md)
 </dt> <dt>
 
-[Seguir los procedimientos recomendados en Windows búsqueda federada](-search-fedsearch-best.md)
+[Seguir los procedimientos recomendados en Windows federated Search](-search-fedsearch-best.md)
 </dt> <dt>
 
 [Implementación de conectores de búsqueda en Windows búsqueda federada](-search-federated-search-deploying.md)

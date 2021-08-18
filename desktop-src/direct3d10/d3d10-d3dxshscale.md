@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0fab96575e5542eaaed725a88f9ba52c3289a4ad
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 46018d83a473202066ac22c9e4bda88a096154ffd6fc79b13c604d8937d1140c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990755"
 ---
 # <a name="d3dxshscale-function-d3dx10h"></a>Función D3DXSHScale (D3DX10.h)
 
@@ -48,7 +48,7 @@ FLOAT* D3DXSHScale(
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a coeficientes de salida de armónica esférica (SH). La evaluación genera coeficientes order-to-order. Vea la sección Comentarios.
+Puntero a coeficientes de salida armónicos esféricos (SH). La evaluación genera coeficientes order-to-order. Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -103,7 +103,7 @@ Cada coeficiente de la función base Ylm se almacena en la ubicación de memoria
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

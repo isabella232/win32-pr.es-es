@@ -50,7 +50,7 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 
 
-| Location    | Ruta de acceso o dirección URL                                                                                                    |
+| Ubicación    | Ruta de acceso o dirección URL                                                                                                    |
 |-------------|-------------------------------------------------------------------------------------------------------------|
 | Windows SDK | \\Archivos de \\ programa Sdk de Microsoft Windows ejemplos de audio multimedia \\ \\ v7.0 \\ \\ \\ \\ RenderExclusiveEventDriven \\ ... |
 

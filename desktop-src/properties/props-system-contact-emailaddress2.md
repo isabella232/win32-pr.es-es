@@ -1,17 +1,17 @@
 ---
 description: Dirección de correo electrónico 2 del contacto.
 ms.assetid: d4ead3ba-755c-4438-aac2-b1cec1b51dad
-title: System. contact. EmailAddress2
+title: System.Contact.EmailAddress2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f84da45f4553c7abbdbcfdde3a2e2253fc965ca2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 394b88b90d521114ecd166900c5cf3475cf75d833160d2bcac0edb60ffe62efd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119711255"
 ---
-# <a name="systemcontactemailaddress2"></a>System. contact. EmailAddress2
+# <a name="systemcontactemailaddress2"></a>System.Contact.EmailAddress2
 
 Dirección de correo electrónico 2 del contacto.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

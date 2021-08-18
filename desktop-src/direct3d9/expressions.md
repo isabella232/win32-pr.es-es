@@ -4,12 +4,12 @@ ms.assetid: 642aa188-5dd7-49fc-b6cc-845f8fc22530
 title: Expresiones (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3aa574069094853eb506f7a1b38cdb6cd4379d3b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: daeffeb09a2c2f496f73d492581cb2b51ac2e518e176bbbc848889bef5716b25
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105677039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985705"
 ---
 # <a name="expressions-direct3d-9"></a>Expresiones (Direct3D 9)
 
@@ -57,9 +57,9 @@ Las expresiones son instrucciones matemáticas o lógicas que se usan en el lado
 
     
 
-    Los valores escalares deben ser valores escalares literales.
+    Los escalares deben ser valores escalares literales.
 
-    El número de inicializadores debe ser compatible con la variable (State) en el lado izquierdo del signo igual.
+    El número de inicializadores debe ser compatible con la variable (estado) del lado izquierdo del signo igual.
 
 6.  Expresión OR
 
@@ -69,7 +69,7 @@ Las expresiones son instrucciones matemáticas o lógicas que se usan en el lado
 
     
 
-    Los tokens deben ser compatibles con la variable (State) en el lado izquierdo del signo igual.
+    Los tokens deben ser compatibles con la variable (estado) del lado izquierdo del signo igual.
 
     Los tokens no distinguen mayúsculas de minúsculas.
 
@@ -81,7 +81,7 @@ Las expresiones son instrucciones matemáticas o lógicas que se usan en el lado
 
     
 
-    NULL solo se puede asignar a un sombreador, un muestreador o un objeto de textura.
+    NULL solo se puede asignar a un sombreador, muestreador o un objeto de textura.
 
 8.  Bloque de ensamblado
 
@@ -91,11 +91,11 @@ Las expresiones son instrucciones matemáticas o lógicas que se usan en el lado
 
     
 
-    Los bloques de ensamblado de PS deben asignarse al estado u.
+    Los bloques de ensamblado ps deben asignarse al estado PIXELSHADER.
 
     Los bloques de ensamblado de VS deben asignarse al estado VERTEXSHADER.
 
-9.  Bloque de estado de muestra
+9.  Sampler State Block
 
     ```
     sampler_state { [ state = expression ; [ state = ... ] ] }
@@ -103,11 +103,11 @@ Las expresiones son instrucciones matemáticas o lógicas que se usan en el lado
 
     
 
-    Los bloques de estado de muestra son secuencias de estado de la fase de muestra sin indexar o asignaciones de textura.
+    Los bloques de estado del muestreador son secuencias de asignaciones de estado de fase del muestreador sin indexar o de textura.
 
-    Los bloques de estado de muestra se deben asignar al estado de efecto de la muestra.
+    Los bloques de estado del muestreador deben asignarse al estado de efecto SAMPLER.
 
-10. Bloque de estado de estado de efecto
+10. Bloque de estado de efecto
 
     ```
     stateblock_state { [ state [ [index] ] = expression; 
@@ -116,11 +116,11 @@ Las expresiones son instrucciones matemáticas o lógicas que se usan en el lado
 
     
 
-    Los bloques de estado son secuencias de estado general. Los bloques de estado pueden estar anidados, pero no pueden contener referencias circulares.
+    Los bloques de estado son secuencias de estado general. Los bloques de estado se pueden anidar, pero no pueden contener referencias circulares.
 
-    Los bloques de estado deben estar asignados al estado de efecto de STATEBLOCK.
+    Los bloques de estado deben asignarse al estado de efecto STATEBLOCK.
 
-11. Compilación de HLSL
+11. Compilación HLSL
 
     ```
     compile target entrypoint ( [ arguments ] )
@@ -128,9 +128,9 @@ Las expresiones son instrucciones matemáticas o lógicas que se usan en el lado
 
     
 
-    El destino de sombreador de vértices + \_ m n indica la versión de \_ D3DVS \_ (m, n) versión del sombreador de vértices. El destino del sombreador de píxeles PS \_ m \_ n indica la versión \_ del sombreador de píxeles de la versión de D3DPS (m, n).
+    El sombreador de vértices frente al destino m n indica la versión del sombreador de \_ \_ vértices D3DVS \_ VERSION(m, n). El destino del sombreador de píxeles ps m n indica la versión del sombreador de \_ \_ píxeles D3DPS \_ VERSION(m, n).
 
-    Las expresiones de compilación del lenguaje de alto nivel del sombreador de vértices solo se pueden asignar al estado del efecto VERTEXSHADER. Las expresiones de compilación del lenguaje de alto nivel del sombreador de píxeles solo se pueden asignar al estado del efecto u.
+    Las expresiones de compilación de lenguaje de alto nivel del sombreador de vértices solo se pueden asignar al estado de efecto VERTEXSHADER. Las expresiones de compilación de lenguaje de alto nivel del sombreador de píxeles solo se pueden asignar al estado de efecto PIXELSHADER.
 
 ## <a name="related-topics"></a>Temas relacionados
 

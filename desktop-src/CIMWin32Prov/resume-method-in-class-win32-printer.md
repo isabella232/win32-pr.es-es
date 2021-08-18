@@ -2,7 +2,7 @@
 description: Reanuda una cola de impresión en pausa.
 ms.assetid: 6d6d21e9-f469-4e2c-9a89-3e9febe229fc
 ms.tgt_platform: multiple
-title: Método resume de la clase Win32_Printer
+title: Método Resume de la clase Win32_Printer reanudación
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 3eca8849fd1c5c449261dac1a9530f4da42e9482
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2663136708d26e026e0f2166cfc13177ef484e27f9f68edbfe1865a4178f255a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119588235"
 ---
-# <a name="resume-method-of-the-win32_printer-class"></a>Método resume de la \_ clase Printer de Win32
+# <a name="resume-method-of-the-win32_printer-class"></a>Método Resume de la clase Printer de Win32 \_
 
-El método **reanudar** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) reanuda una cola de impresión en pausa.
+El **método de** clase WMI [Resume](/windows/desktop/WmiSdk/retrieving-a-class) reanuda una cola de impresión en pausa.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -68,8 +68,8 @@ Acceso denegado
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ printer. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                        |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -78,13 +78,13 @@ Acceso denegado
 
 <dl> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_Impresora Win32**](win32-printer.md)
+[**Impresora \_ Win32**](win32-printer.md)
 </dt> <dt>
 
-[**PAUSE (método)**](pause-method-in-class-win32-printer.md)
+[**Pause (método)**](pause-method-in-class-win32-printer.md)
 </dt> </dl>
 
  

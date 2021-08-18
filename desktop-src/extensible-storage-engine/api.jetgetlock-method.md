@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetGetLock (método)'
-title: Método API. JetGetLock
+description: 'Más información sobre: Método Api.JetGetLock'
+title: Método Api.JetGetLock
 TOCTitle: 'JetGetLock method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetLock(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.GetLockGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetlock(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b8480b6ac2eab84a0299e0bb3d480908e4f646fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 692d78c274d497c64deff20fc61f2cc6a32e868b6f591e4dd6a32437d007b1b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119623565"
 ---
-# <a name="apijetgetlock-method"></a>Método API. JetGetLock
+# <a name="apijetgetlock-method"></a>Método Api.JetGetLock
 
-Reserve explícitamente la capacidad de actualizar una fila, un bloqueo de escritura o impedir explícitamente que una fila se actualice en cualquier otra sesión, bloqueo de lectura. Normalmente, los bloqueos de escritura de filas se adquieren implícitamente como resultado de la actualización de filas. Normalmente, los bloqueos de lectura no son necesarios debido a las versiones de registros. Sin embargo, en algunos casos, una transacción puede desear bloquear explícitamente una fila para aplicar la serialización o asegurarse de que una operación posterior se realizará correctamente.
+Reservar explícitamente la capacidad de actualizar una fila, escribir bloqueo o impedir explícitamente que cualquier otra sesión actualice una fila, el bloqueo de lectura. Normalmente, los bloqueos de escritura de fila se adquieren implícitamente como resultado de la actualización de filas. Normalmente, los bloqueos de lectura no son necesarios debido al control de versiones de los registros. Sin embargo, en algunos casos, es posible que una transacción desee bloquear explícitamente una fila para aplicar la serialización o asegurarse de que una operación posterior se realizará correctamente.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,23 +64,23 @@ public static void JetGetLock(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor que se va a usar. Se adquirirá un bloqueo en el registro actual.
+    Cursor que se usará. Se adquirirá un bloqueo en el registro actual.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. GetLockGrbit](./getlockgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.GetLockGrbit](./getlockgrbit-enumeration.md)  
     
-    Opciones de bloqueo, use esta opción para especificar el tipo de bloqueo que se debe obtener.
+    Opciones de bloqueo, úsese esta opción para especificar el tipo de bloqueo que se va a obtener.
 
 ## <a name="see-also"></a>Vea también
 
@@ -88,6 +88,6 @@ public static void JetGetLock(
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,10 +1,10 @@
 ---
-title: TLSKeyPackEnumEnd función)
-description: Continúa desde una llamada anterior a la función TLSKeyPackEnumBegin y finaliza la enumeración.
+title: Función TLSKeyPackEnumEnd
+description: Continúa desde una llamada anterior a la función TLSKeyPackEnumBegin y finaliza la enumeración .
 ms.assetid: 3434e18d-54c9-46ed-b6a5-bc174b63a152
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la función TLSKeyPackEnumEnd
+- Función TLSKeyPackEnumEnd Servicios de Escritorio remoto
 topic_type:
 - apiref
 api_name:
@@ -15,19 +15,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04723318b29adff7a647fe2cab39fb0b16f3f5a9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 176c5d6b03fabe2e085b2582043233cd5fdc2681ef04ef07723ba5435a465863
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986925"
 ---
-# <a name="tlskeypackenumend-function"></a>TLSKeyPackEnumEnd función)
+# <a name="tlskeypackenumend-function"></a>Función TLSKeyPackEnumEnd
 
-Continúa desde una llamada anterior a la función [**TLSKeyPackEnumBegin**](tlskeypackenumbegin.md) y finaliza la enumeración.
+Continúa desde una llamada anterior a la [**función TLSKeyPackEnumBegin**](tlskeypackenumbegin.md) y finaliza la enumeración .
 
 > [!Note]  
-> Esta función no tiene asociado ningún archivo de encabezado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mstlsapi.dll.
+> Esta función no tiene ningún archivo de encabezado asociado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mstlsapi.dll.
 
  
 
@@ -47,14 +47,14 @@ DWORD WINAPI TLSKeyPackEnumEnd(
 
 <dl> <dt>
 
-*hHandle* \[ de\]
+*hHandle* \[ En\]
 </dt> <dd>
 
-Identificador de un servidor de licencias de Escritorio remoto. Especifique un identificador abierto por la función [**TLSConnectToLsServer**](tlsconnecttolsserver.md) .
+Identificador de un Escritorio remoto de licencias. Especifique un identificador abierto por la [**función TLSConnectToLsServer.**](tlsconnecttolsserver.md)
 
 </dd> <dt>
 
-*pdwErrCode* \[ enuncia\]
+*pdwErrCode* \[ out\]
 </dt> <dd>
 
 Puntero a una variable que recibe uno de los siguientes códigos de error en la devolución.
@@ -63,7 +63,7 @@ Puntero a una variable que recibe uno de los siguientes códigos de error en la 
 
 <span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>
 
-<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ S \_ correcto** (0)
+<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ S \_ SUCCESS** (0)
 
 
 </dt> <dd>
@@ -74,7 +74,7 @@ La llamada se realiza correctamente.
 
 <span id="LSERVER_E_INVALID_HANDLE"></span><span id="lserver_e_invalid_handle"></span>
 
-<span id="LSERVER_E_INVALID_HANDLE"></span><span id="lserver_e_invalid_handle"></span>**LSERVER \_ E \_ \_ identificador no válido** (5005)
+<span id="LSERVER_E_INVALID_HANDLE"></span><span id="lserver_e_invalid_handle"></span>**LSERVER \_ E \_ IDENTIFICADOR \_ NO VÁLIDO** (5005)
 
 
 </dt> <dd>
@@ -85,18 +85,18 @@ El identificador no es válido.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve los siguientes posibles valores devueltos.
+Esta función devuelve los siguientes valores devueltos posibles.
 
 <dl> <dt>
 
-**RPC \_ S \_ correcto**
+**RPC \_ S \_ OK**
 </dt> <dd>
 
-La llamada se realizó correctamente. Compruebe el valor del parámetro *pdwErrCode* para obtener el código de retorno de la llamada.
+La llamada se ha realiza correctamente. Compruebe el valor del parámetro *pdwErrCode* para obtener el código de retorno de la llamada.
 
 </dd> <dt>
 
-**\_ \_ argumento no válido de RPC S \_**
+**RPC \_ S \_ INVALID \_ ARG**
 </dt> <dd>
 
 El argumento no era válido.

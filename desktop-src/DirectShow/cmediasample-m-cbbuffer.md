@@ -1,7 +1,7 @@
 ---
 description: Tamaño del búfer, en bytes.
 ms.assetid: 1df5baed-3f2e-4303-a4c2-721de2e2fb39
-title: 'Miembro CMediaSample:: m_cbBuffer (Amfilter. h)'
+title: Miembro CMediaSample::m_cbBuffer (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a6744d40cc4d518b2ae61ac58ed6fe163266d147
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5e3f70e15120d4e2fa9796ab16ba6aee2edafc4e54d7c882d22165f972437ced
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634635"
 ---
-# <a name="cmediasamplem_cbbuffer-member"></a>Miembro cbBuffer CMediaSample:: m \_
+# <a name="cmediasamplem_cbbuffer-member"></a>Miembro CMediaSample::m \_ cbBuffer
 
 Tamaño del búfer, en bytes.
 
@@ -42,8 +42,8 @@ LONG m_cbBuffer;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ LONG m_cbBuffer;
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

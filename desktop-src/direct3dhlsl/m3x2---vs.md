@@ -1,6 +1,6 @@
 ---
-title: m3x2-vs
-description: Multiplica un vector de tres componentes por una matriz de 3x2. | m3x2-vs
+title: m3x2- vs
+description: Multiplica un vector de 3 componentes por una matriz de 3x2. | m3x2- vs
 ms.assetid: 4ef3bd47-3e38-4d9d-a8f5-6ee9c08de69c
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,39 +9,39 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 870a8d4918870930faa536ead01dab2947d5faea
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ad05ef52970e30d2a130279c6109409205acb9615816e3fa0c7e185998f62254
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104279999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119854145"
 ---
-# <a name="m3x2---vs"></a>m3x2-vs
+# <a name="m3x2---vs"></a>m3x2- vs
 
-Multiplica un vector de tres componentes por una matriz de 3x2.
+Multiplica un vector de 3 componentes por una matriz de 3x2.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| m3x2 DST, src0, SRC1 |
+| m3x2 dst, src0, src1 |
 |----------------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino. El resultado es un vector de dos componentes.
--   src0 es un registro de origen que representa un vector de tres componentes.
--   SRC1 es un registro de origen que representa una matriz de 3x2, que corresponde al primer de 2 registros consecutivos.
+-   dst es el registro de destino. El resultado es un vector de 2 componentes.
+-   src0 es un registro de origen que representa un vector de 3 componentes.
+-   src1 es un registro de origen que representa una matriz 3x2, que corresponde al primero de dos registros consecutivos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | m3x2                   | x    | x    | x    | x     | x    | x     |
 
@@ -49,7 +49,7 @@ Multiplica un vector de tres componentes por una matriz de 3x2.
 
  
 
-La máscara XY es necesaria para el registro de destino. Los modificadores Negate y swizzle se permiten para src0, pero no para SRC1.
+La máscara xy es necesaria para el registro de destino. Se permiten modificadores negate y swzzle para src0, pero no para src1.
 
 Las ecuaciones siguientes muestran cómo funciona la instrucción:
 
@@ -61,9 +61,9 @@ dest.y = (src0.x * src2.x) + (src0.y * src2.y) + (src0.z * src2.z);
 
 
 
-El vector de entrada se encuentra en el registro src0. La matriz de 3x2 de entrada se encuentra en el registro SRC1 y en el siguiente registro superior en el mismo archivo de registro, tal como se muestra en la siguiente expansión. Se genera un resultado 2D, lo que no afecta a los demás elementos del registro de destino (dest. z y dest. w).
+El vector de entrada está en el registro src0. La matriz de entrada 3x2 está en register src1 y el siguiente registro superior en el mismo archivo de registro, como se muestra en la expansión siguiente. Se genera un resultado 2D, sin que los demás elementos del registro de destino (dest.z y dest.w) se ven afectados.
 
-Esta operación se utiliza normalmente para las transformaciones 2D. Esta instrucción se implementa como un par de productos DOT como se muestra aquí.
+Esta operación se usa normalmente para transformaciones 2D. Esta instrucción se implementa como un par de productos de punto, como se muestra aquí.
 
 
 ```
@@ -75,7 +75,7 @@ dp3   r0.y, r1, c1
 
 
 
-Los modificadores swizzle y Negate no son válidos para el registro SRC1. Los registros dest y src0, o cualquiera de los registros SRC1 + i, no pueden ser iguales.
+Los modificadores swzzle y negate no son válidos para el registro src1. El registro dest y src0, o cualquiera de los registros src1+i, no puede ser el mismo.
 
 ## <a name="related-topics"></a>Temas relacionados
 

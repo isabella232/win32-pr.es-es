@@ -1,25 +1,25 @@
 ---
-description: En el siguiente ejemplo de C# se recupera y se muestra información de red física y virtual para el conmutador especificado.
+description: El siguiente ejemplo de C# recupera y muestra información de red física y virtual para el conmutador especificado.
 ms.assetid: 679168E2-C79F-4A7A-8C04-A309315CA670
-title: Consultar objetos de red
+title: Consulta de objetos de red
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df2bbf4fb86269ec07bb4015b00beda491ef3dcb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2eb962ee61532d4c5d5cf25f92dd3b94ddb96986228c2fa479da8cf50113ca8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014453"
 ---
-# <a name="querying-networking-objects"></a>Consultar objetos de red
+# <a name="querying-networking-objects"></a>Consulta de objetos de red
 
-En el siguiente ejemplo de C# se recupera y se muestra información de red física y virtual para el conmutador especificado. Este código se toma del [ejemplo de red de Hyper-V](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Hyper-V/Networking).
+El siguiente ejemplo de C# recupera y muestra información de red física y virtual para el conmutador especificado. Este código se toma del ejemplo [de red de Hyper-V](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Hyper-V/Networking).
 
-La sintaxis de línea de comandos para ejecutar este ejemplo es la siguiente:
+La sintaxis de la línea de comandos para ejecutar este ejemplo es:
 
 **NetworkingSamples.exe EnumerateSwitch** *SwitchName*
 
-donde *SwitchName* es el nombre del modificador para el que se va a mostrar información. El nombre del modificador está contenido en la propiedad [**MSVM \_ VirtualEthernetSwitch. ElementName**](msvm-virtualethernetswitch.md) .
+donde *SwitchName* es el nombre del modificador para el que se va a mostrar la información. El nombre del modificador se encuentra en la [**propiedad \_ VirtualEthernetSwitch.ElementName de Msvm.**](msvm-virtualethernetswitch.md)
 
 
 ```CSharp

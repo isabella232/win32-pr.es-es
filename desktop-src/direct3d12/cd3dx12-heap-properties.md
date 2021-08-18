@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_HEAP_PROPERTIES estructura (D3dx12. h)
-description: Estructura auxiliar para habilitar la inicialización sencilla de una \_ estructura de propiedades del montón D3D12 \_ .
+title: CD3DX12_HEAP_PROPERTIES estructura (D3dx12.h)
+description: Estructura auxiliar para permitir la inicialización sencilla de una estructura DE PROPIEDADES DE MONTÓN de D3D12. \_ \_
 ms.assetid: AC759F25-D643-412D-AA83-3A2C040BE64B
 keywords:
-- Estructura de CD3DX12_HEAP_PROPERTIES
+- CD3DX12_HEAP_PROPERTIES estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90cc5f5cee6bf70aad064396589aad8a483f2c50
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 36a4d2241568d98957ecd809f33f27c343bb0e73d0d246284e5635f22a594108
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752325"
 ---
-# <a name="cd3dx12_heap_properties-structure"></a>CD3DX12 \_ estructura de propiedades del montón \_
+# <a name="cd3dx12_heap_properties-structure"></a>Estructura DE PROPIEDADES DEL \_ MONTÓN CD3DX12 \_
 
-Estructura auxiliar para habilitar la inicialización sencilla de una estructura de [**\_ \_ propiedades del montón D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_properties) .
+Estructura auxiliar para permitir la inicialización sencilla de una estructura DE PROPIEDADES [**\_ DE MONTÓN de \_ D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_properties)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,66 +47,66 @@ struct CD3DX12_HEAP_PROPERTIES  : public D3D12_HEAP_PROPERTIES{
 
 <dl> <dt>
 
-**\_ \_ Propiedades del montón CD3DX12 ()**
+**CD3DX12 \_ HEAP \_ PROPERTIES()**
 </dt> <dd>
 
-Crea una nueva instancia no inicializada de \_ las propiedades del montón CD3DX12 \_ .
+Crea una nueva instancia sin inicializar de una INSTANCIA DE MONTÓN DE CD3DX12 \_ \_ PROPERTIES.
 
 </dd> <dt>
 
-**\_propiedades del montón CD3DX12 explícitas \_ ( \_ propiedades del montón const D3D12 \_ &o)**
+**propiedades explícitas del montón \_ CD3DX12(const \_ D3D12 \_ HEAP \_ PROPERTIES &o)**
 </dt> <dd>
 
-Crea una nueva instancia de \_ las propiedades del montón CD3DX12 \_ , inicializada con el contenido de otra estructura de [**\_ \_ propiedades del montón D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_properties) .
+Crea una nueva instancia de UNA PROPIEDAD DE MONTÓN CD3DX12, inicializada con el contenido de otra estructura DE PROPIEDADES \_ DEL MONTÓN \_ de [**D3D12. \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_properties)
 
 </dd> <dt>
 
-**CD3DX12 \_ \_ propiedades del montón ( \_ D3D12 \_ de la \_ propiedad de la página de CPU cpuPageProperty, D3D12 de \_ \_ bloque de memoria MEMORYPOOLPREFERENCE, uint creationNodeMask = 1, uint nodeMask = 1)**
+**CD3DX12 \_ HEAP \_ PROPERTIES(D3D12 \_ CPU PAGE PROPERTY \_ \_ cpuPageProperty, D3D12 \_ MEMORY POOL \_ memoryPoolPreference, UINT creationNodeMask = 1, UINT nodeMask = 1)**
 </dt> <dd>
 
-Crea una nueva instancia de \_ las propiedades del montón CD3DX12 \_ , inicializando los siguientes parámetros:
+Crea una nueva instancia de LAS PROPIEDADES DEL MONTÓN DE CD3DX12, \_ \_ inicializando los parámetros siguientes:
 
-[**D3D12 \_ \_ \_ Propiedad de página CPU**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_cpu_page_property) cpuPageProperty
+[**D3D12 \_ CPU \_ PAGE \_ PROPERTY**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_cpu_page_property) cpuPageProperty
 
-[**D3D12 \_ MemoryPoolPreference del \_ bloque de memoria**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_memory_pool)
+[**D3D12 \_ MEMORY \_ POOL**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_memory_pool) memoryPoolPreference
 
-rechace UINT creationNodeMask = 1
+(opt) UINT creationNodeMask = 1
 
-rechace UINT nodeMask = 1
+(opt) NodeMask de UINT = 1
 
 </dd> <dt>
 
-**propiedades del \_ montón de CD3DX12 explícitas \_ ( \_ \_ tipo de tipo de montón D3D12, uint CREATIONNODEMASK = 1, uint nodeMask = 1)**
+**explicit CD3DX12 \_ HEAP \_ PROPERTIES(D3D12 \_ HEAP \_ TYPE type, UINT creationNodeMask = 1, UINT nodeMask = 1)**
 </dt> <dd>
 
-Crea una nueva instancia de \_ las propiedades del montón CD3DX12 \_ , inicializando los siguientes parámetros:
+Crea una nueva instancia de LAS PROPIEDADES DEL MONTÓN DE CD3DX12, \_ \_ inicializando los parámetros siguientes:
 
-[**D3D12 \_ Tipo \_ de montón**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_type)
+[**D3D12 \_ TIPO DE \_ MONTÓN**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_type)
 
-rechace UINT creationNodeMask = 1
+(opt) UINT creationNodeMask = 1
 
-rechace UINT nodeMask = 1
+(opt) NodeMask de UINT = 1
 
 </dd> <dt>
 
-**operador const D3D12 \_ \_ propiedades del montón& () Const**
+**operator const D3D12 \_ HEAP \_ PROPERTIES&() const**
 </dt> <dd>
 
-Define el & operador de paso por referencia para el tipo de estructura primaria.
+Define el & de paso por referencia para el tipo de estructura primaria.
 
 </dd> <dt>
 
-**operador en línea = = (propiedades del \_ montón const D3D12 \_& l, propiedades del montón const D3D12 \_ \_& r)**
+**inline operator==( const D3D12 \_ HEAP \_ PROPERTIES& l, const D3D12 \_ HEAP PROPERTIES& r \_ )**
 </dt> <dd>
 
-Comprueba la igualdad entre las \_ instancias de las propiedades del montón D3D12 especificadas \_ , en función de la igualdad de todos los campos de miembro.
+Comprueba la igualdad entre las instancias de PROPIEDADES DE MONTÓN de D3D12 especificadas, en función de la \_ igualdad de todos los campos de \_ miembro.
 
 </dd> <dt>
 
-**operador insertado! = (propiedades del \_ montón const D3D12 \_& l, propiedades del montón const D3D12 \_ \_& r)**
+**inline operator!=( const D3D12 \_ HEAP \_ PROPERTIES& l, const D3D12 \_ HEAP PROPERTIES& r \_ )**
 </dt> <dd>
 
-Comprueba la desigualdad entre las instancias de propiedades del montón D3D12 especificadas \_ \_ . Se implementa tomando el inverso del valor del **operador = =** .
+Comprueba la desigualdad entre las instancias de PROPIEDADES DE MONTÓN de D3D12 \_ \_ especificadas. Se implementa tomando el inverso del **valor operator==.**
 
 </dd> </dl>
 
@@ -116,7 +116,7 @@ Comprueba la desigualdad entre las instancias de propiedades del montón D3D12 e
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -124,7 +124,7 @@ Comprueba la desigualdad entre las instancias de propiedades del montón D3D12 e
 
 <dl> <dt>
 
-[**\_Propiedades del montón D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_properties)
+[**PROPIEDADES DEL MONTÓN D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_heap_properties)
 </dt> <dt>
 
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)

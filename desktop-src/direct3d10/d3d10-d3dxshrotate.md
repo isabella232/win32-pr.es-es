@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 2f2af3fe59c57ba32bc03bb59233bec72722bbb5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0ff63f6ad2fbbb75baaa32c4754a4cee3437ba34fe6dbd3b0412464deaf8fd71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990785"
 ---
 # <a name="d3dxshrotate-function-d3dx10h"></a>Función D3DXSHRotate (D3DX10.h)
 
@@ -48,7 +48,7 @@ FLOAT* D3DXSHRotate(
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a coeficientes de salida armónicos esféricos (SH). La evaluación genera coeficientes order-to-order. Este puntero no debe incluir un alias con pIn. Vea la sección Comentarios.
+Puntero a coeficientes de salida de armónica esférica (SH). La evaluación genera coeficientes order-to-order. Este puntero no debe incluir un alias con pIn. Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Puntero a coeficientes de salida armónicos esféricos (SH). La evaluación gene
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación de SH. Debe estar en el intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
+Orden de la evaluación de SH. Debe estar en el intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, ambos incluidos. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
@@ -103,7 +103,7 @@ Cada coeficiente de la función base Ylm se almacena en la ubicación de memoria
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

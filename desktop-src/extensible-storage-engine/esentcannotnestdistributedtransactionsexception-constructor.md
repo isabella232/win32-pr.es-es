@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentCannotNestDistributedTransactionsException'
-title: Constructor de EsentCannotNestDistributedTransactionsException
+description: 'Más información sobre: Constructor EsentCannotNestDistributedTransactionsException'
+title: Constructor EsentCannotNestDistributedTransactionsException
 TOCTitle: 'EsentCannotNestDistributedTransactionsException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentCannotNestDistributedTransactionsException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcannotnestdistributedtransactionsexception.esentcannotnestdistributedtransactionsexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 25ff80386341dff84486422e8f9392e1e9dcda30
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e17acf02383f732e0e2b915056ad8e978f2450753cf87fede1e7e35ae71ad236
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103817966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119785838"
 ---
-# <a name="esentcannotnestdistributedtransactionsexception-constructor"></a>Constructor de EsentCannotNestDistributedTransactionsException
+# <a name="esentcannotnestdistributedtransactionsexception-constructor"></a>Constructor EsentCannotNestDistributedTransactionsException
 
 Inicializa una nueva instancia de la clase EsentCannotNestDistributedTransactionsException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentCannotNestDistributedTransactionsException()
 public EsentCannotNestDistributedTransactionsException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentCannotNestDistributedTransactionsException()
 
 [Miembros de EsentCannotNestDistributedTransactionsException](./esentcannotnestdistributedtransactionsexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

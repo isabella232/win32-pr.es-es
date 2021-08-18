@@ -33,7 +33,7 @@ ms.locfileid: "117889212"
 ---
 # <a name="windows8paramhungioactions-field"></a>Campo Windows8Param.HungIOActions
 
-Conjunto de acciones que se realizarán en las E/S que aparecen como no ejecutadas.
+Conjunto de acciones que se deben realizar en las E/S que aparecen como no ejecutadas.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -53,7 +53,7 @@ value = Windows8Param.HungIOActions
 public const JET_param HungIOActions
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

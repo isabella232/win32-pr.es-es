@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. deleteAll
+title: LISTBOX.deleteAll
 description: El método deleteAll elimina todos los elementos del control de cuadro de lista.
 ms.assetid: 12b330c7-48f8-418d-b673-b33ae5273547
 keywords:
-- Media Player de Windows de LISTBOX. deleteAll
+- LISTBOX.deleteAll Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a57b599d04efe2884d26319d2649e9c8db954edd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b0df94843ca75c6ffff2dd6c287d33100f5b610f272a6e5a55292950e6d6b206
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118906"
 ---
-# <a name="listboxdeleteall"></a>LISTBOX. deleteAll
+# <a name="listboxdeleteall"></a>LISTBOX.deleteAll
 
-El método **DeleteAll** elimina todos los elementos del control de cuadro de lista.
+El **método deleteAll** elimina todos los elementos del control de cuadro de lista.
 
 ``` syntax
         elementID.deleteAll()
@@ -42,7 +42,7 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 

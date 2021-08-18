@@ -1,11 +1,11 @@
 ---
-title: Método INapServerCallback (NapSystemHealthValidator. h)
-description: Lo usan los SHV para indicar la finalización de la solicitud asincrónica.
+title: Método INapServerCallback OnComplete (NapSystemHealthValidator.h)
+description: Usado por shvs para indicar la finalización de solicitudes asincrónicas.
 ms.assetid: 959ee4ac-7c29-4013-a174-24abc6a580c7
 keywords:
-- Método alcomplete NAP
-- Método alcomplete NAP, interfaz INapServerCallback
-- Interfaz INapServerCallback NAP, método alcomplete
+- Nap del método OnComplete
+- Método OnComplete NAP , interfaz INapServerCallback
+- INapServerCallback interface NAP , Método OnComplete
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ef846d3d9dc2d6618f0eca9f097d74222606eb4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 16b0eb14663894eb1aac6911659eb452a1d50af59219b9c978215dc96de8a12f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012593"
 ---
-# <a name="inapservercallbackoncomplete-method"></a>INapServerCallback:: alcomplete (método)
+# <a name="inapservercallbackoncomplete-method"></a>INapServerCallback::OnComplete (Método)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-Los SHV usan el método **INapServerCallback:: alcomplete** para indicar la finalización de la solicitud asincrónica.
+Los SHV usan el **método INapServerCallback::OnComplete** para indicar la finalización de solicitudes asincrónicas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,20 +48,20 @@ HRESULT OnComplete(
 
 <dl> <dt>
 
-*solicitud* \[ de de\]
+*solicitud* \[ En\]
 </dt> <dd>
 
-Un puntero a un objeto [**INapSystemHealthValidationRequest**](inapsystemhealthvalidationrequest.md) que representa una solicitud de validación.
+Puntero a un [**objeto INapSystemHealthValidationRequest**](inapsystemhealthvalidationrequest.md) que representa una solicitud de validación.
 
 </dd> <dt>
 
-*ErrorCode* \[ de\]
+*errorCode* \[ En\]
 </dt> <dd>
 
-Un [**código de error de NAP**](nap-error-constants.md) que indica el motivo por el que no se pudo realizar la validación.
+Código [**de error nap**](nap-error-constants.md) que indica el motivo por el que no se pudo realizar la validación.
 
 > [!Note]  
-> Normalmente, el valor devuelto del método [**INapSystemHealthValidationRequest:: SetSoHResponse**](inapsystemhealthvalidationrequest-setsohresponse-method.md) se pasa a este parámetro. Sin embargo, si no se pudo llamar a **SetSoHResponse** debido a un error de reprocesamiento, se pasa el valor devuelto por el comando con errores.
+> Normalmente, el valor devuelto del método [**INapSystemHealthValidationRequest::SetSoHResponse**](inapsystemhealthvalidationrequest-setsohresponse-method.md) se pasa a este parámetro. Sin embargo, si no se pudo llamar a **SetSoHResponse** debido a un error de reprocesamiento, se pasa el valor devuelto por el comando con error.
 
  
 
@@ -75,17 +75,17 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 | Código devuelto                                                                                     | Descripción                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> </dl>           | Operación realizada correctamente.<br/>                                    |
+| <dl> <dt>**S \_ Ok (Aceptar)**</dt> </dl>           | Operación realizada correctamente.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Error de permisos, acceso denegado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Límite de recursos del sistema, no se pudo realizar la operación.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | El límite de recursos del sistema no pudo realizar la operación.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los validadores deben devolver los valores \_ correctos si se pudo completar la validación de [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) , independientemente de si el **SoHRequest** ha superado la comprobación de estado.
+Los validadores deben devolver S OK si se pudo completar la validación \_ [**de SoHRequest,**](/windows/win32/api/naptypes/ns-naptypes-soh) independientemente de si **SoHRequest** superó la comprobación de estado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -94,9 +94,9 @@ Los validadores deben devolver los valores \_ correctos si se pudo completar la 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                    |
-| Encabezado<br/>                   | <dl> <dt>NapSystemHealthValidator. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapSystemHealthValidator. idl</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
+| Header<br/>                   | <dl> <dt>NapSystemHealthValidator.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapSystemHealthValidator.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qshvhost.dll</dt> </dl>                 |
 
 

@@ -1,9 +1,9 @@
 ---
-title: Enumeración VMHardDiskType (VPCCOMInterfaces. h)
+title: Enumeración VMHardDiskType (VPCCOMInterfaces.h)
 description: Especifica el tipo de imagen de disco duro.
 ms.assetid: 14480bad-523a-40d8-a6ba-9ec31fe4b217
 keywords:
-- Enumeración de VMHardDiskType Virtual PC
+- VMHardDiskType (enumeración) Virtual PC
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b59fed6577aa957bae960f7af65be766a03c727e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7c68d1bb7bfd41293521319cf20d0f6c5afdc73543fa0cd8b13366bfcbeb77a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105695982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118998515"
 ---
 # <a name="vmharddisktype-enumeration"></a>Enumeración VMHardDiskType
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Especifica el tipo de imagen de disco duro.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -44,24 +44,24 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="vmDiskType_Dynamic"></span><span id="vmdisktype_dynamic"></span><span id="VMDISKTYPE_DYNAMIC"></span>**vmDiskType \_ dinámico**
+<span id="vmDiskType_Dynamic"></span><span id="vmdisktype_dynamic"></span><span id="VMDISKTYPE_DYNAMIC"></span>**vmDiskType \_ dynamic**
 </dt> <dd>
 
-Una imagen de disco duro de expansión dinámica.
+Imagen de disco duro que se expande dinámicamente.
 
 </dd> <dt>
 
 <span id="vmDiskType_FixedSize"></span><span id="vmdisktype_fixedsize"></span><span id="VMDISKTYPE_FIXEDSIZE"></span>**vmDiskType \_ FixedSize**
 </dt> <dd>
 
-Una imagen de disco duro de tamaño fijo.
+Imagen de disco duro de tamaño fijo.
 
 </dd> <dt>
 
-<span id="vmDiskType_Differencing"></span><span id="vmdisktype_differencing"></span><span id="VMDISKTYPE_DIFFERENCING"></span>**diferencia de vmDiskType \_**
+<span id="vmDiskType_Differencing"></span><span id="vmdisktype_differencing"></span><span id="VMDISKTYPE_DIFFERENCING"></span>**Diferenciación de vmDiskType \_**
 </dt> <dd>
 
-Una imagen de disco duro de diferenciación.
+Imagen de disco duro de diferenciación.
 
 </dd> </dl>
 
@@ -71,11 +71,11 @@ Una imagen de disco duro de diferenciación.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 
 
 

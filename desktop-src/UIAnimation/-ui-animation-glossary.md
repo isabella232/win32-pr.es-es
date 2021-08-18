@@ -1,78 +1,78 @@
 ---
-title: Glosario de animaciones de Windows
-description: Este glosario contiene términos y acrónimos de interés para los desarrolladores que usan el administrador de animaciones de Windows.
+title: Windows Glosario de animación
+description: Este glosario contiene términos y acrónimos de interés para los desarrolladores que usan Windows Animation Manager.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 66e9cfb4-b9ae-4c21-9b1f-532c7d750903
 keywords:
-- Animación de Windows animación de Windows, Glosario
+- Windows Animación Windows animación , glosario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36b7f276b0f20efc35057a9ee7c006c3cf170ac3
-ms.sourcegitcommit: fdd00b445ee88366e9cdd1eed0cb3e42e2a73eca
+ms.openlocfilehash: 9bb477edcaa49aa8baff1bc628ca5d94c13dacc0e552137275ff1e92d8e4cfae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "104532943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137398"
 ---
-# <a name="windows-animation-glossary"></a>Glosario de animaciones de Windows
+# <a name="windows-animation-glossary"></a>Windows Glosario de animación
 
-Este glosario contiene términos y acrónimos de interés para los desarrolladores que usan el administrador de animaciones de Windows.
+Este glosario contiene términos y acrónimos de interés para los desarrolladores que usan Windows Animation Manager.
 
 <dl> <dt>
 
-<span id="uianimation.term.animation"></span><span id="UIANIMATION.TERM.ANIMATION"></span>**animación** de 
+<span id="uianimation.term.animation"></span><span id="UIANIMATION.TERM.ANIMATION"></span>**animación** 
 </dt> <dd>
 
-Secuencia de imágenes sintéticas y consecutivas que produce una ilusión de movimiento cuando se reproduce.
+Secuencia de imágenes fijas sintéticas y sucesivas que produce una sensación de movimiento cuando se reproduce.
 
 </dd> <dt>
 
-<span id="uianimation.term.animation_manager"></span><span id="UIANIMATION.TERM.ANIMATION_MANAGER"></span>**Administrador de animaciones** 
+<span id="uianimation.term.animation_manager"></span><span id="UIANIMATION.TERM.ANIMATION_MANAGER"></span>**administrador de animaciones** 
 </dt> <dd>
 
-Componente básico de la animación de Windows y la interfaz de programación central para administrar (crear, programar y controlar) animaciones.
+Componente principal de Windows animación y la interfaz de programación central para administrar (crear, programar y controlar) animaciones.
 
 </dd> <dt>
 
 <span id="uianimation.term.animation_timer"></span><span id="UIANIMATION.TERM.ANIMATION_TIMER"></span>**temporizador de animación**
 </dt> <dd>
 
-Componente que proporciona servicios de control de tiempo que se pueden usar junto con el administrador de animaciones. Limita dinámicamente la velocidad de fotogramas en función de la carga de la aplicación y del sistema o en el modo de baja energía. Vea también: limitación.
+Componente para proporcionar servicios de control de tiempo que se pueden usar junto con el administrador de animaciones. Limita dinámicamente la velocidad de fotogramas en función de la carga de la aplicación y del sistema o en modo de bajo consumo. Consulte también: limitación.
 
 </dd> <dt>
 
 <span id="uianimation.term.animation_variable"></span><span id="UIANIMATION.TERM.ANIMATION_VARIABLE"></span>**variable de animación** 
 </dt> <dd>
 
-Valor que se puede animar. Las variables de animación se pueden usar para representar la posición, el tamaño, la rotación, la transparencia y otras cualidades de los objetos visibles.
+Valor que se puede animar. Las variables de animación se pueden usar para representar la posición, el tamaño, la rotación, la transparencia y otras calidades de los objetos visibles.
 
 </dd> <dt>
 
-<span id="uianimation.term.cancellation"></span><span id="UIANIMATION.TERM.CANCELLATION"></span>**cancelación**
+<span id="uianimation.term.cancellation"></span><span id="UIANIMATION.TERM.CANCELLATION"></span>**Cancelación**
 </dt> <dd>
 
-El proceso de quitar un guion gráfico de la programación antes de empezar a reproducir.
+Proceso de eliminación de un guión gráfico de la programación antes de que haya empezado a reproducirse.
 
 </dd> <dt>
 
-<span id="uianimation.term.compression"></span><span id="UIANIMATION.TERM.COMPRESSION"></span>**presi**
+<span id="uianimation.term.compression"></span><span id="UIANIMATION.TERM.COMPRESSION"></span>**Compresión**
 </dt> <dd>
 
-Deformación de la percepción de tiempo de un guion gráfico. El sistema aumenta la velocidad a la que progresa el guión gráfico pasando los valores de tiempo de entrada que aumentan más rápido que el reloj del sistema.
+Un desforme de la percepción de tiempo de un guión gráfico. El sistema aumenta la velocidad a la que progresa el guión gráfico pasando valores de tiempo de entrada que aumentan más rápido que el reloj del sistema.
 
 </dd> <dt>
 
-<span id="uianimation.term.conclusion"></span><span id="UIANIMATION.TERM.CONCLUSION"></span>**celebre**
+<span id="uianimation.term.conclusion"></span><span id="UIANIMATION.TERM.CONCLUSION"></span>**Conclusión**
 </dt> <dd>
 
-Proceso de dirigir un guion gráfico para salir de los bucles indefinidos. Si el bucle se ha iniciado, la iteración actual se completará y, a continuación, se reproducirá el resto del guión gráfico. De lo contrario, la parte en bucle del guión gráfico se omitirá por completo.
+El proceso de dirigir un guión gráfico para salir de los bucles indefinidos. Si el bucle ha comenzado, la iteración actual se completará y el resto del guión gráfico se reproducirá. De lo contrario, la parte en bucle del guión gráfico se omitirá por completo.
 
 </dd> <dt>
 
-<span id="uianimation.term.frame"></span><span id="UIANIMATION.TERM.FRAME"></span>**marco** de 
+<span id="uianimation.term.frame"></span><span id="UIANIMATION.TERM.FRAME"></span>**marco** 
 </dt> <dd>
 
-Una sola imagen en una película o una animación.
+Una sola imagen en una película o animación.
 
 </dd> <dt>
 
@@ -90,79 +90,79 @@ Objeto de programación que realiza la interpolación matemática del valor y la
 
 </dd> <dt>
 
-<span id="uianimation.term.keyframe"></span><span id="UIANIMATION.TERM.KEYFRAME"></span>**fotograma clave**
+<span id="uianimation.term.keyframe"></span><span id="UIANIMATION.TERM.KEYFRAME"></span>**Fotograma clave**
 </dt> <dd>
 
-Un momento en el tiempo dentro de un guion gráfico, que se puede especificar en relación con el inicio del guion gráfico, con respecto a otro fotograma clave o en el momento de finalización de una transición y que se usa para especificar la hora de inicio y de finalización de otras transiciones o un ciclo dentro del guión gráfico.
+Un momento en el tiempo dentro de un guión gráfico, que se puede especificar en relación con el inicio del guión gráfico, con respecto a otro fotograma clave, o al final de una transición, y se usa para especificar la hora de inicio y finalización de otras transiciones o un ciclo dentro del guión gráfico.
 
 </dd> <dt>
 
-<span id="uianimation.term.loop"></span><span id="UIANIMATION.TERM.LOOP"></span>**realizar**
+<span id="uianimation.term.loop"></span><span id="UIANIMATION.TERM.LOOP"></span>**Bucle**
 </dt> <dd>
 
-Sección de un guión gráfico entre dos fotogramas clave que se reproduce repetidamente. Un bucle puede reproducirse un número finito de veces o indefinidamente.
+Sección de un guión gráfico entre dos fotogramas clave que se reproduce repetidamente. Un bucle puede reproducir un número finito de veces o indefinidamente.
 
 </dd> <dt>
 
 <span id="uianimation.term.priority_comparison"></span><span id="UIANIMATION.TERM.PRIORITY_COMPARISON"></span>**comparación de prioridad** 
 </dt> <dd>
 
-Código definido por el cliente que compara dos guiones gráficos, uno ya programado y el otro sobre el que se va a programar, para determinar su prioridad relativa. Un guión gráfico programado se puede recortar, comprimir, cancelar o concluir para habilitar la programación del guion gráfico con mayor prioridad.
+Código definido por el cliente que compara dos guiones gráficos, uno ya programado y otro a punto de programarse, para determinar su prioridad relativa. Un guión gráfico programado se puede recortar, comprimir, cancelar o concluir para habilitar la programación del guión gráfico con mayor prioridad.
 
 </dd> <dt>
 
-<span id="uianimation.term.storyboard"></span><span id="UIANIMATION.TERM.STORYBOARD"></span>**guión gráfico** 
+<span id="uianimation.term.storyboard"></span><span id="UIANIMATION.TERM.STORYBOARD"></span>**storyboard** 
 </dt> <dd>
 
-Grupo de transiciones de animación sincronizadas entre sí.
+Un grupo de transiciones de animación sincronizadas entre sí.
 
 </dd> <dt>
 
-<span id="uianimation.term.tag"></span><span id="UIANIMATION.TERM.TAG"></span>**etiqueta** de 
+<span id="uianimation.term.tag"></span><span id="UIANIMATION.TERM.TAG"></span>**etiqueta** 
 </dt> <dd>
 
-Par formado por un identificador entero y un objeto COM que usa una aplicación para identificar las variables de animación y los guiones gráficos en el ámbito de un administrador de animaciones específico.
+Un par que consta de un identificador entero y un objeto COM usado por una aplicación para identificar variables de animación y guiones gráficos dentro del ámbito de un administrador de animación específico.
 
 </dd> <dt>
 
 <span id="uianimation.term.throttling"></span><span id="UIANIMATION.TERM.THROTTLING"></span>**limitación** 
 </dt> <dd>
 
-Ajuste dinámico de la velocidad de fotogramas de una animación para cumplir determinados requisitos. La limitación ayuda a garantizar que las animaciones se representen a una velocidad de fotogramas coherente a la vez que se minimiza el uso de los recursos del sistema para la representación a una velocidad superior a la que se necesita o es útil.
+Ajuste dinámico de la velocidad de fotogramas de una animación para satisfacer determinados requisitos. La limitación ayuda a garantizar que las animaciones se representan a una velocidad de fotogramas coherente, al tiempo que minimiza el uso de recursos del sistema para la representación a una velocidad superior a la necesaria o útil.
 
 </dd> <dt>
 
-<span id="uianimation.term.tick"></span><span id="UIANIMATION.TERM.TICK"></span>**marca** 
+<span id="uianimation.term.tick"></span><span id="UIANIMATION.TERM.TICK"></span>**tick** 
 </dt> <dd>
 
-Un evento de temporizador que normalmente desencadena la representación de un solo fotograma.
+Evento de temporizador que normalmente desencadena la representación de un único fotograma.
 
 </dd> <dt>
 
 <span id="uianimation.term.transition"></span><span id="UIANIMATION.TERM.TRANSITION"></span>**transición** 
 </dt> <dd>
 
-Una construcción que define las actualizaciones progresivas para una variable de animación a lo largo de un período de tiempo.
+Construcción que define actualizaciones progresivas para una variable de animación durante un período de tiempo.
 
 </dd> <dt>
 
-<span id="uianimation.term.trimming"></span><span id="UIANIMATION.TERM.TRIMMING"></span>**desechos**
+<span id="uianimation.term.trimming"></span><span id="UIANIMATION.TERM.TRIMMING"></span>**Recorte**
 </dt> <dd>
 
-Adelantar el control de un guión gráfico de una variable de animación con un guión gráfico de mayor prioridad. Si el recorte de un guion gráfico en una o varias variables hace que el guión gráfico finalice prematuramente, se considerará truncado. Vea también: truncamiento.
+Adelantar el control de un guión gráfico de una variable de animación con un guión gráfico de mayor prioridad. Si el recorte de un guión gráfico en una o varias variables hace que el guión gráfico finalice prematuramente, se considera truncado. Vea también: truncamiento.
 
 </dd> <dt>
 
-<span id="uianimation.term.truncation"></span><span id="UIANIMATION.TERM.TRUNCATION"></span>**truncamiento**
+<span id="uianimation.term.truncation"></span><span id="UIANIMATION.TERM.TRUNCATION"></span>**Truncamiento**
 </dt> <dd>
 
-Finalización prematura de un guión gráfico mediante el control de una o varias de las variables que anima con uno o más guiones gráficos de mayor prioridad. Vea también: recorte.
+Finalizar un guión gráfico prematuramente al adelantar el control de una o varias de las variables que anima con uno o varios guiones gráficos de mayor prioridad. Vea también: recorte.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

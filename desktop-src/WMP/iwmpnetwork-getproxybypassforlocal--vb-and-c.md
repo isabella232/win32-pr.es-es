@@ -1,11 +1,11 @@
 ---
-title: IWMPNetwork getProxyBypassForLocal, método
+title: Método IWMPNetwork getProxyBypassForLocal
 description: El método getProxyBypassForLocal devuelve un valor que indica si se omite el servidor proxy si el servidor de origen está en una red local.
 ms.assetid: 150a05f3-6979-4a88-a617-472f07d38807
 keywords:
-- método getProxyBypassForLocal de Windows Media Player
-- método getProxyBypassForLocal Windows Media Player, interfaz IWMPNetwork
-- Interfaz IWMPNetwork Windows Media Player, método getProxyBypassForLocal
+- Método getProxyBypassForLocal Reproductor de Windows Media
+- Método getProxyBypassForLocal Reproductor de Windows Media , interfaz IWMPNetwork
+- Interfaz IWMPNetwork Reproductor de Windows Media método getProxyBypassForLocal
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b87b1f00432ec91dd4379a9fa5e31664437afe0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 50d23307ab8872fb49b2b4797d54b78a71a04adba350287fa23cb8e5ab90541c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996485"
 ---
-# <a name="iwmpnetworkgetproxybypassforlocal-method"></a>IWMPNetwork:: getProxyBypassForLocal (método)
+# <a name="iwmpnetworkgetproxybypassforlocal-method"></a>IWMPNetwork::getProxyBypassForLocal (método)
 
-El método **getProxyBypassForLocal** devuelve un valor que indica si se omite el servidor proxy si el servidor de origen está en una red local.
+El **método getProxyBypassForLocal** devuelve un valor que indica si se omite el servidor proxy si el servidor de origen está en una red local.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,21 +56,21 @@ Implements IWMPNetwork.getProxyBypassForLocal
 *bstrProtocol* 
 </dt> <dd>
 
-**System. String** que es el nombre del protocolo.
+**System.String que** es el nombre del protocolo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Valor **System. Boolean** que indica si se omite el servidor proxy. El valor solo es significativo cuando **IWMPNetwork. getProxySettings** devuelve un valor de 2 (use la configuración manual).
+Valor **System.Boolean** que indica si se omite el servidor proxy. El valor solo es significativo cuando **IWMPNetwork.getProxySettings** devuelve un valor de 2 (use la configuración manual).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o en la intranet.
+Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se usa **getProxyBypassForLocal** para mostrar si Windows Media Player está establecido para omitir el servidor proxy para las direcciones locales. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo de código siguiente se **usa getProxyBypassForLocal** para mostrar si Reproductor de Windows Media está establecido para omitir el servidor proxy para las direcciones locales. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```VB
@@ -137,7 +137,7 @@ proxyBypassText.Lines = proxyInfo;
 
 | Requisito | Value |
 |----------------------|-----------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                             |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                             |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                         |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll</dt> </dl> |
 
@@ -150,10 +150,10 @@ proxyBypassText.Lines = proxyInfo;
 [**Interfaz IWMPNetwork (VB y C#)**](iwmpnetwork--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. getProxySettings (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
+[**IWMPNetwork.getProxySettings (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. setProxyBypassForLocal (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-setproxybypassforlocal--vb-and-c.md)
+[**IWMPNetwork.setProxyBypassForLocal (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-setproxybypassforlocal--vb-and-c.md)
 </dt> </dl>
 
  

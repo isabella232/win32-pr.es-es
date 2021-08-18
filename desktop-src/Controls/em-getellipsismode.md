@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETELLIPSISMODE (RichEdit. h)
+title: EM_GETELLIPSISMODE mensaje (Richedit.h)
 description: Recupera el modo de puntos suspensivos actual.
 ms.assetid: 01A755F3-6C6E-4974-9866-76BF15E0F3AD
 keywords:
-- EM_GETELLIPSISMODE controles de mensajes de Windows
+- EM_GETELLIPSISMODE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09b7273cbfd6e87b4591c00267860c9a164aad5e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6706c2b6ee75852fd0b3ee7a1a9d18b25d20d242d72068ba073d1bb025ff8ed5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019703"
 ---
-# <a name="em_getellipsismode-message"></a>\_Mensaje GETELLIPSISMODE em
+# <a name="em_getellipsismode-message"></a>Mensaje \_ EM GETVELOPSISMODE
 
-Recupera el modo de puntos suspensivos actual. Cuando está habilitada, se muestra un botón de puntos suspensivos () para el texto que no cabe en la ventana de presentación. Los puntos suspensivos solo se usan cuando el control no está activo. Cuando está activo, las barras de desplazamiento se utilizan para mostrar el texto que no cabe en la ventana de presentación.
+Recupera el modo de puntos suspensivos actual. Cuando se habilita, se muestran los puntos suspensivos ( ) para el texto que no cabe en la ventana de presentación. Los puntos suspensivos solo se usan cuando el control no está activo. Cuando está activa, las barras de desplazamiento se usan para mostrar texto que no cabe en la ventana de presentación.
 
 
 ```C++
@@ -39,22 +39,22 @@ Recupera el modo de puntos suspensivos actual. Cuando está habilitada, se muest
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a un valor DWORD que recibe uno de los valores siguientes.
+Puntero a un DWORD que recibe uno de los valores siguientes.
 
 
 
 | Value                                                                                                                                                         | Significado                                        |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <span id="ELLIPSIS_NONE"></span><span id="ellipsis_none"></span><dl> <dt>**puntos suspensivos \_ ninguno**</dt> </dl> | No se usa ningún botón de puntos suspensivos.<br/>                |
-| <span id="ELLIPSIS_END"></span><span id="ellipsis_end"></span><dl> <dt>**fin de los puntos suspensivos \_**</dt> </dl>    | Puntos suspensivos al final (interrupción forzada).<br/> |
-| <span id="ELLIPSIS_WORD"></span><span id="ellipsis_word"></span><dl> <dt>**Palabra de puntos suspensivos \_**</dt> </dl> | Puntos suspensivos al final (salto de palabra).<br/>   |
+| <span id="ELLIPSIS_NONE"></span><span id="ellipsis_none"></span><dl> <dt>**PUNTOS \_ SUSPENSIVOS NINGUNO**</dt> </dl> | No se usan puntos suspensivos.<br/>                |
+| <span id="ELLIPSIS_END"></span><span id="ellipsis_end"></span><dl> <dt>**FIN DE PUNTOS \_ SUSPENSIVOS**</dt> </dl>    | Puntos suspensivos al final (interrupción forzada).<br/> |
+| <span id="ELLIPSIS_WORD"></span><span id="ellipsis_word"></span><dl> <dt>**PALABRA DE PUNTOS \_ SUSPENSIVOS**</dt> </dl> | Puntos suspensivos al final (salto de palabra).<br/>   |
 
 
 
@@ -64,7 +64,7 @@ Puntero a un valor DWORD que recibe uno de los valores siguientes.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si wParam es 0 y lParam no es NULL, el valor devuelto es igual a TRUE; de lo contrario, el valor devuelto es igual a FALSE.
+Si wparam es 0 y lparam no es NULL, el valor devuelto es TRUE; De lo contrario, el valor devuelto es FALSE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,9 +72,9 @@ Si wParam es 0 y lParam no es NULL, el valor devuelto es igual a TRUE; de lo con
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -82,10 +82,10 @@ Si wParam es 0 y lParam no es NULL, el valor devuelto es igual a TRUE; de lo con
 
 <dl> <dt>
 
-[**\_SETELLIPSISMODE em**](em-setellipsismode.md)
+[**EM \_ SETELLIPSISMODE**](em-setellipsismode.md)
 </dt> <dt>
 
-[**\_GETELLIPSISSTATE em**](em-getellipsisstate.md)
+[**EM \_ GETVELOPSISSTATE**](em-getellipsisstate.md)
 </dt> </dl>
 
  

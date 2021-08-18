@@ -1,7 +1,7 @@
 ---
-description: Recupera un identificador de código de error (IDA) y una cadena de mensaje sin formato cuando se proporciona un error de jet.
+description: Recupera un identificador de código de error (IDA) y una cadena de mensaje sin formato cuando se proporciona un error jet.
 ms.assetid: f90b6986-a8d5-430e-94b3-176012c7e282
-title: JetErrRawMessage función)
+title: Función JetErrRawMessage
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Msjter40.dll
-ms.openlocfilehash: 1b52fa519bee3abacd0cd9bd7e8eaaa0676d007c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: efc7332530b5b03b0c9150adb8b0e105d0e5d17eeae9bbc485fb073391de2cad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749686"
 ---
-# <a name="jeterrrawmessage-function"></a>JetErrRawMessage función)
+# <a name="jeterrrawmessage-function"></a>Función JetErrRawMessage
 
-Recupera un identificador de código de error (IDA) y una cadena de mensaje sin formato cuando se proporciona un error de jet.
+Recupera un identificador de código de error (IDA) y una cadena de mensaje sin formato cuando se proporciona un error jet.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ JET_ERR JetErrRawMessage(
 
 <dl> <dt>
 
-*ERR* 
+*Err* 
 </dt> <dd>
 
-Error de jet que corresponde a la información que se obtiene.
+Error de Jet que corresponde a la información que se obtiene.
 
 </dd> <dt>
 
 *pIda* 
 </dt> <dd>
 
-Puntero a IDA.
+Puntero a la IDA.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Recuento del número de bytes del mensaje de error.
 
 </dd> <dt>
 
-*pcbActual* 
+*actual* 
 </dt> <dd>
 
 Puntero al número real de bytes leídos.
@@ -83,11 +83,11 @@ Puntero al número real de bytes leídos.
 *pContextId* 
 </dt> <dd>
 
-Puntero al identificador de contexto que está asociado con el archivo de ayuda.
+Puntero al identificador de contexto asociado al archivo de ayuda.
 
 </dd> <dt>
 
-*pwszHelp/archivo* 
+*pwszHelp/file* 
 </dt> <dd>
 
 Apunta a un puntero al archivo que explica el error.
@@ -96,11 +96,11 @@ Apunta a un puntero al archivo que explica el error.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve **jet \_ errSuccess**; de lo contrario, devuelve un mensaje de error sin formato que indica el motivo específico del error.
+Si la función se realiza correctamente, devuelve **jet \_ errSuccess;** de lo contrario, devuelve un mensaje de error sin formato que indica el motivo específico del error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

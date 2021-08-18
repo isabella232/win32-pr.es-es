@@ -1,9 +1,9 @@
 ---
 title: switch_type (atributo)
-description: El atributo \ switch \_ Type \ identifica el tipo de la variable que se usa como discriminante de Unión. El tipo de modificador puede ser un entero, un carácter, un valor booleano o un tipo de enumeración.
+description: El atributo \ switch \_ type\ identifica el tipo de la variable utilizada como discriminador de unión. El tipo de modificador puede ser un tipo entero, de carácter, booleano o de enumeración.
 ms.assetid: e4c6d33b-d4db-42b7-9d18-fd14bf1fb530
 keywords:
-- switch_type el atributo MIDL
+- switch_type atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14184c5838d9f671f75536714d73c3f6ebf00a0a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 8695a17c60f9785d7782d77db839499306a9577755e8a6838540f5a0fc2cea48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103904129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146238"
 ---
-# <a name="switch_type-attribute"></a>atributo de tipo de conmutador \_
+# <a name="switch_type-attribute"></a>atributo \_ switch type
 
-El atributo de **\[ \_ tipo \] de conmutador** identifica el tipo de la variable que se usa como discriminante de Unión. El tipo de modificador puede ser un entero, un carácter, un valor booleano o un tipo de enumeración.
+El **\[ atributo switch \_ type \]** identifica el tipo de la variable utilizada como discriminador de unión. El tipo de modificador puede ser un tipo entero, de carácter, booleano o de enumeración.
 
 ``` syntax
 switch_type(switch-type-specifier)
@@ -31,18 +31,18 @@ switch_type(switch-type-specifier)
 
 <dl> <dt>
 
-*Switch-Type-Specifier* 
+*switch-type-specifier* 
 </dt> <dd>
 
-Especifica un tipo [**int**](int.md), [**Char**](char-idl.md), [**Boolean**](boolean.md)o [**enum**](enum.md) , o un identificador de este tipo.
+Especifica un tipo [**int**](int.md), [**char**](char-idl.md), [**Boolean**](boolean.md)o [**enum,**](enum.md) o un identificador de este tipo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Mientras que el atributo de **\[ \_ tipo \] de conmutador** identifica el tipo de variable, el **\[** atributo [**Switch \_ es**](switch-is.md) **\]** especifica el nombre del parámetro que es la Unión discriminante. El atributo de **\[ \_ tipo \] de conmutador** se aplica a los parámetros o miembros de estructuras o uniones.
+Mientras que **\[ el atributo switch \_ \] type** identifica el tipo de variable, el atributo switch is especifica el nombre del parámetro que es **\[** [**\_**](switch-is.md) el **\]** discriminador de unión. El **\[ atributo switch \_ type \]** se aplica a parámetros o miembros de estructuras o uniones.
 
-La Unión y su discriminante deben especificarse en el mismo nivel lógico. Cuando la Unión es un parámetro, el discriminante de Unión debe ser otro parámetro. Cuando la Unión es un campo de una estructura, el discriminante debe ser otro campo de la estructura en el mismo nivel que el campo de Unión.
+La unión y su discriminador deben especificarse en el mismo nivel lógico. Cuando la unión es un parámetro, el discriminador de unión debe ser otro parámetro. Cuando la unión es un campo de una estructura, el discriminador debe ser otro campo de la estructura en el mismo nivel que el campo de unión.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -68,36 +68,36 @@ typedef struct _WINNER_TYPE
 
 <dl> <dt>
 
-[**Booleano**](boolean.md)
+[**Booleana**](boolean.md)
 </dt> <dt>
 
-[**char**](char-idl.md)
+[**Char**](char-idl.md)
 </dt> <dt>
 
 [Uniones encapsuladas](encapsulated-unions.md)
 </dt> <dt>
 
-[**enumeración**](enum.md)
+[**Enum**](enum.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**Inter**](int.md)
+[**int**](int.md)
 </dt> <dt>
 
-[Uniones no encapsuladas](nonencapsulated-unions.md)
+[Uniones no superadas](nonencapsulated-unions.md)
 </dt> <dt>
 
-[**el modificador \_ es**](switch-is.md)
+[**switch \_ es**](switch-is.md)
 </dt> <dt>
 
 [**Unión**](union.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

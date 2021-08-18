@@ -1,8 +1,8 @@
 ---
 title: Palabra clave sh_reg_key
-description: La palabra clave \ SH \_ reg \_ key \ especifica que el objeto del sistema es un identificador de una clave del registro.
+description: La palabra clave \sh \_ reg \_ key\ especifica que el objeto del sistema es un identificador de una clave del Registro.
 keywords:
-- palabra clave sh_reg_key MIDL
+- sh_reg_key clave MIDL
 topic_type:
 - apiref
 api_name:
@@ -11,16 +11,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 02/05/2021
-ms.openlocfilehash: cec526bed766534f82d5a1bc24c55050dea814ed
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: 321745879645f3f6346d1e4c5ba7047df203430041f2d8903b8ff506229bb1e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "105721192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013613"
 ---
-# <a name="sh_reg_key-keyword"></a>palabra clave de SH \_ reg \_
+# <a name="sh_reg_key-keyword"></a>Sh \_ reg \_ key (palabra clave)
 
-La palabra clave de **SH \_ reg \_ key** especifica que un `system_handle` contiene un identificador para una clave del registro.
+La **palabra clave sh reg \_ \_ key** especifica que contiene `system_handle` un identificador para una clave del Registro.
 
 ``` syntax
 [system_handle(sh_reg_key)]
@@ -32,11 +32,11 @@ La palabra clave de **SH \_ reg \_ key** especifica que un `system_handle` conti
 
 Esta palabra clave es un parámetro para [**system_handle**](system-handle.md).
 
-La documentación [**system_handle**](system-handle.md) contiene también detalles sobre el uso opcional del parámetro *Access-Rights* . El comportamiento predeterminado es `DUPLICATE_SAME_ACCESS` por especificaciones de la [función **DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle) .
+La [**system_handle**](system-handle.md) documentación también contiene detalles sobre el uso opcional del *parámetro access-rights.* El comportamiento predeterminado es según `DUPLICATE_SAME_ACCESS` las especificaciones [ **de la función DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar esta palabra clave con el `system_handle` atributo, la `-target` marca debe establecerse en `NT100` (o superior) al ejecutarse midl.exe.
+Para usar esta palabra clave con el atributo , la marca debe establecerse en `system_handle` `-target` (o superior) al ejecutar `NT100` midl.exe.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -53,7 +53,7 @@ interface MyInterface : IUnknown
 
 | &nbsp; | &nbsp; |
 |-|-|
-| Cliente mínimo compatible | Actualización de aniversario de Windows 10 (versión 1607, compilación 14393) |
+| Cliente mínimo compatible | Windows 10 Actualización de aniversario (versión 1607, compilación 14393) |
 | Servidor mínimo compatible | Windows Server 2016 (compilación 14393) |
 
 ## <a name="see-also"></a>Vea también
@@ -66,8 +66,8 @@ interface MyInterface : IUnknown
 [Registro](../sysinfo/registry.md)
 </dt> <dt>
 
-[Seguridad y derechos de acceso de la clave del registro](../sysinfo/registry-key-security-and-access-rights.md)
+[Derechos de acceso y seguridad de la clave del Registro](../sysinfo/registry-key-security-and-access-rights.md)
 </dt> <dt>
 
-[**RegOpenKeyEx** (función)](/windows/win32/api/winreg/nf-winreg-regopenkeyexa)
+[**Función RegOpenKeyEx**](/windows/win32/api/winreg/nf-winreg-regopenkeyexa)
 </dt> <dt>

@@ -1,9 +1,9 @@
 ---
 title: uidefault (atributo)
-description: El atributo \ uidefault \ indica que el miembro de información de tipo es el miembro predeterminado que se va a mostrar en la interfaz de usuario.
+description: El atributo \ uidefault\ indica que el miembro de información de tipo es el miembro predeterminado para mostrar en la interfaz de usuario.
 ms.assetid: e789be38-a509-437d-89c9-ebbc830e5ae2
 keywords:
-- uidefault (atributo) MIDL
+- atributo uidefault MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bcef39f36abad7c7cb5562b2d892761bd1bb7b5b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 891d37611eb931a8857157434419e5221e808710290f2e209f50c743bcb5b7ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013483"
 ---
 # <a name="uidefault-attribute"></a>uidefault (atributo)
 
-El atributo **\[ uidefault \]** indica que el miembro de información de tipo es el miembro predeterminado que se va a mostrar en la interfaz de usuario.
+El **\[ atributo \] uidefault** indica que el miembro de información de tipo es el miembro predeterminado para mostrar en la interfaz de usuario.
 
 ``` syntax
 [method-attribute-list, uidefault]return-type method-name(method-parameter-list)
@@ -31,41 +31,41 @@ El atributo **\[ uidefault \]** indica que el miembro de información de tipo es
 
 <dl> <dt>
 
-*lista de atributos de método* 
+*method-attribute-list* 
 </dt> <dd>
 
-Otros atributos que se aplican al método.
+Otros atributos que se aplican al método .
 
 </dd> <dt>
 
-*tipo de valor devuelto* 
+*return-type* 
 </dt> <dd>
 
-El tipo de los datos que el método devolverá cuando finalice la ejecución.
+Tipo de los datos que devolverá el método cuando finalice la ejecución.
 
 </dd> <dt>
 
-*nombre del método* 
+*method-name* 
 </dt> <dd>
 
 Nombre del método.
 
 </dd> <dt>
 
-*lista de parámetros de método* 
+*method-parameter-list* 
 </dt> <dd>
 
-Cero o más parámetros para el método.
+Cero o más parámetros para el método .
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al aplicar el atributo **\[ uidefault \]** a un miembro de una interfaz o una interfaz dispinterface se indica Visual Basic, en tiempo de diseño, para mostrar automáticamente este evento o propiedad al usuario. Esto significa que cuando el usuario hace doble clic en un objeto, Visual Basic salta al evento en la interfaz de origen predeterminada que tiene el atributo **\[ uidefault \]** . Cuando el usuario selecciona un objeto, el explorador de propiedades de Visual Basic muestra la propiedad en la interfaz de origen predeterminada que tiene este atributo. Si ningún evento o propiedad tiene el atributo **\[ uidefault \]** , Visual Basic muestra el primer evento o propiedad enumerados en la interfaz predeterminada.
+La aplicación del atributo **\[ uidefault \]** a un miembro de una interfaz o una interfaz dispinterface indica a Visual Basic, en tiempo de diseño, que muestre automáticamente este evento o propiedad al usuario. Esto significa que cuando el usuario hace doble clic en un objeto, Visual Basic salta al evento en la interfaz de origen predeterminada que tiene el **\[ atributo uidefault. \]** Cuando el usuario selecciona un objeto, Visual Basic explorador Propiedades muestra la propiedad en la interfaz de origen predeterminada que tiene este atributo. Si ningún evento o propiedad tiene el atributo **\[ uidefault, \]** Visual Basic muestra el primer evento o propiedad enumerado en la interfaz predeterminada.
 
-### <a name="typeflag-representation"></a>Representación Typeflag
+### <a name="typeflag-representation"></a>Representación typeflag
 
-La presencia de FUNCFLAG \_ FUIDEFAULT o VARFLAG \_ FUIDEFAULT
+La presencia de FUNCFLAG \_ QUEDEFAULT o VARFLAG \_ QUEERDEFAULT
 
 ## <a name="examples"></a>Ejemplos
 
@@ -114,9 +114,9 @@ coclass Form
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

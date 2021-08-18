@@ -1,11 +1,11 @@
 ---
-title: Server-Name atributo)
+title: Server-Name atributo
 description: Nombre de un servidor.
 ms.assetid: 60c2afb4-5c3d-4628-95f8-f57dc7b9cb79
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Server-Name
-- atributo serverName esquema de AD
+- Server-Name esquema de AD del atributo
+- Esquema de AD del atributo serverName
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 145fdedf82e36886db8813447514142f8ce0e95e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 985c4119c44b0e60f83712590f7c7ee453601159fec75770c2c2569329f8b093
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022203"
 ---
-# <a name="server-name-attribute"></a>Server-Name atributo)
+# <a name="server-name-attribute"></a>Server-Name atributo
 
 Nombre de un servidor.
 
@@ -30,13 +30,13 @@ Nombre de un servidor.
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | Server-Name                                 |
-| Nombre para mostrar de LDAP | serverName                                  |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | serverName                                  |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.223                      |
-| System-ID-GUID    | 09dcb7a0-165f-11d0-a064-00aa006c33ed        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 09dcb7a0-165f-11d0-a064-00aa006c33ed        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ Nombre de un servidor.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Verdadero                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 0                                              |
 | Range-Upper            | 1024                                           |
 | Search-Flags           | 0x00000000                                     |
@@ -76,13 +76,13 @@ Nombre de un servidor.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Verdadero                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 0                                              |
 | Range-Upper            | 1024                                           |
 | Search-Flags           | 0x00000000                                     |
@@ -97,18 +97,18 @@ Nombre de un servidor.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
-| System-Only            | False                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                      |
-| Está indexado             | False                                                                                                                     |
-| En el catálogo global      | True                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                              |
+| System-Only            | Falso                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                      |
+| Está indexado             | Falso                                                                                                                     |
+| En el catálogo global      | Verdadero                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | 0                                                                                                                         |
 | Range-Upper            | 1024                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Clases usadas en        | [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> |
+| Clases usadas en        | [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Nombre de un servidor.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
-| System-Only            | False                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                      |
-| Está indexado             | False                                                                                                                     |
-| En el catálogo global      | True                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                              |
+| System-Only            | Falso                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                      |
+| Está indexado             | Falso                                                                                                                     |
+| En el catálogo global      | Verdadero                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | 0                                                                                                                         |
 | Range-Upper            | 1024                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Clases usadas en        | [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> |
+| Clases usadas en        | [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Nombre de un servidor.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
-| System-Only            | False                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                      |
-| Está indexado             | False                                                                                                                     |
-| En el catálogo global      | True                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                              |
+| System-Only            | Falso                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                      |
+| Está indexado             | Falso                                                                                                                     |
+| En el catálogo global      | Verdadero                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | 0                                                                                                                         |
 | Range-Upper            | 1024                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Clases usadas en        | [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> |
+| Clases usadas en        | [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Nombre de un servidor.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
-| System-Only            | False                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                      |
-| Está indexado             | False                                                                                                                     |
-| En el catálogo global      | True                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                              |
+| System-Only            | Falso                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                      |
+| Está indexado             | Falso                                                                                                                     |
+| En el catálogo global      | Verdadero                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | 0                                                                                                                         |
 | Range-Upper            | 1024                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Clases usadas en        | [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> |
+| Clases usadas en        | [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> |
 
 
 

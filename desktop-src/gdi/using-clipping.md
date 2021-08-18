@@ -1,19 +1,19 @@
 ---
-description: En esta sección se incluye código de ejemplo que muestra cómo generar una ruta de acceso de clip que consta de una cadena de caracteres. En el ejemplo se crea una fuente lógica y se usa para dibujar una cadena dentro de un trazado de clip y, a continuación, se rellena la ruta de acceso dibujando líneas horizontales y verticales.
+description: Esta sección contiene código de ejemplo que muestra cómo generar una ruta de acceso de recorte que consta de una cadena de caracteres. En el ejemplo se crea una fuente lógica y se usa para dibujar una cadena dentro de una ruta de acceso de recorte y, a continuación, se rellena la ruta dibujando líneas horizontales y verticales.
 ms.assetid: c71727aa-f4a3-409e-b50f-709eb4dbdaab
-title: Usar el recorte
+title: Uso de recorte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87a81181c09197fd98b5c84fd6f641ba84445000
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f54e4dee790d2891ebf36fb90ff9996b624d3c4d8d053fecae8397a38e043bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104997897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119037493"
 ---
-# <a name="using-clipping"></a>Usar el recorte
+# <a name="using-clipping"></a>Uso de recorte
 
-En esta sección se incluye código de ejemplo que muestra cómo generar una ruta de acceso de clip que consta de una cadena de caracteres. En el ejemplo se crea una fuente lógica y se usa para dibujar una cadena dentro de un trazado de clip y, a continuación, se rellena la ruta de acceso dibujando líneas horizontales y verticales.
+Esta sección contiene código de ejemplo que muestra cómo generar una ruta de acceso de recorte que consta de una cadena de caracteres. En el ejemplo se crea una fuente lógica y se usa para dibujar una cadena dentro de una ruta de acceso de recorte y, a continuación, se rellena la ruta dibujando líneas horizontales y verticales.
 
 
 ```C++
@@ -100,7 +100,7 @@ BOOL DoClipPath(LPLOGFONT lplf, LPSTR lpsz)
 
 
 
-Para ver un ejemplo que muestra cómo una aplicación crea una región de recorte rectangular, consulte [regiones](regions.md).
+Para obtener un ejemplo que muestra cómo una aplicación crea una región de recorte rectangular, vea [Regiones](regions.md).
 
  
 

@@ -1,10 +1,10 @@
 ---
-title: Mensaje WM_ADSPROP_SHEET_CREATE
-description: Se envía al objeto de notificación para crear una hoja de propiedades secundaria en un complemento MMC de Active Directory.
+title: WM_ADSPROP_SHEET_CREATE mensaje
+description: Se envía al objeto de notificación para crear una hoja de propiedades secundaria en Active Directory complemento MMC.
 ms.assetid: 3efa25f2-cd39-44f8-952e-203f1519ce2c
 ms.tgt_platform: multiple
 keywords:
-- WM_ADSPROP_SHEET_CREATE Active Directory de mensaje
+- WM_ADSPROP_SHEET_CREATE mensaje Active Directory
 topic_type:
 - apiref
 api_name:
@@ -13,19 +13,19 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b540ffd87d4350a323577ff5fa317e94f9271f2d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e0ec88eaed682fd16fecb717b851b902d5ba52ce08d5360aa78b881a4b8cb4f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024203"
 ---
-# <a name="wm_adsprop_sheet_create-message"></a>\_ \_ Crear mensaje de hoja de ADSPROP de WM \_
+# <a name="wm_adsprop_sheet_create-message"></a>Mensaje \_ CREATE de WM ADSPROP \_ SHEET \_
 
-El mensaje de creación de la hoja de ADSPROP de WM se envía al objeto de notificación para crear una hoja de propiedades secundaria en un complemento de MMC de Active Directory. **\_ \_ \_**
+El **mensaje \_ WM ADSPROP SHEET \_ \_ CREATE** se envía al objeto de notificación para crear una hoja de propiedades secundaria en un Active Directory complemento MMC.
 
 > [!Note]  
-> Este valor de mensaje no está definido en un archivo de encabezado publicado. Para usar este valor de mensaje, debe definirlo en el formato exacto que se muestra.
+> Este valor de mensaje no se define en un archivo de encabezado publicado. Para usar este valor de mensaje, debe definirlo usted mismo en el formato exacto que se muestra.
 
  
 
@@ -44,34 +44,34 @@ LRESULT SendMessage( (HWND)   hwnd,
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
-Identificador del objeto de notificación. Para obtener este identificador, llame a [**ADsPropCreateNotifyObj**](/windows/desktop/api/Adsprop/nf-adsprop-adspropcreatenotifyobj).
+Identificador del objeto de notificación. Para obtener este identificador, llame [**a ADsPropCreateNotifyObj**](/windows/desktop/api/Adsprop/nf-adsprop-adspropcreatenotifyobj).
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-Contiene un puntero a una estructura de [**\_ información de \_ página \_ de DSA sec**](dsa-sec-page-info.md) que define la página secundaria que se va a crear. Solo se puede crear una hoja de propiedades secundaria con **la \_ hoja de ADSPROP de WM \_ \_ Create** Message, por lo que la estructura [**DSOBJECTNAMES**](/windows/desktop/api/Dsclient/ns-dsclient-dsobjectnames) solo puede contener una estructura [**DSOBJECT**](/windows/desktop/api/Dsclient/ns-dsclient-dsobject) .
+Contiene un puntero a una estructura DE INFORMACIÓN DE PÁGINA de [**DSA \_ SEC \_ \_**](dsa-sec-page-info.md) que define la página secundaria que se creará. Solo se puede crear una hoja de propiedades secundaria con el mensaje **WM \_ ADSPROP \_ SHEET \_ CREATE,** por lo que la estructura [**DSOBJECTNAMES**](/windows/desktop/api/Dsclient/ns-dsclient-dsobjectnames) solo puede contener una [**estructura DSOBJECT.**](/windows/desktop/api/Dsclient/ns-dsclient-dsobject)
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza. Debe ser **null**.
+No se usa. Debe ser **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto para este mensaje es siempre cero.
+El valor devuelto para este mensaje siempre es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El autor de la llamada debe asignar la estructura de [**información de página de DSA \_ \_ \_ sec**](dsa-sec-page-info.md) , la cadena de título y todas las cadenas de [**DSOBJECT**](/windows/desktop/api/Dsclient/ns-dsclient-dsobject) con una sola llamada a la función [**LocalAlloc**](/windows/desktop/api/winbase/nf-winbase-localalloc) . El mensaje de creación de la **\_ \_ hoja \_ ADSPROP de WM** es un mensaje asincrónico, por lo que se devolverá antes de crear la hoja secundaria. Por este motivo, la memoria debe permanecer intacta después de que el mensaje se devuelva. El receptor liberará esta memoria con una sola llamada a la función [**LocalFree**](/windows/desktop/api/winbase/nf-winbase-localfree) una vez creada la hoja secundaria.
+El autor de la llamada debe asignar la estructura PAGE INFO de [**DSA \_ \_ \_ SEC,**](dsa-sec-page-info.md) la cadena de título y todas las cadenas [**DSOBJECT**](/windows/desktop/api/Dsclient/ns-dsclient-dsobject) mediante una sola llamada a la [**función LocalAlloc.**](/windows/desktop/api/winbase/nf-winbase-localalloc) El **mensaje CREATE de WM \_ ADSPROP SHEET \_ \_ es** un mensaje asincrónico, por lo que devolverá antes de que se cree la hoja secundaria. Por este problema, la memoria debe permanecer intacta después de que se devuelva el mensaje. El receptor liberará esta memoria con una sola llamada a la función [**LocalFree**](/windows/desktop/api/winbase/nf-winbase-localfree) después de crear la hoja secundaria.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,7 +91,7 @@ El autor de la llamada debe asignar la estructura de [**información de página 
 [**CFSTR \_ DS \_ PARENTHWND**](cfstr-ds-parenthwnd.md)
 </dt> <dt>
 
-[**información de página de DSA \_ s \_ \_**](dsa-sec-page-info.md)
+[**INFORMACIÓN DE PÁGINA DE DSA \_ \_ \_ SEC**](dsa-sec-page-info.md)
 </dt> <dt>
 
 [**DSOBJECTNAMES**](/windows/desktop/api/Dsclient/ns-dsclient-dsobjectnames)

@@ -3,9 +3,9 @@ title: Método WebViewFolderContents.PopupItemMenu (Shldisp.h)
 description: 'Método WebViewFolderContents.PopupItemMenu: crea un menú contextual para el elemento especificado y devuelve la cadena de comando seleccionada.'
 ms.assetid: 3c07500c-2fe9-4976-a1a8-b128e75f9325
 keywords:
-- Características heredadas del entorno de Windows del método PopupItemMenu
-- Método PopupItemMenu Características heredadas del entorno de Windows , Objeto WebViewFolderContents
-- Objeto WebViewFolderContents Características heredadas del entorno de Windows, método PopupItemMenu
+- Método PopupItemMenu Legacy Windows Environment Features
+- Método PopupItemMenu heredado Windows environment features , objeto WebViewFolderContents
+- Objeto WebViewFolderContents Heredado Windows Environment Features , método PopupItemMenu
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c879e10097b334f0c2d4f98b1b76289d20ee4a93
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 274237b2a17aa3e891f0c65f139cc7b251c1ff8a78b1f0ad387fb2931c8e3107
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035973"
 ---
 # <a name="webviewfoldercontentspopupitemmenu-method"></a>Método WebViewFolderContents.PopupItemMenu
 
@@ -79,7 +79,7 @@ Cuando este método vuelve, contiene la cadena de comando.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso adecuado de **PopupItemMenu** para JScript insertado en HTML.
+En el ejemplo siguiente se muestra el uso adecuado de **PopupItemMenu** JScript insertado en HTML.
 
 
 ```HTML
@@ -119,9 +119,9 @@ En el ejemplo siguiente se muestra el uso adecuado de **PopupItemMenu** para JSc
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

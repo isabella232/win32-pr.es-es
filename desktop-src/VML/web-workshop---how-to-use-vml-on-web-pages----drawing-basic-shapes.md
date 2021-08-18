@@ -1,6 +1,6 @@
 ---
 title: Dibujar formas básicas
-description: En este artículo se describe el dibujo de formas básicas en VML, una característica que está en desuso a partir de Windows Internet Explorer 9.
+description: En este artículo se describe el dibujo de formas básicas en VML, una característica que está en desuso a partir Windows Internet Explorer 9.
 ms.assetid: 05443e1f-c098-441c-a5bc-274cc37ef074
 keywords:
 - Taller web, dibujar formas
@@ -12,7 +12,7 @@ keywords:
 - Formas de VML, dibujo
 - Lenguaje de marcado de vectores (VML),XML
 - VML (Lenguaje de marcado de vectores),XML
-- gráficos vectoriales, XML
+- gráficos vectoriales,XML
 - Lenguaje de marcado de vectores (VML),CSS2
 - VML (Lenguaje de marcado de vectores),CSS2
 - gráficos vectoriales, CSS2
@@ -22,16 +22,16 @@ keywords:
 - Elementos VML, dibujar formas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00701e8ac77bd5bda7156c04ca25427d131646bf
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 0b4a8b7985371d9cffc6e7359cef1a17c69c403c7802de458b68d9df8c36e3ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136928"
 ---
 # <a name="drawing-basic-shapes"></a>Dibujar formas básicas
 
-En este tema se describe VML, una característica que está en desuso a partir de Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
 > A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
@@ -74,7 +74,7 @@ Los exploradores que admiten VML pueden representar y mostrar los gráficos repr
 
 ## <a name="xml-structure"></a>Estructura XML
 
-VmL tiene formato según las reglas de lenguaje de marcado extensible (XML). Cualquier analizador XML estándar puede analizar VML y entregar los datos resultantes a un procesador específico de VML. Para que los exploradores sepan cómo entregar datos a un procesador específico de VML, debe escribir información como espacios de nombres y objetos [personalizados](web-workshop---how-to-use-vml-on-web-pages----appendix.md) [incrustados.](web-workshop---how-to-use-vml-on-web-pages----appendix.md) A continuación, puede usar VML para escribir gráficos en la `<BODY>` región como hizo en el ejemplo anterior.
+VmL tiene el formato según las reglas de lenguaje de marcado extensible (XML). Cualquier analizador XML estándar puede analizar VML y entregar los datos resultantes a un procesador específico de VML. Para que los exploradores sepan cómo entregar datos a un procesador específico de VML, debe escribir cierta información, como espacios de nombres y objetos [personalizados](web-workshop---how-to-use-vml-on-web-pages----appendix.md) [incrustados.](web-workshop---how-to-use-vml-on-web-pages----appendix.md) A continuación, puede usar VML para escribir gráficos en la región como `<BODY>` hizo en el ejemplo anterior.
 
 El `"v:"` prefijo de cada etiqueta XML identifica la etiqueta como VML. El `"v:"` prefijo de la región debe ser coherente con `<BODY>` `<html xmlns:v="...">` .
 
@@ -90,7 +90,7 @@ VML usa [Hojas de estilo CSS nivel 2 (CSS2) para](https://www.w3.org/TR/PR-CSS2/
 
 En el ejemplo anterior, se usó un elemento predefinido vml `<oval>` para dibujar un óvalo. A continuación, se usa el atributo de propiedad **fillcolor** del `<oval>` elemento para rellenar el óvalo con rojo.
 
-Según la sección Etiquetas de [inicio,](https://www.w3.org/TR/REC-xml#sec-starttags) Etiquetas finales y etiquetas Empty-Element de la especificación [XML 1.0,](https://www.w3.org/TR/REC-xml)las etiquetas de elemento vacío se pueden usar para cualquier elemento que no tenga contenido. Por ejemplo, como se muestra en la siguiente representación de VML, no hay contenido (sub element) dentro del `<oval>` elemento. (Tenga en cuenta **que el estilo** **y el color de relleno** son los atributos del `<oval>` elemento; no son sub-elementos).
+Según la [sección Etiquetas](https://www.w3.org/TR/REC-xml#sec-starttags) de inicio, Etiquetas finales y etiquetas Empty-Element de la especificación [XML 1.0,](https://www.w3.org/TR/REC-xml)las etiquetas de elemento vacío se pueden usar para cualquier elemento que no tenga contenido. Por ejemplo, como se muestra en la siguiente representación de VML, no hay contenido (sub element) dentro del `<oval>` elemento. (Tenga en cuenta **que el estilo** **y el color de relleno** son los atributos del `<oval>` elemento; no son sub-elementos).
 
 
 ```HTML

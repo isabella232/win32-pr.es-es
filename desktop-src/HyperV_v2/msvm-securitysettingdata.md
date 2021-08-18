@@ -1,7 +1,7 @@
 ---
-description: Representa el estado configurado de la configuración de seguridad para.
+description: Representa el estado configurado de la configuración de seguridad para .
 ms.assetid: c57ab966-591e-4dd9-87be-0d2b81611d5d
-title: Msvm_SecuritySettingData (clase)
+title: Msvm_SecuritySettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,14 +19,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: b7125e06ad4ce33e70a8cf84b24933e7390e7a74
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 22bc30db51b103f50eaa4deed7ca6f479c5f94600fbb15ef2a6f4bb36595d159
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148157"
 ---
-# <a name="msvm_securitysettingdata-class"></a>MSVM \_ SecuritySettingData (clase)
+# <a name="msvm_securitysettingdata-class"></a>Clase \_ SecuritySettingData de Msvm
 
 Representa el estado configurado de la configuración de seguridad de una máquina virtual.
 
@@ -49,13 +49,13 @@ class Msvm_SecuritySettingData : CIM_SettingData
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ SecuritySettingData** tiene estos tipos de miembros:
+La **clase \_ SecuritySettingData de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ SecuritySettingData** tiene estas propiedades.
+La **clase \_ SecuritySettingData de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -68,10 +68,10 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **obligatorio**](/windows/desktop/WmiSdk/standard-qualifiers)
+Calificadores: [ **obligatorios**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-**true** para solicitar protección de datos para una máquina virtual; en caso contrario, **false**. El valor predeterminado es **false**.
+**true** para solicitar protección de datos para una máquina virtual; de lo contrario, **false**. El valor predeterminado es **false**.
 
 </dd> <dt>
 
@@ -84,10 +84,10 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **obligatorio**](/windows/desktop/WmiSdk/standard-qualifiers)
+Calificadores: [ **obligatorios**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-**true** para que el estado y el tráfico de migración de una máquina virtual estén cifrados; en caso contrario, **false**. El valor predeterminado de una máquina virtual recién creada es **falso**.
+**true** para tener cifrado el estado y el tráfico de migración de una máquina virtual; de lo contrario, **false**. El valor predeterminado de una máquina virtual recién creada es **false.**
 
 </dd> <dt>
 
@@ -100,10 +100,10 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **obligatorio**](/windows/desktop/WmiSdk/standard-qualifiers)
+Calificadores: [ **obligatorios**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-**true** para habilitar un dispositivo de almacenamiento de claves (KSD) para esta máquina virtual; en caso contrario, **false**. Una máquina virtual recién creada tiene deshabilitada la KSD.
+**true** para habilitar un dispositivo de almacenamiento de claves (KSD) para esta máquina virtual; de lo contrario, **false**. Una máquina virtual recién creada tiene un KSD de deshabilitación.
 
 </dd> <dt>
 
@@ -116,10 +116,10 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **obligatorio**](/windows/desktop/WmiSdk/standard-qualifiers)
+Calificadores: [ **obligatorios**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-**true** para solicitar el blindaje de una máquina virtual; en caso contrario, **false**. Una máquina virtual recién creada tiene un estado de blindaje solicitado de **falso**.
+**true** para solicitar el blindaje de una máquina virtual; de lo contrario, **false**. Una máquina virtual recién creada tiene un estado inicial de blindaje solicitado de **false.**
 
 </dd> <dt>
 
@@ -132,10 +132,10 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **obligatorio**](/windows/desktop/WmiSdk/standard-qualifiers)
+Calificadores: [ **obligatorios**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-**true** para habilitar un Nodule de plataforma segura (TPM) para esta máquina virtual; en caso contrario, **false**. Una máquina virtual recién creada tiene deshabilitado TPM.
+**true** para habilitar un nódulo de plataforma de confianza (TPM) para esta máquina virtual; de lo contrario, **false**. Una máquina virtual recién creada tiene un TPM de deshabilitación.
 
 </dd> <dt>
 
@@ -148,10 +148,10 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **obligatorio**](/windows/desktop/WmiSdk/standard-qualifiers)
+Calificadores: [ **obligatorios**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-**true** para no ofrecer una seguridad basada en la virtualización de máquinas virtuales; en caso contrario, **false**. La configuración predeterminada para el estado de cancelación de una máquina virtual recién creada es **false**.
+**true** para no ofrecer una seguridad basada en virtualización de máquinas virtuales; de lo contrario, **false**. La configuración predeterminada para el estado de exclusión de una máquina virtual recién creada es **false.**
 
 </dd> </dl>
 
@@ -161,10 +161,10 @@ Calificadores: [ **obligatorio**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -173,7 +173,7 @@ Calificadores: [ **obligatorio**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 <dl> <dt>
 
-[**SettingData de CIM \_**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> </dl>
 
  

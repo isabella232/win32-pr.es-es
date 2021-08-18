@@ -1,7 +1,7 @@
 ---
-description: 'IUserIdentityManager:: Logon no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use cuentas de usuario con cambio rápido de usuario y Escritorio remoto.'
+description: IUserIdentityManager::Logon no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use Cuentas de usuario con cambio rápido de usuario y Escritorio remoto.
 ms.assetid: ba146ee1-6c9c-4f97-ae90-431aa084ea16
-title: 'IUserIdentityManager:: Logon (método) (Msident. h)'
+title: Método IUserIdentityManager::Logon (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: eee6e0555d45d3f52173fce085d19c14f2ccfe8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e5be9402dbbbf7c46528ceeab944317fa35857f9521db41b621ab246c8da86be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119821135"
 ---
-# <a name="iuseridentitymanagerlogon-method"></a>IUserIdentityManager:: Logon (método)
+# <a name="iuseridentitymanagerlogon-method"></a>IUserIdentityManager::Logon (método)
 
-\[**IUserIdentityManager:: Logon** no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use [cuentas de usuario con cambio rápido de usuario y escritorio remoto](fastuserswitching.md).\]
+\[**IUserIdentityManager::Logon** no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use [cuentas de usuario con cambio rápido de usuario y Escritorio remoto](fastuserswitching.md).\]
 
-Muestra una interfaz de usuario para el usuario, lo que permite al usuario elegir una identidad de usuario. Si se realiza correctamente, la identidad del usuario se iniciará y se recuperará.
+Muestra una interfaz de usuario al usuario, lo que permite al usuario elegir una identidad de usuario. Si se realiza correctamente, la identidad del usuario se inicia sesión y se recupera.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,30 +43,30 @@ HRESULT Logon(
 
 <dl> <dt>
 
-*hwndParent* \[ de\]
+*hwndParent* \[ En\]
 </dt> <dd>
 
-Tipo: **hWnd**
+Tipo: **HWND**
 
-Un valor **hWnd** que identifica una ventana que se enviará al primer plano después de que se descarte la interfaz de usuario de inicio de sesión.
+Valor **HWND que** identifica una ventana que se pondrá en primer plano después de descartar la interfaz de usuario de inicio de sesión.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Tipo: **DWORD**
 
-Marcas opcionales para definir cómo se comportará la interfaz de usuario. Establezca en UIL \_ Force \_ UI para forzar que se muestre la interfaz de usuario, incluso si ya se ha elegido una identidad.
+Marcas opcionales para definir cómo se comportará la interfaz de usuario. Establezca en UIL FORCE UI para forzar la presentación de la interfaz de usuario, incluso si ya se \_ ha elegido una \_ identidad.
 
 </dd> <dt>
 
-*ppIdentity* \[ enuncia\]
+*ppIdentity* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IUserIdentity**](iuseridentity.md)\*\***
 
-Dirección del puntero que recibe la identidad del usuario elegida.
+Dirección del puntero que recibe la identidad de usuario elegida.
 
 </dd> </dl>
 
@@ -74,18 +74,18 @@ Dirección del puntero que recibe la identidad del usuario elegida.
 
 Tipo: **HRESULT**
 
-Resultado de la operación de inicio de sesión. Si se realiza correctamente, devuelve S \_ correcto. De lo contrario, devolverá uno de los siguientes códigos de error.
+Resultado de la operación de inicio de sesión. Si se realiza correctamente, devuelve S \_ OK. De lo contrario, devolverá uno de los siguientes códigos de error.
 
 
 
 | Código devuelto                                                                                            | Descripción                                                                                 |
 |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| <dl> <dt>**E \_ cancelado por el usuario \_**</dt> </dl>      | El usuario canceló la operación de inicio de sesión desde la interfaz de usuario.<br/>                               |
+| <dl> <dt>**E \_ USER \_ CANCELLED**</dt> </dl>      | El usuario canceló la operación de inicio de sesión de la interfaz de usuario.<br/>                               |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>          | No se pudo crear la identidad del usuario.<br/>                                          |
-| <dl> <dt>**E \_ inesperado**</dt> </dl>           | Error inesperado en la operación.<br/>                                               |
-| <dl> <dt>**E \_ identidades \_ deshabilitadas**</dt> </dl> | La administración de identidades está deshabilitada en el sistema.<br/>                                   |
-| <dl> <dt>**\_identidades \_ deshabilitadas**</dt> </dl> | La administración de identidades está deshabilitada en el sistema.<br/>                                   |
-| <dl> <dt>**E \_ identidad \_ cambiando**</dt> </dl>   | El sistema está cambiando actualmente las identidades y no puede completar la operación.<br/> |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl>           | Error inesperado en la operación.<br/>                                               |
+| <dl> <dt>**IDENTIDADES \_ E \_ DESHABILITADAS**</dt> </dl> | La administración de identidades está deshabilitada en el sistema.<br/>                                   |
+| <dl> <dt>**IDENTIDADES DE S \_ \_ DESHABILITADAS**</dt> </dl> | La administración de identidades está deshabilitada en el sistema.<br/>                                   |
+| <dl> <dt>**CAMBIO \_ DE IDENTIDAD \_ E**</dt> </dl>   | El sistema está cambiando actualmente las identidades y no puede completar la operación.<br/> |
 
 
 
@@ -101,8 +101,8 @@ Resultado de la operación de inicio de sesión. Si se realiza correctamente, de
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Fin de compatibilidad de cliente<br/>    | Windows 2000 Professional<br/>                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows 2000 Server<br/>                                                         |
-| Encabezado<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 
@@ -114,7 +114,7 @@ Resultado de la operación de inicio de sesión. Si se realiza correctamente, de
 [**IUserIdentityManager**](iuseridentitymanager.md)
 </dt> <dt>
 
-[**IUserIdentityManager:: Logoff**](iuseridentitymanager-logoff.md)
+[**IUserIdentityManager::Logoff**](iuseridentitymanager-logoff.md)
 </dt> <dt>
 
 [**IUserIdentityManager::ManageIdentities**](iuseridentitymanager-manageidentities.md)

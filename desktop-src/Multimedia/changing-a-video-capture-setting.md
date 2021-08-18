@@ -3,16 +3,16 @@ title: Cambiar una configuración de captura de vídeo
 description: Cambiar una configuración de captura de vídeo
 ms.assetid: a5fe7e1e-084d-4102-91d4-ffe5d1d0e5c8
 keywords:
-- capCaptureGetSetup (macro)
-- capCaptureSetSetup (macro)
+- CapCaptureGetSetup macro
+- CapCaptureSetSetup macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b3f2629325c67bcad1fed26a9fed4d053372392
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9af4142880fcbd272bc133d7f488afac02928614cfe33be6d209df27ccd1bc76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104419106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145118"
 ---
 # <a name="changing-a-video-capture-setting"></a>Cambiar una configuración de captura de vídeo
 
@@ -37,12 +37,12 @@ capCaptureSetSetup(hWndC, &CaptureParms, sizeof (CAPTUREPARMS));
 
 <dl> <dt>
 
-[Uso de la captura de vídeo](using-video-capture.md)
+[Uso de captura de vídeo](using-video-capture.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

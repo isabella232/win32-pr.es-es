@@ -1,9 +1,9 @@
 ---
-title: SLIDEr. transparencyColor
-description: El atributo transparencyColor especifica o recupera el color transparente de las imágenes de fondo y de primer plano del control deslizante.
+title: SLIDER.transparencyColor
+description: El atributo transparencyColor especifica o recupera el color transparente del fondo del control deslizante y las imágenes en primer plano.
 ms.assetid: 857e3e48-bff2-4396-9f8c-c3d80b37c1d1
 keywords:
-- SLIDEr. transparencyColor Windows Media Player
+- SLIDER.transparencyColor Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cda638e03b62ff81e6c9470239c71c441c755c2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 43e853a788c92fbbf3f5b9135918b3be53e21ad76f7b50270e46ba2f92ff6191
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118653"
 ---
-# <a name="slidertransparencycolor"></a>SLIDEr. transparencyColor
+# <a name="slidertransparencycolor"></a>SLIDER.transparencyColor
 
-El atributo **transparencyColor** especifica o recupera el color transparente de las imágenes de fondo y de primer plano del control deslizante.
+El **atributo transparencyColor** especifica o recupera el color transparente del fondo del control deslizante y las imágenes en primer plano.
 
 ``` syntax
         elementID.transparencyColor
@@ -29,13 +29,13 @@ El atributo **transparencyColor** especifica o recupera el color transparente de
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene cualquier valor de color de Microsoft Internet Explorer. No tiene valor predeterminado.
+Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer Microsoft. No tiene valor predeterminado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cualquier parte de la imagen que contenga el **transparencyColor** permitirá que el fondo se muestre.
+Cualquier parte de la imagen que contenga **transparencyColor** permitirá que se muestre el fondo.
 
-Dado que los JPGs se pierden y, por lo tanto, están sujetos a cambios de color inesperados, no se recomiendan cuando se usa **transparencyColor** .
+Dado que los JPG son perdidos y, por tanto, están sujetos a un cambio de color inesperado, no se recomiendan cuando **se usa transparencyColor.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Dado que los JPGs se pierden y, por lo tanto, están sujetos a cambios de color 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -51,7 +51,7 @@ Dado que los JPGs se pierden y, por lo tanto, están sujetos a cambios de color 
 
 <dl> <dt>
 
-[**Elemento SLIDEr**](slider-element.md)
+[**Elemento SLIDER**](slider-element.md)
 </dt> <dt>
 
 [**Referencia de color**](color-reference.md)

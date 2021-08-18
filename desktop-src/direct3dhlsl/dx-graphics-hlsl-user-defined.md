@@ -1,6 +1,6 @@
 ---
 title: Tipo definido por el usuario
-description: Use la siguiente sintaxis para declarar un tipo definido por el usuario.
+description: Use la sintaxis siguiente para declarar un tipo definido por el usuario.
 ms.assetid: 8ef18864-f456-4b52-af83-f9b1050a0bba
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2107e3eb2b2dc2362776a1a9ecd50830519c6627
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ee73cd5afcda15bcc821d7fea5b648924829d483a33b9c67c140eed0b100e861
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789315"
 ---
 # <a name="user-defined-type"></a>Tipo definido por el usuario
 
-Use la siguiente sintaxis para declarar un tipo definido por el usuario.
+Use la sintaxis siguiente para declarar un tipo definido por el usuario.
 
 
 
 |                                           |
 |-------------------------------------------|
-| typedef **\[ const \] nombre de \[ tipo \] index**; |
+| typedef **\[ const \] Type Name \[ Index \]**; |
 
 
 
@@ -36,20 +36,20 @@ Use la siguiente sintaxis para declarar un tipo definido por el usuario.
 
 | Elemento                                                                                         | Descripción                                                                            |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| <span id="_const_"></span><span id="_CONST_"></span>**\[constante\]**<br/>                 | Opcional. Esta palabra clave marca explícitamente el tipo como una constante.<br/>             |
-| <span id="Type"></span><span id="type"></span><span id="TYPE"></span>**Automáticamente**<br/>     | Identifica el tipo de datos; debe ser uno de los tipos de datos intrínsecos de HLSL.<br/>     |
-| <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Name**<br/>     | Cadena ASCII que identifica de forma única el nombre de la variable.<br/>                 |
-| <span id="Index"></span><span id="index"></span><span id="INDEX"></span>**Ajustar**<br/> | Tamaño de matriz opcional. Debe ser un entero sin signo comprendido entre 1 y 4, ambos incluidos.<br/> |
+| <span id="_const_"></span><span id="_CONST_"></span>**\[Const\]**<br/>                 | Opcional. Esta palabra clave marca explícitamente el tipo como una constante.<br/>             |
+| <span id="Type"></span><span id="type"></span><span id="TYPE"></span>**Tipo**<br/>     | Identifica el tipo de datos; debe ser uno de los tipos de datos intrínsecos HLSL.<br/>     |
+| <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nombre**<br/>     | Cadena ASCII que identifica de forma única el nombre de la variable.<br/>                 |
+| <span id="Index"></span><span id="index"></span><span id="INDEX"></span>**Índice**<br/> | Tamaño de matriz opcional. Debe ser un entero sin signo entre 1 y 4 inclusive.<br/> |
 
 
 
  
 
-Además de los tipos de datos intrínsecos integrados, HLSL admite tipos definidos por el usuario o personalizados que siguen esta sintaxis:
+Además de los tipos de datos intrínsecos integrados, HLSL admite tipos personalizados o definidos por el usuario que siguen esta sintaxis:
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los tipos definidos por el usuario no distinguen mayúsculas de minúsculas. Para mayor comodidad, los siguientes tipos se definen automáticamente en el ámbito Superglobal.
+Los tipos definidos por el usuario no distinguen mayúsculas de minúsculas. Para mayor comodidad, los siguientes tipos se definen automáticamente en el ámbito super global.
 
 
 ```
@@ -70,9 +70,9 @@ typedef matrix <double, #, #> double#x#;
 
 
 
-El signo de almohadilla ( \# ) representa un dígito entero comprendido entre 1 y 4.
+El signo de perd ( \# ) representa un dígito entero entre 1 y 4.
 
-Para ofrecer compatibilidad con los efectos de DirectX 8, los siguientes tipos se definen automáticamente en el ámbito Superglobal:
+Para la compatibilidad con efectos de DirectX 8, los siguientes tipos se definen automáticamente en el ámbito super global:
 
 
 ```

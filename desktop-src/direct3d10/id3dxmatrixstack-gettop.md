@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: d1d96cfe8124b47a9b6ce546379af1313a02ea26
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 340ea7ed85e05795dbc3949a29c5384871dfe840aa25ed4f9b2f07e1d4264de1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119852235"
 ---
 # <a name="id3dxmatrixstackgettop-method-d3dx10h"></a>Método ID3DXMATRIXStack::GetTop (D3DX10.h)
 
@@ -61,7 +61,7 @@ Tenga en cuenta que este método no quita la matriz actual de la parte superior 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

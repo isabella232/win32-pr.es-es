@@ -1,11 +1,11 @@
 ---
-title: atributo MS-PKI-reemplazó-templates
-description: Especifica los nombres de las plantillas de certificado que se sustituyen por la plantilla actual.
+title: Atributo ms-PKI-Supersede-Templates
+description: Especifica los nombres de las plantillas de certificado reemplazadas por la plantilla actual.
 ms.assetid: 4e247932-1c50-4bfb-b723-52b7c36a8571
 ms.tgt_platform: multiple
 keywords:
-- atributo MS-PKI-reemplazó-templates AD Schema
-- Atributo mspki-reemplazó-esquema de AD de atributos de plantillas
+- Esquema de AD del atributo ms-PKI-Supersede-Templates
+- Esquema de AD del atributo msPKI-Supersede-Templates
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd11ac2b96846912b0c6b1e8d01c6fd558f5f6db
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 12fbda25794dfe75e7f75fce4c2796cabca00e26697f7321f9edec46276e874a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104535968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803065"
 ---
-# <a name="ms-pki-supersede-templates-attribute"></a>atributo MS-PKI-reemplazó-templates
+# <a name="ms-pki-supersede-templates-attribute"></a>Atributo ms-PKI-Supersede-Templates
 
-Especifica los nombres de las plantillas de certificado que se sustituyen por la plantilla actual.
+Especifica los nombres de las plantillas de certificado reemplazadas por la plantilla actual.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------------------------------------------------------------|
-| CN                | MS-PKI-reemplazó-plantillas                                                                        |
-| Nombre para mostrar de LDAP | Atributo mspki-reemplazó-plantillas                                                                         |
-| Tamaño              | 64 bytes                                                                                          |
-| Actualizar privilegio  | Administrador de dominio                                                                              |
-| Frecuencia de actualización  | Cuando se edita, crea o clona el objeto plantilla de certificado (MS-PKI-Certificate-template). |
+| CN                | ms-PKI-Supersede-Templates                                                                        |
+| Ldap-Display-Name | msPKI-Supersede-Templates                                                                         |
+| Size              | 64 bytes                                                                                          |
+| Actualizar privilegios  | Administrador de dominio                                                                              |
+| Frecuencia de actualización  | Cuando se edita, crea o clona el objeto de plantilla de certificado (ms-PKI-Certificate-Template). |
 | Attribute-Id      | 1.2.840.113556.1.4.1437                                                                           |
-| System-ID-GUID    | 9de8ae7d-7a5b-421d-b5e4-061f79dfd5d7                                                              |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                                       |
+| System-Id-Guid    | 9de8ae7d-7a5b-421d-b5e4-061f79dfd5d7                                                              |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                                       |
 
 
 
@@ -54,18 +54,18 @@ Especifica los nombres de las plantillas de certificado que se sustituyen por la
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Especifica los nombres de las plantillas de certificado que se sustituyen por la
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Especifica los nombres de las plantillas de certificado que se sustituyen por la
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -117,18 +117,18 @@ Especifica los nombres de las plantillas de certificado que se sustituyen por la
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Especifica los nombres de las plantillas de certificado que se sustituyen por la
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | False                                                                   |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Falso                                                                   |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 

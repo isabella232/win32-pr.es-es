@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: VistaParam. EnableFileCache, campo'
-title: Campo VistaParam. EnableFileCache (Microsoft. ISAM. esent. Interop. vista)
+description: Más información sobre el campo VistaParam.EnableFileCache
+title: Campo VistaParam.EnableFileCache (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: EnableFileCache field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Vista.VistaParam.EnableFileCache
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistaparam.enablefilecache(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e679c7445e19438549ae916cb18106e6e7e108ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6547039c3cbfdf2cb418133d5334d4445f24b83b99d20c9301fa0f042097562
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105714963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117889627"
 ---
-# <a name="vistaparamenablefilecache-field"></a>VistaParam. EnableFileCache, campo
+# <a name="vistaparamenablefilecache-field"></a>Campo VistaParam.EnableFileCache
 
-Habilita el uso de la caché de archivos del sistema operativo para todos los archivos administrados.
+Habilite el uso de la caché de archivos del sistema operativo para todos los archivos administrados.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,12 +53,12 @@ value = VistaParam.EnableFileCache
 public const JET_param EnableFileCache
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase VistaParam](./vistaparam-class.md)
+[VistaParam (clase)](./vistaparam-class.md)
 
 [Miembros de VistaParam](./vistaparam-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

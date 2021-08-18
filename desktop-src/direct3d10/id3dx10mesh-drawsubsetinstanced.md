@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 2e28d7a7d2c1d743090832d68793ec3743662308
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 41da932b5f9445df83c0783b7788b8a7079af2acb74643ea37111d8482e8e208
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990435"
 ---
 # <a name="id3dx10meshdrawsubsetinstanced-method"></a>Método ID3DX10Mesh::D rawSubsetInstanced
 
@@ -93,9 +93,9 @@ Una malla contiene una tabla de atributos. La tabla de atributos puede dividir u
 
 La creación de instancias puede ampliar el rendimiento si se vuelve a usar la misma geometría para dibujar varios objetos en una escena. Un ejemplo de creación de instancias podría ser dibujar el mismo objeto con diferentes posiciones y colores. La indexación requiere varios búferes de vértices: al menos uno para los datos por vértice y un segundo búfer para los datos por instancia.
 
-El dibujo de instancias con DrawSubsetInstanced es muy similar al proceso usado con [**ID3D10Device::D rawIndexedInstanced**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-drawindexedinstanced) que se describe en Ejemplo de creación de instancias [.](https://msdn.microsoft.com/library/Ee418269(v=VS.85).aspx) La diferencia clave al usar DrawSubsetInstanced es que los búferes de vértice e índice deben extraerse del objeto [**ID3DX10Mesh Interface**](id3dx10mesh.md) para poder combinar los datos de creación de instancias.
+Dibujar instancias con DrawSubsetInstanced es muy similar al proceso usado con [**ID3D10Device::D rawIndexedInstanced**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-drawindexedinstanced) que se describe en Ejemplo de creación de instancias [.](https://msdn.microsoft.com/library/Ee418269(v=VS.85).aspx) La diferencia clave al usar DrawSubsetInstanced es que los búferes de vértice e índice deben extraerse del objeto [**ID3DX10Mesh Interface**](id3dx10mesh.md) para poder combinar los datos de creación de instancias.
 
-En el código siguiente se muestra cómo extraer los búferes de vértice e índice del objeto de malla.
+El código siguiente muestra cómo extraer los búferes de vértice e índice del objeto de malla.
 
 
 ```
@@ -119,7 +119,7 @@ En el código siguiente se muestra cómo extraer los búferes de vértice e índ
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: La función WaitDispatchingMessages espera a que se señalice un objeto, mientras se envían mensajes de ventana.
+description: La función WaitDispatchingMessages espera a que se señale un objeto, mientras se envían mensajes de ventana.
 ms.assetid: d15f6736-d141-47a3-b767-fbf774982fb4
-title: Función WaitDispatchingMessages (Wxutil. h)
+title: Función WaitDispatchingMessages (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9e509a081243f28293dc2d8abf8311f69eaf9a44
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 26442633d1a4d5187b5e53ae53e0a898f759f91dc3719f09715b570108b701f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119071909"
 ---
-# <a name="waitdispatchingmessages-function"></a>WaitDispatchingMessages función)
+# <a name="waitdispatchingmessages-function"></a>Función WaitDispatchingMessages
 
-La `WaitDispatchingMessages` función espera a que se señale un objeto mientras se envían mensajes de ventana.
+La `WaitDispatchingMessages` función espera a que se señale un objeto, mientras se envían mensajes de ventana.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,7 +49,7 @@ DWORD WINAPI WaitDispatchingMessages(
 *hObject* 
 </dt> <dd>
 
-Identificador del objeto que se va a esperar.
+Identificador del objeto que se espera.
 
 </dd> <dt>
 
@@ -60,34 +60,34 @@ Intervalo de tiempo de espera, en milisegundos.
 
 </dd> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
-Identificador opcional de una ventana.
+Identificador opcional para una ventana.
 
 </dd> <dt>
 
 *uMsg* 
 </dt> <dd>
 
-Mensaje de ventana opcional que especifica un mensaje para enviar.
+Mensaje de ventana opcional, especificando un mensaje que se enviará.
 
 </dd> <dt>
 
 *hEvent* 
 </dt> <dd>
 
-Identificador opcional de un evento que se va a esperar.
+Identificador opcional para un evento que se debe esperar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor de la función **WaitForMultipleObjects** .
+Devuelve el valor de la **función WaitForMultipleObjects.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si un objeto posee una ventana, debe enviar los mensajes de ventana mientras se espera. Esta función permite al objeto esperar a un evento, semáforo u otro objeto de exclusión mutua durante el envío de mensajes.
+Si un objeto posee una ventana, debe enviar mensajes de ventana mientras espera. Esta función permite que el objeto espere un evento, un semáforo u otro objeto de exclusión mutua al enviar mensajes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,8 +95,8 @@ Si un objeto posee una ventana, debe enviar los mensajes de ventana mientras se 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

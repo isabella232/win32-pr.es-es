@@ -1,10 +1,10 @@
 ---
 title: atributo associatedDomain
-description: El tipo de atributo associatedDomain especifica un dominio DNS que está asociado a un objeto.
+description: El tipo de atributo associatedDomain especifica un dominio DNS asociado a un objeto .
 ms.assetid: 4ed5bb06-6f23-44ec-9589-d1bb59c65487
 ms.tgt_platform: multiple
 keywords:
-- associatedDomain esquema de AD de atributos
+- Esquema de AD del atributo associatedDomain
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8afa7e4c7457ab0f213b9a05dc33ac9bd372e0a2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 13c624bd590e386267d2e72dc4a070c9d7891c1958b8f058ee11aa04753eb07b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022823"
 ---
 # <a name="associateddomain-attribute"></a>atributo associatedDomain
 
-El tipo de atributo associatedDomain especifica un dominio DNS que está asociado a un objeto.
+El tipo de atributo associatedDomain especifica un dominio DNS asociado a un objeto .
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | associatedDomain                     |
-| Nombre para mostrar de LDAP | associatedDomain                     |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | associatedDomain                     |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 0.9.2342.19200300.100.1.37           |
-| System-ID-GUID    | 3320fc38-c379-4c17-a510-1bdf6133c5da |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | 3320fc38-c379-4c17-a510-1bdf6133c5da |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -53,13 +53,13 @@ El tipo de atributo associatedDomain especifica un dominio DNS que está asociad
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Falso                                                           |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
@@ -74,13 +74,13 @@ El tipo de atributo associatedDomain especifica un dominio DNS que está asociad
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Falso                                                           |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
@@ -95,13 +95,13 @@ El tipo de atributo associatedDomain especifica un dominio DNS que está asociad
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Falso                                                           |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
@@ -116,13 +116,13 @@ El tipo de atributo associatedDomain especifica un dominio DNS que está asociad
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Falso                                                           |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
@@ -137,13 +137,13 @@ El tipo de atributo associatedDomain especifica un dominio DNS que está asociad
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Falso                                                           |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |

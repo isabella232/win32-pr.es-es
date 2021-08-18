@@ -1,10 +1,10 @@
 ---
-title: RAS_PORT_1 estructura (rassapi. h)
-description: La \_ estructura del puerto ras \_ 1 contiene información acerca de un puerto ras.
+title: RAS_PORT_1 estructura (Rassapi.h)
+description: La estructura \_ RAS PORT \_ 1 contiene información sobre un puerto RAS.
 ms.assetid: f226ef16-feb4-41e0-ba60-ddb2f0acd305
 keywords:
-- RAS_PORT_1 de la estructura RAS
-- PRAS_PORT_1 de puntero de estructura RAS
+- RAS_PORT_1 ras de estructura
+- PRAS_PORT_1 de estructura ras
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d73fe450e5ea5f8ceee48436dbbe05570d0d818a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5c73677b10743434bb9548c8d6add95100c4cf017d25bb44d7436e2f68b9ca4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105651398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673115"
 ---
-# <a name="ras_port_1-structure"></a>\_Estructura del puerto 1 de Ras \_
+# <a name="ras_port_1-structure"></a>Estructura \_ RAS PORT \_ 1
 
-\[Esta versión de la estructura del **\_ Puerto \_ 1 de Ras** no es compatible con Windows Vista. En su lugar, use el [**\_ Puerto ras \_ 1**](/windows/desktop/api/Mprapi/ns-mprapi-ras_port_1) más reciente definido en mprapi. h.\]
+\[Esta versión de la **estructura \_ RAS PORT \_ 1** no se admite a partir Windows Vista. Use el puerto [**RAS \_ \_ 1 más**](/windows/desktop/api/Mprapi/ns-mprapi-ras_port_1) reciente definido en mprapi.h en su lugar.\]
 
-La estructura del **\_ Puerto ras \_ 1** contiene información acerca de un puerto ras.
+La **estructura RAS PORT \_ \_ 1** contiene información sobre un puerto RAS.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,26 +53,26 @@ typedef struct _RAS_PORT_1 {
 **rasport0**
 </dt> <dd>
 
-Especifica una estructura de [**\_ Puerto \_ 0 de Ras**](ras-port-0-str.md) que contiene información sobre el puerto, como el nombre del puerto, el nombre del usuario remoto conectado al puerto, etc.
+Especifica una estructura [**RAS \_ PORT \_ 0**](ras-port-0-str.md) que contiene información sobre el puerto, como el nombre del puerto, el nombre del usuario remoto conectado al puerto, y así sucesivamente.
 
 </dd> <dt>
 
 **LineCondition**
 </dt> <dd>
 
-Especifica el estado del puerto. Este miembro puede ser uno de los valores siguientes.
+Especifica el estado del puerto. Este miembro puede ser uno de los siguientes valores.
 
 
 
 | Value                                                                                                                                                                                            | Significado                                                                                                                                                                |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="RAS_PORT_NON_OPERATIONAL"></span><span id="ras_port_non_operational"></span><dl> <dt>**\_Puerto ras \_ no \_ operativo**</dt> </dl> | El puerto no es operativo. Busque en el registro de eventos los errores detectados por el servidor.<br/>                                                                         |
-| <span id="RAS_PORT_DISCONNECTED"></span><span id="ras_port_disconnected"></span><dl> <dt>**\_Puerto ras \_ desconectado**</dt> </dl>           | El puerto está actualmente desconectado.<br/>                                                                                                                         |
-| <span id="RAS_PORT_CALLING_BACK"></span><span id="ras_port_calling_back"></span><dl> <dt>**\_devolución de \_ llamada del puerto ras \_**</dt> </dl>          | El servidor RAS está devolviendo al cliente RAS.<br/>                                                                                                              |
-| <span id="RAS_PORT_LISTENING"></span><span id="ras_port_listening"></span><dl> <dt>**\_escucha de Puerto ras \_**</dt> </dl>                    | El puerto está esperando a que un cliente llame a en.<br/>                                                                                                                |
-| <span id="RAS_PORT_AUTHENTICATING"></span><span id="ras_port_authenticating"></span><dl> <dt>**\_autenticación de Puerto ras \_**</dt> </dl>     | El servidor está en proceso de autenticación del cliente remoto.<br/>                                                                                           |
-| <span id="RAS_PORT_AUTHENTICATED"></span><span id="ras_port_authenticated"></span><dl> <dt>**\_Puerto ras \_ autenticado**</dt> </dl>        | El cliente remoto ya está autenticado.<br/>                                                                                                                     |
-| <span id="RAS_PORT_INITIALIZING"></span><span id="ras_port_initializing"></span><dl> <dt>**\_inicialización del puerto ras \_**</dt> </dl>           | El dispositivo conectado al puerto se está inicializando. El estado del puerto cambiará al puerto RAS \_ \_ escuchando cuando se haya completado la inicialización.<br/> |
+| <span id="RAS_PORT_NON_OPERATIONAL"></span><span id="ras_port_non_operational"></span><dl> <dt>**PUERTO RAS \_ \_ NO \_ OPERATIVO**</dt> </dl> | El puerto no está operativo. Compruebe en el registro de eventos si hay errores notificados por el servidor.<br/>                                                                         |
+| <span id="RAS_PORT_DISCONNECTED"></span><span id="ras_port_disconnected"></span><dl> <dt>**PUERTO \_ RAS \_ DESCONECTADO**</dt> </dl>           | El puerto está desconectado actualmente.<br/>                                                                                                                         |
+| <span id="RAS_PORT_CALLING_BACK"></span><span id="ras_port_calling_back"></span><dl> <dt>**PUERTO RAS \_ QUE \_ LLAMA DE \_ NUEVO**</dt> </dl>          | El servidor RAS está llamando de nuevo al cliente RAS.<br/>                                                                                                              |
+| <span id="RAS_PORT_LISTENING"></span><span id="ras_port_listening"></span><dl> <dt>**ESCUCHA \_ DE PUERTO \_ RAS**</dt> </dl>                    | El puerto está esperando a que un cliente llame a .<br/>                                                                                                                |
+| <span id="RAS_PORT_AUTHENTICATING"></span><span id="ras_port_authenticating"></span><dl> <dt>**AUTENTICACIÓN \_ DE \_ PUERTO RAS**</dt> </dl>     | El servidor está en proceso de autenticación del cliente remoto.<br/>                                                                                           |
+| <span id="RAS_PORT_AUTHENTICATED"></span><span id="ras_port_authenticated"></span><dl> <dt>**PUERTO \_ RAS \_ AUTENTICADO**</dt> </dl>        | El cliente remoto ahora está autenticado.<br/>                                                                                                                     |
+| <span id="RAS_PORT_INITIALIZING"></span><span id="ras_port_initializing"></span><dl> <dt>**INICIALIZACIÓN \_ DE \_ PUERTO RAS**</dt> </dl>           | Se está inicializando el dispositivo conectado al puerto. El estado del puerto cambiará a RAS \_ PORT LISTENING cuando se haya completado la \_ inicialización.<br/> |
 
 
 
@@ -89,8 +89,8 @@ Especifica uno de los siguientes valores para indicar el estado del dispositivo 
 
 | Value                                                                                                                                                                                                  | Significado                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| <span id="RAS_MODEM_OPERATIONAL"></span><span id="ras_modem_operational"></span><dl> <dt>**\_módem ras \_ operativo**</dt> </dl>                 | El módem conectado a este puerto está operativo y está listo para recibir llamadas de cliente.<br/> |
-| <span id="RAS_MODEM_HARDWARE_FAILURE"></span><span id="ras_modem_hardware_failure"></span><dl> <dt>**\_error de \_ hardware del módem ras \_**</dt> </dl> | El módem conectado a este puerto tiene un problema de hardware.<br/>                              |
+| <span id="RAS_MODEM_OPERATIONAL"></span><span id="ras_modem_operational"></span><dl> <dt>**MÓDEM \_ RAS \_ OPERATIVO**</dt> </dl>                 | El módem conectado a este puerto está operativo y está listo para recibir llamadas de cliente.<br/> |
+| <span id="RAS_MODEM_HARDWARE_FAILURE"></span><span id="ras_modem_hardware_failure"></span><dl> <dt>**ERROR \_ DE HARDWARE DEL MÓDEM \_ \_ RAS**</dt> </dl> | El módem conectado a este puerto tiene un problema de hardware.<br/>                              |
 
 
 
@@ -108,28 +108,28 @@ Especifica la velocidad, en bits por segundo, con la que el equipo puede comunic
 **NumStatistics**
 </dt> <dd>
 
-Este miembro no se usa. Las funciones de administración de RAS, como la función [**RasAdminPortGetInfo**](rasadminportgetinfo.md) , utilizan la estructura de [**\_ \_ estadísticas de Puerto ras**](ras-port-statistics-str.md) para devolver estadísticas de puerto.
+Este miembro no se usa. Las funciones de administración de RAS, como la [**función RasAdminPortGetInfo,**](rasadminportgetinfo.md) usan la estructura [**RAS PORT \_ \_ STATISTICS**](ras-port-statistics-str.md) para devolver estadísticas de puerto.
 
 </dd> <dt>
 
 **NumMediaParms**
 </dt> <dd>
 
-Especifica el número de parámetros específicos del medio para este puerto. En el caso de los medios en serie, suele ser el número de valores que aparecen en el archivo de SERIAL.INI.
+Especifica el número de parámetros específicos del medio para este puerto. En el caso de los medios serie, suele ser el número de valores que aparecen en el SERIAL.INI serie.
 
 </dd> <dt>
 
 **SizeMediaParms**
 </dt> <dd>
 
-Especifica el tamaño, en bytes, del búfer necesario para todos los parámetros específicos del medio. La función [**RasAdminPortGetInfo**](rasadminportgetinfo.md) devuelve un búfer que contiene una matriz de estructuras de [**\_ parámetros ras**](ras-parameters-str.md) con los valores y parámetros multimedia del puerto.
+Especifica el tamaño, en bytes, del búfer necesario para todos los parámetros específicos del medio. La [**función RasAdminPortGetInfo**](rasadminportgetinfo.md) devuelve un búfer que contiene una matriz de estructuras [**DE PARÁMETROS \_ RAS**](ras-parameters-str.md) con los parámetros multimedia y los valores del puerto.
 
 </dd> <dt>
 
 **ProjResult**
 </dt> <dd>
 
-Estructura del resultado de la [**\_ \_ proyección \_ PPP de Ras**](ras-ppp-projection-result-str.md) que especifica la información de proyección PPP para este puerto. Esta estructura proporciona información para cada protocolo que se negocia cuando un cliente RAS se conecta a un servidor.
+Estructura [**RAS PPP PROJECTION \_ \_ \_ RESULT**](ras-ppp-projection-result-str.md) que especifica la información de proyección PPP para este puerto. Esta estructura proporciona información para cada protocolo que se negocia cuando un cliente RAS se conecta a un servidor.
 
 </dd> </dl>
 
@@ -143,7 +143,7 @@ Estructura del resultado de la [**\_ \_ proyección \_ PPP de Ras**](ras-ppp-pro
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
 
 
 
@@ -151,28 +151,28 @@ Estructura del resultado de la [**\_ \_ proyección \_ PPP de Ras**](ras-ppp-pro
 
 <dl> <dt>
 
-[Introducción al servicio de acceso remoto (RAS)](about-remote-access-service.md)
+[Introducción al Servicio de acceso remoto (RAS)](about-remote-access-service.md)
 </dt> <dt>
 
 [Estructuras de administración del servidor RAS](ras-server-administration-structures.md)
 </dt> <dt>
 
-[**parámetros de RAS \_**](ras-parameters-str.md)
+[**PARÁMETROS \_ RAS**](ras-parameters-str.md)
 </dt> <dt>
 
-[**\_Puerto ras \_ 0**](ras-port-0-str.md)
+[**PUERTO \_ \_ RAS 0**](ras-port-0-str.md)
 </dt> <dt>
 
-[**\_estadísticas de Puerto ras \_**](ras-port-statistics-str.md)
+[**ESTADÍSTICAS \_ DE \_ PUERTO RAS**](ras-port-statistics-str.md)
 </dt> <dt>
 
-[**\_resultado de \_ proyección \_ PPP de Ras**](ras-ppp-projection-result-str.md)
+[**RESULTADO DE \_ PROYECCIÓN DE RAS PPP \_ \_**](ras-ppp-projection-result-str.md)
 </dt> <dt>
 
 [**RasAdminAcceptNewConnection**](rasadminacceptnewconnection.md)
 </dt> <dt>
 
-[**RasAdminConnectionHangupNotification**](rasadminconnectionhangupnotification.md)
+[**RasAdminConnectionConnectionConnectionupNotification**](rasadminconnectionhangupnotification.md)
 </dt> <dt>
 
 [**RasAdminPortGetInfo**](rasadminportgetinfo.md)
