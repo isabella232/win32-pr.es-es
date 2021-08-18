@@ -1,6 +1,6 @@
 ---
 title: Propiedad IVMVirtualPC MaximumNumberOfIDEBuses (VPCCOMInterfaces.h)
-description: Recupera el número máximo de buses permitidos para el IDE.
+description: Recupera el número máximo de bus permitido para el IDE.
 ms.assetid: 7b88eda4-0f66-4e26-96cb-1e9ebef9d0b8
 keywords:
 - MaximumNumberOfIDEBuses, propiedad Virtual PC
@@ -28,7 +28,7 @@ ms.locfileid: "118998475"
 
 \[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Recupera el número máximo de buses permitidos para el IDE.
+Recupera el número máximo de bus permitido para el IDE.
 
 Esta propiedad es de solo lectura.
 
@@ -45,7 +45,7 @@ HRESULT get_MaximumNumberOfIDEBuses(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Número máximo de buses permitidos para el IDE.
+Número máximo de bus permitido para el IDE.
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -56,7 +56,7 @@ Número máximo de buses permitidos para el IDE.
 | <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                                              | La operación se realizó correctamente.<br/>                                                        |
 | <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>                                | El parámetro es **NULL.**<br/>                                                           |
 | <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>                        | Se produjo un error inesperado.<br/>                                                    |
-| <dl> <dt>Máquina virtual \_ E \_ HARDWARE \_ VIRTUALIZATION \_ DISABLED</dt> <dt>0xA0040951</dt> </dl> | El procesador no admite extensiones de Virtualización acelerada por hardware (HAV).<br/> |
+| <dl> <dt>Máquina virtual \_ E \_ \_ VIRTUALIZACIÓN DE HARDWARE \_ DESHABILITADA</dt> <dt>0xA0040951</dt> </dl> | El procesador no admite extensiones de virtualización acelerada de hardware (HAV).<br/> |
 
 
 
@@ -64,7 +64,7 @@ Número máximo de buses permitidos para el IDE.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
@@ -75,7 +75,7 @@ Número máximo de buses permitidos para el IDE.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

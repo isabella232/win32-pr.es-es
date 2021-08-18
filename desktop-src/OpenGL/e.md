@@ -7,47 +7,47 @@ keywords:
 - Elementos
 - evaluación
 - ejecutar
-- coordenadas del ojo
+- coordenadas de los ojos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2537424ffa7726e2110d0a6724377f5b53416a13
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: badab97c395859d5561663038088718159f2d29e08522767f2fe8bc7496f345a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104359621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119625875"
 ---
 # <a name="e-opengl"></a>E (OpenGL)
 
-[A](a.md) [B](b.md) [C](c.md) [D](d.md) E [F](f.md) [G](g.md) [H](h.md) [I](i.md) [J K](jk.md) [L](l.md) [M](m.md) [N](n.md) [o](o.md) [p](p.md) [Q](q.md) [R](r.md) [s](s.md) [T](t.md) [U V](u-v.md) [W](w.md) [X Y Z](x-y-z.md)
+[A](a.md) [B](b.md) [C](c.md) [D](d.md) E [F](f.md) G [H](g.md) [I](h.md) [](i.md) [J K](jk.md) L [M](l.md) [N](m.md) [O](n.md) [](o.md) [P P](p.md) [](q.md) [Q R](r.md) [S](s.md) [T](t.md) U [V](u-v.md) [W](w.md) X Y [Z](x-y-z.md)
 
 <dl> <dt>
 
-<span id="opengl_element"></span><span id="OPENGL_ELEMENT"></span>**Element**
+<span id="opengl_element"></span><span id="OPENGL_ELEMENT"></span>**Elemento**
 </dt> <dd>
 
 Un único componente o índice.
 
 </dd> <dt>
 
-<span id="opengl_evaluation"></span><span id="OPENGL_EVALUATION"></span>**evaluación**
+<span id="opengl_evaluation"></span><span id="OPENGL_EVALUATION"></span>**Evaluación**
 </dt> <dd>
 
-Proceso OpenGL de generación de los vértices de la coordenada de objetos y los parámetros de las ecuaciones de Bézier especificadas anteriormente.
+Proceso openGL de generación de vértices y parámetros de coordenadas de objeto a partir de ecuaciones de Bézier especificadas anteriormente.
 
 </dd> <dt>
 
-<span id="opengl_execute"></span><span id="OPENGL_EXECUTE"></span>**ejecut**
+<span id="opengl_execute"></span><span id="OPENGL_EXECUTE"></span>**Ejecutar**
 </dt> <dd>
 
 Para llamar a un comando OpenGL en modo inmediato o para llamar a la lista de visualización de la que forma parte el comando.
 
 </dd> <dt>
 
-<span id="opengl_eye_coordinates"></span><span id="OPENGL_EYE_COORDINATES"></span>**coordenadas del ojo**
+<span id="opengl_eye_coordinates"></span><span id="OPENGL_EYE_COORDINATES"></span>**coordenadas de los ojos**
 </dt> <dd>
 
-El sistema de coordenadas que sigue la transformación por la matriz de MODELVIEW y que precede a la transformación por la matriz de proyección. La iluminación y el recorte específico de la aplicación se realizan en coordenadas oculares.
+Sistema de coordenadas que sigue la transformación por la matriz modelview y que precede a la transformación por la matriz de proyección. La iluminación y el recorte específico de la aplicación se realizan en coordenadas de los ojos.
 
 </dd> </dl>
 

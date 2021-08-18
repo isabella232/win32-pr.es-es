@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IPixEngine5\_SaveTextureAsync\_UINT\_BSTR\_IPixEngine5Callb
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'IPixEngine5:: SaveTextureAsync (método)'
+title: IPixEngine5::SaveTextureAsync (método)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 6F08F49E-6FFD-4A9B-86F5-8CB499947F57
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 2590f793d0ba05af1ccf9e10ba04fa8b6aa2421b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: de57a071c4f471bf0234f9eb0d7cbbd36d017d2bfa5ef7e5dec35816999f665e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104495730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119623855"
 ---
-# <a name="span-idvspixengineipixengine5_savetextureasync_uint_bstr_ipixengine5callbacks_ptr_dword_dwordspanipixengine5savetextureasync-method"></a><span id="vspixengine.ipixengine5_savetextureasync_uint_bstr_ipixengine5callbacks_ptr_dword_dword"></span>IPixEngine5:: SaveTextureAsync (método)
+# <a name="span-idvspixengineipixengine5_savetextureasync_uint_bstr_ipixengine5callbacks_ptr_dword_dwordspanipixengine5savetextureasync-method"></a><span id="vspixengine.ipixengine5_savetextureasync_uint_bstr_ipixengine5callbacks_ptr_dword_dword"></span>IPixEngine5::SaveTextureAsync (método)
 
 Guarda una textura.
 
@@ -44,27 +44,27 @@ HRESULT SaveTextureAsync(
 ## <a name="parameters"></a>Parámetros
 
 *textureId*   
-IDENTIFICADOR de la textura que se va a guardar.
+Identificador de la textura que se guardará.
 
-*Extensión*   
-Cadena COM que contiene el directorio de la textura guardada.
+*Nombre*   
+Cadena COM que contiene el nombre de ruta de acceso de la textura guardada.
 
-*devoluciones*   
-La dirección de un objeto que proporciona la interfaz de devoluciones de llamada IPixEngine5.
+*Callbacks*   
+Dirección de un objeto que proporciona la interfaz de devoluciones de llamada IPixEngine5.
 
 *requestCookie*   
-Cookie que identifica de forma única la solicitud y que se puede usar para indicar que se va a cancelar.
+Cookie que identifica de forma única la solicitud y se puede usar para indicar que se cancele.
 
 *progressIntervalMsecs*   
-No se utiliza.
+No se usa.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vea también
 

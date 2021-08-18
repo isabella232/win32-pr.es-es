@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: c2b4aac6-165b-4eba-b012-ee7a20481cd3
-ms.openlocfilehash: 2da95a39f8e84215640e926ae21a043865223665
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: a801b22fd23b4a67eaf01efbbef574e24a74a2e1304f3a65678c4197517a4a92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119094190"
 ---
 # <a name="fm_getfilesel-message"></a>Mensaje \_ GETFILESEL de FM
 
@@ -46,7 +46,7 @@ Dirección de una [**estructura \_ GETFILESEL de FMS**](fms-getfilesel.md) que r
 
 Devuelve el índice de base cero del archivo seleccionado que se recuperó.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Una extensión puede usar el [**mensaje \_ GETSELCOUNT de FM**](fm-getselcount.md) para recuperar el recuento de archivos seleccionados.
 
@@ -62,7 +62,7 @@ Una extensión puede usar el [**mensaje \_ GETSELCOUNT de FM**](fm-getselcount.m
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

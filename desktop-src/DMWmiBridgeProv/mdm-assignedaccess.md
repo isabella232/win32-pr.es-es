@@ -1,9 +1,9 @@
 ---
-title: MDM_AssignedAccess (clase)
-description: La \_ clase AssignedAccess de MDM se usa para establecer que el dispositivo se ejecute en modo de quiosco.
+title: MDM_AssignedAccess clase
+description: La clase MDM \_ AssignedAccess se usa para establecer que el dispositivo se ejecute en pantalla completa.
 ms.assetid: b9837f91-3c13-4a80-bf6d-66d8b53dfa70
 keywords:
-- MDM_AssignedAccess (clase)
+- MDM_AssignedAccess clase
 - MDM_AssignedAccess clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b5f03f99183400d4e7672323072415918e8e58e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 994b4b106d2f6d8ed87298b50a4eec202e725985b3b2ba1b00d3b35cda1517f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825735"
 ---
-# <a name="mdm_assignedaccess-class"></a>\_Clase AssignedAccess de MDM
+# <a name="mdm_assignedaccess-class"></a>Clase MDM \_ AssignedAccess
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La **clase \_ AssignedAccess de MDM** se usa para establecer que el dispositivo se ejecute en modo de quiosco. Una vez que se ha ejecutado la clase, el siguiente inicio de sesión de usuario que está asociado con el modo de pantalla completa coloca el dispositivo en el modo de pantalla completa que ejecuta la aplicación especificada en el paquete de aprovisionamiento.
+La **clase MDM \_ AssignedAccess** se usa para establecer que el dispositivo se ejecute en pantalla completa. Una vez ejecutada la clase, el siguiente inicio de sesión de usuario asociado al modo de pantalla completa coloca el dispositivo en el modo de pantalla completa ejecutando la aplicación especificada en el paquete de aprovisionamiento.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -47,13 +47,13 @@ class MDM_AssignedAccess
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ AssignedAccess de MDM** tiene estos tipos de miembros:
+La **clase MDM \_ AssignedAccess** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ AssignedAccess de MDM** tiene estas propiedades.
+La **clase MDM \_ AssignedAccess** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ La **clase \_ AssignedAccess de MDM** tiene estas propiedades.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -77,7 +77,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica el nombre del nodo primario. Para esta clase, la cadena es "AssignedAccess".
@@ -90,7 +90,7 @@ Identifica el nombre del nodo primario. Para esta clase, la cadena es "AssignedA
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -104,10 +104,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/".
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/"
 
 </dd> </dl>
 
@@ -117,10 +117,10 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -129,7 +129,7 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 
 <dl> <dt>
 
-[Usar scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

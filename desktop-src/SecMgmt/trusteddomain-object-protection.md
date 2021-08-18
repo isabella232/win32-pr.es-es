@@ -1,23 +1,23 @@
 ---
 description: Cuando se crea un objeto TrustedDomain, se le asigna una protección estándar.
 ms.assetid: cc554630-7be7-4657-90f2-ce5fa81731b2
-title: Protección de objetos de TrustedDomain
+title: Protección de objetos TrustedDomain
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: acd27a01c1bcfde12fd062f2e8ae7c92a979991a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f3e34eac9b9e3a021db7580803cec6c99f6489d01c9499b28251cb262b721fd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004803"
 ---
-# <a name="trusteddomain-object-protection"></a>Protección de objetos de TrustedDomain
+# <a name="trusteddomain-object-protection"></a>Protección de objetos TrustedDomain
 
-Cuando se crea un objeto [**TrustedDomain**](trusteddomain-object.md) , se le asigna una protección estándar como se indica a continuación:
+Cuando se crea un objeto [**TrustedDomain,**](trusteddomain-object.md) se le asigna una protección estándar como se muestra a continuación:
 
--   El grupo local mundial tiene concedido \_ acceso de ejecución genérico.
--   Al grupo local de \_ Administración local se le conceden la eliminación, la \_ lectura genérica, la escritura genérica y el acceso de \_ \_ ejecución genérico.
--   El \_ grupo local de administración local se asigna como propietario y grupo principal del objeto.
+-   Al grupo local WORLD se le concede acceso \_ GENERIC EXECUTE.
+-   Al grupo \_ local ADMINISTRADOR LOCAL se le concede acceso DELETE, GENERIC \_ READ, GENERIC WRITE y GENERIC \_ \_ EXECUTE.
+-   El grupo \_ local ADMINISTRADOR LOCAL se asigna como propietario y grupo principal del objeto.
 
  
 

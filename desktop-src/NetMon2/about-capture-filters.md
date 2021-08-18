@@ -1,33 +1,33 @@
 ---
-description: Un filtro de captura es un elemento de una aplicación NPP que indica al controlador de Monitor de red (Nmnt.sys) qué tramas de datos de red se van a conservar y qué fotogramas se deben omitir.
+description: Un filtro de captura es un elemento de una aplicación de NPP que indica al controlador Monitor de red (Nmnt.sys) qué fotogramas de datos de red se conservarán y qué fotogramas se omitirán.
 ms.assetid: 6ab17e18-bd97-42a8-b569-b205ac19ffd1
 title: Acerca de los filtros de captura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7226bb7dc5bc214ab2e09504cc232e1bf591840f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d0d1eee25915c30b8ddffc475545cbd7f7d04d0fdcecf4119480b737980cd9f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911365"
 ---
 # <a name="about-capture-filters"></a>Acerca de los filtros de captura
 
-Un filtro de captura es un elemento de una aplicación NPP que indica al controlador de Monitor de red (Nmnt.sys) qué tramas de datos de red se van a conservar y qué fotogramas se deben omitir. La ventaja de configurar un filtro de captura es mayor eficiencia. No tiene que examinar los fotogramas capturados; el controlador de Monitor de red los examina. Este enfoque elimina la copia de fotogramas, lo que proporciona una ventaja de uso de memoria.
+Un filtro de captura es un elemento de una aplicación de NPP que indica al controlador Monitor de red (Nmnt.sys) qué fotogramas de datos de red se conservarán y qué fotogramas se omitirán. La ventaja de establecer un filtro de captura es una mayor eficacia. No es necesario examinar los fotogramas capturados; el Monitor de red los examina. Este enfoque elimina la copia de fotogramas, lo que proporciona una ventaja de uso de memoria.
 
-## <a name="capture-filter-structure"></a>Estructura del filtro de captura
+## <a name="capture-filter-structure"></a>Estructura de filtro de captura
 
-Los filtros de captura se componen de tres elementos:
+Los filtros de captura constan de tres elementos:
 
--   Configuración de ETYPE/SAP
+-   Configuración de Etype/SAP
 -   Dirección
 -   Coincidencia de patrones
 
-Juntos, estos elementos evalúan lógicamente los fotogramas que se van a incluir o excluir durante la operación de una aplicación NPP. El filtro de captura proporciona coincidencias complejas y exclusiones de elementos Frame a la aplicación NPP.
+Juntos, estos elementos evalúan lógicamente qué fotogramas incluir o excluir durante el funcionamiento de una aplicación NPP. El filtro de captura proporciona coincidencias complejas y exclusiones de elementos de marco a la aplicación NPP.
 
-Monitor de red implementa el filtro de captura a través de una estructura de datos, [**CAPTUREFILTER**](the-capturefilter-structure.md), pasada a NPP y, a continuación, se pasa al controlador de monitor de red cuando se inicia la captura.
+Monitor de red implementa el filtro de captura a través de una estructura de datos, [**CAPTUREFILTER,**](the-capturefilter-structure.md)que se pasa al NPP y, a continuación, se pasa al controlador Monitor de red cuando se inicia la captura.
 
-Para obtener más información sobre las operaciones NPP y la funcionalidad BLOB, consulte [proveedores de paquetes de red](network-packet-providers.md) y [blobs monitor de red](network-monitor-blobs.md).
+Para obtener más información sobre las operaciones de NPP y la funcionalidad blob, vea [Proveedores de paquetes de](network-packet-providers.md) red y Monitor de red [BLOBS.](network-monitor-blobs.md)
 
  
 

@@ -26,23 +26,23 @@ Marcas de funcionalidad del controlador.
 <tbody>
 <tr class="odd">
 <td>#Definir</td>
-<td>Valor</td>
+<td>Value</td>
 <td>Descripción</td>
 </tr>
 <tr class="even">
 <td>D3DCAPS2_CANAUTOGENMIPMAP</td>
 <td>0x40000000L</td>
-<td>El controlador es capaz de generar automáticamente mapas MIP. Para obtener más información, vea Generación automática de <a href="automatic-generation-of-mipmaps.md">mapas Mip (Direct3D 9).</a></td>
+<td>El controlador es capaz de generar automáticamente mapas MIP. Para obtener más información, <a href="automatic-generation-of-mipmaps.md">vea Generación automática de mapas Mip (Direct3D 9).</a></td>
 </tr>
 <tr class="odd">
 <td>D3DCAPS2_CANCALIBRATEGAMMA</td>
 <td>0x00100000L</td>
-<td>El sistema tiene instalado un calibrador que puede ajustar automáticamente la rampa gamma para que el resultado sea idéntico en todos los sistemas que tienen un calibrador. Para invocar el calibrador al establecer nuevos niveles gamma, use la D3DSGR_CALIBRATE al llamar a <a href="/windows/desktop/api"><strong>SetGammaRamp</strong></a>. La calibración de las rampas gamma incurre en cierta sobrecarga de procesamiento y no se debe usar con frecuencia.</td>
+<td>El sistema tiene instalado un calibrador que puede ajustar automáticamente la rampa gamma para que el resultado sea idéntico en todos los sistemas que tienen un calibrador. Para invocar el calibrador al establecer nuevos niveles gamma, use la marca D3DSGR_CALIBRATE al llamar a <a href="/windows/desktop/api"><strong>SetGammaRamp.</strong></a> La calibración de rampas gamma incurre en cierta sobrecarga de procesamiento y no se debe usar con frecuencia.</td>
 </tr>
 <tr class="even">
 <td>D3DCAPS2_CANSHARERESOURCE</td>
 <td>0x80000000L</td>
-<td>El dispositivo puede crear recursos que se pueden compartir. Los métodos que crean recursos pueden establecer valores que no son NULL para sus <a href="/windows/desktop/api/dxgi/nf-dxgi-idxgiresource-getsharedhandle"><strong>parámetros pSharedHandle.</strong></a> 
+<td>El dispositivo puede crear recursos compartibles. Los métodos que crean recursos pueden establecer valores distintos de NULL para sus <a href="/windows/desktop/api/dxgi/nf-dxgi-idxgiresource-getsharedhandle"><strong>parámetros pSharedHandle.</strong></a> 
 <table>
 <tbody>
 <tr class="odd">
@@ -56,7 +56,7 @@ Marcas de funcionalidad del controlador.
 <tr class="odd">
 <td>D3DCAPS2_CANMANAGERESOURCE</td>
 <td>0x10000000L</td>
-<td>El controlador es capaz de administrar recursos. En estos controladores, D3DPOOL_MANAGED recursos serán administrados por el controlador. Para que Direct3D invalide el controlador para que Direct3D administre los recursos, use la marca D3DCREATE_DISABLE_DRIVER_MANAGEMENT al llamar <a href="/windows/desktop/api"><strong>a CreateDevice</strong></a>.</td>
+<td>El controlador es capaz de administrar recursos. En estos controladores, el D3DPOOL_MANAGED administrará los recursos. Para que Direct3D invalide el controlador para que Direct3D administre los recursos, use la marca D3DCREATE_DISABLE_DRIVER_MANAGEMENT al llamar a <a href="/windows/desktop/api"><strong>CreateDevice</strong></a>.</td>
 </tr>
 <tr class="even">
 <td>D3DCAPS2_DYNAMICTEXTURES</td>

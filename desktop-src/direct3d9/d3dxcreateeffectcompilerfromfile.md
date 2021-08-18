@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXCreateEffectCompilerFromFile: crea un compilador de efectos a partir de una descripción de efecto ASCII.'
+description: 'Función D3DXCreateEffectCompilerFromFile: crea un compilador de efectos a partir de una descripción del efecto ASCII.'
 ms.assetid: 87438a1e-4149-42ef-aa7a-9f0549eb7982
 title: Función D3DXCreateEffectCompilerFromFile (D3DX9Effect.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 0c054b31b1ab70d1378c794be13058204b994ee2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f955c62bed0e449ddc2f9c9b1e4d7fe1c57df388f7ae99647a6b6cbce9d4fa48
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857265"
 ---
 # <a name="d3dxcreateeffectcompilerfromfile-function"></a>Función D3DXCreateEffectCompilerFromFile
 
-Crea un compilador de efectos a partir de una descripción de efecto ASCII.
+Crea un compilador de efectos a partir de una descripción del efecto ASCII.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -72,7 +72,7 @@ Puntero de interfaz opcional, [**ID3DXInclude**](id3dxinclude.md), que se usará
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -122,7 +122,7 @@ La configuración del compilador también determina la versión de la función. 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -19,7 +19,7 @@ ms.locfileid: "118982075"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentRecoveredWithErrorsException](./esentrecoveredwitherrorsexception-class.md) expone los siguientes miembros.
+El [tipo EsentRecoveredWithErrorsException](./esentrecoveredwitherrorsexception-class.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -83,7 +83,7 @@ El [tipo EsentRecoveredWithErrorsException](./esentrecoveredwitherrorsexception-
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

@@ -4,12 +4,12 @@ ms.assetid: aba21473-07cc-4de9-a310-ad9b43c133eb
 title: Configuración (Windows y mensajes)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ffa516e87aa7d338d4e2fd46a160fcbd6dadb305
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 72a5c910fd9614d4d0e8fe9f6ba38d9dd59a0fd5649e836c3629427cde5d8617
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028473"
 ---
 # <a name="configuration-windows-and-messages"></a>Configuración (Windows y mensajes)
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETCTFOPENSTATUS (RichEdit. h)
-description: Determina si el teclado de servicios de texto (TSF) está abierto o cerrado.
+title: EM_GETCTFOPENSTATUS mensaje (Richedit.h)
+description: Determina si el teclado Text Services Framework (TSF) está abierto o cerrado.
 ms.assetid: a50fedf4-b4e5-4b99-be46-1bbbf08e85a8
 keywords:
-- EM_GETCTFOPENSTATUS controles de mensajes de Windows
+- EM_GETCTFOPENSTATUS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ce1bbf09af6c61a33c33c4172ff699fa5bd26f4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ef55fe0944ad3632f8bfec11894c5613efde02dc1ec16f8c0d31105f6b19ea8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019743"
 ---
-# <a name="em_getctfopenstatus-message"></a>\_Mensaje GETCTFOPENSTATUS em
+# <a name="em_getctfopenstatus-message"></a>Mensaje \_ EM GETCTFOPENSTATUS
 
-Determina si el teclado de servicios de texto (TSF) está abierto o cerrado.
+Determina si el teclado Text Services Framework (TSF) está abierto o cerrado.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,20 +32,20 @@ Determina si el teclado de servicios de texto (TSF) está abierto o cerrado.
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el teclado TSF está abierto, el valor devuelto es **true**. De lo contrario, es **false**.
+Si el teclado TSF está abierto, el valor devuelto es **TRUE.** De lo contrario, es **FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Si el teclado TSF está abierto, el valor devuelto es **true**. De lo contrario,
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP1 \[\]<br/>                                  |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp1\]<br/>                                  |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Si el teclado TSF está abierto, el valor devuelto es **true**. De lo contrario,
 
 <dl> <dt>
 
-[**\_SETCTFOPENSTATUS em**](em-setctfopenstatus.md)
+[**EM \_ SETCTFOPENSTATUS**](em-setctfopenstatus.md)
 </dt> </dl>
 
  

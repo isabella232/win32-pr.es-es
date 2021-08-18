@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de MCN_SELECT (commctrl. h)
-description: Se envía por un control de calendario mensual cuando el usuario realiza una selección de fecha explícita dentro de un control de calendario mensual. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: MCN_SELECT de notificación (Commctrl.h)
+description: Enviado por un control de calendario mensual cuando el usuario realiza una selección de fecha explícita dentro de un control de calendario mensual. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 3cabb4b2-9422-4190-85d3-ab6593891e3d
 keywords:
-- MCN_SELECT controles de código de notificación de Windows
+- MCN_SELECT código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9252133267b9c552542df17ed73caa8c34a69641
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3e71674ebccd9a896a92f701e65c7767866b64edac25208248f4683792b5261c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018973"
 ---
-# <a name="mcn_select-notification-code"></a>MCN \_ seleccionar código de notificación
+# <a name="mcn_select-notification-code"></a>Código de notificación \_ DE MCN SELECT
 
-Se envía por un control de calendario mensual cuando el usuario realiza una selección de fecha explícita dentro de un control de calendario mensual. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control de calendario mensual cuando el usuario realiza una selección de fecha explícita dentro de un control de calendario mensual. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ MCN_SELECT
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMSELCHANGE**](/windows/win32/api/commctrl/ns-commctrl-nmselchange) que contiene información sobre el intervalo de fechas seleccionado actualmente.
+Puntero a una [**estructura NMSELCHANGE**](/windows/win32/api/commctrl/ns-commctrl-nmselchange) que contiene información sobre el intervalo de fechas seleccionado actualmente.
 
 </dd> </dl>
 
@@ -49,9 +49,9 @@ Puntero a una estructura [**NMSELCHANGE**](/windows/win32/api/commctrl/ns-commct
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El código de notificación **\_ Select MCN** es similar a [**MCN \_ SELCHANGE**](mcn-selchange.md), pero **MCN \_ Select** solo se envía como respuesta a las selecciones de fecha explícitas de un usuario. **MCN \_ SELCHANGE** se aplica a cualquier cambio de selección.
+El **código de notificación DE \_ MCN SELECT** es similar a [**MCN \_ SELCHANGE,**](mcn-selchange.md)pero **MCN \_ SELECT** solo se envía en respuesta a las selecciones de fecha explícitas de un usuario. **MCN \_ SELCHANGE se** aplica a cualquier cambio de selección.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ El código de notificación **\_ Select MCN** es similar a [**MCN \_ SELCHANGE**
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

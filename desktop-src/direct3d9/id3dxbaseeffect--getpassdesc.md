@@ -1,7 +1,7 @@
 ---
-description: Obtiene una descripción del paso.
+description: Obtiene una descripción de paso.
 ms.assetid: 44c65a82-bcf4-49f5-9312-8320e133bb2f
-title: 'ID3DXBaseEffect:: GetPassDesc (método) (D3DX9Effect. h)'
+title: Método ID3DXBaseEffect::GetPassDesc (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 15a997470fddf5056b7191fcc3226ad210724041
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 74106bc38367e13cd70af94d0ad12016165aaae24693f19386e69ebe1d7a5cb2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987755"
 ---
-# <a name="id3dxbaseeffectgetpassdesc-method"></a>ID3DXBaseEffect:: GetPassDesc (método)
+# <a name="id3dxbaseeffectgetpassdesc-method"></a>Método ID3DXBaseEffect::GetPassDesc
 
-Obtiene una descripción del paso.
+Obtiene una descripción de paso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,16 +41,16 @@ HRESULT GetPassDesc(
 
 <dl> <dt>
 
-*hPass* \[ de\]
+*hPass* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador de paso. Vea [identificadores (Direct3D 9)](handles.md).
+Controlador de paso. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pDesc* \[ enuncia\]
+*pDesc* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXPASS \_ DESC**](d3dxpass-desc.md)\***
@@ -63,12 +63,12 @@ Devuelve una descripción del paso especificado. Vea [**D3DXPASS \_ DESC**](d3dx
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Si se crea un efecto con [D3DXFX que no se pueda \_ \_ clonar](d3dxfx.md), este método devolverá punteros **null** (en [**D3DXPASS \_ DESC**](d3dxpass-desc.md)) a las funciones de sombreador.
+> Si se crea un efecto con [D3DXFX \_ NOT \_ CLONEABLE](d3dxfx.md), este método devolverá punteros **NULL** (en [**D3DXPASS \_ DESC)**](d3dxpass-desc.md)a las funciones del sombreador.
 
  
 
@@ -78,8 +78,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

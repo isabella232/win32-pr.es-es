@@ -1,6 +1,6 @@
 ---
 title: deriv_rtx (sm4 - asm)
-description: Velocidad de cambio de contenido de cada componente float32 de src0 (post-swconfle), con respecto a la dirección x de RenderTarget (rtx) o renderTarget y.
+description: Velocidad de cambio del contenido de cada componente float32 de src0 (posterior al swzzle), con respecto a la dirección x de RenderTarget (rtx) o renderTarget y.
 ms.assetid: 2438DB36-C348-4854-AE1B-EC3C890B0B42
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118986655"
 ---
 # <a name="deriv_rtx-sm4---asm"></a>deriv \_ rtx (sm4 - asm)
 
-Velocidad de cambio de contenido de cada componente float32 de *src0* (post-swconfle), con respecto a la dirección x de RenderTarget (rtx) o renderTarget y.
+Velocidad de cambio de contenido de cada componente float32 de *src0* (posterior al swzzle), con respecto a la dirección x de RenderTarget (rtx) o renderTarget y.
 
 
 
@@ -29,7 +29,7 @@ Velocidad de cambio de contenido de cada componente float32 de *src0* (post-swco
 | Elemento                                                            | Descripción                                                   |
 |-----------------------------------------------------------------|---------------------------------------------------------------|
 | <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] La dirección del resultado de la operación.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] el componente de la operación.<br/>             |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] El componente de la operación.<br/>             |
 
 
 
@@ -37,17 +37,17 @@ Velocidad de cambio de contenido de cada componente float32 de *src0* (post-swco
 
 ## <a name="remarks"></a>Comentarios
 
-Solo se calcula un par derivado x,y único para cada marca de 2 x 2 píxeles de píxeles.
+Solo se calcula un único par derivado x,y para cada marca de 2 x 2 píxeles.
 
 Esta operación depende del hardware.
 
 Implementación de rasterizador de referencia para triángulos:
 
--   Sombreador de píxeles siempre ejecuta Sombreador sobre 2x2 cuadránxeles en el paso de bloqueo (incluso a través del control de flujo, enmascaramiento de píxeles deshabilitados).
--   Los quads siempre tienen coordenadas de píxel numeradas (x e y) uniformes para el píxel superior izquierdo.
--   Los píxeles ficticios se ejecutan como primitivos si el primitivo es demasiado pequeño para rellenar un cuadrándice de 2 x 2.
--   **deriv \_ rtx** se calcula eligiendo primero 2 píxeles: el píxel actual y el otro píxel con la misma coordenada y del cuadrándice. A continuación, el resultado se calcula como: *src0*(píxel x impar) - *src0*(incluso x píxeles) \[ por componente\]
--   [deriv \_ rty](deriv-rty--sm4---asm-.md) se calcula eligiendo primero 2 píxeles: el píxel actual y el otro píxel con la misma coordenada x del cuadrándular. A continuación, el resultado se calcula como: *src0*(píxel impar y) - *src0*(incluso píxel y) \[ por componente\]
+-   Sombreador de píxeles siempre ejecuta Sombreador sobre 2 x 2 cuadránxeles en el paso de bloqueo (incluso a través del control de flujo, enmascaramiento de píxeles deshabilitados).
+-   Los cuadránáxeles siempre tienen coordenadas de píxel numeradas (x e y) para el píxel superior izquierdo.
+-   Los píxeles ficticios se ejecutan de forma primitiva si primitive es demasiado pequeño para rellenar un cuadránxel de 2x2.
+-   **Deriv \_ rtx** se calcula eligiendo primero 2 píxeles: el píxel actual y el otro píxel con la misma coordenada y del cuadránxel. A continuación, el resultado se calcula como: *src0*(píxel x impar) - *src0*(incluso x píxeles) \[ por componente\]
+-   [Deriv \_ rty](deriv-rty--sm4---asm-.md) se calcula eligiendo primero 2 píxeles: el píxel actual y el otro píxel con la misma coordenada x del cuadránxel. A continuación, el resultado se calcula como: *src0*(píxel impar y) - *src0*(píxel y par) \[ por componente\]
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -69,9 +69,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
 | [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
@@ -84,7 +84,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

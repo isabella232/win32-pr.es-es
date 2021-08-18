@@ -46,7 +46,7 @@ Construye patrones de bits que se usan para identificar formatos de coordenadas 
 
 ## <a name="remarks"></a>Comentarios
 
-Las macros **D3DFVF \_ TEXCOORDSIZEN** usan las siguientes constantes.
+Las macros **D3DFVF \_ TEXCOORDSIZEN** usan las constantes siguientes.
 
 
 ```C++
@@ -58,7 +58,7 @@ Las macros **D3DFVF \_ TEXCOORDSIZEN** usan las siguientes constantes.
 
 
 
-La siguiente descripción de FVF identifica un formato de vértice que tiene una posición; un normal; colores difusos y especulares; y dos conjuntos de coordenadas de textura. El primer conjunto de coordenadas de textura incluye un solo elemento y el segundo conjunto incluye dos elementos:
+La siguiente descripción de FVF identifica un formato de vértice que tiene una posición; un normal; colores difusos y especulares; y dos conjuntos de coordenadas de textura. El primer conjunto de coordenadas de textura incluye un único elemento y el segundo conjunto incluye dos elementos:
 
 
 ```C++
@@ -82,7 +82,7 @@ DWORD dwFVF = D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_DIFFUSE |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

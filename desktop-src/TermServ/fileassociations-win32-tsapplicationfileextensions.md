@@ -1,12 +1,12 @@
 ---
-title: Método FileAssociations de la clase Win32_TSApplicationFileExtensions
-description: Examina el registro para obtener las asociaciones de archivo actuales para una aplicación.
+title: Método FileAssociations de la Win32_TSApplicationFileExtensions clase
+description: Examina el Registro para obtener las asociaciones de archivo actuales de una aplicación.
 ms.assetid: d2c55b59-f3aa-401b-b176-b287c2e26192
 ms.tgt_platform: multiple
 keywords:
 - Método FileAssociations Servicios de Escritorio remoto
-- Método FileAssociations Servicios de Escritorio remoto, clase Win32_TSApplicationFileExtensions
-- Win32_TSApplicationFileExtensions de clase Servicios de Escritorio remoto, método FileAssociations
+- Método FileAssociations Servicios de Escritorio remoto , Win32_TSApplicationFileExtensions clase
+- Win32_TSApplicationFileExtensions clase Servicios de Escritorio remoto método , FileAssociations
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23ee60033344c0c448d82680bdcacfc24cb4f214
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a45548d055d6adc90ac55e26b646abab80470297847d5daa898e63b29769dc4d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737515"
 ---
-# <a name="fileassociations-method-of-the-win32_tsapplicationfileextensions-class"></a>Método FileAssociations de la \_ clase TSApplicationFileExtensions de Win32
+# <a name="fileassociations-method-of-the-win32_tsapplicationfileextensions-class"></a>Método FileAssociations de la clase \_ TSApplicationFileExtensions de Win32
 
-Examina el registro para obtener las asociaciones de archivo actuales para una aplicación.
+Examina el Registro para obtener las asociaciones de archivo actuales de una aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,17 +44,17 @@ uint32 FileAssociations(
 
 <dl> <dt>
 
-*AppPath* \[ de\]
+*AppPath* \[ En\]
 </dt> <dd>
 
 Especifica la ruta de acceso a la aplicación.
 
 </dd> <dt>
 
-*FileAssociations* \[ enuncia\]
+*FileAssociations* \[ out\]
 </dt> <dd>
 
-Al finalizar correctamente contiene las asociaciones de archivo para esta aplicación.
+Si la finalización se realiza correctamente, contiene las asociaciones de archivo para esta aplicación.
 
 </dd> </dl>
 
@@ -66,8 +66,8 @@ Al finalizar correctamente contiene las asociaciones de archivo para esta aplica
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TsAllow. mof</dt> </dl>  |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TsAllow.mof</dt> </dl>  |
 | Archivo DLL<br/>                      | <dl> <dt>TsPubWmi.dll</dt> </dl> |
 
 
@@ -76,10 +76,10 @@ Al finalizar correctamente contiene las asociaciones de archivo para esta aplica
 
 <dl> <dt>
 
-[**Win32 \_ TSApplicationFileExtensions**](win32-tsapplicationfileextensions.md)
+[**TSApplicationFileExtensions de Win32 \_**](win32-tsapplicationfileextensions.md)
 </dt> <dt>
 
-[**Win32 \_ RDFileAssociation**](win32-rdfileassociation.md)
+[**RdFileAssociation de Win32 \_**](win32-rdfileassociation.md)
 </dt> </dl>
 
  

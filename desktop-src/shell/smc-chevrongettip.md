@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118968244"
 ---
-# <a name="smc_chevrongettip-message"></a>Mensaje SMC \_ CHEVRONGETTIP
+# <a name="smc_chevrongettip-message"></a>Mensaje \_ SMC CHEVRONGETTIP
 
 Solicita el título y el texto de una información de contenido adicional para el elemento especificado por la estructura [**SMDATA**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-smdata) adjunta.
 
@@ -32,14 +32,14 @@ SMC_CHEVRONGETTIP
 *pwszTipTitle* 
 </dt> <dd>
 
-Puntero a un búfer que recibe una cadena Unicode terminada en **NULL** que contiene el título de la información. Esta cadena no debe tener más de max \_ path, incluido el carácter **NULL final.**
+Puntero a un búfer que recibe una cadena Unicode terminada en **NULL** que contiene el título de la información. Esta cadena no debe tener más de max \_ path de longitud, incluido el carácter **NULL final.**
 
 </dd> <dt>
 
 *pwszTipText* 
 </dt> <dd>
 
-Puntero a un búfer que recibe una cadena Unicode terminada en **NULL** que contiene el texto de la información. Esta cadena no debe tener más de max \_ path, incluido el carácter **NULL final.**
+Puntero a un búfer que recibe una cadena Unicode terminada en **NULL** que contiene el texto de la información. Esta cadena no debe tener más de max \_ path de longitud, incluido el carácter **NULL final.**
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ El método [**IShellMenuCallback::CallbackSM**](/windows/desktop/api/shobjidl_co
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |

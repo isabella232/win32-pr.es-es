@@ -1,31 +1,31 @@
 ---
-title: Crear montones de descriptor
-description: Para crear y configurar un montón de descriptores, debe seleccionar un tipo de montón de descriptores, determinar el número de descriptores que contiene y establecer marcas que indiquen si es visible para la CPU o el sombreador.
+title: Creación de montones de descriptores
+description: Para crear y configurar un montón de descriptores, debe seleccionar un tipo de montón de descriptores, determinar cuántos descriptores contiene y establecer marcas que indiquen si está visible en la CPU o en el sombreador.
 ms.assetid: 58677023-692C-4BA4-90B7-D568F3DD3F73
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e472a0749634d5cbaa9cbf1cde5e11202d4c4f9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 218d21d462dd393360e9ebfcb07ab5b35524b9d8d8c01c8ab1ef28ef90166eb2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104549089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857995"
 ---
-# <a name="creating-descriptor-heaps"></a>Crear montones de descriptor
+# <a name="creating-descriptor-heaps"></a>Creación de montones de descriptores
 
-Para crear y configurar un montón de descriptores, debe seleccionar un tipo de montón de descriptores, determinar el número de descriptores que contiene y establecer marcas que indiquen si es visible para la CPU o el sombreador.
+Para crear y configurar un montón de descriptores, debe seleccionar un tipo de montón de descriptores, determinar cuántos descriptores contiene y establecer marcas que indiquen si está visible en la CPU o en el sombreador.
 
--   [Tipos de montones de descriptor](#descriptor-heap-types)
--   [Propiedades del montón de descriptores](#descriptor-heap-properties)
+-   [Tipos de montón de descriptor](#descriptor-heap-types)
+-   [Propiedades del montón del descriptor](#descriptor-heap-properties)
 -   [Identificadores de descriptor](#descriptor-handles)
--   [Métodos del montón descriptor](#descriptor-heap-methods)
--   [Contenedor del montón de descriptor mínimo](#minimal-descriptor-heap-wrapper)
+-   [Métodos de montón de descriptor](#descriptor-heap-methods)
+-   [Contenedor de montón de descriptor mínimo](#minimal-descriptor-heap-wrapper)
 -   [Temas relacionados](#related-topics)
 
-## <a name="descriptor-heap-types"></a>Tipos de montones de descriptor
+## <a name="descriptor-heap-types"></a>Tipos de montón de descriptor
 
-Un miembro de la enumeración de tipo de montón del [**\_ descriptor \_ \_ D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_heap_type) determina el tipo de montón:
+El tipo de montón viene determinado por un miembro de la [**enumeración D3D12 \_ DESCRIPTOR \_ HEAP \_ TYPE:**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_heap_type)
 
 ``` syntax
 typedef enum D3D12_DESCRIPTOR_HEAP_TYPE
@@ -38,15 +38,15 @@ typedef enum D3D12_DESCRIPTOR_HEAP_TYPE
 } D3D12_DESCRIPTOR_HEAP_TYPE;
 ```
 
-## <a name="descriptor-heap-properties"></a>Propiedades del montón de descriptores
+## <a name="descriptor-heap-properties"></a>Propiedades del montón del descriptor
 
-Las propiedades del montón se establecen en la estructura de [**\_ \_ \_ DESC del descriptor de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_heap_desc) , que hace referencia al [**\_ \_ \_ tipo de montón**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_heap_type) del descriptor D3D12 y a las enumeraciones del [**\_ \_ montón \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_heap_flags) del descriptor de D3D12.
+Las propiedades del montón se establecen en la estructura [**\_ \_ \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_heap_desc) DEL MONTÓN del DESCRIPTOR D3D12, que hace referencia a las enumeraciones [**\_ \_ HEAP \_ TYPE del DESCRIPTOR D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_heap_type) y [**D3D12 \_ DESCRIPTOR \_ HEAP \_ FLAGS.**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_heap_flags)
 
-\_Opcionalmente, el sombreador de marca del descriptor de descriptor D3D12 se \_ \_ \_ \_ puede establecer en un montón de descriptores para indicar que se va a enlazar en una lista de comandos para que lo hagan las referencias de los sombreadores. Los montones de descriptor creados *sin* esta marca permiten a las aplicaciones la opción de ensayar los descriptores en la memoria de la CPU antes de copiarlos en un montón de descriptor visible del sombreador, por comodidad. Pero también es adecuado para las aplicaciones crear descriptores directamente en montones de descriptor visibles del sombreador sin necesidad de ensayar nada en la CPU.
+Opcionalmente, la marca DESCRIPTOR D3D12 HEAP FLAG SHADER VISIBLE se puede establecer en un montón de descriptores para indicar que está enlazado en una lista de comandos para que los sombreadores los haga \_ \_ \_ \_ \_ referencia. Los montones  de descriptores creados sin esta marca permiten a las aplicaciones la opción de almacenamiento de los descriptores en la memoria de CPU antes de copiarlos en un montón de descriptores visibles del sombreador, por comodidad. Pero también es posible que las aplicaciones creen directamente descriptores en montones de descriptores visibles del sombreador sin necesidad de almacenamiento en fases de nada en la CPU.
 
-Esta marca solo se aplica a CBV, SRV, UAV y muestreadores. No se aplica a otros tipos de montón descriptor, ya que los sombreadores no hacen referencia directamente a los demás tipos.
+Esta marca solo se aplica a CBV, SRV, UAV y muestreadores. No se aplica a otros tipos de montón de descriptores, ya que los sombreadores no hacen referencia directamente a los otros tipos.
 
-Por ejemplo, describa y cree un montón de descriptores de muestra.
+Por ejemplo, describa y cree un montón de descriptores de muestreador.
 
 
 ```C++
@@ -60,7 +60,7 @@ ThrowIfFailed(m_device->CreateDescriptorHeap(&samplerHeapDesc, IID_PPV_ARGS(&m_s
 
 
 
-Describir y crear una vista de búfer de constantes (CBV), la vista de recursos del sombreador (SRV) y el montón del descriptor de la vista de acceso no ordenado (UAV).
+Describa y cree una vista de búfer constante (CBV), una vista de recursos de sombreador (SRV) y un montón de descriptores de vista de acceso desordenado (UAV).
 
 
 ```C++
@@ -80,17 +80,17 @@ m_srvUavDescriptorSize = m_device->GetDescriptorHandleIncrementSize(D3D12_DESCRI
 
 ## <a name="descriptor-handles"></a>Identificadores de descriptor
 
-Las estructuras identificador de [**\_ \_ descriptor \_ de D3D12 de GPU**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle) y D3D12 de [**\_ \_ \_ identificador de CPU**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle) identifican descriptores específicos en un montón de descriptores. Un identificador es un poco como un puntero, pero la aplicación no debe desreferenciarlo manualmente; de lo contrario, el comportamiento es indefinido. El uso de los identificadores debe pasar por la API. Un controlador se puede copiar libremente o pasar a las API que operan en y usan descriptores. No hay ningún recuento de referencias, por lo que la aplicación debe asegurarse de que no usa un identificador después de que se haya eliminado el montón de descriptor subyacente.
+Las [**estructuras D3D12 \_ GPU DESCRIPTOR \_ \_ HANDLE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle) y [**D3D12 \_ CPU DESCRIPTOR \_ \_ HANDLE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle) identifican descriptores específicos en un montón de descriptores. Un identificador es un poco parecido a un puntero, pero la aplicación no debe desreferenciarlo manualmente. de lo contrario, el comportamiento no está definido. El uso de los identificadores debe pasar por la API. Un propio identificador se puede copiar libremente o pasarse a las API que funcionan con descriptores de uso o . No hay ningún recuento de referencias, por lo que la aplicación debe asegurarse de que no usa un identificador después de eliminar el montón del descriptor subyacente.
 
-Las aplicaciones pueden averiguar el tamaño del incremento de los descriptores para un tipo de montón descriptor determinado, de modo que puedan generar identificadores en cualquier ubicación de un montón de descriptores manualmente a partir del identificador de la base. Las aplicaciones nunca deben codificar los tamaños de incremento del identificador del descriptor y siempre deberían consultarlos para una instancia de dispositivo determinada; de lo contrario, el comportamiento es indefinido. Las aplicaciones tampoco deben usar los tamaños de incremento y los controladores para realizar su propio examen o manipulación de los datos del montón de descriptor, ya que los resultados de hacerlo no están definidos. Es posible que los identificadores no se utilicen realmente como punteros, sino como servidores proxy para los punteros, para evitar desreferenciaciones accidentales.
+Las aplicaciones pueden averiguar el tamaño de incremento de los descriptores para un tipo de montón de descriptor determinado, de modo que puedan generar identificadores en cualquier ubicación de un montón de descriptores empezando manualmente desde el identificador hasta la base. Las aplicaciones nunca deben codificar de forma codificada los tamaños de incremento del descriptor y siempre deben consultarlos para una instancia de dispositivo determinada. de lo contrario, el comportamiento no está definido. Las aplicaciones tampoco deben usar los tamaños de incremento y los identificadores para realizar su propio examen o manipulación de los datos del montón de descriptores, ya que los resultados de hacerlo no están definidos. Es posible que los identificadores no se utilicen realmente como punteros, sino como servidores proxy para los punteros para evitar la desreferenciación accidental.
 
 > [!Note]
 >
-> Hay una estructura auxiliar, CD3DX12 \_ \_ de descriptor \_ de GPU, definida en el encabezado d3dx12. h, que hereda la estructura de [**\_ \_ \_ identificador del descriptor de GPU D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle) y proporciona inicialización y otras operaciones útiles. Del mismo modo \_ , \_ \_ se define la estructura de la aplicación auxiliar de controlador del descriptor de CPU CD3DX12 para la estructura de [**\_ \_ \_ controlador del descriptor de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle)
+> Hay una estructura auxiliar, CD3DX12 GPU DESCRIPTOR HANDLE, definida en el encabezado \_ \_ d3dx12.h, que hereda la estructura \_ [**D3D12 \_ GPU DESCRIPTOR \_ \_ HANDLE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle) y proporciona inicialización y otras operaciones útiles. De forma similar, se define la estructura del asistente DE IDENTIFICADOR DEL DESCRIPTOR de CPU CD3DX12 para la estructura \_ \_ \_ [**D3D12 \_ CPU \_ DESCRIPTOR \_ HANDLE.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle)
 
- 
+ 
 
-Ambas estructuras auxiliares se usan al rellenar las listas de comandos.
+Ambas estructuras auxiliares se usan al rellenar listas de comandos.
 
 
 ```C++
@@ -163,17 +163,17 @@ void D3D12nBodyGravity::PopulateCommandList()
 
 
 
-## <a name="descriptor-heap-methods"></a>Métodos del montón descriptor
+## <a name="descriptor-heap-methods"></a>Métodos de montón de descriptor
 
-Los montones de descriptor ([**ID3D12DescriptorHeap**](/windows/desktop/api/d3d12/nn-d3d12-id3d12descriptorheap)) se heredan de [**ID3D12Pageable**](/windows/win32/api/d3d12/nn-d3d12-id3d12pageable). Esto impone la responsabilidad de la administración de la residencia de los montones de descriptor en las aplicaciones, al igual que los montones de recursos. Los métodos de administración de la residencia solo se aplican a los montones visibles del sombreador, ya que los montones no visibles del sombreador no son visibles directamente en la GPU.
+Los montones de descriptor ([**ID3D12DescriptorHeap**](/windows/desktop/api/d3d12/nn-d3d12-id3d12descriptorheap)) heredan de [**ID3D12Pageable**](/windows/win32/api/d3d12/nn-d3d12-id3d12pageable). Esto impone la responsabilidad de la administración de residencia de montones de descriptores en las aplicaciones, al igual que los montones de recursos. Los métodos de administración de residencia solo se aplican a los montones visibles del sombreador, ya que los montones visibles que no son de sombreador no son visibles para la GPU directamente.
 
-El método [**ID3D12Device:: GetDescriptorHandleIncrementSize**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-getdescriptorhandleincrementsize) permite a las aplicaciones desplazar manualmente los identificadores en un montón (generando identificadores en cualquier parte de un montón de descriptores). El identificador de la ubicación de inicio del montón procede de [**ID3D12DescriptorHeap:: GetCPUDescriptorHandleForHeapStart**](/windows/desktop/api/d3d12/nf-d3d12-id3d12descriptorheap-getcpudescriptorhandleforheapstart) / [**ID3D12DescriptorHeap:: GetGPUDescriptorHandleForHeapStart**](/windows/desktop/api/d3d12/nf-d3d12-id3d12descriptorheap-getgpudescriptorhandleforheapstart). El desvío se realiza agregando el tamaño del incremento \* el número de descriptores que se van a desplazar al inicio del montón del descriptor. Tenga en cuenta que el tamaño de incremento no se puede considerar como un tamaño de bytes, ya que las aplicaciones no deben desreferenciar los identificadores como si fueran memoria: la memoria a la que apunta tiene un diseño no normalizado y puede variar incluso para un dispositivo determinado.
+El [**método ID3D12Device::GetDescriptorHandleIncrementSize**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-getdescriptorhandleincrementsize) permite a las aplicaciones desplazar manualmente los identificadores en un montón (generando identificadores en cualquier lugar de un montón de descriptores). El identificador de la ubicación de inicio del montón procede de [**ID3D12DescriptorHeap::GetCPUDescriptorHandleForHeapStart**](/windows/desktop/api/d3d12/nf-d3d12-id3d12descriptorheap-getcpudescriptorhandleforheapstart) / [**ID3D12DescriptorHeap::GetGPUDescriptorHandleForHeapStart**](/windows/desktop/api/d3d12/nf-d3d12-id3d12descriptorheap-getgpudescriptorhandleforheapstart). El desplazamiento se realiza agregando el tamaño de incremento del número de descriptores que se va a \* desplazar al inicio del montón de descriptores. Tenga en cuenta que el tamaño de incremento no se puede pensar como un tamaño de bytes, ya que las aplicaciones no deben desreferenciar los identificadores como si fuera memoria: la memoria a la que se apunta tiene un diseño no estandarizado y puede variar incluso para un dispositivo determinado.
 
-[**GetCPUDescriptorHandleForHeapStart**](/windows/desktop/api/d3d12/nf-d3d12-id3d12descriptorheap-getcpudescriptorhandleforheapstart) devuelve un identificador de CPU para los montones de descriptor visibles de la CPU. Devuelve un identificador nulo (y el nivel de depuración informará de un error) si el montón descriptor no es visible para la CPU.
+[**GetCPUDescriptorHandleForHeapStart**](/windows/desktop/api/d3d12/nf-d3d12-id3d12descriptorheap-getcpudescriptorhandleforheapstart) devuelve un identificador de CPU para los montones de descriptores visibles de la CPU. Devuelve un identificador NULL (y la capa de depuración notirá un error) si el montón del descriptor no es visible para la CPU.
 
-[**GetGPUDescriptorHandleForHeapStart**](/windows/desktop/api/d3d12/nf-d3d12-id3d12descriptorheap-getgpudescriptorhandleforheapstart) devuelve un identificador de GPU para montones de descriptor visibles del sombreador. Devuelve un identificador nulo (y el nivel de depuración informará de un error) si el montón del descriptor no es visible para el sombreador.
+[**GetGPUDescriptorHandleForHeapStart**](/windows/desktop/api/d3d12/nf-d3d12-id3d12descriptorheap-getgpudescriptorhandleforheapstart) devuelve un identificador de GPU para los montones de descriptores visibles del sombreador. Devuelve un identificador NULL (y la capa de depuración notirá un error) si el montón del descriptor no es visible en el sombreador.
 
-Por ejemplo, crear vistas de destino de representación para mostrar el texto de D2D mediante un dispositivo 11on12.
+Por ejemplo, la creación de vistas de destino de representación para mostrar texto D2D mediante un dispositivo 11on12.
 
 
 ```C++
@@ -233,9 +233,9 @@ Por ejemplo, crear vistas de destino de representación para mostrar el texto de
 
 
 
-## <a name="minimal-descriptor-heap-wrapper"></a>Contenedor del montón de descriptor mínimo
+## <a name="minimal-descriptor-heap-wrapper"></a>Contenedor de montón de descriptor mínimo
 
-Es probable que los desarrolladores de aplicaciones deseen crear su propio código auxiliar para administrar los controladores y los montones de descriptores. A continuación se muestra un ejemplo básico. Los contenedores más sofisticados podrían, por ejemplo, realizar un seguimiento de los tipos de descriptores en un montón y almacenar los argumentos de creación del descriptor.
+Es probable que los desarrolladores de aplicaciones quieran crear su propio código auxiliar para administrar identificadores y montones de descriptores. A continuación se muestra un ejemplo básico. Por ejemplo, los contenedores más sofisticados podrían realizar un seguimiento de qué tipos de descriptores se encuentran en un montón y almacenar los argumentos de creación del descriptor.
 
 ``` syntax
 class CDescriptorHeapWrapper
@@ -291,6 +291,6 @@ public:
 [Montones de descriptores](descriptor-heaps.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

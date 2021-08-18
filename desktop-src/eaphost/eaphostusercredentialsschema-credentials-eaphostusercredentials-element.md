@@ -23,7 +23,7 @@ ms.locfileid: "118984215"
 ---
 # <a name="credentials-eaphostusercredentials-element"></a>Elemento Credentials (EapHostUserCredentials)
 
-El **elemento Credentials (EapHostUserCredentials)** se usa cuando la configuración del método está en formato de texto XML en lugar de un blob binario.
+El **elemento Credentials (EapHostUserCredentials)** se usa cuando la configuración del método está en formato de texto XML en lugar de blob binario.
 
 ``` syntax
 <xs:element name="Credentials"
@@ -37,14 +37,14 @@ El **elemento Credentials** se define mediante el elemento [**EapHostUserCredent
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ El **elemento Credentials** se define mediante el elemento [**EapHostUserCredent
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[esquema eaphostusercredentials](eaphostusercredentialsschema-schema.md)
+[Esquema eaphostusercredentials](eaphostusercredentialsschema-schema.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentCallbackFailedException'
-title: Constructor de EsentCallbackFailedException
+description: 'Más información sobre: Constructor EsentCallbackFailedException'
+title: Constructor EsentCallbackFailedException
 TOCTitle: 'EsentCallbackFailedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentCallbackFailedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcallbackfailedexception.esentcallbackfailedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 71f11c0170af94e76208031490a78d43627d13de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 229393b1230761b8340de3dbf8331f49b8f5abe2833b666eeaaeda5ca68fad29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737225"
 ---
-# <a name="esentcallbackfailedexception-constructor"></a>Constructor de EsentCallbackFailedException
+# <a name="esentcallbackfailedexception-constructor"></a>Constructor EsentCallbackFailedException
 
 Inicializa una nueva instancia de la clase EsentCallbackFailedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentCallbackFailedException()
 public EsentCallbackFailedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentCallbackFailedException()
 
 [Miembros de EsentCallbackFailedException](./esentcallbackfailedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

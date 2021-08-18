@@ -1,5 +1,5 @@
 ---
-description: 'Método RequestStateChange de la Msvm_SCSIProtocolController: solicita un cambio de estado.'
+description: 'Método RequestStateChange de la Msvm_SCSIProtocolController clase : solicita un cambio de estado.'
 ms.assetid: 464f3c85-55c7-4a43-ab78-bfe140a21fc4
 title: Método RequestStateChange de la Msvm_SCSIProtocolController clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: cd8f5be7b8c3e61f18763061a81eb36164b34633
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: df75214de8df5f67005645188763b9b50668e5a8bb2d12c1e05e33ee796b7017
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899165"
 ---
 # <a name="requeststatechange-method-of-the-msvm_scsiprotocolcontroller-class"></a>Método RequestStateChange de la clase \_ Msvm SCSIProtocolController
 
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ En\]
 </dt> <dd>
 
-El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del **método RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
+El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del método **RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
 
 <dt>
 
@@ -106,7 +106,7 @@ El nuevo estado. La información se coloca en la **propiedad RequestedState** de
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecer** (11)
+**Restablecimiento** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -155,7 +155,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -165,7 +165,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

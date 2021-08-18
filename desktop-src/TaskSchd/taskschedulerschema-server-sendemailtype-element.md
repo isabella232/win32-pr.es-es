@@ -1,9 +1,9 @@
 ---
-title: Server (sendEmailType) (elemento)
-description: Contiene el servidor de correo electrónico que se usa para enviar el mensaje de correo electrónico.
+title: Elemento Server (sendEmailType)
+description: Contiene el servidor de correo electrónico utilizado para enviar el mensaje de correo electrónico.
 ms.assetid: 4c6084d1-70c5-4d8b-8fcb-ab4cd8aab441
 keywords:
-- Programador de tareas del elemento Server
+- Elemento Server Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5fc57ddf5deee52ff9b118a8267eec4069108030
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d6052ebb5e648c040c321a311a6ba18313244ab20340d5a7f6c4185e3d35f5df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002253"
 ---
-# <a name="server-sendemailtype-element"></a>Server (sendEmailType) (elemento)
+# <a name="server-sendemailtype-element"></a>Elemento Server (sendEmailType)
 
-Contiene el servidor de correo electrónico que se usa para enviar el mensaje de correo electrónico.
+Contiene el servidor de correo electrónico utilizado para enviar el mensaje de correo electrónico.
 
 ``` syntax
 <xs:element name="Server"
@@ -30,7 +30,7 @@ Contiene el servidor de correo electrónico que se usa para enviar el mensaje de
  />
 ```
 
-El elemento **Server** se define mediante el tipo complejo [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) .
+El tipo complejo [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) define el elemento **Server.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -42,11 +42,11 @@ El elemento **Server** se define mediante el tipo complejo [**sendEmailType**](t
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de C++, vea [**Server Property of IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_server).
+Para el desarrollo de C++, [**vea Server Property of IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_server).
 
-Para el desarrollo de scripts, vea [**EmailAction. Server**](emailaction-server.md).
+Para el desarrollo de scripts, [**vea EmailAction.Server**](emailaction-server.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Para el desarrollo de scripts, vea [**EmailAction. Server**](emailaction-server.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

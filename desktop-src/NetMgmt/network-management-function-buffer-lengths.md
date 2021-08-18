@@ -1,31 +1,31 @@
 ---
-title: Longitudes de búfer de funciones de administración de red
-description: En este tema se describen los requisitos para las longitudes de búfer de función cuando se usan con las API de administración de redes.
+title: Longitudes del búfer de la función de administración de redes
+description: En este tema se de abordan los requisitos para las longitudes de búfer de función cuando se usan con las API de administración de red.
 ms.assetid: 08599966-68a1-420b-bbc7-6daac833d08f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5003f739d235a099adb9f4f403c15c67bd9169e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 858b01de7b0b4cecb9eaea9f93bb541cb95fe9b394e74616427910abe3b33403
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903518"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911745"
 ---
-# <a name="network-management-function-buffer-lengths"></a>Longitudes de búfer de funciones de administración de red
+# <a name="network-management-function-buffer-lengths"></a>Longitudes del búfer de la función de administración de redes
 
-En este tema se describen los requisitos para las longitudes de búfer de función cuando se usan con las API de administración de redes.
+En este tema se de abordan los requisitos para las longitudes de búfer de función cuando se usan con las API de administración de red.
 
-Las aplicaciones que especifican tamaños de búfer al llamar a las funciones de enumeración de administración de redes (y a varias funciones de recuperación de datos) deben especificar los búferes lo suficientemente grandes como para contener la estructura (o estructuras) de información devuelta más las cadenas a las que apuntan sus miembros. Si no especifica un búfer suficientemente grande para recibir todas las entradas disponibles, la función devuelve los datos de \_ error \_ . Las llamadas de enumeración no devuelven entradas parciales.
+Las aplicaciones que especifican tamaños de búfer al llamar a funciones de enumeración de administración de red (y varias funciones de recuperación de datos) deben especificar búferes lo suficientemente grandes como para contener la estructura de información (o estructuras) devuelta, además de las cadenas a las que apuntan sus miembros. Si no especifica un búfer lo suficientemente grande como para recibir todas las entradas disponibles, la función devuelve ERROR \_ MORE \_ DATA. Las llamadas de enumeración no devuelven entradas parciales.
 
-Algunas funciones de administración de red toman un parámetro de longitud máxima de datos de consulta, *prefmaxlen*. Este parámetro permite a una aplicación sugerir el número de bytes que el servidor debe devolver desde una llamada de función.
+Algunas funciones de administración de red toman un parámetro de longitud de datos máximo de aviso, *prefmaxlen*. Este parámetro permite a una aplicación sugerir el número de bytes que el servidor debe devolver de una llamada de función.
 
-Si especifica el valor \_ de longitud máxima preferida \_ en el parámetro *prefmaxlen* , las funciones de administración de red asignarán la cantidad de memoria necesaria para los datos.
+Si especifica el valor MAX PREFERRED LENGTH en el \_ \_ parámetro *prefmaxlen,* las funciones de administración de red asignan la cantidad de memoria necesaria para los datos.
 
-Para obtener más información, consulte [búferes de funciones de administración de red](network-management-function-buffers.md).
+Para obtener más información, vea [Búferes de función de administración de redes.](network-management-function-buffers.md)
 
- 
+ 
 
- 
+ 
 
 
 

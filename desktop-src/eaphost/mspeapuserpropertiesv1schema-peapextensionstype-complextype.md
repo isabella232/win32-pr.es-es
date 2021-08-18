@@ -46,14 +46,14 @@ El **tipo complejo PeapExtensionsType** es opcional.
 
 
 
-| Rol | Versión mínima del sistema operativo admitida |
+| Rol | Versión mínima admitida del sistema operativo |
 |------|------------------------------|
 | Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

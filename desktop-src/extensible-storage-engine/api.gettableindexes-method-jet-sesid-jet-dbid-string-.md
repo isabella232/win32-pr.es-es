@@ -29,7 +29,7 @@ ms.locfileid: "118983835"
 ---
 # <a name="apigettableindexes-method-jet_sesid-jet_dbid-string"></a>Método Api.GetTableIndexes (JET_SESID, JET_DBID, String)
 
-Recorre en iteración todos los índices de la tabla y devuelve información sobre cada uno de ellos.
+Recorre en iteración todos los índices de la tabla y devuelve información sobre cada uno.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -85,13 +85,13 @@ public static IEnumerable<IndexInfo> GetTableIndexes(
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [System.Collections.Generic.IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1)\<[IndexInfo](./indexinfo-class.md)\>  
-Iterador sobre indexInfo para cada índice de la tabla.  
+Iterador sobre un IndexInfo para cada índice de la tabla.  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

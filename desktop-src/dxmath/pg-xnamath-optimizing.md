@@ -31,7 +31,7 @@ En este tema se describen las consideraciones y estrategias de optimización con
 
 Las operaciones basadas en vectores usan los conjuntos de instrucciones SIMD y usan registros especiales. El acceso a componentes individuales requiere pasar de los registros SIMD a los escalares y volver atrás.
 
-Cuando es posible, es más eficaz inicializar todos los componentes de [**un XMVECTOR**](xmvector-data-type.md) a la vez, en lugar de usar una serie de accessors vectoriales individuales.
+Siempre que sea posible, es más eficaz inicializar todos los componentes de [**un XMVECTOR**](xmvector-data-type.md) a la vez, en lugar de usar una serie de accessors vectoriales individuales.
 
 ## <a name="use-correct-compilation-settings"></a>Usar la configuración de compilación correcta
 
@@ -47,7 +47,7 @@ Se recomienda encarecidamente usar siempre la versión más reciente disponible 
 
 Muchas funciones tienen una función de estimación equivalente que termina en Est. Estas funciones negocian cierta precisión para mejorar el rendimiento. Las funciones est son adecuadas para los cálculos no críticos en los que se puede sacrificar la precisión por velocidad. La cantidad exacta de precisión perdida y el aumento de velocidad dependen de la plataforma.
 
-Por ejemplo, la [**función XMVector3AngleBetweenNormalsEst**](/windows/win32/api/directxmath/nf-directxmath-xmvector3anglebetweennormalsest) podría usarse en lugar de la función [**XMVector3AngleBetweenNormals.**](/windows/win32/api/directxmath/nf-directxmath-xmvector3anglebetweennormals)
+Por ejemplo, la función [**XMVector3AngleBetweenNormalsEst**](/windows/win32/api/directxmath/nf-directxmath-xmvector3anglebetweennormalsest) podría usarse en lugar de la función [**XMVector3AngleBetweenNormals.**](/windows/win32/api/directxmath/nf-directxmath-xmvector3anglebetweennormals)
 
 ## <a name="use-aligned-data-types-and-operations"></a>Usar operaciones y tipos de datos alineados
 
@@ -78,7 +78,7 @@ Por comodidad, una serie de tipos como [**XMVECTOR**](xmvector-data-type.md) y [
 
 ## <a name="denormals"></a>Desnormalizados
 
-Para admitir cálculos cercanos a 0, el estándar de punto flotante IEEE 754 incluye compatibilidad con el subdesbordmiento gradual. El subdesborde gradual se implementa mediante el uso de valores desnormalizados, y muchas implementaciones de hardware son lentas al controlar desnormales. Una optimización que se debe tener en cuenta es deshabilitar el control de desnormales para las operaciones de vector usadas por DirectXMath.
+Para admitir cálculos cercanos a 0, el estándar de punto flotante IEEE 754 incluye compatibilidad con el subdesbordmiento gradual. El subdesbordmiento gradual se implementa mediante el uso de valores desnormalizados y muchas implementaciones de hardware son lentas al controlar desnormales. Una optimización que se debe tener en cuenta es deshabilitar el control de desnormales para las operaciones de vector usadas por DirectXMath.
 
 El cambio del control de los desnormales se realiza mediante el uso de la rutina del [ \_ equipo \_ ](/cpp/c-runtime-library/reference/controlfp-s) de control en una base previa al subproceso y puede dar lugar a mejoras de rendimiento. Use este código para cambiar el control de los desnormales:
 
@@ -92,7 +92,7 @@ El cambio del control de los desnormales se realiza mediante el uso de la rutina
 
 
 > [!Note]  
-> En las versiones de 64 bits de Windows, las instrucciones [de SSE](/previous-versions/visualstudio/visual-studio-2010/t467de55(v=vs.100)) se usan para todos los cálculos, no solo para las operaciones de vector. Cambiar el control desnormal afecta a todos los cálculos de punto flotante del programa, no solo a las operaciones de vector usadas por DirectXMath.
+> En versiones de 64 bits de Windows, las instrucciones [de SSE](/previous-versions/visualstudio/visual-studio-2010/t467de55(v=vs.100)) se usan para todos los cálculos, no solo para las operaciones de vector. Cambiar el control desnormal afecta a todos los cálculos de punto flotante del programa, no solo a las operaciones de vector usadas por DirectXMath.
 
  
 
@@ -100,7 +100,7 @@ El cambio del control de los desnormales se realiza mediante el uso de la rutina
 
 DirectXMath admite vectores de 4 valores de punto flotante de precisión sencilla o cuatro valores de 32 bits (con o sin signo).
 
-Dado que los conjuntos de instrucciones usados para implementar la biblioteca DirectXMath tienen la capacidad de tratar los mismos datos que varios tipos diferentes(por ejemplo, tratar el mismo vector que los datos de punto flotante y entero) se pueden lograr optimizaciones determinadas. Puede obtener estas optimizaciones mediante las rutinas de inicialización de vectores enteros y los operadores de bits para manipular valores de punto flotante.
+Dado que los conjuntos de instrucciones usados para implementar la biblioteca DirectXMath tienen la capacidad de tratar los mismos datos que varios tipos diferentes(por ejemplo, tratar el mismo vector que los datos de punto flotante y entero) se pueden lograr optimizaciones determinadas. Puede obtener estas optimizaciones mediante las rutinas de inicialización de vector entero y los operadores de bits para manipular valores de punto flotante.
 
 El formato binario de números de punto flotante de precisión sencilla que usa la biblioteca DirectXMath se ajusta completamente al estándar IEEE 764:
 
@@ -127,7 +127,7 @@ Existe un formulario de plantilla para [**XMVectorSwechle,**](/windows/win32/api
 Un uso común de DirectXMath es realizar cálculos gráficos para usarlos con Direct3D. Con Direct3D 10.x y Direct3D 11.x, puede usar la biblioteca DirectXMath de estas maneras directas:
 
 -   Use las [](ovw-xnamath-reference-constants.md) constantes de espacio de nombres Colors directamente en el *parámetro ColorRGBA* en una llamada al método [**ID3D11DeviceContext::ClearRenderTargetView**](/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-clearrendertargetview) o [**ID3D10Device::ClearRenderTargetView.**](/windows/win32/api/d3d10/nf-d3d10-id3d10device-clearrendertargetview) Para Direct3D 9, debe convertir al tipo [**XMCOLOR**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor) para usarlo como parámetro *Color* en una llamada al método [**IDirect3DDevice9::Clear.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-clear)
--   Use los [**tipos XMFLOAT4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4) / [**XMVECTOR**](xmvector-data-type.md) y [**XMFLOAT4X4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x4)XMMATRIX para configurar estructuras de búfer constante para la referencia de los tipos / [](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) HLSL [**float4**](../direct3dhlsl/dx-graphics-hlsl-scalar.md) o [**matriz**](../direct3dhlsl/dx-graphics-hlsl-matrix.md)/float4x4.
+-   Use los [**tipos XMFLOAT4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4) / [**XMVECTOR**](xmvector-data-type.md) y [**XMFLOAT4X4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x4)XMMATRIX para configurar estructuras de búfer constante para la referencia de los tipos / [](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) HLSL [**float4**](../direct3dhlsl/dx-graphics-hlsl-scalar.md) o [**matrix**](../direct3dhlsl/dx-graphics-hlsl-matrix.md)/float4x4.
     > [!Note]  
     > [**XMFLOAT4X4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x4) / [**Los tipos XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) están en formato de fila principal. Por lo tanto, si usa el modificador del compilador /Zpr (la marca de compilación [**D3DCOMPILE \_ PACK MATRIX COLUMN \_ \_ \_ MAJOR)**](../direct3dhlsl/d3dcompile-constants.md) u omite la palabra clave principal de fila al declarar el tipo de matriz en \_ HLSL, debe transponer la matriz al establecerla en el búfer constante. [](../direct3dhlsl/dx-graphics-hlsl-appendix-keywords.md)
 

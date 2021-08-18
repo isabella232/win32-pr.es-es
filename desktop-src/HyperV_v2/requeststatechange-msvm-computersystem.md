@@ -1,7 +1,7 @@
 ---
-description: Solicita que el estado de la máquina virtual se cambie al valor especificado.
+description: Solicita que el estado de la máquina virtual cambie al valor especificado.
 ms.assetid: 87BE4C7D-604B-4F8D-B4DC-89BD563E3999
-title: Método RequestStateChange de la clase Msvm_ComputerSystem
+title: Método RequestStateChange de la Msvm_ComputerSystem clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 291d72797b1ee765507a3d23921cd518cf605354
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f3851d32b43bc7ebd170a1179ecda1e25f86e43ddaf819453a4af6998e2f7efc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014353"
 ---
-# <a name="requeststatechange-method-of-the-msvm_computersystem-class"></a>Método RequestStateChange de la \_ clase MSVM ComputerSystem
+# <a name="requeststatechange-method-of-the-msvm_computersystem-class"></a>Método RequestStateChange de la clase ComputerSystem de Msvm \_
 
-Solicita que el estado de la máquina virtual se cambie al valor especificado. Invocar varias veces al método **RequestStateChange** podría provocar que se sobrescriban o se pierdan solicitudes anteriores. Este método solo se admite para las instancias de la clase [**MSVM \_ ComputerSystem**](msvm-computersystem.md) que representan una máquina virtual.
+Solicita que el estado de la máquina virtual cambie al valor especificado. Invocar el método **RequestStateChange** varias veces podría dar lugar a que las solicitudes anteriores se sobrescriban o se pierdan. Este método solo se admite para instancias de la clase [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) que representan una máquina virtual.
 
-Mientras el cambio de estado está en curso, la propiedad **requestedstate** cambia al valor del parámetro *RequestedState* .
+Mientras el cambio de estado está en curso, la **propiedad RequestedState** cambia al valor del *parámetro RequestedState.*
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,12 +43,12 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*RequestedState* \[ de\]
+*RequestedState* \[ En\]
 </dt> <dd>
 
-Tipo: **UInt16**
+Tipo: **uint16**
 
-El nuevo estado. Los valores mayores que 32767 son los valores propuestos de **DMTF** y están sujetos a cambios.
+El nuevo estado. Los valores mayores que 32767 son **valores propuestos de DMTF** y están sujetos a cambios.
 
 Estos son los valores posibles:
 
@@ -56,12 +56,12 @@ Estos son los valores posibles:
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otros** (1)
 
 
 </dt> <dd>
 
-Corresponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-versions//cc136818(v=vs.85)) = Other.
+Corresponde a [**CIM \_ EnabledLogicalElement.EnabledState**](/previous-versions//cc136818(v=vs.85)) = Other.
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Corresponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-version
 
 </dt> <dd>
 
-Corresponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-versions//cc136818(v=vs.85)) = enabled.
+Corresponde a [**CIM \_ EnabledLogicalElement.EnabledState**](/previous-versions//cc136818(v=vs.85)) = Enabled.
 
 </dd> <dt>
 
@@ -83,7 +83,7 @@ Corresponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-version
 
 </dt> <dd>
 
-Corresponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-versions//cc136818(v=vs.85)) = Disabled.
+Corresponde a [**CIM \_ EnabledLogicalElement.EnabledState**](/previous-versions//cc136818(v=vs.85)) = Disabled.
 
 </dd> <dt>
 
@@ -94,18 +94,18 @@ Corresponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-version
 
 </dt> <dd>
 
-Válido solo en la versión 1 (V1) de Hyper-V. La máquina virtual se está cerrando a través del servicio de cierre. Corresponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-versions//cc136818(v=vs.85)) = ShuttingDown.
+Válido solo en la versión 1 (V1) de Hyper-V. La máquina virtual se está cerrando a través del servicio de apagado. Corresponde a [**CIM \_ EnabledLogicalElement.EnabledState**](/previous-versions//cc136818(v=vs.85)) = ShuttingDown.
 
 </dd> <dt>
 
 <span id="Offline"></span><span id="offline"></span><span id="OFFLINE"></span>
 
-<span id="Offline"></span><span id="offline"></span><span id="OFFLINE"></span>**Sin conexión** (6)
+<span id="Offline"></span><span id="offline"></span><span id="OFFLINE"></span>**Sin** conexión (6)
 
 
 </dt> <dd>
 
-Corresponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-versions//cc136818(v=vs.85)) = Enabled pero sin conexión.
+Corresponde a [**CIM \_ EnabledLogicalElement.EnabledState**](/previous-versions//cc136818(v=vs.85)) = Habilitado pero sin conexión.
 
 </dd> <dt>
 
@@ -118,19 +118,19 @@ Corresponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-version
 
 <span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>
 
-<span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>**Diferir** (8)
+<span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>**Aplazar** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-<span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>Modo **inactivo** (9)
+<span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>**Quiesce** (9)
 
 
 </dt> <dd>
 
-Corresponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-versions//cc136818(v=vs.85)) = reposo, habilitado pero en pausa.
+Corresponde a [**CIM \_ EnabledLogicalElement.EnabledState**](/previous-versions//cc136818(v=vs.85)) = Quiesce, Enabled pero en pausa.
 
 </dd> <dt>
 
@@ -141,7 +141,7 @@ Corresponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-version
 
 </dt> <dd>
 
-Transición de estado desde **OFF** o **guardado** a en **ejecución**.
+Transición de estado **de Desactivado** o **Guardado a** **En ejecución.**
 
 </dd> <dt>
 
@@ -152,7 +152,7 @@ Transición de estado desde **OFF** o **guardado** a en **ejecución**.
 
 </dt> <dd>
 
-Restablezca la máquina virtual. Corresponde a [**CIM \_ EnabledLogicalElement. EnabledState**](/previous-versions//cc136818(v=vs.85)) = RESET.
+Restablezca la máquina virtual. Corresponde a [**CIM \_ EnabledLogicalElement.EnabledState**](/previous-versions//cc136818(v=vs.85)) = Reset.
 
 </dd> <dt>
 
@@ -163,7 +163,7 @@ Restablezca la máquina virtual. Corresponde a [**CIM \_ EnabledLogicalElement. 
 
 </dt> <dd>
 
-En la versión 1 (V1) de Hyper-V, corresponde a **EnabledStateSaving**.
+En la versión 1 (V1) de Hyper-V, corresponde a **EnabledStateSaving.**
 
 </dd> <dt>
 
@@ -174,18 +174,18 @@ En la versión 1 (V1) de Hyper-V, corresponde a **EnabledStateSaving**.
 
 </dt> <dd>
 
-En la versión 1 (V1) de Hyper-V, corresponde a **EnabledStatePausing**.
+En la versión 1 (V1) de Hyper-V, corresponde a **EnabledStatePausing.**
 
 </dd> <dt>
 
 <span id="Resuming"></span><span id="resuming"></span><span id="RESUMING"></span>
 
-<span id="Resuming"></span><span id="resuming"></span><span id="RESUMING"></span>**Reanudar** (32777)
+<span id="Resuming"></span><span id="resuming"></span><span id="RESUMING"></span>**Reanudación** (32777)
 
 
 </dt> <dd>
 
-En la versión 1 (V1) de Hyper-V, corresponde a **EnabledStateResuming**. Transición de estado de **pausa** a en **ejecución**.
+En la versión 1 (V1) de Hyper-V, corresponde a **EnabledStateResuming**. Transición de estado **de En pausa** a En **ejecución.**
 
 </dd> <dt>
 
@@ -196,7 +196,7 @@ En la versión 1 (V1) de Hyper-V, corresponde a **EnabledStateResuming**. Transi
 
 </dt> <dd>
 
-Corresponde a **EnabledStateFastSuspend**.
+Corresponde a **EnabledStateFastSuspend.**
 
 </dd> <dt>
 
@@ -207,11 +207,11 @@ Corresponde a **EnabledStateFastSuspend**.
 
 </dt> <dd>
 
-Corresponde a **EnabledStateFastSuspending**. Transición de estado de **ejecución** a **FastSaved**.
+Corresponde a **EnabledStateFastSuspending.** Transición de estado **de En ejecución** a **RápidoGuardado.**
 
 </dd> </dl>
 
-Estos valores representan Estados críticos:
+Estos valores representan estados críticos:
 
 <dt>
 
@@ -273,14 +273,14 @@ Estos valores representan Estados críticos:
 
 <span id="PausingCritical"></span><span id="pausingcritical"></span><span id="PAUSINGCRITICAL"></span>
 
-**PausingCritical** (32789)
+**PausarCritical** (32789)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ResumingCritical"></span><span id="resumingcritical"></span><span id="RESUMINGCRITICAL"></span>
 
-**ResumingCritical** (32790)
+**Reanudación deCritical** (32790)
 
 
 </dt> <dd></dd> <dt>
@@ -299,19 +299,19 @@ Estos valores representan Estados críticos:
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))**
+Tipo: **[ **Cim \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))**
 
-Referencia opcional a un objeto [**MSVM \_ ConcreteJob**](msvm-concretejob.md) que se devuelve si la operación se ejecuta de forma asincrónica. Si está presente, la referencia devuelta se puede usar para supervisar el progreso y obtener el resultado del método.
+Referencia opcional a un [**objeto \_ ConcreteJob de Msvm**](msvm-concretejob.md) que se devuelve si la operación se ejecuta de forma asincrónica. Si está presente, la referencia devuelta se puede usar para supervisar el progreso y obtener el resultado del método .
 
 </dd> <dt>
 
-*TimeoutPeriod* \[ de\]
+*TimeoutPeriod* \[ En\]
 </dt> <dd>
 
-Tipo: **DateTime**
+Tipo: **datetime**
 
 Este parámetro no se utiliza.
 
@@ -319,7 +319,7 @@ Este parámetro no se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Este método devuelve uno de los valores siguientes.
 
@@ -328,15 +328,15 @@ Este método devuelve uno de los valores siguientes.
 | Código o valor devuelto                                                                                                                                                                       | Descripción                                                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | <dl> <dt>**Completado sin error**</dt> <dt>0</dt> </dl>                           | Correcto.<br/>                                                                |
-| <dl> <dt>**Parámetros de método con comprobación activada: transición iniciada**</dt> <dt>4096</dt> </dl> | La transición es asincrónica.<br/>                                         |
-| <dl> <dt>**Acceso Denegado**</dt> <dt>32769</dt> </dl>                                 | Acceso denegado.<br/>                                                          |
+| <dl> <dt>**Parámetros de método comprobados: transición iniciada**</dt> <dt>4096</dt> </dl> | La transición es asincrónica.<br/>                                         |
+| <dl> <dt>**Acceso denegado**</dt> <dt>32769</dt> </dl>                                 | Acceso denegado:<br/>                                                          |
 | <dl> <dt></dt><dt>32768</dt> </dl>                                                  |                                                                                    |
 | <dl> <dt></dt><dt>32770</dt> </dl>                                                  |                                                                                    |
 | <dl> <dt></dt><dt>32771</dt> </dl>                                                  |                                                                                    |
 | <dl> <dt></dt><dt>32772</dt> </dl>                                                  |                                                                                    |
 | <dl> <dt></dt><dt>32773</dt> </dl>                                                  |                                                                                    |
 | <dl> <dt></dt><dt>32774</dt> </dl>                                                  |                                                                                    |
-| <dl> <dt>**Estado no válido para esta operación**</dt> <dt>32775</dt> </dl>              | No se admite el valor especificado en el parámetro *RequestedState* .<br/> |
+| <dl> <dt>**Estado no válido para esta operación**</dt> <dt>32775</dt> </dl>              | No se admite el valor especificado en el parámetro *RequestedState.*<br/> |
 | <dl> <dt></dt><dt>32776</dt> </dl>                                                  |                                                                                    |
 | <dl> <dt></dt><dt>32777</dt> </dl>                                                  |                                                                                    |
 | <dl> <dt></dt><dt>32778</dt> </dl>                                                  |                                                                                    |
@@ -345,16 +345,16 @@ Este método devuelve uno de los valores siguientes.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase [**MSVM \_ ComputerSystem**](msvm-computersystem.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a [**la clase \_ ComputerSystem de Msvm**](msvm-computersystem.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de C# se inicia o deshabilita una máquina virtual. Las utilidades a las que se hace referencia se pueden encontrar en [utilidades comunes para los ejemplos de virtualización (V2)](common-utilities-for-the-virtualization-samples-v2.md).
+En el siguiente ejemplo de C# se inicia o deshabilita una máquina virtual. Las utilidades a las que se hace referencia se pueden encontrar [en Utilidades comunes para los ejemplos de virtualización (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 > [!IMPORTANT]
-> Para que funcione correctamente, se debe ejecutar el código siguiente en el servidor host de máquina virtual y se debe ejecutar con privilegios de administrador.
+> Para funcionar correctamente, el código siguiente debe ejecutarse en el servidor host de la máquina virtual y debe ejecutarse con privilegios de administrador.
 
  
 
@@ -449,10 +449,10 @@ namespace HyperVSamples
 
 
 
-En el siguiente ejemplo de Visual Basic Scripting Edition (VBScript) se inicia o deshabilita una máquina virtual.
+En el Visual Basic ejemplo de Scripting Edition (VBScript) se inicia o deshabilita una máquina virtual.
 
 > [!IMPORTANT]
-> Para que funcione correctamente, se debe ejecutar el código siguiente en el servidor host de máquina virtual y se debe ejecutar con privilegios de administrador.
+> Para funcionar correctamente, el código siguiente debe ejecutarse en el servidor host de la máquina virtual y debe ejecutarse con privilegios de administrador.
 
  
 
@@ -630,10 +630,10 @@ End Function
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -642,7 +642,7 @@ End Function
 
 <dl> <dt>
 
-[**MSVM \_ ComputerSystem**](msvm-computersystem.md)
+[**Msvm \_ ComputerSystem**](msvm-computersystem.md)
 </dt> </dl>
 
  

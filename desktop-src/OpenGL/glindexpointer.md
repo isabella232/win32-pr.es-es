@@ -1,9 +1,9 @@
 ---
-title: función glIndexPointer (GL. h)
+title: Función glIndexPointer (Gl.h)
 description: La función glIndexPointer define una matriz de índices de color.
 ms.assetid: b435d950-1f87-4041-93e4-f1f8786cabdb
 keywords:
-- glIndexPointer (función) OpenGL
+- Función glIndexPointer OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cca6858d7d1e3f13e4155bd40307a53b22e80a56
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e27502420121f7373af5425e8aadffe3641ddec539a4521fe6c6bf55e6d807d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012153"
 ---
-# <a name="glindexpointer-function"></a>glIndexPointer función)
+# <a name="glindexpointer-function"></a>Función glIndexPointer
 
-La función **glIndexPointer** define una matriz de índices de color.
+La **función glIndexPointer** define una matriz de índices de color.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,18 +45,18 @@ void WINAPI glIndexPointer(
 *type* 
 </dt> <dd>
 
-El tipo de datos de cada índice de color de la matriz mediante las siguientes constantes simbólicas: GL \_ Short, GL \_ int, GL \_ float, GL \_ Double.
+El tipo de datos de cada índice de color de la matriz mediante las siguientes constantes simbólicas: GL \_ SHORT, GL \_ INT, GL \_ FLOAT, GL \_ DOUBLE.
 
 </dd> <dt>
 
-*STRI* 
+*Paso* 
 </dt> <dd>
 
-El desplazamiento de bytes entre índices de color consecutivos. Cuando *STRIDE* es cero, los índices de color están estrechamente empaquetados en la matriz.
+Desplazamiento de bytes entre índices de color consecutivos. Cuando *stride* es cero, los índices de color se empaquetan estrechamente en la matriz.
 
 </dd> <dt>
 
-*puntero* 
+*Puntero* 
 </dt> <dd>
 
 Puntero al primer índice de color de la matriz.
@@ -75,36 +75,36 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                              | Significado                                      |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>  | el *tipo* no era un valor aceptado.<br/> |
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl> | *STRIDE* o *Count* era negativo.<br/> |
+| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl>  | *Type* no era un valor aceptado.<br/> |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl> | *stride* o *count era* negativo.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glIndexPointer** especifica la ubicación y los datos de una matriz de índices de color que se van a utilizar al representar. El parámetro de *tipo* especifica el tipo de datos de cada índice de color y *STRIDE* determina el desplazamiento de bytes de un índice de color al siguiente, lo que permite el empaquetado de vértices y atributos en una sola matriz o almacenamiento en matrices independientes. En algunas implementaciones, el almacenamiento de vértices y atributos en una sola matriz puede ser más eficaz que el uso de matrices independientes. Para obtener más información, vea [**glInterleavedArrays**](glinterleavedarrays.md).
+La **función glIndexPointer** especifica la ubicación y los datos de una matriz de índices de color que se usarán al representar. El  parámetro type especifica el tipo de datos de cada índice de color y *stride* determina el desplazamiento de bytes de un índice de color al siguiente, lo que permite el empaquetado de vértices y atributos en una sola matriz o almacenamiento en matrices independientes. En algunas implementaciones, almacenar los vértices y atributos en una sola matriz puede ser más eficaz que usar matrices independientes. Para obtener más información, [**vea glInterleavedArrays**](glinterleavedarrays.md).
 
-Una matriz de índice de color se habilita al especificar la constante de matriz de índice de GL \_ \_ con [**glEnableClientState**](glenableclientstate.md). Cuando está habilitado, [**glDrawArrays**](gldrawarrays.md) y [**glArrayElement**](glarrayelement.md) usan la matriz de índices de color. De forma predeterminada, la matriz de índices de color está deshabilitada.
+Se habilita una matriz de índice de colores cuando se especifica la constante GL \_ INDEX \_ ARRAY con [**glEnableClientState**](glenableclientstate.md). Cuando se habilita, [**glDrawArrays**](gldrawarrays.md) y [**glArrayElement**](glarrayelement.md) usan la matriz de índice de colores. De forma predeterminada, la matriz de índice de colores está deshabilitada.
 
-No se puede incluir **glIndexPointer** en las listas de visualización.
+No se puede **incluir glIndexPointer en** listas para mostrar.
 
-Cuando se especifica una matriz de índice de color mediante **glIndexPointer**, los valores de todos los parámetros de matriz de índice de color de la función se guardan en un estado del lado cliente y los elementos de matriz estáticos se pueden almacenar en caché. Dado que los parámetros de matriz de índice de color son de cliente, los valores no se guardan ni restauran en [**glPushAttrib**](glpushattrib.md) y **glPopAttrib**.
+Cuando se especifica una matriz de índice de colores mediante **glIndexPointer**, los valores de todos los parámetros de la matriz de índice de colores de la función se guardan en un estado del lado cliente y los elementos de la matriz estática se pueden almacenar en caché. Dado que los parámetros de matriz de índice de color son de estado del lado cliente, [**glPushAttrib**](glpushattrib.md) y **glPopAttrib** no guardan ni restauran sus valores.
 
-Aunque no se genera ningún error cuando se llama a **glIndexPointer** en pares [**glBegin**](glbegin.md) y **glEnd** , los resultados son indefinidos.
+Aunque no se genera ningún error al llamar **a glIndexPointer** dentro de los pares [**glBegin**](glbegin.md) y **glEnd,** los resultados no están definidos.
 
-Las siguientes funciones recuperan información relacionada con **glIndexPointer**:
+Las funciones siguientes recuperan información relacionada **con glIndexPointer**:
 
-[**glIsEnabled**](glisenabled.md) con el argumento \_ matriz de índice de GL \_
+[**glIsEnabled con**](glisenabled.md) el argumento GL \_ INDEX \_ ARRAY
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argumento \_ intervalo de \_ matriz de índice de GL \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ INDEX ARRAY \_ \_ STRIDE
 
-**glGet** con argumento \_ \_ recuento de matriz de índice de GL \_
+**glGet con** el argumento GL \_ INDEX ARRAY \_ \_ COUNT
 
-**glGet** con argumento \_ tipo de \_ matriz de índice de GL \_
+**glGet con** el argumento GL \_ INDEX ARRAY \_ \_ TYPE
 
-**glGet** con el argumento \_ \_ tamaño de matriz de índice de GL \_
+**glGet con** el argumento GL \_ INDEX ARRAY \_ \_ SIZE
 
-[**glGetPointerv**](glgetpointerv.md) con argumento de \_ matriz de índice de contabilidad de argumentos \_ \_
+[**glGetPointerv con el**](glgetpointerv.md) argumento GL \_ INDEX ARRAY \_ \_ POINTER
 
 ## <a name="requirements"></a>Requisitos
 
@@ -114,8 +114,8 @@ Las siguientes funciones recuperan información relacionada con **glIndexPointer
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

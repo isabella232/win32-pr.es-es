@@ -5,7 +5,7 @@ ms.assetid: 711b188d-b283-4c99-b43d-644f39a31cdc
 keywords:
 - Propiedad RandomDelay Programador de tareas
 - Propiedad RandomDelay Programador de tareas objeto , WeeklyTrigger
-- Propiedad WeeklyTrigger Programador de tareas , RandomDelay
+- Objeto WeeklyTrigger Programador de tareas , propiedad RandomDelay
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2b320b0def6f8e9cb0dabff9ff04bdfea3d858e
-ms.sourcegitcommit: b3a9abea47dea7374eac0f9a95a652ac6977fb2e
+ms.openlocfilehash: bc17260b33b4f5ca833ae0f2e322a99205b690ad8d54779ea6471db246cc056b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "107734160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001783"
 ---
 # <a name="weeklytriggerrandomdelay-property"></a>Propiedad WeeklyTrigger.RandomDelay
 
 Para el scripting, obtiene o establece una hora de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -44,10 +44,10 @@ Tiempo de retraso que se agrega aleatoriamente a la hora de inicio del desencade
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 

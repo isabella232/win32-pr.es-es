@@ -1,7 +1,7 @@
 ---
 description: Especifica el alto del diafragma de presentación mínimo, en píxeles.
 ms.assetid: dddae10f-3ed2-4444-af5b-f2cf46c52e7c
-title: MFPKEY_RESIZE_MINAPHEIGHT (Propiedad, Wmcodecdsp.h)
+title: MFPKEY_RESIZE_MINAPHEIGHT propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 6fb061fc1b1ba2a041f1689e8129eae7cbda4e45ff84407781ef4b693e33b1f2
@@ -31,7 +31,7 @@ VT \_ I4
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
@@ -39,7 +39,7 @@ VT \_ I4
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

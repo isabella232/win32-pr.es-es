@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IPixErrorCallback\_MessagesCallback\_DWORD\_Issue\_arr
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: IPixErrorCallback::MessagesCallback (Método)
+title: IPixErrorCallback::MessagesCallback (método)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 55343F63-BB58-4F57-884D-CEFE8AB57A27
@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118985885"
 ---
-# <a name="span-idvspixengineipixerrorcallback_messagescallback_dword_issue_arrspanipixerrorcallbackmessagescallback-method"></a><span id="vspixengine.ipixerrorcallback_messagescallback_dword_issue_arr"></span>IPixErrorCallback::MessagesCallback (Método)
+# <a name="span-idvspixengineipixerrorcallback_messagescallback_dword_issue_arrspanipixerrorcallbackmessagescallback-method"></a><span id="vspixengine.ipixerrorcallback_messagescallback_dword_issue_arr"></span>IPixErrorCallback::MessagesCallback (método)
 
 Devolución de llamada que notifica al host de mensajes devueltos por la solicitud asociada.
 
@@ -43,7 +43,7 @@ HRESULT MessagesCallback(
 *Contar*   
 El número de mensajes.
 
-*count0 \_ messages*   
+*mensajes \_ count0*   
 Los mensajes.
 
 ## <a name="return-value"></a>Valor devuelto

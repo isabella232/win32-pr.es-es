@@ -1,19 +1,19 @@
 ---
-title: endif (SM4-ASM)
+title: endif (sm4 - asm)
 description: Finaliza una instrucción if.
 ms.assetid: 9F4CF9E0-4D9D-4300-B432-432C560F34BB
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d3fa6cf0efd395843212f6bacac478285e496c2
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: df7c88bf9fafeeb39b3f3d741eb829270d746923e6447a8854be0fe828fd1138
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104077064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119744265"
 ---
-# <a name="endif-sm4---asm"></a>endif (SM4-ASM)
+# <a name="endif-sm4---asm"></a>endif (sm4 - asm)
 
-Finaliza una instrucción [If](if--sm4---asm-.md) .
+Finaliza una [instrucción if.](if--sm4---asm-.md)
 
 
 
@@ -22,9 +22,9 @@ Finaliza una instrucción [If](if--sm4---asm-.md) .
 
 
 
- 
+ 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 En el ejemplo siguiente se muestra cómo usar la instrucción endif.
 
@@ -36,7 +36,7 @@ En el ejemplo siguiente se muestra cómo usar la instrucción endif.
                 endif
 ```
 
-El formato de token contiene el desplazamiento de la instrucción **If** correspondiente en el sombreador como una comodidad.
+El formato del token contiene el desplazamiento de la instrucción **if** correspondiente en el sombreador por comodidad.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -48,9 +48,9 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
- 
+ 
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -58,27 +58,27 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: 'Buffer:: Getdimensions ((función)'
-description: 'Obtiene la longitud del búfer. | Buffer:: Getdimensions ((función)'
+title: Función Buffer::GetDimensions
+description: Obtiene la longitud del búfer. | Función Buffer::GetDimensions
 ms.assetid: 704890e8-43e4-4e72-b7e2-eeef331bef1c
 keywords:
-- Getdimensions (de función HLSL
+- Función GetDimensions HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c7f1ad1da7600e65d7442c1b2431535e2fdcf38c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d7c56d673e533b4626a57669cf884d80da63d7848cfc7a3e248762f6c4f42088
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986105"
 ---
-# <a name="buffergetdimensions-function"></a>Buffer:: Getdimensions ((función)
+# <a name="buffergetdimensions-function"></a>Función Buffer::GetDimensions
 
 Obtiene la longitud del búfer.
 
@@ -36,12 +36,12 @@ void GetDimensions(
 
 <dl> <dt>
 
-*atenuar* \[\]
+*dim* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-La longitud, en bytes, del búfer.
+Longitud, en bytes, del búfer.
 
 </dd> </dl>
 
@@ -49,13 +49,13 @@ La longitud, en bytes, del búfer.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -70,7 +70,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 [Buffer](sm5-object-buffer.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

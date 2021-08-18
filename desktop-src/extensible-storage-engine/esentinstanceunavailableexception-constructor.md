@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInstanceUnavailableException'
-title: Constructor de EsentInstanceUnavailableException
+description: 'Más información sobre: Constructor EsentInstanceUnavailableException'
+title: Constructor EsentInstanceUnavailableException
 TOCTitle: 'EsentInstanceUnavailableException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInstanceUnavailableException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinstanceunavailableexception.esentinstanceunavailableexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d0f9c1a3a15c2e59df5b2393c613b73ca2a173fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 528a280df8c76d19b21352f820e638450430b60f268526976aa96f0194f2061a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119621115"
 ---
-# <a name="esentinstanceunavailableexception-constructor"></a>Constructor de EsentInstanceUnavailableException
+# <a name="esentinstanceunavailableexception-constructor"></a>Constructor EsentInstanceUnavailableException
 
 Inicializa una nueva instancia de la clase EsentInstanceUnavailableException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentInstanceUnavailableException()
 public EsentInstanceUnavailableException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentInstanceUnavailableException()
 
 [Miembros de EsentInstanceUnavailableException](./esentinstanceunavailableexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

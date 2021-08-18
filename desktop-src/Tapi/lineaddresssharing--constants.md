@@ -1,23 +1,23 @@
 ---
-description: Las \_ constantes de marcador de bits LINEADDRESSSHARING describen varias maneras en que se puede compartir una dirección entre las líneas.
+description: Las constantes de marca de bits LINEADDRESSSHARING describen varias maneras en que se puede compartir \_ una dirección entre líneas.
 ms.assetid: f37ba549-c8dc-4a7c-bfe6-8e5f733d9750
-title: Constantes de LINEADDRESSSHARING_ (TAPI. h)
+title: LINEADDRESSSHARING_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 785c7e924ffc958d3fe14b739bb2eb28dec322a7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e4fe92c92efd75a4f6e731944c487acff2ffd70e173dd04b03244ec9d55e8aba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003133"
 ---
-# <a name="lineaddresssharing_-constants"></a>Constantes de LINEADDRESSSHARING \_
+# <a name="lineaddresssharing_-constants"></a>LINEADDRESSSHARING \_ (Constantes)
 
-Las constantes de marcador de bits **LINEADDRESSSHARING \_** describen varias maneras en que se puede compartir una dirección entre las líneas.
+Las constantes de marca de bits **LINEADDRESSSHARING \_** describen varias maneras en que se puede compartir una dirección entre líneas.
 
 <dl> <dt>
 
-<span id="LINEADDRESSSHARING_PRIVATE"></span><span id="lineaddresssharing_private"></span>**LINEADDRESSSHARING \_ privado**
+<span id="LINEADDRESSSHARING_PRIVATE"></span><span id="lineaddresssharing_private"></span>**LINEADDRESSSHARING \_ PRIVATE**
 </dt> <dd> <dl> <dt>
 
 
@@ -32,7 +32,7 @@ La dirección es privada para la línea del usuario; no se asigna a ninguna otra
 
 
 
-La dirección se enlaza a una o varias estaciones. La primera línea para activar una llamada en la línea tendrá acceso exclusivo a la dirección y llamadas que pueden existir en ella. Otras líneas no podrán usar la dirección de puente mientras esté en uso.
+La dirección se une a una o varias estaciones. La primera línea para activar una llamada en la línea tendrá acceso exclusivo a la dirección y a las llamadas que puedan existir en ella. Otras líneas no podrán usar la dirección de puente mientras esté en uso.
 
 
 </dt> </dl> </dd> <dt>
@@ -42,7 +42,7 @@ La dirección se enlaza a una o varias estaciones. La primera línea para activa
 
 
 
-La dirección se enlaza con una o varias estaciones. La primera línea para activar una llamada en la línea tendrá acceso exclusivo únicamente a la llamada correspondiente. Otras aplicaciones que utilizan la dirección darán lugar a una apariencia de llamada nueva y separada.
+La dirección se une con una o varias estaciones. La primera línea para activar una llamada en la línea tendrá acceso exclusivo solo a la llamada correspondiente. Otras aplicaciones que usan la dirección darán como resultado apariencias de llamadas nuevas e independientes.
 
 
 </dt> </dl> </dd> <dt>
@@ -52,26 +52,26 @@ La dirección se enlaza con una o varias estaciones. La primera línea para acti
 
 
 
-La dirección se enlaza con una o varias líneas. Todas las entidades puente pueden compartirse en llamadas en la dirección, que, a continuación, funciona como una conferencia.
+La dirección se une con una o más líneas. Todas las partes puente pueden compartir llamadas en la dirección , que luego funciona como una conferencia.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRESSSHARING_MONITORED"></span><span id="lineaddresssharing_monitored"></span>**LINEADDRESSSHARING \_ supervisado**
+<span id="LINEADDRESSSHARING_MONITORED"></span><span id="lineaddresssharing_monitored"></span>**LINEADDRESSSHARING \_ SUPERVISADO**
 </dt> <dd> <dl> <dt>
 
 
 
-Se trata de una dirección cuyo estado de inactividad se pone a disposición de esta línea.
+Se trata de una dirección cuyo estado inactivo o ocupado está disponible para esta línea.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Sin extensibilidad. Todos los 32 bits están reservados.
+Sin extensibilidad. Los 32 bits están reservados.
 
-La forma en que una dirección se comparte entre las líneas puede afectar al comportamiento de esa dirección. [**Línea \_ de**](line-callstate.md) Los mensajes CALLSTATE y [**\_ ADDRESSSTATE de línea**](line-addressstate.md) se envían a la aplicación en respuesta a las actividades de las estaciones de puente. A través de estos mensajes, una aplicación puede realizar un seguimiento del estado de la dirección.
+La manera en que una dirección se comparte entre líneas puede afectar al comportamiento de esa dirección. [**LINE \_ Los mensajes CALLSTATE**](line-callstate.md) [**y LINE \_ ADDRESSSTATE**](line-addressstate.md) se envían a la aplicación en respuesta a las actividades de las estaciones de puente. A través de estos mensajes, una aplicación puede realizar un seguimiento del estado de la dirección.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ La forma en que una dirección se comparte entre las líneas puede afectar al co
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
@@ -88,10 +88,10 @@ La forma en que una dirección se comparte entre las líneas puede afectar al co
 
 <dl> <dt>
 
-[**LÍNEA \_ ADDRESSSTATE**](line-addressstate.md)
+[**LINE \_ ADDRESSSTATE**](line-addressstate.md)
 </dt> <dt>
 
-[**LÍNEA \_ CALLSTATE**](line-callstate.md)
+[**LINE \_ CALLSTATE**](line-callstate.md)
 </dt> </dl>
 
  

@@ -5,8 +5,8 @@ ms.assetid: 5f988a85-55dd-4b23-a15c-a55e5ca14429
 keywords:
 - Reproductor de Windows Media máscaras, elemento CONTROLS
 - skins,CONTROLS, elemento
-- CONTROLS, elemento
-- referencia de máscaras,elemento CONTROLS
+- ELEMENTO CONTROLS
+- referencia de máscaras, elemento CONTROLS
 - elements,CONTROLS
 ms.topic: article
 ms.date: 05/31/2018
@@ -40,7 +40,7 @@ El **elemento CONTROLS** permite especificar los siguientes atributos del objeto
 
 <dl> <dt>
 
-[**Controls (objeto)**](controls-object.md)
+[**Objeto Controls**](controls-object.md)
 </dt> <dt>
 
 [**Referencia de programación de máscaras**](skin-programming-reference.md)

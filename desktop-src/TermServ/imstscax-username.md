@@ -1,30 +1,30 @@
 ---
-title: Propiedad de nombre de usuario IMsTscAx
-description: Especifica la credencial de inicio de sesión del nombre de usuario.
+title: Propiedad UserName de IMsTscAx
+description: Especifica la credencial de inicio de sesión de nombre de usuario.
 ms.assetid: 9be25003-b9aa-41bb-a5a9-512546175114
 ms.tgt_platform: multiple
 keywords:
-- Propiedad UserName Servicios de Escritorio remoto
-- Propiedad UserName Servicios de Escritorio remoto, interfaz IMsTscAx
-- Servicios de Escritorio remoto de la interfaz IMsTscAx, propiedad UserName
-- Propiedad UserName Servicios de Escritorio remoto, interfaz IMsRdpClient
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient, propiedad UserName
-- Propiedad UserName Servicios de Escritorio remoto, interfaz IMsRdpClient2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient2, propiedad UserName
-- Propiedad UserName Servicios de Escritorio remoto, interfaz IMsRdpClient3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient3, propiedad UserName
-- Propiedad UserName Servicios de Escritorio remoto, interfaz IMsRdpClient4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient4, propiedad UserName
-- Propiedad UserName Servicios de Escritorio remoto, interfaz IMsRdpClient5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient5, propiedad UserName
-- Propiedad UserName Servicios de Escritorio remoto, interfaz IMsRdpClient6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient6, propiedad UserName
-- Propiedad UserName Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient7, propiedad UserName
-- Propiedad UserName Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient8, propiedad UserName
-- Propiedad UserName Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient9, propiedad UserName
+- NombreDeUsuario, propiedad Servicios de Escritorio remoto
+- Propiedad UserName Servicios de Escritorio remoto , interfaz IMsTscAx
+- Interfaz IMsTscAx Servicios de Escritorio remoto , propiedad UserName
+- Propiedad UserName Servicios de Escritorio remoto interfaz , IMsRdpClient
+- Interfaz IMsRdpClient Servicios de Escritorio remoto , propiedad UserName
+- Propiedad UserName Servicios de Escritorio remoto interfaz , IMsRdpClient2
+- Interfaz IMsRdpClient2 Servicios de Escritorio remoto , propiedad UserName
+- Propiedad UserName Servicios de Escritorio remoto interfaz , IMsRdpClient3
+- Interfaz IMsRdpClient3 Servicios de Escritorio remoto , propiedad UserName
+- Propiedad UserName Servicios de Escritorio remoto interfaz , IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto , propiedad UserName
+- Propiedad UserName Servicios de Escritorio remoto interfaz , IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto , propiedad UserName
+- Propiedad UserName Servicios de Escritorio remoto interfaz , IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , propiedad UserName
+- Propiedad UserName Servicios de Escritorio remoto interfaz , IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad UserName
+- Propiedad UserName Servicios de Escritorio remoto interfaz , IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad UserName
+- Propiedad UserName Servicios de Escritorio remoto interfaz , IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad UserName
 topic_type:
 - apiref
 api_name:
@@ -64,20 +64,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a94a7f7d9fe5d6532de55f36a50094205fe1d4ac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 609619a012c9eea865a275bc6ee86cfc06c798ba27902636f9d5f792b8cb0dc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770885"
 ---
-# <a name="imstscaxusername-property"></a>IMsTscAx:: UserName (propiedad)
+# <a name="imstscaxusername-property"></a>Propiedad IMsTscAx::UserName
 
-Especifica la credencial de inicio de sesión del nombre de usuario.
+Especifica la credencial de inicio de sesión de nombre de usuario.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -94,21 +94,21 @@ HRESULT get_UserName(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El nuevo nombre de usuario.
+Nuevo nombre de usuario.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El establecimiento de la propiedad **username** es opcional. Si no se especifica, el usuario puede proporcionar un nombre de usuario cuando aparece el cuadro de diálogo Inicio de sesión de Windows durante la conexión.
+Establecer la **propiedad UserName** es opcional. Si no se especifica, el usuario puede proporcionar un nombre de usuario cuando aparezca el Windows de diálogo Inicio de sesión durante la conexión.
 
-Esta propiedad solo se puede establecer si el control no está en estado conectado. Devuelve **E \_ produce un error** si se llama cuando el control está conectado. Puede comprobar si el control está conectado respondiendo a los eventos de conexión en [**IMsTscAxEvents**](imstscaxevents-interface.md) o examinando la propiedad [**Connected**](imstscax-connected.md) .
+Esta propiedad solo se puede establecer si el control no está en el estado conectado. Devuelve **E \_ FAIL si** se llama cuando el control está conectado. Puede comprobar si el control está conectado respondiendo a eventos de conexión en [**IMsTscAxEvents**](imstscaxevents-interface.md) o examinando la [**propiedad Connected.**](imstscax-connected.md)
 
-El método **Get \_ username** Property asigna la memoria necesaria para el búfer señalado por el parámetro *pVersion* . La llamada a aplicaciones de C/C++ debe liberar la memoria con una llamada a la función [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) . Esto no es necesario para los clientes de scripting y Visual Basic.
+El **método de propiedad get \_ UserName** asigna la memoria necesaria para el búfer al que apunta el *parámetro pVersion.* La llamada a aplicaciones de C/C++ debe liberar la memoria con una llamada a la [**función SysFreeString.**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) Esto no es necesario para los clientes Visual Basic y scripting.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

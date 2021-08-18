@@ -1,5 +1,5 @@
 ---
-description: Filtra los niveles de mapa mip de una textura.
+description: Filtra los niveles de asignación mip de una textura.
 ms.assetid: bfeae9b0-9480-4a26-a225-4a34780546ce
 title: Función D3DXFilterTexture (D3dx9tex.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118988505"
 ---
 # <a name="d3dxfiltertexture-function"></a>Función D3DXFilterTexture
 
-Filtra los niveles de mapa mip de una textura.
+Filtra los niveles de asignación mip de una textura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ Puntero a una [**interfaz IDirect3DBaseTexture9**](/windows/win32/api/d3d9helper
 
 Tipo: **const [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
 
-Puntero a una [**estructura PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) que representa una paleta de 256 colores que se rellenará, o **NULL** para formatos no rellenados. Si no se especifica una paleta, se proporciona la paleta direct3D predeterminada (una paleta de blanco opaca). Vea la sección Comentarios.
+Puntero a una [**estructura PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) que representa una paleta de 256 colores para rellenar, o **NULL** para formatos nopaleizados. Si no se especifica una paleta, se proporciona la paleta predeterminada de Direct3D (una paleta de blanco opaca). Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Nivel cuya imagen se usa para generar los niveles posteriores. Especificar D3DX 
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinación de uno o varios [filtros D3DX \_ que](d3dx-filter.md) controlan cómo se filtra el mapa mip. Especificar D3DX DEFAULT para este parámetro equivale a especificar D3DX FILTER BOX si el tamaño de textura es una potencia de dos, y \_ \_ \_ D3DX \_ FILTER BOX \_ \| D3DX \_ FILTER DITHER \_ en caso contrario.
+Combinación de uno o varios [filtros D3DX \_ que](d3dx-filter.md) controlan cómo se filtra el mapa mip. Especificar D3DX DEFAULT para este parámetro equivale a especificar D3DX FILTER BOX si el tamaño de textura es una potencia de \_ \_ dos y \_ D3DX \_ FILTER BOX \_ \| D3DX \_ FILTER DITHER \_ en caso contrario.
 
 </dd> </dl>
 
@@ -89,11 +89,11 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 Un filtro se aplica de forma recursiva a cada nivel de textura para generar el siguiente nivel de textura.
 
-Escribir en una superficie que no sea de nivel cero de la textura no hará que se actualice el rectángulo sucio. Si se llama a **D3DXFilterTexture** y la superficie aún no está desa prueba (es poco probable en escenarios de uso normal), la aplicación debe llamar explícitamente a [**AddDirtyRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-adddirtyrect) en la textura.
+La escritura en una superficie que no sea de nivel cero de la textura no hará que se actualice el rectángulo desnuciado. Si se llama a **D3DXFilterTexture** y la superficie aún no estaba desasesuada (es poco probable en escenarios de uso normal), la aplicación debe llamar explícitamente a [**AddDirtyRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-adddirtyrect) en la textura.
 
 Las texturas creadas en el grupo predeterminado (D3DPOOL DEFAULT) no se pueden usar con \_ **D3DXFilterTexture** (a menos que se cree con D3DUSAGE DYNAMIC) porque se necesita una operación de bloqueo en el objeto \_ . Tenga en cuenta que los bloqueos están prohibidos en las texturas del grupo predeterminado (a menos que sean dinámicos).
 
-Para obtener más información [**sobre PALETTEENTRY,**](/windows/win32/api/wingdi/ns-wingdi-paletteentry)consulte el SDK de plataforma. Tenga en cuenta que a partir de DirectX 8.0, el miembro peFlags de la estructura **PALETTEENTRY** no funciona como se documenta en el SDK de plataforma. El miembro peFlags es ahora el canal alfa para los formatos de 8 bits.
+Para más información sobre [**PALETTEENTRY,**](/windows/win32/api/wingdi/ns-wingdi-paletteentry)consulte el SDK de plataforma. Tenga en cuenta que a partir de DirectX 8.0, el miembro peFlags de la estructura **PALETTEENTRY** no funciona como se documenta en el SDK de plataforma. El miembro peFlags es ahora el canal alfa para los formatos de 8 bits.
 
 Solo hay una función de filtrado de textura, pero dos macros que llaman a este método.
 
@@ -116,7 +116,7 @@ Solo hay una función de filtrado de textura, pero dos macros que llaman a este 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

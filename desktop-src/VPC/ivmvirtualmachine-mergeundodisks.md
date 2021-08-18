@@ -4,8 +4,8 @@ description: Combina los discos de deshacer virtuales.
 ms.assetid: 6445b097-220e-48c4-9a7b-1139ca7b3338
 keywords:
 - MergeUndoDisks, método Virtual PC
-- Método MergeUndoDisks Virtual PC , interfaz IVMVirtualMachine
-- IVMVirtualMachine interface Virtual PC , método MergeUndoDisks
+- Método MergeUndoDisks pc virtual, interfaz IVMVirtualMachine
+- IVMVirtualMachine interface Virtual PC , Método MergeUndoDisks
 topic_type:
 - apiref
 api_name:
@@ -62,8 +62,8 @@ Este método puede devolver uno de estos valores.
 | <dl> <dt>**S \_ Ok**</dt> <dt>0</dt> </dl>                                                  | La operación se realizó correctamente.<br/>                                                                                                |
 | <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl>                            | Se produjo un error inesperado.<br/>                                                                                            |
 | <dl> <dt>**E \_ Puntero**</dt> <dt>0x80004003</dt> </dl>                                    | El parámetro es **NULL.**<br/>                                                                                                   |
-| <dl> <dt>**HRESULT \_ DESDE \_ WIN32 (RUTA DE ACCESO DE ERROR \_ \_ NO \_ ENCONTRADA)**</dt> <dt>0X80070003</dt> </dl> | El sistema no puede encontrar la ruta de acceso especificada por el *parámetro convertedDiskImagePath* o uno de los discos primarios no es válido.<br/> |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> <dt>0x80070005</dt> </dl>                               | El usuario actual no tiene acceso suficiente al archivo primario.<br/>                                                                 |
+| <dl> <dt>**HRESULT \_ DESDE \_ WIN32(RUTA DE ACCESO DE ERROR \_ \_ NO \_ ENCONTRADA)**</dt> <dt>0X80070003</dt> </dl> | El sistema no puede encontrar la ruta de acceso especificada por el *parámetro convertedDiskImagePath* o uno de los discos primarios no es válido.<br/> |
+| <dl> <dt>**E \_ AccessDENIED**</dt> <dt>0x80070005</dt> </dl>                               | El usuario actual no tiene acceso suficiente al archivo primario.<br/>                                                                 |
 | <dl> <dt>**E \_ Identificador**</dt> <dt>0x80070006</dt> </dl>                                     | Uno de los discos primarios está en uso.<br/>                                                                                           |
 | <dl> <dt>**Máquina virtual \_ E \_ VM \_ UNKNOWN**</dt> <dt>0xA0040207</dt> </dl>                            | La configuración es desconocida.<br/>                                                                                                |
 | <dl> <dt>**Máquina virtual \_ E \_ MÁQUINA VIRTUAL EN \_ EJECUCIÓN**</dt> <dt>0XA0040500</dt> </dl>                            | La máquina virtual se está ejecutando.<br/>                                                                                              |
@@ -82,7 +82,7 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
@@ -93,7 +93,7 @@ Este método puede devolver uno de estos valores.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

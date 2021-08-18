@@ -1,21 +1,21 @@
 ---
-description: Para recuperar una lista de proveedores que han instalado el manifiesto o las clases MOF en el equipo, llame a la función TdhEnumerateProviders.
+description: Para recuperar una lista de proveedores que han instalado sus clases de manifiesto o MOF en el equipo, llame a la función TdhEnumerateProviders.
 ms.assetid: 79a29a55-e211-4921-ac78-a21ef8ef238f
 title: Enumeración de proveedores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63f12ba5ad17816ada25bcaffd169e89acca8868
-ms.sourcegitcommit: 3d9dce1bd6c84e2b51759e940aa95aa9b459cd20
+ms.openlocfilehash: a1b93bcecbd1713a2945ea97703a77ab33629987f989505dea9498d03b7cb17c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "104279840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755075"
 ---
 # <a name="enumerating-providers"></a>Enumeración de proveedores
 
-Para recuperar una lista de proveedores que han instalado el manifiesto o las clases MOF en el equipo, llame a la función [**TdhEnumerateProviders**](/windows/desktop/api/Tdh/nf-tdh-tdhenumerateproviders) .
+Para recuperar una lista de proveedores que han instalado sus clases de manifiesto o MOF en el equipo, llame a la [**función TdhEnumerateProviders.**](/windows/desktop/api/Tdh/nf-tdh-tdhenumerateproviders)
 
-En el ejemplo siguiente se muestra cómo enumerar los proveedores.
+En el ejemplo siguiente se muestra cómo enumerar proveedores.
 
 
 ```C++

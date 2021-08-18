@@ -2,7 +2,7 @@
 description: El método TakeOwnerShip obtiene la propiedad del archivo lógico que se especifica en la ruta de acceso del objeto.
 ms.assetid: 0835c335-0ada-44c1-9e71-44ba2041d8e2
 ms.tgt_platform: multiple
-title: Método TakeOwnerShip de la clase CIM_DataFile
+title: Método TakeOwnerShip de la CIM_DataFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1ade501db9b6af21b3761b70f638faa20d699401
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: abf1965c82c810400921d9a6bb3e4e64551338bd40d7289e4863bab10abd189d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751875"
 ---
-# <a name="takeownership-method-of-the-cim_datafile-class"></a>Método TakeOwnerShip de la \_ clase de archivo de archivos CIM
+# <a name="takeownership-method-of-the-cim_datafile-class"></a>Método TakeOwnerShip de la clase \_ DataFile de CIM
 
-El método **TakeOwnerShip** obtiene la propiedad del archivo lógico que se especifica en la ruta de acceso del objeto. Si el archivo lógico es un directorio, este método actuará de forma recursiva y tomará la propiedad de todos los archivos y subdirectorios que contenga el directorio. Este método se hereda de [**\_ LogicalFile CIM**](cim-logicalfile.md).
+El **método TakeOwnerShip** obtiene la propiedad del archivo lógico que se especifica en la ruta de acceso del objeto. Si el archivo lógico es un directorio, este método actuará de forma recursiva, tomando posesión de todos los archivos y subdirectorios que contiene el directorio. Este método se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, vea [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 si se ejecuta correctamente y cualquier otro número para indicar un error. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve un valor de 0 si se ejecuta correctamente y cualquier otro número para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -61,7 +61,7 @@ Correcto.
 **2**
 </dt> <dd>
 
-Acceso denegado.
+Acceso denegado:
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ El objeto ya existe.
 **11**
 </dt> <dd>
 
-Sistema de archivos no NTFS.
+El sistema de archivos no es NTFS.
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ Archivo de inicio no válido.
 **17**
 </dt> <dd>
 
-Privilegio no mantenido.
+Privilegios no mantenidos.
 
 </dd> <dt>
 
@@ -142,11 +142,11 @@ Parámetro no válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-WMI implementa el método **TakeOwnerShip** en el [**archivo de \_ archivos de CIM**](cim-datafile.md) .
+WMI **implementa el método TakeOwnerShip** en CIM [**\_ DataFile.**](cim-datafile.md)
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -156,8 +156,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -166,13 +166,13 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[\_Archivo de archivos CIM](takeownership-method-in-class-cim-datafile.md)
+[CIM \_ DataFile](takeownership-method-in-class-cim-datafile.md)
 </dt> <dt>
 
-[**\_Archivo de archivos CIM**](cim-datafile.md)
+[**CIM \_ DataFile**](cim-datafile.md)
 </dt> <dt>
 
-[Tareas de WMI: archivos y carpetas](/windows/desktop/WmiSdk/wmi-tasks--files-and-folders)
+[Tareas wmi: archivos y carpetas](/windows/desktop/WmiSdk/wmi-tasks--files-and-folders)
 </dt> <dt>
 
 [**Constantes de derechos de acceso a archivos y directorios**](/windows/desktop/WmiSdk/file-and-directory-access-rights-constants)

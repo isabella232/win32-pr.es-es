@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentOutOfBuffersException'
-title: Constructor de EsentOutOfBuffersException
+description: 'Más información sobre: Constructor EsentOutOfBuffersException'
+title: Constructor EsentOutOfBuffersException
 TOCTitle: 'EsentOutOfBuffersException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentOutOfBuffersException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentoutofbuffersexception.esentoutofbuffersexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 78fecfe7277470c8423a6657df58ce343515a7d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81b0f88ee8c5fd883636512e2fd73c11f41b879582da50c5d0ea294ba9402c8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119478475"
 ---
-# <a name="esentoutofbuffersexception-constructor"></a>Constructor de EsentOutOfBuffersException
+# <a name="esentoutofbuffersexception-constructor"></a>Constructor EsentOutOfBuffersException
 
 Inicializa una nueva instancia de la clase EsentOutOfBuffersException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentOutOfBuffersException()
 public EsentOutOfBuffersException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentOutOfBuffersException()
 
 [Miembros de EsentOutOfBuffersException](./esentoutofbuffersexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

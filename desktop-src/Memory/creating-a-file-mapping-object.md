@@ -4,12 +4,12 @@ ms.assetid: e00d8742-b717-419c-902c-9a286d75d8aa
 title: Crear un objeto de asignación de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c54e32f62be48f2957e2f3d6f12a3da91b49793e
-ms.sourcegitcommit: 5f0167ce703bc477a11c3b58db04df99c8fd5000
+ms.openlocfilehash: 8e22fc60de9797f8b84fcc12639d39b9f07e7b0d61d905aaeccc1b7f6aa19220
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "111563221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067895"
 ---
 # <a name="creating-a-file-mapping-object"></a>Crear un objeto de asignación de archivos
 
@@ -26,15 +26,15 @@ La creación de un objeto de asignación de archivos no confirma la memoria fís
 
 ## <a name="file-mapping-size"></a>Tamaño de asignación de archivos
 
-El tamaño del objeto de asignación de archivos es independiente del tamaño del archivo que se va a asignar. Sin embargo, si el objeto de asignación de archivos es mayor que el archivo, el sistema expande el archivo antes de que se devuelva [**CreateFileMapping.**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) Si el objeto de asignación de archivos es menor que el archivo, el sistema asigna solo el número especificado de bytes del archivo.
+El tamaño del objeto de asignación de archivos es independiente del tamaño del archivo que se está asignando. Sin embargo, si el objeto de asignación de archivos es mayor que el archivo, el sistema expande el archivo antes de que [**vuelva CreateFileMapping.**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) Si el objeto de asignación de archivos es menor que el archivo, el sistema asigna solo el número especificado de bytes del archivo.
 
 Los *parámetros dwMaximumSizeHigh* y *dwMaximumSizeLow* de [**CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) permiten especificar el número de bytes que se asignarán desde el archivo:
 
 -   Si no desea que cambie el tamaño del archivo (por ejemplo, al asignar archivos de solo lectura), llame a [**CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) y especifique cero para *dwMaximumSizeHigh* y *dwMaximumSizeLow*. Al hacerlo, se crea un objeto de asignación de archivos que tiene exactamente el mismo tamaño que el archivo. De lo contrario, debe calcular o calcular el tamaño del archivo terminado porque los objetos de asignación de archivos tienen un tamaño estático; una vez creado, su tamaño no se puede aumentar ni disminuir. Se produce un error al intentar asignar un archivo con una longitud de cero de esta manera con un código de error **de ARCHIVO DE ERROR NO \_ \_ VÁLIDO.** Los programas deben probar archivos con una longitud de cero y rechazar dichos archivos.
 
--   El tamaño de un objeto de asignación de archivos que está respaldo por un archivo con nombre está limitado por el espacio en disco. El tamaño de una vista de archivo se limita al bloque contiguo más grande disponible de memoria virtual no conservada. Esto es como máximo 2 GB menos la memoria virtual ya reservada por el proceso.
+-   El tamaño de un objeto de asignación de archivos con el respaldo de un archivo con nombre está limitado por el espacio en disco. El tamaño de una vista de archivo se limita al bloque contiguo más grande disponible de memoria virtual no conservada. Esto es como máximo 2 GB menos la memoria virtual ya reservada por el proceso.
 
-El tamaño del objeto de asignación de archivos que seleccione controla hasta qué punto puede "ver" el archivo con la asignación de memoria. Si crea un objeto de asignación de archivos de 500 Kb de tamaño, solo tendrá acceso a los primeros 500 Kb del archivo, independientemente del tamaño del archivo. Dado que no le cuesta ningún recurso del sistema crear un objeto de asignación de archivos mayor, cree un objeto de asignación de archivos que tenga el tamaño del archivo (establezca los parámetros *dwMaximumSizeHigh* y *dwMaximumSizeLow* de [**CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) ambos en cero) incluso si no espera ver todo el archivo. El costo de los recursos del sistema se produce al crear las vistas y acceder a ellas.
+El tamaño del objeto de asignación de archivos que seleccione controla hasta qué punto puede "ver" el archivo con la asignación de memoria. Si crea un objeto de asignación de archivos con un tamaño de 500 Kb, solo tendrá acceso a los primeros 500 Kb del archivo, independientemente del tamaño del archivo. Dado que no le cuesta ningún recurso del sistema crear un objeto de asignación de archivos mayor, cree un objeto de asignación de archivos que tenga el tamaño del archivo (establezca los parámetros *dwMaximumSizeHigh* y *dwMaximumSizeLow* de [**CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) ambos en cero) incluso si no espera ver todo el archivo. El costo de los recursos del sistema se produce al crear las vistas y acceder a ellas.
 
 Puede ver una parte del archivo que no se inicia al principio del archivo. Para obtener más información, [vea Crear una vista dentro de un archivo](creating-a-view-within-a-file.md).
 

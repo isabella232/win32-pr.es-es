@@ -20,7 +20,7 @@ ms.locfileid: "118962934"
 En un canal seguro, solo los mensajes que pasan correctamente comprobaciones de seguridad se entregan a la aplicación. Para estos mensajes, algunos resultados de la comprobación de seguridad se adjuntan como propiedades del mensaje y la aplicación puede extraer y examinar estas propiedades para realizar pasos adicionales, como comprobaciones de autorización.
 
 
-La función [**WsGetMessageProperty**](/windows/desktop/api/WebServices/nf-webservices-wsgetmessageproperty) se puede usar para recuperar cualquiera de las propiedades relacionadas con la seguridad definidas en el identificador de [**propiedad de WS \_ MESSAGE \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_message_property_id). **WsGetMessageProperty** devuelve un error para las consultas que solicitan propiedades de seguridad no aplicables al tipo de seguridad utilizado en el canal. El mensaje sigue siendo propietario de las propiedades devueltas por la función de consulta.
+La función [**WsGetMessageProperty**](/windows/desktop/api/WebServices/nf-webservices-wsgetmessageproperty) se puede usar para recuperar cualquiera de las propiedades relacionadas con la seguridad definidas en [**WS \_ MESSAGE PROPERTY \_ \_ ID**](/windows/desktop/api/WebServices/ne-webservices-ws_message_property_id). **WsGetMessageProperty** devuelve un error para las consultas que solicitan propiedades de seguridad no aplicables al tipo de seguridad utilizado en el canal. El mensaje sigue siendo propietario de las propiedades devueltas por la función de consulta.
 
 Los siguientes elementos de API se usan con los resultados del procesamiento de seguridad.
 

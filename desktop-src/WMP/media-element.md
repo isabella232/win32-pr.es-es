@@ -62,7 +62,7 @@ El **elemento multimedia** especifica uno de los elementos multimedia de una lis
 
 ## <a name="remarks"></a>Observaciones
 
-El **atributo cid** (el identificador de contenido) se rellena mediante el Reproductor de Windows Media como una manera de identificar de forma única un fragmento de contenido multimedia incluso si se han cambiado sus atributos de metadatos. Esto permite el uso compartido de listas de reproducción entre equipos, ya que el contenido se puede identificar en otro equipo y la ruta de acceso a él puede ser "reparada automáticamente" por la lista de reproducción multimedia de Windows. El **atributo tid** (el identificador de seguimiento) usa el sistema de archivos Windows para reparar automáticamente la ruta de acceso al medio si se cambia el nombre o la ubicación del archivo.
+El **atributo cid** (el identificador de contenido) se rellena mediante el Reproductor de Windows Media como una manera de identificar de forma única un fragmento de contenido multimedia incluso si se han cambiado sus atributos de metadatos. Esto permite compartir listas de reproducción entre equipos, ya que el contenido se puede identificar en otro equipo y la ruta de acceso a él se puede "reparar automáticamente" mediante la lista de reproducción de Windows Media. El **atributo tid** (el identificador de seguimiento) usa el sistema de archivos Windows para reparar automáticamente la ruta de acceso al medio si se cambia el nombre o la ubicación del archivo.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -82,13 +82,13 @@ El **atributo cid** (el identificador de contenido) se rellena mediante el Repro
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|----------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

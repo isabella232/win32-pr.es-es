@@ -1,30 +1,30 @@
 ---
-description: Un mensaje de WS-Discovery enviado en respuesta a un mensaje de resolución de los clientes por un servicio coincidente.
+description: Un WS-Discovery mensaje enviado en respuesta a un cliente Resolver mensaje por un servicio correspondiente.
 ms.assetid: 0eaa4348-968e-4b45-9509-8b15476edaa1
 title: Mensaje ResolveMatches
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40ab5c0d66541b93eeee13966d686c94eef9364d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1daffe985f3956e57ad69fd7c4fc4d199f0b24bd5fdab5677b7ef83765e5fcdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119756805"
 ---
 # <a name="resolvematches-message"></a>Mensaje ResolveMatches
 
-Un mensaje de ResolveMatches es un mensaje WS-Discovery enviado en respuesta al mensaje de [resolución](resolve-message.md) de un cliente mediante un servicio coincidente. Para obtener más información acerca de los mensajes de ResolveMatches, consulte la sección 6,2 de la [especificación WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
+Un mensaje ResolveMatches es WS-Discovery mensaje enviado en respuesta al mensaje [Resolve](resolve-message.md) de un cliente por un servicio correspondiente. Para obtener más información sobre los mensajes ResolveMatches, vea la sección 6.2 de la [especificación de WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
 
-Una unidifusión UDP envía un mensaje ResolveMatches al puerto 3702 (el puerto desde el que se envió el mensaje de [resolución](resolve-message.md) del cliente). ResolveMatches se debe enviar en los 4 segundos del mensaje de resolución; de lo contrario, el Firewall de Windows puede quitar el paquete.
+Unidifusión UDP envía un mensaje ResolveMatches al puerto 3702 (el puerto desde el que se envió el mensaje [Resolver](resolve-message.md) del cliente). ResolveMatches debe enviarse en un plazo de 4 segundos a partir del mensaje Resolver; de lo contrario, Windows Firewall puede quitar el paquete.
 
-Cualquier aplicación DPWS que envíe mensajes de [resolución](resolve-message.md) recibirá mensajes ResolveMatches.
+Cualquier aplicación DPWS que envíe [los mensajes Resolver](resolve-message.md) recibirá mensajes ResolveMatches.
 
 > [!Note]  
-> En este tema se muestra un mensaje de DPWS de ejemplo generado por los clientes y hosts de WSDAPI. WSDAPI analizará y aceptará otros mensajes conformes a DPWS que no se ajusten a este ejemplo. No use este ejemplo para comprobar la interoperabilidad de DPWS; en su lugar, use la [herramienta de interoperabilidad básica de WSDAPI (WSDBIT)](https://msdn.microsoft.com/library/cc264250.aspx) .
+> En este tema se muestra un mensaje DPWS de ejemplo generado por clientes y hosts de WSDAPI. WSDAPI analizará y aceptará otros mensajes compatibles con DPWS que no se ajusten a este ejemplo. No use este ejemplo para comprobar la interoperabilidad de DPWS; use la herramienta de interoperabilidad básica de [WSDAPI (WSDBIT) en](https://msdn.microsoft.com/library/cc264250.aspx) su lugar.
 
  
 
-El siguiente mensaje SOAP muestra un mensaje de ResolveMatches de ejemplo.
+El siguiente mensaje SOAP muestra un mensaje ResolveMatches de ejemplo.
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8" ?>
@@ -100,7 +100,7 @@ Un mensaje ResolveMatches tiene los siguientes puntos de enfoque.
 <td><pre class="syntax" data-space="preserve"><code><wsa:RelatesTo>
     urn:uuid:38d1c3d9-8d73-4424-8861-6b7ee2af24d3
 </wsa:RelatesTo></code></pre></td>
-<td>Identificador del mensaje al que responde el servicio. Este encabezado coincide con el MessageId del mensaje de <a href="resolve-message.md">resolución</a> .</td>
+<td>Identificador del mensaje al que responde el servicio. Este encabezado coincide con el MessageId del <a href="resolve-message.md">mensaje Resolver.</a></td>
 </tr>
 <tr class="odd">
 <td>AppSequence</td>
@@ -108,21 +108,21 @@ Un mensaje ResolveMatches tiene los siguientes puntos de enfoque.
     SequenceId=&quot;urn:uuid:369a7d7b-5f87-48a4-aa9a-189edf2a8772&quot;
     MessageNumber=&quot;6&quot;>
 </wsd:AppSequence></code></pre></td>
-<td>Contiene información de secuenciación de aplicaciones, que ayuda a mantener la secuencia de mensajes incluso si se reciben desordenados. El AppSequence se valida como se describe en <a href="appsequence-validation-rules.md">reglas de validación de AppSequence</a>.</td>
+<td>Contiene información de secuenciación de la aplicación, que ayuda a mantener la secuencia de mensajes incluso si se reciben sin orden. AppSequence se valida como se describe en <a href="appsequence-validation-rules.md">Reglas de validación de AppSequence</a>.</td>
 </tr>
 <tr class="even">
 <td>Dirección</td>
 <td><pre class="syntax" data-space="preserve"><code><wsa:Address>
     urn:uuid:37f86d35-e6ac-4241-964f-1d9ae46fb366
 </wsa:Address></code></pre></td>
-<td>Contiene la dirección del extremo que se está resolviendo.</td>
+<td>Contiene la dirección del punto de conexión que se va a resolver.</td>
 </tr>
 <tr class="odd">
 <td>XAddrs</td>
 <td><pre class="syntax" data-space="preserve"><code><wsd:XAddrs>
     https://192.168.0.2:5357/37f86d35-e6ac-4241-964f-1d9ae46fb366
 </wsd:XAddrs></code></pre></td>
-<td>XAddrs son direcciones de transporte que se pueden usar para la comunicación entre el cliente y el servicio. Las direcciones se validan como se describe en <a href="xaddr-validation-rules.md">reglas de validación de XAddr</a>.</td>
+<td>XAddrs son direcciones de transporte que se pueden usar para la comunicación entre el cliente y el servicio. Los adidores se validan como se <a href="xaddr-validation-rules.md">describe en Reglas de validación de XAddr</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -135,7 +135,7 @@ Un mensaje ResolveMatches tiene los siguientes puntos de enfoque.
 
 <dl> <dt>
 
-[Mensajes de intercambio de metadatos y detección](discovery-and-metadata-exchange-message-patterns.md)
+[Mensajes de detección y Exchange metadatos](discovery-and-metadata-exchange-message-patterns.md)
 </dt> <dt>
 
 [Resolver mensaje](resolve-message.md)
