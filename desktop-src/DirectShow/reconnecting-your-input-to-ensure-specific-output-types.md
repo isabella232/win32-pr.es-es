@@ -4,25 +4,25 @@ ms.assetid: c83d002e-59bf-4d03-9917-e39ceab9a4ce
 title: Volver a conectar la entrada para garantizar tipos de salida específicos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d74d6914989231542ddfea9f97e93ce860d34eb4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 299d8aa400619043cc0d79242e35065ac4fc8490aad4972a33be6aea8fc4e7b7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104422846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747315"
 ---
 # <a name="reconnecting-your-input-to-ensure-specific-output-types"></a>Volver a conectar la entrada para garantizar tipos de salida específicos
 
-Los filtros implementan el método [**IAMStreamConfig:: SetFormat**](/windows/desktop/api/Strmif/nf-strmif-iamstreamconfig-setformat) para establecer el formato de audio o vídeo antes de que se conecten los PIN del filtro. Si el PIN de salida ya está conectado y puede proporcionar un nuevo tipo, vuelva a conectar el PIN, pero solo si el otro filtro puede aceptar el tipo nuevo. Si el otro filtro no puede aceptar el tipo de medio, se produce un error en la llamada a **SetFormat** y se deja la conexión solo.
+Los filtros implementan [**el método IAMStreamConfig::SetFormat**](/windows/desktop/api/Strmif/nf-strmif-iamstreamconfig-setformat) para establecer el formato de audio o vídeo antes de que se conecten los pines del filtro. Si el pin de salida ya está conectado y puede proporcionar un nuevo tipo, vuelva a conectar el pin, pero solo si el otro filtro puede aceptar el nuevo tipo. Si el otro filtro no puede aceptar el tipo de medio, se producirá un error en la llamada a **SetFormat** y deje la conexión sola.
 
-Un filtro de transformación no puede tener ningún tipo de salida preferido a menos que el PIN de entrada esté conectado. En ese caso, los métodos **SetFormat** y [**IAMStreamConfig:: GETSTREAMCAPS**](/windows/desktop/api/Strmif/nf-strmif-iamstreamconfig-getstreamcaps) deben devolver VFW \_ E \_ no \_ conectado hasta que el PIN de entrada esté conectado. De lo contrario, estos métodos pueden funcionar como de costumbre.
+Es posible que un filtro de transformación no tenga ningún tipo de salida preferido a menos que su pin de entrada esté conectado. En ese caso, los **métodos SetFormat** y [**IAMStreamConfig::GetStreamCaps**](/windows/desktop/api/Strmif/nf-strmif-iamstreamconfig-getstreamcaps) deben devolver VFW E NOT CONNECTED hasta que se conecte \_ el pin de \_ \_ entrada. De lo contrario, estos métodos pueden funcionar como de costumbre.
 
-En ciertos casos, resulta útil volver a conectar los pin cuando se ofrece un formato en una conexión establecida. Por ejemplo, supongamos que un filtro puede comprimir vídeo RGB de 24 bits en formato X y que puede comprimir vídeo RGB de 8 bits en formato Y. El PIN de salida puede realizar una de las siguientes acciones:
+En determinados casos, resulta útil volver a conectar los pines cuando se ofrece un formato en una conexión establecida. Por ejemplo, supongamos que un filtro puede comprimir vídeo RGB de 24 bits en el formato X y que puede comprimir vídeo RGB de 8 bits en el formato Y. El pin de salida puede realizar una de las siguientes acciones:
 
--   Siempre ofrezca X e y en **GetStreamCaps** y acepte siempre x e y en **SetFormat**.
--   Ofrezca y acepte simplemente Format X si el tipo de entrada es RGB de 24 bits. Ofrezca y acepte solo el formato Y si el tipo de entrada RGB de 8 bits. Se produce un error en ambos métodos si el PIN de entrada no está conectado.
+-   Ofrezca siempre X e Y en **GetStreamCaps** y acepte siempre X e Y en **SetFormat.**
+-   Ofrezca y acepte solo el formato X si el tipo de entrada es RGB de 24 bits. Ofrezca y acepte solo el formato Y si el tipo de entrada es RGB de 8 bits. Se producirá un error en ambos métodos si el pin de entrada no está conectado.
 
-En cualquier caso, necesitará algún código de reconexión que tenga el siguiente aspecto:
+En cualquier caso, necesitará un código de reconexión similar al siguiente:
 
 
 ```C++

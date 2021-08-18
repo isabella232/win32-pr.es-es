@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: SystemParameters. LegacyFileNames (propiedad)'
-title: Propiedad SystemParameters. LegacyFileNames
+description: 'Más información sobre: Propiedad SystemParameters.LegacyFileNames'
+title: Propiedad SystemParameters.LegacyFileNames
 TOCTitle: 'LegacyFileNames property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.SystemParameters.LegacyFileNames
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.legacyfilenames(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 57dd9987ff419d889f80795d07e16c28ef46dc39
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 73739bda83f83eddbbfa090925b873d78aaeaa1dcdbcce9c527e5467f0f0acf6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015965"
 ---
-# <a name="systemparameterslegacyfilenames-property"></a>Propiedad SystemParameters. LegacyFileNames
+# <a name="systemparameterslegacyfilenames-property"></a>Propiedad SystemParameters.LegacyFileNames
 
-Obtiene o establece la compatibilidad con versiones anteriores de las convenciones de nomenclatura de los archivos de las versiones anteriores del motor de base de datos.
+Obtiene o establece la compatibilidad con versiones anteriores con las convenciones de nomenclatura de archivos de versiones anteriores del motor de base de datos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -61,7 +61,7 @@ public static int LegacyFileNames { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -69,6 +69,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [SystemParameters (clase)](./systemparameters-class.md)
 
-[Miembros de SystemParameters](./systemparameters-members.md)
+[Miembros SystemParameters](./systemparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

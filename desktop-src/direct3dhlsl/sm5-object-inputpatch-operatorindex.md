@@ -1,6 +1,6 @@
 ---
-title: 'InputPatch:: Operator (función)'
-description: 'Devuelve el n punto de control de la revisión. | InputPatch:: Operator (función)'
+title: InputPatch::Operator (Función)
+description: Devuelve el enésimo punto de control de la revisión. | InputPatch::Operator (Función)
 ms.assetid: 2c1eda6b-a9c1-40d3-be91-7a2e8f1da9fc
 keywords:
 - Función de operador HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5d95cb8adae6e7a91629614e0ae10b4161dbac3f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 81c768d138f6ee1853f9930a56f1a1864b468e8be9ff421f4dba1698b790053c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986035"
 ---
-# <a name="inputpatchoperator--function"></a>InputPatch:: Operator (función)
+# <a name="inputpatchoperator--function"></a>InputPatch::Operator (Función)
 
-Devuelve el punto <sup>de control</sup> *n* de la revisión.
+Devuelve el<sup>n.º</sup> punto de control de la revisión. 
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,7 +36,7 @@ T Operator[](
 
 <dl> <dt>
 
-*n* \[ in\]
+*n* \[ en\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -49,15 +49,15 @@ Tipo: **uint**
 
 Tipo: **T**
 
-Punto <sup>de control</sup> n.
+El <sup>n.º</sup> punto de control.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        | x    |        |          |       |         |
 
@@ -72,7 +72,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 [InputPatch](sm5-object-inputpatch.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

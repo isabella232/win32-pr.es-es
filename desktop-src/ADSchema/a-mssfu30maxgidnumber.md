@@ -1,11 +1,11 @@
 ---
-title: msSFU-30-Max-GID-atributo de número
-description: Contiene el número máximo de grupos migrados a un dominio NIS.
+title: Atributo msSFU-30-Max-Gid-Number
+description: Contiene el número máximo de grupos migrados a un dominio de NIS.
 ms.assetid: 21dccde4-202f-4791-bff2-553dcd4fcdfc
 ms.tgt_platform: multiple
 keywords:
-- msSFU-30-Max-GID-atributo de número esquema de AD
-- msSFU30MaxGidNumber esquema de AD de atributos
+- Esquema de AD del atributo msSFU-30-Max-Gid-Number
+- Esquema de AD del atributo msSFU30MaxGidNumber
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9740ad6218966eefae5e1a72a8fd93c9140298f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a70ca8e2d8b7960b929e1b76e9688b9c76e2fb8f505e345a64f7eb7442181a7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997535"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022633"
 ---
-# <a name="mssfu-30-max-gid-number-attribute"></a>msSFU-30-Max-GID-atributo de número
+# <a name="mssfu-30-max-gid-number-attribute"></a>Atributo msSFU-30-Max-Gid-Number
 
-Contiene el número máximo de grupos migrados a un dominio NIS.
+Contiene el número máximo de grupos migrados a un dominio de NIS.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | msSFU-30-Max-GID-número              |
-| Nombre para mostrar de LDAP | msSFU30MaxGidNumber                  |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | msSFU-30-Max-Gid-Number              |
+| Ldap-Display-Name | msSFU30MaxGidNumber                  |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.342          |
-| System-ID-GUID    | 04ee6aa6-f83b-469a-bf5a-3c00d3634669 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 04ee6aa6-f83b-469a-bf5a-3c00d3634669 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -53,18 +53,18 @@ Contiene el número máximo de grupos migrados a un dominio NIS.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ Contiene el número máximo de grupos migrados a un dominio NIS.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -95,18 +95,18 @@ Contiene el número máximo de grupos migrados a un dominio NIS.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -116,18 +116,18 @@ Contiene el número máximo de grupos migrados a un dominio NIS.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 

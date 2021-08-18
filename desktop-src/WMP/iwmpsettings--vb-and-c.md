@@ -1,10 +1,10 @@
 ---
-title: Interfaz IWMPSettings (VB y C) (WMP. h)
-description: Proporciona propiedades y métodos que obtienen o establecen los valores de configuración de Windows Media Player. La interfaz IWMPSettings expone las siguientes propiedades.
+title: Interfaz IWMPSettings (VB y C) (Wmp.h)
+description: Proporciona propiedades y métodos que obtienen o establecen los valores de Reproductor de Windows Media configuración. La interfaz IWMPSettings expone las siguientes propiedades.
 ms.assetid: fb37b455-221e-4cee-a219-cacf2938a92a
 keywords:
-- IWMPSettings (VB y C) interfaz de Windows Media Player
-- IWMPSettings (VB y C) interfaz de Windows Media Player, se describe
+- Interfaz IWMPSettings (VB y C) Reproductor de Windows Media
+- Interfaz IWMPSettings (VB y C) Reproductor de Windows Media , descrita
 topic_type:
 - apiref
 api_name:
@@ -15,36 +15,36 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db911cc6d18ba40777e77a803480c7fcab4ff8ad
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6a537efcd9b39f993705244020e579b9d667164180fd5cd70ab05fc692bed8fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996475"
 ---
 # <a name="iwmpsettings-vb-and-c-interface"></a>Interfaz IWMPSettings (VB y C#)
 
-Proporciona propiedades y métodos que obtienen o establecen los valores de configuración de Windows Media Player.
+Proporciona propiedades y métodos que obtienen o establecen los valores de Reproductor de Windows Media configuración.
 
-La interfaz **IWMPSettings** expone las siguientes propiedades.
+La **interfaz IWMPSettings** expone las siguientes propiedades.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IWMPSettings (VB y C#)** tiene estos tipos de miembros:
+La **interfaz IWMPSettings (VB y C#)** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IWMPSettings (VB y C#)** tiene estos métodos.
+La **interfaz IWMPSettings (VB y C#)** tiene estos métodos.
 
 
 
 | Método                                                               | Descripción                                                                        |
 |:---------------------------------------------------------------------|:-----------------------------------------------------------------------------------|
-| [**getMode**](wmplibiwmpsettings-iwmpsettings-getmode--vb-and-c.md) | Devuelve un valor que indica si el modo de bucle o el modo de orden aleatorio está activo.<br/> |
-| [**setMode**](wmplibiwmpsettings-iwmpsettings-setmode--vb-and-c.md) | Establece el modo de bucle o el modo de orden aleatorio en activo o inactivo.<br/>               |
+| [**getMode**](wmplibiwmpsettings-iwmpsettings-getmode--vb-and-c.md) | Devuelve un valor que indica si el modo de bucle o el modo aleatorio están activos.<br/> |
+| [**setMode**](wmplibiwmpsettings-iwmpsettings-setmode--vb-and-c.md) | Establece el modo de bucle o el modo aleatorio en activo o inactivo.<br/>               |
 
 
 
@@ -52,29 +52,29 @@ La interfaz **IWMPSettings (VB y C#)** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La interfaz **IWMPSettings (VB y C#)** tiene estas propiedades.
+La **interfaz IWMPSettings (VB y C#)** tiene estas propiedades.
 
 
 
 | Propiedad                                                                                              | Tipo de acceso           | Descripción                                                                                                                                  |
 |:------------------------------------------------------------------------------------------------------|:----------------------|:---------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Automáticamente**](wmplibiwmpsettings-iwmpsettings-autostart--vb-and-c.md)<br/>                   | Lectura/escritura<br/> | Obtiene o establece un valor que indica si el elemento multimedia actual comienza a reproducirse automáticamente. <br/>                                     |
-| [**balancea**](wmplibiwmpsettings-iwmpsettings-balance--vb-and-c.md)<br/>                       | Lectura/escritura<br/> | Obtiene o establece el equilibrio estéreo actual.<br/>                                                                                          |
-| [**baseURL**](wmplibiwmpsettings-iwmpsettings-baseurl--vb-and-c.md)<br/>                       | Lectura/escritura<br/> | Obtiene o establece la dirección URL base que se usa para la resolución de la ruta de acceso relativa con comandos de script de dirección URL que están incrustados en el contenido multimedia digital. <br/> |
-| [**defaultFrame**](wmplibiwmpsettings-iwmpsettings-defaultframe--vb-and-c.md)<br/>             | Lectura/escritura<br/> | Obtiene o establece el nombre del marco que se usa para mostrar una dirección URL que se recibe en un evento **comando** . <br/>                          |
+| [**Autostart**](wmplibiwmpsettings-iwmpsettings-autostart--vb-and-c.md)<br/>                   | Lectura/escritura<br/> | Obtiene o establece un valor que indica si el elemento multimedia actual comienza a reproducirse automáticamente. <br/>                                     |
+| [**equilibrar**](wmplibiwmpsettings-iwmpsettings-balance--vb-and-c.md)<br/>                       | Lectura/escritura<br/> | Obtiene o establece el equilibrio estéreo actual.<br/>                                                                                          |
+| [**Baseurl**](wmplibiwmpsettings-iwmpsettings-baseurl--vb-and-c.md)<br/>                       | Lectura/escritura<br/> | Obtiene o establece la dirección URL base usada para la resolución de rutas de acceso relativas con comandos de script de dirección URL insertados en contenido multimedia digital. <br/> |
+| [**defaultFrame**](wmplibiwmpsettings-iwmpsettings-defaultframe--vb-and-c.md)<br/>             | Lectura/escritura<br/> | Obtiene o establece el nombre del marco utilizado para mostrar una dirección URL que se recibe en un **evento scriptCommand.** <br/>                          |
 | [**enableErrorDialogs**](wmplibiwmpsettings-iwmpsettings-enableerrordialogs--vb-and-c.md)<br/> | Lectura/escritura<br/> | Obtiene o establece un valor que indica si los cuadros de diálogo de error se muestran automáticamente.<br/>                                           |
-| [**invokeURLs**](wmplibiwmpsettings-iwmpsettings-invokeurls--vb-and-c.md)<br/>                 | Lectura/escritura<br/> | Obtiene o establece un valor que indica si los eventos de dirección URL deben iniciar un explorador Web. <br/>                                                  |
-| [**isAvailable**](iwmpsettings-isavailable--vb-and-c.md)<br/>                                  | Solo lectura<br/>  | Obtiene un valor que indica si se puede realizar una acción especificada. En C#, este es el método **Get \_ isavailable** .<br/>             |
-| [**silenciar**](wmplibiwmpsettings-iwmpsettings-mute--vb-and-c.md)<br/>                             | Lectura/escritura<br/> | Obtiene o establece un valor que indica si el audio está silenciado. <br/>                                                                          |
+| [**invokeURLs**](wmplibiwmpsettings-iwmpsettings-invokeurls--vb-and-c.md)<br/>                 | Lectura/escritura<br/> | Obtiene o establece un valor que indica si los eventos de dirección URL deben iniciar un explorador web. <br/>                                                  |
+| [**Isavailable**](iwmpsettings-isavailable--vb-and-c.md)<br/>                                  | Solo lectura<br/>  | Obtiene un valor que indica si se puede realizar una acción especificada. En C#, este es el **método \_ get isAvailable.**<br/>             |
+| [**Mudo**](wmplibiwmpsettings-iwmpsettings-mute--vb-and-c.md)<br/>                             | Lectura/escritura<br/> | Obtiene o establece un valor que indica si el audio está silenciado. <br/>                                                                          |
 | [**playCount**](wmplibiwmpsettings-iwmpsettings-playcount--vb-and-c.md)<br/>                   | Lectura/escritura<br/> | Obtiene o establece el número de veces que se reproducirá un elemento multimedia. <br/>                                                                         |
-| [**Rate**](wmplibiwmpsettings-iwmpsettings-rate--vb-and-c.md)<br/>                             | Lectura/escritura<br/> | Obtiene o establece la velocidad de reproducción actual del vídeo. <br/>                                                                                |
-| [**cantidad**](wmplibiwmpsettings-iwmpsettings-volume--vb-and-c.md)<br/>                         | Lectura/escritura<br/> | Obtiene o establece el volumen de reproducción actual. <br/>                                                                                        |
+| [**Tasa**](wmplibiwmpsettings-iwmpsettings-rate--vb-and-c.md)<br/>                             | Lectura/escritura<br/> | Obtiene o establece la velocidad de reproducción actual del vídeo. <br/>                                                                                |
+| [**Volumen**](wmplibiwmpsettings-iwmpsettings-volume--vb-and-c.md)<br/>                         | Lectura/escritura<br/> | Obtiene o establece el volumen de reproducción actual. <br/>                                                                                        |
 
 
 
  
 
-Obtenga una interfaz **IWMPSettings** con la siguiente propiedad.
+Obtenga una **interfaz IWMPSettings** mediante la siguiente propiedad.
 
 
 
@@ -92,7 +92,7 @@ Obtenga una interfaz **IWMPSettings** con la siguiente propiedad.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMP. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmp.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentMissingPatchPageException'
-title: Constructor de EsentMissingPatchPageException
+description: 'Más información sobre: Constructor EsentMissingPatchPageException'
+title: Constructor EsentMissingPatchPageException
 TOCTitle: 'EsentMissingPatchPageException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentMissingPatchPageException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentmissingpatchpageexception.esentmissingpatchpageexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0b52ead7fcdac3e9ea1c61cfc9de59a652b27cd7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca165bebaf44611cdf20dc0e70794462f756231f805d08c2a14ce2e9c368492d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119734245"
 ---
-# <a name="esentmissingpatchpageexception-constructor"></a>Constructor de EsentMissingPatchPageException
+# <a name="esentmissingpatchpageexception-constructor"></a>Constructor EsentMissingPatchPageException
 
 Inicializa una nueva instancia de la clase EsentMissingPatchPageException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentMissingPatchPageException()
 public EsentMissingPatchPageException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentMissingPatchPageException()
 
 [Miembros de EsentMissingPatchPageException](./esentmissingpatchpageexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,19 +1,19 @@
 ---
-description: Las líneas de un cuadro de lista no se tratan como controles individuales, pero forman parte de un cuadro de lista que funciona como un control. La tabla ListBox define los valores para todos los cuadros de lista.
+description: Las líneas de un cuadro de lista no se tratan como controles individuales, pero forman parte de un cuadro de lista que funciona como un control . La tabla ListBox define los valores de todos los cuadros de lista.
 ms.assetid: 1963adcf-f682-4371-ab44-f91e90105dc0
-title: Tabla ListBox
+title: ListBox (tabla)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5f60fb6ac48860c7893b0320b54e6e54dcf1691
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b8877db002185cd675914eca6d5be38454796c7b50af6a48f88e0e63c10c195
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043195"
 ---
-# <a name="listbox-table"></a>Tabla ListBox
+# <a name="listbox-table"></a>ListBox (tabla)
 
-Las líneas de un cuadro de lista no se tratan como controles individuales, pero forman parte de un cuadro de lista que funciona como un control. La tabla ListBox define los valores para todos los cuadros de lista.
+Las líneas de un cuadro de lista no se tratan como controles individuales, pero forman parte de un cuadro de lista que funciona como un control . La tabla ListBox define los valores de todos los cuadros de lista.
 
 La tabla ListBox tiene las columnas siguientes.
 
@@ -23,8 +23,8 @@ La tabla ListBox tiene las columnas siguientes.
 |----------|------------------------------|-----|----------|
 | Propiedad | [Identificador](identifier.md) | Y   | N        |
 | Pedido    | [Entero](integer.md)       | Y   | N        |
-| Value    | [Formatea](formatted.md)   | N   | N        |
-| Texto     | [Formatea](formatted.md)   | N   | Y        |
+| Value    | [Formato](formatted.md)   | N   | N        |
+| Texto     | [Formato](formatted.md)   | N   | Y        |
 
 
 
@@ -37,34 +37,34 @@ La tabla ListBox tiene las columnas siguientes.
 <span id="Property"></span><span id="property"></span><span id="PROPERTY"></span>Propiedad
 </dt> <dd>
 
-Propiedad con nombre que se va a asociar a este elemento. Todos los elementos vinculados a la misma propiedad forman parte del mismo cuadro de lista.
+Propiedad con nombre que se va a vincular a este elemento. Todos los elementos vinculados a la misma propiedad forman parte del mismo cuadro de lista.
 
 </dd> <dt>
 
 <span id="Order"></span><span id="order"></span><span id="ORDER"></span>Orden
 </dt> <dd>
 
-Un entero positivo que se usa para determinar el orden de los elementos que aparecen en un solo cuadro de lista. Si el cuadro de lista se define como ordenado, todos los elementos deben tener un valor de orden. Los enteros no tienen que ser consecutivos. Si el cuadro de lista se define como sin ordenar, se omitirá esta columna.
+Entero positivo que se usa para determinar el orden de los elementos que aparecen en un único cuadro de lista. Si el cuadro de lista se define como ordenado, todos los elementos deben tener un valor Order. Los enteros no tienen que ser consecutivos. Si el cuadro de lista se define como desordenado, se omite esta columna.
 
 </dd> <dt>
 
 <span id="Value"></span><span id="value"></span><span id="VALUE"></span>Valor
 </dt> <dd>
 
-Cadena de valor asociada a este elemento. Al seleccionar la línea, se establece la propiedad asociada en este valor.
+Cadena de valor asociada a este elemento. Al seleccionar la línea se establece la propiedad asociada en este valor.
 
 </dd> <dt>
 
-<span id="Text"></span><span id="text"></span><span id="TEXT"></span>Negrita
+<span id="Text"></span><span id="text"></span><span id="TEXT"></span>Texto
 </dt> <dd>
 
-Texto visible localizable que se va a asignar al elemento. Si falta esta entrada o toda la columna, el valor predeterminado del texto es la entrada correspondiente en Value.
+Texto localizable y visible que se va a asignar al elemento. Si falta esta entrada o toda la columna, el texto tiene como valor predeterminado la entrada correspondiente en Valor.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función [**MsiFormatRecord**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda) da formato al contenido de los campos de texto y de valor cuando se crea el control, por lo que puede contener cualquier expresión que pueda interpretar la función **MsiFormatRecord** . El formato solo se produce cuando se crea el control y no se actualiza si se modifica una propiedad implicada en la expresión durante la vida del control.
+El contenido de los campos Value y Text tiene el formato de la función [**MsiFormatRecord**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda) cuando se crea el control, por lo que pueden contener cualquier expresión que la **función MsiFormatRecord** pueda interpretar. El formato solo se produce cuando se crea el control y no se actualiza si una propiedad implicada en la expresión se modifica durante la vida del control.
 
 ## <a name="validation"></a>Validación
 

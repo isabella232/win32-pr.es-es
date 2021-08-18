@@ -1,9 +1,9 @@
 ---
 title: Evento OpenPlaylistSwitch del objeto AxWindowsMediaPlayer
-description: El evento OpenPlaylistSwitch se produce cuando comienza a reproducirse un título en un DVD. | Evento OpenPlaylistSwitch del objeto AxWindowsMediaPlayer
+description: El evento OpenPlaylistSwitch tiene lugar cuando un título de un DVD comienza a reproducirse. | Evento OpenPlaylistSwitch del objeto AxWindowsMediaPlayer
 ms.assetid: 0b9c37a3-1349-48bd-8e1a-aba286c82abf
 keywords:
-- Evento OpenPlaylistSwitch del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento OpenPlaylistSwitch del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 338d360944b46555be53d5e212561cf906dd33c9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c57341488c385b159ce294626a79b7e22287bff83864f7273b0f4432c1db95ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764705"
 ---
 # <a name="openplaylistswitch-event-of-the-axwindowsmediaplayer-object"></a>Evento OpenPlaylistSwitch del objeto AxWindowsMediaPlayer
 
-El evento OpenPlaylistSwitch se produce cuando comienza a reproducirse un título en un DVD.
+El evento OpenPlaylistSwitch tiene lugar cuando un título de un DVD comienza a reproducirse.
 
 ``` syntax
 [C#]
@@ -47,7 +47,7 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad  | Descripción                                                                                                         |
 |-----------|---------------------------------------------------------------------------------------------------------------------|
-| **pItem** | System. ObjectObject que representa el título. Puede convertirlo en una interfaz IWMPPlaylist para tener acceso a él.<br/> |
+| **pItem** | System.ObjectObject que representa el título. Puede convertir esto en una interfaz IWMPPlaylist para acceder a ella.<br/> |
 
 
 
@@ -59,7 +59,7 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

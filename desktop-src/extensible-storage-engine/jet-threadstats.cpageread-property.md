@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_THREADSTATS. cPageRead'
-title: Propiedad JET_THREADSTATS. cPageRead (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: JET_THREADSTATS.cPageRead'
+title: JET_THREADSTATS.cPageRead (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'cPageRead property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS.cPageRead
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_threadstats.cpageread(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4c5a8ed28a4f45abe57ca71eff89ab2ce374bf0d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc2dbc98adb0299cc5d409e4bbb278a9a82ac51d2f19121d8f6d46b0371e6927
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832635"
 ---
-# <a name="jet_threadstatscpageread-property"></a>Propiedad JET_THREADSTATS. cPageRead
+# <a name="jet_threadstatscpageread-property"></a>JET_THREADSTATS.cPageRead, propiedad
 
-Obtiene el número total de páginas de base de datos capturadas desde el disco por el motor de base de datos en el subproceso actual.
+Obtiene el número total de páginas de base de datos capturadas del disco por el motor de base de datos en el subproceso actual.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public int cPageRead { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_THREADSTATS](./jet-threadstats-structure2.md)
+[JET_THREADSTATS estructura](./jet-threadstats-structure2.md)
 
-[Miembros de JET_THREADSTATS](./jet-threadstats-members.md)
+[JET_THREADSTATS miembros](./jet-threadstats-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

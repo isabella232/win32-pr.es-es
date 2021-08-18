@@ -1,6 +1,6 @@
 ---
 title: Ejemplo de desencadenador de registro (scripting)
-description: En este ejemplo de scripting se muestra cómo crear una tarea programada para ejecutar el Bloc de notas cuando se registra una tarea.
+description: En este ejemplo de scripting se muestra cómo crear una tarea que está programada para ejecutarse Bloc de notas cuando se registra una tarea.
 ms.assetid: 956b3a21-7d36-4d06-be84-690884ba653a
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,34 +9,34 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bce6271927e74e31f25b3ac86783b35899bbd862
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f036d4772c98392881f254e07e192c970a2cb407727294c7f196c9c15cb9e11f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011325"
 ---
 # <a name="registration-trigger-example-scripting"></a>Ejemplo de desencadenador de registro (scripting)
 
-En este ejemplo de scripting se muestra cómo crear una tarea programada para ejecutar el Bloc de notas cuando se registra una tarea. La tarea contiene un desencadenador de registro que especifica un límite de inicio y un límite de fin para la tarea. El límite inicial especifica cuándo se activa el desencadenador. La tarea también contiene una acción que especifica la tarea para ejecutar el Bloc de notas.
+En este ejemplo de scripting se muestra cómo crear una tarea que está programada para ejecutarse Bloc de notas cuando se registra una tarea. La tarea contiene un desencadenador de registro que especifica un límite inicial y un límite final para la tarea. El límite inicial especifica cuándo se activa el desencadenador. La tarea también contiene una acción que especifica la tarea que se ejecutará Bloc de notas.
 
 > [!Note]  
 > Cuando se actualiza una tarea con un desencadenador de registro, la tarea se ejecutará después de que se produzca la actualización.
 
- 
+ 
 
-En el procedimiento siguiente se describe cómo programar un ejecutable, como el Bloc de notas, para que se inicie cuando se registre una tarea.
+En el procedimiento siguiente se describe cómo programar un ejecutable como Bloc de notas iniciar cuando se registra una tarea.
 
-**Para programar el inicio del Bloc de notas cuando se registra una tarea**
+**Para programar Bloc de notas iniciar cuando se registra una tarea**
 
-1.  Cree un objeto [**TaskService**](taskservice.md) . Este objeto permite crear la tarea en una carpeta especificada.
-2.  Obtener una carpeta de tareas y crear una tarea. Use el método [**TaskService. GetFolder**](taskservice-getfolder.md) para obtener la carpeta donde se almacena la tarea y el método [**TaskService. newtask**](taskservice-newtask.md) para crear el objeto [**TaskDefinition**](taskdefinition.md) que representa la tarea.
-3.  Defina la información sobre la tarea mediante el objeto [**TaskDefinition**](taskdefinition.md) . Use la propiedad [**TaskDefinition. Settings**](taskdefinition-settings.md) para definir la configuración que determina cómo el servicio de programador de tareas realiza la tarea y la propiedad [**TaskDefinition. RegistrationInfo**](taskdefinition-registrationinfo.md) para definir la información que describe la tarea.
-4.  Cree un desencadenador de registro mediante la propiedad [**TaskDefinition. Triggers**](taskdefinition-triggers.md) . Esta propiedad proporciona acceso al objeto [**TriggerCollection**](triggercollection.md) . Use el método [**TriggerCollection. Create**](triggercollection-create.md) (especificando el tipo de desencadenador que desea crear) para crear un desencadenador de registro.
-5.  Cree una acción para que la tarea se ejecute mediante la propiedad [**TaskDefinition. Actions**](taskdefinition-actions.md) . Esta propiedad proporciona acceso al objeto [**ActionCollection**](actioncollection.md) . Use el método [**ActionCollection. Create**](actioncollection-create.md) para especificar el tipo de acción que desea crear. En este ejemplo se usa un objeto [**ExecAction**](execaction.md) , que representa una acción que inicia un ejecutable.
-6.  Registre la tarea mediante el método [**TaskFolder. RegisterTaskDefinition**](taskfolder-registertaskdefinition.md) .
+1.  Cree un [**objeto TaskService.**](taskservice.md) Este objeto permite crear la tarea en una carpeta especificada.
+2.  Obtenga una carpeta de tareas y cree una tarea. Use el [**método TaskService.GetFolder**](taskservice-getfolder.md) para obtener la carpeta donde se almacena la tarea y el método [**TaskService.NewTask**](taskservice-newtask.md) para crear el objeto [**TaskDefinition**](taskdefinition.md) que representa la tarea.
+3.  Defina información sobre la tarea mediante el [**objeto TaskDefinition.**](taskdefinition.md) Use la [**propiedad TaskDefinition.Configuración**](taskdefinition-settings.md) para definir la configuración que determina cómo realiza la tarea el servicio Programador de tareas y la propiedad [**TaskDefinition.RegistrationInfo**](taskdefinition-registrationinfo.md) para definir la información que describe la tarea.
+4.  Cree un desencadenador de registro mediante la [**propiedad TaskDefinition.Triggers.**](taskdefinition-triggers.md) Esta propiedad proporciona acceso al [**objeto TriggerCollection.**](triggercollection.md) Use el [**método TriggerCollection.Create**](triggercollection-create.md) (especificando el tipo de desencadenador que desea crear) para crear un desencadenador de registro.
+5.  Cree una acción para que la tarea se ejecute mediante la [**propiedad TaskDefinition.Actions.**](taskdefinition-actions.md) Esta propiedad proporciona acceso al [**objeto ActionCollection.**](actioncollection.md) Use el [**método ActionCollection.Create**](actioncollection-create.md) para especificar el tipo de acción que desea crear. En este ejemplo se [**usa un objeto ExecAction,**](execaction.md) que representa una acción que inicia un ejecutable.
+6.  Registre la tarea mediante el [**método TaskFolder.RegisterTaskDefinition.**](taskfolder-registertaskdefinition.md)
 
-En el siguiente ejemplo de VBScript se muestra cómo crear una tarea que programa el Bloc de notas para que se ejecute cuando se registre la tarea.
+En el ejemplo de VBScript siguiente se muestra cómo crear una tarea que programa Bloc de notas ejecutar cuando se registra la tarea.
 
 
 ```VB
@@ -119,12 +119,12 @@ WScript.Echo "Task submitted."
 
 <dl> <dt>
 
-[Usar el Programador de tareas](using-the-task-scheduler.md)
+[Uso de la Programador de tareas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

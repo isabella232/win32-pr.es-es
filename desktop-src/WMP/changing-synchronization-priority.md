@@ -3,30 +3,30 @@ title: Cambiar la prioridad de sincronización
 description: Cambiar la prioridad de sincronización
 ms.assetid: 992781cb-5018-4b88-aa93-2f8a86468a42
 keywords:
-- Windows Media Player, listas de reproducción de sincronización
-- Modelo de objetos de Windows Media Player, listas de reproducción de sincronización
+- Reproductor de Windows Media,listas de reproducción de sincronización
+- Reproductor de Windows Media de objetos, listas de reproducción de sincronización
 - modelo de objetos, listas de reproducción de sincronización
-- Windows Media Player Mobile, listas de reproducción de sincronización
-- Control ActiveX de Windows Media Player, listas de reproducción de sincronización
-- Control ActiveX móvil de Windows Media Player, listas de reproducción de sincronización
-- Control ActiveX, listas de reproducción de sincronización
+- Reproductor de Windows Media Móvil, listas de reproducción de sincronización
+- Reproductor de Windows Media ActiveX control, listas de reproducción de sincronización
+- Reproductor de Windows Media Control de ActiveX móviles, listas de reproducción de sincronización
+- ActiveX control, listas de reproducción de sincronización
 - listas de reproducción, sincronización
-- listas de reproducción de metarchivos, sincronización
-- Listas de reproducción de metarchivos de Windows Media, sincronización
-- dispositivos portátiles, cambiar las prioridades de la lista de reproducción
+- listas de reproducción de metarchivo, sincronización
+- Windows Listas de reproducción de metarchivo multimedia, sincronización
+- dispositivos portátiles, cambiar las prioridades de la lista de reproducción de sincronización
 - listas de reproducción de sincronización, prioridades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 327f211282e2e3b35c21dce721a17f99dcb6583d
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 1513679bcde31893cd7c4f456bc0e99404bb5dc66de37976f2053ae1559a4cdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103788847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997665"
 ---
 # <a name="changing-synchronization-priority"></a>Cambiar la prioridad de sincronización
 
-En el ejemplo de código siguiente se especifica un valor de prioridad para cada elemento del control ListView identificado por IDC \_ PLVIEW. A los elementos marcados con una marca de verificación se les asigna un valor de prioridad en función de su orden en la lista. A los elementos que no se comprueban se les asigna un valor de prioridad de cero.
+El código de ejemplo siguiente especifica un valor de prioridad para cada elemento del control ListView identificado por IDC \_ PLVIEW. A los elementos marcados con una marca de verificación se les asigna un valor de prioridad en función de su orden en la lista. A los elementos que no están activados se les asigna un valor de prioridad de cero.
 
 
 ```C++
@@ -85,18 +85,18 @@ void CSyncSettings::SetPriorities()
 
 <dl> <dt>
 
-[**Interfaz IWMPMedia**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia)
+[**IWMPMedia (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia)
 </dt> <dt>
 
-[**Interfaz IWMPPlaylist**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist)
+[**IWMPPlaylist (Interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist)
 </dt> <dt>
 
-[**Administrar listas de reproducción de sincronización**](managing-synchronization-playlists.md)
+[**Administración de listas de reproducción de sincronización**](managing-synchronization-playlists.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

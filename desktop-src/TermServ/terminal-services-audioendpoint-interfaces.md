@@ -1,20 +1,20 @@
 ---
-title: Interfaces de Servicios de Escritorio remoto AudioEndpoint
-description: Las interfaces siguientes se usan con la API de AudioEndpoint.
+title: Servicios de Escritorio remoto audioEndpoint Interfaces
+description: Las interfaces siguientes se usan con audioEndpoint API.
 ms.assetid: 615c2d03-c2fb-46f8-aa78-064f8e7b6064
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de520571c99bf84472760e8a1ca28a52a1d6c32e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7ec12cd3d4648f3ed357e898f75850e77b3b679d59a92d9f0518f809ba52f58f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105685508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000075"
 ---
-# <a name="remote-desktop-services-audioendpoint-interfaces"></a>Interfaces de Servicios de Escritorio remoto AudioEndpoint
+# <a name="remote-desktop-services-audioendpoint-interfaces"></a>Servicios de Escritorio remoto audioEndpoint Interfaces
 
-Las interfaces siguientes se usan con la API de AudioEndpoint.
+Las interfaces siguientes se usan con audioEndpoint API.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -37,14 +37,14 @@ Proporciona información al motor de audio sobre un punto de conexión de audio.
 [**IAudioEndpointControl**](/windows/desktop/api/Audioengineendpoint/nn-audioengineendpoint-iaudioendpointcontrol)
 </dt> <dd>
 
-Controla el estado de flujo de un punto de conexión.
+Controla el estado de secuencia de un punto de conexión.
 
 </dd> <dt>
 
 [**IAudioEndpointRT**](/windows/desktop/api/Audioengineendpoint/nn-audioengineendpoint-iaudioendpointrt)
 </dt> <dd>
 
-Obtiene la diferencia entre las posiciones de lectura y escritura actuales en el búfer del extremo.
+Obtiene la diferencia entre las posiciones de lectura y escritura actuales en el búfer del punto de conexión.
 
 </dd> <dt>
 
@@ -62,13 +62,13 @@ Obtiene el búfer de salida para cada paso de procesamiento.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La API de Servicios de Escritorio remoto AudioEndpoint es para su uso en escenarios de Escritorio remoto; no es para las aplicaciones cliente.
+La SERVICIOS DE ESCRITORIO REMOTO AudioEndpoint API es para su uso en Escritorio remoto escenarios; no es para aplicaciones cliente.
 
- 
+ 
 
- 
+ 
 
 
 

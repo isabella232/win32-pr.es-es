@@ -1,11 +1,11 @@
 ---
-title: 'Atributo permitido: atributos efectivos'
-description: Lista de atributos que se pueden modificar en el objeto.
+title: Atributo Allowed-Attributes-Effective
+description: Lista de atributos que se pueden modificar en el objeto .
 ms.assetid: bf2db8d5-bbef-4063-be94-f657f3b2768b
 ms.tgt_platform: multiple
 keywords:
-- 'Atributo permitido: esquema de AD de atributos efectivos'
-- allowedAttributesEffective esquema de AD de atributos
+- Esquema de AD de atributo Allowed-Attributes-Effective
+- allowedAttributes Schema de AD de atributoeffective
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 425383e97d924526d926cd8dd08d35e352ac2531
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 654f42a71621118c326480c977e19b04c5658bff87ce4d3c810872af0dff485f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022833"
 ---
-# <a name="allowed-attributes-effective-attribute"></a>Atributo permitido: atributos efectivos
+# <a name="allowed-attributes-effective-attribute"></a>Atributo Allowed-Attributes-Effective
 
-Lista de atributos que se pueden modificar en el objeto.
+Lista de atributos que se pueden modificar en el objeto .
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------------------------------|
-| CN                | Permitido: atributos: efectivos                                    |
-| Nombre para mostrar de LDAP | allowedAttributesEffective                                      |
-| Tamaño              | \-                                                              |
-| Actualizar privilegio  | \-                                                              |
+| CN                | Allowed-Attributes-Effective                                    |
+| Ldap-Display-Name | allowedAttributesEffective                                      |
+| Size              | \-                                                              |
+| Actualizar privilegios  | \-                                                              |
 | Frecuencia de actualización  | \-                                                              |
 | Attribute-Id      | 1.2.840.113556.1.4.914                                          |
-| System-ID-GUID    | 9a7ad941-ca53-11d1-bbd0-0080c76670c0                            |
-| Sintaxis            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
+| System-Id-Guid    | 9a7ad941-ca53-11d1-bbd0-0080c76670c0                            |
+| Syntax            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
 
 
 
@@ -44,7 +44,7 @@ Lista de atributos que se pueden modificar en el objeto.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Lista de atributos que se pueden modificar en el objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -77,13 +77,13 @@ Lista de atributos que se pueden modificar en el objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,19 +92,19 @@ Lista de atributos que se pueden modificar en el objeto.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -119,13 +119,13 @@ Lista de atributos que se pueden modificar en el objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -140,13 +140,13 @@ Lista de atributos que se pueden modificar en el objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -161,13 +161,13 @@ Lista de atributos que se pueden modificar en el objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -182,13 +182,13 @@ Lista de atributos que se pueden modificar en el objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

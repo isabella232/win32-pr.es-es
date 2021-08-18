@@ -1,7 +1,7 @@
 ---
-description: Restablece el valor de autorización de la clave raíz de almacenamiento (SRK) para que sea compatible con el sistema operativo.
+description: Restablece el valor Storage autorización de clave raíz (SRK) para que sea compatible con el sistema operativo.
 ms.assetid: af008733-b43c-4017-9e79-bdd98f2e20b6
-title: Método ResetSrkAuth de la clase Win32_Tpm
+title: Método ResetSrkAuth de la Win32_Tpm clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: 7d838ded7051511b6a8f9117327ee7cdb1a00d7e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 01f7536833529fd0d425f6064cfcdab11ac99c9cf1d6ab6ae7daf0c8b995d566
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004303"
 ---
-# <a name="resetsrkauth-method-of-the-win32_tpm-class"></a>Método ResetSrkAuth de la \_ clase Win32 TPM
+# <a name="resetsrkauth-method-of-the-win32_tpm-class"></a>Método ResetSrkAuth de la clase Tpm de \_ Win32
 
-El método **ResetSrkAuth** de la clase [**Win32 \_ TPM**](win32-tpm.md) restablece el valor de autorización de la clave raíz de almacenamiento (SRK) para que sea compatible con el sistema operativo.
+El **método ResetSrkAuth** de la clase [**\_ Tpm de Win32**](win32-tpm.md) restablece el valor de autorización Storage Root Key (SRK) para que sea compatible con el sistema operativo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,18 +39,18 @@ uint32 ResetSrkAuth(
 
 <dl> <dt>
 
-*OwnerAuth* \[ en, opcional\]
+*OwnerAuth* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **String**
+Tipo: **cadena**
 
-Cadena que identifica el propietario del TPM. Esta cadena debe ser una cadena terminada en NULL con codificación Base64 que contenga exactamente 20 bytes de datos binarios. Use el método [**ConvertToOwnerAuth**](converttoownerauth-win32-tpm.md) para traducir una frase de contraseña a este formato esperado. Si no se proporciona ninguno, se lee el parámetro *OwnerAuth* en el registro.
+Cadena que identifica al propietario del TPM. Esta cadena debe ser una cadena terminada en NULL codificada en base64 que contenga exactamente 20 bytes de datos binarios. Use el [**método ConvertToOwnerAuth para**](converttoownerauth-win32-tpm.md) traducir una frase de contraseña a este formato esperado. El *parámetro OwnerAuth* se lee del Registro si no se proporciona ninguno.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Se pueden devolver todos los errores de TPM, así como los errores específicos de los servicios base de TPM.
 
@@ -60,17 +60,17 @@ En la tabla siguiente se enumeran algunos de los códigos de retorno comunes.
 
 | Código o valor devuelto                                                                                                                                                                         | Descripción                                                                                                                                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> <dt>0 (0X0)</dt> </dl>                                         | Método realizado correctamente.<br/>                                                                                                                                                |
+| <dl> <dt>**S \_ Ok**</dt> <dt>0 (0x0)</dt> </dl>                                         | Método realizado correctamente.<br/>                                                                                                                                                |
 | <dl> <dt> **TPM \_ E \_ AUTHFAIL**</dt> <dt>2150105089 (0x80280001)</dt> </dl>             | El valor de autorización de propietario proporcionado no puede satisfacer la solicitud.<br/>                                                                                                        |
-| <dl> <dt>**TPM \_ E \_ defender \_ LOCK \_ Running**</dt> <dt>2150107139 (0x80280803)</dt> </dl> | El TPM defiende contra los ataques de diccionario y se encuentra en un período de tiempo de espera. Para obtener más información, vea el método [**ResetAuthLockOut**](resetauthlockout-win32-tpm.md) .<br/> |
+| <dl> <dt>**TPM \_ E \_ DEFENDER \_ LOCK \_ RUNNING**</dt> <dt>2150107139 (0x80280803)</dt> </dl> | El TPM está en defensa frente a ataques de diccionario y está en un período de tiempo de espera. Para obtener más información, vea el [**método ResetAuthLockOut.**](resetauthlockout-win32-tpm.md)<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte de la Windows SDK. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,11 +78,11 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                      |
-| Espacio de nombres<br/>                | \\MicrosoftTpm de \\ seguridad de cimv2 raíz \\<br/>                                            |
-| MOF<br/>                      | <dl> <dt>Win32 \_ TPM. mof</dt> </dl> |
-| Archivo DLL<br/>                      | <dl> <dt>\_tpm.dllWin32</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                      |
+| Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftTpm<br/>                                            |
+| MOF<br/>                      | <dl> <dt>Win32 \_ tpm.mof</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Win32 \_tpm.dll</dt> </dl> |
 
 
 
@@ -90,7 +90,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 <dl> <dt>
 
-[**TPM de Win32 \_**](win32-tpm.md)
+[**Tpm de \_ Win32**](win32-tpm.md)
 </dt> </dl>
 
  

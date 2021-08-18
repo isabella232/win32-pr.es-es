@@ -4,12 +4,12 @@ description: 'Funciones de entrada del mouse '
 ms.assetid: a666b25b-a75c-4500-8077-fabe07589a1d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a952a9ce90284f284b176c608228c0b852f5f4c8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8c9b6abb4283ce4101b2e22c36653500db8109a0b8efbc01f9f3affe20c367a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119717385"
 ---
 # <a name="mouse-input-functions"></a>Funciones de entrada del mouse 
 
@@ -69,18 +69,18 @@ Esta función se ha reemplazado. Use <a href="/windows/desktop/api/winuser/nf-wi
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/winuser/nf-winuser-setdoubleclicktime"><strong>SetDoubleClickTime</strong></a><br/></td>
-<td>Establece la hora de doble clic del mouse. Un doble clic es una serie de dos clics de un botón del mouse, el segundo se produce dentro de un tiempo especificado después del primero. El tiempo de doble clic es el número máximo de milisegundos que pueden producirse entre el primer y el segundo clic de un doble clic. <br/></td>
+<td>Establece el tiempo de doble clic del mouse. Un doble clic es una serie de dos clics de un botón del mouse, el segundo se produce dentro de un tiempo especificado después del primero. El tiempo de doble clic es el número máximo de milisegundos que pueden producirse entre el primer y el segundo clic de un doble clic. <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/winuser/nf-winuser-swapmousebutton"><strong>SwapMouseButton</strong></a><br/></td>
-<td>Invierte o restaura el significado de los botones izquierdo y derecho del mouse. <br/></td>
+<td>Invierte o restaura el significado de los botones del mouse izquierdo y derecho. <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/winuser/nf-winuser-trackmouseevent"><strong>TrackMouseEvent</strong></a><br/></td>
 <td>Envía mensajes cuando el puntero del mouse sale de una ventana o mantiene el puntero sobre una ventana durante un período de tiempo especificado.<br/>
 <blockquote>
 [!Note]<br />
-La <a href="/windows/win32/api/commctrl/nf-commctrl-_trackmouseevent"><strong>_TrackMouseEvent</strong></a> llama <a href="/windows/desktop/api/winuser/nf-winuser-trackmouseevent"><strong>a TrackMouseEvent</strong></a> si <strong>existe;</strong> en caso _TrackMouseEvent emula <strong>TrackMouseEvent</strong>.
+La <a href="/windows/win32/api/commctrl/nf-commctrl-_trackmouseevent"><strong>_TrackMouseEvent</strong></a> llama a <a href="/windows/desktop/api/winuser/nf-winuser-trackmouseevent"><strong>TrackMouseEvent</strong></a> si existe; de lo <strong>contrario, _TrackMouseEvent</strong> emula <strong>TrackMouseEvent</strong>.
 </blockquote>
 <br/></td>
 </tr>

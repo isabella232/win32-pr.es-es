@@ -20,7 +20,7 @@ ms.locfileid: "119457425"
 
 Multiplica un vector de 4 componentes por una matriz de 4x3.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
@@ -37,7 +37,7 @@ where
 -   src0 es un registro de origen que representa un vector de 4 componentes.
 -   src1 es un registro de origen que representa una matriz 4x3, que corresponde al primero de tres registros consecutivos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 

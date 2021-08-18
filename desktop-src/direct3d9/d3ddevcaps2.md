@@ -4,12 +4,12 @@ ms.assetid: 3f3b9f86-dee3-4506-bd2e-1dcc8ba617ed
 title: D3DDEVCAPS2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6296db9b338d5f9a8c8ede702a784baf1fdfd462
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 2068d08dfe7e321fc9aa0d4d91bea49be2c96c02b8a2aca25045a180c16c2364
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119728605"
 ---
 # <a name="d3ddevcaps2"></a>D3DDEVCAPS2
 

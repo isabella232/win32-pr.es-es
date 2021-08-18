@@ -1,7 +1,7 @@
 ---
-description: La \_ estructura PRINTPROCESSOR info \_ 1 especifica el nombre de un procesador de impresión instalado.
+description: La estructura PRINTPROCESSOR \_ INFO \_ 1 especifica el nombre de un procesador de impresión instalado.
 ms.assetid: 49b272c8-156b-4996-b3fd-92cde831f4ae
-title: Estructura de PRINTPROCESSOR_INFO_1 (winspool. h)
+title: PRINTPROCESSOR_INFO_1 estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 5ac35f85e904e9a80d9f244a1421b54fd0994a43
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0aa94a2df1c44b53ec9fb8211f7eaed8c955f9f2c1cd824cd4634c754f8c337e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119824745"
 ---
-# <a name="printprocessor_info_1-structure"></a>PRINTPROCESSOR \_ estructura de información \_ 1
+# <a name="printprocessor_info_1-structure"></a>PRINTPROCESSOR \_ INFO \_ 1 (estructura)
 
-La estructura **PRINTPROCESSOR \_ info \_ 1** especifica el nombre de un procesador de impresión instalado.
+La **estructura PRINTPROCESSOR \_ INFO \_ 1** especifica el nombre de un procesador de impresión instalado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ typedef struct _PRINTPROCESSOR_INFO_1 {
 **pName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre de un procesador de impresión instalado.
+Puntero a una cadena terminada en NULL que especifica el nombre de un procesador de impresión instalado.
 
 </dd> </dl>
 
@@ -56,8 +56,8 @@ Puntero a una cadena terminada en null que especifica el nombre de un procesador
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nombres Unicode y ANSI<br/>   | **\_ PRINTPROCESSOR \_ info \_ 1W** (Unicode) y **\_ PRINTPROCESSOR \_ info \_ 1A** (ANSI)<br/>             |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nombres Unicode y ANSI<br/>   | **\_ PRINTPROCESSOR \_ INFO \_ 1W** (Unicode) e **\_ PRINTPROCESSOR \_ INFO \_ 1A** (ANSI)<br/>             |
 
 
 
@@ -68,7 +68,7 @@ Puntero a una cadena terminada en null que especifica el nombre de un procesador
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de LA API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**EnumPrintProcessors**](enumprintprocessors.md)

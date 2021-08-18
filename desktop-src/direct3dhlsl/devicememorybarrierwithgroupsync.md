@@ -1,9 +1,9 @@
 ---
-title: DeviceMemoryBarrierWithGroupSync función)
+title: Función DeviceMemoryBarmoreWithGroupSync
 description: Bloquea la ejecución de todos los subprocesos de un grupo hasta que se hayan completado todos los accesos a la memoria del dispositivo y todos los subprocesos del grupo hayan alcanzado esta llamada.
 ms.assetid: 77c54064-a996-4c51-84b5-7da60e884c4f
 keywords:
-- DeviceMemoryBarrierWithGroupSync de función HLSL
+- Función HLSL de DeviceMemoryBarhlWithGroupSync
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6a7a4a27b3256fb78c7b60b960fc5383cfd5b5d4
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 2567a209b86481cd0f25922e8e3b1cf947196a2c799344089591cf70fa3624fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104358204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119625825"
 ---
-# <a name="devicememorybarrierwithgroupsync-function"></a>DeviceMemoryBarrierWithGroupSync función)
+# <a name="devicememorybarrierwithgroupsync-function"></a>Función DeviceMemoryBarmoreWithGroupSync
 
 Bloquea la ejecución de todos los subprocesos de un grupo hasta que se hayan completado todos los accesos a la memoria del dispositivo y todos los subprocesos del grupo hayan alcanzado esta llamada.
 
@@ -38,9 +38,9 @@ Esta función no tiene parámetros.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -48,23 +48,23 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 5](d3d11-graphics-reference-sm5.md) y versiones posteriores | sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
 
 
 
- 
+ 
 
 Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          |       | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -76,9 +76,9 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

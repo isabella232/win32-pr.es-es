@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración BeginTransactionGrbit'
-title: Enumeración BeginTransactionGrbit
+description: 'Más información sobre: Enumeración BeginTransactionGrbit'
+title: BeginTransactionGrbit (enumeración)
 TOCTitle: BeginTransactionGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.BeginTransactionGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.begintransactiongrbit(v=EXCHG.10)
@@ -28,21 +28,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5f407c54b7b6e76ab63dcfb97d1307458ba15277
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8bbbba69a6768f37e816030f63aa00e5ed05f2133b62f1047b0c7cbe58d55ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103816982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982845"
 ---
-# <a name="begintransactiongrbit-enumeration"></a>Enumeración BeginTransactionGrbit
+# <a name="begintransactiongrbit-enumeration"></a>BeginTransactionGrbit (enumeración)
 
-Opciones de [JetBeginTransaction2 (JET_SESID, BeginTransactionGrbit)](./api.jetbegintransaction2-method.md).
+Opciones para [JetBeginTransaction2(JET_SESID, BeginTransactionGrbit).](./api.jetbegintransaction2-method.md)
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -72,13 +72,13 @@ public enum BeginTransactionGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>ReadOnly</td>
-<td>La transacción no modificará la base de datos. Si se intenta realizar una actualización, se producirá un error en la operación con <a href="hh564840(v=exchg.10).md">TransReadOnly</a>. Se omite esta opción a menos que se solicite cuando la sesión especificada no está ya en una transacción.</td>
+<td>La transacción no modificará la base de datos. Si se intenta realizar una actualización, se producirá un error en esa operación <a href="hh564840(v=exchg.10).md">con TransReadOnly</a>. Esta opción se omite a menos que se solicite cuando la sesión determinada aún no está en una transacción.</td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +88,4 @@ public enum BeginTransactionGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

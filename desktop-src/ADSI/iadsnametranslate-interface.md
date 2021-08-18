@@ -1,26 +1,26 @@
 ---
-title: Interfaz IADsNameTranslate
-description: La interfaz IADsNameTranslate se usa para traducir nombres distintivos entre distintos formatos. Las traducciones de nombres se realizan en el servidor de directorio y esta interfaz solo está disponible para los objetos de Active Directory.
+title: IADsNameTranslate (Interfaz)
+description: La interfaz IADsNameTranslate se usa para traducir nombres distintivos entre varios formatos. Las traducciones de nombres se realizan en el servidor de directorios y esta interfaz solo está disponible actualmente para los objetos de Active Directory.
 ms.assetid: c5c6e821-f19b-4269-81de-34c79dd2731f
 ms.tgt_platform: multiple
 keywords:
-- Interfaz IADsNameTranslate ADSI
-- IADsTranslate ADSI, usar
-- ADSI ADSI, código de ejemplo C/C++, uso de IADsTranslate
+- IADsNameTranslate Interface ADSI
+- IADsTranslate ADSI , mediante
+- ADSI ADSI, código de ejemplo C/C++, con IADsTranslate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7ff5b44288289f118c41463a22e619aa815ecb2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 60e167363e3c35337e74851dc43126593772aac56236f27e10a98a81b533159e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023453"
 ---
-# <a name="iadsnametranslate-interface"></a>Interfaz IADsNameTranslate
+# <a name="iadsnametranslate-interface"></a>IADsNameTranslate (Interfaz)
 
-La interfaz [**IADsNameTranslate**](/windows/desktop/api/Iads/nn-iads-iadsnametranslate) se usa para traducir nombres distintivos entre distintos formatos. Las traducciones de nombres se realizan en el servidor de directorio y esta interfaz solo está disponible para los objetos de Active Directory.
+La [**interfaz IADsNameTranslate**](/windows/desktop/api/Iads/nn-iads-iadsnametranslate) se usa para traducir nombres distintivos entre varios formatos. Las traducciones de nombres se realizan en el servidor de directorios y esta interfaz solo está disponible actualmente para los objetos de Active Directory.
 
-En el siguiente ejemplo de código se convierte un nombre de cuenta del formato de Windows al formato LDAP.
+En el ejemplo de código siguiente se convierte un nombre de cuenta Windows formato ldap.
 
 
 ```C++
@@ -51,9 +51,9 @@ HRESULT TranslateNTNameToLDAPName( BSTR * pNTName, BSTR * pLDAPName )
 
 
 
- 
+ 
 
- 
+ 
 
 
 

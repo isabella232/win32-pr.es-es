@@ -1,7 +1,7 @@
 ---
-description: La propiedad QualifierDescription de solo lectura devuelve una cadena de texto que describe el componente calificado.
+description: La propiedad QualifierDescription de solo lectura devuelve una cadena de texto que describe el componente completo.
 ms.assetid: 43615bd9-824b-4b84-a8f2-eef30cc7619a
-title: Propiedad Installer. QualifierDescription
+title: Installer.QualifierDescription, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 8937e0a1fee89bb3ebe1b6402c94778bdd2a0915
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c226f00d7f95b4585fa4a0713fb281011079cdc35c4e421254beec75db84d7db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763585"
 ---
-# <a name="installerqualifierdescription-property"></a>Propiedad Installer. QualifierDescription
+# <a name="installerqualifierdescription-property"></a>Installer.QualifierDescription, propiedad
 
-La propiedad **QualifierDescription** de solo lectura devuelve una cadena de texto que describe el componente calificado. Esta cadena traducible se crea en la columna AppData de la [tabla PublishComponent](publishcomponent-table.md) y se puede mostrar al usuario. El calificador distingue varias formas del mismo componente, como un componente que se implementa en varios lenguajes.
+La propiedad **QualifierDescription** de solo lectura devuelve una cadena de texto que describe el componente completo. Esta cadena localizable se crea en la columna AppData de la [tabla PublishComponent](publishcomponent-table.md) y se puede mostrar al usuario. El calificador distingue varias formas del mismo componente, como un componente que se implementa en varios idiomas.
 
 Esta propiedad es de solo lectura.
 
@@ -43,9 +43,9 @@ propVal = Installer.QualifierDescription
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller se define como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
 
 
 
@@ -56,7 +56,7 @@ propVal = Installer.QualifierDescription
 [**MsiEnumComponentQualifiers**](/windows/desktop/api/Msi/nf-msi-msienumcomponentqualifiersa)
 </dt> <dt>
 
-[Componentes completos](qualified-components.md)
+[Componentes calificados](qualified-components.md)
 </dt> </dl>
 
  

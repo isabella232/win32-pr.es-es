@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: JET_OPENTEMPORARYTABLE constructor'
-title: Constructor de JET_OPENTEMPORARYTABLE (Microsoft. ISAM. esent. Interop. vista)
+title: JET_OPENTEMPORARYTABLE constructor (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'JET_OPENTEMPORARYTABLE constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Vista.JET_OPENTEMPORARYTABLE.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_opentemporarytable.jet_opentemporarytable(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 53eb6948090d29fcb116bb7c9a614027bc7737fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4b680de8abdbf1c45e8f06700de518f97b35ca50da1b2a2ed19b5679c10d4bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119730395"
 ---
-# <a name="jet_opentemporarytable-constructor"></a>Constructor de JET_OPENTEMPORARYTABLE
+# <a name="jet_opentemporarytable-constructor"></a>JET_OPENTEMPORARYTABLE constructor
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,12 +50,12 @@ Dim instance As New JET_OPENTEMPORARYTABLE()
 public JET_OPENTEMPORARYTABLE()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_OPENTEMPORARYTABLE (clase)](./jet-opentemporarytable-class.md)
+[JET_OPENTEMPORARYTABLE clase](./jet-opentemporarytable-class.md)
 
-[Miembros de JET_OPENTEMPORARYTABLE](./jet-opentemporarytable-members.md)
+[JET_OPENTEMPORARYTABLE miembros](./jet-opentemporarytable-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

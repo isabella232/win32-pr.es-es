@@ -1,7 +1,7 @@
 ---
 description: Obtiene la técnica actual.
 ms.assetid: a5c3f094-a37c-4f0d-b8b8-fc58d61d7bcb
-title: 'ID3DXEffect:: GetCurrentTechnique (método) (D3DX9Effect. h)'
+title: Método ID3DXEffect::GetCurrentTechnique (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: e865b0e45faf82cf2827a56a4092058a8c237278
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 51387fae68d6be94aa1bdd82b99a40c1a4336ff63d6baf5b29b9e6c1dd3e0fee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119748605"
 ---
-# <a name="id3dxeffectgetcurrenttechnique-method"></a>ID3DXEffect:: GetCurrentTechnique (método)
+# <a name="id3dxeffectgetcurrenttechnique-method"></a>Método ID3DXEffect::GetCurrentTechnique
 
 Obtiene la técnica actual.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de la técnica actual. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador único de la técnica actual. Vea [Identificadores (Direct3D 9).](handles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Identificador único de la técnica actual. Vea [identificadores (Direct3D 9)](h
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

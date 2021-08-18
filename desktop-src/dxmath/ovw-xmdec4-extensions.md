@@ -1,22 +1,22 @@
 ---
-description: XMDEC4describes un vector 4D con x-, y-y los componentes z representados como valores enteros con signo de 10 bits, y el componente w como valor entero con signo de 2 bits.
+description: XMDEC4describe un vector 4D con componentes x-, y-y z- representados como valores enteros de 10 bits con signo y el componente w como un valor entero con signo de 2 bits.
 ms.assetid: 7b4a8d01-af7a-4dad-98c2-f81d8a16fb42
-title: Extensiones de XMDEC4
+title: Extensiones XMDEC4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9ff1fccaaf1a14a507e18a38f09146c42df8847
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b33bef0ff4c2bf44b9d022085468ab032cdbe53d9c3eea48635cfe0ce1f71ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119740675"
 ---
-# <a name="xmdec4-extensions"></a>Extensiones de XMDEC4
+# <a name="xmdec4-extensions"></a>Extensiones XMDEC4
 
-[**XMDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdec4)describe un vector 4D con x-, y-y los componentes z que se representan como valores enteros con signo de 10 bits, y el componente w como un valor entero con signo de 2 bits.
+[**XMDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdec4)describe un vector 4D con componentes x-, y-y z- representados como valores enteros de 10 bits con signo y el componente w como un valor entero de 2 bits con signo.
 
 > [!Note]  
-> Las características que se enumeran aquí solo están disponibles cuando se desarrollan con C++.
+> Las características enumeradas aquí solo están disponibles al desarrollar con C++.
 
  
 

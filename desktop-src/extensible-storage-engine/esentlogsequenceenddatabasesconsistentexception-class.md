@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentLogSequenceEndDatabasesConsistentException'
+description: 'Más información sobre: Clase EsentLogSequenceEndDatabasesConsistentException'
 title: Clase EsentLogSequenceEndDatabasesConsistentException
 TOCTitle: EsentLogSequenceEndDatabasesConsistentException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentLogSequenceEndDatabasesConsistentException
@@ -24,31 +24,31 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bb1663f80d4b233670852f80b06c405a1bab0207
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a818654c1acfa17c8e9af61987880e7d79dceaaffe305ba98df2d1d57cc39c46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120019335"
 ---
 # <a name="esentlogsequenceenddatabasesconsistentexception-class"></a>Clase EsentLogSequenceEndDatabasesConsistentException
 
-Clase base para JET_err. Excepciones LogSequenceEndDatabasesConsistent.
+Clase base para JET_err. LogSequenceEndDatabasesConsistent exceptions.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentDataException](./esentdataexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentFragmentationException](./esentfragmentationexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentLogSequenceEndDatabasesConsistentException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentDataException](./esentdataexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentFragmentationException](./esentfragmentationexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentLogSequenceEndDatabasesConsistentException  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -74,4 +74,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentLogSequenceEndDatabasesConsistentException](./esentlogsequenceenddatabasesconsistentexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,12 +1,12 @@
 ---
-title: Método GetIcon de la clase Win32_TSGetIcon
+title: Método GetIcon de la Win32_TSGetIcon clase
 description: Devuelve el contenido del icono especificado.
 ms.assetid: 9448181c-27b8-40eb-9369-8abe1422243b
 ms.tgt_platform: multiple
 keywords:
 - Método GetIcon Servicios de Escritorio remoto
-- Método GetIcon Servicios de Escritorio remoto, clase Win32_TSGetIcon
-- Win32_TSGetIcon de clase Servicios de Escritorio remoto, método GetIcon
+- Método GetIcon Servicios de Escritorio remoto , Win32_TSGetIcon clase
+- Win32_TSGetIcon clase Servicios de Escritorio remoto , método GetIcon
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92cd20cad668b0e3a6bba191c83ecdca2934ca17
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 305316d66ce95659210396a10f22366d64ebdd2b410b056aa3c398cf65edbbf5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001543"
 ---
-# <a name="geticon-method-of-the-win32_tsgeticon-class"></a>Método GetIcon de la \_ clase TSGetIcon de Win32
+# <a name="geticon-method-of-the-win32_tsgeticon-class"></a>Método GetIcon de la clase \_ TSGetIcon win32
 
 Devuelve el contenido del icono especificado.
 
@@ -45,24 +45,24 @@ uint32 GetIcon(
 
 <dl> <dt>
 
-*FilePath* \[ de\]
+*FilePath* \[ En\]
 </dt> <dd>
 
 Especifica la ruta de acceso al archivo que contiene el icono.
 
 </dd> <dt>
 
-*Índice* \[ de de\]
+*Índice* \[ En\]
 </dt> <dd>
 
 Especifica el índice del icono en el archivo.
 
 </dd> <dt>
 
-*IconContents* \[ enuncia\]
+*IconoContents* \[ out\]
 </dt> <dd>
 
-Al finalizar correctamente, se incluye el contenido del icono.
+Si la finalización se realiza correctamente, contiene el contenido del icono.
 
 </dd> </dl>
 
@@ -74,8 +74,8 @@ Al finalizar correctamente, se incluye el contenido del icono.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TsAllow. mof</dt> </dl>  |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TsAllow.mof</dt> </dl>  |
 | Archivo DLL<br/>                      | <dl> <dt>TsPubWmi.dll</dt> </dl> |
 
 

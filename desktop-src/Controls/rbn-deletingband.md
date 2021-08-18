@@ -3,7 +3,7 @@ title: RBN_DELETINGBAND de notificación (Commctrl.h)
 description: Enviado por un control rebar cuando una banda está a punto de eliminarse. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 92840cb1-375e-4c37-bde4-7ba02a1ff4f1
 keywords:
-- RBN_DELETINGBAND de notificación Windows controles
+- RBN_DELETINGBAND código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119985075"
 ---
-# <a name="rbn_deletingband-notification-code"></a>Código de notificación \_ DE RBN DELETINGBAND
+# <a name="rbn_deletingband-notification-code"></a>Código de notificación \_ DE ELIMINACIÓN DE RBNBAND
 
 Enviado por un control rebar cuando una banda está a punto de eliminarse. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
@@ -53,7 +53,7 @@ No se usa el valor devuelto para esta notificación.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |

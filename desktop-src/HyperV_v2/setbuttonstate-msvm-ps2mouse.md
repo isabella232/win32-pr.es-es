@@ -1,5 +1,5 @@
 ---
-description: 'Método SetButtonState de la Msvm_Ps2Mouse : establece el estado actual del botón de dispositivo especificado.'
+description: 'Método SetButtonState de la clase Msvm_Ps2Mouse : establece el estado actual del botón de dispositivo especificado.'
 ms.assetid: 312A2B8B-D518-4797-9B50-F12493598CD6
 title: Método SetButtonState de la Msvm_Ps2Mouse clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: ea6a984b84c7ee17436a7fb4738433edce6d68d8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b8ccc67590861a07b8a1d0181c43530a19d27e3f9426f3c6c363be44c0996f78
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822895"
 ---
 # <a name="setbuttonstate-method-of-the-msvm_ps2mouse-class"></a>Método SetButtonState de la clase \_ Ps2Mouse de Msvm
 
@@ -99,7 +99,7 @@ Un valor devuelto de cero indica que se ha correcto. Un valor distinto de cero i
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-**El sistema no está** disponible (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
 **Memoria sin memoria** (32778)
@@ -113,17 +113,17 @@ El acceso a [**la clase \_ Ps2Mouse de Msvm**](msvm-ps2mouse.md) podría estar r
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 solo \[ aplicaciones de escritorio\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

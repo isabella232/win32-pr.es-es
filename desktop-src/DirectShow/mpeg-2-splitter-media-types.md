@@ -4,12 +4,12 @@ ms.assetid: d0ff2011-4ee3-4f5e-8bd0-af9f4c6346e8
 title: Tipos de medios divisores MPEG-2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef4e025fafabdeb8c437cc1d1cd6fbb843cf63e3
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: b29151e5128531cbd2e71c6eda0f2b4b16658c8e68577de0fbb0542189c2931f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119748585"
 ---
 # <a name="mpeg-2-splitter-media-types"></a>Tipos de medios divisores MPEG-2
 
@@ -23,7 +23,7 @@ En el caso del vídeo MPEG-2, los tipos de medios son los siguientes.
 |                | Salida de PES | Salida de carga
 |------------------|------------------------------------------|--------------------------------|
 | **Tipo principal**       | **MEDIATYPE \_ MPEG2 \_ PES**                | **Vídeo \_ DE MEDIATYPE**           |
-| **Subtipo**          | **VÍDEO MPEG2 DE MEDIASUBTYPE \_ \_**           | **VÍDEO MPEG2 DE MEDIASUBTYPE \_ \_** |
+| **Subtipo**          | **VÍDEO DE MEDIASUBTYPE \_ MPEG2 \_**           | **VÍDEO DE MEDIASUBTYPE \_ MPEG2 \_** |
 | **Tipo de formato**      | **FORMAT \_ MPEG2Video**                   | **FORMAT \_ MPEG2Video**         |
 | **Estructura de formato** | [**MPEG2VIDEOINFO**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-mpeg2videoinfo) | **MPEG2VIDEOINFO**             |
 

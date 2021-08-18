@@ -1,21 +1,21 @@
 ---
-description: La tabla de extensión contiene información sobre los servidores de extensión de nombre de archivo que se deben generar como parte del anuncio del producto. Cada fila genera un conjunto de claves y valores del registro.
+description: La tabla Extensión contiene información sobre los servidores de extensiones de nombre de archivo que se deben generar como parte del anuncio del producto. Cada fila genera un conjunto de claves y valores del Registro.
 ms.assetid: 924858b7-8956-4636-b7c7-c902aa822ee1
-title: Tabla de extensión
+title: Tabla de extensiones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ef52f7248f44dcb63255244bbd8abd4ac8181d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d664df812b723d7ab6c9b966b09fac8c57a35b655e123f720fdb87bdf431146
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119821745"
 ---
-# <a name="extension-table"></a>Tabla de extensión
+# <a name="extension-table"></a>Tabla de extensiones
 
-La tabla de extensión contiene información sobre los servidores de extensión de nombre de archivo que se deben generar como parte del anuncio del producto. Cada fila genera un conjunto de claves y valores del registro.
+La tabla Extensión contiene información sobre los servidores de extensiones de nombre de archivo que se deben generar como parte del anuncio del producto. Cada fila genera un conjunto de claves y valores del Registro.
 
-La tabla de extensión contiene las columnas que se muestran en la tabla siguiente.
+La tabla Extension contiene las columnas que se muestran en la tabla siguiente.
 
 
 
@@ -23,8 +23,8 @@ La tabla de extensión contiene las columnas que se muestran en la tabla siguien
 |-------------|------------------------------|-----|----------|
 | Extensión   | [Texto](text.md)             | Y   | N        |
 | Componente\_ | [Identificador](identifier.md) | Y   | N        |
-| Programa\_    | [Texto](text.md)             | N   | Y        |
-| Mine\_      | [Texto](text.md)             | N   | Y        |
+| Progid\_    | [Texto](text.md)             | N   | Y        |
+| Mime\_      | [Texto](text.md)             | N   | Y        |
 | Característica\_   | [Identificador](identifier.md) | N   | N        |
 
 
@@ -35,46 +35,46 @@ La tabla de extensión contiene las columnas que se muestran en la tabla siguien
 
 <dl> <dt>
 
-<span id="Extension"></span><span id="extension"></span><span id="EXTENSION"></span>Extension
+<span id="Extension"></span><span id="extension"></span><span id="EXTENSION"></span>Extensión
 </dt> <dd>
 
-La extensión asociada a la fila de la tabla. La extensión puede tener una longitud de hasta 255 caracteres. Escriba la extensión en este campo sin el punto anterior.
+Extensión asociada a la fila de tabla. La extensión puede tener hasta 255 caracteres. Escriba la extensión en este campo sin el período anterior.
 
 </dd> <dt>
 
-<span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Pone\_
+<span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Componente\_
 </dt> <dd>
 
-Una clave externa a la primera columna de la tabla de [componentes](component-table.md) . Esta columna hace referencia al componente que controla la instalación de la extensión.
+Clave externa a la primera columna de la [tabla Component.](component-table.md) Esta columna hace referencia al componente que controla la instalación de la extensión.
 
 </dd> <dt>
 
-<span id="ProgId_"></span><span id="progid_"></span><span id="PROGID_"></span>Programa\_
+<span id="ProgId_"></span><span id="progid_"></span><span id="PROGID_"></span>Progid\_
 </dt> <dd>
 
-IDENTIFICADOR de programa asociado a esta extensión. Se trata de una clave externa en la tabla [ProgID](progid-table.md) .
+Identificador de programa asociado a esta extensión. Se trata de una clave externa en la [tabla ProgId.](progid-table.md)
 
 </dd> <dt>
 
-<span id="MIME_"></span><span id="mime_"></span>Mine\_
+<span id="MIME_"></span><span id="mime_"></span>Mime\_
 </dt> <dd>
 
-El tipo de contenido que se va a escribir para la columna de extensión.
+Tipo de contenido que se va a escribir para la columna Extensión.
 
-Una clave externa a la primera columna de la tabla [MIME](mime-table.md) .
+Clave externa de la primera columna de la [tabla MIME.](mime-table.md)
 
 </dd> <dt>
 
-<span id="Feature_"></span><span id="feature_"></span><span id="FEATURE_"></span>Ofrecen\_
+<span id="Feature_"></span><span id="feature_"></span><span id="FEATURE_"></span>Característica\_
 </dt> <dd>
 
-Una clave externa en la primera columna de la tabla de [características](feature-table.md) que especifica la característica que proporciona el servidor de extensión.
+Clave externa en la primera columna de la [tabla Característica](feature-table.md) que especifica la característica que proporciona el servidor de extensiones.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se hace referencia a la tabla de extensión cuando se ejecuta la acción [RegisterExtensionInfo](registerextensioninfo-action.md) o la acción [UnRegisterExtensionInfo](unregisterextensioninfo-action.md) .
+Se hace referencia a la tabla Extension cuando se ejecuta [la acción RegisterExtensionInfo](registerextensioninfo-action.md) o la acción [UnRegisterExtensionInfo.](unregisterextensioninfo-action.md)
 
 ## <a name="validation"></a>Validación
 

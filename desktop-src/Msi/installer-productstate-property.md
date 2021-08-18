@@ -1,7 +1,7 @@
 ---
 description: La propiedad ProductState es una propiedad de solo lectura que devuelve la información de estado de instalación de un producto.
 ms.assetid: 9ae3bc86-aa13-41b3-b058-4037607f7dd5
-title: Instalador. ProductState (método de propiedad)
+title: Método Installer.ProductState Property
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: cdd1397def1cd25405d0a80a6d5cfde2ee6ef77e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c19a712c4838905296026a2a0bea4c9e1abc1c49465a854692dd603734e0bd89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763625"
 ---
-# <a name="installerproductstate-property-method"></a>Instalador. ProductState (método de propiedad)
+# <a name="installerproductstate-property-method"></a>Método Installer.ProductState Property
 
 La **propiedad ProductState** es una propiedad de solo lectura que devuelve la información de estado de instalación de un producto.
 
@@ -50,7 +50,7 @@ Especifica el código de producto del producto.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Devuelve uno de los valores que se muestran en la tabla siguiente.
 
@@ -58,8 +58,8 @@ Devuelve uno de los valores que se muestran en la tabla siguiente.
 
 | Estado de instalación        | Descripción                                      |
 |---------------------------|--------------------------------------------------|
-| msiInstallStateAbsent     | El producto se instala para un usuario diferente.   |
-| msiInstallStateDefault    | El producto está instalado para el usuario actual.   |
+| msiInstallStateAbsent     | El producto se instala para otro usuario.   |
+| msiInstallStateDefault    | El producto se instala para el usuario actual.   |
 | msiInstallStateAdvertised | El producto se anuncia pero no se instala.     |
 | msiInstallStateInvalidArg | Se pasó un parámetro no válido a la función. |
 | msiInstallStateUnknown    | El producto no se anuncia ni se instala. |
@@ -75,9 +75,9 @@ Devuelve uno de los valores que se muestran en la tabla siguiente.
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller se define como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Métodos IDCompositionScaleTransform SetCenterY (Dcomp. h)
+title: Métodos IDCompositionScaleTransform SetCenterY (Dcomp.h)
 description: Cambia o anima el valor de la propiedad CenterY de una transformación de escala 2D.
 ms.assetid: 18A755E6-C6E8-437C-BBB5-58F36F754BE7
 keywords:
-- Métodos SetCenterY DirectComposition
+- Métodos De SetCenterY DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 9b39df7d5452f5046ff6bb20b72946c2aa7d556f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: babda3397861434095073cab2ccb84e30dec1f138df6aac84f590bf90dfe1be1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726594"
 ---
-# <a name="idcompositionscaletransformsetcentery-methods"></a>IDCompositionScaleTransform:: SetCenterY (métodos)
+# <a name="idcompositionscaletransformsetcentery-methods"></a>Métodos IDCompositionScaleTransform::SetCenterY
 
-Cambia o anima el valor de la propiedad CenterY de una transformación de escala 2D. La propiedad CenterY especifica la coordenada y del punto sobre el que se realiza el ajuste de escala.
+Cambia o anima el valor de la propiedad CenterY de una transformación de escala 2D. La propiedad CenterY especifica la coordenada y del punto sobre el que se realiza el escalado.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Cambia o anima el valor de la propiedad CenterY de una transformación de escala
 
 | Método                                                                                                        | Descripción                                            |
 |:--------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------|
-| [**SetCenterY (float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform-setcentery(float))                                     | Cambia el valor de la propiedad CenterY.<br/>  |
-| [**SetCenterY (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform-setcentery(idcompositionanimation)) | Anima el valor de la propiedad CenterY.<br/> |
+| [**SetCenterY(float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform-setcentery(float))                                     | Cambia el valor de la propiedad CenterY.<br/>  |
+| [**SetCenterY(IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionscaletransform-setcentery(idcompositionanimation)) | Anima el valor de la propiedad CenterY.<br/> |
 
 
 
@@ -40,10 +40,10 @@ Cambia o anima el valor de la propiedad CenterY de una transformación de escala
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Dcomp. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Dcomp. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows solo 8 \[ aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2012 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 

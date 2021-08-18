@@ -66,7 +66,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 ## <a name="remarks"></a>Comentarios
 
-Los tiempos de medios son relativos al archivo multimedia original. Para obtener más información, vea [Time in DirectShow Editing Services](time-in-directshow-editing-services.md).
+Las horas de los medios son relativas al archivo multimedia original. Para obtener más información, vea [Time in DirectShow Editing Services](time-in-directshow-editing-services.md).
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -89,14 +89,14 @@ Los tiempos de medios son relativos al archivo multimedia original. Para obtener
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [**IamTimelineSrc (interfaz)**](iamtimelinesrc.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

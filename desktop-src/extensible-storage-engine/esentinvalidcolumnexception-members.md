@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: miembros de EsentInvalidColumnException'
+description: 'Más información sobre: Miembros de EsentInvalidColumnException'
 title: Miembros de EsentInvalidColumnException
 TOCTitle: EsentInvalidColumnException members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.EsentInvalidColumnException
@@ -7,21 +7,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101885
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 12ee64f2de0c4f69750cb8b72d0791633cd1d2d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a87ec1ad9c8c966675b460a880247e6d08bbbfa24638fcfa914023ef3f7a4c03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982445"
 ---
 # <a name="esentinvalidcolumnexception-members"></a>Miembros de EsentInvalidColumnException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Excepción que se produce cuando se produce un error en una conversión de columna.
+Excepción que se produce cuando se produce un error en la conversión de una columna.
 
-El tipo [EsentInvalidColumnException](./esentinvalidcolumnexception-class.md) expone los siguientes miembros.
+El [tipo EsentInvalidColumnException](./esentinvalidcolumnexception-class.md) expone los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -41,8 +41,8 @@ El tipo [EsentInvalidColumnException](./esentinvalidcolumnexception-class.md) ex
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn350430(v=exchg.10).md">EsentInvalidColumnException (SerializationInfo, StreamingContext)</a></td>
-<td>Inicializa una nueva instancia de la clase EsentInvalidColumnException. Este constructor se utiliza para deserializar una excepción serializada.</td>
+<td><a href="dn350430(v=exchg.10).md">EsentInvalidColumnException(SerializationInfo, StreamingContext)</a></td>
+<td>Inicializa una nueva instancia de la clase EsentInvalidColumnException. Este constructor se usa para deserializar una excepción serializada.</td>
 </tr>
 </tbody>
 </table>
@@ -63,43 +63,43 @@ Superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propiedad protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Hresult</a></td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="/dotnet/api/system.exception.innerexception#System_Exception_InnerException">InnerException</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="dn319488(v=exchg.10).md">Message</a></td>
-<td>Obtiene un mensaje de texto que describe la excepción. (Invalida <a href="/dotnet/api/system.exception.message#System_Exception_Message">Exception. Message</a>).</td>
+<td><a href="dn319488(v=exchg.10).md">Mensaje</a></td>
+<td>Obtiene un mensaje de texto que describe la excepción. (Invalida <a href="/dotnet/api/system.exception.message#System_Exception_Message">Exception.Message).</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="/dotnet/api/system.exception.source#System_Exception_Source">Origen</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="/dotnet/api/system.exception.targetsite#System_Exception_TargetSite">TargetSite</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -125,13 +125,13 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -141,12 +141,12 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.getobjectdata#System_Exception_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_">GetObjectData</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
@@ -156,7 +156,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.tostring#System_Exception_ToString">ToString</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -170,4 +170,4 @@ Superior
 
 [Clase EsentInvalidColumnException](./esentinvalidcolumnexception-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

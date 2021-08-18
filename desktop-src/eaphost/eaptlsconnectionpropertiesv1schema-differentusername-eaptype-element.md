@@ -1,6 +1,6 @@
 ---
 title: Elemento DifferentUsername (EapType)
-description: Obtenga información sobre el elemento DifferentUsername (EapType). Este elemento determina el nombre de usuario EAP-TLS que se va a usar.
+description: Obtenga información sobre el elemento DifferentUsername (EapType). Este elemento determina qué nombre de usuario debe usar EAP-TLS.
 ms.assetid: f0ce41a9-c774-4d12-8a5a-a8eb1eb84cb0
 keywords:
 - Elemento DifferentUsername EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 505e23c74d4c1c8c74a50906809d0acc9ce06c42
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 2980a55e76d238578822cfc8db54a9b6c324e21d4a8f0481ab9bc91e050fb008
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105705025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984095"
 ---
 # <a name="differentusername-eaptype-element"></a>Elemento DifferentUsername (EapType)
 
-El elemento **DifferentUsername (EapType)** determina el nombre de usuario EAP-TLS que se va a usar.
+El **elemento DifferentUsername (EapType)** determina qué nombre de usuario va a usar EAP-TLS.
 
 ``` syntax
 <xs:element name="DifferentUsername"
@@ -31,22 +31,22 @@ El elemento **DifferentUsername (EapType)** determina el nombre de usuario EAP-T
  />
 ```
 
-El elemento **DifferentUsername** se define mediante el elemento [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md) .
+El elemento [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md) define el elemento **DifferentUsername.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el elemento **DifferentUserName** es true, EAP-TLS debe usar un nombre de usuario distinto del nombre que aparece en el certificado. Si el elemento **DifferentUserName** es false, EAP-TLS usa el nombre de usuario que aparece en el certificado.
+Si el **elemento DifferentUserName** es TRUE, EAP-TLS debe usar un nombre de usuario distinto del nombre que aparece en el certificado. Si el **elemento DifferentUserName** es FALSE, EAP-TLS usa el nombre de usuario que aparece en el certificado.
 
-El elemento **DifferentUserName** es opcional.
+El **elemento DifferentUserName** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -75,7 +75,7 @@ El elemento **DifferentUserName** es opcional.
 [Esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
-[Elementos de esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-elements.md)
+[Eaptlsconnectionpropertiesv1 Schema Elements](eaptlsconnectionpropertiesv1schema-elements.md)
 </dt> </dl>
 
  

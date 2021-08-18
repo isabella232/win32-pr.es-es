@@ -1,7 +1,7 @@
 ---
-description: Empaquetar los datos de la partición de malla en un Atlas.
+description: Empaquetar datos de partición de malla en un atlas.
 ms.assetid: 4da85626-c36c-44d9-990b-0db80ed04423
-title: Función D3DXUVAtlasPack (D3DX9Mesh. h)
+title: Función D3DXUVAtlasPack (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 31de326160120fe14a71841cb5f2d18e1c8d4e57
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6990d6fbc114c874b31d0035a2415d48161d3065718efce3783a041a2097e96f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749665"
 ---
-# <a name="d3dxuvatlaspack-function"></a>D3DXUVAtlasPack función)
+# <a name="d3dxuvatlaspack-function"></a>Función D3DXUVAtlasPack
 
-Empaquetar los datos de la partición de malla en un Atlas.
+Empaquetar datos de partición de malla en un atlas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,48 +50,48 @@ HRESULT D3DXUVAtlasPack(
 
 <dl> <dt>
 
-*pmesh* \[ de\]
+*pMesh* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntero a una malla de entrada (vea [**ID3DXMesh**](id3dxmesh.md)) que contiene la geometría del objeto para calcular el Atlas. Como mínimo, la malla debe contener datos de posición y coordenadas de textura 2D.
+Puntero a una malla de entrada [**(vea ID3DXMesh)**](id3dxmesh.md)que contiene la geometría del objeto para calcular el atlas. Como mínimo, la malla debe contener datos de posición y coordenadas de textura 2D.
 
 </dd> <dt>
 
-*dwWidth* \[ de\]
+*dwWidth* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ancho de la textura.
+Ancho de textura.
 
 </dd> <dt>
 
-*dwHeight* \[ de\]
+*dwHeight* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Alto de textura.
 
 </dd> <dt>
 
-*fGutter* \[ de\]
+*fGutter* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Distancia mínima, en textura, entre dos gráficos en el Atlas. El margen se escala siempre por el ancho; por lo tanto, si se usa un medianil de 2,5 en una textura 512 x 512, la distancia mínima entre dos gráficos es 2,5/512,0 textura.
+Distancia mínima, en texturas, entre dos gráficos en el atlas. El ancho del medianía siempre se escala; por lo tanto, si se usa un medianera de 2,5 en una textura de 512 x 512, la distancia mínima entre dos gráficos es de 2,5 / 512,0 texturas.
 
 </dd> <dt>
 
-*dwTextureIndex* \[ de\]
+*dwTextureIndex* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Índice de coordenadas de textura basado en cero que identifica el conjunto de coordenadas de textura que se va a usar.
+Índice de coordenadas de textura de base cero que identifica el conjunto de coordenadas de textura que se va a usar.
 
 </dd> <dt>
 
@@ -100,29 +100,29 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Puntero a una matriz de tres DWORD por cada tipo que especifica los tres vecinos para cada una de las caras de la malla. Debe derivarse del ppPartitionResultAdjacency devuelto desde [**D3DXUVAtlasPartition**](d3dxuvatlaspartition.md). Este valor no puede ser **null** porque Pack debe saber dónde se han cortado los gráficos en el paso de partición para encontrar los bordes de cada gráfico.
+Puntero a una matriz de tres DWORD por cara que especifican los tres vecinos de cada cara de la malla. Debe derivarse de ppPartitionResultAdjacency devuelto desde [**D3DXUVAtlasPartition**](d3dxuvatlaspartition.md). Este valor no puede ser **NULL,** porque Pack debe saber dónde se cortaron los gráficos en el paso de partición para encontrar los bordes de cada gráfico.
 
 </dd> <dt>
 
-*pCallback* \[ de\]
+*pCallback* \[ En\]
 </dt> <dd>
 
-Tipo: **[LPD3DXUVATLASCB](lpd3dxuvatlascb.md)**
+Tipo: **[LPD3DVATVATLASCB](lpd3dxuvatlascb.md)**
 
-Un puntero a una función de devolución de llamada (vea [LPD3DXUVATLASCB](lpd3dxuvatlascb.md)) que es útil para supervisar el progreso.
+Puntero a una función de devolución de llamada [(vea LPD3DVATVATLASCB)](lpd3dxuvatlascb.md)que resulta útil para supervisar el progreso.
 
 </dd> <dt>
 
-*fCallbackFrequency* \[ de\]
+*fCallbackFrequency* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Especificar la frecuencia con la que D3DX llamará a la devolución de llamada; un valor predeterminado razonable es 0,0001 f.
+Especifique la frecuencia con la que D3DX llamará a la devolución de llamada; un valor predeterminado razonable es 0,0001f.
 
 </dd> <dt>
 
-*pUserContent* \[ de\]
+*pUserContent* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
@@ -131,21 +131,21 @@ Puntero void que se va a devolver a la función de devolución de llamada.
 
 </dd> <dt>
 
-*dwOptions* \[ de\]
+*dwOptions* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Este parámetro de opciones está actualmente reservado.
+Este parámetro de opciones está reservado actualmente.
 
 </dd> <dt>
 
-*pFacePartitioning* \[ de\]
+*pFacePartitioning* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)**
 
-Un puntero a un [**ID3DXBuffer**](id3dxbuffer.md) que contiene la matriz de la creación de particiones de caras final. Cada elemento contiene un valor DWORD por cada tipo.
+Puntero a un [**ID3DXBuffer que**](id3dxbuffer.md) contiene la matriz del particionamiento de caras final. Cada elemento contiene un DWORD por cara.
 
 </dd> </dl>
 
@@ -153,7 +153,7 @@ Un puntero a un [**ID3DXBuffer**](id3dxbuffer.md) que contiene la matriz de la c
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK; de lo contrario, el valor es D3DERR \_ INVALIDCALL.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK; de lo contrario, el valor es D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -161,8 +161,8 @@ Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK; de lo c
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -170,7 +170,7 @@ Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK; de lo c
 
 <dl> <dt>
 
-[Funciones de UVAtlas](dx9-graphics-reference-d3dx-functions-uvatlas.md)
+[Funciones UVAtlas](dx9-graphics-reference-d3dx-functions-uvatlas.md)
 </dt> </dl>
 
  

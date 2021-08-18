@@ -30,7 +30,7 @@ Esta interfaz solo está disponible en Windows Server 2012 R2 con [KB3091411](ht
 
 ## <a name="members"></a>Miembros
 
-La **interfaz ITsSbTargetEx** hereda de [**ITsSbTarget.**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtarget) **ITsSbTargetEx también** tiene estos tipos de miembros:
+La **interfaz ITsSbTargetEx** hereda de [**ITsSbTarget.**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtarget) **ITsSbTargetEx** también tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
@@ -62,16 +62,16 @@ La **interfaz ITsSbTargetEx** tiene estas propiedades.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                        |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2012 R2<br/>                                                |
-| IID<br/>                      | IID \_ ITsSbTargetEx se define como 74f99987-625d-11e5-bea1-a0481c7e9064<br/> |
+| IID<br/>                      | IID ITsSbTargetEx se define como \_ 74f99987-625d-11e5-bea1-a0481c7e9064<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5d976c29d370887362e46899c7fb2a654d6e2cc7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 37e09bab2473ace06b9e0fa803db523453ccff4796693d9faa1d410f5a6630f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119748212"
 ---
 # <a name="id3dxfontonresetdevice-method"></a>Método ID3DXFont::OnResetDevice
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -59,7 +59,7 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se prod
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

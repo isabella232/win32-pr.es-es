@@ -1,31 +1,31 @@
 ---
 title: El entorno
-description: Los desarrolladores que trabajan en aplicaciones para Windows de 64 bits encontrarán el entorno de desarrollo prácticamente idéntico al entorno de desarrollo de Windows de 32 bits.
+description: Los desarrolladores que trabajan en aplicaciones para aplicaciones de 64 Windows encontrarán el entorno de desarrollo prácticamente idéntico al entorno de desarrollo para aplicaciones de 32 Windows.
 ms.assetid: 49b2b952-f771-4721-a9b0-01eb67a98007
 keywords:
-- entorno de desarrollo de 64 programación de Windows de bits
-- 'entorno de 64: programación de Windows de bits'
-- Guía de programación de Windows de 64 bits guía de programación de Windows de 64 bits, entorno de desarrollo
+- entorno de desarrollo de 64 bits Windows programación
+- environment 64-bit Windows Programming
+- Guía de programación de 64 Windows de programación de 64 Windows programación, entorno de desarrollo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 104ea1bdacbb478eaa0abcf46d04c3d772540f26
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 69580d6537c832abaf51b20a553c4e4e788a6013bdfc14a8002f60de9872da62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119734135"
 ---
 # <a name="the-environment"></a>El entorno
 
-Los desarrolladores que trabajan en aplicaciones para Windows de 64 bits encontrarán el entorno de desarrollo prácticamente idéntico al entorno de desarrollo de Windows de 32 bits. Las API existentes se han modificado cuando sea necesario para que reflejen la precisión de la plataforma en la que se ejecutan. El resultado es una simplicidad y una curva de aprendizaje breve para el desarrollador; escribir código para Windows de 64 bits es igual que escribir código para Windows de 32 bits.
+Los desarrolladores que trabajan en aplicaciones para aplicaciones de 64 Windows encontrarán el entorno de desarrollo prácticamente idéntico al entorno de desarrollo para aplicaciones de 32 Windows. Las API existentes se han modificado cuando es necesario para permitirles reflejar la precisión de la plataforma en la que se ejecutan. El resultado es la simplicidad y una curva de aprendizaje corta para el desarrollador: escribir código para archivos de 64 bits Windows es igual que escribir código para archivos de 32 Windows.
 
-Los archivos de encabezado de Windows admiten nuevos tipos de datos que permiten que los punteros y las variables asociadas a puntero reflejen la precisión de la plataforma. Esto significa que los desarrolladores pueden compilar una base de origen única para ejecutarse de forma nativa en Windows de 32 bits o en Windows de 64 bits. Esta estrategia reduce el costo del desarrollo de aplicaciones que aprovechan el hardware de 64 bits, como procesadores AMD Opteron o Athlon64 o procesadores Intel Itanium.
+Los Windows de encabezado admiten nuevos tipos de datos que permiten que los punteros y las variables asociadas al puntero reflejen la precisión de la plataforma. Esto significa que los desarrolladores pueden compilar una base de origen única para ejecutarse de forma nativa en archivos de 32 Windows o de 64 Windows. Esta estrategia reduce el costo de desarrollar aplicaciones que aprovechan hardware de 64 bits, como procesadores AMD Opteron o Athlon64 o procesadores Intel Itanium.
 
-Tendrá más tiempo para que las aplicaciones 64 de bits estén listas si adopta las nuevas convenciones de tipos de datos lo antes posible. Si va a cambiar el código, debe cambiar las definiciones de datos al mismo tiempo. Pruebe la aplicación en Windows de 32 bits, ejecútela a través del compilador de 64 bits (descrito en [las herramientas](the-tools.md)) y la aplicación estará lista para probarse cuando tenga el hardware de 64 bits adecuado.
+Tendrá más tiempo para preparar las aplicaciones de 64 bits si adopta las nuevas convenciones de tipo de datos lo antes posible. Si va a cambiar el código, debe cambiar las definiciones de datos al mismo tiempo. Pruebe la aplicación en un Windows de 32 bits, ejecute el compilador de 64 bits (descrito en [Las](the-tools.md)herramientas) y la aplicación estará lista para probarse cuando tenga el hardware de 64 bits adecuado.
 
- 
+ 
 
- 
+ 
 
 
 

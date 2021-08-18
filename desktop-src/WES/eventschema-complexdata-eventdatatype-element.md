@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3f9734c936c502b4c72b783c91d03e58de231f08
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e06673c426fcd201a37a7a02c7a3fb27a0dd67a7558267d4ae3c3df70baed06a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005555"
 ---
 # <a name="complexdata-eventdatatype-element"></a>Elemento ComplexData (EventDataType)
 
@@ -30,7 +30,7 @@ Estructura que se define en la plantilla para el evento.
  />
 ```
 
-El elemento **ComplexData** se define mediante el tipo complejo de [**EventDataType**](eventschema-eventdatatype-complextype.md) .
+El tipo complejo [**EventDataType**](eventschema-eventdatatype-complextype.md) define el elemento **ComplexData.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **ComplexData** se define mediante el tipo complejo de [**EventDataT
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Sombreador que se invoca cuando no se encuentran ni se aceptan intersecciones de rayo.
+description: Sombreador que se invoca cuando no se encuentra ni se acepta ninguna intersección de rayos.
 ms.assetid: ''
 title: Sombreador de errores
 ms.localizationpriority: low
@@ -12,21 +12,21 @@ api_name:
 - RAY_FLAG
 api_type:
 - NA
-ms.openlocfilehash: fe8e2ec9cdbb8ef7567b9327ae5af1128597a601
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 30f7ce32e66a19984ce43737d9fc9cae83652c851174d7db350ca34628a33033
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850828"
 ---
 # <a name="miss-shader"></a>Sombreador de errores
 
-Sombreador que se invoca cuando no se encuentran ni se aceptan intersecciones de rayo. Esto es útil para el sombreado de fondo o cielo.  El sombreador de errores puede usar [**CallShader**](callshader-function.md) y **TraceRay** para programar más trabajo.
+Sombreador que se invoca cuando no se encuentra ni se acepta ninguna intersección de rayos. Esto es útil para el sombreado de fondo o de cielo.  El sombreador de errores puede usar [**CallShader**](callshader-function.md) **y TraceRay** para programar más trabajo.
 
-El sombreador de errores debe incluir un parámetro de carga con tipo definido por el usuario que coincida con el proporcionado a [**TraceRay**](traceray-function.md).
+El sombreador de errores debe incluir un parámetro de carga con tipo de estructura definida por el usuario que coincida con el proporcionado a [**TraceRay**](traceray-function.md).
 
 
-## <a name="shader-type-attribute"></a>Atributo de tipo de sombreador
+## <a name="shader-type-attribute"></a>Atributo Tipo de sombreador
 
 
 ```

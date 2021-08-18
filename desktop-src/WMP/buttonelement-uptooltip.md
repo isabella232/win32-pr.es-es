@@ -1,9 +1,9 @@
 ---
-title: BUTTONELEMENT. up (ToolTip)
-description: El atributo up ToolTip especifica o recupera el texto de información sobre herramientas que aparece cuando el mouse está sobre BUTTONELEMENT y BUTTONELEMENT está en estado up.
+title: BUTTONELEMENT.upToolTip
+description: El atributo upToolTip especifica o recupera el texto de información sobre herramientas que aparece cuando el mouse está sobre BUTTONELEMENT y BUTTONELEMENT está en estado up.
 ms.assetid: ca9334df-8054-481d-966c-58c84d734adf
 keywords:
-- BUTTONELEMENT. up-ToolTip Windows Media Player
+- ButtonELEMENT.upToolTip Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ec3b8d74b05a6d1e4ad6abd301a859f724e5c8d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 08fc4435ec51ea3460d03d4fc889307a026f8762671291b648f09c282fb812fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997745"
 ---
-# <a name="buttonelementuptooltip"></a>BUTTONELEMENT. up (ToolTip)
+# <a name="buttonelementuptooltip"></a>BUTTONELEMENT.upToolTip
 
-El atributo up **ToolTip** especifica o recupera el texto de información sobre herramientas que aparece cuando el mouse está sobre **BUTTONELEMENT** y **ButtonElement** está en estado up.
+El **atributo upToolTip** especifica o recupera el texto de información sobre herramientas que aparece cuando el mouse está sobre **BUTTONELEMENT** y **BUTTONELEMENT** está en estado up.
 
 ``` syntax
         elementID.upToolTip
@@ -29,15 +29,15 @@ El atributo up **ToolTip** especifica o recupera el texto de información sobre 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura con un valor predeterminado de "" (cadena vacía) con una longitud máxima de 1024 caracteres.
+Este atributo es una cadena de lectura y **escritura** con un valor predeterminado de "" (cadena vacía) con una longitud máxima de 1024 caracteres.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando este atributo se establece en "" (cadena vacía), no se muestra ninguna información sobre herramientas.
+Cuando este atributo se establece en "" (cadena vacía), no se muestra información sobre herramientas.
 
 ## <a name="examples"></a>Ejemplos
 
-Vea el atributo [mappingColor](buttonelement-mappingcolor.md) para ver un ejemplo que ilustra el uso de este atributo.
+Vea el [atributo mappingColor](buttonelement-mappingcolor.md) para obtener un ejemplo que ilustra el uso de este atributo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Vea el atributo [mappingColor](buttonelement-mappingcolor.md) para ver un ejempl
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -53,7 +53,7 @@ Vea el atributo [mappingColor](buttonelement-mappingcolor.md) para ver un ejempl
 
 <dl> <dt>
 
-[**BUTTONELEMENT (elemento)**](buttonelement-element.md)
+[**Elemento BUTTONELEMENT**](buttonelement-element.md)
 </dt> </dl>
 
  

@@ -1,36 +1,36 @@
 ---
-title: Cómo usar los controles de barra de progreso
-description: En este tema se explica cómo usar una barra de progreso para indicar el progreso de una operación prolongada de análisis de archivos.
+title: Cómo usar controles de barra de progreso
+description: En este tema se explica cómo usar una barra de progreso para indicar el progreso de una operación de análisis de archivos larga.
 ms.assetid: 4CC25F3A-9CAF-4ADC-B29C-3FACDD73D5A0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c71ff33a14f2d2af5fa8735c5197c50acaa948b
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: e65d47d6b41422853d401a1fb2686e03e3d3f5bc378b78b7ba762b86fc7ffe30
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103995681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826425"
 ---
-# <a name="how-to-use-progress-bar-controls"></a>Cómo usar los controles de barra de progreso
+# <a name="how-to-use-progress-bar-controls"></a>Cómo usar controles de barra de progreso
 
-En este tema se explica cómo usar una barra de progreso para indicar el progreso de una operación prolongada de análisis de archivos.
+En este tema se explica cómo usar una barra de progreso para indicar el progreso de una operación de análisis de archivos larga.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 ### <a name="create-a-progress-bar-control"></a>Crear un control de barra de progreso
 
-En el código de ejemplo siguiente se crea una barra de progreso y se coloca en la parte inferior del área de cliente de la ventana primaria. El alto de la barra de progreso se basa en el alto del mapa de bits de las flechas utilizadas en una barra de desplazamiento. El intervalo se basa en el tamaño del archivo dividido por 2.048, que es el tamaño de cada "fragmento" de datos que se lee del archivo. En el ejemplo también se establece un incremento y se hace avanzar la posición actual de la barra de progreso en el incremento después de analizar cada fragmento.
+El código de ejemplo siguiente crea una barra de progreso y la coloca a lo largo de la parte inferior del área de cliente de la ventana primaria. El alto de la barra de progreso se basa en el alto del mapa de bits de flecha usado en una barra de desplazamiento. El intervalo se basa en el tamaño del archivo dividido entre 2048, que es el tamaño de cada "fragmento" de datos que se lee del archivo. En el ejemplo también se establece un incremento y se avanza la posición actual de la barra de progreso en el incremento después de analizar cada fragmento.
 
 
 ```C++
@@ -124,13 +124,13 @@ BOOL ParseALargeFile(HWND hwndParent, LPTSTR lpszFileName)
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Debe asegurarse de utilizar la función [**readfile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) correctamente para garantizar la seguridad de la aplicación. Por ejemplo, en el código de ejemplo, debe comprobar para asegurarse de que `ReadFile` realmente Lee todos los datos solicitados.
+Debe asegurarse de usar correctamente la [**función ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) para garantizar la seguridad de la aplicación. Por ejemplo, en el código de ejemplo, debe comprobar que realmente lee `ReadFile` todos los datos solicitados.
 
-Observe también que el cuarto parámetro de [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea)(( \_ atributos LPSECURITY)**null**: establece los valores de seguridad predeterminados. Si necesita una configuración de seguridad específica, debe establecer los valores adecuados en los miembros de la estructura. Llame a **sizeof** para establecer el tamaño correcto de la estructura de **\_ atributos LPSECURITY** .
+Observe también que el cuarto parámetro de [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea)(LPSECURITY \_ ATTRIBUTES)**NULL** establece los valores de seguridad predeterminados. Si necesita una configuración de seguridad específica, debe establecer los valores adecuados en los miembros de la estructura. Llame **a sizeof** para establecer el tamaño correcto de la **estructura LPSECURITY \_ ATTRIBUTES.**
 
-Para obtener más información, vea [consideraciones de seguridad: controles de Microsoft Windows](sec-comctls.md).
+Para obtener más información, vea [Security Considerations: Microsoft Windows Controls](sec-comctls.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -139,9 +139,9 @@ Para obtener más información, vea [consideraciones de seguridad: controles de 
 [Usar controles de barra de progreso](using-progress-bar-controls.md)
 </dt> <dt>
 
-[Consideraciones de seguridad: controles de Microsoft Windows](sec-comctls.md)
+[Consideraciones de seguridad: Controles de Windows Microsoft](sec-comctls.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,5 +1,5 @@
 ---
-title: métodos idcompositionhuerotationeffect SetAngle (Dcomp. h)
+title: Métodos SetAngle de idcompositionhuerotationeffect (Dcomp.h)
 description: Establece el ángulo para girar el matiz.
 ms.assetid: e4069c7a-c8a1-dadb-a1fc-1d0c4c58834f
 keywords:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 1b0e78443ca0cd2e60cf851f74e9125d920bf9ed
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dafec7ae3e325965df113e4aa5f901107ffb16d230baf23ada5fa939b94261cc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787855"
 ---
-# <a name="idcompositionhuerotationeffectsetangle-methods"></a>idcompositionhuerotationeffect:: SetAngle (métodos)
+# <a name="idcompositionhuerotationeffectsetangle-methods"></a>Métodos idcompositionhuerotationeffect::SetAngle
 
 Establece el ángulo para girar el matiz.
 
@@ -40,7 +40,7 @@ Establece el ángulo para girar el matiz.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

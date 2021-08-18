@@ -1,21 +1,21 @@
 ---
-description: Ejemplo de filtros de origen de la instalación
+description: Ejemplo de filtros de origen de inserción
 ms.assetid: fc52f7bc-e9c7-4cd4-91e8-5c8f3450ca95
-title: Ejemplo de filtros de origen de la instalación
+title: Ejemplo de filtros de origen de inserción
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ce22c7c6d73f54152ce469b4b3bb40c20db6c29
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c0e72a9be7e5fa81d4fe2dc006c6d12e42f4f94d91561823b7f26a8400bbddda
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747795"
 ---
-# <a name="push-source-filters-sample"></a>Ejemplo de filtros de origen de la instalación
+# <a name="push-source-filters-sample"></a>Ejemplo de filtros de origen de inserción
 
 ## <a name="description"></a>Descripción
 
-Este ejemplo consta de un conjunto de tres filtros de origen que proporcionan los siguientes datos de origen como una secuencia de vídeo:
+Este ejemplo consta de un conjunto de tres filtros de origen que proporcionan los siguientes datos de origen como secuencia de vídeo:
 
 -   CPushSourceBitmap: mapa de bits único (cargado desde el directorio actual)
 -   CPushSourceBitmapSet: conjunto de mapas de bits (cargados desde el directorio actual)
@@ -23,24 +23,24 @@ Este ejemplo consta de un conjunto de tres filtros de origen que proporcionan lo
 
 ## <a name="usage"></a>Uso
 
-Para usar un filtro, cárguelo en GraphEdit y represente su PIN de salida. Esto conectará un representador de vídeo (y posiblemente un filtro de convertidor de espacio de colores) y le permitirá mostrar la salida. Si desea representar el resultado en un archivo AVI, cárguelo, cargue el filtro del escritor de archivos, proporcione un nombre de salida al escritor de archivos y represente el PIN de salida del filtro PushSource. También puede cargar y conectar compresores de vídeo, efectos de vídeo, etc.
+Para usar un filtro, cárbalo en GraphEdit y represente su pin de salida. Esto conectará un representador de vídeo (y posiblemente un filtro convertidor de espacio de color) y le permitirá mostrar la salida. Si desea representar la salida en un archivo AVI, cargue el Mux avi, cargue un filtro de escritor de archivos, proporcione un nombre de salida al escritor de archivos y represente el pin de salida del filtro PushSource. También puede cargar y conectar vídeos, efectos de vídeo, entre otros.
 
 > [!Note]  
-> El filtro de captura del escritorio no es compatible con las superposiciones de hardware, por lo que no capturará el vídeo representado en una superficie de superposición o los cursores que se muestran a través de la superposición de hardware. Usa GDI para convertir la imagen de escritorio actual en un mapa de bits, que se pasa al pin de salida como un ejemplo multimedia.
+> El filtro de captura de escritorio no admite superposiciones de hardware, por lo que no capturará vídeo representado en una superficie superpuesta ni cursores mostrados a través de la superposición de hardware. Usa GDI para convertir la imagen de escritorio actual en un mapa de bits, que se pasa a la marca de salida como un ejemplo multimedia.
 
  
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-Para descargar los ejemplos del SDK de DirectShow, instale la versión más reciente de la [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
+Para descargar los ejemplos DirectShow SDK, instale la versión más reciente del [SDK de Windows.](https://msdn.microsoft.com/windowsvista/bb980924.aspx)
 
-Este ejemplo se instala en la siguiente ruta de acceso: ejemplos *\[ raíz \] del SDK* \\ \\ filtros DirectShow de multimedia \\ \\ \\ PushSource.
+Este ejemplo se instala en la siguiente ruta de acceso: Ejemplos raíz del *\[ SDK \]* \\ Multimedia DirectShow Filtros \\ \\ \\ \\ pushSource.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Ejemplos de DirectShow](directshow-samples.md)
+[DirectShow Muestras](directshow-samples.md)
 </dt> </dl>
 
  

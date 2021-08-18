@@ -1,9 +1,9 @@
 ---
 title: Evento de almacenamiento en búfer del objeto AxWindowsMediaPlayer
-description: El evento de almacenamiento en búfer se produce cuando el control de Media Player de Windows comienza o finaliza la descarga o el almacenamiento en búfer. | Evento de almacenamiento en búfer del objeto AxWindowsMediaPlayer
+description: El evento de almacenamiento en búfer se produce cuando el control Reproductor de Windows Media o finaliza el almacenamiento en búfer o la descarga. | Evento de almacenamiento en búfer del objeto AxWindowsMediaPlayer
 ms.assetid: ad152c4d-1c91-4da1-bec0-46f89f3b8c79
 keywords:
-- Evento de almacenamiento en búfer del objeto AxWindowsMediaPlayer de Windows Media Player
+- Evento de almacenamiento en búfer del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af595443d78a311510df6a7e06b2e716da22ecae
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 30cca5d7ebe91859162bd729cc32cc03f36f9e3c59ba4474d41311befcce1d21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119765255"
 ---
 # <a name="buffering-event-of-the-axwindowsmediaplayer-object"></a>Evento de almacenamiento en búfer del objeto AxWindowsMediaPlayer
 
-El evento de almacenamiento en búfer se produce cuando el control de Media Player de Windows comienza o finaliza la descarga o el almacenamiento en búfer.
+El evento de almacenamiento en búfer se produce cuando el control Reproductor de Windows Media o finaliza el almacenamiento en búfer o la descarga.
 
 ``` syntax
 [C#]
@@ -47,15 +47,15 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad | Descripción                                                                                                                                                         |
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Start    | System. BooleanSpecifies si el almacenamiento en búfer ha empezado o ha finalizado. Un valor de True indica que ha empezado; un valor de False indica que ha finalizado.<br/> |
+| Start    | System.Boolean Especifica si el almacenamiento en búfer ha comenzado o finalizado. Un valor de true indica que ha comenzado; Un valor de false indica que ha finalizado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Utilice este evento para determinar cuándo se inicia o se detiene el almacenamiento en búfer o la descarga. Puede usar el mismo bloque de eventos para ambos casos y probar *IWMPNetwork*. **bufferingProgress** y *IWMPNetwork*. **downloadProgress** para determinar si Windows Media Player está almacenando en búfer o descargando contenido actualmente.
+Use este evento para determinar cuándo se inicia o se detiene el almacenamiento en búfer o la descarga. Puede usar el mismo bloque de eventos para ambos casos y probar *IWMPNetwork*. **bufferingProgress** e *IWMPNetwork*. **downloadProgress para** determinar si Reproductor de Windows Media almacena en búfer o descarga contenido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ Utilice este evento para determinar cuándo se inicia o se detiene el almacenami
 
 | Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -76,10 +76,10 @@ Utilice este evento para determinar cuándo se inicia o se detiene el almacenami
 [**Objeto AxWindowsMediaPlayer (VB y C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. bufferingProgress (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-bufferingprogress--vb-and-c.md)
+[**IWMPNetwork.bufferingProgress (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-bufferingprogress--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. downloadProgress (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-downloadprogress--vb-and-c.md)
+[**IWMPNetwork.downloadProgress (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-downloadprogress--vb-and-c.md)
 </dt> </dl>
 
  

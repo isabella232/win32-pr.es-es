@@ -1,11 +1,11 @@
 ---
-title: AxWindowsMediaPlayer. newMedia, método
+title: Método AxWindowsMediaPlayer.newMedia
 description: El método newMedia devuelve una interfaz IWMPMedia para un nuevo elemento multimedia.
 ms.assetid: d10a517e-b4da-4f0b-9d51-9d387578d7dd
 keywords:
-- método newMedia de Windows Media Player
-- método newMedia de Windows Media Player, clase AxWindowsMediaPlayer
-- Clase AxWindowsMediaPlayer Windows Media Player, método newMedia
+- Método newMedia Reproductor de Windows Media
+- Método newMedia Reproductor de Windows Media clase , AxWindowsMediaPlayer
+- Clase AxWindowsMediaPlayer Reproductor de Windows Media método , newMedia
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 093a4e2b8181aac9148686108ad2c5c318a4d0cf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cdde19a6cb5da5113cb580c1916052c7ae0d38756bbc120368ffdfd464105591
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119618745"
 ---
-# <a name="axwindowsmediaplayernewmedia-method"></a>AxWindowsMediaPlayer. newMedia, método
+# <a name="axwindowsmediaplayernewmedia-method"></a>Método AxWindowsMediaPlayer.newMedia
 
 El método newMedia devuelve una interfaz IWMPMedia para un nuevo elemento multimedia.
 
@@ -55,17 +55,17 @@ Public Function newMedia( _
 *bstrURL* 
 </dt> <dd>
 
-**System. String** que es la dirección URL del archivo multimedia digital que se usa para inicializar el nuevo elemento multimedia.
+**System.String que** es la dirección URL del archivo multimedia digital que se usa para inicializar el nuevo elemento multimedia.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Una interfaz WMPLib. IWMPMedia que representa el elemento multimedia que se acaba de crear.
+Interfaz WMPLib.IWMPMedia que representa el elemento multimedia recién creado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El parámetro *bstrURL* no debe ser una cadena de longitud cero ("") o null.
+El *parámetro bstrURL* no debe ser una cadena de longitud cero ("") ni null.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,7 +73,7 @@ El parámetro *bstrURL* no debe ser una cadena de longitud cero ("") o null.
 
 | Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

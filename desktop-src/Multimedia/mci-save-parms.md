@@ -1,9 +1,9 @@
 ---
-title: MCI_SAVE_PARMS estructura (Mciapi. h)
-description: La \_ estructura MCI Save \_ parms contiene la información del nombre de archivo para el \_ comando MCI Save.
+title: MCI_SAVE_PARMS estructura (Mciapi.h)
+description: La estructura MCI \_ SAVE \_ PARMS contiene la información de nombre de archivo del comando MCI \_ SAVE.
 ms.assetid: fbaff175-e521-4b93-853a-f444726932d3
 keywords:
-- Estructura de MCI_SAVE_PARMS de Windows multimedia
+- MCI_SAVE_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6252788b1ffc251d2fa6a3f993f074edc31aaac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0d87f581e753265796259fbd33bfeeba3d4c2957e107c7edeb8d08c063e34e32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038335"
 ---
-# <a name="mci_save_parms-structure"></a>MCI \_ Save \_ parms Structure
+# <a name="mci_save_parms-structure"></a>Estructura \_ MCI SAVE \_ PARMS
 
-La estructura **MCI \_ Save \_ parms** contiene la información del nombre de archivo para el comando [**MCI \_ Save**](mci-save.md) .
+La **estructura MCI \_ SAVE \_ PARMS** contiene la información de nombre de archivo del [**comando MCI \_ SAVE.**](mci-save.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,18 +44,18 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana usado para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
 **lpfilename**
 </dt> <dd>
 
-Nombre del archivo que se va a guardar.
+Nombre del archivo que se guardará.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -67,7 +67,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -75,13 +75,13 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_Guardar MCI**](mci-save.md)
+[**MCI \_ SAVE**](mci-save.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))
