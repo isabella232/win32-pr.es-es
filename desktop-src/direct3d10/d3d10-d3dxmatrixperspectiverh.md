@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 03ffd99d016023612daa3de96ae29275d71074a0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 396b54eb38c293f49bf0573fa39656083454e40548ca97e85d1b0721618956b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991185"
 ---
 # <a name="d3dxmatrixperspectiverh-function-d3dx10mathh"></a>Función D3DXMatrixPerspectiveRH (D3DX10Math.h)
 
@@ -99,7 +99,7 @@ Puntero a una estructura D3DXMATRIX que es una matriz de proyección de perspect
 
 Todos los parámetros de la función D3DXMatrixPerspectiveRH son distancias en el espacio de la cámara. Los parámetros describen las dimensiones del volumen de vista.
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXMatrixPerspectiveRH se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXMatrixPerspectiveRH se puede usar como parámetro para otra función.
 
 Esta función usa la siguiente fórmula para calcular la matriz devuelta.
 
@@ -124,7 +124,7 @@ Esta función usa la siguiente fórmula para calcular la matriz devuelta.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

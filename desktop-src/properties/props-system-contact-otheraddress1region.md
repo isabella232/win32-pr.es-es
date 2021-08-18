@@ -4,12 +4,12 @@ ms.assetid: fc930816-0ca9-4b6e-82c6-2df7b3adbeb0
 title: System.Contact.OtherAddress1Region
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bc658358d7b2e9fd077af1924bcba55e42d15ff
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 39f00ef3a73b581038fc9493cdc82d0e5a380a7e1933f4f3b6ee444b21b97e43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119946574"
 ---
 # <a name="systemcontactotheraddress1region"></a>System.Contact.OtherAddress1Region
 

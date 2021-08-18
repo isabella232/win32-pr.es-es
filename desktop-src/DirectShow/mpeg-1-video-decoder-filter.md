@@ -1,17 +1,17 @@
 ---
-description: Filtro de descodificador de vídeo MPEG-1
+description: Filtro descodificador de vídeo MPEG-1
 ms.assetid: 272d2f31-6e57-4ce5-ac86-b4d47f661fea
-title: Filtro de descodificador de vídeo MPEG-1
+title: Filtro descodificador de vídeo MPEG-1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec7f48e441226dee33ef949219e8008e15c9d711
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6e72e575baf6761a34078ee4413b6dd095871a646d9539d08c9357ffd8af5efd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051025"
 ---
-# <a name="mpeg-1-video-decoder-filter"></a>Filtro de descodificador de vídeo MPEG-1
+# <a name="mpeg-1-video-decoder-filter"></a>Filtro descodificador de vídeo MPEG-1
 
 Descodifica vídeo MPEG-1.
 
@@ -28,20 +28,20 @@ Descodifica vídeo MPEG-1.
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a>, <strong>ISpecifyPropertyPages</strong></td>
 </tr>
 <tr class="even">
-<td>Tipos de medios de anclaje de entrada</td>
-<td>MEDIATYPE_Video, FORMAT_MPEGVideo<br/> Los siguientes subtipos son válidos:<br/>
+<td>Tipos de medios de pin de entrada</td>
+<td>MEDIATYPE_Video, FORMAT_MPEGVideo<br/> Los subtipos siguientes son válidos:<br/>
 <ul>
 <li><strong>MEDIASUBTYPE_MPEG1Packet</strong></li>
 <li><strong>MEDIASUBTYPE_MPEG1Payload</strong></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Interfaces de PIN de entrada</td>
+<td>Interfaces de pin de entrada</td>
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"> <strong>IMemInputPin</strong></a></td>
 </tr>
 <tr class="even">
-<td>Tipos de medios de anclaje de salida</td>
-<td>Tipo principal: <strong>MEDIATYPE_Video</strong>,<br/> Tipo de formato: <strong>FORMAT_VideoInfo</strong> o <strong>FORMAT_VideoInfo2</strong><br/> Subtipos<br/>
+<td>Tipos de medios de pin de salida</td>
+<td>Tipo principal: <strong>MEDIATYPE_Video</strong>,<br/> Tipo de formato: <strong>FORMAT_VideoInfo</strong> o <strong>FORMAT_VideoInfo2</strong><br/> Subtipos:<br/>
 <ul>
 <li><strong>MEDIASUBTYPE_RGB24</strong></li>
 <li><strong>MEDIASUBTYPE_RGB32</strong></li>
@@ -54,11 +54,11 @@ Descodifica vídeo MPEG-1.
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Interfaces de clavija de salida</td>
+<td>Interfaces de pin de salida</td>
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"> <strong>IQualityControl</strong></a></td>
 </tr>
 <tr class="even">
-<td>Identificador CLSID</td>
+<td>Filtrar CLSID</td>
 <td><strong>CLSID_CMpegVideoCodec</strong></td>
 </tr>
 <tr class="odd">
@@ -70,7 +70,7 @@ Descodifica vídeo MPEG-1.
 <td>quartz.dll</td>
 </tr>
 <tr class="odd">
-<td><a href="merit.md">Fundament</a></td>
+<td><a href="merit.md">Mérito</a></td>
 <td>0x40000001</td>
 </tr>
 <tr class="even">
@@ -84,15 +84,15 @@ Descodifica vídeo MPEG-1.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este filtro puede descodificar en una superficie DirectDraw. El filtro usa MMX si el equipo es compatible con MMX.
+Este filtro se puede descodificar en una superficie directdraw. El filtro usa MMX si la máquina admite MMX.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Filtros de DirectShow](directshow-filters.md)
+[DirectShow Filtros](directshow-filters.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXSHDot (D3DX10.h): calcula el producto de puntos de dos vectores de armónica esférica (SH).'
+description: 'Función D3DXSHDot (D3DX10.h): calcula el producto de puntos de dos vectores armónicos esféricos (SH).'
 ms.assetid: 30f0e858-4c31-4b25-9979-754d996a7d48
 title: Función D3DXSHDot (D3DX10.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 3ea3e839ff7a5fc038cf40a6402db4a358da8b39
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 77595f5aac53572813be72f498944b029dc42491c376410645037dcbfd4c01f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990925"
 ---
 # <a name="d3dxshdot-function-d3dx10h"></a>Función D3DXSHDot (D3DX10.h)
 
-Calcula el producto de punto de dos vectores armónicos esféricos (SH).
+Calcula el producto de puntos de dos vectores armónicos esféricos (SH).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ FLOAT D3DXSHDot(
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación del armónico esférico (SH). Debe estar en el intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
+Orden de la evaluación armónica esférica (SH). Debe estar en el intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Puntero al primer vector SH.
 
 Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Puntero al segundo vector SH.
+Puntero al segundo vector sh.
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Cada coeficiente de la función base Ylm se almacena en la ubicación de memoria
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

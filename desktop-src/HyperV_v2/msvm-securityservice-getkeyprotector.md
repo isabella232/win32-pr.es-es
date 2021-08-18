@@ -1,7 +1,7 @@
 ---
-description: Recupera el protector de clave de un sistema virtual.
+description: Recupera el protector de clave para un sistema virtual.
 ms.assetid: fd827da8-b2fc-4c57-bb7d-7da46db8e8be
-title: Método GetKeyProtector de la clase Msvm_SecurityService
+title: Método GetKeyProtector de la Msvm_SecurityService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 49f2479660d0402c7b3d428c76f9fe454ecf64cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a7c7768b696f67fd52466eadf8b8487c2c64a7badd86e94b4ef8ff5964e4026
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997055"
 ---
-# <a name="getkeyprotector-method-of-the-msvm_securityservice-class"></a>Método GetKeyProtector de la \_ clase SecurityService de MSVM
+# <a name="getkeyprotector-method-of-the-msvm_securityservice-class"></a>Método GetKeyProtector de la clase SecurityService de Msvm \_
 
-Recupera el protector de clave de un sistema virtual.
+Recupera el protector de clave para un sistema virtual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,14 +40,14 @@ uint32 GetKeyProtector(
 
 <dl> <dt>
 
-*SecuritySettingData* \[ de\]
+*SecuritySettingData* \[ En\]
 </dt> <dd>
 
-String contiene una instancia incrustada de la clase [**MSVM \_ SecuritySettingData**](msvm-securitysettingdata.md) que representa la configuración de seguridad de un sistema virtual.
+String contiene una instancia incrustada de la [**clase \_ SecuritySettingData de Msvm**](msvm-securitysettingdata.md) que representa la configuración de seguridad de un sistema virtual.
 
 </dd> <dt>
 
-*KeyProtector* \[ enuncia\]
+*KeyProtector* \[ out\]
 </dt> <dd>
 
 Recibe la matriz de bytes sin formato que contiene el protector de clave actualmente en uso.
@@ -75,16 +75,16 @@ Si se ejecuta correctamente, devuelve 0 o 4096. De lo contrario, devuelve un err
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -93,10 +93,10 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -105,10 +105,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1703 \[ solo para aplicaciones de escritorio\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -117,7 +117,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ SecurityService**](msvm-securityservice.md)
+[**Msvm \_ SecurityService**](msvm-securityservice.md)
 </dt> </dl>
 
  

@@ -4,33 +4,33 @@ ms.assetid: 4b2b1898-64f1-4908-98b7-ea87a6fcb71d
 title: Buscar, descargar e instalar actualizaciones
 ms.topic: article
 ms.date: 01/16/2020
-ms.openlocfilehash: 289e0535bc39ca3fb39ddb33bbc67d009898b556
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: bfb112533dd30ed203ab44104a0ef241ccf93504376637c07f1527ff3cca79f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105698458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119994254"
 ---
 # <a name="searching-downloading-and-installing-updates"></a>Buscar, descargar e instalar actualizaciones
 
 En el ejemplo de scripting de este tema se muestra cómo usar Windows Update Agent (WUA) para examinar, descargar e instalar actualizaciones.
 
-En el ejemplo se buscan todas las actualizaciones de software aplicables y, a continuación, se muestran esas actualizaciones. Después, crea una colección de actualizaciones para descargar y, a continuación, las descarga. Por último, crea una colección de actualizaciones para instalar y, a continuación, las instala.
+El ejemplo busca todas las actualizaciones de software aplicables y, a continuación, enumera esas actualizaciones. A continuación, crea una colección de actualizaciones para descargarlas y, a continuación, las descarga. Por último, crea una colección de actualizaciones para instalarlas y, a continuación, las instala.
 
-Si desea buscar, descargar e instalar una actualización específica que identifique mediante el título de la actualización, consulte [Buscar, descargar e instalar actualizaciones específicas](searching--downloading--and-installing-specific-updates.md).
+Si desea buscar, descargar e instalar una actualización específica que identifique mediante el título de la actualización, vea Buscar, descargar e instalar [actualizaciones específicas.](searching--downloading--and-installing-specific-updates.md)
 
 Antes de intentar ejecutar este ejemplo, tenga en cuenta lo siguiente:
 
--   WUA debe estar instalado en el equipo. Para obtener más información sobre cómo determinar la versión de WUA que está instalada, vea [determinar la versión actual de WUA](determining-the-current-version-of-wua.md).
--   El ejemplo solo puede descargar actualizaciones mediante WUA. No puede descargar actualizaciones de un servidor de servicios de actualización de software (SUS) 1,0.
--   La ejecución de este ejemplo requiere Windows Script Host (WSH). Para obtener más información acerca de WSH, consulte la sección WSH del kit de desarrollo de software (SDK) de la plataforma. Si el ejemplo se copia en un archivo denominado WUA \_SearchDownloadInstall.vbs, puede ejecutar el ejemplo abriendo una ventana del símbolo del sistema y escribiendo el siguiente comando en el símbolo del sistema.
+-   WUA debe estar instalado en el equipo. Para obtener más información sobre cómo determinar la versión de WUA que está instalada, vea [Determinar la versión actual de WUA.](determining-the-current-version-of-wua.md)
+-   El ejemplo solo puede descargar actualizaciones mediante WUA. No puede descargar actualizaciones de un servidor de Software Update Services (SUS) 1.0.
+-   La ejecución de este ejemplo requiere Windows host de script (WSH). Para obtener más información sobre WSH, consulte la sección WSH del Kit de desarrollo de software de plataforma (SDK). Si el ejemplo se copia en un archivo denominado WUASearchDownloadInstall.vbs, puede ejecutar el ejemplo abriendo una ventana del símbolo del sistema y escribiendo el siguiente comando en el símbolo del \_ sistema.
 
-    **cscript WUA \_SearchDownloadInstall.vbs**
+    **Cscript WUA \_SearchDownloadInstall.vbs**
 
 ## <a name="example"></a>Ejemplo
 
 > [!IMPORTANT]
-> Este script está pensado para demostrar el uso de las API del agente de Windows Update y proporcionar un ejemplo de cómo los desarrolladores pueden usar estas API para resolver los problemas. Este script no está pensado como código de producción y Microsoft no admite el propio script (aunque se admiten las API del agente de Windows Update subyacentes).
+> Este script está pensado para mostrar el uso de las API del agente de Windows Update y proporcionar un ejemplo de cómo los desarrolladores pueden usar estas API para solucionar problemas. Este script no está pensado como código de producción y Microsoft no admite el propio script (aunque se admiten las API Windows Update Agent subyacentes).
 
  
 

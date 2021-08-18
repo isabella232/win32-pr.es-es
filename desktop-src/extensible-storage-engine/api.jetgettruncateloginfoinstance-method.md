@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetGetTruncateLogInfoInstance (método)'
-title: Método API. JetGetTruncateLogInfoInstance
+description: Más información sobre el método Api.JetGetTruncateLogInfoInstance
+title: Método Api.JetGetTruncateLogInfoInstance
 TOCTitle: 'JetGetTruncateLogInfoInstance method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetTruncateLogInfoInstance(Microsoft.Isam.Esent.Interop.JET_INSTANCE,System.String@,System.Int32,System.Int32@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgettruncateloginfoinstance(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fc54d12796a724b382343c4a3514f03102df305f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a0e96bd52b7a6ac196289d554c7376790ceb544823235caf5fd99e4fd5da5e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119978235"
 ---
-# <a name="apijetgettruncateloginfoinstance-method"></a>Método API. JetGetTruncateLogInfoInstance
+# <a name="apijetgettruncateloginfoinstance-method"></a>Método Api.JetGetTruncateLogInfoInstance
 
-Se usa durante una copia de seguridad iniciada por [JetBeginExternalBackupInstance (JET_INSTANCE, BeginExternalBackupGrbit)](./api.jetbeginexternalbackupinstance-method.md) para consultar a una instancia los nombres de los archivos de registro de transacciones que se pueden eliminar de forma segura después de que la copia de seguridad se haya completado correctamente.
+Se usa durante una copia de seguridad iniciada por [JetBeginExternalBackupInstance(JET_INSTANCE, BeginExternalBackupGrbit)](./api.jetbeginexternalbackupinstance-method.md) para consultar una instancia de los nombres de los archivos de registro de transacciones que se pueden eliminar de forma segura después de que la copia de seguridad se haya completado correctamente.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,34 +68,34 @@ public static void JetGetTruncateLogInfoInstance(
 #### <a name="parameters"></a>Parámetros
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Instancia para la que se va a obtener información.
+    Instancia de para la que se obtiene la información.
 
 <!-- end list -->
 
   - files  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    Devuelve una lista de cadenas terminadas en null que describen el conjunto de archivos de registro de base de datos que se pueden eliminar de forma segura una vez completada la copia de seguridad. La lista de cadenas devueltas en este búfer está en el mismo formato que una cadena múltiple utilizada por el registro. Cada cadena terminada en NULL se devuelve en secuencia seguida de un terminador nulo final.
+    Devuelve una lista de cadenas terminadas en NULL que describen el conjunto de archivos de registro de base de datos que se pueden eliminar de forma segura una vez completada la copia de seguridad. La lista de cadenas devueltas en este búfer tiene el mismo formato que una cadena múltiple usada por el Registro. Cada cadena terminada en NULL se devuelve en secuencia seguida de un terminador null final.
 
 <!-- end list -->
 
   - maxChars  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Número máximo de caracteres que se van a recuperar.
+    Número máximo de caracteres que se recuperarán.
 
 <!-- end list -->
 
   - actualChars  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Tamaño real de la lista de archivos. Si es mayor que maxChars, la lista se ha truncado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Es importante tener en cuenta que esta API no devuelve un error o ADVERTENCIA Si el búfer de salida es demasiado pequeño para aceptar la lista completa de archivos que deben formar parte del conjunto de archivos de copia de seguridad.
+Es importante tener en cuenta que esta API no devuelve un error o una advertencia si el búfer de salida es demasiado pequeño para aceptar la lista completa de archivos que deben formar parte del conjunto de archivos de copia de seguridad.
 
 ## <a name="see-also"></a>Vea también
 
@@ -103,6 +103,6 @@ Es importante tener en cuenta que esta API no devuelve un error o ADVERTENCIA Si
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

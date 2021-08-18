@@ -1,7 +1,7 @@
 ---
-description: Determina si la base de datos especificada es una de las bases de datos estándar (SysMain, apphelp, Drvmain o Msimain).
+description: Determina si la base de datos especificada es una de las bases de datos estándar (Sysmain, Apphelp, Drvmain o Msimain).
 ms.assetid: 7d7e3ca7-535e-40b3-b635-299eff8abea5
-title: SdbIsStandardDatabase función)
+title: Función SdbIsStandardDatabase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 9e9e445162c2bfc171ccf975981876f81a8bb804
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7ef30f54b4d8eb4df4d8f136de6357a072cdb0183f462cb3af8a9340ce68b0c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104080089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045195"
 ---
-# <a name="sdbisstandarddatabase-function"></a>SdbIsStandardDatabase función)
+# <a name="sdbisstandarddatabase-function"></a>Función SdbIsStandardDatabase
 
-Determina si la base de datos especificada es una de las bases de datos estándar (SysMain, apphelp, Drvmain o Msimain).
+Determina si la base de datos especificada es una de las bases de datos estándar (Sysmain, Apphelp, Drvmain o Msimain).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,16 +39,16 @@ BOOL WINAPI SdbIsStandardDatabase(
 
 <dl> <dt>
 
-*GuidDB* \[ de\]
+*GuidDB* \[ En\]
 </dt> <dd>
 
-GUID para la base de datos.
+GUID de la base de datos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve **true** si el GUID representa una base de datos estándar o **false** en caso contrario.
+La función devuelve **TRUE si** el GUID representa una base de datos estándar o **FALSE** de lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,8 +56,8 @@ La función devuelve **true** si el GUID representa una base de datos estándar 
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

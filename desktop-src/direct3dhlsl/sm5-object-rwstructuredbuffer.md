@@ -1,9 +1,9 @@
 ---
 title: RWStructuredBuffer
-description: Un búfer de lectura/escritura que puede tomar un tipo T que es una estructura.
+description: Búfer de lectura/escritura que puede tomar un tipo T que es una estructura.
 ms.assetid: 8dd93b81-135d-4f28-898f-38510dc39af1
 keywords:
-- HLSL de RWStructuredBuffer
+- RWStructuredBuffer HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f921ca795e761522828de14ede61894defe44f6e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 58eacc277eac2d55aca0e6068698d11110768cfbe3ab6b564b97a0607715a7ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095155"
 ---
 # <a name="rwstructuredbuffer"></a>RWStructuredBuffer
 
-Un búfer de lectura/escritura que puede tomar un tipo T que es una estructura.
+Búfer de lectura/escritura que puede tomar un tipo T que es una estructura.
 
 
 
@@ -31,30 +31,30 @@ Un búfer de lectura/escritura que puede tomar un tipo T que es una estructura.
 | [**DecrementCounter**](sm5-object-rwstructuredbuffer-decrementcounter.md) | Disminuye el contador oculto del objeto. |
 | [**GetDimensions**](sm5-object-rwstructuredbuffer-getdimensions.md)       | Obtiene las dimensiones de recursos.           |
 | [**IncrementCounter**](sm5-object-rwstructuredbuffer-incrementcounter.md) | Incrementa el contador oculto del objeto. |
-| [**Carga**](rwstructuredbuffer-load.md)                                    | Lee los datos del búfer.                      |
+| [**Cargar**](rwstructuredbuffer-load.md)                                    | Lee los datos del búfer.                      |
 | [**Operador\[\]**](sm5-object-rwstructuredbuffer-operatorindex.md)        | Devuelve una variable de recurso.            |
 
 
 
  
 
-También se puede pasar una variable de recurso a cualquier operación sin ordenar o interbloqueada.
+También se puede pasar una variable de recurso a cualquier operación desordenada o entrelazado.
 
-Los objetos RWStructuredBuffer pueden ir precedidos de la clase de almacenamiento **globallycoherent**. Esta clase de almacenamiento provoca barreras de memoria y sincronizaciones para vaciar los datos en toda la GPU, de modo que otros grupos puedan ver escrituras. Sin este especificador, una barrera de memoria o una sincronización solo vaciará un UAV dentro del grupo actual.
+Los objetos RWStructuredBuffer pueden tener como prefijo la clase de almacenamiento **globalmentecoherente**. Esta clase de almacenamiento hace que las barreras de memoria y las sincronizaciones vaciarán los datos en toda la GPU para que otros grupos puedan ver escrituras. Sin este especificador, una barrera o sincronización de memoria solo vaciará un UAV dentro del grupo actual.
 
-El formato UAV enlazado a este recurso debe crearse con el formato de DXGI \_ \_ desconocido.
+El formato UAV enlazado a este recurso debe crearse con el formato DXGI \_ FORMAT \_ UNKNOWN.
 
-Para obtener más información sobre los [búferes estructurados](/windows/desktop/direct3d11/direct3d-11-advanced-stages-cs-resources), consulte el material de información general.
+Para más información sobre los [búferes estructurados,](/windows/desktop/direct3d11/direct3d-11-advanced-stages-cs-resources)consulte el material de información general.
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Este objeto es compatible con los siguientes modelos de sombreador.
+Este objeto se admite en los siguientes modelos de sombreador.
 
 
 
 | Modelo de sombreador                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Compatible |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Sombreador [modelo 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador superiores modelo de sombreador [4](dx-graphics-hlsl-sm4.md) (disponible a través de la API de Direct3D 11 mediante el nivel de características 10,0 o 10,1 ([**\_ \_ nivel de característica D3D**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_feature_level) \_ 10 \_ X) en los dispositivos que admiten los sombreadores de cálculo. Para obtener más información sobre la compatibilidad del sombreador de cálculo en el hardware de nivel inferior, vea [sombreadores de cálculo en hardware de nivel inferior](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-compute-shaders).<br/> | sí       |
+| Modelo de sombreador [5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores Shader [Model 4](dx-graphics-hlsl-sm4.md) (disponible a través de la API de Direct3D 11 mediante el nivel de característica 10.0 o 10.1 [**(D3D \_ FEATURE \_ LEVEL**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_feature_level) \_ 10 X) en dispositivos que admiten sombreadores \_ de proceso. Para obtener más información sobre la compatibilidad del sombreador de proceso en hardware de nivel inferior, vea [Sombreadores de proceso en hardware de nivel inferior).](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-compute-shaders)<br/> | Sí       |
 
 
 
@@ -64,7 +64,7 @@ Este objeto es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -72,7 +72,7 @@ Este objeto es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: Enumeración MrmResourceIndexerMessageSeverity (MrmResourceIndexer. h)
-description: Define constantes que especifican la gravedad de un mensaje del indexador de recursos. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados.
+title: Enumeración MrmResourceIndexerMessageSeverity (MrmResourceIndexer.h)
+description: Define constantes que especifican la gravedad de un mensaje de indexador de recursos. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, consulte API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados.
 ms.assetid: A4734256-94BD-43BE-B93C-55B98DF8A9BF
 keywords:
-- Menús de enumeración de MrmResourceIndexerMessageSeverity y otros recursos
+- Menús de enumeración MrmResourceIndexerMessageSeverity y otros recursos
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fdcbb42291ab88e91eca6c16c0a6c95c3e89fd7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 72f08d45e51f334398c8754057c450f4d57e79d3e0eb79b518caa5a09b0b14b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105665937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939665"
 ---
 # <a name="mrmresourceindexermessageseverity-enumeration"></a>Enumeración MrmResourceIndexerMessageSeverity
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Define constantes que especifican la gravedad de un mensaje del indexador de recursos. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea [API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Define constantes que especifican la gravedad de un mensaje de indexador de recursos. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, consulte API de indexación de recursos de [paquetes (PRI) y sistemas de compilación personalizados.](/windows/uwp/app-resources/pri-apis-custom-build-systems)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -79,9 +79,9 @@ Indica que el mensaje es un error.
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1803 \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server \[\]<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de servidor\]<br/>                                                 |
+| Header<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
 
 
 

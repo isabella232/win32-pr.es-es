@@ -1,21 +1,21 @@
 ---
-description: El <mode> elemento especifica si la dirección URL se debe incluir o excluir del ámbito del conector de búsqueda. Los valores permitidos son include y exclude. Este elemento no tiene ningún elemento secundario y no tiene atributos.
+description: El elemento especifica si la dirección URL debe incluirse o <mode> excluirse del ámbito del conector de búsqueda. Los valores permitidos son Include y Exclude. Este elemento no tiene elementos secundarios ni atributos.
 ms.assetid: 7654c04a-31c4-4260-a51c-0600804e62a9
-title: Elemento Mode (esquema del conector de búsqueda)
+title: elemento mode (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec8c09b4c6de138e6e390d2c31a82fe5d1f56566
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 32a210abf5c9c2bbc4cd5d53978866a729d834928cf39e54bfb6e6fcc9c42c7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119944325"
 ---
-# <a name="mode-element-search-connector-schema"></a>Elemento Mode (esquema del conector de búsqueda)
+# <a name="mode-element-search-connector-schema"></a>elemento mode (esquema del conector de búsqueda)
 
-El <mode> elemento especifica si la dirección URL se debe incluir o excluir del ámbito del conector de búsqueda. Los valores permitidos son `Include` y `Exclude`. Este elemento no tiene ningún elemento secundario y no tiene atributos.
+El elemento especifica si la dirección URL debe incluirse o <mode> excluirse del ámbito del conector de búsqueda. Los valores permitidos son `Include` y `Exclude`. Este elemento no tiene elementos secundarios ni atributos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -60,19 +60,19 @@ El <mode> elemento especifica si la dirección URL se debe incluir o excluir del
 
 | Elemento primario                                                                   | Elementos secundarios |
 |----------------------------------------------------------------------------------|----------------|
-| [Elemento scopeItem (esquema del conector de búsqueda)](search-schema-sconn-scopeitem.md) |                |
+| [elemento scopeItem (esquema del conector de búsqueda)](search-schema-sconn-scopeitem.md) |                |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No se puede buscar ni examinar un ámbito excluido. Puede anidar las direcciones URL de scopeItem. Por ejemplo, puede incluir un ámbito primario y todos sus elementos secundarios, excepto uno, agregando la dirección URL primaria tal como se incluye, con un valor de profundidad de profundidad y sin incluir la dirección URL secundaria.
+No se puede buscar ni examinar un ámbito excluido. Puede anidar direcciones URL de scopeItem. Por ejemplo, puede incluir un ámbito primario y todos sus elementos secundarios excepto uno agregando la dirección URL primaria como se incluye, con el valor de profundidad Deep y excluyendo la dirección URL secundaria.
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra un ámbito de búsqueda que incluye C: \\ ExampleFolder y todas sus carpetas secundarias excepto c: \\ ExampleFolder \\ ExcludeMe.
+En el ejemplo siguiente se muestra un ámbito de búsqueda que incluye C: ExampleFolder y todas sus carpetas secundarias excepto \\ C: \\ ExampleFolder \\ ExcludeMe.
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: Métodos 10Level9 ID3D11DeviceContext
-description: En esta sección se enumeran las diferencias entre cada nivel de característica 10Level9 y el nivel de característica D3D FEATURE LEVEL 11 0 y superior para los \_ \_ \_ \_ métodos ID3D11DeviceContext.
+description: En esta sección se enumeran las diferencias entre cada nivel de característica 10Level9 y el nivel de característica D3D FEATURE LEVEL 11 0 y superior para los métodos \_ \_ \_ \_ ID3D11DeviceContext.
 ms.assetid: 84478b56-0306-491a-9545-0849b06d8342
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118990075"
 ---
 # <a name="10level9-id3d11devicecontext-methods"></a>Métodos 10Level9 ID3D11DeviceContext
 
-En esta sección se enumeran las diferencias entre cada nivel de característica 10Level9 y el nivel de característica D3D FEATURE LEVEL 11 0 y superior para los \_ \_ \_ \_ [**métodos ID3D11DeviceContext.**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext)
+En esta sección se enumeran las diferencias entre cada nivel de característica 10Level9 y el nivel de característica D3D FEATURE LEVEL 11 0 y superior para los métodos \_ \_ \_ \_ [**ID3D11DeviceContext.**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext)
 
 -   [ID3D11DeviceContext::CopySubresourceRegion](#id3d11devicecontextcopysubresourceregion)
 -   [ID3D11DeviceContext::CopyResource](#id3d11devicecontextcopyresource)
@@ -80,7 +80,7 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3"> Solo se pueden copiar Texture2D y los búferes en la memoria accesible para GPU.<br/> Texture3D no se puede copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br/> Los recursos que solo tienen D3D10_BIND_SHADER_RESOURCE no se pueden copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br/> No se pueden copiar texturas de volumen mipmapped. <br/> ${REMOVE}$<br />
+<td rowspan="3"> Solo se pueden copiar Texture2D y los búferes en la memoria accesible para GPU.<br/> Texture3D no se puede copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br/> Los recursos que solo tienen D3D10_BIND_SHADER_RESOURCE pueden copiarse de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br/> No se pueden copiar texturas de volumen mipmapped. <br/> ${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -112,7 +112,7 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3"> Solo se pueden copiar Texture2D y los búferes en la memoria accesible para GPU.<br/> Texture3D no se puede copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br/> Los recursos que solo tienen D3D10_BIND_SHADER_RESOURCE no se pueden copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br/> ${REMOVE}$<br />
+<td rowspan="3"> Solo se pueden copiar Texture2D y los búferes en la memoria accesible para GPU.<br/> Texture3D no se puede copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br/> Los recursos que solo tienen D3D10_BIND_SHADER_RESOURCE pueden copiarse de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br/> ${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -597,7 +597,7 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br />
+<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -669,7 +669,7 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br />
+<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -709,7 +709,7 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br />
+<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -749,7 +749,7 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br />
+<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -789,7 +789,7 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br />
+<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -829,7 +829,7 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br />
+<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -997,7 +997,7 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br />
+<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1037,7 +1037,7 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br />
+<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1077,7 +1077,7 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br />
+<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1117,7 +1117,7 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br />
+<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1161,7 +1161,7 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 </tr>
 <tr class="even">
 <td>D3D_FEATURE_LEVEL_9_2</td>
-<td rowspan="2"> El formato puede ser diferente del especificado en la creación del búfer, pero se incurrirá en una traducción costosa.<br/> Permite búferes de índice con los formatos DXGI_FORMAT_R16_UINT y DXGI_FORMAT_R32_UINT como D3D_FEATURE_LEVEL_10_0 y superiores. <br/> ${REMOVE}$<br />
+<td rowspan="2"> El formato puede ser diferente del especificado en la creación del búfer, pero se incurrirá en una traducción costosa.<br/> Permite búferes de índice con los DXGI_FORMAT_R16_UINT y DXGI_FORMAT_R32_UINT como D3D_FEATURE_LEVEL_10_0 y superiores. <br/> ${REMOVE}$<br />
 </td>
 </tr>
 <tr class="odd">

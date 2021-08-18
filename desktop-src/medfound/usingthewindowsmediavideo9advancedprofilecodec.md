@@ -1,38 +1,38 @@
 ---
-description: Uso del perfil avanzado de Windows Media Video 9
+description: Uso del perfil avanzado Windows Media Video 9
 ms.assetid: 2abc0efc-dd11-4921-897c-209a26f8ba1d
-title: Uso del perfil avanzado de Windows Media Video 9
+title: Uso del perfil avanzado Windows Media Video 9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 692243117cde3b4b5f1179c5f7324d25842191b6
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 258c32f14d1a7a42e1450c8265e2a611bd17b3b92b98f5433c93b91251e299c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105689632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120012175"
 ---
-# <a name="using-the-windows-media-video-9-advanced-profile"></a>Uso del perfil avanzado de Windows Media Video 9
+# <a name="using-the-windows-media-video-9-advanced-profile"></a>Uso del perfil avanzado Windows Media Video 9
 
-Los procedimientos de vídeo básicos que se describen en la sección [trabajar con vídeo](workingwithvideo.md) también se aplican directamente al perfil avanzado de Windows Media Video 9. No se requiere ningún procedimiento especial.
+Los procedimientos de vídeo básicos descritos en la sección Trabajar con [vídeo](workingwithvideo.md) también se aplican directamente al perfil avanzado de Windows Media Video 9. No se requiere ningún procedimiento especial.
 
-El perfil avanzado de Windows Media Video 9 está asociado a los identificadores de clase CLSID \_ CWMV9EncMediaObject y CLSID \_ CWMVDecMediaObject. El valor FOURCC para los tipos de medios que usan este códec es "WVC1".
+El Windows avanzado de Media Video 9 está asociado a los identificadores de clase CLSID \_ CWMV9EncMediaObject y CLSID \_ CWMVDecMediaObject. El valor de FOURCC para los tipos de medios que usan este códec es "WVC1".
 
-El perfil avanzado de Windows Media Video 9 es compatible con todos los modos de codificación comunes, como la codificación entrelazada, la codificación entrelazada y progresiva mixta, las resoluciones que son diferentes de las que se muestran y las características de reducción del intervalo. Otra característica es la capacidad de almacenar metadatos de secuencia y fotogramas en el propio flujo de bits; anteriormente, este tenía el uso de la API de extensiones de unidad de datos y ASF.
+El perfil avanzado de Windows Media Video 9 admite todos los modos de codificación comunes, así como codificación entrelazada, codificación entrelazada mixta y progresiva, resoluciones que son diferentes de las características de visualización y reducción de intervalos. Otra característica es la capacidad de almacenar metadatos de secuencia y marco en el propio flujo de bits. anteriormente, esto requería el uso de ASF y la API de extensiones de unidad de datos.
 
-Las siguientes propiedades del perfil avanzado de Windows Media Video 9, que se puede controlar mediante la configuración del registro, no tienen las cadenas **IPropertyBag** o **IPropertyStore** correspondientes:
+Las siguientes propiedades del perfil avanzado de Windows Media Video 9, que se pueden controlar mediante la configuración del Registro, no tienen las cadenas **IPropertyBag** o **IPropertyStore** correspondientes:
 
 -   Opción Dquant.
--   Dquant.
--   Forzar la superposición.
--   Método de costo del vector de movimiento.
+-   Intensidad de Dquant.
+-   Forzar superposición.
+-   Método de costo de vector de movimiento.
 
-## <a name="achieving-optimal-visual-quality"></a>Obtención de una calidad visual óptima
+## <a name="achieving-optimal-visual-quality"></a>Lograr una calidad visual óptima
 
-Para la mayoría de los datos de vídeo, para lograr una calidad visual óptima mediante el perfil avanzado de Windows Media Video 9, puede establecer la propiedad [ \_ COMPRESSIONOPTIMIZATIONTYPE de MFPKEY](mfpkey-compressionoptimizationtypeproperty.md) en 1.
+Para la mayoría de los datos de vídeo, para lograr una calidad visual óptima mediante el perfil avanzado de Windows Media Video 9, puede establecer la propiedad [MFPKEY \_ COMPRESSIONOPTIMIZATIONTYPE](mfpkey-compressionoptimizationtypeproperty.md) en 1.
 
-## <a name="about-the-previous-windows-media-video-9-advanced-profile-codecs"></a>Acerca de los códecs de perfil avanzado de Windows Media Video 9 anteriores
+## <a name="about-the-previous-windows-media-video-9-advanced-profile-codecs"></a>Acerca de los códecs de perfil avanzado Windows Media Video 9 anterior
 
-La versión actual del códec de perfil avanzado de Windows Media Video 9 se basa en la sociedad del estándar de ingeniería de películas y televisión (SMPTE) para el perfil avanzado VC-1 (SMPTE 421M). Este códec reemplaza el códec anterior de Windows también llamado códec de perfil avanzado de Windows Media Video 9 que se identificó mediante el código FOURCC "WMVA". La versión anterior del códec VC-1 se implementó antes de finalizar el estándar de perfil avanzado de VC-1 y ya no se admite.
+La versión actual del códec de perfil avanzado Windows Media Video 9 se basa en el estándar Society of Motion Picture and Tv Engineers (SMPTE) para el perfil avanzado VC-1 (SMPTE 421M). Este códec reemplaza el códec anterior de Windows también denominado códec de perfil avanzado de Windows Media Video 9 identificado por el código FOURCC "WMVA". La versión anterior del códec VC-1 se implementó antes de que se finalizara el estándar de perfil avanzado VC-1 y ya no se admite.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -42,7 +42,7 @@ La versión actual del códec de perfil avanzado de Windows Media Video 9 se bas
 </dt> 
 <dt>
 
-[Uso de la configuración avanzada del códec de perfil avanzado de Windows Media Video 9](https://www.microsoft.com/windows/windowsmedia/howto/articles/codecadvancedsettings.aspx)
+[Uso de advanced Configuración del códec de perfil avanzado Windows Media Video 9](https://www.microsoft.com/windows/windowsmedia/howto/articles/codecadvancedsettings.aspx)
 </dt> </dl>
 
  

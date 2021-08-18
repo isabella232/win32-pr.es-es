@@ -1,7 +1,7 @@
 ---
 description: El método Ready indica que se ha completado una transición de estado.
 ms.assetid: 01328281-cf25-43fd-9f9c-e55fccbac217
-title: Método CBaseRenderer. Ready (Renbase. h)
+title: Método CBaseRenderer.Ready (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3a7f70ec258fde7f6208d44c35ca2c284f99e0a0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 31a1870af825f2a33236d0fd86d0f730e0013df59297fec5cdaa2baf46a2b773
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757525"
 ---
-# <a name="cbaserendererready-method"></a>CBaseRenderer. Ready (método)
+# <a name="cbaserendererready-method"></a>CBaseRenderer.Ready (método)
 
 El `Ready` método indica que se ha completado una transición de estado.
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método hace que el método [**CBaseRenderer:: GetState**](cbaserenderer-getstate.md) devuelva S \_ correcto, lo que indica que el filtro ha completado la transición a su estado actual. El filtro llama a este método cada vez que completa una transición de estado.
+Este método hace que [**el método CBaseRenderer::GetState**](cbaserenderer-getstate.md) devuelva S OK, lo que indica que el filtro ha completado la transición \_ a su estado actual. El filtro llama a este método cada vez que completa una transición de estado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Este método hace que el método [**CBaseRenderer:: GetState**](cbaserenderer-ge
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,13 +63,13 @@ Este método hace que el método [**CBaseRenderer:: GetState**](cbaserenderer-ge
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> <dt>
 
 [**CBaseRenderer::CheckReady**](cbaserenderer-checkready.md)
 </dt> <dt>
 
-[**CBaseRenderer::**](cbaserenderer-notready.md)
+[**CBaseRenderer::NotReady**](cbaserenderer-notready.md)
 </dt> </dl>
 
  

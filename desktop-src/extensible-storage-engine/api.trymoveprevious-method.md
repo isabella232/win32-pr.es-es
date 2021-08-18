@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. TryMovePrevious (método)'
-title: Método API. TryMovePrevious
+description: 'Más información sobre: Método Api.TryMovePrevious'
+title: Método Api.TryMovePrevious
 TOCTitle: 'TryMovePrevious method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.TryMovePrevious(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.trymoveprevious(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fe512ac4443f670ac73964a422bd9606d903055a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4664c715ee536426fad246ef0cf526d8b6e4461637c8915fe17bec796e826e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738375"
 ---
-# <a name="apitrymoveprevious-method"></a>Método API. TryMovePrevious
+# <a name="apitrymoveprevious-method"></a>Método Api.TryMovePrevious
 
-Intente moverse al registro anterior de la tabla. Si no hay un registro anterior, devolverá FALSE si se produce un error diferente al producirse una excepción.
+Intente pasar al registro anterior de la tabla. Si no hay un registro anterior, devuelve false, si se encuentra un error diferente, se produce una excepción.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,21 +65,21 @@ public static bool TryMovePrevious(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor que se va a colocar.
+    Cursor que se colocará.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True si el movimiento se realizó correctamente.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True si el traslado se ha realizado correctamente.  
 
 ## <a name="see-also"></a>Vea también
 
@@ -87,6 +87,6 @@ True si el movimiento se realizó correctamente.
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

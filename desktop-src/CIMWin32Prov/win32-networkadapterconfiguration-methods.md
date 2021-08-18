@@ -1,26 +1,26 @@
 ---
-description: La \_ clase NetworkAdapterConfiguration de Win32 expone los métodos siguientes.
+description: La clase NetworkAdapterConfiguration de Win32 \_ expone los métodos siguientes.
 ms.assetid: 662E3F9C-B878-49B1-9090-F7570A19F220
 ms.tgt_platform: multiple
-title: Métodos Win32_NetworkAdapterConfiguration
+title: Win32_NetworkAdapterConfiguration métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa882b77524b21285153f7c0e30fd1243f4ad27c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b9ff9a8a98570c25fff73ee543217b2a38e0ede87077d470a2e84191d230b408
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973065"
 ---
-# <a name="win32_networkadapterconfiguration-methods"></a>\_Métodos NetworkAdapterConfiguration de Win32
+# <a name="win32_networkadapterconfiguration-methods"></a>Métodos \_ NetworkAdapterConfiguration de Win32
 
 La [**clase \_ NetworkAdapterConfiguration de Win32**](win32-networkadapterconfiguration.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**Método DisableIPSec**](disableipsec-method-in-class-win32-networkadapterconfiguration.md)
--   [**EnableDHCP (método)**](enabledhcp-method-in-class-win32-networkadapterconfiguration.md)
--   [**EnableDns (método)**](enabledns-method-in-class-win32-networkadapterconfiguration.md)
+-   [**Método EnableDHCP**](enabledhcp-method-in-class-win32-networkadapterconfiguration.md)
+-   [**Método EnableDNS**](enabledns-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Método EnableIPFilterSec**](enableipfiltersec-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Método EnableIPSec**](enableipsec-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Método EnableStatic**](enablestatic-method-in-class-win32-networkadapterconfiguration.md)
@@ -35,7 +35,7 @@ La [**clase \_ NetworkAdapterConfiguration de Win32**](win32-networkadapterconfi
 -   [**Método SetDeadGWDetect**](setdeadgwdetect-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Método SetDefaultTOS**](setdefaulttos-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Método SetDefaultTTL**](setdefaultttl-method-in-class-win32-networkadapterconfiguration.md)
--   [**Método método SetDNSDomain**](setdnsdomain-method-in-class-win32-networkadapterconfiguration.md)
+-   [**Método SetDNSDomain**](setdnsdomain-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Método SetDNSServerSearchOrder**](setdnsserversearchorder-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Método SetDNSSuffixSearchOrder**](setdnssuffixsearchorder-method-in-class-win32-networkadapterconfiguration.md)
 -   [**Método SetDynamicDNSRegistration**](setdynamicdnsregistration-method-in-class-win32-networkadapterconfiguration.md)

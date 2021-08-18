@@ -1,19 +1,19 @@
 ---
-description: Un comando de inicio de control de secuencia ha surtido efecto.
+description: Un comando stream-control start ha tenido efecto.
 ms.assetid: e2f8d9a2-c96c-457c-8a88-7c86d4405928
-title: EC_STREAM_CONTROL_STARTED (DShow. h)
+title: EC_STREAM_CONTROL_STARTED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 984562fde9001de14067e5865d5583636b264852
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 73af8d39c3dae0447600a23dcb00483f4e0da6b81bc7ba6ab4a7e8b5f7afa42d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997895"
 ---
-# <a name="ec_stream_control_started"></a>CONTROL de secuencia de EC \_ \_ \_ iniciado
+# <a name="ec_stream_control_started"></a>EC \_ STREAM \_ CONTROL \_ STARTED
 
-Un comando de inicio de control de secuencia ha surtido efecto.
+Un comando stream-control start ha tenido efecto.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -22,7 +22,7 @@ Un comando de inicio de control de secuencia ha surtido efecto.
 <span id="pSender"></span><span id="psender"></span><span id="PSENDER"></span>*pSender*
 </dt> <dd>
 
-(**IUnknown** \* ) Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN que inició la secuencia.
+(**IUnknown** \* ) Puntero a la [**interfaz IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del pin que inició la secuencia.
 
 </dd> <dt>
 
@@ -37,13 +37,13 @@ Un comando de inicio de control de secuencia ha surtido efecto.
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los filtros envían este evento en respuesta al método [**IAMStreamControl:: startat**](/windows/desktop/api/Strmif/nf-strmif-iamstreamcontrol-startat) . Este método especifica un tiempo de referencia para que un código PIN empiece el streaming. Cuando se inicia la transmisión por secuencias, el filtro envía este evento.
+Los filtros envían este evento en respuesta al [**método IAMStreamControl::StartAt.**](/windows/desktop/api/Strmif/nf-strmif-iamstreamcontrol-startat) Este método especifica una hora de referencia para que un pin comience el streaming. Cuando se inicia el streaming, el filtro envía este evento.
 
-El parámetro *pSender* especifica el PIN que ejecuta el comando START. Dependiendo de la implementación, es posible que no sea el PIN que recibió la llamada [**startat**](/windows/desktop/api/Strmif/nf-strmif-iamstreamcontrol-startat) .
+El *parámetro pSender* especifica el pin que ejecuta el comando start. Dependiendo de la implementación, es posible que no sea el pin el que recibió la [**llamada StartAt.**](/windows/desktop/api/Strmif/nf-strmif-iamstreamcontrol-startat)
 
-La aplicación especifica el parámetro *dwCookie* en el método [**startat**](/windows/desktop/api/Strmif/nf-strmif-iamstreamcontrol-startat) . Este parámetro permite que la aplicación realice el seguimiento de varias llamadas al método.
+La aplicación especifica el parámetro *dwCookie* en el [**método StartAt.**](/windows/desktop/api/Strmif/nf-strmif-iamstreamcontrol-startat) Este parámetro permite que la aplicación realice un seguimiento de varias llamadas al método .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ La aplicación especifica el parámetro *dwCookie* en el método [**startat**](/
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

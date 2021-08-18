@@ -1,5 +1,5 @@
 ---
-description: Lo llama CertDeleteCTLFromStore antes de eliminar una CTL del almacén.
+description: Llamado por CertDeleteCTLFromStore antes de eliminar una CTL del almacén.
 ms.assetid: 6cda772f-7e94-414d-99fc-a90451ac0ccf
 title: Función de devolución de llamada CertStoreProvDeleteCTL
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: abeea0fdc3b6d77974b2c057d0e2ea98fe11e63a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: befc031c1be441ad23c7a50563030775b625b81b66a9e1f92df4fb7c641fe73c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993095"
 ---
 # <a name="certstoreprovdeletectl-callback-function"></a>Función de devolución de llamada CertStoreProvDeleteCTL
 
@@ -40,30 +40,30 @@ BOOL WINAPI CertStoreProvDeleteCTL(
 
 <dl> <dt>
 
-*hStoreProv* \[ de\]
+*hStoreProv* \[ En\]
 </dt> <dd>
 
-Identificador de **HCERTSTOREPROV** de un [*almacén de certificados*](../secgloss/c-gly.md).
+**Identificador HCERTSTOREPROV** para un [*almacén de certificados*](../secgloss/c-gly.md).
 
 </dd> <dt>
 
-*pCtlContext* \[ de\]
+*pCtlContext* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**de \_ contexto de CTL**](/windows/desktop/api/Wincrypt/ns-wincrypt-ctl_context) .
+Puntero a una [**estructura CTL \_ CONTEXT.**](/windows/desktop/api/Wincrypt/ns-wincrypt-ctl_context)
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Los valores de marca necesarios.
+Cualquier valor de marca necesario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si se puede eliminar una CTL del almacén.
+Devuelve **TRUE** si se puede eliminar una CTL del almacén.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Devuelve **true** si se puede eliminar una CTL del almacén.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 

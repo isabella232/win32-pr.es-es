@@ -1,7 +1,7 @@
 ---
-description: 'IEnumUserIdentity:: Next no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use cuentas de usuario con cambio rápido de usuario y Escritorio remoto.'
+description: IEnumUserIdentity::Next no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use cuentas de usuario con cambio rápido de usuario y Escritorio remoto.
 ms.assetid: 2c8dfe36-c1bb-49f8-8847-f355cfab2984
-title: 'IEnumUserIdentity:: Next (método) (Msident. h)'
+title: Método IEnumUserIdentity::Next (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: 763b2b4a612596c5f02a9826ad2e9c09ab8e4b0e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb3074a7b55ce03e7372491fce11160f1df1bc5fc8a4e45ad0f12d4538d4b2f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009405"
 ---
-# <a name="ienumuseridentitynext-method"></a>IEnumUserIdentity:: Next (método)
+# <a name="ienumuseridentitynext-method"></a>IEnumUserIdentity::Next (Método)
 
-\[**IEnumUserIdentity:: Next** no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use [cuentas de usuario con cambio rápido de usuario y escritorio remoto](fastuserswitching.md).\]
+\[**IEnumUserIdentity::Next** no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use [cuentas de usuario con cambio rápido de usuario y Escritorio remoto](fastuserswitching.md).\]
 
-En desuso. Recupera una matriz de interfaces de identidad de usuario de la enumeración.
+En desuso. Recupera una matriz de interfaces de identidad de usuario de la enumeración .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ HRESULT Next(
 
 <dl> <dt>
 
-*Celt* \[ de\]
+*celta* \[ En\]
 </dt> <dd>
 
-Tipo: **ULong**
+Tipo: **ULONG**
 
-Valor **ULong** que representa el número de interfaces que se van a recuperar.
+Valor **ULONG** que representa el número de interfaces que se recuperarán.
 
 </dd> <dt>
 
-*rgelt* \[ enuncia\]
+*rgelt* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown)\*\***
@@ -61,10 +61,10 @@ Dirección de un puntero que recibe las interfaces.
 
 </dd> <dt>
 
-*pceltFetched* \[ enuncia\]
+*pceltFetched* \[ out\]
 </dt> <dd>
 
-Tipo: **ULong \** _
+Tipo: **ULONG \***
 
 Dirección de un puntero que recibe el número de interfaces recuperadas correctamente.
 
@@ -72,15 +72,15 @@ Dirección de un puntero que recibe el número de interfaces recuperadas correct
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-[**IEnumUserIdentity**](ienumuseridentity.md) mantiene un recuento interno que especifica la interfaz que se va a recuperar. Si hay varias llamadas a este método, no se restablecerá este recuento. Para restablecer el recuento, llame a [**IEnumUserIdentity:: RESET**](ienumuseridentity-reset.md). Para incrementar el recuento sin recuperar interfaces, llame a [**IEnumUserIdentity:: Skip**](ienumuseridentity-skip.md).
+[**IEnumUserIdentity mantiene**](ienumuseridentity.md) un recuento interno que especifica qué interfaz se va a recuperar. Varias llamadas a este método no restablecerán este recuento. Para restablecer el recuento, llame a [**IEnumUserIdentity::Reset**](ienumuseridentity-reset.md). Para incrementar el recuento sin recuperar interfaces, llame a [**IEnumUserIdentity::Skip**](ienumuseridentity-skip.md).
 
-El valor de *Celt* no debe superar el valor devuelto por [**IEnumUserIdentity:: GetCount**](ienumuseridentity-getcount.md).
+El valor de *celt* no debe superar el valor devuelto por [**IEnumUserIdentity::GetCount**](ienumuseridentity-getcount.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,12 +88,12 @@ El valor de *Celt* no debe superar el valor devuelto por [**IEnumUserIdentity:: 
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                  |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                         |
-| Encabezado<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 
@@ -105,13 +105,13 @@ El valor de *Celt* no debe superar el valor devuelto por [**IEnumUserIdentity:: 
 [**IEnumUserIdentity**](ienumuseridentity.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: Skip**](ienumuseridentity-skip.md)
+[**IEnumUserIdentity::Skip**](ienumuseridentity-skip.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: RESET**](ienumuseridentity-reset.md)
+[**IEnumUserIdentity::Reset**](ienumuseridentity-reset.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: GetCount**](ienumuseridentity-getcount.md)
+[**IEnumUserIdentity::GetCount**](ienumuseridentity-getcount.md)
 </dt> </dl>
 
  

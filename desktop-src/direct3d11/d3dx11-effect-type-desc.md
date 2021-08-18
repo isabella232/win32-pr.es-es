@@ -74,7 +74,7 @@ La clase variable (vea [**D3D10 \_ SHADER \_ VARIABLE \_ CLASS**](/windows/deskt
 **Tipo**
 </dt> <dd>
 
-Tipo: **[ **TIPO DE \_ \_ VARIABLE \_ DE SOMBREADOR D3D10**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_shader_variable_type)**
+Tipo: **[ **TIPO DE VARIABLE DE \_ SOMBREADOR \_ \_ D3D10**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_shader_variable_type)**
 
 </dd> <dd>
 
@@ -144,7 +144,7 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Número de bytes ocupados por este tipo de datos, cuando se dispone en un búfer constante.
+Número de bytes ocupados por este tipo de datos, cuando se establecen en un búfer constante.
 
 </dd> <dt>
 
@@ -173,7 +173,7 @@ D3DX11 \_ EFFECT \_ TYPE \_ DESC se usa [ **con ID3DX11EffectType::GetDesc**](id
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

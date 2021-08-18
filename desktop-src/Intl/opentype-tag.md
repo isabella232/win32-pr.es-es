@@ -1,19 +1,19 @@
 ---
-description: Define una matriz de 4 bytes que contiene los valores ASCII de 4 8 bits de espacio, A-Z o a-z para identificar las etiquetas de características de fuente, idioma y script OpenType.
+description: Define una matriz de 4 bytes que contiene cuatro valores ASCII de 8 bits de espacio, A-Z o a-z para identificar etiquetas de características de fuente, lenguaje y script OpenType.
 ms.assetid: 188ad9a1-e0eb-411f-b6df-8c394d122d6f
-title: OPENTYPE_TAG (Usp10. h)
+title: OPENTYPE_TAG (Usp10.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf973c03f26bdb8f8b3799e1780fed5075d315cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7c784fa7f6243e7e5444dcbc64c690ce7184d6ace469759c19be9de87854732
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040785"
 ---
-# <a name="opentype_tag"></a>\_etiqueta OPENTYPE
+# <a name="opentype_tag"></a>ETIQUETA \_ OPENTYPE
 
-Define una matriz de 4 bytes que contiene los valores ASCII de 4 8 bits de espacio, A-Z o a-z para identificar las etiquetas de características de fuente, idioma y script OpenType.
+Define una matriz de 4 bytes que contiene cuatro valores ASCII de 8 bits de espacio, A-Z o a-z para identificar etiquetas de características de fuente, lenguaje y script OpenType.
 
 
 ```C++
@@ -22,15 +22,15 @@ typedef ULONG OPENTYPE_TAG;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En los siguientes ejemplos se definen representaciones de etiquetas de características OpenType.
+En los ejemplos siguientes se definen representaciones de etiquetas de características OpenType.
 
--   La etiqueta de característica de la característica de ligadura es "Liga".
--   Las etiquetas de idioma para rumano, urdu y persa son "ROM", "URD" y "FAR", respectivamente. Tenga en cuenta que cada una de estas etiquetas finaliza con un espacio.
--   Las etiquetas de script para los scripts latinos y árabes son "latn" y "árabe", respectivamente.
+-   La etiqueta de característica de la característica de ligadura es "liga".
+-   Las etiquetas de idioma para el idioma Desánido, Urdu y Persa son "ROM", "URD" y "FAR", respectivamente. Tenga en cuenta que cada una de estas etiquetas termina con un espacio.
+-   Las etiquetas de script para los scripts latinos y árabes son "latn" y "arabic", respectivamente.
 
-Para obtener más información sobre las etiquetas de las características OpenType y la especificación OpenType, vea <https://www.microsoft.com/typography/otspec/featuretags.htm> .
+Para obtener más información sobre las etiquetas de características de OpenType y la especificación openType, vea <https://www.microsoft.com/typography/otspec/featuretags.htm> .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -40,8 +40,8 @@ Para obtener más información sobre las etiquetas de las características OpenT
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Redistribuible<br/>          | Usp10.dll la versión 1,600 o superior de la ventana de Windows más adelante<br/>                |
-| Encabezado<br/>                   | <dl> <dt>Usp10. h</dt> </dl> |
+| Redistribuible<br/>          | Usp10.dll versión 1.600 o posterior en Windows XPand más adelante<br/>                |
+| Header<br/>                   | <dl> <dt>Usp10.h</dt> </dl> |
 
 
 
@@ -52,7 +52,7 @@ Para obtener más información sobre las etiquetas de las características OpenT
 [Uniscribe](uniscribe.md)
 </dt> <dt>
 
-[Estructuras de Uniscribe](uniscribe-structures.md)
+[Estructuras de unidireccional](uniscribe-structures.md)
 </dt> <dt>
 
 [**ScriptGetFontAlternateGlyphs**](/windows/desktop/api/Usp10/nf-usp10-scriptgetfontalternateglyphs)

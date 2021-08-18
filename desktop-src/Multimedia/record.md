@@ -1,9 +1,9 @@
 ---
-title: comando grabar
-description: El comando grabar inicia la grabación de datos. Los dispositivos VCR y de onda-audio reconocen este comando. Aunque los dispositivos de vídeo digital y los secuenciadores MIDI también reconocen este comando, los controladores MCIAVI y MCISEQ no lo implementan.
+title: comando record
+description: El comando record inicia la grabación de datos. Los dispositivos VCR y audio de forma de onda reconocen este comando. Aunque los dispositivos de vídeo digital y los secuenciadores MIDI también reconocen este comando, los controladores MCIAVI y MCISEQ no lo implementan.
 ms.assetid: a0838153-5ac2-437f-ae1e-0c4f950fcac5
 keywords:
-- comando grabar Windows multimedia
+- comando record Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b39d3659d4577517726260f948563cd31ecc07bc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f326b13d86f073074ef2c1119d449e297e65e7d3accb22d9858e5c1579493c01
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037565"
 ---
-# <a name="record-command"></a>comando grabar
+# <a name="record-command"></a>comando record
 
-El comando grabar inicia la grabación de datos. Los dispositivos VCR y de onda-audio reconocen este comando. Aunque los dispositivos de vídeo digital y los secuenciadores MIDI también reconocen este comando, los controladores MCIAVI y MCISEQ no lo implementan.
+El comando record inicia la grabación de datos. Los dispositivos VCR y audio de forma de onda reconocen este comando. Aunque los dispositivos de vídeo digital y los secuenciadores MIDI también reconocen este comando, los controladores MCIAVI y MCISEQ no lo implementan.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -49,37 +49,37 @@ Identificador de un dispositivo MCI. Este identificador o alias se asigna cuando
 <span id="lpszRecordFlags"></span><span id="lpszrecordflags"></span><span id="LPSZRECORDFLAGS"></span>*lpszRecordFlags*
 </dt> <dd>
 
-Marca para la grabación de datos. En la tabla siguiente se enumeran los tipos de dispositivos que reconocen el comando **registro** y las marcas usadas por cada tipo.
+Marca para registrar datos. En la tabla siguiente se enumeran los tipos de dispositivo que reconocen el comando **de** registro y las marcas usadas por cada tipo.
 
 
 
 | Value        | Significado                                                | Significado                                             |
 |--------------|--------------------------------------------------------|-----------------------------------------------------|
-| digitalvideo | *secuencia* de flujo de audio de *rectángulo* desde la *posición* de espera | insertar la *secuencia* de flujo de vídeo sobrescribir en la *posición* |
-| sequencer    | desde la *posición* Insert                                  | sobrescribir en *posición*                             |
-| vídeos          | en *el momento* de la inicialización de la *posición*                     | Insertar Sobrescribir en *posición*                      |
-| waveaudio    | desde la *posición* Insert                                  | sobrescribir en *posición*                             |
+| digitalvideo | at *rectangle* audio stream *stream from* *position* hold | inserción de sobrescritura *para colocar la secuencia* de streaming de *vídeo* |
+| sequencer    | desde *inserción de* posición                                  | sobrescribir a *la posición*                             |
+| Vcr          | at *time from* *position* initialize                     | insertar sobrescritura en *la posición*                      |
+| waveaudio    | desde *inserción de* posición                                  | sobrescribir a *la posición*                             |
 
 
 
  
 
-En la tabla siguiente se enumeran las marcas que se pueden especificar en el parámetro **lpszRecordFlags** y su significado.
+En la tabla siguiente se enumeran las marcas que se pueden especificar en el parámetro **lpszRecordFlags** y sus significados.
 
 
 
 | Value                 | Significado                                                                                                                                                                                                                                                                                                          |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| en el *rectángulo*        | Especifica una región rectangular de la entrada externa usada como origen para los píxeles comprimidos y guardados. Si no se especifica, el rectángulo tiene como valor predeterminado el rectángulo especificado para [Put](put.md) "vídeo". Cuando se establece de manera diferente del rectángulo de "vídeo", la imagen mostrada no es lo que se graba. |
-| a la *hora*             | Indica que el dispositivo debe comenzar a ejecutar este comando, o bien, si el dispositivo está preparado, cuando comienza el comando de la cuenta. Para obtener más información, consulte el comando [CUE](cue.md) .                                                                                                                             |
-| *secuencia* de flujo de audio | Especifica la secuencia de audio utilizada para la grabación. Si no se especifica esta marca y el formato de archivo no define un valor predeterminado, se registra en el flujo que es físicamente primero.                                                                                                                             |
-| desde la *posición*       | Especifica una posición inicial para la grabación. Si no se especifica la marca "desde", el dispositivo inicia la grabación en la posición actual.                                                                                                                                                                       |
-| contener                  | Inmoviliza la imagen cuando ha terminado la grabación en lugar de mostrar vídeo en directo. Cuando se detiene la grabación, se realiza un comando de [supervisión](monitor.md) automática del "archivo". Para volver a vídeo en directo, emita el comando **supervisar** "entrada".                                                                              |
-| initialize            | Inicialice la cinta (multimedia), que implica el registro del código de tiempo (si es posible) para vídeo y audio en blanco. Este comando puede tardar varias horas si se debe inicializar toda la cinta.                                                                                                                            |
-| insert                | Especifica que los nuevos datos se agregan al archivo en la posición actual.                                                                                                                                                                                                                                            |
+| en *rectángulo*        | Especifica una región rectangular de la entrada externa utilizada como origen de los píxeles comprimidos y guardados. Si no se especifica, el rectángulo tiene como valor predeterminado el rectángulo especificado para [put](put.md) "video". Cuando se establece de forma diferente al rectángulo "vídeo", la imagen mostrada no es lo que se graba. |
+| a *la vez*             | Indica cuándo debe comenzar el dispositivo a realizar este comando o, si el dispositivo se ha cued, cuando comienza el comando cued. Para obtener más información, vea el [comando cue.](cue.md)                                                                                                                             |
+| secuencia *de* audio | Especifica la secuencia de audio utilizada para la grabación. Si no se especifica esta marca y el formato de archivo no define un valor predeterminado, se registra en la secuencia que está físicamente primero.                                                                                                                             |
+| desde *la posición*       | Especifica una posición inicial para la grabación. Si no se especifica la marca "from", el dispositivo comienza a grabar en la posición actual.                                                                                                                                                                       |
+| Mantener                  | Inmoviliza la imagen cuando la grabación ha finalizado en lugar de mostrar vídeo en directo. Cuando se detiene la grabación, [se realiza un comando](monitor.md) "archivo" de supervisión automática. Para volver al vídeo en directo, emita el **comando** de "entrada" del monitor.                                                                              |
+| initialize            | Inicialice la cinta (multimedia), que implica la grabación de código de tiempo (si es posible) para vídeo y audio en blanco. Este comando puede tardar varias horas si se debe inicializar toda la cinta.                                                                                                                            |
+| insert                | Especifica que se agregan nuevos datos al archivo en la posición actual.                                                                                                                                                                                                                                            |
 | sobrescribir             | Especifica que los nuevos datos reemplazarán los datos del archivo.                                                                                                                                                                                                                                                           |
-| para *colocar*         | Especifica una posición final para la grabación. Si no se especifica la marca "para", el dispositivo registra hasta que recibe un comando [detener](stop.md) o [pausar](pause.md) .                                                                                                                                        |
-| *secuencia* de flujo de vídeo | Especifica la secuencia de vídeo que se usa para la grabación. Si no se especifica y el formato de archivo no define un valor predeterminado, se registra en el flujo que es físicamente primero.                                                                                                                             |
+| para *colocar*         | Especifica una posición final para la grabación. Si no se especifica la marca "to", el dispositivo registra hasta que recibe un [comando stop](stop.md) [o pause.](pause.md)                                                                                                                                        |
+| secuencia de *vídeo* | Especifica la secuencia de vídeo utilizada para la grabación. Si no se especifica y el formato de archivo no define un valor predeterminado, se registra en la secuencia que está físicamente primero.                                                                                                                             |
 
 
 
@@ -90,23 +90,23 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el par
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify" o ambos. En el caso de los dispositivos de vídeo digital y vídeo, también se puede especificar "prueba". Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo digital y VCR, también se puede especificar "prueba". Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La grabación se detiene cuando se emite un comando [detener](stop.md) o [pausar](pause.md) . En el caso del controlador MCIWAVE, todos los datos registrados después de abrir un archivo se descartan si el archivo se cierra sin guardarlo.
+La grabación se detiene cuando se [emite](stop.md) [un](pause.md) comando stop o pause. Para el controlador MCIWAVE, todos los datos registrados después de abrir un archivo se descartan si el archivo se cierra sin guardarlo.
 
-Antes de emitir cualquier comando que use valores de posición, debe establecer el formato de hora deseado mediante el comando [set](set.md) . Las pistas que se van a grabar se especifican mediante los comandos [settimecode](settimecode.md) "registro", "ensamblar registro", [setvideo](setvideo.md) "registro" y [SetAudio](setaudio.md) "registro".
+Antes de emitir cualquier comando que use valores de posición, debe establecer el formato de hora deseado mediante el [comando set.](set.md) Las pistas que se van a grabar se especifican mediante los comandos [settimecode](settimecode.md) "record", set "assemble record", [setvideo](setvideo.md) "record" y [setaudio](setaudio.md) "record".
 
 ## <a name="examples"></a>Ejemplos
 
-El comando siguiente inicia la grabación en la posición actual.
+El siguiente comando inicia la grabación en la posición actual.
 
 ``` syntax
 record mysound
@@ -127,22 +127,22 @@ record mysound
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> <dt>
 
-[indicación](cue.md)
+[Cue](cue.md)
 </dt> <dt>
 
-[control](monitor.md)
+[Monitor](monitor.md)
 </dt> <dt>
 
 [pause](pause.md)
 </dt> <dt>
 
-[pondrán](put.md)
+[Poner](put.md)
 </dt> <dt>
 
 [set](set.md)

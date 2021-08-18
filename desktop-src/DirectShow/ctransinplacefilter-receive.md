@@ -1,7 +1,7 @@
 ---
 description: El método Receive recibe un ejemplo multimedia, lo procesa y lo entrega al filtro de nivel inferior.
 ms.assetid: 87126353-b73a-45f5-a8e7-b719efdf9d76
-title: Método CTransInPlaceFilter. Receive (TRANSip. h)
+title: Método CTransInPlaceFilter.Receive (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5e7a1f87617b59c31139cb3d857c83d4470fd709
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 390d0243631e4ac31da779ca01197500f1d3df18127a3b86f0cf1ea834283f0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053465"
 ---
-# <a name="ctransinplacefilterreceive-method"></a>CTransInPlaceFilter. Receive (método)
+# <a name="ctransinplacefilterreceive-method"></a>Método CTransInPlaceFilter.Receive
 
 El `Receive` método recibe un ejemplo multimedia, lo procesa y lo entrega al filtro de nivel inferior.
 
@@ -45,30 +45,30 @@ HRESULT Receive(
 *pSample* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) en el ejemplo.
+Puntero a la [**interfaz IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) del ejemplo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que se muestran en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                  | Descripción                 |
 |----------------------------------------------------------------------------------------------|-----------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | Correcto<br/>          |
-| <dl> <dt>**E \_ inesperado**</dt> </dl> | Error inesperado<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Correcto<br/>          |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl> | Error inesperado<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El PIN de entrada del filtro llama a este método cuando recibe un ejemplo. El filtro llama al método de [**transformación**](ctransinplacefilter-transform.md) , que la clase derivada debe implementar. El método **Transform** procesa los datos. Si el filtro usa solo un asignador, pasa *pSample* directamente al método de **transformación** . De lo contrario, copia *pSample* y pasa la copia.
+El pin de entrada del filtro llama a este método cuando recibe un ejemplo. El filtro llama al [**método Transform,**](ctransinplacefilter-transform.md) que la clase derivada debe implementar. El **método Transform** procesa los datos. Si el filtro usa un solo asignador, pasa *pSample* directamente al **método Transform.** De lo contrario, copia *pSample* y pasa la copia.
 
-Si el método **Transform** devuelve S \_ false, el `Receive` método quita el ejemplo. En el primer ejemplo quitado, el filtro envía un evento de [**\_ \_ cambio de calidad EC**](ec-quality-change.md) al administrador de gráficos de filtro. De lo contrario, si el método de **transformación** devuelve S \_ correcto, el filtro entrega el ejemplo de salida. Para ello, llama al método [**IMemInputPin:: Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) en el PIN de entrada de nivel inferior.
+Si el **método Transform** devuelve S \_ FALSE, el método quita el `Receive` ejemplo. En el primer ejemplo descartado, el filtro envía un evento [**EC \_ QUALITY \_ CHANGE**](ec-quality-change.md) al administrador de gráficos de filtros. De lo contrario, si **el método Transform** devuelve S \_ OK, el filtro entrega el ejemplo de salida. Para ello, llama al método [**IMemInputPin::Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) en el pin de entrada de bajada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,8 +76,8 @@ Si el método **Transform** devuelve S \_ false, el `Receive` método quita el e
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>TRANSip. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -85,7 +85,7 @@ Si el método **Transform** devuelve S \_ false, el `Receive` método quita el e
 
 <dl> <dt>
 
-[**Clase CTransInPlaceFilter**](ctransinplacefilter.md)
+[**CTransInPlaceFilter (clase)**](ctransinplacefilter.md)
 </dt> </dl>
 
  

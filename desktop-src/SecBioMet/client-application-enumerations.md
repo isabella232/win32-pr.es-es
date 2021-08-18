@@ -1,21 +1,21 @@
 ---
-title: Enumeraciones de aplicación cliente
-description: Enumeraciones admitidas por la API de Plataforma de biometría de Windows.
+title: Enumeraciones de aplicaciones cliente
+description: Enumeraciones compatibles con la API Windows Biometric Framework.
 ms.assetid: fd33bc63-cc99-40de-a43b-b0bc7d4c9454
 keywords:
-- API Plataforma de biometría de Windows API de Plataforma de biometría de Windows, enumeraciones de aplicaciones cliente
+- Windows Api de plataforma biométrica Windows API de marco biométrico, enumeraciones de aplicaciones cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4ec220a80ebd07806edffba27278bc03d755245
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bffb3726d10303a96d56540cd0d68b49db1123945666ce7544d9aa80c46bdc06
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105685620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119994425"
 ---
-# <a name="client-application-enumerations"></a>Enumeraciones de aplicación cliente
+# <a name="client-application-enumerations"></a>Enumeraciones de aplicaciones cliente
 
-La API de Plataforma de biometría de Windows admite los siguientes tipos de enumeración.
+Los siguientes tipos de enumeración son compatibles con la API Windows Biometric Framework.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,12 +23,12 @@ La API de Plataforma de biometría de Windows admite los siguientes tipos de enu
 
 | Tema                                                                                      | Descripción                                                                                                                                       |
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**acción de directiva de WINBIO \_ anti \_ Spoofing \_ \_**](winbio-anti-spoof-policy-action.md)<br/>  | Especifica los tipos de acciones que se realizan para la Directiva de antifalsificación de un usuario. <br/>                                                        |
-| [**\_método de \_ notificación WINBIO Async \_**](/windows/desktop/api/Winbio/ne-winbio-winbio_async_notification_method)<br/> | Define constantes que especifican cómo se entregarán las notificaciones de finalización de las operaciones asincrónicas a la aplicación cliente.<br/> |
-| [**\_formato de credencial WINBIO \_**](winbio-credential-format.md)<br/>                  | Define las marcas que se pueden usar para especificar el formato de credenciales de usuario final.<br/>                                                              |
-| [**\_Estado de credenciales de WINBIO \_**](winbio-credential-state.md)<br/>                    | Define valores que especifican si una credencial se ha asociado con los datos biométricos de un usuario final.<br/>                          |
-| [**\_tipo de credencial WINBIO \_**](winbio-credential-type.md)<br/>                      | Define las marcas que se pueden usar para filtrar por el tipo de credencial.<br/>                                                                       |
-| [**\_origen de directiva de WINBIO \_**](winbio-policy-source.md)<br/>                          | Enumera los orígenes posibles de información de directiva para la detección de suplantación de los factores biométricos.<br/>                                  |
+| [**ACCIÓN DE DIRECTIVA \_ \_ ANTI SUPLANTACIÓN DE \_ \_ WINBIO**](winbio-anti-spoof-policy-action.md)<br/>  | Especifica los tipos de acciones que se llevan a cabo para la directiva de antispoofing de un usuario. <br/>                                                        |
+| [**MÉTODO DE NOTIFICACIÓN DE WINBIO \_ ASYNC \_ \_**](/windows/desktop/api/Winbio/ne-winbio-winbio_async_notification_method)<br/> | Define constantes que especifican cómo se van a entregar las notificaciones de finalización para las operaciones asincrónicas a la aplicación cliente.<br/> |
+| [**FORMATO DE \_ CREDENCIAL \_ WINBIO**](winbio-credential-format.md)<br/>                  | Define marcas que se pueden usar para especificar el formato de credenciales del usuario final.<br/>                                                              |
+| [**ESTADO DE \_ CREDENCIAL \_ WINBIO**](winbio-credential-state.md)<br/>                    | Define valores que especifican si una credencial se ha asociado a los datos biométricos de un usuario final.<br/>                          |
+| [**TIPO DE \_ CREDENCIAL \_ WINBIO**](winbio-credential-type.md)<br/>                      | Define las marcas que se pueden usar para filtrar por el tipo de credencial.<br/>                                                                       |
+| [**ORIGEN DE \_ LA DIRECTIVA \_ WINBIO**](winbio-policy-source.md)<br/>                          | Enumera los posibles orígenes de información de directiva para la detección de suplantación de factores biométricos.<br/>                                  |
 
 
 

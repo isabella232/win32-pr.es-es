@@ -1,12 +1,12 @@
 ---
 title: Propiedad GatewayCredSharing de IMsRdpClientTransportSettings2
-description: Especifica o recupera la configuración de si está habilitada la característica de uso compartido de credenciales de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto).
+description: Especifica o recupera la configuración de si la característica de uso compartido de credenciales Escritorio remoto Gateway (puerta de enlace de Escritorio remoto) está habilitada.
 ms.assetid: 296dc578-376d-41f6-988a-286fe744959f
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad GatewayCredSharing
-- Propiedad GatewayCredSharing Servicios de Escritorio remoto, interfaz IMsRdpClientTransportSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientTransportSettings2, propiedad GatewayCredSharing
+- Propiedad GatewayCredSharing Servicios de Escritorio remoto
+- Propiedad GatewayCredSharing Servicios de Escritorio remoto , interfaz IMsRdpClientTransportSettings2
+- Interfaz IMsRdpClientTransportSettings2 Servicios de Escritorio remoto , propiedad GatewayCredSharing
 topic_type:
 - apiref
 api_name:
@@ -19,20 +19,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 329e425631b674e050f246c4105115bd4326be3d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d6d489678006e842a6da82f5d2f9489f84a9a20fd70bfe8f18018aaa6d412c5c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119974655"
 ---
-# <a name="imsrdpclienttransportsettings2gatewaycredsharing-property"></a>IMsRdpClientTransportSettings2:: GatewayCredSharing (propiedad)
+# <a name="imsrdpclienttransportsettings2gatewaycredsharing-property"></a>Propiedad IMsRdpClientTransportSettings2::GatewayCredSharing
 
-Especifica o recupera la configuración de si está habilitada la característica de uso compartido de credenciales de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto). Cuando la característica está habilitada, el control ActiveX Escritorio remoto intenta usar las mismas credenciales para autenticarse en el servidor host de sesión Escritorio remoto (host de sesión de escritorio remoto) y en el servidor de puerta de enlace de escritorio remoto.
+Especifica o recupera la configuración de si la característica de uso compartido de credenciales Escritorio remoto Gateway (puerta de enlace de Escritorio remoto) está habilitada. Cuando la característica está habilitada, el control Escritorio remoto ActiveX intenta usar las mismas credenciales para autenticarse en el servidor de host de sesión de Escritorio remoto (host de sesión de Escritorio remoto) y en el servidor de puerta de enlace de Escritorio remoto.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -49,15 +49,15 @@ HRESULT get_GatewayCredSharing(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Si se establece en uno, se habilita el uso compartido de credenciales. Si se establece en cero, el uso compartido de credenciales está deshabilitado.
+Si se establece en uno, se habilita el uso compartido de credenciales. Si se establece en cero, se deshabilita el uso compartido de credenciales.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El control ActiveX utiliza esta propiedad para implementar un único aviso para el uso compartido de credenciales entre el servidor host de sesión de escritorio remoto y el servidor de puerta de enlace de escritorio remoto. El uso compartido de credenciales no admite el uso compartido de contraseñas basado en Web con [**GatewayPassword**](imsrdpclienttransportsettings2-gatewaypassword.md) o [**ClearTextPassword**](imstscnonscriptable-cleartextpassword.md).
+Esta propiedad la usa el control ActiveX para implementar un único símbolo del sistema para el uso compartido de credenciales entre el servidor host de sesión de Escritorio remoto y el servidor de puerta de enlace de Escritorio remoto. El uso compartido de credenciales no admite el uso compartido de contraseñas basado en web [**con GatewayPassword**](imsrdpclienttransportsettings2-gatewaypassword.md) [**o ClearTextPassword.**](imstscnonscriptable-cleartextpassword.md)
 
 ## <a name="requirements"></a>Requisitos
 

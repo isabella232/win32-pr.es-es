@@ -6,12 +6,12 @@ keywords:
 ms.topic: article
 ms.date: 05/13/2021
 ms.localizationpriority: low
-ms.openlocfilehash: d086c3aeb3caf7ff85a7fceeec17943c7112a7e0
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: 1aacc30ecac9cddca5f986878da1ff633660152144e8ca2fe1440fdecfd61e3c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112681189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015656"
 ---
 # <a name="firewall-dynamic-keywords-functions"></a>Funciones de palabras clave dinámicas de firewall
 

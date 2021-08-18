@@ -1,41 +1,41 @@
 ---
-description: Elección de un filtro de compresión
+description: Elegir un filtro de compresión
 ms.assetid: 9a2c3c48-771e-44db-a042-3db0fd9a6c76
-title: Elección de un filtro de compresión
+title: Elegir un filtro de compresión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a64ebebf41c35ed6aed9ab47d853c03ba720a31
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: cf964aa3647086efe569263e5fb36b4e0db60ebfad73c9d2fe9dcb14f3bcf125
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999225"
 ---
-# <a name="choosing-a-compression-filter"></a>Elección de un filtro de compresión
+# <a name="choosing-a-compression-filter"></a>Elegir un filtro de compresión
 
-Varios tipos de componentes de software pueden realizar compresión de audio o vídeo, como:
+Varios tipos de componentes de software pueden realizar la compresión de vídeo o audio, como:
 
--   Filtros de DirectShow nativos
--   Códecs del administrador de compresión de vídeo (VCM)
--   Códecs del administrador de compresión de audio (ACM)
--   Objetos multimedia de DirectX (DMOs)
+-   Filtros DirectShow nativos
+-   Códecs del Administrador de compresión de vídeo (VCM)
+-   Códecs del Administrador de compresión de audio (ACM)
+-   Objetos multimedia de DirectX (DDO)
 
-En DirectShow, los códecs VCM están incluidos en el [filtro del compresor AVI](avi-compressor-filter.md)y los códecs ACM se incluyen en el [filtro contenedor ACM](acm-wrapper-filter.md). Los DMOs se ajustan mediante el [filtro de contenedor de DMO](dmo-wrapper-filter.md). El enumerador de dispositivos del sistema proporciona una manera coherente de enumerar y crear cualquiera de estos tipos de compresores, sin preocuparse por el modelo subyacente.
+En DirectShow, los códecs de VCM se encapsulan mediante el filtro de filtración de [AVI y](avi-compressor-filter.md)los códecs de ACM se encapsulan mediante el filtro contenedor [de ACM](acm-wrapper-filter.md). Las DDO se encapsulan mediante [el DMO contenedor de contenedores](dmo-wrapper-filter.md). El enumerador de dispositivos del sistema proporciona una manera coherente de enumerar y crear cualquiera de estos tipos de artefactos, sin preocuparse por el modelo subyacente.
 
-Para obtener más información sobre el enumerador de dispositivos del sistema, consulte [usar el enumerador de dispositivos del sistema](using-the-system-device-enumerator.md). En Resumen, todos los filtros de DirectShow se clasifican por categoría y cada categoría se identifica mediante un GUID. En el caso de los compresores de vídeo, el GUID de categoría es CLSID \_ VideoCompressorCategory. En el caso de los compresores de audio, es CLSID \_ AudioCompressorCategory. Para enumerar una categoría determinada, el enumerador de dispositivos del sistema crea un objeto de *enumerador* que admite la interfaz [**IEnumMoniker**](/windows/desktop/api/objidl/nn-objidl-ienummoniker) . La aplicación usa esta interfaz para recuperar monikers de dispositivo, donde cada moniker de dispositivo representa una instancia de un filtro de DirectShow. Puede utilizar el moniker para crear el filtro o para obtener el nombre descriptivo del dispositivo sin crear el filtro.
+Para obtener más información sobre el enumerador de dispositivos del sistema, [consulte Uso del enumerador de dispositivos del sistema.](using-the-system-device-enumerator.md) Brevemente, todos los DirectShow se clasifican por categoría y cada categoría se identifica mediante un GUID. En el caso de los vídeos, el GUID de categoría es CLSID \_ VideoCompressorCategory. Para los sonidos de audio, es CLSID \_ AudioCompressorCategory. Para enumerar una categoría determinada, el  enumerador de dispositivos del sistema crea un objeto enumerador que admite la [**interfaz IEnumMoniker.**](/windows/desktop/api/objidl/nn-objidl-ienummoniker) La aplicación usa esta interfaz para recuperar monikers de dispositivo, donde cada moniker de dispositivo representa una instancia de un filtro DirectShow dispositivo. Puede usar el moniker para crear el filtro o para obtener el nombre descriptivo del dispositivo sin crear el filtro.
 
-Para enumerar los compresores de audio o vídeo disponibles en el sistema del usuario, haga lo siguiente:
+Para enumerar los vídeos o audios disponibles en el sistema del usuario, haga lo siguiente:
 
 1.  Llame a [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para crear el enumerador de dispositivos del sistema, que tiene un identificador de clase de CLSID \_ SystemDeviceEnum.
-2.  Llame a [**ICreateDevEnum:: CreateClassEnumerator**](/windows/desktop/api/Strmif/nf-strmif-icreatedevenum-createclassenumerator) con el GUID de la categoría de filtro. El método devuelve un puntero de interfaz **IEnumMoniker** .
-3.  Use el método IEnumMoniker:: Next para enumerar los monikers de dispositivo. Este método devuelve una interfaz [**IMoniker**](/windows/desktop/api/objidl/nn-objidl-imoniker) , que representa el moniker.
+2.  Llame [**a ICreateDevEnum::CreateClassEnumerator con**](/windows/desktop/api/Strmif/nf-strmif-icreatedevenum-createclassenumerator) el GUID de la categoría de filtro. El método devuelve un **puntero de interfaz IEnumMoniker.**
+3.  Use el método IEnumMoniker::Next para enumerar los monikers del dispositivo. Este método devuelve una [**interfaz IMoniker,**](/windows/desktop/api/objidl/nn-objidl-imoniker) que representa el moniker.
 
 Para obtener el nombre descriptivo de un moniker, haga lo siguiente:
 
-1.  Llame al método **IMoniker:: BindToStorage** . Este método devuelve un puntero a la interfaz **IPropertyBag** .
-2.  Use el método **IPropertyBag:: Read** para leer la propiedad **FriendlyName** .
+1.  Llame al **método IMoniker::BindToStorage.** Este método devuelve un **puntero de interfaz IPropertyBag.**
+2.  Use el **método IPropertyBag::Read** para leer la **propiedad FriendlyName.**
 
-Normalmente, una aplicación mostraría una lista de compresores, de modo que el usuario pudiera elegir uno. Por ejemplo, el siguiente código rellena un cuadro de lista con los nombres de los compresores de vídeo disponibles.
+Normalmente, una aplicación mostraría una lista de reanados, para que el usuario pudiera elegir una. Por ejemplo, el código siguiente rellena un cuadro de lista con los nombres de los vídeos disponibles.
 
 
 ```C++
@@ -86,7 +86,7 @@ void OnInitDialog(HWND hDlg)
 
 
 
-Para crear una instancia de filtro a partir del moniker, llame al método **IMoniker:: BindToObject** . El método devuelve un puntero [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) .
+Para crear una instancia de filtro a partir del moniker, llame al **método IMoniker::BindToObject.** El método devuelve un [**puntero IBaseFilter.**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)
 
 
 ```C++
@@ -102,13 +102,13 @@ if (SUCCEEDED(hr))
 
 
 
-En el caso de los códecs VCM, cada moniker representa un códec determinado, aunque todos los códecs están encapsulados con el mismo filtro de compresión AVI. La llamada a **BindToObject** crea una instancia de este filtro, inicializada para ese códec. Por esta razón, no se puede llamar a **CoCreateInstance** directamente en el filtro de compresión AVI. Debe pasar por el enumerador de dispositivos del sistema.
+En el caso de los códecs VCM, cada moniker representa un códec determinado, aunque todos los códecs estén encapsulados por el mismo filtro de compresión AVI. Al **llamar a BindToObject** se crea una instancia de este filtro, inicializada para ese códec. Por este motivo, no puede llamar a **CoCreateInstance** directamente en el filtro compresión AVI. Debe pasar por el enumerador de dispositivos del sistema.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Volver a comprimir un archivo AVI](recompressing-an-avi-file.md)
+[Volver acomprimir un archivo AVI](recompressing-an-avi-file.md)
 </dt> </dl>
 
  

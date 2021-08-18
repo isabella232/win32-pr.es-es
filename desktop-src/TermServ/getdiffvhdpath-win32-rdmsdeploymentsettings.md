@@ -1,12 +1,12 @@
 ---
-title: Método GetDiffVHDPath de la clase Win32_RDMSDeploymentSettings
-description: Recupera la ruta de acceso al directorio en la que se implementan los discos de diferenciación para una colección de escritorios virtuales.
+title: Método GetDiffVHDPath de la Win32_RDMSDeploymentSettings clase
+description: Recupera la ruta de acceso del directorio en la que se implementan los discos de diferenciación para una colección de escritorios virtuales.
 ms.assetid: 4340c817-2276-48a1-a856-b4c9e91ea981
 ms.tgt_platform: multiple
 keywords:
 - Método GetDiffVHDPath Servicios de Escritorio remoto
-- Método GetDiffVHDPath Servicios de Escritorio remoto, clase Win32_RDMSDeploymentSettings
-- Win32_RDMSDeploymentSettings de clase Servicios de Escritorio remoto, método GetDiffVHDPath
+- Método GetDiffVHDPath Servicios de Escritorio remoto , Win32_RDMSDeploymentSettings clase
+- Win32_RDMSDeploymentSettings clase Servicios de Escritorio remoto , método GetDiffVHDPath
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7391315013cf8487d93b32f645933d14f06db2d6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ad8783d20737c98dcccf769924ea1544c21dec8ffa3ff340aa285be163b8925b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099545"
 ---
-# <a name="getdiffvhdpath-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetDiffVHDPath de la \_ clase RDMSDeploymentSettings de Win32
+# <a name="getdiffvhdpath-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetDiffVHDPath de la clase RDMSDeploymentSettings de Win32 \_
 
-Recupera la ruta de acceso al directorio en la que se implementan los discos de diferenciación para una colección de escritorios virtuales.
+Recupera la ruta de acceso del directorio en la que se implementan los discos de diferenciación para una colección de escritorios virtuales.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ uint32 GetDiffVHDPath(
 
 <dl> <dt>
 
-*DirectoryPath* \[ enuncia\]
+*DirectoryPath* \[ out\]
 </dt> <dd>
 
 Recibe la nueva ruta de acceso del disco de diferenciación.
@@ -52,7 +52,7 @@ Recibe la nueva ruta de acceso del disco de diferenciación.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -72,7 +72,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 <dl> <dt>
 
-[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
+[**RDMSDeploymentSettings de Win32 \_**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

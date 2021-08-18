@@ -1,19 +1,19 @@
 ---
-description: Obtenga información sobre cómo la propiedad System.Devices.AepService.Bluetooth.DosService.Device establece la dirección del dispositivo Bluetooth que se va a consultar.
+description: Obtenga información sobre cómo System.Devices.AepService. Bluetooth. La propiedadService.Device establece la dirección Bluetooth del dispositivo que se consulta.
 ms.assetid: 0a84f283-4b18-4042-afc5-5b75907fe9f2
-title: System.Devices.AepService.Bluetooth.Service.Device
+title: System.Devices.AepService. Bluetooth. Service.Device
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fb2b38f9c67a86668b6eed85d951aa72ac22058
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 89a3c7864dab9fb58d3bd84a37ae7c7738316be019fed407cbb8c40edb61a5d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945975"
 ---
-# <a name="systemdevicesaepservicebluetoothgattservicedevice"></a>System.Devices.AepService.Bluetooth.Service.Device
+# <a name="systemdevicesaepservicebluetoothgattservicedevice"></a>System.Devices.AepService. Bluetooth. Service.Device
 
-Establece la dirección del dispositivo Bluetooth que se consulta.
+Establece la dirección Bluetooth dispositivo que se consulta.
 
 ## <a name="windows-10-version-1511"></a>Windows 10, versión 1511
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 

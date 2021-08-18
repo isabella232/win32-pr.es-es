@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_GETINSERTMARK (commctrl. h)
+title: TB_GETINSERTMARK mensaje (Commctrl.h)
 description: Recupera la marca de inserción actual de la barra de herramientas.
 ms.assetid: b22770a4-e859-451d-a726-279bbc49b984
 keywords:
-- TB_GETINSERTMARK controles de mensajes de Windows
+- TB_GETINSERTMARK controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b45a4cafbd49c709e9ca5b8e9afeda51323de491
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 34ee4a51d3110a99013ed26ccb1f2c102e7821873e63dd419b33e92636a1b655
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918755"
 ---
-# <a name="tb_getinsertmark-message"></a>\_Mensaje GETINSERTMARK TB
+# <a name="tb_getinsertmark-message"></a>Mensaje \_ DE TB GETINSERTMARK
 
 Recupera la marca de inserción actual de la barra de herramientas.
 
@@ -35,13 +35,13 @@ Recupera la marca de inserción actual de la barra de herramientas.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**TBINSERTMARK**](/windows/desktop/api/Commctrl/ns-commctrl-tbinsertmark) que recibe la marca de inserción.
+Puntero a una [**estructura TBINSERTMARK**](/windows/desktop/api/Commctrl/ns-commctrl-tbinsertmark) que recibe la marca de inserción.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Siempre devuelve **true**.
+Siempre devuelve **TRUE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Siempre devuelve **true**.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

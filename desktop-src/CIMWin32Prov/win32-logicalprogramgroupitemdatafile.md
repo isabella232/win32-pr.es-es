@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI LogicalProgramGroupItemDataFile Association de Win32 relaciona los elementos del grupo de programas del menú Inicio y los archivos en los que se almacenan.
+description: La clase WMI de asociación LogicalProgramGroupItemDataFile de Win32 relaciona los elementos de grupo de programas de la menú Inicio y los archivos en los que \_ se almacenan.
 ms.assetid: 9327c205-d0ad-4f2b-a65e-2a648e7c13e0
 ms.tgt_platform: multiple
-title: Win32_LogicalProgramGroupItemDataFile (clase)
+title: Win32_LogicalProgramGroupItemDataFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: beec7074104482e4c6bc91ba7efeaea89104a011
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b6f69c23ae545de837e9d6578ba2f64eed51ecbc6f10780e40c809cb2e362b33
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973064"
 ---
-# <a name="win32_logicalprogramgroupitemdatafile-class"></a>\_Clase Win32 LogicalProgramGroupItemDataFile
+# <a name="win32_logicalprogramgroupitemdatafile-class"></a>Clase \_ LogicalProgramGroupItemDataFile de Win32
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ LogicalProgramGroupItemDataFile** Association de Win32 relaciona los elementos del grupo de programas del menú **Inicio** y los archivos en los que se almacenan.
+La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **de asociación \_ LogicalProgramGroupItemDataFile de Win32** relaciona los elementos de grupo de programas del menú Inicio y los archivos en los que se almacenan. 
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,34 +61,34 @@ Tipo de datos: **Win32 \_ LogicalProgramGroupItem**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ LogicalProgramGroupItem")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ LogicalProgramGroupItem")
 </dt> </dl>
 
-Referencia a la instancia de que representa las agrupaciones de programas en el menú **Inicio** .
+Referencia a la instancia de que representa las agrupaciones de programas en el **menú** Inicio.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ archivo** de datos CIM
+Tipo de datos: **CIM \_ DataFile**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \| CIM archivo de \_ archivos")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \| \_ DataFile")
 </dt> </dl>
 
 Referencia a la instancia de que representa la clase asociada al grupo de programas.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ LogicalProgramGroupItemDataFile de Win32** se deriva de la [**\_ dependencia CIM**](cim-dependency.md).
+La **clase \_ LogicalProgramGroupItemDataFile de Win32** se deriva de [**la dependencia \_ CIM**](cim-dependency.md).
 
-El proceso de llamada que usa esta clase debe tener el privilegio de **\_ \_ nombre de restauración se** en el equipo en el que reside el registro. Por ejemplo, si enumera esta clase en el equipo local, la cuenta con la que se ejecuta la aplicación debe tener este privilegio. Para obtener más información, vea [ejecutar operaciones con privilegios](/windows/desktop/WmiSdk/executing-privileged-operations).
+El proceso de llamada que usa esta clase debe tener el **SE \_ restore \_ NAME** en el equipo en el que reside el Registro. Por ejemplo, si enumera esta clase en el equipo local, la cuenta con la que se ejecuta la aplicación debe tener este privilegio. Para obtener más información, vea [Ejecutar operaciones con privilegios.](/windows/desktop/WmiSdk/executing-privileged-operations)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,8 +98,8 @@ El proceso de llamada que usa esta clase debe tener el privilegio de **\_ \_ nom
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -108,7 +108,7 @@ El proceso de llamada que usa esta clase debe tener el privilegio de **\_ \_ nom
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))

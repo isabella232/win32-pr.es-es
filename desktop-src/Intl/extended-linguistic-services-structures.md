@@ -1,25 +1,25 @@
 ---
-description: 'Las siguientes estructuras se usan con ELS:'
+description: 'Las estructuras siguientes se usan con ELS:'
 ms.assetid: 58cdccf8-f052-4bb3-9391-2cc537d820dd
-title: Estructuras de servicios lingüísticos extendidos
+title: Estructuras extendidas de Linguistic Services
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c46175179d1b12f38b4279b61b1549186d5fc37
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1f99442b4d4d4d3577a10da609321756b301ac322470691d4b3fb86c207c52b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120041475"
 ---
-# <a name="extended-linguistic-services-structures"></a>Estructuras de servicios lingüísticos extendidos
+# <a name="extended-linguistic-services-structures"></a>Estructuras extendidas de Linguistic Services
 
-Las siguientes estructuras se usan con ELS:
+Las estructuras siguientes se usan con ELS:
 
--   [**ASIGNAR \_ rango de datos \_**](/windows/desktop/api/Elscore/ns-elscore-mapping_data_range)
--   [**ASIGNAR \_ Opciones de enumeración \_**](/windows/desktop/api/Elscore/ns-elscore-mapping_enum_options)
--   [**Opciones de asignación \_**](/windows/desktop/api/Elscore/ns-elscore-mapping_options)
--   [**\_contenedor de propiedades de asignación \_**](/windows/desktop/api/Elscore/ns-elscore-mapping_property_bag)
--   [**\_información del servicio de asignación \_**](/windows/desktop/api/Elscore/ns-elscore-mapping_service_info)
+-   [**INTERVALO DE \_ DATOS DE \_ ASIGNACIÓN**](/windows/desktop/api/Elscore/ns-elscore-mapping_data_range)
+-   [**OPCIONES \_ DE ENUMERACIÓN DE \_ ASIGNACIÓN**](/windows/desktop/api/Elscore/ns-elscore-mapping_enum_options)
+-   [**OPCIONES DE \_ ASIGNACIÓN**](/windows/desktop/api/Elscore/ns-elscore-mapping_options)
+-   [**MAPPING \_ PROPERTY \_ BAG**](/windows/desktop/api/Elscore/ns-elscore-mapping_property_bag)
+-   [**INFORMACIÓN DEL \_ SERVICIO DE \_ ASIGNACIÓN**](/windows/desktop/api/Elscore/ns-elscore-mapping_service_info)
 
  
 

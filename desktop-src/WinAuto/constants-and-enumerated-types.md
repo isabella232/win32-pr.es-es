@@ -4,12 +4,12 @@ description: Estos artículos contienen información sobre las constantes que se
 ms.assetid: a6325361-ea7b-472d-85d7-bc1544b57352
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b63371b29fa5b7a697f96abd6d2d9077124a0ff
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 02c99f43e0971eaecad150568f58c6d2f9832468352aa25884d182f8956ed3ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118994255"
 ---
 # <a name="constants-active-accessibility-user-interface-services"></a>Constantes (Active Accessibility Interfaz de usuario Services)
 
@@ -26,7 +26,7 @@ Esta sección contiene información sobre las constantes usadas con Microsoft Ac
 | [**Identificadores de objetos**](object-identifiers.md)<br/>         | En este tema se describen Microsoft Active Accessibility identificadores de objeto,  valores de 32 bits que identifican categorías de objetos accesibles dentro de una ventana.<br/>                                                                                                                                                                                                                |
 | [**Roles de objeto**](object-roles.md)<br/>                     | En este tema se describen los valores constantes utilizados para describir los roles de varios objetos de interfaz de usuario en una aplicación.<br/>                                                                                                                                                                                                                                                               |
 | [**Constantes de estado de objeto**](object-state-constants.md)<br/> | En este tema se describen los valores constantes utilizados para describir el estado de los objetos en una interfaz de usuario de aplicación.<br/>                                                                                                                                                                                                                                                                       |
-| [**Constantes SELF CONSTANT**](selflag.md)<br/>                     | En este tema se describen los valores constantes que se usan para especificar cómo se selecciona o toma el foco un objeto accesible.<br/>                                                                                                                                                                                                                                                     |
+| [**Constantes SELFRET**](selflag.md)<br/>                     | En este tema se describen los valores constantes utilizados para especificar cómo se selecciona o toma el foco un objeto accesible.<br/>                                                                                                                                                                                                                                                     |
 
 
 

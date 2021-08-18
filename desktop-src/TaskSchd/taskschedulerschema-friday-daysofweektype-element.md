@@ -45,7 +45,7 @@ El tipo complejo [**daysOfWeekType**](taskschedulerschema-daysofweektype-complex
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente XML define un calendario de día de la semana que inicia una tarea el viernes.
+El código XML siguiente define un calendario de día de la semana que inicia una tarea el viernes.
 
 
 ```XML
@@ -60,14 +60,14 @@ El siguiente XML define un calendario de día de la semana que inicia una tarea 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

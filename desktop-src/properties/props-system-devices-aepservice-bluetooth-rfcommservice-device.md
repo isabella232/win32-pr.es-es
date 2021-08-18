@@ -1,19 +1,19 @@
 ---
-description: Obtenga información sobre cómo la propiedad System.Devices.AepService.Bluetooth.RfcommService.Device establece la dirección del dispositivo Bluetooth que se va a consultar.
+description: Obtenga información sobre cómo System.Devices.AepService. Bluetooth. La propiedad RfcommService.Device establece la dirección Bluetooth dispositivo que se consulta.
 ms.assetid: 6a2381b6-1bf6-4b6b-adcc-4fb6a641a015
-title: System.Devices.AepService.Bluetooth.RfcommService.Device
+title: System.Devices.AepService. Bluetooth. RfcommService.Device
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d0f402e1af1bc0e652b88b1b959db49b5c9774c
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: be604e962420efd42d46afdcef256b0f0a13b059523cbb801ca04f72c9567299
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010704"
 ---
-# <a name="systemdevicesaepservicebluetoothrfcommservicedevice"></a>System.Devices.AepService.Bluetooth.RfcommService.Device
+# <a name="systemdevicesaepservicebluetoothrfcommservicedevice"></a>System.Devices.AepService. Bluetooth. RfcommService.Device
 
-Establece la dirección del dispositivo Bluetooth que se consulta.
+Establece la Bluetooth del dispositivo que se consulta.
 
 ## <a name="windows-10-version-1511"></a>Windows 10, versión 1511
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 

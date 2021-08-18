@@ -1,19 +1,19 @@
 ---
-description: Este código de ejemplo procede de una acción personalizada ICE (ICE08). El ICE valida que todos los componentes de la tabla de componentes tengan un GUID único. No se realiza ninguna validación si la tabla de componentes no existe.
+description: Este código de ejemplo es de una acción personalizada de ICE (ICE08). El ICE valida que todos los componentes de la tabla Component tienen un GUID único. No se realiza ninguna validación si la tabla Component no existe.
 ms.assetid: 785c3fd6-7120-4532-b055-b73a9a44f75d
 title: ICE de ejemplo en VBScript
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf49c37eb5aa8d8e4b4e7b617802c49389e77ed7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 28a21ce87547923cca67b115f1f5c9ea93c4cfac6676924e9ad88e7f1d2b332d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119996315"
 ---
 # <a name="sample-ice-in-vbscript"></a>ICE de ejemplo en VBScript
 
-Este código de ejemplo procede de una acción personalizada ICE ( [ICE08](ice08.md)). El ICE valida que todos los componentes de la [tabla de componentes](component-table.md) tengan un [GUID](guid.md)único. No se realiza ninguna validación si la tabla de componentes no existe.
+Este código de ejemplo es de una acción personalizada de ICE [(ICE08).](ice08.md) El ICE valida que todos los componentes de la [tabla Component](component-table.md) tienen un [GUID único.](guid.md) No se realiza ninguna validación si la tabla Component no existe.
 
 
 ```VB

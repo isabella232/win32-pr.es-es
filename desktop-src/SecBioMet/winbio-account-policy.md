@@ -1,10 +1,10 @@
 ---
-title: Estructura de WINBIO_ACCOUNT_POLICY (Winbio \_ Adapter. h)
-description: Contiene una directiva de suplantación predeterminada o específica de la cuenta.
+title: WINBIO_ACCOUNT_POLICY estructura (Winbio \_ adapter.h)
+description: Contiene una directiva de antispoofing predeterminada o específica de la cuenta.
 ms.assetid: 7098FC53-E487-42B2-8B4B-EB7E2D296CB6
 keywords:
-- Plataforma de biometría de Windows API de WINBIO_ACCOUNT_POLICY Structure
-- PWINBIO_ACCOUNT_POLICY de puntero de estructura Plataforma de biometría de Windows API
+- WINBIO_ACCOUNT_POLICY estructura Windows API de marco biométrico
+- PWINBIO_ACCOUNT_POLICY puntero de estructura Windows API de marco biométrico
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c734fa6d98615b7708a65ebad1dddc47cdc77cc2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c30241f0e13528c8427367c61362b803caaa9fc8c0a15a0eefad72689517d40f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035255"
 ---
-# <a name="winbio_account_policy-structure"></a>WINBIO \_ estructura de directiva de cuenta \_
+# <a name="winbio_account_policy-structure"></a>Estructura DE \_ DIRECTIVA DE \_ CUENTAS WINBIO
 
-La estructura de **\_ \_ Directiva de cuenta WINBIO** contiene una directiva de suplantación predeterminada o específica de la cuenta.
+La **estructura DIRECTIVA DE CUENTA \_ \_ WINBIO** contiene una directiva de antispoofing predeterminada o específica de la cuenta.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,20 +45,20 @@ typedef struct _WINBIO_ACCOUNT_POLICY {
 **Identidad**
 </dt> <dd>
 
-Estructura [**de \_ identidad de WINBIO**](winbio-identity.md) que especifica la información de la cuenta.
+Estructura [**DE WINBIO \_ IDENTITY**](winbio-identity.md) que especifica la información de la cuenta.
 
 </dd> <dt>
 
 **AntiSpoofBehavior**
 </dt> <dd>
 
-Uno de los valores de enumeración de [**acciones de directiva de WINBIO \_ anti \_ \_ \_ Spoofing**](winbio-anti-spoof-policy-action.md) que especifica qué acción de directiva de suplantación debe usar para la cuenta.
+Uno de los valores de enumeración DE ACCIÓN DE DIRECTIVA [**\_ DE \_ SPOOF \_ \_**](winbio-anti-spoof-policy-action.md) ANTI DE WINBIO que especifica qué acción de directiva de antispoofing se va a usar para la cuenta.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Vea la explicación del método [**EngineAdapterSetAccountPolicy**](/windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_set_account_policy_fn) para obtener una descripción de cómo se usa esta estructura.
+Consulte la explicación del método [**EngineAdapterSetAccountPolicy**](/windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_set_account_policy_fn) para obtener una descripción de cómo se usa esta estructura.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,9 +66,9 @@ Vea la explicación del método [**EngineAdapterSetAccountPolicy**](/windows/des
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Adapter. h (incluir Winbio \_ Adapter. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                                     |
+| Header<br/>                   | <dl> <dt>Winbio \_ adapter.h (incluir Winbio \_ adapter.h)</dt> </dl> |
 
 
 
