@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_DBID. ToString (método)'
-title: JET_DBID. ToString (método)
+description: 'Más información sobre: JET_DBID. Método ToString'
+title: JET_DBID. Método ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_DBID.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbid.tostring(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d705e9899526d6196ba1b4e8b84bc23b933315ff
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: aca24af6600fdbe482d93bea57ceaa738acea478932b412506d7b94faf86c372
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017245"
 ---
-# <a name="jet_dbidtostring-method"></a>JET_DBID. ToString (método)
+# <a name="jet_dbidtostring-method"></a>JET_DBID. Método ToString
 
-Generar una representación de cadena de la estructura.
+Genere una representación de cadena de la estructura .
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,17 +52,17 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-La estructura como una cadena.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Estructura como una cadena.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_DBID](./jet-dbid-structure.md)
+[JET_DBID estructura](./jet-dbid-structure.md)
 
-[Miembros de JET_DBID](./jet-dbid-members.md)
+[JET_DBID miembros](./jet-dbid-members.md)
 
 [Sobrecarga de ToString](./jet-dbid.tostring-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

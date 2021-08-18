@@ -1,7 +1,7 @@
 ---
 description: Establece la posición horizontal y vertical del cursor del mouse.
 ms.assetid: 7845E10A-7F61-4134-BF81-AED5483F36AD
-title: Método SetAbsolutePosition de la clase Msvm_SyntheticMouse (Dbdao. h)
+title: Método SetAbsolutePosition de la clase Msvm_SyntheticMouse (Dbdao.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4b8ffb3a4d415f76dedf30acba5869b4cc585eb5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f7f04975d85be1cb176839c80c19710534237b3be15ca06e606dad58a099519
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014313"
 ---
-# <a name="setabsoluteposition-method-of-the-msvm_syntheticmouse-class"></a>Método SetAbsolutePosition de la \_ clase SyntheticMouse de MSVM
+# <a name="setabsoluteposition-method-of-the-msvm_syntheticmouse-class"></a>Método SetAbsolutePosition de la clase \_ Msvm SyntheticMouse
 
 Establece la posición horizontal y vertical del cursor del mouse.
 
@@ -40,7 +40,7 @@ uint32 SetAbsolutePosition(
 
 <dl> <dt>
 
-*horizontalPosition* \[ de\]
+*horizontalPosition* \[ En\]
 </dt> <dd>
 
 Tipo: **sint32**
@@ -49,7 +49,7 @@ Nueva posición horizontal del cursor del mouse, en píxeles.
 
 </dd> <dt>
 
-*verticalPosition* \[ de\]
+*verticalPosition* \[ En\]
 </dt> <dd>
 
 Tipo: **sint32**
@@ -60,9 +60,9 @@ Nueva posición vertical del cursor del mouse, en píxeles.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Un valor devuelto de cero indica que se ha realizado correctamente. Un valor distinto de cero indica un error al modificar la posición de desplazamiento.
+Un valor devuelto de cero indica que se ha correcto. Un valor distinto de cero indica un error al modificar la posición de desplazamiento.
 
 <dl> <dt>
 
@@ -81,16 +81,16 @@ Un valor devuelto de cero indica que se ha realizado correctamente. Un valor dis
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**Sistema en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -99,15 +99,15 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase [**MSVM \_ SyntheticMouse**](msvm-syntheticmouse.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a [**la clase \_ Msvm SyntheticMouse**](msvm-syntheticmouse.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -115,11 +115,11 @@ El acceso a la clase [**MSVM \_ SyntheticMouse**](msvm-syntheticmouse.md) puede 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Dbdao. h</dt> </dl>                      |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| Header<br/>                   | <dl> <dt>Dbdao.h</dt> </dl>                      |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -128,7 +128,7 @@ El acceso a la clase [**MSVM \_ SyntheticMouse**](msvm-syntheticmouse.md) puede 
 
 <dl> <dt>
 
-[**MSVM \_ SyntheticMouse**](msvm-syntheticmouse.md)
+[**Msvm \_ SyntheticMouse**](msvm-syntheticmouse.md)
 </dt> </dl>
 
  

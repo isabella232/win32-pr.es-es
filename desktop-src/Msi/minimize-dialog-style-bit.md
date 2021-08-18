@@ -1,19 +1,19 @@
 ---
-description: Si se establece este bit, el cuadro de diálogo se puede minimizar. Este bit se omite en los cuadros de diálogo modales, que no se pueden minimizar.
+description: Si se establece este bit, se puede minimizar el cuadro de diálogo. Este bit se omite para los cuadros de diálogo modales, que no se pueden minimizar.
 ms.assetid: c8aa4688-52b3-4fbd-ab98-f1227ffbb5ee
-title: Minimizar el bit de estilo del cuadro de diálogo
+title: Minimizar el bit de estilo de diálogo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44a3538c2b5d7ebde20e502eb7288fc5cbd19c60
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 27c5b429befbb23cf73a2463bcc05b965efd0efd85ad299c08f7c670be76e849
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039944"
 ---
-# <a name="minimize-dialog-style-bit"></a>Minimizar el bit de estilo del cuadro de diálogo
+# <a name="minimize-dialog-style-bit"></a>Minimizar el bit de estilo de diálogo
 
-Si se establece este bit, el cuadro de diálogo se puede minimizar. Este bit se omite en los cuadros de diálogo modales, que no se pueden minimizar.
+Si se establece este bit, se puede minimizar el cuadro de diálogo. Este bit se omite para los cuadros de diálogo modales, que no se pueden minimizar.
 
 ## <a name="value"></a>Value
 

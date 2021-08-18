@@ -1,7 +1,7 @@
 ---
-description: Transforma el BoundingSphere.
+description: Transforma BoundingSphere.
 ms.assetid: 545904d4-f6c4-4341-a043-70b1a4d81f1c
-title: BoundingSphere. Transform (métodos)
+title: Métodos boundingSphere.Transform
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,16 +11,16 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 55de1d0ef562b0ea917d0cd85eea2fde55220783
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ae03d52726b383c86b53afa85ae0475279aa3500860e461ffae145e7223050c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985055"
 ---
-# <a name="boundingspheretransform-methods"></a>BoundingSphere. Transform (métodos)
+# <a name="boundingspheretransform-methods"></a>Métodos boundingSphere.Transform
 
-Transforma el BoundingSphere.
+Transforma BoundingSphere.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -28,8 +28,8 @@ Transforma el BoundingSphere.
 
 | Método                                                                                                    | Descripción                                                                                           |
 |:----------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|
-| [**BoundingSphere:: Transform (BoundingSphere&, XMMATRIX)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-transform(boundingsphere__float_fxmvector_fxmvector))                | Transforma el BoundingSphere.<br/>                                                             |
-| [**BoundingSphere:: Transform (BoundingSphere&, Float, XMVECTOR, XMVECTOR)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-transform(boundingsphere__float_fxmvector_fxmvector)) | Transforma el BoundingSphere con los vectores de escala, rotación y traslación especificados.<br/> |
+| [**BoundingSphere::Transform (BoundingSphere&,XMMATRIX)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-transform(boundingsphere__float_fxmvector_fxmvector))                | Transforma BoundingSphere.<br/>                                                             |
+| [**BoundingSphere::Transform (BoundingSphere&,float,XMVECTOR,XMVECTOR)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-transform(boundingsphere__float_fxmvector_fxmvector)) | Transforma BoundingSphere mediante los vectores de escala, rotación y traducción especificados.<br/> |
 
 
 

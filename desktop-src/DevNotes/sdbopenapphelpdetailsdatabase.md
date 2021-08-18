@@ -1,7 +1,7 @@
 ---
-description: Abre la base de datos de detalles de apphelp especificada.
+description: Abre la base de datos de detalles de Apphelp especificada.
 ms.assetid: c3b07c00-a3c6-419c-94c6-34c573a04d6d
-title: SdbOpenApphelpDetailsDatabase función)
+title: Función SdbOpenApphelpDetailsDatabase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 2810b0bbe1f10f013f39570aecda448a4ceeea6c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d6bd0bc7cbd1404c3bcf5459254f53e62a777d0936b89a0f7a282dd8d0094227
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045165"
 ---
-# <a name="sdbopenapphelpdetailsdatabase-function"></a>SdbOpenApphelpDetailsDatabase función)
+# <a name="sdbopenapphelpdetailsdatabase-function"></a>Función SdbOpenApphelpDetailsDatabase
 
-Abre la base de datos de detalles de apphelp especificada.
+Abre la base de datos de detalles de Apphelp especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,13 +42,13 @@ PDB WINAPI SdbOpenApphelpDetailsDatabase(
 *pwsDetailsDatabasePath* \[ en, opcional\]
 </dt> <dd>
 
-Ruta de acceso de la base de datos. Si este parámetro es **null**, se abre la base de datos del sistema local.
+Ruta de acceso de la base de datos. Si este parámetro es **NULL,** se abre la base de datos del sistema local.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve un identificador a la base de datos de detalles de apphelp.
+La función devuelve un identificador a la base de datos de detalles de Apphelp.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,8 +56,8 @@ La función devuelve un identificador a la base de datos de detalles de apphelp.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

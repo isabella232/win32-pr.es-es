@@ -1,6 +1,6 @@
 ---
 title: Escritorio remoto ActiveX interfaces de control
-description: Interfaces que puede usar para crear e implementar canales virtuales que pueden incluirse en scripts Servicios de Escritorio remoto aplicaciones web.
+description: Interfaces que puede usar para crear e implementar canales virtuales que se pueden incluir en scripts en Servicios de Escritorio remoto web.
 ms.assetid: 8258411e-eef6-4dcf-a7a2-7d04b0ea3744
 ms.tgt_platform: multiple
 keywords:
@@ -17,7 +17,7 @@ ms.locfileid: "119988675"
 ---
 # <a name="remote-desktop-activex-control-interfaces"></a>Escritorio remoto ActiveX interfaces de control
 
-El Escritorio remoto ActiveX control admite las siguientes interfaces que admiten scripts y que no se pueden incluir en el script, que se agrupan según la jerarquía de herencia.
+El control Escritorio remoto ActiveX admite las siguientes interfaces que admiten scripts y que no se pueden incluir en el script, que se agrupan según la jerarquía de herencia.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -187,7 +187,7 @@ Proporciona acceso a las propiedades noscriptables de la sesión remota de un cl
 [**IMsRdpClientSecuredSettings**](imsrdpclientsecuredsettings-interface.md)
 </dt> <dd>
 
-Incluye métodos para recuperar y establecer propiedades del control Escritorio remoto ActiveX que están restringidas a zonas de seguridad Internet Explorer URL específicas.
+Incluye métodos para recuperar y establecer las propiedades del control Escritorio remoto ActiveX que están restringidas a zonas de seguridad de Internet Explorer URL específicas.
 
 </dd> <dt>
 
@@ -201,14 +201,14 @@ Define propiedades adicionales del control Escritorio remoto ActiveX que están 
 [**IMsRdpClientShell**](imsrdpclientshell.md)
 </dt> <dd>
 
-Conexión a Escritorio remoto configuración de cliente (RDC) que se usa para iniciar el cliente desde Escritorio remoto Web Access (Acceso web de Escritorio remoto) o desde otros portales web.
+Conexión a Escritorio remoto de cliente (RDC) que se usan para iniciar el cliente desde Escritorio remoto Web Access (Acceso web de Escritorio remoto) o desde otros portales web.
 
 </dd> <dt>
 
 [**IMsRdpClientTransportSettings**](imsrdpclienttransportsettings.md)
 </dt> <dd>
 
-Administra la configuración de transporte de cliente para el Escritorio remoto gateway (puerta de enlace de Escritorio remoto).
+Administra la configuración de transporte de cliente para el Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
 
 </dd> <dt>
 
@@ -299,14 +299,14 @@ Receptor de entrada de Escritorio remoto.
 [**IMsRdpPreferredRedirectionInfo**](imsrdppreferredredirectioninfo.md)
 </dt> <dd>
 
-Proporciona una propiedad para controlar mediante un servidor de redireccionamiento.
+Proporciona una propiedad para controlar mediante un servidor de redirección.
 
 </dd> <dt>
 
 [**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md)
 </dt> <dd>
 
-Incluye métodos para recuperar y establecer propiedades que permiten el almacenamiento en caché de mapas de bits, la compresión y el redireccionamiento de impresoras y portapapeles.
+Incluye métodos para recuperar y establecer propiedades que permiten el almacenamiento en caché de mapas de bits, la compresión y la redirección de impresoras y portapapeles.
 
 </dd> <dt>
 
@@ -334,21 +334,21 @@ Contiene propiedades y métodos relacionados con la aplicación de una contrase�
 [**IMsTscSecuredSettings**](imstscsecuredsettings-interface.md)
 </dt> <dd>
 
-Incluye métodos para recuperar y establecer propiedades del control Escritorio remoto ActiveX que están restringidas a zonas de seguridad Internet Explorer URL específicas.
+Incluye métodos para recuperar y establecer las propiedades del control Escritorio remoto ActiveX que están restringidas a zonas de seguridad Internet Explorer url específicas.
 
 </dd> <dt>
 
 [**IRemoteDesktopClient**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclient)
 </dt> <dd>
 
-Proporciona métodos y propiedades que se usan para configurar y usar el control de cliente Protocolo de escritorio remoto contenedor de aplicaciones (RDP).
+Proporciona métodos y propiedades que se usan para configurar y usar el control Protocolo de escritorio remoto de contenedor de aplicaciones (RDP).
 
 </dd> <dt>
 
 [**IRemoteDesktopClientActions**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclientactions)
 </dt> <dd>
 
-Proporciona los métodos usados para interactuar con el control de cliente Protocolo de escritorio remoto de contenedor de aplicaciones (RDP).
+Proporciona los métodos usados para interactuar con el control Protocolo de escritorio remoto de contenedor de aplicaciones (RDP).
 
 </dd> <dt>
 
@@ -362,7 +362,7 @@ Proporciona métodos que reciben información del servidor relacionada con event
 [**IRemoteDesktopClientSettings**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclientsettings)
 </dt> <dd>
 
-Proporciona los métodos necesarios para configurar las opciones de conexión para el control de cliente Protocolo de escritorio remoto contenedor de aplicaciones (RDP).
+Proporciona los métodos necesarios para configurar las opciones de conexión para el control Protocolo de escritorio remoto de contenedor de aplicaciones (RDP).
 
 Use la [**propiedad Configuración IRemoteDesktopClient**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclient)[](iremotedesktopclient-settings.md) para obtener un puntero a esta interfaz.
 
@@ -371,7 +371,7 @@ Use la [**propiedad Configuración IRemoteDesktopClient**](/windows/win32/api/rd
 [**IRemoteDesktopClientTouchPointer**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclienttouchpointer)
 </dt> <dd>
 
-Proporciona las propiedades necesarias para controlar la característica de puntero táctil del control de cliente Protocolo de escritorio remoto de contenedor de aplicaciones (RDP).
+Proporciona las propiedades necesarias para controlar la característica de puntero táctil del control Protocolo de escritorio remoto de contenedor de aplicaciones (RDP).
 
 </dd> <dt>
 

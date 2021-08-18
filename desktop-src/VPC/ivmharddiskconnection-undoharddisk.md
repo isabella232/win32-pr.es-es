@@ -1,11 +1,11 @@
 ---
-title: Propiedad IVMHardDiskConnection UndoHardDisk (VPCCOMInterfaces. h)
-description: Recupera un objeto de disco duro correspondiente a la imagen de disco para deshacer de esta conexión.
+title: Propiedad IVMHardDiskConnection UndoHardDisk (VPCCOMInterfaces.h)
+description: Recupera un objeto de disco duro correspondiente a la imagen de disco de deshacer de esta conexión.
 ms.assetid: 0daec200-0bda-44cf-b97d-b9a179cb63f8
 keywords:
-- Propiedad UndoHardDisk Virtual PC
-- Propiedad UndoHardDisk Virtual PC, interfaz IVMHardDiskConnection
-- Interfaz IVMHardDiskConnection Virtual PC, propiedad UndoHardDisk
+- Equipo virtual de la propiedad UndoHardDisk
+- Propiedad UndoHardDisk Virtual PC , interfaz IVMHardDiskConnection
+- IVMHardDiskConnection interface Virtual PC , Propiedad UndoHardDisk
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0fcbd6535c0cf91e1b42549047c131c1804215c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3ba90d72aeab4fae618c3113796de1335d005670369de514b4e0650fead75d0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118998925"
 ---
-# <a name="ivmharddiskconnectionundoharddisk-property"></a>IVMHardDiskConnection:: UndoHardDisk (propiedad)
+# <a name="ivmharddiskconnectionundoharddisk-property"></a>Propiedad IVMHardDiskConnection::UndoHardDisk
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Recupera un objeto de disco duro correspondiente a la imagen de disco para deshacer de esta conexión.
+Recupera un objeto de disco duro correspondiente a la imagen de disco de deshacer de esta conexión.
 
 Esta propiedad es de solo lectura.
 
@@ -45,7 +45,7 @@ HRESULT get_UndoHardDisk(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un objeto [**IVMHardDisk**](ivmharddisk.md) que describe el disco duro para deshacer asociado a esta conexión.
+Objeto [**IVMHardDisk**](ivmharddisk.md) que describe el disco duro de deshacer asociado a esta conexión.
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -53,12 +53,12 @@ Un objeto [**IVMHardDisk**](ivmharddisk.md) que describe el disco duro para desh
 
 | Nombre o valor                                                                                                                                                                               | Significado                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                                                  | La operación se realizó correctamente.<br/>                                                                                                    |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl>                            | Se produjo un error inesperado.<br/>                                                                                                |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>                                    | El parámetro es **null** o no es válido.<br/>                                                                                          |
-| <dl> <dt>HRESULT \_ DE \_ Win32 ( \_ \_ no \_ se encontró el archivo de error)</dt> <dt>0x80070002</dt> </dl> | No se encontró el disco para deshacer para esta conexión.<br/>                                                                                 |
-| <dl> <dt>Máquina virtual \_ 0xA0040207 de \_ máquina virtual \_ desconocida</dt> <dt></dt> </dl>                            | La configuración de máquina virtual actual no es válida.<br/>                                                                          |
-| <dl> <dt>Máquina virtual \_ Unidad E 0xA0040502 \_ \_ no válida</dt> <dt></dt> </dl>                         | La ubicación del bus para esta conexión no se ha inicializado correctamente o el dispositivo en esta ubicación no es un disco duro válido.<br/> |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                                                  | La operación se realizó correctamente.<br/>                                                                                                    |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>                            | Se produjo un error inesperado.<br/>                                                                                                |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>                                    | El parámetro es **NULL o** no es válido.<br/>                                                                                          |
+| <dl> <dt>HRESULT \_ DESDE \_ WIN32 (ARCHIVO DE ERROR \_ \_ NO \_ ENCONTRADO)</dt> <dt>0X80070002</dt> </dl> | No se encontró el disco de deshacer para esta conexión.<br/>                                                                                 |
+| <dl> <dt>Máquina virtual \_ E \_ VM \_ UNKNOWN</dt> <dt>0xA0040207</dt> </dl>                            | La configuración actual de la máquina virtual no es válida.<br/>                                                                          |
+| <dl> <dt>Máquina virtual \_ E \_ UNIDAD \_ NO VÁLIDA</dt> <dt>0xA0040502</dt> </dl>                         | La ubicación del bus para esta conexión no se ha inicializado correctamente o el dispositivo de esta ubicación no es un disco duro válido.<br/> |
 
 
 
@@ -68,12 +68,12 @@ Un objeto [**IVMHardDisk**](ivmharddisk.md) que describe el disco duro para desh
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMHardDiskconnection se define como aefa36a5-463a-46ae-9e6c-a1fb4e12e671<br/>      |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMHardDiskconnection se define como \_ aefa36a5-463a-46ae-9e6c-a1fb4e12e671<br/>      |
 
 
 

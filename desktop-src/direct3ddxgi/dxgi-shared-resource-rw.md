@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119984115"
 ---
-# <a name="dxgi_shared_resource_rw"></a>DXGI \_ SHARED \_ RESOURCE \_ RW
+# <a name="dxgi_shared_resource_rw"></a>RW DE \_ RECURSOS \_ COMPARTIDOS \_ DXGI
 
 Constantes de recursos compartidos.
 
@@ -34,7 +34,7 @@ Constantes de recursos compartidos.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

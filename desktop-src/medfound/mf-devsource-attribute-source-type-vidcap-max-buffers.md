@@ -1,19 +1,19 @@
 ---
-description: Especifica el número máximo de fotogramas que el origen de captura de vídeo almacenará en búfer.
+description: Especifica el número máximo de fotogramas que almacenará en búfer el origen de captura de vídeo.
 ms.assetid: af30606b-f1a0-4fbf-a831-05ed891f5d53
-title: MF_DEVSOURCE_ATTRIBUTE_SOURCE_TYPE_VIDCAP_MAX_BUFFERS atributo (Mfidl. h)
+title: MF_DEVSOURCE_ATTRIBUTE_SOURCE_TYPE_VIDCAP_MAX_BUFFERS atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cfa927d28b49da0eb0a0be40c3137f1cd9acf79b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba50ad5489d08ba0fc986d56bef8d57c547fa0146a3bbb58290bca43009cc5af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973824"
 ---
-# <a name="mf_devsource_attribute_source_type_vidcap_max_buffers-attribute"></a>\_Tipo de origen de atributo MF DEVSOURCE atributo \_ \_ \_ \_ VIDCAP \_ Max \_ buffers
+# <a name="mf_devsource_attribute_source_type_vidcap_max_buffers-attribute"></a>Atributo MF \_ DEVSOURCE \_ \_ SOURCE TYPE \_ \_ VIDCAP MAX \_ \_ BUFFERS
 
-Especifica el número máximo de fotogramas que el origen de captura de vídeo almacenará en búfer.
+Especifica el número máximo de fotogramas que almacenará en búfer el origen de captura de vídeo.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,23 +21,23 @@ Especifica el número máximo de fotogramas que el origen de captura de vídeo a
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para establecer este atributo, llame a [**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-De forma predeterminada, el origen de captura de vídeo almacena en búfer un máximo de un fotograma cada vez. Puede aumentar el límite del búfer estableciendo este atributo.
+De forma predeterminada, el origen de captura de vídeo almacena en búfer un máximo de un fotograma a la vez. Puede aumentar el límite de búfer estableciendo este atributo.
 
-La manera correcta de establecer este atributo depende de la función que se usa para crear el origen de medios:
+La manera correcta de establecer este atributo depende de la función utilizada para crear el origen multimedia:
 
--   [**MFCreateDeviceSource**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesource): establezca el atributo mediante el parámetro *pAttributes* de la función.
--   [**MFCreateDeviceSourceActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesourceactivate): establezca el atributo mediante el parámetro *pAttributes* de la función.
--   [**MFEnumDeviceSources**](/windows/desktop/api/mfidl/nf-mfidl-mfenumdevicesources): establezca el atributo en el puntero [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) devuelto por la función. Establezca el atributo antes de llamar a [**IMFActivate:: ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject).
+-   [**MFCreateDeviceSource:**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesource)establezca el atributo a través del *parámetro pAttributes* de la función.
+-   [**MFCreateDeviceSourceActivate:**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesourceactivate)establezca el atributo a través del *parámetro pAttributes* de la función.
+-   [**MFEnumDeviceSources:**](/windows/desktop/api/mfidl/nf-mfidl-mfenumdevicesources)establezca el atributo en el puntero [**DE LAACTIVATE devuelto**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) por la función. Establezca el atributo antes de llamar [**a IMFActivate::ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject).
 
 El atributo solo se aplica a los dispositivos de captura de vídeo.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                            |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Captura de audio y vídeo](audio-video-capture.md)

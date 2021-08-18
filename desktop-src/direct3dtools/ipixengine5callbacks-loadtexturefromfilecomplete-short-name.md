@@ -4,17 +4,17 @@ MS-HAID: vspixengine.IPixEngine5Callbacks\_LoadTextureFromFileComplete\_UINT\_Pi
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'IPixEngine5Callbacks:: LoadTextureFromFileComplete (método)'
+title: IPixEngine5Callbacks::LoadTextureFromFileComplete (método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef7fb4c38b733a7e85a237260404b5b253e3eb88
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f8e9a9530fb9ada600d818494565765655c2c8cfb3bca938d8b9dff9d240aa6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105696082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985975"
 ---
-# <a name="span-idvspixengineipixengine5callbacks_loadtexturefromfilecomplete_uint_pixenginetexturedescriptor_uint_pixenginetexturesliceindex_arr_pixenginetextureslicedescriptor_arr_uint_int_arr_pixenginehistogram_ptrspanipixengine5callbacksloadtexturefromfilecomplete-method"></a><span id="vspixengine.ipixengine5callbacks_loadtexturefromfilecomplete_uint_pixenginetexturedescriptor_uint_pixenginetexturesliceindex_arr_pixenginetextureslicedescriptor_arr_uint_int_arr_pixenginehistogram_ptr"></span>IPixEngine5Callbacks:: LoadTextureFromFileComplete (método)
+# <a name="span-idvspixengineipixengine5callbacks_loadtexturefromfilecomplete_uint_pixenginetexturedescriptor_uint_pixenginetexturesliceindex_arr_pixenginetextureslicedescriptor_arr_uint_int_arr_pixenginehistogram_ptrspanipixengine5callbacksloadtexturefromfilecomplete-method"></a><span id="vspixengine.ipixengine5callbacks_loadtexturefromfilecomplete_uint_pixenginetexturedescriptor_uint_pixenginetexturesliceindex_arr_pixenginetextureslicedescriptor_arr_uint_int_arr_pixenginehistogram_ptr"></span>IPixEngine5Callbacks::LoadTextureFromFileComplete (método)
 
 Función de devolución de llamada que se usa para notificar al host cuando se ha completado una carga de textura.
 
@@ -37,7 +37,7 @@ HRESULT LoadTextureFromFileComplete(
 ## <a name="parameters"></a>Parámetros
 
 *textureId*   
-IDENTIFICADOR de la textura cargada.
+Identificador de la textura cargada.
 
 *textureDesc*   
 Descriptor de textura de la textura cargada.
@@ -46,27 +46,27 @@ Descriptor de textura de la textura cargada.
 Número de segmentos que tiene la textura.
 
 *count2 \_ sliceIndicies*   
-Segmentar las lenguas indias asociadas a la textura.
+Segmentación de las adicciones asociadas a la textura.
 
 *count2 \_ sliceDescriptors*   
-Descriptores de cada segmento.
+Descriptores para cada segmento.
 
 *numFormatOverrides*   
 Número de invalidaciones de formato.
 
 *count5 \_ formatOverrides*   
-El formato invalida.
+Invalida el formato.
 
-*cargas*   
+*Histograma*   
 Dirección de los datos del histograma para la textura cargada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vea también
 

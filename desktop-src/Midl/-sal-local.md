@@ -1,9 +1,9 @@
 ---
-title: modificador/sal_local
-description: El \_ conmutador local/sal dirige a MIDL para que también genere anotaciones sal para los parámetros de los métodos de interfaz marcados como \ local \. El modificador/sal también debe estar presente.
+title: Modificador /sal_local
+description: El modificador local /sal hace que MIDL también genere anotaciones SAL para parámetros de \_ métodos de interfaz marcados como \local\. El modificador /sal también debe estar presente.
 ms.assetid: 49AFC3F6-EAD5-45F6-8862-EFB3D9C479D1
 keywords:
-- /sal_local modificador MIDL
+- /sal_local switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,45 +12,45 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 03263b94b809407d1c3e55c2f3dacc5e10684bc1
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 666401cca482846fc2e6a9d5851a4da9d2d362279c9bc1496ab672a94ac9b9bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105676291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014093"
 ---
-# <a name="sal_local-switch"></a>\_conmutador local de/sal
+# <a name="sal_local-switch"></a>Modificador local /sal \_
 
-El **conmutador \_ local/sal** dirige a MIDL para que también genere anotaciones sal para los parámetros de los métodos de interfaz marcados como [**\[ locales \]**](local.md). El modificador [**/sal**](-sal.md) también debe estar presente.
+El **modificador \_ local /sal** hace que MIDL también genere anotaciones SAL para los parámetros de los métodos de interfaz marcados [**\[ como locales. \]**](local.md) El [**modificador /sal**](-sal.md) también debe estar presente.
 
 ``` syntax
 midl /sal /sal_local
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Cambiar opciones
 
 Este modificador no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Modifica el comportamiento del modificador [**/sal**](-sal.md) para proporcionar también anotaciones en los parámetros de los métodos de interfaz marcados con el atributo [**\[ local \]**](local.md) . Utilice el atributo [**\[ Anotate \]**](annotate.md)para invalidar la anotación generada por MIDL con una cadena de anotación diferente.
+Modifica el comportamiento del modificador [**/sal**](-sal.md) para proporcionar también anotaciones en los parámetros de los métodos de interfaz marcados con el [**\[ atributo local. \]**](local.md) Use el [**\[ atributo \] anotación**](annotate.md)para invalidar la anotación generada por MIDL con una cadena de anotación diferente.
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
 [**/sal**](-sal.md)
 </dt> <dt>
 
-[**\[anotar\]**](annotate.md)
+[**\[Anotar\]**](annotate.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

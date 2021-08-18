@@ -1,99 +1,99 @@
 ---
-description: Los ControlEvents son análogos a los mensajes de Microsoft Windows en aplicaciones basadas en Win32.
+description: Los eventos de control son análogos a los mensajes Windows Microsoft en aplicaciones basadas en Win32.
 ms.assetid: ac62bb94-0605-4145-996a-e91fb1a42a77
-title: Información general de ControlEvent,
+title: Información general sobre ControlEvent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b92f8662a87bf9040b6a811fc170c25a5cf62ad7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de2736c93a728e2419f2ac9c722be2149e6e3ac681c95428f3383570262eb583
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045145"
 ---
-# <a name="controlevent-overview"></a>Información general de ControlEvent,
+# <a name="controlevent-overview"></a>Información general sobre ControlEvent
 
-Los ControlEvents son análogos a los mensajes de Microsoft Windows en aplicaciones basadas en Win32. Sin embargo, en lugar de crear una función de devolución de llamada para recibir mensajes de Windows y enviar mensajes de Windows con la función [SendMessage](/windows/win32/api/winuser/nf-winuser-sendmessage) , el instalador de la interfaz de usuario (IU) y los controles publican [ControlEvents](control-events.md). Se pueden especificar otros controles y el instalador para suscribirse a ControlEvents particulares que, a continuación, cambiarán los atributos del control de suscripción. Para agregar controles de trabajo a los cuadros de diálogo, el autor de la interfaz de usuario especifica la publicación de ControlEvents en la [tabla ControlEvent,](controlevent-table.md) y suscribe los controles a ControlEvents en la [tabla EventMapping](eventmapping-table.md).
+Los eventos de control son análogos a los mensajes Windows Microsoft en aplicaciones basadas en Win32. Sin embargo, en lugar de crear una función de devolución de llamada para recibir mensajes Windows y enviar mensajes Windows con la función [SendMessage,](/windows/win32/api/winuser/nf-winuser-sendmessage) el instalador de la interfaz de usuario (UI) y los controles publican [ControlEvents](control-events.md). Se pueden especificar otros controles y el instalador para suscribirse a eventos de control determinados que, a continuación, cambiarán los atributos del control de suscripción. Para agregar controles de trabajo a cuadros de diálogo, el autor de la interfaz de usuario especifica la publicación de ControlEvents en la [tabla ControlEvent](controlevent-table.md) y suscribe los controles a ControlEvents en la [tabla EventMapping](eventmapping-table.md).
 
-El instalador publicará los siguientes eventos en los controles de suscripción que se enumeran en la [tabla EventMapping](eventmapping-table.md). Un control [ProgressBar](progressbar-control.md) o un [control](billboard-control.md) de la cartelera normalmente se suscribe a SetProgress, el resto se suscribe a por [los controles de texto](text-control.md).
+El instalador publicará los siguientes eventos en los controles de suscripción enumerados en la [tabla EventMapping](eventmapping-table.md). Normalmente, [un control ProgressBar](progressbar-control.md) o [Un control Derech](billboard-control.md) se suscribe a SetProgress, el resto se suscribe a mediante controles [Text](text-control.md).
 
-[ActionData ControlEvent,](actiondata-controlevent.md)
+[ActionData ControlEvent](actiondata-controlevent.md)
 
-[ActionText ControlEvent,](actiontext-controlevent.md)
+[ActionText ControlEvent](actiontext-controlevent.md)
 
-[SetProgress ControlEvent,](setprogress-controlevent.md)
+[SetProgress ControlEvent](setprogress-controlevent.md)
 
-[TimeRemaining ControlEvent,](timeremaining-controlevent.md)
+[TimeRemaining ControlEvent](timeremaining-controlevent.md)
 
-[ScriptInProgress ControlEvent,](scriptinprogress-controlevent.md)
+[ScriptInProgress ControlEvent](scriptinprogress-controlevent.md)
 
-El control publica los siguientes eventos cuando la selección de elementos se mueve en un control [SelectionTree](selectiontree-control.md) o [DirectoryList](directorylist-control.md). Los controles de suscripción deben estar ubicados en el mismo cuadro de diálogo y se muestran en la tabla EventMapping.
+El control publica los siguientes eventos cuando la selección de elementos se mueve en un [control SelectionTree](selectiontree-control.md) o [directoryList Control](directorylist-control.md). Los controles de suscripción deben encontrarse en el mismo cuadro de diálogo y aparecer en la tabla EventMapping.
 
-[IgnoreChange ControlEvent,](ignorechange-controlevent.md)
+[IgnoreChange ControlEvent](ignorechange-controlevent.md)
 
-[SelectionDescription ControlEvent,](selectiondescription-controlevent.md)
+[SelectionDescription ControlEvent](selectiondescription-controlevent.md)
 
-[SelectionSize ControlEvent,](selectionsize-controlevent.md)
+[SelectionSize ControlEvent](selectionsize-controlevent.md)
 
-[SelectionPath ControlEvent,](selectionpath-controlevent.md)
+[SelectionPath ControlEvent](selectionpath-controlevent.md)
 
-[SelectionAction ControlEvent,](selectionaction-controlevent.md)
+[SelectionAction ControlEvent](selectionaction-controlevent.md)
 
-[SelectionNoItems ControlEvent,](selectionnoitems-controlevent.md)
+[SelectionNoItems ControlEvent](selectionnoitems-controlevent.md)
 
-Los siguientes ControlEvents se pueden publicar a la discreción de un usuario mediante la interacción con un [control de pulsador](pushbutton-control.md) o un [control de casilla](checkbox-control.md) en un cuadro de diálogo. El control CheckBox solo puede publicar los eventos AddLocal, AddSource, Remove, OnAction y SetProperty. Con Windows Installer versiones que se suministran con Windows Server 2003 y versiones posteriores, el [control SelectionTree](selectiontree-control.md) puede publicar la acción OnAction, ControlEvent, y SetProperty ControlEvents. El autor de la interfaz de usuario debe enumerar ControlEvent, en la [tabla ControlEvent,](controlevent-table.md). El controlador de la interfaz de usuario del instalador es el suscriptor a estos eventos.
+Los siguientes controles ControlEvents se pueden publicar a discreción de un usuario mediante la interacción con un [control PushButton](pushbutton-control.md) o [un control CheckBox](checkbox-control.md) en un cuadro de diálogo. El control Checkbox solo puede publicar los eventos AddLocal, AddSource, Remove, DoAction y SetProperty. Con Windows Installer que se incluye con Windows Server 2003 y versiones posteriores, el [control SelectionTree](selectiontree-control.md) puede publicar los controles DoAction, ControlEvent y SetProperty ControlEvents. El autor de la interfaz de usuario debe enumerar el controlEvent en la [tabla ControlEvent](controlevent-table.md). El controlador de interfaz de usuario del instalador es el suscriptor de estos eventos.
 
-[AddLocal ControlEvent,](addlocal-controlevent.md)
+[AddLocal ControlEvent](addlocal-controlevent.md)
 
-[AddSource ControlEvent,](addsource-controlevent.md)
+[AddSource ControlEvent](addsource-controlevent.md)
 
-[CheckExistingTargetPath ControlEvent,](checkexistingtargetpath-controlevent.md)
+[CheckExistingTargetPath ControlEvent](checkexistingtargetpath-controlevent.md)
 
-[CheckTargetPath ControlEvent,](checktargetpath-controlevent.md)
+[CheckTargetPath ControlEvent](checktargetpath-controlevent.md)
 
-[ControlEvent, de acción](doaction-controlevent.md)
+[DoAction ControlEvent](doaction-controlevent.md)
 
-[EnableRollback ControlEvent,](enablerollback-controlevent.md)
+[EnableRollback ControlEvent](enablerollback-controlevent.md)
 
-[EndDialog ControlEvent,](enddialog-controlevent.md)
+[EndDialog ControlEvent](enddialog-controlevent.md)
 
-[NewDialog ControlEvent,](newdialog-controlevent.md)
+[NewDialog ControlEvent](newdialog-controlevent.md)
 
-[Reinstalar ControlEvent,](reinstall-controlevent.md)
+[Reinstalar ControlEvent](reinstall-controlevent.md)
 
-[ReinstallMode ControlEvent,](reinstallmode-controlevent.md)
+[ReinstallMode ControlEvent](reinstallmode-controlevent.md)
 
-[Quitar ControlEvent,](remove-controlevent.md)
+[Quitar ControlEvent](remove-controlevent.md)
 
-[Restablecer ControlEvent,](reset-controlevent.md)
+[Restablecer ControlEvent](reset-controlevent.md)
 
-[SetInstallLevel ControlEvent,](setinstalllevel-controlevent.md)
+[SetInstallLevel ControlEvent](setinstalllevel-controlevent.md)
 
-[SetProperty ControlEvent,](setproperty-controlevent.md)
+[SetProperty ControlEvent](setproperty-controlevent.md)
 
-[SetTargetPath ControlEvent,](settargetpath-controlevent.md)
+[SetTargetPath ControlEvent](settargetpath-controlevent.md)
 
-[SpawnDialog ControlEvent,](spawndialog-controlevent.md)
+[SpawnDialog ControlEvent](spawndialog-controlevent.md)
 
-[SpawnWaitDialog ControlEvent,](spawnwaitdialog-controlevent.md)
+[SpawnWaitDialog ControlEvent](spawnwaitdialog-controlevent.md)
 
-[ValidateProductID ControlEvent,](validateproductid-controlevent.md)
+[ValidateProductID ControlEvent](validateproductid-controlevent.md)
 
-Un [control Pushbutton](pushbutton-control.md) puede publicar los eventos siguientes en un control [SelectionTree](selectiontree-control.md) de suscripción o en un [control DirectoryList](directorylist-control.md) ubicado en el mismo cuadro de diálogo. El control PushButton debe aparecer en la tabla ControlEvent, y los controles de suscripción deben aparecer en la tabla EventMapping.
+Un [control PushButton](pushbutton-control.md) puede publicar los siguientes eventos en un control [SelectionTree](selectiontree-control.md) de suscripción o un control [DirectoryList](directorylist-control.md) ubicado en el mismo cuadro de diálogo. El control PushButton debe aparecer en la tabla ControlEvent y los controles de suscripción deben aparecer en la tabla EventMapping.
 
-[SelectionBrowse ControlEvent,](selectionbrowse-controlevent.md)
+[SelectionBrowse ControlEvent](selectionbrowse-controlevent.md)
 
-[DirectoryListUp ControlEvent,](directorylistup-controlevent.md)
+[DirectoryListUp ControlEvent](directorylistup-controlevent.md)
 
-[DirectoryListNew ControlEvent,](directorylistnew-controlevent.md)
+[DirectoryListNew ControlEvent](directorylistnew-controlevent.md)
 
-[DirectoryListOpen ControlEvent,](directorylistopen-controlevent.md)
+[DirectoryListOpen ControlEvent](directorylistopen-controlevent.md)
 
-Normalmente, los eventos de control requieren que la interfaz de usuario se ejecute en el nivel de [*interfaz de usuario completo*](f-gly.md) . La mayoría de ControlEvents no funcionará con una interfaz de usuario [*básica*](b-gly.md) o una [*reducida*](r-gly.md) porque estos niveles solo muestran cuadros de diálogo no modales. Los eventos ActionText, AddSource, SetProgress, TimeRemaining y ScriptInProgress son excepciones y funcionarán en la interfaz de usuario básica o reducida. Para obtener más información sobre los niveles de interfaz de usuario, vea niveles de la [interfaz de usuario](user-interface-levels.md).
+Por lo general, los eventos de control requieren que la interfaz de usuario se ejecute en el [*nivel de interfaz de usuario*](f-gly.md) completa. La mayoría de los controles ControlEvents no funcionarán con una interfaz [*de*](r-gly.md) usuario reducida o una interfaz de usuario básica [*porque*](b-gly.md) estos niveles solo muestran cuadros de diálogo no modelo. Los eventos ActionText, AddSource, SetProgress, TimeRemaining y ScriptInProgress son excepciones y funcionarán en una interfaz de usuario básica o reducida. Para obtener más información sobre los niveles de interfaz de usuario, [vea Interfaz de usuario niveles](user-interface-levels.md).
 
-Puede ejecutar [acciones personalizadas](custom-actions.md) mediante la publicación de un ControlEvent, desde un [control Pushbutton](pushbutton-control.md) o un [control CheckBox](checkbox-control.md). Agregue un registro a la [tabla ControlEvent,](controlevent-table.md) con los nombres del cuadro de diálogo y el control que publica ControlEvent,. Este control debe publicar un [ControlEvent, de acción](doaction-controlevent.md) que notifique al instalador que ejecute la acción personalizada. En Windows XP o sistemas anteriores, no se puede ejecutar una acción personalizada mediante la publicación de un ControlEvent, desde un [control SelectionTree](selectiontree-control.md).
+Puede ejecutar acciones [personalizadas mediante](custom-actions.md) la publicación de un control ControlEvent desde un [control PushButton o](pushbutton-control.md) un control [Checkbox](checkbox-control.md). Agregue un registro a la [tabla ControlEvent con](controlevent-table.md) los nombres del cuadro de diálogo y el control que publica el control ControlEvent. Este control debe publicar un [control ControlEvent de DoAction](doaction-controlevent.md) que notifique al instalador que ejecute la acción personalizada. En Windows XP o sistemas anteriores, no se puede ejecutar una acción personalizada mediante la publicación de un control ControlEvent desde un [control SelectionTree](selectiontree-control.md).
 
-Para obtener más información sobre ControlEvents concretos, consulte la lista de [ControlEvents](control-events.md) estándar en [referencia](user-interface-reference.md)de la interfaz de usuario.
+Para obtener más información sobre eventos de control concretos, vea la lista de [eventos controlevents](control-events.md) estándar [en Interfaz de usuario referencia](user-interface-reference.md).
 
  
 

@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: 29b618881305296a560dc9102f7571c08236d1bb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7337f6d6fde2f778259aa1db933e13f64dcda41e694a40c5880f6015e2740045
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911695"
 ---
 # <a name="ienumpstoreitemsclone-method"></a>IEnumPStoreItems::Clone (Método)
 
-\[El almacenamiento protegido (Pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede no estar disponible en versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura que proporcionan las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
+\[Protected Storage (Pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede que no esté disponible en versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura que proporcionan las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
 Crea otro enumerador que contiene el mismo estado de enumeración que el actual.
 
@@ -41,7 +41,7 @@ HRESULT Clone(
 
 <dl> <dt>
 
-*laum* \[ out\]
+*mio* \[ out\]
 </dt> <dd>
 
 Puntero a un [**puntero IEnumPStoreItems.**](ienumpstoreitems.md)
@@ -50,7 +50,7 @@ Puntero a un [**puntero IEnumPStoreItems.**](ienumpstoreitems.md)
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es **un valor HRESULT.**
+El valor devuelto es un **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ El valor devuelto es **un valor HRESULT.**
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

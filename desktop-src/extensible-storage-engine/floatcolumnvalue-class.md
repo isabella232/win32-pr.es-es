@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase FloatColumnValue'
+description: 'Más información sobre: Clase FloatColumnValue'
 title: Clase FloatColumnValue
 TOCTitle: FloatColumnValue class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.FloatColumnValue
@@ -24,28 +24,28 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 54d6c21fe623e7ee7544098c7487523f2c5f86e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb42fd6aae84bea83202efbe6badceaa1d66694fb77bd1fda73500460cca9f52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968825"
 ---
 # <a name="floatcolumnvalue-class"></a>Clase FloatColumnValue
 
-Valor de una [sola](/dotnet/api/system.single) columna.
+Un [valor de](/dotnet/api/system.single) columna única.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft. ISAM. esent. Interop. ColumnValue](./columnvalue-class.md)  
-    [Microsoft. ISAM. esent. Interop. ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Single](/dotnet/api/system.single)\>  
-      Microsoft. ISAM. esent. Interop. FloatColumnValue  
+  [Microsoft.Isam.Esent.Interop.ColumnValue](./columnvalue-class.md)  
+    [Microsoft.Isam.Esent.Interop.ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Single](/dotnet/api/system.single)\>  
+      Microsoft.Isam.Esent.Interop.FloatColumnValue  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -67,6 +67,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de FloatColumnValue](./floatcolumnvalue-members.md)
+[Miembros FloatColumnValue](./floatcolumnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

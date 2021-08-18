@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_CONVERT (clase)'
-title: JET_CONVERT (clase)
+description: 'Más información sobre: JET_CONVERT clase'
+title: JET_CONVERT clase
 TOCTitle: JET_CONVERT class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_CONVERT
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_convert(v=EXCHG.10)
@@ -24,28 +24,28 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 427361962ee2161e4f4c7448eb9ef21b7369e36c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee601d51acb75e4a6338952837e980d0e09da7d0cb06431a4bd197f04d495693
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017605"
 ---
-# <a name="jet_convert-class"></a>JET_CONVERT (clase)
+# <a name="jet_convert-class"></a>JET_CONVERT clase
 
-**Nota: esta API ya está obsoleta.**
+**NOTA: Esta API ahora está obsoleta.**
 
-Opciones de conversión para [JetCompact (JET_SESID, cadena, cadena, JET_PFNSTATUS, JET_CONVERT, CompactGrbit)](./api.jetcompact-method.md). Esta característica se ha suspendido en Windows Server 2003.
+Opciones de conversión [para JetCompact(JET_SESID, String, String, JET_PFNSTATUS, JET_CONVERT, CompactGrbit).](./api.jetcompact-method.md) Esta característica se descontinuó en Windows Server 2003.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_CONVERT  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -68,6 +68,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_CONVERT](./jet-convert-members.md)
+[JET_CONVERT miembros](./jet-convert-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

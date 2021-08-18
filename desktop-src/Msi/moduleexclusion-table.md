@@ -13,9 +13,9 @@ ms.locfileid: "119996445"
 ---
 # <a name="moduleexclusion-table"></a>ModuleExclusion Table
 
-La tabla ModuleExclusion mantiene una lista de otros módulos de combinación incompatibles en la misma base de datos del instalador. Esta tabla permite que una herramienta de combinación o comprobación compruebe que los módulos de mezcla en conflicto no se combinan en la base de datos del instalador del usuario. La herramienta comprueba haciendo referencia cruzada a esta tabla con la tabla ModuleSignature de la base de datos del instalador.
+La tabla ModuleExclusion mantiene una lista de otros módulos de combinación incompatibles en la misma base de datos del instalador. Esta tabla permite que una herramienta de combinación o comprobación compruebe que los módulos de combinación en conflicto no se combinan en la base de datos del instalador del usuario. La herramienta comprueba haciendo referencia cruzada a esta tabla con la tabla ModuleSignature de la base de datos del instalador.
 
-La tabla ModuleExclusion tiene las siguientes columnas.
+La tabla ModuleExclusion tiene las columnas siguientes.
 
 
 
@@ -66,9 +66,9 @@ Id. de idioma numérico del módulo de combinación en ExcludedID. La columna Ex
 
 | ExcludedLanguage | Significado                                                              |
 |------------------|----------------------------------------------------------------------|
-| >0           | Excluya los ID de idioma especificados por ExcludedLanguage.              |
-| = 0              | No se excluyen los ID de idioma.                                             |
-| < 0           | Excluya todos los ID de idioma excepto los especificados por ExcludedLanguage. |
+| >0           | Excluya los valores de idioma especificados por ExcludedLanguage.              |
+| = 0              | No excluir ningún idioma.                                             |
+| < 0           | Excluya todos los valores de idioma excepto los especificados por ExcludedLanguage. |
 
 
 

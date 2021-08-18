@@ -1,9 +1,9 @@
 ---
-title: Atributo WM/proveedor
+title: Atributo WM/Provider
 description: El atributo WM/Provider es el nombre del proveedor de los valores de atributo.
 ms.assetid: 358651d3-5bcd-4a03-a9aa-a33745d0323a
 keywords:
-- Media Player de Windows de atributo de WM/proveedor
+- Atributo WM/Provider Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,35 +12,35 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d7c2c1c796edf28a567f72708c60c7976f718bb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bc7fa8312d095151145cfe33a139def23e20082aec2cd1d5f1c3344b9b565dfb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119735375"
 ---
-# <a name="wmprovider-attribute"></a>Atributo WM/proveedor
+# <a name="wmprovider-attribute"></a>Atributo WM/Provider
 
-El atributo **WM/Provider** es el nombre del proveedor de los valores de atributo.
+El **atributo WM/Provider** es el nombre del proveedor de los valores de atributo.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
 -   [Listas de reproducción de CD](cd-playlist-attributes.md)
 -   [Pistas de CD](cd-track-attributes.md)
--   [Atributos de archivo de Windows Media de uso frecuente](commonly-used-windows-media-file-attributes.md)
+-   [Atributos de archivo multimedia Windows uso frecuente](commonly-used-windows-media-file-attributes.md)
 -   [Elementos de radio](radio-item-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se almacena en la biblioteca (o caché) y en el archivo multimedia digital.
+Este atributo se almacena tanto en la biblioteca (o caché) como en el archivo multimedia digital.
 
-**Metadatasource** es un alias para este atributo.
+**MetadataSource** es un alias para este atributo.
 
-La constante del SDK de Windows Media Format para este atributo es g \_ wszWMProvider.
+La Windows SDK de formato multimedia para este atributo es g \_ wszWMProvider.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,7 +48,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior (el elemento de fotografía solo se admite en Windows Media Player 10 o posterior)<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior (el elemento de foto solo se admite en Reproductor de Windows Media 10 o posterior)<br/> |
 
 
 
@@ -56,7 +56,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

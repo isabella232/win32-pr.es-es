@@ -1,24 +1,24 @@
 ---
-description: Proporcionar devoluciones de llamada para los servicios ELS
+description: Proporcionar devoluciones de llamada para los servicios DE ELS
 ms.assetid: 48609c55-9e82-4407-ae28-41b07b1e1161
-title: Proporcionar devoluciones de llamada para los servicios ELS
+title: Proporcionar devoluciones de llamada para los servicios DE ELS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1d22091f666649aab43c66f3d532f8e8f971d49
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec6704bcf11d2619431aa1b855cd711f82e75e71fc4a762c0e8cf2cb35082341
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040495"
 ---
-# <a name="providing-callbacks-for-els-services"></a>Proporcionar devoluciones de llamada para los servicios ELS
+# <a name="providing-callbacks-for-els-services"></a>Proporcionar devoluciones de llamada para los servicios DE ELS
 
-Si la aplicación usa operaciones asincrónicas para el reconocimiento de texto, debe proporcionar una función de devolución de llamada para que la use el servicio ELS. La función de devolución de llamada se basa en el prototipo [**MappingCallbackProc**](/windows/desktop/api/Elscore/nc-elscore-pfn_mappingcallbackproc) .
+Si la aplicación usa operaciones asincrónicas para el reconocimiento de texto, debe proporcionar una función de devolución de llamada para que la use el servicio ELS. La función de devolución de llamada se basa en el [**prototipo MappingCallbackProc.**](/windows/desktop/api/Elscore/nc-elscore-pfn_mappingcallbackproc)
 
-El tema [solicitar reconocimiento de texto](requesting-text-recognition.md) describe cómo la aplicación puede solicitar el reconocimiento de texto asincrónico de un servicio Els. En el ejemplo siguiente se muestra una aplicación que realiza una llamada asincrónica a [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext). La función de devolución de llamada para el reconocimiento de texto se denomina **RecognizeCallback**. Tenga en cuenta que la aplicación debe asegurarse de que el contenedor de propiedades, el texto de entrada, las opciones y el servicio sean válidos hasta que la función de devolución de llamada haya terminado de ejecutarse. Además, la aplicación debe asegurarse de que se llama a [**MappingFreePropertyBag**](/windows/desktop/api/Elscore/nf-elscore-mappingfreepropertybag) inmediatamente después de que la función de devolución de llamada consume el contenedor.
+En [el tema Solicitud de reconocimiento de](requesting-text-recognition.md) texto se describe cómo la aplicación puede solicitar el reconocimiento de texto asincrónico desde un servicio ELS. En el ejemplo siguiente se muestra una aplicación que realiza una llamada asincrónica a [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext). La función de devolución de llamada para el reconocimiento de texto se **denomina RecognizeCallback.** Tenga en cuenta que la aplicación debe asegurarse de que el bolsa de propiedades, el texto de entrada, las opciones y el servicio sean válidos hasta que la función de devolución de llamada haya terminado de ejecutarse. Además, la aplicación debe asegurarse de que se llama a [**MappingFreePropertyBag**](/windows/desktop/api/Elscore/nf-elscore-mappingfreepropertybag) inmediatamente después de que la función de devolución de llamada consuma la bolsa.
 
 > [!Note]  
-> Es posible que la aplicación use la función de devolución de llamada para liberar los recursos después de que haya terminado de procesarlos o copiarlos.
+> Puede ser una buena idea que la aplicación use la función de devolución de llamada para liberar los recursos una vez que haya terminado de procesarlos o copiarlos.
 
  
 
@@ -152,7 +152,7 @@ void RecognizeCallback(PMAPPING_PROPERTY_BAG pBag, LPVOID data, DWORD dwDataSize
 [Uso de servicios lingüísticos extendidos](using-extended-linguistic-services.md)
 </dt> <dt>
 
-[Solicitar reconocimiento de texto](requesting-text-recognition.md)
+[Solicitud de reconocimiento de texto](requesting-text-recognition.md)
 </dt> <dt>
 
 [**MappingCallbackProc**](/windows/desktop/api/Elscore/nc-elscore-pfn_mappingcallbackproc)

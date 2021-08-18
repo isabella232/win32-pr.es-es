@@ -1,6 +1,6 @@
 ---
-description: Le notifica que guarde el objeto que se ha pasado.
-title: Mensaje de SMC_SETSFOBJECT (shobjidl. h)
+description: Le notifica que guarde el objeto pasado.
+title: SMC_SETSFOBJECT mensaje (Shobjidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: f7e2cf12-7f09-45b0-97d3-eed803e57d9f
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 44aeb41ab7dcd271f8c84bff4eb8b5525ac66e70
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ac46fd69d4d91870dcd288190baac275b37a5f093b87646c17d19e479bd710e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968014"
 ---
-# <a name="smc_setsfobject-message"></a>Mensaje de SETSFOBJECT de SMC \_
+# <a name="smc_setsfobject-message"></a>Mensaje SMC \_ SETSFOBJECT
 
-Le notifica que guarde el objeto que se ha pasado.
+Le notifica que guarde el objeto pasado.
 
 
 ```C++
@@ -38,29 +38,29 @@ SMC_GETOBJECT
 
 <dl> <dt>
 
-*suscripto* 
+*Iid* 
 </dt> <dd>
 
-IID asociado al objeto.
+El IID asociado al objeto .
 
 </dd> <dt>
 
-*FV* 
+*Pv* 
 </dt> <dd>
 
-Puntero a la interfaz en el objeto especificado por *IID*.
+Puntero a la interfaz del objeto especificado por *iid*.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devolver S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
+El método [**IShellMenuCallback::CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
 
-La notificación de **SMC \_ SETSFOBJECT** se usa con el flujo de IID \_ . El objeto se guarda en un formulario guardado en el registro y no se hace nada con el recuento de referencias en el objeto pasado.
+La **notificación \_ SETSFOBJECT** de SMC se usa con IID \_ Stream. El objeto se guarda en un formulario persistente en el Registro y no se hace nada con el recuento de referencias en el objeto pasado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,8 +70,8 @@ La notificación de **SMC \_ SETSFOBJECT** se usa con el flujo de IID \_ . El ob
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Shobjidl. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shobjidl. idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

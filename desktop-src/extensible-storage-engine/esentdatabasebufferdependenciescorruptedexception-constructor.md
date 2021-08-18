@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDatabaseBufferDependenciesCorruptedException'
-title: Constructor de EsentDatabaseBufferDependenciesCorruptedException
+description: 'Más información sobre: Constructor EsentDatabaseBufferDependenciesCorruptedException'
+title: Constructor EsentDatabaseBufferDependenciesCorruptedException
 TOCTitle: 'EsentDatabaseBufferDependenciesCorruptedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDatabaseBufferDependenciesCorruptedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdatabasebufferdependenciescorruptedexception.esentdatabasebufferdependenciescorruptedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 926413f1c0388c1fd3e286f683a5db9b415102b2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 520521edd517ceef5af94db312b57a5af7bdd8e98c7851a1c95582c6587c6f7b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119852255"
 ---
-# <a name="esentdatabasebufferdependenciescorruptedexception-constructor"></a>Constructor de EsentDatabaseBufferDependenciesCorruptedException
+# <a name="esentdatabasebufferdependenciescorruptedexception-constructor"></a>Constructor EsentDatabaseBufferDependenciesCorruptedException
 
 Inicializa una nueva instancia de la clase EsentDatabaseBufferDependenciesCorruptedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentDatabaseBufferDependenciesCorruptedException()
 public EsentDatabaseBufferDependenciesCorruptedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentDatabaseBufferDependenciesCorruptedException()
 
 [Miembros de EsentDatabaseBufferDependenciesCorruptedException](./esentdatabasebufferdependenciescorruptedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,18 +1,18 @@
 ---
 title: OP_CERT_PFX_STORE
-description: Definición de OP_CERT_PFX_STORE IDL
+description: OP_CERT_PFX_STORE definición de IDL
 ms.assetid: 10773feb-623c-4256-a973-f006ed66d936
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: b07d0b8e5572763cc42fe2f5b19a4dde2cfe2157
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.openlocfilehash: 28e8b9e1a6d73f3d93e1700f812b21a0edf21982b7d5b9c927f4e7391b961850
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "105720190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911545"
 ---
-# <a name="op_cert_pfx_store-structure"></a>Estructura de OP_CERT_PFX_STORE
+# <a name="op_cert_pfx_store-structure"></a>OP_CERT_PFX_STORE estructura
 
 Contiene una estructura PFX serializada.
 
@@ -35,23 +35,23 @@ typedef struct _OP_CERT_PFX_STORE
 
 ### <a name="ptemplatename"></a>pTemplateName
 
-Debe establecerse en el nombre de la plantilla de certificado que se usa para crear el certificado.
+Debe establecerse en el nombre de la plantilla de certificado utilizada para crear el certificado.
 
 ### <a name="ulprivatekeyexportpolicy"></a>ulPrivateKeyExportPolicy
 
-Contiene un valor de la enumeración [**X509PrivateKeyExportFlags**](/windows/win32/api/certenroll/ne-certenroll-x509privatekeyexportflags) .
+Contiene un valor de la [**enumeración X509PrivateKeyExportFlags.**](/windows/win32/api/certenroll/ne-certenroll-x509privatekeyexportflags)
 
 ### <a name="ppolicyserverurl"></a>pPolicyServerUrl
 
-Debe establecer la dirección URL del servidor de directivas.
+Debe establecerse la dirección URL del servidor de directivas.
 
 ### <a name="ulpolicyserverurlflags"></a>ulPolicyServerUrlFlags
 
-Contiene un valor de la enumeración [**PolicyServerUrlFlags**](/windows/win32/api/certenroll/ne-certenroll-policyserverurlflags) .
+Contiene un valor de la [**enumeración PolicyServerUrlFlags.**](/windows/win32/api/certenroll/ne-certenroll-policyserverurlflags)
 
 ### <a name="ppolicyserverid"></a>pPolicyServerId
 
-Contiene una cadena que identifica de forma única el servidor de directivas
+Contiene una cadena que identifica de forma única el servidor de directivas.
 
 ### <a name="cbpfx"></a>cbPfx
 
@@ -59,8 +59,8 @@ Contiene el tamaño de pPfx en bytes.
 
 ### <a name="ppfx"></a>pPfx
 
-Contiene una estructura PFX serializada (consulte [**RFC 7292**](https://tools.ietf.org/html/rfc7292)).
+Contiene una estructura PFX serializada (vea [**RFC 7292**](https://tools.ietf.org/html/rfc7292)).
 
 ## <a name="see-also"></a>Vea también
 
-[**Definiciones IDL de unión a dominio sin conexión**](odj-idl.md)
+[**Definiciones de IDL de unión a un dominio sin conexión**](odj-idl.md)

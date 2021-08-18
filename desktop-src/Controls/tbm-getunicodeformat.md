@@ -1,9 +1,9 @@
 ---
 title: TBM_GETUNICODEFORMAT mensaje (Commctrl.h)
-description: 'TBM_GETUNICODEFORMAT mensaje: recupera la marca de formato de caracteres Unicode para el control.'
+description: 'TBM_GETUNICODEFORMAT mensaje: recupera la marca de formato de caracteres Unicode para el control .'
 ms.assetid: cecd7e55-f482-4381-bde8-a60b8c5173eb
 keywords:
-- TBM_GETUNICODEFORMAT de mensajes controles de Windows
+- TBM_GETUNICODEFORMAT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 82e7424a4e561ee8f8be79135309089fe4bb0bf9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7e15f5b12a60b58958dad1364848120f391c91906bb6057727f3a4e22b8a7813
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046175"
 ---
 # <a name="tbm_getunicodeformat-message"></a>Mensaje \_ GETUNICODEFORMAT de TBM
 
@@ -47,15 +47,15 @@ Consulte los comentarios de [**CCM \_ GETUNICODEFORMAT para**](ccm-getunicodefor
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

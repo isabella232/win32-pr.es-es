@@ -4,7 +4,7 @@ description: Recupera una colección enumerable de máquinas virtuales.
 ms.assetid: 9e8dcd65-7cf8-4cdd-a412-62cbb96eb8ec
 keywords:
 - VirtualMachines, propiedad Virtual PC
-- VirtualMachines, propiedad Virtual PC , IVMVirtualPC (interfaz)
+- VirtualMachines, propiedad Virtual PC, interfaz IVMVirtualPC
 - IVMVirtualPC interface Virtual PC , Propiedad VirtualMachines
 topic_type:
 - apiref
@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118998495"
 ---
-# <a name="ivmvirtualpcvirtualmachines-property"></a>Propiedad IVMVirtualPC::VirtualMachines
+# <a name="ivmvirtualpcvirtualmachines-property"></a>IVMVirtualPC::VirtualMachines, propiedad
 
 \[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
@@ -45,7 +45,7 @@ HRESULT get_VirtualMachines(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Colección de [**objetos IVMVirtualMachine.**](ivmvirtualmachine.md) Vea [**IVMVirtualMachineCollection.**](ivmvirtualmachinecollection.md)
+Colección de [**objetos IVMVirtualMachine.**](ivmvirtualmachine.md) Vea [**IVMVirtualMachineCollection**](ivmvirtualmachinecollection.md).
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -56,7 +56,7 @@ Colección de [**objetos IVMVirtualMachine.**](ivmvirtualmachine.md) Vea [**IVMV
 | <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                                              | La operación se realizó correctamente.<br/>                                                        |
 | <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>                                | El parámetro es **NULL.**<br/>                                                           |
 | <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>                        | Se produjo un error inesperado.<br/>                                                    |
-| <dl> <dt>Máquina virtual \_ E \_ HARDWARE \_ VIRTUALIZATION \_ DISABLED</dt> <dt>0xA0040951</dt> </dl> | El procesador no admite extensiones de Virtualización acelerada por hardware (HAV).<br/> |
+| <dl> <dt>Máquina virtual \_ E \_ \_ VIRTUALIZACIÓN DE HARDWARE \_ DESHABILITADA</dt> <dt>0xA0040951</dt> </dl> | El procesador no admite extensiones de virtualización acelerada de hardware (HAV).<br/> |
 
 
 
@@ -64,7 +64,7 @@ Colección de [**objetos IVMVirtualMachine.**](ivmvirtualmachine.md) Vea [**IVMV
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
@@ -75,7 +75,7 @@ Colección de [**objetos IVMVirtualMachine.**](ivmvirtualmachine.md) Vea [**IVMV
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -21,7 +21,7 @@ Esta sección contiene información de referencia sobre las estructuras de la AP
 |:---|:---|
 | [**MAGCOLOREFFECT**](/windows/win32/api/magnification/ns-magnification-magcoloreffect)<br/>  | Describe una matriz de transformación de color que un control de lupa usa para aplicar un efecto de color al contenido de la pantalla ampliada.<br/> |
 | [***MAGIMAGEHEADER** _](/windows/win32/api/magnification/ns-magnification-magimageheader)<br/> | _*En desuso en Windows 7 y versiones posteriores**<br/>Describe un formato de imagen. |
-| [**MAGTRANSFORM**](/windows/win32/api/magnification/ns-magnification-magtransform)<br/> | Describe una matriz de transformación que un control de lupa usa para ampliar el contenido de la pantalla.<br/> |
+| [**MAGTRANSFORM**](/windows/win32/api/magnification/ns-magnification-magtransform)<br/> | Describe una matriz de transformación que usa un control lupa para ampliar el contenido de la pantalla.<br/> |
 
 ## <a name="related-topics"></a>Temas relacionados
 

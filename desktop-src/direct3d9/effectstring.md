@@ -1,19 +1,19 @@
 ---
-description: Plantilla heredada utilizada para asignar un valor en un archivo de efectos. Esta plantilla se ha reemplazado por la plantilla EffectParamString.
+description: Plantilla heredada que se usa para asignar un valor en un archivo de efecto. Esta plantilla se ha reemplazado por la plantilla EffectParamString.
 ms.assetid: a9cebdfe-c70e-4e3f-8fde-41947bd9a1fa
 title: EffectString
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f0278d2bc19bbfbc77d7df57185f031a80a60b52
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8bc863f9ac5ad53db6c9fd825db3cb462897bc9d7683b37faf455b69be0cf3ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105714734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988015"
 ---
 # <a name="effectstring"></a>EffectString
 
-Plantilla heredada utilizada para asignar un valor en un archivo de efectos. Esta plantilla se ha reemplazado por la plantilla [**EffectParamString**](effectparamstring.md) .
+Plantilla heredada que se usa para asignar un valor en un archivo de efecto. Esta plantilla se ha reemplazado por la [**plantilla EffectParamString.**](effectparamstring.md)
 
 ``` syntax
 template EffectString

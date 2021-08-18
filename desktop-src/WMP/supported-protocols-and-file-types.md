@@ -1,84 +1,84 @@
 ---
-title: Tipos de archivos y protocolos admitidos
-description: Tipos de archivos y protocolos admitidos
+title: Protocolos y tipos de archivo admitidos
+description: Protocolos y tipos de archivo admitidos
 ms.assetid: 2672372c-0b42-437e-8b96-83b6e5200fd3
 keywords:
-- Windows Media Player, protocolos
-- Media Player de Windows, tipos de archivo
-- Modelo de objetos de Windows Media Player, protocolos
-- Modelo de objetos de Windows Media Player, tipos de archivo
-- modelo de objetos, protocolos
+- Reproductor de Windows Media,protocolos
+- Reproductor de Windows Media,tipos de archivo
+- Reproductor de Windows Media modelo de objetos, protocolos
+- Reproductor de Windows Media de objetos, tipos de archivo
+- object model,protocols
 - modelo de objetos, tipos de archivo
-- Control ActiveX de Windows Media Player, protocolos para el modelo de objetos
-- Control ActiveX, protocolos para el modelo de objetos
-- Control ActiveX móvil de Windows Media Player, protocolos para el modelo de objetos
-- Windows Media Player Mobile, protocolos para el modelo de objetos
-- Control ActiveX de Windows Media Player, tipos de archivo para el modelo de objetos
-- Control ActiveX, tipos de archivo para el modelo de objetos
-- Control ActiveX móvil de Windows Media Player, tipos de archivo para el modelo de objetos
-- Windows Media Player Mobile, tipos de archivo para el modelo de objetos
-- protocolos, modelo de objetos de Windows Media Player
-- tipos de archivo para el modelo de objetos de Media Player de Windows
+- Reproductor de Windows Media ActiveX control,protocolos para el modelo de objetos
+- ActiveX control,protocolos para el modelo de objetos
+- Reproductor de Windows Media Control de ActiveX móviles, protocolos para el modelo de objetos
+- Reproductor de Windows Media Móvil, protocolos para el modelo de objetos
+- Reproductor de Windows Media ActiveX control,tipos de archivo para el modelo de objetos
+- ActiveX control,tipos de archivo para el modelo de objetos
+- Reproductor de Windows Media Control de ActiveX móvil,tipos de archivo para el modelo de objetos
+- Reproductor de Windows Media Móvil, tipos de archivo para el modelo de objetos
+- protocolos, Reproductor de Windows Media modelo de objetos
+- tipos de archivo para Reproductor de Windows Media modelo de objetos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24a263bc362f39d6b8b93d29d38e7989a8e90b32
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 32568603794e264ce0ed0cba54e798353c8f8e77b7dbd8e89bc67f13bcae3837
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122845"
 ---
-# <a name="supported-protocols-and-file-types"></a>Tipos de archivos y protocolos admitidos
+# <a name="supported-protocols-and-file-types"></a>Protocolos y tipos de archivo admitidos
 
-Windows Media Player admite varios protocolos y muchos tipos de archivo, que se pueden usar al especificar valores de dirección URL en el modelo de objetos del reproductor para propiedades como *Player*. **URL** o en listas de reproducción de metarchivos de Windows Media. Además, se pueden usar los protocolos admitidos al especificar valores de protocolo con los métodos relacionados con el proxy del objeto de **red** .
+Reproductor de Windows Media admite varios protocolos y muchos tipos de archivo, todos los cuales se pueden usar al especificar valores de dirección URL en el modelo de objetos player para propiedades como *player*. **Dirección URL** o en listas Windows de metarchivo multimedia. Además, se pueden usar los protocolos admitidos al especificar valores de protocolo con los métodos relacionados con el proxy del **objeto Network.**
 
-Los siguientes formatos de archivo multimedia digital se admiten actualmente para la reproducción de Windows Media Player:
+Actualmente, los siguientes formatos de archivo multimedia digitales son compatibles con la reproducción de Reproductor de Windows Media:
 
 -   Formato ASF
 -   AIF
 -   AIFC
--   AIFF
+-   Aiff
 -   AU
 -   AVI
 -   MID
--   MPE
+-   Mpe
 -   MPEG
 -   MPG
 -   MPv2
 -   MP2
 -   MP3
--   M1V
--   SND
+-   M1v
+-   Snd
 -   WAV
--   Archivos de Windows Media con una extensión de nombre de archivo. WM
+-   Windows Archivos multimedia con una extensión de nombre de archivo .wm
 -   Audio de Windows Media (WMA)
 -   Vídeo de Windows Media (WMV)
 
-Los siguientes protocolos son compatibles actualmente con Windows Media Player.
+Los siguientes protocolos son compatibles actualmente con Reproductor de Windows Media.
 
 
 
 | Protocolo | Descripción                                                                        |
 |----------|------------------------------------------------------------------------------------|
 | HTTP     | Protocolo de transferencia de hipertexto. Incluye HTTP con caché rápida y multidifusión.          |
-| RTSP     | Protocolo de streaming en tiempo real. Incluye RTSP con memoria caché rápida.                       |
-| RTSPU    | RTSP utilizado con el protocolo de datagramas de usuario (UDP). Incluye RTSPU con caché rápida        |
-| RTSPt    | RTSP utilizado con el protocolo de control de transmisión (TCP). Incluye RTSPt con caché rápida |
-| mms      | Protocolo Microsoft Media Server.                                                   |
+| RTSP     | Protocolo de streaming en tiempo real. Incluye RTSP con caché rápida.                       |
+| Rtspu    | RTSP usado con el Protocolo de datagramas de usuario (UDP). Incluye RTSPU con caché rápida        |
+| RTSPT    | RTSP usado con el Protocolo de control de transmisión (TCP). Incluye RTSPT con caché rápida |
+| mms      | Protocolo de Microsoft Media Server.                                                   |
 | MMSU     | MMS usado con UDP.                                                                 |
-| MMST     | MMS usado con TCP.                                                                 |
-| WMPCD    | Protocolo utilizado por Windows Media Player para proporcionar acceso a CDs.                  |
-| WMPDVD   | Protocolo utilizado por Windows Media Player para proporcionar acceso a DVDs.                 |
+| Mmst     | MMS usado con TCP.                                                                 |
+| WMPCD    | Un protocolo utilizado por Reproductor de Windows Media para proporcionar acceso a los CD.                  |
+| WMPDVD   | Un protocolo utilizado por Reproductor de Windows Media para proporcionar acceso a LOS DVD.                 |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Acerca del modelo de objetos de Player**](about-the-player-object-model.md)
+[**Acerca del modelo de objetos del reproductor**](about-the-player-object-model.md)
 </dt> <dt>
 
 [**Protocolo WMPCD**](wmpcd-protocol.md)
@@ -87,9 +87,9 @@ Los siguientes protocolos son compatibles actualmente con Windows Media Player.
 [**Protocolo WMPDVD**](wmpdvd-protocol.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

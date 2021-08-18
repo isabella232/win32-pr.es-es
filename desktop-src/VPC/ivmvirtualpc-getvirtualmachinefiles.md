@@ -4,7 +4,7 @@ description: Recupera una matriz de archivos de configuración de máquina virtu
 ms.assetid: 38771573-66fa-408a-95db-1281efdf8b73
 keywords:
 - Método GetVirtualMachineFiles de Virtual PC
-- Método GetVirtualMachineFiles Virtual PC , interfaz IVMVirtualPC
+- Método GetVirtualMachineFiles De PC virtual, interfaz IVMVirtualPC
 - IVMVirtualPC interface Virtual PC , Método GetVirtualMachineFiles
 topic_type:
 - apiref
@@ -56,7 +56,7 @@ Estas rutas de acceso se buscarán junto con las rutas de acceso establecidas en
 *inExcludedRegisteredVMs* \[ En\]
 </dt> <dd>
 
-**TRUE** si las máquinas virtuales registradas deben excluirse de la devolución de la matriz *en el parámetro outVirtualMachineFileList* y **FALSE** en caso contrario.
+**TRUE** si las máquinas virtuales registradas deben excluirse de la devolución de matriz *en el parámetro outVirtualMachineFileList* y **FALSE** en caso contrario.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Este método puede devolver uno de estos valores.
 | <dl> <dt>**E \_ Puntero**</dt> <dt>0x80004003</dt> </dl>                                | El *parámetro outVirtualMachineFileList* es **NULL.**<br/>                               |
 | <dl> <dt>**E \_ InvalidarG**</dt> <dt>0x80000003</dt> </dl>                             | El *parámetro inAdditionalSearchPaths* no es una matriz de cadenas.<br/>                  |
 | <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl>                        | Se produjo un error inesperado.<br/>                                                    |
-| <dl> <dt>**Máquina virtual \_ E \_ HARDWARE \_ VIRTUALIZATION \_ DISABLED**</dt> <dt>0xA0040951</dt> </dl> | El procesador no admite extensiones de Virtualización acelerada por hardware (HAV).<br/> |
+| <dl> <dt>**Máquina virtual \_ E \_ \_ VIRTUALIZACIÓN DE HARDWARE \_ DESHABILITADA**</dt> <dt>0xA0040951</dt> </dl> | El procesador no admite extensiones de virtualización acelerada de hardware (HAV).<br/> |
 
 
 
@@ -93,7 +93,7 @@ Las rutas de búsqueda usadas para recuperar la matriz de archivos de configurac
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
@@ -104,7 +104,7 @@ Las rutas de búsqueda usadas para recuperar la matriz de archivos de configurac
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

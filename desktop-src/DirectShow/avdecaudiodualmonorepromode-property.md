@@ -1,19 +1,19 @@
 ---
-description: Especifica cómo el descodificador Reproduce audio mono dual.
+description: Especifica cómo reproduce el descodificador el audio mono dual.
 ms.assetid: 3ef1f52c-13b2-4d9f-99fe-3317846be8a0
-title: Propiedad AVDecAudioDualMonoReproMode (Codecapi. h)
+title: Propiedad AVDecAudioDualMonoReproMode (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a71ebe7e003b2dc4b6eebc30901525ffb918a9a9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9151ed6b996ec4ab92791221b7fb4c920913c818eac4a079ee6f40d04591a9db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103806463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917065"
 ---
 # <a name="avdecaudiodualmonorepromode-property"></a>Propiedad AVDecAudioDualMonoReproMode
 
-Especifica cómo el descodificador Reproduce audio mono dual.
+Especifica cómo reproduce el descodificador el audio mono dual.
 
 Esta propiedad es de lectura y escritura.
 
@@ -27,11 +27,11 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad es un miembro de la enumeración [**eAVDecAudioDualMonoReproMode**](/windows/desktop/api/codecapi/ne-codecapi-eavdecaudiodualmonorepromode) .
+El valor de esta propiedad es un miembro de la [**enumeración eAVDecAudioDualMonoReproMode.**](/windows/desktop/api/codecapi/ne-codecapi-eavdecaudiodualmonorepromode)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Estas propiedades solo se aplican cuando el flujo de bits de entrada del descodificador contiene audio mono dual. Para probar esta condición, obtenga el valor de la propiedad [AVDecAudioDualMono](avdecaudiodualmono-property.md) .
+Esta propiedad solo se aplica cuando la secuencia de bits de entrada del descodificador contiene audio mono dual. Para probar esta condición, obtenga el valor de la [propiedad AVDecAudioDualMono.](avdecaudiodualmono-property.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,9 +39,9 @@ Estas propiedades solo se aplican cuando el flujo de bits de entrada del descodi
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -52,7 +52,7 @@ Estas propiedades solo se aplican cuando el flujo de bits de entrada del descodi
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

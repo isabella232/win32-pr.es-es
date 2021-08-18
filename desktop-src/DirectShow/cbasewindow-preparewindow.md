@@ -1,7 +1,7 @@
 ---
 description: El método PrepareWindow crea la ventana.
 ms.assetid: c4c0d177-6351-4ecc-b1eb-399b4a94c463
-title: Método CBaseWindow. PrepareWindow (Winutil. h)
+title: Método CBaseWindow.PrepareWindow (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 91331ede15feb756f3ddd08d0d368621b35eda00
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7b2811e307b370323c331d3f894116ad0ff01af25ad76e1ea775dae5489dfb15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074569"
 ---
-# <a name="cbasewindowpreparewindow-method"></a>CBaseWindow. PrepareWindow, método
+# <a name="cbasewindowpreparewindow-method"></a>Método CBaseWindow.PrepareWindow
 
 El `PrepareWindow` método crea la ventana.
 
@@ -42,22 +42,22 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que se muestran en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                            | Descripción         |
 |----------------------------------------------------------------------------------------|---------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/> |
 | <dl> <dt>**E \_ FAIL**</dt> </dl> | Error.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Llame a este método después de crear el objeto. Este método realiza una contabilidad inicial y, a continuación, llama al método [**CBaseWindow::D ocreatewindow**](cbasewindow-docreatewindow.md) para crear la ventana.
+Llame a este método después de crear el objeto . Este método realiza una contabilidad inicial y, a continuación, llama al método [**CBaseWindow::D oCreateWindow**](cbasewindow-docreatewindow.md) para crear la ventana.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Llame a este método después de crear el objeto. Este método realiza una conta
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Llame a este método después de crear el objeto. Este método realiza una conta
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

@@ -21,7 +21,7 @@ Incluir miembros heredados
 
 Clase base para JET_err. Excepciones CurrencyStackOutOfMemory.
 
-El [tipo EsentCurrencyStackOutOfMemoryException](./esentcurrencystackoutofmemoryexception-class.md) expone los siguientes miembros.
+El [tipo EsentCurrencyStackOutOfMemoryException](./esentcurrencystackoutofmemoryexception-class.md) expone los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -164,7 +164,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

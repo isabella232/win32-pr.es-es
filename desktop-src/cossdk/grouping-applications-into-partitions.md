@@ -13,7 +13,7 @@ ms.locfileid: "119991105"
 ---
 # <a name="grouping-applications-into-partitions"></a>Agrupación de aplicaciones en particiones
 
-A la hora de decidir cómo agrupar aplicaciones en particiones, los administradores deben tener en cuenta ciertas reglas y restricciones, entre las que se incluyen las siguientes:
+A la hora de decidir cómo agrupar aplicaciones en particiones, los administradores deben tener en cuenta ciertas reglas y restricciones, incluidas las siguientes:
 
 -   Una aplicación se puede instalar en una o varias particiones.
 -   Solo puede existir una instancia de un componente determinado en una aplicación.

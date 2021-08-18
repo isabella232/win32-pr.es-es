@@ -1,9 +1,9 @@
 ---
-title: Métodos de EnsureCached de ID2D1ImageSourceFromWic (D2d1 \_ 3. h)
-description: Carga datos de imagen en memorias caché de orígenes de imagen si esos datos no están almacenados en caché.
+title: Métodos ID2D1ImageSourceFromWic EnsureCached (D2d1 \_ 3.h)
+description: Carga datos de imagen en cachés de orígenes de imágenes si estos datos aún no están almacenados en caché.
 ms.assetid: 9addc82b-7446-1f2c-5666-f817b8b5707d
 keywords:
-- Métodos de EnsureCached Direct2D
+- Métodos EnsureCached de Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 348931ab760379efd6fbe3a31bfd07b1bf19179a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e6379c290f3d4ee3de6e60d0d1f5edf0eb7d6c1439395e920eed807af1b9ecfb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917625"
 ---
-# <a name="id2d1imagesourcefromwicensurecached-methods"></a>ID2D1ImageSourceFromWic:: EnsureCached (métodos)
+# <a name="id2d1imagesourcefromwicensurecached-methods"></a>Métodos ID2D1ImageSourceFromWic::EnsureCached
 
-Carga datos de imagen en memorias caché de orígenes de imagen si esos datos no están almacenados en caché.
+Carga datos de imagen en cachés de orígenes de imágenes si estos datos aún no están almacenados en caché.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Carga datos de imagen en memorias caché de orígenes de imagen si esos datos no
 
 | Método                                                                          | Descripción                                                                        |
 |:--------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------|
-| [**EnsureCached (D2D1 \_ Rect \_ U \* )**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-ensurecached(constd2d1_rect_u))  | Garantiza que se rellena una región especificada de la caché de origen de la imagen.<br/> |
-| [**EnsureCached (D2D1 \_ Rect \_ U&)**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-ensurecached(constd2d1_rect_u_)) | Garantiza que se rellena una región especificada de la caché de origen de la imagen.<br/> |
+| [**EnsureCached (D2D1 \_ RECT \_ U \* )**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-ensurecached(constd2d1_rect_u))  | Garantiza que se rellena una región especificada de la caché de origen de la imagen.<br/> |
+| [**EnsureCached (D2D1 \_ RECT \_ U&)**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-ensurecached(constd2d1_rect_u_)) | Garantiza que se rellena una región especificada de la caché de origen de la imagen.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Carga datos de imagen en memorias caché de orígenes de imagen si esos datos no
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D2d1 \_ 3. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D2d1 \_ 3.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Escritorio remoto de puerta de enlace
-description: La API Escritorio remoto Gateway (Puerta de enlace de Escritorio remoto) admite las estructuras siguientes.
+description: La API Escritorio remoto Gateway (Puerta de enlace de Escritorio remoto) admite las siguientes estructuras.
 ms.assetid: fac5c23b-7efd-4b9d-b94d-e24ab1feffdf
 ms.tgt_platform: multiple
 ms.topic: article
@@ -14,7 +14,7 @@ ms.locfileid: "119988745"
 ---
 # <a name="remote-desktop-gateway-structures"></a>Escritorio remoto de puerta de enlace
 
-La API Escritorio remoto Gateway (Puerta de enlace de Escritorio remoto) admite las estructuras siguientes.
+La API Escritorio remoto Gateway (Puerta de enlace de Escritorio remoto) admite las siguientes estructuras.
 
 ## <a name="in-this-section"></a>En esta sección
 

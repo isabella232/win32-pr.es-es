@@ -1,5 +1,5 @@
 ---
-title: AuthorId (EapMethodType), elemento
+title: Elemento AuthorId (EapMethodType)
 description: Obtenga información sobre el elemento AuthorId (EapMethodType). El elemento AuthorID (EapMethodType) hace referencia al autor del método.
 ms.assetid: 1eb16a50-25b8-4883-b9ff-fde329d8dd81
 keywords:
@@ -14,18 +14,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1c9a756d8ad1fc88154d3d99d4304de6dd50166b
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: f15c5fc981592bb82f9ad52d590f12ac0b1f4b20af3537a511d01dd0a8cc15e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103995638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120021755"
 ---
-# <a name="authorid-eapmethodtype-element"></a>AuthorId (EapMethodType), elemento
+# <a name="authorid-eapmethodtype-element"></a>Elemento AuthorId (EapMethodType)
 
-El elemento **AuthorId (EapMethodType)** hace referencia al autor del método.
+El **elemento AuthorId (EapMethodType)** hace referencia al autor del método.
 
-AuthorId es un número único emitido por Internet Assigned Numbers Authority (IANA).
+AuthorId es un número único emitido por internet Assigned Numbers Authority (IANA).
 
 ``` syntax
 <xs:element name="AuthorId"
@@ -33,20 +33,20 @@ AuthorId es un número único emitido por Internet Assigned Numbers Authority (I
  />
 ```
 
-El elemento **AuthorId** se define mediante el tipo complejo [**EapMethodType**](eapcommonschema-eapmethodtype-complextype.md) .
+El tipo complejo [**EapMethodType**](eapcommonschema-eapmethodtype-complextype.md) define el elemento **AuthorId.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No es necesario que los elementos **AuthorId** y [**VendorId**](eapcommonschema-vendorid-eapmethodtype-element.md) sean los mismos para un método determinado.
+Los **elementos AuthorId** y [**VendorId**](eapcommonschema-vendorid-eapmethodtype-element.md) no necesitan ser iguales para un método determinado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima admitida del sistema operativo |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

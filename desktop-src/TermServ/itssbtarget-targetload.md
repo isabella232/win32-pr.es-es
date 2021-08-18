@@ -4,7 +4,7 @@ description: Recupera la carga relativa en un destino.
 ms.assetid: 56618dcf-1319-4310-80ba-7ed71b8b02e8
 ms.tgt_platform: multiple
 keywords:
-- Propiedad TargetLoad Servicios de Escritorio remoto
+- Propiedades TargetLoad Servicios de Escritorio remoto
 - Propiedad TargetLoad Servicios de Escritorio remoto , interfaz ITsSbTarget
 - Interfaz ITsSbTarget Servicios de Escritorio remoto , propiedad TargetLoad
 - Propiedad TargetLoad Servicios de Escritorio remoto , interfaz ITsSbTargetEx
@@ -52,7 +52,7 @@ Número que representa la carga relativa en un destino.
 
 ## <a name="remarks"></a>Comentarios
 
-El peso de una sesión pendiente en relación con una sesión activa se puede cambiar estableciendo el valor del parámetro *\_ Lb ConnectionEstablishmentPenalty* para el Agente de conexión. Este parámetro se encuentra en la clave del Registro **HKLM \\ System \\ CurrentControlSet \\ Services \\ Tssdis \\ Parameters.** El valor predeterminado de 1 especifica que las sesiones pendientes tienen el mismo peso que las sesiones activas.
+El peso de una sesión pendiente con respecto a una sesión activa se puede cambiar estableciendo el valor del parámetro *\_ LB ConnectionEstablishmentPenalty* para el Agente de conexión. Este parámetro se encuentra en la clave del Registro **HKLM \\ System \\ CurrentControlSet \\ Services \\ Tssdis \\ Parameters.** El valor predeterminado de 1 especifica que las sesiones pendientes tienen el mismo peso que las sesiones activas.
 
 Esta propiedad está disponible en Windows Server 2012 R2 con [KB3091411](https://support.microsoft.com/kb/3091411) instalado en la [**interfaz ITsSbTargetEx.**](itssbtargetex.md)
 
@@ -91,7 +91,7 @@ Esta propiedad está disponible en Windows Server 2012 R2 con [KB3091411](https:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,12 +1,12 @@
 ---
 title: Propiedad GatewayPassword de IMsRdpClientTransportSettings2
-description: Especifica la contraseña que un usuario proporciona para conectarse al servidor de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto).
+description: Especifica la contraseña que proporciona un usuario para conectarse al servidor Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
 ms.assetid: f29078e5-49ab-45a0-8d79-4b57d7c35e3a
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad GatewayPassword
-- Propiedad GatewayPassword Servicios de Escritorio remoto, interfaz IMsRdpClientTransportSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientTransportSettings2, propiedad GatewayPassword
+- Propiedad GatewayPassword Servicios de Escritorio remoto
+- Propiedad GatewayPassword Servicios de Escritorio remoto interfaz , IMsRdpClientTransportSettings2
+- Interfaz IMsRdpClientTransportSettings2 Servicios de Escritorio remoto , propiedad GatewayPassword
 topic_type:
 - apiref
 api_name:
@@ -18,20 +18,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d532f28023b7ff0eb3b8571e3875d0b63606535
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 977ac8114a8be4f4f5ef8aa21a4a00f48aead31ee18f7fe41f789ff2a3c9b478
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104533873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959355"
 ---
-# <a name="imsrdpclienttransportsettings2gatewaypassword-property"></a>IMsRdpClientTransportSettings2:: GatewayPassword (propiedad)
+# <a name="imsrdpclienttransportsettings2gatewaypassword-property"></a>Propiedad IMsRdpClientTransportSettings2::GatewayPassword
 
-Especifica la contraseña que un usuario proporciona para conectarse al servidor de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto).
+Especifica la contraseña que proporciona un usuario para conectarse al servidor Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
 
 Esta propiedad es de solo escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -44,11 +44,11 @@ HRESULT put_GatewayPassword(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-La contraseña que un usuario proporciona para conectarse al servidor de puerta de enlace de escritorio remoto.
+Contraseña que proporciona un usuario para conectarse al servidor de puerta de enlace de Escritorio remoto.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="requirements"></a>Requisitos
 

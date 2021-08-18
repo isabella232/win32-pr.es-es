@@ -18,7 +18,7 @@ ms.locfileid: "119994455"
 ---
 # <a name="defining-operations-in-script"></a>Definir operaciones en script
 
-En el Administrador de autorización, una operación es una función o un método de bajo nivel de una aplicación. Estas operaciones se agrupan como tareas. Los usuarios de la aplicación solicitan permiso para completar tareas. Una operación se representa mediante un [**objeto IAzOperation.**](/windows/desktop/api/Azroles/nn-azroles-iazoperation) Para obtener más información sobre las operaciones, [vea Operaciones y tareas.](operations-and-tasks.md)
+En el Administrador de autorización, una operación es una función o un método de bajo nivel de una aplicación. Estas operaciones se agrupan como tareas. Los usuarios de la aplicación solicitan permiso para completar tareas. Una operación se representa mediante un [**objeto IAzOperation.**](/windows/desktop/api/Azroles/nn-azroles-iazoperation) Para obtener más información sobre las operaciones, vea [Operaciones y tareas](operations-and-tasks.md).
 
 En el ejemplo siguiente se muestra cómo definir operaciones en un almacén de directivas de autorización. En el ejemplo se supone que hay un almacén de directivas XML existente denominado MyStore.xml en el directorio raíz de la unidad C y que este almacén contiene una aplicación denominada Expense.
 

@@ -1,7 +1,7 @@
 ---
-description: El método CopyPalette copia la paleta de cualquier estructura de videoinfo en cualquier estructura de videoinformación de paleta.
+description: El método CopyPalette copia la paleta de cualquier estructura VIDEOINFO a cualquier estructura VIDEOINFO desenlaizada.
 ms.assetid: ea06b40b-3f96-4c11-921c-52f3a44e0a30
-title: Método CImagePalette. CopyPalette (Winutil. h)
+title: Método CImagePalette.CopyPalette (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b429c5fd4d3d0e0e28cd0662fbee0a1ac926ddc5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5c6f645d134ccf5fa786ff59cf0bc6cd37211af0cb2571bbc9955e5bb6367a97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055455"
 ---
-# <a name="cimagepalettecopypalette-method"></a>CImagePalette. CopyPalette, método
+# <a name="cimagepalettecopypalette-method"></a>Método CImagePalette.CopyPalette
 
-El `CopyPalette` método copia la paleta de cualquier estructura de [**videoinfo**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) en cualquier estructura de **videoinformación** de paleta.
+El `CopyPalette` método copia la paleta de cualquier estructura [**VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) en cualquier estructura **VIDEOINFO desenlaizada.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,11 +59,11 @@ Puntero al tipo de medio de destino.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ OK si se copió la paleta. Devuelve S \_ false si el tipo de medio de origen o de destino no tiene una paleta.
+Devuelve S \_ OK si se copió la paleta. Devuelve S FALSE si el tipo de medio de origen \_ o de destino no tiene una paleta.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El tipo de medio *pDest* debe ser un formato de paleta con una profundidad de color de 8 bits o menos. El tipo de medio *pSrc* puede ser cualquier tipo de [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) con una paleta, incluidos los formatos YUV y de color verdadero con entradas de paleta. El método copia las entradas de la paleta de *pSrc* en una nueva paleta y asocia la nueva paleta a *pDest*.
+El tipo de medio *pDest* debe ser un formato con una profundidad de color de 8 bits o menos. El *tipo de medio pSrc* puede ser cualquier tipo [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) con una paleta, incluidos YUV y formatos de color verdadero con entradas de paleta. El método copia las entradas de la paleta de *pSrc* en una nueva paleta y asocia la nueva paleta a *pDest.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ El tipo de medio *pDest* debe ser un formato de paleta con una profundidad de co
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ El tipo de medio *pDest* debe ser un formato de paleta con una profundidad de co
 
 <dl> <dt>
 
-[**Clase CImagePalette**](cimagepalette.md)
+[**CImagePalette (clase)**](cimagepalette.md)
 </dt> </dl>
 
  

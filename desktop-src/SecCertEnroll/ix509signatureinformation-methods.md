@@ -18,7 +18,7 @@ La [**interfaz IX509SignatureInformation**](/windows/desktop/api/CertEnroll/nn-c
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**GetSignatureAlgorithm (método)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509signatureinformation-getsignaturealgorithm)
--   [**Método SetDefaultValues**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509signatureinformation-setdefaultvalues)
+-   [**SetDefaultValues (método)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509signatureinformation-setdefaultvalues)
 
  
 

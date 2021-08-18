@@ -1,6 +1,6 @@
 ---
 title: TBM_GETLINESIZE mensaje (Commctrl.h)
-description: Recupera el número de posiciones lógicas que el control deslizante de la barra de seguimiento mueve en respuesta a la entrada del teclado de las teclas de dirección, como las teclas o . Las posiciones lógicas son los incrementos enteros en el intervalo de posiciones del control deslizante mínimo a máximo de la barra de seguimiento.
+description: Recupera el número de posiciones lógicas que el control deslizante de la barra de seguimiento mueve en respuesta a la entrada del teclado desde las teclas de dirección, como las teclas o . Las posiciones lógicas son los incrementos enteros en el intervalo de posiciones del control deslizante mínimo al máximo de la barra de seguimiento.
 ms.assetid: b596060a-5bac-4b31-82f3-ee4744a9779c
 keywords:
 - TBM_GETLINESIZE controles de Windows mensaje
@@ -23,7 +23,7 @@ ms.locfileid: "120046565"
 ---
 # <a name="tbm_getlinesize-message"></a>Mensaje \_ GETLINESIZE de TBM
 
-Recupera el número de posiciones lógicas que el control deslizante de la barra de seguimiento mueve en respuesta a la entrada del teclado de las teclas de dirección, como las teclas o . Las posiciones lógicas son los incrementos enteros en el intervalo de posiciones del control deslizante mínimo a máximo de la barra de seguimiento.
+Recupera el número de posiciones lógicas que el control deslizante de la barra de seguimiento mueve en respuesta a la entrada del teclado desde las teclas de dirección, como las teclas o . Las posiciones lógicas son los incrementos enteros en el intervalo de posiciones del control deslizante mínimo al máximo de la barra de seguimiento.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -49,7 +49,7 @@ La barra de seguimiento también envía un mensaje [**WM \_ HSCROLL**](wm-hscrol
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |

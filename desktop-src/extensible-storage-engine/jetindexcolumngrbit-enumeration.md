@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración JetIndexColumnGrbit'
-title: Enumeración JetIndexColumnGrbit (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: Enumeración JetIndexColumnGrbit'
+title: Enumeración JetIndexColumnGrbit (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JetIndexColumnGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.JetIndexColumnGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jetindexcolumngrbit(v=EXCHG.10)
@@ -28,12 +28,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1cf033ad4341d7e93f2068f41ed1bde482d13ad4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 07c5ee1b124ac348d5b2fbf4b49061220a64dce50e1e587c5ccc2bee09e143a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103814283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719105"
 ---
 # <a name="jetindexcolumngrbit-enumeration"></a>Enumeración JetIndexColumnGrbit
 
@@ -41,8 +41,8 @@ Opciones para [JET_INDEX_COLUMN](./jet-index-column-class.md).
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -72,13 +72,13 @@ public enum JetIndexColumnGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>ZeroLength</td>
-<td>Valor de longitud cero (no NULL).</td>
+<td>Valor de longitud cero (distinto de NULL).</td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +88,4 @@ public enum JetIndexColumnGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: Define el tipo que contiene información sobre las líneas que se usan en el diseño de fondo de una nota de Journal determinada.
+description: Define el tipo que contiene información sobre las líneas que se usan en la papelería de una nota de diario determinada.
 ms.assetid: db0ffd3c-e8e3-4da2-95fb-6f825ad63f55
-title: Tipo complejo de LineLayoutType
+title: Tipo complejo LineLayoutType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: db32c13cec50c1b5d5308f6f7287339ee2de030d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f42e2c54d7c268bc90fb68b5d51c935b8be5fe0f99ad2c40ab3d8a3834604d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883415"
 ---
-# <a name="linelayouttype-complex-type"></a>Tipo complejo de LineLayoutType
+# <a name="linelayouttype-complex-type"></a>Tipo complejo LineLayoutType
 
-Define el tipo que contiene información sobre las líneas que se usan en el diseño de fondo de una nota de Journal determinada.
+Define el tipo que contiene información sobre las líneas que se usan en la papelería de una nota de diario determinada.
 
 ``` syntax
 <xs:complexType name="LineLayoutType" />
@@ -33,7 +33,7 @@ Define el tipo que contiene información sobre las líneas que se usan en el dis
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 

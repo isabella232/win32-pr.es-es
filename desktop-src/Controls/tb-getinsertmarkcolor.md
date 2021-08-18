@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_GETINSERTMARKCOLOR (commctrl. h)
-description: Recupera el color usado para dibujar la marca de inserción de la barra de herramientas.
+title: TB_GETINSERTMARKCOLOR mensaje (Commctrl.h)
+description: Recupera el color utilizado para dibujar la marca de inserción de la barra de herramientas.
 ms.assetid: 52915dc6-a45c-4f3b-aa9b-99a23d423e59
 keywords:
-- TB_GETINSERTMARKCOLOR controles de mensajes de Windows
+- TB_GETINSERTMARKCOLOR controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 104ceebd5f3989ed870cf70ccad819300d85c05d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bd87c27252f9838001d10320b3b9783ef598eea654d384deaa383ad5c5f6cddf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918725"
 ---
-# <a name="tb_getinsertmarkcolor-message"></a>\_Mensaje GETINSERTMARKCOLOR TB
+# <a name="tb_getinsertmarkcolor-message"></a>Mensaje \_ DE TB GETINSERTMARKCOLOR
 
-Recupera el color usado para dibujar la marca de inserción de la barra de herramientas.
+Recupera el color utilizado para dibujar la marca de inserción de la barra de herramientas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,7 +37,7 @@ Recupera el color usado para dibujar la marca de inserción de la barra de herra
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de [**COLORREF**](/windows/desktop/gdi/colorref) que contiene el color de la marca de inserción actual.
+Devuelve un [**valor COLORREF**](/windows/desktop/gdi/colorref) que contiene el color de la marca de inserción actual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Devuelve un valor de [**COLORREF**](/windows/desktop/gdi/colorref) que contiene 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

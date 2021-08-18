@@ -1,10 +1,10 @@
 ---
-title: Enumeración DRM_LICENSE_STATE_CATEGORY (Drmexternals. h)
-description: El \_ tipo de \_ \_ enumeración categoría de estado de licencia DRM define las categorías de las cadenas de licencia DRM que se muestran al usuario.
+title: DRM_LICENSE_STATE_CATEGORY enumeración (Drmexternals.h)
+description: El tipo de enumeración DRM LICENSE STATE CATEGORY define las categorías de las cadenas de licencia drm que \_ \_ se muestran al \_ usuario.
 ms.assetid: f5c5aa78-84f9-4ee4-b551-05bf864243ab
 keywords:
-- DRM_LICENSE_STATE_CATEGORY enumeración formato de Windows Media
-- enumeración Windows Media Format
+- DRM_LICENSE_STATE_CATEGORY enumeración windows Media Format
+- enumeración windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40763ec7f610073784e3bd1516d4c955abcd65b3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2bbfd6c566d6c58314416c787110ea77da25416ed73d80ec87fd2d66602d820b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931005"
 ---
-# <a name="drm_license_state_category-enumeration-drmexternalsh"></a>Enumeración DRM_LICENSE_STATE_CATEGORY (Drmexternals. h)
+# <a name="drm_license_state_category-enumeration-drmexternalsh"></a>DRM_LICENSE_STATE_CATEGORY enumeración (Drmexternals.h)
 
-El tipo de enumeración **\_ \_ \_ categoría de estado de licencia DRM** define las categorías de las cadenas de [*licencia*](wmformat-glossary.md) DRM que se muestran al usuario.
+El **tipo \_ de enumeración DRM LICENSE STATE \_ \_ CATEGORY** define las categorías de las cadenas de licencia [*drm*](wmformat-glossary.md) que se muestran al usuario.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -50,79 +50,79 @@ typedef enum DRM_LICENSE_STATE_CATEGORY {
 
 <dl> <dt>
 
-<span id="WM_DRM_LICENSE_STATE_NORIGHT"></span><span id="wm_drm_license_state_noright"></span>**Estado de la licencia de DRM de WM \_ \_ \_ \_ noright**
+<span id="WM_DRM_LICENSE_STATE_NORIGHT"></span><span id="wm_drm_license_state_noright"></span>**WM \_ DRM \_ LICENSE \_ STATE \_ NORIGHT**
 </dt> <dd>
 
-Indica que la cadena tendrá el formato "reproducción no permitida".
+Indica que la cadena tendrá el formato "No se permite la reproducción".
 
 </dd> <dt>
 
-<span id="WM_DRM_LICENSE_STATE_UNLIM"></span><span id="wm_drm_license_state_unlim"></span>**Estado de licencia de DRM de WM \_ \_ \_ \_ UNLIM**
+<span id="WM_DRM_LICENSE_STATE_UNLIM"></span><span id="wm_drm_license_state_unlim"></span>**ESTADO DE LICENCIA DRM DE WM \_ \_ \_ \_ UNLIM**
 </dt> <dd>
 
-Indica que la cadena tendrá el formato "reproducción ilimitada".
+Indica que la cadena tendrá el formato "Reproducción ilimitada".
 
 </dd> <dt>
 
-<span id="WM_DRM_LICENSE_STATE_COUNT"></span><span id="wm_drm_license_state_count"></span>**recuento de Estados de licencias de \_ DRM de WM \_ \_ \_**
+<span id="WM_DRM_LICENSE_STATE_COUNT"></span><span id="wm_drm_license_state_count"></span>**RECUENTO DE \_ ESTADO DE LICENCIA DE DRM \_ \_ \_ DE WM**
 </dt> <dd>
 
-Indica que la cadena tendrá el formato "reproducción válida 5 veces".
+Indica que la cadena tendrá el formato "Reproducción válida 5 veces".
 
 </dd> <dt>
 
-<span id="WM_DRM_LICENSE_STATE_FROM"></span><span id="wm_drm_license_state_from"></span>**\_ \_ \_ estado \_ de licencia de DRM de WM desde**
+<span id="WM_DRM_LICENSE_STATE_FROM"></span><span id="wm_drm_license_state_from"></span>**ESTADO DE LICENCIA DRM DE WM \_ \_ \_ \_ DESDE**
 </dt> <dd>
 
-Indica que la cadena tendrá el formato "reproducción válida desde 7/12/00".
+Indica que la cadena tendrá el formato "Playback valid from 7/12/00".
 
 </dd> <dt>
 
-<span id="WM_DRM_LICENSE_STATE_UNTIL"></span><span id="wm_drm_license_state_until"></span>**Estado de la licencia de DRM de WM \_ \_ \_ \_ hasta**
+<span id="WM_DRM_LICENSE_STATE_UNTIL"></span><span id="wm_drm_license_state_until"></span>**ESTADO DE \_ LICENCIA DRM DE WM \_ \_ \_ HASTA**
 </dt> <dd>
 
-Indica que la cadena tendrá el formato "reproducción válida hasta 7/12/00".
+Indica que la cadena tendrá el formato "Playback valid until 7/12/00".
 
 </dd> <dt>
 
-<span id="WM_DRM_LICENSE_STATE_FROM_UNTIL"></span><span id="wm_drm_license_state_from_until"></span>**\_ \_ \_ Estado de la licencia \_ de DRM de WM desde \_ hasta**
+<span id="WM_DRM_LICENSE_STATE_FROM_UNTIL"></span><span id="wm_drm_license_state_from_until"></span>**ESTADO DE LICENCIA DRM DE WM \_ \_ DESDE \_ \_ \_ HASTA**
 </dt> <dd>
 
-Indica que la cadena tendrá el formato "reproducción válida de 5/12 a 9/12".
+Indica que la cadena tendrá el formato "Playback valid from 5/12 to 9/12".
 
 </dd> <dt>
 
-<span id="WM_DRM_LICENSE_STATE_COUNT_FROM"></span><span id="wm_drm_license_state_count_from"></span>**\_recuento \_ \_ de Estados \_ de licencias de DRM de WM \_ desde**
+<span id="WM_DRM_LICENSE_STATE_COUNT_FROM"></span><span id="wm_drm_license_state_count_from"></span>**RECUENTO DE ESTADO DE LICENCIA DRM DE WM \_ \_ \_ \_ \_ DESDE**
 </dt> <dd>
 
-Indica que la cadena tendrá el formato "reproducción válida 5 veces de 5/12 a 9/12".
+Indica que la cadena tendrá el formato "Playback valid 5 times from 5/12 to 9/12".
 
 </dd> <dt>
 
-<span id="WM_DRM_LICENSE_STATE_COUNT_UNTIL"></span><span id="wm_drm_license_state_count_until"></span>**recuento de Estados de licencias de DRM de WM \_ \_ \_ \_ \_ hasta**
+<span id="WM_DRM_LICENSE_STATE_COUNT_UNTIL"></span><span id="wm_drm_license_state_count_until"></span>**RECUENTO DE ESTADO DE LICENCIA DE DRM DE WM \_ \_ \_ \_ \_ HASTA**
 </dt> <dd>
 
-Indica que la cadena tendrá el formato "reproducción válida 5 veces hasta 7/12/00".
+Indica que la cadena tendrá el formato "Playback valid 5 times until 7/12/00".
 
 </dd> <dt>
 
-<span id="WM_DRM_LICENSE_STATE_COUNT_FROM_UNTIL"></span><span id="wm_drm_license_state_count_from_until"></span>**\_recuento \_ \_ de Estados \_ de licencias de DRM de WM \_ desde \_ hasta**
+<span id="WM_DRM_LICENSE_STATE_COUNT_FROM_UNTIL"></span><span id="wm_drm_license_state_count_from_until"></span>**NÚMERO DE ESTADOS DE LICENCIA DE DRM DE WM \_ \_ DESDE \_ \_ \_ \_ HASTA**
 </dt> <dd>
 
-Indica que la cadena tendrá el formato "reproducción válida 5 veces de 5/12 a 9/12".
+Indica que la cadena tendrá el formato "Playback valid 5 times from 5/12 to 9/12".
 
 </dd> <dt>
 
-<span id="WM_DRM_LICENSE_STATE_EXPIRATION_AFTER_FIRSTUSE"></span><span id="wm_drm_license_state_expiration_after_firstuse"></span>**\_expiración del estado de licencia de DRM de WM \_ \_ después de \_ \_ \_ FIRSTUSE**
+<span id="WM_DRM_LICENSE_STATE_EXPIRATION_AFTER_FIRSTUSE"></span><span id="wm_drm_license_state_expiration_after_firstuse"></span>**EXPIRACIÓN DEL ESTADO DE LA LICENCIA DRM DE WM \_ DESPUÉS DE LA PRIMERA \_ \_ \_ \_ \_ USO**
 </dt> <dd>
 
-Indica que la cadena tendrá el formato "reproducción válida durante 24 horas del primer uso".
+Indica que la cadena tendrá el formato "Reproducción válida durante 24 horas desde el primer uso".
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta enumeración indica la categoría de cada cadena de salida posible que se va a mostrar. Es miembro de la estructura de [**\_ datos de \_ estado \_**](drm-license-state-data.md) de la licencia de DRM.
+Esta enumeración indica la categoría de cada cadena de salida posible que se va a mostrar. Es miembro de la estructura [**\_ DRM LICENSE STATE \_ \_ DATA.**](drm-license-state-data.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -132,8 +132,8 @@ Esta enumeración indica la categoría de cada cadena de salida posible que se v
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                      |
-| Versión<br/>                  | SDK de Windows Media Format 7 o versiones posteriores del SDK<br/>                       |
-| Encabezado<br/>                   | <dl> <dt>Drmexternals. h</dt> </dl> |
+| Versión<br/>                  | Windows SDK de formato multimedia 7 o versiones posteriores del SDK<br/>                       |
+| Header<br/>                   | <dl> <dt>Drmexternals.h</dt> </dl> |
 
 
 

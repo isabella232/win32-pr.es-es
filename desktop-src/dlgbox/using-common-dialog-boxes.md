@@ -7,33 +7,33 @@ keywords:
 - cuadros de diálogo comunes, mediante
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 773382a34b048e812a3fb093da0492b0c628fb14
-ms.sourcegitcommit: 8e083a10b3a480dec8a8d74dbd5889f49dea15e4
+ms.openlocfilehash: 5da09fcc99cdde617c3fbdaf34e4465d9a768b0073c5dbd6d461a19060ca92bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985305"
 ---
 # <a name="using-common-dialog-boxes"></a>Usar cuadros de diálogo comunes
 
 En esta sección se tratan las tareas que invocan cuadros de diálogo comunes:
 
 -   [Elegir un color](#choosing-a-color)
--   [Elección de una fuente](#choosing-a-font)
--   [Abrir un archivo](#opening-a-file)
+-   [Elegir una fuente](#choosing-a-font)
+-   [Apertura de un archivo](#opening-a-file)
 -   [Mostrar el cuadro de diálogo Imprimir](#displaying-the-print-dialog-box)
--   [Usar la hoja de propiedades Imprimir](#using-the-print-property-sheet)
+-   [Usar la hoja de propiedades imprimir](#using-the-print-property-sheet)
 -   [Configuración de la página impresa](#setting-up-the-printed-page)
 -   [Buscar texto](#finding-text)
 
 ## <a name="choosing-a-color"></a>Elegir un color
 
-En este tema se describe el código de ejemplo que muestra un **cuadro de** diálogo Color para que un usuario pueda seleccionar un color. El código de ejemplo inicializa primero una [**estructura CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) y, a continuación, llama a [**la función ChooseColor**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) para mostrar el cuadro de diálogo. Si la función devuelve **TRUE**, lo que indica que el usuario ha seleccionado un color, el código de ejemplo usa el color seleccionado para crear un nuevo pincel sólido.
+En este tema se describe el código de ejemplo que muestra un **cuadro de** diálogo Color para que un usuario pueda seleccionar un color. El código de ejemplo inicializa primero una [**estructura CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) y, a continuación, llama a la [**función ChooseColor**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) para mostrar el cuadro de diálogo. Si la función devuelve **TRUE**, lo que indica que el usuario ha seleccionado un color, el código de ejemplo usa el color seleccionado para crear un nuevo pincel sólido.
 
 En este ejemplo se usa [**la estructura CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) para inicializar el cuadro de diálogo de la siguiente manera:
 
--   Inicializa el miembro **lpCustColors** con un puntero a una matriz estática de valores. Los colores de la matriz son inicialmente de color negro, pero la matriz estática conserva los colores personalizados creados por el usuario para las llamadas [**a ChooseColor**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) posteriores.
--   Establece la **marca CC \_ RGBINIT** e inicializa el miembro **rgbResult** para especificar el color que se seleccionó inicialmente cuando se abre el cuadro de diálogo. Si no se especifica, la selección inicial es negra. En el ejemplo se usa la variable estática *rgbCurrent* para conservar el valor seleccionado entre las llamadas [**a ChooseColor.**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85))
+-   Inicializa el **miembro lpCustColors** con un puntero a una matriz estática de valores. Los colores de la matriz son inicialmente negros, pero la matriz estática conserva los colores personalizados creados por el usuario para las llamadas [**a ChooseColor**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) posteriores.
+-   Establece la **marca CC \_ RGBINIT** e inicializa el miembro **rgbResult** para especificar el color que se selecciona inicialmente cuando se abre el cuadro de diálogo. Si no se especifica, la selección inicial es negra. En el ejemplo se usa la variable estática *rgbCurrent* para conservar el valor seleccionado entre llamadas [**a ChooseColor.**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85))
 -   Establece la **marca CC \_ FULLOPEN** para que siempre se muestre la extensión de colores personalizados del cuadro de diálogo.
 
 
@@ -67,7 +67,7 @@ En este tema se describe el código de ejemplo que muestra un **cuadro de** diá
 
 En este ejemplo se establece **la marca CF \_ SCREENFONTS** para especificar que el cuadro de diálogo solo debe mostrar fuentes de pantalla. Establece la marca **CF \_ EFFECTS para** mostrar los controles que permiten al usuario seleccionar opciones de tachado, subrayado y color.
 
-Si [**ChooseFont**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) devuelve **TRUE**, lo que  indica que el usuario hizo clic en el botón Aceptar, la estructura [**CHOOSEFONT**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) contiene información que describe los atributos de fuente y fuente seleccionados por el usuario, incluidos los miembros de la estructura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) a los que apunta el **miembro lpLogFont.** El **miembro rgbColors** contiene el color de texto seleccionado. El código de ejemplo usa esta información para establecer la fuente y el color del texto para el contexto del dispositivo asociado a la ventana del propietario.
+Si [**ChooseFont**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) devuelve **TRUE**, lo que  indica que el usuario hizo clic en el botón Aceptar, la estructura [**CHOOSEFONT**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) contiene información que describe los atributos de fuente y fuente seleccionados por el usuario, incluidos los miembros de la estructura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) a los que apunta el **miembro lpLogFont.** El **miembro rgbColors** contiene el color de texto seleccionado. El código de ejemplo usa esta información para establecer la fuente y el color del texto para el contexto del dispositivo asociado a la ventana de propietario.
 
 
 ```
@@ -102,10 +102,10 @@ if (ChooseFont(&cf)==TRUE)
 
 
 
-## <a name="opening-a-file"></a>Abrir un archivo
+## <a name="opening-a-file"></a>Apertura de un archivo
 
 > [!Note]  
-> A partir de Windows Vista, el cuadro de diálogo Archivo común se ha reemplazado por el cuadro de diálogo Elemento común cuando se usa para abrir un archivo. Se recomienda usar Common Item Dialog API en lugar de Common File Dialog API. Para obtener más información, vea [Common Item Dialog](/windows/win32/shell/common-file-dialog).
+> A partir Windows Vista, el cuadro de diálogo Archivo común se ha reemplazado por el cuadro de diálogo Elemento común cuando se usa para abrir un archivo. Se recomienda usar Common Item Dialog API en lugar de Common File Dialog API. Para obtener más información, vea [Common Item Dialog](/windows/win32/shell/common-file-dialog).
 
  
 
@@ -113,9 +113,9 @@ En este tema se describe  el código de ejemplo que muestra un cuadro de diálog
 
 En este ejemplo, el miembro **lpstrFilter** es un puntero a un búfer que especifica dos filtros de nombre de archivo que el usuario puede seleccionar para limitar los nombres de archivo que se muestran. El búfer contiene una matriz terminada en doble null de cadenas en la que cada par de cadenas especifica un filtro. El **miembro nFilterIndex** especifica que se usa el primer patrón cuando se crea el cuadro de diálogo.
 
-En este ejemplo se establecen **las marcas \_ OFN PATHMUSTEXIST** **y OFN \_ FILEMUSTEXIST** en el **miembro Flags.** Estas marcas hacen que el cuadro de diálogo compruebe, antes de devolver, que la ruta de acceso y el nombre de archivo especificados por el usuario existen realmente.
+En este ejemplo se **establecen las marcas \_ OFN PATHMUSTEXIST** **y OFN \_ FILEMUSTEXIST** en el **miembro Flags.** Estas marcas hacen que el cuadro de diálogo compruebe, antes de devolver, que la ruta de acceso y el nombre de archivo especificados por el usuario existen realmente.
 
-La [**función GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea) devuelve **TRUE si** el usuario hace clic en el botón **Aceptar** y existe la ruta de acceso y el nombre de archivo especificados. En este caso, el búfer al que apunta el **miembro lpstrFile** contiene la ruta de acceso y el nombre de archivo. El código de ejemplo usa esta información en una llamada a la función para abrir el archivo.
+La [**función GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea) devuelve **TRUE si** el usuario hace clic en el botón **Aceptar** y existen la ruta de acceso y el nombre de archivo especificados. En este caso, el búfer al que apunta el **miembro lpstrFile** contiene la ruta de acceso y el nombre de archivo. El código de ejemplo usa esta información en una llamada a la función para abrir el archivo.
 
 Aunque en este ejemplo no se establece la **marca OFN \_ EXPLORER,** todavía se muestra el cuadro de diálogo Abrir de estilo **explorador** predeterminado. Sin embargo, si desea proporcionar un procedimiento de enlace o una plantilla personalizada y desea la interfaz de usuario del Explorador, debe establecer la **marca OFN \_ EXPLORER.**
 
@@ -277,9 +277,9 @@ En este tema se describe  el código de ejemplo que muestra un cuadro de diálog
 
 En este ejemplo se establece la marca **\_ PSD MARGINS** en el **miembro Flags** y se usa el **miembro rtMargin** para especificar los valores de margen iniciales. Establece la **marca PSD \_ INTHOUSANDTHSOFINCHES** para asegurarse de que el cuadro de diálogo expresa las dimensiones de margen en milésimas de pulgada.
 
-En la entrada, el código de ejemplo establece los **miembros hDevMode** y **hDevNames** en **NULL.** Si la función devuelve **TRUE**, la función usa estos miembros para devolver identificadores a las estructuras [**DEVNAMES**](/windows/win32/api/commdlg/ns-commdlg-devnames) que contienen la entrada del usuario y la información sobre la impresora. Puede usar esta información para preparar la salida que se va a enviar a la impresora seleccionada.
+En la entrada, el código de ejemplo establece los **miembros hDevMode** y **hDevNames** en **NULL.** Si la función devuelve **TRUE**, la función usa estos miembros para devolver identificadores a las estructuras [**DEVNAMES**](/windows/win32/api/commdlg/ns-commdlg-devnames) que contienen la entrada del usuario y la información sobre la impresora. Puede usar esta información para preparar la salida que se enviará a la impresora seleccionada.
 
-En el ejemplo siguiente también se habilita [**un procedimiento de enlace PagePaintHook**](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) para personalizar el dibujo del contenido de la página de ejemplo.
+En el ejemplo siguiente también se habilita un [**procedimiento de enlace PagePaintHook**](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) para personalizar el dibujo del contenido de la página de ejemplo.
 
 
 ```
@@ -354,13 +354,13 @@ En este tema se describe el  código de ejemplo que muestra y administra un cuad
 
 El código para mostrar y administrar **un** cuadro de diálogo Reemplazar es similar, salvo que usa la [**función ReplaceText**](/windows/desktop/api/Commdlg/nf-commdlg-replacetexta) para mostrar el cuadro de diálogo. El **cuadro de** diálogo Reemplazar también envía mensajes en respuesta a los clics del usuario en los botones **Reemplazar** **y** Reemplazar todo.
 
-Para usar el **cuadro de** **diálogo** Buscar o reemplazar, debe realizar tres tareas independientes:
+Para usar el **cuadro de** **diálogo Buscar** o reemplazar , debe realizar tres tareas independientes:
 
-1.  Obtenga un identificador de mensaje para el [**mensaje registrado findmsgstring.**](findmsgstring.md)
+1.  Obtenga un identificador de mensaje para el [**mensaje registrado de FINDMSGSTRING.**](findmsgstring.md)
 2.  Mostrar el cuadro de diálogo.
 3.  [**Procese mensajes FINDMSGSTRING**](findmsgstring.md) cuando el cuadro de diálogo esté abierto.
 
-Al inicializar la aplicación, llame a [**la función RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) para obtener un identificador de mensaje para el [**mensaje registrado de FINDMSGSTRING.**](findmsgstring.md)
+Al inicializar la aplicación, llame a [**la función RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) para obtener un identificador de mensaje para el mensaje registrado en [**FINDMSGSTRING.**](findmsgstring.md)
 
 
 ```

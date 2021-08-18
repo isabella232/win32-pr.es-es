@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método RdvSetupVMPermissions Servicios de Escritorio remoto
 - Método RdvSetupVMPermissions Servicios de Escritorio remoto , Win32_RdvhManagement clase
-- Win32_RdvhManagement clase Servicios de Escritorio remoto método , RdvSetupVMPermissions
+- Win32_RdvhManagement clase Servicios de Escritorio remoto , método RdvSetupVMPermissions
 topic_type:
 - apiref
 api_name:
@@ -58,17 +58,17 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                             |
-| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                   |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                   |
 | MOF<br/>                      | <dl> <dt>TSVmHost.mof</dt> </dl>    |
 | Archivo DLL<br/>                      | <dl> <dt>TSVmHostWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

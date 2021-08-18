@@ -13,7 +13,7 @@ ms.locfileid: "119996835"
 ---
 # <a name="qos-updates"></a>Actualizaciones de QoS
 
-Los detalles de implementación de calidad de servicio (QoS) se proporcionan en una sección de QoS independiente y dedicada del Kit de desarrollo de software (SDK) de Microsoft Windows. Consulte la sección [Calidad de servicio](/previous-versions/windows/desktop/qos/qos-start-page) del SDK de Windows para obtener información sobre las actualizaciones de QoS.
+Los detalles de implementación de Calidad de servicio (QoS) se proporcionan en una sección de QoS independiente y dedicada en el Kit de desarrollo de software (SDK) de Microsoft Windows. Consulte la sección [Calidad de servicio](/previous-versions/windows/desktop/qos/qos-start-page) del SDK de Windows para obtener información sobre las actualizaciones de QoS.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -59,7 +59,7 @@ Se debe llamar a este método siempre que se pierda el dispositivo o antes de qu
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

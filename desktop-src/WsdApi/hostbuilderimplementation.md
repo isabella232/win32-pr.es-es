@@ -4,12 +4,12 @@ ms.assetid: 2b4a4016-cc5d-4912-8e08-ce3a11ab0a06
 title: elemento hostBuilderImplementation
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97d333287acd199f4fe2aa8967a1b8d6458ff3ae
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 042a288874a1829c36866c84ccb414db8c07233e199728006b4283920fe25ff0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856615"
 ---
 # <a name="hostbuilderimplementation-element"></a>elemento hostBuilderImplementation
 

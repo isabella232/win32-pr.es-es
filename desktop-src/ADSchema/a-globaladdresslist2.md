@@ -1,11 +1,11 @@
 ---
-title: Atributo global-Address-List2
-description: Este atributo se usa en un contenedor de Microsoft Exchange para almacenar el nombre distintivo de una lista global de direcciones (GAL) recién creada
+title: Atributo Global-Address-List2
+description: Este atributo se usa en un contenedor de microsoft Exchange para almacenar el nombre distintivo de una lista global de direcciones (GAL) recién creada.
 ms.assetid: edccbdb5-83c4-4832-86ca-056c78f388f6
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de dirección global-List2
-- globalAddressList2 esquema de AD de atributos
+- Esquema de AD del atributo Global-Address-List2
+- Esquema de AD del atributo globalAddressList2
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4064498ff6f182fe74c355fa345994d8330ef31e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f913e81a10cc392fcf330139023c3a210cc762709e2570189ca26d8a74641e21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705985"
 ---
-# <a name="global-address-list2-attribute"></a>Atributo global-Address-List2
+# <a name="global-address-list2-attribute"></a>Atributo Global-Address-List2
 
-Este atributo se usa en un contenedor de Microsoft Exchange para almacenar el nombre distintivo de una lista global de direcciones (GAL) recién creada
+Este atributo se usa en un contenedor de microsoft Exchange para almacenar el nombre distintivo de una lista global de direcciones (GAL) recién creada.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
 | CN                | Global-Address-List2                    |
-| Nombre para mostrar de LDAP | globalAddressList2                      |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| Ldap-Display-Name | globalAddressList2                      |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2047                 |
-| System-ID-GUID    | 4898f63d-4112-477c-8826-3ca00bd8277d    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 4898f63d-4112-477c-8826-3ca00bd8277d    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -52,18 +52,18 @@ Este atributo se usa en un contenedor de Microsoft Exchange para almacenar el no
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 2124                                                                                 |
+| Id. de vínculo                | 2124                                                                                 |
 | MAPI-Id                | \-                                                                                   |
-| System-Only            | False                                                                                |
-| Tiene un único valor       | False                                                                                |
-| Está indexado             | False                                                                                |
-| En el catálogo global      | False                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                         |
+| System-Only            | Falso                                                                                |
+| Es de un solo valor       | Falso                                                                                |
+| Está indexado             | Falso                                                                                |
+| En el catálogo global      | Falso                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Clases usadas en        | [**MS-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
+| Clases usadas en        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Este atributo se usa en un contenedor de Microsoft Exchange para almacenar el no
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 2124                                                                                 |
+| Id. de vínculo                | 2124                                                                                 |
 | MAPI-Id                | \-                                                                                   |
-| System-Only            | False                                                                                |
-| Tiene un único valor       | False                                                                                |
-| Está indexado             | False                                                                                |
-| En el catálogo global      | False                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                         |
+| System-Only            | Falso                                                                                |
+| Es de un solo valor       | Falso                                                                                |
+| Está indexado             | Falso                                                                                |
+| En el catálogo global      | Falso                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Clases usadas en        | [**MS-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
+| Clases usadas en        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -94,18 +94,18 @@ Este atributo se usa en un contenedor de Microsoft Exchange para almacenar el no
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 2124                                                                                 |
+| Id. de vínculo                | 2124                                                                                 |
 | MAPI-Id                | \-                                                                                   |
-| System-Only            | False                                                                                |
-| Tiene un único valor       | False                                                                                |
-| Está indexado             | False                                                                                |
-| En el catálogo global      | False                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                         |
+| System-Only            | Falso                                                                                |
+| Es de un solo valor       | Falso                                                                                |
+| Está indexado             | Falso                                                                                |
+| En el catálogo global      | Falso                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Clases usadas en        | [**MS-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
+| Clases usadas en        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
