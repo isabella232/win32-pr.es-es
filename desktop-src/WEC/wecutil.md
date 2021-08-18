@@ -1,6 +1,6 @@
 ---
 title: Wecutil.exe
-description: Wecutil.exe es una utilidad del recopilador de eventos de Windows que permite a un administrador crear y administrar suscripciones a eventos reenviados desde orígenes de eventos remotos que admiten el protocolo de WS-Management.
+description: Wecutil.exe es una utilidad Windows Event Collector que permite a un administrador crear y administrar suscripciones a eventos reenviados desde orígenes de eventos remotos que admiten el protocolo WS-Management eventos.
 ms.assetid: 93ce25df-f829-43b9-96f2-7f2f291d100e
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aaf6f74007b56cff85c28c4106fd4345c5627d4e
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: 6e93e09bc4eed51448b686f0d18f00ecacaacd31d063c4905757d0185128ee64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "104362395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117750975"
 ---
 # <a name="wecutilexe"></a>Wecutil.exe
 
-Wecutil.exe es una utilidad del recopilador de eventos de Windows que permite a un administrador crear y administrar suscripciones a eventos reenviados desde orígenes de eventos remotos que admiten el protocolo de WS-Management. Los comandos, las opciones y los valores de opción no distinguen mayúsculas de minúsculas para esta utilidad.
+Wecutil.exe es una utilidad Windows Event Collector que permite a un administrador crear y administrar suscripciones a eventos reenviados desde orígenes de eventos remotos que admiten el protocolo WS-Management eventos. Los comandos, las opciones y los valores de opción no tienen en cuenta las mayúsculas y minúsculas de esta utilidad.
 
-Si recibe un mensaje que indica "el servidor RPC no está disponible" o "se desconoce la interfaz" al intentar ejecutar wecutil, debe iniciar el servicio Recopilador de eventos de Windows (wecsvc). Para iniciar wecsvc, en un símbolo del sistema con privilegios elevados, escriba **net start wecsvc**.
+Si recibe un mensaje que dice "El servidor RPC no está disponible" o "La interfaz es desconocida" al intentar ejecutar wecutil, debe iniciar el servicio recopilador de eventos de Windows (wecsvc). Para iniciar wecsvc, en un símbolo del sistema con privilegios elevados, **escriba net start wecsvc**.
 
-## <a name="list-existing-subscriptions"></a>Enumerar las suscripciones existentes
+## <a name="list-existing-subscriptions"></a>Enumeración de suscripciones existentes
 
-La siguiente sintaxis se usa para enumerar las suscripciones de eventos remotos existentes.
+La sintaxis siguiente se usa para enumerar las suscripciones de eventos remotos existentes.
 
 ``` syntax
 wecutil { es | enum-subscription }
 ```
 
-Si utiliza un script para obtener los nombres de las suscripciones de la salida, tendrá que omitir los caracteres de BOM UTF-8 en la primera línea de la salida. El siguiente script muestra un ejemplo de cómo podría omitir los caracteres de la BOM.
+Si usa un script para obtener los nombres de las suscripciones de la salida, deberá omitir los caracteres BOM UTF-8 en la primera línea de la salida. El siguiente script muestra un ejemplo de cómo puede omitir los caracteres BOM.
 
 ``` syntax
 setlocal enabledelayedexpansion
@@ -55,7 +55,7 @@ endlocal
 
 ## <a name="get-subscription-configuration"></a>Obtener configuración de suscripción
 
-La sintaxis siguiente se usa para mostrar los datos de configuración de la suscripción de eventos remotos.
+La sintaxis siguiente se usa para mostrar los datos de configuración de suscripción de eventos remotos.
 
 ``` syntax
 wecutil { gs | get-subscription } SUBSCRIPTION_ID [/f:VALUE 
@@ -66,30 +66,30 @@ wecutil { gs | get-subscription } SUBSCRIPTION_ID [/f:VALUE
 
 <dl> <dt>
 
-<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**identificador de suscripción \_**
+<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**ID. \_ DE SUSCRIPCIÓN**
 </dt> <dd>
 
-Cadena que identifica de forma única una suscripción. Este identificador se especifica en el elemento **SubscriptionId** del archivo de configuración XML que se usa para crear la suscripción.
+Cadena que identifica de forma única una suscripción. Este identificador se especifica en el elemento **SubscriptionId** del archivo de configuración XML utilizado para crear la suscripción.
 
 </dd> <dt>
 
-<span id="_f_VALUE"></span><span id="_f_value"></span><span id="_F_VALUE"></span>**/f: * valor***
+<span id="_f_VALUE"></span><span id="_f_value"></span><span id="_F_VALUE"></span>**/f:*VALUE***
 </dt> <dd>
 
-Valor que especifica la salida de los datos de configuración de la suscripción. El *valor* puede ser "XML" o "conciso" y el valor predeterminado es "conciso". Si el *valor* es "XML", la salida se imprime en formato "XML". Si el *valor* es "conciso", la salida se imprime en pares de nombre y valor.
+Valor que especifica la salida de los datos de configuración de la suscripción. *VALUE* puede ser "XML" o "Terse" y el valor predeterminado es "Terse". Si *VALUE* es "XML", la salida se imprime en formato "XML". Si *VALUE* es "Terse", la salida se imprime en pares nombre-valor.
 
 </dd> <dt>
 
-<span id="_u_VALUE"></span><span id="_u_value"></span><span id="_U_VALUE"></span>**/u: *valor***
+<span id="_u_VALUE"></span><span id="_u_value"></span><span id="_U_VALUE"></span>**/u: *VALUE***
 </dt> <dd>
 
-Valor que especifica si la salida está en formato Unicode. El *valor* puede ser "true" o "false". Si el *valor* es "true", la salida está en formato Unicode y si el *valor* es "false", la salida no está en formato Unicode.
+Valor que especifica si la salida está en formato Unicode. *VALUE* puede ser "true" o "false". Si *VALUE* es "true", la salida está en formato Unicode y, si *VALUE* es "false", la salida no está en formato Unicode.
 
 </dd> </dl>
 
-## <a name="get-subscription-runtime-status"></a>Obtener estado de tiempo de ejecución de suscripción
+## <a name="get-subscription-runtime-status"></a>Obtener el estado de tiempo de ejecución de la suscripción
 
-La siguiente sintaxis se usa para mostrar el estado de la suscripción en tiempo de ejecución.
+La sintaxis siguiente se usa para mostrar el estado de tiempo de ejecución de la suscripción.
 
 ``` syntax
 wecutil { gr | get-subscriptionruntimestatus } SUBSCRIPTION_ID
@@ -100,14 +100,14 @@ wecutil { gr | get-subscriptionruntimestatus } SUBSCRIPTION_ID
 
 <dl> <dt>
 
-<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**identificador de suscripción \_**
+<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**ID. \_ DE SUSCRIPCIÓN**
 </dt> <dd>
 
-Cadena que identifica de forma única una suscripción. Este identificador se especifica en el elemento **SubscriptionId** del archivo de configuración XML que se usa para crear la suscripción.
+Cadena que identifica de forma única una suscripción. Este identificador se especifica en el elemento **SubscriptionId** del archivo de configuración XML utilizado para crear la suscripción.
 
 </dd> <dt>
 
-<span id="EVENT_SOURCE"></span><span id="event_source"></span>**origen del evento \_**
+<span id="EVENT_SOURCE"></span><span id="event_source"></span>**ORIGEN DEL \_ EVENTO**
 </dt> <dd>
 
 Valor que identifica un equipo que es un origen de eventos para una suscripción de eventos. Este valor puede ser el nombre de dominio completo del equipo, el nombre NetBIOS o la dirección IP.
@@ -132,277 +132,277 @@ wecutil {ss | set_subscription } /c:CONGIG_FILE [/cun:USERNAME]
 [/cup:PASSWORD]
 ```
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
-Cuando se especifica un nombre de usuario o una contraseña incorrectos en el comando **wecutil SS** , no se genera ningún error hasta que se ve el estado de tiempo de ejecución de la suscripción mediante el comando **wecutil gr** .
+Cuando se especifica un nombre de usuario o una contraseña incorrectos en el comando **wecutil ss,** no se notifica ningún error hasta que se ve el estado en tiempo de ejecución de la suscripción mediante el comando **wecutil gr.**
 
 ## <a name="set-configuration-parameters"></a>Establecer parámetros de configuración
 
 <dl> <dt>
 
-<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**identificador de suscripción \_**
+<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**ID. \_ DE SUSCRIPCIÓN**
 </dt> <dd>
 
-Cadena que identifica de forma única una suscripción. Este identificador se especifica en el elemento **SubscriptionId** del archivo de configuración XML que se usa para crear la suscripción.
+Cadena que identifica de forma única una suscripción. Este identificador se especifica en el elemento **SubscriptionId** del archivo de configuración XML utilizado para crear la suscripción.
 
 </dd> <dt>
 
-<span id="_c_CONGIG_FILE"></span><span id="_c_congig_file"></span><span id="_C_CONGIG_FILE"></span>**/c: *CONGIG \_ archivo***
+<span id="_c_CONGIG_FILE"></span><span id="_c_congig_file"></span><span id="_C_CONGIG_FILE"></span>**/c: *ARCHIVO DE \_ CONGIG***
 </dt> <dd>
 
-Valor que especifica la ruta de acceso al archivo XML que contiene la información de configuración de la suscripción. La ruta de acceso puede ser absoluta o relativa al directorio actual. Este parámetro solo se puede usar con los parámetros opcionales/CUS y/Cup y es mutuamente excluyente con todos los demás parámetros.
+Valor que especifica la ruta de acceso al archivo XML que contiene información de configuración de suscripción. La ruta de acceso puede ser absoluta o relativa al directorio actual. Este parámetro solo se puede usar con los parámetros opcionales /cus y /cup, y es mutuamente excluyente con todos los demás parámetros.
 
 </dd> <dt>
 
-<span id="_e_VALUE"></span><span id="_e_value"></span><span id="_E_VALUE"></span>**/e: *valor***
+<span id="_e_VALUE"></span><span id="_e_value"></span><span id="_E_VALUE"></span>**/e: *VALUE***
 </dt> <dd>
 
-Valor que determina si se va a habilitar o deshabilitar la suscripción. El valor puede ser true o false. El valor predeterminado es true, que habilita la suscripción.
+Valor que determina si se va a habilitar o deshabilitar la suscripción. VALUE puede ser true o false. El valor predeterminado es true, lo que habilita la suscripción.
 
 > [!Note]  
-> Cuando se deshabilita una suscripción iniciada por el recopilador, el origen del evento pasa a estar inactivo en lugar de deshabilitarse. En una suscripción iniciada por el recopilador, puede deshabilitar un origen de eventos independiente de la suscripción.
+> Cuando se deshabilita una suscripción iniciada por el recopilador, el origen del evento se vuelve inactivo en lugar de deshabilitado. En una suscripción iniciada por el recopilador, puede deshabilitar un origen de eventos independiente de la suscripción.
 
  
 
 </dd> <dt>
 
-<span id="_d_DESCRIPTION"></span><span id="_d_description"></span><span id="_D_DESCRIPTION"></span>**/d: *Descripción***
+<span id="_d_DESCRIPTION"></span><span id="_d_description"></span><span id="_D_DESCRIPTION"></span>**/d: *DESCRIPTION***
 </dt> <dd>
 
 Valor que especifica una descripción para la suscripción de eventos.
 
 </dd> <dt>
 
-<span id="_ex_DATE_TIME"></span><span id="_ex_date_time"></span><span id="_EX_DATE_TIME"></span>**/ex: *fecha y \_ hora***
+<span id="_ex_DATE_TIME"></span><span id="_ex_date_time"></span><span id="_EX_DATE_TIME"></span>**/ex: *DATE \_ TIME***
 </dt> <dd>
 
-Valor que especifica la hora de expiración de la suscripción. *Fecha \_ TIME* es un valor especificado en el formato de fecha y hora XML estándar o ISO8601: "aaaa-mm-ddThh: mm: SS \[ . SSS \] \[ Z \] ", donde "T" es el separador de hora y "Z" indica la hora UTC. Por ejemplo, si *fecha y \_ hora* es "2007-01-12T01:20:00", la hora de expiración de la suscripción es el 12 de enero de 2007 y 01:20.
+Valor que especifica la hora de expiración de la suscripción. *DATE \_ TIME* es un valor especificado en formato de fecha y hora ESTÁNDAR XML o ISO8601: "yyyy-MM-ddThh:mm:ss \[ .sss Z" donde "T" es el separador de hora y \] \[ \] "Z" indica la hora UTC. Por ejemplo, si *DATE \_ TIME* es "2007-01-12T01:20:00", la hora de expiración de la suscripción es el 12 de enero de 2007, 01:20.
 
 </dd> <dt>
 
-<span id="_uri_URI"></span><span id="_uri_uri"></span><span id="_URI_URI"></span>**/Uri: *URI***
+<span id="_uri_URI"></span><span id="_uri_uri"></span><span id="_URI_URI"></span>**/uri: *URI***
 </dt> <dd>
 
-Valor que especifica el tipo de eventos utilizados por la suscripción. La dirección del equipo de origen del evento junto con el identificador uniforme de recursos (URI) identifica de forma única el origen de los eventos. La cadena URI se usa para todas las direcciones de origen de eventos de la suscripción.
+Valor que especifica el tipo de eventos consumidos por la suscripción. La dirección del equipo de origen del evento junto con el identificador uniforme de recursos (URI) identifica de forma única el origen de los eventos. La cadena uri se usa para todas las direcciones de origen de eventos de la suscripción.
 
 </dd> <dt>
 
-<span id="_cm_CONFIGURATION_MODE"></span><span id="_cm_configuration_mode"></span><span id="_CM_CONFIGURATION_MODE"></span>**/cm: *\_ modo de configuración***
+<span id="_cm_CONFIGURATION_MODE"></span><span id="_cm_configuration_mode"></span><span id="_CM_CONFIGURATION_MODE"></span>**/cm: *MODO DE \_ CONFIGURACIÓN***
 </dt> <dd>
 
-Valor que especifica el modo de configuración de la suscripción de eventos. *Configuración \_ de El modo* puede ser una de las cadenas siguientes: "normal", "Custom", "MinLatency" o "MinBandwidth". La enumeración de modo de configuración de suscripción de EC define los modos de configuración. [**\_ \_ \_**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_configuration_mode) Los parámetros/DM,/DMI,/HI y/dmlt solo se pueden especificar si el modo de configuración está establecido en Custom.
+Valor que especifica el modo de configuración de la suscripción de eventos. *CONFIGURACIÓN \_ MODE* puede ser una de las cadenas siguientes: "Normal", "Custom", "MinLatency" o "MinBandwidth". La [**\_ enumeración EC SUBSCRIPTION \_ CONFIGURATION \_ MODE**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_configuration_mode) define los modos de configuración. Los parámetros /dm, /dmi, /hi y /dmlt solo se pueden especificar si el modo de configuración está establecido en Personalizado.
 
 </dd> <dt>
 
-<span id="_q_QUERY"></span><span id="_q_query"></span><span id="_Q_QUERY"></span>**/q: *consulta***
+<span id="_q_QUERY"></span><span id="_q_query"></span><span id="_Q_QUERY"></span>**/q: *QUERY***
 </dt> <dd>
 
-Valor que especifica la cadena de consulta de la suscripción. El formato de esta cadena puede ser diferente para los distintos valores de URI y se aplica a todos los orígenes de eventos de la suscripción.
+Valor que especifica la cadena de consulta para la suscripción. El formato de esta cadena puede ser diferente para los distintos valores de URI y se aplica a todos los orígenes de eventos de la suscripción.
 
 </dd> <dt>
 
-<span id="_dia_DIALECT"></span><span id="_dia_dialect"></span><span id="_DIA_DIALECT"></span>**/DIA: *dialecto***
+<span id="_dia_DIALECT"></span><span id="_dia_dialect"></span><span id="_DIA_DIALECT"></span>**/dia: *DIALECT***
 </dt> <dd>
 
 Valor que especifica el dialecto que usa la cadena de consulta.
 
 </dd> <dt>
 
-<span id="_cf_FORMAT"></span><span id="_cf_format"></span><span id="_CF_FORMAT"></span>**/CF: *formato***
+<span id="_cf_FORMAT"></span><span id="_cf_format"></span><span id="_CF_FORMAT"></span>**/cf: *FORMAT***
 </dt> <dd>
 
-Valor que especifica el formato de los eventos devueltos. El *formato* puede ser "Events" o "RenderedText". Cuando el valor es "RenderedText", los eventos se devuelven con las cadenas localizadas (por ejemplo, cadenas de descripción de eventos) adjuntas a los eventos. El valor predeterminado de *Format* es "RenderedText".
+Valor que especifica el formato de los eventos devueltos. *FORMAT* puede ser "Events" o "RenderedText". Cuando el valor es "RenderedText", los eventos se devuelven con las cadenas localizadas (como cadenas de descripción de eventos) adjuntas a los eventos. El valor predeterminado de *FORMAT* es "RenderedText".
 
 </dd> <dt>
 
-<span id="_l_LOCALE"></span><span id="_l_locale"></span><span id="_L_LOCALE"></span>**/l: *configuración regional***
+<span id="_l_LOCALE"></span><span id="_l_locale"></span><span id="_L_LOCALE"></span>**/l: *CONFIGURACIÓN REGIONAL***
 </dt> <dd>
 
-Valor que especifica la configuración regional para la entrega de las cadenas localizadas en formato de texto representado. La *configuración regional* es un identificador de referencia cultural de idioma o país, por ejemplo, "en-US". Este parámetro solo es válido cuando el parámetro/CF se establece en "RenderedText".
+Valor que especifica la configuración regional para la entrega de las cadenas localizadas en formato de texto representado. *LOCALE* es un identificador de idioma o referencia cultural de país, por ejemplo, "EN-us". Este parámetro solo es válido cuando el parámetro /cf se establece en "RenderedText".
 
 </dd> <dt>
 
-<span id="_ree__VALUE_"></span><span id="_ree__value_"></span><span id="_REE__VALUE_"></span>**/ree: \[ *valor*\]**
+<span id="_ree__VALUE_"></span><span id="_ree__value_"></span><span id="_REE__VALUE_"></span>**/ree: \[ *VALUE*\]**
 </dt> <dd>
 
-Valor que especifica los eventos que se van a entregar para la suscripción. El *valor* puede ser true o false. Cuando el *valor* es true, todos los eventos existentes se leen de los orígenes de eventos de suscripción. Cuando el *valor* es false, solo se entregan los eventos futuros (llegados). El valor predeterminado es true cuando se especifica/REE sin un valor, y el valor predeterminado es false si no se especifica/REE.
+Valor que especifica qué eventos se van a entregar para la suscripción. *VALUE* puede ser true o false. Cuando *VALUE es* true, todos los eventos existentes se leen de los orígenes de eventos de suscripción. Cuando *VALUE* es false, solo se entregan eventos futuros (que llegan). El valor predeterminado es true cuando se especifica /ree sin un valor y el valor predeterminado es false si no se especifica /ree.
 
 </dd> <dt>
 
-<span id="_lf_FILENAME"></span><span id="_lf_filename"></span><span id="_LF_FILENAME"></span>**/LF: *nombre de archivo***
+<span id="_lf_FILENAME"></span><span id="_lf_filename"></span><span id="_LF_FILENAME"></span>**/lf: *FILENAME***
 </dt> <dd>
 
 Valor que especifica el registro de eventos local que se usa para almacenar los eventos recibidos de la suscripción de eventos.
 
 </dd> <dt>
 
-<span id="_pn_PUBLISHER"></span><span id="_pn_publisher"></span><span id="_PN_PUBLISHER"></span>**/PN: *publicador***
+<span id="_pn_PUBLISHER"></span><span id="_pn_publisher"></span><span id="_PN_PUBLISHER"></span>**/pn: *PUBLISHER***
 </dt> <dd>
 
-Valor que especifica el nombre del publicador de eventos (proveedor). Debe ser un publicador que posea o importe el registro especificado por el parámetro/LF.
+Valor que especifica el nombre del publicador de eventos (proveedor). Debe ser un publicador que posee o importa el registro especificado por el parámetro /lf.
 
 </dd> <dt>
 
-<span id="_dm_MODE"></span><span id="_dm_mode"></span><span id="_DM_MODE"></span>**/DM: *modo***
+<span id="_dm_MODE"></span><span id="_dm_mode"></span><span id="_DM_MODE"></span>**/dm: *MODE***
 </dt> <dd>
 
-Valor que especifica el modo de entrega de la suscripción. El *modo* puede ser de inserción o de extracción. Esta opción solo es válida si el parámetro/cm está establecido en Custom.
+Valor que especifica el modo de entrega de la suscripción. *MODE* puede ser de inserción o extracción. Esta opción solo es válida si el parámetro /cm está establecido en Personalizado.
 
 </dd> <dt>
 
-<span id="_dmi_NUMBER"></span><span id="_dmi_number"></span><span id="_DMI_NUMBER"></span>**/DMI: *número***
+<span id="_dmi_NUMBER"></span><span id="_dmi_number"></span><span id="_DMI_NUMBER"></span>**/dmi: *NUMBER***
 </dt> <dd>
 
-Valor que especifica el número máximo de elementos para la entrega por lotes en la suscripción de eventos. Esta opción solo es válida si el parámetro/cm está establecido en Custom.
+Valor que especifica el número máximo de elementos para la entrega por lotes en la suscripción de eventos. Esta opción solo es válida si el parámetro /cm está establecido en Personalizado.
 
 </dd> <dt>
 
 <span id="_dmlt_MS"></span><span id="_dmlt_ms"></span><span id="_DMLT_MS"></span>**/dmlt: *MS***
 </dt> <dd>
 
-Valor que especifica la latencia máxima permitida para entregar un lote de eventos. MS es el número de milisegundos permitidos. Este parámetro solo es válido si el parámetro/cm está establecido en Custom.
+Valor que especifica la latencia máxima permitida para entregar un lote de eventos. MS es el número de milisegundos permitido. Este parámetro solo es válido si el parámetro /cm está establecido en Personalizado.
 
 </dd> <dt>
 
-<span id="_hi_MS"></span><span id="_hi_ms"></span><span id="_HI_MS"></span>**/HI: *MS***
+<span id="_hi_MS"></span><span id="_hi_ms"></span><span id="_HI_MS"></span>**/hi: *MS***
 </dt> <dd>
 
-Valor que especifica el intervalo de latido de la suscripción. *MS* es el número de milisegundos usados en el intervalo. Este parámetro solo es válido si el parámetro/cm está establecido en Custom.
+Valor que especifica el intervalo de latido de la suscripción. *MS* es el número de milisegundos usados en el intervalo. Este parámetro solo es válido si el parámetro /cm está establecido en Personalizado.
 
 </dd> <dt>
 
-<span id="_tn_TRANSPORTNAME"></span><span id="_tn_transportname"></span><span id="_TN_TRANSPORTNAME"></span>**/TN: *nombredetransportedered***
+<span id="_tn_TRANSPORTNAME"></span><span id="_tn_transportname"></span><span id="_TN_TRANSPORTNAME"></span>**/tn: *TRANSPORTNAME***
 </dt> <dd>
 
-Valor que especifica el nombre del transporte utilizado para conectarse al equipo de origen de eventos remotos.
+Valor que especifica el nombre del transporte utilizado para conectarse al equipo de origen de eventos remoto.
 
 </dd> <dt>
 
-<span id="_esa_EVENT_SOURCE"></span><span id="_esa_event_source"></span><span id="_ESA_EVENT_SOURCE"></span>**/esa: *\_ origen del evento***
+<span id="_esa_EVENT_SOURCE"></span><span id="_esa_event_source"></span><span id="_ESA_EVENT_SOURCE"></span>**/esa: *EVENT \_ SOURCE***
 </dt> <dd>
 
-Valor que especifica la dirección de un equipo de origen de eventos. *Evento \_ de ORIGEN* es una cadena que identifica un equipo de origen de eventos con el nombre de dominio completo del equipo, el nombre NetBIOS o la dirección IP. Este parámetro se puede utilizar con los parámetros/ese,/AES,/res o/un y/up.
+Valor que especifica la dirección de un equipo de origen de eventos. *EVENT \_ SOURCE* es una cadena que identifica un equipo de origen de eventos mediante el nombre de dominio completo del equipo, el nombre NetBIOS o la dirección IP. Este parámetro se puede usar con los parámetros /ese, /aes, /res o /un y /up.
 
 </dd> <dt>
 
-<span id="_ese_VALUE"></span><span id="_ese_value"></span><span id="_ESE_VALUE"></span>**/ese: *valor***
+<span id="_ese_VALUE"></span><span id="_ese_value"></span><span id="_ESE_VALUE"></span>**/ese: *VALUE***
 </dt> <dd>
 
-Valor que determina si se va a habilitar o deshabilitar un origen de eventos. El *valor* puede ser true o false. El valor predeterminado es true, que habilita el origen del evento. Este parámetro solo se usa si se usa el parámetro/esa.
+Valor que determina si se debe habilitar o deshabilitar un origen de eventos. *VALUE* puede ser true o false. El valor predeterminado es true, que habilita el origen del evento. Este parámetro solo se usa si se usa el parámetro /esa.
 
 </dd> <dt>
 
 <span id="_aes"></span><span id="_AES"></span>**/aes**
 </dt> <dd>
 
-Valor que agrega el origen de eventos especificado por el parámetro/esa si el origen del evento aún no forma parte de la suscripción de eventos. Si el equipo especificado por el parámetro/esa ya forma parte de la suscripción, se muestra un error. Este parámetro solo se permite si se usa el parámetro/esa.
+Valor que agrega el origen del evento especificado por el parámetro /esa si el origen del evento aún no forma parte de la suscripción de eventos. Si el equipo especificado por el parámetro /esa ya forma parte de la suscripción, se muestra un error. Este parámetro solo se permite si se usa el parámetro /esa.
 
 </dd> <dt>
 
 <span id="_res"></span><span id="_RES"></span>**/res**
 </dt> <dd>
 
-Valor que quita el origen de eventos especificado por el parámetro/esa si el origen del evento ya forma parte de la suscripción de eventos. Si el equipo especificado por el parámetro/esa no forma parte de la suscripción, se muestra un error. Este parámetro solo se permite si se usa el parámetro/esa.
+Valor que quita el origen del evento especificado por el parámetro /esa si el origen del evento ya forma parte de la suscripción de eventos. Si el equipo especificado por el parámetro /esa no forma parte de la suscripción, se muestra un error. Este parámetro solo se permite si se usa el parámetro /esa.
 
 </dd> <dt>
 
-<span id="_un_USERNAME"></span><span id="_un_username"></span><span id="_UN_USERNAME"></span>**/un: *nombre de usuario***
+<span id="_un_USERNAME"></span><span id="_un_username"></span><span id="_UN_USERNAME"></span>**/un: *USERNAME***
 </dt> <dd>
 
-Valor que especifica el nombre de usuario usado en las credenciales para conectarse al origen de eventos especificado en el parámetro/esa. Este parámetro solo se permite si se usa el parámetro/esa.
+Valor que especifica el nombre de usuario utilizado en las credenciales para conectarse al origen del evento especificado en el parámetro /esa. Este parámetro solo se permite si se usa el parámetro /esa.
 
 </dd> <dt>
 
-<span id="_up_PASSWORD"></span><span id="_up_password"></span><span id="_UP_PASSWORD"></span>**/up: *contraseña***
+<span id="_up_PASSWORD"></span><span id="_up_password"></span><span id="_UP_PASSWORD"></span>**/up: *PASSWORD***
 </dt> <dd>
 
-Valor que especifica la contraseña para el nombre de usuario especificado en el parámetro/un. Las credenciales de nombre de usuario y contraseña se usan para conectarse al origen de eventos especificado en el parámetro/esa. Este parámetro solo se permite si se usa el parámetro/un.
+Valor que especifica la contraseña del nombre de usuario especificado en el parámetro /un. Las credenciales de nombre de usuario y contraseña se usan para conectarse al origen de eventos especificado en el parámetro /esa. Este parámetro solo se permite si se usa el parámetro /un.
 
 </dd> <dt>
 
-<span id="_tp_TRANSPORTPORT"></span><span id="_tp_transportport"></span><span id="_TP_TRANSPORTPORT"></span>**/TP: *TRANSPORTPORT***
+<span id="_tp_TRANSPORTPORT"></span><span id="_tp_transportport"></span><span id="_TP_TRANSPORTPORT"></span>**/tp: *TRANSPORTPORT***
 </dt> <dd>
 
 Valor que especifica el número de puerto utilizado por el transporte al conectarse a un equipo de origen de eventos remoto.
 
 </dd> <dt>
 
-<span id="_hn_NAME"></span><span id="_hn_name"></span><span id="_HN_NAME"></span>**/HN: *nombre***
+<span id="_hn_NAME"></span><span id="_hn_name"></span><span id="_HN_NAME"></span>**/hn: *NAME***
 </dt> <dd>
 
-Valor que especifica el nombre DNS del equipo local. Los orígenes de eventos remotos usan este nombre para volver a enviar eventos y deben usarse solo para suscripciones de extracción.
+Valor que especifica el nombre DNS del equipo local. Este nombre lo usan los orígenes de eventos remotos para insertar eventos y solo se debe usar para suscripciones de inserción.
 
 </dd> <dt>
 
-<span id="_ct_TYPE"></span><span id="_ct_type"></span><span id="_CT_TYPE"></span>**/CT: *tipo***
+<span id="_ct_TYPE"></span><span id="_ct_type"></span><span id="_CT_TYPE"></span>**/ct: *TYPE***
 </dt> <dd>
 
-Valor que especifica el tipo de credencial utilizado para tener acceso a los orígenes de eventos remotos. El *tipo* puede ser "default", "Negotiate", "Digest", "Basic" o "LocalMachine". El valor predeterminado es "default". Estos valores se definen en la enumeración de [**\_ \_ \_ tipo de credenciales de suscripción de EC**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_credentials_type) .
+Valor que especifica el tipo de credencial utilizado para acceder a orígenes de eventos remotos. *TYPE* puede ser "default", "negotiate", "digest", "basic" o "localmachine". El valor predeterminado es "default". Estos valores se definen en la [**enumeración EC \_ SUBSCRIPTION CREDENTIALS \_ \_ TYPE.**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_credentials_type)
 
 </dd> <dt>
 
-<span id="_cun_USERNAME"></span><span id="_cun_username"></span><span id="_CUN_USERNAME"></span>**/cun: *nombre de usuario***
+<span id="_cun_USERNAME"></span><span id="_cun_username"></span><span id="_CUN_USERNAME"></span>**/cun: *USERNAME***
 </dt> <dd>
 
-Valor que establece las credenciales de usuario compartidas que se usan para los orígenes de eventos que no tienen sus propias credenciales de usuario.
+Valor que establece las credenciales de usuario compartidas usadas para los orígenes de eventos que no tienen sus propias credenciales de usuario.
 
 > [!Note]  
-> Si este parámetro se usa con la opción/c, se omite la configuración de nombre de usuario y contraseña para los orígenes de eventos individuales del archivo de configuración. Si desea usar credenciales diferentes para un origen de eventos específico, puede invalidar este valor especificando los parámetros/un y/up para un origen de eventos específico en la línea de comandos de otro comando set-subscription.
+> Si este parámetro se usa con la opción /c, se omite la configuración de nombre de usuario y contraseña para orígenes de eventos individuales del archivo de configuración. Si desea usar credenciales diferentes para un origen de eventos específico, puede invalidar este valor especificando los parámetros /un y /up para un origen de eventos específico en la línea de comandos de otro comando set-subscription.
 
  
 
 </dd> <dt>
 
-<span id="_cup_PASSWORD"></span><span id="_cup_password"></span><span id="_CUP_PASSWORD"></span>**/Cup: *contraseña***
+<span id="_cup_PASSWORD"></span><span id="_cup_password"></span><span id="_CUP_PASSWORD"></span>**/cup: *PASSWORD***
 </dt> <dd>
 
-Valor que establece la contraseña de usuario para las credenciales de usuario compartidas. Cuando *contraseña* está establecida en \* (asterisco), la contraseña se lee desde la consola. Esta opción solo es válida cuando se especifica el parámetro/cun.
+Valor que establece la contraseña de usuario para las credenciales de usuario compartidas. Cuando *PASSWORD* se establece en \* (asterisco), la contraseña se lee desde la consola. Esta opción solo es válida cuando se especifica el parámetro /cun.
 
 </dd> <dt>
 
-<span id="_ica_THUMBPRINTS"></span><span id="_ica_thumbprints"></span><span id="_ICA_THUMBPRINTS"></span>**/ICA: *huellas digitales***
+<span id="_ica_THUMBPRINTS"></span><span id="_ica_thumbprints"></span><span id="_ICA_THUMBPRINTS"></span>**/ica: *HUELLAS DIGITALES***
 </dt> <dd>
 
-Valor que establece la lista de impresiones en miniatura del certificado del emisor, en una lista separada por comas.
+Valor que establece la lista de huellas digitales del certificado del emisor, en una lista separada por comas.
 
 > [!Note]  
-> Esta opción es específica solo para las suscripciones iniciadas por el origen.
+> Esta opción es específica solo para las suscripciones iniciadas por origen.
 
  
 
 </dd> <dt>
 
-<span id="_as_ALLOWED"></span><span id="_as_allowed"></span><span id="_AS_ALLOWED"></span>**/as: *permitido***
+<span id="_as_ALLOWED"></span><span id="_as_allowed"></span><span id="_AS_ALLOWED"></span>**/as: *PERMITIDO***
 </dt> <dd>
 
-Valor que establece una lista separada por comas de cadena que especifica los nombres DNS de los equipos que no son de dominio y que pueden iniciar suscripciones. Los nombres se pueden especificar mediante caracteres comodín, como " \* . mydomain.com". Esta lista aparece vacía de forma predeterminada.
+Valor que establece una lista separada por comas de cadena que especifica los nombres DNS de los equipos que no son de dominio que pueden iniciar suscripciones. Los nombres se pueden especificar mediante caracteres comodín, como \* ".mydomain.com". Esta lista aparece vacía de forma predeterminada.
 
 > [!Note]  
-> Esta opción es específica solo para las suscripciones iniciadas por el origen.
+> Esta opción es específica solo para las suscripciones iniciadas por origen.
 
  
 
 </dd> <dt>
 
-<span id="_ds_DENIED"></span><span id="_ds_denied"></span><span id="_DS_DENIED"></span>**/DS: *denegado***
+<span id="_ds_DENIED"></span><span id="_ds_denied"></span><span id="_DS_DENIED"></span>**/ds: *DENIED***
 </dt> <dd>
 
-Valor que establece una lista separada por comas de cadena que especifica los nombres DNS de los equipos que no son de dominio y a los que no se les permite iniciar suscripciones. Los nombres se pueden especificar mediante caracteres comodín, como " \* . mydomain.com". Esta lista aparece vacía de forma predeterminada.
+Valor que establece una lista separada por comas de cadena que especifica los nombres DNS de los equipos que no son de dominio que no pueden iniciar suscripciones. Los nombres se pueden especificar mediante caracteres comodín, como \* ".mydomain.com". Esta lista aparece vacía de forma predeterminada.
 
 > [!Note]  
-> Esta opción es específica solo para las suscripciones iniciadas por el origen.
+> Esta opción es específica solo para las suscripciones iniciadas por origen.
 
  
 
 </dd> <dt>
 
-<span id="_adc_SDDL"></span><span id="_adc_sddl"></span><span id="_ADC_SDDL"></span>**/ADC: *SDDL***
+<span id="_adc_SDDL"></span><span id="_adc_sddl"></span><span id="_ADC_SDDL"></span>**/adc: *SDDL***
 </dt> <dd>
 
-Valor que establece una cadena, en formato SDDL, que especifica qué equipos del dominio están permitidos o no para iniciar suscripciones. El valor predeterminado es permitir que todos los equipos del dominio inicien las suscripciones.
+Valor que establece una cadena, en formato SDDL, que especifica qué equipos de dominio pueden o no iniciar suscripciones. El valor predeterminado es permitir que todos los equipos de dominio inicien suscripciones.
 
 > [!Note]  
-> Esta opción es específica solo para las suscripciones iniciadas por el origen.
+> Esta opción es específica solo para las suscripciones iniciadas por origen.
 
  
 
@@ -410,27 +410,27 @@ Valor que establece una cadena, en formato SDDL, que especifica qué equipos del
 
 ## <a name="create-a-new-subscription"></a>Crear una suscripción
 
-La siguiente sintaxis se usa para crear una suscripción de eventos para eventos en un equipo remoto.
+La sintaxis siguiente se usa para crear una suscripción de eventos para eventos en un equipo remoto.
 
 ``` syntax
 wecutil {cs | create-subscription } CONFIGURATION_FILE [/cun:USERNAME]
 [/cup:PASSWORD] 
 ```
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
-Cuando se especifica un nombre de usuario o una contraseña incorrectos en el comando **wecutil CS** , no se genera ningún error hasta que se ve el estado de tiempo de ejecución de la suscripción mediante el comando **wecutil gr** .
+Cuando se especifica un nombre de usuario o una contraseña incorrectos en el comando **wecutil cs,** no se notifica ningún error hasta que se ve el estado en tiempo de ejecución de la suscripción mediante el comando **wecutil gr.**
 
 ## <a name="creation-parameters"></a>Parámetros de creación
 
 <dl> <dt>
 
-<span id="CONFIGURATION_FILE"></span><span id="configuration_file"></span>**archivo de configuración \_**
+<span id="CONFIGURATION_FILE"></span><span id="configuration_file"></span>**ARCHIVO DE \_ CONFIGURACIÓN**
 </dt> <dd>
 
-Valor que especifica la ruta de acceso al archivo XML que contiene la información de configuración de la suscripción. La ruta de acceso puede ser absoluta o relativa al directorio actual.
+Valor que especifica la ruta de acceso al archivo XML que contiene información de configuración de suscripción. La ruta de acceso puede ser absoluta o relativa al directorio actual.
 
-El siguiente código XML es un ejemplo de un archivo de configuración de suscripción que crea una suscripción iniciada por el recopilador para reenviar eventos del registro de eventos de aplicación de un equipo remoto al registro Eventos reenviados.
+El siguiente XML es un ejemplo de un archivo de configuración de suscripción que crea una suscripción iniciada por el recopilador para reenviar eventos desde el registro de eventos de aplicación de un equipo remoto al registro ForwardedEvents.
 
 
 ```XML
@@ -485,7 +485,7 @@ El siguiente código XML es un ejemplo de un archivo de configuración de suscri
 
 
 
-El siguiente código XML es un ejemplo de un archivo de configuración de suscripción que crea una suscripción iniciada por el origen para reenviar eventos del registro de eventos de aplicación de un equipo remoto al registro Eventos reenviados.
+El siguiente XML es un ejemplo de un archivo de configuración de suscripción que crea una suscripción iniciada por el origen para reenviar eventos desde el registro de eventos de aplicación de un equipo remoto al registro ForwardedEvents.
 
 
 ```XML
@@ -534,34 +534,34 @@ El siguiente código XML es un ejemplo de un archivo de configuración de suscri
 
 
 > [!Note]  
-> Al crear una suscripción iniciada por el origen, si **AllowedSourceDomainComputers**, **AllowedSourceNonDomainComputers** / **IssuerCAList**, **AllowedSubjectList** y **DeniedSubjectList** están todos vacíos, se proporcionará un valor predeterminado para **AllowedSourceDomainComputers** -"O:NSG: NSD: (a;; GA;;;D C) (A;; GA;;; NS) ". Este valor predeterminado de SDDL concede a los miembros del grupo de dominio equipos del dominio, así como al grupo servicio de red local (para el reenviador local), la capacidad de generar eventos para esta suscripción.
+> Al crear una suscripción iniciada por el origen, si **AllowedSourceDomainComputers**, **AllowedSourceNonDomainComputers** IssuerCAList, AllowedSubjectList y DeniedSubjectList están vacíos, se proporciona un valor predeterminado para /  **AllowedSourceDomainComputers:** "O:NSG:NSD:(A;;  GA;;;D C)(A;; GA;;; NS)". Este valor predeterminado de SDDL concede a los miembros del grupo de dominio Equipos de dominio, así como al grupo servicio de red local (para el reenviador local), la capacidad de generar eventos para esta suscripción.
 
  
 
 </dd> <dt>
 
-<span id="_cun_USERNAME"></span><span id="_cun_username"></span><span id="_CUN_USERNAME"></span>**/cun: *nombre de usuario***
+<span id="_cun_USERNAME"></span><span id="_cun_username"></span><span id="_CUN_USERNAME"></span>**/cun: *USERNAME***
 </dt> <dd>
 
-Valor que establece las credenciales de usuario compartidas que se usan para los orígenes de eventos que no tienen sus propias credenciales de usuario. Este valor solo se aplica a las suscripciones iniciadas por el recopilador.
+Valor que establece las credenciales de usuario compartidas usadas para los orígenes de eventos que no tienen sus propias credenciales de usuario. Este valor solo se aplica a las suscripciones iniciadas por el recopilador.
 
 > [!Note]  
-> Si se especifica este parámetro, se omite la configuración de nombre de usuario y contraseña para los orígenes de eventos individuales del archivo de configuración. Si desea usar credenciales diferentes para un origen de eventos específico, puede invalidar este valor especificando los parámetros/un y/up para un origen de eventos específico en la línea de comandos de otro comando set-subscription.
+> Si se especifica este parámetro, se omite la configuración de nombre de usuario y contraseña para los orígenes de eventos individuales del archivo de configuración. Si desea usar credenciales diferentes para un origen de eventos específico, puede invalidar este valor especificando los parámetros /un y /up para un origen de eventos específico en la línea de comandos de otro comando set-subscription.
 
  
 
 </dd> <dt>
 
-<span id="_cup_PASSWORD"></span><span id="_cup_password"></span><span id="_CUP_PASSWORD"></span>**/Cup: *contraseña***
+<span id="_cup_PASSWORD"></span><span id="_cup_password"></span><span id="_CUP_PASSWORD"></span>**/cup: *PASSWORD***
 </dt> <dd>
 
-Valor que establece la contraseña de usuario para las credenciales de usuario compartidas. Cuando *password* se establece en " \* " (asterisco), la contraseña se lee desde la consola. Esta opción solo es válida cuando se especifica el parámetro/cun.
+Valor que establece la contraseña de usuario para las credenciales de usuario compartidas. Cuando *PASSWORD* se establece en " \* " (asterisco), la contraseña se lee desde la consola. Esta opción solo es válida cuando se especifica el parámetro /cun.
 
 </dd> </dl>
 
 ## <a name="delete-a-subscription"></a>Eliminar una suscripción
 
-La siguiente sintaxis se usa para eliminar una suscripción de eventos.
+La sintaxis siguiente se usa para eliminar una suscripción de eventos.
 
 ``` syntax
 wecutil { ds | delete-subscription } SUBSCRIPTION_ID
@@ -571,16 +571,16 @@ wecutil { ds | delete-subscription } SUBSCRIPTION_ID
 
 <dl> <dt>
 
-<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**identificador de suscripción \_**
+<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**ID. \_ DE SUSCRIPCIÓN**
 </dt> <dd>
 
-Cadena que identifica de forma única una suscripción. Este identificador se especifica en el elemento **SubscriptionId** del archivo de configuración XML que se usa para crear la suscripción. Se eliminará la suscripción identificada en este parámetro.
+Cadena que identifica de forma única una suscripción. Este identificador se especifica en el elemento **SubscriptionId** del archivo de configuración XML utilizado para crear la suscripción. Se eliminará la suscripción identificada en este parámetro.
 
 </dd> </dl>
 
 ## <a name="retry-a-subscription"></a>Reintentar una suscripción
 
-La sintaxis siguiente se usa para reintentar una suscripción inactiva intentando reactivar todos los orígenes de eventos o especificados estableciendo una conexión a cada origen de eventos y enviando una solicitud de suscripción remota al origen de eventos. Los orígenes de eventos deshabilitados no se reintentan.
+La sintaxis siguiente se usa para reintentar una suscripción inactiva intentando reactivar todos los orígenes de eventos o especificados estableciendo una conexión a cada origen de eventos y enviando una solicitud de suscripción remota al origen del evento. Los orígenes de eventos deshabilitados no se reinterio.
 
 ``` syntax
 wecutil { rs | retry-subscription } SUBSCRIPTION_ID 
@@ -591,42 +591,42 @@ wecutil { rs | retry-subscription } SUBSCRIPTION_ID
 
 <dl> <dt>
 
-<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**identificador de suscripción \_**
+<span id="SUBSCRIPTION_ID"></span><span id="subscription_id"></span>**ID. \_ DE SUSCRIPCIÓN**
 </dt> <dd>
 
-Cadena que identifica de forma única una suscripción. Este identificador se especifica en el elemento **SubscriptionId** del archivo de configuración XML que se usa para crear la suscripción. Se volverá a intentar la suscripción identificada en este parámetro.
+Cadena que identifica de forma única una suscripción. Este identificador se especifica en el elemento **SubscriptionId** del archivo de configuración XML utilizado para crear la suscripción. Se reinterá la suscripción identificada en este parámetro.
 
 </dd> <dt>
 
-<span id="EVENT_SOURCE"></span><span id="event_source"></span>**origen del evento \_**
+<span id="EVENT_SOURCE"></span><span id="event_source"></span>**ORIGEN DEL \_ EVENTO**
 </dt> <dd>
 
 Valor que identifica un equipo que es un origen de eventos para una suscripción de eventos. Este valor puede ser el nombre de dominio completo del equipo, el nombre NetBIOS o la dirección IP.
 
 </dd> </dl>
 
-## <a name="configure-the-windows-event-collector-service"></a>Configurar el servicio Recopilador de eventos de Windows
+## <a name="configure-the-windows-event-collector-service"></a>Configuración del servicio Windows recopilador de eventos
 
-La siguiente sintaxis se utiliza para configurar el servicio Recopilador de eventos de Windows para garantizar que las suscripciones de eventos se puedan crear y mantener a través de reinicios del equipo. Esto incluye el siguiente procedimiento:
+La sintaxis siguiente se usa para configurar el servicio Windows Recopilador de eventos para asegurarse de que las suscripciones de eventos se pueden crear y mantener mediante reinicios del equipo. Esto incluye el procedimiento siguiente:
 
-**Para configurar el servicio Recopilador de eventos de Windows**
+**Para configurar el servicio Windows recopilador de eventos**
 
-1.  Habilite el canal de eventos reenviados si está deshabilitado.
-2.  Retrasar el inicio del servicio Recopilador de eventos de Windows.
-3.  Inicie el servicio Recopilador de eventos de Windows si no se está ejecutando.
+1.  Habilite el canal ForwardedEvents si está deshabilitado.
+2.  Retrase el inicio del Windows recopilador de eventos.
+3.  Inicie el Windows recopilador de eventos si no se está ejecutando.
 
 ``` syntax
 wecutil { qc | quick-config } /q:VALUE
 ```
 
-## <a name="configure-event-collector-parameters"></a>Configurar parámetros del recopilador de eventos
+## <a name="configure-event-collector-parameters"></a>Configuración de parámetros del recopilador de eventos
 
 <dl> <dt>
 
-<span id="_q_VALUE"></span><span id="_q_value"></span><span id="_Q_VALUE"></span>**/q: *valor***
+<span id="_q_VALUE"></span><span id="_q_value"></span><span id="_Q_VALUE"></span>**/q: *VALUE***
 </dt> <dd>
 
-Un valor que determina si el comando de configuración rápida solicitará confirmación. El valor puede ser true o false. Si el valor es true, el comando solicitará confirmación. El valor predeterminado es false.
+Valor que determina si el comando quick-config solicitará confirmación. VALUE puede ser true o false. Si VALUE es true, el comando solicitará confirmación. El valor predeterminado es false.
 
 </dd> </dl>
 

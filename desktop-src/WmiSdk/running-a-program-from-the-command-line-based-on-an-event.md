@@ -2,7 +2,7 @@
 description: La clase CommandLineEventConsumer ejecuta un programa ejecutable especificado desde una línea de comandos cuando se produce un evento especificado. Esta clase es un consumidor de eventos estándar que proporciona WMI.
 ms.assetid: b912a4a1-7b1c-43a9-b098-fcfd62a2c2db
 ms.tgt_platform: multiple
-title: Ejecutar un programa desde la línea de comandos en función de un evento
+title: Ejecutar un programa desde la línea de comandos basado en un evento
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,53 +10,53 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: de7f4fb5e679a6b5767635c70e2ffb5eda3ba800
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c499713b3c6496759d94229e291138b0cb07de9e9f35d116eb19b4a7aeb3829
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118553980"
 ---
-# <a name="running-a-program-from-the-command-line-based-on-an-event"></a>Ejecutar un programa desde la línea de comandos en función de un evento
+# <a name="running-a-program-from-the-command-line-based-on-an-event"></a>Ejecutar un programa desde la línea de comandos basado en un evento
 
-La clase [**CommandLineEventConsumer**](commandlineeventconsumer.md) ejecuta un programa ejecutable especificado desde una línea de comandos cuando se produce un evento especificado. Esta clase es un consumidor de eventos estándar que proporciona WMI.
+La [**clase CommandLineEventConsumer**](commandlineeventconsumer.md) ejecuta un programa ejecutable especificado desde una línea de comandos cuando se produce un evento especificado. Esta clase es un consumidor de eventos estándar que proporciona WMI.
 
-Cuando use [**CommandLineEventConsumer**](commandlineeventconsumer.md), debe proteger el archivo ejecutable que desea iniciar. Si el archivo ejecutable no está en una ubicación segura o no está protegido con una lista de control de acceso (ACL) segura, un usuario sin privilegios de acceso puede reemplazar el ejecutable por otro ejecutable diferente. Puede usar las clases [**Win32 \_ LogicalFileSecuritySetting**](/previous-versions/windows/desktop/secrcw32prov/win32-logicalfilesecuritysetting) o [**Win32 \_ LogicalShareSecuritySetting**](/previous-versions/windows/desktop/secrcw32prov/win32-logicalsharesecuritysetting) para cambiar la seguridad de un archivo o recurso compartido mediante programación. Para obtener más información, vea [crear un descriptor de seguridad para un nuevo objeto en C++](/windows/desktop/SecAuthZ/creating-a-security-descriptor-for-a-new-object-in-c--).
+Al usar [**CommandLineEventConsumer,**](commandlineeventconsumer.md)debe proteger el archivo ejecutable que desea iniciar. Si el ejecutable no está en una ubicación segura o no está protegido con una lista de control de acceso seguro (ACL), un usuario sin privilegios de acceso puede reemplazar el ejecutable por otro ejecutable. Puede usar las clases [**\_ LogicalFileSecuritySetting**](/previous-versions/windows/desktop/secrcw32prov/win32-logicalfilesecuritysetting) o [**Win32 \_ LogicalShareSecuritySetting de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-logicalsharesecuritysetting) para cambiar mediante programación la seguridad de un archivo o recurso compartido. Para obtener más información, vea [Crear un descriptor de seguridad para un nuevo objeto en C++.](/windows/desktop/SecAuthZ/creating-a-security-descriptor-for-a-new-object-in-c--)
 
-El procedimiento básico para usar los consumidores estándar siempre es el mismo y se encuentra en [supervisión y respuesta a eventos con consumidores estándar](monitoring-and-responding-to-events-with-standard-consumers.md). El siguiente procedimiento se agrega al procedimiento básico, es específico de la clase [**CommandLineEventConsumer**](commandlineeventconsumer.md) y describe cómo crear un consumidor de eventos que ejecute un programa.
+El procedimiento básico para usar consumidores estándar es siempre el mismo y se encuentra en Supervisión y respuesta a [eventos con consumidores estándar.](monitoring-and-responding-to-events-with-standard-consumers.md) El siguiente procedimiento se agrega al procedimiento básico, es específico de la clase [**CommandLineEventConsumer**](commandlineeventconsumer.md) y describe cómo crear un consumidor de eventos que ejecuta un programa.
 
 > [!Caution]
 >
-> La clase [**CommandLineEventConsumer**](commandlineeventconsumer.md) tiene restricciones de seguridad especiales. Este consumidor estándar debe configurarlo un miembro local del grupo administradores en el equipo local. Si utiliza una cuenta de dominio para crear la suscripción, la cuenta LocalSystem debe tener los permisos necesarios en el dominio para comprobar que el creador es miembro del grupo de administradores locales.
+> La [**clase CommandLineEventConsumer tiene**](commandlineeventconsumer.md) restricciones de seguridad especiales. Un miembro local del grupo Administradores del equipo local debe configurar este consumidor estándar. Si usa una cuenta de dominio para crear la suscripción, la cuenta LocalSystem debe tener los permisos necesarios en el dominio para comprobar que el creador es miembro del grupo de administradores local.
 >
 > [**CommandLineEventConsumer**](commandlineeventconsumer.md) no se puede usar para iniciar un proceso que se ejecuta de forma interactiva.
 
  
 
-En el procedimiento siguiente se describe cómo crear un consumidor de eventos que ejecute un proceso desde una línea de comandos.
+En el procedimiento siguiente se describe cómo crear un consumidor de eventos que ejecuta un proceso desde una línea de comandos.
 
-**Para crear un consumidor de eventos que ejecute un proceso desde una línea de comandos**
+**Para crear un consumidor de eventos que ejecuta un proceso desde una línea de comandos**
 
-1.  En el archivo Managed Object Format (MOF), cree una instancia de [**CommandLineEventConsumer**](commandlineeventconsumer.md) para recibir los eventos que solicita en la consulta. Para obtener más información, vea [diseñar clases Managed Object Format (MOF)](designing-managed-object-format--mof--classes.md).
-2.  Cree una instancia de [**\_ \_ EventFilter**](--eventfilter.md) y asígnele un nombre.
-3.  Cree una consulta para especificar el tipo de evento. Para obtener más información, vea [consultas con WQL](querying-with-wql.md).
+1.  En el Managed Object Format (MOF), cree una instancia de [**CommandLineEventConsumer**](commandlineeventconsumer.md) para recibir los eventos que solicita en la consulta. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes .](designing-managed-object-format--mof--classes.md)
+2.  Cree una instancia de [**\_ \_ EventFilter**](--eventfilter.md) y asíéctele un nombre.
+3.  Cree una consulta para especificar el tipo de evento. Para obtener más información, [vea Consulta con WQL.](querying-with-wql.md)
 4.  Cree una instancia de [**\_ \_ FilterToConsumerBinding**](--filtertoconsumerbinding.md) para asociar el filtro a la instancia de [**CommandLineEventConsumer**](commandlineeventconsumer.md).
 5.  Compile el archivo MOF mediante [**Mofcomp.exe**](mofcomp.md).
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo de código siguiente se crea una nueva clase denominada "MyCmdLineConsumer" para generar eventos cuando se crea una instancia de la nueva clase al final de un MOF. El ejemplo está en código MOF, pero puede crear las instancias mediante programación con la [API de scripting para WMI](scripting-api-for-wmi.md) o la [API com para WMI](com-api-for-wmi.md).
+En el ejemplo de código siguiente se crea una nueva clase denominada "MyCmdLineConsumer" para generar eventos cuando se crea una instancia de la nueva clase al final de un MOF. El ejemplo está en código MOF, pero puede crear las instancias mediante programación mediante [scripting API](scripting-api-for-wmi.md) para WMI o la API COM [para WMI.](com-api-for-wmi.md)
 
 En el procedimiento siguiente se describe cómo crear una nueva clase denominada MyCmdLineConsumer.
 
 **Para crear una nueva clase denominada MyCmdLineConsumer**
 
-1.  Cree el archivo c: \\ cmdline \_test.bat con un comando que ejecute un programa visible, como "calc.exe".
-2.  Copie el MOF en un archivo de texto y guárdelo con la extensión. mof.
-3.  En un ventana Comandos, compile el archivo MOF con el siguiente comando: **MOFCOMP FILENAME. mof**.
+1.  Cree el archivo c: cmdlinetest.bat con un comando que ejecute \\ \_ un programa visible, como "calc.exe".
+2.  Copie el MOF en un archivo de texto y guárdelo con una extensión .mof.
+3.  En una ventana Comandos, compile el archivo MOF mediante el siguiente comando: **Mofcomp filename.mof**.
 
 > [!Note]  
-> Se debe ejecutar el programa especificado en el \_test.bat cmdline.
+> El programa especificado en cmdline \_test.bat ejecutar.
 
  
 

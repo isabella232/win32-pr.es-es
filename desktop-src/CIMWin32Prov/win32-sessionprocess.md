@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI SessionProcess Association de Win32 representa una asociación entre una sesión de inicio de sesión y los procesos asociados a esa sesión.
+description: La clase WMI de asociación SessionProcess de Win32 representa una asociación entre una sesión de inicio de sesión \_ y los procesos asociados a esa sesión.
 ms.assetid: 19d4ecf9-27b5-4a0b-9c76-7d10679aaf5e
 ms.tgt_platform: multiple
-title: Win32_SessionProcess (clase)
+title: Win32_SessionProcess clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f4090da88e8f5d31b0940b0c7d217a930a364b63
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f31473cf1efa0310669523f0481b58d8b54036f738a69191f19a0a52d804eb05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118416820"
 ---
-# <a name="win32_sessionprocess-class"></a>\_Clase Win32 SessionProcess
+# <a name="win32_sessionprocess-class"></a>Clase SessionProcess de Win32 \_
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ SessionProcess** Association de Win32 representa una asociación entre una sesión de inicio de sesión y los procesos asociados a esa sesión.
+La clase WMI **de asociación \_ SessionProcess** [de](../wmisdk/retrieving-a-class.md) Win32 representa una asociación entre una sesión de inicio de sesión y los procesos asociados a esa sesión.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
@@ -61,52 +61,52 @@ Tipo de datos: **Win32 \_ LogonSession**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidar**](../wmisdk/standard-qualifiers.md) ("antecedente"), [**clave**](../wmisdk/key-qualifier.md)
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("Antecedente"), [**Key**](../wmisdk/key-qualifier.md)
 </dt> </dl>
 
-[**\_ LogonSession de Win32**](win32-logonsessionmappeddisk.md) que representa la sesión relacionada con el proceso.
+Una [**\_ LogonSession de Win32**](win32-logonsessionmappeddisk.md) que representa la sesión que está relacionada con el proceso.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ proceso Win32**
+Tipo de datos: **Proceso win32 \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidar**](../wmisdk/standard-qualifiers.md) ("dependiente"), [**clave**](../wmisdk/key-qualifier.md)
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("Dependent"), [**Key**](../wmisdk/key-qualifier.md)
 </dt> </dl>
 
-[**\_ Proceso de Win32**](win32-processor.md) que representa el proceso asociado a la sesión.
+Proceso [**win32 \_ que**](win32-processor.md) representa el proceso asociado a la sesión.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**Win32 \_ SessionProcess** devuelve todas las sesiones para el administrador cuando se inicia sesión con privilegios elevados o cuando se ejecuta de forma remota. Se trata de una extensión del comportamiento de la clase.
+**Win32 \_ SessionProcess** devuelve toda la sesión del administrador cuando se inicia sesión con privilegios elevados o cuando se ejecuta de forma remota. Se trata de una extensión para el comportamiento de la clase .
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Win32 \_ SessionResource**](win32-sessionresource.md)
+[**SessionResource de Win32 \_**](win32-sessionresource.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

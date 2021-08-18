@@ -15,25 +15,25 @@ ms.locfileid: "118547897"
 
 En los pasos siguientes se describe un procedimiento general para implementar un dispensador de recursos COM+:
 
-1.  Decida el **formato RESTYPID** que clasifica en qué se diferencian los recursos entre sí.
+1.  Decida el **formato RESTYPID** que clasifica cómo se diferencian entre sí los recursos.
 
 2.  Use el archivo de encabezado Mtxdm.h y Mtxdm.lib y la biblioteca, respectivamente.
 
 3.  Compile un archivo DLL que implemente la [**interfaz IDispenserDriver**](/windows/desktop/api/ComSvcs/nn-comsvcs-idispenserdriver) y la API que desea exponer a las aplicaciones.
 
-4.  En el inicio [*(DllMain o*](/windows/desktop/Dlls/dllmain) la primera llamada a la API del distribuidor), llame a la [**función GetDispenserManager.**](/windows/desktop/api/MtxDM/nf-mtxdm-getdispensermanager) Esto devuelve un puntero a la interfaz [**IDispenserManager**](/windows/desktop/api/ComSvcs/nn-comsvcs-idispensermanager) del administrador del dispensador.
+4.  En el inicio [*(DllMain o*](/windows/desktop/Dlls/dllmain) la primera llamada a la API de dispensador), llame a la [**función GetDispenserManager.**](/windows/desktop/api/MtxDM/nf-mtxdm-getdispensermanager) Esto devuelve un puntero a la interfaz [**IDispenserManager**](/windows/desktop/api/ComSvcs/nn-comsvcs-idispensermanager) del administrador del dispensador.
 
-5.  Llame a [**IDispenserManager::RegisterDispenser**](/windows/desktop/api/ComSvcs/nf-comsvcs-idispensermanager-registerdispenser), pasando un puntero a la implementación de [**IDispenserDriver**](/windows/desktop/api/ComSvcs/nn-comsvcs-idispenserdriver). Esto hace que el administrador del distribuidor cree un titular (administrador de agrupación) para el dispensador de recursos y, a continuación, devuelva el puntero a la [**interfaz IHolder.**](/windows/desktop/api/ComSvcs/nn-comsvcs-iholder)
+5.  Llame [**a IDispenserManager::RegisterDispenser**](/windows/desktop/api/ComSvcs/nf-comsvcs-idispensermanager-registerdispenser)y pase un puntero a la implementación de [**IDispenserDriver**](/windows/desktop/api/ComSvcs/nn-comsvcs-idispenserdriver). Esto hace que el administrador de dispensador cree un titular (administrador de agrupación) para el dispensador de recursos y, a continuación, devuelva el puntero a la [**interfaz IHolder.**](/windows/desktop/api/ComSvcs/nn-comsvcs-iholder)
 
 6.  Almacene este puntero para que pueda llamar a [**IHolder::AllocResource**](/windows/desktop/api/ComSvcs/nf-comsvcs-iholder-allocresource) e [**IHolder::FreeResource**](/windows/desktop/api/ComSvcs/nf-comsvcs-iholder-freeresource).
 
-7.  Ahora puede (en respuesta a las llamadas a la API) realizar llamadas a [**AllocResource**](/windows/desktop/api/ComSvcs/nf-comsvcs-iholder-allocresource) y [**FreeResource.**](/windows/desktop/api/ComSvcs/nf-comsvcs-iholder-freeresource) **AllocResource responde** inicialmente llamando de nuevo al método [**CreateResource,**](/windows/desktop/api/ComSvcs/nf-comsvcs-idispenserdriver-createresource) pero las llamadas a **AllocResource** posteriores se atendidas desde el creciente grupo de recursos.
+7.  Ahora puede (en respuesta a las llamadas a la API) realizar llamadas a [**AllocResource**](/windows/desktop/api/ComSvcs/nf-comsvcs-iholder-allocresource) y [**FreeResource**](/windows/desktop/api/ComSvcs/nf-comsvcs-iholder-freeresource). **AllocResource responde** inicialmente llamando de nuevo al método [**CreateResource,**](/windows/desktop/api/ComSvcs/nf-comsvcs-idispenserdriver-createresource) pero las llamadas **a AllocResource** posteriores se atendidas desde el creciente grupo de recursos.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Conceptos del distribuidor de recursos com+](com--resource-dispenser-concepts.md)
+[Conceptos del dispensador de recursos com+](com--resource-dispenser-concepts.md)
 </dt> <dt>
 
 [Interfaces de dispensador de recursos COM+](com--resource-dispenser-interfaces.md)

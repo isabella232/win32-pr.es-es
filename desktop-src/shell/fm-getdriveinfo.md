@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 142fff71-3a1b-4197-8c06-2e981cce4e4f
-ms.openlocfilehash: 0abac794ed23eca30676a839a6eb5ad7c1079c3c
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 39df15a4522e863fada40d3c964d709f40d2a26d01240aaefe51b09924b8c9ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118459125"
 ---
 # <a name="fm_getdriveinfo-message"></a>Mensaje \_ GETDRIVEINFO de FM
 
@@ -40,9 +40,9 @@ Dirección de una estructura [**\_ GETDRIVEINFO de FMS**](fms-getdriveinfo.md) q
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve distinto de cero.
+Devuelve un valor distinto de cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si 0xFFFFFFFF en el **miembro dwTotalSpace** o **dwFreeSpace** de la estructura [**\_ GETDRIVEINFO de FMS,**](fms-getdriveinfo.md) la biblioteca de extensiones debe calcular el valor o los valores.
 
@@ -50,7 +50,7 @@ Si 0xFFFFFFFF en el **miembro dwTotalSpace** o **dwFreeSpace** de la estructura 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |

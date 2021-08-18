@@ -47,7 +47,7 @@ Identificador del contexto del dispositivo para la página de ejemplo.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**RECT**](/previous-versions//dd162897(v=vs.85)) que contiene las coordenadas, en píxeles, del rectángulo de margen mínimo.
+Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que contiene las coordenadas, en píxeles, del rectángulo de margen mínimo.
 
 </dd> </dl>
 

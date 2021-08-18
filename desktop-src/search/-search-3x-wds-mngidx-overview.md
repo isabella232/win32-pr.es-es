@@ -1,5 +1,5 @@
 ---
-description: Obtenga información sobre cómo administrar el Windows Search con el Administrador de búsqueda, el Administrador de catálogos y Administrador del ámbito de rastreo.
+description: Obtenga información sobre cómo administrar Windows search con el Administrador de búsqueda, el Administrador de catálogos y Administrador del ámbito de rastreo.
 ms.assetid: 345d1159-aa51-4a01-9831-216075a8fb78
 title: Administración del índice
 ms.topic: article
@@ -24,8 +24,8 @@ Esta sección se organiza de la siguiente manera:
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
-- Para ver los paneles de mensajes de preguntas y discusión admitidos por la comunidad sobre las tecnologías de búsqueda, vea Foro de [MSDN: desarrollo de Windows de búsqueda de escritorio.](https://social.msdn.microsoft.com/Forums/windowsdesktopsearchdevelopment/threads)
-- Para descargar los ejemplos de código del SDK de Búsqueda:
+- Para ver los paneles de mensajes de preguntas y discusión admitidos por la comunidad sobre las tecnologías de búsqueda, vea [Foro de MSDN: Windows desarrollo](https://social.msdn.microsoft.com/Forums/windowsdesktopsearchdevelopment/threads)de búsqueda de escritorio.
+- Para descargar los ejemplos de código del SDK de Search:
   - [Windows Ejemplos de búsqueda en la Galería de código](./-search-samples-ovw.md)
 - Para descargar el SDK Windows:
   - Para Windows 10: [WINDOWS 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk)

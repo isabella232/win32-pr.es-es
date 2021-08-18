@@ -1,5 +1,5 @@
 ---
-description: Se llama cuando no se usó el certificado devuelto por la devolución de llamada CertStoreProvFindCRL y, por tanto, se libera, en una llamada subsiguiente a CertStoreProvFindCRL.
+description: Se llama cuando no se usa el certificado devuelto por la devolución de llamada CertStoreProvFindCRL y, por tanto, se libera, en una llamada posterior a CertStoreProvFindCRL.
 ms.assetid: e90609f6-63cd-40eb-bd5a-289473daa5bb
 title: Función de devolución de llamada CertStoreProvFreeFindCRL
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: b5f5443d58a86c8bab979d17d64dc693d94ae373
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1bf7e3b2518789bdf3755cefec0dcc27c88642c376cafca039ce5cc20533a068
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117769940"
 ---
 # <a name="certstoreprovfreefindcrl-callback-function"></a>Función de devolución de llamada CertStoreProvFreeFindCRL
 
-Se llama a la función de devolución de llamada **CertStoreProvFreeFindCRL** cuando no se usó el certificado devuelto por la devolución de llamada [**CertStoreProvFindCRL**](certstoreprovfindcrl.md) y, por tanto, se libera, en una llamada subsiguiente a **CertStoreProvFindCRL**. Antes de que se llame a la devolución de llamada de cierre, el proveedor debe liberar todos los certificados devueltos por la devolución de llamada de [**CertStoreProvFindCRL**](certstoreprovfindcrl.md) mediante **CertStoreProvFindCRL** o **CertStoreProvFreeFindCRL**.
+Se llama a la función de devolución de llamada **CertStoreProvFreeFindCRL** cuando no se usó el certificado devuelto por la devolución de llamada [**CertStoreProvFindCRL**](certstoreprovfindcrl.md) y, por tanto, se liberó en una llamada posterior a **CertStoreProvFindCRL**. Antes de llamar a la devolución de llamada CLOSE, el proveedor debe liberar todos los certificados devueltos por la devolución de llamada [**CertStoreProvFindCRL**](certstoreprovfindcrl.md) mediante **CertStoreProvFindCRL** o **CertStoreProvFreeFindCRL.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,37 +41,37 @@ BOOL WINAPI CertStoreProvFreeFindCRL(
 
 <dl> <dt>
 
-*hStoreProv* \[ de\]
+*hStoreProv* \[ En\]
 </dt> <dd>
 
-Identificador de **HCERTSTOREPROV** de un [*almacén de certificados*](../secgloss/c-gly.md).
+**Identificador de HCERTSTOREPROV** a un [*almacén de certificados*](../secgloss/c-gly.md).
 
 </dd> <dt>
 
-*pCrlContext* \[ de\]
+*pCrlContext* \[ En\]
 </dt> <dd>
 
-Un puntero a un [**\_ contexto de CRL**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context).
+Puntero a UN [**CONTEXTO DE \_ CRL.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
 
 </dd> <dt>
 
-*pvStoreProvFindInfo* \[ de\]
+*pvStoreProvFindInfo* \[ En\]
 </dt> <dd>
 
-Un puntero a un búfer que contiene información de búsqueda.
+Puntero a un búfer que contiene información de buscar.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Los valores de marca necesarios.
+Cualquier valor de marca necesario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si la función se ejecuta correctamente o **false** si se produce un error.
+Devuelve **TRUE** si la función se realiza correctamente o **FALSE** si se produce un error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,19 +79,19 @@ Devuelve **true** si la función se ejecuta correctamente o **false** si se prod
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**CertStoreProvFindCRL**](certstoreprovfindcrl.md)
 </dt> <dt>
 
-[**contexto de CRL \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
+[**CONTEXTO \_ DE CRL**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
 </dt> </dl>
 
  

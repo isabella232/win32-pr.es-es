@@ -1,9 +1,9 @@
 ---
 title: onendmove
-description: El controlador de eventos onendmove controla un evento que se produce cuando un elemento completa una operación moveTo.
+description: El controlador de eventos onendmove controla un evento que tiene lugar cuando un elemento completa una operación moveTo.
 ms.assetid: d0891e3d-6342-4d19-903e-c14e05ae3ba8
 keywords:
-- onendmove Windows Media Player
+- onendmove Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 047055a06f2f96e30254c780d71d9ed027ee3c3b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dca7e73816ea6380d404549248d0928fbbd13af8dcb0a20b6996b5ee3da36710
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747863"
 ---
 # <a name="onendmove"></a>onendmove
 
-El controlador de eventos **onendmove** controla un evento que se produce cuando un elemento completa una operación moveTo.
+El **controlador de eventos onendmove** controla un evento que tiene lugar cuando un elemento completa una operación moveTo.
 
 ``` syntax
 onendmove
@@ -34,7 +34,7 @@ onendmove
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
@@ -42,10 +42,10 @@ onendmove
 
 <dl> <dt>
 
-[**Controladores de eventos de ambiente**](ambient-event-handlers.md)
+[**Controladores de eventos ambiente**](ambient-event-handlers.md)
 </dt> <dt>
 
-[**AmbientAttributes. moveTo**](ambientattributes-moveto.md)
+[**AmbientAttributes.moveTo**](ambientattributes-moveto.md)
 </dt> </dl>
 
  

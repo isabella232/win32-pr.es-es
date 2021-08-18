@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: clase Windows7Param'
-title: Clase Windows7Param (Microsoft. ISAM. esent. Interop. Windows7)
+description: 'Más información sobre: Clase Windows7Param'
+title: Clase Windows7Param (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: Windows7Param class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows7.Windows7Param
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.windows7param(v=EXCHG.10)
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 03ca3c42059fcd37a059a5f96b7f5ac83472c0f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24a7be76c9d5d81927a278e67829cb8225a55ac1a42c0410455e1043695c6e54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117889499"
 ---
 # <a name="windows7param-class"></a>Clase Windows7Param
 
-Parámetros del sistema que se han agregado a la versión de Windows 7 de ESENT.
+Parámetros del sistema que se han agregado a la versión Windows 7 de ESENT.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. Windows7. Windows7Param  
+  Microsoft.Isam.Esent.Interop.Windows7.Windows7Param  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -66,4 +66,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de Windows7Param](./windows7param-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 3e11c4cb52176b0a144e164501f8c70d1e3678c1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 49a1643e97ad4b177f2bc2e18d4e11f660ceab1fa1ab5293c1ab88dc2236334c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118540924"
 ---
 # <a name="d3dx10getimageinfofromfile-function"></a>Función D3DX10GetImageInfoFromFile
 
@@ -48,7 +48,7 @@ HRESULT D3DX10GetImageInfoFromFile(
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Nombre de archivo de la imagen sobre la que recuperar información. Si se definen UNICODE o UNICODE, este tipo de parámetro \_ es LPCWSTR; de lo contrario, el tipo es LPCSTR.
+Nombre de archivo de la imagen sobre la que recuperar información. Si se definen \_ UNICODE o UNICODE, este tipo de parámetro es LPCWSTR; de lo contrario, el tipo es LPCSTR.
 
 </dd> <dt>
 
@@ -57,16 +57,16 @@ Nombre de archivo de la imagen sobre la que recuperar información. Si se define
 
 Tipo: **[ **ID3DX10ThreadPump**](id3dx10threadpump.md)\***
 
-Bomba de subproceso opcional que se puede usar para cargar la información de forma asincrónica. Puede ser **NULL.** Vea [**ID3DX10ThreadPump.**](id3dx10threadpump.md)
+Bombeo de subprocesos opcional que se puede usar para cargar la información de forma asincrónica. Puede ser **NULL.** Vea [**ID3DX10ThreadPump**](id3dx10threadpump.md).
 
 </dd> <dt>
 
 *pSrcInfo* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **INFORMACIÓN DE \_ IMAGEN \_ D3DX10**](d3dx10-image-info.md)\***
+Tipo: **[ **D3DX10 \_ IMAGE \_ INFO**](d3dx10-image-info.md)\***
 
-Puntero a una estructura DE INFORMACIÓN DE IMAGEN D3DX10 que se va a rellenar con la descripción de \_ los datos del archivo de \_ origen.
+Puntero a una estructura DE INFORMACIÓN DE IMAGEN de D3DX10 que se va a rellenar con la descripción de \_ los datos del archivo de \_ origen.
 
 </dd> <dt>
 

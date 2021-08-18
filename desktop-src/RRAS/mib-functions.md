@@ -1,6 +1,6 @@
 ---
-title: Funciones miB de administración de enrutadores
-description: Use las siguientes funciones del administrador de enrutadores para consultar y establecer variables de MIB.
+title: Funciones MIB de administración de enrutadores
+description: Use las siguientes funciones del administrador de enrutadores para consultar y establecer variables MIB.
 ms.assetid: c911daa4-4f3d-4944-9dc0-695a4efbcb1b
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117790449"
 ---
-# <a name="router-management-mib-functions"></a>Funciones miB de administración de enrutadores
+# <a name="router-management-mib-functions"></a>Funciones MIB de administración de enrutadores
 
-Use las siguientes funciones del administrador de enrutadores para consultar y establecer variables de MIB:
+Use las siguientes funciones del administrador de enrutadores para consultar y establecer variables MIB:
 
 -   [**MprAdminMIBBufferFree**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminmibbufferfree)
 -   [**MprAdminMIBEntryCreate**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminmibentrycreate)

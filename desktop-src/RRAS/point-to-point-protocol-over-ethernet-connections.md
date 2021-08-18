@@ -1,6 +1,6 @@
 ---
 title: Protocolo punto a punto a través de conexiones Ethernet
-description: Windows Server 2003, Windows XP y sistemas operativos posteriores proporcionan compatibilidad con Protocolo punto a punto a través de Ethernet (PPPoE). Para una conexión PPPoE, establezca los siguientes valores en la estructura RASENTRY.
+description: Windows Server 2003, Windows XP y sistemas operativos posteriores proporcionan compatibilidad con Protocolo punto a punto a través de Ethernet (PPPoE). Para una conexión PPPoE, establezca los valores siguientes en la estructura RASENTRY.
 ms.assetid: abdbf22c-abeb-4363-bfa6-e0002d1637f4
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "117789815"
 ---
 # <a name="point-to-point-protocol-over-ethernet-connections"></a>Protocolo punto a punto a través de conexiones Ethernet
 
-Windows Server 2003, Windows XP y sistemas operativos posteriores proporcionan compatibilidad con Protocolo punto a punto a través de Ethernet (PPPoE). Para una conexión PPPoE, establezca los siguientes valores en la [**estructura RASENTRY.**](/previous-versions/windows/desktop/legacy/aa377274(v=vs.85))
+Windows Server 2003, Windows XP y sistemas operativos posteriores proporcionan compatibilidad con Protocolo punto a punto a través de Ethernet (PPPoE). Para una conexión PPPoE, establezca los valores siguientes en la [**estructura RASENTRY.**](/previous-versions/windows/desktop/legacy/aa377274(v=vs.85))
 
 
 
@@ -29,7 +29,7 @@ Windows Server 2003, Windows XP y sistemas operativos posteriores proporcionan c
 
 Use la [**función RasSetEntryProperties**](/windows/desktop/api/Ras/nf-ras-rassetentrypropertiesa) para establecer estos valores.
 
-También puede usar [**RasEntryDlg**](/windows/desktop/api/Rasdlg/nf-rasdlg-rasentrydlga) y la marca RASEDFLAG \_ NewBroadbandEntry para [**RASENTRYDLG**](/windows/desktop/api/Rasdlg/nf-rasdlg-rasentrydlga) para mostrar un asistente para crear una entrada de la guía telefónica PPPoE.
+También puede usar [**RasEntryDlg**](/windows/desktop/api/Rasdlg/nf-rasdlg-rasentrydlga) y la marca RASEDFLAG \_ NewBroadbandEntry para [**RASENTRYDLG**](/windows/desktop/api/Rasdlg/nf-rasdlg-rasentrydlga) para mostrar un asistente para crear una entrada de la libreta de teléfonos PPPoE.
 
  
 

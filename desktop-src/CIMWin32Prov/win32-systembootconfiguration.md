@@ -27,7 +27,7 @@ ms.locfileid: "118416758"
 
 La clase WMI **de asociación \_ SystemBootConfiguration** [de](../wmisdk/retrieving-a-class.md) Win32 relaciona un sistema informático y su configuración de arranque.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -106,7 +106,7 @@ La **clase \_ SystemBootConfiguration de Win32** se deriva de [**\_ SystemSettin
 
 <dl> <dt>
 
-[**Win32 \_ SystemSetting**](win32-systemsetting.md)
+[**SystemSetting de Win32 \_**](win32-systemsetting.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

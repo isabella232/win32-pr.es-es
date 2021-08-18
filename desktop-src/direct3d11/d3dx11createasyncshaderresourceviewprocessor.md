@@ -1,6 +1,6 @@
 ---
 title: Función D3DX11CreateAsyncShaderResourceViewProcessor (D3DX11async.h)
-description: 'Nota: La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.'
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store.
 ms.assetid: bd9349af-f433-47f9-b443-3049c32fc286
 keywords:
 - Función D3DX11CreateAsyncShaderResourceViewProcessor Direct3D 11
@@ -81,7 +81,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 No hay ninguna implementación del cargador asincrónico fuera de D3DX 10 y D3DX 11.
 
@@ -100,7 +100,7 @@ En el caso de las aplicaciones de escritorio win32, puede usar el Runtime de sim
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

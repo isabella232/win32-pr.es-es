@@ -10,25 +10,25 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5eb3d203cff5bca7e5096082cca7ba531580ae27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b7577639bd215fc051c2f1303e74fe946341a31c4b6708f881c3c9fabae2372
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118557782"
 ---
-# <a name="include"></a>' #include '
-/* Title: MyMof. mof                           *//*   title: MyMof2. mof */
+# <a name="include"></a>'#include'
+/* Título: MyMof.Mof                           */ /*   Title: MyMof2.Mof */
 
-El \# comando incluir preprocesador incluye el contenido de un archivo MOF en otro archivo MOF. En el ejemplo de código siguiente se describe la sintaxis del \# comando include.
+El \# comando include preprocessor incluye el contenido de un archivo MOF en otro archivo MOF. En el ejemplo de código siguiente se describe la sintaxis del \# comando include.
 
 ``` syntax
 #include ("Moffile.mof")
 ```
 
-En el ejemplo anterior, Moffile. mof es el nombre del archivo MOF que se va a incluir.
+En el ejemplo anterior, Moffile.mof es el nombre del archivo MOF que se va a incluir.
 
-En el ejemplo siguiente se muestran dos archivos MOF. Al compilar el primer archivo MOF, el compilador compila automáticamente el segundo archivo MOF (Mymof2. mof) en la ubicación donde se coloca la \# instrucción include.
+En el ejemplo siguiente se muestran dos archivos MOF. Al compilar el primer archivo MOF, el compilador compila automáticamente el segundo archivo MOF (Mymof2.mof) en la ubicación donde se coloca la \# instrucción include.
 
 ``` syntax
 /*   Title: MyMof.Mof                           */

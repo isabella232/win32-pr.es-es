@@ -1,5 +1,5 @@
 ---
-description: Contiene un objeto para cada propiedad del publicador para la colección subscriptionsForComponent primaria.
+description: Contiene un objeto para cada propiedad del publicador para la colección principal SubscriptionsForComponent.
 ms.assetid: 7699c258-ca11-4652-b2f7-b2f2307c01fc
 title: Colección PublisherProperties
 ms.topic: reference
@@ -21,7 +21,7 @@ ms.locfileid: "118547168"
 ---
 # <a name="publisherproperties-collection"></a>Colección PublisherProperties
 
-Contiene un objeto para cada propiedad del publicador para la colección [**subscriptionsForComponent**](subscriptionsforcomponent.md) primaria.
+Contiene un objeto para cada propiedad del publicador para la colección [**principal SubscriptionsForComponent.**](subscriptionsforcomponent.md)
 
 Esta colección admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**y Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
@@ -43,7 +43,7 @@ Puede navegar a esta colección desde las siguientes colecciones:
 
 ## <a name="properties"></a>Propiedades
 
-El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección admite las siguientes propiedades:
+El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades dentro de la colección:
 
 -   [Nombre](#name)
 -   [Valor](#value)
@@ -52,10 +52,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | El nombre de la propiedad. Se quitan los espacios adicionales al principio y al final de la cadena. Esta propiedad se devuelve cuando se llama al método de propiedad [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
-| Acceso         | WriteOnce                                                                                                                                                                                                                                                              |
+| Access         | WriteOnce                                                                                                                                                                                                                                                              |
 | Tipo           | String                                                                                                                                                                                                                                                                 |
 | Predeterminado        | "Nueva propiedad"                                                                                                                                                                                                                                                         |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                           |
@@ -64,14 +64,14 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
  
 
-### <a name="value"></a>Value
+### <a name="value"></a>Valor
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |----------------|---------------------------|
 | Descripción    | Valor de la propiedad . |
-| Acceso         | ReadWrite                 |
+| Access         | ReadWrite                 |
 | Tipo           | Variante                   |
 | Valor predeterminado        | N/D                       |
 | Sistema mínimo | Windows 2000              |
@@ -80,7 +80,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
 title: D3DX11_IMAGE_FILE_FORMAT enumeración (D3DX11tex.h)
-description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Formatos de archivo de imagen admitidos por las funciones D3DX11Createxxx y D3DX11Savexxx.
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store. Formatos de archivo de imagen admitidos por las funciones D3DX11Createxxx y D3DX11Savexxx.
 ms.assetid: 89fa9ab8-3be0-4dc5-a533-94edb01df36a
 keywords:
 - D3DX11_IMAGE_FILE_FORMAT enumeración Direct3D 11
@@ -31,7 +31,7 @@ ms.locfileid: "118536969"
 
 Formatos de archivo de imagen admitidos por las funciones D3DX11Createxxx y D3DX11Savexxx.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -56,28 +56,28 @@ typedef enum D3DX11_IMAGE_FILE_FORMAT {
 <span id="D3DX11_IFF_BMP"></span><span id="d3dx11_iff_bmp"></span>**D3DX11 \_ IFF \_ BMP**
 </dt> <dd>
 
-Windows formato de archivo de mapa de bits (BMP). Contiene un encabezado que describe la resolución del dispositivo en el que se creó el rectángulo de píxeles, las dimensiones del rectángulo, el tamaño de la matriz de bits, una paleta lógica y una matriz de bits que define la relación entre los píxeles de la imagen de mapa de bits y las entradas de la paleta lógica. La extensión de archivo para este formato es .bmp.
+Windows de archivo de mapa de bits (BMP). Contiene un encabezado que describe la resolución del dispositivo en el que se creó el rectángulo de píxeles, las dimensiones del rectángulo, el tamaño de la matriz de bits, una paleta lógica y una matriz de bits que define la relación entre los píxeles de la imagen de mapa de bits y las entradas de la paleta lógica. La extensión de archivo para este formato es .bmp.
 
 </dd> <dt>
 
 <span id="D3DX11_IFF_JPG"></span><span id="d3dx11_iff_jpg"></span>**D3DX11 \_ IFF \_ JPG**
 </dt> <dd>
 
-Formato de archivo comprimido del Grupo de expertos en fotografía conjunta (JPEG). Especifica la compresión variable de los archivos de documento de color RGB de 24 bits y de escala Tagged Image File Format gris (TIFF) de 8 bits. La extensión de archivo para este formato es .jpg.
+Formato de archivo comprimido del Grupo de expertos en fotografía conjunta (JPEG). Especifica la compresión variable de los archivos de documento de imagen de color RGB de 24 bits y de escala de Tagged Image File Format gris de 8 bits (TIFF). La extensión de archivo para este formato es .jpg.
 
 </dd> <dt>
 
 <span id="D3DX11_IFF_PNG"></span><span id="d3dx11_iff_png"></span>**D3DX11 \_ IFF \_ PNG**
 </dt> <dd>
 
-Formato de archivo portable de gráficos de red (PNG). Formato de mapa de bits no propietario que usa la compresión sin pérdida. La extensión de archivo para este formato es .png.
+Formato de archivo portable de gráficos de red (PNG). Formato de mapa de bits no propietario que usa compresión sin pérdida. La extensión de archivo para este formato es .png.
 
 </dd> <dt>
 
 <span id="D3DX11_IFF_DDS"></span><span id="d3dx11_iff_dds"></span>**D3DX11 \_ IFF \_ DDS**
 </dt> <dd>
 
-Formato de archivo de la superficie de DirectDraw (DDS). Almacena texturas, texturas de volumen y mapas de entornos cúbicas, con o sin niveles de mapa mipmap y con o sin compresión de píxeles. La extensión de archivo para este formato es .dds.
+Formato de archivo de superficie de DirectDraw (DDS). Almacena texturas, texturas de volumen y mapas de entornos cúbicas, con o sin niveles de mapa mipmap y con o sin compresión de píxeles. La extensión de archivo para este formato es .dds.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Tagged Image File Format (TIFF). Las extensiones de archivo para este formato so
 
 </dd> <dt>
 
-<span id="D3DX11_IFF_GIF"></span><span id="d3dx11_iff_gif"></span>**GIF de IFF de D3DX11 \_ \_**
+<span id="D3DX11_IFF_GIF"></span><span id="d3dx11_iff_gif"></span>**GIF DE IFF D3DX11 \_ \_**
 </dt> <dd>
 
 Formato de intercambio de gráficos (GIF). La extensión de archivo para este formato es .gif.
@@ -107,13 +107,13 @@ Para que funcione correctamente, **D3DX11 \_ IFF \_ WMP** requiere que inicialic
 <span id="D3DX11_IFF_FORCE_DWORD"></span><span id="d3dx11_iff_force_dword"></span>**D3DX11 \_ IFF \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase en un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Vea [Tipos de mapas de bits (GDI+) para](../gdiplus/-gdiplus-types-of-bitmaps-about.md) obtener más información sobre algunos de estos formatos.
+Consulte [Tipos de mapas de bits (GDI+) para](../gdiplus/-gdiplus-types-of-bitmaps-about.md) obtener más información sobre algunos de estos formatos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -125,7 +125,7 @@ Vea [Tipos de mapas de bits (GDI+) para](../gdiplus/-gdiplus-types-of-bitmaps-ab
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -13,12 +13,12 @@ ms.locfileid: "117791611"
 ---
 # <a name="completion-notifications"></a>Notificaciones de finalización
 
-El acceso remoto Connection Manager las notificaciones de progreso hasta que se haya completado la operación de conexión. Esto se produce en las situaciones siguientes:
+El acceso remoto Connection Manager las notificaciones de progreso hasta que se haya completado la operación de conexión. Esto sucede en las situaciones siguientes:
 
 -   El controlador recibe una notificación RASCS \_ Connected o RASCS \_ Disconnected. La aplicación cliente RAS puede salir sin que se rompa ninguna conexión establecida.
 -   Se produce un error. El controlador recibe una notificación que indica el error y el estado de conexión cuando se produjo el error. La aplicación cliente RAS puede salir.
 
-La aplicación cliente RAS no debe asumir que la operación de conexión se ha completado después de llamar a [**RasHangUp.**](/windows/desktop/api/Ras/nf-ras-rashangupa) Debe esperar una de las condiciones anteriores antes de salir.
+La aplicación cliente RAS no debe asumir que la operación de conexión se ha completado después de llamar a [**RasHangUp**](/windows/desktop/api/Ras/nf-ras-rashangupa). Debe esperar una de las condiciones anteriores antes de salir.
 
  
 

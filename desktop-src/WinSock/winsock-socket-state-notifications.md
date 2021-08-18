@@ -3,40 +3,40 @@ title: Notificaciones de estado de socket de Winsock
 description: Las API de notificaciones de estado de socket proporcionan una manera escalable y eficaz de obtener notificaciones sobre los cambios de estado del socket. Esto incluye notificaciones sobre aspectos como lectura sin bloqueo, escritura sin bloqueo, condiciones de error y otra información.
 ms.topic: article
 ms.date: 11/18/2020
-ms.openlocfilehash: 9ad7f7afcb3dda223b4d54af293bc9a4dd019758
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: ed0bd6e37117377f91dc01cb56225b8c268cd87a0148d9ad05c2fd1a8f005f68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110559991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118558718"
 ---
 # <a name="winsock-socket-state-notifications"></a>Notificaciones de estado de socket de Winsock
 
 ## <a name="introduction"></a>Introducción
 
-Las API de notificaciones de estado de socket de la tabla siguiente proporcionan una manera escalable y eficaz de obtener notificaciones sobre los cambios de estado del socket (eficaz en términos de CPU y memoria). Esto incluye notificaciones sobre aspectos como lectura sin bloqueo, escritura sin bloqueo, condiciones de error y otra información.
+Las API de notificaciones de estado de socket de la tabla siguiente proporcionan una manera escalable y eficaz de obtener notificaciones sobre los cambios de estado de socket (eficaz en términos de CPU y memoria). Esto incluye notificaciones sobre aspectos como lectura sin bloqueo, escritura sin bloqueo, condiciones de error y otra información.
 
 |API|Descripción|
 |-|-|
 |[**Función ProcessSocketNotifications**](/windows/win32/api/winsock2/nf-winsock2-processsocketnotifications)|Asocia un conjunto de sockets a un puerto de finalización y recupera las notificaciones que ya están pendientes en ese puerto. Una vez asociado, el puerto de finalización recibe las notificaciones de estado de socket que se especificaron.|
 |[**SOCK_NOTIFY_REGISTRATION**](/windows/win32/api/winsock2/ns-winsock2-sock_notify_registration) estructura|Representa la información proporcionada a la **función ProcessSocketNotifications.**|
-|[**Función SocketNotificationRetrieveEvents**](/windows/win32/api/winsock2/nf-winsock2-socketnotificationretrieveevents)|Esta función auxiliar insertada se proporciona como comodidad para recuperar la máscara de eventos de [**un OVERLAPPED_ENTRY**](/windows/win32/api/minwinbase/ns-minwinbase-overlapped_entry).|
+|[**Función SocketNotificationRetrieveEvents**](/windows/win32/api/winsock2/nf-winsock2-socketnotificationretrieveevents)|Esta función auxiliar insertada se proporciona por comodidad para recuperar la máscara de eventos de un [**OVERLAPPED_ENTRY**](/windows/win32/api/minwinbase/ns-minwinbase-overlapped_entry).|
 
 El flujo de trabajo comienza con la asociación de sockets a un puerto de finalización de E/S [**(ProcessSocketNotifications**](/windows/win32/api/winsock2/nf-winsock2-processsocketnotifications) [**y SOCK_NOTIFY_REGISTRATION**](/windows/win32/api/winsock2/ns-winsock2-sock_notify_registration)). Después de eso, el puerto proporciona información sobre los cambios de estado del socket mediante los métodos habituales de consulta del puerto de finalización de E/S.
 
-Estas API permiten la construcción sencilla de abstracciones independientes de la plataforma. Por lo tanto, se admiten las marcas persistentes y de una sola toma, así como las marcas de nivel y desencadenadas por el borde. Por ejemplo, los registros desencadenados de un solo nivel son el patrón recomendado para servidores multiproceso.
+Estas API permiten una construcción sencilla de abstracciones independientes de la plataforma. Por lo tanto, se admiten las marcas persistentes y de una sola toma, así como las marcas de nivel y desencadenadas por el borde. Por ejemplo, los registros desencadenados de nivel de una sola toma son el patrón recomendado para servidores multiproceso.
 
 ## <a name="recommendations"></a>Recomendaciones
 
 Estas API proporcionan una alternativa escalable a [**WSAPoll**](/windows/win32/api/winsock2/nf-winsock2-wsapoll) y [**seleccionan**](/windows/win32/api/winsock2/nf-winsock2-select) LAS API.
 
-Son una alternativa a la [E/S](/windows/win32/api/winsock2/nf-winsock2-wsasend#overlapped-socket-i-o) de socket superpuesta que se usa con los puertos de finalización de [E/S](/windows/win32/fileio/i-o-completion-ports)y evitan la necesidad de búferes de E/S por socket permanentes. Pero en un escenario en el que los búferes de E/S por socket no son una consideración importante (el número de sockets es relativamente bajo o se usan constantemente), la E/S de socket superpuesta podría tener menos sobrecarga debido a un número menor de transiciones de kernel, así como un modelo más sencillo.
+Son una alternativa a la [E/S](/windows/win32/api/winsock2/nf-winsock2-wsasend#overlapped-socket-i-o) de socket superpuesta que se usa con los puertos de finalización de [E/S](/windows/win32/fileio/i-o-completion-ports)y evitan la necesidad de búferes de E/S por socket permanentes. Pero en un escenario en el que los búferes de E/S por socket no son una consideración importante (el número de sockets es relativamente bajo o se usan constantemente), la E/S de socket superpuesta podría tener menos sobrecarga debido a un menor número de transiciones de kernel, así como a un modelo más sencillo.
 
-Un socket solo se puede asociar a un único puerto de finalización de E/S. Un socket se puede registrar con un puerto de finalización de E/S solo una vez. Para cambiar las claves de finalización, anula el registro de la notificación, **espera el** mensaje de SOCK_NOTIFY_EVENT_REMOVE (consulta los temas [**ProcessSocketNotifications**](/windows/win32/api/winsock2/nf-winsock2-processsocketnotifications) y [**SocketNotificationRetrieveEvents)**](/windows/win32/api/winsock2/nf-winsock2-socketnotificationretrieveevents) y, a continuación, vuelve a registrar el socket.
+Un socket solo puede asociarse a un único puerto de finalización de E/S. Un socket se puede registrar con un puerto de finalización de E/S solo una vez. Para cambiar las claves de finalización, anula el registro de la notificación, **espera el** mensaje de SOCK_NOTIFY_EVENT_REMOVE (consulta los temas [**ProcessSocketNotifications**](/windows/win32/api/winsock2/nf-winsock2-processsocketnotifications) y [**SocketNotificationRetrieveEvents)**](/windows/win32/api/winsock2/nf-winsock2-socketnotificationretrieveevents) y, a continuación, vuelve a registrar el socket.
 
-Para evitar liberar memoria que todavía está en uso, debe liberar las estructuras  de datos asociadas de un registro solo después de recibir la notificación de SOCK_NOTIFY_EVENT_REMOVE para el registro. Cuando el descriptor de socket usado para registrar notificaciones se cierra mediante la función [closesocket,](/windows/win32/api/winsock/nf-winsock-closesocket) sus notificaciones se anulan automáticamente del registro. Sin embargo, es posible que todavía se entreguen notificaciones ya en cola. Una anulación automática del registro a través **de closesocket** no generará una **SOCK_NOTIFY_EVENT_REMOVE** notificación.
+Para evitar liberar memoria que todavía está en uso, debe liberar las estructuras  de datos asociadas de un registro solo después de recibir la SOCK_NOTIFY_EVENT_REMOVE notificación del registro. Cuando se cierra el descriptor de socket usado para registrar notificaciones mediante la función [closesocket,](/windows/win32/api/winsock/nf-winsock-closesocket) sus notificaciones se anulan automáticamente del registro. Sin embargo, es posible que todavía se entreguen notificaciones ya en cola. Una anulación automática del registro mediante **closesocket** no generará una **notificación SOCK_NOTIFY_EVENT_REMOVE** cierre.
 
-Si desea un procesamiento multiproceso, debe usar un único puerto de finalización de E/S con varias notificaciones de procesamiento de subprocesos. Esto permite que el puerto de finalización de E/S escale horizontalmente el trabajo entre varios subprocesos, según sea necesario. Evite tener varios puertos de finalización de E/S (por ejemplo, uno por subproceso), porque ese diseño es vulnerable a la entrada de botella en un único subproceso mientras otros están inactivos.
+Si desea el procesamiento multiproceso, debe usar un único puerto de finalización de E/S con varias notificaciones de procesamiento de subprocesos. Esto permite que el puerto de finalización de E/S escale horizontalmente el trabajo entre varios subprocesos, según sea necesario. Evite tener varios puertos de finalización de E/S (por ejemplo, uno por subproceso), porque ese diseño es vulnerable al cuello de botella en un único subproceso mientras otros están inactivos.
 
 Si varios subprocesos están depurando paquetes de notificación  con notificaciones desencadenadas por el nivel, SOCK_NOTIFY_TRIGGER_ONESHOT debe proporcionarse para evitar que varios subprocesos reciban notificaciones para un cambio de estado. Una vez procesada la notificación de socket, se debe volver a registrar la notificación.
 
@@ -272,7 +272,7 @@ Exit:
 }
 ```
 
-## <a name="simple-replacement-for-polling"></a>Reemplazo simple del sondeo
+## <a name="simple-replacement-for-polling"></a>Reemplazo simple para el sondeo
 
 En este escenario se muestra un reemplazo de colocación para las aplicaciones que usan el sondeo [**(WSAPoll)**](/windows/win32/api/winsock2/nf-winsock2-wsapoll)o API similares. Es de un solo subproceso y usa registros persistentes (no de una sola toma). Dado que no es necesario volver a registrar el registro, usa [**GetQueuedCompletionStatusEx**](/windows/win32/fileio/getqueuedcompletionstatusex-func) para quitar las notificaciones de la cola.
 
@@ -423,7 +423,7 @@ Esta es una ilustración sencilla de cómo usar las API con desencadenadores per
 > [!IMPORTANT]
 > El servidor debe seguir recibiendo hasta que reciba **un WSA DHCPDBLOCK**. De lo contrario, no puede estar seguro de que se observará un borde ascendente. Por lo tanto, el socket del servidor también debe ser sin bloqueo.
 
-En este ejemplo se usa UDP para demostrar la falta de una **notificación HANGUP.** Se tarda en asumir que los asistentes comunes crean sockets UDP si es necesario.
+En este ejemplo se usa UDP para mostrar la falta de una **notificación HANGUP.** Se tarda en asumir que los asistentes comunes crean sockets UDP si es necesario.
 
 ```cpp
 // This example assumes that substantially similar helpers are available for UDP sockets.
@@ -586,11 +586,11 @@ Exit:
 
 ## <a name="multi-threaded-server"></a>Servidor multiproceso
 
-En este ejemplo se muestra un patrón de uso multiproceso más realista que usa las funcionalidades de escalabilidad horizontal del puerto de finalización de E/S para distribuir el trabajo entre varios subprocesos de servidor. El servidor usa el desencadenador de nivel de una sola toma para evitar que varios subprocesos reciban notificaciones para el mismo socket y para permitir que cada subproceso purga los datos recibidos un fragmento a la vez.
+En este ejemplo se muestra un patrón de uso multiproceso más realista que usa las funcionalidades de escalado horizontal del puerto de finalización de E/S para distribuir el trabajo entre varios subprocesos de servidor. El servidor usa el desencadenamiento de nivel de una sola toma para evitar que varios subprocesos reciban notificaciones para el mismo socket y para permitir que cada subproceso purga los datos recibidos fragmento a fragmento.
 
-También muestra algunos patrones comunes que se usan con el puerto de finalización. La clave de finalización se usa para proporcionar un puntero de contexto por socket. El puntero de contexto tiene un encabezado que describe el tipo de socket que se usa, de modo que se pueden usar varios tipos de sockets en un solo puerto de finalización. Los comentarios del ejemplo resaltan que las finalizaciones arbitrarias se pueden quitar de la cola (al igual que con la función [**GetQueuedCompletionStatusEx),**](/windows/win32/fileio/getqueuedcompletionstatusex-func) no solo las notificaciones de socket. La API [**PostQueuedCompletionStatus**](/windows/win32/fileio/postqueuedcompletionstatus) se usa para publicar mensajes en subprocesos y reactivarlos sin tener que esperar a la llegada de una notificación de socket.
+También muestra algunos patrones comunes que se usan con el puerto de finalización. La clave de finalización se usa para proporcionar un puntero de contexto por socket. El puntero de contexto tiene un encabezado que describe el tipo de socket que se usa, de modo que se pueden usar varios tipos de sockets en un único puerto de finalización. Los comentarios del ejemplo resaltan que las finalizaciones arbitrarias se pueden quitar de la cola (al igual que con la función [**GetQueuedCompletionStatusEx),**](/windows/win32/fileio/getqueuedcompletionstatusex-func) no solo las notificaciones de socket. La API [**PostQueuedCompletionStatus**](/windows/win32/fileio/postqueuedcompletionstatus) se usa para publicar mensajes en subprocesos y reactivarlos sin tener que esperar a la llegada de una notificación de socket.
 
-Por último, en el ejemplo se muestran algunas de las complejidades de anular correctamente el registro y la limpieza de contextos de socket en una carga de trabajo de subprocesos. En este ejemplo, el contexto de socket es propiedad implícita del subproceso que recibe la notificación. El subproceso mantiene la propiedad si no puede registrar la notificación.
+Por último, en el ejemplo se muestran algunas de las complejidades de anular correctamente el registro y la limpieza de contextos de socket en una carga de trabajo con subprocesos. En este ejemplo, el contexto de socket es propiedad implícita del subproceso que recibe la notificación. El subproceso mantiene la propiedad si no puede registrar la notificación.
 
 ```cpp
 #define CLIENT_THREAD_COUNT         100

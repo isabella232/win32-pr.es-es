@@ -1,9 +1,9 @@
 ---
-title: Control deslizante. valor
-description: El atributo value especifica o recupera la posición actual del control deslizante. | Control deslizante. valor
+title: SLIDER.value
+description: El atributo value especifica o recupera la posición actual del control deslizante. | SLIDER.value
 ms.assetid: 2cd2f8b2-d3f1-4897-98b0-af551d6693e6
 keywords:
-- Control deslizante. Value Windows Media Player
+- SLIDER.value Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e87aeff5c97808efb812f530236227b07f463855
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 30f9ae7c0dc45f3a14cad2aa5b7332b037302b6658043233bbd98b1d99a12e10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118633"
 ---
-# <a name="slidervalue"></a>Control deslizante. valor
+# <a name="slidervalue"></a>SLIDER.value
 
-El atributo **Value** especifica o recupera la posición actual del control deslizante.
+El **atributo** value especifica o recupera la posición actual del control deslizante.
 
 ``` syntax
         elementID.value
@@ -29,13 +29,13 @@ El atributo **Value** especifica o recupera la posición actual del control desl
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura/escritura (**float**) con un valor predeterminado de **min**.
+Este atributo es un número de lectura **y** escritura **(float)** con un valor predeterminado de **min.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El **valor** siempre debe ser mayor o igual que **min** y menor o igual que **Max**. Si especifica un valor fuera de este intervalo, el **valor** y la posición del control deslizante no cambian.
+El **valor** siempre debe ser mayor o igual que **min** y menor o igual que **max.** Si especifica un valor fuera de este intervalo, **el** valor y la posición del control deslizante no se cambian.
 
-Vea **CUSTOMSLIDER**. atributo [positionImage](customslider-positionimage.md) para un ejemplo que muestra cómo se utilizan los atributos del elemento **Slider** .
+Vea **CUSTOMSLIDER**. [Atributo positionImage](customslider-positionimage.md) para un ejemplo que ilustra cómo se usan los atributos del **elemento SLIDER.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Vea **CUSTOMSLIDER**. atributo [positionImage](customslider-positionimage.md) pa
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -51,10 +51,10 @@ Vea **CUSTOMSLIDER**. atributo [positionImage](customslider-positionimage.md) pa
 
 <dl> <dt>
 
-[**Elemento SLIDEr**](slider-element.md)
+[**Elemento SLIDER**](slider-element.md)
 </dt> <dt>
 
-[**SLIDEr. min**](slider-min.md)
+[**SLIDER.min**](slider-min.md)
 </dt> </dl>
 
  

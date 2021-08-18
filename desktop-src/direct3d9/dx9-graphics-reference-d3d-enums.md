@@ -15,7 +15,7 @@ ms.locfileid: "118523426"
 
 En esta sección se describen los tipos enumerados de Direct3D.
 
--   [**TIPO D3DBACKBUFFER \_**](./d3dbackbuffer-type.md)
+-   [**D3DBACKBUFFER \_ TYPE**](./d3dbackbuffer-type.md)
 -   [**D3DBASISTYPE**](./d3dbasistype.md)
 -   [**D3DBLEND**](./d3dblend.md)
 -   [**D3DBLENDOP**](./d3dblendop.md)

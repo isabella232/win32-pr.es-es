@@ -1,19 +1,19 @@
 ---
-description: 'SFGAO los valores que se usan en IShellFolder:: GetAttributesOf.'
+description: Valores SFGAO tal como se usan en IShellFolder::GetAttributesOf.
 ms.assetid: 0a63e019-a03c-43c2-b2dc-20ef7c37e0d3
-title: System. SFGAOFlags
+title: System.SFGAOFlags
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d71ced08bd2a3a916924ff876cadb160cf6fb959
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f494215f2302f2a33551ab73adf60d61d7176e2d4caf75215456b731b9aa57e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118464795"
 ---
-# <a name="systemsfgaoflags"></a>System. SFGAOFlags
+# <a name="systemsfgaoflags"></a>System.SFGAOFlags
 
-[**SFGAO**](../shell/sfgao.md) los valores que se usan en [**IShellFolder:: GetAttributesOf**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getattributesof).
+[**Valores SFGAO**](../shell/sfgao.md) como se usa [**en IShellFolder::GetAttributesOf**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getattributesof).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -46,11 +46,11 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
-Algunos valores de [**SFGAO**](../shell/sfgao.md) que se consideran que causan cálculos lentos o que carecen de contexto se excluyen aquí por la aplicación de la máscara * * * * [SFGAO \_ PKEYSFGAOMASK *](../shell/sfgao.md) * * *.
+Algunos [**valores de SFGAO**](../shell/sfgao.md) que se consideran que causan cálculos lentos o falta de contexto se excluyen aquí mediante la aplicación de la máscara [*:SFGAO \_ PKEYSFGAOMASK*".](../shell/sfgao.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -65,7 +65,7 @@ Algunos valores de [**SFGAO**](../shell/sfgao.md) que se consideran que causan c
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -77,7 +77,7 @@ Algunos valores de [**SFGAO**](../shell/sfgao.md) que se consideran que causan c
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -95,7 +95,7 @@ Algunos valores de [**SFGAO**](../shell/sfgao.md) que se consideran que causan c
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

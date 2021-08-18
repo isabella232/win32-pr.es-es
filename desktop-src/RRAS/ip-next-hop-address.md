@@ -1,10 +1,10 @@
 ---
 title: IP_NEXT_HOP_ADDRESS estructura (Rtm.h)
-description: La estructura IP \_ NEXT HOP ADDRESS contiene la dirección del enrutador del próximo salto para una ruta \_ \_ IP.
+description: La estructura IP NEXT HOP ADDRESS contiene la dirección del enrutador de próximo \_ salto para una ruta \_ \_ IP.
 ms.assetid: a97b3995-dfaa-4e53-be86-3ad46b8be691
 keywords:
-- IP_NEXT_HOP_ADDRESS ras de estructura
-- PIP_NEXT_HOP_ADDRESS ras de estructura
+- IP_NEXT_HOP_ADDRESS estructura RAS
+- PIP_NEXT_HOP_ADDRESS estructura RAS
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.locfileid: "117790969"
 ---
 # <a name="ip_next_hop_address-structure"></a>Estructura IP \_ NEXT \_ HOP \_ ADDRESS
 
-\[Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
+\[Esta API ha sido reemplazada por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
-La **estructura IP NEXT HOP \_ \_ \_ ADDRESS** contiene la dirección del enrutador del próximo salto para una ruta IP.
+La **estructura IP NEXT HOP \_ \_ \_ ADDRESS** contiene la dirección del enrutador de próximo salto para una ruta IP.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Especifica la dirección de red IP expresada como una dirección IP en orden de 
 
 </dd> <dt>
 
-**N \_ Máscaras de red**
+**N \_ NetMask**
 </dt> <dd>
 
 Especifica la máscara de red. Aplique esta máscara a la dirección IP para extraer la dirección de red. La máscara de red está en orden de bytes de máquina.
@@ -66,7 +66,7 @@ La **estructura IP NEXT HOP \_ \_ \_ ADDRESS** es una definición de tipo de la 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                        |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -75,14 +75,14 @@ La **estructura IP NEXT HOP \_ \_ \_ ADDRESS** es una definición de tipo de la 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Referencia de la versión 1 de Routing Table Manager](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Estructuras de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-structures.md)
+[Estructuras de Routing Table Manager versión 1](routing-table-manager-version-1-structures.md)
 </dt> <dt>
 
 [**RED \_ IP**](ip-network.md)

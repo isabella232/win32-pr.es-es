@@ -1,9 +1,9 @@
 ---
 title: SEEKSLIDER
-description: Este es un control deslizante predefinido con los siguientes valores predeterminados. | SEEKSLIDER
+description: Se trata de un control SLIDER predefinido con los siguientes valores predeterminados. | SEEKSLIDER
 ms.assetid: 9fdb0f70-e5ce-4dbc-aeba-44fa0e2c9b3c
 keywords:
-- SEEKSLIDER Windows Media Player
+- SeekSLIDER Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 59808fa7c41acfcc28b715362b8724c7f113faee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a294eede05ec2b2f0f84e925aa299c9bcb2388ee2151385e48f2c68e6b4c1328
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118833344"
 ---
 # <a name="seekslider"></a>SEEKSLIDER
 
-Este es un **control deslizante** predefinido con los siguientes valores predeterminados.
+Se trata de un **control SLIDER** predefinido con los siguientes valores predeterminados.
 
 ``` syntax
 toolTip="Seek"
@@ -34,25 +34,25 @@ onDragEnd="jscript:player.controls.currentPosition=value;"
 useForegroundProgress="true"
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esto crea un control **deslizante** que busca el archivo multimedia en cualquier posición. La información sobre herramientas está localizada. Todas las propiedades de este **control deslizante** se pueden invalidar si se especifican de forma explícita.
+Esto crea un control **SLIDER** que busca el archivo multimedia en cualquier posición. La información sobre herramientas se localiza. Todas las propiedades de **este CONTROL DESLIZANTE** se pueden invalidar especificándolos explícitamente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|----------------------------------------------|
-| Versión<br/> | Windows Media Player 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Elemento SLIDEr**](slider-element.md)
+[**Elemento SLIDER**](slider-element.md)
 </dt> </dl>
 
  

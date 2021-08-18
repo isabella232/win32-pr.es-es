@@ -1,26 +1,26 @@
 ---
-description: Tareas de las cadenas del constructor de objetos COM+
+description: Tareas de cadenas de constructor de objetos COM+
 ms.assetid: b8518f3f-dfaa-4a7d-9b1b-978a62cba4b5
-title: Tareas de las cadenas del constructor de objetos COM+
+title: Tareas de cadenas de constructor de objetos COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42b4df839aae5e0cdeaafde6ea3f439ca7d22cd7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 077479a78f78f07af554696188ebaeeab95d5e6ad9e719bea06bf5fb5ade87eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118548791"
 ---
-# <a name="com-object-constructor-strings-tasks"></a>Tareas de las cadenas del constructor de objetos COM+
+# <a name="com-object-constructor-strings-tasks"></a>Tareas de cadenas de constructor de objetos COM+
 
-En los temas siguientes se proporcionan instrucciones paso a paso para usar cadenas del constructor de objetos COM+.
+En los temas siguientes se proporcionan instrucciones paso a paso para usar cadenas de constructor de objetos COM+.
 
 
 
 | Tema                                                                                                                                     | Descripción                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [Especificar una cadena de constructor de objeto para un componente](specifying-an-object-constructor-string-for-a-component.md)<br/>         | Describe cómo especificar una cadena de constructor de objeto COM+.<br/>                                                          |
-| [Usar una cadena de constructor de objeto para construir un componente](using-an-object-constructor-string-to-construct-a-component.md)<br/> | Describe cómo recuperar y usar mediante programación una cadena de constructor de objeto COM+ al crear una instancia de un componente.<br/> |
+| [Especificar una cadena de constructor de objetos para un componente](specifying-an-object-constructor-string-for-a-component.md)<br/>         | Describe cómo especificar una cadena de constructor de objetos COM+.<br/>                                                          |
+| [Usar una cadena de constructor de objetos para construir un componente](using-an-object-constructor-string-to-construct-a-component.md)<br/> | Describe cómo recuperar y usar mediante programación una cadena de constructor de objetos COM+ al crear instancias de un componente.<br/> |
 
 
 
@@ -30,7 +30,7 @@ En los temas siguientes se proporcionan instrucciones paso a paso para usar cade
 
 <dl> <dt>
 
-[Conceptos de las cadenas del constructor de objetos COM+](com--object-constructor-strings-concepts.md)
+[Conceptos de cadenas de constructor de objetos COM+](com--object-constructor-strings-concepts.md)
 </dt> </dl>
 
  

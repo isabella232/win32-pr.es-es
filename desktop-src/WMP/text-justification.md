@@ -1,9 +1,9 @@
 ---
-title: TEXTO. justificación
-description: El atributo justificación especifica o recupera la alineación del texto en el control de texto.
+title: TEXT.justification
+description: El atributo justification especifica o recupera la alineación del texto dentro del control Text.
 ms.assetid: 72086142-198b-41cf-ad84-733fa23f9efe
 keywords:
-- Media Player de Windows TEXT. justification
+- Text.justification Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba4c5d3a62aba4b95d7f6e36d4fafd3e044edf74
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b7cc79cc3b4a49154284d497b913a843946551faeea7008f7c2b963fbafcf920
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118265"
 ---
-# <a name="textjustification"></a>TEXTO. justificación
+# <a name="textjustification"></a>TEXT.justification
 
-El atributo **justificación** especifica o recupera la alineación del texto en el control de texto.
+El **atributo** justification especifica o recupera la alineación del texto dentro del control Text.
 
 ``` syntax
         elementID.justification
@@ -29,23 +29,23 @@ El atributo **justificación** especifica o recupera la alineación del texto en
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura.
+Este atributo es una cadena de lectura **y escritura.**
 
 
 
 | Value  | Descripción                                                   |
 |--------|---------------------------------------------------------------|
-| Left   | Predeterminada. Alinea el texto a la izquierda del control de texto.     |
-| Right  | Alinea el texto a la derecha del control de texto.             |
-| Center | Alinea el texto con el centro horizontal del control de texto. |
+| Left   | Predeterminada. Alinea el texto a la izquierda del control Texto.     |
+| Right  | Alinea el texto a la derecha del control Texto.             |
+| Center | Alinea el texto con el centro horizontal del control Texto. |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se utilizan los atributos del elemento de **texto** .
+Vea el [atributo value](text-value.md) para obtener un ejemplo que ilustra cómo se usan los atributos del **elemento TEXT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,7 +53,7 @@ Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 

@@ -24,7 +24,7 @@ ms.locfileid: "118503456"
 
 Una plantilla de cuadro de diálogo extendido comienza con un encabezado **DLGTEMPLATEEX** que describe el cuadro de diálogo y especifica el número de controles del cuadro de diálogo. Para cada control de un cuadro de diálogo, una plantilla de cuadro de diálogo extendido tiene un bloque de datos que usa el formato [**DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) para describir el control.
 
-La **estructura DLGTEMPLATEEX** no está definida en ningún archivo de encabezado estándar. La definición de estructura se proporciona aquí para explicar el formato de una plantilla extendida para un cuadro de diálogo.
+La **estructura DLGTEMPLATEEX** no se define en ningún archivo de encabezado estándar. La definición de estructura se proporciona aquí para explicar el formato de una plantilla extendida para un cuadro de diálogo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,7 +65,7 @@ Tipo: **WORD**
 
 </dd> <dd>
 
-Número de versión de la plantilla de cuadro de diálogo extendido. Este miembro debe establecerse en 1.
+Número de versión de la plantilla de cuadro de diálogo extendida. Este miembro debe establecerse en 1.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Identificador de contexto de ayuda para la ventana del cuadro de diálogo. Cuando el sistema envía un [**mensaje WM \_ HELP,**](../shell/wm-help.md) pasa este valor en el **miembro wContextId** de la [**estructura HELPINFO.**](/windows/win32/api/winuser/ns-winuser-helpinfo)
+Identificador de contexto de ayuda para la ventana del cuadro de diálogo. Cuando el sistema envía un [**mensaje DE AYUDA \_ DE WM,**](../shell/wm-help.md) pasa este valor en el **miembro wContextId** de la [**estructura HELPINFO.**](/windows/win32/api/winuser/ns-winuser-helpinfo)
 
 </dd> <dt>
 
@@ -109,9 +109,9 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Estilo del cuadro de diálogo. Este miembro puede ser una combinación de valores de estilo [de ventana y](/windows/desktop/winmsg/window-styles) valores de estilo de cuadro de [diálogo](dialog-box-styles.md).
+Estilo del cuadro de diálogo. Este miembro puede ser una combinación de valores de estilo de [ventana y](/windows/desktop/winmsg/window-styles) valores de estilo de cuadro [de diálogo](dialog-box-styles.md).
 
-Si **style** incluye el estilo de cuadro de diálogo **DS \_ SETFONT** o **DS \_ SHELLFONT,** el encabezado  **DLGTEMPLATEEX** de la plantilla de cuadro de diálogo extendido contiene cuatro miembros adicionales **(pointsize**, weight , **italic** y **typeface)** que describen la fuente que se usará para el texto en el área de cliente y los controles del cuadro de diálogo. Si es posible, el sistema crea una fuente según los valores especificados en estos miembros. A continuación, el sistema envía [**un mensaje \_ SETFONT**](/windows/desktop/winmsg/wm-setfont) de WM al cuadro de diálogo y a cada control para proporcionar un identificador a la fuente.
+Si **style** incluye el estilo de cuadro de diálogo **\_ DS SETFONT** o **DS \_ SHELLFONT,** el encabezado  **DLGTEMPLATEEX** de la plantilla de cuadro de diálogo extendido contiene cuatro miembros adicionales **(pointsize**, weight , **italic** y **typeface)** que describen la fuente que se usará para el texto en el área cliente y los controles del cuadro de diálogo. Si es posible, el sistema crea una fuente según los valores especificados en estos miembros. A continuación, el sistema envía un [**mensaje \_ WM SETFONT**](/windows/desktop/winmsg/wm-setfont) al cuadro de diálogo y a cada control para proporcionar un identificador a la fuente.
 
 Para obtener más información, vea [Fuentes de cuadro de diálogo](about-dialog-boxes.md).
 
@@ -175,18 +175,18 @@ Alto, en unidades de cuadro de diálogo, del cuadro de diálogo.
 **Menú**
 </dt> <dd>
 
-Tipo: **sz \_ o \_ ord**
+Tipo: **sz \_ o \_ Ord**
 
 </dd> <dd>
 
-Matriz de longitud variable de elementos de 16 bits que identifica un recurso de menú para el cuadro de diálogo. Si el primer elemento de esta matriz 0x0000, el cuadro de diálogo no tiene ningún menú y la matriz no tiene otros elementos. Si el primer elemento se 0xFFFF, la matriz tiene un elemento adicional que especifica el valor ordinal de un recurso de menú en un archivo ejecutable. Si el primer elemento tiene cualquier otro valor, el sistema trata la matriz como una cadena Unicode terminada en NULL que especifica el nombre de un recurso de menú en un archivo ejecutable.
+Matriz de longitud variable de elementos de 16 bits que identifica un recurso de menú para el cuadro de diálogo. Si el primer elemento de esta matriz 0x0000, el cuadro de diálogo no tiene ningún menú y la matriz no tiene ningún otro elemento. Si el primer elemento 0xFFFF, la matriz tiene un elemento adicional que especifica el valor ordinal de un recurso de menú en un archivo ejecutable. Si el primer elemento tiene cualquier otro valor, el sistema trata la matriz como una cadena Unicode terminada en NULL que especifica el nombre de un recurso de menú en un archivo ejecutable.
 
 </dd> <dt>
 
 **windowClass**
 </dt> <dd>
 
-Tipo: **sz \_ o \_ ord**
+Tipo: **sz \_ o \_ Ord**
 
 </dd> <dd>
 
@@ -201,7 +201,7 @@ Tipo: **WCHAR \[ titleLen \]**
 
 </dd> <dd>
 
-Título del cuadro de diálogo. Si el primer elemento de esta matriz 0x0000, el cuadro de diálogo no tiene ningún título y la matriz no tiene otros elementos.
+Título del cuadro de diálogo. Si el primer elemento de esta matriz 0x0000, el cuadro de diálogo no tiene ningún título y la matriz no tiene ningún otro elemento.
 
 </dd> <dt>
 
@@ -212,9 +212,9 @@ Tipo: **WORD**
 
 </dd> <dd>
 
-Tamaño de punto de la fuente que se usará para el texto en el cuadro de diálogo y sus controles.
+Tamaño de punto de la fuente que se usará para el texto del cuadro de diálogo y sus controles.
 
-Este miembro solo está presente si el miembro **de** estilo especifica **DS \_ SETFONT** o **DS \_ SHELLFONT.**
+Este miembro solo está presente si el **miembro de** estilo especifica **DS \_ SETFONT** o **DS \_ SHELLFONT**.
 
 </dd> <dt>
 
@@ -227,7 +227,7 @@ Tipo: **WORD**
 
 El grosor de la fuente. Tenga en cuenta que, aunque puede ser cualquiera de los valores enumerados para el miembro **lfWeight** de la estructura [**LOGFONT,**](/windows/win32/api/wingdi/ns-wingdi-logfonta) cualquier valor que se utilice se cambiará automáticamente a **FW \_ NORMAL.**
 
-Este miembro solo está presente si el miembro **de** estilo especifica **DS \_ SETFONT** o **DS \_ SHELLFONT.**
+Este miembro solo está presente si el **miembro de** estilo especifica **DS \_ SETFONT** o **DS \_ SHELLFONT**.
 
 </dd> <dt>
 
@@ -240,7 +240,7 @@ Tipo: **BYTE**
 
 Indica si la fuente está en cursiva. Si este valor es **TRUE,** la fuente está en cursiva.
 
-Este miembro solo está presente si el miembro **de** estilo especifica **DS \_ SETFONT** o **DS \_ SHELLFONT.**
+Este miembro solo está presente si el **miembro de** estilo especifica **DS \_ SETFONT** o **DS \_ SHELLFONT**.
 
 </dd> <dt>
 
@@ -251,36 +251,36 @@ Tipo: **BYTE**
 
 </dd> <dd>
 
-Juego de caracteres que se va a usar. Para obtener más información, vea **el miembro lfcharset** de [**LOGFONT.**](/windows/win32/api/wingdi/ns-wingdi-logfonta)
+Juego de caracteres que se va a usar. Para obtener más información, vea el **miembro lfcharset** de [**LOGFONT.**](/windows/win32/api/wingdi/ns-wingdi-logfonta)
 
-Este miembro solo está presente si el miembro **de** estilo especifica **DS \_ SETFONT** o **DS \_ SHELLFONT.**
+Este miembro solo está presente si el **miembro de** estilo especifica **DS \_ SETFONT** o **DS \_ SHELLFONT**.
 
 </dd> <dt>
 
 **Tipografía**
 </dt> <dd>
 
-Tipo: **cadena \[ WCHARLen \]**
+Tipo: **WCHAR \[ stringLen \]**
 
 </dd> <dd>
 
 Nombre del tipo de letra de la fuente.
 
-Este miembro solo está presente si el miembro **de** estilo especifica **DS \_ SETFONT** o **DS \_ SHELLFONT.**
+Este miembro solo está presente si el **miembro de** estilo especifica **DS \_ SETFONT** o **DS \_ SHELLFONT**.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentarios
 
-Puede usar una plantilla de cuadro de diálogo extendida en lugar de una plantilla de cuadro de diálogo estándar en las funciones [**CreateDialogIndirectParam**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirectparama), [**DialogBoxIndirectParam**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirectparama), [**CreateDialogIndirect y**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirecta) [**DialogBoxIndirect.**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirecta)
+Puede usar una plantilla de cuadro de diálogo extendida en lugar de una plantilla de cuadro de diálogo estándar en las funciones [**CreateDialogIndirectParam**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirectparama), [**DialogBoxIndirectParam,**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirectparama) [**CreateDialogIndirect**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirecta)y [**DialogBoxIndirect.**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirecta)
 
-Después del **encabezado DLGTEMPLATEEX** en una plantilla de cuadro de diálogo extendido hay una o varias estructuras [**DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) que describen los controles del cuadro de diálogo. El **miembro cDlgItems** de la estructura **DLGITEMTEMPLATEEX** especifica el número de estructuras **DLGITEMTEMPLATEEX** que siguen a la plantilla.
+Después del **encabezado DLGTEMPLATEEX** de una plantilla de cuadro de diálogo extendido hay una o varias estructuras [**DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) que describen los controles del cuadro de diálogo. El **miembro cDlgItems** de la estructura **DLGITEMTEMPLATEEX** especifica el número de estructuras **DLGITEMTEMPLATEEX** que se siguen en la plantilla.
 
-Cada [**estructura DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) de la plantilla debe alinearse en un **límite DWORD.** Si el miembro **de** estilo especifica el estilo **DS \_ SETFONT** o **DS \_ SHELLFONT,** la primera estructura **DLGITEMTEMPLATEEX** comienza en el primer límite **DWORD** después de la cadena de tipo **de** letra. Si no se especifican estos estilos, la primera estructura comienza en el primer **límite DWORD** después de la **cadena de** título.
+Cada [**estructura DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) de la plantilla debe alinearse en un **límite DWORD.** Si **el** miembro de estilo especifica el estilo **\_ DS SETFONT** o **DS \_ SHELLFONT,** la primera estructura **DLGITEMTEMPLATEEX** comienza en el primer límite **DWORD** después de la cadena de tipo **de** letra. Si no se especifican estos estilos, la primera estructura comienza en el primer **límite DWORD** después de la **cadena de** título.
 
-Las **matrices** de menús , **windowClass**, **title** y **typeface** deben alinearse en los **límites de WORD.**
+Las **matrices** de menús , **windowClass**, **title** y **typeface** deben estar alineadas en los límites de **WORD.**
 
-Si especifica cadenas de caracteres en el menú **,** **windowClass**, **title** y **matrices de** tipo de letra, debe usar cadenas Unicode. Use la [**función MultiByteToWideChar para**](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) generar estas cadenas Unicode a partir de cadenas ANSI.
+Si especifica cadenas de caracteres en el menú **,** **windowClass**, **title** y **matrices de** tipografía, debe usar cadenas Unicode. Use la [**función MultiByteToWideChar para**](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) generar estas cadenas Unicode a partir de cadenas ANSI.
 
 Los **miembros x**, **y**, **cx** y **cy** especifican valores en unidades de cuadro de diálogo. Puede convertir estos valores en unidades de pantalla (píxeles) mediante la [**función MapDialogRect.**](/windows/desktop/api/Winuser/nf-winuser-mapdialogrect)
 

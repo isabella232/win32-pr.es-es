@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 95c6d054900f3f4c4710e22c54759161800137c2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: afdf80cf1557f8b08709536ef49b08206873f5758c4b02a12008b27b4413a116
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731803"
 ---
 # <a name="d3dxfillcubetexturetx-function"></a>Función D3DXFillCubeTextureTX
 
@@ -67,7 +67,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 ## <a name="remarks"></a>Comentarios
 
-El destino de textura debe ser una función HLSL que tome la semántica siguiente:
+El destino de textura debe ser una función HLSL que tome contiene la semántica siguiente:
 
 -   Un parámetro de entrada debe usar una semántica POSITION.
 -   Un parámetro de entrada debe usar una semántica PSIZE.
@@ -86,7 +86,7 @@ Los parámetros de entrada pueden estar en cualquier orden. Para obtener un ejem
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

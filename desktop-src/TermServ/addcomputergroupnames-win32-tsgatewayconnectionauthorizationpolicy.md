@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método AddComputerGroupNames Servicios de Escritorio remoto
 - Método AddComputerGroupNames Servicios de Escritorio remoto , Win32_TSGatewayConnectionAuthorizationPolicy clase
-- Win32_TSGatewayConnectionAuthorizationPolicy clase Servicios de Escritorio remoto , método AddComputerGroupNames
+- Win32_TSGatewayConnectionAuthorizationPolicy clase Servicios de Escritorio remoto método , AddComputerGroupNames
 topic_type:
 - apiref
 api_name:
@@ -66,7 +66,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
@@ -76,7 +76,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: La interpolación de vértices combina dos posiciones proporcionadas por el usuario (o normales).
+description: La interpolación de vértices combina dos posiciones (o normales) proporcionadas por el usuario.
 ms.assetid: vs|directx_sdk|~\vertex_tweening.htm
 title: Interpolación de vértices (Direct3D 9)
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118519226"
 ---
 # <a name="vertex-tweening-direct3d-9"></a>Interpolación de vértices (Direct3D 9)
 
-La interpolación de vértices combina dos posiciones proporcionadas por el usuario (o normales). La interpolación es mutuamente excluyente de la combinación de vértices con pesos. La interpolación se realiza antes de la iluminación y el recorte, y se habilita estableciendo D3DRS \_ VERTEXBLEND en D3DVBF \_ TWEENING. La posición del vértice resultante se calcula mediante:
+La interpolación de vértices combina dos posiciones (o normales) proporcionadas por el usuario. La interpolación es mutuamente excluyente de la combinación de vértices con pesos. La interpolación se realiza antes de la iluminación y el recorte, y se habilita estableciendo D3DRS \_ VERTEXBLEND en D3DVBF \_ TWEENING. La posición del vértice resultante se calcula mediante:
 
 
 ```
@@ -22,13 +22,13 @@ POSITION = POSITION1 * (1.0 - TWEENFACTOR) + POSITION2 * TWEENFACTOR
 
 
 
-El mismo enfoque se usa para calcular las normales. Para obtener más información, [vea Usar la interpolación de vértices (Direct3D 9).](using-vertex-tweening.md)
+Se usa el mismo enfoque para calcular las normales. Para obtener más información, [vea Usar la interpolación de vértices (Direct3D 9).](using-vertex-tweening.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Mezcla de geometría](geometry-blending.md)
+[Combinación de geometría](geometry-blending.md)
 </dt> </dl>
 
  

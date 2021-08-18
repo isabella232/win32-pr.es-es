@@ -1,9 +1,9 @@
 ---
-title: modificador/winmd
-description: El modificador/winmd especifica el nombre del archivo de metadatos de salida (. winmd).
+title: Modificador /winmd
+description: El modificador /winmd especifica el nombre del archivo de metadatos de salida (.winmd).
 ms.assetid: AC4CE044-17FA-4D37-A800-EDD2A247AB7E
 keywords:
-- /winmd modificador MIDL
+- /winmd switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,26 +12,26 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80a5e9f68cbeb1cffaa9eb16b7d4cb2b44f154c8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 03d951530c94b14162b5ca3d91d9bb9d615a5a9ca23cc6468ace3c74da0f1687
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118385251"
 ---
-# <a name="winmd-switch"></a>modificador/winmd
+# <a name="winmd-switch"></a>Modificador /winmd
 
-El modificador [**/winmd**](-metadata-dir.md) especifica el nombre del archivo de metadatos de salida (. winmd).
+El [**modificador /winmd**](-metadata-dir.md) especifica el nombre del archivo de metadatos de salida (.winmd).
 
 ``` syntax
 midlrt /winmd metadata_filename
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Cambiar opciones
 
 <dl> <dt>
 
-*nombre de archivo de metadatos \_* 
+*nombre de archivo de \_ metadatos* 
 </dt> <dd>
 
 Especifica el nombre del archivo de metadatos.
@@ -42,24 +42,24 @@ Especifica el nombre del archivo de metadatos.
 
 ## <a name="examples"></a>Ejemplos
 
-**archivo midlrt/winmd. winmd**
+**midlrt /winmd file.winmd**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------|--------------------------------|
-| Remoto<br/> | Windows 8<br/>           |
+| Cliente<br/> | Windows 8<br/>           |
 | Servidor<br/> | Windows Server 2012<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> </dl>
 
  

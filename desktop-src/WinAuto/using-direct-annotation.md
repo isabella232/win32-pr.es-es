@@ -1,25 +1,25 @@
 ---
-title: Usar la anotación directa
-description: Usar la anotación directa
+title: Usar anotación directa
+description: Usar anotación directa
 ms.assetid: d9d78e74-dcab-4974-945f-e8c5d42c04b7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78f0bdea5af896329b6836d21ca1dcee25bc2739
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3e8543b5aa4e6beb86b6119d13fe71ad45c1a34776e19095170cb48d8d9f48e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117744890"
 ---
-# <a name="using-direct-annotation"></a>Usar la anotación directa
+# <a name="using-direct-annotation"></a>Usar anotación directa
 
-**Para utilizar la anotación directa para invalidar el valor de una propiedad**
+**Para usar la anotación directa para invalidar el valor de una propiedad**
 
-1.  Use la función [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) o [CoCreateInstanceEx](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstanceex) para crear el objeto [**IAccPropServices**](/windows/desktop/api/oleacc/nn-oleacc-iaccpropservices) .
-2.  Llame a [**IAccPropServices:: SetHwndProp**](/windows/desktop/api/Oleacc/nf-oleacc-iaccpropservices-sethwndprop), pasando el **hWnd**, el ID. de objeto, el identificador secundario, la propiedad que se va a reemplazar y una [variante](/windows/win32/api/oaidl/ns-oaidl-variant) que contiene el nuevo valor de la propiedad. En este paso se anota el valor.
-3.  Liberar los punteros de interfaz y liberar memoria.
+1.  Use las [funciones CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) o [CoCreateInstanceEx](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstanceex) para crear el [**objeto IAccPropServices.**](/windows/desktop/api/oleacc/nn-oleacc-iaccpropservices)
+2.  Llame a [**IAccPropServices::SetHwndProp**](/windows/desktop/api/Oleacc/nf-oleacc-iaccpropservices-sethwndprop), pasando el **HWND**, el identificador de objeto, el identificador secundario, la propiedad que se va a invalidar y [un VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) que contiene el nuevo valor de la propiedad. Este paso anota el valor.
+3.  Libere los punteros de interfaz y la memoria libre.
 
-En el ejemplo siguiente se muestra cómo anotar la propiedad [**role**](role-property.md) de un control de texto estático.
+En el ejemplo siguiente se muestra cómo anotar la [**propiedad Role**](role-property.md) de un control de texto estático.
 
 
 ```C++
@@ -55,27 +55,27 @@ HRESULT CMyTextControl::SetAccessibleProperties()
 
 ## <a name="properties-supported-when-specifying-a-value"></a>Propiedades admitidas al especificar un valor
 
-Las siguientes propiedades de Microsoft Active Accessibility se pueden anotar al especificar un valor (donde el valor debe ser del tipo anotado) para la anotación directa. Para invalidar o agregar una propiedad de automatización de la interfaz de usuario de Microsoft a un control, puede especificar el identificador de la propiedad de automatización de la interfaz de usuario en lugar del identificador de la propiedad de Microsoft Active Accessibility. Para obtener una lista de los identificadores de automatización de la interfaz de usuario, vea [identificadores de propiedad](uiauto-entry-propids.md).
+Las siguientes Microsoft Active Accessibility propiedades se pueden anotar al especificar un valor (donde el valor debe ser del tipo indicado) para la anotación directa. Para invalidar o agregar una propiedad Automatización de la interfaz de usuario de Microsoft a un control, puede especificar el identificador de propiedad Automatización de la interfaz de usuario en lugar del identificador Microsoft Active Accessibility propiedad. Para obtener una lista de Automatización de la interfaz de usuario identificadores de propiedad, vea [Identificadores de propiedad](uiauto-entry-propids.md).
 
 
 
 | Propiedad                      | Tipo     |
 |-------------------------------|----------|
-| nombre de la \_ ACC \_             | VT \_ BSTR |
-| Descripción de la definición del PROPID \_ \_      | VT \_ BSTR |
-| rol de PROPID \_ ACC \_             | VT \_ I4   |
-| Estado de la ACC de PROPID \_ \_            | VT \_ I4   |
-| ayuda de la ACC de PROPID \_ \_             | VT \_ BSTR |
-| KEYBOARDSHORTCUT de la \_ ACC \_ | VT \_ BSTR |
+| NOMBRE DE ACC DE PROPID \_ \_             | VT \_ BSTR |
+| DESCRIPCIÓN DE \_ PROPID ACC \_      | VT \_ BSTR |
+| PROPID \_ ACC \_ ROLE             | VT \_ I4   |
+| PROPID \_ ACC \_ STATE            | VT \_ I4   |
+| PROPID \_ ACC \_ HELP             | VT \_ BSTR |
+| TECLADO \_ PROPID \_ ACCSHORTCUT | VT \_ BSTR |
 | PROPID \_ ACC \_ DEFAULTACTION    | VT \_ BSTR |
 | PROPID \_ ACC \_ VALUEMAP         | VT \_ BSTR |
-| ROLEMAP de la \_ ACC \_          | VT \_ BSTR |
-| STATEMAP de la \_ ACC \_         | VT \_ BSTR |
+| MAPA DE \_ ROLES DE PROPID ACC \_          | VT \_ BSTR |
+| PROPID \_ ACC \_ STATEMAP         | VT \_ BSTR |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

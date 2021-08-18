@@ -1,6 +1,6 @@
 ---
 title: Resumen de la capacidad de configuración del montón de descriptores
-description: En la tabla siguiente se resume información sobre la compatibilidad con el montón visible de sombreador y no sombreador.
+description: En la tabla siguiente se resume información sobre la compatibilidad del montón visible de sombreador y no sombreador.
 ms.assetid: DF266915-6224-4FFB-BE3E-34A44F7318DD
 ms.localizationpriority: high
 ms.topic: article
@@ -14,13 +14,13 @@ ms.locfileid: "118530557"
 ---
 # <a name="descriptor-heap-configurability-summary"></a>Resumen de la capacidad de configuración del montón de descriptores
 
-En la tabla siguiente se resume información sobre la compatibilidad con el montón visible de sombreador y no sombreador.
+En la tabla siguiente se resume información sobre la compatibilidad del montón visible de sombreador y no sombreador.
 
 
 
 |                               | Montón de descriptores visibles del sombreador                                                 | Montón de descriptores visibles que no son de sombreador                                                                                                                                                                                                                                                                                                                                  |
 |-------------------------------|--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Tipos de montón admitidos**          | CBV \_ SRV \_ UAV, Sampler                                                         | All                                                                                                                                                                                                                                                                                                                                                                 |
+| **Tipos de montón admitidos**          | CBV \_ SRV \_ UAV, Sampler                                                         | Todo                                                                                                                                                                                                                                                                                                                                                                 |
 | **Propiedades de página de CPU admitidas** | NO \_ DISPONIBLE, COMBINACIÓN DE \_ ESCRITURA                                                 | \_REESCRIBA                                                                                                                                                                                                                                                                                                                                                         |
 | **Administración de residencias por aplicación**   | Sí, aplicación responsable                                                           | No aplicable (no visible para GPU).                                                                                                                                                                                                                                                                                                                                   |
 | **Compatibilidad con la edición de descriptores**       | Copiar solo el destino, mediante la actualización de la lista de comandos o la copia de CPU si la CPU está visible. | Solo lectura y escritura de CPU. Sin acceso directo a GPU. Se puede usar para la copia inmediata de CPU (como origen y destino). Se puede usar como origen de actualización en una lista de comandos: copiará los descriptores en el almacenamiento de la lista de comandos durante el registro de la lista de comandos. En la ejecución, la copia almacenada se copiará en el destino, que debe ser un montón visible del sombreador. |

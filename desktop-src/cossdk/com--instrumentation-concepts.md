@@ -1,5 +1,5 @@
 ---
-description: El servicio de instrumentación COM+ le permite crear sus propios programas de registro y administración de eventos COM+ cuando quiera mostrar varias métricas de rendimiento para los componentes de COM+.
+description: El servicio de instrumentación COM+ le permite crear sus propios programas de registro y administración de eventos COM+ cuando desea mostrar varias métricas de rendimiento para los componentes de COM+.
 ms.assetid: 07f68734-a382-4fe5-86af-90805f61c68d
 title: Conceptos de instrumentación de COM+
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118549513"
 ---
 # <a name="com-instrumentation-concepts"></a>Conceptos de instrumentación de COM+
 
-El servicio de instrumentación COM+ le permite crear sus propios programas de registro y administración de eventos COM+ cuando quiera mostrar varias métricas de rendimiento para los componentes de COM+. La instrumentación com+ también se puede usar para configurar eventos definidos por el usuario y para convertir eventos COM+ al formato Visual Studio Analyzer (VSA) al actualizar paquetes MTS que reciben eventos MTS.
+El servicio de instrumentación COM+ le permite crear sus propios programas de registro y administración de eventos COM+ cuando desea mostrar varias métricas de rendimiento para los componentes de COM+. La instrumentación com+ también se puede usar para configurar eventos definidos por el usuario y para convertir eventos COM+ al formato Visual Studio Analyzer (VSA) al actualizar paquetes MTS que reciben eventos MTS.
 
 > [!Note]  
 > A partir Windows Server 2003, solo los administradores tienen privilegios de acceso de lectura a los registros de seguimiento de eventos del sistema.
@@ -29,9 +29,9 @@ Al suscribirse a los eventos publicados por el publicador de eventos del sistema
 
 Cada métrica tiene una marca de tiempo que indica la hora a la que se generó la métrica, no la hora a la que se envió o recibió. El cliente puede correlacionar la marca de tiempo y averiguar el costo de ejecutar una aplicación COM+, el costo de una transacción ejecutada dentro de una aplicación COM+ o el costo de una llamada de método dentro de una aplicación COM+.
 
-También puede usar el servicio de instrumentación COM+ para filtrar por la información de métricas de rendimiento específica que desea ver. Por ejemplo, cuando se suscribe a un método o interfaz de instrumentación com+, puede especificar propiedades para la suscripción en la estructura [**COMSVCSEVENTINFO,**](/windows/win32/api/comsvcs/ns-comsvcs-comsvcseventinfo) como el identificador de aplicación **(miembro guidApp)** o el identificador de proceso **(miembro dwPid).**
+También puede usar el servicio de instrumentación COM+ para filtrar por la información de métricas de rendimiento específica que desea ver. Por ejemplo, cuando se suscribe a un método o interfaz de instrumentación de COM+, puede especificar propiedades para la suscripción en la estructura [**COMSVCSEVENTINFO,**](/windows/win32/api/comsvcs/ns-comsvcs-comsvcseventinfo) como el identificador de aplicación (miembro **guidApp)** o el identificador de proceso **(miembro dwPid).**
 
-Cuando se especifica el identificador de aplicación, solo se reciben las métricas de la aplicación especificada. Cuando se especifica el identificador de proceso, se reciben métricas de la aplicación de servidor y las aplicaciones de biblioteca especificadas que se cargan en ese proceso. El usuario puede especificar el identificador de aplicación y el identificador de proceso, pero el identificador de la aplicación debe ser el de la aplicación de servidor que se ejecuta en el proceso con el identificador de proceso especificado. Si no se especifica ninguno, el usuario recibe métricas de todas las aplicaciones de servidor y biblioteca.
+Cuando se especifica el identificador de aplicación, solo se reciben las métricas de la aplicación especificada. Cuando se especifica el identificador de proceso, se reciben métricas de las aplicaciones de biblioteca y aplicación de servidor especificadas que se cargan en ese proceso. El usuario puede especificar el identificador de aplicación y el identificador de proceso, pero el identificador de la aplicación debe ser el de la aplicación de servidor que se ejecuta en el proceso con el identificador de proceso especificado. Si no se especifica ninguno, el usuario recibe métricas de todas las aplicaciones de servidor y biblioteca.
 
 Las métricas de instrumentación com+ proporcionan suficiente información para que la aplicación de supervisión las correlaciona con las métricas del sistema operativo para el análisis de rendimiento, el planeamiento de la capacidad y para el modelado y la predicción.
 

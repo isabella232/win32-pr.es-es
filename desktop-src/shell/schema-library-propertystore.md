@@ -15,7 +15,7 @@ ms.locfileid: "118452980"
 
 El <propertyStore> elemento especifica un conjunto de una o varias propiedades usadas por esta biblioteca. Este elemento es opcional y no tiene atributos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <!-- propertyStore -->
@@ -41,7 +41,7 @@ El <propertyStore> elemento especifica un conjunto de una o varias propiedades u
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El <propertyStore> elemento puede tener uno o varios elementos <property> secundarios.
 

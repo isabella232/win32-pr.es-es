@@ -1,5 +1,5 @@
 ---
-description: Más información sobre el campo Windows8Grbits.IndexDotNetGuid
+description: 'Más información sobre: Campo Windows8Grbits.IndexDotNetGuid'
 title: Campo Windows8Grbits.IndexDotNetGuid (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: IndexDotNetGuid field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows8.Windows8Grbits.IndexDotNetGuid
@@ -53,7 +53,7 @@ value = Windows8Grbits.IndexDotNetGuid
 public const CreateIndexGrbit IndexDotNetGuid
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

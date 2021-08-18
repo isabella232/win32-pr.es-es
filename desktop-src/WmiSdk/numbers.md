@@ -1,72 +1,72 @@
 ---
-description: En MOF, los números son dígitos que describen valores numéricos. MOF proporciona una variedad de tipos de datos que se traducen en la automatización y también permite que dichos números estén en formatos diferentes. En la tabla siguiente se enumeran los valores numéricos que MOF admite.
+description: En MOF, los números son dígitos que describen valores numéricos. MOF proporciona una variedad de tipos de datos que se traducen en Automation y también permite que esos números se den en formatos diferentes. En la tabla siguiente se enumeran los valores numéricos que admite MOF.
 ms.assetid: 7a18ed36-9c12-42be-a4ee-0f6c0097b130
 ms.tgt_platform: multiple
 title: Números (WMI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ad348820e0294e76ba059a06b6daa6f1c916d8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f3441988bb91d4bb2f3742016f01cb69996e3dcb55081a6723d851ed74cc1cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118555155"
 ---
 # <a name="numbers-wmi"></a>Números (WMI)
 
-En MOF, los números son dígitos que describen valores numéricos. MOF proporciona una variedad de tipos de datos que se traducen en la automatización y también permite que dichos números estén en formatos diferentes. En la tabla siguiente se enumeran los valores numéricos que MOF admite.
+En MOF, los números son dígitos que describen valores numéricos. MOF proporciona una variedad de tipos de datos que se traducen en Automation y también permite que esos números se den en formatos diferentes. En la tabla siguiente se enumeran los valores numéricos que admite MOF.
 
 
 
 | Tipo de datos  | Tipo de automatización | Descripción                                                                                                                                                             |
 |------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **sint8**  | **I2 de VT \_**      | Entero de 8 bits con signo.<br/>                                                                                                                                        |
-| **sint16** | **I2 de VT \_**      | Entero de 16 bits con signo.<br/>                                                                                                                                       |
+| **sint8**  | **VT \_ I2**      | Entero de 8 bits con signo.<br/>                                                                                                                                        |
+| **sint16** | **VT \_ I2**      | Entero de 16 bits con signo.<br/>                                                                                                                                       |
 | **sint32** | VT \_ I4          | Entero de 32 bits con signo.<br/>                                                                                                                                       |
-| **sint64** | **VT \_ BSTR**    | Entero de 64 bits con signo en forma de cadena. Este tipo sigue el formato hexadecimal o decimal según las reglas de C de American National Standards Institute (ANSI).<br/> |
-| **real32** | **VT \_ R4**      | valor de punto flotante de 4 bytes que sigue el estándar Institute of Electrical and Electronics Engineers, Inc. (IEEE).<br/>                                        |
-| **real64** | **VT \_ R8**      | valor de punto flotante de 8 bytes que sigue al estándar IEEE.<br/>                                                                                                  |
-| **Uint8**  | **VT \_ UI1**     | Entero de 8 bits sin signo.<br/>                                                                                                                                      |
+| **sint64** | **VT \_ BSTR**    | Entero de 64 bits con signo en forma de cadena. Este tipo sigue el formato hexadecimal o decimal según las American National Standards Institute (ANSI) de C.<br/> |
+| **real32** | **VT \_ R4**      | Valor de punto flotante de 4 bytes que sigue el estándar institute of Electrical and Electronics Engineers, Inc. (IEEE).<br/>                                        |
+| **real64** | **VT \_ R8**      | Valor de punto flotante de 8 bytes que sigue el estándar IEEE.<br/>                                                                                                  |
+| **uint8**  | **VT \_ UI1**     | Entero de 8 bits sin signo.<br/>                                                                                                                                      |
 | **uint16** | **VT \_ I4**      | Entero de 16 bits sin signo.<br/>                                                                                                                                     |
-| **uint32** | **VT \_ I4**      | Entero de bit 32 sin signo.<br/>                                                                                                                                     |
-| **uint64** | **VT \_ BSTR**    | Entero de 64 bits sin signo en forma de cadena. Este tipo sigue el formato hexadecimal o decimal de acuerdo con las reglas de ANSI C.<br/>                                           |
+| **uint32** | **VT \_ I4**      | Entero de 32 bits sin signo.<br/>                                                                                                                                     |
+| **uint64** | **VT \_ BSTR**    | Entero de 64 bits sin signo en forma de cadena. Este tipo sigue el formato hexadecimal o decimal según las reglas ansi C.<br/>                                           |
 
 
 
  
 
-Aunque es flexible, el código MOF encuentra algunos cambios al tratar con la automatización:
+Aunque es flexible, el código MOF encuentra algunos cambios al tratar con Automation:
 
 -   Debe codificar enteros de 64 bits como cadenas.
 
     Automation no admite un tipo entero de 64 bits.
 
--   Los tipos de automatización no siempre se corresponden en tamaño de bits a los tipos de datos MOF.
+-   Los tipos de automatización no siempre se corresponden en tamaño de bits con tipos de datos MOF.
 
-    Por ejemplo, Automation utiliza VT \_ I4 para devolver un valor de 16 bits sin signo. Esta discrepancia existe debido a problemas de extensión de signo. Si Automation usaba VT \_ I2 en lugar de VT \_ I4, 65.536 sería el valor 1, lo que provocaría problemas de tipo y de intervalo. Del mismo modo, Automation representa el tipo **UInt32** como VT \_ I4 porque no existe un tipo entero más grande que contenga **UInt32**.
+    Por ejemplo, Automation usa VT I4 para devolver un valor de \_ 16 bits sin signo. Esta discrepancia existe debido a problemas de extensión de inicio de sesión. Si Automation usa VT I2 en lugar de \_ VT \_ I4, 65 536 parecería ser el valor 1, lo que causaría problemas de tipo e intervalo. De forma similar, Automation representa el **tipo uint32** como VT I4 porque no existe ningún tipo entero mayor \_ que contenga **uint32**.
 
--   No es necesario cambiar ninguna representación de los tipos de números de 8 bits.
+-   No es necesario cambiar ninguna representación para los tipos numéricos de 8 bits.
 
     Automation admite VT \_ UI1, un tipo de 8 bits sin signo.
 
-MOF admite constantes largas. Declare una constante larga mediante una serie simple de dígitos con un signo negativo opcional. Una constante larga no puede superar el tamaño de la variable que se declara para contenerla. Algunos ejemplos de constantes largas son 1000 y 12310.
+MOF admite constantes largas. Una constante larga se declara mediante una serie simple de dígitos con un signo negativo opcional. Una constante long no puede superar el tamaño de la variable declarada para contenerla. Algunos ejemplos de constantes largas son 1000 y 12310.
 
-MOF también admite formatos numéricos alternativos. En la tabla siguiente se enumeran los caracteres especiales que se deben usar para describir las constantes hexadecimales, binarias y octales.
+MOF también admite formatos numéricos alternativos. En la tabla siguiente se enumeran los caracteres especiales que debe usar para describir las constantes hexadecimales, binarias y octales.
 
 
 
 | Constante               | Carácter especial     | Ejemplo                   |
 |------------------------|-----------------------|---------------------------|
-| Decimal<br/>     | None<br/>       | Val = 65<br/>       |
-| Hexadecimal<br/> | Prefijo 0x<br/>  | Val = 0x41<br/>     |
-| Octal<br/>       | Primer 0<br/>  | Val = 0101<br/>     |
-| Binary<br/>      | B final<br/> | Val = 1000001B<br/> |
+| Decimal<br/>     | Ninguno<br/>       | val = 65<br/>       |
+| Hexadecimal<br/> | Prefijo 0x<br/>  | val = 0x41<br/>     |
+| Octal<br/>       | Inicial 0<br/>  | val = 0101<br/>     |
+| Binary<br/>      | Final B<br/> | val = 1000001B<br/> |
 
 
 
  
 
-Puede usar una constante de punto flotante para representar la notación científica y las fracciones, como se muestra a continuación:
+Puede usar una constante de punto flotante para representar la notación científica, así como las fracciones, como se muestra a continuación:
 
 ``` syntax
 3.14
@@ -74,9 +74,9 @@ Puede usar una constante de punto flotante para representar la notación cientí
 -1.2778E+02
 ```
 
-WMI considera las constantes de punto flotante como tipos de **VT \_ R8** para la automatización.
+WMI considera constantes de punto flotante como **tipos VT \_ R8** para Automation.
 
-En el ejemplo siguiente se describen las declaraciones de clase e instancia que muestran cómo usar cada uno de los tipos de datos numéricos para establecer propiedades:
+En el ejemplo siguiente se describen declaraciones de clase e instancia que muestran cómo usar cada uno de los tipos de datos numéricos para establecer propiedades:
 
 ``` syntax
 Class NumericDataClass

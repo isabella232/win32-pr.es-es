@@ -1,17 +1,17 @@
 ---
 description: Especifica el formato de compresión de vídeo.
 ms.assetid: fdd3fce9-f507-4581-bd68-74a854581200
-title: System. video. Compression
+title: System.Video.Compression
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2bff7eb807d98f00115edd7956f9cdcfb43fb98
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7494bc8d08a8c53081d18e28b2cb2b399ef15bf0cb81d97eded8a491476c478a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118464463"
 ---
-# <a name="systemvideocompression"></a>System. video. Compression
+# <a name="systemvideocompression"></a>System.Video.Compression
 
 Especifica el formato de compresión de vídeo.
 
@@ -31,11 +31,11 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de esta propiedad es una representación de cadena de un GUID en formato canónico: "{xxxxxxxx-XXXX-XXXX-XXXX-XXXXXXXXXXXX}". El GUID especifica el formato de vídeo. Para ver los valores posibles, consulte [GUID de subtipo de vídeo](../medfound/video-subtype-guids.md).
+El valor de esta propiedad es una representación de cadena de un GUID en formato canónico: "{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}". El GUID especifica el formato de vídeo. Para ver los valores posibles, [consulte GUID de subtipo de vídeo.](../medfound/video-subtype-guids.md)
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -50,7 +50,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -62,7 +62,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -80,7 +80,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

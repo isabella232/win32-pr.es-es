@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: clase VistaColInfo'
-title: Clase VistaColInfo (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: VistaColInfo (clase)'
+title: Clase VistaColInfo (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: VistaColInfo class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Vista.VistaColInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistacolinfo(v=EXCHG.10)
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5319a763c657988cb6cd58d0fc7aca7e89a65a11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d2603b792d2003fb2a69e866c9752b975ca7b916e062e9e6aa1a45b2a24690c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117889867"
 ---
-# <a name="vistacolinfo-class"></a>Clase VistaColInfo
+# <a name="vistacolinfo-class"></a>VistaColInfo (clase)
 
-Niveles de información de columna que se han agregado a la versión de vista de ESENT.
+Niveles de información de columna que se han agregado a la versión vista de ESENT.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. vista. VistaColInfo  
+  Microsoft.Isam.Esent.Interop.Vista.VistaColInfo  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -64,4 +64,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

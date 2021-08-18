@@ -48,18 +48,18 @@ typedef enum D3DXPARAMETER_CLASS {
 <span id="D3DXPC_SCALAR"></span><span id="d3dxpc_scalar"></span>**D3DXPC \_ SCALAR**
 </dt> <dd>
 
-La constante es escalar.
+Constante es un valor escalar.
 
 </dd> <dt>
 
 <span id="D3DXPC_VECTOR"></span><span id="d3dxpc_vector"></span>**D3DXPC \_ VECTOR**
 </dt> <dd>
 
-La constante es un vector.
+Constante es un vector.
 
 </dd> <dt>
 
-<span id="D3DXPC_MATRIX_ROWS"></span><span id="d3dxpc_matrix_rows"></span>**FILAS DE MATRIZ \_ \_ D3DXPC**
+<span id="D3DXPC_MATRIX_ROWS"></span><span id="d3dxpc_matrix_rows"></span>**FILAS DE MATRIZ D3DXPC \_ \_**
 </dt> <dd>
 
 Constante es una matriz principal de filas.
@@ -69,11 +69,11 @@ Constante es una matriz principal de filas.
 <span id="D3DXPC_MATRIX_COLUMNS"></span><span id="d3dxpc_matrix_columns"></span>**COLUMNAS DE MATRIZ \_ \_ D3DXPC**
 </dt> <dd>
 
-Constante es una matriz principal de columnas.
+Constante es una matriz principal de columna.
 
 </dd> <dt>
 
-<span id="D3DXPC_OBJECT"></span><span id="d3dxpc_object"></span>**D3DXPC \_ OBJECT**
+<span id="D3DXPC_OBJECT"></span><span id="d3dxpc_object"></span>**D3DXPC \_ (OBJETO)**
 </dt> <dd>
 
 Constante es una textura, un sombreador o una cadena.
@@ -83,14 +83,14 @@ Constante es una textura, un sombreador o una cadena.
 <span id="D3DXPC_STRUCT"></span><span id="d3dxpc_struct"></span>**D3DXPC \_ (STRUCT)**
 </dt> <dd>
 
-Constante es una estructura .
+Constante es una estructura.
 
 </dd> <dt>
 
 <span id="D3DXPC_FORCE_DWORD"></span><span id="d3dxpc_force_dword"></span>**D3DXPC \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase en un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 

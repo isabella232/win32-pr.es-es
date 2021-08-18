@@ -1,5 +1,5 @@
 ---
-description: 'Al implementar su propio reconocedor de gestos de Microsoft, debe definir el nombre y el valor del intervalo Unicode para cualquier gesto que el reconocedor reconozca. Si decide implementar los gestos que ya se admiten o definen como parte del reconocedor de gestos de Microsoft, use los nombres definidos y los valores de intervalo Unicode para estos gestos. Toda la colección de nombres y valores de intervalo Unicode para los gestos implementados y no implementados en el reconocedor de gestos de Microsoft se proporciona en el archivo de encabezado Recdefs.h (instalado de forma predeterminada en C: Archivos de programa, Microsoft \\ Tablet PC Platform SDK \\ \\ Include). Los nombres de gestos y los valores de intervalo Unicode también se muestran en las tablas siguientes. Nota El gesto GESTURE NULL se usa para indicar que un \_ reconocedor no reconoce la entrada como gesto.'
+description: 'Al implementar su propio reconocedor de gestos de Microsoft, debe definir el nombre y el valor del intervalo Unicode para cualquier gesto que el reconocedor reconozca. Si decide implementar los gestos que ya se admiten o definen como parte del reconocedor de gestos de Microsoft, use los nombres definidos y los valores de intervalo Unicode para estos gestos. Toda la colección de nombres y valores de intervalo Unicode para los gestos implementados y no implementados en el reconocedor de gestos de Microsoft se proporciona en el archivo de encabezado Recdefs.h (instalado de forma predeterminada en C: Archivos de programa, Incluido el SDK de la plataforma de PC para tabletas de \\ \\ \\ Microsoft). Los nombres de gestos y los valores de intervalo Unicode también se muestran en las tablas siguientes. Nota El gesto GESTURE NULL se usa para indicar que un reconocedor \_ no reconoce la entrada como gesto.'
 ms.assetid: 931fc69a-1f7a-492c-8158-0691cd2fe57a
 title: Valores de intervalo Unicode de gestos
 ms.topic: article
@@ -15,7 +15,7 @@ ms.locfileid: "118449239"
 
 Al implementar su propio reconocedor de gestos de Microsoft, debe definir el nombre y el valor del intervalo Unicode para cualquier gesto que el reconocedor reconozca.
 
-Si decide implementar los gestos que ya se admiten o definen como parte del reconocedor de gestos de Microsoft, use los nombres definidos y los valores de intervalo Unicode para estos gestos. Toda la colección de nombres y valores de intervalo Unicode para los gestos implementados y no implementados en el reconocedor de gestos de Microsoft se proporciona en el archivo de encabezado Recdefs.h (instalado de forma predeterminada en C: Archivos de programa, Microsoft \\ Tablet PC Platform SDK \\ \\ Include). Los nombres de gestos y los valores de intervalo Unicode también se muestran en las tablas siguientes.
+Si decide implementar los gestos que ya se admiten o definen como parte del reconocedor de gestos de Microsoft, use los nombres definidos y los valores de intervalo Unicode para estos gestos. Toda la colección de nombres y valores de intervalo Unicode para los gestos implementados y no implementados en el reconocedor de gestos de Microsoft se proporciona en el archivo de encabezado Recdefs.h (instalado de forma predeterminada en C: Archivos de programa, Incluido el SDK de la plataforma de PC para tabletas de \\ \\ \\ Microsoft). Los nombres de gestos y los valores de intervalo Unicode también se muestran en las tablas siguientes.
 
 > [!Note]  
 > El gesto GESTURE \_ NULL se usa para indicar que un reconocedor no reconoce la entrada como gesto.
@@ -30,17 +30,17 @@ Si decide implementar los gestos que ya se admiten o definen como parte del reco
 |---------------------------------------|---------------------|
 | GESTURE \_ NULL<br/>              | 0xf000<br/>   |
 | SCRATCHOUT \_ DE GESTO<br/>        | 0xf001<br/>   |
-| TRIÁNGULO DE \_ GESTOS<br/>          | 0xf002<br/>   |
-| CUADRADO DE \_ GESTOS<br/>            | 0xf003<br/>   |
-| ESTRELLA DE \_ GESTO<br/>              | 0xf004<br/>   |
+| TRIÁNGULO \_ GESTUAL<br/>          | 0xf002<br/>   |
+| CUADRADO DE \_ GESTO<br/>            | 0xf003<br/>   |
+| ESTRELLA \_ DE GESTO<br/>              | 0xf004<br/>   |
 | COMPROBACIÓN DE \_ GESTOS<br/>             | 0xf005<br/>   |
 | \_CURLICUE DE GESTO<br/>          | 0xf010<br/>   |
-| GESTURE \_ DOUBLE \_ CURLICUE<br/>  | 0xf011<br/>   |
+| GESTO \_ DOBLE \_ CURLICUE<br/>  | 0xf011<br/>   |
 | CÍRCULO DE \_ GESTOS<br/>            | 0xf020<br/>   |
-| CÍRCULO \_ DOBLE \_ DE GESTO<br/>    | 0xf021<br/>   |
+| CÍRCULO \_ DOBLE DE \_ GESTO<br/>    | 0xf021<br/>   |
 | GESTO \_ SEMICIRCLE \_ LEFT<br/>  | 0xf028<br/>   |
 | GESTO \_ SEMICIRCLE \_ RIGHT<br/> | 0xf029<br/>   |
-| BOTÓN \_ DE CONTENIDO ADICIONAL DE \_ GESTOS HACIA ARRIBA<br/>       | 0xf030<br/>   |
+| BOTÓN \_ DE CONTENIDO ADICIONAL DE \_ GESTO<br/>       | 0xf030<br/>   |
 | BOTÓN \_ DE CONTENIDO ADICIONAL DE \_ GESTOS HACIA ABAJO<br/>     | 0xf031<br/>   |
 | BOTÓN \_ DE CONTENIDO ADICIONAL DE GESTO A LA \_ IZQUIERDA<br/>     | 0xf032<br/>   |
 | BOTÓN \_ DE CONTENIDO ADICIONAL DE GESTO A LA \_ DERECHA<br/>    | 0xf033<br/>   |
@@ -56,15 +56,15 @@ Si decide implementar los gestos que ya se admiten o definen como parte del reco
 | GESTO \_ HACIA \_ ARRIBA<br/>          | 0xf061<br/>   |
 | GESTO \_ A LA \_ DERECHA<br/>       | 0xf062<br/>   |
 | GESTO \_ A LA DERECHA \_ IZQUIERDA<br/>       | 0xf063<br/>   |
-| GESTURE \_ UP \_ LEFT \_ LONG<br/>    | 0xf064<br/>   |
-| GESTO \_ HACIA ARRIBA A LA DERECHA \_ \_ LARGO<br/>   | 0xf065<br/>   |
+| GESTO \_ HACIA ARRIBA A LA IZQUIERDA \_ \_ LARGO<br/>    | 0xf064<br/>   |
+| GESTO \_ HACIA ARRIBA A LA \_ \_ DERECHA<br/>   | 0xf065<br/>   |
 | GESTO \_ HACIA ABAJO A LA IZQUIERDA \_ \_ LARGO<br/>  | 0xf066<br/>   |
-| GESTO \_ HACIA ABAJO A LA DERECHA \_ \_ LARGO<br/> | 0xf067<br/>   |
+| GESTO \_ HACIA ABAJO A LA \_ \_ DERECHA<br/> | 0xf067<br/>   |
 | GESTO \_ HACIA ARRIBA A LA \_ IZQUIERDA<br/>          | 0xf068<br/>   |
 | GESTO \_ HACIA ARRIBA A LA \_ DERECHA<br/>         | 0xf069<br/>   |
 | GESTO \_ HACIA ABAJO A LA \_ IZQUIERDA<br/>        | 0xf06a<br/>   |
 | GESTO \_ HACIA ABAJO A LA \_ DERECHA<br/>       | 0xf06b<br/>   |
-| GESTO \_ A LA \_ IZQUIERDA<br/>          | 0xf06c<br/>   |
+| GESTO \_ DE IZQUIERDA HACIA \_ ARRIBA<br/>          | 0xf06c<br/>   |
 | GESTO \_ A LA \_ IZQUIERDA<br/>        | 0xf06d<br/>   |
 | GESTO \_ HACIA \_ ARRIBA<br/>         | 0xf06e<br/>   |
 | GESTO \_ HACIA \_ ABAJO<br/>       | 0xf06f<br/>   |
@@ -126,53 +126,53 @@ Si decide implementar los gestos que ya se admiten o definen como parte del reco
 | LETRA \_ \_ GESTUAL J<br/>            | 0xf089<br/>   |
 | LETRA \_ DE GESTO \_ K<br/>            | 0xf08a<br/>   |
 | LETRA \_ \_ GESTUAL L<br/>            | 0xf08b<br/>   |
-| LETRA \_ DE \_ GESTO M<br/>            | 0xf08c<br/>   |
+| LETRA \_ DE GESTO \_ M<br/>            | 0xf08c<br/>   |
 | LETRA \_ \_ GESTUAL N<br/>            | 0xf08d<br/>   |
 | LETRA \_ O DE \_ GESTO<br/>            | 0xf08e<br/>   |
 | LETRA \_ DE GESTO \_ P<br/>            | 0xf08f<br/>   |
 | LETRA \_ \_ GESTUAL Q<br/>            | 0xf090<br/>   |
-| GESTURE \_ LETTER \_ R<br/>            | 0xf091<br/>   |
-| LETRA \_ \_ GESTUAL S<br/>            | 0xf092<br/>   |
-| GESTURE \_ LETTER \_ T<br/>            | 0xf093<br/>   |
-| GESTURE \_ LETTER \_ U<br/>            | 0xf094<br/>   |
-| GESTURE \_ LETTER \_ V<br/>            | 0xf095<br/>   |
-| GESTURE \_ LETTER \_ W<br/>            | 0xf096<br/>   |
+| LETRA \_ \_ GESTUAL R<br/>            | 0xf091<br/>   |
+| LETRAS \_ \_ GESTUALES S<br/>            | 0xf092<br/>   |
+| LETRA \_ DE GESTO \_ T<br/>            | 0xf093<br/>   |
+| LETRA \_ DE GESTO \_ U<br/>            | 0xf094<br/>   |
+| LETRA \_ \_ GESTUAL V<br/>            | 0xf095<br/>   |
+| LETRA \_ \_ GESTUAL W<br/>            | 0xf096<br/>   |
 | LETRA \_ DE GESTO \_ X<br/>            | 0xf097<br/>   |
-| GESTURE \_ LETTER \_ Y<br/>            | 0xf098<br/>   |
-| GESTURE \_ LETTER \_ Z<br/>            | 0xf099<br/>   |
-| DÍGITO \_ DE GESTO \_ 0<br/>             | 0xf09a<br/>   |
-| DÍGITO \_ DE GESTO \_ 1<br/>             | 0xf09b<br/>   |
-| DÍGITO \_ DE \_ GESTO 2<br/>             | 0xf09c<br/>   |
-| DÍGITO \_ \_ 3 DE GESTO<br/>             | 0xf09d<br/>   |
-| DÍGITO \_ DE GESTO \_ 4<br/>             | 0xf09e<br/>   |
-| DÍGITO \_ DE GESTO \_ 5<br/>             | 0xf09f<br/>   |
-| DÍGITO \_ DE GESTO \_ 6<br/>             | 0xf0a0<br/>   |
-| DÍGITO \_ DE GESTO \_ 7<br/>             | 0xf0a1<br/>   |
-| DÍGITO \_ \_ 8 DE GESTO<br/>             | 0xf0a2<br/>   |
-| DÍGITO \_ \_ 9 DE GESTO<br/>             | 0xf0a3<br/>   |
+| LETRA \_ DE GESTO \_ Y<br/>            | 0xf098<br/>   |
+| LETRA \_ Z DE \_ GESTO<br/>            | 0xf099<br/>   |
+| DÍGITO \_ DE \_ GESTO 0<br/>             | 0xf09a<br/>   |
+| DÍGITO \_ DE \_ GESTO 1<br/>             | 0xf09b<br/>   |
+| GESTO \_ DÍGITO \_ 2<br/>             | 0xf09c<br/>   |
+| GESTO \_ DÍGITO \_ 3<br/>             | 0xf09d<br/>   |
+| DÍGITO \_ DE \_ GESTO 4<br/>             | 0xf09e<br/>   |
+| DÍGITO \_ DE \_ GESTO 5<br/>             | 0xf09f<br/>   |
+| DÍGITO \_ DE \_ GESTO 6<br/>             | 0xf0a0<br/>   |
+| GESTO \_ DÍGITO \_ 7<br/>             | 0xf0a1<br/>   |
+| GESTO \_ DÍGITO \_ 8<br/>             | 0xf0a2<br/>   |
+| GESTO \_ DÍGITO \_ 9<br/>             | 0xf0a3<br/>   |
 | PREGUNTA DE \_ GESTO<br/>             | 0xf0a5<br/>   |
-| GESTO \_ NÍTIDO<br/>                | 0xf0a6<br/>   |
-| DÓLAR \_ GESTO<br/>               | 0xf0a7<br/>   |
+| GESTO \_ SHARP<br/>                | 0xf0a6<br/>   |
+| DÓLAR \_ GESTUAL<br/>               | 0xf0a7<br/>   |
 | ASTERISCO DE \_ GESTO<br/>             | 0xf0a8<br/>   |
 | GESTO \_ MÁS<br/>                 | 0xf0a9<br/>   |
 | GESTO \_ DOBLE \_ ARRIBA<br/>           | 0xf0b8<br/>   |
 | GESTO \_ DOBLE \_ HACIA ABAJO<br/>         | 0xf0b9<br/>   |
 | GESTO \_ DOBLE A LA \_ IZQUIERDA<br/>         | 0xf0ba<br/>   |
-| GESTO \_ DOBLE \_ DERECHA<br/>        | 0xf0bb<br/>   |
+| GESTO \_ DOBLE A LA \_ DERECHA<br/>        | 0xf0bb<br/>   |
 | GESTO \_ TRIPLE \_ ARRIBA<br/>           | 0xf0bc<br/>   |
-| GESTURE \_ TRIPLE \_ DOWN<br/>         | 0xf0bd<br/>   |
+| GESTO \_ TRIPLE \_ HACIA ABAJO<br/>         | 0xf0bd<br/>   |
 | GESTO \_ TRIPLE A LA \_ IZQUIERDA<br/>         | 0xf0be<br/>   |
 | GESTO \_ TRIPLE \_ DERECHA<br/>        | 0xf0bf<br/>   |
 | CORCHETE \_ DE \_ GESTOS SOBRE<br/>        | 0xf0e4<br/>   |
-| CORCHETE \_ DE \_ GESTOS BAJO<br/>       | 0xf0e5<br/>   |
-| CORCHETE \_ DE \_ GESTOS A LA IZQUIERDA<br/>        | 0xf0e6<br/>   |
+| CORCHETE \_ DE \_ GESTOS EN<br/>       | 0xf0e5<br/>   |
+| CORCHETE \_ DE GESTO A LA \_ IZQUIERDA<br/>        | 0xf0e6<br/>   |
 | CORCHETE \_ DE \_ GESTOS A LA DERECHA<br/>       | 0xf0e7<br/>   |
-| LLAVE \_ DE \_ GESTOS SOBRE<br/>          | 0xf0e8<br/>   |
+| LLAVE \_ DE GESTO \_ SOBRE<br/>          | 0xf0e8<br/>   |
 | LLAVE \_ DE GESTO \_ EN<br/>         | 0xf0e9<br/>   |
 | LLAVE \_ DE GESTO A LA \_ IZQUIERDA<br/>          | 0xf0ea<br/>   |
 | LLAVE \_ DE GESTO A LA \_ DERECHA<br/>         | 0xf0eb<br/>   |
 | GESTO \_ TRIPLE \_ TAP<br/>          | 0xf0f2<br/>   |
-| PULSAR \_ \_ CUÁD DE GESTOS<br/>            | 0xf0f3<br/>   |
+| PULSACIÓN \_ DE \_ CUÁDUAL DE GESTO<br/>            | 0xf0f3<br/>   |
 
 
 

@@ -2,7 +2,7 @@
 description: 'Método reset de la CIM_Sensor : el método Reset solicita un restablecimiento del dispositivo lógico. Este método se hereda de \_ CIM LogicalDevice.'
 ms.assetid: d764986b-b512-4f38-8284-d16b1f670871
 ms.tgt_platform: multiple
-title: Método reset de la clase CIM_Sensor clase
+title: Método Reset de la clase CIM_Sensor clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:

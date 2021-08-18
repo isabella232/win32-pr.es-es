@@ -1,7 +1,7 @@
 ---
-description: Obtiene la transformación de la vista que se aplica a todos los sprites.
+description: Obtenga la transformación de vista que se aplica a todos los sprites.
 ms.assetid: eba45c08-64cc-4119-83d4-50351fe21bea
-title: 'ID3DX10Sprite:: GetViewTransform (método) (D3DX10. h)'
+title: Método ID3DX10Sprite::GetViewTransform (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 699a46e48545d58058fb1f2db2955b4a4f403a53
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 664cded793fff7b37c7d1218d8d87d50cc0bc57ac290a4bba07bff0cdf169050
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117736034"
 ---
-# <a name="id3dx10spritegetviewtransform-method"></a>ID3DX10Sprite:: GetViewTransform (método)
+# <a name="id3dx10spritegetviewtransform-method"></a>Método ID3DX10Sprite::GetViewTransform
 
-Obtiene la transformación de la vista que se aplica a todos los sprites.
+Obtenga la transformación de vista que se aplica a todos los sprites.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT GetViewTransform(
 
 <dl> <dt>
 
-*pViewTransform* \[ enuncia\]
+*pViewTransform* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntero a un [**D3DX10MATRIX**](d3d10-d3dxmatrix.md) que se establecerá en la transformación del Sprite a partir del espacio universal original.
+Puntero a [**D3DX10MATRIX**](d3d10-d3dxmatrix.md) que se establecerá en la transformación del sprite desde el espacio del mundo original.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntero a un [**D3DX10MATRIX**](d3d10-d3dxmatrix.md) que se establecerá en la t
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente: D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 [ID3DX10Sprite](id3dx10sprite.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

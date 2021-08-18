@@ -1,5 +1,5 @@
 ---
-description: Se envía a la ventana más afectada después de que se haya cambiado el idioma de entrada de una aplicación. Debe realizar cualquier configuración específica de la aplicación y pasar el mensaje a la función DefWindowProc, que pasa el mensaje a todas las ventanas secundarias de primer nivel.
+description: Se envía a la ventana más afectada después de cambiar el idioma de entrada de una aplicación. Debe realizar cualquier configuración específica de la aplicación y pasar el mensaje a la función DefWindowProc, que pasa el mensaje a todas las ventanas secundarias de primer nivel.
 ms.assetid: 4d403b1d-f6f7-40d5-9bf5-6a9c4da0803c
 title: Mensaje WM_INPUTLANGCHANGE (Winuser.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118436250"
 ---
 # <a name="wm_inputlangchange-message"></a>Mensaje \_ DE WM INPUTLANGCHANGE
 
-Se envía a la ventana más afectada después de que se haya cambiado el idioma de entrada de una aplicación. Debe realizar cualquier configuración específica de la aplicación y pasar el mensaje a la función [**DefWindowProc,**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) que pasa el mensaje a todas las ventanas secundarias de primer nivel. Estas ventanas secundarias pueden pasar el mensaje [**a DefWindowProc para**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) que pase el mensaje a sus ventanas secundarias, y así sucesivamente.
+Se envía a la ventana más afectada después de cambiar el idioma de entrada de una aplicación. Debe realizar cualquier configuración específica de la aplicación y pasar el mensaje a la función [**DefWindowProc,**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) que pasa el mensaje a todas las ventanas secundarias de primer nivel. Estas ventanas secundarias pueden pasar el mensaje [**a DefWindowProc para**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) que pase el mensaje a sus ventanas secundarias, y así sucesivamente.
 
 Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
@@ -51,7 +51,7 @@ Tipo: **LRESULT**
 
 Una aplicación debe devolver un valor distinto de cero si procesa este mensaje.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Puede recuperar el nombre de [la configuración regional del teclado](../Intl/locale-names.md) mediante la función [LCIDToLocaleName.](/windows/win32/api/winnls/nf-winnls-lcidtolocalename) Con el nombre de configuración regional puede usar funciones [de configuración regional modernas:](/windows/win32/intl/calling-the--locale-name--functions)
 
@@ -69,13 +69,13 @@ case WM_INPUTLANGCHANGE:
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
 | Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 **Referencia**
 

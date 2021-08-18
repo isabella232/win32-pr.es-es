@@ -1,6 +1,6 @@
 ---
-description: Implementado por el explorador. Expone métodos que administran qué monitor contiene la barra de tareas de Windows en un sistema de varios monitores.
-title: Interfaz IMultiMonitorDockingSite
+description: Implementado por el explorador. Expone métodos que administran qué monitor contiene la Windows de tareas en un sistema de varios monitores.
+title: IMultiMonitorDockingSite (interfaz)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_type:
 - COM
 api_location: ''
 ms.assetid: af9a7a9e-bd7c-4b17-9cb6-008df5c820d8
-ms.openlocfilehash: 5ea3461d00c16f7384d7396e2f03946d517c460f
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: a5a17e8206af8f0821833f4b2ea250606de29b6fbe74b7a29ced6c5b5dc13ed0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118458225"
 ---
-# <a name="imultimonitordockingsite-interface"></a>Interfaz IMultiMonitorDockingSite
+# <a name="imultimonitordockingsite-interface"></a>IMultiMonitorDockingSite (interfaz)
 
-Implementado por el explorador. Expone métodos que administran qué monitor contiene la barra de tareas de Windows en un sistema de varios monitores.
+Implementado por el explorador. Expone métodos que administran qué monitor contiene la Windows de tareas en un sistema de varios monitores.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 La **interfaz IMultiMonitorDockingSite** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IMultiMonitorDockingSite** también tiene estos tipos de miembros:
 
@@ -45,7 +45,7 @@ La **interfaz IMultiMonitorDockingSite** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Normalmente no se implementa la **interfaz IMultiMonitorDockingSite.** El explorador shell implementa esta interfaz para admitir varios monitores.
 
@@ -53,10 +53,10 @@ Normalmente no se implementa la **interfaz IMultiMonitorDockingSite.** El explor
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/> |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                   |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                   |
 
 
 

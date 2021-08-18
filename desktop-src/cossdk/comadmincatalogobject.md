@@ -30,7 +30,7 @@ ESTA clase se implementa mediante COM+.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |------------|------------------------------------------|
 | Interfaces | [**ICatalogObject**](/windows/desktop/api/ComAdmin/nn-comadmin-icatalogobject) |
 
@@ -48,13 +48,13 @@ Para obtener información sobre colecciones específicas y sus propiedades, vea 
 
 Para obtener una introducción a la administración mediante programación de COM+, vea [Automatización de la administración de COM+.](automating-com--administration.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 No se puede crear directamente **un objeto COMAdminCatalogObject.** Para usar los métodos de este objeto, debe crear un objeto [**COMAdminCatalog,**](comadmincatalog.md) obtener una referencia a [**ICOMAdminCatalog**](/windows/desktop/api/ComAdmin/nn-comadmin-icomadmincatalog)y, a continuación, usar [**ICOMAdminCatalog::GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-getcollection) para obtener una referencia a una interfaz [**ICatalogCollection**](/windows/desktop/api/ComAdmin/nn-comadmin-icatalogcollection) que representa una colección de nivel superior o usar [**ICatalogCollection::GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-getcollection) para acceder a colecciones que no son de nivel superior.
 
 Una vez que tenga una referencia a la interfaz [**ICatalogCollection**](/windows/desktop/api/ComAdmin/nn-comadmin-icatalogcollection) de la colección en la que está interesado, llame a [**ICatalogCollection::P opulate**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate) para rellenar la colección con todos sus elementos. Itera por cada uno de los elementos de la colección llamando a [**ICatalogCollection::get \_ Item**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-get_item) para obtener una referencia a cada [**interfaz ICatalogObject.**](/windows/desktop/api/ComAdmin/nn-comadmin-icatalogobject) Cuando encuentre el elemento de interés, puede modificar las propiedades del elemento y salir de la iteración. Si realiza cambios en los elementos de una colección, debe llamar a [**ICatalogCollection::SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) para guardar los cambios en el catálogo de COM+.
 
-Esto se muestra en el ejemplo siguiente, donde "TopCollection" debe reemplazarse por el nombre de una de las colecciones de administración de COM+ de nivel superior; "ItemName" debe reemplazarse por el nombre del elemento que le interesa; "PropertyName" debe reemplazarse por el nombre de la propiedad que se va a modificar en el elemento; y varNewProp deben reemplazarse por un variant que contenga el nuevo valor de la propiedad.
+Esto se muestra en el ejemplo siguiente, donde "TopCollection" debe reemplazarse por el nombre de una de las colecciones de administración de COM+ de nivel superior; "ItemName" debe reemplazarse por el nombre del elemento que le interesa. "PropertyName" debe reemplazarse por el nombre de la propiedad que se va a modificar en el elemento; y varNewProp deben reemplazarse por un variant que contenga el nuevo valor de la propiedad .
 
 
 ```C++
@@ -132,7 +132,7 @@ objAppCollection.SaveChanges
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -141,7 +141,7 @@ objAppCollection.SaveChanges
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

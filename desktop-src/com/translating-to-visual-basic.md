@@ -15,7 +15,7 @@ ms.locfileid: "118550619"
 
 Puede agregar un objeto COM al proyecto Visual Basic como referencia o como componente. Una vez que el objeto se agrega al proyecto, la aplicación puede acceder a sus clases e interfaces. A continuación, puede usar Visual Basic Explorador de objetos para ver la información de la biblioteca de tipos del objeto en Visual Basic sintaxis.
 
-Normalmente, los controles se agregan a un proyecto como componentes y noncontrols se agregan como referencias. Cuando se agrega un objeto COM como componente, aparece en el cuadro Visual Basic de herramientas. Las nuevas instancias de ese objeto se crean arrastrando el icono de objeto desde el cuadro de herramientas a Visual Basic formulario u otro tipo de contenedor. Las nuevas instancias de objetos COM agregados como referencias se crean mediante la **palabra clave new.**
+Normalmente, los controles se agregan a un proyecto como componentes y noncontrols se agregan como referencias. Cuando se agrega un objeto COM como componente, aparece en el cuadro de Visual Basic de herramientas. Las nuevas instancias de ese objeto se crean arrastrando el icono de objeto desde el cuadro de herramientas a Visual Basic formulario u otro tipo de contenedor. Las nuevas instancias de objetos COM agregados como referencias se crean mediante la **palabra clave new.**
 
 La distinción entre usar una clase como referencia frente a un componente es sutil pero importante. Al agregar un objeto como referencia, solo puede usar la biblioteca de tipos que proporciona el control o la biblioteca de tipos "sin formato".
 

@@ -1,5 +1,5 @@
 ---
-description: Se usa para asociar una instancia de CIM RegisteredProfile a una instancia de CIM RegisteredProfile de otro perfil que hace referencia \_ al perfil dependiente como un perfil \_ relacionado.
+description: Se usa para asociar una instancia de CIM RegisteredProfile a una instancia de CIM RegisteredProfile de otro perfil que hace referencia al perfil \_ dependiente como un perfil \_ relacionado.
 ms.assetid: 631003de-477b-4447-9633-1601a7f8eadb
 ms.tgt_platform: multiple
 title: CIM_ReferencedProfile clase
@@ -25,10 +25,10 @@ ms.locfileid: "118556829"
 ---
 # <a name="cim_referencedprofile-class"></a>Cim \_ ReferencedProfile (clase)
 
-Se usa para asociar una [**instancia de CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) a una instancia de **CIM \_ RegisteredProfile** de otro perfil que hace referencia al perfil dependiente como un perfil relacionado.
+Se usa para asociar una instancia [**de CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) a una instancia de **CIM \_ RegisteredProfile** de otro perfil que hace referencia al perfil dependiente como un perfil relacionado.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. ACTUALMENTE, WMI solo admite los [esquemas de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,13 +47,13 @@ class CIM_ReferencedProfile : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ CIM ReferencedProfile** tiene estos tipos de miembros:
+La **clase CIM \_ ReferencedProfile** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ CIM ReferencedProfile** tiene estas propiedades.
+La **clase CIM \_ ReferencedProfile** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -83,17 +83,17 @@ Especifica una instancia [**\_ registeredProfile de CIM**](/previous-versions//e
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El uso de las propiedades **Dependent** y **Antecedent** en la asociación **CIM \_ ReferencedProfile** se define de forma que el perfil al que se hace referencia sea el antecedente y el perfil que realiza la referencia sea el dependiente.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                      |
@@ -102,7 +102,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

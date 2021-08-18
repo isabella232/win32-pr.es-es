@@ -1,6 +1,6 @@
 ---
 title: WM_CONTEXTMENU mensaje (Winuser.h)
-description: Notifica a una ventana que el usuario hizo clic con el botón derecho del mouse (clic con el botón derecho) en la ventana.
+description: Notifica a una ventana que el usuario hizo clic en el botón derecho del mouse (en el que se hizo clic con el botón derecho) en la ventana.
 ms.assetid: e607a61a-0f9b-4d11-b8c0-b01a2e7fb35b
 keywords:
 - WM_CONTEXTMENU menús de mensajes y otros recursos
@@ -23,7 +23,7 @@ ms.locfileid: "118472510"
 ---
 # <a name="wm_contextmenu-message"></a>Mensaje \_ CONTEXTMENU de WM
 
-Notifica a una ventana que el usuario desea que aparezca un menú contextual.  Es posible que el usuario haya hecho clic con el botón derecho del mouse (clic con el botón derecho) en la ventana, presionado Mayús+F10 o presionado la tecla de aplicaciones (tecla de menú contextual) disponible en algunos teclados.
+Notifica a una ventana que el usuario desea que aparezca un menú contextual.  El usuario puede haber hecho clic en el botón derecho del mouse (hacer clic con el botón derecho) en la ventana, presionar Mayús+F10 o presionar la tecla de aplicaciones (tecla de menú contextual) disponible en algunos teclados.
 
 
 ```C++
@@ -39,7 +39,7 @@ Notifica a una ventana que el usuario desea que aparezca un menú contextual.  E
 *wParam* 
 </dt> <dd>
 
-Identificador de la ventana en la que el usuario hizo clic con el botón derecho en el mouse. Puede ser una ventana secundaria de la ventana que recibe el mensaje. Para obtener más información sobre el procesamiento de este mensaje, vea la sección Comentarios.
+Identificador de la ventana en la que el usuario hizo clic con el botón derecho en el mouse. Puede ser una ventana secundaria de la ventana que recibe el mensaje. Para obtener más información sobre cómo procesar este mensaje, vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ No de devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Una ventana puede procesar este mensaje mostrando un menú contextual mediante las funciones [**TrackPopupMenu**](/windows/desktop/api/Winuser/nf-winuser-trackpopupmenu) o [**TrackPopupMenuEx.**](/windows/desktop/api/Winuser/nf-winuser-trackpopupmenuex) Para obtener las posiciones horizontales y verticales, use el código siguiente.
+Una ventana puede procesar este mensaje mostrando un menú contextual mediante las funciones [**TrackPopupMenu**](/windows/desktop/api/Winuser/nf-winuser-trackpopupmenu) [**o TrackPopupMenuEx.**](/windows/desktop/api/Winuser/nf-winuser-trackpopupmenuex) Para obtener las posiciones horizontal y vertical, use el código siguiente.
 
 
 ```
@@ -72,7 +72,7 @@ Si una ventana no muestra un menú contextual, debe pasar este mensaje a la [**f
 
 [**DefWindowProc genera**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) el mensaje **\_ CONTEXTMENU** de WM cuando procesa el mensaje [**WM \_ RBUTTONUP**](/windows/desktop/inputdev/wm-rbuttonup) o [**WM \_ NCRBUTTONUP**](/windows/desktop/inputdev/wm-ncrbuttonup) o cuando el usuario tipos MAYÚS+F10. El **mensaje \_ CONTEXTMENU de WM** también se genera cuando el usuario presiona y suelta la tecla [**VK \_ APPS.**](/windows/desktop/inputdev/virtual-key-codes)
 
-Si el menú contextual se genera desde el teclado, por ejemplo, si el usuario tipos MAYÚS+F10, las coordenadas x e y son -1 y la aplicación debe mostrar el menú contextual en la ubicación de la selección actual en lugar de en (xPos, yPos).
+Si el menú contextual se genera desde el teclado, por ejemplo, si el usuario tipos MAYÚS +F10, las coordenadas x e y son -1 y la aplicación debe mostrar el menú contextual en la ubicación de la selección actual en lugar de en (xPos, yPos).
 
 ## <a name="requirements"></a>Requisitos
 

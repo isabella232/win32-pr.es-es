@@ -1,6 +1,6 @@
 ---
-title: 'RWStructuredBuffer:: Operator (función)'
-description: 'Devuelve una variable de recurso. | RWStructuredBuffer:: Operator (función)'
+title: RWStructuredBuffer::Operator (Función)
+description: Devuelve una variable de recurso. | RWStructuredBuffer::Operator (Función)
 ms.assetid: e821b60e-38db-463f-b0c6-47f2a4c9ccee
 keywords:
 - Función de operador HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e915d7862f7994d3b438bf3255ee836ede4b3d7d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ad2e8085a52a920f7fe87a2820398877167a137c14c4ebe39bacd71ae2ba0324
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104547534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509324"
 ---
-# <a name="rwstructuredbufferoperator--function"></a>RWStructuredBuffer:: Operator (función)
+# <a name="rwstructuredbufferoperator--function"></a>RWStructuredBuffer::Operator (Función)
 
 Devuelve una variable de recurso.
 
@@ -36,12 +36,12 @@ R Operator[](
 
 <dl> <dt>
 
-*PDV* \[ de de\]
+*pos* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Posición de índice.
+Posición del índice.
 
 </dd> </dl>
 
@@ -49,17 +49,17 @@ Posición de índice.
 
 Tipo: **R**
 
-Variable de recurso.
+Una variable de recurso.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un recurso estructurado se puede indexar más en función de los nombres de componente de las estructuras.
+Un recurso estructurado se puede indexar aún más en función de los nombres de componente de las estructuras.
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -67,14 +67,14 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [RWStructuredBuffer](sm5-object-rwstructuredbuffer.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

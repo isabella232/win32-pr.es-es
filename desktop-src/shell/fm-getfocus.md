@@ -44,7 +44,7 @@ Devuelve el tipo de ventana del Administrador de archivos que tiene el foco de e
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------|
 | <dl> <dt>**FMFOCUS \_ DIR**</dt> </dl>    | Parte del directorio de una ventana de directorio.<br/> |
 | <dl> <dt>**ÁRBOL \_ FMFOCUS**</dt> </dl>   | Parte del árbol de una ventana de directorio.<br/>      |
-| <dl> <dt>**UNIDADES FMFOCUS \_**</dt> </dl> | Barra de unidad de una ventana de directorio.<br/>         |
+| <dl> <dt>**UNIDADES \_ FMFOCUS**</dt> </dl> | Barra de unidad de una ventana de directorio.<br/>         |
 | <dl> <dt>**FMFOCUS \_ SEARCH**</dt> </dl> | Ventana Resultados de la búsqueda.<br/>                   |
 
 

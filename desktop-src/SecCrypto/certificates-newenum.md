@@ -47,7 +47,7 @@ Esta propiedad se usa automáticamente internamente cuando se usa la construcci�
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |
@@ -56,7 +56,7 @@ Esta propiedad se usa automáticamente internamente cuando se usa la construcci�
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

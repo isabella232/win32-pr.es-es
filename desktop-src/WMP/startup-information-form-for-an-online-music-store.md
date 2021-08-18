@@ -1,19 +1,19 @@
 ---
-title: Formulario de información de inicio para una tienda de música en línea
-description: Formulario de información de inicio para una tienda de música en línea
+title: Formulario de información de inicio para un almacén de Música en línea
+description: Formulario de información de inicio para un almacén de Música en línea
 ms.assetid: 6ee30446-7505-40ae-b664-3727a5be9976
 keywords:
-- Reproductor de Windows Media Online Stores
+- Reproductor de Windows Media Tiendas en línea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a3ded923538d6be6c8a22fa0ba96ddcd0814348d
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 83acbe30b3d5232abb6c79cb845f29d46cd741b2ea6b3a84f03ecd082cb13e99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118545"
 ---
-# <a name="startup-information-form-for-an-online-music-store"></a>Formulario de información de inicio para una tienda de música en línea
+# <a name="startup-information-form-for-an-online-music-store"></a>Formulario de información de inicio para un almacén de Música en línea
 
 Rellene y envíe un formulario para cada tienda y cada configuración regional al equipo virtual de Reproductor de Windows Media Services en mpsvctm@microsoft.com .
 
@@ -22,8 +22,8 @@ Rellene y envíe un formulario para cada tienda y cada configuración regional a
 | Elemento                      | Descripción |
 |---------------------------|-------------|
 | Nombre de la tienda                |             |
-| Locale                    |             |
-| Date                      |             |
+| Configuración regional                    |             |
+| Fecha                      |             |
 | Ventana de incorporación de destino |             |
 
 
@@ -40,7 +40,7 @@ Rellene y envíe un formulario para cada tienda y cada configuración regional a
 | Clave de servicio (identificador único)                                                                                  |             |
 | Nombre descriptivo (límite de 30 caracteres)                                                                       |             |
 | Dirección URL de imagen de menú (límite de 2048 caracteres)                                                                    |             |
-| Comprar dirección URL de música (límite de 2048 caracteres)<br/> (Solo almacenes de música integrados)<br/>                |             |
+| Comprar Música URL (límite de 2048 caracteres)<br/> (Solo almacenes de música integrados)<br/>                |             |
 | DIRECCIÓN URL de compra de interfaz de usuario de 10 pies (límite de 2048 caracteres)<br/> (Solo almacenes de música integrados : opcional)<br/> |             |
 
 
@@ -60,7 +60,7 @@ Rellene y envíe un formulario para cada tienda y cada configuración regional a
 
  
 
-## <a name="startup-information-for-production-store"></a>Información de inicio para el almacén de producción
+## <a name="startup-information-for-production-store"></a>Información de inicio del almacén de producción
 
 
 
@@ -69,9 +69,9 @@ Rellene y envíe un formulario para cada tienda y cada configuración regional a
 | Dirección URL XML de información de servicio (límite de 2048 caracteres)                                                              |             |
 | Clave de servicio (identificador único)                                                                                  |             |
 | Nombre descriptivo (límite de 30 caracteres)                                                                       |             |
-| Dirección URL de la imagen de menú (límite de 2048 caracteres)                                                                    |             |
-| Comprar dirección URL de música (límite de 2048 caracteres)<br/> (Solo tiendas de música integradas)<br/>                |             |
-| DIRECCIÓN URL de compra de interfaz de usuario de 10 pies (límite de 2048 caracteres)<br/> (Solo tiendas de música integradas: opcional)<br/> |             |
+| Dirección URL de imagen de menú (límite de 2048 caracteres)                                                                    |             |
+| Comprar Música URL (límite de 2048 caracteres)<br/> (Solo almacenes de música integrados)<br/>                |             |
+| DIRECCIÓN URL de compra de interfaz de usuario de 10 pies (límite de 2048 caracteres)<br/> (Solo almacenes de música integrados : opcional)<br/> |             |
 
 
 
@@ -81,8 +81,8 @@ Rellene y envíe un formulario para cada tienda y cada configuración regional a
 
 | Elemento hospedado por Microsoft en "Examinar todas las tiendas en línea"                             | Descripción |
 |------------------------------------------------------------------------------------|-------------|
-| Logotipo de la tienda (130w x 30h)<br/> (Adjunte el archivo PNG por separado).<br/>        |             |
-| Imagen de exploración completa (108w x 108h)<br/> (Adjunte el archivo PNG por separado).<br/> |             |
+| Logotipo de la tienda (130 w x 30h)<br/> (Adjunte el archivo PNG por separado).<br/>        |             |
+| Examinar toda la imagen (108 w x 108h)<br/> (Adjunte el archivo PNG por separado).<br/> |             |
 | Texto de descripción del almacén (límite de 110 caracteres)                                       |             |
 | Texto para hipervínculo (límite de 45 caracteres)                                            |             |
 

@@ -3,23 +3,23 @@ title: Sección de mapa de bits de ejemplo
 description: Sección de mapa de bits de ejemplo
 ms.assetid: 51b84b34-3cbb-4863-b7dc-e33e80d6ba23
 keywords:
-- Máscaras móviles de Windows Media Player, mapas de bits
+- Reproductor de Windows Media Máscaras móviles, mapas de bits
 - máscaras, mapas de bits
-- referencia para máscaras, mapas de bits
-- mapas de bits en máscaras, sección de mapas de bits
-- archivos de definición de máscara, sección de mapas de bits
+- referencia de máscaras, mapas de bits
+- mapas de bits en máscaras, sección Mapas de bits
+- archivos de definición de máscara, sección Mapas de bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00b05183be7ba56ed5b00a6bfd26ee6162e008cd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: de401906896abcdda4728ff0984871ef4a399d3e223b36afd9d585eb0e4fce76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118833399"
 ---
 # <a name="sample-bitmap-section"></a>Sección de mapa de bits de ejemplo
 
-Las siguientes líneas muestran una sección típica de mapas de bits de un archivo de definición de máscara:
+Las líneas siguientes muestran una sección de mapas de bits típica de un archivo de definición de máscara:
 
 
 ```C++
@@ -38,12 +38,12 @@ Las siguientes líneas muestran una sección típica de mapas de bits de un arch
 
 
 
-Esto define cinco mapas de bits que se usan para crear una imagen de fondo, imágenes para botones deshabilitados y insertados, una imagen de región para botones de región y una superimagen para trackbars.
+Esto define cinco mapas de bits que se usan para crear una imagen de fondo, imágenes para botones deshabilitados e presionados, una imagen de región para botones de región y una imagen super para barras de seguimiento.
 
 > [!Note]  
-> Los mapas de bits de región y súper están en desuso en las máscaras de Windows Media Player 10 Mobile o posterior.
+> Los mapas de bits Region y Super están en desuso en máscaras para Reproductor de Windows Media 10 Mobile o posterior.
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -52,9 +52,9 @@ Esto define cinco mapas de bits que se usan para crear una imagen de fondo, imá
 [**Mapas de bits**](bitmaps.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

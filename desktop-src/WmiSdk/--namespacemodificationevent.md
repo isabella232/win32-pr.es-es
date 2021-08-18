@@ -129,7 +129,7 @@ Para obtener más información sobre el **uso de valores uint64** en scripts, ve
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La **\_ \_ clase NamespaceModificationEvent** se deriva de [**\_ \_ NamespaceOperationEvent.**](--namespaceoperationevent.md)
 
@@ -141,7 +141,7 @@ Tenga en cuenta que [**la propiedad Name**](--namespace.md) de una instancia de 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
@@ -149,7 +149,7 @@ Tenga en cuenta que [**la propiedad Name**](--namespace.md) de una instancia de 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

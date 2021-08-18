@@ -1,10 +1,10 @@
 ---
-title: Método ID3DX11EffectVariable GetRawValue (D3dx11effect. h)
+title: Método ID3DX11EffectVariable GetRawValue (D3dx11effect.h)
 description: Obtener datos.
 ms.assetid: 1b2a319c-880c-4f5a-b4e9-17405351b7d9
 keywords:
 - Método GetRawValue Direct3D 11
-- Método GetRawValue Direct3D 11, interfaz ID3DX11EffectVariable
+- Método GetRawValue Direct3D 11 , interfaz ID3DX11EffectVariable
 - Interfaz ID3DX11EffectVariable Direct3D 11, método GetRawValue
 topic_type:
 - apiref
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be03051433e3ae4fd5891d1859529bb305b08bb0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d2a2f0f79f231eab37c46eba138b72b0678e9ea323c86b736a55682bb7b771cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104987145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117734108"
 ---
-# <a name="id3dx11effectvariablegetrawvalue-method"></a>ID3DX11EffectVariable:: GetRawValue (método)
+# <a name="id3dx11effectvariablegetrawvalue-method"></a>Método ID3DX11EffectVariable::GetRawValue
 
 Obtener datos.
 
@@ -48,7 +48,7 @@ HRESULT GetRawValue(
 *pData* 
 </dt> <dd>
 
-Tipo: **void \***
+Tipo: **\* void**
 
 Puntero a la variable.
 
@@ -57,18 +57,18 @@ Puntero a la variable.
 *Offset* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Desplazamiento, en bytes, desde el principio del puntero a los datos.
+Desplazamiento (en bytes) desde el principio del puntero a los datos.
 
 </dd> <dt>
 
 *Recuento* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Número de bytes que se van a obtener.
+Número de bytes que se obtienen.
 
 </dd> </dl>
 
@@ -76,14 +76,14 @@ Número de bytes que se van a obtener.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no realiza ninguna comprobación de conversión o de tipo; por lo tanto, es una manera muy rápida de tener acceso a los elementos de la matriz.
+Este método no realiza ninguna conversión ni comprobación de tipos; Por lo tanto, es una manera muy rápida de acceder a los elementos de la matriz.
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -93,8 +93,8 @@ Este método no realiza ninguna comprobación de conversión o de tipo; por lo t
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

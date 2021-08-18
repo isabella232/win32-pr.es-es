@@ -1,11 +1,11 @@
 ---
-title: Propiedad _NewEnum IVMUSBDeviceCollection (VPCCOMInterfaces. h)
-description: Recupera un enumerador para la colección. | Propiedad _NewEnum IVMUSBDeviceCollection (VPCCOMInterfaces. h)
+title: Propiedad _NewEnum IVMUSBDeviceCollection (VPCCOMInterfaces.h)
+description: Recupera un enumerador para la colección. | Propiedad _NewEnum IVMUSBDeviceCollection (VPCCOMInterfaces.h)
 ms.assetid: f14f64a0-e65a-44d6-b053-54bbcb9ea804
 keywords:
-- _NewEnum propiedad de PC virtual
-- Propiedad _NewEnum Virtual PC, interfaz IVMUSBDeviceCollection
-- Interfaz IVMUSBDeviceCollection Virtual PC, propiedad _NewEnum
+- _NewEnum propiedad Virtual PC
+- _NewEnum propiedad Virtual PC , interfaz IVMUSBDeviceCollection
+- INTERFAZ IVMUSBDeviceCollection Pc virtual , _NewEnum propiedad
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2e1e2a4d80691be26161ae4835ccb85c0e722d8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b2c1ee23756d49244c0f79117b96b0fb81b8c6371d8c2a8d33218e9d64d7b143
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118592987"
 ---
-# <a name="ivmusbdevicecollection_newenum-property"></a>IVMUSBDeviceCollection:: \_ NewEnum (propiedad)
+# <a name="ivmusbdevicecollection_newenum-property"></a>IVMUSBDeviceCollection:: \_ Propiedad NewEnum
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera un enumerador para la colección.
 
@@ -45,7 +45,7 @@ HRESULT get__NewEnum(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Enumerador [IEnumVARIANT](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) .
+Enumerador [IEnumVARIANT.](/windows/win32/api/oaidl/nn-oaidl-ienumvariant)
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -53,9 +53,9 @@ Enumerador [IEnumVARIANT](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) .
 
 | Nombre o valor                                                                                                                                                    | Significado                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>     |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **null**.<br/>        |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/> |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>     |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **NULL.**<br/>        |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/> |
 
 
 
@@ -65,16 +65,16 @@ Enumerador [IEnumVARIANT](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) .
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMUSBDeviceCollection se define como 4FBCD6A5-F53C-4d1c-9F4D-E90ABB8B3749<br/>     |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMUSBDeviceCollection se define como \_ 4FBCD6A5-F53C-4d1c-9F4D-E90ABB8B3749<br/>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

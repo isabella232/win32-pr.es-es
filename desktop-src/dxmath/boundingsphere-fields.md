@@ -4,12 +4,12 @@ ms.assetid: 6691c022-0729-497b-8299-b355e09bdd9e
 title: Campos de BoundingSphere
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 581b0f732ea0ed1e0078b220b682023aed76b5e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c89ea4b8039c94ef1b4a19cd253689ca83e43ff060893195f9b9695597058e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118088249"
 ---
 # <a name="boundingsphere-fields"></a>Campos de BoundingSphere
 
@@ -17,8 +17,8 @@ ms.locfileid: "105715631"
 
 | Campo                                              | Descripción                                  |
 |----------------------------------------------------|----------------------------------------------|
-| [**Centro**](boundingsphere-center.md)<br/> | Centro del BoundingSphere.<br/> |
-| [**Tórica**](boundingsphere-radius.md)<br/> | Radio de BoundingSphere.<br/> |
+| [**Centro**](boundingsphere-center.md)<br/> | Centro de BoundingSphere.<br/> |
+| [**Radio**](boundingsphere-radius.md)<br/> | Radio de BoundingSphere.<br/> |
 
 
 

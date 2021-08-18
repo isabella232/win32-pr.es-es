@@ -1,5 +1,5 @@
 ---
-title: Propiedad ITSRemoteProgram2 RemoteApplicationName
+title: ItsRemoteProgram2 RemoteApplicationName, propiedad
 description: Nombre de RemoteApp.
 ms.assetid: e6bde351-dd4c-4b14-bb11-f155c526aced
 ms.tgt_platform: multiple
@@ -29,7 +29,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117756750"
 ---
-# <a name="itsremoteprogram2remoteapplicationname-property"></a>Propiedad ITSRemoteProgram2::RemoteApplicationName
+# <a name="itsremoteprogram2remoteapplicationname-property"></a>ITSRemoteProgram2::RemoteApplicationName, propiedad
 
 Nombre de RemoteApp.
 
@@ -54,7 +54,7 @@ Nombre de RemoteApp.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
@@ -63,7 +63,7 @@ Nombre de RemoteApp.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
