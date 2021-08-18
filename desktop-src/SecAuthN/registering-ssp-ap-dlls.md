@@ -1,40 +1,40 @@
 ---
-description: Después de desarrollar un proveedor de compatibilidad de seguridad/biblioteca de vínculos dinámicos (DLL SSP/PA) que contenga uno o varios paquetes de seguridad personalizados, debe registrarlo.
+description: Después de desarrollar una biblioteca de vínculos dinámicos del paquete de autenticación o proveedor de compatibilidad de seguridad (SSP/AP DLL) que contiene uno o varios paquetes de seguridad personalizados, debe registrarlo.
 ms.assetid: db0d899e-dbd4-40d3-98d8-4d9668c01453
-title: Registro de dll de SSP/AP
+title: Registro de archivos DLL de SSP/AP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d279459b91633e0ef45e6e6d57b43489699a657
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6405dc5ddce32ad5e4d87ed44f9344240b491fdc0ea789c30d5475ac6e73aaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103813590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118919505"
 ---
-# <a name="registering-sspap-dlls"></a>Registro de dll de SSP/AP
+# <a name="registering-sspap-dlls"></a>Registro de archivos DLL de SSP/AP
 
-Después de desarrollar un paquete de autenticación del [*proveedor de compatibilidad para seguridad*](../secgloss/s-gly.md) / [](../secgloss/a-gly.md) biblioteca de vínculos dinámicos (DLL SSP/PA) que contiene uno o varios [*paquetes de seguridad*](../secgloss/s-gly.md)personalizados, debe registrarlo. Para ello, agregue el nombre del archivo DLL de SSP/AP personalizado a los datos del siguiente valor del registro:
+Después de desarrollar una [*biblioteca*](../secgloss/s-gly.md)de vínculos dinámicos del paquete de autenticación del proveedor de compatibilidad de seguridad (DLL de / [](../secgloss/a-gly.md) SSP/AP) que contiene uno o varios paquetes de seguridad personalizados, debe registrarlo. [](../secgloss/s-gly.md) Para ello, agregue el nombre del archivo DLL de SSP/AP personalizado a los datos del siguiente valor del Registro:
 
-**HKEY \_ \_** Paquetes de \\  \\  \\  \\  \\ **seguridad** de LSA del control System CurrentControlSet de equipo local
+**HKEY \_ Paquetes \_ de** \\ **seguridad** \\  \\  \\ **Lsa** del control CurrentControlSet \\ **del** sistema LOCAL MACHINE
 
-Los datos de este valor del registro son una lista de los nombres de los archivos dll de SSP/AP, sin la extensión ". dll". El tipo de datos para esta lista es **reg \_ multi \_ SZ** , por lo que debe haber un carácter nulo (' \\ 0 ') entre cada nombre de dll de la lista.
+Los datos de este valor del Registro son una lista de los nombres de archivos DLL de SSP/AP, sin la extensión ".dll". El tipo de datos de esta lista es **REG \_ MULTI \_ SZ,** por lo que debe haber un carácter nulo ('0') entre cada nombre \\ dll de la lista.
 
-Normalmente, los archivos dll de SSP/AP se almacenan en el directorio% SystemRoot%/system32 Si esta es la ruta de acceso a la DLL personalizada de SSP/AP, no incluya la ruta de acceso como parte del nombre del archivo DLL. Sin embargo, si el archivo DLL está en una ruta de acceso diferente, incluya la ruta de acceso completa al archivo DLL en el nombre.
+Normalmente, los archivos DLL de SSP/AP se almacenan en el directorio %systemroot%/system32. Si se trata de la ruta de acceso a la DLL personalizada de SSP/AP, no incluya la ruta de acceso como parte del nombre del archivo DLL. Sin embargo, si el archivo DLL está en una ruta de acceso diferente, incluya la ruta de acceso completa al archivo DLL en el nombre.
 
-Cada vez que se inicia el sistema, LSA carga los archivos dll SSP/AP en esta lista y realiza la secuencia de inicialización descrita en la [inicialización en modo LSA](lsa-mode-initialization.md).
+Cada vez que se inicia el sistema, el LSA carga los archivos DLL de SSP/AP de esta lista y realiza la secuencia de inicialización descrita en Inicialización en modo [LSA](lsa-mode-initialization.md).
 
-### <a name="registering-a-custom-security-package-as-the-default-tls-ssp"></a>Registro de un paquete de seguridad personalizado como SSP de TLS predeterminado
+### <a name="registering-a-custom-security-package-as-the-default-tls-ssp"></a>Registro de un paquete de seguridad personalizado como SSP tls predeterminado
 
-Después de desarrollar un proveedor de compatibilidad de seguridad de TLS personalizado y registrarlo como se describió anteriormente, también debe registrarlo como "SSP de TLS predeterminado". Para ello, rellene el nombre del paquete de SSP personalizado a los datos del siguiente valor del registro:
+Después de desarrollar un proveedor de compatibilidad de seguridad TLS personalizado y registrarlo como se describió anteriormente, también debe registrarlo como el "SSP de TLS predeterminado". Para ello, rellene el nombre del paquete del SSP personalizado con los datos del siguiente valor del Registro:
 
-**HKEY \_ \_Equipo local** \\ **sistema** \\ **CurrentControlSet** \\ **control** \\ **LSA** \\ **predeterminado TLS SSP**
+**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **Lsa** \\ **Default TLS SSP**
 
-Los datos de este valor del registro son el nombre del paquete SSP, no el nombre del archivo dll. El tipo de datos para esta es **reg \_ SZ**.
+Los datos de este valor del Registro son el nombre del paquete de SSP, no el nombre de dll. El tipo de datos para este es **REG \_ SZ**.
 
-Las aplicaciones de modo de usuario que usan el "SSP TLS predeterminado" usarán el valor predeterminado registrado aquí. Este cambio no afectará a las aplicaciones en modo kernel ni a las aplicaciones en modo de usuario que usan el "proveedor de protocolo de seguridad unificada de Microsoft" u otros nombres de SSP específicos de TLS.
+Las aplicaciones en modo de usuario que usan "SSP tls predeterminado" usarán el valor predeterminado registrado aquí. Este cambio no afectará a las aplicaciones en modo kernel o a las aplicaciones en modo de usuario que usan "Proveedor de protocolo de seguridad unificado de Microsoft" u otros nombres de SSP TLS específicos.
 
 > [!Note]  
-> Esta información del registro pertenece únicamente a la DLL de SSP/PA. Para obtener información sobre cómo registrar proveedores de compatibilidad para seguridad (SSP), consulte [escribir e instalar un proveedor de soporte técnico de seguridad](writing-and-installing-a-security-support-provider.md). Para obtener información acerca de las diferencias entre SSP/AP y dll de SSP, consulte [SSP/APS frente a SSP](ssp-aps-versus-ssps.md).
+> Esta información del Registro pertenece solo al archivo DLL de SSP/AP. Para obtener información sobre cómo registrar proveedores de soporte técnico de seguridad (SSP), vea [Escribir e instalar un proveedor de soporte técnico de seguridad.](writing-and-installing-a-security-support-provider.md) Para obtener información sobre las diferencias entre archivos DLL de SSP/AP y SSP, vea [SSP/AP frente a SSP](ssp-aps-versus-ssps.md).
 
  
 
@@ -42,7 +42,7 @@ Las aplicaciones de modo de usuario que usan el "SSP TLS predeterminado" usarán
 
 <dl> <dt>
 
-[Restricciones en relación con el registro y la instalación de un paquete de seguridad](restrictions-around-registering-and-installing-a-security-package.md)
+[Restricciones en torno al registro e instalación de un paquete de seguridad](restrictions-around-registering-and-installing-a-security-package.md)
 </dt> </dl>
 
  

@@ -38,7 +38,7 @@ Especifica el nombre del archivo al que el compilador MIDL redirigirá la salida
 
 </dd> </dl>
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

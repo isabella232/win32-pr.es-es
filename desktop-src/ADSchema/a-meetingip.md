@@ -26,16 +26,16 @@ Dirección TCP/IP de la reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | meetingIP                                                                        |
 | Ldap-Display-Name | meetingIP                                                                        |
 | Size              | \-                                                                               |
-| Actualizar privilegios  | Cualquiera puede actualizar este objeto en función de la seguridad del objeto que se va a crear. |
+| Privilegio actualizar  | Cualquier persona puede actualizar este objeto en función de la seguridad del objeto que se va a crear. |
 | Frecuencia de actualización  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.580                                                           |
 | System-Id-Guid    | 11b6cc89-48c4-11d1-a9c3-0000f80367c1                                             |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                      |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -52,14 +52,14 @@ Dirección TCP/IP de la reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
@@ -73,14 +73,14 @@ Dirección TCP/IP de la reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
@@ -94,14 +94,14 @@ Dirección TCP/IP de la reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
@@ -115,14 +115,14 @@ Dirección TCP/IP de la reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
@@ -136,14 +136,14 @@ Dirección TCP/IP de la reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
@@ -157,14 +157,14 @@ Dirección TCP/IP de la reunión.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | True                                    |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Verdadero                                    |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |

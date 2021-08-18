@@ -1,7 +1,7 @@
 ---
 description: Describe los parámetros de creación de un dispositivo.
 ms.assetid: 7db5ef2b-6894-4113-b726-8b238bb4fb2f
-title: D3DDEVICE_CREATION_PARAMETERS estructura (D3D9Types. h)
+title: D3DDEVICE_CREATION_PARAMETERS estructura (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 72b2f35f1666ec2095c6ea8f5d5588dc7fd62f2c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 64b3e13300d6c305d06b6b13db246134cb889cbfc407e4a99c6ae45adbf916e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118805024"
 ---
-# <a name="d3ddevice_creation_parameters-structure"></a>\_Estructura de \_ los parámetros de creación de D3DDEVICE
+# <a name="d3ddevice_creation_parameters-structure"></a>Estructura D3DDEVICE \_ CREATION \_ PARAMETERS
 
 Describe los parámetros de creación de un dispositivo.
 
@@ -45,11 +45,11 @@ typedef struct D3DDEVICE_CREATION_PARAMETERS {
 **AdapterOrdinal**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número ordinal que denota el adaptador de pantalla. D3DADAPTER \_ default siempre es el adaptador de pantalla principal. Use este ordinal como parámetro del adaptador para cualquiera de los métodos [**IDirect3D9**](/windows/desktop/api) . Tenga en cuenta que las diferentes instancias de objetos de Direct3D 9,0 pueden utilizar distintos ordinales. Los adaptadores pueden escribir o dejar un sistema cuando los usuarios, por ejemplo, agregan o quitan monitores de un sistema de varios monitores o cuando intercambian a un portátil. Por lo tanto, use este ordinal solo en una instancia de Direct3D 9,0 conocida como válida, es decir, el Direct3D 9,0 que creó esta interfaz [**IDirect3DDevice9**](/windows/desktop/api) o el Direct3D 9,0 devuelto desde [**GetDirect3D**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getdirect3d), como se llama a través de esta interfaz **IDirect3DDevice9** .
+Número ordinal que denota el adaptador de pantalla. D3DADAPTER \_ DEFAULT siempre es el adaptador de pantalla principal. Use este ordinal como parámetro Adapter para cualquiera de los [**métodos IDirect3D9.**](/windows/desktop/api) Tenga en cuenta que diferentes instancias de objetos de Direct3D 9.0 pueden usar ordinales diferentes. Los adaptadores pueden entrar o salir de un sistema cuando los usuarios, por ejemplo, agregan o quitan monitores de un sistema de varios monitores o cuando intercambian en caliente un portátil. Por lo tanto, use este ordinal solo en una instancia de Direct3D 9.0 que se sabe que es válida, es decir, la versión 9.0 de Direct3D que creó esta interfaz [**IDirect3DDevice9**](/windows/desktop/api) o la direct3D 9.0 devuelta desde [**GetDirect3D,**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getdirect3d)como se llama a través de esta interfaz **IDirect3DDevice9.**
 
 </dd> <dt>
 
@@ -60,18 +60,18 @@ Tipo: **[ **D3DDEVTYPE**](./d3ddevtype.md)**
 
 </dd> <dd>
 
-Miembro del tipo enumerado [**D3DDEVTYPE**](./d3ddevtype.md) . Denota la cantidad de funcionalidad emulada para este dispositivo. El valor de este parámetro refleja el valor pasado a la llamada a [**CreateDevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice) que creó este dispositivo.
+Miembro del [**tipo enumerado D3DDEVTYPE.**](./d3ddevtype.md) Indica la cantidad de funcionalidad emulada para este dispositivo. El valor de este parámetro refleja el valor pasado a la [**llamada CreateDevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice) que creó este dispositivo.
 
 </dd> <dt>
 
 **hFocusWindow**
 </dt> <dd>
 
-Tipo: **[ **hWnd**](../winprog/windows-data-types.md)**
+Tipo: **[ **HWND**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Identificador de ventana al que pertenece el foco para este dispositivo Direct3D. El valor de este parámetro refleja el valor pasado a la llamada a [**CreateDevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice) que creó este dispositivo.
+Identificador de ventana al que pertenece el foco para este dispositivo Direct3D. El valor de este parámetro refleja el valor pasado a la [**llamada CreateDevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice) que creó este dispositivo.
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Combinación de una o varias constantes de [D3DCREATE](d3dcreate.md) que controlan el comportamiento global del dispositivo. Estas constantes reflejan las constantes pasadas a [**CreateDevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice) cuando se creó el dispositivo.
+Combinación de una o varias [constantes D3DCREATE](d3dcreate.md) que controlan el comportamiento global del dispositivo. Estas constantes reflejan las constantes que se pasaron a [**CreateDevice**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-createdevice) cuando se creó el dispositivo.
 
 </dd> </dl>
 
@@ -92,11 +92,11 @@ Combinación de una o varias constantes de [D3DCREATE](d3dcreate.md) que control
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,11 +1,11 @@
 ---
-title: 'WWW: Home-Page (atributo)'
-description: Una página web que es la página de aterrizaje principal de un sitio Web.
+title: Atributo WWW-Home-Page
+description: Una página web que es la página de aterrizaje principal de un sitio web.
 ms.assetid: 5dbc571d-3032-4eee-ab2d-9f6f0273a472
 ms.tgt_platform: multiple
 keywords:
-- WWW-Inicio-esquema de AD de atributos de página
-- wWWHomePage esquema de AD de atributos
+- Esquema de AD del atributo WWW-Home-Page
+- Esquema de AD del atributo wWWHomePage
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 360240cebe5c8d02054307718de0bcaee47cec4e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1ea66bf583da5959ac0f8171c68076ed0def7f3af8813ae7a4261927494b9a0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959954"
 ---
-# <a name="www-home-page-attribute"></a>WWW: Home-Page (atributo)
+# <a name="www-home-page-attribute"></a>Atributo WWW-Home-Page
 
-Una página web que es la página de aterrizaje principal de un sitio Web.
+Una página web que es la página de aterrizaje principal de un sitio web.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------------------------------------------|
-| CN                | WWW-Página principal                                                               |
-| Nombre para mostrar de LDAP | wWWHomePage                                                                 |
-| Tamaño              | \-                                                                          |
-| Actualizar privilegio  | Administrador de dominio o propietario de la cuenta.                                      |
-| Frecuencia de actualización  | Cuando se crea el registro del usuario y cada vez que es necesario cambiar la Página Web. |
+| CN                | PÁGINA PRINCIPAL DE WWW                                                               |
+| Ldap-Display-Name | wWWHomePage                                                                 |
+| Size              | \-                                                                          |
+| Privilegio actualizar  | Administrador de dominio o propietario de la cuenta.                                      |
+| Frecuencia de actualización  | Cuando se crea el registro del usuario y cada vez que la página web necesita cambiar. |
 | Attribute-Id      | 1.2.840.113556.1.2.464                                                      |
-| System-ID-GUID    | bf967a7a-0de6-11d0-a285-00aa003049e2                                        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                 |
+| System-Id-Guid    | bf967a7a-0de6-11d0-a285-00aa003049e2                                        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                 |
 
 
 
@@ -44,7 +44,7 @@ Una página web que es la página de aterrizaje principal de un sitio Web.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Una página web que es la página de aterrizaje principal de un sitio Web.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 2048                            |
 | Search-Flags           | 0x00000000                      |
@@ -77,13 +77,13 @@ Una página web que es la página de aterrizaje principal de un sitio Web.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 2048                            |
 | Search-Flags           | 0x00000000                      |
@@ -92,19 +92,19 @@ Una página web que es la página de aterrizaje principal de un sitio Web.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 2048                            |
 | Search-Flags           | 0x00000000                      |
@@ -119,13 +119,13 @@ Una página web que es la página de aterrizaje principal de un sitio Web.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 2048                            |
 | Search-Flags           | 0x00000000                      |
@@ -140,13 +140,13 @@ Una página web que es la página de aterrizaje principal de un sitio Web.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 2048                            |
 | Search-Flags           | 0x00000000                      |
@@ -161,13 +161,13 @@ Una página web que es la página de aterrizaje principal de un sitio Web.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 2048                            |
 | Search-Flags           | 0x00000000                      |
@@ -182,13 +182,13 @@ Una página web que es la página de aterrizaje principal de un sitio Web.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 2048                            |
 | Search-Flags           | 0x00000000                      |

@@ -16,7 +16,7 @@ ms.locfileid: "118551379"
 
 Consulte también el [ejemplo de Reflejo de la nube](./build-a-cloud-file-sync-engine.md#cloud-mirror-sample).
 
-A partir Windows 10, versión 1709, Windows proporciona la *API de archivos en la nube*. Esta API consta de varias API nativas de Win32 y WinRT que formalizan la compatibilidad con los motores de sincronización en la nube y administran tareas como la creación y administración de archivos y directorios de marcadores de posición. Los usuarios de esta API suelen ser proveedores de sincronización y, en cierta medida, Windows aplicaciones.
+A partir Windows 10, versión 1709, Windows proporciona la *API de archivos en la nube*. Esta API consta de varias API nativas de Win32 y WinRT que formalizan la compatibilidad con los motores de sincronización en la nube, y controla tareas como la creación y administración de directorios y archivos de marcador de posición. Los usuarios de esta API suelen ser proveedores de sincronización y, en cierta medida, Windows aplicaciones.
 
 ## <a name="in-this-section"></a>En esta sección
 

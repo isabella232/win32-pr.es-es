@@ -1,7 +1,7 @@
 ---
-description: 'El método de ayuda invoca la ayuda de la página de propiedades. Este método implementa el método IPropertyPage:: help.'
+description: El método Help invoca la ayuda de la página de propiedades. Este método implementa el método IPropertyPage::Help.
 ms.assetid: 8fe72b2e-a9f1-435d-8eda-27056f112c6d
-title: Método CBasePropertyPage. Help (Cprop. h)
+title: Método CBasePropertyPage.Help (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b87c8ba76928fbf0e465a8b6a3a0aaf4730759f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e2f97f7edd1e719eb44ff1d41929d7cb3864d8117eabb383b4318688adfa537f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955094"
 ---
-# <a name="cbasepropertypagehelp-method"></a>CBasePropertyPage. Help (método)
+# <a name="cbasepropertypagehelp-method"></a>Método CBasePropertyPage.Help
 
-El `Help` método invoca la ayuda de la página de propiedades. Este método implementa el método **IPropertyPage:: help** .
+El `Help` método invoca la ayuda de la página de propiedades. Este método implementa el método **IPropertyPage::Help.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ HRESULT Help(
 *lpszHelpDir* 
 </dt> <dd>
 
-Puntero a la cadena bajo la clave **HelpDir** en la información de CLSID de la página de propiedades en el registro.
+Puntero a la cadena bajo la **clave HelpDir** en la información de CLSID de la página de propiedades en el Registro.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Puntero a la cadena bajo la clave **HelpDir** en la información de CLSID de la 
 
 Devuelve E \_ NOTIMPL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En la clase base, el método siempre devuelve E \_ NOTIMPL. Cuando se produce un error en el método, el marco llama a **IPropertyPage:: GetPageInfo** para obtener el nombre del archivo de ayuda y el identificador de contexto. De forma predeterminada, son **null**. Para proporcionar ayuda, por lo tanto, la clase derivada puede invalidar el método `Help` o el método [**CBasePropertyPage:: GetPageInfo**](cbasepropertypage-getpageinfo.md) .
+En la clase base, el método siempre devuelve E \_ NOTIMPL. Cuando se produce un error en el método , el marco llama **a IPropertyPage::GetPageInfo** para obtener el nombre del archivo de ayuda y el identificador de contexto. De forma predeterminada, son **NULL.** Por lo tanto, para proporcionar ayuda, la clase derivada puede invalidar el método o `Help` [**el método CBasePropertyPage::GetPageInfo.**](cbasepropertypage-getpageinfo.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ En la clase base, el método siempre devuelve E \_ NOTIMPL. Cuando se produce un
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Cprop. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Cprop.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ En la clase base, el método siempre devuelve E \_ NOTIMPL. Cuando se produce un
 
 <dl> <dt>
 
-[**Clase CBasePropertyPage**](cbasepropertypage.md)
+[**CBasePropertyPage (clase)**](cbasepropertypage.md)
 </dt> </dl>
 
  

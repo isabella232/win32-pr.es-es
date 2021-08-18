@@ -1,11 +1,11 @@
 ---
-title: Método CreateObject de IWMDRMProvider (wmdrmsdk. h)
-description: El método CreateObject recupera un puntero a una interfaz especificada y crea el objeto de implementación si es necesario.
+title: Método CreateObject de IWMDRMProvider (Wmdrmsdk.h)
+description: El método CreateObject recupera un puntero a una interfaz especificada, creando el objeto de implementación si es necesario.
 ms.assetid: d408f7f3-9e49-4747-ac8f-d39db31d1240
 keywords:
-- Método CreateObject formato de Windows Media
-- Método CreateObject formato de Windows Media, interfaz IWMDRMProvider
-- Interfaz IWMDRMProvider formato de Windows Media, CreateObject (método)
+- Formato multimedia de windows del método CreateObject
+- Método CreateObject windows Media Format , interfaz IWMDRMProvider
+- Interfaz IWMDRMProvider windows Media Format , método CreateObject
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c0422138391b0d6f5e38fbc81fd5141bd3d8535
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f50341e33092b33b19ec3f41d968e0a1b7bc883ae959b200f6c7062e4c69996b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118700781"
 ---
-# <a name="iwmdrmprovidercreateobject-method"></a>IWMDRMProvider:: CreateObject (método)
+# <a name="iwmdrmprovidercreateobject-method"></a>IWMDRMProvider::CreateObject (método)
 
-El método **CreateObject** recupera un puntero a una interfaz especificada y crea el objeto de implementación si es necesario.
+El **método CreateObject** recupera un puntero a una interfaz especificada, creando el objeto de implementación si es necesario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,20 +44,20 @@ HRESULT CreateObject(
 
 <dl> <dt>
 
-*riid* \[ de\]
+*riid* \[ En\]
 </dt> <dd>
 
 Identificador de la interfaz que se va a crear. Establezca en uno de los valores siguientes.
 
--   \_IWMDRMLICENSEMANAGEMENT IID
--   \_IWMDRMLICENSEQUERY IID
--   \_IWMDRMNETRECEIVER IID
--   \_IWMDRMNETTRANSMITTER IID
--   \_IWMDRMSECURITY IID
+-   IID \_ IWMDRMLicenseManagement
+-   IID \_ IWMDRMLicenseQuery
+-   IID \_ IWMDRMNetReceiver
+-   IID \_ IWMDRMNetTransmitter
+-   IID \_ IWMDRMSecurity
 
 </dd> <dt>
 
-*ppvObject* \[ enuncia\]
+*ppvObject* \[ out\]
 </dt> <dd>
 
 Dirección de un puntero que recibe la dirección de la interfaz solicitada.
@@ -66,13 +66,13 @@ Dirección de un puntero que recibe la dirección de la interfaz solicitada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -88,22 +88,22 @@ Ninguno.
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Interfaz IWMDRMProvider**](iwmdrmprovider.md)
 </dt> <dt>
 
-[**Interfaz IWMDRMLicenseManagement**](iwmdrmlicensemanagement.md)
+[**IWMDRMLicenseManagement (interfaz)**](iwmdrmlicensemanagement.md)
 </dt> <dt>
 
-[**Interfaz IWMDRMLicenseQuery**](iwmdrmlicensequery.md)
+[**IWMDRMLicenseQuery (interfaz)**](iwmdrmlicensequery.md)
 </dt> <dt>
 
 [**Interfaz IWMDRMNetReceiver**](iwmdrmnetreceiver.md)

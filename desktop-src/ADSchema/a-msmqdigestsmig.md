@@ -1,11 +1,11 @@
 ---
-title: MSMQ-digests-MIG (atributo)
-description: En el modo mixto de MSMQ, contiene el valor anterior de mSMQDigests.
+title: Atributo MSMQ-Digests-Mig
+description: En modo mixto de MSMQ, contiene el valor anterior de mSMQDigests.
 ms.assetid: a1ce47cb-bfa2-4a49-b5fd-0a88b15b5757
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-digests-esquema de AD de atributo MIG
-- mSMQDigestsMig esquema de AD de atributos
+- Esquema de AD del atributo MSMQ-Digests-Mig
+- Esquema de AD del atributo mSMQDigestsMig
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d91d34764075a26b244c08fe27c08cd3369242c9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e0f7485cfb8eb9b033e49673d597ac137a60190fb5885d4a7346e0c9a12f3b2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960514"
 ---
-# <a name="msmq-digests-mig-attribute"></a>MSMQ-digests-MIG (atributo)
+# <a name="msmq-digests-mig-attribute"></a>Atributo MSMQ-Digests-Mig
 
-En el modo mixto de MSMQ, contiene el valor anterior de mSMQDigests.
+En modo mixto de MSMQ, contiene el valor anterior de mSMQDigests.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MSMQ-resúmenes-MIG                                      |
-| Nombre para mostrar de LDAP | mSMQDigestsMig                                        |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | MSMQ-Digests-Mig                                      |
+| Ldap-Display-Name | mSMQDigestsMig                                        |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.966                                |
-| System-ID-GUID    | 0f71d8e0-da3b-11d1-90a5-00c04fd91ab1                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 0f71d8e0-da3b-11d1-90a5-00c04fd91ab1                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -53,20 +53,20 @@ En el modo mixto de MSMQ, contiene el valor anterior de mSMQDigests.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | False                                                                                         |
-| Está indexado             | False                                                                                         |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Falso                                                                                         |
+| Está indexado             | Falso                                                                                         |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ En el modo mixto de MSMQ, contiene el valor anterior de mSMQDigests.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | False                                                                                         |
-| Está indexado             | False                                                                                         |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Falso                                                                                         |
+| Está indexado             | Falso                                                                                         |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ En el modo mixto de MSMQ, contiene el valor anterior de mSMQDigests.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | False                                                                                         |
-| Está indexado             | False                                                                                         |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Falso                                                                                         |
+| Está indexado             | Falso                                                                                         |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ En el modo mixto de MSMQ, contiene el valor anterior de mSMQDigests.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | False                                                                                         |
-| Está indexado             | False                                                                                         |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Falso                                                                                         |
+| Está indexado             | Falso                                                                                         |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ En el modo mixto de MSMQ, contiene el valor anterior de mSMQDigests.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | False                                                                                         |
-| Está indexado             | False                                                                                         |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Falso                                                                                         |
+| Está indexado             | Falso                                                                                         |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ En el modo mixto de MSMQ, contiene el valor anterior de mSMQDigests.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                            |
+| Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
-| System-Only            | False                                                                                         |
-| Tiene un único valor       | False                                                                                         |
-| Está indexado             | False                                                                                         |
-| En el catálogo global      | True                                                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                  |
+| System-Only            | Falso                                                                                         |
+| Es de un solo valor       | Falso                                                                                         |
+| Está indexado             | Falso                                                                                         |
+| En el catálogo global      | Verdadero                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Clases usadas en        | [**MSMQ-Migrated: usuario**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
+| Clases usadas en        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 

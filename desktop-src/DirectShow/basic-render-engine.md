@@ -4,23 +4,23 @@ ms.assetid: 0a4fcf2a-dbad-4211-9a85-7741c8dfc95e
 title: Motor de representación básico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb9b51240b43c58de99b7d6fe1f7ad61f754c7ed
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f8a3e04e1ad32c163db93794e075ff7933f041c3270ab8412cbd5b5a68b4a763
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955583"
 ---
 # <a name="basic-render-engine"></a>Motor de representación básico
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El objeto de motor de representación básico representa la salida sin comprimir de una escala de tiempo. Para crear este objeto, llame a **CoCreateInstance**. Para la salida comprimida, use el motor de representación inteligente. El identificador de clase es CLSID \_ RenderEngine.
+El objeto Basic Render Engine representa la salida sin comprimir de una escala de tiempo. Para crear este objeto, llame a **CoCreateInstance**. Para la salida comprimida, use el motor de representación inteligente. El identificador de clase es CLSID \_ RenderEngine.
 
-El motor de representación básico expone las siguientes interfaces:
+El motor de representación básico expone las interfaces siguientes:
 
 -   [**IAMSetErrorLog**](iamseterrorlog.md)
 -   IObjectWithSite
@@ -31,10 +31,10 @@ El motor de representación básico expone las siguientes interfaces:
 
 <dl> <dt>
 
-[Representar un proyecto](rendering-a-project.md)
+[Representación de un Project](rendering-a-project.md)
 </dt> <dt>
 
-[Smart Render Engine](smart-render-engine.md)
+[Motor de representación inteligente](smart-render-engine.md)
 </dt> </dl>
 
  

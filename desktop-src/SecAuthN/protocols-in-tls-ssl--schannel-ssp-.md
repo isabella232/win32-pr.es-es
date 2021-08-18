@@ -1,20 +1,20 @@
 ---
-description: SSP de schannel implementa versiones de los protocolos TLS, DTLS y SSL. Las distintas Windows admiten versiones de protocolo diferentes.
+description: SSP de schannel implementa versiones de los protocolos TLS, DTLS y SSL. Las Windows diferentes admiten versiones de protocolo diferentes.
 ms.assetid: FF716A4E-ABF2-4773-9588-9D200945A866
 title: Protocolos de TLS/SSL (Schannel SSP)
 ms.topic: article
 ms.date: 01/20/2021
 ms.custom: contperf-fy21q3
-ms.openlocfilehash: 0aa3c3900a422a1460a2163043fb736e590ca2fe
-ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
+ms.openlocfilehash: a03264a40ab6d632165fe4cf75aa0dfd7ee85ac0474ef391c36a2b1980010422
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "114436270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118920663"
 ---
 # <a name="protocols-in-tlsssl-schannel-ssp"></a>Protocolos de TLS/SSL (Schannel SSP)
 
-Schannel SSP implementa versiones de los protocolos TLS, DTLS y SSL. Las distintas Windows admiten versiones de protocolo diferentes.
+SChannel SSP implementa versiones de los protocolos TLS, DTLS y SSL. Las Windows diferentes admiten versiones de protocolo diferentes.
 
 ## <a name="tls-protocol-version-support"></a>Compatibilidad con versiones del protocolo TLS
 
@@ -30,7 +30,7 @@ En la tabla siguiente se muestra la compatibilidad del proveedor de Microsoft Sc
 | Windows 7/Windows Server 2008 R2                      | habilitado        | habilitado        | Disabled       | Disabled       | Disabled       | Disabled       | No compatible  | No compatible  |
 | Windows 8/Windows Server 2012                         | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | No compatible  | No compatible  |
 | Windows 8.1/Windows Server 2012 R2                    | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | No compatible  | No compatible  |
-| Windows 10, versión 1507                              | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | No compatible  | No compatible  |
+| Windows 10, versión 1507                              | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | No compatible  | No compatible  |
 | Windows 10, versión 1511                              | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | No compatible  | No compatible  |
 | Windows 10, versión 1607/Windows Server 2016 Standard | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | No compatible  | No compatible  |
 | Windows 10, versión 1703                              | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | habilitado        | No compatible  | No compatible  |
@@ -47,18 +47,18 @@ En la tabla siguiente se muestra la compatibilidad del proveedor de Microsoft Sc
 
 ## <a name="dtls-protocol-version-support"></a>Compatibilidad con versiones del protocolo DTLS
 
-A continuación se muestra la compatibilidad del proveedor de Schannel de Microsoft con las versiones del protocolo DTLS.
+A continuación se muestra la compatibilidad del proveedor de Microsoft Schannel con las versiones del protocolo DTLS.
 
 *Sugerencia: es posible que tenga que desplazarse horizontalmente para ver todas las columnas de esta tabla:*
 
-| SO Windows                                            | Cliente DTLS 1.0 | Servidor DTLS 1.0 | Cliente DTLS 1.2 | Servidor DTLS 1.2 |
+| SO Windows                                            | Cliente DTLS 1.0 | Servidor DTLS 1.0 | Cliente de DTLS 1.2 | Servidor DTLS 1.2 |
 |-------------------------------------------------------|-----------------|-----------------|-----------------|-----------------|
 | Windows Vista/Windows Server 2008                     | No compatible   | No compatible   | No compatible   | No compatible   |
 | Windows Server 2008 con SP2                          | No compatible   | No compatible   | No compatible   | No compatible   |
 | Windows 7/Windows Server 2008 R2                      | habilitado         | habilitado         | No compatible   | No compatible   |
 | Windows 8/Windows Server 2012                         | habilitado         | habilitado         | No compatible   | No compatible   |
 | Windows 8.1/Windows Server 2012 R2                    | habilitado         | habilitado         | No compatible   | No compatible   |
-| Windows 10, versión 1507                              | habilitado         | habilitado         | No compatible   | No compatible   |
+| Windows 10, versión 1507                              | habilitado         | habilitado         | No compatible   | No compatible   |
 | Windows 10, versión 1511                              | habilitado         | habilitado         | No compatible   | No compatible   |
 | Windows 10, versión 1607/Windows Server 2016 Standard | habilitado         | habilitado         | habilitado         | habilitado         |
 | Windows 10, versión 1703                              | habilitado         | habilitado         | habilitado         | habilitado         |
@@ -83,7 +83,7 @@ A continuación se muestra la compatibilidad del proveedor de Microsoft Schannel
 | Windows 7/Windows Server 2008 R2                      | No compatible | Disabled      | habilitado       | habilitado     | habilitado     |
 | Windows 8/Windows Server 2012                         | No compatible | Disabled      | Disabled      | habilitado     | habilitado     |
 | Windows 8.1/Windows Server 2012 R2                    | No compatible | Disabled      | Disabled      | habilitado     | habilitado     |
-| Windows 10, versión 1507                              | No compatible | Disabled      | Disabled      | habilitado     | habilitado     |
+| Windows 10, versión 1507                              | No compatible | Disabled      | Disabled      | habilitado     | habilitado     |
 | Windows 10, versión 1511                              | No compatible | Disabled      | Disabled      | habilitado     | habilitado     |
 | Windows 10, versión 1607/Windows Server 2016 Standard | No compatible | No compatible | No compatible | Disabled    | Disabled    |
 | Windows 10, versión 1703                              | No compatible | No compatible | No compatible | Disabled    | Disabled    |
@@ -97,7 +97,7 @@ A continuación se muestra la compatibilidad del proveedor de Microsoft Schannel
 
 
 > [!IMPORTANT]
-> A partir Windows 10 versión 1607 y Windows Server 2016, SSL 2.0 se ha quitado y ya no se admite.
+> A partir Windows 10, versión 1607 y Windows Server 2016, SSL 2.0 se ha quitado y ya no se admite.
 
 > [!TIP]  
-> Todas las versiones Windows aceptarán un mensaje de formato unificado "ClientHello" incluso cuando la versión 2 de SSL esté deshabilitada o ya no se admite.
+> Todas las versiones Windows aceptarán un mensaje de formato unificado "ClientHello", incluso cuando la versión 2 de SSL esté deshabilitada o ya no se admite.

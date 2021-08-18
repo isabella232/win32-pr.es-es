@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_SETSELECTEDCOLUMN (commctrl. h)
+title: LVM_SETSELECTEDCOLUMN mensaje (Commctrl.h)
 description: Establece el índice de la columna seleccionada.
 ms.assetid: 11b0838e-24a7-4c1c-b67d-0912b5a6442a
 keywords:
-- LVM_SETSELECTEDCOLUMN controles de mensajes de Windows
+- LVM_SETSELECTEDCOLUMN controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 827c41fabaea722bb2372c6bd3f7c3a54bee92f9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6f6564e1fda50d11b3d4c520f85184439b0465f1cf5767e7926e6e1c9476f786
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019180"
 ---
-# <a name="lvm_setselectedcolumn-message"></a>\_Mensaje SETSELECTEDCOLUMN LVM
+# <a name="lvm_setselectedcolumn-message"></a>Mensaje DE LVM \_ SETSELECTEDCOLUMN
 
 Establece el índice de la columna seleccionada.
 
@@ -37,14 +37,14 @@ Establece el índice de la columna seleccionada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto.
+No se usa el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los índices de columna se almacenan en una matriz **int** . Vea el miembro **puColumns** de [**LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema).
+Los índices de columna se almacenan en una **matriz int.** Vea el **miembro puColumns** de [**LVITEM.**](/windows/win32/api/commctrl/ns-commctrl-lvitema)
 
 > [!Note]  
-> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -54,9 +54,9 @@ Los índices de columna se almacenan en una matriz **int** . Vea el miembro **pu
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

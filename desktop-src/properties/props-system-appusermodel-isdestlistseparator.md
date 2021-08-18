@@ -1,19 +1,19 @@
 ---
-description: Inserta un separador en la sección de tareas de una Jump List.
+description: Inserta un separador en la sección Tareas de un Lista de accesos directos.
 ms.assetid: 6cee1c20-865c-4d53-98c5-5402855a0004
-title: System. AppUserModel. IsDestListSeparator
+title: System.AppUserModel.IsDestListSeparator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7283daac4487dfc1872a0e93922e406d89be4f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf64c287f9a8623e283894b32a9e8b07f449d306d21d25e7c206158f4c69df87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103813899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970874"
 ---
-# <a name="systemappusermodelisdestlistseparator"></a>System. AppUserModel. IsDestListSeparator
+# <a name="systemappusermodelisdestlistseparator"></a>System.AppUserModel.IsDestListSeparator
 
-Inserta un separador en la sección de **tareas** de una Jump List. Establezca esta propiedad en un objeto [**IShellLink**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishelllinka) y páselo a [**ICustomDestinationList:: AddUserTasks**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-icustomdestinationlist-addusertasks).
+Inserta un separador en la **sección Tareas** de un Lista de accesos directos. Establezca esta propiedad en un [**objeto IShellLink**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishelllinka) y pásala a [**ICustomDestinationList::AddUserTasks**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-icustomdestinationlist-addusertasks).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = false
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -54,7 +54,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -69,7 +69,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -96,7 +96,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> <dt>
 
 [relatedPropertyInfo](./propdesc-schema-relatedpropertyinfo.md)

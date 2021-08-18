@@ -1,7 +1,7 @@
 ---
-description: 'Hora de inicio de ejemplo. Este valor solo es válido si la variable miembro CMediaSample:: m \_ dwFlags contiene la \_ marca TIMEVALID de ejemplo AM \_ .'
+description: Hora de inicio de ejemplo. Este valor solo es válido si la variable miembro CMediaSample::m \_ dwFlags contiene la marca \_ AM SAMPLE \_ TIMEVALID.
 ms.assetid: 31af979b-4c10-4f15-aa8a-90807b5cc156
-title: 'Miembro CMediaSample:: m_Start (Amfilter. h)'
+title: CMediaSample::m_Start miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1c8be533c28a2b8a166d87d1751682cf6b09329b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c3d441bcea087614626bc107283e4d4905442774df586e3f10df5b78f472da19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954434"
 ---
-# <a name="cmediasamplem_start-member"></a>Miembro de inicio CMediaSample:: m \_
+# <a name="cmediasamplem_start-member"></a>Miembro Start CMediaSample::m \_
 
-Hora de inicio de ejemplo. Este valor solo es válido si la variable miembro [**CMediaSample:: m \_ dwFlags**](cmediasample-m-dwflags.md) contiene la \_ marca TIMEVALID de ejemplo AM \_ .
+Hora de inicio de ejemplo. Este valor solo es válido si la variable miembro [**CMediaSample::m \_ dwFlags**](cmediasample-m-dwflags.md) contiene la marca \_ AM SAMPLE \_ TIMEVALID.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ REFERENCE_TIME m_Start;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ REFERENCE_TIME m_Start;
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

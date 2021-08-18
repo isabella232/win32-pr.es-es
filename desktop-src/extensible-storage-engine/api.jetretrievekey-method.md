@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetRetrieveKey (método)'
-title: Método API. JetRetrieveKey
+description: Más información sobre el método Api.JetRetrieveKey
+title: Método Api.JetRetrieveKey
 TOCTitle: 'JetRetrieveKey method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetRetrieveKey(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.Byte[],System.Int32,System.Int32@,Microsoft.Isam.Esent.Interop.RetrieveKeyGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetretrievekey(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ebf130b4542992e18de49d58801f789d40106fef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 161840971181db3594257b1ae2440c3c1c06b35a871b21c4cbeddad56527a9d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118783906"
 ---
-# <a name="apijetretrievekey-method"></a>Método API. JetRetrieveKey
+# <a name="apijetretrievekey-method"></a>Método Api.JetRetrieveKey
 
-Recupera la clave de la entrada de índice en la posición actual de un cursor. Vea también [RetrieveKey (JET_SESID, JET_TABLEID, RetrieveKeyGrbit)](./api.retrievekey-method.md).
+Recupera la clave para la entrada de índice en la posición actual de un cursor. Consulte también [RetrieveKey(JET_SESID, JET_TABLEID, RetrieveKeyGrbit).](./api.retrievekey-method.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,51 +74,51 @@ public static void JetRetrieveKey(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor del que se va a recuperar la clave.
+    Cursor del que se recuperará la clave.
 
 <!-- end list -->
 
   - datos  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
-    Búfer en el que se va a recuperar la clave.
+    Búfer en el que se recuperará la clave.
 
 <!-- end list -->
 
   - dataSize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Tamaño del búfer.
 
 <!-- end list -->
 
   - actualDataSize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Devuelve el tamaño real de los datos.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. RetrieveKeyGrbit](./retrievekeygrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.RetrieveKeyGrbit](./retrievekeygrbit-enumeration.md)  
     
-    Recupera las opciones de clave.
+    Recuperar opciones de clave.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

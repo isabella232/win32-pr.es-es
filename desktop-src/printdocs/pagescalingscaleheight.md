@@ -1,19 +1,19 @@
 ---
-description: Obtenga información sobre el parámetro PageScalingScaleHeight. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Obtenga información sobre el parámetro PageScalingScaleHeight. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: ccc2ad1c-b0c2-4c45-bc95-7c15426c2534
 title: PageScalingScaleHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d51bdb5577b5e3863cfadab1fa9eb74ff40d54da
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 620f491a1bde41149dc8db4a63e41cc77ec1ba27e514a75d3c245e82d34c9879
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113548843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118731973"
 ---
 # <a name="pagescalingscaleheight"></a>PageScalingScaleHeight
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Especifica el factor de escalado en la dirección ImageableSizeHeight para el escalado personalizado.
 
@@ -24,7 +24,7 @@ Especifica el factor de escalado en la dirección ImageableSizeHeight para el es
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|---------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                 |
 | Prefijo de ámbito <br/> | Página<br/>                                         |
@@ -71,14 +71,14 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                      |
+| Propiedad                | xsi:type           | Value                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | String<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | Entero<br/> | no definido<br/>       |
 | MaxValue<br/>     | Entero<br/> | no definido<br/>       |
 | MinValue<br/>     | Entero<br/> | 1<br/>               |
 | Mandatory<br/>    | String<br/>  | psk:Conditional<br/> |
-| Múltiple<br/>     | Entero<br/> | 1<br/>               |
+| Varios<br/>     | Entero<br/> | 1<br/>               |
 | UnitType<br/>     | String<br/>  | percent<br/>         |
 
 
@@ -89,7 +89,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

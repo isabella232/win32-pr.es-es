@@ -1,9 +1,9 @@
 ---
-title: Estructura FONTGROUPHDR
-description: Contiene la información necesaria para que una aplicación tenga acceso a una fuente específica. La definición de la estructura que se proporciona aquí solo es para explicación; no se encuentra en ningún archivo de encabezado estándar.
+title: FontGROUPHDR (estructura)
+description: Contiene la información necesaria para que una aplicación acceda a una fuente específica. La definición de estructura que se proporciona aquí es solo para una explicación; no está presente en ningún archivo de encabezado estándar.
 ms.assetid: 180b3dfd-3f20-4100-b45b-2f253b7c0582
 keywords:
-- Menús de la estructura FONTGROUPHDR y otros recursos
+- Menús de estructura FONTGROUPHDR y otros recursos
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1d67d9ecfa451970422f21d05817f26170a9c8eb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 51b307b7f5798a57e344096fe46227edf97babbf3547c4c851d71fd8ecdc28da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104274540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118734483"
 ---
-# <a name="fontgrouphdr-structure"></a>Estructura FONTGROUPHDR
+# <a name="fontgrouphdr-structure"></a>FontGROUPHDR (estructura)
 
-Contiene la información necesaria para que una aplicación tenga acceso a una fuente específica. La definición de la estructura que se proporciona aquí solo es para explicación; no se encuentra en ningún archivo de encabezado estándar.
+Contiene la información necesaria para que una aplicación acceda a una fuente específica. La definición de estructura que se proporciona aquí es solo para una explicación; no está presente en ningún archivo de encabezado estándar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,28 +43,28 @@ typedef struct {
 **NumberOfFonts**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-El número de fuentes individuales asociadas a este recurso.
+Número de fuentes individuales asociadas a este recurso.
 
 </dd> <dt>
 
 **DE**
 </dt> <dd>
 
-Tipo: **[ **dirente**](direntry.md)**
+Tipo: **[ **DIRENTRY**](direntry.md)**
 
 </dd> <dd>
 
-Estructura que contiene un identificador ordinal único para cada fuente del recurso. El miembro **de** es un marcador de posición para la matriz de longitud variable de estructuras de [**direntary**](direntry.md) .
+Estructura que contiene un identificador ordinal único para cada fuente del recurso. El **miembro DE** es un marcador de posición para la matriz de longitud variable de estructuras [**DIRENTRY.**](direntry.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La estructura **FONTGROUPHDR** sigue los datos de las fuentes individuales en. Archivo res. El compilador de recursos agrega automáticamente la estructura **FONTGROUPHDR** , generalmente como la última entrada del archivo.
+La **estructura FONTGROUPHDR** sigue los datos de las fuentes individuales de . Archivo Res. El compilador de recursos agrega automáticamente la **estructura FONTGROUPHDR,** generalmente como la última entrada del archivo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,13 +84,13 @@ La estructura **FONTGROUPHDR** sigue los datos de las fuentes individuales en. A
 **Referencia**
 </dt> <dt>
 
-[**ARRENDAMIENTO**](direntry.md)
+[**DIRENTRY**](direntry.md)
 </dt> <dt>
 
 [**FONTDIRENTRY**](fontdirentry.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Recursos](resources.md)

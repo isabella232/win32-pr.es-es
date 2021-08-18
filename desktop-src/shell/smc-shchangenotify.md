@@ -1,6 +1,6 @@
 ---
-description: Le informa de que se ha producido un cambio.
-title: Mensaje de SMC_SHCHANGENOTIFY (shobjidl. h)
+description: Le notifica que se ha realizado un cambio.
+title: SMC_SHCHANGENOTIFY mensaje (Shobjidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 8232f170-0dab-475a-ace0-67c04f01c777
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 258a885ddaf61b45df1cfff9f9c77ce37a233dd0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a74f0716eed49a964002e7f6bb1fa8b513fa968eff32d9ed67fa26a1364bcfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967964"
 ---
-# <a name="smc_shchangenotify-message"></a>Mensaje de SHCHANGENOTIFY de SMC \_
+# <a name="smc_shchangenotify-message"></a>Mensaje \_ SHCHANGENOTIFY de SMC
 
-Le informa de que se ha producido un cambio.
+Le notifica que se ha realizado un cambio.
 
 
 ```C++
@@ -40,17 +40,17 @@ SMC_SHCHANGENOTIFY
 *psmc* 
 </dt> <dd>
 
-Puntero a una estructura [**SMCSHCHANGENOTIFYSTRUCT**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-smcshchangenotifystruct) con información sobre el cambio.
+Puntero a una [**estructura SMCSHCHANGENOTIFYSTRUCT**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-smcshchangenotifystruct) con información sobre el cambio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devolver S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
+El método [**IShellMenuCallback::CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,8 +60,8 @@ El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_c
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Shobjidl. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shobjidl. idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

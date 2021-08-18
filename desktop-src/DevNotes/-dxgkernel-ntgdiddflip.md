@@ -1,7 +1,7 @@
 ---
-description: Hace que se intercambie la memoria de la superficie asociada a las superficies de destino y actuales.
+description: Hace que la memoria de superficie asociada al destino y las superficies actuales se intercambian.
 ms.assetid: 2c557393-079e-48e5-b3a6-1157265d88e3
-title: Función NtGdiDdFlip (Ntgdi. h)
+title: Función NtGdiDdFlip (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 1fd2d6f84f602fd07cc29a0efeae28209cb970a5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 18113c841c22b31c9768d42491a63ead8cafee3c3b598bc46f442068592e67b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956494"
 ---
-# <a name="ntgdiddflip-function"></a>NtGdiDdFlip función)
+# <a name="ntgdiddflip-function"></a>Función NtGdiDdFlip
 
-\[Esta función está sujeta a cambios en cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios del sistema operativo y ocultan muchas otras dificultades para interactuar directamente con los controladores de pantalla.\]
+\[Esta función está sujeta a cambios con cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios del sistema operativo y ocultan muchas otras dificultades implicadas en la interacción directa con los controladores de pantalla.\]
 
-Hace que se intercambie la memoria de la superficie asociada a las superficies de destino y actuales.
+Hace que la memoria de superficie asociada al destino y las superficies actuales se intercambian.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,51 +48,51 @@ DWORD APIENTRY NtGdiDdFlip(
 
 <dl> <dt>
 
-*hSurfaceCurrent* \[ de\]
+*hSurfaceCurrent* \[ En\]
 </dt> <dd>
 
-Identificador de la [estructura \_ \_ local](https://msdn.microsoft.com/library/ms793861.aspx) de la superficie de DD que describe la superficie actual.
+Identificador de la [estructura \_ \_ LOCAL de DD SURFACE](https://msdn.microsoft.com/library/ms793861.aspx) que describe la superficie actual.
 
 </dd> <dt>
 
-*hSurfaceTarget* \[ de\]
+*hSurfaceTarget* \[ En\]
 </dt> <dd>
 
-Identificador de la [estructura \_ \_ local](https://msdn.microsoft.com/library/ms793861.aspx) de la superficie de DD que describe la superficie de destino; es decir, la superficie en la que se debe voltear el controlador.
+Controle la [estructura \_ \_ LOCAL de DD SURFACE](https://msdn.microsoft.com/library/ms793861.aspx) que describe la superficie de destino; es decir, la superficie a la que se debe voltear el controlador.
 
 </dd> <dt>
 
-*hSurfaceCurrentLeft* \[ de\]
+*hSurfaceCurrentLeft* \[ En\]
 </dt> <dd>
 
-Identificador de la [estructura \_ \_ local del área DD](https://msdn.microsoft.com/library/ms793861.aspx) que describe la superficie izquierda actual.
+Identificador de la [estructura \_ \_ LOCAL de DD SURFACE](https://msdn.microsoft.com/library/ms793861.aspx) que describe la superficie izquierda actual.
 
 </dd> <dt>
 
-*hSurfaceTargetLeft* \[ de\]
+*hSurfaceTargetLeft* \[ En\]
 </dt> <dd>
 
-Identificador de la [estructura \_ \_ local](https://msdn.microsoft.com/library/ms793861.aspx) de la superficie de DD que describe la superficie de destino de la izquierda a la que se va a voltear.
+Identificador de la [estructura \_ \_ LOCAL de DD SURFACE](https://msdn.microsoft.com/library/ms793861.aspx) que describe la superficie de destino izquierda a la que se debe voltear.
 
 </dd> <dt>
 
 *puFlipData* \[ in, out\]
 </dt> <dd>
 
-Puntero a una estructura [DD \_ FLIPDATA](https://msdn.microsoft.com/library/ms794213.aspx) que contiene la información necesaria para realizar el volteo.
+Puntero a una [estructura \_ FLIPDATA de DD](https://msdn.microsoft.com/library/ms794213.aspx) que contiene la información necesaria para realizar el volteo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**NtGdiDdFlip** devuelve uno de los siguientes códigos de devolución de llamada.
+**NtGdiDdFlip devuelve** uno de los siguientes códigos de devolución de llamada.
 
 
 
 | Código devuelto                                                                                              | Descripción                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_controlador DDHAL \_ controlado**</dt> </dl>    | El controlador ha realizado la operación y ha devuelto un código de retorno válido para esa operación. Si este código es DD \_ Aceptar, DirectDraw o Direct3D continúa con la función. De lo contrario, DirectDraw o Direct3D devuelve el código de error proporcionado por el controlador y anula la función.<br/>                                                                                 |
-| <dl> <dt>**\_NOTHANDLED del controlador DDHAL \_**</dt> </dl> | El controlador no tiene ningún comentario en la operación solicitada. Si el controlador debe haber implementado una devolución de llamada determinada, DirectDraw o Direct3D informa de una condición de error. De lo contrario, DirectDraw o Direct3D controla la operación como si la devolución de llamada del controlador no se hubiera definido ejecutando la implementación independiente de dispositivos DirectDraw o Direct3D.<br/> |
+| <dl> <dt>**CONTROLADOR DDHAL \_ \_ MANIPULADO**</dt> </dl>    | El controlador ha realizado la operación y ha devuelto un código de retorno válido para esa operación. Si este código es correcto para \_ DD, DirectDraw o Direct3D continúa con la función . De lo contrario, DirectDraw o Direct3D devuelven el código de error proporcionado por el controlador y anulan la función.<br/>                                                                                 |
+| <dl> <dt>**CONTROLADOR DDHAL \_ \_ NO CONTROLADA**</dt> </dl> | El controlador no tiene ningún comentario sobre la operación solicitada. Si el controlador debe haber implementado una devolución de llamada determinada, DirectDraw o Direct3D notifica una condición de error. De lo contrario, DirectDraw o Direct3D controla la operación como si la devolución de llamada del controlador no se hubiera definido mediante la ejecución de la implementación independiente del dispositivo DirectDraw o Direct3D.<br/> |
 
 
 
@@ -106,7 +106,7 @@ Puntero a una estructura [DD \_ FLIPDATA](https://msdn.microsoft.com/library/ms7
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -114,7 +114,7 @@ Puntero a una estructura [DD \_ FLIPDATA](https://msdn.microsoft.com/library/ms7
 
 <dl> <dt>
 
-[Compatibilidad con clientes de nivel inferior de gráficos](-dxgkernel-low-level-client-support.md)
+[Compatibilidad con clientes de bajo nivel de gráficos](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

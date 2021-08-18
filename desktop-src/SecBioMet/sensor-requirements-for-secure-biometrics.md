@@ -1,40 +1,40 @@
 ---
-title: Requisitos del sensor para la biometría segura
-description: Requisitos del sensor para la biometría segura
+title: Requisitos del sensor para la biométrica segura
+description: Requisitos del sensor para la biométrica segura
 ms.assetid: 6D5709E9-7B6B-4D6C-BF85-C6FB5DF5A7EE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82f4e41f8300a124115c2b6cd380f904f216f491
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ba76ee3b114f79d3c60adfa252f59cd2b8f98aa135e50faf93cf5ecf7314ad99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105685744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118911797"
 ---
-# <a name="sensor-requirements-for-secure-biometrics"></a>Requisitos del sensor para la biometría segura
+# <a name="sensor-requirements-for-secure-biometrics"></a>Requisitos del sensor para la biométrica segura
 
-Microsoft aprovecha Módulo de plataforma segura (TPM) 2,0 para asegurarse de que, en el hardware adecuado, el software (hasta el malware en el nivel de kernel inclusive) no pueda producir una autenticación biométrica válida si no se proporcionó la biométrica del usuario en el momento de la autenticación.
+Microsoft aprovecha Módulo de plataforma segura (TPM) 2.0 para asegurarse de que, en el hardware adecuado, el software (hasta e incluyendo malware de nivel de kernel) no pueda generar una autenticación biométrica válida si no se proporcionó la biométrica del usuario en el momento de la autenticación.
 
-Para ello, usamos las autorizaciones basadas en sesión TPM 2,0 y el sensor que realiza la extracción de características y la búsqueda de coincidencias en un entorno de ejecución de confianza. La primera vez que el Plataforma de biometría de Windows ve un sensor seguro (como se muestra en la funcionalidad del sensor seguro), aprovisiona un secreto que se comparte entre el sensor biométrico seguro y el TPM. Ese secreto nunca se expone de nuevo en el sistema operativo y es único para cada sensor.
+Para ello, usamos autorizaciones basadas en sesión de TPM 2.0 y el sensor que realiza la extracción de características y la coincidencia en un entorno de ejecución de confianza. La primera vez que Windows Biometric Framework ve un sensor seguro (según lo notificado por la funcionalidad del sensor seguro), aprovisiona un secreto que se comparte entre el sensor biométrico seguro y el TPM. Ese secreto nunca se vuelve a exponer al sistema operativo y es único para cada sensor.
 
-Para realizar una autenticación, el Plataforma de biometría de Windows abre una sesión con el TPM y obtiene un nonce. El nonce se pasa al sensor seguro como parte de una operación de coincidencia segura. El sensor realiza la coincidencia en el entorno de ejecución de confianza y, si es correcto, calcula un HMAC sobre ese nonce y la identidad del usuario que se identificó.
+Para realizar una autenticación, el Windows Biometric Framework abre una sesión con el TPM y obtiene un nonce. El nonce se pasa al sensor seguro como parte de una operación de coincidencia segura. El sensor realiza la coincidencia en el entorno de ejecución de confianza y, si se realiza correctamente, calcula un HMAC sobre ese valor nonce y la identidad del usuario que se identificó.
 
-El Plataforma de biometría de Windows puede usar este HMAC para realizar operaciones criptográficas en el TPM para el usuario que se identificó. El HMAC es de corta duración y expira después de unos segundos.
+El marco biométrico de Windows puede usar este HMAC para realizar operaciones criptográficas en el TPM para el usuario identificado. El HMAC es de corta duración y expira después de unos segundos.
 
-Con este protocolo, después del aprovisionamiento inicial, no se incluyen datos confidenciales en el sistema operativo. El TPM conserva los secretos y el sensor seguro, y lo único que se expone durante la autenticación es el HMAC de corta duración.
+Con este protocolo, después del aprovisionamiento inicial, no se incluye ningún dato confidencial en el sistema operativo. El TPM y el sensor seguro mantienen secretos, y lo único que se expone durante la autenticación es el HMAC de corta duración.
 
 ## <a name="secure-sensor-capability"></a>Funcionalidad del sensor seguro
 
-El \_ sensor debe informar de la funcionalidad del sensor seguro de la capacidad de WINBIO \_ si es \_ compatible con los nuevos métodos de adaptador de motor de la versión v 4,0 de la interfaz del adaptador de motor.
+El sensor debe proporcionar la funcionalidad WINBIO CAPABILITY SECURE SENSOR si admite los nuevos métodos de adaptador de motor de \_ \_ la versión 4.0 de la interfaz del \_ adaptador del motor.
 
-Para notificar que un sensor es un sensor seguro, debe cumplir los siguientes requisitos:
+Para reclamar que un sensor es un sensor seguro, debe cumplir los siguientes requisitos:
 
--   El motor de coincidencia del sensor debe estar aislado del sistema operativo normal (por ejemplo, mediante un entorno de ejecución de confianza).
--   El sensor debe admitir la entrada segura de muestras en el motor de coincidencia aislado; el contenido de los ejemplos nunca debe exponerse al sistema operativo normal.
--   El motor de coincidencia debe admitir la versión segura de credenciales mediante la implementación de los nuevos métodos V4 descritos a continuación
+-   El motor de coincidencia del sensor debe aislarse del sistema operativo normal (por ejemplo, mediante un entorno de ejecución de confianza).
+-   El sensor debe admitir la entrada segura de muestras en el motor de coincidencia aislado; el contenido de los ejemplos nunca debe exponerse al sistema operativo normal
+-   El motor de coincidencia debe admitir la versión de credenciales seguras mediante la implementación de los nuevos métodos v4 que se describen a continuación.
 -   El sensor debe admitir la detección de ataques de presentación.
 
-El \_ valor del \_ sensor seguro de la capacidad \_ de WINBIO se encuentra en la estructura de [**\_ funcionalidades de WINBIO**](/windows-hardware/drivers/ddi/winbio_ioctl/ns-winbio_ioctl-_winbio_sensor_attributes) . A continuación se muestra un ejemplo de cómo definirlo.
+El valor DEL \_ SENSOR WINBIO CAPABILITY \_ SECURE se encuentra en la estructura CAPABILITIES \_ [**\_ de WINBIO.**](/windows-hardware/drivers/ddi/winbio_ioctl/ns-winbio_ioctl-_winbio_sensor_attributes) Este es un ejemplo de cómo definirlo.
 
 
 ```
@@ -77,9 +77,9 @@ El \_ valor del \_ sensor seguro de la capacidad \_ de WINBIO se encuentra en la
 
 
 
-## <a name="engine-adapter-interface-v-40"></a>Interfaz del adaptador de motor v 4,0
+## <a name="engine-adapter-interface-v-40"></a>Interfaz del adaptador de motor v 4.0
 
-La versión de la interfaz del adaptador del motor se ha incrementado a 4,0. Las funciones adicionales de la nueva interfaz permiten al sensor participar en el TPM 2,0. Son las siguientes:
+La versión de la interfaz del adaptador del motor se ha incrementado a 4.0. Las funciones adicionales de la nueva interfaz permiten que el sensor participe en TPM 2.0. Son las siguientes:
 
 -   [**EngineAdapterCreateKey**](/windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_create_key_fn)
 -   [**EngineAdapterIdentifyFeatureSetSecure**](/windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_identify_feature_set_secure_fn)
@@ -279,6 +279,6 @@ typedef struct _WINBIO_ENGINE_INTERFACE {
 
 Windows 10
 
- 
+ 
 
- 
+ 

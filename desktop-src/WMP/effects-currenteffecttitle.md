@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. currentEffectTitle
-description: El atributo currentEffectTitle recupera el título de presentación de la visualización actual.
+title: EFFECTS.currentEffectTitle
+description: El atributo currentEffectTitle recupera el título para mostrar de la visualización actual.
 ms.assetid: a6b5417c-e2a5-42fe-b25c-58c9590bbc88
 keywords:
-- EFFECTs. currentEffectTitle Windows Media Player
+- EFFECTS.currentEffectTitle Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 348d8ae1eed421d9e5da594f34a9b10f5b439469
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4a4cb48d92f7f4ad0eb801c90e46ad20f04a639b20550a1dbf910e93347e2429
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996745"
 ---
-# <a name="effectscurrenteffecttitle"></a>EFFECTs. currentEffectTitle
+# <a name="effectscurrenteffecttitle"></a>EFFECTS.currentEffectTitle
 
-El atributo **currentEffectTitle** recupera el título de presentación de la visualización actual.
+El **atributo currentEffectTitle** recupera el título de presentación de la visualización actual.
 
 ``` syntax
         elementID.currentEffectTitle
@@ -29,7 +29,7 @@ El atributo **currentEffectTitle** recupera el título de presentación de la vi
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de solo lectura.
+Este atributo es una cadena de solo **lectura.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Este atributo es una **cadena** de solo lectura.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -45,13 +45,13 @@ Este atributo es una **cadena** de solo lectura.
 
 <dl> <dt>
 
-[**EFFECTs, elemento**](effects-element.md)
+[**ELEMENTO EFFECTS**](effects-element.md)
 </dt> <dt>
 
-[**EFFECTs. currentEffect**](effects-currenteffect.md)
+[**EFFECTS.currentEffect**](effects-currenteffect.md)
 </dt> <dt>
 
-[**EFFECTs. effectTitle**](effects-effecttitle.md)
+[**EFFECTS.effectTitle**](effects-effecttitle.md)
 </dt> </dl>
 
  

@@ -1,32 +1,32 @@
 ---
 title: Seguimiento de eventos en ADSI
-description: Windows Server 2008 y Windows Vista presentan el seguimiento de eventos en Active Directory interfaces de servicio (ADSI).
+description: Windows Server 2008 y Windows Vista presentan el seguimiento de eventos en Active Directory Service Interfaces (ADSI).
 ms.assetid: 743aeeba-5b48-47c7-aaf5-0e9b48e206db
 ms.tgt_platform: multiple
 keywords:
 - ADSI de seguimiento de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b26aee00404f5cf97d228698f64fec804c28e62
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: a59b2db3775c8c578ad361667a2d89c36240caf4b3bbb4bcd5cdd2798011514b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023983"
 ---
 # <a name="event-tracing-in-adsi"></a>Seguimiento de eventos en ADSI
 
-Windows Server 2008 y Windows Vista presentan [el](/windows/desktop/ETW/event-tracing-portal) seguimiento de eventos [Active Directory interfaces de servicio](active-directory-service-interfaces-adsi.md) (ADSI). Algunas áreas del proveedor LDAP adsi tienen una implementación subyacente que es compleja o que implica una secuencia de pasos que dificulta el diagnóstico de problemas. Para ayudar a los desarrolladores de aplicaciones a solucionar problemas, el seguimiento de eventos se ha agregado a las áreas siguientes:
+Windows Server 2008 y Windows Vista presentan el seguimiento de [eventos](/windows/desktop/ETW/event-tracing-portal) [en Active Directory Service Interfaces](active-directory-service-interfaces-adsi.md) (ADSI). Algunas áreas del proveedor LDAP ADSI tienen una implementación subyacente que es compleja o que implica una secuencia de pasos que dificulta el diagnóstico de problemas. Para ayudar a los desarrolladores de aplicaciones a solucionar problemas, el seguimiento de eventos se ha agregado a las áreas siguientes:
 
 ## <a name="schema-parsing-and-downloading"></a>Análisis y descarga de esquemas
 
-La interfaz IADs de ADSI requiere que el esquema LDAP se almacene en caché en el cliente para que los atributos se puedan serializar correctamente (como se describe en el modelo de esquema [ADSI](adsi-schema-model.md)). Para ello, ADSI carga el esquema para cada proceso (y para cada servidor LDAP o dominio) en memoria desde un archivo de esquema (.sch) guardado en el disco local o descargándose desde el servidor LDAP. Los distintos procesos de la misma máquina cliente usan el esquema almacenado en caché en el disco si está disponible y es aplicable.
+La interfaz IADs de ADSI requiere que el esquema LDAP se almacene en caché en el cliente para que los atributos se puedan serializar correctamente (como se describe en el modelo de esquema [ADSI](adsi-schema-model.md)). Para ello, ADSI carga el esquema para cada proceso (y para cada servidor LDAP o dominio) en la memoria desde un archivo de esquema (.sch) que se guarda en el disco local o descargándose desde el servidor LDAP. Los distintos procesos de la misma máquina cliente usan el esquema almacenado en caché en disco si está disponible y es aplicable.
 
-Si el esquema no se puede obtener del disco o del servidor, ADSI usa un esquema predeterminado codificado de forma rígida. Cuando esto sucede, los atributos que no forman parte de este esquema predeterminado no se pueden serializar y ADSI devuelve un error al recuperar estos atributos. Varios factores podrían provocar que esto suceda, incluidos problemas al analizar el esquema y privilegios insuficientes para descargar el esquema. A menudo es difícil determinar por qué se usa un determinado esquema predeterminado. El uso del seguimiento de eventos en esta área le ayudará a diagnosticar el problema y corregirlo más rápidamente.
+Si el esquema no se puede obtener del disco o del servidor, ADSI usa un esquema predeterminado codificado de forma rígida. Cuando esto sucede, los atributos que no forman parte de este esquema predeterminado no se pueden serializar y ADSI devuelve un error al recuperar estos atributos. Una serie de factores podrían provocar que esto suceda, incluidos problemas al analizar el esquema y privilegios insuficientes para descargar el esquema. A menudo es difícil determinar por qué se usa un determinado esquema predeterminado. El uso del seguimiento de eventos en esta área le ayudará a diagnosticar el problema y corregirlo más rápidamente.
 
 ## <a name="changing-and-setting-the-password"></a>Cambiar y establecer la contraseña
 
-[**ChangePassword**](/windows/desktop/api/Iads/nf-iads-iadsuser-changepassword) y [**SetPassword**](/windows/desktop/api/Iads/nf-iads-iadsuser-setpassword) emplean más de un mecanismo para realizar la operación solicitada en función de la configuración disponible (como se describe en Establecimiento y cambio de contraseñas de usuario con el [proveedor LDAP).](setting-user-passwords-for-ldap-providers.md) Cuando se produce un error en **ChangePassword** y **SetPassword,** puede ser difícil determinar exactamente por qué, y el seguimiento de eventos le ayudará a solucionar problemas con estos métodos.
+[**ChangePassword**](/windows/desktop/api/Iads/nf-iads-iadsuser-changepassword) y [**SetPassword**](/windows/desktop/api/Iads/nf-iads-iadsuser-setpassword) emplean más de un mecanismo para realizar la operación solicitada en función de la configuración disponible (como se describe en Establecer y cambiar contraseñas de usuario con el [proveedor LDAP](setting-user-passwords-for-ldap-providers.md)). Cuando se produce un error en **ChangePassword** y **SetPassword,** puede ser difícil determinar exactamente por qué, y el seguimiento de eventos le ayudará a solucionar problemas con estos métodos.
 
 ## <a name="adsi-bind-cache"></a>Caché de enlace ADSI
 
@@ -44,14 +44,14 @@ A continuación, ejecute el siguiente comando:
 
 **tracelog.exe -start** *sessionname* **-guid \# provider** _\_ guid_ **-f** *filename* **-flag** *traceFlags* **-level** *traceLevel*
 
-*sessionname* es simplemente un identificador arbitrario que se usa para etiquetar la sesión de seguimiento (tendrá que hacer referencia a este nombre de sesión más adelante cuando detenga la sesión de seguimiento). El GUID del proveedor de seguimiento ADSI es "7288c9f8-d63c-4932-a345-89d6b060174d". *filename* especifica el archivo de registro en el que se escribirán los eventos. *traceFlags* debe ser uno de los siguientes valores:
+*sessionname* es simplemente un identificador arbitrario que se usa para etiquetar la sesión de seguimiento (tendrá que hacer referencia a este nombre de sesión más adelante cuando detenga la sesión de seguimiento). El GUID del proveedor de seguimiento adsi es "7288c9f8-d63c-4932-a345-89d6b060174d". *filename* especifica el archivo de registro en el que se escribirán los eventos. *traceFlags* debe ser uno de los siguientes valores:
 
 
 
 |         Marca                        |         Value              |
 |---------------------------------|-----------------------|
 | **ESQUEMA DE \_ DEPURACIÓN**<br/>    | 0x00000001<br/> |
-| **DEBUG \_ CHANGEPWD**<br/> | 0x00000002<br/> |
+| **DEPURAR \_ CHANGEPWD**<br/> | 0x00000002<br/> |
 | **DEBUG \_ SETPWD**<br/>    | 0x00000004<br/> |
 | **DEBUG \_ BINDCACHE**<br/> | 0x00000008<br/> |
 
@@ -133,7 +133,7 @@ Estas marcas determinan los métodos [ADSI](active-directory-service-interfaces-
 
  
 
-Puede combinar marcas combinando los bits adecuados en el *argumento traceFlags.* Por ejemplo, para especificar las marcas **DEBUG \_ SCHEMA** y **DEBUG \_ BINDCACHE,** el valor *traceFlags* adecuado sería 0x00000009.
+Puede combinar marcas combinando los bits adecuados en el *argumento traceFlags.* Por ejemplo, para especificar las marcas **DEBUG \_ SCHEMA** y **DEBUG \_ BINDCACHE,** se usaría el valor *traceFlags* 0x00000009.
 
 Por último, *la marca traceLevel* debe ser uno de los siguientes valores:
 
@@ -142,13 +142,13 @@ Por último, *la marca traceLevel* debe ser uno de los siguientes valores:
 |      Marca                                    |       Value                |
 |------------------------------------------|-----------------------|
 | **ERROR \_ DE NIVEL DE \_ SEGUIMIENTO**<br/>       | 0x00000002<br/> |
-| **INFORMACIÓN DE \_ NIVEL \_ DE SEGUIMIENTO**<br/> | 0x00000004<br/> |
+| **INFORMACIÓN \_ DE NIVEL DE \_ SEGUIMIENTO**<br/> | 0x00000004<br/> |
 
 
 
  
 
-**TRACE \_ LEVEL \_ INFORMATION hace** que el proceso de seguimiento registre todos los eventos, mientras que TRACE LEVEL **\_ \_ ERROR** hace que el proceso de seguimiento solo registre eventos de error.
+**TRACE \_ LEVEL \_ INFORMATION hace** que el proceso de seguimiento registre todos los eventos, mientras que TRACE LEVEL **\_ \_ ERROR** hace que el proceso de seguimiento registre solo eventos de error.
 
 Para finalizar el seguimiento, ejecute el siguiente comando:
 
@@ -158,9 +158,9 @@ En el ejemplo anterior, *sessionname* es el mismo nombre que el que se proporcio
 
 ## <a name="remarks"></a>Comentarios
 
-Es más eficaz hacer un seguimiento solo de procesos específicos especificando un PID determinado que hacer un seguimiento de todos los procesos de un equipo. Si necesita realizar un seguimiento de varias aplicaciones en la misma máquina, puede haber un impacto en el rendimiento. hay una salida de depuración considerable en las secciones orientadas al rendimiento del código. Además, los administradores deben tener cuidado de establecer correctamente los permisos de los archivos de registro al realizar el seguimiento de varios procesos. De lo contrario, cualquier usuario podría leer los registros de seguimiento y otros usuarios podrán realizar un seguimiento de los procesos que contienen información segura.
+Es más eficaz hacer un seguimiento solo de procesos específicos especificando un PID determinado que hacer un seguimiento de todos los procesos de un equipo. Si necesita realizar un seguimiento de varias aplicaciones en el mismo equipo, puede haber un impacto en el rendimiento. hay una salida de depuración considerable en secciones orientadas al rendimiento del código. Además, los administradores deben tener cuidado de establecer correctamente los permisos de los archivos de registro al realizar el seguimiento de varios procesos. De lo contrario, cualquier usuario podría leer los registros de seguimiento y otros usuarios podrán realizar un seguimiento de los procesos que contienen información segura.
 
-Por ejemplo, supone que el administrador configura el seguimiento de una aplicación "Test.exe" y no especifica un PID en el Registro para realizar un seguimiento de varias instancias del proceso. Ahora, otro usuario quiere hacer un seguimiento de la aplicación "Secure.exe". Si los archivos de registro de seguimiento no están restringidos correctamente, lo único que debe hacer el usuario es cambiar el nombre de "Secure.exe" a "Test.exe" y se realizará el seguimiento. En general, es mejor realizar un seguimiento solo de procesos específicos durante la solución de problemas y quitar la clave del Registro de seguimiento en cuanto se realiza la solución de problemas.
+Por ejemplo, supone que el administrador configura el seguimiento de una aplicación "Test.exe" y no especifica un PID en el registro para realizar el seguimiento de varias instancias del proceso. Ahora, otro usuario desea hacer un seguimiento de la aplicación "Secure.exe". Si los archivos de registro de seguimiento no están correctamente restringidos, lo único que debe hacer el usuario es cambiar el nombre de "Secure.exe" a "Test.exe" y se realizará el seguimiento. En general, es mejor realizar un seguimiento solo de procesos específicos durante la solución de problemas y quitar la clave del Registro de seguimiento en cuanto se realiza la solución de problemas.
 
 Puesto que la habilitación del seguimiento de eventos producirá archivos de registro adicionales, los administradores deben supervisar cuidadosamente los tamaños de los archivos de registro. la falta de espacio en disco en el equipo local puede provocar una denegación de servicio.
 
@@ -172,7 +172,7 @@ Escenario 1: el administrador ve un error inesperado en una aplicación que esta
 
     **HKEY \_ Sistema \_ DE MÁQUINA LOCAL** \\  \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **cscript.exe**
 
-2.  Inicie una sesión de seguimiento, estableciendo *traceFlags* en 0x2 (**DEBUG \_ CHANGEPASSWD**) y *traceLevel* en 0x4 (**TRACE LEVEL \_ \_ INFORMATION**), mediante el comando siguiente:
+2.  Inicie una sesión de seguimiento, estableciendo *traceFlags* en 0x2 (**DEBUG \_ CHANGEPASSWD**) y *traceLevel* en 0x4 (**TRACE LEVEL \_ \_ INFORMATION**), mediante el siguiente comando:
 
     **tracelog.exe -start scripttrace -guid \# 7288c9f8-d63c-4932-a345-89d6b060174d -f . \\ adsi.etl -flag 0x2 -level 0x4**
 
@@ -184,7 +184,7 @@ Escenario 1: el administrador ve un error inesperado en una aplicación que esta
 
     **HKEY \_ Sistema \_ DE MÁQUINA LOCAL** \\  \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **cscript.exe**
 
-5.  Ejecute la herramienta ETW Tracerpt.exe analizar la información de seguimiento del registro:
+5.  Ejecute la herramienta ETW Tracerpt.exe para analizar la información de seguimiento del registro:
 
     **tracelog.exe -start scripttrace -guid \# 7288c9f8-d63c-4932-a345-89d6b060174d -f . \\ adsi.etl -flag 0x2 -level 0x4**
 
@@ -192,9 +192,9 @@ Escenario 2: el administrador desea realizar un seguimiento de las operaciones d
 
 1.  Creación de la clave del Registro
 
-    **HKEY \_ Sistema \_ LOCAL MACHINE** \\  \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **w3wp.exe**
+    **HKEY \_ Sistema \_ DE MÁQUINA LOCAL** \\  \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **w3wp.exe**
 
-    y dentro de esa clave, cree un valor de tipo DWORD denominado PID y estadúzcalo en el identificador de proceso de la instancia de w3wp.exe que se ejecuta actualmente en el equipo local.
+    y dentro de esa clave, cree un valor de tipo DWORD denominado PID y esta establezca en el identificador de proceso de la instancia de w3wp.exe que se ejecuta actualmente en el equipo local.
 
 2.  A continuación, crean una sesión de seguimiento, estableciendo *traceFlags* en 0x1 (**DEBUG \_ SCHEMA**) y *traceLevel* en 0x4 (**TRACE LEVEL \_ \_ INFORMATION**):
 
@@ -206,7 +206,7 @@ Escenario 2: el administrador desea realizar un seguimiento de las operaciones d
     **tracelog.exe -stop w3wptrace**
 
 5.  Elimine la clave del Registro **HKEY \_ LOCAL \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **w3wp.exe**.
-6.  Ejecute la herramienta ETW tracerpt.exe analizar la información de seguimiento del registro:
+6.  Ejecute la herramienta ETW tracerpt.exe para analizar la información de seguimiento del registro:
 
     **tracerpt.exe . \\ w3wp.etl -o -report**
 

@@ -1,19 +1,19 @@
 ---
-description: Uno de los usos más comunes de las cadenas en una infraestructura de clave pública (PKI) es crear un nombre distintivo X. 500.
+description: Uno de los usos más comunes de las cadenas en una infraestructura de clave pública (PKI) es crear un nombre distintivo X.500.
 ms.assetid: 01e8749b-a040-4267-bc12-f58f2c300337
 title: Tipos de cadena
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1173de3b2c4c5fd64181cd19c69cfbcecb1d584
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53b9e190e10bc86bd68a344f5aa279b4812bc04437418578320c36e0e1791dfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903694"
 ---
 # <a name="string-types"></a>Tipos de cadena
 
-Uno de los usos más comunes de las cadenas en una infraestructura de clave pública (PKI) es crear un nombre distintivo X. 500. Por ejemplo, el nombre de sujeto de una solicitud de certificado se crea mediante la combinación de una secuencia de nombres distintivos relativos, tal y como se muestra en el siguiente ejemplo de sintaxis.
+Uno de los usos más comunes de las cadenas en una infraestructura de clave pública (PKI) es crear un nombre distintivo X.500. Por ejemplo, el nombre del firmante de una solicitud de certificado se crea combinando una secuencia de nombres distintivos relativos, como se muestra en el ejemplo de sintaxis siguiente.
 
 ``` syntax
 ---------------------------------------------------------------------
@@ -48,23 +48,23 @@ DirectoryString ::= CHOICE
 }
 ```
 
-La API de inscripción de certificados admite los siguientes tipos de cadena ASN. 1.
+La API de inscripción de certificados admite los siguientes tipos de cadena asn.1.
 
 ## <a name="bmpstring"></a>BMPString
 
 Etiqueta de codificación: 0x1E
 
-Nombre de Certreq.exe: cadena Unicode \_
+Certreq.exe nombre: CADENA \_ UNICODE
 
-El plano básico multilingüe (BMP) es una codificación de caracteres que engloba el primer plano del juego de caracteres universal (UCS). Hay diecisiete planos numerados de 0 a 16. BMP ocupa el plano 0 e incluye 65.536 puntos de código entre 0x0000 y 0xFFFF. Esta es la sección del mapa de caracteres Unicode, donde la mayoría de los caracteres asignados se han realizado hasta ahora. Incluye Latin, Oriente Medio, asiático, África y otros idiomas.
+El plano multilingüe básico (BMP) es una codificación de caracteres que abarca el primer plano del juego de caracteres universal (UCS). Hay planos grandes numerados de 0 a 16. BMP ocupa el plano 0 e incluye 65 536 puntos de código de 0x0000 a 0xFFFF. Esta es la sección del mapa de caracteres Unicode donde se han realizado la mayoría de las asignaciones de caracteres hasta ahora. Incluye latín, Oriente Medio, Asia, África y otros idiomas.
 
 ## <a name="ia5string"></a>IA5String
 
 Etiqueta de codificación: 0x16
 
-Nombre de Certreq.exe: IA5 \_ cadena
+Certreq.exe nombre: IA5 \_ STRING
 
-El alfabeto internacional número 5 (IA5) suele ser equivalente al alfabeto ASCII, pero las distintas versiones pueden incluir Acentos u otros caracteres específicos de un idioma regional. En el ejemplo siguiente se muestra el tipo **IA5String** que se usa en la definición de ASN. 1 de la extensión de certificado **AlternativeNames** .
+El alfabeto internacional número 5 (IA5) suele ser equivalente al alfabeto ASCII, pero las distintas versiones pueden incluir acentos u otros caracteres específicos de un idioma regional. En el ejemplo siguiente se muestra **el tipo IA5String** usado en la definición de ASN.1 de la **extensión de certificado AlternativeNames.**
 
 ``` syntax
 ---------------------------------------------------------------------
@@ -99,9 +99,9 @@ OtherName ::= SEQUENCE
 
 Etiqueta de codificación: 0x13
 
-Nombre de Certreq.exe: cadena IMPRIMIble \_
+Certreq.exe nombre: \_ CADENA IMPRIMIBLE
 
-El tipo de datos **PrintableString** se diseñó originalmente para representar los juegos de caracteres limitados disponibles para los terminales de entrada de mainframe, pero se suele usar. Contiene los siguientes caracteres:
+El **tipo de datos PrintableString** estaba pensado originalmente para representar los conjuntos de caracteres limitados disponibles para los terminales de entrada del sistema central, pero se sigue utilizando normalmente. Contiene los caracteres siguientes:
 
 -   A-Z
 -   a-z
@@ -112,27 +112,27 @@ El tipo de datos **PrintableString** se diseñó originalmente para representar 
 
 Etiqueta de codificación: 0x14
 
-Los tipos de datos **TeletexString** y **T61String** relacionados se codifican en 8 bits (o 16 bits para caracteres compuestos). Ambos tienen un número de etiqueta de 0x14. No se usan exhaustivamente.
+Los **tipos de datos TeletexString** y **T61String** relacionados se codifican en 8 bits (o 16 bits para caracteres compuestos). Ambos tienen un número de etiqueta de 0x14. No se usan ampliamente.
 
 ## <a name="utf8string"></a>UTF8String
 
 Etiqueta de codificación: 0x0C
 
-Nombre de la Certreq.exe: UTF8 \_ cadena
+Certreq.exe nombre: UTF8 \_ STRING
 
-El formato de transformación UCS/Unicode (UTF-8) de 8 bits es una codificación de caracteres de longitud variable que puede representar cualquier carácter universal como carácter Unicode, al tiempo que permite que los puntos de código iniciales sigan siendo coherentes con ASCII. UTF-8 usa de uno a cuatro bytes. El número de etiqueta es 0x0C.
+El formato de transformación UCS/Unicode de 8 bits (UTF-8) es una codificación de caracteres de longitud variable que puede representar cualquier carácter universal como un carácter Unicode, al tiempo que permite que los puntos de código iniciales sigan siendo coherentes con ASCII. UTF-8 usa de uno a cuatro bytes. El número de etiqueta es 0x0C.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Sistema de tipos ASN. 1](about-asn-1-type-system.md)
+[Sistema de tipo ASN.1](about-asn-1-type-system.md)
 </dt> <dt>
 
 [reglas de codificación distinguida](distinguished-encoding-rules.md)
 </dt> <dt>
 
-[Codificación DER de tipos ASN. 1](about-der-encoding-of-asn-1-types.md)
+[Codificación DER de tipos ASN.1](about-der-encoding-of-asn-1-types.md)
 </dt> </dl>
 
  

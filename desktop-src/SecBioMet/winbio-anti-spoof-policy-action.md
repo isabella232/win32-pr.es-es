@@ -1,10 +1,10 @@
 ---
-title: Enumeración WINBIO_ANTI_SPOOF_POLICY_ACTION (Winbio \_ Types. h)
-description: Especifica los tipos de acciones que se realizan para la Directiva de antifalsificación de un usuario.
+title: WINBIO_ANTI_SPOOF_POLICY_ACTION enumeración (Winbio \_ types.h)
+description: Especifica los tipos de acciones que se llevan a cabo para la directiva de antispoofing de un usuario.
 ms.assetid: 846C0725-1796-49E4-883C-44AC7D618317
 keywords:
-- WINBIO_ANTI_SPOOF_POLICY_ACTION enumeración Plataforma de biometría de Windows API
-- PWINBIO_ANTI_SPOOF_POLICY de puntero de enumeración Plataforma de biometría de Windows API
+- WINBIO_ANTI_SPOOF_POLICY_ACTION enumeración Windows BIOMETRIC Framework API
+- PWINBIO_ANTI_SPOOF_POLICY puntero de enumeración Windows Biometric Framework API
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5905624bad252475cdde12c003f31a734e64dd2e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f65fec198a0784bf076eb90224318bd36a88ba3ed96258ffd2014a27da5c8f8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118911283"
 ---
-# <a name="winbio_anti_spoof_policy_action-enumeration"></a>\_ \_ \_ Enumeración de acciones de directiva de WINBIO anti spoofing \_
+# <a name="winbio_anti_spoof_policy_action-enumeration"></a>Enumeración \_ WINBIO ANTI \_ SPOOF \_ POLICY \_ ACTION
 
-Especifica los tipos de acciones que se realizan para la Directiva de antifalsificación de un usuario.
+Especifica los tipos de acciones que se llevan a cabo para la directiva de antispoofing de un usuario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,24 +43,24 @@ typedef enum _WINBIO_ANTI_SPOOF_POLICY_ACTION {
 
 <dl> <dt>
 
-<span id="WINBIO_ANTI_SPOOF_DISABLE"></span><span id="winbio_anti_spoof_disable"></span>**Deshabilitación de WINBIO \_ anti \_ Spoofing \_**
+<span id="WINBIO_ANTI_SPOOF_DISABLE"></span><span id="winbio_anti_spoof_disable"></span>**WINBIO \_ ANTI \_ SPOOF \_ DISABLE**
 </dt> <dd>
 
-Desactiva la detección de suplantación de identidad para un factor biométrico.
+Desactiva la detección de suplantación de seguridad para un factor biométrico.
 
 </dd> <dt>
 
-<span id="WINBIO_ANTI_SPOOF_ENABLE"></span><span id="winbio_anti_spoof_enable"></span>**\_ \_ habilitación de WINBIO antispoofing \_**
+<span id="WINBIO_ANTI_SPOOF_ENABLE"></span><span id="winbio_anti_spoof_enable"></span>**WINBIO \_ ANTI \_ SPOOF \_ ENABLE**
 </dt> <dd>
 
-Activa la detección de suplantación de identidad para un factor biométrico.
+Activa la detección de suplantación de seguridad para un factor biométrico.
 
 </dd> <dt>
 
-<span id="WINBIO_ANTI_SPOOF_REMOVE"></span><span id="winbio_anti_spoof_remove"></span>**\_quitar la \_ suplantación de WINBIO \_**
+<span id="WINBIO_ANTI_SPOOF_REMOVE"></span><span id="winbio_anti_spoof_remove"></span>**QUITAR \_ ANTI \_ SUPLANTACIÓN DE \_ WINBIO**
 </dt> <dd>
 
-Quita la Directiva de antifalsificación completa del factor biométrico de la cuenta.
+Quita de la cuenta la directiva antispoofing completa para el factor biométrico.
 
 </dd> </dl>
 
@@ -70,9 +70,9 @@ Quita la Directiva de antifalsificación completa del factor biométrico de la c
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h para aplicaciones cliente o \_ adaptadores de Winbio. h para adaptadores)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                                                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                                                                                     |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluya Winbio.h para aplicaciones cliente o Adaptadores \_ de Winbio.h para adaptadores)</dt> </dl> |
 
 
 
@@ -80,10 +80,10 @@ Quita la Directiva de antifalsificación completa del factor biométrico de la c
 
 <dl> <dt>
 
-[**acción de directiva de WINBIO \_ anti \_ Spoofing \_ \_**](winbio-anti-spoof-policy-action.md)
+[**ACCIÓN DE \_ DIRECTIVA \_ ANTI SUPLANTACIÓN \_ DE SEGURIDAD DE \_ WINBIO**](winbio-anti-spoof-policy-action.md)
 </dt> <dt>
 
-[**\_origen de directiva de WINBIO \_**](winbio-policy-source.md)
+[**ORIGEN DE \_ LA DIRECTIVA \_ WINBIO**](winbio-policy-source.md)
 </dt> </dl>
 
  

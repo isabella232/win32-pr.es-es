@@ -1,19 +1,19 @@
 ---
-description: Especifica el número de búferes que crea el asignador de ejemplo de vídeo para cada ejemplo de vídeo.
+description: Especifica cuántos búferes crea el asignador de ejemplo de vídeo para cada ejemplo de vídeo.
 ms.assetid: A782BF8A-822A-407D-A30A-F2045BBB0BC0
-title: MF_SA_BUFFERS_PER_SAMPLE atributo (Mftransform. h)
+title: MF_SA_BUFFERS_PER_SAMPLE atributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d658ae72c53d986b364b2b6a3f405ae0052ea3fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf6b54cc5b2589649c954d9f2f41923af04fdf4aa7c00714067bee0b11dabbee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118740372"
 ---
-# <a name="mf_sa_buffers_per_sample-attribute"></a>\_Búferes de SA MF \_ \_ por \_ atributo de ejemplo
+# <a name="mf_sa_buffers_per_sample-attribute"></a>Atributo MF \_ SA \_ BUFFERS \_ PER \_ SAMPLE
 
-Especifica el número de búferes que crea el asignador de ejemplo de vídeo para cada ejemplo de vídeo.
+Especifica cuántos búferes crea el asignador de ejemplo de vídeo para cada ejemplo de vídeo.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,18 +21,18 @@ Especifica el número de búferes que crea el asignador de ejemplo de vídeo par
 
 ## <a name="remarks"></a>Observaciones
 
-Si usa la interfaz [**IMFVideoSampleAllocatorEx**](/windows/desktop/api/mfidl/nn-mfidl-imfvideosampleallocatorex) para asignar ejemplos de vídeo, puede usar este atributo para crear ejemplos de vídeo que contengan varios búferes. Por ejemplo, si el valor del atributo es 2, el asignador crea dos búferes de vídeo para cada ejemplo de vídeo. Establezca el atributo en el parámetro *pAttributes* del método [**IMFVideoSampleAllocatorEx:: InitializeSampleAllocatorEx**](/windows/desktop/api/mfidl/nf-mfidl-imfvideosampleallocatorex-initializesampleallocatorex) .
+Si usa la interfaz [**IMFVideoSampleAllocatorEx**](/windows/desktop/api/mfidl/nn-mfidl-imfvideosampleallocatorex) para asignar ejemplos de vídeo, puede usar este atributo para crear ejemplos de vídeo que contengan varios búferes. Por ejemplo, si el valor del atributo es 2, el asignador crea dos búferes de vídeo para cada ejemplo de vídeo. Establezca el atributo en el *parámetro pAttributes* del método [**IMFVideoSampleAllocatorEx::InitializeSampleAllocatorEx.**](/windows/desktop/api/mfidl/nf-mfidl-imfvideosampleallocatorex-initializesampleallocatorex)
 
-El valor predeterminado es 1. Si no se establece el atributo, el asignador crea muestras de vídeo que contienen un solo búfer por muestra.
+El valor predeterminado es 1. Si no se establece el atributo, el asignador crea ejemplos de vídeo que contienen un único búfer por muestra.
 
-Este atributo está pensado principalmente para Media Foundation transformaciones (MFTs) que admiten la salida 3D estéreo en la situación siguiente:
+Este atributo está pensado principalmente para transformaciones Media Foundation (MTA) que admiten la salida 3D estéreo, en la siguiente situación:
 
--   MFT es compatible con Microsoft DirectX Graphics Infrastructure (DXGI).
--   La MFT asigna sus propios ejemplos de salida.
--   MFT usa la interfaz [**IMFVideoSampleAllocatorEx**](/windows/desktop/api/mfidl/nn-mfidl-imfvideosampleallocatorex) para asignar los ejemplos de salida.
--   El formato de vídeo 3D utiliza un búfer independiente para cada vista.
+-   MFT admite Microsoft Infraestructura de gráficos de DirectX (DXGI).
+-   MFT asigna sus propios ejemplos de salida.
+-   El MFT usa la [**interfaz IMFVideoSampleAllocatorEx**](/windows/desktop/api/mfidl/nn-mfidl-imfvideosampleallocatorex) para asignar los ejemplos de salida.
+-   El formato de vídeo 3D usa un búfer independiente para cada vista.
 
-Si todos estos criterios son verdaderos, el MFT debe establecer el valor del atributo en 2 (un búfer por vista).
+Si todos estos criterios son true, MFT debe establecer el valor del atributo en 2 (un búfer por vista).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -40,9 +40,9 @@ Si todos estos criterios son verdaderos, el MFT debe establecer el valor del atr
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                        |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 \|\]<br/>                              |
-| Encabezado<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                              |
+| Header<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -50,7 +50,7 @@ Si todos estos criterios son verdaderos, el MFT debe establecer el valor del atr
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_ERRINFOBASIC (clase)'
-title: Clase JET_ERRINFOBASIC (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: JET_ERRINFOBASIC clase'
+title: JET_ERRINFOBASIC (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_ERRINFOBASIC class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.JET_ERRINFOBASIC
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_errinfobasic(v=EXCHG.10)
@@ -24,14 +24,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bfcfb43512b77fff6032c2910f5d4d5e6b668536
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93e37f1f7cbe3937b3d7222174753616ddd94c65662177c29ce1572bc9793d1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118765875"
 ---
-# <a name="jet_errinfobasic-class"></a>JET_ERRINFOBASIC (clase)
+# <a name="jet_errinfobasic-class"></a>JET_ERRINFOBASIC clase
 
 Contiene la información sobre un error.
 
@@ -40,10 +40,10 @@ Contiene la información sobre un error.
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.Windows8.JET_ERRINFOBASIC  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -64,10 +64,10 @@ public sealed class JET_ERRINFOBASIC : IContentEquatable<JET_ERRINFOBASIC>,
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_ERRINFOBASIC](./jet-errinfobasic-members.md)
+[JET_ERRINFOBASIC miembros](./jet-errinfobasic-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

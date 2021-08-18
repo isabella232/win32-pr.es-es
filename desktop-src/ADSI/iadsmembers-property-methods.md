@@ -1,10 +1,10 @@
 ---
-title: Métodos de la propiedad IADsMembers (iAds. h)
-description: Los métodos de la interfaz IADsMembers leen y escriben las propiedades descritas en este tema. Para obtener más información, vea métodos de propiedad de interfaz.
+title: Métodos de propiedad IADsMembers (Iads.h)
+description: Los métodos de la interfaz IADsMembers leen y escriben las propiedades descritas en este tema. Para obtener más información, vea Métodos de propiedad de interfaz.
 ms.assetid: ed4e98e5-053c-4d3b-bcd0-3add96bbe120
 ms.tgt_platform: multiple
 keywords:
-- Métodos de propiedad IADsMembers ADSI
+- AdsI de los métodos de propiedad IADsMembers
 topic_type:
 - apiref
 api_name:
@@ -20,16 +20,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af047d6fe52fdd7d808b1d7e5dbfb35303d3ff59
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 384aa8a8f04afe8abbaa9627a0080b7a4ce219d4b58482d3eddc20bb33825c7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023463"
 ---
 # <a name="iadsmembers-property-methods"></a>Métodos de propiedad IADsMembers
 
-Los métodos de la interfaz [**IADsMembers**](/windows/desktop/api/Iads/nn-iads-iadsmembers) leen y escriben las propiedades descritas en este tema. Para obtener más información, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de [**la interfaz IADsMembers**](/windows/desktop/api/Iads/nn-iads-iadsmembers) leen y escriben las propiedades descritas en este tema. Para obtener más información, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -38,14 +38,14 @@ Los métodos de la interfaz [**IADsMembers**](/windows/desktop/api/Iads/nn-iads-
 **Recuento**
 </dt> <dd> <dl>
 
-Indica el número de elementos del contenedor. Si se establece el filtro, Count solo devuelve el número de elementos que se ajustan a la descripción del filtro.
+Indica el número de elementos del contenedor. Si se establece el filtro, count devuelve solo el número de elementos que se ajustan a la descripción del filtro.
 
 <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -63,14 +63,14 @@ HRESULT get_Count(
 **Filter**
 </dt> <dd> <dl>
 
-Indica el filtro. La sintaxis de las entradas de la matriz de filtros es la misma que la del filtro utilizado en la interfaz [**IADsContainer**](/windows/desktop/api/Iads/nn-iads-iadscontainer) .
+Indica el filtro. La sintaxis de las entradas de la matriz de filtros es la misma que la que se usa en la [**interfaz IADsContainer.**](/windows/desktop/api/Iads/nn-iads-iadscontainer)
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **variante**
+Tipo de datos de scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -90,13 +90,13 @@ HRESULT put_Filter(
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los proveedores del sistema ADSI no admiten el método de propiedad **IADsMembers:: get \_ Count** .
+Los proveedores de sistemas ADSI no admiten el método de propiedad **IADsMembers::get \_ Count.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra cómo utilizar los métodos de propiedad de esta interfaz.
+En el ejemplo de código siguiente se muestra cómo usar los métodos de propiedad de esta interfaz.
 
 
 ```VB
@@ -118,7 +118,7 @@ Cleanup:
 
 
 
-En el ejemplo de código siguiente se usa el método de **\_ filtro IADsMembers::p UT** para preparar una enumeración de la colección de miembros de un grupo.
+En el ejemplo de código siguiente se usa el método **\_ Filter IADsMembers::p ut** para prepararse para una enumeración de la colección de miembros de un grupo.
 
 
 ```C++
@@ -160,9 +160,9 @@ Cleanup:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsMembers se define como 451A0030-72EC-11cf-B03B-00AA006E0975<br/>          |
+| IID<br/>                      | IID \_ IADsMembers se define como 451A0030-72EC-11CF-B03B-00AA006E0975<br/>          |
 
 
 
@@ -173,7 +173,7 @@ Cleanup:
 [**IADsContainer**](/windows/desktop/api/Iads/nn-iads-iadscontainer)
 </dt> <dt>
 
-[**IADsMembers:: get \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadsmembers-get__newenum)
+[**IADsMembers::get \_ \_ NewEnum**](/windows/desktop/api/Iads/nf-iads-iadsmembers-get__newenum)
 </dt> <dt>
 
 [**IADsMembers**](/windows/desktop/api/Iads/nn-iads-iadsmembers)

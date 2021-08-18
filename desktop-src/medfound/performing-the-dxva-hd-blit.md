@@ -1,17 +1,17 @@
 ---
-description: Realización del Blit DXVA-HD
+description: Realización de DXVA-HD Blit
 ms.assetid: fc68704e-68d5-4767-b464-e45ab4c86058
-title: Realización del Blit DXVA-HD
+title: Realización de DXVA-HD Blit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 37474cdb61136e3e201674695674ccb67abf03a9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d28553b942d94890dd4376c7e03fcecc64fec3d5dac49563e531c4604df14501
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118737662"
 ---
-# <a name="performing-the-dxva-hd-blit"></a>Realización del Blit DXVA-HD
+# <a name="performing-the-dxva-hd-blit"></a>Realización de DXVA-HD Blit
 
 
 ```C++

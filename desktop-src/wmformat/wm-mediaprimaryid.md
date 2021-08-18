@@ -1,9 +1,9 @@
 ---
 title: WM/MediaClassPrimaryID
-description: El atributo WM/MediaClassPrimaryID contiene el GUID de la clase de medio principal.
+description: El atributo WM/MediaClassPrimaryID contiene el GUID de la clase multimedia principal.
 ms.assetid: 1d01e273-e6ec-49f1-90af-5c2ae171b199
 keywords:
-- Formato de Windows Media WM/MediaClassPrimaryID
+- Formato multimedia de Windows WM/MediaClassPrimaryID
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8f84d987d57b1d825fac54e6a7de41b0154952e
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: d650c15a861cdf55af07fba6d47fb416d61a56d399b855efc461cddd2f628edf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103904191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027063"
 ---
 # <a name="wmmediaclassprimaryid"></a>WM/MediaClassPrimaryID
 
-El atributo **WM/MediaClassPrimaryID** contiene el GUID de la clase de medio principal.
+El **atributo WM/MediaClassPrimaryID** contiene el GUID de la clase multimedia principal.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,9 +29,9 @@ g \_ wszWMMediaClassPrimaryID
 
 ## <a name="data-type"></a>Tipo de datos
 
-**\_GUID de tipo WMT \_**
+**GUID DE \_ TIPO \_ WMT**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo debe establecerse en uno de los valores de la tabla siguiente.
 
@@ -39,16 +39,16 @@ Este atributo debe establecerse en uno de los valores de la tabla siguiente.
 
 | GUID de clase principal                     | Descripción                                                  |
 |----------------------------------------|--------------------------------------------------------------|
-| "D1607DBC-E323-4BE2-86A1-48A42A28441E" | Se usa para archivos de música. No se usa para audio que no sea música. |
-| "DB9830BD-3AB3-4FAB-8A37-1A995F7FF74B" | Se usa para archivos de vídeo.                                         |
+| "D1607DBC-E323-4BE2-86A1-48A42A28441E" | Use para archivos de música. No use para audio que no sea música. |
+| "DB9830BD-3AB3-4FAB-8A37-1A995F7FF74B" | Use para archivos de vídeo.                                         |
 | "01CD0F29-DA4E-4157-897B-6275D50C4F11" | Se usa para archivos de audio que no son música.                      |
-| "FCF24A76-9A57-4036-990D-E35DD8B244E1" | Se usa para los archivos que no son de audio o de vídeo.               |
+| "FCF24A76-9A57-4036-990D-E35DD8B244E1" | Se usa para archivos que no son audio ni vídeo.               |
 
 
 
- 
+ 
 
-Cuando se especifica un identificador de clase principal, también se debe establecer un identificador de clase secundaria para aclarar el tipo de contenido del archivo.
+Al especificar un identificador de clase principal, también debe establecer un identificador de clase secundaria para aclarar el tipo de contenido del archivo.
 
 ## <a name="see-also"></a>Vea también
 
@@ -60,9 +60,9 @@ Cuando se especifica un identificador de clase principal, también se debe estab
 [**WM/MediaClassSecondaryID**](wm-mediasecondaryid.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

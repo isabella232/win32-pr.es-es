@@ -1,19 +1,19 @@
 ---
-title: Enumeraciones de API de componentes de protocolo WebSocket
-description: La API del componente de protocolo WebSocket define estas enumeraciones.
+title: Enumeraciones de api de componentes del protocolo WebSocket
+description: La API de componentes del protocolo WebSocket define estas enumeraciones.
 ms.assetid: E655C906-FF38-468F-B9DC-F0CF8323FF88
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db2a6a0886d22470d2c9c246110730c12900a47d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 36e301dd0d609a4beb1ebc021dd189421bafea213ed0f7e8860b94820bd4275b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105704989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995035"
 ---
-# <a name="websocket-protocol-component-api-enumerations"></a>Enumeraciones de API de componentes de protocolo WebSocket
+# <a name="websocket-protocol-component-api-enumerations"></a>Enumeraciones de api de componentes del protocolo WebSocket
 
-La API del componente de protocolo WebSocket define estas enumeraciones.
+La API de componentes del protocolo WebSocket define estas enumeraciones.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,11 +21,11 @@ La API del componente de protocolo WebSocket define estas enumeraciones.
 
 | Tema                                                                      | Descripción                                                                                            |
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [**\_acción de socket Web \_**](/windows/desktop/api/Websocket/ne-websocket-web_socket_action)<br/>                | especifica las acciones que deben realizar las aplicaciones WebSocket<br/>                                     |
-| [**\_cola de \_ acciones de socket Web \_**](/windows/desktop/api/Websocket/ne-websocket-web_socket_action_queue)<br/>   | especifica los tipos de acción devueltos por [ **WebSocketGetAction**](/windows/desktop/api/websocket/nf-websocket-websocketgetaction)<br/> |
-| [**\_tipo de \_ búfer de socket Web \_**](/windows/desktop/api/Websocket/ne-websocket-web_socket_buffer_type)<br/>     | especifica los valores de bit que se usan para construir el encabezado de marco WebSocket.<br/>                       |
-| [**\_Estado de \_ cierre de socket Web \_**](/windows/desktop/api/Websocket/ne-websocket-web_socket_close_status)<br/>   | especifica el estado de cierre de WebSocket.<br/>                                                        |
-| [**\_tipo de \_ propiedad de socket Web \_**](/windows/desktop/api/Websocket/ne-websocket-web_socket_property_type)<br/> | especifica un tipo de propiedad de WebSocket.<br/>                                                         |
+| [**ACCIÓN \_ DE SOCKET \_ WEB**](/windows/desktop/api/Websocket/ne-websocket-web_socket_action)<br/>                | especifica las acciones que deben realizar las aplicaciones WebSocket<br/>                                     |
+| [**COLA DE \_ ACCIONES \_ DE SOCKET \_ WEB**](/windows/desktop/api/Websocket/ne-websocket-web_socket_action_queue)<br/>   | especifica los tipos de acción devueltos [ **por WebSocketGetAction**](/windows/desktop/api/websocket/nf-websocket-websocketgetaction)<br/> |
+| [**TIPO \_ DE BÚFER DE SOCKET \_ \_ WEB**](/windows/desktop/api/Websocket/ne-websocket-web_socket_buffer_type)<br/>     | especifica los valores de bits utilizados para construir el encabezado de marco webSocket<br/>                       |
+| [**ESTADO DE \_ CIERRE \_ DEL SOCKET \_ WEB**](/windows/desktop/api/Websocket/ne-websocket-web_socket_close_status)<br/>   | especifica el estado de cierre de WebSocket<br/>                                                        |
+| [**TIPO \_ DE PROPIEDAD DE SOCKET \_ \_ WEB**](/windows/desktop/api/Websocket/ne-websocket-web_socket_property_type)<br/> | especifica un tipo de propiedad WebSocket<br/>                                                         |
 
 
 

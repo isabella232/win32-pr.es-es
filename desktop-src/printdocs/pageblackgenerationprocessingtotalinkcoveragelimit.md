@@ -4,12 +4,12 @@ ms.assetid: 7ccd02c2-7cec-4d9d-83c1-512f25f4045c
 title: PageBlackGenerationProcessingTotalInkCoverageLimit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68410cabdfafa5ce82450821e4ae45709ee8d4c9
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: e10b97916ec8bad8b0a977e4a92af6083aa554da4f1fd21c123226bc6c9dfb91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119098899"
 ---
 # <a name="pageblackgenerationprocessingtotalinkcoveragelimit"></a>PageBlackGenerationProcessingTotalInkCoverageLimit
 
@@ -76,7 +76,7 @@ En la tabla siguiente se describen las características de las variables definid
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |
 | MaxValue<br/>     | integer<br/> | 400<br/>             |
 | MinValue<br/>     | integer<br/> | 200<br/>             |
-| Múltiple<br/>     | integer<br/> | 1<br/>               |
+| Varios<br/>     | integer<br/> | 1<br/>               |
 | Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
 | UnitType<br/>     | string<br/>  | percent<br/>         |
 

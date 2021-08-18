@@ -27,16 +27,16 @@ Este atributo determina el recurso compartido del servidor de archivos. Se usa j
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | CN                | ms-IIS-FTP-Root                                                                                                                 |
 | Ldap-Display-Name | msIIS-FTPRoot                                                                                                                   |
-| Size              | Entre 30 y 50 caracteres (entre 15 y 25 caracteres Unicode para cada propiedad)                                                                   |
-| Privilegio actualizar  | Administrador de dominio & sistema local                                                                                             |
+| Size              | De 30 a 50 caracteres (de 15 a 25 caracteres Unicode para cada propiedad)                                                                   |
+| Actualizar privilegios  | Administrador de dominio & sistema local                                                                                             |
 | Frecuencia de actualización  | Esta propiedad se establece cuando el administrador crea el sitio web y establece el aislamiento ftp. Rara vez cambiará después de eso. |
 | Attribute-Id      | 1.2.840.113556.1.4.1785                                                                                                         |
 | System-Id-Guid    | 2a7827a4-1483-49a5-9d84-52e3812156b4                                                                                            |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                                                                     |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                                                                     |
 
 
 
@@ -52,14 +52,14 @@ Este atributo determina el recurso compartido del servidor de archivos. Se usa j
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Es de un solo valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
@@ -73,14 +73,14 @@ Este atributo determina el recurso compartido del servidor de archivos. Se usa j
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Es de un solo valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
@@ -94,14 +94,14 @@ Este atributo determina el recurso compartido del servidor de archivos. Se usa j
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Es de un solo valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
@@ -115,14 +115,14 @@ Este atributo determina el recurso compartido del servidor de archivos. Se usa j
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Es de un solo valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
@@ -136,14 +136,14 @@ Este atributo determina el recurso compartido del servidor de archivos. Se usa j
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Es de un solo valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |

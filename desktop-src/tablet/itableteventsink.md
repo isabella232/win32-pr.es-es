@@ -14,39 +14,39 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: fc42bfe8a6e69504c35d7926c4c5a8b688404897
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1a773f7b4e08a718c419de2d51c0ff3bd9bba551267188b12889b9ec99d4ded
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118716465"
 ---
 # <a name="itableteventsink-interface"></a>Interfaz ITabletEventSink
 
-Define métodos que controlan los eventos de la [**interfaz ITablet**](itablet.md) .
+Define métodos que controlan los [**eventos de la interfaz ITablet.**](itablet.md)
 
 ## <a name="members"></a>Miembros
 
-La interfaz **ITabletEventSink** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITabletEventSink** también tiene estos tipos de miembros:
+La **interfaz ITabletEventSink** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITabletEventSink** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **ITabletEventSink** tiene estos métodos.
+La **interfaz ITabletEventSink** tiene estos métodos.
 
 
 
 | Método                                                        | Descripción                                                                                      |
 |:--------------------------------------------------------------|:-------------------------------------------------------------------------------------------------|
-| [**ContextCreate**](itableteventsink-contextcreate.md)       | Se produce cuando se crea un nuevo contexto de Tablet PC.<br/>                                          |
-| [**ContextDestroy**](itableteventsink-contextdestroy.md)     | Se produce cuando se destruye un contexto de Tablet PC.<br/>                                      |
-| [**CursorDown**](itableteventsink-cursordown.md)             | Se produce cuando la punta del lápiz se pone en contacto con la superficie de la tableta de la digitalización.<br/>                    |
-| [**CursorInRange**](itableteventsink-cursorinrange.md)       | Se produce cuando un lápiz entra dentro del intervalo de detección del digitalizador.<br/>                 |
-| [**CursorMove**](itableteventsink-cursormove.md)             | Se produce cuando el cursor se mueve sobre el digitalizador de Tablet PC.<br/>                               |
-| [**CursorNew**](itableteventsink-cursornew.md)               | Se produce cuando se agrega un nuevo lápiz al sistema.<br/>                                      |
-| [**CursorOutOfRange**](itableteventsink-cursoroutofrange.md) | Se produce cuando el lápiz deja el intervalo de detección física (proximidad) de la tableta.<br/> |
-| [**CursorUp**](itableteventsink-cursorup.md)                 | Se produce cuando el usuario ha generado el lápiz óptico desde la superficie del digitalizador de Tablet PC.<br/>         |
+| [**ContextCreate**](itableteventsink-contextcreate.md)       | Se produce cuando se crea un nuevo contexto de tableta.<br/>                                          |
+| [**ContextDestroy**](itableteventsink-contextdestroy.md)     | Se produce cuando se destruye un contexto de tableta.<br/>                                      |
+| [**CursorDown**](itableteventsink-cursordown.md)             | Se produce cuando la punta del lápiz óptico se pone en contacto con la superficie de la tableta de digitalización.<br/>                    |
+| [**CursorInRange**](itableteventsink-cursorinrange.md)       | Se produce cuando un lápiz óptico entra dentro del intervalo de detección del digitalizador.<br/>                 |
+| [**CursorMove**](itableteventsink-cursormove.md)             | Se produce cuando el cursor se mueve sobre el digitalizador de tabletas.<br/>                               |
+| [**CursorNew**](itableteventsink-cursornew.md)               | Se produce cuando se agrega un nuevo lápiz óptico al sistema.<br/>                                      |
+| [**CursorOutOfRange**](itableteventsink-cursoroutofrange.md) | Se produce cuando el lápiz óptico sale del intervalo de detección físico (proximidad) de la tableta.<br/> |
+| [**CursorUp**](itableteventsink-cursorup.md)                 | Se produce cuando el usuario ha elevado el lápiz óptico de la superficie del digitalizador de tabletas.<br/>         |
 | [**Paquetes**](itableteventsink-packets.md)                   | Se produce cuando el lápiz óptico se mueve en el digitalizador.<br/>                                    |
 | [**SystemEvent**](itableteventsink-systemevent.md)           | Se produce cuando hay un evento del sistema disponible.<br/>                                              |
 
@@ -54,11 +54,11 @@ La interfaz **ITabletEventSink** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los desarrolladores no deben utilizar esta interfaz.
+Los desarrolladores no deben usar esta interfaz.
 
-En el código siguiente se muestra cómo se define la interfaz **ITabletEventSink** .
+El código siguiente muestra cómo se define la interfaz **ITabletEventSink.**
 
 ``` syntax
 [
@@ -136,9 +136,9 @@ interface ITabletEventSink: IUnknown
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

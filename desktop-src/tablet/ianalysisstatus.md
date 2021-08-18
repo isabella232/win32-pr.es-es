@@ -1,7 +1,7 @@
 ---
-description: Representa el estado de la operación de análisis de tinta al describir si el análisis se completó correctamente y si se produjo alguna advertencia.
+description: Representa el estado de la operación de análisis de entrada de lápiz mediante la descripción de si el análisis se completó correctamente y si se produjo alguna advertencia.
 ms.assetid: 57910a1d-3472-4689-ba0d-a220145e77c4
-title: Interfaz IAnalysisStatus (IACom. h)
+title: Interfaz IAnalysisStatus (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,32 +13,32 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: e14f7fabea8090f5471513eca524f6fcdb939b2c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 006b042981392ecdd52508181c7a5cde270d2e0195fe9c8b971c142361ab6081
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118720002"
 ---
 # <a name="ianalysisstatus-interface"></a>Interfaz IAnalysisStatus
 
-Representa el estado de la operación de análisis de tinta al describir si el análisis se completó correctamente y si se produjo alguna advertencia.
+Representa el estado de la operación de análisis de entrada de lápiz mediante la descripción de si el análisis se completó correctamente y si se produjo alguna advertencia.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IAnalysisStatus** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IAnalysisStatus** también tiene estos tipos de miembros:
+La **interfaz IAnalysisStatus** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IAnalysisStatus también** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IAnalysisStatus** tiene estos métodos.
+La **interfaz IAnalysisStatus** tiene estos métodos.
 
 
 
 | Método                                                                     | Descripción                                                                                                                                                                                    |
 |:---------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetAppliedChangesRegion**](ianalysisstatus-getappliedchangesregion.md) | Recupera la región del documento correspondiente a los cambios que se realizaron en el árbol de nodos de contexto del objeto [**IInkAnalyzer**](iinkanalyzer.md) como resultado del análisis de tinta.<br/> |
+| [**GetAppliedChangesRegion**](ianalysisstatus-getappliedchangesregion.md) | Recupera la región del documento que corresponde a los cambios realizados en el árbol de nodos de contexto del objeto [**IInkAnalyzer**](iinkanalyzer.md) como resultado del análisis de entrada de lápiz.<br/> |
 | [**GetWarnings**](ianalysisstatus-getwarnings.md)                         | Recupera una colección [**IAnalysisWarnings**](ianalysiswarnings.md) que describe los errores y advertencias generados por la operación de análisis.<br/>                                  |
 | [**IsSuccessful**](ianalysisstatus-issuccessful.md)                       | Recupera un resumen booleano de los resultados de la operación de análisis.<br/>                                                                                                               |
 
@@ -48,7 +48,7 @@ La interfaz **IAnalysisStatus** tiene estos métodos.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra un esquema de un controlador de eventos para el evento [**\_ IAnalysisEvents:: Results**](-ianalysisevents-results.md) . El controlador comprueba [**IAnalysisStatus:: IsSuccessful**](ianalysisstatus-issuccessful.md). Si la operación de análisis genera advertencias, el controlador recorre en iteración la colección de objetos [**IAnalysisWarning**](ianalysiswarning.md) .
+En el ejemplo siguiente se muestra un esquema de un controlador de eventos para el [**\_ evento IAnalysisEvents::Results.**](-ianalysisevents-results.md) El controlador comprueba [**IAnalysisStatus::IsSuccessful.**](ianalysisstatus-issuccessful.md) Si la operación de análisis genera advertencias, el controlador recorre en iteración la colección de [**objetos IAnalysisWarning.**](ianalysiswarning.md)
 
 
 ```C++
@@ -133,26 +133,26 @@ STDMETHODIMP CMyClass::Results(
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IInkAnalyzer:: Analyze (método)**](iinkanalyzer-analyze.md)
+[**IInkAnalyzer::Analyze (Método)**](iinkanalyzer-analyze.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: BackgroundAnalyze (método)**](iinkanalyzer-backgroundanalyze.md)
+[**IInkAnalyzer::BackgroundAnalyze (Método)**](iinkanalyzer-backgroundanalyze.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

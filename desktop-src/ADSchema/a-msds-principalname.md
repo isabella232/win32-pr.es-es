@@ -27,16 +27,16 @@ Nombre de cuenta de la entidad de seguridad (construida).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | ms-DS-Principal-Name                        |
 | Ldap-Display-Name | msDS-PrincipalName                          |
 | Size              | \-                                          |
-| Privilegio actualizar  | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1865                     |
 | System-Id-Guid    | 564e9325-d057-c143-9e3b-4f9e5ef46f93        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -51,14 +51,14 @@ Nombre de cuenta de la entidad de seguridad (construida).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------|
 | Id. de vínculo                | \-                                                      |
 | MAPI-Id                | \-                                                      |
-| System-Only            | False                                                   |
-| Es de un solo valor       | True                                                    |
-| Está indexado             | False                                                   |
-| En el catálogo global      | False                                                   |
+| System-Only            | Falso                                                   |
+| Es de un solo valor       | Verdadero                                                    |
+| Está indexado             | Falso                                                   |
+| En el catálogo global      | Falso                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                            |
 | Range-Lower            | \-                                                      |
 | Range-Upper            | \-                                                      |
@@ -72,14 +72,14 @@ Nombre de cuenta de la entidad de seguridad (construida).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Es de un solo valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -93,14 +93,14 @@ Nombre de cuenta de la entidad de seguridad (construida).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Es de un solo valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -114,14 +114,14 @@ Nombre de cuenta de la entidad de seguridad (construida).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Es de un solo valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |

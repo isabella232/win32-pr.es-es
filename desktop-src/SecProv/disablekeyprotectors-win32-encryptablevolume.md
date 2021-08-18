@@ -1,7 +1,7 @@
 ---
 description: Deshabilita o suspende todos los protectores de clave asociados a este volumen.
 ms.assetid: 19eed858-a116-4ec8-937a-2eea7aadbdc6
-title: Método DisableKeyProtectors de la clase Win32_EncryptableVolume
+title: Método DisableKeyProtectors de la Win32_EncryptableVolume clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 1de392c50f6665d793883582e2679cd502efbe37
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79b9db0043e04d3ab6399677a9e103961d5f1a9b5c5214558bcf53359bedc61a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118892544"
 ---
-# <a name="disablekeyprotectors-method-of-the-win32_encryptablevolume-class"></a>Método DisableKeyProtectors de la \_ clase EncryptableVolume de Win32
+# <a name="disablekeyprotectors-method-of-the-win32_encryptablevolume-class"></a>Método DisableKeyProtectors de la clase EncryptableVolume de Win32 \_
 
-El método **DisableKeyProtectors** de la clase [**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) deshabilita o suspende todos los protectores de clave asociados a este volumen.
+El **método DisableKeyProtectors** de la clase [**\_ EncryptableVolume de Win32**](win32-encryptablevolume.md) deshabilita o suspende todos los protectores de clave asociados a este volumen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,27 +39,27 @@ uint32 DisableKeyProtectors(
 
 <dl> <dt>
 
-*DisableCount* \[ en, opcional\]
+*DisableCount* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Entero que especifica el número de reinicios para los que se deshabilitarán los protectores de clave. Este parámetro solo está disponible en los volúmenes del sistema operativo.
+Entero que especifica el número de reinicios para los que se deshabilitarán los protectores de clave. Este parámetro solo está disponible en volúmenes del sistema operativo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Este método devuelve uno de los siguientes códigos u otro código de error si se produce un error.
+Este método devuelve uno de los códigos siguientes u otro código de error si se produce un error.
 
 
 
 | Código o valor devuelto                                                                                                                                                                  | Descripción                           |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> <dt>0 (0X0)</dt> </dl>                                  | Método realizado correctamente.<br/> |
-| <dl> <dt>**FVE \_ \_ \_ Volumen bloqueado de E**</dt> <dt>2150694912 (0x80310000)</dt> </dl> | El volumen está bloqueado.<br/>      |
+| <dl> <dt>**S \_ Ok**</dt> <dt>0 (0x0)</dt> </dl>                                  | Método realizado correctamente.<br/> |
+| <dl> <dt>**FVE \_ E \_ LOCKED \_ VOLUME**</dt> <dt>2150694912 (0x80310000)</dt> </dl> | El volumen está bloqueado.<br/>      |
 
 
 
@@ -67,28 +67,28 @@ Este método devuelve uno de los siguientes códigos u otro código de error si 
 
 ## <a name="security-considerations"></a>Consideraciones sobre la seguridad
 
-Este método expone la clave de cifrado del volumen sin cifrar en el disco duro, desactivando cualquier protección de volumen. Se recomienda no tener ninguna contraseña o clave de cifrado en texto sin formato.
+Este método expone la clave de cifrado del volumen sin cifrar en el disco duro, desactivando cualquier protección del volumen. Se recomienda no tener ninguna contraseña o clave de cifrado en texto no cifrado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se pueden agregar nuevos protectores de clave incluso cuando se deshabilitan o se suspenden los protectores de clave. Estos protectores de clave permanecerán deshabilitados a menos que se llame a [**EnableKeyProtectors**](enablekeyprotectors-win32-encryptablevolume.md) .
+Se pueden agregar nuevos protectores de clave incluso cuando los protectores de clave están deshabilitados o suspendidos. Estos protectores de clave permanecerán deshabilitados a menos que se llame a [**EnableKeyProtectors.**](enablekeyprotectors-win32-encryptablevolume.md)
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte de la Windows SDK. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                                 |
-| Espacio de nombres<br/>                | \\MicrosoftVolumeEncryption de \\ seguridad de cimv2 raíz \\<br/>                                             |
-| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                 |
+| Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
+| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
