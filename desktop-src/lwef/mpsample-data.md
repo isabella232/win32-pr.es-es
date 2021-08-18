@@ -1,10 +1,10 @@
 ---
-title: MPSAMPLE_DATA estructura (MpClient. h)
+title: MPSAMPLE_DATA estructura (MpClient.h)
 description: Datos de notificación pasados a la función de devolución de llamada de envío de ejemplo.
 ms.assetid: 58F348C6-411D-4545-9D4D-A80095FD139B
 keywords:
-- MPSAMPLE_DATA estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPSAMPLE_DATA características de entorno heredado de Windows
+- MPSAMPLE_DATA estructura heredada de Windows environment
+- PMPSAMPLE_DATA puntero de estructura heredado Windows de entorno
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24a894638465c0362069b8fdcbacddf98bfdd2c1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aafafd2ff7162dcb50bd5e2ea92cd56ab9f073332238dc0742845f9c48c5a588
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747418"
 ---
-# <a name="mpsample_data-structure"></a>\_Estructura de datos MPSAMPLE
+# <a name="mpsample_data-structure"></a>Estructura DE \_ DATOS MPSAMPLE
 
 Datos de notificación pasados a la función de devolución de llamada de envío de ejemplo.
 
@@ -48,7 +48,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Índice del elemento de ejemplo para el que se registra el estado del envío.
+Índice del elemento de ejemplo para el que se notifica el estado de envío.
 
 </dd> </dl>
 
@@ -56,11 +56,11 @@ Tipo: **DWORD**
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

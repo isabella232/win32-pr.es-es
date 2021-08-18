@@ -4,7 +4,7 @@ description: Reservado. | Método ISearchResult ThumbnailState
 ms.assetid: b91727a6-a193-4767-a8ff-05ac64f1f27f
 keywords:
 - Características heredadas del entorno de Windows ThumbnailState
-- Método ThumbnailState Legacy Windows Environment Features , interfaz ISearchResult
+- Características heredadas del entorno de Windows ThumbnailState, interfaz ISearchResult
 - ISearchResult interface Legacy Windows Environment Features , ThumbnailState method
 ms.topic: reference
 ms.date: 05/31/2018

@@ -15,21 +15,21 @@ ms.locfileid: "118637772"
 
 Windows El instalador acepta un localizador uniforme de recursos (URL) como origen válido para una instalación. Windows El instalador puede instalar paquetes, revisiones y transformaciones desde una ubicación de dirección URL.
 
-Si la base de datos de instalación está en una dirección URL, el instalador descarga la base de datos en una ubicación de caché antes de iniciar la instalación. El instalador también descarga los archivos y archivos archivadores del origen de Internet que son adecuados para las selecciones del usuario. Consulte [A URL-based Windows Installer Installation Example](a-url-based-windows-installer-installation-example.md) (Ejemplo de instalación del instalador de Windows url) para obtener más información.
+Si la base de datos de instalación se encuentra en una dirección URL, el instalador descarga la base de datos en una ubicación de caché antes de iniciar la instalación. El instalador también descarga los archivos y archivos archivadores del origen de Internet que son adecuados para las selecciones del usuario. Consulte [A URL-based Windows Installer Installation Example](a-url-based-windows-installer-installation-example.md) (Ejemplo de instalación del instalador de archivos basado en url) para obtener más información.
 
-Por ejemplo, para instalar un paquete con un origen ubicado en un servidor web en , puede usar las opciones de línea de comandos para instalar el paquete y https://server/share/package.msi establecer [propiedades](public-properties.md) públicas. [](command-line-options.md)
+Por ejemplo, para instalar un paquete con un origen ubicado en un servidor web en , puede usar las opciones de línea de comandos para instalar el paquete y establecer https://server/share/package.msi [propiedades](public-properties.md) públicas. [](command-line-options.md)
 
 msiexec /i https://server/share/package.msi *PROPERTY=VALUE*
 
-Una línea de comandos como la mostrada anteriormente debe pasarse al instalador para iniciar una instalación desde un explorador web. En general, no debe descargar e instalar el paquete simplemente haciendo doble clic en .msi archivo desde el explorador. Esto descarga el .msi en la carpeta de archivos temporales de Internet y pasa el siguiente comando al instalador:
+Una línea de comandos como la mostrada anteriormente debe pasarse al instalador para iniciar una instalación desde un explorador web. En general, no debe descargar e instalar el paquete simplemente haciendo doble clic en el archivo .msi desde el explorador. Esto descarga el archivo .msi en la carpeta de archivos temporales de Internet y pasa el siguiente comando al instalador:
 
-**msiexec /i c: \\ windows temporary internet files \\ \\package.msi**
+**msiexec /i c: \\ archivos temporales de Internet de Windows \\ \\package.msi**
 
-Se produce un error en la instalación si el paquete requiere archivos de origen externos o gabinetes porque no se encuentran en la misma ubicación que el .msi archivo.
+Se produce un error en la instalación si el paquete requiere archivos o archivadores de código fuente externos porque no se encuentran en la misma ubicación que el .msi archivo.
 
 Tenga en cuenta que, dado que el objeto [**Installer**](installer-object.md) no está marcado como [SafeForScripting](safeforscripting.md) en el equipo del usuario, los usuarios deben ajustar la configuración de seguridad del explorador para que el ejemplo funcione correctamente.
 
-El [**método InstallProduct**](installer-installproduct.md) podría usarse para ejecutar el comando anterior desde un explorador como un evento al hacer clic.
+El [**método InstallProduct**](installer-installproduct.md) se podría usar para ejecutar el comando anterior desde un explorador como un evento al hacer clic.
 
 
 ```VB
@@ -52,7 +52,7 @@ set Installer=Nothing
 
 Tenga en cuenta que, dado que algunos servidores [](file-table.md) web distinguen mayúsculas de minúsculas, el campo FileName de la tabla File debe coincidir exactamente con el caso de los archivos de origen para garantizar la compatibilidad con las descargas de Internet.
 
-Consulte [Descarga e instalación de una revisión desde Internet.](downloading-and-installing-a-patch-from-the-internet.md) Para obtener más información sobre cómo proteger instalaciones y usar certificados digitales, vea [Directrices](guidelines-for-authoring-secure-installations.md) para crear instalaciones seguras y firmas [digitales y Windows Installer](digital-signatures-and-windows-installer.md). Para obtener más información sobre cómo crear una instalación web de un paquete Windows Installer, vea [Internet Download Bootstrapping](internet-download-bootstrapping.md).
+Consulte [Descarga e instalación de una revisión desde Internet.](downloading-and-installing-a-patch-from-the-internet.md) Para obtener más información sobre la protección de instalaciones y el uso de certificados digitales, vea [Directrices](guidelines-for-authoring-secure-installations.md) para crear instalaciones seguras y firmas [digitales y Windows Installer](digital-signatures-and-windows-installer.md). Para obtener más información sobre cómo crear una instalación web de un paquete Windows Installer, vea [Arranque de descarga de Internet.](internet-download-bootstrapping.md)
 
 ## <a name="available-internet-protocols"></a>Protocolos de Internet disponibles
 

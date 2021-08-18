@@ -1,6 +1,6 @@
 ---
-description: El usuario hizo clic en un botón de contenido adicional para expandir el elemento especificado por la estructura SMDATA correspondiente.
-title: Mensaje de SMC_CHEVRONEXPAND (shobjidl. h)
+description: El usuario ha hecho clic en un botón de contenido adicional para expandir el elemento especificado por la estructura SMDATA que lo acompaña.
+title: SMC_CHEVRONEXPAND mensaje (Shobjidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: cb0b3cf1-1a12-4236-96e9-cc04360d269f
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 6ecf8f86e111326b3f37f3111c382d2d04ef2fa7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 036c45c6bd0e156a17cbcf2f89d3f64b2f619d4b4a6eb7e0a19b70eb3295292c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968254"
 ---
-# <a name="smc_chevronexpand-message"></a>Mensaje de CHEVRONEXPAND de SMC \_
+# <a name="smc_chevronexpand-message"></a>Mensaje \_ SMC CHEVRONEXPAND
 
-El usuario hizo clic en un botón de contenido adicional para expandir el elemento especificado por la estructura [**SMDATA**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-smdata) correspondiente.
+El usuario ha hecho clic en un botón de contenido adicional para expandir el elemento especificado por la estructura [**SMDATA**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-smdata) que lo acompaña.
 
 
 ```C++
@@ -38,11 +38,11 @@ Este mensaje no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devolver S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
+El método [**IShellMenuCallback::CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,8 +52,8 @@ El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_c
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Shobjidl. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shobjidl. idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Inicie un trabajo para crear un subgrupo a partir de un grupo primario con la configuración de asignación especificada.
+description: Inicie un trabajo para crear un subgrupo a partir de un grupo primario mediante la configuración de asignación especificada.
 ms.assetid: 9b09221a-7c4e-4648-a2a8-012df1818c3e
 title: Método CreateChildResourcePool de la CIM_ResourcePoolConfigurationService clase
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118648157"
 ---
 # <a name="createchildresourcepool-method-of-the-cim_resourcepoolconfigurationservice-class"></a>Método CreateChildResourcePool de la clase \_ ResourcePoolConfigurationService de CIM
 
-Inicie un trabajo para crear un subgrupo a partir de un grupo primario con la configuración de asignación especificada.
+Inicie un trabajo para crear un subgrupo a partir de un grupo primario mediante la configuración de asignación especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ Nombre pertinente del usuario final para el grupo que se va a crear. Si **es NUL
 *Configuración* \[ En\]
 </dt> <dd>
 
-Cadena que contiene una representación de una instancia [**\_ settingData**](cim-settingdata.md) de CIM que se usa para especificar la configuración del grupo secundario.
+Cadena que contiene una representación de una instancia [**\_ de Cim SettingData**](cim-settingdata.md) que se usa para especificar la configuración del grupo secundario.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Grupo [**\_ de recursos CIM desde**](cim-resourcepool.md) el que se va a crear e
 *Grupo* \[ out\]
 </dt> <dd>
 
-Grupo [**de recursos DE CIM \_ que**](cim-resourcepool.md) hace referencia al grupo resultante.
+Grupo [**de recursos CIM \_ que**](cim-resourcepool.md) hace referencia al grupo resultante.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Referencia al trabajo (puede ser NULL si el trabajo se ha completado).
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -114,7 +114,7 @@ Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 **DMTF reservado** (..)
 </dt> <dt>
 
-**Parámetros de método comprobados: trabajo iniciado** (4096)
+**Parámetros de método activados: trabajo iniciado** (4096)
 </dt> <dt>
 
 **Tamaño no admitido** (4097)
@@ -130,7 +130,7 @@ Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -140,7 +140,7 @@ Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

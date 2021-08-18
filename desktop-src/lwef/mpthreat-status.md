@@ -3,8 +3,8 @@ title: MPTHREAT_STATUS enumeración (MpClient.h)
 description: Posible estado de amenaza.
 ms.assetid: 64B57C8B-231B-4A2C-BF2E-45DB62B8350E
 keywords:
-- MPTHREAT_STATUS enumeración heredada de Windows environment
-- PMPTHREAT_STATUS puntero de enumeración heredados Windows environment
+- MPTHREAT_STATUS enumeración de características heredadas Windows entorno
+- PMPTHREAT_STATUS puntero de enumeración Heredados Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -59,13 +59,13 @@ typedef enum tagMPTHREAT_STATUS {
 <span id="MP_THREAT_STATUS_DETECTED"></span><span id="mp_threat_status_detected"></span>**ESTADO DE \_ AMENAZA \_ DE MP \_ DETECTADO**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_CLEANED"></span><span id="mp_threat_status_cleaned"></span>**ESTADO \_ DE AMENAZA DE MP \_ \_ LIMPIO**
+<span id="MP_THREAT_STATUS_CLEANED"></span><span id="mp_threat_status_cleaned"></span>**ESTADO DE \_ AMENAZA \_ DEL MP \_ LIMPIO**
 </dt> <dd></dd> <dt>
 
 <span id="MP_THREAT_STATUS_QUARANTINED"></span><span id="mp_threat_status_quarantined"></span>**ESTADO DE \_ AMENAZA DE MP EN \_ \_ CUARENTENA**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_REMOVED"></span><span id="mp_threat_status_removed"></span>**ESTADO DE \_ AMENAZA \_ DE MP \_ QUITADO**
+<span id="MP_THREAT_STATUS_REMOVED"></span><span id="mp_threat_status_removed"></span>**ESTADO DE \_ AMENAZA \_ DEL MP \_ ELIMINADO**
 </dt> <dd></dd> <dt>
 
 <span id="MP_THREAT_STATUS_ALLOWED"></span><span id="mp_threat_status_allowed"></span>**ESTADO DE \_ AMENAZA \_ DE MP \_ PERMITIDO**
@@ -77,13 +77,13 @@ typedef enum tagMPTHREAT_STATUS {
 <span id="MP_THREAT_STATUS_CLEAN_FAILED"></span><span id="mp_threat_status_clean_failed"></span>**ERROR DE \_ LIMPIEZA DEL ESTADO DE AMENAZA DEL \_ \_ \_ MP**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_QUARANTINE_FAILED"></span><span id="mp_threat_status_quarantine_failed"></span>**ERROR DE \_ CUARENTENA DE ESTADO DE AMENAZA DE \_ \_ \_ MP**
+<span id="MP_THREAT_STATUS_QUARANTINE_FAILED"></span><span id="mp_threat_status_quarantine_failed"></span>**ERROR EN \_ LA CUARENTENA DEL ESTADO DE AMENAZA DE \_ \_ \_ MP**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_REMOVE_FAILED"></span><span id="mp_threat_status_remove_failed"></span>**ERROR AL \_ QUITAR EL ESTADO DE AMENAZA DEL \_ \_ \_ MP**
+<span id="MP_THREAT_STATUS_REMOVE_FAILED"></span><span id="mp_threat_status_remove_failed"></span>**ERROR \_ AL QUITAR ESTADO DE AMENAZA DE \_ \_ \_ MP**
 </dt> <dd></dd> <dt>
 
-<span id="MP_THREAT_STATUS_ALLOW_FAILED"></span><span id="mp_threat_status_allow_failed"></span>**ERROR AL \_ PERMITIR EL ESTADO DE AMENAZA DEL \_ \_ \_ MP**
+<span id="MP_THREAT_STATUS_ALLOW_FAILED"></span><span id="mp_threat_status_allow_failed"></span>**ERROR \_ AL PERMITIR ESTADO DE AMENAZA DE \_ \_ MP \_**
 </dt> <dd></dd> <dt>
 
 <span id="MP_THREAT_STATUS_ABANDONED"></span><span id="mp_threat_status_abandoned"></span>**ESTADO DE \_ AMENAZA \_ DE MP \_ ABANDONADO**

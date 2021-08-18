@@ -1,6 +1,6 @@
 ---
-title: 'RWTexture2DArray:: Load (int) (función)'
-description: 'Lee los datos de textura. | RWTexture2DArray:: Load (int) (función)'
+title: Función RWTexture2DArray::Load(int)
+description: Lee los datos de textura. | Función RWTexture2DArray::Load(int)
 ms.assetid: BC247B2A-1744-4E37-A501-22E4A592A32D
 keywords:
 - Carga de la función HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b23439d471f4d22c807c8d45bb00c23a7d814e3f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7459e0bfacda9075fd587be69f8a3d69adbefb855608e5f949e250d0e35de786
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118790841"
 ---
-# <a name="rwtexture2darrayloadint-function"></a>RWTexture2DArray:: Load (int) (función)
+# <a name="rwtexture2darrayloadint-function"></a>Función RWTexture2DArray::Load(int)
 
 Lee los datos de textura.
 
@@ -39,7 +39,7 @@ Lee los datos de textura.
 
 <dl> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
@@ -52,15 +52,15 @@ Ubicación de la textura.
 
 Escriba:
 
-El tipo de valor devuelto coincide con el tipo en la declaración del objeto [**RWTexture2DArray**](sm5-object-rwtexture2darray.md) .
+El tipo de valor devuelto coincide con el tipo de la declaración del [**objeto RWTexture2DArray.**](sm5-object-rwtexture2darray.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -68,11 +68,11 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Cargar métodos](rwtexture2darray-load.md)
+[Métodos de carga](rwtexture2darray-load.md)
 </dt> </dl>
 
  

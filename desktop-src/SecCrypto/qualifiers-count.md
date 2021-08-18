@@ -26,7 +26,7 @@ ms.locfileid: "118900951"
 
 La **propiedad Count** recupera el número de objetos [**Qualifier**](qualifier.md) de la colección.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -43,14 +43,14 @@ Número de [**objetos Qualifier**](qualifier.md) de la colección.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: El método UsingDifferentAllocators determina si los pin de entrada y salida están usando asignadores diferentes.
+description: El método UsingDifferentAllocators determina si los pins de entrada y salida usan distintos asignadores.
 ms.assetid: 75feaa6e-6395-4d47-ae92-10a857f8764b
-title: Método CTransInPlaceFilter. UsingDifferentAllocators (TRANSip. h)
+title: Método CTransInPlaceFilter.UsingDifferentAllocators (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f20802836adb665614e2bbfb8cb79bdccd5a36ef
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0033c0f5ded1fe741d27397078367049d72061c40a993833f714686d9f8a96fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953424"
 ---
-# <a name="ctransinplacefilterusingdifferentallocators-method"></a>CTransInPlaceFilter. UsingDifferentAllocators, método
+# <a name="ctransinplacefilterusingdifferentallocators-method"></a>Método CTransInPlaceFilter.UsingDifferentAllocators
 
-El `UsingDifferentAllocators` método determina si los pin de entrada y salida están usando asignadores diferentes.
+El `UsingDifferentAllocators` método determina si las clavijas de entrada y salida usan distintos asignadores.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si los pin de entrada y salida están usando asignadores diferentes, o **false** en caso contrario.
+Devuelve **TRUE** si las clavijas de entrada y salida usan distintos asignadores, o **FALSE en caso** contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve **true** si los pin de entrada y salida están usando asignadores difer
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>TRANSip. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve **true** si los pin de entrada y salida están usando asignadores difer
 
 <dl> <dt>
 
-[**Clase CTransInPlaceFilter**](ctransinplacefilter.md)
+[**CTransInPlaceFilter (clase)**](ctransinplacefilter.md)
 </dt> </dl>
 
  

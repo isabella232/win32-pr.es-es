@@ -62,7 +62,7 @@ typedef enum tagSoHAttributeType {
 <span id="sohAttributeTypeSystemHealthId"></span><span id="sohattributetypesystemhealthid"></span><span id="SOHATTRIBUTETYPESYSTEMHEALTHID"></span>**sohAttributeTypeSystemHealthId**
 </dt> <dd>
 
-Especifica el tipo de atributo de identificador de estado del sistema.
+Especifica el tipo de atributo id. de mantenimiento del sistema.
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ Especifica la hora del último tipo de atributo de actualización.
 <span id="sohAttributeTypeClientId"></span><span id="sohattributetypeclientid"></span><span id="SOHATTRIBUTETYPECLIENTID"></span>**sohAttributeTypeClientId**
 </dt> <dd>
 
-Especifica el tipo de atributo id. de cliente.
+Especifica el tipo de atributo de identificador de cliente.
 
 </dd> <dt>
 
@@ -168,7 +168,7 @@ Especifica el tipo de atributo de estado de aislamiento extendido.
 
 La [**estructura SoHAttributeValue**](sohattributevalue-union.md) define los valores de atributo que corresponden a cada tipo de atributo.
 
-El sistema NAP consume estos tipos de atributos:
+El sistema NAP consume estos tipos de atributo:
 
 -   sohAttributeTypeSystemHealthId
 -   sohAttributeTypeIpv4FixupServers
@@ -176,13 +176,13 @@ El sistema NAP consume estos tipos de atributos:
 -   sohAttributeTypeComplianceResultCodes
 -   sohAttributeTypeFailureCategory
 
-El resto de los tipos solo están diseñados para guiar el uso de SHAs y SHV.
+El resto de los tipos solo están diseñados para guiar el uso por SHA y SHV.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                       |
@@ -191,7 +191,7 @@ El resto de los tipos solo están diseñados para guiar el uso de SHAs y SHV.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

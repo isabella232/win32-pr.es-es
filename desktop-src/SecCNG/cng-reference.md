@@ -20,11 +20,11 @@ Las páginas de referencia se dividen en los siguientes grupos:
 -   [Constantes CNG](cng-constants.md)
 -   [Funciones de configuración criptográfica de CNG](cng-cryptographic-configuration-functions.md)
 -   [Funciones primitivas criptográficas de CNG](cng-cryptographic-primitive-functions.md)
--   [Funciones DPAPI de CNG](cng-dpapi-functions.md)
+-   [Funciones de DPAPI de CNG](cng-dpapi-functions.md)
 -   [Funciones auxiliares de CNG](cng-helper-functions.md)
 -   [Funciones de clave Storage CNG](cng-key-storage-functions.md)
 -   [Funciones del proveedor SSL de CNG](cng-ssl-provider-functions.md)
--   [Funciones de enlace de tokens de CNG](cng-token-binding-functions.md)
+-   [Funciones de enlace de tokens CNG](cng-token-binding-functions.md)
 -   [Estructuras de CNG](cng-structures.md)
 -   [Enumeraciones CNG](cng-enumerations.md)
 

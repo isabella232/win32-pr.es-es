@@ -72,7 +72,7 @@ Al igual que todos los controles de la cinta de opciones, Drop-Down Selector de 
 </tr>
 <tr class="odd">
 <td>IsAutomaticColorButtonVisible</td>
-<td>Muestra (u oculta) el <strong>botón</strong> Automático.<br/> Válido solo cuando <em>ColorTemplate</em> tiene un valor de <code>ThemeColors</code> o <code>StandardColors</code> .<br/></td>
+<td>Muestra (u oculta) el <strong>botón</strong> Automático.<br/> Solo es válido <em>cuando ColorTemplate</em> tiene un valor <code>ThemeColors</code> de o <code>StandardColors</code> .<br/></td>
 </tr>
 <tr class="even">
 <td>IsNoColorButtonVisible</td>
@@ -169,7 +169,7 @@ Como control especializado que admite la personalización, cualquier implementac
 
 ### <a name="properties"></a>Propiedades
 
-El marco de la cinta de opciones define una colección [de claves de propiedad](windowsribbon-reference-properties.md) para el control Drop-Down Selector de colores control .
+El marco de la cinta de opciones define una colección [de claves de propiedad](windowsribbon-reference-properties.md) para Drop-Down Selector de colores control .
 
 Normalmente, una propiedad Drop-Down Selector de colores se actualiza en la interfaz de usuario de la cinta de opciones invalidando el comando asociado al control mediante una llamada al método [**IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) El evento de invalidación se controla y las actualizaciones de propiedades definidas por el método de devolución de llamada [**IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
 
@@ -205,7 +205,7 @@ En la tabla siguiente se enumeran las claves de propiedad asociadas al control D
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-color.md">UI_PKEY_Color</a></td>
-<td>Define el valor de color seleccionado como <a href="/windows/win32/gdi/colorref">COLORREF.</a><br/> Solo es válido <a href="windowsribbon-reference-properties-uipkey-colortype.md">UI_PKEY_ColorType</a> tiene un valor de <code>UI_SWATCHCOLORTYPE_RGB</code> .<br/></td>
+<td>Define el valor de color seleccionado como <a href="/windows/win32/gdi/colorref">COLORREF.</a><br/> Solo es válido <a href="windowsribbon-reference-properties-uipkey-colortype.md">cuando UI_PKEY_ColorType</a> tiene un valor de <code>UI_SWATCHCOLORTYPE_RGB</code> .<br/></td>
 <td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
 </tr>
 <tr class="odd">
@@ -255,7 +255,7 @@ En la tabla siguiente se enumeran las claves de propiedad asociadas al control D
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-smallhighcontrastimage.md">UI_PKEY_SmallHighContrastImage</a></td>
-<td>Define la imagen pequeña de contraste alto que se mostrará para un control.<br/></td>
+<td>Define la pequeña imagen de contraste alto que se mostrará para un control.<br/></td>
 <td>Solo se puede actualizar a través de la invalidación.<br/> Para obtener más información sobre los formatos de imagen, vea <a href="windowsribbon-imageformats.md">Especificar recursos de imagen de la cinta de opciones.</a><br/></td>
 </tr>
 <tr class="odd">
@@ -268,7 +268,7 @@ En la tabla siguiente se enumeran las claves de propiedad asociadas al control D
 <td>Define una matriz <a href="/windows/win32/gdi/colorref">de valores COLORREF</a> para las muestras de un Drop-Down Selector de colores.<br/> Cada Drop-Down Selector de colores <em>ColorTemplate</em> contiene una <code>StandardColors</code> cuadrícula. <br/>
 <blockquote>
 [!Note]<br />
-Se muestran los valores <a href="/windows/win32/gdi/colorref">COLORREF</a> de <em>la columna StandardColorGridRows</em> x <em>inicial</em> de la matriz. Si la matriz define menos colores que el número de muestras declaradas en el marcado, se muestran espacios vacíos para los chips <code>StandardColors</code> que faltan.
+Se muestran los valores <a href="/windows/win32/gdi/colorref">COLORREF</a> de <em>la columna StandardColorGridRows</em> <em>x</em> inicial de la matriz. Si la matriz define menos colores que el número de muestras declaradas en el marcado, se muestran espacios vacíos para los chips <code>StandardColors</code> que faltan.
 </blockquote>
 <br/></td>
 <td>Admite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>

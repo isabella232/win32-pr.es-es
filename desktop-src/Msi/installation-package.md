@@ -15,7 +15,7 @@ ms.locfileid: "118633825"
 
 Un paquete de instalación contiene toda la información que el instalador de Windows requiere para instalar o desinstalar una aplicación o un producto y para ejecutar la interfaz de usuario del programa de instalación. Cada paquete de instalación incluye un .msi de instalación, que contiene una base de datos de instalación, un flujo de información de resumen y flujos de datos para varias partes de la instalación. El .msi archivo también puede contener una o varias transformaciones, archivos de código fuente internos y archivos de código fuente externos o archivos archivadores necesarios para la instalación.
 
-Los desarrolladores de aplicaciones deben crear una instalación para usar el instalador. Dado que el instalador organiza las instalaciones en torno al concepto de componentes y características [,](components-and-features.md)y almacena toda la información sobre la instalación en una base de datos relacional, el proceso de creación de un paquete de instalación conlleva en gran medida los pasos siguientes:
+Los desarrolladores de aplicaciones deben crear una instalación para usar el instalador. Dado que el instalador organiza las instalaciones en torno al concepto de componentes y características [,](components-and-features.md)y almacena toda la información sobre la instalación en una base de datos relacional, el proceso de creación de un paquete de instalación conlleva ampliamente los pasos siguientes:
 
 -   Identifique las características que se presentarán a los usuarios.
 -   Organice la aplicación en componentes.

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: método Transaction. Commit (CommitTransactionGrbit, TimeSpan, JET_COMMIT_ID)'
-title: Método Transaction. Commit (CommitTransactionGrbit, TimeSpan, JET_COMMIT_ID)
+description: 'Más información sobre: Método Transaction.Commit (CommitTransactionGrbit, TimeSpan, JET_COMMIT_ID)'
+title: Método Transaction.Commit (CommitTransactionGrbit, TimeSpan, JET_COMMIT_ID)
 TOCTitle: Commit method (CommitTransactionGrbit, TimeSpan, JET_COMMIT_ID)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Transaction.Commit(Microsoft.Isam.Esent.Interop.CommitTransactionGrbit,System.TimeSpan,Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.transaction.commit(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 18df363e4320a4b1a53c34e15fcf68939fce96ef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90fd53fd7097db98ab84148b3f32710c369c948ed64c3606d0018cc8e79c877a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117890518"
 ---
-# <a name="transactioncommit-method-committransactiongrbit-timespan-jet_commit_id"></a>Método Transaction. Commit (CommitTransactionGrbit, TimeSpan, JET_COMMIT_ID)
+# <a name="transactioncommit-method-committransactiongrbit-timespan-jet_commit_id"></a>Método Transaction.Commit (CommitTransactionGrbit, TimeSpan, JET_COMMIT_ID)
 
-Confirme una transacción. Este objeto debe estar en una transacción.
+Confirmar una transacción. Este objeto debe estar en una transacción.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,23 +64,23 @@ public void Commit(
 #### <a name="parameters"></a>Parámetros
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. CommitTransactionGrbit](./committransactiongrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.CommitTransactionGrbit](./committransactiongrbit-enumeration.md)  
     
     Opciones de JetCommitTransaction.
 
 <!-- end list -->
 
   - durableCommit  
-    Tipo: [System. TimeSpan](/dotnet/api/system.timespan)  
+    Tipo: [System.TimeSpan](/dotnet/api/system.timespan)  
     
-    Duración de la confirmación de transacciones diferidas.
+    Duración de la confirmación de transacciones diferida.
 
 <!-- end list -->
 
   - commitId  
-    Tipo: [Microsoft.ISAM.esent.Interop.Windows8.JET_COMMIT_ID](./jet-commit-id-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID](./jet-commit-id-class.md)  
     
-    ID. de confirmación para este registro de confirmación.
+    Commit-id para este registro de confirmación.
 
 ## <a name="see-also"></a>Vea también
 
@@ -92,4 +92,4 @@ public void Commit(
 
 [Sobrecarga de confirmación](./transaction.commit-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

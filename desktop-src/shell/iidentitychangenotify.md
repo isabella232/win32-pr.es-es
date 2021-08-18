@@ -48,7 +48,7 @@ La **interfaz IIdentityChangeNotify** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para implementar notificaciones, una interfaz derivada debe conectarse a [**IUserIdentityManager**](iuseridentitymanager.md) llamando a [**IConnectionPoint::Advise**](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-advise) y pasando un puntero a la interfaz .
 
@@ -56,7 +56,7 @@ Para implementar notificaciones, una interfaz derivada debe conectarse a [**IUse
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
@@ -66,7 +66,7 @@ Para implementar notificaciones, una interfaz derivada debe conectarse a [**IUse
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -27,7 +27,7 @@ Lista de páginas web alternativas.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------------------------------------------|
 | CN                | WWW-Page-Other                                                              |
 | Ldap-Display-Name | url                                                                         |
@@ -36,7 +36,7 @@ Lista de páginas web alternativas.
 | Frecuencia de actualización  | Cuando se crea el registro del usuario y cada vez que la página web necesita cambiar. |
 | Attribute-Id      | 1.2.840.113556.1.4.749                                                      |
 | System-Id-Guid    | 9a9a0221-4a5b-11d1-a9c3-0000f80367c1                                        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                 |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                 |
 
 
 
@@ -54,14 +54,14 @@ Lista de páginas web alternativas.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8175                          |
-| System-Only            | False                           |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -75,14 +75,14 @@ Lista de páginas web alternativas.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8175                          |
-| System-Only            | False                           |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -96,14 +96,14 @@ Lista de páginas web alternativas.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8175                          |
-| System-Only            | False                           |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -117,14 +117,14 @@ Lista de páginas web alternativas.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8175                          |
-| System-Only            | False                           |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -138,14 +138,14 @@ Lista de páginas web alternativas.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8175                          |
-| System-Only            | False                           |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -159,14 +159,14 @@ Lista de páginas web alternativas.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8175                          |
-| System-Only            | False                           |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -180,14 +180,14 @@ Lista de páginas web alternativas.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8175                          |
-| System-Only            | False                           |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |

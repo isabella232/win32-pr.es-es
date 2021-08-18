@@ -1,19 +1,19 @@
 ---
-description: Indica si un dispositivo requiere la eliminación segura.
+description: Indica si un dispositivo requiere una eliminación segura.
 ms.assetid: 584ec98a-b60f-426d-befe-fafcea983f42
-title: System. Devices. SafeRemovalRequired
+title: System.Devices.SafeRemovalRequired
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce6e357edc5f4230be4290019e78853d115f4001
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96f1a81ea9986d4dbced74a9a3c9323f5b39eef3152b823d1e1d218b31b64a39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119097194"
 ---
-# <a name="systemdevicessaferemovalrequired"></a>System. Devices. SafeRemovalRequired
+# <a name="systemdevicessaferemovalrequired"></a>System.Devices.SafeRemovalRequired
 
-Indica si un dispositivo requiere la eliminación segura.
+Indica si un dispositivo requiere una eliminación segura.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

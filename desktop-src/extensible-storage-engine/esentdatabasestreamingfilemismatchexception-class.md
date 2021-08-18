@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentDatabaseStreamingFileMismatchException'
+description: 'Más información sobre: Clase EsentDatabaseStreamingFileMismatchException'
 title: Clase EsentDatabaseStreamingFileMismatchException
 TOCTitle: EsentDatabaseStreamingFileMismatchException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentDatabaseStreamingFileMismatchException
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5a007a400acdc2dd0d7af71cf1cb03c73baa0b78
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a8ba84ab4967518fdd4a4894b9f6307fe23f0da46f8e85edd1fb6c173f44adf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118780049"
 ---
 # <a name="esentdatabasestreamingfilemismatchexception-class"></a>Clase EsentDatabaseStreamingFileMismatchException
 
@@ -39,16 +39,16 @@ Clase base para JET_err. Excepciones DatabaseStreamingFileMismatch.
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentObsoleteException](./esentobsoleteexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentDatabaseStreamingFileMismatchException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentObsoleteException](./esentobsoleteexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentDatabaseStreamingFileMismatchException  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -68,10 +68,10 @@ public sealed class EsentDatabaseStreamingFileMismatchException : EsentObsoleteE
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [Miembros de EsentDatabaseStreamingFileMismatchException](./esentdatabasestreamingfilemismatchexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

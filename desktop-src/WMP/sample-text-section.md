@@ -3,23 +3,23 @@ title: Sección de texto de ejemplo
 description: Sección de texto de ejemplo
 ms.assetid: 7e59ec56-dedc-46c5-8302-11a7d7c38911
 keywords:
-- Aspectos de Windows Media Player Mobile, texto
-- máscaras, texto
-- referencia de máscaras, texto
-- texto en máscaras, sección de texto
-- archivos de definición de máscara, sección de texto
+- Reproductor de Windows Media Máscaras móviles, texto
+- skins,text
+- referencia de máscaras,texto
+- text in skins,Text section
+- archivos de definición de máscara, sección Texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ac87e65b4eb909b16a8a200a5f5f6d6cadc5df8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 182fa28f774f023ccccd7234fd4e8d4eb6a6c4cf22841efbd800ae313a15b50d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104269210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995475"
 ---
 # <a name="sample-text-section"></a>Sección de texto de ejemplo
 
-Las siguientes líneas muestran una sección de texto típica de un archivo de definición de máscara:
+Las líneas siguientes muestran una sección text típica de un archivo de definición de máscara:
 
 
 ```C++
@@ -46,9 +46,9 @@ En el ejemplo anterior se definen tres cuadros de presentación de texto que mue
 [**Texto**](text.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

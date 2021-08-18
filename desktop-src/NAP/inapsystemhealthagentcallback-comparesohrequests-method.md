@@ -1,10 +1,10 @@
 ---
 title: Método INapSystemHealthAgentCallback CompareSoHRequests (NapSystemHealthAgent.h)
-description: SHA lo usa para comparar las solicitudes SoH.
+description: Sha lo usa para comparar las solicitudes de SoH.
 ms.assetid: 14ba189a-e745-44b0-b729-522087d4e08b
 keywords:
-- Comparación del método NAP de CompareSoHRequests
-- CompareSoHRequests method NAP , INapSystemHealthAgentCallback interface
+- Nap del método CompareSoHRequests
+- Método NAP de CompareSoHRequests, interfaz INapSystemHealthAgentCallback
 - INapSystemHealthAgentCallback interface NAP , CompareSoHRequests method
 topic_type:
 - apiref
@@ -30,7 +30,7 @@ ms.locfileid: "118939440"
 
  
 
-Sha usa el método **INapSystemHealthAgentCallback::CompareSoHRequests** para comparar solicitudes SoH.
+Sha usa el método **INapSystemHealthAgentCallback::CompareSoHRequests** para comparar las solicitudes de SoH.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -66,7 +66,7 @@ Puntero a [**SoHRequest a**](/windows/win32/api/naptypes/ns-naptypes-soh) la der
 *isEqual* \[ out\]
 </dt> <dd>
 
-Puntero a un **BOOL que** es **TRUE si** *lhs* y *rhs* son semánticamente iguales y **FALSE** en caso contrario.
+Puntero a un **BOOL que** es **TRUE si** *lhs* y *rhs* son semánticamente iguales y **FALSE en** caso contrario.
 
 </dd> </dl>
 
@@ -91,15 +91,15 @@ El sistema NAP declara este método de devolución de llamada y lo va a implemen
 
 Sha debe comparar los SoH y devolver **TRUE** si los SoH son semánticamente iguales. NapAgent usa esta información para determinar si se debe iniciar un intercambio de SoH debido al cambio de estado de la máquina cliente.
 
-Si las SHA han puesto los ID incrementales o las marcas de tiempo en su SoH, los SoH pueden ser iguales semánticamente (es decir, pueden transmitir la misma información de estado), pero pueden ser desiguales en cuanto a bytes. Las SHA deben implementar esta función para comprobar la igualdad semántica de los SoH.
+Si los SHA han puesto los ID incrementales o las marcas de tiempo en su SoH, los SoH pueden ser semánticamente iguales (es decir, pueden transmitir la misma información de estado), pero pueden ser diferentes en cuanto a bytes. Las SHA deben implementar esta función para comprobar la igualdad semántica de los SoH.
 
-Si las SHA no han puesto marcas de tiempo o identificadores en sus soHs, pueden optar por no implementar esta función y devolver **E \_ NOTIMPL**. En este caso, NapAgent realiza una comparación por bytes en [**SoHRequests**](/windows/win32/api/naptypes/ns-naptypes-soh).
+Si los SHA no han puesto marcas de tiempo o identificadores en sus SoH, pueden optar por no implementar esta función y devolver **E \_ NOTIMPL**. En este caso, NapAgent realiza una comparación por bytes en [**SoHRequests**](/windows/win32/api/naptypes/ns-naptypes-soh).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
@@ -108,7 +108,7 @@ Si las SHA no han puesto marcas de tiempo o identificadores en sus soHs, pueden 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

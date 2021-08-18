@@ -10,8 +10,8 @@ keywords:
 - ASF (formato de sistemas avanzados), insertar formatos de flujo nativos (QASF)
 - Formato de sistemas avanzados (ASF), formatos de flujo nativos (QASF)
 - ASF (formato de sistemas avanzados), formatos de flujo nativos (QASF)
-- Formato de sistemas avanzados (ASF), DirectShow
-- ASF (formato de sistemas avanzados), DirectShow
+- Formato de sistemas avanzados (ASF),DirectShow
+- ASF (formato de sistemas avanzados),DirectShow
 - DirectShow, formatos de flujo nativos (QASF)
 - DirectShow, insertar formatos de flujo nativos en archivos ASF (QASF)
 - Windows SDK de formato multimedia, QASF
@@ -31,7 +31,7 @@ ms.locfileid: "118701782"
 
 De forma predeterminada, [WM ASF Writer](wm-asf-writer-filter.md) espera secuencias de audio y vídeo sin comprimir en sus pines de entrada y usa el SDK de formato multimedia de Windows para acceder a los códecs Windows Media Audio y Windows Media Video, que comprimen las secuencias. Pero el contenedor de archivos ASF se puede usar para cualquier tipo de datos. Al colocar datos multimedia digitales en un contenedor de archivos ASF, puede agregar características proporcionadas por ASF, como metadatos y administración de derechos digitales (DRM), sin tener que transcodificar el contenido.
 
-Para crear un archivo ASF que contenga contenido que no esté basado en medios de Windows, la aplicación debe comprimir la secuencia en el gráfico de filtro ascendente del escritor de ASF de WM y omitir el mecanismo de compresión del escritor de ASF wm llamando a [**IConfigAsfWriter2::SetParam**](iconfigasfwriter2-setparam.md) de la siguiente manera:
+Para crear un archivo ASF que contenga contenido que no esté basado en medios de Windows, la aplicación debe comprimir la secuencia en el gráfico de filtro ascendente del escritor de ASF de WM y omitir el mecanismo de compresión del escritor de ASF wm llamando a [**IConfigAsfWriter2::SetParam**](iconfigasfwriter2-setparam.md) como se muestra a continuación:
 
 
 ```C++

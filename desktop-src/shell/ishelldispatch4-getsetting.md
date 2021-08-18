@@ -142,7 +142,7 @@ Estado de la presentación del icono en la vista de Windows explorador. Si esta 
 
 </dt> <dd>
 
-**Windows Vista y versiones posteriores.** Estado del nombre para mostrar en la vista de Windows explorador. Si esta opción está activa, los iconos se muestran en la vista de lista, pero no los nombres para mostrar.
+**Windows Vista y versiones posteriores.** El estado del nombre para mostrar que se muestra en la Windows explorador. Si esta opción está activa, los iconos se muestran en la vista de lista, pero no los nombres para mostrar.
 
 </dd> <dt>
 
@@ -153,7 +153,7 @@ Estado de la presentación del icono en la vista de Windows explorador. Si esta 
 
 </dt> <dd>
 
-Estado de la opción Mostrar unidad **de red de mapa en la barra de** herramientas. A Windows vista, esta opción ya no está disponible.
+Estado de la opción Mostrar unidad **de red de mapa en la barra de** herramientas. A Windows Vista, esta opción ya no está disponible.
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ Estado de la opción Mostrar unidad **de red de mapa en la barra de** herramient
 
 </dt> <dd>
 
-Estado de la opción de papelera de reciclaje cuadro de **diálogo Mostrar confirmación de eliminación del** servidor.
+Estado de la opción de papelera de reciclaje cuadro de diálogo Mostrar **confirmación de eliminación del** servidor.
 
 </dd> <dt>
 
@@ -175,7 +175,7 @@ Estado de la opción de papelera de reciclaje cuadro de **diálogo Mostrar confi
 
 </dt> <dd>
 
-Estado de la opción **Buscar automáticamente carpetas de red e impresoras.** A Windows vista, esta opción ya no está disponible.
+Estado de la opción **Buscar automáticamente carpetas de red e impresoras.** A Windows Vista, esta opción ya no está disponible.
 
 </dd> <dt>
 
@@ -219,7 +219,7 @@ Estado de la opción **Archivos y carpetas ocultos.**
 
 </dt> <dd>
 
-Estado de la opción **Mostrar atributos de archivo en la vista de** detalles. A Windows vista, esta opción ya no está disponible.
+Estado de la opción **Mostrar atributos de archivo en la vista de** detalles. A Windows Vista, esta opción ya no está disponible.
 
 </dd> <dt>
 
@@ -318,7 +318,7 @@ No se usa.
 
 </dt> <dd>
 
-El estado de la Windows de visualización xp, que selecciona entre el Windows XP y el estilo clásico. A Windows vista, esta opción ya no está disponible.
+El estado de la Windows de visualización XP, que selecciona entre el Windows XP y el estilo clásico. A Windows Vista, esta opción ya no está disponible.
 
 </dd> <dt>
 
@@ -329,7 +329,7 @@ El estado de la Windows de visualización xp, que selecciona entre el Windows XP
 
 </dt> <dd>
 
-Estado de la opción **Mostrar como vista web**. A Windows vista, esta opción ya no está disponible.
+Estado de la opción **Mostrar como vista web**. A Windows Vista, esta opción ya no está disponible.
 
 </dd> <dt>
 
@@ -340,7 +340,7 @@ Estado de la opción **Mostrar como vista web**. A Windows vista, esta opción y
 
 </dt> <dd>
 
-Estado de la opción **Estilo** clásico. A Windows vista, esta opción ya no está disponible.
+Estado de la opción **Estilo** clásico. A Windows Vista, esta opción ya no está disponible.
 
 </dd> </dl> </dd> </dl>
 
@@ -431,7 +431,7 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |

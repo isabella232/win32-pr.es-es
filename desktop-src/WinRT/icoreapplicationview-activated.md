@@ -37,7 +37,7 @@ void Activated(
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 No llame al método [**Exit**](/previous-versions//hh438368(v=vs.85)) desde dentro del *controlador*.
 
@@ -45,7 +45,7 @@ No llame al método [**Exit**](/previous-versions//hh438368(v=vs.85)) desde dent
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                         |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                               |

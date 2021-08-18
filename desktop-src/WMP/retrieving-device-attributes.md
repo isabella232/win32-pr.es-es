@@ -3,29 +3,29 @@ title: Recuperación de atributos de dispositivo
 description: Recuperación de atributos de dispositivo
 ms.assetid: c553d495-d8fc-4483-a3dc-6679c6b9d1f1
 keywords:
-- Windows Media Player, dispositivos portátiles
-- Modelo de objetos de Windows Media Player, dispositivos portátiles
+- Reproductor de Windows Media dispositivos portátiles
+- Reproductor de Windows Media modelo de objetos, dispositivos portátiles
 - modelo de objetos, dispositivos portátiles
-- Control ActiveX de Windows Media Player, dispositivos portátiles
-- Control ActiveX, dispositivos portátiles
-- Control ActiveX móvil de Windows Media Player, dispositivos portátiles
-- Windows Media Player dispositivos móviles y portátiles
+- Reproductor de Windows Media ActiveX control, dispositivos portátiles
+- ActiveX control, dispositivos portátiles
+- Reproductor de Windows Media Control de ActiveX móviles, dispositivos portátiles
+- Reproductor de Windows Media Dispositivos móviles y portátiles
 - dispositivos portátiles, recuperar atributos
 - atributos, dispositivos portátiles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f486b94fe6a9a5c78f238d78a7f79dec9df3376
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: d5e6ac2794782c728de16f23f88e26d1f458258959e1c3e9e7e490cdf7bf6971
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104077352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995535"
 ---
 # <a name="retrieving-device-attributes"></a>Recuperación de atributos de dispositivo
 
-Windows Media Player almacena información acerca de los dispositivos que se han conectado al reproductor. Algunos atributos están disponibles al llamar a métodos individuales de **IWMPSyncDevice**, algunos se pueden recuperar mediante **IWMPSyncDevice:: getItemInfo** y otros se pueden recuperar mediante cualquiera de las técnicas.
+Reproductor de Windows Media almacena información sobre los dispositivos que se han conectado al reproductor. Algunos atributos están disponibles llamando a métodos individuales de **IWMPSyncDevice,** algunos se pueden recuperar mediante **IWMPSyncDevice::getItemInfo** y algunos se pueden recuperar mediante cualquiera de las técnicas.
 
-En el código de ejemplo siguiente se rellena un control de cuadro de lista con los atributos disponibles para el dispositivo especificado. La primera parte de la función recupera las propiedades disponibles mediante métodos específicos. La segunda parte de la función recupera los valores de atributo mediante **IWMPSyncDevice:: getItemInfo**. El parámetro de la función, *lIndex*, es el índice del dispositivo en la matriz de dispositivos personalizada a la que apunta m \_ ppWMPDevices.
+El código de ejemplo siguiente rellena un control de cuadro de lista con los atributos disponibles para el dispositivo especificado. La primera parte de la función recupera las propiedades disponibles mediante métodos específicos. La segunda parte de la función recupera los valores de atributo mediante **IWMPSyncDevice::getItemInfo**. El parámetro de *función, lIndex*, es el índice del dispositivo en la matriz de dispositivos personalizada a la que apunta m \_ ppWMPDevices.
 
 
 ```C++
@@ -157,21 +157,21 @@ STDMETHODIMP CMainDlg::ShowDeviceAttributes(long lIndex)
 
 <dl> <dt>
 
-[**Enumerar dispositivos**](enumerating-devices.md)
+[**Enumeración de dispositivos**](enumerating-devices.md)
 </dt> <dt>
 
-[**Interfaz IWMPSyncDevice**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncdevice)
+[**IWMPSyncDevice (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncdevice)
 </dt> <dt>
 
-[**IWMPSyncDevice:: getItemInfo**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-getiteminfo)
+[**IWMPSyncDevice::getItemInfo**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-getiteminfo)
 </dt> <dt>
 
 [**Trabajar con dispositivos portátiles**](working-with-portable-devices.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

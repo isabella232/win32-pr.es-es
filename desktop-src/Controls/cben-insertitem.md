@@ -3,7 +3,7 @@ title: CBEN_INSERTITEM de notificación (Commctrl.h)
 description: Se envía cuando se ha insertado un nuevo elemento en el control . Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: caf60156-10d2-4cfb-91c4-def6ee99c471
 keywords:
-- CBEN_INSERTITEM código de notificación Windows controles
+- CBEN_INSERTITEM de notificación Windows controles
 topic_type:
 - apiref
 api_name:

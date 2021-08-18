@@ -4,12 +4,12 @@ ms.assetid: 40925dfe-494c-49b5-ae57-de369723ba76
 title: JobOutputOptimization
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cdbb65f86b5ed4fd30c056e234b88197d4ab475d
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 756321c586933367215b556eec4c24cef5e2969bf16aeb4f7b089c92cb481f7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119099663"
 ---
 # <a name="joboutputoptimization"></a>JobOutputOptimization
 
@@ -19,7 +19,7 @@ Describe el procesamiento del trabajo, diseñado para optimizar la salida para e
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
--   [lenguaje de marcado extensible (XML) Content](#extensible-markup-language-xml-content)
+-   [contenido lenguaje de marcado extensible (XML)](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Información de elemento
 
@@ -68,7 +68,7 @@ En la tabla siguiente se describen las características de las variables definid
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
+## <a name="extensible-markup-language-xml-content"></a>contenido lenguaje de marcado extensible (XML)
 
 Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 

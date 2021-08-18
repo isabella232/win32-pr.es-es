@@ -27,7 +27,7 @@ Cadena de caracteres que describe el formato de la dirección del usuario. Los t
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------|
 | CN                | Address-Type                                                                                                              |
 | Ldap-Display-Name | addressType                                                                                                               |
@@ -36,7 +36,7 @@ Cadena de caracteres que describe el formato de la dirección del usuario. Los t
 | Frecuencia de actualización  | Se establece cuando se crea el objeto.                                                                                           |
 | Attribute-Id      | 1.2.840.113556.1.2.350                                                                                                    |
 | System-Id-Guid    | 5fd42464-1262-11d0-a060-00aa006c33ed                                                                                      |
-| Sintaxis            | [**String(Teletex)**](s-string-teletex.md)                                                                               |
+| Syntax            | [**String(Teletex)**](s-string-teletex.md)                                                                               |
 
 
 
@@ -53,14 +53,14 @@ Cadena de caracteres que describe el formato de la dirección del usuario. Los t
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
-| System-Only            | False                                                    |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |
@@ -74,14 +74,14 @@ Cadena de caracteres que describe el formato de la dirección del usuario. Los t
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
-| System-Only            | False                                                    |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |
@@ -95,14 +95,14 @@ Cadena de caracteres que describe el formato de la dirección del usuario. Los t
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
-| System-Only            | False                                                    |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |
@@ -116,14 +116,14 @@ Cadena de caracteres que describe el formato de la dirección del usuario. Los t
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
-| System-Only            | False                                                    |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |
@@ -137,14 +137,14 @@ Cadena de caracteres que describe el formato de la dirección del usuario. Los t
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
-| System-Only            | False                                                    |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |
@@ -158,14 +158,14 @@ Cadena de caracteres que describe el formato de la dirección del usuario. Los t
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
 | Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
-| System-Only            | False                                                    |
-| Es de un solo valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |

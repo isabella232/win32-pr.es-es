@@ -19,7 +19,7 @@ La tabla SFPCatalog tiene las siguientes columnas.
 
 
 
-| Columna     | Tipo                       | Key | Nullable |
+| Columna     | Tipo                       | Clave | Nullable |
 |------------|----------------------------|-----|----------|
 | SFPCatalog | [Nombre de archivo](filename.md)   | Y   | N        |
 | Catálogo    | [Binario](binary.md)       | N   | N        |
@@ -58,7 +58,7 @@ Si el campo Dependencia hace referencia a un catálogo primario que no está pre
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La [acción InstallSFPCatalogFile](installsfpcatalogfile-action.md) consulta la tabla [Component](component-table.md), la [tabla File,](file-table.md) [la tabla FileSFPCatalog](filesfpcatalog-table.md) y la tabla SFPCatalog.
 

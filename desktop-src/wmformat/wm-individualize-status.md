@@ -3,7 +3,7 @@ title: WM_INDIVIDUALIZE_STATUS estructura (Drternals.h)
 description: La estructura WM \_ INDIVIDUALIZE \_ STATUS registra el estado del proceso de individualización.
 ms.assetid: 3779ed6f-c133-4a9d-b60c-ef8c41fcc4af
 keywords:
-- WM_INDIVIDUALIZE_STATUS estructura windows Media Format
+- WM_INDIVIDUALIZE_STATUS windows Media Format de estructura
 topic_type:
 - apiref
 api_name:
@@ -95,7 +95,7 @@ Valor del tipo [**de \_ enumeración DRM HTTP \_ STATUS.**](drm-http-status.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta estructura la rellenan los componentes en tiempo de ejecución de DRM y se envía a las aplicaciones en el *parámetro pValue* de la aplicación [**IWMStatusCallback::OnStatus**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) cuando el evento es igual a WMT \_ INDIVIDUALIZE. La aplicación recibe este evento varias veces durante el proceso de descarga.
 
@@ -103,7 +103,7 @@ Esta estructura la rellenan los componentes en tiempo de ejecución de DRM y se 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                      |
@@ -112,7 +112,7 @@ Esta estructura la rellenan los componentes en tiempo de ejecución de DRM y se 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

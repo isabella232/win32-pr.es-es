@@ -31,7 +31,7 @@ midl /rpcss
 
 Este modificador no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 En el modo predeterminado, el paquete RpcSs solo está habilitado si el procedimiento o la interfaz tienen el atributo [**enable \_ allocate**](enable-allocate.md) o se especifica el modificador **/rpcss** en la línea de comandos. En **el modo /osf,** el código auxiliar del lado servidor habilita el paquete de asignación RpcSs.
 
@@ -39,7 +39,7 @@ En el modo predeterminado, el paquete RpcSs solo está habilitado si el procedim
 
 **midl /rpcss filename.idl**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

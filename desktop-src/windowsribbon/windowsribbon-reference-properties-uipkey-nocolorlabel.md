@@ -25,7 +25,7 @@ propertyDescription
       type = VT_LPWSTR
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Una aplicación usa UI PKEY NoColorLabel para consultar el valor de la etiqueta asociada al botón No color de \_ \_ [**dropdownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md) 
 

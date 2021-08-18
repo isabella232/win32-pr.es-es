@@ -1,10 +1,10 @@
 ---
-title: MPCLEAN_PRECHECK_DATA estructura (MpClient. h)
-description: Datos de notificación pasados a la función de devolución de llamada de precomprobación limpia.
+title: MPCLEAN_PRECHECK_DATA estructura (MpClient.h)
+description: Datos de notificación pasados para limpiar la función de devolución de llamada de comprobación previa.
 ms.assetid: 65B3B116-6E83-46F5-AE2B-92A41AE39480
 keywords:
-- MPCLEAN_PRECHECK_DATA estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPCLEAN_PRECHECK_DATA características de entorno heredado de Windows
+- MPCLEAN_PRECHECK_DATA estructura heredada de Windows environment
+- PMPCLEAN_PRECHECK_DATA puntero de estructura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc3d67e0c71c95db49b633feeb3048cc9f104b2f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bc272ed230a67811497f0eebb99624d74369c8c55419fba970f326fba502e8b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747931"
 ---
-# <a name="mpclean_precheck_data-structure"></a>Estructura de datos de \_ comprobación de MPCLEAN \_
+# <a name="mpclean_precheck_data-structure"></a>Estructura \_ DE DATOS DE PRECHECK de MPCLEAN \_
 
-Datos de notificación pasados a la función de devolución de llamada de precomprobación limpia.
+Datos de notificación pasados para limpiar la función de devolución de llamada de comprobación previa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,22 +45,22 @@ typedef struct tagMPCLEAN_PRECHECK_DATA {
 **BlockedResourceInfo**
 </dt> <dd>
 
-Tipo: **PMPRESOURCE \_ info**
+Tipo: **PMPRESOURCE \_ INFO**
 
 </dd> <dd>
 
-Información de recursos sobre el recurso que se está bloqueando. Por ejemplo, cuando el progreso es **MPNOTIFY \_ precomprobar \_ recurso \_ bloqueado**. Vea [**\_ información de MPRESOURCE**](mpresource-info.md).
+Información de recursos sobre el recurso que se está bloqueando. Por ejemplo, cuando el progreso es **MPNOTIFY \_ PRECHECK \_ RESOURCE \_ BLOCKED**. Consulte [**MPRESOURCE \_ INFO**](mpresource-info.md).
 
 </dd> <dt>
 
-**información de PMPRESOURCE \_**
+**PMPRESOURCE \_ INFO**
 </dt> <dd>
 
 Tipo: **BlockingResourceInfo**
 
 </dd> <dd>
 
-Información de recursos sobre el recurso que está bloqueando. Por ejemplo, cuando el progreso es **MPNOTIFY \_ precomprobar \_ recurso \_ bloqueado**. Vea [**\_ información de MPRESOURCE**](mpresource-info.md).
+Información de recursos sobre el recurso que está bloqueando. Por ejemplo, cuando el progreso es **MPNOTIFY \_ PRECHECK \_ RESOURCE \_ BLOCKED**. Consulte [**MPRESOURCE \_ INFO**](mpresource-info.md).
 
 </dd> </dl>
 
@@ -68,19 +68,19 @@ Información de recursos sobre el recurso que está bloqueando. Por ejemplo, cua
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**información de MPRESOURCE \_**](mpresource-info.md)
+[**MPRESOURCE \_ INFO**](mpresource-info.md)
 </dt> </dl>
 
  

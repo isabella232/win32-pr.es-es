@@ -1,5 +1,5 @@
 ---
-description: 'Método ChangeSecurityPermissions de la clase CIM_Directory: cambia los permisos de seguridad para el archivo de entrada de directorio lógico especificado en la ruta de acceso del objeto.'
+description: 'Método ChangeSecurityPermissions de la clase CIM_Directory : cambia los permisos de seguridad para el archivo de entrada de directorio lógico especificado en la ruta de acceso del objeto.'
 ms.assetid: d3caeec1-fecc-4463-9349-d82869c11927
 ms.tgt_platform: multiple
 title: Método ChangeSecurityPermissions de la CIM_Directory clase
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 389ed5b7b0a43981c5eeb3d66a73bd19cbd99d88
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 469af646e4e2700737afc8f81d4b41bb548499bef5985892aebf8564317c563f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959124"
 ---
-# <a name="changesecuritypermissions-method-of-the-cim_directory-class"></a>Método ChangeSecurityPermissions de la clase \_ de directorio CIM
+# <a name="changesecuritypermissions-method-of-the-cim_directory-class"></a>Método ChangeSecurityPermissions de la clase \_ De directorio CIM
 
 El **método ChangeSecurityPermissions** cambia los permisos de seguridad para el archivo de entrada de directorio lógico especificado en la ruta de acceso del objeto. Si el archivo lógico es un directorio, este método actuará de forma recursiva, cambiando los permisos de seguridad para todos los archivos y subdirectorios que contiene el directorio. Este método se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,7 +63,7 @@ Especifica información de seguridad.
 *Opción* \[ En\]
 </dt> <dd>
 
-Privilegio de seguridad que se debe modificar. Por ejemplo, para cambiar el propietario y la seguridad de DACL, use:
+Privilegio de seguridad que se modificará. Por ejemplo, para cambiar el propietario y la seguridad de DACL, use:
 
 `Option = 1 + 4`
 
@@ -137,7 +137,7 @@ Correcto.
 
 2
 
-Acceso denegado.
+Acceso denegado:
 
 </dd> <dt>
 
@@ -250,7 +250,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -260,7 +260,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

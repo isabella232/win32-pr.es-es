@@ -1,6 +1,6 @@
 ---
 title: Código de ejemplo para enlazar al contenedor del usuario
-description: En este tema se incluye un ejemplo de código que se enlazará al contenedor de usuarios en el dominio actual y devolverá e IADsContainer interfaz para el contenedor.
+description: En este tema se incluye un ejemplo de código que se enlazará al contenedor de usuarios en el dominio actual y devolverá la interfaz IADsContainer del contenedor.
 ms.assetid: 78524b05-f57a-4816-92eb-e37be74dd245
 ms.tgt_platform: multiple
 keywords:
@@ -16,7 +16,7 @@ ms.locfileid: "118694568"
 ---
 # <a name="example-code-for-binding-to-the-users-container"></a>Código de ejemplo para enlazar al contenedor del usuario
 
-El siguiente ejemplo de código de C++ se enlaza al contenedor de usuarios del dominio actual y devuelve e [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) interfaz para el contenedor. Para obtener más información sobre el enlace a objetos conocidos, vea [Enlace a objetos Well-Known mediante WKGUID.](binding-to-well-known-objects-using-wkguid.md)
+En el siguiente ejemplo de código de C++ se enlaza al contenedor users del dominio actual y se devuelven la interfaz [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) del contenedor. Para obtener más información sobre el enlace a objetos conocidos, vea [Enlace a objetos Well-Known mediante WKGUID.](binding-to-well-known-objects-using-wkguid.md)
 
 
 ```C++

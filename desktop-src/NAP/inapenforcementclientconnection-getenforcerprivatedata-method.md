@@ -30,7 +30,7 @@ ms.locfileid: "118940068"
 
  
 
-El ejecutor usa el método **INapEnforcementClientConnection::GetEnforcerPrivateData** para obtener datos privados.
+El **ejecutor usa el método INapEnforcementClientConnection::GetEnforcerPrivateData** para obtener datos privados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,7 +74,7 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
@@ -84,7 +84,7 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

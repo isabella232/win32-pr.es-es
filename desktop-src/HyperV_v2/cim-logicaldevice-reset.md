@@ -1,7 +1,7 @@
 ---
 description: Solicita un restablecimiento de LogicalDevice.
 ms.assetid: f7655825-3de5-421f-a3e9-97d2f605affd
-title: Método reset de la CIM_LogicalDevice (administración de Hyper-V)
+title: Método de restablecimiento de la CIM_LogicalDevice (administración de Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118648540"
 ---
-# <a name="reset-method-of-the-cim_logicaldevice-class-hyper-v-management"></a>Método reset de la CIM_LogicalDevice (administración de Hyper-V)
+# <a name="reset-method-of-the-cim_logicaldevice-class-hyper-v-management"></a>Método de restablecimiento de la CIM_LogicalDevice (administración de Hyper-V)
 
-Solicita un restablecimiento de LogicalDevice. En una subclase, se podría especificar el conjunto de códigos de retorno posibles mediante un calificador ValueMap en el método . Las cadenas a las que se "traduce" el contenido de ValueMap también se pueden especificar en la subclase como calificador de matriz Values.
+Solicita un restablecimiento de LogicalDevice. En una subclase, se podría especificar el conjunto de códigos de retorno posibles, mediante un calificador ValueMap en el método . Las cadenas a las que se "traduce" el contenido de ValueMap también se pueden especificar en la subclase como calificador de matriz Values.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,13 +39,13 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -55,7 +55,7 @@ Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un er
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

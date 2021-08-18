@@ -1,7 +1,7 @@
 ---
-description: El método FileHash del objeto Installer toma la ruta de acceso a un archivo y devuelve un hash de 128 bits de ese archivo. La información hash del archivo se devuelve como un objeto record. El hash de archivo de 128 bits completo se devuelve como cuatro campos de propiedad IntegerData de 32 bits.
+description: El método FileHash del objeto Installer toma la ruta de acceso a un archivo y devuelve un hash de 128 bits de ese archivo. La información hash del archivo se devuelve como un objeto Record. El hash de archivo de 128 bits completo se devuelve como cuatro campos de propiedad IntegerData de 32 bits.
 ms.assetid: 065ffde1-4d7c-4e71-9315-7926d4cd38ed
-title: Método Installer.FileHash
+title: Installer.FileHash (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118630796"
 ---
-# <a name="installerfilehash-method"></a>Método Installer.FileHash
+# <a name="installerfilehash-method"></a>Installer.FileHash (método)
 
-El **método FileHash** del objeto [**Installer**](installer-object.md) toma la ruta de acceso a un archivo y devuelve un hash de 128 bits de ese archivo. La información hash del archivo se devuelve como un [**objeto de registro**](record-object.md). El hash de archivo de 128 bits completo se devuelve como cuatro campos de propiedad [**IntegerData de**](record-integerdata.md) 32 bits.
+El **método FileHash** del objeto [**Installer**](installer-object.md) toma la ruta de acceso a un archivo y devuelve un hash de 128 bits de ese archivo. La información hash del archivo se devuelve como un [**objeto Record**](record-object.md). El hash de archivo de 128 bits completo se devuelve como cuatro campos de propiedad [**IntegerData de**](record-integerdata.md) 32 bits.
 
 Los valores devueltos en [**el objeto Record corresponden**](record-object.md) a los cuatro campos de la estructura [**MSIFILEHASHINFO**](/windows/desktop/api/Msi/ns-msi-msifilehashinfo) devuelta [**por MsiGetFileHash.**](/windows/desktop/api/Msi/nf-msi-msigetfilehasha) La numeración de cuatro campos se basa en 1 en la [tabla MsiFileHash](msifilehash-table.md).
 
@@ -50,7 +50,7 @@ Installer.FileHash(
 *FilePath* 
 </dt> <dd>
 
-Ruta de acceso al archivo al que se va a hash.
+Ruta de acceso al archivo que se va a hash.
 
 </dd> <dt>
 
@@ -65,21 +65,21 @@ El valor de este parámetro debe ser 0 (cero).
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si se realiza correctamente, este método devuelve [**un objeto Record**](record-object.md) que contiene el hash del archivo.
+Si se realiza correctamente, este método devuelve un [**objeto Record**](record-object.md) que contiene el hash del archivo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

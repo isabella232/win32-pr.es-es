@@ -1,9 +1,9 @@
 ---
 title: atributo de control
-description: El atributo \ control\ identifica una coclase o biblioteca como un control COM, del que un sitio de contenedor derivará bibliotecas de tipos adicionales o clases de objetos de componente.
+description: El atributo \ control\ identifica una coclase o biblioteca como un control COM, del que un sitio de contenedor derivará bibliotecas de tipos adicionales o clases de objeto de componente.
 ms.assetid: c39dd4b6-743f-4888-8954-8b83584bdea5
 keywords:
-- MIDL del atributo de control
+- atributo de control MIDL
 topic_type:
 - apiref
 api_name:
@@ -42,14 +42,14 @@ library | coclass lib-or-coclassname
 *attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos que se aplican a la biblioteca [**o**](library.md) a la [**instrucción de la coclase.**](coclass.md) Separe varios atributos con comas.
+Especifica cero o más atributos que se aplican a la [**biblioteca o**](library.md) a la instrucción de [**la coclase.**](coclass.md) Separe varios atributos con comas.
 
 </dd> <dt>
 
 *lib-or-coclassname* 
 </dt> <dd>
 
-Especifica el nombre de la biblioteca [**o**](library.md) [**la coclase**](coclass.md).
+Especifica el nombre de la biblioteca [**o**](library.md) [**de la coclase**](coclass.md).
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ Instrucciones MIDL que especifican los miembros de la [**biblioteca o**](library
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo permite marcar bibliotecas de tipos que describen controles para que no se muestren en exploradores de tipos destinados a objetos novisuales.
 

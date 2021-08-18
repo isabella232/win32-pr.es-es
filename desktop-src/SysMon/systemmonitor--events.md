@@ -9,31 +9,31 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 94247cf81fcaf57f373c731cd4eaf06a3ca897ba
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c3584eed86abcaef019f0fc8f8bd794a80abca1143286317189889231bbc2cc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118882951"
 ---
 # <a name="systemmonitor-events"></a>Eventos SystemMonitor
 
-La clase [**SystemMonitor**](systemmonitor.md) tiene los siguientes eventos:
+La [**clase SystemMonitor**](systemmonitor.md) tiene los siguientes eventos:
 
--   [**OnCounterAdded**](systemmonitor-oncounteradded.md)
+-   [**OnCounter Agregado**](systemmonitor-oncounteradded.md)
 -   [**OnCounterDeleted**](-systemmonitor-oncounterdeleted.md)
 -   [**OnCounterSelected**](-systemmonitor-oncounterselected.md)
 -   [**OnDblClick**](-systemmonitor-ondblclick.md)
 -   [**OnSampleCollected**](-systemmonitor-onsamplecollected.md)
 
 > [!Note]  
-> Debe volver del controlador de eventos antes de que expire el [**intervalo de actualización**](systemmonitor-updateinterval.md) ; de lo contrario, SYSMON muestra un cuadro de mensaje que indica al usuario que no pudo muestrear los valores del contador para el intervalo de actualización anterior.
+> Debe volver del controlador de eventos antes de que [**expire el intervalo de**](systemmonitor-updateinterval.md) actualización. de lo contrario, SYSMON muestra un cuadro de mensaje que indica al usuario que no pudo muestrear los valores de contador del intervalo de actualización anterior.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Propiedad IResultsViewer QueryText (WdsView. h)
+title: Propiedad QueryText de IResultsViewer (WdsView.h)
 description: Obtiene o establece el texto de la consulta actual.
 ms.assetid: 3d6b31fa-3f17-45de-a91a-f24a6b076099
 keywords:
-- Propiedades de QueryText características de entorno heredado de Windows
-- Propiedad QueryText características de entorno heredado de Windows, interfaz IResultsViewer
-- Interfaz IResultsViewer características del entorno heredado de Windows, propiedad QueryText
+- Características heredadas del entorno de Windows querytext
+- Propiedades queryText heredadas Windows environment features , IResultsViewer (interfaz)
+- IResultsViewer interface Legacy Windows Environment Features , QueryText property
 topic_type:
 - apiref
 api_name:
@@ -18,23 +18,23 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98450114ad64ec0209b14041b8f2516dc6884b8c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5522419d14bf27a1e836c9caa16e9dabf5a122e4566fd19c868a1f72e3f61d73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118753590"
 ---
-# <a name="iresultsviewerquerytext-property"></a>IResultsViewer:: QueryText (propiedad)
+# <a name="iresultsviewerquerytext-property"></a>Propiedad IResultsViewer::QueryText
 
 > [!NOTE]
-> Windows Desktop Search 2. x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API de búsqueda de Windows](../search/-search-reference-entry-page.md) en su lugar. 
+> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la API [Windows Search en](../search/-search-reference-entry-page.md) su lugar. 
 
 Obtiene o establece el texto de la consulta actual.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -57,12 +57,12 @@ Establece el texto de la consulta actual.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP2 \[\]<br/>                                 |
-| Servidor mínimo compatible<br/> | Windows Server 2003 con \[ solo aplicaciones de escritorio de SP1\]<br/>                        |
-| Redistribuible<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>WdsView. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/>                                 |
+| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio sp1 \[\]<br/>                        |
+| Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 2.6.5<br/>                                        |
+| Header<br/>                   | <dl> <dt>WdsView.h</dt> </dl> |
 
 
 

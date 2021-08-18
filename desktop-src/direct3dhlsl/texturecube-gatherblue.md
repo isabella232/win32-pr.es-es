@@ -1,9 +1,9 @@
 ---
-title: 'Métodos TextureCube:: TextureCube GatherBlue'
-description: 'Devuelve los componentes azules de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal. | Métodos TextureCube:: TextureCube GatherBlue'
+title: Métodos de TextureCube::TextureCube GatherBlue
+description: Devuelve los componentes azules de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal. | Métodos de TextureCube::TextureCube GatherBlue
 ms.assetid: 933B1358-DD7D-477B-AC12-488C94127C92
 keywords:
-- GatherBlue métodos HLSL
+- Métodos de GatherBlue HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: ded4af0022b5dd5b225960e216af1f96d18a77a4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f0cb6786c8d9e61c7bac6357c95f18e66b29a0106697a487b26a41959e8be519
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786682"
 ---
-# <a name="texturecubegatherblue-methods"></a>TextureCube:: GatherBlue (métodos)
+# <a name="texturecubegatherblue-methods"></a>Métodos TextureCube::GatherBlue
 
-Devuelve los componentes azules de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal.
+Devuelve los componentes azules de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,11 +29,11 @@ Devuelve los componentes azules de los cuatro valores de textura que se utilizar
 
 | Método                                                             | Descripción                                                                                                                                      |
 |:-------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GatherBlue (S, Float, uint)**](tcube-gatherblue-s-float-uint-.md)  | Devuelve los componentes azules de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal, junto con el estado de asignación de mosaicos.<br/> |
+| [**GatherBlue(S,float,uint)**](tcube-gatherblue-s-float-uint-.md)  | Devuelve los componentes azules de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos.<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -34,7 +34,7 @@ Dirección de una variable que recibe el número de líneas mostradas.
 
 </dd> </dl>
 
-El servidor de Microsoft Agent desplaza automáticamente las líneas mostradas para la salida hablada en el globo de palabras. El número de líneas de un globo de palabras de caracteres se define en el Editor de caracteres de Microsoft Agent. Una aplicación no puede cambiarlo.
+El servidor de Microsoft Agent desplaza automáticamente las líneas mostradas para la salida hablada en el globo de palabras. El número de líneas de un globo de palabras de caracteres se define en el Editor de caracteres de Microsoft Agent. Una aplicación no puede cambiarla.
 
 ## <a name="see-also"></a>Consulte también
 

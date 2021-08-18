@@ -1,26 +1,26 @@
 ---
-description: Describe cómo se protege el objeto de directiva de forma predeterminada.
+description: Describe cómo se protege el objeto Policy de forma predeterminada.
 ms.assetid: e2d65ebf-5fbd-4e25-9862-a8188abb5492
-title: Protección de objetos de Directiva
+title: Protección de objetos de directiva
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 802fea6ce37a070c8230c3c9993df78a45f439bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3317d9cef2a6ff1dfa29753f9a807286d62f31abb0e8c0c9d0150ee10535a1fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118894075"
 ---
-# <a name="policy-object-protection"></a>Protección de objetos de Directiva
+# <a name="policy-object-protection"></a>Protección de objetos de directiva
 
-El objeto de [**Directiva**](policy-object.md) está protegido de forma predeterminada con la siguiente configuración:
+El [**objeto Policy**](policy-object.md) está protegido de forma predeterminada con la siguiente configuración:
 
--   El mundo del grupo local tiene \_ acceso de ejecución genérico.
--   Se concede a la Directiva todo el acceso al sistema de IDENTIFICADOres conocidos \_ \_ .
--   El administrador LOCAL del grupo local \_ tiene \_ acceso genérico de lectura, \_ escritura genérica y \_ ejecución genérica.
--   El administrador LOCAL \_ del grupo se asigna como propietario y grupo principal de este objeto.
+-   El grupo local WORLD tiene acceso \_ GENERIC EXECUTE.
+-   Al sistema de identificadores conocido se le concede POLICY \_ ALL \_ ACCESS.
+-   El administrador local del grupo local \_ tiene acceso DE LECTURA \_ GENÉRICA, ESCRITURA GENÉRICA y EJECUCIÓN \_ \_ GENÉRICA.
+-   El administrador local \_ del grupo se asigna como propietario y grupo principal de este objeto.
 
-No se puede crear ni destruir el objeto de [**Directiva**](policy-object.md) .
+El [**objeto Policy**](policy-object.md) no se puede crear ni destruir.
 
  
 

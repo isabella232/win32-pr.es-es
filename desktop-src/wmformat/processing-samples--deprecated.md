@@ -1,6 +1,6 @@
 ---
 title: Ejemplos de procesamiento
-description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP API (API de códecs de audio y vídeo multimedia y DSP). | Ejemplos de procesamiento
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (API de códecs de audio y vídeo multimedia y DSP). | Ejemplos de procesamiento
 ms.assetid: e1a803dd-fbc8-4edb-8836-cc702ab7a8de
 keywords:
 - Formato multimedia de windows de ejemplos de procesamiento
@@ -21,7 +21,7 @@ ms.locfileid: "118700193"
 ---
 # <a name="processing-samples"></a>Ejemplos de procesamiento
 
-Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec y LAS API de DSP.](/previous-versions//dd464626(v=vs.85))
+Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP API (API](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
 
  
 

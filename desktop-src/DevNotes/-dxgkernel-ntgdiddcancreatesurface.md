@@ -1,7 +1,7 @@
 ---
 description: Indica si el controlador puede crear una superficie de la descripción de la superficie especificada.
 ms.assetid: 4626163b-3070-4246-9a04-0b3438fc7057
-title: Función NtGdiDdCanCreateSurface (Ntgdi. h)
+title: Función NtGdiDdCanCreateSurface (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: c45f3e93bff409f68e5ba7fbe441a398e80b0e7a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6ed65be4f212ff656a282cc1c83f67968bdf12c9c031e5651a0b82c076593625
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104495911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956724"
 ---
-# <a name="ntgdiddcancreatesurface-function"></a>NtGdiDdCanCreateSurface función)
+# <a name="ntgdiddcancreatesurface-function"></a>Función NtGdiDdCanCreateSurface
 
-\[Esta función está sujeta a cambios en cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios del sistema operativo y ocultan muchas otras dificultades para interactuar directamente con los controladores de pantalla.\]
+\[Esta función está sujeta a cambios con cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios del sistema operativo y ocultan muchas otras dificultades implicadas en la interacción directa con los controladores de pantalla.\]
 
 Indica si el controlador puede crear una superficie de la descripción de la superficie especificada.
 
@@ -45,17 +45,17 @@ DWORD APIENTRY NtGdiDdCanCreateSurface(
 
 <dl> <dt>
 
-*hDirectDraw* \[ de\]
+*hDirectDraw* \[ En\]
 </dt> <dd>
 
-Identificador de la [**estructura \_ \_ global DD DIRECTDRAW**](/windows/win32/api/ddrawint/ns-ddrawint-dd_directdraw_global) que representa el objeto DIRECTDRAW.
+Identificador de la [**estructura \_ DD DIRECTDRAW \_ GLOBAL**](/windows/win32/api/ddrawint/ns-ddrawint-dd_directdraw_global) que representa el objeto DirectDraw.
 
 </dd> <dt>
 
 *puCanCreateSurfaceData* \[ in, out\]
 </dt> <dd>
 
-Puntero a una estructura de [**\_ CANCREATESURFACEDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_cancreatesurfacedata) de tipo dd que contiene la información necesaria para que el controlador determine si se puede crear una superficie.
+Puntero a una [**estructura DD \_ CANCREATESURFACEDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_cancreatesurfacedata) que contiene la información necesaria para que el controlador determine si se puede crear una superficie.
 
 </dd> </dl>
 
@@ -67,8 +67,8 @@ Puntero a una estructura de [**\_ CANCREATESURFACEDATA**](/windows/win32/api/ddr
 
 | Código devuelto                                                                                              | Descripción                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_controlador DDHAL \_ controlado**</dt> </dl>    | El controlador ha realizado la operación y ha devuelto un código de retorno válido para esa operación. Si este código es DD \_ Aceptar, DirectDraw o Direct3D continúa con la función. De lo contrario, DirectDraw o Direct3D devuelve el código de error proporcionado por el controlador y anula la función.<br/>                                                                                 |
-| <dl> <dt>**\_NOTHANDLED del controlador DDHAL \_**</dt> </dl> | El controlador no tiene ningún comentario en la operación solicitada. Si el controlador debe haber implementado una devolución de llamada determinada, DirectDraw o Direct3D informa de una condición de error. De lo contrario, DirectDraw o Direct3D controla la operación como si la devolución de llamada del controlador no se hubiera definido ejecutando la implementación independiente de dispositivos DirectDraw o Direct3D.<br/> |
+| <dl> <dt>**CONTROLADOR DDHAL \_ \_ MANIPULADO**</dt> </dl>    | El controlador ha realizado la operación y ha devuelto un código de retorno válido para esa operación. Si este código es correcto para \_ DD, DirectDraw o Direct3D continúa con la función . De lo contrario, DirectDraw o Direct3D devuelven el código de error proporcionado por el controlador y anulan la función.<br/>                                                                                 |
+| <dl> <dt>**CONTROLADOR DDHAL \_ \_ NO CONTROLADA**</dt> </dl> | El controlador no tiene ningún comentario sobre la operación solicitada. Si el controlador debe haber implementado una devolución de llamada determinada, DirectDraw o Direct3D notifica una condición de error. De lo contrario, DirectDraw o Direct3D controla la operación como si la devolución de llamada del controlador no se hubiera definido mediante la ejecución de la implementación independiente del dispositivo DirectDraw o Direct3D.<br/> |
 
 
 
@@ -82,15 +82,15 @@ Puntero a una estructura de [**\_ CANCREATESURFACEDATA**](/windows/win32/api/ddr
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Compatibilidad con clientes de nivel inferior de gráficos](-dxgkernel-low-level-client-support.md)
+[Compatibilidad con clientes de bajo nivel de gráficos](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

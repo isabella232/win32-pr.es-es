@@ -39,11 +39,11 @@ propVal = Session.ComponentRequestState
 
 Nombre de cadena requerido del elemento de componente, clave principal de la tabla Component.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Estado de selección        | Value | Descripción                                                    |
+| Estado de selección        | Valor | Descripción                                                    |
 |------------------------|-------|----------------------------------------------------------------|
 | Null                   | Null  | Solicita que no se haya realizado ninguna acción para este elemento.                |
 | msiInstallStateAbsent  | 2     | El elemento se va a quitar.                                         |
@@ -61,7 +61,7 @@ Si se produce un error en la propiedad , puede obtener información de error ext
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |

@@ -61,7 +61,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método no convierte los valores de VT \_ LPWSTR en VT \_ BSTR. Muchas aplicaciones o componentes externos que se comunican con la aplicación, como algunas aplicaciones de shell, usan la **interfaz IPropertyStore.** Este método proporciona una manera rápida y sencilla de intercambiar datos con estos programas.
 
@@ -78,11 +78,11 @@ Este método se admite en Windows Vista y versiones posteriores de Windows.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
+[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::CopyValuesFromPropertyStore**](iportabledevicevalues-copyvaluesfrompropertystore.md)

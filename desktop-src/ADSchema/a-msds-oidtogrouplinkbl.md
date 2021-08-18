@@ -4,7 +4,7 @@ description: Vínculo hacia atrás para ms-DS-OIDToGroup-Link. Identifica la dir
 ms.assetid: e8c52b91-faba-4b8e-a378-70b92e2aa6cb
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-OIDToGroup-Link-BL attribute AD Schema
+- Esquema de AD del atributo ms-DS-OIDToGroup-Link-BL
 - Esquema de AD del atributo msDS-OIDToGroupLinkBl
 topic_type:
 - apiref
@@ -27,16 +27,16 @@ Vínculo hacia atrás [**para ms-DS-OIDToGroup-Link**](a-msds-oidtogrouplink.md)
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | ms-DS-OIDToGroup-Link-BL                |
 | Ldap-Display-Name | msDS-OIDToGroupLinkBl                   |
 | Size              | \-                                      |
-| Actualizar privilegios  | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2052                 |
 | System-Id-Guid    | 1a3d0d20-5844-4199-ad25-0f5039a76ada    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -49,14 +49,14 @@ Vínculo hacia atrás [**para ms-DS-OIDToGroup-Link**](a-msds-oidtogrouplink.md)
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2165                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -70,14 +70,14 @@ Vínculo hacia atrás [**para ms-DS-OIDToGroup-Link**](a-msds-oidtogrouplink.md)
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | 2165                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |

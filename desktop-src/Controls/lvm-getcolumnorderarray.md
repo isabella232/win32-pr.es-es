@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_GETCOLUMNORDERARRAY (commctrl. h)
-description: Obtiene el orden de izquierda a derecha actual de las columnas en un control de vista de lista. Puede enviar este mensaje explícitamente o utilizar la \_ macro GetColumnOrderArray de ListView.
+title: LVM_GETCOLUMNORDERARRAY mensaje (Commctrl.h)
+description: Obtiene el orden de las columnas de izquierda a derecha actual en un control de vista de lista. Puede enviar este mensaje explícitamente o usar la \_ macro ListView GetColumnOrderArray.
 ms.assetid: d4636aa8-c61e-4467-abc7-eea897bf370e
 keywords:
-- LVM_GETCOLUMNORDERARRAY controles de mensajes de Windows
+- LVM_GETCOLUMNORDERARRAY controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aee387f65abd3f30826e361778d5acac02dfab7c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea54c633c7ffc9bc580609678e8ba5f62e29429aaea6f866bb7d72b6ea326eb2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118411501"
 ---
-# <a name="lvm_getcolumnorderarray-message"></a>\_Mensaje GETCOLUMNORDERARRAY LVM
+# <a name="lvm_getcolumnorderarray-message"></a>Mensaje \_ GETCOLUMNORDERARRAY de LVM
 
-Obtiene el orden de izquierda a derecha actual de las columnas en un control de vista de lista. Puede enviar este mensaje explícitamente o utilizar la [**macro \_ GetColumnOrderArray de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getcolumnorderarray) .
+Obtiene el orden de las columnas de izquierda a derecha actual en un control de vista de lista. Puede enviar este mensaje explícitamente o usar la macro [**\_ ListView GetColumnOrderArray.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getcolumnorderarray)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,30 +32,30 @@ Obtiene el orden de izquierda a derecha actual de las columnas en un control de 
 *wParam* 
 </dt> <dd>
 
-El número de columnas en el control de vista de lista.
+Número de columnas del control list-view.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a una matriz de enteros que recibe los valores de índice de las columnas en el control de vista de lista. La matriz debe ser lo suficientemente grande como para contener los elementos *wParam* .
+Puntero a una matriz de enteros que recibe los valores de índice de las columnas del control list-view. La matriz debe ser lo suficientemente grande como para contener *elementos wParam.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si es correcto, devuelve un valor distinto de cero y el búfer de *lParam* recibe el índice de columna de cada columna del control en el orden en que aparecen de izquierda a derecha. De lo contrario, el valor devuelto es cero.
+Si se realiza correctamente, devuelve un valor distinto de cero y el búfer de *lParam* recibe el índice de columna de cada columna del control en el orden en que aparecen de izquierda a derecha. De lo contrario, el valor devuelto es cero.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

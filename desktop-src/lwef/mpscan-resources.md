@@ -4,7 +4,7 @@ description: Información de recursos que se pasa durante una operación de exam
 ms.assetid: D97712A6-547D-44CC-B55D-039A5CCE20BF
 keywords:
 - MPSCAN_RESOURCES estructura heredada de Windows environment
-- PMPSCAN_RESOURCES puntero de estructura heredado Windows características del entorno
+- PMPSCAN_RESOURCES puntero de estructura heredado Windows environment Features
 topic_type:
 - apiref
 api_name:
@@ -68,7 +68,7 @@ Matriz de recursos. Vea [**MPRESOURCE \_ INFO**](mpresource-info.md).
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
@@ -76,7 +76,7 @@ Matriz de recursos. Vea [**MPRESOURCE \_ INFO**](mpresource-info.md).
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

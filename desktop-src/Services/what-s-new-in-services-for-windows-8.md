@@ -1,19 +1,19 @@
 ---
-description: Windows 8 y Windows Server 2012 incluyen las siguientes capacidades nuevas para los servicios de.
+description: Windows 8 y Windows Server 2012 incluyen las siguientes nuevas funcionalidades para los servicios.
 ms.assetid: 42BC7325-4FAC-493E-95AC-AEF660F499C0
-title: Novedades de servicios para Windows 8
+title: Novedades de los servicios para Windows 8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0087739c503a05875ba1a7eac5f77d33d8d1abac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc5b3b97bda816a2c8676d55d670deecea3222482776a01e8dccf314326a608a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118888137"
 ---
-# <a name="whats-new-in-services-for-windows-8"></a>Novedades de servicios para Windows 8
+# <a name="whats-new-in-services-for-windows-8"></a>Novedades de los servicios para Windows 8
 
-Windows 8 y Windows Server 2012 incluyen las siguientes capacidades nuevas para los servicios de.
+Windows 8 y Windows Server 2012 incluyen las siguientes nuevas funcionalidades para los servicios.
 
 ## <a name="new-service-functions"></a>Nuevas funciones de servicio
 
@@ -33,9 +33,9 @@ Windows 8 y Windows Server 2012 incluyen las siguientes capacidades nuevas para 
 
 | Elemento de API                                                                                     | Descripción                                                                                                                                                   |
 |-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**HandlerEx**](/windows/desktop/api/WinSvc/nc-winsvc-lphandler_function_ex)<br/>                                                       | Se ha agregado **\_ \_ USERMODEREBOOT de control de servicio**.<br/>                                                                                                        |
-| [**Estado del servicio \_**](/windows/desktop/api/Winsvc/ns-winsvc-service_status)<br/>                                        | El **servicio agregado \_ acepta \_ USERMODEREBOOT**.<br/>                                                                                                         |
-| [**\_elemento de \_ \_ datos específico de DESENCADENAdor de servicio \_**](/windows/desktop/api/winsvc/ns-winsvc-service_trigger_specific_data_item)<br/> | Se han agregado el **\_ \_ \_ \_ nivel de tipo** de datos de desencadenador de servicio, el tipo de datos de **\_ desencadenador de servicio \_ \_ \_ \_ any** y el **tipo de \_ \_ datos \_ \_ palabra clave \_ All**.<br/> |
+| [**HandlerEx**](/windows/desktop/api/WinSvc/nc-winsvc-lphandler_function_ex)<br/>                                                       | Se ha agregado **CONTROL \_ DE SERVICIO \_ USERMODEREBOOT.**<br/>                                                                                                        |
+| [**ESTADO DEL \_ SERVICIO**](/windows/desktop/api/Winsvc/ns-winsvc-service_status)<br/>                                        | Se ha **agregado SERVICE \_ ACCEPT \_ USERMODEREBOOT**.<br/>                                                                                                         |
+| [**ELEMENTO DE \_ DATOS ESPECÍFICO DEL DESENCADENADOR DE \_ \_ \_ SERVICIO**](/windows/desktop/api/winsvc/ns-winsvc-service_trigger_specific_data_item)<br/> | Se ha agregado **SERVICE TRIGGER DATA TYPE \_ \_ \_ \_ LEVEL**, **SERVICE TRIGGER DATA TYPE KEYWORD \_ \_ \_ \_ \_ ANY** y **SERVICE TRIGGER DATA TYPE KEYWORD \_ \_ \_ \_ \_ ALL**.<br/> |
 
 
 

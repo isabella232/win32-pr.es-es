@@ -1,7 +1,7 @@
 ---
 description: Recupera un puntero de interfaz a un proveedor de almacenamiento.
 ms.assetid: 22b5b003-82fa-48f1-96db-a8d6dd70d6d1
-title: Función PStoreCreateInstance (pstore. h)
+title: Función PStoreCreateInstance (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: ce61a0d320b34ad09f4801d4ee5b53625e61501b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2e32319e9585f5d1a80d0473c6ce27167f0ec181b81b974c526371b29c018b03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955694"
 ---
-# <a name="pstorecreateinstance-function"></a>PStoreCreateInstance función)
+# <a name="pstorecreateinstance-function"></a>Función PStoreCreateInstance
 
-\[El almacenamiento protegido (pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para las operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede no estar disponible en las versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura proporcionada por las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[Protected Storage (Pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede que no esté disponible en versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura que proporcionan las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
-\[Esta función puede modificarse o no estar disponible en versiones futuras de Windows. Use las funciones **CryptProtectData** y **CryptUnprotectData** en lugar de esta función.\]
+\[Esta función puede modificarse o no estar disponible en versiones futuras de Windows. Use las **funciones CryptProtectData** y **CryptUnprotectData** en lugar de esta función.\]
 
 Recupera un puntero de interfaz a un proveedor de almacenamiento.
 
@@ -46,41 +46,41 @@ HRESULT __stdcall PStoreCreateInstance(
 
 <dl> <dt>
 
-*ppProvider* \[ enuncia\]
+*ppProvider* \[ out\]
 </dt> <dd>
 
-Puntero al puntero de interfaz recuperado para el proveedor de almacenamiento. Cuando termine de usar la interfaz, disminuya su recuento de referencias mediante una llamada a su método [**IUnknown:: Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) . Este parámetro no puede ser **null**.
+Puntero al puntero de interfaz recuperado para el proveedor de almacenamiento. Cuando termine de usar la interfaz , decrete su recuento de referencias mediante una llamada a su [**método IUnknown::Release.**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) Este parámetro no puede ser **NULL.**
 
 </dd> <dt>
 
-*pProviderID* \[ de\]
+*pProviderID* \[ En\]
 </dt> <dd>
 
-Puntero al **GUID** que identifica el proveedor de almacenamiento. Si este parámetro es **null**, se usa el proveedor de almacenamiento base.
+Puntero al **GUID que** identifica el proveedor de almacenamiento. Si este parámetro es **NULL,** se usa el proveedor de almacenamiento base.
 
 </dd> <dt>
 
-*conservado* \[ de\]
+*pReserved* \[ En\]
 </dt> <dd>
 
-Sector debe ser **null**.
+Reservado; debe ser **NULL.**
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Sector debe ser cero.
+Reservado; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es **HRESULT**. Un valor de **S \_ correcto** indica que la función se realizó correctamente.
+El valor devuelto es **un HRESULT.** Un valor de **S \_ OK indica** que la función se ha realizado correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene biblioteca de importación asociada. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene ninguna biblioteca de importación asociada; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,7 +88,7 @@ Esta función no tiene biblioteca de importación asociada. debe llamarlo median
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Pstore. h</dt> </dl>    |
+| Encabezado<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | Archivo DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 

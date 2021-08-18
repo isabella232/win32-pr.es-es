@@ -1,5 +1,5 @@
 ---
-title: Usar controles de dirección IP
+title: Uso de controles de dirección IP
 description: Los ejemplos de código de esta sección muestran cómo realizar tareas asociadas a controles de dirección IP.
 ms.assetid: 864B09F6-6F62-418B-AEDB-127FA6C5961D
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118407914"
 ---
-# <a name="using-ip-address-controls"></a>Usar controles de dirección IP
+# <a name="using-ip-address-controls"></a>Uso de controles de dirección IP
 
 Los ejemplos de código de esta sección muestran cómo realizar tareas asociadas a controles de dirección IP.
 

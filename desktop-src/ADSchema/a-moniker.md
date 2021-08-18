@@ -5,7 +5,7 @@ ms.assetid: e1ddcf9e-f8db-4aa0-a387-352a467a5b2c
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD del atributo Moniker
-- Esquema de AD del atributo moniker
+- Esquema de AD de atributo de moniker
 topic_type:
 - apiref
 api_name:
@@ -27,16 +27,16 @@ Nombre o ruta de acceso de un objeto COM.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Pérez                                               |
 | Ldap-Display-Name | moniker                                               |
 | Size              | \-                                                    |
-| Privilegio actualizar  | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.82                                 |
 | System-Id-Guid    | bf9679c7-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -53,14 +53,14 @@ Nombre o ruta de acceso de un objeto COM.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
-| System-Only            | False                                                                                                   |
-| Es de un solo valor       | False                                                                                                   |
-| Está indexado             | False                                                                                                   |
-| En el catálogo global      | False                                                                                                   |
+| System-Only            | Falso                                                                                                   |
+| Es de un solo valor       | Falso                                                                                                   |
+| Está indexado             | Falso                                                                                                   |
+| En el catálogo global      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
@@ -74,14 +74,14 @@ Nombre o ruta de acceso de un objeto COM.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
-| System-Only            | False                                                                                                   |
-| Es de un solo valor       | False                                                                                                   |
-| Está indexado             | False                                                                                                   |
-| En el catálogo global      | False                                                                                                   |
+| System-Only            | Falso                                                                                                   |
+| Es de un solo valor       | Falso                                                                                                   |
+| Está indexado             | Falso                                                                                                   |
+| En el catálogo global      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
@@ -95,14 +95,14 @@ Nombre o ruta de acceso de un objeto COM.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
-| System-Only            | False                                                                                                   |
-| Es de un solo valor       | False                                                                                                   |
-| Está indexado             | False                                                                                                   |
-| En el catálogo global      | False                                                                                                   |
+| System-Only            | Falso                                                                                                   |
+| Es de un solo valor       | Falso                                                                                                   |
+| Está indexado             | Falso                                                                                                   |
+| En el catálogo global      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
@@ -116,14 +116,14 @@ Nombre o ruta de acceso de un objeto COM.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
-| System-Only            | False                                                                                                   |
-| Es de un solo valor       | False                                                                                                   |
-| Está indexado             | False                                                                                                   |
-| En el catálogo global      | False                                                                                                   |
+| System-Only            | Falso                                                                                                   |
+| Es de un solo valor       | Falso                                                                                                   |
+| Está indexado             | Falso                                                                                                   |
+| En el catálogo global      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
@@ -137,14 +137,14 @@ Nombre o ruta de acceso de un objeto COM.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
-| System-Only            | False                                                                                                   |
-| Es de un solo valor       | False                                                                                                   |
-| Está indexado             | False                                                                                                   |
-| En el catálogo global      | False                                                                                                   |
+| System-Only            | Falso                                                                                                   |
+| Es de un solo valor       | Falso                                                                                                   |
+| Está indexado             | Falso                                                                                                   |
+| En el catálogo global      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
@@ -158,14 +158,14 @@ Nombre o ruta de acceso de un objeto COM.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
-| System-Only            | False                                                                                                   |
-| Es de un solo valor       | False                                                                                                   |
-| Está indexado             | False                                                                                                   |
-| En el catálogo global      | False                                                                                                   |
+| System-Only            | Falso                                                                                                   |
+| Es de un solo valor       | Falso                                                                                                   |
+| Está indexado             | Falso                                                                                                   |
+| En el catálogo global      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |

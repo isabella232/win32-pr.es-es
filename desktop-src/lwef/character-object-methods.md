@@ -13,7 +13,7 @@ ms.locfileid: "118480319"
 ---
 # <a name="character-object-methods"></a>Métodos de objeto Character
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 El servidor también expone métodos para cada carácter de una [**colección Characters.**](/windows/desktop/lwef/the-characters-object) Se admiten los métodos siguientes:
 
@@ -52,7 +52,7 @@ Para usar un método, haga referencia al carácter de la colección. En VBScript
 
 
 
-Para simplificar la sintaxis del código, puede definir una variable de objeto y establecerla para que haga referencia a un objeto de carácter en la [**colección Characters.**](/windows/desktop/lwef/the-characters-object) a continuación, puede usar la variable para hacer referencia a métodos o propiedades del carácter. En el ejemplo siguiente se muestra cómo puede hacerlo mediante la instrucción Visual Basic Set:
+Para simplificar la sintaxis del código, puede definir una variable de objeto y establecerla para que haga referencia a un objeto de caracteres en la [**colección Characters.**](/windows/desktop/lwef/the-characters-object) a continuación, puede usar la variable para hacer referencia a métodos o propiedades del carácter. En el ejemplo siguiente se muestra cómo puede hacerlo mediante la instrucción Visual Basic Set:
 
 
 ```
@@ -103,7 +103,7 @@ En Visual Basic 5.0, también puede crear la referencia declarando la variable c
 
 
 
-Declarar el objeto de tipo IAgentCtlCharacterEx habilita el enlace temprano en el objeto, lo que da como resultado un mejor rendimiento.
+Declarar el objeto de tipo IAgentCtlCharacterEx permite el enlace temprano en el objeto, lo que da como resultado un mejor rendimiento.
 
 En VBScript, no se puede declarar una referencia como un tipo determinado. Sin embargo, simplemente puede declarar la referencia de variable:
 

@@ -1,5 +1,5 @@
 ---
-description: Separador del grupo de propiedades usado en las listas de propiedades para separar los archivos de música de otros tipos. No use esta propiedad para obtener o establecer valores. Solo está pensado como marcador.
+description: Separador de grupo de propiedades que se usa en las listas de propiedades para separar los archivos de música de otros tipos. No use esta propiedad para obtener o establecer valores. Solo está pensado como un marcador.
 ms.assetid: 49d889b3-4827-4c00-9b0b-2082e895281a
 title: System.PropGroup. Música
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118465666"
 ---
 # <a name="systempropgroupmusic"></a>System.PropGroup. Música
 
-Separador del grupo de propiedades usado en las listas de propiedades para separar los archivos de música de otros tipos. No use esta propiedad para obtener o establecer valores. Solo está pensado como marcador.
+Separador de grupo de propiedades que se usa en las listas de propiedades para separar los archivos de música de otros tipos. No use esta propiedad para obtener o establecer valores. Solo está pensado como un marcador.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 

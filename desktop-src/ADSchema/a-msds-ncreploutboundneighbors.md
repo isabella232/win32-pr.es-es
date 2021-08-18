@@ -27,7 +27,7 @@ Asociados de replicación para esta partición. Este servidor envía datos de re
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | ms-DS-NC-Repl-Outbound-Neighbors            |
 | Ldap-Display-Name | msDS-NCReplOutboundNeighbors                |
@@ -36,7 +36,7 @@ Asociados de replicación para esta partición. Este servidor envía datos de re
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1706                     |
 | System-Id-Guid    | 855f2ef5-a1c5-4cc4-ba6d-32522848b61f        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,14 +53,14 @@ Asociados de replicación para esta partición. Este servidor envía datos de re
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -74,14 +74,14 @@ Asociados de replicación para esta partición. Este servidor envía datos de re
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -95,14 +95,14 @@ Asociados de replicación para esta partición. Este servidor envía datos de re
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -116,14 +116,14 @@ Asociados de replicación para esta partición. Este servidor envía datos de re
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -137,14 +137,14 @@ Asociados de replicación para esta partición. Este servidor envía datos de re
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -158,14 +158,14 @@ Asociados de replicación para esta partición. Este servidor envía datos de re
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Es de un solo valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |

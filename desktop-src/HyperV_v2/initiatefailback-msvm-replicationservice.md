@@ -118,7 +118,7 @@ Este método devuelve uno de los valores siguientes.
 **Archivo no encontrado** (32779)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 **InitiateFailback funciona** en una máquina virtual de recuperación y lleva la máquina virtual al *estado WaitingForFailback.* **InitiateFailback** reenvía la solicitud de conmutación por recuperación al proveedor correspondiente, que vuelve a sincronizar el punto de recuperación desde el lado principal nuevo. Una vez completada la conmutación por recuperación del punto de recuperación solicitado, el estado de replicación pasa *al estado FailbackCompleted.*
 
@@ -126,7 +126,7 @@ Este método devuelve uno de los valores siguientes.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                 |
@@ -136,7 +136,7 @@ Este método devuelve uno de los valores siguientes.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -41,7 +41,7 @@ Donde:
 
 [**TextureFilename es**](texturefilename.md) un objeto de datos opcional. Si este objeto no está presente, la cara no tiene texto.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

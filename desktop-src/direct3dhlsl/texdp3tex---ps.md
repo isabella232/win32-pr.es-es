@@ -1,6 +1,6 @@
 ---
-title: texdp3tex-PS
-description: Realiza un producto de tres componentes y usa el resultado para realizar una búsqueda de texturas 1D.
+title: dp3tex- ps
+description: Realiza un producto de puntos de tres componentes y usa el resultado para realizar una búsqueda de textura 1D.
 ms.assetid: vs|directx_sdk|~\texdp3tex___ps.htm
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,46 +9,46 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: dfe74dd0a73bc47cd2855d35b239e80a1b5153c1
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 91014b52b04417bbb23e76988beeb0bd4c473bd1e1d116433a8fd1dbf09a47ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104996856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118788041"
 ---
-# <a name="texdp3tex---ps"></a>texdp3tex-PS
+# <a name="texdp3tex---ps"></a>dp3tex- ps
 
-Realiza un producto de tres componentes y usa el resultado para realizar una búsqueda de texturas 1D.
+Realiza un producto de puntos de tres componentes y usa el resultado para realizar una búsqueda de textura 1D.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| texdp3tex DST, src |
+| dp3tex dst, src |
 |--------------------|
 
 
 
- 
+ 
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| texdp3tex             |      | x    | x    |      |      |      |       |      |       |
+| dp3tex             |      | x    | x    |      |      |      |       |      |       |
 
 
 
- 
+ 
 
-Los registros de texturas deben usar la siguiente secuencia.
+Los registros de textura deben usar la secuencia siguiente.
 
 
 ```
@@ -64,15 +64,15 @@ texdp3tex t(m), t(n)  // where m > n
 
 
 
-Aquí encontrará más detalles sobre cómo se realiza la búsqueda de productos y texturas de punto.
+Este es un detalle más detallado sobre cómo se realizan las búsquedas de producto de punto y textura.
 
-La instrucción texdp3tex realiza un producto de tres componentes.
+La instrucción texdp3tex realiza un producto de punto de tres componentes.
 
-u ' = TextureCoordinates (Stage m)<sub>UVW</sub> \* t (n)<sub>RGB</sub>
+u' = TextureCoordinates(stage m)<sub>UVW</sub> \* t(n)<sub>RGB</sub>
 
-El resultado se usa para el muestreo de la textura en la fase de textura m mediante la realización de una búsqueda 1D.
+El resultado se usa para muestrear la textura en la fase de textura m realizando una búsqueda 1D.
 
-t (m)<sub>RGBA</sub> = TextureSample (fase m)<sub>RGBA</sub> mediante (u ', 0,0) como coordenadas
+t(m)<sub>RGBA</sub> = TextureSample(stage m)<sub>RGBA</sub> using (u',0,0) as coordinates
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -81,9 +81,9 @@ t (m)<sub>RGBA</sub> = TextureSample (fase m)<sub>RGBA</sub> mediante (u ', 0,0)
 [Instrucciones del sombreador de píxeles](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

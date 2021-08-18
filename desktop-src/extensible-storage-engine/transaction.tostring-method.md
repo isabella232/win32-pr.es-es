@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: método Transaction. ToString'
-title: Transaction. ToString (método)
+description: Más información sobre el método Transaction.ToString
+title: Método Transaction.ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Transaction.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.transaction.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f22a3f608e5e6a8a8b2711ca552ff0238c88212c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e0ab68e4637fe83ebffc1acf0eb6f177b97324530ec7a8d7b32d14a071c5c56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117890346"
 ---
-# <a name="transactiontostring-method"></a>Transaction. ToString (método)
+# <a name="transactiontostring-method"></a>Método Transaction.ToString
 
-Devuelve una [cadena](/dotnet/api/system.string) que representa la [transacción](./transaction-class.md)actual.
+Devuelve una [cadena que](/dotnet/api/system.string) representa la transacción [actual.](./transaction-class.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,8 +56,8 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Cadena](/dotnet/api/system.string) que representa la [transacción](./transaction-class.md)actual.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Cadena [que](/dotnet/api/system.string) representa la transacción [actual.](./transaction-class.md)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -67,4 +67,4 @@ Tipo: [System. String](/dotnet/api/system.string)
 
 [Miembros de transacción](./transaction-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

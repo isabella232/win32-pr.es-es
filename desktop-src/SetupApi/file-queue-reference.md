@@ -4,12 +4,12 @@ ms.assetid: 44396660-f399-43af-89db-4c2dd9871636
 title: Referencia de cola de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 972081f9d55ec24e17548fd0bf52aee4bc62bb1e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6701080f245d748f5e30a7d0ea494f07c306bfaa04d0c1efc88b82e879cf755b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118886929"
 ---
 # <a name="file-queue-reference"></a>Referencia de cola de archivos
 

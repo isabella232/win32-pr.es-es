@@ -40,7 +40,7 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores posibles son 1 (argumentos de evento incluidos) y 0 (valor predeterminado, argumentos de evento excluidos).
 
@@ -48,7 +48,7 @@ Los valores posibles son 1 (argumentos de evento incluidos) y 0 (valor predeterm
 
 
 
-| Etiqueta | Value |
+| Etiqueta | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

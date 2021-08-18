@@ -21,7 +21,7 @@ La API de supervisión del estado de la aplicación Hyper-V define las siguiente
 
 | Tema                                                                                        | Descripción                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**HeartbeatComponent de Msvm \_**](msvm-heartbeatcomponent.md)<br/>                       | Representa el estado del servicio de latidos, que es responsable de supervisar el estado de una máquina virtual informando de un latido a intervalos regulares.<br/> |
+| [**HeartbeatComponent de Msvm \_**](msvm-heartbeatcomponent.md)<br/>                       | Representa el estado del servicio de latido, que es responsable de supervisar el estado de una máquina virtual informando de un latido a intervalos regulares.<br/> |
 | [**Msvm \_ HeartbeatComponentSettingData**](msvm-heartbeatcomponentsettingdata.md)<br/> | Representa el estado configurado del servicio de latido.<br/>                                                                                                        |
 
 

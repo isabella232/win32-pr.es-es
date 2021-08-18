@@ -54,7 +54,7 @@ Las propiedades del efecto de enderez se definen mediante la [**enumeración \_ 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------------|---------------------------------------------------|
 | Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
 | Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |

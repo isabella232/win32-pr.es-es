@@ -31,7 +31,7 @@ No hay restricciones de secuencia.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La acción RegisterUser no se realiza durante una instalación administrativa. Si la acción [ValidateProductID](validateproductid-action.md)no valida el identificador de producto especificado por el usuario , la propiedad [**ProductID**](productid.md) no se establece y esta acción no hace nada.
 

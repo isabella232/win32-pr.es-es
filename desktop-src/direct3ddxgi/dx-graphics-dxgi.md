@@ -13,7 +13,7 @@ ms.locfileid: "118796619"
 ---
 # <a name="dxgi"></a>DXGI
 
-Microsoft Infraestructura de gráficos de DirectX (DXGI) controla la enumeración de adaptadores de gráficos, la enumeración de modos de presentación, la selección de formatos de búfer, el uso compartido de recursos entre procesos (por ejemplo, entre aplicaciones y Administrador de ventanas de escritorio (DWM)) y la presentación de fotogramas representados en una ventana o monitor para su presentación.
+Microsoft Infraestructura de gráficos de DirectX (DXGI) controla la enumeración de adaptadores de gráficos, la enumeración de modos de presentación, la selección de formatos de búfer, el uso compartido de recursos entre procesos (por ejemplo, entre aplicaciones y el Administrador de ventanas de escritorio (DWM)) y la presentación de fotogramas representados en una ventana o monitor para su presentación.
 
 Direct3D 10, Direct3D 11 y Direct3D 12 usan DXGI.
 
@@ -23,7 +23,7 @@ Este conjunto de documentación contiene información sobre la programación con
 
 
 
-| Requisito                                  | Value                                                                                               |
+| Requisito                                  | Valor                                                                                               |
 |-----------------------------------|------------------------------------------------------------------------------------------------|
 | Entornos de tiempo de ejecución compatibles    | <dl> <dt>Windows/C++</dt> </dl>         |
 | Idiomas de programación recomendados | C/C++                                                                                          |

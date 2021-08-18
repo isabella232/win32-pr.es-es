@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentException'
-title: Constructor EsentException (Microsoft. ISAM. esent)
+description: 'Más información sobre: Constructor de EsentException'
+title: Constructor EsentException (Microsoft.Isam.Esent)
 TOCTitle: 'EsentException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.EsentException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.esentexception.esentexception(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ce79844bcc5efdf4e49cde4c25929bdb93c0c2e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44824fdd8c423e187af7452b93faac19d4c16f8a037d9ee0dc79093c3bf8a026
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118778834"
 ---
 # <a name="esentexception-constructor"></a>Constructor de EsentException
 
 Inicializa una nueva instancia de la clase EsentException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent](./microsoft.isam.esent-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent](./microsoft.isam.esent-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,6 +56,6 @@ protected EsentException()
 
 [Miembros de EsentException](./esentexception-members.md)
 
-[Sobrecarga EsentException](./esentexception-constructor.md)
+[Sobrecarga de EsentException](./esentexception-constructor.md)
 
-[Espacio de nombres Microsoft. ISAM. esent](./microsoft.isam.esent-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent](./microsoft.isam.esent-namespace.md)

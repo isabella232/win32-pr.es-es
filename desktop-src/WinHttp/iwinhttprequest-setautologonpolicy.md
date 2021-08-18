@@ -49,9 +49,9 @@ Especifica la directiva de inicio de sesión automático actual.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es **S \_ OK si se** ejecuta correctamente o un valor de error en caso contrario.
+El valor devuelto es **S \_ OK on** success o un valor de error de lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La directiva predeterminada es [**AutoLogonPolicy \_ OnlyIfBypassProxy.**](winhttprequestautologonpolicy.md)
 
@@ -87,7 +87,7 @@ HttpReq.Send();
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>            |
 | Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
@@ -98,7 +98,7 @@ HttpReq.Send();
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

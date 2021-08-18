@@ -1,9 +1,9 @@
 ---
 title: PlayerApplication.playerDocked
-description: La propiedad playerDocked recupera un valor que indica si el Media Player de Windows está en un estado acoplado.
+description: La propiedad playerDocked recupera un valor que indica si Reproductor de Windows Media está en un estado acoplado.
 ms.assetid: c6f82188-0826-4854-992c-85ad84701fb7
 keywords:
-- PlayerApplication. playerDocked Windows Media Player
+- PlayerApplication.playerDocked Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,30 +14,30 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c53ac92aac82c19dd9e58d389dee340a5951457b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b2c3ad74dcc21eec386f70f00ed0fa1a6e205c5d702dcfa63949d35f4fdd6adf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995825"
 ---
 # <a name="playerapplicationplayerdocked"></a>PlayerApplication.playerDocked
 
-La propiedad **playerDocked** recupera un valor que indica si el Media Player de Windows está en un estado acoplado.
+La **propiedad playerDocked** recupera un valor que indica si Reproductor de Windows Media está en un estado acoplado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 *playerApplication*. **playerDocked**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **valor booleano** de solo lectura.
+Esta propiedad es un booleano de solo **lectura.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad solo se usa cuando la comunicación remota del control de Media Player de Windows.
+Esta propiedad solo se usa cuando se usa la comunicación remota Reproductor de Windows Media control .
 
-**Windows Media Player 10 Mobile:** Esta propiedad siempre devuelve **false**.
+**Reproductor de Windows Media 10 Mobile:** Esta propiedad siempre devuelve **false**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Esta propiedad solo se usa cuando la comunicación remota del control de Media P
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/>                                 |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
