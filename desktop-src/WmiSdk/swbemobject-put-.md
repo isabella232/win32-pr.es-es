@@ -1,5 +1,5 @@
 ---
-description: El método Put de SWbemObject crea o actualiza una instancia o un objeto de clase \_ para Windows Management Instrumentation (WMI). Puede usar este método después de modificar las propiedades o métodos de un objeto SWbemObject y los cambios se escriben en WMI.
+description: El método Put de SWbemObject crea o actualiza una instancia o un objeto de clase \_ para Windows Management Instrumentation (WMI). Puede usar este método después de modificar las propiedades o métodos de un objeto SWbemObject, y los cambios se escriben en WMI.
 ms.assetid: c636ff95-9f3e-4ba9-adf3-30b981be02a4
 ms.tgt_platform: multiple
 title: SWbemObject.Put_ método (Wbemdisp.h)
@@ -45,7 +45,7 @@ objObjectPath = .Put_( _
 
 <dl> <dt>
 
-*iFlags* \[ en, opcional\]
+*iFlags* \[ in, opcional\]
 </dt> <dd>
 
 Este parámetro determina si la llamada crea o actualiza la clase o instancia y si la llamada se devuelve inmediatamente. Este parámetro puede aceptar los valores siguientes.
@@ -59,7 +59,7 @@ Este parámetro determina si la llamada crea o actualiza la clase o instancia y 
 
 </dt> <dd>
 
-Permite actualizar una clase si no hay clases derivadas y no hay ninguna instancia para esa clase. También permite actualizaciones en todos los casos si el cambio es solo para calificadores no importantes (por ejemplo, el **calificador Description).** Este es el comportamiento predeterminado de esta llamada y se usa para la compatibilidad con versiones anteriores de WMI. Si la clase tiene instancias, se produce un error en la actualización.
+Permite actualizar una clase si no hay clases derivadas y no hay instancias para esa clase. También permite actualizaciones en todos los casos si el cambio es simplemente para calificadores no importantes (por ejemplo, el **calificador Description).** Este es el comportamiento predeterminado de esta llamada y se usa para la compatibilidad con versiones anteriores de WMI. Si la clase tiene instancias, se produce un error en la actualización.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Permite actualizar una clase si no hay clases derivadas y no hay ninguna instanc
 
 </dt> <dd>
 
-Permite actualizaciones de clases incluso si hay clases secundarias si el cambio no provoca conflictos con las clases secundarias. Puede usar esta marca al agregar una nueva propiedad a una clase base que no se mencionó anteriormente en ninguna de las clases secundarias. Si la clase tiene instancias, se produce un error en la actualización. Si la clase tiene instancias, se produce un error en la actualización.
+Permite actualizaciones de clases incluso si hay clases secundarias si el cambio no provoca ningún conflicto con las clases secundarias. Puede usar esta marca al agregar una nueva propiedad a una clase base que no se mencionó anteriormente en ninguna de las clases secundarias. Si la clase tiene instancias, se produce un error en la actualización. Si la clase tiene instancias, se produce un error en la actualización.
 
 </dd> <dt>
 
@@ -81,15 +81,15 @@ Permite actualizaciones de clases incluso si hay clases secundarias si el cambio
 
 </dt> <dd>
 
-Esta marca fuerza las actualizaciones de clases cuando existen clases secundarias en conflicto. Por ejemplo, esta marca forzará una actualización si se definió un calificador de clase en una clase secundaria y la clase base intenta agregar el mismo calificador y entra en conflicto con el existente. En modo de fuerza, este conflicto se resolvería mediante la eliminación del calificador en conflicto en la clase secundaria. Si la clase tiene instancias, se producirá un error en la actualización.
+Esta marca fuerza las actualizaciones de clases cuando existen clases secundarias en conflicto. Por ejemplo, esta marca forzará una actualización si se definió un calificador de clase en una clase secundaria y la clase base intenta agregar el mismo calificador y entra en conflicto con el existente. En modo de fuerza, este conflicto se resolvería eliminando el calificador en conflicto en la clase secundaria. Si la clase tiene instancias, se producirá un error en la actualización.
 
-El uso del modo force para actualizar una clase estática da como resultado la eliminación de todas las instancias de esa clase. Una actualización forzada en una clase de proveedor no elimina instancias de la clase .
+El uso del modo force para actualizar una clase estática da lugar a la eliminación de todas las instancias de esa clase. Una actualización forzada en una clase de proveedor no elimina instancias de la clase .
 
 </dd> <dt>
 
 <span id="wbemChangeFlagCreateOrUpdate"></span><span id="wbemchangeflagcreateorupdate"></span><span id="WBEMCHANGEFLAGCREATEORUPDATE"></span>
 
-<span id="wbemChangeFlagCreateOrUpdate"></span><span id="wbemchangeflagcreateorupdate"></span><span id="WBEMCHANGEFLAGCREATEORUPDATE"></span>wbemChangeFlagCreateOrUpdate*** (0 (0x0))
+<span id="wbemChangeFlagCreateOrUpdate"></span><span id="wbemchangeflagcreateorupdate"></span><span id="WBEMCHANGEFLAGCREATEORUPDATE"></span>wbemChangeFlagCreateOrUpdate** (0 (0x0))
 
 
 </dt> <dd>
@@ -105,7 +105,7 @@ Hace que la clase o instancia se cree si no existe o se sobrescribe si ya existe
 
 </dt> <dd>
 
-Se usa solo para la creación. Se produce un error en la llamada si la clase o instancia ya existe.
+Solo se usa para la creación. Se produce un error en la llamada si la clase o instancia ya existe.
 
 </dd> <dt>
 
@@ -149,14 +149,14 @@ Hace que esta llamada se bloquee hasta que se haya completado la consulta.
 
 </dt> <dd>
 
-Hace que WMI escriba datos de modificación de clases, así como la definición de clase base. Para obtener más información sobre los calificadores modificados, vea [Localizing WMI Class Information](localizing-wmi-class-information.md).
+Hace que WMI escriba datos de modificación de clase, así como la definición de clase base. Para obtener más información sobre los calificadores modificados, vea [Localización de información de clase WMI](localizing-wmi-class-information.md).
 
 </dd> </dl> </dd> <dt>
 
-*objwbemNamedValueSet* \[ en, opcional\]
+*objwbemNamedValueSet* \[ in, opcional\]
 </dt> <dd>
 
-Normalmente, esto es indefinido. De lo contrario, se trata de un objeto [**SWbemObjectPath**](swbemobjectpath.md) cuyos elementos representan la información de contexto que puede usar el proveedor que está atendiendo la solicitud. Un proveedor que admita o requiera dicha información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
+Normalmente, esto no está definido. De lo contrario, se trata de un [**objeto SWbemObjectPath**](swbemobjectpath.md) cuyos elementos representan la información de contexto que puede usar el proveedor que está atendiendo la solicitud. Un proveedor que admita o requiera dicha información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
 
 </dd> </dl>
 
@@ -170,7 +170,7 @@ Después de completar el **método \_ Put,** el [objeto Err](/previous-versions/
 
 <dl> <dt>
 
-**wbemErrAccessDenied:** 2147749891
+**wbemErrAccessDenied** : 2147749891
 </dt> <dd>
 
 El usuario actual no tiene permiso para actualizar una instancia de la clase especificada.
@@ -191,10 +191,10 @@ Error no especificado.
 
 </dd> <dt>
 
-**wbemErrGallgalNull:** 2147749898 (0x8004100A)
+**wbemErrGalegalNull:** 2147749898 (0x8004100A)
 </dt> <dd>
 
-Se especificó **un valor de Nothing** para una propiedad que puede no ser **Nothing**. Un ejemplo de esta propiedad es uno marcado por un **calificador Key,** **Indexed** o **Not \_ Null.**
+Se especificó **un valor de Nothing** para una propiedad que puede no ser **Nothing.** Un ejemplo de esta propiedad es uno marcado por un calificador **Key,** **Indexed** o **Not \_ Null.**
 
 </dd> <dt>
 
@@ -205,21 +205,21 @@ La instancia especificada no es válida.
 
 </dd> <dt>
 
-**wbemErrInvalidParameter:** 0x80041008
+**wbemErrInvalidParameter** : 0x80041008
 </dt> <dd>
 
 Un parámetro especificado no es válido.
 
 </dd> <dt>
 
-**wbemErrNotFound:** 2147749890 (0x80041002)
+**wbemErrNotFound** : 2147749890 (0x80041002)
 </dt> <dd>
 
 Se especificó la marca **wbemChangeFlagUpdateOnly,** pero la instancia o clase no existe.
 
 </dd> <dt>
 
-**wbemErrIncompleteClass:** 2147749920 (0x80041020)
+**wbemErrIncompleteClass** : 2147749920 (0x80041020)
 </dt> <dd>
 
 No se han establecido todas las propiedades necesarias para las clases.
@@ -237,7 +237,7 @@ No hay suficiente memoria para completar la operación.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -249,7 +249,7 @@ No hay suficiente memoria para completar la operación.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

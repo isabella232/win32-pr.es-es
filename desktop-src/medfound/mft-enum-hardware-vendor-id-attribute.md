@@ -1,5 +1,5 @@
 ---
-description: Especifica el identificador de proveedor de una aplicación basada en hardware Microsoft Media Foundation.
+description: Especifica el identificador de proveedor para una aplicación basada en hardware Microsoft Media Foundation.
 ms.assetid: AA31639F-EF70-4454-AC61-60755CAA684A
 title: MFT_ENUM_HARDWARE_VENDOR_ID_Attribute atributo
 ms.topic: reference
@@ -21,9 +21,9 @@ Especifica el identificador de proveedor para una transformación de Microsoft M
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
+Para obtener este atributo, llame [**a IMFAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
 
-Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
+Para establecer este atributo, llame [**a IMFAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
 
 ## <a name="remarks"></a>Comentarios
 
@@ -33,7 +33,7 @@ Este atributo es informativo y opcional.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                          |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                |
@@ -41,14 +41,14 @@ Este atributo es informativo y opcional.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Hardware MFTs](hardware-mfts.md)
+[MTA de hardware](hardware-mfts.md)
 </dt> <dt>
 
 [Transformar atributos](transform-attributes.md)

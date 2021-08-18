@@ -1,5 +1,5 @@
 ---
-description: GetOrdinal no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use Cuentas de usuario con cambio rápido de usuario y Escritorio remoto.
+description: GetOrdinal no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, use cuentas de usuario con cambio rápido de usuario y Escritorio remoto.
 ms.assetid: 20b1c1d0-b09f-43a8-9026-9cdbac28c108
 title: Método IUserIdentity2::GetOrdinal (Msident.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118968974"
 ---
 # <a name="iuseridentity2getordinal-method"></a>IUserIdentity2::GetOrdinal (método)
 
-\[**GetOrdinal no** se admite y puede modificarse o no estar disponible en el futuro. En su lugar, [use cuentas de usuario con cambio rápido de usuario y Escritorio remoto](fastuserswitching.md).\]
+\[**GetOrdinal no** se admite y puede modificarse o no estar disponible en el futuro. En su lugar, [use cuentas de usuario con cambio rápido de usuario Escritorio remoto](fastuserswitching.md).\]
 
 Obtiene el número ordinal de esta identidad.
 
@@ -64,7 +64,7 @@ El ordinal determina el orden de las identidades en la lista de identidades, per
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
@@ -76,7 +76,7 @@ El ordinal determina el orden de las identidades en la lista de identidades, per
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

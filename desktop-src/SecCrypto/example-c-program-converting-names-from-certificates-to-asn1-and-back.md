@@ -1,28 +1,28 @@
 ---
-description: Enumera los certificados de un almacén de certificados, muestra el asunto y el usuario de cada certificado y convierte el nombre de sujeto de cada certificado en su forma codificada de notación de sintaxis abstracta uno (ASN. 1) y, a continuación, vuelve a su forma descodificada.
+description: Enumera los certificados de un almacén de certificados, muestra el asunto y el usuario de cada certificado, y convierte el nombre del firmante de cada certificado en su formato codificado De notation One de sintaxis abstracta (ASN.1) y, a continuación, vuelve a su formato descodificado.
 ms.assetid: 8b4771da-0996-40fb-98ce-73efe8e3534f
-title: 'Programa C de ejemplo: convertir nombres de certificados en ASN. 1 y atrás'
+title: 'Programa C de ejemplo: Convertir nombres de certificados a ASN.1 y Back'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a14114d4ba956acabf26ff28368403c699497b45
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e1093f47500592c32142f4680c046b60facc690f7c794c7b850b18e810242e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993065"
 ---
-# <a name="example-c-program-converting-names-from-certificates-to-asn1-and-back"></a>Programa C de ejemplo: convertir nombres de certificados en ASN. 1 y atrás
+# <a name="example-c-program-converting-names-from-certificates-to-asn1-and-back"></a>Programa C de ejemplo: Convertir nombres de certificados a ASN.1 y Back
 
-En el ejemplo siguiente se enumeran los certificados de un [*almacén de certificados*](../secgloss/c-gly.md), se muestra el asunto y el usuario de cada certificado y se convierte el nombre del sujeto de cada certificado en su forma codificada de [*notación de sintaxis abstracta uno*](../secgloss/a-gly.md) (ASN. 1) y, a continuación, se vuelve a crear en su forma descodificada.
+En el ejemplo siguiente se enumeran los certificados de un almacén de [*certificados,*](../secgloss/c-gly.md)se muestra el asunto y el usuario de cada certificado, y se convierte el nombre del firmante de cada certificado en su formato codificado De [*notation One*](../secgloss/a-gly.md) de sintaxis abstracta (ASN.1) y, a continuación, vuelve a su formato descodificado.
 
-En este ejemplo se muestran las siguientes tareas y funciones de [*CryptoAPI*](../secgloss/c-gly.md) :
+En este ejemplo se muestran las siguientes tareas y [*funciones cryptoAPI:*](../secgloss/c-gly.md)
 
--   Apertura de un almacén del sistema mediante [**CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
--   Uso de [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore) para obtener el primer certificado del almacén abierto.
--   Usar [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa) para obtener el nombre de sujeto y el nombre de usuario del certificado.
--   Usar [**CertNameToStr**](/windows/desktop/api/Wincrypt/nf-wincrypt-certnametostra) para convertir el nombre de sujeto del certificado en su forma de codificación ASN. 1.
--   Usar [**CertStrToName**](/windows/desktop/api/Wincrypt/nf-wincrypt-certstrtonamea) para convertir una cadena codificada ASN. 1 en su forma descodificada.
--   Cierre de un almacén de certificados con [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore) con la marca de marca de comprobación del **\_ \_ almacén de \_ \_ cierre** de certificado.
+-   Abrir un almacén del sistema [**mediante CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
+-   Usar [**CertEnumCertificatesInStore para**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore) obtener el primer certificado del almacén abierto.
+-   Usar [**CertGetNameString para**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa) obtener el nombre de sujeto y el nombre de usuario del certificado.
+-   Usar [**CertNameToStr para**](/windows/desktop/api/Wincrypt/nf-wincrypt-certnametostra) convertir el nombre del firmante del certificado en su formato codificado asn.1.
+-   Usar [**CertStrToName para**](/windows/desktop/api/Wincrypt/nf-wincrypt-certstrtonamea) convertir una cadena codificada en ASN.1 en su forma descodificada.
+-   Cierre de un almacén de certificados [**mediante CertCloseStore con**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore) la **marca CERT CLOSE STORE CHECK \_ \_ \_ \_ FLAG.**
 
 
 ```C++

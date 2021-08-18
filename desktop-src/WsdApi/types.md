@@ -43,7 +43,7 @@ No hay elementos secundarios.
 
 
 
-| Etiqueta | Valor |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

@@ -1,7 +1,7 @@
 ---
-description: Representa una asociación en la que un \_ objeto ProtocolEndpoint CIM punto o CIM \_ depende de un \_ objeto LANEndpoint CIM subyacente en el mismo sistema.
+description: Representa una asociación en la que un objeto CIM ServiceAccessPoint o CIM ProtocolEndpoint depende de un \_ \_ objeto CIM \_ LANEndpoint subyacente en el mismo sistema.
 ms.assetid: 3c015fbd-0611-41e8-a79a-01c980eedfd3
-title: CIM_BindsToLANEndpoint (clase)
+title: CIM_BindsToLANEndpoint clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: dff1cf243b54739509343d6d8958aa2a54f464b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53418dd9f2e259ac2b5f109dac4c783682657a7a9c5ac5e0548e23cbe0fd6be1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119765615"
 ---
-# <a name="cim_bindstolanendpoint-class"></a>\_Clase BindsToLANEndpoint de CIM
+# <a name="cim_bindstolanendpoint-class"></a>Cim \_ BindsToLANEndpoint (clase)
 
-Representa una asociación en la que un objeto [**\_ ProtocolEndpoint**](cim-protocolendpoint.md) CIM [**\_ punto**](cim-serviceaccesspoint.md) o CIM depende de un objeto [**\_ LANEndpoint CIM**](cim-lanendpoint.md) subyacente en el mismo sistema.
+Representa una asociación en la que un objeto [**CIM \_ ServiceAccessPoint**](cim-serviceaccesspoint.md) o [**CIM \_ ProtocolEndpoint**](cim-protocolendpoint.md) depende de un objeto [**CIM \_ LANEndpoint**](cim-lanendpoint.md) subyacente en el mismo sistema.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ class CIM_BindsToLANEndpoint : CIM_BindsTo
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ BindsToLANEndpoint** tiene estos tipos de miembros:
+La **clase \_ BindsToLANEndpoint** de CIM tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ BindsToLANEndpoint** tiene estas propiedades.
+La **clase \_ BindsToLANEndpoint de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -60,42 +60,42 @@ Tipo de datos: **CIM \_ LANEndpoint**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
 Objeto [**CIM \_ LANEndpoint**](cim-lanendpoint.md) subyacente.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ punto**
+Tipo de datos: **Cim \_ ServiceAccessPoint**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Objeto de CIM [**\_ punto**](cim-serviceaccesspoint.md) o [**CIM \_**](cim-protocolendpoint.md) que depende del [**\_ LANEndpoint CIM**](cim-lanendpoint.md).
+El [**objeto CIM \_ ServiceAccessPoint**](cim-serviceaccesspoint.md) o [**CIM \_ ProtocolEndpoint**](cim-protocolendpoint.md) que depende de [**CIM \_ LANEndpoint**](cim-lanendpoint.md).
 
 </dd> <dt>
 
 **FrameType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Método de tramas para el punto de acceso del servicio de nivel superior o el extremo del protocolo.
+Método de trama para el punto de acceso del servicio de capa superior o punto de conexión de protocolo.
 
 > [!Note]  
-> Solo se sabe usar 802.3 sin formato con el protocolo IPX.
+> Raw802.3 solo se sabe que se usa con el protocolo IPX.
 
  
 
@@ -117,21 +117,21 @@ Método de tramas para el punto de acceso del servicio de nivel superior o el ex
 
 <span id="802.2"></span>
 
-**802,2** (2)
+**802.2** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SNAP"></span><span id="snap"></span>
 
-**Ajustar** (3)
+**SNAP** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Raw802.3"></span><span id="raw802.3"></span><span id="RAW802.3"></span>
 
-**802.3 sin formato** (4)
+**Raw802.3** (4)
 
 
 </dt> <dd></dd> </dl>
@@ -146,8 +146,8 @@ Método de tramas para el punto de acceso del servicio de nivel superior o el ex
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -156,7 +156,7 @@ Método de tramas para el punto de acceso del servicio de nivel superior o el ex
 
 <dl> <dt>
 
-[**\_BINDSTO CIM**](cim-bindsto.md)
+[**CIM \_ BindsTo**](cim-bindsto.md)
 </dt> </dl>
 
  

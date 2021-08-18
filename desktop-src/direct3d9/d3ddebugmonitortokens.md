@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118989075"
 ---
-# <a name="d3ddebugmonitortokens-enumeration"></a>D3DDEBUGMONITORTOKENS (enumeración)
+# <a name="d3ddebugmonitortokens-enumeration"></a>Enumeración D3DDEBUGMONITORTOKENS
 
 Define los tokens del monitor de depuración.
 
@@ -58,7 +58,7 @@ Deshabilite el monitor de depuración.
 <span id="D3DDMT_FORCE_DWORD"></span><span id="d3ddmt_force_dword"></span>**D3DDMT \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase en un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ El estado de representación debugMONITORTOKEN de D3DRS usa los valores de este 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

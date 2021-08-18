@@ -45,7 +45,7 @@ void GetDimensions(
 
 Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Opcional. Nivel de mapa mip (se debe especificar si *se usa NumberOfLevels).*
+Opcional. Nivel mipmap (se debe especificar si *se usa NumberOfLevels).*
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Alto del recurso, en texturas.
 
 Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Profundidad del recurso, en los elementos de textura.
+Profundidad del recurso, en texturas.
 
 </dd> <dt>
 
@@ -122,7 +122,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -130,14 +130,14 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Texture3D](sm5-object-texture3d.md)
 </dt> <dt>
 
-[Shader Model 5](d3d11-graphics-reference-sm5.md)
+[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

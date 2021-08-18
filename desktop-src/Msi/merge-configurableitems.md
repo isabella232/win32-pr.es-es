@@ -1,7 +1,7 @@
 ---
 description: La propiedad ConfigurableItems de solo lectura del objeto Merge devuelve una colección De objetos ConfigurableItem, cada uno de los cuales representa una sola fila de la tabla ModuleConfiguration.
 ms.assetid: 4d1a64f7-fbd0-4358-8911-112e43f1be4a
-title: Merge.Configpropiedad urableItems (Mergemod.h)
+title: Merge.ConfigurableItems (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,7 +23,7 @@ ms.locfileid: "119013043"
 ---
 # <a name="mergeconfigurableitems-property"></a>Merge.Configpropiedad urableItems
 
-La propiedad **ConfigurableItems** de solo lectura del objeto [**Merge**](merge-object.md) devuelve una colección De objetos [**ConfigurableItem,**](configurableitem-object.md) cada uno de los cuales representa una sola fila de la [tabla ModuleConfiguration](moduleconfiguration-table.md). Semánticamente, cada interfaz del enumerador representa un elemento que puede configurar el consumidor del módulo. La colección es una colección de solo lectura e implementa las interfaces de colección de solo lectura estándar de Item(), Count() y \_ NewEnum(). El **enumerador IEnumMsmConfigItems** implementa Next(), Skip(), Reset() y Clone() con la semántica estándar.
+La propiedad **ConfigurableItems** de solo lectura del objeto [**Merge**](merge-object.md) devuelve una colección de objetos [**ConfigurableItem,**](configurableitem-object.md) cada uno de los cuales representa una sola fila de la [tabla ModuleConfiguration](moduleconfiguration-table.md). Semánticamente, cada interfaz del enumerador representa un elemento que el consumidor del módulo puede configurar. La colección es una colección de solo lectura e implementa las interfaces de colección de solo lectura estándar de Item(), Count() y \_ NewEnum(). El **enumerador IEnumMsmConfigItems** implementa Next(), Skip(), Reset() y Clone() con la semántica estándar.
 
 Esta propiedad es de solo lectura.
 
@@ -40,13 +40,13 @@ propVal = Merge.ConfigurableItems
 
 ## <a name="c"></a>C++
 
-Consulte get ConfigurableItems function (Obtener [**\_ función ConfigurableItems).**](/windows/desktop/api/Mergemod/nf-mergemod-imsmmerge2-get_configurableitems)
+Consulte [**get \_ ConfigurableItems function (Obtener función ConfigurableItems).**](/windows/desktop/api/Mergemod/nf-mergemod-imsmmerge2-get_configurableitems)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 2.0 o posterior<br/>                                                    |
 | Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |

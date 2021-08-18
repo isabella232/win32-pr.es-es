@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 08d38691d0e780e49293149bdb7a08b1ea0ef1fb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 14f8bb3d75d1a949919d401babb47987fbb88a7cac82f017947f069df4b99e6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119497871"
 ---
 # <a name="d3dxvec3unproject-function-d3dx10mathh"></a>Función D3DXVec3Unproject (D3DX10Math.h)
 
-Proyecta un vector desde el espacio de pantalla al espacio de objetos.
+Proyecta un vector desde el espacio de pantalla en el espacio de objetos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,7 +49,7 @@ D3DXVECTOR3* D3DXVec3Unproject(
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntero a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que es el resultado de la operación.
+Puntero a [**D3DXVECTOR3 que**](d3d10-d3dxvector3.md) es el resultado de la operación.
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

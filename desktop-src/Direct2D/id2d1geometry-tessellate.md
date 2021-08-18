@@ -1,9 +1,9 @@
 ---
-title: Métodos ID2D1Geometry dividirlas
+title: Métodos de Tessellate ID2D1Geometry
 description: Crea un conjunto de triángulos hacia la derecha que cubren la geometría después de que se haya transformado mediante la matriz especificada y aplanada mediante la tolerancia especificada.
 ms.assetid: 4e0af188-d14b-43c0-be11-16577f054b90
 keywords:
-- Métodos de dividirlas Direct2D
+- Métodos de tesolate Direct2D
 topic_type:
 - apiref
 api_location:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 060fc42dddd7642f021d073b8addbe089d031393
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b40602fb38ec2a0834ba202252114f7c0c34a4948e4473703ff4daf8bf2ee97a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917895"
 ---
-# <a name="id2d1geometrytessellate-methods"></a>ID2D1Geometry:: dividirlas (métodos)
+# <a name="id2d1geometrytessellate-methods"></a>Métodos ID2D1Geometry::Tessellate
 
 Crea un conjunto de triángulos hacia la derecha que cubren la geometría después de que se haya transformado mediante la matriz especificada y aplanada mediante la tolerancia especificada.
 
@@ -30,16 +30,16 @@ Crea un conjunto de triángulos hacia la derecha que cubren la geometría despu�
 
 | Método                                                                                                                                                    | Descripción                                                                                                                                                                          |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Dividirlas (D2D1 \_ Matrix \_ 3x2 \_ F \* , ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__id2d1tessellationsink))             | Crea un conjunto de triángulos hacia la derecha que cubren la geometría después de que se haya transformado utilizando la matriz especificada y se haya simplificado con la tolerancia predeterminada. <br/>   |
-| [**Dividirlas (D2D1 \_ Matrix \_ 3X2 \_ F&, ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_id2d1tessellationsink))              | Crea un conjunto de triángulos hacia la derecha que cubren la geometría después de que se haya transformado utilizando la matriz especificada y se haya simplificado con la tolerancia predeterminada. <br/>   |
-| [**Dividirlas (D2D1 \_ Matrix \_ 3x2 \_ F \* , Float, ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_float_id2d1tessellationsink)) | Crea un conjunto de triángulos hacia la derecha que cubren la geometría después de que se haya transformado mediante la matriz especificada y aplanada mediante la tolerancia especificada. <br/> |
-| [**Dividirlas (D2D1 \_ Matrix \_ 3X2 \_ F&, Float, ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__float_id2d1tessellationsink))  | Crea un conjunto de triángulos hacia la derecha que cubren la geometría después de que se haya transformado mediante la matriz especificada y aplanada mediante la tolerancia especificada.<br/>  |
+| [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ F , \* ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__id2d1tessellationsink))             | Crea un conjunto de triángulos que cubren la geometría en el sentido de las agujas del reloj una vez que se ha transformado con la matriz especificada y se ha aplanado con la tolerancia predeterminada. <br/>   |
+| [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ F&,ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_id2d1tessellationsink))              | Crea un conjunto de triángulos que cubren la geometría en el sentido de las agujas del reloj una vez que se ha transformado con la matriz especificada y se ha aplanado con la tolerancia predeterminada. <br/>   |
+| [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ F , \* FLOAT,ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_float_id2d1tessellationsink)) | Crea un conjunto de triángulos hacia la derecha que cubren la geometría después de que se haya transformado mediante la matriz especificada y aplanada mediante la tolerancia especificada. <br/> |
+| [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ F&,FLOAT,ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__float_id2d1tessellationsink))  | Crea un conjunto de triángulos hacia la derecha que cubren la geometría después de que se haya transformado mediante la matriz especificada y aplanada mediante la tolerancia especificada.<br/>  |
 
 
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra cómo usar dividirlas para crear un conjunto de triángulos que cubren la geometría en sentido de las agujas del reloj.
+En el ejemplo de código siguiente se muestra cómo usar Tessellate para crear un conjunto de triángulos con forma de triángulos que cubren la geometría en el sentido de las agujas del reloj.
 
 
 ```C++
@@ -98,7 +98,7 @@ En el ejemplo de código siguiente se muestra cómo usar dividirlas para crear u
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

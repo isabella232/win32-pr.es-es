@@ -1,5 +1,5 @@
 ---
-description: Enumera las funciones de vector 3D proporcionadas por DirectXMath.
+description: Enumera las funciones vectoriales 3D proporcionadas por DirectXMath.
 ms.assetid: cd5c0fb1-3d61-3246-3567-5c12da9b3862
 title: Funciones vectoriales 3D de la biblioteca DirectXMath
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "119979235"
 ---
 # <a name="directxmath-library-3d-vector-functions"></a>Funciones vectoriales 3D de la biblioteca DirectXMath
 
-Enumera las funciones de vector 3D proporcionadas por DirectXMath.
+Enumera las funciones vectoriales 3D proporcionadas por DirectXMath.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -22,8 +22,8 @@ Enumera las funciones de vector 3D proporcionadas por DirectXMath.
 | Tema                                                                                                                           | Descripción                                              |
 |---------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
 | [Funciones de comparación de vectores 3D de la biblioteca DirectXMath](ovw-xnamath-reference-functions-vector3-comparison.md)<br/>         | Enumera las funciones de comparación de vectores 3D.<br/>     |
-| [Funciones geométricas vectoriales 3D de la biblioteca DirectXMath](ovw-xnamath-reference-functions-vector3-geometric.md)<br/>           | Enumera las funciones geométricas vectoriales 3D.<br/>      |
-| [Funciones de transformación vector 3D de la biblioteca DirectXMath](ovw-xnamath-reference-functions-vector3-transformation.md)<br/> | Enumera las funciones de transformación de vector 3D.<br/> |
+| [Funciones geométricas de vectores 3D de la biblioteca DirectXMath](ovw-xnamath-reference-functions-vector3-geometric.md)<br/>           | Enumera las funciones geométricas del vector 3D.<br/>      |
+| [Funciones de transformación de vectores 3D de la biblioteca DirectXMath](ovw-xnamath-reference-functions-vector3-transformation.md)<br/> | Enumera las funciones de transformación de vectores 3D.<br/> |
 
 
 
@@ -33,7 +33,7 @@ Enumera las funciones de vector 3D proporcionadas por DirectXMath.
 
 <dl> <dt>
 
-[Funciones de la biblioteca DirectXMath](ovw-xnamath-reference-functions.md)
+[Funciones de biblioteca de DirectXMath](ovw-xnamath-reference-functions.md)
 </dt> </dl>
 
  

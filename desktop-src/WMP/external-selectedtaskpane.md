@@ -1,9 +1,9 @@
 ---
-title: External. SelectedTaskPane
-description: Tenga en cuenta que en este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. La propiedad SelectedTaskPane especifica o recupera el panel de tareas seleccionado actualmente.
+title: External.SelectedTaskPane
+description: Nota En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. La propiedad SelectedTaskPane especifica o recupera el panel de tareas seleccionado actualmente.
 ms.assetid: af7b4627-1336-444c-9b4e-5f2e07d9eea7
 keywords:
-- Media Player de Windows externa. SelectedTaskPane
+- External.SelectedTaskPane Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,35 +14,35 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28535e0497362a2153bcaad439425174e9c1bdc1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 24e49225be7bbdb5ce128a793d3c88409ef9d994ef5017c57b5f12738b62eaa5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119736195"
 ---
-# <a name="externalselectedtaskpane"></a>External. SelectedTaskPane
+# <a name="externalselectedtaskpane"></a>External.SelectedTaskPane
 
 > [!Note]  
-> En este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-La propiedad **SelectedTaskPane** especifica o recupera el panel de tareas seleccionado actualmente.
+La **propiedad SelectedTaskPane** especifica o recupera el panel de tareas seleccionado actualmente.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-Window. external. SelectedTaskPane = *servicetask*
+window.external.SelectedTaskPane = *servicetask*
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es una **cadena** de lectura/escritura. Los valores posibles son "ServiceTask1", "ServiceTask2" y "ServiceTask3".
+Esta propiedad es una cadena de lectura y **escritura.** Los valores posibles son "ServiceTask1", "ServiceTask2" y "ServiceTask3".
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al especificar un valor para esta propiedad, se resalta el botón de ese panel. No hace que el panel de tareas especificado esté activo. Debe especificar un valor para esta propiedad para establecer el botón actual del panel de tareas de la página web cuando la página se carga para asegurarse de que el botón del panel de tareas correcto está activo.
+Al especificar un valor para esta propiedad, se resalta el botón de ese panel. No activa el panel de tareas especificado. Debe especificar un valor para esta propiedad para establecer el botón del panel de tareas actual de la página web cuando se cargue la página para asegurarse de que el botón del panel de tareas correcto está activo.
 
-Para hacer que un panel de tareas determinado sea el activo, use el método **NavigateTaskPaneURL** .
+Para que un panel de tareas determinado sea el activo, use el **método NavigateTaskPaneURL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,7 +50,7 @@ Para hacer que un panel de tareas determinado sea el activo, use el método **Na
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 10 o posterior<br/>                                        |
+| Versión<br/> | Reproductor de Windows Media 10 o posterior<br/>                                        |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -59,10 +59,10 @@ Para hacer que un panel de tareas determinado sea el activo, use el método **Na
 
 <dl> <dt>
 
-[**Objeto externo para las tiendas en línea de tipo 2**](external-object-for-type-2-online-stores.md)
+[**Objeto externo para almacenes en línea de tipo 2**](external-object-for-type-2-online-stores.md)
 </dt> <dt>
 
-[**External. NavigateTaskPaneURL**](external-navigatetaskpaneurl.md)
+[**External.NavigateTaskPaneURL**](external-navigatetaskpaneurl.md)
 </dt> </dl>
 
  

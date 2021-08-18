@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_OSSNAPID. Lista de sobrecargas del método ToString'
+description: 'Más información sobre: JET_OSSNAPID. Lista de sobrecargas del método ToString'
 title: JET_OSSNAPID. Lista de sobrecargas del método ToString
 TOCTitle: 'ToString method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.JET_OSSNAPID.ToString
@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 6c920ff6213c1e4a706426ac0a1a1bf12f7e25fa
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 43a3c98cac4b01edddab26491cfd53edd4221cf82453db526a601cf9e3726405
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945755"
 ---
 # <a name="jet_ossnapidtostring-method-overload-list"></a>JET_OSSNAPID. Lista de sobrecargas del método ToString
 
@@ -40,11 +40,11 @@ Incluir miembros heredados
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="hh596143(v=exchg.10).md">ToString()</a></td>
-<td>Generar una representación de cadena de la estructura. (Invalida <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType. ToString ()</a>).</td>
+<td>Genere una representación de cadena de la estructura . (Invalida <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType.ToString()</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh557619(v=exchg.10).md">ToString (String, IFormatProvider)</a></td>
+<td><a href="hh557619(v=exchg.10).md">ToString(String, IFormatProvider)</a></td>
 <td>Da formato al valor de la instancia actual usando el formato especificado.</td>
 </tr>
 </tbody>
@@ -57,8 +57,8 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_OSSNAPID](./jet-ossnapid-structure.md)
+[JET_OSSNAPID estructura](./jet-ossnapid-structure.md)
 
-[Miembros de JET_OSSNAPID](./jet-ossnapid-members.md)
+[JET_OSSNAPID miembros](./jet-ossnapid-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

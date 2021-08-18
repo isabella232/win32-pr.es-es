@@ -1,22 +1,22 @@
 ---
-title: Ejemplo de código de C/C++ que recupera el código de salida de la tarea
-description: En este ejemplo se recupera el último código de salida devuelto por una tarea conocida. (Un valor devuelto de \ 0034; 0 \ 0034; indica que la tarea no se ejecutó nunca). En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+title: Ejemplo de código de C/C++ recuperación del código de salida de la tarea
+description: En este ejemplo se recupera el último código de salida devuelto por una tarea conocida. (Un valor devuelto de \ 0034;0 \ 0034; indica que la tarea nunca se ha ejecutado). En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 ms.assetid: e7bfe645-7f4c-4700-9adf-c581e6895aec
 keywords:
-- recuperando Programador de tareas de comentario de tarea
-- recuperar propiedades de elementos de trabajo Programador de tareas, comentario de tarea
+- recuperación de comentarios de Programador de tareas
+- recuperar propiedades de elementos de trabajo Programador de tareas , comentario de tarea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5911cad3831dc8da04e44f161a644bda9742bd33
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e0908ae8fc15e3ae34c06f02267e9bad396956181fa058c0bf757b8f8486783d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104532116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738855"
 ---
 # <a name="cc-code-example-retrieving-task-exit-code"></a>Ejemplo de código de C/C++: recuperar el código de salida de la tarea
 
-En este ejemplo se recupera el último código de salida devuelto por una tarea conocida. (Un valor devuelto de "0" indica que la tarea no se ejecutó nunca). En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+En este ejemplo se recupera el último código de salida devuelto por una tarea conocida. (Un valor devuelto de "0" indica que la tarea nunca se ha ejecutado). En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 
 
 ```C++
@@ -113,12 +113,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

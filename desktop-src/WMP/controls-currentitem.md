@@ -1,9 +1,9 @@
 ---
-title: Controls. currentItem
+title: Controls.currentItem
 description: La propiedad currentItem especifica o recupera el elemento multimedia actual.
 ms.assetid: 77e21585-3cc8-41f5-97b5-da6eb992c7bc
 keywords:
-- Controls. currentItem Windows Media Player
+- Controls.currentItem Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81658665cb6f31acd327f5050a733a2fc3c70371
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 66dc0ad047213e0fbba7dbdd7336e67b8d015e39aba510ac37bd3701462413ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997564"
 ---
-# <a name="controlscurrentitem"></a>Controls. currentItem
+# <a name="controlscurrentitem"></a>Controls.currentItem
 
-La propiedad **CurrentItem** especifica o recupera el elemento multimedia actual.
+La **propiedad currentItem** especifica o recupera el elemento multimedia actual.
 
 ``` syntax
 player.controls.currentItem
@@ -32,15 +32,15 @@ player.controls.currentItem
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un objeto **multimedia** de lectura/escritura.
+Esta propiedad es un objeto Multimedia de lectura **y** escritura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método solo funciona con elementos del *reproductor*. **currentPlaylist**. No se admite la llamada a **CurrentItem** con una referencia a un elemento multimedia guardado.
+Este método solo funciona con elementos del *Reproductor de*. **currentPlaylist**. No se admite la llamada a **currentItem** con una referencia a un elemento multimedia guardado.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa **CurrentItem** para establecer el elemento multimedia actual del control Player en el valor seleccionado en un elemento Select de HTML. La lista de reproducción actual se especificó por primera vez mediante *PlaylistCollection*. **getByName**. El objeto **Player** se creó con ID = "Player".
+En el JScript siguiente se usa **currentItem** para establecer el elemento multimedia actual del control de reproductor en el valor seleccionado en un elemento SELECT HTML. La lista de reproducción actual se especificó por primera vez mediante *PlaylistCollection*. **getByName**. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -66,7 +66,7 @@ En el siguiente ejemplo de JScript se usa **CurrentItem** para establecer el ele
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -75,7 +75,7 @@ En el siguiente ejemplo de JScript se usa **CurrentItem** para establecer el ele
 
 <dl> <dt>
 
-[**Controls (objeto)**](controls-object.md)
+[**Objeto Controls**](controls-object.md)
 </dt> <dt>
 
 [**Objeto multimedia**](media-object.md)

@@ -1,22 +1,22 @@
 ---
-title: Ejemplo de código de C/C++ que recupera la hora de MostRecentRun de la tarea
-description: En este ejemplo se recupera la hora en que se ejecutó la tarea por última vez y se muestra en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+title: Ejemplo de código de C/C++ recuperando la tarea MostRecentRun Time
+description: En este ejemplo se recupera la hora de la última ejecución de la tarea y se muestra en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 ms.assetid: 683ff1e1-1cb0-4ef7-bca2-9c3a2b4d1bd0
 keywords:
-- recuperando Programador de tareas de tiempo de ejecución más reciente de la tarea
-- recuperar propiedades de elementos de trabajo Programador de tareas, tiempo de ejecución más reciente de la tarea
+- recuperación de la tarea más reciente en tiempo de ejecución Programador de tareas
+- recuperar propiedades de elemento de trabajo Programador de tareas , tarea en tiempo de ejecución más reciente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8cae40de306d79628fa10230091c571e776c5e4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 70e8a49372a082567f5f454cfd01a84239ff622f7ab6121fa07a1f557976c4de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105676185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738575"
 ---
-# <a name="cc-code-example-retrieving-the-task-mostrecentrun-time"></a>Ejemplo de código de C/C++: recuperar la hora de MostRecentRun de la tarea
+# <a name="cc-code-example-retrieving-the-task-mostrecentrun-time"></a>Ejemplo de código de C/C++: Recuperación de la tarea MostRecentRun Time
 
-En este ejemplo se recupera la hora en que se ejecutó la tarea por última vez y se muestra en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+En este ejemplo se recupera la hora de la última ejecución de la tarea y se muestra en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 
 
 ```C++
@@ -120,12 +120,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119980035"
 ---
-# <a name="removeresourcesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método RemoveResourceSettings de la clase Msvm \_ VirtualSystemManagementService
+# <a name="removeresourcesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método RemoveResourceSettings de la clase \_ Msvm VirtualSystemManagementService
 
 Quita la configuración de recursos virtuales de una configuración de máquina virtual. Cuando se aplica a partes de una configuración de máquina virtual actual, se puede quitar la máquina virtual activa.
 
@@ -50,7 +50,7 @@ Matriz de referencias a instancias de la clase [**\_ ResourceAllocationSettingDa
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -94,7 +94,7 @@ Este método devuelve uno de los valores siguientes.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
@@ -104,7 +104,7 @@ Este método devuelve uno de los valores siguientes.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

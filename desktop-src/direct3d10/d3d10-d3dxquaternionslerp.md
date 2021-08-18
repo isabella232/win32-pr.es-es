@@ -70,7 +70,7 @@ Puntero a una estructura D3DXQUATERNION de origen.
 
 </dd> <dt>
 
-*t* \[ in\]
+*t* \[ en\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -102,7 +102,7 @@ Use [**D3DXQuaternionNormalize para cualquier**](d3d10-d3dxquaternionnormalize.m
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
 description: Especifica el modo de procesamiento posterior para el descodificador.
 ms.assetid: c6dab7f6-4a3e-45bb-b81c-5f4c39f9e954
-title: MFPKEY_POSTPROCESSMODE (Propiedad, Wmcodecdsp.h)
+title: MFPKEY_POSTPROCESSMODE propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: dce916d0b74c25ae2a57a43acde128ce8c45e7eb42860c3d7a2f129ea2d5b3c4
@@ -29,7 +29,7 @@ Establezca esta propiedad en uno de los valores siguientes.
 
 
 
-| Valor | Significado                                                                                |
+| Value | Significado                                                                                |
 |-------|----------------------------------------------------------------------------------------|
 | -1    | El descodificador establece el modo de procesamiento posterior de forma adaptable en función de los recursos de CPU disponibles. |
 | 0     | El descodificador no realiza ningún procesamiento posterior.                                               |
@@ -42,20 +42,20 @@ Establezca esta propiedad en uno de los valores siguientes.
 
  
 
-A medida que el valor de esta propiedad va de 0 a 4, aumenta la complejidad de la decodificación, el uso de recursos de CPU y la calidad de la imagen.
+A medida que el valor de esta propiedad va de 0 a 4, la complejidad de lacoding, el uso de recursos de CPU y la calidad de imagen aumentan.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Cliente<br/> | Windows Vista o Windows 7<br/>                                                   |
 | Header<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

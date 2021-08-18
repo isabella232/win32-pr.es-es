@@ -1,30 +1,30 @@
 ---
-description: Filtrar el administrador de gráficos
+description: Administrador de Graph filtros
 ms.assetid: b1a53193-27c6-4e86-a5b9-f3c1e4401690
-title: Filtrar el administrador de gráficos
+title: Administrador de Graph filtros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7161f15ea04e1404425d4671ca7991420e0aa993
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 793a261f0d7bd12058aa0dc22a448f567fea6847dca6062494f0943eee03a9b3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119756725"
 ---
-# <a name="filter-graph-manager"></a>Filtrar el administrador de gráficos
+# <a name="filter-graph-manager"></a>Administrador de Graph filtros
 
-El administrador de gráficos de filtros genera y controla los gráficos de filtros. Este objeto es el componente central de DirectShow. Las aplicaciones lo utilizan para compilar y controlar gráficos de filtros. El administrador de gráficos de filtro también controla la sincronización, la notificación de eventos y otros aspectos del control del gráfico de filtro. Cree este objeto llamando a **CoCreateInstance**.
+El Administrador de Graph genera y controla gráficos de filtro. Este objeto es el componente central de DirectShow. Las aplicaciones lo usan para compilar y controlar gráficos de filtro. Filter Graph Manager también controla la sincronización, la notificación de eventos y otros aspectos del control del gráfico de filtros. Cree este objeto mediante una llamada **a CoCreateInstance**.
 
 ### <a name="clsid"></a>CLSID
 
-Hay dos CLSID para crear el administrador de gráficos de filtro:
+Hay dos CLSID para crear el Administrador de Graph filtros:
 
 
 
 | CLSID                      | Descripción                                                 |
 |----------------------------|-------------------------------------------------------------|
-| CLSID \_ FilterGraph         | Crea el administrador de gráficos de filtro en un subproceso de trabajo compartido. |
-| CLSID \_ FilterGraphNoThread | Crea el administrador de gráficos de filtro en el subproceso de la aplicación. |
+| CLSID \_ FilterGraph         | Crea el Administrador de Graph en un subproceso de trabajo compartido. |
+| CLSID \_ FilterGraphNoThread | Crea el Administrador de Graph en el subproceso de aplicación. |
 
 
 
@@ -32,12 +32,12 @@ Hay dos CLSID para crear el administrador de gráficos de filtro:
 
 Por lo general, las aplicaciones deben usar CLSID \_ FilterGraph. Ambos CLSID crean el mismo objeto, pero usan diferentes modelos de subprocesos:
 
--   CLSID \_ FilterGraph crea el administrador de gráficos de filtro en un subproceso de trabajo, que comparten todas \_ las instancias de FILTERGRAPH de CLSID dentro del mismo proceso. El subproceso envía los mensajes enviados por los filtros y controla la duración de las ventanas creadas por los filtros.
--   CLSID \_ FilterGraphNoThread crea el administrador de gráficos de filtro en el subproceso de la aplicación. Si usa este CLSID, el subproceso que llama a **CoCreateInstance** debe tener un bucle de mensajes que envíe los mensajes; de lo contrario, pueden producirse interbloqueos. Además, antes de que el subproceso de la aplicación salga, debe liberar el administrador de gráficos de filtro y todos los objetos de gráfico (como filtros, PIN, relojes de referencia, etc.).
+-   CLSID FilterGraph crea el Administrador de Graph en un subproceso de trabajo, que comparten todas las instancias de \_ \_ CLSID FilterGraph dentro del mismo proceso. El subproceso envía los mensajes enviados por filtros y controla la duración de las ventanas creadas por filtros.
+-   CLSID \_ FilterGraphNoThread crea el Administrador de Graph en el subproceso de la aplicación. Si usa este CLSID, el subproceso que llama a **CoCreateInstance** debe tener un bucle de mensajes que envíe mensajes; De lo contrario, pueden producirse interbloqueos. Además, antes de que se cierre el subproceso de aplicación, debe liberar el Administrador de filtros Graph y todos los objetos de grafo (como filtros, pasadores, relojes de referencia, etc.).
 
 ### <a name="interfaces"></a>Interfaces
 
-El administrador de gráficos de filtro expone las siguientes interfaces:
+El Administrador Graph filtros expone las interfaces siguientes:
 
 -   [**IAMGraphStreams**](/windows/desktop/api/Strmif/nn-strmif-iamgraphstreams)
 -   [**IAMStats**](/windows/desktop/api/Control/nn-control-iamstats)
@@ -70,7 +70,7 @@ El administrador de gráficos de filtro expone las siguientes interfaces:
 
 <dl> <dt>
 
-[Objetos de DirectShow](directshow-objects.md)
+[DirectShow Objetos](directshow-objects.md)
 </dt> </dl>
 
  

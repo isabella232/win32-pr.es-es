@@ -28,7 +28,7 @@ AccChecker Console (AccCheckConsole.exe) es una herramienta de línea de comando
 
 ## <a name="command-line-syntax"></a>Sintaxis de línea de comandos
 
-AccChecker Console tiene la siguiente sintaxis de línea de comandos.
+La consola de AccChecker tiene la siguiente sintaxis de línea de comandos.
 
 **Opciones accCheckConsole \[ \] (-hwnd <hwnd> \| -process <name> ) \[<dlls>\]**
 

@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118973924"
 ---
-# <a name="mf_capture_metadata_photo_frame_flash-attribute"></a>Atributo MF \_ CAPTURE METADATA PHOTO FRAME \_ \_ \_ \_ FLASH
+# <a name="mf_capture_metadata_photo_frame_flash-attribute"></a>Atributo FLASH \_ MF CAPTURE METADATA PHOTO \_ \_ \_ FRAME \_
 
 Indica si se desencadenó un flash para el fotograma capturado.
 
@@ -21,11 +21,11 @@ Indica si se desencadenó un flash para el fotograma capturado.
 
 
 
-| Valor                                                                               | Significado                                                                                                                                               |
+| Value                                                                               | Significado                                                                                                                                               |
 |-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>0</dt> </dl>        | No se desencadenó un flash en este marco.<br/>                                                                                                   |
+| <dl> <dt>0</dt> </dl>        | No se desencadenó un flash en este fotograma.<br/>                                                                                                   |
 | <dl> <dt>distinto de cero</dt> </dl> | Se desencadenó un flash en este marco.<br/>                                                                                                       |
-| <dl> <dt>1</dt> </dl>        | Reservada<br/> No compruebe explícitamente un valor de 1. Las aplicaciones solo deben comprobar !=0 para indicar si se desencadenó una flash.<br/> |
+| <dl> <dt>1</dt> </dl>        | Reservada<br/> No compruebe explícitamente un valor de 1. Las aplicaciones solo deben comprobar !=0 para indicar si se desencadenó un flash.<br/> |
 
 
 
@@ -35,7 +35,7 @@ Indica si se desencadenó un flash para el fotograma capturado.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                       |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                            |
@@ -43,7 +43,7 @@ Indica si se desencadenó un flash para el fotograma capturado.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,30 +1,30 @@
 ---
-description: En la tabla siguiente se enumeran todos los valores HRESULT que pueden ser devueltos por los métodos de la API de firma digital XPS.
+description: En la tabla siguiente se enumeran todos los valores HRESULT que pueden devolver los métodos de XPS Digital Signature API.
 ms.assetid: d20707b0-55ea-438a-8ce3-972c61678928
-title: Errores de la API de firma digital XPS (XpsDigitalSignature. h)
+title: XpS Digital Signature API Errors (Xpsdigitalsignature.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c82c6f5efe7e67d27f7d94b5d1db2732139fa59
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93e40cea4b7d0e9997157c8b18c7f364ac7ac58b2b9edc6faec62cbe98685fcb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119711365"
 ---
-# <a name="xps-digital-signature-api-errors"></a>Errores de la API de firma digital XPS
+# <a name="xps-digital-signature-api-errors"></a>Errores de API de firma digital XPS
 
-En la tabla siguiente se enumeran todos los valores **HRESULT** que pueden ser devueltos por los métodos de la API de firma digital XPS. Tenga en cuenta que no todos los métodos pueden devolver todos los valores devueltos que se enumeran en esta tabla.
+En la tabla siguiente se enumeran todos **los valores HRESULT** que pueden devolver los métodos de XPS Digital Signature API. Tenga en cuenta que no todos los métodos pueden devolver todos los valores devueltos enumerados en esta tabla.
 
 
 
 | Código o valor devuelto                                                                                                                                                                                                                                                                                  | Descripción                                                                                                                                                                       |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="S_OK"></span><span id="s_ok"></span><dl> <dt>**S \_ correcto**</dt> </dl>                                                                                                                                                                 | El método se ha llevado a cabo de forma correcta.<br/>                                                                                                                                                  |
-| <span id="XPS_E_INVALID_SIGNATUREBLOCK_MARKUP"></span><span id="xps_e_invalid_signatureblock_markup"></span><dl> <dt>**XPS \_ E \_ no válido \_ SIGNATUREBLOCK \_ Markup**</dt> <dt>0x8052038b</dt> </dl> | Se encontró un error en el marcado XML del bloque de firma mientras se estaba leyendo el marcado de la firma.<br/>                                                               |
-| <span id="XPS_E_MARKUP_COMPATIBILITY_ELEMENTS"></span><span id="xps_e_markup_compatibility_elements"></span><dl> <dt>**XPS \_ \_Elementos de \_ compatibilidad \_ de marcado E**</dt> <dt>0x80520389</dt> </dl> | El valor de [**\_ \_ marcas de signo de XPS**](/windows/win32/api/xpsdigitalsignature/ne-xpsdigitalsignature-xps_sign_flags) especificó que no se esperaba ningún elemento de compatibilidad de marcado; sin embargo, se encontraron elementos de compatibilidad de marcado.<br/> |
-| <span id="XPS_E_OBJECT_DETACHED"></span><span id="xps_e_object_detached"></span><dl> <dt>**XPS \_ Objeto E 0x8052038a \_ \_ desasociados**</dt> <dt></dt> </dl>                                            | La interfaz no está asociada al administrador de firmas.<br/>                                                                                                            |
-| <span id="XPS_E_PACKAGE_ALREADY_OPENED"></span><span id="xps_e_package_already_opened"></span><dl> <dt>**XPS \_ El \_ paquete E \_ ya está \_ abierto**</dt> <dt>0x80520387</dt> </dl>                      | Ya se ha abierto un paquete XPS en el administrador de firmas. <br/>                                                                                                      |
-| <span id="XPS_E_PACKAGE_NOT_OPENED"></span><span id="xps_e_package_not_opened"></span><dl> <dt>**XPS \_ E \_ paquete \_ no \_ abierto**</dt> <dt>0x80520386</dt> </dl>                                  | Todavía no se ha abierto un paquete XPS en el administrador de firmas. <br/>                                                                                                      |
+| <span id="S_OK"></span><span id="s_ok"></span><dl> <dt>**S \_ OK**</dt> </dl>                                                                                                                                                                 | El método se ha llevado a cabo de forma correcta.<br/>                                                                                                                                                  |
+| <span id="XPS_E_INVALID_SIGNATUREBLOCK_MARKUP"></span><span id="xps_e_invalid_signatureblock_markup"></span><dl> <dt>**XPS \_ E \_ MARCADO \_ SIGNATUREBLOCK NO \_**</dt> VÁLIDO <dt>0x8052038b</dt> </dl> | Se encontró un error en el marcado XML del bloque de firma mientras se estaba leyendo el marcado de firma.<br/>                                                               |
+| <span id="XPS_E_MARKUP_COMPATIBILITY_ELEMENTS"></span><span id="xps_e_markup_compatibility_elements"></span><dl> <dt>**XPS \_ E \_ ELEMENTOS DE COMPATIBILIDAD DE \_ \_ MARCADO**</dt> <dt>0x80520389</dt> </dl> | El [**valor XPS \_ SIGN \_ FLAGS especificaba**](/windows/win32/api/xpsdigitalsignature/ne-xpsdigitalsignature-xps_sign_flags) que no se esperaba ningún elemento de compatibilidad de marcado; sin embargo, se encontraron elementos de compatibilidad de marcado.<br/> |
+| <span id="XPS_E_OBJECT_DETACHED"></span><span id="xps_e_object_detached"></span><dl> <dt>**XPS \_ E \_ OBJECT \_ DETACHED**</dt> <dt>0x8052038a</dt> </dl>                                            | La interfaz no está asociada al administrador de firmas.<br/>                                                                                                            |
+| <span id="XPS_E_PACKAGE_ALREADY_OPENED"></span><span id="xps_e_package_already_opened"></span><dl> <dt>**XPS \_ E \_ PACKAGE \_ ALREADY \_ OPENED**</dt> <dt>0x80520387</dt> </dl>                      | Ya se ha abierto un paquete XPS en el administrador de firmas. <br/>                                                                                                      |
+| <span id="XPS_E_PACKAGE_NOT_OPENED"></span><span id="xps_e_package_not_opened"></span><dl> <dt>**XPS \_ E \_ PACKAGE \_ NOT \_ OPENED**</dt> <dt>0x80520386</dt> </dl>                                  | Aún no se ha abierto un paquete XPS en el administrador de firmas. <br/>                                                                                                      |
 | <span id="XPS_E_SIGNATUREID_DUP"></span><span id="xps_e_signatureid_dup"></span><dl> <dt>**XPS \_ E \_ SIGNATUREID \_ DUP**</dt> <dt>0x80520388</dt> </dl>                                            | Dos o más firmas tienen el mismo identificador.<br/>                                                                                                                               |
 | <span id="XPS_E_SIGREQUESTID_DUP"></span><span id="xps_e_sigrequestid_dup"></span><dl> <dt>**XPS \_ E \_ SIGREQUESTID \_ DUP**</dt> <dt>0x80520385</dt> </dl>                                         | El identificador de solicitud de firma no es único dentro del bloque de firma.<br/>                                                                                                     |
 
@@ -32,9 +32,9 @@ En la tabla siguiente se enumeran todos los valores **HRESULT** que pueden ser d
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Algunos métodos de la API de firma digital XPS realizan llamadas a la API de [empaquetado](/previous-versions/windows/desktop/opc/packaging) . Para obtener información sobre los valores devueltos de la API de empaquetado, consulte [errores de empaquetado](/previous-versions/windows/desktop/opc/packaging-errors).
+Algunos métodos de API de firma digital XPS hacen llamadas a [Packaging](/previous-versions/windows/desktop/opc/packaging) API. Para obtener información sobre los valores devueltos de Packaging API, consulte [Errores de empaquetado.](/previous-versions/windows/desktop/opc/packaging-errors)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,10 +42,10 @@ Algunos métodos de la API de firma digital XPS realizan llamadas a la API de [e
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                            |
-| Encabezado<br/>                   | <dl> <dt>XpsDigitalSignature. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>XpsDigitalSignature. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                            |
+| Header<br/>                   | <dl> <dt>Xpsdigitalsignature.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>XpsDigitalSignature.idl</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Representa el valor de instancia de una métrica.
 ms.assetid: 6b272ae8-7684-45bb-bff8-6559680cc8b6
-title: CIM_BaseMetricValue (clase)
+title: CIM_BaseMetricValue clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,14 +22,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ca6c90a4b6b3ef3e690c13612f69480ec5f008be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 107dc3721ee32ca7f51efd563cdd6af14af483a69a5990e0b107a153b79b9351
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014703"
 ---
-# <a name="cim_basemetricvalue-class"></a>\_Clase BaseMetricValue de CIM
+# <a name="cim_basemetricvalue-class"></a>Cim \_ BaseMetricValue (clase)
 
 Representa el valor de instancia de una métrica.
 
@@ -53,13 +53,13 @@ class CIM_BaseMetricValue : CIM_ManagedElement
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ BaseMetricValue** tiene estos tipos de miembros:
+La **clase \_ BaseMetricValue de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ BaseMetricValue** tiene estas propiedades.
+La **clase \_ BaseMetricValue de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -72,7 +72,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Dimensión para la que este conjunto de valores de métrica se divide en función de la propiedad **BreakdownDimensions** del [**objeto \_ BaseMetricDefinition de CIM**](cim-basemetricdefinition.md) asociado.
+Dimensión para la que este conjunto de valores de métrica se desglosa en función de la propiedad **BreakdownDimensions** del objeto [**\_ BaseMetricDefinition de CIM**](cim-basemetricdefinition.md) asociado.
 
 </dd> <dt>
 
@@ -85,23 +85,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Valor de la propiedad **BreakdownDimension** definida para este valor de instancia. Por ejemplo, si **BreakdownDimension** contiene "TransactionName", esta propiedad podría nombrar la transacción real a la que se aplica este valor de métrica en particular.
+Valor de la propiedad **BreakdownDimension** definida para este valor de instancia. Por ejemplo, si **BreakdownDimension** contiene "TransactionName", esta propiedad podría dar nombre a la transacción real a la que se aplica este valor de métrica determinado.
 
 </dd> <dt>
 
-**Duration**
+**Duración**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md).**TimeScope**","**\_ BaseMetricValue CIM**.**Marca** de tiempo ")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md).**TimeScope**", "**CIM \_ BaseMetricValue**.**TimeStamp**")
 </dt> </dl>
 
-La duración de la validez de este valor de métrica. Esta propiedad no debe existir para las marcas de tiempo que solo se aplican a un punto en el tiempo, pero debe definirse para los valores que se consideran válidos durante un período de tiempo determinado (por ejemplo, muestreo). Si la propiedad duration existe y no es null, el valor de **marca** de **tiempo** debe ser el final del intervalo.
+Duración de tiempo durante la cual este valor de métrica es válido. Esta propiedad no debe existir para las marcas de tiempo que solo se aplican a un momento dado, pero deben definirse para los valores que se consideran válidos durante un período de tiempo determinado (por ejemplo, muestreo). Si la **propiedad Duration** existe y no es NULL, el **valor TimeStamp** debe ser el final del intervalo.
 
 </dd> <dt>
 
@@ -114,22 +114,22 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("InstanceID")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("InstanceID")
 </dt> </dl>
 
 Identifica de forma única una instancia de esta clase dentro del ámbito del espacio de nombres contenedor.
 
 > [!IMPORTANT]
 >
-> Con el fin de garantizar la unicidad dentro del espacio de nombres, el valor de la propiedad **InstanceID** debe construirse en el patrón siguiente: *OrgID*:*LocalID*
+> Para garantizar la unidad dentro del espacio de nombres, el valor de la propiedad **InstanceID** debe construirse con el siguiente patrón: *OrgID*:*LocalID*
 >
-> *OrgID* debe incluir un nombre con copyright, marca registrada o de otro tipo que sea propiedad de la entidad empresarial que define el **InstanceID**, o bien un identificador registrado asignado por una entidad global reconocida. Este patrón es similar a la estructura de los nombres de clase de esquema. Además, para garantizar la exclusividad, el primer signo de dos puntos en **InstanceID** debe estar entre el *OrgID* y el *LocalID*. Por lo tanto, el *OrgID* no debe contener un signo de dos puntos (': ').
+> *OrgID* debe incluir un nombre con derechos de autor, marca comercial o único que sea propiedad de la entidad empresarial que define **instanceID** o ser un identificador registrado asignado por una autoridad global reconocida. Este patrón es similar a la estructura de los nombres de clase de esquema. Además, para garantizar la unidad, el primer signo de dos puntos de **InstanceID** debe estar entre *orgID* y *LocalID.* Por lo *tanto, orgID* no debe contener dos puntos (':').
 >
-> La entidad de negocio elige *LocalID* y no se debe volver a usar para identificar distintos elementos del mundo real subyacentes.
+> La entidad empresarial elige *LocalID* y no se debe volver a usar para identificar los distintos elementos subyacentes del mundo real.
 >
-> Si no se usa el patrón anterior, la entidad de definición debe asegurarse de que el valor **InstanceID** resultante no se vuelva a usar en las propiedades **InstanceID** producidas por este proveedor u otros proveedores para este espacio de nombres.
+> Si no se usa el patrón anterior, la entidad de definición debe asegurarse de que el valor **instanceID** resultante no se vuelva a usar en ninguna propiedad **InstanceID** producida por este proveedor u otros proveedores para este espacio de nombres.
 >
-> En el caso de las instancias definidas por el grupo de tareas de administración distribuida (DMTF), el patrón debe usarse con el valor de *OrgID* establecido en CIM.
+> En el caso de las instancias definidas por el Grupo de tareas de administración distribuida (DMTF), el patrón debe usarse con *el OrgID* establecido en CIM.
 
  
 
@@ -144,11 +144,11 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre descriptivo para el elemento que mide la métrica.
+Nombre descriptivo para el elemento medido por la métrica.
 
-Esta propiedad es necesaria si la definición de la métrica no está asociada a un objeto [**\_ ManagedElement de CIM**](cim-managedelement.md) y se puede usar en otros casos para proporcionar información complementaria. Esto permite capturar las métricas independientemente de cualquier objeto **\_ ManagedElement de CIM** .
+Esta propiedad es necesaria si la definición de métrica no está asociada a un objeto [**\_ ManagedElement**](cim-managedelement.md) de CIM y se puede usar en otros casos para proporcionar información complementaria. Esto permite capturar métricas independientemente de cualquier **\_ objeto ManagedElement de CIM.**
 
-Si hay varios objetos [**de \_ ManagedElement de CIM**](cim-managedelement.md) asociados al valor de métricas, puede elegir uno de los elementos administrados para crear la información complementaria de la métrica. La propiedad no está diseñada para utilizarse como clave externa para consultar el elemento medido. En su lugar, se debe usar la asociación con el **\_ ManagedElement de CIM** .
+Si hay varios objetos [**\_ ManagedElement**](cim-managedelement.md) de CIM asociados al valor de métrica, puede elegir uno de los elementos administrados para crear la información complementaria de la métrica. La propiedad no está pensada para usarse como una clave externa para consultar el elemento medido. En su lugar, se debe usar **la asociación a \_ ManagedElement** de CIM.
 
 </dd> <dt>
 
@@ -161,10 +161,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**obligatorio**](/windows/desktop/WmiSdk/standard-qualifiers), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md).**ID**")
+Calificadores: [**Required**](/windows/desktop/WmiSdk/standard-qualifiers), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md).**Id.**")
 </dt> </dl>
 
-La clave de la instancia de [**\_ BaseMetricDefinition de CIM**](cim-basemetricdefinition.md) que está asociada a este valor de instancia.
+Clave de la instancia [**\_ BaseMetricDefinition de CIM**](cim-basemetricdefinition.md) asociada a este valor de instancia.
 
 </dd> <dt>
 
@@ -177,32 +177,32 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **obligatorio**](/windows/desktop/WmiSdk/standard-qualifiers)
+Calificadores: [ **requeridos**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Representación de cadena del valor de métrica. El tipo de datos original del valor de métrica se especifica en el objeto [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) asociado.
+Representación de cadena del valor de métrica. El tipo de datos original del valor de métrica se especifica en el objeto [**\_ BaseMetricDefinition de CIM**](cim-basemetricdefinition.md) asociado.
 
 </dd> <dt>
 
-**Indicaciones**
+**Timestamp**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md).**TimeScope**","**\_ BaseMetricValue CIM**.**Duration**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md).**TimeScope**", "**CIM \_ BaseMetricValue**.**Duración**")
 </dt> </dl>
 
-La hora a la que se calcula el valor de una instancia de métrica. Esto es diferente del momento en que se crea la instancia. Si la propiedad **volatile** es true, este valor cambia cada vez que se toma una nueva instantánea de medida.
+Hora a la que se calcula el valor de una instancia de métrica. Esto es diferente del momento en que se crea la instancia. Si la **propiedad Volatile** es true, este valor cambia cada vez que se toma una nueva instantánea de medida.
 
-Una aplicación de administración puede establecer una serie temporal de datos de métricas mediante la recuperación de las instancias de **CIM \_ BaseMetricValue** y ordenarlas según su valor de **marca** de tiempo.
+Una aplicación de administración puede establecer una serie temporal de datos de métricas recuperando las instancias de **\_ CIM BaseMetricValue** y ordenándolos según su **valor TimeStamp.**
 
 </dd> <dt>
 
-**Volatil**
+**Volátil**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -211,7 +211,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-True si el valor de **marca** de tiempo cambia cada vez que cambia el valor de la instancia de métrica. False si este objeto debe permanecer sin cambios y se ha creado un nuevo objeto para el nuevo valor de **marca** de tiempo.
+True si el **valor de TimeStamp** cambia cada vez que cambia el valor de la instancia de métrica. False si este objeto debe permanecer sin cambios y se ha creado un nuevo objeto para el **nuevo valor TimeStamp.**
 
 </dd> </dl>
 
@@ -223,8 +223,8 @@ True si el valor de **marca** de tiempo cambia cada vez que cambia el valor de l
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -233,7 +233,7 @@ True si el valor de **marca** de tiempo cambia cada vez que cambia el valor de l
 
 <dl> <dt>
 
-[**ManagedElement de CIM \_**](cim-managedelement.md)
+[**CIM \_ ManagedElement**](cim-managedelement.md)
 </dt> </dl>
 
  

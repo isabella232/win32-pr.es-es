@@ -1,11 +1,11 @@
 ---
-title: DownloadCollection. removeItem (método)
-description: Tenga en cuenta que en esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método removeItem quita un elemento de descarga de una colección de descargas.
+title: Método DownloadCollection.removeItem
+description: Nota En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método removeItem quita un elemento de descarga de una colección de descarga.
 ms.assetid: 0008752e-c81a-4f91-a582-9d6b46569479
 keywords:
-- método removeItem Media Player Windows
-- método removeItem Windows Media Player, clase DownloadCollection
-- Clase DownloadCollection Windows Media Player, método removeItem
+- Método removeItem Reproductor de Windows Media
+- Método removeItem Reproductor de Windows Media , clase DownloadCollection
+- Clase DownloadCollection Reproductor de Windows Media método , removeItem
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1798665b79327b7956c1b78509b55cc6e6dd70c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d1d7eaa7b26a4d64070cae426d1bbc23418593fa8ec5472e870ed7529ce8a122
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997075"
 ---
-# <a name="downloadcollectionremoveitem-method"></a>DownloadCollection. removeItem (método)
+# <a name="downloadcollectionremoveitem-method"></a>Método DownloadCollection.removeItem
 
 > [!Note]  
-> En esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-El método **RemoveItem** quita un elemento de descarga de una colección de descargas.
+El **método removeItem** quita un elemento de descarga de una colección de descarga.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,10 +47,10 @@ DownloadCollection.removeItem(
 
 <dl> <dt>
 
-*itemID* \[ de\]
+*itemID* \[ En\]
 </dt> <dd>
 
-**Número** (**largo**) que especifica el índice del **DownloadItem** que se va a quitar.
+**Number** (**long**) que especifica el índice del **elemento DownloadItem** que se quitará.
 
 </dd> </dl>
 
@@ -58,7 +58,7 @@ DownloadCollection.removeItem(
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si la descarga representada por *itemID* está en curso, este método cancela la descarga.
 
@@ -68,7 +68,7 @@ Si la descarga representada por *itemID* está en curso, este método cancela la
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/>                                  |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/>                                  |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -77,10 +77,10 @@ Si la descarga representada por *itemID* está en curso, este método cancela la
 
 <dl> <dt>
 
-[**DownloadCollection. Item**](downloadcollection-item.md)
+[**DownloadCollection.item**](downloadcollection-item.md)
 </dt> <dt>
 
-[**Objeto DownloadCollection**](downloadcollection-object.md)
+[**DownloadCollection (objeto)**](downloadcollection-object.md)
 </dt> </dl>
 
  

@@ -1,33 +1,33 @@
 ---
-description: Esta sección contiene una lista alfabética de las constantes del dispositivo del teléfono TAPI.
+description: Esta sección contiene una lista alfabética de las constantes del dispositivo de teléfono TAPI.
 ms.assetid: 0e7425e3-f2e4-4703-bb43-3cb293d49922
-title: Constantes de dispositivo de teléfono
+title: Teléfono Constantes de dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23e5c271c2c974101ebbfe5048e290caafea45f6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7ec2b1e1202c04a87f7daad459bd07124754c60a90e015eba2603c61029d42b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103909981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873305"
 ---
-# <a name="phone-device-constants"></a>Constantes de dispositivo de teléfono
+# <a name="phone-device-constants"></a>Teléfono Constantes de dispositivo
 
-Esta sección contiene una lista alfabética de las siguientes constantes de dispositivo de teléfono TAPI:
+Esta sección contiene una lista alfabética de las siguientes constantes de dispositivos de teléfono TAPI:
 
--   [Constantes de PHONEBUTTONFUNCTION \_](phonebuttonfunction--constants.md)
--   [Constantes de PHONEBUTTONMODE \_](phonebuttonmode--constants.md)
--   [Constantes de PHONEBUTTONSTATE \_](phonebuttonstate--constants.md)
--   [Constantes de PHONEERR \_](phoneerr--constants.md)
--   [Constantes de PHONEFEATURE \_](phonefeature--constants.md)
--   [Constantes de PHONEHOOKSWITCHDEV \_](phonehookswitchdev--constants.md)
--   [Constantes de PHONEHOOKSWITCHMODE \_](phonehookswitchmode--constants.md)
--   [Constantes de PHONEINITIALIZEEXOPTION \_](phoneinitializeexoption--constants.md)
--   [Constantes de PHONELAMPMODE \_](phonelampmode--constants.md)
--   [Constantes de PHONEPRIVILEGE \_](phoneprivilege--constants.md)
--   [Constantes de PHONESTATE \_](phonestate--constants.md)
--   [Constantes de PHONESTATUSFLAGS \_](phonestatusflags--constants.md)
--   [STRINGFORMAT ( \_ constantes)](stringformat--constants.md)
+-   [Constantes \_ PHONEBUTTONFUNCTION](phonebuttonfunction--constants.md)
+-   [Constantes \_ PHONEBUTTONMODE](phonebuttonmode--constants.md)
+-   [Constantes \_ PHONEBUTTONSTATE](phonebuttonstate--constants.md)
+-   [Constantes \_ PHONEERR](phoneerr--constants.md)
+-   [Constantes PHONEFEATURE \_](phonefeature--constants.md)
+-   [Constantes PHONEHOOKSWITCHDEV \_](phonehookswitchdev--constants.md)
+-   [Constantes PHONEHOOKSWITCHMODE \_](phonehookswitchmode--constants.md)
+-   [Constantes PHONEINITIALIZEEXOPTION \_](phoneinitializeexoption--constants.md)
+-   [Constantes PHONELAMPMODE \_](phonelampmode--constants.md)
+-   [Constantes PHONEPRIVILEGE \_](phoneprivilege--constants.md)
+-   [Constantes \_ PHONESTATE](phonestate--constants.md)
+-   [Constantes \_ PHONESTATUSFLAGS](phonestatusflags--constants.md)
+-   [Constantes \_ STRINGFORMAT](stringformat--constants.md)
 
  
 

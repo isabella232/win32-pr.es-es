@@ -1,19 +1,19 @@
 ---
-description: Evita comportamientos de gestos perimetrales cuando una ventana de la aplicación está activa y en modo de pantalla completa (o una ventana propiedad está activa).
+description: Evita los comportamientos de gestos perimetrales cuando una ventana de aplicación está activa y en modo de pantalla completa (o una ventana de propiedad está activa).
 ms.assetid: F4242C05-181B-44FC-BE6C-8ABB76079981
-title: System. EdgeGesture. DisableTouchWhenFullscreen
+title: System.EdgeGesture.DisableTouchWhenFullscreen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 208962f11b96420a8e0ef771ada846a3f802e815
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13132ba30fd3f1e594ec54966dfe2268ce66d570b66ca6d34b1c63b03bfc0c75
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105659968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845125"
 ---
-# <a name="systemedgegesturedisabletouchwhenfullscreen"></a>System. EdgeGesture. DisableTouchWhenFullscreen
+# <a name="systemedgegesturedisabletouchwhenfullscreen"></a>System.EdgeGesture.DisableTouchWhenFullscreen
 
-Evita comportamientos de gestos perimetrales cuando una ventana de la aplicación está activa y en modo de pantalla completa (o una ventana propiedad está activa).
+Evita los comportamientos de gestos perimetrales cuando una ventana de aplicación está activa y en modo de pantalla completa (o una ventana de propiedad está activa).
 
 > [!Note]  
 > En el modo de pantalla completa, el tamaño de la ventana de la aplicación coincide con la resolución de pantalla.
@@ -35,17 +35,17 @@ propertyDescription
       type = Boolean
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En Windows 8, las interacciones de los usuarios con los bordes de la pantalla muestran la interfaz de usuario del sistema, como las barras de la aplicación, los accesos y las aplicaciones en ejecución.
+En Windows 8, las interacciones del usuario con los bordes de la pantalla muestran la interfaz de usuario del sistema, como barras de aplicaciones, accesos y aplicaciones en ejecución.
 
-En el caso de las aplicaciones remotas de pantalla completa, este comportamiento de la interfaz de usuario en el equipo local podría invalidar e interferir con la interfaz de usuario de la sesión remota. Esta propiedad permite a una aplicación deshabilitar la interfaz de usuario perimetral en el equipo local.
+En el caso de las aplicaciones remotas a pantalla completa, este comportamiento de la interfaz de usuario en el equipo local podría invalidar e interferir con la interfaz de usuario de la sesión remota. Esta propiedad permite que una aplicación deshabilite la interfaz de usuario perimetral en el equipo local.
 
-Para deshabilitar la interfaz de usuario perimetral, establezca esta propiedad en VARIANT \_ true. El valor predeterminado es VARIANT \_ false.
+Para deshabilitar la interfaz de usuario perimetral, establezca esta propiedad en VARIANT \_ TRUE. El valor predeterminado es VARIANT \_ FALSE.
 
-Esta propiedad no tiene ningún efecto en las aplicaciones de la tienda Windows.
+Esta propiedad no tiene ningún efecto en las Windows Store.
 
-En el ejemplo siguiente se muestra cómo establecer los comportamientos de la interfaz de usuario perimetral.
+En el ejemplo siguiente se muestra cómo establecer comportamientos de interfaz de usuario perimetral.
 
 
 ```
@@ -77,7 +77,7 @@ HRESULT SetTouchDisableProperty(HWND hwnd, BOOL fDisableTouch)
 [searchInfo](./propdesc-schema-searchinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> </dl>
 
  

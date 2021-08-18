@@ -33,7 +33,7 @@ Mueva los datos de un registro de punto flotante al registro [de direcciones](dx
 
 where
 
--   dst debe ser address [register](dx9-graphics-reference-asm-vs-registers-address.md), a0.
+-   dst debe ser el [registro de direcciones](dx9-graphics-reference-asm-vs-registers-address.md), a0.
 -   src es un registro de origen.
 
 ## <a name="remarks"></a>Comentarios
@@ -48,7 +48,7 @@ where
 
  
 
-Mueve los datos de punto flotante a un registro entero. Los valores se convierten de punto flotante mediante el redondeo al más cercano.
+Mueve los datos de punto flotante a un registro entero. Los valores se convierten de punto flotante mediante redondeo a más cercano.
 
 El registro de direcciones es el único registro de destino permitido.
 

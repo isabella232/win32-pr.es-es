@@ -35,7 +35,7 @@ No hay elementos secundarios.
 
 | Elemento                                               | Descripción                                                                                   |
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [**stubDefinitions**](stubdefinitions.md)<br/> | Genera implementaciones para las funciones de código auxiliar para las operaciones de tipo de puerto.<br/> <br/> |
+| [**stubDefinitions**](stubdefinitions.md)<br/> | Genera implementaciones para funciones de código auxiliar para operaciones de tipo de puerto.<br/> <br/> |
 
 
 
@@ -55,7 +55,7 @@ El tipo de desasignador debe incluirse en un par de <deallocator></deallocator> 
 
 
 
-| Etiqueta | Valor |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

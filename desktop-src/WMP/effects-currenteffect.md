@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. currentEffect
+title: EFFECTS.currentEffect
 description: El atributo currentEffect especifica o recupera la visualización actual.
 ms.assetid: d6b0e77d-2872-420a-b5f5-36fd23243648
 keywords:
-- EFFECTs. currentEffect Windows Media Player
+- Effects.currentEffect Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b19398946906fb6c6ea43234c110383b27b16ede
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2d9ac47ef88d1a0bce4982f71ce2e20e33f48933c9916bbb1e62085b5a1e5178
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996875"
 ---
-# <a name="effectscurrenteffect"></a>EFFECTs. currentEffect
+# <a name="effectscurrenteffect"></a>EFFECTS.currentEffect
 
-El atributo **currentEffect** especifica o recupera la visualización actual.
+El **atributo currentEffect** especifica o recupera la visualización actual.
 
 ``` syntax
         elementID.currentEffect
@@ -29,11 +29,11 @@ El atributo **currentEffect** especifica o recupera la visualización actual.
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **objeto** de lectura/escritura. El valor predeterminado es la primera visualización del orden de creación. Si no se crean visualizaciones en la máscara, el valor predeterminado es la primera visualización del registro.
+Este atributo es un objeto de lectura **y escritura.** El valor predeterminado es la primera visualización en el orden de creación. Si no hay visualizaciones que se han escrito en la máscara, el valor predeterminado es la primera visualización en el registro.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede usar este objeto para tener acceso a las visualizaciones personalizadas que ha creado. Por ejemplo, puede exponer una propiedad a través de la interfaz **IDispatch** en la visualización. Después, puede cambiar el valor de la propiedad de la máscara haciendo que la visualización sea el efecto actual y usando el objeto **currentEffect** para establecer un nuevo valor para la propiedad. Por ejemplo, si la visualización expone una propiedad denominada backgroundColor, el código JScript siguiente especifica un nuevo valor:
+Puede usar este objeto para acceder a las visualizaciones personalizadas que ha creado. Por ejemplo, podría exponer una propiedad a través de la **interfaz IDispatch** en la visualización. A continuación, puede cambiar el valor de propiedad de la máscara haciendo que la visualización sea el efecto actual y, a continuación, usando el **objeto currentEffect** para establecer un nuevo valor para la propiedad. Por ejemplo, si la visualización expone una propiedad denominada backgroundColor, el código JScript siguiente especifica un nuevo valor:
 
 
 ```JScript
@@ -49,7 +49,7 @@ MyEffects.currentEffect.backgroundColor = "blue";
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -57,13 +57,13 @@ MyEffects.currentEffect.backgroundColor = "blue";
 
 <dl> <dt>
 
-[**EFFECTs, elemento**](effects-element.md)
+[**ELEMENTO EFFECTS**](effects-element.md)
 </dt> <dt>
 
-[**EFFECTs. currentEffectTitle**](effects-currenteffecttitle.md)
+[**EFFECTS.currentEffectTitle**](effects-currenteffecttitle.md)
 </dt> <dt>
 
-[**EFFECTs. currentEffectType**](effects-currenteffecttype.md)
+[**EFFECTS.currentEffectType**](effects-currenteffecttype.md)
 </dt> </dl>
 
  

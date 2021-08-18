@@ -33,7 +33,7 @@ Esta propiedad puede establecerse en uno de los valores siguientes.
 
 
 
-| Valor | Descripción                                                                                                                                 |
+| Value | Descripción                                                                                                                                 |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | 0     | El códec usará la lógica de detección de tipo de marco estándar.                                                                                 |
 | 1     | El códec tratará todos los fotogramas de vídeo de origen como fotogramas entrelazados.                                                                          |
@@ -62,7 +62,7 @@ Al codificar contenido mixto (que contiene fotogramas progresivas e entrelazados
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
@@ -70,7 +70,7 @@ Al codificar contenido mixto (que contiene fotogramas progresivas e entrelazados
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

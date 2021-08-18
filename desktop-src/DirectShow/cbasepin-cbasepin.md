@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f11dea6bd5bc3f766e5f93a04022dab5ba6e51a5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cbeead09843aa8bf66471caeaabbdb42ee8d97d01cdaa9a54809f35c437b52d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916905"
 ---
 # <a name="cbasepincbasepin-constructor"></a>Constructor CBasePin.CBasePin
 
@@ -91,9 +91,9 @@ Miembro de la [**enumeración \_ PIN DIRECTION**](/windows/win32/api/strmif/ne-s
 
 ## <a name="remarks"></a>Comentarios
 
-La sección crítica especificada por *pLock* serializa el estado del pin, incluido su estado de conexión, la elección del asignador, el tipo de medio y el estado de las operaciones de vaciado. No use esta sección crítica para serializar las operaciones de streaming. Para obtener más información, [vea Data Flow en el gráfico de filtros](data-flow-in-the-filter-graph.md).
+La sección crítica especificada por *pLock* serializa el estado del pin, incluido su estado de conexión, la elección del asignador, el tipo de medio y el estado de las operaciones de vaciado. No use esta sección crítica para serializar las operaciones de streaming. Para obtener más información, vea [Data Flow en filter Graph](data-flow-in-the-filter-graph.md).
 
-Un filtro podría crear pines en su método de constructor, por lo que en este momento el *puntero pFilter* podría no hacer referencia a un objeto válido. Almacene el puntero, pero no lo desreferencia mientras esté dentro del constructor del pin.
+Un filtro podría crear pasadores en su método de constructor, por lo que en este momento el *puntero pFilter* podría no hacer referencia a un objeto válido. Almacene el puntero, pero no desreferencialo dentro del constructor del pin.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,12 +101,12 @@ Un filtro podría crear pines en su método de constructor, por lo que en este m
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

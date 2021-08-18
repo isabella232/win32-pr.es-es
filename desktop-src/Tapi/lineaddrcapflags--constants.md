@@ -1,19 +1,19 @@
 ---
-description: Las \_ constantes de marcador de bits LINEADDRCAPFLAGS se usan en el miembro dwAddrCapFlags de la estructura de datos LINEADDRESSCAPS para describir diversas funcionalidades de dirección booleana.
+description: Las constantes de marca de bits LINEADDRCAPFLAGS se usan en el miembro dwAddrCapFlags de la estructura de datos LINEADDRESSCAPS para describir varias funcionalidades de \_ direcciones booleanas.
 ms.assetid: 530af273-82ba-4310-8aac-266d657e1bfe
-title: Constantes de LINEADDRCAPFLAGS_ (TAPI. h)
+title: LINEADDRCAPFLAGS_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27ce6c8bebb5683d5ecb7d576ff7d376ad0d62cc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 36ee1612c0d57b98a5f3caf82bcd26988fd5d9455c34e5caea5832153af06a50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003123"
 ---
-# <a name="lineaddrcapflags_-constants"></a>Constantes de LINEADDRCAPFLAGS \_
+# <a name="lineaddrcapflags_-constants"></a>Constantes LINEADDRCAPFLAGS \_
 
-Las  \_ constantes de marcador de bits LINEADDRCAPFLAGS se usan en el miembro **dwAddrCapFlags** de la estructura de datos [**LINEADDRESSCAPS**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps) para describir diversas funcionalidades de dirección booleana.
+Las constantes de marca de bits **LINEADDRCAPFLAGS** se usan en el \_ **miembro dwAddrCapFlags** de la estructura de datos [**LINEADDRESSCAPS**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps) para describir varias funcionalidades de direcciones booleanas.
 
 <dl> <dt>
 
@@ -22,7 +22,7 @@ Las  \_ constantes de marcador de bits LINEADDRCAPFLAGS se usan en el miembro **
 
 
 
-**True** si se debe aceptar una llamada de oferta mediante [**lineAccept**](/windows/desktop/api/Tapi/nf-tapi-lineaccept) para iniciar la alerta de los usuarios en ambos extremos de la llamada. en caso contrario, **false**. Normalmente, solo se usa con ISDN.
+**TRUE** si se debe aceptar una llamada de oferta mediante [**lineAccept para**](/windows/desktop/api/Tapi/nf-tapi-lineaccept) empezar a alertar a los usuarios en ambos extremos de la llamada. de lo contrario, **FALSE**. Normalmente, esto solo se usa con ISDN.
 
 
 </dt> </dl> </dd> <dt>
@@ -32,17 +32,17 @@ Las  \_ constantes de marcador de bits LINEADDRCAPFLAGS se usan en el miembro **
 
 
 
-La dirección admite [grupos ACD](about-call-center-controls.md#acd-group-object) en relación con las operaciones del centro de llamadas. Consulte [acerca de los controles del centro de llamadas](./about-call-center-controls.md) para obtener información adicional sobre los grupos ACD.
+La dirección admite grupos [de ACD en](about-call-center-controls.md#acd-group-object) conexión con las operaciones del centro de llamadas. Consulte [Acerca de los controles del centro de](./about-call-center-controls.md) llamadas para obtener información adicional sobre los grupos de ACD.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRCAPFLAGS_AUTORECONNECT"></span><span id="lineaddrcapflags_autoreconnect"></span>**LINEADDRCAPFLAGS \_ reconexión automática**
+<span id="LINEADDRCAPFLAGS_AUTORECONNECT"></span><span id="lineaddrcapflags_autoreconnect"></span>**LINEADDRCAPFLAGS \_ AUTORECONNECT**
 </dt> <dd> <dl> <dt>
 
 
 
-Especifica si la eliminación de una llamada de consulta se vuelve a conectar automáticamente a la llamada en la espera de la consulta. **True** si la reconexión se produce automáticamente; en caso contrario, **false**.
+Especifica si la eliminación de una llamada de consulta se vuelve a conectar automáticamente a la llamada en espera de consulta. **TRUE si** la reconexión se realiza automáticamente; de lo contrario, **FALSE**.
 
 
 </dt> </dl> </dd> <dt>
@@ -52,7 +52,7 @@ Especifica si la eliminación de una llamada de consulta se vuelve a conectar au
 
 
 
-Especifica si la red envía o bloquea de forma predeterminada información de identificador de autor de la llamada al efectuar una llamada a esta dirección. Si es **true**, la información del identificador está bloqueada de forma predeterminada; Si es **false**, la información del identificador se transmite de forma predeterminada.
+Especifica si la red envía o bloquea de forma predeterminada la información del identificador de autor de la llamada al realizar una llamada en esta dirección. Si **es TRUE,** la información del identificador está bloqueada de forma predeterminada; si **es FALSE**, la información del identificador se transmite de forma predeterminada.
 
 
 </dt> </dl> </dd> <dt>
@@ -62,7 +62,7 @@ Especifica si la red envía o bloquea de forma predeterminada información de id
 
 
 
-Especifica si se puede invalidar la configuración predeterminada para enviar o bloquear la información de identificador de llamada por llamada. Si es **true**, se puede reemplazar. Si es **false**, no se puede reemplazar.
+Especifica si la configuración predeterminada para enviar o bloquear la información del identificador de autor de la llamada se puede invalidar por llamada. Si **es TRUE,** la invalidación es posible; si **es FALSE**, no es posible invalidar.
 
 
 </dt> </dl> </dd> <dt>
@@ -72,7 +72,7 @@ Especifica si se puede invalidar la configuración predeterminada para enviar o 
 
 
 
-Especifica si los identificadores de finalización devueltos por [**lineCompleteCall**](/windows/desktop/api/Tapi/nf-tapi-linecompletecall) son útiles y únicos. **True si es** útil; en caso contrario, **false**.
+Especifica si los identificadores de finalización devueltos por [**lineCompleteCall**](/windows/desktop/api/Tapi/nf-tapi-linecompletecall) son útiles y únicos. **TRUE** si es útil; de lo contrario, **FALSE**.
 
 
 </dt> </dl> </dd> <dt>
@@ -82,17 +82,17 @@ Especifica si los identificadores de finalización devueltos por [**lineComplete
 
 
 
-**True** si [**lineDrop**](/windows/desktop/api/Tapi/nf-tapi-linedrop) en una llamada de conferencia Parent también tiene el efecto secundario de quitar (es decir, desconectar) las demás partes implicadas en la llamada de conferencia; **False** si la eliminación de una llamada de Conferencia sigue permitiendo a las demás partes comunicarse entre ellas.
+**TRUE** si [**lineDrop en**](/windows/desktop/api/Tapi/nf-tapi-linedrop) una llamada de conferencia primaria también tiene el efecto secundario de quitar (es decir, desconectar) a las demás partes implicadas en la llamada de conferencia; **FALSE** si la colocación de una llamada de conferencia todavía permite que las otras partes hablen entre sí.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRCAPFLAGS_CONFERENCEHELD"></span><span id="lineaddrcapflags_conferenceheld"></span>**LINEADDRCAPFLAGS \_ CONFERENCEHELD**
+<span id="LINEADDRCAPFLAGS_CONFERENCEHELD"></span><span id="lineaddrcapflags_conferenceheld"></span>**LINEADDRCAPFLAGS \_ CONFERENCEADD**
 </dt> <dd> <dl> <dt>
 
 
 
-Especifica si se puede realizar la Conferencia de una llamada de retención. A menudo, solo las llamadas en la espera de la consulta se pueden agregar a como una llamada de conferencia.
+Especifica si se puede realizar una llamada de duración precisa a la que se puede realizar la conferencia. A menudo, solo se pueden agregar llamadas en espera de consulta a como una llamada de conferencia.
 
 
 </dt> </dl> </dd> <dt>
@@ -102,7 +102,7 @@ Especifica si se puede realizar la Conferencia de una llamada de retención. A m
 
 
 
-Especifica si se puede establecer una llamada completamente nueva para su uso como una llamada de consulta (para agregar) en la Conferencia.
+Especifica si se puede establecer una llamada completamente nueva para usarla como una llamada de consulta (para agregar) en la conferencia.
 
 
 </dt> </dl> </dd> <dt>
@@ -112,17 +112,17 @@ Especifica si se puede establecer una llamada completamente nueva para su uso co
 
 
 
-Especifica si el teléfono de la entidad a la que se llama puede forzarse automáticamente OffHook al realizar llamadas.
+Especifica si el teléfono de la parte a la que se llamó se puede forzar automáticamente al realizar llamadas.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRCAPFLAGS_DIALED"></span><span id="lineaddrcapflags_dialed"></span>**\_marcado LINEADDRCAPFLAGS**
+<span id="LINEADDRCAPFLAGS_DIALED"></span><span id="lineaddrcapflags_dialed"></span>**LINEADDRCAPFLAGS \_ MARCADO**
 </dt> <dd> <dl> <dt>
 
 
 
-Especifica si se puede marcar una dirección de destino en esta dirección para realizar una llamada. **True** si se debe marcar una dirección de destino; **False** si la dirección de destino es fija (como con un "teléfono activo").
+Especifica si se puede marcar una dirección de destino en esta dirección para realizar una llamada. **TRUE** si se debe marcar una dirección de destino; **FALSE** si la dirección de destino es fija (como con un "teléfono de acceso rápido").
 
 
 </dt> </dl> </dd> <dt>
@@ -132,7 +132,7 @@ Especifica si se puede marcar una dirección de destino en esta dirección para 
 
 
 
-Especifica si el reenvío de llamadas para ocupado y para ninguna respuesta puede usar diferentes direcciones de reenvío. Esta marca solo es significativa si el reenvío está ocupado y no se puede controlar por separado. Esta marca es **true** si el reenvío está ocupado y para ninguna respuesta puede usar direcciones de destino diferentes. de lo contrario, es **false**.
+Especifica si el reenvío de llamadas para ocupado y sin respuesta puede usar direcciones de reenvío diferentes. Esta marca solo es significativa si el reenvío para ocupado y para ninguna respuesta se puede controlar por separado. Esta marca es **TRUE si** el reenvío para ocupado y para ninguna respuesta puede usar direcciones de destino diferentes; de lo contrario, es **FALSE.**
 
 
 </dt> </dl> </dd> <dt>
@@ -152,7 +152,7 @@ Especifica si el reenvío de llamadas implica el establecimiento de una llamada 
 
 
 
-Especifica si las llamadas internas y externas se pueden reenviar a diferentes direcciones de reenvío. Este marcador solo es significativo si el reenvío de llamadas internas y externas se puede controlar por separado. Esta marca es **true** si las llamadas internas y externas se pueden reenviar a direcciones de destino diferentes; de lo contrario, es **false**.
+Especifica si las llamadas internas y externas se pueden reenviar a direcciones de reenvío diferentes. Esta marca solo es significativa si el reenvío de llamadas internas y externas se puede controlar por separado. Esta marca es **TRUE si** las llamadas internas y externas se pueden reenviar a diferentes direcciones de destino; de lo contrario, es **FALSE.**
 
 
 </dt> </dl> </dd> <dt>
@@ -162,7 +162,7 @@ Especifica si las llamadas internas y externas se pueden reenviar a diferentes d
 
 
 
-Especifica si el número de anillos de una respuesta no se puede especificar cuando el reenvío de llamadas no responde. Si es **true**, el intervalo válido se proporciona en los miembros **dwMinFwdNumRings** y **dwMaxFwdNumRings** de la estructura [**LINEADDRESSCAPS**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps) .
+Especifica si se puede especificar el número de anillos para una sin respuesta cuando el reenvío llama a sin respuesta. Si **es TRUE,** el intervalo válido se proporciona en los miembros **dwMinFwdNumRings** y **dwMaxFwdNumRings** de la [**estructura LINEADDRESSCAPS.**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps)
 
 
 </dt> </dl> </dd> <dt>
@@ -172,7 +172,7 @@ Especifica si el número de anillos de una respuesta no se puede especificar cua
 
 
 
-Especifica si el estado de reenvío de la estructura [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) para esta dirección es válido o es como máximo una "estimación óptima", dada la ausencia de confirmación precisa del conmutador o la red.
+Especifica si el estado de reenvío en la estructura [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) de esta dirección es válido o, como máximo, es una "mejor estimación", dada la ausencia de confirmación precisa por parte del conmutador o la red.
 
 
 </dt> </dl> </dd> <dt>
@@ -182,7 +182,7 @@ Especifica si el estado de reenvío de la estructura [**LINEADDRESSSTATUS**](/wi
 
 
 
-Cuando una llamada en esta dirección se coloca en espera (mediante [**lineHold**](/windows/desktop/api/Tapi/nf-tapi-linehold) o una acción externa), se crea automáticamente una nueva llamada (lo que es más probable en LINECALLSTATE \_ ditono).
+Cuando se coloca una llamada en esta dirección en espera (mediante [**lineHold**](/windows/desktop/api/Tapi/nf-tapi-linehold) o una acción externa), se crea automáticamente una nueva llamada (lo más probable en LINECALLSTATE \_ DIALTONE).
 
 
 </dt> </dl> </dd> <dt>
@@ -192,7 +192,7 @@ Cuando una llamada en esta dirección se coloca en espera (mediante [**lineHold*
 
 
 
-La dirección está asociada a una línea interna en una PBX que está restringida de forma que no se puede usar para realizar llamadas a una dirección fuera del conmutador (por ejemplo, es una Intercom). La aplicación puede usar esta indicación para ayudar al usuario a seleccionar la apariencia de llamada correcta que se va a usar para realizar una llamada. Cuando este bit está desactivado, no indica necesariamente que la dirección se puede usar para realizar llamadas externas, ya que el proveedor de servicios no puede ser Cognizant del tipo de línea.
+La dirección está asociada a una línea interna en un VALOR DE SERVICIO restringido de tal manera que no se puede usar para realizar llamadas a una dirección fuera del conmutador (por ejemplo, es un timbre). La aplicación puede usar esta indicación para ayudar al usuario a seleccionar la apariencia de llamada correcta que se usará para realizar una llamada. Cuando este bit está desactivado, no indica necesariamente que la dirección se puede usar para realizar llamadas externas, ya que es posible que el proveedor de servicios no sea consciente del tipo de línea.
 
 
 </dt> </dl> </dd> <dt>
@@ -202,7 +202,7 @@ La dirección está asociada a una línea interna en una PBX que está restringi
 
 
 
-La dirección está asociada a una línea directa (tronco) y no se puede usar para realizar llamadas internas en una PBX. La aplicación puede usar esta indicación para ayudar al usuario a seleccionar la apariencia de llamada correcta que se va a usar para realizar una llamada. Cuando este bit está desactivado, no indica necesariamente que la dirección se puede usar para realizar llamadas internas, ya que el proveedor de servicios no puede ser Cognizant del tipo de línea.
+La dirección está asociada a una línea co directa (tronco) y no se puede usar para realizar llamadas internas en un OBJETO SWITCH. La aplicación puede usar esta indicación para ayudar al usuario a seleccionar la apariencia de llamada correcta que se usará para realizar una llamada. Cuando este bit está desactivado, no indica necesariamente que la dirección se puede usar para realizar llamadas internas, ya que es posible que el proveedor de servicios no sea consciente del tipo de línea.
 
 
 </dt> </dl> </dd> <dt>
@@ -212,7 +212,7 @@ La dirección está asociada a una línea directa (tronco) y no se puede usar pa
 
 
 
-Esta dirección no admite la traducción de direcciones de red telefónicas conmutadas públicamente. Esta marca solo se expone a las aplicaciones que negocian una versión de TAPI de 3,0 o superior.
+Esta dirección no admite la traducción de direcciones de red telefónica conmutadas públicamente. Esta marca solo se expone a las aplicaciones que negocian una versión TAPI de 3.0 o superior.
 
 
 </dt> </dl> </dd> <dt>
@@ -222,7 +222,7 @@ Esta dirección no admite la traducción de direcciones de red telefónicas conm
 
 
 
-Especifica si el teléfono de la entidad de origen puede tomarse automáticamente OffHook al realizar llamadas.
+Especifica si el teléfono de la parte de origen se puede quitar automáticamente al realizar llamadas.
 
 
 </dt> </dl> </dd> <dt>
@@ -232,7 +232,7 @@ Especifica si el teléfono de la entidad de origen puede tomarse automáticament
 
 
 
-Especifica si el marcado parcial está disponible.
+Especifica si está disponible el marcado parcial.
 
 
 </dt> </dl> </dd> <dt>
@@ -242,7 +242,7 @@ Especifica si el marcado parcial está disponible.
 
 
 
-**True** si [**linePickup**](/windows/desktop/api/Tapi/nf-tapi-linepickup) se puede usar para recoger una llamada detectada por el usuario como una llamada de llamada en espera; en caso contrario, **false**.
+**TRUE** si [**linePickup**](/windows/desktop/api/Tapi/nf-tapi-linepickup) se puede usar para seleccionar una llamada detectada por el usuario como una llamada en espera de llamada; de lo contrario, **FALSE**.
 
 
 </dt> </dl> </dd> <dt>
@@ -262,17 +262,17 @@ Especifica si se requiere un identificador de grupo para la recogida de llamadas
 
 
 
-Esta dirección tiene funciones mejoradas de supervisión del progreso de las llamadas que se pueden aplicar a las llamadas salientes para determinar los Estados de la llamada, como *timbre*, *ocupado*, *specialinfo* y *conectado*, o el tipo de medio del dispositivo que responde a la llamada. También puede tener la capacidad de transferir automáticamente llamadas salientes a otra dirección cuando una llamada alcanza cualquiera de un conjunto predefinido de Estados.
+Esta dirección tiene funcionalidades mejoradas de supervisión del progreso de la llamada que se pueden aplicar a las llamadas salientes para determinar los estados de llamada, como *ringback*, *busy*, *specialinfo* y *connected,* o el tipo de medio del dispositivo que responde a la llamada. También puede tener la capacidad de transferir automáticamente las llamadas salientes a otra dirección cuando una llamada alcanza cualquiera de los estados predefinidos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRCAPFLAGS_QUEUE"></span><span id="lineaddrcapflags_queue"></span>**\_cola LINEADDRCAPFLAGS**
+<span id="LINEADDRCAPFLAGS_QUEUE"></span><span id="lineaddrcapflags_queue"></span>**COLA LINEADDRCAPFLAGS \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Esta dirección no está asociada a una estación o un dispositivo físico determinados, pero es un lugar en el que las llamadas esperan para un procesamiento posterior. Las llamadas que se colocan en la cola pueden recibir un tratamiento determinado. También se pueden transferir automáticamente cuando un recurso determinado está disponible (por ejemplo, si la cola es una cola de ACD y las llamadas están esperando a un agente disponible).
+Esta dirección no está asociada a una estación o dispositivo físico determinados, pero es un lugar de retención donde las llamadas esperan a un procesamiento adicional. Las llamadas colocadas en la cola pueden recibir un tratamiento determinado. También se pueden transferir automáticamente cuando un recurso determinado está disponible (por ejemplo, si la cola es una cola de ACD y las llamadas esperan a un agente disponible).
 
 
 </dt> </dl> </dd> <dt>
@@ -282,17 +282,17 @@ Esta dirección no está asociada a una estación o un dispositivo físico deter
 
 
 
-Esta dirección no está asociada a una estación o un dispositivo físico determinados, pero es un lugar en el que las llamadas esperan a que la aplicación realice el enrutamiento (la aplicación examina la dirección a la que se llama y puede redirigir la llamada a otra dirección). La llamada también se puede transferir automáticamente si expira el tiempo de espera de enrutamiento (el conmutador normalmente presupone un enrutamiento predeterminado).
+Esta dirección no está asociada a una estación o dispositivo físico determinados, pero es un lugar de retención donde las llamadas esperan el enrutamiento por parte de la aplicación (la aplicación examina la dirección llamada y puede redirigir la llamada a otra dirección). La llamada también se puede transferir automáticamente si expira un tiempo de espera de enrutamiento (el conmutador suele suponer un enrutamiento predeterminado).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRCAPFLAGS_SECURE"></span><span id="lineaddrcapflags_secure"></span>**LINEADDRCAPFLAGS \_ seguro**
+<span id="LINEADDRCAPFLAGS_SECURE"></span><span id="lineaddrcapflags_secure"></span>**LINEADDRCAPFLAGS \_ SECURE**
 </dt> <dd> <dl> <dt>
 
 
 
-Especifica si las llamadas en esta dirección se pueden proteger en el momento de la configuración de la llamada.
+Especifica si las llamadas en esta dirección se pueden proteger en el momento de la configuración de llamadas.
 
 
 </dt> </dl> </dd> <dt>
@@ -302,7 +302,7 @@ Especifica si las llamadas en esta dirección se pueden proteger en el momento d
 
 
 
-La aplicación puede optar por establecer el miembro **CallingPartyID** en [**LINECALLPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linecallparams) al llamar a [**lineMakeCall**](/windows/desktop/api/Tapi/nf-tapi-linemakecall) y a otras funciones que aceptan una estructura **LINECALLPARAMS** . El proveedor de servicios, si el contenido del identificador es aceptable y está disponible una ruta de acceso, pasar el identificador a la parte llamada para indicar la identidad de la entidad de llamada.
+La aplicación puede optar por establecer el miembro **CallingPartyID** en [**LINECALLPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linecallparams) al llamar a [**lineMakeCall**](/windows/desktop/api/Tapi/nf-tapi-linemakecall) y otras funciones que aceptan una **estructura LINECALLPARAMS.** Si el contenido del identificador es aceptable y hay una ruta de acceso disponible, el proveedor de servicios pasará el identificador a la parte llamada para indicar la identidad de la parte que realiza la llamada.
 
 
 </dt> </dl> </dd> <dt>
@@ -312,17 +312,17 @@ La aplicación puede optar por establecer el miembro **CallingPartyID** en [**LI
 
 
 
-Especifica si la configuración de una llamada de conferencia comienza con una llamada inicial (**false**) o sin una llamada inicial (**true**).
+Especifica si la configuración de una llamada de conferencia comienza con una llamada inicial **(FALSE)** o sin ninguna llamada inicial **(TRUE).**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRCAPFLAGS_TRANSFERHELD"></span><span id="lineaddrcapflags_transferheld"></span>**LINEADDRCAPFLAGS \_ TRANSFERHELD**
+<span id="LINEADDRCAPFLAGS_TRANSFERHELD"></span><span id="lineaddrcapflags_transferheld"></span>**LINEADDRCAPFLAGS \_ TRANSFERADD**
 </dt> <dd> <dl> <dt>
 
 
 
-Especifica si se puede transferir una llamada de retención. A menudo, solo se pueden transferir llamadas en la espera de la consulta.
+Especifica si se puede transferir una llamada a duración. A menudo, solo se pueden transferir las llamadas en espera de consulta.
 
 
 </dt> </dl> </dd> <dt>
@@ -332,14 +332,14 @@ Especifica si se puede transferir una llamada de retención. A menudo, solo se p
 
 
 
-Especifica si se puede establecer una llamada completamente nueva para su uso como una llamada de consulta en la transferencia.
+Especifica si se puede establecer una llamada completamente nueva para usarla como una llamada de consulta en la transferencia.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Sin extensibilidad. Todos los 32 bits están reservados.
+Sin extensibilidad. Los 32 bits están reservados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -347,8 +347,8 @@ Sin extensibilidad. Todos los 32 bits están reservados.
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

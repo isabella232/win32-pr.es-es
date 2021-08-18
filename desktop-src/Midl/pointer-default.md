@@ -1,6 +1,6 @@
 ---
 title: pointer_default (atributo)
-description: El atributo \ pointer default\ especifica el atributo de puntero predeterminado para todos los punteros excepto los punteros de nivel superior que \_ aparecen en las listas de parámetros.
+description: El atributo \ pointer default\ especifica el atributo de puntero predeterminado para todos los punteros, excepto los punteros de nivel superior que \_ aparecen en las listas de parámetros.
 ms.assetid: a6e83034-8adb-483d-8d1e-432a1aed22c6
 keywords:
 - pointer_default atributo MIDL
@@ -21,7 +21,7 @@ ms.locfileid: "119013773"
 ---
 # <a name="pointer_default-attribute"></a>atributo \_ predeterminado de puntero
 
-El **\[ atributo predeterminado \_ de \]** puntero especifica el atributo de puntero predeterminado para todos los punteros excepto los punteros de nivel superior que aparecen en las listas de parámetros.
+El **\[ atributo predeterminado \_ de \]** puntero especifica el atributo de puntero predeterminado para todos los punteros, excepto los punteros de nivel superior que aparecen en las listas de parámetros.
 
 ``` syntax
 pointer_default ( ptr | ref | unique )

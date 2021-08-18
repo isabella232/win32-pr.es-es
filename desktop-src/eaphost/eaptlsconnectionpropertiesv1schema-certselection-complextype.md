@@ -57,7 +57,7 @@ El **tipo complejo CertSelection** determina cómo el usuario selecciona un cert
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

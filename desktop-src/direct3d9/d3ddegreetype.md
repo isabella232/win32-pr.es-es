@@ -92,7 +92,7 @@ Los valores de esta enumeración se usan para describir las curvas usadas por la
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

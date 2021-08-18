@@ -38,9 +38,9 @@ Anima o cambia el valor de la propiedad Left de un rectángulo de recorte. La pr
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 aplicaciones \[ de escritorio\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows solo 8 \[ aplicaciones de escritorio\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2012 \[\]<br/>                                 |
 | Header<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
@@ -48,7 +48,7 @@ Anima o cambia el valor de la propiedad Left de un rectángulo de recorte. La pr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

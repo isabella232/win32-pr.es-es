@@ -64,7 +64,7 @@ public override long Position { get; set; }
 
 Tipo: [System.Int64](/dotnet/api/system.int64)  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

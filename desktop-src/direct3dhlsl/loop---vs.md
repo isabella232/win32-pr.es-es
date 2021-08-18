@@ -1,5 +1,5 @@
 ---
-title: 'loop: vs'
+title: loop - vs
 description: Iniciar un bucle... bloque endloop.
 ms.assetid: vs|directx_sdk|~\loop___vs.htm
 ms.topic: reference
@@ -16,7 +16,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118986445"
 ---
-# <a name="loop---vs"></a>loop: vs
+# <a name="loop---vs"></a>loop - vs
 
 Iniciar un bucle... [bloque endloop.](endloop---vs.md)
 
@@ -34,7 +34,7 @@ Iniciar un bucle... [bloque endloop.](endloop---vs.md)
 Donde:
 
 -   aL es el [registro del contador de bucles](dx9-graphics-reference-asm-vs-registers-loop-counter.md) que mantiene el recuento de bucles actual.
--   i \# es un registro de entero [constante.](dx9-graphics-reference-asm-vs-registers-constant-integer.md) Vea Notas.
+-   i \# es un registro entero [constante.](dx9-graphics-reference-asm-vs-registers-constant-integer.md) Vea Notas.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -48,14 +48,14 @@ Donde:
 
  
 
--   El [registro de contadores](dx9-graphics-reference-asm-vs-registers-loop-counter.md) de bucles (aL) contiene el número de bucles actual y se puede usar para el direccionamiento relativo en el registro de enteros constantes [(c](dx9-graphics-reference-asm-vs-registers-constant-integer.md) ) o los registros de salida (o ) dentro del bloque \# de [](dx9-graphics-reference-asm-vs-registers-vs-3-0.md) \# bucle.
+-   El [registro de contadores](dx9-graphics-reference-asm-vs-registers-loop-counter.md) de bucles (aL) contiene el recuento de bucles actual y se puede usar para el direccionamiento relativo en registro entero constante [(c](dx9-graphics-reference-asm-vs-registers-constant-integer.md) ) o registros de salida (o ) dentro del bloque \# de [](dx9-graphics-reference-asm-vs-registers-vs-3-0.md) \# bucles.
 -   i \# .x especifica el recuento de iteraciones. El intervalo legal es \[ 0, 255 \] . Tenga en cuenta que esta instrucción no incrementa ni disminuye el valor de i \# .x.
--   i .y especifica el valor inicial del registro del contador de \# bucles (aL). [](dx9-graphics-reference-asm-vs-registers-loop-counter.md) El intervalo legal es \[ 0, 255 \] . Tenga en cuenta que esta instrucción no incrementa ni disminuye el valor de i \# .y.
+-   i .y especifica el valor inicial del registro de registro de contador de \# bucles (aL). [](dx9-graphics-reference-asm-vs-registers-loop-counter.md) El intervalo legal es \[ 0, 255 \] . Tenga en cuenta que esta instrucción no incrementa ni disminuye el valor de i \# .y.
 -   i \# .z especifica el tamaño del paso o el intervalo. El intervalo legal es \[ -128, 127 \] .
 -   i \# .w no se usa y debe establecerse en 0.
 -   Los bloques de bucle pueden estar anidados. Vea [Flow límites de anidamiento de controles .](dx9-graphics-reference-asm-vs-instructions-flow-control.md)
--   Cuando está anidado, el valor del registro de [contadores](dx9-graphics-reference-asm-vs-registers-loop-counter.md) de bucles (aL) hace referencia al bloque de bucle de encierre inmediato.
--   Los bloques de bucle pueden estar completamente dentro de un bloque if \* o rodearse completamente. No se permite ningún estrango.
+-   Cuando se anida, el valor del registro de [contador](dx9-graphics-reference-asm-vs-registers-loop-counter.md) de bucles (aL) hace referencia al bloque de bucle de cierre inmediato.
+-   Los bloques de bucle pueden estar completamente dentro de un bloque if \* o rodeando por completo. No se permite ningún estrango.
 
 ## <a name="example"></a>Ejemplo
 

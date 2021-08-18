@@ -1,9 +1,9 @@
 ---
-title: asuint (función)
+title: función asuint
 description: Reinterpreta el patrón de bits de un valor de 64 bits como dos enteros de 32 bits sin signo.
 ms.assetid: 29671661-4fec-46e5-9b6f-56fba8e1d756
 keywords:
-- función asuint HLSL
+- Función HLSL de asuint
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c54ed89e112482df4a54f35e24a04694e88fa490
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 02f0df4d31ca978b8b58b50cd0c91710056aa9ac0f3cac1ae370a4edba6a9edf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626595"
 ---
-# <a name="asuint-function"></a>asuint (función)
+# <a name="asuint-function"></a>función asuint
 
 Reinterpreta el patrón de bits de un valor de 64 bits como dos enteros de 32 bits sin signo.
 
@@ -28,9 +28,9 @@ Reinterpreta el patrón de bits de un valor de 64 bits como dos enteros de 32 bi
 
 ``` syntax
 void asuint(
-  in  double value,
-  out uint lowbits,
-  out uint highbits
+  in  double value,
+  out uint lowbits,
+  out uint highbits
 );
 ```
 
@@ -38,30 +38,30 @@ void asuint(
 
 <dl> <dt>
 
-*valor* \[ de de\]
+*value* \[ En\]
 </dt> <dd>
 
-Tipo: **Double**
+Tipo: **double**
 
 Valor de entrada.
 
 </dd> <dt>
 
-*lowbits* \[ enuncia\]
+*lowbits* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Patrón de *valor* de 32 bits bajo.
+Patrón de 32 bits bajo de *valor*.
 
 </dd> <dt>
 
-*highbits* \[ enuncia\]
+*highbits* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Modelo de *valor* de 32 bits alto.
+Patrón alto de 32 bits de *valor*.
 
 </dd> </dl>
 
@@ -69,11 +69,11 @@ Modelo de *valor* de 32 bits alto.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función es una versión alternativa del intrínseco [**asuint**](dx-graphics-hlsl-asuint.md) que está disponible en los modelos de sombreador anteriores y que se incorporó para el modelo de sombreador 5. La función original (reconocida en el compilador de HLSL por su firma diferente) sigue estando disponible para el modelo de sombreador 5.
+Esta función es una versión alternativa del intrínseco [**asuint**](dx-graphics-hlsl-asuint.md) que ha estado disponible en modelos de sombreador anteriores y se introdujo para El modelo de sombreador 5. La función original (reconocida en el compilador hlsl por su firma diferente) sigue estando disponible para el modelo de sombreador 5.
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -81,23 +81,23 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 5](d3d11-graphics-reference-sm5.md) y versiones posteriores | sí       |
+| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | Sí       |
 
 
 
- 
+ 
 
 Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -109,12 +109,12 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [**asuint (DirectX HLSL)**](dx-graphics-hlsl-asuint.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -653,5 +653,5 @@
               href: /windows/desktop/api/Lmalert/nf-lmalert-alert_other_info
             - name: ALERT_VAR_DATA
               href: /windows/desktop/api/Lmalert/nf-lmalert-alert_var_data
-        - name: Códigos de error de administración de red
+        - name: Códigos de error de administración de redes
           href: network-management-error-codes.md

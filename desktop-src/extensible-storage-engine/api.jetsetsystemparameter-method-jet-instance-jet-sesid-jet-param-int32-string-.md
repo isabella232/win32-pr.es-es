@@ -72,7 +72,7 @@ public static JET_wrn JetSetSystemParameter(
   - instance  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Instancia de en la que se establece la opción en [o Nulo](./jet-instance.nil-property.md) para establecer la opción en todas las instancias.
+    Instancia en la que se establece la opción o [Nil para](./jet-instance.nil-property.md) establecer la opción en todas las instancias.
 
 <!-- end list -->
 
@@ -86,7 +86,7 @@ public static JET_wrn JetSetSystemParameter(
   - paramid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_param](./jet-param-enumeration.md)  
     
-    Parámetro que se establece.
+    Parámetro que se establecerá.
 
 <!-- end list -->
 
@@ -105,13 +105,13 @@ public static JET_wrn JetSetSystemParameter(
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
-Un código de advertencia de ESENT.  
+Código de advertencia de ESENT.  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

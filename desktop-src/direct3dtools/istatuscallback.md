@@ -30,7 +30,7 @@ No se usa.
 
 ## <a name="members"></a>Miembros
 
-La **interfaz IStatusCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IStatusCallback** también tiene estos tipos de miembros:
+La **interfaz IStatusCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IStatusCallback también** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
@@ -38,7 +38,7 @@ La **interfaz IStatusCallback** hereda de la [**interfaz IUnknown.**](/windows/d
 
 La **interfaz IStatusCallback** tiene estos métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/istatuscallback-status-dword-dword-dword"><strong>Estado</strong></a></td><td style="text-align: left;"><p>Función de devolución de llamada que se usa para notificar al host del progreso del motor. Esto también sirve como una manera de que el host determine que el motor todavía se está ejecutando.</p></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/istatuscallback-status-dword-dword-dword"><strong>Estado</strong></a></td><td style="text-align: left;"><p>Función de devolución de llamada que se usa para notificar al host el progreso del motor. Esto también sirve como una manera de que el host determine que el motor todavía se está ejecutando.</p></td></tr></tbody></table>
 
  
 

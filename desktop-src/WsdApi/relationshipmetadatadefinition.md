@@ -4,12 +4,12 @@ ms.assetid: c15f77a2-060b-4bc3-8759-d921ea57e5b5
 title: elemento relationshipMetadataDefinition
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3549be26d0443b7aeba776346b7cddb2d6bdeed3
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 4918694d70a053ece04d544d7d885899f4e6de916ea2f16a61f364a7a6db771e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897225"
 ---
 # <a name="relationshipmetadatadefinition-element"></a>elemento relationshipMetadataDefinition
 

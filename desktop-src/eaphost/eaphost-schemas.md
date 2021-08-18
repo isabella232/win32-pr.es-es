@@ -23,7 +23,7 @@ Varios de los esquemas nativos y heredados contienen elementos de esquema comune
 
 Los términos "configuración de método" y "propiedades de conexión" se usan indistintamente. Del mismo modo, los términos "credenciales de método" y "propiedades de usuario" también se usan indistintamente.
 
-## <a name="eaphost-schema"></a>Esquema EAPHost
+## <a name="eaphost-schema"></a>Esquema eaphost
 
 
 

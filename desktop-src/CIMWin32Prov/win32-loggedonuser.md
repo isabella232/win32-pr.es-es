@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI LoggedOnUser Association de Win32 relaciona una sesión y una cuenta de usuario.
+description: La clase WMI de asociación LoggedOnUser de Win32 \_ relaciona una sesión y una cuenta de usuario.
 ms.assetid: b1233f90-4898-4ced-84d2-0858027e935a
 ms.tgt_platform: multiple
-title: Win32_LoggedOnUser (clase)
+title: Win32_LoggedOnUser clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0f851c85563095a66197b0dde8e6cbddc9581f07
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 73cb34246f7b31393527aef053c0cb8cbd12702217dd7113d5714ac022bc3716
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973450"
 ---
-# <a name="win32_loggedonuser-class"></a>\_Clase Win32 LoggedOnUser
+# <a name="win32_loggedonuser-class"></a>Clase LoggedOnUser de Win32 \_
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ LoggedOnUser** Association de Win32 relaciona una sesión y una cuenta de usuario.
+La clase WMI **de asociación \_ LoggedOnUser** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 relaciona una sesión y una cuenta de usuario.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -55,20 +55,20 @@ La **clase \_ LoggedOnUser de Win32** tiene estas propiedades.
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ cuenta de Win32**
+Tipo de datos: **Cuenta win32 \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) (antecedente), [**clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) (Antecedente), [**key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-[**\_ Cuenta de Win32**](win32-account.md) que describe la cuenta utilizada en el inicio de esta sesión. La cuenta puede ser una cuenta de usuario o una cuenta del sistema.
+Una [**cuenta \_ win32**](win32-account.md) que describe la cuenta usada en el inicio de esta sesión. La cuenta puede ser una cuenta de usuario o una cuenta del sistema.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **Win32 \_ LogonSession**
@@ -77,20 +77,20 @@ Tipo de datos: **Win32 \_ LogonSession**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) (dependiente), [**clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) (Dependent), [**key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-[**\_ LogonSession de Win32**](win32-logonsessionmappeddisk.md) que describe la sesión que la cuenta está usando actualmente.
+Una [**\_ LogonSession de Win32**](win32-logonsessionmappeddisk.md) que describe la sesión que la cuenta está usando actualmente.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ LoggedOnUser de Win32** se deriva de la [**\_ dependencia CIM**](cim-dependency.md).
+La **clase \_ LoggedOnUser de Win32** se deriva de [**la dependencia CIM \_**](cim-dependency.md).
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo de PowerShell de la [función get-loggedonuser](https://Gallery.TechNet.Microsoft.Com/scriptcenter/0e43993a-895a-4afe-a2b2-045a5146048a) obtiene los usuarios que han iniciado sesión en un equipo local o remoto, con información de la sesión.
+El ejemplo de PowerShell de la función [get-loggedonuser](https://Gallery.TechNet.Microsoft.Com/scriptcenter/0e43993a-895a-4afe-a2b2-045a5146048a) obtiene los usuarios que han iniciado sesión en un equipo local o remoto, con información de sesión.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,8 +100,8 @@ El ejemplo de PowerShell de la [función get-loggedonuser](https://Gallery.TechN
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -110,7 +110,7 @@ El ejemplo de PowerShell de la [función get-loggedonuser](https://Gallery.TechN
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))

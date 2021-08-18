@@ -1,36 +1,36 @@
 ---
 title: Cómo crear una información sobre herramientas para un control
-description: En la función de ejemplo siguiente se crea una información sobre herramientas y se asocia al control cuyo identificador de recurso se pasa.
+description: La siguiente función de ejemplo crea una información sobre herramientas y la asocia al control cuyo identificador de recurso se pasa.
 ms.assetid: FDA3B2A0-1256-4DAC-86CF-8F123894E760
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f341c1be1e749c4e0d6f18caf97a3f897cf429e7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9883dc90e8a150c7cc863b59e8388df676ed0f1663aaea7b356cb45292a6c8c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826575"
 ---
 # <a name="how-to-create-a-tooltip-for-a-control"></a>Cómo crear una información sobre herramientas para un control
 
-En la función de ejemplo siguiente se crea una información sobre herramientas y se asocia al control cuyo identificador de recurso se pasa.
+La siguiente función de ejemplo crea una información sobre herramientas y la asocia al control cuyo identificador de recurso se pasa.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 ### <a name="create-a-tooltip-for-a-control"></a>Crear una información sobre herramientas para un control
 
-En la función de ejemplo siguiente se crea una información sobre herramientas y se asocia al control cuyo identificador de recurso se pasa.
+La siguiente función de ejemplo crea una información sobre herramientas y la asocia al control cuyo identificador de recurso se pasa.
 
 
 ```C++
@@ -84,12 +84,12 @@ HWND CreateToolTip(int toolID, HWND hDlg, PTSTR pszText)
 
 <dl> <dt>
 
-[Usar controles ToolTip](using-tooltip-contro.md)
+[Uso de controles de información sobre herramientas](using-tooltip-contro.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
