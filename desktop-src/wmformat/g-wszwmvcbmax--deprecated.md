@@ -1,6 +1,6 @@
 ---
 title: g_wszWMVCBMax (Wmcodecdsp.h)
-description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows MEDIA Audio and Video Codec and DSP API (API de códecs de audio y vídeo multimedia y DSP). | g_wszWMVCBMax (Wmcodecdsp.h)
+description: Para obtener la documentación actual Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | g_wszWMVCBMax (Wmcodecdsp.h)
 ms.assetid: 588d9907-daa9-4663-b593-669b73debe0b
 keywords:
 - g_wszWMVCBMax windows Media Format
@@ -23,7 +23,7 @@ ms.locfileid: "118703419"
 ---
 # <a name="g_wszwmvcbmax"></a>g \_ wszWMVCBMax
 
-Para obtener la documentación actual Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP API (API](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
+Para obtener la documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP APIs (API](/previous-versions//dd464626(v=vs.85)) de códecs multimedia y DSP).
 
 ## <a name="requirements"></a>Requisitos
 

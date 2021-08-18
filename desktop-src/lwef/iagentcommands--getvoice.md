@@ -4,16 +4,16 @@ description: IAgentCommands GetVoice
 ms.assetid: ef8983bc-c70c-48c7-9c5f-1dae61028d90
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b1915512c89611267df3788e5dcaa84fb0874a4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 99b348904020a53eb11d2bb7884a05f8d98e223a359f796e7d891dafb3dcc402
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105340"
 ---
 # <a name="iagentcommandsgetvoice"></a>IAgentCommands::GetVoice
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT GetVoice(
@@ -21,24 +21,24 @@ HRESULT GetVoice(
 );
 ```
 
-Recupera el valor de la propiedad [**Voice**](voice-property.md) para una colección [**Commands**](/windows/desktop/lwef/the-commands-collection-object) .
+Recupera el valor de la propiedad [**Voice**](voice-property.md) de una [**colección Commands.**](/windows/desktop/lwef/the-commands-collection-object)
 
--   Devuelve S \_ OK para indicar que la operación se realizó correctamente.
+-   Devuelve S \_ OK para indicar que la operación se ha realizado correctamente.
 
 <dl> <dt>
 
 <span id="pbszVoice"></span><span id="pbszvoice"></span><span id="PBSZVOICE"></span>*pbszVoice*
 </dt> <dd>
 
-Dirección de un BSTR que recibe el valor de la configuración del texto de la [**voz**](voice-property.md) de una colección de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) .
+Dirección de un BSTR que recibe el valor de la configuración [**De**](voice-property.md) texto de voz para una [**colección Comandos.**](/windows/desktop/lwef/the-commands-collection-object)
 
 </dd> </dl>
 
 ## <a name="see-also"></a>Consulte también
 
-[**IAgentCommands:: SetVoice**](iagentcommands--setvoice.md), [**IAgentCommands:: GetCaption**](iagentcommands--getcaption.md), [**IAgentCommands:: GetVisible**](iagentcommands--getvisible.md)
+[**IAgentCommands::SetVoice**](iagentcommands--setvoice.md), [**IAgentCommands::GetCaption**](iagentcommands--getcaption.md), [**IAgentCommands::GetVisible**](iagentcommands--getvisible.md)
 
 
- 
+ 
 
- 
+ 

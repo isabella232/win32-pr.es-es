@@ -1,6 +1,6 @@
 ---
 title: IWMCodecMetaData
-description: Para obtener la documentación actual Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | IWMCodecMetaData
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | IWMCodecMetaData
 ms.assetid: 0d788226-4213-4751-98bd-3bd0532f9e71
 keywords:
 - IWMCodecMetaData windows Media Format
@@ -21,7 +21,7 @@ ms.locfileid: "118701646"
 ---
 # <a name="iwmcodecmetadata"></a>IWMCodecMetaData
 
-Para obtener la documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP APIs (API](/previous-versions//dd464626(v=vs.85)) de códecs multimedia y DSP).
+Para obtener la documentación actual Windows códecs multimedia y procesadores de señales digitales, vea Windows [Media Audio and Video Codec and DSP APIs (Api](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
 
  
 

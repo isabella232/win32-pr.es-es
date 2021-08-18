@@ -23,7 +23,7 @@ ms.locfileid: "118543739"
 ---
 # <a name="do_download_status-structure"></a>DO_DOWNLOAD_STATUS estructura
 
-La **DO_DOWNLOAD_STATUS** se usa para obtener el estado de una descarga específica. Se obtiene llamando a la **función IDODownload::GetStatus.**
+La **DO_DOWNLOAD_STATUS** se usa para obtener el estado de una descarga específica. Se obtiene mediante una llamada a la **función IDODownload::GetStatus.**
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -49,7 +49,7 @@ Número de bytes que ya se han descargado.
 
 `State`
 
-Estado de descarga actual definido por la **enumeración DODownloadState.**
+Estado de descarga actual tal como se define en la **enumeración DODownloadState.**
 
 `Error`
 

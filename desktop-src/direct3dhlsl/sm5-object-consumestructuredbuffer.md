@@ -1,9 +1,9 @@
 ---
 title: ConsumeStructuredBuffer
-description: Un búfer de entrada que aparece como un flujo del que el sombreador puede extraer valores. Solo los búferes estructurados pueden tomar tipos T que son estructuras.
+description: Búfer de entrada que aparece como un flujo del que el sombreador puede extraer valores. Solo los búferes estructurados pueden tomar tipos T que son estructuras.
 ms.assetid: 373bdd97-6186-4bce-99bf-738a153234f6
 keywords:
-- HLSL de ConsumeStructuredBuffer
+- ConsumeStructuredBuffer HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: af7a670713dc5b63839702a04a632dda61ebfa43
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7e4e0530c98b78f9b18b0934874fb5a082779694ced2f171293d0a38dc458a08
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104997165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986095"
 ---
 # <a name="consumestructuredbuffer"></a>ConsumeStructuredBuffer
 
-Un búfer de entrada que aparece como un flujo del que el sombreador puede extraer valores. Solo los búferes estructurados pueden tomar tipos T que son estructuras.
+Búfer de entrada que aparece como un flujo del que el sombreador puede extraer valores. Solo los búferes estructurados pueden tomar tipos T que son estructuras.
 
 
 
@@ -33,39 +33,39 @@ Un búfer de entrada que aparece como un flujo del que el sombreador puede extra
 
 
 
- 
+ 
 
-El formato UAV enlazado a este recurso debe crearse con el formato de DXGI \_ \_ desconocido.
+El formato UAV enlazado a este recurso debe crearse con el formato DXGI \_ FORMAT \_ UNKNOWN.
 
-El UAV enlazado a este recurso se debe haber creado con la [**marca de D3D11 del \_ búfer \_ UAV \_ \_ Append**](/windows/desktop/api/d3d11/ne-d3d11-d3d11_buffer_uav_flag).
+El UAV enlazado a este recurso debe haber sido creado con [**D3D11 \_ BUFFER \_ UAV \_ FLAG \_ APPEND**](/windows/desktop/api/d3d11/ne-d3d11-d3d11_buffer_uav_flag).
 
-Para obtener más información sobre el uso de búferes estructurados, vea ambas secciones: [Append y consume](/windows/desktop/direct3d11/direct3d-11-advanced-stages-cs-resources) buffer y [buffer estructurado](/windows/desktop/direct3d11/direct3d-11-advanced-stages-cs-resources).
+Para obtener más información sobre el consumo de búferes estructurados, vea ambas secciones: [anexar](/windows/desktop/direct3d11/direct3d-11-advanced-stages-cs-resources) y consumir búfer y [búfer estructurado.](/windows/desktop/direct3d11/direct3d-11-advanced-stages-cs-resources)
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Este objeto es compatible con los siguientes modelos de sombreador.
+Este objeto se admite en los siguientes modelos de sombreador.
 
 
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 5](d3d11-graphics-reference-sm5.md) y versiones posteriores | sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
 
 
 
- 
+ 
 
 Este objeto es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -74,6 +74,6 @@ Este objeto es compatible con los siguientes tipos de sombreadores:
 [Objetos del modelo de sombreador 5](d3d11-graphics-reference-sm5-objects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

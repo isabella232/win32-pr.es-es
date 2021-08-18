@@ -30,7 +30,7 @@ En las secciones siguientes se describen las características de red de este SDK
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | [Información general de las interfaces de red](overview-of-networking-interfaces.md) | Denomina y describe cada interfaz que admite métodos de red.                                                 |
 | [Lectura de datos de ASF a través de una red](reading-asf-data-over-a-network.md)     | Describe cómo reproducir archivos desde un origen de red y cómo configurar los valores de red en el objeto de lector.    |
-| [Envío de datos de ASF a través de una red](sending-asf-data-over-a-network.md)     | Describe cómo difundir datos de ASF a través de una red o enviar datos de ASF a un punto de publicación en un servidor Windows Media. |
+| [Envío de datos de ASF a través de una red](sending-asf-data-over-a-network.md)     | Describe cómo difundir datos de ASF a través de una red o enviar datos de ASF a un punto de publicación en un Windows multimedia. |
 | [Configuración predeterminada de Configuración](default-networking-settings.md)             | Proporciona una referencia rápida para la configuración predeterminada que usa el SDK.                                                 |
 
 

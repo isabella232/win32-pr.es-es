@@ -1,19 +1,19 @@
 ---
-description: 'Evento InkPicture.CursorButtonDown: se produce cuando la clase InkCollector detecta un botón de cursor que está apagado.'
+description: 'Evento InkPicture.CursorButtonDown: se produce cuando la clase InkCollector detecta un botón de cursor que está fuera de servicio.'
 ms.assetid: 9ee2c19e-8a44-428b-a4c1-3c7250dcdeda
-title: Evento InkPicture.CursorButtonDown (Msyecciónut.h)
+title: Evento InkPicture.CursorButtonDown (Msplaceut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c2017cd7dc2291bdb29aa01df3d94f20211b7cf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 97305142e14d2200b3ffc98fd83267c515db28a9d4c93c738eb3010bb1b2e371
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118717344"
 ---
 # <a name="inkpicturecursorbuttondown-event"></a>Evento InkPicture.CursorButtonDown
 
-Se produce cuando [**la clase InkCollector**](inkcollector-class.md) detecta un botón de cursor que está apagado.
+Se produce cuando [**la clase InkCollector**](inkcollector-class.md) detecta un botón de cursor que está fuera de servicio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,11 +51,11 @@ Este evento no devuelve un valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Un botón de una punta de lápiz está abajo cuando el usuario baja el lápiz al digitalizador y comienza a realizar el seguimiento de un trazo. Un botón de un cilindro está apagado cuando se presiona el botón.
+Un botón de una punta de lápiz está abajo cuando el usuario baja el lápiz al digitalizador y comienza a realizar el seguimiento de un trazo. Un botón de un menú está apagado cuando se presiona el botón.
 
 Al presionar el botón derecho del mouse, se reciben dos eventos **CursorButtonDown:** uno para el botón derecho presionado y otro para el botón izquierdo presionado.
 
-Este método de evento se define en **\_ IInkCollectorEvents,** **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** interfaz de solo distribución (dispinterfaces) con un identificador DE DISPID \_ ICECursorButtonDown.
+Este método de evento se define en la interfaz de solo distribución **\_ IInkCollectorEvents,** **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (dispinterfaces) con un identificador DE DISPID \_ ICECursorButtonDown.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,9 +63,9 @@ Este método de evento se define en **\_ IInkCollectorEvents,** **\_ IInkOverlay
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

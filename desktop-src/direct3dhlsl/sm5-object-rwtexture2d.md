@@ -1,9 +1,9 @@
 ---
 title: RWTexture2D
-description: Un recurso de lectura/escritura. | RWTexture2D
+description: Un recurso de lectura y escritura. | RWTexture2D
 ms.assetid: 19b383f1-c787-4c20-b77a-60ef9f212b9f
 keywords:
-- HLSL de RWTexture2D
+- RWTexture2D HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,30 +13,30 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ccdeae4dd47d3ad4bf5d756c2ca362033eae6814
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c015aaa8606f5d04386b7839584203c5672e4ac1bf031b89eb4c41ca69f7dd14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985935"
 ---
 # <a name="rwtexture2d"></a>RWTexture2D
 
-Un recurso de lectura/escritura.
+Un recurso de lectura y escritura.
 
 
 
 | Método                                                        | Descripción                   |
 |---------------------------------------------------------------|-------------------------------|
 | [**GetDimensions**](sm5-object-rwtexture2d-getdimensions.md) | Obtiene las dimensiones de recursos. |
-| [**Carga**](rwtexture2d-load.md)                              | Lee los datos de textura.           |
+| [**Cargar**](rwtexture2d-load.md)                              | Lee los datos de textura.           |
 | [**Operador\[\]**](sm5-object-rwtexture2d-operatorindex.md)  | Obtiene una variable de recurso.     |
 
 
 
  
 
-Puede prefijar objetos RWTexture2D con la clase de almacenamiento **globallycoherent**. Esta clase de almacenamiento provoca barreras de memoria y sincronizaciones para vaciar los datos en toda la GPU, de modo que otros grupos puedan ver escrituras. Sin este especificador, una barrera de memoria o una sincronización solo vaciará una vista de acceso desordenado (UAV) en el grupo actual.
+Puede anteceder a los objetos RWTexture2D con la clase de almacenamiento **globalcoherente**. Esta clase de almacenamiento hace que las barreras de memoria y las sincronizaciones vaciarán los datos en toda la GPU para que otros grupos puedan ver las escrituras. Sin este especificador, una barrera de memoria o sincronización vaciará solo una vista de acceso no ordenado (UAV) dentro del grupo actual.
 
 Un objeto RWTexture2D requiere un tipo de elemento en una instrucción de declaración para el objeto. Por ejemplo, la siguiente declaración no es correcta:
 
@@ -48,7 +48,7 @@ RWTexture2D myTexture;
 
 
 
-La siguiente declaración es correcta:
+La declaración siguiente es correcta:
 
 
 ```
@@ -58,16 +58,16 @@ RWTexture2D<float> tex;
 
 
 
-Dado que un objeto RWTexture2D es un objeto de tipo UAV, sus propiedades difieren de un objeto de tipo de vista de recursos de sombreador (SRV), como un objeto [Texture2D](sm5-object-texture2d.md) . Por ejemplo, puede leer y escribir en un objeto RWTexture2D, pero solo puede leer desde un objeto Texture2D.
+Dado que un objeto RWTexture2D es un objeto de tipo UAV, sus propiedades difieren de un objeto de tipo vista de recursos de sombreador (SRV), como un objeto [Texture2D.](sm5-object-texture2d.md) Por ejemplo, puede leer y escribir en un objeto RWTexture2D, pero solo puede leer desde un objeto Texture2D.
 
-Un objeto RWTexture2D no puede utilizar métodos de un objeto [Texture2D](sm5-object-texture2d.md) , como [ejemplo](dx-graphics-hlsl-to-sample.md). Sin embargo, como puede crear varios tipos de vistas en el mismo recurso, puede declarar varios tipos de textura como una sola textura en varios sombreadores. Por ejemplo, los fragmentos de código siguientes muestran cómo se puede declarar y usar un objeto RWTexture2D como *Tex* en un sombreador de cálculo y, a continuación, declarar y usar un objeto Texture2D como *Tex* en un sombreador de píxeles.
+Un objeto RWTexture2D no puede usar métodos de un objeto [Texture2D,](sm5-object-texture2d.md) como [Sample](dx-graphics-hlsl-to-sample.md). Sin embargo, dado que puede crear varios tipos de vista en el mismo recurso, puede declarar varios tipos de textura como una sola textura en varios sombreadores. Por ejemplo, los siguientes fragmentos de código muestran cómo se puede declarar y usar un objeto RWTexture2D como *un objeto como un objeto en* un sombreador de proceso y, a continuación, declarar y usar un objeto Texture2D como un objeto de tipo *"texas"* en un sombreador de píxeles.
 
 > [!Note]  
-> El tiempo de ejecución exige determinados patrones de uso al crear varios tipos de vistas en el mismo recurso. Por ejemplo, el tiempo de ejecución no permite tener una asignación UAV para un recurso y una asignación SRV para el mismo recurso activo al mismo tiempo.
+> El tiempo de ejecución aplica determinados patrones de uso al crear varios tipos de vista en el mismo recurso. Por ejemplo, el tiempo de ejecución no permite tener una asignación de UAV para un recurso y una asignación de SRV para el mismo recurso activo al mismo tiempo.
 
  
 
-El código siguiente es para el sombreador de cálculo:
+El código siguiente es para el sombreador de proceso:
 
 
 ```
@@ -85,7 +85,7 @@ void main(
 
 
 
-El siguiente código es para el sombreador de píxeles:
+El código siguiente es para el sombreador de píxeles:
 
 
 ```
@@ -104,15 +104,15 @@ float4 main(PixelShaderInput input) : SV_TARGET
 
 
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Este objeto es compatible con los siguientes modelos de sombreador.
+Este objeto se admite en los siguientes modelos de sombreador.
 
 
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 5](d3d11-graphics-reference-sm5.md) y versiones posteriores | sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
 
 
 
@@ -122,7 +122,7 @@ Este objeto es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

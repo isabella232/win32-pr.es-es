@@ -1,21 +1,21 @@
 ---
-title: Configuración del registro de errores de la API del servidor HTTP
-description: El registro de errores de la API del servidor HTTP se controla mediante tres valores del registro bajo una \\ clave http Parameters.
+title: Configuración del registro de errores de LA API del servidor HTTP
+description: El registro de errores de la API del servidor HTTP se controla mediante tres valores del Registro en una clave \\ de parámetros HTTP.
 ms.assetid: a7712159-939e-42e3-a8d8-73148c2f4f6e
 keywords:
-- API de servidor HTTP, configurar registros de errores
+- API de servidor HTTP, configuración de registros de errores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 698f6b5ae81b1933ea745789e0fae33dfc7ebce6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a10479a1b2bd1ebf559213b6cd4b738f6c0b9ea63c142edcce3c10f64f877dda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950894"
 ---
-# <a name="configuring-http-server-api-error-logging"></a>Configuración del registro de errores de la API del servidor HTTP
+# <a name="configuring-http-server-api-error-logging"></a>Configuración del registro de errores de LA API del servidor HTTP
 
-El registro de errores de la API del servidor HTTP se controla mediante tres valores del registro bajo una clave **http** \\ **Parameters** , que se encuentra en:
+El registro de errores de la API del servidor HTTP se controla mediante tres valores del Registro en una clave **de** parámetros HTTP \\  ubicada en:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -27,29 +27,29 @@ HKEY_LOCAL_MACHINE
 ```
 
 > [!Note]  
-> La ubicación y la forma de los valores de configuración pueden cambiar en versiones futuras del sistema operativo Windows.
+> La ubicación y la forma de los valores de configuración pueden cambiar en versiones futuras del Windows operativo.
 
  
 
-Un usuario debe tener privilegios de administrador o sistema local para modificar los valores del registro y ver o modificar los archivos de registro y la carpeta que los contiene.
+Un usuario debe tener privilegios de administrador o sistema local para modificar los valores del Registro y ver o modificar los archivos de registro y la carpeta que los contiene.
 
-La información de configuración de los valores del registro se lee cuando se inicia el controlador de la API del servidor HTTP. Como resultado, si se cambia la configuración, el controlador debe detenerse y reiniciarse para leer los nuevos valores. Esto puede realizarse mediante los siguientes comandos de la consola:
+La información de configuración de los valores del Registro se lee cuando se inicia el controlador de API del servidor HTTP. Como resultado, si se cambia la configuración, el controlador debe detenerse y reiniciarse para leer los nuevos valores. Esto se puede lograr mediante los siguientes comandos de consola:
 
 **net stop http**
 
 **net start http**
 
-Los nombres de los archivos de registro se denominan mediante la Convención siguiente:
+Los archivos de registro se denominan mediante la convención siguiente:
 
-**httperr +** *SequenceNumber* **+. log**
+**httperr +** *SequenceNumber* **+ .log**
 
-Por ejemplo: "httperr4. log".
+Por ejemplo: "httperr4.log".
 
-Los archivos de registro se recorren cuando alcanzan el tamaño máximo especificado por el valor del registro **ErrorLogFileTruncateSize** y el valor no puede ser inferior a un megabyte (MB).
+Los archivos de registro se ciclon cuando alcanzan el tamaño máximo especificado por el valor del Registro **ErrorLogFileTruncateSize** y el valor no puede ser inferior a un megabyte (MB).
 
-Si la configuración del registro de errores no es válida o se produce algún tipo de error al escribir en los archivos de registro, la API del servidor HTTP utiliza el registro de eventos para notificar a los administradores que no se ha producido el registro de errores.
+Si la configuración del registro de errores no es válida o se produce algún tipo de error al escribir en los archivos de registro, la API del servidor HTTP usa el registro de eventos para notificar a los administradores que no se produjo el registro de errores.
 
-En la tabla siguiente se describen los valores de configuración del registro.
+Los valores de configuración del Registro se describen en la tabla siguiente.
 
 
 
@@ -60,18 +60,18 @@ En la tabla siguiente se describen los valores de configuración del registro.
 </colgroup>
 <thead>
 <tr class="header">
-<th>Valor del registro</th>
+<th>Valor del Registro</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><span id="EnableErrorLogging"></span><span id="enableerrorlogging"></span><span id="ENABLEERRORLOGGING"></span>EnableErrorLogging<br/></td>
-<td>Un <strong>valor DWORD</strong> que se puede establecer en <strong>true</strong> para habilitar el registro de errores o <strong>false</strong> para deshabilitarlo. El valor predeterminado es <strong>true</strong>.<br/></td>
+<td>DWORD <strong>que</strong> se puede establecer en <strong>TRUE para</strong> habilitar el registro de errores o <strong>FALSE</strong> para deshabilitarlo. El valor predeterminado es <strong>TRUE.</strong><br/></td>
 </tr>
 <tr class="even">
 <td><span id="ErrorLogFileTruncateSize"></span><span id="errorlogfiletruncatesize"></span><span id="ERRORLOGFILETRUNCATESIZE"></span>ErrorLogFileTruncateSize<br/></td>
-<td><strong>DWORD</strong> que especifica el tamaño máximo de un archivo de registro de errores, en bytes. El valor predeterminado es 1 MB (0x100000).<br/>
+<td>DWORD <strong>que</strong> especifica el tamaño máximo de un archivo de registro de errores, en bytes. El valor predeterminado es un MB (0x100000).<br/>
 <blockquote>
 [!Note]<br />
 El valor especificado no puede ser menor que el valor predeterminado.
@@ -80,10 +80,10 @@ El valor especificado no puede ser menor que el valor predeterminado.
 </tr>
 <tr class="odd">
 <td><span id="ErrorLoggingDir"></span><span id="errorloggingdir"></span><span id="ERRORLOGGINGDIR"></span>ErrorLoggingDir<br/></td>
-<td><strong>Cadena</strong> que especifica la carpeta en la que la API del servidor http coloca los archivos de registro. <br/> La API del servidor HTTP crea una subcarpeta denominada &quot; HTTPERR &quot; en la carpeta especificada en la que se colocan los archivos de registro. Esta subcarpeta y los archivos de registro reciben la misma configuración de permisos, lo que significa que las cuentas de administrador y del sistema local tienen acceso completo, mientras que otros usuarios no tienen acceso.<br/> Si no se especifica una carpeta en el registro, la carpeta predeterminada es la siguiente:<br/> &quot;%SystemRoot%\System32\LogFiles&quot;<br/>
+<td>Cadena <strong>que</strong> especifica la carpeta en la que la API del servidor HTTP coloca sus archivos de registro. <br/> La API del servidor HTTP crea una subcarpeta denominada HTTPERR en la carpeta especificada en la que se colocan los &quot; &quot; archivos de registro. Esta subcarpeta y los archivos de registro reciben la misma configuración de permisos, lo que significa que las cuentas de administrador y del sistema local tienen acceso completo, mientras que otros usuarios no tienen acceso.<br/> Si no se especifica una carpeta en el Registro, la carpeta predeterminada es la siguiente:<br/> &quot;%SystemRoot%\System32\LogFiles&quot;<br/>
 <blockquote>
 [!Note]<br />
-El valor de cadena ErrorLoggingDir debe ser una ruta de acceso completa, pero puede contener &quot; % systemroot% &quot; .
+El valor de cadena ErrorLoggingDir debe ser una ruta de acceso completa, pero puede contener &quot; %SystemRoot%. &quot;
 </blockquote>
 <br/> <br/></td>
 </tr>

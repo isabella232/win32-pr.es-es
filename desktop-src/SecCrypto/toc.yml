@@ -12,13 +12,13 @@
               items:
                 - name: Conceptos de criptografía
                   href: cryptography-concepts.md
-                - name: Documentación adicional sobre la criptografía
+                - name: Documentación adicional sobre criptografía
                   href: additional-documentation-on-cryptography.md
                 - name: Arquitectura del sistema CryptoAPI
                   href: cryptoapi-system-architecture.md
                 - name: CSP y el proceso de criptografía
                   href: csps-and-the-cryptography-process.md
-                - name: Contextos de proveedor de servicios criptográficos
+                - name: Contextos del proveedor de servicios criptográficos
                   href: cryptographic-service-provider-contexts.md
             - name: Claves criptográficas
               href: cryptographic-keys.md
@@ -29,7 +29,7 @@
                   href: public-private-key-pairs.md
                 - name: Claves de sesión
                   href: session-keys.md
-                - name: Almacenamiento de claves criptográficas y Exchange
+                - name: Clave criptográfica Storage y Exchange
                   href: cryptographic-key-storage-and-exchange.md
             - name: Datos codificados y descodificados
               href: encoded-and-decoded-data.md
@@ -46,7 +46,7 @@
                   href: verifying-a-signature.md
                 - name: Algoritmos hash y de firma
                   href: hash-and-signature-algorithms.md
-            - name: Marcas de tiempo de las firmas de Authenticode
+            - name: Firmas de authenticode de marca de tiempo
               href: time-stamping-authenticode-signatures.md
             - name: Certificados digitales
               href: digital-certificates.md
@@ -55,7 +55,7 @@
                   href: x-509-digital-certification.md
                 - name: Certificados y CryptoAPI
                   href: certificates-and-cryptoapi.md
-                - name: Codificar y descodificar un contexto de certificado
+                - name: Codificación y codificación de un contexto de certificado
                   href: encoding-and-decoding-a-certificate-context.md
                 - name: Operaciones con certificados
                   href: operations-with-certificates.md
@@ -66,13 +66,13 @@
                 - name: Administración de certificados con almacenes de certificados
                   href: managing-certificates-with-certificate-stores.md
                   items:
-                    - name: Administrar un estado del almacén de certificados
+                    - name: Administración del estado de un almacén de certificados
                       href: managing-a-certificate-store-state.md
                     - name: Trabajar con certificados en almacenes de certificados
                       href: working-with-certificates-in-certificate-stores.md
                     - name: Vínculos de certificado
                       href: certificate-links.md
-                    - name: Almacenes de colección
+                    - name: Almacenes de colecciones
                       href: collection-stores.md
                     - name: Almacenes lógicos y físicos
                       href: logical-and-physical-stores.md
@@ -80,30 +80,30 @@
                       href: system-store-locations.md
                     - name: Migración del almacén de certificados
                       href: certificate-store-migration.md
-                - name: Comprobación de certificados de confianza
+                - name: Comprobación de confianza de certificados
                   href: certificate-trust-verification.md
                   items:
                     - name: Jerarquía de confianza
                       href: hierarchy-of-trust.md
                     - name: Cadenas de certificados
                       href: certificate-chains.md
-                    - name: Información general de la lista de certificados de confianza
+                    - name: Introducción a la lista de confianza de certificados
                       href: certificate-trust-list-overview.md
             - name: Mensajes digitales
               href: digital-messages.md
               items:
-                - name: 'Conceptos de sintaxis de mensajería criptográfica #7 PKCS'
+                - name: 'PKCS #7 de sintaxis de mensajería criptográfica'
                   href: pkcs--7-concepts.md
-                - name: Funciones de mensajes de bajo nivel
+                - name: Funciones de mensaje de bajo nivel
                   href: low-level-messages.md
                 - name: Mensajes simplificados
                   href: simplified-messages.md
-                - name: Contrafirmas de mensaje
+                - name: Contrasignatures de mensajes
                   href: message-countersignatures.md
                 - name: Adiciones de CMS
                   href: cms-additions.md
                   items:
-                    - name: Adiciones de datos con doble cifrado
+                    - name: Adiciones de datos con sobres
                       href: enveloped-data-additions.md
                     - name: Adiciones de datos firmados
                       href: signed-data-additions.md
@@ -138,23 +138,23 @@
             - name: Proveedores de servicios criptográficos de Microsoft
               href: microsoft-cryptographic-service-providers.md
               items:
-                - name: Proveedor de servicios criptográficos básicos de Microsoft
+                - name: Proveedor criptográfico base de Microsoft
                   href: microsoft-base-cryptographic-provider.md
                   items:
                     - name: Algoritmos de proveedor base
                       href: base-provider-algorithms.md
-                    - name: Blobs de clave de proveedor base
+                    - name: Blobs de clave del proveedor base
                       href: base-provider-key-blobs.md
                 - name: Proveedor de servicios criptográficos seguros de Microsoft
                   href: microsoft-strong-cryptographic-provider.md
-                - name: Proveedor de servicios criptográficos mejorados de Microsoft
+                - name: Proveedor criptográfico mejorado de Microsoft
                   href: microsoft-enhanced-cryptographic-provider.md
                   items:
                     - name: Algoritmos de proveedor mejorados
                       href: enhanced-provider-algorithms.md
                     - name: Blobs de clave de proveedor mejorados
                       href: enhanced-provider-key-blobs.md
-                - name: Proveedor de servicios criptográficos AES de Microsoft
+                - name: Proveedor criptográfico AES de Microsoft
                   href: microsoft-aes-cryptographic-provider.md
                   items:
                     - name: Algoritmos de proveedor de AES
@@ -163,44 +163,44 @@
                   href: new-key-length-functionality.md
                 - name: Comparación de longitud de clave
                   href: key-length-comparison.md
-                - name: Funcionalidad de valores Salt
+                - name: Funcionalidad de valor salt
                   href: salt-value-functionality.md
                   items:
-                    - name: Especificar un valor Salt
+                    - name: Especificar un valor salt
                       href: specifying-a-salt-value.md
-                - name: Funcionalidad SHA
+                - name: Funcionalidad sha
                   href: sha-functionality.md
-                - name: Proveedor de servicios criptográficos de Microsoft DSS
+                - name: Proveedor criptográfico de Microsoft DSS
                   href: microsoft-dss-cryptographic-provider.md
                   items:
-                    - name: Algoritmos del proveedor de DSS
+                    - name: Algoritmos de proveedor de DSS
                       href: dss-provider-algorithms.md
-                    - name: Blobs de clave del proveedor de DSS
+                    - name: Blobs de claves del proveedor de DSS
                       href: dss-provider-key-blobs.md
-                - name: Microsoft base DSS y Diffie-Hellman proveedor de servicios criptográficos
+                - name: Proveedor de servicios criptográficos Diffie-Hellman base de Microsoft
                   href: microsoft-base-dss-and-diffie-hellman-cryptographic-provider.md
                   items:
-                    - name: Algoritmos de proveedor de PROV_DSS_DH
+                    - name: PROV_DSS_DH Provider Algorithms
                       href: prov-dss-dh-provider-algorithms.md
-                    - name: Diffie-Hellman blobs de clave
+                    - name: Diffie-Hellman blobs clave
                       href: diffie-hellman-key-blobs.md
-                - name: Microsoft Enhanced DSS y Diffie-Hellman proveedor de servicios criptográficos
+                - name: Proveedor de servicios criptográficos Diffie-Hellman Microsoft Enhanced DSS
                   href: microsoft-enhanced-dss-and-diffie-hellman-cryptographic-provider.md
-                - name: Proveedor de servicios criptográficos de Microsoft DSS y Diffie-Hellman/Schannel
+                - name: Proveedor criptográfico DSS y Diffie-Hellman/Schannel de Microsoft
                   href: microsoft-dss-and-diffie-hellman-schannel-cryptographic-provider.md
                   items:
                     - name: Algoritmos de proveedor Diffie-Hellman/Schannel
                       href: diffie-hellman-schannel-provider-algorithms.md
                     - name: Blobs de clave Diffie-Hellman/Schannel
                       href: diffie-hellman-schannel-key-blobs.md
-                - name: Proveedor de servicios criptográficos de Microsoft RSA/Schannel
+                - name: Proveedor criptográfico RSA/Schannel de Microsoft
                   href: microsoft-rsa-schannel-cryptographic-provider.md
                   items:
                     - name: Algoritmos de proveedor RSA/Schannel
                       href: rsa-schannel-provider-algorithms.md
-                    - name: Blobs de clave RSA/Schannel
+                    - name: BLOBs de clave RSA/Schannel
                       href: rsa-schannel-key-blobs.md
-                - name: Proveedor de servicios criptográficos de firmas RSA de Microsoft
+                - name: Proveedor criptográfico de firma RSA de Microsoft
                   href: microsoft-rsa-signature-cryptographic-provider.md
             - name: Extensión de CryptoAPI
               href: extending-cryptoapi.md
@@ -209,18 +209,18 @@
           items:
             - name: Información general sobre la firma digital XML
               href: xml-digital-signature-overview.md
-            - name: Funcionalidad de la API de firma digital XML
+            - name: Funcionalidad de API de firma digital XML
               href: xml-digital-signature-api-functionality.md
             - name: Algoritmos criptográficos de firma digital XML
               href: xml-digital-signature-cryptographic-algorithms.md
-            - name: Extensiones criptográficas de firmas digitales XML
+            - name: Extensiones criptográficas de firma digital XML
               href: xml-digital-signature-cryptographic-extensions.md
-            - name: Consideraciones de seguridad de las firmas digitales XML
+            - name: Consideraciones de seguridad de firma digital XML
               href: xml-digital-signature-security-considerations.md
         - name: Servicios de servidor de certificados
           href: certificate-services.md
           items:
-            - name: Características de servicios de Certificate Server
+            - name: Características de Servicios de certificados
               href: certificate-services-features.md
               items:
                 - name: Active Directory
@@ -235,26 +235,26 @@
                   href: hardware-cryptography.md
                 - name: Jerarquías
                   href: hierarchies.md
-                - name: Independencia de la Directiva
+                - name: Independencia de directivas
                   href: policy-independence.md
                 - name: Requests
                   href: requests.md
-                - name: Independencia de transporte
+                - name: Independencia del transporte
                   href: transport-independence.md
-            - name: Arquitectura de servicios de certificados
+            - name: Arquitectura de Servicios de certificados
               href: certificate-services-architecture.md
               items:
                 - name: Módulos de directivas
                   href: policy-modules.md
-                - name: Módulos de salida
+                - name: Salir de módulos
                   href: exit-modules.md
-                - name: Controladores de extensión
+                - name: Controladores de extensiones
                   href: extension-handlers.md
                 - name: intermediarios
                   href: intermediaries.md
             - name: Certificados y claves públicas
               href: certificates-and-public-keys.md
-            - name: Instrucciones de solicitud de certificado
+            - name: Directrices de solicitud de certificado
               href: certificate-request-guidelines.md
               items:
                 - name: Nombres de propiedad
@@ -264,11 +264,11 @@
             - name: Acerca de los certificados
               href: about-certificates.md
               items:
-                - name: Procesar solicitudes de certificado
+                - name: Procesamiento de solicitudes de certificado
                   href: processing-certificate-requests.md
                 - name: Creación de un certificado
                   href: building-a-certificate.md
-                - name: Formatos de certificado compatibles
+                - name: Formatos de certificado admitidos
                   href: supported-certificate-formats.md
             - name: Renovación de la entidad de certificación
               href: certification-authority-renewal.md
@@ -276,22 +276,22 @@
           href: certificate-enrollment-control.md
         - name: Versiones de CAPICOM
           href: capicom-versions.md
-        - name: Crypt32.dll versiones
+        - name: Crypt32.dll versiones anteriores
           href: crypt32-dll-versions.md
-    - name: Usar criptografía
+    - name: Uso de criptografía
       href: using-cryptography.md
       items:
-        - name: Convenciones de programas de ejemplo
+        - name: Convenciones de programa de ejemplo
           href: sample-program-conventions.md
           items:
             - name: Limitaciones del programa de ejemplo
               href: example-program-limitations.md
-            - name: Consideraciones de compilación y vinculación
+            - name: Consideraciones de compilación y vínculo
               href: compile-and-link-considerations.md
               items:
                 - name: Bibliotecas necesarias
                   href: required-libraries.md
-                - name: Tipos de codificación de mensajes y certificados
+                - name: Tipos de codificación de certificados y mensajes
                   href: certificate-and-message-encoding-types.md
                 - name: '#incluye y #defines'
                   href: '-includes-and--defines.md'
@@ -299,9 +299,9 @@
                   href: error-handling.md
             - name: 'Contenedores de claves, claves y certificados necesarios'
               href: necessary-key-containers-keys-and-certificates.md
-            - name: Recuperación de datos de longitud desconocida
+            - name: Recuperar datos de longitud desconocida
               href: retrieving-data-of-unknown-length.md
-            - name: Funciones de De uso general
+            - name: De uso general Functions
               href: general-purpose-functions.md
               items:
                 - name: ByteToStr
@@ -310,127 +310,127 @@
                   href: getsignercert.md
                 - name: MyHandleError
                   href: myhandleerror.md
-        - name: Adquirir un contexto criptográfico y generar claves
+        - name: Adquisición de un contexto criptográfico y generación de claves
           href: acquiring-a-cryptographic-context-and-generating-keys.md
           items:
-            - name: 'Programa C de ejemplo: crear un contenedor de claves y generar claves'
+            - name: 'Programa de C de ejemplo: Crear un contenedor de claves y generar claves'
               href: example-c-program-creating-a-key-container-and-generating-keys.md
             - name: 'Programa C de ejemplo: uso de CryptAcquireContext'
               href: example-c-program-using-cryptacquirecontext.md
-            - name: 'Programa C de ejemplo: enumeración de proveedores y tipos de proveedor de CSP'
+            - name: 'Programa C de ejemplo: Enumeración de proveedores de CSP y tipos de proveedor'
               href: example-c-program-enumerating-csp-providers-and-provider-types.md
-            - name: 'Programa C de ejemplo: derivar una clave de sesión de una contraseña'
+            - name: 'Programa C de ejemplo: derivación de una clave de sesión a partir de una contraseña'
               href: example-c-program-deriving-a-session-key-from-a-password.md
-            - name: 'Programa C de ejemplo: duplicar una clave de sesión'
+            - name: 'Programa C de ejemplo: Duplicación de una clave de sesión'
               href: example-c-program-duplicating-a-session-key.md
-            - name: 'Programa C de ejemplo: importar una clave de texto simple'
+            - name: 'Programa C de ejemplo: Importación de una clave de texto no cifrado'
               href: example-c-program--importing-a-plaintext-key.md
-            - name: 'Programa C de ejemplo: establecimiento y obtención de parámetros de clave de sesión'
+            - name: 'Programa C de ejemplo: configuración y obtención de parámetros de clave de sesión'
               href: example-c-program-setting-and-getting-session-key-parameters.md
             - name: Trabajar con claves de varios CSP
               href: working-with-keys-from-various-csps.md
               items:
                 - name: Claves RSA/Schannel
                   href: rsa-schannel-keys.md
-                - name: Claves de Diffie-Hellman
+                - name: Diffie-Hellman claves
                   href: diffie-hellman-keys.md
-                - name: Claves de DSS
+                - name: Claves DSS
                   href: dss-keys.md
             - name: Procedimiento para almacenar una clave de sesión
               href: procedure-for-storing-a-session-key.md
-            - name: Procedimiento para almacenar claves de sesión mediante una entidad de seguridad
+            - name: Procedimiento para almacenar claves de sesión mediante una entidad de copia de seguridad
               href: procedure-for-storing-session-keys-using-a-backup-authority.md
-            - name: 'Programa C de ejemplo: exportar una clave de sesión'
+            - name: 'Programa de C de ejemplo: Exportación de una clave de sesión'
               href: example-c-program-exporting-a-session-key.md
-        - name: Codificar y descodificar
+        - name: Codificación y codificación
           href: encoding-and-decoding.md
           items:
-            - name: Procedimiento para codificar y descodificar mensajes
+            - name: Procedimiento para codificar y codificar mensajes
               href: procedure-for-encoding-and-decoding-messages.md
-            - name: 'Programa C de ejemplo: codificación y descodificación de datos'
+            - name: 'Programa C de ejemplo: codificación y codificación de datos'
               href: example-c-program-encoding-and-decoding-data.md
         - name: Aplicación de algoritmo hash
           href: hashing.md
           items:
-            - name: Crear un hash de CALG_SSL3_SHAMD5
+            - name: Creación de un CALG_SSL3_SHAMD5 hash
               href: creating-a-calg-ssl3-shamd5-hash.md
-            - name: Crear un HMAC
+            - name: Creación de un HMAC
               href: creating-an-hmac.md
-            - name: 'Programa C de ejemplo: crear un HMAC'
+            - name: 'Programa C de ejemplo: Creación de un HMAC'
               href: example-c-program--creating-an-hmac.md
-            - name: 'Programa C de ejemplo: crear y aplicar un algoritmo hash a una clave de sesión'
+            - name: 'Programa C de ejemplo: creación y hash de una clave de sesión'
               href: example-c-program-creating-and-hashing-a-session-key.md
             - name: 'Programa C de ejemplo: duplicación de un hash'
               href: example-c-program-duplicating-a-hash.md
-            - name: Codificar y descodificar un mensaje con hash
+            - name: Codificación y codificación de un mensaje con hash
               href: encoding-and-decoding-a-hashed-message.md
-            - name: 'Programa C de ejemplo: codificar y descodificar un mensaje con hash'
+            - name: 'Programa C de ejemplo: codificación y codificación de un mensaje con hash'
               href: example-c-program-encoding-and-decoding-a-hashed-message.md
-            - name: 'Programa C de ejemplo: firmar un hash y comprobar la firma hash'
+            - name: 'Programa de C de ejemplo: firma de un hash y comprobación de la firma hash'
               href: example-c-program-signing-a-hash-and-verifying-the-hash-signature.md
-            - name: 'Programa C de ejemplo: crear un hash MD5 a partir del contenido del archivo'
+            - name: 'Programa C de ejemplo: Creación de un hash MD5 a partir del contenido del archivo'
               href: example-c-program--creating-an-md-5-hash-from-file-content.md
-        - name: Firmar datos
+        - name: Firma de datos
           href: signing-data.md
           items:
             - name: Crear un mensaje firmado
               href: creating-a-signed-message.md
             - name: Procedimiento para firmar datos
               href: procedure-for-signing-data.md
-            - name: Comprobación de un mensaje firmado
+            - name: Comprobar un mensaje firmado
               href: verifying-a-signed-message.md
-            - name: Codificar datos firmados
+            - name: Codificación de datos firmados
               href: encoding-signed-data.md
-            - name: Descodificar datos firmados
+            - name: Decoding Signed Data
               href: decoding-signed-data.md
             - name: 'Programa C de ejemplo: firmar un mensaje y comprobar una firma de mensaje'
               href: example-c-program-signing-a-message-and-verifying-a-message-signature.md
-            - name: 'Programa C de ejemplo: firma, codificación, descodificación y comprobación de un mensaje'
+            - name: 'Programa de C de ejemplo: firma, codificación, codificación y comprobación de un mensaje'
               href: example-c-program-signing-encoding-decoding-and-verifying-a-message.md
-            - name: 'Programa C de ejemplo: codificar y descodificar un mensaje mediante un flujo'
+            - name: 'Programa C de ejemplo: codificación y codificación de un mensaje mediante una secuencia'
               href: example-c-program--encoding-and-decoding-a-message-using-a-stream.md
             - name: 'Programa C de ejemplo: envío y recepción de un mensaje firmado y cifrado'
               href: example-c-program-sending-and-receiving-a-signed-and-encrypted-message.md
-            - name: 'Programa C de ejemplo: recibir un mensaje firmado y cifrado'
+            - name: 'Programa C de ejemplo: recepción de un mensaje firmado y cifrado'
               href: example-c-program-receiving-a-signed-and-encrypted-message.md
-            - name: 'Programa C de ejemplo: firmar y descodificar un mensaje'
+            - name: 'Programa C de ejemplo: Cosignación y decodización de un mensaje'
               href: example-c-program--cosigning-and-decoding-a-message.md
-            - name: Contrafirmar
+            - name: Contrasignación
               href: countersigning.md
               items:
-                - name: Contrafirmar un mensaje
+                - name: Contrasignar un mensaje
                   href: countersigning-a-message.md
-                - name: 'Programa C de ejemplo: codificar y descodificar un mensaje con signo'
+                - name: 'Programa C de ejemplo: codificación y codificación de un mensaje con signo contrario'
                   href: example-c-program-encoding-and-decoding-a-countersigned-message.md
-                - name: Comprobar una contrafirma
+                - name: Comprobación de una contrasignación
                   href: verifying-a-countersignature.md
                 - name: 'Crear, firmar y almacenar una CTL'
                   href: creating-signing-and-storing-a-ctl.md
-            - name: Firmar archivos y comprobar firmas
+            - name: Firma de archivos y comprobación de firmas
               href: signing-files-and-checking-signatures.md
               items:
                 - name: Usar SignTool para firmar un archivo
                   href: using-signtool-to-sign-a-file.md
                   items:
-                    - name: Agregar marcas de tiempo a archivos firmados anteriormente
+                    - name: Agregar marcas de tiempo a archivos firmados previamente
                       href: adding-time-stamps-to-previously-signed-files.md
-                - name: Usar SignTool para comprobar una firma de archivo
+                - name: Uso de SignTool para comprobar una firma de archivo
                   href: using-signtool-to-verify-a-file-signature.md
-        - name: Crear y recibir mensajes de datos con doble cifrado
+        - name: Creación y recepción de mensajes de datos sobres
           href: creating-and-receiving-enveloped-data-messages.md
           items:
-            - name: Codificación de datos con doble cifrado
+            - name: Codificación de datos con sobres
               href: encoding-enveloped-data.md
-            - name: Descodificar datos con doble cifrado
+            - name: Decoding Enveloped Data
               href: decoding-enveloped-data.md
-            - name: Código alternativo para codificar un mensaje con doble cifrado
+            - name: Código alternativo para codificar un mensaje con sobres
               href: alternate-code-for-encoding-an-enveloped-message.md
-            - name: 'Programa C de ejemplo: codificar un mensaje con signo de cifrado'
+            - name: 'Programa C de ejemplo: codificación de un mensaje con sobres firmado'
               href: example-c-program-encoding-an-enveloped-signed-message.md
         - name: Cifrado y descifrado
           href: encrypting-and-decrypting.md
           items:
-            - name: Intercambios de claves de sesión manual
+            - name: Intercambios manuales de claves de sesión
               href: manual-session-key-exchanges.md
             - name: Cifrar datos
               href: encrypting-data.md
@@ -438,156 +438,156 @@
               href: decrypting-data.md
             - name: 'Programa C de ejemplo: uso de CryptEncryptMessage y CryptDecryptMessage'
               href: example-c-program-using-cryptencryptmessage-and-cryptdecryptmessage.md
-            - name: 'Programa C de ejemplo: usar CryptProtectData'
+            - name: 'Programa C de ejemplo: uso de CryptProtectData'
               href: example-c-program-using-cryptprotectdata.md
             - name: 'Programa C de ejemplo: cifrado de un archivo'
               href: example-c-program-encrypting-a-file.md
-            - name: 'Programa C de ejemplo: descifrado de un archivo'
+            - name: 'Programa C de ejemplo: descifrar un archivo'
               href: example-c-program-decrypting-a-file.md
         - name: Uso de certificados
           href: using-certificates.md
           items:
-            - name: Usar una estructura de datos de CERT_INFO
+            - name: Usar una estructura CERT_INFO datos
               href: using-a-cert-info-data-structure.md
               items:
-                - name: Descodificar una estructura de CERT_INFO
+                - name: Decoding a CERT_INFO Structure
                   href: decoding-a-cert-info-structure.md
-                - name: Codificar una estructura de CERT_INFO
+                - name: Codificación de una CERT_INFO estructura
                   href: encoding-a-cert-info-structure.md
             - name: 'Programa C de ejemplo: enumeración de los certificados de un almacén'
               href: example-c-program-listing-the-certificates-in-a-store.md
-            - name: 'Programa C de ejemplo: eliminar certificados de un almacén de certificados'
+            - name: 'Programa C de ejemplo: Eliminación de certificados de un almacén de certificados'
               href: example-c-program-deleting-certificates-from-a-certificate-store.md
-            - name: 'Programa C de ejemplo: operaciones del almacén de certificados'
+            - name: 'Programa C de ejemplo: Operaciones de almacén de certificados'
               href: example-c-program-certificate-store-operations.md
-            - name: 'Programa C de ejemplo: serialización de certificados'
+            - name: 'Programa C de ejemplo: Serialización de certificados'
               href: example-c-program-serializing-certificates.md
-            - name: 'Programa C de ejemplo: obtener y establecer propiedades de certificado'
+            - name: 'Programa C de ejemplo: obtención y configuración de propiedades de certificado'
               href: example-c-program-getting-and-setting-certificate-properties.md
-            - name: 'Programa C de ejemplo: convertir nombres de certificados en ASN. 1 y atrás'
+            - name: 'Programa C de ejemplo: Conversión de nombres de certificados a ASN.1 y Back'
               href: example-c-program-converting-names-from-certificates-to-asn1-and-back.md
             - name: 'Creación, visualización y administración de certificados'
               href: creating-viewing-and-managing-certificates.md
               items:
                 - name: Uso de MakeCert
                   href: using-makecert.md
-                - name: Usar Cert2SPC
+                - name: Uso de Cert2SPC
                   href: using-cert2spc.md
-                - name: Usar CertMgr
+                - name: Uso de CertMgr
                   href: using-certmgr.md
         - name: Trabajar con almacenes de certificados
           href: working-with-certificate-stores.md
           items:
             - name: Código C de ejemplo para abrir almacenes de certificados
               href: example-c-code-for-opening-certificate-stores.md
-            - name: 'Programa C de ejemplo: operaciones del almacén de certificados de colección y del mismo nivel'
+            - name: 'Programa C de ejemplo: operaciones de colección y almacén de certificados relacionados'
               href: example-c-program-collection-and-sibling-certificate-store-operations.md
             - name: 'Programa C de ejemplo: registro de almacenes de certificados físicos y del sistema'
               href: example-c-program-registering-physical-and-system-certificate-stores.md
-            - name: 'Programa C de ejemplo: establecimiento y obtención de las propiedades del almacén de certificados'
+            - name: 'Programa C de ejemplo: configuración y obtención de propiedades del almacén de certificados'
               href: example-c-program-setting-and-getting-certificate-store-properties.md
             - name: 'Programa C de ejemplo: enumeración de almacenes físicos y del sistema'
               href: example-c-program-listing-system-and-physical-stores.md
         - name: Otros ejemplos de código C extendido
           href: other-extended-c-code-examples.md
           items:
-            - name: Comprobar una CTL
+            - name: Comprobación de una CTL
               href: verifying-a-ctl.md
-            - name: Comprobar mensajes firmados mediante CTL
+            - name: Comprobación de mensajes firmados mediante CCL
               href: verifying-signed-messages-by-using-ctls.md
-            - name: 'Programa C de ejemplo: operaciones de comprobación de certificados'
+            - name: 'Programa C de ejemplo: Operaciones de comprobación de certificados'
               href: example-c-program-certificate-verification-operations.md
-            - name: 'Programa C de ejemplo: trabajar con identificadores de clave'
+            - name: 'Programa C de ejemplo: Trabajar con identificadores clave'
               href: example-c-program-working-with-key-identifiers.md
             - name: 'Programa C de ejemplo: crear una cadena de certificados'
               href: example-c-program-creating-a-certificate-chain.md
-            - name: 'Programa C de ejemplo: creación de una solicitud de certificado'
+            - name: 'Programa C de ejemplo: realizar una solicitud de certificado'
               href: example-c-program-making-a-certificate-request.md
-            - name: 'Ejemplo de programa C: codificación y descodificación ASN. 1'
+            - name: 'Programa de C de ejemplo: Codificación y codificación de ASN.1'
               href: example-c-program-asn1-encoding-and-decoding.md
-            - name: 'Programa C de ejemplo: uso de CertOIDToAlgId y CertCompareIntegerBlob'
+            - name: 'Programa de C de ejemplo: uso de CertOIDToAlgId y CertCompareIntegerBlob'
               href: example-c-program-using-certoidtoalgid-and-certcompareintegerblob.md
-            - name: 'Programa C de ejemplo: comprobación de la firma de un archivo PE'
+            - name: 'Programa C de ejemplo: comprobar la firma de un archivo PE'
               href: example-c-program--verifying-the-signature-of-a-pe-file.md
-            - name: Modificar el acceso al contenedor de claves
+            - name: Modificación del acceso al contenedor de claves
               href: modifying-key-container-access.md
-        - name: Extender la funcionalidad de CryptoAPI
+        - name: Extensión de la funcionalidad cryptoAPI
           href: extending-cryptoapi-functionality.md
           items:
             - name: Información general sobre OID
               href: oid-overview.md
-            - name: Crear la nueva funcionalidad
+            - name: Creación de la nueva funcionalidad
               href: creating-the-new-functionality.md
-            - name: Registrar la nueva funcionalidad
+            - name: Registro de la nueva funcionalidad
               href: registering-the-new-functionality.md
             - name: Instalación de la nueva funcionalidad
               href: installing-the-new-functionality.md
-            - name: Extensión de la funcionalidad de CertOpenStore
+            - name: Extensión de la funcionalidad CertOpenStore
               href: extending-certopenstore-functionality.md
-        - name: 'Uso de CSP: procesos generales'
+        - name: 'Uso de LOSP: procesos generales'
           href: using-csps-general-processes.md
           items:
-            - name: Enumerar protocolos admitidos
+            - name: Enumeración de protocolos admitidos
               href: enumerating-supported-protocols.md
-            - name: Uso de CSP de Schannel
+            - name: Uso de Schannel CSPs
               href: using-schannel-csps.md
               items:
                 - name: Uso del par de claves pública y privada
                   href: public-private-key-pair-usage.md
                 - name: Tipo de firma RSA SHA/MD5
                   href: sha-md5-rsa-signature-type.md
-                - name: Crear la clave maestra
+                - name: Creación de la clave maestra
                   href: creating-the-master-key.md
                   items:
-                    - name: Código de cliente de RSA para crear la clave maestra
+                    - name: Código de cliente RSA para crear la clave maestra
                       href: rsa-client-code-for-creating-the-master-key.md
-                    - name: Diffie-Hellman código de cliente para crear la clave maestra
+                    - name: Diffie-Hellman de cliente para crear la clave maestra
                       href: diffie-hellman-client-code-for-creating-the-master-key.md
-                    - name: Código de servidor RSA para crear la clave maestra
+                    - name: Código del servidor RSA para crear la clave maestra
                       href: rsa-server-code-for-creating-the-master-key.md
-                    - name: Diffie-Hellman código de servidor para crear la clave maestra
+                    - name: Diffie-Hellman de servidor para crear la clave maestra
                       href: diffie-hellman-server-code-for-creating-the-master-key.md
                     - name: Especificar los algoritmos
                       href: specifying-the-algorithms.md
                 - name: Derivación de cifrado masivo y claves MAC
                   href: deriving-bulk-encryption-and-mac-keys.md
-                - name: 'Finalizar mensajes en el protocolo TLS 1,0'
+                - name: Finalizar mensajes en el protocolo TLS 1.0
                   href: finish-messages-in-the-tls-1-0-protocol.md
-                - name: Cifrado de datos masivo
+                - name: Cifrado masivo de datos
                   href: bulk-data-encryption.md
-                - name: Cruzar los límites del proceso
+                - name: Cruce de los límites del proceso
                   href: crossing-process-boundaries.md
                 - name: Tipo de BLOB opaco
                   href: opaque-blob-type.md
-        - name: Usar otras herramientas de CryptoAPI
+        - name: Uso de otras herramientas de CryptoAPI
           href: using-other-cryptoapi-tools.md
           items:
-            - name: Usar SetReg
+            - name: Uso de SetReg
               href: using-setreg.md
-            - name: Usar MakeCat
+            - name: Uso de MakeCat
               href: using-makecat.md
-        - name: Usar CAPICOM
+        - name: Uso de CAPICOM
           href: using-capicom.md
           items:
             - name: Alternativas al uso de CAPICOM
               href: alternatives-to-using-capicom.md
-            - name: Preparación para usar CAPICOM
+            - name: Prepararse para usar CAPICOM
               href: getting-ready-to-use-capicom.md
             - name: Cifrar y descifrar datos
               href: encrypting-and-decrypting-data.md
               items:
                 - name: Cifrado de un mensaje en CAPICOM
                   href: encrypting-a-message-in-capicom.md
-                - name: Descifrado de un mensaje en CAPICOM
+                - name: Descifrar un mensaje en CAPICOM
                   href: decrypting-a-message-in-capicom.md
-            - name: Firmar datos y comprobar firmas digitales
+            - name: Firma de datos y comprobación de firmas digitales
               href: signing-data-and-verifying-digital-signatures.md
               items:
                 - name: Firmar un documento
                   href: signing-a-document.md
-                - name: Firmar un documento
+                - name: Cosignación de un documento
                   href: cosigning-a-document.md
-                - name: Comprobar la firma de un documento
+                - name: Comprobar la firma en un documento
                   href: verifying-the-signature-on-a-document.md
             - name: Uso de almacenes de certificados
               href: using-certificate-stores.md
@@ -596,23 +596,23 @@
                   href: opening-the-active-directory-store-and-retrieving-certificates.md
                 - name: Agregar certificados a un almacén de certificados
                   href: adding-certificates-to-a-certificate-store.md
-                - name: Usar almacenes en ubicaciones diferentes
+                - name: Uso de almacenes en ubicaciones diferentes
                   href: using-stores-in-different-locations.md
                 - name: Recopilación y comprobación de certificados
                   href: collecting-and-verifying-certificates.md
-                - name: Comprobando el estado de revocación de certificados
+                - name: Comprobación del estado de revocación de certificados
                   href: checking-certificate-revocation-status.md
-            - name: Crear y recibir mensajes de datos con doble cifrado en CAPICOM
+            - name: Creación y recepción de mensajes de datos con sobres en CAPICOM
               href: creating-and-receiving-enveloped-data-messages-in-capicom.md
               items:
-                - name: Envío de un mensaje de datos con doble cifrado
+                - name: Envío de un mensaje de datos con sobres
                   href: sending-an-enveloped-data-message.md
-                - name: Recibir un mensaje de datos con doble cifrado
+                - name: Recepción de un mensaje de datos con sobres
                   href: receiving-an-enveloped-data-message.md
-        - name: Programar servicios de Certificate Server
+        - name: Programación de servicios de certificados
           href: programming-certificate-services.md
           items:
-            - name: Usar servicios de Certificate Server en C++
+            - name: Uso de Servicios de certificados en C++
               href: using-certificate-services-in-c-.md
               items:
                 - name: Comprobación de errores en C++
@@ -628,49 +628,49 @@
                   href: writing-custom-exit-modules.md
                 - name: Escribir controladores de extensión personalizados
                   href: writing-custom-extension-handlers.md
-            - name: Ver la base de datos de servicios de certificados
+            - name: Ver la base de datos de Servicios de certificados
               href: viewing-the-certificate-services-database.md
-            - name: Recuperar un certificado emitido desde el Active Directory
+            - name: Recuperación de un certificado emitido desde el Active Directory
               href: retrieving-an-issued-certificate-from-the-active-directory.md
-            - name: Recuperación de una lista de revocación de certificados
+            - name: Recuperar una lista de revocación de certificados
               href: retrieving-a-certificate-revocation-list.md
-            - name: Personalización de las páginas de inscripción Web de servicios de certificados
+            - name: Personalización de las páginas de inscripción web de Servicios de certificados
               href: customizing-the-certificate-services-web-enrollment-pages.md
-            - name: Establecer el campo de etiqueta de tipo
+            - name: Establecimiento del campo de etiqueta de tipo
               href: setting-the-type-tag-field.md
             - name: Recuperación de mensajes de error
               href: retrieving-error-messages.md
-            - name: Usar las funciones de copia de seguridad y restauración de servicios de certificados
+            - name: Uso de las funciones de copia de seguridad y restauración de Servicios de certificados
               href: using-the-certificate-services-backup-and-restore-functions.md
               items:
-                - name: Establecer los privilegios de copia de seguridad y restauración
+                - name: Establecimiento de los privilegios de copia de seguridad y restauración
                   href: setting-the-backup-and-restore-privileges.md
-                - name: Copia de seguridad de servicios de Certificate Server
+                - name: Copia de seguridad de servicios de certificados
                   href: backing-up-certificate-services.md
-                - name: Restauración de servicios de Certificate Server desde la copia de seguridad
+                - name: Restaurar servicios de certificados a partir de la copia de seguridad
                   href: restoring-certificate-services-from-backup.md
-                - name: Copia de seguridad y restauración de la clave privada de servicios de certificados
+                - name: Copia de seguridad y restauración de la clave privada de Servicios de certificados
                   href: backing-up-and-restoring-the-certificate-services-private-key.md
-            - name: Solicitar un certificado de archivo de claves
+            - name: Solicitud de un certificado de archivo de claves
               href: requesting-a-key-archival-certificate.md
-        - name: Usar el control de inscripción de certificados
+        - name: Uso del control de inscripción de certificados
           href: using-certificate-enrollment-control.md
           items:
             - name: Crear una instancia del objeto de control de inscripción de certificados
               href: creating-an-instance-of-the-certificate-enrollment-control-object.md
               items:
-                - name: Se ha creado una instancia del control de inscripción de certificados en C++
+                - name: El control de inscripción de certificados con instancias en C++
                   href: the-certificate-enrollment-control-instantiated-in-c-.md
-                - name: El control de inscripción de certificados del que se ha creado una instancia en VBScript
+                - name: El control de inscripción de certificados con instancias en VBScript
                   href: the-certificate-enrollment-control-instantiated-in-vbscript.md
-            - name: Uso de las propiedades de control de inscripción de certificados
+            - name: Uso de las propiedades del control de inscripción de certificados
               href: using-the-certificate-enrollment-control-properties.md
               items:
-                - name: Propiedades de control de inscripción de certificados en C++
+                - name: Propiedades del control de inscripción de certificados en C++
                   href: certificate-enrollment-control-properties-in-c-.md
-            - name: Recibir el certificado devuelto
+            - name: Recepción del certificado devuelto
               href: receiving-the-returned-certificate.md
-            - name: Crear la solicitud de certificado
+            - name: Creación de la solicitud de certificado
               href: creating-the-certificate-request.md
               items:
                 - name: Ejemplo de solicitud en C++
@@ -703,7 +703,7 @@
               href: private-key-caching-constants.md
             - name: Marcas de protocolo
               href: protocol-flags.md
-        - name: Tipos de datos de criptografía
+        - name: Tipos de datos criptografía
           href: cryptography-data-types.md
           items:
             - name: ALG_ID
@@ -1752,7 +1752,7 @@
               href: /windows/desktop/api/Wintrust/nf-wintrust-wthelpergetprovsignerfromchain
             - name: WTHelperProvDataFromStateData
               href: /windows/desktop/api/Wintrust/nf-wintrust-wthelperprovdatafromstatedata
-        - name: Interfaces criptográficas
+        - name: Interfaces de criptografía
           href: cryptography-interfaces.md
           items:
             - name: ICEnroll
@@ -1767,15 +1767,15 @@
                 - name: Métodos de ICEnroll4
                   href: methods-of-icenroll4.md
                   items:
-                    - name: Método acceptFilePKCS7
+                    - name: AcceptFilePKCS7 (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll-acceptfilepkcs7
                     - name: Método acceptFileResponse
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-acceptfileresponse
-                    - name: Método acceptPKCS7
+                    - name: AcceptPKCS7 (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll-acceptpkcs7
                     - name: Método acceptResponse
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-acceptresponse
-                    - name: Método addAttributeToRequest
+                    - name: AddAttributeToRequest (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-addattributetorequest
                     - name: Método addBlobPropertyToCertificate
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-addblobpropertytocertificate
@@ -1783,82 +1783,82 @@
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll2-addcerttypetorequest
                     - name: Método addCertTypeToRequestEx
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-addcerttypetorequestex
-                    - name: Método addExtensionToRequest
+                    - name: AddExtensionToRequest (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-addextensiontorequest
                     - name: Método addNameValuePairToRequest
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-addnamevaluepairtorequest
-                    - name: Método addNameValuePairToSignature
+                    - name: AddNameValuePairToSignature (Método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll2-addnamevaluepairtosignature
-                    - name: binaryToString (método)
+                    - name: BinaryToString (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-binarytostring
-                    - name: Método createFilePFX
+                    - name: CreateFilePFX (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-createfilepfx
-                    - name: Método createFilePKCS10
+                    - name: CreateFilePKCS10 (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll-createfilepkcs10
-                    - name: Método createFileRequest
+                    - name: CreateFileRequest (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-createfilerequest
-                    - name: Método createPFX
+                    - name: CreatePFX (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-createpfx
-                    - name: Método createPKCS10
+                    - name: CreatePKCS10 (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll-createpkcs10
-                    - name: Método createRequest
+                    - name: CreateRequest (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-createrequest
-                    - name: Método EnumAlgs
+                    - name: EnumAlgs (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll3-enumalgs
-                    - name: Método enumContainers
+                    - name: enumContainers (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll-enumcontainers
-                    - name: Método enumPendingRequest
+                    - name: enumPendingRequest (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-enumpendingrequest
-                    - name: Método enumProviders
+                    - name: enumProviders (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll-enumproviders
-                    - name: Método freeRequestInfo
+                    - name: FreeRequestInfo (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll-freerequestinfo
-                    - name: Método GetAlgName
+                    - name: GetAlgName (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll3-getalgname
                     - name: Método getCertFromFileResponse
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-getcertfromfileresponse
-                    - name: Método getCertFromPKCS7
+                    - name: GetCertFromPKCS7 (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll-getcertfrompkcs7
-                    - name: Método getCertFromResponse
+                    - name: GetCertFromResponse (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-getcertfromresponse
-                    - name: Método GetKeyLen
+                    - name: GetKeyLen (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll3-getkeylen
-                    - name: Método GetKeyLenEx
+                    - name: GetKeyLenEx (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-getkeylenex
-                    - name: Método getProviderType
+                    - name: GetProviderType (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-getprovidertype
                     - name: Método GetSupportedKeySpec
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll3-getsupportedkeyspec
-                    - name: Método InstallPKCS7
+                    - name: InstallPKCS7 (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll3-installpkcs7
-                    - name: Método InstallPKCS7Ex
+                    - name: InstallPKCS7Ex (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-installpkcs7ex
-                    - name: Método removePendingRequest
+                    - name: RemovePendingRequest (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-removependingrequest
                     - name: Reset (Método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll3-reset
-                    - name: Método resetAttributes
+                    - name: resetAttributes (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-resetattributes
-                    - name: Método resetBlobProperties
+                    - name: resetBlobProperties (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-resetblobproperties
-                    - name: Método resetExtensions
+                    - name: resetExtensions (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-resetextensions
                     - name: Método setPendingRequestInfo
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-setpendingrequestinfo
-                    - name: Método stringToBinary
+                    - name: StringToBinary (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-stringtobinary
                 - name: Propiedades de ICEnroll4
                   href: properties-of-icenroll4.md
                   items:
-                    - name: Propiedad CAStoreFlags
+                    - name: CaStoreFlags (propiedad)
                       href: /windows/desktop/api/xenroll/nf-xenroll-icenroll-get_castoreflags
-                    - name: Propiedad CAStoreName
+                    - name: CaStoreName (propiedad)
                       href: /windows/desktop/api/xenroll/nf-xenroll-icenroll-get_castorename
-                    - name: Propiedad CAStoreType
+                    - name: CaStoreType (propiedad)
                       href: /windows/desktop/api/xenroll/nf-xenroll-icenroll-get_castoretype
-                    - name: ClientID (propiedad)
+                    - name: Propiedad ClientID
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-get_clientid
-                    - name: ContainerName (propiedad)
+                    - name: Propiedad ContainerName
                       href: /windows/desktop/api/xenroll/nf-xenroll-icenroll-get_containername
                     - name: Propiedad DeleteRequestCert
                       href: /windows/desktop/api/xenroll/nf-xenroll-icenroll-get_deleterequestcert
@@ -1870,29 +1870,29 @@
                       href: /windows/desktop/api/xenroll/nf-xenroll-icenroll-get_genkeyflags
                     - name: Propiedad HashAlgID
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll3-get_hashalgid
-                    - name: HashAlgorithm (propiedad)
+                    - name: Propiedad HashAlgorithm
                       href: /windows/desktop/api/xenroll/nf-xenroll-icenroll-get_hashalgorithm
                     - name: Propiedad IncludeSubjectKeyID
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-get_includesubjectkeyid
-                    - name: Propiedad especificación de especificación
+                    - name: Propiedad KeySpec
                       href: /windows/desktop/api/xenroll/nf-xenroll-icenroll-get_keyspec
                     - name: Propiedad LimitExchangeKeyToEncipherment
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll3-get_limitexchangekeytoencipherment
-                    - name: Propiedad MyStoreFlags
+                    - name: MyStoreFlags (propiedad)
                       href: /windows/desktop/api/xenroll/nf-xenroll-icenroll-get_mystoreflags
-                    - name: Propiedad MyStoreName
+                    - name: MyStoreName (propiedad)
                       href: /windows/desktop/api/xenroll/nf-xenroll-icenroll-get_mystorename
                     - name: Propiedad MyStoreType
                       href: /windows/desktop/api/xenroll/nf-xenroll-icenroll-get_mystoretype
                     - name: Propiedad PrivateKeyArchiveCertificate
                       href: /windows/desktop/api/Xenroll/nf-xenroll-icenroll4-get_privatekeyarchivecertificate
-                    - name: Propiedad ProviderFlags
+                    - name: ProviderFlags (propiedad)
                       href: /windows/desktop/api/xenroll/nf-xenroll-icenroll-get_providerflags
                     - name: ProviderName (propiedad)
                       href: /windows/desktop/api/xenroll/nf-xenroll-icenroll-get_providername
-                    - name: Propiedad ProviderType
+                    - name: ProviderType (propiedad)
                       href: /windows/desktop/api/xenroll/nf-xenroll-icenroll-get_providertype
-                    - name: Propiedad PVKFileName
+                    - name: PvKFileName( Propiedad)
                       href: /windows/desktop/api/xenroll/nf-xenroll-icenroll-get_pvkfilename
                     - name: Propiedad RequestStoreFlags
                       href: /windows/desktop/api/xenroll/nf-xenroll-icenroll-get_requeststoreflags
@@ -1932,25 +1932,25 @@
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin2-deleterow
                     - name: Método DenyRequest
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin-denyrequest
-                    - name: Método GetArchivedKey
+                    - name: GetArchivedKey (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin2-getarchivedkey
-                    - name: Método GetCAProperty
+                    - name: GetCAProperty (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin2-getcaproperty
                     - name: Método GetCAPropertyDisplayName
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin2-getcapropertydisplayname
-                    - name: Método GetCAPropertyFlags
+                    - name: GetCAPropertyFlags (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin2-getcapropertyflags
-                    - name: Método GetConfigEntry
+                    - name: GetConfigEntry (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin2-getconfigentry
                     - name: Método GetCRL
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin-getcrl
-                    - name: Método GetMyRoles
+                    - name: GetMyRoles (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin2-getmyroles
-                    - name: Método GetRevocationReason
+                    - name: GetRevocationReason (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin-getrevocationreason
-                    - name: Método ImportCertificate
+                    - name: ImportCertificate (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin-importcertificate
-                    - name: Método ImportKey
+                    - name: ImportKey (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin2-importkey
                     - name: Método IsValidCertificate
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin-isvalidcertificate
@@ -1960,13 +1960,13 @@
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin2-publishcrls
                     - name: Método ResubmitRequest
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin-resubmitrequest
-                    - name: Método RevokeCertificate
+                    - name: RevokeCertificate (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin-revokecertificate
-                    - name: Método SetCAProperty
+                    - name: SetCAProperty (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin2-setcaproperty
                     - name: Método SetCertificateExtension
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin-setcertificateextension
-                    - name: Método SetConfigEntry
+                    - name: SetConfigEntry (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin2-setconfigentry
                     - name: Método SetRequestAttributes
                       href: /windows/desktop/api/Certadm/nf-certadm-icertadmin-setrequestattributes
@@ -1994,12 +1994,12 @@
                 - name: Métodos ICertContext
                   href: icertcontext-methods.md
                   items:
-                    - name: Método FreeContext
+                    - name: FreeContext (método)
                       href: icertcontext-freecontext.md
                 - name: Propiedades de ICertContext
                   href: icertcontext-properties.md
                   items:
-                    - name: Propiedad CertContext
+                    - name: CertContext (propiedad)
                       href: icertcontext-certcontext.md
             - name: ICertEncodeAltName
               href: /windows/desktop/api/Certenc/nn-certenc-icertencodealtname
@@ -2007,19 +2007,19 @@
                 - name: Métodos ICertEncodeAltName
                   href: icertencodealtname-methods.md
                   items:
-                    - name: Decode (método)
+                    - name: Método Decode
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodealtname-decode
-                    - name: Encode (método)
+                    - name: Método Encode
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodealtname-encode
                     - name: Método GetName
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodealtname-getname
-                    - name: Método GetNameChoice
+                    - name: GetNameChoice (método)
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodealtname-getnamechoice
                     - name: Método GetNameCount
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodealtname-getnamecount
                     - name: Reset (Método)
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodealtname-reset
-                    - name: Método SetNameEntry
+                    - name: SetNameEntry (método)
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodealtname-setnameentry
             - name: ICertEncodeBitString
               href: /windows/desktop/api/Certenc/nn-certenc-icertencodebitstring
@@ -2027,13 +2027,13 @@
                 - name: Métodos ICertEncodeBitString
                   href: icertencodebitstring-methods.md
                   items:
-                    - name: Decode (método)
+                    - name: Método Decode
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodebitstring-decode
-                    - name: Encode (método)
+                    - name: Método Encode
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodebitstring-encode
-                    - name: Método GetBitCount
+                    - name: GetBitCount (método)
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodebitstring-getbitcount
-                    - name: Método GetBitString
+                    - name: GetBitString (método)
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodebitstring-getbitstring
             - name: ICertEncodeCRLDistInfo
               href: /windows/desktop/api/Certenc/nn-certenc-icertencodecrldistinfo
@@ -2041,23 +2041,23 @@
                 - name: Métodos ICertEncodeCRLDistInfo
                   href: icertencodecrldistinfo-methods.md
                   items:
-                    - name: Decode (método)
+                    - name: Método Decode
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodecrldistinfo-decode
-                    - name: Encode (método)
+                    - name: Método Encode
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodecrldistinfo-encode
                     - name: Método GetDistPointCount
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodecrldistinfo-getdistpointcount
                     - name: Método GetName
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodecrldistinfo-getname
-                    - name: Método GetNameChoice
+                    - name: GetNameChoice (método)
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodecrldistinfo-getnamechoice
                     - name: Método GetNameCount
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodecrldistinfo-getnamecount
                     - name: Reset (Método)
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodecrldistinfo-reset
-                    - name: Método SetNameCount
+                    - name: SetNameCount (método)
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodecrldistinfo-setnamecount
-                    - name: Método SetNameEntry
+                    - name: SetNameEntry (método)
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodecrldistinfo-setnameentry
             - name: ICertEncodeDateArray
               href: /windows/desktop/api/Certenc/nn-certenc-icertencodedatearray
@@ -2065,9 +2065,9 @@
                 - name: Métodos ICertEncodeDateArray
                   href: icertencodedatearray-methods.md
                   items:
-                    - name: Decode (método)
+                    - name: Método Decode
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodedatearray-decode
-                    - name: Encode (método)
+                    - name: Método Encode
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodedatearray-encode
                     - name: Método GetCount
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodedatearray-getcount
@@ -2083,9 +2083,9 @@
                 - name: Métodos ICertEncodeLongArray
                   href: icertencodelongarray-methods.md
                   items:
-                    - name: Decode (método)
+                    - name: Método Decode
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodelongarray-decode
-                    - name: Encode (método)
+                    - name: Método Encode
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodelongarray-encode
                     - name: Método GetCount
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodelongarray-getcount
@@ -2101,13 +2101,13 @@
                 - name: Métodos ICertEncodeStringArray
                   href: icertencodestringarray-methods.md
                   items:
-                    - name: Decode (método)
+                    - name: Método Decode
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodestringarray-decode
-                    - name: Encode (método)
+                    - name: Método Encode
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodestringarray-encode
                     - name: Método GetCount
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodestringarray-getcount
-                    - name: Método GetStringType
+                    - name: GetStringType (método)
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodestringarray-getstringtype
                     - name: Método GetValue
                       href: /windows/desktop/api/Certenc/nf-certenc-icertencodestringarray-getvalue
@@ -2125,11 +2125,11 @@
                   items:
                     - name: Método GetDescription
                       href: /windows/desktop/api/Certexit/nf-certexit-icertexit-getdescription
-                    - name: Método GetManageModule
+                    - name: GetManageModule (método)
                       href: /windows/desktop/api/Certexit/nf-certexit-icertexit2-getmanagemodule
                     - name: Método Initialize
                       href: /windows/desktop/api/Certexit/nf-certexit-icertexit-initialize
-                    - name: NOTIFY (método)
+                    - name: Notify (método)
                       href: /windows/desktop/api/Certexit/nf-certexit-icertexit-notify
             - name: ICertGetConfig
               href: /windows/desktop/api/Certcli/nn-certcli-icertgetconfig
@@ -2145,20 +2145,20 @@
                 - name: Métodos ICertificateEnrollmentPolicyServerSetup
                   href: icertificateenrollmentpolicyserversetup-methods.md
                   items:
-                    - name: Método InitializeInstallDefaults
+                    - name: InitializeInstallDefaults (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertificateenrollmentpolicyserversetup-initializeinstalldefaults
                     - name: Método GetProperty
                       href: /windows/desktop/api/Casetup/nf-casetup-icertificateenrollmentpolicyserversetup-getproperty
                     - name: Método SetProperty
                       href: /windows/desktop/api/Casetup/nf-casetup-icertificateenrollmentpolicyserversetup-setproperty
-                    - name: Método de instalación
+                    - name: Install (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertificateenrollmentpolicyserversetup-install
-                    - name: Método Uninstall
+                    - name: UnInstall (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertificateenrollmentpolicyserversetup-uninstall
                 - name: Propiedades de ICertificateEnrollmentPolicyServerSetup
                   href: icertificateenrollmentpolicyserversetup-properties.md
                   items:
-                    - name: ErrorString (propiedad)
+                    - name: Propiedad ErrorString
                       href: /windows/desktop/api/Casetup/nf-casetup-icertificateenrollmentpolicyserversetup-get_errorstring
             - name: ICertificateEnrollmentServerSetup
               href: /windows/desktop/api/Casetup/nn-casetup-icertificateenrollmentserversetup
@@ -2166,7 +2166,7 @@
                 - name: Métodos ICertificateEnrollmentServerSetup
                   href: icertificateenrollmentserversetup-methods.md
                   items:
-                    - name: Método InitializeInstallDefaults
+                    - name: InitializeInstallDefaults (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertificateenrollmentserversetup-initializeinstalldefaults
                     - name: Método GetProperty
                       href: /windows/desktop/api/Casetup/nf-casetup-icertificateenrollmentserversetup-getproperty
@@ -2174,14 +2174,14 @@
                       href: /windows/desktop/api/Casetup/nf-casetup-icertificateenrollmentserversetup-setapplicationpoolcredentials
                     - name: Método SetProperty
                       href: /windows/desktop/api/Casetup/nf-casetup-icertificateenrollmentserversetup-setproperty
-                    - name: Método de instalación
+                    - name: Install (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertificateenrollmentserversetup-install
-                    - name: Método Uninstall
+                    - name: UnInstall (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertificateenrollmentserversetup-uninstall
                 - name: Propiedades de ICertificateEnrollmentServerSetup
                   href: icertificateenrollmentserversetup-properties.md
                   items:
-                    - name: ErrorString (propiedad)
+                    - name: Propiedad ErrorString
                       href: /windows/desktop/api/Casetup/nf-casetup-icertificateenrollmentserversetup-get_errorstring
             - name: ICertManageModule
               href: /windows/desktop/api/Certmod/nn-certmod-icertmanagemodule
@@ -2189,7 +2189,7 @@
                 - name: Métodos ICertManageModule
                   href: icertmanagemodule-methods.md
                   items:
-                    - name: Configure (método)
+                    - name: Configurar método
                       href: /windows/desktop/api/Certmod/nf-certmod-icertmanagemodule-configure
                     - name: Método GetProperty
                       href: /windows/desktop/api/Certmod/nf-certmod-icertmanagemodule-getproperty
@@ -2205,13 +2205,13 @@
                   items:
                     - name: Método GetDescription
                       href: /windows/desktop/api/Certpol/nf-certpol-icertpolicy-getdescription
-                    - name: Método GetManageModule
+                    - name: GetManageModule (método)
                       href: /windows/desktop/api/Certpol/nf-certpol-icertpolicy2-getmanagemodule
                     - name: Método Initialize
                       href: /windows/desktop/api/Certpol/nf-certpol-icertpolicy-initialize
                     - name: ShutDown (método)
                       href: /windows/desktop/api/Certpol/nf-certpol-icertpolicy-shutdown
-                    - name: Método VerifyRequest
+                    - name: VerifyRequest (método)
                       href: /windows/desktop/api/Certpol/nf-certpol-icertpolicy-verifyrequest
             - name: ICertRequest
               href: /windows/desktop/api/Certcli/nn-certcli-icertrequest
@@ -2223,39 +2223,39 @@
                 - name: Métodos ICertRequest3
                   href: icertrequest3-methods.md
                   items:
-                    - name: Método GetCACertificate
+                    - name: GetCACertificate (método)
                       href: /windows/desktop/api/Certcli/nf-certcli-icertrequest-getcacertificate
-                    - name: Método GetCAProperty
+                    - name: GetCAProperty (método)
                       href: /windows/desktop/api/Certcli/nf-certcli-icertrequest2-getcaproperty
-                    - name: Método GetCAPropertyDisplayName
+                    - name: GetCAPropertyDisplayName (método)
                       href: /windows/desktop/api/Certcli/nf-certcli-icertrequest2-getcapropertydisplayname
-                    - name: Método GetCAPropertyFlags
+                    - name: GetCAPropertyFlags (método)
                       href: /windows/desktop/api/Certcli/nf-certcli-icertrequest2-getcapropertyflags
-                    - name: Método GetCertificate
+                    - name: GetCertificate (método)
                       href: /windows/desktop/api/Certcli/nf-certcli-icertrequest-getcertificate
-                    - name: Método GetDispositionMessage
+                    - name: GetDispositionMessage (método)
                       href: /windows/desktop/api/Certcli/nf-certcli-icertrequest-getdispositionmessage
-                    - name: Método GetErrorMessageText
+                    - name: GetErrorMessageText (método)
                       href: /windows/desktop/api/Certcli/nf-certcli-icertrequest2-geterrormessagetext
-                    - name: Método GetFullResponseProperty
+                    - name: GetFullResponseProperty (método)
                       href: /windows/desktop/api/Certcli/nf-certcli-icertrequest2-getfullresponseproperty
                     - name: Método GetIssuedCertificate
                       href: /windows/desktop/api/Certcli/nf-certcli-icertrequest2-getissuedcertificate
-                    - name: Método GetIssuedCertificate2
+                    - name: GetIssuedCertificate2 (método)
                       href: /windows/desktop/api/Certcli/nf-certcli-icertrequest3-getissuedcertificate2
-                    - name: Método GetLastStatus
+                    - name: GetLastStatus (método)
                       href: /windows/desktop/api/Certcli/nf-certcli-icertrequest-getlaststatus
-                    - name: Método GetRefreshPolicy
+                    - name: GetRefreshPolicy (método)
                       href: /windows/desktop/api/Certcli/nf-certcli-icertrequest3-getrefreshpolicy
-                    - name: Método GetRequestId
+                    - name: GetRequestId (método)
                       href: /windows/desktop/api/Certcli/nf-certcli-icertrequest-getrequestid
-                    - name: Método GetRequestIdString
+                    - name: GetRequestIdString (método)
                       href: /windows/desktop/api/Certcli/nf-certcli-icertrequest3-getrequestidstring
-                    - name: Método RetrievePending
+                    - name: RetrievePending (método)
                       href: /windows/desktop/api/Certcli/nf-certcli-icertrequest-retrievepending
-                    - name: Método SetCredential
+                    - name: SetCredential (método)
                       href: /windows/desktop/api/Certcli/nf-certcli-icertrequest3-setcredential
-                    - name: Submit (método)
+                    - name: Método Submit
                       href: /windows/desktop/api/Certcli/nf-certcli-icertrequest-submit
             - name: ICertServerExit
               href: /windows/desktop/api/Certif/nn-certif-icertserverexit
@@ -2263,27 +2263,27 @@
                 - name: Métodos ICertServerExit
                   href: icertserverexit-methods.md
                   items:
-                    - name: Método EnumerateAttributes
+                    - name: EnumerateAttributes (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverexit-enumerateattributes
-                    - name: Método EnumerateAttributesClose
+                    - name: EnumerateAttributesClose (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverexit-enumerateattributesclose
-                    - name: Método EnumerateAttributesSetup
+                    - name: EnumerateAttributesSetup (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverexit-enumerateattributessetup
-                    - name: Método EnumerateExtensions
+                    - name: EnumerateExtensions (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverexit-enumerateextensions
-                    - name: Método EnumerateExtensionsClose
+                    - name: EnumerateExtensionsClose (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverexit-enumerateextensionsclose
-                    - name: Método EnumerateExtensionsSetup
+                    - name: EnumerateExtensionsSetup (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverexit-enumerateextensionssetup
-                    - name: Método GetCertificateExtension
+                    - name: GetCertificateExtension (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverexit-getcertificateextension
-                    - name: Método GetCertificateExtensionFlags
+                    - name: GetCertificateExtensionFlags (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverexit-getcertificateextensionflags
-                    - name: Método GetCertificateProperty
+                    - name: GetCertificateProperty (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverexit-getcertificateproperty
-                    - name: Método GetRequestAttribute
+                    - name: GetRequestAttribute (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverexit-getrequestattribute
-                    - name: Método GetRequestProperty
+                    - name: GetRequestProperty (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverexit-getrequestproperty
                     - name: Método SetContext
                       href: /windows/desktop/api/Certif/nf-certif-icertserverexit-setcontext
@@ -2293,31 +2293,31 @@
                 - name: Métodos ICertServerPolicy
                   href: icertserverpolicy-methods.md
                   items:
-                    - name: Método EnumerateAttributes
+                    - name: EnumerateAttributes (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverpolicy-enumerateattributes
-                    - name: Método EnumerateAttributesClose
+                    - name: EnumerateAttributesClose (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverpolicy-enumerateattributesclose
-                    - name: Método EnumerateAttributesSetup
+                    - name: EnumerateAttributesSetup (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverpolicy-enumerateattributessetup
-                    - name: Método EnumerateExtensions
+                    - name: EnumerateExtensions (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverpolicy-enumerateextensions
-                    - name: Método EnumerateExtensionsClose
+                    - name: EnumerateExtensionsClose (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverpolicy-enumerateextensionsclose
-                    - name: Método EnumerateExtensionsSetup
+                    - name: EnumerateExtensionsSetup (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverpolicy-enumerateextensionssetup
-                    - name: Método GetCertificateExtension
+                    - name: GetCertificateExtension (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverpolicy-getcertificateextension
-                    - name: Método GetCertificateExtensionFlags
+                    - name: GetCertificateExtensionFlags (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverpolicy-getcertificateextensionflags
-                    - name: Método GetCertificateProperty
+                    - name: GetCertificateProperty (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverpolicy-getcertificateproperty
-                    - name: Método GetRequestAttribute
+                    - name: GetRequestAttribute (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverpolicy-getrequestattribute
-                    - name: Método GetRequestProperty
+                    - name: GetRequestProperty (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverpolicy-getrequestproperty
                     - name: Método SetCertificateExtension
                       href: /windows/desktop/api/Certif/nf-certif-icertserverpolicy-setcertificateextension
-                    - name: Método SetCertificateProperty
+                    - name: SetCertificateProperty (método)
                       href: /windows/desktop/api/Certif/nf-certif-icertserverpolicy-setcertificateproperty
                     - name: Método SetContext
                       href: /windows/desktop/api/Certif/nf-certif-icertserverpolicy-setcontext
@@ -2327,35 +2327,35 @@
                 - name: Métodos de ICertSrvSetup
                   href: methods-of-icertsrvsetup.md
                   items:
-                    - name: Método CAImportPFX
+                    - name: CaImportPFX (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-caimportpfx
-                    - name: Método GetCASetupProperty
+                    - name: GetCASetupProperty (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-getcasetupproperty
-                    - name: Método GetExistingCACertificates
+                    - name: GetExistingCACertificates (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-getexistingcacertificates
                     - name: Método GetHashAlgorithmList
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-gethashalgorithmlist
-                    - name: Método GetKeyLengthList
+                    - name: GetKeyLengthList (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-getkeylengthlist
                     - name: Método GetPrivateKeyContainerList
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-getprivatekeycontainerlist
-                    - name: Método GetProviderNameList
+                    - name: GetProviderNameList (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-getprovidernamelist
                     - name: Método GetSupportedCATypes
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-getsupportedcatypes
-                    - name: Método InitializeDefaults
+                    - name: InitializeDefaults (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-initializedefaults
-                    - name: Método de instalación
+                    - name: Método Install
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-install
                     - name: Método IsPropertyEditable
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-ispropertyeditable
                     - name: Método PostUnInstall
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-postuninstall
-                    - name: Método PreUnInstall
+                    - name: PreUnInstall (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-preuninstall
                     - name: Método SetCADistinguishedName
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-setcadistinguishedname
-                    - name: Método SetCASetupProperty
+                    - name: SetCASetupProperty (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-setcasetupproperty
                     - name: Método SetDatabaseInformation
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-setdatabaseinformation
@@ -2366,9 +2366,9 @@
                 - name: Propiedades de ICertSrvSetup
                   href: properties-of-icertsrvsetup.md
                   items:
-                    - name: Propiedad CAErrorId
+                    - name: CaErrorId (propiedad)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-get_caerrorid
-                    - name: Propiedad CAErrorString
+                    - name: 'CaErrorString, propiedad'
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetup-get_caerrorstring
             - name: ICertSrvSetupKeyInformation
               href: /windows/desktop/api/Casetup/nn-casetup-icertsrvsetupkeyinformation
@@ -2376,13 +2376,13 @@
                 - name: Propiedades de ICertSrvSetupKeyInformation
                   href: properties-of-icertsrvsetupkeyinformation.md
                   items:
-                    - name: ContainerName (propiedad)
+                    - name: Propiedad ContainerName
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetupkeyinformation-get_containername
                     - name: Propiedad existente
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetupkeyinformation-get_existing
-                    - name: Propiedad ExistingCACertificate
+                    - name: ExistingCACertificate( Propiedad)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetupkeyinformation-get_existingcacertificate
-                    - name: HashAlgorithm (propiedad)
+                    - name: Propiedad HashAlgorithm
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetupkeyinformation-get_hashalgorithm
                     - name: Propiedad Length
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetupkeyinformation-get_length
@@ -2399,9 +2399,9 @@
                 - name: Propiedades de ICertSrvSetupKeyInformationCollection
                   href: properties-of-icertsrvsetupkeyinformationcollection.md
                   items:
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetupkeyinformationcollection-get__newenum
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetupkeyinformationcollection-get_count
                     - name: Item (Propiedad)
                       href: /windows/desktop/api/Casetup/nf-casetup-icertsrvsetupkeyinformationcollection-get_item
@@ -2428,23 +2428,23 @@
                 - name: Métodos ICertView2
                   href: icertview2-methods.md
                   items:
-                    - name: Método EnumCertViewColumn
+                    - name: EnumCertViewColumn (método)
                       href: /windows/desktop/api/Certview/nf-certview-icertview-enumcertviewcolumn
-                    - name: Método GetColumnCount
+                    - name: GetColumnCount (método)
                       href: /windows/desktop/api/Certview/nf-certview-icertview-getcolumncount
-                    - name: Método GetColumnIndex
+                    - name: GetColumnIndex (método)
                       href: /windows/desktop/api/Certview/nf-certview-icertview-getcolumnindex
                     - name: OpenConnection (método)
                       href: /windows/desktop/api/Certview/nf-certview-icertview-openconnection
-                    - name: Método OpenView
+                    - name: OpenView (método)
                       href: /windows/desktop/api/Certview/nf-certview-icertview-openview
-                    - name: Método SetRestriction
+                    - name: SetRestriction (método)
                       href: /windows/desktop/api/Certview/nf-certview-icertview-setrestriction
                     - name: Método SetResultColumn
                       href: /windows/desktop/api/Certview/nf-certview-icertview-setresultcolumn
                     - name: Método SetResultColumnCount
                       href: /windows/desktop/api/Certview/nf-certview-icertview-setresultcolumncount
-                    - name: Método configurable
+                    - name: SetTable (método)
                       href: /windows/desktop/api/Certview/nf-certview-icertview2-settable
             - name: IChainContext
               href: ichaincontext.md
@@ -2452,7 +2452,7 @@
                 - name: Métodos IChainContext
                   href: ichaincontext-methods.md
                   items:
-                    - name: Método FreeContext
+                    - name: FreeContext (método)
                       href: ichaincontext-freecontext.md
                 - name: Propiedades de IChainContext
                   href: ichaincontext-properties.md
@@ -2469,13 +2469,13 @@
                 - name: Métodos de IEnroll4
                   href: methods-of-ienroll4.md
                   items:
-                    - name: Método acceptFilePKCS7WStr
+                    - name: AcceptFilePKCS7WStr (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-acceptfilepkcs7wstr
                     - name: Método acceptFileResponseWStr
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-acceptfileresponsewstr
-                    - name: Método acceptPKCS7Blob
+                    - name: AcceptPKCS7Blob (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-acceptpkcs7blob
-                    - name: Método acceptResponseBlob
+                    - name: AcceptResponseBlob (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-acceptresponseblob
                     - name: Método addAttributeToRequestWStr
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-addattributetorequestwstr
@@ -2489,41 +2489,41 @@
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-addcerttypetorequestwstrex
                     - name: Método AddExtensionsToRequest
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-addextensionstorequest
-                    - name: Método addExtensionToRequestWStr
+                    - name: AddExtensionToRequestWStr (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-addextensiontorequestwstr
                     - name: Método addNameValuePairToRequestWStr
                       href: /windows/desktop/api/xenroll/nf-xenroll-ienroll4-addnamevaluepairtorequestwstr
                     - name: Método AddNameValuePairToSignatureWStr
                       href: /windows/desktop/api/xenroll/nf-xenroll-ienroll-addnamevaluepairtosignaturewstr
-                    - name: Método binaryBlobToString
+                    - name: BinaryBlobToString (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-binaryblobtostring
-                    - name: Método createFilePFXWStr
+                    - name: CreateFilePFXWStr (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-createfilepfxwstr
-                    - name: Método createFilePKCS10WStr
+                    - name: CreateFilePKCS10WStr (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-createfilepkcs10wstr
-                    - name: Método createFileRequestWStr
+                    - name: CreateFileRequestWStr (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-createfilerequestwstr
-                    - name: Método createPFXWStr
+                    - name: CreatePFXWStr (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-createpfxwstr
-                    - name: Método createPKCS10WStr
+                    - name: CreatePKCS10WStr (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-createpkcs10wstr
                     - name: Método CreatePKCS7RequestFromRequest
                       href: /windows/desktop/api/xenroll/nf-xenroll-ienroll-createpkcs7requestfromrequest
-                    - name: Método createRequestWStr
+                    - name: CreateRequestWStr (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-createrequestwstr
-                    - name: Método EnumAlgs
+                    - name: EnumAlgs (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll2-enumalgs
-                    - name: Método enumContainersWStr
+                    - name: enumContainersWStr (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-enumcontainerswstr
-                    - name: Método enumPendingRequestWStr
+                    - name: enumPendingRequestWStr (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-enumpendingrequestwstr
-                    - name: Método enumProvidersWStr
+                    - name: enumProvidersWStr (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-enumproviderswstr
-                    - name: Método freeRequestInfoBlob
+                    - name: FreeRequestInfoBlob (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-freerequestinfoblob
                     - name: Método GetAlgNameWStr
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll2-getalgnamewstr
-                    - name: Método getCAStore
+                    - name: GetCAStore (método)
                       href: /windows/desktop/api/xenroll/nf-xenroll-ienroll-getcastore
                     - name: Método getCertContextFromFileResponseWStr
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-getcertcontextfromfileresponsewstr
@@ -2531,11 +2531,11 @@
                       href: /windows/desktop/api/xenroll/nf-xenroll-ienroll-getcertcontextfrompkcs7
                     - name: Método getCertContextFromResponseBlob
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-getcertcontextfromresponseblob
-                    - name: Método GetKeyLen
+                    - name: GetKeyLen (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll2-getkeylen
-                    - name: Método GetKeyLenEx
+                    - name: GetKeyLenEx (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-getkeylenex
-                    - name: Método getMyStore
+                    - name: GetMyStore (método)
                       href: /windows/desktop/api/xenroll/nf-xenroll-ienroll-getmystore
                     - name: Método GetPrivateKeyArchiveCertificate
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-getprivatekeyarchivecertificate
@@ -2549,17 +2549,17 @@
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll2-installpkcs7blob
                     - name: Método InstallPKCS7BlobEx
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-installpkcs7blobex
-                    - name: Método removePendingRequestWStr
+                    - name: RemovePendingRequestWStr (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-removependingrequestwstr
                     - name: Reset (Método)
                       href: /windows/desktop/api/xenroll/nf-xenroll-ienroll2-reset
-                    - name: Método resetAttributes
+                    - name: resetAttributes (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-resetattributes
-                    - name: Método resetExtensions
+                    - name: resetExtensions (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-resetextensions
-                    - name: Método SetHStoreCA
+                    - name: SetHStoreCA (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll2-sethstoreca
-                    - name: Método SetHStoreMy
+                    - name: SetHStoreMy (método)
                       href: /windows/desktop/api/xenroll/nf-xenroll-ienroll2-sethstoremy
                     - name: Método SetHStoreRequest
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll2-sethstorerequest
@@ -2569,20 +2569,20 @@
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-setpendingrequestinfowstr
                     - name: Método SetPrivateKeyArchiveCertificate
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-setprivatekeyarchivecertificate
-                    - name: Método SetSignerCertificate
+                    - name: SetSignerCertificate (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-setsignercertificate
-                    - name: Método stringToBinaryBlob
+                    - name: StringToBinaryBlob (método)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-stringtobinaryblob
                 - name: Propiedades de IEnroll4
                   href: properties-of-ienroll4.md
                   items:
-                    - name: Propiedad CAStoreFlags
+                    - name: CaStoreFlags (propiedad)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-get_castoreflags
-                    - name: Propiedad CAStoreNameWStr
+                    - name: CaStoreNameWStr(Propiedad)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-get_castorenamewstr
-                    - name: Propiedad CAStoreTypeWStr
+                    - name: CaStoreTypeWStr( Propiedad)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-get_castoretypewstr
-                    - name: ClientId (propiedad)
+                    - name: Propiedad ClientId
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-get_clientid
                     - name: Propiedad ContainerNameWStr
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-get_containernamewstr
@@ -2600,7 +2600,7 @@
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-get_hashalgorithmwstr
                     - name: Propiedad IncludeSubjectKeyID
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll4-get_includesubjectkeyid
-                    - name: Propiedad especificación de especificación
+                    - name: Propiedad KeySpec
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-get_keyspec
                     - name: Propiedad LimitExchangeKeyToEncipherment
                       href: /windows/desktop/api/xenroll/nf-xenroll-ienroll2-get_limitexchangekeytoencipherment
@@ -2612,9 +2612,9 @@
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-get_mystoretypewstr
                     - name: Propiedad ProviderFlags
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-get_providerflags
-                    - name: Propiedad ProviderNameWStr
+                    - name: ProviderNameWStr(Propiedad)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-get_providernamewstr
-                    - name: Propiedad ProviderType
+                    - name: ProviderType (propiedad)
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-get_providertype
                     - name: Propiedad PVKFileNameWStr
                       href: /windows/desktop/api/Xenroll/nf-xenroll-ienroll-get_pvkfilenamewstr
@@ -2672,7 +2672,7 @@
                       href: /windows/desktop/api/Certview/nf-certview-ienumcertviewcolumn-clone
                     - name: Método GetDisplayName
                       href: /windows/desktop/api/Certview/nf-certview-ienumcertviewcolumn-getdisplayname
-                    - name: Método GetMaxLength
+                    - name: GetMaxLength (método)
                       href: /windows/desktop/api/Certview/nf-certview-ienumcertviewcolumn-getmaxlength
                     - name: Método GetName
                       href: /windows/desktop/api/Certview/nf-certview-ienumcertviewcolumn-getname
@@ -2714,13 +2714,13 @@
                 - name: Métodos IEnumCERTVIEWROW
                   href: ienumcertviewrow-methods.md
                   items:
-                    - name: Método EnumCertViewAttribute
+                    - name: EnumCertViewAttribute (método)
                       href: /windows/desktop/api/Certview/nf-certview-ienumcertviewrow-enumcertviewattribute
-                    - name: Método EnumCertViewColumn
+                    - name: EnumCertViewColumn (método)
                       href: /windows/desktop/api/Certview/nf-certview-ienumcertviewrow-enumcertviewcolumn
-                    - name: Método EnumCertViewExtension
+                    - name: EnumCertViewExtension (método)
                       href: /windows/desktop/api/Certview/nf-certview-ienumcertviewrow-enumcertviewextension
-                    - name: Método GetMaxIndex
+                    - name: GetMaxIndex (método)
                       href: /windows/desktop/api/Certview/nf-certview-ienumcertviewrow-getmaxindex
                     - name: Next (Método)
                       href: /windows/desktop/api/Certview/nf-certview-ienumcertviewrow-next
@@ -2734,21 +2734,21 @@
                 - name: Métodos de IMSCEPSetup
                   href: methods-of-imscepsetup.md
                   items:
-                    - name: Método GetKeyLengthList
+                    - name: GetKeyLengthList (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-imscepsetup-getkeylengthlist
                     - name: Método GetMSCEPSetupProperty
                       href: /windows/desktop/api/Casetup/nf-casetup-imscepsetup-getmscepsetupproperty
-                    - name: Método GetProviderNameList
+                    - name: GetProviderNameList (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-imscepsetup-getprovidernamelist
-                    - name: Método InitializeDefaults
+                    - name: InitializeDefaults (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-imscepsetup-initializedefaults
-                    - name: Método de instalación
+                    - name: Método Install
                       href: /windows/desktop/api/Casetup/nf-casetup-imscepsetup-install
                     - name: Método IsMSCEPStoreEmpty
                       href: /windows/desktop/api/Casetup/nf-casetup-imscepsetup-ismscepstoreempty
                     - name: Método PostUnInstall
                       href: /windows/desktop/api/Casetup/nf-casetup-imscepsetup-postuninstall
-                    - name: Método PreUnInstall
+                    - name: PreUnInstall (método)
                       href: /windows/desktop/api/Casetup/nf-casetup-imscepsetup-preuninstall
                     - name: Método SetAccountInformation
                       href: /windows/desktop/api/Casetup/nf-casetup-imscepsetup-setaccountinformation
@@ -2761,17 +2761,17 @@
                       href: /windows/desktop/api/Casetup/nf-casetup-imscepsetup-get_msceperrorid
                     - name: Propiedad MSCEPErrorString
                       href: /windows/desktop/api/Casetup/nf-casetup-imscepsetup-get_msceperrorstring
-            - name: Indespolicy interface
+            - name: INDESPolicy
               href: /windows/desktop/api/certpol/nn-certpol-indespolicy
               items:
-                - name: Métodos Indespolicy interface
+                - name: Métodos INDESPolicy
                   href: indespolicy-methods.md
                   items:
                     - name: Método GenerateChallenge
                       href: /windows/desktop/api/certpol/nf-certpol-indespolicy-generatechallenge
                     - name: Initialize (método)
                       href: /windows/desktop/api/certpol/nf-certpol-indespolicy-initialize
-                    - name: NOTIFY (método)
+                    - name: Método Notify
                       href: /windows/desktop/api/certpol/nf-certpol-indespolicy-notify
                     - name: Uninitialize (método)
                       href: /windows/desktop/api/certpol/nf-certpol-indespolicy-uninitialize
@@ -2785,19 +2785,19 @@
                   items:
                     - name: Método GetConfiguration
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspadmin-getconfiguration
-                    - name: Método GetHashAlgorithms
+                    - name: GetHashAlgorithms (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspadmin-gethashalgorithms
-                    - name: Método GetMyRoles
+                    - name: GetMyRoles (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspadmin-getmyroles
-                    - name: Método GetSecurity
+                    - name: GetSecurity (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspadmin-getsecurity
-                    - name: Método GetSigningCertificates
+                    - name: GetSigningCertificates (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspadmin-getsigningcertificates
                     - name: Ping (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspadmin-ping
-                    - name: Método SetConfiguration
+                    - name: SetConfiguration (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspadmin-setconfiguration
-                    - name: Método SetSecurity
+                    - name: SetSecurity (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspadmin-setsecurity
                 - name: Propiedades de IOCSPAdmin
                   href: properties-of-iocspadmin.md
@@ -2812,25 +2812,25 @@
                 - name: Propiedades de IOCSPCAConfiguration
                   href: iocspcaconfiguration-properties.md
                   items:
-                    - name: Propiedad el certificado
+                    - name: Propiedad CACertificate
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_cacertificate
                     - name: Propiedad CAConfig
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_caconfig
                     - name: Propiedad CSPName
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_cspname
-                    - name: ErrorCode (propiedad)
+                    - name: Propiedad ErrorCode
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_errorcode
-                    - name: HashAlgorithm (propiedad)
+                    - name: Propiedad HashAlgorithm
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_hashalgorithm
                     - name: Propiedad Identifier
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_identifier
-                    - name: Propiedad especificación de especificación
+                    - name: Propiedad KeySpec
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_keyspec
                     - name: Propiedad LocalRevocationInformation
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_localrevocationinformation
-                    - name: Propiedad Modified
+                    - name: Propiedad modificada
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_modified
-                    - name: Propiedad ProviderCLSID
+                    - name: ProviderCLSID(Propiedad)
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_providerclsid
                     - name: Propiedad ProviderProperties
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspcaconfiguration-get_providerproperties
@@ -2848,16 +2848,16 @@
                 - name: Métodos de IOCSPCAConfigurationCollection
                   href: methods-of-iocspcaconfigurationcollection.md
                   items:
-                    - name: Método CreateCAConfiguration
+                    - name: CreateCAConfiguration (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspcaconfigurationcollection-createcaconfiguration
-                    - name: Método DeleteCAConfiguration
+                    - name: DeleteCAConfiguration (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspcaconfigurationcollection-deletecaconfiguration
                 - name: Propiedades de IOCSPCAConfigurationCollection
                   href: properties-of-iocspcaconfigurationcollection.md
                   items:
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspcaconfigurationcollection-get__newenum
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspcaconfigurationcollection-get_count
                     - name: Item (Propiedad)
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspcaconfigurationcollection-get_item
@@ -2869,7 +2869,7 @@
                 - name: Propiedades de IOCSPProperty
                   href: iocspproperty-properties.md
                   items:
-                    - name: Propiedad Modified
+                    - name: Propiedad modificada
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspproperty-get_modified
                     - name: Propiedad Name
                       href: /windows/desktop/api/Certadm/nf-certadm-iocspproperty-get_name
@@ -2885,16 +2885,16 @@
                       href: /windows/desktop/api/Certadm/nf-certadm-iocsppropertycollection-createproperty
                     - name: DeleteProperty (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-iocsppropertycollection-deleteproperty
-                    - name: Método GetAllProperties
+                    - name: GetAllProperties (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-iocsppropertycollection-getallproperties
-                    - name: Método InitializeFromProperties
+                    - name: InitializeFromProperties (método)
                       href: /windows/desktop/api/Certadm/nf-certadm-iocsppropertycollection-initializefromproperties
                 - name: Propiedades de IOCSPPropertyCollection
                   href: properties-of-iocsppropertycollection.md
                   items:
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: /windows/desktop/api/Certadm/nf-certadm-iocsppropertycollection-get__newenum
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: /windows/desktop/api/Certadm/nf-certadm-iocsppropertycollection-get_count
                     - name: Item (Propiedad)
                       href: /windows/desktop/api/Certadm/nf-certadm-iocsppropertycollection-get_item
@@ -2906,43 +2906,43 @@
                 - name: Métodos de ISCrdEnr
                   href: methods-of-iscrdenr.md
                   items:
-                    - name: Método ENROLL
+                    - name: enroll (método)
                       href: /previous-versions/windows/desktop/legacy/aa386564(v=vs.85)
-                    - name: Método enumCAName
+                    - name: enumCAName (método)
                       href: iscrdenr-enumcaname.md
-                    - name: Método enumCertTemplateName
+                    - name: enumCertTemplateName (método)
                       href: iscrdenr-enumcerttemplatename.md
-                    - name: Método enumCSPName
+                    - name: enumCSPName (método)
                       href: iscrdenr-enumcspname.md
-                    - name: Método getCACount
+                    - name: GetCACount (método)
                       href: iscrdenr-getcacount.md
-                    - name: Método getCAName
+                    - name: GetCAName (método)
                       href: iscrdenr-getcaname.md
-                    - name: Método getCertTemplateCount
+                    - name: GetCertTemplateCount (método)
                       href: iscrdenr-getcerttemplatecount.md
-                    - name: Método getCertTemplateName
+                    - name: GetCertTemplateName (método)
                       href: iscrdenr-getcerttemplatename.md
-                    - name: Método getCertTemplateSMIME
+                    - name: GetCertTemplateSMIME (método)
                       href: iscrdenr-getcerttemplatesmime.md
-                    - name: Método getEnrolledCertificateName
+                    - name: GetEnrolledCertificateName (método)
                       href: iscrdenr-getenrolledcertificatename.md
-                    - name: Método getSigningCertificateName
+                    - name: GetSigningCertificateName (método)
                       href: iscrdenr-getsigningcertificatename.md
-                    - name: getUserName (método)
+                    - name: GetUserName (método)
                       href: iscrdenr-getusername.md
-                    - name: Método resetuser
+                    - name: resetUser (método)
                       href: iscrdenr-resetuser.md
-                    - name: Método selectSigningCertificate
+                    - name: SelectSigningCertificate (método)
                       href: iscrdenr-selectsigningcertificate.md
-                    - name: Método selectUserName
+                    - name: SelectUserName (método)
                       href: iscrdenr-selectusername.md
-                    - name: Método setCAName
+                    - name: SetCAName (método)
                       href: iscrdenr-setcaname.md
-                    - name: Método setCertTemplateName
+                    - name: SetCertTemplateName (método)
                       href: iscrdenr-setcerttemplatename.md
-                    - name: Método setSigningCertificate
+                    - name: SetSigningCertificate (método)
                       href: iscrdenr-setsigningcertificate.md
-                    - name: Método setUserName
+                    - name: SetUserName (método)
                       href: iscrdenr-setusername.md
                 - name: Propiedades de ISCrdEnr
                   href: properties-of-iscrdenr.md
@@ -2957,7 +2957,7 @@
               href: common-hresult-values.md
             - name: Propiedades de nombre
               href: name-properties.md
-        - name: Objetos de criptografía
+        - name: Objetos criptografía
           href: cryptography-objects.md
           items:
             - name: Algoritmo
@@ -2966,7 +2966,7 @@
                 - name: Propiedades del algoritmo
                   href: algorithm-properties.md
                   items:
-                    - name: KeyLength (propiedad)
+                    - name: Propiedad KeyLength
                       href: algorithm-keylength.md
                     - name: Propiedad Name
                       href: algorithm-name.md
@@ -2983,7 +2983,7 @@
             - name: Atributos
               href: attributes.md
               items:
-                - name: Atributos (métodos)
+                - name: Métodos de atributos
                   href: attributes-methods.md
                   items:
                     - name: Agregar método
@@ -2995,16 +2995,16 @@
                 - name: Propiedades de atributos
                   href: attributes-properties.md
                   items:
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: attributes-newenum.md
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: attributes-count.md
                     - name: Item (Propiedad)
                       href: attributes-item.md
             - name: BasicConstraints
               href: basicconstraints.md
               items:
-                - name: Propiedades de BasicConstraints
+                - name: Propiedades BasicConstraints
                   href: basicconstraints-properties.md
                   items:
                     - name: Propiedad IsCertificateAuthority
@@ -3025,13 +3025,13 @@
                 - name: Métodos de certificado
                   href: certificate-methods.md
                   items:
-                    - name: Método BasicConstraints
+                    - name: BasicConstraints (método)
                       href: certificate-basicconstraints.md
                     - name: Display (método)
                       href: certificate-display.md
-                    - name: Método Export
+                    - name: Export (método)
                       href: certificate-export.md
-                    - name: Método ExtendedKeyUsage
+                    - name: ExtendedKeyUsage (método)
                       href: certificate-extendedkeyusage.md
                     - name: ExtendedProperties (método)
                       href: certificate-extendedproperties.md
@@ -3068,7 +3068,7 @@
                       href: certificate-serialnumber.md
                     - name: Propiedad SubjectName
                       href: certificate-subjectname.md
-                    - name: Propiedad Thumbprint
+                    - name: Propiedad Huella digital
                       href: certificate-thumbprint.md
                     - name: Propiedad ValidFromDate
                       href: certificate-validfromdate.md
@@ -3082,9 +3082,9 @@
                 - name: Propiedades de CertificatePolicies
                   href: certificatepolicies-properties.md
                   items:
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: certificatepolicies-newenum.md
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: certificatepolicies-count.md
                     - name: Item (Propiedad)
                       href: certificatepolicies-item.md
@@ -3109,9 +3109,9 @@
                 - name: Propiedades de certificados
                   href: certificates-properties.md
                   items:
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: certificates-newenum.md
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: certificates-count.md
                     - name: Item (Propiedad)
                       href: certificates-item.md
@@ -3121,20 +3121,20 @@
                 - name: Métodos CertificateStatus
                   href: certificatestatus-methods.md
                   items:
-                    - name: Método ApplicationPolicies
+                    - name: ApplicationPolicies (método)
                       href: certificatestatus-applicationpolicies.md
-                    - name: Método CertificatePolicies
+                    - name: CertificatePolicies (método)
                       href: certificatestatus-certificatepolicies.md
                     - name: Método EKU
                       href: certificatestatus-eku.md
                 - name: Propiedades de CertificateStatus
                   href: certificatestatus-properties.md
                   items:
-                    - name: Propiedad de certificados
+                    - name: Propiedad Certificates
                       href: certificatestatus-certificates.md
                     - name: Propiedad CheckFlag
                       href: certificatestatus-checkflag.md
-                    - name: Propiedad result
+                    - name: Result (propiedad)
                       href: certificatestatus-result.md
                     - name: Propiedad UrlRetrievalTimeout
                       href: certificatestatus-urlretrievaltimeout.md
@@ -3146,20 +3146,20 @@
                 - name: Métodos de cadena
                   href: chain-methods.md
                   items:
-                    - name: Método ApplicationPolicies
+                    - name: ApplicationPolicies (método)
                       href: chain-applicationpolicies.md
                     - name: Método de compilación
                       href: chain-build.md
-                    - name: Método CertificatePolicies
+                    - name: CertificatePolicies (método)
                       href: chain-certificatepolicies.md
-                    - name: Método ExtendedErrorInfo
+                    - name: ExtendedErrorInfo (método)
                       href: chain-extendederrorinfo.md
                 - name: Propiedades de cadena
                   href: chain-properties.md
                   items:
-                    - name: Propiedad de certificados
+                    - name: Propiedad Certificates
                       href: chain-certificates.md
-                    - name: Propiedad status
+                    - name: Propiedad Status
                       href: chain-status.md
             - name: EKU
               href: eku.md
@@ -3174,12 +3174,12 @@
             - name: EKU
               href: ekus.md
               items:
-                - name: Propiedades de EKU
+                - name: Propiedades de EKUs
                   href: ekus-properties.md
                   items:
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: ekus-newenum.md
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: ekus-count.md
                     - name: Item (Propiedad)
                       href: ekus-item.md
@@ -3189,11 +3189,11 @@
                 - name: Métodos EncodedData
                   href: encodeddata-methods.md
                   items:
-                    - name: Método de descodificador
+                    - name: Decoder (método)
                       href: encodeddata-decoder.md
                     - name: Método Format
                       href: encodeddata-format.md
-                - name: Propiedades de EncodedData
+                - name: Propiedades encodedData
                   href: encodeddata-properties.md
                   items:
                     - name: Propiedad Value
@@ -3208,14 +3208,14 @@
                       href: encrypteddata-decrypt.md
                     - name: Encrypt (método)
                       href: encrypteddata-encrypt.md
-                    - name: Método SetSecret
+                    - name: SetSecret (método)
                       href: encrypteddata-setsecret.md
                 - name: Propiedades EncryptedData
                   href: encrypteddata-properties.md
                   items:
                     - name: Propiedad Algorithm
                       href: encrypteddata-algorithm.md
-                    - name: Propiedad de contenido
+                    - name: Content (propiedad)
                       href: encrypteddata-content.md
             - name: EnvelopedData
               href: envelopeddata.md
@@ -3232,7 +3232,7 @@
                   items:
                     - name: Propiedad Algorithm
                       href: envelopeddata-algorithm.md
-                    - name: Propiedad de contenido
+                    - name: Content (propiedad)
                       href: envelopeddata-content.md
                     - name: Propiedad Recipients
                       href: envelopeddata-recipients.md
@@ -3242,7 +3242,7 @@
                 - name: Propiedades de ExtendedKeyUsage
                   href: extendedkeyusage-properties.md
                   items:
-                    - name: EKU (propiedad)
+                    - name: Propiedad EKUs
                       href: extendedkeyusage-ekus.md
                     - name: Propiedad IsCritical
                       href: extendedkeyusage-iscritical.md
@@ -3258,12 +3258,12 @@
                       href: extendedproperties-add.md
                     - name: Remove (método)
                       href: extendedproperties-remove.md
-                - name: Propiedades de ExtendedProperties
+                - name: Propiedades ExtendedProperties
                   href: extendedproperties-properties.md
                   items:
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: extendedproperties-newenum.md
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: extendedproperties-count.md
                     - name: Item (Propiedad)
                       href: extendedproperties-item.md
@@ -3295,9 +3295,9 @@
                 - name: Propiedades de extensiones
                   href: extensions-properties.md
                   items:
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: extensions-newenum.md
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: extensions-count.md
                     - name: Item (Propiedad)
                       href: extensions-item.md
@@ -3307,9 +3307,9 @@
                 - name: Métodos HashedData
                   href: hasheddata-methods.md
                   items:
-                    - name: Hash (método)
+                    - name: Método hash
                       href: hasheddata-hash.md
-                - name: Propiedades de HashedData
+                - name: Propiedades hashedData
                   href: hasheddata-properties.md
                   items:
                     - name: Propiedad Algorithm
@@ -3347,12 +3347,12 @@
             - name: NoticeNumbers
               href: noticenumbers.md
               items:
-                - name: Propiedades de NoticeNumbers
+                - name: Propiedades noticeNumbers
                   href: noticenumbers-properties.md
                   items:
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: noticenumbers-newenum.md
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: noticenumbers-count.md
                     - name: Item (Propiedad)
                       href: noticenumbers-item.md
@@ -3371,7 +3371,7 @@
             - name: OID
               href: oids.md
               items:
-                - name: Métodos de OID
+                - name: Métodos de ID
                   href: oids-methods.md
                   items:
                     - name: Agregar método
@@ -3380,24 +3380,24 @@
                       href: oids-clear.md
                     - name: Remove (método)
                       href: oids-remove.md
-                - name: Propiedades de OID
+                - name: Propiedades de ID
                   href: oids-properties.md
                   items:
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: oids-newenum.md
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: oids-count.md
                     - name: Item (Propiedad)
                       href: oids-item.md
             - name: PolicyInformation
               href: policyinformation.md
               items:
-                - name: Propiedades de PolicyInformation
+                - name: Propiedades PolicyInformation
                   href: policyinformation-properties.md
                   items:
                     - name: Propiedad OID
                       href: policyinformation-oid.md
-                    - name: Propiedad Qualifiers
+                    - name: Qualifiers (propiedad)
                       href: policyinformation-qualifiers.md
             - name: PrivateKey
               href: privatekey.md
@@ -3409,7 +3409,7 @@
                       href: privatekey-delete.md
                     - name: Método IsAccessible
                       href: privatekey-isaccessible.md
-                    - name: IsExportable (método)
+                    - name: Método IsExportable
                       href: privatekey-isexportable.md
                     - name: Método IsHardwareDevice
                       href: privatekey-ishardwaredevice.md
@@ -3421,16 +3421,16 @@
                       href: privatekey-isremovable.md
                     - name: Método Abrir
                       href: privatekey-open.md
-                - name: Propiedades de PrivateKey
+                - name: Propiedades privatekey
                   href: privatekey-properties.md
                   items:
-                    - name: ContainerName (propiedad)
+                    - name: Propiedad ContainerName
                       href: privatekey-containername.md
-                    - name: Propiedad especificación de especificación
+                    - name: Propiedad KeySpec
                       href: privatekey-keyspec.md
                     - name: ProviderName (propiedad)
                       href: privatekey-providername.md
-                    - name: Propiedad ProviderType
+                    - name: ProviderType (propiedad)
                       href: privatekey-providertype.md
                     - name: Propiedad UniqueContainerName
                       href: privatekey-uniquecontainername.md
@@ -3451,7 +3451,7 @@
             - name: Qualifier
               href: qualifier.md
               items:
-                - name: Propiedades de calificador
+                - name: Propiedades del calificador
                   href: qualifier-properties.md
                   items:
                     - name: Propiedad CPSPointer
@@ -3470,9 +3470,9 @@
                 - name: Propiedades de calificadores
                   href: qualifiers-properties.md
                   items:
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: qualifiers-newenum.md
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: qualifiers-count.md
                     - name: Item (Propiedad)
                       href: qualifiers-item.md
@@ -3491,16 +3491,16 @@
                 - name: Propiedades de destinatarios
                   href: recipients-properties.md
                   items:
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: recipients-newenum.md
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: recipients-count.md
                     - name: Item (Propiedad)
                       href: recipients-item.md
             - name: Configuración
               href: settings.md
               items:
-                - name: Propiedades de configuración
+                - name: Configuración Propiedades
                   href: settings-properties.md
                   items:
                     - name: Propiedad ActiveDirectorySearchLocation
@@ -3519,10 +3519,10 @@
                       href: signedcode-timestamp.md
                     - name: Verify (método)
                       href: signedcode-verify.md
-                - name: Propiedades de SignedCode
+                - name: Propiedades signedCode
                   href: signedcode-properties.md
                   items:
-                    - name: Propiedad de certificados
+                    - name: Propiedad Certificates
                       href: signedcode-certificates.md
                     - name: Description (propiedad)
                       href: signedcode-description.md
@@ -3530,9 +3530,9 @@
                       href: signedcode-descriptionurl.md
                     - name: Propiedad FileName
                       href: signedcode-filename.md
-                    - name: Propiedad Signer
+                    - name: Propiedad signer
                       href: signedcode-signer.md
-                    - name: Propiedad de marca de tiempo
+                    - name: Propiedad TimeStamper
                       href: signedcode-timestamper.md
             - name: SignedData
               href: signeddata.md
@@ -3540,20 +3540,20 @@
                 - name: Métodos SignedData
                   href: signeddata-methods.md
                   items:
-                    - name: Cosign (método)
+                    - name: CoSign (método)
                       href: signeddata-cosign.md
                     - name: Sign (método)
                       href: signeddata-sign.md
                     - name: Verify (método)
                       href: signeddata-verify.md
-                - name: Propiedades de SignedData
+                - name: Propiedades SignedData
                   href: signeddata-properties.md
                   items:
-                    - name: Propiedad de certificados
+                    - name: Propiedad Certificates
                       href: signeddata-certificates.md
-                    - name: Propiedad de contenido
+                    - name: Propiedad Content
                       href: signeddata-content.md
-                    - name: Propiedad signers
+                    - name: Propiedad Signers
                       href: signeddata-signers.md
             - name: Firmante
               href: signer.md
@@ -3563,25 +3563,25 @@
                   items:
                     - name: Propiedad AuthenticatedAttributes
                       href: signer-authenticatedattributes.md
-                    - name: Propiedad de certificado
+                    - name: Propiedad Certificate
                       href: signer-certificate.md
-                    - name: Chain (propiedad)
+                    - name: Propiedad Chain
                       href: signer-chain.md
                     - name: Load (Método)
                       href: signer-load.md
-                    - name: Options (propiedad)
+                    - name: Propiedad Options
                       href: signer-options.md
             - name: Firmantes
               href: signers.md
               items:
-                - name: Propiedades de los firmantes
+                - name: Propiedades de firmantes
                   href: signers-properties.md
                   items:
-                    - name: Propiedad Count
+                    - name: Count (propiedad)
                       href: signers-count.md
                     - name: Item (Propiedad)
                       href: signers-item.md
-                    - name: Propiedad _NewEnum
+                    - name: _NewEnum propiedad
                       href: signers-newenum.md
             - name: Tienda
               href: store.md
@@ -3595,7 +3595,7 @@
                       href: store-close.md
                     - name: Delete (método)
                       href: store-delete.md
-                    - name: Método Export
+                    - name: Export (método)
                       href: store-export.md
                     - name: Método de importación
                       href: store-import.md
@@ -3608,7 +3608,7 @@
                 - name: Propiedades del almacén
                   href: store-properties.md
                   items:
-                    - name: Propiedad de certificados
+                    - name: Propiedad Certificates
                       href: store-certificates.md
                     - name: Propiedad de ubicación
                       href: store-location.md
@@ -3617,22 +3617,22 @@
             - name: Plantilla
               href: template.md
               items:
-                - name: Propiedades de la plantilla
+                - name: Propiedades de plantilla
                   href: template-properties.md
                   items:
                     - name: Propiedad IsCritical
                       href: template-iscritical.md
                     - name: Propiedad IsPresent
                       href: template-ispresent.md
-                    - name: MajorVersion (propiedad)
+                    - name: Propiedad MajorVersion
                       href: template-majorversion.md
-                    - name: MinorVersion (propiedad)
+                    - name: Propiedad MinorVersion
                       href: template-minorversion.md
                     - name: Propiedad Name
                       href: template-name.md
                     - name: Propiedad OID
                       href: template-oid.md
-            - name: Sectores públicos
+            - name: Utilidades
               href: utilities.md
               items:
                 - name: Métodos de utilidades
@@ -3642,15 +3642,15 @@
                       href: utilities-base64decode.md
                     - name: Método Base64Encode
                       href: utilities-base64encode.md
-                    - name: Método BinaryStringToByteArray
+                    - name: BinaryStringToByteArray (método)
                       href: utilities-binarystringtobytearray.md
-                    - name: Método BinaryToHex
+                    - name: BinaryToHex (método)
                       href: utilities-binarytohex.md
-                    - name: Método ByteArrayToBinaryString
+                    - name: ByteArrayToBinaryString (método)
                       href: utilities-bytearraytobinarystring.md
-                    - name: Método GetRandom
+                    - name: GetRandom (método)
                       href: utilities-getrandom.md
-                    - name: Método HexToBinary
+                    - name: HexToBinary (método)
                       href: utilities-hextobinary.md
                     - name: Método LocalTimeToUTCTime
                       href: utilities-localtimetoutctime.md
@@ -3659,9 +3659,9 @@
         - name: Valores devueltos de criptografía
           href: cryptography-return-values.md
           items:
-            - name: Valores devueltos de codificación/descodificación ASN. 1
+            - name: Codificación/decoding de valores devueltos de ASN.1
               href: asn-1-encoding-decoding-return-values.md
-            - name: Valores devueltos de certificado y confianza
+            - name: Valores devueltos de certificados y confianza
               href: certificate-and-trust-return-values.md
         - name: Estructuras de criptografía
           href: cryptography-structures.md
@@ -4234,13 +4234,13 @@
               href: /windows/win32/api/wincrypt/ns-wincrypt-dhpubkey
             - name: DHPUBKEY_VER3
               href: /windows/win32/api/wincrypt/ns-wincrypt-dhpubkey_ver3
-            - name: Blobs de clave privada de Diffie-Hellman versión 3
+            - name: Diffie-Hellman blobs de clave privada de la versión 3
               href: diffie-hellman-version-3-private-key-blobs.md
-            - name: Blobs de clave pública de Diffie-Hellman versión 3
+            - name: Diffie-Hellman blobs de clave pública de la versión 3
               href: diffie-hellman-version-3-public-key-blobs.md
             - name: Blobs de clave privada de DSS versión 3
               href: dss-version-3-private-key-blobs.md
-            - name: Blobs de clave pública de DSS versión 3
+            - name: Blobs de clave pública de la versión 3 de DSS
               href: dss-version-3-public-key-blobs.md
             - name: DSSPRIVKEY_VER3
               href: /previous-versions/windows/desktop/legacy/aa381981(v=vs.85)
@@ -4352,7 +4352,7 @@
               href: /windows/win32/api/Wintrust/ns-wintrust-wintrust_signature_settings
             - name: WINTRUST_SGNR_INFO
               href: /windows/win32/api/Wintrust/ns-wintrust-wintrust_sgnr_info
-        - name: Referencia de las herramientas de CryptoAPI
+        - name: Referencia de herramientas de CryptoAPI
           href: cryptoapi-tools-reference.md
           items:
             - name: Herramientas para firmar archivos y comprobar firmas

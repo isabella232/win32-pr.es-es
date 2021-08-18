@@ -4,16 +4,16 @@ ms.assetid: 9d60277a-5ee8-471e-bfcd-d104064030a8
 title: Recuperación de mensajes de error
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cefeab75e4419bc1e36785236962069a6913e84d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d96ffb6627dac4f8612a80c68b1a227516ec645440c56dd7c58672cd8222c23a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900525"
 ---
 # <a name="retrieving-error-messages"></a>Recuperación de mensajes de error
 
-Cuando una llamada al método genera un error, muchas funciones devuelven un código de error. Para la mayoría de las interfaces de servicios de Certificate Server y los elementos de API que devuelven un código de error, el texto del mensaje de error se puede recuperar llamando a [**FormatMessage**](/windows/win32/api/winbase/nf-winbase-formatmessage) con un identificador de módulo **nulo** . Si **FormatMessage** no se realiza correctamente, es posible que el código de error sea el resultado de un error relacionado con la base de datos o un elemento de API de copia de seguridad. la llamada a **FormatMessage** con un identificador de módulo correspondiente a la biblioteca de Ntdsbmsg.dll debe recuperar el texto del mensaje de error. En el ejemplo siguiente se muestra cómo recuperar el texto de un mensaje de error en una aplicación de servicios de Certificate Server.
+Cuando una llamada al método genera un error, muchas funciones devuelven un código de error. Para la mayoría de las interfaces de Servicios de certificados y los elementos de API que devuelven un código de error, el texto del mensaje de error se puede recuperar llamando a [**FormatMessage**](/windows/win32/api/winbase/nf-winbase-formatmessage) con un identificador de módulo **NULL.** Si **FormatMessage no** se realiza correctamente, lo más probable es que el código de error sea el resultado de un error relacionado con la base de datos o un elemento de la API de copia de seguridad. llamar **a FormatMessage** con un identificador de módulo correspondiente a la biblioteca Ntdsbmsg.dll debe recuperar el texto del mensaje de error. En el ejemplo siguiente se muestra cómo recuperar el texto del mensaje de error en una aplicación de Servicios de certificados.
 
 
 ```C++

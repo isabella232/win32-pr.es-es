@@ -1,10 +1,10 @@
 ---
 title: Atributo msSFU-30-Posix-Member
-description: Contiene el nombre para mostrar de DN de la parte del usuario de un grupo.
+description: Contiene el nombre para mostrar del DN de la parte del usuario de un grupo.
 ms.assetid: 3e9f703d-6666-4fa5-8116-d77fee0dd98e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo msSFU-30-Posix-Member
+- msSFU-30-Posix-Member attribute AD Schema
 - Esquema de AD del atributo msSFU30PosixMember
 topic_type:
 - apiref
@@ -23,20 +23,20 @@ ms.locfileid: "118682481"
 ---
 # <a name="mssfu-30-posix-member-attribute"></a>Atributo msSFU-30-Posix-Member
 
-Contiene el nombre para mostrar de DN de la parte del usuario de un grupo.
+Contiene el nombre para mostrar del DN de la parte del usuario de un grupo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | msSFU-30-Posix-Member                   |
 | Ldap-Display-Name | msSFU30PosixMember                      |
 | Size              | \-                                      |
-| Privilegio actualizar  | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.346             |
 | System-Id-Guid    | c875d82d-2848-4cec-bb50-3c5486d09d57    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -51,14 +51,14 @@ Contiene el nombre para mostrar de DN de la parte del usuario de un grupo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------|
 | Id. de vínculo                | 2030                                |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Es de un solo valor       | False                               |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Falso                               |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
@@ -72,14 +72,14 @@ Contiene el nombre para mostrar de DN de la parte del usuario de un grupo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------|
 | Id. de vínculo                | 2030                                |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Es de un solo valor       | False                               |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Falso                               |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
@@ -93,14 +93,14 @@ Contiene el nombre para mostrar de DN de la parte del usuario de un grupo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------|
 | Id. de vínculo                | 2030                                |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Es de un solo valor       | False                               |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Falso                               |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
@@ -114,14 +114,14 @@ Contiene el nombre para mostrar de DN de la parte del usuario de un grupo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------|
 | Id. de vínculo                | 2030                                |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Es de un solo valor       | False                               |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Falso                               |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |

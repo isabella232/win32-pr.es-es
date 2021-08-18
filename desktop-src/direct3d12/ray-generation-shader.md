@@ -12,20 +12,20 @@ api_name:
 - RAY_FLAG
 api_type:
 - NA
-ms.openlocfilehash: 75d67293e489eee0f1d100002965c017de7c682c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fdc177040cac7324545172319c318d07cded6dba42cfeed4756a7afaa88439aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119123717"
 ---
 # <a name="ray-generation-shader"></a>Sombreador de generación de rayos
 
-Sombreador que llama a [**TraceRay**](traceray-function.md) para generar rayos. La carga de rayo inicial definida por el usuario para cada rayo se proporciona al sitio de llamada **TraceRay** .  [**CallShader**](callshader-function.md) también se puede usar en sombreadores de generación de rayos para invocar [sombreadores Invocables](callable-shader.md).
+Sombreador que llama [**a TraceRay**](traceray-function.md) para generar rayos. La carga inicial de rayos definida por el usuario para cada rayo se proporciona al **sitio de llamada TraceRay.**  [**CallShader también**](callshader-function.md) se puede usar en sombreadores de generación de rayos para invocar [sombreadores a los que se puede llamar.](callable-shader.md)
 
-**DispatchRays** invoca una cuadrícula de las invocaciones del sombreador de generación de rayo.  Cada invocación (subproceso) de un sombreador de generación de rayo conoce su ubicación en la cuadrícula global, puede generar rayos arbitrarios a través de [**TraceRay**](traceray-function.md)y funciona independientemente de otras invocaciones. No hay ningún orden definido de ejecución de subprocesos con respecto al otro.
+**DispatchRays invoca** una cuadrícula de invocaciones de sombreador de generación de rayos.  Cada invocación (subproceso) de un sombreador de generación de rayos conoce su ubicación en la cuadrícula general, puede generar rayos arbitrarios a través de [**TraceRay**](traceray-function.md)y funciona independientemente de otras invocaciones. No hay ningún orden definido de ejecución de subprocesos entre sí.
 
-## <a name="shader-type-attribute"></a>Atributo de tipo de sombreador
+## <a name="shader-type-attribute"></a>Atributo Tipo de sombreador
 
 
 ```

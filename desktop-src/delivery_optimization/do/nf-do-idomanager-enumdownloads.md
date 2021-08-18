@@ -38,7 +38,7 @@ HRESULT EnumDownloads(
 
 `category`
 
-Opcional. Nombre de propiedad que se va a usar como categoría para enumerar. Al `nullptr` pasar, se recuperarán todas las descargas existentes. Las siguientes propiedades se admiten como una categoría.
+Opcional. Nombre de propiedad que se va a usar como categoría para enumerar. Al `nullptr` pasar se recuperarán todas las descargas existentes. Las siguientes propiedades se admiten como una categoría.
 
 - **DODownloadProperty_Id**
 - **DODownloadProperty_Uri**

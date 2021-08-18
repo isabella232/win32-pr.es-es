@@ -4,12 +4,12 @@ ms.assetid: 680211de-3f81-4ea7-b03e-741096b5dde0
 title: Palabras reservadas, encabezado y comentarios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8879d0dbb518f92f0d8a6c38793ab315ae48b73e
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: f583084b3faa4777a5fe6031cc247fdb99c27cc1fb23c6a5676e60afe00aba20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044285"
 ---
 # <a name="reserved-words-header-and-comments"></a>Palabras reservadas, encabezado y comentarios
 
@@ -32,16 +32,16 @@ El encabezado de longitud variable es obligatorio y debe estar al principio del 
 
 
 
-| Tipo           | Requerido | Tamaño (en bytes) | Valor | Descripción                  |
+| Tipo           | Requerido | Tamaño (en bytes) | Value | Descripción                  |
 |----------------|----------|-----------------|-------|------------------------------|
 | Número mágico   | x        | 4               | Xof   |                              |
 | Número de versión | x        | 2               | 03    | Versión principal 3              |
 |                |          |                 | 03    | Versión secundaria 3              |
 | Tipo de formato    | x        | 4               | txt   | Archivo de texto                    |
 |                |          |                 | bin   | Archivo binario                  |
-|                |          |                 | tzip  | Archivo de texto comprimido MSZip   |
+|                |          |                 | tzip  | Archivo de texto comprimido de MSZip   |
 |                |          |                 | bzip  | Archivo binario comprimido de MSZip |
-| Tamaño flotante     | x        | 0064            |       | Flotantes de 64 bits                |
+| Tamaño float     | x        | 0064            |       | Flotantes de 64 bits                |
 |                | x        | "0032"          |       | Flotantes de 32 bits                |
 
 

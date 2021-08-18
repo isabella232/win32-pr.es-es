@@ -4,7 +4,7 @@ description: Número de teléfono móvil principal.
 ms.assetid: c35fbaf1-e3f2-45df-98bd-e47ed79373ee
 ms.tgt_platform: multiple
 keywords:
-- Teléfono-Mobile-Primary attribute AD Schema
+- Teléfono de AD del atributo Mobile-Primary
 - Esquema de AD de atributo móvil
 topic_type:
 - apiref
@@ -27,16 +27,16 @@ Número de teléfono móvil principal.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | Teléfono-Mobile-Primary                                                             |
 | Ldap-Display-Name | mobile                                                                           |
 | Size              | \-                                                                               |
-| Actualizar privilegios  | Administrador de dominio o propietario de la cuenta.                                           |
-| Frecuencia de actualización  | Cuando se crea el registro del usuario y siempre que sea necesario cambiar el número de teléfono. |
+| Privilegio actualizar  | Administrador de dominio o propietario de la cuenta.                                           |
+| Frecuencia de actualización  | Cuando se crea el registro del usuario y cada vez que es necesario cambiar el número de teléfono. |
 | Attribute-Id      | 0.9.2342.19200300.100.1.41                                                       |
 | System-Id-Guid    | f0f8ffa3-1191-11d0-a060-00aa006c33ed                                             |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                      |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -53,14 +53,14 @@ Número de teléfono móvil principal.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x3A1C                                                             |
-| System-Only            | False                                                              |
-| Es de un solo valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
@@ -74,14 +74,14 @@ Número de teléfono móvil principal.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A1C                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                    |
-| Es de un solo valor       | True                                                                                                                                                     |
-| Está indexado             | False                                                                                                                                                    |
-| En el catálogo global      | False                                                                                                                                                    |
+| System-Only            | Falso                                                                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                                                                     |
+| Está indexado             | Falso                                                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
@@ -95,14 +95,14 @@ Número de teléfono móvil principal.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A1C                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                    |
-| Es de un solo valor       | True                                                                                                                                                     |
-| Está indexado             | False                                                                                                                                                    |
-| En el catálogo global      | False                                                                                                                                                    |
+| System-Only            | Falso                                                                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                                                                     |
+| Está indexado             | Falso                                                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
@@ -116,14 +116,14 @@ Número de teléfono móvil principal.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A1C                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                    |
-| Es de un solo valor       | True                                                                                                                                                     |
-| Está indexado             | False                                                                                                                                                    |
-| En el catálogo global      | False                                                                                                                                                    |
+| System-Only            | Falso                                                                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                                                                     |
+| Está indexado             | Falso                                                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
@@ -137,14 +137,14 @@ Número de teléfono móvil principal.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A1C                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                    |
-| Es de un solo valor       | True                                                                                                                                                     |
-| Está indexado             | False                                                                                                                                                    |
-| En el catálogo global      | False                                                                                                                                                    |
+| System-Only            | Falso                                                                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                                                                     |
+| Está indexado             | Falso                                                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
@@ -158,14 +158,14 @@ Número de teléfono móvil principal.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A1C                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                    |
-| Es de un solo valor       | True                                                                                                                                                     |
-| Está indexado             | False                                                                                                                                                    |
-| En el catálogo global      | False                                                                                                                                                    |
+| System-Only            | Falso                                                                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                                                                     |
+| Está indexado             | Falso                                                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |

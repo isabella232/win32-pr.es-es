@@ -1,10 +1,10 @@
 ---
-title: Estructura de WINBIO_EXTENDED_ENROLLMENT_PARAMETERS (Winbio \_ Adapter. h)
+title: WINBIO_EXTENDED_ENROLLMENT_PARAMETERS estructura (Winbio \_ adapter.h)
 description: Contiene información adicional que un adaptador de motor necesita para crear una plantilla de inscripción.
 ms.assetid: E8007316-0A9D-4F35-A266-273B2406D545
 keywords:
-- Plataforma de biometría de Windows API de WINBIO_EXTENDED_ENROLLMENT_PARAMETERS Structure
-- PWINBIO_EXTENDED_ENROLLMENT_PARAMETERS de puntero de estructura Plataforma de biometría de Windows API
+- WINBIO_EXTENDED_ENROLLMENT_PARAMETERS estructura Windows API de Marco biométrico
+- PWINBIO_EXTENDED_ENROLLMENT_PARAMETERS puntero de estructura Windows Biometric Framework API
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4f041d131bcee540a75a131b4179947fbe8e394
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 55173b5badfb8764cfc9c681f4ed92e2f0d1c50e5db09075185af9e5db2e6433
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910494"
 ---
-# <a name="winbio_extended_enrollment_parameters-structure"></a>WINBIO \_ \_ estructura de parámetros de inscripción extendida \_
+# <a name="winbio_extended_enrollment_parameters-structure"></a>Estructura DE PARÁMETROS \_ DE \_ INSCRIPCIÓN EXTENDIDA \_ DE WINBIO
 
-La estructura **WINBIO \_ Extended \_ ENROLLMENT \_ Parameters** contiene información adicional que un adaptador de motor necesita para crear una plantilla de inscripción.
+La **estructura DE PARÁMETROS DE INSCRIPCIÓN EXTENDIDA \_ \_ \_ DE WINBIO** contiene información adicional que un adaptador de motor necesita para crear una plantilla de inscripción.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,20 +45,20 @@ typedef struct _WINBIO_EXTENDED_ENROLLMENT_PARAMETERS {
 **Tamaño**
 </dt> <dd>
 
-Tamaño (en bytes) de la estructura **WINBIO \_ Extended \_ ENROLLMENT \_ Parameters** .
+Tamaño (en bytes) de la **estructura DE PARÁMETROS DE INSCRIPCIÓN EXTENDIDA \_ \_ \_ DE WINBIO.**
 
 </dd> <dt>
 
-**Subfactor**
+**SubFactor**
 </dt> <dd>
 
-Uno de los [**valores \_ constantes del \_ subtipo biométrico WINBIO**](winbio-biometric-subtype-constants.md) que proporciona información adicional sobre la inscripción.
+Uno de los [**valores de constantes \_ \_ SUBTYPE BIOMETRIC de WINBIO**](winbio-biometric-subtype-constants.md) que proporciona información adicional sobre la inscripción.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-El Plataforma de biometría de Windows pasa esta estructura al método [**EngineAdapterSetEnrollmentParameters**](/windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_set_enrollment_parameters_fn) durante una operación de inscripción.
+El Windows Biometric Framework pasa esta estructura al método [**EngineAdapterSetEnrollmentParameters**](/windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_set_enrollment_parameters_fn) durante una operación de inscripción.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,9 +66,9 @@ El Plataforma de biometría de Windows pasa esta estructura al método [**Engine
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Adapter. h (incluir Winbio \_ Adapter. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                                     |
+| Header<br/>                   | <dl> <dt>Winbio \_ adapter.h (incluir Winbio \_ adapter.h)</dt> </dl> |
 
 
 

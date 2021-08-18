@@ -3,7 +3,7 @@ title: Elemento Day (daysOfMonthType)
 description: Especifica un día del mes durante el que se ejecuta la tarea.
 ms.assetid: b213df09-9301-4a51-b000-edfdafbe861e
 keywords:
-- Programador de tareas del elemento Day
+- Elemento Day Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1e8e06169d2b758264f181263a5cb717977a1602
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3c238ee5bd873c33f3acd2207ba9ad31869b151924dd20f082669b782d207c59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118857958"
 ---
 # <a name="day-daysofmonthtype-element"></a>Elemento Day (daysOfMonthType)
 
@@ -30,7 +30,7 @@ Especifica un día del mes durante el que se ejecuta la tarea.
  />
 ```
 
-El elemento **Day** se define mediante el tipo complejo [**daysOfMonthType**](taskschedulerschema-daysofmonthtype-complextype.md) .
+El **elemento Day** se define mediante el tipo complejo [**daysOfMonthType.**](taskschedulerschema-daysofmonthtype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -44,7 +44,7 @@ El elemento **Day** se define mediante el tipo complejo [**daysOfMonthType**](ta
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente código XML define la parte correspondiente a los días de un calendario mensual que ejecuta la tarea el día 1 y el 15 del mes.
+El xml siguiente define la parte de días de un calendario mensual que ejecuta la tarea el día 1 y el 15 del mes.
 
 
 ```XML
@@ -62,8 +62,8 @@ El siguiente código XML define la parte correspondiente a los días de un calen
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -71,7 +71,7 @@ El siguiente código XML define la parte correspondiente a los días de un calen
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

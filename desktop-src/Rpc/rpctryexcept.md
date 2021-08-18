@@ -27,13 +27,13 @@ La **instrucción RpcTryExcept proporciona** un control estructurado de excepcio
 
 Para obtener más información, [**vea RpcExcept**](/windows/desktop/api/Rpc/nf-rpc-rpcexcept).
 
-**Windows Vista** y versiones posteriores de Windows:[**RpcExceptionFilter**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcexceptionfilter) se recomienda para el control estructurado de excepciones para las excepciones más comunes como alternativa a los filtros personalizados [**con RpcExcept**](/windows/desktop/api/Rpc/nf-rpc-rpcexcept).  
+**Windows Vista** y versiones posteriores de Windows:[**RpcExceptionFilter**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcexceptionfilter) se recomienda para el control de excepciones estructurado para las excepciones más comunes como alternativa a los filtros personalizados [**con RpcExcept**](/windows/desktop/api/Rpc/nf-rpc-rpcexcept).  
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
@@ -41,7 +41,7 @@ Para obtener más información, [**vea RpcExcept**](/windows/desktop/api/Rpc/nf-
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

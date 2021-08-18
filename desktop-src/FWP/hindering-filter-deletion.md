@@ -1,19 +1,19 @@
 ---
-title: Impedir la eliminación de filtros
-description: En el código de ejemplo siguiente se muestra cómo dificultar la eliminación de un filtro mediante la configuración de una DACL.
+title: Dificultar la eliminación de filtros
+description: El código de ejemplo siguiente muestra cómo dificultar la eliminación de un filtro estableciendo una DACL.
 ms.assetid: 83c336fa-983e-4e17-86b3-3a42f4824c74
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a15df58a6ccae781e20c9830fea63956f91be35
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fa4d5de2384116629fed36c170d12b9ec262ca29779aa0cf6d6abc2f4f22f5c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069115"
 ---
-# <a name="hindering-filter-deletion"></a>Impedir la eliminación de filtros
+# <a name="hindering-filter-deletion"></a>Dificultar la eliminación de filtros
 
-En el ejemplo de código siguiente se muestra cómo dificultar la eliminación de un filtro mediante la configuración de una DACL.
+En el código de ejemplo siguiente se muestra cómo dificultar la eliminación de un filtro estableciendo una DACL.
 
 
 ```C++
@@ -133,9 +133,9 @@ CLEANUP:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

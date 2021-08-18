@@ -1,6 +1,6 @@
 ---
-title: 'Métodos de recopilación TextureCube:: TextureCube'
-description: 'Devuelve los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal. | Métodos de recopilación TextureCube:: TextureCube'
+title: Métodos TextureCube::TextureCube Gather
+description: Devuelve los cuatro valores de texel que se usarían en una operación de filtrado bi lineal. | Métodos TextureCube::TextureCube Gather
 ms.assetid: 4891A62A-9D54-4F7E-92C2-9CDDF1453671
 keywords:
 - Recopilación de métodos HLSL
@@ -12,18 +12,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: ce58acc01ef87e6d53d829a5c84e7c9c0ff6afb9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4dfc4e6ecee3c78b0b0419c6b2525558f7d0122487630695aaace48873da91df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786823"
 ---
-# <a name="texturecubegather-methods"></a>TextureCube:: Gather (métodos)
+# <a name="texturecubegather-methods"></a>Métodos TextureCube::Gather
 
-Devuelve los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal.
+Devuelve los cuatro valores de texel que se usarían en una operación de filtrado bi lineal.
 
-Consulte la documentación de [gather4](./gather4--sm5---asm-.md) para obtener más información que describe la instrucción DXBC subyacente.
+Consulte la documentación de [gather4 para](./gather4--sm5---asm-.md) obtener más información sobre la instrucción DXBC subyacente.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -31,12 +31,12 @@ Consulte la documentación de [gather4](./gather4--sm5---asm-.md) para obtener m
 
 | Método                                                     | Descripción                                                                                                              |
 |:-----------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------|
-| [**Recopilar (S, float)**](dx-graphics-hlsl-to-gather.md)      | Muestrea una textura y devuelve los cuatro ejemplos (solo componente rojo) que se usan para la interpolación bilineal.<br/> |
-| [**Gather (S, Float, uint)**](tcube-gather-s-float-uint-.md) | Muestrea una textura y devuelve los cuatro componentes junto con el estado de la operación.<br/>                      |
+| [**Gather(S,float)**](dx-graphics-hlsl-to-gather.md)      | Muestrea una textura y devuelve las cuatro muestras (solo componente rojo) que se usan para la interpolación bilineal.<br/> |
+| [**Gather(S,float,uint)**](tcube-gather-s-float-uint-.md) | Muestrea una textura y devuelve los cuatro componentes junto con el estado de la operación.<br/>                      |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

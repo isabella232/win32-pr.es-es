@@ -2,7 +2,7 @@
 description: Cambia los permisos de seguridad para el archivo de dispositivo especificado en la ruta de acceso del objeto (este método es una versión extendida del método ChangeSecurityPermissions).
 ms.assetid: 5ad54470-6961-4c0d-9d2a-d3eaf81d75f4
 ms.tgt_platform: multiple
-title: Método ChangeSecurityPermissionsEx de la clase CIM_DeviceFile
+title: Método ChangeSecurityPermissionsEx de la CIM_DeviceFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5f2c7261844542f6414052517432c2e8ff3f1194
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6c6d70c11077873154040e30cabfb460546f79b1088ff124884e35f3698aaf78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959144"
 ---
-# <a name="changesecuritypermissionsex-method-of-the-cim_devicefile-class"></a>Método ChangeSecurityPermissionsEx de la \_ clase DeviceFile de CIM
+# <a name="changesecuritypermissionsex-method-of-the-cim_devicefile-class"></a>Método ChangeSecurityPermissionsEx de la clase \_ DeviceFile de CIM
 
-El método **ChangeSecurityPermissionsEx** cambia los permisos de seguridad para el archivo de dispositivo especificado en la ruta de acceso del objeto (este método es una versión extendida del método [**ChangeSecurityPermissions**](changesecuritypermissions-method-in-class-cim-devicefile.md) ). Si el archivo lógico es un directorio, este método actúa de forma recursiva y cambia los permisos de seguridad de todos los archivos y subdirectorios que contiene el directorio. Este método se hereda de [**\_ LogicalFile CIM**](cim-logicalfile.md).
+El **método ChangeSecurityPermissionsEx** cambia los permisos de seguridad para el archivo de dispositivo especificado en la ruta de acceso del objeto (este método es una versión extendida del [**método ChangeSecurityPermissions).**](changesecuritypermissions-method-in-class-cim-devicefile.md) Si el archivo lógico es un directorio, este método actúa de forma recursiva, cambiando los permisos de seguridad para todos los archivos y subdirectorios que contiene el directorio. Este método se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,26 +51,26 @@ uint32 ChangeSecurityPermissionsEx(
 
 <dl> <dt>
 
-*SecurityDescriptor* \[ de\]
+*SecurityDescriptor* \[ En\]
 </dt> <dd>
 
 Especifica la información de seguridad.
 
 > [!Caution]  
-> Una ACL **nula** en la estructura del [**\_ descriptor de seguridad**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) concede acceso ilimitado.
+> Una **ACL NULL** en la estructura DESCRIPTOR DE [**\_ SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) concede acceso ilimitado.
 
  
 
 </dd> <dt>
 
-*Opción* \[ de de\]
+*Opción* \[ En\]
 </dt> <dd>
 
-Privilegio de seguridad que se va a modificar. Por ejemplo, para cambiar la seguridad de la DACL y el propietario, use
+Privilegio de seguridad que se debe modificar. Por ejemplo, para cambiar el propietario y la seguridad de DACL, use
 
 `Option = 1 + 4`
 
-or
+o
 
 `Option = CHANGE_OWNER_SECURITY_INFORMATION | CHANGE_DACL_SECURITY_INFORMATION`
 
@@ -78,29 +78,29 @@ or
 
 <span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>
 
-<span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>**Cambiar \_ \_ \_ Información de seguridad del propietario** (1)
+<span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>**CAMBIO \_ INFORMACIÓN \_ DE SEGURIDAD DEL \_ PROPIETARIO** (1)
 
 
 </dt> <dd>
 
-Cambiar el propietario del archivo lógico.
+Cambie el propietario del archivo lógico.
 
 </dd> <dt>
 
 <span id="CHANGE_GROUP_SECURITY_INFORMATION"></span><span id="change_group_security_information"></span>
 
-<span id="CHANGE_GROUP_SECURITY_INFORMATION"></span><span id="change_group_security_information"></span>**Cambiar \_ \_ \_ Información de seguridad de grupo** (2)
+<span id="CHANGE_GROUP_SECURITY_INFORMATION"></span><span id="change_group_security_information"></span>**CAMBIO \_ INFORMACIÓN \_ DE \_ SEGURIDAD DE** GRUPO (2)
 
 
 </dt> <dd>
 
-Cambiar el grupo del archivo lógico.
+Cambie el grupo del archivo lógico.
 
 </dd> <dt>
 
 <span id="CHANGE_DACL_SECURITY_INFORMATION"></span><span id="change_dacl_security_information"></span>
 
-<span id="CHANGE_DACL_SECURITY_INFORMATION"></span><span id="change_dacl_security_information"></span>**Cambiar \_ \_ \_ Información de seguridad de DACL** (4)
+<span id="CHANGE_DACL_SECURITY_INFORMATION"></span><span id="change_dacl_security_information"></span>**CAMBIO \_ INFORMACIÓN DE \_ SEGURIDAD \_ DE DACL** (4)
 
 
 </dt> <dd>
@@ -111,7 +111,7 @@ Cambie la ACL del archivo lógico.
 
 <span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>
 
-<span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>**Cambiar \_ \_ \_ Información de seguridad de SACL** (8)
+<span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>**CAMBIO \_ INFORMACIÓN DE \_ SEGURIDAD \_ DE SACL** (8)
 
 
 </dt> <dd>
@@ -120,30 +120,30 @@ Cambie la ACL del sistema del archivo lógico.
 
 </dd> </dl> </dd> <dt>
 
-*StopFileName* \[ enuncia\]
+*StopFileName* \[ out\]
 </dt> <dd>
 
-Cadena que representa el nombre del archivo (o directorio) donde se produjo un error en el método. Este parámetro es **null** si el método se ejecuta correctamente.
+Cadena que representa el nombre del archivo (o directorio) en el que se ha fallado el método. Este parámetro es **NULL** si el método se realiza correctamente.
 
 </dd> <dt>
 
-*StartFileName* \[ en, opcional\]
+*StartFileName* \[ in, opcional\]
 </dt> <dd>
 
-Archivo secundario (o directorio) que se va a usar como punto de partida para este método. Normalmente, el parámetro *StartFileName* es el parámetro *StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **null**, la operación se realiza en el archivo (o directorio) especificado en la llamada [**ExecMethod**](/windows/desktop/WmiSdk/swbemservices-execmethod) .
+Archivo secundario (o directorio) que se va a usar como punto de partida para este método. Normalmente, el *parámetro StartFileName* es el *parámetro StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **null,** la operación se realiza en el archivo (o directorio) especificado en la [**llamada a ExecMethod.**](/windows/desktop/WmiSdk/swbemservices-execmethod)
 
 </dd> <dt>
 
-*Recursivo* \[ en, opcional\]
+*Recursiva* \[ in, opcional\]
 </dt> <dd>
 
-Si es **true**, el método también se aplica de forma recursiva a los archivos y directorios del directorio especificado por la instancia de [**\_ DeviceFile de CIM**](cim-devicefile.md) . En el caso de las instancias de archivo, este parámetro se omite.
+Si **es TRUE,** el método también se aplica de forma recursiva a los archivos y directorios del directorio especificado por la [**instancia de \_ DeviceFile de CIM.**](cim-devicefile.md) En el caso de las instancias de archivo, este parámetro se omite.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si se realiza correctamente y cualquier otro número para indicar un error.
+Devuelve un valor de 0 (cero) si se ejecuta correctamente y cualquier otro número para indicar un error.
 
 <dl> <dt>
 
@@ -161,7 +161,7 @@ Correcto.
 
 2
 
-Acceso denegado.
+Acceso denegado:
 
 </dd> <dt>
 
@@ -264,11 +264,11 @@ Parámetro no válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no está implementado actualmente por WMI. Para usar este método, debe implementarlo en su propio proveedor.
+Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -278,8 +278,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -288,10 +288,10 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[\_DEVICEFILE CIM](changesecuritypermissionsex-method-in-class-cim-devicefile.md)
+[CIM \_ DeviceFile](changesecuritypermissionsex-method-in-class-cim-devicefile.md)
 </dt> <dt>
 
-[**\_DEVICEFILE CIM**](cim-devicefile.md)
+[**CIM \_ DeviceFile**](cim-devicefile.md)
 </dt> </dl>
 
  

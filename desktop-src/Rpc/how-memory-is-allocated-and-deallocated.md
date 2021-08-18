@@ -15,11 +15,11 @@ ms.locfileid: "118929522"
 
 De forma predeterminada, el código auxiliar generado por el compilador MIDL llama a las funciones proporcionadas por el usuario para asignar y liberar memoria. Estas funciones, [**denominadas midl \_ user \_ allocate**](/windows/desktop/Midl/midl-user-allocate-1) y [**midl user \_ \_ free,**](/windows/desktop/Midl/midl-user-free-1)deben ser proporcionadas por el desarrollador y vinculadas a la aplicación.
 
-Todas las aplicaciones deben proporcionar implementaciones de asignación de usuario [**midl \_ \_**](/windows/desktop/Midl/midl-user-allocate-1) y usuario medio libre, aunque es posible que los nombres de estas funciones no aparezcan explícitamente en los códigos auxiliares. [**\_ \_**](/windows/desktop/Midl/midl-user-free-1) La única excepción es cuando se compila en modo de compatibilidad con OSF (/osf). Estas funciones proporcionadas por el usuario deben coincidir con un prototipo de función específico definido, pero de lo contrario, se pueden implementar de cualquier manera que sea conveniente o útil para la aplicación. Como alternativa, las aplicaciones pueden usar el paquete de administración de memoria rpcSs. La biblioteca en tiempo de ejecución RPC de Microsoft proporciona este grupo de funciones.
+Todas las aplicaciones deben proporcionar implementaciones de [**midl \_ user \_ allocate**](/windows/desktop/Midl/midl-user-allocate-1) y [**midl \_ user \_ free,**](/windows/desktop/Midl/midl-user-free-1)aunque es posible que los nombres de estas funciones no aparezcan explícitamente en los códigos auxiliares. La única excepción es cuando se compila en modo de compatibilidad con OSF (/osf). Estas funciones proporcionadas por el usuario deben coincidir con un prototipo de función definido específico, pero de lo contrario, se pueden implementar de cualquier manera que sea conveniente o útil para la aplicación. Como alternativa, las aplicaciones pueden usar el paquete de administración de memoria rpcSs. La biblioteca en tiempo de ejecución rpc de Microsoft proporciona este grupo de funciones.
 
-En las secciones siguientes se describen las funciones de administración de memoria RPC.
+En las secciones siguientes se describen las funciones de administración de memoria rpc.
 
--   [**asignación de usuario midl \_ \_**](/windows/desktop/Midl/midl-user-allocate-1)
+-   [**midl \_ user \_ allocate**](/windows/desktop/Midl/midl-user-allocate-1)
 -   [**midl \_ user \_ free**](/windows/desktop/Midl/midl-user-free-1)
 -   [Paquete de administración de memoria rpcSs](rpcss-memory-management-package.md)
 

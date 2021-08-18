@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7fadad95e8e72691a0e030ed89eedc745de2be43
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6f51ed86569d29488f93a661999821c3f27bd5f17ed9ba2e552a2604f804c305
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987225"
 ---
 # <a name="id3dxmatrixstacktranslate-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::Translate (D3dx9math.h)
 
@@ -99,7 +99,7 @@ m_stack[m_currentPos] = m_stack[m_currentPos] * tmp;
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -13,7 +13,7 @@ ms.locfileid: "118925982"
 ---
 # <a name="rules-for-multiple-pipes"></a>Reglas para varias canalizaciones
 
-Puede combinar en , out y en parámetros de canalización out en cualquier combinación en una sola llamada, pero debe procesar las canalizaciones en un orden específico, como se muestra en el ejemplo de pseudocódigo \[ [](/windows/desktop/Midl/in) \] \[ [](/windows/desktop/Midl/out-idl) \] \[  \] siguiente:
+Puede combinar en , out y en parámetros de canalización out en cualquier combinación en una sola llamada, pero debe procesar las canalizaciones en un orden específico, como se muestra en el siguiente ejemplo de \[ [](/windows/desktop/Midl/in) \] \[ [](/windows/desktop/Midl/out-idl) \] \[  \] pseudocódigo:
 
 > [!Note]  
 > Esta característica ya no se admite en Windows Vista y plataformas posteriores.

@@ -1,21 +1,21 @@
 ---
-description: La estructura de los límites de la configuración de la \_ secuencia de audio TAPI \_ \_ \_ está contenida en la estructura de la configuración de la secuencia de TAPI \_ \_ \_ Cap cuando el miembro CapsType se establece en el miembro AudioCap de la Unión StreamConfigCapsType.
+description: La estructura TAPI AUDIO STREAM CONFIG CAPS contiene la estructura TAPI STREAM CONFIG CAPS cuando el miembro CapsType se establece en el miembro AudioCap de la unión \_ \_ \_ \_ \_ \_ \_ StreamConfigCapsType.
 ms.assetid: 61575839-4604-4c8b-ae4d-fe796c3c5314
-title: TAPI_AUDIO_STREAM_CONFIG_CAPS estructura (Ipmsp. h)
+title: TAPI_AUDIO_STREAM_CONFIG_CAPS estructura (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: daec587a8e760bedd3ab9c6b3469ef8f70b72383
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 51fc4777e6d174f7d4aaeac9bbd3f6d467123275b4030c9fa21363223584e8b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118861224"
 ---
-# <a name="tapi_audio_stream_config_caps-structure"></a>Estructura de los límites de configuración de la \_ secuencia de audio TAPI \_ \_ \_
+# <a name="tapi_audio_stream_config_caps-structure"></a>Estructura TAPI \_ AUDIO \_ STREAM CONFIG \_ \_ CAPS
 
-\[ Esta estructura no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Esta estructura no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-La estructura de los límites de la configuración de la **\_ secuencia de audio \_ \_ \_ TAPI** está contenida en la estructura de la configuración de la [**secuencia de TAPI \_ \_ \_ Cap**](tapi-stream-config-caps.md) cuando el miembro **CapsType** se establece en el miembro **AudioCap** de la Unión [**StreamConfigCapsType**](streamconfigcapstype.md) .
+La **estructura TAPI \_ AUDIO STREAM \_ CONFIG \_ \_ CAPS** contiene la estructura [**TAPI STREAM CONFIG \_ \_ \_ CAPS**](tapi-stream-config-caps.md) cuando el **miembro CapsType** se establece en el miembro **AudioCap** de la unión [**StreamConfigCapsType.**](streamconfigcapstype.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,7 +33,7 @@ La estructura de los límites de la configuración de la **\_ secuencia de audio
 **Descripción**
 </dt> <dd>
 
-Descripción detallada del tipo de configuración de la secuencia de audio que se va a mostrar a los usuarios de la aplicación.
+Una descripción sencilla del tipo de configuración de secuencia de audio para mostrar a los usuarios de la aplicación.
 
 </dd> <dt>
 
@@ -54,7 +54,7 @@ Número máximo de canales asociados a la secuencia.
 **ChannelsGranularity**
 </dt> <dd>
 
-La granularidad del número de canales.
+Granularidad del recuento de canales.
 
 </dd> <dt>
 
@@ -75,28 +75,28 @@ Número máximo de bits por muestra.
 **BitsPerSampleGranularity**
 </dt> <dd>
 
-La granularidad de los bits por los valores de ejemplo.
+Granularidad de los bits por valores de ejemplo.
 
 </dd> <dt>
 
 **MinimumSampleFrequency**
 </dt> <dd>
 
-La frecuencia de muestreo mínima.
+Frecuencia de muestreo mínima.
 
 </dd> <dt>
 
 **MaximumSampleFrequency**
 </dt> <dd>
 
-La frecuencia de muestreo máxima.
+Frecuencia de muestreo máxima.
 
 </dd> <dt>
 
 **SampleFrequencyGranularity**
 </dt> <dd>
 
-La granularidad de los valores de frecuencia de muestreo.
+Granularidad de los valores de frecuencia de muestreo.
 
 </dd> <dt>
 
@@ -117,7 +117,7 @@ Promedio máximo de bytes por segundo.
 **AvgBytesPerSecGranularity**
 </dt> <dd>
 
-La granularidad de los valores de bytes por segundo.
+Granularidad de los valores de bytes por segundo.
 
 </dd> </dl>
 
@@ -125,18 +125,18 @@ La granularidad de los valores de bytes por segundo.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,1<br/>                                                       |
-| Encabezado<br/>       | <dl> <dt>Ipmsp. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 3.1<br/>                                                       |
+| Header<br/>       | <dl> <dt>Ipmsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_Cap de \_ configuración de secuencia TAPI \_**](tapi-stream-config-caps.md)
+[**TAPI \_ STREAM \_ CONFIG \_ CAPS**](tapi-stream-config-caps.md)
 </dt> </dl>
 
  

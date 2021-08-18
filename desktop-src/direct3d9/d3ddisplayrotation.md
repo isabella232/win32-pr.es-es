@@ -1,7 +1,7 @@
 ---
 description: Especifica cómo se gira el monitor que se usa para mostrar una aplicación de pantalla completa.
 ms.assetid: 190aa10e-4bf0-45ec-9c07-2582c5536074
-title: Enumeración D3DDISPLAYROTATION (D3d9types. h)
+title: Enumeración D3DDISPLAYROTATION (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 28f4d38dca78f0f34daf931a6bf651b40c1b0a78
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8defdc206e88750125d88c50e86484428c0dedbd7c18575e26504d7445cd3f64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118804973"
 ---
-# <a name="d3ddisplayrotation-enumeration"></a>Enumeración D3DDISPLAYROTATION
+# <a name="d3ddisplayrotation-enumeration"></a>D3DDISPLAYROTATION (enumeración)
 
 Especifica cómo se gira el monitor que se usa para mostrar una aplicación de pantalla completa.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,39 +42,39 @@ typedef enum D3DDISPLAYROTATION {
 
 <dl> <dt>
 
-<span id="D3DDISPLAYROTATION_IDENTITY"></span><span id="d3ddisplayrotation_identity"></span>**Identidad de D3DDISPLAYROTATION \_**
+<span id="D3DDISPLAYROTATION_IDENTITY"></span><span id="d3ddisplayrotation_identity"></span>**D3DDISPLAYROTATION \_ IDENTITY**
 </dt> <dd>
 
-La presentación no se gira.
+La pantalla no gira.
 
 </dd> <dt>
 
 <span id="D3DDISPLAYROTATION_90"></span><span id="d3ddisplayrotation_90"></span>**D3DDISPLAYROTATION \_ 90**
 </dt> <dd>
 
-La pantalla se gira 90 grados.
+La pantalla gira 90 grados.
 
 </dd> <dt>
 
 <span id="D3DDISPLAYROTATION_180"></span><span id="d3ddisplayrotation_180"></span>**D3DDISPLAYROTATION \_ 180**
 </dt> <dd>
 
-La pantalla se gira 180 grados.
+La pantalla gira 180 grados.
 
 </dd> <dt>
 
 <span id="D3DDISPLAYROTATION_270"></span><span id="d3ddisplayrotation_270"></span>**D3DDISPLAYROTATION \_ 270**
 </dt> <dd>
 
-La pantalla se gira 270 grados.
+La pantalla gira 270 grados.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta enumeración se usa en [**IDirect3D9Ex:: GetAdapterDisplayModeEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-getadapterdisplaymodeex), [**IDirect3DDevice9Ex:: GetDisplayModeEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-getdisplaymodeex)y [**IDirect3DSwapChain9Ex:: GetDisplayModeEx**](/windows/desktop/api/D3D9/nf-d3d9-idirect3dswapchain9ex-getdisplaymodeex).
+Esta enumeración se usa en [**IDirect3D9Ex::GetAdapterDisplayModeEx,**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-getadapterdisplaymodeex) [**IDirect3DDevice9Ex::GetDisplayModeEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-getdisplaymodeex)e [**IDirect3DSwapChain9Ex::GetDisplayModeEx**](/windows/desktop/api/D3D9/nf-d3d9-idirect3dswapchain9ex-getdisplaymodeex).
 
-Las aplicaciones pueden optar por controlar las rotaciones del monitor mediante el [ \_ NOAUTOROTATE de D3DPRESENTFLAG](d3dpresentflag.md), en cuyo caso la aplicación deberá saber cómo se gira el monitor para que pueda ajustar su representación en consecuencia.
+Las aplicaciones pueden optar por controlar la rotación del monitor por sí mismas mediante [D3DPRESENTFLAG \_ NOAUTOROTATE,](d3dpresentflag.md)en cuyo caso, la aplicación deberá saber cómo se gira el monitor para que pueda ajustar su representación en consecuencia.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,11 +82,11 @@ Las aplicaciones pueden optar por controlar las rotaciones del monitor mediante 
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

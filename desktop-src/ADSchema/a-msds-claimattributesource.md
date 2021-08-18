@@ -27,16 +27,16 @@ Para un objeto de tipo de notificación, este atributo apunta al atributo que se
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | ms-DS-Claim-Attribute-Source            |
 | Ldap-Display-Name | msDS-ClaimAttributeSource               |
 | Size              | \-                                      |
-| Privilegio actualizar  | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2099                 |
 | System-Id-Guid    | eebc123e-bae6-4166-9e5b-29884a8b76b0    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -48,14 +48,14 @@ Para un objeto de tipo de notificación, este atributo apunta al atributo que se
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------|
 | Id. de vínculo                | \-                                                      |
 | MAPI-Id                | \-                                                      |
-| System-Only            | False                                                   |
-| Es de un solo valor       | True                                                    |
-| Está indexado             | False                                                   |
-| En el catálogo global      | False                                                   |
+| System-Only            | Falso                                                   |
+| Es de un solo valor       | Verdadero                                                    |
+| Está indexado             | Falso                                                   |
+| En el catálogo global      | Falso                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                            |
 | Range-Lower            | \-                                                      |
 | Range-Upper            | \-                                                      |

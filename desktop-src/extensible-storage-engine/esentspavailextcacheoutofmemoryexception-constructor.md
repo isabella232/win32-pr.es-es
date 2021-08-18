@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSPAvailExtCacheOutOfMemoryException'
-title: Constructor de EsentSPAvailExtCacheOutOfMemoryException
+description: 'Más información sobre: Constructor EsentSPAvailExtCacheOutOfMemoryException'
+title: Constructor EsentSPAvailExtCacheOutOfMemoryException
 TOCTitle: 'EsentSPAvailExtCacheOutOfMemoryException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSPAvailExtCacheOutOfMemoryException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentspavailextcacheoutofmemoryexception.esentspavailextcacheoutofmemoryexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e803e89e7eb736116dd5c7caad55e6514168d667
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8cc73e7db70997461cb9cdcb18feaaa3b74749605d1a2252f8cc6bbdf0175ef1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105659961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118770512"
 ---
-# <a name="esentspavailextcacheoutofmemoryexception-constructor"></a>Constructor de EsentSPAvailExtCacheOutOfMemoryException
+# <a name="esentspavailextcacheoutofmemoryexception-constructor"></a>Constructor EsentSPAvailExtCacheOutOfMemoryException
 
 Inicializa una nueva instancia de la clase EsentSPAvailExtCacheOutOfMemoryException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentSPAvailExtCacheOutOfMemoryException()
 
 [Miembros de EsentSPAvailExtCacheOutOfMemoryException](./esentspavailextcacheoutofmemoryexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

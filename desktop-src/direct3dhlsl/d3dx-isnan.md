@@ -1,9 +1,9 @@
 ---
-title: D3DX_IsNan función)
-description: Determina si el valor es un NaN (no un número).
+title: D3DX_IsNan función
+description: Determina si el valor es naN (no un número).
 ms.assetid: 862d1d34-36ab-471e-b3ce-ce71896441e5
 keywords:
-- D3DX_IsNan de la función HLSL
+- D3DX_IsNan function HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60aac82ebfb145bc11aac8d4ab509a4260767a74
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6b8851fb216bf400971a281fb589b92205014e006651d4fc89592d98f5c93916
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118793754"
 ---
-# <a name="d3dx_isnan-function"></a>\_Función IsNan de D3DX
+# <a name="d3dx_isnan-function"></a>Función IsNan de D3DX \_
 
-Determina si el valor es un NaN (no un número).
+Determina si el valor es naN (no un número).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ Valor especificado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-True si un NaN; en caso contrario, false.
+true si un NaN; en caso contrario, false.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ True si un NaN; en caso contrario, false.
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. INL</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ True si un NaN; en caso contrario, false.
 [Funciones](format-conversion-functions.md)
 </dt> <dt>
 
-[Desempaquetar y empaquetar el \_ formato de DXGI para la edición de In-Place imagen](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempaquetar y empaquetar DXGI \_ FORMAT para la edición In-Place imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

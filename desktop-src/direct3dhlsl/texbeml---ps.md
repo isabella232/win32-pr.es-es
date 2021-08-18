@@ -1,6 +1,6 @@
 ---
-title: texbeml-PS
-description: Aplicar una transformación de mapa de entorno de rugosidad falsa con corrección de luminancia. Esto se logra modificando los datos de la dirección de textura del registro de destino, utilizando los datos de la dirección Perturbation (du, DV), una matriz de entorno de rugosidad 2D y luminancia.
+title: texbeml - ps
+description: Aplicar una transformación de mapa de entorno de protuberancia falsa con corrección de luminosidad. Para ello, se modifican los datos de dirección de textura del registro de destino, mediante datos de alteración de direcciones (du,dv), una matriz de entorno de protuberancia 2D y luminosidad.
 ms.assetid: 345a0b77-8d4e-4a0b-a31a-1153f8cb5961
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,54 +9,54 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d97877c67970f43a995fcfbe21d9aead2d792e09
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c549e93829c3165d4921342d4e74a8dc15bc1518f7c88aa205f8afc889fae95e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103995580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118788069"
 ---
-# <a name="texbeml---ps"></a>texbeml-PS
+# <a name="texbeml---ps"></a>texbeml - ps
 
-Aplicar una transformación de mapa de entorno de rugosidad falsa con corrección de luminancia. Esto se logra modificando los datos de la dirección de textura del registro de destino, utilizando los datos de la dirección Perturbation (du, DV), una matriz de entorno de rugosidad 2D y luminancia.
+Aplicar una transformación de mapa de entorno de protuberancia falsa con corrección de luminosidad. Para ello, se modifican los datos de dirección de textura del registro de destino, mediante datos de alteración de direcciones (du,dv), una matriz de entorno de protuberancia 2D y luminosidad.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| texbeml DST, src |
+| texbeml dst, src |
 |------------------|
 
 
 
- 
+ 
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | texbeml               | x    | x    | x    |      |      |      |       |      |       |
 
 
 
- 
+ 
 
-Los datos de color rojo y verde del registro de src se interpretan como los datos de Perturbation (du, DV). Los datos de color azul del registro de src se interpretan como los datos de luminancia.
+Los datos de color rojo y verde del registro src se interpretan como los datos de alteración (du,dv). Los datos de color azul del registro src se interpretan como datos de luminosidad.
 
-Esta instrucción transforma los componentes rojo y verde del registro de origen mediante la matriz de asignación del entorno de rugosidad 2D. El resultado se agrega al conjunto de coordenadas de textura correspondiente al número de registro de destino. Una corrección de luminancia se aplica mediante el valor de luminancia y los valores de la fase de textura de sesgo. El resultado se usa para muestrear la fase de textura actual.
+Esta instrucción transforma los componentes rojo y verde en el registro de origen mediante la matriz de asignación de entorno de protuberancia 2D. El resultado se agrega al conjunto de coordenadas de textura correspondiente al número de registro de destino. Se aplica una corrección de luminosidad mediante el valor de luminosidad y los valores de fase de textura de sesgo. El resultado se usa para muestrear la fase de textura actual.
 
-Se puede usar para una variedad de técnicas basadas en la dirección Perturbation, como la asignación de entorno falsa por píxel.
+Esto se puede usar para diversas técnicas basadas en la alteración de direcciones, como la asignación de entornos falsos por píxel.
 
-Esta operación siempre interpreta du y DV como cantidades firmadas. En las versiones 1 \_ y 1 \_ 1, no se permite el modificador de entrada de [escala firmada del registro de origen](dx9-graphics-reference-asm-ps-registers-modifiers-signed-scale.md) ( \_ BX2) en el argumento de entrada.
+Esta operación siempre interpreta du y dv como cantidades firmadas. Para las versiones 1 0 y 1 1, el modificador de entrada \_ Source Register Signed \_ [Scaling](dx9-graphics-reference-asm-ps-registers-modifiers-signed-scale.md) \_ (bx2) no se permite en el argumento de entrada.
 
-Esta instrucción genera resultados definidos cuando las texturas de entrada contienen datos de formato mixto. Para obtener más información sobre los formatos de Surface, vea [D3DFORMAT](/windows/desktop/direct3d9/d3dformat).
+Esta instrucción genera resultados definidos cuando las texturas de entrada contienen datos de formato mixto. Para obtener más información sobre los formatos de superficie, [vea D3DFORMAT](/windows/desktop/direct3d9/d3dformat).
 
 
 ```
@@ -70,7 +70,7 @@ texbeml t(m),  t(n)      where m > n
 
 
 
-Este ejemplo muestra los cálculos realizados dentro de la instrucción.
+En este ejemplo se muestran los cálculos que se realizan dentro de la instrucción .
 
 
 ```
@@ -81,27 +81,27 @@ Este ejemplo muestra los cálculos realizados dentro de la instrucción.
 
 
 
-u ' = TextureCoordinates (fase m)<sub>u</sub> +
+u' = TextureCoordinates(stage m)<sub>u</sub> +
 
-D3DTSS \_ BUMPENVMAT00 (Stage m) \* t (n)<sub>R</sub> +
+D3DTSS \_ BUMPENVMAT00(stage m) \* t(n)<sub>R</sub> +
 
-D3DTSS \_ BUMPENVMAT10 (Stage m) \* t (n)<sub>G</sub>
+D3DTSS \_ BUMPENVMAT10(stage m) \* t(n)<sub>G</sub>
 
-v ' = TextureCoordinates (fase m)<sub>v</sub> +
+v' = TextureCoordinates(stage m)<sub>v</sub> +
 
-D3DTSS \_ BUMPENVMAT01 (Stage m) \* t (n)<sub>R</sub> +
+D3DTSS \_ BUMPENVMAT01(stage m) \* t(n)<sub>R</sub> +
 
-D3DTSS \_ BUMPENVMAT11 (Stage m) \* t (n)<sub>G</sub>
+D3DTSS \_ BUMPENVMAT11(stage m) \* t(n)<sub>G</sub>
 
-t (m)<sub>RGBA</sub> = TextureSample (fase m) mediante (u ', v ') como coordenadas
+t(m)<sub>RGBA</sub> = TextureSample(stage m) using (u',v') as coordinates
 
-t (m)<sub>RGBA</sub> = t (m)<sub>RGBA</sub>\*
+t(m)<sub>RGBA</sub> = t(m)<sub>RGBA</sub>\*
 
-\[(t (n)<sub>B</sub> \* D3DTSS \_ BUMPENVLSCALE (fase m)) +
+\[(t(n)<sub>B</sub> \* D3DTSS \_ BUMPENVLSCALE(stage m)) +
 
-D3DTSS \_ BUMPENVLOFFSET (fase m)\]
+D3DTSS \_ BUMPENVLOFFSET(stage m)\]
 
-Los datos de registro que ha leído una instrucción [texbem](texbem---ps.md) o texbeml no se pueden leer más adelante, excepto por otro texbem o texbeml.
+Los datos de registro leídos por una instrucción [de tipo "texbem"](texbem---ps.md) o "texbeml" no se pueden leer más adelante, excepto por otro objeto texbem o texbeml.
 
 
 ```
@@ -120,7 +120,7 @@ texbem or texbeml instruction cannot be read by other instructions
 
 ## <a name="examples"></a>Ejemplos
 
-A continuación se muestra un sombreador de ejemplo con los mapas de textura identificados y las fases de textura identificadas.
+Este es un sombreador de ejemplo con los mapas de textura identificados y las fases de textura identificadas.
 
 
 ```
@@ -136,9 +136,9 @@ mov r0, t1          ; Output result
 
 Este ejemplo requiere las siguientes texturas en las siguientes fases de textura.
 
--   A la fase 0 se le asigna un mapa de rugosidad con datos Perturbation (du, DV).
--   En la fase 1 se le asigna un mapa de textura con datos de color.
--   texbeml establece los datos de la matriz en la fase de textura que se muestrea. Esto es diferente de la funcionalidad de la canalización de función fija en la que los datos de Perturbation y las matrices ocupan la misma fase de textura.
+-   A la fase 0 se le asigna un mapa de protuberancias con datos de alteración (du, dv).
+-   A la fase 1 se le asigna un mapa de textura con datos de color.
+-   establece los datos de la matriz en la fase de textura muestreada. Esto es diferente de la funcionalidad de la canalización de función fija donde los datos de la alteración y las matrices ocupan la misma fase de textura.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -147,6 +147,6 @@ Este ejemplo requiere las siguientes texturas en las siguientes fases de textura
 [Instrucciones del sombreador de píxeles](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -3,46 +3,46 @@ title: Importación de DRM
 description: Importación de DRM
 ms.assetid: 5e67a721-830b-4d99-9f90-4cb2d7c61104
 keywords:
-- SDK de Windows Media Format, API extendidas del cliente DRM
-- SDK de Windows Media Format, API extendidas de cliente
-- SDK de Windows Media Format, API extendidas
-- SDK de Windows Media Format, API
-- SDK de Windows Media Format, administración de derechos digitales (DRM)
-- SDK de Windows Media Format, importación de DRM
-- SDK de Windows Media Format, importar
-- SDK de Windows Media Format, sistema de protección de contenido (CPS)
-- Administración de derechos digitales (DRM), API extendidas de cliente
+- Windows SDK de formato multimedia, API extendidas de cliente DRM
+- Windows SDK de formato multimedia, API extendidas de cliente
+- Windows SDK de formato multimedia, API extendidas
+- Windows SDK de formato multimedia, API
+- Windows SDK de formato multimedia, administración de derechos digitales (DRM)
+- Windows SDK de formato multimedia, importación de DRM
+- Windows SDK de formato multimedia, importación
+- Windows SDK de formato multimedia, sistema de protección de contenido (CPS)
+- administración de derechos digitales (DRM), API extendidas de cliente
 - DRM (administración de derechos digitales), API extendidas de cliente
-- Administración de derechos digitales (DRM), API extendidas
+- administración de derechos digitales (DRM), API extendidas
 - DRM (administración de derechos digitales), API extendidas
-- Administración de derechos digitales (DRM), API
+- administración de derechos digitales (DRM), API
 - DRM (administración de derechos digitales), API
-- Administración de derechos digitales (DRM), importar
-- DRM (administración de derechos digitales), importar
-- Administración de derechos digitales (DRM), sistema de protección de contenido (CPS)
+- administración de derechos digitales (DRM), importación
+- DRM (administración de derechos digitales),importar
+- administración de derechos digitales (DRM), sistema de protección de contenido (CPS)
 - DRM (administración de derechos digitales), sistema de protección de contenido (CPS)
-- API extendidas del cliente DRM, importar
+- API extendidas de cliente DRM, importar
 - API extendidas de cliente, importar
-- API extendidas del cliente DRM, sistema de protección de contenido (CPS)
+- API extendidas de cliente DRM, sistema de protección de contenido (CPS)
 - API extendidas de cliente, sistema de protección de contenido (CPS)
 - sistema de protección de contenido (CPS)
 - CPS (sistema de protección de contenido)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20fc20cfd682df975c10a8f39785c0e8d69610d0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 981e601c21dc3ee8f54e256c40453bf24580cf46c261d41ea5dd1d9afa1ffbbf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103776663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027903"
 ---
 # <a name="drm-import"></a>Importación de DRM
 
-En las secciones siguientes se explica cómo convertir el contenido multimedia de un sistema de protección de contenido (CPS) de terceros en DRM de Windows Media. Este proceso se conoce como importación de DRM y consta esencialmente de los siguientes pasos:
+En las secciones siguientes se explica cómo convertir contenido multimedia de un sistema de protección de contenido (CPS) de terceros a DRM Windows Multimedia. Este proceso se conoce como importación de DRM y consta básicamente de los pasos siguientes:
 
-1.  Crear el archivo ASF.
-2.  Crear la licencia.
-3.  Opcionalmente, se elimina la licencia.
+1.  Creación del archivo ASF.
+2.  Creación de la licencia.
+3.  Opcionalmente, elimine la licencia.
 
 La importación de DRM se explica en las secciones siguientes.
 
@@ -50,16 +50,16 @@ La importación de DRM se explica en las secciones siguientes.
 
 | Sección                                                                              | Descripción                                                                          |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [Importación de la licencia y el material de clave](importing-license-and-key-material.md)         | Describe cómo emitir licencias localmente e importarlas en Windows Media DRM.      |
+| [Importar material de clave y licencia](importing-license-and-key-material.md)         | Describe cómo emitir licencias localmente e importarlas en Windows DRM multimedia.      |
 | [Comprobación de la revocación de certificados](checking-certificate-revocation.md)               | Describe cómo comprobar la revocación de certificados.                                       |
-| [Creación de una licencia de XMR](building-an-xmr-license.md)                               | Describe cómo crear una licencia de XMR y pasarla al subsistema DRM.             |
-| [Creación e inicialización de un escritor DRM](creating-and-initializing-a-drm-writer.md) | Describe cómo inicializar un objeto de escritura ASF para preparar la importación de DRM.          |
-| [Cifrado e importación de ejemplos de medios](encrypting-and-importing-media-samples.md) | Describe cómo cifrar e importar ejemplos de medios individuales en DRM de Windows Media. |
+| [Creación de una licencia XMR](building-an-xmr-license.md)                               | Describe cómo crear una licencia XMR y pasarla al subsistema DRM.             |
+| [Creación e inicialización de un sistema de escritura DRM](creating-and-initializing-a-drm-writer.md) | Describe cómo inicializar un objeto de escritor de ASF para prepararse para la importación de DRM.          |
+| [Ejemplos de cifrado e importación de medios](encrypting-and-importing-media-samples.md) | Describe cómo cifrar e importar ejemplos de medios individuales en Windows DRM multimedia. |
 | [Eliminación de licencias](license-deletion.md)                                             | Describe cómo eliminar licencias creadas localmente.                                    |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -68,9 +68,9 @@ La importación de DRM se explica en las secciones siguientes.
 [**Guía de programación**](drm-programming-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

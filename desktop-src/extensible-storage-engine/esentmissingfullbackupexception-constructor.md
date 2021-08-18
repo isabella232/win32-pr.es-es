@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentMissingFullBackupException'
-title: Constructor de EsentMissingFullBackupException
+description: 'Más información sobre: Constructor EsentMissingFullBackupException'
+title: Constructor EsentMissingFullBackupException
 TOCTitle: 'EsentMissingFullBackupException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentMissingFullBackupException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentmissingfullbackupexception.esentmissingfullbackupexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ed43ac1c8dc7313a29220d7f1db2e13e86ac4dc9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e60122b1108bda54d6e9b9c75145a283d1fae8a848bcd88bc42e827b9f4675fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118776179"
 ---
-# <a name="esentmissingfullbackupexception-constructor"></a>Constructor de EsentMissingFullBackupException
+# <a name="esentmissingfullbackupexception-constructor"></a>Constructor EsentMissingFullBackupException
 
 Inicializa una nueva instancia de la clase EsentMissingFullBackupException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentMissingFullBackupException()
 
 [Miembros de EsentMissingFullBackupException](./esentmissingfullbackupexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

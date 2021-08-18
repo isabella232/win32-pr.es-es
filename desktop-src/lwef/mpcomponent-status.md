@@ -1,10 +1,10 @@
 ---
-title: MPCOMPONENT_STATUS estructura (MpClient. h)
+title: MPCOMPONENT_STATUS estructura (MpClient.h)
 description: Información de estado del componente.
 ms.assetid: 0E589E52-A204-425C-880B-CF13C16893F3
 keywords:
-- MPCOMPONENT_STATUS estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPCOMPONENT_STATUS características de entorno heredado de Windows
+- MPCOMPONENT_STATUS estructura heredada de Windows environment
+- PMPCOMPONENT_STATUS puntero de estructura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2923136d2599440bc6ccfe863af9795f7d7ff96
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dcb12a0358cf4d0112ca1cb8dfedc90c7c3aec504578685e78291dbe5e006cda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747803"
 ---
-# <a name="mpcomponent_status-structure"></a>Estructura de estado de MPCOMPONENT \_
+# <a name="mpcomponent_status-structure"></a>Estructura MPCOMPONENT \_ STATUS
 
 Información de estado del componente.
 
@@ -45,7 +45,7 @@ typedef struct tagMPCOMPONENT_STATUS {
 **fEnable**
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
 </dd> <dd>
 
@@ -53,14 +53,14 @@ Estado del componente.
 
 </dd> <dt>
 
-**Valor**
+**Hresult**
 </dt> <dd>
 
 Tipo: **HRESULT**
 
 </dd> <dd>
 
-Código de éxito o error asociado al estado.
+Código correcto o de error asociado al estado.
 
 </dd> </dl>
 
@@ -68,11 +68,11 @@ Código de éxito o error asociado al estado.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

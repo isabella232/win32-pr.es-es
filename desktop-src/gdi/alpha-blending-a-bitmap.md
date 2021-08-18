@@ -1,23 +1,23 @@
 ---
-description: Alfa mezclar un mapa de bits
+description: Combinación alfa de un mapa de bits
 ms.assetid: 01ed3e2e-cfb3-42c9-9030-b64f9db088f1
-title: Alfa mezclar un mapa de bits
+title: Combinación alfa de un mapa de bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8410111477d312eab5eb94a170188400d3f4f263
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54870ccf13ec27b982669dc43382c357a932ea9052e5855200f27825ab96eb35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038303"
 ---
-# <a name="alpha-blending-a-bitmap"></a>Alfa mezclar un mapa de bits
+# <a name="alpha-blending-a-bitmap"></a>Combinación alfa de un mapa de bits
 
-En el ejemplo de código siguiente se divide una ventana en tres áreas horizontales. A continuación, dibuja un mapa de bits con mezcla alfa en cada una de las áreas de la ventana de la siguiente manera:
+En el ejemplo de código siguiente se divide una ventana en tres áreas horizontales. A continuación, dibuja un mapa de bits combinado alfa en cada una de las áreas de ventana de la siguiente manera:
 
--   En el área superior, Constant Alpha = 50%, pero no hay alfa de origen.
--   En el área central, la constante alfa = 100% (deshabilitado) y el alfa de origen es 0 (transparente) en el medio del mapa de bits y 0xFF (opaco) en otro lugar.
--   En el área inferior, la constante alfa = 75% y los cambios alfa de origen cambian.
+-   En el área superior, constante alpha = 50 %, pero no hay ningún alfa de origen.
+-   En el área central, constante alfa = 100 % (deshabilitado) y alfa de origen es 0 (transparente) en el medio del mapa de bits y 0xff (opaco) en otro lugar.
+-   En el área inferior, constante alfa = 75 % y cambios alfa de origen.
 
 
 ```C++

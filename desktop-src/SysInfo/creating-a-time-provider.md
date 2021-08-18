@@ -1,39 +1,39 @@
 ---
-description: Un proveedor de hora se implementa como un archivo DLL. Cada archivo DLL puede admitir varios proveedores de hora. Cada proveedor es responsable de su propia configuración y sincronización.
+description: Un proveedor de hora se implementa como un archivo DLL. Cada archivo DLL puede admitir varios proveedores de tiempo. Cada proveedor es responsable de su propia configuración y sincronización.
 ms.assetid: 04f523d7-7e99-4bf5-941f-ae67f4b9df0a
 title: Creación de un proveedor de hora
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93ac5a12e19651d88c3328ac72280c486a54c4d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf58766bf0ed7339bf8c9bfd7abc7434ddc43165b7cbdd77bcfd5420947e743d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118885768"
 ---
 # <a name="creating-a-time-provider"></a>Creación de un proveedor de hora
 
-Un proveedor de hora se implementa como un archivo DLL. Cada archivo DLL puede admitir varios proveedores de hora. Cada proveedor es responsable de su propia configuración y sincronización.
+Un proveedor de hora se implementa como un archivo DLL. Cada archivo DLL puede admitir varios proveedores de tiempo. Cada proveedor es responsable de su propia configuración y sincronización.
 
-Los proveedores de tiempo deben implementar las siguientes funciones de devolución de llamada:
+Los proveedores de hora deben implementar las siguientes funciones de devolución de llamada:
 
 -   [**TimeProvClose**](/windows/desktop/api/Timeprov/nf-timeprov-timeprovclose)
 -   [**TimeProvCommand**](/windows/desktop/api/Timeprov/nf-timeprov-timeprovcommand)
 -   [**TimeProvOpen**](/windows/desktop/api/Timeprov/nf-timeprov-timeprovopen)
 
-Una vez cargado el archivo DLL del proveedor, el administrador de proveedores de hora llama a [**TimeProvOpen**](/windows/desktop/api/Timeprov/nf-timeprov-timeprovopen), pasando el nombre del proveedor y punteros a las siguientes funciones:
+Después de cargar el archivo DLL del proveedor, el administrador del proveedor de hora llama a [**TimeProvOpen**](/windows/desktop/api/Timeprov/nf-timeprov-timeprovopen)y pasa el nombre del proveedor y los punteros a las funciones siguientes:
 
 -   [**AlertSamplesAvailFunc**](/windows/desktop/api/Timeprov/nc-timeprov-alertsamplesavailfunc)
 -   [**GetTimeSysInfoFunc**](/windows/desktop/api/Timeprov/nc-timeprov-gettimesysinfofunc)
 -   [**LogTimeProvEventFunc**](/windows/desktop/api/Timeprov/nc-timeprov-logtimeproveventfunc)
 
-Estas funciones son para su uso por parte del proveedor de hora. El proveedor de hora usa [**TimeProvOpen**](/windows/desktop/api/Timeprov/nf-timeprov-timeprovopen) para devolver un identificador de proveedor que utiliza el administrador de proveedores de hora al enviar comandos al proveedor de hora. El proveedor de hora define el valor del identificador y se usa principalmente para distinguir entre los distintos proveedores implementados en el mismo archivo DLL. El proveedor de hora puede registrar eventos importantes mediante [**LogTimeProvEventFunc**](/windows/desktop/api/Timeprov/nc-timeprov-logtimeproveventfunc).
+Estas funciones son para que las use el proveedor de hora. El proveedor de hora [**usa TimeProvOpen para**](/windows/desktop/api/Timeprov/nf-timeprov-timeprovopen) devolver un identificador de proveedor que el administrador del proveedor de hora usa al enviar comandos al proveedor de hora. El proveedor de hora define el valor del identificador y se usa principalmente para distinguir entre distintos proveedores implementados en el mismo archivo DLL. El proveedor de hora puede registrar eventos significativos [**mediante LogTimeProvEventFunc**](/windows/desktop/api/Timeprov/nc-timeprov-logtimeproveventfunc).
 
-El administrador de proveedores de hora usa [**TimeProvCommand**](/windows/desktop/api/Timeprov/nf-timeprov-timeprovcommand) para enviar comandos al proveedor de hora. Cuando el proveedor de hora debe notificar a la hora en que el administrador de proveedores tiene ejemplos de tiempo disponibles, llama a [**AlertSamplesAvailFunc**](/windows/desktop/api/Timeprov/nc-timeprov-alertsamplesavailfunc). A continuación, el administrador de proveedores de hora llama a **TimeProvCommand** con el \_ comando TPC GetSamples para recuperar los ejemplos de tiempo. El administrador de proveedores de tiempo puede tardar hasta 16 segundos en solicitar el ejemplo. Por lo tanto, la aplicación no debe esperar a la solicitud.
+El administrador del proveedor de hora [**usa TimeProvCommand para**](/windows/desktop/api/Timeprov/nf-timeprov-timeprovcommand) enviar comandos al proveedor de hora. Cuando el proveedor de hora necesita notificar al administrador del proveedor de hora que tiene ejemplos de tiempo disponibles, llama a [**AlertSamplesAvailFunc**](/windows/desktop/api/Timeprov/nc-timeprov-alertsamplesavailfunc). A continuación, el administrador del proveedor de hora llama a **TimeProvCommand** con el comando GetSamples de TPC \_ para recuperar los ejemplos de tiempo. El administrador del proveedor de tiempo puede tardar hasta 16 segundos en solicitar el ejemplo. Por lo tanto, la aplicación no debe esperar a la solicitud.
 
-Para garantizar la precisión, el proveedor de hora debe recuperar toda la información relacionada con el tiempo mediante [**GetTimeSysInfoFunc**](/windows/desktop/api/Timeprov/nc-timeprov-gettimesysinfofunc).
+Para garantizar la precisión, el proveedor de hora debe recuperar toda la información relacionada con el tiempo [**mediante GetTimeSysInfoFunc**](/windows/desktop/api/Timeprov/nc-timeprov-gettimesysinfofunc).
 
-Cuando es el momento de apagar el proveedor de hora, el administrador de proveedores de hora llama a [**TimeProvClose**](/windows/desktop/api/Timeprov/nf-timeprov-timeprovclose).
+Cuando es el momento de apagar el proveedor de hora, el administrador del proveedor de hora llama a [**TimeProvClose**](/windows/desktop/api/Timeprov/nf-timeprov-timeprovclose).
 
  
 

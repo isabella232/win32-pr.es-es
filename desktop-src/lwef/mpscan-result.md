@@ -1,10 +1,10 @@
 ---
-title: MPSCAN_RESULT estructura (MpClient. h)
-description: Los resultados de un examen.
+title: MPSCAN_RESULT estructura (MpClient.h)
+description: Resultados de un examen.
 ms.assetid: 9031A371-092A-4175-BE1D-90442A5BED2D
 keywords:
-- MPSCAN_RESULT estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPSCAN_RESULT características de entorno heredado de Windows
+- MPSCAN_RESULT estructura heredada de Windows entorno
+- PMPSCAN_RESULT puntero de estructura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7be60df7993732bafcd7c44ac2fb581c111aed6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a41efd40529976d4b7fe639c4907729ed39ae261f5ac644faf1a36e1a213a97e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104274552"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747156"
 ---
-# <a name="mpscan_result-structure"></a>Estructura del resultado de MPSCAN \_
+# <a name="mpscan_result-structure"></a>Estructura DE RESULTADOS de MPSCAN \_
 
-Los resultados de un examen.
+Resultados de un examen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,11 +51,11 @@ typedef struct tagMPSCAN_RESULT {
 **ScanType**
 </dt> <dd>
 
-Tipo: **[ **MPSCAN \_ Type**](mpscan-type.md)**
+Tipo: **[ **MPSCAN \_ TYPE**](mpscan-type.md)**
 
 </dd> <dd>
 
-Tipo de examen. Consulte [**\_ tipo de MPSCAN**](mpscan-type.md).
+Tipo de examen. Vea [**MPSCAN \_ TYPE**](mpscan-type.md).
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Tipo: **[ **MPSOURCE**](mpsource.md)**
 
 </dd> <dd>
 
-Origen de la exploración, como usuario o sistema iniciado. Vea [**MPSOURCE**](mpsource.md).
+Origen del examen, como el usuario o el sistema iniciado. Vea [**MPSOURCE**](mpsource.md).
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Identificador de examen.
 **StartTime**
 </dt> <dd>
 
-Tipo: **ULARGE \_ Integer**
+Tipo: **ENTERO \_ ULARGE**
 
 </dd> <dd>
 
@@ -95,7 +95,7 @@ Hora de inicio del examen.
 **EndTime**
 </dt> <dd>
 
-Tipo: **ULARGE \_ Integer**
+Tipo: **ENTERO \_ ULARGE**
 
 </dd> <dd>
 
@@ -106,22 +106,22 @@ Hora de finalización del examen.
 **ThreatStats**
 </dt> <dd>
 
-Tipo: **[ **\_ estadísticas de MPTHREAT**](mpthreat-stats.md)**
+Tipo: **[ **MPTHREAT \_ STATS**](mpthreat-stats.md)**
 
 </dd> <dd>
 
-Estadísticas relacionadas con amenazas. Consulte [**\_ estadísticas de MPTHREAT**](mpthreat-stats.md).
+Estadísticas relacionadas con amenazas. Consulte [**MPTHREAT \_ STATS**](mpthreat-stats.md).
 
 </dd> <dt>
 
 **ResourceStats**
 </dt> <dd>
 
-Tipo: **[ **\_ estadísticas de MPRESOURCE**](mpresource-stats.md)**
+Tipo: **[ **MPRESOURCE \_ STATS**](mpresource-stats.md)**
 
 </dd> <dd>
 
-Estadísticas relacionadas con recursos. Consulte [**\_ estadísticas de MPRESOURCE**](mpresource-stats.md).
+Estadísticas relacionadas con recursos. Consulte [**MPRESOURCE \_ STATS**](mpresource-stats.md).
 
 </dd> <dt>
 
@@ -132,7 +132,7 @@ Tipo: **ULONGLONG**
 
 </dd> <dd>
 
-Versión de la firma utilizada para el examen.
+Versión de la firma usada para el examen.
 
 </dd> </dl>
 
@@ -140,28 +140,28 @@ Versión de la firma utilizada para el examen.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**estadísticas de MPRESOURCE \_**](mpresource-stats.md)
+[**MPRESOURCE \_ STATS**](mpresource-stats.md)
 </dt> <dt>
 
-[**\_tipo MPSCAN**](mpscan-type.md)
+[**TIPO \_ MPSCAN**](mpscan-type.md)
 </dt> <dt>
 
 [**MPSOURCE**](mpsource.md)
 </dt> <dt>
 
-[**estadísticas de MPTHREAT \_**](mpthreat-stats.md)
+[**ESTADÍSTICAS DE MPTHREAT \_**](mpthreat-stats.md)
 </dt> </dl>
 
  

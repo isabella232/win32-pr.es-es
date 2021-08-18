@@ -1,5 +1,5 @@
 ---
-description: Define las formas de asignación a un identificador de clase.
+description: Define formas de asignar a un identificador de clase.
 ms.assetid: 1af170e3-1edd-411f-acba-d4b244107996
 title: Enumeración TYSPEC
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - IDLDef
 api_location:
 - Wtypes.idl
-ms.openlocfilehash: b4c8cf38a8f99458e76cabc726aa39ad01a71ebc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 15e7ecdc06495c0fa68b2949ae159bbc76b8cababd2b8703d3ebbdebb874399b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075759"
 ---
 # <a name="tyspec-enumeration"></a>Enumeración TYSPEC
 
-Define las formas de asignación a un identificador de clase.
+Define formas de asignar a un identificador de clase.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -45,10 +45,10 @@ typedef enum tagTYSPEC {
 
 <dl> <dt>
 
-<span id="TYSPEC_CLSID"></span><span id="tyspec_clsid"></span>**TYSPEC \_ CLSID**
+<span id="TYSPEC_CLSID"></span><span id="tyspec_clsid"></span>**CLSID de TYSPEC \_**
 </dt> <dd>
 
-UN CLSID.
+A CLSID.
 
 </dd> <dt>
 
@@ -59,44 +59,44 @@ Extensión de nombre de archivo. Este valor no se admite actualmente.
 
 </dd> <dt>
 
-<span id="TYSPEC_MIMETYPE"></span><span id="tyspec_mimetype"></span>**TYSPEC \_ Mimetype**
+<span id="TYSPEC_MIMETYPE"></span><span id="tyspec_mimetype"></span>**TYSPEC \_ MIMETYPE**
 </dt> <dd>
 
 Tipo MIME. Este valor no se admite actualmente.
 
 </dd> <dt>
 
-<span id="TYSPEC_FILENAME"></span><span id="tyspec_filename"></span>**\_nombre de archivo TYSPEC**
+<span id="TYSPEC_FILENAME"></span><span id="tyspec_filename"></span>**NOMBRE DE ARCHIVO DE TYSPEC \_**
 </dt> <dd>
 
 Un nombre de archivo. Este valor no se admite actualmente.
 
 </dd> <dt>
 
-<span id="TYSPEC_PROGID"></span><span id="tyspec_progid"></span>**TYSPEC \_ ProgID**
+<span id="TYSPEC_PROGID"></span><span id="tyspec_progid"></span>**PROGID de TYSPEC \_**
 </dt> <dd>
 
-UN PROGID. Este valor no se admite actualmente.
+A PROGID. Este valor no se admite actualmente.
 
 </dd> <dt>
 
 <span id="TYSPEC_PACKAGENAME"></span><span id="tyspec_packagename"></span>**TYSPEC \_ PACKAGENAME**
 </dt> <dd>
 
-Un nombre de paquete. Este valor no se admite actualmente.
+Nombre del paquete. Este valor no se admite actualmente.
 
 </dd> <dt>
 
-<span id="TYSPEC_OBJECTID"></span><span id="tyspec_objectid"></span>**TYSPEC \_ objectId**
+<span id="TYSPEC_OBJECTID"></span><span id="tyspec_objectid"></span>**OBJECTID de TYSPEC \_**
 </dt> <dd>
 
-IDENTIFICADOR de objeto. Este valor no se admite actualmente.
+Un identificador de objeto. Este valor no se admite actualmente.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La Unión **uCLSSPEC** se define de la siguiente manera:
+La **unión uCLSSPEC** se define de la siguiente manera:
 
 ``` syntax
 typedef union switch(DWORD tyspec) {
@@ -129,7 +129,7 @@ typedef union switch(DWORD tyspec) {
 
 | Requisito | Value |
 |----------------|---------------------------------------------------------------------------------------|
-| IDL<br/> | <dl> <dt>Wtypes. idl</dt> </dl> |
+| Idl<br/> | <dl> <dt>Wtypes.idl</dt> </dl> |
 
 
 
@@ -137,7 +137,7 @@ typedef union switch(DWORD tyspec) {
 
 <dl> <dt>
 
-[**Coinstalación**](/windows/win32/api/objbase/nf-objbase-coinstall)
+[**CoInstall**](/windows/win32/api/objbase/nf-objbase-coinstall)
 </dt> </dl>
 
  

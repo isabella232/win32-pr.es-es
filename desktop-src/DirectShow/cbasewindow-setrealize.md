@@ -1,7 +1,7 @@
 ---
-description: El método SetRealize especifica si la ventana observa las paletas.
+description: El método SetRealize especifica si la ventana realiza paletas.
 ms.assetid: ab4a6069-c11f-4126-93bf-6de5277970a1
-title: Método CBaseWindow. SetRealize (Winutil. h)
+title: Método CBaseWindow.SetRealize (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 587e54cdbbbf57ddb4cf52e2d5dfb916acaee22d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 825a020b73bc74b38a32daa6f6870b76a009f5b8090e253370c77dfce7d7dc31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954574"
 ---
-# <a name="cbasewindowsetrealize-method"></a>CBaseWindow. SetRealize, método
+# <a name="cbasewindowsetrealize-method"></a>Método CBaseWindow.SetRealize
 
-El `SetRealize` método especifica si la ventana observa las paletas.
+El `SetRealize` método especifica si la ventana realiza paletas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ void SetRealize(
 *bRealize* 
 </dt> <dd>
 
-Valor booleano que especifica si se deben obtener las paletas. Si **es true**, el método [**CBaseWindow:: SetPalette**](cbasewindow-setpalette.md) obtiene las paletas.
+Valor booleano que especifica si se deben realizar paletas. Si **es TRUE,** [**el método CBaseWindow::SetPalette**](cbasewindow-setpalette.md) realiza paletas.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Valor booleano que especifica si se deben obtener las paletas. Si **es true**, e
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-De forma predeterminada, el método **SetPalette** obtiene la paleta especificada. Llame a este método para cambiar el comportamiento predeterminado, de modo que las paletas estén seleccionadas pero no se hayan realizado. Este método establece la variable miembro [**CBaseWindow:: m \_ bNoRealize**](cbasewindow-m-bnorealize.md) .
+De forma predeterminada, **el método SetPalette** realiza la paleta especificada. Llame a este método para cambiar el comportamiento predeterminado, de modo que las paletas se seleccionan pero no se realizan. Este método establece la [**variable miembro CBaseWindow::m \_ bNoRealize.**](cbasewindow-m-bnorealize.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ De forma predeterminada, el método **SetPalette** obtiene la paleta especificad
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ De forma predeterminada, el método **SetPalette** obtiene la paleta especificad
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

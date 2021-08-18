@@ -15,13 +15,13 @@ ms.locfileid: "118928104"
 ---
 # <a name="midl-array-attributes-used-in-rpc"></a>Atributos de matriz MIDL usados en RPC
 
-En esta sección se tratan los atributos de la matriz MIDL en los temas siguientes:
+En esta sección se de tratan los atributos de la matriz MIDL en los temas siguientes:
 
 -   [El \[ tamaño \_ es \] Attribute](the-size-is-attribute.md)
 -   [La \[ longitud \_ es \] Attribute](the-length-is-attribute.md)
 -   [El \[ primero es y el último es \_ \] \[ \_ \] Atributos.](the-first-is-and-last-is-attributes.md)
 -   [El \[ valor máximo es \_ \] Attribute](the-max-is-attribute.md)
--   [Combinar atributos de matriz](combining-array-attributes.md)
+-   [Combinación de atributos de matriz](combining-array-attributes.md)
 -   [Atributo \[ de cadena en \] matrices](the-string-attribute-in-arrays.md)
 
  

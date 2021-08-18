@@ -22,7 +22,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118647550"
 ---
-# <a name="cim_servicecomponent-class"></a>Cim \_ ServiceComponent (clase)
+# <a name="cim_servicecomponent-class"></a>Clase \_ ServiceComponent de CIM
 
 Representa una asociación en la que un servicio es un componente de un servicio primario que, juntos, forman un servicio de nivel superior.
 
@@ -39,13 +39,13 @@ class CIM_ServiceComponent : CIM_Component
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ ServiceComponent de CIM** tiene estos tipos de miembros:
+La **clase \_ Cim ServiceComponent** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ ServiceComponent de CIM** tiene estas propiedades.
+La **clase \_ Cim ServiceComponent** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -85,7 +85,7 @@ Servicio de componentes.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -95,7 +95,7 @@ Servicio de componentes.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

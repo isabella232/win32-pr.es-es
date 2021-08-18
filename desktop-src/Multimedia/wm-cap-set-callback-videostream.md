@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_SET_CALLBACK_VIDEOSTREAM (VFW. h)
-description: El \_ \_ \_ \_ mensaje de Videostream de devolución de llamada de devoluciones de Cap de WM establece una función de devolución de llamada en la aplicación.
+title: WM_CAP_SET_CALLBACK_VIDEOSTREAM mensaje (Vfw.h)
+description: El mensaje \_ WM CAP \_ SET \_ CALLBACK \_ VIDEOSTREAM establece una función de devolución de llamada en la aplicación.
 ms.assetid: 590089b8-7a8d-476b-9b81-f96bf73b0369
 keywords:
-- Mensaje de WM_CAP_SET_CALLBACK_VIDEOSTREAM de Windows multimedia
+- WM_CAP_SET_CALLBACK_VIDEOSTREAM mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cde1d2b44ba3786f2d17934e6e92e0894d8d3bba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f2cdb4d7d18997fe437609b43a266242f04bd0bc2bb25429191d944240706244
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118940723"
 ---
-# <a name="wm_cap_set_callback_videostream-message"></a>\_Mensaje de \_ \_ Videostream de devolución de llamada de Cap de WM \_
+# <a name="wm_cap_set_callback_videostream-message"></a>Mensaje \_ \_ VIDEOSTREAM DE \_ DEVOLUCIÓN DE LLAMADA DE \_ WM CAP SET
 
-El mensaje de **\_ \_ \_ \_ Videostream de devolución de llamada de devoluciones de Cap de WM** establece una función de devolución de llamada en la aplicación. AVICap llama a este procedimiento durante la captura de streaming cuando se rellena un búfer de vídeo. Puede enviar este mensaje explícitamente o mediante la macro [**capSetCallbackOnVideoStream**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonvideostream) .
+El **mensaje WM CAP SET \_ \_ \_ CALLBACK \_ VIDEOSTREAM** establece una función de devolución de llamada en la aplicación. AVICap llama a este procedimiento durante la captura de streaming cuando se rellena un búfer de vídeo. Puede enviar este mensaje explícitamente o mediante la macro [**capSetCallbackOnVideoStream.**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonvideostream)
 
 
 ```C++
@@ -41,19 +41,19 @@ lParam = (LPARAM) (LPVOID) (fpProc);
 <span id="fpProc"></span><span id="fpproc"></span><span id="FPPROC"></span>*fpProc*
 </dt> <dd>
 
-Puntero a la función de devolución de llamada de flujo de vídeo, de tipo [**capVideoStreamCallback**](/windows/desktop/api/Vfw/nc-vfw-capvideocallback). Especifique **null** para este parámetro para deshabilitar una función de devolución de llamada de flujo de vídeo instalada previamente.
+Puntero a la función de devolución de llamada video-stream, de tipo [**capVideoStreamCallback**](/windows/desktop/api/Vfw/nc-vfw-capvideocallback). Especifique **NULL para** este parámetro para deshabilitar una función de devolución de llamada de secuencia de vídeo instalada previamente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** si la captura de streaming o una sesión de captura de un solo fotograma está en curso.
+Devuelve **TRUE si** se realiza **correctamente o FALSE si** la captura de streaming o una sesión de captura de un solo fotograma está en curso.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La ventana captura llama a la función de devolución de llamada antes de escribir el fotograma capturado en el disco. Esto permite que las aplicaciones modifiquen el marco si se desea.
+La ventana de captura llama a la función de devolución de llamada antes de escribir el fotograma capturado en el disco. Esto permite a las aplicaciones modificar el marco si lo desea.
 
-Si se usa una función de devolución de llamada de secuencia de vídeo para la captura de streaming, el procedimiento debe instalarse antes de iniciar la sesión de captura y debe permanecer habilitado mientras dure la sesión. Se puede deshabilitar después de que finalice la captura de streaming.
+Si se usa una función de devolución de llamada de secuencia de vídeo para la captura de streaming, el procedimiento debe instalarse antes de iniciar la sesión de captura y debe permanecer habilitado mientras dure la sesión. Se puede deshabilitar una vez que finaliza la captura de streaming.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ Si se usa una función de devolución de llamada de secuencia de vídeo para la 
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

@@ -1,27 +1,27 @@
 ---
-description: Puede utilizar las funciones de línea y curva para dibujar un gráfico circular.
+description: Puede usar las funciones de línea y curva para dibujar un gráfico circular.
 ms.assetid: 788d3bc2-1010-436c-a95f-6fe55daac88e
-title: Dibujo de un gráfico circular
+title: Dibujar un gráfico circular
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02d14928c3f90c3222c2a01d6a063d46f109ad7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a9bfc5d60ca425deb7d099558366f627d1f94dfbf4889090b5d494f1a5770d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038083"
 ---
-# <a name="drawing-a-pie-chart"></a>Dibujo de un gráfico circular
+# <a name="drawing-a-pie-chart"></a>Dibujar un gráfico circular
 
-Puede utilizar las funciones de línea y curva para dibujar un gráfico circular. La función principal que se usa para dibujar gráficos circulares es la función [**AngleArc**](/windows/desktop/api/Wingdi/nf-wingdi-anglearc) , que requiere que se proporcionen las coordenadas del centro del gráfico circular, el radio del círculo, un ángulo inicial y un ángulo de barrido. En la captura de pantalla siguiente se muestra un cuadro de diálogo que el usuario puede usar para especificar estos valores.
+Puede usar las funciones de línea y curva para dibujar un gráfico circular. La función principal que se usa para dibujar gráficos circulares es la función [**AngleMonte,**](/windows/desktop/api/Wingdi/nf-wingdi-anglearc) que requiere que proporcione las coordenadas del centro del gráfico circular, el radio del gráfico circular, un ángulo inicial y un ángulo de barrido. En la captura de pantalla siguiente se muestra un cuadro de diálogo que el usuario puede usar para escribir estos valores.
 
-![captura de pantalla que muestra un cuadro de diálogo para escribir valores para el gráfico circular](images/pie.png)
+![captura de pantalla que muestra un cuadro de diálogo para especificar valores para el gráfico circular](images/pie.png)
 
-Los valores mostrados anteriormente producen el siguiente gráfico circular.
+Los valores mostrados anteriormente generan el siguiente gráfico circular.
 
 ![captura de pantalla del gráfico circular resultante](images/sampleapp.png)
 
-La plantilla de cuadro de diálogo que se encuentra en el script de recursos de la aplicación (. RC) especifica características del cuadro de diálogo anterior (su alto, los controles que contiene y su estilo), como se indica a continuación.
+Plantilla de cuadro de diálogo que se encuentra en el script de recursos de la aplicación (. El archivo RC) especifica las características del cuadro de diálogo anterior (su alto, los controles que contiene y su estilo), como se indica a continuación.
 
 
 ```C++
@@ -48,13 +48,13 @@ END
 
 
 
-El procedimiento de cuadro de diálogo, que se encuentra en el archivo de código fuente de la aplicación, recupera datos (coordenadas centrales, radio de arco y ángulos de inicio y barrido) siguiendo estos pasos:
+El procedimiento del cuadro de diálogo, que se encuentra en el archivo de origen de la aplicación, recupera los datos (coordenadas centrales, radio de arco y ángulos de inicio y barrido) siguiendo estos pasos:
 
 1.  La función ClearBits definida por la aplicación inicializa la matriz que recibe la entrada del usuario en cero.
 2.  La función GetStrLngth definida por la aplicación recupera la longitud de la cadena especificada por el usuario.
 3.  La función RetrieveInput definida por la aplicación recupera el valor especificado por el usuario.
 
-En el ejemplo de código siguiente se muestra el procedimiento de cuadro de diálogo.
+En el código de ejemplo siguiente se muestra el procedimiento del cuadro de diálogo.
 
 
 ```C++
@@ -180,7 +180,7 @@ DWORD RetrieveInput(LPTSTR cArray, int iLength)
 
 
 
-Para dibujar cada sección del gráfico circular, pase los valores especificados por el usuario a la función [**AngleArc**](/windows/desktop/api/Wingdi/nf-wingdi-anglearc) . Para rellenar el gráfico circular con el pincel actual, inserte la llamada a **AngleArc** en un corchete de ruta de acceso. En el ejemplo de código siguiente se muestra el corchete de ruta de acceso definido y la llamada a **AngleArc**.
+Para dibujar cada sección del gráfico circular, pase los valores especificados por el usuario a la [**función Angle Angular.**](/windows/desktop/api/Wingdi/nf-wingdi-anglearc) Para rellenar el gráfico circular con el pincel actual, inserte la llamada a **AngleMonte** entre corchetes de ruta de acceso. En el ejemplo de código siguiente se muestra el corchete de ruta de acceso definido y la llamada **a AngleFin**.
 
 
 ```C++

@@ -1,31 +1,31 @@
 ---
-description: Obtenga información sobre el elemento PageOutputColor configurable por el usuario. Este tema no está actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
+description: Obtenga información sobre el elemento configurable por el usuario PageOutputColor. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
 ms.assetid: 1afcf2e6-5d6d-4b87-a005-15d42a610f69
 title: PageOutputColor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79fc71f58bde44224642d3a5f6979e3aef929976
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 34b9b60c6ec144c6f24c9bb3ba5848f27bfef855c6af0a0c838cd232a1167883
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113548993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118732080"
 ---
 # <a name="pageoutputcolor"></a>PageOutputColor
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Describe las características de la configuración de color para la salida.
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
--   [lenguaje de marcado extensible (XML) Content](#extensible-markup-language-xml-content)
+-   [contenido lenguaje de marcado extensible (XML)](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Característica<br/> |
 | Prefijo de ámbito <br/> | Página<br/>    |
@@ -67,7 +67,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                                   | Tipo de datos          | Unidad                      | Valores admitidos                                                                                                                                                                      | Resumen                                                                                                                           |
 |----------------------------------------|--------------------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>              | string<br/>  | caracteres<br/>     | Nombre completo válido tal y como lo definen los [espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                                                                                |
+| \_OptionName\_<br/>              | string<br/>  | caracteres<br/>     | Nombre completo válido tal y como se define en [Espacios de nombres en XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                                                                                |
 | \_IdentityOptionValue\_<br/>     | string<br/>  | N/D<br/>            | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/>                                                      |
 | \_DeviceBitsPerPixelValue\_<br/> | integer<br/> | bits por píxel<br/> | Mayor que 0, menor que el valor máximo de compatibilidad del dispositivo.<br/>                                                                                                                    | Valor numérico que indica el número de bits por píxel de datos de color admitidos por la impresora.<br/>                          |
 | \_DriverBitsPerPixelValue\_<br/> | integer<br/> | bits por píxel<br/> | Mayor que 0, menor que el valor máximo de compatibilidad del dispositivo.<br/>                                                                                                                    | Valor numérico que indica el número de bits por píxel que el controlador principal debe usar para su búfer de representación de mapa de bits.<br/> |
@@ -76,9 +76,9 @@ En la tabla siguiente se describen las características de las variables definid
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
+## <a name="extensible-markup-language-xml-content"></a>contenido lenguaje de marcado extensible (XML)
 
-Las palabras clave de esquema de impresión públicas se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
+Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:PageOutputColor">
@@ -119,7 +119,7 @@ Las palabras clave de esquema de impresión públicas se definen en el espacio d
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

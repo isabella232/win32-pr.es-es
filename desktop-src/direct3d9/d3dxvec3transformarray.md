@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 440869f42769d5c20e26083acf3fad1203e20a22
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3cd17da7f3eb8e9c21ab2890ab112194c7f393b89c6761f2b14741e557318efe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122542"
 ---
 # <a name="d3dxvec3transformarray-function-d3dx9mathh"></a>Función D3DXVec3TransformArray (D3dx9math.h)
 
@@ -59,7 +59,7 @@ Puntero a la [**matriz D3DXVECTOR4**](d3dxvector4.md) que es el resultado de la 
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Paso entre vectores en el flujo de datos de salida.
+Pasos entre vectores en el flujo de datos de salida.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Puntero a la matriz [**D3DXVECTOR3 de**](d3dxvector3.md) origen.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Paso entre vectores en el flujo de datos de entrada.
+Pasos entre vectores en el flujo de datos de entrada.
 
 </dd> <dt>
 
@@ -107,9 +107,9 @@ Puntero a una [**matriz transformada D3DXVECTOR4.**](d3dxvector4.md)
 
 ## <a name="remarks"></a>Comentarios
 
-Esta función transforma la matriz *pV* (x, y, z, 1) mediante la matriz *pM*.
+Esta función transforma la matriz *pV* (x, y, z, 1) por el *pM de matriz.*
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec3TransformArray** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXVec3TransformArray** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -122,7 +122,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -13,7 +13,7 @@ ms.locfileid: "118723870"
 ---
 # <a name="systemphotoexposuretime"></a>System.Photo.ExposureTime
 
-Tiempo de exposición de la foto, en segundos, según se lee en la información del archivo de imagen intercambiable (EXIF). Esta propiedad se calcula a partir [de System.Photo.ExposureTimeNumerator](./props-system-photo-exposuretimenumerator.md) y [System.Photo.ExposureTimeDenominator.](./props-system-photo-exposuretimedenominator.md)
+Tiempo de exposición de la foto, en segundos, según se lee en la información del archivo de imagen intercambiable (EXIF). Esta propiedad se calcula a [partir de System.Photo.ExposureTimeNumerator](./props-system-photo-exposuretimenumerator.md) y [System.Photo.ExposureTimeDenominator.](./props-system-photo-exposuretimedenominator.md)
 
 A continuación se muestra una lista de posibles valores tomados de la especificación EXIF 2.2.
 
@@ -51,7 +51,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey.h.
 
 <dl> <dt>
 
-[Exchangeable Image File Format para cámaras de imágenes digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format para cámaras Digital Still: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
 [propertyDescription](./propdesc-schema-propertydescription.md)

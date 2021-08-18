@@ -1,19 +1,19 @@
 ---
-description: 'Más información sobre: funciones del proveedor de SSL de CNG'
+description: 'Más información sobre: Funciones del proveedor SSL de CNG'
 ms.assetid: dd1313c7-e0b1-41e6-b82e-a66fc26b4ac0
-title: Funciones de proveedor de SSL de CNG
+title: Funciones del proveedor SSL de CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c433e99131b63e995453d506002383e883bf99b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9e5d80a17c74febfb337dca3a0c01529dd9a81b86d25afca606620e812c440ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118908084"
 ---
-# <a name="cng-ssl-provider-functions"></a>Funciones de proveedor de SSL de CNG
+# <a name="cng-ssl-provider-functions"></a>Funciones del proveedor SSL de CNG
 
-CNG proporciona las siguientes funciones que usa o con un proveedor de SSL de CNG:
+CNG proporciona las siguientes funciones que usa o con un proveedor SSL de CNG:
 
 -   [**SslChangeNotify**](sslchangenotify.md)
 -   [**SslComputeClientAuthHash**](sslcomputeclientauthhash.md)

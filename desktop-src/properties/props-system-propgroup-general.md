@@ -1,5 +1,5 @@
 ---
-description: Obtenga información sobre la propiedad System.PropGroup.General. No use esta propiedad para obtener o establecer valores. Solo está pensado como un marcador.
+description: Obtenga información sobre la propiedad System.PropGroup.General. No use esta propiedad para obtener o establecer valores. Solo está pensado como marcador.
 ms.assetid: b48319a6-3d8d-4b35-9d50-b892fef1c1a1
 title: System.PropGroup.General
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118723052"
 ---
 # <a name="systempropgroupgeneral"></a>System.PropGroup.General
 
-Separador de grupo de propiedades que se usa en las listas de propiedades para separar los archivos de audio de otros tipos. No use esta propiedad para obtener o establecer valores. Solo está pensado como un marcador.
+Separador del grupo de propiedades usado en las listas de propiedades para separar los archivos de audio de otros tipos. No use esta propiedad para obtener o establecer valores. Solo está pensado como marcador.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,7 +30,7 @@ propertyDescription
       type = Null
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 

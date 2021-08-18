@@ -4,12 +4,12 @@ ms.assetid: 43a0c881-75cc-4fbc-a0c3-b3eab9dfe4df
 title: DocumentCoverBackSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5be16ab26a4aa3dd7109fee7d630ed354b9b686d
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: bf2e83451cca940ab251f1ff3ceb25603d21cba8d6ec6dbd617395839917a135
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118732945"
 ---
 # <a name="documentcoverbacksource"></a>DocumentCoverBackSource
 
@@ -24,7 +24,7 @@ Especifica el origen de una hoja de cobertura trasera personalizada.
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                        |
 | Prefijo de ámbito <br/> | Documento<br/>                            |
@@ -67,7 +67,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                      |
+| Propiedad                | xsi:type           | Value                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |
@@ -84,7 +84,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

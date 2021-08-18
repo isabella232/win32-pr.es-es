@@ -4,12 +4,12 @@ description: Ejemplo de inicialización de importación de DRM
 ms.assetid: 46a64305-9aac-47df-992d-6aea8ecb54bf
 keywords:
 - Windows SDK de formato multimedia, importación de DRM
-- Windows SDK de formato multimedia, importación
+- Windows SDK de formato multimedia, importar
 - Windows SDK de formato multimedia, código de ejemplo
 - Windows SDK de formato multimedia, ejemplos de código
-- digital rights management (DRM),import
+- administración de derechos digitales (DRM), importación
 - DRM (administración de derechos digitales),importar
-- administración de derechos digitales (DRM), inicializar la importación
+- administración de derechos digitales (DRM), inicializar importación
 - DRM (administración de derechos digitales), inicializar la importación
 - digital rights management (DRM), código de ejemplo
 - DRM (administración de derechos digitales),código de ejemplo

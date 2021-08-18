@@ -1,26 +1,26 @@
 ---
-description: En esta sección se enumeran las plantillas de archivo. x. El formato de plantilla se describe en plantillas.
+description: En esta sección se enumeran las plantillas de archivo .x. El formato de plantilla se describe en Plantillas.
 ms.assetid: 1403fd1e-9799-4683-87ab-cfad102d1fae
 title: Plantillas
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 228ca6d2d7e59d0f91fb5412161bc3feed888a7a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7876166661c50c1a3bc1e4d3275cd56f3c4e26cfbfad5fd8fce31568ef04931e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103806307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118803052"
 ---
 # <a name="templates"></a>Plantillas
 
-En esta sección se enumeran las plantillas de archivo. x. El formato de plantilla se describe en [plantillas](dx9-graphics-reference-x-file-textencoding-templates.md).
+En esta sección se enumeran las plantillas de archivo .x. El formato de plantilla se describe en [Plantillas](dx9-graphics-reference-x-file-textencoding-templates.md).
 
 -   [**Animación**](animation.md)
 -   [**AnimationKey**](animationkey.md)
 -   [**AnimationOptions**](animationoptions.md)
 -   [**AnimationSet**](animationset.md)
 -   [**AnimTicksPerSecond**](animtickspersecond.md)
--   [**Booleano**](boolean.md)
+-   [**Booleana**](boolean.md)
 -   [**Boolean2d**](boolean2d.md)
 -   [**ColorRGB**](colorrgb.md)
 -   [**ColorRGBA**](colorrgba.md)
@@ -44,14 +44,14 @@ En esta sección se enumeran las plantillas de archivo. x. El formato de plantil
 -   [**Material**](material.md)
 -   [**MaterialWrap**](materialwrap.md)
 -   [**Matrix4x4**](matrix4x4.md)
--   [**Tamiz**](mesh.md)
+-   [**En malla**](mesh.md)
 -   [**MeshFace**](meshface.md)
 -   [**MeshFaceWraps**](meshfacewraps.md)
 -   [**MeshMaterialList**](meshmateriallist.md)
 -   [**MeshNormals**](meshnormals.md)
 -   [**MeshTextureCoords**](meshtexturecoords.md)
 -   [**MeshVertexColors**](meshvertexcolors.md)
--   [**Distribución**](patch.md)
+-   [**Parche**](patch.md)
 -   [**PatchMesh**](patchmesh.md)
 -   [**PatchMesh9**](patchmesh9.md)
 -   [**PMAttributeRange**](pmattributerange.md)
@@ -65,7 +65,7 @@ En esta sección se enumeran las plantillas de archivo. x. El formato de plantil
 -   [**VertexElement**](vertexelement.md)
 -   [**XSkinMeshHeader**](xskinmeshheader.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

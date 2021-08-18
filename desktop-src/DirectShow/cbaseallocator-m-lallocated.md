@@ -1,7 +1,7 @@
 ---
 description: Número de búferes asignados actualmente.
 ms.assetid: 6a3d0948-7e03-4f41-8014-fa15d4578014
-title: 'Miembro CBaseAllocator:: m_lAllocated (Amfilter. h)'
+title: CBaseAllocator::m_lAllocated miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2bee488588cf3fc58334a55e5f1c39957581099c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 51a42a9207bd2e3567a3fd2fdd0c4f9290b769fcaa9de4c68b2509713d371733
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955364"
 ---
-# <a name="cbaseallocatorm_lallocated-member"></a>Miembro lAllocated CBaseAllocator:: m \_
+# <a name="cbaseallocatorm_lallocated-member"></a>CBaseAllocator::m \_ lAllocated member
 
 Número de búferes asignados actualmente.
 
@@ -42,8 +42,8 @@ long m_lAllocated;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ long m_lAllocated;
 
 <dl> <dt>
 
-[**Clase CBaseAllocator**](cbaseallocator.md)
+[**CBaseAllocator (clase)**](cbaseallocator.md)
 </dt> </dl>
 
  
