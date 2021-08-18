@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: IndexSegment. Equals (método)'
-title: IndexSegment. Equals (método)
+description: Más información sobre el método IndexSegment.Equals
+title: Método IndexSegment.Equals
 TOCTitle: 'Equals method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.IndexSegment.Equals
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.indexsegment.equals(v=EXCHG.10)
@@ -14,14 +14,14 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 4425448b25f8f7ad0186e98ed2a7e181ae831fd4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fce90e1d0a2ac27011250c9b7ebc80980555c82246801464f3bbbd98ad55d14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104560021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112644"
 ---
-# <a name="indexsegmentequals-method"></a>IndexSegment. Equals (método)
+# <a name="indexsegmentequals-method"></a>Método IndexSegment.Equals
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
@@ -39,13 +39,13 @@ Incluir miembros heredados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="dn350913(v=exchg.10).md">Equals (Object)</a></td>
-<td>Devuelve un valor que indica si esta instancia es igual a otra instancia de. (Invalida <a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object. Equals (Object)</a>).</td>
+<td><a href="dn350913(v=exchg.10).md">Equals(Object)</a></td>
+<td>Devuelve un valor que indica si esta instancia es igual a otra instancia. (Invalida <a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="dn350936(v=exchg.10).md">Es igual a (IndexSegment)</a></td>
-<td>Devuelve un valor que indica si esta instancia es igual a otra instancia de.</td>
+<td><a href="dn350936(v=exchg.10).md">Equals(IndexSegment)</a></td>
+<td>Devuelve un valor que indica si esta instancia es igual a otra instancia.</td>
 </tr>
 </tbody>
 </table>
@@ -53,12 +53,12 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase IndexSegment](./indexsegment-class.md)
+[IndexSegment (clase)](./indexsegment-class.md)
 
-[Miembros de IndexSegment](./indexsegment-members.md)
+[Miembros indexSegment](./indexsegment-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

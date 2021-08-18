@@ -1,32 +1,32 @@
 ---
 description: Un metarchivo mejorado es una matriz de registros.
 ms.assetid: af3261c7-2113-4777-97c0-504f23022550
-title: Registros de metarchivos mejorados
+title: Registros de metarchivo mejorados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2097fd59497838c2a77a0209f6ae715dff2e1cf9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 506ca77dda1bd90fc04b692dbbd98bc06f4da44c5fc6f8edb0fd17cbd3e94c96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038023"
 ---
-# <a name="enhanced-metafile-records"></a>Registros de metarchivos mejorados
+# <a name="enhanced-metafile-records"></a>Registros de metarchivo mejorados
 
-Un metarchivo mejorado es una matriz de registros. Un registro de metarchivo es una estructura [**ENHMETARECORD**](/windows/win32/api/wingdi/ns-wingdi-enhmetarecord) de longitud variable. Al principio de cada registro de metarchivo mejorado se encuentra una estructura [**EMR**](/windows/win32/api/wingdi/ns-wingdi-emr) , que contiene dos miembros. El primer miembro, iType, identifica el tipo de registro que es, la función GDI cuyos parámetros se incluyen en el registro. Dado que las estructuras son de longitud variable, el otro miembro, nSize, contiene el tamaño del registro. Inmediatamente después del miembro nSize se encuentran los parámetros restantes de la función GDI, si existen. El resto de la estructura contiene datos adicionales que dependen del tipo de registro.
+Un metarchivo mejorado es una matriz de registros. Un registro de metarchivo es una estructura [**ENHMETARECORD de**](/windows/win32/api/wingdi/ns-wingdi-enhmetarecord) longitud variable. Al principio de cada registro de metarchivo mejorado hay una [**estructura EMR,**](/windows/win32/api/wingdi/ns-wingdi-emr) que contiene dos miembros. El primer miembro, iType, identifica el tipo de registro, es decir, la función GDI cuyos parámetros están contenidos en el registro. Dado que las estructuras tienen una longitud variable, el otro miembro, nSize, contiene el tamaño del registro. Inmediatamente después del miembro nSize se encuentran los parámetros restantes, si los hay, de la función GDI. El resto de la estructura contiene datos adicionales que dependen del tipo de registro.
 
-El primer registro de un metarchivo mejorado siempre es la estructura [**ENHMETAHEADER**](/windows/win32/api/wingdi/ns-wingdi-enhmetaheader) , que es el encabezado Enhanced-Metafile. El encabezado especifica la siguiente información:
+El primer registro de un metarchivo mejorado es siempre la estructura [**ENHMETAHEADER,**](/windows/win32/api/wingdi/ns-wingdi-enhmetaheader) que es el encabezado enhanced-metafile. El encabezado especifica la siguiente información:
 
 -   Tamaño del metarchivo, en bytes
 -   Dimensiones del marco de imagen, en unidades de dispositivo
--   Dimensiones del marco de imagen, en unidades. 01-milímetros
--   Número de registros del metarchivo
+-   Dimensiones del marco de imagen, en unidades de .01 milímetros
+-   Número de registros en el metarchivo
 -   Desplazamiento a una descripción de texto opcional
 -   Tamaño de la paleta opcional
 -   Resolución del dispositivo original, en píxeles
 -   Resolución del dispositivo original, en milímetros
 
-Una descripción de texto opcional puede seguir el registro de encabezado. La descripción del texto describe la imagen y el nombre del autor. La paleta opcional especifica los colores usados para crear el metarchivo mejorado. Los registros restantes identifican las funciones GDI utilizadas para crear la imagen. La siguiente salida hexadecimal corresponde a un registro generado para una llamada a la función [**SetMapMode**](/windows/desktop/api/Wingdi/nf-wingdi-setmapmode) .
+Una descripción de texto opcional puede seguir el registro de encabezado. La descripción del texto describe la imagen y el nombre del autor. La paleta opcional especifica los colores usados para crear el metarchivo mejorado. Los registros restantes identifican las funciones GDI usadas para crear la imagen. La siguiente salida hexadecimal corresponde a un registro generado para una llamada a la [**función SetMapMode.**](/windows/desktop/api/Wingdi/nf-wingdi-setmapmode)
 
 
 ```C++
@@ -35,9 +35,9 @@ Una descripción de texto opcional puede seguir el registro de encabezado. La de
 
 
 
-El valor 0x00000011 especifica el tipo de registro (corresponde a la \_ constante SETMAPMODE de EMR definida en el archivo WinGDI. h). El valor 0x0000000C especifica la longitud del registro, en bytes. El valor 0x00000004 identifica el modo de asignación (corresponde a la \_ constante LOENGLISH de mm definida en la función [**SetMapMode**](/windows/desktop/api/Wingdi/nf-wingdi-setmapmode) ).
+El valor 0x00000011 especifica el tipo de registro (corresponde a la constante SETMAPMODE de EMR definida en el \_ archivo Wingdi.h). El valor 0x0000000C especifica la longitud del registro, en bytes. El valor 0x00000004 identifica el modo de asignación (corresponde a la constante \_ MM LOENGLISH definida en la función [**SetMapMode).**](/windows/desktop/api/Wingdi/nf-wingdi-setmapmode)
 
-Para obtener una lista de tipos de registros adicionales, vea [estructuras de metarchivo](metafile-structures.md).
+Para obtener una lista de tipos de registro adicionales, vea [Estructuras de metarchivo.](metafile-structures.md)
 
  
 

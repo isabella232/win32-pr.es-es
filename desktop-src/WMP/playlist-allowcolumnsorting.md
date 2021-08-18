@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. allowColumnSorting
-description: El atributo allowColumnSorting especifica o recupera un valor que indica si se permite el contenido de la columna de ordenación.
+title: PLAYLIST.allowColumnSorting
+description: El atributo allowColumnSorting especifica o recupera un valor que indica si se permite ordenar el contenido de la columna.
 ms.assetid: b838f346-a0ab-40d3-893e-94c23142839e
 keywords:
-- Windows Media Player de lista de reproducción. allowColumnSorting
+- LISTA DE REPRODUCCIÓN.allowColumnSorting Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef853bc1aabde4c261037cbeb31ce2deba34c631
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fee3fadcd58f74b534c8d4b32ee2db0f87fd160d55abbb2dde243693696bbd2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995735"
 ---
-# <a name="playlistallowcolumnsorting"></a>Lista de reproducción. allowColumnSorting
+# <a name="playlistallowcolumnsorting"></a>PLAYLIST.allowColumnSorting
 
-El atributo **allowColumnSorting** especifica o recupera un valor que indica si se permite el contenido de la columna de ordenación.
+El **atributo allowColumnSorting** especifica o recupera un valor que indica si se permite ordenar el contenido de la columna.
 
 ``` syntax
         elementID.allowColumnSorting
@@ -29,7 +29,7 @@ El atributo **allowColumnSorting** especifica o recupera un valor que indica si 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un booleano de lectura **y escritura.**
 
 
 
@@ -48,7 +48,7 @@ Este atributo es un **valor booleano** de lectura/escritura.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -56,7 +56,7 @@ Este atributo es un **valor booleano** de lectura/escritura.
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

@@ -79,11 +79,11 @@ public static void JetGetObjectInfo(
     
     Rellenado con información sobre los objetos de la base de datos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

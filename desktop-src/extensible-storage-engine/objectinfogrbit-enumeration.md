@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: enumeración ObjectInfoGrbit'
+description: 'Más información sobre: Enumeración ObjectInfoGrbit'
 title: Enumeración ObjectInfoGrbit
 TOCTitle: ObjectInfoGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.ObjectInfoGrbit
@@ -30,21 +30,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4028a2a337b32394029960e45bb0e485c2b6b705
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cfd4bd427321137add1d0669fcaf798a353309a825d1ccf9544f45098d3454f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978645"
 ---
 # <a name="objectinfogrbit-enumeration"></a>Enumeración ObjectInfoGrbit
 
-Opciones de tabla, utilizadas en [JET_OBJECTINFO](./jet-objectinfo-class.md).
+Opciones de tabla, que se [usan JET_OBJECTINFO](./jet-objectinfo-class.md).
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -85,7 +85,7 @@ public enum ObjectInfoGrbit
 <tr class="odd">
 <td></td>
 <td>Actualizable</td>
-<td>Se puede actualizar la tabla.</td>
+<td>La tabla se puede actualizar.</td>
 </tr>
 </tbody>
 </table>
@@ -95,4 +95,4 @@ public enum ObjectInfoGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

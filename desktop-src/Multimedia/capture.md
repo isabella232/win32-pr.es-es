@@ -1,9 +1,9 @@
 ---
-title: comando de captura
-description: El comando Capture copia el contenido del búfer de Marcos y lo almacena en el archivo especificado. Los dispositivos de vídeo digital reconocen este comando.
+title: comando capture
+description: El comando capture copia el contenido del búfer de fotogramas y lo almacena en el archivo especificado. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: cdf177b9-874e-40d8-af3e-59070c55903d
 keywords:
-- comando de captura de Windows multimedia
+- comando capture Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bdf5edce248fc5402245e36e869cddc97ba3430a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 68bc32fd247cbe3519fbffad778b33679e3b71c652b476f557db5a910e87721c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118941523"
 ---
-# <a name="capture-command"></a>comando de captura
+# <a name="capture-command"></a>comando capture
 
-El comando Capture copia el contenido del búfer de Marcos y lo almacena en el archivo especificado. Los dispositivos de vídeo digital reconocen este comando.
+El comando capture copia el contenido del búfer de fotogramas y lo almacena en el archivo especificado. Los dispositivos de vídeo digital reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -55,8 +55,8 @@ Una o varias de las marcas siguientes:
 
 | Value          | Significado                                                                                                                                                                                                                                                   |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| como *nombreruta*  | Especifica la ruta de acceso de destino y el nombre de archivo de la imagen capturada. Esta marca es obligatoria.                                                                                                                                                                |
-| en el *rectángulo* | Especifica la región rectangular dentro del búfer de fotogramas que el dispositivo recorta y guarda en el disco. Si se omite, la región recortada tiene como valor predeterminado el rectángulo especificado o predeterminado en un comando [Put](put.md) "Source" anterior para esta instancia de dispositivo. |
+| como *pathname*  | Especifica la ruta de acceso de destino y el nombre de archivo de la imagen capturada. Esta marca es obligatoria.                                                                                                                                                                |
+| en *rectángulo* | Especifica la región rectangular dentro del búfer de fotogramas que el dispositivo recorta y guarda en el disco. Si se omite, la región recortada tiene como valor predeterminado el rectángulo especificado o predeterminado en un comando [put](put.md) "source" anterior para esta instancia de dispositivo. |
 
 
 
@@ -67,17 +67,17 @@ Una o varias de las marcas siguientes:
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify", "Test" o una combinación de estos. Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify", "test" o una combinación de estos. Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este comando podría producir un error si el dispositivo está reproduciendo el vídeo de movimiento o ejecuta otra operación que consume muchos recursos. Si el búfer de fotogramas se actualiza en tiempo real, la actualización se pausa momentáneamente para que se capture una imagen completa. Si el dispositivo pone en pausa la actualización, puede haber un efecto visual o audible. Si no se han establecido el formato de archivo, el algoritmo de compresión y los niveles de calidad, se usan los valores predeterminados.
+Este comando podría producir un error si el dispositivo está reproduciendo vídeo de movimiento o ejecutando alguna otra operación que consume muchos recursos. Si el búfer de fotogramas se actualiza en tiempo real, la actualización se pausa momentáneamente para que se captura una imagen completa. Si el dispositivo pausa la actualización, puede haber un efecto visual o similar. Si no se han establecido el formato de archivo, el algoritmo de compresión y los niveles de calidad, se usan sus valores predeterminados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -94,13 +94,13 @@ Este comando podría producir un error si el dispositivo está reproduciendo el 
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> <dt>
 
-[pondrán](put.md)
+[Poner](put.md)
 </dt> </dl>
 
  

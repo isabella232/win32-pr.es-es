@@ -28,7 +28,7 @@ Las funciones auxiliares expertos proporcionadas por Monitor de red y las funcio
 | [**FILTEROBJECT**](filterobject.md)                   | Define las características del filtro de visualización para un experto.                                              |
 | [**NMEVENTDATA**](nmeventdata.md)                     | Proporciona información sobre una línea mostrada en el visor experto.                                      |
 | [**NMCOLUMNINFO**](nmcolumninfo.md)                   | Proporciona información que define una columna en el Visor de eventos.                                        |
-| [**NMCOLUMNVARIANT**](nmcolumnvariant.md)             | Proporciona un contenedor para todos los datos posibles insertados en una columna en una línea del Visor de eventos.     |
+| [**NMCOLUMNVARIANT**](nmcolumnvariant.md)             | Proporciona un contenedor para todos los datos posibles insertados en una columna en una línea de la Visor de eventos.     |
 | [**NMCOLUMNTYPE**](nmcolumntype.md)                   | Punto de entrada de la variante que indica qué elemento de la unión se va a usar y cómo dar formato a él. |
 
 

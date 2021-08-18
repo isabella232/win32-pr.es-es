@@ -16,12 +16,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2e8a8c31cee7e45311887c16a1d10545e6a38e41
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 35144317b67a8d24ec07d72633897366e83628d6cc66d9c4661980fc44c373b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070165"
 ---
 # <a name="image_v1_load-class"></a>Image \_ V1 \_ Load (clase)
 
@@ -98,9 +98,9 @@ Tipo de acceso: solo lectura
 Calificadores: WmiDataId(2), Pointer
 </dt> </dl>
 
-Tamaño de la imagen que se va a cargar.
+Tamaño de la imagen que se está cargando.
 
-Al consumir esta propiedad, el tipo de datos de esta propiedad es realmente de tamaño \_ t. El calificador Pointer se usa para determinar si el tamaño \_ t es de 4 bytes o 8 bytes.
+Al consumir esta propiedad, el tipo de datos de esta propiedad tiene realmente el \_ tamaño t. El calificador Pointer se usa para determinar si el tamaño \_ t es de 4 bytes o 8 bytes.
 
 </dd> <dt>
 
@@ -124,14 +124,14 @@ Identifica el proceso en el que se carga la imagen.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

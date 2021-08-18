@@ -1,8 +1,8 @@
 ---
-description: El parámetro strPrivilege del método SWbemPrivilegeSet. AddAsString y el parámetro iPrivilege de SWbemPrivilegeSet. Add requieren cadenas de privilegios de WbemPrivilegeEnum.
+description: El parámetro strPrivilege del método SWbemPrivilegeSet.AddAsString y el parámetro iPrivilege para SWbemPrivilegeSet.Add requieren cadenas de privilegios de WbemPrivilegeEnum.
 ms.assetid: f9400597-81bb-44a8-80dc-aba0160aea26
 ms.tgt_platform: multiple
-title: Constantes de privilegios (Wbemdisp. h)
+title: Constantes de privilegios (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -40,20 +40,20 @@ api_type:
 - HeaderDef
 api_location:
 - Wbemdisp.h
-ms.openlocfilehash: 73fb9167af63f40f3a6e1c00470d871f749d228a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38d104c99885d4328ce8b12413e91607655ab1e260a61b511e3ea4a600b80b4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103818046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131027"
 ---
-# <a name="privilege-constants"></a>Constantes de privilegio
+# <a name="privilege-constants"></a>Constantes de privilegios
 
-El parámetro *strPrivilege* del método [**SWbemPrivilegeSet. AddAsString**](swbemprivilegeset-addasstring.md) y el parámetro *iPrivilege* de [**SWbemPrivilegeSet. Add**](swbemprivilegeset-add.md) requieren cadenas de privilegios de [WbemPrivilegeEnum](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum). Para obtener más información sobre cómo usar las constantes de privilegios, vea [ejecutar operaciones con privilegios](executing-privileged-operations.md).
+El parámetro *strPrivilege* del método [**SWbemPrivilegeSet.AddAsString**](swbemprivilegeset-addasstring.md) y el parámetro *iPrivilege* para [**SWbemPrivilegeSet.Add**](swbemprivilegeset-add.md) requieren cadenas de privilegios [de WbemPrivilegeEnum.](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum) Para obtener más información sobre cómo usar constantes de privilegios, vea [Ejecutar operaciones con privilegios.](executing-privileged-operations.md)
 
-Las siguientes constantes se definen en [**WbemPrivilegeEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum). La lista siguiente incluye las constantes equivalentes para C++ y las cadenas para el scripting. Para formar el nombre corto de scripting, quite "se" y "privileged" del nombre de la constante de C++.
+Las siguientes constantes se definen en [**WbemPrivilegeEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum). En la lista siguiente se incluyen las constantes equivalentes para C++ y cadenas para scripting. Para formar el nombre corto de scripting, quite "Se" y "Privilege" del nombre de constante de C++.
 
-En el ejemplo de código de VBScript siguiente se muestra cómo habilitar el privilegio RemoteShutdown en un script.
+En el siguiente ejemplo de código de VBScript se muestra cómo habilitar el privilegio RemoteShutdown en un script.
 
 
 ```VB
@@ -62,7 +62,7 @@ Set Service = GetObject("winmgmts:{impersonationLevel=impersonate, (RemoteShutdo
 
 
 
-Muchos métodos WMI requieren que se habiliten uno o varios permisos. Si una cuenta no tiene un privilegio, no se puede habilitar para la llamada al método.
+Muchos métodos WMI requieren que se habilite uno o varios permisos. Si no se ha concedido un privilegio a una cuenta, no se puede habilitar para la llamada al método .
 
 <dl> <dt>
 
@@ -74,11 +74,11 @@ Muchos métodos WMI requieren que se habiliten uno o varios permisos. Si una cue
 
 
 
-Constante de C++ **: \_ se \_ crea \_ el nombre del token** cadena: **SeCreateTokenPrivilege**
+Constante de C++: **SE cadena CREATE TOKEN \_ \_ \_ NAME:** **SeCreateTokenPrivilege**
 
 Nombre corto de scripting: **CreateToken**
 
-Se requiere para crear un objeto de token principal.
+Necesario para crear un objeto de token principal.
 
 
 </dt> </dl> </dd> <dt>
@@ -86,12 +86,12 @@ Se requiere para crear un objeto de token principal.
 <span id="wbemPrivilegePrimaryToken"></span><span id="wbemprivilegeprimarytoken"></span><span id="WBEMPRIVILEGEPRIMARYTOKEN"></span>**wbemPrivilegePrimaryToken**
 </dt> <dd> <dl> <dt>
 
-2 (0X2)
+2 (0x2)
 </dt> <dt>
 
 
 
-Constante de C++: **SeAssignPrimaryTokenPrivilege** cadena: **SeAssignPrimaryTokenPrivilege**
+Constante de C++: **SeAssignPrimaryTokenPrivilege** string: **SeAssignPrimaryTokenPrivilege**
 
 Nombre corto de scripting: **AssignPrimaryToken**
 
@@ -103,16 +103,16 @@ Necesario para reemplazar un token de nivel de proceso.
 <span id="wbemPrivilegeLockMemory"></span><span id="wbemprivilegelockmemory"></span><span id="WBEMPRIVILEGELOCKMEMORY"></span>**wbemPrivilegeLockMemory**
 </dt> <dd> <dl> <dt>
 
-3 (0X3)
+3 (0x3)
 </dt> <dt>
 
 
 
-Constante de C++: **se \_ bloqueó \_ \_ el nombre de memoria** cadena: **SeLockMemoryPrivilege**
+Constante de C++: **SE \_ LOCK MEMORY \_ \_ NAME** string: **SeLockMemoryPrivilege**
 
 Nombre corto de scripting: **LockMemory**
 
-Necesario para bloquear páginas en la memoria.
+Necesario para bloquear páginas en memoria.
 
 
 </dt> </dl> </dd> <dt>
@@ -125,7 +125,7 @@ Necesario para bloquear páginas en la memoria.
 
 
 
-Constante de C++ **: \_ se \_ aumenta \_ el nombre de cuota** cadena: **SeIncreaseQuotaPrivilege**
+Constante de C++: **SE cadena INCREASE QUOTA \_ \_ \_ NAME:** **SeIncreaseQuotaPrivilege**
 
 Nombre corto de scripting: **IncreaseQuotaPrivilege**
 
@@ -137,12 +137,12 @@ Necesario para ajustar las cuotas de memoria de un proceso.
 <span id="wbemPrivilegeMachineAccount"></span><span id="wbemprivilegemachineaccount"></span><span id="WBEMPRIVILEGEMACHINEACCOUNT"></span>**wbemPrivilegeMachineAccount**
 </dt> <dd> <dl> <dt>
 
-5 (0X5)
+5 (0x5)
 </dt> <dt>
 
 
 
-Constante de C++: se trata de una cadena de  **nombre de \_ \_ cuenta \_ de macine** : SeMachineAccountPrivilege
+Constante de C++: **SE cadena DE NOMBRE DE CUENTA \_ \_ \_ DE MACINE:** **SeMachineAccountPrivilege**
 
 Nombre corto de scripting: **MachineAccount**
 
@@ -159,11 +159,11 @@ Necesario para agregar estaciones de trabajo a un dominio.
 
 
 
-Constante de C++: se trata de la cadena de **\_ \_ nombre de TCB** : **SeTcbPrivilege**
+Constante de C++: **SE \_ cadena TCB \_ NAME:** **SeTcbPrivilege**
 
-Nombre corto de scripting: **TCB**
+Nombre corto de scripting: **Tcb**
 
-Necesario para actuar como parte del sistema operativo. El titular forma parte de la base del equipo de confianza.
+Necesario para actuar como parte del sistema operativo. El titular forma parte de la base de equipos de confianza.
 
 
 </dt> </dl> </dd> <dt>
@@ -171,14 +171,14 @@ Necesario para actuar como parte del sistema operativo. El titular forma parte d
 <span id="wbemPrivilegeSecurity"></span><span id="wbemprivilegesecurity"></span><span id="WBEMPRIVILEGESECURITY"></span>**wbemPrivilegeSecurity**
 </dt> <dd> <dl> <dt>
 
-7 (0X7)
+7 (0x7)
 </dt> <dt>
 
 
 
-Constante de C++: se trata de una cadena de **\_ \_ nombre de seguridad** : **SeSecurityPrivilege**
+Constante de C++: **SE \_ cadena SECURITY \_ NAME:** **SeSecurityPrivilege**
 
-Nombre corto de scripting: **seguridad**
+Nombre corto de scripting: **Seguridad**
 
 Necesario para administrar la auditoría y el registro de seguridad de NT.
 
@@ -193,11 +193,11 @@ Necesario para administrar la auditoría y el registro de seguridad de NT.
 
 
 
-Constante de C++ **: \_ se \_ toma \_ el nombre de propiedad** cadena: **SeTakeOwnershipPrivilege**
+Constante de C++: **SE \_ TAKE OWNERSHIP \_ \_ NAME** string: **SeTakeOwnershipPrivilege**
 
-Nombre corto de scripting: **TakeOwnerShip**
+Nombre corto de scripting: **TakeOwnership**
 
-Se requiere para asumir la propiedad de los archivos u otros objetos sin tener una [*entrada Access Control*](/windows/desktop/SecGloss/a-gly) (ACE) en la *lista de control de acceso discrecional* (DACL).
+Se requiere para asumir la propiedad de archivos u otros objetos sin tener una Access Control [*Entry*](/windows/desktop/SecGloss/a-gly) (ACE) en la lista *de control* de acceso discrecional (DACL).
 
 
 </dt> </dl> </dd> <dt>
@@ -210,7 +210,7 @@ Se requiere para asumir la propiedad de los archivos u otros objetos sin tener u
 
 
 
-Constante de C++: **se \_ carga el \_ controlador** cadena: **SeLoadDriverPrivilege**
+Constante de C++: **SE \_ load \_ driver** string: **SeLoadDriverPrivilege**
 
 Nombre corto de scripting: **LoadDriver**
 
@@ -227,7 +227,7 @@ Necesario para cargar o descargar un controlador de dispositivo.
 
 
 
-Constante de C++: **se trata \_ del \_ \_ nombre de Perfil de sistema** de la cadena: **SeSystemProfilePrivilege**
+Constante de C++: **SE \_ system profile \_ \_ name** string: **SeSystemProfilePrivilege**
 
 Nombre corto de scripting: **SystemProfile**
 
@@ -244,9 +244,9 @@ Necesario para recopilar información de perfil sobre el rendimiento del sistema
 
 
 
-Constante de C++ **: \_ se** trata de una \_ cadena de nombre SYSTEMTIME: **SeSystemtimePrivilege**
+Constante de C++: **SE \_ cadena SYSTEMTIME** \_ NAME: **SeSystemtimePrivilege**
 
-Nombre corto de scripting: **SYSTEMTIME**
+Nombre corto de scripting: **Systemtime**
 
 Necesario para cambiar la hora del sistema.
 
@@ -261,7 +261,7 @@ Necesario para cambiar la hora del sistema.
 
 
 
-Constante de C++: cadena de **\_ \_ \_ \_ nombre de proceso único de Profs** : **SeProfileSingleProcessPrivilege**
+Constante de C++: **SE DE PROF SINGLE PROCESS \_ \_ \_ \_ NAME** string: **SeProfileSingleProcessPrivilege**
 
 Nombre corto de scripting: **ProfileSingleProcess**
 
@@ -278,7 +278,7 @@ Necesario para recopilar información de perfil para un único proceso.
 
 
 
-Constante de C++: nombre de la **\_ \_ \_ \_ prioridad base de se Inc** . cadena: **SeIncreaseBasePriorityPrivilege**
+Constante de C++: **SE INC BASE PRIORITY \_ \_ \_ \_ NAME** string: **SeIncreaseBasePriorityPrivilege**
 
 Nombre corto de scripting: **IncreaseBasePriority**
 
@@ -295,11 +295,11 @@ Necesario para aumentar la prioridad de programación.
 
 
 
-Constante de C++ **: \_ se \_ crea \_ el nombre** de archivo de paginación cadena: **SeCreatePagefilePrivilege**
+Constante de C++: **SE \_ cadena CREATE \_ PAGEFILE \_ NAME:** **SeCreatePagefilePrivilege**
 
 Nombre corto de scripting: **CreatePagefile**
 
-Se requiere para crear un archivo de paginación.
+Necesario para crear un archivo de paginación.
 
 
 </dt> </dl> </dd> <dt>
@@ -312,7 +312,7 @@ Se requiere para crear un archivo de paginación.
 
 
 
-Constante de C++: se crea una cadena de **\_ \_ \_ nombre permanente** : **SeCreatePermanentPrivilege**
+Constante de C++: **SE cadena CREATE PERMANENT \_ \_ \_ NAME:** **SeCreatePermanentPrivilege**
 
 Nombre corto de scripting: **CreatePermanent**
 
@@ -329,11 +329,11 @@ Necesario para crear objetos compartidos permanentes.
 
 
 
-Constante de C++ **: \_ \_ nombre de copia de seguridad de se** cadena: **SeBackupPrivilege**
+Constante de C++: **SE \_ BACKUP \_ NAME** string: **SeBackupPrivilege**
 
-Nombre corto de scripting: **copia de seguridad**
+Nombre corto de scripting: Copia de **seguridad**
 
-Necesario para realizar una copia de seguridad de archivos y directorios, independientemente de la ACL especificada para el archivo.
+Necesario para realizar copias de seguridad de archivos y directorios, independientemente de la ACL especificada para el archivo.
 
 
 </dt> </dl> </dd> <dt>
@@ -346,9 +346,9 @@ Necesario para realizar una copia de seguridad de archivos y directorios, indepe
 
 
 
-Constante de C++: **se ha restaurado la cadena de \_ \_ nombre** : **SeRestorePrivilege**
+Constante de C++: **SE \_ cadena RESTORE \_ NAME:** **SeRestorePrivilege**
 
-Nombre corto de scripting: **restore**
+Nombre corto de scripting: **Restaurar**
 
 Necesario para restaurar archivos y directorios, independientemente de la ACL especificada para el archivo.
 
@@ -358,14 +358,14 @@ Necesario para restaurar archivos y directorios, independientemente de la ACL es
 <span id="wbemPrivilegeShutdown"></span><span id="wbemprivilegeshutdown"></span><span id="WBEMPRIVILEGESHUTDOWN"></span>**wbemPrivilegeShutdown**
 </dt> <dd> <dl> <dt>
 
-18 (0X12)
+18 (0x12)
 </dt> <dt>
 
 
 
-Constante de C++: **se ha \_ cerrado \_ el nombre** de la cadena: **SeShutdownPrivilege**
+Constante de C++: **SE \_ cadena SHUTDOWN \_ NAME:** **SeShutdownPrivilege**
 
-Nombre corto de scripting: **apagado**
+Nombre corto de scripting: **Shutdown**
 
 Necesario para apagar el sistema local.
 
@@ -380,11 +380,11 @@ Necesario para apagar el sistema local.
 
 
 
-Constante de C++: **se ha \_ depurado \_ el nombre** cadena: **SeDebugPrivilege**
+Constante de C++: **SE \_ debug \_ name** string: **SeDebugPrivilege**
 
-Nombre corto de scripting: **Debug**
+Nombre corto de scripting: **Depurar**
 
-Necesario para depurar y ajustar la memoria de un proceso que pertenece a otra cuenta.
+Necesario para depurar y ajustar la memoria de un proceso propiedad de otra cuenta.
 
 
 </dt> </dl> </dd> <dt>
@@ -397,9 +397,9 @@ Necesario para depurar y ajustar la memoria de un proceso que pertenece a otra c
 
 
 
-Constante de C++: se trata de una cadena de **\_ \_ nombre de auditoría** : **SeAuditPrivilege**
+Constante de C++: **SE \_ AUDIT \_ NAME** string: **SeAuditPrivilege**
 
-Nombre corto de scripting: **Auditoría**
+Nombre corto de scripting: **Audit**
 
 Necesario para generar entradas de auditoría en el registro de seguridad de NT. Solo los servidores seguros deben tener este privilegio.
 
@@ -414,11 +414,11 @@ Necesario para generar entradas de auditoría en el registro de seguridad de NT.
 
 
 
-Constante de C++: **se trata \_ del \_ \_ nombre del entorno del sistema** de la cadena: **SeSystemEnvironmentPrivilege**
+Constante de C++: **SE cadena SYSTEM ENVIRONMENT \_ \_ \_ NAME:** **SeSystemEnvironmentPrivilege**
 
 Nombre corto de scripting: **SystemEnvironment**
 
-Necesario para modificar la RAM no volátil de los sistemas que utilizan este tipo de memoria para almacenar los datos de configuración.
+Necesario para modificar la RAM no volátil de los sistemas que usan este tipo de memoria para almacenar los datos de configuración.
 
 
 </dt> </dl> </dd> <dt>
@@ -431,11 +431,11 @@ Necesario para modificar la RAM no volátil de los sistemas que utilizan este ti
 
 
 
-Constante de C++: **se ha \_ cambiado \_ \_ el nombre de notificación** cadena: **SeChangeNotifyPrivilege**
+Constante de C++: **SE cadena CHANGE NOTIFY \_ \_ \_ NAME:** **SeChangeNotifyPrivilege**
 
 Nombre corto de scripting: **ChangeNotify**
 
-Requerido para recibir notificaciones de cambios en archivos o directorios y omitir las comprobaciones de acceso transversal. Este privilegio está habilitado de forma predeterminada para todos los usuarios.
+Se requiere para recibir notificaciones de cambios en archivos o directorios y omitir las comprobaciones de acceso transversal. Este privilegio está habilitado de forma predeterminada para todos los usuarios.
 
 
 </dt> </dl> </dd> <dt>
@@ -448,7 +448,7 @@ Requerido para recibir notificaciones de cambios en archivos o directorios y omi
 
 
 
-Constante de C++: cadena de **\_ \_ \_ nombre de apagado remoto** : **SeRemoteShutdownPrivilege**
+Constante de C++: **SE \_ REMOTE SHUTDOWN \_ \_ NAME** string: **SeRemoteShutdownPrivilege**
 
 Nombre corto de scripting: **RemoteShutdown**
 
@@ -465,9 +465,9 @@ Necesario para apagar un equipo remoto.
 
 
 
-Constante de C++: **se \_ desacopla \_ el nombre** de la cadena: **SeUndockPrivilege**
+Constante de C++: **SE \_ cadena UNDOCK \_ NAME:** **SeUndockPrivilege**
 
-Nombre corto de scripting: **desacoplar**
+Nombre corto de scripting: **Desacoplar**
 
 Necesario para quitar un portátil de una estación de acoplamiento.
 
@@ -482,7 +482,7 @@ Necesario para quitar un portátil de una estación de acoplamiento.
 
 
 
-Constante de C++: **se ha sincronizado la cadena de \_ \_ \_ nombre del agente** : **SeSyncAgentPrivilege**
+Constante de C++: **SE SYNC AGENT NAME \_ \_ \_ string:** **SeSyncAgentPrivilege**
 
 Nombre corto de scripting: **SyncAgent**
 
@@ -499,11 +499,11 @@ Necesario para sincronizar los datos del servicio de directorio.
 
 
 
-Constante de C++: se habilita la cadena de  **\_ \_ \_ nombre de delegación** : SeEnableDelegationPrivilege
+Constante de C++: **SE cadena ENABLE DELEGATION \_ \_ \_ NAME:** **SeEnableDelegationPrivilege**
 
 Nombre corto de scripting: **EnableDelegation**
 
-Se requiere para habilitar la confianza en las cuentas de equipo y de usuario para la delegación.
+Necesario para permitir que las cuentas de equipo y usuario sean de confianza para la delegación.
 
 
 </dt> </dl> </dd> <dt>
@@ -516,7 +516,7 @@ Se requiere para habilitar la confianza en las cuentas de equipo y de usuario pa
 
 
 
-Constante de C++ **: \_ se \_ administra \_ el nombre de volumen** cadena: **SeManageVolumePrivilege**
+Constante de C++: **SE cadena MANAGE VOLUME \_ \_ \_ NAME:** **SeManageVolumePrivilege**
 
 Nombre corto de scripting: **ManageVolume**
 
@@ -533,8 +533,8 @@ Necesario para realizar tareas de mantenimiento del volumen.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Wbemdisp. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wbemdisp.idl</dt> </dl> |
 
 
 
@@ -542,7 +542,7 @@ Necesario para realizar tareas de mantenimiento del volumen.
 
 <dl> <dt>
 
-[Scripting de constantes de API](scripting-api-constants.md)
+[Constantes de API de scripting](scripting-api-constants.md)
 </dt> <dt>
 
 [**SWbemSecurity**](swbemsecurity.md)
@@ -551,10 +551,10 @@ Necesario para realizar tareas de mantenimiento del volumen.
 [**WbemPrivilegeEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum)
 </dt> <dt>
 
-[Ejecutar operaciones con privilegios](executing-privileged-operations.md)
+[Ejecución de operaciones con privilegios](executing-privileged-operations.md)
 </dt> <dt>
 
-[Ejecutar operaciones con privilegios mediante VBScript](executing-privileged-operations-using-vbscript.md)
+[Ejecución de operaciones con privilegios mediante VBScript](executing-privileged-operations-using-vbscript.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
 title: Evento TransportParametersUpdate
-description: Se produce siempre que se actualiza cualquier conjunto de parámetros de transporte en el DMR.
+description: Se produce cada vez que se actualiza cualquiera de un conjunto de parámetros de transporte en la DMR.
 ms.assetid: df9256ca-6c59-462c-b32f-4653546db384
 keywords:
-- TransportParametersUpdate Event media streaming API
+- TransportParametersUpdate event Media Streaming API
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58df04862275af5da8714f8a954dc5b127f833f2
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 00e3a600b7345b2cf05b5fb76f20b968e1af9ddecfb72f8442ada34dfd98ae3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103904582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034523"
 ---
 # <a name="transportparametersupdate-event"></a>Evento TransportParametersUpdate
 
-Se produce siempre que se actualiza cualquier conjunto de parámetros de transporte en el DMR.
+Se produce cada vez que se actualiza cualquiera de un conjunto de parámetros de transporte en la DMR.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,10 +40,10 @@ Este evento no tiene parámetros.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para controlar las notificaciones de este evento, registre una función de controlador de eventos [**TransportParametersUpdateHandler**](/previous-versions/windows/desktop/legacy/hh829007(v=vs.85)) mediante el método [**Add \_ TransportParametersUpdate**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-add_transportparametersupdate) . Para anular el registro del controlador de eventos, use el método [**Remove \_ TransportParametersUpdate**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-remove_transportparametersupdate) .
+Para controlar las notificaciones de este evento, registre una función de controlador de eventos [**TransportParametersUpdateHandler**](/previous-versions/windows/desktop/legacy/hh829007(v=vs.85)) mediante el [**método add \_ TransportParametersUpdate.**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-add_transportparametersupdate) Para anular el registro del controlador de eventos, use [**el \_ método Remove TransportParametersUpdate.**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-remove_transportparametersupdate)
 
- 
+ 
 
- 
+ 

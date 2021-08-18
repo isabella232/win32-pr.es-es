@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: VistaParam. TableClass8Name, campo'
-title: Campo VistaParam. TableClass8Name (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: Campo VistaParam.TableClass8Name'
+title: Campo VistaParam.TableClass8Name (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: TableClass8Name field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Vista.VistaParam.TableClass8Name
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistaparam.tableclass8name(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 752cf79581c2fa2745fd2fa67a7d646df1c68716
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e548fdfa5a60177660474caf0776d7b19f2eea41abbb4a4237938353a10be9f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038623"
 ---
-# <a name="vistaparamtableclass8name-field"></a>VistaParam. TableClass8Name, campo
+# <a name="vistaparamtableclass8name-field"></a>Campo VistaParam.TableClass8Name
 
 Establezca el nombre asociado a la clase de tabla 8.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,12 +53,12 @@ value = VistaParam.TableClass8Name
 public const JET_param TableClass8Name
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase VistaParam](./vistaparam-class.md)
+[VistaParam (clase)](./vistaparam-class.md)
 
 [Miembros de VistaParam](./vistaparam-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentTableNotEmptyException'
-title: Constructor de EsentTableNotEmptyException
+description: 'Más información sobre: Constructor EsentTableNotEmptyException'
+title: Constructor EsentTableNotEmptyException
 TOCTitle: 'EsentTableNotEmptyException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTableNotEmptyException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenttablenotemptyexception.esenttablenotemptyexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5abe32294105f281a8fe3f242419dffd2965cfe8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23a35ed5a87a206c1ff448274ef2b5f9921b014b71d116599b3d334add62982e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104276917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118981035"
 ---
-# <a name="esenttablenotemptyexception-constructor"></a>Constructor de EsentTableNotEmptyException
+# <a name="esenttablenotemptyexception-constructor"></a>Constructor EsentTableNotEmptyException
 
 Inicializa una nueva instancia de la clase EsentTableNotEmptyException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentTableNotEmptyException()
 public EsentTableNotEmptyException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentTableNotEmptyException()
 
 [Miembros de EsentTableNotEmptyException](./esenttablenotemptyexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

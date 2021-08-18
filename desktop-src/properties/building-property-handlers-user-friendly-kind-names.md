@@ -4,12 +4,12 @@ ms.assetid: 1466b4c7-49ea-417a-ac94-7b45515ccb96
 title: Usar nombres de tipo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dca36d7c1de587efd8d96f0c18aaca9457721714
-ms.sourcegitcommit: ecd0ba4732f5264aab9baa2839c11f7fea36318f
+ms.openlocfilehash: 38d5f1432e7680cfed63c2c210375f3b7a300fae4563ca308a3b25b8751fb139
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "113481880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971104"
 ---
 # <a name="using-kind-names"></a>Usar nombres de tipo
 
@@ -24,7 +24,7 @@ Este tema se organiza de la siguiente manera:
 
 ## <a name="about-the-systemkind-property"></a>Acerca de la propiedad System.Kind
 
-Kind se introdujo en Windows Vista para expresar una noción más fácil de usar del tipo de archivo. La propiedad divide los elementos en tipos y proporciona un nombre de tipo con el que los usuarios finales pueden `System.Kind` identificarse, como Documentos, Música, Imágenes, etc. Por lo tanto, los nombres de tipo se han conocido como fáciles de usar. Dado que la propiedad se establece en el mismo valor para los elementos del mismo tipo de archivo y asocia elementos que tienen características similares a una propiedad común, el sistema y el usuario pueden actuar en el grupo como `System.Kind` un todo. Por ejemplo, la propiedad se puede usar para limitar una búsqueda a elementos de un tipo específico, mostrar las propiedades más relevantes para un elemento en la vista Contenido o agrupar elementos `System.Kind` similares.
+Kind se introdujo en Windows Vista para expresar una noción más fácil de usar del tipo de archivo. La propiedad divide los elementos en tipos y proporciona un nombre de tipo con el que los usuarios finales pueden `System.Kind` identificarse, como Documentos, Música, Imágenes, etc. Por lo tanto, los nombres kind se han conocido como fáciles de usar. Dado que la propiedad se establece en el mismo valor para los elementos del mismo tipo de archivo y asocia elementos que tienen características similares a una propiedad común, el sistema y el usuario pueden actuar en el grupo como `System.Kind` un todo. Por ejemplo, la propiedad se puede usar para limitar una búsqueda a elementos de un tipo específico, mostrar las propiedades más relevantes de un elemento en la vista Contenido o agrupar elementos `System.Kind` similares.
 
 Dado que Kind es una propiedad de cadena de varios valores, puede tener un `audio;video` valor `link;document` o Kind. Un `System.Kind` valor es una lista ordenada de valores de cadena. En algunos casos, podría haber solo un elemento en esa lista. En otros casos, un elemento puede pertenecer a más de un tipo. Para obtener un ejemplo de un elemento que pertenece a más de un tipo, vea el ejemplo de clave del Registro de este tema. Los valores de cadena son de un conjunto predefinido de valores conocidos. Los valores se comparan mediante funciones de comparación de cadenas que no tienen en cuenta mayúsculas de minúsculas y que no tienen en cuenta la configuración regional. Estas cadenas no están localizadas.
 
@@ -60,7 +60,7 @@ Item
 
 Los controladores de propiedades pueden declarar su propiedad estáticamente a través del Registro, o bien pueden proporcionar el valor dinámicamente a través de su código como lo harían con `System.Kind` una propiedad estándar.
 
-Para definir estáticamente la propiedad , se agrega una entrada de valor REG SZ en la clave del Registro KindMap como se `Kind` muestra en el ejemplo siguiente. **\_** 
+Para definir estáticamente la propiedad , se agrega una entrada de valor REG SZ en la clave del `Kind` Registro **KindMap,** como se muestra en el **\_** ejemplo siguiente.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -74,7 +74,7 @@ HKEY_LOCAL_MACHINE
                      .ccc = Contact; Communications
 ```
 
-Tenga en cuenta `Kind` que puede ser un valor único o varios valores en una cadena delimitada por punto y coma. Al proporcionar varios valores, el valor más `Kind` específico se muestra primero con el siguiente valor menos específico. En el ejemplo, contact se denomina primero porque es jerárquicamente más específico que Communications. Se supone **que el** valor Item no debe proporcionarse explícitamente.
+Tenga en cuenta `Kind` que puede ser un valor único o varios valores en una cadena delimitada por punto y coma. Al proporcionar varios valores, el valor más `Kind` específico aparece en primer lugar con el siguiente aspecto menos específico. En el ejemplo, contact se denomina primero porque es jerárquicamente más específico que Communications. Se supone **que el** valor Item no debe proporcionarse explícitamente.
 
 ## <a name="additional-resources"></a>Recursos adicionales
 

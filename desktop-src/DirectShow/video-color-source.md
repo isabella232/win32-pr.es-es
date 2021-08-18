@@ -4,23 +4,23 @@ ms.assetid: e6addd55-06ca-4d4b-b2b0-fde281fab244
 title: Origen de color de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56e9c751d74a78b027d50f033acb3709d18fe8f6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 331640a9240ef0ea16ff565180503066f22ce5ae2550fa1e1ec524dcf05c8fa5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119071939"
 ---
 # <a name="video-color-source"></a>Origen de color de vídeo
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
 El origen de color de vídeo crea una imagen de vídeo continua de un color sólido.
 
-IDENTIFICADOR de clase (CLSID): **{0CFDD070-581A-11D2-9EE6-006008039E37}**
+Identificador de clase (CLSID): **{0CFDD070-581A-11D2-9EE6-006008039E37}**
 
 Nombre de la variable CLSID: **CLSID \_ ColorSource**
 
@@ -30,21 +30,21 @@ Propiedades
 
 | Propiedad | Tipo      | Valor predeterminado | Descripción                                   |
 |----------|-----------|---------|-----------------------------------------------|
-| Color  | **DWORD** | 0       | Especifica el color que se va a generar. Vea la sección Comentarios. |
+| "Color"  | **DWORD** | 0       | Especifica el color que se generará. Vea la sección Comentarios. |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El origen de color de vídeo se usa con los objetos de origen. En primer lugar, cree un nuevo objeto de origen. A continuación, establezca el GUID del subobjeto del objeto de origen en CLSID \_ ColorSource llamando al método [**IAMTimelineObj:: SetSubObjectGUID**](iamtimelineobj-setsubobjectguid.md) .
+El origen de color de vídeo se usa con objetos de origen. En primer lugar, cree un nuevo objeto de origen. A continuación, establezca el GUID del subobjeto del objeto de origen en CLSID ColorSource, llamando al \_ [**método IAMTimelineObj::SetSubObjectGUID.**](iamtimelineobj-setsubobjectguid.md)
 
-Para establecer el color, cree un objeto [setter de propiedad](property-setter.md) y aplique la propiedad "color" en el tiempo cero. El valor de esta propiedad es un número hexadecimal con el formato *0xAARRGGBB*, donde *AA* es el valor alfa, *RR* es el valor rojo, *GG* es el valor verde y *BB* es el valor azul. Los valores alfa van de 0x00 (transparente) a 0xFF (opaco). La propiedad es estática y debe aplicarse en el tiempo cero.
+Para establecer el color, cree un [objeto Property Setter](property-setter.md) y aplique la propiedad "Color" en el momento cero. El valor de esta propiedad es un número hexadecimal con el formato *0xAARRGGBB,* donde *AA* es el valor alfa, *RR* es el valor rojo, *GG* es el valor verde y *BB* es el valor azul. Los valores alfa van 0x00 (transparente) a 0xFF (opaco). La propiedad es estática y debe aplicarse en el momento cero.
 
-Si no especifica el valor alfa, el valor predeterminado es cero (transparente). En un proyecto de vídeo de color de 32 bits, esto hará que las transiciones o los efectos que usan alfa representen el origen de color de vídeo como completamente transparente. Para que sea segura, especifique siempre el alfa. Por ejemplo, el negro opaco es **0xFF000000**.
+Si no especifica el valor alfa, el valor predeterminado es cero (transparente). En un proyecto de vídeo de color de 32 bits, esto provocará transiciones o efectos que usan alfa para representar el origen de color de vídeo como completamente transparente. Para que sea seguro, especifique siempre el valor alfa. Por ejemplo, el negro opaco **es 0xFF000000**.
 
-En el ejemplo de código siguiente se muestra cómo utilizar este objeto. Para obtener más información sobre el uso de [**IPropertySetter**](ipropertysetter.md), vea [establecer propiedades en efectos y transiciones](setting-properties-on-effects-and-transitions.md):
+En el ejemplo de código siguiente se muestra cómo usar este objeto . Para obtener más información sobre el [**uso de IPropertySetter,**](ipropertysetter.md)vea [Establecer propiedades en efectos y transiciones:](setting-properties-on-effects-and-transitions.md)
 
 
 ```C++
@@ -108,7 +108,7 @@ if (SUCCEEDED(hr))
 
 
 
-En el ejemplo siguiente se muestra la representación XML del objeto creado en el ejemplo anterior. En este caso, el elemento [**param**](param-element.md) no admite elementos [**en**](at-element.md) o [**lineales**](linear-element.md) , porque el objeto no admite propiedades dinámicas:
+En el ejemplo siguiente se muestra la representación XML del objeto creado en el ejemplo anterior. En este caso, [**el elemento param**](param-element.md) no admite [**elementos en**](at-element.md) o [**lineales,**](linear-element.md) porque el objeto no admite propiedades dinámicas:
 
 
 ```C++

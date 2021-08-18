@@ -3,7 +3,7 @@ title: Objeto de red
 description: El objeto Network proporciona propiedades y métodos que se usan para acceder a estadísticas relacionadas con la calidad de una conexión de red y para especificar y recuperar la configuración del proxy de red.
 ms.assetid: 5ae6137e-22f5-4a65-8793-b6f66adb4cba
 keywords:
-- Objetos de red Reproductor de Windows Media
+- Objeto de red Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -41,7 +41,7 @@ El **objeto Network** admite las siguientes propiedades.
 | [framesSkipped](network-framesskipped.md)         | Recupera el número total de fotogramas omitido durante la reproducción.                               |
 | [lostPackets](network-lostpackets.md)             | Recupera el número de paquetes perdidos.                                                       |
 | [maxBandwidth](network-maxbandwidth.md)           | Especifica o recupera el ancho de banda máximo permitido.                                       |
-| [maxBitRate](network-maxbitrate.md)               | Recupera la velocidad de bits de vídeo máxima posible.                                              |
+| [maxBitRate](network-maxbitrate.md)               | Recupera la velocidad máxima de bits de vídeo posible.                                              |
 | [receivedPackets](network-receivedpackets.md)     | Recupera el número de paquetes recibidos.                                                   |
 | [receptionQuality](network-receptionquality.md)   | Recupera el porcentaje de paquetes recibidos en los últimos 30 segundos.                        |
 | [recoveredPackets](network-recoveredpackets.md)   | Recupera el número de paquetes recuperados.                                                  |
@@ -84,7 +84,7 @@ Se **tiene acceso** al objeto Network a través de la propiedad siguiente.
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

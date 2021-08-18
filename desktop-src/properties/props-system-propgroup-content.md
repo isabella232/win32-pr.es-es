@@ -1,5 +1,5 @@
 ---
-description: Obtenga información sobre la propiedad System.PropGroup.Content. No use esta propiedad para obtener o establecer valores. Solo está pensado como un marcador.
+description: Obtenga información sobre la propiedad System.PropGroup.Content. No use esta propiedad para obtener o establecer valores. Solo está pensado como marcador.
 ms.assetid: 78be9ad1-a795-4fd9-835c-3db9fbecab1c
 title: System.PropGroup.Content
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118969964"
 ---
 # <a name="systempropgroupcontent"></a>System.PropGroup.Content
 
-Separador de grupo de propiedades que se usa en las listas de propiedades para separar los archivos de audio de otros tipos. No use esta propiedad para obtener o establecer valores. Solo está pensado como un marcador.
+Separador del grupo de propiedades usado en las listas de propiedades para separar los archivos de audio de otros tipos. No use esta propiedad para obtener o establecer valores. Solo está pensado como marcador.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 

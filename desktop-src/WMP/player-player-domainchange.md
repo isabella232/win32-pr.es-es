@@ -3,7 +3,7 @@ title: Evento Player.DomainChange
 description: El evento DomainChange tiene lugar cuando cambia el dominio de DVD. | Evento Player.DomainChange
 ms.assetid: 01965492-276e-4d30-99eb-767e0776b423
 keywords:
-- DomainChange event Reproductor de Windows Media
+- Evento DomainChange Reproductor de Windows Media
 - DomainChange event Reproductor de Windows Media , Player (Clase)
 - Player class Reproductor de Windows Media , DomainChange event
 topic_type:
@@ -77,14 +77,14 @@ El valor de los parámetros de evento se especifica mediante Reproductor de Wind
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media para Windows XP o posterior.<br/>                           |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

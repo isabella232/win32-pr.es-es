@@ -1,9 +1,9 @@
-- name: Guía del desarrollador de Windows 7
+- name: Windows 7 Developer Guide (Guía para desarrolladores de Windows 7)
   href: windows-7-developer-guide.md
   items:
     - name: Introducción
       href: introduction.md
-    - name: Base sólida
+    - name: Solid Foundation
       href: solid-foundation.md
       items:
         - name: Compatibilidad y confiabilidad
@@ -16,18 +16,18 @@
           href: performance.md
         - name: Documentos y periféricos de documentos
           href: documents-and-document-peripherals.md
-        - name: Accesibilidad y soporte global
+        - name: Accesibilidad y soporte técnico global
           href: accessibility-and-global-support.md
-    - name: Experiencias de aplicación más enriquecidas
+    - name: Experiencias de aplicación más enriquecciones
       href: richer-application-experiences.md
       items:
         - name: Experiencia de usuario intuitiva
           href: intuitive-user-experience.md
-        - name: Escritura a mano y tinta
+        - name: Escritura a mano y entrada de lápiz
           href: handwriting-and-ink.md
-        - name: Experiencia de escritorio
+        - name: La experiencia de escritorio
           href: the-desktop-experience.md
-        - name: Administrar archivos y datos
+        - name: Administración de archivos y datos
           href: managing-files-and-data.md
         - name: Configuración elevada de ppp
           href: high-dpi.md
@@ -37,7 +37,7 @@
           href: media-platform.md
         - name: Dispositivos
           href: devices.md
-    - name: Lo mejor de Windows y la web
+    - name: Lo mejor de Windows web
       href: the-best-of-windows-and-the-web.md
       items:
         - name: Servicios

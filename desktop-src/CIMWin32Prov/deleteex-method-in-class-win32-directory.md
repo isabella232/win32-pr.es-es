@@ -2,7 +2,7 @@
 description: El método de clase WMI DeleteEx eliminará el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. DeleteEx es una versión extendida del método Delete.
 ms.assetid: 6e5447c1-4d71-4a51-a1e0-b5785c13dfd2
 ms.tgt_platform: multiple
-title: Método DeleteEx de la clase Win32_Directory
+title: Método DeleteEx de la Win32_Directory de datos
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ac23a4013053d252aec49b8b7be4aae62c41c8e1
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0725011b39628f5376293bc82273723a89dfb0eafe1535d2f58393919f18c71a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103998240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080069"
 ---
-# <a name="deleteex-method-of-the-win32_directory-class"></a>Método DeleteEx de la \_ clase de directorio Win32
+# <a name="deleteex-method-of-the-win32_directory-class"></a>Método DeleteEx de la clase Directory de \_ Win32
 
-El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **DeleteEx** eliminará el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. **DeleteEx** es una versión extendida del método [**Delete**](delete-method-in-class-win32-directory.md) .
+El **método de clase** WMI [DeleteEx](/windows/desktop/WmiSdk/retrieving-a-class) eliminará el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. **DeleteEx** es una versión extendida del [**método Delete.**](delete-method-in-class-win32-directory.md)
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,17 +43,17 @@ uint32 DeleteEx(
 
 <dl> <dt>
 
-*StopFileName* \[ enuncia\]
+*StopFileName* \[ out\]
 </dt> <dd>
 
-Nombre del archivo o directorio en el que se produjo un error en el método **DeleteEx** . Este parámetro será **null** si el método se ejecuta correctamente.
+Nombre del archivo o directorio en el que se ha fallado **el método DeleteEx.** Este parámetro será **NULL si** el método se realiza correctamente.
 
 </dd> <dt>
 
-*StartFileName* \[ en, opcional\]
+*StartFileName* \[ in, opcional\]
 </dt> <dd>
 
-Asigna un nombre al archivo o directorio secundario que se va a usar como punto de partida para **DeleteEx**. El parámetro *StartFileName* es normalmente el parámetro *StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **null**, la operación se realiza en el archivo o directorio especificado en la llamada ExecMethod.
+Denomina el archivo o directorio secundario que se usará como punto de partida para **DeleteEx.** El *parámetro StartFileName suele* ser el parámetro *StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **NULL**, la operación se realiza en el archivo o directorio especificado en la llamada a ExecMethod.
 
 </dd> </dl>
 
@@ -80,7 +80,7 @@ Se denegó el acceso.
 **8**
 </dt> <dd>
 
-Se produjo un error no especificado.
+Error no especificado.
 
 </dd> <dt>
 
@@ -108,7 +108,7 @@ El sistema de archivos no es NTFS.
 **12**
 </dt> <dd>
 
-La plataforma no es Windows.
+La plataforma no está Windows.
 
 </dd> <dt>
 
@@ -129,7 +129,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha producido una infracción de uso compartido.
+Se ha infringido el uso compartido.
 
 </dd> <dt>
 
@@ -158,24 +158,24 @@ Un parámetro especificado no es válido.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Directorio Win32**](win32-directory.md)
+[**Directorio \_ win32**](win32-directory.md)
 </dt> </dl>
 
  

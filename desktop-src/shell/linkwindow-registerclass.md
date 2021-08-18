@@ -55,7 +55,7 @@ Use [**LinkWindow \_ UnregisterClass para**](linkwindow-unregisterclass.md) anul
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
@@ -63,7 +63,7 @@ Use [**LinkWindow \_ UnregisterClass para**](linkwindow-unregisterclass.md) anul
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

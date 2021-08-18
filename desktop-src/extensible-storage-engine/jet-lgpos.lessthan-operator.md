@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_LGPOS. LessThan (operador)'
-title: JET_LGPOS. LessThan (operador)
+description: 'Más información sobre: JET_LGPOS. Operador LessThan'
+title: JET_LGPOS. Operador LessThan
 TOCTitle: 'LessThan operator '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_LGPOS.op_LessThan(Microsoft.Isam.Esent.Interop.JET_LGPOS,Microsoft.Isam.Esent.Interop.JET_LGPOS)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_lgpos.op_lessthan(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8ec121f9d13686d3d5c8ad22aa0fb3aed8562b5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ddc1b94ad90476d9ab154d10b87ea3c137226b949fd58b9e6b32af02c7018fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119109203"
 ---
-# <a name="jet_lgposlessthan-operator"></a>JET_LGPOS. LessThan (operador)
+# <a name="jet_lgposlessthan-operator"></a>JET_LGPOS. Operador LessThan
 
-Determinar si una posición del registro es anterior a otra posición del registro.
+Determine si una posición de registro está antes que otra posición de registro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,29 +64,29 @@ public static bool operator <(
 
 #### <a name="parameters"></a>Parámetros
 
-  - LHS  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
+  - Lhs  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
     
-    Primera posición del registro que se va a comparar.
+    Primera posición de registro que se compara.
 
 <!-- end list -->
 
   - rhs  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
     
-    Segunda posición del registro que se va a comparar.
+    Segunda posición del registro que se comparará.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True si LHS viene antes de RHS.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True si lhs va antes que rhs.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_LGPOS](./jet-lgpos-structure2.md)
+[JET_LGPOS estructura](./jet-lgpos-structure2.md)
 
-[Miembros de JET_LGPOS](./jet-lgpos-members.md)
+[JET_LGPOS miembros](./jet-lgpos-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

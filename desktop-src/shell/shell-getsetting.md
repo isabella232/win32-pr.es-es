@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: dc8fe6277208808ad5f5b182f3eee416daf4a5d0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e4202cf2b57798de76784f4117665d92054fcbc74de76f1bd9a3f371dba66056
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968594"
 ---
 # <a name="shellgetsetting-method"></a>Método Shell.GetSetting
 
@@ -54,7 +54,7 @@ Shell.GetSetting( _
 
 Tipo: **long**
 
-Valor que especifica la configuración de Shell actual que se recuperará. Solo se puede recuperar una configuración en cada llamada. Este método reconoce los valores siguientes.
+Valor que especifica la configuración de Shell actual que se debe recuperar. Solo se puede recuperar una configuración en cada llamada. Este método reconoce los valores siguientes.
 
 <dt>
 
@@ -76,7 +76,7 @@ Valor que especifica la configuración de Shell actual que se recuperará. Solo 
 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ No se utiliza.
 
 </dt> <dd>
 
-Estado de la opción **Permitir todos los nombres en** mayúsculas. Desde Windows Vista, esta opción de carpeta ya no está disponible.
+Estado de la opción **Permitir todos los nombres en** mayúsculas. A Windows vista, esta opción de carpeta ya no está disponible.
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Estado de la opción **Permitir todos los nombres en** mayúsculas. Desde Window
 
 </dt> <dd>
 
-Estado de la opción **Hacer doble clic para abrir un elemento (un** solo clic para seleccionar).
+Estado de la opción **Hacer doble clic para abrir un elemento (un solo clic para seleccionarlo).**
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Estado de la opción **Hacer doble clic para abrir un elemento (un** solo clic p
 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ No se utiliza.
 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ No se utiliza.
 
 </dt> <dd>
 
-Estado de la presentación del icono en la Explorador de Windows lista de iconos. Si esta opción está activa, no se muestra ningún icono en la vista de lista.
+Estado de la presentación del icono en la vista de Windows explorador. Si esta opción está activa, no se muestra ningún icono en la vista de lista.
 
 </dd> <dt>
 
@@ -142,7 +142,7 @@ Estado de la presentación del icono en la Explorador de Windows lista de iconos
 
 </dt> <dd>
 
-**Windows Vista y versiones posteriores.** Estado del nombre para mostrar que se muestra en la Explorador de Windows lista. Si esta opción está activa, los iconos se muestran en la vista de lista, pero no los nombres para mostrar.
+**Windows Vista y versiones posteriores.** Estado del nombre para mostrar que se muestra en la vista Windows explorador. Si esta opción está activa, los iconos se muestran en la vista de lista, pero no los nombres para mostrar.
 
 </dd> <dt>
 
@@ -153,7 +153,7 @@ Estado de la presentación del icono en la Explorador de Windows lista de iconos
 
 </dt> <dd>
 
-Estado de la opción Mostrar unidad **de red de mapa en la barra de** herramientas. Desde Windows Vista, esta opción ya no está disponible.
+Estado de la opción Mostrar unidad **de red de mapa en la barra de** herramientas. A Windows Vista, esta opción ya no está disponible.
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ Estado de la opción Mostrar unidad **de red de mapa en la barra de** herramient
 
 </dt> <dd>
 
-Estado de la opción de papelera de reciclaje cuadro de diálogo Mostrar **confirmación de eliminación.**
+Estado de la opción de papelera de reciclaje cuadro de **diálogo Mostrar confirmación de eliminación del** servidor.
 
 </dd> <dt>
 
@@ -175,7 +175,7 @@ Estado de la opción de papelera de reciclaje cuadro de diálogo Mostrar **confi
 
 </dt> <dd>
 
-Estado de la opción **Buscar automáticamente carpetas de red e impresoras.** Desde Windows Vista, esta opción ya no está disponible.
+Estado de la opción **Buscar automáticamente carpetas de red e impresoras.** A Windows Vista, esta opción ya no está disponible.
 
 </dd> <dt>
 
@@ -197,7 +197,7 @@ Estado de las ventanas **Iniciar carpeta en una opción de proceso** independien
 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
@@ -219,7 +219,7 @@ Estado de la opción **Archivos y carpetas ocultos.**
 
 </dt> <dd>
 
-Estado de la opción **Mostrar atributos de archivo en la vista de** detalles. Desde Windows Vista, esta opción ya no está disponible.
+Estado de la opción **Mostrar atributos de archivo en la vista de** detalles. A Windows Vista, esta opción ya no está disponible.
 
 </dd> <dt>
 
@@ -230,7 +230,7 @@ Estado de la opción **Mostrar atributos de archivo en la vista de** detalles. D
 
 </dt> <dd>
 
-Estado de la opción **Mostrar archivos NTFS cifrados o comprimidos en color.**
+Estado de la opción Mostrar archivos **NTFS cifrados o comprimidos en color.**
 
 </dd> <dt>
 
@@ -252,7 +252,7 @@ Estado de la opción **Ocultar extensiones para tipos de archivo** conocidos.
 
 </dt> <dd>
 
-Estado de la opción **Mostrar descripción emergente para elementos de carpeta y** escritorio.
+Estado de la opción **Mostrar descripción emergente para elementos de escritorio y carpetas.**
 
 </dd> <dt>
 
@@ -263,7 +263,7 @@ Estado de la opción **Mostrar descripción emergente para elementos de carpeta 
 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
@@ -285,7 +285,7 @@ Estado de la opción **Ocultar archivos de sistema operativo** protegidos.
 
 </dt> <dd>
 
-Estado de la opción **Archivos y carpetas ocultos.** En Windows Vista y versiones posteriores, esto equivale a SSF \_ SHOWALLOBJECTS. En las versiones de Windows anteriores a Windows Vista, este valor hacía referencia al estado de la opción No mostrar archivos **y carpetas ocultos.**
+Estado de la opción **Archivos y carpetas ocultos.** En Windows Vista y versiones posteriores, esto equivale a SSF \_ SHOWALLOBJECTS. En versiones de Windows antes Windows Vista, este valor hacía referencia al estado de la opción No mostrar archivos **y carpetas ocultos.**
 
 </dd> <dt>
 
@@ -296,7 +296,7 @@ Estado de la opción **Archivos y carpetas ocultos.** En Windows Vista y version
 
 </dt> <dd>
 
-**Windows Vista y versiones posteriores.** Estado de la opción **Mostrar icono de archivo en miniatura.** Si esta opción está activa, se aplica una superposición de tipo de archivo cuando un archivo proporciona una representación en miniatura.
+**Windows Vista y versiones posteriores.** Estado de la opción **Mostrar icono de archivo en miniaturas.** Si esta opción está activa, se aplica una superposición de tipo de archivo cuando un archivo proporciona una representación en miniatura.
 
 </dd> <dt>
 
@@ -307,7 +307,7 @@ Estado de la opción **Archivos y carpetas ocultos.** En Windows Vista y version
 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
@@ -318,7 +318,7 @@ No se utiliza.
 
 </dt> <dd>
 
-El estado de la opción de presentación de Windows XP, que selecciona entre el estilo de Windows XP y el estilo clásico. Desde Windows Vista, esta opción ya no está disponible.
+El estado de la Windows de visualización XP, que selecciona entre el Windows XP y el estilo clásico. A Windows Vista, esta opción ya no está disponible.
 
 </dd> <dt>
 
@@ -329,7 +329,7 @@ El estado de la opción de presentación de Windows XP, que selecciona entre el 
 
 </dt> <dd>
 
-Estado de la opción **Mostrar como vista web**. Desde Windows Vista, esta opción ya no está disponible.
+Estado de la opción **Mostrar como vista web**. A Windows Vista, esta opción ya no está disponible.
 
 </dd> <dt>
 
@@ -340,7 +340,7 @@ Estado de la opción **Mostrar como vista web**. Desde Windows Vista, esta opci�
 
 </dt> <dd>
 
-Estado de la opción **Estilo** clásico. Desde Windows Vista, esta opción ya no está disponible.
+Estado de la opción **Estilo** clásico. A Windows Vista, esta opción ya no está disponible.
 
 </dd> </dl> </dd> </dl>
 
@@ -362,7 +362,7 @@ Establezca en **true** si la configuración existe; de lo contrario, **false**.
 
 En los ejemplos siguientes se muestra el uso de **GetSetting** para JScript, VBScript y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -430,11 +430,11 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                                                   |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                                   |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |
 

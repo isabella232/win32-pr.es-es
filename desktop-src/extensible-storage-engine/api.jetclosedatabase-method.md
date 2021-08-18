@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetCloseDatabase (método)'
-title: Método API. JetCloseDatabase
+description: Más información sobre el método Api.JetCloseDatabase
+title: Método Api.JetCloseDatabase
 TOCTitle: 'JetCloseDatabase method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetCloseDatabase(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_DBID,Microsoft.Isam.Esent.Interop.CloseDatabaseGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetclosedatabase(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b39d830c34f2d772730d7ea1c65ec4adf3c3d4c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f5a213cb824e1eb1b29a9648caf06670f99de7c0008048ff5969c009609142b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983515"
 ---
-# <a name="apijetclosedatabase-method"></a>Método API. JetCloseDatabase
+# <a name="apijetclosedatabase-method"></a>Método Api.JetCloseDatabase
 
-Cierra un archivo de base de datos que se abrió previamente con [JetOpenDatabase (JET_SESID, cadena, cadena, JET_DBID, OpenDatabaseGrbit)](./api.jetopendatabase-method.md) o creado con [JetCreateDatabase (JET_SESID, cadena, cadena, JET_DBID, CreateDatabaseGrbit)](./api.jetcreatedatabase-method.md).
+Cierra un archivo de base de datos que se abrió previamente con [JetOpenDatabase(JET_SESID, String, String, JET_DBID, OpenDatabaseGrbit)](./api.jetopendatabase-method.md) o que se creó con [JetCreateDatabase(JET_SESID, String, String, JET_DBID, CreateDatabaseGrbit).](./api.jetcreatedatabase-method.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,23 +65,23 @@ public static void JetCloseDatabase(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
   - dbid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_DBID](./jet-dbid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
-    Base de datos que se va a cerrar.
+    Base de datos que se cerrará.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. CloseDatabaseGrbit](./closedatabasegrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.CloseDatabaseGrbit](./closedatabasegrbit-enumeration.md)  
     
-    Opciones de cierre.
+    Cerrar opciones.
 
 ## <a name="see-also"></a>Vea también
 
@@ -89,6 +89,6 @@ public static void JetCloseDatabase(
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

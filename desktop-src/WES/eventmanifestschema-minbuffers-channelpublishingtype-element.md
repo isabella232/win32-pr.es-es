@@ -1,6 +1,6 @@
 ---
-title: Elemento minBuffers (ChannelPublishingType)
-description: Número mínimo de búferes que se van a asignar a la sesión.
+title: elemento minBuffers (ChannelPublishingType)
+description: Número mínimo de búferes que se asignarán para la sesión.
 ms.assetid: 949d64c5-60c1-4ef1-9992-76370e2b10e8
 keywords:
 - elemento minBuffers EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ce941da1e74df8a51a2900de4507e1277f4e34c7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 12d693b7f04356ac9103cb6ce85efcf9470a34b026b61007aeb4ecf88d49a119
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105695919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120690"
 ---
-# <a name="minbuffers-channelpublishingtype-element"></a>Elemento minBuffers (ChannelPublishingType)
+# <a name="minbuffers-channelpublishingtype-element"></a>elemento minBuffers (ChannelPublishingType)
 
-Número mínimo de búferes que se van a asignar a la sesión.
+Número mínimo de búferes que se asignarán para la sesión.
 
 ``` syntax
 <xs:element name="minBuffers"
@@ -30,7 +30,7 @@ Número mínimo de búferes que se van a asignar a la sesión.
  />
 ```
 
-El elemento **minBuffers** se define mediante el tipo complejo de [**ChannelPublishingType**](eventmanifestschema-channelpublishingtype-complextype.md) .
+El **elemento minBuffers** se define mediante el tipo complejo [**ChannelPublishingType.**](eventmanifestschema-channelpublishingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **minBuffers** se define mediante el tipo complejo de [**ChannelPubl
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

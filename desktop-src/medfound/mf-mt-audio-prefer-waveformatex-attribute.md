@@ -1,33 +1,33 @@
 ---
-description: Especifica la estructura de formato heredada preferida que se va a usar al convertir un tipo de medio de audio.
+description: Especifica la estructura de formato heredado preferida que se usará al convertir un tipo de medio de audio.
 ms.assetid: 9bb045a2-be5b-468b-b30b-aedcb7849945
-title: MF_MT_AUDIO_PREFER_WAVEFORMATEX atributo (mfapi. h)
+title: MF_MT_AUDIO_PREFER_WAVEFORMATEX atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7be5f5ac0aadfb2a4d8d2b8394a06f270e1b4d0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b23e2aeb00e2967b3f031a2aafe3a01f3846d7db077ba344a59680508bd385fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035303"
 ---
-# <a name="mf_mt_audio_prefer_waveformatex-attribute"></a>MF \_ MT \_ audio \_ preferida \_ atributo WAVEFORMATEX
+# <a name="mf_mt_audio_prefer_waveformatex-attribute"></a>MF \_ MT \_ AUDIO \_ \_ PREFERIR EL atributo DE FORMA DE ONDAATEX
 
-Especifica la estructura de formato heredada preferida que se va a usar al convertir un tipo de medio de audio.
+Especifica la estructura de formato heredado preferida que se usará al convertir un tipo de medio de audio.
 
 ## <a name="data-type"></a>Tipo de datos
 
 **UINT32**
 
-Trata como un valor booleano.
+Tratar como un valor booleano.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo proporciona una sugerencia a la función [**MFCreateWaveFormatExFromMFMediaType**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatewaveformatexfrommfmediatype) . Si el atributo es **true**, la función convierte el tipo de medio de audio en una estructura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) siempre que sea posible, en lugar de convertirlo en una estructura [**WAVEFORMATEXTENSIBLE**](/previous-versions/windows/desktop/legacy/dd390971(v=vs.85)) .
+Este atributo proporciona una sugerencia a la [**función MFCreateWaveFormatExFromMFMediaType.**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatewaveformatexfrommfmediatype) Si el atributo es **TRUE**, la función convierte el tipo de medio de audio en una estructura [**DE FORMA DEDATOSTEX**](/previous-versions/dd757713(v=vs.85)) siempre que sea posible, en lugar de convertirlo en una estructura [**DE LA FORMADETEXTENSIBLE.**](/previous-versions/windows/desktop/legacy/dd390971(v=vs.85))
 
-La función [**MFInitMediaTypeFromWaveFormatEx**](/windows/desktop/api/mfapi/nf-mfapi-mfinitmediatypefromwaveformatex) establece este atributo. Puede invalidar el valor de este atributo, pero establecer este atributo en **true** no garantiza que un tipo de medio de audio se pueda convertir al formato de [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) .
+La [**función MFInitMediaTypeFromWaveFormatEx**](/windows/desktop/api/mfapi/nf-mfapi-mfinitmediatypefromwaveformatex) establece este atributo. Puede invalidar el valor de este atributo, pero al establecer este atributo en **TRUE** no se garantiza que un tipo de medio de audio se pueda convertir al formulario [**DE FORMATEX.**](/previous-versions/dd757713(v=vs.85))
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                              |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -45,19 +45,19 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[Atributos de tipo de medio](media-type-attributes.md)
+[Atributos de tipo multimedia](media-type-attributes.md)
 </dt> </dl>
 
  

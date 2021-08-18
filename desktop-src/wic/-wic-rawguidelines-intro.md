@@ -1,37 +1,37 @@
 ---
-description: Introducción (instrucciones WIC para formatos de imagen RAW de cámara)
+description: Introducción (Directrices de WIC para formatos de imagen raw de cámara)
 ms.assetid: 3c588386-1d4d-4ee0-b633-bfc94ca751ea
-title: Introducción (instrucciones WIC para formatos de imagen RAW de cámara)
+title: Introducción (Directrices de WIC para formatos de imagen raw de cámara)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec6ee2607326afe289e0a3e54b254dcf581cbf86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d96da37d36fed6af0aef271471eb2a0e5dae44bef71dfe14a4da37eba3f658c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086868"
 ---
-# <a name="introduction-wic-guidelines-for-camera-raw-image-formats"></a>Introducción (instrucciones WIC para formatos de imagen RAW de cámara)
+# <a name="introduction-wic-guidelines-for-camera-raw-image-formats"></a>Introducción (Directrices de WIC para formatos de imagen raw de cámara)
 
-El componente de creación de imágenes de Windows (WIC) proporciona un marco extensible para trabajar con imágenes y metadatos de imágenes. WIC permite que los proveedores de software y hardware desarrollen códecs para que sus propios formatos de imagen puedan obtener la misma compatibilidad de plataforma que los formatos de imagen nativa, como el formato de archivo de imagen etiquetado (TIFF), el grupo de expertos fotográficos (JPEG) o la foto HD.
+El Windows Imaging Component (WIC) proporciona un marco extensible para trabajar con imágenes y metadatos de imagen. WIC permite a los proveedores de software y hardware desarrollar códecs para que sus propios formatos de imagen puedan obtener la misma compatibilidad con la plataforma que los formatos de imagen nativos, como el formato de archivo de imagen etiquetado (TIFF), el grupo de expertos en fotografía conjunta (JPEG) o hd photo.
 
-WIC proporciona un conjunto único y coherente de interfaces para todo el procesamiento de imágenes, independientemente del formato de imagen. Por lo tanto, cualquier aplicación que use WIC recibirá compatibilidad automática con los nuevos formatos de imagen en cuanto se instale el códec. WIC también proporciona un marco de metadatos extensible que permite que las aplicaciones lean y escriban sus propios metadatos de propiedad directamente en archivos de imagen, por lo que los metadatos nunca se pierden ni se separan de la imagen.
+WIC proporciona un único conjunto coherente de interfaces para todo el procesamiento de imágenes, independientemente del formato de imagen. Por lo tanto, cualquier aplicación que use WIC recibe compatibilidad automática con nuevos formatos de imagen en cuanto se instala el códec. WIC también proporciona un marco de metadatos extensible que permite a las aplicaciones leer y escribir sus propios metadatos propietarios directamente en archivos de imagen, por lo que los metadatos nunca se pierden ni se separan de la imagen.
 
-WIC se incluye con Windows Presentation Foundation (WPF) y está integrado en Windows Vista y versiones posteriores de Windows. También está disponible como componente redistribuible independiente para Windows XP.
+WIC se incluye con Windows Presentation Foundation (WPF) y está integrado en Windows Vista y versiones Windows posteriores. También está disponible como componente redistribuible independiente para Windows XP.
 
-Estas instrucciones están diseñadas para ayudar a los fabricantes de formatos sin formato en su desarrollo de códecs WIC.
+Estas directrices están diseñadas para ayudar a los fabricantes de formato RAW en el desarrollo de códecs WIC.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Información general sobre componentes de Windows Imaging](-wic-about-windows-imaging-codec.md)
+[Windows Información general sobre los componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
-[Instrucciones de WIC para formatos de imagen RAW de cámara](-wic-rawguidelines.md)
+[Directrices de WIC para formatos de imagen raw de cámara](-wic-rawguidelines.md)
 </dt> <dt>
 
 [Cómo escribir un códec de WIC-Enabled](-wic-howtowriteacodec.md)

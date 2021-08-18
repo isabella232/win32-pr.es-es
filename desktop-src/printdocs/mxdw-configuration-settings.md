@@ -13,7 +13,7 @@ ms.locfileid: "118971194"
 ---
 # <a name="mxdw-configuration-settings"></a>Configuración de MXDW Configuración
 
-El Escritor de documentos XPS de Microsoft (MXDW) permite a los usuarios crear archivos de documento XPS mediante la impresión desde cualquier Windows aplicación. Los desarrolladores de aplicaciones pueden controlar la siguiente configuración de salida de MXDW mediante las partes PrintTicket e PrintCapabilities del [esquema de impresión](./printschema.md).
+El Escritor de documentos XPS de Microsoft (MXDW) permite a los usuarios crear archivos de documento XPS mediante la impresión desde cualquier Windows aplicación. Los desarrolladores de aplicaciones pueden controlar la siguiente configuración de salida del MXDW mediante las partes PrintTicket e PrintCapabilities del [esquema de impresión](./printschema.md).
 
 ## <a name="jobinterleaving"></a>JobInterleaving
 
@@ -48,9 +48,9 @@ El ejemplo siguiente es un ejemplo del XML PrintCapabilities que incluye la conf
 
 
 
-PrintTicket XML es similar, salvo que especifica una opción determinada. Consulte el [esquema de impresión para](./printschema.md) obtener más información.
+El XML printticket es similar, salvo que especifica una opción determinada. Consulte el [esquema de impresión para](./printschema.md) obtener más información.
 
-Puesto que JobInterleaving no es una de las palabras clave públicas del esquema de impresión [,](./print-schema-public-keywords.md)debe incluir una declaración del espacio de nombres (en este caso , "ns0000" en la etiqueta **PrintCapabilities** (o **PrintTicket)** al principio del documento PrintCapabilities (o PrintTicket), como se muestra en el ejemplo siguiente:
+Puesto que JobInterleaving no es una de las palabras clave públicas del esquema de [impresión,](./print-schema-public-keywords.md)debe incluir una declaración del espacio de nombres (en este caso "ns0000" en la etiqueta **PrintCapabilities** (o **PrintTicket)** al principio del documento PrintCapabilities (o PrintTicket), como se muestra en el ejemplo siguiente:
 
 
 ```XML
@@ -70,9 +70,9 @@ JobImageType controla el formato de salida de los formatos de mapa de bits incru
 -   **JPEGHigh:** esta opción especifica la imagen JPEG con un alto nivel de compresión. Esta opción genera el tamaño de archivo más pequeño, pero la calidad de imagen más baja.
 -   **JPEGMed:** esta opción especifica la imagen JPEG con un nivel medio de compresión. Esta opción proporciona el mejor equilibrio entre el tamaño de archivo y la calidad de la imagen.
 -   **JPEGLow:** esta opción especifica la imagen JPEG con un bajo nivel de compresión. Esta opción produce la menor reducción en el tamaño de archivo y la alta calidad de la imagen.
--   **PNG:** esta opción especifica el formato de imagen PNG con compresión sin pérdida de datos. Esta opción genera el tamaño de archivo más grande y la mayor calidad de imagen.
+-   **PNG:** esta opción especifica el formato de imagen PNG con compresión sin pérdida. Esta opción genera el tamaño de archivo más grande y la mayor calidad de imagen.
 
-A continuación se muestra el XML PrintCapabilities de la configuración JobImageType:
+A continuación se muestra el xml PrintCapabilities de la configuración JobImageType:
 
 
 ```XML
@@ -108,9 +108,9 @@ A continuación se muestra el XML PrintCapabilities de la configuración JobImag
 
 
 
-PrintTicket XML es similar, salvo que especifica una opción determinada. Consulte el [esquema de impresión para](./printschema.md) obtener más información.
+El XML printticket es similar, salvo que especifica una opción determinada. Consulte el [esquema de impresión para](./printschema.md) obtener más información.
 
-Puesto que JobImageType no es una de las palabras clave públicas del esquema de impresión [,](./print-schema-public-keywords.md)debe incluir una declaración del espacio de nombres (en este caso , "ns0000" en la etiqueta **PrintCapabilities** (o **PrintTicket)** al principio del documento PrintCapabilities (o PrintTicket), como se muestra en el ejemplo siguiente:
+Puesto que JobImageType no es una de las palabras clave públicas del esquema de [impresión,](./print-schema-public-keywords.md)debe incluir una declaración del espacio de nombres (en este caso "ns0000" en la etiqueta **PrintCapabilities** (o **PrintTicket)** al principio del documento PrintCapabilities (o PrintTicket), como se muestra en el ejemplo siguiente:
 
 
 ```XML
@@ -130,7 +130,7 @@ xmlns:ns0000=http://schemas.microsoft.com/windows/2006/06/printing/printschemake
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)
 </dt> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> <dt>
 
 [Esquema de impresión](./printschema.md)

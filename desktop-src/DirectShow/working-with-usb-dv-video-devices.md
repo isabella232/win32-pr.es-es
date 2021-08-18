@@ -4,46 +4,46 @@ ms.assetid: 6244f006-db9f-42b2-81cd-26eba583613e
 title: Trabajar con dispositivos de vídeo DV USB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75647aa7b53bac45c155b4e0a9283418c9af58b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cd1f83fb490f4bd1e71714dcb0658d01a41d6e45af6f3e89436f6e32c1cdc985
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119071753"
 ---
 # <a name="working-with-usb-dv-video-devices"></a>Trabajar con dispositivos de vídeo DV USB
 
-En este tema se describe cómo escribir aplicaciones para dispositivos de vídeo de bus serie universal (USB) que capturan vídeo DV.
+En este tema se describe cómo escribir aplicaciones para dispositivos de vídeo de Bus serie universal (USB) que capturan vídeo DV.
 
-El formato DV estándar tiene una velocidad de datos de aproximadamente 25 megabits por segundo (Mbps). La primera vez que se presentó USB, no tenía suficiente ancho de banda para admitir vídeo DV. Sin embargo, USB 2,0 puede admitir hasta 480 Mbps, que es más que suficiente para vídeo DV. La especificación de la clase de dispositivo de vídeo USB (UVC), publicada en 2003, define el formato de carga para dispositivos de vídeo DV de USB. En Windows XP Service Pack 2, se presentó un controlador de clase Modelo de controlador de Windows (WDM) para dispositivos UVC.
+El formato DV estándar tiene una velocidad de datos de aproximadamente 25 megabits por segundo (Mbps). Cuando se introdujo USB por primera vez, no tenía suficiente ancho de banda para admitir vídeo DV. Sin embargo, USB 2.0 puede admitir hasta 480 Mbps, lo que es más que suficiente para el vídeo DV. La especificación USB Video Device Class (UVC), publicada en 2003, define el formato de carga de los dispositivos de vídeo DV USB. En Windows XP Service Pack 2 se introdujo un controlador de clase Windows Driver Model (WDM) para dispositivos UVC.
 
-En la mayoría de los aspectos, el controlador UVC admite el mismo modelo de programación que el controlador MSDV para dispositivos IEEE 1394. Las aplicaciones escritas para MSDV deben requerir solo modificaciones mínimas para admitir dispositivos UVC.
+En la mayoría de los aspectos, el controlador UVC admite el mismo modelo de programación que el controlador MSDV para IEEE 1394 dispositivos. Las aplicaciones escritas para MSDV solo deben requerir modificaciones menores para admitir dispositivos UVC.
 
-El controlador UVC se comporta de forma diferente al controlador MSDV en las siguientes áreas:
+El controlador UVC se comporta de forma diferente al controlador MSDV en las áreas siguientes:
 
 -   [Modo de dispositivo](device-mode.md)
 -   [Formato de secuencia](stream-format.md)
 -   [Formato de señal](signal-format.md)
 -   [Búsqueda de ubicación de cinta](tape-location-search.md)
--   [Transmitir DV desde un archivo a una cinta](transmit-dv-from-file-to-tape.md).
+-   [Transmitir DV de archivo a cinta.](transmit-dv-from-file-to-tape.md)
 
-Para determinar qué controlador se está usando, llame a [**IAMExtDevice:: get \_ DevicePort**](/windows/desktop/api/Strmif/nf-strmif-iamextdevice-get_deviceport). El controlador MSDV devuelve la marca del puerto de desarrollo \_ \_ 1394 y el controlador UVC devuelve la \_ marca USB del puerto de desarrollo \_ .
+Para determinar qué controlador se usa, llame a [**IAMExtDevice::get \_ DevicePort**](/windows/desktop/api/Strmif/nf-strmif-iamextdevice-get_deviceport). El controlador MSDV devuelve la marca DEV \_ PORT 1394 y el controlador UVC devuelve la marca \_ USB DEL PUERTO \_ \_ DEV.
 
 **Nodos de dispositivo**
 
-En la terminología USB, los puntos de conexión son los puntos en los que los datos entran o salen del dispositivo. Un punto de conexión tiene una dirección de flujo de datos, ya sea de entrada (desde el dispositivo al host) o de salida (desde el host al dispositivo). Puede ser útil pensar en estas instrucciones como en relación con el host. La entrada va al host; la salida procede del host. En el siguiente diagrama se ilustran los dos extremos.
+En la terminología USB, los puntos de conexión son los puntos donde los datos entran o abandonan el dispositivo. Un punto de conexión tiene una dirección de flujo de datos, ya sea de entrada (de dispositivo a host) o de salida (de host a dispositivo). Puede resultar de ayuda pensar en estas direcciones como relativas al host. La entrada va al host; la salida procede del host. En el diagrama siguiente se muestran los dos puntos de conexión.
 
-![extremos USB](images/ksnodes01.png)
+![puntos de conexión USB](images/ksnodes01.png)
 
-En un dispositivo UVC, las funciones del dispositivo se dividen lógicamente en componentes denominados unidades y terminales. Una unidad recibe uno o más flujos de datos como entrada y entrega exactamente un flujo como salida. Un terminal es el punto inicial o final de un flujo de datos. Los puntos de conexión USB se corresponden con los terminales, pero las direcciones se invierten: un extremo de entrada se representa mediante un terminal de salida y viceversa. En el diagrama siguiente se muestra la relación entre los terminales y los extremos.
+En un dispositivo UVC, las funciones del dispositivo se dividen lógicamente en componentes denominados unidades y terminales. Una unidad recibe uno o varios flujos de datos como entrada y entrega exactamente una secuencia como salida. Un terminal es el punto inicial o final de un flujo de datos. Los puntos de conexión USB corresponden a terminales, pero las direcciones se invierten: un punto de conexión de entrada se representa mediante un terminal de salida y viceversa. En el diagrama siguiente se muestra la relación entre terminales y puntos de conexión.
 
-![unidades de UVC y terminales](images/ksnodes02.png)
+![unidades uvc y terminales](images/ksnodes02.png)
 
-Además, no todos los terminales corresponden a un punto de conexión USB. El término punto de conexión hace referencia específicamente a las conexiones USB y un dispositivo puede enviar o recibir datos a través de conexiones no USB. Por ejemplo, una cámara de vídeo es un terminal de entrada y una pantalla LCD es un terminal de salida.
+Además, no todos los terminales corresponden a un punto de conexión USB. El término punto de conexión hace referencia específicamente a las conexiones USB y un dispositivo puede enviar o recibir datos a través de conexiones no USB. Por ejemplo, una cámara de vídeo es un terminal de entrada y una pantalla DE TECLADO es un terminal de salida.
 
-En el filtro de proxy de KS, las unidades y los terminales se representan como nodos dentro del filtro. El término nodo es más general que los términos unidad y terminal, ya que los dispositivos que no son USB también pueden tener nodos. Para obtener información sobre los nodos de un filtro, consulte el filtro de la interfaz [**IKsTopologyInfo**](/previous-versions/windows/desktop/api/Vidcap/nn-vidcap-ikstopologyinfo) . Los tipos de nodo se identifican mediante GUID. Los nodos de selector son nodos que pueden alternar entre dos o más entradas. Los nodos de selector exponen la interfaz [**ISelector**](/previous-versions/windows/desktop/api/Vidcap/nn-vidcap-iselector) .
+En el filtro de proxy KS, las unidades y los terminales se representan como nodos dentro del filtro. El término nodo es más general que los términos unidad y terminal, ya que los dispositivos que no son USB también pueden tener nodos. Para obtener información sobre los nodos de un filtro, consulte el filtro para la [**interfaz IKsTopologyInfo.**](/previous-versions/windows/desktop/api/Vidcap/nn-vidcap-ikstopologyinfo) Los tipos de nodo se identifican mediante GUID. Los nodos selectores son nodos que pueden cambiar entre dos o más entradas. Los nodos selectores exponen [**la interfaz ISelector.**](/previous-versions/windows/desktop/api/Vidcap/nn-vidcap-iselector)
 
-El código siguiente comprueba si un PIN de salida de un filtro recibe la entrada de un nodo de un tipo determinado.
+El código siguiente comprueba si un pin de salida de un filtro recibe la entrada de un nodo de un tipo determinado.
 
 
 ```C++

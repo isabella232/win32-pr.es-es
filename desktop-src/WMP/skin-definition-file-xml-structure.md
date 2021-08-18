@@ -37,13 +37,13 @@ El archivo de definición de máscara se escribe en XML. Una de las característ
 
 
 
-Teniendo en cuenta la estructura simple de los elementos, puede tener sentido de los atributos que hacen que cada elemento sea único. Los detalles de cada elemento se tratarán en los temas restantes de esta sección. Para obtener más información sobre los elementos y atributos, vea [la Referencia de programación de máscaras](skin-programming-reference.md).
+Teniendo en cuenta la estructura simple de los elementos, puede tener en cuenta los atributos que hacen que cada elemento sea único. Los detalles de cada elemento se tratarán en los temas restantes de esta sección. Para obtener más información sobre los elementos y atributos, vea la [Referencia de programación de máscaras](skin-programming-reference.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Crear el archivo de definición de máscara**](creating-the-skin-definition-file.md)
+[**Creación del archivo de definición de máscara**](creating-the-skin-definition-file.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: DownloadCollection.item (método)
+title: Método DownloadCollection.item
 description: Nota En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método item recupera un objeto de descarga pendiente.
 ms.assetid: a79db9db-e80c-48db-aee6-9bd8f77a7dff
 keywords:
-- item method Reproductor de Windows Media
-- item method Reproductor de Windows Media , DownloadCollection (clase)
-- DownloadCollection class Reproductor de Windows Media , item method
+- método item Reproductor de Windows Media
+- método item Reproductor de Windows Media , Clase DownloadCollection
+- Clase DownloadCollection Reproductor de Windows Media método , item
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118997045"
 ---
-# <a name="downloadcollectionitem-method"></a>DownloadCollection.item (método)
+# <a name="downloadcollectionitem-method"></a>Método DownloadCollection.item
 
 > [!Note]  
 > En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
@@ -60,20 +60,20 @@ Este método devuelve un **objeto DownloadItem.**
 
 ## <a name="remarks"></a>Comentarios
 
-El *valor itemID* es de base cero.
+El *valor itemID* está basado en cero.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/>                                  |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -15,7 +15,7 @@ ms.locfileid: "119011103"
 
 El compilador MIDL genera hasta tres funciones para cada tipo al que se aplica el atributo de codificación \[ [](/windows/desktop/Midl/encode) \] \[ [](/windows/desktop/Midl/decode) \] o descodificación. Por ejemplo, para un tipo definido por el usuario denominado *MyType*, el compilador genera código para las funciones MyType \_ Encode, MyType Decode y \_ MyType \_ AlignSize. Para estas funciones, el compilador escribe prototipos en Stub.h y código fuente en Stub \_ c.c. Por lo general, puede codificar un objeto *MyType* con MyType Encode y descodificar un objeto del \_ búfer mediante MyType \_ Decode. MyType AlignSize se usa si necesita conocer el tamaño del búfer de serialización \_ antes de asignarlo.
 
-El compilador MIDL genera la siguiente función de codificación. Esta función serializa los datos del objeto al que apunta pObject y el búfer se obtiene según el método especificado en el identificador. Después de escribir los datos serializados en el búfer, se controla el búfer. Tenga en cuenta que el identificador hereda el estado de las llamadas anteriores y que los búferes deben estar alineados en 8.
+El compilador MIDL genera la siguiente función de codificación. Esta función serializa los datos del objeto al que apunta pObject y el búfer se obtiene según el método especificado en el identificador. Después de escribir los datos serializados en el búfer, puede controlar el búfer. Tenga en cuenta que el identificador hereda el estado de las llamadas anteriores y que los búferes deben estar alineados en 8.
 
 Para un identificador implícito:
 
@@ -43,7 +43,7 @@ Para un identificador explícito:
 void MyType_Decode (handle_t Handle, MyType __RPC_FAR * pObject);
 ```
 
-La siguiente función devuelve un tamaño, en bytes, que incluye la instancia de tipo más los bytes de relleno necesarios para alinear los datos. Esto permite serializar un conjunto de instancias de los mismos tipos o diferentes en un búfer, al tiempo que se garantiza que los datos de cada objeto se alinean correctamente. MyType AlignSize supone que la instancia a la que apunta pObject se serializará en un búfer a partir del \_ desplazamiento alineado en 8.
+La función siguiente devuelve un tamaño, en bytes, que incluye la instancia de tipo más los bytes de relleno necesarios para alinear los datos. Esto permite serializar un conjunto de instancias de los mismos tipos o diferentes en un búfer, al tiempo que se garantiza que los datos de cada objeto se alinean correctamente. MyType AlignSize supone que la instancia a la que apunta pObject se serializará en un búfer a partir del \_ desplazamiento alineado en 8.
 
 Para un identificador implícito:
 

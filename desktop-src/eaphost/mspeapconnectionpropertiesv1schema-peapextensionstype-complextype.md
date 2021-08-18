@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de PeapExtensionsType
-description: Contiene mejoras de esquema realizadas en Windows 7. Las mejoras futuras del esquema se controlarán mediante PeapExtensionsTypeV2.
+title: PeapExtensionsType Complex Type
+description: Contiene mejoras de esquema realizadas en Windows 7. PeapExtensionsTypeV2 controlará futuras mejoras de esquema.
 ms.assetid: a8fb8474-a375-4401-83b0-4fa87d637209
 keywords:
-- Tipo complejo PeapExtensionsType EAPHost
+- PeapExtensionsType de tipo complejo EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7cb8c698122c5a466ae95f728838425a5f10c665
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 212c8bf6b1421cfc461288e8f57258b40e11e9118c9ea2b2f620986e91d226f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984035"
 ---
-# <a name="peapextensionstype-complex-type"></a>Tipo complejo de PeapExtensionsType
+# <a name="peapextensionstype-complex-type"></a>PeapExtensionsType Complex Type
 
-El tipo complejo **PeapExtensionsType** contiene mejoras de esquema realizadas en Windows 7. Las mejoras futuras del esquema se controlarán mediante [**PeapExtensionsTypeV2**](mspeapconnectionpropertiesv2-peapextensionstypev2-complextype.md).
+El **tipo complejo PeapExtensionsType** contiene mejoras de esquema realizadas Windows 7. [**PeapExtensionsTypeV2**](mspeapconnectionpropertiesv2-peapextensionstypev2-complextype.md)controlará futuras mejoras de esquema.
 
 ``` syntax
 <xs:complexType name="PeapExtensionsType">
@@ -61,9 +61,9 @@ El tipo complejo **PeapExtensionsType** contiene mejoras de esquema realizadas e
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **PeapExtensionsType** es opcional.
+El **elemento PeapExtensionsType** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ El elemento **PeapExtensionsType** es opcional.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -83,10 +83,10 @@ El elemento **PeapExtensionsType** es opcional.
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-schema.md)
+[Mspeapconnectionpropertiesv1 Schema](mspeapconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
-[Tipos complejos de esquema de mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-complex-types.md)
+[Mspeapconnectionpropertiesv1 Schema Complex Types](mspeapconnectionpropertiesv1schema-complex-types.md)
 </dt> </dl>
 
  

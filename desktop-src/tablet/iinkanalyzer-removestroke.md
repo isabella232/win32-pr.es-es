@@ -1,7 +1,7 @@
 ---
-description: Quita el trazo especificado de IInkAnalyzer.
+description: Quita el trazo especificado del IInkAnalyzer.
 ms.assetid: e182ae35-854e-401d-8e26-aee645c05430
-title: 'IInkAnalyzer:: RemoveStroke (método) (IACom. h)'
+title: Método IInkAnalyzer::RemoveStroke (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 03952e6e14679c53f7b65f21463fc0457f302b8e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd0a972ed776c40fc42d695df2058c62f9af84f8fc09155758d197772e9abfc7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119092015"
 ---
-# <a name="iinkanalyzerremovestroke-method"></a>IInkAnalyzer:: RemoveStroke (método)
+# <a name="iinkanalyzerremovestroke-method"></a>IInkAnalyzer::RemoveStroke (método)
 
-Quita el trazo especificado de [**IInkAnalyzer**](iinkanalyzer.md).
+Quita el trazo especificado de [**IInkAnalyzer.**](iinkanalyzer.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ HRESULT RemoveStroke(
 
 <dl> <dt>
 
-*plStrokeId* \[ de\]
+*plStrokeId* \[ En\]
 </dt> <dd>
 
 Identificador del trazo.
@@ -48,57 +48,57 @@ Identificador del trazo.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método quita del [**IInkAnalyzer**](iinkanalyzer.md)los datos del paquete y las referencias a, el trazo especificado.
+Este método quita los datos de paquetes para el trazo especificado de [**IInkAnalyzer**](iinkanalyzer.md)y las referencias a .
 
-Este método quita el trazo del nodo de contexto hoja que hace referencia al trazo. Si [**IContextNode**](icontextnode.md) ya no hace referencia a ningún trazo, este método elimina los objetos **IContextNode** y **IContextNode** antecesor que ya no tienen ningún nodo secundario.
+Este método quita el trazo del nodo de contexto hoja que hace referencia al trazo. Si [**IContextNode**](icontextnode.md) ya no hace referencia a ningún trazo, este método elimina el **IContextNode** y cualquier objeto **IContextNode** antecesor que ya no tenga nodos secundarios.
 
-Después de que este método quita el trazo del [**IContextNode**](icontextnode.md), actualiza la región desfasada del objeto [**IInkAnalyzer**](iinkanalyzer.md) (vea [**IInkAnalyzer:: GetDirtyRegion Method**](iinkanalyzer-getdirtyregion.md)) para incluir el rectángulo de selección del trazo que se ha quitado.
+Después de que este método quite el trazo del [**IContextNode**](icontextnode.md), actualiza la región desusada del objeto [**IInkAnalyzer**](iinkanalyzer.md) (vea [**IInkAnalyzer::GetDirtyRegion Method**](iinkanalyzer-getdirtyregion.md)) para incluir el rectángulo delimitador del trazo quitado.
 
-Si *plStrokeId* no identifica un trazo asociado a [**IInkAnalyzer**](iinkanalyzer.md), este método devuelve sin actualizar el analizador de tinta.
+Si *plStrokeId* no identifica un trazo asociado a [**IInkAnalyzer,**](iinkanalyzer.md)este método devuelve sin actualizar el analizador de entrada de lápiz.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: AddStroke (método)**](iinkanalyzer-addstroke.md)
+[**IInkAnalyzer::AddStroke (Método)**](iinkanalyzer-addstroke.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: AddStrokeForLanguage (método)**](iinkanalyzer-addstrokeforlanguage.md)
+[**IInkAnalyzer::AddStrokeForLanguage (Método)**](iinkanalyzer-addstrokeforlanguage.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: AddStrokes (método)**](iinkanalyzer-addstrokes.md)
+[**IInkAnalyzer::AddStrokes (Método)**](iinkanalyzer-addstrokes.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: AddStrokesForLanguage (método)**](iinkanalyzer-addstrokesforlanguage.md)
+[**IInkAnalyzer::AddStrokesForLanguage (Método)**](iinkanalyzer-addstrokesforlanguage.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: RemoveStrokes (método)**](iinkanalyzer-removestrokes.md)
+[**IInkAnalyzer::RemoveStrokes (Método)**](iinkanalyzer-removestrokes.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: GetDirtyRegion (método)**](iinkanalyzer-getdirtyregion.md)
+[**IInkAnalyzer::GetDirtyRegion (Método)**](iinkanalyzer-getdirtyregion.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

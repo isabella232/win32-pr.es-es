@@ -1,17 +1,17 @@
 ---
 description: Especifica el tipo de imagen que genera un codificador de vídeo.
 ms.assetid: 18A47033-3EAC-46C3-94AB-6ED20732F63C
-title: MFSampleExtension_VideoEncodePictureType atributo (mfapi. h)
+title: MFSampleExtension_VideoEncodePictureType atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bfe0df0e4f3163e7c8c0581c5c7c2a854555eec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3be87284be3b605e3af70d64df98e5d762aa7cc353bb83b5f61a110d1242ae1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973174"
 ---
-# <a name="mfsampleextension_videoencodepicturetype-attribute"></a>\_Atributo VideoEncodePictureType de MFSampleExtension
+# <a name="mfsampleextension_videoencodepicturetype-attribute"></a>Atributo MFSampleExtension \_ VideoEncodePictureType
 
 Especifica el tipo de imagen que genera un codificador de vídeo.
 
@@ -21,17 +21,17 @@ Especifica el tipo de imagen que genera un codificador de vídeo.
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para establecer este atributo, llame a [**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Se aplica a
 
-[**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
+[**SAMPLESample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El [**codificador de vídeo H. 264**](h-264-video-encoder.md) establece este atributo en los ejemplos de salida que genera. El valor del atributo es un miembro de la enumeración [**eAVEncH264PictureType**](/windows/desktop/api/codecapi/ne-codecapi-eavench264picturetype) .
+El codificador de vídeo [**H.264**](h-264-video-encoder.md) establece este atributo en los ejemplos de salida que genera. El valor del atributo es miembro de la [**enumeración eAVEncH264PictureType.**](/windows/desktop/api/codecapi/ne-codecapi-eavench264picturetype)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,9 +39,9 @@ El [**codificador de vídeo H. 264**](h-264-video-encoder.md) establece este atr
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                  |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                  |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -49,10 +49,10 @@ El [**codificador de vídeo H. 264**](h-264-video-encoder.md) establece este atr
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**Codificador de vídeo H. 264**](h-264-video-encoder.md)
+[**Codificador de vídeo H.264**](h-264-video-encoder.md)
 </dt> <dt>
 
 [Atributos de ejemplo](sample-attributes.md)

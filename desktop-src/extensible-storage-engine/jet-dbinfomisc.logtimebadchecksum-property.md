@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_DBINFOMISC. logtimeBadChecksum'
-title: Propiedad JET_DBINFOMISC. logtimeBadChecksum
+description: 'Más información sobre: JET_DBINFOMISC.logtimeBadChecksum'
+title: JET_DBINFOMISC.logtimeBadChecksum, propiedad
 TOCTitle: 'logtimeBadChecksum property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.logtimeBadChecksum
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfomisc.logtimebadchecksum(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1d0db5a0eb9a6cdc5c31e833259c776cf2c63a85
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 70675ddbeb37ba3f32b23f02a801c9236d4d6695e551245be99033755c04c5a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112194"
 ---
-# <a name="jet_dbinfomisclogtimebadchecksum-property"></a>Propiedad JET_DBINFOMISC. logtimeBadChecksum
+# <a name="jet_dbinfomisclogtimebadchecksum-property"></a>JET_DBINFOMISC.logtimeBadChecksum, propiedad
 
-Obtiene la última vez que se encontró un error de suma de comprobación que no se pudo corregir.
+Obtiene la última vez que se encontró un error de suma de comprobación no corregible.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public JET_LOGTIME logtimeBadChecksum { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_LOGTIME](./jet-logtime-structure2.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_LOGTIME](./jet-logtime-structure2.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_DBINFOMISC (clase)](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC clase](./jet-dbinfomisc-class.md)
 
-[Miembros de JET_DBINFOMISC](./jet-dbinfomisc-members.md)
+[JET_DBINFOMISC miembros](./jet-dbinfomisc-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

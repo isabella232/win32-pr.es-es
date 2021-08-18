@@ -1,29 +1,29 @@
 ---
-title: Crear una suscripción iniciada por el origen
-description: Las suscripciones iniciadas por el origen permiten definir una suscripción en un equipo del recopilador de eventos sin definir los equipos de origen del evento y, a continuación, se pueden configurar varios equipos de origen de eventos remotos (mediante una configuración de directiva de grupo) para reenviar eventos al equipo del recopilador de eventos. Para que un equipo local pueda suscribirse a eventos y un equipo remoto pueda reenviar eventos, ambos equipos deben estar configurados para la recopilación de eventos y el reenvío de eventos. Para obtener más información sobre cómo configurar los equipos, consulte Configuración de una suscripción iniciada por el origen.
+title: Creación de una suscripción iniciada por el origen
+description: Las suscripciones iniciadas por el origen permiten definir una suscripción en un equipo del recopilador de eventos sin definir los equipos de origen de eventos y, a continuación, se pueden configurar varios equipos de origen de eventos remotos (mediante una configuración de directiva de grupo) para reenviar eventos al equipo del recopilador de eventos. Para que un equipo local pueda suscribirse a eventos y un equipo remoto pueda reenviar eventos, ambos equipos deben estar configurados para la recopilación de eventos y el reenvío de eventos. Para obtener más información sobre cómo configurar los equipos, vea Configurar una suscripción iniciada por el origen.
 ms.assetid: 489d3613-177f-4045-a055-2c1577ef2191
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06e0e6d4aa7c94afcdbe6458c2c23c214d935db2
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ef0f3a40b3404441df40434c7ddb2f1bb6ac578caaf182c14d2825c6f99e7f9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997975"
 ---
-# <a name="creating-a-source-initiated-subscription"></a>Crear una suscripción iniciada por el origen
+# <a name="creating-a-source-initiated-subscription"></a>Creación de una suscripción iniciada por el origen
 
-Las suscripciones iniciadas por el origen permiten definir una suscripción en un equipo del recopilador de eventos sin definir los equipos de origen del evento y, a continuación, se pueden configurar varios equipos de origen de eventos remotos (mediante una configuración de directiva de grupo) para reenviar eventos al equipo del recopilador de eventos. Para que un equipo local pueda suscribirse a eventos y un equipo remoto pueda reenviar eventos, ambos equipos deben estar configurados para la recopilación de eventos y el reenvío de eventos. Para obtener más información sobre cómo configurar los equipos, consulte [configuración de una suscripción iniciada](setting-up-a-source-initiated-subscription.md)por el origen.
+Las suscripciones iniciadas por el origen permiten definir una suscripción en un equipo del recopilador de eventos sin definir los equipos de origen de eventos y, a continuación, se pueden configurar varios equipos de origen de eventos remotos (mediante una configuración de directiva de grupo) para reenviar eventos al equipo del recopilador de eventos. Para que un equipo local pueda suscribirse a eventos y un equipo remoto pueda reenviar eventos, ambos equipos deben estar configurados para la recopilación de eventos y el reenvío de eventos. Para obtener más información sobre cómo configurar los equipos, vea [Configurar una suscripción iniciada por el origen](setting-up-a-source-initiated-subscription.md).
 
-El ejemplo de código siguiente sigue una serie de pasos para crear una suscripción iniciada por el origen en la que los orígenes de eventos están en el mismo dominio que el equipo del recopilador de eventos.
+En el ejemplo de código siguiente se siguen una serie de pasos para crear una suscripción iniciada por el origen en la que los orígenes de eventos se encuentran en el mismo dominio que el equipo del recopilador de eventos.
 
 **Para crear mediante programación una suscripción iniciada por el origen**
 
-1.  Abra la suscripción proporcionando el nombre de la suscripción y los derechos de acceso como parámetros a la función [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . Para obtener más información sobre los derechos de acceso, consulte [**constantes del recopilador de eventos de Windows**](windows-event-collector-constants.md).
-2.  Establezca las propiedades de la suscripción mediante una llamada a la función [**EcSetSubscriptionProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetsubscriptionproperty) . Para obtener más información sobre las propiedades de suscripción que se pueden establecer, vea la enumeración ID. de [**\_ propiedad de suscripción de \_ \_ EC**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) .
-3.  Guarde la suscripción mediante una llamada a la función [**EcSaveSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription) .
-4.  Cierre la suscripción mediante una llamada a la función [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .
+1.  Abra la suscripción proporcionando el nombre de la suscripción y los derechos de acceso como parámetros para la [**función EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Para obtener más información sobre los derechos de acceso, [**vea Windows Event Collector Constants**](windows-event-collector-constants.md).
+2.  Establezca las propiedades de la suscripción mediante una llamada a la [**función EcSetSubscriptionProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetsubscriptionproperty) Para obtener más información sobre las propiedades de suscripción que se pueden establecer, vea la [**\_ enumeración EC SUBSCRIPTION \_ PROPERTY \_ ID.**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id)
+3.  Guarde la suscripción mediante una llamada a [**la función EcSaveSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription)
+4.  Cierre la suscripción mediante una llamada a la [**función EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
 En el siguiente ejemplo de C++ se muestra cómo crear una suscripción iniciada por el origen:
 
@@ -421,15 +421,15 @@ DWORD GetProperty(EC_HANDLE hSubscription,
 
         **wecutil gr***<subscriptionID>*
 
-    2.  Compruebe que el origen del evento se ha conectado. Es posible que tenga que esperar hasta que se haya creado el intervalo de actualización especificado en la Directiva después de crear la suscripción para que el origen del evento se conecte.
+    2.  Compruebe que el origen del evento se ha conectado. Es posible que tenga que esperar hasta que el intervalo de actualización especificado en la directiva haya terminado después de crear la suscripción para que se conecte el origen del evento.
     3.  Ejecute el siguiente comando para obtener la información de la suscripción:
 
-        **wecutil GS***<subscriptionID>*
+        **wecutil gs***<subscriptionID>*
 
-    4.  Obtiene el valor de DeliveryMaxItems de la información de suscripción.
+    4.  Obtenga el valor DeliveryMaxItems de la información de la suscripción.
 
-2.  En el equipo de origen del evento, genere los eventos que coinciden con la consulta de la suscripción de eventos. Se debe generar el número de eventos DeliveryMaxItems para que se reenvíen los eventos.
-3.  En el equipo del recopilador de eventos, compruebe que los eventos se han reenviado al registro Eventos reenviados o al registro especificado en la suscripción.
+2.  En el equipo de origen del evento, genera los eventos que coinciden con la consulta de la suscripción de eventos. Se debe generar el número de eventos DeliveryMaxItems para que los eventos se reenván.
+3.  En el equipo del recopilador de eventos, compruebe que los eventos se han reenviado al registro ForwardedEvents o al registro especificado en la suscripción.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -438,12 +438,12 @@ DWORD GetProperty(EC_HANDLE hSubscription,
 [Configurar equipos para reenviar y recopilar eventos](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11))
 </dt> <dt>
 
-[Configuración de una suscripción iniciada por el origen](setting-up-a-source-initiated-subscription.md)
+[Configuración de una suscripción iniciada por origen](setting-up-a-source-initiated-subscription.md)
 </dt> <dt>
 
-[Referencia del recopilador de eventos de Windows](windows-event-collector-reference.md)
+[Windows Referencia del recopilador de eventos](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -51,7 +51,7 @@ Los usuarios de una aplicación que depende de los códigos IOCTL privados deben
 
 ## <a name="solution"></a>Solución
 
-Las aplicaciones deben usar Windows API de dispositivos portátiles (WPD) para buscar e interactuar con cualquier dispositivo WPD. Aunque un porcentaje significativo de dispositivos WPD implementan MTP para la comunicación con el equipo, WPD no se limita solo a los dispositivos MTP. Además, si el acceso directo al dispositivo a través de las ICTL privadas hubiera limitado la aplicación a la comunicación solo con dispositivos conectados a USB, el uso de la API de WPD amplía la lista de opciones de conectividad a otros protocolos de comunicación (por ejemplo, Wi-Fi). En los casos excepcionales en los que la aplicación debe tener en cuenta MTP, la API de WPD proporciona un mecanismo de paso a través para los comandos de MTP sin procesar.
+Las aplicaciones deben usar la API Windows Portable Devices (WPD) para buscar e interactuar con cualquier dispositivo WPD. Aunque un porcentaje significativo de dispositivos WPD implementan MTP para la comunicación con el equipo, WPD no se limita solo a los dispositivos MTP. Además, si el acceso directo al dispositivo a través de las ICTL privadas hubiera limitado la aplicación a la comunicación solo con dispositivos conectados a USB, el uso de la API de WPD amplía la lista de opciones de conectividad a otros protocolos de comunicación (por ejemplo, Wi-Fi). En los casos excepcionales en los que la aplicación debe tener en cuenta MTP, la API de WPD proporciona un mecanismo de paso a través para los comandos de MTP sin procesar.
 
 ## <a name="leveraging-feature-capabilities"></a>Aprovechamiento de las funcionalidades de características
 

@@ -1,7 +1,7 @@
 ---
 description: El método ShouldDrawSampleNow determina si el vídeo se debe dibujar sin establecer un vínculo de aviso de temporizador con el reloj.
 ms.assetid: 2cbefc66-0d99-4559-b210-3163cd413dbf
-title: Método CBaseVideoRenderer. ShouldDrawSampleNow (Renbase. h)
+title: Método CBaseVideoRenderer.ShouldDrawSampleNow (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8c96b7453eb6009121fd6782030f7988663f5e8f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e3c0297ccf670de12380c5f02af2c67d6050bac29dd1fa7e7e89a6e6c7c20592
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074691"
 ---
-# <a name="cbasevideorenderershoulddrawsamplenow-method"></a>CBaseVideoRenderer. ShouldDrawSampleNow, método
+# <a name="cbasevideorenderershoulddrawsamplenow-method"></a>Método CBaseVideoRenderer.ShouldDrawSampleNow
 
 El `ShouldDrawSampleNow` método determina si el vídeo se debe dibujar sin establecer un vínculo de aviso de temporizador con el reloj.
 
@@ -47,31 +47,31 @@ virtual HRESULT ShouldDrawSampleNow(
 *pMediaSample* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) para el ejemplo.
+Puntero a la [**interfaz IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) del ejemplo.
 
 </dd> <dt>
 
 *ptrStart* 
 </dt> <dd>
 
-Puntero a la hora de inicio de la representación.
+Puntero a la hora de comenzar la representación.
 
 </dd> <dt>
 
 *ptrEnd* 
 </dt> <dd>
 
-Puntero a la hora de detener la representación.
+Puntero al momento en que se detiene la representación.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Devuelve S \_ OK para indicar que el dibujo se realiza a la vez sin esperar, es \_ false para indicar que se dibuje en el tiempo *ptrStart*, o bien un error para indicar que no se dibuja el ejemplo; es decir, se omite para ahorrar tiempo.
+Devuelve un **valor HRESULT.** Devuelve S OK para significar draw a la vez sin esperar, S FALSE para significar \_ \_ draw at time *ptrStart* o un error para significar no dibujar el ejemplo; es decir, omitirlo para ahorrar tiempo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro invalida [**CBaseRenderer:: ShouldDrawSampleNow**](cbaserenderer-shoulddrawsamplenow.md).
+Esta función miembro invalida [**CBaseRenderer::ShouldDrawSampleNow**](cbaserenderer-shoulddrawsamplenow.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Esta función miembro invalida [**CBaseRenderer:: ShouldDrawSampleNow**](cbasere
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Esta función miembro invalida [**CBaseRenderer:: ShouldDrawSampleNow**](cbasere
 
 <dl> <dt>
 
-[**Clase CBaseVideoRenderer**](cbasevideorenderer.md)
+[**CBaseVideoRenderer (clase)**](cbasevideorenderer.md)
 </dt> </dl>
 
  

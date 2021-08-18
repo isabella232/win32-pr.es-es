@@ -4,34 +4,34 @@ description: En este artículo se describe cómo deshabilitar temporalmente los 
 ms.assetid: 732523f9-ecff-c6c2-646d-1bc3443232ab
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aff426e0d728150cf5f6ac3cd8d46a711c9b4f8b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 08eae2ee1b30e78b17440f2c6144c529de4e6d7b6272a5d497de5c5e631ac1c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104487926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070525"
 ---
 # <a name="disabling-shortcut-keys-in-games"></a>Deshabilitar teclas de método abreviado en juegos
 
-En este artículo se describe cómo deshabilitar temporalmente los métodos abreviados de teclado en Microsoft Windows para evitar la interrupción del juego para juegos de pantalla completa. La tecla Mayús y la tecla CTRL se usan a menudo como botones activar o ejecutar en juegos. Si los usuarios presionan accidentalmente la tecla de Windows (que se encuentra cerca de estas teclas), pueden provocar que se salten repentinamente la aplicación, lo que deteriora la experiencia del juego. El uso de la tecla Mayús como botón de juego puede ejecutar accidentalmente el acceso directo de StickyKeys, que puede mostrar un cuadro de diálogo de advertencia. Para evitar estos problemas, debe deshabilitar estas claves cuando se ejecute en modo de pantalla completa y habilitar las claves de nuevo en sus controladores predeterminados cuando se ejecute en modo de ventana o salga de la aplicación.
+En este artículo se describe cómo deshabilitar temporalmente los métodos abreviados de teclado en Microsoft Windows para evitar la interrupción del juego para juegos de pantalla completa. La tecla MAYÚS y la tecla CTRL se suelen usar como botones de encendido o ejecución en juegos. Si los usuarios presionan accidentalmente la tecla Windows (ubicada cerca de estas teclas), pueden provocar que se salte repentinamente de la aplicación, lo que provoca la experiencia de juego. El simple uso de la tecla MAYÚS como botón de juego puede ejecutar accidentalmente el acceso directo StickyKeys, que puede mostrar un cuadro de diálogo de advertencia. Para evitar estos problemas, debe deshabilitar estas claves cuando se ejecuten en modo de pantalla completa y habilitar las claves de vuelta a sus controladores predeterminados cuando se ejecuten en modo de ventana o salir de la aplicación.
 
 En este artículo se describe cómo hacer lo siguiente:
 
--   [Deshabilitar la tecla Windows con un enlace de teclado](#disable-the-windows-key-with-a-keyboard-hook)
+-   [Deshabilitar la Windows con un enlace de teclado](#disable-the-windows-key-with-a-keyboard-hook)
 -   [Deshabilitar las teclas de método abreviado de accesibilidad](#disable-the-accessibility-shortcut-keys)
 
-## <a name="disable-the-windows-key-with-a-keyboard-hook"></a>Deshabilitar la tecla Windows con un enlace de teclado
+## <a name="disable-the-windows-key-with-a-keyboard-hook"></a>Deshabilitar la Windows con un enlace de teclado
 
-Use un enlace de teclado de bajo nivel para filtrar la clave de Windows para que no se procese. El enlace de teclado de bajo nivel que se muestra en el ejemplo 1 permanece en vigor aunque un usuario minimice la ventana o cambie a otra aplicación. Esto significa que debe asegurarse de que la clave de Windows no está deshabilitada cuando se desactiva la aplicación. Para ello, el código del ejemplo 1 controla el mensaje de ACTIVATEAPP de WM \_ .
+Use un enlace de teclado de bajo nivel para filtrar la Windows que se va a procesar. El enlace de teclado de bajo nivel que se muestra en el ejemplo 1 permanece en vigor incluso si un usuario minimiza la ventana o cambia a otra aplicación. Esto significa que debe tener cuidado de asegurarse de que la clave Windows está deshabilitada cuando se desactiva la aplicación. El código del ejemplo 1 lo hace controlando el mensaje \_ WM ACTIVATEAPP.
 
 > [!Note]  
 > Este método funciona en Windows 2000 y versiones posteriores de Windows. Este método también funciona con cuentas de usuario con privilegios mínimos (también conocidas como cuentas de usuario limitado).
 
- 
+ 
 
 DXUT usa este método y se muestra en el ejemplo de código siguiente.
 
-**Ejemplo 1: Usar un enlace de teclado de bajo nivel para deshabilitar la tecla Windows**
+**Ejemplo 1. Uso de un enlace de teclado de bajo nivel para deshabilitar Windows teclado**
 
 
 ```C++
@@ -95,26 +95,26 @@ LRESULT CALLBACK WndProc( HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam )
 
 ## <a name="disable-the-accessibility-shortcut-keys"></a>Deshabilitar las teclas de método abreviado de accesibilidad
 
-Windows incluye características de accesibilidad como StickyKeys, FilterKeys y ToggleKeys (vea [accesibilidad de Windows](/previous-versions/visualstudio/visual-studio-6.0/aa227589(v=vs.60))). Cada una de ellas sirve para un propósito diferente; StickyKeys, por ejemplo, está diseñado para personas que tienen dificultades para mantener presionadas dos o más teclas simultáneamente. Cada una de estas características de accesibilidad también tiene un método abreviado de teclado que permite activar o desactivar la característica. Por ejemplo, el acceso directo de StickyKeys se desencadena presionando la tecla Mayús cinco veces. Si la tecla Mayús también se usa en el juego, el usuario podría desencadenar accidentalmente este acceso directo durante la reproducción del juego. Cuando se desencadena el acceso directo, Windows (de forma predeterminada) presenta una advertencia en un cuadro de diálogo, lo que haría que Windows minimizara un juego que se ejecuta en modo de pantalla completa. Por supuesto, esto puede tener un efecto drástico en la reproducción de juegos.
+Windows incluye características de accesibilidad como StickyKeys, FilterKeys y ToggleKeys (consulte [Windows Accessibility](/previous-versions/visualstudio/visual-studio-6.0/aa227589(v=vs.60))). Cada uno de ellos tiene un propósito diferente; StickyKeys, por ejemplo, está diseñado para personas que tienen dificultades para mantener dos o más claves simultáneamente. Cada una de estas características de accesibilidad también tiene un método abreviado de teclado que permite que la característica esté activada o desactivada. Por ejemplo, el acceso directo StickyKeys se desencadena presionando la tecla MAYÚS cinco veces. Si también se usa la tecla MAYÚS en el juego, el usuario podría desencadenar accidentalmente este acceso directo durante el juego. Cuando se desencadena el acceso directo, Windows (de forma predeterminada) presenta una advertencia en un cuadro de diálogo, lo que haría que Windows minimizara un juego que se ejecuta en modo de pantalla completa. Esto, por supuesto, puede tener un efecto drástico en el juego.
 
-Las características de accesibilidad son necesarias para algunos clientes y no interfieren en los juegos de pantalla completa. por lo tanto, no debe cambiar la configuración de accesibilidad. Sin embargo, dado que los métodos abreviados para las características de accesibilidad pueden interrumpir la reproducción del juego si se desencadena accidentalmente, debe desactivar un acceso directo de accesibilidad solo si esa característica no está habilitada llamando a [**SystemParametersInfo**](/previous-versions/visualstudio/visual-studio-6.0/aa227580(v=vs.60)).
+Las características de accesibilidad son necesarias para algunos clientes y no interfieren con los juegos de pantalla completa. por lo tanto, no debe cambiar la configuración de accesibilidad. Sin embargo, dado que los accesos directos para las características de accesibilidad pueden interrumpir el juego si se desencadenan accidentalmente, debe desactivar un acceso directo de accesibilidad solo cuando esa característica no esté habilitada llamando a [**SystemParametersInfo**](/previous-versions/visualstudio/visual-studio-6.0/aa227580(v=vs.60)).
 
-Un acceso directo de accesibilidad que está desactivado por [**SystemParametersInfo**](/previous-versions/visualstudio/visual-studio-6.0/aa227580(v=vs.60)) permanece desactivado incluso después de salir de la aplicación. Esto significa que debe restaurar la configuración antes de salir de la aplicación. Dado que es posible que la aplicación no pueda salir correctamente, debe escribir esta configuración en el almacenamiento persistente para que se puedan restaurar cuando se vuelva a ejecutar la aplicación. También puede usar un controlador de excepciones para restaurar esta configuración si se produce un bloqueo.
+Un acceso directo de accesibilidad desactivado por [**SystemParametersInfo**](/previous-versions/visualstudio/visual-studio-6.0/aa227580(v=vs.60)) permanece desactivado incluso después de que se haya salido de la aplicación. Esto significa que debe restaurar la configuración antes de salir de la aplicación. Dado que es posible que la aplicación no se cierre correctamente, debe escribir esta configuración en el almacenamiento persistente para que se pueda restaurar cuando se vuelva a ejecutar la aplicación. También puede usar un controlador de excepciones para restaurar esta configuración si se produce un bloqueo.
 
-**Para desactivar estos métodos abreviados**
+**Para desactivar estos accesos directos**
 
 1.  Capture la configuración de accesibilidad actual antes de deshabilitarla.
-2.  Deshabilite el acceso directo de accesibilidad cuando la aplicación pase al modo de pantalla completa si la característica de accesibilidad está desactivada.
-3.  Restaure la configuración de accesibilidad cuando la aplicación pase a modo de ventana o se cierre.
+2.  Deshabilite el acceso directo de accesibilidad cuando la aplicación entre en modo de pantalla completa si la característica de accesibilidad está desactivada.
+3.  Restaure la configuración de accesibilidad cuando la aplicación entre en modo de ventana o salga.
 
-Este método se utiliza en DXUT y se muestra en el ejemplo de código siguiente.
+Este método se usa en DXUT y se muestra en el ejemplo de código siguiente.
 
 > [!Note]  
 > Este método funciona cuando se ejecuta en una cuenta de usuario limitada.
 
- 
+ 
 
-**Ejemplo 2: Deshabilitar las teclas de método abreviado de accesibilidad**
+**Ejemplo 2. Deshabilitación de las teclas de método abreviado de accesibilidad**
 
 
 ```C++
@@ -191,6 +191,6 @@ void AllowAccessibilityShortcutKeys( bool bAllowKeys )
 
 
 
- 
+ 
 
- 
+ 

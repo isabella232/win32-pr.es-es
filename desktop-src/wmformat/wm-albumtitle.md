@@ -1,9 +1,9 @@
 ---
-title: WM/álbum
-description: El atributo WM/álbum contiene el título del álbum en el que se liberó originalmente el contenido.
+title: WM/AlbumTitle
+description: El atributo WM/AlbumTitle contiene el título del álbum en el que se publicó originalmente el contenido.
 ms.assetid: 8b003634-7459-4586-9947-530c07dbc80a
 keywords:
-- Formato de Windows Media WM/álbum
+- Formato multimedia de Windows WM/AlbumTitle
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c172485c0f27eebfa6ad9887e0f37a5a8312c19
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 545f374961b7ca580862024121c9c6abb4861413bab86bde5ff867913c0f454e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963844"
 ---
-# <a name="wmalbumtitle"></a>WM/álbum
+# <a name="wmalbumtitle"></a>WM/AlbumTitle
 
-El atributo **WM/álbum** contiene el título del álbum en el que se liberó originalmente el contenido.
+El **atributo WM/AlbumTitle** contiene el título del álbum en el que se publicó originalmente el contenido.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMAlbumTitle
 
 ## <a name="data-type"></a>Tipo de datos
 
-**\_cadena de tipo WMT \_**
+**CADENA DE \_ TIPO \_ WMT**
 
 ## <a name="see-also"></a>Vea también
 
@@ -38,9 +38,9 @@ g \_ wszWMAlbumTitle
 [**Lista de atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

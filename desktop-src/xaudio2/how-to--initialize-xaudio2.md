@@ -1,23 +1,23 @@
 ---
-description: XAudio2 se inicializa para la reproducción de audio mediante la creación de una instancia del motor de XAudio2 y la creación de una voz de maestro.
+description: XAudio2 se inicializa para la reproducción de audio mediante la creación de una instancia del motor XAudio2 y la creación de una voz maestra.
 ms.assetid: 4db2e7fc-0a87-0344-a07c-3abf2b21af32
 title: 'Cómo: inicializar XAudio2'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4a613c1ae2b7c3a7f0c55ab5349a0a605aaeb2a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4eb55425c92e6d28a2689fb388869bbf42339d14bec3550e3f9e17798c1af68f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962734"
 ---
 # <a name="how-to-initialize-xaudio2"></a>Cómo: inicializar XAudio2
 
-XAudio2 se inicializa para la reproducción de audio mediante la creación de una instancia del motor de XAudio2 y la creación de una voz de maestro.
+XAudio2 se inicializa para la reproducción de audio mediante la creación de una instancia del motor XAudio2 y la creación de una voz maestra.
 
 **Para inicializar XAudio2**
 
-1.  Asegúrese de que ha inicializado COM. Para una aplicación de la tienda Windows, esto se hace como parte de la inicialización de la Windows Runtime. De lo contrario, use [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex).
+1.  Asegúrese de que ha inicializado COM. Para una Windows Store, esto se realiza como parte de la inicialización del entorno Windows ejecución. De lo contrario, [**use CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex).
 
     ```
     HRESULT hr;
@@ -28,7 +28,7 @@ XAudio2 se inicializa para la reproducción de audio mediante la creación de un
 
 
 
-2.  Use la función [**XAudio2Create**](/windows/desktop/api/xaudio2/nf-xaudio2-xaudio2create) para crear una instancia del motor de XAudio2.
+2.  Use la [**función XAudio2Create**](/windows/desktop/api/xaudio2/nf-xaudio2-xaudio2create) para crear una instancia del motor XAudio2.
 
     ```
     IXAudio2* pXAudio2 = nullptr;
@@ -38,9 +38,9 @@ XAudio2 se inicializa para la reproducción de audio mediante la creación de un
 
     
 
-3.  Use el método [**CreateMasteringVoice**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createmasteringvoice) para crear una voz de maestro.
+3.  Use el [**método CreateMasteringVoice**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createmasteringvoice) para crear una voz maestra.
 
-    Las voces de maestro encapsulan un dispositivo de audio. Es el destino final de todo el audio que pasa a través de un gráfico de audio.
+    Las voces maestras encapsulan un dispositivo de audio. Es el destino final para todo el audio que pasa a través de un gráfico de audio.
 
     ```
     IXAudio2MasteringVoice* pMasterVoice = nullptr;
@@ -50,9 +50,9 @@ XAudio2 se inicializa para la reproducción de audio mediante la creación de un
 
     
 
-## <a name="notes-for-windows-store-apps"></a>Notas para aplicaciones de la tienda Windows
+## <a name="notes-for-windows-store-apps"></a>Notas de las Windows Store
 
-Se recomienda usar un [puntero inteligente](/previous-versions/visualstudio/visual-studio-2012/hh279674(v=vs.110)) para administrar la duración de los objetos de XAUDIO2 de una manera segura de excepciones. En el caso de las aplicaciones de la tienda Windows, puede usar la plantilla de puntero inteligente [**ComPtr**](/previous-versions/visualstudio/visual-studio-2012/br244983(v=vs.110)) de la biblioteca de plantillas de C++ Windows Runtime (WRL).
+Se recomienda usar un [](/previous-versions/visualstudio/visual-studio-2012/hh279674(v=vs.110)) puntero inteligente para administrar la duración de los objetos XAUDIO2 de una manera segura para excepciones. Para Windows store, puede usar la plantilla de puntero inteligente [**ComPtr**](/previous-versions/visualstudio/visual-studio-2012/br244983(v=vs.110)) de la biblioteca de plantillas de C++ de Windows Runtime (WRL).
 
 
 ```C++
@@ -69,7 +69,7 @@ if ( FAILED(hr = pXAudio2->CreateMasteringVoice( &pMasterVoice ) ) )
 
 
 > [!Note]  
-> Asegúrese de que todos los objetos secundarios de XAUDIO2 estén totalmente liberados antes de liberar el objeto [**IXAudio2**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2) .
+> Asegúrese de que todos los objetos secundarios XAUDIO2 estén totalmente liberados antes de liberar el [**objeto IXAudio2.**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2)
 
  
 
@@ -77,7 +77,7 @@ if ( FAILED(hr = pXAudio2->CreateMasteringVoice( &pMasterVoice ) ) )
 
 <dl> <dt>
 
-[Introducción de XAudio2](getting-started.md)
+[XAudio2 Tareas iniciales](getting-started.md)
 </dt> <dt>
 
 [Cómo: cargar archivos de datos de audio en XAudio2](how-to--load-audio-data-files-in-xaudio2.md)

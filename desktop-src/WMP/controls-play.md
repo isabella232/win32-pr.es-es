@@ -5,7 +5,7 @@ ms.assetid: 2218a13b-6294-45f5-bb6f-c5a1e433e0c6
 keywords:
 - método play Reproductor de Windows Media
 - método play Reproductor de Windows Media , clase Controls
-- Controla la clase Reproductor de Windows Media método , play
+- Clase Controls Reproductor de Windows Media , método play
 topic_type:
 - apiref
 api_name:
@@ -72,18 +72,18 @@ En el ejemplo siguiente se crea un elemento HTML BUTTON que usa **play** para re
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Objeto Controls**](controls-object.md)
+[**Controls (objeto)**](controls-object.md)
 </dt> </dl>
 
  

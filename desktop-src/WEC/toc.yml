@@ -1,40 +1,40 @@
 - name: Recopilador de eventos de Windows
   href: windows-event-collector.md
   items:
-    - name: Usar el recopilador de eventos de Windows
+    - name: Uso Windows recopilador de eventos
       href: using-windows-event-collector.md
       items:
         - name: Creación de una suscripción iniciada por el recopilador
           href: creating-an-event-collector-subscription.md
-        - name: Configuración de una suscripción iniciada por el origen
+        - name: Configuración de una suscripción iniciada por origen
           href: setting-up-a-source-initiated-subscription.md
           items:
-            - name: Crear una suscripción iniciada por el origen
+            - name: Creación de una suscripción iniciada por el origen
               href: creating-a-source-initiated-subscription.md
         - name: Agregar un origen de eventos a una suscripción iniciada por el recopilador
           href: adding-an-event-source-to-an-event-collector-subscription.md
         - name: Creación de suscripciones de eventos de hardware
           href: creating-hardware-event-subscriptions.md
-        - name: Eliminar una suscripción del recopilador de eventos
+        - name: Eliminación de una suscripción del recopilador de eventos
           href: deleting-an-event-collector-subscription.md
-        - name: Mostrar Propiedades de suscripción del recopilador de eventos
+        - name: Mostrar las propiedades de suscripción del recopilador de eventos
           href: displaying-the-properties-of-an-event-collector-subscription.md
         - name: Mostrar el estado de una suscripción del recopilador de eventos
           href: displaying-the-status-of-an-event-collector-subscription.md
-        - name: Enumerar las suscripciones del recopilador de eventos
+        - name: Enumerar suscripciones del recopilador de eventos
           href: listing-event-collector-subscriptions.md
         - name: Quitar un origen de eventos de una suscripción iniciada por el recopilador
           href: removing-an-event-source-from-an-event-collector-subscription.md
-        - name: Volver a intentar una suscripción del recopilador de eventos
+        - name: Reintentar una suscripción del recopilador de eventos
           href: retrying-an-event-collector-subscription.md
-    - name: Referencia del recopilador de eventos de Windows
+    - name: Windows Referencia del recopilador de eventos
       href: windows-event-collector-reference.md
       items:
-        - name: Constantes del recopilador de eventos de Windows
+        - name: Windows Constantes del recopilador de eventos
           href: windows-event-collector-constants.md
-        - name: Tipos de datos del recopilador de eventos de Windows
+        - name: Windows Tipos de datos del recopilador de eventos
           href: windows-event-collector-data-types.md
-        - name: Enumeraciones del recopilador de eventos de Windows
+        - name: Windows Enumeraciones del recopilador de eventos
           href: windows-event-collector-enumerations.md
           items:
             - name: EC_SUBSCRIPTION_CONFIGURATION_MODE
@@ -55,7 +55,7 @@
               href: /windows/win32/api/Evcoll/ne-evcoll-ec_subscription_type
             - name: EC_VARIANT_TYPE
               href: /windows/win32/api/Evcoll/ne-evcoll-ec_variant_type
-        - name: Funciones del recopilador de eventos de Windows
+        - name: Windows Funciones del recopilador de eventos
           href: windows-event-collector-functions.md
           items:
             - name: EcClose
@@ -88,7 +88,7 @@
               href: /windows/desktop/api/Evcoll/nf-evcoll-ecremoveobjectarrayelement
             - name: EcRetrySubscription
               href: /windows/desktop/api/Evcoll/nf-evcoll-ecretrysubscription
-        - name: Estructuras del recopilador de eventos de Windows
+        - name: Windows Estructuras del recopilador de eventos
           href: windows-event-collector-structures.md
           items:
             - name: EC_VARIANT

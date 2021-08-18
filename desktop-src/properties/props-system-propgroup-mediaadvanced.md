@@ -4,12 +4,12 @@ ms.assetid: 8558141d-7637-4059-8349-7a0755edd7c3
 title: System.PropGroup.MediaAdvanced
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88c1a3ed046f7ed94423cdff392db91919dfb9d0
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 8b4891efa48cec37f9c8cdc34b0e7ffb71205674f235f63bcc4f9c736da75695
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404518"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969954"
 ---
 # <a name="systempropgroupmediaadvanced"></a>System.PropGroup.MediaAdvanced
 
@@ -30,7 +30,7 @@ propertyDescription
       type = Null
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 

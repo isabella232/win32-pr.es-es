@@ -1,22 +1,22 @@
 ---
-description: Impide que una entrada del menú Inicio para un acceso directo de la aplicación recién instalado reciba un resaltado.
+description: Impide que menú Inicio entrada de un acceso directo de aplicación recién instalado reciba un resaltado.
 ms.assetid: ff85da6f-a506-4225-8ac9-4a8a7be8d599
-title: System. AppUserModel. ExcludeFromShowInNewInstall
+title: System.AppUserModel.ExcludeFromShowInNewInstall
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 206cbbc6b07b0d3fec5833c046d4cb44c1e5e4e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba75b28b789fd9972eb484797957601dbcb5e93694b469eeb8b81bf9ba198d13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970904"
 ---
-# <a name="systemappusermodelexcludefromshowinnewinstall"></a>System. AppUserModel. ExcludeFromShowInNewInstall
+# <a name="systemappusermodelexcludefromshowinnewinstall"></a>System.AppUserModel.ExcludeFromShowInNewInstall
 
-Impide que una entrada del menú **Inicio** para un acceso directo de la aplicación recién instalado reciba un resaltado. Esto es equivalente a desactivar la opción **resaltar programas recién instalados** en la ventana **personalizar el menú Inicio** en un elemento individual. Esta propiedad se debe establecer en métodos abreviados para las herramientas y aplicaciones secundarias.
+Impide que **una entrada de** menú Inicio de un acceso directo de aplicación recién instalado reciba un resaltado. Esto equivale a borrar la opción **Resaltar programas** recién instalados en la ventana Personalizar **menú Inicio** de un elemento individual. Esta propiedad debe establecerse en accesos directos para herramientas y aplicaciones secundarias.
 
 > [!Note]  
-> Esta propiedad solo se usa en el menú Inicio de Windows Vista y Windows 7. La propiedad no se usa en la pantalla Inicio o el menú Inicio en Windows 8 y versiones posteriores.
+> Esta propiedad es propiedad que solo usa el menú Inicio en Windows Vista y Windows 7. La propiedad no la usa el pantalla Inicio o menú Inicio en Windows 8 y versiones posteriores
 
  
 
@@ -38,15 +38,15 @@ propertyDescription
       IsInnate = false
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Identificadores de modelo de usuario de la aplicación (AppUserModelIDs)](../shell/appids.md)
+[Id. de modelo de usuario de aplicación (AppUserModelID)](../shell/appids.md)
 </dt> <dt>
 
 [System.AppUserModel.ID](./props-system-appusermodel-id.md)
@@ -67,7 +67,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -82,7 +82,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -109,7 +109,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> <dt>
 
 [relatedPropertyInfo](./propdesc-schema-relatedpropertyinfo.md)

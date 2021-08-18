@@ -37,21 +37,21 @@ Si el elemento está en la biblioteca local del usuario actual, este atributo, e
 
 Si el elemento no está en la biblioteca local del usuario actual, pero pertenece a una biblioteca remota, este atributo es un identificador con el formato dlna-playsingle://*xxx*.
 
-Puede pasar un URI dlna-playsingle al método [**IWMPCore3::newMedia**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcore3-newmedia) para obtener una interfaz [**IWMPMedia**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia) que le permita ver los metadatos del elemento multimedia y posiblemente editar la clasificación de estrellas del elemento multimedia. Sin embargo, tenga en cuenta que el URI dlna-playsingle debe ser para un servicio de directorio de contenido (CDS) que Reproductor de Windows Media haya detectado. El **método newMedia** no iniciará la detección de UPnP y buscará el CDS.
+Puede pasar un URI de dlna-playsingle al método [**IWMPCore3::newMedia**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcore3-newmedia) para obtener una interfaz [**IWMPMedia**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia) que le permita ver los metadatos del elemento multimedia y, potencialmente, editar la clasificación de estrellas del elemento multimedia. Sin embargo, tenga en cuenta que el URI de dlna-playsingle debe ser para un servicio de directorio de contenido (CDS) que Reproductor de Windows Media haya detectado. El **método newMedia** no iniciará la detección de UPnP y buscará el CDS.
 
-Puede editar la clasificación de estrella de un elemento multimedia en una biblioteca remota solo si la biblioteca remota admite la operación de edición. Las bibliotecas remotas hospedadas en un equipo Windows 7 admiten la operación de edición. Las bibliotecas remotas hospedadas en un equipo que ejecuta Windows sistema operativo anterior a Windows 7 no admiten la operación de edición.
+Puede editar la clasificación por estrellas de un elemento multimedia en una biblioteca remota solo si la biblioteca remota admite la operación de edición. Las bibliotecas remotas hospedadas en un equipo Windows 7 admiten la operación de edición. Las bibliotecas remotas hospedadas en un equipo que ejecuta Windows sistema operativo anterior a Windows 7 no admiten la operación de edición.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 12<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -33,7 +33,7 @@ Este atributo es un booleano de lectura **y escritura.**
 
 
 
-| Valor | Descripción                                      |
+| Value | Descripción                                      |
 |-------|--------------------------------------------------|
 | true  | **BUTTONGROUP es** un estilo de radio.              |
 | false | Predeterminada. **BUTTONGROUP no** es un estilo de radio. |
@@ -50,13 +50,13 @@ Si **radio** se establece en true, todos los elementos **BUTTONELEMENT** de **BU
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
