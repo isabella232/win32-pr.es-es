@@ -1,10 +1,10 @@
 ---
-title: atributo gecos
+title: Atributo gecos
 description: Contiene la información que se almacena en el campo GECOS.
 ms.assetid: 017884a5-697f-481d-b119-075deb96fd6f
 ms.tgt_platform: multiple
 keywords:
-- gecos esquema de AD de atributos
+- Esquema de AD del atributo gecos
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37847f13f7b0d168907f11307b57e893949cc83b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fad96c4e73808608a6175e42ba81b5115b6a84fe9daf2048b4d3d0fefdf8eb05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961374"
 ---
-# <a name="gecos-attribute"></a>atributo gecos
+# <a name="gecos-attribute"></a>Atributo gecos
 
 Contiene la información que se almacena en el campo GECOS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | gecos                                |
-| Nombre para mostrar de LDAP | gecos                                |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | gecos                                |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.2                      |
-| System-ID-GUID    | a3e03f1f-1d55-4253-a0af-30c2a784e46e |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | a3e03f1f-1d55-4253-a0af-30c2a784e46e |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -50,15 +50,15 @@ Contiene la información que se almacena en el campo GECOS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | \-                                                |
+| Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
@@ -71,15 +71,15 @@ Contiene la información que se almacena en el campo GECOS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | \-                                                |
+| Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
@@ -92,15 +92,15 @@ Contiene la información que se almacena en el campo GECOS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | \-                                                |
+| Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
@@ -113,15 +113,15 @@ Contiene la información que se almacena en el campo GECOS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | \-                                                |
+| Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
@@ -130,11 +130,11 @@ Contiene la información que se almacena en el campo GECOS.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El campo GECOS es un campo opcional que se usa para almacenar diversos datos, como el nombre completo del usuario.
+El campo GECOS es un campo opcional que se usa para almacenar varios fragmentos de información, como el nombre completo del usuario.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

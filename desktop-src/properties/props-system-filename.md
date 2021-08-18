@@ -1,21 +1,21 @@
 ---
-description: El nombre de archivo, incluida su extensión.
+description: Nombre de archivo, incluida su extensión.
 ms.assetid: 40940026-6c67-4196-aff6-5f846dc94f27
-title: System. FileName
+title: System.FileName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d8f535eff4625178b3c32a04ea6d325505266a2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff8a92febe0a4f2dfe8cc9d5741118fdb76bcb56c7bcd1ef5c3d881e8c0f9abf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119096924"
 ---
-# <a name="systemfilename"></a>System. FileName
+# <a name="systemfilename"></a>System.FileName
 
-El nombre de archivo, incluida su extensión. System. FileExtension se deriva de esta propiedad.
+Nombre de archivo, incluida su extensión. System.FileExtension se deriva de esta propiedad.
 
-Es posible que el elemento no exista en un sistema de archivos (es decir, que no se pueda abrir con CreateFile). No obstante, si el elemento se representa como un archivo y su nombre sigue la sintaxis estándar de nombres de archivo de Win32, el origen de datos debe emitir esta propiedad. Si el elemento no es un archivo, el origen de datos debe emitir esta propiedad como VT \_ vacío.
+Es posible que el elemento no exista en un sistema de archivos (es decir, es posible que no se abra mediante CreateFile). No obstante, si el elemento se representa como un archivo y su nombre sigue la sintaxis estándar de nomenclatura de archivos Win32, el origen de datos debe emitir esta propiedad. Si el elemento no es un archivo, el origen de datos debe emitir esta propiedad como VT \_ EMPTY.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -67,24 +67,24 @@ propertyDescription
             text = Q-Z
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
-Es posible que el elemento no exista en un sistema de archivos (es decir, que no se pueda abrir con CreateFile), pero si el elemento se representa como un archivo desde el sentido lógico y su nombre sigue la sintaxis estándar de nombres de archivo de Win32, el origen de datos debe emitir esta propiedad. Si un elemento no es un archivo, el valor de esta propiedad es VT \_ vacío. Vea System. ItemNameDisplay. Tiene el mismo valor que System. ParsingName para los elementos que proporciona la carpeta de archivos del shell.
+Es posible que el elemento no exista en un sistema de archivos (es decir, es posible que no se abra mediante CreateFile), pero si el elemento se representa como un archivo desde el sentido lógico y su nombre sigue la sintaxis estándar de nomenclatura de archivos Win32, el origen de datos debe emitir esta propiedad. Si un elemento no es un archivo, el valor de esta propiedad es VT \_ EMPTY. Vea System.ItemNameDisplay. Tiene el mismo valor que System.ParsingName para los elementos proporcionados por la carpeta de archivos del shell.
 
-En la tabla siguiente se muestran ejemplos de valores de propiedad path y FILENAME:
+En la tabla siguiente se enumeran ejemplos de valores de propiedad path y filename:
 
 
 
-| Ruta                               | Valor de propiedad |
+| Ruta de acceso                               | Valor de propiedad |
 |------------------------------------|----------------|
 | c: \\ archivos \\ personales \\hello.txt     | hello.txt      |
-| \\\\\\news.doc del recurso compartido del servidor \\ myDir \\ | news.doc       |
-| \\\\\\numbers.xls de recurso compartido de servidor \\     | numbers.xls    |
-| c: \\ mis \\ carpetas                | MyFolder       |
-| \[mensaje de correo electrónico\]                  | VT \_ vacío      |
-| \[Song. WMA en dispositivo portátil\]    | Song. WMA       |
+| \\\\servidor \\ compartido \\ mydir \\news.doc | news.doc       |
+| \\\\servidor \\ compartidonumbers.xls \\     | numbers.xls    |
+| c: \\ Stuff \\ MyFolder                | MyFolder       |
+| \[mensaje de correo electrónico\]                  | VT \_ EMPTY      |
+| \[song.wma en un dispositivo portátil\]    | song.wma       |
 
 
 
@@ -103,7 +103,7 @@ En la tabla siguiente se muestran ejemplos de valores de propiedad path y FILENA
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -115,7 +115,7 @@ En la tabla siguiente se muestran ejemplos de valores de propiedad path y FILENA
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -133,7 +133,7 @@ En la tabla siguiente se muestran ejemplos de valores de propiedad path y FILENA
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

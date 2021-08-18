@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de LVN_BEGINRDRAG (commctrl. h)
-description: Notifica a la ventana primaria de un control de vista de lista que se está iniciando una operación de arrastrar y colocar que implique el botón secundario del mouse. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: LVN_BEGINRDRAG de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de un control de vista de lista que se está iniciando una operación de arrastrar y colocar que implica el botón derecho del mouse. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 93feba3b-8e3e-4a04-bf2c-7ff67a85d4fb
 keywords:
-- LVN_BEGINRDRAG controles de código de notificación de Windows
+- LVN_BEGINRDRAG código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77b4f55c01ca2b5e43419ea926401ac3393d9a9b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f836e911f49464e9bba13ea09b2732e678a955ac9de01cb8bfe53e0906babff6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019143"
 ---
-# <a name="lvn_beginrdrag-notification-code"></a>Código de notificación de BEGINRDRAG de LVN \_
+# <a name="lvn_beginrdrag-notification-code"></a>Código de notificación \_ DE LVN BEGINRDRAG
 
-Notifica a la ventana primaria de un control de vista de lista que se está iniciando una operación de arrastrar y colocar que implique el botón secundario del mouse. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de vista de lista que se está iniciando una operación de arrastrar y colocar que implica el botón derecho del mouse. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ LVN_BEGINRDRAG
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMLISTVIEW**](/windows/win32/api/commctrl/ns-commctrl-nmlistview) . El miembro **iItem** identifica el elemento que se está arrastrando y los demás miembros son cero.
+Puntero a una [**estructura NMLISTVIEW.**](/windows/win32/api/commctrl/ns-commctrl-nmlistview) El **miembro iItem** identifica el elemento que se está arrastrando y los demás miembros son cero.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ No de devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

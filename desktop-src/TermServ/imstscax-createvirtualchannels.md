@@ -1,30 +1,30 @@
 ---
-title: IMsTscAx CreateVirtualChannels, método
+title: Método CreateVirtualChannels de IMsTscAx
 description: Crea un objeto de canal virtual del lado cliente para cada nombre de canal virtual especificado.
 ms.assetid: 3afd2f1c-abd5-4f85-93fb-6d1173f09b07
 ms.tgt_platform: multiple
 keywords:
 - Método CreateVirtualChannels Servicios de Escritorio remoto
-- Método CreateVirtualChannels Servicios de Escritorio remoto, interfaz IMsTscAx
-- Interfaz IMsTscAx Servicios de Escritorio remoto, método CreateVirtualChannels
-- Método CreateVirtualChannels Servicios de Escritorio remoto, interfaz IMsRdpClient
-- Interfaz IMsRdpClient Servicios de Escritorio remoto, método CreateVirtualChannels
-- Método CreateVirtualChannels Servicios de Escritorio remoto, interfaz IMsRdpClient2
-- Interfaz IMsRdpClient2 Servicios de Escritorio remoto, método CreateVirtualChannels
-- Método CreateVirtualChannels Servicios de Escritorio remoto, interfaz IMsRdpClient3
-- Interfaz IMsRdpClient3 Servicios de Escritorio remoto, método CreateVirtualChannels
-- Método CreateVirtualChannels Servicios de Escritorio remoto, interfaz IMsRdpClient4
-- Interfaz IMsRdpClient4 Servicios de Escritorio remoto, método CreateVirtualChannels
-- Método CreateVirtualChannels Servicios de Escritorio remoto, interfaz IMsRdpClient5
-- Interfaz IMsRdpClient5 Servicios de Escritorio remoto, método CreateVirtualChannels
-- Método CreateVirtualChannels Servicios de Escritorio remoto, interfaz IMsRdpClient6
-- Interfaz IMsRdpClient6 Servicios de Escritorio remoto, método CreateVirtualChannels
-- Método CreateVirtualChannels Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Interfaz IMsRdpClient7 Servicios de Escritorio remoto, método CreateVirtualChannels
-- Método CreateVirtualChannels Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Interfaz IMsRdpClient8 Servicios de Escritorio remoto, método CreateVirtualChannels
-- Método CreateVirtualChannels Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Interfaz IMsRdpClient9 Servicios de Escritorio remoto, método CreateVirtualChannels
+- Método CreateVirtualChannels Servicios de Escritorio remoto , interfaz IMsTscAx
+- Interfaz IMsTscAx Servicios de Escritorio remoto , método CreateVirtualChannels
+- Método CreateVirtualChannels Servicios de Escritorio remoto , interfaz IMsRdpClient
+- Interfaz IMsRdpClient Servicios de Escritorio remoto , método CreateVirtualChannels
+- Método CreateVirtualChannels Servicios de Escritorio remoto , interfaz IMsRdpClient2
+- Interfaz IMsRdpClient2 Servicios de Escritorio remoto , método CreateVirtualChannels
+- Método CreateVirtualChannels Servicios de Escritorio remoto , interfaz IMsRdpClient3
+- Interfaz IMsRdpClient3 Servicios de Escritorio remoto , método CreateVirtualChannels
+- Método CreateVirtualChannels Servicios de Escritorio remoto , interfaz IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto , método CreateVirtualChannels
+- Método CreateVirtualChannels Servicios de Escritorio remoto , interfaz IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto , método CreateVirtualChannels
+- Método CreateVirtualChannels Servicios de Escritorio remoto , interfaz IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , método CreateVirtualChannels
+- Método CreateVirtualChannels Servicios de Escritorio remoto , interfaz IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , método CreateVirtualChannels
+- Método CreateVirtualChannels Servicios de Escritorio remoto , interfaz IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , método CreateVirtualChannels
+- Método CreateVirtualChannels Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , método CreateVirtualChannels
 topic_type:
 - apiref
 api_name:
@@ -44,14 +44,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d59c185763ddd3685e5e566f88e26a6aa6211b4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8d3ef4e7c8471c655d4ecfaf54a1c4b0f35b2362c67c334bd94e57da8e99d390
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138488"
 ---
-# <a name="imstscaxcreatevirtualchannels-method"></a>IMsTscAx:: CreateVirtualChannels (método)
+# <a name="imstscaxcreatevirtualchannels-method"></a>Método IMsTscAx::CreateVirtualChannels
 
 Crea un objeto de canal virtual del lado cliente para cada nombre de canal virtual especificado.
 
@@ -70,24 +70,24 @@ HRESULT CreateVirtualChannels(
 
 <dl> <dt>
 
-*newVal* \[ de\]
+*newVal* \[ En\]
 </dt> <dd>
 
-Lista separada por comas de nombres de canal virtual válidos. La longitud de cada nombre en esta lista puede ser un mínimo de uno y un máximo de siete caracteres alfabéticos. La longitud de la cadena completa puede ser un mínimo de 1 y un máximo de 300 caracteres alfabéticos.
+Lista separada por comas de nombres de canal virtual válidos. La longitud de cada nombre de esta lista puede ser un mínimo de uno y un máximo de siete caracteres alfabéticos. La longitud de toda la cadena puede ser un mínimo de uno y un máximo de 300 caracteres alfabéticos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **S \_ correcto** si se realiza correctamente. Devuelve **E \_ INVALIDARG** si el parámetro que se pasa no cumple los criterios especificados.
+Devuelve **S \_ OK si** se realiza correctamente. Devuelve **E \_ INVALIDARG** si el parámetro que se pasa no cumple los criterios especificados.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Llame a este método antes de llamar al método [**Connect**](imstscax-connect.md) .
+Llame a este método antes de llamar [**al Conectar**](imstscax-connect.md) método .
 
-Consulte [registro de cliente de canal virtual](virtual-channel-client-registration.md) para obtener información sobre las restricciones de nomenclatura de canal virtual.
+Consulte Registro [de cliente de canal](virtual-channel-client-registration.md) virtual para obtener información sobre las restricciones de nomenclatura de canales virtuales.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -99,7 +99,7 @@ Para obtener más información acerca de Conexión web a Escritorio remoto, cons
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx se define como 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IID IMsTscAx se define como \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 

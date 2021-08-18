@@ -1,17 +1,17 @@
 ---
 description: Indica el número de teléfono principal de la empresa del contacto.
 ms.assetid: 13eef5c1-45d5-4bf4-960d-acb9ddc80943
-title: System. contact. CompanyMainTelephone
+title: System.Contact.CompanyMainTelephone
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 69651dcfd2ade388a1043f3d446c7cd40f092f0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 106ed75165009482398b28732f7e30c531831e570065a8c7f835406ffcc8ec4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119098410"
 ---
-# <a name="systemcontactcompanymaintelephone"></a>System. contact. CompanyMainTelephone
+# <a name="systemcontactcompanymaintelephone"></a>System.Contact.CompanyMainTelephone
 
 Indica el número de teléfono principal de la empresa del contacto.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

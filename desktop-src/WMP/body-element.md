@@ -1,9 +1,9 @@
 ---
-title: Elemento BODY
-description: El elemento BODY contiene los elementos que definen el contenido de una lista de reproducción.
+title: body (Elemento)
+description: El elemento body contiene los elementos que definen el contenido de una lista de reproducción.
 ms.assetid: 96d09635-c360-4a36-a56e-6cecbbd4ff30
 keywords:
-- Elemento de cuerpo Media Player de Windows
+- Body Element Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: eb30885efe9e018bf8792b38facdc086c5473b3f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4c785b7db7b44177469596450ee75a460e2bc6224b191a2811baf95380bea25a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135958"
 ---
-# <a name="body-element"></a>Elemento BODY
+# <a name="body-element"></a>body (Elemento)
 
-El elemento **Body** contiene los elementos que definen el contenido de una lista de reproducción.
+El **elemento body** contiene los elementos que definen el contenido de una lista de reproducción.
 
 ``` syntax
 <body>
@@ -39,16 +39,16 @@ Este elemento no tiene atributos.
 
 | Hierarchy | Elementos                 |
 |-----------|--------------------------|
-| Parent    | [gestual](smil-element.md) |
-| Elemento secundario     | [Próx](seq-element.md)   |
+| Parent    | [Smil](smil-element.md) |
+| Elemento secundario     | [Seq](seq-element.md)   |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El contenido de una lista de reproducción se organiza dentro de un elemento **Seq** incluido en el elemento **Body** . Normalmente, hay un elemento **Seq** que define un conjunto estático de elementos multimedia y contiene elementos **multimedia** , o bien uno que define un conjunto dinámico de elementos multimedia y contiene un elemento **smartPlaylist** .
+El contenido de una lista de reproducción se organiza dentro **de un elemento seq** que se encuentra dentro del **elemento body.** Normalmente hay un elemento **seq** que define un conjunto  estático de elementos multimedia y contiene elementos multimedia, o hay uno que define un conjunto dinámico de elementos multimedia y contiene un **elemento smartPlaylist.**
 
 ## <a name="examples"></a>Ejemplos
 
@@ -77,7 +77,7 @@ El contenido de una lista de reproducción se organiza dentro de un elemento **S
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/> |
 
 
 
@@ -85,19 +85,19 @@ El contenido de una lista de reproducción se organiza dentro de un elemento **S
 
 <dl> <dt>
 
-[**Elemento multimedia**](media-element.md)
+[**elemento media**](media-element.md)
 </dt> <dt>
 
-[**Seq (elemento)**](seq-element.md)
+[**seq (Elemento)**](seq-element.md)
 </dt> <dt>
 
-[**Elemento smartPlaylist**](smartplaylist-element.md)
+[**elemento smartPlaylist**](smartplaylist-element.md)
 </dt> <dt>
 
-[**Elemento SMIL**](smil-element.md)
+[**smil (elemento)**](smil-element.md)
 </dt> <dt>
 
-[**Referencia de elementos de lista de reproducción de Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referencia de elementos de lista de reproducción multimedia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

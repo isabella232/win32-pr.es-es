@@ -1,33 +1,33 @@
 ---
-description: Especifica si la topología de segmento actual está vacía.
+description: Especifica si la topología del segmento actual está vacía.
 ms.assetid: efd497dc-affc-4453-975c-09c5dca06374
-title: MF_EVENT_SOURCE_FAKE_START atributo (mfapi. h)
+title: MF_EVENT_SOURCE_FAKE_START atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae47bbfdedb7535ff46763ad5bc36f552ffe4780
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b026811330443a3fb5e7c9671a7f6a3de8580985b6be4c6ba149a2d4dc196325
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973774"
 ---
-# <a name="mf_event_source_fake_start-attribute"></a>\_Atributo de \_ \_ Inicio falso de origen de evento MF \_
+# <a name="mf_event_source_fake_start-attribute"></a>Atributo FAKE START de MF \_ EVENT \_ SOURCE \_ \_
 
-Especifica si la topología de segmento actual está vacía.
+Especifica si la topología del segmento actual está vacía.
 
 ## <a name="data-type"></a>Tipo de datos
 
 **UINT32**
 
-Trata como un valor booleano.
+Tratar como un valor booleano.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se usa con el evento [MESourceStarted](mesourcestarted.md) .
+Este atributo se usa con el [evento MESourceStarted.](mesourcestarted.md)
 
-El origen del secuenciador establece este atributo en **true** si la topología del segmento actual está vacía. Si este atributo es **true**, la reproducción todavía no se ha iniciado. El valor predeterminado de este atributo es **false**.
+El origen del secuenciador establece este atributo en **TRUE** si la topología del segmento actual está vacía. Si este atributo es **TRUE,** la reproducción aún no se ha iniciado. El valor predeterminado de este atributo es **FALSE.**
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -45,16 +45,16 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos de eventos](event-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> </dl>
 
  

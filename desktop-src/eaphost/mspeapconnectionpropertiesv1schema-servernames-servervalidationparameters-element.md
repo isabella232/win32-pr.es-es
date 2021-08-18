@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 40aa7ba317b7ba7c3f7a06cce87ef57c2906fe4b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f3f9de6ee28077b5206a9783ef7722864a479e1e5f26b78e4402ac79c6e4be5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105649345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984015"
 ---
 # <a name="servernames-servervalidationparameters-element-peap"></a>Elemento ServerNames (ServerValidationParameters) (PEAP)
 
-El elemento **servernames (ServerValidationParameters)** representa una lista de nombres de servidor delimitados por punto y coma.
+El **elemento ServerNames (ServerValidationParameters)** representa una lista de nombres de servidor delimitados por punto y coma.
 
 ``` syntax
 <xs:element name="ServerNames"
@@ -32,20 +32,20 @@ El elemento **servernames (ServerValidationParameters)** representa una lista de
  />
 ```
 
-El elemento **servernames** se define mediante el tipo complejo [**ServerValidationParameters**](mspeapconnectionpropertiesv1schema-servervalidationparameters-complextype.md) .
+El tipo complejo [**ServerValidationParameters**](mspeapconnectionpropertiesv1schema-servervalidationparameters-complextype.md) define el elemento **ServerNames.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada nombre de servidor está delimitado por punto y coma, y se puede representar mediante expresiones regulares. El elemento **servernames** es opcional.
+Cada nombre de servidor está delimitado por punto y coma y se puede representar mediante expresiones regulares. El **elemento ServerNames** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -71,7 +71,7 @@ Cada nombre de servidor está delimitado por punto y coma, y se puede representa
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-schema.md)
+[Mspeapconnectionpropertiesv1 Schema](mspeapconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
 [Elementos de esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-elements.md)

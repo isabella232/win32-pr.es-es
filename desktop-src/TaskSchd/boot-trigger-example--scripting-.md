@@ -1,6 +1,6 @@
 ---
 title: Ejemplo de desencadenador de arranque (scripting)
-description: En este ejemplo de scripting se muestra cómo crear una tarea programada para ejecutar el Bloc de notas al arrancar el sistema.
+description: En este ejemplo de scripting se muestra cómo crear una tarea que está programada para ejecutarse Bloc de notas cuando se inicia el sistema.
 ms.assetid: 73ae9cc4-ef89-4390-ac05-8a773f45fa46
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,29 +9,29 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 72b7735c607dfc39b848532a70e4d24b1a14d346
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ff02bef70b4003c4e7b6e9aff03e2d615f24d7e15707cddcae3a4637ff2b11f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002523"
 ---
 # <a name="boot-trigger-example-scripting"></a>Ejemplo de desencadenador de arranque (scripting)
 
-En este ejemplo de scripting se muestra cómo crear una tarea programada para ejecutar el Bloc de notas al arrancar el sistema. La tarea contiene un desencadenador de arranque que especifica un límite de inicio y un tiempo de retraso para que la tarea se inicie después de arrancar el sistema. La tarea también contiene una acción que especifica la tarea para ejecutar el Bloc de notas. La tarea se registra mediante la cuenta de servicio local como contexto de seguridad para ejecutar la tarea.
+En este ejemplo de scripting se muestra cómo crear una tarea que está programada para ejecutarse Bloc de notas cuando se inicia el sistema. La tarea contiene un desencadenador de arranque que especifica un límite de inicio y un tiempo de retraso para que la tarea se inicie después de arrancar el sistema. La tarea también contiene una acción que especifica la tarea que se ejecutará Bloc de notas. La tarea se registra mediante la cuenta de servicio local como contexto de seguridad para ejecutar la tarea.
 
-En el procedimiento siguiente se describe cómo programar un archivo ejecutable, como el Bloc de notas, para que se inicie cuando se arranque el sistema.
+En el procedimiento siguiente se describe cómo programar un ejecutable como Bloc de notas iniciarse cuando se inicia el sistema.
 
-**Para programar el inicio del Bloc de notas al arrancar el sistema**
+**Para programar Bloc de notas que se inicie cuando se arranque el sistema**
 
-1.  Cree un objeto [**TaskService**](taskservice.md) . Este objeto permite crear la tarea en una carpeta especificada.
-2.  Obtener una carpeta de tareas y crear una tarea. Use el método [**TaskService. GetFolder**](taskservice-getfolder.md) para obtener la carpeta donde se almacena la tarea y el método [**TaskService. newtask**](taskservice-newtask.md) para crear el objeto [**TaskDefinition**](taskdefinition.md) que representa la tarea.
-3.  Defina la información sobre la tarea mediante el objeto [**TaskDefinition**](taskdefinition.md) . Use la propiedad [**TaskDefinition. Settings**](taskdefinition-settings.md) para definir la configuración que determina cómo el servicio de programador de tareas realiza la tarea y la propiedad [**TaskDefinition. RegistrationInfo**](taskdefinition-registrationinfo.md) para definir la información que describe la tarea.
-4.  Cree un desencadenador Logon mediante la propiedad [**TaskDefinition. Triggers**](taskdefinition-triggers.md) . Esta propiedad proporciona acceso al objeto [**TriggerCollection**](triggercollection.md) . Use el método [**TriggerCollection. Create**](triggercollection-create.md) (especificando el tipo de desencadenador que desea crear) para crear un desencadenador de arranque. Cuando cree el desencadenador, establezca las propiedades [**StartBoundary**](trigger-startboundary.md) y [**EndBoundary**](trigger-endboundary.md) del desencadenador para activar y desactivar el desencadenador. También puede especificar un valor para la propiedad [**Delay**](boottrigger-delay.md) del desencadenador de arranque.
-5.  Cree una acción para que la tarea se ejecute mediante la propiedad [**TaskDefinition. Actions**](taskdefinition-actions.md) . Esta propiedad proporciona acceso al objeto [**ActionCollection**](actioncollection.md) . Use el método [**ActionCollection. Create**](actioncollection-create.md) para especificar el tipo de acción que desea crear. En este ejemplo se usa un objeto [**ExecAction**](execaction.md) , que representa una acción que inicia un ejecutable.
-6.  Registre la tarea mediante el método [**TaskFolder. RegisterTaskDefinition**](taskfolder-registertaskdefinition.md) . La tarea se registra mediante la cuenta de servicio local como contexto de seguridad para ejecutar la tarea.
+1.  Cree un [**objeto TaskService.**](taskservice.md) Este objeto permite crear la tarea en una carpeta especificada.
+2.  Obtenga una carpeta de tareas y cree una tarea. Use el [**método TaskService.GetFolder**](taskservice-getfolder.md) para obtener la carpeta donde se almacena la tarea y el método [**TaskService.NewTask**](taskservice-newtask.md) para crear el objeto [**TaskDefinition**](taskdefinition.md) que representa la tarea.
+3.  Defina información sobre la tarea mediante el [**objeto TaskDefinition.**](taskdefinition.md) Use la propiedad [**TaskDefinition.Configuración**](taskdefinition-settings.md) para definir la configuración que determina cómo realiza la tarea el servicio Programador de tareas y la propiedad [**TaskDefinition.RegistrationInfo**](taskdefinition-registrationinfo.md) para definir la información que describe la tarea.
+4.  Cree un desencadenador de inicio de sesión mediante [**la propiedad TaskDefinition.Triggers.**](taskdefinition-triggers.md) Esta propiedad proporciona acceso al [**objeto TriggerCollection.**](triggercollection.md) Use el [**método TriggerCollection.Create**](triggercollection-create.md) (especificando el tipo de desencadenador que desea crear) para crear un desencadenador de arranque. Cuando cree el desencadenador, establezca las propiedades [**StartBoundary**](trigger-startboundary.md) y [**EndBoundary**](trigger-endboundary.md) del desencadenador para activarlo y desactivarlo. También puede especificar un valor para la propiedad [**Delay**](boottrigger-delay.md) del desencadenador de arranque.
+5.  Cree una acción para que la tarea se ejecute mediante la [**propiedad TaskDefinition.Actions.**](taskdefinition-actions.md) Esta propiedad proporciona acceso al [**objeto ActionCollection.**](actioncollection.md) Use el [**método ActionCollection.Create**](actioncollection-create.md) para especificar el tipo de acción que desea crear. En este ejemplo se [**usa un objeto ExecAction,**](execaction.md) que representa una acción que inicia un ejecutable.
+6.  Registre la tarea mediante el [**método TaskFolder.RegisterTaskDefinition.**](taskfolder-registertaskdefinition.md) La tarea se registra mediante la cuenta de servicio local como contexto de seguridad para ejecutar la tarea.
 
-En el siguiente ejemplo de VBScript se muestra cómo programar una tarea para ejecutar el Bloc de notas 30 segundos después de que se arranque el sistema.
+En el siguiente ejemplo de VBScript se muestra cómo programar una tarea para que se ejecute Bloc de notas 30 segundos después de arrancar el sistema.
 
 
 ```VB
@@ -125,12 +125,12 @@ WScript.Echo "Task submitted."
 
 <dl> <dt>
 
-[Usar el Programador de tareas](using-the-task-scheduler.md)
+[Uso del Programador de tareas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

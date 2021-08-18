@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: cefcf9a927cee0d8f7c83ff42ae6ca4fc699bb09
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c3df77d7137b369b44d391ea1d8c607ca38dad83c95920d5a1eaf5e359b2b1be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991005"
 ---
 # <a name="d3dxquaternionrotationyawpitchroll-function-d3dx10mathh"></a>Función D3DXQuaternionRotationYawPitchRoll (D3DX10Math.h)
 
-Crea un cuaternión con el guión, el lanzamiento y el lanzamiento dados.
+Crea un cuaternión con el yaw, el lanzamiento y el lanzamiento dados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ Puntero a [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) que es el resultado de l
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Eje Y alrededor del eje Y, en radianes.
+Moverse alrededor del eje Y, en radianes.
 
 </dd> <dt>
 
@@ -83,11 +83,11 @@ Revierte el eje Z, en radianes.
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Puntero a una estructura D3DXQUATERNION con el guión, el paso y el lanzamiento especificados.
+Puntero a una estructura D3DXQUATERNION con el yaw, pitch y roll especificados.
 
 ## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXQuaternionRotationYawPitchRoll se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXQuaternionRotationYawPitchRoll se puede usar como parámetro para otra función.
 
 Use [**D3DXQuaternionNormalize para cualquier**](d3d10-d3dxquaternionnormalize.md) entrada de cuaternión que aún no esté normalizada.
 
@@ -102,7 +102,7 @@ Use [**D3DXQuaternionNormalize para cualquier**](d3d10-d3dxquaternionnormalize.m
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

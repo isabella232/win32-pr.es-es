@@ -1,38 +1,38 @@
 ---
-title: Compatibilidad con el lenguaje de programación
-description: Puede escribir aplicaciones cliente ADSI en muchos idiomas.
+title: Compatibilidad con lenguajes de programación
+description: Puede escribir aplicaciones cliente ADSI en muchos lenguajes.
 ms.assetid: 47460d57-936d-4c5f-8ff6-a4d9d60d0b68
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4946f05806a6e24ff466d08dc141aadf9c995e5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6ebe355e3274821bf81a666380bfe70ca0f3f7b49e2bc9de10bf2aa4796b5288
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023312"
 ---
-# <a name="programming-language-support"></a>Compatibilidad con el lenguaje de programación
+# <a name="programming-language-support"></a>Compatibilidad con lenguajes de programación
 
-Puede escribir aplicaciones cliente ADSI en muchos idiomas. Para la mayoría de las tareas administrativas, ADSI define interfaces y objetos a los que se puede acceder desde los lenguajes compatibles con Automation. Por ejemplo, el sistema de desarrollo de Microsoft Visual Basic, Microsoft Visual Basic Scripting Edition (VBScript) y Java, así como más lenguajes de rendimiento y de eficiencia, como C y C++.
+Puede escribir aplicaciones cliente ADSI en muchos lenguajes. Para la mayoría de las tareas administrativas, ADSI define interfaces y objetos accesibles desde lenguajes compatibles con Automation. Por ejemplo, el sistema de desarrollo de Microsoft Visual Basic, Microsoft Visual Basic Scripting Edition (VBScript) y Java, así como lenguajes más eficientes y de rendimiento, como C y C++.
 
-La integración fluida con páginas Active Server y VBScript facilita la escritura de aplicaciones de Internet que tienen acceso a servicios de directorio. Para la integración con aplicaciones de OLE DB, ADSI proporciona un proveedor de OLE DB mediante la compatibilidad con un subconjunto de las interfaces de consulta de OLE DB. El proveedor de OLE DB admite el acceso de solo lectura a Active Directory.
+La integración fluida con Active Server Pages y VBScript facilita la escritura de aplicaciones de Internet que acceden a los servicios de directorio. Para la integración con OLE DB, ADSI proporciona un proveedor de OLE DB mediante la compatibilidad con un subconjunto de las interfaces OLE DB consultas. El OLE DB admite el acceso de solo lectura a Active Directory.
 
-En el caso de las aplicaciones de Internet, el uso de scripting en archivos de páginas Active Server (ASP) puede crear y manipular objetos ADSI en el servidor y mostrar los resultados en una página web. En Microsoft Management Console, los complementos de administración de servicios de directorio pueden usar ADSI para buscar servicios de directorio de interés. En Resumen, Active Directory interfaces de servicio pueden proporcionar acceso a un conjunto amplio y diverso de servicios de directorio, incluidos los que todavía no se han creado.
+Para las aplicaciones de Internet, el uso de scripts en Active Server Page (ASP) puede crear y manipular objetos ADSI en el servidor y mostrar los resultados en una página web. En Microsoft Management Console, los complementos de administración de servicios de directorio pueden usar ADSI para buscar servicios de directorio de interés. En resumen, Active Directory interfaces de servicio pueden proporcionar acceso a un amplio y diverso conjunto de servicios de directorio, incluidos los que aún no se han creado.
 
-Para obtener acceso a las estructuras que usan las API tradicionales, la arquitectura ADSI define interfaces de bajo nivel que no admiten la automatización que son accesibles desde lenguajes como C y C++. Estas interfaces son poco más que contenedores COM para los protocolos de red de un servicio de directorio.
+Para el acceso a estructuras que usan LAS API tradicionales, la arquitectura adsi define interfaces de bajo nivel que no admiten La automatización es accesible desde lenguajes como C y C++. Estas interfaces son poco más que contenedores COM para protocolos de red para un servicio de directorio.
 
-La escritura de código en las interfaces publicadas permite a la aplicación tener acceso a los servicios de directorio de todos los proveedores ADSI instalados e integrar los datos resultantes. Con pocos cambios o ningún cambio en el código, la aplicación puede seguir teniendo acceso a servicios de directorio adicionales en la red a medida que se instalan nuevos proveedores de ADSI.
+Escribir código en las interfaces publicadas permite que la aplicación llegue a los servicios de directorio de todos los proveedores adsi instalados e integre los datos resultantes. Con pocos o ningún cambio en el código, la aplicación puede seguir teniendo acceso a servicios de directorio adicionales en la red a medida que se instalan nuevos proveedores adsi.
 
-En la siguiente ilustración se muestra cómo se ajusta ADSI en un entorno de aplicación. Tanto si la aplicación se escribe en Visual Basic, en C/C++, en VBScript, en el sistema de desarrollo de Microsoft JScript o como una aplicación web que usa páginas de Active Server, Active Directory interfaces de servicio proporcionan un acceso limpio y fácil de usar a los servicios de directorio subyacentes sin tener que usar las API de red nativas.
+En la ilustración siguiente se muestra cómo encaja ADSI en un entorno de aplicación. Tanto si la aplicación está escrita en Visual Basic, C/C++, VBScript, sistema de desarrollo de Microsoft JScript o como aplicación web mediante Active Server Pages, las interfaces de servicio de Active Directory proporcionan un acceso limpio y fácil de usar a los servicios de directorio subyacentes sin tener que usar las API de red nativas.
 
-![compatibilidad con ADSI para lenguajes de programación](images/ds2layr.png)
+![Compatibilidad con adsi para lenguajes de programación](images/ds2layr.png)
 
-Como se muestra en la ilustración anterior, los clientes que no admiten la automatización de tienen acceso a todas las interfaces ADSI, incluidas las interfaces COM puras con la Convención de nomenclatura **IDirectoryXXX** y las interfaces com de automatización con la Convención de nomenclatura **IADsXXX**. Dado que los clientes de principalmente solicitan información de los servicios de directorio, el modelo de consulta flexible de ADSI a través de OLE DB y [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) es efectivo.
+Como se muestra en la ilustración anterior, los clientes que no admiten Automation tienen acceso a todas las interfaces ADSI, incluidas las interfaces COM puras con la convención de nomenclatura **IDirectoryXXX** y las interfaces COM de Automation con la convención de nomenclatura **IADsXXX**. Dado que los clientes solicitan principalmente información de los servicios de directorio, el modelo de consulta flexible ADSI a OLE DB [**e IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) es efectivo.
 
- 
+ 
 
- 
+ 
 
 
 

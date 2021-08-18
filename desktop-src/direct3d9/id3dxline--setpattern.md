@@ -1,7 +1,7 @@
 ---
-description: Aplica un patrón punteado a la línea.
+description: Aplica un patrón detippla a la línea.
 ms.assetid: 53548a9f-cf09-4ab9-9327-d5053645fc1b
-title: 'ID3DXLine:: SetPattern (método) (D3dx9core. h)'
+title: Método ID3DXLine::SetPattern (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 80a0485991bc06bdb9fcd3280017d4cc60b492ca
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 502fcbc8c3d8a8160ce3390330511d47165493a2bd4cc9a312e5203de7424e29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104157236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120879"
 ---
-# <a name="id3dxlinesetpattern-method"></a>ID3DXLine:: SetPattern (método)
+# <a name="id3dxlinesetpattern-method"></a>Método ID3DXLine::SetPattern
 
-Aplica un patrón punteado a la línea.
+Aplica un patrón detippla a la línea.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT SetPattern(
 
 <dl> <dt>
 
-*dwPattern* \[ de\]
+*dwPattern* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Describe el patrón punteado: 1 es opaco, 0 es transparente.
+Describe el patrón detippla: 1 es opaco, 0 es transparente.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Describe el patrón punteado: 1 es opaco, 0 es transparente.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_RECPOS (clase)'
-title: JET_RECPOS (clase)
+description: 'Más información sobre: JET_RECPOS clase'
+title: JET_RECPOS clase
 TOCTitle: JET_RECPOS class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_RECPOS
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_recpos(v=EXCHG.10)
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 09fce4bf1d73ad1b9767e39ae5c90b25eccdea73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c25fd9cb9af531f134627ffcc54cd9fa5d37a33b340c53129a83c6538b33b1f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107524"
 ---
-# <a name="jet_recpos-class"></a>JET_RECPOS (clase)
+# <a name="jet_recpos-class"></a>JET_RECPOS clase
 
-Representa una posición fraccionaria dentro de un índice. Se usa en JetGotoPosition y JetGetRecordPosition.
+Representa una posición fraccionera dentro de un índice. JetGotoPosition y JetGetRecordPosition lo usan.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_RECPOS  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -64,10 +64,10 @@ public sealed class JET_RECPOS : IContentEquatable<JET_RECPOS>,
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_RECPOS](./jet-recpos-members.md)
+[JET_RECPOS miembros](./jet-recpos-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de EN_ALIGNLTR (RichEdit. h)
-description: Notifica a la ventana primaria de un control Rich Edit que la dirección del párrafo ha cambiado a de izquierda a derecha. Un control Rich Edit envía este código de notificación en forma de mensaje de \_ comando de WM.
+title: EN_ALIGNLTR de notificación (Richedit.h)
+description: Notifica a la ventana primaria de un control de edición enriquecido que la dirección del párrafo ha cambiado a izquierda a derecha. Un control de edición enriquecido envía este código de notificación en forma de mensaje WM \_ COMMAND.
 ms.assetid: 754ac2b5-bcec-487b-a1ab-b653f673830a
 keywords:
-- EN_ALIGNLTR controles de código de notificación de Windows
+- EN_ALIGNLTR código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f55c20a9ae4efb3ba5758ed0740b20b8b57f3877
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 884f2750501dc1670d2f8e0497a196276571328809d295a687b3518a34b38ec2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019453"
 ---
-# <a name="en_alignltr-notification-code"></a>\_Código de notificación en ALIGNLTR
+# <a name="en_alignltr-notification-code"></a>Código de notificación DE EN \_ ALIGNLTR
 
-Notifica a la ventana primaria de un control Rich Edit que la dirección del párrafo ha cambiado a de izquierda a derecha. Un control Rich Edit envía este código de notificación en forma de mensaje [**de \_ comando de WM**](/windows/desktop/menurc/wm-command) .
+Notifica a la ventana primaria de un control de edición enriquecido que la dirección del párrafo ha cambiado a izquierda a derecha. Un control de edición enriquecido envía este código de notificación en forma de mensaje [**WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,14 +42,14 @@ EN_ALIGNLTR
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene el identificador del control Rich Edit. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica el código de notificación.
+Loword [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador del control de edición enriquecido. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Identificador del control Rich Edit.
+Controlar el control de edición enriquecido.
 
 </dd> </dl>
 
@@ -63,9 +63,9 @@ Este código de notificación no devuelve un valor.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Este código de notificación no devuelve un valor.
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**comando de WM \_**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

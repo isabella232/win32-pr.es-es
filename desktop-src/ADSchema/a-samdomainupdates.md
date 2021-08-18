@@ -1,11 +1,11 @@
 ---
-title: Atributo SAM-Domain-updates
-description: Contiene una máscara de la operación de SAM realizada en Active Directory.
+title: Atributo SAM-Domain-Updates
+description: Contiene una máscara de bits de operaciones SAM realizadas en Active Directory.
 ms.assetid: cafef47d-4923-4ee6-92bc-764301506cfe
 ms.tgt_platform: multiple
 keywords:
-- Atributo SAM-Domain-updates de AD Schema
-- samDomainUpdates esquema de AD de atributos
+- Esquema de AD del atributo SAM-Domain-Updates
+- Esquema de AD del atributo samDomainUpdates
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 812a1995ec89f3827b7fcfd984edb2de164d0bd3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d2c2bb6bc23e04874221fa65486247b1ed0dfd28f208ca41329b8528e558b257
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022213"
 ---
-# <a name="sam-domain-updates-attribute"></a>Atributo SAM-Domain-updates
+# <a name="sam-domain-updates-attribute"></a>Atributo SAM-Domain-Updates
 
-Contiene una máscara de la operación de SAM realizada en Active Directory.
+Contiene una máscara de bits de operaciones SAM realizadas en Active Directory.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
-| CN                | SAM-Domain-Actualizaciones                                    |
-| Nombre para mostrar de LDAP | samDomainUpdates                                      |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | SAM-Domain-Updates                                    |
+| Ldap-Display-Name | samDomainUpdates                                      |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1969                               |
-| System-ID-GUID    | 04d2d114-f799-4e9b-bcdc-90e8f5ba7ebe                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 04d2d114-f799-4e9b-bcdc-90e8f5ba7ebe                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -52,18 +52,18 @@ Contiene una máscara de la operación de SAM realizada en Active Directory.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-servidor**](c-samserver.md)<br/> |
+| Clases usadas en        | [**Sam-Server**](c-samserver.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Contiene una máscara de la operación de SAM realizada en Active Directory.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-servidor**](c-samserver.md)<br/> |
+| Clases usadas en        | [**Sam-Server**](c-samserver.md)<br/> |
 
 
 
@@ -94,18 +94,18 @@ Contiene una máscara de la operación de SAM realizada en Active Directory.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-servidor**](c-samserver.md)<br/> |
+| Clases usadas en        | [**Sam-Server**](c-samserver.md)<br/> |
 
 
 

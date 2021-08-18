@@ -1,7 +1,7 @@
 ---
-description: Incrementa el recuento de referencias a una instancia del proveedor de protocolo Capa de sockets seguros (SSL).
+description: Incrementa el recuento de referencias a una Capa de sockets seguros de proveedor de protocolos (SSL).
 ms.assetid: 67e7b8b4-b073-4936-b1e0-3fc7c1c011a2
-title: Función SslIncrementProviderReferenceCount (Sslprovider. h)
+title: Función SslIncrementProviderReferenceCount (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 862697035d978db082c303c6e1df6f2a444d8be3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a177d4142d304834aea773e56a09703bc4d56e6b479a2f005f00e3b692980c72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906005"
 ---
-# <a name="sslincrementproviderreferencecount-function"></a>SslIncrementProviderReferenceCount función)
+# <a name="sslincrementproviderreferencecount-function"></a>Función SslIncrementProviderReferenceCount
 
-La función **SslIncrementProviderReferenceCount** incrementa el recuento de referencias a una instancia del proveedor de [*Protocolo capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) (SSL).
+La **función SslIncrementProviderReferenceCount** incrementa el recuento de referencias a una [*Capa de sockets seguros de proveedor*](/windows/desktop/SecGloss/s-gly) de protocolos (SSL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ SECURITY_STATUS WINAPI SslIncrementProviderReferenceCount(
 
 <dl> <dt>
 
-*hSslProvider* \[ de\]
+*hSslProvider* \[ En\]
 </dt> <dd>
 
 Identificador de la instancia del proveedor del protocolo SSL.
@@ -48,17 +48,17 @@ Identificador de la instancia del proveedor del protocolo SSL.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve cero.
+Si la función se realiza correctamente, devuelve cero.
 
 Si se produce un error en la función, devuelve un valor de error distinto de cero.
 
-Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
+Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 
 
 | Código o valor devuelto                                                                                                                                                    | Descripción                                        |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| <dl> <dt>**NTE \_ \_Identificador no válido**</dt> <dt>0x80090026L</dt> </dl> | El identificador de *hSslProvider* no es válido.<br/> |
+| <dl> <dt>**NTE \_ IDENTIFICADOR \_ NO VÁLIDO**</dt> <dt>0x80090026L</dt> </dl> | El *identificador hSslProvider* no es válido.<br/> |
 
 
 
@@ -70,9 +70,9 @@ Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

@@ -1,7 +1,7 @@
 ---
-description: Devuelve un identificador para el hash del Protocolo de enlace.
+description: Devuelve un identificador al hash del protocolo de enlace.
 ms.assetid: c0f20084-c863-42cf-afdf-298c5a96eed9
-title: Función SslHashHandshake (Sslprovider. h)
+title: Función SslHashHandshake (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 1dbfdbceb4242d389669a3eebf14260a3bb396fb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a21bdb3fd655e5c3b39249937f04a4122c64e6c6176c0d39ae1164e48863edb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906103"
 ---
-# <a name="sslhashhandshake-function"></a>SslHashHandshake función)
+# <a name="sslhashhandshake-function"></a>Función SslHashHandshake
 
-La función **SslHashHandshake** devuelve un identificador para el hash del Protocolo de enlace.
+La **función SslHashHandshake** devuelve un identificador al hash del protocolo de enlace.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,10 +43,10 @@ SECURITY_STATUS WINAPI SslHashHandshake(
 
 <dl> <dt>
 
-*hSslProvider* \[ de\]
+*hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador de la instancia del proveedor de protocolo del [*Protocolo de capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) (SSL).
+Identificador de la instancia [*del proveedor Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) protocolo de seguridad (SSL).
 
 </dd> <dt>
 
@@ -57,21 +57,21 @@ Identificador del objeto hash.
 
 </dd> <dt>
 
-*pbInput* \[ enuncia\]
+*pbInput* \[ out\]
 </dt> <dd>
 
-Dirección de un búfer que contiene los datos a los que se va a aplicar un algoritmo hash.
+Dirección de un búfer que contiene los datos a los que se va a hash.
 
 </dd> <dt>
 
-*cbInput* \[ de\]
+*cbInput* \[ En\]
 </dt> <dd>
 
-Tamaño, en bytes, del búfer *pbInput* .
+Tamaño, en bytes, del *búfer pbInput.*
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Este parámetro se reserva para uso futuro.
@@ -80,15 +80,15 @@ Este parámetro se reserva para uso futuro.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve cero.
+Si la función se realiza correctamente, devuelve cero.
 
 ## <a name="remarks"></a>Observaciones
 
-La función **SslHashHandshake** es una de las tres funciones que se usan para generar un hash que se usará durante el protocolo de enlace SSL.
+La **función SslHashHandshake** es una de las tres funciones que se usan para generar un hash que se usará durante el protocolo de enlace SSL.
 
-1.  Se llama a la función [**SslCreateHandshakeHash**](sslcreatehandshakehash.md) para obtener un identificador hash.
-2.  A la función **SslHashHandshake** se le llama cualquier número de veces con el identificador hash para agregar datos al hash.
-3.  Se llama a la función [**SslComputeFinishedHash**](sslcomputefinishedhash.md) con el identificador hash para obtener el Resumen de los datos con hash.
+1.  Se [**llama a la función SslCreateHandshakeHash**](sslcreatehandshakehash.md) para obtener un identificador hash.
+2.  Se **llama a la función SslHashHandshake** varias veces con el identificador hash para agregar datos al hash.
+3.  Se [**llama a la función SslComputeFinishedHash**](sslcomputefinishedhash.md) con el identificador hash para obtener el resumen de los datos con hash.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,9 +96,9 @@ La función **SslHashHandshake** es una de las tres funciones que se usan para g
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

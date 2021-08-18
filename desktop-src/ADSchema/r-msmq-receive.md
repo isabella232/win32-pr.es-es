@@ -1,10 +1,10 @@
 ---
-title: MSMQ-recibir derecho extendido
+title: Derecho extendido msmq-Receive
 description: Permite recibir mensajes de la cola.
 ms.assetid: 8c889542-f30a-4580-8dfb-96594f7d6ad6
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-recibir esquema de AD derecho extendido de recepción
+- msmq-Receive extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7984a2517bce5e30ac1ee48dc5523e4de5a84b2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3f403de565e7e976f16d2e0c016ae8651fe2bc1c6481b76ff4f6caae68350f1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021663"
 ---
-# <a name="msmq-receive-extended-right"></a>MSMQ-recibir derecho extendido
+# <a name="msmq-receive-extended-right"></a>Derecho extendido msmq-Receive
 
 Permite recibir mensajes de la cola.
 
@@ -28,7 +28,7 @@ Permite recibir mensajes de la cola.
 
 | Entrada | Value |
 |--------------|--------------------------------------|
-| CN           | MSMQ: recepción                         |
+| CN           | msmq-Receive                         |
 | Display-Name | Recibir mensaje                      |
 | Rights-GUID  | 06bd3200-df3e-11d1-9c86-006008764d0e |
 
@@ -49,8 +49,8 @@ Permite recibir mensajes de la cola.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 42                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 42                                           |
 
 
 
@@ -60,8 +60,8 @@ Permite recibir mensajes de la cola.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 42                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 42                                           |
 
 
 
@@ -71,8 +71,8 @@ Permite recibir mensajes de la cola.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 42                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 42                                           |
 
 
 
@@ -82,8 +82,8 @@ Permite recibir mensajes de la cola.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 42                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 42                                           |
 
 
 
@@ -93,8 +93,8 @@ Permite recibir mensajes de la cola.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 42                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 42                                           |
 
 
 
@@ -104,8 +104,8 @@ Permite recibir mensajes de la cola.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 42                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 42                                           |
 
 
 

@@ -4,12 +4,12 @@ description: Mensajes de control de barra de herramientas
 ms.assetid: 0af20ecd-b473-4c3b-8b66-2d177105bf89
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ecdf5bb353f070fe85f3da4ada97b8f0c9c8bbd
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: bcd3bf2a1d280b4bbc8798874c609d39b8c7083b75f6ce7153cfaaeb2241f74a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119079159"
 ---
 # <a name="toolbar-control-messages"></a>Mensajes de control de barra de herramientas
 
@@ -18,13 +18,13 @@ ms.locfileid: "104003717"
 -   [**TB \_ ADDBITMAP**](tb-addbitmap.md)
 -   [**TB \_ ADDBUTTONS**](tb-addbuttons.md)
 -   [**TB \_ ADDSTRING**](tb-addstring.md)
--   [**\_tamaño automático de TB**](tb-autosize.md)
+-   [**TB \_ AUTOSIZE**](tb-autosize.md)
 -   [**TB \_ BUTTONCOUNT**](tb-buttoncount.md)
 -   [**TB \_ BUTTONSTRUCTSIZE**](tb-buttonstructsize.md)
 -   [**TB \_ CHANGEBITMAP**](tb-changebitmap.md)
 -   [**TB \_ CHECKBUTTON**](tb-checkbutton.md)
 -   [**TB \_ COMMANDTOINDEX**](tb-commandtoindex.md)
--   [**\_Personalización de TB**](tb-customize.md)
+-   [**PERSONALIZACIÓN DE \_ TB**](tb-customize.md)
 -   [**TB \_ DELETEBUTTON**](tb-deletebutton.md)
 -   [**TB \_ ENABLEBUTTON**](tb-enablebutton.md)
 -   [**TB \_ GETANCHORHIGHLIGHT**](tb-getanchorhighlight.md)
@@ -52,17 +52,17 @@ ms.locfileid: "104003717"
 -   [**TB \_ GETPADDING**](tb-getpadding.md)
 -   [**TB \_ GETPRESSEDIMAGELIST**](tb-getpressedimagelist.md)
 -   [**TB \_ GETRECT**](tb-getrect.md)
--   [**GB \_ GETROWS**](tb-getrows.md)
+-   [**TB \_ GETROWS**](tb-getrows.md)
 -   [**TB \_ GETSTATE**](tb-getstate.md)
--   [**GETSTRING de TB \_**](tb-getstring.md)
--   [**. \_ GETSTYLE de TB**](tb-getstyle.md)
+-   [**TB \_ GETSTRING**](tb-getstring.md)
+-   [**TB \_ GETSTYLE**](tb-getstyle.md)
 -   [**TB \_ GETTEXTROWS**](tb-gettextrows.md)
 -   [**TB \_ GETTOOLTIPS**](tb-gettooltips.md)
 -   [**TB \_ GETUNICODEFORMAT**](tb-getunicodeformat.md)
 -   [**TB \_ HASACCELERATOR**](tb-hasaccelerator.md)
 -   [**TB \_ HIDEBUTTON**](tb-hidebutton.md)
 -   [**TB \_ HITTEST**](tb-hittest.md)
--   [**TB \_ indeterminados**](tb-indeterminate.md)
+-   [**TB \_ INDETERMINADO**](tb-indeterminate.md)
 -   [**TB \_ INSERTBUTTON**](tb-insertbutton.md)
 -   [**TB \_ INSERTMARKHITTEST**](tb-insertmarkhittest.md)
 -   [**TB \_ ISBUTTONCHECKED**](tb-isbuttonchecked.md)

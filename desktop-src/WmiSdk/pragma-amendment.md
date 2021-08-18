@@ -1,8 +1,8 @@
 ---
-description: Indica al compilador MOF que separe un archivo MOF en versiones independientes del lenguaje y específicas del idioma.
+description: Dirige al compilador MOF para separar un archivo MOF en versiones independientes del lenguaje y específicas del lenguaje.
 ms.assetid: c1aec33c-b936-4cca-8fcd-7bd088af7116
 ms.tgt_platform: multiple
-title: modificación de pragma
+title: modificación pragma
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,27 +13,27 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 1269ac1a96617b72852e687b2a38ce8d331ab3e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6204ac7f3cd78de8d2eed9740fc165475d387e65284bcbf6be1ea10ed91a0926
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992735"
 ---
-# <a name="pragma-amendment"></a>modificación de pragma
+# <a name="pragma-amendment"></a>modificación pragma
 
-El comando de preprocesador de **modificación de pragma** indica al compilador de MOF que separe un archivo MOF en versiones independientes del idioma y del idioma. El archivo MOF específico del idioma mueve los calificadores modificados a un espacio de nombres para una configuración regional específica. Después, debe compilar los archivos MOF específicos del idioma y del idioma independiente para almacenar la información de clase en el repositorio WMI.
+El comando pragma amendment preprocessor (Preprocesador de modificación **pragma)** ordena al compilador MOF que separe un archivo MOF en versiones independientes del lenguaje y específicas del lenguaje. El archivo MOF específico del lenguaje mueve los calificadores modificados a un espacio de nombres para una configuración regional específica. A continuación, compile los archivos MOF específicos y neutrales del lenguaje para almacenar información de clase en el repositorio WMI.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo crear un archivo MOF que contenga calificadores modificados. Después, puede compilar el código MOF con el siguiente comando:
+En el ejemplo siguiente se muestra cómo crear un archivo MOF que contiene calificadores modificados. A continuación, puede compilar el código MOF con el siguiente comando:
 
-**MOFCOMP** **-MOF: Lnmof. mof** **-MFL: Lsmof. MFL** **Mastermof. mof**
+**mofcomp** **-MOF:Lnmof.mof** **-MFL:Lsmof.mfl** **Mastermof.mof**
 
-El comando indica al compilador MOF que genere dos archivos MOF del archivo Mastermof. mof original. El compilador MOF genera una versión independiente del lenguaje del archivo MOF, denominada Lnmof. mof, con todos los elementos específicos del idioma que se han quitado. El compilador también crea un segundo archivo MOF específico del lenguaje denominado Lsmof. MFL que contiene solo los elementos que se deben localizar.
+El comando indica al compilador MOF que produzca dos archivos MOF a partir del archivo Mastermof.mof original. El compilador MOF genera una versión neutra del lenguaje del archivo MOF, denominada Lnmof.mof, con todos los elementos específicos del idioma quitados. El compilador también crea un segundo archivo MOF específico del lenguaje denominado Lsmof.mfl que contiene solo los elementos que debe encontrar.
 
 > [!Note]  
-> Cuando divida un archivo MOF con el calificador de **modificación** o el comando **pragma de modificación** , debe especificar las opciones **-MOF** y **-MFL** . De lo contrario, el compilador no genera ningún archivo de salida. A continuación, debe compilar los dos archivos de salida para que la información de la clase esté disponible en WMI.
+> Al dividir un archivo MOF  con el calificador de modificación o el comando **pragma amendment,** debe especificar las opciones **-MOF** **y -MFL.** De lo contrario, el compilador no genera ningún archivo de salida. A continuación, debe compilar los dos archivos de salida para que la información de clase esté disponible para WMI.
 
  
 
@@ -66,14 +66,14 @@ Class myclass
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

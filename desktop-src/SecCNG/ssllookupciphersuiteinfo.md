@@ -1,7 +1,7 @@
 ---
-description: Recupera la información del conjunto de cifrado para un protocolo, conjunto de cifrado y tipo de clave especificados.
+description: Recupera la información del conjunto de cifrado para un protocolo, conjunto de cifrado y conjunto de tipos de clave especificados.
 ms.assetid: ab995d9a-48fa-491a-95b1-d15c5b92f1da
-title: Función SslLookupCipherSuiteInfo (Sslprovider. h)
+title: Función SslLookupCipherSuiteInfo (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 7aff6c9e08351ce771669535a98ec817bfc4aaf5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf56f199ae0d367517558a12a0e84bf8ce26e7bdf5f70625b878066152d0b696
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118905615"
 ---
-# <a name="ssllookupciphersuiteinfo-function"></a>SslLookupCipherSuiteInfo función)
+# <a name="ssllookupciphersuiteinfo-function"></a>Función SslLookupCipherSuiteInfo
 
-La función **SslLookupCipherSuiteInfo** recupera la información del conjunto de cifrado para un protocolo especificado, un conjunto de cifrado y un conjunto de tipos de clave.
+La **función SslLookupCipherSuiteInfo** recupera la información del conjunto de cifrado para un protocolo, un conjunto de cifrado y un conjunto de tipos de clave especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,42 +44,42 @@ SECURITY_STATUS WINAPI SslLookupCipherSuiteInfo(
 
 <dl> <dt>
 
-*hSslProvider* \[ de\]
+*hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador de la instancia del proveedor de protocolo del [*Protocolo de capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) (SSL).
+Identificador de la instancia [*del proveedor Capa de sockets seguros protocolo*](/windows/desktop/SecGloss/s-gly) de seguridad (SSL).
 
 </dd> <dt>
 
-*dwProtocol* \[ de\]
+*dwProtocol* \[ En\]
 </dt> <dd>
 
-Uno de los valores del [**identificador de protocolo del proveedor de SSL de CNG**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx) .
+Uno de los valores [**de Identificador de protocolo de proveedor SSL de CNG.**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx)
 
 </dd> <dt>
 
-*dwCipherSuite* \[ de\]
+*dwCipherSuite* \[ En\]
 </dt> <dd>
 
-Uno de los valores de los [**identificadores del conjunto de cifrado del proveedor de SSL de CNG**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx) .
+Uno de los valores del conjunto de cifrado del [**proveedor SSL de CNG.**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx)
 
 </dd> <dt>
 
-*dwKeyType* \[ de\]
+*dwKeyType* \[ En\]
 </dt> <dd>
 
-Uno de los valores de los [**identificadores de tipo de clave del proveedor de SSL de CNG**](https://msdn.microsoft.com/library/Hh971256(v=VS.85).aspx) .
+Uno de los valores de Identificadores de tipo de clave del proveedor [**SSL de CNG.**](https://msdn.microsoft.com/library/Hh971256(v=VS.85).aspx)
 
 </dd> <dt>
 
-*pCipherSuite* \[ enuncia\]
+*pCipherSuite* \[ out\]
 </dt> <dd>
 
-Dirección de un búfer que contiene una estructura [**de \_ \_ \_ conjunto de cifrado SSL de NCRYPT**](https://www.bing.com/search?q=**NCRYPT\_SSL\_CIPHER\_SUITE**) en la que se va a escribir la información del conjunto de cifrado.
+Dirección de un búfer que contiene una estructura [**NCRYPT \_ SSL CIPHER \_ \_ SUITE**](https://www.bing.com/search?q=**NCRYPT\_SSL\_CIPHER\_SUITE**) en la que se va a escribir la información del conjunto de cifrado.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Este parámetro se reserva para uso futuro.
@@ -88,17 +88,17 @@ Este parámetro se reserva para uso futuro.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve cero.
+Si la función se realiza correctamente, devuelve cero.
 
 Si se produce un error en la función, devuelve un valor de error distinto de cero.
 
-Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
+Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 
 
 | Código o valor devuelto                                                                                                                                                    | Descripción                                        |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| <dl> <dt>**NTE \_ \_Identificador no válido**</dt> <dt>0x80090026L</dt> </dl> | El identificador de *hSslProvider* no es válido.<br/> |
+| <dl> <dt>**NTE \_ IDENTIFICADOR \_ NO VÁLIDO**</dt> <dt>0x80090026L</dt> </dl> | El *identificador hSslProvider* no es válido.<br/> |
 
 
 
@@ -110,9 +110,9 @@ Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 25532293335756a872ef5104d5eef66027fe2ae4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5dcc0ea5a7278364218bde23fbffdfa720070c9a54dbff0feb20abc1f161d024
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063835"
 ---
 # <a name="istatsgetcontrolstate-method"></a>IStats::GetControlState (método)
 
@@ -65,8 +65,8 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 
 | Código devuelto                                                                                            | Descripción                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>   | El NPP no está conectado a la red. Llame [a IStats::Connect](istats-connect.md) para conectar el NPP a la red.<br/> |
-| <dl> <dt>**NMERR \_ NO SOLO \_ \_ ESTADÍSTICAS**</dt> </dl> | El NPP está conectado a la red, pero no con el [método IStats::Connect.](istats-connect.md)<br/>                     |
+| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>   | El NPP no está conectado a la red. Llame [a IStats::Conectar](istats-connect.md) para conectar el NPP a la red.<br/> |
+| <dl> <dt>**NMERR \_ NO SOLO \_ \_ ESTADÍSTICAS**</dt> </dl> | El NPP está conectado a la red, pero no con el [método IStats::Conectar.](istats-connect.md)<br/>                     |
 
 
 
@@ -96,7 +96,7 @@ Se puede llamar a este método cada vez que el NPP está conectado a la red. Pue
 [IStats](istats.md)
 </dt> <dt>
 
-[IStats::Connect](istats-connect.md)
+[IStats::Conectar](istats-connect.md)
 </dt> <dt>
 
 [IStats::P ause](istats-pause.md)

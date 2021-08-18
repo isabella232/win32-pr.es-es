@@ -1,32 +1,32 @@
 ---
 description: En el ejemplo siguiente se aplica un algoritmo hash a algunos datos y se firma ese hash. En una segunda fase, se comprueban el hash y su firma. El hash se firma con la clave privada del usuario y la clave pública del firmante se exporta para que se pueda comprobar la firma.
 ms.assetid: 72f5d30a-efd5-4bf5-8057-cb73e5aa0514
-title: 'Programa C de ejemplo: firmar un hash y comprobar la firma hash'
+title: 'Programa C de ejemplo: firma de un hash y comprobación de la firma hash'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 000db2504b6a7046d040f6519f78de55e5b98c3b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 32668476939460ecba4d1894bf64be56d9563d6848d9490c93ddb1a7a6091d56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140858"
 ---
-# <a name="example-c-program-signing-a-hash-and-verifying-the-hash-signature"></a>Programa C de ejemplo: firmar un hash y comprobar la firma hash
+# <a name="example-c-program-signing-a-hash-and-verifying-the-hash-signature"></a>Programa C de ejemplo: firma de un hash y comprobación de la firma hash
 
-En el ejemplo siguiente se [*aplica un algoritmo hash*](../secgloss/h-gly.md) a algunos datos y se firma ese hash. En una segunda fase, se comprueban el hash y su firma. El hash se firma con la [*clave privada*](../secgloss/p-gly.md)del usuario y la [*clave pública*](../secgloss/p-gly.md) del firmante se exporta para que se pueda comprobar la firma.
+En el ejemplo siguiente [*se aplica un algoritmo hash a*](../secgloss/h-gly.md) algunos datos y se firma ese hash. En una segunda fase, se comprueban el hash y su firma. El hash se firma con la clave privada del [](../secgloss/p-gly.md) usuario [*y*](../secgloss/p-gly.md)la clave pública del firmante se exporta para que se pueda comprobar la firma.
 
-En este ejemplo se muestran las siguientes tareas y funciones de [*CryptoAPI*](../secgloss/c-gly.md) :
+En este ejemplo se muestran las siguientes tareas y [*funciones cryptoAPI:*](../secgloss/c-gly.md)
 
--   Adquisición de un CSP mediante [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
--   Obtención del par de claves de firma del usuario \_ mediante [**CryptGetUserKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetuserkey).
--   Creación de PUBLICKEYBLOB con la clave pública del firmante que se va a usar en el proceso de comprobación de firmas mediante [**CryptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey).
+-   Adquirir un CSP mediante [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
+-   Obtener el par de claves AT \_ SIGNATURE del usuario mediante [**CryptGetUserKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetuserkey).
+-   Crear un PUBLICKEYBLOB con la clave pública del firmante que se usará en el proceso de comprobación de firma mediante [**CryptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey).
 -   Crear un objeto hash mediante [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash).
--   Aplicar un algoritmo hash a los datos mediante [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata).
--   Firmar el hash mediante [**CryptSignHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignhasha).
+-   Aplica un algoritmo hash a los [**datos mediante CryptHashData.**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata)
+-   Firma del hash [**mediante CryptSignHash.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignhasha)
 -   Destruir el objeto hash original mediante [**CryptDestroyHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroyhash).
--   Hacer que la clave pública sea necesaria para comprobar el hash disponible mediante [**CryptImportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptimportkey).
+-   Hacer que la clave pública sea necesaria para comprobar que el hash está disponible mediante [**CryptImportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptimportkey).
 -   Volver a crear el objeto hash mediante [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash) y [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata).
--   Comprobando la firma en el hash mediante [**CryptVerifySignature**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptverifysignaturea).
+-   Comprobar la firma en el hash mediante [**CryptVerifySignature**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptverifysignaturea).
 -   Realizar una limpieza normal.
 
 

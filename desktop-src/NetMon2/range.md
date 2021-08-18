@@ -1,7 +1,7 @@
 ---
 description: La estructura RANGE define un intervalo de valores de propiedad válidos.
 ms.assetid: 7bd14410-f5c1-487b-8776-405567991e5a
-title: Estructura de intervalo (Netmon. h)
+title: Estructura RANGE (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: bf465636f315e60e43350bb370e2002b8a96e635
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e0135a6210aebbca38bfdede00231315dd2680461f366930b24925eda830604
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063725"
 ---
-# <a name="range-structure"></a>Estructura de rango
+# <a name="range-structure"></a>Estructura RANGE
 
-La estructura **Range** define un intervalo de valores de propiedad válidos.
+La **estructura RANGE** define un intervalo de valores de propiedad válidos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,38 +43,38 @@ typedef struct range {
 **MinValue**
 </dt> <dd>
 
-Menor valor posible de un intervalo.
+Valor más bajo posible en un intervalo.
 
 </dd> <dt>
 
 **MaxValue**
 </dt> <dd>
 
-Mayor valor posible de un intervalo.
+Valor más alto posible en un intervalo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La estructura de **intervalo** se usa para especificar un intervalo válido de números para una propiedad de protocolo. Si el miembro de **Qualifier** de la estructura **PropertyInfo** está establecido en **props \_ \_ Range**, el miembro **lpRange** de la estructura [PropertyInfo](propertyinfo.md) debe proporcionar un puntero a una estructura de **intervalo** .
+La **estructura RANGE** se usa para especificar un intervalo válido de números para una propiedad de protocolo. Si el **miembro DataQualifier** de la estructura **PROPERTYINFO** se establece en **PROP QUAL \_ \_ RANGE**, el miembro **lpRange** de la estructura [PROPERTYINFO](propertyinfo.md) debe proporcionar un puntero a una **estructura RANGE.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[PROPERTYINFO](propertyinfo.md)
+[Propertyinfo](propertyinfo.md)
 </dt> </dl>
 
  

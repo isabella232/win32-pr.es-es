@@ -1,34 +1,34 @@
 ---
-description: En el ejemplo siguiente se establece y se obtiene una propiedad del almacén de certificados, el nombre localizado del almacén. Esta propiedad no se conserva cuando se cierra el almacén.
+description: En el ejemplo siguiente se establece y se obtiene una propiedad de almacén de certificados, el nombre del almacén localizado. Esta propiedad no se conserva cuando se cierra el almacén.
 ms.assetid: 9fb368c9-a0d7-4c5f-9a38-7ef8f7283354
-title: 'Programa C de ejemplo: establecimiento y obtención de las propiedades del almacén de certificados'
+title: 'Programa C de ejemplo: Establecer y obtener propiedades del almacén de certificados'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7337027c265376f9145ef7b68f359250223d20f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 59d65eeb0ee667b1dbce5a1df6c9c73d1849ef2524ecc3d0674d6fa7a5225fdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007533"
 ---
-# <a name="example-c-program-setting-and-getting-certificate-store-properties"></a>Programa C de ejemplo: establecimiento y obtención de las propiedades del almacén de certificados
+# <a name="example-c-program-setting-and-getting-certificate-store-properties"></a>Programa C de ejemplo: Establecer y obtener propiedades del almacén de certificados
 
-En el ejemplo siguiente se establece y se obtiene una propiedad del almacén de certificados, el nombre localizado del almacén. Esta propiedad no se conserva cuando se cierra el almacén.
+En el ejemplo siguiente se establece y se obtiene una propiedad de almacén de certificados, el nombre del almacén localizado. Esta propiedad no se conserva cuando se cierra el almacén.
 
-En este ejemplo se muestran las siguientes tareas y funciones de [*CryptoAPI*](../secgloss/c-gly.md) :
+En este ejemplo se muestran las siguientes tareas y [*funciones cryptoAPI:*](../secgloss/c-gly.md)
 
--   Apertura de un almacén de certificados con [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
+-   Abrir un almacén de certificados [**mediante CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
 -   Establecer el nombre localizado del almacén mediante [**CertSetStoreProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsetstoreproperty).
 -   Recuperar el nombre localizado del almacén mediante [**CertGetStoreProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetstoreproperty).
--   Recuperar el nombre de almacén localizado predefinido mediante [**CryptFindLocalizedName**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptfindlocalizedname).
--   Guarde el almacén de certificados como un mensaje [*PKCS \# 7*](../secgloss/p-gly.md) en un archivo mediante [**CertSaveStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsavestore).
--   Guarde el almacén de certificados en un [*BLOB*](../secgloss/b-gly.md) en memoria mediante [**CertSaveStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsavestore).
--   Determine el número de firmantes del \# mensaje PKCS 7 mediante [**CryptGetMessageSignercount**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetmessagesignercount).
--   Abra un almacén de certificados desde un \# mensaje PKCS 7 en memoria mediante [**CryptGetMessageCertificates**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetmessagecertificates).
--   Inicializa el [**\_ \_ identificador del algoritmo de cifrado**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_algorithm_identifier) y el [**\_ mensaje de hash cifrado \_ \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_hash_message_para) para las estructuras de datos necesarias para [*aplicar un algoritmo hash*](../secgloss/h-gly.md) al mensaje
--   Aplicar un algoritmo hash y codificar el mensaje con [**CryptHashMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashmessage).
--   Determine si se han realizado cambios en un almacén de certificados abierto y sincronice el almacén si es necesario con [**CertControlStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcontrolstore).
--   Cierre de un almacén de certificados con [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore) con \_ la \_ marca de forzar el almacén de cierre de certificado \_ \_ .
+-   Recuperar el nombre del almacén localizado predefinido mediante [**CryptFindLocalizedName**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptfindlocalizedname).
+-   Guarde el almacén de certificados como [*un mensaje PKCS \# 7*](../secgloss/p-gly.md) en un archivo mediante [**CertSaveStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsavestore).
+-   Guarde el almacén de certificados en un [*BLOB de memoria*](../secgloss/b-gly.md) mediante [**CertSaveStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsavestore)
+-   Determine el número de firmantes del mensaje PKCS \# 7 mediante [**CryptGetMessageSignercount**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetmessagesignercount).
+-   Abra un almacén de certificados desde un mensaje PKCS \# 7 en memoria mediante [**CryptGetMessageCertificates**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetmessagecertificates).
+-   Inicializar las [**estructuras de datos CRYPT ALGORITHM \_ \_ IDENTIFIER**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_algorithm_identifier) y [**CRYPT HASH MESSAGE \_ \_ \_ PARA**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_hash_message_para) necesarias para [*crear un algoritmo hash*](../secgloss/h-gly.md) en el mensaje
+-   Aplica un algoritmo hash y codifica el mensaje [**mediante CryptHashMessage.**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashmessage)
+-   Determine si se han realizado cambios en un almacén de certificados abierto y sincronice el almacén si es necesario mediante [**CertControlStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcontrolstore).
+-   Cierre de un almacén de certificados [**mediante CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore) con CERT \_ CLOSE STORE FORCE \_ \_ \_ FLAG.
 
 
 ```C++

@@ -1,46 +1,46 @@
 ---
-description: Establece la configuración de flujo para el origen de medios WTV.
+description: Establece la configuración del flujo para el origen de medios WTV.
 ms.assetid: 2181723A-C6E8-42BD-979C-5C26FE3986C4
-title: Propiedad MFPKEY_SBESourceMode (Mfidl. h)
+title: MFPKEY_SBESourceMode propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b82835a4cfc363e3ae2d054cce68f95c655447dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 86c6b4fc0b248000f0540fd47fd7bbf8bba907994d1351144521bf162d330340
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973374"
 ---
-# <a name="mfpkey_sbesourcemode-property"></a>\_Propiedad SBESourceMode de MFPKEY
+# <a name="mfpkey_sbesourcemode-property"></a>Propiedad SBESourceMode de MFPKEY \_
 
-Establece la configuración de flujo para el origen de medios WTV.
+Establece la configuración del flujo para el origen de medios WTV.
 
 
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
 **INT**
 
-VT \_ int
+VT \_ INT
 
 **intVal**
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Utilice esta propiedad para configurar el origen de medios WTV. Para establecer la propiedad, pase un puntero [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) a la resolución de origen. Para obtener más información, consulte [configuración de un origen de medios](configuring-a-media-source.md).
+Use esta propiedad para configurar el origen de medios WTV. Para establecer la propiedad , pase un [**puntero IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) al solucionador de origen. Para obtener más información, vea [Configuring a Media Source](configuring-a-media-source.md).
 
-El origen de medios WTV lee archivos de programas de TV grabados de Windows (. WTV y. ms-drv).
+El origen multimedia WTV lee Windows recorded TV Show (.wtv y .ms-drv).
 
-Esta propiedad debe tener uno de los valores siguientes.
+Esta propiedad debe tener uno de los siguientes valores.
 
--   1: asigne secuencias de audio disponibles a una sola salida, según el sistema local. Este modo es adecuado para la reproducción. (Valor predeterminado).
--   2. Se seleccionan todas las secuencias de audio y subsecuencias (como el título y los flujos de datos). Este modo es adecuado para remuxing o la transcodificación.
+-   1: Asigne las secuencias de audio disponibles a una única salida, según la configuración local del sistema. Este modo es adecuado para la reproducción. (Valor predeterminado).
+-   2. Se seleccionan todas las secuencias de audio y subproyecciones (por ejemplo, secuencias de subtítulos y de datos). Este modo es adecuado para la reuxing o transcodificación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,9 +48,9 @@ Esta propiedad debe tener uno de los valores siguientes.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                  |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                  |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                        |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -58,7 +58,7 @@ Esta propiedad debe tener uno de los valores siguientes.
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

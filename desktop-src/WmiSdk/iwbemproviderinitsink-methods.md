@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Métodos IWbemProviderInitSink
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20b713f11ef91ac3f965688a54e3fcb8dab1eeb2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9371dce24b614c1dad1937c5c0cc76eba3afff009091f3858187d86dd9bb9e85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131297"
 ---
 # <a name="iwbemproviderinitsink-methods"></a>Métodos IWbemProviderInitSink
 
-La interfaz [**IWbemProviderInitSink**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinitsink) expone los métodos siguientes.
+La [**interfaz IWbemProviderInitSink**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinitsink) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

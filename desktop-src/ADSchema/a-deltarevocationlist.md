@@ -1,11 +1,11 @@
 ---
-title: Atributo de lista de revocación Delta
+title: Atributo Delta-Revocation-List
 description: Lista de certificados que se han revocado desde la última actualización diferencial.
 ms.assetid: fc755c22-6d4f-4509-abb8-47c4f2f37545
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de lista de revocación Delta
-- deltaRevocationList esquema de AD de atributos
+- Esquema de AD del atributo Delta-Revocation-List
+- DeltaRevocationList attribute AD Schema (Esquema de AD del atributo deltaRevocationList)
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e866090dfb754c11fb4a25bbe904d5922a8fafd6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a23cc8c5c01195429ba126632ed6c888354c66a4bc5d3cede75d28126fbafba7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961744"
 ---
-# <a name="delta-revocation-list-attribute"></a>Atributo de lista de revocación Delta
+# <a name="delta-revocation-list-attribute"></a>Atributo Delta-Revocation-List
 
 Lista de certificados que se han revocado desde la última actualización diferencial.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | Delta-revocación-lista                                 |
-| Nombre para mostrar de LDAP | deltaRevocationList                                   |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | Delta-Revocation-List                                 |
+| Ldap-Display-Name | deltaRevocationList                                   |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 2.5.4.53                                              |
-| System-ID-GUID    | 167757b5-47f3-11d1-a9c3-0000f80367c1                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 167757b5-47f3-11d1-a9c3-0000f80367c1                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -53,20 +53,20 @@ Lista de certificados que se han revocado desde la última actualización difere
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8C46                                                                                                                                     |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | False                                                                                                                                      |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Falso                                                                                                                                      |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                                 |
-| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**CRL-punto de distribución**](c-crldistributionpoint.md)<br/> |
+| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Lista de certificados que se han revocado desde la última actualización difere
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8C46                                                                                                                                     |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | False                                                                                                                                      |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Falso                                                                                                                                      |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                                 |
-| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**CRL-punto de distribución**](c-crldistributionpoint.md)<br/> |
+| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Lista de certificados que se han revocado desde la última actualización difere
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8C46                                                                                                                                     |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | False                                                                                                                                      |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Falso                                                                                                                                      |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                                 |
-| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**CRL-punto de distribución**](c-crldistributionpoint.md)<br/> |
+| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Lista de certificados que se han revocado desde la última actualización difere
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8C46                                                                                                                                     |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | False                                                                                                                                      |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Falso                                                                                                                                      |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                                 |
-| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**CRL-punto de distribución**](c-crldistributionpoint.md)<br/> |
+| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Lista de certificados que se han revocado desde la última actualización difere
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8C46                                                                                                                                     |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | False                                                                                                                                      |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Falso                                                                                                                                      |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                                 |
-| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**CRL-punto de distribución**](c-crldistributionpoint.md)<br/> |
+| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Lista de certificados que se han revocado desde la última actualización difere
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | 0x8C46                                                                                                                                     |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | False                                                                                                                                      |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Falso                                                                                                                                      |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                                 |
-| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**CRL-punto de distribución**](c-crldistributionpoint.md)<br/> |
+| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 

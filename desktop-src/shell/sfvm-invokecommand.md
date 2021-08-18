@@ -1,19 +1,19 @@
 ---
-description: 'Notifica al objeto de devolución de llamada que el usuario ha invocado uno de sus comandos de menú o barra de herramientas. Usado por IShellFolderViewCB:: MessageSFVCB.'
+description: Notifica al objeto de devolución de llamada que el usuario ha invocado uno de sus comandos de barra de herramientas o menú. Usado por IShellFolderViewCB::MessageSFVCB.
 ms.assetid: 6b9e4a4d-ec45-489c-bbff-d123d5756b75
-title: Mensaje de SFVM_INVOKECOMMAND (ShlObj. h)
+title: SFVM_INVOKECOMMAND mensaje (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e5fc9709827250e5cf8060400bbecb714ae5998
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24b33eba78e0680fe940569c7a7ccfb4a27c61c3ffcb6eead0f2ff6436ec74f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968654"
 ---
-# <a name="sfvm_invokecommand-message"></a>SFVM \_ INVOKECOMMAND
+# <a name="sfvm_invokecommand-message"></a>Mensaje \_ INVOKECOMMAND de SFVM
 
-Notifica al objeto de devolución de llamada que el usuario ha invocado uno de sus comandos de menú o barra de herramientas. Usado por [**IShellFolderViewCB:: MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
+Notifica al objeto de devolución de llamada que el usuario ha invocado uno de sus comandos de barra de herramientas o menú. Usado por [**IShellFolderViewCB::MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
 
 
 ```C++
@@ -33,13 +33,13 @@ SFVM_INVOKECOMMAND
 *idCmd* \[ en\]
 </dt> <dd>
 
-IDENTIFICADOR de comando de la barra de herramientas o el elemento de menú seleccionado.
+Identificador de comando de la barra de herramientas o el elemento de menú seleccionados.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje sirve esencialmente la misma función que un mensaje de [**\_ comando de WM**](../menurc/wm-command.md) en un procedimiento de ventana convencional. Permite que el objeto de devolución de llamada controle los elementos que ha agregado a la herramienta explorador de Windows o a la barra de menús.
+Este mensaje sirve básicamente la misma función que un [**mensaje \_ WM COMMAND**](../menurc/wm-command.md) en un procedimiento de ventana convencional. Permite que el objeto de devolución de llamada controle los elementos que ha agregado a la herramienta o barra de menús Windows Explorer.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,7 +49,7 @@ Este mensaje sirve esencialmente la misma función que un mensaje de [**\_ coman
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>ShlObj. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

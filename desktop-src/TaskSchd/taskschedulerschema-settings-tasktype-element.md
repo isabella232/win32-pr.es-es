@@ -1,9 +1,9 @@
 ---
-title: Elemento Settings (taskType)
+title: Configuración (taskType) (Elemento)
 description: Especifica la configuración que el Programador de tareas utiliza para realizar la tarea.
 ms.assetid: 72d2929a-0dd2-44cd-be7b-72eca23a5e14
 keywords:
-- Elemento Settings Programador de tareas
+- Configuración elemento Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9133d536aef692a5f9928e10963dff8c454f25fc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea754aa883f9c80c4a436357cc159c588bde375aaa66a229b358723b74b9e070
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002243"
 ---
-# <a name="settings-tasktype-element"></a>Elemento Settings (taskType)
+# <a name="settings-tasktype-element"></a>Configuración (taskType) (Elemento)
 
 Especifica la configuración que el Programador de tareas utiliza para realizar la tarea.
 
@@ -31,7 +31,7 @@ Especifica la configuración que el Programador de tareas utiliza para realizar 
  />
 ```
 
-El elemento **Settings** se define mediante el tipo complejo [**taskType**](taskschedulerschema-tasktype-complextype.md) .
+El **Configuración** elemento se define mediante el [**tipo complejo taskType.**](taskschedulerschema-tasktype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -39,7 +39,7 @@ El elemento **Settings** se define mediante el tipo complejo [**taskType**](task
 
 | Elemento                                          | Derivado de                                                 | Descripción                                                                    |
 |--------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [**Task**](taskschedulerschema-task-element.md) | [**taskType**](taskschedulerschema-tasktype-complextype.md) | Especifica la tarea que realiza el servicio Programador de tareas.<br/> |
+| [**Task**](taskschedulerschema-task-element.md) | [**taskType**](taskschedulerschema-tasktype-complextype.md) | Especifica la tarea que realiza el Programador de tareas servicio.<br/> |
 
 
 
@@ -49,38 +49,38 @@ El elemento **Settings** se define mediante el tipo complejo [**taskType**](task
 
 | Elemento                                                                                                          | Tipo                                                                                              | Descripción                                                                                                          |
 |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [**AllowHardTerminate**](taskschedulerschema-allowhardterminate-settingstype-element.md)                        | boolean                                                                                           | Especifica que la tarea puede terminar con TerminateProcess.<br/>                                         |
-| [**AllowStartOnDemand**](taskschedulerschema-allowstartondemand-settingstype-element.md)                        | boolean                                                                                           | Especifica que la tarea se puede iniciar con el comando ejecutar o el menú contextual.<br/>                  |
-| [**DeleteExpiredTaskAfter**](taskschedulerschema-deleteexpiredtaskafter-settingstype-element.md)                | duration                                                                                          | Especifica la cantidad de tiempo que esperará el Programador de tareas antes de eliminar la tarea después de que expire.<br/> |
-| [**DisallowStartIfOnBatteries**](taskschedulerschema-disallowstartifonbatteries-settingstype-element.md)        | boolean                                                                                           | Especifica que la tarea no se iniciará si el equipo se está ejecutando con baterías.<br/>                      |
-| [**habilitado**](taskschedulerschema-enabled-settingstype-element.md)                                              | boolean                                                                                           | Especifica que la tarea está habilitada. La tarea solo se puede realizar cuando este valor es true.<br/>             |
+| [**AllowHardTerminate**](taskschedulerschema-allowhardterminate-settingstype-element.md)                        | boolean                                                                                           | Especifica que la tarea puede finalizarse mediante TerminateProcess.<br/>                                         |
+| [**AllowStartOnDemand**](taskschedulerschema-allowstartondemand-settingstype-element.md)                        | boolean                                                                                           | Especifica que la tarea se puede iniciar mediante el comando Ejecutar o el menú contextual.<br/>                  |
+| [**DeleteExpiredTaskAfter**](taskschedulerschema-deleteexpiredtaskafter-settingstype-element.md)                | duration                                                                                          | Especifica la cantidad de tiempo que el Programador de tareas esperará antes de eliminar la tarea después de que expire.<br/> |
+| [**DisallowStartIfOnBatteries**](taskschedulerschema-disallowstartifonbatteries-settingstype-element.md)        | boolean                                                                                           | Especifica que la tarea no se iniciará si el equipo se ejecuta con baterías.<br/>                      |
+| [**habilitado**](taskschedulerschema-enabled-settingstype-element.md)                                              | boolean                                                                                           | Especifica que la tarea está habilitada. La tarea solo se puede realizar cuando esta configuración es True.<br/>             |
 | [**ExecutionTimeLimit**](taskschedulerschema-executiontimelimit-settingstype-element.md)                        | duration                                                                                          | Cantidad de tiempo permitido para completar la tarea.<br/>                                                              |
-| [**Plusvalía**](taskschedulerschema-hidden-settingstype-element.md)                                                | boolean                                                                                           | Especifica que la tarea no será visible de forma predeterminada en la interfaz de usuario.<br/>                                         |
-| [**IdleSettings**](taskschedulerschema-idlesettings-settingstype-element.md)                                    | [**idleSettingsType**](taskschedulerschema-idlesettingstype-complextype.md)                      | Especifica cómo realiza el Programador de tareas las tareas cuando el equipo está en un estado de inactividad.<br/>                    |
-| [**MaintenanceSettings**](taskschedulerschema-maintenancesettings-maintenancesettingstype-element.md)           | [**maintenanceSettingsType**](taskschedulerschema-maintenancesettingstype-complextype.md)        | Especifica cómo realiza el Programador de tareas las tareas durante el mantenimiento automático.<br/>                             |
-| [**MultipleInstancesPolicy**](taskschedulerschema-multipleinstancespolicy-settingstype-element.md)              | [**multipleInstancesPolicyType**](taskschedulerschema-multipleinstancespolicytype-simpletype.md) | Especifica la Directiva que define el modo en que el Programador de tareas se encarga de varias instancias de la tarea.<br/>       |
+| [**Oculto**](taskschedulerschema-hidden-settingstype-element.md)                                                | boolean                                                                                           | Especifica que la tarea no estará visible en la interfaz de usuario de forma predeterminada.<br/>                                         |
+| [**IdleSettings**](taskschedulerschema-idlesettings-settingstype-element.md)                                    | [**idleSettingsType**](taskschedulerschema-idlesettingstype-complextype.md)                      | Especifica cómo el Programador de tareas realiza tareas cuando el equipo está en estado inactivo.<br/>                    |
+| [**MaintenanceSettings**](taskschedulerschema-maintenancesettings-maintenancesettingstype-element.md)           | [**maintenanceSettingsType**](taskschedulerschema-maintenancesettingstype-complextype.md)        | Especifica cómo realiza el Programador de tareas tareas durante el mantenimiento automático.<br/>                             |
+| [**MultipleInstancesPolicy**](taskschedulerschema-multipleinstancespolicy-settingstype-element.md)              | [**multipleInstancesPolicyType**](taskschedulerschema-multipleinstancespolicytype-simpletype.md) | Especifica la directiva que define cómo el Programador de tareas trata con varias instancias de la tarea.<br/>       |
 | [**Priority**](taskschedulerschema-priority-settingstype-element.md)                                            | [**priorityType**](taskschedulerschema-prioritytype-simpletype.md)                               | Especifica el nivel de prioridad de la tarea.<br/>                                                                |
 | [**RestartOnFailure**](taskschedulerschema-restartonfailure-settingstype-element.md)                            | [**restartType**](taskschedulerschema-restarttype-complextype.md)                                | Especifica que el Programador de tareas intentará reiniciar la tarea si se produce un error en la tarea por cualquier motivo.<br/>      |
-| [**RunOnlyIfIdle**](taskschedulerschema-runonlyifidle-settingstype-element.md)                                  | boolean                                                                                           | Especifica que la tarea se ejecuta solo cuando el equipo está en un estado de inactividad.<br/>                                |
-| [**RunOnlyIfNetworkAvailable**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md)          | boolean                                                                                           | Especifica que el Programador de tareas ejecutará la tarea solo cuando una red esté disponible.<br/>                     |
+| [**RunOnlyIfIdle**](taskschedulerschema-runonlyifidle-settingstype-element.md)                                  | boolean                                                                                           | Especifica que la tarea se ejecuta solo cuando el equipo está en estado inactivo.<br/>                                |
+| [**RunOnlyIfNetworkAvailable**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md)          | boolean                                                                                           | Especifica que el Programador de tareas ejecutará la tarea solo cuando haya una red disponible.<br/>                     |
 | [**StartWhenAvailable**](taskschedulerschema-startwhenavailable-settingstype-element.md)                        | boolean                                                                                           | Especifica que el Programador de tareas puede iniciar la tarea en cualquier momento después de que haya transcurrido su hora programada.<br/>     |
-| [**StopIfGoingOnBatteries (settingsType)**](taskschedulerschema-stopifgoingonbatteries-settingstype-element.md) | boolean                                                                                           | Especifica que la tarea se detendrá si el equipo pasa a baterías.<br/>                          |
-| [**Volatil**](taskschedulerschema-volatile-element.md)                                                         | boolean                                                                                           | Especifica si la tarea se deshabilitará automáticamente mediante Programador de tareas en el inicio de Windows.<br/>                     |
-| [**WakeToRun (settingsType)**](taskschedulerschema-waketorun-settingstype-element.md)                           | boolean                                                                                           | Especifica que Programador de tareas reactivará el equipo cuando sea el momento de ejecutar la tarea.<br/>                     |
+| [**StopIfGoingOnBatteries (settingsType)**](taskschedulerschema-stopifgoingonbatteries-settingstype-element.md) | boolean                                                                                           | Especifica que la tarea se detendrán si el equipo va a usar baterías.<br/>                          |
+| [**Volátil**](taskschedulerschema-volatile-element.md)                                                         | boolean                                                                                           | Especifica si la tarea se deshabilita automáticamente mediante Programador de tareas inicio Windows inicio.<br/>                     |
+| [**WakeToRun (settingsType)**](taskschedulerschema-waketorun-settingstype-element.md)                           | boolean                                                                                           | Especifica que Programador de tareas reactivará el equipo cuando llegue el momento de ejecutar la tarea.<br/>                     |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Puede seleccionar uno o varios de los elementos secundarios a los que se hace referencia anteriormente.
 
-En el desarrollo de C++, la información de registro de una tarea se especifica mediante la [**propiedad settings de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_settings).
+Para el desarrollo de C++, la información de registro de una tarea se especifica mediante [**la Configuración propiedad de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_settings).
 
-Para el desarrollo de scripting, la información de registro de una tarea se especifica mediante la propiedad [**TaskDefinition. Settings**](taskdefinition-settings.md) .
+Para el desarrollo de scripting, la información de registro de una tarea se especifica mediante la [**propiedad TaskDefinition.Configuración.**](taskdefinition-settings.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de código XML se define un elemento de configuración que permite una finalización rígida de la tarea.
+En el siguiente ejemplo de código XML se define un elemento de configuración que permite una terminación de la tarea de forma dura.
 
 
 ```XML
@@ -94,7 +94,7 @@ En el siguiente ejemplo de código XML se define un elemento de configuración q
 
 
 
-Para obtener más información y un ejemplo completo del XML para establecer la configuración de la tarea, vea [ejemplo de desencadenador de tiempo (XML)](time-trigger-example--xml-.md).
+Para obtener más información y un ejemplo completo del XML para establecer la configuración de tareas, vea [Ejemplo de desencadenador de tiempo (XML).](time-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,8 +102,8 @@ Para obtener más información y un ejemplo completo del XML para establecer la 
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -111,7 +111,7 @@ Para obtener más información y un ejemplo completo del XML para establecer la 
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

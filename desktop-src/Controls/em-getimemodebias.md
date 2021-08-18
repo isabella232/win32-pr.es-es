@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETIMEMODEBIAS (RichEdit. h)
-description: Recupera el sesgo del modo editor de métodos de entrada (IME) para un control Rich Edit de Microsoft.
+title: EM_GETIMEMODEBIAS mensaje (Richedit.h)
+description: Recupera el sesgo de modo del Editor de métodos de entrada (IME) para un control De edición enriquecedora de Microsoft.
 ms.assetid: e8ca899f-3423-4814-86e9-133dfd11f9a6
 keywords:
-- EM_GETIMEMODEBIAS controles de mensajes de Windows
+- EM_GETIMEMODEBIAS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea13e151ae9d487340ee440e3b123ae70b437a02
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 49ad5504ca2e5ac1a332657c4f539c9f983292617b6e74b949598488ceb38dfa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019543"
 ---
-# <a name="em_getimemodebias-message"></a>\_Mensaje GETIMEMODEBIAS em
+# <a name="em_getimemodebias-message"></a>Mensaje DE EM \_ GETIMEMODEBIAS
 
-Recupera el sesgo del modo editor de métodos de entrada (IME) para un control Rich Edit de Microsoft.
+Recupera el sesgo de modo del Editor de métodos de entrada (IME) para un control De edición enriquecedora de Microsoft.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,14 +32,14 @@ Recupera el sesgo del modo editor de métodos de entrada (IME) para un control R
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
@@ -47,11 +47,11 @@ No se utiliza; debe ser cero.
 
 Este mensaje devuelve la configuración de sesgo del modo IME actual.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener el sesgo del modo de servicios de texto, use [**em \_ GETCTFMODEBIAS**](em-getctfmodebias.md).
+Para obtener el sesgo Text Services Framework modo, use [**EM \_ GETCTFMODEBIAS**](em-getctfmodebias.md).
 
-La aplicación debe llamar a [**em \_ ISIME**](em-isime.md) antes de llamar a esta función.
+La aplicación debe llamar a [**EM \_ ISIME antes**](em-isime.md) de llamar a esta función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ La aplicación debe llamar a [**em \_ ISIME**](em-isime.md) antes de llamar a es
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP1 \[\]<br/>                                  |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp1\]<br/>                                  |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -72,10 +72,10 @@ La aplicación debe llamar a [**em \_ ISIME**](em-isime.md) antes de llamar a es
 **Referencia**
 </dt> <dt>
 
-[**\_ISIME em**](em-isime.md)
+[**EM \_ ISIME**](em-isime.md)
 </dt> <dt>
 
-[**\_GETCTFMODEBIAS em**](em-getctfmodebias.md)
+[**EM \_ GETCTFMODEBIAS**](em-getctfmodebias.md)
 </dt> </dl>
 
  

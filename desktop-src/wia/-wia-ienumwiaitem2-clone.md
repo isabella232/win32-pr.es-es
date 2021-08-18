@@ -1,7 +1,7 @@
 ---
-description: Crea una instancia adicional de la interfaz IEnumWiaItem2 y le devuelve un puntero.
+description: Crea una instancia adicional de la interfaz IEnumWiaItem2 y devuelve un puntero a ella.
 ms.assetid: 0d36d555-d0d9-4a1c-ac54-de611850449c
-title: 'IEnumWiaItem2:: Clone (método) (WIA. h)'
+title: Método IEnumWiaItem2::Clone (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 3279e7db3efe66e940adbcb9677204e5df7867f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 21c94c634a6930f28f48cdc35a4d3cf199b8fa33e9fb5f08444797fd76f50c45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965854"
 ---
-# <a name="ienumwiaitem2clone-method"></a>IEnumWiaItem2:: Clone (método)
+# <a name="ienumwiaitem2clone-method"></a>IEnumWiaItem2::Clone (Método)
 
-Crea una instancia adicional de la interfaz [**IEnumWiaItem2**](-wia-ienumwiaitem2.md) y le devuelve un puntero.
+Crea una instancia adicional de la [**interfaz IEnumWiaItem2**](-wia-ienumwiaitem2.md) y devuelve un puntero a ella.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,12 +39,12 @@ HRESULT Clone(
 
 <dl> <dt>
 
-*ppIEnum* \[ enuncia\]
+*ppIEnum* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IEnumWiaItem2**](-wia-ienumwiaitem2.md)\*\***
 
-Recibe la dirección de la instancia de la interfaz [**IEnumWiaItem2**](-wia-ienumwiaitem2.md) que crea **IEnumWiaItem2:: Clone** .
+Recibe la dirección de la instancia de interfaz [**IEnumWiaItem2**](-wia-ienumwiaitem2.md) que **crea IEnumWiaItem2::Clone.**
 
 </dd> </dl>
 
@@ -52,11 +52,11 @@ Recibe la dirección de la instancia de la interfaz [**IEnumWiaItem2**](-wia-ien
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las aplicaciones deben llamar al método [IUnknown:: Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) en los punteros de interfaz que reciben a través del parámetro *ppIEnum* .
+Las aplicaciones deben llamar [al método IUnknown::Release en](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) los punteros de interfaz que reciben a través del parámetro *ppIEnum.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,10 +64,10 @@ Las aplicaciones deben llamar al método [IUnknown:: Release](/windows/win32/api
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

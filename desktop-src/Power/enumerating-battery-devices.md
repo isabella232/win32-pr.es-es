@@ -1,19 +1,19 @@
 ---
-description: Para enumerar los dispositivos de la batería en un equipo local, utilice la función SetupDiGetClassDevs.
+description: Para enumerar los dispositivos de batería en un equipo local, use la función SetupDiGetClassDevs.
 ms.assetid: 17e3c779-91ba-4901-9435-b73dedbf0b89
-title: Enumerar dispositivos de batería
+title: Enumeración de dispositivos de batería
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d610feda8fd312bbefe2742da50d82a664a8ce2f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 28ed27979ca8b6abdb8015da58a9b6205f9ee3123cd4a82ccf7bd9c121e10441
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143558"
 ---
-# <a name="enumerating-battery-devices"></a>Enumerar dispositivos de batería
+# <a name="enumerating-battery-devices"></a>Enumeración de dispositivos de batería
 
-Para enumerar los dispositivos de la batería en un equipo local, utilice la función [SetupDiGetClassDevs](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw) . El parámetro *ClassGuid* es un puntero a **la \_ \_ batería DEVCLASS de GUID** (definida en BatClass. h). Para enumerar todas las baterías, establezca el parámetro de *enumerador* en **null** y establezca el parámetro *Flags* en **DIGCF \_ present** \| **DIGCF \_ INTERFACEDEVICE**. Para obtener los nombres de los dispositivos de la batería, utilice las funciones [SetupDiEnumDeviceInterfaces](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) y [SetupDiGetDeviceInterfaceDetail](https://msdn.microsoft.com/library/ms792901.aspx) en los datos devueltos. Para abrir un identificador de archivo para cada uno de los dispositivos de la batería, llame a la función [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) con estos nombres.
+Para enumerar los dispositivos de batería en un equipo local, use la [función SetupDiGetClassDevs.](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw) El *parámetro ClassGuid* es un puntero a **GUID \_ DEVCLASS \_ BATTERY** (definido en BatClass.h). Para enumerar todas las baterías, establezca el parámetro *Enumerator* en **NULL** y establezca el parámetro *Flags* en **DIGCF \_ PRESENT** \| **DIGCF \_ INTERFACEDEVICE**. Para obtener los nombres de los dispositivos de batería, use las funciones [SetupDiEnumDeviceInterfaces](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) y [SetupDiGetDeviceInterfaceDetail](https://msdn.microsoft.com/library/ms792901.aspx) en los datos devueltos. Para abrir un identificador de archivo para cada uno de los dispositivos de batería, llame a la [**función CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) con estos nombres.
 
 En el siguiente ejemplo de C++ se muestra cómo enumerar los dispositivos de batería en un equipo local.
 
@@ -174,7 +174,7 @@ DWORD GetBatteryState()
 
 
 
-Para enumerar los dispositivos de la batería conectados a un equipo remoto, use la clase WMI de la [**\_ batería de Win32**](/windows/desktop/CIMWin32Prov/win32-battery) en una aplicación o script de cliente.
+Para enumerar los dispositivos de batería conectados a un equipo remoto, use la clase Wmi de batería [**Win32 \_**](/windows/desktop/CIMWin32Prov/win32-battery) en un script de cliente o aplicación.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -189,13 +189,13 @@ Para enumerar los dispositivos de la batería conectados a un equipo remoto, use
 [SetupDiGetDeviceInterfaceDetail](https://msdn.microsoft.com/library/ms792901.aspx)
 </dt> <dt>
 
-[**\_etiqueta de \_ consulta ioctl Battery \_**](ioctl-battery-query-tag.md)
+[**ETIQUETA DE CONSULTA \_ DE \_ BATERÍA DE \_ IOCTL**](ioctl-battery-query-tag.md)
 </dt> <dt>
 
-[**\_información de \_ consulta de batería ioctl \_**](ioctl-battery-query-information.md)
+[**INFORMACIÓN DE CONSULTA \_ DE LA \_ BATERÍA DE IOCTL \_**](ioctl-battery-query-information.md)
 </dt> <dt>
 
-[**Estado de la \_ consulta de batería ioctl \_ \_**](ioctl-battery-query-status.md)
+[**ESTADO DE CONSULTA \_ DE LA \_ BATERÍA DE IOCTL \_**](ioctl-battery-query-status.md)
 </dt> </dl>
 
  

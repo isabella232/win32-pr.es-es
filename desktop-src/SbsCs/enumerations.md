@@ -4,12 +4,12 @@ ms.assetid: e73c37e3-7879-4754-b39c-91be64fc8d73
 title: Enumeraciones de ensamblado en paralelo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52f393ab9d8657ecaa52cad555dad5a831699687
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 01a7aee5c64209176ce0690c0a9e7954ad51160a0723c1ec5d1e7e4cee5dba1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142218"
 ---
 # <a name="side-by-side-assembly-enumerations"></a>Enumeraciones de ensamblado en paralelo
 
@@ -21,7 +21,7 @@ La API de ensamblado en paralelo usa las enumeraciones siguientes.
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**MARCAS \_ DE CMP de ASM \_**](/windows/win32/api/winsxs/ne-winsxs-asm_cmp_flags)                           | Usado por el [**método IsEqual**](/windows/desktop/api/winsxs/nf-winsxs-iassemblyname-isequal) para especificar qué partes de dos nombres de ensamblado se comparan.                                                                       |
 | [**MARCAS DE VISUALIZACIÓN DE ASM \_ \_**](/windows/win32/api/winsxs/ne-winsxs-asm_display_flags)                   | Usado por [**el método GetDisplayName**](/windows/desktop/api/winsxs/nf-winsxs-iassemblyname-getdisplayname) para especificar qué partes del nombre del ensamblado en paralelo se incluirán en la representación de cadena del nombre. |
-| [**NOMBRE DE \_ ASM**](/windows/win32/api/winsxs/ne-winsxs-asm_name)                                      | Los ID de propiedad de los pares nombre-valor en un nombre de ensamblado en paralelo.                                                                                                                    |
+| [**NOMBRE DE \_ ASM**](/windows/win32/api/winsxs/ne-winsxs-asm_name)                                      | Los IDs de propiedad de los pares nombre-valor en un nombre de ensamblado en paralelo.                                                                                                                    |
 | [**CREATE \_ ASM \_ NAME \_ OBJ \_ FLAGS**](/windows/win32/api/winsxs/ne-winsxs-create_asm_name_obj_flags) | Usado por la [**función CreateAssemblyNameObject**](/windows/desktop/api/Winsxs/nf-winsxs-createassemblynameobject) para especificar el nombre del ensamblado en paralelo.                                                               |
 
 

@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Clases de marco de trabajo de proveedor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bf4ef94b25e51b7f012987552babd30a93e7792
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 0ba5f8ec85eca2ea2413e176b104865c84ddc5de39aa9fd137b015d07c3e0592
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130997"
 ---
 # <a name="provider-framework-classes"></a>Clases de marco de trabajo de proveedor
 
@@ -33,7 +33,7 @@ El marco de trabajo del proveedor implementa las clases siguientes.
 
  
 
-Tenga en cuenta que muchos de los métodos de marco [**usan parámetros CHString.**](chstring.md) **CHString** admite muchos de los mismos métodos y propiedades que Microsoft Foundation Classes (MFC), pero sin la sobrecarga de MFC. Para obtener más información sobre **CHString**, vea **Referencia de clase CHString**.
+Tenga en cuenta que muchos de los métodos del marco [**usan parámetros CHString.**](chstring.md) **CHString** admite muchos de los mismos métodos y propiedades que Microsoft Foundation Classes (MFC), pero sin la sobrecarga de MFC. Para obtener más información sobre **CHString**, vea **Referencia de clase CHString**.
 
  
 

@@ -1,11 +1,11 @@
 ---
-title: atributo RPC-NS-Object-ID
-description: Los identificadores de objeto exportados por un servidor determinado.
+title: Atributo rpc-Ns-Object-ID
+description: Los iDs de objeto exportados por un servidor determinado.
 ms.assetid: bfe61b2f-36f5-49fd-861e-71829f44f50d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de ID. de objeto de RPC-NS-Object
-- rpcNsObjectID esquema de AD de atributos
+- Rpc-Ns-Object-ID attribute AD Schema
+- Esquema de AD del atributo rpcNsObjectID
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30aa2ceefb95edb0f70be3cabbea8b76a4863337
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 30aed84b3a25041cf10525310682b3f04eb84abdf232391f98614f44e085ca77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104079848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022263"
 ---
-# <a name="rpc-ns-object-id-attribute"></a>atributo RPC-NS-Object-ID
+# <a name="rpc-ns-object-id-attribute"></a>Atributo rpc-Ns-Object-ID
 
-Los identificadores de objeto exportados por un servidor determinado.
+Los iDs de objeto exportados por un servidor determinado.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | ID. de objeto de RPC-NS                            |
-| Nombre para mostrar de LDAP | rpcNsObjectID                               |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | rpc-Ns-Object-ID                            |
+| Ldap-Display-Name | rpcNsObjectID                               |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.312                      |
-| System-ID-GUID    | 29401c48-7a27-11d0-afd6-00c04fd930c9        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 29401c48-7a27-11d0-afd6-00c04fd930c9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Los identificadores de objeto exportados por un servidor determinado.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                      |
+| Id. de vínculo                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
-| System-Only            | False                                                                                   |
-| Tiene un único valor       | False                                                                                   |
-| Está indexado             | True                                                                                    |
-| En el catálogo global      | False                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                            |
+| System-Only            | Falso                                                                                   |
+| Es de un solo valor       | Falso                                                                                   |
+| Está indexado             | Verdadero                                                                                    |
+| En el catálogo global      | Falso                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Clases usadas en        | [**Grupo RPC**](c-rpcgroup.md)<br/> [**Servidor RPC**](c-rpcserver.md)<br/> |
+| Clases usadas en        | [**rpc-Group**](c-rpcgroup.md)<br/> [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Los identificadores de objeto exportados por un servidor determinado.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                      |
+| Id. de vínculo                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
-| System-Only            | False                                                                                   |
-| Tiene un único valor       | False                                                                                   |
-| Está indexado             | True                                                                                    |
-| En el catálogo global      | False                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                            |
+| System-Only            | Falso                                                                                   |
+| Es de un solo valor       | Falso                                                                                   |
+| Está indexado             | Verdadero                                                                                    |
+| En el catálogo global      | Falso                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Clases usadas en        | [**Grupo RPC**](c-rpcgroup.md)<br/> [**Servidor RPC**](c-rpcserver.md)<br/> |
+| Clases usadas en        | [**rpc-Group**](c-rpcgroup.md)<br/> [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Los identificadores de objeto exportados por un servidor determinado.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                      |
+| Id. de vínculo                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
-| System-Only            | False                                                                                   |
-| Tiene un único valor       | False                                                                                   |
-| Está indexado             | True                                                                                    |
-| En el catálogo global      | False                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                            |
+| System-Only            | Falso                                                                                   |
+| Es de un solo valor       | Falso                                                                                   |
+| Está indexado             | Verdadero                                                                                    |
+| En el catálogo global      | Falso                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Clases usadas en        | [**Grupo RPC**](c-rpcgroup.md)<br/> [**Servidor RPC**](c-rpcserver.md)<br/> |
+| Clases usadas en        | [**rpc-Group**](c-rpcgroup.md)<br/> [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Los identificadores de objeto exportados por un servidor determinado.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                      |
+| Id. de vínculo                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
-| System-Only            | False                                                                                   |
-| Tiene un único valor       | False                                                                                   |
-| Está indexado             | True                                                                                    |
-| En el catálogo global      | False                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                            |
+| System-Only            | Falso                                                                                   |
+| Es de un solo valor       | Falso                                                                                   |
+| Está indexado             | Verdadero                                                                                    |
+| En el catálogo global      | Falso                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Clases usadas en        | [**Grupo RPC**](c-rpcgroup.md)<br/> [**Servidor RPC**](c-rpcserver.md)<br/> |
+| Clases usadas en        | [**rpc-Group**](c-rpcgroup.md)<br/> [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Los identificadores de objeto exportados por un servidor determinado.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                      |
+| Id. de vínculo                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
-| System-Only            | False                                                                                   |
-| Tiene un único valor       | False                                                                                   |
-| Está indexado             | True                                                                                    |
-| En el catálogo global      | False                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                            |
+| System-Only            | Falso                                                                                   |
+| Es de un solo valor       | Falso                                                                                   |
+| Está indexado             | Verdadero                                                                                    |
+| En el catálogo global      | Falso                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Clases usadas en        | [**Grupo RPC**](c-rpcgroup.md)<br/> [**Servidor RPC**](c-rpcserver.md)<br/> |
+| Clases usadas en        | [**rpc-Group**](c-rpcgroup.md)<br/> [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Los identificadores de objeto exportados por un servidor determinado.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                      |
+| Id. de vínculo                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
-| System-Only            | False                                                                                   |
-| Tiene un único valor       | False                                                                                   |
-| Está indexado             | True                                                                                    |
-| En el catálogo global      | False                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                            |
+| System-Only            | Falso                                                                                   |
+| Es de un solo valor       | Falso                                                                                   |
+| Está indexado             | Verdadero                                                                                    |
+| En el catálogo global      | Falso                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Clases usadas en        | [**Grupo RPC**](c-rpcgroup.md)<br/> [**Servidor RPC**](c-rpcserver.md)<br/> |
+| Clases usadas en        | [**rpc-Group**](c-rpcgroup.md)<br/> [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 

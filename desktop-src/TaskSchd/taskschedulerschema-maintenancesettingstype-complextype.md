@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de maintenanceSettingsType
+title: tipo complejo maintenanceSettingsType
 description: Define los elementos secundarios y la información de secuenciación para el elemento MaintenanceSettings.
 ms.assetid: CA4C452E-CA25-4E2D-B5E2-ED64C59AB3AD
 keywords:
-- tipo complejo de maintenanceSettingsType Programador de tareas
+- maintenanceSettingsType tipo complejo Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7f261e84fe2af1239cce1bbd377e991ede6e8506
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f0733d16ec929b4e67774fc436c1530b67d70392b2655525b2aaaa642c2ea346
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139208"
 ---
-# <a name="maintenancesettingstype-complex-type"></a>Tipo complejo de maintenanceSettingsType
+# <a name="maintenancesettingstype-complex-type"></a>tipo complejo maintenanceSettingsType
 
-Define los elementos secundarios y la información de secuenciación para el elemento [**MaintenanceSettings**](taskschedulerschema-maintenancesettings-maintenancesettingstype-element.md) .
+Define los elementos secundarios y la información de secuenciación para el [**elemento MaintenanceSettings.**](taskschedulerschema-maintenancesettings-maintenancesettingstype-element.md)
 
 ``` syntax
 <xs:complexType name="maintenanceSettingsType">
@@ -71,8 +71,8 @@ Define los elementos secundarios y la información de secuenciación para el ele
 | Elemento                                                                        | Tipo    | Descripción                                                                                                                                                                                    |
 |--------------------------------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Fecha límite**](taskschedulerschema-daysinterval-dailyscheduletype-element.md) |         | Especifica la cantidad de tiempo después de la cual el programador de tareas intentará iniciar la tarea durante el mantenimiento automático de emergencia, si no se pudo completar durante el mantenimiento normal.<br/> |
-| **Exclusivo**                                                                  | boolean | Si se establece en true, la tarea se iniciará exclusivamente entre otras tareas de mantenimiento.<br/>                                                                                                 |
-| [**Período**](taskschedulerschema-daysinterval-dailyscheduletype-element.md)   |         | Especifica la frecuencia con que se debe iniciar la tarea durante el mantenimiento automático.<br/>                                                                                                      |
+| **Exclusivo**                                                                  | boolean | Si se establece en true, la tarea se inicia exclusivamente entre otras tareas de mantenimiento.<br/>                                                                                                 |
+| [**Período**](taskschedulerschema-daysinterval-dailyscheduletype-element.md)   |         | Especifica la frecuencia con la que se debe iniciar la tarea durante el mantenimiento automático.<br/>                                                                                                      |
 
 
 
@@ -82,8 +82,8 @@ Define los elementos secundarios y la información de secuenciación para el ele
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>           |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/> |
 
 
 
@@ -91,7 +91,7 @@ Define los elementos secundarios y la información de secuenciación para el ele
 
 <dl> <dt>
 
-[Tipos complejos de esquema Programador de tareas](task-scheduler-schema-complex-types.md)
+[Programador de tareas tipos complejos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

@@ -1,11 +1,11 @@
 ---
-title: Propiedad DailyTrigger. DaysInterval
-description: En el caso de scripting, obtiene o establece el intervalo entre los días de la programación.
+title: DailyTrigger.DaysInterval, propiedad
+description: Para el scripting, obtiene o establece el intervalo entre los días de la programación.
 ms.assetid: 13e9f6fd-62ee-4b19-8b3d-a6808e146340
 keywords:
-- Programador de tareas de la propiedad DaysInterval
-- Programador de tareas de la propiedad DaysInterval, objeto DailyTrigger
-- Programador de tareas de objeto DailyTrigger, propiedad DaysInterval
+- Propiedad DaysInterval Programador de tareas
+- Propiedad DaysInterval Programador de tareas , objeto DailyTrigger
+- Objeto DailyTrigger Programador de tareas , propiedad DaysInterval
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6499f3b900fe10b2a2527c2e2ee675cca3151204
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d4355e6c2a26b197224141018fa5a1d85e7d31e211ac47dc84a9e8c9ef3750fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139498"
 ---
-# <a name="dailytriggerdaysinterval-property"></a>Propiedad DailyTrigger. DaysInterval
+# <a name="dailytriggerdaysinterval-property"></a>DailyTrigger.DaysInterval, propiedad
 
-En el caso de scripting, obtiene o establece el intervalo entre los días de la programación.
+Para el scripting, obtiene o establece el intervalo entre los días de la programación.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -40,11 +40,11 @@ DailyTrigger.DaysInterval As short
 
 Intervalo entre los días de la programación.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un intervalo de 1 genera una programación diaria. Un intervalo de 2 genera una programación de todos los días.
+Un intervalo de 1 genera una programación diaria. Un intervalo de 2 genera una programación cada dos días.
 
-Al leer o escribir su propio XML para una tarea, el intervalo de una programación diaria se especifica mediante el elemento [**DaysInterval**](taskschedulerschema-daysinterval-dailyscheduletype-element.md) del esquema de programador de tareas.
+Al leer o escribir su propio XML para una tarea, el intervalo de una programación diaria se especifica mediante el elemento [**DaysInterval**](taskschedulerschema-daysinterval-dailyscheduletype-element.md) del Programador de tareas esquema.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,9 +52,9 @@ Al leer o escribir su propio XML para una tarea, el intervalo de una programaci�
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

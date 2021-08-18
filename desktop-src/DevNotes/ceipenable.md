@@ -1,25 +1,25 @@
 ---
-description: HKLM \\ software \\ Microsoft \\ SQMClient \\ Windows \\ CEIPEnable.
+description: HKLM \\ Software \\ Microsoft \\ SQMClient \\ Windows \\ CEIPEnable.
 ms.assetid: 68ba8219-7ed2-44a9-9fd5-f6dfa57891c0
 title: CEIPEnable
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef7b86a726af95e7ec9fb764d5e752057a24b3e0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 687e17bf5438406fb7a29b954bf8a2640fc0ea5d193ba49ae7fd7bd02f1f27bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104274929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956124"
 ---
 # <a name="ceipenable"></a>CEIPEnable
 
-**HKLM \\ software \\ Microsoft \\ SQMClient \\ Windows \\ CEIPEnable**
+**HKLM \\ Software \\ Microsoft \\ SQMClient \\ Windows \\ CEIPEnable**
 
 
 
 | Tipo de datos  | Intervalo                     | Valor predeterminado |
 |------------|---------------------------|---------------|
-| \_valor DWORD reg | 0 (deshabilitar) o 1 (habilitar) | 0             |
+| REG \_ DWORD | 0 (deshabilitar) o 1 (habilitar) | 0             |
 
 
 
@@ -27,17 +27,17 @@ ms.locfileid: "104274929"
 
 ## <a name="description"></a>Descripción
 
-Habilita el programa para la mejora de la experiencia del usuario de Windows.
+Habilita el programa Windows mejora de la experiencia del usuario.
 
 ## <a name="change-method"></a>Cambiar método
 
-Para cambiar el valor de esta entrada, en el panel de control, seleccione **sistema y mantenimiento**, seguido de **informes de problemas y soluciones**. Haga clic en configuración de la mejora de la **experiencia del usuario** en la sección Vea también.
+Para cambiar el valor de esta entrada, en Panel de control, seleccione Sistema y **mantenimiento,** seguido de **Informes de problemas y Soluciones.** Haga clic en Customer Experience Improvement Configuración (Mejora de la experiencia del **usuario)** en la sección Consulte también.
 
 ## <a name="activation-method"></a>Método de activación
 
-Los cambios realizados en esta entrada entran en vigor de forma inmediata. Al habilitar esta clave del registro, se habilitará la Programa para la mejora de la experiencia del usuario de Windows para todo el equipo. Al deshabilitar esta clave del registro, se deshabilitará la Programa para la mejora de la experiencia del usuario de Windows para todo el equipo.
+Los cambios realizados en esta entrada son efectivos inmediatamente. Al habilitar esta clave del Registro, Windows Programa para la mejora de la experiencia del usuario se habilita para todo el equipo. Al deshabilitar esta clave del Registro, Windows Programa para la mejora de la experiencia del usuario se deshabilita para todo el equipo.
 
-Esta entrada se puede sustituir por un valor de directiva de grupo en los sistemas que admiten directiva de grupo. Mientras está habilitada la opción directiva de grupo de Windows Programa para la mejora de la experiencia del usuario CEIP habilitar, el sistema omite esta entrada. La configuración de esta configuración de Directiva se almacena en la sección **directivas** en **HKLM \\ software \\ Policies \\ Microsoft \\ SQMClient \\ Windows \\ CEIPEnable**.
+Esta entrada se puede sustituir por una configuración directiva de grupo en sistemas que admiten directiva de grupo. Si bien la Windows Programa para la mejora de la experiencia del usuario configuración de directiva de grupo la opción Habilitar CEIP está habilitada, el sistema omite esta entrada. La configuración de esta configuración de directiva se almacena en la sección **Directivas** en **HKLM \\ Software Policies \\ Microsoft \\ \\ SQMClient \\ Windows \\ CEIPEnable**.
 
  
 

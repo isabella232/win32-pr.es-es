@@ -1,9 +1,9 @@
 ---
-title: D3D11Reflect función)
+title: Función D3D11Reflect
 description: Obtiene un puntero a una interfaz de reflexión.
 ms.assetid: 855097c7-988b-4ab6-90c5-e5dd0bc9e1e0
 keywords:
-- D3D11Reflect de función HLSL
+- Función HLSL de D3D11Reflect
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e54a1f388ebb122398ad33c3a8d942496fa55393
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 44b980d955dcd37197c8d8ed05a6602025d1e21731ca6d22302b76cc2f2e53da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104157244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986885"
 ---
-# <a name="d3d11reflect-function"></a>D3D11Reflect función)
+# <a name="d3d11reflect-function"></a>Función D3D11Reflect
 
 Obtiene un puntero a una interfaz de reflexión.
 
@@ -39,30 +39,30 @@ HRESULT D3D11Reflect(
 
 <dl> <dt>
 
-*pSrcData* \[ de\]
+*pSrcData* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](/windows/desktop/WinProg/windows-data-types)**
 
-Un puntero a los datos de origen como código HLSL compilado.
+Puntero a los datos de origen como código HLSL compilado.
 
 </dd> <dt>
 
-*SrcDataSize* \[ de\]
+*SrcDataSize* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **tamaño \_ T**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **SIZE \_ T**](/windows/desktop/WinProg/windows-data-types)**
 
-Longitud de *pSrcData*.
+Longitud de *pSrcData.*
 
 </dd> <dt>
 
-*ppReflector* \[ enuncia\]
+*ppReflector* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D11ShaderReflection**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11shaderreflection)\*\***
 
-Dirección de un puntero a la interfaz [**ID3D11ShaderReflection**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11shaderreflection) .
+Dirección de un puntero a la [**interfaz ID3D11ShaderReflection.**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11shaderreflection)
 
 </dd> </dl>
 
@@ -70,15 +70,15 @@ Dirección de un puntero a la interfaz [**ID3D11ShaderReflection**](/windows/des
 
 Tipo: **[ **HRESULT**](/windows/desktop/WinProg/windows-data-types)**
 
-Devuelve uno de los códigos de retorno descritos en el tema [códigos de retorno de Direct3D 11](/windows/desktop/direct3d11/d3d11-graphics-reference-returnvalues).
+Devuelve uno de los códigos de retorno descritos en el tema Códigos de retorno [de Direct3D 11.](/windows/desktop/direct3d11/d3d11-graphics-reference-returnvalues)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función de compilador **D3D11Reflect** insertada es un contenedor para la función del compilador [**D3DReflect**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dreflect) . **D3D11Reflect** solo puede recuperar una interfaz [**ID3D11ShaderReflection**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11shaderreflection) de un sombreador. **D3DReflect** puede recuperar una interfaz de **ID3D11ShaderReflection** o una interfaz de reflexión de direct3d 10 o Direct3D 10,1, por ejemplo, [**ID3D10ShaderReflection**](/windows/desktop/api/d3d10shader/nn-d3d10shader-id3d10shaderreflection).
+La función **del compilador D3D11Reflect** insertada es un contenedor para la función del compilador [**D3DReflect.**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dreflect) **D3D11Reflect** solo puede recuperar una [**interfaz ID3D11ShaderReflection**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11shaderreflection) de un sombreador. **D3DReflect** puede recuperar una interfaz **ID3D11ShaderReflection** o una interfaz de reflexión Direct3D 10 o Direct3D 10.1, por ejemplo, [**ID3D10ShaderReflection**](/windows/desktop/api/d3d10shader/nn-d3d10shader-id3d10shaderreflection).
 
 El código del sombreador contiene metadatos que se pueden inspeccionar mediante las API de reflexión.
 
-En el código siguiente se muestra cómo recuperar una interfaz [**ID3D11ShaderReflection**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11shaderreflection) de un sombreador.
+El código siguiente muestra cómo recuperar una [**interfaz ID3D11ShaderReflection**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11shaderreflection) de un sombreador.
 
 
 ```C++
@@ -98,9 +98,9 @@ D3D11Reflect( pPixelShaderBuffer->GetBufferPointer(), pPixelShaderBuffer->GetBuf
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DCompiler. INL</dt> </dl>     |
-| Biblioteca<br/> | <dl> <dt>D3dcompiler \_ 47. lib</dt> </dl> |
-| Archivo DLL<br/>     | <dl> <dt>\_47.dllD3dcompiler</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DCompiler.inl</dt> </dl>     |
+| Biblioteca<br/> | <dl> <dt>D3dcompiler \_ 47.lib</dt> </dl> |
+| Archivo DLL<br/>     | <dl> <dt>D3dcompiler \_47.dll</dt> </dl> |
 
 
 

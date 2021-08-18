@@ -1,24 +1,24 @@
 ---
 description: El objeto ExtendedProperties expone las siguientes propiedades.
 ms.assetid: 8C377E9D-D79C-4532-8A24-09A243F44F3B
-title: Propiedades de ExtendedProperties
+title: Propiedades ExtendedProperties
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e737433d4ea37fcf1fb530edca5ebd2310fb12a9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e1acdf9b7bf6ad524e54aad6705d97eb988ef6ee817da9c99f89e949aa4a8fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007253"
 ---
-# <a name="extendedproperties-properties"></a>Propiedades de ExtendedProperties
+# <a name="extendedproperties-properties"></a>Propiedades ExtendedProperties
 
-El objeto [**ExtendedProperties**](extendedproperties.md) expone las siguientes propiedades.
+El [**objeto ExtendedProperties**](extendedproperties.md) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**\_Propiedad NewEnum**](extendedproperties-newenum.md)
--   [**Propiedad Count**](extendedproperties-count.md)
+-   [**Count (propiedad)**](extendedproperties-count.md)
 -   [**Propiedad Item**](extendedproperties-item.md)
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_CONDITIONALCOLUMN. Método DeepClone'
+description: 'Más información sobre: JET_CONDITIONALCOLUMN. Método DeepClone'
 title: JET_CONDITIONALCOLUMN. Método DeepClone
 TOCTitle: 'DeepClone method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_CONDITIONALCOLUMN.DeepClone
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1739e6bac82aed0b4e318d1f1359444b73e61090
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3ddb7d089858e23dd69a3fd9c58f64e75def9a3d00b74adf0cdea313524b7ee6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112364"
 ---
 # <a name="jet_conditionalcolumndeepclone-method"></a>JET_CONDITIONALCOLUMN. Método DeepClone
 
-Devuelve una copia en profundidad del objeto.
+Devuelve una copia en profundidad del objeto .
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,19 +56,19 @@ public JET_CONDITIONALCOLUMN DeepClone()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_CONDITIONALCOLUMN](./jet-conditionalcolumn-class.md)  
-Una copia en profundidad del objeto.  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_CONDITIONALCOLUMN](./jet-conditionalcolumn-class.md)  
+Copia en profundidad del objeto.  
 
 #### <a name="implements"></a>Implementaciones
 
 [IDeepCloneable \<T\> . DeepClone()](./ideepcloneable-t-.deepclone-method.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_CONDITIONALCOLUMN (clase)](./jet-conditionalcolumn-class.md)
+[JET_CONDITIONALCOLUMN clase](./jet-conditionalcolumn-class.md)
 
-[Miembros de JET_CONDITIONALCOLUMN](./jet-conditionalcolumn-members.md)
+[JET_CONDITIONALCOLUMN miembros](./jet-conditionalcolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

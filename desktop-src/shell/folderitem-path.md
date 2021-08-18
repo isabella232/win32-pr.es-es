@@ -1,7 +1,7 @@
 ---
 description: Contiene la ruta de acceso completa y el nombre del elemento.
 ms.assetid: c94c7c1c-9dc9-4bb8-b7ec-01541baa2924
-title: Propiedad carpeta. Path (Shldisp. h)
+title: Propiedad FolderItem.Path (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: a9562fc94cc0d4253ce80f6bd494c818689c71a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9e1761d0f3d846e44746bbb213233bd846ddd56de3b5ef16cd99b2dce5b4fabf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119093119"
 ---
-# <a name="folderitempath-property"></a>Carpeta. Path (propiedad)
+# <a name="folderitempath-property"></a>Propiedad FolderItem.Path
 
 Contiene la ruta de acceso completa y el nombre del elemento.
 
@@ -41,9 +41,9 @@ Variable de tipo [**BSTR**](/previous-versions/windows/desktop/automat/bstr) que
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa la **ruta de acceso** para recuperar la ruta de acceso de la carpeta de Windows. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa Path** para recuperar la ruta de acceso de la Windows carpeta. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -73,7 +73,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -146,13 +146,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

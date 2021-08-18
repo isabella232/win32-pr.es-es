@@ -1,28 +1,28 @@
 ---
-description: Las \_ constantes de marcador de bits LINEDEVSTATE describen diversos eventos de estado de línea.
+description: Las constantes de marca de bits LINEDEVSTATE \_ describen varios eventos de estado de línea.
 ms.assetid: 41e8a777-a57a-4d6c-850f-e21b58081b0d
-title: Constantes de LINEDEVSTATE_ (TAPI. h)
+title: LINEDEVSTATE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49717c1adb0f62a48a041f5920c0b82c7b817277
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cb11959614999ff50e421e0b77c63d1215a831040774e3123b43aa3534a3f853
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140068"
 ---
-# <a name="linedevstate_-constants"></a>Constantes de LINEDEVSTATE \_
+# <a name="linedevstate_-constants"></a>Constantes \_ LINEDEVSTATE
 
-Las constantes de marcador de bits **LINEDEVSTATE \_** describen diversos eventos de estado de línea.
+Las constantes de marca de bits **LINEDEVSTATE \_** describen varios eventos de estado de línea.
 
 <dl> <dt>
 
-<span id="LINEDEVSTATE_BATTERY"></span><span id="linedevstate_battery"></span>**\_batería LINEDEVSTATE**
+<span id="LINEDEVSTATE_BATTERY"></span><span id="linedevstate_battery"></span>**LINEDEVSTATE \_ BATTERY**
 </dt> <dd> <dl> <dt>
 
 
 
-El nivel de batería ha cambiado significativamente (teléfono móvil).
+El nivel de batería ha cambiado significativamente (móvil).
 
 
 </dt> </dl> </dd> <dt>
@@ -32,12 +32,12 @@ El nivel de batería ha cambiado significativamente (teléfono móvil).
 
 
 
-Indica que, debido a los cambios de configuración realizados por el usuario u otras circunstancias, uno o varios de los miembros de la estructura [**LINEDEVCAPS**](/windows/desktop/api/Tapi/ns-tapi-linedevcaps) para la dirección han cambiado. La aplicación debe usar [**lineGetDevCaps**](/windows/desktop/api/Tapi/nf-tapi-linegetdevcaps) para leer la estructura actualizada. Si un proveedor de servicios envía un mensaje [**line \_ LINEDEVSTATE**](line-linedevstate.md) que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado la versión 1,4 o posterior de TAPI; las aplicaciones que negocian una versión anterior de TAPI recibirán los mensajes de **línea \_ LINEDEVSTATE** que especifican LINEDEVSTATE \_ reinit, lo que les obliga a apagar y reinicializar su conexión con TAPI para obtener la información actualizada.
+Indica que, debido a los cambios de configuración realizados por el usuario u otras circunstancias, uno o varios de los miembros de la estructura [**LINEDEVCAPS**](/windows/desktop/api/Tapi/ns-tapi-linedevcaps) de la dirección han cambiado. La aplicación debe usar [**lineGetDevCaps para**](/windows/desktop/api/Tapi/nf-tapi-linegetdevcaps) leer la estructura actualizada. Si un proveedor de servicios envía un mensaje [**\_ LINE LINEDEVSTATE**](line-linedevstate.md) que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado TAPI versión 1.4 o posterior; las aplicaciones que negocian una versión anterior de TAPI recibirán mensajes **LINE \_ LINEDEVSTATE** que especifican LINEDEVSTATE REINIT, lo que les obliga a apagar y reinicializar su conexión con TAPI para obtener la información \_ actualizada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVSTATE_CLOSE"></span><span id="linedevstate_close"></span>**LINEDEVSTATE \_ cerrar**
+<span id="LINEDEVSTATE_CLOSE"></span><span id="linedevstate_close"></span>**LINEDEVSTATE \_ CLOSE**
 </dt> <dd> <dl> <dt>
 
 
@@ -52,7 +52,7 @@ Otra aplicación ha cerrado la línea.
 
 
 
-Indica que se han realizado cambios de configuración en uno o varios de los dispositivos multimedia asociados al dispositivo de línea. La aplicación, si lo desea, puede usar [**lineGetDevConfig**](/windows/desktop/api/Tapi/nf-tapi-linegetdevconfig) para leer la información actualizada. Si un proveedor de servicios envía un mensaje [**line \_ LINEDEVSTATE**](line-linedevstate.md) que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado la versión 1,4 o posterior de TAPI; las aplicaciones que negocian una versión anterior de la API no recibirán ninguna notificación.
+Indica que se han realizado cambios de configuración en uno o varios de los dispositivos multimedia asociados al dispositivo de línea. La aplicación, si lo desea, puede usar [**lineGetDevConfig**](/windows/desktop/api/Tapi/nf-tapi-linegetdevconfig) para leer la información actualizada. Si un proveedor de servicios envía un mensaje [**\_ LINE LINEDEVSTATE**](line-linedevstate.md) que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado TAPI versión 1.4 o posterior; las aplicaciones que negocian una versión de API anterior no recibirán ninguna notificación.
 
 
 </dt> </dl> </dd> <dt>
@@ -62,17 +62,17 @@ Indica que se han realizado cambios de configuración en uno o varios de los dis
 
 
 
-Indica que la finalización de la llamada identificada por el identificador de finalización incluida en el parámetro *dwParam2* del mensaje de [**línea \_ LINEDEVSTATE**](line-linedevstate.md) se canceló externamente y ya no se considera válida (si ese valor se pasara en una llamada subsiguiente a [**lineUncompleteCall**](/windows/desktop/api/Tapi/nf-tapi-lineuncompletecall), la función produciría un error con LINEERR \_ INVALCOMPLETIONID). Si un proveedor de servicios envía un mensaje [**line \_ LINEDEVSTATE**](line-linedevstate.md) que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado la versión 1,4 o posterior de TAPI; las aplicaciones que negocian una versión anterior de la API no recibirán ninguna notificación.
+Indica que la finalización de la llamada identificada por el identificador de finalización contenido en el parámetro *dwParam2* del mensaje [**LINE \_ LINEDEVSTATE**](line-linedevstate.md) se ha cancelado externamente y ya no se considera válida (si ese valor se pasara en una llamada posterior a [**lineUncompleteCall**](/windows/desktop/api/Tapi/nf-tapi-lineuncompletecall), la función produciría un error con \_ LINEERR INVALCOMPLETIONID). Si un proveedor de servicios envía un mensaje [**\_ LINE LINEDEVSTATE**](line-linedevstate.md) que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado TAPI versión 1.4 o posterior; las aplicaciones que negocian una versión de API anterior no recibirán ninguna notificación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVSTATE_CONNECTED"></span><span id="linedevstate_connected"></span>**LINEDEVSTATE \_ conectado**
+<span id="LINEDEVSTATE_CONNECTED"></span><span id="linedevstate_connected"></span>**LINEDEVSTATE \_ CONECTADO**
 </dt> <dd> <dl> <dt>
 
 
 
-La línea se desconectó previamente y ahora está conectada a TAPI.
+La línea se desconectó anteriormente y ahora está conectada a TAPI.
 
 
 </dt> </dl> </dd> <dt>
@@ -87,42 +87,42 @@ La información específica del dispositivo de la línea ha cambiado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVSTATE_DISCONNECTED"></span><span id="linedevstate_disconnected"></span>**LINEDEVSTATE \_ DESconectado**
+<span id="LINEDEVSTATE_DISCONNECTED"></span><span id="linedevstate_disconnected"></span>**LINEDEVSTATE \_ DESCONECTADO**
 </dt> <dd> <dl> <dt>
 
 
 
-Esta línea estaba conectada previamente y ahora está desconectada de TAPI.
+Esta línea estaba conectada anteriormente y ahora está desconectada de TAPI.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVSTATE_INSERVICE"></span><span id="linedevstate_inservice"></span>**SERVICIO de LINEDEVSTATE \_**
+<span id="LINEDEVSTATE_INSERVICE"></span><span id="linedevstate_inservice"></span>**LINEDEVSTATE \_ INSERVICE**
 </dt> <dd> <dl> <dt>
 
 
 
-La línea está conectada a TAPI. Esto sucede cuando TAPI se activa por primera vez o cuando el cable de línea está físicamente conectado y en servicio en el conmutador mientras TAPI está activo.
+La línea está conectada a TAPI. Esto sucede cuando TAPI se activa por primera vez o cuando el cable de línea está conectado físicamente y en servicio en el conmutador mientras TAPI está activo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVSTATE_LOCK"></span><span id="linedevstate_lock"></span>**\_bloqueo LINEDEVSTATE**
+<span id="LINEDEVSTATE_LOCK"></span><span id="linedevstate_lock"></span>**LINEDEVSTATE \_ LOCK**
 </dt> <dd> <dl> <dt>
 
 
 
-El estado de bloqueo del dispositivo de línea ha cambiado. (Para obtener más información, consulte LINEDEVSTATUSFLAGS \_ BLOQUEADO en [**\_ constantes LINEDEVSTATUSFLAGS**](linedevstatusflags--constants.md)).
+El estado bloqueado del dispositivo de línea ha cambiado. (Para obtener más información, vea LINEDEVSTATUSFLAGS \_ LOCKED en [**constantes LINEDEVSTATUSFLAGS \_**](linedevstatusflags--constants.md)).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVSTATE_MAINTENANCE"></span><span id="linedevstate_maintenance"></span>**mantenimiento de LINEDEVSTATE \_**
+<span id="LINEDEVSTATE_MAINTENANCE"></span><span id="linedevstate_maintenance"></span>**MANTENIMIENTO DE \_ LINEDEVSTATE**
 </dt> <dd> <dl> <dt>
 
 
 
-El mantenimiento se realiza en la línea en el conmutador. No se puede usar TAPI para operar en el dispositivo de línea.
+El mantenimiento se realiza en la línea en el conmutador. TAPI no se puede usar para operar en el dispositivo de línea.
 
 
 </dt> </dl> </dd> <dt>
@@ -132,7 +132,7 @@ El mantenimiento se realiza en la línea en el conmutador. No se puede usar TAPI
 
 
 
-El indicador de espera del mensaje está desactivado.
+El indicador de espera de mensajes está desactivado.
 
 
 </dt> </dl> </dd> <dt>
@@ -162,12 +162,12 @@ El número de llamadas en el dispositivo de línea ha cambiado.
 
 
 
-Ha cambiado el número de finalizaciones de llamadas pendientes en el dispositivo de línea.
+El número de finalizaciones de llamadas pendientes en el dispositivo de línea ha cambiado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVSTATE_OPEN"></span><span id="linedevstate_open"></span>**LINEDEVSTATE \_ abrir**
+<span id="LINEDEVSTATE_OPEN"></span><span id="linedevstate_open"></span>**LINEDEVSTATE \_ OPEN**
 </dt> <dd> <dl> <dt>
 
 
@@ -177,12 +177,12 @@ Otra aplicación ha abierto la línea.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVSTATE_OTHER"></span><span id="linedevstate_other"></span>**LINEDEVSTATE \_ otro**
+<span id="LINEDEVSTATE_OTHER"></span><span id="linedevstate_other"></span>**LINEDEVSTATE \_ OTHER**
 </dt> <dd> <dl> <dt>
 
 
 
-Los elementos de estado de dispositivo distintos de los que se enumeran a continuación han cambiado. La aplicación debe comprobar el estado actual del dispositivo para determinar qué elementos han cambiado.
+Los elementos de estado del dispositivo distintos de los que se enumeran a continuación han cambiado. La aplicación debe comprobar el estado actual del dispositivo para determinar qué elementos han cambiado.
 
 
 </dt> </dl> </dd> <dt>
@@ -192,41 +192,41 @@ Los elementos de estado de dispositivo distintos de los que se enumeran a contin
 
 
 
-La línea está fuera de servicio en el conmutador o está físicamente desconectada. No se puede usar TAPI para operar en el dispositivo de línea.
+La línea está fuera de servicio en el conmutador o físicamente desconectada. TAPI no se puede usar para operar en el dispositivo de línea.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVSTATE_REINIT"></span><span id="linedevstate_reinit"></span>**reinicialización de LINEDEVSTATE \_**
+<span id="LINEDEVSTATE_REINIT"></span><span id="linedevstate_reinit"></span>**LINEDEVSTATE \_ REINIT**
 </dt> <dd> <dl> <dt>
 
 
 
-Los elementos han cambiado en la configuración de los dispositivos de línea. Para tener en cuenta estos cambios (como en el aspecto de los dispositivos de nueva línea), la aplicación debe reinicializar el uso de TAPI.
+Los elementos han cambiado en la configuración de los dispositivos de línea. Para tener en cuenta estos cambios (en cuanto a la apariencia de los nuevos dispositivos de línea), la aplicación debe reinicializar su uso de TAPI.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVSTATE_REMOVED"></span><span id="linedevstate_removed"></span>**LINEDEVSTATE \_ quitado**
+<span id="LINEDEVSTATE_REMOVED"></span><span id="linedevstate_removed"></span>**LINEDEVSTATE \_ QUITADO**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica que el proveedor de servicios está quitando el dispositivo del sistema (lo que es más probable a través de la acción del usuario, a través de un panel de control o una utilidad similar). Un mensaje de [**línea \_ LINEDEVSTATE**](line-linedevstate.md) con este valor normalmente irá seguido inmediatamente de un mensaje de [**\_ cierre de línea**](line-close.md) en el dispositivo. Los intentos posteriores de obtener acceso al dispositivo antes de que se reinicialice TAPI darán lugar a que se \_ devuelva LINEERR Device a la aplicación. Si un proveedor de servicios envía un mensaje [**line \_ LINEDEVSTATE**](line-linedevstate.md) que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado la versión 1,4 o posterior de TAPI; las aplicaciones que negocian una versión anterior de la API no recibirán ninguna notificación.
+Indica que el proveedor de servicios quita el dispositivo del sistema (lo más probable es que lo haga a través de una acción del usuario, a través de un panel de control o una utilidad similar). Normalmente, [**\_ un mensaje LINE LINEDEVSTATE**](line-linedevstate.md) con este valor estará seguido inmediatamente de un [**mensaje LINE \_ CLOSE**](line-close.md) en el dispositivo. Los intentos posteriores de acceder al dispositivo antes de reinicializar TAPI darán lugar a que LINEERR \_ NODEVICE se devuelva a la aplicación. Si un proveedor de servicios envía un mensaje [**\_ LINE LINEDEVSTATE**](line-linedevstate.md) que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado TAPI versión 1.4 o posterior; las aplicaciones que negocian una versión de API anterior no recibirán ninguna notificación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVSTATE_RINGING"></span><span id="linedevstate_ringing"></span>**\_timbre LINEDEVSTATE**
+<span id="LINEDEVSTATE_RINGING"></span><span id="linedevstate_ringing"></span>**ANILLO \_ LINEDEVSTATE**
 </dt> <dd> <dl> <dt>
 
 
 
-El modificador indica a la línea que avise al usuario.
+El modificador indica a la línea que alerte al usuario.
 
-**TAPI:** Los proveedores de servicios notifican a las aplicaciones en cada ciclo de timbre enviando repetidamente mensajes de [**línea \_ LINEDEVSTATE**](line-linedevstate.md) que contienen esta constante. Por ejemplo, en el Estados Unidos, los proveedores de servicios envían un mensaje con esta constante cada seis segundos.
+**TAPI:** Los proveedores de servicios notifican a las aplicaciones en cada ciclo de anillo mediante el envío repetido de [**mensajes \_ LINE LINEDEVSTATE**](line-linedevstate.md) que contienen esta constante. Por ejemplo, en la Estados Unidos, los proveedores de servicios envían un mensaje con esta constante cada seis segundos.
 
-**TSPI:** En un dispositivo de POTS, el proveedor de servicios puede enviar el mensaje cada vez que la oficina central envía la tensión de timbre. En dispositivos digitales como ISDN, es posible que el proveedor de servicios tenga que sintetizar la repetición del mensaje si el modificador solo genera una solicitud de anillo. Cada repetición del mensaje debería mostrar el aumento del número de timbres, de modo que las funciones de guardado de peaje funcionen correctamente.
+**TSPI:** En un dispositivo POTS, el proveedor de servicios puede enviar el mensaje cada vez que la oficina central envía el voltaje del anillo. En dispositivos digitales como ISDN, el proveedor de servicios puede necesitar sintetizar la repetición del mensaje si el conmutador genera solo una solicitud de anillo. Cada repetición del mensaje debe mostrar el aumento del número de anillos para que las funciones de ahorro de peaje funcionen correctamente.
 
 
 </dt> </dl> </dd> <dt>
@@ -236,27 +236,27 @@ El modificador indica a la línea que avise al usuario.
 
 
 
-El modo de itinerancia del dispositivo de línea ha cambiado.
+El modo de roam del dispositivo de línea ha cambiado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVSTATE_SIGNAL"></span><span id="linedevstate_signal"></span>**\_señal LINEDEVSTATE**
+<span id="LINEDEVSTATE_SIGNAL"></span><span id="linedevstate_signal"></span>**LINEDEVSTATE \_ SIGNAL**
 </dt> <dd> <dl> <dt>
 
 
 
-El nivel de señal ha cambiado significativamente (teléfono móvil).
+El nivel de señal ha cambiado significativamente (móvil).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVSTATE_TERMINALS"></span><span id="linedevstate_terminals"></span>**\_terminales LINEDEVSTATE**
+<span id="LINEDEVSTATE_TERMINALS"></span><span id="linedevstate_terminals"></span>**TERMINALES LINEDEVSTATE \_**
 </dt> <dd> <dl> <dt>
 
 
 
-La configuración de terminal ha cambiado. Esto puede ocurrir, por ejemplo, si varios dispositivos de línea comparten terminales entre ellos (por ejemplo, dos líneas que comparten un terminal telefónico).
+La configuración del terminal ha cambiado. Esto puede ocurrir, por ejemplo, si varios dispositivos de línea comparten terminales entre ellos (por ejemplo, dos líneas que comparten un terminal de teléfono).
 
 
 </dt> </dl> </dd> <dt>
@@ -266,14 +266,14 @@ La configuración de terminal ha cambiado. Esto puede ocurrir, por ejemplo, si v
 
 
 
-Indica que, debido a los cambios de configuración realizados por el usuario u otras circunstancias, uno o varios de los miembros de la estructura [**LINETRANSLATECAPS**](/windows/desktop/api/Tapi/ns-tapi-linetranslatecaps) han cambiado. La aplicación debe usar [**lineGetTranslateCaps**](/windows/desktop/api/Tapi/nf-tapi-linegettranslatecaps) para leer la estructura actualizada. Si un proveedor de servicios envía un mensaje [**line \_ LINEDEVSTATE**](line-linedevstate.md) que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado la versión 1,4 o posterior de TAPI; las aplicaciones que negocian una versión anterior de TAPI recibirán los mensajes de **línea \_ LINEDEVSTATE** que especifican LINEDEVSTATE \_ reinit, lo que les obliga a apagar y reinicializar su conexión con TAPI para obtener la información actualizada.
+Indica que, debido a los cambios de configuración realizados por el usuario u otras circunstancias, uno o varios de los miembros de la estructura [**LINETRANSLATECAPS**](/windows/desktop/api/Tapi/ns-tapi-linetranslatecaps) han cambiado. La aplicación debe usar [**lineGetTranslateCaps para**](/windows/desktop/api/Tapi/nf-tapi-linegettranslatecaps) leer la estructura actualizada. Si un proveedor de servicios envía un mensaje [**\_ LINE LINEDEVSTATE**](line-linedevstate.md) que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado TAPI versión 1.4 o posterior; las aplicaciones que negocian una versión anterior de TAPI recibirán mensajes **LINE \_ LINEDEVSTATE** que especifican LINEDEVSTATE REINIT, lo que les obliga a apagar y reinicializar su conexión con TAPI para obtener la información \_ actualizada.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Sin extensibilidad. Todos los 32 bits están reservados.
+Sin extensibilidad. Los 32 bits están reservados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -281,8 +281,8 @@ Sin extensibilidad. Todos los 32 bits están reservados.
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
@@ -290,10 +290,10 @@ Sin extensibilidad. Todos los 32 bits están reservados.
 
 <dl> <dt>
 
-[**cierre de línea \_**](line-close.md)
+[**LINE \_ CLOSE**](line-close.md)
 </dt> <dt>
 
-[**LÍNEA \_ LINEDEVSTATE**](line-linedevstate.md)
+[**LINE \_ LINEDEVSTATE**](line-linedevstate.md)
 </dt> <dt>
 
 [**LINEDEVCAPS**](/windows/desktop/api/Tapi/ns-tapi-linedevcaps)

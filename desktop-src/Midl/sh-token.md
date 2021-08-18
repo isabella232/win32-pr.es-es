@@ -1,8 +1,8 @@
 ---
 title: Palabra clave sh_token
-description: La \_ palabra clave \ SH token \ especifica que el objeto del sistema es un identificador de un token.
+description: La palabra clave \sh \_ token\ especifica que el objeto del sistema es un identificador de un token.
 keywords:
-- palabra clave sh_token MIDL
+- sh_token clave MIDL
 topic_type:
 - apiref
 api_name:
@@ -11,16 +11,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 02/05/2021
-ms.openlocfilehash: a33b070af5cd43a095fd6ad45a0dee86f1868171
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: 8305a8073d03eb90bbd214f1b56cb1174ffef66953bb170fb7f28ebf1b84d35c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "105721189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066781"
 ---
-# <a name="sh_token-keyword"></a>SH \_ (palabra clave)
+# <a name="sh_token-keyword"></a>Palabra \_ clave sh token
 
-La palabra clave de **\_ token SH** especifica que un `system_handle` contiene un identificador de un token.
+La **palabra clave sh \_ token** especifica que `system_handle` contiene un identificador para un token.
 
 ``` syntax
 [system_handle(sh_token)]
@@ -32,11 +32,11 @@ La palabra clave de **\_ token SH** especifica que un `system_handle` contiene u
 
 Esta palabra clave es un parámetro para [**system_handle**](system-handle.md).
 
-La documentación [**system_handle**](system-handle.md) contiene también detalles sobre el uso opcional del parámetro *Access-Rights* . El comportamiento predeterminado es `DUPLICATE_SAME_ACCESS` por especificaciones de la [función **DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle) .
+La [**system_handle**](system-handle.md) documentación también contiene detalles sobre el uso opcional del *parámetro access-rights.* El comportamiento predeterminado es según `DUPLICATE_SAME_ACCESS` las especificaciones [ **de la función DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar esta palabra clave con el `system_handle` atributo, la `-target` marca debe establecerse en `NT100` (o superior) al ejecutarse midl.exe.
+Para usar esta palabra clave con el atributo , la marca debe establecerse en `system_handle` `-target` `NT100` (o superior) al ejecutar midl.exe.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -53,7 +53,7 @@ interface MyInterface : IUnknown
 
 | &nbsp; | &nbsp; |
 |-|-|
-| Cliente mínimo compatible | Actualización de aniversario de Windows 10 (versión 1607, compilación 14393) |
+| Cliente mínimo compatible | Windows 10 Actualización de aniversario (versión 1607, compilación 14393) |
 | Servidor mínimo compatible | Windows Server 2016 (compilación 14393) |
 
 ## <a name="see-also"></a>Vea también
@@ -66,5 +66,5 @@ interface MyInterface : IUnknown
 [Tokens de acceso](../secauthz/access-tokens.md)
 </dt> <dt>
 
-[Derechos de acceso para objetos de Access-Token](../secauthz/access-rights-for-access-token-objects.md)
+[Derechos de acceso para Access-Token objetos](../secauthz/access-rights-for-access-token-objects.md)
 </dt> </dl>

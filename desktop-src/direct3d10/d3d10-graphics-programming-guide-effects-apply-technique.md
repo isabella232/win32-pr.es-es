@@ -1,23 +1,23 @@
 ---
-description: Con las constantes, las texturas y el estado del sombreador declarado e inicializado, lo único que queda por hacer es establecer el estado del efecto en el dispositivo.
+description: Con las constantes, las texturas y el estado del sombreador declarados e inicializados, lo único que queda por hacer es establecer el estado de efecto en el dispositivo.
 ms.assetid: b6c88fa1-53d4-40dc-803d-5d1cdfe4777b
 title: Aplicar una técnica (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bfb7cc48c9115dfb81c1688a3a499e24d46cc563
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0b4c920cbc7323ba42f3b099688a962674e3f5c2305746df7a56d1e158330919
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104496013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128417"
 ---
 # <a name="apply-a-technique-direct3d-10"></a>Aplicar una técnica (Direct3D 10)
 
-Con las constantes, las texturas y el estado del sombreador declarado e inicializado, lo único que queda por hacer es establecer el estado del efecto en el dispositivo.
+Con las constantes, las texturas y el estado del sombreador declarados e inicializados, lo único que queda por hacer es establecer el estado de efecto en el dispositivo.
 
-## <a name="set-non-shader-state-in-the-device"></a>Establecer el estado de no sombreador en el dispositivo
+## <a name="set-non-shader-state-in-the-device"></a>Establecer el estado que no es de sombreador en el dispositivo
 
-Algunos Estados de canalización no se establecen con un efecto. Por ejemplo, el borrado de un destino de representación prepara el destino de representación para los datos. Antes de establecer el estado del efecto en el dispositivo, este es un ejemplo de Cómo borrar los búferes de salida.
+Un efecto no establece ningún estado de canalización. Por ejemplo, al borrar un destino de representación se prepara el destino de representación para los datos. Antes de establecer el estado de efecto en el dispositivo, este es un ejemplo de cómo borrar los búferes de salida.
 
 
 ```
@@ -31,9 +31,9 @@ Algunos Estados de canalización no se establecen con un efecto. Por ejemplo, el
 
 
 
-## <a name="set-effect-state-in-the-device"></a>Establecer el estado del efecto en el dispositivo
+## <a name="set-effect-state-in-the-device"></a>Establecer el estado de efecto en el dispositivo
 
-El establecimiento del estado del efecto se realiza aplicando el estado del efecto en el bucle de representación. Esto se realiza desde fuera de. Es decir, seleccione una técnica y, a continuación, establezca el estado de cada una de las pasadas (dependiendo del resultado deseado).
+La configuración del estado del efecto se realiza aplicando el estado de efecto dentro del bucle de representación. Esto se hace desde fuera de . Es decir, seleccione una técnica y, a continuación, establezca el estado de cada uno de los pases (en función del resultado deseado).
 
 
 ```
@@ -52,13 +52,13 @@ El establecimiento del estado del efecto se realiza aplicando el estado del efec
 
 
 
-Un efecto no representa nada, simplemente establece el estado del efecto en el dispositivo. El código de representación se llama después de que el estado del efecto actualice el estado del dispositivo. En este ejemplo, la llamada a DrawIndexed realiza la representación.
+Un efecto no representa nada, simplemente establece el estado del efecto en el dispositivo. Se llama al código de representación después de que el estado de efecto actualice el estado del dispositivo. En este ejemplo, la llamada DrawIndexed realiza la representación.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Representar un efecto (Direct3D 10)](d3d10-graphics-programming-guide-effects-render.md)
+[Representación de un efecto (Direct3D 10)](d3d10-graphics-programming-guide-effects-render.md)
 </dt> </dl>
 
  

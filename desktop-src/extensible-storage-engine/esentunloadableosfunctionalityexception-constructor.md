@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentUnloadableOSFunctionalityException'
-title: Constructor de EsentUnloadableOSFunctionalityException
+description: 'Más información sobre: Constructor EsentUnloadableOSFunctionalityException'
+title: Constructor EsentUnloadableOSFunctionalityException
 TOCTitle: 'EsentUnloadableOSFunctionalityException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentUnloadableOSFunctionalityException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentunloadableosfunctionalityexception.esentunloadableosfunctionalityexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d00544cf398784db30f2c37c5eea14c0f631fe79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 661cc01002ee8b63ceb17dbc2aef52bb35a935c7efe55c273ae55bb90fb8bc3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103815638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112814"
 ---
-# <a name="esentunloadableosfunctionalityexception-constructor"></a>Constructor de EsentUnloadableOSFunctionalityException
+# <a name="esentunloadableosfunctionalityexception-constructor"></a>Constructor EsentUnloadableOSFunctionalityException
 
 Inicializa una nueva instancia de la clase EsentUnloadableOSFunctionalityException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentUnloadableOSFunctionalityException()
 
 [Miembros de EsentUnloadableOSFunctionalityException](./esentunloadableosfunctionalityexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

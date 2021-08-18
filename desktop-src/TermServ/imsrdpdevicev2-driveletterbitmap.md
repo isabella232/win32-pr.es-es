@@ -1,12 +1,12 @@
 ---
-title: Propiedad DriveLetterBitmap de IMsRdpDeviceV2
-description: Contiene un campo de bits que representa una asignación de Letras de unidad incluidas en el dispositivo.
+title: Propiedad IMsRdpDeviceV2 DriveLetterBitmap
+description: Contiene un campo de bits que representa un mapa de letras de unidad contenidas en el dispositivo.
 ms.assetid: 13b7c9b9-a97f-4474-b5ad-833abff384f5
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad DriveLetterBitmap
-- Propiedad DriveLetterBitmap Servicios de Escritorio remoto, interfaz IMsRdpDeviceV2
-- Servicios de Escritorio remoto de la interfaz IMsRdpDeviceV2, propiedad DriveLetterBitmap
+- Propiedad DriveLetterBitmap Servicios de Escritorio remoto
+- Propiedad DriveLetterBitmap Servicios de Escritorio remoto , interfaz IMsRdpDeviceV2
+- Interfaz IMsRdpDeviceV2 Servicios de Escritorio remoto , propiedad DriveLetterBitmap
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d13189415630539ac47d7a0e0a094b7b3212e8e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: af03d0e9e77a2a6a9d83e40fc2943bd5365d1312a1ca744aedf3b9331b719f9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138598"
 ---
-# <a name="imsrdpdevicev2driveletterbitmap-property"></a>IMsRdpDeviceV2::D propiedad riveLetterBitmap
+# <a name="imsrdpdevicev2driveletterbitmap-property"></a>IMsRdpDeviceV2::D riveLetterBitmap
 
-Contiene un campo de bits que representa una asignación de Letras de unidad incluidas en el dispositivo.
+Contiene un campo de bits que representa un mapa de letras de unidad contenidas en el dispositivo.
 
 Esta propiedad es de solo lectura.
 
@@ -44,7 +44,7 @@ HRESULT get_DriveLetterBitmap(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un mapa de las letras de unidad incluidas en el dispositivo. Cada bit del valor representa una letra de unidad. El bit menos significativo representa la letra de unidad "A", el siguiente bit representa la letra de unidad "B", etc.
+Mapa de letras de unidad contenidas en el dispositivo. Cada bit del valor representa una letra de unidad. El bit menos significativo representa la letra de unidad "A", el bit siguiente representa la letra de unidad "B", y así sucesivamente.
 
 ## <a name="requirements"></a>Requisitos
 

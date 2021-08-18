@@ -1,25 +1,25 @@
 ---
-description: Indica si deben habilitarse las notificaciones de estado de secuencia.
+description: Indica si se deben habilitar las notificaciones de estado de flujo.
 ms.assetid: 97CCEBB6-9634-4BA6-966A-621F9023B59F
-title: MF_CAPTURE_ENGINE_ENABLE_CAMERA_STREAMSTATE_NOTIFICATION atributo (Mfcaptureengine. h)
+title: MF_CAPTURE_ENGINE_ENABLE_CAMERA_STREAMSTATE_NOTIFICATION atributo (Mfcaptureengine.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca293e172a8f8e1a28b5f3934e61d3b90cfb20ee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fce100a79f3e8c146dde082a29242920d01c83fbffead5acb2c9adf803319de9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973994"
 ---
-# <a name="mf_capture_engine_enable_camera_streamstate_notification-attribute"></a>\_Módulo de captura MF habilitar el atributo de \_ \_ \_ \_ notificación STREAMSTATE de cámara \_
+# <a name="mf_capture_engine_enable_camera_streamstate_notification-attribute"></a>ATRIBUTO MF \_ CAPTURE ENGINE ENABLE CAMERA \_ \_ \_ \_ STREAMSTATE \_ NOTIFICATION
 
-Indica si deben habilitarse las notificaciones de estado de secuencia.
+Indica si se deben habilitar las notificaciones de estado de flujo.
 
 ## <a name="data-type"></a>Tipo de datos
 
 ## <a name="remarks"></a>Observaciones
 
-Un valor distinto de cero especifica que las notificaciones deberían estar habilitadas. Si el atributo no está presente o si el valor del atributo es 0, las notificaciones no están habilitadas.
+Un valor distinto de cero especifica que se deben habilitar las notificaciones. Si el atributo no está presente o si el valor del atributo es 0, las notificaciones no están habilitadas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -27,7 +27,7 @@ Un valor distinto de cero especifica que las notificaciones deberían estar habi
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Mfcaptureengine. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Mfcaptureengine.h</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Un valor distinto de cero especifica que las notificaciones deberían estar habi
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

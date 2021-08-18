@@ -4,12 +4,12 @@ ms.assetid: 752cccf7-1f95-4597-b0e2-a96fd22ffeef
 title: DocumentCollate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4c3036cc64265ea8f88bfcc46aea0149f8af5ad
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 4accbba3bf309ef9eaec251c5877ee7965f984ed63670a50ebf5e870406acb92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971594"
 ---
 # <a name="documentcollate"></a>DocumentCollate
 
@@ -45,7 +45,7 @@ OFF: para todas las copias (JobCopiesAllDocuments x DocumentCopiesAllPages) impr
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|---------------------|
 | Tipo de elemento <br/>   | Característica<br/>  |
 | Prefijo de ámbito <br/> | Documento<br/> |
@@ -87,7 +87,7 @@ En la tabla siguiente se describen las características de las variables definid
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
+## <a name="extensible-markup-language-xml-content"></a>contenido lenguaje de marcado extensible (XML)
 
 Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 

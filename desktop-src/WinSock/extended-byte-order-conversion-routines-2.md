@@ -1,19 +1,19 @@
 ---
-description: Windows Sockets 2 no supone que el orden de bytes de la red para todos los protocolos es el mismo.
+description: Windows Sockets 2 no supone que el orden de bytes de red para todos los protocolos es el mismo.
 ms.assetid: 517c21b5-4b56-49f8-88ae-103fdfce6441
-title: Rutinas de conversión extendida Byte-Order
+title: Rutinas Byte-Order de conversión de datos extendidos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9addb2b1527546b8a7d13eb90581a333f87c6f0e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c2be1c217e89d19e607a64dfc943449351021506dc88f73ebcd4234a26b2b84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119132528"
 ---
-# <a name="extended-byte-order-conversion-routines"></a>Rutinas de conversión extendida Byte-Order
+# <a name="extended-byte-order-conversion-routines"></a>Rutinas Byte-Order de conversión de datos extendidos
 
-Windows Sockets 2 no supone que el orden de bytes de la red para todos los protocolos es el mismo. Se proporciona un conjunto de rutinas de conversión para convertir cantidades de 16 y 32 bits a y desde el orden de bytes de la red. Estas rutinas toman como parámetro de entrada el identificador de socket que tiene una estructura de [**\_ información WSAPROTOCOL**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) asociada. El miembro **NetworkByteOrder** de la estructura de **\_ información de WSAPROTOCOL** especifica el orden de bytes de red deseado (actualmente big-endian o Little-endian).
+Windows Sockets 2 no supone que el orden de bytes de red para todos los protocolos es el mismo. Se proporciona un conjunto de rutinas de conversión para convertir cantidades de 16 y 32 bits en y desde el orden de bytes de red. Estas rutinas toman como parámetro de entrada el identificador de socket que tiene asociada una estructura INFO de [**WSAPROTOCOL. \_**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) El **miembro NetworkByteOrder** de la estructura **\_ INFO de WSAPROTOCOL** especifica el orden de bytes de red deseado (actualmente big-endian o little-endian).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -31,10 +31,10 @@ Windows Sockets 2 no supone que el orden de bytes de la red para todos los proto
 [**ntohs**](/windows/desktop/api/winsock/nf-winsock-ntohs)
 </dt> <dt>
 
-[Trasladar aplicaciones de socket a Winsock](porting-socket-applications-to-winsock.md)
+[Porte de aplicaciones de socket a Winsock](porting-socket-applications-to-winsock.md)
 </dt> <dt>
 
-[Consideraciones sobre la programación de Winsock](winsock-programming-considerations.md)
+[Consideraciones de programación de Winsock](winsock-programming-considerations.md)
 </dt> <dt>
 
 [**WSAHtonl**](/windows/desktop/api/Winsock2/nf-winsock2-wsahtonl)
@@ -46,10 +46,10 @@ Windows Sockets 2 no supone que el orden de bytes de la red para todos los proto
 [**WSANtohl**](/windows/desktop/api/Winsock2/nf-winsock2-wsantohl)
 </dt> <dt>
 
-[**WSANtohs**](/windows/desktop/api/Winsock2/nf-winsock2-wsantohs)
+[**WSANt adheres**](/windows/desktop/api/Winsock2/nf-winsock2-wsantohs)
 </dt> <dt>
 
-[**información de WSAPROTOCOL \_**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa)
+[**WSAPROTOCOL \_ INFO**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa)
 </dt> </dl>
 
  

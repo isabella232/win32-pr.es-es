@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_CHAR (barra de herramientas) (commctrl. h)
-description: Se envía mediante una barra de herramientas cuando recibe un mensaje de tipo WM \_ Char. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_CHAR de notificación (barra de herramientas) (Commctrl.h)
+description: Enviado por una barra de herramientas cuando recibe un mensaje \_ WM CHAR. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 7bf0b046-da8e-448f-94e1-62ba0989f7ba
 keywords:
-- Código de notificación de NM_CHAR (barra de herramientas) controles de Windows
+- NM_CHAR código de notificación (barra de herramientas) Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5a68cb85130f22c8cda63920ada974453a36991
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a318c7385e9d7205ad0fa159e1f987c5d650d27414eefeed4d915c5544cb4564
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018943"
 ---
-# <a name="nm_char-toolbar-notification-code"></a>NM \_ Char (barra de herramientas) código de notificación
+# <a name="nm_char-toolbar-notification-code"></a>Código de \_ notificación NM CHAR (barra de herramientas)
 
-Se envía mediante una barra de herramientas cuando recibe un mensaje de tipo [**WM \_ Char**](/windows/desktop/inputdev/wm-char) . Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por una barra de herramientas cuando recibe un [**mensaje \_ WM CHAR.**](/windows/desktop/inputdev/wm-char) Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_CHAR
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMCHAR**](/windows/win32/api/commctrl/ns-commctrl-nmchar) que contiene información adicional sobre el carácter que causó el código de notificación. El miembro **dwItemPrev** de esta estructura contiene el identificador de comando del elemento activo actualmente o-1 si no hay ningún elemento activo actualmente. El miembro **dwItemNext** de esta estructura contiene el identificador de comando del elemento que volverá a estar activo o-1 si la clave no coincide con el acelerador de cualquier elemento.
+Puntero a una [**estructura NMCHAR**](/windows/win32/api/commctrl/ns-commctrl-nmchar) que contiene información adicional sobre el carácter que produjo el código de notificación. El **miembro dwItemPrev** de esta estructura contiene el identificador de comando del elemento que está activo actualmente o -1 si ningún elemento está activo actualmente. El **miembro dwItemNext** de esta estructura contiene el identificador de comando del elemento que se volverá activo o -1 si la clave no coincide con el acelerador de ningún elemento.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** para indicar que la barra de herramientas no debe procesar el carácter y **false** para que la barra de herramientas procese el carácter.
+Devuelve **TRUE para** indicar que la barra de herramientas no debe procesar el carácter y **FALSE** para que la barra de herramientas procese el carácter.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Devuelve **true** para indicar que la barra de herramientas no debe procesar el 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
