@@ -1,10 +1,10 @@
 ---
-title: MSMQ-Open-Connector extendido derecho
+title: msmq-Open-Connector extendido a la derecha
 description: Permite abrir la cola del conector.
 ms.assetid: 5eb63190-5a64-4dad-a3bb-3fc317faabd7
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Active Directory extendido de MSMQ-Open-Connector
+- msmq-Open-Connector extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ea75f7148848fb5a9cecee4297679d28976d588
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: acfa52a3d2a227ad5bd5696ecbdf02a09f6b4b2840adaa29942c63ec6e038c5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021653"
 ---
-# <a name="msmq-open-connector-extended-right"></a>MSMQ-Open-Connector extendido derecho
+# <a name="msmq-open-connector-extended-right"></a>msmq-Open-Connector extendido a la derecha
 
 Permite abrir la cola del conector.
 
@@ -28,8 +28,8 @@ Permite abrir la cola del conector.
 
 | Entrada | Value |
 |--------------|--------------------------------------|
-| CN           | Conector de MSMQ-Open-                  |
-| Display-Name | Abrir cola de conector                 |
+| CN           | msmq-Open-Connector                  |
+| Display-Name | Abrir cola del conector                 |
 | Rights-GUID  | b4e60130-df3f-11d1-9c86-006008764d0e |
 
 
@@ -50,7 +50,7 @@ Permite abrir la cola del conector.
 | Entrada | Value |
 |-------------------------|-----------------------------------|
 | Applies-To              | [**Sitio**](c-site.md)<br/> |
-| Localización: ID. de presentación | 46                                |
+| Localization-Display-ID | 46                                |
 
 
 
@@ -61,7 +61,7 @@ Permite abrir la cola del conector.
 | Entrada | Value |
 |-------------------------|-----------------------------------|
 | Applies-To              | [**Sitio**](c-site.md)<br/> |
-| Localización: ID. de presentación | 46                                |
+| Localization-Display-ID | 46                                |
 
 
 
@@ -72,7 +72,7 @@ Permite abrir la cola del conector.
 | Entrada | Value |
 |-------------------------|-----------------------------------|
 | Applies-To              | [**Sitio**](c-site.md)<br/> |
-| Localización: ID. de presentación | 46                                |
+| Localization-Display-ID | 46                                |
 
 
 
@@ -83,7 +83,7 @@ Permite abrir la cola del conector.
 | Entrada | Value |
 |-------------------------|-----------------------------------|
 | Applies-To              | [**Sitio**](c-site.md)<br/> |
-| Localización: ID. de presentación | 46                                |
+| Localization-Display-ID | 46                                |
 
 
 
@@ -94,7 +94,7 @@ Permite abrir la cola del conector.
 | Entrada | Value |
 |-------------------------|-----------------------------------|
 | Applies-To              | [**Sitio**](c-site.md)<br/> |
-| Localización: ID. de presentación | 46                                |
+| Localization-Display-ID | 46                                |
 
 
 
@@ -105,7 +105,7 @@ Permite abrir la cola del conector.
 | Entrada | Value |
 |-------------------------|-----------------------------------|
 | Applies-To              | [**Sitio**](c-site.md)<br/> |
-| Localización: ID. de presentación | 46                                |
+| Localization-Display-ID | 46                                |
 
 
 

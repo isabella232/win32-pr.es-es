@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 94ccdebf8c8a134a845ff3df3017d710d1da93f1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a5ebbec010d84f510d9bd2786b20fee1deaa34039720d842df77cbe0f1ca9825
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119091513"
 ---
 # <a name="iinkanalyzersearch-method"></a>IInkAnalyzer::Search (método)
 
@@ -88,13 +88,13 @@ Esta búsqueda busca subcadenas de varias palabras y palabras únicas. Se buscan
 
 Todas las cadenas entrantes se convertirán en un solo uso de mayúsculas y minúsculas para la comparación mediante el LCID del subproceso actual para realizar esta conversión con el fin de respetar las convenciones de casos culturales.
 
-La cadena pasada se trata como una frase. Las palabras y los caracteres deben aparecer en los alteradores de los trazos en el orden especificado. La primera y la última palabra de la frase pueden coincidir como subcadenas (la primera palabra que aparece al final de una alternativa y la última palabra aparece al mendigar de una), pero cualquier otra palabra (las que están dentro de la frase) debe aparecer como palabras enteras.
+La cadena pasada se trata como una frase. Las palabras y los caracteres deben aparecer en los alteradores de los trazos en el orden especificado. La primera y la última palabra de la frase pueden coincidir como subcadenas (la primera palabra que aparece al final de una alternativa y la última palabra que aparece al mezquite de una), pero cualquier otra palabra (las que están dentro de la frase) debe aparecer como palabras enteras.
 
 Si la cadena pasada no tiene ningún espacio en blanco entre caracteres, la subcadena se puede encontrar en cualquier lugar dentro de una sola palabra en una alternativa.
 
-Solo la presencia o ausencia de espacios en blanco entre caracteres cambia los resultados de la búsqueda. Se omite el espacio en blanco que no está rodeado por caracteres. El tipo de espacio en blanco se omite (una pestaña o un espacio entre caracteres dará el mismo resultado). La cantidad de espacios en blanco no importa: un espacio o dos espacios entre caracteres darán el mismo resultado.
+Solo la presencia o ausencia de espacios en blanco entre caracteres cambia los resultados de la búsqueda. Se omite el espacio en blanco que no está rodeado por caracteres. Se omite el tipo de espacio en blanco (una pestaña o un espacio entre caracteres dará el mismo resultado). La cantidad de espacios en blanco no importa: un espacio o dos espacios entre caracteres darán el mismo resultado.
 
-La búsqueda no genera eventos PopulateContextNode. Solo se buscarán los trazos que ya se hayan rellenado.
+La búsqueda no genera eventos PopulateContextNode. Solo se buscarán los trazos que ya se han rellenado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,9 +102,9 @@ La búsqueda no genera eventos PopulateContextNode. Solo se buscarán los trazos
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

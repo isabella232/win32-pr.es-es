@@ -1,7 +1,7 @@
 ---
-description: Recupera la cadena de resultado mejor de la operación de reconocimiento para todo el árbol de nodos de contexto en el IInkAnalyzer.
+description: Recupera la cadena de mejor resultado de la operación de reconocimiento para todo el árbol de nodos de contexto en IInkAnalyzer.
 ms.assetid: 4aa57f41-3122-47a9-a60d-4a229e23f63c
-title: 'IInkAnalyzer:: GetRecognizedString (método) (IACom. h)'
+title: Método IInkAnalyzer::GetRecognizedString (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 67afe9909fcabb8df880706b2b077ea602ccade6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3defa68f68e0c2e81bdb093005db1e173442b9686ca4c98a4966c755b2fb52dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119092253"
 ---
-# <a name="iinkanalyzergetrecognizedstring-method"></a>IInkAnalyzer:: GetRecognizedString (método)
+# <a name="iinkanalyzergetrecognizedstring-method"></a>IInkAnalyzer::GetRecognizedString (método)
 
-Recupera la cadena de resultado mejor de la operación de reconocimiento para todo el árbol de nodos de contexto en el [**IInkAnalyzer**](iinkanalyzer.md).
+Recupera la cadena de mejor resultado de la operación de reconocimiento para todo el árbol de nodos de contexto en [**IInkAnalyzer.**](iinkanalyzer.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,32 +39,32 @@ HRESULT GetRecognizedString(
 
 <dl> <dt>
 
-*pbstrRecognizedString* \[ enuncia\]
+*pbstrRecognizedString* \[ out\]
 </dt> <dd>
 
-La cadena de resultado mejor de la operación de reconocimiento para todo el árbol de nodos de contexto en [**IInkAnalyzer**](iinkanalyzer.md).
+Cadena de mejor resultado de la operación de reconocimiento para todo el árbol de nodos de contexto en [**IInkAnalyzer.**](iinkanalyzer.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
 > Para evitar una pérdida de memoria, llame a [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) para *pbstrRecognizedString* cuando ya no necesite usar la cadena.
 
  
 
-Este método devuelve el mismo valor que los datos de propiedad del nodo raíz para la cadena reconocida. (Consulte el [**método IInkAnalyzer:: GetRootNode**](iinkanalyzer-getrootnode.md), [**IContextNode:: GetPropertyData**](icontextnode-getpropertydata.md)y [las propiedades del nodo de contexto](context-node-properties.md)).
+Este método devuelve el mismo valor que los datos de propiedad del nodo raíz para la cadena reconocida. (Vea [**IInkAnalyzer::GetRootNode (Método),**](iinkanalyzer-getrootnode.md) [**IContextNode::GetPropertyData**](icontextnode-getpropertydata.md)y [Propiedades del nodo de contexto](context-node-properties.md)).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra un método que recorre el árbol de resultados [**IContextNode**](icontextnode.md) del analizador de tinta. Si el IInkAnlyzer no está realizando actualmente el análisis de tinta, el método hace lo siguiente.
+En el ejemplo siguiente se muestra un método que recorre el árbol de resultados [**IContextNode**](icontextnode.md) del analizador de lápiz. Si IInkAnlyzer no está realizando actualmente el análisis de entrada de lápiz, el método hace lo siguiente.
 
 -   Obtiene la cadena de reconocimiento superior.
--   Obtiene el nodo raíz del analizador de tinta.
+-   Obtiene el nodo raíz del analizador de entrada de lápiz.
 -   Llama a un método auxiliar, `ExploreContextNode` , para examinar el nodo raíz y sus nodos secundarios.
 
 
@@ -125,23 +125,23 @@ HRESULT CMyClass::ExploreAnalysisResults(
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

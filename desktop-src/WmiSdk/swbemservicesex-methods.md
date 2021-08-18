@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Métodos SWbemServicesEx
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66434a753fdb79cf2624ac6bc61cd4730cd918d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bfc0b00ffb40dd598255adaee1131137df089d888c98ddc3d67e649134e39fce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130836"
 ---
 # <a name="swbemservicesex-methods"></a>Métodos SWbemServicesEx
 
-El objeto [**SWbemServicesEx**](swbemservicesex.md) expone los métodos siguientes.
+El [**objeto SWbemServicesEx**](swbemservicesex.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

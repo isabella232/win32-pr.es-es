@@ -3,7 +3,7 @@ title: Texture2DMSArray
 description: Texture2DMSArray
 ms.assetid: 4200eba8-a9e5-41ba-b04c-4ac7b20274d2
 keywords:
-- HLSL de Texture2DMSArray
+- Texture2DMSArray HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: effe4819c674a7909cc445b9e9f7b5322fae7676
-ms.sourcegitcommit: 5724b38883e518ac565e1b266defa85ad0941bb2
+ms.openlocfilehash: a23c45ea5f21667bde6817469bce43e8f7e9a0a41d8b62b016e739abb744b53c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "104279764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985785"
 ---
 # <a name="texture2dmsarray"></a>Texture2DMSArray
 
-Tipo Texture2DMSArray (tal como existe en el modelo de sombreador 4) más las variables de recurso.
+Tipo Texture2DMSArray (como existe en El modelo de sombreador 4) más variables de recursos.
 
 
 
@@ -30,22 +30,22 @@ Tipo Texture2DMSArray (tal como existe en el modelo de sombreador 4) más las va
 |------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**GetDimensions**](sm5-object-texture2dmsarray-getdimensions.md)                  | Obtiene las dimensiones de recursos.                      |
 | [**GetSamplePosition**](sm5-object-texture2dmsarray-getsampleposition.md)          | Obtiene la posición del ejemplo especificado.         |
-| [**Carga**](texture2dmsarray-load.md)                                               | Obtiene un valor.                                    |
-| [**AdventureWorks. Operator\[\]\[\]**](sm5-object-texture2dmsarray-sampleoperatorindex.md)  | Obtiene una variable de recurso de solo lectura.                |
+| [**Cargar**](texture2dmsarray-load.md)                                               | Obtiene un valor.                                    |
+| [**Muestra. Operador\[\]\[\]**](sm5-object-texture2dmsarray-sampleoperatorindex.md)  | Obtiene una variable de recurso de solo lectura.                |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Este objeto es compatible con los siguientes modelos de sombreador.
+Este objeto se admite en los siguientes modelos de sombreador.
 
 
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 5](d3d11-graphics-reference-sm5.md) y versiones posteriores | sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
 
 
 
@@ -55,7 +55,7 @@ Este objeto es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

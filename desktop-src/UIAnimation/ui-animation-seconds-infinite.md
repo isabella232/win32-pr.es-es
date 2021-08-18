@@ -1,5 +1,5 @@
 ---
-title: UI_ANIMATION_SECONDS_INFINITE (UIAnimation. h)
+title: UI_ANIMATION_SECONDS_INFINITE (UIAnimation.h)
 description: Indica que no hay ningún evento programado.
 ms.assetid: 7DDE96A5-5639-49EC-B5C0-3FBE60B84197
 topic_type:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c122eb1336136c00bf7b5e950e25c26c6384ab6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 361ec9ba41e93f9aaad19a493ec10b8657baa85db706b6d034302189ef457a7e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105696046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119418595"
 ---
-# <a name="ui_animation_seconds_infinite"></a>segundos de animación de interfaz de usuario \_ \_ \_ infinitos
+# <a name="ui_animation_seconds_infinite"></a>SEGUNDOS \_ INFINITOS DE \_ ANIMACIÓN DE INTERFAZ \_ DE USUARIO
 
 Indica que no hay ningún evento programado.
 
@@ -27,13 +27,13 @@ Indica que no hay ningún evento programado.
 
 | Constante o valor                                                                                                                                                                                                                                                            | Descripción                       |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------|
-| <span id="UI_ANIMATION_SECONDS_INFINITE"></span><span id="ui_animation_seconds_infinite"></span><dl> <dt>**Interfaz de usuario \_ Segundos de animación \_ \_ infinitos**</dt> <dt>-1,0</dt> </dl> | \_segundos de animación de IU \_<br/> |
+| <span id="UI_ANIMATION_SECONDS_INFINITE"></span><span id="ui_animation_seconds_infinite"></span><dl> <dt>**Interfaz de usuario \_ ANIMATION \_ SECONDS \_ INFINITE**</dt> <dt>-1.0</dt> </dl> | SEGUNDOS DE \_ ANIMACIÓN DE LA INTERFAZ DE \_ USUARIO<br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-Este valor se puede devolver en una llamada al método [**IUIAnimationManager2:: EstimateNextEventTime**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-estimatenexteventtime) .
+Este valor se puede devolver en una llamada al [**método IUIAnimationManager2::EstimateNextEventTime.**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-estimatenexteventtime)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,10 +41,10 @@ Este valor se puede devolver en una llamada al método [**IUIAnimationManager2::
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8, Windows 7 y actualización de plataforma solo para aplicaciones de escritorio de Windows 7 \[\]<br/>    |
+| Cliente mínimo compatible<br/> | Windows 8, Windows 7 y actualización de plataforma solo para Windows 7 \[ aplicaciones de escritorio\]<br/>    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                  |
-| Encabezado<br/>                   | <dl> <dt>UIAnimation. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>UIAnimation. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>UIAnimation.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>UIAnimation.idl</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Este valor se puede devolver en una llamada al método [**IUIAnimationManager2::
 [Constantes](constants.md)
 </dt> <dt>
 
-[**IUIAnimationManager2:: EstimateNextEventTime (método)**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-estimatenexteventtime)
+[**IUIAnimationManager2::EstimateNextEventTime (Método)**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager2-estimatenexteventtime)
 </dt> </dl>
 
  

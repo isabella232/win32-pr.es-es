@@ -9,39 +9,39 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a84f758afd21c5bb9cb46fe5b82cdb89ba8db154
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ddf219a4d43c3adda2829fb4e0ee0d99b87e849b854bc34610f7e5c8e28aa07d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119719"
 ---
 # <a name="pixel-shader-register-modifiers"></a>Modificadores de registro del sombreador de píxeles
 
 Modificadores de registro de origen:
 
--   [Desviación del registro de origen](dx9-graphics-reference-asm-ps-registers-modifiers-bias.md)
--   [Inversión del registro de origen](dx9-graphics-reference-asm-ps-registers-modifiers-invert.md)
--   [Registro de origen negativo](dx9-graphics-reference-asm-ps-registers-modifiers-negate.md)
--   [Registro de origen permutación](dx9-graphics-reference-asm-ps-registers-modifiers-source-register-swizzling.md)
--   [Escala del registro de origen x 2](dx9-graphics-reference-asm-ps-registers-modifiers-scale-x2.md)
--   [Escala de registro de origen firmada](dx9-graphics-reference-asm-ps-registers-modifiers-signed-scale.md)
--   [Máscara de escritura de registro de destino](dx9-graphics-reference-asm-ps-registers-modifiers-write-mask.md)
+-   [Sesgo del registro de origen](dx9-graphics-reference-asm-ps-registers-modifiers-bias.md)
+-   [Invertir registro de origen](dx9-graphics-reference-asm-ps-registers-modifiers-invert.md)
+-   [Negate del registro de origen](dx9-graphics-reference-asm-ps-registers-modifiers-negate.md)
+-   [Swling del registro de origen](dx9-graphics-reference-asm-ps-registers-modifiers-source-register-swizzling.md)
+-   [Escala de registro de origen x 2](dx9-graphics-reference-asm-ps-registers-modifiers-scale-x2.md)
+-   [Escalado firmado del registro de origen](dx9-graphics-reference-asm-ps-registers-modifiers-signed-scale.md)
+-   [Máscara de escritura del registro de destino](dx9-graphics-reference-asm-ps-registers-modifiers-write-mask.md)
 
 Modificadores de registro de destino:
 
--   [Máscara de escritura de registro de destino](dx9-graphics-reference-asm-ps-registers-modifiers-write-mask.md)
+-   [Máscara de escritura del registro de destino](dx9-graphics-reference-asm-ps-registers-modifiers-write-mask.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Registra](dx9-graphics-reference-asm-ps-registers.md)
+[Registros](dx9-graphics-reference-asm-ps-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

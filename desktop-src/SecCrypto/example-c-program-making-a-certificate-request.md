@@ -1,28 +1,28 @@
 ---
-description: En el ejemplo siguiente se muestra el procedimiento descrito en la sección anterior. En este ejemplo se crea una solicitud de certificado simple con un firmante, un solo atributo de nombre distintivo relativo (RDN) y sin atributos generales.
+description: En el ejemplo siguiente se muestra el procedimiento descrito en la sección anterior. En este ejemplo se crea una solicitud de certificado simple con un firmante, un único atributo de nombre distintivo relativo (RDN) y ningún atributo general.
 ms.assetid: bd3d0259-f0e8-460e-9f18-95d2492da3d8
-title: 'Programa C de ejemplo: creación de una solicitud de certificado'
+title: 'Programa C de ejemplo: realizar una solicitud de certificado'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6e02d9faa51d405f02bb46729621f65d43c7ab2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c4417eca6a6cc7537b4c284cfc5d37aeb6d0ed69d9d0a00bd6cb06efe6cb387
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140898"
 ---
-# <a name="example-c-program-making-a-certificate-request"></a>Programa C de ejemplo: creación de una solicitud de certificado
+# <a name="example-c-program-making-a-certificate-request"></a>Programa C de ejemplo: realizar una solicitud de certificado
 
-En el ejemplo siguiente se muestra el procedimiento descrito en la sección anterior. En este ejemplo se crea una [*solicitud de certificado*](../secgloss/c-gly.md) simple con un firmante, un solo [*atributo*](../secgloss/a-gly.md)de [*nombre distintivo relativo*](../secgloss/r-gly.md) (RDN) y sin atributos generales.
+En el ejemplo siguiente se muestra el procedimiento descrito en la sección anterior. En este ejemplo se crea una solicitud [*de certificado*](../secgloss/c-gly.md) simple con un firmante, un único atributo de nombre distintivo relativo (RDN) y ningún atributo general. [](../secgloss/r-gly.md) [](../secgloss/a-gly.md)
 
-En este ejemplo se muestran las siguientes funciones de [*CryptoAPI*](../secgloss/c-gly.md) :
+En este ejemplo se muestran las siguientes [*funciones de CryptoAPI:*](../secgloss/c-gly.md)
 
 -   [**CryptEncodeObject**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencodeobject)
 -   [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta)
 -   [**CryptExportPublicKeyInfo**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportpublickeyinfo)
 -   [**CryptSignAndEncodeCertificate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignandencodecertificate)
 
-En este ejemplo también se usan las funciones [**ByteToStr**](bytetostr.md) y [**MyHandleError**](myhandleerror.md). El código de estas funciones se incluye con el ejemplo. [De uso general funciones](general-purpose-functions.md) muestra el código para estas y otras funciones auxiliares.
+En este ejemplo también se usan las [**funciones ByteToStr**](bytetostr.md) [**y MyHandleError**](myhandleerror.md). El código de estas funciones se incluye en el ejemplo. [De uso general Functions muestra](general-purpose-functions.md) el código para estas y otras funciones auxiliares.
 
 
 ```C++

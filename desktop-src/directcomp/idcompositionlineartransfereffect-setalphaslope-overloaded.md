@@ -1,9 +1,9 @@
 ---
-title: métodos idcompositionlineartransfereffect SetAlphaSlope (Dcomp. h)
+title: Métodos setAlphaSlope de idcompositionlineartransfereffect (Dcomp.h)
 description: Establece la pendiente de la función lineal para el canal alfa.
 ms.assetid: 1de76dcb-9fcb-ddda-0a98-be151ff869ff
 keywords:
-- Métodos SetAlphaSlope DirectComposition
+- Métodos de SetAlphaSlope DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: f72b1c1afb7946f60c13d8ac9426dfa081d9e1d3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1ac81b48aa46c9e4222c6c71d5b40ed52447212c0bc44db1b457fc959117e323
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118999"
 ---
-# <a name="idcompositionlineartransfereffectsetalphaslope-methods"></a>idcompositionlineartransfereffect:: SetAlphaSlope (métodos)
+# <a name="idcompositionlineartransfereffectsetalphaslope-methods"></a>Métodos idcompositionlineartransfereffect::SetAlphaSlope
 
 Establece la pendiente de la función lineal para el canal alfa.
 
@@ -40,11 +40,11 @@ Establece la pendiente de la función lineal para el canal alfa.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

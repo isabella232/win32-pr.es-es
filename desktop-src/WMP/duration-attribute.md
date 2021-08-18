@@ -1,9 +1,9 @@
 ---
-title: Duration (atributo)
-description: El atributo Duration es la duración de la reproducción del elemento, en segundos.
+title: Atributo Duration
+description: El atributo Duration es la duración de reproducción del elemento, en segundos.
 ms.assetid: 0a59a7b6-4536-4197-9f4a-1877ef42f828
 keywords:
-- Atributo Duration de Windows Media Player
+- Duración del atributo Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,31 +12,31 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb50e57a58eb1a2343230fd91757de1aa09901ff
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a4136f6abc72be2bda03873bf8d9ecfa74076c3fdb0b46c5c218e937283da26a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996945"
 ---
-# <a name="duration-attribute"></a>Duration (atributo)
+# <a name="duration-attribute"></a>Atributo Duration
 
-El atributo **Duration** es la duración de la reproducción del elemento, en segundos.
+El **atributo Duration** es la duración de reproducción del elemento, en segundos.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
--   [Archivos de Windows Media de uso frecuente](commonly-used-windows-media-file-attributes.md)
+-   [Archivos multimedia de Windows usados con frecuencia](commonly-used-windows-media-file-attributes.md)
 -   [Otros elementos](other-item-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se almacena en la biblioteca y en el archivo multimedia digital.
+Este atributo se almacena tanto en la biblioteca como en el archivo multimedia digital.
 
-La constante del SDK de Windows Media Format para este atributo es g \_ wszWMDuration.
+La Windows SDK de formato multimedia para este atributo es g \_ wszWMDuration.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,7 +44,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -52,7 +52,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

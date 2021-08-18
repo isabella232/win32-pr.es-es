@@ -1,7 +1,7 @@
 ---
-description: Extrae los identificadores de clúster por ejemplo de un búfer de datos comprimidos de ID3DXPRTCompBuffer.
+description: Extrae los identificadores de clúster por ejemplo de un búfer de datos comprimido ID3DXPRTCompBuffer.
 ms.assetid: d78d82ab-58bc-4b73-9ca0-8b7f06867618
-title: 'ID3DXPRTCompBuffer:: ExtractClusterIDs (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTCompBuffer::ExtractClusterIDs (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ef68a972109e89e318adb83ab388c653c6a3deed
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 94cbf51aaedd8cc0d5505ca91663eb014e2a3d417a631e93d71b8a0ebc600ceb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987185"
 ---
-# <a name="id3dxprtcompbufferextractclusterids-method"></a>ID3DXPRTCompBuffer:: ExtractClusterIDs (método)
+# <a name="id3dxprtcompbufferextractclusterids-method"></a>Método ID3DXPRTCompBuffer::ExtractClusterIDs
 
-Extrae los identificadores de clúster por ejemplo de un búfer de datos comprimidos de [**ID3DXPRTCompBuffer**](id3dxprtcompbuffer.md) .
+Extrae los identificadores de clúster por ejemplo de un búfer de datos [**comprimido ID3DXPRTCompBuffer.**](id3dxprtcompbuffer.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT ExtractClusterIDs(
 
 <dl> <dt>
 
-*pClusterIDs* \[ in, out\]
+*pClusterID* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Puntero a la ubicación en memoria donde se escriben los identificadores. La longitud de memoria necesaria es el valor devuelto por [**ID3DXPRTCompBuffer:: GetNumSamples**](id3dxprtcompbuffer--getnumsamples.md).
+Puntero a la ubicación en memoria donde se escriben los IDs. La longitud de memoria necesaria es el valor devuelto por [**ID3DXPRTCompBuffer::GetNumSamples**](id3dxprtcompbuffer--getnumsamples.md).
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntero a la ubicación en memoria donde se escriben los identificadores. La lon
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

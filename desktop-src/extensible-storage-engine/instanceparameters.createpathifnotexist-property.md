@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: InstanceParameters. CreatePathIfNotExist (propiedad)'
-title: Propiedad InstanceParameters. CreatePathIfNotExist
+description: 'Más información sobre: Propiedad InstanceParameters.CreatePathIfNotExist'
+title: Propiedad InstanceParameters.CreatePathIfNotExist
 TOCTitle: 'CreatePathIfNotExist property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.CreatePathIfNotExist
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.createpathifnotexist(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d777c7bae3c375118488105e275edba59e57cd05
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7cf48149548a21cc225816d307f65ac7c24bdaba4bfd090def9951e773f251c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112424"
 ---
-# <a name="instanceparameterscreatepathifnotexist-property"></a>Propiedad InstanceParameters. CreatePathIfNotExist
+# <a name="instanceparameterscreatepathifnotexist-property"></a>Propiedad InstanceParameters.CreatePathIfNotExist
 
-Obtiene o establece un valor que indica si ESENT creará silenciosamente carpetas que faltan en sus rutas de acceso del sistema de archivos.
+Obtiene o establece un valor que indica si ESENT creará de forma silenciosa carpetas que faltan en sus rutas de acceso del sistema de archivos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public bool CreatePathIfNotExist { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros instanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

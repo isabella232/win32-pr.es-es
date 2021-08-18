@@ -1,19 +1,19 @@
 ---
-description: La estructura de la \_ estructura de reconocimiento del sistema de archivos \_ \_ , definida internamente por Windows y utilizada por el reconocimiento del sistema de archivos (FRS), contiene un valor de suma de comprobación que debe calcularse correctamente para que FRS funcione correctamente con un sistema de archivos especificado no reconocido.
+description: La estructura FILE SYSTEM RECOGNITION STRUCTURE, definida internamente por Windows y utilizada por el reconocimiento del sistema de archivos \_ \_ (FRS), contiene un valor de suma de comprobación que se debe calcular correctamente para que FRS funcione correctamente con un sistema de archivos no reconocido \_ especificado.
 ms.assetid: 8f76784f-7d03-4874-ae7f-e8bdc42638c3
-title: Calcular una suma de comprobación del reconocimiento del sistema de archivos
+title: Calcular una suma de comprobación de reconocimiento del sistema de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74cac3975d4e1845dd1ff4aa218526e942fda152
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce146fda589668d39f1f7ff4158384986fb719f2bbbee6ce0584ad9f1e540b08
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119329185"
 ---
-# <a name="computing-a-file-system-recognition-checksum"></a>Calcular una suma de comprobación del reconocimiento del sistema de archivos
+# <a name="computing-a-file-system-recognition-checksum"></a>Calcular una suma de comprobación de reconocimiento del sistema de archivos
 
-La estructura de la [**\_ \_ \_ estructura de reconocimiento del sistema de archivos**](file-system-recognition-structure.md) , definida internamente por Windows y utilizada por el [reconocimiento del sistema de archivos](file-system-recognition.md) (FRS), contiene un valor de suma de comprobación que debe calcularse correctamente para que FRS funcione correctamente con un sistema de archivos especificado no reconocido. En el ejemplo siguiente se realiza este cálculo.
+La estructura [**FILE \_ SYSTEM RECOGNITION \_ \_ STRUCTURE,**](file-system-recognition-structure.md) definida internamente por Windows y utilizada por el reconocimiento del sistema de archivos (FRS), contiene un valor de suma de comprobación que se debe calcular correctamente para que FRS funcione correctamente con un sistema de archivos no reconocido especificado. [](file-system-recognition.md) En el ejemplo siguiente se realiza este cálculo.
 
 
 ```C++
@@ -86,7 +86,7 @@ Return Value:
 [Reconocimiento del sistema de archivos](file-system-recognition.md)
 </dt> <dt>
 
-[**\_estructura de \_ reconocimiento del sistema de archivos \_**](file-system-recognition-structure.md)
+[**ESTRUCTURA DE \_ RECONOCIMIENTO DEL SISTEMA DE \_ \_ ARCHIVOS**](file-system-recognition-structure.md)
 </dt> </dl>
 
  

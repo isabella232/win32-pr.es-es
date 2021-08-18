@@ -4,12 +4,12 @@ ms.assetid: 92BE6EE8-BC98-4CCC-99AB-1D5310CC0D81
 title: Archivos sin conexión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d040ceec5b5eeab9dda7b2876f678f973a95fd6
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 547ced0022cb08512ec81c03e344cc931432b40af6b26c5673b0eda91940c34c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119331785"
 ---
 # <a name="offline-files"></a>Archivos sin conexión
 

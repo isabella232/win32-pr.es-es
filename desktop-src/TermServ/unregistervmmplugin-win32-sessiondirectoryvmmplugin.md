@@ -1,12 +1,12 @@
 ---
-title: Método UnregisterVMMPlugin de la clase Win32_SessionDirectoryVMMPlugin
+title: Método UnregisterVMMPlugin de la Win32_SessionDirectoryVMMPlugin clase
 description: Anula el registro del complemento.
 ms.assetid: d5fec317-8277-4154-ae16-1203d4d15246
 ms.tgt_platform: multiple
 keywords:
 - Método UnregisterVMMPlugin Servicios de Escritorio remoto
-- Método UnregisterVMMPlugin Servicios de Escritorio remoto, clase Win32_SessionDirectoryVMMPlugin
-- Win32_SessionDirectoryVMMPlugin de clase Servicios de Escritorio remoto, método UnregisterVMMPlugin
+- Método UnregisterVMMPlugin Servicios de Escritorio remoto , Win32_SessionDirectoryVMMPlugin clase
+- Win32_SessionDirectoryVMMPlugin clase Servicios de Escritorio remoto método , UnregisterVMMPlugin
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfa0ea4c37d83e8788b13b0469b808ab4de6b473
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 642eef115d2dbf0e752969128d5847797fb40278eb81999430b39cf6152c3e55
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119424035"
 ---
-# <a name="unregistervmmplugin-method-of-the-win32_sessiondirectoryvmmplugin-class"></a>Método UnregisterVMMPlugin de la \_ clase SessionDirectoryVMMPlugin de Win32
+# <a name="unregistervmmplugin-method-of-the-win32_sessiondirectoryvmmplugin-class"></a>Método UnregisterVMMPlugin de la clase \_ SessionDirectoryVMMPlugin de Win32
 
 Anula el registro del complemento.
 
@@ -49,8 +49,8 @@ Este método no tiene parámetros.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                      |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 

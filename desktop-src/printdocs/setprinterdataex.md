@@ -1,7 +1,7 @@
 ---
-description: La función SetPrinterDataEx establece los datos de configuración de una impresora o un servidor de impresión. La función almacena los datos de configuración en la clave del registro Printers.
+description: La función SetPrinterDataEx establece los datos de configuración de una impresora o un servidor de impresión. La función almacena los datos de configuración en la clave del Registro de impresoras.
 ms.assetid: b7faadfc-1c81-4ddf-8fe5-68f4cc0376f1
-title: Función SetPrinterDataEx (winspool. h)
+title: Función SetPrinterDataEx (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_location:
 - Ext-MS-Win-printer-Winspool-l1-1-1.dll
 - Ext-MS-Win-Printer-WinSpool-l1-1-2.dll
 - Ext-MS-Win-Printer-WinSpool-L1-1-3.dll
-ms.openlocfilehash: 9f384c9c9d6f0d956264b45ec8b52043ad20e897
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d2904c853510efeb379c9d590852c8f082a4644315560c4dfa5a7f51daca6ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278645"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119460355"
 ---
-# <a name="setprinterdataex-function"></a>SetPrinterDataEx función)
+# <a name="setprinterdataex-function"></a>Función SetPrinterDataEx
 
-La función **SetPrinterDataEx** establece los datos de configuración de una impresora o un servidor de impresión. La función almacena los datos de configuración en la clave del registro de la impresora.
+La **función SetPrinterDataEx** establece los datos de configuración de una impresora o un servidor de impresión. La función almacena los datos de configuración en la clave del Registro de la impresora.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,72 +49,72 @@ DWORD SetPrinterDataEx(
 
 <dl> <dt>
 
-*hPrinter* \[ de\]
+*hPrinter* \[ En\]
 </dt> <dd>
 
-Identificador de la impresora o del servidor de impresión para el que la función establece los datos de configuración. Use la función [**OpenPrinter**](openprinter.md), [**OpenPrinter2**](openprinter2.md)o [**AddPrinter (**](addprinter.md) para recuperar un identificador de impresora.
+Identificador de la impresora o del servidor de impresión para el que la función establece los datos de configuración. Use la [**función OpenPrinter**](openprinter.md), [**OpenPrinter2**](openprinter2.md)o [**AddPrinter**](addprinter.md) para recuperar un identificador de impresora.
 
 </dd> <dt>
 
-*pKeyName* \[ de\]
+*pKeyName* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica la clave que contiene el valor que se va a establecer. Si la clave o las subclaves especificadas no existen, la función las crea.
+Puntero a una cadena terminada en NULL que especifica la clave que contiene el valor que se establecerá. Si la clave o subclaves especificadas no existen, la función las crea.
 
-Para almacenar los datos de configuración que se pueden publicar en el servicio de directorio (DS), especifique una de las siguientes claves del registro predefinidas.
+Para almacenar los datos de configuración que se pueden publicar en el servicio de directorio (DS), especifique una de las siguientes claves predefinidas del Registro.
 
 
 
 | Value                                                                                                                                                                      | Significado                                                                                         |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| <span id="SPLDS_DRIVER_KEY"></span><span id="splds_driver_key"></span><dl> <dt>**SPLDS_DRIVER_KEY**</dt> </dl>    | Controladores de impresora use esta clave para almacenar las propiedades del controlador.<br/>                             |
-| <span id="SPLDS_SPOOLER_KEY"></span><span id="splds_spooler_key"></span><dl> <dt>**SPLDS_SPOOLER_KEY**</dt> </dl> | Reservado. Solo lo utiliza el administrador de trabajos de impresión para almacenar propiedades internas del administrador de trabajos de impresión.<br/>       |
-| <span id="SPLDS_USER_KEY"></span><span id="splds_user_key"></span><dl> <dt>**SPLDS_USER_KEY**</dt> </dl>          | Las aplicaciones usan esta clave para almacenar propiedades de impresora, como números de activos de impresora.<br/> |
+| <span id="SPLDS_DRIVER_KEY"></span><span id="splds_driver_key"></span><dl> <dt>**SPLDS_DRIVER_KEY**</dt> </dl>    | Los controladores de impresora usan esta clave para almacenar las propiedades del controlador.<br/>                             |
+| <span id="SPLDS_SPOOLER_KEY"></span><span id="splds_spooler_key"></span><dl> <dt>**SPLDS_SPOOLER_KEY**</dt> </dl> | Reservado. Solo lo usa el colador de impresión para almacenar las propiedades internas del colador.<br/>       |
+| <span id="SPLDS_USER_KEY"></span><span id="splds_user_key"></span><dl> <dt>**SPLDS_USER_KEY**</dt> </dl>          | Las aplicaciones usan esta clave para almacenar propiedades de impresora, como números de recursos de impresora.<br/> |
 
 
 
  
 
-Los valores que se almacenan en la clave SPLDS_USER_KEY se publican en el servicio de directorio solo si hay una propiedad correspondiente en el esquema. Un administrador de dominio debe crear la propiedad si aún no existe. Para publicar una propiedad definida por el usuario después de utilizar **SetPrinterDataEx** para agregar o cambiar un valor, llame a [**SetPrinter**](setprinter.md) con *LEVEL* = 7 y con el miembro **dwAction** de [**PRINTER_INFO_7**](printer-info-7.md) establecido en **DSPRINT_UPDATE**.
+Los valores almacenados en la SPLDS_USER_KEY se publican en el servicio de directorio solo si hay una propiedad correspondiente en el esquema. Un administrador de dominio debe crear la propiedad si aún no existe. Para publicar una propiedad definida por el usuario después de usar **SetPrinterDataEx** para agregar o cambiar un valor, llame a [**SetPrinter**](setprinter.md) con *Level* = 7 y con el **miembro dwAction** de [**PRINTER_INFO_7**](printer-info-7.md) establecido **en DSPRINT_UPDATE**.
 
-Puede especificar otras claves para almacenar los datos de configuración que no son de DS. Use el carácter de barra diagonal inversa ( \\ ) como delimitador para especificar una ruta de acceso que tenga una o más subclaves.
+Puede especificar otras claves para almacenar datos de configuración que no son DS. Use el carácter de barra diagonal inversa ( ) como delimitador para especificar una ruta de \\ acceso que tenga una o varias subclaves.
 
-Si *hPrinter* es un identificador de una impresora y *pKeyName* es **null** o una cadena vacía, **SetPrinterDataEx** devuelve **ERROR_INVALID_PARAMETER**.
+Si *hPrinter es* un identificador de una impresora y *pKeyName* es **NULL** o una cadena vacía, **SetPrinterDataEx** **devuelve ERROR_INVALID_PARAMETER**.
 
-Si *hPrinter* es un identificador de un servidor de impresión, *pKeyName* se omite.
+Si *hPrinter es* un identificador de un servidor de impresión, se omite *pKeyName.*
 
-No utilice **SPLDS_SPOOLER_KEY**. Para cambiar las propiedades de la impresora del administrador de trabajos de impresión, use [**SetPrinter**](setprinter.md) con *LEVEL* = 2.
+No **use** SPLDS_SPOOLER_KEY . Para cambiar las propiedades de la impresora del colador, use [**SetPrinter**](setprinter.md) con *Nivel* = 2.
 
 </dd> <dt>
 
-*pValueName* \[ de\]
+*pValueName* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que identifica los datos que se van a establecer.
+Puntero a una cadena terminada en NULL que identifica los datos que se establecerán.
 
-En el caso de las impresoras, esta cadena especifica el nombre de un valor en la clave *pKeyName* .
+En el caso de las impresoras, esta cadena especifica el nombre de un valor en la *clave pKeyName.*
 
-En el caso de los servidores de impresión, esta cadena es una de las cadenas predefinidas que aparecen en la sección Comentarios siguiente.
+En el caso de los servidores de impresión, esta cadena es una de las cadenas predefinidas enumeradas en la sección Comentarios siguiente.
 
 </dd> <dt>
 
-*Tipo* \[ de de\]
+*Tipo* \[ En\]
 </dt> <dd>
 
-Código que indica el tipo de datos al que apunta el parámetro *pdata* . Para obtener una lista de los códigos de tipo posibles, vea [Registry Value Types](/windows/desktop/SysInfo/registry-value-types).
+Código que indica el tipo de datos a los que apunta el *parámetro pData.* Para obtener una lista de los códigos de tipo posibles, vea [Tipos de valor del Registro](/windows/desktop/SysInfo/registry-value-types).
 
-Si *pKeyName* especifica una de las claves de servicio de directorio predefinidas, el *tipo* debe ser **REG_SZ**, **REG_MULTI_SZ**, **REG_DWORD** o **REG_BINARY**. Si se utiliza **REG_BINARY** , *cbData* debe ser igual a 1 y el servicio de directorio trata los datos como un valor booleano.
+Si *pKeyName especifica* una de las claves de servicio de directorio predefinidas, *type* debe ser **REG_SZ**, **REG_MULTI_SZ**, **REG_DWORD** o **REG_BINARY**. Si **REG_BINARY** se usa , *cbData* debe ser igual a 1 y el servicio de directorio trata los datos como un valor booleano.
 
 </dd> <dt>
 
-*pdata* \[ de\]
+*pData* \[ En\]
 </dt> <dd>
 
-Un puntero a un búfer que contiene los datos de configuración de la impresora.
+Puntero a un búfer que contiene los datos de configuración de la impresora.
 
 </dd> <dt>
 
-*cbData* \[ de\]
+*cbData* \[ En\]
 </dt> <dd>
 
 Tamaño, en bytes, de la matriz.
@@ -123,20 +123,20 @@ Tamaño, en bytes, de la matriz.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es **ERROR_SUCCESS**.
+Si la función se realiza correctamente, el valor devuelto es **ERROR_SUCCESS**.
 
 Si se produce un error en la función, el valor devuelto es un valor de error.
 
 ## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> Se trata de una función de bloqueo o sincrónica y podría no volver inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que parezca que la aplicación no responde.
+> Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
-Para recuperar los datos de configuración existentes de una impresora o cola de impresión, llame a la función [**GetPrinterDataEx**](getprinterdataex.md) .
+Para recuperar los datos de configuración existentes para una impresora o un administrador de trabajos de impresión, llame a la [**función GetPrinterDataEx.**](getprinterdataex.md)
 
-Llamar a **SetPrinterDataEx** con el parámetro *pKeyName* establecido en "PrinterDriverData" es equivalente a llamar a la función [**SetPrinterData**](setprinterdata.md) .
+Llamar **a SetPrinterDataEx** con el parámetro *pKeyName* establecido en "PrinterDriverData" equivale a llamar a la [**función SetPrinterData.**](setprinterdata.md)
 
 Si *hPrinter* es un identificador de un servidor de impresión, *pValueName* puede especificar uno de los siguientes valores predefinidos.
 
@@ -157,7 +157,7 @@ Si *hPrinter* es un identificador de un servidor de impresión, *pValueName* pue
 | **SPLREG_PRINT_DRIVER_ISOLATION_IDLE_TIMEOUT**                 | Windows 7 y versiones posteriores<br/>                                                                                                                                                                                                  |
 | **SPLREG_PRINT_DRIVER_ISOLATION_EXECUTION_POLICY**             | Windows 7 y versiones posteriores<br/>                                                                                                                                                                                                  |
 | **SPLREG_PRINT_DRIVER_ISOLATION_OVERRIDE_POLICY**              | Windows 7 y versiones posteriores<br/>                                                                                                                                                                                                  |
-| **SPLREG_RETRY_POPUP**                                            | Si la devolución es correcta, *pdata* contiene 1 si el servidor está configurado para reintentar ventanas emergentes para todos los trabajos, o 0 si el servidor no reintenta las ventanas emergentes de todos los trabajos.<br/> No se admite en Windows Server 2003 y versiones posteriores<br/> |
+| **SPLREG_RETRY_POPUP**                                            | Si la devolución es correcta, *pData* contiene 1 si el servidor está establecido para volver a intentar ventanas emergentes para todos los trabajos, o 0 si el servidor no vuelve a intentar ventanas emergentes para todos los trabajos.<br/> No se admite en Windows Server 2003 y versiones posteriores<br/> |
 | **SPLREG_SCHEDULER_THREAD_PRIORITY**                             |                                                                                                                                                                                                                                 |
 | **SPLREG_SCHEDULER_THREAD_PRIORITY_DEFAULT**                    |                                                                                                                                                                                                                                 |
 | **SPLREG_WEBSHAREMGMT**                                            | Windows Server 2003 y versiones posteriores<br/>                                                                                                                                                                                        |
@@ -166,46 +166,46 @@ Si *hPrinter* es un identificador de un servidor de impresión, *pValueName* pue
 
  
 
-Al pasar uno de los siguientes valores predefinidos como *pValueName* , se establece el comportamiento de impresión del grupo cuando se produce un error.
+Si se pasa uno de los siguientes valores predefinidos como *pValueName,* se establece el comportamiento de impresión del grupo cuando se produce un error.
 
 
 
 | Value                                       | Comentarios                                                                                                                                                                                              |
 |---------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **SPLREG_RESTART_JOB_ON_POOL_ERROR**   | El valor de *pdata* indica el tiempo, en segundos, en el que se reinicia un trabajo en otro puerto después de que se produzca un error. Esta configuración se usa con **SPLREG_RESTART_JOB_ON_POOL_ENABLED**.<br/> |
-| **SPLREG_RESTART_JOB_ON_POOL_ENABLED** | Un valor distinto de cero en *pdata* indica que **SPLREG_RESTART_JOB_ON_POOL_ERROR** está habilitado.<br/>                                                                                            |
+| **SPLREG_RESTART_JOB_ON_POOL_ERROR**   | El valor *de pData* indica el tiempo, en segundos, cuando se reinicia un trabajo en otro puerto después de que se produzca un error. Esta configuración se usa con **SPLREG_RESTART_JOB_ON_POOL_ENABLED**.<br/> |
+| **SPLREG_RESTART_JOB_ON_POOL_ENABLED** | Un valor distinto de cero en *pData* indica que **SPLREG_RESTART_JOB_ON_POOL_ERROR** está habilitado.<br/>                                                                                            |
 
 
 
  
 
-La hora especificada en **SPLREG_RESTART_JOB_ON_POOL_ERROR** es un tiempo mínimo. La hora real puede ser mayor, dependiendo de la configuración del monitor de puerto siguiente, que son valores del registro en esta clave del registro:
+El tiempo especificado en **SPLREG_RESTART_JOB_ON_POOL_ERROR** es un tiempo mínimo. El tiempo real puede ser mayor, dependiendo de la siguiente configuración del monitor de puerto, que son los valores del Registro en esta clave del Registro:
 
-**HKLM \\ System \\ CurrentControlSet \\ control \\ Print \\ Monitors \\ < *nombremonitor* > \\ puertos**
+**HKLM \\ SYSTEM \\ CurrentControlSet \\ Control \\ Print \\ Monitors \\ < *MonitorName* > \\ Ports**
 
-Llame a la función [**RegSetValueEx**](/windows/win32/api/winreg/nf-winreg-regsetvaluea) para establecer estos valores.
+Llame a [**la función RegSetValueEx**](/windows/win32/api/winreg/nf-winreg-regsetvaluea) para establecer estos valores.
 
 
 
-| Configuración del monitor de Puerto     | Tipo de datos      | Significado                                                                                                        |
+| Configuración del monitor de puerto     | Tipo de datos      | Significado                                                                                                        |
 |--------------------------|----------------|----------------------------------------------------------------------------------------------------------------|
-| **StatusUpdateEnabled**  | **REG_DWORD** | Si es un valor distinto de cero, permite que el monitor de Puerto actualice la cola de impresión con el estado del puerto.<br/>            |
-| **StatusUpdateInterval** | **REG_DWORD** | Especifica el intervalo, en minutos, en el que el monitor de Puerto actualiza la cola de impresión con el estado del puerto.<br/> |
+| **StatusUpdateEnabled**  | **REG_DWORD** | Si es un valor distinto de cero, permite que el monitor de puerto actualice el colador con el estado del puerto.<br/>            |
+| **StatusUpdateInterval** | **REG_DWORD** | Especifica el intervalo, en minutos, cuando el monitor de puerto actualiza el colador con el estado del puerto.<br/> |
 
 
 
  
 
-Para asegurarse de que la cola de impresión redirige los trabajos a la siguiente impresora disponible en el grupo (cuando el trabajo de impresión no se imprime en el tiempo establecido), el monitor de puerto debe admitir SNMP y los puertos de red del grupo deben estar configurados como "estado SNMP habilitado". El monitor de puerto que admite SNMP es el monitor de puerto TCP/IP estándar.
+Para asegurarse de que el administrador de trabajos redirige los trabajos a la siguiente impresora disponible en el grupo (cuando el trabajo de impresión no se imprime dentro del tiempo establecido), el monitor de puertos debe admitir SNMP y los puertos de red del grupo deben configurarse como "Estado SNMP habilitado". El monitor de puerto que admite SNMP es el monitor de puerto TCP/IP estándar.
 
-En Windows 7 y versiones posteriores de Windows, los trabajos de impresión que se envían a un servidor de impresión se representan en el cliente de forma predeterminada. La representación del lado cliente de los trabajos de impresión se puede configurar estableciendo *pKeyName* en "PrinterDriverData" y *pValueName* en el valor de configuración de la tabla siguiente.
+En Windows 7 y versiones posteriores de Windows, los trabajos de impresión que se envían a un servidor de impresión se representan en el cliente de forma predeterminada. La representación del lado cliente de trabajos de impresión se puede configurar estableciendo *pKeyName* en "PrinterDriverData" y *pValueName* en el valor de configuración de la tabla siguiente.
 
 
 
 | Configuración                      | Tipo de datos      | Descripción                                                                                                                                                                                                                                                                                                                                                                                                       |
 |------------------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **EMFDespoolingSetting**     | **REG_DWORD** | Un valor de 0, o si este valor no está presente en el registro, habilita la representación del lado cliente predeterminada de los trabajos de impresión.<br/> Un valor de 1 deshabilita la representación del lado cliente de los trabajos de impresión.<br/>                                                                                                                                                                                                          |
-| **ForceClientSideRendering** | **REG_DWORD** | Un valor de 0, o si este valor no está presente en el registro, hará que los trabajos de impresión se representen en el cliente. Si no se puede representar un trabajo de impresión en el cliente, se representará en el servidor. Si no se puede representar un trabajo de impresión en el servidor, se producirá un error.<br/> Un valor de 1 representará los trabajos de impresión en el cliente. Si no se puede representar un trabajo de impresión en el cliente, se producirá un error.<br/> |
+| **EMFDespoolingSetting**     | **REG_DWORD** | Un valor de 0, o si este valor no está presente en el Registro, habilita la representación predeterminada del lado cliente de los trabajos de impresión.<br/> El valor 1 deshabilita la representación del lado cliente de los trabajos de impresión.<br/>                                                                                                                                                                                                          |
+| **ForceClientSideRendering** | **REG_DWORD** | Un valor de 0, o si este valor no está presente en el Registro, hará que los trabajos de impresión se represente en el cliente. Si un trabajo de impresión no se puede representar en el cliente, se representará en el servidor. Si un trabajo de impresión no se puede representar en el servidor, se producirá un error.<br/> Un valor de 1 representará los trabajos de impresión en el cliente. Si un trabajo de impresión no se puede representar en el cliente, se producirá un error.<br/> |
 
 
 
@@ -219,9 +219,9 @@ En Windows 7 y versiones posteriores de Windows, los trabajos de impresión que 
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| Archivo DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| Archivo DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nombres Unicode y ANSI<br/>   | **SetPrinterDataExW** (Unicode) y **SetPrinterDataExA** (ANSI)<br/>                               |
 
 

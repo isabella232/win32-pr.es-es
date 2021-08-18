@@ -1,30 +1,30 @@
 ---
-description: En el ejemplo siguiente se crea una clave de sesión aleatoria y se crea un BLOB de clave exportable. En el ejemplo se muestra el uso de CryptGetUserKey, CryptExportKey y funciones relacionadas.
+description: En el ejemplo siguiente se crea una clave de sesión aleatoria y se crea un blob de clave exportable. En el ejemplo se muestra el uso de CryptGetUserKey, CryptExportKey y funciones relacionadas.
 ms.assetid: a7f2fdd1-9514-4cda-bae2-2f379dd9a27d
-title: 'Programa C de ejemplo: exportar una clave de sesión'
+title: 'Programa de C de ejemplo: Exportación de una clave de sesión'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5252e5eced86dd4e671f5080cf6dab5e1ec96b9d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d10e3f8ea93d11460522383584d5847473a17497ad13ccfae72b0415e958bf52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103812829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140918"
 ---
-# <a name="example-c-program-exporting-a-session-key"></a>Programa C de ejemplo: exportar una clave de sesión
+# <a name="example-c-program-exporting-a-session-key"></a>Programa de C de ejemplo: Exportación de una clave de sesión
 
-En el ejemplo siguiente se crea una clave de sesión aleatoria y se crea un [*BLOB de clave*](../secgloss/k-gly.md)exportable. En el ejemplo se muestra el uso de [**CryptGetUserKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetuserkey), [**CryptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey)y funciones relacionadas.
+En el ejemplo siguiente se crea una clave de sesión aleatoria y se crea un [*blob de clave exportable.*](../secgloss/k-gly.md) En el ejemplo se muestra el uso de [**CryptGetUserKey,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetuserkey) [**CryptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey)y funciones relacionadas.
 
-En este ejemplo se muestran las siguientes tareas y funciones de CryptoAPI:
+En este ejemplo se muestran las siguientes tareas y funciones cryptoAPI:
 
--   Adquisición de un contexto de CSP mediante [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
+-   Adquisición de un contexto de CSP [**mediante CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
 -   Obtener acceso a dos pares diferentes de claves públicas y privadas mediante [**CryptGetUserKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetuserkey).
--   Generar una clave de sesión exportable mediante [**CryptGenKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey).
--   Creación de un [*BLOB de clave simple*](../secgloss/s-gly.md) que contenga una clave de sesión mediante [**CryptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey).
--   Destruir una clave de sesión y el acceso a los dos pares de claves pública y privada mediante [**CryptDestroyKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroykey).
+-   Generación de una clave de sesión exportable mediante [**CryptGenKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey).
+-   Crear un [*blob de clave simple*](../secgloss/s-gly.md) que contiene una clave de sesión mediante [**CryptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey).
+-   Destruir una clave de sesión y acceder a los dos pares de claves públicas y privadas mediante [**CryptDestroyKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroykey).
 -   Liberar el contexto de CSP mediante [**CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext).
 
-En este ejemplo se usa la función [**MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se enumeran en [funciones de de uso general](general-purpose-functions.md).
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código para esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

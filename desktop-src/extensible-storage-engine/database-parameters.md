@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: parámetros de base de datos'
+description: 'Más información sobre: Parámetros de base de datos'
 title: Parámetros de base de datos
 TOCTitle: Database Parameters
 ms:assetid: 8fb68748-8718-4393-9fd6-0d9adaa34844
@@ -15,26 +15,26 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8849096412fa77db107e3e866a20662bb2634665
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13de02c7d322933f64361cfdabcb8f95ead837ad915ad69c3961a8b8874d5b9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119117565"
 ---
 # <a name="database-parameters"></a>Parámetros de base de datos
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="database-parameters"></a>Parámetros de base de datos
 
-Este tema contiene los parámetros que se usan para la base de datos.
+Este tema contiene parámetros que se usan para la base de datos.
 
 *JET_paramCheckFormatWhenOpenFail*  
 44  
 
-Si se establece este parámetro, [JetInit](./jetinit-function.md) devolverá un error especial cuando se abra una base de datos o un registro de transacciones de una versión anterior del motor de base de datos. Estos errores son:
+Este parámetro, cuando se establece, hará que [JetInit](./jetinit-function.md) devuelva un error especial cuando se abre una base de datos o un registro de transacciones de una versión anterior del motor de base de datos. Estos errores son:
 
 <table>
 <colgroup>
@@ -50,21 +50,21 @@ Si se establece este parámetro, [JetInit](./jetinit-function.md) devolverá un 
 <tbody>
 <tr class="odd">
 <td><p>JET_errDatabase200Format</p></td>
-<td><p>Los archivos de base de datos o de registro de transacciones se crearon con el motor de base de datos en Windows NT 3,51.</p></td>
+<td><p>Los archivos de base de datos o de registro de transacciones se crearon con el motor de base de datos Windows NT 3.51.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errDatabase400Format</p></td>
-<td><p>Los archivos de base de datos o de registro de transacciones se crearon con el motor de base de datos en una versión de prueba anterior a Windows NT Server 4,0.</p></td>
+<td><p>Los archivos de base de datos o de registro de transacciones se crearon con el motor de base de datos en una versión de prueba anterior a Windows NT Server 4.0.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errDatabase500Format</p></td>
-<td><p>Los archivos de base de datos o de registro de transacciones se crearon con el motor de base de datos en Windows NT Server 4,0.</p></td>
+<td><p>Los archivos de base de datos o de registro de transacciones se crearon con el motor de base de datos Windows NT Server 4.0.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-**Windows Vista:**  En Windows Vista y versiones posteriores, este parámetro está obsoleto y no afecta al funcionamiento del motor de base de datos.
+**Windows Vista:**  Para Windows Vista y versiones posteriores, este parámetro está obsoleto y no afecta al funcionamiento del motor de base de datos.
 
 <table>
 <colgroup>
@@ -74,7 +74,7 @@ Si se establece este parámetro, [JetInit](./jetinit-function.md) devolverá un 
 <tbody>
 <tr class="odd">
 <td><p>Valor predeterminado:</p></td>
-<td><p>True</p></td>
+<td><p>Verdadero</p></td>
 </tr>
 <tr class="even">
 <td><p>Escriba:</p></td>
@@ -89,11 +89,11 @@ Si se establece este parámetro, [JetInit](./jetinit-function.md) devolverá un 
 <td><p>Instancia</p></td>
 </tr>
 <tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
+<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
 <td><p>Sí</p></td>
 </tr>
 <tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
+<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
@@ -114,7 +114,7 @@ Si se establece este parámetro, [JetInit](./jetinit-function.md) devolverá un 
 </tr>
 <tr class="odd">
 <td><p>Disponibilidad:</p></td>
-<td><p>All</p></td>
+<td><p>Todo</p></td>
 </tr>
 </tbody>
 </table>
@@ -123,9 +123,9 @@ Si se establece este parámetro, [JetInit](./jetinit-function.md) devolverá un 
 *JET_paramDatabasePageSize*  
 64  
 
-Este parámetro configura el tamaño de página para la base de datos. El tamaño de página es la unidad más pequeña de asignación de espacio posible para un archivo de base de datos. El tamaño de página de la base de datos también es muy importante, ya que establece el límite superior del tamaño de un registro individual en la base de datos.
+Este parámetro configura el tamaño de página de la base de datos. El tamaño de página es la unidad de espacio más pequeña posible para un archivo de base de datos. El tamaño de página de la base de datos también es muy importante porque establece el límite superior en el tamaño de un registro individual de la base de datos.
 
-**Nota:** En este momento, solo se admite un tamaño de página de base de datos por proceso. Esto significa que, si se encuentra en un único proceso que contiene diferentes aplicaciones que usan el motor de base de datos, todos deben aceptar un tamaño de página de base de datos.
+**Nota** En este momento, solo se admite un tamaño de página de base de datos por proceso. Esto significa que si está en un único proceso que contiene aplicaciones diferentes que usan el motor de base de datos, todos deben coincidir en un tamaño de página de base de datos.
 
 <table>
 <colgroup>
@@ -150,11 +150,11 @@ Este parámetro configura el tamaño de página para la base de datos. El tamañ
 <td><p>Global</p></td>
 </tr>
 <tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
+<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
+<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
@@ -175,7 +175,7 @@ Este parámetro configura el tamaño de página para la base de datos. El tamañ
 </tr>
 <tr class="odd">
 <td><p>Disponibilidad:</p></td>
-<td><p>All</p></td>
+<td><p>Todo</p></td>
 </tr>
 </tbody>
 </table>
@@ -184,7 +184,7 @@ Este parámetro configura el tamaño de página para la base de datos. El tamañ
 *JET_paramDbExtensionSize*  
 18  
 
-Este parámetro controla la cantidad de espacio que se agrega a un archivo de base de datos cada vez que necesita crecer para alojar más datos. El tamaño está en páginas de base de datos.
+Este parámetro controla la cantidad de espacio que se agrega a un archivo de base de datos cada vez que necesita crecer para dar cabida a más datos. El tamaño está en páginas de base de datos.
 
 <table>
 <colgroup>
@@ -209,13 +209,13 @@ Este parámetro controla la cantidad de espacio que se agrega a un archivo de ba
 <td><p>Instancia</p></td>
 </tr>
 <tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
+<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
 <td><p>Sí</p></td>
 </tr>
 <tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
+<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
 <td><p>No</p>
-<p><strong>Windows Vista:</strong>  En Windows Vista y versiones posteriores: sí</p></td>
+<p><strong>Windows Vista:</strong>  Para Windows Vista y versiones posteriores: Sí</p></td>
 </tr>
 <tr class="odd">
 <td><p>Afecta al diseño físico:</p></td>
@@ -235,7 +235,7 @@ Este parámetro controla la cantidad de espacio que se agrega a un archivo de ba
 </tr>
 <tr class="odd">
 <td><p>Disponibilidad:</p></td>
-<td><p>All</p></td>
+<td><p>Todo</p></td>
 </tr>
 </tbody>
 </table>
@@ -244,15 +244,15 @@ Este parámetro controla la cantidad de espacio que se agrega a un archivo de ba
 *JET_paramEnableIndexChecking*  
 45  
 
-Cuando este parámetro es true, todas las bases de datos se comprueban en el momento de la [JetAttachDatabase](./jetattachdatabase-function.md) para los índices de las columnas de clave Unicode compiladas con una versión anterior de la biblioteca NLS en el sistema operativo. Esto debe hacerse porque el motor de base de datos conserva las claves de ordenación generadas por [LCMapStringW](/windows/win32/api/winnls/nf-winnls-lcmapstringa) y el valor de estas claves de ordenación cambia de Release a Release.
+Cuando este parámetro es true, todas las bases de datos se comprueban a la hora de [JetAttachDatabase](./jetattachdatabase-function.md) en busca de índices sobre columnas de clave Unicode que se crearon con una versión anterior de la biblioteca NLS en el sistema operativo. Esto debe hacerse porque el motor de base de datos conserva las claves de ordenación generadas por [LCMapStringW](/windows/win32/api/winnls/nf-winnls-lcmapstringa) y el valor de estas claves de ordenación cambia de versión a versión.
 
-Si se detecta que un índice principal está en este estado, [JetAttachDatabase](./jetattachdatabase-function.md) siempre producirá un error con JET_errPrimaryIndexCorrupted.
+Si se detecta que un índice principal está en este estado, [JetAttachDatabase](./jetattachdatabase-function.md) siempre producirá un error JET_errPrimaryIndexCorrupted.
 
-Si se detecta que algún índice secundario está en este estado, hay dos resultados posibles. Si JET_bitDbDeleteCorruptIndexes se pasó a [JetAttachDatabase](./jetattachdatabase-function.md) , estos índices se eliminarán y JET_wrnCorruptIndexDeleted se devolverán desde [JetAttachDatabase](./jetattachdatabase-function.md). Estos índices deberán volver a crearse en la aplicación. Si JET_bitDbDeleteCorruptIndexes no se pasó a [JetAttachDatabase](./jetattachdatabase-function.md) , se producirá un error en la llamada con JET_errSecondaryIndexCorrupted.
+Si se detecta que algún índice secundario está en este estado, hay dos resultados posibles. Si JET_bitDbDeleteCorruptIndexes a [JetAttachDatabase,](./jetattachdatabase-function.md) estos índices se eliminarán y JET_wrnCorruptIndexDeleted se devolverán desde [JetAttachDatabase](./jetattachdatabase-function.md). La aplicación deberá volver a crear estos índices. Si JET_bitDbDeleteCorruptIndexes no se pasó a [JetAttachDatabase,](./jetattachdatabase-function.md) se producirá un error en la llamada JET_errSecondaryIndexCorrupted.
 
-**Nota:** Se recomienda encarecidamente que la aplicación establezca este parámetro en true.
+**Nota** Se recomienda encarecidamente que la aplicación establezca este parámetro en True.
 
-**Nota:** Se recomienda encarecidamente que las aplicaciones eviten el uso de columnas de clave Unicode en sus índices de clave principal (clúster).
+**Nota** Se recomienda encarecidamente que las aplicaciones eviten el uso de columnas de clave Unicode en sus índices de clave principal (agrupados).
 
 <table>
 <colgroup>
@@ -262,7 +262,7 @@ Si se detecta que algún índice secundario está en este estado, hay dos result
 <tbody>
 <tr class="odd">
 <td><p>Valor predeterminado:</p></td>
-<td><p>False</p></td>
+<td><p>Falso</p></td>
 </tr>
 <tr class="even">
 <td><p>Escriba:</p></td>
@@ -275,14 +275,14 @@ Si se detecta que algún índice secundario está en este estado, hay dos result
 <tr class="even">
 <td><p>Ámbito:</p></td>
 <td><p>Global</p>
-<p><strong>Windows Vista:</strong>  En Windows Vista y versiones posteriores: instancia</p></td>
+<p><strong>Windows Vista:</strong>  Para Windows Vista y versiones posteriores: Instancia</p></td>
 </tr>
 <tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
+<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
+<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
@@ -303,7 +303,7 @@ Si se detecta que algún índice secundario está en este estado, hay dos result
 </tr>
 <tr class="odd">
 <td><p>Disponibilidad:</p></td>
-<td><p>All</p></td>
+<td><p>Todo</p></td>
 </tr>
 </tbody>
 </table>
@@ -312,11 +312,11 @@ Si se detecta que algún índice secundario está en este estado, hay dos result
 *JET_paramEnableIndexCleanup*  
 54  
 
-Cuando este parámetro se establece en true, el motor de base de datos puede limpiar automáticamente los índices de las columnas de clave Unicode en el tiempo de [JetInit](./jetinit-function.md) , según sea necesario, para evitar cambios en el formato de la base de datos causados por cambios en la biblioteca NLS de Windows. Estos cambios se realizan habitualmente en la biblioteca NLS para agregar compatibilidad con nuevos idiomas, agregar caracteres que faltan a un idioma, agregar un orden de intercalación a un idioma o corregir errores en el orden de intercalación de un idioma. Estos cambios afectan a los criterios de ordenación generados por [LCMapStringW](/windows/win32/api/winnls/nf-winnls-lcmapstringa) que el motor de base de datos conserva como componentes de las claves de índice.
+Cuando este parámetro se establece en true, el motor de base de datos puede limpiar automáticamente los índices en columnas de clave Unicode en el momento [de JetInit](./jetinit-function.md) según sea necesario para evitar los cambios de formato de base de datos causados por cambios en la biblioteca NLS en Windows. Estos cambios se realizan de forma rutinaria en la biblioteca NLS para agregar compatibilidad con nuevos idiomas, para agregar caracteres que faltan a un idioma, para agregar un orden de intercalación a un idioma o para corregir errores en el orden de intercalación de un idioma. Estos cambios afectan a las claves de ordenación producidas por [LCMapStringW](/windows/win32/api/winnls/nf-winnls-lcmapstringa) que el motor de base de datos conserva como componentes de las claves de índice.
 
-Es importante saber que es posible que los cambios en el índice sean tan grandes que no sea posible realizar una limpieza incremental. En este caso, el índice se administrará como se indica en **JET_paramEnableIndexChecking**.
+Es importante tener en cuenta que es posible que los cambios en el índice sean tan grandes que no sea posible realizar una limpieza incremental. En este caso, el índice se controlará según lo prescrito **por JET_paramEnableIndexChecking**.
 
-**Nota:** Se recomienda encarecidamente que la aplicación establezca este parámetro y **JET_paramEnableIndexChecking** en **true** .
+**Nota** Se recomienda encarecidamente que la aplicación establezca **este parámetro JET_paramEnableIndexChecking** en **True.**
 
 <table>
 <colgroup>
@@ -326,7 +326,7 @@ Es importante saber que es posible que los cambios en el índice sean tan grande
 <tbody>
 <tr class="odd">
 <td><p>Valor predeterminado:</p></td>
-<td><p>True</p></td>
+<td><p>Verdadero</p></td>
 </tr>
 <tr class="even">
 <td><p>Escriba:</p></td>
@@ -341,13 +341,13 @@ Es importante saber que es posible que los cambios en el índice sean tan grande
 <td><p>Instancia</p></td>
 </tr>
 <tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
+<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
 <td><p>Sí</p></td>
 </tr>
 <tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
+<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
 <td><p>No</p>
-<p><strong>Windows Vista:</strong>  En Windows Vista y versiones posteriores: sí</p></td>
+<p><strong>Windows Vista:</strong>  Para Windows Vista y versiones posteriores: Sí</p></td>
 </tr>
 <tr class="odd">
 <td><p>Afecta al diseño físico:</p></td>
@@ -376,13 +376,13 @@ Es importante saber que es posible que los cambios en el índice sean tan grande
 *JET_paramOneDatabasePerSession*  
 102  
 
-Cuando este parámetro es true, solo se permite abrir una base de datos mediante [JetOpenDatabase](./jetopendatabase-function.md) por una sesión determinada al mismo tiempo. La base de datos temporal se excluye de esta restricción.
+Cuando este parámetro es true, solo se permite que una sesión determinada abra una base de datos mediante [JetOpenDatabase](./jetopendatabase-function.md) a la vez. La base de datos temporal se excluye de esta restricción.
 
 **Windows XP y Windows Server 2003:**  Este parámetro solo se escribe en Windows XP y Windows Server 2003.
 
-**Windows Vista:**  Este parámetro se comporta normalmente a partir de Windows Vista.
+**Windows Vista:**  Este parámetro se comporta normalmente a Windows Vista.
 
-**Nota:**  Este parámetro es de solo escritura.
+**Nota**  Este parámetro es de solo escritura.
 
 <table>
 <colgroup>
@@ -392,7 +392,7 @@ Cuando este parámetro es true, solo se permite abrir una base de datos mediante
 <tbody>
 <tr class="odd">
 <td><p>Valor predeterminado:</p></td>
-<td><p>False</p></td>
+<td><p>Falso</p></td>
 </tr>
 <tr class="even">
 <td><p>Escriba:</p></td>
@@ -407,12 +407,12 @@ Cuando este parámetro es true, solo se permite abrir una base de datos mediante
 <td><p>Global</p></td>
 </tr>
 <tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
+<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
 <td><p>No</p>
-<p><strong>Windows Vista:</strong>  En Windows Vista y versiones posteriores: sí</p></td>
+<p><strong>Windows Vista:</strong>  Para Windows Vista y versiones posteriores: Sí</p></td>
 </tr>
 <tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
+<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
@@ -442,11 +442,11 @@ Cuando este parámetro es true, solo se permite abrir una base de datos mediante
 *JET_paramEnableOnlineDefrag*  
 35  
 
-Este parámetro controla el comportamiento de la desfragmentación con conexión cuando se inicia mediante [JetDefragment](./jetdefragment-function.md). Consulte [JetDefragment](./jetdefragment-function.md) para obtener más información.
+Este parámetro controla el comportamiento de la desfragmentación en línea cuando se inicia [mediante JetDefragment](./jetdefragment-function.md). Consulte [JetDefragment para](./jetdefragment-function.md) obtener más información.
 
-Windows 2000: en Windows 2000, este parámetro era un valor booleano simple que canalizaría la desfragmentación en línea cuando lo inició [JetDefragment](./jetdefragment-function.md). Cuando se establece en **true**, la desfragmentación con conexión se realizará en los registros de cada tabla de la base de datos.
+Windows 2000: en Windows 2000, este parámetro era un booleano simple que podría iniciar la desfragmentación en línea cuando lo inicia [JetDefragment](./jetdefragment-function.md). Cuando se establece en **TRUE,** la desfragmentación en línea se realizará en los registros de cada tabla de la base de datos.
 
-**Windows XP:**  En Windows XP y versiones posteriores, este parámetro se puede establecer en una o varias de las opciones siguientes:
+**Windows XP:**  En Windows XP y versiones posteriores, este parámetro se puede establecer en una o varias de las siguientes opciones:
 
 <table>
 <colgroup>
@@ -462,27 +462,27 @@ Windows 2000: en Windows 2000, este parámetro era un valor booleano simple que 
 <tbody>
 <tr class="odd">
 <td><p>JET_OnlineDefragDisable</p></td>
-<td><p>No lleve a cabo la desfragmentación en línea. Es el binario equivalente a la configuración de Windows 2000 de false para este parámetro.</p></td>
+<td><p>No realice la desfragmentación en línea. Este es el binario equivalente al valor Windows 2000 de False para este parámetro.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_OnlineDefragAllOBSOLETE</p></td>
-<td><p>Realice una desfragmentación en línea completa. Es el binario equivalente a la configuración de Windows 2000 de true para este parámetro.</p></td>
+<td><p>Realizar una desfragmentación en línea completa. Este es el binario equivalente al valor Windows 2000 de True para este parámetro.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_OnlineDefragDatabases</p></td>
-<td><p>Realice una desfragmentación en línea de los registros de cada tabla en la base de datos.</p></td>
+<td><p>Realice la desfragmentación en línea de los registros de cada tabla de la base de datos.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_OnlineDefragSpaceTrees</p></td>
-<td><p>Realice una desfragmentación en línea de los árboles de espacio de cada tabla en la base de datos.</p></td>
+<td><p>Realice la desfragmentación en línea de los árboles de espacio de cada tabla de la base de datos.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_OnlineDefragStreamingFiles</p></td>
-<td><p>Este parámetro se usa para admitir la infraestructura de Microsoft Exchange y no está diseñado para usarse en la aplicación.</p></td>
+<td><p>Este parámetro se usa para admitir la infraestructura Exchange Microsoft y no está pensado para usarse en la aplicación.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_OnlineDefragAll</p></td>
-<td><p>Realice una desfragmentación en línea completa. Este es el equivalente conceptual del valor de Windows 2000 de true para este parámetro.</p></td>
+<td><p>Realizar una desfragmentación en línea completa. Este es el equivalente conceptual a la Windows 2000 de True para este parámetro.</p></td>
 </tr>
 </tbody>
 </table>
@@ -496,29 +496,29 @@ Windows 2000: en Windows 2000, este parámetro era un valor booleano simple que 
 <tbody>
 <tr class="odd">
 <td><p>Valor predeterminado:</p></td>
-<td><p><strong>Windows 2000:</strong>  Reales</p>
+<td><p><strong>Windows 2000:</strong>  Verdad</p>
 <p><strong>Windows XP: para Windows XP y versiones posteriores:</strong> JET_OnlineDefragAll</p></td>
 </tr>
 <tr class="even">
 <td><p>Escriba:</p></td>
-<td><p><strong>Windows 2000:</strong>  Booleano</p>
+<td><p><strong>Windows 2000:</strong>  Booleana</p>
 <p><strong>Windows XP y versiones posteriores:</strong>  JET_GRBIT (entero)</p></td>
 </tr>
 <tr class="odd">
 <td><p>Intervalo válido:</p></td>
-<td><p><strong>Windows 2000:</strong>  False, true</p>
-<p><strong>Windows XP y versiones posteriores:</strong>  0: JET_OnlineDefragAll</p></td>
+<td><p><strong>Windows 2000:</strong>  False, True</p>
+<p><strong>Windows XP y versiones posteriores:</strong> 0 – JET_OnlineDefragAll</p></td>
 </tr>
 <tr class="even">
 <td><p>Ámbito:</p></td>
 <td><p>Instancia</p></td>
 </tr>
 <tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
+<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
 <td><p>Sí</p></td>
 </tr>
 <tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
+<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
 <td><p>Sí</p></td>
 </tr>
 <tr class="odd">
@@ -539,7 +539,7 @@ Windows 2000: en Windows 2000, este parámetro era un valor booleano simple que 
 </tr>
 <tr class="odd">
 <td><p>Disponibilidad:</p></td>
-<td><p>All</p></td>
+<td><p>Todo</p></td>
 </tr>
 </tbody>
 </table>
@@ -566,18 +566,18 @@ Este parámetro es el umbral que usa el motor de base de datos para controlar la
 </tr>
 <tr class="odd">
 <td><p>Intervalo válido:</p></td>
-<td><p>de 0 a 2147483647</p></td>
+<td><p>0 – 2147483647</p></td>
 </tr>
 <tr class="even">
 <td><p>Ámbito:</p></td>
 <td><p>Instancia</p></td>
 </tr>
 <tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
+<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
 <td><p>Sí</p></td>
 </tr>
 <tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
+<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
@@ -598,7 +598,7 @@ Este parámetro es el umbral que usa el motor de base de datos para controlar la
 </tr>
 <tr class="odd">
 <td><p>Disponibilidad:</p></td>
-<td><p>All</p></td>
+<td><p>Todo</p></td>
 </tr>
 </tbody>
 </table>
@@ -607,7 +607,7 @@ Este parámetro es el umbral que usa el motor de base de datos para controlar la
 *JET_paramRecordUpgradeDirtyLevel*  
 78
 
-Este parámetro controla el modo en que el administrador de caché de páginas de base de datos escribirá una página de base de datos que se haya sometido a una conversión de formato en contexto. Estas conversiones de formato se producen sobre la marcha a medida que las páginas se cargan desde una base de datos que se creó con el motor de base de datos de Windows 2000, pero que usa Windows XP o una versión posterior del motor de base de datos.
+Este parámetro controla la agresividad con la que el administrador de caché de páginas de base de datos escribirá una página de base de datos que se ha sometido a una conversión de formato en su lugar. Estas conversiones de formato se producen sobre la marcha a medida que las páginas se cargan desde una base de datos que se creó con el motor de base de datos Windows 2000, pero que usa una versión de Windows XP o posterior del motor de base de datos.
 
 <table>
 <colgroup>
@@ -632,11 +632,11 @@ Este parámetro controla el modo en que el administrador de caché de páginas d
 <td><p>Global</p></td>
 </tr>
 <tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
+<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
 <td><p>Sí</p></td>
 </tr>
 <tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
+<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
 <td><p>Sí</p></td>
 </tr>
 <tr class="odd">
@@ -666,7 +666,7 @@ Este parámetro controla el modo en que el administrador de caché de páginas d
 *JET_paramWaypointLatency*  
 153  
 
-La latencia (en registros) detrás del registro de propinas más alto para aplazar los vaciados de las páginas de la base de datos. La habilitación de esta latencia puede permitir la recuperación de bases de datos en caso de una pérdida catastrófica del archivo de registro más reciente. Vea JET_bitReplayIgnoreLostLogs.
+Latencia (en registros) detrás de la sugerencia o el registro confirmado más alto para aplazar los vaciados de página de la base de datos. La habilitación de esta latencia puede permitir la recuperación de la base de datos en caso de pérdida grave del archivo de registro más reciente. Consulte JET_bitReplayIgnoreLostLogs.
 
 <table>
 <colgroup>
@@ -691,11 +691,11 @@ La latencia (en registros) detrás del registro de propinas más alto para aplaz
 <td><p>Instancia</p></td>
 </tr>
 <tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
+<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
 <td><p>Sí</p></td>
 </tr>
 <tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
+<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
@@ -716,7 +716,7 @@ La latencia (en registros) detrás del registro de propinas más alto para aplaz
 </tr>
 <tr class="odd">
 <td><p>Disponibilidad:</p></td>
-<td><p>Windows 7</p></td>
+<td><p>Windows 7</p></td>
 </tr>
 </tbody>
 </table>
@@ -725,7 +725,7 @@ La latencia (en registros) detrás del registro de propinas más alto para aplaz
 *JET_paramDefragmentSequentialBTrees*  
 160  
 
-Active o desactive la desfragmentación de árbol B secuencial automática.
+Activar o desactivar la desfragmentación secuencial automática del árbol B.
 
 <table>
 <colgroup>
@@ -750,11 +750,11 @@ Active o desactive la desfragmentación de árbol B secuencial automática.
 <td><p>Instancia</p></td>
 </tr>
 <tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
+<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
 <td><p>Sí</p></td>
 </tr>
 <tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
+<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
@@ -775,7 +775,7 @@ Active o desactive la desfragmentación de árbol B secuencial automática.
 </tr>
 <tr class="odd">
 <td><p>Disponibilidad:</p></td>
-<td><p>Windows 7</p></td>
+<td><p>Windows 7</p></td>
 </tr>
 </tbody>
 </table>
@@ -802,18 +802,18 @@ Determina la frecuencia con la que se comprueba la densidad del árbol B.
 </tr>
 <tr class="odd">
 <td><p>Intervalo válido:</p></td>
-<td><p>0: entero máximo</p></td>
+<td><p>Entero de 0-Max</p></td>
 </tr>
 <tr class="even">
 <td><p>Ámbito:</p></td>
 <td><p>Instancia</p></td>
 </tr>
 <tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
+<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
 <td><p>Sí</p></td>
 </tr>
 <tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
+<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
@@ -834,7 +834,7 @@ Determina la frecuencia con la que se comprueba la densidad del árbol B.
 </tr>
 <tr class="odd">
 <td><p>Disponibilidad:</p></td>
-<td><p>Windows 7</p></td>
+<td><p>Windows 7</p></td>
 </tr>
 </tbody>
 </table>
@@ -843,7 +843,7 @@ Determina la frecuencia con la que se comprueba la densidad del árbol B.
 *JET_paramIOThrottlingTimeQuanta*  
 162  
 
-Tiempo máximo, en milisegundos, que el mecanismo de limitación de e/s permite que una tarea se ejecute para que se considere "completada".
+Tiempo máximo, en milisegundos, que el mecanismo de limitación de E/S proporciona una tarea para que se ejecute para que se considere "completada".
 
 <table>
 <colgroup>
@@ -868,11 +868,11 @@ Tiempo máximo, en milisegundos, que el mecanismo de limitación de e/s permite 
 <td><p>Global</p></td>
 </tr>
 <tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
+<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
 <td><p>Sí</p></td>
 </tr>
 <tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
+<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
@@ -893,7 +893,7 @@ Tiempo máximo, en milisegundos, que el mecanismo de limitación de e/s permite 
 </tr>
 <tr class="odd">
 <td><p>Disponibilidad:</p></td>
-<td><p>Windows 7</p></td>
+<td><p>Windows 7</p></td>
 </tr>
 </tbody>
 </table>
@@ -912,12 +912,12 @@ Tiempo máximo, en milisegundos, que el mecanismo de limitación de e/s permite 
 <td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Server</strong></p></td>
+<td><p><strong>Servidor</strong></p></td>
 <td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
+<td><p>Declarado en Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

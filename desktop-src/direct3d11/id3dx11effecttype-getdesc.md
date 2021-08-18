@@ -1,5 +1,5 @@
 ---
-title: Método ID3DX11EffectType GetDesc (D3dx11effect. h)
+title: Método Id3DX11EffectType GetDesc (D3dx11effect.h)
 description: Obtiene una descripción del tipo de efecto.
 ms.assetid: 08a8a1b6-fe2d-431b-a0e4-d628f0ceb1a0
 keywords:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c1ee52e4c6628c00b0155e5bd3081b6c4fd8c46
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 381f885a15dede6a500e82b08a1f24e4f0542ffa46211e5b68ef7f73f40d0f0b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119460785"
 ---
-# <a name="id3dx11effecttypegetdesc-method"></a>ID3DX11EffectType:: GetDesc (método)
+# <a name="id3dx11effecttypegetdesc-method"></a>Método ID3DX11EffectType::GetDesc
 
 Obtiene una descripción del tipo de efecto.
 
@@ -46,9 +46,9 @@ HRESULT GetDesc(
 *pDesc* 
 </dt> <dd>
 
-Tipo: **[ **efecto de D3DX11 \_ \_ tipo \_ DESC**](d3dx11-effect-type-desc.md)\***
+Tipo: **[ **D3DX11 \_ EFFECT \_ TYPE \_ DESC**](d3dx11-effect-type-desc.md)\***
 
-Puntero a una descripción de tipo de efecto. Consulte [**D3DX11 \_ Effect \_ Type \_ DESC**](d3dx11-effect-type-desc.md).
+Puntero a una descripción de tipo de efecto. Vea [**D3DX11 \_ EFFECT TYPE \_ \_ DESC**](d3dx11-effect-type-desc.md).
 
 </dd> </dl>
 
@@ -56,14 +56,14 @@ Puntero a una descripción de tipo de efecto. Consulte [**D3DX11 \_ Effect \_ Ty
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Observaciones
 
 La descripción de la variable de efecto contiene datos sobre el nombre, las anotaciones, la semántica, las marcas y el desplazamiento del búfer del tipo de efecto.
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -73,8 +73,8 @@ La descripción de la variable de efecto contiene datos sobre el nombre, las ano
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

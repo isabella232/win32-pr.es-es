@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: BytesColumnValue. Size (propiedad)'
-title: BytesColumnValue. Size (propiedad)
+description: Más información sobre la propiedad BytesColumnValue.Size
+title: Propiedad BytesColumnValue.Size
 TOCTitle: 'Size property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.BytesColumnValue.Size
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.bytescolumnvalue.size(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 36f6aee31c5fdb61ac124904d07ee59f39728be4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 434356528756cc6cf3c96c474854d502912672ebfcb24c83718bc5c5861b3985
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982828"
 ---
-# <a name="bytescolumnvaluesize-property"></a>BytesColumnValue. Size (propiedad)
+# <a name="bytescolumnvaluesize-property"></a>Propiedad BytesColumnValue.Size
 
-Obtiene el tamaño del valor de la columna. Esto devuelve 0 para las columnas de tamaño variable (es decir, binary y String).
+Obtiene el tamaño del valor de la columna. Esto devuelve 0 para las columnas de tamaño variable (es decir, binario y cadena).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -57,7 +57,7 @@ protected override int Size { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -65,6 +65,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Clase BytesColumnValue](./bytescolumnvalue-class.md)
 
-[Miembros de BytesColumnValue](./bytescolumnvalue-members.md)
+[Miembros BytesColumnValue](./bytescolumnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

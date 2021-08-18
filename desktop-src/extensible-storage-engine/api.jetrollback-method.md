@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetRollback (método)'
-title: Método API. JetRollback
+description: Más información sobre el método Api.JetRollback
+title: Método Api.JetRollback
 TOCTitle: 'JetRollback method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetRollback(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.RollbackTransactionGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetrollback(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9144bade272ddaea7501be5622c7263268c0f1fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 099afa55f6b47d014bccf3ab354ed3c3e5e05d0229aa034a13f467062fa808aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983215"
 ---
-# <a name="apijetrollback-method"></a>Método API. JetRollback
+# <a name="apijetrollback-method"></a>Método Api.JetRollback
 
-Deshace los cambios realizados en el estado de la base de datos y vuelve al último punto de almacenamiento. JetRollback también cerrará los cursores abiertos durante el punto de almacenamiento. Si el punto de almacenamiento más externo se deshace, la sesión finalizará la transacción.
+Deshace los cambios realizados en el estado de la base de datos y vuelve al último punto de guardado. JetRollback también cerrará los cursores abiertos durante el punto de guardado. Si se desecha el punto de guardado más externo, la sesión cerrará la transacción.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,14 +61,14 @@ public static void JetRollback(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sesión para la que se va a revertir la transacción.
+    Sesión para la que se revierte la transacción.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. RollbackTransactionGrbit](./rollbacktransactiongrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.RollbackTransactionGrbit](./rollbacktransactiongrbit-enumeration.md)  
     
     Opciones de reversión.
 
@@ -78,6 +78,6 @@ public static void JetRollback(
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

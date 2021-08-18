@@ -1,9 +1,9 @@
 ---
-title: copiar comando
-description: El comando copiar copia los datos en el portapapeles. Los dispositivos de vídeo digital reconocen este comando.
+title: comando copy
+description: El comando copy copia los datos en el Portapapeles. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: 4f7b5be6-12c3-43a0-bac9-19eb49384330
 keywords:
-- copiar comando de Windows multimedia
+- comando copy Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6f08c764cb12b1cdca4c1876e6a22220a5c7522
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d3d103aae14b9dc13bb0d7d210d0412db993210bc788fa7fedd1a48a7216d59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144788"
 ---
-# <a name="copy-command"></a>copiar comando
+# <a name="copy-command"></a>comando copy
 
-El comando copiar copia los datos en el portapapeles. Los dispositivos de vídeo digital reconocen este comando.
+El comando copy copia los datos en el Portapapeles. Los dispositivos de vídeo digital reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -49,17 +49,17 @@ Identificador de un dispositivo MCI. Este identificador o alias se asigna cuando
 <span id="lpszItem"></span><span id="lpszitem"></span><span id="LPSZITEM"></span>*lpszItem*
 </dt> <dd>
 
-Una de las marcas siguientes que identifican el elemento que se va a copiar.
+Una de las siguientes marcas identifica el elemento que se copiará.
 
 
 
 | Value                 | Significado                                                                                                                                                                                                                                   |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| en el *rectángulo*        | Especifica la parte de cada fotograma que se copiará. Si se omite, el valor predeterminado es todo el marco.                                                                                                                             |
-| *secuencia* de flujo de audio | Especifica la secuencia de audio en el área de trabajo afectada por el comando. Si usa esta marca y también quiere copiar vídeo, también debe usar la marca "secuencia de vídeo". (Si no se especifica ninguna marca, se copian todas las secuencias de audio y vídeo). |
-| desde la *posición*       | Especifica el inicio del intervalo copiado. Si se omite, el valor predeterminado es la posición actual.                                                                                                                                         |
-| para *colocar*         | Especifica el final del intervalo copiado. Los datos de audio y vídeo copiados son exclusivos de esta posición. Si se omite, el valor predeterminado es el final del área de trabajo.                                                                       |
-| *secuencia* de flujo de vídeo | Especifica la secuencia de vídeo en el área de trabajo afectada por el comando. Si usa esta marca y también quiere copiar audio, también debe usar la marca de "secuencia de audio". (Si no se especifica ninguna marca, se copian todas las secuencias de audio y vídeo). |
+| en *rectángulo*        | Especifica la parte de cada fotograma que se va a copiar. Si se omite, la configuración predeterminada es todo el marco.                                                                                                                             |
+| secuencia *de* audio | Especifica la secuencia de audio en el área de trabajo afectada por el comando . Si usa esta marca y también desea copiar vídeo, también debe usar la marca "secuencia de vídeo". (Si no se especifica ninguna marca, se copian todas las secuencias de audio y vídeo). |
+| desde *la posición*       | Especifica el inicio del intervalo copiado. Si se omite, la configuración predeterminada es la posición actual.                                                                                                                                         |
+| para *colocar*         | Especifica el final del intervalo copiado. Los datos de audio y vídeo copiados son exclusivos de esta posición. Si se omite, la configuración predeterminada es el final del área de trabajo.                                                                       |
+| secuencia de *vídeo* | Especifica la secuencia de vídeo en el área de trabajo afectada por el comando . Si usa esta marca y también desea copiar audio, también debe usar la marca "secuencia de audio". (Si no se especifica ninguna marca, se copian todas las secuencias de audio y vídeo). |
 
 
 
@@ -70,13 +70,13 @@ Una de las marcas siguientes que identifican el elemento que se va a copiar.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify", "Test" o una combinación de estos. Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify", "test" o una combinación de estos. Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,10 +93,10 @@ Devuelve cero si es correcto o un error en caso contrario.
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> </dl>
 
  

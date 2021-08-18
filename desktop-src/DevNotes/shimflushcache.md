@@ -1,7 +1,7 @@
 ---
-description: Vacía la caché de la base de datos de correcciones de compatibilidad. Se debe llamar a esta función después de instalar una nueva base de datos de correcciones de compatibilidad.
+description: Vacía la memoria caché de la base de datos shim. Se debe llamar a esta función después de instalar una nueva base de datos shim.
 ms.assetid: 7e5bbdca-7b58-4c51-9cd1-105b05ee7fbe
-title: ShimFlushCache función)
+title: Función ShimFlushCache
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 35e279c5036142ec87c5bad6d7c512388033bc94
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ecf1291b7fdcfb43170ec7e269fa140c321fafdbc09989fc7ee2b392f11c1160
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104080086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075919"
 ---
-# <a name="shimflushcache-function"></a>ShimFlushCache función)
+# <a name="shimflushcache-function"></a>Función ShimFlushCache
 
-Vacía la caché de la base de datos de correcciones de compatibilidad. Se debe llamar a esta función después de instalar una nueva base de datos de correcciones de compatibilidad.
+Vacía la memoria caché de la base de datos shim. Se debe llamar a esta función después de instalar una nueva base de datos shim.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,39 +42,39 @@ BOOL WINAPI ShimFlushCache(
 
 <dl> <dt>
 
-*hWnd* \[ en, opcional\]
+*hwnd* \[ in, opcional\]
 </dt> <dd>
 
-Sin usar debe ser 0.
+Sin usar; debe ser 0.
 
 </dd> <dt>
 
-*hInstance* \[ en, opcional\]
+*hInstance* \[ in, opcional\]
 </dt> <dd>
 
-Sin usar debe ser 0.
+Sin usar; debe ser 0.
 
 </dd> <dt>
 
-*lpszCmdLine* \[ en, opcional\]
+*lpszCmdLine* \[ in, opcional\]
 </dt> <dd>
 
-Sin usar debe ser 0.
+Sin usar; debe ser 0.
 
 </dd> <dt>
 
-*nCmdShow* \[ de\]
+*nCmdShow* \[ En\]
 </dt> <dd>
 
-Sin usar debe ser 0.
+Sin usar; debe ser 0.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve **true** si se ejecuta correctamente o **false** en caso de error.
+La función devuelve **TRUE si** se ejecuta correctamente o **FALSE** en caso de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El autor de la llamada debe ser un administrador.
 
@@ -84,8 +84,8 @@ El autor de la llamada debe ser un administrador.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

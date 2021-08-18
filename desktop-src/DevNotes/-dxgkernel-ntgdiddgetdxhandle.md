@@ -1,7 +1,7 @@
 ---
-description: Devuelve el identificador de la API de Microsoft DirectX de modo kernel que se va a usar en las llamadas posteriores a los puntos de entrada de modo kernel que controlan el mecanismo de la API de DirectX.
+description: Devuelve el identificador de la API de Microsoft DirectX en modo kernel que se usará en llamadas posteriores a los puntos de entrada en modo kernel que controlan el mecanismo de LA API de DirectX.
 ms.assetid: c95cb188-305f-4b60-be55-0511b57f0597
-title: Función NtGdiDdGetDxHandle (Ntgdi. h)
+title: Función NtGdiDdGetDxHandle (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: f1b304216c518765be73d9f3a3e63d39ec4b37fb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 13234c7ebe350f096164f0a5de0bde7a60e819e80899aa87258a76727855b869
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119331925"
 ---
-# <a name="ntgdiddgetdxhandle-function"></a>NtGdiDdGetDxHandle función)
+# <a name="ntgdiddgetdxhandle-function"></a>Función NtGdiDdGetDxHandle
 
-\[Esta función está sujeta a cambios en cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios del sistema operativo y ocultan muchas otras dificultades para interactuar directamente con los controladores de pantalla.\]
+\[Esta función está sujeta a cambios con cada revisión del sistema operativo. En su lugar, use Microsoft DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios en el sistema operativo y ocultan muchas otras dificultades implicadas en la interacción directa con los controladores de pantalla.\]
 
-Devuelve el identificador de la API de Microsoft DirectX de modo kernel que se va a usar en las llamadas posteriores a los puntos de entrada de modo kernel que controlan el mecanismo de la API de DirectX.
+Devuelve el identificador de la API de Microsoft DirectX en modo kernel que se usará en llamadas posteriores a los puntos de entrada en modo kernel que controlan el mecanismo de LA API de DirectX.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,34 +46,34 @@ DWORD APIENTRY NtGdiDdGetDxHandle(
 
 <dl> <dt>
 
-*hDirectDraw* \[ de\]
+*hDirectDraw* \[ En\]
 </dt> <dd>
 
-Identificador del objeto DirectDraw propietario de la superficie. Este parámetro es opcional y se puede establecer en **null**.
+Identificador del objeto DirectDraw que posee la superficie. Este parámetro es opcional y se puede establecer en **NULL.**
 
 </dd> <dt>
 
-*hSurface* \[ de\]
+*hSurface* \[ En\]
 </dt> <dd>
 
-Identificador de la superficie para la que se va a devolver un identificador de API de DirectX en modo kernel. Este parámetro es opcional y se puede establecer en **null**.
+Identificador en superficie para el que se va a devolver un identificador de LA API de DirectX en modo kernel. Este parámetro es opcional y se puede establecer en **NULL.**
 
 </dd> <dt>
 
-*bRelease* \[ de\]
+*bRelease* \[ En\]
 </dt> <dd>
 
-Establézcalo en **true** si se debe liberar la interfaz del modo kernel de la API de DirectX. En caso contrario, **false**.
+Establezca en **TRUE si** se debe liberar la interfaz de modo kernel de la API de DirectX. De lo contrario, **FALSE**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Un identificador de API de DirectX que se usa en los siguientes puntos de entrada de kernel orientados a API de DirectX.
+Un identificador de API de DirectX que se usa en puntos de entrada de kernel orientados a la API de DirectX posteriores.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si se especifican *hDirectDraw* y *hSurface* , se omite *hSurface* .
+Si se *especifican hDirectDraw* y *hSurface,* se omite *hSurface.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,7 +83,7 @@ Si se especifican *hDirectDraw* y *hSurface* , se omite *hSurface* .
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -91,7 +91,7 @@ Si se especifican *hDirectDraw* y *hSurface* , se omite *hSurface* .
 
 <dl> <dt>
 
-[Compatibilidad con clientes de nivel inferior de gráficos](-dxgkernel-low-level-client-support.md)
+[Compatibilidad con clientes de bajo nivel de gráficos](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

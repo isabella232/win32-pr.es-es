@@ -1,15 +1,15 @@
 ---
-description: El evento DVDNotify notifica a una aplicación de muchos eventos de DVD e instrucciones de disco diferentes.
+description: El evento DVDNotify notifica a una aplicación muchos eventos de DVD e instrucciones de disco diferentes.
 ms.assetid: 8e7d85fb-95c0-472d-ab17-a82da303b68f
-title: DVDNotify (Segment. h)
+title: DVDNotify (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b31a2974bec428cb8ffe290edc9a384445e42070
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 988deaf53fb2b50555b4cf19a38684610aa0822a270dfba079defab92ce8aec0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148708"
 ---
 # <a name="dvdnotify"></a>DVDNotify
 
@@ -18,7 +18,7 @@ ms.locfileid: "105680443"
 
  
 
-El `DVDNotify` evento notifica a una aplicación de muchos eventos de DVD e instrucciones de disco diferentes.
+El `DVDNotify` evento notifica a una aplicación muchos eventos de DVD diferentes e instrucciones de disco.
 
 ``` syntax
 DVDNotify(EventCode, Param1, Param2)
@@ -35,7 +35,7 @@ Especifica el código de notificación de eventos de DVD.
 
 </dd> <dt>
 
-<span id="Param1"></span><span id="param1"></span><span id="PARAM1"></span>*Parámetro1*
+<span id="Param1"></span><span id="param1"></span><span id="PARAM1"></span>*Param1*
 </dt> <dd>
 
 Puede contener información adicional relacionada con el evento.
@@ -49,9 +49,9 @@ Puede contener información adicional relacionada con el evento.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los [códigos de notificación de eventos de DVD](dvd-notification-codes.md) proporcionan una explicación completa de todos los códigos de notificación de eventos de DVD y sus parámetros.
+[Los códigos de notificación de eventos de DVD](dvd-notification-codes.md) dan una explicación completa de todos los códigos de notificación de eventos de DVD y sus parámetros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Los [códigos de notificación de eventos de DVD](dvd-notification-codes.md) pro
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Segmento. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Propiedad MonthlyDOWTrigger. MonthsOfYear
-description: En el caso de scripting, obtiene o establece los meses del año en los que se ejecuta la tarea. | Propiedad MonthlyDOWTrigger. MonthsOfYear
+title: MonthlyDOWTrigger.MonthsOfYear, propiedad
+description: Para el scripting, obtiene o establece los meses del año durante los que se ejecuta la tarea. | MonthlyDOWTrigger.MonthsOfYear, propiedad
 ms.assetid: 4ab7ab43-9c9b-4cd3-be8f-1989b83e8cf3
 keywords:
-- Programador de tareas de la propiedad MonthsOfYear
-- Programador de tareas de la propiedad MonthsOfYear, objeto MonthlyDOWTrigger
-- Programador de tareas de objeto MonthlyDOWTrigger, propiedad MonthsOfYear
+- Propiedades MonthsOfYear Programador de tareas
+- Propiedad MonthsOfYear Programador de tareas objeto , MonthlyDOWTrigger
+- Objeto MonthlyDOWTrigger Programador de tareas propiedad , MonthsOfYear
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c345cd3de12d7dba3450f62bdb18bfdcee496b13
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7f8dc9752cf241218a95a9816824bc6ccf560f47c3445df9e5f40406381de3b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103914597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119253831"
 ---
-# <a name="monthlydowtriggermonthsofyear-property"></a>Propiedad MonthlyDOWTrigger. MonthsOfYear
+# <a name="monthlydowtriggermonthsofyear-property"></a>MonthlyDOWTrigger.MonthsOfYear, propiedad
 
-En el caso de scripting, obtiene o establece los meses del año en los que se ejecuta la tarea.
+Para el scripting, obtiene o establece los meses del año durante los que se ejecuta la tarea.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,7 +38,7 @@ MonthlyDOWTrigger.MonthsOfYear As short
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Máscara bit a bit que indica los meses del año en los que se ejecuta la tarea.
+Máscara bit a bit que indica los meses del año durante los que se ejecuta la tarea.
 
 ## <a name="remarks"></a>Observaciones
 
@@ -46,7 +46,7 @@ En la tabla siguiente se muestra la asignación de la máscara bit a bit utiliza
 
 
 
-| Mes     | Valor hexadecimal | Valor decimal |
+| Month (Mes)     | Valor hexadecimal | Valor decimal |
 |-----------|-----------|---------------|
 | January   | 0X01      | 1             |
 | February  | 0x02      | 2             |
@@ -65,7 +65,7 @@ En la tabla siguiente se muestra la asignación de la máscara bit a bit utiliza
 
  
 
-Al leer o escribir XML para una tarea, los meses del año de un calendario mensual de día de la semana se especifican mediante el elemento [**months**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) del esquema de programador de tareas.
+Al leer o escribir XML para una tarea, el elemento [**Months**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) del esquema de Programador de tareas especifica los meses del año de un calendario mensual del día de la semana.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,9 +73,9 @@ Al leer o escribir XML para una tarea, los meses del año de un calendario mensu
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

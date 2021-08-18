@@ -1,19 +1,19 @@
 - name: Marco biométrico de Windows
   href: biometric-service-api-portal.md
   items:
-    - name: Información general sobre el marco biométrico
+    - name: Introducción al marco biométrico
       href: biometric-framework-overview.md
       items:
-        - name: Terminología de los marcos biométricos
+        - name: Terminología del marco biométrico
           href: biometric-framework-terminology.md
-        - name: Seguridad de .NET Framework
+        - name: Seguridad del marco
           href: framework-security.md
           items:
-            - name: Requisitos del sensor para la biometría segura
+            - name: Requisitos del sensor para la biométrica segura
               href: sensor-requirements-for-secure-biometrics.md
         - name: Arquitectura de complementos
           href: plug-in-architecture.md
-    - name: Crear complementos de adaptador
+    - name: Creación de complementos de adaptador
       href: creating-adapter-plug-ins.md
       items:
         - name: Flujo de trabajo del adaptador
@@ -22,7 +22,7 @@
           href: creating-an-engine-adapter.md
         - name: Creación de un adaptador de sensor
           href: creating-a-sensor-adapter.md
-        - name: Creación de un adaptador de almacenamiento
+        - name: Crear un adaptador de Storage
           href: creating-a-storage-adapter.md
     - name: Creación de un grupo de sensores privados
       href: creating-a-private-sensor-pool.md
@@ -46,7 +46,7 @@
           href: private-pool-helper-functions.md
         - name: Crear aplicaciones cliente
           href: creating-client-applications.md
-    - name: Referencia de API de Plataforma de biometría de Windows
+    - name: Windows Referencia de LA API del marco biométrico
       href: biometric-service-api-reference.md
       items:
         - name: Referencia de la aplicación cliente
@@ -217,7 +217,7 @@
                   href: winbio-unit-schema.md
                 - name: WINBIO_VERSION
                   href: winbio-version.md
-            - name: Enumeraciones de aplicación cliente
+            - name: Enumeraciones de aplicaciones cliente
               href: client-application-enumerations.md
               items:
                 - name: WINBIO_ANTI_SPOOF_POLICY_ACTION
@@ -232,7 +232,7 @@
                   href: winbio-credential-type.md
                 - name: WINBIO_POLICY_SOURCE
                   href: winbio-policy-source.md
-            - name: Uniones de aplicación cliente
+            - name: Uniones de aplicaciones cliente
               href: client-application-unions.md
               items:
                 - name: WINBIO_PRESENCE_PROPERTIES
@@ -240,85 +240,85 @@
             - name: Constantes de aplicación cliente
               href: client-application-constants.md
               items:
-                - name: Constantes de BIO_UNIT
+                - name: BIO_UNIT constantes
                   href: bio-unit-constants.md
                 - name: Códigos de error de cliente
                   href: client-error-codes.md
                 - name: Constantes generales
                   href: general-constants.md
-                - name: Constantes de WINBIO_ANSI_381_FORMAT
+                - name: WINBIO_ANSI_381_FORMAT constantes
                   href: winbio-ansi-381-format-constants.md
-                - name: Constantes de WINBIO_ANSI_381_IMG
+                - name: WINBIO_ANSI_381_IMG constantes
                   href: winbio-ansi-381-img-constants.md
-                - name: Constantes de WINBIO_ANSI_381_IMG_ACQ
+                - name: WINBIO_ANSI_381_IMG_ACQ constantes
                   href: winbio-ansi-381-img-acq-constants.md
-                - name: Constantes de WINBIO_ANSI_381_IMP_TYPE
+                - name: WINBIO_ANSI_381_IMP_TYPE constantes
                   href: winbio-ansi-381-imp-type-constants.md
-                - name: Constantes de WINBIO_ANSI_381_PIXELS
+                - name: WINBIO_ANSI_381_PIXELS constantes
                   href: winbio-ansi-381-pixels-constants.md
-                - name: Constantes de huella digital WINBIO_ANSI_381_POS
+                - name: WINBIO_ANSI_381_POS constantes de huella digital
                   href: winbio-ansi-381-pos-fingerprint-constants.md
-                - name: WINBIO_ANSI_381_POS de las constantes de Palm
+                - name: WINBIO_ANSI_381_POS constantes de palm
                   href: winbio-ansi-381-pos-palm-constants.md
-                - name: Constantes de WINBIO_ANSI_385_FACE
+                - name: WINBIO_ANSI_385_FACE constantes
                   href: winbio-ansi-385-face-constants.md
-                - name: Constantes de WINBIO_BIOMETRIC_SENSOR_SUBTYPE
+                - name: WINBIO_BIOMETRIC_SENSOR_SUBTYPE constantes
                   href: winbio-biometric-sensor-subtype-constants.md
-                - name: Constantes de WINBIO_BIOMETRIC_SUBTYPE
+                - name: WINBIO_BIOMETRIC_SUBTYPE constantes
                   href: winbio-biometric-subtype-constants.md
-                - name: Constantes de WINBIO_BIOMETRIC_TYPE
+                - name: WINBIO_BIOMETRIC_TYPE constantes
                   href: winbio-biometric-type-constants.md
-                - name: Constantes de WINBIO_BIR_DATA_FLAGS
+                - name: WINBIO_BIR_DATA_FLAGS constantes
                   href: winbio-bir-data-flags-constants.md
-                - name: Constantes de WINBIO_BIR_FIELD
+                - name: WINBIO_BIR_FIELD constantes
                   href: winbio-bir-field-constants.md
-                - name: Constantes de WINBIO_BIR_PURPOSE
+                - name: WINBIO_BIR_PURPOSE constantes
                   href: winbio-bir-purpose-constants.md
-                - name: Constantes de WINBIO_BIR_QUALITY
+                - name: WINBIO_BIR_QUALITY constantes
                   href: winbio-bir-quality-constants.md
-                - name: Constantes de WINBIO_BIR_VERSION
+                - name: WINBIO_BIR_VERSION constantes
                   href: winbio-bir-version-constants.md
-                - name: Constantes de WINBIO_CAPABILITY
+                - name: WINBIO_CAPABILITY constantes
                   href: winbio-capability-constants.md
-                - name: Constantes de WINBIO_COMPONENT
+                - name: WINBIO_COMPONENT constantes
                   href: winbio-component-constants.md
-                - name: Constantes de WINBIO_DATABASE_TYPE
+                - name: WINBIO_DATABASE_TYPE constantes
                   href: winbio-database-type-constants.md
-                - name: Constantes de WINBIO_DB
+                - name: WINBIO_DB constantes
                   href: winbio-db-constants.md
-                - name: Constantes de WINBIO_ENG_CAP
+                - name: WINBIO_ENG_CAP constantes
                   href: winbio-eng-cap-constants.md
-                - name: Constantes de WINBIO_EVENT
+                - name: WINBIO_EVENT constantes
                   href: winbio-event-constants.md
-                - name: Constantes de WINBIO_FLAG
+                - name: WINBIO_FLAG constantes
                   href: winbio-flag-constants.md
-                - name: Constantes de WINBIO_FRAMEWORK_CHANGE
+                - name: WINBIO_FRAMEWORK_CHANGE constantes
                   href: winbio-framework-change-constants.md
-                - name: Constantes de WINBIO_IDENTITY_TYPE
+                - name: WINBIO_IDENTITY_TYPE constantes
                   href: winbio-identity-type-constants.md
-                - name: Constantes de WINBIO_INDICATOR_STATUS
+                - name: WINBIO_INDICATOR_STATUS constantes
                   href: winbio-indicator-status-constants.md
-                - name: Constantes de WINBIO_NO_FORMAT
+                - name: WINBIO_NO_FORMAT constantes
                   href: winbio-no-format-constants.md
-                - name: Constantes de WINBIO_IRIS
+                - name: WINBIO_IRIS constantes
                   href: winbio-iris-constants.md
-                - name: Constantes de WINBIO_OPERATION_TYPE
+                - name: WINBIO_OPERATION_TYPE constantes
                   href: winbio-operation-type-constants.md
-                - name: Constantes de WINBIO_ORIENTATION
+                - name: WINBIO_ORIENTATION constantes
                   href: winbio-orientation-constants.md
-                - name: Constantes de WINBIO_POOL
+                - name: WINBIO_POOL constantes
                   href: winbio-pool-constants.md
-                - name: Constantes de WINBIO_PRESENCE_CHANGE
+                - name: WINBIO_PRESENCE_CHANGE constantes
                   href: winbio-presence-change-constants.md
-                - name: Constantes de WINBIO_PROPERTY
+                - name: WINBIO_PROPERTY constantes
                   href: winbio-property-constants.md
-                - name: Constantes de WINBIO_PROPERTY_TYPE
+                - name: WINBIO_PROPERTY_TYPE constantes
                   href: winbio-property-type-constants.md
-                - name: Constantes de WINBIO_REJECT_DETAIL
+                - name: WINBIO_REJECT_DETAIL constantes
                   href: winbio-reject-detail-constants.md
-                - name: Constantes de WINBIO_SENSOR_MODE
+                - name: WINBIO_SENSOR_MODE constantes
                   href: winbio-sensor-mode-constants.md
-                - name: Constantes de WINBIO_SETTING_SOURCE
+                - name: WINBIO_SETTING_SOURCE constantes
                   href: winbio-setting-source-constants.md
         - name: Referencia del complemento
           href: plug-in-reference.md
@@ -373,7 +373,7 @@
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_pipeline_cleanup_fn
                     - name: EngineAdapterPipelineInit
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_pipeline_init_fn
-                    - name: EngineAdapterQueryCalibrationData
+                    - name: EngineAdapterQuery YabrationData
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_query_calibration_data_fn
                     - name: EngineAdapterQueryExtendedEnrollmentStatus
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_query_extended_enrollment_status_fn
@@ -389,7 +389,7 @@
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_query_sample_hint_fn
                     - name: EngineAdapterRefreshCache
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_refresh_cache_fn
-                    - name: EngineAdapterSelectCalibrationFormat
+                    - name: EngineAdapterSelectElecbrationFormat
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_select_calibration_format_fn
                     - name: EngineAdapterSetAccountPolicy
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_set_account_policy_fn
@@ -408,7 +408,7 @@
                 - name: Funciones del adaptador de sensor
                   href: sensor-adapter-functions.md
                   items:
-                    - name: SensorAdapterAcceptCalibrationData
+                    - name: SensorAdapterAccept YabrationData
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_accept_calibration_data_fn
                     - name: SensorAdapterActivate
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_activate_fn
@@ -440,7 +440,7 @@
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_pipeline_init_fn
                     - name: SensorAdapterPushDataToEngine
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_push_data_to_engine_fn
-                    - name: SensorAdapterQueryCalibrationFormats
+                    - name: SensorAdapterQuery YabrationFormats
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_query_calibration_formats_fn
                     - name: SensorAdapterQueryExtendedInfo
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_query_extended_info_fn
@@ -448,7 +448,7 @@
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_query_status_fn
                     - name: SensorAdapterReset
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_reset_fn
-                    - name: SensorAdapterSetCalibrationFormat
+                    - name: SensorAdapterSet YabrationFormat
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_set_calibration_format_fn
                     - name: SensorAdapterSetIndicatorStatus
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_set_indicator_status_fn
@@ -458,7 +458,7 @@
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_start_capture_fn
                     - name: WbioQuerySensorInterface
                       href: /windows/desktop/api/Winbio_adapter/nf-winbio_adapter-wbioquerysensorinterface
-                - name: Funciones del adaptador de almacenamiento
+                - name: Storage Funciones del adaptador
                   href: storage-adapter-functions.md
                   items:
                     - name: StorageAdapterActivate
@@ -513,7 +513,7 @@
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_storage_query_extended_info_fn
                     - name: WbioQueryStorageInterface
                       href: /windows/desktop/api/Winbio_adapter/nf-winbio_adapter-wbioquerystorageinterface
-            - name: Estructuras de complementos
+            - name: Estructuras de complemento
               href: plug-in-structures.md
               items:
                 - name: WINBIO_ACCOUNT_POLICY
@@ -532,12 +532,12 @@
                   href: /windows/win32/api/Winbio_adapter/ns-winbio_adapter-winbio_storage_interface
                 - name: WINBIO_STORAGE_RECORD
                   href: /windows/win32/api/Winbio_adapter/ns-winbio_adapter-winbio_storage_record
-            - name: Funciones de contenedor de complementos
+            - name: Funciones contenedoras de complementos
               href: plug-in-wrapper-functions.md
               items:
-                - name: Contenedores de adaptadores de motor
+                - name: Contenedores del adaptador de motor
                   href: engine-adapter-wrappers.md
-                - name: Contenedores de adaptador de sensor
+                - name: Contenedores del adaptador de sensor
                   href: sensor-adapter-wrappers.md
-                - name: Contenedores del adaptador de almacenamiento
+                - name: Storage Contenedores de adaptadores
                   href: storage-adapter-wrappers.md

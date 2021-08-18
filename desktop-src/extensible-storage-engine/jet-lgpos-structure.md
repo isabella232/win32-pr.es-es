@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_LGPOS'
-title: Estructura de JET_LGPOS
+description: 'Más información sobre: JET_LGPOS estructura'
+title: JET_LGPOS estructura
 TOCTitle: JET_LGPOS Structure
 ms:assetid: dbce1a60-b32b-40c1-a215-e93bb77cd8c1
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294113(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 25f00c73a4bb922a8152335babe222b539c70ade
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: abf3ca2996e75d2abfe6fc766ec6f5bbd30054eeb9dd8406fe2747307a00c4a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119109262"
 ---
-# <a name="jet_lgpos-structure"></a>Estructura de JET_LGPOS
+# <a name="jet_lgpos-structure"></a>JET_LGPOS estructura
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jet_lgpos-structure"></a>Estructura de JET_LGPOS
+## <a name="jet_lgpos-structure"></a>JET_LGPOS estructura
 
-La estructura **JET_LGPOS** contiene datos que son internos para el mecanismo de registro del motor de base de datos. Esta estructura se considera interna.
+La **JET_LGPOS** contiene datos que son internos del mecanismo de registro del motor de base de datos. Esta estructura se considera interna.
 
 ```cpp
     typedef struct {
@@ -41,17 +41,17 @@ La estructura **JET_LGPOS** contiene datos que son internos para el mecanismo de
 
 ### <a name="members"></a>Miembros
 
-**IB**
+**Ib**
 
-Es compatible con la infraestructura de ESE y no se puede usar desde el código.
+Admite la infraestructura ese y no se puede usar desde el código.
 
-**isec**
+**Isec**
 
-Es compatible con la infraestructura de ESE y no se puede usar desde el código.
+Admite la infraestructura ese y no se puede usar desde el código.
 
 **lGeneration**
 
-Es compatible con la infraestructura de ESE y no se puede usar desde el código.
+Admite la infraestructura ese y no se puede usar desde el código.
 
 ### <a name="requirements"></a>Requisitos
 
@@ -66,12 +66,12 @@ Es compatible con la infraestructura de ESE y no se puede usar desde el código.
 <td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Server</strong></p></td>
+<td><p><strong>Servidor</strong></p></td>
 <td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
+<td><p>Declarado en Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

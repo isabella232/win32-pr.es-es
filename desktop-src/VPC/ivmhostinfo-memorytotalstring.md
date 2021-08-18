@@ -1,11 +1,11 @@
 ---
-title: Propiedad IVMHostInfo MemoryTotalString (VPCCOMInterfaces. h)
-description: Recupera la cantidad total de memoria física en el equipo host, en megabytes, como una cadena.
+title: Propiedad MemoryTotalString de IVMHostInfo (VPCCOMInterfaces.h)
+description: Recupera la cantidad total de memoria física del equipo host, en megabytes, como una cadena.
 ms.assetid: 732c62e5-2776-4551-909f-7ddab74e067d
 keywords:
-- Propiedad MemoryTotalString Virtual PC
-- Propiedad MemoryTotalString Virtual PC, interfaz IVMHostInfo
-- Interfaz IVMHostInfo Virtual PC, propiedad MemoryTotalString
+- MemoryTotalString, propiedad Virtual PC
+- MemoryTotalString, propiedad Virtual PC, interfaz IVMHostInfo
+- IVMHostInfo interface Virtual PC , MemoryTotalString property
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5e6c16a4215aba141ff1803d340c63dc9faa868
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fd64cc374511d83798ff0058950a1bbcb71ba5d0d9e9f425336245d8c1aa290d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118998915"
 ---
-# <a name="ivmhostinfomemorytotalstring-property"></a>IVMHostInfo:: MemoryTotalString (propiedad)
+# <a name="ivmhostinfomemorytotalstring-property"></a>IVMHostInfo::MemoryTotalString, propiedad
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Recupera la cantidad total de memoria física en el equipo host, en megabytes, como una cadena.
+Recupera la cantidad total de memoria física del equipo host, en megabytes, como una cadena.
 
 Esta propiedad es de solo lectura.
 
@@ -53,9 +53,9 @@ Cantidad total de memoria física, en megabytes.
 
 | Nombre o valor                                                                                                                                                    | Significado                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>     |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **null**.<br/>        |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/> |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>     |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **NULL.**<br/>        |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/> |
 
 
 
@@ -65,12 +65,12 @@ Cantidad total de memoria física, en megabytes.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMHostInfo se define como 5b5cf343-05ad-453b-be99-adf4e27b2ebc<br/>                |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMHostInfo se define como \_ 5b5cf343-05ad-453b-be99-adf4e27b2ebc<br/>                |
 
 
 

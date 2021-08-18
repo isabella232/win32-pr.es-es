@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: JET_INDEXLIST constructor'
-title: Constructor de JET_INDEXLIST
+title: JET_INDEXLIST constructor
 TOCTitle: 'JET_INDEXLIST constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_INDEXLIST.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexlist.jet_indexlist(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c594f9508137823fbe2d3f8969258dd132c3ea13
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30eb9bbfa3c90ebd19ce14e20b2d21e8ea844c8d1c561e97126cb5a31555d39c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119110001"
 ---
-# <a name="jet_indexlist-constructor"></a>Constructor de JET_INDEXLIST
+# <a name="jet_indexlist-constructor"></a>JET_INDEXLIST constructor
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,8 +54,8 @@ public JET_INDEXLIST()
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEXLIST (clase)](./jet-indexlist-class.md)
+[JET_INDEXLIST clase](./jet-indexlist-class.md)
 
-[Miembros de JET_INDEXLIST](./jet-indexlist-members.md)
+[JET_INDEXLIST miembros](./jet-indexlist-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

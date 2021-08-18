@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: EsentStopwatch. ToString (método)'
-title: EsentStopwatch. ToString (método)
+description: Más información sobre el método EsentStopwatch.ToString
+title: Método EsentStopwatch.ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentStopwatch.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentstopwatch.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3ce9684a0005742c99638283f81fbb429d089b44
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cca43284945c7dd0fbf1ddd3ede60ca0a99bb0dc7a507c6926769210fce2f643
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119363382"
 ---
-# <a name="esentstopwatchtostring-method"></a>EsentStopwatch. ToString (método)
+# <a name="esentstopwatchtostring-method"></a>Método EsentStopwatch.ToString
 
-Devuelve una [cadena](/dotnet/api/system.string) que representa el [cronómetro](/dotnet/api/system.diagnostics.stopwatch)actual.
+Devuelve un [objeto String](/dotnet/api/system.string) que representa el [objeto Stopwatch actual.](/dotnet/api/system.diagnostics.stopwatch)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,8 +56,8 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Cadena](/dotnet/api/system.string) que representa el [cronómetro](/dotnet/api/system.diagnostics.stopwatch)actual.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Cadena [que](/dotnet/api/system.string) representa el [cronómetro actual.](/dotnet/api/system.diagnostics.stopwatch)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -67,4 +67,4 @@ Tipo: [System. String](/dotnet/api/system.string)
 
 [Miembros de EsentStopwatch](./esentstopwatch-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

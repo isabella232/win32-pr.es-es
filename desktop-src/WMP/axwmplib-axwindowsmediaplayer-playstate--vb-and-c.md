@@ -1,11 +1,11 @@
 ---
-title: Propiedad AxWindowsMediaPlayer. playState
-description: La propiedad playState obtiene un valor de enumeración que indica el estado de la operación de Media Player de Windows.
+title: Propiedad AxWindowsMediaPlayer.playState
+description: La propiedad playState obtiene un valor de enumeración que indica el estado de la Reproductor de Windows Media operación.
 ms.assetid: ab9f1547-5c28-4289-beaf-9262f7f59b07
 keywords:
-- propiedades de playState Media Player de Windows
-- propiedad playState Media Player de Windows, clase AxWindowsMediaPlayer
-- Clase AxWindowsMediaPlayer Windows Media Player, propiedad playState
+- Propiedad playState Reproductor de Windows Media
+- Propiedad playState Reproductor de Windows Media clase , AxWindowsMediaPlayer
+- Clase AxWindowsMediaPlayer Reproductor de Windows Media , propiedad playState
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d397c65c1cfd7f4adb040cc94e208a66c6c42d1b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cbd6d5ecbd4914864d812125143b1c5b6c0ae0d470b2c3951c060aacd3627ff2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119378185"
 ---
-# <a name="axwindowsmediaplayerplaystate-property"></a>Propiedad AxWindowsMediaPlayer. playState
+# <a name="axwindowsmediaplayerplaystate-property"></a>Propiedad AxWindowsMediaPlayer.playState
 
-La propiedad playState obtiene un valor de enumeración que indica el estado de la operación de Media Player de Windows.
+La propiedad playState obtiene un valor de enumeración que indica el estado de la Reproductor de Windows Media operación.
 
 Esta propiedad es de solo lectura.
 
@@ -48,15 +48,15 @@ Public ReadOnly Property playState As WMPPlayState
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de enumeración WMPLib. WMPPlayState.
+Valor de enumeración WMPLib.WMPPlayState.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No se garantiza que los Estados Media Player de Windows se produzcan en un orden determinado. Además, no todos los Estados se producen necesariamente durante una secuencia de eventos. No debe escribir código que se base en el orden de los Estados.
+Reproductor de Windows Media se garantiza que los estados se produzcan en un orden determinado. Además, no todos los estados se producen necesariamente durante una secuencia de eventos. No debe escribir código que se base en el orden de estado.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa la propiedad playState para mostrar el estado actual de reproducción del reproductor en una etiqueta. El objeto AxWMPLib. AxWindowsMediaPlayer se representa mediante la variable denominada Player.
+En el ejemplo siguiente se usa la propiedad playState para mostrar el estado de reproducción actual del reproductor en una etiqueta. El objeto AxWMPLib.AxWindowsMediaPlayer se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -94,22 +94,22 @@ End If
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Objeto AxWindowsMediaPlayer (VB y C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**Evento AxWindowsMediaPlayer. PlayStateChange (VB y C#)**](axwmplib-axwindowsmediaplayer-playstatechange.md)
+[**Evento AxWindowsMediaPlayer.PlayStateChange (VB y C#)**](axwmplib-axwindowsmediaplayer-playstatechange.md)
 </dt> <dt>
 
 [**WMPPlayState**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpplaystate)

@@ -1,29 +1,29 @@
 ---
-title: Obtener un identificador de vínculo
-description: A partir de Windows Server 2003, ya no es necesario solicitar un linkID de Microsoft; hay un proceso para generar automáticamente un linkID.
+title: Obtención de un identificador de vínculo
+description: A partir Windows Server 2003, ya no es necesario solicitar un linkID a Microsoft; hay un proceso para generar automáticamente un linkID.
 ms.assetid: e3bf2936-40b1-46b5-8ee9-ab208bb388f6
 ms.tgt_platform: multiple
 keywords:
-- Obtener un identificador de vínculo
+- Obtención de un identificador de vínculo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6893baab780d7fb481de0af77a607e988c3f87a
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 1800448e8cc665e0a28a88800a592e33d7b6ee5a766743d8a681a121c5ad02c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104149173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025563"
 ---
-# <a name="obtaining-a-link-id"></a>Obtener un identificador de vínculo
+# <a name="obtaining-a-link-id"></a>Obtención de un identificador de vínculo
 
-A partir de Windows Server 2003, ya no es necesario solicitar un [**LinkId**](/windows/desktop/ADSchema/a-linkid) de Microsoft; hay un proceso para generar automáticamente un **LinkId**. El sistema generará automáticamente un identificador de vínculo para un nuevo atributo vinculado cuando el atributo **LinkId** del atributo esté establecido en 1.2.840.113556.1.2.50. Para crear un vínculo de retroceso para este vínculo de avance, establezca el **LinkId** en el [**attributeID**](/windows/desktop/ADSchema/a-attributeid) o [**LDAPDisplayName**](/windows/desktop/ADSchema/a-ldapdisplayname) del vínculo hacia delante. La caché de esquema debe volver a cargarse después de crear el vínculo hacia delante y antes de crear el vínculo de retroceso. De lo contrario, no se encontrará el **attributeId** o **LDAPDisplayName** del vínculo de reenvío cuando se cree el vínculo de retroceso. La caché de esquema se recarga a petición, unos minutos después de que se realiza un cambio en el esquema o cuando se reinicia el controlador de dominio. Cree todos los vínculos hacia delante, vuelva a cargar la caché de esquema y, a continuación, cree todos los vínculos hacia atrás.
+A partir Windows Server 2003, ya no es necesario solicitar un [**linkID**](/windows/desktop/ADSchema/a-linkid) a Microsoft; hay un proceso para generar automáticamente un **linkID**. El sistema generará automáticamente un identificador de vínculo para un nuevo atributo vinculado cuando el atributo **linkID** del atributo esté establecido en 1.2.840.113556.1.2.50. Para crear un vínculo hacia atrás para este vínculo hacia delante, se establece **linkID** en [**attributeID**](/windows/desktop/ADSchema/a-attributeid) o [**ldapDisplayName**](/windows/desktop/ADSchema/a-ldapdisplayname) del vínculo hacia delante. La memoria caché de esquema debe volver a cargarse después de crear el vínculo hacia delante y antes de crear el vínculo de reserva. De lo contrario, el **atributo attributeId** o **ldapDisplayName** del vínculo hacia delante no se encontrará cuando se cree el vínculo atrás. La memoria caché de esquema se vuelve a cargar a petición, unos minutos después de realizar un cambio de esquema o cuando se reinicia el controlador de dominio. Cree todos los vínculos hacia delante, vuelva a cargar la caché de esquemas y, a continuación, cree todos los vínculos de reserva.
 
-Por ejemplo, si ha creado los nuevos atributos **myForwardLinkAttr** y **myBackLinkAttr**, y desea vincularlos:
+Por ejemplo, cuando haya creado los nuevos atributos **myForwardLinkAttr** y **myBackLinkAttr** y desee vincularlos:
 
 > [!Note]  
-> Los OID de este ejemplo son inventado. Consulte [obtención de un identificador de objeto de Microsoft](obtaining-an-object-identifier-from-microsoft.md) para obtener instrucciones sobre cómo obtener OID para nuevos atributos.
+> Los OD de este ejemplo se derivan. Consulte [Obtención de un identificador de objeto de Microsoft para](obtaining-an-object-identifier-from-microsoft.md) obtener instrucciones sobre cómo obtener ID para nuevos atributos.
 
- 
+ 
 
 1.  Establezca estos atributos en el atributo que va a ser el vínculo hacia delante:
     ```C++
@@ -35,7 +35,7 @@ Por ejemplo, si ha creado los nuevos atributos **myForwardLinkAttr** y **myBackL
     
 
 2.  Vuelva a cargar el esquema.
-3.  Establezca estos atributos en el atributo que va a ser el vínculo de retroceso:
+3.  Establezca estos atributos en el atributo que va a ser el vínculo atrás:
     ```C++
     ldapDisplayName: myBackLinkAttr
     OID: 1.2.840.113556.6.1235
@@ -51,9 +51,9 @@ Por ejemplo, si ha creado los nuevos atributos **myForwardLinkAttr** y **myBackL
 [Atributos vinculados](linked-attributes.md)
 </dt> <dt>
 
-[Cómo extender el esquema](how-to-extend-the-schema.md)
+[Extensión del esquema](how-to-extend-the-schema.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

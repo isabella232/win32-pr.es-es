@@ -3,20 +3,20 @@ title: Recortar una imagen
 description: Recortar una imagen
 ms.assetid: 6600751c-d4b6-481d-bf69-be2d34244c05
 keywords:
-- MCIWndGetSource (macro)
-- MCIWndPutSource (macro)
+- Macro MCIWndGetSource
+- Macro MCIWndPutSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2d73eb37792c124ad907f660d4b906ca80e715d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d0150962dc85e1e179e52a06c7af6c29193b40b50e9acc7a9feecd0570ab4214
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104486758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144617"
 ---
 # <a name="cropping-an-image"></a>Recortar una imagen
 
-En el ejemplo siguiente se crea una ventana de MCIWnd y se carga un archivo AVI. La ventana incluye un comando de recorte en el menú, que recorta un cuarto del alto o el ancho de cada uno de los cuatro lados del marco. En el ejemplo se recuperan las dimensiones actuales (iniciales) del rectángulo de origen mediante la macro [**MCIWndGetSource**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetsource) . El rectángulo de origen modificado es la mitad del alto y el ancho originales y está centrado en el fotograma original. La llamada a la macro [**MCIWndPutSource**](/windows/desktop/api/Vfw/nf-vfw-mciwndputsource) vuelve a definir las coordenadas del rectángulo de origen.
+En el ejemplo siguiente se crea una ventana MCIWnd y se carga un archivo AVI. La ventana incluye un comando de recorte en el menú, que recorta un cuarto del alto o ancho de cada uno de los cuatro lados del marco. En el ejemplo se recuperan las dimensiones actuales (iniciales) del rectángulo de origen mediante la macro [**MCIWndGetSource.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetsource) El rectángulo de origen modificado es la mitad del alto y ancho originales y se centra en el marco original. La llamada a la [**macro MCIWndPutSource**](/windows/desktop/api/Vfw/nf-vfw-mciwndputsource) redefine las coordenadas del rectángulo de origen.
 
 
 ```C++
@@ -51,9 +51,9 @@ case WM_COMMAND:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

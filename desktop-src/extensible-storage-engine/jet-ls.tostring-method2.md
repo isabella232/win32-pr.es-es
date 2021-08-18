@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_LS. Lista de sobrecargas del método ToString'
+description: 'Más información sobre: JET_LS. Lista de sobrecargas del método ToString'
 title: JET_LS. Lista de sobrecargas del método ToString
 TOCTitle: 'ToString method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.JET_LS.ToString
@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: bd43217bca6da65f62c9c49adf4c363c44ed5406
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: c5a4d352d423aeff23c0ad69703865fe1f224d07d349b9385ab1475c31e6eeda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107784"
 ---
 # <a name="jet_lstostring-method-overload-list"></a>JET_LS. Lista de sobrecargas del método ToString
 
@@ -40,11 +40,11 @@ Incluir miembros heredados
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="hh557929(v=exchg.10).md">ToString()</a></td>
-<td>Generar una representación de cadena de la estructura. (Invalida <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType. ToString ()</a>).</td>
+<td>Genere una representación de cadena de la estructura . (Invalida <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType.ToString()</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh557697(v=exchg.10).md">ToString (String, IFormatProvider)</a></td>
+<td><a href="hh557697(v=exchg.10).md">ToString(String, IFormatProvider)</a></td>
 <td>Da formato al valor de la instancia actual usando el formato especificado.</td>
 </tr>
 </tbody>
@@ -53,12 +53,12 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_LS](./jet-ls-structure.md)
+[JET_LS estructura](./jet-ls-structure.md)
 
-[Miembros de JET_LS](./jet-ls-members.md)
+[JET_LS miembros](./jet-ls-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

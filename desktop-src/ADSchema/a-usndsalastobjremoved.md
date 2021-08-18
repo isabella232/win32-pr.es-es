@@ -1,11 +1,11 @@
 ---
-title: USN-DSA-Last-obj-atributo quitado
-description: Contiene el número de secuencia de actualización (USN) para el último objeto del sistema que se ha quitado de un servidor.
+title: Atributo USN-DSA-Last-Obj-Removed
+description: Contiene el número de secuencia de actualización (USN) del último objeto del sistema que se quitó de un servidor.
 ms.assetid: af0afd80-fe4a-4bc6-84e3-14c2900bec93
 ms.tgt_platform: multiple
 keywords:
-- 'USN-DSA-Last-OBJ: esquema de AD de atributos quitados'
-- uSNDSALastObjRemoved esquema de AD de atributos
+- USN-DSA-Last-Obj-Removed attribute AD Schema
+- Esquema de AD del atributo uSNDSALastObjRemoved
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bcbc246aa1a0f7c794b9dc0a9d2a725273a918e3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b864b34d89455610700aff685bb879c499da7c4320bbcd4efb3b83725e34ad7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081309"
 ---
-# <a name="usn-dsa-last-obj-removed-attribute"></a>USN-DSA-Last-obj-atributo quitado
+# <a name="usn-dsa-last-obj-removed-attribute"></a>Atributo USN-DSA-Last-Obj-Removed
 
-Contiene el número de secuencia de actualización (USN) para el último objeto del sistema que se ha quitado de un servidor.
+Contiene el número de secuencia de actualización (USN) del último objeto del sistema que se quitó de un servidor.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | USN-DSA-Last-obj-quitado             |
-| Nombre para mostrar de LDAP | uSNDSALastObjRemoved                 |
-| Tamaño              | 8 bytes                              |
-| Actualizar privilegio  | El sistema establece este valor.     |
+| CN                | USN-DSA-Last-Obj-Removed             |
+| Ldap-Display-Name | uSNDSALastObjRemoved                 |
+| Size              | 8 bytes                              |
+| Actualizar privilegios  | El sistema establece este valor.     |
 | Frecuencia de actualización  | Cada vez que cambia un objeto de directorio. |
 | Attribute-Id      | 1.2.840.113556.1.2.267               |
-| System-ID-GUID    | bf967a71-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf967a71-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -44,7 +44,7 @@ Contiene el número de secuencia de actualización (USN) para el último objeto 
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Contiene el número de secuencia de actualización (USN) para el último objeto 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8155                          |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -77,13 +77,13 @@ Contiene el número de secuencia de actualización (USN) para el último objeto 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8155                          |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,19 +92,19 @@ Contiene el número de secuencia de actualización (USN) para el último objeto 
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8155                          |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -119,13 +119,13 @@ Contiene el número de secuencia de actualización (USN) para el último objeto 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8155                          |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -140,13 +140,13 @@ Contiene el número de secuencia de actualización (USN) para el último objeto 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8155                          |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -161,13 +161,13 @@ Contiene el número de secuencia de actualización (USN) para el último objeto 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8155                          |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -182,13 +182,13 @@ Contiene el número de secuencia de actualización (USN) para el último objeto 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8155                          |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -201,7 +201,7 @@ Contiene el número de secuencia de actualización (USN) para el último objeto 
 
 <dl> <dt>
 
-[**USN-Last-obj-REM**](a-usnlastobjrem.md)
+[**USN-Last-Obj-Rem**](a-usnlastobjrem.md)
 </dt> </dl>
 
  

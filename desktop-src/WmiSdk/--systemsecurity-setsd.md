@@ -1,8 +1,8 @@
 ---
-description: Establece el descriptor de seguridad para el espacio de nombres al que está conectado un usuario. Este método requiere un descriptor de seguridad en formato binario de matriz de bytes. Si está escribiendo un script, use el método SetSecurityDescriptor.
+description: Establece el descriptor de seguridad del espacio de nombres al que está conectado un usuario. Este método requiere un descriptor de seguridad en formato binario de matriz de bytes. Si va a escribir un script, use el método SetSecurityDescriptor.
 ms.assetid: 049f8722-1674-4c4f-9300-09b1cc1412fb
 ms.tgt_platform: multiple
-title: Método establecido de la clase __SystemSecurity
+title: Método SetSD de la __SystemSecurity clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - All
-ms.openlocfilehash: 21f09a412a662cec8629fa9237d8dbb5902426c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04da59b6370e2e9a381f2e3889b75ac37cb926e54c46cc0e616ec5353ed6f665
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119132038"
 ---
-# <a name="setsd-method-of-the-__systemsecurity-class"></a>Método establecido de la \_ \_ clase SystemSecurity
+# <a name="setsd-method-of-the-__systemsecurity-class"></a>Método SetSD de la \_ \_ clase SystemSecurity
 
-El método **sets** establece el descriptor de seguridad para el espacio de nombres al que está conectado un usuario. Este método requiere un descriptor de seguridad en formato binario de matriz de bytes. Si está escribiendo un script, use el método [**SetSecurityDescriptor**](setsecuritydescriptor-method-in-class---systemsecurity.md) . Para obtener más información, vea [proteger los espacios de nombres WMI](securing-wmi-namespaces.md) y [cambiar la seguridad de acceso en objetos protegibles](changing-access-security-on-securable-objects.md).
+El **método SetSD** establece el descriptor de seguridad para el espacio de nombres al que está conectado un usuario. Este método requiere un descriptor de seguridad en formato binario de matriz de bytes. Si va a escribir un script, use el [**método SetSecurityDescriptor.**](setsecuritydescriptor-method-in-class---systemsecurity.md) Para obtener más información, vea [Proteger espacios de nombres WMI y](securing-wmi-namespaces.md) Cambiar la seguridad de acceso en objetos [protegibles.](changing-access-security-on-securable-objects.md)
 
 Si está programando en C++, puede manipular el descriptor de seguridad binario mediante [SDDL](/windows/desktop/SecAuthZ/security-descriptor-definition-language)y los métodos de conversión [**ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) y [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora).
 
-Un usuario debe tener el permiso **escribir \_ DAC** y, de forma predeterminada, un administrador tiene ese permiso. La única parte del descriptor de seguridad que se usa es la entrada de control de acceso (ACE) no heredada en la lista de control de acceso discrecional (DACL). Al establecer la marca de **\_ herencia de contenedor** en las ACE, el descriptor de seguridad afecta a los espacios de nombres secundarios. Se permiten las ACE de permitir y denegar.
+Un usuario debe tener el **permiso WRITE \_ DAC** y, de forma predeterminada, un administrador tiene ese permiso. La única parte del descriptor de seguridad que se usa es la entrada de control de acceso no incluido (ACE) en la lista de control de acceso discrecional (DACL). Al establecer la **marca CONTAINER \_ INHERIT** en las ACE, el descriptor de seguridad afecta a los espacios de nombres secundarios. Se permiten tanto las ACE de permiso como las de denegación.
 
 > [!Note]  
-> Dado que las ACE deny y Allow se permiten en una DACL, el orden de las ACE es importante. Para obtener más información, vea [ordenación de ACE en una DACL](/windows/desktop/SecAuthZ/order-of-aces-in-a-dacl).
+> Dado que tanto deny como allow ACE se permiten en una DACL, el orden de las ACE es importante. Para obtener más información, vea [Ordenación de AEE en una DACL.](/windows/desktop/SecAuthZ/order-of-aces-in-a-dacl)
 
  
 
@@ -49,74 +49,74 @@ HRESULT SetSD(
 
 <dl> <dt>
 
-*SD* \[ de\]
+*SD* \[ En\]
 </dt> <dd>
 
-Matriz de bytes que constituye el descriptor de seguridad.
+Matriz de bytes que forma el descriptor de seguridad.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un **valor HRESULT** que indica el estado de una llamada al método. En el caso de las aplicaciones de scripting y Visual Basic, el resultado se puede obtener de [Parameters. ReturnValue](parsing-outparameters-objects.md). Para obtener más información, consulte [construir objetos Parameters y analizar objetos Parameters](constructing-inparameters-objects-and-parsing-outparameters-objects.md).
+Devuelve un **valor HRESULT** que indica el estado de una llamada de método. Para scripting y Visual Basic aplicaciones, el resultado se puede obtener de [OutParameters.ReturnValue](parsing-outparameters-objects.md). Para obtener más información, [vea Construir objetos InParameters y Analizar objetos OutParameters](constructing-inparameters-objects-and-parsing-outparameters-objects.md).
 
-En la lista siguiente se enumeran los valores devueltos que son significativos para los **conjuntos**.
+En la lista siguiente se enumeran los valores devueltos que son **significativos para SetSD.**
 
 <dl> <dt>
 
-**S \_ correcto**
+**S \_ OK**
 </dt> <dd>
 
 El método se ejecutó correctamente.
 
 </dd> <dt>
 
-**WBEM \_ E \_ acceso \_ denegado**
+**WBEM \_ E \_ ACCESS \_ DENIED**
 </dt> <dd>
 
 El autor de la llamada no tiene derechos suficientes para llamar a este método.
 
 </dd> <dt>
 
-**WBEM \_ E \_ método \_ deshabilitado**
+**MÉTODO WBEM \_ E \_ \_ DESHABILITADO**
 </dt> <dd>
 
-Se intentó ejecutar este método en el sistema operativo que no lo admite.
+Se intentó ejecutar este método en un sistema operativo que no lo admite.
 
 </dd> <dt>
 
-**\_ \_ objeto no válido de WBEM E \_**
+**WBEM \_ E \_ INVALID \_ OBJECT**
 </dt> <dd>
 
-SD no pasa las pruebas de validez básicas.
+SD no supera las pruebas de validez básicas.
 
 </dd> <dt>
 
-**\_ \_ parámetro no válido de WBEM E \_**
+**WBEM \_ E \_ INVALID \_ PARAMETER**
 </dt> <dd>
 
-SD no es válido debido a uno de los siguientes motivos:
+SD no es válido debido a uno de los siguientes elementos:
 
 -   Falta DACL.
--   DACL no válida.
--   ACE tiene establecida la marca de representador de **\_ \_ escritura completa \_ de WBEM** y no se ha establecido la marca de proveedor de escritura de WBEM o de **\_ \_ proveedor** de escritura WBEM **\_ \_ \_** .
--   ACE tiene la **marca \_ \_ ACE de solo heredar** establecida sin la marca de la **\_ \_ ACE de herencia de contenedor** .
+-   DACL no es válida.
+-   ACE tiene establecida **la marca WBEM \_ FULL WRITE \_ \_ REP** y no se ha establecido la marca **WBEM PARTIAL WRITE \_ \_ \_ REP** o **WBEM WRITE \_ \_ PROVIDER.**
+-   ACE tiene la **marca ACE INHERIT \_ ONLY \_** establecida sin la **marca ACE CONTAINER \_ INHERIT. \_**
 -   ACE tiene un conjunto de bits de acceso desconocido.
 -   ACE tiene un conjunto de marcas que no está en la tabla.
--   La ACE tiene un tipo que no está en la tabla.
--   Faltan el propietario y el grupo en SD.
+-   ACE tiene un tipo que no está en la tabla.
+-   Falta el propietario y el grupo en la SD.
 
-Para obtener más información sobre las marcas de entrada de control de acceso (ACE), consulte [constantes de seguridad de WMI](wmi-security-constants.md).
+Para obtener más información sobre las marcas de entrada de control de acceso (ACE), vea [Wmi Security Constants](wmi-security-constants.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información sobre cómo modificar la seguridad de los espacios de nombres mediante programación o manualmente, consulte protección de los [espacios de nombres WMI](securing-wmi-namespaces.md).
+Para obtener más información sobre cómo modificar la seguridad del espacio de nombres mediante programación o manualmente, vea [Securing WMI Namespaces](securing-wmi-namespaces.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el script siguiente se muestra cómo **usar** seted para establecer el descriptor de seguridad del espacio de nombres para el espacio de nombres raíz y cambiarlo a la matriz de bytes que se muestra en *strSD*.
+El siguiente script muestra cómo usar **SetSD** para establecer el descriptor de seguridad del espacio de nombres para el espacio de nombres raíz y cambiarlo a la matriz de bytes que se muestra *en strSD*.
 
 
 ```VB
@@ -150,7 +150,7 @@ WScript.Echo "ReturnValue " & nReturn
 
 
 
-En el siguiente ejemplo de código de C# se usa System. Security. AccessControl. RawSecurityDescriptor para enumerar, insertar y quitar nuevos objetos CommonAce en RawSecurityDescriptor. DiscretionaryAcl y, a continuación, volver a convertirlos en una matriz de bytes para guardarlos a través de establecido. Un SecurityIdentifier se puede recuperar mediante NTAccount y translate.
+El siguiente ejemplo de código de C# usa System.Security.AccessControl.RawSecurityDescriptor para enumerar, insertar y quitar nuevos objetos CommonAce en RawSecurityDescriptor.DiscretionaryAcl y, a continuación, convertirlos de nuevo en una matriz de bytes para guardarlos a través de SetSD. SecurityIdentifier se puede recuperar mediante NTAccount y Translate.
 
 
 ```CSharp
@@ -246,19 +246,19 @@ En el siguiente ejemplo de código de C# se usa System. Security. AccessControl.
 [**\_\_SystemSecurity**](--systemsecurity.md)
 </dt> <dt>
 
-[**\_\_SystemSecurity:: obtiene**](--systemsecurity-getsd.md)
+[**\_\_SystemSecurity::GetSD**](--systemsecurity-getsd.md)
 </dt> <dt>
 
-[Constantes de seguridad de WMI](wmi-security-constants.md)
+[Constantes de seguridad wmi](wmi-security-constants.md)
 </dt> <dt>
 
-[**ACE de Win32 \_**](/previous-versions/windows/desktop/secrcw32prov/win32-ace)
+[**Win32 \_ ACE**](/previous-versions/windows/desktop/secrcw32prov/win32-ace)
 </dt> <dt>
 
-[**SecurityDescriptor de Win32 \_**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
+[**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
 </dt> <dt>
 
-[Proteger los espacios de nombres de WMI](securing-wmi-namespaces.md)
+[Protección de espacios de nombres WMI](securing-wmi-namespaces.md)
 </dt> </dl>
 
  

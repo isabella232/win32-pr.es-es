@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118965801"
 ---
-# <a name="iscanprofilemgrsetdefault-method"></a>IScanProfileMgr::SetDefault (Método)
+# <a name="iscanprofilemgrsetdefault-method"></a>IScanProfileMgr::SetDefault (método)
 
 Establece el perfil de examen especificado como perfil predeterminado.
 
@@ -56,7 +56,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 ## <a name="remarks"></a>Comentarios
 
-Use el **método IScanProfileMgr::SetDefault** para agregar un elemento al perfil o para quitar ese elemento del perfil predeterminado `<Default>` anterior del dispositivo.
+Use el **método IScanProfileMgr::SetDefault** para agregar un elemento al perfil o para quitar ese elemento del perfil `<Default>` predeterminado anterior del dispositivo.
 
 Use el [**método ScanProfileDialog**](-wia-iscanprofileui-scanprofiledialog.md) para cambiar el perfil predeterminado.
 
@@ -64,7 +64,7 @@ Use el [**método ScanProfileDialog**](-wia-iscanprofileui-scanprofiledialog.md)
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
@@ -73,7 +73,7 @@ Use el [**método ScanProfileDialog**](-wia-iscanprofileui-scanprofiledialog.md)
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

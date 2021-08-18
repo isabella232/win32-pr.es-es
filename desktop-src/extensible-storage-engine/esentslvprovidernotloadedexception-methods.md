@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: métodos EsentSLVProviderNotLoadedException'
+description: 'Más información sobre: Métodos de EsentSLVProviderNotLoadedException'
 title: 'Métodos de EsentSLVProviderNotLoadedException '
 TOCTitle: EsentSLVProviderNotLoadedException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentSLVProviderNotLoadedException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102808
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 2e93abf1112f09a9772b206b89c51d78888e33f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d728c3fc6ea9726e0c19baeb6bc3e4c26cb8bcde65191d2e750a50c0e19342c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119115005"
 ---
 # <a name="esentslvprovidernotloadedexception-methods"></a>Métodos de EsentSLVProviderNotLoadedException 
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo [EsentSLVProviderNotLoadedException](./esentslvprovidernotloadedexception-class.md) expone los siguientes miembros.
+El [tipo EsentSLVProviderNotLoadedException](./esentslvprovidernotloadedexception-class.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -39,13 +39,13 @@ El tipo [EsentSLVProviderNotLoadedException](./esentslvprovidernotloadedexceptio
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -55,12 +55,12 @@ El tipo [EsentSLVProviderNotLoadedException](./esentslvprovidernotloadedexceptio
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn334369(v=exchg.10).md">GetObjectData</a></td>
-<td>Cuando se reemplaza en una clase derivada, establece <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con información sobre la excepción. (Se hereda de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>).</td>
+<td>Cuando se invalida en una clase derivada, establece <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con información sobre la excepción. (Se hereda de <a href="dn274314(v=exchg.10).md">EsentErrorException).</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
@@ -70,7 +70,7 @@ El tipo [EsentSLVProviderNotLoadedException](./esentslvprovidernotloadedexceptio
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.tostring#System_Exception_ToString">ToString</a></td>
-<td>(Se hereda de <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -78,10 +78,10 @@ El tipo [EsentSLVProviderNotLoadedException](./esentslvprovidernotloadedexceptio
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [Clase EsentSLVProviderNotLoadedException](./esentslvprovidernotloadedexception-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

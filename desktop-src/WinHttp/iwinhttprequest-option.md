@@ -1,7 +1,7 @@
 ---
-description: Establece o recupera un valor de opción de servicios HTTP de Microsoft Windows (WinHTTP).
+description: Establece o recupera un valor de Windows servicios HTTP (WinHTTP) de Microsoft.
 ms.assetid: 913573e6-fad3-42a5-bb5d-25a3d2ac9616
-title: 'IWinHttpRequest:: Option (propiedad)'
+title: IWinHttpRequest::Option, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,20 +16,20 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: c76df3f09871984da9f4bc093e9ac96d7484558f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 05368f1a5179dcaa94bc07a32035e308e9848e867d89f42f4dffb94c765ee448
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133098"
 ---
-# <a name="iwinhttprequestoption-property"></a>IWinHttpRequest:: Option (propiedad)
+# <a name="iwinhttprequestoption-property"></a>IWinHttpRequest::Option, propiedad
 
-La propiedad **Option** establece o recupera un valor de opción de servicios http de Microsoft Windows (WinHTTP).
+La **propiedad Option** establece o recupera un valor de Windows servicios HTTP (WinHTTP) de Microsoft.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -57,24 +57,24 @@ WinHttpRequest.Option = vtOption
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Valor de **tipo Variant** que contiene el valor de la opción.
+Valor **Variant** que contiene el valor de opción.
 
-El parámetro *Option* especifica el [**WinHttpRequestOption**](winhttprequestoption.md) que se va a establecer o recuperar.
+El *parámetro Option* especifica la opción [**WinHttpRequestOption**](winhttprequestoption.md) que se establecerá o recuperará.
 
 ## <a name="error-codes"></a>Códigos de error
 
-El valor devuelto es correcto si se ejecuta correctamente o un valor de error en caso contrario. **\_**
+El valor devuelto es **S \_ OK si se** ejecuta correctamente o un valor de error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> En Windows XP y Windows 2000, consulte la sección [requisitos de tiempo de ejecución](winhttp-start-page.md) de la página de inicio de winhttp.
+> Para Windows XP y Windows 2000, consulte la sección [Requisitos](winhttp-start-page.md) en tiempo de ejecución de la página de inicio de WinHTTP.
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo establecer y ver la opción de cadena de [*agente de usuario*](glossary.md) y ver otras opciones.
+En el ejemplo siguiente se muestra cómo establecer y ver la opción [*de cadena*](glossary.md) del agente de usuario y ver otras opciones.
 
 
 ```C++
@@ -207,7 +207,7 @@ int main()
 
 
 
-En el siguiente ejemplo de scripting se muestra cómo establecer y ver las opciones.
+En el ejemplo de scripting siguiente se muestra cómo establecer y ver las opciones.
 
 
 ```JScript
@@ -246,11 +246,11 @@ WScript.Echo( 'Escape percents: '+
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional con las \[ aplicaciones de escritorio de SP3 únicamente\]<br/>            |
-| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server con \[ solo aplicaciones de escritorio de SP3\]<br/>         |
-| Redistribuible<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o posterior en Windows XP y Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winhttp. lib</dt> </dl>     |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>            |
+| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
+| Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | Archivo DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
@@ -265,7 +265,7 @@ WScript.Echo( 'Escape percents: '+
 [**WinHttpRequest**](winhttprequest.md)
 </dt> <dt>
 
-[Versiones de WinHTTP](winhttp-versions.md)
+[Versiones winHTTP](winhttp-versions.md)
 </dt> <dt>
 
 [**WinHttpRequestOption**](winhttprequestoption.md)

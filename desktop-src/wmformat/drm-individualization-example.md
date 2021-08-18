@@ -3,22 +3,22 @@ title: Ejemplo de individualización de DRM
 description: Ejemplo de individualización de DRM
 ms.assetid: 665a5005-d435-4783-b48e-2d8400aa7638
 keywords:
-- SDK de Windows Media Format, individualización de DRM
-- SDK de Windows Media Format, individualización
-- Administración de derechos digitales (DRM), individualización
+- Windows SDK de formato multimedia, individualización de DRM
+- Windows SDK de formato multimedia, individualización
+- administración de derechos digitales (DRM),individualización
 - DRM (administración de derechos digitales), individualización
-- Administración de derechos digitales (DRM), individualización de DRM
+- administración de derechos digitales (DRM), individualización de DRM
 - DRM (administración de derechos digitales), individualización de DRM
-- API extendidas del cliente DRM, individualización
+- API extendidas de cliente DRM, individualización
 - API extendidas de cliente, individualización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1252fe951e306f837f2df95245b3cfc81dac03c2
-ms.sourcegitcommit: cb844c9ab17577ce171fd7b03add668645867bc7
+ms.openlocfilehash: 4eeb13f44eaa5fe3a3d67560d6fa7bb1e39250842ba0707ef62969b91fb50d47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "104420386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086006"
 ---
 # <a name="drm-individualization-example"></a>Ejemplo de individualización de DRM
 
@@ -175,15 +175,15 @@ HRESULT Individualize(IWMDRMSecurity* pSecurity)
 
 <dl> <dt>
 
-[**Realización de una individualización DRM**](performing-drm-individualization.md)
+[**Realización de la individualización de DRM**](performing-drm-individualization.md)
 </dt> <dt>
 
-[**Usar el modelo de eventos Media Foundation**](using-the-media-foundation-model.md)
+[**Uso del Media Foundation de eventos**](using-the-media-foundation-model.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

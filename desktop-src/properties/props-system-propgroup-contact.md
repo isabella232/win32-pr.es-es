@@ -1,19 +1,19 @@
 ---
-description: El separador de grupos de propiedades utilizado en las listas de propiedades para separar los contactos de otros tipos. No utilice esta propiedad para obtener o establecer valores. Esta propiedad está destinada únicamente como un marcador.
+description: Separador de grupo de propiedades que se usa en las listas de propiedades para separar los contactos de otros tipos. No use esta propiedad para obtener o establecer valores. Esta propiedad solo está pensada como marcador.
 ms.assetid: fbeef429-e5e0-4fa4-9402-72e421ef4cbc
-title: System. PropGroup. contact
+title: System.PropGroup.Contact
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdfca8ad6a0c9409367fb8b9f74252dd15855c34
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ffe5fe6d5d334007a7aa37dabe4200cb4238e5ef5210cf4c4ca86fda82ec0ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095817"
 ---
-# <a name="systempropgroupcontact"></a>System. PropGroup. contact
+# <a name="systempropgroupcontact"></a>System.PropGroup.Contact
 
-El separador de grupos de propiedades utilizado en las listas de propiedades para separar los contactos de otros tipos. No utilice esta propiedad para obtener o establecer valores. Esta propiedad está destinada únicamente como un marcador.
+Separador de grupo de propiedades que se usa en las listas de propiedades para separar los contactos de otros tipos. No use esta propiedad para obtener o establecer valores. Esta propiedad solo está pensada como marcador.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Null
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

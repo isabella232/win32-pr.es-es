@@ -1,10 +1,10 @@
 ---
-title: MSMQ-Receive-Journal Extended Right
+title: Derecho extendido msmq-Receive-journal
 description: Permite recibir mensajes del diario de la cola.
 ms.assetid: 7617c569-15ad-473d-a8ac-3819de24e354
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de derecho extendido de recepción de MSMQ-Receive-Journal
+- msmq-Receive-journal extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f3747c4a1cfb939e6f56f71f49b170b5f48012b0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f8e2b186f1197a0762521505877e7d5fbadc84b86a8ec158816857a062fa51d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021673"
 ---
-# <a name="msmq-receive-journal-extended-right"></a>MSMQ-Receive-Journal Extended Right
+# <a name="msmq-receive-journal-extended-right"></a>Derecho extendido msmq-Receive-journal
 
 Permite recibir mensajes del diario de la cola.
 
@@ -28,8 +28,8 @@ Permite recibir mensajes del diario de la cola.
 
 | Entrada | Value |
 |--------------|--------------------------------------|
-| CN           | MSMQ-Receive-Journal                 |
-| Display-Name | Recibir diario                      |
+| CN           | msmq-Receive-journal                 |
+| Display-Name | Diario de recepción                      |
 | Rights-GUID  | 06bd3203-df3e-11d1-9c86-006008764d0e |
 
 
@@ -49,8 +49,8 @@ Permite recibir mensajes del diario de la cola.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 45                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 45                                           |
 
 
 
@@ -60,8 +60,8 @@ Permite recibir mensajes del diario de la cola.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 45                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 45                                           |
 
 
 
@@ -71,8 +71,8 @@ Permite recibir mensajes del diario de la cola.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 45                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 45                                           |
 
 
 
@@ -82,8 +82,8 @@ Permite recibir mensajes del diario de la cola.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 45                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 45                                           |
 
 
 
@@ -93,8 +93,8 @@ Permite recibir mensajes del diario de la cola.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 45                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 45                                           |
 
 
 
@@ -104,8 +104,8 @@ Permite recibir mensajes del diario de la cola.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
-| Localización: ID. de presentación | 45                                           |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
+| Localization-Display-ID | 45                                           |
 
 
 

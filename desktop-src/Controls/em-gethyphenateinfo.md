@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETHYPHENATEINFO (RichEdit. h)
-description: Recupera información sobre la división en guiones para un control Rich Edit de Microsoft.
+title: EM_GETHYPHENATEINFO mensaje (Richedit.h)
+description: Recupera información sobre la separación de guiones para un control De edición enriquección enriquecte de Microsoft.
 ms.assetid: 70ccb698-e440-493b-8f38-2bf7f32e4b26
 keywords:
-- EM_GETHYPHENATEINFO controles de mensajes de Windows
+- EM_GETHYPHENATEINFO controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d083b4bbc4b6854f767395d51dd9899c2a185d0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5bd9bbb6eb156bd2a5af1b69ecaad800f721aebb68b3d8ccfcb7bf8cb9ba465e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019623"
 ---
-# <a name="em_gethyphenateinfo-message"></a>\_Mensaje GETHYPHENATEINFO em
+# <a name="em_gethyphenateinfo-message"></a>Mensaje \_ EM GETHYPHENATEINFO
 
-Recupera información sobre la división en guiones para un control Rich Edit de Microsoft.
+Recupera información sobre la separación de guiones para un control De edición enriquección enriquecte de Microsoft.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,14 +32,14 @@ Recupera información sobre la división en guiones para un control Rich Edit de
 *wParam* 
 </dt> <dd>
 
-Estructura [**HYPHENATEINFO**](/windows/win32/api/richedit/ns-richedit-hyphenateinfo) .
+Estructura [**HYPHENATEINFO.**](/windows/win32/api/richedit/ns-richedit-hyphenateinfo)
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
@@ -49,9 +49,9 @@ No se utiliza; debe ser cero.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP1 \[\]<br/>                                  |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp1\]<br/>                                  |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ No se utiliza; debe ser cero.
 
 <dl> <dt>
 
-[**\_SETHYPHENATEINFO em**](em-sethyphenateinfo.md)
+[**EM \_ SETHYPHENATEINFO**](em-sethyphenateinfo.md)
 </dt> </dl>
 
  

@@ -1,23 +1,23 @@
 ---
 title: Expiración de la cuenta (proveedor LDAP)
-description: Para establecer la fecha de expiración de la cuenta, establezca la propiedad IADsUser. AccountExpirationDate en el valor de fecha deseado.
+description: Para establecer la fecha de expiración de la cuenta, establezca la propiedad IADsUser.AccountExpirationDate en el valor de fecha deseado.
 ms.assetid: d0b90bb3-ad7c-4394-956d-061a915f210d
 ms.tgt_platform: multiple
 keywords:
-- Caducidad de cuenta ADSI, proveedor LDAP
-- ADSI Provider LDAP, ejemplos de administración de usuarios, expiración de cuentas
+- Proveedor ADSI,LDAP de expiración de la cuenta
+- ADSI del proveedor LDAP, ejemplos de administración de usuarios, expiración de la cuenta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c03ea33d8d5abb219c2b562aa05058b5dec45919
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 645ce5e2e1ae72ace0a8a642642eb5c15e7eabd63d51dba3f03596869bfb9efc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105656399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024073"
 ---
 # <a name="account-expiration-ldap-provider"></a>Expiración de la cuenta (proveedor LDAP)
 
-Para establecer la fecha de expiración de la cuenta, establezca la propiedad [**IADsUser. AccountExpirationDate**](iadsuser-property-methods.md) en el valor de fecha deseado. Para deshabilitar la fecha de expiración de la cuenta, establezca el atributo [**accountExpires**](/windows/desktop/ADSchema/a-accountexpires) en cero. En los siguientes ejemplos de código se muestra cómo establecer la fecha de expiración.
+Para establecer la fecha de expiración de la cuenta, establezca la propiedad [**IADsUser.AccountExpirationDate**](iadsuser-property-methods.md) en el valor de fecha deseado. Para deshabilitar la fecha de expiración de la cuenta, establezca el [**atributo accountExpires**](/windows/desktop/ADSchema/a-accountexpires) en cero. En los ejemplos de código siguientes se muestra cómo establecer la fecha de expiración.
 
 
 ```VB
@@ -84,10 +84,10 @@ HRESULT SetUserAccountExpirationDate(IADsUser *pUser, DATE date)
 
 
 > [!Note]  
-> El atributo [**accountExpires**](/windows/desktop/ADSchema/a-accountexpires) contiene la fecha de expiración de la cuenta. El complemento MMC Active Directory usuarios y equipos muestra la fecha en la que expirará la cuenta al final de. Es decir, el complemento MMC usuarios y equipos de Active Directory mostrará la fecha de expiración de la cuenta como un día anterior a la fecha incluida en el atributo **accountExpires** .
+> El [**atributo accountExpires**](/windows/desktop/ADSchema/a-accountexpires) contiene la fecha de expiración de la cuenta. El Usuarios y equipos de Active Directory complemento MMC muestra la fecha de expiración de la cuenta al final. Es decir, Usuarios y equipos de Active Directory complemento MMC mostrará la fecha de expiración de la cuenta como un día anterior a la fecha contenida en el atributo **accountExpires.**
 
- 
+ 
 
- 
+ 
 
- 
+ 

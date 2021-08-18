@@ -1,9 +1,9 @@
 ---
 title: Atributos de sincronización
-description: Los atributos Sync01 a Sync16 son representaciones de cadena de valores de 32 bits que Windows Media Player usa al sincronizar listas de reproducción con uno de hasta 16 dispositivos portátiles.
+description: Los atributos Sync01 a Sync16 son representaciones de cadena de valores de 32 bits que Reproductor de Windows Media usa cuando sincroniza listas de reproducción con uno de hasta 16 dispositivos portátiles.
 ms.assetid: b9ae3420-aa09-4969-8637-f16d438942f3
 keywords:
-- Atributos de sincronización de Windows Media Player
+- Sincronización de atributos Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,49 +12,49 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5af26ae563a38efcc40b0bcd319c5fc62b4776dc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e720598b17db6b073524d80afc8f39dd6e6f87e777246b5bdb60294b161fa1d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134758"
 ---
 # <a name="sync-attributes"></a>Atributos de sincronización
 
-Los atributos **Sync01** a **Sync16** son representaciones de cadena de valores de 32 bits que Windows Media Player usa al sincronizar listas de reproducción con uno de hasta 16 dispositivos portátiles.
+Los atributos **Sync01** a **Sync16** son representaciones de cadena de valores de 32 bits que Reproductor de Windows Media usa cuando sincroniza listas de reproducción con uno de hasta 16 dispositivos portátiles.
 
 ## <a name="applies-to"></a>Se aplica a
 
--   [Reproducción](playlist-attributes-ref.md)
+-   [Listas](playlist-attributes-ref.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Son atributos de lectura y escritura. Un valor de cero indica que Windows Media Player no debe sincronizar la lista de reproducción con el dispositivo asociado. Un valor mayor que cero indica una prioridad de sincronización para la lista de reproducción determinada.
+Estos son atributos de lectura y escritura. Un valor de cero indica que Reproductor de Windows Media no debe sincronizar la lista de reproducción con el dispositivo asociado. Un valor mayor que cero indica una prioridad de sincronización para la lista de reproducción determinada.
 
-En función de la entrada del usuario, Windows Media Player establece este atributo para cada una de las listas de reproducción de la biblioteca. Cuando Windows Media Player intenta sincronizar una lista de reproducción con un dispositivo portátil, examina cada lista de reproducción para comparar los valores de los atributos de **Sync**_XX_ que representan la Asociación de dispositivos. Las listas de reproducción con valores inferiores de la **sincronización**_XX_ reciben mayor prioridad de sincronización.
+En función de la entrada del usuario, Reproductor de Windows Media este atributo para cada una de las listas de reproducción de la biblioteca. Cuando Reproductor de Windows Media sincronizar una lista de reproducción con un dispositivo portátil, examina cada lista de reproducción para comparar los valores de los atributos **sync**_XX_ que representan la asociación del dispositivo. Las listas de reproducción con valores **xx de sincronización**_inferiores_ reciben una prioridad de sincronización mayor.
 
-Por ejemplo, la biblioteca puede contener las cuatro listas de reproducción siguientes y los valores de la **sincronización**_XX_ correspondientes:
+Por ejemplo, la biblioteca puede contener las cuatro listas de reproducción siguientes y los **respectivos valores de Sync**_XX:_
 
 
 
-| Nombre de lista de reproducción | Valor Sync01 |
+| Nombre de la lista de reproducción | Valor Sync01 |
 |---------------|--------------|
-| GymMusic. WPL  | 0x0000000D   |
-| Relajarse. WPL     | 0x00000020   |
-| DriveHome. WPL | 0x00000001   |
-| NoGo. WPL      | 0x00000000   |
+| Descontrol.WPL  | 0x0000000D   |
+| Relax.WPL     | 0x00000020   |
+| DriveHome.WPL | 0x00000001   |
+| NoGo.WPL      | 0x00000000   |
 
 
 
  
 
-Cuando Windows Media Player sincroniza el dispositivo asociado con el atributo, sincronizará las listas de reproducción en el orden siguiente:
+Cuando Reproductor de Windows Media el dispositivo asociado al atributo , sincronizará las listas de reproducción en el orden siguiente:
 
-1.  DriveHome. WPL
-2.  GymMusic. WPL
-3.  Relajarse. WPL
+1.  DriveHome.WPL
+2.  Descontrol.WPL
+3.  Relax.WPL
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 | Requisito | Value |
 |--------------------|---------------------------------------------|
-| Versión<br/> | Windows Media Player 10 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media 10 o posterior<br/> |
 
 
 
@@ -70,10 +70,10 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> <dt>
 
-[**Enumerar listas de reproducción de sincronización**](enumerating-synchronization-playlists.md)
+[**Enumeración de listas de reproducción de sincronización**](enumerating-synchronization-playlists.md)
 </dt> </dl>
 
  

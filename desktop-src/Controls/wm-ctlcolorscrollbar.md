@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CTLCOLORSCROLLBAR (Winuser. h)
-description: El \_ mensaje de CTLCOLORSCROLLBAR de WM se envía a la ventana primaria de un control de barra de desplazamiento cuando el control está a punto de dibujarse.
+title: WM_CTLCOLORSCROLLBAR mensaje (Winuser.h)
+description: El mensaje WM CTLCOLORSCROLLBAR se envía a la ventana primaria de un control de barra de desplazamiento cuando el control está a punto \_ de dibujarse.
 ms.assetid: 35832a23-96f1-42cb-a986-06726bf2a124
 keywords:
-- WM_CTLCOLORSCROLLBAR controles de mensajes de Windows
+- WM_CTLCOLORSCROLLBAR controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3f8282e8e15bf1d1a668e1f57e17048f0babac2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 35dba3394c3d8fd99fef88d6fa1869ea1129d95ae8a82cc33f2935e5688871a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018563"
 ---
-# <a name="wm_ctlcolorscrollbar-message"></a>Mensaje de CTLCOLORSCROLLBAR de WM \_
+# <a name="wm_ctlcolorscrollbar-message"></a>Mensaje \_ CTLCOLORSCROLLBAR de WM
 
-El mensaje de **\_ CTLCOLORSCROLLBAR de WM** se envía a la ventana primaria de un control de barra de desplazamiento cuando el control está a punto de dibujarse. Al responder a este mensaje, la ventana primaria puede usar el identificador de contexto de presentación para establecer el color de fondo del control de barra de desplazamiento.
+El **mensaje \_ WM CTLCOLORSCROLLBAR** se envía a la ventana primaria de un control de barra de desplazamiento cuando el control está a punto de dibujarse. Al responder a este mensaje, la ventana primaria puede usar el identificador de contexto de presentación para establecer el color de fondo del control de barra de desplazamiento.
 
-Una ventana recibe este mensaje a través de su función [*WindowProc*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [*función WindowProc.*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -44,7 +44,7 @@ WM_CTLCOLORSCROLLBAR
 *wParam* 
 </dt> <dd>
 
-Identificador del contexto de dispositivo para el control de barra de desplazamiento.
+Identificador del contexto del dispositivo para el control de barra de desplazamiento.
 
 </dd> <dt>
 
@@ -57,19 +57,19 @@ Identificador de la barra de desplazamiento.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si una aplicación procesa este mensaje, debe devolver el identificador a un pincel. El sistema utiliza el pincel para pintar el fondo del control de barra de desplazamiento.
+Si una aplicación procesa este mensaje, debe devolver el identificador a un pincel. El sistema usa el pincel para pintar el fondo del control de barra de desplazamiento.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la aplicación devuelve un pincel que creó (por ejemplo, mediante la función [**CreateSolidBrush**](/windows/desktop/api/wingdi/nf-wingdi-createsolidbrush) o [**CreateBrushIndirect**](/windows/desktop/api/wingdi/nf-wingdi-createbrushindirect) ), la aplicación debe liberar el pincel. Si la aplicación devuelve un pincel del sistema (por ejemplo, uno recuperado por la función [**GetStockObject**](/windows/desktop/api/wingdi/nf-wingdi-getstockobject) o [**GetSysColorBrush**](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) ), no es necesario que la aplicación libere el pincel.
+Si la aplicación devuelve un pincel que creó (por ejemplo, mediante la [**función CreateSolidBrush**](/windows/desktop/api/wingdi/nf-wingdi-createsolidbrush) o [**CreateBrushIndirect),**](/windows/desktop/api/wingdi/nf-wingdi-createbrushindirect) la aplicación debe liberar el pincel. Si la aplicación devuelve un pincel del sistema (por ejemplo, uno recuperado por la función [**GetStockObject**](/windows/desktop/api/wingdi/nf-wingdi-getstockobject) o [**GetSysColorBrush),**](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) la aplicación no necesita liberar el pincel.
 
-De forma predeterminada, la función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) selecciona los colores predeterminados del sistema para el control de barra de desplazamiento.
+De forma predeterminada, [**la función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) selecciona los colores predeterminados del sistema para el control de barra de desplazamiento.
 
-El mensaje de **\_ CTLCOLORSCROLLBAR de WM** nunca se envía entre subprocesos; solo se envía dentro del mismo subproceso.
+El **mensaje \_ WM CTLCOLORSCROLLBAR** nunca se envía entre subprocesos; solo se envía dentro del mismo subproceso.
 
-Si un procedimiento de cuadro de diálogo controla este mensaje, debe convertir el valor devuelto deseado a **int \_ ptr** y devolver el valor directamente. Si el procedimiento del cuadro de diálogo devuelve **false**, se realiza el control de mensajes predeterminado. \_Se omite el valor de DWL MSGRESULT establecido por la función [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) .
+Si un procedimiento de cuadro de diálogo controla este mensaje, debe convertir el valor devuelto deseado en **int \_ PTR** y devolver el valor directamente. Si el procedimiento del cuadro de diálogo **devuelve FALSE,** se realiza el control de mensajes predeterminado. Se omite el valor MSGRESULT de DWL establecido por la función \_ [**SetWindowLong.**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga)
 
-El **mensaje \_ CTLCOLORSCROLLBAR de WM** solo lo usan los controles de barra de desplazamiento secundarios. Las barras de desplazamiento adjuntas a una ventana (WS \_ Scroll y WS \_ VSCROLL) no generan este mensaje. Para personalizar la apariencia de las barras de desplazamiento asociadas a una ventana, use las funciones de barra de desplazamiento plana.
+El **mensaje \_ WM CTLCOLORSCROLLBAR** solo lo usan los controles de barra de desplazamiento secundarios. Las barras de desplazamiento asociadas a una ventana (WS \_ SCROLL y WS \_ VSCROLL) no generan este mensaje. Para personalizar la apariencia de las barras de desplazamiento asociadas a una ventana, use las funciones de barra de desplazamiento plano.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,9 +77,9 @@ El **mensaje \_ CTLCOLORSCROLLBAR de WM** solo lo usan los controles de barra de
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -90,16 +90,16 @@ El **mensaje \_ CTLCOLORSCROLLBAR de WM** solo lo usan los controles de barra de
 **Referencia**
 </dt> <dt>
 
-[**CTLCOLORBTN de WM \_**](wm-ctlcolorbtn.md)
+[**WM \_ CTLCOLORBTN**](wm-ctlcolorbtn.md)
 </dt> <dt>
 
-[**CTLCOLOREDIT de WM \_**](wm-ctlcoloredit.md)
+[**WM \_ CTLCOLOREDIT**](wm-ctlcoloredit.md)
 </dt> <dt>
 
-[**CTLCOLORLISTBOX de WM \_**](wm-ctlcolorlistbox.md)
+[**WM \_ CTLCOLORLISTBOX**](wm-ctlcolorlistbox.md)
 </dt> <dt>
 
-[**CTLCOLORSTATIC de WM \_**](wm-ctlcolorstatic.md)
+[**WM \_ CTLCOLORSTATIC**](wm-ctlcolorstatic.md)
 </dt> <dt>
 
 **Otros recursos**
@@ -111,10 +111,10 @@ El **mensaje \_ CTLCOLORSCROLLBAR de WM** solo lo usan los controles de barra de
 [**RealizePalette**](/windows/desktop/api/wingdi/nf-wingdi-realizepalette)
 </dt> <dt>
 
-[**SelectPalette**](/windows/desktop/api/wingdi/nf-wingdi-selectpalette)
+[**SeleccionarPalette**](/windows/desktop/api/wingdi/nf-wingdi-selectpalette)
 </dt> <dt>
 
-[**CTLCOLORDLG de WM \_**](/windows/desktop/dlgbox/wm-ctlcolordlg)
+[**WM \_ CTLCOLORDLG**](/windows/desktop/dlgbox/wm-ctlcolordlg)
 </dt> </dl>
 
  
