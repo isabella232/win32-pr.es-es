@@ -4,7 +4,7 @@ description: Espera a que se complete la tarea o a que transcurra el intervalo d
 ms.assetid: 28718c54-4411-4c69-89de-35ea6a8d074c
 keywords:
 - Equipo virtual del método WaitForCompletion
-- Método WaitForCompletion De PC virtual, interfaz IVMTask
+- Método WaitForCompletion para PC virtual, interfaz IVMTask
 - IVMTask interface Virtual PC , Método WaitForCompletion
 topic_type:
 - apiref
@@ -69,13 +69,13 @@ Este método puede devolver uno de estos valores.
 
 ## <a name="remarks"></a>Comentarios
 
-El **método WaitForCompletion** coloca el subproceso de ejecución actual en modo de suspensión hasta que se devuelve. No se recomienda especificar una espera infinita (tiempo de espera = -1) a menos que sea absolutamente crítico que la tarea se complete en cualquier circunstancia.
+El **método WaitForCompletion** pone el subproceso de ejecución actual en suspensión hasta que vuelve. No se recomienda especificar una espera infinita (tiempo de espera = -1) a menos que sea absolutamente fundamental que la tarea se complete en cualquier circunstancia.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
@@ -86,7 +86,7 @@ El **método WaitForCompletion** coloca el subproceso de ejecución actual en mo
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: Función MrmIndexString (MrmResourceIndexer. h)
-description: Indexa un recurso de cadena único que pertenece a una aplicación de UWP.
+title: Función MrmIndexString (MrmResourceIndexer.h)
+description: Indexa un recurso de cadena única que pertenece a una aplicación para UWP.
 ms.assetid: 098F47E7-4BEC-452F-A33C-111F3F524E67
 keywords:
-- Menús de la función MrmIndexString y otros recursos
+- Menús de función MrmIndexString y otros recursos
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec0c81155ae2484dd38f29e332a5f0093b07cd9a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 99da5b63c08d0068553ca9240798eabe360671fa94139b31841831dd68df3958
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117687257"
 ---
-# <a name="mrmindexstring-function"></a>MrmIndexString función)
+# <a name="mrmindexstring-function"></a>Función MrmIndexString
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Indexa un recurso de cadena único que pertenece a una aplicación de UWP. Toma una lista explícita (pero opcional) de calificadores de recursos. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea [API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Indexa un recurso de cadena única que pertenece a una aplicación para UWP. Toma una lista explícita (pero opcional) de calificadores de recursos. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea API de indexación de recursos de paquetes (PRI) y sistemas [de compilación personalizados.](/windows/uwp/app-resources/pri-apis-custom-build-systems)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,25 +45,25 @@ HRESULT HRESULT MrmIndexString(
 
 <dl> <dt>
 
-*indexador* \[ de\]
+*indexador* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **MrmResourceIndexerHandle**](mrmresourceindexerhandle.md)**
 
-Identificador que identifica el indizador de recursos que indizará los recursos de cadena.
+Identificador que identifica el indexador de recursos que indexará los recursos de cadena.
 
 </dd> <dt>
 
-*resourceUri* \[ de\]
+*resourceUri* \[ En\]
 </dt> <dd>
 
 Tipo: **PCWSTR**
 
-URI de recurso que se va a asignar al recurso. La ruta de acceso se usará como el nombre del subárbol del mapa de recursos para este recurso cuando se genere posteriormente un archivo PRI a partir de este indexador de recursos.
+URI del recurso que se asignará al recurso. La ruta de acceso se usará como nombre del subárbol del mapa de recursos para este recurso cuando más adelante genere un archivo PRI a partir de este indexador de recursos.
 
 </dd> <dt>
 
-*resourceString* \[ de\]
+*resourceString* \[ En\]
 </dt> <dd>
 
 Tipo: **PCWSTR**
@@ -72,12 +72,12 @@ Valor del recurso de cadena.
 
 </dd> <dt>
 
-*calificadores* \[ en, opcional\]
+*calificadores* \[ in, opcional\]
 </dt> <dd>
 
 Tipo: **PCWSTR**
 
-Una lista opcional de calificadores de recursos, por ejemplo, L "Language-en-US \_ Scale-100 \_ Contrast-Standard". Una cadena vacía o **nullptr** indica un recurso neutro. Los calificadores de recursos *no* se deducen de *resourceUri*.
+Lista opcional de calificadores de recursos, por ejemplo, L"language-en-US \_ scale-100 \_ contrast-standard". Una cadena vacía o **nullptr** indica un recurso neutro. Los calificadores de recursos *no se* deducen *de resourceUri.*
 
 </dd> </dl>
 
@@ -85,29 +85,29 @@ Una lista opcional de calificadores de recursos, por ejemplo, L "Language-en-US 
 
 Tipo: **HRESULT**
 
-Es \_ correcto si la función se realizó correctamente; de lo contrario, es algún otro valor. Use las macros SUCCEEDED () o FAILed () (definidas en Winerror. h) para determinar si la operación se ha realizado correctamente o no.
+S \_ Ok si la función se ha hecho correctamente; de lo contrario, algún otro valor. Use las macros SUCCEEDED() o FAILED() (definidas en winerror.h) para determinar el éxito o el error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si desea especificar los calificadores de recursos, páselo en el parámetro *calificadores* . Los calificadores de recursos *no* se deducen de *resourceUri*.
+Si desea especificar los calificadores de recursos, pásenlos en el parámetro *qualifiers.* Los calificadores de recursos *no se* deducen *de resourceUri.*
 
-El segmento de nombre de archivo de *resourceUri* se usa como nombre del recurso.
+El segmento de nombre de archivo *de resourceUri* se usa como nombre del recurso.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1803 \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server \[\]<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Mrmsupport. lib</dt> </dl>       |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de servidor\]<br/>                                                 |
+| Header<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Mrmsupport.lib</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Mrmsupport.dll</dt> </dl>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

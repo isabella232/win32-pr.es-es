@@ -1,11 +1,11 @@
 ---
-title: Tiene el atributo-Master-NC
-description: Nombre distintivo para los contextos de nomenclatura del controlador de dominio. Vínculo hacia delante del atributo de Mastered-By.
+title: Atributo Has-Master-NCs
+description: Nombre distintivo de los contextos de nomenclatura para el controlador de dominio. Vínculo hacia delante para el Mastered-By atributo.
 ms.assetid: 77a7e693-513f-4f76-8c4f-d2ef3240323b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo tiene-Master-NC
-- hasMasterNCs esquema de AD de atributos
+- Esquema de AD del atributo Has-Master-NCs
+- Esquema de AD del atributo hasMasterNCs
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d34756c491c5228c58da1b95d4fd7b838c691f38
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f5c9f80861076d685da972666d61767b80dfe835445bcafb15a6a3f1a9c686f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118176819"
 ---
-# <a name="has-master-ncs-attribute"></a>Tiene el atributo-Master-NC
+# <a name="has-master-ncs-attribute"></a>Atributo Has-Master-NCs
 
-Nombre distintivo para los contextos de nomenclatura del controlador de dominio. Vínculo hacia delante del atributo de Mastered-By.
+Nombre distintivo de los contextos de nomenclatura para el controlador de dominio. Vínculo hacia delante para el Mastered-By atributo.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
-| CN                | Tiene-Master-NC                          |
-| Nombre para mostrar de LDAP | hasMasterNCs                            |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | Has-Master-NCs                          |
+| Ldap-Display-Name | hasMasterNCs                            |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.2.14                   |
-| System-ID-GUID    | bf967982-0de6-11d0-a285-00aa003049e2    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | bf967982-0de6-11d0-a285-00aa003049e2    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -44,7 +44,7 @@ Nombre distintivo para los contextos de nomenclatura del controlador de dominio.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Nombre distintivo para los contextos de nomenclatura del controlador de dominio.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | 76                                       |
+| Id. de vínculo                | 76                                       |
 | MAPI-Id                | 0x80B6                                   |
-| System-Only            | True                                     |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -77,13 +77,13 @@ Nombre distintivo para los contextos de nomenclatura del controlador de dominio.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | 76                                       |
+| Id. de vínculo                | 76                                       |
 | MAPI-Id                | 0x80B6                                   |
-| System-Only            | True                                     |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -92,19 +92,19 @@ Nombre distintivo para los contextos de nomenclatura del controlador de dominio.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | 76                                       |
+| Id. de vínculo                | 76                                       |
 | MAPI-Id                | 0x80B6                                   |
-| System-Only            | True                                     |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -119,13 +119,13 @@ Nombre distintivo para los contextos de nomenclatura del controlador de dominio.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | 76                                       |
+| Id. de vínculo                | 76                                       |
 | MAPI-Id                | 0x80B6                                   |
-| System-Only            | True                                     |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -140,13 +140,13 @@ Nombre distintivo para los contextos de nomenclatura del controlador de dominio.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | 76                                       |
+| Id. de vínculo                | 76                                       |
 | MAPI-Id                | 0x80B6                                   |
-| System-Only            | True                                     |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -161,13 +161,13 @@ Nombre distintivo para los contextos de nomenclatura del controlador de dominio.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | 76                                       |
+| Id. de vínculo                | 76                                       |
 | MAPI-Id                | 0x80B6                                   |
-| System-Only            | True                                     |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -182,13 +182,13 @@ Nombre distintivo para los contextos de nomenclatura del controlador de dominio.
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | 76                                       |
+| Id. de vínculo                | 76                                       |
 | MAPI-Id                | 0x80B6                                   |
-| System-Only            | True                                     |
-| Tiene un único valor       | False                                    |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Falso                                    |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |

@@ -1,5 +1,5 @@
 ---
-title: Propiedad RemoteApplicationProgram de ITSRemoteProgram2
+title: Propiedad REMOTEApplicationProgram de ITSRemoteProgram2
 description: Ruta de acceso y nombre de archivo del programa RemoteApp.
 ms.assetid: 1e8fc9a5-6622-40e2-b434-a26ce20bd9aa
 ms.tgt_platform: multiple
@@ -29,7 +29,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117756689"
 ---
-# <a name="itsremoteprogram2remoteapplicationprogram-property"></a>ITSRemoteProgram2::RemoteApplicationProgram, propiedad
+# <a name="itsremoteprogram2remoteapplicationprogram-property"></a>Propiedad ITSRemoteProgram2::RemoteApplicationProgram
 
 Ruta de acceso y nombre de archivo del programa RemoteApp.
 
@@ -54,7 +54,7 @@ Ruta de acceso y nombre de archivo del programa RemoteApp.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
@@ -63,7 +63,7 @@ Ruta de acceso y nombre de archivo del programa RemoteApp.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

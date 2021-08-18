@@ -3,7 +3,7 @@ title: Enumeraciones de la versión 2 del Administrador de tablas de enrutamient
 description: Las funciones RTMv2 usan la enumeración siguiente
 ms.assetid: 5fb3c879-afeb-4d3a-a94a-84e25023336a
 keywords:
-- RRAS del servicio de enrutamiento y acceso remoto, versión 2 de Routing Table Manager, tipos enumerados
+- RRAS del servicio de enrutamiento y acceso remoto,Routing Table Manager versión 2, tipos enumerados
 - RRAS de Routing Table Manager versión 2, tipos enumerados
 ms.topic: article
 ms.date: 05/31/2018

@@ -1,24 +1,24 @@
 ---
-title: Propiedad MaxReconnectAttempts de IMsRdpClientAdvancedSettings2
-description: Especifica el número de veces que se intentará volver a conectar durante la reconexión automática.
+title: Propiedad IMsRdpClientAdvancedSettings2 MaxReconnectAttempts
+description: Especifica el número de veces que se intenta volver a conectar durante la reconexión automática.
 ms.assetid: 24bfd3b6-d2de-4e46-8b5f-a4702c18a93c
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad MaxReconnectAttempts
-- Propiedad MaxReconnectAttempts Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad MaxReconnectAttempts
-- Propiedad MaxReconnectAttempts Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad MaxReconnectAttempts
-- Propiedad MaxReconnectAttempts Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad MaxReconnectAttempts
-- Propiedad MaxReconnectAttempts Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad MaxReconnectAttempts
-- Propiedad MaxReconnectAttempts Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad MaxReconnectAttempts
-- Propiedad MaxReconnectAttempts Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad MaxReconnectAttempts
-- Propiedad MaxReconnectAttempts Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad MaxReconnectAttempts
+- Propiedad MaxReconnectAttempts Servicios de Escritorio remoto
+- Propiedad MaxReconnectAttempts Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad MaxReconnectAttempts
+- Propiedad MaxReconnectAttempts Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad MaxReconnectAttempts
+- Propiedad MaxReconnectAttempts Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad MaxReconnectAttempts
+- Propiedad MaxReconnectAttempts Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad MaxReconnectAttempts
+- Propiedad MaxReconnectAttempts Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad MaxReconnectAttempts
+- Propiedad MaxReconnectAttempts Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad MaxReconnectAttempts
+- Propiedad MaxReconnectAttempts Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad MaxReconnectAttempts
 topic_type:
 - apiref
 api_name:
@@ -49,20 +49,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 322796a2d6ca6a13476dad58af8c385b8bdfa1fb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2e3ff5875e55de54ddf454dd8d3e283fd77be42ae1c54474fc4acdaaef8a55ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757361"
 ---
-# <a name="imsrdpclientadvancedsettings2maxreconnectattempts-property"></a>IMsRdpClientAdvancedSettings2:: MaxReconnectAttempts (propiedad)
+# <a name="imsrdpclientadvancedsettings2maxreconnectattempts-property"></a>Propiedad IMsRdpClientAdvancedSettings2::MaxReconnectAttempts
 
-Especifica el número de veces que se intentará volver a conectar durante la reconexión automática.
+Especifica el número de veces que se intenta volver a conectar durante la reconexión automática.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -79,17 +79,17 @@ HRESULT get_MaxReconnectAttempts(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El nuevo número de reintentos. Los valores válidos son de 0 a 200, ambos incluidos.
+Nuevo número de reintentos. Los valores válidos son de 0 a 200, ambos inclusive.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No se puede establecer esta propiedad cuando el control está conectado.
+Esta propiedad no se puede establecer cuando el control está conectado.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

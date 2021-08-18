@@ -1,21 +1,21 @@
 ---
-title: Funciones de servicios Web de Windows
-description: Las funciones de servicios Web de Windows admiten el modelo de programación basado en métodos de la API de servicios Web de Windows.
+title: Windows Funciones de servicios web
+description: Las Windows Web Services Functions admiten el modelo de programación basado en métodos de Windows Web Services API.
 ms.assetid: 7eb62c55-d01e-43aa-aeb7-2940bf505b66
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38a49f6cca4ea6a4ac1bcfdc8ad4a5de4cbb10aa
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ee4daf5f1442f0badba0a9d6e222c9c986063e4f9cac0a26485f02e08ada1006
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118192415"
 ---
-# <a name="windows-web-services-functions"></a>Funciones de servicios Web de Windows
+# <a name="windows-web-services-functions"></a>Windows Funciones de servicios web
 
-Las funciones de servicios Web de Windows admiten el modelo de programación basado en métodos de la API de servicios Web de Windows. El entorno de tiempo de ejecución del [host de servicio](service-host.md) del nivel de API del [modelo de servicio](service-model-layer-overview.md) proporciona el modelo de programación del lado servidor. Se abre una aplicación del lado servidor, se cierra y se libera un recurso de host de servicio según sea necesario para procesar las solicitudes de cliente. El proxy de servicio proporciona el modelo de programación de API del lado cliente. Las aplicaciones del lado cliente pueden enviar y recibir mensajes a través de un canal a través del proxy de servicio como llamadas a métodos.
+Las Windows Web Services Functions admiten el modelo de programación basado en métodos de Windows Web Services API. El [entorno de tiempo de ejecución](service-host.md) del host de servicio de la capa de API [del](service-model-layer-overview.md) modelo de servicio proporciona el modelo de programación del lado servidor. Una aplicación del lado servidor se abre, cierra y libera un recurso de host de servicio según sea necesario para procesar las solicitudes de cliente. El proxy de servicio proporciona el modelo de programación de API del lado cliente. Las aplicaciones del lado cliente pueden enviar y recibir mensajes a través de un canal a través del proxy de servicio como llamadas de método.
 
-La API de servicios Web de Windows incluye las siguientes funciones:
+La API Windows Web Services incluye las siguientes funciones:
 
 -   [**WsAbandonCall**](/windows/desktop/api/WebServices/nf-webservices-wsabandoncall)
 -   [**WsAbandonMessage**](/windows/desktop/api/WebServices/nf-webservices-wsabandonmessage)
@@ -60,8 +60,8 @@ La API de servicios Web de Windows incluye las siguientes funciones:
 -   [**WsDecodeUrl**](/windows/desktop/api/WebServices/nf-webservices-wsdecodeurl)
 -   [**WsDumpMemory**](wsdumpmemory.md)
 -   [**WsEncodeUrl**](/windows/desktop/api/WebServices/nf-webservices-wsencodeurl)
--   [**WsEndReaderCanonicalization**](/windows/desktop/api/WebServices/nf-webservices-wsendreadercanonicalization)
--   [**WsEndWriterCanonicalization**](/windows/desktop/api/WebServices/nf-webservices-wsendwritercanonicalization)
+-   [**WsEndReaderCanalización**](/windows/desktop/api/WebServices/nf-webservices-wsendreadercanonicalization)
+-   [**WsEndWriterCanicalization**](/windows/desktop/api/WebServices/nf-webservices-wsendwritercanonicalization)
 -   [**WsFileTimeToDateTime**](/windows/desktop/api/WebServices/nf-webservices-wsfiletimetodatetime)
 -   [**WsFillBody**](/windows/desktop/api/WebServices/nf-webservices-wsfillbody)
 -   [**WsFillReader**](/windows/desktop/api/WebServices/nf-webservices-wsfillreader)
@@ -182,7 +182,7 @@ La API de servicios Web de Windows incluye las siguientes funciones:
 -   [**WsShutdownSessionChannel**](/windows/desktop/api/WebServices/nf-webservices-wsshutdownsessionchannel)
 -   [**WsSkipNode**](/windows/desktop/api/WebServices/nf-webservices-wsskipnode)
 -   [**WsStartReaderCanonicalization**](/windows/desktop/api/WebServices/nf-webservices-wsstartreadercanonicalization)
--   [**WsStartWriterCanonicalization**](/windows/desktop/api/WebServices/nf-webservices-wsstartwritercanonicalization)
+-   [**WsStartWriterCanalización**](/windows/desktop/api/WebServices/nf-webservices-wsstartwritercanonicalization)
 -   [**WsTrimXmlWhitespace**](/windows/desktop/api/WebServices/nf-webservices-wstrimxmlwhitespace)
 -   [**WsVerifyXmlNCName**](/windows/desktop/api/WebServices/nf-webservices-wsverifyxmlncname)
 -   [**WsWriteArray**](/windows/desktop/api/WebServices/nf-webservices-wswritearray)
@@ -213,9 +213,9 @@ La API de servicios Web de Windows incluye las siguientes funciones:
 -   [**WsWriteXmlnsAttribute**](/windows/desktop/api/WebServices/nf-webservices-wswritexmlnsattribute)
 -   [**WsXmlStringEquals**](/windows/desktop/api/WebServices/nf-webservices-wsxmlstringequals)
 
- 
+ 
 
- 
+ 
 
 
 

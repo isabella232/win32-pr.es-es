@@ -1,7 +1,7 @@
 ---
 description: El método GetRenderEvent recupera el evento que programa la representación.
 ms.assetid: da0272f6-6a1d-4c07-a907-822227b56305
-title: Método CBaseRenderer. GetRenderEvent (Renbase. h)
+title: Método CBaseRenderer.GetRenderEvent (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9e2fd0b9cd98194129eccd2e24e6ee75577d1eec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 04b4adc030e172a3d66d501e745ca9e3d1062fc1551bccb504fff36328d00bbf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822662"
 ---
-# <a name="cbaserenderergetrenderevent-method"></a>CBaseRenderer. GetRenderEvent, método
+# <a name="cbaserenderergetrenderevent-method"></a>Método CBaseRenderer.GetRenderEvent
 
 El `GetRenderEvent` método recupera el evento que programa la representación.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero al evento [**CBaseRenderer:: m \_ RenderEvent**](cbaserenderer-m-renderevent.md) .
+Devuelve un puntero al evento [**CBaseRenderer::m \_ RenderEvent.**](cbaserenderer-m-renderevent.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,16 +50,16 @@ Devuelve un puntero al evento [**CBaseRenderer:: m \_ RenderEvent**](cbaserender
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

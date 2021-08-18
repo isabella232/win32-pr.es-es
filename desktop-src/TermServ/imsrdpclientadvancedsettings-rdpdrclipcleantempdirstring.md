@@ -1,26 +1,26 @@
 ---
-title: Propiedad RdpdrClipCleanTempDirString de IMsRdpClientAdvancedSettings
-description: Esta propiedad no es compatible. | Propiedad RdpdrClipCleanTempDirString de IMsRdpClientAdvancedSettings
+title: Propiedad IMsRdpClientAdvancedSettings RdpdrClipCleanTempDirString
+description: Esta propiedad no es compatible. | Propiedad IMsRdpClientAdvancedSettings RdpdrClipCleanTempDirString
 ms.assetid: 3c143567-edfd-4a28-a390-4733b91aae20
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad RdpdrClipCleanTempDirString
-- Propiedad RdpdrClipCleanTempDirString Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad RdpdrClipCleanTempDirString
-- Propiedad RdpdrClipCleanTempDirString Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad RdpdrClipCleanTempDirString
-- Propiedad RdpdrClipCleanTempDirString Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad RdpdrClipCleanTempDirString
-- Propiedad RdpdrClipCleanTempDirString Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad RdpdrClipCleanTempDirString
-- Propiedad RdpdrClipCleanTempDirString Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad RdpdrClipCleanTempDirString
-- Propiedad RdpdrClipCleanTempDirString Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad RdpdrClipCleanTempDirString
-- Propiedad RdpdrClipCleanTempDirString Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad RdpdrClipCleanTempDirString
-- Propiedad RdpdrClipCleanTempDirString Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad RdpdrClipCleanTempDirString
+- Propiedad RdpdrClipCleanTempDirString Servicios de Escritorio remoto
+- Propiedad RdpdrClipCleanTempDirString Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad RdpdrClipCleanTempDirString
+- Propiedad RdpdrClipCleanTempDirString Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad RdpdrClipCleanTempDirString
+- Propiedad RdpdrClipCleanTempDirString Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad RdpdrClipCleanTempDirString
+- Propiedad RdpdrClipCleanTempDirString Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad RdpdrClipCleanTempDirString
+- Propiedad RdpdrClipCleanTempDirString Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad RdpdrClipCleanTempDirString
+- Propiedad RdpdrClipCleanTempDirString Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad RdpdrClipCleanTempDirString
+- Propiedad RdpdrClipCleanTempDirString Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad RdpdrClipCleanTempDirString
+- Propiedad RdpdrClipCleanTempDirString Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad RdpdrClipCleanTempDirString
 topic_type:
 - apiref
 api_name:
@@ -54,20 +54,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef6f4587551d2eb001dae03431f062a6e227cbda
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d98d00c750f02681ce73a7fd8775b10872ddd7a5917f89d995ea57cd64b865a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105689864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757671"
 ---
-# <a name="imsrdpclientadvancedsettingsrdpdrclipcleantempdirstring-property"></a>IMsRdpClientAdvancedSettings:: RdpdrClipCleanTempDirString (propiedad)
+# <a name="imsrdpclientadvancedsettingsrdpdrclipcleantempdirstring-property"></a>Propiedad IMsRdpClientAdvancedSettings::RdpdrClipCleanTempDirString
 
 Esta propiedad no es compatible.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -84,11 +84,11 @@ HRESULT get_RdpdrClipCleanTempDirString(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El nuevo mensaje.
+Nuevo mensaje.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ false**.
+Devuelve **S \_ FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 

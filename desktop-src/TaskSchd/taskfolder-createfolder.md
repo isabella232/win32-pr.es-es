@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 93a873ef59ea9d099a7a739e5238c722f4b908fd
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 2a5de913ccf98ee8369430425e423813168c083cbde737b5831917a5ee594e1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111387084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117759025"
 ---
 # <a name="taskfoldercreatefolder-method"></a>Método TaskFolder.CreateFolder
 
@@ -46,7 +46,7 @@ ppFolder = .CreateFolder( _
 *folderName* \[ En\]
 </dt> <dd>
 
-Nombre que se usa para identificar la carpeta. Si se especifica "FolderName \\ SubFolder1 SubFolder2", se creará el árbol de carpetas completo si las carpetas \\ no existen. Este parámetro puede ser una ruta de acceso relativa a la instancia [**actual de TaskFolder.**](taskfolder.md) La carpeta de tareas raíz se especifica con una barra diagonal inversa ( \\ ). Un ejemplo de una ruta de acceso de carpeta de tareas, en la carpeta de tareas raíz, \\ es MyTaskFolder. No se puede usar el carácter '.' para especificar la carpeta de tareas actual y '..'. no se pueden usar caracteres para especificar la carpeta de tareas primaria en la ruta de acceso.
+Nombre que se usa para identificar la carpeta. Si se especifica "FolderName \\ SubFolder1 SubFolder2", se creará el árbol de carpetas completo si las carpetas \\ no existen. Este parámetro puede ser una ruta de acceso relativa a la instancia [**actual de TaskFolder.**](taskfolder.md) La carpeta de tareas raíz se especifica con una barra diagonal inversa ( \\ ). Un ejemplo de una ruta de acceso de carpeta de tareas, en la carpeta de tareas raíz, \\ es MyTaskFolder. El carácter "." no se puede usar para especificar la carpeta de tareas actual y "..". no se pueden usar caracteres para especificar la carpeta de tareas primaria en la ruta de acceso.
 
 </dd> <dt>
 
@@ -65,10 +65,10 @@ Objeto [**TaskFolder**](taskfolder.md) que representa la nueva subcarpeta.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 

@@ -33,12 +33,12 @@ Este atributo es una cadena de **lectura** y escritura que contiene uno de los v
 
 
 
-| Valor     | Descripción                                                                     |
+| Value     | Descripción                                                                     |
 |-----------|---------------------------------------------------------------------------------|
 | normal    | Predeterminada. Muestra texto normal en una sola línea.                                 |
 | password  | Muestra asteriscos ( \* ) en lugar de texto. Solo se puede especificar en tiempo de diseño. |
 | mayúsculas | Muestra el texto en mayúsculas.                                                 |
-| minúsculas | Muestra texto como todo en minúsculas.                                                 |
+| minúsculas | Muestra el texto en minúsculas.                                                 |
 | number    | Solo muestra números.                                                          |
 | Multilínea | Muestra varias líneas de texto. Solo se puede especificar en tiempo de diseño.          |
 
@@ -54,13 +54,13 @@ Este atributo solo se puede establecer en "contraseña" o "multilínea" en tiemp
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

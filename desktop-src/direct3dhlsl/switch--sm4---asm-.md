@@ -36,13 +36,13 @@ Transfiere el control a un bloque de instrucciones diferente dentro del cuerpo d
 
 ## <a name="remarks"></a>Comentarios
 
-Una construcción switch endswitch se comporta exactamente como una construcción switch en el lenguaje C, con la siguiente excepción: para las instrucciones predeterminadas del caso / [](endswitch--sm4---asm-.md) D3D11  que pasan al siguiente caso predeterminado sin una interrupción, no pueden tener código [](case--sm4---asm-.md) / [](default--sm4---asm-.md)  /  en ellas. [](break--sm4---asm-.md) Se permite que varias instrucciones **case,** incluido el valor predeterminado **,** aparezcan secuencialmente, compartiendo el mismo bloque de código.
+Una construcción **switch** endswitch se comporta exactamente como una construcción switch en el lenguaje C, con la siguiente excepción: en el caso D3D11, las instrucciones predeterminadas del caso / [](endswitch--sm4---asm-.md) D3D11  que pasan al siguiente caso predeterminado sin una interrupción no pueden tener código [](case--sm4---asm-.md) / [](default--sm4---asm-.md)  /  en ellas. [](break--sm4---asm-.md) Se permite que varias instrucciones **case,** incluido el valor predeterminado **,** aparezcan secuencialmente, compartiendo el mismo bloque de código.
 
 La condición debe ser un componente de registro de 32 bits o una cantidad inmediata. La comparación de igualdad es bit a bit (entero).
 
-Al igual que con cualquier instrucción shader en D3D11, el hardware puede implementar o no la construcción **del conmutador** directamente.
+Al igual que con cualquier instrucción shader en D3D11, el hardware puede implementar o no la **construcción del** conmutador directamente.
 
-**Las** instrucciones Switch se pueden anidar. Cada **bloque** de modificador cuenta como un nivel con respecto al límite de profundidad de anidamiento del control de flujo de 64 por subrutina y principal, independientemente del número de instrucciones **case.** El compilador HLSL no generará subrutinas que superen este límite. El comportamiento de las instrucciones de flujo de control más allá de 64 niveles de profundidad por subrutina no está definido.
+**Las** instrucciones Switch se pueden anidar. Cada **bloque de** modificador cuenta como 1 nivel con respecto al límite de profundidad de anidamiento del control de flujo de 64 por subrutina y principal, independientemente del número de instrucciones **case.** El compilador HLSL no generará subrutinas que superen este límite. El comportamiento de las instrucciones de flujo de control más allá de 64 niveles de profundidad por subrutina no está definido.
 
 En el ejemplo siguiente se muestra cómo usar esta instrucción.
 
@@ -85,9 +85,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
 | [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
@@ -100,7 +100,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

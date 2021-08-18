@@ -1,9 +1,9 @@
 ---
-title: TEXT. FontSize
-description: El atributo FontSize especifica o recupera el tamaño de fuente para el control de texto.
+title: TEXT.fontSize
+description: El atributo fontSize especifica o recupera el tamaño de fuente para el control Text.
 ms.assetid: 066b7c8c-d029-464b-b2f3-7eb070046d99
 keywords:
-- TEXT. FontSize Windows Media Player
+- TEXT.fontSize Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47abd2b14b43c77d160faab20608c524c3c257c0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c717ea717daedce069e84d82f76edabc285b7f43fbf0a3b8759ef129fbbfdc47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118319"
 ---
-# <a name="textfontsize"></a>TEXT. FontSize
+# <a name="textfontsize"></a>TEXT.fontSize
 
-El atributo **FontSize** especifica o recupera el tamaño de fuente para el control de texto.
+El **atributo fontSize** especifica o recupera el tamaño de fuente para el control Text.
 
 ``` syntax
         elementID.fontSize
@@ -29,9 +29,9 @@ El atributo **FontSize** especifica o recupera el tamaño de fuente para el cont
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura y escritura (**Long**) que especifica el tamaño de fuente en puntos. Tiene un valor predeterminado de 10.
+Este atributo es un número de lectura **y** escritura **(long)** que especifica el tamaño de fuente en puntos. Tiene un valor predeterminado de 10.
 
-Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se utilizan los atributos del elemento de **texto** .
+Vea el [atributo value](text-value.md) para obtener un ejemplo que ilustra cómo se usan los atributos del **elemento TEXT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,7 +39,7 @@ Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -50,7 +50,7 @@ Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se 
 [**Elemento TEXT**](text-element.md)
 </dt> <dt>
 
-[**TEXT. fontFace**](text-fontface.md)
+[**TEXT.fontFace**](text-fontface.md)
 </dt> </dl>
 
  

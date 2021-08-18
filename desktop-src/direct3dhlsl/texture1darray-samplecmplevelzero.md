@@ -1,9 +1,9 @@
 ---
-title: 'Métodos Texture1DArray:: Texture1DArray SampleCmpLevelZero'
-description: 'Muestrea solo una textura en el nivel 0 del mipmap, utilizando un valor de comparación para rechazar ejemplos. | Métodos Texture1DArray:: Texture1DArray SampleCmpLevelZero'
+title: Métodos Texture1DArray::Texture1DArray SampleCmpLevelZero
+description: Muestrea solo una textura en el nivel 0 del mapa mip, usando un valor de comparación para rechazar muestras. | Métodos Texture1DArray::Texture1DArray SampleCmpLevelZero
 ms.assetid: 4DA8D8D4-AEFB-408D-8FB7-1C129F7A4AC3
 keywords:
-- SampleCmpLevelZero métodos HLSL
+- Métodos HLSL de SampleCmpLevelZero
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 05d9f928ff9bbc7098035d4eef2c9337fac7b205
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 00566de0f3315b621ffae93562ec88e90bb65a6a6bc2e1c78696614a5cef5ef4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117722969"
 ---
-# <a name="texture1darraysamplecmplevelzero-methods"></a>Texture1DArray:: SampleCmpLevelZero (métodos)
+# <a name="texture1darraysamplecmplevelzero-methods"></a>Métodos Texture1DArray::SampleCmpLevelZero
 
-Muestrea solo una textura en el nivel 0 del mipmap, utilizando un valor de comparación para rechazar ejemplos.
+Muestrea solo una textura en el nivel 0 del mapa mip, usando un valor de comparación para rechazar muestras.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Muestrea solo una textura en el nivel 0 del mipmap, utilizando un valor de compa
 
 | Método                                                                                                    | Descripción                                                                                                                            |
 |:----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
-| [**SampleCmpLevelZero (S, Float, Float, int)**](dx-graphics-hlsl-to-samplecmplevelzero.md)                   | Muestrea solo una textura en el nivel 0 del mipmap y compara el resultado con un valor de comparación.<br/>                                     |
-| [**SampleCmpLevelZero (S, Float, Float, int, uint)**](t1darray-samplecmplevelzero-s-float-float-int-uint-.md) | Muestrea solo una textura en el nivel 0 del mipmap y compara el resultado con un valor de comparación. Devuelve el estado de la operación.<br/> |
+| [**SampleCmpLevelZero(S,float,float,int)**](dx-graphics-hlsl-to-samplecmplevelzero.md)                   | Muestrea una textura solo en el nivel 0 de mapa mip y compara el resultado con un valor de comparación.<br/>                                     |
+| [**SampleCmpLevelZero(S,float,float,int,uint)**](t1darray-samplecmplevelzero-s-float-float-int-uint-.md) | Muestrea una textura solo en el nivel 0 de mapa mip y compara el resultado con un valor de comparación. Devuelve el estado de la operación.<br/> |
 
 
 
@@ -41,7 +41,7 @@ Muestrea solo una textura en el nivel 0 del mipmap, utilizando un valor de compa
 [**Texture1DArray**](sm5-object-texture1darray.md)
 </dt> <dt>
 
-[Texture-objeto](dx-graphics-hlsl-to-type.md)
+[Texture-Object](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

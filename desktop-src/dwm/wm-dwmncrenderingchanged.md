@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_DWMNCRENDERINGCHANGED (Winuser. h)
-description: Se envía cuando cambia la Directiva de representación del área que no es de cliente.
+title: WM_DWMNCRENDERINGCHANGED mensaje (Winuser.h)
+description: Se envía cuando ha cambiado la directiva de representación del área que no es de cliente.
 ms.assetid: 31beb127-ebec-49a8-8b65-de00941cbd67
 keywords:
-- WM_DWMNCRENDERINGCHANGED Administrador de ventanas de escritorio de mensaje
+- WM_DWMNCRENDERINGCHANGED mensaje Administrador de ventanas de escritorio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac32704ea240ccfc4d4de913b940e098ff8f4de4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4bcae8595315d43737d88d6a302bcac3a328418abd19d77b96bd13ee5ef66496
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118502658"
 ---
-# <a name="wm_dwmncrenderingchanged-message"></a>Mensaje de DWMNCRENDERINGCHANGED de WM \_
+# <a name="wm_dwmncrenderingchanged-message"></a>Mensaje \_ DWMNCRENDERINGCHANGED de WM
 
-Se envía cuando cambia la Directiva de representación del área que no es de cliente.
+Se envía cuando ha cambiado la directiva de representación del área que no es de cliente.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,14 +32,14 @@ Se envía cuando cambia la Directiva de representación del área que no es de c
 *wParam* 
 </dt> <dd>
 
-Especifica si la representación de DWM está habilitada para el área no cliente de la ventana. **True** si está habilitado; en caso contrario, **false**.
+Especifica si la representación de DWM está habilitada para el área que no es de cliente de la ventana. **TRUE** si está habilitado; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> </dl>
 
@@ -47,21 +47,21 @@ No se utiliza.
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
-Las funciones [**DwmGetWindowAttribute**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmgetwindowattribute) y [**DwmSetWindowAttribute**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmsetwindowattribute) se usan para obtener o establecer la Directiva de representación que no es de cliente.
+Las [**funciones DwmGetWindowAttribute**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmgetwindowattribute) y [**DwmSetWindowAttribute**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmsetwindowattribute) se usan para obtener o establecer la directiva de representación que no es de cliente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 

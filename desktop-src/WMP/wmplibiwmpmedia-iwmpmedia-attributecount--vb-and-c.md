@@ -3,7 +3,7 @@ title: Propiedad attributeCount de IWMPMedia
 description: La propiedad attributeCount obtiene el número de atributos que se pueden consultar o establecer para el elemento multimedia.
 ms.assetid: 527298ff-365d-41b0-90dd-e236d6adf6fa
 keywords:
-- propiedad attributeCount Reproductor de Windows Media
+- attributeCount, propiedad Reproductor de Windows Media
 - propiedad attributeCount Reproductor de Windows Media , interfaz IWMPMedia
 - Interfaz IWMPMedia Reproductor de Windows Media , propiedad attributeCount
 topic_type:
@@ -55,7 +55,7 @@ Public ReadOnly Property attributeCount As System.Int32
 
 Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
-Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea la [Referencia de atributos](attribute-reference.md).
+Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea referencia [de atributos](attribute-reference.md).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -131,7 +131,7 @@ attributeList.Lines = atList
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -139,7 +139,7 @@ attributeList.Lines = atList
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

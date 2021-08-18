@@ -108,7 +108,7 @@ if (m_spConnectionPoint)
 
 
 
-La implementación de los controladores de eventos **para IWMPEvents** y **\_ WMPOCXEvents** difiere. Para **IWMPEvents**, debe implementar una función para controlar todos los eventos definidos por la interfaz , incluso si no piensa usar el evento .
+La implementación de los controladores de eventos **para IWMPEvents** y **\_ WMPOCXEvents** difiere. Para **IWMPEvents**, debe implementar una función para controlar todos los eventos definidos por la interfaz, incluso si no piensa usar el evento .
 
 
 ```C++
@@ -122,7 +122,7 @@ void STDMETHODCALLTYPE AudioLanguageChange( long LangID ){ return; }
 
 
 
-Para implementar **\_ controladores WMPOCXEvents,** debe usar **IDispatch::Invoke**, que es una implementación de controlador de eventos única para todos los eventos que se están produciendo en la interfaz **IDispatch.** Esto significa que puede elegir controlar solo determinados eventos y omitir otros. En el código de ejemplo siguiente se muestra un **\_ controlador WMPOCXEvents,** mediante **Invoke**, que controla solo los eventos **OpenStateChange** y **PlayStateChange:**
+Para implementar **\_ controladores WMPOCXEvents,** debe usar **IDispatch::Invoke**, que es una implementación de controlador de eventos única para todos los eventos que se suceden en la interfaz **IDispatch.** Esto significa que puede elegir controlar solo determinados eventos y omitir otros. En el código de ejemplo siguiente se muestra un **\_ controlador WMPOCXEvents,** mediante **Invoke**, que controla solo los eventos **OpenStateChange** y **PlayStateChange:**
 
 
 ```C++

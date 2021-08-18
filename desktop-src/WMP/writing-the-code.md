@@ -19,12 +19,12 @@ ms.locfileid: "117745521"
 ---
 # <a name="writing-the-code"></a>Escritura del código
 
-Ahora tiene todos los archivos de arte que necesita. Todo lo que necesita hacer ahora es escribir algunos comandos simples en el archivo de definición de máscara.
+Ahora tiene todos los archivos de arte que necesita. Todo lo que necesita hacer ahora es escribir algunos comandos sencillos en el archivo de definición de máscara.
 
 Las secciones siguientes le guiarán por el proceso de escritura del código.
 
 -   [Líneas iniciales](initial-lines.md)
--   [Sección Descripción](description-section.md)
+-   [Sección descripción](description-section.md)
 -   [Sección Mapas de bits](bitmaps-section.md)
 -   [Sección Botones](buttons-section.md)
 -   [Sección de texto](text-section.md)

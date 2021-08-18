@@ -1,40 +1,40 @@
 ---
-title: Mostrar nombres de tarea y Estados (C++)
-description: En estos dos ejemplos de C++ se muestra cómo enumerar tareas. En un ejemplo se muestra cómo mostrar la información de las tareas en una carpeta de tareas y los otros ejemplos muestran cómo Mostrar información de todas las tareas en ejecución.
+title: Mostrar nombres y estados de tareas (C++)
+description: Estos dos ejemplos de C++ muestran cómo enumerar tareas. En un ejemplo se muestra cómo mostrar información para las tareas en una carpeta de tareas y en los otros ejemplos se muestra cómo mostrar información para todas las tareas en ejecución.
 ms.assetid: 32037133-d3f3-4186-b035-ab01d37ed58d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6189960ef5b6e4ad78e75f156a482481f347b4b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b80ec17b71ae45c951a27ca582855936d73457401d878b0f21f69bcbaa71ca23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103779819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117760190"
 ---
-# <a name="displaying-task-names-and-states-c"></a>Mostrar nombres de tarea y Estados (C++)
+# <a name="displaying-task-names-and-states-c"></a>Mostrar nombres y estados de tareas (C++)
 
-En estos dos ejemplos de C++ se muestra cómo enumerar tareas. En un ejemplo se muestra cómo mostrar la información de las tareas en una carpeta de tareas y los otros ejemplos muestran cómo Mostrar información de todas las tareas en ejecución.
+Estos dos ejemplos de C++ muestran cómo enumerar tareas. En un ejemplo se muestra cómo mostrar información para las tareas en una carpeta de tareas y en los otros ejemplos se muestra cómo mostrar información para todas las tareas en ejecución.
 
-En el procedimiento siguiente se describe cómo mostrar los nombres de tarea y el estado de todas las tareas de una carpeta de tareas.
+En el procedimiento siguiente se describe cómo mostrar los nombres y el estado de todas las tareas de una carpeta de tareas.
 
-**Para mostrar los nombres de tarea y el estado de todas las tareas de una carpeta de tareas**
+**Para mostrar los nombres y el estado de todas las tareas de una carpeta de tareas**
 
 1.  Inicialice COM y establezca la seguridad COM general.
-2.  Cree el objeto [**ITaskService**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) .
+2.  Cree el [**objeto ITaskService.**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice)
 
-    Este objeto le permite conectarse al servicio Programador de tareas y obtener acceso a una carpeta de tareas específica.
+    Este objeto le permite conectarse al servicio Programador de tareas y acceder a una carpeta de tareas específica.
 
-3.  Obtenga una carpeta de tareas que contenga las tareas sobre las que desea obtener información.
+3.  Obtenga una carpeta de tareas que contiene las tareas de las que desea obtener información.
 
-    Use el método [**ITaskService:: GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obtener la carpeta.
+    Use el [**método ITaskService::GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obtener la carpeta.
 
-4.  Obtiene la colección de tareas de la carpeta.
+4.  Obtenga la colección de tareas de la carpeta .
 
-    Use el método [**ITaskFolder:: GetTasks**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-gettasks) para obtener la colección de tareas ([**IRegisteredTaskCollection**](/windows/desktop/api/taskschd/nn-taskschd-iregisteredtaskcollection)).
+    Use el [**método ITaskFolder::GetTasks**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-gettasks) para obtener la colección de tareas ([**IRegisteredTaskCollection**](/windows/desktop/api/taskschd/nn-taskschd-iregisteredtaskcollection)).
 
-5.  Obtiene el número de tareas de la colección y enumera cada tarea de la colección.
+5.  Obtenga el número de tareas de la colección y enumere cada tarea de la colección.
 
-    Use la [**propiedad Item de IRegisteredTaskCollection**](/windows/desktop/api/taskschd/nf-taskschd-iregisteredtaskcollection-get_item) para obtener una instancia de [**IRegisteredTask**](/windows/desktop/api/taskschd/nn-taskschd-iregisteredtask) . Cada instancia contendrá una tarea en la colección. A continuación, puede mostrar la información (valores de propiedad) de cada tarea registrada.
+    Use la [**propiedad Item de IRegisteredTaskCollection para**](/windows/desktop/api/taskschd/nf-taskschd-iregisteredtaskcollection-get_item) obtener una instancia de [**IRegisteredTask.**](/windows/desktop/api/taskschd/nn-taskschd-iregisteredtask) Cada instancia contendrá una tarea en la colección. A continuación, puede mostrar la información (valores de propiedad) de cada tarea registrada.
 
 En el siguiente ejemplo de C++ se muestra cómo mostrar el nombre y el estado de todas las tareas en la carpeta de tareas raíz.
 
@@ -197,19 +197,19 @@ int __cdecl wmain()
 
 
 
-En el procedimiento siguiente se describe cómo mostrar los nombres de tarea y el estado de todas las tareas en ejecución.
+En el procedimiento siguiente se describe cómo mostrar los nombres y el estado de las tareas en ejecución.
 
-**Para mostrar los nombres de tarea y el estado de todas las tareas en ejecución**
+**Para mostrar los nombres y el estado de todas las tareas en ejecución**
 
 1.  Inicialice COM y establezca la seguridad COM general.
-2.  Cree el objeto [**ITaskService**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) .
+2.  Cree el [**objeto ITaskService.**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice)
 
-    Este objeto le permite conectarse al servicio Programador de tareas y obtener acceso a una carpeta de tareas específica.
+    Este objeto le permite conectarse al servicio Programador de tareas y acceder a una carpeta de tareas específica.
 
-3.  Use el método [**ITaskService:: GetRunningTasks**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getrunningtasks) para obtener una colección de todas las tareas en ejecución ([**IRunningTaskCollection**](/windows/desktop/api/taskschd/nn-taskschd-irunningtaskcollection)). Puede especificar para obtener instancias de la tarea en ejecución, incluyendo o excluyendo tareas ocultas.
-4.  Obtiene el número de tareas de la colección y enumera cada tarea de la colección.
+3.  Use el [**método ITaskService::GetRunningTasks**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getrunningtasks) para obtener una colección de todas las tareas en ejecución ([**IRunningTaskCollection**](/windows/desktop/api/taskschd/nn-taskschd-irunningtaskcollection)). Puede especificar para obtener instancias de la tarea en ejecución, incluidas o excluidas las tareas ocultas.
+4.  Obtenga el número de tareas de la colección y enumere cada tarea de la colección.
 
-    Use la [**propiedad Item de IRunningTaskCollection**](/windows/desktop/api/taskschd/nf-taskschd-irunningtaskcollection-get_item) para obtener una instancia de [**IRunningTask**](/windows/desktop/api/taskschd/nn-taskschd-iregisteredtask) . Cada instancia contendrá una tarea en la colección. A continuación, puede mostrar la información (valores de propiedad) de cada tarea registrada.
+    Use la [**propiedad Item de IRunningTaskCollection para**](/windows/desktop/api/taskschd/nf-taskschd-irunningtaskcollection-get_item) obtener una instancia de [**IRunningTask.**](/windows/desktop/api/taskschd/nn-taskschd-iregisteredtask) Cada instancia contendrá una tarea en la colección. A continuación, puede mostrar la información (valores de propiedad) de cada tarea registrada.
 
 En el siguiente ejemplo de C++ se muestra cómo mostrar el nombre y el estado de todas las tareas en ejecución, incluidas las tareas ocultas.
 
@@ -361,12 +361,12 @@ int __cdecl wmain()
 
 <dl> <dt>
 
-[Usar el Programador de tareas](using-the-task-scheduler.md)
+[Uso del Programador de tareas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

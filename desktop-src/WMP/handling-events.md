@@ -3,25 +3,25 @@ title: Controlar eventos
 description: Controlar eventos
 ms.assetid: a3263ef7-bce7-4555-bce3-53e9b4eb0747
 keywords:
-- Máscaras de Media Player de Windows, escribir código
+- Reproductor de Windows Media máscaras, escribir código
 - máscaras, escribir código
-- Aspectos de Windows Media Player, eventos
-- máscaras, eventos
-- eventos, máscaras
-- eventos, escribir código
+- Reproductor de Windows Media máscaras,eventos
+- skins,events
+- events,skins
+- events,writing code
 - escribir código para máscaras, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83e6b807e272ac62bcfc5613341ceaa0c35e8cff
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9991197fb9eeecff23966e979e47968e6c39b8a84b87bd7fdbdd2f7d92bdae56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748292"
 ---
 # <a name="handling-events"></a>Controlar eventos
 
-Aparte del código XML que escriba para inicializar los atributos de la máscara, el código principal que escriba es código JScript para controlar eventos. Los eventos son externos o internos; es decir, proceden del usuario o de Windows Media Player.
+Además del código XML que escribe para inicializar atributos para la máscara, el código principal que escribe se JScript código para controlar los eventos. Los eventos son externos o internos; es decir, proceden del usuario o de Reproductor de Windows Media.
 
 En las secciones siguientes se proporcionan detalles sobre el control de eventos:
 
@@ -37,9 +37,9 @@ En las secciones siguientes se proporcionan detalles sobre el control de eventos
 [**Escribir código**](writing-code.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

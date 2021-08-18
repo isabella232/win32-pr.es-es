@@ -1,9 +1,9 @@
 ---
-title: g_wszWMVCBufferFullnessInFirstByte (Wmcodecdsp. h)
-description: Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte Windows Media Audio y vídeo códec y API de DSP. | g_wszWMVCBufferFullnessInFirstByte (Wmcodecdsp. h)
+title: g_wszWMVCBufferFullnessInFirstByte (Wmcodecdsp.h)
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP API (API de códecs de audio y vídeo multimedia y DSP). | g_wszWMVCBufferFullnessInFirstByte (Wmcodecdsp.h)
 ms.assetid: 434a88a2-9039-4b1a-bc4e-84cf3f2b9009
 keywords:
-- g_wszWMVCBufferFullnessInFirstByte formato de Windows Media
+- g_wszWMVCBufferFullnessInFirstByte windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c745dc5badd143fcbb66c16e363a4d1fd716d673
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d3368e6b068b5ee0effc7f30c4853901f348dc8d0c4dea75f17eea700b53800
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117847928"
 ---
 # <a name="g_wszwmvcbufferfullnessinfirstbyte"></a>g \_ wszWMVCBufferFullnessInFirstByte
 
-Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte [Windows Media Audio y vídeo códec y API de DSP.](/previous-versions//dd464626(v=vs.85))
+Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señales digitales, consulte Windows [Media Audio and Video Codec y LAS API de DSP.](/previous-versions//dd464626(v=vs.85))
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,7 +31,7 @@ Para obtener la documentación actual sobre los códecs de Windows Media y los p
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

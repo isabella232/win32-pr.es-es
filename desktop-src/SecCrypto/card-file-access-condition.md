@@ -1,7 +1,7 @@
 ---
 description: Especifica los permisos de control de acceso para un archivo en una tarjeta inteligente.
 ms.assetid: 995d959f-30dc-4e5c-be2d-6b447499415a
-title: Enumeración CARD_FILE_ACCESS_CONDITION (Cardmod. h)
+title: CARD_FILE_ACCESS_CONDITION enumeración (Cardmod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Cardmod.h
-ms.openlocfilehash: d3ef9fc81c9ab3bff5f3992c3aedeb3f923648ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9a38e7d67e413352de693f52b07ba11bf34858854fa708b41a735152ad3ed2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117771991"
 ---
-# <a name="card_file_access_condition-enumeration"></a>\_ \_ Enumeración de condiciones de acceso a archivos de tarjeta \_
+# <a name="card_file_access_condition-enumeration"></a>Enumeración CARD \_ FILE \_ ACCESS \_ CONDITION
 
-La enumeración de la **\_ \_ \_ condición de acceso a archivos de tarjeta** especifica los permisos de control de acceso para un archivo en una [*tarjeta inteligente*](../secgloss/s-gly.md).
+La **\_ enumeración CARD FILE \_ ACCESS \_ CONDITION** especifica los permisos de control de acceso para un archivo en una [*tarjeta inteligente.*](../secgloss/s-gly.md)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -53,28 +53,28 @@ Este valor no es válido.
 <span id="EveryoneReadUserWriteAc"></span><span id="everyonereaduserwriteac"></span><span id="EVERYONEREADUSERWRITEAC"></span>**EveryoneReadUserWriteAc**
 </dt> <dd>
 
-Todo el mundo puede leer el archivo. Los usuarios específicos pueden escribir en el archivo.
+Todos pueden leer el archivo. Los usuarios específicos pueden escribir en el archivo.
 
 </dd> <dt>
 
 <span id="UserWriteExecuteAc"></span><span id="userwriteexecuteac"></span><span id="USERWRITEEXECUTEAC"></span>**UserWriteExecuteAc**
 </dt> <dd>
 
-Solo los usuarios específicos pueden leer o escribir en el archivo.
+Solo determinados usuarios pueden leer o escribir en el archivo.
 
 </dd> <dt>
 
 <span id="EveryoneReadAdminWriteAc"></span><span id="everyonereadadminwriteac"></span><span id="EVERYONEREADADMINWRITEAC"></span>**EveryoneReadAdminWriteAc**
 </dt> <dd>
 
-Todo el mundo puede leer el archivo. Los administradores pueden escribir en el archivo.
+Todos pueden leer el archivo. Los administradores pueden escribir en el archivo.
 
 </dd> <dt>
 
 <span id="UnknownAc"></span><span id="unknownac"></span><span id="UNKNOWNAC"></span>**UnknownAc**
 </dt> <dd>
 
-Los permisos de acceso para el archivo son desconocidos.
+Se desconocen los permisos de acceso para el archivo.
 
 </dd> </dl>
 
@@ -84,20 +84,20 @@ Los permisos de acceso para el archivo son desconocidos.
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, \[ solo aplicaciones de escritorio de Windows XP\]<br/>                              |
-| Servidor mínimo compatible<br/> | Windows Server 2003, solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>            |
-| Encabezado<br/>                   | <dl> <dt>Cardmod. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP, Windows xp \[ solo aplicaciones de escritorio\]<br/>                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 Windows Server 2003 \[\]<br/>            |
+| Header<br/>                   | <dl> <dt>Cardmod.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Proveedor de servicios criptográficos de tarjeta inteligente base de Microsoft](/previous-versions/windows/desktop/secsmart/microsoft-base-smart-card-cryptographic-service-provider)
 </dt> <dt>
 
-[**\_información del archivo de tarjeta \_**](/previous-versions/windows/desktop/secsmart/card-file-info)
+[**INFORMACIÓN DEL \_ ARCHIVO DE \_ TARJETA**](/previous-versions/windows/desktop/secsmart/card-file-info)
 </dt> <dt>
 
 [**CardCreateFile**](/previous-versions/windows/desktop/secsmart/cardcreatefile)

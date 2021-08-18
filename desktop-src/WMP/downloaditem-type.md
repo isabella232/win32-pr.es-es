@@ -1,9 +1,9 @@
 ---
-title: DownloadItem. tipo
-description: Tenga en cuenta que en esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. La propiedad Type recupera el tipo de la descarga.
+title: DownloadItem.type
+description: Nota En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. La propiedad type recupera el tipo de la descarga.
 ms.assetid: 58ffb8a3-5410-492b-bb0f-9130ed209b78
 keywords:
-- DownloadItem. Escriba Windows Media Player
+- DownloadItem.type Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,23 +14,23 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cdcf21ce7443d7730d4a75518fb4749af0b9e52
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 038f348093a512095ee930c4147024bc789ead5edd3498243eb83a01608bfac9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117749716"
 ---
-# <a name="downloaditemtype"></a>DownloadItem. tipo
+# <a name="downloaditemtype"></a>DownloadItem.type
 
 > [!Note]  
-> En esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-La propiedad **Type** recupera el tipo de la descarga.
+La **propiedad type** recupera el tipo de la descarga.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 DownloadManager.getDownloadCollection(
@@ -43,22 +43,22 @@ DownloadManager.getDownloadCollection(
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es una **cadena** de solo lectura que contiene uno de los valores siguientes.
+Esta propiedad es una cadena de solo **lectura** que contiene uno de los valores siguientes.
 
 
 
 | Value      | Descripción                                                                                                                                                                            |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| background | (Solo Windows XP). La descarga se produce como un proceso en segundo plano a medida que el tiempo de procesador está disponible. Los Estados de descarga se conservan incluso cuando se apaga Windows Media Player o Windows XP. |
-| en tiempo real  | (Todos los sistemas operativos compatibles). La descarga se produce a la vez. No se conservan los Estados de descarga entre sesiones.                                                                       |
+| background | (solo Windows XP). La descarga se produce como un proceso en segundo plano a medida que el tiempo del procesador está disponible. Los estados de descarga persisten incluso cuando Reproductor de Windows Media o Windows xp se apaga. |
+| en tiempo real  | (Todos los sistemas operativos compatibles). La descarga se produce a la vez. No se conservan estados de descarga entre sesiones.                                                                       |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada tipo de descarga tiene ventajas y desventajas. La descarga en segundo plano permite al usuario continuar con otras tareas e incluso reiniciar Windows sin cancelar la descarga, pero tarda más tiempo en completarse para completar la descarga y solo es compatible con Windows XP. La descarga en tiempo real tarda menos tiempo en completarse, pero requiere que el usuario finalice la descarga antes de cerrar Windows Media Player.
+Cada tipo de descarga tiene ventajas y desventajas. La descarga en segundo plano permite al usuario continuar con otras tareas e incluso reiniciar Windows sin cancelar la descarga, pero tarda más tiempo en completar la descarga y solo es compatible con Windows XP. La descarga en tiempo real tarda menos tiempo en completarse, pero requiere que el usuario finalice todas las descargas antes de Reproductor de Windows Media.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ Cada tipo de descarga tiene ventajas y desventajas. La descarga en segundo plano
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/>                                  |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/>                                  |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -75,7 +75,7 @@ Cada tipo de descarga tiene ventajas y desventajas. La descarga en segundo plano
 
 <dl> <dt>
 
-[**Objeto DownloadItem**](downloaditem-object.md)
+[**DownloadItem (objeto)**](downloaditem-object.md)
 </dt> </dl>
 
  

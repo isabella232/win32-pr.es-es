@@ -1,5 +1,5 @@
 ---
-description: En esta tabla se enumeran los tipos de datos base admitidos por Windows Runtime e indica el tipo correspondiente en C \# , Visual Basic y C++.
+description: En esta tabla se enumeran los tipos de datos base admitidos por Windows Runtime e indica el tipo correspondiente \# en C, Visual Basic y C++.
 ms.assetid: B5735851-EC07-48C1-92B4-CA9F768096F6
 title: Windows Tipos de datos base en tiempo de ejecución
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117741659"
 ---
 # <a name="windows-runtime-base-data-types"></a>Windows Tipos de datos base en tiempo de ejecución
 
-En esta tabla se enumeran los tipos de datos base admitidos por Windows Runtime e indica el tipo correspondiente en C \# , Visual Basic y C++.
+En esta tabla se enumeran los tipos de datos base admitidos por Windows Runtime e indica el tipo correspondiente \# en C, Visual Basic y C++.
 
 
 

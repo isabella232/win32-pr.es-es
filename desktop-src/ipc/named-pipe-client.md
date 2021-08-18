@@ -1,27 +1,27 @@
 ---
-description: En el ejemplo de código se muestra un cliente de canalización que abre una canalización con nombre, establece el identificador de canalización en modo de lectura de mensaje, utiliza la función WriteFile para enviar una solicitud al servidor y usa la función ReadFile para leer la respuesta de los servidores.
+description: En el ejemplo de código se muestra un cliente de canalización que abre una canalización con nombre, establece el identificador de canalización en modo de lectura de mensajes, usa la función WriteFile para enviar una solicitud al servidor y usa la función ReadFile para leer la respuesta de los servidores.
 ms.assetid: 0779242c-45f4-4cd9-9c9f-36cff54c8dee
 title: Cliente de canalización con nombre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6318edd7d5b41c701e3112188a896c0529338805
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4d00a3fec3e3d7df80468822d2e147cbae38f440e39fd55dafc9ed3ea2442cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117695178"
 ---
 # <a name="named-pipe-client"></a>Cliente de canalización con nombre
 
-Un cliente de canalización con nombre utiliza la función [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) para abrir un identificador a una canalización con nombre. Si existe la canalización pero todas sus instancias están ocupadas, **CreateFile** devuelve el **\_ \_ valor de identificador no válido** y la función [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve la canalización de errores \_ \_ ocupada. Cuando esto ocurre, el cliente de canalización con nombre usa la función [**WaitNamedPipe**](/windows/desktop/api/Winbase/nf-winbase-waitnamedpipea) para esperar a que una instancia de la canalización con nombre esté disponible.
+Un cliente de canalización con nombre usa [**la función CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) para abrir un identificador en una canalización con nombre. Si la canalización existe pero todas sus instancias están ocupadas, **CreateFile** devuelve **INVALID HANDLE \_ \_ VALUE** y la función [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve ERROR \_ PIPE \_ BUSY. Cuando esto sucede, el cliente de canalización con nombre usa la [**función WaitNamedPipe**](/windows/desktop/api/Winbase/nf-winbase-waitnamedpipea) para esperar a que una instancia de la canalización con nombre esté disponible.
 
-Se produce un error en la función [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) si el acceso especificado no es compatible con el acceso especificado (dúplex, salida o entrante) cuando el servidor creó la canalización. En el caso de una canalización dúplex, el cliente puede especificar el acceso de lectura, escritura o lectura y escritura; en el caso de una canalización de salida (servidor de solo escritura), el cliente debe especificar el acceso de solo lectura; y para una canalización de entrada (servidor de solo lectura), el cliente debe especificar el acceso de solo escritura.
+Se produce un error en la función [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) si el acceso especificado no es compatible con el acceso especificado (dúplex, saliente o entrante) cuando el servidor creó la canalización. Para una canalización dúplex, el cliente puede especificar el acceso de lectura, escritura o lectura/escritura; para una canalización de salida (servidor de solo escritura), el cliente debe especificar el acceso de solo lectura; y para una canalización de entrada (servidor de solo lectura), el cliente debe especificar el acceso de solo escritura.
 
-El identificador devuelto por [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) tiene como valor predeterminado el modo de lectura de bytes, el modo de espera de bloqueo, el modo superpuesto deshabilitado y el modo de escritura a través deshabilitado. El cliente de canalización puede usar **CreateFile** para habilitar el modo superpuesto especificando la superposición de la marca de archivo \_ \_ o para habilitar el modo de escritura a través especificando la escritura de marca de archivo \_ \_ \_ a través de. El cliente puede usar la función [**SetNamedPipeHandleState**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-setnamedpipehandlestate) para habilitar el modo de no bloqueo especificando la canalización \_ nowait o para habilitar el modo de lectura de mensajes especificando el mensaje de canalización \_ READMODE \_ .
+El identificador devuelto por [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) tiene como valor predeterminado el modo de lectura de bytes, el modo de bloqueo y espera, el modo superpuesto deshabilitado y el modo de escritura a través deshabilitado. El cliente de canalización puede usar **CreateFile** para habilitar el modo superpuesto especificando FILE FLAG OVERLAPPED o para habilitar el modo de escritura a través \_ \_ especificando FILE \_ FLAG WRITE \_ \_ THROUGH. El cliente puede usar la función [**SetNamedPipeHandleState**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-setnamedpipehandlestate) para habilitar el modo de no bloqueo especificando PIPE NOWAIT o para habilitar el modo de lectura de mensajes especificando \_ PIPE \_ READMODE \_ MESSAGE.
 
-En el ejemplo siguiente se muestra un cliente de canalización que abre una canalización con nombre, se establece el identificador de canalización en modo de lectura de mensaje, se usa la función [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile) para enviar una solicitud al servidor y se usa la función [**readfile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) para leer la respuesta del servidor. Este cliente de canalización se puede usar con cualquiera de los servidores de tipo de mensaje enumerados en la parte inferior de este tema. Sin embargo, con un servidor de tipo byte, se produce un error en este cliente de canalización cuando llama a [**SetNamedPipeHandleState**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-setnamedpipehandlestate) para cambiar al modo de lectura de mensajes. Dado que el cliente está leyendo de la canalización en modo de lectura de mensajes, es posible que la operación **readfile** devuelva cero después de leer un mensaje parcial. Esto sucede cuando el mensaje es mayor que el búfer de lectura. En esta situación, [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve \_ \_ los datos de error y el cliente puede leer el resto del mensaje mediante llamadas adicionales a **readfile**.
+En el ejemplo siguiente se muestra un cliente de canalización que abre una canalización con nombre, establece el identificador de canalización en modo de lectura de mensajes, usa la función [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile) para enviar una solicitud al servidor y usa la función [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) para leer la respuesta del servidor. Este cliente de canalización se puede usar con cualquiera de los servidores de tipo de mensaje enumerados en la parte inferior de este tema. Sin embargo, con un servidor de tipo byte, se produce un error en este cliente de canalización cuando llama a [**SetNamedPipeHandleState**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-setnamedpipehandlestate) para cambiar al modo de lectura de mensajes. Dado que el cliente está leyendo desde la canalización en modo de lectura de mensajes, es posible que la operación **ReadFile** devuelva cero después de leer un mensaje parcial. Esto sucede cuando el mensaje es mayor que el búfer de lectura. En esta situación, [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve ERROR MORE DATA y el cliente puede leer el resto del mensaje mediante llamadas \_ \_ adicionales a **ReadFile**.
 
-Este cliente de canalización se puede usar con cualquiera de los servidores de canalización que se enumeran en vea también.
+Este cliente de canalización se puede usar con cualquiera de los servidores de canalización enumerados en Vea también.
 
 
 ```C++
@@ -155,7 +155,7 @@ int _tmain(int argc, TCHAR *argv[])
 [Servidor de canalización multiproceso](multithreaded-pipe-server.md)
 </dt> <dt>
 
-[Servidor de canalización con nombre mediante e/s superpuestas](named-pipe-server-using-overlapped-i-o.md)
+[Servidor de canalización con nombre que usa E/S superpuesta](named-pipe-server-using-overlapped-i-o.md)
 </dt> <dt>
 
 [Servidor de canalización con nombre mediante rutinas de finalización](named-pipe-server-using-completion-routines.md)

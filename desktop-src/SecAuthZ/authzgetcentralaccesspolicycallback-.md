@@ -1,5 +1,5 @@
 ---
-description: La función AuthzGetCentralAccessPolicyCallback es una función definida por la aplicación que recupera la Directiva de acceso central. AuthzGetCentralAccessPolicyCallback es un marcador de posición para el nombre de la función definida por la aplicación.
+description: La función AuthzGetCentralAccessPolicyCallback es una función definida por la aplicación que recupera la directiva de acceso central. AuthzGetCentralAccessPolicyCallback es un marcador de posición para el nombre de la función definida por la aplicación.
 ms.assetid: 1D5831EF-ACA8-4EE9-A7C1-E1A3CB74CEC0
 title: Función de devolución de llamada AuthzGetCentralAccessPolicyCallback
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: b96832fa647fde920a70ac3d6608c8ebb0048892
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e8fd0afbd901d48386859e9b5d3557a173cfe6a23d749dc776992a4aedebed1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105653098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783749"
 ---
 # <a name="authzgetcentralaccesspolicycallback-callback-function"></a>Función de devolución de llamada AuthzGetCentralAccessPolicyCallback
 
-La función *AuthzGetCentralAccessPolicyCallback* es una función definida por la aplicación que recupera la Directiva de acceso central. *AuthzGetCentralAccessPolicyCallback* es un marcador de posición para el nombre de la función definida por la aplicación.
+La *función AuthzGetCentralAccessPolicyCallback* es una función definida por la aplicación que recupera la directiva de acceso central. *AuthzGetCentralAccessPolicyCallback es* un marcador de posición para el nombre de la función definida por la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,46 +42,46 @@ BOOL CALLBACK AuthzGetCentralAccessPolicyCallback (
 
 <dl> <dt>
 
-*hAuthzClientContext* \[ de\]
+*hAuthzClientContext* \[ En\]
 </dt> <dd>
 
 Identificador del contexto de cliente.
 
 </dd> <dt>
 
-*capid* \[ de\]
+*capid* \[ En\]
 </dt> <dd>
 
-IDENTIFICADOR de la Directiva de acceso central que se va a recuperar.
+Identificador de la directiva de acceso central que se debe recuperar.
 
 </dd> <dt>
 
-*pArgs* \[ en, opcional\]
+*pArgs* \[ in, opcional\]
 </dt> <dd>
 
-Argumentos opcionales que se pasaron a la función [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) a través del miembro **OptionalArguments** de la estructura de [**\_ \_ solicitud de acceso de AUTHZ**](/windows/desktop/api/Authz/ns-authz-authz_access_request) .
+Argumentos opcionales que se pasaron a la función [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) a través del **miembro OptionalArguments** de la estructura [**AUTHZ \_ ACCESS \_ REQUEST.**](/windows/desktop/api/Authz/ns-authz-authz_access_request)
 
 </dd> <dt>
 
-*pCentralAccessPolicyApplicable* \[ enuncia\]
+*pCentralAccessPolicyApplicable* \[ out\]
 </dt> <dd>
 
-Puntero a un valor booleano que el administrador de recursos utiliza para indicar si se debe usar una directiva de acceso central durante la evaluación del acceso.
+Puntero a un valor booleano que el administrador de recursos usa para indicar si se debe usar una directiva de acceso central durante la evaluación de acceso.
 
 </dd> <dt>
 
-*ppCentralAccessPolicy* \[ enuncia\]
+*ppCentralAccessPolicy* \[ out\]
 </dt> <dd>
 
-Puntero a la Directiva de acceso central (CAP) que se va a usar para evaluar el acceso. Si este valor es **null**, se aplica el límite predeterminado.
+Puntero a la directiva de acceso central (CAP) que se usará para evaluar el acceso. Si este valor es **NULL,** se aplica el CAP predeterminado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, la función devuelve **true**.
+Si la función se realiza correctamente, la función devuelve **TRUE**.
 
-Si la función no puede realizar la evaluación, devuelve **false**. Use [**SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) para devolver un error a la función de comprobación de acceso.
+Si la función no puede realizar la evaluación, devuelve **FALSE.** Use [**SetLastError para**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) devolver un error a la función de comprobación de acceso.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,20 +89,20 @@ Si la función no puede realizar la evaluación, devuelve **false**. Use [**SetL
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                   |
-| Redistribuible<br/>          | Paquete de herramientas de administración de Windows Server 2003 en Windows XP<br/> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                             |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                   |
+| Redistribuible<br/>          | Windows Paquete de herramientas de administración de Server 2003 en Windows XP<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_solicitud de acceso de AUTHZ \_**](/windows/desktop/api/Authz/ns-authz-authz_access_request)
+[**SOLICITUD DE ACCESO DE AUTHZ \_ \_**](/windows/desktop/api/Authz/ns-authz-authz_access_request)
 </dt> <dt>
 
-[**AUTHZ \_ init \_ info**](/windows/desktop/api/Authz/ns-authz-authz_init_info)
+[**INFORMACIÓN DE \_ AUTHZ INIT \_**](/windows/desktop/api/Authz/ns-authz-authz_init_info)
 </dt> <dt>
 
 [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck)

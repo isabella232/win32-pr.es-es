@@ -25,12 +25,12 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 - esent.interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ecabba69d87d64995179de99e5fc4e42a93d0f3e
-ms.sourcegitcommit: 63c93e0ad0b48d60b11008767196718feb475cb0
+ms.openlocfilehash: f68a6a7e2bc22a3272803d2b576ff36e81a3335a51eaa73941c5f1ca72695a26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "113691674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117889597"
 ---
 # <a name="windows7apijetconfigureprocessforcrashdump-method"></a>Método Windows7Api.JetConfigureProcessForCrashDump
 
@@ -63,7 +63,7 @@ public static void JetConfigureProcessForCrashDump(
     
     Opciones de volcado de memoria.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

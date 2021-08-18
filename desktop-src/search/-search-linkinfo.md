@@ -1,5 +1,5 @@
 ---
-description: Almacena información sobre los tipos de vínculo y lo usa la interfaz IItemPreviewerExt.
+description: Almacena información sobre los tipos de vínculo y la interfaz IItemPreviewerExt la usa.
 ms.assetid: c1d525ea-ee80-49fb-9447-20465b8f8654
 title: Estructura LINKINFO
 ms.topic: reference
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: de74f7aefb61f12bf85a457e4478aa76f2156410
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97c106a5a819ac1068501c77555f3eae238c935e2262894c6c250dfc6782188f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117863948"
 ---
 # <a name="linkinfo-structure"></a>Estructura LINKINFO
 
-\[**LINKINFO** y [**IItemPreviewerExt**](-search-iitempreviewerext.md) solo se admiten en Windows XP y Windows Server 2003, y ya no deben usarse.\]
+\[**LINKINFO** e [**IItemPreviewerExt**](-search-iitempreviewerext.md) solo se admiten en Windows XP y Windows Server 2003 y ya no se deben usar.\]
 
-Almacena información sobre los tipos de vínculo y lo usa la interfaz [**IItemPreviewerExt**](-search-iitempreviewerext.md) .
+Almacena información sobre los tipos de vínculo y la [**interfaz IItemPreviewerExt**](-search-iitempreviewerext.md) la usa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,7 +54,7 @@ Tipo: **[ **LINKTYPE**](-search-linktype.md)**
 
 </dd> <dd>
 
-El tipo de vínculo especificado al rastrear o indizar indicado por una constante [**LINKTYPE**](-search-linktype.md) .
+Tipo de vínculo especificado al rastrear o indexar indicado por una [**constante LINKTYPE.**](-search-linktype.md)
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Tipo: **BSTR**
 
 </dd> <dd>
 
-Atributo EncodingStyle especificado en el archivo de lenguaje de descripción de servicios web (WSDL).
+Atributo EncodingStyle especificado en el archivo WSDL (Lenguaje de descripción de servicios Web).
 
 </dd> <dt>
 
@@ -94,11 +94,11 @@ Valor **BSTR** que especifica la extensión de nombre de archivo.
 **varData**
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **VARIANT**
 
 </dd> <dd>
 
-Variante que especifica el valor de la variable.
+Variante que especifica el valor de variable.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-**DWORD** que especifica las partes relacionadas.
+DWORD **que** especifica las partes relacionadas.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Tipo: **BSTR**
 
 </dd> <dd>
 
-Valor **BSTR** que especifica una propiedad Cid, una cadena decimal con signo no rellenada.
+Valor **BSTR** que especifica una propiedad Cid, una cadena decimal no agregada y con signo.
 
 </dd> <dt>
 
@@ -131,13 +131,13 @@ Tipo: **Long**
 
 </dd> <dd>
 
-Página de códigos que se va a usar para codificar la cadena.
+Página de códigos que se usará para codificar la cadena.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener una vista previa de los datos adjuntos con un controlador de protocolo de terceros en equipos que ejecutan Windows XP o Windows Server 2003, puede que sea necesario usar la estructura **LINKINFO** y las siguientes API: los métodos [**IItemPreviewerExt:: GetLinkedContent**](-search-iitempreviewerext-getlinkedcontent.md) y [**IItemPreviewerExt:: GetRelatedPart**](-search-iitempreviewerext-getrelatedpart.md) , y la enumeración [**LINKTYPE**](-search-linktype.md) .
+Para obtener una vista previa de los datos adjuntos con un controlador de protocolo de terceros en equipos que ejecutan Windows XP o Windows Server 2003, puede ser necesario usar la estructura **LINKINFO** y las siguientes API: los métodos [**IItemPreviewerExt::GetLinkedContent**](-search-iitempreviewerext-getlinkedcontent.md) e [**IItemPreviewerExt::GetRelatedPart**](-search-iitempreviewerext-getrelatedpart.md) y la enumeración [**LINKTYPE.**](-search-linktype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -145,9 +145,9 @@ Para obtener una vista previa de los datos adjuntos con un controlador de protoc
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP2 \[\]<br/> |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
-| Redistribuible<br/>          | Búsqueda en el escritorio de Windows (WDS) 3,0<br/>          |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
+| Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 3.0<br/>          |
 
 
 

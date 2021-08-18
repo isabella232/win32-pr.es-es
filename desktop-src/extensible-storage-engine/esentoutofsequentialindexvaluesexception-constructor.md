@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentOutOfSequentialIndexValuesException'
-title: Constructor de EsentOutOfSequentialIndexValuesException
+description: 'Más información sobre: Constructor EsentOutOfSequentialIndexValuesException'
+title: Constructor EsentOutOfSequentialIndexValuesException
 TOCTitle: 'EsentOutOfSequentialIndexValuesException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentOutOfSequentialIndexValuesException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentoutofsequentialindexvaluesexception.esentoutofsequentialindexvaluesexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a1a740d82203951298e47a1d57ad7107363bd0bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb04184cf363a0936607749be25e0f6ae68ad3051066703c96759f53bfd638d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118492586"
 ---
-# <a name="esentoutofsequentialindexvaluesexception-constructor"></a>Constructor de EsentOutOfSequentialIndexValuesException
+# <a name="esentoutofsequentialindexvaluesexception-constructor"></a>Constructor EsentOutOfSequentialIndexValuesException
 
 Inicializa una nueva instancia de la clase EsentOutOfSequentialIndexValuesException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentOutOfSequentialIndexValuesException()
 
 [Miembros de EsentOutOfSequentialIndexValuesException](./esentoutofsequentialindexvaluesexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

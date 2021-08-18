@@ -3,10 +3,10 @@ title: Implementación de CEcho FinalConstruct
 description: Implementación de CEcho FinalConstruct
 ms.assetid: 149e99c5-9f57-4447-b520-39a6dd39fc86
 keywords:
-- Reproductor de Windows Media complementos, páginas de propiedades de ejemplo de eco
+- Reproductor de Windows Media complementos, páginas de propiedades de ejemplo echo
 - complementos, páginas de propiedades de ejemplo de eco
 - complementos de procesamiento de señales digitales, páginas de propiedades de ejemplo de eco
-- Complementos DE DSP, páginas de propiedades de ejemplo de eco
+- Complementos de DSP, páginas de propiedades de ejemplo de eco
 - Ejemplo de complemento DSP de eco, páginas de propiedades
 - Ejemplo de complemento DSP de eco, método FinalConstruct de CEcho
 ms.topic: article
@@ -20,7 +20,7 @@ ms.locfileid: "117748152"
 ---
 # <a name="implementing-cechofinalconstruct"></a>Implementación de CEcho::FinalConstruct
 
-El método CEcho::FinalConstruct se implementa en Echo.cpp. Contiene código para leer los valores de propiedad del Registro cuando Reproductor de Windows Media crea una instancia del objeto de complemento DSP. Esto es importante porque permite que la configuración del usuario persista entre instancias del objeto, así como entre sesiones. El código de ejemplo del asistente para complementos proporciona implementación para leer una sola propiedad del Registro. Puede modificar este código para controlar la propiedad de tiempo de retraso y, a continuación, agregar código para leer el valor de la propiedad de combinación con mezcla.
+El método CEcho::FinalConstruct se implementa en Echo.cpp. Contiene código para leer los valores de propiedad del Registro cuando Reproductor de Windows Media crea una instancia del objeto de complemento DSP. Esto es importante porque permite que la configuración del usuario persista entre instancias del objeto, así como entre sesiones. El código de ejemplo del asistente para complementos proporciona la implementación para leer una sola propiedad del Registro. Puede modificar este código para controlar la propiedad delay time y, a continuación, agregar código para leer el valor de la propiedad de mezcla con humedad.
 
 El código de ejemplo siguiente lee cada valor de propiedad del Registro y almacena cada uno en la variable miembro correcta:
 
@@ -57,7 +57,7 @@ return S_OK;
 
 
 
-Tenga en cuenta que el valor DWORD de la mezcla de mezcla con humedad se convierte en un valor de punto flotante. Tenga en cuenta también que el código calcula el valor correcto para m \_ fDryMix.
+Tenga en cuenta que el valor DWORD de la mezcla con mezcla se convierte en un valor de punto flotante. Tenga en cuenta también que el código calcula el valor correcto para m \_ fDryMix.
 
 ## <a name="related-topics"></a>Temas relacionados
 

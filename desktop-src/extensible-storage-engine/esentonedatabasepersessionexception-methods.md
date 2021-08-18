@@ -19,7 +19,7 @@ ms.locfileid: "118493994"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentOneDatabasePerSessionException](./esentonedatabasepersessionexception-class.md) expone los miembros siguientes.
+El [tipo EsentOneDatabasePerSessionException](./esentonedatabasepersessionexception-class.md) expone los siguientes miembros.
 
 ## <a name="methods"></a>Métodos
 
@@ -78,7 +78,7 @@ El [tipo EsentOneDatabasePerSessionException](./esentonedatabasepersessionexcept
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

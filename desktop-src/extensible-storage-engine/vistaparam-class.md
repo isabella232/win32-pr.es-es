@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: clase VistaParam'
-title: Clase VistaParam (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: VistaParam (clase)'
+title: Clase VistaParam (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: VistaParam class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Vista.VistaParam
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistaparam(v=EXCHG.10)
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0c3190c10e8bc4a85c3a811edbe43feaf1c36153
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ff804536cfd28088319b9f3b98f1758155503ac8332786f60dd58f10450a074
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117889637"
 ---
-# <a name="vistaparam-class"></a>Clase VistaParam
+# <a name="vistaparam-class"></a>VistaParam (clase)
 
-Parámetros del sistema que se han agregado a la versión de vista de ESENT.
+Parámetros del sistema que se han agregado a la versión vista de ESENT.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. vista. VistaParam  
+  Microsoft.Isam.Esent.Interop.Vista.VistaParam  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -66,4 +66,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de VistaParam](./vistaparam-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

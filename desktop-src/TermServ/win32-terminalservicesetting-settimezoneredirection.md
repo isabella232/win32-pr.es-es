@@ -1,6 +1,6 @@
 ---
 title: Método SetTimeZoneRedirection de la Win32_TerminalServiceSetting clase
-description: El método SetTimeZoneRedirection establece la propiedad TimeZoneRedirection, que permite al equipo cliente redirigir su configuración de zona horaria a la Servicios de Escritorio remoto predeterminada.
+description: El método SetTimeZoneRedirection establece la propiedad TimeZoneRedirection, que permite que el equipo cliente redirija su configuración de zona horaria a la Servicios de Escritorio remoto predeterminada.
 ms.assetid: 4ae149b7-b7de-4530-a142-7253dd1e0d07
 ms.tgt_platform: multiple
 keywords:
@@ -26,7 +26,7 @@ ms.locfileid: "117755646"
 ---
 # <a name="settimezoneredirection-method-of-the-win32_terminalservicesetting-class"></a>Método SetTimeZoneRedirection de la clase \_ TerminalServiceSetting de Win32
 
-El **método SetTimeZoneRedirection** establece la propiedad **TimeZoneRedirection,** que permite al equipo cliente redirigir su configuración de zona horaria a la Servicios de Escritorio remoto predeterminada.
+El **método SetTimeZoneRedirection** establece la propiedad **TimeZoneRedirection,** que permite al equipo cliente redirigir su configuración de zona horaria a Servicios de Escritorio remoto sesión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -82,23 +82,23 @@ De forma predeterminada, la zona horaria de la sesión Servicios de Escritorio r
 
 Si el redireccionamiento de zona horaria está deshabilitado, las nuevas sesiones heredan la zona horaria del servidor. Cuando se vuelve a conectar una sesión, la sesión conserva la zona horaria que tenía antes de desconectarse.
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

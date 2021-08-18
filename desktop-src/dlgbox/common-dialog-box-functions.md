@@ -1,6 +1,6 @@
 ---
 title: Funciones comunes del cuadro de diálogo
-description: . | Funciones comunes del cuadro de diálogo
+description: . | Funciones comunes de cuadro de diálogo
 ms.assetid: 4a94330b-e0d5-48d7-80f3-86ba6ca1f0f9
 ms.topic: reference
 ms.date: 05/31/2018

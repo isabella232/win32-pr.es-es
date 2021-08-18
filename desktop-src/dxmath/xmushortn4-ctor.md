@@ -47,7 +47,7 @@ Construye instancias de la estructura [**XMUSHORTN4.**](/windows/desktop/api/Dir
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmushortn4-xmushortn4(constfloat)"><strong>XMUSHORTN4 ()</strong></a></td>
-<td style="text-align: left;">Constructor predeterminado para <code>XMUSHORTN4</code> . <br/> Constructor predeterminado <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn4"><strong>para XMUSHORTN4</strong></a>. <br/>
+<td style="text-align: left;">Constructor predeterminado para <code>XMUSHORTN4</code> . <br/> Constructor predeterminado para <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn4"><strong>XMUSHORTN4</strong></a>. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.

@@ -3,27 +3,27 @@ title: CLOSEBUTTON
 description: CLOSEBUTTON
 ms.assetid: 39e2de27-c5aa-4a8f-8545-8b7e5cab730f
 keywords:
-- Aspectos de Windows Media Player, elemento BUTTON
-- aspectos, elemento BUTTON
-- referencia de aspectos, elemento BUTTON
-- Elemento BUTTON
-- elementos, botón
-- Aspectos de Windows Media Player, botones de cierre
-- máscaras, botones de cierre
+- Reproductor de Windows Media máscaras, elemento BUTTON
+- máscaras, elemento BUTTON
+- referencia de máscaras,elemento BUTTON
+- Button, elemento
+- elements,BUTTON
+- Reproductor de Windows Media máscaras, botones Cerrar
+- máscaras, botones Cerrar
 - Botones cerrar
-- referencia para máscaras, botones de cierre
+- referencia de máscaras, botones Cerrar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a7b3d6df8984d966e84a68cadaf38d1cc8ab369
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0f8123305c92bfe7f5fccc69b9fd8a92429a67fb933189bd3b0285834cccd2a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118119793"
 ---
 # <a name="closebutton"></a>CLOSEBUTTON
 
-Se trata de un **botón** predefinido con los siguientes valores predeterminados.
+Se trata de un **button** predefinido con los siguientes valores predeterminados.
 
 
 ```C++
@@ -34,9 +34,9 @@ upToolTip="Close"
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esto crea un control de **botón** que cierra el reproductor. La información sobre herramientas está localizada. Todas las propiedades de este **botón** se pueden invalidar si se especifican explícitamente.
+Esto crea un control **BUTTON** que cierra el reproductor. La información sobre herramientas se localiza. Todas las propiedades de **este BOTÓN** se pueden invalidar especificándolos explícitamente.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -45,9 +45,9 @@ Esto crea un control de **botón** que cierra el reproductor. La información so
 [**Elemento BUTTON**](button-element.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

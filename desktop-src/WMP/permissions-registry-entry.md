@@ -28,7 +28,7 @@ La **entrada Permisos** especifica las acciones que Reproductor de Windows Media
 
 
 
-| Nombre        | Tipo           | Valor                                                                  |
+| Nombre        | Tipo           | Value                                                                  |
 |-------------|----------------|------------------------------------------------------------------------|
 | Permisos | **REG \_ DWORD** | Conjunto de marcas, cada una de las cuales concede permiso para una acción específica. |
 
@@ -42,8 +42,8 @@ El valor de la **entrada Permissions** es un **OR** bit a bit de una o varias de
 
 | Marca (valor decimal) | Descripción                                                                                                                                                                                                                                                                   |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1                    | Permiso para la reproducción. Los archivos que tienen la extensión de nombre de archivo registrada se pueden reproducir.                                                                                                                                                                                       |
-| 2                    | Permiso para la colocación de carpetas. Los archivos que tienen la extensión de nombre de archivo registrado se incluirán en la lista de reproducción creada cuando el usuario arrastre una carpeta que contenga los archivos y la coloca en la interfaz de usuario del Reproductor.                                                      |
+| 1                    | Permiso para la reproducción. Los archivos que tienen la extensión de nombre de archivo registrado se pueden reproducir.                                                                                                                                                                                       |
+| 2                    | Permiso para quitar carpetas. Los archivos que tienen la extensión de nombre de archivo registrado se incluirán en la lista de reproducción creada cuando el usuario arrastre una carpeta que contenga los archivos y la coloca en la interfaz de usuario del Reproductor.                                                      |
 | 4                    | Permiso para CD multimedia. Los archivos que tienen la extensión de nombre de archivo registrado se incluirán en la lista de reproducción creada cuando se inserte un CD que contenga los archivos en la unidad de CD-ROM.                                                                                           |
 | 8                    | Permiso para la biblioteca. Los archivos que tienen la extensión de nombre de archivo registrado se pueden agregar a la biblioteca. Necesario para los complementos de conversión.                                                                                                                                    |
 | 16                   | Permiso para streaming HTML. Los archivos que tienen la extensión de nombre de archivo registrado se insertarán en Internet Explorer caché cuando se entreguen desde una secuencia web.                                                                                                            |

@@ -47,7 +47,7 @@ Construye instancias de la estructura [**XMSHORTN2.**](/windows/desktop/api/Dire
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshortn2-xmshortn2(constfloat)"><strong>XMSHORTN2 ()</strong></a></td>
-<td style="text-align: left;">Constructor predeterminado para <code>XMSHORTN2</code> . <br/> Constructor predeterminado para <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>XMSHORTN2</strong></a>. <br/>
+<td style="text-align: left;">Constructor predeterminado para <code>XMSHORTN2</code> . <br/> Constructor predeterminado <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>para XMSHORTN2</strong></a>. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -65,7 +65,7 @@ Este constructor solo está disponible en C++.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshortn2-xmshortn2(constfloat)"><strong>XMSHORTN2 (const float*)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a partir <code>XMSHORTN2</code> de un argumento de matriz de dos <code>float</code> elementos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>XMSHORTN2</strong></a> a partir de un argumento de matriz <code>float</code> de dos elementos. <br/>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMSHORTN2</code> partir de un argumento de matriz de dos <code>float</code> elementos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>XMSHORTN2</strong></a> a partir de un argumento de matriz <code>float</code> de dos elementos. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -74,7 +74,7 @@ Este constructor solo está disponible en C++.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshortn2-xmshortn2(constfloat)"><strong>XMSHORTN2 (const int16_t*)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a partir <code>XMSHORTN2</code> de un argumento de matriz de dos <code>int16_t</code> elementos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>XMSHORTN2</strong></a> a partir de un argumento de matriz <code>int16_t</code> de dos elementos. <br/>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMSHORTN2</code> partir de un argumento de matriz de dos <code>int16_t</code> elementos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>XMSHORTN2</strong></a> a partir de un argumento de matriz <code>int16_t</code> de dos elementos. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -83,7 +83,7 @@ Este constructor solo está disponible en C++.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshortn2-xmshortn2(int16_t_int16_t)"><strong>XMSHORTN2 (int16_t,int16_t)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMSHORTN2</code> partir de <code>int16_t</code> dos argumentos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>XMSHORTN2</strong></a> a partir de <code>int16_t</code> dos argumentos. <br/>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMSHORTN2</code> partir de dos <code>int16_t</code> argumentos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>XMSHORTN2</strong></a> a partir de dos <code>int16_t</code> argumentos. <br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.

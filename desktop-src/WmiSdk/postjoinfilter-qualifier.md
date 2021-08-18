@@ -22,7 +22,7 @@ ms.locfileid: "118317029"
 ---
 # <a name="postjoinfilter-qualifier"></a>Calificador PostJoinFilter
 
-Puede filtrar las instancias de una clase de vista de combinación asignando una consulta WQL al **calificador PostJoinFilter.** El valor de la consulta WQL se aplica a las instancias de la clase de vista de combinación. Puede usar este calificador para restringir las instancias de la clase de vista a las que cumplen condiciones específicas. La siguiente consulta WQL filtra las instancias de una clase de combinación llamada en función de las instancias de [**\_ LogicalDisk de Win32.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)
+Puede filtrar las instancias de una clase de vista de combinación asignando una consulta WQL al **calificador PostJoinFilter.** El valor de la consulta WQL se aplica a las instancias de la clase de vista de combinación. Puede usar este calificador para restringir las instancias de la clase de vista a aquellas que cumplan condiciones específicas. La siguiente consulta WQL filtra las instancias de una clase de combinación llamada en función de las instancias de [**\_ Win32 LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk).
 
 
 ```C++
@@ -33,7 +33,7 @@ PostJoinFilter("SELECT * FROM JoinDrive" +
 
 
 
-Hay varias restricciones para el uso de este calificador:
+Hay varias restricciones en el uso de este calificador:
 
 -   **PostJoinFilter** solo está disponible para unir clases de vista.
 -   El nombre de clase y los nombres de propiedad especificados en la consulta hacen referencia a las propiedades de la clase de vista, no a la clase de origen.

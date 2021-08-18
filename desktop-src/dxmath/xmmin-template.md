@@ -1,5 +1,5 @@
 ---
-description: Compara dos instancias de tipo de datos numérico, o dos instancias de un objeto que admite una sobrecarga de <, y devuelve la más pequeña de las dos instancias. El tipo de datos de los argumentos y el valor devuelto es el mismo.
+description: Compara dos instancias de tipo de datos numéricos o dos instancias de un objeto que admite una sobrecarga de < y devuelve la más pequeña de las dos instancias. El tipo de datos de los argumentos y el valor devuelto es el mismo.
 ms.assetid: m:microsoft.directx_sdk.reference.xmmin(t,t)
 title: Plantilla XMMin (DirectXMath.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118499860"
 ---
 # <a name="xmmin-template"></a>Plantilla XMMin
 
-Compara dos instancias de tipo de datos numérico, o dos instancias de un objeto que admite una sobrecarga de <, y devuelve la más pequeña de las dos instancias. El tipo de datos de los argumentos y el valor devuelto es el mismo.
+Compara dos instancias de tipo de datos numéricos o dos instancias de un objeto que admite una sobrecarga de < y devuelve la más pequeña de las dos instancias. El tipo de datos de los argumentos y el valor devuelto es el mismo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -31,14 +31,14 @@ template<class T> T XMMin(
 <span id="a"></span><span id="A"></span>*Un*
 </dt> <dd>
 
-\[en \] Especifica el primero de dos objetos .
+\[en \] Especifica el primero de dos objetos.
 
 </dd> <dt>
 
 <span id="b"></span><span id="B"></span>*B*
 </dt> <dd>
 
-\[en \] Especifica los dos de dos objetos .
+\[en \] Especifica los dos objetos de .
 
 </dd> </dl>
 
@@ -48,7 +48,7 @@ Devuelve el menor de los dos objetos de entrada.
 
 ## <a name="remarks"></a>Comentarios
 
-`XMMin` es una plantilla y el tipo T se especifica cuando se crea una instancia de la plantilla.
+`XMMin` es una plantilla y se especifica el tipo T cuando se crea una instancia de la plantilla.
 
 > [!Note]  
 > La `XMMin` plantilla es nueva para DirectXMath y no está disponible para XNAMath 2.x. `XMMin` está disponible como macro en XNAMath 2.x.
@@ -56,7 +56,7 @@ Devuelve el menor de los dos objetos de entrada.
  
 
 > [!Note]  
-> Lo ideal es usar std::min en lugar de `XMMin` . Para evitar conflictos con Windows encabezados con std::min, debe definir NOMINMAX antes de incluir \# Windows encabezados.
+> Lo ideal es usar std::min en lugar de `XMMin` . Para evitar conflictos con Windows encabezados con std::min, debe definir NOMINMAX antes de incluir Windows \# encabezados.
 
  
 
@@ -64,7 +64,7 @@ Devuelve el menor de los dos objetos de entrada.
 
 ### <a name="platform-requirements"></a>Requisitos de la plataforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK de Windows para Windows 8. Compatible con aplicaciones de escritorio Win32, Windows store y Windows Phone 8 aplicaciones.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK Windows para Windows 8. Compatible con aplicaciones de escritorio Win32, Windows store y Windows Phone 8 aplicaciones.
 
 ## <a name="requirements"></a>Requisitos
 
