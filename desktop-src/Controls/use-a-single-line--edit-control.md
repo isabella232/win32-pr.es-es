@@ -4,42 +4,42 @@ description: En este tema se muestra cómo crear un cuadro de diálogo que conti
 ms.assetid: 742DF606-9998-46D0-8D0A-F79508AAFFC0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0d5d39a4c9fbc806de6ca151606e770eb0cea9b
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 597c3e611f53af56a42f837c4d85a43f97ff846e371314b130d72c568aaf860e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104078615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829125"
 ---
 # <a name="how-to-create-a-single-line-edit-control"></a>Cómo crear un control de edición de una sola línea
 
 En este tema se muestra cómo crear un cuadro de diálogo que contiene un control de edición de una sola línea.
 
-El control de edición de una sola línea tiene el estilo de [**\_ contraseña es**](edit-control-styles.md) . De forma predeterminada, los controles de edición con este estilo muestran un asterisco para cada carácter que escribe el usuario. Sin embargo, en este ejemplo se usa el mensaje [**em \_ SETPASSWORDCHAR**](em-setpasswordchar.md) para cambiar el carácter predeterminado de un asterisco a un signo más (+). En la captura de pantalla siguiente se muestra el cuadro de diálogo después de que el usuario haya escrito una contraseña.
+El control de edición de una sola línea tiene el [**estilo ES \_ PASSWORD.**](edit-control-styles.md) De forma predeterminada, los controles de edición con este estilo muestran un asterisco para cada carácter que escribe el usuario. Sin embargo, en este ejemplo se usa el [**mensaje EM \_ SETPASSWORDCHAR**](em-setpasswordchar.md) para cambiar el carácter predeterminado de un asterisco a un signo más (+). La siguiente captura de pantalla muestra el cuadro de diálogo después de que el usuario haya escrito una contraseña.
 
 ![captura de pantalla de un cuadro de diálogo que contiene un control de edición para escribir una contraseña](images/passworddlg.png)
 
 > [!Note]  
-> Comctl32.dll versión 6 no es redistribuible. Para usar Comctl32.dll versión 6, especifíquelo en un manifiesto. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Comctl32.dll versión 6 no es redistribuible. Para usar Comctl32.dll versión 6, es especificarlo en un manifiesto. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="step-1-create-an-instance-of-the-password-dialog-box"></a>Paso 1: crear una instancia del cuadro de diálogo contraseña.
+### <a name="step-1-create-an-instance-of-the-password-dialog-box"></a>Paso 1: Crear una instancia del cuadro de diálogo de contraseña.
 
-En el siguiente ejemplo de código de C++ se usa la función DialogBox para crear un cuadro de diálogo modal. La plantilla de cuadro de diálogo de **IDD \_ contraseña** se pasa como parámetro. Define, entre otras cosas, los estilos de ventana, los botones y las dimensiones del cuadro de diálogo contraseña.
+En el siguiente ejemplo de código de C++ se usa la función DialogBox para crear un cuadro de diálogo modal. La plantilla de cuadro de **diálogo IDD \_ PASSWORD** se pasa como parámetro. Define, entre otras cosas, los estilos de ventana, los botones y las dimensiones del cuadro de diálogo de contraseña.
 
 
 ```C++
@@ -52,13 +52,13 @@ DialogBox(hInst,                   // application instance
 
 
 
-### <a name="step-2-initialize-the-dialog-box-and-process-user-input"></a>Paso 2: inicializar el cuadro de diálogo y procesar los datos proporcionados por el usuario.
+### <a name="step-2-initialize-the-dialog-box-and-process-user-input"></a>Paso 2: Inicializar el cuadro de diálogo y procesar la entrada del usuario.
 
-El procedimiento de ventana del siguiente ejemplo inicializa el cuadro de diálogo contraseña y procesa los mensajes de notificación y los datos proporcionados por el usuario.
+El procedimiento de ventana del ejemplo siguiente inicializa el cuadro de diálogo de contraseña y procesa los mensajes de notificación y la entrada del usuario.
 
-Durante la inicialización, el procedimiento de ventana cambia el carácter de contraseña predeterminado a un **+** signo y establece el método predeterminado para **Cancelar**.
+Durante la inicialización, el procedimiento de ventana cambia el carácter de contraseña predeterminado a un signo y **+** establece el botón de inserción predeterminado en **Cancelar**.
 
-Durante el procesamiento de los datos proporcionados por el usuario, el procedimiento de ventana cambia el botón de opción predeterminado de **Cancelar** a **correcto** en cuanto el usuario escribe texto en el control de edición. Si el usuario presiona el botón **Aceptar** , el procedimiento de ventana utiliza los mensajes [**em \_ LINELENGTH**](em-linelength.md) y [**em \_ GETLINE**](em-getline.md) para recuperar el texto.
+Durante el procesamiento de entradas de usuario, el procedimiento de ventana cambia el botón de inserción predeterminado de **CANCEL** a **OK** en cuanto el usuario escribe texto en el control de edición. Si el usuario presiona el botón **Aceptar,** el procedimiento de ventana usa los mensajes [**EM \_ LINELENGTH**](em-linelength.md) y [**EM \_ GETLINE**](em-getline.md) para recuperar el texto.
 
 
 
@@ -168,7 +168,7 @@ INT_PTR CALLBACK PasswordProc(HWND hDlg, UINT message, WPARAM wParam, LPARAM lPa
 
 <dl> <dt>
 
-[Acerca de los controles de edición](about-edit-controls.md)
+[Acerca de editar controles](about-edit-controls.md)
 </dt> <dt>
 
 [Editar referencia de control](bumper-edit-control-edit-control-reference.md)
@@ -177,7 +177,7 @@ INT_PTR CALLBACK PasswordProc(HWND hDlg, UINT message, WPARAM wParam, LPARAM lPa
 [Usar controles de edición](/windows/desktop/Controls/using-edit-controls)
 </dt> <dt>
 
-[Control de edición](edit-controls.md)
+[Editar control](edit-controls.md)
 </dt> </dl>
 
  

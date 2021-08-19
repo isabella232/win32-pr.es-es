@@ -1,5 +1,5 @@
 ---
-description: La genera la sesión multimedia cuando ha terminado de reproducir la última presentación en la cola de reproducción.
+description: Lo genera la sesión multimedia cuando ha terminado de reproducir la última presentación en la cola de reproducción.
 ms.assetid: e593e51f-c239-49e9-bba8-c6d8238eff24
 title: Evento MESessionEnded (Mfobjects.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "117877508"
 ---
 # <a name="mesessionended-event"></a>Evento MESessionEnded
 
-La genera la sesión multimedia cuando ha terminado de reproducir la última presentación en la cola de reproducción.
+Lo genera la sesión multimedia cuando ha terminado de reproducir la última presentación en la cola de reproducción.
 
 ## <a name="event-values"></a>Valores de evento
 
@@ -31,7 +31,7 @@ Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/deskt
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
@@ -39,7 +39,7 @@ Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/deskt
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

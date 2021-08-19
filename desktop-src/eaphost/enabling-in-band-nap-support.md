@@ -1,5 +1,5 @@
 ---
-title: Implementación de In-Band NAP compatible con métodos EAP
+title: Implementar la compatibilidad In-Band NAP para métodos EAP
 description: Se puede habilitar para los métodos EAP de EAP de EAPHost que admiten la transmisión de objetos de valor de longitud de tipo (TLV).
 ms.assetid: 298c89d9-7a6a-4280-9af9-77c7c00cab92
 ms.topic: reference
@@ -11,17 +11,17 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117904281"
 ---
-# <a name="implementing-in-band-nap-support-for-eap-methods"></a>Implementación de In-Band NAP compatible con métodos EAP
+# <a name="implementing-in-band-nap-support-for-eap-methods"></a>Implementar la compatibilidad In-Band NAP para métodos EAP
 
 La compatibilidad [con](/windows/desktop/NAP/network-access-protection-start-page) protección de acceso a redes (NAP) en banda para un método EAP se puede habilitar para los métodos EAP de EAP de EAPHost que admiten la transmisión de objetos de valor de longitud de tipo (TLV). Cuando se habilita la compatibilidad con NAP en banda, los paquetes NAP se transportan dentro de paquetes de método EAP.
 
-Por el contrario, cuando se habilita la compatibilidad con [NAP](https://go.microsoft.com/fwlink/p/?linkid=83917) fuera de banda, el intercambio de la declaración de mantenimiento (SoH) de NAP se produce a través de medios distintos de los paquetes de método interno a EAP.
+Por el contrario, cuando se habilita la compatibilidad [](https://go.microsoft.com/fwlink/p/?linkid=83917) con NAP fuera de banda, el intercambio de la declaración de mantenimiento (SoH) de NAP se produce a través de medios distintos de los paquetes de método interno a EAP.
 
 Todos los TLV son específicos del proveedor.
 
 ## <a name="implementing-nap-support-on-eap-peer-methods"></a>Implementación de la compatibilidad con NAP en métodos del mismo nivel de EAP
 
-La implementación del método del mismo [](https://go.microsoft.com/fwlink/p/?linkid=83917) nivel de EAP recibe un TLV que contiene la TLV de la solicitud de declaración de estado (SoH) de un servidor EAP.
+La implementación del método del mismo [](https://go.microsoft.com/fwlink/p/?linkid=83917) nivel de EAP recibe un TLV que contiene la TLV de solicitud de instrucción de mantenimiento (SoH) de un servidor EAP.
 
 A continuación, la implementación del método del mismo nivel de EAP pasa el TLV que contiene la TLV de solicitud de SoH a EAPHost como se muestra a continuación.
 
@@ -48,7 +48,7 @@ La implementación del método del mismo nivel de EAP pasa el TLV que contiene l
 
 ### <a name="implementing-nap-support-on-eap-server-methods"></a>Implementación de la compatibilidad con NAP en métodos de servidor EAP
 
-La implementación del método de servidor EAP construye un TLV que contiene un TLV de solicitud de SoH. La implementación del método del servidor EAP envía este TLV que contiene la TLV de solicitud de SoH al par EAP. La implementación del método de servidor EAP recibe el TLV del mismo nivel de EAP.
+La implementación del método de servidor EAP construye un TLV que contiene un TLV de solicitud de SoH. La implementación del método del servidor EAP envía este TLV que contiene la TLV de solicitud de SoH al par EAP. La implementación del método del servidor EAP recibe el TLV del mismo nivel de EAP.
 
 La implementación del método de servidor EAP pasa el TLV que contiene un TLV de SoH a EAPHost como se muestra a continuación.
 

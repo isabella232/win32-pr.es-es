@@ -1,5 +1,5 @@
 ---
-description: Obtenga información sobre el parámetro PageWatermarkOriginWidth. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
+description: Obtenga información sobre el parámetro PageWatermarkOriginWidth. Este tema no está actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: e1bea06b-11b9-4652-915a-deb563ad59f8
 title: PageWatermarkOriginWidth
 ms.topic: article
@@ -24,7 +24,7 @@ Especifica el origen de una marca de agua relativa al origen de PageImageableSiz
 
 
 
-| Nombre | Value |
+| Nombre | Valor |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
 | Prefijo de ámbito <br/> | Página<br/>                            |

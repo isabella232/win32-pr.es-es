@@ -1,5 +1,5 @@
 ---
-description: Representa los datos sin procesar de una estructura de datos de identificación mejorada de la presentación extendida (E-EDID) de la Asociación estándar de vídeo electrónica (VESA).
+description: Representa los datos sin procesar de una estructura de datos mejorados de identificación de pantalla extendida (E-EDID) de Video Electronics Standard Association (VESA).
 ms.assetid: a51b73bb-a5f7-4e01-9c88-780105e9952b
 title: Clase WmiMonitorRawEEdidV1Block
 ms.topic: reference
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 79566dccceb36281c9b3a94b19fed2ed5679dc8e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72b82f2c6eb967f39823d5b56174bb82e7503ee56f676ffb49b65822ec435936
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118821150"
 ---
 # <a name="wmimonitorraweedidv1block-class"></a>Clase WmiMonitorRawEEdidV1Block
 
-La clase WMI **WmiMonitorRawEEdidV1Block** representa los datos sin procesar de una estructura de datos de identificación mejorada de la presentación extendida (E-EDID) de vídeo electrónica estándar (VESA). Esta estructura de datos de 128 bytes contiene información que describe la configuración óptima para una pantalla.
+La clase WMI **WmiMonitorRawEEdidV1Block** representa los datos sin procesar de una estructura de datos mejorados de identificación de pantalla extendida (E-EDID) de Video Electronics Standard Association (VESA). Esta estructura de datos de 128 bytes contiene información que describe la configuración óptima para una presentación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,13 +44,13 @@ class WmiMonitorRawEEdidV1Block : MSMonitorClass
 
 ## <a name="members"></a>Miembros
 
-La clase **WmiMonitorRawEEdidV1Block** tiene estos tipos de miembros:
+La **clase WmiMonitorRawEEdidV1Block** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **WmiMonitorRawEEdidV1Block** tiene estas propiedades.
+La **clase WmiMonitorRawEEdidV1Block** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -70,20 +70,20 @@ Indica el monitor activo.
 **Contenido**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-128 matriz de bytes que contiene el contenido del bloque sin formato.
+Matriz de 128 bytes que contiene el contenido del bloque sin formato.
 
 </dd> <dt>
 
 **Id**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -102,7 +102,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
 Nombre de la instancia de monitor específica.
@@ -112,21 +112,21 @@ Nombre de la instancia de monitor específica.
 **Tipo**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de bloque de datos. En la tabla siguiente se enumeran los posibles valores que se pueden devolver.
+Tipo de bloque de datos. En la tabla siguiente se enumeran los valores posibles que se pueden devolver.
 
 
 
 | Value                                                                                 | Significado                    |
 |---------------------------------------------------------------------------------------|----------------------------|
-| <dl> <dt>0 (0X0)</dt> </dl>    | No inicializado<br/>   |
+| <dl> <dt>0 (0x0)</dt> </dl>    | No inicializado<br/>   |
 | <dl> <dt>1 (0x1)</dt> </dl>    | Bloque base EDID<br/> |
-| <dl> <dt>2 (0X2)</dt> </dl>    | Asignación de bloques EDID<br/>  |
+| <dl> <dt>2 (0x2)</dt> </dl>    | Mapa de bloques EDID<br/>  |
 | <dl> <dt>255 (0xFF)</dt> </dl> | Otros<br/>           |
 
 
@@ -139,12 +139,12 @@ Tipo de bloque de datos. En la tabla siguiente se enumeran los posibles valores 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
-| Espacio de nombres<br/>                | \\WMI raíz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Wmi \\ raíz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

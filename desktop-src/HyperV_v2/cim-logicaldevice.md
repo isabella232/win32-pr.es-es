@@ -1,7 +1,7 @@
 ---
-description: Abstracción o emulación de una entidad de hardware que puede o no basarse en el hardware físico.
+description: Abstracción o emulación de una entidad de hardware que puede o no estar basada en hardware físico.
 ms.assetid: e31c82ed-2da2-4a18-a55e-16931d74f243
-title: CIM_LogicalDevice (clase, administración de Hyper-V)
+title: CIM_LogicalDevice (administración de Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -30,16 +30,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 471b10f8d3c8640cfcc4277d0151bdd46d59db86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0831bff996721a170da105c800e670cf10cb4b422869062014ab4df9e2441416
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812120"
 ---
-# <a name="cim_logicaldevice-class-hyper-v-management"></a>CIM_LogicalDevice (clase, administración de Hyper-V)
+# <a name="cim_logicaldevice-class-hyper-v-management"></a>CIM_LogicalDevice (administración de Hyper-V)
 
-Abstracción o emulación de una entidad de hardware que puede o no basarse en el hardware físico.
+Abstracción o emulación de una entidad de hardware que puede o no estar basada en hardware físico.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -69,26 +69,26 @@ class CIM_LogicalDevice : CIM_EnabledLogicalElement
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ LogicalDevice de CIM** tiene estos tipos de miembros:
+La **clase \_ LogicalDevice de CIM** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase de **\_ LogicalDevice de CIM** tiene estos métodos.
+La **clase \_ LogicalDevice de CIM** tiene estos métodos.
 
 
 
 | Método                                                           | Descripción                                                                                                                                                                                                                              |
 |:-----------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**EnableDevice**](cim-logicaldevice-enabledevice.md)           | Este método es desusado. En su lugar, use el método **RequestStateChange** .<br/> **Descripción desusada:** Habilita o deshabilita el dispositivo lógico.<br/>                                                                     |
-| [**OnlineDevice**](cim-logicaldevice-onlinedevice.md)           | Este método es desusado. En su lugar, use el método **RequestStateChange** .<br/> **Descripción desusada:** Pone en línea el dispositivo lógico para que pueda aceptar solicitudes o sin conexión, por lo que ya no puede aceptar solicitudes.<br/> |
-| [**QuiesceDevice**](cim-logicaldevice-quiescedevice.md)         | Este método es desusado. En su lugar, use el método **RequestStateChange** .<br/> **Descripción desusada:** Suspende temporalmente la actividad en el dispositivo lógico o vuelve a habilitar la actividad.<br/>                            |
-| [**Reset**](cim-logicaldevice-reset.md)                         | Restablece el dispositivo lógico.<br/>                                                                                                                                                                                                    |
-| [**RestoreProperties**](cim-logicaldevice-restoreproperties.md) | Restaura una configuración anterior y el estado del dispositivo lógico.<br/>                                                                                                                                                            |
+| [**EnableDevice**](cim-logicaldevice-enabledevice.md)           | Este método es desusado. En su lugar, use **el método RequestStateChange.**<br/> **Descripción en desuso:** Habilita o deshabilita el dispositivo lógico.<br/>                                                                     |
+| [**OnlineDevice**](cim-logicaldevice-onlinedevice.md)           | Este método es desusado. En su lugar, use **el método RequestStateChange.**<br/> **Descripción en desuso:** Pone el dispositivo lógico en línea para que pueda aceptar solicitudes o sin conexión para que ya no pueda aceptar solicitudes.<br/> |
+| [**QuiesceDevice**](cim-logicaldevice-quiescedevice.md)         | Este método es desusado. En su lugar, use **el método RequestStateChange.**<br/> **Descripción en desuso:** Suspende temporalmente la actividad en el dispositivo lógico o vuelva a habilitarla.<br/>                            |
+| [**Restablecer**](cim-logicaldevice-reset.md)                         | Restablece el dispositivo lógico.<br/>                                                                                                                                                                                                    |
+| [**RestoreProperties**](cim-logicaldevice-restoreproperties.md) | Restaura una configuración y un estado anteriores del dispositivo lógico.<br/>                                                                                                                                                            |
 | [**SaveProperties**](cim-logicaldevice-saveproperties.md)       | Guarda la configuración y el estado del dispositivo lógico.<br/>                                                                                                                                                                      |
-| [**SetPowerState**](cim-logicaldevice-setpowerstate.md)         | Este método es desusado. En su lugar, use la propiedad **SetPowerState** de la clase **\_ PowerManagementService de CIM** .<br/> **Descripción desusada:** Establece el estado de energía del dispositivo lógico.<br/>                       |
+| [**SetPowerState**](cim-logicaldevice-setpowerstate.md)         | Este método es desusado. En su lugar, use **la propiedad SetPowerState** de la **clase CIM \_ PowerManagementService.**<br/> **Descripción en desuso:** Establece el estado de energía del dispositivo lógico.<br/>                       |
 
 
 
@@ -96,29 +96,29 @@ La clase de **\_ LogicalDevice de CIM** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ LogicalDevice de CIM** tiene estas propiedades.
+La **clase \_ LogicalDevice** de CIM tiene estas propiedades.
 
 <dl> <dt>
 
 **AdditionalAvailability**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ lógico CIM**.**Disponibilidad**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ LogicalDevice**.**Disponibilidad**")
 </dt> </dl>
 
-Una matriz que contiene información de disponibilidad sobre el dispositivo lógico, además del que de la propiedad **Availability** .
+Matriz que contiene información de disponibilidad sobre el dispositivo lógico, además de la de la **propiedad Availability.**
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -132,21 +132,21 @@ Una matriz que contiene información de disponibilidad sobre el dispositivo lóg
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-En **ejecución/corriente completa** (3)
+**Running/Full Power** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Warning"></span><span id="warning"></span><span id="WARNING"></span>
 
-**ADVERTENCIA** (4)
+**Advertencia** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>
 
-**En pruebas** (5)
+**En prueba** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -160,21 +160,21 @@ En **ejecución/corriente completa** (3)
 
 <span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>
 
-**Desconectar (7** )
+**Apagado** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>
 
-Sin **conexión (8** )
+**Off Line** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>
 
-**Fuera del deber** (9)
+**Fuera de servicio** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -202,49 +202,49 @@ Sin **conexión (8** )
 
 <span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>
 
-Ahorro **de energía: desconocido** (13)
+**Ahorro de energía: desconocido** (13)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>
 
-Ahorro **de energía: modo de baja energía** (14)
+**Ahorro de energía: modo de bajo consumo** (14)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>
 
-Ahorro **de energía: en espera** (15)
+**Ahorro de energía: en espera** (15)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>
 
-**Ciclo de energía** (16)
+**Ciclo de** energía (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>
 
-Ahorro **de energía: ADVERTENCIA** (17)
+**Ahorro de energía: advertencia** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-En **pausa** (18)
+**En pausa** (18)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>
 
-**No está listo** (19)
+**No listo** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -258,7 +258,7 @@ En **pausa** (18)
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-**Inactivo** (21)
+**En modo de quiesced** (21)
 
 
 </dt> <dd></dd> </dl>
@@ -268,13 +268,13 @@ En **pausa** (18)
 **Disponibilidad**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Estado operativo DMTF \| 006,5 "," MIB. IETF \| host-REsources-MIB. hrDeviceStatus "," MIF. \|Dispositivo host DMTF \| 001,5 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ LogicalDevice de CIM**.**AdditionalAvailability**")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 006.5", "MIB. IETF \| HOST-RESOURCES-MIB.hrDeviceStatus", "MIF. DMTF \| Host Device \| 001.5"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ LogicalDevice**.**AdditionalAvailability**")
 </dt> </dl>
 
 Contiene la disponibilidad del dispositivo lógico.
@@ -283,7 +283,7 @@ Contiene la disponibilidad del dispositivo lógico.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -297,21 +297,21 @@ Contiene la disponibilidad del dispositivo lógico.
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-En **ejecución/corriente completa** (3)
+**Running/Full Power** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Warning"></span><span id="warning"></span><span id="WARNING"></span>
 
-**ADVERTENCIA** (4)
+**Advertencia** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>
 
-**En pruebas** (5)
+**En prueba** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -325,21 +325,21 @@ En **ejecución/corriente completa** (3)
 
 <span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>
 
-**Desconectar (7** )
+**Apagado** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>
 
-Sin **conexión (8** )
+**Off Line** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>
 
-**Fuera del deber** (9)
+**Fuera de servicio** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -367,49 +367,49 @@ Sin **conexión (8** )
 
 <span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>
 
-Ahorro **de energía: desconocido** (13)
+**Ahorro de energía: desconocido** (13)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>
 
-Ahorro **de energía: modo de baja energía** (14)
+**Ahorro de energía: modo de bajo consumo** (14)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>
 
-Ahorro **de energía: en espera** (15)
+**Ahorro de energía: en espera** (15)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>
 
-**Ciclo de energía** (16)
+**Ciclo de** energía (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>
 
-Ahorro **de energía: ADVERTENCIA** (17)
+**Ahorro de energía: advertencia** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-En **pausa** (18)
+**En pausa** (18)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>
 
-**No está listo** (19)
+**No listo** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -423,7 +423,7 @@ En **pausa** (18)
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-**Inactivo** (21)
+**En modo de quiesced** (21)
 
 
 </dt> <dd></dd> </dl>
@@ -439,14 +439,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nombre de clase que se usa para crear una instancia del dispositivo lógico. **CreationClassName** se combina con otras propiedades de clave de esta clase para identificar de forma única las instancias de esta clase y sus subclases.
+Nombre de clase usado para crear una instancia del dispositivo lógico. **CreationClassName** se combina con otras propiedades clave de esta clase para identificar de forma única las instancias de esta clase y sus subclases.
 
 </dd> <dt>
 
-**ID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -455,10 +455,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Un identificador único del dispositivo lógico, como la dirección.
+Identificador único del dispositivo lógico, como la dirección.
 
 </dd> <dt>
 
@@ -471,12 +471,12 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("el [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).**OperationalStatus**")
+Calificadores: [**en desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("[**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).**OperationalStatus**")
 </dt> </dl>
 
-Esta propiedad está desusada. En su lugar, use la propiedad **OperationalStatus** de la clase del **\_ ManagedSystemElement de CIM** .
+Esta propiedad está desusada. En su lugar, use **la propiedad OperationalStatus** de la **clase \_ ManagedSystemElement de** CIM.
 
-**Descripción desusada:** Indica si se ha borrado un error de la propiedad **LastErrorCode** .
+**Descripción en desuso:** Indica si se borra un error notificado por **la propiedad LastErrorCode.**
 
 </dd> <dt>
 
@@ -489,98 +489,98 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("CIM \_ DeviceErrorData. ErrorDescription")
+Calificadores: [**en desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("CIM \_ DeviceErrorData.ErrorDescription")
 </dt> </dl>
 
-Esta propiedad está desusada. En su lugar, use la propiedad **ErrorDescription** de la clase **\_ DeviceErrorData de CIM** .
+Esta propiedad está desusada. En su lugar, use **la propiedad ErrorDescription** de la **clase \_ DeviceErrorData de CIM.**
 
-**Descripción desusada:** Información adicional sobre el error indicado por la propiedad **LastErrorCode** .
+**Descripción en desuso:** Información adicional sobre el error notificado por la **propiedad LastErrorCode.**
 
 </dd> <dt>
 
 **IdentifyingDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (**" \_ LogicalDevice de CIM**.**OtherIdentifyingInfo**")
+Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ LogicalDevice**.**OtherIdentifyingInfo**")
 </dt> </dl>
 
-Matriz de cadenas que describen los elementos de la matriz **OtherIdentifyingInfo** del mismo índice.
+Matriz de cadenas que describen los **elementos de la matriz OtherIdentifyingInfo** del mismo índice.
 
 </dd> <dt>
 
 **LastErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("CIM \_ DeviceErrorData. LastErrorCode")
+Calificadores: [**en desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("CIM \_ DeviceErrorData.LastErrorCode")
 </dt> </dl>
 
-Esta propiedad está desusada. En su lugar, usamos la propiedad **LastErrorCode** de la **clase \_ DeviceErrorData de CIM** .
+Esta propiedad está desusada. En su lugar, usamos **la propiedad LastErrorCode** de la **clase \_ DeviceErrorData de CIM.**
 
-**Descripción desusada:** Último código de error indicado por el dispositivo lógico.
+**Descripción en desuso:** Último código de error notificado por el dispositivo lógico.
 
 </dd> <dt>
 
 **MaxQuiesceTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("sin valor"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("milisegundos")
+Calificadores: [**En desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("Sin valor"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Milisegundos")
 </dt> </dl>
 
 Esta propiedad está en desuso y no debe utilizarse.
 
-**Descripción desusada:** El tiempo máximo, en milisegundos, que un dispositivo puede permanecer en un Estado deshabilitado temporalmente (las propiedades **Availability** y **AdditionalAvailability** se establecen en "21" inactiva). Un valor de "0" indica que el dispositivo lógico puede permanecer indefinidamente en un Estado deshabilitado temporalmente.
+**Descripción en desuso:** El tiempo máximo en milisegundos, que un dispositivo puede permanecer en un estado deshabilitado temporalmente (las propiedades **Availability** y **AdditionalAvailability** establecidas en "21" están en modo de espera). Un valor de "0" indica que el dispositivo lógico puede permanecer en un estado deshabilitado temporalmente indefinidamente.
 
 </dd> <dt>
 
 **OtherIdentifyingInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (**" \_ LogicalDevice de CIM**.**IdentifyingDescriptions**")
+Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ LogicalDevice**.**IdentifyingDescriptions**")
 </dt> </dl>
 
-Información que identifica el dispositivo lógico, que no sea **DeviceID**.
+Información que identifica el dispositivo lógico, distinto de **DeviceID.**
 
 </dd> <dt>
 
 **PowerManagementCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("CIM \_ PowerManagementCapabilities. PowerCapabilities")
+Calificadores: [**en desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("CIM \_ PowerManagementCapabilities.PowerCapabilities")
 </dt> </dl>
 
-Esta propiedad está desusada. En su lugar, utilice la clase **\_ PowerManagementCapabilities de CIM** .
+Esta propiedad está desusada. En su lugar, use **la \_ clase CIM PowerManagementCapabilities.**
 
-**Descripción desusada:** Una matriz que contiene las capacidades de administración de energía del dispositivo.
+**Descripción en desuso:** Matriz que contiene las funcionalidades de administración de energía del dispositivo.
 
 <dt>
 
@@ -614,28 +614,28 @@ Esta propiedad está desusada. En su lugar, utilice la clase **\_ PowerManagemen
 
 <span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>
 
-**Modos de ahorro de energía introducidos automáticamente** (4)
+**Modos de ahorro de energía especificados automáticamente** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>
 
-**Estado de energía configurable** (5)
+**Power State Settable** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>
 
-**Ciclo de energía admitido** (6)
+**Power Cycling compatible** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>
 
-Se **admite el encendido con tiempo** (7)
+**Encendido con tiempo de encendido admitido** (7)
 
 
 </dt> <dd></dd> </dl>
@@ -651,19 +651,19 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("CIM \_ PowerManagementCapabilities")
+Calificadores: [**En desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("CIM \_ PowerManagementCapabilities")
 </dt> </dl>
 
-Esta propiedad está desusada. En su lugar, use la clase **PowerManagementCapabilities** .
+Esta propiedad está desusada. En su lugar, use **la clase PowerManagementCapabilities.**
 
-**Descripción desusada: true** si el dispositivo lógico se puede administrar con energía; en caso contrario, **false**.
+**Descripción en desuso: true** si el dispositivo lógico se puede administrar con energía; de lo contrario, **false**.
 
 </dd> <dt>
 
 **PowerOnHours**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -672,31 +672,31 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("horas"), **contador**
 </dt> </dl>
 
-El número de horas consecutivas que se ha alimentado el dispositivo lógico desde su último ciclo de energía.
+Número de horas consecutivas en las que se ha encendido el dispositivo lógico, desde su último ciclo de energía.
 
 </dd> <dt>
 
 **StatusInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("[**CIM \_ EnabledLogicalElement**](cim-enabledlogicalelement.md).**EnabledState**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. \|Estado operativo DMTF \| 006,4 ")
+Calificadores: [**en desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("[**CIM \_ EnabledLogicalElement**](cim-enabledlogicalelement.md).**EnabledState**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 006.4")
 </dt> </dl>
 
-Esta propiedad está desusada. En su lugar, utilice la clase **\_ PowerManagementCapabilities de CIM** .
+Esta propiedad está desusada. En su lugar, use **la \_ clase CIM PowerManagementCapabilities.**
 
-**Descripción desusada:** Indica si el dispositivo lógico está habilitado o en un estado relacionado.
+**Descripción en desuso:** Indica si el dispositivo lógico está habilitado o en un estado relacionado.
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -740,10 +740,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ Sistema CIM**](cim-system.md).**CreationClassName**")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ System**](cim-system.md).**CreationClassName**")
 </dt> </dl>
 
-Nombre de clase que se usa para crear una instancia del sistema que contiene el dispositivo lógico. **SystemCreationClassName** se combina con otras propiedades clave de esta clase para identificar de forma única las instancias de esta clase y sus subclases.
+Nombre de clase utilizado para crear una instancia del sistema que contiene el dispositivo lógico. **SystemCreationClassName se** combina con otras propiedades clave de esta clase para identificar de forma única las instancias de esta clase y sus subclases.
 
 </dd> <dt>
 
@@ -756,7 +756,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ Sistema CIM**](cim-system.md).**Nombre**")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ System**](cim-system.md).**Name**")
 </dt> </dl>
 
 Nombre del sistema que contiene el dispositivo lógico.
@@ -766,7 +766,7 @@ Nombre del sistema que contiene el dispositivo lógico.
 **TotalPowerOnHours**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -783,12 +783,12 @@ Número total de horas que se ha encendido el dispositivo lógico.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -797,7 +797,7 @@ Número total de horas que se ha encendido el dispositivo lógico.
 
 <dl> <dt>
 
-[**\_ENABLEDLOGICALELEMENT CIM**](cim-enabledlogicalelement.md)
+[**CIM \_ EnabledLogicalElement**](cim-enabledlogicalelement.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Muestra cómo crear un cuadro de diálogo de apertura y guardado de archivos personalizado mediante diferentes API de cuadro de diálogo de archivo común.
+description: Muestra cómo crear un cuadro de diálogo de apertura y guardado de archivos personalizado mediante diferentes API de cuadro de diálogo de archivos comunes.
 title: Ejemplo de cuadro de diálogo de archivo común
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,7 +18,7 @@ ms.locfileid: "117858588"
 ---
 # <a name="common-file-dialog-sample"></a>Ejemplo de cuadro de diálogo de archivo común
 
-Muestra cómo crear un cuadro de diálogo de apertura y guardado de archivos personalizado mediante diferentes API de cuadro de diálogo de archivo común.
+Muestra cómo crear un cuadro de diálogo de apertura y guardado de archivos personalizado mediante diferentes API de cuadro de diálogo de archivos comunes.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -45,17 +45,17 @@ Para obtener requisitos adicionales, consulte el archivo Léame incluido con el 
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-| Ubicación      | Dirección URL de ruta de acceso                                                                                             |
+| Location      | Dirección URL de ruta de acceso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Ejemplo CommonFileDialog](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/commonfiledialog) |
 
 ## <a name="building-the-sample"></a>Generar el ejemplo
 
-Para obtener instrucciones sobre cómo compilar el ejemplo, vea el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, consulte el archivo Léame incluido con el ejemplo.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-Para obtener instrucciones sobre cómo compilar el ejemplo, vea el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, consulte el archivo Léame incluido con el ejemplo.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117880667"
 ---
-# <a name="color-converter-dsp"></a>DSP de convertidor de colores
+# <a name="color-converter-dsp"></a>DSP del convertidor de colores
 
 Convierte una secuencia de vídeo entre formatos de color.
 
@@ -81,13 +81,13 @@ CLSID \_ CColorConvertDMO
 
 ## <a name="remarks"></a>Comentarios
 
-El DSP del convertidor de colores se implementa como un objeto COM que puede actuar como un objeto DirectXMedia (DMO) o una transformación de Media Foundation (MFT). El objeto tiene un identificador de clase única (CLSID) independientemente de si actúa como un DMO o un MFT. Para obtener información sobre cuándo un DSP actúa como un DMO o un MFT, vea [Procesadores de señal digital](windowsmediadigitalsignalprocessors.md).
+El DSP del convertidor de colores se implementa como un objeto COM que puede actuar como un objeto DirectXMedia (DMO) o una transformación de Media Foundation (MFT). El objeto tiene un identificador de clase única (CLSID) independientemente de si actúa como DMO o MFT. Para obtener información sobre cuándo un DSP actúa como DMO o MFT, vea [Procesadores de señales digitales](windowsmediadigitalsignalprocessors.md).
 
-Los identificadores únicos globales (GUID) de los subtipos de medios RGB difieren en función de si un DSP actúa como un DMO o un MFT. Los GUID de los subtipos multimedia no RGB son los mismos, independientemente de si un DSP actúa como un DMO o un MFT. Para obtener información sobre los GUID que representan subtipos multimedia, vea [GUID de subtipo de vídeo.](video-subtype-guids.md)
+Los identificadores únicos globales (GUID) de los subtipos de medios RGB difieren en función de si un DSP actúa como un DMO o un MFT. Los GUID para subtipos multimedia no RGB son los mismos, independientemente de si un DSP actúa como un DMO o un MFT. Para obtener información sobre los GUID que representan subtipos multimedia, vea [GUID de subtipo de vídeo.](video-subtype-guids.md)
 
 De forma predeterminada, este DSP copia toda la imagen de origen en el búfer de salida. Opcionalmente, puede especificar rectángulos de origen y destino. El DSP copia la parte de la imagen de origen definida por el rectángulo de origen y la escribe en el rectángulo de destino en el búfer de salida. El DSP no realiza ningún escalado; los rectángulos de origen y destino deben tener el mismo tamaño. Los rectángulos de origen y destino no pueden superar los límites del fotograma de vídeo.
 
-Todas las propiedades excepto [**MFPKEY \_ COLORCONV \_ MODE**](mfpkey-colorconv-mode.md) deben establecerse en un grupo. Si establece cualquiera de estas propiedades, debe establecer todas las demás. De lo contrario, los rectángulos de origen y destino podrían no ser válidos, en cuyo caso los métodos [**ODBCTransform::P rocessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) e [**IMediaObject::P rocessOutput**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-processoutput) **devolverán E \_ INVALIDARG**.
+Todas las propiedades excepto [**MFPKEY \_ COLORCONV \_ MODE**](mfpkey-colorconv-mode.md) deben establecerse en un grupo. Si establece cualquiera de estas propiedades, debe establecer todas las demás. De lo contrario, los rectángulos de origen y de destino podrían no ser válidos, en cuyo caso los métodos [**ODBCTransform::P rocessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) e [**IMediaObject::P rocessOutput**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-processoutput) **devolverán E \_ INVALIDARG**.
 
 El convertidor de colores no admite todas las combinaciones de formato de entrada y formato de salida. Normalmente, debe establecer el formato multimedia que conoce, ya sea entrada o salida, y, a continuación, enumerar los formatos disponibles en la secuencia opuesta.
 
@@ -95,7 +95,7 @@ El convertidor de colores no admite todas las combinaciones de formato de entrad
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
@@ -104,7 +104,7 @@ El convertidor de colores no admite todas las combinaciones de formato de entrad
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

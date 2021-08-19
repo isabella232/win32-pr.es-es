@@ -28,12 +28,12 @@ template VertexElement
 
 Donde:
 
--   Tipo: tipo de datos vértice. Vea [**D3DDECLTYPE**](./d3ddecltype.md).
--   Método: método de procesamiento del teselador. Vea [**D3DDECLMETHOD**](./d3ddeclmethod.md).
+-   Tipo: tipo de datos vertex. Vea [**D3DDECLTYPE.**](./d3ddecltype.md)
+-   Método: método de procesamiento de teselador. Vea [**D3DDECLMETHOD**](./d3ddeclmethod.md).
 -   Uso: uso previsto de los datos del vértice. Vea [**D3DDECLUSAGE.**](./d3ddeclusage.md)
 -   UsageIndex: modifica los datos de uso. Vea [**D3DDECLUSAGE.**](./d3ddeclusage.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -15,10 +15,10 @@ ms.locfileid: "117782639"
 
 En el ejemplo siguiente se crea [*un descriptor de seguridad*](/windows/desktop/SecGloss/s-gly) para una nueva clave del Registro mediante el siguiente proceso. Se puede usar código similar para crear un descriptor de seguridad para otros tipos de objeto.
 
--   En el ejemplo se rellena una matriz [**de estructuras DE ACCESO \_ EXPLÍCITO**](/windows/desktop/api/AccCtrl/ns-accctrl-explicit_access_a) con la información de dos ACE. Una ACE permite el acceso de lectura a todos los usuarios; la otra ACE permite el acceso total a los administradores.
--   La [**\_ matriz EXPLICIT ACCESS**](/windows/desktop/api/AccCtrl/ns-accctrl-explicit_access_a) se pasa a la [**función SetEntriesInAcl**](/windows/desktop/api/Aclapi/nf-aclapi-setentriesinacla) para crear una DACL para el descriptor de seguridad.
+-   En el ejemplo se rellena una matriz de [**estructuras DE \_ ACCESO EXPLÍCITO**](/windows/desktop/api/AccCtrl/ns-accctrl-explicit_access_a) con la información de dos ACE. Una ACE permite el acceso de lectura a todos los usuarios; la otra ACE permite el acceso total a los administradores.
+-   La [**\_ matriz EXPLICIT ACCESS**](/windows/desktop/api/AccCtrl/ns-accctrl-explicit_access_a) se pasa a la función [**SetEntriesInAcl**](/windows/desktop/api/Aclapi/nf-aclapi-setentriesinacla) para crear una DACL para el descriptor de seguridad.
 -   Después de asignar memoria para el descriptor de seguridad, en el ejemplo se llama a las funciones [**InitializeSecurityDescriptor**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-initializesecuritydescriptor) y [**SetSecurityDescriptorDacl**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptordacl) para inicializar el descriptor de seguridad y adjuntar la DACL.
--   A continuación, el descriptor de seguridad se almacena en una estructura ATRIBUTOS DE SEGURIDAD y se pasa a la \_ [**función RegCreateKeyEx,**](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) que adjunta el descriptor de seguridad a la clave recién creada.
+-   A continuación, el descriptor de seguridad se almacena en una estructura ATRIBUTOS DE SEGURIDAD y se pasa a la \_ [**función RegCreateKeyEx,**](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) que asocia el descriptor de seguridad a la clave recién creada.
 
 
 ```C++

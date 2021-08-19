@@ -1,6 +1,6 @@
 ---
 title: Función TextureCubeArray::GatherCmp(S,float,float,uint)
-description: Para cuatro valores de texel que se usarían en una operación de filtrado bi linear, devuelve su comparación con un valor de comparación junto con el estado de asignación de mosaicos. | Función TextureCubeArray::GatherCmp(S,float,float,uint)
+description: Para cuatro valores de texel que se usarían en una operación de filtrado bi lineal, devuelve su comparación con un valor de comparación junto con el estado de asignación de mosaicos. | Función TextureCubeArray::GatherCmp(S,float,float,uint)
 ms.assetid: 758CD159-58B6-42AE-92B3-5AA3C72FD0F1
 keywords:
 - Función GatherCmp HLSL
@@ -22,7 +22,7 @@ ms.locfileid: "118506570"
 ---
 # <a name="texturecubearraygathercmpsfloatfloatuint-function"></a>Función TextureCubeArray::GatherCmp(S,float,float,uint)
 
-Para cuatro valores de texel que se usarían en una operación de filtrado bi linear, devuelve su comparación con un valor de comparación junto con el estado de asignación de mosaicos.
+Para cuatro valores de texel que se usarían en una operación de filtrado bi lineal, devuelve su comparación con un valor de comparación junto con el estado de asignación de mosaicos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,7 +74,7 @@ Valor que se compara con cada valor muestreado.
 
 Tipo: **uint**
 
-Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación **Sample**, **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se han tomado valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación Sample **,** **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
@@ -86,13 +86,13 @@ Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
 ## <a name="remarks"></a>Comentarios
 
-Los ejemplos de textura se pueden usar para la interpolación bilineal.
+Las muestras de textura se pueden usar para la interpolación bilineal.
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -100,11 +100,11 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Métodos de GatherCmp](texturecubearray-gathercmp.md)
+[Métodos gatherCmp](texturecubearray-gathercmp.md)
 </dt> <dt>
 
 [**TextureCubeArray**](texturecubearray.md)

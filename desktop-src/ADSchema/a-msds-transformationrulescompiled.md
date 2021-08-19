@@ -48,7 +48,7 @@ Blob que contiene reglas de transformación compiladas.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                  |
 | MAPI-Id                | \-                                                                                                  |

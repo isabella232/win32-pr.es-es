@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentLSNotSetException'
-title: Constructor de EsentLSNotSetException
+description: 'Más información sobre: Constructor EsentLSNotSetException'
+title: Constructor EsentLSNotSetException
 TOCTitle: 'EsentLSNotSetException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentLSNotSetException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentlsnotsetexception.esentlsnotsetexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 340dfe06254183b8ebbd371944f99b6dbc6617e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f3a30ece3dbac004fdccbc9aab7b9d1803564fd88120c32e36e8cb3eae999cb4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118079959"
 ---
-# <a name="esentlsnotsetexception-constructor"></a>Constructor de EsentLSNotSetException
+# <a name="esentlsnotsetexception-constructor"></a>Constructor EsentLSNotSetException
 
 Inicializa una nueva instancia de la clase EsentLSNotSetException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentLSNotSetException()
 public EsentLSNotSetException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentLSNotSetException()
 
 [Miembros de EsentLSNotSetException](./esentlsnotsetexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

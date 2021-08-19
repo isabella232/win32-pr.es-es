@@ -3,7 +3,7 @@ title: Uso de controladores instalables
 description: Uso de controladores instalables
 ms.assetid: 23680369-92f9-4558-aa95-f2f44734cece
 keywords:
-- Windows controladores multimedia e instalables
+- Windows controladores multimedia instalables
 - multimedia, controladores instalables
 - controladores instalables, acerca de
 - Función DriverProc
@@ -20,7 +20,7 @@ ms.locfileid: "117801195"
 ---
 # <a name="using-installable-drivers"></a>Uso de controladores instalables
 
-Se usan controladores instalables para proporcionar a las aplicaciones o archivos DLL una manera estándar de acceder a un dispositivo o a un conjunto de rutinas útiles. En las secciones siguientes se muestra cómo crear un controlador instalable mediante una función [DriverProc](/windows/win32/api/mmiscapi/nc-mmiscapi-driverproc) y cómo abrir un controlador instalable y cómo dirigirlo para realizar tareas útiles.
+Los controladores instalables se usan para proporcionar a las aplicaciones o archivos DLL una manera estándar de acceder a un dispositivo o a un conjunto de rutinas útiles. En las secciones siguientes se muestra cómo crear un controlador instalable mediante una función [DriverProc](/windows/win32/api/mmiscapi/nc-mmiscapi-driverproc) y cómo abrir un controlador instalable y dirigirlo para llevar a cabo tareas útiles.
 
  
 

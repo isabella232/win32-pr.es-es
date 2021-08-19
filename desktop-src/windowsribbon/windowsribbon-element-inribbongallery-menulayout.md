@@ -1,6 +1,6 @@
 ---
 title: Propiedad InRibbonGallery.MenuLayout
-description: Representa un contenedor para los diseños In-Ribbon menú desplegable de la Galería de aplicaciones.
+description: Representa un contenedor para los In-Ribbon menú desplegable de la Galería de aplicaciones.
 ms.assetid: 89e0eb39-2790-4571-a661-ab3ebafbb13f
 keywords:
 - Propiedad InRibbonGallery.MenuLayout Windows Ribbon
@@ -63,13 +63,13 @@ Opcional.
 Puede producirse como máximo una vez para cada [**elemento InRibbonGallery.**](windowsribbon-element-inribbongallery.md)
 
 > [!Note]  
-> Se permite un máximo de un elemento secundario ([**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) [**o FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)).
+> Se permite un máximo de un elemento secundario [**(VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) [**o FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)).
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para la [Galería en cinta de opciones](windowsribbon-controls-inribbongallery.md).
+En el ejemplo siguiente se muestra el marcado básico para la [Galería en la cinta](windowsribbon-controls-inribbongallery.md)de opciones .
 
 En esta sección de código se muestra la declaración de control **InRibbonGallery.MenuLayout.**
 

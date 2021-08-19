@@ -4,12 +4,12 @@ ms.assetid: 0d355ad1-d674-432e-809a-9fb27ac5f610
 title: Microsoft Media Foundation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4341a0aea1d51c7260e0fa532eb48b80699e053a
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: ee6b229e3d2d0e4585925d40c3a53d04f407981f923ca160084b7c19547acd89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118473595"
 ---
 # <a name="microsoft-media-foundation"></a>Microsoft Media Foundation
 
@@ -26,7 +26,7 @@ Esta documentación contiene las secciones siguientes:
 | [Novedades de Media Foundation](whats-new-for-media-foundation.md)                | Describe lo que ha cambiado en la versión más reciente de Media Foundation.                                                                                  |
 | [Acerca de Media Foundation](about-the-media-foundation-sdk.md)                         | Enumera los encabezados y bibliotecas que necesitará y describe las herramientas y ejemplos de código que se proporcionan para facilitar Media Foundation desarrollo. |
 | [Media Foundation de programación](media-foundation-programming-guide.md)         | Describe cómo realizar tareas específicas en Media Foundation.                                                                                        |
-| [Muestras de SDK de Media Foundation](media-foundation-sdk-samples.md)                     | Describe los ejemplos de código para Media Foundation se proporcionan en el Windows SDK.                                                                           |
+| [Muestras de SDK de Media Foundation](media-foundation-sdk-samples.md)                     | Describe los ejemplos de código para Media Foundation se proporcionan en el SDK Windows.                                                                           |
 | [Referencia de programación de Media Foundation](media-foundation-programming-reference.md) | Contiene temas de referencia para todas las MEDIA FOUNDATION API.                                                                                        |
 
 

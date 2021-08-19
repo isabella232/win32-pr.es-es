@@ -1,5 +1,5 @@
 ---
-description: Indica los servicios admitidos por el Wi-Fi Direct Device.
+description: Indica los servicios admitidos por Wi-Fi Direct Device.
 ms.assetid: 5163eff6-7f65-4602-ad9a-5b8a63e5fd1b
 title: System.Devices.WiFiDirect.Services
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118467215"
 ---
 # <a name="systemdeviceswifidirectservices"></a>System.Devices.WiFiDirect.Services
 
-Indica los servicios admitidos por el Wi-Fi Direct Device
+Indica los servicios admitidos por Wi-Fi Direct Device
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 

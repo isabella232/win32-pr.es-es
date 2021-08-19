@@ -13,7 +13,7 @@ ms.locfileid: "118603037"
 ---
 # <a name="volume-plex-object"></a>Objeto Plex de volumen
 
-\[A partir de Windows 8 y Windows Server 2012, la interfaz COM del servicio [virtual de](virtual-disk-service-portal.md) disco se reemplaza por [el Windows Storage API de Administración](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[A partir Windows 8 y Windows Server 2012, la interfaz COM del servicio virtual [de](virtual-disk-service-portal.md) disco se reemplaza por [el Windows Storage API de Administración](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 Un objeto plex de volumen modela un plex de volumen contenido por un volumen. Solo un volumen reflejado puede tener varios plexos; todos los demás tipos de volúmenes tienen un plex. Cada plex contiene una copia de los datos del volumen. VDS admite cuatro tipos de plex de volumen: simple, abarcado, seccionado y seccionado con paridad. Para obtener una descripción de cada uno de estos tipos de volumen, vea [el objeto Volume](volume-object.md).
 
@@ -21,7 +21,7 @@ Hay dos maneras de crear un volumen con varios plexos. Puede usar el método [**
 
 ![Diagrama que muestra dos plexos únicos, uno con el volumen simple A y otro con el volumen simple B, igual a varios plexos con el volumen reflejado A.](images/vdsplex.png)
 
-Puede consultar los plexos de volumen invocando el [**método IVdsVolume::QueryPlexes.**](/windows/desktop/api/Vds/nf-vds-ivdsvolume-queryplexes) Puede obtener un puntero a un plex de volumen específico seleccionando el objeto plex deseado de la enumeración devuelta por **QueryPlexes**. A excepción del último plex, los plexos existentes se pueden dividir o quitar. Use [**IVdsVolume::BreakPlex**](/windows/desktop/api/Vds/nf-vds-ivdsvolume-breakplex) para dividir un plex de un volumen y convertir el objeto plex roto en un objeto de volumen. Use [**IVdsVolume::RemovePlex para**](/windows/desktop/api/Vds/nf-vds-ivdsvolume-removeplex) eliminar el plex por completo. Puede intentar reparar un plex tolerante a errores llamando al método [**IVdsVolumePlex::Repair,**](/windows/desktop/api/Vds/nf-vds-ivdsvolumeplex-repair) que mueve los miembros defectuosos a discos buenos.
+Puede consultar los plexos de volumen invocando el [**método IVdsVolume::QueryPlexes.**](/windows/desktop/api/Vds/nf-vds-ivdsvolume-queryplexes) Puede obtener un puntero a un plex de volumen específico seleccionando el objeto plex deseado de la enumeración devuelta por **QueryPlexes**. A excepción del último plex, los plex existentes se pueden dividir o quitar. Use [**IVdsVolume::BreakPlex**](/windows/desktop/api/Vds/nf-vds-ivdsvolume-breakplex) para dividir un plex de un volumen y convertir el objeto plex roto en un objeto de volumen. Use [**IVdsVolume::RemovePlex para**](/windows/desktop/api/Vds/nf-vds-ivdsvolume-removeplex) eliminar el plex por completo. Puede intentar reparar un plex tolerante a errores llamando al método [**IVdsVolumePlex::Repair,**](/windows/desktop/api/Vds/nf-vds-ivdsvolumeplex-repair) que mueve los miembros defectuosos a discos buenos.
 
 Además de un identificador de objeto y un tipo plex, las propiedades del objeto plex del volumen incluyen el estado, el estado y el estado de transición del plex. Este objeto no tiene marcas.
 

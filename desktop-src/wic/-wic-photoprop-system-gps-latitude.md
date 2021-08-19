@@ -41,7 +41,7 @@ Este valor se puede escribir escribiendo en System.GPS.LatitudeNumerator y Syste
 
 
 
-| Pedido | Path                     | Formato de disco |
+| Pedido | Ruta de acceso                     | Formato de disco |
 |-------|--------------------------|-------------|
 | 1     | /app1/ifd/gps/{ushort=2} |             |
 | 2     | /xmp/exif:GPSLatitude    |             |
@@ -54,7 +54,7 @@ Este valor se puede escribir escribiendo en System.GPS.LatitudeNumerator y Syste
 
 
 
-| Pedido | Path                     | Formato de disco |
+| Pedido | Ruta de acceso                     | Formato de disco |
 |-------|--------------------------|-------------|
 | 1     | /app1/ifd/gps/{ushort=2} |             |
 | 2     | /xmp/exif:GPSLatitude    |             |
@@ -67,7 +67,7 @@ Este valor se puede escribir escribiendo en System.GPS.LatitudeNumerator y Syste
 
 
 
-| Pedido | Path                     |
+| Pedido | Ruta de acceso                     |
 |-------|--------------------------|
 | 1     | /app1/ifd/gps/{ushort=2} |
 | 2     | /xmp/exif:gpslatitude    |
@@ -82,7 +82,7 @@ Este valor se puede escribir escribiendo en System.GPS.LatitudeNumerator y Syste
 
 
 
-| Pedido | Path                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
 | 1     | /ifd/gps/{ushort=2}       |             |
 | 2     | /ifd/xmp/exif:GPSLatitude |             |
@@ -95,7 +95,7 @@ Este valor se puede escribir escribiendo en System.GPS.LatitudeNumerator y Syste
 
 
 
-| Pedido | Path                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
 | 1     | /ifd/gps/{ushort=2}       |             |
 | 2     | /ifd/xmp/exif:GPSLatitude |             |
@@ -108,7 +108,7 @@ Este valor se puede escribir escribiendo en System.GPS.LatitudeNumerator y Syste
 
 
 
-| Pedido | Path                      |
+| Pedido | Ruta de acceso                      |
 |-------|---------------------------|
 | 1     | /ifd/gps/{ushort=2}       |
 | 2     | /ifd/xmp/exif:gpslatitude |
@@ -117,7 +117,7 @@ Este valor se puede escribir escribiendo en System.GPS.LatitudeNumerator y Syste
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 

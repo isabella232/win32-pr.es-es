@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118438664"
 ---
-# <a name="ui_pkey_fontproperties_family"></a>UI \_ PKEY \_ FontProperties \_ Family
+# <a name="ui_pkey_fontproperties_family"></a>Familia \_ FontProperties de PKEY de interfaz \_ de \_ usuario
 
 Identifica la propiedad de familia \_ FontProperties de PKEY \_ de la interfaz de \_ usuario.
 
@@ -29,11 +29,11 @@ propertyDescription
 
 Una aplicación usa la familia FontProperties de ui PKEY para consultar el valor de la galería desplegable \_ \_ Familia de \_ fuentes. 
 
-El valor de ui PKEY FontProperties Family coincide con un nombre Windows familias de fuentes GDI recuperado con la función \_ \_ \_ [EnumFontFamilies](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesa) o la función [EnumFontFamiliesEx](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesexa). [](../gdi/font-families.md)
+El valor de ui PKEY FontProperties Family coincide con un nombre de familias de fuentes GDI de Windows recuperado con la función \_ \_ \_ [EnumFontFamilies](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesa) o la función [EnumFontFamiliesEx](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesexa). [](../gdi/font-families.md)
 
 El valor predeterminado es una cadena vacía.
 
-Si se proporciona una cadena vacía para el valor de la familia FontProperties de ui PKEY, se borra \_ \_ la selección de \_ fuente.
+Si se proporciona una cadena vacía para el valor de la familia FontProperties de PKEY de la interfaz de usuario, se borra \_ \_ la selección de \_ fuente.
 
 ## <a name="related-topics"></a>Temas relacionados
 

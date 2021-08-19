@@ -32,7 +32,7 @@ Devuelve un valor booleano que indica si la configuración del protector de pant
 
 Esta propiedad es de lectura y escritura con un valor predeterminado de true. Al ver un DVD-Video disco, un usuario normalmente no usa el mouse o el teclado durante largos períodos de tiempo. Por lo tanto, el control ActiveX® MSWebDVD deshabilita el protector de pantalla del sistema de forma predeterminada. Object
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -43,11 +43,11 @@ Estos botones de la cinta de opciones son extensibles en función de las extensi
 -   Editar
 -   Propiedades
 
-Cuando se registra para controlar estáticamente los verbos pertinentes para los nuevos tipos de archivo, la cinta de opciones controla los verbos correctamente. Se registra igual que lo haría para los verbos del menú contextual. Para obtener más información sobre las asociaciones de archivos y el registro de verbos, vea [Verbos y asociaciones](fa-verbs.md) de archivo y Crear controladores [de menús contextuales](context-menu-handlers.md).
+Cuando se registra para controlar estáticamente los verbos pertinentes para los nuevos tipos de archivo, la cinta de opciones controla los verbos correctamente. Se registra igual que lo haría para los verbos del menú contextual. Para obtener más información sobre las asociaciones de archivos y el registro de verbos, vea [Verbos y asociaciones](fa-verbs.md) de archivo y [Crear controladores de menús contextuales.](context-menu-handlers.md)
 
 ## <a name="registering-as-a-default-handler-for-actionids"></a>Registro como controlador predeterminado para ActionIds
 
-En primer lugar, registre el ProgId en la subclave AssocActionId adecuada. Cada subclave AssocActionId representa un verbo o acción que los usuarios pueden invocar desde la cinta de opciones. En este ejemplo, la aplicación se registra para zipSelection ActionID para extender el botón "Extraer todo" de la cinta de opciones.
+En primer lugar, registre el ProgId en la subclave AssocActionId adecuada. Cada subclave AssocActionId representa un verbo o una acción que los usuarios pueden invocar desde la cinta de opciones. En este ejemplo, la aplicación se registra para zipSelection ActionID para extender el botón "Extraer todo" de la cinta de opciones.
 
 ```
 HKEY_LOCAL_MACHINE

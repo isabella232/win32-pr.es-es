@@ -33,15 +33,15 @@ VT \_ R8
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Este valor se puede escribir escribiendo en System.GPS.ImgDirectionNumerator y System.GPS.ImgDirectionDenominator. No se puede escribir directamente. Se concilian los valores de esquemas diferentes.
+Este valor se puede escribir en System.GPS.ImgDirectionNumerator y System.GPS.ImgDirectionDenominator. No se puede escribir directamente. Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Rutas de acceso de lectura
+### <a name="read-paths"></a>Leer rutas de acceso
 
 
 
-| Pedido | Path                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
 | 1     | /app1/ifd/gps/{ushort=17} |             |
 | 2     | /xmp/exif:GPSImgDirection |             |
@@ -54,7 +54,7 @@ Este valor se puede escribir escribiendo en System.GPS.ImgDirectionNumerator y S
 
 
 
-| Pedido | Path                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
 | 1     | /app1/ifd/gps/{ushort=17} |             |
 | 2     | /xmp/exif:GPSImgDirection |             |
@@ -67,7 +67,7 @@ Este valor se puede escribir escribiendo en System.GPS.ImgDirectionNumerator y S
 
 
 
-| Pedido | Path                      |
+| Pedido | Ruta de acceso                      |
 |-------|---------------------------|
 | 1     | /app1/ifd/gps/{ushort=17} |
 | 2     | /xmp/exif:gpsimgdirection |
@@ -78,11 +78,11 @@ Este valor se puede escribir escribiendo en System.GPS.ImgDirectionNumerator y S
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Rutas de acceso de lectura
+### <a name="read-paths"></a>Leer rutas de acceso
 
 
 
-| Pedido | Path                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
 | 1     | /ifd/gps/{ushort=17}          |             |
 | 2     | /ifd/xmp/exif:GPSImgDirection |             |
@@ -95,7 +95,7 @@ Este valor se puede escribir escribiendo en System.GPS.ImgDirectionNumerator y S
 
 
 
-| Pedido | Path                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
 | 1     | /ifd/gps/{ushort=17}          |             |
 | 2     | /ifd/xmp/exif:GPSImgDirection |             |
@@ -108,7 +108,7 @@ Este valor se puede escribir escribiendo en System.GPS.ImgDirectionNumerator y S
 
 
 
-| Pedido | Path                          |
+| Pedido | Ruta de acceso                          |
 |-------|-------------------------------|
 | 1     | /ifd/gps/{ushort=17}          |
 | 2     | /ifd/xmp/exif:gpsimgdirection |
@@ -117,7 +117,7 @@ Este valor se puede escribir escribiendo en System.GPS.ImgDirectionNumerator y S
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 

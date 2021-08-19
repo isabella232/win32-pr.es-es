@@ -15,11 +15,11 @@ ms.locfileid: "117769544"
 
 \[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use el .NET Framework para implementar características de seguridad. Para obtener más información, [vea Alternativas al uso de CAPICOM.](alternatives-to-using-capicom.md)\]
 
-A menudo, es necesario [*recopilar y*](../secgloss/c-gly.md) comprobar un grupo de certificados. Esto a menudo se haría para preparar un grupo de destinatarios para un mensaje envoltorio. En el ejemplo siguiente, los certificados de un almacén local se enumeran y comprueban su validez. A continuación, Active Directory se abre un almacén para recuperar y agregar nuevos certificados al almacén local. Los certificados recuperados del almacén de Active Directory se comprueban para comprobar su validez y, si son válidos, se agregan al almacén local. A continuación, ambos almacenes se cierran.
+A menudo, es necesario [*recopilar y*](../secgloss/c-gly.md) comprobar un grupo de certificados. Esto suele hacerse para preparar un grupo de destinatarios para un mensaje envoltorio. En el ejemplo siguiente, los certificados de un almacén local se enumeran y comprueban su validez. A continuación, Active Directory se abre un almacén para recuperar y agregar nuevos certificados al almacén local. Los certificados recuperados del almacén de Active Directory se comprueban para comprobar su validez y, si son válidos, se agregan al almacén local. A continuación, ambos almacenes se cierran.
 
 En cualquier error CAPICOM, se devuelve un valor decimal negativo **de Err.Number.** Para obtener más información, vea [**CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Para obtener información sobre los valores decimales positivos **de Err.Number,** vea Winerror.h.
 
-En este ejemplo, el nombre del almacén local se pasa como un parámetro de cadena. Una cadena que indica los criterios de búsqueda de certificados en el Active Directory almacén de certificados también se pasa como un parámetro.
+En este ejemplo, el nombre del almacén local se pasa como un parámetro de cadena. Una cadena que indica los criterios de búsqueda de los certificados en el almacén Active Directory también se pasa como parámetro.
 
 
 ```VB

@@ -13,16 +13,16 @@ ms.locfileid: "117857124"
 ---
 # <a name="auto-claims-form-sample"></a>Ejemplo de formulario de notificaciones automáticas
 
-El ejemplo de notificaciones automáticas aborda un escenario hipotético para un asesor de seguros. El trabajo del asesor requiere que visite a los clientes en su casa o negocio y que escriba su información de reclamación en un formulario. Para aumentar la productividad del asesor, su departamento de TI desarrolla una aplicación de tableta que le permite escribir de forma rápida y precisa la información de las reclamaciones a través de dos controles [ink: InkEdit](/previous-versions/ms835842(v=msdn.10)) y [InkPicture.](/previous-versions/ms583740(v=vs.100))
+El ejemplo de notificaciones automáticas aborda un escenario hipotético para un asesor de seguros. El trabajo del asesor requiere que visite con clientes en su casa o negocio y que escriba su información de reclamación en un formulario. Para aumentar la productividad del asesor, su departamento de TI desarrolla una aplicación de tableta que le permite escribir de forma rápida y precisa la información de las reclamaciones a través de dos controles de entrada de lápiz: [InkEdit](/previous-versions/ms835842(v=msdn.10)) y [InkPicture.](/previous-versions/ms583740(v=vs.100))
 
-En este ejemplo, se usa un control [InkEdit](/previous-versions/ms835842(v=msdn.10)) para cada campo de entrada de texto. Un usuario escribe la información pertinente sobre una directiva de seguros y un vehículo en estos campos con un lápiz. El [control InkPicture](/previous-versions/ms583740(v=vs.100)) se usa para agregar entrada de lápiz sobre una imagen de automóvil para resaltar las áreas dañadas del automóvil. El ejemplo de notificaciones automáticas está disponible para C \# y Microsoft Visual Basic .NET. En este tema se describe Visual Basic .NET.
+En este ejemplo, se usa un control [InkEdit](/previous-versions/ms835842(v=msdn.10)) para cada campo de entrada de texto. Un usuario escribe la información pertinente sobre una directiva de seguros y un vehículo en estos campos con un lápiz. El control [InkPicture](/previous-versions/ms583740(v=vs.100)) se usa para agregar entrada de lápiz sobre una imagen de automóvil para resaltar las áreas dañadas del automóvil. El ejemplo de notificaciones automáticas está disponible para C \# y Microsoft Visual Basic .NET. En este tema se describe Visual Basic .NET.
 
-La clase AutoClaims se define como una subclase de [System.Windows. Forms.Form](/dotnet/api/system.windows.forms.form?view=netcore-3.1) y una clase anidada se definen para crear y administrar capas de lápiz para distintos tipos de daños. Se definen cuatro controladores de eventos para realizar las siguientes tareas:
+La clase AutoClaims se define como una subclase de [System.Windows. Forms.Form](/dotnet/api/system.windows.forms.form?view=netcore-3.1) y una clase anidada se definen para crear y administrar capas de entrada de lápiz para distintos tipos de daños. Se definen cuatro controladores de eventos para realizar las siguientes tareas:
 
--   Inicialización de las capas de forma y entrada de lápiz.
+-   Inicialización de las capas de forma e entrada de lápiz.
 -   Volver a dibujar el control [InkPicture.](/previous-versions/ms583740(v=vs.100))
 -   Selección de una capa de entrada de lápiz en el cuadro de lista.
--   Cambiar la visibilidad de una capa de lápiz.
+-   Cambiar la visibilidad de una capa de entrada de lápiz.
 
 > [!Note]  
 > Las versiones de este ejemplo están disponibles en C \# y Visual Basic .NET. La versión que se describe en esta sección es Visual Basic .NET. Los conceptos son los mismos entre versiones.
@@ -48,7 +48,7 @@ using Microsoft.Ink;
 
 
 
-A continuación, en la clase AutoClaims, se define una clase anidada y se declara una `InkLayer` matriz `InkLayer` de cuatro objetos. (InkLayer contiene un objeto [Microsoft.Ink.Ink](/previous-versions/ms583670(v=vs.100)) para almacenar la entrada de lápiz, y los valores [System.Drawing.Color](/dotnet/api/system.drawing.color?view=netcore-3.1) y **Boolean** para almacenar el color y el estado oculto de la capa). Se declara un quinto objeto Ink para controlar la entrada [inkpicture](/previous-versions/ms583740(v=vs.100)) cuando se ocultan todas las capas de lápiz.
+A continuación, en la clase AutoClaims, se define una clase anidada y se declara una `InkLayer` matriz `InkLayer` de cuatro objetos. (InkLayer contiene un objeto [Microsoft.Ink.Ink](/previous-versions/ms583670(v=vs.100)) para almacenar la entrada de lápiz, y los valores [System.Drawing.Color](/dotnet/api/system.drawing.color?view=netcore-3.1) y **Boolean** para almacenar el color y el estado oculto de la capa). Se declara un quinto objeto Ink para controlar la entrada de lápiz para [InkPicture](/previous-versions/ms583740(v=vs.100)) cuando se ocultan todas las capas de entrada de lápiz.
 
 
 ```VB
@@ -88,7 +88,7 @@ bool selectedHidden = false;
 
 Cada capa tiene su propio [objeto Ink.](/previous-versions/ms583670(v=vs.100)) Hay cuatro áreas discretas de interés en el formulario de notificación (cuerpo, ventanas, ruedas y focos), por lo que se usan cuatro objetos InkLayer. Un usuario puede ver cualquier combinación de capas a la vez.
 
-## <a name="initializing-the-form-and-ink-layers"></a>Inicialización de las capas de formulario y entrada de lápiz
+## <a name="initializing-the-form-and-ink-layers"></a>Inicialización de las capas de formulario e entrada de lápiz
 
 El `Load` controlador de eventos inicializa el objeto [Ink](/previous-versions/ms583670(v=vs.100)) y los cuatro `InkLayer` objetos .
 
@@ -141,7 +141,7 @@ lstAnnotationLayer.SelectedIndex = 0;
 
 
 
-Por último, establezca el color de lápiz del control [InkPicture](/previous-versions/ms583740(v=vs.100)) en la entrada de cuadro de lista seleccionada actualmente.
+Por último, establezca el color de entrada de lápiz para el control [InkPicture](/previous-versions/ms583740(v=vs.100)) en la entrada de cuadro de lista seleccionada actualmente.
 
 
 ```VB
@@ -160,7 +160,7 @@ inkPictVehicle.DefaultDrawingAttributes.Color = inkLayers[lstAnnotationLayer.Sel
 
 ## <a name="redrawing-the-inkpicture-control"></a>Volver a dibujar el control InkPicture
 
-En el controlador de eventos [](/dotnet/api/system.windows.forms.control.paint?view=netcore-3.1) Paint control [InkPicture,](/previous-versions/ms583740(v=vs.100)) se comprueban las capas de lápiz para determinar cuáles están ocultas. Si una capa no está oculta, el [](/previous-versions/ms582196(v=vs.100)) procedimiento de evento la muestra mediante el método Draw de la [propiedad](/previous-versions/ms828488(v=msdn.10)) del representador. Si busca en el Explorador de objetos, verá que la propiedad Microsoft.Ink.InkPicture.Renderer se define como un [objeto Microsoft.Ink.Renderer:](/previous-versions/ms828481(v=msdn.10))
+En el controlador de eventos [](/dotnet/api/system.windows.forms.control.paint?view=netcore-3.1) heredado Paint control [InkPicture,](/previous-versions/ms583740(v=vs.100)) se comprueban las capas de entrada de lápiz para determinar cuáles están ocultas. Si una capa no está oculta, el procedimiento de evento la muestra mediante el método Draw de la [propiedad](/previous-versions/ms828488(v=msdn.10)) [Renderer.](/previous-versions/ms582196(v=vs.100)) Si busca en el Explorador de objetos, verá que la propiedad Microsoft.Ink.InkPicture.Renderer se define como un objeto [Microsoft.Ink.Renderer:](/previous-versions/ms828481(v=msdn.10))
 
 
 ```VB
@@ -201,7 +201,7 @@ private void inkPictVehicle_Paint(object sender, System.Windows.Forms.PaintEvent
 
 ## <a name="selecting-an-ink-layer-through-the-list-box"></a>Selección de una capa de entrada de lápiz a través del cuadro de lista
 
-Cuando el usuario selecciona un elemento en el cuadro de lista, el controlador de eventos [SelectedIndexChanged](/dotnet/api/system.windows.forms.listbox.selectedindexchanged?view=netcore-3.1) comprueba primero que la selección ha cambiado y que el control [InkPicture](/previous-versions/ms583740(v=vs.100)) no recopila actualmente la entrada de lápiz. A continuación, establece el color de la entrada de lápiz del control InkPicture en el color adecuado para la capa de lápiz seleccionada. Además, actualiza la casilla Ocultar capa para reflejar el estado oculto de la capa de lápiz seleccionada. Por último, el método Refresh [](/dotnet/api/system.windows.forms.control.refresh?view=netcore-3.1) heredado del control InkPicture se usa para mostrar solo las capas deseadas dentro del control.
+Cuando el usuario selecciona un elemento en el cuadro de lista, el controlador de eventos [SelectedIndexChanged](/dotnet/api/system.windows.forms.listbox.selectedindexchanged?view=netcore-3.1) comprueba primero que la selección ha cambiado y que el control [InkPicture](/previous-versions/ms583740(v=vs.100)) no está recopilando actualmente la entrada de lápiz. A continuación, establece el color de entrada de lápiz del control InkPicture en el color adecuado para la capa de entrada de lápiz seleccionada. Además, actualiza la casilla Ocultar capa para reflejar el estado oculto de la capa de entrada de lápiz seleccionada. Por último, el método Refresh [](/dotnet/api/system.windows.forms.control.refresh?view=netcore-3.1) heredado del control InkPicture se usa para mostrar solo las capas deseadas dentro del control.
 
 
 ```VB
@@ -282,13 +282,13 @@ private void lstAnnotationLayer_SelectedIndexChanged(object sender, System.Event
 
 
 
-## <a name="changing-the-visibility-of-an-ink-layer"></a>Cambiar la visibilidad de una capa de lápiz
+## <a name="changing-the-visibility-of-an-ink-layer"></a>Cambiar la visibilidad de una capa de entrada de lápiz
 
-El `CheckedChanged` controlador de eventos comprueba primero que la selección ha cambiado y que el control [InkPicture](/previous-versions/ms583740(v=vs.100)) no está recopilando actualmente la entrada de lápiz. A continuación, actualiza el estado oculto de la capa de entrada de lápiz seleccionada, establece inkEnabled del control InkPicture **en FALSE**, .
+El `CheckedChanged` controlador de eventos comprueba primero que la selección ha cambiado y que el control [InkPicture](/previous-versions/ms583740(v=vs.100)) no está recopilando actualmente la entrada de lápiz. A continuación, actualiza el estado oculto de la capa de entrada de lápiz seleccionada, establece InkEnabled del control InkPicture en **FALSE**, .
 
 A continuación, la propiedad InkEnabled del control InkPicture se establece en **FALSE** antes de actualizar su propiedad Ink.
 
-Por último, el control [InkPicture](/previous-versions/ms583740(v=vs.100)) está habilitado o deshabilitado para la parte determinada del vehículo en función [](/dotnet/api/system.windows.forms.control.refresh?view=netcore-3.1) de si la casilla Ocultar capa está activada y el método Refresh del control InkPicture se usa para mostrar solo las capas deseadas dentro del control.
+Por último, el control [InkPicture](/previous-versions/ms583740(v=vs.100)) está habilitado o deshabilitado para la parte determinada del vehículo en función de si la casilla Ocultar capa está activada y el método [Refresh](/dotnet/api/system.windows.forms.control.refresh?view=netcore-3.1) del control InkPicture se usa para mostrar solo las capas deseadas dentro del control.
 
 
 ```VB
@@ -373,7 +373,7 @@ private void chHideLayer_CheckedChanged(object sender, System.EventArgs e)
 
 ## <a name="closing-the-form"></a>Cerrar el formulario
 
-En el Windows generado por el Diseñador de formularios, los controles [InkEdit](/previous-versions/ms835842(v=msdn.10)) e [InkPicture](/previous-versions/ms583740(v=vs.100)) se agregan a la lista de componentes del formulario cuando se inicializa el formulario. Cuando se cierra el formulario, el método Dispose del formulario elimina los controles InkEdit e InkPicture, así como los demás componentes [del](/previous-versions/dotnet/netframework-3.5/ms571303(v=vs.90)) formulario. El método Dispose del formulario también elimina los objetos [Ink](/previous-versions/ms583670(v=vs.100)) que se crean para el formulario.
+En el Windows generado por el Diseñador de formularios, los controles [InkEdit](/previous-versions/ms835842(v=msdn.10)) y [InkPicture](/previous-versions/ms583740(v=vs.100)) se agregan a la lista de componentes del formulario cuando se inicializa el formulario. Cuando se cierra el formulario, el método Dispose del formulario elimina los controles InkEdit e InkPicture, así como los demás componentes [del](/previous-versions/dotnet/netframework-3.5/ms571303(v=vs.90)) formulario. El método Dispose del formulario también elimina los objetos [Ink](/previous-versions/ms583670(v=vs.100)) que se crean para el formulario.
 
 ## <a name="related-topics"></a>Temas relacionados
 

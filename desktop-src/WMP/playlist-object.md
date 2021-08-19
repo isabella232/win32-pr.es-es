@@ -1,6 +1,6 @@
 ---
 title: Objeto de lista de reproducción
-description: El objeto Playlist proporciona una manera de organizar los elementos multimedia en una lista para facilitar la manipulación mediante las siguientes propiedades y métodos.
+description: El objeto Lista de reproducción proporciona una manera de organizar los elementos multimedia en una lista para facilitar la manipulación mediante las siguientes propiedades y métodos.
 ms.assetid: c2d2f265-b207-4b82-bb76-aee467f00659
 keywords:
 - Lista de reproducción de objetos Reproductor de Windows Media
@@ -22,7 +22,7 @@ ms.locfileid: "118336723"
 ---
 # <a name="playlist-object"></a>Objeto de lista de reproducción
 
-El **objeto Playlist** proporciona una manera de organizar los elementos multimedia en una lista para facilitar la manipulación mediante las siguientes propiedades y métodos.
+El **objeto Lista** de reproducción proporciona una manera de organizar los elementos multimedia en una lista para facilitar la manipulación mediante las siguientes propiedades y métodos.
 
 El **objeto Playlist** admite las siguientes propiedades.
 
@@ -66,7 +66,7 @@ Se **tiene acceso** al objeto Playlist a través de las siguientes propiedades y
 | Object                                              | Propiedad o método                                                                                                                                                                                                                                                                 |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Cdrom](cdrom-object.md)                           | [Reproducción](cdrom-playlist.md)                                                                                                                                                                                                                                                     |
-| [MediaCollection](mediacollection-object.md)       | [getAll,](mediacollection-getall.md) [getByAlbum,](mediacollection-getbyalbum.md) [getByAttribute,](mediacollection-getbyattribute.md) [getByAuthor,](mediacollection-getbyauthor.md) [getByGenre](mediacollection-getbygenre.md), [getByName](mediacollection-getbyname.md) |
+| [MediaCollection](mediacollection-object.md)       | [getAll](mediacollection-getall.md), [getByAlbum](mediacollection-getbyalbum.md), [getByAttribute](mediacollection-getbyattribute.md), [getByAuthor](mediacollection-getbyauthor.md), [getByGenre](mediacollection-getbygenre.md), [getByName](mediacollection-getbyname.md) |
 | [Reproductor](player-object.md)                         | [currentPlaylist](player-currentplaylist.md), [newPlaylist](player-newplaylist.md)                                                                                                                                                                                               |
 | [PlaylistArray](playlistarray-object.md)           | [item](playlistarray-item.md)                                                                                                                                                                                                                                                     |
 | [PlaylistCollection](playlistcollection-object.md) | [newPlaylist](playlistcollection-newplaylist.md)                                                                                                                                                                                                                                  |
@@ -75,9 +75,9 @@ Se **tiene acceso** al objeto Playlist a través de las siguientes propiedades y
 
  
 
-Dado que es el medio de acceso más común, el *reproductor*. **currentPlaylist** se usa para fines ilustrativos en las secciones de sintaxis de referencia.
+Dado que es el medio de acceso más común, el *reproductor .* **currentPlaylist** se usa para fines ilustrativos en las secciones de sintaxis de referencia.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

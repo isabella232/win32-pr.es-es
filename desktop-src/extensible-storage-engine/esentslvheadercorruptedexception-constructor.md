@@ -50,7 +50,7 @@ Dim instance As New EsentSLVHeaderCorruptedException()
 public EsentSLVHeaderCorruptedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

@@ -1,9 +1,9 @@
 ---
 title: Elemento InRibbonGallery
-description: Representa el In-Ribbon galería, un control basado en la galería que expone un subconjunto predeterminado de elementos directamente en la cinta de opciones. Los elementos restantes se muestran cuando se hace clic en un botón de menú desplegable.
+description: Representa la In-Ribbon, un control basado en la galería que expone un subconjunto predeterminado de elementos directamente en la cinta de opciones. Los elementos restantes se muestran cuando se hace clic en un botón de menú desplegable.
 ms.assetid: 07d035e2-e6db-49fa-b786-a37cbceb58f6
 keywords:
-- Cinta de opciones de Windows del elemento InRibbonGallery
+- Elemento InRibbonGallery Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a25b2ebb937d954adce58231fd8c6b3347a031a7
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 1156c7a3b625496b0a4d50b750a3db5cda51a6b77745aaf26d4282de1be3443d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117850845"
 ---
 # <a name="inribbongallery-element"></a>Elemento InRibbonGallery
 
@@ -138,7 +138,7 @@ Solo se aplica a galerías donde el valor del atributo <em>Type</em> es igual a 
 <td><strong>MinColumnsMedium</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>No<br/></td>
-<td>Especifica el número mínimo de columnas que <strong>inRibbonGallery</strong> muestra en el diseño del grupo Mediano, antes de cambiar a <em>Pequeño</em>. <em></em><br/> <br/>
+<td>Especifica el número mínimo de columnas que <strong>inRibbonGallery</strong> muestra en el diseño <em>del</em> grupo Mediano, antes de cambiar a <em>Pequeño</em>.<br/> <br/>
 <dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="even">
@@ -169,7 +169,7 @@ Solo se aplica a galerías donde el valor del atributo <em>Type</em> es igual a 
 | [**Casilla**](windowsribbon-element-checkbox.md)<br/>                                     | Puede producirse una o varias veces<br/> <br/> |
 | [**InRibbonGallery.MenuGroups**](windowsribbon-element-inribbongallery-menugroups.md)<br/> | Debe producirse exactamente una vez<br/> <br/>     |
 | [**InRibbonGallery.MenuLayout**](windowsribbon-element-inribbongallery-menulayout.md)<br/> | Puede producirse como máximo una vez<br/> <br/>      |
-| [**Button**](windowsribbon-element-button.md)<br/>                                       | Puede producirse una o varias veces<br/> <br/> |
+| [**Botón**](windowsribbon-element-button.md)<br/>                                       | Puede producirse una o varias veces<br/> <br/> |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>                               | Puede producirse una o varias veces<br/> <br/> |
 | [**ToggleButton**](windowsribbon-element-togglebutton.md)<br/>                             | Puede producirse una o varias veces<br/> <br/> |
 
@@ -218,13 +218,13 @@ Opcional.
 
 Puede producirse como máximo una vez para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md) [**o Group.**](windowsribbon-element-group.md)
 
-En la siguiente captura de pantalla se muestra el control [De](windowsribbon-controls-inribbongallery.md) la cinta de opciones en la galería Microsoft Paint para Windows 7.
+En la siguiente captura de pantalla se muestra el control Ribbon [In-Ribbon Gallery](windowsribbon-controls-inribbongallery.md) en Microsoft Paint para Windows 7.
 
-![captura de pantalla de un control de la galería en la cinta de opciones de microsoft paint.](images/controls/inribbongallery.png)
+![captura de pantalla de un control de la galería en la cinta de opciones en la cinta de microsoft Paint.](images/controls/inribbongallery.png)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para una [galería en cinta de opciones](windowsribbon-controls-inribbongallery.md).
+En el ejemplo siguiente se muestra el marcado básico para una [galería en la cinta](windowsribbon-controls-inribbongallery.md)de opciones .
 
 En esta sección de código se muestran las declaraciones [](windowsribbon-element-group.md) del comando **InRibbonGallery,** con un grupo asociado que actúa como contenedor primario para el **elemento InRibbonGallery.**
 
@@ -282,7 +282,7 @@ En esta sección de código se muestran las declaraciones de control **InRibbonG
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

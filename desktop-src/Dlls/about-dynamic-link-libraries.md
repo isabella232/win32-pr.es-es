@@ -1,5 +1,5 @@
 ---
-description: La vinculación dinámica permite que un módulo incluya solo la información necesaria para buscar una función DLL exportada en tiempo de carga o en tiempo de ejecución.
+description: La vinculación dinámica permite que un módulo incluya solo la información necesaria para localizar una función DLL exportada en tiempo de carga o en tiempo de ejecución.
 ms.assetid: df2a8e4c-7ad0-46ea-9643-1528a9ea1503
 title: Acerca de Dynamic-Link bibliotecas
 ms.topic: article
@@ -13,14 +13,14 @@ ms.locfileid: "117815914"
 ---
 # <a name="about-dynamic-link-libraries"></a>Acerca de Dynamic-Link bibliotecas
 
-La vinculación dinámica permite que un módulo incluya solo la información necesaria para buscar una función DLL exportada en tiempo de carga o en tiempo de ejecución. La vinculación dinámica difiere de la vinculación estática más conocida, en la que el vinculador copia el código de una función de biblioteca en cada módulo que la llama.
+La vinculación dinámica permite que un módulo incluya solo la información necesaria para localizar una función DLL exportada en tiempo de carga o en tiempo de ejecución. La vinculación dinámica difiere de la vinculación estática más familiar, en la que el vinculador copia el código de una función de biblioteca en cada módulo que la llama.
 
 ## <a name="types-of-dynamic-linking"></a>Tipos de vinculación dinámica
 
 Hay dos métodos para llamar a una función en un archivo DLL:
 
--   En *la vinculación dinámica en tiempo de carga,* un módulo realiza llamadas explícitas a funciones DLL exportadas como si fueran funciones locales. Esto requiere que vincule el módulo con la biblioteca de importación para el archivo DLL que contiene las funciones. Una biblioteca de importación proporciona al sistema la información necesaria para cargar el archivo DLL y localizar las funciones DLL exportadas cuando se carga la aplicación.
--   En *la vinculación dinámica en tiempo de* ejecución, un módulo usa la función [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) o [**LoadLibraryEx**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa) para cargar el archivo DLL en tiempo de ejecución. Una vez cargado el archivo DLL, el módulo llama a la [**función GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para obtener las direcciones de las funciones DLL exportadas. El módulo llama a las funciones DLL exportadas mediante los punteros de función devueltos **por GetProcAddress**. Esto elimina la necesidad de una biblioteca de importación.
+-   En *la vinculación dinámica en tiempo de carga,* un módulo realiza llamadas explícitas a funciones DLL exportadas como si fueran funciones locales. Esto requiere que vincule el módulo con la biblioteca de importación del archivo DLL que contiene las funciones. Una biblioteca de importación proporciona al sistema la información necesaria para cargar el archivo DLL y localizar las funciones DLL exportadas cuando se carga la aplicación.
+-   En *la vinculación dinámica en tiempo de* ejecución, un módulo usa las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) o [**LoadLibraryEx**](/windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa) para cargar el archivo DLL en tiempo de ejecución. Una vez cargado el archivo DLL, el módulo llama a la [**función GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para obtener las direcciones de las funciones DLL exportadas. El módulo llama a las funciones DLL exportadas mediante los punteros de función devueltos **por GetProcAddress**. Esto elimina la necesidad de una biblioteca de importación.
 
 ## <a name="dlls-and-memory-management"></a>DLL y administración de memoria
 
@@ -31,7 +31,7 @@ El sistema mantiene un recuento de referencias por proceso para cada archivo DLL
 Al igual que cualquier otra función, una función DLL exportada se ejecuta en el contexto del subproceso que la llama. Por lo tanto, se aplican las condiciones siguientes:
 
 -   Los subprocesos del proceso que llamó al archivo DLL pueden usar identificadores abiertos por una función DLL. De forma similar, los identificadores abiertos por cualquier subproceso del proceso de llamada se pueden usar en la función DLL.
--   El archivo DLL usa la pila del subproceso que realiza la llamada y el espacio de direcciones virtuales del proceso de llamada.
+-   El archivo DLL usa la pila del subproceso de llamada y el espacio de direcciones virtuales del proceso de llamada.
 -   El archivo DLL asigna memoria desde el espacio de direcciones virtuales del proceso de llamada.
 
 Para obtener más información sobre los archivos DLL, vea los temas siguientes:

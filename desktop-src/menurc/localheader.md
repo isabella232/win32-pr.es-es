@@ -1,6 +1,6 @@
 ---
-title: ESTRUCTURA LOCALHEADER
-description: Contiene las coordenadas x e y de una zona activa asociada al cursor identificado por una estructura RESDIR. La definición de estructura que se proporciona aquí es solo para una explicación; no está presente en ningún archivo de encabezado estándar.
+title: Estructura LOCALHEADER
+description: Contiene las coordenadas x e y de un punto de acceso asociado al cursor identificado por una estructura RESDIR. La definición de estructura que se proporciona aquí es solo para explicación; no está presente en ningún archivo de encabezado estándar.
 ms.assetid: 8cf74040-8b8f-447e-a881-1bcf05b151e2
 keywords:
 - Menús de estructura LOCALHEADER y otros recursos
@@ -20,9 +20,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117870323"
 ---
-# <a name="localheader-structure"></a>ESTRUCTURA LOCALHEADER
+# <a name="localheader-structure"></a>Estructura LOCALHEADER
 
-Contiene las coordenadas x e y de una zona activa asociada al cursor identificado por una [**estructura RESDIR.**](resdir.md) La definición de estructura que se proporciona aquí es solo para una explicación; no está presente en ningún archivo de encabezado estándar.
+Contiene las coordenadas x e y de un punto de acceso asociado al cursor identificado por una [**estructura RESDIR.**](resdir.md) La definición de estructura que se proporciona aquí es solo para explicación; no está presente en ningún archivo de encabezado estándar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ Tipo: **WORD**
 
 </dd> <dd>
 
-Coordenada x de la zona de acceso directo del cursor, en píxeles.
+Coordenada x del punto de acceso directo del cursor, en píxeles.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Tipo: **WORD**
 
 </dd> <dd>
 
-Coordenada y de la zona de acceso directo del cursor, en píxeles.
+Coordenada y del punto de acceso directo del cursor, en píxeles.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ La **estructura LOCALHEADER** son los primeros datos escritos en el recurso [RT 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

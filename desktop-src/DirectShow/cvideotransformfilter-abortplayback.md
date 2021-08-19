@@ -64,7 +64,7 @@ Devuelve el valor del *parámetro hr.*
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

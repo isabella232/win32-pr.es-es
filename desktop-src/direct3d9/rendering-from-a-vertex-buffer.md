@@ -24,7 +24,7 @@ d3dDevice->SetStreamSource( 0, g_pVB, 0, sizeof(CUSTOMVERTEX) );
 
 El primer parámetro de [**IDirect3DDevice9::SetStreamSource**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setstreamsource) indica a Direct3D el origen del flujo de datos del dispositivo. El segundo parámetro es el búfer de vértices que se va a enlazar al flujo de datos. El tercer parámetro es el desplazamiento desde el principio de la secuencia hasta el principio de los datos del vértice, en bytes. El cuarto parámetro es el paso del componente, en bytes. En el código de ejemplo anterior, se usa el tamaño de customvertex para el paso del componente.
 
-El siguiente paso consiste en informar a Direct3D qué sombreador de vértices usar mediante una llamada al [**método IDirect3DDevice9::SetVertexShader.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setvertexshader) El código de ejemplo siguiente establece un código FVF para el sombreador de vértices. Esto informa a Direct3D de los tipos de vértices con los que está trabajando.
+El siguiente paso consiste en informar a Direct3D qué sombreador de vértices usar llamando al [**método IDirect3DDevice9::SetVertexShader.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setvertexshader) El código de ejemplo siguiente establece un código FVF para el sombreador de vértices. Esto informa a Direct3D de los tipos de vértices con los que está trabajando.
 
 
 ```
@@ -33,7 +33,7 @@ d3dDevice->SetFVF( D3DFVF_CUSTOMVERTEX );
 
 
 
-Después de establecer el origen de la secuencia y el sombreador de vértices, los métodos de dibujo usarán el búfer de vértices. En el ejemplo de código siguiente se muestra cómo representar vértices desde un búfer de vértices con el método [**IDirect3DDevice9::D rawPrimitive.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive)
+Después de establecer el origen de la secuencia y el sombreador de vértices, los métodos de dibujo usarán el búfer de vértices. En el ejemplo de código siguiente se muestra cómo representar vértices desde un búfer de vértices con el [**método IDirect3DDevice9::D rawPrimitive.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive)
 
 
 ```
@@ -42,7 +42,7 @@ d3dDevice->DrawPrimitive( D3DPT_TRIANGLELIST, 0, 1 );
 
 
 
-El segundo parámetro [**que acepta IDirect3DDevice9::D rawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) es el índice del primer vector del búfer de vértices que se va a cargar.
+El segundo parámetro que [**acepta IDirect3DDevice9::D rawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) es el índice del primer vector del búfer de vértices que se va a cargar.
 
 ## <a name="related-topics"></a>Temas relacionados
 

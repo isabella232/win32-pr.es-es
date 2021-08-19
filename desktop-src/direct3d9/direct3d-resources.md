@@ -15,7 +15,7 @@ ms.locfileid: "118523784"
 
 Los recursos son las texturas y búferes que se usan para representar una escena. Las aplicaciones deben crear, cargar, copiar y usar recursos. En esta sección se proporciona una breve introducción a los recursos y los pasos y métodos que usan las aplicaciones al trabajar con recursos.
 
-Todos los recursos, incluidos los recursos de geometría [**IDirect3DIndexBuffer9**](/windows/desktop/api) e [**IDirect3DVertexBuffer9,**](/windows/desktop/api)heredan de la [**interfaz IDirect3DResource9.**](/windows/desktop/api) Los recursos de textura, [**IDirect3DCubeTexture9,**](/windows/desktop/api) [**IDirect3DTexture9**](/windows/desktop/api)e [**IDirect3DVolumeTexture9,**](/windows/desktop/api)también heredan de la interfaz [**IDirect3DBaseTexture9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dbasetexture9)
+Todos los recursos, incluidos los recursos de geometría [**IDirect3DIndexBuffer9**](/windows/desktop/api) [**e IDirect3DVertexBuffer9,**](/windows/desktop/api)heredan de la [**interfaz IDirect3DResource9.**](/windows/desktop/api) Los recursos de textura, [**IDirect3DCubeTexture9,**](/windows/desktop/api) [**IDirect3DTexture9**](/windows/desktop/api)e [**IDirect3DVolumeTexture9,**](/windows/desktop/api)también heredan de la interfaz [**IDirect3DBaseTexture9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dbasetexture9)
 
 -   [Propiedades del recurso (Direct3D 9)](resource-properties.md)
 -   [Manipulación de recursos (Direct3D 9)](manipulating-resources.md)

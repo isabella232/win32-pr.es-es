@@ -17,7 +17,7 @@ La [**interfaz IX509CertificateRequestCmc**](/windows/desktop/api/CertEnroll/nn-
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**ArchivePrivateKey, propiedad**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_archiveprivatekey)
+-   [**ArchivePrivateKey( Propiedad)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_archiveprivatekey)
 -   [**Propiedad CriticalExtensions**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_criticalextensions)
 -   [**Propiedad CryptAttributes**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_cryptattributes)
 -   [**Propiedad EncryptedKeyHash**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_encryptedkeyhash)
@@ -29,7 +29,7 @@ La [**interfaz IX509CertificateRequestCmc**](/windows/desktop/api/CertEnroll/nn-
 -   [**Propiedad SenderNonce**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_sendernonce)
 -   [**Propiedad SignatureInformation**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_signatureinformation)
 -   [**Propiedad SignerCertificates**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_signercertificates)
--   [**Propiedad SuppressOids**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_suppressoids)
+-   [**SuppressOids (propiedad)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_suppressoids)
 -   [**Propiedad TemplateObjectId**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_templateobjectid)
 -   [**Propiedad TransactionId**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_transactionid)
 -   [**Propiedad X509Extensions**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_x509extensions)

@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117761948"
 ---
-# <a name="line_groupstatus-message"></a>Mensaje \_ LINE GROUPSTATUS
+# <a name="line_groupstatus-message"></a>Mensaje \_ DE LINE GROUPSTATUS
 
 El **mensaje \_ LINE GROUPSTATUS se** envía cuando cambia el estado de un grupo de ACD en un controlador de agente para el que la aplicación tiene actualmente una línea abierta. Este mensaje se genera mediante la [**función lineProxyMessage.**](/windows/desktop/api/Tapi/nf-tapi-lineproxymessage)
 
@@ -29,7 +29,7 @@ El **mensaje \_ LINE GROUPSTATUS se** envía cuando cambia el estado de un grupo
 *dwDevice* 
 </dt> <dd>
 
-Identificador de la aplicación al dispositivo de línea. Esto se relaciona con el controlador del agente.
+Identificador de la aplicación al dispositivo de línea. Esto está relacionado con el controlador del agente.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Reservado. Establecer en cero.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.2<br/>                                                      |
 | Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |

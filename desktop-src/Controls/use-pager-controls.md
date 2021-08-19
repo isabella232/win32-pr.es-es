@@ -21,28 +21,28 @@ En esta sección se describe cómo implementar el control de paginación en la a
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
 
 ## <a name="instructions"></a>Instructions
 
-### <a name="initialize-a-pager-control"></a>Inicializar un control De paginación
+### <a name="initialize-a-pager-control"></a>Inicializar un control de paginación
 
-Para usar el control de paginación, debe llamar a la función [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) con la marca DE CLASE PAGESCROLLER DE PAGES ESTABLECIDA en el miembro dwICC de la estructura \_ \_ [**INITCOMMONCONTROLSEX.**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) 
+Para usar el control de paginación, debe llamar a la función [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) con la marca DE CLASE PAGESCROLLER DE PAGESCROLLER establecida en el miembro dwICC de la estructura \_ \_ [**INITCOMMONCONTROLSEX.**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) 
 
-### <a name="create-a-pager-control"></a>Crear un control de paginación
+### <a name="create-a-pager-control"></a>Crear un control De paginación
 
-Use [**CreateWindow o**](/windows/desktop/api/winuser/nf-winuser-createwindowa) [**createWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) API para crear un control de paginación. El nombre de clase del control [**es WC \_ PAGESCROLLER**](common-control-window-classes.md), que se define en Commctrl.h. El [**estilo \_ HORZ**](pager-control-styles.md) de PGS se usa para crear un paginador horizontal y el estilo [**\_ PGS VERT**](pager-control-styles.md) se usa para crear un paginador vertical. Dado que se trata de un control secundario, también se debe usar el estilo CHILD de [**WS. \_**](/windows/desktop/winmsg/window-styles)
+Use [**CreateWindow o**](/windows/desktop/api/winuser/nf-winuser-createwindowa) [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) API para crear un control de paginación. El nombre de clase del control es [**WC \_ PAGESCROLLER**](common-control-window-classes.md), que se define en Commctrl.h. El [**estilo \_ HORZ**](pager-control-styles.md) de PGS se usa para crear un paginador horizontal y el estilo [**\_ PGS VERT**](pager-control-styles.md) se usa para crear un paginador vertical. Dado que se trata de un control secundario, también se debe usar el estilo CHILD de [**WS. \_**](/windows/desktop/winmsg/window-styles)
 
-Después de crear el control de paginación, lo más probable es que desee asignarle una ventana independiente. Si la ventana independiente es una ventana secundaria, debe convertirla en un elemento secundario del control de paginación para que el tamaño y la posición se calcule correctamente. A continuación, asigne la ventana al control de paginación con el [**mensaje \_ SETCHILD de PGM.**](pgm-setchild.md) Tenga en cuenta que este mensaje no cambia realmente la ventana primaria de la ventana independiente; simplemente asigna la ventana independiente. Si la ventana independiente es uno de los controles comunes, debe tener el estilo [**\_ CCS NORESIZE**](common-control-styles.md) para evitar que el control intente cambiar su tamaño al tamaño del control de paginación.
+Una vez creado el control de paginación, lo más probable es que desee asignarle una ventana independiente. Si la ventana independiente es una ventana secundaria, debe convertirla en un elemento secundario del control de paginación para que el tamaño y la posición se calcule correctamente. A continuación, asigne la ventana al control de paginación con el [**mensaje \_ SETCHILD de PGM.**](pgm-setchild.md) Tenga en cuenta que este mensaje no cambia realmente la ventana primaria de la ventana independiente; simplemente asigna la ventana independiente. Si la ventana independiente es uno de los controles comunes, debe tener el estilo [**\_ CCS NORESIZE**](common-control-styles.md) para evitar que el control intente cambiar su tamaño al tamaño del control de paginación.
 
 ### <a name="process-pager-control-notifications"></a>Procesar notificaciones de control de paginación
 
 Como mínimo, es necesario procesar la notificación [PGN \_ CALCSIZE.](pgn-calcsize.md) Si no procesa esta notificación y escribe un valor para el ancho o alto, no se mostrarán las flechas de desplazamiento del control de paginación. Esto se debe a que el control de paginación usa el ancho o alto proporcionados en la notificación PGN CALCSIZE para determinar el tamaño \_ "ideal" de la ventana independiente.
 
-En el ejemplo siguiente se muestra cómo procesar el caso [de notificación \_ PGN CALCSIZE.](pgn-calcsize.md) En este ejemplo, la ventana independiente es un control de barra de herramientas que contiene un número desconocido de botones con un tamaño desconocido. En el ejemplo se muestra cómo usar el mensaje [**\_ TB GETMAXSIZE**](tb-getmaxsize.md) para determinar el tamaño de todos los elementos de la barra de herramientas. A continuación, el ejemplo coloca el ancho de todos los elementos en el **miembro iWidth** de la estructura [**NMPGCALCSIZE**](/windows/desktop/api/Commctrl/ns-commctrl-nmpgcalcsize) que se pasa a la notificación.
+En el ejemplo siguiente se muestra cómo procesar el caso [de notificación \_ PGN CALCSIZE.](pgn-calcsize.md) En este ejemplo, la ventana independiente es un control de barra de herramientas que contiene un número desconocido de botones con un tamaño desconocido. En el ejemplo se muestra cómo usar el mensaje [**\_ TB GETMAXSIZE**](tb-getmaxsize.md) para determinar el tamaño de todos los elementos de la barra de herramientas. A continuación, el ejemplo coloca el ancho de todos los elementos en el miembro **iWidth** de la estructura [**NMPGCALCSIZE**](/windows/desktop/api/Commctrl/ns-commctrl-nmpgcalcsize) que se pasa a la notificación.
 
 
 ```C++

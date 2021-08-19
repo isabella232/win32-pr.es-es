@@ -1,19 +1,19 @@
 ---
-description: Alllows el representador de vídeo mejorado (EVR) para mezclar el vídeo dentro de un rectángulo que sea menor que el rectángulo de salida y, a continuación, escale el resultado.
+description: Todo permite que el representador de vídeo mejorado (EVR) mezcle el vídeo dentro de un rectángulo que sea menor que el rectángulo de salida y, a continuación, escale el resultado.
 ms.assetid: 7e3b8fe1-959b-4391-a715-5d5a7a7dda39
-title: EVRConfig_AllowScaling atributo (UUID. h)
+title: EVRConfig_AllowScaling atributo (Uuids.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef1d0662c7145d9f5c5484df81c2483305402850
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c83323c42ac81d4cce0bb42733bd4246959cf0fc9a58b5705579a86aee9b2bd6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117879429"
 ---
-# <a name="evrconfig_allowscaling-attribute"></a>\_Atributo AllowScaling de EVRConfig
+# <a name="evrconfig_allowscaling-attribute"></a>Atributo \_ AllowScaling de EVRConfig
 
-Alllows el representador de vídeo mejorado (EVR) para mezclar el vídeo dentro de un rectángulo que sea menor que el rectángulo de salida y, a continuación, escale el resultado.
+Todo permite que el representador de vídeo mejorado (EVR) mezcle el vídeo dentro de un rectángulo que sea menor que el rectángulo de salida y, a continuación, escale el resultado.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,17 +21,17 @@ Alllows el representador de vídeo mejorado (EVR) para mezclar el vídeo dentro 
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para establecer este atributo, llame a [**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se puede establecer en el receptor de medios EVR. Para establecer el atributo, utilice **QueryInterface** para consultar el receptor de medios EVR de la interfaz [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) .
+Este atributo se puede establecer en el receptor de medios EVR. Para establecer el atributo, use **QueryInterface para** consultar el receptor de medios EVR para la [**interfaz DEATTRIBUTEAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
 
-Establecer este atributo tiene el mismo efecto que establecer la marca **MFVideoRenderPrefs \_ ALLOWSCALING** en EVR. Consulte [**MFVideoRenderPrefs**](/windows/desktop/api/evr/ne-evr-mfvideorenderprefs) para obtener una descripción de esta marca.
+Establecer este atributo tiene el mismo efecto que establecer la marca **\_ allowScaling MFVideoRenderPrefs** en la EVR. Consulte [**MFVideoRenderPrefs para**](/windows/desktop/api/evr/ne-evr-mfvideorenderprefs) obtener una descripción de esta marca.
 
-La constante GUID para este atributo se exporta desde strmiids. lib.
+La constante GUID para este atributo se exporta desde strmiids.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,9 +39,9 @@ La constante GUID para este atributo se exporta desde strmiids. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                            |
-| Encabezado<br/>                   | <dl> <dt>UUID. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
+| Header<br/>                   | <dl> <dt>Uuids.h</dt> </dl> |
 
 
 
@@ -49,10 +49,10 @@ La constante GUID para este atributo se exporta desde strmiids. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos EVR](enhanced-video-renderer-attributes.md)
+[Atributos de EVR](enhanced-video-renderer-attributes.md)
 </dt> <dt>
 
 [Administración de calidad de vídeo](video-quality-management.md)

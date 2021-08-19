@@ -4,8 +4,8 @@ description: Obtiene métricas de glifo en unidades de diseño de fuentes con lo
 ms.assetid: 7bda3916-6db3-4f56-b18c-288506c0b646
 keywords:
 - Método GetGdiCompatibleGlyphMetrics de escritura directa
-- Método GetGdiCompatibleGlyphMetrics direct write , interfaz IDWriteFontFace
-- Método GetGdiCompatibleGlyphMetrics de la interfaz IDWriteFontFace
+- Método GetGdiCompatibleGlyphMetrics Direct Write , interfaz IDWriteFontFace
+- IdWriteFontFace interface Direct Write , Método GetGdiCompatibleGlyphMetrics
 topic_type:
 - apiref
 api_name:
@@ -67,21 +67,21 @@ Número de píxeles físicos por DIP.
 
 </dd> <dt>
 
-*transformación* \[ en, opcional\]
+*transform* \[ in, opcional\]
 </dt> <dd>
 
 Tipo: **const [**DWRITE \_ MATRIX**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) \***
 
-Una transformación opcional aplicada a los glifos y sus posiciones. Esta transformación se aplica después del escalado especificado por el tamaño de fuente y *pixelsPerDip*.
+Transformación opcional aplicada a los glifos y sus posiciones. Esta transformación se aplica después del escalado especificado por el tamaño de fuente y *pixelsPerDip*.
 
 </dd> <dt>
 
-*useGdiAtura* 
+*useGdiNatural* 
 </dt> <dd>
 
 Tipo: **BOOL**
 
-Cuando se establece en **FALSE,** las métricas son las mismas que las métricas del texto con alias GDI. Cuando se establece en **TRUE,** las métricas son las mismas que las métricas de texto medidas por GDI mediante una fuente creada con **CLEARTYPE \_ NATURAL \_ QUALITY**.
+Cuando se establece en **FALSE,** las métricas son las mismas que las métricas del texto con alias GDI. Cuando se establece en **TRUE**, las métricas son las mismas que las métricas de texto medidas por GDI mediante una fuente creada con **CLEARTYPE \_ NATURAL \_ QUALITY**.
 
 </dd> <dt>
 
@@ -117,7 +117,7 @@ Matriz de estructuras [**DWRITE \_ GLYPH \_ METRICS**](/windows/win32/api/dwrite
 
 Tipo: **BOOL**
 
-Valor BOOL que indica si la fuente se usa en una ejecución lateral. Esto puede afectar a las métricas de glifo si la fuente tiene simulación oblicuo porque la simulación oblicua lateral difiere de la simulación oblicua no lateral.
+Valor BOOL que indica si la fuente se usa en una ejecución lateral. Esto puede afectar a las métricas de glifos si la fuente tiene una simulación oblicua porque la simulación oblicua lateral difiere de la simulación oblicua no lateral.
 
 </dd> </dl>
 
@@ -131,14 +131,14 @@ Código de error **HRESULT** estándar. Si alguno de los índices de glifo de en
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
 | Biblioteca<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

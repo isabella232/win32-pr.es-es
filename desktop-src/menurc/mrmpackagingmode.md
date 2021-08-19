@@ -1,9 +1,9 @@
 ---
-title: Enumeración MrmPackagingMode (MrmResourceIndexer. h)
-description: Define constantes que especifican qué tipo de archivos PRI debe crear MrmCreateResourceFile y MrmCreateResourceFileInMemory.
+title: Enumeración MrmPackagingMode (MrmResourceIndexer.h)
+description: Define constantes que especifican qué tipo de archivos PRI deben crear MrmCreateResourceFile y MrmCreateResourceFileInMemory.
 ms.assetid: 5695B67E-5446-4538-83D2-F8FF91A5080E
 keywords:
-- Menús de enumeración de MrmPackagingMode y otros recursos
+- Menús de enumeración MrmPackagingMode y otros recursos
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eaca681dbcf9d171e279083abbb730895ff99333
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 58b4e968a43ba08786cc433b199bef5c07431420ac5942646530960279ea853e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117870154"
 ---
 # <a name="mrmpackagingmode-enumeration"></a>Enumeración MrmPackagingMode
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Define constantes que especifican qué tipo de archivos PRI debe crear [**MrmCreateResourceFile**](mrmcreateresourcefile.md) y [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md). Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea [API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Define constantes que especifican qué tipo de archivos PRI deben crear [**MrmCreateResourceFile**](mrmcreateresourcefile.md) y [**MrmCreateResourceFileInMemory.**](mrmcreateresourcefileinmemory.md) Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, consulte API de indexación de recursos de paquetes (PRI) y sistemas [de compilación personalizados.](/windows/uwp/app-resources/pri-apis-custom-build-systems)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -47,21 +47,21 @@ typedef enum _MrmPackagingMode {
 <span id="MrmPackagingModeStandaloneFile"></span><span id="mrmpackagingmodestandalonefile"></span><span id="MRMPACKAGINGMODESTANDALONEFILE"></span>**MrmPackagingModeStandaloneFile**
 </dt> <dd>
 
-Especifica que debe crearse un único archivo PRI.
+Especifica que se debe crear un único archivo PRI.
 
 </dd> <dt>
 
 <span id="MrmPackagingModeAutoSplit"></span><span id="mrmpackagingmodeautosplit"></span><span id="MRMPACKAGINGMODEAUTOSPLIT"></span>**MrmPackagingModeAutoSplit**
 </dt> <dd>
 
-Especifica que deben crearse varios archivos PRI; se divide automáticamente por todos los calificadores admitidos (específicamente, de idioma y de escala).
+Especifica que se deben crear varios archivos PRI; dividir automáticamente por todos los calificadores admitidos (específicamente, idioma y escala).
 
 </dd> <dt>
 
 <span id="MrmPackagingModeResourcePack"></span><span id="mrmpackagingmoderesourcepack"></span><span id="MRMPACKAGINGMODERESOURCEPACK"></span>**MrmPackagingModeResourcePack**
 </dt> <dd>
 
-Especifica que debe crearse un archivo PRI de satélite de complementos.
+Especifica que se debe crear un archivo PRI satélite de complemento.
 
 </dd> </dl>
 
@@ -71,9 +71,9 @@ Especifica que debe crearse un archivo PRI de satélite de complementos.
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1803 \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server \[\]<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de servidor\]<br/>                                                 |
+| Header<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
 
 
 

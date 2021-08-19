@@ -1,9 +1,9 @@
 ---
-title: Elemento BODY (sendEmailType)
+title: Elemento Body (sendEmailType)
 description: Contiene el texto en el cuerpo del mensaje de correo electrónico.
 ms.assetid: fac6ddd5-6f73-427b-b213-ab946512c87a
 keywords:
-- Elemento BODY Programador de tareas
+- Elemento body Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4659f2ff03f69b6bba40d9cd16e9b68515cc8889
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a924062b3a382bc8362bdfa45e1477b4e841222bdd1f5ac70fbb8adbc9b070b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118857968"
 ---
-# <a name="body-sendemailtype-element"></a>Elemento BODY (sendEmailType)
+# <a name="body-sendemailtype-element"></a>Elemento Body (sendEmailType)
 
 Contiene el texto en el cuerpo del mensaje de correo electrónico.
 
@@ -30,7 +30,7 @@ Contiene el texto en el cuerpo del mensaje de correo electrónico.
  />
 ```
 
-El elemento **Body** se define mediante el tipo complejo de [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) .
+El tipo complejo [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) define el elemento **Body.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -42,20 +42,20 @@ El elemento **Body** se define mediante el tipo complejo de [**sendEmailType**](
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de C++, vea [**Body (propiedad) de IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_body).
+Para el desarrollo de C++, vea [**Body Property of IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_body).
 
-Para el desarrollo de scripts, vea [**EmailAction. Body**](emailaction-body.md).
+Para el desarrollo de scripts, [**vea EmailAction.Body**](emailaction-body.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

@@ -112,7 +112,7 @@ Los programadores de C++ pueden aprovechar la sobrecarga de operadores y la conv
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

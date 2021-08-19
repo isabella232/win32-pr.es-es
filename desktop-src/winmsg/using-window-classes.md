@@ -129,7 +129,7 @@ BOOL InitInstance(HINSTANCE hinstance, int nCmdShow)
 
 
 
-El registro de una clase global de aplicación es similar al registro de una clase local de aplicación, salvo que el miembro **de** estilo de la estructura [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) debe especificar el estilo **\_ GLOBALCLASS de CS.**
+El registro de una clase global de aplicación es similar  al registro de una clase local de aplicación, salvo que el miembro de estilo de la estructura [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) debe especificar el estilo **\_ GLOBALCLASS de CS.**
 
  
 

@@ -11,10 +11,10 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118502440"
 ---
-# <a name="idxcoreadapterlist-interface"></a>Interfaz IDXCoreAdapterList
+# <a name="idxcoreadapterlist-interface"></a>IDXCoreAdapterList (interfaz)
 
-La **interfaz IDXCoreAdapterList** implementa métodos para recuperar elementos de adaptador de una lista generada, así como detalles sobre la lista. **IDXCoreAdapterList** hereda de la [interfaz IUnknown.](/windows/win32/api/unknwn/nn-unknwn-iunknown) Para obtener instrucciones de programación y ejemplos de código, vea [Uso de DXCore para enumerar adaptadores.](../dxcore-enum-adapters.md)
+La **interfaz IDXCoreAdapterList** implementa métodos para recuperar elementos de adaptador de una lista generada, así como detalles sobre la lista. **IDXCoreAdapterList** hereda de la [interfaz IUnknown.](/windows/win32/api/unknwn/nn-unknwn-iunknown) Para obtener instrucciones de programación y ejemplos de código, [vea Uso de DXCore para enumerar adaptadores.](../dxcore-enum-adapters.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Referencia de DXCore,](../dxcore-reference.md) [uso de DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)

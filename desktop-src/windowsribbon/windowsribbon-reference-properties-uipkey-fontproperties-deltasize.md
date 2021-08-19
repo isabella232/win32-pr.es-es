@@ -27,7 +27,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentarios
 
-La propiedad FontProperties DeltaSize de ui PKEY la usa una aplicación en casos en los que no es posible que la aplicación especifique un valor para Tamaño de fuente, como cuando se selecciona una ejecución de texto de tamaño \_ \_ \_ heterogéneo.  El **control Tamaño de** fuente está establecido en en blanco y la interfaz de usuario PKEY FontProperties DeltaSize se usa para capturar la interacción del usuario con los botones Crecimiento de fuente y \_ \_ \_ **Reducción de** fuente. 
+La propiedad FontProperties DeltaSize de ui PKEY la usa una aplicación en casos en los que no es posible que la aplicación especifique un valor para Tamaño de fuente, como cuando se selecciona una ejecución de texto de tamaño \_ \_ \_ heterogéneo.  El **control Tamaño de** fuente se establece en blanco y la interfaz de usuario PKEY FontProperties DeltaSize se usa para capturar la interacción del usuario con los botones Crecimiento de fuente y \_ \_ \_ **Reducción de** fuente. 
 
 Ui \_ PKEY FontProperties DeltaSize se incluye en la interfaz de usuario \_ \_ [ \_ PKEY \_ FontProperties \_ ChangedProperties](windowsribbon-reference-properties-uipkey-fontproperties-changedproperties.md).
 
@@ -39,7 +39,7 @@ En la tabla siguiente se describen los valores de propiedad.
 
 
 
-|     Valor                 |  Descripción                    |
+|     Value                 |  Descripción                    |
 |---------------------------|---------------------------------|
 | `UI_FONTDELTASIZE_GROW`   | **Haga clic en el** botón Aumentar fuente.   |
 | `UI_FONTDELTASIZE_SHRINK` | **Se ha hecho clic en** el botón Reducir fuente. |

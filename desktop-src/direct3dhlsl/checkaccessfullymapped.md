@@ -41,7 +41,7 @@ bool CheckAccessFullyMapped(
 
 Tipo: **solo \_ uint**
 
-Valor de estado que se devuelve de una **operación Sample**, **Gather** **o Load.** Dado que no puede acceder directamente a este valor de estado, debe pasarlo a **CheckAccessFullyMapped**.
+Valor de estado que se devuelve de una **operación De ejemplo,** **Recopilar** **o** Cargar. Dado que no puede acceder directamente a este valor de estado, debe pasarlo a **CheckAccessFullyMapped**.
 
 </dd> </dl>
 
@@ -71,7 +71,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -79,7 +79,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

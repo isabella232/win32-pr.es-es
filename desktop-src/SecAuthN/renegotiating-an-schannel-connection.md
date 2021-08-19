@@ -15,7 +15,7 @@ ms.locfileid: "118919404"
 
 Para cambiar los atributos de una conexión, como el conjunto de cifrado o la autenticación de cliente, puede solicitar una "rehacer" o volver a negociar la conexión.
 
-Si los atributos que desea cambiar se controlan mediante credenciales, debe obtener nuevas credenciales antes de volver a negociar la conexión. Para obtener más información, vea [Obtención de credenciales de Schannel.](obtaining-schannel-credentials.md)
+Si los atributos que desea cambiar están controlados por credenciales, debe obtener nuevas credenciales antes de volver a negociar la conexión. Para obtener más información, vea [Obtención de credenciales de Schannel.](obtaining-schannel-credentials.md)
 
 Para solicitar una rehacer desde una aplicación cliente, llame a la [**función InitializeSecurityContext (Schannel).**](./initializesecuritycontext--schannel.md) Las aplicaciones de servidor [**llaman a la función AcceptSecurityContext (Schannel).**](acceptsecuritycontext--schannel.md) Establezca los parámetros de la manera siguiente:
 

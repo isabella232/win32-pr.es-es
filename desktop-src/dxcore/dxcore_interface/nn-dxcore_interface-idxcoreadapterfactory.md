@@ -15,6 +15,6 @@ ms.locfileid: "118502495"
 
 La **interfaz IDXCoreAdapterFactory** implementa métodos para generar objetos de enumeración del adaptador DXCore y para recuperar sus detalles. **IDXCoreAdapterFactory** hereda de la [interfaz IUnknown.](/windows/win32/api/unknwn/nn-unknwn-iunknown) Para obtener instrucciones de programación y ejemplos de código, vea [Uso de DXCore para enumerar adaptadores.](../dxcore-enum-adapters.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Referencia de DXCore,](../dxcore-reference.md) [uso de DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)

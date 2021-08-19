@@ -24,7 +24,7 @@ ms.locfileid: "118430255"
 ---
 # <a name="dsbackupend-function"></a>Función DsBackupEnd
 
-\[Esta función está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible. A partir de Windows Vista, use [Servicio de instantáneas de volumen (VSS) en](../vss/volume-shadow-copy-service-overview.md) su lugar.\]
+\[Esta función está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible. A partir Windows Vista, use [Servicio de instantáneas de volumen (VSS) en](../vss/volume-shadow-copy-service-overview.md) su lugar.\]
 
 Se **llama a la función DsBackupEnd** para finalizar una operación de copia de seguridad.
 
@@ -52,7 +52,7 @@ Contiene el identificador de contexto de copia de seguridad obtenido con la [**f
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **S \_ OK si** la función se realiza correctamente o un código de error win32 o RPC en caso contrario. En la lista siguiente se enumeran otros códigos de error posibles.
+Devuelve **S \_ OK si** la función es correcta o un código de error de Win32 o RPC en caso contrario. En la lista siguiente se enumeran otros códigos de error posibles.
 
 <dl> <dt>
 
@@ -65,7 +65,7 @@ Devuelve **S \_ OK si** la función se realiza correctamente o un código de err
 
 ## <a name="remarks"></a>Comentarios
 
-La **función DsBackupEnd cierra** los identificadores de enlace pendientes y realiza una limpieza después de un intento de copia de seguridad correcto o fallido.
+La **función DsBackupEnd** cierra los identificadores de enlace pendientes y realiza una limpieza después de un intento de copia de seguridad correcto o fallido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,7 +81,7 @@ La **función DsBackupEnd cierra** los identificadores de enlace pendientes y re
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

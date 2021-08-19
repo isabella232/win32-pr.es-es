@@ -61,7 +61,7 @@ Puntero a un puntero de cadena que recibe la lista de ubicaciones de base de dat
 
 La función **DsRestoreGetDatabaseLocations** asigna este búfer y se debe liberar cuando ya no sea necesario mediante una llamada a la función [**DsBackupFree.**](dsbackupfree.md)
 
-El primer carácter de cada uno de los nombres de archivo contiene una de las constantes [**de BFT**](bft-constants.md) que identifica el tipo de nombre. La **función DsRestoreGetDatabaseLocations** solo proporciona los siguientes tipos de nombre.
+El primer carácter de cada uno de los nombres de archivo contiene una de las [**constantes de BFT**](bft-constants.md) que identifica el tipo de nombre. La **función DsRestoreGetDatabaseLocations** solo proporciona los siguientes tipos de nombre.
 
 <dt>
 
@@ -151,7 +151,7 @@ La **función DsRestoreGetDatabaseLocations** se puede usar para obtener los dir
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
-title: Mensajes de control de la barra de seguimiento
-description: Mensajes de control de la barra de seguimiento
+title: Mensajes de control de barra de seguimiento
+description: Mensajes de control de barra de seguimiento
 ms.assetid: 1640fc7c-5fe5-4b11-9517-2608b837eedf
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118414957"
 ---
-# <a name="trackbar-control-messages"></a>Mensajes de control de la barra de seguimiento
+# <a name="trackbar-control-messages"></a>Mensajes de control de barra de seguimiento
 
 ## <a name="in-this-section"></a>En esta sección
 

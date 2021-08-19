@@ -5,7 +5,7 @@ ms.assetid: 0308a98d-1149-4367-b602-33fa54c1760f
 keywords:
 - Método getByName Reproductor de Windows Media
 - Método getByName Reproductor de Windows Media , clase PlaylistCollection
-- Clase PlaylistCollection Reproductor de Windows Media método , getByName
+- Clase PlaylistCollection Reproductor de Windows Media , método getByName
 topic_type:
 - apiref
 api_name:
@@ -61,7 +61,7 @@ Para usar este método, se requiere acceso de lectura a la biblioteca. Para obte
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo JScript siguiente se *usa playlistCollection*. **getByName para** comprobar el objeto **playlistCollection** de una lista de reproducción denominada "ThreeList". Si existe la lista de reproducción "Threelist", **getByName** establece "ThreeList" como la lista de reproducción actual. El **objeto Player** se creó con el identificador = "Player".
+En el ejemplo JScript siguiente se usa *playlistCollection*. **getByName para** comprobar el objeto **playlistCollection** de una lista de reproducción denominada "ThreeList". Si existe la lista de reproducción "Threelist", **getByName** establece "ThreeList" como la lista de reproducción actual. El **objeto Player** se creó con el identificador = "Player".
 
 
 ```JScript

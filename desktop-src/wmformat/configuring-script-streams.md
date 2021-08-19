@@ -1,44 +1,44 @@
 ---
-title: Configurar secuencias de scripts
-description: Configurar secuencias de scripts
+title: Configuración de scripts Secuencias
+description: Configuración de scripts Secuencias
 ms.assetid: f8f1656e-69c6-47f7-a8eb-c1039a84ebf3
 keywords:
-- flujos, configurar secuencias de scripts
-- códecs, configurar secuencias de scripts
-- secuencias de comandos, configurar
+- streams,configuring script streams
+- codecs,configuring script streams
+- secuencias de script, configuración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e063865b301c8c7c2a4171aa530a89464306c0ad
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f95c4c43fcb29ec2f77dacbf5a66b1c8c36c666d80fd5f5c09779a4ecaf22f05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117655993"
 ---
-# <a name="configuring-script-streams"></a>Configurar secuencias de scripts
+# <a name="configuring-script-streams"></a>Configuración de scripts Secuencias
 
-Al igual que todos los tipos de secuencia arbitrarios, los flujos de scripts deben tener una ventana de velocidad de bits y de búfer definida para ellos. El tipo de medio principal de la estructura de [**\_ \_ tipo de medio de WM**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type) debe establecerse en el script WMMEDIATYPE \_ .
+Al igual que todos los tipos de secuencias arbitrarios, las secuencias de script deben tener definida una velocidad de bits y una ventana de búfer. El tipo de medio principal de la [**estructura WM \_ MEDIA \_ TYPE**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type) debe establecerse en Script WMMEDIATYPE. \_
 
-Los flujos de scripts deben tener el miembro **formatType** de **tipo de \_ medio \_ de WM** establecido en el \_ script WMFORMAT, lo que indica que el miembro **pbFormat** apunta a una estructura [**WMSCRIPTFORMAT**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wmscriptformat) .
+Las secuencias de script deben tener el miembro **formattype** de **WM MEDIA \_ \_ TYPE** establecido en Script WMFORMAT, lo que indica que el miembro pbFormat apunta a una \_ estructura [**WMSCRIPTFORMAT.**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wmscriptformat) 
 
-Solo hay un tipo de script admitido, WMSCRIPTTYPE \_ TwoStrings.
+Solo hay un tipo de script compatible, WMSCRIPTTYPE \_ TwoStrings.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Configuración común para todos los flujos**](configuration-common-to-all-streams.md)
+[**Configuración común a todas las Secuencias**](configuration-common-to-all-streams.md)
 </dt> <dt>
 
-[**Configuración de tipos de flujo arbitrarios**](configuring-arbitrary-stream-types.md)
+[**Configuración de tipos de secuencia arbitrarios**](configuring-arbitrary-stream-types.md)
 </dt> <dt>
 
 [**Comandos de script**](script-commands.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

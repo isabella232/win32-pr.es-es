@@ -1,6 +1,6 @@
 ---
-title: Apertura de un dispositivo simple mediante el nombre del dispositivo
-description: Apertura de un dispositivo simple mediante el nombre del dispositivo
+title: Abrir un dispositivo simple mediante el nombre del dispositivo
+description: Abrir un dispositivo simple mediante el nombre del dispositivo
 ms.assetid: 9e116499-2094-40e1-b2bc-3e3b8281a472
 keywords:
 - Función mciSendCommand
@@ -13,7 +13,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117802332"
 ---
-# <a name="opening-a-simple-device-by-using-the-device-name"></a>Apertura de un dispositivo simple mediante el nombre del dispositivo
+# <a name="opening-a-simple-device-by-using-the-device-name"></a>Abrir un dispositivo simple mediante el nombre del dispositivo
 
 En el ejemplo siguiente se abre un dispositivo de audio de CD especificando el nombre del dispositivo mediante la [**función mciSendCommand.**](/previous-versions//dd757160(v=vs.85))
 

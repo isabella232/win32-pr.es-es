@@ -201,7 +201,7 @@ HRESULT ShowACEInACL(LPWSTR guestPath,LPWSTR user,LPWSTR passwd)
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
@@ -211,7 +211,7 @@ HRESULT ShowACEInACL(LPWSTR guestPath,LPWSTR user,LPWSTR passwd)
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -45,11 +45,11 @@ ms.locfileid: "118329675"
 
 Las bibliotecas proporcionan una experiencia centralizada de tipo carpeta para el almacenamiento de archivos, la búsqueda y el acceso en varias ubicaciones, tanto locales como remotas.
 
-Las ubicaciones predeterminadas que usan los cuadros de diálogo de archivos comunes (por ejemplo, Abrir y Guardar) se han cambiado de la carpeta de documentos a la biblioteca de documentos. La Interfaz de usuario sin cambios, pero el usuario ahora podrá ver, examinar y buscar en la biblioteca mediante varias vistas de organización. Los archivos se guardarán en la ubicación de guardado predeterminada de la biblioteca, a menos que el usuario cambie la ubicación de guardado predeterminada o elija otra carpeta.
+Las ubicaciones predeterminadas que usan los cuadros de diálogo de archivos comunes (por ejemplo, Abrir y Guardar) se han cambiado de la carpeta de documentos a la biblioteca de documentos. El Interfaz de usuario no ha cambiado, pero el usuario ahora podrá ver, examinar y buscar en la biblioteca mediante varias vistas de organización. Los archivos se guardarán en la ubicación de guardado predeterminada de la biblioteca a menos que el usuario cambie la ubicación de guardado predeterminada o elija otra carpeta.
 
 Los desarrolladores podrían crear sus propias bibliotecas o agregar ubicaciones a las bibliotecas existentes mediante la interfaz IShellLibrary. Los usuarios pueden encontrar bibliotecas mediante el sistema de carpetas conocidas (por ejemplo, FOLDERID \_ DocumentsLibrary).
 
-## <a name="manifestation-of-impact"></a>Demostración del impacto
+## <a name="manifestation-of-impact"></a>Demostración de impacto
 
 La biblioteca es en sí misma un archivo y no una carpeta. Por lo tanto, las manipulaciones de ruta de acceso podrían producir errores debido al intento de la aplicación de concatenar archivos a archivos.
 
@@ -59,7 +59,7 @@ Al usar IFileDialog, debe usar el método GetResult en lugar de la combinación 
 
 ## <a name="leveraging-feature-capabilities"></a>Aprovechamiento de las funcionalidades de características
 
-Si desea crear sus propias bibliotecas o agregar ubicaciones a bibliotecas existentes, debe usar IShellLibrary API. Las bibliotecas son carpetas de Shell, por lo que puede enumerarlos igual que cualquier otra carpeta de Shell.
+Si desea crear sus propias bibliotecas o agregar ubicaciones a las bibliotecas existentes, debe usar IShellLibrary API. Las bibliotecas son carpetas de shell, por lo que puede enumerarlos como cualquier otra carpeta de shell.
 
 ## <a name="compatibility-performance-reliability-and-usability-testing"></a>Pruebas de compatibilidad, rendimiento, confiabilidad y facilidad de uso
 

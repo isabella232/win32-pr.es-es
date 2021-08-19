@@ -1,13 +1,13 @@
 ---
-title: Apertura de Waveform-Audio entrada de datos
-description: Apertura de Waveform-Audio entrada de datos
+title: Apertura de Waveform-Audio dispositivos de entrada
+description: Apertura de Waveform-Audio dispositivos de entrada
 ms.assetid: 46cdbce6-2433-433a-abd2-39e4146aa2e9
 keywords:
-- audio de forma de onda, abrir dispositivos de entrada
-- interfaz de audio de forma de onda, abrir dispositivos de entrada
+- audio de onda, apertura de dispositivos de entrada
+- interfaz de audio de onda, abrir dispositivos de entrada
 - grabación de audio de forma de onda, apertura de dispositivos de entrada
-- abrir dispositivos de entrada de audio de forma de onda
-- función waveInOpen
+- abrir dispositivos de entrada de audio y forma de onda
+- waveInOpen ( Función)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 5e6391ca5bfe0690d2235504057865fb588f08d0359417ccbcc04b6a7e5eb082
@@ -17,7 +17,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117802312"
 ---
-# <a name="opening-waveform-audio-input-devices"></a>Apertura de Waveform-Audio entrada de datos
+# <a name="opening-waveform-audio-input-devices"></a>Apertura de Waveform-Audio dispositivos de entrada
 
 Use la [**función waveInOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveinopen) para abrir un dispositivo de entrada de audio de forma de onda para la grabación. Esta función abre el dispositivo asociado al identificador de dispositivo especificado y devuelve un identificador del dispositivo abierto escribiendo el identificador de una ubicación de memoria especificada.
 

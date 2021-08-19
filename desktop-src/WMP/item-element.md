@@ -27,7 +27,7 @@ El **elemento ITEM** admite los atributos siguientes.
 
 | Atributo               | Descripción                                                                  |
 |-------------------------|------------------------------------------------------------------------------|
-| [value](item-value.md) | Especifica o recupera el texto que se muestra para un cuadro de lista o elemento emergente. |
+| [value](item-value.md) | Especifica o recupera el texto que se muestra para un cuadro de lista o un elemento emergente. |
 
 
 

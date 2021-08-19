@@ -4,12 +4,12 @@ ms.assetid: 0fe07c66-3d9c-4368-8fbd-23cb486757cc
 title: System.Media.UniqueFileIdentifier
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e2c29917860fa3bdcde26d2919d091028f4b747
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bf74b8001be317178f717caf8e8053eba8b15588aa34c274381532bf3e995647
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117865503"
 ---
 # <a name="systemmediauniquefileidentifier"></a>System.Media.UniqueFileIdentifier
 

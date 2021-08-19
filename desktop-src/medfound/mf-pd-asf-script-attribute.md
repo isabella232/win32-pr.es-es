@@ -1,5 +1,5 @@
 ---
-description: Especifica una lista de comandos de script y los parámetros de un archivo de formato de sistemas avanzados (ASF). Este atributo corresponde al objeto De comando de script en el encabezado ASF, definido en la especificación de ASF.
+description: Especifica una lista de comandos de script y los parámetros de un archivo de formato de sistemas avanzados (ASF). Este atributo corresponde al objeto de comando script en el encabezado ASF, definido en la especificación de ASF.
 ms.assetid: c85c9da4-f0b5-4055-a645-2a71cabbe4a3
 title: MF_PD_ASF_SCRIPT atributo (Wmcontainer.h)
 ms.topic: reference
@@ -13,13 +13,13 @@ ms.locfileid: "118740726"
 ---
 # <a name="mf_pd_asf_script-attribute"></a>Atributo \_ MF PD \_ ASF \_ SCRIPT
 
-Especifica una lista de comandos de script y los parámetros de un archivo de formato de sistemas avanzados (ASF). Este atributo corresponde al objeto De comando de script en el encabezado ASF, definido en la especificación de ASF.
+Especifica una lista de comandos de script y los parámetros de un archivo de formato de sistemas avanzados (ASF). Este atributo corresponde al objeto de comando script en el encabezado ASF, definido en la especificación de ASF.
 
 ## <a name="data-type"></a>Tipo de datos
 
 Byte array
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo se aplica a los descriptores de presentación para el contenido de ASF.
 
@@ -27,7 +27,7 @@ El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desk
 
 
 
-| Campo Objeto de comando de script | Tipo de datos    | Size    | Descripción               |
+| Campo Script Command Object (Objeto de comando de script) | Tipo de datos    | Size    | Descripción               |
 |-----------------------------|--------------|---------|---------------------------|
 | Recuento de comandos              | **DWORD**    | 4 bytes | Número de comandos de script |
 | Tipo de comando, Comandos      | **Byte**\[\] | Varía  | Matriz de comandos de script  |
@@ -40,7 +40,7 @@ El primer **DWORD** es el número de comandos de script, seguido de una matriz d
 
 
 
-| Campo Objeto de comando de script | Tipo de datos     | Size    | Descripción                                                              |
+| Campo Script Command Object (Objeto de comando de script) | Tipo de datos     | Size    | Descripción                                                              |
 |-----------------------------|---------------|---------|--------------------------------------------------------------------------|
 | Longitud del nombre del comando         | **DWORD**     | 4 bytes | Tamaño de la cadena de comando, en bytes, incluido el carácter NULL.      |
 | Nombre de comando                | **Wchar**\[\] | Varía  | Cadena terminada en NULL que contiene el comando de script.                 |

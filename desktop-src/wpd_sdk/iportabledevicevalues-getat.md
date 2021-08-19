@@ -93,7 +93,7 @@ Si una propiedad indica un valor de tipo VT UNKNOWN, la propiedad será uno de l
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -47,7 +47,7 @@ HDC m_hdc;
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

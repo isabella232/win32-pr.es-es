@@ -29,7 +29,7 @@ La siguiente imagen es un archivo pushed típico.
 
 Esto almacena las imágenes que se mostrarán cuando se pulsen los botones de tipo de pulsación. También se almacenan en este archivo las imágenes normales e insertadas para la imagen en pausa del botón PlayPause. Excepto en el caso de las imágenes secundarias PlayPause de la derecha, las otras imágenes de botón se alinean con la imagen de fondo, con el desplazamiento definido en la sección Mapas de bits del archivo de definición de máscara.
 
-Observe que el fondo de la imagen de botón coincide exactamente con el área correspondiente en el archivo de fondo. Esto es importante, ya que cuando el usuario pulsa un botón de tipo de pulsación, todo el rectángulo definido para la imagen inserda reemplazará el área correspondiente en el archivo de fondo. Mantenga el gráfico coherente con la imagen de fondo para asegurarse de que solo cambiarán las partes del botón que desea que aparezcan diferentes.
+Observe que el fondo de la imagen de botón coincide exactamente con el área correspondiente en el archivo de fondo. Esto es importante, ya que cuando el usuario pulsa un botón de tipo de pulsación, todo el rectángulo definido para la imagen inserda reemplazará el área correspondiente en el archivo de fondo. Mantenga el gráfico coherente con la imagen de fondo para asegurarse de que solo las partes del botón que desea que aparezcan diferentes cambiarán realmente.
 
 ## <a name="related-topics"></a>Temas relacionados
 

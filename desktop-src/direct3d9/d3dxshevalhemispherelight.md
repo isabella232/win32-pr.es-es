@@ -1,7 +1,7 @@
 ---
 description: 'Función D3DXSHEvalPxisphereLight (D3dx9math.h): evalúa una luz que es una interpolación lineal entre dos colores sobre la esfera.'
 ms.assetid: c5815f12-f706-40f6-bf5e-78a211cfbbea
-title: Función D3DXSHEvalRriisphereLight (D3dx9math.h)
+title: Función D3DXSHEvalGraisphereLight (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118524257"
 ---
-# <a name="d3dxshevalhemispherelight-function-d3dx9mathh"></a>Función D3DXSHEvalRriisphereLight (D3dx9math.h)
+# <a name="d3dxshevalhemispherelight-function-d3dx9mathh"></a>Función D3DXSHEvalGraisphereLight (D3dx9math.h)
 
 Evalúa una luz que es una interpolación lineal entre dos colores sobre la esfera.
 
@@ -51,7 +51,7 @@ HRESULT D3DXSHEvalHemisphereLight(
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación del armónico esférico (SH). Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos incluidos. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
+Orden de la evaluación armónica esférica (SH). Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ Orden de la evaluación del armónico esférico (SH). Debe estar en el intervalo
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero al vector de dirección del eje (x, y, z) en el que se evaluarán las funciones de base SH. Vea la sección Comentarios.
+Puntero al vector de dirección del eje del hemisferio (x, y, z) en el que se evalúan las funciones de base sh. Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -115,15 +115,15 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser: D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La interpolación se realiza linealmente entre los dos puntos, no sobre la superficie de la esfera (es decir, si el eje era (0,0,1) es lineal en Z, no en el ángulo azimu angle). La función de iluminación esférica resultante se normaliza de modo que un punto en una superficie perfectamente difusa sin sombra y un punto normal en la dirección *pDir* daría como resultado un radiance de salida con un valor de 1 (si el color superior era blanco y el color inferior era negro). Se trata de un modelo muy sencillo donde *Top* representa la intensidad del "cielo" y *Bottom* representa la intensidad del "suelo".
+La interpolación se realiza linealmente entre los dos puntos, no sobre la superficie de la esfera (es decir, si el eje era (0,0,1) es lineal en Z, no en el ángulo azimu angle). La función de iluminación esférica resultante se normaliza de modo que un punto en una superficie perfectamente difusa sin sombras y un punto normal en la dirección *pDir* daría como resultado un brillo de salida con un valor de 1 (si el color superior era blanco y el color inferior era negro). Se trata de un modelo muy sencillo donde *Top* representa la intensidad del "cielo" y *Bottom* representa la intensidad del "suelo".
 
-En la esfera con radio de unidad, como se muestra en la ilustración siguiente, la dirección [](coordinate-systems.md)se puede especificar simplemente con theta, el ángulo sobre el eje Z en la dirección de la derecha y el ángulo de z.
+En la esfera con radio de unidad, como se muestra en la ilustración siguiente, la dirección [](coordinate-systems.md)se puede especificar simplemente con theta, el ángulo sobre el eje Z en la dirección derecha y el ángulo de la z.
 
 ![ilustración de una esfera con radio de unidad](images/spherical-coordinates.png)
 
-Las ecuaciones siguientes muestran la relación entre las coordenadas cartesianas (x, y, z) y esféricas (theta, phi) en la esfera de unidad. El ángulo de theta varía en el intervalo de 0 a 2 pi, mientras que el de phi varía de 0 a pi.
+Las ecuaciones siguientes muestran la relación entre las coordenadas cartesianas (x, y, z) y esféricas (theta, phi) en la esfera de unidad. El ángulo de theta varía en el intervalo de 0 a 2 pi, mientras que phi varía de 0 a pi.
 
 ![ecuaciones de la relación entre coordenadas cartesianas y esféricas](images/spherical-coordinates-equations.png)
 
@@ -145,7 +145,7 @@ Las ecuaciones siguientes muestran la relación entre las coordenadas cartesiana
 [Funciones matemáticas](dx9-graphics-reference-d3dx-functions-math.md)
 </dt> <dt>
 
-[Transferencia de radiancia precalcalada (Direct3D 9)](precomputed-radiance-transfer.md)
+[Transferencia de radiancia precalutada (Direct3D 9)](precomputed-radiance-transfer.md)
 </dt> </dl>
 
  

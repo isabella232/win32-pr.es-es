@@ -59,7 +59,7 @@ La posición máxima puede ser menor que la posición mínima. Al hacer clic en 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

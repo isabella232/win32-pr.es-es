@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117796345"
 ---
-# <a name="ccheapfree-function"></a>CcHeapFree , función
+# <a name="ccheapfree-function"></a>Función CCHeapFree
 
 La **función CCHeapFree** libera la memoria asignada por la **función CCHeapAlloc.**
 
@@ -42,13 +42,13 @@ BOOL WINAPI CCHeapFree(
 *lpMem* 
 </dt> <dd>
 
-Puntero a la memoria que libera esta función.
+Puntero a la memoria que esta función libera.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la **función CCHeapFree** se realiza correctamente, el valor devuelto es **TRUE.**
+Si la **función CCHeapFree** es correcta, el valor devuelto es **TRUE.**
 
 Si la función no se realiza correctamente, el valor devuelto es **FALSE.**
 
@@ -56,7 +56,7 @@ Si la función no se realiza correctamente, el valor devuelto es **FALSE.**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
@@ -66,7 +66,7 @@ Si la función no se realiza correctamente, el valor devuelto es **FALSE.**
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

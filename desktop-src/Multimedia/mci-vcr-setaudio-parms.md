@@ -87,7 +87,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_FontProperties_Italic
-description: Identifica la propiedad Ui \_ PKEY \_ FontProperties \_ Italic.
+description: Identifica la propiedad \_ FontProperties Italic de PKEY de la \_ interfaz de \_ usuario.
 ms.assetid: 53edd88e-ed7e-4385-9fd9-bfa90be348cd
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118438540"
 ---
 # <a name="ui_pkey_fontproperties_italic"></a>UI \_ PKEY \_ FontProperties \_ Italic
 
-Identifica la propiedad Ui \_ PKEY \_ FontProperties \_ Italic.
+Identifica la propiedad \_ FontProperties Italic de PKEY de la \_ interfaz de \_ usuario.
 
 ```
 propertyDescription
@@ -27,7 +27,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentarios
 
-Una aplicación usa ui PKEY FontProperties Italic para consultar \_ el estado del botón \_ \_ **Cursiva.**
+Una aplicación usa la cursiva PKEY FontProperties de la interfaz de usuario \_ para consultar el estado del botón \_ \_ **Cursiva.**
 
 El valor de propiedad es de la [**\_ enumeración FONTPROPERTIES de la**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_fontproperties) interfaz de usuario.
 

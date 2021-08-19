@@ -1,5 +1,5 @@
 ---
-description: El método ClearProps borra todos los datos de propiedad del setter de la propiedad. La aplicación puede establecer nuevos datos de propiedad después de llamar a esta función.
+description: El método ClearProps borra todos los datos de propiedad del setter de propiedad. La aplicación puede establecer nuevos datos de propiedad después de llamar a esta función.
 ms.assetid: f3c31864-ddc3-4f3c-a097-2bab9d7f6a2a
 title: Método IPropertySetter::ClearProps (Qedit.h)
 ms.topic: reference
@@ -72,14 +72,14 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [**IPropertySetter (interfaz)**](ipropertysetter.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

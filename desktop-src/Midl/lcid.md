@@ -1,9 +1,9 @@
 ---
-title: LCID (atributo)
-description: El atributo \ LCID \ especifica un identificador de configuración regional y habilita la compatibilidad con el compilador MIDL específico de la configuración regional.
+title: Atributo lcid
+description: El atributo \ lcid\ especifica un identificador de configuración regional y habilita la compatibilidad del compilador MIDL específica de la configuración regional.
 ms.assetid: 40457a1a-251c-41cd-bfa6-9d506601ff5e
 keywords:
-- LCID (atributo) MIDL
+- atributo lcid MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fa22b231c63583c6d16e6a50f3e9987c5b61128
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: e87d1b6105d7e6ae561d7409cbf256b67f965c61e235ffc5782594cb5623497c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103789970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117806801"
 ---
-# <a name="lcid-attribute"></a>LCID (atributo)
+# <a name="lcid-attribute"></a>Atributo lcid
 
-El atributo **\[ LCID \]** especifica un identificador de configuración regional y habilita la compatibilidad con el compilador de MIDL específico de la configuración regional.
+El **\[ atributo \] lcid** especifica un identificador de configuración regional y habilita la compatibilidad con el compilador MIDL específico de la configuración regional.
 
 ``` syntax
 [
@@ -41,38 +41,38 @@ function-name([parameter-attribute-list, lcid] long  parameter-name,. . .);
 
 <dl> <dt>
 
-*UUID-número* 
+*uuid-number* 
 </dt> <dd>
 
 Especifica un número de identificación único universal para la [**biblioteca**](library.md).
 
 </dd> <dt>
 
-*LCID* 
+*localeID* 
 </dt> <dd>
 
-Especifica el identificador de configuración regional de 32 bits usado en la compatibilidad con el idioma nacional de Windows. Normalmente, el identificador de configuración regional se proporciona en formato hexadecimal.
+Especifica el identificador de configuración regional de 32 bits utilizado en Windows compatibilidad con idiomas nacionales. Normalmente, el identificador de configuración regional se indica en formato hexadecimal.
 
 </dd> <dt>
 
-*opcional-Attribute-List* 
+*optional-attribute-list* 
 </dt> <dd>
 
-Cero o más atributos que se van a aplicar a la [**biblioteca**](library.md).
+Cero o más atributos que se aplicarán a la [**biblioteca**](library.md).
 
 </dd> <dt>
 
-*nombre de biblioteca* 
+*library-name* 
 </dt> <dd>
 
 Nombre por el que los componentes de software hacen referencia a la [**biblioteca**](library.md).
 
 </dd> <dt>
 
-*Library-Definition-instrucciones* 
+*library-definition-statements* 
 </dt> <dd>
 
-Una o más instrucciones MIDL que definen el contenido de la [**biblioteca**](library.md).
+Una o varias instrucciones MIDL que definen el contenido de la [**biblioteca**](library.md).
 
 </dd> <dt>
 
@@ -83,37 +83,37 @@ Especifica el nombre de la función en el archivo IDL.
 
 </dd> <dt>
 
-*Parameter-Attribute-List* 
+*parameter-attribute-list* 
 </dt> <dd>
 
-Cero o más atributos de MIDL que se aplicarán al parámetro de función.
+Cero o más atributos MIDL que se aplicarán al parámetro de función.
 
 </dd> <dt>
 
-*nombre de parámetro* 
+*parameter-name* 
 </dt> <dd>
 
 Especifica el nombre del parámetro en el archivo IDL.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La sintaxis de **\[ \] LCID** tiene dos formas diferentes; el efecto del atributo depende de la sintaxis que se utilice, ya sea de la sintaxis de la instrucción de la [**biblioteca**](library.md) o de la sintaxis del parámetro.
+La **\[ sintaxis lcid \]** tiene dos formas diferentes; el efecto del [](library.md) atributo depende de la sintaxis que use: la sintaxis de la instrucción de biblioteca o la sintaxis de parámetros.
 
-Cuando se aplica a la instrucción [**Library**](library.md) , junto con un argumento localeID, como se muestra en el primer ejemplo, el atributo **\[ LCID \]** identifica la configuración regional de una biblioteca de tipos o de un argumento de función y permite usar caracteres internacionales dentro del bloque de biblioteca.
+Cuando se aplica a la instrucción [**library,**](library.md) junto con un argumento localeID, como se muestra en el primer ejemplo, el atributo **\[ lcid \]** identifica la configuración regional de una biblioteca de tipos o de un argumento de función y permite usar caracteres internacionales dentro del bloque de biblioteca.
 
-A partir de la versión 3.01.75 del compilador de MIDL, el identificador de configuración regional proporcionado por este atributo no solo decora la biblioteca de tipos resultante, sino que realmente cambia el comportamiento del compilador. Dentro de una instrucción de [**biblioteca**](library.md) , desde el punto donde se usa el atributo **\[ LCID \]** , MIDL aceptará la entrada localizada según la configuración regional especificada. En concreto, hay disponible compatibilidad total con idiomas asiáticos como japonés, Chino y Coreano (compatibilidad completa con DBCS). Las características admitidas por la localización son: comentarios, cadenas, helpstrings e identificadores.
+A partir de la versión 3.01.75 del compilador MIDL, el identificador de configuración regional proporcionado por este atributo no solo decora la biblioteca de tipos resultante, sino que cambia realmente el comportamiento del compilador. Dentro de [**una instrucción**](library.md) de biblioteca, desde el punto donde se usa el atributo **\[ lcid, \]** MIDL aceptará la entrada localizada según la configuración regional especificada. En concreto, hay disponible compatibilidad completa con idiomas asiáticos como japonés, chino y coreano (compatibilidad completa con DBCS). Las características admitidas por la localización son: comentarios, cadenas, cadenas de ayuda e identificadores.
 
-Utilice el modificador de compilador [**/LCID**](-lcid.md) para que esta compatibilidad de localización esté disponible en todo el archivo de entrada, incluidos el nombre de archivo y la ruta de acceso del directorio, en lugar de simplemente dentro del bloque de biblioteca.
+Use el [**modificador del compilador /lcid**](-lcid.md) para que esta compatibilidad de localización esté disponible para todo el archivo de entrada, incluidos el nombre de archivo y la ruta de acceso del directorio, en lugar de solo dentro del bloque de biblioteca.
 
-Cuando se aplica a un parámetro, el atributo **\[ LCID \]** permite pasar un identificador de configuración regional a una función, tal y como se muestra en el segundo ejemplo. Las restricciones siguientes se aplican a los parámetros de **\[ LCID \]** :
+Cuando se aplica a un parámetro, el **\[ atributo lcid \]** permite pasar un identificador de configuración regional a una función, como se muestra en el segundo ejemplo. Las restricciones siguientes se aplican a **\[ los parámetros lcid: \]**
 
--   Una función puede tener como máximo un parámetro **\[ LCID \]** .
--   El tipo de datos del parámetro debe ser [**largo**](long.md).
--   La dirección del parámetro debe ser solo **\[** [**en**](in.md) **\]** .
--   El parámetro **\[ LCID \]** debe seguir a cualquier otro parámetro, excepto un **\[** parámetro [**retval**](retval.md) **\]** .
--   No se puede aplicar el atributo **\[ LCID \]** a un parámetro [**dispinterface**](dispinterface.md) o [**CoClass**](coclass.md) .
+-   Una función puede tener como máximo un **\[ parámetro lcid. \]**
+-   El tipo de datos del parámetro debe ser [**long.**](long.md)
+-   La dirección del parámetro solo debe **\[** [**estar en**](in.md) **\]** .
+-   El **\[ parámetro \] lcid** debe seguir cualquier otro parámetro, excepto un **\[** [**parámetro retval.**](retval.md) **\]**
+-   No se puede aplicar **\[ el atributo lcid \]** a un parámetro [**dispinterface**](dispinterface.md) [**o coclass.**](coclass.md)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -143,27 +143,27 @@ interface IMyFace : IDispatch
 [**coclase**](coclass.md)
 </dt> <dt>
 
-[**dispinterface**](dispinterface.md)
+[**Dispinterface**](dispinterface.md)
 </dt> <dt>
 
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**/LCID**](-lcid.md)
+[**/lcid**](-lcid.md)
 </dt> <dt>
 
-[**biblioteca**](library.md)
+[**Biblioteca**](library.md)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[**retval**](retval.md)
+[**Retval**](retval.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

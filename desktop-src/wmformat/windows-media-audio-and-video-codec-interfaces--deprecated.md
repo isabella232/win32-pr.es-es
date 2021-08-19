@@ -1,9 +1,9 @@
 ---
-title: Windows Interfaces de códecs multimedia de audio y vídeo
-description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (API de códecs de audio y vídeo multimedia y DSP). | Windows Interfaces de códecs multimedia de audio y vídeo
+title: Windows Interfaces de códecs de audio y vídeo multimedia
+description: Para obtener la documentación actual Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | Windows Interfaces de códecs de audio y vídeo multimedia
 ms.assetid: 582e5df9-b727-4156-9fb1-43b52aed19c5
 keywords:
-- Windows Media Audio and Video Codec Interfaces windows Media Format
+- Windows Interfaces de códec de audio multimedia y vídeo windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118431846"
 ---
-# <a name="windows-media-audio-and-video-codec-interfaces"></a>Windows Interfaces de códecs multimedia de audio y vídeo
+# <a name="windows-media-audio-and-video-codec-interfaces"></a>Windows Interfaces de códecs de audio y vídeo multimedia
 
-Para obtener documentación actual sobre los códecs Windows multimedia y los procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP API (API](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
+Para obtener la documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP APIs (API](/previous-versions//dd464626(v=vs.85)) de códecs multimedia y DSP).
 
  
 

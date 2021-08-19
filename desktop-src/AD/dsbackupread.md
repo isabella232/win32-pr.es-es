@@ -121,7 +121,7 @@ Se alcanzó el final del archivo de copia de seguridad.
 [**DsBackupFree**](dsbackupfree.md)
 </dt> <dt>
 
-[Hacer una copia de seguridad de Active Directory Server](backing-up-an-active-directory-server.md)
+[Copia de seguridad de un Active Directory servidor](backing-up-an-active-directory-server.md)
 </dt> <dt>
 
 [Funciones de copia de seguridad de directorios](directory-backup-functions.md)

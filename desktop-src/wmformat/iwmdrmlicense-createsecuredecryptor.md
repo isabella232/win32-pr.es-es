@@ -5,7 +5,7 @@ ms.assetid: f3fe8d47-ec7b-4ba5-b5ae-6262cb455ffc
 keywords:
 - Método CreateSecureDecryptor windows Media Format
 - Método CreateSecureDecryptor windows Media Format , interfaz IWMDRMLicense
-- IWMDRMLicense interface windows Media Format , CreateSecureDecryptor method
+- IWMDRMLicense interfaz windows Media Format , CreateSecureDecryptor (método)
 topic_type:
 - apiref
 api_name:
@@ -89,11 +89,11 @@ Tipo de protección de sesión que se va a usar para volver a codificar. Debe es
 *pbInitializationVector* \[ out\]
 </dt> <dd>
 
-Recibe el vector de inicialización. El vector de inicialización es RSA cifrado mediante el esquema de relleno OAEP con la clave pública RSA que se encuentra en el certificado. Establezca en **NULL** para recibir el tamaño de búfer necesario *eninitializationVector*.
+Recibe el vector de inicialización. El vector de inicialización es RSA cifrado mediante el esquema de relleno OAEP con la clave pública RSA que se encuentra en el certificado. **Estableta en NULL** para recibir el tamaño de búfer necesario *eninitializationVector.*
 
 </dd> <dt>
 
-*initInitializationVector* \[ in, out\]
+*vhinitializationVector* \[ in, out\]
 </dt> <dd>
 
 En la entrada, el tamaño del búfer pasado *como pbInitializationVector*. En la salida, el tamaño de la parte usada del búfer. Si pasa **NULL para** *pbInitializationVector*, este valor se establece en el tamaño de búfer necesario en la salida.
@@ -103,7 +103,7 @@ En la entrada, el tamaño del búfer pasado *como pbInitializationVector*. En la
 *ppDecryptor* \[ out\]
 </dt> <dd>
 
-Recibe un puntero a [**la interfaz IWMDRMDecrypt**](iwmdrmdecrypt.md) del objeto recién creado.
+Recibe un puntero a la [**interfaz IWMDRMDecrypt**](iwmdrmdecrypt.md) del objeto recién creado.
 
 </dd> </dl>
 
@@ -139,7 +139,7 @@ Ninguno.
 
 <dl> <dt>
 
-[**IWMDRMLicense (Interfaz)**](iwmdrmlicense.md)
+[**Interfaz IWMDRMLicense**](iwmdrmlicense.md)
 </dt> </dl>
 
  

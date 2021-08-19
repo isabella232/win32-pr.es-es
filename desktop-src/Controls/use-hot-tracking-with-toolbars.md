@@ -13,15 +13,15 @@ ms.locfileid: "117829095"
 ---
 # <a name="how-to-use-hot-tracking-with-toolbars"></a>Uso de Hot-Tracking con barras de herramientas
 
-Cuando un puntero del mouse mantiene el puntero sobre un elemento, el elemento se activa. Si está habilitado el seguimiento en caliente, el elemento de acceso activa se resalta. Una barra de herramientas que se crea con el estilo [**TBSTYLE \_ FLAT**](toolbar-control-and-button-styles.md) o una que usa estilos visuales [admite](themes-overview.md)el seguimiento rápido de forma predeterminada.
+Cuando un puntero del mouse mantiene el puntero sobre un elemento, el elemento se activa. Si está habilitado el seguimiento en caliente, el elemento de acceso activa se resalta. Una barra de herramientas que se crea con el estilo [**TBSTYLE \_ FLAT,**](toolbar-control-and-button-styles.md) o una que usa estilos [visuales,](themes-overview.md)admite el seguimiento en caliente de forma predeterminada.
 
 El seguimiento en caliente requiere que cree listas de imágenes. Por lo tanto, no puede usar el mensaje [**\_ ADDBITMAP de TB**](tb-addbitmap.md) o la función [**CreateToolbarEx**](/windows/desktop/api/Commctrl/nf-commctrl-createtoolbarex) para crear la barra de herramientas.
 
-Cuando el mouse mantiene el mouse sobre un botón de la barra de herramientas, el botón se describe para resaltarlo. En la ilustración siguiente se muestra una barra de herramientas con el seguimiento rápido habilitado; el puntero del mouse se desplazaba sobre el botón Guardar cuando se tomó la captura de pantalla.
+Cuando el mouse mantiene el mouse sobre un botón de la barra de herramientas, el botón se describe para resaltarlo. En la ilustración siguiente se muestra una barra de herramientas con el seguimiento de acceso rápido habilitado; el puntero del mouse se desplazaba sobre el botón Guardar cuando se tomó la captura de pantalla.
 
 ![captura de pantalla de un cuadro de diálogo con una barra de herramientas de tres elementos; se describe el icono seleccionado](images/tb-withstyles.png)
 
-Si desea que un mapa de bits de botón de la barra de herramientas cambie cuando cambie el estado del control, almacene las distintas imágenes en las [listas de imágenes](image-lists.md). Por ejemplo, algunas aplicaciones tienen botones de barra de herramientas en blanco y negro que se coloreados cuando se seleccionan. Las dos imágenes diferentes se almacenan en listas de imágenes. Las barras de herramientas admiten el uso de hasta tres listas de imágenes. Normalmente, una aplicación tiene una lista predeterminada, deshabilitada y de seguimiento en caliente de imágenes. Para establecer y recuperar listas de imágenes para los botones de la barra de herramientas activa, use los mensajes [**\_ TB SETHOTIMAGELIST**](tb-sethotimagelist.md) y [**TB \_ GETHOTIMAGELIST.**](tb-gethotimagelist.md)
+Si desea que un mapa de bits de botón de la barra de herramientas cambie cuando cambie el estado del control, almacene las distintas imágenes en las [listas de imágenes](image-lists.md). Por ejemplo, algunas aplicaciones tienen botones de barra de herramientas en blanco y negro que se coloreados cuando se seleccionan. Las dos imágenes diferentes se almacenan en listas de imágenes. Las barras de herramientas admiten el uso de hasta tres listas de imágenes. Normalmente, una aplicación tiene una lista predeterminada, deshabilitada y de seguimiento en caliente de imágenes. Para establecer y recuperar listas de imágenes para botones de barra de herramientas activas, use los mensajes [**\_ TB SETHOTIMAGELIST**](tb-sethotimagelist.md) y [**TB \_ GETHOTIMAGELIST.**](tb-gethotimagelist.md)
 
 ## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
@@ -29,7 +29,7 @@ Si desea que un mapa de bits de botón de la barra de herramientas cambie cuando
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
 -   Windows Interfaz de usuario programación

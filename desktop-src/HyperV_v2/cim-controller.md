@@ -1,7 +1,7 @@
 ---
-description: Una superclase para dispositivos varios relacionados con el control que proporcionan una interfaz de bus maestro clásico.
+description: Una superclase para dispositivos varios relacionados con el control que proporcionan una interfaz maestra de bus clásica.
 ms.assetid: eaa8711b-11e9-4f69-b81e-49a3c8a99fa7
-title: CIM_Controller (clase, administración de Hyper-V)
+title: CIM_Controller (administración de Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 139d9c9b8a9ac1b28253551f7d37510f4a1bd53b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b0637642de48b6605a9f56e6d7111482af59f5e0361816953f10b1f91e94ad90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813112"
 ---
-# <a name="cim_controller-class-hyper-v-management"></a>CIM_Controller (clase, administración de Hyper-V)
+# <a name="cim_controller-class-hyper-v-management"></a>CIM_Controller (administración de Hyper-V)
 
-Una superclase para dispositivos varios relacionados con el control que proporcionan una interfaz de bus maestro clásico. La clase de controlador es una abstracción para dispositivos con una sola pila de protocolo y existe para controlar las comunicaciones (datos, control y restablecimiento) en los dispositivos de nivel inferior.
+Una superclase para dispositivos varios relacionados con el control que proporcionan una interfaz maestra de bus clásica. La clase de controlador es una abstracción para los dispositivos con una sola pila de protocolos y existen para controlar las comunicaciones (datos, control y restablecimiento) a los dispositivos de nivel inferior.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,26 +43,26 @@ class CIM_Controller : CIM_LogicalDevice
 
 ## <a name="members"></a>Miembros
 
-La clase del **\_ controlador CIM** tiene estos tipos de miembros:
+La **clase de \_ controlador CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase del **\_ controlador CIM** tiene estas propiedades.
+La **clase de \_ controlador CIM** tiene estas propiedades.
 
 <dl> <dt>
 
 **MaxNumberControlled**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Puerto de bus DMTF \| 004,9 ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Puerto de bus DMTF \| \| 004.9")
 </dt> </dl>
 
 Número máximo de dispositivos admitidos que puede administrar el controlador. Un valor "0" indica que el número es desconocido o ilimitado.
@@ -78,32 +78,32 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Puerto DMTF Bus \| 004,3 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ controlador CIM**.**ProtocolSupported**")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Dmtf \| Bus Port \| 004.3"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Controller**.**ProtocolSupported**")
 </dt> </dl>
 
-Una cadena de forma libre que proporciona más información relacionada con el protocolo compatible con el controlador.
+Cadena de forma libre que proporciona más información relacionada con el protocolo admitido por el controlador.
 
 </dd> <dt>
 
 **ProtocolSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Puerto de bus DMTF \| 004,2 "," MIF. \|Discos DMTF \| 003,3 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ controlador CIM**.**ProtocolDescription**")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Puerto de bus DMTF \| \| 004.2", "MIF. DISCOS DMTF \| \| 003.3"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Controlador CIM \_**.**ProtocolDescription**")
 </dt> </dl>
 
-Protocolo usado por el controlador para tener acceso a los dispositivos controlados.
+Protocolo utilizado por el controlador para acceder a dispositivos controlados.
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -145,7 +145,7 @@ Protocolo usado por el controlador para tener acceso a los dispositivos controla
 
 <span id="Flexible_Diskette"></span><span id="flexible_diskette"></span><span id="FLEXIBLE_DISKETTE"></span>
 
-**Disco flexible** (7)
+**Diskette flexible** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -166,7 +166,7 @@ Protocolo usado por el controlador para tener acceso a los dispositivos controla
 
 <span id="SCSI_Fibre_Channel_Protocol"></span><span id="scsi_fibre_channel_protocol"></span><span id="SCSI_FIBRE_CHANNEL_PROTOCOL"></span>
 
-**Protocolo SCSI canal de fibra** (10)
+**Protocolo de Canal de fibra SCSI** (10)
 
 
 </dt> <dd></dd> <dt>
@@ -180,14 +180,14 @@ Protocolo usado por el controlador para tener acceso a los dispositivos controla
 
 <span id="SCSI_Serial_Bus_Protocol-2__1394_"></span><span id="scsi_serial_bus_protocol-2__1394_"></span><span id="SCSI_SERIAL_BUS_PROTOCOL-2__1394_"></span>
 
-**Protocolo de bus serie SCSI: 2 (1394)** (12)
+**Protocolo de bus serie SCSI-2 (1394)** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI_Serial_Storage_Architecture"></span><span id="scsi_serial_storage_architecture"></span><span id="SCSI_SERIAL_STORAGE_ARCHITECTURE"></span>
 
-**Arquitectura de almacenamiento en serie SCSI** (13)
+**Arquitectura de Storage serie SCSI** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -243,7 +243,7 @@ Protocolo usado por el controlador para tener acceso a los dispositivos controla
 
 <span id="Power"></span><span id="power"></span><span id="POWER"></span>
 
-**Potencia** (21)
+**Energía** (21)
 
 
 </dt> <dd></dd> <dt>
@@ -257,7 +257,7 @@ Protocolo usado por el controlador para tener acceso a los dispositivos controla
 
 <span id="MultiBus"></span><span id="multibus"></span><span id="MULTIBUS"></span>
 
-**MultiBus** (23)
+**Multibus** (23)
 
 
 </dt> <dd></dd> <dt>
@@ -292,49 +292,49 @@ Protocolo usado por el controlador para tener acceso a los dispositivos controla
 
 <span id="IEEE_802.3_10BASE5"></span><span id="ieee_802.3_10base5"></span>
 
-**IEEE 802,3 10BASE5** (28)
+**IEEE 802.3 10BASE5** (28)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_802.3_10BASE2"></span><span id="ieee_802.3_10base2"></span>
 
-**IEEE 802,3 10Base2** (29)
+**IEEE 802.3 10BASE2** (29)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_802.3_1BASE5"></span><span id="ieee_802.3_1base5"></span>
 
-**IEEE 802,3 1BASE5** (30)
+**IEEE 802.3 1BASE5** (30)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_802.3_10BROAD36"></span><span id="ieee_802.3_10broad36"></span>
 
-**IEEE 802,3 10BROAD36** (31)
+**IEEE 802.3 10BROAD36** (31)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_802.3_100BASEVG"></span><span id="ieee_802.3_100basevg"></span>
 
-**IEEE 802,3 100BASEVG** (32)
+**IEEE 802.3 100BASEVG** (32)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_802.5_Token-Ring"></span><span id="ieee_802.5_token-ring"></span><span id="IEEE_802.5_TOKEN-RING"></span>
 
-**Token-ring IEEE 802,5** (33)
+**Anillo de token ieee 802.5** (33)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ANSI_X3T9.5_FDDI"></span><span id="ansi_x3t9.5_fddi"></span>
 
-**FDDI ANSI x3t 9.5** (34)
+**ANSI X3T9.5 FDDI** (34)
 
 
 </dt> <dd></dd> <dt>
@@ -362,7 +362,7 @@ Protocolo usado por el controlador para tener acceso a los dispositivos controla
 
 <span id="CMD"></span><span id="cmd"></span>
 
-**Cmd** (38)
+**CMD** (38)
 
 
 </dt> <dd></dd> <dt>
@@ -404,21 +404,21 @@ Protocolo usado por el controlador para tener acceso a los dispositivos controla
 
 <span id="TWIRP__two-way_infrared_"></span><span id="twirp__two-way_infrared_"></span><span id="TWIRP__TWO-WAY_INFRARED_"></span>
 
-**TWIRP (infrarrojo bidireccional)** (44)
+**TWIRP (44)**
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FIR__fast_infrared_"></span><span id="fir__fast_infrared_"></span><span id="FIR__FAST_INFRARED_"></span>
 
-**FIR (infrarrojo rápido)** (45)
+**FIR (temperatura rápida)** (45)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SIR__serial_infrared_"></span><span id="sir__serial_infrared_"></span><span id="SIR__SERIAL_INFRARED_"></span>
 
-**Sir (infrarrojos serie)** (46)
+**MRE (serie)** (46)
 
 
 </dt> <dd></dd> <dt>
@@ -442,13 +442,13 @@ Protocolo usado por el controlador para tener acceso a los dispositivos controla
 **TimeOfLastReset**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La última vez que se restableció el controlador.
+Última vez que se restablecó el controlador.
 
 </dd> </dl>
 
@@ -460,8 +460,8 @@ La última vez que se restableció el controlador.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -470,7 +470,7 @@ La última vez que se restableció el controlador.
 
 <dl> <dt>
 
-[**LogicalDevice de CIM \_**](cim-logicaldevice.md)
+[**\_Dispositivo lógico CIM**](cim-logicaldevice.md)
 </dt> </dl>
 
  

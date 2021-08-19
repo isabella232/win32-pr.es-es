@@ -20,7 +20,7 @@ Las aplicaciones que representan efectos mediante Direct2D deben tener cuidado p
 
 Direct2D a menudo divide un gráfico de efectos en secciones y representa cada sección en un paso independiente. La salida de algunos pasos se puede almacenar en texturas intermedias de Direct3D que, de forma predeterminada, tienen un intervalo numérico y una precisión limitados. Direct2D no garantiza si se usan estas texturas intermedias o dónde. Este comportamiento puede variar según las funcionalidades de GPU, así como entre Windows versiones.
 
-En Windows 10, Direct2D usa menos texturas intermedias debido a su uso de la vinculación del sombreador. Por lo tanto, Direct2D puede generar resultados diferentes con la configuración predeterminada que en versiones Windows anteriores. Esto afecta principalmente a escenarios en los que la vinculación del sombreador es posible en un gráfico de efectos y ese gráfico también contiene efectos que producen colores de salida de intervalo extendido.
+En Windows 10, Direct2D usa menos texturas intermedias debido a su uso de vinculación de sombreador. Por lo tanto, Direct2D puede generar resultados diferentes con la configuración predeterminada que en versiones Windows anteriores. Esto afecta principalmente a escenarios en los que la vinculación del sombreador es posible en un gráfico de efectos y ese gráfico también contiene efectos que producen colores de salida de intervalo extendido.
 
 ## <a name="overview-of-effect-rendering-and-intermediates"></a>Información general sobre la representación de efectos y los intermedios
 
@@ -49,7 +49,7 @@ Tenga en cuenta que no todos los sombreadores de píxeles adyacentes de un gráf
 
 Muchos efectos integrados pueden producir colores fuera del intervalo 0, 1 en el espacio de colores sin multiplicar, incluso cuando sus colores de entrada están dentro \[ \] de ese intervalo. Cuando esto sucede, estos colores pueden estar sujetos a recortes numéricos. Tenga en cuenta que es importante tener en cuenta el intervalo de colores en un espacio sin multiplicar, aunque los efectos integrados suelen producir colores en el espacio premultiplicado. Esto garantiza que los colores permanecen dentro del intervalo, incluso si otros efectos posteriormente no se multiplican.
 
-Algunos de los efectos que pueden emitir estos colores fuera del intervalo ofrecen una propiedad "ClampOutput". Estos incluyen las siguientes:
+Algunos de los efectos que pueden emitir estos colores fuera del intervalo ofrecen una propiedad "ClampOutput". Entre ellas se incluyen las siguientes:
 
 -   [Matriz de colores](color-matrix.md)
 -   [Composición aritmética](arithmetic-composite.md)
@@ -58,7 +58,7 @@ Algunos de los efectos que pueden emitir estos colores fuera del intervalo ofrec
 
 Establecer la propiedad ClampOutput en TRUE en estos efectos garantiza que se logrará un resultado coherente independientemente de factores como la vinculación del sombreador. Tenga en cuenta que la fijación se produce en un espacio sin multiplicar.
 
-Otros efectos integrados también pueden producir colores de salida más allá del intervalo 0, 1 en un espacio sin multiplicar, incluso cuando sus píxeles de colores (y las propiedades "Color" si existen) están dentro de ese \[ \] intervalo. Estos incluyen las siguientes:
+Otros efectos integrados también pueden producir colores de salida más allá del intervalo 0, 1 en un espacio sin multiplicar, incluso cuando sus píxeles de colores (y las propiedades "Color" si existen) están dentro de ese \[ \] intervalo. Entre ellas se incluyen las siguientes:
 
 -   [Efectos de transformación y escalado](built-in-effects.md) (cuando la propiedad Modo de interpolación es cúbica o cúbica de alta calidad)
 -   [Efectos de iluminación](built-in-effects.md)

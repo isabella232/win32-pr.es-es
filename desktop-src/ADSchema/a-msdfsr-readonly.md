@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DFSR-ReadOnly
-description: Especifica si el contenido es de solo lectura o de lectura y escritura.
+title: Atributo ms-DFSR-ReadOnly
+description: Especifica si el contenido es de solo lectura o de lectura/escritura.
 ms.assetid: 178154ae-42dd-4e10-861b-75c3367b46cd
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-DFSR-ReadOnly
-- 'msDFSR: esquema de AD de atributo de solo lectura'
+- Esquema de AD del atributo ms-DFSR-ReadOnly
+- Esquema de AD del atributo msDFSR-ReadOnly
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54167c14bf58ac61d3e7f60227032da106d85687
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2697d8529bd02e3d47288f7aa385c9f643e386c711caafa05dd9403cc8741cc6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118015445"
 ---
-# <a name="ms-dfsr-readonly-attribute"></a>atributo MS-DFSR-ReadOnly
+# <a name="ms-dfsr-readonly-attribute"></a>Atributo ms-DFSR-ReadOnly
 
-Especifica si el contenido es de solo lectura o de lectura y escritura.
+Especifica si el contenido es de solo lectura o de lectura/escritura.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DFSR-ReadOnly                     |
-| Nombre para mostrar de LDAP | msDFSR-ReadOnly                      |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DFSR-ReadOnly                     |
+| Ldap-Display-Name | msDFSR-ReadOnly                      |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.28           |
-| System-ID-GUID    | 5ac48021-e447-46e7-9d23-92c0c6a90dfb |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | 5ac48021-e447-46e7-9d23-92c0c6a90dfb |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -52,18 +52,18 @@ Especifica si el contenido es de solo lectura o de lectura y escritura.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000000                                                       |
-| Clases usadas en        | [**MS-DFSR-suscripción**](c-msdfsr-subscription.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Especifica si el contenido es de solo lectura o de lectura y escritura.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000000                                                       |
-| Clases usadas en        | [**MS-DFSR-suscripción**](c-msdfsr-subscription.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 
@@ -92,20 +92,20 @@ Especifica si el contenido es de solo lectura o de lectura y escritura.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000000                                                       |
-| Clases usadas en        | [**MS-DFSR-suscripción**](c-msdfsr-subscription.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 

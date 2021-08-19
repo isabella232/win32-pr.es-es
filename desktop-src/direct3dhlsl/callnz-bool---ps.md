@@ -33,7 +33,7 @@ Llame a si no es cero. Realiza una llamada condicional a la instrucción marcada
 
 Donde:
 
--   l \# es una [etiqueta: ps](label---ps.md) marca el principio de la subrutina a la que se va a llamar.
+-   l \# es una [etiqueta: ps](label---ps.md) que marca el principio de la subrutina a la que se va a llamar.
 -   \[!\] es un modificador negate opcional.
 -   b \# identifica un registro [booleano constante.](dx9-graphics-reference-asm-ps-registers-constant-boolean.md)
 

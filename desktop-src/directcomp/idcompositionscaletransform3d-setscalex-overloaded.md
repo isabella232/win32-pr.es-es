@@ -48,7 +48,7 @@ Cambia o anima el valor de la propiedad ScaleX de una transformación de escala 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

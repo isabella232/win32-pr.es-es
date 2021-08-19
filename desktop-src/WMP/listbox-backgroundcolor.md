@@ -29,7 +29,7 @@ El **atributo backgroundColor** especifica o recupera el color de fondo en el co
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer microsoft o el valor "none". Tiene un valor predeterminado igual al color Windows fondo.
+Este atributo es una cadena de lectura y **escritura** que contiene cualquier valor de color Internet Explorer microsoft o el valor "none". Tiene un valor predeterminado igual al color Windows fondo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Este atributo es una cadena de **lectura** y escritura que contiene cualquier va
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
