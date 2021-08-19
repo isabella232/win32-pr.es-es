@@ -13,11 +13,11 @@ ms.locfileid: "118931698"
 ---
 # <a name="configuring-load-balancing"></a>Configuración del equilibrio de carga
 
-Cada máquina de proxy RPC que va a actuar como un servicio de servidor de equilibrio de carga (LBS) debe configurarse como un servicio LBS con conocimiento de los servidores de la granja de servidores. Opcionalmente, se puede establecer el recurso predeterminado y se puede establecer la seguridad de proxy en las llamadas RPC de LBS y LBS a LBS. Estas opciones se configuran mediante un conjunto de claves **del Registro necesarias** y claves del Registro **opcionales,** como se describe a continuación.
+Cada máquina de proxy RPC que va a actuar como un servicio de servidor de equilibrio de carga (LBS) debe configurarse como un servicio LBS con conocimiento de los servidores de la granja de servidores. Opcionalmente, se puede establecer el recurso predeterminado y se puede establecer la seguridad de proxy en las llamadas RPC de LBS y LBS a LBS. Esta configuración se configura mediante un conjunto de claves **del Registro necesarias** y claves del Registro **opcionales,** como se describe a continuación.
 
 ## <a name="required-registry-keys"></a>Claves del Registro necesarias
 
-Se requieren varias claves y valores del Registro para configurar un servidor LBS. Si falta alguna clave o se ha especificado un error, se registra Windows evento. Consulte la descripción de cada clave y valor para obtener información sobre el evento registrado.
+Se requieren varias claves y valores del Registro para configurar un servidor LBS. Si falta alguna clave o se introduce un error, se registra Windows evento. Consulte la descripción de cada clave y valor para obtener información sobre el evento registrado.
 
 Para configurar la granja de servidores, se debe crear una clave del Registro **HKLM \\ SOFTWARE Microsoft \\ Rpc \\ \\ RpcProxy** denominada **LBSConfiguration.** En la **clave LBSConfiguration,** se crea una clave para cada recurso de la granja de servidores. El nombre de clave es la representación de cadena del GUID del recurso. Debe existir al menos una clave de recurso y este recurso es idéntico al [**UUID**](./rpcdce/ns-rpcdce-uuid.md) establecido por los clientes en el identificador de enlace, [**RPC BINDING \_ \_ HANDLE**](rpc-binding-handle.md), cuando crean el enlace RPC/HTTP (para obtener más información, vea [**RpcBindingSetObject**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingsetobject)). En cada clave UUID de recurso, debe existir un valor DWORD denominado **ConfigurationType** que describa la configuración utilizada. También debe existir un **\_ REG SZ de** identificadores de servidor delimitados por punto y coma denominado **ServerFarm**. Los servidores identificados en la **clave ServerFarm** son los servidores que son miembros de la granja de servidores de equilibrio de carga.
 
@@ -69,19 +69,19 @@ A continuación se muestra un desglose detallado de los valores y las claves del
 
 **HKLM \\ SOFTWARE \\ Microsoft \\ Rpc \\ RpcProxy \\ LBSConfiguration \\ NoSecurity**
 
-DWORD. Cuando **NoSecurity** DWORD no está presente o establecido en 0, se rechazan las llamadas entrantes no seguras al servicio LBS. Cuando está presente y no es 0, no se rechazan las llamadas entrantes no seguras al servicio LBS. Esta clave se lee una vez al iniciar el servicio LBS.
+DWORD. Cuando **NoSecurity** DWORD no está presente o establecido en 0, se rechazan las llamadas entrantes no seguras al servicio LBS. Cuando está presente y no es 0, las llamadas entrantes no seguras al servicio LBS no se rechazan. Esta clave se lee una vez al iniciar el servicio LBS.
 
 \-
 
 **HKLM \\ SOFTWARE \\ Microsoft \\ Rpc \\ RpcProxy \\ LBSConfiguration \\ AssumeResourceUUID**
 
-DWORD. Cuando **el DWORD AssumeResourceUUID** no está presente, no se produce ningún cambio en el servicio LBS. Cuando está presente, debe establecerse con un [**UUID válido.**](./rpcdce/ns-rpcdce-uuid.md) Este **UUID se** usará como UUID de recurso para todas las conexiones que no especifiquen un UUID de recurso. Esto se usa normalmente en casos en los que los clientes no especifican un UUID de recurso al crear el enlace RPC/HTTP, pero un administrador desea equilibrar la carga del tráfico RPC/HTTP a una granja de servidores. Si esta clave no se puede analizar en un UUID, se genera un error interno de RPC que genera INFORMACIÓN DE [**\_ \_ ERROR \_**](/windows/win32/api/rpcasync/ns-rpcasync-rpc_extended_error_info) EXTENDIDA de RPC si está habilitada.
+DWORD. Cuando **el DWORD AssumeResourceUUID** no está presente, no se produce ningún cambio en el servicio LBS. Cuando está presente, debe establecerse con un [**UUID válido.**](./rpcdce/ns-rpcdce-uuid.md) Este **UUID se** usará como UUID de recurso para todas las conexiones que no especifiquen un UUID de recurso. Esto se usa normalmente en casos en los que los clientes no especifican un UUID de recurso al crear el enlace RPC/HTTP, pero un administrador desea equilibrar la carga del tráfico RPC/HTTP a una granja de servidores. Si esta clave no se puede analizar en un UUID, se genera un error interno de RPC que genera información de [**\_ \_ error \_**](/windows/win32/api/rpcasync/ns-rpcasync-rpc_extended_error_info) extendida de RPC si está habilitada.
 
 \-
 
 **HKLM \\ Software \\ Microsoft \\ Rpc \\ RPCHTTPLBSServer \\ NoSecurity**
 
-DWORD. Cuando **NoSecurity** DWORD no se presenta o se establece en 0, todas las llamadas salientes realizadas a los servicios LBS tendrán seguridad. Si está presente y no se establece en 0, todas las llamadas salientes realizadas a los servicios LBS no tendrán seguridad. Asegúrese de que esta configuración coincide con la configuración **HKLM \\ SOFTWARE Microsoft \\ \\ \\ RpcProxy \\ LBSConfiguration \\ NoSecurity.**
+DWORD. Cuando **NoSecurity** DWORD no se presenta o se establece en 0, todas las llamadas salientes realizadas a los servicios LBS tendrán seguridad. Si está presente y no se establece en 0, todas las llamadas salientes realizadas a los servicios LBS no tendrán seguridad. Asegúrese de que esta configuración coincide con la configuración **HKLM \\ SOFTWARE Microsoft \\ Rpc \\ \\ RpcProxy \\ LBSConfiguration \\ NoSecurity.**
 
  
 

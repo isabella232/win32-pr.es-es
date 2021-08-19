@@ -1,5 +1,5 @@
 ---
-description: Esta clase es la clase primaria para los eventos de llamada a procedimiento local avanzados. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase primaria para eventos de llamada a procedimientos locales avanzados. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 5380fada-50e7-4eb2-8549-6d738a56d2cd
 title: ALPC (clase)
 ms.topic: reference
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2a4b09a8bab9280de8fb4c91368f5d6d93f7944a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 435b55c44f06b6be062653a45e14a1a890e026371d8bd8e649c87ce3542118c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070295"
 ---
 # <a name="alpc-class"></a>ALPC (clase)
 
-Esta clase es la clase primaria para los eventos de llamada a procedimiento local avanzados.
+Esta clase es la clase primaria para eventos de llamada a procedimientos locales avanzados.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,23 +36,23 @@ class ALPC : MSNT_SystemTrace
 
 ## <a name="members"></a>Miembros
 
-La clase **ALPC** no define ningún miembro.
+La **clase ALPC** no define ningún miembro.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para habilitar los eventos de llamada a procedimiento local avanzado en una sesión de registro del kernel de NT, especifique la marca de **seguimiento de eventos \_ \_ \_ ALPC** en el miembro **EnableFlags** de una estructura de propiedades de [**\_ seguimiento \_ de eventos**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) al llamar a la función [**StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea) .
+Para habilitar eventos de llamada a procedimientos locales avanzados en una sesión de registro del kernel de NT, especifique la marca **\_ EVENT TRACE FLAG \_ \_ ALPC** en el miembro **EnableFlags** de una estructura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) al llamar a la [**función StartTrace.**](/windows/win32/api/evntrace/nf-evntrace-starttracea)
 
-Los consumidores de seguimiento de eventos pueden implementar un procesamiento especial para eventos ALPC llamando a la función [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) y especificando [**ALPCGuid**](nt-kernel-logger-constants.md) como parámetro *pGuid* . Use los siguientes tipos de eventos para identificar el evento ALPC real al consumir eventos.
+Los consumidores de seguimiento de eventos pueden implementar un procesamiento especial para eventos ALPC llamando a la función [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) y especificando [**ALPCGuid**](nt-kernel-logger-constants.md) como parámetro *pGuid.* Use los siguientes tipos de eventos para identificar el evento ALPC real al consumir eventos.
 
 
 
 | Tipo de evento           | Descripción                                                                                                                                         |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Valor del tipo de evento, 33 | Enviar evento de mensaje. La clase MOF de [**\_ envío de \_ mensaje ALPC**](alpc-send-message.md) define los datos de evento para este evento.                           |
-| Valor del tipo de evento, 34 | Evento Receive Message. La clase MOF de [**\_ recepción de \_ mensajes ALPC**](alpc-receive-message.md) define los datos de evento para este evento.                  |
-| Valor del tipo de evento, 35 | Evento wait for reply. La clase del MOF [**\_ Wait \_ for \_ reply de ALPC**](alpc-wait-for-reply.md) define los datos de evento para este evento.                    |
-| Valor del tipo de evento, 36 | Esperar un nuevo evento de mensaje. La clase MOF [**\_ Wait \_ for \_ New \_ Message**](alpc-wait-for-new-message.md) mof define los datos de evento para este evento. |
-| Valor del tipo de evento, 37 | Detener evento en espera. La clase de MOF [**\_ unwait de ALPC**](alpc-unwait.md) define los datos de evento para este evento.                                        |
+| Valor de tipo de evento, 33 | Evento de envío de mensajes. La [**clase MOF ALPC \_ Send \_ Message**](alpc-send-message.md) define los datos del evento para este evento.                           |
+| Valor de tipo de evento, 34 | Evento de recepción de mensajes. La [**clase ALPC \_ Receive \_ Message**](alpc-receive-message.md) MOF define los datos de evento para este evento.                  |
+| Valor de tipo de evento, 35 | Espere el evento de respuesta. La [**clase ALPC \_ Wait For \_ \_ Reply**](alpc-wait-for-reply.md) MOF define los datos de evento para este evento.                    |
+| Valor de tipo de evento, 36 | Espere a que se produce un nuevo evento de mensaje. La [**clase MOF ALPC \_ Wait For New \_ \_ \_ Message**](alpc-wait-for-new-message.md) define los datos de evento para este evento. |
+| Valor de tipo de evento, 37 | Detenga el evento en espera. La [**clase MOF ALPC \_ Unwait**](alpc-unwait.md) define los datos de evento para este evento.                                        |
 
 
 
@@ -62,10 +62,10 @@ Los consumidores de seguimiento de eventos pueden implementar un procesamiento e
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

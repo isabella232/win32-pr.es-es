@@ -90,7 +90,7 @@ Si el pin es de un grupo de vídeo, este método crea una ventana de vídeo. El 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

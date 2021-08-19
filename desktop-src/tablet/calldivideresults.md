@@ -93,7 +93,7 @@ Matriz de [**propiedades de identificador**](/windows/desktop/api/msinkaut/nf-ms
 *pastrWords* \[ out\]
 </dt> <dd>
 
-Matriz de palabras devueltas por el análisis de entrada de lápiz.
+Matriz de palabras devueltas desde el análisis de entrada de lápiz.
 
 </dd> <dt>
 
@@ -177,7 +177,7 @@ Para evitar pérdidas de memoria, debe liberar los recursos de *pastrWords*, *pa
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                         |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |

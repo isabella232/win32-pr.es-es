@@ -45,7 +45,7 @@ Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que r
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
 ## <a name="remarks"></a>Comentarios
 

@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_GET_DEST mensaje (Vfw.h)
-description: El mensaje GET DEST de MCIWNDM recupera las coordenadas del rectángulo de destino que se usa para acercar o ampliar las imágenes de un archivo AVI durante \_ \_ la reproducción. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetDest.
+description: El mensaje GET DEST de MCIWNDM recupera las coordenadas del rectángulo de destino que se usa para acercar o ajustar las imágenes de un archivo AVI durante \_ \_ la reproducción. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetDest.
 ms.assetid: d4d8a3eb-aad4-4435-a23b-7a9c55fc194d
 keywords:
 - MCIWNDM_GET_DEST mensaje Windows Multimedia
@@ -23,7 +23,7 @@ ms.locfileid: "117802909"
 ---
 # <a name="mciwndm_get_dest-message"></a>Mensaje GET \_ DEST de MCIWNDM \_
 
-El **mensaje GET \_ \_ DEST de MCIWNDM** recupera las coordenadas del rectángulo de destino que se usa para acercar o ampliar las imágenes de un archivo AVI durante la reproducción. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetDest.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetdest)
+El **mensaje GET \_ \_ DEST de MCIWNDM** recupera las coordenadas del rectángulo de destino que se usa para acercar o ajustar las imágenes de un archivo AVI durante la reproducción. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetDest.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetdest)
 
 
 ```C++
@@ -47,7 +47,7 @@ Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) para 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

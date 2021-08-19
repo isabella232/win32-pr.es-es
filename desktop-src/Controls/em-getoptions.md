@@ -1,6 +1,6 @@
 ---
 title: EM_GETOPTIONS mensaje (Richedit.h)
-description: Recupera opciones de control de edición enriquecciones.
+description: Recupera las opciones de control de edición enriquecciones.
 ms.assetid: 183f0fed-8666-4ed5-ac48-362c818378d2
 keywords:
 - EM_GETOPTIONS controles de Windows mensaje
@@ -21,9 +21,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119019523"
 ---
-# <a name="em_getoptions-message"></a>Mensaje \_ EM GETOPTIONS
+# <a name="em_getoptions-message"></a>Mensaje \_ DE EM GETOPTIONS
 
-Recupera opciones de control de edición enriquecciones.
+Recupera las opciones de control de edición enriquecciones.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -45,13 +45,13 @@ No se usa; debe ser cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje devuelve una combinación de los valores de marca de opción actuales descritos en el [**mensaje \_ EM SETOPTIONS.**](em-setoptions.md)
+Este mensaje devuelve una combinación de los valores de marca de opción actuales descritos en el [**mensaje EM \_ SETOPTIONS.**](em-setoptions.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
@@ -59,7 +59,7 @@ Este mensaje devuelve una combinación de los valores de marca de opción actual
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

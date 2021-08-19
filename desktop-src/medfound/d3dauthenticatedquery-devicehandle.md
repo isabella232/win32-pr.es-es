@@ -26,7 +26,7 @@ Devuelve un identificador al dispositivo que está asociado a este canal autenti
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------|----------------------------------------------------------------------------------------------------------------|
 | GUID de consulta  | **D3DAUTHENTICATEDQUERY \_ DEVICEHANDLE**                                                                        |
 | Datos de entrada  | [**ENTRADA DE CONSULTA D3DAUTHENTICATEDCHANNEL \_ \_**](d3dauthenticatedchannel-query-input.md)                           |
@@ -44,7 +44,7 @@ Esta consulta es válida para todos los tipos de canal.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
@@ -52,7 +52,7 @@ Esta consulta es válida para todos los tipos de canal.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

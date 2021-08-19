@@ -1,7 +1,7 @@
 ---
 description: El método ReinstallFeature del objeto Installer reinstala las características o corrige los problemas con las características instaladas.
 ms.assetid: cfe2aef4-7742-49cd-b7a3-7d484e1f85e3
-title: Installer.ReinstallFeature (método)
+title: Método Installer.ReinstallFeature
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118946291"
 ---
-# <a name="installerreinstallfeature-method"></a>Installer.ReinstallFeature (método)
+# <a name="installerreinstallfeature-method"></a>Método Installer.ReinstallFeature
 
 El **método ReinstallFeature** del objeto [**Installer**](installer-object.md) reinstala las características o corrige los problemas con las características instaladas.
 
@@ -62,7 +62,7 @@ Especifica el tipo de reinstalación. Este parámetro puede ser uno o varios de 
 
 
 
-| Valor                                                                                                                                                                                                                                                                    | Significado                                                                           |
+| Value                                                                                                                                                                                                                                                                    | Significado                                                                           |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | <span id="msiReinstallModeFileMissing"></span><span id="msireinstallmodefilemissing"></span><span id="MSIREINSTALLMODEFILEMISSING"></span><dl> <dt>**msiReinstallModeFileMissing**</dt> </dl>                     | Vuelve a instalar solo si falta el archivo.<br/>                                |
 | <span id="msiReinstallModeFileOlderVersion"></span><span id="msireinstallmodefileolderversion"></span><span id="MSIREINSTALLMODEFILEOLDERVERSION"></span><dl> <dt>**msiReinstallModeFileOlderVersion**</dt> </dl> | Se vuelve a instalar si falta el archivo o si es una versión anterior.<br/>              |
@@ -89,7 +89,7 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
@@ -97,7 +97,7 @@ Este método no devuelve ningún valor.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

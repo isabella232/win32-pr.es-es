@@ -1,7 +1,7 @@
 ---
 description: Crea una malla a partir de una malla de revisión de control.
 ms.assetid: 50e4f7aa-a6b8-4a2b-9813-a9448f408d06
-title: Función D3DXCreatePatchMesh (D3DX9Mesh. h)
+title: Función D3DXCreatePatchMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 375052e240973f56af32825f74caccf6f9411d75
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: aa4e1292f4b5c42515351d89dc7fc039f1f6f29201da72a78e07f447818e0f91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988645"
 ---
-# <a name="d3dxcreatepatchmesh-function"></a>D3DXCreatePatchMesh función)
+# <a name="d3dxcreatepatchmesh-function"></a>Función D3DXCreatePatchMesh
 
 Crea una malla a partir de una malla de revisión de control.
 
@@ -46,16 +46,16 @@ HRESULT D3DXCreatePatchMesh(
 
 <dl> <dt>
 
-*Pinfo* \[ de\]
+*pInfo* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXPATCHINFO**](d3dxpatchinfo.md) \***
 
-Estructura de información de revisión. Para obtener más información, vea [**D3DXPATCHINFO**](d3dxpatchinfo.md).
+Estructura de información de revisión. Para obtener más información, [**vea D3DXPATCHINFO**](d3dxpatchinfo.md).
 
 </dd> <dt>
 
-*dwNumPatches* \[ de\]
+*dwNumPatches* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -64,16 +64,16 @@ Número de revisiones.
 
 </dd> <dt>
 
-*dwNumVertices* \[ de\]
+*dwNumVertices* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número de vértices de control de la revisión.
+Número de vértices de control en la revisión.
 
 </dd> <dt>
 
-*dwOptions* \[ de\]
+*dwOptions* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -82,30 +82,30 @@ Sin usar. Reservado para su uso posterior.
 
 </dd> <dt>
 
-*pDecl* \[ de\]
+*pDecl* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
 
-Matriz de elementos [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) , que describe el formato de vértice de la malla devuelta.
+Matriz [**de elementos D3DVERTEXELEMENT9,**](d3dvertexelement9.md) que describe el formato de vértice de la malla devuelta.
 
 </dd> <dt>
 
-*pD3DDevice* \[ de\]
+*pD3DDevice* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntero el dispositivo que crea la malla de revisión. Vea [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9).
+Puntero al dispositivo que crea la malla de revisión. Vea [**IDirect3DDevice9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)
 
 </dd> <dt>
 
-*pPatchMesh* \[ enuncia\]
+*pPatchMesh* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPATCHMESH**](id3dxpatchmesh.md)\***
 
-Puntero al objeto [**ID3DXPatchMesh**](id3dxpatchmesh.md) que se crea.
+Puntero al [**objeto ID3DXPatchMesh**](id3dxpatchmesh.md) que se crea.
 
 </dd> </dl>
 
@@ -113,11 +113,11 @@ Puntero al objeto [**ID3DXPatchMesh**](id3dxpatchmesh.md) que se crea.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método toma una malla de revisión de entrada y la convierte en una malla teselada. Las mallas de revisión utilizan búferes de índice de 16 bits. Por lo tanto, los índices de [**LockIndexBuffer**](id3dxpatchmesh--lockindexbuffer.md) son de 16 bits.
+Este método toma una malla de revisión de entrada y la convierte en una malla teselada. Las mallas de revisión usan búferes de índice de 16 bits. Por lo tanto, los índices [**de LockIndexBuffer**](id3dxpatchmesh--lockindexbuffer.md) son de 16 bits.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -125,8 +125,8 @@ Este método toma una malla de revisión de entrada y la convierte en una malla 
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

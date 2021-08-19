@@ -1,6 +1,6 @@
 ---
 title: D3DX11_SAVE_TEXTURE_FLAG enumeración (D3DX11tex.h)
-description: 'Nota: La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Opciones de guardado de textura.'
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Opciones de guardado de textura.
 ms.assetid: 9fee11c3-628f-4535-8e93-510fc77e1a3e
 keywords:
 - D3DX11_SAVE_TEXTURE_FLAG enumeración Direct3D 11
@@ -62,7 +62,7 @@ No optimice.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

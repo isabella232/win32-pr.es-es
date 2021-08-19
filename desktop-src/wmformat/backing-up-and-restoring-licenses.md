@@ -31,7 +31,7 @@ ms.locfileid: "119028143"
 
 Los procesos de copia de seguridad y restauración son asincrónicos. Se desencadenan cuando el usuario selecciona un comando de menú o una opción en la aplicación para hacer copias de seguridad o restaurar licencias. Debe permitir que el usuario especifique las ubicaciones desde las que se debe realizar una copia de seguridad de las licencias y desde las que se deben restaurar.
 
-Para hacer una copia de seguridad de las licencias:
+Para hacer una copia de seguridad de licencias:
 
 1.  Use la [**función WMCreateBackupRestorer para**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreatebackuprestorer) crear el objeto de restaurador de copia de seguridad.
 2.  Llame al [**método IWMBackupRestoreProps::SetProp**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmbackuprestoreprops-setprop) para establecer la ruta de acceso de copia de seguridad (la ubicación donde escribirá los archivos, como A: \\ o D: \\ Licencias).

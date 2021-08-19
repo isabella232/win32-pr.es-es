@@ -79,7 +79,7 @@ Devuelve S \_ OK si se realiza correctamente o E \_ INVALIDARG si la hora especi
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

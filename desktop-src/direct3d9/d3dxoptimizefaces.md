@@ -49,7 +49,7 @@ HRESULT D3DXOptimizeFaces(
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
 
-Puntero a índices de lista de triángulos que se usarán para ordenar los vértices.
+Puntero a los índices de lista de triángulos que se usarán para ordenar los vértices.
 
 </dd> <dt>
 
@@ -110,7 +110,7 @@ El procedimiento de optimización de esta función es funcionalmente equivalente
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

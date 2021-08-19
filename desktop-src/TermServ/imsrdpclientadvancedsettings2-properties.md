@@ -1,30 +1,30 @@
 ---
-title: Propiedades de IMsRdpClientAdvancedSettings2
+title: Propiedades IMsRdpClientAdvancedSettings2
 description: La interfaz IMsRdpClientAdvancedSettings2 expone las siguientes propiedades.
 ms.assetid: 3B10B0A8-B25F-44C0-82DC-CCE67CE9CF01
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbf954c19535b3ff9380a45df7fb83285b7ab69f
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: f55140c8d7e798e65bb11b711852bf45e983f7143851f80a78d4b48c2605817c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103784325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001403"
 ---
-# <a name="imsrdpclientadvancedsettings2-properties"></a>Propiedades de IMsRdpClientAdvancedSettings2
+# <a name="imsrdpclientadvancedsettings2-properties"></a>Propiedades IMsRdpClientAdvancedSettings2
 
-La interfaz [**IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md) expone las siguientes propiedades.
+La [**interfaz IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**Propiedad CanAutoReconnect**](imsrdpclientadvancedsettings2-canautoreconnect.md)
--   [**Propiedad EnableAutoReconnect**](imsrdpclientadvancedsettings2-enableautoreconnect.md)
--   [**Propiedad MaxReconnectAttempts**](imsrdpclientadvancedsettings2-maxreconnectattempts.md)
+-   [**EnableAutoReconnect, propiedad**](imsrdpclientadvancedsettings2-enableautoreconnect.md)
+-   [**MaxReconnectAttempts, propiedad**](imsrdpclientadvancedsettings2-maxreconnectattempts.md)
 
- 
+ 
 
- 
+ 
 
 
 

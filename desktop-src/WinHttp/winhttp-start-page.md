@@ -19,9 +19,9 @@ Microsoft Windows HTTP Services (WinHTTP) proporciona a los desarrolladores una 
 
 ## <a name="where-applicable"></a>Donde sea aplicable
 
-WinHTTP admite aplicaciones cliente de escritorio, Windows servicios y Windows aplicaciones basadas en servidor.
+WinHTTP admite aplicaciones cliente de escritorio, Windows servicios y Windows basadas en servidor.
 
-Para obtener más información sobre cómo usar WinHTTP para aplicaciones integradas en microsoft .NET Framework, consulte la [API WinHttpHandler.](/dotnet/api/system.net.http?view=netframework-4.8)
+Para obtener más información sobre cómo usar WinHTTP para aplicaciones creadas en microsoft .NET Framework, consulte la [API WinHttpHandler.](/dotnet/api/system.net.http?view=netframework-4.8)
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 

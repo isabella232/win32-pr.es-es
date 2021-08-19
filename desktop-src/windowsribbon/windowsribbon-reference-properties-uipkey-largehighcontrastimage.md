@@ -27,7 +27,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentarios
 
-Una aplicación usa la interfaz de usuario \_ PKEY LargeHighContrastImage para consultar la imagen de contraste alto grande \_ asociada a un control de cinta de opciones.
+Una aplicación usa la interfaz de usuario \_ PKEY LargeHighContrastImage para consultar la imagen grande de contraste alto \_ asociada a un control de cinta de opciones.
 
 El valor de propiedad es un [**objeto IUIImage.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage)
 

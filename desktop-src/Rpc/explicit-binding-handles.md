@@ -1,6 +1,6 @@
 ---
 title: Identificadores de enlace explícitos
-description: Para obtener el máximo control sobre el proceso de enlace, las aplicaciones cliente/servidor pueden usar identificadores de enlace explícitos.
+description: Para obtener el control máximo sobre el proceso de enlace, las aplicaciones cliente/servidor pueden usar identificadores de enlace explícitos.
 ms.assetid: e711ce37-92f0-4e60-a126-148c27662c26
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,11 +13,11 @@ ms.locfileid: "118930024"
 ---
 # <a name="explicit-binding-handles"></a>Identificadores de enlace explícitos
 
-Para obtener el máximo control sobre el proceso de enlace, las aplicaciones cliente/servidor pueden usar identificadores de enlace explícitos. Al igual que los identificadores implícitos, los identificadores de enlace explícitos permiten a la aplicación cliente seleccionar un servidor para ejecutar sus llamadas. Además, los identificadores de enlace explícitos permiten a la aplicación cliente/servidor crear una sesión de comunicación RPC autenticada. Con identificadores explícitos, el cliente puede conectarse a más de un servidor y ejecutar procedimientos remotos en varios servidores. Las aplicaciones cliente multiproceso y asincrónicas incluso pueden conectarse a varios servidores y ejecutar varios procedimientos remotos al mismo tiempo.
+Para obtener el control máximo sobre el proceso de enlace, las aplicaciones cliente/servidor pueden usar identificadores de enlace explícitos. Al igual que los identificadores implícitos, los identificadores de enlace explícitos permiten a la aplicación cliente seleccionar un servidor para ejecutar sus llamadas. Además, los identificadores de enlace explícitos permiten a la aplicación cliente/servidor crear una sesión de comunicación RPC autenticada. Con identificadores explícitos, el cliente puede conectarse a más de un servidor y ejecutar procedimientos remotos en varios servidores. Las aplicaciones cliente multiproceso y asincrónicas incluso pueden conectarse a varios servidores y ejecutar varios procedimientos remotos al mismo tiempo.
 
-La aplicación cliente debe pasar el identificador explícito como parámetro a cada llamada a procedimiento remoto. Para cumplir con el estándar de OSF, el identificador debe especificarse como el primer parámetro en cada procedimiento remoto. Sin embargo, las extensiones de Microsoft para RPC permiten especificar el identificador de enlace en otras posiciones. Para obtener más información, vea [Microsoft RPC Binding-Handle Extensions](microsoft-rpc-binding-handle-extensions.md).
+La aplicación cliente debe pasar el identificador explícito como parámetro a cada llamada a procedimiento remoto. Para cumplir con el estándar de OSF, el identificador debe especificarse como primer parámetro en cada procedimiento remoto. Sin embargo, las extensiones de Microsoft para RPC permiten especificar el identificador de enlace en otras posiciones. Para obtener más información, [vea Microsoft RPC Binding-Handle Extensions](microsoft-rpc-binding-handle-extensions.md).
 
-Para crear un identificador explícito, declare el identificador como un parámetro para las operaciones remotas en el archivo IDL. El [ejemplo Hello, World](tutorial.md) se puede volver a definir para usar un identificador explícito como se muestra a continuación:
+Para crear un identificador explícito, declare el identificador como un parámetro para las operaciones remotas en el archivo IDL. El [ejemplo Hello, World](tutorial.md) se puede volver a definir para usar un identificador explícito como se muestra:
 
 ``` syntax
 /* IDL file for explicit handles */

@@ -1,7 +1,7 @@
 ---
-description: Bloquea un búfer de vértice y obtiene un puntero a la memoria del búfer de vértices.
+description: Bloquea un búfer de vértices y obtiene un puntero a la memoria del búfer de vértices.
 ms.assetid: afcd479c-b268-4720-b26c-88b82f1aab08
-title: 'ID3DXBaseMesh:: LockVertexBuffer (método) (D3DX9Mesh. h)'
+title: Método ID3DXBaseMesh::LockVertexBuffer (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 2e93e59715d9f262d7693f2bef652f8be63337f7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5bb0cd8539a996b66ccf9f413e57ebf1d213fe6372e56b50b35abc5e210595f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987615"
 ---
-# <a name="id3dxbasemeshlockvertexbuffer-method"></a>ID3DXBaseMesh:: LockVertexBuffer (método)
+# <a name="id3dxbasemeshlockvertexbuffer-method"></a>Método ID3DXBaseMesh::LockVertexBuffer
 
-Bloquea un búfer de vértice y obtiene un puntero a la memoria del búfer de vértices.
+Bloquea un búfer de vértices y obtiene un puntero a la memoria del búfer de vértices.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,17 +41,17 @@ HRESULT LockVertexBuffer(
 
 <dl> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinación de cero o más marcas de bloqueo que describen el tipo de bloqueo que se va a realizar. Para este método, las marcas válidas son:
+Combinación de cero o más marcas de bloqueo que describen el tipo de bloqueo que se debe realizar. Para este método, las marcas válidas son:
 
--   \_Descartar D3DLOCK
--   \_No se \_ pudo \_ Actualizar D3DLOCK
+-   D3DLOCK \_ DISCARD
+-   D3DLOCK \_ NO \_ DIRTY \_ UPDATE
 -   D3DLOCK \_ NOSYSLOCK
--   D3DLOCK \_ ReadOnly
+-   D3DLOCK \_ READONLY
 -   D3DLOCK \_ NOOVERWRITE
 
 Para obtener una descripción de las marcas, vea [D3DLOCK](d3dlock.md).
@@ -63,7 +63,7 @@ Para obtener una descripción de las marcas, vea [D3DLOCK](d3dlock.md).
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)\***
 
-\*Puntero void a un búfer que contiene los datos de vértices.
+Puntero VOID \* a un búfer que contiene los datos del vértice.
 
 </dd> </dl>
 
@@ -71,11 +71,11 @@ Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)\***
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al trabajar con búferes de vértices, se permite realizar varias llamadas de bloqueo; sin embargo, debe asegurarse de que el número de llamadas de bloqueo coincide con el número de llamadas de desbloqueo. Las llamadas a DrawPrimitive no se realizarán correctamente con ningún recuento de bloqueos pendientes en ningún búfer de vértice establecido actualmente.
+Al trabajar con búferes de vértices, puede realizar varias llamadas de bloqueo; sin embargo, debe asegurarse de que el número de llamadas de bloqueo coincide con el número de llamadas de desbloqueo. Las llamadas DrawPrimitive no se realizará correctamente con ningún recuento de bloqueos pendiente en ningún búfer de vértices establecido actualmente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,8 +83,8 @@ Al trabajar con búferes de vértices, se permite realizar varias llamadas de bl
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

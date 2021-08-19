@@ -52,7 +52,7 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="typical-tree-structure"></a>Estructura de árbol típica
 
-En la tabla siguiente se muestra un control y una vista de contenido típicos del árbol Automatización de la interfaz de usuario que pertenece a los controles de botón de radio y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el árbol Automatización de la interfaz de usuario, [vea información general Automatización de la interfaz de usuario árbol de árbol.](uiauto-treeoverview.md)
+En la tabla siguiente se muestra un control típico y una vista de contenido del árbol Automatización de la interfaz de usuario que pertenece a los controles de botón de radio y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario, vea [información general Automatización de la interfaz de usuario árbol de datos.](uiauto-treeoverview.md)
 
 
 
@@ -87,15 +87,15 @@ No hay ningún elemento secundario en la vista de control o la vista de contenid
 
 ## <a name="relevant-properties"></a>Propiedades pertinentes
 
-En la tabla siguiente se enumeran Automatización de la interfaz de usuario propiedades cuyo valor o definición es especialmente relevante para los controles que implementan el tipo de control **RadioButton** (como los controles de botón). Para obtener más información sobre Automatización de la interfaz de usuario, vea [Retrieving Properties from Automatización de la interfaz de usuario Elements](uiauto-propertiesforclients.md).
+En la tabla siguiente se enumeran Automatización de la interfaz de usuario propiedades cuyo valor o definición es especialmente relevante para los controles que implementan el tipo de control **RadioButton** (como los controles de botón). Para obtener más información sobre Automatización de la interfaz de usuario propiedades, vea [Recuperar propiedades de Automatización de la interfaz de usuario Elements](uiauto-propertiesforclients.md).
 
 
 
 | Propiedad de automatización de interfaz de usuario                                                                                              | Valor           | Notas                                                                                                                                         |
 |---------------------------------------------------------------------------------------------------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas.      | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel en la vista sin formato del Automatización de la interfaz de usuario árbol.                                  |
+| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas.      | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel en la vista sin formato Automatización de la interfaz de usuario árbol.                                  |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vea las notas.      | El rectángulo exterior que contiene el control completo.                                                                                      |
-| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vea las notas.      | El punto en el que se puede hacer clic debe ser un punto en el que, al hacer clic, seleccione el botón de radio.                                                             |
+| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vea las notas.      | El punto en el que se puede hacer clic debe ser un punto que, al hacer clic, seleccione el botón de radio.                                                             |
 | [**ControlTypePropertyId de UIA \_**](uiauto-automation-element-propids.md)                   | **RadioButton** |                                                                                                                                               |
 | [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE            | El control de botón de radio siempre se incluye en la vista de contenido del Automatización de la interfaz de usuario texto.                                                    |
 | [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE            | El control de botón de radio siempre se incluye en la vista de control del Automatización de la interfaz de usuario control.                                                    |
@@ -110,15 +110,15 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario prop
 
 ## <a name="required-control-patterns"></a>Patrones de control necesarios
 
-En la tabla siguiente se enumeran los Automatización de la interfaz de usuario de control necesarios para que todos los controles de botón de radio sean compatibles. Para más información sobre los patrones de control, vea [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
+En la tabla siguiente se enumeran los Automatización de la interfaz de usuario de control que deben ser compatibles con todos los controles de botón de radio. Para más información sobre los patrones de control, vea [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
 
 
 
 | Patrón de control/Propiedad de patrón                                               | Soporte técnico/valor | Notas                                                                                                                                                                                                                                                                                                                                                                                                             |
 |--------------------------------------------------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ISelectionItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionitemprovider)                | Requerido      | Todos los controles de botón de radio deben admitir el patrón de control [SelectionItem](uiauto-implementingselectionitem.md) para poder seleccionarse.                                                                                                                                                                                                                                                             |
-| [**SelectionContainer**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-get_selectioncontainer) | Vea las notas.    | La [**propiedad SelectionContainer**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-get_selectioncontainer) siempre debe completarse para que un cliente de Automatización de la interfaz de usuario pueda determinar qué otros botones de radio dentro de un contexto específico se relacionan entre sí. Para la versión Win32 de Microsoft del botón de radio, esta propiedad no se admite porque no es posible obtener esta información de ese marco heredado. |
-| [**IToggleProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itoggleprovider)                              | Nunca.         | El botón de radio no puede recorrer cíclicamente su estado una vez que se ha establecido. El [patrón de](uiauto-implementingtoggle.md) control Toggle nunca debe ser compatible con un botón de radio.                                                                                                                                                                                                                                      |
+| [**ISelectionItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionitemprovider)                | Obligatorio      | Todos los controles de botón de radio deben admitir el patrón de control [SelectionItem](uiauto-implementingselectionitem.md) para poder seleccionarse.                                                                                                                                                                                                                                                             |
+| [**SelectionContainer**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-get_selectioncontainer) | Vea las notas.    | La [**propiedad SelectionContainer**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-get_selectioncontainer) siempre debe completarse para que un cliente Automatización de la interfaz de usuario pueda determinar qué otros botones de radio dentro de un contexto específico se relacionan entre sí. Para la versión De Microsoft Win32 del botón de radio, esta propiedad no se admite porque no es posible obtener esta información de ese marco heredado. |
+| [**IToggleProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itoggleprovider)                              | Nunca.         | El botón de radio no puede recorrer cíclicamente su estado una vez que se ha establecido. El [patrón de](uiauto-implementingtoggle.md) control Alternar nunca debe ser compatible con un botón de radio.                                                                                                                                                                                                                                      |
 
 
 
@@ -126,7 +126,7 @@ En la tabla siguiente se enumeran los Automatización de la interfaz de usuario 
 
 ## <a name="required-events"></a>Eventos necesarios
 
-En la tabla siguiente se enumeran los Automatización de la interfaz de usuario eventos que los controles de botón son necesarios para admitir. Para más información sobre los eventos, vea [UI Automation Events Overview](uiauto-eventsoverview.md).
+En la tabla siguiente se enumeran Automatización de la interfaz de usuario eventos que los controles de botón son necesarios para admitir. Para más información sobre los eventos, vea [UI Automation Events Overview](uiauto-eventsoverview.md).
 
 
 
@@ -136,7 +136,7 @@ En la tabla siguiente se enumeran los Automatización de la interfaz de usuario 
 | [**UIA \_ Evento de cambio de propiedad BoundingRectanglePropertyId.**](uiauto-automation-element-propids.md)   |                                                                                                                                |
 | [**UIA \_ Evento de cambio de propiedad IsEnabledPropertyId.**](uiauto-automation-element-propids.md)                   | Si el control admite la [**propiedad IsEnabled,**](uiauto-automation-element-propids.md) debe admitir este evento.       |
 | [**UIA \_ Evento de cambio de propiedad IsOffscreenPropertyId.**](uiauto-automation-element-propids.md)               | Si el control admite la [**propiedad IsOffscreen,**](uiauto-automation-element-propids.md) debe admitir este evento.     |
-| [**Elemento \_ SelectionItem \_ de UIARemovedFromSelectionEventId**](uiauto-event-ids.md) | Si el control admite el patrón de control [SelectionItem,](uiauto-implementingselectionitem.md) debe admitir este evento. |
+| [**Elemento \_ SelectionItem de \_ UIARemovedFromSelectionEventId**](uiauto-event-ids.md) | Si el control admite el patrón de control [SelectionItem,](uiauto-implementingselectionitem.md) debe admitir este evento. |
 | [**Elementos \_ SelectionItem \_ de UIASelectedEventId**](uiauto-event-ids.md)                         | Si el control admite el patrón de control [SelectionItem,](uiauto-implementingselectionitem.md) debe admitir este evento. |
 | [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                    |                                                                                                                                |
 

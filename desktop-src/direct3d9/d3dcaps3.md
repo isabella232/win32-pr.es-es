@@ -1,15 +1,15 @@
 ---
-description: Consulte una lista de las marcas de funcionalidad del controlador D3DCAPS3. Incluye las definiciones, valores y descripciones con vínculos a las API.
+description: Consulte una lista de las marcas de funcionalidad del controlador D3DCAPS3. Incluye las definiciones, los valores y las descripciones con vínculos a las API.
 ms.assetid: d9cd7388-3413-472d-aacb-0b8c9c60031a
 title: D3DCAPS3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b28614b2b2ea3c20f828b39f2b8926cb484a88c
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: b1389427826d65875bf89c42dd8e12776549da7f80f741e8de421b25c077026d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117911538"
 ---
 # <a name="d3dcaps3"></a>D3DCAPS3
 
@@ -32,7 +32,7 @@ Marcas de funcionalidad del controlador.
 <tr class="even">
 <td>D3DCAPS3_ALPHA_FULLSCREEN_FLIP_OR_DISCARD</td>
 <td>0x00000020L</td>
-<td>Indica que el dispositivo puede respetar el estado D3DRS_ALPHABLENDENABLE representación en modo de pantalla completa mientras se usa el efecto de intercambio FLIP o DISCARD. Esto solo se aplica cuando los estados D3DRS_SRCBLEND o D3DRS_DESTBLEND están establecidos en uno de los siguientes:
+<td>Indica que el dispositivo puede respetar el estado D3DRS_ALPHABLENDENABLE representación en modo de pantalla completa mientras se usa el efecto de intercambio FLIP o DISCARD. Esto solo se aplica cuando los D3DRS_SRCBLEND o D3DRS_DESTBLEND se establecen en uno de los siguientes:
 <ul>
 <li>D3DBLEND_DESTALPHA</li>
 <li>D3DBLEND_INVDESTALPHA</li>

@@ -1,26 +1,26 @@
 ---
-title: Atributo Chromakey de VML
-description: Atributo Chromakey de VML
+title: Atributo VmL Dekey
+description: Atributo VmL Dekey
 ms.assetid: 937ced3f-2e55-4a22-a9e0-83dc198104d4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22b69b10fe617de23783cf5e2e69b8b1a97b82fa
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5d279f31ff4910ceb121242f587aac88585dba2cfc8278320c0d86680f4f330b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999315"
 ---
-# <a name="vml-chromakey-attribute"></a>Atributo Chromakey de VML
+# <a name="vml-chromakey-attribute"></a>Atributo VmL Dekey
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define el valor de color de la imagen que se tratará como transparente. Lectura/escritura **VgColor**.
+Define el valor de color de la imagen que se tratará como transparente. Lectura/escritura **DvColor**.
 
 **Se aplica a**
 
@@ -28,23 +28,23 @@ Define el valor de color de la imagen que se tratará como transparente. Lectura
 
 **Sintaxis de etiquetas**
 
-<v: *Element* Chromakey = " *expresión* " >
+<v: *element* element elementkey=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . Chromakey = "*expresión*"
+*element* .elementkey="*expression*"
 
-*expresión* = de *elemento*. Chromakey
+*expresión* = *element*.element .element
 
 **Comentarios:**
 
-Use este atributo para que las partes de una imagen sean transparentes mediante la creación de una incrustación de la transparencia en un color específico. Por ejemplo, si hace que el valor de **Chromakey** sea **negro**, cualquier parte de la imagen que sea negra será transparente y el color de relleno se "mostrará a través" de esa parte de la imagen.
+Use este atributo para que las partes de una imagen se transparenten mediante la clave de la transparencia en un color específico. Por ejemplo, si hace que el valor **Dekey** sea **negro,** cualquier parte de la imagen que sea negra será transparente y el color de relleno "mostrará" esa parte de la imagen.
 
 *Atributo estándar de VML*
 
 **Ejemplo**
 
-En su lugar, las áreas de la imagen que son de negro sólido serán transparentes, lo que permite que el color de relleno verde se muestre a través de esas áreas.
+Las áreas de la imagen que son de color negro sólido se volverán transparentes, lo que permitirá que el color de relleno verde se muestre a través de esas áreas en su lugar.
 
 
 ```HTML
@@ -59,6 +59,6 @@ En su lugar, las áreas de la imagen que son de negro sólido serán transparent
 
 
 
- 
+ 
 
- 
+ 

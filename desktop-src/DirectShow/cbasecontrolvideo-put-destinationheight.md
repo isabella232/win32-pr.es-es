@@ -59,7 +59,7 @@ Devuelve un **valor HRESULT** que depende de la implementación; puede ser uno d
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | <dl> <dt>**E \_ FAIL**</dt> </dl>                | Error.<br/>                                                              |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>          | Argumento no válido.<br/>                                                     |
-| <dl> <dt>**PUNTERO \_ E**</dt> </dl>             | **Argumento de** puntero NULL.<br/>                                            |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>             | Argumento de puntero **NULL.**<br/>                                            |
 | <dl> <dt>**NOERROR**</dt> </dl>                | Correcto.<br/>                                                              |
 | <dl> <dt>**VFW \_ E \_ NO \_ CONECTADO**</dt> </dl> | No se puede realizar la operación porque los pines no están conectados.<br/> |
 
@@ -82,7 +82,7 @@ Una aplicación puede cambiar los rectángulos de origen y destino del vídeo a 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

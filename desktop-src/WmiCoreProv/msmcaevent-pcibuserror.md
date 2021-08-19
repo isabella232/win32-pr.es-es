@@ -42,9 +42,9 @@ ms.locfileid: "119051283"
 ---
 # <a name="msmcaevent_pcibuserror-class"></a>Clase PCIBusError de MSMCAEvent \_
 
-La **clase \_ PCIBusError de MSMCAEvent representa** un error de bus PCI de arquitectura de comprobación de máquina (MCA). Esta clase solo está disponible para equipos que se ejecutan en un sistema operativo de 64 Windows bits.
+La **clase \_ PCIBusError de MSMCAEvent representa** un error de bus PCI de machine check architecture (MCA). Esta clase solo está disponible para equipos que se ejecutan en un sistema operativo de 64 Windows bits.
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -76,13 +76,13 @@ class MSMCAEvent_PCIBusError : WMIEvent
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ PCIBusError de MSMCAEvent** tiene estos tipos de miembros:
+La **clase MSMCAEvent \_ PCIBusError** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ PCIBusError de MSMCAEvent** tiene estas propiedades.
+La **clase MSMCAEvent \_ PCIBusError** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -190,7 +190,7 @@ Tipo de acceso: solo lectura
 
 Memoria o dirección de E/S en el bus PCI en el momento del evento.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
@@ -205,7 +205,7 @@ Tipo de acceso: solo lectura
 
 Comando u operación de bus en el momento del evento.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
@@ -220,7 +220,7 @@ Tipo de acceso: solo lectura
 
 Datos en el bus PCI en el momento del evento.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
@@ -235,7 +235,7 @@ Tipo de acceso: solo lectura
 
 Estado del bus en el momento del error.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
@@ -269,7 +269,7 @@ Tipo de error de bus PCI.
 
 </dd> <dt>
 
-**BusNumber \_ \_ de id. \_ de PCI BUS**
+**PCI \_ BUS \_ ID \_ BusNumber**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint8**
@@ -282,7 +282,7 @@ Identificador designado para el bus PCI que encontró el error.
 
 </dd> <dt>
 
-**Id. \_ de PCI BUS \_ \_ SegmentNumber**
+**Id. de PCI \_ BUS \_ \_ SegmentNumber**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint8**
@@ -310,7 +310,7 @@ Para obtener más información sobre el **uso de valores uint64** en scripts, ve
 
 </dd> <dt>
 
-**IDENTIFICADOR \_ DEL RESPONDEDOR DE PCI \_ \_ BUS**
+**ID. \_ DE RESPONDEDOR DE PCI \_ \_ BUS**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint64**
@@ -334,7 +334,7 @@ Tipo de datos: **matriz uint8**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de bytes que contiene el registro de error sin formato presentado a Windows por la capa de abstracción del sistema (SAL). La propiedad Size especifica el número de elementos de la **matriz.**
+Matriz de bytes que contiene el registro de errores sin procesar presentado a Windows por la capa de abstracción del sistema (SAL). La propiedad Size especifica el número de elementos de la **matriz.**
 
 </dd> <dt>
 
@@ -400,10 +400,10 @@ Bits de validación usados para indicar la validez de los campos posteriores.
 | <dl> <dt>8 (0x8)</dt> </dl>      | PCI \_ BUS ADDRESS es \_ válido.<br/>           |
 | <dl> <dt>16 (0x10)</dt> </dl>    | PCI \_ BUS DATA es \_ válido.<br/>              |
 | <dl> <dt>32 (0x20)</dt> </dl>    | CMD de PCI \_ BUS \_ es válido.<br/>               |
-| <dl> <dt>64 (0x40)</dt> </dl>    | El identificador DEL SOLICITANTE DE PCI \_ BUS \_ es \_ válido.<br/>     |
+| <dl> <dt>64 (0x40)</dt> </dl>    | El identificador del SOLICITANTE de PCI \_ BUS \_ es \_ válido.<br/>     |
 | <dl> <dt>128 (0x80)</dt> </dl>   | El identificador del RESPONDEDOR de PCI \_ BUS es \_ \_ válido.<br/>     |
 | <dl> <dt>256 (0x100)</dt> </dl>  | El identificador de DESTINO de PCI \_ BUS \_ es \_ válido.<br/>        |
-| <dl> <dt>512 (0x200)</dt> </dl>  | El identificador de OEM de PCI \_ BUS \_ es \_ válido.<br/>           |
+| <dl> <dt>512 (0x200)</dt> </dl>  | El \_ identificador de OEM de PCI BUS es \_ \_ válido.<br/>           |
 | <dl> <dt>1024 (0x400)</dt> </dl> | La estructura DATA STRUCT de OEM de PCI \_ BUS es \_ \_ \_ válida.<br/> |
 
 
@@ -432,7 +432,7 @@ La **clase MSMCAEvent \_ PCIBusError** se deriva de [**WMIEvent**](wmievent.md).
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

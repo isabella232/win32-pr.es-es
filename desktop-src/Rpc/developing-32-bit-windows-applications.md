@@ -1,6 +1,6 @@
 ---
 title: Desarrollo de aplicaciones de Windows RPC
-description: Al instalar el Kit de desarrollo de software de plataforma (SDK), se instalan automáticamente el siguiente entorno de desarrollo RPC, las bibliotecas en tiempo de ejecución y las herramientas.
+description: Al instalar el Kit de desarrollo de software de plataforma (SDK), se instalan automáticamente el siguiente entorno de desarrollo rpc, las bibliotecas en tiempo de ejecución y las herramientas.
 ms.assetid: d5da3bca-5251-4ba4-b873-0817fe0f298d
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,25 +13,25 @@ ms.locfileid: "118930802"
 ---
 # <a name="developing-rpc-windows-applications"></a>Desarrollo de aplicaciones de Windows RPC
 
-Al instalar el Kit de desarrollo de software de plataforma (SDK), se instalan automáticamente el siguiente entorno de desarrollo RPC, las bibliotecas en tiempo de ejecución y las herramientas:
+Al instalar el Kit de desarrollo de software de plataforma (SDK), se instalan automáticamente el siguiente entorno de desarrollo rpc, las bibliotecas en tiempo de ejecución y las herramientas:
 
--   Encabezado del lenguaje C/C++ (. H) archivos
--   Archivos de bibliotecas de importación rpc (.lib)
+-   Encabezado del lenguaje C/C++ (. Archivos H)
+-   Archivos de bibliotecas de importación de RPC (.lib)
 -   Programas de ejemplo
--   Archivos de Ayuda de referencia rpc
+-   Archivos de Ayuda de referencia de RPC
 -   La **utilidad uuidgen**
 
-Al instalar Windows, se instala lo siguiente:
+Al instalar Windows, se instalan los siguientes elementos:
 
--   Archivos DLL en tiempo de ejecución de RPC
--   Localizador de Microsoft (no se admite en Windows Vista y versiones posteriores)
+-   ARCHIVOS DLL en tiempo de ejecución de RPC
+-   Localizador de Microsoft (no compatible con Windows Vista y versiones posteriores)
 -   Servicios de asignación de puntos de conexión RPC
 
-Las siguientes bibliotecas de importación rpc.
+Las siguientes bibliotecas de importación de RPC.
 
 
 
-| Importar biblioteca | Descripción                |
+| Biblioteca de importación | Descripción                |
 |----------------|----------------------------|
 | Rpcns4.lib     | Funciones de servicio de nombre     |
 | Rpcrt4.lib     | Windows en tiempo de ejecución |
@@ -55,12 +55,12 @@ Las siguientes bibliotecas RPC se incluyen para la compatibilidad de nivel infer
 | Rpclts1.dll          | Transporte de canalización con nombre del servidor | Windows NT, Windows 98, Windows 95 |
 | Rpcltc3.dll          | Transporte TCP/IP de cliente     | Windows NT, Windows 98, Windows 95 |
 | Rpclts3.dll          | Transporte TCP/IP del servidor     | Windows NT, Windows 98, Windows 95 |
-| Rpcltc5.dll          | Transporte netBIOS de cliente    | Windows NT, Windows 98, Windows 95 |
+| Rpcltc5.dll          | Transporte NetBIOS de cliente    | Windows NT, Windows 98, Windows 95 |
 | Rpclts5.dll          | Transporte NetBIOS del servidor    | Windows NT, Windows 98, Windows 95 |
 | Rpcltc6.dll          | Transporte de SPX de cliente        | Windows NT, Windows 98, Windows 95 |
 | Rpclts6.dll          | Transporte spx de servidor        | Windows NT, Windows 98, Windows 95 |
 | Rpcdgc6.dll          | Transporte IPX de cliente        | Windows NT                         |
-| Rpcdgs6.dll          | Transporte IPX del servidor        | Windows NT                         |
+| Rpcdgs6.dll          | Transporte IPX de servidor        | Windows NT                         |
 | Rpcdgc3.dll          | Transporte UDP de cliente        | Windows NT                         |
 | Rpcdgs3.dll          | Transporte UDP del servidor        | Windows NT                         |
 

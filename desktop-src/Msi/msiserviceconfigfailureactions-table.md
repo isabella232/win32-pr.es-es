@@ -127,7 +127,7 @@ Este campo contiene una matriz de valores enteros que especifican el tiempo en m
 <span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Componente\_
 </dt> <dd>
 
-Clave externa para la columna uno de la [tabla de componentes](component-table.md).
+Clave externa a la columna uno de la [tabla de componentes](component-table.md).
 
 </dd> </dl>
 

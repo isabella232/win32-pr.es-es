@@ -13,7 +13,7 @@ ms.locfileid: "117788060"
 ---
 # <a name="route-tables-and-route-table-entries"></a>Tablas de rutas y entradas de tabla de rutas
 
-**Windows Server 2003:** Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las nuevas aplicaciones deben usar la API de Routing Table Manager versión 2.
+**Windows Server 2003:** Esta API ha sido reemplazada por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las nuevas aplicaciones deben usar la API de Routing Table Manager versión 2.
 
 El administrador de tablas de enrutamiento mantiene tablas de rutas distintas para cada familia de protocolos. Actualmente, se proporciona compatibilidad explícita para las familias de protocolos de enrutamiento de Protocolo de Internet (IP) e Internet Packet Exchange (IPX). Independientemente de la familia de protocolos, cada entrada de ruta contiene la siguiente información:
 
@@ -26,7 +26,7 @@ El administrador de tablas de enrutamiento mantiene tablas de rutas distintas pa
 -   Datos específicos de la familia de protocolos. Estos datos son transparentes para RTMv1. Sin embargo, si estos datos cambian para una ruta designada como "mejor ruta", el administrador de tablas de enrutamiento envía una notificación de cambio de ruta.
 -   Datos específicos del protocolo de enrutamiento. Estos datos son completamente transparentes para el administrador de tablas de enrutamiento, ya que los cambios en estos datos no provocan una notificación de cambio de ruta.
 
-Los siguientes valores que se toman juntos identifican de forma única una ruta en la tabla de enrutamiento:
+Los siguientes valores tomados juntos identifican de forma única una ruta en la tabla de enrutamiento:
 
 -   Red de destino
 -   Identificador de protocolo

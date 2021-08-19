@@ -1,29 +1,29 @@
 ---
-description: ICE13 valida que los cuadros de diálogo de las tablas de secuencia aparecen en las tablas AdminUISequence o InstallUISequence. Los cuadros de diálogo no deben aparecer en las tablas InstallExecuteSequence, AdminExecuteSequence o AdvtExecuteSequence.
+description: ICE13 valida que los cuadros de diálogo de las tablas de secuencia aparezcan en las tablas AdminUISequence o InstallUISequence. Los diálogos no deben aparecer en las tablas InstallExecuteSequence, AdminExecuteSequence o AdvtExecuteSequence.
 ms.assetid: 51542a8f-2fb6-4021-b52d-6f7a2b0294d6
 title: ICE13
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fff440217ccffe41d5e4036f4ea0d03d1eabb0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8fdc11f8254c721d404a65e63fc897aa6e55bc61364c768b48f2d5aded4348d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118946639"
 ---
 # <a name="ice13"></a>ICE13
 
-ICE13 valida que los cuadros de diálogo de las tablas de secuencia aparecen en las tablas [AdminUISequence](adminuisequence-table.md)o [InstallUISequence](installuisequence-table.md) . Los cuadros de diálogo no deben aparecer en las tablas [InstallExecuteSequence](installexecutesequence-table.md), [AdminExecuteSequence](adminexecutesequence-table.md)o [AdvtExecuteSequence](advtexecutesequence-table.md) .
+ICE13 valida que los cuadros de diálogo de las tablas de secuencia aparezcan en las tablas [AdminUISequence](adminuisequence-table.md)o [InstallUISequence.](installuisequence-table.md) Los diálogos no deben aparecer en las tablas [InstallExecuteSequence,](installexecutesequence-table.md) [AdminExecuteSequence](adminexecutesequence-table.md)o [AdvtExecuteSequence.](advtexecutesequence-table.md)
 
 ## <a name="result"></a>Resultado
 
-ICE13 envía un mensaje de error si aparece un cuadro de diálogo en una tabla de secuencia de ejecución.
+ICE13 publica un mensaje de error si aparece un cuadro de diálogo en una tabla de secuencia de ejecución.
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente, ICE13 envía un mensaje de error que indica que no se puede enumerar ' WelcomeDialog ' en la tabla ' InstallExecuteSequence '.
+En el ejemplo siguiente, ICE13 publica un mensaje de error que indica que "WelcomeDialog" no se puede enumerar en la tabla "InstallExecuteSequence".
 
-[Tabla InstallExecuteSequence](installexecutesequence-table.md) (parcial)
+[InstallExecuteSequence Table](installexecutesequence-table.md) (parcial)
 
 
 
@@ -51,7 +51,7 @@ En el ejemplo siguiente, ICE13 envía un mensaje de error que indica que no se p
 
  
 
-[Tabla de cuadro de diálogo](dialog-table.md) (parcial)
+[Tabla de diálogos](dialog-table.md) (parcial)
 
 
 

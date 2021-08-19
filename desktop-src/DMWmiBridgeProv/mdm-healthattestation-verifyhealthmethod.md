@@ -1,11 +1,11 @@
 ---
 title: Método VerifyHealthMethod de la MDM_HealthAttestation clase
-description: Método para notificar al dispositivo que prepare una solicitud de comprobación de certificado de mantenimiento. Consulte también VerifyHealth.
+description: Método para notificar al dispositivo que prepare una solicitud de comprobación del certificado de mantenimiento. Consulte también VerifyHealth.
 ms.assetid: f5b11081-c664-4525-8f36-5f17c21e7f22
 keywords:
 - Método VerifyHealthMethod
 - Método VerifyHealthMethod, MDM_HealthAttestation clase
-- MDM_HealthAttestation, método VerifyHealthMethod
+- MDM_HealthAttestation clase, método VerifyHealthMethod
 topic_type:
 - apiref
 api_name:
@@ -23,11 +23,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119077219"
 ---
-# <a name="verifyhealthmethod-method-of-the-mdm_healthattestation-class"></a>Método VerifyHealthMethod de la \_ clase Mdm HealthAttestation
+# <a name="verifyhealthmethod-method-of-the-mdm_healthattestation-class"></a>Método VerifyHealthMethod de la clase \_ HealthAttestation de MDM
 
 \[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Método para notificar al dispositivo que prepare una solicitud de comprobación de certificado de mantenimiento. Consulte también [VerifyHealth](/windows/client-management/mdm/healthattestation-csp).
+Método para notificar al dispositivo que prepare una solicitud de comprobación del certificado de mantenimiento. Consulte también [VerifyHealth](/windows/client-management/mdm/healthattestation-csp).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,14 +56,14 @@ Este método no tiene parámetros.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [**MDM \_ HealthAttestation**](mdm-healthattestation.md)
 </dt> <dt>
 
-[Uso de scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripts de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

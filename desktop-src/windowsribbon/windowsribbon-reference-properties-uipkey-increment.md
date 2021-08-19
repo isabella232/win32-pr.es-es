@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118438070"
 ---
-# <a name="ui_pkey_increment"></a>UI \_ PKEY \_ Increment
+# <a name="ui_pkey_increment"></a>Incremento \_ PKEY de la \_ interfaz de usuario
 
 Identifica la propiedad ui \_ PKEY \_ Increment.
 
@@ -27,7 +27,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentarios
 
-El incremento PKEY de la interfaz de usuario lo usa una aplicación para consultar cuánto aumenta o disminuye el valor del campo de edición del control Spinner cuando se hace clic en el botón de incremento o \_ \_ decremento. [](windowsribbon-controls-spinner.md)
+Una aplicación usa ui PKEY Increment para consultar cuánto aumenta o disminuye el valor del campo de edición del control Spinner cuando se hace clic en el botón de incremento o \_ \_ decremento. [](windowsribbon-controls-spinner.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

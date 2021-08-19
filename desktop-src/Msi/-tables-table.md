@@ -1,5 +1,5 @@
 ---
-description: La \_ tabla Tablas es una tabla del sistema de solo lectura que enumera todas las tablas de la base de datos. Consulte esta tabla para averiguar si existe una tabla.
+description: La tabla Tablas es una tabla del sistema de \_ solo lectura que enumera todas las tablas de la base de datos. Consulte esta tabla para averiguar si existe una tabla.
 ms.assetid: d064855b-8c10-476e-9570-cc3ab48ae998
 title: _Tables tabla
 ms.topic: article
@@ -13,9 +13,9 @@ ms.locfileid: "119013323"
 ---
 # <a name="_tables-table"></a>\_Tabla de tablas
 
-La \_ tabla Tablas es una tabla del sistema de solo lectura que enumera todas las tablas de la base de datos. Consulte esta tabla para averiguar si existe una tabla.
+La tabla Tablas es una tabla del sistema de \_ solo lectura que enumera todas las tablas de la base de datos. Consulte esta tabla para averiguar si existe una tabla.
 
-La \_ Tabla de tablas tiene la columna siguiente.
+La \_ tabla tablas tiene la columna siguiente.
 
 
 
@@ -40,7 +40,7 @@ Nombre de una de las tablas.
 
 ## <a name="remarks"></a>Comentarios
 
-Dado que la tabla Tables es una tabla del sistema que no se puede modificar mediante consultas SQL, no se pueden obtener las claves principales con la función \_ [**MsiDatabaseGetPrimaryKeys**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegetprimarykeysa) o la [**propiedad PrimaryKeys**](database-primarykeys.md).
+Dado que la tabla Tables es una tabla del sistema que no se puede modificar a través de consultas SQL, no se pueden obtener las claves principales con la función \_ [**MsiDatabaseGetPrimaryKeys**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegetprimarykeysa) o la [**propiedad PrimaryKeys**](database-primarykeys.md).
 
  
 

@@ -1,5 +1,5 @@
 ---
-description: Orientación del boundingFrustum representado como cuaternión.
+description: Orientación de BoundingFrustum representada como cuaternión.
 ms.assetid: 080ac6f5-aa1d-47ce-804a-f1beb113b769
 title: BoundingFrustum.Orientation (DirectXCollision.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118985065"
 ---
 # <a name="boundingfrustumorientation"></a>BoundingFrustum.Orientation
 
-Orientación del [**boundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) representado como cuaternión.
+Orientación de [**BoundingFrustum representada**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) como cuaternión.
 
 
 ```C++
@@ -39,7 +39,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK Windows p
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

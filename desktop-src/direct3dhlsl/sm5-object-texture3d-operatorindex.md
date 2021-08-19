@@ -49,17 +49,17 @@ Posición del índice. Contiene las coordenadas (x, y, z).
 
 Tipo: **R**
 
-Variable de recurso de solo lectura.
+Una variable de recurso de solo lectura.
 
 ## <a name="remarks"></a>Comentarios
 
-Este método siempre tiene acceso al primer nivel de mip. Para especificar otros niveles de mip, use [**el operador \[ \] \[ \] mip.operator**](sm5-object-texture3d-mipsoperatorindex.md) en su lugar.
+Este método siempre tiene acceso al primer nivel de mip. Para especificar otros niveles de mip, use en su [**lugar \[ \] \[ \] mip.operator.**](sm5-object-texture3d-mipsoperatorindex.md)
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -67,14 +67,14 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Texture3D](sm5-object-texture3d.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

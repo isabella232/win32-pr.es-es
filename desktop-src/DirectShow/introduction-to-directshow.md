@@ -4,18 +4,18 @@ ms.assetid: 39a701b3-2633-426f-9733-2172ad3ea372
 title: Introducción a DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5706ff0dec34c5db3762f5782f96804e5c85e889
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 51cd4dc2a75233c519c4ca3d5db213451b097c0528ab782109da611b6e35aca7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111827229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952584"
 ---
 # <a name="introduction-to-directshow"></a>Introducción a DirectShow
 
-Microsoft® DirectShow® es una arquitectura para los medios de streaming en la plataforma microsoft windows®. DirectShow proporciona captura y reproducción de alta calidad de secuencias multimedia. Admite una amplia variedad de formatos, incluidos advanced systems format (ASF), motion picture experts group (MPEG), Audio-Video Interleaved (AVI), MPEG Audio Layer-3 (MP3) y archivos de sonido WAV. Admite la captura desde dispositivos digitales y análogos basados en Modelo de controlador de Windows (WDM) o Video para Windows. Detecta y usa automáticamente hardware de aceleración de vídeo y audio cuando está disponible, pero también admite sistemas sin hardware de aceleración.
+Microsoft® DirectShow® es una arquitectura para los medios de streaming en la plataforma Windows® Microsoft. DirectShow proporciona captura y reproducción de alta calidad de secuencias multimedia. Admite una amplia variedad de formatos, incluidos Advanced Systems Format (ASF), Motion Picture Experts Group (MPEG), Audio-Video Interleaved (AVI), MPEG Audio Layer-3 (MP3) y archivos de sonido WAV. Admite la captura desde dispositivos digitales y análogos basados en Windows Driver Model (WDM) o Video para Windows. Detecta y usa automáticamente hardware de aceleración de vídeo y audio cuando está disponible, pero también admite sistemas sin hardware de aceleración.
 
-DirectShow se basa en el modelo de objetos componentes (COM). Para escribir una aplicación o componente de DirectShow, debe comprender la programación del cliente COM. Para la mayoría de las aplicaciones, no es necesario implementar sus propios objetos COM. DirectShow proporciona los componentes que necesita. Sin embargo, si desea extender DirectShow escribiendo sus propios componentes, debe implementarlos como objetos COM.
+DirectShow se basa en el modelo de objetos componentes (COM). Para escribir una DirectShow o componente, debe comprender la programación del cliente COM. Para la mayoría de las aplicaciones, no es necesario implementar sus propios objetos COM. DirectShow proporciona los componentes que necesita. Sin embargo, si desea ampliar DirectShow escribir sus propios componentes, debe implementarlos como objetos COM.
 
 DirectShow está diseñado para C++. Microsoft no proporciona una API administrada para DirectShow.
 
@@ -27,7 +27,7 @@ Esta sección contiene los siguientes temas:
 
 -   [Novedades de DirectShow](whats-new-in-directshow.md)
 -   [Formatos admitidos en DirectShow](supported-formats-in-directshow.md)
--   [Preguntas más frecuentes sobre DirectShow](directshow-faq.yml)
+-   [DirectShow Preguntas más frecuentes](directshow-faq.yml)
 
 ## <a name="related-topics"></a>Temas relacionados
 

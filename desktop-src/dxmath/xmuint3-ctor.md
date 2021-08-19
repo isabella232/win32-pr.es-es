@@ -49,7 +49,7 @@ Este constructor solo está disponible en C++.
 </tr>
 <tr class="even">
 <td style="text-align: left;">[<strong>XMUINT3 (const uint32_t*)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmuint3-xmuint3(constuint32_t))</td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUINT3</code> partir de un argumento de matriz de tres <code>uint32_t</code> elementos.<br/> Este constructor inicializa una nueva instancia de [<strong>XMUINT3</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint3) a partir de un argumento de matriz de tres <code>uint32_t</code> elementos.<br/>
+<td style="text-align: left;">Inicializa una nueva instancia de a partir <code>XMUINT3</code> de un argumento de matriz de tres <code>uint32_t</code> elementos.<br/> Este constructor inicializa una nueva instancia de [<strong>XMUINT3</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint3) a partir de un argumento de matriz de tres <code>uint32_t</code> elementos.<br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -58,7 +58,7 @@ Este constructor solo está disponible en C++.
 </tr>
 <tr class="odd">
 <td style="text-align: left;">[<strong>XMUINT3 (uint32_t,uint32_t,uint32_t)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmuint3-xmuint3(uint32_t_uint32_t_uint32_t))</td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUINT3</code> partir de <code>uint32_t</code> tres argumentos.<br/> Este constructor inicializa una nueva instancia de [<strong>XMUINT3</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint3) a partir de tres <code>uint32_t</code> argumentos.<br/>
+<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUINT3</code> partir de tres <code>uint32_t</code> argumentos.<br/> Este constructor inicializa una nueva instancia de [<strong>XMUINT3</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint3) a partir de tres <code>uint32_t</code> argumentos.<br/>
 <blockquote>
 [!Note]<br />
 Este constructor solo está disponible en C++.
@@ -80,7 +80,7 @@ Este constructor solo está disponible en C++.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

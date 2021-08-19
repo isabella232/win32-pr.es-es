@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119003153"
 ---
-# <a name="linecallselect_-constants"></a>LINECALLSELECT \_ (Constantes)
+# <a name="linecallselect_-constants"></a>Constantes \_ LINECALLSELECT
 
 Las constantes de marca de bits **LINECALLSELECT \_** describen qué llamadas se van a seleccionar.
 
@@ -42,7 +42,7 @@ Selecciona las llamadas relacionadas a la llamada especificada. Por ejemplo, las
 
 
 
-Selecciona las llamadas relacionadas al identificador de llamada especificado. Esta marca solo se expone a las aplicaciones que negocian una versión tapi de la versión 3.0 o posterior.
+Selecciona las llamadas relacionadas al identificador de llamada especificado. Esta marca solo se expone a las aplicaciones que negocian una versión TAPI de 3.0 o superior.
 
 
 </dt> </dl> </dd> <dt>
@@ -52,7 +52,7 @@ Selecciona las llamadas relacionadas al identificador de llamada especificado. E
 
 
 
-Selecciona las llamadas en el identificador de dispositivo especificado. Esta marca solo se expone a las aplicaciones que negocian una versión tapi de la versión 2.1 o posterior. Las aplicaciones deben considerar el uso de la constante LINECALLSELECT \_ LINE en lugar de esta.
+Selecciona las llamadas en el identificador de dispositivo especificado. Esta marca solo se expone a las aplicaciones que negocian una versión tapi de la versión 2.1 o superior. Las aplicaciones deben considerar el uso de la constante LINECALLSELECT \_ LINE en lugar de esta.
 
 
 </dt> </dl> </dd> <dt>
@@ -77,7 +77,7 @@ Esta constante se usa en [**lineGetNewCalls**](/windows/desktop/api/Tapi/nf-tapi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
 | Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |

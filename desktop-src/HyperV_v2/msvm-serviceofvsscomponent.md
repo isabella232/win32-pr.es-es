@@ -87,7 +87,7 @@ Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) \_ ("
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
@@ -97,7 +97,7 @@ Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) \_ ("
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

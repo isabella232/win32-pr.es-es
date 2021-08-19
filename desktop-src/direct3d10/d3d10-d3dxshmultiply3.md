@@ -1,5 +1,5 @@
 ---
-description: Calcula el producto de dos funciones armónicas esféricas (f y g). Ambas funciones son del orden N = 3.
+description: Calcula el producto de dos funciones de armónicas esféricas (f y g). Ambas funciones tienen el orden N = 3.
 ms.assetid: 2845f90f-c8a0-4ca9-b2f6-7491a2b4763b
 title: Función D3DXSHMultiply3 (D3DX10Math.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118990815"
 ---
 # <a name="d3dxshmultiply3-function"></a>Función D3DXSHMultiply3
 
-Calcula el producto de dos funciones armónicas esféricas *(f* y *g*). Ambas funciones son del orden N = 3.
+Calcula el producto de dos funciones de armónicas esféricas (*f* y *g*). Ambas funciones tienen el orden N = 3.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ FLOAT* D3DXSHMultiply3(
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a los coeficientes SH de salida: la función base *Y* lm se almacena en lntes + *m* + l. El orden *N* determina la longitud de la matriz, donde siempre debe haber *N* coeficientes ntes.
+Puntero a los coeficientes sh de salida: la función base *Y* lm se almacena en lntes + *m* + l. El orden *N* determina la longitud de la matriz, donde siempre debe haber *N* coeficientes mientos.
 
 </dd> <dt>
 
@@ -56,7 +56,7 @@ Puntero a los coeficientes SH de salida: la función base *Y* lm se almacena en 
 
 Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Coeficientes SH de entrada para la primera función.
+Coeficientes sh de entrada para la primera función.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Coeficientes SH de entrada para la primera función.
 
 Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Segundo conjunto de coeficientes SH de entrada.
+Segundo conjunto de coeficientes sh de entrada.
 
 </dd> </dl>
 
@@ -79,7 +79,7 @@ Puntero a coeficientes de salida sh.
 
 El producto de dos funciones SH del orden N = 3 genera una función SH del orden 2 × *N* - 1 = 5, pero los resultados se truncan. Esto significa que el producto se desplaza ( *f* × *g* g × f ) pero no se asocia  =   ( *f* × ( *g* × *h* ) ≠ ( *f* × *g* ) × *h* ). 
 
-Esta función usa la siguiente ecuación:
+Esta función usa la ecuación siguiente:
 
 
 ```
@@ -108,7 +108,7 @@ sum_i(y_i(s)*c_i)
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

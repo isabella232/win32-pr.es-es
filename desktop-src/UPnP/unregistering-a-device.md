@@ -4,36 +4,36 @@ description: Use el método IUPnPRegistrar UnregisterDevice para anular el regis
 ms.assetid: 4f7624e3-4d60-406d-8521-1dfc9aee4408
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b4c480433e3d8dbf4ff823728281018801ec35c1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 85ff8eeb99ec0ba697c301e8cc15100bd06c0323b95f4099329c46729ceba9c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104486995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999495"
 ---
 # <a name="unregistering-a-device"></a>Anulación del registro de un dispositivo
 
-Use el método [**IUPnPRegistrar:: UnregisterDevice**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-unregisterdevice) para anular el registro de un dispositivo. Se puede anular el registro del dispositivo (quitado del host del dispositivo) de forma temporal o permanente, en función del valor de *fPermanent*. Los desarrolladores deben quitar temporalmente los dispositivos si los dispositivos se van a volver a registrar y los dispositivos deben usar el mismo UDN. De lo contrario, los dispositivos se quitan de forma permanente.
+Use el [**método IUPnPRegistrar::UnregisterDevice**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-unregisterdevice) para anular el registro de un dispositivo. El dispositivo se puede anular del registro (quitarse del host del dispositivo) de forma temporal o permanente, según el valor *de fPermanent*. Los desarrolladores deben quitar los dispositivos temporalmente si se volverán a registrar los dispositivos y los dispositivos deben usar la misma UDN. De lo contrario, los dispositivos se quitan permanentemente.
 
-El GUID que se usa para anular el registro no es UDN. Debe usar el identificador devuelto por [**IUPnPRegistrar:: RegisterDevice**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-registerdevice) o [**IUPnPRegistrar:: RegisterRunningDevice**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-registerrunningdevice).
-
-> [!Note]  
-> Puede liberar el objeto [**IUPnPRegistrar**](/windows/desktop/api/Upnphost/nn-upnphost-iupnpregistrar) . Solo el identificador debe almacenarse en caché.
-
- 
-
-Si *fPermanent* es **false**, el dispositivo se quita temporalmente. Use la interfaz [**IUPnPReregistrar**](/windows/desktop/api/Upnphost/nn-upnphost-iupnpreregistrar) para volver a registrar el dispositivo. Los métodos [**IUPnPReregistrar:: ReregisterDevice**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpreregistrar-reregisterdevice) y [**IUPnPReregistrar:: ReregisterRunningDevice**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpreregistrar-reregisterrunningdevice) usan el mismo UDN o UDNs, en el caso de los dispositivos anidados, generados anteriormente por el host del dispositivo para el dispositivo no registrado.
-
-Si *fPermanent* es **true**, el dispositivo se quita de forma permanente del host del dispositivo. Al registrar este dispositivo de nuevo en el mismo equipo, se crea un UDN diferente del que se creó anteriormente.
+El GUID que se usa para anular el registro no es el UDN. Debe usar el identificador devuelto por [**IUPnPRegistrar::RegisterDevice**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-registerdevice) o [**IUPnPRegistrar::RegisterRunningDevice**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpregistrar-registerrunningdevice).
 
 > [!Note]  
-> Cuando un dispositivo se registra varias veces en el mismo equipo, el host del dispositivo genera UDNs diferentes para cada instancia del dispositivo.
+> Puede liberar el [**objeto IUPnPRegistrar.**](/windows/desktop/api/Upnphost/nn-upnphost-iupnpregistrar) Solo se debe almacenar en caché el identificador.
 
- 
+ 
 
- 
+Si *fPermanent* es **FALSE,** el dispositivo se quita temporalmente. Use [**la interfaz IUPnPReregistrar**](/windows/desktop/api/Upnphost/nn-upnphost-iupnpreregistrar) para volver a registrar el dispositivo. Los métodos [**IUPnPReregistrar::ReregisterDevice**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpreregistrar-reregisterdevice) e [**IUPnPReregistrar::ReregisterRunningDevice**](/windows/desktop/api/Upnphost/nf-upnphost-iupnpreregistrar-reregisterrunningdevice) usan los mismos UDN o UDN, en el caso de dispositivos anidados, generados previamente por el host de dispositivo para el dispositivo no registrado.
 
- 
+Si *fPermanent* es **TRUE,** el dispositivo se quita permanentemente del host del dispositivo. Al volver a registrar este dispositivo en el mismo equipo, se crea una UDN diferente a la creada anteriormente.
+
+> [!Note]  
+> Cuando un dispositivo se registra varias veces en el mismo equipo, el host del dispositivo genera diferentes UDN para cada instancia del dispositivo.
+
+ 
+
+ 
+
+ 
 
 
 

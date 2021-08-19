@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMLicenseManagement ProcessLicenseDeletionMessage (wmdrmsdk. h)
+title: Método IWMDRMLicenseManagement ProcessLicenseDeletionMessage (Wmdrmsdk.h)
 description: El método ProcessLicenseDeletion elimina una licencia que se importó para el contenido protegido originalmente con otro sistema de protección de contenido.
 ms.assetid: 478dd156-feb8-4eda-9d3a-35db3e65c227
 keywords:
-- Método ProcessLicenseDeletionMessage formato de Windows Media
-- Método ProcessLicenseDeletionMessage formato de Windows Media, interfaz IWMDRMLicenseManagement
-- Interfaz IWMDRMLicenseManagement formato de Windows Media, método ProcessLicenseDeletionMessage
+- Formato multimedia del método ProcessLicenseDeletionMessage
+- Método ProcessLicenseDeletionMessage windows Media Format , interfaz IWMDRMLicenseManagement
+- IWMDRMLicenseManagement interfaz windows Media Format , ProcessLicenseDeletionMessage (método)
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9338c1bc4ef78e658cc25ab95f5c50556af3ed09
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c369be95314ceaf3c4babce9dacd962fd3391d4f39f8988ef56f51fb3133aee9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027593"
 ---
-# <a name="iwmdrmlicensemanagementprocesslicensedeletionmessage-method"></a>IWMDRMLicenseManagement::P método rocessLicenseDeletionMessage
+# <a name="iwmdrmlicensemanagementprocesslicensedeletionmessage-method"></a>Método IWMDRMLicenseManagement::P rocessLicenseDeletionMessage
 
-El método **ProcessLicenseDeletion** elimina una licencia que se importó para el contenido protegido originalmente con otro sistema de protección de contenido.
+El **método ProcessLicenseDeletion** elimina una licencia que se importó para el contenido protegido originalmente con otro sistema de protección de contenido.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,22 +42,22 @@ HRESULT ProcessLicenseDeletionMessage(
 
 <dl> <dt>
 
-*bstrDeletionMessage* \[ de\]
+*bstrDeletionMessage* \[ En\]
 </dt> <dd>
 
-Mensaje que identifica la licencia que se va a eliminar.
+Mensaje que identifica la licencia que se debe eliminar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -73,7 +73,7 @@ Ninguno.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -81,7 +81,7 @@ Ninguno.
 
 <dl> <dt>
 
-[**Interfaz IWMDRMLicenseManagement**](iwmdrmlicensemanagement.md)
+[**IWMDRMLicenseManagement (interfaz)**](iwmdrmlicensemanagement.md)
 </dt> </dl>
 
  

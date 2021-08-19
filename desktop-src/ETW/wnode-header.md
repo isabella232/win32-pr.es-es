@@ -144,14 +144,14 @@ Puede especificar uno de los siguientes valores.
 </colgroup>
 <thead>
 <tr class="header">
-<th>Valor</th>
+<th>Value</th>
 <th>Significado</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><dl> <dt>1</dt> </dl></td>
-<td>Contador de rendimiento de consultas (QPC). El contador QPC proporciona una marca de tiempo de alta resolución que no se ve afectada por los ajustes en el reloj del sistema. La marca de tiempo almacenada en el evento es equivalente al valor devuelto por la API QueryPerformanceCounter. Para obtener más información sobre las características de esta marca de tiempo, vea Adquisición de marcas <a href="/windows/win32/sysinfo/acquiring-high-resolution-time-stamps">de tiempo de alta resolución.</a><br/> Debe usar esta resolución si tiene altas tasas de eventos o si el consumidor combina eventos de distintos búferes. En estos casos, la precisión y la estabilidad de la marca de tiempo QPC permiten una mayor precisión a la hora de ordenar los eventos de distintos búferes. Sin embargo, la marca de tiempo QPC no reflejará las actualizaciones del reloj del sistema, por ejemplo, si el reloj del sistema se ajusta hacia delante debido a la sincronización con un servidor NTP mientras el seguimiento está en curso, las marcas de tiempo de QPC en el seguimiento seguirán reflejando la hora como si no se hubiera producido ninguna actualización.<br/> Para determinar la resolución, use el <strong>miembro PerfFreq</strong> <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>de TRACE_LOGFILE_HEADER</strong></a> al consumir el evento.<br/> Para convertir la marca de tiempo de un evento en unidades de 100 ns, use la siguiente fórmula de conversión: <br/> scaledTimestamp = eventRecord.EventHeader.TimeStamp.QuadPart * 10000000.0 / logfileHeader.PerfFreq.QuadPart<br/> Tenga en cuenta que, en equipos anteriores, es posible que la marca de tiempo no sea precisa porque el contador a veces se omite debido a errores de hardware.<br/></td>
+<td>Contador de rendimiento de consultas (QPC). El contador QPC proporciona una marca de tiempo de alta resolución que no se ve afectada por los ajustes en el reloj del sistema. La marca de tiempo almacenada en el evento es equivalente al valor devuelto por la API QueryPerformanceCounter. Para obtener más información sobre las características de esta marca de tiempo, vea Adquisición de marcas <a href="/windows/win32/sysinfo/acquiring-high-resolution-time-stamps">de tiempo de alta resolución.</a><br/> Debe usar esta resolución si tiene altas tasas de eventos o si el consumidor combina eventos de distintos búferes. En estos casos, la precisión y la estabilidad de la marca de tiempo QPC permiten una mayor precisión a la hora de ordenar los eventos de distintos búferes. Sin embargo, la marca de tiempo QPC no reflejará las actualizaciones del reloj del sistema, por ejemplo, si el reloj del sistema se ajusta hacia delante debido a la sincronización con un servidor NTP mientras el seguimiento está en curso, las marcas de tiempo de QPC del seguimiento seguirán reflejando la hora como si no se hubiera producido ninguna actualización.<br/> Para determinar la resolución, use el <strong>miembro PerfFreq</strong> de <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>TRACE_LOGFILE_HEADER</strong></a> al consumir el evento.<br/> Para convertir la marca de tiempo de un evento en unidades de 100 ns, use la siguiente fórmula de conversión: <br/> scaledTimestamp = eventRecord.EventHeader.TimeStamp.QuadPart * 10000000.0 / logfileHeader.PerfFreq.QuadPart<br/> Tenga en cuenta que, en equipos anteriores, es posible que la marca de tiempo no sea precisa porque el contador a veces se omite debido a errores de hardware.<br/></td>
 </tr>
 <tr class="even">
 <td><dl> <dt>2</dt> </dl></td>
@@ -203,7 +203,7 @@ c. Si ReservedFlags == 3 (contador de ciclo de CPU): DOUBLE timeStampScale = 10.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                   |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                         |
@@ -211,7 +211,7 @@ c. Si ReservedFlags == 3 (contador de ciclo de CPU): DOUBLE timeStampScale = 10.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

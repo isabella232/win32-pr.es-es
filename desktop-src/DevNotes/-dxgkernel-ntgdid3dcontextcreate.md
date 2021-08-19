@@ -58,7 +58,7 @@ Identificador de una [**estructura \_ \_ LOCAL de DD SURFACE**](/windows/win32/a
 
 </dd> <dt>
 
-*h PaddleZ* \[ En\]
+*h Explanz* \[ En\]
 </dt> <dd>
 
 Identificador de una [**estructura \_ \_ LOCAL de DD SURFACE**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_local) que describe la superficie de DirectDraw que se va a usar como búfer de profundidad. Si este miembro es **NULL,** no se realizará ningún almacenamiento en búfer de profundidad.
@@ -91,7 +91,7 @@ Puntero a una [**estructura D3DN MOUSE \_ CONTEXTCREATEDATA**](/windows-hardware
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
@@ -99,7 +99,7 @@ Puntero a una [**estructura D3DN MOUSE \_ CONTEXTCREATEDATA**](/windows-hardware
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

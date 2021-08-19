@@ -17,7 +17,7 @@ Se genera cuando el [**método IMFMediaSession::Close**](/windows/desktop/api/mf
 
 ## <a name="event-values"></a>Valores de evento
 
-Entre los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) se incluyen los siguientes.
+Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluyen lo siguiente.
 
 
 
@@ -31,7 +31,7 @@ Entre los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
@@ -39,7 +39,7 @@ Entre los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

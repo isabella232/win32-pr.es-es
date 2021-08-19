@@ -22,11 +22,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118950304"
 ---
-# <a name="msvm_snapshotofvirtualsystem-class"></a>Clase \_ SnapshotOfVirtualSystem de Msvm
+# <a name="msvm_snapshotofvirtualsystem-class"></a>Clase Msvm \_ SnapshotOfVirtualSystem
 
 Asocia un sistema virtual a una instantánea que se capturó del sistema virtual.
 
-La sintaxis siguiente se simplifica Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -81,7 +81,7 @@ Referencia a una instancia de la clase [**Msvm \_ VirtualSystemSettingData**](ms
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
@@ -91,7 +91,7 @@ Referencia a una instancia de la clase [**Msvm \_ VirtualSystemSettingData**](ms
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

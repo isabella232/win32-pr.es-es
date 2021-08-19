@@ -45,7 +45,7 @@ Miembro de la [**enumeración InkShiftKeyModifierFlags,**](/windows/desktop/api/
 
 
 
-| Valor                                                                                                                                                                                     | Significado                                                          |
+| Value                                                                                                                                                                                     | Significado                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
 | <span id="IKM_Shift"></span><span id="ikm_shift"></span><span id="IKM_SHIFT"></span><dl> <dt>**Desplazamiento \_ de IKM**</dt> </dl>             | Especifica que la tecla MAYÚS se usó como modificador. <br/> |
 | <span id="IKM_Control_"></span><span id="ikm_control_"></span><span id="IKM_CONTROL_"></span><dl> <dt>**IKM \_ Control**</dt> </dl> | Especifica que la tecla CTRL se usó como modificador. <br/>  |
@@ -69,7 +69,7 @@ Este método de evento se define en la **\_ interfaz IInkEditEvents.** La **\_ i
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
@@ -78,7 +78,7 @@ Este método de evento se define en la **\_ interfaz IInkEditEvents.** La **\_ i
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

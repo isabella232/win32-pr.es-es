@@ -3,8 +3,8 @@ title: Elemento ScheduleByWeek (calendarTriggerType)
 description: Especifica una programación semanal.
 ms.assetid: d2c33e76-0564-4b3c-ab86-e7bca667fa4f
 keywords:
-- Programador de tareas de desencadenador semanal, elemento XML
-- Programador de tareas del elemento ScheduleByWeek
+- desencadenador semanal Programador de tareas elemento , XML
+- Elemento ScheduleByWeek Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2d5ab62a0c39c4c1d0102edcdb96d310e9315820
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ddf37c6261ba28c4cb4f59c47ee8ebd8c09afc4e36c3d1aa218efe8caa81e8c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002283"
 ---
 # <a name="schedulebyweek-calendartriggertype-element"></a>Elemento ScheduleByWeek (calendarTriggerType)
 
-Especifica una programación semanal. Por ejemplo, la tarea comienza a las 8:00 A.M. en un día concreto de la semana cada semana o en un día concreto de la semana, cada dos semanas.
+Especifica una programación semanal. Por ejemplo, la tarea se inicia a las 8:00 a. m. en un día específico de la semana cada semana o en un día específico de la semana cada dos semanas.
 
 ``` syntax
 <xs:element name="ScheduleByWeek"
@@ -31,7 +31,7 @@ Especifica una programación semanal. Por ejemplo, la tarea comienza a las 8:00 
  />
 ```
 
-El elemento **ScheduleByWeek** se define mediante el tipo complejo de [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) .
+El tipo complejo [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) define el elemento **ScheduleByWeek.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -39,7 +39,7 @@ El elemento **ScheduleByWeek** se define mediante el tipo complejo de [**calenda
 
 | Elemento                                                                             | Derivado de                                                                       | Descripción                                                                                |
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Especifica un desencadenador de día de la semana (DOW) diario, semanal, mensual o mensual.<br/> |
+| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Especifica un desencadenador diario, semanal, mensual o mensual del día de la semana (DOW).<br/> |
 
 
 
@@ -54,19 +54,19 @@ El elemento **ScheduleByWeek** se define mediante el tipo complejo de [**calenda
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los elementos secundarios enumerados anteriormente se definen mediante los tipos de elementos complejos de [**weeklyScheduleType**](taskschedulerschema-weeklyscheduletype-complextype.md) .
+Los elementos secundarios enumerados anteriormente se definen mediante los tipos de elementos complejos [**weeklyScheduleType.**](taskschedulerschema-weeklyscheduletype-complextype.md)
 
-La hora del día en que se inicia la tarea se establece mediante el elemento [**StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md) .
+El elemento [**StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md) establece la hora del día en que se inicia la tarea.
 
-Para el desarrollo de scripting, se especifica un desencadenador semanal mediante el objeto [**WeeklyTrigger**](weeklytrigger.md) .
+Para el desarrollo de scripting, se especifica un desencadenador semanal mediante el [**objeto WeeklyTrigger.**](weeklytrigger.md)
 
-En el desarrollo de C++, se especifica un desencadenador semanal mediante la interfaz [**IWeeklyTrigger**](/windows/desktop/api/taskschd/nn-taskschd-iweeklytrigger) .
+Para el desarrollo de C++, se especifica un desencadenador semanal mediante la [**interfaz IWeeklyTrigger.**](/windows/desktop/api/taskschd/nn-taskschd-iweeklytrigger)
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente código XML define un desencadenador de calendario semanal que inicia una tarea de lunes a viernes (a las 8:00 A.M.) cada semana.
+El código XML siguiente define un desencadenador de calendario semanal que inicia una tarea de lunes a viernes (a las 8:00 a. m.) cada semana.
 
 
 ```XML
@@ -94,8 +94,8 @@ El siguiente código XML define un desencadenador de calendario semanal que inic
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -103,7 +103,7 @@ El siguiente código XML define un desencadenador de calendario semanal que inic
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

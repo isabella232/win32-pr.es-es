@@ -25,7 +25,7 @@ ms.locfileid: "118950554"
 
 Contiene la configuración utilizada durante las operaciones de mantenimiento.
 
-La sintaxis siguiente se Managed Object Format código MOF e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -66,7 +66,7 @@ Contiene la versión de la definición de clase.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |

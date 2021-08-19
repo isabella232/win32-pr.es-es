@@ -3,7 +3,7 @@ title: NM_KILLFOCUS de notificación (vista de lista) (Commctrl.h)
 description: Notifica a la ventana primaria de un control de vista de lista que el control ha perdido el foco de entrada. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: f60064da-21e1-4555-ae72-cda8bd76175a
 keywords:
-- NM_KILLFOCUS (vista de lista) de código de notificación Windows controles
+- NM_KILLFOCUS (vista de lista) código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -53,7 +53,7 @@ No se usa el valor devuelto para esta notificación.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |

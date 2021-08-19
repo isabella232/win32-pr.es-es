@@ -49,7 +49,7 @@ Este elemento invalida el nombre de código predeterminado utilizado para el có
 
 
 
-| Etiqueta | Valor |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

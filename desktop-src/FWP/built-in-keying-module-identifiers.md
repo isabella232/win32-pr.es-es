@@ -25,7 +25,7 @@ ms.locfileid: "118951344"
 
 Los identificadores de los módulos de clave integrados en Windows Filtering Platform (WFP) se representan mediante un GUID.
 
-Estos identificadores se definen como se muestra a continuación.
+Estos identificadores se definen de la manera siguiente.
 
 <dl> <dt>
 
@@ -34,7 +34,7 @@ Estos identificadores se definen como se muestra a continuación.
 
 
 
-Módulo de Exchange claves de Internet Key Exchange (IKE).
+Módulo de Exchange claves de Clave de Internet (IKE).
 
 
 </dt> </dl> </dd> <dt>
@@ -44,10 +44,10 @@ Módulo de Exchange claves de Internet Key Exchange (IKE).
 
 
 
-Clave de Internet Exchange versión 2 (IKEv2) del módulo de claves.
+Módulo de Exchange clave de Clave de Internet versión 2 (IKEv2).
 
 > [!Note]  
-> Disponible solo en Windows Server 2008 R2 y Windows 7.
+> Solo está disponible en Windows Server 2008 R2 y Windows 7.
 
  
 
@@ -68,7 +68,7 @@ Módulo de claves AuthIP.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |

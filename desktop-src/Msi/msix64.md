@@ -23,7 +23,7 @@ La **propiedad Msix64** solo se define si se ejecuta en un procesador x64. El in
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.1 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
 

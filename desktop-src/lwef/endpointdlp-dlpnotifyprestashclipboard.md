@@ -1,5 +1,5 @@
 ---
-description: Proporciona al sistema información sobre un documento antes de que se inicie una operación de almacenamiento escalonado en el Portapapeles.
+description: Proporciona al sistema información sobre un documento antes de que se inicie una operación de almacenamiento escalonado del Portapapeles.
 title: Función DlpNotifyPreStashClipboard (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
@@ -21,7 +21,7 @@ ms.locfileid: "118976515"
 ---
 # <a name="dlpnotifyprestashclipboard-function"></a>Función DlpNotifyPreStashClipboard
 
-Notifica al sistema antes de que se inicie una operación de almacenamiento escalonado en el Portapapeles.
+Notifica al sistema antes de que se inicie una operación de almacenamiento escalonado del Portapapeles.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ Devuelve void.
 
 
 
-| Requisito          |    Valor                   |
+| Requisito          |    Value                   |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, versión 1809 (10.0; Compilación 17763)           |
 | Archivo DLL<br/>                      | EndpointDlp.dll |

@@ -50,7 +50,7 @@ El **objeto Enumerator** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-El **objeto Enumerador** tiene estas propiedades.
+El **objeto Enumerator** tiene estas propiedades.
 
 
 
@@ -71,7 +71,7 @@ El **objeto Enumerator** corresponde a la [**interfaz IWSManEnumerator.**](/wind
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de código VBScript se enumeran todos los discos de un equipo remoto especificado por el nombre de dominio completo (servername.domain.com). La subrutina DisplayOutput da formato a la salida de datos de la misma manera que la herramienta WinRM.cmd.
+En el ejemplo de código de VBScript siguiente se enumeran todos los discos de un equipo remoto especificado por el nombre de dominio completo (servername.domain.com). La subrutina DisplayOutput da formato a la salida de datos de la misma manera que la herramienta WinRM.cmd.
 
 
 ```VB
@@ -127,7 +127,7 @@ End Sub
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

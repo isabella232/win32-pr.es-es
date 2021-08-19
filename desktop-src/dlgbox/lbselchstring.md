@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62d61f88bd7cb6a84a94a3d8a246e6045f88a305
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: ea804e1bd5ad35b5ad5d5ee98cf77f97d54e4e93f438e6e32ad7478e10d7b9ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110550050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985405"
 ---
 # <a name="lbselchstring-message"></a>Mensaje LBSELCHSTRING
 
-\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
+\[A partir Windows Vista,  los  cuadros de diálogo Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
 
 Un **cuadro de** diálogo Abrir o Guardar como envía el mensaje registrado  **LBSELCHSTRING** al procedimiento de enlace cuando la selección cambia en cualquiera de los cuadros de lista o cuadros combinados del cuadro de diálogo.
 
@@ -83,22 +83,22 @@ El procedimiento de enlace debe especificar la **constante LBSELCHSTRING** en un
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluye Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluir Windows.h)</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **LBSELCHSTRINGW** (Unicode) y **LBSELCHSTRINGA** (ANSI)<br/>                                    |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 **Referencia**
 </dt> <dt>
 
-[**CDN \_ SELCHANGE**](cdn-selchange.md)
+[**\_CDN SELCHANGE**](cdn-selchange.md)
 </dt> <dt>
 
-[**CAMBIO DE \_ TIPO DE RED CDN**](cdn-typechange.md)
+[**\_CDN TYPECHANGE**](cdn-typechange.md)
 </dt> <dt>
 
 [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea)

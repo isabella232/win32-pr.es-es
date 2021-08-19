@@ -24,9 +24,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119018183"
 ---
-# <a name="mdm_enterprisemodernappmanagement_appmanagement01_02-class"></a>Clase \_ MDM EnterpriseModernAppManagement \_ AppManagement01 \_ 02
+# <a name="mdm_enterprisemodernappmanagement_appmanagement01_02-class"></a>Clase MDM \_ EnterpriseManagementAppManagement \_ AppManagement01 \_ 02
 
-\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
 La **clase MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 02** especifica si desea impedir que una aplicación específica se actualice mediante actualizaciones automáticas.
 
@@ -46,13 +46,13 @@ class MDM_EnterpriseModernAppManagement_AppManagement01_02
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ MDM EnterpriseModernAppManagement \_ AppManagement01 \_ 02** tiene estos tipos de miembros:
+La **clase MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 02** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 02** tiene estas propiedades.
+La **clase MDM \_ EnterpriseManagementAppManagement \_ AppManagement01 \_ 02** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -76,7 +76,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica el nombre del nodo primario. Para esta clase, la cadena es la instancia del nombre de familia del paquete.
@@ -92,7 +92,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/*EnterpriseID"*
@@ -103,7 +103,7 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
@@ -113,11 +113,11 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Uso de scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripts de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

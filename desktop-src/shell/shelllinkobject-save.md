@@ -39,7 +39,7 @@ iRetVal = ShellLinkObject.Save(
 
 <dl> <dt>
 
-*sFile* \[ in, opcional\]
+*sFile* \[ en, opcional\]
 </dt> <dd>
 
 Tipo: **Variant**

@@ -1,8 +1,8 @@
 ---
-description: Actualiza los datos de los objetos que tienen datos proporcionados por un proveedor de rendimiento, como las clases de contador de rendimiento. Puede obtener datos actualizados más rápidamente y sin una llamada a SWbemServices. Get \_ .
+description: Actualiza los datos de los objetos que tienen datos proporcionados por un proveedor de rendimiento, como las clases de contador de rendimiento. Puede obtener datos actualizados más rápidamente y sin llamar a SWbemServices.Get. \_
 ms.assetid: 6aeaa336-fb98-4eda-b746-fc958198d8ae
 ms.tgt_platform: multiple
-title: Método SWbemObjectEx.Refresh_ (Wbemdisp. h)
+title: SWbemObjectEx.Refresh_ método (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 904e2b7f9b256596555c8396a699220108d4f37b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6763607d2b5f29d32e722e5a1159a1fc276e546c4af9c2e5da10b1d4b2f08235
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991945"
 ---
-# <a name="swbemobjectexrefresh_-method"></a>SWbemObjectEx. Refresh ( \_ método)
+# <a name="swbemobjectexrefresh_-method"></a>Método SWbemObjectEx.Refresh \_
 
-El **método \_ Refresh** de [**SWbemObjectEx**](swbemobjectex.md) actualiza los datos de los objetos que tienen datos proporcionados por un proveedor de rendimiento, como las [clases de contador de rendimiento](/windows/desktop/CIMWin32Prov/performance-counter-classes). Puede obtener datos actualizados más rápidamente y sin una llamada a [**SWbemServices. Get \_**](swbemservices-get.md).
+El **\_ método Refresh** de [**SWbemObjectEx**](swbemobjectex.md) actualiza los datos de los objetos que tienen datos proporcionados por un proveedor de rendimiento, como las clases [de contador de rendimiento](/windows/desktop/CIMWin32Prov/performance-counter-classes). Puede obtener datos actualizados más rápidamente y sin llamar a [**SWbemServices.Get. \_**](swbemservices-get.md)
 
-Para obtener más información sobre esta sintaxis, vea [convenciones de documentos para la API de scripting](document-conventions-for-the-scripting-api.md).
+Para obtener más información sobre esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,14 +45,14 @@ SWbemObjectEx.Refresh_( _
 
 <dl> <dt>
 
-*iFlags* \[ en, opcional\]
+*iFlags* \[ in, opcional\]
 </dt> <dd>
 
 Marcas de operación reservadas que, si se especifican, deben ser 0 (cero).
 
 </dd> <dt>
 
-*objWbemNamedValueSet* \[ en, opcional\]
+*objWbemNamedValueSet* \[ in, opcional\]
 </dt> <dd>
 
 Objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) que establece el contexto de la operación.
@@ -65,48 +65,48 @@ Este método no devuelve ningún valor.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Después de completar el **método \_ Refresh** , el objeto **Err** puede contener uno de los códigos de error de la lista siguiente.
+Después de completar el **método \_ Refresh,** el **objeto Err** puede contener uno de los códigos de error de la lista siguiente.
 
 <dl> <dt>
 
-**wbemErrFailed** -2147749889 (0x80041001)
+**wbemErrFailed:** 2147749889 (0x80041001)
 </dt> <dd>
 
-Se produjo un error interno en el proveedor, aunque la operación era válida.
+El proveedor no pudo funcionar internamente, aunque la operación fuera válida.
 
 </dd> <dt>
 
-**wbemErrNotFound** -2147749890 (0x80041002)
+**wbemErrNotFound** : 2147749890 (0x80041002)
 </dt> <dd>
 
 No se encontró el formato solicitado.
 
 </dd> <dt>
 
-**wbemErrInvalidParameter** -2147749896 (0x80041008)
+**wbemErrInvalidParameter:** 2147749896 (0x80041008)
 </dt> <dd>
 
 Uno de los parámetros de la llamada no es correcto.
 
 </dd> <dt>
 
-**wbemErrRefresherBusy** -2147749975 (0x80041057)
+**wbemErrRefresherBusy:** 2147749975 (0x80041057)
 </dt> <dd>
 
 El actualizador está ocupado con otra operación.
 
 </dd> <dt>
 
-**wbemPartialResults** -2147745808 (0x80040010)
+**wbemPartialResults:** 2147745808 (0x80040010)
 </dt> <dd>
 
-No todos los objetos, enumeradores o actualizaciones anidadas se actualizaron correctamente. Este valor devuelto no es un error, pero indica que la operación estaba incompleta.
+No todos los objetos, enumeradores o actualizadores anidados se actualizaron correctamente. Esta devolución no es un error, sino una indicación de que la operación estaba incompleta.
 
 </dd> </dl>
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código de script siguiente se muestra cómo obtener contadores de rendimiento sin procesar y cocidos para el proceso del sistema. Los objetos se actualizan cada dos segundos y se muestran las propiedades.
+En el siguiente ejemplo de código de script se muestra cómo obtener contadores de rendimiento sin procesar y preparado para el proceso del sistema. Los objetos se actualizan cada dos segundos y se muestran las propiedades.
 
 
 ```VB
@@ -140,11 +140,11 @@ next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemObjectEx<br/>                                                         |
-| IID<br/>                      | \_ISWBEMOBJECTEX IID<br/>                                                          |
+| IID<br/>                      | IID \_ ISWbemObjectEx<br/>                                                          |
 
 
 

@@ -47,13 +47,13 @@ Valor que indica que se usa Visual Studio 2013 protocolo de comunicación remota
 Valor que indica que se está Visual Studio 2013 Update 4 protocolo de comunicación remota.
 
 <span id="REMOTING_DEV14"></span><span id="remoting_dev14"></span>**REMOTING \_ DEV14**  
-Valor que indica que se usa Visual Studio protocolo de comunicación remota RTM 2015.
+Valor que indica que se usa Visual Studio protocolo de comunicación remota rtm de 2015.
 
 <span id="REMOTING_WIN10"></span><span id="remoting_win10"></span>**COMUNICACIÓN REMOTA \_ WIN10**  
 Valor que indica que se usa Windows 10 de comunicación remota (a partir de Windows 10, el diagnóstico de gráficos es un componente del sistema operativo).
 
 <span id="REMOTING_WIN10_JAN_2015"></span><span id="remoting_win10_jan_2015"></span>**COMUNICACIÓN REMOTA \_ WIN10 \_ \_ ENE 2015**  
-Valor que indica que se está Windows 10 protocolo de comunicación remota (enero de 2015).
+Valor que indica que se está Windows 10 protocolo de comunicación remota Windows 10 (enero de 2015).
 
 <span id="REMOTING_WIN10_JAN_2015_1"></span><span id="remoting_win10_jan_2015_1"></span>**COMUNICACIÓN REMOTA \_ WIN10 \_ \_ ENE 2015 \_ 1**  
 Valor que indica que se está Windows 10 protocolo de comunicación remota (enero de 2015, v1).
@@ -62,7 +62,7 @@ Valor que indica que se está Windows 10 protocolo de comunicación remota (ener
 Valor que indica que se está Windows 10 protocolo de comunicación remota (enero de 2015, v2). Esta versión del protocolo introdujo solicitudes para visualizar los recursos en mosaico.
 
 <span id="REMOTING_WIN10_JAN_2015_3"></span><span id="remoting_win10_jan_2015_3"></span>**COMUNICACIÓN REMOTA \_ WIN10 \_ \_ ENE 2015 \_ 3**  
-Valor que indica que se está Windows 10 protocolo de comunicación remota Windows 10 (enero de 2015, v3). Esta versión del protocolo introdujo IPixEngine7, ahora en desuso, para comprobar la compatibilidad con la versión de la interfaz.
+Valor que indica que se está Windows 10 protocolo de comunicación remota (enero de 2015, v3). Esta versión del protocolo introdujo IPixEngine7, ahora en desuso, para comprobar la compatibilidad con la versión de la interfaz.
 
 <span id="REMOTING_IPIXENGINE7_VERSION_CHECKING"></span><span id="remoting_ipixengine7_version_checking"></span>**COMPROBACIÓN DE \_ VERSIONES DE IPIXENGINE7 \_ DE COMUNICACIÓN \_ REMOTA**  
 Valor que indica que se está Windows 10 protocolo de comunicación remota (enero de 2015, v1). Esta versión del protocolo no depende de REMOTINGVERSION para mediar las funcionalidades del protocolo. El GUID de interfaz ahora cambia cuando no es público int

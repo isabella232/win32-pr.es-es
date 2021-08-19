@@ -18,7 +18,7 @@ Una topología es un objeto que representa cómo fluyen los datos en la canaliza
 Los componentes de procesamiento de datos de la canalización (orígenes multimedia, transformaciones y receptores multimedia) se representan en la topología como *nodos*. El flujo de datos de un componente a otro se representa mediante una conexión entre los nodos. Se definen los siguientes tipos de nodo:
 
 -   Nodo de origen: representa una secuencia multimedia en un origen multimedia.
--   Nodo de transformación: representa una Media Foundation transformación (MFT).
+-   Nodo de transformación: representa una transformación Media Foundation transformación (MFT).
 -   Nodo de salida: representa un receptor de flujo en un receptor multimedia.
 -   Nodo de tee: representa una bifurcación en la secuencia. Los nodos de tee son una excepción a la regla de que un nodo representa un objeto de canalización. A diferencia de otros tipos de nodo, el nodo de tee simplemente dirige el flujo de datos.
 

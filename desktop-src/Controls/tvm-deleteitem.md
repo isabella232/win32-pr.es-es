@@ -35,17 +35,17 @@ Quita un elemento y todos sus elementos secundarios de un control de vista de á
 *lParam* 
 </dt> <dd>
 
-**Identificador HTREEITEM** para el elemento que se eliminará. Si *lParam se* establece en TVI \_ ROOT o en **NULL,** se eliminan todos los elementos. También puede usar la macro [**TreeView \_ DeleteAllItems**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_deleteallitems) para eliminar todos los elementos.
+**Identificador HTREEITEM** para el elemento que se eliminará. Si *lParam se* establece en TVI ROOT o \_ en **NULL,** se eliminan todos los elementos. También puede usar la macro [**\_ DeleteAllItems de TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_deleteallitems) para eliminar todos los elementos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
 ## <a name="remarks"></a>Comentarios
 
-No es seguro eliminar elementos en respuesta a una notificación como [TVN \_ SELCHANGING](tvn-selchanging.md).
+No es seguro eliminar elementos en respuesta a una notificación como [TVN \_ SELCHANGING.](tvn-selchanging.md)
 
 Una vez eliminado un elemento, su identificador no es válido y no se puede usar.
 
@@ -59,7 +59,7 @@ Si elimina todos los elementos de un control de vista de árbol que tiene el est
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |

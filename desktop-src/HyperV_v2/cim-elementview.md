@@ -1,7 +1,7 @@
 ---
-description: Representa y asocia entre una vista y una instancia de que representa la vista normalizada de un recurso administrado.
+description: Representa y asociación entre una vista y una instancia de que representa la vista normalizada de un recurso administrado.
 ms.assetid: 9c6eb3d5-7366-4954-9e64-12f889c64114
-title: CIM_ElementView (clase)
+title: CIM_ElementView clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: b6ffc0e4b69667800b1880cae1a992a207cc95a2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 06a627668fd8a7b9550f92c65918a85448ec1f23ba1d92630379ec205660f58d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812181"
 ---
-# <a name="cim_elementview-class"></a>\_Clase ElementView de CIM
+# <a name="cim_elementview-class"></a>Cim \_ ElementView (clase)
 
-Representa y asocia entre una vista y una instancia de que representa la vista normalizada de un recurso administrado.
+Representa y asociación entre una vista y una instancia de que representa la vista normalizada de un recurso administrado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,13 +39,13 @@ class CIM_ElementView : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ElementView** tiene estos tipos de miembros:
+La **clase \_ ElementView de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ElementView** tiene estas propiedades.
+La **clase \_ ElementView de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -58,26 +58,26 @@ Tipo de datos: **CIM \_ ManagedElement**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
 Instancia de que representa la vista normalizada del recurso administrado.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ vista CIM**
+Tipo de datos: **Vista CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent")
 </dt> </dl>
 
-La vista que representa una vista de agregado o desnormalizado del recurso administrado.
+Vista que representa una vista agregada o des normalizada del recurso administrado.
 
 </dd> </dl>
 
@@ -85,12 +85,12 @@ La vista que representa una vista de agregado o desnormalizado del recurso admin
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ La vista que representa una vista de agregado o desnormalizado del recurso admin
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> </dl>
 
  

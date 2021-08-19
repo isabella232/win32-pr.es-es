@@ -1,7 +1,7 @@
 ---
 description: Establezca la información de traducción de un fotograma clave específico en el conjunto de animaciones.
 ms.assetid: 4a926c0f-6d57-48d4-bb3b-60766fc78e40
-title: 'ID3DXKeyframedAnimationSet:: SetTranslationKey (método) (D3dx9anim. h)'
+title: Método ID3DXKeyframedAnimationSet::SetTranslationKey (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5bdfb8fb02a2b06dc797317d35cc14e75bd6f221
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4f699a1988c53fc52b4ce413e4c0a655b7d943ddabc0c8e5fcb25ad627e32667
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987345"
 ---
-# <a name="id3dxkeyframedanimationsetsettranslationkey-method"></a>ID3DXKeyframedAnimationSet:: SetTranslationKey (método)
+# <a name="id3dxkeyframedanimationsetsettranslationkey-method"></a>Método ID3DXKeyframedAnimationSet::SetTranslationKey
 
 Establezca la información de traducción de un fotograma clave específico en el conjunto de animaciones.
 
@@ -42,30 +42,30 @@ HRESULT SetTranslationKey(
 
 <dl> <dt>
 
-*Animación* \[ de de\]
+*Animación* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Índice de animación.
 
 </dd> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Fotograma clave.
 
 </dd> <dt>
 
-*pTranslationKey* \[ de\]
+*pTranslationKey* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXKEY \_ VECTOR3**](d3dxkey-vector3.md)**
 
-Puntero a los datos de traducción. Vea [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md).
+Puntero a los datos de traducción. Vea [**D3DXKEY \_ VECTOR3.**](d3dxkey-vector3.md)
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Puntero a los datos de traducción. Vea [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente: D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

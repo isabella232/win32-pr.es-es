@@ -1,68 +1,68 @@
 ---
-description: API de EndpointVolume
+description: EndpointVolume API
 ms.assetid: 1fe1cd57-a0a4-4e08-ab52-3b6e66d14e79
-title: API de EndpointVolume
+title: EndpointVolume API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 081b827045250336aa499e386a8dafedb6ae068b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 22965e882a2f7d413ae58690fc9bc5f8134aba0e7b26838ca38c74d7f0093c98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018453"
 ---
-# <a name="endpointvolume-api"></a>API de EndpointVolume
+# <a name="endpointvolume-api"></a>EndpointVolume API
 
-La API de EndpointVolume permite a los clientes especializados controlar y supervisar los niveles de volumen de los [dispositivos de punto de conexión de audio](audio-endpoint-devices.md). Un cliente obtiene las referencias a las interfaces de la API de EndpointVolume mediante la obtención de la interfaz [**IMMDevice**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice) de un dispositivo de punto de conexión de audio y la llamada al método [**IMMDevice:: Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) .
+EndpointVolume API permite a los clientes especializados controlar y supervisar los niveles de volumen de los dispositivos de [punto de conexión de audio.](audio-endpoint-devices.md) Un cliente obtiene referencias a las interfaces de endpointVolume API al obtener la interfaz [**IMMDevice**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice) de un dispositivo de punto de conexión de audio y llamar al [**método IMMDevice::Activate.**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate)
 
-El archivo de encabezado Endpointvolume. h define las interfaces de la API de EndpointVolume.
+El archivo de encabezado Endpointvolume.h define las interfaces de EndpointVolume API.
 
-Las aplicaciones de audio que usan la [API MMDevice](mmdevice-api.md) y [WASAPI](wasapi.md) suelen usar la interfaz [**ISimpleAudioVolume**](/windows/desktop/api/Audioclient/nn-audioclient-isimpleaudiovolume) para controlar los niveles de volumen por sesión. Solo dos tipos de aplicaciones de audio requieren el uso de la API de EndpointVolume. Estos tipos de aplicaciones son:
+Las aplicaciones de audio que usan [MMDevice API](mmdevice-api.md) y [WASAPI](wasapi.md) suelen usar la interfaz [**ISimpleAudioVolume**](/windows/desktop/api/Audioclient/nn-audioclient-isimpleaudiovolume) para controlar los niveles de volumen por sesión. Solo dos tipos de aplicaciones de audio requieren el uso de la API EndpointVolume. Estos tipos de aplicación son:
 
--   Las aplicaciones que administran los niveles de volumen maestro de los dispositivos de punto de conexión de audio, de forma similar al programa de control de volumen de Windows, Sndvol.exe.
--   Aplicaciones de audio profesional ("Audio Pro") que requieren acceso en modo exclusivo a los dispositivos de punto de conexión de audio.
+-   Aplicaciones que administran los niveles de volumen maestro de los dispositivos de punto de conexión de audio, de forma similar al programa Windows control de volumen, Sndvol.exe.
+-   Professional de audio ("audio pro") que requieren acceso en modo exclusivo a los dispositivos de punto de conexión de audio.
 
-El uso inadecuado de la API de EndpointVolume puede interferir con la Directiva de audio de Windows e interrumpir la configuración del volumen del sistema del usuario.
+El uso inadecuado de EndpointVolume API puede interferir con Windows directiva de audio e interrumpir la configuración del volumen del sistema del usuario.
 
-Si un dispositivo de punto de conexión de audio implementa controles de volumen y silenciado de hardware, la API de EndpointVolume usa esos controles para administrar el volumen del dispositivo. De lo contrario, la API EndpointVolume implementa los controles del software de forma transparente en el cliente.
+Si un dispositivo de punto de conexión de audio implementa controles de volumen de hardware y exclusión mutua, la API EndpointVolume usa esos controles para administrar el volumen del dispositivo. De lo contrario, EndpointVolume API implementa los controles en el software de forma transparente para el cliente.
 
-Si un dispositivo tiene controles de volumen y silenciado de hardware, los cambios realizados en el volumen del dispositivo y silenciar la configuración a través de la API de EndpointVolume afectan al nivel de volumen en modo compartido y en modo exclusivo. Si un dispositivo no tiene controles de silencio y volumen de hardware, los cambios realizados en el volumen de software y los controles de silencio a través de la API de EndpointVolume afectan al nivel de volumen en modo compartido, pero no en modo exclusivo. En el modo exclusivo, el cliente y el dispositivo intercambian datos de audio directamente, omitiendo los controles de software.
+Si un dispositivo tiene controles de volumen y exclusión mutua de hardware, los cambios realizados en la configuración de volumen y exclusión mutua del dispositivo a través de endpointVolume API afectan al nivel de volumen en modo compartido y modo exclusivo. Si un dispositivo no tiene controles de volumen y exclusión de hardware, los cambios realizados en el volumen de software y los controles de exclusión mutua a través de endpointVolume API afectan al nivel de volumen en modo compartido, pero no en modo exclusivo. En modo exclusivo, el cliente y el dispositivo intercambian datos de audio directamente, omitiendo los controles de software.
 
-En el caso de las aplicaciones que deben administrar controles de volumen y silenciado de hardware, la API de EndpointVolume ofrece dos ventajas potenciales sobre la [API de DeviceTopology](devicetopology-api.md).
+En el caso de las aplicaciones que deben administrar controles de volumen y exclusión mutua de hardware, EndpointVolume API ofrece dos ventajas potenciales con respecto a [DeviceTopology API.](devicetopology-api.md)
 
-En primer lugar, varios dispositivos de adaptador de audio carecen de controles de volumen de hardware. Si un dispositivo no tiene un control de volumen de hardware, la interfaz [**IAudioEndpointVolume**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolume) de la API de EndpointVolume implementa automáticamente un control de volumen de software en el flujo hacia o desde ese dispositivo. Para un cliente de la API de EndpointVolume, el resultado es el mismo si el dispositivo o el software de la interfaz de la API de EndpointVolume implementan el control de volumen en el hardware.
+En primer lugar, varios dispositivos de adaptador de audio carecen de controles de volumen de hardware. Si un dispositivo no tiene un control de volumen de hardware, la interfaz [**IAudioEndpointVolume**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolume) de endpointVolume API implementa automáticamente un control de volumen de software en el flujo hacia o desde ese dispositivo. Para un cliente de la API EndpointVolume, el resultado es el mismo si el dispositivo o la interfaz de la API EndpointVolume implementan el control de volumen en hardware o en software.
 
-En segundo lugar, incluso si el dispositivo adaptador implementa controles de volumen de hardware, una aplicación que use la API DeviceTopology para implementar un algoritmo de recorrido de topología podría no encontrar el control que está buscando. Normalmente, este tipo de aplicación está diseñado para atravesar la topología de hardware de un dispositivo o un conjunto de dispositivos relacionados. La aplicación corre un error si intenta atravesar la topología de un dispositivo para el que no se ha diseñado o probado específicamente.
+En segundo lugar, incluso si el dispositivo del adaptador implementa controles de volumen de hardware, una aplicación que usa DeviceTopology API para implementar un algoritmo de recorrido de topología podría no encontrar el control que está buscando. Normalmente, esta aplicación está diseñada para recorrer la topología de hardware de un dispositivo determinado o un conjunto de dispositivos relacionados. La aplicación corre el riesgo de errores si intenta atravesar la topología de un dispositivo para el que no se ha diseñado específicamente ni con el que se ha probado.
 
-Solo las aplicaciones especializadas que deben tener acceso a funciones de hardware que no sean controles de volumen y silencio requieren el uso de la API de DeviceTopology. En el caso de las aplicaciones que requieren el control solo del nivel de volumen de una secuencia en modo exclusivo, la API EndpointVolume es más fácil de usar y funciona de forma confiable con una gama más amplia de dispositivos de hardware de audio.
+Solo las aplicaciones especializadas que deben tener acceso a funciones de hardware que no son controles de volumen y exclusión mutua requieren el uso de la API DeviceTopology. En el caso de las aplicaciones que solo requieren el control del nivel de volumen de una secuencia en modo exclusivo, endpointVolume API es más fácil de usar y funciona de forma confiable con una gama más amplia de dispositivos de hardware de audio.
 
-Para obtener ejemplos de código que usan las interfaces de la API de EndpointVolume, vea los temas siguientes:
+Para ver ejemplos de código que usan las interfaces de EndpointVolume API, consulte los temas siguientes:
 
--   [Controles de volumen de extremo](endpoint-volume-controls.md)
--   [Medidores de pico](peak-meters.md)
+-   [Controles de volumen de punto de conexión](endpoint-volume-controls.md)
+-   [Medidores máximos](peak-meters.md)
 
-Para ver un ejemplo que usa la API de EndpointVolume, consulte [EndpointVolume](endpointvolume.md) en el Windows SDK.
+Para ver un ejemplo que usa la API EndpointVolume, consulte [EndpointVolume](endpointvolume.md) en el SDK Windows.
 
-La API de EndpointVolume implementa las interfaces siguientes.
+EndpointVolume API implementa las interfaces siguientes.
 
 
 
 | Interfaz                                                | Descripción                                                                             |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [**IAudioEndpointVolume**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolume)     | Representa los controles de volumen en la secuencia de audio hacia o desde un dispositivo de punto de conexión de audio. |
-| [**IAudioMeterInformation**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudiometerinformation) | Representa un medidor de picos en la secuencia de audio hacia o desde un dispositivo de punto de conexión de audio.        |
+| [**IAudioEndpointVolume**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolume)     | Representa los controles de volumen de la secuencia de audio hacia o desde un dispositivo de punto de conexión de audio. |
+| [**IAudioMeterInformation**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudiometerinformation) | Representa un medidor máximo en la secuencia de audio hacia o desde un dispositivo de punto de conexión de audio.        |
 
 
 
  
 
-Además, los clientes de la API de EndpointVolume que requieren notificación de cambios de volumen y de silencio en los dispositivos de punto de conexión de audio deben implementar la siguiente interfaz.
+Además, los clientes de la API EndpointVolume que requieren la notificación del volumen y los cambios muting en los dispositivos de punto de conexión de audio deben implementar la siguiente interfaz.
 
 
 
 | Interfaz                                                            | Descripción                                                                                       |
 |----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [**IAudioEndpointVolumeCallback**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolumecallback) | Proporciona notificaciones cuando cambia el nivel de volumen o el estado de silenciación de un dispositivo de punto de conexión de audio. |
+| [**IAudioEndpointVolumeCallback**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolumecallback) | Proporciona notificaciones cuando cambia el nivel de volumen o el estado muting de un dispositivo de punto de conexión de audio. |
 
 
 
@@ -75,10 +75,10 @@ Además, los clientes de la API de EndpointVolume que requieren notificación de
 [Controles de volumen](volume-controls.md)
 </dt> <dt>
 
-[**Interfaz IMMDevice**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice)
+[**IMMDevice (Interfaz)**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice)
 </dt> <dt>
 
-[**IMMDevice:: Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate)
+[**IMMDevice::Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate)
 </dt> <dt>
 
 [**ISimpleAudioVolume**](/windows/desktop/api/Audioclient/nn-audioclient-isimpleaudiovolume)

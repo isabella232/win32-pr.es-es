@@ -82,7 +82,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 ## <a name="remarks"></a>Comentarios
 
-La cadena de filtro para el cuadro de diálogo Abrir archivo, especificada por el *parámetro FilterString,* contiene caracteres NULL internos. Por ejemplo, Video \\ 0 \*.avi\\ 0 \\ 0 es una cadena de filtro válida. No se puede usar la función **SysAllocStr** para asignar el BSTR, porque esa función espera una cadena terminada en NULL y truncará la cadena en el primer carácter NULL. Por lo tanto, use una función como **SysAllocStringLen**, que incluye un parámetro explícito para la longitud:
+La cadena de filtro del cuadro de diálogo Abrir archivo, especificada por el *parámetro FilterString,* contiene caracteres NULL internos. Por ejemplo, Video \\ 0 \*.avi\\ 0 \\ 0 es una cadena de filtro válida. No se puede usar la función **SysAllocStr** para asignar el BSTR, porque esa función espera una cadena terminada en NULL y truncará la cadena en el primer carácter NULL. Por lo tanto, use una función como **SysAllocStringLen**, que incluye un parámetro explícito para la longitud:
 
 
 ```C++
@@ -117,7 +117,7 @@ El método asigna memoria para **el BSTR** en *pOutput*. La aplicación debe lla
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

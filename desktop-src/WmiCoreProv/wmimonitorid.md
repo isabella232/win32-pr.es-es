@@ -1,5 +1,5 @@
 ---
-description: Representa la información de identificación de un monitor de vídeo, como el nombre del fabricante, el año de fabricación o el número de serie.
+description: Representa la información de identificación sobre un monitor de vídeo, como el nombre del fabricante, el año de fabricación o el número de serie.
 ms.assetid: 85c8c4b1-20e2-4c0b-9209-a3724509a2f0
 title: Clase WmiMonitorID
 ms.topic: reference
@@ -24,16 +24,16 @@ api_type:
 api_location:
 - WmiProv.dll
 ms.custom: project-verbatim
-ms.openlocfilehash: 485b42a86ca67d15ec00be13992c17b31ed51608
-ms.sourcegitcommit: af120ad5c30da2fc5eb717ca2a1c4c45878efd71
+ms.openlocfilehash: 552e66a4e3a0c6f120bcc95123e3a2674fc579457de16c9ef8cd1e80161f175e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "105718589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051153"
 ---
 # <a name="wmimonitorid-class"></a>Clase WmiMonitorID
 
-La clase WMI **WmiMonitorID** representa la información de identificación de un monitor de vídeo, como el nombre del fabricante, el año de fabricación o el número de serie. Los datos de esta clase se corresponden con los datos del bloque de identificación de proveedor/producto de la definición de entrada de vídeo de la estándar de identificación extendida de vídeo (E-EDID) de la Asociación estándar de vídeo electrónica (VESA).
+La **clase WMI WmiMonitorID** representa la información de identificación sobre un monitor de vídeo, como el nombre del fabricante, el año de fabricación o el número de serie. Los datos de esta clase corresponden a los datos del bloque Identificación de proveedor/producto de Definición de entrada de vídeo del estándar enhanced Extended Display Identification Data (E-EDID) de Video Electronics Standard Association (VESA).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,13 +55,13 @@ class WmiMonitorID : MSMonitorClass
 
 ## <a name="members"></a>Miembros
 
-La clase **WmiMonitorID** tiene estos tipos de miembros:
+La **clase WmiMonitorID** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **WmiMonitorID** tiene estas propiedades.
+La **clase WmiMonitorID** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -87,7 +87,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
 Nombre de la instancia de monitor específica.
@@ -97,7 +97,7 @@ Nombre de la instancia de monitor específica.
 **ManufacturerName**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -110,33 +110,33 @@ Nombre del fabricante.
 **ManufacturerNameLength**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Longitud del nombre del fabricante ubicada en la propiedad **ManufacturerName** .
+Longitud del nombre del fabricante ubicado en la **propiedad ManufacturerName.**
 
 </dd> <dt>
 
 **ProductCodeID**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-IDENTIFICADOR de código de producto asignado por el proveedor.
+Identificador de código de producto asignado por el proveedor.
 
 </dd> <dt>
 
 **SerialNumberID**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -149,7 +149,7 @@ Número de serie.
 UserFriendlyName
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -162,33 +162,33 @@ Nombre descriptivo del monitor. El tamaño del nombre es la longitud especificad
 UserFriendlyNameLength
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de caracteres del nombre que se encuentra en la propiedad UserFriendlyName.
+Número de caracteres del nombre ubicado en la propiedad UserFriendlyName.
 
 </dd> <dt>
 
 **WeekOfManufacture**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Semana de fabricación por número de semana. El intervalo está comprendido entre 1 y 53. Cero (0) no está definido.
+Semana de fabricación por número de semana. El intervalo está entre 1 y 53. Cero (0) no está definido.
 
 </dd> <dt>
 
 **YearOfManufacture**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -198,9 +198,9 @@ Año de fabricación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener una explicación sobre cómo traducir las matrices que almacenan los IDENTIFICADOres de número de serie, consulte el artículo [información del monitor de informes con Configuration Manager](/archive/blogs/kmongwa/reporting-monitor-information-with-configuration-manager) blog.
+Para obtener una explicación sobre cómo traducir las matrices que almacenan los identificadores de número de serie, consulte el artículo de blog información del Monitor de informes [Administrador de configuración](/archive/blogs/kmongwa/reporting-monitor-information-with-configuration-manager) serie.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -213,7 +213,7 @@ gwmi WmiMonitorID -Namespace root\wmi | ForEach-Object {($_.UserFriendlyName -ne
 
 
 
-El siguiente código de VBScript también recupera información del ID. de monitor de un sistema.
+El siguiente código VBScript también recupera información de identificador de monitor de un sistema.
 
 
 ```VB
@@ -241,12 +241,12 @@ Next
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
-| Espacio de nombres<br/>                | \\WMI raíz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Wmi \\ raíz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

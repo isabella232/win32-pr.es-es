@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 3df0c94dbd49cf38d9230a2c5392df8497c64761
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5fa7e7155cdcf5c5dc1996dee1dcf02d0190e4bb91b4c319231e2f03168722c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118095463"
 ---
 # <a name="d3dxplane-structure-d3dx9mathh"></a>Estructura D3DXPLANE (D3dx9math.h)
 
@@ -82,13 +82,13 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Coeficiente d del plano de recorte en la ecuación de plano general. Vea la sección Comentarios.
+Coeficiente d del plano de recorte en la ecuación del plano general. Vea la sección Comentarios.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentarios
 
-Los miembros de la **estructura D3DXPLANE** toman la forma de la ecuación de plano general. Encajan en la ecuación de plano general para que **x**+ **b** y + **c** z + **d** w = 0.
+Los miembros de la **estructura D3DXPLANE** toman la forma de la ecuación de plano general. Encajan en la ecuación del plano general para que **x**+ **b** y + **c** z + **d** w = 0.
 
 Los programadores de C++ pueden aprovechar la sobrecarga de operadores y la conversión de tipos con las extensiones [**D3DXPLANE**](d3dxplane-extensions.md) que implementan constructores sobrecargados y operadores de asignación, unario y binario (incluida la igualdad).
 
@@ -102,7 +102,7 @@ Los programadores de C++ pueden aprovechar la sobrecarga de operadores y la conv
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

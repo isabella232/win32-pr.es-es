@@ -46,7 +46,7 @@ HRESULT D3DXDeclaratorFromFVF(
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinación de [D3DFVF](d3dfvf.md) que describe la FVF a partir de la cual se va a generar la matriz de declarador devuelta.
+Combinación de [D3DFVF](d3dfvf.md) que describe la FVF a partir de la cual se va a generar la matriz declarator devuelta.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Combinación de [D3DFVF](d3dfvf.md) que describe la FVF a partir de la cual se v
 
 Tipo: **[ **D3DVERTEXELEMENT9**](d3dvertexelement9.md)**
 
-Matriz de [**elementos D3DVERTEXELEMENT9**](d3dvertexelement9.md) que describen el formato de vértice de los vértices de la malla. El límite superior de esta matriz declarator es [**MAX \_ FVF \_ DECL \_ SIZE**](./max-fvf-decl-size.md).
+Matriz de [**elementos D3DVERTEXELEMENT9**](d3dvertexelement9.md) que describen el formato de vértice de los vértices de malla. El límite superior de esta matriz declarativa es [**MAX \_ FVF \_ DECL \_ SIZE.**](./max-fvf-decl-size.md)
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -85,7 +85,7 @@ Número máximo de eventos pendientes que admitirá el controlador.
 
 Tipo: **[ **LPD3DXANIMATIONCONTROLLER**](id3dxanimationcontroller.md)\***
 
-Puntero al objeto de controlador de animación creado. Vea [**ID3DXAnimationController.**](id3dxanimationcontroller.md)
+Puntero al objeto de controlador de animación creado. Vea [**ID3DXAnimationController**](id3dxanimationcontroller.md).
 
 </dd> </dl>
 
@@ -97,7 +97,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 ## <a name="remarks"></a>Comentarios
 
-Un controlador de animación controla un mezclador de animación. El controlador agrega métodos para modificar los parámetros de combinación a lo largo del tiempo para permitir transiciones fluidas.
+Un controlador de animación controla un mezclador de animación. El controlador agrega métodos para modificar los parámetros de combinación a lo largo del tiempo para permitir transiciones sin problemas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -110,7 +110,7 @@ Un controlador de animación controla un mezclador de animación. El controlador
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

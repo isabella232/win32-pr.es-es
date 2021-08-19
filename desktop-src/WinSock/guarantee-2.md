@@ -1,5 +1,5 @@
 ---
-description: Ya no Windows enumeración GUARANTEE de sockets. Para obtener información sobre Windows implementación de calidad de servicio y la API asociada, consulte Calidad de servicio (QoS) en Platform Software Development Kit (SDK).
+description: Ya no Windows enumeración GUARANTEE de sockets. Para obtener información sobre Windows implementación de calidad de servicio y la API asociada, consulte Calidad de servicio (QoS) en el Kit de desarrollo de software de plataforma (SDK).
 ms.assetid: 103e236f-79d7-4d8d-b23e-0cfe40fbd055
 title: Garantizar
 ms.topic: article

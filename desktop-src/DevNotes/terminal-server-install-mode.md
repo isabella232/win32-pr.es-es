@@ -1,17 +1,17 @@
 ---
-description: Terminal Server modo de instalación
+description: Modo de instalación de Terminal Server
 ms.assetid: EFF47B6A-E8CA-4DAE-A0F9-A64C573C5D09
-title: Terminal Server modo de instalación
+title: Modo de instalación de Terminal Server
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f521cc106cbf175127a5729aec530807555a553
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ae331bfb04f53645460125412ef39662bbc7f6ea0317c102eb6dbe3609a54665
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104538512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075769"
 ---
-# <a name="terminal-server-install-mode"></a>Terminal Server modo de instalación
+# <a name="terminal-server-install-mode"></a>Modo de instalación de Terminal Server
 
 ## <a name="in-this-section"></a>En esta sección
 

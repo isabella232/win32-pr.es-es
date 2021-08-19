@@ -3,7 +3,7 @@ title: RWByteAddressBuffer::InterlockedOr (Función)
 description: Realiza un or atómico en el valor.
 ms.assetid: 3a05619b-db97-4cf1-af3c-12c376e605a6
 keywords:
-- Función HLSL de InterlockedOr
+- Función HlSL de InterlockedOr
 topic_type:
 - apiref
 api_name:
@@ -85,7 +85,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

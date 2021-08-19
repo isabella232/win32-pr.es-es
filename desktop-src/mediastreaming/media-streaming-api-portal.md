@@ -15,7 +15,7 @@ ms.locfileid: "118972174"
 
 ## <a name="purpose"></a>Propósito
 
-Media Streaming API modela los dispositivos Digital Media Renderer (DMR) y Digital Media Server (DMS) tal y como se define en las directrices de DLNA para facilitar el uso mediante programación, lo que permite a los desarrolladores crear aplicaciones con las funcionalidades Controlador de multimedia digital (DMR), Digital Media Player (DMP) y Controlador de inserción (+PU+), tal como se define en las directrices de DLNA.
+Media Streaming API modela los dispositivos Digital Media Renderer (DMR) y Digital Media Server (DMS) tal y como se define en las directrices de DLNA para facilitar el uso mediante programación, lo que permite a los desarrolladores crear aplicaciones con las funcionalidades Controlador de multimedia digital (VMM), Digital Media Player (DMP) y Controlador de inserción (+PU+), tal como se define en las directrices de DLNA.
 
 ## <a name="in-this-section"></a>En esta sección
 

@@ -1,23 +1,23 @@
 ---
-description: La función MsiGetPatchFileList y la propiedad PatchFiles del objeto de instalador toman una lista de Windows Installer revisiones (archivos. msp) y devuelven una lista de archivos que las revisiones pueden actualizar.
+description: La función MsiGetPatchFileList y la propiedad PatchFiles del objeto Installer toman una lista de revisiones del instalador de Windows (archivos .msp) y devuelven una lista de archivos que las revisiones pueden actualizar.
 ms.assetid: cc2eb506-c1fc-4125-b98c-12221b918e23
 title: Enumerar los archivos que se pueden actualizar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c15872cce902f5a9059d4256e9e5c30ecff213f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ad76355c97d62d9c3f1282b5ebd66f54c5fef0f6f7359a41a35f2ebaee9a2fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118945910"
 ---
 # <a name="listing-the-files-that-can-be-updated"></a>Enumerar los archivos que se pueden actualizar
 
-La función [**MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista) y la propiedad [**PatchFiles**](installer-patchfiles.md) del [**objeto de instalador**](installer-object.md) toman una lista de Windows Installer revisiones (archivos. msp) y devuelven una lista de archivos que las revisiones pueden actualizar. La función [**MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista) y la propiedad [**PatchFiles**](installer-patchfiles.md) están disponibles a partir de Windows Installer 4,0.
+La función [**MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista) y la [](installer-object.md) propiedad [**PatchFiles**](installer-patchfiles.md) del objeto installer toman una lista de revisiones del instalador de Windows (archivos .msp) y devuelven una lista de archivos que las revisiones pueden actualizar. La [**función MsiGetPatchFileList y**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista) la propiedad [**PatchFiles**](installer-patchfiles.md) están disponibles a partir Windows Installer 4.0.
 
 ## <a name="listing-files-that-can-be-updated"></a>Enumerar archivos que se pueden actualizar
 
-En el ejemplo siguiente se muestra cómo extraer la información de aplicabilidad de una lista de revisiones de Windows Installer (archivos. msp) mediante [**MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista). La función **MsiGetPatchFileList** proporciona el código de producto para el destino de las revisiones y una lista de archivos. MSP delimitados por punto y coma. En este ejemplo se requiere Windows Installer 4,0 que se ejecute en Windows Vista.
+En el ejemplo siguiente se muestra cómo extraer la información de aplicabilidad de una lista de revisiones de Windows Installer (archivos .msp) [**mediante MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista). A **la función MsiGetPatchFileList** se le proporciona el código de producto para el destino de las revisiones y una lista de archivos .msp delimitados por punto y coma. Este ejemplo requiere que Windows Installer 4.0 se ejecute en Windows Vista.
 
 
 ```C++
@@ -111,7 +111,7 @@ void CloseMsiHandles(MSIHANDLE* phFileListRec, DWORD dwcFiles)
 
 
 
-En el ejemplo siguiente se muestra cómo extraer la información de aplicabilidad de una lista de revisiones de Windows Installer (archivos. msp) mediante la propiedad [**PatchFiles**](installer-patchfiles.md) del [**objeto Installer**](installer-object.md). La propiedad **PatchFiles** proporciona el código de producto para el destino de las revisiones y una lista de archivos. MSP delimitados por punto y coma. En este ejemplo se requiere Windows Installer 4,0 que se ejecute en Windows Vista.
+En el ejemplo siguiente se muestra cómo extraer la información de aplicabilidad de una lista de revisiones del instalador de Windows (archivos .msp) mediante la propiedad [**PatchFiles**](installer-patchfiles.md) del objeto [**Installer**](installer-object.md). A **la propiedad PatchFiles** se le proporciona el código de producto para el destino de las revisiones y una lista de archivos .msp delimitados por punto y coma. Este ejemplo requiere que Windows Installer 4.0 se ejecute en Windows Vista.
 
 
 ```VB

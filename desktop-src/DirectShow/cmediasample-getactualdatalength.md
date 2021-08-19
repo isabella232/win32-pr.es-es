@@ -1,7 +1,7 @@
 ---
-description: 'El método GetActualDataLength recupera la longitud de los datos válidos en el búfer. Este método implementa el método IMediaSample:: GetActualDataLength.'
+description: El método GetActualDataLength recupera la longitud de los datos válidos en el búfer. Este método implementa el método IMediaSample::GetActualDataLength.
 ms.assetid: bdb8c2b9-7be4-494b-bb96-34a9936d4a2f
-title: Método CMediaSample. GetActualDataLength (Amfilter. h)
+title: Método CMediaSample.GetActualDataLength (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2e65b72c1e0b6db85a271c10f76e5630b0799b78
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 67d41c23e45ba65416a0f57336e51d2784b194ee556a778b7036e8dc5fd829ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016393"
 ---
-# <a name="cmediasamplegetactualdatalength-method"></a>CMediaSample. GetActualDataLength, método
+# <a name="cmediasamplegetactualdatalength-method"></a>Método CMediaSample.GetActualDataLength
 
-El `GetActualDataLength` método recupera la longitud de los datos válidos en el búfer. Este método implementa el método [**IMediaSample:: GetActualDataLength**](/windows/win32/api/strmif/nf-strmif-imediasample-getactualdatalength) .
+El `GetActualDataLength` método recupera la longitud de los datos válidos en el búfer. Este método implementa el [**método IMediaSample::GetActualDataLength.**](/windows/win32/api/strmif/nf-strmif-imediasample-getactualdatalength)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Devuelve la longitud de los datos válidos, en bytes.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La variable miembro [**CMediaSample:: m \_ lActual**](cmediasample-m-lactual.md) especifica esta propiedad.
+La variable [**miembro CMediaSample::m \_ lActual**](cmediasample-m-lactual.md) especifica esta propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ La variable miembro [**CMediaSample:: m \_ lActual**](cmediasample-m-lactual.md)
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ La variable miembro [**CMediaSample:: m \_ lActual**](cmediasample-m-lactual.md)
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

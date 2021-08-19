@@ -59,7 +59,7 @@ No se usa el valor devuelto para este mensaje.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
