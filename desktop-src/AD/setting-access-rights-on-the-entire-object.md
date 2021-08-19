@@ -1,35 +1,35 @@
 ---
 title: Establecer derechos de acceso en todo el objeto
-description: Ciertos permisos solo se pueden establecer para un objeto completo, como eliminar y mostrar el contenido. Los permisos específicos de la operación, como el permiso de lectura, también se pueden establecer para el objeto completo, de modo que se apliquen a un objeto completo.
+description: Determinados permisos solo se pueden establecer para un objeto completo, como Eliminar y Mostrar contenido. Los permisos específicos de la operación, como el permiso De lectura, también se pueden establecer para todo el objeto para que se apliquen a un objeto completo.
 ms.assetid: 786357f4-146e-4638-8bd6-82bc1a6640a1
 ms.tgt_platform: multiple
 keywords:
-- Establecer derechos de acceso en todo el objeto AD
-- objetos AD, establecer derechos de acceso en
+- Establecimiento de derechos de acceso en todo el ad de objeto
+- objetos de AD, establecer derechos de acceso en
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9a965b646de1ee3eba40757386fd243839cb35b
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: cde06726b7333865fe2f4b87b87bec4383a3aeb1799ad6b8772142d5b9fd6eeb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104487394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024783"
 ---
 # <a name="setting-access-rights-on-the-entire-object"></a>Establecer derechos de acceso en todo el objeto
 
-Ciertos permisos solo se pueden establecer para un objeto completo, como eliminar y mostrar el contenido. Los permisos específicos de la operación, como el permiso de lectura, también se pueden establecer para el objeto completo, de modo que se apliquen a un objeto completo.
+Determinados permisos solo se pueden establecer para un objeto completo, como Eliminar y Mostrar contenido. Los permisos específicos de la operación, como el permiso De lectura, también se pueden establecer para todo el objeto para que se apliquen a un objeto completo.
 
 El siguiente procedimiento se puede usar para establecer permisos para un objeto completo.
 
 **Para establecer permisos para un objeto completo**
 
-1.  Establezca [**IADsAccessControlEntry. AceType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) en **ADS \_ AceType \_ acceso \_ permitido** o **anuncios \_ AceType \_ acceso \_ denegado**.
-2.  Establezca [**IADsAccessControlEntry. ObjectType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) y **IADsAccessControlEntry. InheritedObjectType** en **null**.
+1.  Establezca [**IADsAccessControlEntry.AceType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) en **ADS \_ ACETYPE ACCESS \_ \_ ALLOWED** o **ADS \_ ACETYPE ACCESS \_ \_ DENIED**.
+2.  Establezca [**IADsAccessControlEntry.ObjectType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) **e IADsAccessControlEntry.InheritedObjectType** en **NULL.**
 
-Para obtener más información sobre cómo crear una ACE, consulte [configuración de derechos de acceso en un objeto](setting-access-rights-on-an-object.md).
+Para obtener más información sobre cómo crear una ACE, vea [Establecer derechos de acceso en un objeto](setting-access-rights-on-an-object.md).
 
-Para obtener más información y un ejemplo de código que se puede usar para establecer una ACE, vea el [código de ejemplo para establecer una ACE en un objeto de directorio](example-code-for-setting-an-ace-on-a-directory-object.md).
+Para obtener más información y un ejemplo de código que se puede usar para establecer una ACE, vea Ejemplo de código para establecer una [ACE en un objeto de directorio](example-code-for-setting-an-ace-on-a-directory-object.md).
 
- 
+ 
 
- 
+ 

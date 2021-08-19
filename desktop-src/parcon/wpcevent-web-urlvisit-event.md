@@ -1,19 +1,19 @@
 ---
-description: Evento por usuario generado por el filtro de contenido web debido al intento de obtener acceso a una dirección URL.
+description: Evento por usuario generado por el filtro de contenido web debido a que se intenta acceder a una dirección URL.
 ms.assetid: 636b0ce8-cf08-4536-9b41-79512b02a066
-title: Evento WPCEVENT_WEB_URLVISIT (Wpcevent. h)
+title: WPCEVENT_WEB_URLVISIT evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1075ae930cdaa9ee539dbc17a8c13d5c2a41add
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b9524909ee78d14395e2f208fe265b3abc31240d2036788b8b84c4fea05aac9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112705"
 ---
-# <a name="wpcevent_web_urlvisit-event"></a>\_ \_ Evento URLVISIT web WPCEVENT
+# <a name="wpcevent_web_urlvisit-event"></a>Evento WPCEVENT \_ WEB \_ URLVISIT
 
-Evento por usuario generado por el filtro de contenido web debido al intento de obtener acceso a una dirección URL.
+Evento por usuario generado por el filtro de contenido web debido a que se intenta acceder a una dirección URL.
 
 
 ```C++
@@ -36,21 +36,21 @@ Dirección URL que está intentando abrirse.
 *Aplicación* 
 </dt> <dd>
 
-La aplicación que está generando el evento.
+Aplicación que genera el evento.
 
 </dd> <dt>
 
 *Versión* 
 </dt> <dd>
 
-La cadena de versión de la aplicación.
+Cadena de versión de la aplicación.
 
 </dd> <dt>
 
 *Motivo* 
 </dt> <dd>
 
-Un valor de la enumeración [**WPCFLAG \_ ISBLOCKED**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica información sobre qué eventos están bloqueados y qué controles hay en su lugar.
+Valor de la enumeración [**\_ WPCFLAG ISBLOCKED**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica información sobre qué eventos están bloqueados para su uso y qué controles están en su lugar.
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Recuento de entradas bloqueadas en el campo de categoría.
 *Categoría* 
 </dt> <dd>
 
-Una cadena delimitada de identificadores de categoría que están bloqueados.
+Cadena delimitada de identificadores de categoría que están bloqueados.
 
 </dd> </dl>
 
@@ -79,11 +79,11 @@ Una cadena delimitada de identificadores de categoría que están bloqueados.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Encabezado<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
@@ -91,10 +91,10 @@ Una cadena delimitada de identificadores de categoría que están bloqueados.
 
 <dl> <dt>
 
-[Uso de las API de registro para controles parentales](using-logging-apis-for-parental-controls.md)
+[Uso de las API de registro para los controles parentales](using-logging-apis-for-parental-controls.md)
 </dt> <dt>
 
-[**WPC \_ args \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
+[**WPC \_ ARGS \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
 </dt> </dl>
 
  

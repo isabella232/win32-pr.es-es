@@ -1,7 +1,7 @@
 ---
 description: Controla las métricas por clase.
 ms.assetid: f848fdec-561b-4be0-b1e9-a59e15196d1d
-title: Método ControlMetricsByClass de la clase Msvm_MetricService
+title: Método ControlMetricsByClass de la Msvm_MetricService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4149da6327edf774afda20e64f34ae0958f7c3df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d522a2c66cf8b7127520fc3ec66b809c4e825cb759de116b3a3e820eb0ae676c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046536"
 ---
-# <a name="controlmetricsbyclass-method-of-the-msvm_metricservice-class"></a>Método ControlMetricsByClass de la \_ clase MetricService de MSVM
+# <a name="controlmetricsbyclass-method-of-the-msvm_metricservice-class"></a>Método ControlMetricsByClass de la clase \_ MetricService de Msvm
 
 Controla las métricas por clase.
 
@@ -41,24 +41,24 @@ uint32 ControlMetricsByClass(
 
 <dl> <dt>
 
-*Asunto* \[ de\]
+*Asunto* \[ En\]
 </dt> <dd>
 
-Identifica la clase CIM cuyas métricas se van a controlar.
+Identifica la clase CIM para la que se controlarán las métricas.
 
 </dd> <dt>
 
-*Definición* \[ de de\]
+*Definición* \[ En\]
 </dt> <dd>
 
-Identifica un [**\_ BaseMetricDefinition de CIM**](cim-basemetricdefinition.md) para el que se controlarán las métricas.
+Identifica una [**\_ baseMetricDefinition cim**](cim-basemetricdefinition.md) para la que se controlarán las métricas.
 
 </dd> <dt>
 
-*MetricCollectionEnabled* \[ de\]
+*MetricCollectionEnabled* \[ En\]
 </dt> <dd>
 
-Indica la operación deseada que se va a realizar en las métricas.
+Indica la operación deseada que se realizará en las métricas.
 
 <dt>
 
@@ -78,7 +78,7 @@ Indica la operación deseada que se va a realizar en las métricas.
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecer** (4)
+**Restablecimiento** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -92,7 +92,7 @@ Indica la operación deseada que se va a realizar en las métricas.
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (32768... 65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> </dl>
@@ -115,7 +115,7 @@ Este método devuelve uno de los siguientes valores:
 **Método reservado** (..)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -125,9 +125,9 @@ Este método devuelve uno de los siguientes valores:
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -136,7 +136,7 @@ Este método devuelve uno de los siguientes valores:
 
 <dl> <dt>
 
-[**MSVM \_ MetricService**](msvm-metricservice.md)
+[**Msvm \_ MetricService**](msvm-metricservice.md)
 </dt> </dl>
 
  

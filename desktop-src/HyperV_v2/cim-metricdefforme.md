@@ -1,5 +1,5 @@
 ---
-description: Representa una asociación en la que un \_ objeto BaseMetricDefinition de CIM define las métricas de un elemento administrado.
+description: Representa una asociación en la que un objeto \_ BaseMetricDefinition cim define las métricas de un elemento administrado.
 ms.assetid: 10905038-fc23-4018-bae8-f336e4f001e7
 title: CIM_MetricDefForME clase
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.locfileid: "119695315"
 ---
 # <a name="cim_metricdefforme-class"></a>\_Cim MetricDefForME (clase)
 
-Representa una asociación en la que un [**\_ objeto BaseMetricDefinition**](cim-basemetricdefinition.md) de CIM define las métricas de un elemento administrado.
+Representa una asociación en la que un objeto [**\_ BaseMetricDefinition**](cim-basemetricdefinition.md) cim define las métricas de un elemento administrado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ class CIM_MetricDefForME : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ MetricDefForME de CIM** tiene estos tipos de miembros:
+La **clase \_ Cim MetricDefForME** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ MetricDefForME de CIM** tiene estas propiedades.
+La **clase \_ Cim MetricDefForME** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -63,20 +63,20 @@ Tipo de acceso: solo lectura
 Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Elemento administrado asociado a la definición de métrica.
+Elemento administrado que está asociado a la definición de métrica.
 
 </dd> <dt>
 
 **Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **\_ Cim BaseMetricDefinition**
+Tipo de datos: **Cim \_ BaseMetricDefinition**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
 Definición de métrica asociada al elemento administrado.
@@ -147,7 +147,7 @@ Indica si la métrica se recopila para el elemento administrado.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

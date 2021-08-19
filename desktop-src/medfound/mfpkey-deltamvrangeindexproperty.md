@@ -35,7 +35,7 @@ Esta propiedad puede establecerse en uno de los valores siguientes:
 
 
 
-| Valor | Descripción                                                                          |
+| Value | Descripción                                                                          |
 |-------|--------------------------------------------------------------------------------------|
 | 0     | Use el intervalo de vectores de movimiento delta existente.                                          |
 | 1     | Duplica el intervalo de vectores de movimiento delta en la dirección horizontal.                    |
@@ -50,7 +50,7 @@ Esta propiedad puede establecerse en uno de los valores siguientes:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
@@ -58,7 +58,7 @@ Esta propiedad puede establecerse en uno de los valores siguientes:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

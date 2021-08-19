@@ -46,7 +46,7 @@ virtual HRESULT CheckConnect(
 *dir* 
 </dt> <dd>
 
-Miembro del tipo [**enumerado \_ DIRECCIÓN**](/windows/win32/api/strmif/ne-strmif-pin_direction) del PIN, especificando qué pin en el filtro está realizando la conexión.
+Miembro del tipo [**enumerado \_ DIRECCIÓN**](/windows/win32/api/strmif/ne-strmif-pin_direction) DEL PIN, especificando qué pin en el filtro está realizando la conexión.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Los [**métodos CTransformInputPin::CheckConnect**](ctransforminputpin-checkconn
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

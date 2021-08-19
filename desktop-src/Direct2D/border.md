@@ -1,27 +1,27 @@
 ---
 title: Efecto de borde
-description: Use el efecto de borde para extender una imagen de los bordes.
+description: Use el efecto de borde para extender una imagen desde los bordes.
 ms.assetid: D3D569F5-9496-4633-93E2-26665FFC3B37
 keywords:
 - efecto de borde
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49fb43ae8b3e9c4eb449a8231f8b4ffcacf7658b
-ms.sourcegitcommit: ee06501cc29132927ade9813e0888aaa4decc487
+ms.openlocfilehash: 5ce125a96730ee59f63b18cfd1a08abd2432af6f3fdc6b5f06cfc2e9272a7a3c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "104547243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929001"
 ---
 # <a name="border-effect"></a>Efecto de borde
 
-Use el efecto de borde para extender una imagen de los bordes. Puede usar este efecto para repetir los píxeles desde los bordes de la imagen, ajustar los píxeles desde el extremo opuesto de la imagen o reflejar los píxeles en el borde del mapa de bits para extender la región del mapa de bits.
+Use el efecto de borde para extender una imagen desde los bordes. Puede usar este efecto para repetir los píxeles de los bordes de la imagen, encapsular los píxeles del extremo opuesto de la imagen o reflejar los píxeles en el borde del mapa de bits para ampliar la región del mapa de bits.
 
 El CLSID para este efecto es CLSID \_ D2D1Border.
 
 ## <a name="example-images"></a>Imágenes de ejemplo
 
-En los ejemplos siguientes se muestra el resultado del efecto de borde con cada modo. El tamaño de salida es infinito, pero estas imágenes de ejemplo se recortan dos veces el tamaño.
+En los ejemplos siguientes se muestra la salida del efecto de borde mediante cada modo. El tamaño de salida es infinito, pero estas imágenes de ejemplo se recortan al doble del tamaño.
 
 ### <a name="mirror"></a>Reflejo
 
@@ -43,9 +43,9 @@ En los ejemplos siguientes se muestra el resultado del efecto de borde con cada 
 
 | Antes                                                        |
 |---------------------------------------------------------------|
-| ![Captura de pantalla que muestra la imagen antes del efecto de una abrazadera.](images/border-before.jpg)     |
+| ![Captura de pantalla que muestra la imagen antes del efecto de una fijación.](images/border-before.jpg)     |
 | Después                                                         |
-| ![Captura de pantalla que muestra la imagen después de la transformación de una abrazadera.](images/10-border-clamp.png) |
+| ![Captura de pantalla que muestra la imagen después de la transformación para una fijación.](images/10-border-clamp.png) |
 
 
 
@@ -57,9 +57,9 @@ En los ejemplos siguientes se muestra el resultado del efecto de borde con cada 
 
 | Antes                                                       |
 |--------------------------------------------------------------|
-| ![Captura de pantalla que muestra la imagen antes del efecto para un ajuste.](images/border-before.jpg)    |
+| ![Captura de pantalla que muestra la imagen antes del efecto de un ajuste.](images/border-before.jpg)    |
 | Después                                                        |
-| ![Captura de pantalla que muestra la imagen después de la transformación de un ajuste.](images/10-border-wrap.png) |
+| ![Captura de pantalla que muestra la imagen después de la transformación de un encapsulado.](images/10-border-wrap.png) |
 
 
 
@@ -81,14 +81,14 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Propiedades del efecto
+## <a name="effect-properties"></a>Propiedades de efecto
 
 
 
-| Enumeración de índice y nombre para mostrar                                  | Descripción                                                                                                                                                                                                                                                            |
+| Enumeración de nombre para mostrar e índice                                  | Descripción                                                                                                                                                                                                                                                            |
 |---------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Modo de borde X<br/> D2D1 \_ Border \_ props \_ modo de borde \_ \_ X<br/> | Modo de borde en la dirección X del efecto. Puede establecerlo en Clamp, Wrap o Mirror. Vea [modos perimetrales](#edge-modes) para obtener más información.<br/> El tipo es el modo de borde de borde de D2D1 \_ \_ \_ .<br/> El valor predeterminado es la abrazadera del modo de borde de \_ borde D2D1 \_ \_ \_ .<br/> |
-| Modo de borde Y<br/> Modo de borde de propiedades de borde de D2D1 \_ \_ \_ \_ \_ Y<br/> | Modo de borde en la dirección Y del efecto. Puede establecerlo en Clamp, Wrap o Mirror. Vea [modos perimetrales](#edge-modes) para obtener más información.<br/> El tipo es el modo de borde de borde de D2D1 \_ \_ \_ .<br/> El valor predeterminado es la abrazadera del modo de borde de \_ borde D2D1 \_ \_ \_ .<br/> |
+| Modo perimetral X<br/> D2D1 \_ BORDER \_ PROP \_ EDGE \_ MODE \_ X<br/> | Modo perimetral en la dirección X para el efecto. Puede establecer esta opción en fijación, ajuste o reflejo. Consulte [Modos perimetrales](#edge-modes) para obtener más información.<br/> El tipo es D2D1 \_ BORDER \_ EDGE \_ MODE.<br/> El valor predeterminado es D2D1 \_ BORDER \_ EDGE MODE \_ \_ CLAMP.<br/> |
+| Modo perimetral Y<br/> D2D1 \_ BORDER \_ PROP \_ EDGE \_ MODE \_ Y<br/> | Modo perimetral en la dirección Y para el efecto. Puede establecer esta opción en fijación, ajuste o reflejo. Consulte [Modos perimetrales](#edge-modes) para obtener más información.<br/> El tipo es D2D1 \_ BORDER \_ EDGE \_ MODE.<br/> El valor predeterminado es D2D1 \_ BORDER \_ EDGE MODE \_ \_ CLAMP.<br/> |
 
 
 
@@ -98,11 +98,11 @@ m_d2dContext->EndDraw();
 
 
 
-| Enumeración de índice y nombre para mostrar                            | Descripción                                          |
+| Enumeración de nombre para mostrar e índice                            | Descripción                                          |
 |---------------------------------------------------------------|------------------------------------------------------|
-| Clamp<br/> \_Abrazadera del \_ \_ modo \_ de borde de borde de D2D1<br/>   | Repite los píxeles de los bordes de la imagen.      |
-| Encapsulado<br/> \_Ajuste del \_ \_ modo \_ de borde de borde de D2D1<br/>     | Usa píxeles desde el borde final opuesto de la imagen. |
-| Reflejo<br/> \_Reflejo del \_ \_ modo \_ de borde de D2D1 Border<br/> | Refleja los píxeles sobre el borde de la imagen.         |
+| Clamp<br/> D2D1 \_ BORDER \_ EDGE \_ MODE \_ CLAMP<br/>   | Repite los píxeles de los bordes de la imagen.      |
+| Encapsulado<br/> AJUSTE DEL MODO PERIMETRAL DE BORDE D2D1 \_ \_ \_ \_<br/>     | Usa píxeles del borde final opuesto de la imagen. |
+| Reflejo<br/> REFLEJO DEL MODO PERIMETRAL DE BORDE D2D1 \_ \_ \_ \_<br/> | Refleja píxeles sobre el borde de la imagen.         |
 
 
 
@@ -118,10 +118,10 @@ El tamaño del mapa de bits de salida es infinito para todas las entradas, excep
 
 | Requisito | Value |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows 8 y actualización de la plataforma para aplicaciones de escritorio de Windows 7 aplicaciones de la \[ \| tienda Windows\] |
-| Servidor mínimo compatible | Windows 8 y actualización de la plataforma para aplicaciones de escritorio de Windows 7 aplicaciones de la \[ \| tienda Windows\] |
-| Encabezado                   | d2d1effects. h                                                                      |
-| Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
+| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio Windows aplicaciones de la \| Tienda\] |
+| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio Windows aplicaciones de la \| Tienda\] |
+| Header                   | d2d1effects.h                                                                      |
+| Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

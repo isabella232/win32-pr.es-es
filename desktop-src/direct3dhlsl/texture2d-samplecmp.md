@@ -21,7 +21,7 @@ ms.locfileid: "120023055"
 ---
 # <a name="texture2dsamplecmp-methods"></a>Métodos Texture2D::SampleCmp
 
-Muestrea un [**objeto Texture2D**](sm5-object-texture2d.md)con un valor de comparación para rechazar muestras.
+Muestrea un [**objeto Texture2D**](sm5-object-texture2d.md)mediante un valor de comparación para rechazar muestras.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -39,7 +39,7 @@ Muestrea un [**objeto Texture2D**](sm5-object-texture2d.md)con un valor de compa
 
 Consulte [Texture-Object](dx-graphics-hlsl-to-type.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

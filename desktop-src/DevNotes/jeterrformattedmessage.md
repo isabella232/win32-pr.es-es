@@ -1,7 +1,7 @@
 ---
-description: Recupera un identificador de código de error (IDA) y crea la cadena de presentación final cuando se proporciona un error de jet e información de error extendida.
+description: Recupera un identificador de código de error (IDA) y crea la cadena de presentación final cuando se proporciona un error jet y la información de error extendida.
 ms.assetid: 961da4fb-cb70-4f3d-a4a4-1774be7a05f4
-title: JetErrFormattedMessage función)
+title: Función JetErrFormattedMessage
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Msjter40.dll
-ms.openlocfilehash: 75cdf93b4c35a8c7b3dd77fca42c205d898f6e97
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8b0fa6eb0ac4bc29e5657d3e58d9be1c27188a0faf7c7d68281ceca239dea8e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955784"
 ---
-# <a name="jeterrformattedmessage-function"></a>JetErrFormattedMessage función)
+# <a name="jeterrformattedmessage-function"></a>Función JetErrFormattedMessage
 
-Recupera un identificador de código de error (IDA) y crea la cadena de presentación final cuando se proporciona un error de jet e información de error extendida.
+Recupera un identificador de código de error (IDA) y crea la cadena de presentación final cuando se proporciona un error jet y la información de error extendida.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,24 +46,24 @@ JET_ERR JetErrFormattedMessage(
 
 <dl> <dt>
 
-*ERR* 
+*Err* 
 </dt> <dd>
 
-El número de error de jet que se usa para buscar y dar formato al mensaje de error que se pueda mostrar.
+Número de error de Jet que se usa para buscar y dar formato al mensaje de error que se puede mostrar.
 
 </dd> <dt>
 
 *pExtendedErrorInfo* 
 </dt> <dd>
 
-Toda la información de error de jet, incluido el nombre de la base de datos, el nombre de la tabla y cualquier información de error menor.
+Toda la información de error de Jet, incluido el nombre de la base de datos, el nombre de la tabla y cualquier información de error secundaria.
 
 </dd> <dt>
 
 *pIda* 
 </dt> <dd>
 
-Puntero a IDA asociado al código de error específico.
+Puntero al IDA asociado al código de error específico.
 
 </dd> <dt>
 
@@ -81,7 +81,7 @@ Recuento del número de bytes del mensaje de error.
 
 </dd> <dt>
 
-*pcbActual* 
+*actual* 
 </dt> <dd>
 
 Puntero al número real de bytes leídos.
@@ -91,30 +91,30 @@ Puntero al número real de bytes leídos.
 *pContextId* 
 </dt> <dd>
 
-Puntero al identificador de contexto que está asociado con el archivo de ayuda.
+Puntero al identificador de contexto asociado al archivo de ayuda.
 
 </dd> <dt>
 
-*pwszHelp/archivo* 
+*pwszHelp/file* 
 </dt> <dd>
 
-Un puntero a un puntero al archivo que explica el error.
+Puntero a un puntero al archivo que explica el error.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve **jet \_ errSuccess**; de lo contrario, devuelve un mensaje de error con formato que indica el motivo específico del error.
+Si la función se realiza correctamente, devuelve **jet \_ errSuccess;** de lo contrario, devuelve un mensaje de error con formato que indica el motivo específico del error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|-----------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Msjter40.dll</dt> </dl> |
 

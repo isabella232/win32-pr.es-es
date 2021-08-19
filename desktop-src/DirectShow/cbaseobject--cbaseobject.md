@@ -1,5 +1,5 @@
 ---
-description: 'Destructor CBaseObject.~CBaseObject: método Destructor.'
+description: 'Destructor CBaseObject.~CBaseObject: método destructor.'
 ms.assetid: 3714d030-f0bd-4826-a3c5-fc206bb88561
 title: Destructor CBaseObject.~CBaseObject (Combase.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 552dbcc764f335e639cb50e2e01411dee200068f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6508591f30a14e345cb67f9fe3a098dbaf357b6f60f57232af9f7af4570b6f6a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640185"
 ---
 # <a name="cbaseobjectcbaseobject-destructor"></a>Destructor CBaseObject.~CBaseObject
 
@@ -46,12 +46,12 @@ Este método disminuye el recuento de objetos activos. (Vea [**CBaseObject::Obje
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Combase.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Combase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

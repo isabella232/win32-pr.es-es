@@ -22,19 +22,19 @@ ms.locfileid: "119879015"
 ---
 # <a name="capicom_store_location-enumeration"></a>ENUMERACIÓN CAPICOM \_ STORE \_ LOCATION
 
-El **tipo de enumeración \_ CAPICOM STORE \_ LOCATION** indica la ubicación de un almacén [*de certificados.*](../secgloss/c-gly.md)
+El **tipo de enumeración \_ CAPICOM STORE \_ LOCATION** indica la ubicación de un [*almacén de certificados*](../secgloss/c-gly.md).
 
 ## <a name="members"></a>Miembros
 
 
 
-| Miembro                                      | Descripción                                                                                                                                                                                                                                                                      | Valor |
+| Miembro                                      | Descripción                                                                                                                                                                                                                                                                      | Value |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
 | **ALMACÉN DE MEMORIA \_ CAPICOM \_**                  | El almacén es un almacén de memoria. Los cambios en el contenido del almacén no se conservan.<br/>                                                                                                                                                                              | 0     |
-| **CAPICOM \_ LOCAL \_ MACHINE \_ STORE**          | El almacén es un almacén de máquina local. Los almacenes de máquinas locales solo pueden ser almacenes de lectura y escritura si el usuario tiene permisos de lectura y escritura. Si el usuario tiene permisos de lectura y escritura y si se abre el almacén de lectura y escritura, se conservan los cambios en el contenido del almacén.<br/> | 1     |
-| **ALMACÉN DE USUARIOS \_ ACTUAL DE CAPICOM \_ \_**           | El almacén es un almacén de usuario actual. Un almacén de usuarios actual puede ser un almacén de lectura y escritura. Si es así, se conservan los cambios en el contenido del almacén.<br/>                                                                                                                      | 2     |
-| **ALMACÉN DE USUARIOS \_ DE CAPICOM ACTIVE \_ DIRECTORY \_ \_** | El almacén es un Active Directory almacén. Active Directory se pueden abrir solo en modo de solo lectura. Los certificados no se pueden agregar ni quitar de Active Directory almacenes.<br/>                                                                                        | 3     |
-| **ALMACÉN DE USUARIOS \_ DE TARJETA \_ INTELIGENTE \_ CAPICOM \_**       | Los almacenes admiten almacenes de certificados basados en tarjetas inteligentes. La tienda es el grupo de tarjetas inteligentes actuales. Introducido en CAPICOM 2.0.<br/>                                                                                                                                         | 4     |
+| **CAPICOM \_ LOCAL \_ MACHINE \_ STORE**          | El almacén es un almacén de máquina local. Los almacenes de máquinas locales solo pueden ser almacenes de lectura y escritura si el usuario tiene permisos de lectura y escritura. Si el usuario tiene permisos de lectura y escritura y si el almacén se abre de lectura y escritura, los cambios en el contenido del almacén se conservan.<br/> | 1     |
+| **ALMACÉN DE USUARIOS \_ ACTUAL DE CAPICOM \_ \_**           | El almacén es un almacén de usuario actual. Un almacén de usuario actual puede ser un almacén de lectura y escritura. Si es así, se conservan los cambios en el contenido del almacén.<br/>                                                                                                                      | 2     |
+| **ALMACÉN DE USUARIOS DE CAPICOM \_ ACTIVE \_ DIRECTORY \_ \_** | El almacén es un Active Directory almacén. Active Directory se pueden abrir solo en modo de solo lectura. Los certificados no se pueden agregar ni quitar de Active Directory almacenes.<br/>                                                                                        | 3     |
+| **TIENDA DE USUARIOS \_ DE \_ TARJETA INTELIGENTE CAPICOM \_ \_**       | Los almacenes admiten almacenes de certificados basados en tarjetas inteligentes. La tienda es el grupo de tarjetas inteligentes presentes. Introducido en CAPICOM 2.0.<br/>                                                                                                                                         | 4     |
 
 
 
@@ -49,7 +49,7 @@ Los métodos siguientes usan el tipo de enumeración **\_ CAPICOM STORE \_ LOCAT
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|--------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                |
 | Header<br/>          | <dl> <dt>Capicom.h</dt> </dl> |

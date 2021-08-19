@@ -1,32 +1,32 @@
 ---
-description: Roles de dispositivo para aplicaciones de DirectShow
+description: Roles de dispositivo para DirectShow aplicaciones
 ms.assetid: 54f42bda-b4a0-465c-9ce6-9102d2908776
-title: Roles de dispositivo para aplicaciones de DirectShow
+title: Roles de dispositivo para DirectShow aplicaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df8b43ddd56870b65fc9ec1e3bb600e8e6b79528
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 56e22a86e5537f11b6b4153753841a2682b5ac77a043a3fa74538714a2540377
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104495821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957364"
 ---
-# <a name="device-roles-for-directshow-applications"></a>Roles de dispositivo para aplicaciones de DirectShow
+# <a name="device-roles-for-directshow-applications"></a>Roles de dispositivo para DirectShow aplicaciones
 
 > [!Note]  
-> La [API de MMDevice](mmdevice-api.md) admite roles de dispositivo. Sin embargo, la interfaz de usuario de Windows Vista no implementa la compatibilidad con esta característica. La compatibilidad con la interfaz de usuario para los roles de dispositivo puede implementarse en una versión futura de Windows. Para obtener más información, consulte [roles de dispositivo en Windows Vista](device-roles-in-windows-vista.md).
+> MMDevice [API admite roles](mmdevice-api.md) de dispositivo. Sin embargo, la interfaz de usuario Windows Vista no implementa compatibilidad con esta característica. La compatibilidad de la interfaz de usuario con los roles de dispositivo podría implementarse en una versión futura de Windows. Para obtener más información, vea [Roles de dispositivo en Windows Vista](device-roles-in-windows-vista.md).
 
  
 
-La API de DirectShow no proporciona un medio para que una aplicación Seleccione el [dispositivo de punto de conexión de audio](audio-endpoint-devices.md) que se asigna a un [rol de dispositivo](device-roles.md)determinado. Sin embargo, en Windows Vista, las API de audio principales se pueden usar junto con una aplicación de DirectShow para habilitar la selección de dispositivos en función del rol del dispositivo. Con la ayuda de las API de audio principales, la aplicación puede:
+La API DirectShow no proporciona un medio para que una aplicación seleccione el dispositivo de punto de conexión de [audio](audio-endpoint-devices.md) asignado a un rol de [dispositivo determinado.](device-roles.md) Sin embargo, Windows Vista, las API de audio principales se pueden usar junto con una aplicación DirectShow para habilitar la selección de dispositivos en función del rol de dispositivo. Con la ayuda de las API de audio principales, la aplicación puede:
 
 -   Identifique el dispositivo de punto de conexión de audio que el usuario ha asignado a un rol de dispositivo determinado.
--   Cree un filtro de representación de audio de DirectShow con una interfaz [**IBaseFilter**](/windows/desktop/api/strmif/nn-strmif-ibasefilter) que encapsule el dispositivo de punto de conexión de audio.
--   Cree un gráfico de DirectShow que incorpore el filtro.
+-   Cree un DirectShow de representación de audio con una [**interfaz IBaseFilter**](/windows/desktop/api/strmif/nn-strmif-ibasefilter) que encapsula el dispositivo de punto de conexión de audio.
+-   Cree un DirectShow gráfico que incorpore el filtro.
 
-Para obtener más información sobre DirectShow y [**IBaseFilter**](/windows/desktop/api/strmif/nn-strmif-ibasefilter), consulte la documentación de Windows SDK.
+Para obtener más información sobre DirectShow [**e IBaseFilter,**](/windows/desktop/api/strmif/nn-strmif-ibasefilter)consulte la documentación Windows SDK.
 
-En el ejemplo de código siguiente se muestra cómo crear un filtro de representación de audio de DirectShow que encapsula el dispositivo de punto de conexión de representación que se asigna a un rol de dispositivo determinado:
+En el ejemplo de código siguiente se muestra cómo crear un filtro de representación de audio DirectShow que encapsula el dispositivo del punto de conexión de representación asignado a un rol de dispositivo determinado:
 
 
 ```C++
@@ -96,9 +96,9 @@ Exit:
 
 
 
-En el ejemplo de código anterior, la función CreateAudioRenderer acepta un rol de dispositivo (eConsole, eMultimedia o eCommunications) como parámetro de entrada. El segundo parámetro es un puntero a través del cual la función escribe la dirección de una instancia de la interfaz [**IBaseFilter**](/windows/desktop/api/strmif/nn-strmif-ibasefilter) . Además, en el ejemplo se muestra cómo usar el método [**IMMDevice:: Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) para asignar la secuencia de audio de la instancia de **IBaseFilter** a una sesión de audio entre procesos con un GUID de sesión específico de la aplicación (especificado por la constante **guidAudioSessionId** ). El tercer parámetro de la llamada a **Activate** apunta a una estructura que contiene el GUID de sesión y el marcador de proceso cruzado. Si el usuario ejecuta varias instancias de la aplicación, las secuencias de audio de todas las instancias usan el mismo GUID de sesión y, por tanto, pertenecen a la misma sesión.
+En el ejemplo de código anterior, la función CreateAudioRenderer acepta un rol de dispositivo (eConsole, eMultimedia o eCommunications) como parámetro de entrada. El segundo parámetro es un puntero a través del cual la función escribe la dirección de una instancia de [**interfaz IBaseFilter.**](/windows/desktop/api/strmif/nn-strmif-ibasefilter) Además, en el ejemplo se muestra cómo usar el método [**IMMDevice::Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) para asignar la secuencia de audio de la instancia de **IBaseFilter** a una sesión de audio entre procesos con un GUID de sesión específico de la aplicación (especificado por la **constante guidAudioSessionId).** El tercer parámetro de la llamada **a Activate** apunta a una estructura que contiene el GUID de sesión y la marca de proceso cruzado. Si el usuario ejecuta varias instancias de la aplicación, las secuencias de audio de todas las instancias usan el mismo GUID de sesión y, por tanto, pertenecen a la misma sesión.
 
-Como alternativa, el autor de la llamada puede especificar **null** como tercer parámetro en la llamada a [**Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) para asignar la secuencia a la sesión predeterminada como la sesión específica del proceso con el GUID NULL del valor GUID de sesión \_ . Para obtener más información, vea **IMMDevice:: Activate**.
+Como alternativa, el autor de la llamada puede especificar **NULL** como tercer parámetro en la llamada [**Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) para asignar la secuencia a la sesión predeterminada como sesión específica del proceso con el VALOR GUID de sesión \_ NULL. Para obtener más información, **vea IMMDevice::Activate**.
 
 ## <a name="related-topics"></a>Temas relacionados
 

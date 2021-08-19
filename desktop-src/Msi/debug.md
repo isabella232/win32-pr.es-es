@@ -19,7 +19,7 @@ Windows El instalador solo escribe líneas de comandos en el archivo de registro
 
 ## <a name="registry-key"></a>Clave del Registro
 
-**HKEY \_ Local \_ Machine** \\ **Software** \\ **Policies** \\ **Microsoft** \\ **Windows** \\ **Installer**
+**HKEY \_ Local \_ MACHINE** \\ **Software** \\ **Policies** \\ **Microsoft** \\ **Windows** \\ **Installer**
 
 ## <a name="data-type"></a>Tipo de datos
 

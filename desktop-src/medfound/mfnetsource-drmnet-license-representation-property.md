@@ -1,17 +1,17 @@
 ---
 description: Almacena una matriz de bytes que representa la licencia DRM asociada a la secuencia de bytes.
 ms.assetid: 866a9706-0b0a-4675-af61-5f55a5a69014
-title: Propiedad MFNETSOURCE_DRMNET_LICENSE_REPRESENTATION (Mfidl. h)
+title: MFNETSOURCE_DRMNET_LICENSE_REPRESENTATION propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92af9a17779381aaed2d2226e17023ca40bc9c1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2718ba8a13d8d0c00114449f1141be77db0d3f83930d3b3de2171719c3bdf2d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113555"
 ---
-# <a name="mfnetsource_drmnet_license_representation-property"></a>\_Propiedad de \_ representación de licencia de MFNETSOURCE DRMNET \_
+# <a name="mfnetsource_drmnet_license_representation-property"></a>Propiedad MFNETSOURCE \_ DRMNET \_ LICENSE \_ REPRESENTATION
 
 Almacena una matriz de bytes que representa la licencia DRM asociada a la secuencia de bytes.
 
@@ -19,23 +19,23 @@ Almacena una matriz de bytes que representa la licencia DRM asociada a la secuen
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
 Matriz de bytes (**BLOB**)
 
-BLOB de VT \_
+VT \_ BLOB
 
-**BLOB**
+**blob**
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **representación de \_ \_ licencia \_ Constant MFNETSOURCE DRMNET** define el GUID de esta clave de propiedad. El identificador de propiedad (PID) es cero.
+La constante **MFNETSOURCE \_ DRMNET \_ LICENSE \_ REPRESENTATION** define el GUID de esta clave de propiedad. El identificador de propiedad (PID) es cero.
 
-Esta propiedad es de solo lectura. Para obtener el valor de propiedad de la secuencia de bytes de red, llame a **IPropertyStore:: GetValue** y pase la estructura **PROPERTYKEY** en el parámetro *key* . El miembro **fmtid** de **PROPERTYKEY** debe establecerse en el GUID de la propiedad.
+Esta propiedad es de solo lectura. Para obtener el valor de propiedad de la secuencia de bytes de red, llame a **IPropertyStore::GetValue** y pase la **estructura PROPERTYKEY** en el *parámetro key.* El **miembro fmtid** de **PROPERTYKEY** debe establecerse en el GUID de la propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,9 +43,9 @@ Esta propiedad es de solo lectura. Para obtener el valor de propiedad de la secu
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,10 +53,10 @@ Esta propiedad es de solo lectura. Para obtener el valor de propiedad de la secu
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
-[Funciones de red en Media Foundation](networking-in-media-foundation.md)
+[Redes en Media Foundation](networking-in-media-foundation.md)
 </dt> </dl>
 
  

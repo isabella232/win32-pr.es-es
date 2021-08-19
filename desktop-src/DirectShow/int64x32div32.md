@@ -1,7 +1,7 @@
 ---
-description: La función Int64x32Div32 implementa la fórmula ((a \* b) + RND)/c, donde a es un valor de 64 bits y b, c y RND son valores de 32 bits.
+description: La función Int64x32Div32 implementa la fórmula ((a b)+rnd)/c, donde a es un valor de 64 bits y b, c y rnd son valores de \* 32 bits.
 ms.assetid: 566ac194-5b15-43b7-aa7c-0c18c6f69691
-title: Función Int64x32Div32 (Wxutil. h)
+title: Función Int64x32Div32 (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: de60ca08b262dbf97aa118bd115bd6dc58576a1d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a56425d1f07346f8e546940ff5880416e4e63efc692974c78f0e344b9ec01c5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051595"
 ---
-# <a name="int64x32div32-function"></a>Int64x32Div32 función)
+# <a name="int64x32div32-function"></a>Función Int64x32Div32
 
-La `Int64x32Div32` función implementa la fórmula `((a*b)+rnd)/c` donde *a* es un valor de 64 bits y *b*, *c* y *RND* son valores de 32 bits.
+La función implementa la fórmula donde es un valor de `Int64x32Div32` `((a*b)+rnd)/c` 64 bits y *b*, *c* y *rnd* son valores de 32 bits. 
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ LONGLONG WINAPI Int64x32Div32(
 
 <dl> <dt>
 
-*un* 
+*Un* 
 </dt> <dd>
 
 Multiplicando.
@@ -66,7 +66,7 @@ Divisor.
 
 </dd> <dt>
 
-*NúmAleat* 
+*Rnd* 
 </dt> <dd>
 
 Factor de redondeo.
@@ -88,11 +88,11 @@ Devuelve el `(a * b + rnd)/c` cálculo o uno de los valores siguientes.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El redondeo en la división es hacia cero. La división por cero se cuenta como una condición de desbordamiento.
+El redondeo de la división es hacia cero. La división por cero se cuenta como una condición de desbordamiento.
 
-Las marcas de tiempo y los tiempos de búsqueda son valores de 64 bits, por lo que esta función es útil para realizar conversiones en sistemas de 32 bits. Por ejemplo, en MPEG-1, la referencia del reloj del sistema es 90 kHz o 90.000 TICs por segundo. La fórmula que se va a convertir en el tiempo de referencia (unidades 100-nanosegundos) es
+Las marcas de tiempo y las horas de búsqueda son valores de 64 bits, por lo que esta función es útil para realizar conversiones en sistemas de 32 bits. Por ejemplo, en MPEG-1, la referencia del reloj del sistema es de 90 kHz o 90 000 tics por segundo. La fórmula para convertir esto en tiempo de referencia (unidades de 100 nanosegundos) es
 
 
 ```C++
@@ -101,7 +101,7 @@ Las marcas de tiempo y los tiempos de búsqueda son valores de 64 bits, por lo q
 
 
 
-que se puede calcular como `Int64x32Div32(timestamp, 1000, 9, 0)` . Use el parámetro *RND* como factor de redondeo.
+que se puede calcular como `Int64x32Div32(timestamp, 1000, 9, 0)` . Use el *parámetro rnd* como factor de redondeo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -109,8 +109,8 @@ que se puede calcular como `Int64x32Div32(timestamp, 1000, 9, 0)` . Use el pará
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

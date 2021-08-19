@@ -1,6 +1,6 @@
 ---
 title: Método PSCb ID3DX12PipelineParserCallbacks (D3DX12.h)
-description: Llama a la devolución de llamada del subobjeto del sombreador de píxeles de un objeto que implementa esta interfaz.
+description: Llama a la devolución de llamada del subobjeto sombreador de píxeles de un objeto que implementa esta interfaz.
 ms.assetid: 3397B018-C26A-426F-88BB-89013BACBEEA
 keywords:
 - Método PSCb
@@ -24,9 +24,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119894575"
 ---
-# <a name="id3dx12pipelineparsercallbackspscb-method"></a>Método ID3DX12PipelineParserCallbacks::P SCb
+# <a name="id3dx12pipelineparsercallbackspscb-method"></a>Id3DX12PipelineParserCallbacks::P SCb
 
-Llama a la devolución de llamada del subobjeto del sombreador de píxeles de un objeto que implementa esta interfaz.
+Llama a la devolución de llamada del subobjeto sombreador de píxeles de un objeto que implementa esta interfaz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,7 +68,7 @@ No devuelve nada.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

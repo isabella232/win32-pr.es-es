@@ -43,7 +43,7 @@ Especifica un nivel de suplantación, que indica la cantidad de autoridad que se
 
 [**GetUserName producirá**](/windows/desktop/api/winbase/nf-winbase-getusernamea) un error al suplantar en el nivel de identificación. La solución alternativa consiste en suplantar, llamar [**a OpenThreadToken,**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openthreadtoken)revertir, llamar a [**GetTokenInformation**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-gettokeninformation)y, por último, llamar a [**LookupAccountSid.**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) Con [**CoSetProxyBlanket,**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket)el cliente establece el nivel de suplantación
 
-Con [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket), el cliente establece el nivel de suplantación y la identidad de proxy que estarán disponibles cuando un servidor llame a [**CoImpersonateClient.**](/windows/desktop/api/combaseapi/nf-combaseapi-coimpersonateclient) La identidad que verá el servidor cuando se lleve a cabo la suplantación se describe en [La suplantación.](cloaking.md) Tenga en cuenta que al realizar una llamada mientras se suplanta, el destinatario normalmente recibirá el token de proceso del autor de la llamada, no el token de suplantación del autor de la llamada. Para recibir el token de suplantación del autor de la llamada, el autor de la llamada debe habilitar la protección.
+Con [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket), el cliente establece el nivel de suplantación y la identidad de proxy que estarán disponibles cuando un servidor llame a [**CoImpersonateClient.**](/windows/desktop/api/combaseapi/nf-combaseapi-coimpersonateclient) La identidad que verá el servidor cuando se lleve a cabo la suplantación se describe en [La suplantación.](cloaking.md) Tenga en cuenta que al realizar una llamada mientras se suplanta, el destinatario normalmente recibirá el token de proceso del autor de la llamada, no el token de suplantación del autor de la llamada. Para recibir el token de suplantación del autor de la llamada, el autor de la llamada debe habilitar la activación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Con [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetp
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

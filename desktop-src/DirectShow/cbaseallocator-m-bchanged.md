@@ -1,7 +1,7 @@
 ---
-description: Marca que indica si los requisitos de búfer han cambiado.
+description: Marca que indica si los requisitos del búfer han cambiado.
 ms.assetid: 34d946f9-125c-40fb-b09e-82457add07d6
-title: 'Miembro CBaseAllocator:: m_bChanged (Amfilter. h)'
+title: CBaseAllocator::m_bChanged miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 86c700f3c0ee820206613bcf3147652b1826b57a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7edb5ed770628d7dfd982017e720ef0136bace74dd7e311121925f6c8657d2fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131505"
 ---
-# <a name="cbaseallocatorm_bchanged-member"></a>Miembro bChanged CBaseAllocator:: m \_
+# <a name="cbaseallocatorm_bchanged-member"></a>Miembro CBaseAllocator::m \_ bChanged
 
-Marca que indica si los requisitos de búfer han cambiado. El método [**CBaseAllocator:: SetProperties**](cbaseallocator-setproperties.md) establece el valor en **true**. En una clase derivada, el método virtual puro [**CBaseAllocator:: Alloc**](cbaseallocator-alloc.md) debe volver a establecer el valor en **false**. Una vez que se han asignado los búferes, no es necesario volver a asignarlos, mientras que *m \_ BChanged* es **false**.
+Marca que indica si los requisitos del búfer han cambiado. El [**método CBaseAllocator::SetProperties**](cbaseallocator-setproperties.md) establece el valor en **TRUE.** En una clase derivada, el método virtual puro [**CBaseAllocator::Alloc**](cbaseallocator-alloc.md) debe volver a establecer el valor en **FALSE.** Una vez asignados los búferes, no es necesario volver a asignarlos mientras *m \_ bChanged* sea **FALSE.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ BOOL m_bChanged;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ BOOL m_bChanged;
 
 <dl> <dt>
 
-[**Clase CBaseAllocator**](cbaseallocator.md)
+[**CBaseAllocator (clase)**](cbaseallocator.md)
 </dt> </dl>
 
  

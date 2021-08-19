@@ -4,12 +4,12 @@ description: Los elementos gráficos muestran las relaciones, la jerarquía y el
 ms.assetid: f9e741e9-a72e-4bdb-bd95-8916c7cf344f
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 03db1f7a90554848f71cd43cdfa769597b71cd2f
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: cc4b5ce620660e655eeee81cab869909c14b4f8290b5852da7f480da85951a5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119936238"
 ---
 # <a name="graphic-elements"></a>Elementos gráficos
 
@@ -35,7 +35,7 @@ Una tendencia de diseño en Microsoft Windows es una apariencia más sencilla y 
 Para decidir si un elemento gráfico es necesario, tenga en cuenta estas preguntas:
 
 -   **¿La presentación y la comunicación del diseño son tan claras y eficaces sin el elemento?** Si es así, quítelo.
--   **¿Puede comunicar de forma eficaz las relaciones mediante el diseño por sí solo?** Si es así, use [el diseño](vis-layout.md) en su lugar. Puede colocar controles relacionados entre sí y colocar espaciado adicional entre controles no relacionados. También puede usar la sangría para mostrar relaciones jerárquicas.
+-   **¿Puede comunicar de forma eficaz las relaciones mediante el diseño por sí solo?** Si es así, use [el diseño en](vis-layout.md) su lugar. Puede colocar controles relacionados entre sí y colocar espaciado adicional entre controles no relacionados. También puede usar la sangría para mostrar relaciones jerárquicas.
 
 ![captura de pantalla de un diseño de cuatro iconos ](images/vis-graphic-image2.png)
 
@@ -52,7 +52,7 @@ Los elementos gráficos tienen varios patrones de uso:
 | Elemento                                                                                                              |   Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Ilustraciones gráficas**<br/> use para comunicar una idea visualmente. <br/>                         | Las ilustraciones gráficas son similares a los iconos, salvo que pueden tener cualquier tamaño y normalmente no son interactivas. <br/> ![gráfico del historial de uso de cpu de captura de pantalla ](images/vis-graphic-image3.png)<br/> En este ejemplo, se usa una ilustración gráfica para sugerir la naturaleza de una característica.<br/>                                                                                                                                                                                                        |
-| **Fondos**<br/> use para resaltar o desacentr los distintos tipos de contenido. <br/>           | Los fondos se pueden usar para resaltar contenido importante. <br/> ![captura de pantalla de un mensaje de virus en el fondo rojo ](images/vis-graphic-image4.png)<br/> en este ejemplo, se usa un fondo para resaltar una tarea importante.<br/> los fondos también se pueden usar para desacentr el contenido secundario. <br/> ![captura de pantalla de elementos del panel de control ](images/vis-graphic-image5.png)<br/> En este ejemplo, las tareas secundarias se desenmarcan si se encuentran en un panel de tareas.<br/>   |
+| **Fondos**<br/> use para resaltar o desacentr los distintos tipos de contenido. <br/>           | Los fondos se pueden usar para resaltar contenido importante. <br/> ![captura de pantalla de un mensaje de virus en el fondo rojo ](images/vis-graphic-image4.png)<br/> en este ejemplo, se usa un fondo para resaltar una tarea importante.<br/> los fondos también se pueden usar para desacentr el contenido secundario. <br/> ![captura de pantalla de los elementos del panel de control ](images/vis-graphic-image5.png)<br/> En este ejemplo, las tareas secundarias se desenmarcan si se encuentran en un panel de tareas.<br/>   |
 | **Banners**<br/> se usa para indicar el estado importante. <br/>                                         | A diferencia de los fondos, los banners resaltan principalmente una sola cadena de texto. <br/> ![captura de pantalla del banner con información de configuración ](images/vis-graphic-image6.png)<br/> En este ejemplo, se usa un banner para indicar que la configuración de la página se controla mediante directiva de grupo.<br/>                                                                                                                                                                                                       |
 | **Vidrio**<br/> use estratégicamente para reducir el peso visual de una ventana. <br/>                   | El cristal puede reducir el peso de una superficie si se centra en el contenido en lugar de en la propia ventana. <br/> ![captura de pantalla de un ave en la galería de fotos de Windows ](images/vis-graphic-image7.png)<br/> En este ejemplo, Glass centra la atención del usuario en el contenido en lugar de en los controles.<br/>                                                                                                                                                                                                 |
 | **Agregadores**<br/> use para crear una relación visual entre controles fuertemente relacionados. <br/> | ![captura de pantalla de flechas de navegación hacia atrás y hacia delante ](images/vis-graphic-image8.png)<br/> En este ejemplo, se usa un fondo de agregador para resaltar la relación entre los botones atrás y hacia delante en el explorador.<br/> ![captura de pantalla de los controles de la galería de fotos de Windows ](images/vis-graphic-image7.png)<br/> En este ejemplo, se usa un agregador de límites para resaltar la relación entre los controles y hacer que se sientan como un control único en lugar de ocho.<br/> |
@@ -72,7 +72,7 @@ Los elementos gráficos tienen varios patrones de uso:
 
 ### <a name="graphic-designs"></a>Diseños gráficos
 
--   **Los gráficos son más eficaces cuando refuerzan una sola idea simple.** Los gráficos complejos que requieren la reflexión para interpretar no funcionan bien. Los jeroglíacos son los mejores para los dibujos de la cueva.
+-   **Los gráficos son más eficaces cuando refuerzan una sola idea sencilla.** Los gráficos complejos que requieren la reflexión para interpretar no funcionan bien. Los jeroglíacos son los mejores para los dibujos de la cueva.
 
     **Incorrecto:**
 
@@ -83,8 +83,8 @@ Los elementos gráficos tienen varios patrones de uso:
 -   **No use flechas, botones de contenido adicional, marcos de botones u otras asequiciones asociadas a controles interactivos.** Al hacerlo, se invita a los usuarios a interactuar con los gráficos.
 -   **Evite las franjas de rojo, amarillo y verde puros en los diseños.** Para evitar confusiones, reserve estos colores para comunicar el estado. Si debe usar estos colores para algo distinto del estado, use colores muted en lugar de colores puros.
 -   **Usar diseños culturalmente neutros.** Lo que puede tener un significado determinado en un país, región o referencia cultural puede no tener el mismo significado en otro.
--   **Evite el uso de personas, caras, sexo o partes del cuerpo, así como símbolos populares, políticas y nacionales.** Es posible que estas imágenes no se traduzcan fácilmente o que puedan ser ofensivos.
--   **Cuando debe representar personas o usuarios, representarlos genéricamente;** evite representaciones realistas.
+-   **Evite el uso de personas, caras, sexo o partes del cuerpo, así como símbolos de sentimiento, políticas y nacionales.** Es posible que estas imágenes no se traduzcan fácilmente o que puedan ser ofensivos.
+-   **Cuando debe representar a personas o usuarios, representarlos genéricamente;** evite representaciones realistas.
 
 ### <a name="backgrounds-and-banners"></a>Fondos y banners
 
@@ -112,7 +112,7 @@ Los elementos gráficos tienen varios patrones de uso:
 ### <a name="separators"></a>Separadores
 
 -   **Use líneas verticales y horizontales para los separadores.** Asegúrese de tener espacio suficiente entre los separadores y el contenido que se va a separar.
--   En el caso de los separadores entre el contenido que se puede ajustar (divisores), muestre el puntero de cambio de tamaño al mantener el puntero.
+-   Para los separadores entre contenido que se puede ajustar (divisores), muestre el puntero de cambio de tamaño al mantener el puntero.
 
 ![Captura de pantalla que muestra un divisor con el puntero de cambio de tamaño.](images/vis-graphic-image17.png)
 
@@ -122,12 +122,12 @@ En estos ejemplos, los punteros de cambio de tamaño se muestran al mantener el 
 
 ### <a name="shadows"></a>Shadows
 
--   **Use solo para que el contenido o los objetos más significativos del programa que se arrastran se desta decir visualmente en su fondo.** Considere las sombras como desorden visual en otras circunstancias.
+-   **Use solo para que el contenido o los objetos más significativos del programa que se arrastran desta decir visualmente sobre su fondo.** Considere las sombras como desorden visual en otras circunstancias.
 
 ### <a name="high-dpi-support"></a>Compatibilidad con valores altos de ppp
 
 -   **Admite modos de vídeo de 96 y 120 puntos por pulgada (ppp).** Detecte el modo de ppp en el inicio y controle los eventos de cambio de ppp. Windows está optimizado para 96 y 120 ppp y usa 96 ppp de forma predeterminada.
--   **Prefiere proporcionar mapas de bits independientes representados específicamente para 96 y 120 ppp en lugar de gráficos de escalado.** Proporcione al menos versiones de 96 y 120 ppp para los mapas de bits más importantes y visibles, y centrar o escalar los demás. Estas aplicaciones se consideran "con reconocimiento de valores altos de ppp" y proporcionan una mejor experiencia visual general que los programas que Windows escala automáticamente.
+-   **Prefiere proporcionar mapas de bits independientes representados específicamente para 96 y 120 ppp en lugar de gráficos de escalado.** Proporcione al menos versiones de 96 y 120 ppp para los mapas de bits más importantes y visibles, y centrar o escalar los demás. Estas aplicaciones se consideran "con reconocimiento de valores altos de ppp" y proporcionan una mejor experiencia visual general que los programas que se escalan automáticamente mediante Windows.
     -   Desarrolladores: puede declarar un programa compatible con valores altos de ppp (e impedir el escalado automático) estableciendo la marca compatible con ppp en el manifiesto del programa o llamando a la API SetProcessDPIAware() durante la inicialización del programa. Puede usar macros para simplificar la selección de los gráficos correctos. En el caso de los mapas de bits de Win32, puede usar SS CENTERIMAGE para centrar o \_ \_ SS REALSIZECONTROL para escalar.
 -   Compruebe el programa en 96 y 120 ppp para:
     -   Gráficos demasiado pequeños o demasiado grandes.

@@ -90,7 +90,7 @@ Puntero a **TRUE si** el controlador, o una versión más reciente, está instal
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la operación se realiza correctamente, el valor devuelto es S \_ OK; de lo **contrario, HRESULT** contendrá un código de error.
+Si la operación se realiza correctamente, el valor devuelto es S \_ OK; de lo contrario, **HRESULT** contendrá un código de error.
 
 Para obtener más información sobre los códigos de error COM, vea [Control de errores.](../com/error-handling-in-com.md)
 
@@ -116,7 +116,7 @@ Para obtener más información sobre los códigos de error COM, vea [Control de 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
 description: Recupera el identificador del lápiz óptico.
 ms.assetid: 27320a2f-1e4a-4d7d-a1f8-5244f4a03415
-title: 'ITabletCursor:: GetId (método)'
+title: ITabletCursor::GetId (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 5d4f71d2cd465bfd2d1ff4c245154a300c431df2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7dc053b880c3ebaf4b94ae88a09c85f32f1dd5b8dc335756c8906c9a6f0fb4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104423987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938625"
 ---
-# <a name="itabletcursorgetid-method"></a>ITabletCursor:: GetId (método)
+# <a name="itabletcursorgetid-method"></a>ITabletCursor::GetId (método)
 
 Recupera el identificador del lápiz óptico.
 
@@ -40,10 +40,10 @@ HRESULT GetId(
 
 <dl> <dt>
 
-*pCid* \[ enuncia\]
+*pCid* \[ out\]
 </dt> <dd>
 
-Identificador del lápiz de Tablet PC.
+Identificador del lápiz óptico de tableta.
 
 </dd> </dl>
 
@@ -55,16 +55,16 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                            | Descripción                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                       |
 | <dl> <dt>**E \_ FAIL**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-\_El ID. de cursor se define como un valor DWORD.
+CURSOR \_ ID se define como DWORD.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ Este método puede devolver uno de estos valores.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -82,7 +82,7 @@ Este método puede devolver uno de estos valores.
 
 <dl> <dt>
 
-[**Interfaz ITabletCursor**](itabletcursor.md)
+[**ITabletCursor (interfaz)**](itabletcursor.md)
 </dt> </dl>
 
  

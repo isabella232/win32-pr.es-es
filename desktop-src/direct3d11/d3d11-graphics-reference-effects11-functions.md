@@ -1,19 +1,19 @@
 ---
-title: Effects 11 funciones
-description: Esta sección contiene información sobre las funciones de Effects 11.
+title: Funciones de Efectos 11
+description: Esta sección contiene información sobre las funciones De efectos 11.
 ms.assetid: 957ba54c-133a-4350-8532-79b66eba95bb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0497e338f6526abd5845a3c884b1b9d33c330eb3
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: d66bbfc237fc89b9b13f3aece08b2020edabd31084bb2f1b7585a811e53d502e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104078617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096385"
 ---
-# <a name="effects-11-functions"></a>Effects 11 funciones
+# <a name="effects-11-functions"></a>Funciones de Efectos 11
 
-Esta sección contiene información sobre las funciones de Effects 11.
+Esta sección contiene información sobre las funciones De efectos 11.
 
 
 ## <a name="in-this-section"></a>En esta sección
@@ -22,7 +22,7 @@ Esta sección contiene información sobre las funciones de Effects 11.
 
 | Tema                                                                           | Descripción                                                |
 |---------------------------------------------------------------------------------|------------------------------------------------------------|
-| [**D3DX11CreateEffectFromMemory**](d3dx11createeffectfrommemory.md)<br/> | Crea un efecto a partir de un efecto o archivo binario.<br/> |
+| [**D3DX11CreateEffectFromMemory**](d3dx11createeffectfrommemory.md)<br/> | Crea un efecto a partir de un archivo o efecto binario.<br/> |
 
 
 
@@ -32,7 +32,7 @@ Esta sección contiene información sobre las funciones de Effects 11.
 
 <dl> <dt>
 
-[Referencia de Effects 11](d3d11-graphics-reference-effects11.md)
+[Referencia de efectos 11](d3d11-graphics-reference-effects11.md)
 </dt> </dl>
 
  

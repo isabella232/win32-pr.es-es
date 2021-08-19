@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_LOGTIME. Equals (método, Object)'
-title: JET_LOGTIME. Equals (método, Object)
+description: 'Más información sobre: JET_LOGTIME. Método Equals (Object)'
+title: JET_LOGTIME. Método Equals (Object)
 TOCTitle: Equals method (Object)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_LOGTIME.Equals(System.Object)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_logtime.equals(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ffa8d4a6469a7355aa5066d2e42a935c10192453
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c511424cd0a19536646df8bfacb883d75589bda45de4b7a705b99db14b741912
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063255"
 ---
-# <a name="jet_logtimeequals-method-object"></a>JET_LOGTIME. Equals (método, Object)
+# <a name="jet_logtimeequals-method-object"></a>JET_LOGTIME. Método Equals (Object)
 
-Devuelve un valor que indica si esta instancia es igual a otra instancia de.
+Devuelve un valor que indica si esta instancia es igual a otra instancia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,23 +58,23 @@ public override bool Equals(
 #### <a name="parameters"></a>Parámetros
 
   - obj  
-    Tipo: [System. Object](/dotnet/api/system.object)  
+    Tipo: [System.Object](/dotnet/api/system.object)  
     
     Objeto que se va a comparar con esta instancia.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias son iguales.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_LOGTIME](./jet-logtime-structure2.md)
+[JET_LOGTIME estructura](./jet-logtime-structure2.md)
 
-[Miembros de JET_LOGTIME](./jet-logtime-members.md)
+[JET_LOGTIME miembros](./jet-logtime-members.md)
 
-[Equals (sobrecarga)](./jet-logtime.equals-method.md)
+[Sobrecarga igual a](./jet-logtime.equals-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

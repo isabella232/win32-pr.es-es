@@ -1,9 +1,9 @@
 ---
-title: función glTexCoordPointer (GL. h)
+title: Función glTexCoordPointer (Gl.h)
 description: La función glTexCoordPointer define una matriz de coordenadas de textura.
 ms.assetid: c3640a1b-ccc7-4f1a-94a5-a164f7377dbc
 keywords:
-- glTexCoordPointer (función) OpenGL
+- Función GlTexCoordPointer OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: febc9c79bdbc4a1ed1c14380af47f36309f12662
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0892f06b3fd5027939710be9ac74a2ae18c0dc0d712572d094b9a54fd6bb5b3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119888255"
 ---
-# <a name="gltexcoordpointer-function"></a>glTexCoordPointer función)
+# <a name="gltexcoordpointer-function"></a>Función glTexCoordPointer
 
-La función **glTexCoordPointer** define una matriz de coordenadas de textura.
+La **función glTexCoordPointer** define una matriz de coordenadas de textura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,18 +53,18 @@ Número de coordenadas por elemento de matriz. El valor de *size* debe ser 1, 2,
 *type* 
 </dt> <dd>
 
-El tipo de datos de cada coordenada de textura de la matriz mediante las siguientes constantes simbólicas: **GL \_ Short**, **GL \_ int**, **GL \_ float** y **GL \_ Double**.
+El tipo de datos de cada coordenada de textura de la matriz con las siguientes constantes simbólicas: **GL \_ SHORT,** **GL \_ INT,** **GL \_ FLOAT** y **GL \_ DOUBLE.**
 
 </dd> <dt>
 
-*STRI* 
+*Paso* 
 </dt> <dd>
 
-El desplazamiento de bytes entre los elementos de la matriz consecutivos. Cuando *STRIDE* es cero, los elementos de la matriz están estrechamente empaquetados en la matriz.
+Desplazamiento de bytes entre elementos de matriz consecutivos. Cuando *stride* es cero, los elementos de la matriz se empaquetan estrechamente en la matriz.
 
 </dd> <dt>
 
-*puntero* 
+*Puntero* 
 </dt> <dd>
 
 Puntero a la primera coordenada del primer elemento de la matriz.
@@ -83,37 +83,37 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                              | Significado                                      |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>  | el *tipo* no era un valor aceptado.<br/> |
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl> | *el tamaño* no era 1, 2, 3 o 4.<br/>     |
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl> | *STRIDE* es negativo.<br/>            |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>  | *Type* no era un valor aceptado.<br/> |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl> | *el* tamaño no era 1, 2, 3 o 4.<br/>     |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl> | *stride* era negativo.<br/>            |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glTexCoordPointer** especifica la ubicación y los datos de una matriz de coordenadas de textura que se van a utilizar al representar. El parámetro *size* especifica el número de coordenadas utilizadas para cada elemento de la matriz. El parámetro de *tipo* especifica el tipo de datos de cada coordenada de textura. El parámetro *STRIDE* determina el desplazamiento de bytes de un elemento de matriz al siguiente, lo que permite el empaquetado de vértices y atributos en una sola matriz o almacenamiento en matrices independientes. En algunas implementaciones, el almacenamiento de vértices y atributos en una sola matriz puede ser más eficaz que el uso de matrices independientes. Para obtener más información, vea [**glInterleavedArrays**](glinterleavedarrays.md). Cuando se especifica una matriz de coordenadas de textura, el tamaño, el tipo, el intervalo y el puntero se guardan en el estado del lado cliente.
+La **función glTexCoordPointer** especifica la ubicación y los datos de una matriz de coordenadas de textura que se usarán al representar. El *parámetro size* especifica el número de coordenadas usadas para cada elemento de la matriz. El *parámetro type* especifica el tipo de datos de cada coordenada de textura. El *parámetro stride* determina el desplazamiento de bytes de un elemento de matriz al siguiente, lo que permite el empaquetado de vértices y atributos en una sola matriz o almacenamiento en matrices independientes. En algunas implementaciones, almacenar los vértices y atributos en una sola matriz puede ser más eficaz que usar matrices independientes. Para obtener más información, [**vea glInterleavedArrays**](glinterleavedarrays.md). Cuando se especifica una matriz de coordenadas de textura, el tamaño, el tipo, el paso y el puntero se guardan en el estado del lado cliente.
 
-Una matriz de coordenadas de textura se habilita al especificar la constante de la **\_ \_ \_ matriz de textura de GL** con [**glEnableClientState**](glenableclientstate.md). Cuando está habilitado, [**glDrawArrays**](gldrawarrays.md), [**glDrawElements**](gldrawelements.md)y [**glArrayElement**](glarrayelement.md) usan la matriz de coordenadas de textura. De forma predeterminada, la matriz de coordenadas de textura está deshabilitada.
+Se habilita una matriz de coordenadas de textura cuando se especifica la **constante GL \_ TEXTURE \_ COORD \_ ARRAY** [**con glEnableClientState**](glenableclientstate.md). Cuando se habilita, [**glDrawArrays,**](gldrawarrays.md) [**glDrawElements**](gldrawelements.md)y [**glArrayElement**](glarrayelement.md) usan la matriz de coordenadas de textura. De forma predeterminada, la matriz de coordenadas de textura está deshabilitada.
 
-No se puede incluir **glTexCoordPointer** en las listas de visualización.
+No se puede **incluir glTexCoordPointer en** listas para mostrar.
 
-Cuando se especifica una matriz de coordenadas de textura mediante **glTexCoordPointer**, los valores de todos los parámetros de matriz de coordenadas de textura de la función se guardan en un estado del lado cliente y los elementos de matriz estáticos se pueden almacenar en caché. Dado que los parámetros de la matriz de coordenadas de textura son de cliente, los valores no se guardan ni restauran en [**glPushAttrib**](glpushattrib.md) y [**glPopAttrib**](glpopattrib.md).
+Cuando se especifica una matriz de coordenadas de textura mediante **glTexCoordPointer**, los valores de todos los parámetros de la matriz de coordenadas de textura de la función se guardan en un estado del lado cliente y los elementos de la matriz estática se pueden almacenar en caché. Dado que los parámetros de la matriz de coordenadas de textura son de estado del lado cliente, [**glPushAttrib**](glpushattrib.md) y [**glPopAttrib**](glpopattrib.md)no guardan ni restauran sus valores.
 
-Aunque no se genera ningún error cuando se llama a **glTexCoordPointer** en pares [**glBegin**](glbegin.md) y [**glEnd**](glend.md) , los resultados son indefinidos.
+Aunque no se genera ningún error al llamar **a glTexCoordPointer** dentro de los pares [**glBegin**](glbegin.md) y [**glEnd,**](glend.md) los resultados no están definidos.
 
-Las siguientes funciones recuperan información relacionada con **glTexCoordPointer**:
+Las siguientes funciones recuperan información relacionada **con glTexCoordPointer**:
 
-[**glIsEnabled**](glisenabled.md) con la **\_ matriz de \_ coordenadas \_ de textura de GL** de argumento
+[**glIsEnabled con**](glisenabled.md) el argumento **GL TEXTURE \_ \_ COORD \_ ARRAY**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con **el argumento GL Texture de la \_ \_ \_ matriz \_ tamaño** de la matriz
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento **GL TEXTURE \_ \_ COORD \_ ARRAY \_ SIZE**
 
-**glGet** con argumento **GL de la \_ \_ \_ matriz \_ coordenadas de textura de contabilidad**
+**glGet con** argumento **GL TEXTURE \_ \_ COORD \_ ARRAY \_ STRIDE**
 
-**glGet** con el **argumento \_ \_ número de \_ matriz \_ de textura de GL de contabilidad**
+**glGet con** el argumento **GL TEXTURE \_ \_ COORD \_ ARRAY \_ COUNT**
 
-**glGet** con el **argumento \_ GL \_ Texture \_ \_ tipo de matriz**
+**glGet con** el argumento **GL TEXTURE \_ \_ COORD \_ ARRAY \_ TYPE**
 
-[**glGetPointerv**](glgetpointerv.md) con el argumento GL de la **\_ \_ \_ \_ matriz coordenadas de textura de contabilidad**
+[**glGetPointerv con el**](glgetpointerv.md) argumento **GL TEXTURE \_ \_ COORD \_ ARRAY \_ POINTER**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -123,8 +123,8 @@ Las siguientes funciones recuperan información relacionada con **glTexCoordPoin
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

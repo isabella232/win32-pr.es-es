@@ -1,7 +1,7 @@
 ---
-description: El \_ método get de velocidad de bits recupera una velocidad de bits aproximada para el vídeo.
+description: El método get \_ BitRate recupera una velocidad de bits aproximada para el vídeo.
 ms.assetid: e12e4677-a038-479f-8b64-937ad521c4be
-title: Método CBaseControlVideo.get_BitRate (Ctlutil. h)
+title: CBaseControlVideo.get_BitRate método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 62f1feaed786b397801bbd17d2d2d41c0ccb813d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b33e3584bb0460b798101d8062c3647b983841c77653adcffd18580eade25c6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057275"
 ---
-# <a name="cbasecontrolvideoget_bitrate-method"></a>CBaseControlVideo. get ( \_ método de velocidad de bits)
+# <a name="cbasecontrolvideoget_bitrate-method"></a>Método CBaseControlVideo.get \_ BitRate
 
 El `get_BitRate` método recupera una velocidad de bits aproximada para el vídeo.
 
@@ -51,11 +51,11 @@ Puntero a la velocidad de bits, en bits por segundo.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un ERROR Si se realiza correctamente o E \_ OUTOFMEMORY si no hay suficiente memoria disponible.
+Devuelve NOERROR si se realiza correctamente o \_ E OUTOFMEMORY si no hay suficiente memoria disponible.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro implementa el método [**IBasicVideo:: get \_ bitrate**](/windows/desktop/api/Control/nf-control-ibasicvideo-get_bitrate) . Llama al CBaseControlVideo virtual puro [**:: GetVideoFormat**](cbasecontrolvideo-getvideoformat.md) para recuperar la estructura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) de la clase derivada.
+Esta función miembro implementa el [**método IBasicVideo::get \_ BitRate.**](/windows/desktop/api/Control/nf-control-ibasicvideo-get_bitrate) Llama al [**CBaseControlVideo virtual puro::GetVideoFormat para**](cbasecontrolvideo-getvideoformat.md) recuperar la estructura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) de la clase derivada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta función miembro implementa el método [**IBasicVideo:: get \_ bitrate**](/
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Esta función miembro implementa el método [**IBasicVideo:: get \_ bitrate**](/
 
 <dl> <dt>
 
-[**Clase CBaseControlVideo**](cbasecontrolvideo.md)
+[**CBaseControlVideo (clase)**](cbasecontrolvideo.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: df5a79f4-abbf-4b83-afc3-cbd14b166067
 title: Configuración e inicio de una sesión de Registrador automático
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6560aece87506b1d064981ee5f49a56bbf0da19e
-ms.sourcegitcommit: 967ba3a2a618e6088cb607164a2a924530278645
+ms.openlocfilehash: 242b0a0cbcd9b633fd838d133240d1e78464351a5d3970de30516d60481905bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113102044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119638615"
 ---
 # <a name="configuring-and-starting-an-autologger-session"></a>Configuración e inicio de una sesión de Registrador automático
 
@@ -17,14 +17,14 @@ La sesión de seguimiento de eventos de AutoLogger registra los eventos que se p
 
 El registrador automático difiere del registrador global de las maneras siguientes:
 
--   Puede especificar una o varias sesiones de AutoLogger (el registrador global era una sesión única en la que todos los usuarios registraron eventos).
+-   Puede especificar una o varias sesiones de AutoLogger (el registrador global era una sesión única en la que todos los usuarios registraba eventos).
 -   El registrador automático envía una notificación de habilitación a los proveedores cuando se inicia la sesión (el registrador global no envió una notificación de habilitación a los proveedores, por lo que los proveedores tenían que basarse en otros medios para saber si se inició la sesión del registrador global para iniciar el registro de eventos).
--   El registrador automático no admite el registro de eventos del registrador de kernel de NT (vea el **miembro EnableFlags** de [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties)). Para registrar eventos del registrador de kernel de NT, debe usar [el registrador global](configuring-and-starting-the-global-logger-session.md).
+-   El registrador automático no admite el registro de eventos del registrador de kernel nt (vea el **miembro EnableFlags** de [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties)). Para registrar eventos del registrador de kernel de NT, debe usar el [registrador global](configuring-and-starting-the-global-logger-session.md).
 
 Para obtener más información sobre la consulta del registrador global, vea [Configuring and Starting the Global Logger Session](configuring-and-starting-the-global-logger-session.md).
 
 > [!Note]  
-> ETW admite AutoLogger en Windows Vista y versiones posteriores. Use el [registrador global en](configuring-and-starting-the-global-logger-session.md) sistemas operativos anteriores.
+> ETW admite AutoLogger en Windows Vista y versiones posteriores. Use global [Logger en](configuring-and-starting-the-global-logger-session.md) sistemas operativos anteriores.
 
  
 
@@ -39,7 +39,7 @@ HKEY_LOCAL_MACHINE
                \Autologger
 ```
 
-En Clave **de registrador** automático, cree una clave para cada sesión de AutoLogger que desee configurar, como se muestra en el ejemplo siguiente.
+En la **tecla Registrador** automático, cree una clave para cada sesión de AutoLogger que quiera configurar, como se muestra en el ejemplo siguiente.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -69,7 +69,7 @@ HKEY_LOCAL_MACHINE
                   \Logger Session C
 ```
 
-En la tabla siguiente se describen los valores que puede definir para cada sesión de AutoLogger. Debe tener privilegios de administrador para especificar estos valores del Registro. Los **valores Start** y **Guid** son los únicos valores necesarios para iniciar la sesión de AutoLogger. todos los demás valores tienen una configuración predeterminada que se usa si el valor no está presente en el Registro. Normalmente, debe usar los valores predeterminados. Si especifica un valor que ETW no admite, ETW invalidará el valor.
+En la tabla siguiente se describen los valores que puede definir para cada sesión de AutoLogger. Debe tener privilegios de administrador para especificar estos valores del Registro. Los **valores Start** y **Guid** son los únicos valores necesarios para iniciar la sesión de AutoLogger. todos los demás valores tienen valores predeterminados que se usan si el valor no está presente en el Registro. Normalmente, debe usar los valores predeterminados. Si especifica un valor que ETW no admite, ETW invalidará el valor.
 
 
 
@@ -106,7 +106,7 @@ Para obtener una descripción de cada tipo de reloj, vea el <strong>miembro Clie
 <tr class="odd">
 <td><strong>DisableRealtimePersistence</strong></td>
 <td><strong>REG_DWORD</strong></td>
-<td>Para deshabilitar la persistencia en tiempo real, establezca este valor en 1. El valor predeterminado es 0 (habilitado) para las sesiones en tiempo real.<br/> Si la persistencia en tiempo real está habilitada, se conservarán los eventos en tiempo real que no se entregaron en el momento en que se apagó el equipo. Los eventos se entregarán al consumidor la próxima vez que el consumidor se conecte a la sesión. <br/></td>
+<td>Para deshabilitar la persistencia en tiempo real, establezca este valor en 1. El valor predeterminado es 0 (habilitado) para las sesiones en tiempo real.<br/> Si la persistencia en tiempo real está habilitada, se conservarán los eventos en tiempo real que no se entregaron en el momento en que el equipo se apagó. Los eventos se entregarán al consumidor la próxima vez que el consumidor se conecte a la sesión. <br/></td>
 </tr>
 <tr class="even">
 <td><strong>FileCounter</strong></td>
@@ -121,12 +121,12 @@ Para obtener una descripción de cada tipo de reloj, vea el <strong>miembro Clie
 <tr class="even">
 <td><strong>FileMax</strong></td>
 <td><strong>REG_DWORD</strong></td>
-<td>Número máximo de instancias del archivo de registro que crea ETW. Si el archivo de registro especificado en <strong>FileName</strong> existe, ETW anexa el valor <strong>fileCounter</strong> al nombre de archivo. Por ejemplo, si se usa el nombre de archivo de registro predeterminado, el formulario es %SystemRoot%\System32\LogFiles\WMI \& lt;sessionname &gt; .etl. Nnnn. <br/> La primera vez que se inicia el equipo, el nombre de archivo es sessionname .etl.0001, la segunda vez el nombre de archivo es &lt; &gt; &lt; sessionname &gt; .etl.0002, y así sucesivamente. Si <strong>FileMax</strong> es 3, en el cuarto reinicio del equipo, ETW restablece el contador a 1 y sobrescribe &lt; sessionname &gt; .etl.0001, si existe.<br/> El número máximo de instancias del archivo de registro que se admiten es 16.<br/> No use esta característica con el modo de <a href="logging-mode-constants.md">EVENT_TRACE_FILE_MODE_NEWFILE</a> de registro.<br/></td>
+<td>Número máximo de instancias del archivo de registro que crea ETW. Si existe el archivo de registro especificado en <strong>FileName,</strong> ETW anexa el valor <strong>fileCounter</strong> al nombre de archivo. Por ejemplo, si se usa el nombre de archivo de registro predeterminado, el formulario es %SystemRoot%\System32\LogFiles\WMI \& lt;sessionname &gt; .etl. Nnnn. <br/> La primera vez que se inicia el equipo, el nombre de archivo es sessionname .etl.0001, la segunda vez el nombre de archivo es &lt; &gt; &lt; sessionname &gt; .etl.0002, y así sucesivamente. Si <strong>FileMax</strong> es 3, en el cuarto reinicio del equipo, ETW restablece el contador a 1 y sobrescribe &lt; sessionname &gt; .etl.0001, si existe.<br/> El número máximo de instancias del archivo de registro que se admiten es 16.<br/> No use esta característica con el modo <a href="logging-mode-constants.md">de</a> EVENT_TRACE_FILE_MODE_NEWFILE de registro.<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>FlushTimer</strong></td>
 <td><strong>REG_DWORD</strong></td>
-<td>Con qué frecuencia, en segundos, se vacían forzadamente los búferes de seguimiento. El tiempo mínimo de vaciado es de 1 segundo. Este vaciado forzado se suma al vaciado automático que se produce cuando un búfer está lleno y cuando se detiene la sesión de seguimiento. <br/> En el caso de un registrador en tiempo real, un valor de cero (el valor predeterminado) significa que el tiempo de vaciado se establecerá en 1 segundo. Un registrador en tiempo real es cuando <strong>LogFileMode</strong> se establece <strong>en EVENT_TRACE_REAL_TIME_MODE</strong>.<br/> El valor predeterminado es 0. De forma predeterminada, los búferes solo se vacían cuando están llenos. <br/></td>
+<td>Con qué frecuencia, en segundos, los búferes de seguimiento se vacían a la fuerza. El tiempo mínimo de vaciado es de 1 segundo. Este vaciado forzado se suma al vaciado automático que se produce cuando un búfer está lleno y cuando se detiene la sesión de seguimiento. <br/> En el caso de un registrador en tiempo real, un valor de cero (el valor predeterminado) significa que el tiempo de vaciado se establecerá en 1 segundo. Un registrador en tiempo real es cuando <strong>LogFileMode</strong> se establece en <strong>EVENT_TRACE_REAL_TIME_MODE</strong>.<br/> El valor predeterminado es 0. De forma predeterminada, los búferes solo se vacían cuando están llenos. <br/></td>
 </tr>
 <tr class="even">
 <td><strong>Guid</strong></td>
@@ -136,12 +136,12 @@ Para obtener una descripción de cada tipo de reloj, vea el <strong>miembro Clie
 <tr class="odd">
 <td><strong>LogFileMode</strong></td>
 <td><strong>REG_DWORD</strong></td>
-<td>Especifique uno o varios modos de registro. Para ver los valores <a href="logging-mode-constants.md">posibles, vea Constantes de modo de registro.</a> El valor predeterminado <strong>es EVENT_TRACE_FILE_MODE_SEQUENTIAL</strong>. En lugar de escribir en un archivo de registro, puede especificar EVENT_TRACE_BUFFERING_MODE <strong>o</strong> <strong>EVENT_TRACE_REAL_TIME_MODE</strong>.<br/> Al especificar <strong>EVENT_TRACE_BUFFERING_MODE</strong> evita el costo de vaciar el contenido de la sesión en el disco cuando el sistema de archivos esté disponible. <br/> Tenga en cuenta <strong>que EVENT_TRACE_BUFFERING_MODE</strong> hará que el sistema ignore el valor <strong>MaximumBuffers,</strong> ya que el tamaño del búfer es en su lugar el producto <strong>de MinimumBuffers</strong> y <strong>BufferSize</strong>.<br/> Las sesiones de AutoLogger no admiten <strong>el EVENT_TRACE_FILE_MODE_NEWFILE</strong> de registro.<br/> Si <strong>EVENT_TRACE_FILE_MODE_APPEND</strong> especifica , <strong>BufferSize</strong> debe proporcionarse explícitamente y debe ser el mismo en el registrador y el archivo que se va a anexar.<br/></td>
+<td>Especifique uno o varios modos de registro. Para obtener los valores posibles, <a href="logging-mode-constants.md">vea Constantes de modo de registro</a>. El valor predeterminado <strong>es EVENT_TRACE_FILE_MODE_SEQUENTIAL</strong>. En lugar de escribir en un archivo de registro, puede especificar EVENT_TRACE_BUFFERING_MODE <strong>o</strong> <strong>EVENT_TRACE_REAL_TIME_MODE</strong>.<br/> La <strong>especificación EVENT_TRACE_BUFFERING_MODE</strong> evita el costo de vaciar el contenido de la sesión en el disco cuando el sistema de archivos esté disponible. <br/> Tenga en <strong>cuenta</strong> que EVENT_TRACE_BUFFERING_MODE el sistema omitirá el valor <strong>MaximumBuffers,</strong> ya que el tamaño del búfer es en su lugar el producto <strong>de MinimumBuffers</strong> y <strong>BufferSize</strong>.<br/> Las sesiones de AutoLogger no admiten el <strong>EVENT_TRACE_FILE_MODE_NEWFILE</strong> de registro.<br/> Si <strong>EVENT_TRACE_FILE_MODE_APPEND</strong> especificado, <strong>BufferSize</strong> debe proporcionarse explícitamente y debe ser el mismo en el registrador y el archivo que se va a anexar.<br/></td>
 </tr>
 <tr class="even">
 <td><strong>MaxFileSize</strong></td>
 <td><strong>REG_DWORD</strong></td>
-<td>Tamaño máximo del archivo de registro, en megabytes. La sesión se cierra cuando se alcanza el tamaño máximo, a menos que esté en modo de archivo de registro circular. Para especificar ningún límite, establezca el valor en 0. El valor predeterminado es 100 MB, si no se establece. El comportamiento que se produce cuando se alcanza el tamaño máximo de archivo depende del valor de <strong>LogFileMode</strong>.<br/></td>
+<td>Tamaño máximo del archivo de registro, en megabytes. La sesión se cierra cuando se alcanza el tamaño máximo, a menos que esté en modo de archivo de registro circular. Para no especificar ningún límite, establezca el valor en 0. El valor predeterminado es 100 MB, si no se establece. El comportamiento que se produce cuando se alcanza el tamaño máximo de archivo depende del valor <strong>de LogFileMode</strong>.<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>MaximumBuffers</strong></td>
@@ -182,7 +182,7 @@ En la tabla siguiente se describen los valores que puede definir para cada prove
 </colgroup>
 <thead>
 <tr class="header">
-<th>Valor</th>
+<th>Value</th>
 <th>Tipo</th>
 <th>Descripción</th>
 </tr>
@@ -209,8 +209,8 @@ En la tabla siguiente se describen los valores que puede definir para cada prove
 <td>Use este valor para incluir uno o varios de los siguientes elementos en el archivo de registro:
 <ul>
 <li><strong>EVENT_ENABLE_PROPERTY_SID</strong> (0x00000001) = Incluir en los datos extendidos el identificador de seguridad (SID) del usuario.</li>
-<li><strong>EVENT_ENABLE_PROPERTY_TS_ID</strong> (0x00000002) = Incluir en los datos extendidos el identificador de sesión del terminal.</li>
-<li><strong>EVENT_ENABLE_PROPERTY_STACK_TRACE</strong> (0x00000004) = Incluir en los datos extendidos un seguimiento de pila de llamadas para eventos escritos mediante <a href="/windows/desktop/api/Evntprov/nf-evntprov-eventwrite"><strong>EventWrite</strong></a>.</li>
+<li><strong>EVENT_ENABLE_PROPERTY_TS_ID</strong> (0x00000002) = Incluir en los datos extendidos el identificador de sesión de terminal.</li>
+<li><strong>EVENT_ENABLE_PROPERTY_STACK_TRACE</strong> (0x00000004) = Incluir en los datos extendidos un seguimiento de la pila de llamadas para los eventos escritos mediante <a href="/windows/desktop/api/Evntprov/nf-evntprov-eventwrite"><strong>EventWrite</strong></a>.</li>
 <li><strong>EVENT_ENABLE_PROPERTY_IGNORE_KEYWORD_0</strong> (0x00000010) = filtra todos los eventos que no tienen especificada una palabra clave que no sea cero.</li>
 <li><strong>EVENT_ENABLE_PROPERTY_PROVIDER_GROUP</strong> (0x00000020) = Indica que esta llamada <a href="provider-traits.md">a</a> <a href="/windows/win32/api/evntrace/nf-evntrace-enabletraceex2"><strong>EnableTraceEx2</strong></a> debe habilitar un grupo de proveedores en lugar de un proveedor de eventos individual.</li>
 <li><strong>EVENT_ENABLE_PROPERTY_PROCESS_START_KEY</strong> (0x00000080) = Incluir la clave de inicio del proceso en los datos extendidos.</li>
@@ -242,7 +242,7 @@ Las sesiones de AutoLogger aumentan el tiempo de arranque del sistema y se deben
 
 Para detener una sesión de AutoLogger, llame a la [**función ControlTrace.**](/windows/win32/api/evntrace/nf-evntrace-controltracea) El nombre de sesión que pasa a la función es el nombre de la clave del Registro que usó para definir la sesión en el Registro.
 
-En Windows 8.1, Windows Server 2012 R2 y versiones posteriores, la función [**EnableTraceEx2**](/windows/win32/api/evntrace/nf-evntrace-enabletraceex2) y las estructuras [**ENABLE TRACE \_ \_ PARAMETERS**](/windows/win32/api/evntrace/ns-evntrace-enable_trace_parameters) y [**EVENT FILTER \_ \_ DESCRIPTOR**](/windows/desktop/api/Evntprov/ns-evntprov-event_filter_descriptor) pueden usar filtros de carga de eventos, ámbito y recorrido de pila para filtrar por condiciones específicas en una sesión de registrador. Para obtener más información sobre los filtros de carga de eventos, vea las funciones [**TdhCreatePayloadFilter**](/windows/desktop/api/Tdh/nf-tdh-tdhcreatepayloadfilter)y [**TdhAggregatePayloadFilters**](/windows/desktop/api/Tdh/nf-tdh-tdhaggregatepayloadfilters) y las estructuras **ENABLE TRACE \_ \_ PARAMETERS**, **EVENT FILTER \_ \_ DESCRIPTOR** y [**PAYLOAD FILTER \_ \_ PREDICATE.**](/windows/desktop/api/Tdh/ns-tdh-payload_filter_predicate)
+En Windows 8.1,Windows Server 2012 R2 y versiones posteriores, la función [**EnableTraceEx2**](/windows/win32/api/evntrace/nf-evntrace-enabletraceex2) y las estructuras ENABLE TRACE [**\_ \_ PARAMETERS**](/windows/win32/api/evntrace/ns-evntrace-enable_trace_parameters) y [**EVENT \_ FILTER \_ DESCRIPTOR**](/windows/desktop/api/Evntprov/ns-evntprov-event_filter_descriptor) pueden usar filtros de carga de eventos, ámbito y recorrido de pila para filtrar por condiciones específicas en una sesión de registrador. Para obtener más información sobre los filtros de carga de eventos, vea las funciones [**TdhCreatePayloadFilter**](/windows/desktop/api/Tdh/nf-tdh-tdhcreatepayloadfilter)y [**TdhAggregatePayloadFilters**](/windows/desktop/api/Tdh/nf-tdh-tdhaggregatepayloadfilters) y las estructuras **ENABLE TRACE \_ \_ PARAMETERS**, **EVENT FILTER \_ \_ DESCRIPTOR** y [**PAYLOAD FILTER \_ \_ PREDICATE.**](/windows/desktop/api/Tdh/ns-tdh-payload_filter_predicate)
 
 Para obtener más información sobre cómo iniciar una sesión de seguimiento de eventos, vea [Configuring and Starting an Event Tracing Session](configuring-and-starting-an-event-tracing-session.md).
 

@@ -79,7 +79,7 @@ La velocidad de reproducción se especifica mediante la variable miembro [**CSou
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

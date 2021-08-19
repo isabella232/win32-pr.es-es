@@ -19,11 +19,11 @@ La [interfaz IX509Enrollment](enrollwithix509enrollmenthelper.md) expone los mé
 
 -   [**CreatePFX (método)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-createpfx)
 -   [**CreateRequest (método)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-createrequest)
--   [**Método Enroll**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-enroll)
+-   [**Enroll (método)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-enroll)
 -   [**Método Initialize**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-initialize)
 -   [**InitializeFromRequest (método)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-initializefromrequest)
 -   [**InitializeFromTemplateName (método)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-initializefromtemplatename)
--   [**Método InstallResponse**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-installresponse)
+-   [**InstallResponse (método)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509enrollment-installresponse)
 
  
 

@@ -1,11 +1,11 @@
 ---
 title: Atributo Reports
-description: Contiene la lista de usuarios que notifican directamente al usuario. Los usuarios que aparecen como informes son aquellos que tienen la propiedad administrador de propiedades establecida en este usuario. Cada elemento de la lista es una referencia vinculada al objeto que representa al usuario.
+description: Contiene la lista de usuarios que informan directamente al usuario. Los usuarios enumerados como informes son aquellos que tienen la propiedad del administrador de propiedades establecida en este usuario. Cada elemento de la lista es una referencia vinculada al objeto que representa al usuario.
 ms.assetid: 369fc457-685c-4875-aed3-0a246a219512
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de informes
-- directReports esquema de AD de atributos
+- Esquema de AD de atributo de informes
+- Esquema de AD del atributo directReports
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ef5a555b7c1d48fdb337f2c876abf3f15ae8daa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b60354fc07c5ea8fecada9150aea13308e10a92e1836bd37ea8d398e84f6d0f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049605"
 ---
 # <a name="reports-attribute"></a>Atributo Reports
 
-Contiene la lista de usuarios que notifican directamente al usuario. Los usuarios que aparecen como informes son aquellos que tienen la propiedad administrador de propiedades establecida en este usuario. Cada elemento de la lista es una referencia vinculada al objeto que representa al usuario.
+Contiene la lista de usuarios que informan directamente al usuario. Los usuarios enumerados como informes son aquellos que tienen la propiedad del administrador de propiedades establecida en este usuario. Cada elemento de la lista es una referencia vinculada al objeto que representa al usuario.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------|
 | CN                | Informes                                         |
-| Nombre para mostrar de LDAP | directReports                                   |
-| Tamaño              | \-                                              |
-| Actualizar privilegio  | El sistema establece este valor.                |
-| Frecuencia de actualización  | Siempre que los informes directos para un usuario cambien. |
+| Ldap-Display-Name | directReports                                   |
+| Size              | \-                                              |
+| Actualizar privilegios  | El sistema establece este valor.                |
+| Frecuencia de actualización  | Siempre que cambien los informes directos de un usuario. |
 | Attribute-Id      | 1.2.840.113556.1.2.436                          |
-| System-ID-GUID    | bf967a1c-0de6-11d0-a285-00aa003049e2            |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md)         |
+| System-Id-Guid    | bf967a1c-0de6-11d0-a285-00aa003049e2            |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md)         |
 
 
 
@@ -55,13 +55,13 @@ Contiene la lista de usuarios que notifican directamente al usuario. Los usuario
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 43                              |
+| Id. de vínculo                | 43                              |
 | MAPI-Id                | 0x800E                          |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -76,13 +76,13 @@ Contiene la lista de usuarios que notifican directamente al usuario. Los usuario
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 43                              |
+| Id. de vínculo                | 43                              |
 | MAPI-Id                | 0x800E                          |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -97,13 +97,13 @@ Contiene la lista de usuarios que notifican directamente al usuario. Los usuario
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 43                              |
+| Id. de vínculo                | 43                              |
 | MAPI-Id                | 0x800E                          |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -118,13 +118,13 @@ Contiene la lista de usuarios que notifican directamente al usuario. Los usuario
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 43                              |
+| Id. de vínculo                | 43                              |
 | MAPI-Id                | 0x800E                          |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -139,13 +139,13 @@ Contiene la lista de usuarios que notifican directamente al usuario. Los usuario
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 43                              |
+| Id. de vínculo                | 43                              |
 | MAPI-Id                | 0x800E                          |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -160,13 +160,13 @@ Contiene la lista de usuarios que notifican directamente al usuario. Los usuario
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 43                              |
+| Id. de vínculo                | 43                              |
 | MAPI-Id                | 0x800E                          |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

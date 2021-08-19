@@ -15,7 +15,7 @@ ms.locfileid: "120049205"
 
 Microsoft DirectShow proporciona varias funciones para depurar esperas infinitas.
 
-En las compilaciones comerciales, las funciones [**DbgWaitForMultipleObjects**](dbgwaitformultipleobjects.md) y [**DbgWaitForSingleObject**](dbgwaitforsingleobject.md) funcionan como sus homólogos de API de Windows, **WaitForMultipleObjects** y **WaitForSingleObject,** con intervalos de tiempo de espera infinitos.
+En las compilaciones comerciales, las funciones [**DbgWaitForMultipleObjects**](dbgwaitformultipleobjects.md) y [**DbgWaitForSingleObject**](dbgwaitforsingleobject.md) funcionan como sus homólogos de api de Windows, **WaitForMultipleObjects** y **WaitForSingleObject,** con intervalos de tiempo de espera infinitos.
 
 En las compilaciones de depuración, estas funciones usan un valor de tiempo de espera global. Si expira el tiempo de espera, la función desencadena una aserción. La siguiente clave del Registro especifica el valor de tiempo de espera, en milisegundos:
 
@@ -23,14 +23,14 @@ En las compilaciones de depuración, estas funciones usan un valor de tiempo de 
 
 donde *<DebugRoot>* es la ruta de acceso del Registro descrita en el tema Funciones de salida de [depuración](debug-output-functions.md).
 
-Si la clave no existe, el valor predeterminado del tiempo de espera es INFINITE. Puede usar la función [**DbgSetWaitTimeout para**](dbgsetwaittimeout.md) invalidar la entrada del Registro.
+Si la clave no existe, el valor predeterminado del tiempo de espera es INFINITE. Puede usar la función [**DbgSetWaitTimeout**](dbgsetwaittimeout.md) para invalidar la entrada del Registro.
 
 
 
 | Función                                                       | Descripción                                                     |
 |----------------------------------------------------------------|-----------------------------------------------------------------|
 | [**DbgSetWaitTimeout**](dbgsetwaittimeout.md)                 | Establece el valor de tiempo de espera de depuración.                              |
-| [**DbgWaitForMultipleObjects**](dbgwaitformultipleobjects.md) | Espera a que se señale a cualquiera (o a todos) de los objetos especificados. |
+| [**DbgWaitForMultipleObjects**](dbgwaitformultipleobjects.md) | Espera a que se señale cualquier (o todos) de los objetos especificados. |
 | [**DbgWaitForSingleObject**](dbgwaitforsingleobject.md)       | Espera a que se señale un objeto.                         |
 
 

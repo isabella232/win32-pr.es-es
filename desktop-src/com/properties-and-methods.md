@@ -17,7 +17,7 @@ Al igual que cualquier objeto OLE, un control proporciona gran parte de su funci
 
 Un control expone propiedades y métodos a través de la automatización OLE para que los contenedores puedan acceder a ellas bajo el control de un lenguaje de programación proporcionado por contenedor.
 
-Para admitir el acceso a las propiedades a través de una interfaz de usuario, un control proporciona páginas de propiedades, compatibilidad con PROPIEDADES OLEIVERB, exploración por propiedad y enlace de datos a través de \_ notficaciones de cambio de propiedad.
+Para admitir el acceso a las propiedades a través de una interfaz de usuario, un control proporciona páginas de propiedades, compatibilidad con OLEIVERB PROPERTIES, exploración por propiedad y enlace de datos a través de \_ notficaciones de cambio de propiedad.
 
 -   A través de páginas de propiedades, un control puede mostrar sus propiedades, independientemente de su contenedor, si es necesario.
 -   Al admitir OLEIVERB \_ PROPERTIES, el elemento Propiedades se muestra en el menú del contenedor. A continuación, el usuario final puede seleccionar el **elemento Propiedades** para ver las páginas de propiedades del control y modificar las propiedades.

@@ -4,16 +4,16 @@ description: IAgentBalloon GetBackColor
 ms.assetid: 278ed645-0e6c-4a5d-bd85-3e3b7a1e3333
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cce886c9929892c89b56f162f784dc27a472209
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b7c58a913332d01f2982c28003c146420d34a86e96f3c833f667c968bd22ef19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119888425"
 ---
 # <a name="iagentballoongetbackcolor"></a>IAgentBalloon::GetBackColor
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT GetBackColor(
@@ -21,9 +21,9 @@ HRESULT GetBackColor(
 );                   // in word balloon
 ```
 
-Recupera el valor para el color de fondo que se muestra en un globo de palabras.
+Recupera el valor del color de fondo que se muestra en un globo de palabras.
 
--   Devuelve S \_ OK para indicar que la operación se realizó correctamente.
+-   Devuelve S \_ OK para indicar que la operación se ha realizado correctamente.
 
 <dl> <dt>
 
@@ -34,16 +34,16 @@ Dirección de una variable que recibe la configuración de color para el fondo d
 
 </dd> </dl>
 
-El color de fondo que se usa en un globo de palabras de caracteres se define en el editor de caracteres del agente de Microsoft. No se puede cambiar por una aplicación. Sin embargo, el usuario puede cambiar el color de fondo de los globos de palabras para todos los caracteres a través de la hoja de propiedades del agente de Microsoft.
+El color de fondo utilizado en un globo de palabras de caracteres se define en el Editor de caracteres de Microsoft Agent. Una aplicación no puede cambiarlo. Sin embargo, el usuario puede cambiar el color de fondo de los globos de palabras para todos los caracteres a través de la hoja de propiedades de Microsoft Agent.
 
 ## <a name="see-also"></a>Consulte también
 
 [**IAgentBalloon::GetForeColor**](iagentballoon--getforecolor.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

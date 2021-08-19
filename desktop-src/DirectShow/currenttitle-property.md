@@ -32,7 +32,7 @@ Devuelve un valor entero comprendido entre 1 y 99 que representa el título del 
 
 Esta propiedad es de solo lectura sin ningún valor predeterminado.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

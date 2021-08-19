@@ -1,23 +1,23 @@
 ---
-description: Para la recodificación de segmentos, especifica la duración del segmento que se va a volver a codificar.
+description: Para la codificación de segmentos, especifica la duración del segmento que se va a volver a codificar.
 ms.assetid: 89e1d182-67f3-4906-b4b2-c94264a8e9b4
-title: Propiedad MFPKEY_REENCDURATION (Wmcodecdsp. h)
+title: MFPKEY_REENCDURATION propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9d597f5dff57715f80d506c3286cfe284b929d9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 89b3dd78754fa1dbddc343aa4075580e9863ecacb58c781e94b548169583989e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113285"
 ---
-# <a name="mfpkey_reencduration-property"></a>\_Propiedad REENCDURATION de MFPKEY
+# <a name="mfpkey_reencduration-property"></a>Propiedad MFPKEY \_ REENCDURATION
 
-Para la recodificación de segmentos, especifica la duración del segmento que se va a volver a codificar.
+Para la codificación de segmentos, especifica la duración del segmento que se va a volver a codificar.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -29,8 +29,8 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Remoto<br/> | Windows Vista o Windows 7<br/>                                                   |
-| Encabezado<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente<br/> | Windows Vista o Windows 7<br/>                                                   |
+| Header<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -38,7 +38,7 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

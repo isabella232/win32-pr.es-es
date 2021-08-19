@@ -1,11 +1,11 @@
 ---
-title: Método IVMFloppyDriveEvents OnMediaEject (VPCCOMInterfaces. h)
-description: Recibe la notificación de que se ha expulsado el medio de la unidad. | Método IVMFloppyDriveEvents OnMediaEject (VPCCOMInterfaces. h)
+title: Método OnMediaEject de IVMFstonepyDriveEvents (VPCCOMInterfaces.h)
+description: Recibe la notificación de que los medios se han expulsado de la unidad. | Método OnMediaEject de IVMFstonepyDriveEvents (VPCCOMInterfaces.h)
 ms.assetid: 3e9c0b5d-8fec-4f34-93d2-c5975403798b
 keywords:
-- Método OnMediaEject Virtual PC
-- Método OnMediaEject Virtual PC, interfaz IVMFloppyDriveEvents
-- Interfaz IVMFloppyDriveEvents Virtual PC, método OnMediaEject
+- OnMediaEject, método Virtual PC
+- Método OnMediaEject virtual PC , interfaz IVMFstonepyDriveEvents
+- IVMFstonepyDriveEvents interface Virtual PC , Método OnMediaEject
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd640f7b8eb143eba4f3b19e984792f2b6779ad6
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e624dcbf028caf58a2f50109789e5f89cd34d1d70c4679333b8b742c3b071ec0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103914673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119653605"
 ---
-# <a name="ivmfloppydriveeventsonmediaeject-method"></a>IVMFloppyDriveEvents:: OnMediaEject (método)
+# <a name="ivmfloppydriveeventsonmediaeject-method"></a>IVMFstonepyDriveEvents::OnMediaEject (método)
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Recibe la notificación de que se ha expulsado el medio de la unidad.
+Recibe la notificación de que los medios se han expulsado de la unidad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,33 +44,33 @@ HRESULT OnMediaEject(
 
 <dl> <dt>
 
-*mediaPath* \[ de\]
+*mediaPath* \[ En\]
 </dt> <dd>
 
-La letra de unidad del host, o ruta de acceso, a la imagen de disquete.
+La letra de unidad de host, o ruta de acceso, a la imagen de disquete.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se llama a este método cuando se expulsa un medio (una imagen de disquete o un disquete en una unidad de host). El programa cliente debe implementar este método de interfaz para recibir la notificación del \_ evento vmFloppyDriveEvent OnMediaEject que se origina desde [**IVMFloppyDrive**](ivmfloppydrive.md).
+Se llama a este método cuando se expulsa un medio (una imagen de disquete o un disquete en una unidad host). El programa cliente debe implementar este método de interfaz para recibir una notificación del evento vmFstonepyDriveEvent OnMediaEject que se origina \_ en [**IVMFstonepyDrive.**](ivmfloppydrive.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | DIID \_ IVMFloppyDriveEvents se define como a9ed3401-4e09-4177-86ec-a13bf9fa7d4e<br/>      |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | DIID \_ IVMFstonepyDriveEvents se define como a9ed3401-4e09-4177-86ec-a13bf9fa7d4e<br/>      |
 
 
 
@@ -78,7 +78,7 @@ Se llama a este método cuando se expulsa un medio (una imagen de disquete o un 
 
 <dl> <dt>
 
-[**IVMFloppyDriveEvents**](ivmfloppydriveevents.md)
+[**IVMFstonepyDriveEvents**](ivmfloppydriveevents.md)
 </dt> </dl>
 
  

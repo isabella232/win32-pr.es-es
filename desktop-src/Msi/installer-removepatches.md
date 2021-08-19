@@ -1,7 +1,7 @@
 ---
 description: El método RemovePatches quita una o varias revisiones a los productos aptos para recibir la revisión. El método RemovePatches llama a MsiRemovePatches.
 ms.assetid: 09c6ad3a-9f5e-4f9a-82c8-be7e411efd60
-title: Installer.RemovePatches (método)
+title: Método Installer.RemovePatches
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119894035"
 ---
-# <a name="installerremovepatches-method"></a>Installer.RemovePatches (método)
+# <a name="installerremovepatches-method"></a>Método Installer.RemovePatches
 
 El **método RemovePatches** quita una o varias revisiones a los productos aptos para recibir la revisión. El **método RemovePatches** llama [**a MsiRemovePatches.**](/windows/desktop/api/Msi/nf-msi-msiremovepatchesa)
 
@@ -45,7 +45,7 @@ Installer.RemovePatches(
 *PatchList* 
 </dt> <dd>
 
-Cadena que contiene una lista delimitada por punto y coma de revisiones que se deben quitar. Cada revisión se puede representar mediante la ruta de acceso completa al paquete de revisión o mediante el GUID de revisión. Este parámetro es obligatorio.
+Cadena que contiene una lista delimitada por punto y coma de revisiones que se quitarán. Cada revisión se puede representar mediante la ruta de acceso completa al paquete de revisión o mediante el GUID de revisión. Este parámetro es obligatorio.
 
 </dd> <dt>
 
@@ -76,21 +76,21 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Consulte [Desinstalar revisiones para obtener un](uninstalling-patches.md) ejemplo que muestra cómo una aplicación puede quitar una revisión de todos los productos que están disponibles para el usuario.
+Consulte [Desinstalación de revisiones para](uninstalling-patches.md) obtener un ejemplo que muestra cómo una aplicación puede quitar una revisión de todos los productos que están disponibles para el usuario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003 o Windows XP.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003 o Windows XP.<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                    |
-| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                                         |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                                         |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

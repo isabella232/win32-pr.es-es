@@ -15,15 +15,15 @@ ms.locfileid: "119047473"
 
 Si la aplicación incluye un componente que no necesita comprobaciones de seguridad, puede decidir deshabilitar las comprobaciones de roles para ese componente a fin de mejorar el rendimiento. O bien, al depurar, puede resultar útil deshabilitar la seguridad para que pueda concentrarse en otros aspectos de la funcionalidad del programa.
 
-De forma predeterminada, al instalar un componente, se habilitan las comprobaciones de acceso de nivel de componente. Sin embargo, esto [](enabling-access-checks-for-an-application.md) solo surte efecto cuando se [](setting-a-security-level-for-access-checks.md) habilitan las comprobaciones de acceso de nivel de aplicación y cuando el nivel de seguridad se establece en Realizar comprobaciones de acceso en el nivel de **proceso y componente**.
+De forma predeterminada, al instalar un componente, se habilitan las comprobaciones de acceso de nivel de componente. Sin embargo, esto [](enabling-access-checks-for-an-application.md) solo surte efecto cuando se [](setting-a-security-level-for-access-checks.md) habilitan las comprobaciones de acceso de nivel de aplicación y cuando el nivel de seguridad se establece en Realizar comprobaciones de acceso en el nivel de proceso **y componente**.
 
 **Para habilitar o deshabilitar las comprobaciones de acceso en el nivel de componente**
 
-1.  En el árbol de consola de la herramienta administrativa Servicios de componentes, busque la aplicación COM+ que contiene el componente para el que desea deshabilitar (o habilitar) las comprobaciones de roles. Expanda la vista en el árbol para ver los componentes en la **carpeta** Componentes.
+1.  En el árbol de consola de la herramienta administrativa Servicios de componentes, busque la aplicación COM+ que contiene el componente para el que desea deshabilitar (o habilitar) las comprobaciones de roles. Expanda la vista en el árbol para ver los componentes de la **carpeta** Componentes.
 
-2.  Haga clic con el botón derecho en el componente para el que desea habilitar las comprobaciones de roles y, a continuación, haga clic en **Propiedades**.
+2.  Haga clic con el botón derecho en el componente para el que desea habilitar las comprobaciones de roles y, a continuación, haga clic en **Propiedades.**
 
-3.  En el cuadro de diálogo propiedades del componente, haga clic en **la pestaña** Seguridad .
+3.  En el cuadro de diálogo Propiedades del componente, haga clic en **la pestaña** Seguridad .
 
 4.  Seleccione **Aplicar comprobaciones de acceso de nivel de componente** para aplicar comprobaciones de nivel de componente.
 

@@ -1,19 +1,19 @@
 ---
-description: Especifica si el códec usará la optimización del escalado de vídeo.
+description: Especifica si el códec usará la optimización de escalado de vídeo.
 ms.assetid: a21d0100-e020-4e74-b8e3-bb7071194828
-title: Propiedad MFPKEY_VIDEOSCALING (Wmcodecdsp. h)
+title: MFPKEY_VIDEOSCALING propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 555cec22533b7817c509d5419391039b10c92576
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da2dc069d70b167dd8da6cb308d70149aec1028f3aaf4e50b5c1cc8ab11104c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119887664"
 ---
-# <a name="mfpkey_videoscaling-property"></a>MFPKEY \_ propiedad de VIDEOescalación
+# <a name="mfpkey_videoscaling-property"></a>MFPKEY \_ VIDEOSCALING Property
 
-Especifica si el códec usará la optimización del escalado de vídeo.
+Especifica si el códec usará la optimización de escalado de vídeo.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -27,19 +27,19 @@ VT \_ I4
 
 0
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El escalado de vídeo es un tipo de optimización perceptual que puede mejorar la calidad visual del vídeo codificado a velocidades de bits bajas. La optimización del escalado de vídeo reduce los artefactos pronunciados, pero puede sacrificar los detalles de la imagen. Esta optimización afecta al intervalo de luminancia del vídeo codificado como se describe a continuación, pero no afecta a la resolución física del vídeo de salida.
+El escalado de vídeo es un tipo de optimización perceptual que puede mejorar la calidad visual del vídeo codificado a velocidades de bits bajas. La optimización del escalado de vídeo reduce los artefactos pronunciados, pero puede sacrificar los detalles de la imagen. Esta optimización afecta al intervalo luma del vídeo codificado como se describe a continuación, pero no afecta a la resolución física del vídeo de salida.
 
-Esta propiedad se puede establecer en uno de los valores siguientes.
+Esta propiedad puede establecerse en uno de los valores siguientes.
 
 
 
 | Value | Descripción                                                                                                           |
 |-------|-----------------------------------------------------------------------------------------------------------------------|
 | 0     | No se usará el escalado de vídeo.                                                                                       |
-| 1     | El codificador usará la optimización del escalado de vídeo conservador. El intervalo de luminancia se escalará desde 0... 255 hasta 26... 229. |
-| 2     | El codificador usará una optimización de escalado de vídeo agresiva. El intervalo de luminancia se escalará de 0... 255 a 31... 224.   |
+| 1     | El codificador usará la optimización del escalado de vídeo conservador. El intervalo luma se escalará de 0...255 a 26...229. |
+| 2     | El codificador usará una optimización agresiva del escalado de vídeo. El intervalo luma se escalará de 0...255 a 31...224.   |
 
 
 
@@ -51,9 +51,9 @@ Esta propiedad se puede establecer en uno de los valores siguientes.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -61,7 +61,7 @@ Esta propiedad se puede establecer en uno de los valores siguientes.
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

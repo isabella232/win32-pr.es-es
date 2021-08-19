@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119919455"
 ---
-# <a name="str_getptr-function"></a>Str \_ GetPtr (función)
+# <a name="str_getptr-function"></a>Función \_ Str GetPtr
 
 \[Esta función está disponible a través Windows XP con Service Pack 2 (SP2) y Windows Server 2003. Podría modificarse o no estar disponible en versiones posteriores de Windows.\]
 
@@ -85,13 +85,13 @@ Si *pszDest* no puede contener toda la cadena a la que apunta *pszSource*, se co
 
 ## <a name="remarks"></a>Comentarios
 
-**Str \_ GetPtr** está disponible como versiones ANSI (**Str \_ GetPtrA**) y Unicode (**Str \_ GetPtrW**). Estas funciones no se exportan por nombre ni se declaran en un archivo de encabezado público. Para usarlos, debe usar [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) y solicitar ordinal 233 (**Str \_ GetPtrA**) o 235 (**Str \_ GetPtrW**) de ComCtl32.dll para obtener un puntero de función.
+**Str \_ GetPtr** está disponible como versiones ANSI (**Str \_ GetPtrA**) y Unicode (**Str \_ GetPtrW**). Estas funciones no se exportan por nombre ni se declaran en un archivo de encabezado público. Para usarlos, debe usar [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) y solicitar ordinal 233 (**Str \_ GetPtrA**) o 235 (**Str \_ GetPtrW**) desde ComCtl32.dll para obtener un puntero de función.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |

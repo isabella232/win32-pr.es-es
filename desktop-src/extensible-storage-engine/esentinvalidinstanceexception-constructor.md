@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInvalidInstanceException'
-title: Constructor de EsentInvalidInstanceException
+description: Más información sobre el constructor EsentInvalidInstanceException
+title: Constructor EsentInvalidInstanceException
 TOCTitle: 'EsentInvalidInstanceException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidInstanceException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinvalidinstanceexception.esentinvalidinstanceexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8b6d5211dbfd2e6b025e393e592ff4dc99997357
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 496861f4744fbe2840d3a734e08a654c86a0ed26aa04e1c79116b55ee3c6dd99
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104276948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119723655"
 ---
-# <a name="esentinvalidinstanceexception-constructor"></a>Constructor de EsentInvalidInstanceException
+# <a name="esentinvalidinstanceexception-constructor"></a>Constructor EsentInvalidInstanceException
 
 Inicializa una nueva instancia de la clase EsentInvalidInstanceException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentInvalidInstanceException()
 public EsentInvalidInstanceException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentInvalidInstanceException()
 
 [Miembros de EsentInvalidInstanceException](./esentinvalidinstanceexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

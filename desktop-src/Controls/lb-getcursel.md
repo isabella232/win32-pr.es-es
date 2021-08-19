@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LB_GETCURSEL (Winuser. h)
+title: LB_GETCURSEL mensaje (Winuser.h)
 description: Obtiene el índice del elemento seleccionado actualmente, si existe, en un cuadro de lista de selección única.
 ms.assetid: 39ab7f77-6c8e-45a4-aad4-47eba0a11a11
 keywords:
-- LB_GETCURSEL controles de mensajes de Windows
+- LB_GETCURSEL controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a6209f1f5b67e059f9a2b8a224e6f96ec671e38
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d67a060669d48a9ab020540c78ece395504c9f0b7e36807e3ac59daf216ea395
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085525"
 ---
-# <a name="lb_getcursel-message"></a>\_Mensaje lb GETCURSEL
+# <a name="lb_getcursel-message"></a>Mensaje \_ GETCURSEL de LB
 
 Obtiene el índice del elemento seleccionado actualmente, si existe, en un cuadro de lista de selección única.
 
@@ -32,26 +32,26 @@ Obtiene el índice del elemento seleccionado actualmente, si existe, en un cuadr
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-En un cuadro de lista de selección única, el valor devuelto es el índice de base cero del elemento actualmente seleccionado. Si no hay ninguna selección, el valor devuelto es LB \_ Err.
+En un cuadro de lista de selección única, el valor devuelto es el índice de base cero del elemento seleccionado actualmente. Si no hay ninguna selección, el valor devuelto es LB \_ ERR.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para recuperar los índices de los elementos seleccionados en un cuadro de lista de selección múltiple, use el mensaje [**lb \_ GETSELITEMS**](lb-getselitems.md) . Para determinar si el elemento que tiene el rectángulo de foco en un cuadro de lista de selección múltiple está seleccionado, use el mensaje [**lb \_ GETSEL**](lb-getsel.md) .
+Para recuperar los índices de los elementos seleccionados en un cuadro de lista de selección múltiple, use el [**mensaje \_ LB GETSELITEMS.**](lb-getselitems.md) Para determinar si el elemento que tiene el rectángulo de foco en un cuadro de lista de selección múltiple está seleccionado, use el [**mensaje \_ LB GETSEL.**](lb-getsel.md)
 
-Si se envía a un cuadro de lista de selección múltiple, **lb \_ GETCURSEL** devuelve el índice del elemento que tiene el rectángulo de foco. Si no se selecciona ningún elemento, devuelve cero.
+Si se envía a un cuadro de lista de selección múltiple, **LB \_ GETCURSEL** devuelve el índice del elemento que tiene el rectángulo de foco. Si no se selecciona ningún elemento, devuelve cero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Si se envía a un cuadro de lista de selección múltiple, **lb \_ GETCURSEL** d
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

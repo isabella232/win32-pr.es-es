@@ -58,14 +58,14 @@ Devuelve las marcas de estilo de edición extendidas, que pueden incluir uno o v
 
 | Código devuelto                                                                                                | Descripción                                                                                                                                                                                                                                                  |
 |------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**SES \_ EX \_ HANDLEFRIENDLYURL**</dt> </dl>  | Mostrar vínculos de nombre descriptivos con el mismo color de texto y sobresalir como vínculos automáticos, siempre que no se use el formato temporal o use el color automático de texto (valor predeterminado: 0).<br/>                                                                       |
-| <dl> <dt>**SES \_ EX \_ MULTITOUCH**</dt> </dl>         | Habilite la compatibilidad táctil en Rich Edit. Esto incluye la selección, la colocación del elemento de inserción y la invocación del menú contextual. Cuando no se establece esta marca, la función táctil se emula mediante comandos del mouse, que no tienen en cuenta los detalles del modo táctil (valor predeterminado: 0). <br/>      |
-| <dl> <dt>**SES \_ EX \_ NOACETATESELECTION**</dt> </dl> | Muestre el texto seleccionado mediante el texto Windows y los colores de fondo de la selección en lugar del color de fondo de fondo (valor predeterminado: 0). <br/>                                                                                                               |
-| <dl> <dt>**SES \_ EX \_ NOMATH**</dt> </dl>             | Deshabilitar la inserción de zonas matemáticas (valor predeterminado: 1). Para habilitar la edición matemática y la visualización, envíe el mensaje [**EM \_ SETEDITSTYLEEX**](em-seteditstyleex.md) con *wParam* establecido en 0 y *lParam* establecido en **SES \_ EX \_ NOMATH**. <br/>                              |
+| <dl> <dt>**SES \_ EX \_ HANDLEFRIENDLYURL**</dt> </dl>  | Mostrar vínculos de nombre descriptivos con el mismo color de texto y sobrelinear como vínculos automáticos, siempre que no se use el formato temporal o que use el color automático de texto (valor predeterminado: 0).<br/>                                                                       |
+| <dl> <dt>**SES \_ EX \_ MULTITOUCH**</dt> </dl>         | Habilite la compatibilidad táctil en Rich Edit. Esto incluye la selección, la selección del elemento de inserción y la invocación del menú contextual. Cuando no se establece esta marca, la función táctil se emula mediante comandos del mouse, que no tienen en cuenta las características específicas del modo táctil (valor predeterminado: 0). <br/>      |
+| <dl> <dt>**SES \_ EX \_ NOACETATESELECTION**</dt> </dl> | Muestre el texto seleccionado mediante el texto Windows texto de selección y los colores de fondo en lugar del color de fondo de fondo (valor predeterminado: 0). <br/>                                                                                                               |
+| <dl> <dt>**SES \_ EX \_ NOMATH**</dt> </dl>             | Deshabilite la inserción de zonas matemáticas (valor predeterminado: 1). Para habilitar la edición matemática y la visualización, envíe el mensaje [**EM \_ SETEDITSTYLEEX**](em-seteditstyleex.md) con *wParam* establecido en 0 y *lParam* establecido en **SES \_ EX \_ NOMATH**. <br/>                              |
 | <dl> <dt>**SES \_ EX \_ NOTABLE**</dt> </dl>            | Deshabilite la inserción de tablas. El [**mensaje EM \_ INSERTTABLE**](em-inserttable.md) devuelve **E \_ FAIL** y se omiten las tablas RTF (valor predeterminado: 0). <br/>                                                                                                  |
-| <dl> <dt>**SES \_ EX \_ USESINGLELINE**</dt> </dl>      | Permitir que un control de varias líneas actúe como un control de una sola línea con la capacidad de desplazarse verticalmente cuando el alto de una sola línea es mayor que el alto de la ventana (valor predeterminado: 0). <br/>                                                                   |
-| <dl> <dt>**SES \_ HIDETEMPFORMAT**</dt> </dl>         | Oculte el formato temporal que se crea cuando se llama a [**ITextFont.Reset**](/windows/desktop/api/Tom/nf-tom-itextfont-reset) **con tomApplyTmp.** Por ejemplo, los correctores ortográficos usan este formato para mostrar un subrayado ondulado en palabras posiblemente mal escritas.<br/> |
-| <dl> <dt>**SES \_ EX \_ USEMOUSMOUSPARAM**</dt> </dl>     | Use *wParam al* controlar el [**mensaje \_ MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) de WM y no llame a [**GetAsyncKeyState.**](/windows/desktop/api/winuser/nf-winuser-getasynckeystate)<br/>                                                                                              |
+| <dl> <dt>**SES \_ EX \_ USESINGLELINE**</dt> </dl>      | Habilite un control de varias líneas para que actúe como un control de una sola línea con la capacidad de desplazarse verticalmente cuando el alto de una sola línea es mayor que el alto de la ventana (valor predeterminado: 0). <br/>                                                                   |
+| <dl> <dt>**SES \_ HIDETEMPFORMAT**</dt> </dl>         | Oculte el formato temporal que se crea cuando se llama a [**ITextFont.Reset**](/windows/desktop/api/Tom/nf-tom-itextfont-reset) **con tomApplyTmp**. Por ejemplo, estos formatos los usan los correctores ortográficos para mostrar un subrayado ondulado en palabras posiblemente mal escritas.<br/> |
+| <dl> <dt>**SES \_ EX \_ USEMOUSMOUSMOUPARAM**</dt> </dl>     | Use *wParam al* controlar el [**mensaje WM \_ MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) y no llame a [**GetAsyncKeyState.**](/windows/desktop/api/winuser/nf-winuser-getasynckeystate)<br/>                                                                                              |
 
 
 
@@ -75,7 +75,7 @@ Devuelve las marcas de estilo de edición extendidas, que pueden incluir uno o v
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
@@ -83,7 +83,7 @@ Devuelve las marcas de estilo de edición extendidas, que pueden incluir uno o v
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

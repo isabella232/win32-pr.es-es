@@ -1,17 +1,17 @@
 ---
-title: Valores devueltos (características de accesibilidad de Windows)
+title: Valores devueltos (Windows de accesibilidad)
 description: En este tema se describen los valores devueltos más comunes y otros valores devueltos que puede ver con menos frecuencia.
 ms.assetid: e6deca92-42da-41ab-bfdb-75cbce3022bb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd0f073c401682eb78d9fdf9270709a84ed77ae2
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 71595f7a21d932ee961f9fa5f2a9443cf4d63e38de42f3d5b8c89fa8e9f84e83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122065"
 ---
-# <a name="return-values-windows-accessibility-features"></a>Valores devueltos (características de accesibilidad de Windows)
+# <a name="return-values-windows-accessibility-features"></a>Valores devueltos (Windows de accesibilidad)
 
 En este tema se describen los valores devueltos más comunes y otros valores devueltos que puede ver con menos frecuencia.
 
@@ -21,7 +21,7 @@ Los [**métodos IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible
 
 
 
-|   Valor                      |   Descripción                                                                                                                                                                                                                                                                                                                                                                                        |
+|   Value                      |   Descripción                                                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | S \_ OK                   | El método se ha llevado a cabo de forma correcta.                                                                                                                                                                                                                                                                                                                                                                     |
 | S \_ FALSE                | El método se ha instalado correctamente en parte. Esto sucede cuando el método se realiza correctamente, pero la información solicitada no está disponible. Por ejemplo, Microsoft Active Accessibility devuelve S FALSE si llama \_ a [**IAccessible::accHitTest**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acchittest) para recuperar un objeto secundario en un punto determinado y el punto especificado no está dentro del objeto o del elemento secundario del objeto. |
@@ -37,11 +37,11 @@ Los [**métodos IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible
 
 ## <a name="additional-return-values"></a>Valores devueltos adicionales
 
-Los siguientes son valores devueltos que [**los métodos IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) pueden devolver. Estos valores devueltos no son tan comunes como los anteriores, pero debe tener en cuenta estos valores.
+Los siguientes son valores devueltos que [**los métodos IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) podrían devolver. Estos valores devueltos no son tan comunes como los anteriores, pero debe tener en cuenta estos valores.
 
 
 
-|    Valor                    |    Descripción                                                                                  |
+|    Value                    |    Descripción                                                                                  |
 |------------------------|--------------------------------------------------------------------------------------|
 | E \_ ACCESSDENIED        | Esto se devuelve cuando se llama a get \_ accValue para obtener el valor de un control de contraseña. |
 | EXCEPCIÓN \_ DISP E \_     |                                                                                      |

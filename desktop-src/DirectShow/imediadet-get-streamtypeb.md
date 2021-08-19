@@ -87,7 +87,7 @@ Si el detector de medios está en modo de captura de mapa de bits, este método 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

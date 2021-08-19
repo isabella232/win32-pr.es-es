@@ -1,6 +1,6 @@
 ---
 title: TBM_CLEARTICS mensaje (Commctrl.h)
-description: Quita las marcas de graduación actuales de una barra de seguimiento. Este mensaje no quita la primera y la última marca de graduación, que la barra de seguimiento crea automáticamente.
+description: Quita las marcas de graduación actuales de una barra de seguimiento. Este mensaje no quita las marcas de graduación primera y última, creadas automáticamente por la barra de seguimiento.
 ms.assetid: 2830497c-2cf0-4068-810c-c05d4e0abb8b
 keywords:
 - TBM_CLEARTICS controles de Windows mensaje
@@ -23,7 +23,7 @@ ms.locfileid: "120046775"
 ---
 # <a name="tbm_cleartics-message"></a>Mensaje \_ CLEARTICS de TBM
 
-Quita las marcas de graduación actuales de una barra de seguimiento. Este mensaje no quita la primera y la última marca de graduación, que la barra de seguimiento crea automáticamente.
+Quita las marcas de graduación actuales de una barra de seguimiento. Este mensaje no quita las marcas de graduación primera y última, creadas automáticamente por la barra de seguimiento.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Quita las marcas de graduación actuales de una barra de seguimiento. Este mensa
 *wParam* 
 </dt> <dd>
 
-Vuelva a dibujar la marca. Si este parámetro es **TRUE**, la barra de seguimiento se vuelve a dibujar después de borrar las marcas de graduación. Si este parámetro es **FALSE,** el mensaje borra las marcas de graduación, pero no vuelve a dibujar la barra de seguimiento.
+Volver a dibujar la marca. Si este parámetro es **TRUE,** la barra de seguimiento se vuelve a dibujar después de borrar las marcas de graduación. Si este parámetro es **FALSE,** el mensaje borra las marcas de graduación, pero no vuelve a dibujar la barra de seguimiento.
 
 </dd> <dt>
 
@@ -47,7 +47,7 @@ No de devuelve ningún valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |

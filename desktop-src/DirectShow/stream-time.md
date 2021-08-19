@@ -1,24 +1,24 @@
 ---
-description: Tenga en cuenta que esta API está en desuso. Las nuevas aplicaciones no deben utilizarla. El \_ tipo de datos de tiempo de secuencia se usa para expresar los tiempos de referencia en Microsoft DirectShow multimedia streaming. Las unidades son 100 nanosegundos.
+description: 'Nota: Esta API está en desuso. Las nuevas aplicaciones no deben usarla. El tipo \_ de datos STREAM TIME se usa para expresar los tiempos de referencia en Microsoft DirectShow streaming multimedia. Las unidades son de 100 nanosegundos.'
 ms.assetid: eff79c58-09d8-4665-9138-752ffaf02e26
-title: STREAM_TIME (Mmstream. h)
+title: STREAM_TIME (Mmstream.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4603aafeb8901eaa0465ab43030c78b76e1ac5a7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a2bf8ee48db3e9be921063513f129227be0774fb4d17cf028fedb655ef0fe76f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951764"
 ---
-# <a name="stream_time"></a>tiempo de secuencia \_
+# <a name="stream_time"></a>STREAM \_ TIME
 
 > [!Note]  
-> Esta API está en desuso. Las nuevas aplicaciones no deben utilizarla.
+> Esta API está en desuso. Las nuevas aplicaciones no deben usarla.
 
  
 
-El \_ tipo de datos de tiempo de secuencia se usa para expresar los tiempos de referencia en Microsoft DirectShow multimedia streaming. Las unidades son 100 nanosegundos.
+El tipo \_ de datos STREAM TIME se usa para expresar los tiempos de referencia en Microsoft DirectShow streaming multimedia. Las unidades son de 100 nanosegundos.
 
 
 ```C++
@@ -27,9 +27,9 @@ typedef LONGLONG STREAM_TIME;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este tipo de datos es equivalente al tipo de datos de [**\_ hora de referencia**](reference-time.md) de DirectShow.
+Este tipo de datos es equivalente al tipo DirectShow [**de datos REFERENCE \_ TIME.**](reference-time.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Este tipo de datos es equivalente al tipo de datos de [**\_ hora de referencia**
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Mmstream. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Mmstream.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Este tipo de datos es equivalente al tipo de datos de [**\_ hora de referencia**
 
 <dl> <dt>
 
-[Tipos de datos de transmisión por secuencias multimedia](multimedia-streaming-data-types.md)
+[Tipos de datos de streaming multimedia](multimedia-streaming-data-types.md)
 </dt> </dl>
 
  

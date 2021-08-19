@@ -25,7 +25,7 @@ ms.locfileid: "118955384"
 ---
 # <a name="cautousingoutputpin-class"></a>CAutoUsingOutputPin (clase)
 
-La **clase CAutoUsingOutputPin** obtiene y libera acceso a un objeto [**CDynamicOutputPin.**](cdynamicoutputpin.md)
+La **clase CAutoUsingOutputPin** obtiene y libera acceso a un [**objeto CDynamicOutputPin.**](cdynamicoutputpin.md)
 
 **CAutoUsingOutputPin** tiene estos tipos de miembros:
 
@@ -42,7 +42,7 @@ La **clase CAutoUsingOutputPin** obtiene y libera acceso a un objeto [**CDynamic
 
 ## <a name="remarks"></a>Comentarios
 
-Cuando se llama a determinados métodos en [**CDynamicOutputPin,**](cdynamicoutputpin.md)el autor de la llamada debe obtener acceso al pin y, a continuación, liberar ese acceso. Para obtener acceso, el autor de la llamada usa [**el método CDynamicOutputPin::StartUsingOutputPin.**](cdynamicoutputpin-startusingoutputpin.md) Para liberar el acceso, llama al [**método CDynamicOutputPin::StopUsingOutputPin.**](cdynamicoutputpin-stopusingoutputpin.md) La **clase CAutoUsingOutputPin es** una clase auxiliar que controla estas tareas en sus métodos de constructor y destructor. En el ejemplo de código siguiente se muestra cómo usar esta clase:
+Cuando se llama a determinados métodos en [**CDynamicOutputPin,**](cdynamicoutputpin.md)el autor de la llamada debe obtener acceso al pin y, a continuación, liberar ese acceso. Para obtener acceso, el autor de la llamada [**usa el método CDynamicOutputPin::StartUsingOutputPin.**](cdynamicoutputpin-startusingoutputpin.md) Para liberar el acceso, llama al [**método CDynamicOutputPin::StopUsingOutputPin.**](cdynamicoutputpin-stopusingoutputpin.md) La **clase CAutoUsingOutputPin es** una clase auxiliar que controla estas tareas en sus métodos constructor y destructor. En el ejemplo de código siguiente se muestra cómo usar esta clase:
 
 
 ```
@@ -82,7 +82,7 @@ HRESULT hr = S_OK;  // Important! Initialize to S_OK.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

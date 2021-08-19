@@ -1,9 +1,9 @@
 ---
-title: 'Métodos Load Texture3D:: Texture3D'
-description: 'Lee los datos de textura. | Métodos Load Texture3D:: Texture3D'
+title: Métodos Texture3D::Texture3D Load
+description: Lee los datos de textura. | Métodos Texture3D::Texture3D Load
 ms.assetid: eb98a31a-0535-4697-ba93-c216845dbfe8
 keywords:
-- Cargar métodos HLSL
+- Métodos de carga HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,14 +12,14 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 9ba2046e9ae4bd76c4ff2e0c9dc13b7de4f2cf11
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 17c1434a912adeaef434cf83b92b638aa46919e4dc2c1a1b854f960b24822810
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022855"
 ---
-# <a name="texture3dload-methods"></a>Texture3D:: Load (métodos)
+# <a name="texture3dload-methods"></a>Métodos Texture3D::Load
 
 Lee los datos de textura.
 
@@ -29,8 +29,8 @@ Lee los datos de textura.
 
 | Método                                                 | Descripción                                                        |
 |:-------------------------------------------------------|:-------------------------------------------------------------------|
-| [**Load (int, int)**](dx-graphics-hlsl-to-load.md)      | Lee los datos de textura.<br/>                                     |
-| [**Load (int, int, uint)**](t3d-load-float-int-uint-.md) | Lee los datos de textura y devuelve el estado de la operación.<br/> |
+| [**Load(int,int)**](dx-graphics-hlsl-to-load.md)      | Lee los datos de textura.<br/>                                     |
+| [**Load(int,int,uint)**](t3d-load-float-int-uint-.md) | Lee los datos de textura y devuelve el estado de la operación.<br/> |
 
 
 

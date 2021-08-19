@@ -88,7 +88,7 @@ Desplazamiento, en bytes, al recurso intermedio.
 
 Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Índice del primer subrecurso del recurso. Los valores válidos van de 0 *a MaxSubresources.*
+Índice del primer subrecurso del recurso. Los valores válidos oscilan entre 0 *y MaxSubresources.*
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Número de subrecursos del recurso. Los valores válidos van de 1 a (*MaxSubresources*  -  *FirstSubresource*).
+Número de subrecursos del recurso. Los valores válidos oscilan entre 1 y (*MaxSubresources*  -  *FirstSubresource*).
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Número de subrecursos del recurso. Los valores válidos van de 1 a (*MaxSubreso
 
 Tipo: **[ **D3D12 \_ SUBRESOURCE \_ DATA**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_data)\***
 
-Puntero a una matriz (de longitud *NumSubresources)* de punteros a estructuras [**\_ SUBRESOURCE \_ DATA de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_data) que contienen descripciones de los datos de subrecursos usados para la actualización.
+Puntero a una matriz (de longitud *NumSubresources)* de punteros a estructuras [**\_ SUBRESOURCE \_ DATA D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_data) que contienen descripciones de los datos de subrecursos usados para la actualización.
 
 </dd> </dl>
 
@@ -132,7 +132,7 @@ La declaración de esta función comienza por: `template <UINT MaxSubresources>`
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

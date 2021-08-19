@@ -1,17 +1,17 @@
 ---
 description: Especifica un nombre descriptivo para la identificación del cliente.
 ms.assetid: 04DEFC2A-6870-4C22-B55D-5514C87C1908
-title: Propiedad MFNETSOURCE_PEERMANAGER (Mfidl. h)
+title: MFNETSOURCE_PEERMANAGER propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f91f4b244d82a990fb1afd46ffe5eb3799b3c6a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9933059fa151ced5aa11bb91185c74ca5eb6507f264c622a65e2f112e0b52369
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119940235"
 ---
-# <a name="mfnetsource_peermanager-property"></a>\_Propiedad PEERMANAGER de MFNETSOURCE
+# <a name="mfnetsource_peermanager-property"></a>Propiedad PEERMANAGER de MFNETSOURCE \_
 
 Especifica un nombre descriptivo para la identificación del cliente.
 
@@ -19,13 +19,13 @@ Especifica un nombre descriptivo para la identificación del cliente.
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
 Cadena de caracteres anchos (**WCHAR** \* )
 
-VT \_ LPWStr
+VT \_ LPWSTR
 
 **pwszVal**
 
@@ -37,9 +37,9 @@ VT \_ LPWStr
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -47,10 +47,10 @@ VT \_ LPWStr
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
-[Funciones de red en Media Foundation](networking-in-media-foundation.md)
+[Redes en Media Foundation](networking-in-media-foundation.md)
 </dt> </dl>
 
  

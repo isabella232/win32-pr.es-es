@@ -1,7 +1,7 @@
 ---
-description: La \_ variable miembro de HWND m contiene un identificador para la ventana de cuadro de diálogo. Esta variable miembro se inicializa después de que el objeto cree la ventana de cuadro de diálogo, cuando se devuelva la función CreateDialogParam.
+description: La variable miembro m \_ hwnd contiene un identificador para la ventana de diálogo. Esta variable miembro se inicializa después de que el objeto crea la ventana de diálogo, cuando se devuelve la función CreateDialogParam.
 ms.assetid: f985c06f-a1f9-458b-b9f3-cabe9f583313
-title: 'Miembro CBasePropertyPage:: m_hwnd (Cprop. h)'
+title: CBasePropertyPage::m_hwnd miembro (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 94a249d9b8f887750360ceb83f876f315d4fd43f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b241f41662ab2b7aa981015e662605f1a19f017ad610ddee347e3dcdeb00c232
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052595"
 ---
-# <a name="cbasepropertypagem_hwnd-member"></a>Miembro HWND CBasePropertyPage:: m \_
+# <a name="cbasepropertypagem_hwnd-member"></a>Miembro CBasePropertyPage::m \_ hwnd
 
-La `m_hwnd` variable miembro contiene un identificador para la ventana de cuadro de diálogo. Esta variable miembro se inicializa después de que el objeto cree la ventana de cuadro de diálogo, cuando se devuelva la función **CreateDialogParam** .
+La `m_hwnd` variable miembro contiene un identificador para la ventana de diálogo. Esta variable miembro se inicializa después de que el objeto crea la ventana de diálogo, cuando se devuelve la función **CreateDialogParam.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ HWND m_hwnd;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Cprop. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Cprop.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ HWND m_hwnd;
 
 <dl> <dt>
 
-[**Clase CBasePropertyPage**](cbasepropertypage.md)
+[**CBasePropertyPage (clase)**](cbasepropertypage.md)
 </dt> </dl>
 
  

@@ -17,14 +17,14 @@ Un cliente de un moniker asincrónico puede elegir entre un modelo de extracció
 
 Dado que los datos se descargan solo cuando se solicitan, los clientes que eligen el modelo de extracción de datos deben asegurarse de leer estos datos de forma oportuna. En el caso de las descargas de Internet con [monikers](url-monikers.md)de dirección URL, la operación de enlace puede producir un error si un cliente espera demasiado tiempo antes de solicitar más datos.
 
-En el modelo de inserción de datos, el moniker impulsa la operación de enlace asincrónica y notifica continuamente al cliente cada vez que hay nuevos datos disponibles. El cliente puede elegir si leer los datos en cualquier momento durante la operación de enlace, pero el moniker llevará la operación de enlace a la finalización, independientemente de.
+En el modelo de inserción de datos, el moniker impulsa la operación de enlace asincrónica y notifica continuamente al cliente cada vez que hay nuevos datos disponibles. El cliente puede elegir si desea leer los datos en cualquier momento durante la operación de enlace, pero el moniker llevará la operación de enlace a la finalización, independientemente de.
 
 Además, debe recordar seguir las reglas COM para la asignación de memoria al usar monikers asincrónicos, específicamente los siguientes:
 
 -   Cada vez que una llamada de función o interfaz COM devuelve un búfer (cadena u otro) a su cliente, el cliente es responsable de liberar la memoria mediante una llamada a [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
 -   Cada vez que una interfaz o función COM requiere un búfer de su cliente, el cliente debe asignar ese búfer mediante [**CoTaskMemAlloc**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) y el destinatario debe liberarlo.
 
-Asegúrese de seguir estas reglas al asignar cadenas o búferes que se pasan a monikers asincrónicos y recuerde liberar memoria devuelta por monikers asincrónicos. Consulte [Administración de la asignación de](the-com-library.md) memoria y temas relacionados para obtener detalles completos.
+Asegúrese de seguir estas reglas al asignar cadenas o búferes que se pasan a monikers asincrónicos y recuerde liberar la memoria devuelta por los monikers asincrónicos. Consulte [Administración de la asignación de](the-com-library.md) memoria y temas relacionados para obtener detalles completos.
 
 ## <a name="related-topics"></a>Temas relacionados
 

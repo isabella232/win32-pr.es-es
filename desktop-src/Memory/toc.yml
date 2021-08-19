@@ -63,7 +63,7 @@
               href: physical-address-extension.md
             - name: Extensiones de ventana de direcciones
               href: address-windowing-extensions.md
-            - name: Large-Page soporte técnico
+            - name: Large-Page compatibilidad
               href: large-page-support.md
         - name: Funciones globales y locales
           href: global-and-local-functions.md

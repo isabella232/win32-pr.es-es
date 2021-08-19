@@ -5,29 +5,29 @@ ms.assetid: D8035924-736D-495D-BF78-950DAEB69774
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe59ebb3eb2fb077b53074024100c4f0861cf197
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 85a3c5df2f8a083e8fe41da53035f4de43b58e5ef1e7948dee8e93f617e17bdf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125005"
 ---
 # <a name="iremotedesktopclientevents-methods"></a>Métodos IRemoteDesktopClientEvents
 
-La interfaz [**IRemoteDesktopClientEvents**](iremotedesktopclientevents.md) expone los métodos siguientes.
+La [**interfaz IRemoteDesktopClientEvents**](iremotedesktopclientevents.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
 <dl> <dt>
 
-[**Método biconnect**](iremotedesktopclientevents-onconnecting.md)
+[**Método OnConnecting**](iremotedesktopclientevents-onconnecting.md)
 </dt> <dd>
 
 Se llama cuando el control de cliente intenta establecer una conexión a una sesión remota.
 
 </dd> <dt>
 
-[**Unconnected (método)**](iremotedesktopclientevents-onconnected.md)
+[**Método OnConnected**](iremotedesktopclientevents-onconnected.md)
 </dt> <dd>
 
 Se llama cuando el control de cliente se ha conectado a una sesión remota.
@@ -41,7 +41,7 @@ Se llama cuando el control de cliente ha iniciado sesión correctamente en una s
 
 </dd> <dt>
 
-[**OnDisconnection (método)**](iremotedesktopclientevents-ondisconnected.md)
+[**Método OnDisconnected**](iremotedesktopclientevents-ondisconnected.md)
 </dt> <dd>
 
 Se llama cuando el control de cliente se ha desconectado de una sesión remota.
@@ -79,7 +79,7 @@ Se llama antes de que el control muestre un cuadro de diálogo.
 [**Método OnDialogDismissed**](iremotedesktopclientevents-ondialogdismissed.md)
 </dt> <dd>
 
-Se llama después de que se descarte un cuadro de diálogo que muestra el control de cliente.
+Se llama después de descartar un cuadro de diálogo mostrado por el control de cliente.
 
 </dd> <dt>
 
@@ -100,24 +100,24 @@ Se llama cuando el control de cliente recibe un mensaje administrativo.
 [**Método OnKeyCombinationPressed**](iremotedesktopclientevents-onkeycombinationpressed.md)
 </dt> <dd>
 
-Se le llama cuando se presionan combinaciones de teclas especiales en la sesión remota.
+Se llama cuando se presionan combinaciones de teclas especiales en la sesión remota.
 
 </dd> <dt>
 
 [**Método OnRemoteDesktopSizeChanged**](iremotedesktopclientevents-onremotedesktopsizechanged.md)
 </dt> <dd>
 
-Se llama cuando el tamaño del escritorio remoto ha cambiado.
+Se llama cuando cambia el tamaño del escritorio remoto.
 
 </dd> <dt>
 
 [**Método OnTouchPointerCursorMoved**](iremotedesktopclientevents-ontouchpointercursormoved.md)
 </dt> <dd>
 
-Se llama cuando se ha cambiado el cursor del puntero táctil y la propiedad [**EventsEnabled**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclienttouchpointer-get_eventsenabled) está establecida en true.
+Se llama cuando se ha movido el cursor del puntero táctil y la [**propiedad EventsEnabled**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclienttouchpointer-get_eventsenabled) se establece en true.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 

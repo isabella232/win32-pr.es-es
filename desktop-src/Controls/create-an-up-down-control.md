@@ -1,40 +1,40 @@
 ---
-title: Cómo crear controles de Up-Down
-description: Los controles de flechas se crean mediante una llamada a la función CreateWindowEx y pasando la \_ clase de valor inferior para el parámetro de clase de Windows lpClassName.
+title: Cómo crear controles Up-Down datos
+description: Para crear controles de nivel inferior, llame a la función CreateWindowEx y pase el valor UPDOWN CLASS para el parámetro Windows \_ clase lpClassName.
 ms.assetid: 9B7A5F8B-4EE5-413B-A60C-800758DD1120
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 427361d7748270ad9c689867aa8100e95afbd6b0
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 0089941cd147f0c94dc86f2283fe2c8fa10ba5e141d4a8ef99d689a991668ce7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104149681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062965"
 ---
-# <a name="how-to-create-up-down-controls"></a>Cómo crear controles de Up-Down
+# <a name="how-to-create-up-down-controls"></a>Cómo crear controles Up-Down datos
 
-Los controles de flechas se crean mediante una llamada a la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y pasando la [**\_ clase**](common-control-window-classes.md) de valor inferior para el parámetro de clase de Windows *lpClassName*.
+Para crear controles de nivel inferior, llame a la [**función CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y pase el valor [**UPDOWN \_ CLASS**](common-control-window-classes.md) para el parámetro Windows clase *lpClassName*.
 
-**Nota:**    La función [**CreateUpDownControl**](/windows/desktop/api/Commctrl/nf-commctrl-createupdowncontrol) está en desuso. En su lugar, debe usar la `CreateWindowEx` función.
+**Nota**   La [**función CreateUpDownControl**](/windows/desktop/api/Commctrl/nf-commctrl-createupdowncontrol) está en desuso. En su lugar, debe `CreateWindowEx` usar la función .
 
-En el ejemplo de código incluido en este tema se usa un control de flechas para controlar una barra de progreso.
+El ejemplo de código que se muestra en este tema usa un control hacia abajo para controlar una barra de progreso.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="step-1-add-references-to-the-common-controls"></a>Paso 1: agregar referencias a los controles comunes
+### <a name="step-1-add-references-to-the-common-controls"></a>Paso 1: Agregar referencias a los controles comunes
 
-Además de agregar una directiva de preprocesador para incluir el archivo de encabezado de controles comunes, también debe configurar el enlazador para que haga referencia a la versión más reciente de la biblioteca de controles comunes.
+Además de agregar una directiva de preprocesador para incluir el archivo de encabezado de controles comunes, también debe configurar el vinculador para que haga referencia a la versión más reciente de la biblioteca de controles comunes.
 
 
 ```C++
@@ -52,9 +52,9 @@ Además de agregar una directiva de preprocesador para incluir el archivo de enc
 
 
 
-### <a name="step-2-forward-declarations"></a>Paso 2: declaraciones hacia delante
+### <a name="step-2-forward-declarations"></a>Paso 2: Reenviar declaraciones
 
-Declare los identificadores para el control de flechas y los controles relacionados, y reenvíe las referencias a las funciones que inicializan y crean los controles.
+Declare los identificadores del control de arriba a abajo y a sus controles del mismo nivel y reenvía a las funciones que inicializan y crean los controles.
 
 
 ```C++
@@ -82,7 +82,7 @@ HWND CreateProgBar(HWND);
 
 
 
-Declare una referencia adelantada al procesador de ventanas para el cuadro de diálogo primario del control de flechas.
+Declare una referencia hacia delante al procesador de ventanas para el cuadro de diálogo primario del control de nivel superior.
 
 
 ```C++
@@ -91,9 +91,9 @@ INT_PTR CALLBACK UpDownDialogProc(HWND, UINT, WPARAM, LPARAM);
 
 
 
-### <a name="step-3-initialize-the-initcommoncontrolsex-structures-dwsize-member"></a>Paso 3: inicializar el miembro **dwSize** de la estructura INITCOMMONCONTROLSEX
+### <a name="step-3-initialize-the-initcommoncontrolsex-structures-dwsize-member"></a>Paso 3: Inicializar el miembro **dwSize** de la estructura INITCOMMONCONTROLSEX
 
-La estructura [**INITCOMMONCONTROLSEX**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) incluye la información que se usa para cargar las clases de control comunes desde el archivo dll. Esta estructura se usa con la función **InitCommonControlsEx** , que requiere el tamaño de la estructura para realizar su trabajo.
+La [**estructura INITCOMMONCONTROLSEX**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) contiene la información utilizada para cargar clases de control comunes desde el archivo DLL. Esta estructura se usa con la **función InitCommonControlsEx,** que requiere el tamaño de la estructura para realizar su trabajo.
 
 
 ```C++
@@ -103,13 +103,13 @@ icex.dwSize = sizeof(INITCOMMONCONTROLSEX);
 
 
 > [!Note]  
-> Solo tiene que inicializar el miembro **dwSize** una vez, pero debe llamar a la función **InitCommonControlsEx** cada vez que cree un control común.
+> Solo necesita inicializar el miembro **dwSize** una vez, pero debe llamar a la **función InitCommonControlsEx** cada vez que cree un control común.
 
- 
+ 
 
-### <a name="step-4-create-a-parent-dialog-box-to-host-the-up-down-control"></a>Paso 4: crear un cuadro de diálogo primario para hospedar el control de Up-Down
+### <a name="step-4-create-a-parent-dialog-box-to-host-the-up-down-control"></a>Paso 4: Crear un cuadro de diálogo primario para hospedar el control Up-Down principal
 
-Se puede implementar como un controlador de mensajes en el procesador de ventanas principales (*WndProc*).
+Puede implementar esto como un controlador de mensajes en el procesador de ventana principal (*WndProc*).
 
 
 ```C++
@@ -136,9 +136,9 @@ case WM_COMMAND:
 
 
 
-### <a name="step-5-implement-a-window-processor-for-the-up-down-controls-parent-window"></a>Paso 5: implementar un procesador de ventanas para la ventana primaria del control Up-Down
+### <a name="step-5-implement-a-window-processor-for-the-up-down-controls-parent-window"></a>Paso 5: Implementar un procesador de ventanas para la Up-Down principal del control
 
-Cuando se crea el cuadro de diálogo primario, se inicializa con sus ventanas secundarias, los controles que contiene. Cuando el usuario hace clic en una de las flechas del control de flechas, el sistema operativo informa al cuadro de diálogo del evento mediante el envío de un mensaje de notificación de **WM \_** que contiene el código de notificación **UDN \_ DELTAPOS**, que a su vez contiene información sobre el nuevo valor de la ventana del Buddy. El controlador de mensajes de **\_ notificación de WM** actualiza la barra de progreso con esta nueva información.
+Cuando se crea el cuadro de diálogo primario, se inicializa con sus ventanas secundarias, los controles que son elementos primarios. Cuando el usuario hace clic en una de las flechas del control hacia abajo, el sistema operativo notifica al cuadro de diálogo del evento enviándole un mensaje **WM \_ NOTIFY** que contiene el código de notificación **UDN \_ DELTAPOS,** que a su vez contiene información sobre el nuevo valor de la ventana de compañeros. El **controlador de mensajes WM \_ NOTIFY** actualiza la barra de progreso con esta nueva información.
 
 
 ```C++
@@ -195,9 +195,9 @@ INT_PTR CALLBACK UpDownDialogProc(HWND hDlg, UINT message, WPARAM wParam, LPARAM
 
 
 
-### <a name="step-6-create-the-buddy-window"></a>Paso 6: crear la ventana de Buddy
+### <a name="step-6-create-the-buddy-window"></a>Paso 6: Crear la ventana de Buddy
 
-La ventana relacionada del control de flechas es un control de edición y los controles de edición pertenecen a la clase de controles comunes estándar. Para usar un control de edición, llame a la función **InitCommonControlsEx** con la marca de inicialización de **\_ \_ clases estándar de ICC** .
+La ventana de compañeros del control de flechas es un control de edición y los controles de edición pertenecen a la clase de controles comunes estándar. Para usar un control de edición, llame a **la función InitCommonControlsEx** con la **marca de \_ inicialización \_ DE CLASES ESTÁNDAR DE JAVA.**
 
 
 ```C++
@@ -226,9 +226,9 @@ HWND CreateUpDnBuddy(HWND hwndParent)
 
 
 
-### <a name="step-7-create-the-up-down-control"></a>Paso 7: crear el control de Up-Down
+### <a name="step-7-create-the-up-down-control"></a>Paso 7: Crear el control Up-Down control
 
-Los controles de flechas pertenecen a la clase de flechas arriba. Para usar un control de flechas, llame a la función **InitCommonControlsEx** con la marca de inicialización de la **\_ \_ clase ICC** . Para que el control pueda contar hacia arriba cuando el usuario hace clic en la flecha arriba del control, debe establecer el intervalo y la dirección del control de flechas. Para ello, se envía el control a un mensaje **UDM \_ SetRange** que contiene valores de los límites superior e inferior.
+Los controles de arriba a abajo pertenecen a la clase de arriba a abajo. Para usar un control de arriba a abajo, llame a la **función InitCommonControlsEx** con la **marca de inicialización DE LA CLASE \_ UPDOWN \_ DE LA CLASE DE LA CLASE DE LA CÓNA.** Para que el control cuente hacia arriba cuando el usuario hace clic en la flecha arriba del control, debe establecer el intervalo y la dirección del control de arriba a abajo. Para ello, envíe al control un mensaje **\_ SETRANGE de UDM** que contenga valores para los límites superior e inferior.
 
 
 ```C++
@@ -258,9 +258,9 @@ HWND CreateUpDnCtl(HWND hwndParent)
 
 
 
-## <a name="up-down-control-sample-code"></a>Código de ejemplo de control de Up-Down
+## <a name="up-down-control-sample-code"></a>Up-Down ejemplo de control de datos
 
-Esta es la implementación completa del ejemplo de código UpDown. Para experimentar con él, cree un proyecto de Win32 en blanco, copie y pegue este código en un archivo de C++ vacío y, a continuación, agregue su propio archivo de encabezado, archivo RC, archivo. h de recursos y un archivo de icono ( \* . ico).
+Esta es la implementación completa del ejemplo de código UpDown. Puede experimentar con él creando un proyecto win32 en blanco, copiando y pegando este código en un archivo de C++ vacío y, a continuación, agregando su propio archivo de encabezado, archivo RC, archivo resource.h y un archivo de icono \* (.ico).
 
 
 ```C++
@@ -587,12 +587,12 @@ HWND CreateProgBar(HWND hwndParent)
 
 <dl> <dt>
 
-[Usar controles Up-Down](using-up-down-controls.md)
+[Usar Up-Down controles](using-up-down-controls.md)
 </dt> <dt>
 
-[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

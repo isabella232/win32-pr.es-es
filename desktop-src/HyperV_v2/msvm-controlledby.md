@@ -1,7 +1,7 @@
 ---
-description: Asocia un dispositivo de almacenamiento con el controlador de almacenamiento que posee el dispositivo.
+description: Asocia un dispositivo de almacenamiento al controlador de almacenamiento que posee el dispositivo.
 ms.assetid: 3DE05EDC-C54A-4C3C-9057-4418246037D5
-title: Msvm_ControlledBy (clase)
+title: Msvm_ControlledBy clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,18 +24,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7986ffb842f7a1a104a0a8d846c1b6ee47a21523
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b08cf97c54363009e839ea78fe139c6c8a1bdd81cac07182d019d3d00857dee4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130605"
 ---
-# <a name="msvm_controlledby-class"></a>MSVM \_ ControlledBy (clase)
+# <a name="msvm_controlledby-class"></a>Clase Msvm \_ ControlledBy
 
-Asocia un dispositivo de almacenamiento con el controlador de almacenamiento que posee el dispositivo. Esta asociación se usa con ambos controladores IDE y de disquete.
+Asocia un dispositivo de almacenamiento al controlador de almacenamiento que posee el dispositivo. Esta asociación se usa con ide y disquetes.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,78 +59,78 @@ class Msvm_ControlledBy : CIM_ControlledBy
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ ControlledBy** tiene estos tipos de miembros:
+La **clase Msvm \_ ControlledBy** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ ControlledBy** tiene estas propiedades.
+La **clase Msvm \_ ControlledBy** tiene estas propiedades.
 
 <dl> <dt>
 
 **AccessMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Accesibilidad del dispositivo a través del controlador antecedente. Esta propiedad se hereda de [**\_ ControlledBy CIM**](/windows/desktop/CIMWin32Prov/cim-controlledby)y siempre está establecida en 2 (lectura y escritura).
+Accesibilidad del dispositivo a través del controlador antecedente. Esta propiedad se hereda de [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby)y siempre se establece en 2 (lectura/escritura).
 
 </dd> <dt>
 
 **AccessPriority**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La prioridad dada para acceder al dispositivo a través de este controlador. La ruta de acceso de prioridad más alta tendrá el valor más bajo. Esta propiedad se hereda de [**\_ ControlledBy CIM**](/windows/desktop/CIMWin32Prov/cim-controlledby)y siempre está establecida en 0.
+Prioridad dada a los accesos del dispositivo a través de este controlador. La ruta de acceso de prioridad más alta tendrá el valor más bajo. Esta propiedad se hereda de [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby)y siempre se establece en 0.
 
 </dd> <dt>
 
 **AccessState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el controlador está activamente realizando comandos o accediendo al dispositivo. Esta propiedad se hereda de [**\_ ControlledBy CIM**](/windows/desktop/CIMWin32Prov/cim-controlledby)y siempre está establecida en 1 (activo).
+Indica si el controlador está comandando activamente o accediendo al dispositivo. Esta propiedad se hereda de [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby)y siempre se establece en 1 (activo).
 
 </dd> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **[ **\_ controlador CIM**](/windows/desktop/CIMWin32Prov/cim-controller)**
+Tipo de datos: **[ **Controlador CIM \_**](/windows/desktop/CIMWin32Prov/cim-controller)**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Referencia al controlador. Esta propiedad se hereda de [**\_ ControlledBy CIM**](/windows/desktop/CIMWin32Prov/cim-controlledby).
+Referencia al controlador. Esta propiedad se hereda de [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby).
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **[ **\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)**
+Tipo de datos: **[ **\_ Cim LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Referencia al dispositivo controlado. Esta propiedad se hereda de [**\_ ControlledBy CIM**](/windows/desktop/CIMWin32Prov/cim-controlledby).
+Referencia al dispositivo controlado. Esta propiedad se hereda de [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby).
 
 </dd> <dt>
 
@@ -143,40 +143,40 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La dirección del dispositivo asociado en el contexto del controlador antecedente. Esta propiedad se hereda de [**\_ ControlledBy CIM**](/windows/desktop/CIMWin32Prov/cim-controlledby).
+Dirección del dispositivo asociado en el contexto del controlador antecedente. Esta propiedad se hereda de [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby).
 
 </dd> <dt>
 
 **NegotiatedDataWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Esta propiedad se hereda de [**CIM \_ DeviceConnection**](/windows/desktop/CIMWin32Prov/cim-deviceconnection)y siempre está establecida en 0.
+Esta propiedad se hereda de [**CIM \_ DeviceConnection**](/windows/desktop/CIMWin32Prov/cim-deviceconnection)y siempre se establece en 0.
 
 </dd> <dt>
 
 **NegotiatedSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Esta propiedad se hereda de [**CIM \_ DeviceConnection**](/windows/desktop/CIMWin32Prov/cim-deviceconnection)y siempre está establecida en 0.
+Esta propiedad se hereda de [**CIM \_ DeviceConnection**](/windows/desktop/CIMWin32Prov/cim-deviceconnection)y siempre se establece en 0.
 
 </dd> <dt>
 
 **NumberOfHardResets**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -189,7 +189,7 @@ Esta propiedad se hereda de [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32P
 **NumberOfSoftResets**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -202,7 +202,7 @@ Esta propiedad se hereda de [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32P
 **TimeOfDeviceReset**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -212,9 +212,9 @@ Esta propiedad se hereda de [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32P
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase **MSVM \_ ControlledBy** puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a **la clase Msvm \_ ControlledBy** podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -222,10 +222,10 @@ El acceso a la clase **MSVM \_ ControlledBy** puede estar restringido por el fil
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -234,13 +234,13 @@ El acceso a la clase **MSVM \_ ControlledBy** puede estar restringido por el fil
 
 <dl> <dt>
 
-[**\_CONTROLLEDBY CIM**](cim-controlledby.md)
+[**CIM \_ ControlledBy**](cim-controlledby.md)
 </dt> <dt>
 
-[**\_CONTROLLEDBY CIM**](/windows/desktop/CIMWin32Prov/cim-controlledby)
+[**CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby)
 </dt> <dt>
 
-[Clases de almacenamiento](storage-classes.md)
+[Storage Clases](storage-classes.md)
 </dt> </dl>
 
  

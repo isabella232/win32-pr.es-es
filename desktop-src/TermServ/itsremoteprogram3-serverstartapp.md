@@ -1,12 +1,12 @@
 ---
-title: ITSRemoteProgram3 ServerStartApp, método
-description: Especifica que una aplicación se inicie en la sesión remota.
+title: Método ITSRemoteProgram3 ServerStartApp
+description: Especifica una aplicación que se iniciará en la sesión remota.
 ms.assetid: 55a05d05-66d5-48a1-b3a6-f087aeb62925
 ms.tgt_platform: multiple
 keywords:
 - Método ServerStartApp Servicios de Escritorio remoto
-- Método ServerStartApp Servicios de Escritorio remoto, interfaz ITSRemoteProgram3
-- Interfaz ITSRemoteProgram3 Servicios de Escritorio remoto, método ServerStartApp
+- Método ServerStartApp Servicios de Escritorio remoto , interfaz ITSRemoteProgram3
+- Interfaz ITSRemoteProgram3 Servicios de Escritorio remoto , método ServerStartApp
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef1822fa98094870ebebe607528cdc69a8a201f5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e162f220c59f8dfaca1d1f5666fb691ca02b8f53b5fcfe0476bf188d55b25d6e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072237"
 ---
-# <a name="itsremoteprogram3serverstartapp-method"></a>ITSRemoteProgram3:: ServerStartApp (método)
+# <a name="itsremoteprogram3serverstartapp-method"></a>Método ITSRemoteProgram3::ServerStartApp
 
-Especifica que una aplicación se inicie en la sesión remota.
+Especifica una aplicación que se iniciará en la sesión remota.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,18 +45,18 @@ HRESULT ServerStartApp(
 
 <dl> <dt>
 
-*bstrAppUserModelId* \[ de\]
+*bstrAppUserModelId* \[ En\]
 </dt> <dd></dd> <dt>
 
-*bstrArguments* \[ de\]
+*bstrArguments* \[ En\]
 </dt> <dd></dd> <dt>
 
-*vbExpandEnvVarInArgumentsOnServer* \[ de\]
+*vbExpandEnvVarInArgumentsOnServer* \[ En\]
 </dt> <dd></dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                            |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |

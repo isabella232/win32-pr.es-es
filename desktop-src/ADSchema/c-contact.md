@@ -5,7 +5,7 @@ ms.assetid: 2372ea2b-1ac3-4173-950f-4ee00138fe22
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD de clase de contacto
-- esquema de AD de clase de contacto
+- contact class AD Schema
 topic_type:
 - apiref
 api_name:
@@ -27,11 +27,11 @@ Esta clase contiene información sobre una persona o empresa con la que puede qu
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|------------------------------------------------|
 | CN                | Contacto                                        |
 | Ldap-Display-Name | contact                                        |
-| Privilegio actualizar  | El administrador del dominio establece este valor. |
+| Actualizar privilegios  | El administrador del dominio establece este valor. |
 | Frecuencia de actualización  | \-                                             |
 | Schema-Id-Guid    | 5cb41ed0-0e4c-11d0-a286-00aa003049e2           |
 
@@ -53,26 +53,26 @@ Esta clase contiene información sobre una persona o empresa con la que puede qu
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------|
 | System-Only                 | Falso                                                                                        |
 | Object-Category             | 1                                                                                            |
 | Default-Object-Category     | [**Person**](c-person.md)<br/>                                                        |
 | Governs-Id                  | 1.2.840.113556.1.5.15                                                                        |
 | Valor predeterminado de ocultación        | 0                                                                                            |
-| Rdn-Att-Id                  | [**Nombre común**](a-cn.md)<br/>                                                       |
+| Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                       |
 | Subclase de                 | [**Organizational-Person**](c-organizationalperson.md)<br/>                           |
 | Posibles superiores          | [**Unidad organizativa de DNS**](c-domaindns.md)[**de dominio**](c-organizationalunit.md)         |
-| Clases auxiliares           | [**Destinatario del correo**](c-mailrecipient.md) (sistema)                                           |
+| Clases auxiliares           | [**Destinatario de correo**](c-mailrecipient.md) (sistema)                                           |
 | NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                 |
 | Descriptor de seguridad predeterminado | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; AU) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
 
-## <a name="windows-2000-server-attributes"></a>Windows atributos de servidor 2000
+## <a name="windows-2000-server-attributes"></a>Windows 2000 Atributos de servidor
 
-Esta clase contiene los siguientes atributos para Windows 2000 Server:
+Esta clase contiene los atributos siguientes para Windows 2000 Server:
 
 
 
@@ -81,7 +81,7 @@ Esta clase contiene los siguientes atributos para Windows 2000 Server:
 | [**Información adicional**](a-notes.md)                                 | Falso     | **Contact**                                                                                                                            |
 | [**Dirección**](a-streetaddress.md)                                        | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Address-Home**](a-homepostaladdress.md)                               | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Descripción del administrador**](a-admindescription.md)                           | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Admin-Description**](a-admindescription.md)                           | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Admin-Display-Name**](a-admindisplayname.md)                          | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Atributos permitidos**](a-allowedattributes.md)                         | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)      | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -90,17 +90,17 @@ Esta clase contiene los siguientes atributos para Windows 2000 Server:
 | [**Asistente**](a-assistant.md)                                          | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)             | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Canonical-Name**](a-canonicalname.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Comentario**](a-info.md)                                                 | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
-| [**Nombre común**](a-cn.md)                                               | Verdadero      | **Persona de** [ **contacto**](c-person.md)<br/> [**Destinatario del correo**](c-mailrecipient.md)<br/> [**Arriba**](c-top.md)<br/> |
-| [**Empresa**](a-company.md)                                              | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Comentario**](a-info.md)                                                 | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**Common-Name**](a-cn.md)                                               | Verdadero      | **Persona de** [ **contacto**](c-person.md)<br/> [**Destinatario del correo**](c-mailrecipient.md)<br/> [**Arriba**](c-top.md)<br/> |
+| [**Company**](a-company.md)                                              | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Código de país**](a-countrycode.md)                                     | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Nombre de país**](a-c.md)                                               | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Crear marca de tiempo**](a-createtimestamp.md)                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Marca de tiempo de creación**](a-createtimestamp.md)                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Departamento**](a-department.md)                                        | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Descripción**](a-description.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Indicador de destino**](a-destinationindicator.md)                   | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Nombre para mostrar**](a-displayname.md)                                     | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Display-Name-Printable**](a-displaynameprintable.md)                  | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Nombre para mostrar imprimible**](a-displaynameprintable.md)                  | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**División**](a-division.md)                                            | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Firma DSA**](a-dsasignature.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)               | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -124,14 +124,14 @@ Esta clase contiene los siguientes atributos para Windows 2000 Server:
 | [**Is-Member-Of-DL**](a-memberof.md)                                     | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Is-Privilege-Holder**](a-isprivilegeholder.md)                        | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Último elemento primario conocido**](a-lastknownparent.md)                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Legacy-Exchange-DN**](a-legacyexchangedn.md)                          | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**Legacy-Exchange-DN**](a-legacyexchangedn.md)                          | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**Locality-Name**](a-l.md)                                              | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Logotipo**](a-thumbnaillogo.md)                                           | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Objetos administrados**](a-managedobjects.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**director**](a-manager.md)                                              | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Mastered-By**](a-masteredby.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**MHS-OR-Address**](a-mhsoraddress.md)                                  | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Modificación de marca de tiempo**](a-modifytimestamp.md)                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Modify-Time-Stamp**](a-modifytimestamp.md)                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)    | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**netboot-SCP-BL**](a-netbootscpbl.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -145,8 +145,8 @@ Esta clase contiene los siguientes atributos para Windows 2000 Server:
 | [**Nombre de unidad organizativa**](a-ou.md)                                  | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Nombre de la organización**](a-o.md)                                          | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Otro buzón de correo**](a-othermailbox.md)                                   | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Otro nombre**](a-middlename.md)                                        | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Otros objetos well-known-objects**](a-otherwellknownobjects.md)               | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Other-Name**](a-middlename.md)                                        | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Otros objetos conocidos**](a-otherwellknownobjects.md)               | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md) | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                    | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Título personal**](a-personaltitle.md)                                 | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
@@ -164,12 +164,12 @@ Esta clase contiene los siguientes atributos para Windows 2000 Server:
 | [**Physical-Delivery-Office-Name**](a-physicaldeliveryofficename.md)     | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Imagen**](a-thumbnailphoto.md)                                       | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Posibles inferiores**](a-possibleinferiors.md)                         | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Postal-Address**](a-postaladdress.md)                                 | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Dirección postal**](a-postaladdress.md)                                 | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Código postal**](a-postalcode.md)                                       | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Cuadro Office posterior**](a-postofficebox.md)                                | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Post-Office-Box**](a-postofficebox.md)                                | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Preferred-Delivery-Method**](a-preferreddeliverymethod.md)            | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                        | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Direcciones de proxy**](a-proxyaddresses.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Direcciones proxy**](a-proxyaddresses.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Rdn**](a-name.md)                                                     | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Registered-Address**](a-registeredaddress.md)                         | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
@@ -182,7 +182,7 @@ Esta clase contiene los siguientes atributos para Windows 2000 Server:
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                        | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Consulte también**](a-seealso.md)                                             | Falso     | [**Person**](c-person.md)<br/>                                                                                                  |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                        | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Mostrar en la libreta de direcciones**](a-showinaddressbook.md)                       | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**Mostrar en la libreta de direcciones**](a-showinaddressbook.md)                       | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Site-Object-BL**](a-siteobjectbl.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**State-Or-Province-Name**](a-st.md)                                    | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
@@ -239,7 +239,7 @@ Esta clase contiene los siguientes conjuntos de propiedades para Windows 2000 Se
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------|
 | System-Only                 | Falso                                                                                        |
 | Object-Category             | 1                                                                                            |
@@ -249,7 +249,7 @@ Esta clase contiene los siguientes conjuntos de propiedades para Windows 2000 Se
 | Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                       |
 | Subclase de                 | [**Organizational-Person**](c-organizationalperson.md)<br/>                           |
 | Posibles superiores          | [**Unidad organizativa de DNS**](c-domaindns.md)[**de dominio**](c-organizationalunit.md)         |
-| Clases auxiliares           | [**Destinatario de correo**](c-mailrecipient.md) (sistema)                                           |
+| Clases auxiliares           | [**Destinatario del correo**](c-mailrecipient.md) (sistema)                                           |
 | NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                 |
 | Descriptor de seguridad predeterminado | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; AU) |
 | System-Flags                | 0x00000010                                                                                   |
@@ -267,7 +267,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2003:
 | [**Información adicional**](a-notes.md)                                   | Falso     | **Contact**                                                                                                                            |
 | [**Dirección**](a-streetaddress.md)                                          | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Address-Home**](a-homepostaladdress.md)                                 | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Admin-Description**](a-admindescription.md)                             | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Descripción del administrador**](a-admindescription.md)                             | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Admin-Display-Name**](a-admindisplayname.md)                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Atributos permitidos**](a-allowedattributes.md)                           | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)        | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -277,17 +277,17 @@ Esta clase contiene los siguientes atributos para Windows Server 2003:
 | [**attributeCertificateAttribute**](a-attributecertificateattribute.md)    | Falso     | [**Person**](c-person.md)<br/>                                                                                                  |
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Canonical-Name**](a-canonicalname.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Comentario**](a-info.md)                                                   | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
-| [**Common-Name**](a-cn.md)                                                 | Verdadero      | **Persona de** [ **contacto**](c-person.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/> [**Arriba**](c-top.md)<br/> |
-| [**Empresa**](a-company.md)                                                | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Comentario**](a-info.md)                                                   | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**Common-Name**](a-cn.md)                                                 | Verdadero      | **Persona de** [ **contacto**](c-person.md)<br/> [**Destinatario del correo**](c-mailrecipient.md)<br/> [**Arriba**](c-top.md)<br/> |
+| [**Compañía**](a-company.md)                                                | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Código de país**](a-countrycode.md)                                       | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Nombre de país**](a-c.md)                                                 | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Create-Time-Stamp**](a-createtimestamp.md)                              | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Marca de tiempo de creación**](a-createtimestamp.md)                              | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Departamento**](a-department.md)                                          | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Descripción**](a-description.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Indicador de destino**](a-destinationindicator.md)                     | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Nombre para mostrar**](a-displayname.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Display-Name-Printable**](a-displaynameprintable.md)                    | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Nombre para mostrar imprimible**](a-displaynameprintable.md)                    | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**División**](a-division.md)                                              | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Firma DSA**](a-dsasignature.md)                                     | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -376,10 +376,10 @@ Esta clase contiene los siguientes atributos para Windows Server 2003:
 | [**Posibles inferiores**](a-possibleinferiors.md)                           | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Dirección postal**](a-postaladdress.md)                                   | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Código postal**](a-postalcode.md)                                         | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Cuadro posterior Office box**](a-postofficebox.md)                                  | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Post-Office-Box**](a-postofficebox.md)                                  | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Preferred-Delivery-Method**](a-preferreddeliverymethod.md)              | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                          | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Direcciones proxy**](a-proxyaddresses.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Direcciones de proxy**](a-proxyaddresses.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Rdn**](a-name.md)                                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Registered-Address**](a-registeredaddress.md)                           | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
@@ -390,12 +390,12 @@ Esta clase contiene los siguientes atributos para Windows Server 2003:
 | [**Reps-To**](a-repsto.md)                                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Revisión**](a-revision.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                          | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**secretary**](a-secretary.md)                                            | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**secretary**](a-secretary.md)                                            | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**Consulte también**](a-seealso.md)                                               | Falso     | [**Person**](c-person.md)<br/>                                                                                                  |
 | [**Número de serie**](a-serialnumber.md)                                     | Falso     | [**Person**](c-person.md)<br/>                                                                                                  |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                          | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Mostrar en la libreta de direcciones**](a-showinaddressbook.md)                         | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
-| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)              | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Mostrar en la libreta de direcciones**](a-showinaddressbook.md)                         | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**Mostrar solo en vista avanzada**](a-showinadvancedviewonly.md)              | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Site-Object-BL**](a-siteobjectbl.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**State-Or-Province-Name**](a-st.md)                                      | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Dirección postal**](a-street.md)                                          | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
@@ -404,25 +404,25 @@ Esta clase contiene los siguientes atributos para Windows Server 2003:
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Apellido**](a-sn.md)                                                     | Falso     | [**Person**](c-person.md)<br/>                                                                                                  |
 | [**Marcas del sistema**](a-systemflags.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Número de teléfono**](a-telephonenumber.md)                               | Falso     | [**Person**](c-person.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/>                                             |
+| [**Número de teléfono**](a-telephonenumber.md)                               | Falso     | [**Person**](c-person.md)<br/> [**Destinatario del correo**](c-mailrecipient.md)<br/>                                             |
 | [**Teletex-Terminal-Identifier**](a-teletexterminalidentifier.md)          | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Número de telex**](a-telexnumber.md)                                       | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Telex-Number**](a-telexnumber.md)                                       | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Telex-Primary**](a-primarytelexnumber.md)                               | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Text-Country**](a-co.md)                                                | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Text-Encoded-OR-Address**](a-textencodedoraddress.md)                   | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**Text-Encoded-OR-Address**](a-textencodedoraddress.md)                   | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**Título**](a-title.md)                                                    | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**User-Cert**](a-usercert.md)                                             | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**User-Cert**](a-usercert.md)                                             | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**User-Comment**](a-comment.md)                                           | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Contraseña de usuario**](a-userpassword.md)                                     | Falso     | [**Person**](c-person.md)<br/>                                                                                                  |
-| [**User-SMIME-Certificate**](a-usersmimecertificate.md)                    | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**User-SMIME-Certificate**](a-usersmimecertificate.md)                    | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**USN cambiado**](a-usnchanged.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Creado por USN**](a-usncreated.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**UsN creado**](a-usncreated.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                  | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**USN-Intersite**](a-usnintersite.md)                                     | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**USN-Source**](a-usnsource.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Wbem-Path**](a-wbempath.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Objetos conocidos**](a-wellknownobjects.md)                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Well-Known-Objects**](a-wellknownobjects.md)                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Cuándo se ha cambiado**](a-whenchanged.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Cuando se crea**](a-whencreated.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -452,7 +452,7 @@ Esta clase contiene los siguientes conjuntos de propiedades para Windows Server 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------|
 | System-Only                 | Falso                                                                                        |
 | Object-Category             | 1                                                                                            |
@@ -492,7 +492,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2003 R2:
 | [**Canonical-Name**](a-canonicalname.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Comentario**](a-info.md)                                                   | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**Nombre común**](a-cn.md)                                                 | Verdadero      | **Persona de** [ **contacto**](c-person.md)<br/> [**Destinatario del correo**](c-mailrecipient.md)<br/> [**Arriba**](c-top.md)<br/> |
-| [**Empresa**](a-company.md)                                                | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Compañía**](a-company.md)                                                | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Código de país**](a-countrycode.md)                                       | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Nombre de país**](a-c.md)                                                 | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Create-Time-Stamp**](a-createtimestamp.md)                              | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -526,14 +526,14 @@ Esta clase contiene los siguientes atributos para Windows Server 2003 R2:
 | [**Is-Privilege-Holder**](a-isprivilegeholder.md)                          | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**labeledURI**](a-labeleduri.md)                                          | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**Último elemento primario conocido**](a-lastknownparent.md)                              | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Legacy-Exchange-DN**](a-legacyexchangedn.md)                            | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**Legacy-Exchange-DN**](a-legacyexchangedn.md)                            | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**Locality-Name**](a-l.md)                                                | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Logotipo**](a-thumbnaillogo.md)                                             | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Objetos administrados**](a-managedobjects.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**director**](a-manager.md)                                                | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Mastered-By**](a-masteredby.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**MHS-OR-Address**](a-mhsoraddress.md)                                    | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Modify-Time-Stamp**](a-modifytimestamp.md)                              | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Modificación de marca de tiempo**](a-modifytimestamp.md)                              | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**ms-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**ms-COM-UserLink**](a-mscom-userlink.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**ms-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)         | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -556,9 +556,9 @@ Esta clase contiene los siguientes atributos para Windows Server 2003 R2:
 | [**ms-DS-Source-Object-DN**](a-msds-sourceobjectdn.md)                     | Falso     | **Contact**                                                                                                                            |
 | [**ms-DS-Tasks-For-Az-Role-BL**](a-msds-tasksforazrolebl.md)               | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)               | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**ms-Exch-Assistant-Name**](a-msexchassistantname.md)                     | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**ms-Exch-Assistant-Name**](a-msexchassistantname.md)                     | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**ms-Exch-House-Identifier**](a-msexchhouseidentifier.md)                 | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**ms-Exch-LabeledURI**](a-msexchlabeleduri.md)                            | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**ms-Exch-LabeledURI**](a-msexchlabeleduri.md)                            | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**ms-Exch-Owner-BL**](a-ownerbl.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                  | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**netboot-SCP-BL**](a-netbootscpbl.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -572,7 +572,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2003 R2:
 | [**Nombre de unidad organizativa**](a-ou.md)                                    | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Nombre de la organización**](a-o.md)                                            | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Otro buzón de correo**](a-othermailbox.md)                                     | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Otro nombre**](a-middlename.md)                                          | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Other-Name**](a-middlename.md)                                          | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Otros objetos conocidos**](a-otherwellknownobjects.md)                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)   | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                      | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -591,9 +591,9 @@ Esta clase contiene los siguientes atributos para Windows Server 2003 R2:
 | [**Physical-Delivery-Office-Name**](a-physicaldeliveryofficename.md)       | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Imagen**](a-thumbnailphoto.md)                                         | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Posibles inferiores**](a-possibleinferiors.md)                           | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Postal-Address**](a-postaladdress.md)                                   | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Dirección postal**](a-postaladdress.md)                                   | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Código postal**](a-postalcode.md)                                         | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Post-Office-Box**](a-postofficebox.md)                                  | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Cuadro posterior Office box**](a-postofficebox.md)                                  | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Preferred-Delivery-Method**](a-preferreddeliverymethod.md)              | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                          | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Direcciones proxy**](a-proxyaddresses.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -669,7 +669,7 @@ Esta clase contiene los siguientes conjuntos de propiedades para Windows Server 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------|
 | System-Only                 | Falso                                                                                        |
 | Object-Category             | 1                                                                                            |
@@ -709,7 +709,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2008:
 | [**Canonical-Name**](a-canonicalname.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Comentario**](a-info.md)                                                      | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**Common-Name**](a-cn.md)                                                    | Verdadero      | **Persona de** [ **contacto**](c-person.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/> [**Arriba**](c-top.md)<br/> |
-| [**Empresa**](a-company.md)                                                   | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Compañía**](a-company.md)                                                   | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Código de país**](a-countrycode.md)                                          | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Nombre de país**](a-c.md)                                                    | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Create-Time-Stamp**](a-createtimestamp.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -760,7 +760,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2008:
 | [**ms-DS-AuthenticatedTo-Accountlist**](a-msds-authenticatedtoaccountlist.md) | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)         | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                      | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**ms-DS-LA-Seniority-Index**](a-msds-habseniorityindex.md)                  | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**ms-DS-LO-Seniority-Index**](a-msds-habseniorityindex.md)                  | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**ms-DS-Is-Domain-For**](a-msds-isdomainfor.md)                              | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**ms-DS-Is-Full-Replica-For**](a-msds-isfullreplicafor.md)                   | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**ms-DS-Is-Partial-Replica-For**](a-msds-ispartialreplicafor.md)             | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -778,7 +778,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2008:
 | [**ms-DS-Operations-For-Az-Task-BL**](a-msds-operationsforaztaskbl.md)        | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**ms-DS-Phonetic-Company-Name**](a-msds-phoneticcompanyname.md)              | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**ms-DS-Phonetic-Department**](a-msds-phoneticdepartment.md)                 | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**ms-DS-Phonetic-Display-Name**](a-msds-phoneticdisplayname.md)              | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/> [**Destinatario del correo**](c-mailrecipient.md)<br/>                |
+| [**ms-DS-Phonetic-Display-Name**](a-msds-phoneticdisplayname.md)              | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/>                |
 | [**ms-DS-Phonetic-First-Name**](a-msds-phoneticfirstname.md)                  | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**ms-DS-Phonetic-Last-Name**](a-msds-phoneticlastname.md)                    | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**ms-DS-Principal-Name**](a-msds-principalname.md)                           | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -790,9 +790,9 @@ Esta clase contiene los siguientes atributos para Windows Server 2008:
 | [**ms-DS-Source-Object-DN**](a-msds-sourceobjectdn.md)                        | Falso     | **Contact**                                                                                                                            |
 | [**ms-DS-Tasks-For-Az-Role-BL**](a-msds-tasksforazrolebl.md)                  | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)                  | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**ms-Exch-Assistant-Name**](a-msexchassistantname.md)                        | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**ms-Exch-Assistant-Name**](a-msexchassistantname.md)                        | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**ms-Exch-House-Identifier**](a-msexchhouseidentifier.md)                    | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**ms-Exch-LabeledURI**](a-msexchlabeleduri.md)                               | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**ms-Exch-LabeledURI**](a-msexchlabeleduri.md)                               | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**ms-Exch-Owner-BL**](a-ownerbl.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                     | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**netboot-SCP-BL**](a-netbootscpbl.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -806,7 +806,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2008:
 | [**Nombre de unidad organizativa**](a-ou.md)                                       | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Nombre de la organización**](a-o.md)                                               | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Otro buzón de correo**](a-othermailbox.md)                                        | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Other-Name**](a-middlename.md)                                             | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Otro nombre**](a-middlename.md)                                             | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Otros objetos conocidos**](a-otherwellknownobjects.md)                    | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)      | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                         | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -825,9 +825,9 @@ Esta clase contiene los siguientes atributos para Windows Server 2008:
 | [**Physical-Delivery-Office-Name**](a-physicaldeliveryofficename.md)          | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Imagen**](a-thumbnailphoto.md)                                            | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Posibles inferiores**](a-possibleinferiors.md)                              | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Dirección postal**](a-postaladdress.md)                                      | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Postal-Address**](a-postaladdress.md)                                      | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Código postal**](a-postalcode.md)                                            | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Cuadro posterior Office box**](a-postofficebox.md)                                     | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Post-Office-Box**](a-postofficebox.md)                                     | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Preferred-Delivery-Method**](a-preferreddeliverymethod.md)                 | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                             | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Direcciones proxy**](a-proxyaddresses.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -860,26 +860,26 @@ Esta clase contiene los siguientes atributos para Windows Server 2008:
 | [**Número de telex**](a-telexnumber.md)                                          | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Telex-Primary**](a-primarytelexnumber.md)                                  | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Text-Country**](a-co.md)                                                   | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Text-Encoded-OR-Address**](a-textencodedoraddress.md)                      | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**Text-Encoded-OR-Address**](a-textencodedoraddress.md)                      | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**Título**](a-title.md)                                                       | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**User-Cert**](a-usercert.md)                                                | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**User-Cert**](a-usercert.md)                                                | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**User-Comment**](a-comment.md)                                              | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Contraseña de usuario**](a-userpassword.md)                                        | Falso     | [**Person**](c-person.md)<br/>                                                                                                  |
-| [**User-SMIME-Certificate**](a-usersmimecertificate.md)                       | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**User-SMIME-Certificate**](a-usersmimecertificate.md)                       | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**USN cambiado**](a-usnchanged.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**UsN creado**](a-usncreated.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Creado por USN**](a-usncreated.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                     | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**USN-Intersite**](a-usnintersite.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**USN-Source**](a-usnsource.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Wbem-Path**](a-wbempath.md)                                                | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Well-Known-Objects**](a-wellknownobjects.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Objetos conocidos**](a-wellknownobjects.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Cuándo se ha cambiado**](a-whenchanged.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Cuando se crea**](a-whencreated.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**WWW-Página principal**](a-wwwhomepage.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**WWW-Page-Other**](a-url.md)                                                | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Dirección X121**](a-x121address.md)                                          | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**X509-Cert**](a-usercertificate.md)                                         | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**X509-Cert**](a-usercertificate.md)                                         | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 
 
 
@@ -891,7 +891,7 @@ Esta clase contiene los siguientes conjuntos de propiedades para Windows Server 
 
 | Nombre común                                            |
 |--------------------------------------------------------|
-| [**Información personal**](r-personal-information.md) |
+| [**Personal-Information**](r-personal-information.md) |
 | [**Información web**](r-web-information.md)           |
 
 
@@ -903,7 +903,7 @@ Esta clase contiene los siguientes conjuntos de propiedades para Windows Server 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------|
 | System-Only                 | Falso                                                                                        |
 | Object-Category             | 1                                                                                            |
@@ -913,7 +913,7 @@ Esta clase contiene los siguientes conjuntos de propiedades para Windows Server 
 | Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                       |
 | Subclase de                 | [**Organizational-Person**](c-organizationalperson.md)<br/>                           |
 | Posibles superiores          | [**Unidad organizativa de DNS**](c-domaindns.md)[**de dominio**](c-organizationalunit.md)         |
-| Clases auxiliares           | [**Destinatario del correo**](c-mailrecipient.md) (sistema)                                           |
+| Clases auxiliares           | [**Destinatario de correo**](c-mailrecipient.md) (sistema)                                           |
 | NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                 |
 | Descriptor de seguridad predeterminado | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; AU) |
 | System-Flags                | 0x00000010                                                                                   |
@@ -922,7 +922,7 @@ Esta clase contiene los siguientes conjuntos de propiedades para Windows Server 
 
 ## <a name="windows-server-2008-r2-attributes"></a>Windows Atributos de Server 2008 R2
 
-Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
+Esta clase contiene los atributos siguientes para Windows Server 2008 R2:
 
 
 
@@ -943,7 +943,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | [**Canonical-Name**](a-canonicalname.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Comentario**](a-info.md)                                                        | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**Common-Name**](a-cn.md)                                                      | Verdadero      | **Persona de** [ **contacto**](c-person.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/> [**Arriba**](c-top.md)<br/> |
-| [**Empresa**](a-company.md)                                                     | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Compañía**](a-company.md)                                                     | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Código de país**](a-countrycode.md)                                            | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Nombre de país**](a-c.md)                                                      | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Create-Time-Stamp**](a-createtimestamp.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -996,7 +996,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)           | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                        | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**ms-DS-Enabled-Feature-BL**](a-msds-enabledfeaturebl.md)                      | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**ms-DS-LO-Seniority-Index**](a-msds-habseniorityindex.md)                    | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**ms-DS-LA-Seniority-Index**](a-msds-habseniorityindex.md)                    | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**ms-DS-Host-Service-Account-BL**](a-msds-hostserviceaccountbl.md)             | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**ms-DS-Is-Domain-For**](a-msds-isdomainfor.md)                                | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**ms-DS-Is-Full-Replica-For**](a-msds-isfullreplicafor.md)                     | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -1019,7 +1019,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | [**ms-DS-Operations-For-Az-Task-BL**](a-msds-operationsforaztaskbl.md)          | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**ms-DS-Phonetic-Company-Name**](a-msds-phoneticcompanyname.md)                | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**ms-DS-Phonetic-Department**](a-msds-phoneticdepartment.md)                   | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**ms-DS-Phonetic-Display-Name**](a-msds-phoneticdisplayname.md)                | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/>                |
+| [**ms-DS-Phonetic-Display-Name**](a-msds-phoneticdisplayname.md)                | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/> [**Destinatario del correo**](c-mailrecipient.md)<br/>                |
 | [**ms-DS-Phonetic-First-Name**](a-msds-phoneticfirstname.md)                    | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**ms-DS-Phonetic-Last-Name**](a-msds-phoneticlastname.md)                      | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**ms-DS-Principal-Name**](a-msds-principalname.md)                             | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -1031,9 +1031,9 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | [**ms-DS-Source-Object-DN**](a-msds-sourceobjectdn.md)                          | Falso     | **Contact**                                                                                                                            |
 | [**ms-DS-Tasks-For-Az-Role-BL**](a-msds-tasksforazrolebl.md)                    | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)                    | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**ms-Exch-Assistant-Name**](a-msexchassistantname.md)                          | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**ms-Exch-Assistant-Name**](a-msexchassistantname.md)                          | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**ms-Exch-House-Identifier**](a-msexchhouseidentifier.md)                      | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**ms-Exch-LabeledURI**](a-msexchlabeleduri.md)                                 | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**ms-Exch-LabeledURI**](a-msexchlabeleduri.md)                                 | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**ms-Exch-Owner-BL**](a-ownerbl.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                       | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**netboot-SCP-BL**](a-netbootscpbl.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -1047,8 +1047,8 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | [**Nombre de unidad organizativa**](a-ou.md)                                         | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Nombre de la organización**](a-o.md)                                                 | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Otro buzón de correo**](a-othermailbox.md)                                          | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Other-Name**](a-middlename.md)                                               | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                      | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Otro nombre**](a-middlename.md)                                               | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Otros objetos well-known-objects**](a-otherwellknownobjects.md)                      | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)        | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                           | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Título personal**](a-personaltitle.md)                                        | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
@@ -1066,12 +1066,12 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | [**Physical-Delivery-Office-Name**](a-physicaldeliveryofficename.md)            | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Imagen**](a-thumbnailphoto.md)                                              | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Posibles inferiores**](a-possibleinferiors.md)                                | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Dirección postal**](a-postaladdress.md)                                        | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Postal-Address**](a-postaladdress.md)                                        | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Código postal**](a-postalcode.md)                                              | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Cuadro posterior Office box**](a-postofficebox.md)                                       | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Cuadro Office posterior**](a-postofficebox.md)                                       | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Preferred-Delivery-Method**](a-preferreddeliverymethod.md)                   | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Direcciones proxy**](a-proxyaddresses.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Direcciones de proxy**](a-proxyaddresses.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Rdn**](a-name.md)                                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Registered-Address**](a-registeredaddress.md)                                | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
@@ -1082,11 +1082,11 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | [**Reps-To**](a-repsto.md)                                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Revisión**](a-revision.md)                                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**secretary**](a-secretary.md)                                                 | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**secretary**](a-secretary.md)                                                 | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**Consulte también**](a-seealso.md)                                                    | Falso     | [**Person**](c-person.md)<br/>                                                                                                  |
 | [**Número de serie**](a-serialnumber.md)                                          | Falso     | [**Person**](c-person.md)<br/>                                                                                                  |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Mostrar en la libreta de direcciones**](a-showinaddressbook.md)                              | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**Mostrar en la libreta de direcciones**](a-showinaddressbook.md)                              | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                   | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Site-Object-BL**](a-siteobjectbl.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**State-Or-Province-Name**](a-st.md)                                           | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
@@ -1096,31 +1096,31 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Apellido**](a-sn.md)                                                          | Falso     | [**Person**](c-person.md)<br/>                                                                                                  |
 | [**Marcas del sistema**](a-systemflags.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Número de teléfono**](a-telephonenumber.md)                                    | Falso     | [**Person**](c-person.md)<br/> [**Destinatario del correo**](c-mailrecipient.md)<br/>                                             |
+| [**Número de teléfono**](a-telephonenumber.md)                                    | Falso     | [**Person**](c-person.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/>                                             |
 | [**Teletex-Terminal-Identifier**](a-teletexterminalidentifier.md)               | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Telex-Number**](a-telexnumber.md)                                            | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Número de telex**](a-telexnumber.md)                                            | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Telex-Primary**](a-primarytelexnumber.md)                                    | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Text-Country**](a-co.md)                                                     | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Text-Encoded-OR-Address**](a-textencodedoraddress.md)                        | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**Text-Encoded-OR-Address**](a-textencodedoraddress.md)                        | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**Título**](a-title.md)                                                         | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**User-Cert**](a-usercert.md)                                                  | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**User-Cert**](a-usercert.md)                                                  | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**User-Comment**](a-comment.md)                                                | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Contraseña de usuario**](a-userpassword.md)                                          | Falso     | [**Person**](c-person.md)<br/>                                                                                                  |
-| [**User-SMIME-Certificate**](a-usersmimecertificate.md)                         | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**User-SMIME-Certificate**](a-usersmimecertificate.md)                         | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**USN cambiado**](a-usnchanged.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**UsN creado**](a-usncreated.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Creado por USN**](a-usncreated.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                       | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**USN-Intersite**](a-usnintersite.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**USN-Source**](a-usnsource.md)                                                | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Wbem-Path**](a-wbempath.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Well-Known-Objects**](a-wellknownobjects.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Objetos conocidos**](a-wellknownobjects.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Cuándo se ha cambiado**](a-whenchanged.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Cuando se crea**](a-whencreated.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**WWW-Página principal**](a-wwwhomepage.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**WWW-Page-Other**](a-url.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Dirección X121**](a-x121address.md)                                            | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**X509-Cert**](a-usercertificate.md)                                           | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**X509-Cert**](a-usercertificate.md)                                           | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 
 
 
@@ -1132,7 +1132,7 @@ Esta clase contiene los siguientes conjuntos de propiedades para Windows Server 
 
 | Nombre común                                            |
 |--------------------------------------------------------|
-| [**Información personal**](r-personal-information.md) |
+| [**Personal-Information**](r-personal-information.md) |
 | [**Información web**](r-web-information.md)           |
 
 
@@ -1144,7 +1144,7 @@ Esta clase contiene los siguientes conjuntos de propiedades para Windows Server 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------|
 | System-Only                 | Falso                                                                                        |
 | Object-Category             | 1                                                                                            |
@@ -1184,7 +1184,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2012:
 | [**Canonical-Name**](a-canonicalname.md)                                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Comentario**](a-info.md)                                                                              | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**Nombre común**](a-cn.md)                                                                            | Verdadero      | **Persona de** [ **contacto**](c-person.md)<br/> [**Destinatario del correo**](c-mailrecipient.md)<br/> [**Arriba**](c-top.md)<br/> |
-| [**Empresa**](a-company.md)                                                                           | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Compañía**](a-company.md)                                                                           | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Código de país**](a-countrycode.md)                                                                  | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Nombre de país**](a-c.md)                                                                            | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Crear marca de tiempo**](a-createtimestamp.md)                                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
@@ -1298,8 +1298,8 @@ Esta clase contiene los siguientes atributos para Windows Server 2012:
 | [**Nombre de unidad organizativa**](a-ou.md)                                                               | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Nombre de la organización**](a-o.md)                                                                       | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Otro buzón de correo**](a-othermailbox.md)                                                                | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Otro nombre**](a-middlename.md)                                                                     | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Otros objetos well-known-objects**](a-otherwellknownobjects.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Other-Name**](a-middlename.md)                                                                     | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)                              | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Título personal**](a-personaltitle.md)                                                              | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
@@ -1322,7 +1322,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2012:
 | [**Post-Office-Box**](a-postofficebox.md)                                                             | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Preferred-Delivery-Method**](a-preferreddeliverymethod.md)                                         | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                                                     | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Direcciones de proxy**](a-proxyaddresses.md)                                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Direcciones proxy**](a-proxyaddresses.md)                                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                                             | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Rdn**](a-name.md)                                                                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Registered-Address**](a-registeredaddress.md)                                                      | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
@@ -1333,12 +1333,12 @@ Esta clase contiene los siguientes atributos para Windows Server 2012:
 | [**Reps-To**](a-repsto.md)                                                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Revisión**](a-revision.md)                                                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                                                     | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**secretary**](a-secretary.md)                                                                       | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**secretary**](a-secretary.md)                                                                       | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**Consulte también**](a-seealso.md)                                                                          | Falso     | [**Person**](c-person.md)<br/>                                                                                                  |
 | [**Número de serie**](a-serialnumber.md)                                                                | Falso     | [**Person**](c-person.md)<br/>                                                                                                  |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                                                     | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Mostrar en la libreta de direcciones**](a-showinaddressbook.md)                                                    | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
-| [**Mostrar solo en vista avanzada**](a-showinadvancedviewonly.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Mostrar en la libreta de direcciones**](a-showinaddressbook.md)                                                    | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Site-Object-BL**](a-siteobjectbl.md)                                                               | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**State-Or-Province-Name**](a-st.md)                                                                 | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Dirección postal**](a-street.md)                                                                     | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
@@ -1347,31 +1347,31 @@ Esta clase contiene los siguientes atributos para Windows Server 2012:
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Apellido**](a-sn.md)                                                                                | Falso     | [**Person**](c-person.md)<br/>                                                                                                  |
 | [**Marcas del sistema**](a-systemflags.md)                                                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Número de teléfono**](a-telephonenumber.md)                                                          | Falso     | [**Person**](c-person.md)<br/> [**Destinatario del correo**](c-mailrecipient.md)<br/>                                             |
+| [**Número de teléfono**](a-telephonenumber.md)                                                          | Falso     | [**Person**](c-person.md)<br/> [**Destinatario de correo**](c-mailrecipient.md)<br/>                                             |
 | [**Teletex-Terminal-Identifier**](a-teletexterminalidentifier.md)                                     | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Telex-Number**](a-telexnumber.md)                                                                  | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
+| [**Número de telex**](a-telexnumber.md)                                                                  | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Telex-Primary**](a-primarytelexnumber.md)                                                          | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Text-Country**](a-co.md)                                                                           | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**Text-Encoded-OR-Address**](a-textencodedoraddress.md)                                              | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**Text-Encoded-OR-Address**](a-textencodedoraddress.md)                                              | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**Título**](a-title.md)                                                                               | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**User-Cert**](a-usercert.md)                                                                        | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**User-Cert**](a-usercert.md)                                                                        | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**User-Comment**](a-comment.md)                                                                      | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
 | [**Contraseña de usuario**](a-userpassword.md)                                                                | Falso     | [**Person**](c-person.md)<br/>                                                                                                  |
-| [**User-SMIME-Certificate**](a-usersmimecertificate.md)                                               | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**User-SMIME-Certificate**](a-usersmimecertificate.md)                                               | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 | [**USN cambiado**](a-usnchanged.md)                                                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**UsN creado**](a-usncreated.md)                                                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Creado por USN**](a-usncreated.md)                                                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**USN-Intersite**](a-usnintersite.md)                                                                | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**USN-Source**](a-usnsource.md)                                                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Wbem-Path**](a-wbempath.md)                                                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**Well-Known-Objects**](a-wellknownobjects.md)                                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**Objetos conocidos**](a-wellknownobjects.md)                                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Cuándo se ha cambiado**](a-whenchanged.md)                                                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Cuando se crea**](a-whencreated.md)                                                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
-| [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)                                                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
+| [**WWW-Página principal**](a-wwwhomepage.md)                                                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**WWW-Page-Other**](a-url.md)                                                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                                                                        |
 | [**Dirección X121**](a-x121address.md)                                                                  | Falso     | [**Organizational-Person**](c-organizationalperson.md)<br/>                                                                     |
-| [**X509-Cert**](a-usercertificate.md)                                                                 | Falso     | [**Destinatario del correo**](c-mailrecipient.md)<br/>                                                                                   |
+| [**X509-Cert**](a-usercertificate.md)                                                                 | Falso     | [**Destinatario de correo**](c-mailrecipient.md)<br/>                                                                                   |
 
 
 
@@ -1383,7 +1383,7 @@ Esta clase contiene los siguientes conjuntos de propiedades para Windows Server 
 
 | Nombre común                                            |
 |--------------------------------------------------------|
-| [**Información personal**](r-personal-information.md) |
+| [**Personal-Information**](r-personal-information.md) |
 | [**Información web**](r-web-information.md)           |
 
 

@@ -1,41 +1,41 @@
 ---
-title: Escribir secuencias de velocidad de bits variable
-description: Escribir secuencias de velocidad de bits variable
+title: Escritura de velocidad de bits variable Secuencias
+description: Escritura de velocidad de bits variable Secuencias
 ms.assetid: 9eccde59-8342-44ad-90e6-032db022d7c5
 keywords:
-- Advanced Systems Format (ASF), escribir secuencias VBR
+- Formato de sistemas avanzados (ASF), escribir secuencias VBR
 - ASF (formato de sistemas avanzados), escritura de secuencias VBR
-- velocidad de bits variable (VBR), escribir secuencias
-- VBR (velocidad de bits variable), escribir secuencias
-- secuencias, escribir VBR
+- velocidad de bits variable (VBR), escritura de secuencias
+- VBR (velocidad de bits variable), escritura de secuencias
+- streams,writing VBR
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6981cbae04085c4bf4f771d9dd29e30752427cdc
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 694774613ada8b4be05eab55be3213898d423d3b6ac4438204d149a0bd606c90
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103788685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930265"
 ---
-# <a name="writing-variable-bit-rate-streams"></a>Escribir secuencias de velocidad de bits variable
+# <a name="writing-variable-bit-rate-streams"></a>Escritura de velocidad de bits variable Secuencias
 
-Las secuencias de velocidad de bits variable (VBR) se escriben de la misma forma que las secuencias de velocidad de bits constante (CBR). La única diferencia es el procesamiento que realiza internamente el escritor y los códecs. Sin embargo, la VBR basada en la velocidad de bits (tanto restringida como sin restricciones) requiere un paso de preprocesamiento en el escritor.
+Las secuencias de velocidad de bits variable (VBR) se escriben de la misma manera que las secuencias de velocidad de bits constante (CBR). La única diferencia está en el procesamiento realizado internamente por el escritor y los códecs. Sin embargo, la VBR basada en velocidad de bits (restringida y sin restricciones) requiere un paso de preprocesamiento en el escritor.
 
-Debe comprobar el valor devuelto por la primera llamada que realice a [**IWMWriter:: WriteSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-writesample) para cada secuencia. Si el código de error devuelto es NS \_ E \_ no válidos \_ \_ , la secuencia requiere un paso de preprocesamiento.
+Debe comprobar el valor devuelto de la primera llamada que realice a [**IWMWriter::WriteSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-writesample) para cada secuencia. Si el código de error devuelto es NS \_ E \_ INVALID NUM \_ \_ PASSES, la secuencia requiere un paso de preprocesamiento.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Uso de la codificación de Two-Pass**](using-two-pass-encoding.md)
+[**Uso de Two-Pass codificación**](using-two-pass-encoding.md)
 </dt> <dt>
 
-[**Escribir archivos ASF**](writing-asf-files.md)
+[**Escritura de archivos ASF**](writing-asf-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

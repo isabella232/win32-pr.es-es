@@ -37,7 +37,7 @@ String.
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se concilian los valores de esquemas diferentes.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 

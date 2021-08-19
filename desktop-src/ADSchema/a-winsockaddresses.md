@@ -1,11 +1,11 @@
 ---
-title: Winsock-Addresses atributo)
-description: Una dirección del servicio Winsock.
+title: Winsock-Addresses atributo
+description: Dirección del servicio Winsock.
 ms.assetid: b4da440d-e71c-44f5-aede-2c23d8463310
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Winsock-Addresses
-- winsockAddresses esquema de AD de atributos
+- Winsock-Addresses esquema de AD de atributo
+- Esquema de AD del atributo winsockAddresses
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1cba4a4595d24df42dc2a25f226ec63977fe1a8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 586db1e7ac94d5cbcee2acadb7b8dcc81658347f0204705635458fa139652cca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065505"
 ---
-# <a name="winsock-addresses-attribute"></a>Winsock-Addresses atributo)
+# <a name="winsock-addresses-attribute"></a>Winsock-Addresses atributo
 
-Una dirección del servicio Winsock.
+Dirección del servicio Winsock.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | Winsock-Addresses                                     |
-| Nombre para mostrar de LDAP | winsockAddresses                                      |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | winsockAddresses                                      |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.142                                |
-| System-ID-GUID    | bf967a79-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf967a79-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,13 +55,13 @@ Una dirección del servicio Winsock.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | False                                                    |
-| Está indexado             | False                                                    |
-| En el catálogo global      | True                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Falso                                                    |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Verdadero                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
@@ -76,13 +76,13 @@ Una dirección del servicio Winsock.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | False                                                    |
-| Está indexado             | False                                                    |
-| En el catálogo global      | True                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Falso                                                    |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Verdadero                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
@@ -97,13 +97,13 @@ Una dirección del servicio Winsock.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | False                                                    |
-| Está indexado             | False                                                    |
-| En el catálogo global      | True                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Falso                                                    |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Verdadero                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
@@ -118,13 +118,13 @@ Una dirección del servicio Winsock.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | False                                                    |
-| Está indexado             | False                                                    |
-| En el catálogo global      | True                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Falso                                                    |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Verdadero                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
@@ -139,13 +139,13 @@ Una dirección del servicio Winsock.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | False                                                    |
-| Está indexado             | False                                                    |
-| En el catálogo global      | True                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Falso                                                    |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Verdadero                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
@@ -160,13 +160,13 @@ Una dirección del servicio Winsock.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | False                                                    |
-| Tiene un único valor       | False                                                    |
-| Está indexado             | False                                                    |
-| En el catálogo global      | True                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Falso                                                    |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Verdadero                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |

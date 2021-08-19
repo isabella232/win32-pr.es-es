@@ -37,11 +37,11 @@ VT \_ VECTOR \| VT \_ R8
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Este valor se genera a partir de System.GPS.DestLatitudeNumerator y System.GPS.DestLatitudeDenominator. No se puede escribir directamente. Los valores de esquemas diferentes se concilian.
+Este valor se genera a partir de System.GPS.DestLatitudeNumerator y System.GPS.DestLatitudeDenominator. No se puede escribir directamente. Se concilian los valores de esquemas diferentes.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
@@ -82,7 +82,7 @@ Este valor se genera a partir de System.GPS.DestLatitudeNumerator y System.GPS.D
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 

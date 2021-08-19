@@ -3,32 +3,32 @@ title: Recuperación de la interfaz de grabación de CD
 description: Recuperación de la interfaz de grabación de CD
 ms.assetid: d52f7b27-a327-4656-8dc2-0b075264d295
 keywords:
-- Windows Media Player, grabación de CD
-- Modelo de objetos de Windows Media Player, grabación de CD
+- Reproductor de Windows Media,cds
+- Reproductor de Windows Media de objetos, cds
 - modelo de objetos, grabación de CD
-- Control ActiveX de Windows Media Player, grabación de CD
-- Control ActiveX, grabación de CD
-- Control ActiveX móvil de Windows Media Player, grabación de CD
-- Windows Media Player Mobile, grabación de CD
-- Grabación de CD, recuperación de la interfaz IWMPCdromCollection
-- grabación de CDs, recuperación de la interfaz IWMPCdromCollection
-- Interfaz IWMPCdromCollection
+- Reproductor de Windows Media ActiveX, cds
+- ActiveX control, grabación de CD
+- Reproductor de Windows Media Control de ActiveX móvil, grabación de CD
+- Reproductor de Windows Media Móvil, grabación de CD
+- Cds,recuperación de la interfaz IWMPCdromCollection
+- cds de grabación, recuperación de la interfaz IWMPCdromCollection
+- IWMPCdromCollection (interfaz)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b63763f9dd99bbaf88ae099edb53ba072cd1a25e
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 84013d5df4244fc30c9cb52e3447d15f60e559befe1223f0964934dd8ca1e1cf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104077433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123205"
 ---
 # <a name="retrieving-the-cd-burning-interface"></a>Recuperación de la interfaz de grabación de CD
 
-Para enumerar las unidades de CD en el equipo del usuario, use la interfaz **IWMPCdromCollection** . Para recuperar un puntero a esta interfaz, llame a [IWMPCore:: get \_ cdromCollection](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcore-get_cdromcollection).
+Para enumerar las unidades de CD en el equipo del usuario, use la **interfaz IWMPCdromCollection.** Para recuperar un puntero a esta interfaz, llame a [IWMPCore::get \_ cdromCollection](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcore-get_cdromcollection).
 
-Mediante el uso de los métodos **Get \_ Count** y **Item** , puede recorrer en iteración la colección para recuperar un puntero de la interfaz [IWMPCdrom](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdrom) para cada unidad de CD del equipo del usuario.
+Mediante los métodos **get \_ count** y **item,** puede iterar la colección para recuperar un puntero de interfaz [IWMPCdrom](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdrom) para cada unidad de CD del equipo del usuario.
 
-La interfaz **IWMPCdrom** representa una unidad de CD individual. Antes de empezar a grabar un CD, primero debe llamar a **QueryInterface** a través de un puntero **IWMPCdrom** para recuperar un puntero a la interfaz [IWMPCdromBurn](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromburn) .
+La **interfaz IWMPCdrom** representa una unidad de CD individual. Antes de empezar a grabar un CD, primero debe llamar a **QueryInterface** a través de un puntero **IWMPCdrom** para recuperar un puntero a la [interfaz IWMPCdromInterface.](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromburn)
 
 En el ejemplo de código siguiente se muestra cómo recuperar una interfaz para grabar un CD en una unidad específica:
 
@@ -79,21 +79,21 @@ HRESULT CMainDlg::GetCdromBurnInterface (long lIndex)
 [**Iniciar el proceso de grabación**](starting-the-burn-process.md)
 </dt> <dt>
 
-[**Borrado de un CD regrabable**](erasing-a-rewritable-cd.md)
+[**Borrado de un CD reescrito**](erasing-a-rewritable-cd.md)
 </dt> <dt>
 
-[**Recuperación de la unidad y el estado del disco**](retrieving-the-drive-and-disc-status.md)
+[**Recuperar el estado de la unidad y el disco**](retrieving-the-drive-and-disc-status.md)
 </dt> <dt>
 
-[**Recuperación del estado de la grabación**](retrieving-the-burn-status.md)
+[**Recuperación del estado de grabación**](retrieving-the-burn-status.md)
 </dt> <dt>
 
-[**Interfaz IWMPCdromCollection**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromcollection)
+[**IWMPCdromCollection (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromcollection)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

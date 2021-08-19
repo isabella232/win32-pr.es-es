@@ -5,40 +5,40 @@ ms.assetid: 0B127BEA-C656-4B9E-B791-9C19CAAC46B3
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2f36b2581598b76e92522b291b059d142a150f8
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 4ab965d342f812db50ec8ee2ebb51eaa554792f4118f222745dff1d7b18da747
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105676311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125325"
 ---
 # <a name="imstscax-properties"></a>Propiedades de IMsTscAx
 
-La interfaz [**IMsTscAx**](imstscax-interface.md) expone las siguientes propiedades.
+La [**interfaz IMsTscAx**](imstscax-interface.md) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Propiedad AdvancedSettings**](imstscax-advancedsettings.md)
--   [**Propiedad CipherStrength**](imstscax-cipherstrength.md)
+-   [**AdvancedSettings, propiedad**](imstscax-advancedsettings.md)
+-   [**CipherStrength, propiedad**](imstscax-cipherstrength.md)
 -   [**Propiedad connected**](imstscax-connected.md)
--   [**Propiedad ConnectingText**](imstscax-connectingtext.md)
+-   [**ConnectingText, propiedad**](imstscax-connectingtext.md)
 -   [**Propiedad DesktopHeight**](imstscax-desktopheight.md)
--   [**Propiedad DesktopWidth**](imstscax-desktopwidth.md)
--   [**Propiedad DisconnectedText**](imstscax-disconnectedtext.md)
+-   [**DesktopWidth, propiedad**](imstscax-desktopwidth.md)
+-   [**DisconnectedText, propiedad**](imstscax-disconnectedtext.md)
 -   [**Propiedad de dominio**](imstscax-domain.md)
 -   [**Propiedad FullScreenTitle**](imstscax-fullscreentitle.md)
 -   [**Propiedad HorizontalScrollBarVisible**](imstscax-horizontalscrollbarvisible.md)
 -   [**Propiedad SecuredSettings**](imstscax-securedsettings.md)
 -   [**Propiedad SecuredSettingsEnabled**](imstscax-securedsettingsenabled.md)
--   [**Propiedad del servidor**](imstscax-server.md)
+-   [**Propiedad Server**](imstscax-server.md)
 -   [**Propiedad StartConnected**](imstscax-startconnected.md)
 -   [**propiedad UserName**](imstscax-username.md)
--   [**Version (propiedad)**](imstscax-version.md)
+-   [**Propiedad Version**](imstscax-version.md)
 -   [**Propiedad VerticalScrollBarVisible**](imstscax-verticalscrollbarvisible.md)
 
- 
+ 
 
- 
+ 
 
 
 

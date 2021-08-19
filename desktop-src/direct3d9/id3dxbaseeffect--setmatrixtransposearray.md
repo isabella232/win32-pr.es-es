@@ -73,11 +73,11 @@ Número de matrices de la matriz.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentarios
 
-Una matriz transpuesta contiene datos principales de columna; es decir, cada vector se encuentra en una columna.
+Una matriz transpuesta contiene datos principales de columna; es decir, cada vector está contenido en una columna.
 
 Si las matrices de destino son menores que las matrices de origen, se omitirán los componentes adicionales de las matrices de origen.
 
@@ -92,7 +92,7 @@ Si las matrices de destino son menores que las matrices de origen, se omitirán 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
