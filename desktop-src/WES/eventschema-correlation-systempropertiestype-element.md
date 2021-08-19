@@ -1,9 +1,9 @@
 ---
 title: Elemento Correlation (SystemPropertiesType)
-description: Los identificadores de actividad que los consumidores pueden usar para agrupar eventos relacionados.
+description: Identificadores de actividad que los consumidores pueden usar para agrupar eventos relacionados.
 ms.assetid: 63982f37-3581-4b11-ac14-b95bc52541cb
 keywords:
-- Elemento de correlación EventLog
+- Elemento Correlation EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 91baca47479fe19988f3bfb23d573b8d92583d79
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fc301c43bbc8ba834949ae2a5056fb4359b5c8db3125da3d1729b18ac7aa1b73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120363"
 ---
 # <a name="correlation-systempropertiestype-element"></a>Elemento Correlation (SystemPropertiesType)
 
-Los identificadores de actividad que los consumidores pueden usar para agrupar eventos relacionados.
+Identificadores de actividad que los consumidores pueden usar para agrupar eventos relacionados.
 
 ``` syntax
 <xs:element name="Correlation">
@@ -39,7 +39,7 @@ Los identificadores de actividad que los consumidores pueden usar para agrupar e
 </xs:element>
 ```
 
-El elemento de **correlación** se define mediante el tipo complejo de [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .
+El tipo complejo [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) define el elemento **Correlation.**
 
 ## <a name="attributes"></a>Atributos
 
@@ -48,7 +48,7 @@ El elemento de **correlación** se define mediante el tipo complejo de [**System
 | Nombre              | Tipo                                                | Descripción                                                                                                                                                                                  |
 |-------------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Identificador de actividad        | [**GUIDType**](eventschema-guidtype-simpletype.md) | Identificador único global que identifica la actividad actual. Los eventos que se publican con este identificador forman parte de la misma actividad.<br/>                              |
-| RelatedActivityID | [**GUIDType**](eventschema-guidtype-simpletype.md) | Identificador único global que identifica la actividad a la que se transfirió el control. Los eventos relacionados tendrían este identificador como su identificador ActivityID.<br/> |
+| RelatedActivityID | [**GUIDType**](eventschema-guidtype-simpletype.md) | Identificador único global que identifica la actividad a la que se ha transferido el control. A continuación, los eventos relacionados tendrían este identificador como identificador activityID.<br/> |
 
 
 
@@ -58,8 +58,8 @@ El elemento de **correlación** se define mediante el tipo complejo de [**System
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -70,7 +70,7 @@ El elemento de **correlación** se define mediante el tipo complejo de [**System
 **Elemento primario**
 </dt> <dt>
 
-[**Sistema (EventType)**](eventschema-system-eventtype-element.md)
+[**System (EventType)**](eventschema-system-eventtype-element.md)
 </dt> </dl>
 
  

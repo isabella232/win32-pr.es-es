@@ -1,47 +1,47 @@
 ---
-description: Especifica si se va a repetir el primer campo en un marco entrelazado. Este atributo se aplica a los ejemplos de medios.
+description: Especifica si se debe repetir el primer campo en un marco entrelazado. Este atributo se aplica a los ejemplos multimedia.
 ms.assetid: c469f418-fa23-443f-8012-0d548ee98c17
-title: MFSampleExtension_RepeatFirstField atributo (mfapi. h)
+title: MFSampleExtension_RepeatFirstField atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0af10157c280a3e48ed8f415529534fc97fd5cc2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f0668e37e6a6958615c83f98c4b6b87eb170b115cf0549f3944a43b21c5b65d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117872425"
 ---
-# <a name="mfsampleextension_repeatfirstfield-attribute"></a>\_Atributo RepeatFirstField de MFSampleExtension
+# <a name="mfsampleextension_repeatfirstfield-attribute"></a>Atributo MFSampleExtension \_ RepeatFirstField
 
-Especifica si se va a repetir el primer campo en un marco entrelazado. Este atributo se aplica a los ejemplos de medios.
+Especifica si se debe repetir el primer campo en un marco entrelazado. Este atributo se aplica a los ejemplos multimedia.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Bool** almacenado como **UINT32**
+**BOOL almacenado** como **UINT32**
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para establecer este atributo, llame a [**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Se aplica a
 
-[**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
+[**SAMPLESample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el valor es **false** o el atributo no está establecido, el primer campo no se repite. Si el valor es **true**, el primer campo se repite. El valor **true** solo es válido cuando se cumplen las condiciones siguientes:
+Si el valor es **FALSE o** el atributo no está establecido, no se repite el primer campo. Si el valor es **TRUE**, se repite el primer campo. El valor **TRUE** solo es válido cuando se cumplen las condiciones siguientes:
 
--   El tipo de medio es entrelazado y progresivo. (El atributo de atributo de [**\_ \_ \_ modo entrelazado MF MT**](mf-mt-interlace-mode-attribute.md) en el tipo de medio es **MFVideoInterlace \_ MixedInterlaceOrProgressive**).
--   El marco es progresivo y el atributo [**\_ entrelazado MFSampleExtension**](mfsampleextension-interlaced-attribute.md) del ejemplo es **true**.
--   El atributo [**MFSampleExtension \_ BottomFieldFirst**](mfsampleextension-bottomfieldfirst-attribute.md) se establece en el ejemplo. El valor puede ser **true** o **false**. Este atributo determina el orden de los campos.
+-   El tipo de medio es mixto entrelazado y progresiva. (El [**atributo del atributo MF MT \_ \_ INTERLACE \_ MODE**](mf-mt-interlace-mode-attribute.md) en el tipo de medio **es MFVideoInterlace \_ MixedInterlaceOrProgressive).**
+-   El marco es progresiva y el atributo [**MFSampleExtension \_ entrelazado**](mfsampleextension-interlaced-attribute.md) del ejemplo es **TRUE.**
+-   El [**atributo MFSampleExtension \_ BottomFieldFirst**](mfsampleextension-bottomfieldfirst-attribute.md) se establece en el ejemplo. El valor puede ser **TRUE** o **FALSE.** El orden de los campos viene determinado por este atributo.
 
-Este atributo se utiliza para la telecine 3:2. En la tabla siguiente se muestra el orden en que se muestran los campos.
+Este atributo se usa para la extracción 3:2. En la tabla siguiente se muestra el orden en el que se muestran los campos.
 
 
 
-| MFSampleExtension \_ RepeatFirstField | MFSampleExtension \_ BottomFieldFirst | Orden de los campos         |
+| MFSampleExtension \_ RepeatFirstField | MFSampleExtension \_ BottomFieldFirst | Orden de campo         |
 |-------------------------------------|-------------------------------------|---------------------|
 | **TRUE**                            | **TRUE**                            | Inferior, superior, inferior |
 | **TRUE**                            | **FALSE**                           | Superior, inferior, superior |
@@ -52,17 +52,17 @@ Este atributo se utiliza para la telecine 3:2. En la tabla siguiente se muestra 
 
  
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                              |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos de ejemplo](sample-attributes.md)

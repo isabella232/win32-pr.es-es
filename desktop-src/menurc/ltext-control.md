@@ -21,9 +21,9 @@ ms.locfileid: "117870279"
 ---
 # <a name="ltext-control"></a>Control LTEXT
 
-Define un control de texto alineado a la izquierda. El control es un rectángulo simple que muestra el texto especificado alineado a la izquierda en el rectángulo. El texto tiene formato antes de que se muestre. Las palabras que se extenderían más allá del final de una línea se encapsulan automáticamente al principio de la línea siguiente. Las palabras que son más largas que el ancho del control se truncan.
+Define un control de texto alineado a la izquierda. El control es un rectángulo simple que muestra el texto especificado alineado a la izquierda en el rectángulo. El texto tiene formato antes de mostrarse. Las palabras que se extenderían más allá del final de una línea se encapsulan automáticamente al principio de la línea siguiente. Las palabras que son más largas que el ancho del control se truncan.
 
-La **instrucción LTEXT,** que solo se puede usar en una [**instrucción DIALOGEX,**](dialogex-resource.md) define el texto, el identificador, las dimensiones y los atributos del control.
+La **instrucción LTEXT,** que solo se puede usar en una instrucción [**DIALOGEX,**](dialogex-resource.md) define el texto, el identificador, las dimensiones y los atributos del control.
 
 ``` syntax
 LTEXT text, id, x, y, width, height [, style [, extended-style]]
@@ -34,7 +34,7 @@ LTEXT text, id, x, y, width, height [, style [, extended-style]]
 <span id="style"></span><span id="STYLE"></span>*Estilo*
 </dt> <dd>
 
-Estilos de control. Este valor puede ser cualquier combinación del estilo **\_ RADIOBUTTON** de BS y los estilos siguientes: **SS \_ LEFT,** **WS \_ TABSTOP** y **WS \_ GROUP.**
+Estilos de control. Este valor puede ser cualquier combinación del estilo **\_ BS RADIOBUTTON** y los estilos siguientes: **SS \_ LEFT,** **WS \_ TABSTOP** y **WS \_ GROUP**.
 
 Si no especifica un estilo, el estilo predeterminado es `SS_LEFT | WS_GROUP` .
 
@@ -50,7 +50,7 @@ En este ejemplo se define un control de texto alineado a la izquierda con la eti
 LTEXT "Filename", 101, 10, 10, 100, 100
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,23 +1,23 @@
 ---
-description: Módulos de TopoEdit
+description: Módulos TopoEdit
 ms.assetid: f3da2d13-a8ad-4db0-9d18-e94857f0abc7
-title: Módulos de TopoEdit
+title: Módulos TopoEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 728f39edace5974d390746173308361b595c3b40
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cc95848a533ba67599c114917ebe502f42a4fe859df9c1ac6bf5acfc40bb393c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118057720"
 ---
-# <a name="topoedit-modules"></a>Módulos de TopoEdit
+# <a name="topoedit-modules"></a>Módulos TopoEdit
 
-La herramienta TopoEdit se proporciona con el Windows SDK para Windows Server 2008 y versiones posteriores. La herramienta requiere Windows Vista o posterior.
+La herramienta TopoEdit se proporciona con el SDK Windows para Windows Server 2008 y versiones posteriores. La herramienta requiere Windows Vista o posterior.
 
-Los módulos TopoEdit se encuentran en la carpeta bin del SDK de. Estos módulos son:
+Los módulos TopoEdit se encuentran en la carpeta Bin del SDK. Estos módulos son:
 
--   TopoEdit.exe: ejecutable de la aplicación
+-   TopoEdit.exe: ejecutable de aplicación
 -   TEDUTIL.dll: DLL de extensión
 
 La instalación del SDK registra el archivo DLL. Sin embargo, si se produce un error, en un símbolo del sistema, ejecute lo siguiente.
@@ -29,7 +29,7 @@ Regsvr32 <Install path>\Microsoft SDKs\Windows\v6.0\Bin\TEDUTIL.dll
 
 
 
-El código fuente de TopoEdit también se proporciona como un ejemplo en el Windows SDK. Se encuentra en el siguiente directorio:
+El código fuente de TopoEdit también se proporciona como ejemplo en Windows SDK. Se encuentra en el directorio siguiente:
 
 <samples root>\\Multimedia \\ Media Foundation \\ TopoEdit
 

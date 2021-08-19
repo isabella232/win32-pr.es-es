@@ -13,7 +13,7 @@ ms.locfileid: "117867518"
 ---
 # <a name="xps-print-api-interfaces"></a>Interfaces de LA API de impresión XPS
 
-\[Las interfaces descritas en esta sección están en desuso. En su lugar, las aplicaciones cliente [deben usar print document package API.](./tailored-app-printing-api.md)\]
+\[Las interfaces descritas en esta sección están en desuso. Las aplicaciones cliente deben usar [la API Print Document Package en](./tailored-app-printing-api.md) su lugar.\]
 
 \[IXpsPrintJob no se admite y puede modificarse o no estar disponible en el futuro. \]
 
@@ -26,7 +26,7 @@ ms.locfileid: "117867518"
 | Interfaz                                                   | Descripción                                                                               |
 |-------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | [**IXpsPrintJob**](/windows/desktop/api/XpsPrint/nn-xpsprint-ixpsprintjob)<br/>             | Proporciona acceso a un trabajo de impresión que está actualmente en curso.<br/>                  |
-| [**IXpsPrintJobStream**](/windows/desktop/api/XpsPrint/nn-xpsprint-ixpsprintjobstream)<br/> | Interfaz de secuencia de solo escritura en la que una aplicación escribe datos de trabajos de impresión.<br/> |
+| [**IXpsPrintJobStream**](/windows/desktop/api/XpsPrint/nn-xpsprint-ixpsprintjobstream)<br/> | Interfaz de secuencia de solo escritura en la que una aplicación escribe datos del trabajo de impresión.<br/> |
 
 
 

@@ -1,27 +1,27 @@
 ---
-title: Método alcrear
-description: Método alcrear
+title: El método OnCreate
+description: El método OnCreate
 ms.assetid: b23546b3-968f-41d8-ba07-3d694152c3ed
 keywords:
-- Complementos de Windows Media Player, método de creación
-- complementos, método de creación
-- Complementos de la interfaz de usuario, método de creación
-- Complementos de la interfaz de usuario, método de creación
-- Método alcrear
+- Reproductor de Windows Media complementos, método OnCreate
+- plug-ins,OnCreate (método)
+- complementos de interfaz de usuario, método OnCreate
+- Complementos de interfaz de usuario, método OnCreate
+- Método OnCreate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d896ed9ebc6e9dc2bff9ff24ad23d50f7905c24
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ac52b1c58c6799f89d29fb1ee24c09767fee26729e760b2b454f1a359bd57596
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118113"
 ---
-# <a name="the-oncreate-method"></a>Método alcrear
+# <a name="the-oncreate-method"></a>El método OnCreate
 
-Se llama al método alcrear cuando se crea por primera vez la ventana del complemento.
+Se llama al método OnCreate cuando se crea por primera vez la ventana del complemento.
 
-El siguiente código se usa para implementar este método:
+El código siguiente se usa para implementar este método:
 
 
 ```C++
@@ -38,7 +38,7 @@ LRESULT OnCreate(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled)
 
 
 
-Este método crea el botón **Buscar** y lo asocia al \_ identificador de comando de búsqueda de IDC, que se define al principio del archivo:
+Este método crea el **botón Buscar** y lo asocia al identificador del comando SEARCH de IDC, que se define al principio \_ del archivo:
 
 
 ```C++
@@ -48,7 +48,7 @@ Este método crea el botón **Buscar** y lo asocia al \_ identificador de comand
 
 
 
-Este identificador de comando se asigna al método de búsqueda en la sección mapa de mensajes que se ha descrito anteriormente.
+Este identificador de comando se asigna al método OnSearch en la sección de asignación de mensajes descrita anteriormente.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -57,9 +57,9 @@ Este identificador de comando se asigna al método de búsqueda en la sección m
 [**Implementación de CPluginWindow**](implementing-cpluginwindow.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

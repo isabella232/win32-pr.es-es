@@ -56,7 +56,7 @@ HRESULT GetSystemIsolationInfoEx(
 *isolationInfo* \[ out\]
 </dt> <dd>
 
-Puntero a un puntero a una estructura [**IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) que contiene el estado de aislamiento extendido del sistema para las conexiones conocidas. *isolationInfo* indica si el sistema está en un estado de acceso restringido, sondeo o acceso sin restricciones, así como información [**de ExtendedIsolationState.**](/windows/win32/api/naptypes/ne-naptypes-extendedisolationstate)
+Puntero a un puntero a una estructura [**IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) que contiene el estado de aislamiento extendido del sistema para las conexiones conocidas. *isolationInfo* indica si el sistema está en un estado de acceso restringido, sondeo o acceso sin restricciones, así como la [**información de ExtendedIsolationState.**](/windows/win32/api/naptypes/ne-naptypes-extendedisolationstate)
 
 </dd> <dt>
 

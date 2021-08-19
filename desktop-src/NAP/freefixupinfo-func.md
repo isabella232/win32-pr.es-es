@@ -3,7 +3,7 @@ title: Función FreeFixupInfo (NapUtil.h)
 description: Libera una estructura de datos FixupInfo.
 ms.assetid: 6bf71ccf-2618-46a3-8a04-9f83a5b7b429
 keywords:
-- Función Nap de FreeFixupInfo
+- Función NAP FreeFixupInfo
 topic_type:
 - apiref
 api_name:
@@ -56,11 +56,11 @@ Puntero a la estructura [**de datos FixupInfo**](/windows/win32/api/naptypes/ns-
 
 Todas las interfaces COM compatibles con el sistema NAP usan reglas de administración de memoria COM estándar y los asignadores de memoria COM (**CoTaskMemAlloc** y **CoTaskMemFree**):
 
--   **En,** el autor de la llamada asigna y libera los parámetros.
--   **El** destinatario asigna los parámetros out y los libera el autor de la llamada mediante **CoTaskMem.**
+-   **El** autor de la llamada asigna y libera los parámetros de .
+-   **El** destinatario asigna los parámetros out y el autor de la llamada lo libera **mediante CoTaskMem**.
 -   **El autor de** la llamada asigna los parámetros de entrada y salida, los libera y reasigna el destinatario y, en última instancia, los libera el autor de la llamada, mediante **CoTaskMem**.
 
-Todas las funciones nap para liberar memoria también liberan todos los punteros incrustados.
+Todas las funciones NAP para liberar memoria también liberan todos los punteros incrustados.
 
 ## <a name="requirements"></a>Requisitos
 

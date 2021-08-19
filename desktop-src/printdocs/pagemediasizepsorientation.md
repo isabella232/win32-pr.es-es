@@ -15,7 +15,7 @@ ms.locfileid: "117868190"
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica la orientación relativa a la dirección de orientación de la fuente (Referencia [PostScript especificación de](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)formato de archivo de descripción de impresora ).
+Especifica la orientación relativa a la dirección de orientación de fuente (Referencia [PostScript especificación de](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)formato de archivo de descripción de impresora ).
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -71,7 +71,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                        |
+| Propiedad                | xsi:type           | Value                        |
 |-------------------------|--------------------|------------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>        |
 | DefaultValue<br/> | integer<br/> | 0<br/>                 |

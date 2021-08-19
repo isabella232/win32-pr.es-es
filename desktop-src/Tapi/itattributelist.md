@@ -11,15 +11,15 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117762431"
 ---
-# <a name="itattributelist-interface"></a>ItAttributeList (interfaz)
+# <a name="itattributelist-interface"></a>Interfaz ITAttributeList
 
-\[Los controles e interfaces de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
+\[Las interfaces y los controles de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-La **interfaz ITAttributeList** proporciona métodos para obtener y establecer atributos no interpretados. Con respecto a la posición de las cadenas de atributo en un paquete del Protocolo de descriptor de sesión (SDP, consulte RFC 2327), los métodos asumen que todas las cadenas de atributo existen justo antes de que se especifiquen los atributos multimedia y después de todos los atributos comunes. La **interfaz ITAttributeList** se crea mediante una llamada **a QueryInterface** en [**ITDirectoryObject**](/windows/desktop/api/Rend/nn-rend-itdirectoryobject).
+La **interfaz ITAttributeList** proporciona métodos para obtener y establecer atributos no interpretados. Con respecto a la posición de las cadenas de atributo en un paquete del Protocolo de descriptor de sesión (SDP, vea RFC 2327), los métodos asumen que todas las cadenas de atributo existen justo antes de que se especifiquen los atributos multimedia y después de todos los atributos comunes. La **interfaz ITAttributeList** se crea llamando a **QueryInterface** en [**ITDirectoryObject.**](/windows/desktop/api/Rend/nn-rend-itdirectoryobject)
 
 ## <a name="members"></a>Miembros
 
-La **interfaz ITAttributeList** hereda de la [**interfaz IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **ITAttributeList también** tiene estos tipos de miembros:
+La **interfaz ITAttributeList** hereda de la [**interfaz IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **ITAttributeList** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 

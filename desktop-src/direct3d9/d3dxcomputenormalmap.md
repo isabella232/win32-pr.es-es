@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXComputeNormalMap: convierte un mapa de altura en un mapa normal. Los componentes (x, y,z) de cada normal se asignan a los canales (r, g, b) de la textura de salida.'
+description: 'Función D3DXComputeNormalMap: convierte un mapa de alto en un mapa normal. Los componentes (x,y,z) de cada normal se asignan a los canales (r,g,b) de la textura de salida.'
 ms.assetid: ed9053c0-b1df-4f74-bdee-627c0f60d942
 title: Función D3DXComputeNormalMap (D3dx9tex.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 920ad763f478a2e6bcb9fbe98cc7e2a677ebe783
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b561189c0aaafa42cc877246bb5a666ac26853133c227aa6c7a4f8beb1f23a28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118299378"
 ---
 # <a name="d3dxcomputenormalmap-function"></a>Función D3DXComputeNormalMap
 
-Convierte un mapa de alto en un mapa normal. Los componentes (x, y,z) de cada normal se asignan a los canales (r, g, b) de la textura de salida.
+Convierte un mapa de alto en un mapa normal. Los componentes (x,y,z) de cada normal se asignan a los canales (r,g,b) de la textura de salida.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -72,12 +72,12 @@ Puntero a un [**tipo PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-palette
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Una o varias [marcas D3DX \_ NORMALMAP](d3dx-normalmap.md) que controlan la generación de mapas normales.
+Una o varias marcas [ \_ NORMALMAP de D3DX](d3dx-normalmap.md) que controlan la generación de mapas normales.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Una [marca D3DX \_ CHANNEL](d3dx-channel.md) que especifica el origen de la info
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Multiplicador de valor constante que aumenta (o disminuye) los valores del mapa normal. Los valores más altos suelen hacer que los aumentos sean más visibles, y los valores más bajos suelen hacer que los aumentos sean menos visibles.
+Multiplicador de valor constante que aumenta (o disminuye) los valores del mapa normal. Los valores más altos suelen hacer que los aumentos sean más visibles; los valores más bajos suelen hacer que los aumentos sean menos visibles.
 
 </dd> </dl>
 

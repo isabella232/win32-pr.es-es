@@ -1,10 +1,10 @@
 ---
-title: Propiedad IVMGuestOS HeartbeatPercentage (VPCCOMInterfaces.h)
+title: Propiedad HeartbeatPercentage de IVMGuestOS (VPCCOMInterfaces.h)
 description: Porcentaje de latidos esperados recibidos en el último minuto.
 ms.assetid: 456dd8ae-e946-429d-98aa-5773362fdd4e
 keywords:
 - HeartbeatPercentage, propiedad Virtual PC
-- Propiedad HeartbeatPercentage Virtual PC , interfaz IVMGuestOS
+- HeartbeatPercentage, propiedad De PC virtual, interfaz IVMGuestOS
 - Interfaz IVMGuestOS Pc virtual, propiedad HeartbeatPercentage
 topic_type:
 - apiref
@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117753452"
 ---
-# <a name="ivmguestosheartbeatpercentage-property"></a>Propiedad IVMGuestOS::HeartbeatPercentage
+# <a name="ivmguestosheartbeatpercentage-property"></a>IVMGuestOS::HeartbeatPercentage, propiedad
 
 \[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
@@ -57,22 +57,22 @@ Porcentaje de latidos esperados recibidos en el último minuto.
 | <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>                   | El parámetro es **NULL.**<br/>                                                                                                               |
 | <dl> <dt>Máquina virtual \_ E \_ VM \_ UNKNOWN</dt> <dt>0xA0040207</dt> </dl>           | La configuración es desconocida.<br/>                                                                                                            |
 | <dl> <dt>Máquina virtual \_ E \_ VM \_ NOT \_ RUNNING</dt> <dt>0xA0040206</dt> </dl>      | La máquina virtual (VM) debe estar en ejecución para esta operación.<br/>                                                                             |
-| <dl> <dt>Máquina virtual \_ E \_ LAS \_ ADICIONES NO ESTÁN \_ DISPONIBLES</dt> <dt>0xA0040504</dt> </dl> | La máquina virtual no está totalmente arrancada, la característica de componentes de integración no está instalada o la versión instalada no admite esta característica.<br/> |
+| <dl> <dt>Máquina virtual \_ LAS \_ ADICIONES \_ NO ESTÁN \_ DISPONIBLES</dt> <dt>0XA0040504</dt> </dl> | La máquina virtual no está totalmente arrancada, la característica de componentes de integración no está instalada o la versión instalada no admite esta característica.<br/> |
 | <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>           | Se produjo un error inesperado.<br/>                                                                                                        |
 
 
 
 ## <a name="remarks"></a>Comentarios
 
-Los componentes de integración enviarán un latido periódico Windows equipo virtual mientras se ejecuta el sistema operativo invitado. Si el sistema operativo invitado está muy cargado, es posible que Windows Virtual PC reciba menos latidos de los esperados. Si el porcentaje de latidos cae a cero, es posible que el sistema operativo invitado no responda o se bloquea. La máquina virtual debe estar en ejecución (es decir, totalmente arrancada y no apagada) y los componentes de integración deben instalarse cuando se invoca esta propiedad.
+Los componentes de integración enviarán un latido periódico a Windows virtual mientras se ejecuta el sistema operativo invitado. Si el sistema operativo invitado está muy cargado, es posible que Windows Virtual PC reciba menos latidos de los esperados. Si el porcentaje de latidos cae a cero, es posible que el sistema operativo invitado no responda o se bloquea. La máquina virtual debe estar en ejecución (es decir, arrancar completamente y no apagarse) y los componentes de integración deben instalarse cuando se invoca esta propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
 | Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
@@ -81,7 +81,7 @@ Los componentes de integración enviarán un latido periódico Windows equipo vi
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

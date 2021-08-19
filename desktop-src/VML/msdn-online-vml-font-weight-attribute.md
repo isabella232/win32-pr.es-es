@@ -42,14 +42,14 @@ Los valores son los mismos que los atributos de estilo HTML estándar. Estos val
 
 
 
-| Valor   | Descripción                                                                 |
+| Value   | Descripción                                                                 |
 |---------|-----------------------------------------------------------------------------|
 | normal  | Normal. Predeterminada.                                                            |
 | negrita    | Negrita.                                                                       |
 | bolder  | Más pesado de lo normal.                                                        |
-| lighter | Más ligera de lo normal.                                                        |
-| 100     | Al menos tan ligero como 200 pesos.                                        |
-| 200     | Al menos tan negrita como 100 peso y al menos tan ligera como 300. |
+| lighter | Más ligero de lo normal.                                                        |
+| 100     | Al menos tan ligero como el peso de 200.                                        |
+| 200     | Al menos tan negrita como 100 peso y al menos tan ligera como 300 peso. |
 | 300     | Al menos tan negrita como el peso 200 y al menos tan claro como el peso 400. |
 | 400     | Normal.                                                                     |
 | 500     | Al menos tan negrita como el peso 400 y al menos tan claro como el peso 600. |

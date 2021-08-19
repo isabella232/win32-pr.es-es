@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXComputeBoundingBox (D3DX9Mesh.h): calcula un cuadro de límite orientado al eje de coordenadas.'
+description: 'Función D3DXComputeBoundingBox (D3DX9Mesh.h): calcula un rectángulo de selección orientado al eje de coordenadas.'
 ms.assetid: 74e1b84e-1264-49eb-9172-7842af7e25e0
 title: Función D3DXComputeBoundingBox (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 39fdf4123781b84d87ec1c9d790eb5ffae058892
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 03eb722e68b58ec48a3bf607ab72d67004ad30a0c765b19c1b84ae29577c773b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118299957"
 ---
 # <a name="d3dxcomputeboundingbox-function-d3dx9meshh"></a>Función D3DXComputeBoundingBox (D3DX9Mesh.h)
 

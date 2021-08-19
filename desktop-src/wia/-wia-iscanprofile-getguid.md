@@ -1,7 +1,7 @@
 ---
 description: Devuelve el GUID del perfil.
 ms.assetid: 184456dd-515d-4744-91f3-0ef8b4d2114d
-title: 'IScanProfile:: GetGUID (método) (Scanprofile. h)'
+title: Método IScanProfile::GetGUID (Scanprofile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Scanprofile.h
-ms.openlocfilehash: e3c39815e1bc88830f64f632689028c4c527a710
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 37d383d5975957c45b2aa5a0c90350f794e6f20deb9a7bfbe73c9f2d42b2bca8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118441583"
 ---
-# <a name="iscanprofilegetguid-method"></a>IScanProfile:: GetGUID (método)
+# <a name="iscanprofilegetguid-method"></a>IScanProfile::GetGUID (método)
 
 Devuelve el GUID del perfil.
 
@@ -39,10 +39,10 @@ HRESULT GetGUID(
 
 <dl> <dt>
 
-*retval* \[ enuncia\]
+*retVal* \[ out\]
 </dt> <dd>
 
-Tipo: **GUID \** _
+Tipo: **\* GUID**
 
 Puntero al GUID del perfil.
 
@@ -50,9 +50,9 @@ Puntero al GUID del perfil.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -64,10 +64,10 @@ El GUID de un perfil se genera automáticamente cuando se crea el perfil con [**
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Scanprofile. h</dt> </dl>    |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
+| Header<br/>                   | <dl> <dt>Scanprofile.h</dt> </dl>    |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
@@ -78,7 +78,7 @@ El GUID de un perfil se genera automáticamente cuando se crea el perfil con [**
 [**IScanProfile**](-wia-iscanprofile.md)
 </dt> <dt>
 
-[Esquema de análisis de perfil](-wia-scan-profile-schema.md)
+[Esquema de perfil de examen](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

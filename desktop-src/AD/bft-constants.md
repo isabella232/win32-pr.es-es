@@ -1,6 +1,6 @@
 ---
-title: Constantes BFT (Ntdsbcli. h)
-description: Las constantes BFT se usan como marcas de bits para identificar distintos tipos de archivo en una copia de seguridad de Active Directory Domain Services.
+title: Constantes BFT (Ntdsbcli.h)
+description: Las constantes BFT se usan como marcas de bits para identificar distintos tipos de archivo en una copia de Active Directory Domain Services copia de seguridad.
 ms.assetid: 3658a657-d9e3-4fbf-9120-4b0205b81a36
 ms.tgt_platform: multiple
 topic_type:
@@ -21,20 +21,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9607b5e61e5689d8895b39a11aa7e813fc7fcbe6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3b5e9275e01b8c33d308b55b2638d4eaf186b8f5265834acc27acd2f146f0d09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118024054"
 ---
 # <a name="bft-constants"></a>Constantes de BFT
 
-Las constantes BFT se usan como marcas de bits para identificar distintos tipos de archivo en una copia de seguridad de Active Directory Domain Services.
+Las constantes BFT se usan como marcas de bits para identificar distintos tipos de archivo en una copia de Active Directory Domain Services copia de seguridad.
 
 <dl> <dt>
 
-<span id="BFT_LOG_DIRECTORY"></span><span id="bft_log_directory"></span>**\_Directorio de registro de BFT \_**
+<span id="BFT_LOG_DIRECTORY"></span><span id="bft_log_directory"></span>**DIRECTORIO DE REGISTRO \_ DE \_ BFT**
 </dt> <dd> <dl> <dt>
 
 0x20
@@ -47,7 +47,7 @@ El archivo pertenece al directorio de registro.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BFT_DATABASE_DIRECTORY"></span><span id="bft_database_directory"></span>**\_Directorio de base de datos BFT \_**
+<span id="BFT_DATABASE_DIRECTORY"></span><span id="bft_database_directory"></span>**DIRECTORIO DE BASE \_ DE DATOS DE \_ BFT**
 </dt> <dd> <dl> <dt>
 
 0x40
@@ -55,12 +55,12 @@ El archivo pertenece al directorio de registro.
 
 
 
-El archivo pertenece al directorio de la base de datos.
+El archivo pertenece al directorio de base de datos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="BFT_DIRECTORY"></span><span id="bft_directory"></span>**\_directorio BFT**
+<span id="BFT_DIRECTORY"></span><span id="bft_directory"></span>**DIRECTORIO DE \_ BFT**
 </dt> <dd> <dl> <dt>
 
 0x80
@@ -73,7 +73,7 @@ La ruta de acceso especificada es un directorio y no un nombre de archivo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BFT_LOG"></span><span id="bft_log"></span>**registro de BFT \_**
+<span id="BFT_LOG"></span><span id="bft_log"></span>**BFT \_ LOG**
 </dt> <dd> <dl> <dt>
 
 0x21
@@ -86,7 +86,7 @@ Especifica un archivo de registro que pertenece al directorio de registro.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BFT_LOG_DIR"></span><span id="bft_log_dir"></span>**DIR. de registro de BFT \_ \_**
+<span id="BFT_LOG_DIR"></span><span id="bft_log_dir"></span>**BFT \_ LOG \_ DIR**
 </dt> <dd> <dl> <dt>
 
 0x22
@@ -99,7 +99,7 @@ El archivo es la ruta de acceso del directorio de registro.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BFT_CHECKPOINT_DIR"></span><span id="bft_checkpoint_dir"></span>**DIR. de punto de BFT \_ \_**
+<span id="BFT_CHECKPOINT_DIR"></span><span id="bft_checkpoint_dir"></span>**DIRECTORIO DE PUNTO DE COMPROBACIÓN DE BFT \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x23
@@ -107,25 +107,25 @@ El archivo es la ruta de acceso del directorio de registro.
 
 
 
-El archivo es la ruta de acceso del directorio Checkpoint.
+El archivo es la ruta de acceso del directorio del punto de control.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="BFT_NTDS_DATABASE"></span><span id="bft_ntds_database"></span>**\_base de \_ datos Ntds BFT**
+<span id="BFT_NTDS_DATABASE"></span><span id="bft_ntds_database"></span>**BFT \_ NTDS \_ DATABASE**
 </dt> <dd> <dl> <dt>
 
-0X44
+0x44
 </dt> <dt>
 
 
 
-El archivo es una base de datos del servicio de directorio que pertenece al directorio de la base de datos.
+El archivo es una base de datos de servicio de directorio que pertenece al directorio de base de datos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="BFT_PATCH_FILE"></span><span id="bft_patch_file"></span>**\_archivo de revisión BFT \_**
+<span id="BFT_PATCH_FILE"></span><span id="bft_patch_file"></span>**ARCHIVO DE \_ REVISIÓN DE \_ BFT**
 </dt> <dd> <dl> <dt>
 
 0x25
@@ -138,7 +138,7 @@ El archivo es un archivo de revisión que pertenece al directorio de registro.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BFT_UNKNOWN"></span><span id="bft_unknown"></span>**BFT \_ desconocido**
+<span id="BFT_UNKNOWN"></span><span id="bft_unknown"></span>**BFT \_ UNKNOWN**
 </dt> <dd> <dl> <dt>
 
 0x0F
@@ -146,7 +146,7 @@ El archivo es un archivo de revisión que pertenece al directorio de registro.
 
 
 
-No se reconoce el archivo. El archivo no coincide con los nombres de archivo y los tipos de archivo conocidos.
+No se puede reconocer el archivo. El archivo no coincide con los nombres de archivo y los tipos de archivo conocidos.
 
 
 </dt> </dl> </dd> </dl>
@@ -155,11 +155,11 @@ No se reconoce el archivo. El archivo no coincide con los nombres de archivo y l
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                        |
-| Encabezado<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Ntdsbcli.h</dt> </dl> |
 
 
 

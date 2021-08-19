@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 74da959002bfbd0c488e630f09c89e848708b1b1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f90521b51c9c939d459fb10bcf2badd7e551b80e5e9f134d5dfd38b5ec8e18aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730824"
 ---
 # <a name="d3dxvec3transformnormalarray-function-d3dx9mathh"></a>Función D3DXVec3TransformNormalArray (D3dx9math.h)
 
-Transforma una matriz (x, y, z, 0) mediante una matriz determinada.
+Transforma una matriz (x, y, z, 0) por una matriz determinada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,7 +59,7 @@ Puntero a la [**matriz D3DXVECTOR3**](d3dxvector3.md) que es el resultado de la 
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Pasos entre vectores en el flujo de datos de salida.
+Paso entre vectores en el flujo de datos de salida.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Puntero a la matriz [**D3DXVECTOR3 de**](d3dxvector3.md) origen.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Pasos entre vectores en el flujo de datos de entrada.
+Paso entre vectores en el flujo de datos de entrada.
 
 </dd> <dt>
 
@@ -124,7 +124,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

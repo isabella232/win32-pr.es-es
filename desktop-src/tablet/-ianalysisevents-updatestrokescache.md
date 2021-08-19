@@ -1,7 +1,7 @@
 ---
-description: Se produce antes de que IInkAnalyzer tenga acceso a los datos del trazo.
+description: Se produce antes de que IInkAnalyzer acceda a los datos del trazo.
 ms.assetid: fed46476-4531-4516-9375-d7b654efb3be
-title: 'Evento _IAnalysisEvents:: UpdateStrokesCache (IACom. h)'
+title: _IAnalysisEvents::UpdateStrokesCache (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 5d16011d8c5fe571d228b632fecb7a973bafcbf5
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 9a5854c8061a12dc558a2ca20ebd893880f899b2113065abd9b8122c53812aa0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105697996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118047377"
 ---
-# <a name="_ianalysiseventsupdatestrokescache-event"></a>\_Evento IAnalysisEvents:: UpdateStrokesCache
+# <a name="_ianalysiseventsupdatestrokescache-event"></a>\_Evento IAnalysisEvents::UpdateStrokesCache
 
-Se produce antes de que [**IInkAnalyzer**](iinkanalyzer.md) tenga acceso a los datos del trazo.
+Se produce antes de que [**IInkAnalyzer**](iinkanalyzer.md) acceda a los datos del trazo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,41 +40,41 @@ HRESULT UpdateStrokesCache(
 
 <dl> <dt>
 
-*ulStrokeIdsCount* \[ de\]
+*ulStrokeIdsCount* \[ En\]
 </dt> <dd>
 
 Número de identificadores de trazo en *plStrokeIds*.
 
 </dd> <dt>
 
-*plStrokeIds* \[ de\]
+*plStrokeIds* \[ En\]
 </dt> <dd>
 
-Los identificadores de los trazos cuyos datos de paquetes se han borrado.
+Identificadores de los trazos cuyos datos de paquete se han borrado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El [**IInkAnalyzer**](iinkanalyzer.md) genera este evento durante el análisis de tinta cuando tiene acceso a uno o varios trazos para los que se han borrado los datos del paquete. Para actualizar los datos del paquete de trazos, utilice el método [**IInkAnalyzer:: UpdateStrokesData Method**](iinkanalyzer-updatestrokesdata.md) .
+[**IInkAnalyzer**](iinkanalyzer.md) genera este evento durante el análisis de entrada de lápiz cuando accede a uno o varios trazos para los que se han borrado los datos del paquete. Para actualizar los datos del paquete de trazo, use el [**método IInkAnalyzer::UpdateStrokesData .**](iinkanalyzer-updatestrokesdata.md)
 
-El [**IInkAnalyzer**](iinkanalyzer.md) no genera este evento cuando se tiene acceso a un nodo de hoja de tinta parcialmente rellenado cuando el **IInkAnalyzer** no ha establecido la ubicación del nodo.
+[**IInkAnalyzer**](iinkanalyzer.md) no genera este evento al acceder a un nodo hoja de entrada de lápiz parcialmente rellenado cuando la ubicación del nodo no se ha establecido mediante **IInkAnalyzer**.
 
-Para obtener más información sobre cómo sincronizar los datos de la aplicación con [**IInkAnalyzer**](iinkanalyzer.md), vea [proxy de datos con análisis de tinta](data-proxy-with-ink-analysis.md).
+Para obtener más información sobre cómo sincronizar los datos de la aplicación con [**IInkAnalyzer**](iinkanalyzer.md), vea [Proxy de datos con análisis de entrada de lápiz.](data-proxy-with-ink-analysis.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -92,13 +92,13 @@ Para obtener más información sobre cómo sincronizar los datos de la aplicaci�
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: Analyze (método)**](iinkanalyzer-analyze.md)
+[**IInkAnalyzer::Analyze (Método)**](iinkanalyzer-analyze.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: BackgroundAnalyze (método)**](iinkanalyzer-backgroundanalyze.md)
+[**IInkAnalyzer::BackgroundAnalyze (Método)**](iinkanalyzer-backgroundanalyze.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: UpdateStrokesData (método)**](iinkanalyzer-updatestrokesdata.md)
+[**IInkAnalyzer::UpdateStrokesData (Método)**](iinkanalyzer-updatestrokesdata.md)
 </dt> <dt>
 
 [**IContextNode::CreatePartiallyPopulatedSubNode**](icontextnode-createpartiallypopulatedsubnode.md)
@@ -107,7 +107,7 @@ Para obtener más información sobre cómo sincronizar los datos de la aplicaci�
 [**IContextNode::GetPartiallyPopulated**](icontextnode-getpartiallypopulated.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

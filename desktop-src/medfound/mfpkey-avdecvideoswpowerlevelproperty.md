@@ -17,7 +17,7 @@ Especifica el nivel de energía del descodificador.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
+Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -29,11 +29,11 @@ Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/
 
 ## <a name="remarks"></a>Comentarios
 
-Esta propiedad debe establecerse en uno de los valores siguientes.
+Esta propiedad debe establecerse en uno de los siguientes valores.
 
 
 
-| Valor | Significado                                                             |
+| Value | Significado                                                             |
 |-------|---------------------------------------------------------------------|
 | 0     | El descodificador usa un nivel de energía optimizado para la duración de la batería.  |
 | 50    | El descodificador usa un nivel de energía equilibrado.                            |
@@ -55,7 +55,7 @@ Esta propiedad debe establecerse en uno de los valores siguientes.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

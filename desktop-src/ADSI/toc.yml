@@ -15,7 +15,7 @@
               href: setting-up-visual-basic-for-adsi-development.md
             - name: Configuración de Visual C++ 6.0 para el desarrollo adsi
               href: setting-up-c---for-adsi-development.md
-        - name: Acceso Active Directory mediante Visual Basic
+        - name: Acceso a Active Directory mediante Visual Basic
           href: accessing-active-directory-using-visual-basic.md
           items:
             - name: 'Introducción al tutorial: ADSI con Visual Basic'
@@ -92,7 +92,7 @@
               href: active-directory-service-interfaces-objects.md
             - name: Espacios de nombres
               href: namespaces.md
-            - name: Active Directory proveedor de interfaces de servicio
+            - name: Active Directory de interfaces de servicio
               href: active-directory-service-interfaces-provider.md
             - name: Modelo de esquema ADSI
               href: adsi-schema-model.md
@@ -219,7 +219,7 @@
                 - name: ¿Qué hace que una consulta sea rápida?
                   href: what-makes-a-fast-query.md
                   items:
-                    - name: Indización
+                    - name: Indexación
                       href: indexing.md
                     - name: objectCategory frente a objectClass
                       href: objectcategory-vs--objectclass.md
@@ -335,7 +335,7 @@
         - name: Modelo de seguridad ADSI
           href: adsi-security-model.md
           items:
-            - name: Autenticación
+            - name: Authentication
               href: authentication.md
               items:
                 - name: Problemas de autenticación de ADSI con ASP
@@ -365,11 +365,11 @@
             - name: Compatibilidad con enlaces en tiempo de tarde
               href: late-binding-support.md
               items:
-                - name: 'Enlace en tiempo de tarde: ¿Qué está ocurriendo en primer lugar?'
+                - name: 'Enlace en tiempo de tarde: ¿Qué está ocurriendo en el pasado?'
                   href: late-binding--whatampaposs-happening-under-the-hood.md
                 - name: Enlace en tiempo de tarde frente a acceso de Vtable en el modelo de extensión ADSI
                   href: late-binding-vs--vtable-access-in-the-adsi-extension-model.md
-            - name: Interfaz IADsExtension
+            - name: IADsExtension (Interfaz)
               href: iadsextension-interface.md
               items:
                 - name: Uso de IADsExtension
@@ -684,14 +684,14 @@
               href: alphabetical-listing-of-adsi-interfaces.md
             - name: Métodos de propiedad de interfaz
               href: interface-property-methods.md
-            - name: Implementación de interfaz de proveedores de sistemas
+            - name: Implementación de la interfaz de los proveedores del sistema
               href: interface-implementation-of-system-providers.md
             - name: Objetos e interfaces ADSI
               href: adsi-objects-and-interfaces.md
               items:
                 - name: Modelo de objetos ADSI para proveedores LDAP
                   href: adsi-object-model-for-ldap-providers.md
-                - name: Modelo de objetos ADSI para proveedores WinNT
+                - name: Modelo de objetos ADSI para proveedores winNT
                   href: adsi-object-model-for-winnt-providers.md
             - name: Interfaces básicas
               href: core-interfaces.md
@@ -937,7 +937,7 @@
                       href: /windows/desktop/api/Iads/nf-iads-iadsprintqueueoperations-pause
                     - name: 'IADsPrintQueueOperations::P rintJobs'
                       href: /windows/desktop/api/Iads/nf-iads-iadsprintqueueoperations-printjobs
-                    - name: 'IADsPrintQueueOperations::P:P'
+                    - name: 'IADsPrintQueueOperations::P lúy'
                       href: /windows/desktop/api/Iads/nf-iads-iadsprintqueueoperations-purge
                     - name: 'IADsPrintQueueOperations::Resume'
                       href: /windows/desktop/api/Iads/nf-iads-iadsprintqueueoperations-resume
@@ -1005,7 +1005,7 @@
                       href: /windows/desktop/api/Iads/nf-iads-iadssecurityutility-getsecuritydescriptor
                     - name: 'IADsSecurityUtility::SetSecurityDescriptor'
                       href: /windows/desktop/api/Iads/nf-iads-iadssecurityutility-setsecuritydescriptor
-            - name: Interfaces que no son de Automatización
+            - name: Interfaces que no son de automatización
               href: non-automation-interfaces.md
               items:
                 - name: IDirectoryObject
@@ -1233,11 +1233,11 @@
                 - name: Objeto de usuario LDAP
                   href: ldap-user-object.md
                   items:
-                    - name: Asignación entre IADs Propiedades de usuario y Active Directory atributos
+                    - name: Asignación entre propiedades IADsUser y Active Directory atributos
                       href: mapping-between-iadsuser-properties-and-active-directory-attributes.md
                     - name: Creación de usuarios con el proveedor LDAP ADSI
                       href: user-creation-with-the-adsi-ldap-provider.md
-                    - name: Establecimiento y cambio de contraseñas de usuario con el proveedor LDAP
+                    - name: Establecer y cambiar contraseñas de usuario con el proveedor LDAP
                       href: setting-user-passwords-for-ldap-providers.md
                     - name: Ejemplos de administración de usuarios en Active Directory
                       href: examples-of-user-management-in-active-directory.md
@@ -1248,7 +1248,7 @@
                           href: account-expiration.md
                         - name: Bloqueo de cuenta (proveedor LDAP)
                           href: ldap-account-lockout.md
-                        - name: Contraseña nunca expira (proveedor LDAP)
+                        - name: La contraseña nunca expira (proveedor LDAP)
                           href: password-never-expires.md
                         - name: El usuario no puede cambiar la contraseña (proveedor LDAP)
                           href: user-cannot-change-password.md
@@ -1266,14 +1266,14 @@
                   href: winnt-adspath.md
                 - name: Objetos ADSI de WinNT
                   href: adsi-objects-of-winnt.md
-                - name: Esquema de WinNT
+                - name: Esquema winNT
                   href: winnt-schema.md
                   items:
                     - name: Jerarquía de clases de objetos WinNT
                       href: winnt-object-class-hierarchy.md
                     - name: Propiedades obligatorias y opcionales del esquema WinNT
                       href: winnt-schemaampaposs-mandatory-and-optional-properties.md
-                - name: Objeto de usuario WinNT
+                - name: Objeto de usuario winNT
                   href: winnt-user-object.md
                   items:
                     - name: Propiedades IADsUser no admitidas
@@ -1283,15 +1283,15 @@
                     - name: Ejemplos de administración de cuentas de usuario de WinNT
                       href: winnt-user-account-management-examples.md
                       items:
-                        - name: Cuenta deshabilitada (proveedor WinNT)
+                        - name: Cuenta deshabilitada (proveedor winNT)
                           href: winnt-account-disabled.md
-                        - name: Expiración de la cuenta (proveedor WinNT)
+                        - name: Expiración de la cuenta (proveedor winNT)
                           href: winnt-account-expiration.md
-                        - name: Bloqueo de cuenta (proveedor WinNT)
+                        - name: Bloqueo de cuenta (proveedor winNT)
                           href: winnt-account-lockout.md
                         - name: SID de objeto (proveedor winNT)
                           href: object-sid.md
-                        - name: Contraseña nunca expira (proveedor WinNT)
+                        - name: La contraseña nunca expira (proveedor winNT)
                           href: winnt-password-never-expires.md
                         - name: El usuario no puede cambiar la contraseña (proveedor winNT)
                           href: winnt-user-cannot-change-password.md
@@ -1300,7 +1300,7 @@
                               href: reading-user-cannot-change-password-winnt-provider.md
                             - name: Modificar el usuario no puede cambiar la contraseña (proveedor winNT)
                               href: modifying-user-cannot-change-password-winnt-provider.md
-                        - name: El usuario debe cambiar la contraseña en el siguiente inicio de sesión (proveedor WinNT)
+                        - name: El usuario debe cambiar la contraseña en el siguiente inicio de sesión (proveedor winNT)
                           href: winnt-user-must-change-password-at-next-logon.md
             - name: Enrutador ADSI
               href: adsi-router.md

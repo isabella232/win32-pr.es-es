@@ -1,7 +1,7 @@
 ---
 description: Especifica si el DSP de captura de voz realiza el preprocesamiento de la matriz de micrófonos.
 ms.assetid: 0f197165-e6e5-456b-9615-1edc8ada7bb5
-title: MFPKEY_WMAAECMA_FEATR_MICARR_PREPROC (Propiedad, Wmcodecdsp.h)
+title: MFPKEY_WMAAECMA_FEATR_MICARR_PREPROC propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: ebbba5faeb1a1e70feb1ef6182d3ac2a397a52c4a56f27e767be93f4a3fff773
@@ -11,13 +11,13 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117873019"
 ---
-# <a name="mfpkey_wmaaecma_featr_micarr_preproc-property"></a>Propiedad PREPROC MICARR DE MFPKEY \_ WMAAECMA \_ \_ \_ FEATR
+# <a name="mfpkey_wmaaecma_featr_micarr_preproc-property"></a>Propiedad MFPKEY \_ WMAAECMA \_ FEATR \_ MICARR \_ PREPROC
 
 Especifica si el DSP de captura de voz realiza el preprocesamiento de la matriz de micrófonos.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
+Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -39,7 +39,7 @@ Esta propiedad puede tener los siguientes valores.
 
 
 
-| Valor          | Descripción            |
+| Value          | Descripción            |
 |----------------|------------------------|
 | VARIANT \_ FALSE | Deshabilite el preprocesamiento. |
 | VARIANT \_ TRUE  | Habilite el preprocesamiento.  |
@@ -56,7 +56,7 @@ El DSP usa esta propiedad solo cuando el procesamiento de la matriz de micrófon
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
@@ -64,7 +64,7 @@ El DSP usa esta propiedad solo cuando el procesamiento de la matriz de micrófon
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

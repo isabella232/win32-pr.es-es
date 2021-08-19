@@ -1,6 +1,6 @@
 ---
-title: Estructura de conexiones (NapEnforcementClient. h)
-description: Contiene información sobre la lista de conexiones mantenida por un aplicador.
+title: Estructura de conexiones (NapEnforcementClient.h)
+description: Contiene información sobre la lista de conexiones mantenidas por un ejecutor.
 ms.assetid: 79466099-b567-4268-b9bf-d5e57f4d4900
 keywords:
 - Estructura de conexiones NAP
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e79add74830dfa8ca77fa24a5d3233542a7e553
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f91e2dc404ff50c7edc3ba80a3c772ac6be762c1fe49575d8503a783e83bbef6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800152"
 ---
 # <a name="connections-structure"></a>Estructura de conexiones
 
@@ -28,7 +28,7 @@ ms.locfileid: "103997157"
 
  
 
-La estructura de **conexiones** contiene información sobre la lista de conexiones mantenida por un aplicador.
+La **estructura Connections** contiene información sobre la lista de conexiones mantenidas por un ejecutor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,14 +49,14 @@ typedef struct tagConnections {
 **count**
 </dt> <dd>
 
-El número de conexiones activas que mantiene actualmente un aplicador en el intervalo de 0 (cero) a [**maxConnectionCountPerEnforcer**](nap-type-constants.md).
+Número de conexiones activas mantenidas actualmente por un ejecutor dentro del intervalo de 0 (cero) a [**maxConnectionCountPerEnforcer**](nap-type-constants.md).
 
 </dd> <dt>
 
 **connections**
 </dt> <dd>
 
-Puntero COM a una lista de interfaces [**INapEnforcementClientConnection**](inapenforcementclientconnection.md) que representan las conexiones de cliente.
+Puntero COM a una lista de interfaces [**INapEnforcementClientConnection**](inapenforcementclientconnection.md) que representan conexiones de cliente.
 
 </dd> </dl>
 
@@ -66,10 +66,10 @@ Puntero COM a una lista de interfaces [**INapEnforcementClientConnection**](inap
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                |
-| Encabezado<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
+| Header<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Puntero COM a una lista de interfaces [**INapEnforcementClientConnection**](inap
 [Referencia de NAP](nap-reference.md)
 </dt> <dt>
 
-[Estructuras de NAP](nap-structures.md)
+[Estructuras nap](nap-structures.md)
 </dt> <dt>
 
 [**INapEnforcementClientConnection**](inapenforcementclientconnection.md)

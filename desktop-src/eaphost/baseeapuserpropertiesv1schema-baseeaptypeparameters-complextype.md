@@ -1,9 +1,9 @@
 ---
-title: 'Tipo complejo de BaseEapTypeParameters: propiedades de usuario'
+title: 'Tipo complejo BaseEapTypeParameters: propiedades de usuario'
 description: Es un elemento base del elemento específico del método que aparece en el elemento derivado del esquema baseeapuserpropertiesv1.
 ms.assetid: ef67eec4-ecb2-4e1c-8d48-859ca7a4607b
 keywords:
-- Tipo complejo BaseEapTypeParameters EAPHost
+- Tipo complejo EAPHost de BaseEapTypeParameters
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 076e409a75202f0dd727ced0481dd3d66212eaa5
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 1425e25ac0d426903239ff39e2a36b6dd59bd9753ff95ad533cfd38cf9468bc6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104157276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086753"
 ---
-# <a name="baseeaptypeparameters-complex-type---user-properties"></a>Tipo complejo de BaseEapTypeParameters: propiedades de usuario
+# <a name="baseeaptypeparameters-complex-type---user-properties"></a>Tipo complejo BaseEapTypeParameters: propiedades de usuario
 
-El tipo complejo **BaseEapTypeParameters** es un elemento base del elemento específico del método que aparece en el elemento derivado del [esquema baseeapuserpropertiesv1](baseeapuserpropertiesv1schema-schema.md).
+El **tipo complejo BaseEapTypeParameters** es un elemento base del elemento específico del método que aparece en el elemento derivado del [esquema baseeapuserpropertiesv1](baseeapuserpropertiesv1schema-schema.md).
 
 ``` syntax
 <xs:complexType name="BaseEapTypeParameters"
@@ -31,9 +31,9 @@ El tipo complejo **BaseEapTypeParameters** es un elemento base del elemento espe
  />
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**BaseEapTypeParameters** es un elemento abstracto. Un elemento derivado de **BaseEapTypeParameters** debe usarse en documentos de instancia.
+**BaseEapTypeParameters** es un elemento abstracto. Se debe usar un elemento derivado **de BaseEapTypeParameters** en documentos de instancia.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,8 +41,8 @@ El tipo complejo **BaseEapTypeParameters** es un elemento base del elemento espe
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -53,7 +53,7 @@ El tipo complejo **BaseEapTypeParameters** es un elemento base del elemento espe
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema baseeapuserpropertiesv1](baseeapuserpropertiesv1schema-schema.md)
+[esquema baseeapuserpropertiesv1](baseeapuserpropertiesv1schema-schema.md)
 </dt> </dl>
 
  

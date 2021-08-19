@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 11be9da24be7fc9a03bab8e761e55a601715bd75
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 47d46f2472bf9c055814ed575584a087dc5922dc104fcbb3a49b2a2b2a93a958
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731894"
 ---
 # <a name="d3dxcreatevolumetexturefromfileex-function"></a>Función D3DXCreateVolumeTextureFromFileEx
 
@@ -104,7 +104,7 @@ Profundidad, en píxeles. Si este valor es cero o D3DX \_ DEFAULT, las dimension
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de niveles de mip solicitados. Si este valor es cero o D3DX DEFAULT, se crea una \_ cadena de asignación mip completa.
+Número de niveles mip solicitados. Si este valor es cero o D3DX DEFAULT, se crea una \_ cadena de asignación mipmap completa.
 
 </dd> <dt>
 
@@ -167,7 +167,7 @@ Tipo: **[ **D3DCOLOR**](d3dcolor.md)**
 
 Tipo: **[ **D3DXIMAGE \_ INFO**](d3dximage-info.md)\***
 
-Puntero a una [**estructura \_ INFO D3DXIMAGE**](d3dximage-info.md) que se va a rellenar con una descripción de los datos en el archivo de imagen de origen o **NULL.**
+Puntero a una [**estructura \_ INFO D3DXIMAGE**](d3dximage-info.md) que se va a rellenar con una descripción de los datos del archivo de imagen de origen, o **NULL.**
 
 </dd> <dt>
 
@@ -176,7 +176,7 @@ Puntero a una [**estructura \_ INFO D3DXIMAGE**](d3dximage-info.md) que se va a 
 
 Tipo: **[ **PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry)\***
 
-Puntero a una [**estructura PALETTEENTRY,**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) que representa una paleta de 256 colores que se rellenará, o **NULL.**
+Puntero a una [**estructura PALETTEENTRY,**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) que representa una paleta de 256 colores para rellenar, o **NULL.**
 
 </dd> <dt>
 
@@ -216,7 +216,7 @@ Al omitir los niveles de asignación mip al cargar un archivo .dds, use la macro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

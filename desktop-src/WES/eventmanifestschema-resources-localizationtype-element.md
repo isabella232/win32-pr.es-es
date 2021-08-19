@@ -1,9 +1,9 @@
 ---
-title: Elemento Resources (LocalizationType)
+title: elemento resources (LocalizationType)
 description: Define un grupo de tablas de cadenas que contienen las cadenas localizadas a las que se hace referencia en el manifiesto.
 ms.assetid: b984894a-0ae8-49be-af93-3acdcce53ee9
 keywords:
-- elemento Resources EventLog
+- elemento resources EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 55bdfe504da08c754c18b790e282eba6787c3ee3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3075b2b1741079f80c34e5acf9783b13b74b6973c1d16f2cd323890bcea5d0d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105695849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120582"
 ---
-# <a name="resources-localizationtype-element"></a>Elemento Resources (LocalizationType)
+# <a name="resources-localizationtype-element"></a>elemento resources (LocalizationType)
 
 Define un grupo de tablas de cadenas que contienen las cadenas localizadas a las que se hace referencia en el manifiesto.
 
@@ -49,7 +49,7 @@ Define un grupo de tablas de cadenas que contienen las cadenas localizadas a las
 </xs:element>
 ```
 
-El elemento **Resources** se define mediante el tipo complejo de [**LocalizationType**](eventmanifestschema-localizationtype-complextype.md) .
+El **elemento resources** se define mediante el tipo complejo [**LocalizationType.**](eventmanifestschema-localizationtype-complextype.md)
 
 ## <a name="child-elements"></a>Elementos secundarios
 
@@ -57,7 +57,7 @@ El elemento **Resources** se define mediante el tipo complejo de [**Localization
 
 | Elemento                                                                  | Tipo                                                                       | Descripción                                                                             |
 |--------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [**stringTable**](eventmanifestschema-stringtable-resources-element.md) | [**StringTableType**](eventmanifestschema-stringtabletype-complextype.md) | Define una lista de cadenas traducidas a las que se puede hacer referencia en el manifiesto.<br/> |
+| [**stringTable**](eventmanifestschema-stringtable-resources-element.md) | [**StringTableType**](eventmanifestschema-stringtabletype-complextype.md) | Define una lista de cadenas localizadas a las que puede hacer referencia en el manifiesto.<br/> |
 
 
 
@@ -67,7 +67,7 @@ El elemento **Resources** se define mediante el tipo complejo de [**Localization
 
 | Nombre    | Tipo   | Descripción                                                                                                                                            |
 |---------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| culture | string | Un nombre de idioma que identifica la referencia cultural de las cadenas localizadas en la tabla de cadenas. Por ejemplo, "en-US" para inglés (Estados Unidos).<br/> |
+| referencia cultural | string | Nombre de idioma que identifica la referencia cultural de las cadenas localizadas en la tabla de cadenas. Por ejemplo, "en-US" para inglés (Estados Unidos).<br/> |
 
 
 
@@ -77,8 +77,8 @@ El elemento **Resources** se define mediante el tipo complejo de [**Localization
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

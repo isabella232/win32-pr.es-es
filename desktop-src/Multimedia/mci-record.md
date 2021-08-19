@@ -23,7 +23,7 @@ ms.locfileid: "117803456"
 ---
 # <a name="mci_record-command"></a>Comando MCI \_ RECORD
 
-El [**comando MCI \_ RECORD**](mci-record-parms.md) inicia la grabación desde la posición actual o desde una ubicación especificada a otra ubicación especificada. Los dispositivos VCR y de audio de forma de onda reconocen este comando. Aunque los dispositivos de vídeo digital y los secuenciadores MIDI también reconocen este comando, los controladores MCIAVI y MCISEQ no lo implementan.
+El [**comando MCI \_ RECORD**](mci-record-parms.md) inicia la grabación desde la posición actual o desde una ubicación especificada a otra ubicación especificada. Los dispositivos VCR y de audio de forma de onda reconocen este comando. Aunque los dispositivos de vídeo digital y los secuenciadores DE MIDI también reconocen este comando, los controladores MCIAVI y MCISEQ no lo implementan.
 
 Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
@@ -156,13 +156,13 @@ Busque el dispositivo al principio del medio, comience a grabar vídeo y audio e
 
 </dd> </dl>
 
-En el caso de los dispositivos *VCR, lpRecord* apunta a una estructura [**MCI \_ VCR \_ RECORD \_ PARMS.**](mci-vcr-record-parms.md)
+En el caso de los dispositivos *VCR, lpRecord* apunta a una estructura [**\_ MCI VCR \_ RECORD \_ PARMS.**](mci-vcr-record-parms.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -170,7 +170,7 @@ En el caso de los dispositivos *VCR, lpRecord* apunta a una estructura [**MCI \_
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

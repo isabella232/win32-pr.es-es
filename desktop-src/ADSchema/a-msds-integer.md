@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Integer
+title: Atributo ms-DS-Integer
 description: Atributo para almacenar un entero.
 ms.assetid: a5a5dd7c-a070-45c4-a6ab-c931d2fb68ff
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-Integer
-- Esquema de AD de atributo msDS-Integer
+- Esquema de AD del atributo ms-DS-Integer
+- Esquema de AD del atributo msDS-Integer
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad7fc7bb443302932b5d08e57be6a36bec19f729
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e23ddffb2405f882a5aa9c7d2ef18056ee4c75697b49a42c4c1036cc42fc444b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104494044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118014476"
 ---
-# <a name="ms-ds-integer-attribute"></a>atributo MS-DS-Integer
+# <a name="ms-ds-integer-attribute"></a>Atributo ms-DS-Integer
 
 Atributo para almacenar un entero.
 
@@ -29,14 +29,14 @@ Atributo para almacenar un entero.
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | MS-DS-entero                        |
-| Nombre para mostrar de LDAP | msDS-entero                         |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DS-Integer                        |
+| Ldap-Display-Name | msDS-Integer                         |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1835              |
-| System-ID-GUID    | 7bc64cea-c04e-4318-B102-3e0729371a65 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 7bc64 csc-c04e-4318-b102-3e0729371a65 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -54,18 +54,18 @@ Atributo para almacenar un entero.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
-| System-Only            | False                                                                                                                      |
-| Tiene un único valor       | False                                                                                                                      |
-| Está indexado             | False                                                                                                                      |
-| En el catálogo global      | False                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                               |
+| System-Only            | Falso                                                                                                                      |
+| Es de un solo valor       | Falso                                                                                                                      |
+| Está indexado             | Falso                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Clases usadas en        | [**MS-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**MS-DS-app-data**](c-msds-appdata.md)<br/> |
+| Clases usadas en        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Atributo para almacenar un entero.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
-| System-Only            | False                                                                                                                      |
-| Tiene un único valor       | False                                                                                                                      |
-| Está indexado             | False                                                                                                                      |
-| En el catálogo global      | False                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                               |
+| System-Only            | Falso                                                                                                                      |
+| Es de un solo valor       | Falso                                                                                                                      |
+| Está indexado             | Falso                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Clases usadas en        | [**MS-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**MS-DS-app-data**](c-msds-appdata.md)<br/> |
+| Clases usadas en        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Atributo para almacenar un entero.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
-| System-Only            | False                                                                                                                      |
-| Tiene un único valor       | False                                                                                                                      |
-| Está indexado             | False                                                                                                                      |
-| En el catálogo global      | False                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                               |
+| System-Only            | Falso                                                                                                                      |
+| Es de un solo valor       | Falso                                                                                                                      |
+| Está indexado             | Falso                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Clases usadas en        | [**MS-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**MS-DS-app-data**](c-msds-appdata.md)<br/> |
+| Clases usadas en        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -117,18 +117,18 @@ Atributo para almacenar un entero.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
-| System-Only            | False                                                                                                                      |
-| Tiene un único valor       | False                                                                                                                      |
-| Está indexado             | False                                                                                                                      |
-| En el catálogo global      | False                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                               |
+| System-Only            | Falso                                                                                                                      |
+| Es de un solo valor       | Falso                                                                                                                      |
+| Está indexado             | Falso                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Clases usadas en        | [**MS-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**MS-DS-app-data**](c-msds-appdata.md)<br/> |
+| Clases usadas en        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Atributo para almacenar un entero.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
-| System-Only            | False                                                                                                                      |
-| Tiene un único valor       | False                                                                                                                      |
-| Está indexado             | False                                                                                                                      |
-| En el catálogo global      | False                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                               |
+| System-Only            | Falso                                                                                                                      |
+| Es de un solo valor       | Falso                                                                                                                      |
+| Está indexado             | Falso                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Clases usadas en        | [**MS-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**MS-DS-app-data**](c-msds-appdata.md)<br/> |
+| Clases usadas en        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 

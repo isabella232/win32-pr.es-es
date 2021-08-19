@@ -1,5 +1,5 @@
 ---
-description: Especifica los parámetros \# &0034;leaky bucket&0034; para una secuencia en un receptor \# de medios de ASF.
+description: Especifica los parámetros &\# 0034;leaky bucket&0034; para una secuencia en un receptor \# de medios de ASF.
 ms.assetid: b01e59b6-0a7f-4125-867c-532385a27c15
 title: MFPKEY_ASFSTREAMSINK_CORRECTED_LEAKYBUCKET propiedad (Mfidl.h)
 ms.topic: reference
@@ -11,9 +11,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117874097"
 ---
-# <a name="mfpkey_asfstreamsink_corrected_leakybucket-property"></a>Propiedad DE MFPKEY \_ ASFSTREAMSINK \_ \_ CORREGIDA LEAKYBUCKET
+# <a name="mfpkey_asfstreamsink_corrected_leakybucket-property"></a>Propiedad \_ \_ LEAKYBUCKET CORREGIDA DE ASFSTREAMSINK \_ de MFPKEY
 
-Especifica los parámetros del "cubo de fugas" (consulte Comentarios) para una secuencia en un receptor de medios de ASF.
+Especifica los parámetros de "cubo de pérdida" (consulte Comentarios) para una secuencia en un receptor de medios de ASF.
 
 
 
@@ -33,7 +33,7 @@ VT \_ VECTOR \| VT \_ UI4
 
 ## <a name="remarks"></a>Comentarios
 
-Una aplicación puede establecer esta propiedad en una secuencia del receptor de medios de ASF una vez negociado el tipo de medio para la secuencia. Use esta propiedad para especificar la ventana de búfer real que usará Windows códec Multimedia. Puede obtener esta información del códec mediante la interfaz **IWMCodecLeakyBucket,** que se documenta en el SDK Windows Media Format.
+Una aplicación puede establecer esta propiedad en una secuencia del receptor de medios de ASF después de que se negocie el tipo de medio para la secuencia. Use esta propiedad para especificar la ventana de búfer real que usará Windows códec Multimedia. Puede obtener esta información del códec mediante la interfaz **IWMCodecLeakyBucket,** que se documenta en el SDK Windows Media Format.
 
 El valor de esta propiedad es una matriz de tres **valores DWORD** en el orden siguiente:
 
@@ -45,7 +45,7 @@ El valor de esta propiedad es una matriz de tres **valores DWORD** en el orden s
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
@@ -53,7 +53,7 @@ El valor de esta propiedad es una matriz de tres **valores DWORD** en el orden s
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

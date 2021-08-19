@@ -1,7 +1,7 @@
 ---
-description: El método SendNotifyWindow notifica el filtro de nivel superior del identificador de la ventana de vídeo.
+description: El método SendNotifyWindow notifica al filtro ascendente del identificador de ventana de vídeo.
 ms.assetid: f46390b1-d03a-4520-8c1d-b3f870d3bb0b
-title: Método CBaseRenderer. SendNotifyWindow (Renbase. h)
+title: Método CBaseRenderer.SendNotifyWindow (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 727ab16604df5b908085208e1d127e5dffad92fc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2b4956ad2b20040b0d22903d2ffaa2c7b460af9250fe057d106db545173d53a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118157502"
 ---
-# <a name="cbaserenderersendnotifywindow-method"></a>CBaseRenderer. SendNotifyWindow, método
+# <a name="cbaserenderersendnotifywindow-method"></a>Método CBaseRenderer.SendNotifyWindow
 
-El `SendNotifyWindow` método notifica el filtro de nivel superior del identificador de la ventana de vídeo.
+El `SendNotifyWindow` método notifica al filtro ascendente del identificador de la ventana de vídeo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,14 +46,14 @@ void SendNotifyWindow(
 *pPin* 
 </dt> <dd>
 
-Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN de salida del filtro de nivel superior.
+Puntero a la [**interfaz IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del pin de salida del filtro ascendente.
 
 </dd> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
-Identificador de la ventana de vídeo o **null**.
+Identificador de la ventana de vídeo o **NULL.**
 
 </dd> </dl>
 
@@ -61,11 +61,11 @@ Identificador de la ventana de vídeo o **null**.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el PIN de salida del filtro de nivel superior admite la interfaz [**IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) , este método lo envía al código de evento de la [**ventana de \_ notificación \_ de EC**](ec-notify-window.md) junto con el identificador de ventana.
+Si el pin de salida del filtro ascendente admite la interfaz [**IMediaEventSink,**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) este método le envía el código de evento [**EC NOTIFY \_ \_ WINDOW**](ec-notify-window.md) junto con el identificador de ventana.
 
-Los representadores de vídeo pueden invalidar sus métodos [**CBaseRenderer:: CompleteConnect**](cbaserenderer-completeconnect.md) para llamar a este método. Proporciona un mecanismo para informar del filtro de nivel superior del identificador de ventana. Si lo hace, invalide también el método [**CBaseRenderer:: BreakConnect**](cbaserenderer-breakconnect.md) y llame a `SendNotifyWindow` con un identificador **nulo** .
+Los representadores de vídeo pueden invalidar sus [**métodos CBaseRenderer::CompleteConnect**](cbaserenderer-completeconnect.md) para llamar a este método. Proporciona un mecanismo para informar al filtro ascendente del identificador de ventana. Si lo hace, invalide también [**el método CBaseRenderer::BreakConnect**](cbaserenderer-breakconnect.md) y llame `SendNotifyWindow` a con un identificador **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,8 +73,8 @@ Los representadores de vídeo pueden invalidar sus métodos [**CBaseRenderer:: C
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -82,7 +82,7 @@ Los representadores de vídeo pueden invalidar sus métodos [**CBaseRenderer:: C
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

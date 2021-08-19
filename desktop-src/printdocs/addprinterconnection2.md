@@ -60,7 +60,7 @@ Puntero a una cadena terminada en null constante que especifica el nombre de la 
 *dwLevel* 
 </dt> <dd>
 
-Versión de la estructura a la que apunta *pConnectionInfo.* Actualmente, solo se define el nivel 1, por lo que el valor de *dwLevel* debe ser 1.
+Versión de la estructura a la que apunta *pConnectionInfo*. Actualmente, solo se define el nivel 1, por lo que el valor de *dwLevel* debe ser 1.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ No se admite la versión ANSI de esta función, **AddPrinterConnection2A,** y de
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

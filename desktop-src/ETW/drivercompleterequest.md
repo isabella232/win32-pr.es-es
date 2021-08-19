@@ -96,7 +96,7 @@ Tipo de acceso: solo lectura
 Calificadores: WmiDataId(3)
 </dt> </dl>
 
-Identificador que identifica de forma única la solicitud. Use este identificador para correlacionar con los demás eventos de controlador, por ejemplo, el [**evento DriverCompleteRequestReturn.**](drivercompleterequestreturn.md)
+Identificador que identifica de forma única la solicitud. Use este identificador para correlacionar con los demás eventos de controlador, por ejemplo, [**el evento DriverCompleteRequestReturn.**](drivercompleterequestreturn.md)
 
 </dd> </dl>
 
@@ -111,7 +111,7 @@ Identificador que identifica de forma única la solicitud. Use este identificado
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

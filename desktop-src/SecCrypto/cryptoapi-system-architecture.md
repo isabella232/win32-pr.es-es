@@ -29,7 +29,7 @@ La arquitectura del sistema CryptoAPI se compone de cinco áreas funcionales pri
 
 ## <a name="certificate-encodedecode-functions"></a>Funciones de codificación/descodificación de certificados
 
--   Funciones usadas para cifrar o descifrar datos. También se incluye compatibilidad con los [*datos hash.*](../secgloss/h-gly.md) Para obtener más información, vea [Funciones de cifrado y descifrado de datos](cryptography-functions.md) y Cifrado y descifrado de [datos](data-encryption-and-decryption.md).
+-   Funciones usadas para cifrar o descifrar datos. También se incluye compatibilidad con los [*datos hash.*](../secgloss/h-gly.md) Para obtener más información, vea [Funciones de cifrado y descifrado de datos](cryptography-functions.md) y Cifrado y descifrado de [datos.](data-encryption-and-decryption.md)
 
 ## <a name="certificate-store-functions"></a>Funciones del almacén de certificados
 

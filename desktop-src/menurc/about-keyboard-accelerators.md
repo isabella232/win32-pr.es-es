@@ -3,10 +3,10 @@ title: Acerca de los aceleradores de teclado
 description: En este tema se deba a los aceleradores de teclado.
 ms.assetid: cbf7619d-289d-40c9-9a06-6ce47026d43f
 keywords:
-- Windows Interfaz de usuario,entrada del usuario
+- Windows Interfaz de usuario,entrada de usuario
 - Windows Interfaz de usuario,aceleradores de teclado
 - entrada de usuario, aceleradores de teclado
-- captura de entrada de usuario, aceleradores de teclado
+- capturar la entrada del usuario, los aceleradores de teclado
 - aceleradores de teclado
 - Aceleradores
 - WM_COMMAND mensaje
@@ -23,12 +23,12 @@ ms.locfileid: "117870741"
 ---
 # <a name="about-keyboard-accelerators"></a>Acerca de los aceleradores de teclado
 
-Los aceleradores están estrechamente relacionados con los menús: ambos proporcionan al usuario acceso al conjunto de comandos de una aplicación. Normalmente, los usuarios se basan en los menús de una aplicación para aprender el conjunto de comandos y, a continuación, cambiar al uso de aceleradores a medida que se vuelven más expertos con la aplicación. Los aceleradores proporcionan un acceso más rápido y directo a los comandos que los menús. Como mínimo, una aplicación debe proporcionar aceleradores para los comandos más usados. Aunque los aceleradores suelen generar comandos que existen como elementos de menú, también pueden generar comandos que no tienen elementos de menú equivalentes.
+Los aceleradores están estrechamente relacionados con los menús: ambos proporcionan al usuario acceso al conjunto de comandos de una aplicación. Normalmente, los usuarios se basan en los menús de una aplicación para aprender el conjunto de comandos y, a continuación, cambiar al uso de aceleradores a medida que son más expertos con la aplicación. Los aceleradores proporcionan un acceso más rápido y directo a los comandos que los menús. Como mínimo, una aplicación debe proporcionar aceleradores para los comandos más usados. Aunque los aceleradores suelen generar comandos que existen como elementos de menú, también pueden generar comandos que no tienen elementos de menú equivalentes.
 
 En esta sección se tratan los temas siguientes.
 
 -   [Tablas de aceleradores](#accelerator-tables)
--   [Creación de tablas de acelerador](#accelerator-table-creation)
+-   [Creación de tablas de aceleradores](#accelerator-table-creation)
 -   [Asignaciones de pulsaciones de teclas de acelerador](#accelerator-keystroke-assignments)
 -   [Aceleradores y menús](#accelerators-and-menus)
 -   [Estado de la interfaz de usuario](#ui-state)
@@ -41,7 +41,7 @@ Una tabla de aceleradores consta de una matriz de estructuras [**ACCEL,**](/wind
 -   Identificador del acelerador.
 -   Varias marcas. Esto incluye uno que especifica si el sistema va a proporcionar comentarios visuales resaltando el elemento de menú correspondiente, si existe, cuando se usa el acelerador.
 
-Para procesar pulsaciones de teclas de acelerador para un subproceso especificado, el desarrollador debe llamar a la función [**TranslateAccelerator**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) en el bucle de mensajes asociado a la cola de mensajes del subproceso. La **función TranslateAccelerator supervisa** la entrada del teclado en la cola de mensajes, comprobando las combinaciones de teclas que coinciden con una entrada de la tabla de aceleradores. Cuando **TranslateAccelerator** encuentra una coincidencia, traduce la entrada de teclado (es decir, los mensajes [**\_ KEYUP**](/windows/desktop/inputdev/wm-keyup) y [**WM \_ KEYDOWN**](/windows/desktop/inputdev/wm-keydown) de WM) en un mensaje [**WM \_ COMMAND**](wm-command.md) o [**WM \_ SYSCOMMAND**](wm-syscommand.md) y, a continuación, envía el mensaje al procedimiento de ventana de la ventana especificada. En la ilustración siguiente se muestra cómo se procesan los aceleradores.
+Para procesar las pulsaciones de tecla del acelerador para un subproceso especificado, el desarrollador debe llamar a la función [**TranslateAccelerator**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) en el bucle de mensajes asociado a la cola de mensajes del subproceso. La **función TranslateAccelerator supervisa** la entrada del teclado en la cola de mensajes, comprobando las combinaciones de teclas que coinciden con una entrada de la tabla de aceleradores. Cuando **TranslateAccelerator** encuentra una coincidencia, convierte la entrada de teclado (es decir, los mensajes [**WM \_ KEYUP**](/windows/desktop/inputdev/wm-keyup) y [**WM \_ KEYDOWN)**](/windows/desktop/inputdev/wm-keydown) en un mensaje [**WM \_ COMMAND**](wm-command.md) o [**WM \_ SYSCOMMAND**](wm-syscommand.md) y, a continuación, envía el mensaje al procedimiento de ventana de la ventana especificada. En la ilustración siguiente se muestra cómo se procesan los aceleradores.
 
 ![modelo de procesamiento del acelerador de teclado](images/cskac-01.png)
 
@@ -49,11 +49,11 @@ El [**mensaje \_ WM COMMAND**](wm-command.md) incluye el identificador del acele
 
 Las tablas de aceleradores existen en dos niveles diferentes. El sistema mantiene una única tabla de aceleradores para todo el sistema que se aplica a todas las aplicaciones. Una aplicación no puede modificar la tabla de aceleradores del sistema. Para obtener una descripción de los aceleradores proporcionados por la tabla de aceleradores del sistema, vea [Accelerator Keystroke Assignments](#accelerator-keystroke-assignments).
 
-El sistema también mantiene tablas de aceleradores para cada aplicación. Una aplicación puede definir cualquier número de tablas de aceleradores para su uso con sus propias ventanas. Un identificador único de 32 bits **(HACCEL)** identifica cada tabla. Sin embargo, solo una tabla de aceleradores puede estar activa a la vez para un subproceso especificado. El identificador de la tabla de aceleradores que se pasa a [**la función TranslateAccelerator**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) determina qué tabla de aceleradores está activa para un subproceso. La tabla de aceleradores activa se puede cambiar en cualquier momento pasando un identificador de tabla de aceleradores diferente a **TranslateAccelerator.**
+El sistema también mantiene tablas de aceleradores para cada aplicación. Una aplicación puede definir cualquier número de tablas de aceleradores para su uso con sus propias ventanas. Un identificador único de 32 bits **(HACCEL)** identifica cada tabla. Sin embargo, solo una tabla de aceleradores puede estar activa a la vez para un subproceso especificado. El identificador de la tabla de aceleradores que se pasa a [**la función TranslateAccelerator**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) determina qué tabla de aceleradores está activa para un subproceso. La tabla de aceleradores activa se puede cambiar en cualquier momento pasando un identificador de tabla de aceleradores diferente a **TranslateAccelerator**.
 
 ## <a name="accelerator-table-creation"></a>Accelerator-Table creación
 
-Se requieren varios pasos para crear una tabla de aceleradores para una aplicación. En primer lugar, se usa un compilador de recursos para crear recursos de tabla de aceleradores y agregarlos al archivo ejecutable de la aplicación. En tiempo de ejecución, la [**función LoadAccelerators**](/windows/desktop/api/Winuser/nf-winuser-loadacceleratorsa) se usa para cargar la tabla de aceleradores en la memoria y recuperar el identificador en la tabla de aceleradores. Este identificador se pasa a la [**función TranslateAccelerator**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) para activar la tabla de aceleradores.
+Se requieren varios pasos para crear una tabla de aceleradores para una aplicación. En primer lugar, se usa un compilador de recursos para crear recursos de la tabla de aceleradores y agregarlos al archivo ejecutable de la aplicación. En tiempo de ejecución, la [**función LoadAccelerators**](/windows/desktop/api/Winuser/nf-winuser-loadacceleratorsa) se usa para cargar la tabla de aceleradores en la memoria y recuperar el identificador en la tabla de aceleradores. Este identificador se pasa a la [**función TranslateAccelerator**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) para activar la tabla de aceleradores.
 
 También se puede crear una tabla de aceleradores para una aplicación en tiempo de ejecución pasando una matriz de estructuras [**ACCEL**](/windows/win32/api/winuser/ns-winuser-accel) a la [**función CreateAcceleratorTable.**](/windows/desktop/api/Winuser/nf-winuser-createacceleratortablea) Este método admite aceleradores definidos por el usuario en la aplicación. Al igual que la función [**LoadAccelerators,**](/windows/desktop/api/Winuser/nf-winuser-loadacceleratorsa) **CreateAcceleratorTable** devuelve un identificador de tabla de aceleradores que se puede pasar a [**TranslateAccelerator**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) para activar la tabla de aceleradores.
 
@@ -67,7 +67,7 @@ Se puede usar un código de caracteres ASCII o un código de clave virtual para 
 
 Normalmente, no es necesario que los aceleradores distinguen mayúsculas de minúsculas, por lo que la mayoría de las aplicaciones usan códigos de clave virtual para los aceleradores en lugar de códigos de caracteres ASCII.
 
-Evite los aceleradores que entren en conflicto con los elementos mnemotécnicos del menú de una aplicación, ya que el acelerador invalida el mnemotécnico, lo que puede confundir al usuario. Para obtener más información sobre los menús mnemotécnicos, vea [Menús](menus.md).
+Evite los aceleradores que entren en conflicto con los elementos mnemotécnicos del menú de una aplicación, ya que el acelerador invalida la tecla mnemotécnica, lo que puede confundir al usuario. Para obtener más información sobre los menús mnemotécnicos, vea [Menús](menus.md).
 
 Si una aplicación define un acelerador que también se define en la tabla del acelerador del sistema, el acelerador definido por la aplicación invalida el acelerador del sistema, pero solo dentro del contexto de la aplicación. Sin embargo, evite esta práctica, ya que impide que el acelerador del sistema realice su rol estándar en la interfaz de usuario. Los aceleradores de todo el sistema se describen en la lista siguiente:
 
@@ -82,7 +82,7 @@ Si una aplicación define un acelerador que también se define en la tabla del a
 | ALT+Barra espaciadora     | Abre el **menú** Ventana de la ventana principal de la aplicación.                                          |
 | ALT+TAB          | Cambia a la siguiente aplicación.                                                                     |
 | CTRL+ESC         | Cambia al **menú** Inicio.                                                                       |
-| CTRL+F4          | Cierra el grupo activo o la ventana del documento.                                                           |
+| CTRL+F4          | Cierra el grupo activo o la ventana de documento.                                                           |
 | F1               | Inicia el archivo de ayuda de la aplicación, si existe alguno.                                                    |
 | PANTALLA DE IMPRESIÓN     | Copia una imagen en la pantalla en el Portapapeles.                                                     |
 | MAYÚS+ALT+TAB    | Cambia a la aplicación anterior. El usuario debe mantener presionada la tecla ALT+MAYÚS mientras presiona TAB. |
@@ -93,9 +93,9 @@ Si una aplicación define un acelerador que también se define en la tabla del a
 
 ## <a name="accelerators-and-menus"></a>Aceleradores y menús
 
-Usar un acelerador es lo mismo que elegir un elemento de menú: ambas acciones hacen que el sistema envíe un mensaje [**WM \_ COMMAND**](wm-command.md) o [**WM \_ SYSCOMMAND**](wm-syscommand.md) al procedimiento de ventana correspondiente. El **mensaje \_ WM COMMAND** incluye un identificador que el procedimiento de ventana examina para determinar el origen del mensaje. Si un acelerador generó el **mensaje \_ WM COMMAND,** el identificador es el del acelerador. De forma similar, si un elemento de menú generó el **mensaje \_ WM COMMAND,** el identificador es el del elemento de menú. Dado que un acelerador proporciona un acceso directo para elegir un comando de un menú, una aplicación normalmente asigna el mismo identificador al acelerador y al elemento de menú correspondiente.
+Usar un acelerador es lo mismo que elegir un elemento de menú: ambas acciones hacen que el sistema envíe un mensaje [**WM \_ COMMAND**](wm-command.md) o [**WM \_ SYSCOMMAND**](wm-syscommand.md) al procedimiento de ventana correspondiente. El **mensaje \_ WM COMMAND** incluye un identificador que el procedimiento de ventana examina para determinar el origen del mensaje. Si un acelerador generó **el mensaje \_ WM COMMAND,** el identificador es el del acelerador. De forma similar, si un elemento de menú generó el **mensaje \_ WM COMMAND,** el identificador es el del elemento de menú. Dado que un acelerador proporciona un acceso directo para elegir un comando de un menú, una aplicación normalmente asigna el mismo identificador al acelerador y al elemento de menú correspondiente.
 
-Una aplicación procesa un mensaje [**WM \_ COMMAND**](wm-command.md) del acelerador exactamente de la misma manera que el mensaje **WM COMMAND del elemento de \_ menú** correspondiente. Sin embargo, el mensaje **\_ WM COMMAND** contiene una marca que especifica si el mensaje se originó en un acelerador o un elemento de menú, en caso de que los aceleradores se deban procesar de forma diferente a sus elementos de menú correspondientes. El [**mensaje \_ SYSCOMMAND de WM**](wm-syscommand.md) no contiene esta marca.
+Una aplicación procesa un mensaje [**WM \_ COMMAND**](wm-command.md) del acelerador exactamente de la misma manera que el mensaje **WM COMMAND del elemento \_ de** menú correspondiente. Sin embargo, el **mensaje WM \_ COMMAND** contiene una marca que especifica si el mensaje se originó en un acelerador o un elemento de menú, en caso de que los aceleradores se deban procesar de forma diferente a sus elementos de menú correspondientes. El [**mensaje \_ SYSCOMMAND de WM**](wm-syscommand.md) no contiene esta marca.
 
 El identificador determina si un acelerador genera un mensaje [**\_ WM COMMAND**](wm-command.md) o WM [**\_ SYSCOMMAND.**](wm-syscommand.md) Si el identificador tiene el mismo valor que un elemento de menú en el menú Sistema, el acelerador genera un **mensaje \_ SYSCOMMAND de WM.** De lo contrario, el acelerador genera un **mensaje \_ WM COMMAND.**
 

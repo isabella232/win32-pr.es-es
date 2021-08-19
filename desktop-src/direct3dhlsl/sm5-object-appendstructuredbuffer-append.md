@@ -1,9 +1,9 @@
 ---
-title: 'AppendStructuredBuffer:: Append (función)'
+title: AppendStructuredBuffer::Append (Función)
 description: Anexa un valor al final del búfer.
 ms.assetid: 667bc6dc-c0d0-419a-9227-99ce30b9cc73
 keywords:
-- Anexar la función HLSL
+- Función append HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 79db73558cb243437560cc77ed66b64f2807fe13
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: 863269c5127915af82b8ef82aa36b60b17941d8627b3f81a789f75618219c773
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "103994791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117725399"
 ---
-# <a name="append-function"></a>Append (función)
+# <a name="append-function"></a>Función Append
 
 Anexa un valor al final del búfer.
 
@@ -28,7 +28,7 @@ Anexa un valor al final del búfer.
 
 ``` syntax
 void Append(
-  in T value
+  in T value
 );
 ```
 
@@ -36,7 +36,7 @@ void Append(
 
 <dl> <dt>
 
-*valor* \[ de de\]
+*value* \[ En\]
 </dt> <dd>
 
 Tipo: **T**
@@ -53,17 +53,17 @@ Ninguno
 
 T puede ser cualquier tipo de datos, incluidas las estructuras.
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -75,9 +75,9 @@ Esta función se admite para los siguientes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

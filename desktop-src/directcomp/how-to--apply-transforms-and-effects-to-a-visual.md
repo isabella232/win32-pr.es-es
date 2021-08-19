@@ -1,30 +1,30 @@
 ---
 title: Cómo aplicar efectos
-description: En este tema se muestra cómo usar Microsoft DirectComposition para aplicar efectos y transformaciones 3D a un visual.
+description: En este tema se muestra cómo usar Microsoft DirectComposition para aplicar efectos y transformaciones 3D a un objeto visual.
 ms.assetid: FE5A0BE9-B84C-4DE1-85D8-375897237F96
 keywords:
-- Cómo aplicar efectos DirectComposition
-- Efectos de DirectComposition, cómo aplicarlos
-- DirectComposition transformaciones 3D
+- cómo aplicar efectos de DirectComposition
+- Efectos de DirectComposition, cómo aplicar
 - Transformaciones 3D de DirectComposition
-- Opacidad DirectComposition
+- Transformaciones 3D de DirectComposition
+- Opacidad de DirectComposition
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 728496309f62aaa0027ca3751a6681384fb83c95
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: f85a3a06fa0650e43f8f1a1be299021cafd233cc59937359dc78bc7b6d25bbb7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104421583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118088819"
 ---
 # <a name="how-to-apply-effects"></a>Cómo aplicar efectos
 
 > [!NOTE]
-> En el caso de las aplicaciones de Windows 10, se recomienda usar las API de Windows. UI. Composition en lugar de DirectComposition. Para obtener más información, consulte [modernice su aplicación de escritorio con el nivel de objetos visuales](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> Para las aplicaciones Windows 10, se recomienda usar Windows.UI.Composition API en lugar de DirectComposition. Para obtener más información, [consulte Modernización de la aplicación de escritorio mediante la capa visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
-En este tema se muestra cómo usar Microsoft DirectComposition para aplicar efectos y transformaciones 3D a un visual. En el ejemplo de este tema se cambia la opacidad de un visual y se gira en torno a un eje vertical situado en el centro del visual. Para obtener más información sobre otros efectos admitidos por DirectComposition, consulte [efectos](effects.md).
+En este tema se muestra cómo usar Microsoft DirectComposition para aplicar efectos y transformaciones 3D a un objeto visual. En el ejemplo de este tema se cambia la opacidad de un objeto visual y se gira alrededor de un eje vertical situado en el centro del objeto visual. Para obtener más información sobre otros efectos compatibles con DirectComposition, vea [Efectos](effects.md).
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
@@ -38,18 +38,18 @@ En este tema se muestra cómo usar Microsoft DirectComposition para aplicar efec
 -   Microsoft Win32
 -   Modelo de objetos componentes (COM)
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="step-1-initialize-directcomposition-objects"></a>Paso 1: inicializar objetos DirectComposition
+### <a name="step-1-initialize-directcomposition-objects"></a>Paso 1: Inicializar objetos DirectComposition
 
 1.  Cree el objeto de dispositivo y el objeto de destino de composición.
-2.  Cree un visual, establezca su contenido y agréguelo al árbol visual.
+2.  Cree un objeto visual, establezca su contenido y agrégrélo al árbol visual.
 
-Para obtener más información, vea [cómo inicializar DirectComposition](initialize-directcomposition.md).
+Para obtener más información, [vea Cómo inicializar DirectComposition](initialize-directcomposition.md).
 
-### <a name="step-2-create-a-3d-rotate-transform-object-an-effect-group-object-and-an-animation-object"></a>Paso 2: crear un objeto de transformación de giro 3D, un objeto de grupo de efectos y un objeto de animación
+### <a name="step-2-create-a-3d-rotate-transform-object-an-effect-group-object-and-an-animation-object"></a>Paso 2: Crear un objeto de transformación de rotación 3D, un objeto de grupo de efectos y un objeto de animación
 
-Use el método [**IDCompositionDevice:: CreateRotateTransform3D**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createrotatetransform3d) para crear un objeto de transformación giro 3D y el método [**CreateEffectGroup**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createeffectgroup) para crear un objeto de grupo de efectos. En este ejemplo también se usa el método [**CreateAnimation**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createanimation) para crear un objeto Animation para animar la transformación giro 3D. Para obtener más información sobre cómo aplicar animaciones, consulte [Cómo aplicar animaciones](how-to--animate-a-visual.md).
+Use el [**método IDCompositionDevice::CreateRotateTransform3D**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createrotatetransform3d) para crear un objeto de transformación de rotación 3D y el método [**CreateEffectGroup**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createeffectgroup) para crear un objeto de grupo de efectos. En este ejemplo también se usa [**el método CreateAnimation**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createanimation) para crear un objeto de animación para animar la transformación de rotación 3D. Para obtener más información sobre cómo aplicar animaciones, vea [Cómo aplicar animaciones.](how-to--animate-a-visual.md)
 
 
 ```C++
@@ -80,11 +80,11 @@ Use el método [**IDCompositionDevice:: CreateRotateTransform3D**](/windows/win3
 
 
 
-### <a name="step-3-define-the-animation-function"></a>Paso 3: definir la función de animación
+### <a name="step-3-define-the-animation-function"></a>Paso 3: Definir la función de animación
 
-Use los métodos del objeto [**IDCompositionAnimation**](/windows/desktop/api/DcompAnimation/nn-dcompanimation-idcompositionanimation) para definir la función de animación.
+Use los métodos del [**objeto IDCompositionAnimation**](/windows/desktop/api/DcompAnimation/nn-dcompanimation-idcompositionanimation) para definir la función de animación.
 
-En el ejemplo siguiente se define una función de animación simple. Cuando se aplica a una propiedad de objeto, la función de animación cambia incrementalmente el valor de la propiedad de 0 al valor del argumento *degrees* en el transcurso de un segundo.
+En el ejemplo siguiente se define una función de animación simple. Cuando se aplica a una propiedad de objeto, la función de animación cambia incrementalmente el valor de propiedad de 0 al valor del argumento *degrees* a lo largo de un segundo.
 
 
 ```C++
@@ -97,13 +97,13 @@ En el ejemplo siguiente se define una función de animación simple. Cuando se a
 
 
 
-### <a name="step-4-set-the-properties-of-the-3d-rotate-transform"></a>Paso 4: establecer las propiedades de la transformación giro 3D
+### <a name="step-4-set-the-properties-of-the-3d-rotate-transform"></a>Paso 4: Establecer las propiedades de la transformación de rotación 3D
 
-1.  Aplique la función de animación a la propiedad Angle de la transformación giro 3D llamando al método [**IDCompositionRotateTransform3D:: SetAngle**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrotatetransform-setangle(idcompositionanimation)) .
-2.  Establezca el eje de giro de la transformación giro 3D mediante una llamada a los métodos [**IDCompositionRotateTransform3D:: SetAxisX**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setaxisx(float)), [**SetAxisY**](/windows/desktop/api/Dcomp/nf-dcomp-setaxisy)y [**SetAxisZ**](/windows/desktop/api/Dcomp/nf-dcomp-setaxisz) .
-3.  Establezca el centro de rotación para la transformación giro 3D Llamando a los métodos [**IDCompositionRotateTransform3D:: SetCenterX**](/previous-versions/windows/desktop/legacy/hh448982(v=vs.85)) y [**SetCenterY**](/previous-versions/windows/desktop/legacy/hh448988(v=vs.85)) .
+1.  Aplique la función de animación a la propiedad Angle de la transformación de rotación 3D llamando al [**método IDCompositionRotateTransform3D::SetAngle.**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrotatetransform-setangle(idcompositionanimation))
+2.  Establezca el eje de rotación para la transformación de rotación 3D llamando a los métodos [**IDCompositionRotateTransform3D::SetAxisX,**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setaxisx(float)) [**SetAxisY**](/windows/desktop/api/Dcomp/nf-dcomp-setaxisy)y [**SetAxisZ.**](/windows/desktop/api/Dcomp/nf-dcomp-setaxisz)
+3.  Establezca el centro de rotación para la transformación de rotación 3D llamando a los métodos [**IDCompositionRotateTransform3D::SetCenterX**](/previous-versions/windows/desktop/legacy/hh448982(v=vs.85)) [**y SetCenterY.**](/previous-versions/windows/desktop/legacy/hh448988(v=vs.85))
 
-En el ejemplo siguiente se configura una transformación giro 3D para girar un visual alrededor de un eje vertical situado en el centro del visual. Los parámetros *m \_ bitmapWidth* y *m \_ bitmapHeight* son el ancho y el alto del mapa de bits, en píxeles.
+En el ejemplo siguiente se configura una transformación de rotación 3D para girar un objeto visual alrededor de un eje vertical situado en el centro del objeto visual. Los *parámetros m \_ bitmapWidth* y *m \_ bitmapHeight* son el ancho y alto del mapa de bits, en píxeles.
 
 
 ```C++
@@ -126,10 +126,10 @@ En el ejemplo siguiente se configura una transformación giro 3D para girar un v
 
 
 
-### <a name="step-5-set-the-properties-of-the-effect-group-object"></a>Paso 5: establecimiento de las propiedades del objeto de grupo de efectos
+### <a name="step-5-set-the-properties-of-the-effect-group-object"></a>Paso 5: Establecer las propiedades del objeto de grupo de efectos
 
-1.  Aplique el objeto de transformación giro 3D a la propiedad Transform3D del objeto de grupo de efectos llamando al método [**IDCompositionEffectGroup:: SetTransform3D**](/windows/win32/api/dcomp/nf-dcomp-idcompositioneffectgroup-settransform3d) .
-2.  Establezca la propiedad Opacity del objeto de grupo de efectos llamando a [**IDCompositionEffectGroup:: SetOpacity**](/windows/win32/api/dcomp/nf-dcomp-idcompositioneffectgroup-setopacity(float)).
+1.  Aplique el objeto de transformación de rotación 3D a la propiedad Transform3D del objeto de grupo de efectos llamando al [**método IDCompositionEffectGroup::SetTransform3D.**](/windows/win32/api/dcomp/nf-dcomp-idcompositioneffectgroup-settransform3d)
+2.  Establezca la propiedad Opacity del objeto de grupo de efectos llamando a [**IDCompositionEffectGroup::SetOpacity**](/windows/win32/api/dcomp/nf-dcomp-idcompositioneffectgroup-setopacity(float)).
 
 
 ```C++
@@ -152,9 +152,9 @@ En el ejemplo siguiente se configura una transformación giro 3D para girar un v
 
 
 
-### <a name="step-6-apply-the-effect-group-object-to-the-effect-property-of-the-visual"></a>Paso 6: aplicar el objeto de grupo de efectos a la propiedad de efecto del objeto visual
+### <a name="step-6-apply-the-effect-group-object-to-the-effect-property-of-the-visual"></a>Paso 6: Aplicar el objeto de grupo de efectos a la propiedad Effect del objeto visual
 
-Llame al método [**IDCompositionVisual:: SetEffect**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-seteffect) para aplicar el objeto de grupo de efectos al objeto visual.
+Llame al [**método IDCompositionVisual::SetEffect**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-seteffect) para aplicar el objeto de grupo de efectos al objeto visual.
 
 
 ```C++
@@ -167,9 +167,9 @@ Llame al método [**IDCompositionVisual:: SetEffect**](/windows/win32/api/dcomp/
 
 
 
-### <a name="step-7-commit-the-composition"></a>Paso 7: confirmar la composición
+### <a name="step-7-commit-the-composition"></a>Paso 7: Confirmar la composición
 
-Llame al método [**IDCompositionDevice:: commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit) para confirmar el lote de comandos en DirectComposition para su procesamiento. La composición resultante aparece en la ventana de destino.
+Llame al [**método IDCompositionDevice::Commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit) para confirmar el lote de comandos en DirectComposition para su procesamiento. La composición resultante aparece en la ventana de destino.
 
 
 ```C++
@@ -182,9 +182,9 @@ Llame al método [**IDCompositionDevice:: commit**](/windows/win32/api/dcomp/nf-
 
 
 
-### <a name="step-8-free-the-directcomposition-objects"></a>Paso 8: liberación de los objetos DirectComposition
+### <a name="step-8-free-the-directcomposition-objects"></a>Paso 8: Liberar los objetos DirectComposition
 
-Asegúrese de liberar el objeto de animación, el objeto de transformación giro 3D y el objeto de grupo de efectos cuando ya no los necesite. En el ejemplo siguiente se llama a la macro [**SafeRelease**](/windows/desktop/medfound/saferelease) definida por la aplicación para liberar los objetos.
+Asegúrese de liberar el objeto de animación, el objeto de transformación de rotación 3D y el objeto de grupo de efectos cuando ya no los necesite. En el ejemplo siguiente se llama a la macro [**SafeRelease**](/windows/desktop/medfound/saferelease) definida por la aplicación para liberar los objetos .
 
 
 ```C++
@@ -196,7 +196,7 @@ Asegúrese de liberar el objeto de animación, el objeto de transformación giro
 
 
 
-Recuerde también que debe liberar el objeto de dispositivo, el objeto de destino de composición y el objeto visual antes de salir de la aplicación. Para obtener más información, vea [cómo inicializar DirectComposition](initialize-directcomposition.md).
+Recuerde también liberar el objeto de dispositivo, el objeto de destino de composición y el objeto visual antes de que se cierre la aplicación. Para obtener más información, [vea Cómo inicializar DirectComposition](initialize-directcomposition.md).
 
 ## <a name="complete-example"></a>Ejemplo completo
 
@@ -1028,6 +1028,6 @@ HRESULT DemoApp::MyCreateGDIRenderedDCompSurface(HBITMAP hBitmap,
 [Efectos](effects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

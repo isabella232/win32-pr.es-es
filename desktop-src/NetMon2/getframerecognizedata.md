@@ -1,7 +1,7 @@
 ---
 description: La función GetFrameRecognizeData devuelve una tabla de estructuras RECOGNIZEDATA. Cada una de estas estructuras contiene un identificador de protocolo y un desplazamiento que apunta al inicio del protocolo especificado en los datos.
 ms.assetid: 3bf809ff-8d87-4746-95ee-fb68c5e51d42
-title: Función GetFrameRecognizeData (Netmon. h)
+title: Función GetFrameRecognizeData (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 627ba046b3adead0291239f5d94f4e56958e6a80
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b04472e0fee0238677a6592cace0d1c7fbe078635ac85b92ff8922c68da3c1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118366503"
 ---
-# <a name="getframerecognizedata-function"></a>GetFrameRecognizeData función)
+# <a name="getframerecognizedata-function"></a>Función GetFrameRecognizeData
 
-La función **GetFrameRecognizeData** devuelve una tabla de estructuras **RECOGNIZEDATA** . Cada una de estas estructuras contiene un identificador de protocolo y un desplazamiento que apunta al inicio del protocolo especificado en los datos.
+La **función GetFrameRecognizeData** devuelve una tabla de estructuras **RECOGNIZEDATA.** Cada una de estas estructuras contiene un identificador de protocolo y un desplazamiento que apunta al inicio del protocolo especificado en los datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ LPRECOGNIZEDATATABLE WINAPI GetFrameRecognizeData(
 
 <dl> <dt>
 
-*hFrame* \[ de\]
+*hFrame* \[ En\]
 </dt> <dd>
 
 Identificador de un marco.
@@ -48,24 +48,24 @@ Identificador de un marco.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es un puntero a una estructura **RECOGNIZEDATATABLE** .
+Si la función es correcta, el valor devuelto es un puntero a una **estructura RECOGNIZEDATATABLE.**
 
-Si la función no es correcta, el valor devuelto es cero.
+Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **GetFrameRecognizeData** .
+[*Los*](e.md) expertos [*y analizadores pueden*](p.md) llamar a **la función GetFrameRecognizeData.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

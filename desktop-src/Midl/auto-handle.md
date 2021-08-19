@@ -1,9 +1,9 @@
 ---
-title: auto_handle atributo)
-description: El atributo \ auto \_ Handle \ ACF indica al código auxiliar que establezca automáticamente el enlace para una función que no tenga un parámetro de control de enlace explícito. Tenga en cuenta que este atributo está obsoleto y ya no se admite.
+title: auto_handle atributo
+description: 'El atributo \ auto handle\ ACF dirige el código auxiliar para establecer automáticamente el enlace para una función que no tiene un \_ parámetro de identificador de enlace explícito. Nota: Este atributo está obsoleto y ya no se admite.'
 ms.assetid: a402b933-f69b-4dfe-b0c5-b034d65d4a84
 keywords:
-- auto_handle el atributo MIDL
+- auto_handle atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,21 +12,21 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01e9a4c91fac8553867536f4f5a8c3094e0f0ff9
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 1e1f42a2fb643a2ce643437aad73b13c6e55d3462e92f9ce52ba208c6dc5cb68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104487118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117807888"
 ---
-# <a name="auto_handle-attribute"></a>\_atributo de control automático
+# <a name="auto_handle-attribute"></a>atributo \_ de identificador automático
 
-El atributo ACF de **\[ \_ control \] automático** indica al código auxiliar que establezca automáticamente el enlace para una función que no tenga un parámetro de control de enlace explícito.
+El **\[ atributo \_ \]** ACF de identificador automático dirige el código auxiliar para establecer automáticamente el enlace de una función que no tiene un parámetro de identificador de enlace explícito.
 
 > [!Note]  
-> Este atributo está obsoleto y ya no se admite. Se recomienda el uso del modificador [**/Robust**](-robust.md) .
+> Este atributo está obsoleto y ya no se admite. Se recomienda el [**uso del modificador /robust.**](-robust.md)
 
- 
+ 
 
 ``` syntax
 [ 
@@ -42,41 +42,41 @@ interface interface-name
 
 <dl> <dt>
 
-*interfaz-atributo-lista* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos que se aplican a la interfaz en conjunto, como [**código**](code.md) o [**nocode**](nocode.md). Separe los atributos de interfaz con comas.
+Especifica cero o más atributos que se aplican a la interfaz en su conjunto, como [**código**](code.md) o [**codificación.**](nocode.md) Separe los atributos de interfaz con comas.
 
 </dd> <dt>
 
-*nombre de interfaz* 
+*interface-name* 
 </dt> <dd>
 
 Especifica el nombre de la interfaz.
 
 </dd> <dt>
 
-*definición de interfaz* 
+*interface-definition* 
 </dt> <dd>
 
-Especifica las instrucciones IDL que forman la definición de la interfaz.
+Especifica instrucciones IDL que forman la definición de la interfaz .
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El atributo de **\[ \_ identificador \] automático** aparece en el encabezado de la interfaz del ACF. También aparece en el encabezado de interfaz del archivo IDL cuando se especifica el modificador de compilador MIDL [**/App \_ config**](-app-config.md).
+El **\[ atributo de \_ identificador \]** automático aparece en el encabezado de interfaz del ACF. También aparece en el encabezado de interfaz del archivo IDL cuando se especifica el modificador del compilador MIDL [**/app \_ config**](-app-config.md).
 
-Cuando el cliente llama a una función que utiliza el enlace automático y no existe ningún enlace a un servidor, el código auxiliar establece automáticamente el enlace. El enlace se reutiliza para las llamadas posteriores a otras funciones de la interfaz que utilizan el enlace automático. El programa de aplicación cliente no tiene que declarar ni realizar ningún procesamiento relacionado con el identificador de enlace.
+Cuando el cliente llama a una función que usa el enlace automático y no existe ningún enlace a un servidor, el código auxiliar establece automáticamente el enlace. El enlace se reutiliza para las llamadas posteriores a otras funciones de la interfaz que usan el enlace automático. El programa de aplicación cliente no tiene que declarar ni realizar ningún procesamiento relacionado con el identificador de enlace.
 
-Cuando el ACF no está presente o no incluye el atributo de [**\[ \_ identificador \] implícito**](implicit-handle.md) , el compilador MIDL usa el **\[ \_ \] identificador automático** y emite un mensaje informativo. El compilador MIDL también utiliza el **\[ \_ identificador \] automático**, si es necesario, para establecer el enlace inicial de un [**\[ \_ identificador \] de contexto**](context-handle.md).
+Cuando el ACF no está presente o no incluye el atributo [**\[ de \_ \]**](implicit-handle.md) identificador implícito, el compilador midl **\[ \_ \]** usa el identificador automático y emite un mensaje informativo. El compilador MIDL también usa **\[ el identificador \_ automático \]**, si es necesario, para establecer el enlace inicial para un [**\[ identificador de \_ contexto \]**](context-handle.md).
 
-El atributo de **\[ \_ identificador \] automático** solo puede producirse si no se produce el [**\[ \_ identificador \] implícito**](implicit-handle.md) o el atributo de [**\[ \_ identificador \] explícito**](explicit-handle.md) . El atributo de **\[ \_ identificador \] automático** puede aparecer en el encabezado de la interfaz ACF o IDL como máximo una vez.
+El **\[ atributo de \_ identificador \]** automático solo puede producirse si no se produce el identificador [**\[ \_ \]**](explicit-handle.md) [**\[ \_ \] implícito**](implicit-handle.md) o el atributo de identificador explícito. El **\[ atributo de \_ identificador \]** automático puede producirse en el encabezado de interfaz ACF o IDL como máximo una vez.
 
 > [!Note]  
-> No puede usar el enlace automático (ya sea con el atributo de **\[ \_ control \] automático** o de forma predeterminada) si está procesando datos a través de canalizaciones.
+> No puede usar el enlace automático (ya sea con el atributo **\[ \_ de \]** identificador automático o de forma predeterminada) si está procesando datos a través de canalizaciones.
 
- 
+ 
 
 ## <a name="examples"></a>Ejemplos
 
@@ -105,27 +105,27 @@ interface MyInterface
 [Archivo de configuración de la aplicación (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[**configuración de/APP \_**](-app-config.md)
+[**/app \_ config**](-app-config.md)
 </dt> <dt>
 
-[**codifica**](code.md)
+[**Código**](code.md)
 </dt> <dt>
 
-[**\_identificador explícito**](explicit-handle.md)
+[**identificador \_ explícito**](explicit-handle.md)
 </dt> <dt>
 
-[**identificador de contexto \_**](context-handle.md)
+[**identificador de \_ contexto**](context-handle.md)
 </dt> <dt>
 
-[**\_identificador implícito**](implicit-handle.md)
+[**identificador \_ implícito**](implicit-handle.md)
 </dt> <dt>
 
 [**nocode**](nocode.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

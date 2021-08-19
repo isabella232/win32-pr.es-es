@@ -25,7 +25,7 @@ ms.locfileid: "117753756"
 ---
 # <a name="ivmdvddriveeventsonmediaeject-method"></a>IVMDVDDriveEvents::OnMediaEject (método)
 
-\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use el proveedor WMI de [Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recibe la notificación de que los medios se han expulsado de la unidad.
 
@@ -74,7 +74,7 @@ Se llama a este método cuando se expulsa un medio (una imagen ISO o un disco en
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
