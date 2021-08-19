@@ -296,7 +296,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId(9)**
 </dt> </dl>
 
-Opción Marca de tiempo en el encabezado TCP.
+Opción marca de tiempo en el encabezado TCP.
 
 </dd> <dt>
 
@@ -327,7 +327,7 @@ Opción Escala de ventana en el encabezado TCP.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

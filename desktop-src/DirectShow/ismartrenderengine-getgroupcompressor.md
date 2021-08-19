@@ -68,7 +68,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 Use este método para establecer propiedades en el filtro de compresión, como la velocidad de fotogramas clave. Llame a este método después de llamar [**a IRenderEngine::ConnectFrontEnd**](irenderengine-connectfrontend.md), pero antes de representar el proyecto. A continuación, consulte el pin de salida del filtro de compresión para la [**interfaz IAMVideoCompression,**](/windows/desktop/api/Strmif/nn-strmif-iamvideocompression) que contiene métodos para establecer parámetros de compresión. Libere la interfaz cuando haya terminado. Si realiza cambios posteriores en la escala de tiempo, llame a **ConnectFrontEnd** y vuelva a llamar a **GetGroupCompressor** para restablecer los parámetros de compresión.
 
-En la devolución, si el valor de \* *pCompressor* no es **NULL,** la interfaz [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) tiene un recuento de referencias pendiente. Asegúrese de liberar la interfaz cuando haya terminado de usarlo.
+En la devolución, si el valor de \* *pCompressor* no es **NULL,** la [**interfaz IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) tiene un recuento de referencias pendiente. Asegúrese de liberar la interfaz cuando haya terminado de usarlo.
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -91,14 +91,14 @@ En la devolución, si el valor de \* *pCompressor* no es **NULL,** la interfaz [
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [**ISmartRenderEngine (interfaz)**](ismartrenderengine.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

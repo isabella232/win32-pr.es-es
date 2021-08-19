@@ -1,6 +1,6 @@
 ---
 title: Función DsRestoreRegisterComplete (Ntdsbcli.h)
-description: Se llama para desbloquear un Active Directory una vez completada una operación de restauración.
+description: Se llama para desbloquear un servidor Active Directory una vez completada una operación de restauración.
 ms.assetid: 781cd2ec-d2e2-4f3a-903d-feda4b871de5
 ms.tgt_platform: multiple
 keywords:
@@ -60,18 +60,18 @@ Contiene el estado final de la operación de restauración. Este parámetro debe
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **S \_ OK si** la función es correcta o un código de error de Win32 o RPC en caso contrario. En la lista siguiente se enumeran los códigos de error posibles.
+Devuelve **S \_ OK si** la función se realiza correctamente o un código de error win32 o RPC en caso contrario. En la lista siguiente se enumeran los posibles códigos de error.
 
 <dl> <dt>
 
-**ERROR \_ DE ACCESO \_ DENEGADO**
+**ACCESO DE ERROR \_ \_ DENEGADO**
 </dt> <dd>
 
 El autor de la llamada no tiene los privilegios de acceso adecuados para llamar a esta función. La [**función DsSetAuthIdentity**](dssetauthidentity.md) se puede usar para establecer las credenciales que se usarán para las funciones de copia de seguridad y restauración.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Antes de reiniciar el controlador de dominio, llame a esta función para proporcionar el estado de la operación de restauración. Si el estado no es correcto, el servicio de directorio no se iniciará hasta que se restaure una base de datos válida. Esta función completa la operación de restauración y Active Directory Domain Services iniciar.
 
@@ -79,7 +79,7 @@ Antes de reiniciar el controlador de dominio, llame a esta función para proporc
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                               |

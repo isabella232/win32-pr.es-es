@@ -1,11 +1,11 @@
 ---
-title: atributo MS-IEEE-80211-tipo de datos
-description: Tipo de datos usado internamente para el BLOB de datos msieee80211.
+title: Atributo ms-ieee-80211-Data-Type
+description: Tipo de datos usado internamente para msieee80211-Data BLOB.
 ms.assetid: 0718260b-2630-488b-a372-b43eff5d30f2
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de tipo de datos MS-IEEE-80211-
-- msieee80211-DataType atributo AD Schema
+- ms-ieee-80211-Data-Type attribute AD Schema
+- Esquema de AD del atributo msieee80211-DataType
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f15324d25aba938e9a3f3879097b112285a94dd6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 29d7120fa51a9d11fb6abb404d840704f7763b12cd189ca615d947d3e1c0f222
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118425057"
 ---
-# <a name="ms-ieee-80211-data-type-attribute"></a>atributo MS-IEEE-80211-tipo de datos
+# <a name="ms-ieee-80211-data-type-attribute"></a>Atributo ms-ieee-80211-Data-Type
 
-Tipo de datos usado internamente para el BLOB de datos msieee80211.
+Tipo de datos usado internamente para msieee80211-Data BLOB.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | MS-IEEE-80211-tipo de datos                                                          |
-| Nombre para mostrar de LDAP | msieee80211-DataType                                                             |
-| Tamaño              | \-                                                                               |
-| Actualizar privilegio  | Administrador de dominio                                                             |
-| Frecuencia de actualización  | Cada vez que un administrador de dominio cambia la Directiva de red inalámbrica para un dominio o una unidad organizativa. |
+| CN                | ms-ieee-80211-Data-Type                                                          |
+| Ldap-Display-Name | msieee80211-DataType                                                             |
+| Size              | \-                                                                               |
+| Privilegio actualizar  | Administrador de dominio                                                             |
+| Frecuencia de actualización  | Cada vez que un administrador de dominio cambia la directiva de red inalámbrica para un dominio o unidad organizativa. |
 | Attribute-Id      | 1.2.840.113556.1.4.1822                                                          |
-| System-ID-GUID    | 6558b180-35da-4efe-beed-521f8f48cafb                                             |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)                                             |
+| System-Id-Guid    | 6558b180-35da-4efe-beed-521f8f48cafb                                             |
+| Syntax            | [**Enumeración**](s-enumeration.md)                                             |
 
 
 
@@ -54,18 +54,18 @@ Tipo de datos usado internamente para el BLOB de datos msieee80211.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-IEEE-80211-Directiva**](c-msieee80211-policy.md)<br/> |
+| Clases usadas en        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Tipo de datos usado internamente para el BLOB de datos msieee80211.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-IEEE-80211-Directiva**](c-msieee80211-policy.md)<br/> |
+| Clases usadas en        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Tipo de datos usado internamente para el BLOB de datos msieee80211.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-IEEE-80211-Directiva**](c-msieee80211-policy.md)<br/> |
+| Clases usadas en        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Tipo de datos usado internamente para el BLOB de datos msieee80211.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-IEEE-80211-Directiva**](c-msieee80211-policy.md)<br/> |
+| Clases usadas en        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Tipo de datos usado internamente para el BLOB de datos msieee80211.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
-| System-Only            | False                                                           |
-| Tiene un único valor       | True                                                            |
-| Está indexado             | False                                                           |
-| En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| System-Only            | Falso                                                           |
+| Es de un solo valor       | Verdadero                                                            |
+| Está indexado             | Falso                                                           |
+| En el catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**MS-IEEE-80211-Directiva**](c-msieee80211-policy.md)<br/> |
+| Clases usadas en        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 

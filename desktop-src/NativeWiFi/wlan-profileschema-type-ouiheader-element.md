@@ -1,7 +1,7 @@
 ---
 description: Contiene un hexBinary de 1 byte que se usa para diferenciar entre las NIC realizadas por el mismo IHV.
 ms.assetid: fd6bae3d-27a8-4bff-9340-b444312b8216
-title: Elemento Type (OUIHeader)
+title: elemento type (OUIHeader)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 12637e5a70409166e5a31aa0fc98f4df1b9f6945
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 234b30883df463d7c336ce7d270e574d41a5cabe9924c327a35ff1a31ee65632
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117797506"
 ---
-# <a name="type-ouiheader-element"></a>Elemento Type (OUIHeader)
+# <a name="type-ouiheader-element"></a>elemento type (OUIHeader)
 
-El elemento Type (OUIHeader) contiene un hexBinary de 1 byte que se usa para diferenciar entre las NIC realizadas por el mismo IHV.
+El elemento type (OUIHeader) contiene un elemento hexBinary de 1 byte que se usa para diferenciar entre las NIC realizadas por el mismo IHV.
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Este elemento no se admite.
+**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** No se admite este elemento.
 
 ``` syntax
 <xs:element name="type">
@@ -39,16 +39,16 @@ El elemento Type (OUIHeader) contiene un hexBinary de 1 byte que se usa para dif
 </xs:element>
 ```
 
-El elemento se define mediante el elemento [**OUIHeader**](wlan-profileschema-ouiheader-ihv-element.md) .
+El elemento [**OUIHeader**](wlan-profileschema-ouiheader-ihv-element.md) define el elemento .
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

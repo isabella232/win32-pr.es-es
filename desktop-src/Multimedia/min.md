@@ -1,9 +1,9 @@
 ---
-title: min (macro) (Minwindef. h)
-description: La macro min compara dos valores y devuelve el menor. El tipo de datos puede ser cualquier tipo de datos numérico, con signo o sin signo. El tipo de datos de los argumentos y el valor devuelto es el mismo.
+title: min macro (Minwindef.h)
+description: La macro min compara dos valores y devuelve el más pequeño. El tipo de datos puede ser cualquier tipo de datos numérico, con signo o sin signo. El tipo de datos de los argumentos y el valor devuelto es el mismo.
 ms.assetid: c7d5094c-6f26-4799-95c8-804a8b48d39e
 keywords:
-- min macros multimedia de Windows
+- min macro Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b50680d5902ae2dc895f53f023c4b229b03c7e86
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 832adc4a4d326ca8e0689d1ca44ade2e0b77db770cabe6042e42c47e23a44f60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103804094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117985677"
 ---
 # <a name="min-macro"></a>min (macro)
 
-La macro **min** compara dos valores y devuelve el menor. El tipo de datos puede ser cualquier tipo de datos numérico, con signo o sin signo. El tipo de datos de los argumentos y el valor devuelto es el mismo.
+La **macro** min compara dos valores y devuelve el más pequeño. El tipo de datos puede ser cualquier tipo de datos numérico, con signo o sin signo. El tipo de datos de los argumentos y el valor devuelto es el mismo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,9 +59,9 @@ Especifica el segundo de dos valores.
 
 El valor devuelto es el menor de los dos valores especificados.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La macro **min** se define de la siguiente manera:
+La **macro** min se define de la siguiente manera:
 
 
 ```C++
@@ -74,11 +74,11 @@ La macro **min** se define de la siguiente manera:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Minwindef. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Minwindef.h</dt> </dl> |
 
 
 

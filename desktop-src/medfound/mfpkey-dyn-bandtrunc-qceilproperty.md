@@ -1,19 +1,19 @@
 ---
-description: Especifica la calidad con la que se permite el ancho de banda mínimo codificado.
+description: Especifica la calidad con la que se permite el ancho de banda codificado mínimo.
 ms.assetid: 2f0f43a9-2424-4b73-a9aa-a06474676fb4
-title: Propiedad MFPKEY_DYN_BANDTRUNC_QCEIL (Wmcodecdsp. h)
+title: MFPKEY_DYN_BANDTRUNC_QCEIL propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ff3e4f873c06af53290a784b5045e09eb24f7ef
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: da4beecc98edcfd2eb7ecfdcbf1ab9f9af21f278538f32e26991f0dd57a85299
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117873532"
 ---
-# <a name="mfpkey_dyn_bandtrunc_qceil-property"></a>MFPKEY \_ DYN \_ BANDTRUNC \_ QCEIL propiedad
+# <a name="mfpkey_dyn_bandtrunc_qceil-property"></a>Propiedad MFPKEY \_ DYN \_ BANDTRUNC \_ QCEIL
 
-Especifica la calidad con la que se permite el ancho de banda mínimo codificado. Con una calidad peor o igual que el valor de esta propiedad, se permite un ancho de banda mínimo codificado.
+Especifica la calidad con la que se permite el ancho de banda codificado mínimo. Con una calidad peor o igual que el valor de esta propiedad, se permite el ancho de banda codificado mínimo.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -27,10 +27,10 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Remoto<br/> | Windows Vista o Windows 7<br/>                                                   |
-| Encabezado<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente<br/> | Windows Vista o Windows 7<br/>                                                   |
+| Header<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -44,13 +44,13 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 [**MFPKEY \_ DYN \_ BANDTRUNC \_ BWFLOOR**](mfpkey-dyn-bandtrunc-bwfloorproperty.md)
 </dt> <dt>
 
-[**MFPKEY \_ DYN \_ BANDTRUNC \_ QFLOOR**](mfpkey-dyn-bandtrunc-qfloorproperty.md)
+[**MFPKEY \_ DYN \_ BANDTRUNC \_ METERLOOR**](mfpkey-dyn-bandtrunc-qfloorproperty.md)
 </dt> <dt>
 
 [**MFPKEY \_ DYN \_ BANDTRUNCATION**](mfpkey-dyn-bandtruncationproperty.md)
 </dt> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

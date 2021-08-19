@@ -4,16 +4,16 @@ description: El registro de MDM usa las siguientes estructuras.
 ms.assetid: 7b104c65-4095-45c7-a508-56f2d2d4ae08
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d69fb20af4e2b27fccc56faa4b5086a6ad65cf45
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 8b441cddded755988262d72618b2ab5bed55a4546c6f72cb3a481fdd3c9a7df7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110550550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117809373"
 ---
 # <a name="mdm-registration-structures"></a>Estructuras de registro de MDM
 
-El registro de MDM usa las siguientes estructuras.
+El registro de MDM usa las estructuras siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

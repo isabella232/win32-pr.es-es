@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_ItemImage
-description: Identifica la propiedad \_ PKEY ItemImage de la interfaz de \_ usuario.
+description: Identifica la propiedad \_ ItemImage de PKEY \_ de la interfaz de usuario.
 ms.assetid: 71bc7917-eb15-4cde-b11d-7d449f95cd50
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118437988"
 ---
 # <a name="ui_pkey_itemimage"></a>UI \_ PKEY \_ ItemImage
 
-Identifica la propiedad \_ PKEY ItemImage de la interfaz de \_ usuario.
+Identifica la propiedad \_ ItemImage de PKEY \_ de la interfaz de usuario.
 
 ```
 propertyDescription
@@ -27,7 +27,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentarios
 
-La interfaz de usuario PKEY ItemImage la usa una aplicación para consultar la \_ imagen asociada a un elemento o comando en un control de \_ galería.
+La interfaz de usuario PKEY ItemImage la usa una aplicación para consultar la imagen asociada a un \_ elemento o comando en un control de la \_ galería.
 
 El valor de propiedad es un [**objeto IUIImage.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage)
 

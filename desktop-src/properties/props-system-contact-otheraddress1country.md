@@ -4,12 +4,12 @@ ms.assetid: 903e4d64-cabe-40ff-9464-8c6388691c7f
 title: System.Contact.OtherAddress1Country
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cee25bb356d2475f50f66791f634391a9f26627
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b4be24e3581fec31b2f61405e2bba18d130712513fb3244ea6690dc52f2b7c57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117866944"
 ---
 # <a name="systemcontactotheraddress1country"></a>System.Contact.OtherAddress1Country
 

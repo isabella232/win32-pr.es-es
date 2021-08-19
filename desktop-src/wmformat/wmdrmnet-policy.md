@@ -1,10 +1,10 @@
 ---
-title: WMDRMNET_POLICY estructura (wmdrmsdk. h)
-description: La \_ estructura de directiva WMDRMNET contiene la Directiva que se va a usar para DRM de Windows Media para las operaciones de dispositivos de red.
+title: WMDRMNET_POLICY estructura (Wmdrmsdk.h)
+description: La estructura DE DIRECTIVA DE WMDRMNET contiene la directiva que se usará para Windows DRM multimedia para las operaciones \_ de dispositivos de red.
 ms.assetid: 11eaaeb2-3470-4f58-ae1c-53ee0f60bdce
 keywords:
-- WMDRMNET_POLICY estructura de Windows Media Format
-- Formato de Windows Media de estructura
+- WMDRMNET_POLICY estructura windows Media Format
+- estructura windows Formato multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 574e37a8c5ee7f68291012b86cda3a89e25949ab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bf648ef5e300fa9fef1cf12fd4698f4ec196f62130bf75a02f263cd96931f0bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117653428"
 ---
-# <a name="wmdrmnet_policy-structure"></a>Estructura de directiva de WMDRMNET \_
+# <a name="wmdrmnet_policy-structure"></a>Estructura DE DIRECTIVA \_ DE WMDRMNET
 
-La estructura de **\_ Directiva WMDRMNET** contiene la Directiva que se va a usar para DRM de Windows Media para las operaciones de dispositivos de red.
+La **estructura DE DIRECTIVA \_ DE WMDRMNET** contiene la directiva que se usará para Windows DRM multimedia para las operaciones de dispositivos de red.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,20 +45,20 @@ typedef struct WMDRMNET_POLICY {
 **ePolicyType**
 </dt> <dd>
 
-Miembro de la enumeración de [**\_ \_ tipo de directiva WMDRMNET**](wmdrmnet-policy-type.md) que especifica el tipo de directiva.
+Miembro de la [**enumeración WMDRMNET \_ POLICY \_ TYPE**](wmdrmnet-policy-type.md) que especifica el tipo de directiva.
 
 </dd> <dt>
 
 **pbPolicy**
 </dt> <dd>
 
-Búfer que contiene la Directiva. El único tipo de directiva que se admite actualmente es el **\_ tipo de directiva WMDRMNET \_ \_ TRANSCRYPTPLAY**. Este miembro es un puntero a una estructura de **\_ \_ TRANSCRYPTPLAY de directiva de WMDRMNET** .
+Búfer que contiene la directiva. El único tipo de directiva admitido actualmente **es WMDRMNET \_ POLICY TYPE \_ \_ TRANSCRYPTPLAY**. Este miembro es un puntero a una **estructura \_ \_ TRANSCRYPTPLAY de WMDRMNET POLICY.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura se usa como parámetro para el método [**IWMDRMNetTransmitter:: GetLeafLicenseResponse**](iwmdrmnettransmitter-getleaflicenseresponse.md) .
+Esta estructura se usa como parámetro para el [**método IWMDRMNetTransmitter::GetLeafLicenseResponse.**](iwmdrmnettransmitter-getleaflicenseresponse.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ Esta estructura se usa como parámetro para el método [**IWMDRMNetTransmitter::
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -77,16 +77,16 @@ Esta estructura se usa como parámetro para el método [**IWMDRMNetTransmitter::
 [**Estructuras**](drm-structures.md)
 </dt> <dt>
 
-[**\_ \_ requisitos globales de la Directiva WMDRMNET \_**](wmdrmnet-policy-global-requirements.md)
+[**REQUISITOS GLOBALES DE LA \_ DIRECTIVA WMDRMNET \_ \_**](wmdrmnet-policy-global-requirements.md)
 </dt> <dt>
 
-[**\_ \_ entorno mínimo de directiva de WMDRMNET \_**](wmdrmnet-policy-minimum-environment.md)
+[**ENTORNO MÍNIMO DE DIRECTIVA \_ DE WMDRMNET \_ \_**](wmdrmnet-policy-minimum-environment.md)
 </dt> <dt>
 
-[**\_TRANSCRYPTPLAY de directiva de WMDRMNET \_**](wmdrmnet-policy-transcryptplay.md)
+[**TRANSCRYPTPLAY DE \_ DIRECTIVA \_ WMDRMNET**](wmdrmnet-policy-transcryptplay.md)
 </dt> <dt>
 
-[**\_tipo de directiva WMDRMNET \_**](wmdrmnet-policy-type.md)
+[**TIPO DE DIRECTIVA \_ \_ WMDRMNET**](wmdrmnet-policy-type.md)
 </dt> </dl>
 
  

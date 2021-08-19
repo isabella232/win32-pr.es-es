@@ -13,7 +13,7 @@ ms.locfileid: "117820569"
 ---
 # <a name="dvd-decoder-development-in-directshow"></a>Desarrollo del descodificador de DVD en DirectShow
 
-Esta sección contiene punteros a las páginas de referencia de todos los conjuntos de propiedades de DirectShow e interfaces que son específicas de DVD o que se usan ampliamente en la decodificación de DVD. Además de lo que se muestra aquí, un descodificador y sus pines también deben admitir las interfaces genéricas de filtro DirectShow como se describe en [Escribir DirectShow filtros](writing-directshow-filters.md).
+Esta sección contiene punteros a las páginas de referencia de todos los conjuntos de propiedades de DirectShow e interfaces que son específicas de DVD o que se usan ampliamente en lacoding de DVD. Además de lo que se muestra aquí, un descodificador y sus pines también deben admitir las interfaces genéricas de filtro DirectShow como se describe en [Escribir DirectShow filtros](writing-directshow-filters.md).
 
 Esta sección contiene los temas siguientes.
 

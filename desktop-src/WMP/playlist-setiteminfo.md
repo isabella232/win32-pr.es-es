@@ -5,7 +5,7 @@ ms.assetid: ffecb43f-343d-4a4f-9356-0e3cfa85ce77
 keywords:
 - Método setItemInfo Reproductor de Windows Media
 - Método setItemInfo Reproductor de Windows Media , clase Playlist
-- Clase Playlist Reproductor de Windows Media método , setItemInfo
+- Clase playlist Reproductor de Windows Media , método setItemInfo
 topic_type:
 - apiref
 api_name:
@@ -46,7 +46,7 @@ Playlist.setItemInfo(
 *name* \[ En\]
 </dt> <dd>
 
-**Cadena** que contiene el nombre del atributo que se va a establecer. Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea la referencia Reproductor de Windows Media [atributo .](attribute-reference.md)
+**Cadena** que contiene el nombre del atributo que se va a establecer. Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea la referencia Reproductor de Windows Media [atributo](attribute-reference.md).
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Un uso especial del **método setItemInfo** consiste en ordenar los elementos de la lista de reproducción mediante el atributo SortAttribute. En el JScript siguiente se ordena una lista de reproducción por los valores del atributo UserLastPlayedTime. La lista de reproducción variable es una referencia a un objeto **Playlist.**
+Un uso especial del **método setItemInfo** consiste en ordenar los elementos de la lista de reproducción mediante el atributo SortAttribute. En el JScript siguiente se ordena una lista de reproducción por los valores del atributo UserLastPlayedTime. La lista de reproducción de variables es una referencia a un objeto **Playlist.**
 
 
 ```JScript
@@ -72,7 +72,7 @@ playlist.setItemInfo("SortAttribute", "UserLastPlayedTime")
 
 
 
-Para usar este método, se requiere acceso completo a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
+Para usar este método, se requiere acceso completo a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 **Reproductor de Windows Media 10 Mobile:** No se admite este método.
 
@@ -91,7 +91,7 @@ Vea la [propiedad attributeCount](playlist-attributecount.md) para obtener códi
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

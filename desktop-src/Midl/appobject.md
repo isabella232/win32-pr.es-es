@@ -49,7 +49,7 @@ Especifica un número de identificación único universal para la [**coclase**](
 *coclass-attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos que se aplican a la [**instrucción de la coclase.**](coclass.md) Los atributos **de la coclase** permitidos [**\[ son helpstring, \]**](helpstring.md) [**\[ helpcontext, \]**](helpcontext.md) [**\[ licensed, \]**](licensed.md) [**\[ version, \]**](version.md) [**\[ control \]**](control.md)y [**\[ hidden. \]**](hidden.md)
+Especifica cero o más atributos que se aplican a la [**instrucción coclass.**](coclass.md) Los atributos **de la coclase** permitidos [**\[ son \] helpstring**](helpstring.md), [**\[ helpcontext \]**](helpcontext.md), [**\[ licensed \]**](licensed.md), [**\[ version \]**](version.md), [**\[ control \]**](control.md)y [**\[ hidden. \]**](hidden.md)
 
 </dd> <dt>
 
@@ -63,13 +63,13 @@ Especifica el nombre por el que se conoce el objeto de componente en la bibliote
 *definición de la coclase* 
 </dt> <dd>
 
-Especifica las instrucciones que son la definición [**de la coclase.**](coclass.md)
+Especifica las instrucciones que son la definición [**de la clase conjunta.**](coclass.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentarios
 
-El **\[ atributo \] appobject** también indica que las funciones y propiedades de la [**coclase**](coclass.md) están disponibles globalmente en la biblioteca de tipos actual.
+El **\[ atributo \] appobject** también indica que las funciones y propiedades de [**la coclase**](coclass.md) están disponibles globalmente en la biblioteca de tipos actual.
 
 La representación typeflag para este atributo es TYPEFLAG \_ FAPPOBJECT
 

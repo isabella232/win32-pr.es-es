@@ -13,9 +13,9 @@ ms.locfileid: "117828506"
 ---
 # <a name="audio-endpoint-properties"></a>Propiedades del punto de conexión de audio
 
-El archivo de encabezado Mmdeviceapi.h define varias propiedades de los dispositivos de punto de conexión de [audio](audio-endpoint-devices.md) Windows Vista y versiones posteriores. El Windows de audio establece los valores de estas propiedades. Los clientes pueden leer estas propiedades, pero no deben establecerlas. Los valores de propiedad se almacenan **como estructuras PROPVARIANT.**
+El archivo de encabezado Mmdeviceapi.h define varias propiedades de dispositivos de punto de conexión de [audio](audio-endpoint-devices.md) Windows Vista y versiones posteriores. El Windows de audio establece los valores de estas propiedades. Los clientes pueden leer estas propiedades, pero no deben establecerlas. Los valores de propiedad se almacenan **como estructuras PROPVARIANT.**
 
-La manera recomendada de leer las propiedades de un dispositivo de entrada de audio es usar las API del [**Windows. Espacio de nombres Devices.Enumeration.**](/uwp/api/Windows.Devices.Enumeration) Estas API son compatibles con las aplicaciones Windows store y las aplicaciones de escritorio. Para las aplicaciones de escritorio existentes que leen las propiedades del dispositivo mediante [**la interfaz IMMDevice,**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice) consulte [Propiedades del dispositivo.](device-properties.md) **IMMDevice** no se admite para aplicaciones Windows Store.
+La manera recomendada de leer las propiedades de un dispositivo de entrada de audio es usar las API de [**la Windows. Espacio de nombres Devices.Enumeration.**](/uwp/api/Windows.Devices.Enumeration) Estas API son compatibles con las aplicaciones Windows store y las aplicaciones de escritorio. Para las aplicaciones de escritorio existentes que leen las propiedades del dispositivo mediante [**la interfaz IMMDevice,**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice) consulte [Propiedades del dispositivo.](device-properties.md) **IMMDevice** no se admite para aplicaciones Windows Store.
 
 Para ver ejemplos de código que muestran cómo acceder a las propiedades de un dispositivo de punto de conexión de audio, consulte los temas siguientes:
 

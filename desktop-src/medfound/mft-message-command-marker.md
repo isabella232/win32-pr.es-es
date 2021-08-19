@@ -46,7 +46,7 @@ Las MTA asincrónicas deben responder a este mensaje como se describe. Las MTA s
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

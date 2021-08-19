@@ -1,7 +1,7 @@
 ---
-description: El método Register agrega el filtro al registro.
+description: El método Register agrega el filtro al Registro.
 ms.assetid: 934e421a-25a6-40fa-a48b-6d7331f34b78
-title: Método CBaseFilter. Register (Amfilter. h)
+title: Método CBaseFilter.Register (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1bd7ba5a57d670ef28ffda022c95c7dc5b12df77
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 168d84d3bfc90fb710ae65a3b887eeb5575db407361a256c48161f0f7968a53c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403528"
 ---
-# <a name="cbasefilterregister-method"></a>CBaseFilter. Register (método)
+# <a name="cbasefilterregister-method"></a>Método CBaseFilter.Register
 
-El `Register` método agrega el filtro al registro.
+El `Register` método agrega el filtro al Registro.
 
 > [!Note]  
-> Este método está obsoleto. Los nuevos filtros deben registrarse con la función [**AMovieDllRegisterServer2**](amoviedllregisterserver2.md) . Para obtener más información, consulte [Cómo registrar filtros de DirectShow](how-to-register-directshow-filters.md).
+> Este método está obsoleto. Se deben registrar nuevos filtros mediante la [**función AMovieDllRegisterServer2.**](amoviedllregisterserver2.md) Para obtener más información, [vea How to Register DirectShow Filters](how-to-register-directshow-filters.md).
 
  
 
@@ -47,14 +47,14 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
+Devuelve uno de los **valores HRESULT** enumerados en la tabla siguiente.
 
 
 
 | Código devuelto                                                                             | Descripción                                          |
 |-----------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>    | Correcto.<br/>                                  |
-| <dl> <dt>**S \_ false**</dt> </dl> | No hay información de registro disponible.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Correcto.<br/>                                  |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | No hay información de registro disponible.<br/> |
 
 
 
@@ -66,16 +66,16 @@ Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseFilter**](cbasefilter.md)
+[**CBaseFilter (clase)**](cbasefilter.md)
 </dt> </dl>
 
  

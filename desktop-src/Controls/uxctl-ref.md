@@ -15,7 +15,7 @@ ms.locfileid: "117828526"
 
 En esta sección se describen los siguientes elementos de API usados con [Estilos visuales.](themes-overview.md)
 
-### <a name="functions"></a>Functions
+### <a name="functions"></a>Funciones
 
 
 
@@ -143,7 +143,7 @@ En esta sección se describen los siguientes elementos de API usados con [Estilo
 | [Formato de archivo de tema](themesfileformat-overview.md)                               | Describe el formato de los archivos de tema (.theme). <br/>                                                                                                                                 |
 | [Valores de formato](theme-format-values.md)                                         | Enumera los valores que se usan con el *parámetro dwTextFlags* de las funciones [**DrawThemeText**](/windows/desktop/api/Uxtheme/nf-uxtheme-drawthemetext) y [**GetThemeTextExtent.**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemetextextent) <br/> |
 | [Opciones de la prueba de pulsación](theme-hit-test-options.md)                                   | Enumera los valores de opción que se usan con el *parámetro dwOptions* de la [**función HitTestThemeBackground.**](/windows/desktop/api/Uxtheme/nf-uxtheme-hittestthemebackground) <br/>                                |
-| [Valores devueltos de la prueba de impacto](theme-hit-test-retval.md)                              | Enumera los valores de código de la prueba de acceso que se devuelven en el *parámetro pwHitTestCode* de la [**función HitTestThemeBackground.**](/windows/desktop/api/Uxtheme/nf-uxtheme-hittestthemebackground) <br/>                   |
+| [Valores devueltos de la prueba de pulsación](theme-hit-test-retval.md)                              | Enumera los valores de código de la prueba de acceso que se devuelven en el *parámetro pwHitTestCode* de la [**función HitTestThemeBackground.**](/windows/desktop/api/Uxtheme/nf-uxtheme-hittestthemebackground) <br/>                   |
 | [Parts and States](parts-and-states.md)                                         | Describe los elementos y estados que se usan para cambiar la apariencia de los controles cuando se habilitan los estilos visuales. <br/>                                                              |
 | [Identificadores de propiedad](property-typedefs.md)                                    | Contiene información sobre los valores definidos que se usan para recuperar propiedades de estilos visuales. <br/>                                                                              |
 

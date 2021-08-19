@@ -4,12 +4,12 @@ description: Esta sección contiene código de ejemplo e información sobre cóm
 ms.assetid: 66466293-F58E-42ED-8ECB-555B7AFCE794
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7f0d9271df9e0248a7f60e9c25679ee12d0b248
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 303a49f7d3ea416fe5f231eed9d8e25c81b7a2506aa708625d78c22e10d57e1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104488374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118407744"
 ---
 # <a name="using-status-bars"></a>Usar barras de estado
 
@@ -21,7 +21,7 @@ Esta sección contiene código de ejemplo e información sobre cómo crear y usa
 
 | Tema                                                          | Descripción                                                                                                                                                                                                                                                                                   |
 |----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Cómo crear barras de estado](create-status-bars.md)<br/> | Puede crear una barra de estado mediante la función [**CreateStatusWindow**](/windows/desktop/api/Commctrl/nf-commctrl-createstatuswindowa) o mediante la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y especificando la clase de ventana [**STATUSCLASSNAME**](common-control-window-classes.md) . <br/> |
+| [Cómo crear barras de estado](create-status-bars.md)<br/> | Puede crear una barra de estado mediante la función [**CreateStatusWindow**](/windows/desktop/api/Commctrl/nf-commctrl-createstatuswindowa) o mediante la [**función CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y especificando la clase de ventana [**STATUSCLASSNAME.**](common-control-window-classes.md) <br/> |
 
 
 

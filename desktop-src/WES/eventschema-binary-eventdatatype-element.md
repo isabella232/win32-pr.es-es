@@ -1,9 +1,9 @@
 ---
-title: Elemento binario (EventDataType)
-description: Un BLOB de datos binarios para los eventos que se escriben mediante el registro de eventos.
+title: Elemento Binary (EventDataType)
+description: Blob de datos binarios para eventos que se escriben mediante el registro de eventos.
 ms.assetid: aec2557f-6d63-48e7-b4d7-584e99dfcce3
 keywords:
-- EventLog del elemento binario
+- Elemento binario EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cdfd00e2d25f3178ab44081f76725b3189f1010b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 495310a46a314b944b29eeb2433b7c5581136c6923c5630d8f09486a95e47fdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120403"
 ---
-# <a name="binary-eventdatatype-element"></a>Elemento binario (EventDataType)
+# <a name="binary-eventdatatype-element"></a>Elemento Binary (EventDataType)
 
-Un BLOB de datos binarios para los eventos que se escriben mediante el [registro de eventos](/windows/desktop/EventLog/event-logging).
+Blob de datos binarios para eventos que se escriben mediante [el registro de eventos](/windows/desktop/EventLog/event-logging).
 
 ``` syntax
 <xs:element name="Binary"
@@ -30,7 +30,7 @@ Un BLOB de datos binarios para los eventos que se escriben mediante el [registro
  />
 ```
 
-El elemento **binario** se define mediante el tipo complejo [**EventDataType**](eventschema-eventdatatype-complextype.md) .
+El tipo complejo [**EventDataType**](eventschema-eventdatatype-complextype.md) define el elemento **Binary.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **binario** se define mediante el tipo complejo [**EventDataType**](
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

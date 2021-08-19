@@ -46,10 +46,10 @@ El **método setColumnResizeMode** especifica el tamaño de las columnas indizad
 
 
 
-| Valor          | Descripción                                                                                                    |
+| Value          | Descripción                                                                                                    |
 |----------------|----------------------------------------------------------------------------------------------------------------|
 | AutosizeHeader | El tamaño de la columna cambia para dar cabida a todos los datos de la columna y del encabezado.                                  |
-| AutosizeData   | El tamaño de la columna se ajusta solo a todos los datos de la columna.                                                 |
+| AutosizeData   | El tamaño de la columna cambia para alojar solo todos los datos de la columna.                                                 |
 | Fijo          | La columna tiene un tamaño fijo.                                                                                    |
 | Se extiende      | Cambia el tamaño de la columna para usar el espacio restante en el elemento **PLAYLIST** después de cambiar el tamaño de todas las demás columnas. |
 
@@ -67,13 +67,13 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

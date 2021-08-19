@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_FontProperties_BackgroundColorType
-description: Identifica la propiedad \_ \_ BackgroundColorType de PKEY de la interfaz \_ de usuario.
+description: Identifica la propiedad \_ BackgroundColorType de la interfaz de usuario \_ \_ PKEY FontProperties.
 ms.assetid: d93f4d9f-3d35-4066-be94-f6b6b4302bff
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118438674"
 ---
 # <a name="ui_pkey_fontproperties_backgroundcolortype"></a>UI \_ PKEY \_ FontProperties \_ BackgroundColorType
 
-Identifica la propiedad \_ \_ BackgroundColorType de PKEY de la interfaz \_ de usuario.
+Identifica la propiedad \_ BackgroundColorType de la interfaz de usuario \_ \_ PKEY FontProperties.
 
 ```
 propertyDescription
@@ -27,7 +27,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentarios
 
-Una aplicación \_ usa ui PKEY FontProperties BackgroundColorType, junto con la interfaz de usuario \_ \_ [ \_ PKEY \_ FontProperties \_ BackgroundColor](/windows/desktop/windowsribbon/windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolor),  para consultar la configuración de la galería de colores de resaltado de texto.
+Una \_ aplicación usa ui PKEY FontProperties BackgroundColorType, junto con la interfaz de usuario \_ \_ [ \_ PKEY \_ FontProperties \_ BackgroundColor](/windows/desktop/windowsribbon/windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolor),  para consultar la configuración de la galería de colores de resaltado de texto.
 
 El valor de propiedad es de la [**\_ enumeración SWATCHCOLORTYPE de la**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_swatchcolortype) interfaz de usuario.
 
@@ -41,13 +41,13 @@ En la tabla siguiente se describen los valores de propiedad.
 |--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `UI_SWATCHCOLORTYPE_NOCOLOR`   | La aplicación debe consultar la métrica del sistema adecuada para  el valor de color normalmente el color de fondo de la ventana de tema Windows actual que se recupera con GetSysColor(COLOR \_ WINDOW).                                                                                                                                                                                                                                                                 |
 | `UI_SWATCHCOLORTYPE_AUTOMATIC` | No es compatible con [**FontControl**](windowsribbon-element-fontcontrol.md).                                                                                                                                                                                                                                                                                                                                                                                |
-| `UI_SWATCHCOLORTYPE_RGB`       | La aplicación debe consultar [la interfaz de usuario \_ \_ PKEY FontProperties \_ BackgroundColor](/windows/desktop/windowsribbon/windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolor) para el valor de color. El valor de color de la interfaz de  usuario [ \_ \_ PKEY FontProperties \_ BackgroundColor](/windows/desktop/windowsribbon/windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolor) se muestra en el botón Color de resaltado de texto y se selecciona en la galería de **colores de resaltado de** texto.<br/> |
+| `UI_SWATCHCOLORTYPE_RGB`       | La aplicación debe consultar [la interfaz de usuario \_ \_ PKEY FontProperties \_ BackgroundColor](/windows/desktop/windowsribbon/windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolor) para el valor de color. El valor de color de [ui \_ PKEY \_ FontProperties \_ BackgroundColor](/windows/desktop/windowsribbon/windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolor) se muestra en el botón Color de resaltado de texto y se selecciona en la galería de **colores de resaltado de** texto. <br/> |
 
 
 
  
 
-La interfaz de usuario PKEY FontProperties BackgroundColorType se pasa al método de devolución de llamada \_ \_ \_ [**IUICommandHandler::Execute**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-execute)  cuando se selecciona una muestra de color en una galería de colores de resaltado de texto [**FontControl.**](windowsribbon-element-fontcontrol.md)
+Ui PKEY FontProperties BackgroundColorType se pasa al método de devolución de llamada \_ \_ \_ [**IUICommandHandler::Execute**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-execute)  cuando se selecciona una muestra de color en una galería de colores de resaltado de texto de [**FontControl.**](windowsribbon-element-fontcontrol.md)
 
 > [!Note]  
 > Se recomienda encarecidamente que la aplicación solo establezca un valor de **color** de resaltado de texto inicial y no vuelva a establecer este valor cuando el cursor se cambia de posición dentro de un documento. Se debe mantener la última selección para evitar la necesidad de volver a seleccionar el color deseado.

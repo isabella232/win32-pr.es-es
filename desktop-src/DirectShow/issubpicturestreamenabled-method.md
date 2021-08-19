@@ -18,7 +18,7 @@ ms.locfileid: "117817052"
 
  
 
-El `IsSubpictureStreamEnabled` método recupera un valor que indica si la secuencia de subpicture especificada está habilitada en el título actual.
+El `IsSubpictureStreamEnabled` método recupera un valor que indica si la secuencia de subimagen especificada está habilitada en el título actual.
 
 ``` syntax
 [ bEnabled = ] MSWebDVD.IsSubpictureStreamEnabled(iStream)
@@ -31,7 +31,7 @@ El `IsSubpictureStreamEnabled` método recupera un valor que indica si la secuen
 <span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*Istream*
 </dt> <dd>
 
-Especifica la secuencia de subimagen como un entero.
+Especifica la secuencia de subaspección como un entero.
 
 
 

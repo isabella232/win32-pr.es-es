@@ -37,13 +37,13 @@ g \_ wszWMMood
 
 | Tipo de archivo | Valor de ejemplo |
 |-----------|---------------|
-| Todo       | "Enorme"      |
+| Todo       | "Resonante"      |
 
 
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

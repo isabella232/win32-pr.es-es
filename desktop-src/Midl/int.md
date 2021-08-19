@@ -1,9 +1,9 @@
 ---
-title: int (atributo)
-description: La palabra clave int especifica un entero con signo de 32 bits en plataformas de 32 bits. En las plataformas de 16 bits, la palabra clave INT es una palabra clave opcional que puede acompañar a las palabras clave Small, Short y Long.
+title: atributo int
+description: La palabra clave int especifica un entero de 32 bits con signo en plataformas de 32 bits. En las plataformas de 16 bits, la palabra clave int es una palabra clave opcional que puede acompaña a las palabras clave small, short y long.
 ms.assetid: ad6ce0ff-e87b-4701-b9d2-a69c34e0339b
 keywords:
-- atributo int de tipo MIDL
+- atributo int MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f916c4f03023c756b71a2e3cbb38acd9f41f1e8
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 640eae8bfbadcba07f67d244edd78726269ede9eee2f14e9af06e851bb5cac92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103783599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117807203"
 ---
-# <a name="int-attribute"></a>int (atributo)
+# <a name="int-attribute"></a>atributo int
 
-La palabra clave **int** especifica un entero con signo de 32 bits en plataformas de 32 bits. En las plataformas de 16 bits, la palabra clave **int** es una palabra clave opcional que puede acompañar a las palabras clave [**Small**](small.md), [**Short**](short.md)y [**Long**](long.md).
+La palabra **clave int** especifica un entero de 32 bits con signo en plataformas de 32 bits. En plataformas de 16 bits, la palabra clave **int** es una palabra clave opcional que puede acompaña a las palabras clave [**small**](small.md), [**short**](short.md)y [**long.**](long.md)
 
 ``` syntax
 [ signed | unsigned ] integer-modifier [ int ] declarator-list;
@@ -31,29 +31,29 @@ La palabra clave **int** especifica un entero con signo de 32 bits en plataforma
 
 <dl> <dt>
 
-*Integer-modificador* 
+*integer-modifier* 
 </dt> <dd>
 
-Especifica la palabra clave [**Small**](small.md), [**Short**](short.md), [**Long**](long.md), [**Hyper**](hyper.md), [**\_ \_ int3264**](--int3264.md)o [**\_ \_ Int64**](--int64.md), que selecciona el tamaño de los datos enteros. En las plataformas de 16 bits, el calificador de tamaño debe estar presente.
+Especifica la palabra clave [**small**](small.md), [**short**](short.md), [**long**](long.md), [**hyper**](hyper.md), [**\_ \_ int3264**](--int3264.md)o [**\_ \_ int64**](--int64.md), que selecciona el tamaño de los datos enteros. En las plataformas de 16 bits, el calificador de tamaño debe estar presente.
 
 </dd> <dt>
 
-*lista de declaradores* 
+*declarator-list* 
 </dt> <dd>
 
-Especifica uno o más declaradores estándar de C, como identificadores, declaradores de puntero y declaradores de matriz. (Los declaradores de función y las declaraciones de campo de bits no se permiten en las estructuras que se transmiten en llamadas a procedimientos remotos. Estos declaradores se permiten en estructuras que no se transmiten). Separe varios declaradores con comas.
+Especifica uno o varios declaradores de C estándar, como identificadores, declaradores de puntero y declaradores de matriz. (Los declaradores de función y las declaraciones de campo de bits no se permiten en estructuras que se transmiten en llamadas a procedimientos remotos. Estos declaradores se permiten en estructuras que no se transmiten). Separe varios declaradores con comas.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los tipos enteros se encuentran entre los tipos base del lenguaje de definición de interfaz (IDL). Pueden aparecer como especificadores de tipo en declaraciones [**typedef**](typedef.md) , declaraciones generales y declaradores de función (como especificador de tipo de valor devuelto de función y como especificador de tipo de parámetro). Para el contexto en el que aparecen los especificadores de tipo, vea [archivo de definición de interfaz (IDL)](interface-definition-idl-file.md).
+Los tipos enteros se encuentran entre los tipos base del lenguaje de definición de interfaz (IDL). Pueden aparecer como especificadores de tipo en declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como un especificador function-return-type y como un especificador de tipo de parámetro). Para el contexto en el que aparecen los especificadores de tipo, vea Archivo de [definición de interfaz (IDL).](interface-definition-idl-file.md)
 
-Si no se proporciona ninguna especificación de signo de entero, el tipo entero tiene como valor predeterminado [**signed**](signed.md).
+Si no se proporciona ninguna especificación de signo entero, el tipo entero tiene como valor predeterminado [**signed**](signed.md).
 
-Los compiladores de DCE IDL no permiten que la palabra clave [**signed**](signed.md) especifique el signo de los tipos enteros. Por lo tanto, esta característica no está disponible cuando se usa el modificador [**/OSF**](-osf.md) del compilador MIDL.
+Los compiladores IDL de DCE no permiten que la palabra clave [**signed**](signed.md) especifique el signo de tipos enteros. Por lo tanto, esta característica no está disponible cuando se usa el modificador [**/osf del**](-osf.md) compilador de MIDL.
 
-Microsoft no recomienda el uso de \_ \_ int3264 para la comunicación remota si se puede evitar. Consulte el tema sobre [**\_ \_ int3264**](--int3264.md) para obtener más información sobre su uso y limitaciones.
+Microsoft no recomienda el uso de \_ \_ int3264 para la comunicación remota si se puede evitar. Consulte el tema [**\_ \_ int3264**](--int3264.md) para obtener más información sobre su uso y limitaciones.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -74,19 +74,19 @@ HRESULT MyFunc([in] long int lCount);
 
 <dl> <dt>
 
-[Tipos base de MIDL](midl-base-types.md)
+[Tipos base midl](midl-base-types.md)
 </dt> <dt>
 
-[**enumeración**](enum.md)
+[**Enum**](enum.md)
 </dt> <dt>
 
-[**Thread**](hyper.md)
+[**hyper**](hyper.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**tal**](long.md)
+[**long**](long.md)
 </dt> <dt>
 
 [**/osf**](-osf.md)
@@ -95,24 +95,24 @@ HRESULT MyFunc([in] long int lCount);
 [**short**](short.md)
 </dt> <dt>
 
-[**conectado**](signed.md)
+[**Firmado**](signed.md)
 </dt> <dt>
 
-[**pequeño**](small.md)
+[**Pequeño**](small.md)
 </dt> <dt>
 
-[**Destructor**](struct.md)
+[**Estructura**](struct.md)
 </dt> <dt>
 
-[**typedef**](typedef.md)
+[**Typedef**](typedef.md)
 </dt> <dt>
 
 [**Unión**](union.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

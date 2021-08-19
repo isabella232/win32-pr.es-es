@@ -1,5 +1,5 @@
 ---
-description: 'TcpIp_Fail clase : esta clase es la clase de tipo de evento para los eventos de error de TCP/IP. La sintaxis siguiente se simplifica a partir del código MOF.'
+description: 'TcpIp_Fail clase : esta clase es la clase de tipo de evento para eventos de error de TCP/IP. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: 1fe20b8c-b8f1-4db0-af78-1ebfc40b2bbd
 title: TcpIp_Fail clase
 ms.topic: reference
@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117814535"
 ---
-# <a name="tcpip_fail-class"></a>Clase TcpIp \_ Fail
+# <a name="tcpip_fail-class"></a>TcpIp \_ Fail (clase)
 
 Esta clase es la clase de tipo de evento para los eventos de error de TCP/IP.
 
@@ -59,7 +59,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Motivo del error. Puede ser uno de los siguientes códigos:
+Motivo del error. Puede ser uno de los códigos siguientes:
 
 <dl> <dt>
 
@@ -78,7 +78,7 @@ Motivo del error. Puede ser uno de los siguientes códigos:
 <span id="ERROR_OTHER"></span><span id="error_other"></span>**ERROR \_ OTHER** (5)
 </dt> <dt>
 
-<span id="ERROR_TIMEWAIT_ADDRESS_EXIST"></span><span id="error_timewait_address_exist"></span>**ERROR \_ LA DIRECCIÓN DE TIMEWAIT \_ \_ EXISTE** (6)
+<span id="ERROR_TIMEWAIT_ADDRESS_EXIST"></span><span id="error_timewait_address_exist"></span>**ERROR \_ TIMEWAIT \_ ADDRESS \_ EXIST** (6)
 </dt> </dl>
 
 </dd> <dt>
@@ -96,10 +96,10 @@ Identifica el protocolo. Puede ser uno de los siguientes valores:
 
 
 
-| Valor                                                                                                                                                                                                  | Significado                                                            |
+| Value                                                                                                                                                                                                  | Significado                                                            |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <span id="AF_INET"></span><span id="af_inet"></span><dl> <dt>**AF \_ INET**</dt> <dt>2</dt> </dl>     | La familia de direcciones IPv4 (Protocolo de Internet versión 4).<br/>  |
-| <span id="AF_INET6"></span><span id="af_inet6"></span><dl> <dt>**AF \_ INET6**</dt> <dt>23</dt> </dl> | La familia de direcciones IPv6 (Protocolo de Internet versión 6).<br/> |
+| <span id="AF_INET"></span><span id="af_inet"></span><dl> <dt>**AF \_ INET**</dt> <dt>2</dt> </dl>     | Familia de direcciones IPv4 (Protocolo de Internet versión 4).<br/>  |
+| <span id="AF_INET6"></span><span id="af_inet6"></span><dl> <dt>**AF \_ INET6**</dt> <dt>23</dt> </dl> | Familia de direcciones IPv6 (Protocolo de Internet versión 6).<br/> |
 
 
 
@@ -118,7 +118,7 @@ Identifica el protocolo. Puede ser uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

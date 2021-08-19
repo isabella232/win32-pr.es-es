@@ -61,7 +61,7 @@ Si va a implementar el control de calidad, puede invalidar este método junto co
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

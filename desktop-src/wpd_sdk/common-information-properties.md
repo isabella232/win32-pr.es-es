@@ -28,12 +28,12 @@ Windows Dispositivos portátiles admite las siguientes propiedades de informaci�
 
 | Propiedad                                      | VarType        | Descripción                                                                                              |
 |-----------------------------------------------|----------------|----------------------------------------------------------------------------------------------------------|
-| **NOTAS DE INFORMACIÓN \_ \_ COMUNES DE \_ WPD**           | **VT \_ LPWSTR** | Para citas, tareas y objetos similares, esta propiedad contiene las notas del objeto especificado.     |
-| **ASUNTO DE INFORMACIÓN \_ COMÚN \_ DE \_ WPD**         | **VT \_ LPWSTR** | Valor que especifica el campo de asunto de este objeto.                                                 |
-| **TEXTO DEL CUERPO \_ DE INFORMACIÓN COMÚN DE \_ \_ \_ WPD**      | **VT \_ LPWSTR** | Esta propiedad contiene el texto del cuerpo de un objeto, en texto no cifrado o en formato HTML.                          |
-| **PRIORIDAD DE INFORMACIÓN \_ \_ COMÚN DE \_ WPD**        | **VT \_ UI4**    | Valor que especifica la prioridad de este objeto. 0 indica la prioridad más alta.                    |
-| **FECHA Y HORA DE INICIO DE INFORMACIÓN COMÚN \_ \_ \_ \_ DE WPD** | **FECHA \_ DE VT**   | Valor que especifica la fecha y hora en que se programa el inicio de una cita, una tarea u otro objeto similar. |
-| **FECHA Y HORA DE FINALIZACIÓN DE INFORMACIÓN COMÚN \_ \_ \_ \_ DE WPD**   | **FECHA \_ DE VT**   | Valor que especifica la fecha y hora en que se programa el fin de una cita, una tarea u otro objeto similar.   |
+| **NOTAS DE \_ INFORMACIÓN \_ COMÚN DE \_ WPD**           | **VT \_ LPWSTR** | Para citas, tareas y objetos similares, esta propiedad contiene las notas del objeto especificado.     |
+| **ASUNTO DE \_ INFORMACIÓN COMÚN \_ DE \_ WPD**         | **VT \_ LPWSTR** | Valor que especifica el campo asunto de este objeto.                                                 |
+| **TEXTO DEL CUERPO \_ DE INFORMACIÓN COMÚN DE \_ \_ \_ WPD**      | **VT \_ LPWSTR** | Esta propiedad contiene el texto del cuerpo de un objeto, en formato html o texto sin formato.                          |
+| **PRIORIDAD DE \_ INFORMACIÓN \_ COMÚN DE \_ WPD**        | **VT \_ UI4**    | Valor que especifica la prioridad de este objeto. 0 indica la prioridad más alta.                    |
+| **WPD \_ COMMON \_ INFORMATION \_ START \_ DATETIME** | **VT \_ DATE**   | Valor que especifica la fecha y hora en que se programa el inicio de una cita, una tarea u otro objeto similar. |
+| **WPD \_ COMMON \_ INFORMATION \_ END \_ DATETIME**   | **VT \_ DATE**   | Valor que especifica la fecha y hora en que está programada la finalización de una cita, una tarea u otro objeto similar.   |
 
 
 
@@ -49,7 +49,7 @@ Windows Dispositivos portátiles admite las siguientes propiedades de informaci�
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

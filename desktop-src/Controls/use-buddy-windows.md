@@ -1,6 +1,6 @@
 ---
 title: Uso de La Windows
-description: Al establecer otros controles como ventanas de acceso para una barra de seguimiento, puede colocar automáticamente esos controles en los extremos de la barra de seguimiento como etiquetas.
+description: Al establecer otros controles como ventanas de compañeros para una barra de seguimiento, puede colocar automáticamente esos controles en los extremos de la barra de seguimiento como etiquetas.
 ms.assetid: 5797AA55-BD8D-407A-8896-08EE0DDC7E30
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,9 +13,9 @@ ms.locfileid: "117829065"
 ---
 # <a name="how-to-use-buddy-windows"></a>Uso de La Windows
 
-Al establecer otros controles como ventanas de acceso para una barra de seguimiento, puede colocar automáticamente esos controles en los extremos de la barra de seguimiento como etiquetas.
+Al establecer otros controles como ventanas de compañeros para una barra de seguimiento, puede colocar automáticamente esos controles en los extremos de la barra de seguimiento como etiquetas.
 
-En la ilustración siguiente se muestra una barra de seguimiento horizontal y vertical, ambas con controles estáticos como ventanas de trabajo.
+En la ilustración siguiente se muestra una barra de seguimiento horizontal y vertical, ambas con controles estáticos como ventanas de compañeros.
 
 ![captura de pantalla que muestra un cuadro de diálogo con una barra de seguimiento horizontal y una barra de seguimiento vertical](images/tkb-buddy.png)
 
@@ -25,7 +25,7 @@ En la ilustración siguiente se muestra una barra de seguimiento horizontal y ve
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
@@ -34,7 +34,7 @@ En la ilustración siguiente se muestra una barra de seguimiento horizontal y ve
 
 ### <a name="use-buddy-windows"></a>Uso de La Windows
 
-En el ejemplo de código siguiente se crean las ventanas de los compañeros que se muestran en la ilustración.
+En el ejemplo de código siguiente se crean las ventanas de compañeros que se muestran en la ilustración.
 
 
 ```
@@ -92,7 +92,7 @@ void LabelTrackbarsWithBuddies(HWND hDlg)
 
 <dl> <dt>
 
-[Usar controles Trackbar](using-trackbar-controls.md)
+[Usar controles trackbar](using-trackbar-controls.md)
 </dt> </dl>
 
  

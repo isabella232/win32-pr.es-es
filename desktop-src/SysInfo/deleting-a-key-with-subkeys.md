@@ -1,25 +1,25 @@
 ---
-description: En el ejemplo de este tema se usan las funciones RegOpenKeyEx, RegEnumKeyEx y RegDeleteKey para eliminar una clave del registro con subclaves.
+description: En el ejemplo de este tema se usan las funciones RegOpenKeyEx, RegEnumKeyEx y RegDeleteKey para eliminar una clave del Registro con subclaves.
 ms.assetid: 1cf6db95-85a4-4416-b17e-e14f45804503
-title: Eliminar una clave con subclaves
+title: Eliminación de una clave con subclaves
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 490020ff5a7bc6ea44f83b729bcbad4491aaa62e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee7c64421a83c6eeb1537a8a72b839eeea5d49d2f17846dc7d627c5127e6b7e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117764489"
 ---
-# <a name="deleting-a-key-with-subkeys"></a>Eliminar una clave con subclaves
+# <a name="deleting-a-key-with-subkeys"></a>Eliminación de una clave con subclaves
 
-En el ejemplo de este tema se usan las funciones [**RegOpenKeyEx**](/windows/desktop/api/Winreg/nf-winreg-regopenkeyexa), [**RegEnumKeyEx**](/windows/desktop/api/Winreg/nf-winreg-regenumkeyexa)y [**RegDeleteKey**](/windows/desktop/api/Winreg/nf-winreg-regdeletekeya) para eliminar una clave del registro con subclaves.
+En el ejemplo de este tema se usan las funciones [**RegOpenKeyEx**](/windows/desktop/api/Winreg/nf-winreg-regopenkeyexa), [**RegEnumKeyEx**](/windows/desktop/api/Winreg/nf-winreg-regenumkeyexa)y [**RegDeleteKey**](/windows/desktop/api/Winreg/nf-winreg-regdeletekeya) para eliminar una clave del Registro con subclaves.
 
-Para probar este ejemplo, cree la siguiente clave del registro mediante Regedt32.exe y, a continuación, agregue algunos valores y subclaves:
+Para probar este ejemplo, cree la siguiente clave del Registro mediante Regedt32.exe y, a continuación, agregue algunos valores y subclaves:
 
-**HKEY \_ \_** TestDir de \\ **software** \\  de usuario actual
+**HKEY \_ CURRENT \_ USER** \\ **Software** \\ **TestDir**
 
-Después de ejecutar el código, use la tecla F5 para actualizar los datos del registro y observe que se ha eliminado la clave **TestDir** .
+Después de ejecutar el código, use la clave F5 para actualizar los datos del Registro y observe que se ha eliminado la clave **TestDir.**
 
 
 ```C++

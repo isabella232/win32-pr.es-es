@@ -1,7 +1,7 @@
 ---
 description: El método EnableTransitions habilita o deshabilita todas las transiciones de la escala de tiempo.
 ms.assetid: 8610337a-a247-44f0-8674-3cbc43f636d5
-title: 'IAMTimeline:: EnableTransitions (método) (QEDIT. h)'
+title: Método IAMTimeline::EnableTransitions (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: c05d3a00a57b8008789b83b16eee155eea974e6e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9356ac53488f68e54a05a85e8e287850138ee131f80dd3bb45b81cf606b5a351
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118401076"
 ---
-# <a name="iamtimelineenabletransitions-method"></a>IAMTimeline:: EnableTransitions (método)
+# <a name="iamtimelineenabletransitions-method"></a>IamTimeline::EnableTransitions (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `EnableTransitions` método habilita o deshabilita todas las transiciones de la escala de tiempo. Si se deshabilitan las transiciones, los motores de representación los tratan como cortes; es decir, la salida representada salta de forma instantánea de una pista a la siguiente. El punto de corte predeterminado está a mitad de la duración de la transición. Puede cambiar el punto de corte llamando al método [**IAMTimelineTrans:: SetCutPoint**](iamtimelinetrans-setcutpoint.md) en la transición. Las transiciones deshabilitadas no se quitan de la escala de tiempo.
+El `EnableTransitions` método habilita o deshabilita todas las transiciones de la escala de tiempo. Si las transiciones están deshabilitadas, los motores de representación las tratan como cortes; Es decir, la salida representada salta al instante de una pista a la siguiente. El punto de corte predeterminado se encuentra a la mitad de la duración de la transición. Puede cambiar el punto de corte llamando al [**método IAMTimelineTrans::SetCutPoint**](iamtimelinetrans-setcutpoint.md) en la transición. Las transiciones deshabilitadas no se quitan de la escala de tiempo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,23 +48,23 @@ HRESULT EnableTransitions(
 *fEnabled* 
 </dt> <dd>
 
-Valor booleano que especifica si se van a habilitar o deshabilitar las transiciones. Si **es true**, las transiciones están habilitadas. Si **es false**, las transiciones están deshabilitadas.
+Valor booleano que especifica si se deben habilitar o deshabilitar las transiciones. Si **es TRUE,** las transiciones están habilitadas. Si **es FALSE,** las transiciones están deshabilitadas.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,16 +74,16 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IAMTimeline**](iamtimeline.md)
+[**IAMTimeline (interfaz)**](iamtimeline.md)
 </dt> <dt>
 
 [Códigos de error y de éxito](error-and-success-codes.md)

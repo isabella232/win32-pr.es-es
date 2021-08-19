@@ -29,7 +29,7 @@ El **atributo statusTextColor** especifica o recupera un valor que indica el col
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una cadena de lectura y escritura **que** representa un color. El valor predeterminado es "none".
+Este atributo es una cadena de **lectura** y escritura que representa un color. El valor predeterminado es "none".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,14 +41,14 @@ Este atributo es una cadena de lectura y escritura **que** representa un color. 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [**Referencia de color**](color-reference.md)
 </dt> <dt>
 
-[**ELEMENTO PLAYLIST**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

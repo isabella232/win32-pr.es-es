@@ -22,7 +22,7 @@ En este ejemplo, suponga que el cliente ADSI es una aplicación de visor ADSI qu
 
 ![vista detallada de los componentes adsi](images/dscsex.png)
 
-En la ilustración anterior, el cliente inicia la solicitud de un puntero de interfaz en el objeto Active Directory representado por ADsPath "Sample://Seattle/Redmond/Shelly" desde los servicios ADSI (2). Durante la inicialización, el software de servicios ha rellenado una tabla de identificadores de programación de proveedores instalados (ProgID) desde el registro ("LDAP:","Sample:", "WinNT:", y así sucesivamente) y los empareja con los **CLSID** correspondientes que identifican el módulo de software adecuado.
+En la ilustración anterior, el cliente inicia la solicitud de un puntero de interfaz en el objeto Active Directory representado por ADsPath "Sample://Seattle/Redmond/Shelly" de los servicios ADSI (2). Durante la inicialización, el software de servicios ha rellenado una tabla de identificadores de programación de proveedores instalados (ProgID) desde el registro ("LDAP:","Sample:", "WinNT:", y así sucesivamente) y los empareja con los **CLSID** correspondientes que identifican el módulo de software adecuado.
 
 El servidor ADSI comprueba que el ProgID, en este caso "Sample:", existe en ADsPath. A continuación, crea un contexto de enlace para optimizar más referencias a este objeto y llama a la función COM [**estándar MkParseDisplayName**](/windows/win32/api/objbase/nf-objbase-mkparsedisplayname) para crear un moniker COM que se puede usar para buscar y enlazar al objeto que representa al usuario "Shelly".
 
@@ -38,7 +38,7 @@ Al encapsular este puntero de interfaz en un moniker, se completa la función Re
 
 Todos los objetos COM creados durante este proceso se almacenan en caché por motivos de rendimiento y se administran a través del contexto de enlace. Esto mejora el rendimiento de otras operaciones en el mismo objeto que sigue inmediatamente al enlace del moniker.
 
-Este objeto Active Directory bien formado ahora se consulta para el identificador de interfaz solicitado para la llamada [**inicial ADsGetObject**](/windows/desktop/api/Adshlp/nf-adshlp-adsgetobject) y se recupera un puntero a esa interfaz (7) y se pasa de vuelta a través del servidor ADSI al cliente (8&9). A partir de ese momento, el cliente trabaja directamente con el componente de proveedor a través de los métodos de interfaz hasta que se satisface la solicitud inicial (10).
+Este objeto Active Directory bien formado ahora se consulta para el identificador de interfaz solicitado para la llamada [**inicial ADsGetObject**](/windows/desktop/api/Adshlp/nf-adshlp-adsgetobject) y se recupera un puntero a esa interfaz (7) y se pasa a través del servidor ADSI al cliente (8&9). A partir de ese momento, el cliente trabaja directamente con el componente de proveedor a través de los métodos de interfaz hasta que se satisface la solicitud inicial (10).
 
 Además, las solicitudes de datos de objeto del cliente suelen tener la forma de solicitudes para la propiedad gets y puts, todas las cuales se optimizan a través de la implementación del proveedor de una caché de propiedades (Cprops.cpp). Empaquetar y desempaquetar datos de forma inteligente, lo que a menudo incluye copiar y liberar estructuras y cadenas, entre los tipos de datos nativos del sistema operativo del componente de proveedor de ejemplo y el tipo [**VARIANT**](/windows/win32/api/oaidl/ns-oaidl-variant) de Automation compatible con ADSI tiene lugar antes de que las propiedades se carguen en la caché (Smpoper.cpp).
 

@@ -4,7 +4,7 @@ description: Indica si la contraseña de la cuenta a la que hace referencia este
 ms.assetid: bafbcb4a-ee45-4f88-8fb2-93840efd1289
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-User-Dont-Expire-Password attribute AD Schema
+- Esquema de AD del atributo ms-DS-User-Dont-Expire-Password
 - Esquema de AD del atributo msDS-UserDontExpirePassword
 topic_type:
 - apiref
@@ -36,7 +36,7 @@ Indica si la contraseña de la cuenta a la que hace referencia este atributo exp
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1855              |
 | System-Id-Guid    | 8788193a-2925-43d9-a221-bb7fff397675 |
-| Syntax            | [**Booleana**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -48,7 +48,7 @@ Indica si la contraseña de la cuenta a la que hace referencia este atributo exp
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |

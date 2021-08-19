@@ -1,37 +1,37 @@
 ---
-description: Las aplicaciones determinan si se debe conceder acceso a los objetos protegibles mediante una llamada a la función AuthzAccessCheck.
+description: Las aplicaciones determinan si se debe conceder acceso a objetos protegibles mediante una llamada a la función AuthzAccessCheck.
 ms.assetid: dad0a102-08ed-4cd2-bef5-87bc48fc7fc2
-title: Comprobación del acceso con la API de authz
+title: Comprobación del acceso con Authz API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e129b690a7c1f701b5f669a8f0705c5a5e9a2eec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 876c3b5305e33969f63932fdc9e1e4f6767c95a64b11272283420a377b39f795
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783101"
 ---
-# <a name="checking-access-with-authz-api"></a>Comprobación del acceso con la API de authz
+# <a name="checking-access-with-authz-api"></a>Comprobación del acceso con Authz API
 
-Las aplicaciones determinan si se debe conceder acceso a los objetos protegibles mediante una llamada a la función [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) .
+Las aplicaciones determinan si se debe conceder acceso a objetos protegibles mediante una llamada a la [**función AuthzAccessCheck.**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck)
 
-La función [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) toma las estructuras de [**\_ \_ solicitud de acceso**](/windows/desktop/api/Authz/ns-authz-authz_access_request) y [**\_ descriptor de seguridad**](/windows/desktop/api/Winnt/ns-winnt-security_descriptor) de AUTHZ como parámetros. La estructura de **\_ \_ solicitud de acceso de AUTHZ** especifica un nivel de acceso solicitado. La función **AuthzAccessCheck** evalúa el acceso solicitado con el **\_ descriptor de seguridad** especificado para un contexto de cliente especificado. Para obtener información sobre cómo un descriptor de seguridad controla el acceso a un objeto, vea [Cómo controlan el acceso a un objeto las DACL](how-dacls-control-access-to-an-object.md).
+La [**función AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) toma las estructuras [**AUTHZ \_ ACCESS REQUEST \_ y**](/windows/desktop/api/Authz/ns-authz-authz_access_request) [**SECURITY \_ DESCRIPTOR**](/windows/desktop/api/Winnt/ns-winnt-security_descriptor) como parámetros. La **estructura AUTHZ \_ ACCESS \_ REQUEST** especifica un nivel de acceso solicitado. La **función AuthzAccessCheck** evalúa el acceso solicitado con el **DESCRIPTOR DE SEGURIDAD \_ especificado** para un contexto de cliente especificado. Para obtener información sobre cómo un descriptor de seguridad controla el acceso a un objeto, vea Cómo controlan las [DACL el acceso a un objeto](how-dacls-control-access-to-an-object.md).
 
-Las variables de atributo deben tener el formato de una expresión cuando se utilizan con operadores lógicos; de lo contrario, se evalúan como Unknown.
+Las variables de atributo deben tener el formato de una expresión cuando se usan con operadores lógicos; De lo contrario, se evalúan como desconocidos.
 
 ## <a name="callback-function"></a>Función de devolución de llamada
 
-Si la [*lista de control de acceso discrecional*](/windows/desktop/SecGloss/d-gly) (DACL) del [**\_ descriptor de seguridad**](/windows/desktop/api/Winnt/ns-winnt-security_descriptor) del objeto que se va a comprobar contiene las [*entradas de control de acceso*](/windows/desktop/SecGloss/a-gly) (ACE) de devolución de llamada, [**AUTHZACCESSCHECK**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) llama a la función [**AuthzAccessCheckCallback**](authzaccesscheckcallback.md) para cada ACE de devolución de llamada contenida en la DACL. Una ACE de devolución de llamada es cualquier estructura ACE cuyo tipo ACE contenga la palabra "callback". La función **AuthzAccessCheckCallback** es una función definida por la aplicación que se debe registrar cuando se inicializa el administrador de recursos mediante una llamada a la función [**AuthzInitializeResourceManager**](/windows/desktop/api/Authz/nf-authz-authzinitializeresourcemanager) .
+Si la lista de [*control*](/windows/desktop/SecGloss/d-gly) de acceso discrecional (DACL) del [**\_ DESCRIPTOR**](/windows/desktop/api/Winnt/ns-winnt-security_descriptor) DE SEGURIDAD del objeto que se va a comprobar contiene entradas de [*control*](/windows/desktop/SecGloss/a-gly) de acceso (ACE) de devolución de llamada, [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) llama a la función [**AuthzAccessCheckCallback**](authzaccesscheckcallback.md) para cada ACE de devolución de llamada contenida en la DACL. Una ACE de devolución de llamada es cualquier estructura ACE cuyo tipo ACE contiene la palabra "devolución de llamada". La **función AuthzAccessCheckCallback** es una función definida por la aplicación que se debe registrar cuando se inicializa el administrador de recursos mediante una llamada a la función [**AuthzInitializeResourceManager.**](/windows/desktop/api/Authz/nf-authz-authzinitializeresourcemanager)
 
-Una función de devolución de llamada permite a una aplicación definir la lógica de negocios que se va a evaluar en tiempo de ejecución. Cuando se llama a la función [**AuthzAccessCheckCallback**](authzaccesscheckcallback.md) , se pasa la ACE de devolución de llamada que causó la llamada a la función de devolución de llamada para su evaluación. Si la lógica definida por la aplicación se evalúa como **true**, la ACE de devolución de llamada se incluye en la comprobación de acceso. De lo contrario, se omite.
+Una función de devolución de llamada permite a una aplicación definir la lógica de negocios que se va a evaluar en tiempo de ejecución. Cuando se llama a la función [**AuthzAccessCheckCallback,**](authzaccesscheckcallback.md) la ACE de devolución de llamada que produjo la llamada se pasa a la función de devolución de llamada para su evaluación. Si la lógica definida por la aplicación se evalúa como **TRUE,** la ACE de devolución de llamada se incluye en la comprobación de acceso. De lo contrario, se omite.
 
-## <a name="caching-access-results"></a>Almacenar en caché los resultados de acceso
+## <a name="caching-access-results"></a>Almacenamiento en caché de los resultados de acceso
 
-Los resultados de una comprobación de acceso se pueden almacenar en caché y usar en futuras llamadas a la función [**AuthzCachedAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzcachedaccesscheck) . Para obtener más información sobre las comprobaciones de acceso de almacenamiento en caché, incluido un ejemplo, vea [caching Access Checks](caching-access-checks.md).
+Los resultados de una comprobación de acceso se pueden almacenar en caché y usar en llamadas futuras a la [**función AuthzCachedAccessCheck.**](/windows/desktop/api/Authz/nf-authz-authzcachedaccesscheck) Para obtener más información sobre el almacenamiento en caché de las comprobaciones de acceso, incluido un ejemplo, vea Almacenamiento en caché [de las comprobaciones de acceso.](caching-access-checks.md)
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se crea un [**\_ descriptor de seguridad**](/windows/desktop/api/Winnt/ns-winnt-security_descriptor) que permite el acceso de **\_ control de lectura** a los administradores integrados. Usa ese descriptor de seguridad para comprobar el acceso del cliente especificado por el contexto de cliente creado en el ejemplo de [inicializar un contexto de cliente](initializing-a-client-context.md).
+En el ejemplo siguiente se crea [**un \_ DESCRIPTOR DE SEGURIDAD**](/windows/desktop/api/Winnt/ns-winnt-security_descriptor) que permite el acceso de CONTROL DE **\_ LECTURA** a los administradores integrados. Usa ese descriptor de seguridad para comprobar el acceso del cliente especificado por el contexto de cliente creado en el ejemplo de [Inicialización de un contexto de cliente](initializing-a-client-context.md).
 
 
 ```C++
@@ -118,13 +118,13 @@ BOOL CheckAccess(AUTHZ_CLIENT_CONTEXT_HANDLE hClientContext)
 [Agregar SID a un contexto de cliente](adding-sids-to-a-client-context.md)
 </dt> <dt>
 
-[Almacenar en caché comprobaciones de acceso](caching-access-checks.md)
+[Almacenamiento en caché de comprobaciones de acceso](caching-access-checks.md)
 </dt> <dt>
 
-[Inicializar un contexto de cliente](initializing-a-client-context.md)
+[Inicialización de un contexto de cliente](initializing-a-client-context.md)
 </dt> <dt>
 
-[Consultar un contexto de cliente](querying-a-client-context.md)
+[Consulta de un contexto de cliente](querying-a-client-context.md)
 </dt> </dl>
 
  

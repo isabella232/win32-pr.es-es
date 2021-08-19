@@ -19,8 +19,8 @@ En la lista siguiente se describen los temas de esta sección:
 
 -   [Tareas iniciales con Winsock](getting-started-with-winsock.md)
 -   [Programación segura de Winsock](secure-winsock-programming.md)
--   [Porte de aplicaciones de socket a Winsock](porting-socket-applications-to-winsock.md)
--   [Guía de IPv6 para aplicaciones Windows Sockets](ipv6-guide-for-windows-sockets-applications-2.md)
+-   [Porting Socket Applications to Winsock](porting-socket-applications-to-winsock.md)
+-   [Guía de IPv6 para Windows sockets](ipv6-guide-for-windows-sockets-applications-2.md)
 -   [Aplicaciones de sockets Windows alto rendimiento](high-performance-windows-sockets-applications-2.md)
 -   [Categorización de aplicaciones y proveedores de servicios en capas](categorizing-layered-service-providers-and-applications.md)
 -   [Programación de multidifusión](multicast-programming.md)

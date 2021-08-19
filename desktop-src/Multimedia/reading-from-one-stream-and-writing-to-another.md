@@ -1,6 +1,6 @@
 ---
-title: Lectura de una secuencia y escritura en otra
-description: Lectura de una secuencia y escritura en otra
+title: Leer de una secuencia y escribir en otra
+description: Leer de una secuencia y escribir en otra
 ms.assetid: 035a8862-9a0f-49d2-a060-5131ff2b7887
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118371602"
 ---
-# <a name="reading-from-one-stream-and-writing-to-another"></a>Lectura de una secuencia y escritura en otra
+# <a name="reading-from-one-stream-and-writing-to-another"></a>Leer de una secuencia y escribir en otra
 
 En el ejemplo siguiente se leen datos de una secuencia, se hace algo con los datos y se escriben los datos comprimidos en una secuencia de un nuevo archivo.
 

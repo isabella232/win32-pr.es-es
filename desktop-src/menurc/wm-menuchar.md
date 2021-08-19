@@ -1,6 +1,6 @@
 ---
 title: WM_MENUCHAR mensaje (Winuser.h)
-description: Se envía cuando un menú está activo y el usuario presiona una tecla que no corresponde a ninguna tecla mnemotécnica o de acelerador. Este mensaje se envía a la ventana que posee el menú.
+description: Se envía cuando un menú está activo y el usuario presiona una tecla que no se corresponde con ninguna tecla mnemotécnica o de aceleración. Este mensaje se envía a la ventana propietaria del menú.
 ms.assetid: de6c91bb-80fd-44b2-8d96-d016477a6547
 keywords:
 - WM_MENUCHAR menús de mensajes y otros recursos
@@ -23,7 +23,7 @@ ms.locfileid: "117869614"
 ---
 # <a name="wm_menuchar-message"></a>Mensaje \_ MENUCHAR de WM
 
-Se envía cuando un menú está activo y el usuario presiona una tecla que no corresponde a ninguna tecla mnemotécnica o de acelerador. Este mensaje se envía a la ventana que posee el menú.
+Se envía cuando un menú está activo y el usuario presiona una tecla que no se corresponde con ninguna tecla mnemotécnica o de aceleración. Este mensaje se envía a la ventana propietaria del menú.
 
 
 ```C++
@@ -39,7 +39,7 @@ Se envía cuando un menú está activo y el usuario presiona una tecla que no co
 *wParam* 
 </dt> <dd>
 
-La palabra de orden bajo especifica el código de carácter que corresponde a la clave que el usuario ha presionado.
+La palabra de orden bajo especifica el código de carácter que corresponde a la tecla presionada por el usuario.
 
 La palabra de orden superior especifica el tipo de menú activo. Este parámetro puede ser uno de los valores siguientes.
 
@@ -98,7 +98,7 @@ Una aplicación debe procesar este mensaje cuando se usa un acelerador para sele
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

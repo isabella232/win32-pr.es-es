@@ -1,5 +1,5 @@
 ---
-description: La función CreateProtocol notifica a Monitor de red que existe un analizador de protocolo específico.
+description: La función CreateProtocol notifica Monitor de red que existe un analizador de protocolo específico.
 ms.assetid: 13ae261f-b1c0-4afc-b718-d64b3d4ec5ee
 title: Función CreateProtocol (Netmon.h)
 ms.topic: reference
@@ -64,7 +64,7 @@ Tamaño de la **estructura ENTRYPOINTS.** Monitor de red proporciona una macro E
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es un identificador del protocolo.
+Si la función se realiza correctamente, el valor devuelto es un identificador para el protocolo.
 
 Si la función no se realiza correctamente, el valor devuelto es **NULL.**
 
@@ -72,7 +72,7 @@ Si la función no se realiza correctamente, el valor devuelto es **NULL.**
 
 El archivo DLL del analizador llama **a CreateProtocol** durante su implementación [de DllMain](dllmain-parser.md). Se **llama a la función CreateProtocol** cuando el sistema operativo carga el archivo DLL del analizador por primera vez.
 
-Los puntos de entrada a los que se hace referencia en el parámetro *lpEntryPoints* incluyen punteros a las siguientes funciones de exportación que se deben proporcionar en el orden que se presenta aquí.
+Los puntos de entrada a los que se hace referencia en el parámetro *lpEntryPoints* incluyen punteros a las siguientes funciones de exportación que deben proporcionarse en el orden que se presenta aquí.
 
 -   [Registro](register-parser.md)
 -   [Eliminar registro](deregister.md)
@@ -105,7 +105,7 @@ Los puntos de entrada a los que se hace referencia en el parámetro *lpEntryPoin
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

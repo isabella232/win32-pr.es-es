@@ -35,7 +35,7 @@ g \_ wszWMMediaOriginalBroadcastDateTime
 
 Este atributo se usa para la difusión de televisión o radio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

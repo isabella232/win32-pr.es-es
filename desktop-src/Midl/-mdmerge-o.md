@@ -1,9 +1,9 @@
 ---
-title: modificador/o (MDMERGE)
-description: El modificador/o especifica el directorio de salida para los archivos de metadatos compuestos.
+title: Modificador /o (MDMERGE)
+description: El modificador /o especifica el directorio de salida para los archivos de metadatos compuestos.
 ms.assetid: 70C924A8-5877-462B-B66A-86B2CEF8B502
 keywords:
-- /o modificador MIDL
+- /o switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,26 +12,26 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20a169082de88d45d7f1ba2e18c0217c9a225699
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: af560aafa435e45cdb413516862e0b1c6d5e49f507c21b00a6b6c165b2a67f26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105689950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117808870"
 ---
-# <a name="o-switch-mdmerge"></a>modificador/o (MDMERGE)
+# <a name="o-switch-mdmerge"></a>Modificador /o (MDMERGE)
 
-El modificador **/o** especifica el directorio de salida para los archivos de metadatos compuestos.
+El **modificador /o** especifica el directorio de salida para los archivos de metadatos compuestos.
 
 ``` syntax
 mdmerge /o output_directory
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Opciones de cambio
 
 <dl> <dt>
 
-*directorio de salida \_* 
+*directorio de \_ salida* 
 </dt> <dd>
 
 Especifica el directorio que contiene los archivos de metadatos combinados.
@@ -42,15 +42,15 @@ Especifica el directorio que contiene los archivos de metadatos combinados.
 
 ## <a name="examples"></a>Ejemplos
 
-**directorio de salida de mdmerge/o \_**
+**directorio de salida mdmerge /o \_**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------|--------------------------------|
-| Remoto<br/> | Windows 8<br/>           |
+| Cliente<br/> | Windows 8<br/>           |
 | Servidor<br/> | Windows Server 2012<br/> |
 
 
@@ -59,7 +59,7 @@ Especifica el directorio que contiene los archivos de metadatos combinados.
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> </dl>
 
  

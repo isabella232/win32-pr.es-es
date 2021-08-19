@@ -58,7 +58,7 @@ En el procedimiento siguiente se muestra cómo agregar extensiones de clase auxi
 
 3.  Para cada clase auxiliar, publique la lista de atributos correspondientes mediante la creación de una clave en
 
-    **HKLM \\ System \\ CurrentControlSet \\ Control \\ NetDiagFx** \\ *VendorName* \\ **HostDLLs** \\ *Helper Class* \\ **HelperClasses** Helper Class \\ *Name* \\ **MatchAttributes**
+    **HKLM \\ System \\ CurrentControlSet \\ Control \\ NetDiagFx** \\ *VendorName* \\ **HostDLLs** \\ *Helper Class* \\ **HelperClasses** \\ *Helper Class Name* \\ **MatchAttributes**
 
     La clave debe contener uno o varios valores (uno por atributo) del tipo siguiente.
 

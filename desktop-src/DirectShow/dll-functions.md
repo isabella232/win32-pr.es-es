@@ -23,7 +23,7 @@ Un archivo DLL debe implementar las siguientes funciones para que se pueda regis
 -   [**DllRegisterServer:**](/windows/desktop/api/olectl/nf-olectl-dllregisterserver)crea entradas del Registro para el archivo DLL.
 -   [**DllUnregisterServer:**](/windows/desktop/api/olectl/nf-olectl-dllunregisterserver)quita las entradas del Registro para el archivo DLL.
 
-De estas, las tres primeras se implementan mediante DirectShow. Si la plantilla de generador proporciona una función de inicialización en la variable miembro [**m \_ lpfnInit,**](cfactorytemplate-m-lpfninit.md) se llama a esa función desde dentro de la función de punto de entrada dll. Para obtener más información sobre cuándo el sistema llama a la función de punto de entrada dll, [*vea DllMain*](/windows/desktop/Dlls/dllmain).
+De estas, las tres primeras se implementan mediante DirectShow. Si la plantilla de generador proporciona una función de inicialización en la variable miembro [**m \_ lpfnInit,**](cfactorytemplate-m-lpfninit.md) se llama a esa función desde dentro de la función de punto de entrada de DLL. Para obtener más información sobre cuándo el sistema llama a la función de punto de entrada dll, vea [*DllMain*](/windows/desktop/Dlls/dllmain).
 
 Debe implementar [**DllRegisterServer**](/windows/desktop/api/olectl/nf-olectl-dllregisterserver) y [**DllUnregisterServer,**](/windows/desktop/api/olectl/nf-olectl-dllunregisterserver)pero DirectShow proporciona una función denominada [**AMovieDllRegisterServer2**](amoviedllregisterserver2.md) que realiza el trabajo necesario. El componente puede simplemente encapsular esta función, como se muestra en el ejemplo siguiente:
 
