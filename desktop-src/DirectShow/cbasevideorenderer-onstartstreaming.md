@@ -1,7 +1,7 @@
 ---
-description: El método OnStartStreaming restablece todo el tiempo que controla el streaming.
+description: El método OnStartStreaming restablece todas las veces que controla el streaming.
 ms.assetid: a2bb07f2-6880-4030-96c5-d146982dfe66
-title: Método CBaseVideoRenderer. OnStartStreaming (Renbase. h)
+title: Método CBaseVideoRenderer.OnStartStreaming (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 403d465d4ff9fe8ae9101b13e2ec5e6c04bdddf2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b2a55d509c900c7be68d3225826c208755d31ef66e0c24119bd1d044dad1aefc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118157060"
 ---
-# <a name="cbasevideorendereronstartstreaming-method"></a>CBaseVideoRenderer. OnStartStreaming, método
+# <a name="cbasevideorendereronstartstreaming-method"></a>Método CBaseVideoRenderer.OnStartStreaming
 
-El `OnStartStreaming` método restablece todo el tiempo que controla el streaming.
+El `OnStartStreaming` método restablece todas las veces que controla el streaming.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro invalida [**CBaseRenderer:: OnStartStreaming**](cbaserenderer-onstartstreaming.md).
+Esta función miembro invalida [**CBaseRenderer::OnStartStreaming**](cbaserenderer-onstartstreaming.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Esta función miembro invalida [**CBaseRenderer:: OnStartStreaming**](cbaserende
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Esta función miembro invalida [**CBaseRenderer:: OnStartStreaming**](cbaserende
 
 <dl> <dt>
 
-[**Clase CBaseVideoRenderer**](cbasevideorenderer.md)
+[**CBaseVideoRenderer (clase)**](cbasevideorenderer.md)
 </dt> </dl>
 
  

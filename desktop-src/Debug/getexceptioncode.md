@@ -1,7 +1,7 @@
 ---
-description: Recupera un código que identifica el tipo de excepción que se produce. Solo se puede llamar a la función desde dentro de la expresión de filtro o el bloque de controlador de excepciones de un controlador de excepciones.
+description: Recupera un código que identifica el tipo de excepción que se produce. Solo se puede llamar a la función desde la expresión de filtro o el bloque de controlador de excepciones de un controlador de excepciones.
 ms.assetid: f3c4a9f3-c9ae-4d20-85a7-787cb32278d1
-title: GetExceptionCode (macro)
+title: Macro GetExceptionCode
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,19 +12,19 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 3b87b77ddb2d2e2af3a22e30d1204cf178ee6981
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5c1badd5317b5a12eb97ed6418873b5c576f520f4a8106361abb1a6f7c95921e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162666"
 ---
-# <a name="getexceptioncode-macro"></a>GetExceptionCode (macro)
+# <a name="getexceptioncode-macro"></a>Macro GetExceptionCode
 
-Recupera un código que identifica el tipo de excepción que se produce. Solo se puede llamar a la función desde dentro de la expresión de filtro o el bloque de controlador de excepciones de un controlador de excepciones.
+Recupera un código que identifica el tipo de excepción que se produce. Solo se puede llamar a la función desde la expresión de filtro o el bloque de controlador de excepciones de un controlador de excepciones.
 
 > [!Note]  
-> El compilador de optimización de C/C++ de Microsoft interpreta esta función como una palabra clave y su uso fuera de la sintaxis de control de excepciones adecuada genera un error del compilador.
+> El compilador de optimización de Microsoft C/C++ interpreta esta función como una palabra clave y su uso fuera de la sintaxis adecuada de control de excepciones genera un error del compilador.
 
  
 
@@ -43,55 +43,55 @@ Esta macro no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto identifica el tipo de excepción. En la tabla siguiente se identifican los códigos de excepción que se pueden producir debido a errores de programación comunes. Estos valores se definen en WinBase. h y en Winnt. h.
+El valor devuelto identifica el tipo de excepción. En la tabla siguiente se identifican los códigos de excepción que pueden producirse debido a errores de programación comunes. Estos valores se definen en WinBase.h y WinNT.h.
 
 
 
 | Código devuelto                                                                                                         | Descripción                                                                                                                                                                                                                                                                                                                 |
 |---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**infracción de acceso de excepción \_ \_**</dt> </dl>         | El subproceso intenta leer o escribir en una dirección virtual para la que no tiene acceso.<br/> Este valor se define como \_ infracción de acceso de estado \_ .<br/>                                                                                                                                                 |
-| <dl> <dt>**se \_ han \_ superado los límites de la matriz de excepciones \_**</dt> </dl>   | El subproceso intenta tener acceso a un elemento de matriz que está fuera de los límites y el hardware subyacente admite la comprobación de límites.<br/> Este valor se define como límites de la matriz de estado \_ \_ \_ excedidos.<br/>                                                                                                                 |
-| <dl> <dt>**punto de interrupción de excepción \_**</dt> </dl>                | Se encontró un punto de interrupción.<br/> Este valor se define como punto de interrupción de estado \_ .<br/>                                                                                                                                                                                                                             |
-| <dl> <dt>**desalineación del tipo de carácter de excepción \_ \_**</dt> </dl>    | El subproceso intenta leer o escribir datos desalineados en hardware que no proporciona alineación. Por ejemplo, los valores de 16 bits se deben alinear en límites de 2 bytes, valores de 32 bits en límites de 4 bytes, etc.<br/> Este valor se define como mal alineación de tipo de carácter de estado \_ \_ .<br/>                    |
-| <dl> <dt>**\_ \_ operando desnormalizado de excepción FLT \_**</dt> </dl>    | Uno de los operandos de una operación de punto flotante es desnormalizado. Un valor desnormalizado es el que es demasiado pequeño para representarlo como un valor de punto flotante estándar.<br/> Este valor se define como \_ \_ operando desnormalizado de estado Float \_ .<br/>                                                                                  |
-| <dl> <dt>**EXCEPCIÓN \_ FLT \_ dividida \_ por \_ cero**</dt> </dl>     | El subproceso intenta dividir un valor de punto flotante en un divisor de punto flotante de 0 (cero).<br/> Este valor se define como estado \_ float \_ divide \_ por \_ cero.<br/>                                                                                                                                               |
-| <dl> <dt>**\_ \_ resultado inexacto de la excepción FLT \_**</dt> </dl>      | El resultado de una operación de punto flotante no se puede representar exactamente como una fracción decimal.<br/> Este valor se define como el \_ resultado Float inexacto de status \_ \_ .<br/>                                                                                                                                                |
-| <dl> <dt>**EXCEPCIÓN de la \_ operación de FLT \_ no válida \_**</dt> </dl>   | Una excepción de punto flotante que no se incluye en esta lista.<br/> Este valor se define como la \_ operación Float de estado \_ no válida \_ .<br/>                                                                                                                                                                             |
-| <dl> <dt>**desbordamiento de la excepción \_ FLT \_**</dt> </dl>             | El exponente de una operación de punto flotante es mayor que la magnitud permitida por el tipo correspondiente.<br/> Este valor se define como estado \_ de \_ desbordamiento de float.<br/>                                                                                                                                         |
-| <dl> <dt>**comprobación de la pila de la excepción \_ FLT \_ \_**</dt> </dl>         | La pila se ha desbordado o está subdesbordamiento, debido a una operación de punto flotante.<br/> Este valor se define como estado \_ float \_ stack \_ check.<br/>                                                                                                                                                                 |
-| <dl> <dt>**subdesbordamiento de la excepción \_ FLT \_**</dt> </dl>            | El exponente de una operación de punto flotante es menor que la magnitud permitida por el tipo correspondiente.<br/> Este valor se define como un \_ subdesbordamiento de estado flotante \_ .<br/>                                                                                                                                           |
-| <dl> <dt>**\_Página protección de excepciones \_**</dt> </dl>               | El subproceso ha tenido acceso a la memoria asignada con el \_ modificador de protección de páginas.<br/> Este valor se define como infracción de la página de estado de \_ protección \_ \_ .<br/>                                                                                                                                                                          |
-| <dl> <dt>**\_instrucción no válida de excepción \_**</dt> </dl>      | El subproceso intenta ejecutar una instrucción no válida.<br/> Este valor se define como \_ instrucción no válida de estado \_ .<br/>                                                                                                                                                                                            |
-| <dl> <dt>**EXCEPCIÓN \_ en \_ error de página \_**</dt> </dl>           | El subproceso intenta tener acceso a una página que no está presente y el sistema no puede cargar la página. Por ejemplo, esta excepción puede producirse si se pierde una conexión de red mientras se ejecuta un programa a través de una red.<br/> Este valor se define como estado \_ en \_ error de página \_ .<br/>                                   |
-| <dl> <dt>**\_división int \_ \_ de excepción por \_ cero**</dt> </dl>     | El subproceso intenta dividir un valor entero por un divisor entero de 0 (cero).<br/> Este valor se define como el estado de \_ \_ división \_ de enteros por \_ cero.<br/>                                                                                                                                                         |
-| <dl> <dt>**\_desbordamiento int de excepción \_**</dt> </dl>             | El resultado de una operación de entero crea un valor que es demasiado grande para que lo mantenga el registro de destino. En algunos casos, esto dará lugar a un transporte fuera del bit más significativo del resultado. Algunas operaciones no establecen la marca de transporte.<br/> Este valor se define como estado de \_ desbordamiento de enteros \_ .<br/> |
-| <dl> <dt>**disposición de excepción \_ no válida \_**</dt> </dl>      | Un controlador de excepciones devuelve una disposición no válida al distribuidor de excepciones. Los programadores que usan un lenguaje de alto nivel, como C, nunca deben encontrar esta excepción.<br/> Este valor se define como la \_ disposición de estado no válida \_ .<br/>                                                                      |
-| <dl> <dt>**identificador de excepción \_ no válido \_**</dt> </dl>           | El subproceso utilizó un identificador para un objeto de kernel que no era válido (probablemente porque se había cerrado).<br/> Este valor se define como un \_ identificador no válido de estado \_ .<br/>                                                                                                                                                 |
-| <dl> <dt>**excepción no \_ continuada de excepción \_**</dt> </dl> | El subproceso intenta continuar la ejecución después de que se produzca una excepción no continuable.<br/> Este valor se define como excepción de estado no \_ continuable \_ .<br/>                                                                                                                                                       |
-| <dl> <dt>**\_instrucción priv de excepción \_**</dt> </dl>         | El subproceso intenta ejecutar una instrucción con una operación que no está permitida en el modo de equipo actual.<br/> Este valor se define como instrucción con privilegios de estado \_ \_ .<br/>                                                                                                                           |
-| <dl> <dt>**\_paso único de la excepción \_**</dt> </dl>              | Una captura de seguimiento u otro mecanismo de instrucción única indica que se ejecuta una instrucción.<br/> Este valor se define como estado de \_ un solo \_ paso.<br/>                                                                                                                                                           |
-| <dl> <dt>**desbordamiento de la pila de excepciones \_ \_**</dt> </dl>           | El subproceso usa su pila.<br/> Este valor se define como desbordamiento de la pila de estado \_ \_ .<br/>                                                                                                                                                                                                                       |
-| <dl> <dt>**desenredado de estado \_ \_ ConsoliDate**</dt> </dl>          | Se ha ejecutado una consolidación de fotogramas.<br/>                                                                                                                                                                                                                                                                         |
+| <dl> <dt>**INFRACCIÓN DE \_ ACCESO DE \_ EXCEPCIONES**</dt> </dl>         | El subproceso intenta leer o escribir en una dirección virtual para la que no tiene acceso.<br/> Este valor se define como INFRACCIÓN \_ DE ACCESO DE \_ ESTADO.<br/>                                                                                                                                                 |
+| <dl> <dt>**LÍMITES \_ DE \_ MATRIZ DE \_ EXCEPCIONES SUPERADOS**</dt> </dl>   | El subproceso intenta acceder a un elemento de matriz que está fuera de los límites y el hardware subyacente admite la comprobación de límites.<br/> Este valor se define como STATUS \_ ARRAY \_ BOUNDS \_ EXCEEDED.<br/>                                                                                                                 |
+| <dl> <dt>**PUNTO DE \_ INTERRUPCIÓN DE EXCEPCIÓN**</dt> </dl>                | Se encuentra un punto de interrupción.<br/> Este valor se define como STATUS \_ BREAKPOINT.<br/>                                                                                                                                                                                                                             |
+| <dl> <dt>**ERROR \_ DE ALINEACIÓN DEL TIPO \_ DE DATOS DE EXCEPCIÓN**</dt> </dl>    | El subproceso intenta leer o escribir datos que están mal alineados en hardware que no proporciona alineación. Por ejemplo, los valores de 16 bits deben estar alineados en límites de 2 bytes, valores de 32 bits en límites de 4 bytes, y así sucesivamente.<br/> Este valor se define como STATUS \_ DATATYPE \_ MISALIGNMENT.<br/>                    |
+| <dl> <dt>**OPERANDO \_ \_ DESNORMAL DE \_ EXCEPCIÓN FLT**</dt> </dl>    | Uno de los operandos de una operación de punto flotante es desnormal. Un valor desnormal es demasiado pequeño para representarlo como un valor de punto flotante estándar.<br/> Este valor se define como STATUS \_ FLOAT \_ DENORMAL \_ OPERAND.<br/>                                                                                  |
+| <dl> <dt>**EXCEPCIÓN \_ FLT \_ DIVIDE POR \_ \_ CERO**</dt> </dl>     | El subproceso intenta dividir un valor de punto flotante entre un divisor de punto flotante de 0 (cero).<br/> Este valor se define como STATUS \_ FLOAT \_ DIVIDE BY \_ \_ ZERO.<br/>                                                                                                                                               |
+| <dl> <dt>**RESULTADO \_ \_ INEXACT DE EXCEPCIÓN FLT \_**</dt> </dl>      | El resultado de una operación de punto flotante no se puede representar exactamente como una fracción decimal.<br/> Este valor se define como STATUS \_ FLOAT \_ INEXACT \_ RESULT.<br/>                                                                                                                                                |
+| <dl> <dt>**EXCEPTION \_ FLT \_ INVALID \_ OPERATION**</dt> </dl>   | Excepción de punto flotante que no se incluye en esta lista.<br/> Este valor se define como STATUS \_ FLOAT \_ INVALID \_ OPERATION.<br/>                                                                                                                                                                             |
+| <dl> <dt>**EXCEPCIÓN \_ FLT \_ OVERFLOW**</dt> </dl>             | El exponente de una operación de punto flotante es mayor que la magnitud permitida por el tipo correspondiente.<br/> Este valor se define como STATUS \_ FLOAT \_ OVERFLOW.<br/>                                                                                                                                         |
+| <dl> <dt>**EXCEPTION \_ FLT \_ STACK \_ CHECK**</dt> </dl>         | La pila se ha desbordado o se ha desbordado debido a una operación de punto flotante.<br/> Este valor se define como STATUS \_ FLOAT \_ STACK \_ CHECK.<br/>                                                                                                                                                                 |
+| <dl> <dt>**\_SUBDESBORDO DE EXCEPCIÓN \_ FLT**</dt> </dl>            | El exponente de una operación de punto flotante es menor que la magnitud permitida por el tipo correspondiente.<br/> Este valor se define como STATUS \_ FLOAT \_ UNDERFLOW.<br/>                                                                                                                                           |
+| <dl> <dt>**PÁGINA \_ PROTECCIÓN DE \_ EXCEPCIONES**</dt> </dl>               | El subproceso ha accedido a la memoria asignada con el modificador PAGE \_ GUARD.<br/> Este valor se define como INFRACCIÓN DE LA PÁGINA DE PROTECCIÓN \_ \_ DE \_ ESTADO.<br/>                                                                                                                                                                          |
+| <dl> <dt>**INSTRUCCIÓN \_ NO ILEGAL DE \_ EXCEPCIÓN**</dt> </dl>      | El subproceso intenta ejecutar una instrucción no válida.<br/> Este valor se define como INSTRUCCIÓN \_ STATUS \_ ILLEGAL.<br/>                                                                                                                                                                                            |
+| <dl> <dt>**EXCEPCIÓN \_ EN \_ ERROR DE \_ PÁGINA**</dt> </dl>           | El subproceso intenta acceder a una página que no está presente y el sistema no puede cargar la página. Por ejemplo, esta excepción puede producirse si se pierde una conexión de red mientras se ejecuta un programa a través de una red.<br/> Este valor se define como STATUS \_ IN \_ PAGE \_ ERROR.<br/>                                   |
+| <dl> <dt>**EXCEPTION \_ INT \_ DIVIDE \_ BY \_ ZERO**</dt> </dl>     | El subproceso intenta dividir un valor entero entre un divisor entero de 0 (cero).<br/> Este valor se define como STATUS \_ INTEGER \_ DIVIDE BY \_ \_ ZERO.<br/>                                                                                                                                                         |
+| <dl> <dt>**EXCEPTION \_ INT \_ OVERFLOW**</dt> </dl>             | El resultado de una operación de entero crea un valor demasiado grande para que lo tenga el registro de destino. En algunos casos, esto dará como resultado una realización del bit más significativo del resultado. Algunas operaciones no establecen la marca de transporte.<br/> Este valor se define como STATUS \_ INTEGER \_ OVERFLOW.<br/> |
+| <dl> <dt>**DISPOSICIÓN \_ NO VÁLIDA DE \_ EXCEPCIÓN**</dt> </dl>      | Un controlador de excepciones devuelve una disposición no válida al distribuidor de excepciones. Los programadores que usan un lenguaje de alto nivel como C nunca deben encontrar esta excepción.<br/> Este valor se define como STATUS \_ INVALID \_ DISPOSITION.<br/>                                                                      |
+| <dl> <dt>**IDENTIFICADOR \_ DE EXCEPCIÓN NO \_ VÁLIDO**</dt> </dl>           | El subproceso usó un identificador para un objeto kernel que no era válido (probablemente porque se había cerrado).<br/> Este valor se define como STATUS \_ INVALID \_ HANDLE.<br/>                                                                                                                                                 |
+| <dl> <dt>**EXCEPCIÓN \_ EXCEPCIÓN \_ NOTINUABLE**</dt> </dl> | El subproceso intenta continuar la ejecución después de que se produzca una excepción no continuable.<br/> Este valor se define como STATUS \_ NONCONTINUABLE \_ EXCEPTION.<br/>                                                                                                                                                       |
+| <dl> <dt>**INSTRUCCIÓN \_ PRIV \_ DE EXCEPCIÓN**</dt> </dl>         | El subproceso intenta ejecutar una instrucción con una operación que no está permitida en el modo de equipo actual.<br/> Este valor se define como INSTRUCCIÓN CON \_ \_ PRIVILEGIOS DE ESTADO.<br/>                                                                                                                           |
+| <dl> <dt>**PASO \_ ÚNICO DE \_ EXCEPCIÓN**</dt> </dl>              | Una captura de seguimiento u otro mecanismo de instrucción único indica que se ejecuta una instrucción.<br/> Este valor se define como STATUS \_ SINGLE \_ STEP.<br/>                                                                                                                                                           |
+| <dl> <dt>**DESBORDAMIENTO \_ DE PILA \_ DE EXCEPCIONES**</dt> </dl>           | El subproceso usa su pila.<br/> Este valor se define como STATUS \_ STACK \_ OVERFLOW.<br/>                                                                                                                                                                                                                       |
+| <dl> <dt>**CONSOLIDACIÓN \_ DE DESENREDO \_ DE ESTADO**</dt> </dl>          | Se ha ejecutado una consolidación de fotogramas.<br/>                                                                                                                                                                                                                                                                         |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Solo se puede llamar a la función **GetExceptionCode** desde dentro de la expresión de filtro o el bloque de controlador de excepciones de un controlador de excepciones. La expresión de filtro se evalúa si se produce una excepción durante la ejecución del bloque **\_ \_ try** y determina si se ejecuta el bloque **\_ \_ Except** .
+Solo se puede llamar a la función **GetExceptionCode** desde la expresión de filtro o el bloque de controlador de excepciones de un controlador de excepciones. La expresión de filtro se evalúa si se produce una excepción durante la **\_ \_** ejecución del bloque **\_ \_ try** y determina si se ejecuta o no el bloque except.
 
-La expresión de filtro puede invocar una función de filtro. La función Filter no puede llamar a **GetExceptionCode**. Sin embargo, el valor devuelto de **GetExceptionCode** se puede pasar como un parámetro a una función de filtro. El valor devuelto de la función [**GetExceptionInformation**](getexceptioninformation.md) también se puede pasar como un parámetro a una función de filtro. **GetExceptionInformation** devuelve un puntero a una estructura que incluye la información del código de la excepción.
+La expresión de filtro puede invocar una función de filtro. La función filter no puede llamar **a GetExceptionCode.** Sin embargo, el valor devuelto **de GetExceptionCode** se puede pasar como parámetro a una función de filtro. El valor devuelto de la [**función GetExceptionInformation**](getexceptioninformation.md) también se puede pasar como parámetro a una función de filtro. **GetExceptionInformation** devuelve un puntero a una estructura que incluye la información del código de excepción.
 
-Cuando existen controladores anidados, cada expresión de filtro se evalúa hasta que se evalúa una como controlador de ejecución de excepción o continuación de la ejecución de la \_ \_ excepción \_ \_ . Cada expresión de filtro puede invocar **GetExceptionCode** para obtener el código de excepción.
+Cuando existen controladores anidados, cada expresión de filtro se evalúa hasta que una se evalúa como EXCEPTION \_ EXECUTE HANDLER o EXCEPTION CONTINUE \_ \_ \_ EXECUTION. Cada expresión de filtro puede invocar **GetExceptionCode para** obtener el código de excepción.
 
 El código de excepción devuelto es el código generado por una excepción de hardware o el código especificado en la función [**RaiseException**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception) para una excepción generada por software.
 
-Al controlar la excepción de punto de interrupción, es importante incrementar el puntero de instrucción en el registro de contexto para continuar a partir de esta excepción.
+Al controlar la excepción de punto de interrupción, es importante incrementar el puntero de instrucción en el registro de contexto para continuar desde esta excepción.
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo, vea [usar un controlador de excepciones](using-an-exception-handler.md).
+Para obtener un ejemplo, vea [Usar un controlador de excepciones.](using-an-exception-handler.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -99,8 +99,8 @@ Para obtener un ejemplo, vea [usar un controlador de excepciones](using-an-excep
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
@@ -114,7 +114,7 @@ Para obtener un ejemplo, vea [usar un controlador de excepciones](using-an-excep
 [**RaiseException**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception)
 </dt> <dt>
 
-[Funciones de control de excepciones estructurado](structured-exception-handling-functions.md)
+[Funciones estructuradas de control de excepciones](structured-exception-handling-functions.md)
 </dt> <dt>
 
 [Información general sobre el control estructurado de excepciones](structured-exception-handling.md)

@@ -1,5 +1,5 @@
 ---
-description: 'Msvm_CopyFileToGuestJob método::GetError: recupera el objeto de error para el trabajo, si existe alguno.'
+description: 'Msvm_CopyFileToGuestJob::GetError: recupera el objeto de error para el trabajo, si existe uno.'
 ms.assetid: 478E9170-A523-4CE1-BD97-57D713FAF71B
 title: Msvm_CopyFileToGuestJob::GetError (método)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c7cecaf7254788ae064ca42f2ae0c26e8ad83d7e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c5ef377dfd655c21137bbb0c7d34dfcb047054652afe162d75f2400acee045ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118149808"
 ---
 # <a name="msvm_copyfiletoguestjobgeterror-method"></a>Método Msvm \_ CopyFileToGuestJob::GetError
 
-Recupera el objeto de error para el trabajo, si existe uno. Cuando el trabajo se está ejecutando o ha finalizado sin errores, este método no devuelve un [**objeto \_ error CIM.**](/previous-versions//cc150671(v=vs.85)) Sin embargo, si se ha producido un error en el trabajo debido a algún problema interno o porque un cliente ha finalizado el trabajo, se devuelve una instancia **\_ de error** de CIM.
+Recupera el objeto de error para el trabajo, si existe uno. Cuando el trabajo se está ejecutando o ha finalizado sin errores, este método no devuelve un objeto [**\_ cim error.**](/previous-versions//cc150671(v=vs.85)) Sin embargo, si se ha producido un error en el trabajo debido a algún problema interno o porque un cliente ha terminado el trabajo, se devuelve una instancia **\_ de error** de CIM.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ uint32 GetError(
 *Error* \[ out\]
 </dt> <dd>
 
-Si el estado operativo del trabajo no es 2 (correcto), este método devuelve una instancia incrustada de la clase Error de [**Msvm, \_**](msvm-error.md) en formato CIM-XML. Si el estado operativo del trabajo es 2 (correcto), **se devuelve Null.**
+Si el estado operativo del trabajo no es 2 (Correcto), este método devuelve una instancia incrustada de la clase Error de [**Msvm, \_**](msvm-error.md) en formato CIM-XML. Si el estado operativo del trabajo es 2 (correcto), **se devuelve Null.**
 
 </dd> </dl>
 
@@ -92,17 +92,17 @@ Este método devuelve uno de los valores siguientes.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8.1 solo \[ aplicaciones de escritorio\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                 |
 | Espacio de nombres<br/>                | \\\\Root \\ Virtualization \\ V2<br/>                                                                 |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

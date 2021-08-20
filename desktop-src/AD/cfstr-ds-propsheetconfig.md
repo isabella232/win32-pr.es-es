@@ -1,6 +1,6 @@
 ---
 title: CFSTR_DS_PROPSHEETCONFIG
-description: El \_ formato del \_ portapapeles de CFSTR DS PROPSHEETCONFIG proporciona un identificador de memoria global (hglobal) que contiene una estructura PROPSHEETCFG.
+description: El formato del Portapapeles PROPSHEETCONFIG de CFSTR DS proporciona un identificador de memoria \_ \_ global (HGLOBAL) que contiene una estructura PROPSHEETCFG.
 ms.assetid: 26b439de-3bc7-4aa6-97e6-2aaa03451e2b
 ms.tgt_platform: multiple
 topic_type:
@@ -11,12 +11,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60925e0082ecfe86c99b4b51c9c9b35a8dcdb180
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b29c601118f8218dcd3b888dc4ff1a8dd160b9d7abfc69710d9b6703e5676064
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118023585"
 ---
 # <a name="cfstr_ds_propsheetconfig"></a>CFSTR \_ DS \_ PROPSHEETCONFIG
 
@@ -30,10 +30,10 @@ ms.locfileid: "104150143"
 
 
 
-El formato del portapapeles de **CFSTR \_ DS \_ PROPSHEETCONFIG** proporciona un identificador de memoria global (**HGLOBAL**) que contiene una estructura [**PROPSHEETCFG**](propsheetcfg.md) .
+El **formato del \_ Portapapeles \_ PROPSHEETCONFIG de CFSTR DS** proporciona un identificador de memoria global **(HGLOBAL)** que contiene una [**estructura PROPSHEETCFG.**](propsheetcfg.md)
 
 > [!Note]  
-> Este valor de formato del portapapeles no está definido en un archivo de encabezado publicado. Para usar este valor de formato del portapapeles, debe definirlo en el formato exacto que se muestra.
+> Este valor de formato del Portapapeles no se define en un archivo de encabezado publicado. Para usar este valor de formato del Portapapeles, debe definirlo usted mismo en el formato exacto que se muestra.
 
  
 
@@ -44,7 +44,7 @@ El formato del portapapeles de **CFSTR \_ DS \_ PROPSHEETCONFIG** proporciona un
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |

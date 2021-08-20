@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: d3a5bff99552a4c5d65267c390c25a2892d3d32f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1e9a831eae416986dc4111e9928ffe9c2b09119fb4595119174d745aedbb6ac2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118809897"
 ---
 # <a name="d3dxmatrixshadow-function-d3dx10mathh"></a>Función D3DXMatrixShadow (D3DX10Math.h)
 
@@ -56,7 +56,7 @@ Puntero a la [**estructura D3DXMATRIX**](d3d10-d3dxmatrix.md) que es el resultad
 
 Tipo: **const [**D3DXVECTOR4**](../direct3d9/d3dxvector4.md) \***
 
-Puntero a [**un D3DXVECTOR4**](d3d10-d3dxvector4.md) que describe la posición de la luz.
+Puntero a [**D3DXVECTOR4**](d3d10-d3dxvector4.md) que describe la posición de la luz.
 
 </dd> <dt>
 
@@ -77,11 +77,11 @@ Puntero a una estructura D3DXMATRIX que aplana la geometría en un plano.
 
 ## <a name="remarks"></a>Comentarios
 
-La **función D3DXMatrixShadow** aplana la geometría en un plano, como si la conversión de una sombra a partir de una luz.
+La **función D3DXMatrixShadow** aplana la geometría en un plano, como si se hubiera convertido una sombra a partir de una luz.
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la **función D3DXMatrixShadow** se puede usar como parámetro para otra función.
 
-Esta función usa la siguiente fórmula para calcular la matriz devuelta.
+Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 
 ```
@@ -110,7 +110,7 @@ Si el componente w de la luz es 0, el rayo del origen a la luz representa una lu
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

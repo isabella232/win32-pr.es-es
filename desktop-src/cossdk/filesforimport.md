@@ -60,10 +60,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |----------------|------------------------------------------------------------------------------|
 | Descripción    | Nombre del archivo MSI que contiene la aplicación que se puede importar. |
-| Access         | ReadOnly                                                                     |
+| Acceso         | ReadOnly                                                                     |
 | Tipo           | String                                                                       |
 | Predeterminado        | N/D                                                                          |
 | Sistema mínimo | Windows XP                                                                   |
@@ -76,10 +76,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |----------------|------------------------------|
 | Descripción    | Nombre de la aplicación. |
-| Access         | ReadOnly                     |
+| Acceso         | ReadOnly                     |
 | Tipo           | String                       |
 | Predeterminado        | ""                           |
 | Sistema mínimo | Windows XP                   |
@@ -92,10 +92,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |----------------|-----------------------------------|
 | Descripción    | Descripción de la aplicación. |
-| Access         | ReadOnly                          |
+| Acceso         | ReadOnly                          |
 | Tipo           | String                            |
 | Predeterminado        | ""                                |
 | Sistema mínimo | Windows XP                        |
@@ -108,10 +108,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | Nombre del archivo DLL o EXE que contiene la aplicación. Esta propiedad se devuelve cuando se llama al método de propiedad [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
-| Access         | ReadOnly                                                                                                                                                                                                                              |
+| Acceso         | ReadOnly                                                                                                                                                                                                                              |
 | Tipo           | String                                                                                                                                                                                                                                |
 | Predeterminado        | ""                                                                                                                                                                                                                                    |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                            |
@@ -124,10 +124,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |----------------|--------------------------------------------------|
 | Descripción    | Indica si la aplicación tiene usuarios. |
-| Access         | ReadOnly                                         |
+| Acceso         | ReadOnly                                         |
 | Tipo           | Bool                                             |
 | Valor predeterminado        | False                                            |
 | Sistema mínimo | Windows XP                                       |
@@ -140,10 +140,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |----------------|-----------------------------------------------|
 | Descripción    | Indica si la aplicación es un proxy. |
-| Access         | ReadOnly                                      |
+| Acceso         | ReadOnly                                      |
 | Tipo           | Bool                                          |
 | Valor predeterminado        | False                                         |
 | Sistema mínimo | Windows XP                                    |
@@ -156,10 +156,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |----------------|-------------------------------------------------|
 | Descripción    | Indica si la aplicación es un servicio. |
-| Access         | ReadOnly                                        |
+| Acceso         | ReadOnly                                        |
 | Tipo           | Bool                                            |
 | Valor predeterminado        | False                                           |
 | Sistema mínimo | Windows XP                                      |
@@ -172,10 +172,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |----------------|-----------------------------------------------|
 | Descripción    | Descripción de la partición de la aplicación. |
-| Access         | ReadOnly                                      |
+| Acceso         | ReadOnly                                      |
 | Tipo           | String                                        |
 | Predeterminado        | ""                                            |
 | Sistema mínimo | Windows Server 2003                           |
@@ -188,10 +188,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |----------------|------------------------------------------|
 | Descripción    | GUID de la partición de la aplicación. |
-| Access         | ReadOnly                                 |
+| Acceso         | ReadOnly                                 |
 | Tipo           | String                                   |
 | Predeterminado        | ""                                       |
 | Sistema mínimo | Windows Server 2003                      |
@@ -204,10 +204,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |----------------|------------------------------------------|
 | Descripción    | Nombre de la partición de la aplicación. |
-| Access         | ReadOnly                                 |
+| Acceso         | ReadOnly                                 |
 | Tipo           | String                                   |
 | Predeterminado        | ""                                       |
 | Sistema mínimo | Windows Server 2003                      |
@@ -216,7 +216,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

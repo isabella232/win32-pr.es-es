@@ -103,7 +103,7 @@ Esta clase contiene los atributos siguientes para Windows Server 2012:
 | [**Último elemento primario conocido**](a-lastknownparent.md)                                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Objetos administrados**](a-managedobjects.md)                                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Mastered-By**](a-masteredby.md)                                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
-| [**Modify-Time-Stamp**](a-modifytimestamp.md)                                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
+| [**Modificación de marca de tiempo**](a-modifytimestamp.md)                                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**ms-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**ms-COM-UserLink**](a-mscom-userlink.md)                                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**ms-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)                              | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
@@ -162,12 +162,12 @@ Esta clase contiene los atributos siguientes para Windows Server 2012:
 | [**Object-Class**](a-objectclass.md)                                                            | Verdadero      | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Guid de objeto**](a-objectguid.md)                                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Object-Version**](a-objectversion.md)                                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
-| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
+| [**Otros objetos well-known-objects**](a-otherwellknownobjects.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)                        | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Posibles inferiores**](a-possibleinferiors.md)                                                | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
-| [**Direcciones proxy**](a-proxyaddresses.md)                                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
+| [**Direcciones de proxy**](a-proxyaddresses.md)                                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Rdn**](a-name.md)                                                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
@@ -178,23 +178,23 @@ Esta clase contiene los atributos siguientes para Windows Server 2012:
 | [**Revisión**](a-revision.md)                                                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
-| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
+| [**Mostrar solo en vista avanzada**](a-showinadvancedviewonly.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Site-Object-BL**](a-siteobjectbl.md)                                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Structural-Object-Class**](a-structuralobjectclass.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Sub refs**](a-subrefs.md)                                                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Marcas del sistema**](a-systemflags.md)                                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**USN cambiado**](a-usnchanged.md)                                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
-| [**Creado por USN**](a-usncreated.md)                                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
+| [**UsN creado**](a-usncreated.md)                                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**USN-Intersite**](a-usnintersite.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**USN-Source**](a-usnsource.md)                                                                | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Wbem-Path**](a-wbempath.md)                                                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
-| [**Objetos conocidos**](a-wellknownobjects.md)                                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
+| [**Well-Known-Objects**](a-wellknownobjects.md)                                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Cuándo se ha cambiado**](a-whenchanged.md)                                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**Cuando se crea**](a-whencreated.md)                                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
-| [**WWW-Página principal**](a-wwwhomepage.md)                                                           | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
+| [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)                                                           | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 | [**WWW-Page-Other**](a-url.md)                                                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                   |
 
 

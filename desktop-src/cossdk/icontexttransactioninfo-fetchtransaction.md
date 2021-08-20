@@ -1,7 +1,7 @@
 ---
-description: Recupera el proxy de transacción o de transacción asociado al contexto actual, si existe.
+description: Recupera la transacción o el proxy de transacción asociado al contexto actual, si existe.
 ms.assetid: 2f85f395-3ec5-4c5a-a6db-c902cb8f8486
-title: 'IContextTransactionInfo:: FetchTransaction (método)'
+title: IContextTransactionInfo::FetchTransaction (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 0e753974f93539f051465f13a1ea92d7e0e3bfa1
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6d673483118feb02ec2f1172640b9972d883505f48bc1fd8d8803844b963b02b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991065"
 ---
-# <a name="icontexttransactioninfofetchtransaction-method"></a>IContextTransactionInfo:: FetchTransaction (método)
+# <a name="icontexttransactioninfofetchtransaction-method"></a>IContextTransactionInfo::FetchTransaction (método)
 
-Recupera el proxy de transacción o de transacción asociado al contexto actual, si existe.
+Recupera la transacción o el proxy de transacción asociado al contexto actual, si existe.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ HRESULT FetchTransaction(
 *pUnk* \[ out, retval\]
 </dt> <dd>
 
-El proxy de transacción o transacción asociado al contexto actual; de lo contrario, **es null**.
+El proxy de transacción o transacción asociado al contexto actual; de lo contrario, **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, e \_ OUTOFMEMORY, e \_ inesperados y S \_ OK.
+Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, E \_ OUTOFMEMORY, E \_ UNEXPECTED y S \_ OK.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,8 +55,8 @@ Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, e \
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP2 \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Windows Server 2003 con \[ solo aplicaciones de escritorio de SP1\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio de SP1 \[\]<br/> |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Atributo ms-DS-ExecuteScriptPassword
-description: Se usa durante el cambio de nombre de dominio. Este valor no se puede escribir ni leer mediante LDAP.
+description: Se usa durante el cambio de nombre del dominio. Este valor no se puede escribir ni leer mediante LDAP.
 ms.assetid: 381c3676-0a11-4e53-8093-f04dbf156250
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118426758"
 ---
 # <a name="ms-ds-executescriptpassword-attribute"></a>Atributo ms-DS-ExecuteScriptPassword
 
-Se usa durante el cambio de nombre de dominio. Este valor no se puede escribir ni leer mediante LDAP.
+Se usa durante el cambio de nombre del dominio. Este valor no se puede escribir ni leer mediante LDAP.
 
 
 
@@ -32,7 +32,7 @@ Se usa durante el cambio de nombre de dominio. Este valor no se puede escribir n
 | CN                | ms-DS-ExecuteScriptPassword                           |
 | Ldap-Display-Name | msDS-ExecuteScriptPassword                            |
 | Size              | \-                                                    |
-| Actualizar privilegios  | El sistema establece este valor.                      |
+| Privilegio actualizar  | El sistema establece este valor.                      |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1783                               |
 | System-Id-Guid    | 9d054a5a-d187-46c1-9d85-42dfc44a56dd                  |
@@ -53,7 +53,7 @@ Se usa durante el cambio de nombre de dominio. Este valor no se puede escribir n
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------|
 | Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
@@ -74,7 +74,7 @@ Se usa durante el cambio de nombre de dominio. Este valor no se puede escribir n
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------|
 | Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
@@ -137,7 +137,7 @@ Se usa durante el cambio de nombre de dominio. Este valor no se puede escribir n
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
@@ -158,7 +158,7 @@ Se usa durante el cambio de nombre de dominio. Este valor no se puede escribir n
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |

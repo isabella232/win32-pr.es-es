@@ -50,7 +50,7 @@ Propiedad 01 del servidor de terminal de marcador de posición.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
@@ -71,7 +71,7 @@ Propiedad 01 del servidor de terminal de marcador de posición.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
@@ -92,7 +92,7 @@ Propiedad 01 del servidor de terminal de marcador de posición.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |

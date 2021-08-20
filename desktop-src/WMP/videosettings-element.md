@@ -1,70 +1,70 @@
 ---
-title: Elemento videosettings
-description: Elemento videosettings
+title: Elemento VIDEOSETTINGS
+description: Elemento VIDEOSETTINGS
 ms.assetid: 2d147bd2-0010-41ab-8073-a4dc2979be1e
 keywords:
-- Máscaras de Windows Media Player, elemento videosettings
-- Skins, elemento videosettings
-- Elemento videosettings
-- referencia de máscaras, elemento de videoconfiguración
-- elementos, videoconfiguracións
+- Reproductor de Windows Media máscaras, elemento VIDEOSETTINGS
+- skins,ELEMENTO VIDEOSETTINGS
+- Elemento VIDEOSETTINGS
+- referencia de máscaras, elemento VIDEOSETTINGS
+- elements,VIDEOSETTINGS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61dd56c0103b5a4f6f95e913e967526ef1d46b78
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 43096cbe0ee196581a3ad3ed0632342f3fadf2faddf4e203641244687cd660fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103777520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116861"
 ---
-# <a name="videosettings-element"></a>Elemento videosettings
+# <a name="videosettings-element"></a>Elemento VIDEOSETTINGS
 
-El elemento **VIDEOsettings** proporciona una manera de modificar varias configuraciones de vídeo, mediante los atributos y el método que se enumeran aquí.
+El **elemento VIDEOSETTINGS** proporciona una manera de modificar varias configuraciones de vídeo, mediante los atributos y el método que se enumeran aquí.
 
-El elemento **VIDEOsettings** admite los siguientes atributos.
+El **elemento VIDEOSETTINGS** admite los atributos siguientes.
 
 
 
 | Atributo                                  | Descripción                                                 |
 |--------------------------------------------|-------------------------------------------------------------|
-| [brillante](videosettings-brightness.md) | Especifica o recupera el valor de brillo del vídeo. |
-| [diferente](videosettings-contrast.md)     | Especifica o recupera la configuración de contraste del vídeo.   |
-| [altera](videosettings-hue.md)               | Especifica o recupera el valor de matiz del vídeo.        |
-| [satura](videosettings-saturation.md) | Especifica o recupera el valor de saturación del vídeo. |
+| [Brillo](videosettings-brightness.md) | Especifica o recupera la configuración de brillo del vídeo. |
+| [Contraste](videosettings-contrast.md)     | Especifica o recupera la configuración de contraste del vídeo.   |
+| [Hue](videosettings-hue.md)               | Especifica o recupera la configuración de matiz del vídeo.        |
+| [Saturación](videosettings-saturation.md) | Especifica o recupera la configuración de saturación del vídeo. |
 
 
 
- 
+ 
 
-El elemento **VIDEOsettings** admite el método siguiente.
+El **elemento VIDEOSETTINGS** admite el método siguiente.
 
 
 
 | Método                           | Descripción                                    |
 |----------------------------------|------------------------------------------------|
-| [reset](videosettings-reset.md) | Restablece los valores predeterminados de todos los atributos. |
+| [reset](videosettings-reset.md) | Restablece todos los atributos a sus valores predeterminados. |
 
 
 
- 
+ 
 
-El elemento **VIDEOsettings** puede implementar los controladores de eventos [ \_ onchange de atributo](attribute-onchange.md) .
+El **elemento VIDEOSETTINGS** puede implementar los [controladores de eventos \_ onchange](attribute-onchange.md) del atributo.
 
 > [!Note]  
-> Este elemento requiere Windows Media Player para Windows XP o posterior.
+> Este elemento requiere Reproductor de Windows Media para Windows XP o posterior.
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Referencia de programación de máscara**](skin-programming-reference.md)
+[**Referencia de programación de máscaras**](skin-programming-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

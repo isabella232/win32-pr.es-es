@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método EnvironmentVariables Servicios de Escritorio remoto
 - Método EnvironmentVariables Servicios de Escritorio remoto , Win32_TSExpandEnvironmentVariables clase
-- Win32_TSExpandEnvironmentVariables clase Servicios de Escritorio remoto , Método EnvironmentVariables
+- Win32_TSExpandEnvironmentVariables clase Servicios de Escritorio remoto , método EnvironmentVariables
 topic_type:
 - apiref
 api_name:
@@ -78,7 +78,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

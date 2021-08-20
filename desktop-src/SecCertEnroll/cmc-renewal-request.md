@@ -1,19 +1,19 @@
 ---
-description: El ejemplo siguiente contiene una solicitud de renovación de CMC. El ejemplo se generó con las herramientas Certreq.exe y Certutil.exe. El archivo. inf que se usa como entrada para Certreq.exe contiene la configuración siguiente.
+description: El ejemplo siguiente contiene una solicitud de renovación de CMC. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
 ms.assetid: 45b8e5f1-93e0-4216-945a-221a22acfd68
 title: Solicitud de renovación de CMC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 824d266d1ef52b02f88f3bada1b62d942840ab6a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b25886d0ec998934a070e98c85ef43e52982b111bc70ea44bb88da09ce53568
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670335"
 ---
 # <a name="cmc-renewal-request"></a>Solicitud de renovación de CMC
 
-El ejemplo siguiente contiene una solicitud de renovación de CMC. El ejemplo se generó con las herramientas Certreq.exe y Certutil.exe. El archivo. inf que se usa como entrada para Certreq.exe contiene la configuración siguiente.
+El ejemplo siguiente contiene una solicitud de renovación de CMC. El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
 
 ``` syntax
 [NewRequest]
@@ -21,7 +21,7 @@ RequestType=cmc
 RenewalCert=248f7d3c00000000086e
 ```
 
-La configuración especifica el tipo de solicitud (CMC) y el número de serie del certificado en el que se basa la solicitud. Esto genera el siguiente resultado.
+La configuración especifica el tipo de solicitud (CMC) y el número de serie del certificado en el que se basa la solicitud. Esto genera la siguiente salida.
 
 ``` syntax
 PKCS7/CMS Message:

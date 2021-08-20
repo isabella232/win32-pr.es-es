@@ -4,18 +4,18 @@ ms.assetid: e66d46fd-af6f-43ce-a9f7-21389d14cb89
 title: Estructuras de región
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 60a52921dcd0b7ae408a4aceafd38d6e78a029f9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 22912de97dc31ef5842e1db45da13210b26bb1ca18c9be3fb3e986ce73be09f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119037673"
 ---
 # <a name="region-structures"></a>Estructuras de región
 
 Las siguientes estructuras se usan con regiones:
 
--   [**RGNDATA (**](/windows/desktop/api/Wingdi/ns-wingdi-rgndata)
+-   [**RGNDATA**](/windows/desktop/api/Wingdi/ns-wingdi-rgndata)
 -   [**RGNDATAHEADER**](/windows/desktop/api/Wingdi/ns-wingdi-rgndataheader)
 
  

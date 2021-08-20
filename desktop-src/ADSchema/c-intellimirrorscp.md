@@ -31,7 +31,7 @@ Este objeto contiene información de configuración para el servicio que respond
 |-------------------|------------------------------------------------|
 | CN                | Intellimirror-SCP                              |
 | Ldap-Display-Name | intellimirrorSCP                               |
-| Actualizar privilegios  | El administrador del dominio establece este valor. |
+| Privilegio actualizar  | El administrador del dominio establece este valor. |
 | Frecuencia de actualización  | \-                                             |
 | Schema-Id-Guid    | 07383085-91df-11d1-aebc-0000f80367c1           |
 
@@ -59,7 +59,7 @@ Este objeto contiene información de configuración para el servicio que respond
 | Default-Object-Category     | \-                                                                                           |
 | Governs-Id                  | 1.2.840.113556.1.5.151                                                                       |
 | Valor predeterminado de ocultación        | 1                                                                                            |
-| Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                       |
+| Rdn-Att-Id                  | [**Nombre común**](a-cn.md)<br/>                                                       |
 | Subclase de                 | [**Punto de administración de servicios**](c-serviceadministrationpoint.md)<br/>              |
 | Posibles superiores          | [**Equipo de grupo de Intellimirror**](c-intellimirrorgroup.md)[](c-computer.md)            |
 | Clases auxiliares           | \-                                                                                           |
@@ -69,15 +69,15 @@ Este objeto contiene información de configuración para el servicio que respond
 
 
 
-## <a name="windows-2000-server-attributes"></a>Windows 2000 Atributos de servidor
+## <a name="windows-2000-server-attributes"></a>Windows atributos de servidor 2000
 
-Esta clase contiene los atributos siguientes para Windows 2000 Server:
+Esta clase contiene los siguientes atributos para Windows 2000 Server:
 
 
 
 | Atributo                                                                    | Mandatory | Derivado de                                                                             |
 |------------------------------------------------------------------------------|-----------|------------------------------------------------------------------------------------------|
-| [**Admin-Description**](a-admindescription.md)                              | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Descripción del administrador**](a-admindescription.md)                              | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Admin-Display-Name**](a-admindisplayname.md)                             | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Atributos permitidos**](a-allowedattributes.md)                            | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)         | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -85,8 +85,8 @@ Esta clase contiene los atributos siguientes para Windows 2000 Server:
 | [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)    | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Canonical-Name**](a-canonicalname.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Common-Name**](a-cn.md)                                                  | Verdadero      | [**Punto de conexión**](c-connectionpoint.md)<br/> [**Arriba**](c-top.md)<br/> |
-| [**Create-Time-Stamp**](a-createtimestamp.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Nombre común**](a-cn.md)                                                  | Verdadero      | [**Punto de conexión**](c-connectionpoint.md)<br/> [**Arriba**](c-top.md)<br/> |
+| [**Crear marca de tiempo**](a-createtimestamp.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Descripción**](a-description.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Nombre para mostrar**](a-displayname.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Display-Name-Printable**](a-displaynameprintable.md)                     | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -108,7 +108,7 @@ Esta clase contiene los atributos siguientes para Windows 2000 Server:
 | [**Administrado por**](a-managedby.md)                                            | Falso     | [**Punto de conexión**](c-connectionpoint.md)<br/>                                 |
 | [**Objetos administrados**](a-managedobjects.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Mastered-By**](a-masteredby.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Modificación de marca de tiempo**](a-modifytimestamp.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Modify-Time-Stamp**](a-modifytimestamp.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)       | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                    | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**netboot-Allow-New-Clients**](a-netbootallownewclients.md)                | Falso     | **Intellimirror-SCP**                                                                    |
@@ -132,12 +132,12 @@ Esta clase contiene los atributos siguientes para Windows 2000 Server:
 | [**Object-Class**](a-objectclass.md)                                        | Verdadero      | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Guid de objeto**](a-objectguid.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Object-Version**](a-objectversion.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Otros objetos well-known-objects**](a-otherwellknownobjects.md)                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)    | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                       | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Posibles inferiores**](a-possibleinferiors.md)                            | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                           | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Direcciones proxy**](a-proxyaddresses.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Direcciones de proxy**](a-proxyaddresses.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Rdn**](a-name.md)                                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                    | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -149,16 +149,16 @@ Esta clase contiene los atributos siguientes para Windows 2000 Server:
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                           | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                           | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Service-Binding-Information**](a-servicebindinginformation.md)           | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
-| [**Service-Class-Name**](a-serviceclassname.md)                             | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
+| [**Nombre de clase de servicio**](a-serviceclassname.md)                             | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Service-DNS-Name**](a-servicednsname.md)                                 | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Service-DNS-Name-Type**](a-servicednsnametype.md)                        | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
-| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Mostrar solo en vista avanzada**](a-showinadvancedviewonly.md)               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Site-Object-BL**](a-siteobjectbl.md)                                     | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Sub refs**](a-subrefs.md)                                                | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                             | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Marcas del sistema**](a-systemflags.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**USN cambiado**](a-usnchanged.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Creado por USN**](a-usncreated.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**UsN creado**](a-usncreated.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                   | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**USN-Intersite**](a-usnintersite.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -178,14 +178,14 @@ Esta clase contiene los atributos siguientes para Windows 2000 Server:
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------|
 | System-Only                 | Falso                                                                                        |
 | Object-Category             | 1                                                                                            |
 | Default-Object-Category     | \-                                                                                           |
 | Governs-Id                  | 1.2.840.113556.1.5.151                                                                       |
 | Valor predeterminado de ocultación        | 1                                                                                            |
-| Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                       |
+| Rdn-Att-Id                  | [**Nombre común**](a-cn.md)<br/>                                                       |
 | Subclase de                 | [**Punto de administración de servicios**](c-serviceadministrationpoint.md)<br/>              |
 | Posibles superiores          | [**Equipo de grupo de Intellimirror**](c-intellimirrorgroup.md)[](c-computer.md)            |
 | Clases auxiliares           | \-                                                                                           |
@@ -212,8 +212,8 @@ Esta clase contiene los siguientes atributos para Windows Server 2003:
 | [**App-Schema-Version**](a-appschemaversion.md)                             | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Canonical-Name**](a-canonicalname.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Common-Name**](a-cn.md)                                                  | Verdadero      | [**Punto de conexión**](c-connectionpoint.md)<br/> [**Arriba**](c-top.md)<br/> |
-| [**Marca de tiempo de creación**](a-createtimestamp.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Nombre común**](a-cn.md)                                                  | Verdadero      | [**Punto de conexión**](c-connectionpoint.md)<br/> [**Arriba**](c-top.md)<br/> |
+| [**Crear marca de tiempo**](a-createtimestamp.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Descripción**](a-description.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Nombre para mostrar**](a-displayname.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Display-Name-Printable**](a-displaynameprintable.md)                     | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -277,12 +277,12 @@ Esta clase contiene los siguientes atributos para Windows Server 2003:
 | [**Object-Class**](a-objectclass.md)                                        | Verdadero      | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Guid de objeto**](a-objectguid.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Object-Version**](a-objectversion.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Otros objetos well-known-objects**](a-otherwellknownobjects.md)                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)    | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                       | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Posibles inferiores**](a-possibleinferiors.md)                            | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                           | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Direcciones proxy**](a-proxyaddresses.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Direcciones de proxy**](a-proxyaddresses.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Rdn**](a-name.md)                                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                    | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -294,7 +294,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2003:
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                           | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                           | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Service-Binding-Information**](a-servicebindinginformation.md)           | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
-| [**Service-Class-Name**](a-serviceclassname.md)                             | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
+| [**Nombre de clase de servicio**](a-serviceclassname.md)                             | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Service-DNS-Name**](a-servicednsname.md)                                 | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Service-DNS-Name-Type**](a-servicednsnametype.md)                        | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -304,7 +304,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2003:
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                             | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Marcas del sistema**](a-systemflags.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**USN cambiado**](a-usnchanged.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Creado por USN**](a-usncreated.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**UsN creado**](a-usncreated.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                   | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**USN-Intersite**](a-usnintersite.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -312,9 +312,9 @@ Esta clase contiene los siguientes atributos para Windows Server 2003:
 | [**Vendor**](a-vendor.md)                                                   | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Número de versión**](a-versionnumber.md)                                    | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Version-Number-Hi**](a-versionnumberhi.md)                               | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
-| [**Version-Number-Lo**](a-versionnumberlo.md)                               | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
+| [**Número de versión:Lo**](a-versionnumberlo.md)                               | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Wbem-Path**](a-wbempath.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Objetos conocidos**](a-wellknownobjects.md)                             | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Well-Known-Objects**](a-wellknownobjects.md)                             | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Cuándo se ha cambiado**](a-whenchanged.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Cuando se crea**](a-whencreated.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**WWW-Página principal**](a-wwwhomepage.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -328,7 +328,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2003:
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------|
 | System-Only                 | Falso                                                                                        |
 | Object-Category             | 1                                                                                            |
@@ -347,7 +347,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2003:
 
 ## <a name="windows-server-2003-r2-attributes"></a>Windows Atributos de Server 2003 R2
 
-Esta clase contiene los siguientes atributos para Windows Server 2003 R2:
+Esta clase contiene los atributos siguientes para Windows Server 2003 R2:
 
 
 
@@ -430,7 +430,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2003 R2:
 | [**Object-Class**](a-objectclass.md)                                        | Verdadero      | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Guid de objeto**](a-objectguid.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Object-Version**](a-objectversion.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Otros objetos well-known-objects**](a-otherwellknownobjects.md)                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)    | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                       | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Posibles inferiores**](a-possibleinferiors.md)                            | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -450,7 +450,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2003 R2:
 | [**Nombre de clase de servicio**](a-serviceclassname.md)                             | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Service-DNS-Name**](a-servicednsname.md)                                 | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Service-DNS-Name-Type**](a-servicednsnametype.md)                        | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
-| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Mostrar solo en vista avanzada**](a-showinadvancedviewonly.md)               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Site-Object-BL**](a-siteobjectbl.md)                                     | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Structural-Object-Class**](a-structuralobjectclass.md)                   | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Sub refs**](a-subrefs.md)                                                | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -516,10 +516,10 @@ Esta clase contiene los siguientes atributos para Windows Server 2008:
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Canonical-Name**](a-canonicalname.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Nombre común**](a-cn.md)                                                    | Verdadero      | [**Punto de conexión**](c-connectionpoint.md)<br/> [**Arriba**](c-top.md)<br/> |
-| [**Marca de tiempo de creación**](a-createtimestamp.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Crear marca de tiempo**](a-createtimestamp.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Descripción**](a-description.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Nombre para mostrar**](a-displayname.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Nombre para mostrar imprimible**](a-displaynameprintable.md)                       | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Display-Name-Printable**](a-displaynameprintable.md)                       | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Firma DSA**](a-dsasignature.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                    | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Nombre de extensión**](a-extensionname.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -614,7 +614,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2008:
 | [**Nombre de clase de servicio**](a-serviceclassname.md)                               | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Service-DNS-Name**](a-servicednsname.md)                                   | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Service-DNS-Name-Type**](a-servicednsnametype.md)                          | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
-| [**Mostrar solo en vista avanzada**](a-showinadvancedviewonly.md)                 | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                 | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Site-Object-BL**](a-siteobjectbl.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Structural-Object-Class**](a-structuralobjectclass.md)                     | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Sub refs**](a-subrefs.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -645,14 +645,14 @@ Esta clase contiene los siguientes atributos para Windows Server 2008:
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------|
 | System-Only                 | Falso                                                                                        |
 | Object-Category             | 1                                                                                            |
 | Default-Object-Category     | \-                                                                                           |
 | Governs-Id                  | 1.2.840.113556.1.5.151                                                                       |
 | Valor predeterminado de ocultación        | 1                                                                                            |
-| Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                       |
+| Rdn-Att-Id                  | [**Nombre común**](a-cn.md)<br/>                                                       |
 | Subclase de                 | [**Punto de administración de servicios**](c-serviceadministrationpoint.md)<br/>              |
 | Posibles superiores          | [**Equipo de grupo de Intellimirror**](c-intellimirrorgroup.md)[](c-computer.md)            |
 | Clases auxiliares           | \-                                                                                           |
@@ -679,11 +679,11 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | [**App-Schema-Version**](a-appschemaversion.md)                                 | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                    | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Canonical-Name**](a-canonicalname.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Common-Name**](a-cn.md)                                                      | Verdadero      | [**Punto de conexión**](c-connectionpoint.md)<br/> [**Arriba**](c-top.md)<br/> |
-| [**Marca de tiempo de creación**](a-createtimestamp.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Nombre común**](a-cn.md)                                                      | Verdadero      | [**Punto de conexión**](c-connectionpoint.md)<br/> [**Arriba**](c-top.md)<br/> |
+| [**Crear marca de tiempo**](a-createtimestamp.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Descripción**](a-description.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Nombre para mostrar**](a-displayname.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Nombre para mostrar imprimible**](a-displaynameprintable.md)                         | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Display-Name-Printable**](a-displaynameprintable.md)                         | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Firma DSA**](a-dsasignature.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                      | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Nombre de extensión**](a-extensionname.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -770,7 +770,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                           | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Posibles inferiores**](a-possibleinferiors.md)                                | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Direcciones de proxy**](a-proxyaddresses.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Direcciones proxy**](a-proxyaddresses.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Rdn**](a-name.md)                                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                        | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -782,7 +782,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Service-Binding-Information**](a-servicebindinginformation.md)               | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
-| [**Nombre de clase de servicio**](a-serviceclassname.md)                                 | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
+| [**Service-Class-Name**](a-serviceclassname.md)                                 | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Service-DNS-Name**](a-servicednsname.md)                                     | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Service-DNS-Name-Type**](a-servicednsnametype.md)                            | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                   | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -792,7 +792,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Marcas del sistema**](a-systemflags.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**USN cambiado**](a-usnchanged.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Creado por USN**](a-usncreated.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**UsN creado**](a-usncreated.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                       | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**USN-Intersite**](a-usnintersite.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -800,12 +800,12 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | [**Vendor**](a-vendor.md)                                                       | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Número de versión**](a-versionnumber.md)                                        | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Version-Number-Hi**](a-versionnumberhi.md)                                   | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
-| [**Version-Number-Lo**](a-versionnumberlo.md)                                   | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
+| [**Número de versión:Lo**](a-versionnumberlo.md)                                   | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Wbem-Path**](a-wbempath.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Objetos conocidos**](a-wellknownobjects.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Well-Known-Objects**](a-wellknownobjects.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Cuándo se ha cambiado**](a-whenchanged.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Cuando se crea**](a-whencreated.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**WWW-Página principal**](a-wwwhomepage.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**WWW-Page-Other**](a-url.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 
 
@@ -816,7 +816,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------|
 | System-Only                 | Falso                                                                                        |
 | Object-Category             | 1                                                                                            |
@@ -835,13 +835,13 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 
 ## <a name="windows-server-2012-attributes"></a>Windows Server 2012 Atributos
 
-Esta clase contiene los atributos siguientes para Windows Server 2012:
+Esta clase contiene los siguientes atributos para Windows Server 2012:
 
 
 
 | Atributo                                                                                    | Mandatory | Derivado de                                                                             |
 |----------------------------------------------------------------------------------------------|-----------|------------------------------------------------------------------------------------------|
-| [**Admin-Description**](a-admindescription.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Descripción del administrador**](a-admindescription.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Admin-Display-Name**](a-admindisplayname.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Atributos permitidos**](a-allowedattributes.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)                         | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -850,8 +850,8 @@ Esta clase contiene los atributos siguientes para Windows Server 2012:
 | [**App-Schema-Version**](a-appschemaversion.md)                                             | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                                | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Canonical-Name**](a-canonicalname.md)                                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Common-Name**](a-cn.md)                                                                  | Verdadero      | [**Punto de conexión**](c-connectionpoint.md)<br/> [**Arriba**](c-top.md)<br/> |
-| [**Create-Time-Stamp**](a-createtimestamp.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Nombre común**](a-cn.md)                                                                  | Verdadero      | [**Punto de conexión**](c-connectionpoint.md)<br/> [**Arriba**](c-top.md)<br/> |
+| [**Crear marca de tiempo**](a-createtimestamp.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Descripción**](a-description.md)                                                         | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Nombre para mostrar**](a-displayname.md)                                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Display-Name-Printable**](a-displaynameprintable.md)                                     | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -874,7 +874,7 @@ Esta clase contiene los atributos siguientes para Windows Server 2012:
 | [**Administrado por**](a-managedby.md)                                                            | Falso     | [**Punto de conexión**](c-connectionpoint.md)<br/>                                 |
 | [**Objetos administrados**](a-managedobjects.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Mastered-By**](a-masteredby.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Modify-Time-Stamp**](a-modifytimestamp.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Modificación de marca de tiempo**](a-modifytimestamp.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**ms-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**ms-COM-UserLink**](a-mscom-userlink.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**ms-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -947,7 +947,7 @@ Esta clase contiene los atributos siguientes para Windows Server 2012:
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Posibles inferiores**](a-possibleinferiors.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**Direcciones de proxy**](a-proxyaddresses.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Direcciones proxy**](a-proxyaddresses.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Rdn**](a-name.md)                                                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
@@ -959,17 +959,17 @@ Esta clase contiene los atributos siguientes para Windows Server 2012:
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Service-Binding-Information**](a-servicebindinginformation.md)                           | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
-| [**Nombre de clase de servicio**](a-serviceclassname.md)                                             | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
+| [**Service-Class-Name**](a-serviceclassname.md)                                             | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Service-DNS-Name**](a-servicednsname.md)                                                 | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
 | [**Service-DNS-Name-Type**](a-servicednsnametype.md)                                        | Falso     | [**Punto de conexión de servicio**](c-serviceconnectionpoint.md)<br/>                  |
-| [**Mostrar solo en vista avanzada**](a-showinadvancedviewonly.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                               | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Site-Object-BL**](a-siteobjectbl.md)                                                     | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Structural-Object-Class**](a-structuralobjectclass.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Sub refs**](a-subrefs.md)                                                                | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**Marcas del sistema**](a-systemflags.md)                                                        | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**USN cambiado**](a-usnchanged.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
-| [**UsN creado**](a-usncreated.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
+| [**Creado por USN**](a-usncreated.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**USN-Intersite**](a-usnintersite.md)                                                      | Falso     | [**Arriba**](c-top.md)<br/>                                                          |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>                                                          |

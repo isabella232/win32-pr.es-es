@@ -1,7 +1,7 @@
 ---
-description: El método Set establece el tipo de medio desde otro tipo de medio.
+description: El método Set establece el tipo de medio de otro tipo de medio.
 ms.assetid: b3cf65c2-48db-4ee0-9a74-c1652f017eed
-title: 'Método CMediaType. set (mtype. h): parámetro mtype [Ref]'
+title: 'Método CMediaType.Set (Mtype.h): parámetro mtype [ref]'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e8fd9145ee33dbe4b589b34833836466efa62ada
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 350e88cefa7c0f5f6946218d220fcad4a118cf53e203a68eeb9f75c0d0eace1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156068"
 ---
-# <a name="cmediatypeset-method-mtypeh"></a>Método CMediaType. set (mtype. h)
+# <a name="cmediatypeset-method-mtypeh"></a>Método CMediaType.Set (Mtype.h)
 
-El `Set` método establece el tipo de medio desde otro tipo de medio.
+El `Set` método establece el tipo de medio de otro tipo de medio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ HRESULT Set(
 
 <dl> <dt>
 
-*mtype* \[ CLI\]
+*mtype* \[ Ref\]
 </dt> <dd>
 
-Referencia a una estructura de [**\_ \_ tipo de medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
+Referencia a una [**estructura \_ AM MEDIA \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type)
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Devuelve S \_ OK o E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Comentarios
 
-Este método copia el tipo de medio completo de *mtype*.
+Este método copia todo el tipo de medio de *mtype*.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Este método copia el tipo de medio completo de *mtype*.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Mtype. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Mtype.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Este método copia el tipo de medio completo de *mtype*.
 
 <dl> <dt>
 
-[**Clase CMediaType**](cmediatype.md)
+[**CMediaType (clase)**](cmediatype.md)
 </dt> </dl>
 
  

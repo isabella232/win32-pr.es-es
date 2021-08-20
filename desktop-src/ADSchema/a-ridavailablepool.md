@@ -53,7 +53,7 @@ Espacio desde el que se asignan los grupos de RID.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------|
 | Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
@@ -74,7 +74,7 @@ Espacio desde el que se asignan los grupos de RID.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------|
 | Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
@@ -95,7 +95,7 @@ Espacio desde el que se asignan los grupos de RID.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------|
 | Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
@@ -137,7 +137,7 @@ Espacio desde el que se asignan los grupos de RID.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------|
 | Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
@@ -158,7 +158,7 @@ Espacio desde el que se asignan los grupos de RID.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------|
 | Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |

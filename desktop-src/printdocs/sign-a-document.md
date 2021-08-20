@@ -4,31 +4,31 @@ ms.assetid: fbe64aed-6b07-49de-910c-18be68cb65a2
 title: Firmar un documento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a4ad07323a26d21f9010c3fd54c708880b90173
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef544b2c34af19282d697676d22903948355d23e18e1c646df691c720052cc4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033883"
 ---
 # <a name="sign-a-document"></a>Firmar un documento
 
 En este tema se describe cómo firmar un documento XPS.
 
-Antes de usar los siguientes ejemplos de código en el programa, lea la declinación de responsabilidades en [tareas comunes de programación de firmas digitales](basic-digital-signature-programming-tasks.md).
+Antes de usar los siguientes ejemplos de código en el programa, lea la declinación de responsabilidades en [Common Digital Signature Programming Tasks](basic-digital-signature-programming-tasks.md).
 
-Para firmar un documento XPS, cárguelo primero en un administrador de firmas como se describe en [inicializar el administrador de firmas](initialize-the-signature-manager.md).
+Para firmar un documento XPS, cárbalo primero en un administrador de firmas como se describe en [Inicializar el administrador de firmas](initialize-the-signature-manager.md).
 
 Para firmar un documento que se ha cargado en un administrador de firmas:
 
-1.  Cree una instancia de una interfaz [**IXpsSigningOptions**](/windows/desktop/api/xpsdigitalsignature/nn-xpsdigitalsignature-ixpssigningoptions) .
-2.  Establezca la Directiva de firma.
-3.  Establezca el método Signature. Las constantes de cadena URI del método de firma se definen en cryptxml. h. Para obtener más información sobre los valores válidos de los métodos de firma, vea [**IXpsSigningOptions:: SetSignatureMethod**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssigningoptions-setsignaturemethod).
-4.  Establezca el método de síntesis. Las constantes de cadena URI del método de síntesis se definen en cryptxml. h. Para obtener información sobre los valores de método de síntesis válidos, vea [**IXpsSigningOptions:: SetDigestMethod**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssigningoptions-setdigestmethod).
-5.  Cargue el certificado como se describe en [carga de un certificado desde un archivo](load-a-certificate-from-a-file.md).
-6.  Compruebe que el certificado admite el método de firma, tal como se describe en [comprobación de que un certificado admite un método de firma](verify-a-certificate-supports-a-signature-method.md).
-7.  Compruebe que el sistema admite el método de síntesis, tal como se describe en comprobación de que [el sistema admite un método de síntesis](verify-a-certificate-supports-a-digest-method.md).
-8.  Si es necesario, inserte los certificados de la cadena de confianza de certificados en el documento XPS tal y como se describe en [Insertar cadenas de certificados en un documento](embedding-certificate-trust-chains-in-a-document.md).
+1.  Cree una instancia de [**una interfaz IXpsSigningOptions.**](/windows/desktop/api/xpsdigitalsignature/nn-xpsdigitalsignature-ixpssigningoptions)
+2.  Establezca la directiva de firma.
+3.  Establezca el método de firma. Las constantes de cadena de URI del método de firma se definen en cryptxml.h. Para obtener más información sobre los valores válidos del método de firma, [**vea IXpsSigningOptions::SetSignatureMethod**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssigningoptions-setsignaturemethod).
+4.  Establezca el método de resumen. Las constantes de cadena de URI del método de resumen se definen en cryptxml.h. Para obtener información sobre los valores válidos del método de resumen, [**vea IXpsSigningOptions::SetDigestMethod**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssigningoptions-setdigestmethod).
+5.  Cargue el certificado como se describe [en Cargar un certificado desde un archivo](load-a-certificate-from-a-file.md).
+6.  Compruebe que el certificado admite el método de firma, como se describe en [Comprobar que un certificado admite un método de firma](verify-a-certificate-supports-a-signature-method.md).
+7.  Compruebe que el sistema admite el método de resumen, como se describe en [Comprobación de que el sistema admite un método de resumen](verify-a-certificate-supports-a-digest-method.md).
+8.  Si es necesario, inserte los certificados de la cadena de confianza de certificados en el documento XPS como se describe en Insertar cadenas de [certificados en un documento](embedding-certificate-trust-chains-in-a-document.md).
 9.  Firme el documento XPS.
 
 En el ejemplo de código siguiente se muestra cómo usar los pasos anteriores en un programa.
@@ -123,7 +123,7 @@ En el ejemplo de código siguiente se muestra cómo usar los pasos anteriores en
 [Agregar una solicitud de firma a un documento XPS](add-a-signature-request-to-a-document.md)
 </dt> <dt>
 
-[Comprobar las firmas del documento](verify-document-signatures.md)
+[Comprobar firmas de documento](verify-document-signatures.md)
 </dt> <dt>
 
 **Se usa en esta sección**
@@ -138,7 +138,7 @@ En el ejemplo de código siguiente se muestra cómo usar los pasos anteriores en
 [**IXpsSignatureManager::CreateSigningOptions**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturemanager-createsigningoptions)
 </dt> <dt>
 
-[**IXpsSignatureManager:: Sign**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturemanager-sign)
+[**IXpsSignatureManager::Sign**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturemanager-sign)
 </dt> <dt>
 
 [**IXpsSigningOptions**](/windows/desktop/api/xpsdigitalsignature/nn-xpsdigitalsignature-ixpssigningoptions)
@@ -153,13 +153,13 @@ En el ejemplo de código siguiente se muestra cómo usar los pasos anteriores en
 [**IXpsSigningOptions::SetSignatureMethod**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssigningoptions-setsignaturemethod)
 </dt> <dt>
 
-[**\_Directiva de firma de XPS \_**](/windows/win32/api/xpsdigitalsignature/ne-xpsdigitalsignature-xps_sign_policy)
+[**XPS \_ SIGN \_ POLICY**](/windows/win32/api/xpsdigitalsignature/ne-xpsdigitalsignature-xps_sign_policy)
 </dt> <dt>
 
 **Para obtener más información**
 </dt> <dt>
 
-[API de criptografía](/windows/desktop/SecCrypto/cryptography-portal)
+[Cryptography API](/windows/desktop/SecCrypto/cryptography-portal)
 </dt> <dt>
 
 [Funciones de criptografía](/windows/desktop/SecCrypto/cryptography-functions)
@@ -168,19 +168,19 @@ En el ejemplo de código siguiente se muestra cómo usar los pasos anteriores en
 [Cargar un certificado desde un archivo](load-a-certificate-from-a-file.md)
 </dt> <dt>
 
-[Comprobar que un certificado admite un método de firma](verify-a-certificate-supports-a-signature-method.md)
+[Comprobar que un certificado admite un método signature](verify-a-certificate-supports-a-signature-method.md)
 </dt> <dt>
 
-[Comprobar que el sistema admite un método de síntesis](verify-a-certificate-supports-a-digest-method.md)
+[Comprobar que el sistema admite un método de resumen](verify-a-certificate-supports-a-digest-method.md)
 </dt> <dt>
 
-[Insertar cadenas de certificado en un documento](embedding-certificate-trust-chains-in-a-document.md)
+[Insertar cadenas de certificados en un documento](embedding-certificate-trust-chains-in-a-document.md)
 </dt> <dt>
 
-[Errores de la API de firma digital XPS](xps-digital-signatures-errors.md)
+[Errores de API de firma digital XPS](xps-digital-signatures-errors.md)
 </dt> <dt>
 
-[Errores de documento XPS](xps-document-errors.md)
+[Errores del documento XPS](xps-document-errors.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

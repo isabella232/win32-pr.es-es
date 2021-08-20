@@ -1,5 +1,5 @@
 ---
-description: Describe cómo crear un archivo OpenSearch Description (.osdx) para conectar almacenes de datos externos al cliente de Windows a través del protocolo OpenSearch datos.
+description: Describe cómo crear un archivo OpenSearch description (.osdx) para conectar almacenes de datos externos al cliente de Windows a través del protocolo OpenSearch datos.
 ms.assetid: 62cd88cd-e6ff-4e46-887d-e62f7018c065
 title: Crear un archivo OpenSearch descripción en Windows búsqueda federada
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "119456895"
 ---
 # <a name="creating-an-opensearch-description-file-in-windows-federated-search"></a>Crear un archivo OpenSearch descripción en Windows búsqueda federada
 
-Describe cómo crear un archivo OpenSearch Description (.osdx) para conectar almacenes de datos externos al cliente de Windows a través [del protocolo OpenSearch.](https://github.com/dewitt/opensearch) La búsqueda federada permite a los usuarios buscar en un almacén de datos remoto y ver los resultados desde Windows Explorer.
+Describe cómo crear un archivo OpenSearch description (.osdx) para conectar almacenes de datos externos al cliente de Windows a través [del protocolo OpenSearch](https://github.com/dewitt/opensearch) datos. La búsqueda federada permite a los usuarios buscar en un almacén de datos remoto y ver los resultados desde Windows Explorer.
 
 Este tema contiene las siguientes secciones:
 
@@ -33,7 +33,7 @@ Este tema contiene las siguientes secciones:
     -   [Recuento máximo de resultados](#maximum-result-count)
     -   [Asignación de propiedades](#property-mapping)
 -   [Vistas previas](#previews)
--   [Abrir el elemento de menú Ubicación del archivo](#open-file-location-menu-item)
+-   [Elemento de menú Abrir ubicación del archivo](#open-file-location-menu-item)
 -   [Recursos adicionales](#additional-resources)
 -   [Temas relacionados](#related-topics)
 
@@ -43,12 +43,12 @@ Un OpenSearch description (.osdx) para Windows búsqueda federada debe cumplir l
 
 -   Ser un documento OpenSearch descripción, tal como se define en la [especificación OpenSearch](https://github.com/dewitt/opensearch) 1.1.
 -   Proporcione una plantilla de dirección URL con un tipo de formato RSS o Atom.
--   Use la extensión de nombre de archivo .osdx o asocie con la extensión de nombre de archivo .osdx al descargar desde la web. Por ejemplo, no es necesario que un servidor use .osdx. Un servidor puede devolver el archivo con cualquier extensión de nombre de archivo, como .xml por ejemplo, y tratarlo como si fuera un archivo .osdx si usa el tipo MIME correcto para los documentos de descripción de OpenSearch (archivos .osdx).
+-   Use la extensión de nombre de archivo .osdx o se asocie a la extensión de nombre de archivo .osdx al descargar desde la web. Por ejemplo, no es necesario que un servidor use .osdx. Un servidor puede devolver el archivo con cualquier extensión de nombre de archivo, como .xml por ejemplo, y tratarse como si fuera un archivo .osdx si usa el tipo MIME correcto para los documentos de descripción de OpenSearch (archivos .osdx).
 -   Proporcione un **valor de elemento ShortName** (recomendado).
 
 ### <a name="mininum-required-child-elements"></a>Elementos secundarios mínimos necesarios
 
-El siguiente archivo .osdx de ejemplo consta de **ShortName** y `Url` elementos , que son los elementos secundarios mínimos necesarios.
+El siguiente archivo .osdx de ejemplo consta de **los elementos ShortName** y `Url` , que son los elementos secundarios mínimos necesarios.
 
 
 ```
@@ -68,7 +68,7 @@ Además de los elementos secundarios mínimos, la búsqueda federada admite los 
 
 ### <a name="shortname"></a>Shortname
 
-Windows el valor del elemento **ShortName** para dar nombre al archivo .searchconnector-ms (conector de búsqueda) que se crea cuando el usuario abre el archivo .osdx. Windows garantiza que el nombre de archivo generado solo usa caracteres permitidos en Windows nombres de archivo. Si no se proporciona ningún valor **ShortName,** el archivo .searchconnector-ms intenta usar el nombre de archivo del archivo .osdx en su lugar.
+Windows el valor del elemento **ShortName** para dar nombre al archivo .searchconnector-ms (conector de búsqueda) que se crea cuando el usuario abre el archivo .osdx. Windows garantiza que el nombre de archivo generado usa solo los caracteres permitidos en Windows nombres de archivo. Si no se proporciona ningún valor **ShortName,** el archivo .searchconnector-ms intenta usar el nombre de archivo del archivo .osdx en su lugar.
 
 En el código siguiente se muestra cómo usar el **elemento ShortName** en un archivo .osdx.
 
@@ -84,7 +84,7 @@ En el código siguiente se muestra cómo usar el **elemento ShortName** en un ar
 
 ### <a name="description"></a>Descripción
 
-Windows el valor del elemento **Description** para rellenar la descripción del archivo que se muestra en el panel de detalles del Explorador de Windows cuando un usuario selecciona un archivo .searchconnector-ms.
+Windows el valor del elemento **Description** para rellenar la descripción del archivo que se muestra en el panel de detalles de Windows Explorer cuando un usuario selecciona un archivo .searchconnector-ms.
 
 
 ```
@@ -98,10 +98,10 @@ Windows el valor del elemento **Description** para rellenar la descripción del 
 
 ### <a name="url-template-for-rssatom-results"></a>Plantilla de dirección URL para resultados RSS/Atom
 
-El archivo .osdx debe incluir  un elemento de formato **URL** y un atributo de plantilla (una plantilla de dirección URL) que devuelva resultados en formato RSS o Atom. El atributo format debe establecerse en para los resultados con formato RSS o para los resultados con formato Atom, como se muestra `application/rss+xml` `application/atom+xml` en el código siguiente.
+El archivo .osdx debe incluir  un elemento de formato **URL** y un atributo de plantilla (una plantilla de dirección URL) que devuelva resultados en formato RSS o Atom. El atributo format debe establecerse en para los resultados con formato RSS o para los resultados con formato Atom, como se `application/rss+xml` muestra en el código `application/atom+xml` siguiente.
 
 > [!Note]  
-> El **elemento de formato** url y el atributo **de** plantilla se conocen normalmente como plantilla de dirección URL.
+> El **elemento de formato** url y el atributo **de** plantilla se conocen normalmente como una plantilla de dirección URL.
 
  
 
@@ -130,31 +130,31 @@ Si hay una versión de los resultados de la búsqueda que se puede ver en un exp
 
 
 
-Si proporciona un elemento **Url format="text/html"** y un atributo de plantilla, aparece un botón en la barra de comandos del Explorador de Windows, como se muestra en la siguiente captura de pantalla, que permite al usuario abrir un explorador web para ver los resultados de la búsqueda cuando el usuario realiza una consulta. 
+Si proporciona un elemento **url format="text/html"** y un atributo de plantilla, aparece un botón en la barra de comandos de Windows Explorer, como se muestra en la siguiente captura de pantalla, que permite al usuario abrir un explorador web para ver los resultados de la búsqueda cuando el usuario realiza una consulta. 
 
-![captura de pantalla que muestra el botón de succión de búsqueda web.](images/websearchroll-overcommandbarbutton.png)
+![captura de pantalla que muestra el botón de suversión de búsqueda web.](images/websearchroll-overcommandbarbutton.png)
 
-La reversión de la consulta a la interfaz de usuario web del almacén de datos es importante en algunos escenarios. Por ejemplo, es posible que un usuario quiera ver más de 100 resultados (el número predeterminado de elementos que OpenSearch proveedor). Si es así, es posible que el usuario también quiera usar características de búsqueda que solo están disponibles en el sitio web del almacén de datos, como volver a consultar con un criterio de ordenación diferente, o dinamr y filtrar la consulta con metadatos relacionados.
+La reversión de la consulta a la interfaz de usuario web del almacén de datos es importante en algunos escenarios. Por ejemplo, es posible que un usuario desee ver más de 100 resultados (el número predeterminado de elementos que OpenSearch proveedor). Si es así, es posible que el usuario también quiera usar características de búsqueda que solo están disponibles en el sitio web del almacén de datos, como volver a consultar con un criterio de ordenación diferente o dinamr y filtrar la consulta con metadatos relacionados.
 
-### <a name="url-template-parameters&quot;></a>Parámetros de plantilla de dirección URL
+### <a name="url-template-parameters"></a>Parámetros de plantilla de dirección URL
 
 El OpenSearch realiza siempre las siguientes acciones:
 
 1.  Usa la plantilla de dirección URL para enviar la solicitud al servicio web.
 2.  Intenta reemplazar los tokens encontrados en la plantilla de dirección URL antes de enviar la solicitud al servicio web, como se muestra a continuación:
-    -   Reemplaza los tokens de OpenSearch estándar que se enumeran en la tabla siguiente.
+    -   Reemplaza los tokens OpenSearch estándar que se muestran en la tabla siguiente.
     -   Quita los tokens que no aparecen en la tabla siguiente.
 
 
 
-| Token admitido  | Uso por parte del OpenSearch proveedor                                                                                                                 |
+| Token admitido  | Uso por parte de OpenSearch proveedor                                                                                                                 |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| {searchTerms}    | Se reemplaza por los términos de búsqueda que el usuario escriba en el cuadro de Windows entrada de búsqueda del Explorador.<br/>                                         |
-| {startIndex}     | Se usa al obtener resultados en &quot;páginas&quot;.<br/> Se reemplaza por el índice del primer elemento de resultado que se devuelve.<br/>                        |
-| {startPage}      | Se usa al obtener resultados en &quot;páginas&quot;.<br/> Se reemplaza por el número de página del conjunto de resultados de búsqueda que se devolverán.<br/>               |
-| {count}          | Se usa al obtener resultados en &quot;páginas&quot;.<br/> Se reemplaza por el número de resultados de búsqueda por página que Windows explorer.<br/> |
+| {searchTerms}    | Se reemplaza por los términos de búsqueda que el usuario escriba en el Windows entrada de búsqueda del Explorador.<br/>                                         |
+| {startIndex}     | Se usa al obtener resultados en "páginas".<br/> Se reemplaza por el índice del primer elemento de resultado que se devuelve.<br/>                        |
+| {startPage}      | Se usa al obtener resultados en "páginas".<br/> Se reemplaza por el número de página del conjunto de resultados de búsqueda que se devolverán.<br/>               |
+| {count}          | Se usa al obtener resultados en "páginas".<br/> Se reemplaza por el número de resultados de búsqueda por página que Windows explorer.<br/> |
 | {language}       | Se reemplaza por una cadena que indica el idioma de la consulta que se envía.<br/>                                                          |
-| {inputEncoding}  | Se reemplaza por una cadena (como &quot;UTF-16") que indica la codificación de caracteres de la consulta que se envía.<br/>                                |
+| {inputEncoding}  | Se reemplaza por una cadena (como "UTF-16") que indica la codificación de caracteres de la consulta que se envía.<br/>                                |
 | {outputEncoding} | Se reemplaza por una cadena (como "UTF-16") que indica la codificación de caracteres deseada para la respuesta del servicio web.<br/>       |
 
 
@@ -163,11 +163,11 @@ El OpenSearch realiza siempre las siguientes acciones:
 
 ### <a name="paged-results"></a>Resultados paginados
 
-Es posible que desee limitar el número de resultados devueltos por solicitud. Puede optar por devolver una "página" de resultados a la vez o hacer que el proveedor de OpenSearch obtenga páginas de resultados adicionales por número de elemento o número de página. Por ejemplo, si envía veinte resultados por página, la primera página que envíe se iniciará en el índice de elemento 1 y en la página 1. la segunda página que envía comienza en el índice de elemento 21 y en la página 2. Puede definir cómo desea que el proveedor de OpenSearch solicite elementos mediante o `{startItem}` el token en la plantilla de dirección `{startPage}` URL.
+Es posible que desee limitar el número de resultados devueltos por solicitud. Puede optar por devolver una "página" de resultados a la vez, o bien hacer que el proveedor de OpenSearch obtenga páginas de resultados adicionales por número de elemento o número de página. Por ejemplo, si envía veinte resultados por página, la primera página que envía comienza en el índice de elemento 1 y en la página 1. La segunda página que envía comienza en el índice de elemento 21 y en la página 2. Puede definir cómo desea que el proveedor de OpenSearch solicite elementos mediante o el `{startItem}` token en la plantilla de dirección `{startPage}` URL.
 
 ### <a name="paging-using-the-item-index"></a>Paginación mediante el índice de elementos
 
-Un índice de elemento identifica el primer elemento de resultado en una página de resultados. Si desea que los clientes envíen solicitudes mediante un índice de elemento, puede usar el token en el atributo de plantilla de elemento Url, como se muestra `{startIndex}` en el código siguiente.  
+Un índice de elemento identifica el primer elemento de resultado en una página de resultados. Si desea que los clientes envíen solicitudes mediante un índice de elemento, puede usar el token en el atributo de plantilla del elemento Url, como se muestra `{startIndex}` en el código siguiente.  
 
 
 ```
@@ -177,7 +177,7 @@ Un índice de elemento identifica el primer elemento de resultado en una página
 
 
 
-Después, [OpenSearch](https://github.com/dewitt/opensearch) proveedor reemplaza el token de la dirección URL por un valor de índice inicial. La primera solicitud comienza con el primer elemento, como se muestra en el ejemplo siguiente:
+El [OpenSearch](https://github.com/dewitt/opensearch) de datos reemplaza el token de la dirección URL por un valor de índice inicial. La primera solicitud comienza con el primer elemento, como se muestra en el ejemplo siguiente:
 
 
 ```
@@ -189,7 +189,7 @@ https://example.com/rss.php?query=frogs&start=1
 El OpenSearch puede obtener elementos adicionales cambiando el valor del parámetro `{startIndex}` y emitiendo una nueva solicitud. El proveedor repite este proceso hasta que obtiene suficientes resultados para satisfacer su límite o alcanza el final de los resultados. El OpenSearch consulta el número de elementos devueltos por el servicio web en la primera página de resultados y establece el tamaño de página esperado en ese número. Usa ese número para incrementar el `{startIndex}` valor de las solicitudes posteriores. Por ejemplo, si el servicio web devuelve 20 resultados en la primera solicitud, el proveedor establece el tamaño de página esperado en 20. Para la siguiente solicitud, el proveedor reemplaza `{startIndex}` por el valor de 21 para obtener los 20 elementos siguientes.
 
 > [!Note]  
-> Si una página de resultados devuelta por el servicio web tiene menos elementos que el tamaño de página esperado, el proveedor de OpenSearch asume que ha recibido la última página de resultados y deja de realizar solicitudes.
+> Si una página de resultados devuelta por el servicio web tiene menos elementos que el tamaño de página esperado, el proveedor de OpenSearch supone que ha recibido la última página de resultados y deja de realizar solicitudes.
 
  
 
@@ -205,7 +205,7 @@ Un índice de página identifica la página de resultados especificada. Si desea
 
 
 
-Después, OpenSearch proveedor reemplaza el token de la dirección URL por un parámetro de número de página. La primera solicitud comienza con la primera página, como se muestra en el ejemplo siguiente:
+Después OpenSearch proveedor reemplaza el token de la dirección URL por un parámetro de número de página. La primera solicitud comienza con la primera página, como se muestra en el ejemplo siguiente:
 
 
 ```
@@ -276,7 +276,7 @@ En el ejemplo anterior se declara el prefijo de espacio de nombres en el element
 
 ### <a name="property-mapping"></a>Asignación de propiedades
 
-Cuando el servicio web devuelve resultados como una fuente RSS o Atom, el proveedor de OpenSearch debe asignar los metadatos de elemento de las fuentes a las propiedades que el shell de Windows puede usar. En la captura de pantalla siguiente se muestra cómo el OpenSearch asigna algunos de los elementos RSS predeterminados.
+Cuando el servicio web devuelve resultados como una fuente RSS o Atom, el proveedor de OpenSearch debe asignar los metadatos de elemento de las fuentes a las propiedades que el shell de Windows puede usar. En la siguiente captura de pantalla se muestra cómo el OpenSearch asigna algunos de los elementos RSS predeterminados.
 
 ![captura de pantalla que muestra las asignaciones de propiedades integradas de rss a windows-shell](images/built-inrsstowindowsshellpropertymappings.png)
 
@@ -311,13 +311,13 @@ En la tabla siguiente se enumeran las asignaciones predeterminadas de elementos 
  
 
 > [!Note]  
-> Además de las asignaciones predeterminadas de los elementos ESTÁNDAR RSS o Atom, puede asignar otras propiedades del sistema de Windows Shell mediante la inclusión de elementos XML adicionales en el espacio de nombres Windows para cada una de las propiedades. También puede asignar elementos de otros espacios de nombres XML existentes, como MediaRSS, iTunes, etc., agregando la asignación de propiedades personalizadas en el archivo .osdx.
+> Además de las asignaciones predeterminadas de elementos ESTÁNDAR RSS o Atom, puede asignar otras propiedades del sistema de Windows Shell mediante la inclusión de elementos XML adicionales en el espacio de nombres Windows para cada una de las propiedades. También puede asignar elementos de otros espacios de nombres XML existentes, como MediaRSS, iTunes, etc., agregando la asignación de propiedades personalizadas en el archivo .osdx.
 
  
 
 ### <a name="custom-property-mappings"></a>Asignaciones de propiedades personalizadas
 
-Puede personalizar la asignación de elementos de la salida RSS para Windows del sistema shell especificando la asignación en el archivo .osdx.
+Puede personalizar la asignación de elementos de la salida RSS a las propiedades del sistema Windows Shell especificando la asignación en el archivo .osdx.
 
 La salida RSS especifica:
 
@@ -346,7 +346,7 @@ La siguiente salida RSS de ejemplo identifica `https://example.com/schema/2009` 
 
 
 
-En el siguiente archivo .osdx de ejemplo, el elemento **de** correo electrónico XML se asigna a la propiedad [System.Contact.EmailAddress](../properties/props-system-contact-emailaddress.md)de Shell de Windows .
+En el siguiente archivo .osdx de ejemplo, el elemento **de** correo electrónico XML se asigna a la propiedad [System.Contact.EmailAddress](../properties/props-system-contact-emailaddress.md)de Windows Shell.
 
 
 ```
@@ -376,7 +376,7 @@ Las direcciones URL de imagen en miniatura se pueden proporcionar para cualquier
 
 ### <a name="open-file-location-context-menu"></a>Menú contextual Abrir ubicación de archivo
 
-Windows un menú contextual denominado **Abrir ubicación de archivo para** los elementos de resultado. Si el usuario selecciona un elemento de ese menú, se abre la dirección URL "primaria" del elemento seleccionado. Si la dirección URL es una dirección URL web, como , el explorador web se abre y `https://...` navega a esa dirección URL. La fuente debe proporcionar una dirección URL personalizada para cada elemento para asegurarse de que Windows abre una dirección URL válida. Esto se puede lograr mediante la inclusión de la dirección URL dentro de un elemento dentro del XML del elemento, como se muestra en el ejemplo siguiente:
+Windows un menú contextual denominado Abrir **ubicación de archivo para** los elementos de resultado. Si el usuario selecciona un elemento de ese menú, se abre la dirección URL "primaria" del elemento seleccionado. Si la dirección URL es una dirección URL web, como , el explorador web se abre y `https://...` navega a esa dirección URL. La fuente debe proporcionar una dirección URL personalizada para cada elemento para asegurarse de que Windows abre una dirección URL válida. Esto se puede lograr mediante la inclusión de la dirección URL dentro de un elemento dentro del XML del elemento, como se muestra en el ejemplo siguiente:
 
 
 ```
@@ -404,7 +404,7 @@ Las áreas de interfaz de usuario Windows Explorer que se pueden personalizar me
 
 ![captura de pantalla que muestra las áreas de interfaz de usuario del Explorador de Windows que se pueden personalizar mediante proplists](images/areasofwindowsexplorerthatyoucancontrolwithproplists.png)
 
-Cada área de Windows Explorer tiene un conjunto asociado de proplists, que a su vez se especifican como propiedades. Puede especificar listas de propiedades personalizadas para elementos individuales en los conjuntos de resultados o para todos los elementos de un conjunto de resultados.
+Cada área de Windows Explorer tiene un conjunto asociado de proplists, que se especifican a sí mismos como propiedades. Puede especificar listas de propiedades personalizadas para elementos individuales en los conjuntos de resultados o para todos los elementos de un conjunto de resultados.
 
 
 
@@ -499,8 +499,8 @@ Es posible usar una dirección URL diferente para la versión preliminar que par
 
 Cómo Windows Explorer determina qué dirección URL usar:
 
-1.  Si proporciona una asignación a [System.ItemFolderPathDisplay](../properties/props-system-itemfolderpathdisplay.md), Windows Explorer usa esa dirección URL.
-2.  Si no proporciona una asignación, Windows Explorer identifica si las direcciones URL del vínculo y del gabinete son diferentes. Si es así, Windows Explorer usa la dirección URL del vínculo.
+1.  Si proporciona una asignación a [System.ItemFolderPathDisplay,](../properties/props-system-itemfolderpathdisplay.md)Windows Explorer usa esa dirección URL.
+2.  Si no proporciona una asignación, Windows Explorer identifica si las direcciones URL del vínculo y del alojamiento son diferentes. Si es así, Windows Explorer usa la dirección URL del vínculo.
 3.  Si las direcciones URL son las mismas o si solo hay una dirección URL de vínculo, el Explorador de Windows analiza el vínculo para buscar el contenedor primario quitando el nombre de archivo de la dirección URL completa.
     > [!Note]  
     > Si reconoce que el análisis de direcciones URL daría lugar a vínculos fallados para el servicio, debe proporcionar una asignación explícita para la propiedad .

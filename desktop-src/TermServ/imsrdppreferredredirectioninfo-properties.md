@@ -23,7 +23,7 @@ La [**interfaz IMsRdpPreferredRedirectionInfo**](imsrdppreferredredirectioninfo.
 [**UseRedirectionServerName, propiedad**](imsrdppreferredredirectioninfo-useredirectionservername.md)
 </dt> <dd>
 
-Obtiene y establece si se debe usar el nombre del servidor de redireccionamiento.
+Obtiene y establece si se debe usar el nombre del servidor de redirección.
 
 </dd> </dl>
 

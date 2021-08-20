@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 309050be35748f39eefc8b40b8e590f8f6889fde
-ms.sourcegitcommit: 07ba02719c9779e082b108ae74f9699fb0236c34
+ms.openlocfilehash: 721931bfa05a96ca47fd69f643a02076201bb5f93eff003afa83714f2d14b519
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108644197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950954"
 ---
 # <a name="add-sslcert"></a>add sslcert
 
@@ -76,14 +76,14 @@ Especifica el nombre del almacén del certificado. El valor predeterminado es MY
 <span id="_verifyclientcertrevocation__enable_disable__"></span><span id="_VERIFYCLIENTCERTREVOCATION__ENABLE_DISABLE__"></span>**\[verifyclientcertrevocation={enable \| disable}\]**
 </dt> <dd>
 
-Activa o desactiva la comprobación de revocación de certificados de cliente.
+Activa o desactiva la comprobación de la revocación de certificados de cliente.
 
 </dd> <dt>
 
 <span id="_verifyrevocationwithcachedclientcertonly__enable_disable__"></span><span id="_VERIFYREVOCATIONWITHCACHEDCLIENTCERTONLY__ENABLE_DISABLE__"></span>**\[verifyrevocationwithcachedclientcertonly={enable \| disable}\]**
 </dt> <dd>
 
-Activa o desactiva el uso de solo el certificado de cliente almacenado en caché para la comprobación de revocación.
+Activa o desactiva el uso solo del certificado de cliente almacenado en caché para la comprobación de revocación.
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Activa o desactiva la comprobación de uso. Está habilitada de forma predetermi
 <span id="_revocationfreshnesstime__u-int"></span><span id="_REVOCATIONFRESHNESSTIME__U-INT"></span>**\[revocationfreshnesstime=u-int\]**
 </dt> <dd>
 
-Especifica el intervalo de tiempo para comprobar si hay una lista de revocación de certificados (CRL) actualizada. Si este valor es 0, la nueva CRL solo se actualiza si expira la anterior (en segundos).
+Especifica el intervalo de tiempo para comprobar si hay una lista de revocación de certificados (CRL) actualizada. Si este valor es 0, la nueva CRL solo se actualiza si la anterior expira (en segundos).
 
 </dd> <dt>
 

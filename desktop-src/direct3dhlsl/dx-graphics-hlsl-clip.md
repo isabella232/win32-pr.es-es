@@ -3,7 +3,7 @@ title: clip
 description: Descarta el píxel actual si el valor especificado es menor que cero.
 ms.assetid: c9f84a27-5572-45aa-a12f-4446614b7be5
 keywords:
-- recorte de HLSL
+- clip HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 92a75f2839dbbb605d976e07fffa5c2f9b27fd86
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0f12c9ea508aa960b0f3b1ec255867fc8e4f37fbee580ee5517ba40cf3ae0d20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104984019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118091073"
 ---
 # <a name="clip"></a>clip
 
@@ -26,7 +26,7 @@ Descarta el píxel actual si el valor especificado es menor que cero.
 
 
 
-| clip (*x*) |
+| clip(*x*) |
 |-----------|
 
 
@@ -39,7 +39,7 @@ Descarta el píxel actual si el valor especificado es menor que cero.
 
 | Elemento                                                   | Descripción                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*x1*<br/> | \[en \] el valor especificado.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[en \] El valor especificado.<br/> |
 
 
 
@@ -49,11 +49,11 @@ Descarta el píxel actual si el valor especificado es menor que cero.
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use la función intrínseca de **clip** HLSL para simular los planos de recorte si cada componente del parámetro *x* representa la distancia desde un plano.
+Use la **función intrínseca** HLSL de recorte para simular planos de recorte si cada componente del parámetro *x* representa la distancia desde un plano.
 
-Además, utilice la función de **recorte** para probar el comportamiento alfa, tal como se muestra en el ejemplo siguiente:
+Además, use la **función clip** para probar el comportamiento alfa, como se muestra en el ejemplo siguiente:
 
 
 ```
@@ -66,15 +66,15 @@ clip( Input.Color.A < 0.1f ? -1:1 );
 
 
 
-| Nombre | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamaño |
+| Nombre | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size |
 |------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|------|
-| *x*  | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **Vector** o **matriz** | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera  |
+| *x*  | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vector** o **matriz** | [**Flotador**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera  |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -95,7 +95,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

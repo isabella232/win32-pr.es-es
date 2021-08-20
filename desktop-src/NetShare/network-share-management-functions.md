@@ -1,19 +1,19 @@
 ---
-description: Las funciones de administración de recursos compartidos de red se pueden agrupar de la siguiente manera.
+description: Las funciones de administración de recursos compartidos de red se pueden agrupar como se muestra a continuación.
 ms.assetid: 07251c93-b397-470d-a3e4-55288ece1fc9
 title: Funciones de administración de recursos compartidos de red
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1676e42b707154971c88ff9bae2fa404114384b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9edc51e9b50fc0f8374293893a037e040bd056fd653076241286f55b0f4aae2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105677957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676575"
 ---
 # <a name="network-share-management-functions"></a>Funciones de administración de recursos compartidos de red
 
-Las funciones de administración de recursos compartidos de red se pueden agrupar de la siguiente manera.
+Las funciones de administración de recursos compartidos de red se pueden agrupar como se muestra a continuación.
 
 ## <a name="netfile-functions"></a>Funciones de NetFile
 

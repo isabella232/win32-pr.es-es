@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentBackupInProgressException'
-title: Constructor de EsentBackupInProgressException
+description: 'Más información sobre: Constructor EsentBackupInProgressException'
+title: Constructor EsentBackupInProgressException
 TOCTitle: 'EsentBackupInProgressException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentBackupInProgressException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentbackupinprogressexception.esentbackupinprogressexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b2a91c34ddc2fee3ea8bb9eecb3ad5b67c8a2af2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 392f02d64377ff6776f3b01188b5df91ec0c9c723579e438c62314a2d4fc7500
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118083216"
 ---
-# <a name="esentbackupinprogressexception-constructor"></a>Constructor de EsentBackupInProgressException
+# <a name="esentbackupinprogressexception-constructor"></a>Constructor EsentBackupInProgressException
 
 Inicializa una nueva instancia de la clase EsentBackupInProgressException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentBackupInProgressException()
 public EsentBackupInProgressException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentBackupInProgressException()
 
 [Miembros de EsentBackupInProgressException](./esentbackupinprogressexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
