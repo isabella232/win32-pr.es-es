@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración PrereadIndexRangesGrbit'
-title: Enumeración PrereadIndexRangesGrbit (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: PrereadIndexRangesGrbit (enumeración)'
+title: PrereadIndexRangesGrbit (enumeración) (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: PrereadIndexRangesGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.PrereadIndexRangesGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.prereadindexrangesgrbit(v=EXCHG.10)
@@ -32,21 +32,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d4bc1b9877d4548a68aa71ea4def536af09d9693
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ceb97e5f0695b1dd4bee8c7675f4cd6b233487642515dfb39ec1e24467b3436
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117703303"
 ---
-# <a name="prereadindexrangesgrbit-enumeration"></a>Enumeración PrereadIndexRangesGrbit
+# <a name="prereadindexrangesgrbit-enumeration"></a>PrereadIndexRangesGrbit (enumeración)
 
-Opciones para [JetPrereadIndexRanges (JET_SESID, JET_TABLEID, \[ \] , Int32, Int32, Int32, \[ \] , PrereadIndexRangesGrbit)](./windows8api.jetprereadindexranges-method.md).
+Opciones de [JetPrereadIndexRanges(JET_SESID, JET_TABLEID, \[ \] , Int32, Int32, Int32, \[ \] , PrereadIndexRangesGrbit)](./windows8api.jetprereadindexranges-method.md).
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -77,22 +77,22 @@ public enum PrereadIndexRangesGrbit
 <tr class="odd">
 <td></td>
 <td>Adelante</td>
-<td>Avance de prelectura.</td>
+<td>Leer previamente.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Atrás</td>
-<td>Lectura inversa.</td>
+<td>Leer previamente hacia atrás.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>FirstPageOnly</td>
-<td>Primera página de solo lectura de cualquier columna larga.</td>
+<td>Leer previamente solo la primera página de cualquier columna larga.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>NormalizedKey</td>
-<td>Clave/marcador normalizado proporcionado en lugar de valor de columna.</td>
+<td>Clave o marcador normalizado proporcionados en lugar del valor de columna.</td>
 </tr>
 </tbody>
 </table>
@@ -102,4 +102,4 @@ public enum PrereadIndexRangesGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

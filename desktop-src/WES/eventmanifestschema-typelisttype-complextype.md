@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de TypeListType
+title: Tipo complejo TypeListType
 description: Define los tipos que se usan en el manifiesto.
 ms.assetid: e7ce0ecf-3bd0-49ab-82c7-dc28fd0e59a2
 keywords:
-- TypeListType tipo complejo EventLog
+- Tipo complejo EventLog de TypeListType
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 61cec902684d7426a5951c12c4b319ae1ce29923
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6d82d4b7d7369af23c3275a24f299f778d833073e55668f9624a9e5efbfaf544
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105695993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117936880"
 ---
-# <a name="typelisttype-complex-type"></a>Tipo complejo de TypeListType
+# <a name="typelisttype-complex-type"></a>Tipo complejo TypeListType
 
 Define los tipos que se usan en el manifiesto.
 
@@ -49,8 +49,8 @@ Define los tipos que se usan en el manifiesto.
 
 | Elemento                                                               | Tipo                                                                           | Descripción                                                                                                 |
 |-----------------------------------------------------------------------|--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [**Intypes**](eventmanifestschema-intypes-typelisttype-element.md)   | [**InputTypeListType**](eventmanifestschema-inputtypelisttype-complextype.md) | Define una lista de tipos de datos de entrada.<br/>                                                              |
-| [**xmlTypes**](eventmanifestschema-xmltypes-typelisttype-element.md) | [**XmlTypeListType**](eventmanifestschema-xmltypelisttype-complextype.md)     | Define una lista de tipos de salida que el servicio usa para determinar cómo se representa un tipo de datos de entrada.<br/> |
+| [**inTypes**](eventmanifestschema-intypes-typelisttype-element.md)   | [**InputTypeListType**](eventmanifestschema-inputtypelisttype-complextype.md) | Define una lista de tipos de datos de entrada.<br/>                                                              |
+| [**xmlTypes**](eventmanifestschema-xmltypes-typelisttype-element.md) | [**XmlTypeListType**](eventmanifestschema-xmltypelisttype-complextype.md)     | Define una lista de tipos de salida que el servicio usa para determinar cómo representar un tipo de datos de entrada.<br/> |
 
 
 
@@ -58,10 +58,10 @@ Define los tipos que se usan en el manifiesto.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

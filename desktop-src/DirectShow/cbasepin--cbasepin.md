@@ -1,5 +1,5 @@
 ---
-description: 'Destructor CBasePin.~CBasePin: método Destructor.'
+description: 'Destructor CBasePin.~CBasePin: método destructor.'
 ms.assetid: b903bec6-e944-48bb-aa0c-7072a843a9cd
 title: Destructor CBasePin.~CBasePin (Amfilter.h)
 ms.topic: reference
@@ -47,7 +47,7 @@ Método destructor.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

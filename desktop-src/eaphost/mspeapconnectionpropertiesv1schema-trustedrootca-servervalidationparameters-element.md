@@ -1,6 +1,6 @@
 ---
-title: Elemento TrustedRootCA (ServerValidationParameters) (V1)
-description: Captura la impresión en miniatura de las entidades de certificación (CA) raíz en las que confía el cliente. | Elemento TrustedRootCA (ServerValidationParameters)
+title: Elemento TrustedRootCA (ServerValidationParameters) (v1)
+description: Captura la huella digital de las entidades de certificación (CA) raíz de confianza para el cliente. | Elemento TrustedRootCA (ServerValidationParameters)
 ms.assetid: f0485dcc-8610-4c5b-b4db-6f2a77057489
 keywords:
 - Elemento TrustedRootCA EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 17e1b81e080d48ac8fae4f082c3cf4b46bac858e
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 64f16bbf197acd2030a1e4676e729e59ebdfa728cceccf1d32542d63099b2a18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117719790"
 ---
 # <a name="trustedrootca-servervalidationparameters-element"></a>Elemento TrustedRootCA (ServerValidationParameters)
 
-El elemento del elemento **TrustedRootCA (ServerValidationParameters)** captura la impresión en miniatura de las entidades de certificación (CA) raíz que son de confianza para el cliente.
+El **elemento de elemento TrustedRootCA (ServerValidationParameters)** captura la huella digital de las entidades de certificación (CA) raíz de confianza para el cliente.
 
 ``` syntax
 <xs:element name="TrustedRootCA"
@@ -31,11 +31,11 @@ El elemento del elemento **TrustedRootCA (ServerValidationParameters)** captura 
  />
 ```
 
-El elemento **TrustedRootCA** se define mediante el tipo complejo de [**ServerValidationParameters**](mspeapconnectionpropertiesv1schema-servervalidationparameters-complextype.md) .
+El tipo complejo [**ServerValidationParameters**](mspeapconnectionpropertiesv1schema-servervalidationparameters-complextype.md) define el elemento **TrustedRootCA.**
 
 ## <a name="remarks"></a>Comentarios
 
-La impresión en miniatura es una cadena hexadecimal que contiene el hash SHA-1 del certificado. El elemento **TrustedRootCA** es opcional.
+La huella digital es una cadena hexadecimal que contiene el hash SHA-1 del certificado. El **elemento TrustedRootCA** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,8 +43,8 @@ La impresión en miniatura es una cadena hexadecimal que contiene el hash SHA-1 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -70,7 +70,7 @@ La impresión en miniatura es una cadena hexadecimal que contiene el hash SHA-1 
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-schema.md)
+[Mspeapconnectionpropertiesv1 Schema](mspeapconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
 [Elementos de esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-elements.md)

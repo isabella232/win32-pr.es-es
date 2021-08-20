@@ -1,9 +1,9 @@
 ---
-title: Elemento PeapExtensionsV2 (PeapExtensionsType) (esquema V1)
-description: Obtenga información sobre el elemento PeapExtensionsV2 (PeapExtensionsType). Este elemento permite futuras mejoras en el esquema. | Elemento PeapExtensionsV2 (PeapExtensionsType) (esquema V1)
+title: Elemento PeapExtensionsV2 (PeapExtensionsType) (esquema v1)
+description: Obtenga información sobre el elemento PeapExtensionsV2 (PeapExtensionsType). Este elemento permite futuras mejoras en el esquema. | Elemento PeapExtensionsV2 (PeapExtensionsType) (esquema v1)
 ms.assetid: eedd90c1-f3de-4c3b-9329-7ca0f39f9541
 keywords:
-- Elemento PeapExtensionsV2 EAPHost
+- EapHost del elemento PeapExtensionsV2
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2ddced604c93512742c3548ebd9238b162597f2a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d1af312bab7b799ad0bea6ef28ec3c6673cc7c187cc9018538b2e8f2463acbe6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104424228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117719952"
 ---
-# <a name="peapextensionsv2-peapextensionstype-element-v1-schema"></a>Elemento PeapExtensionsV2 (PeapExtensionsType) (esquema V1)
+# <a name="peapextensionsv2-peapextensionstype-element-v1-schema"></a>Elemento PeapExtensionsV2 (PeapExtensionsType) (esquema v1)
 
-El elemento **PeapExtensionsV2 (PeapExtensionsType)** permite futuras mejoras en el esquema.
+El **elemento PeapExtensionsV2 (PeapExtensionsType)** permite futuras mejoras en el esquema.
 
 ``` syntax
 <xs:element name="PeapExtensionsV2"
@@ -31,20 +31,20 @@ El elemento **PeapExtensionsV2 (PeapExtensionsType)** permite futuras mejoras en
  />
 ```
 
-El elemento **PeapExtensionsV2** se define mediante el elemento [**PeapExtensionsType**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md) .
+El **elemento PeapExtensionsV2** se define mediante el [**elemento PeapExtensionsType.**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **PeapExtensionsV2** es opcional.
+El **elemento PeapExtensionsV2** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima admitida del sistema operativo |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -76,7 +76,7 @@ El elemento **PeapExtensionsV2** es opcional.
 [Elementos de esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-elements.md)
 </dt> <dt>
 
-[**Tipo complejo de PeapExtensionsTypeV2**](mspeapconnectionpropertiesv2-peapextensionstypev2-complextype.md)
+[**PeapExtensionsTypeV2 Complex Type**](mspeapconnectionpropertiesv2-peapextensionstypev2-complextype.md)
 </dt> </dl>
 
  

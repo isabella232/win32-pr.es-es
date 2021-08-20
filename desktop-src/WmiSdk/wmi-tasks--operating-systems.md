@@ -1,8 +1,8 @@
 ---
-description: Las tareas de WMI para los sistemas operativos obtienen información sobre el sistema operativo, como la versión, si está activada o qué revisiones están instaladas.
+description: Las tareas wmi para sistemas operativos obtienen información sobre el sistema operativo, como la versión, si está activado o qué revisiones están instaladas.
 ms.assetid: a216ad56-2650-4d93-86e1-449b56019361
 ms.tgt_platform: multiple
-title: 'Tareas WMI: sistemas operativos'
+title: 'Tareas wmi: sistemas operativos'
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,35 +10,35 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a8d4dff83cebf5fd3336aeec2cc45ac4d8498cdb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 471deed35805aaced2977de9a72ca6d7b65cdd81881b92a1dee237e7d0b97498
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105659976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117921032"
 ---
-# <a name="wmi-tasks-operating-systems"></a>Tareas WMI: sistemas operativos
+# <a name="wmi-tasks-operating-systems"></a>Tareas wmi: sistemas operativos
 
-Las tareas de WMI para los sistemas operativos obtienen información sobre el sistema operativo, como la versión, si está activada o qué revisiones están instaladas.
+Las tareas wmi para sistemas operativos obtienen información sobre el sistema operativo, como la versión, si está activado o qué revisiones están instaladas.
 
-Los ejemplos de scripts que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información acerca de cómo usar el script para obtener datos de equipos remotos, consulte [conexión a WMI en un equipo remoto](connecting-to-wmi-on-a-remote-computer.md).
+Los ejemplos de script que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información sobre cómo usar el script para obtener datos de equipos remotos, vea [Conectarse a WMI en un equipo remoto.](connecting-to-wmi-on-a-remote-computer.md)
 
 
 En el procedimiento siguiente se describe cómo ejecutar un script.
 
 **Para ejecutar un script**
 
-1.  Copie el código y guárdelo en un archivo con la extensión. vbs, como *filename.vbs*. Asegúrese de que el editor de texto no agrega una extensión. txt al archivo.
-2.  Abra una ventana del símbolo del sistema y navegue hasta el directorio en el que guardó el archivo.
+1.  Copie el código y guárdelo en un archivo con una extensión .vbs, como *filename.vbs*. Asegúrese de que el editor de texto no agrega .txt extensión al archivo.
+2.  Abra una ventana del símbolo del sistema y vaya al directorio donde guardó el archivo.
 3.  Escriba **CScript filename.vbs** en el símbolo del sistema.
-4.  Si no puede obtener acceso a un registro de eventos, compruebe si está ejecutando desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
+4.  Si no puede acceder a un registro de eventos, compruebe si está ejecutando desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
 
 > [!Note]  
-> De forma predeterminada, CScript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts de WMI pueden generar grandes cantidades de resultados, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del script de *filename.vbs* a *outfile.txt*.
+> De forma predeterminada, CScript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts WMI pueden generar grandes cantidades de salida, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del *script* filename.vbsa *outfile.txt*.
 
  
 
-En la tabla siguiente se enumeran ejemplos de scripts que se pueden usar para obtener distintos tipos de datos del equipo local.
+En la tabla siguiente se enumeran ejemplos de script que se pueden usar para obtener varios tipos de datos del equipo local.
 
 
 
@@ -56,7 +56,7 @@ En la tabla siguiente se enumeran ejemplos de scripts que se pueden usar para ob
 <tbody>
 <tr class="odd">
 <td>... determinar si se ha instalado un Service Pack en un equipo?</td>
-<td>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-operatingsystem"><strong>Win32_OperatingSystem</strong></a> y compruebe el valor de las propiedades <strong>ServicePackMajorVersion</strong> y <strong>ServicePackMinorVersion</strong> .<br/> <span data-codelanguage="VisualBasic"></span>
+<td>Use la <a href="/windows/desktop/CIMWin32Prov/win32-operatingsystem"><strong>Win32_OperatingSystem</strong></a> y compruebe el valor de las propiedades <strong>ServicePackMajorVersion</strong> <strong>y ServicePackMinorVersion.</strong><br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -97,8 +97,8 @@ Next</code></pre></td>
 </td>
 </tr>
 <tr class="even">
-<td>... ¿determinar cuándo se instaló el sistema operativo en un equipo?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-operatingsystem"><strong>Win32_OperatingSystem</strong></a> y la propiedad <strong>InstallDate</strong> .</p>
+<td>... determinar cuándo se instaló el sistema operativo en un equipo?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-operatingsystem"><strong>Win32_OperatingSystem</strong></a> y la <strong>propiedad InstallDate.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -141,8 +141,8 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="odd">
-<td>... ¿determinar qué versión del sistema operativo Windows está instalada en un equipo?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-operatingsystem"><strong>Win32_OperatingSystem</strong></a> y recupere las propiedades <strong>nombre</strong> y <strong>versión</strong> .</p>
+<td>... determinar qué versión del Windows operativo está instalado en un equipo?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-operatingsystem"><strong>Win32_OperatingSystem</strong></a> y recupere las propiedades <strong>Name</strong> <strong>y Version.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -185,8 +185,8 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="even">
-<td>... determinar qué carpeta es la carpeta de Windows (% WINDIR%) en un equipo?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-operatingsystem"><strong>Win32_OperatingSystem</strong></a> y compruebe el valor de la propiedad <strong>WindowsDirectory</strong> .</p>
+<td>... determinar qué carpeta es Windows carpeta (%Windir%) en un equipo?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-operatingsystem"><strong>Win32_OperatingSystem</strong></a> y compruebe el valor de la <strong>propiedad WindowsDirectory.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -229,8 +229,8 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="odd">
-<td>... ¿determinar qué revisiones se han instalado en un equipo?</td>
-<td><p>Utilice la clase <a href="/windows/desktop/CIMWin32Prov/win32-quickfixengineering"><strong>Win32_QuickFixEngineering</strong></a> .</p>
+<td>... determinar qué revisiones se han instalado en un equipo?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-quickfixengineering"><strong>Win32_QuickFixEngineering</strong></a> clase .</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -274,8 +274,8 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="even">
-<td>... ¿determinar si es necesario activar el sistema operativo en un equipo?</td>
-<td><p>Use la clase <a href="/previous-versions/windows/desktop/legacy/aa394520(v=vs.85)"><strong>Win32_WindowsProductActivation</strong></a> y compruebe el valor de la propiedad <strong>ActivationRequired</strong> .</p>
+<td>... determinar si necesito activar el sistema operativo en un equipo?</td>
+<td><p>Use la <a href="/previous-versions/windows/desktop/legacy/aa394520(v=vs.85)"><strong>Win32_WindowsProductActivation</strong></a> y compruebe el valor de la <strong>propiedad ActivationRequired.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -331,13 +331,13 @@ Next</code></pre></td>
 
 <dl> <dt>
 
-[Tareas de WMI para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)
+[Tareas wmi para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Ejemplos de aplicaciones de C++ de WMI](wmi-c---application-examples.md)
+[Ejemplos de aplicaciones wmi de C++](wmi-c---application-examples.md)
 </dt> <dt>
 
-[ScriptCenter de TechNet](https://www.microsoft.com/technet/scriptcenter)
+[TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)
 </dt> </dl>
 
  

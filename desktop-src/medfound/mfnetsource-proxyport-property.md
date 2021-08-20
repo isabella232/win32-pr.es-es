@@ -49,7 +49,7 @@ Las aplicaciones pueden usar esta propiedad para configurar el localizador de pr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

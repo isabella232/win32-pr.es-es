@@ -1,19 +1,19 @@
 ---
-description: Un valor único que se usa como clave para almacenar en caché las miniaturas.
+description: Valor único que se usa como clave para almacenar en caché las miniaturas.
 ms.assetid: 86f9f995-4de3-4e90-a507-a886ccff80c4
-title: System. ThumbnailCacheId
+title: System.ThumbnailCacheId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d62e4c504b343c51ecf30f2feaba2ecb260cf14d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a80a5afef18af7121cdbff645636f73b7a53ae6bd741327e0df716008e88f670
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117864267"
 ---
-# <a name="systemthumbnailcacheid"></a>System. ThumbnailCacheId
+# <a name="systemthumbnailcacheid"></a>System.ThumbnailCacheId
 
-Un valor único que se usa como clave para almacenar en caché las miniaturas. El valor cambia cuando cambia el nombre, el volumen o los datos modificados de un elemento.
+Valor único que se usa como clave para almacenar en caché las miniaturas. El valor cambia cuando cambia el nombre, el volumen o los datos modificados de un elemento.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,17 +1,17 @@
 ---
 description: Nombre descriptivo del dispositivo.
 ms.assetid: 4d4d309f-edfb-439b-b2cc-3401f1118931
-title: System. Devices. FriendlyName
+title: System.Devices.FriendlyName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92da13022e0b69dc153f8a421f1552367e9e9754
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a2b34dc2d7339146fb0a1d5128c2457a550c1ffa5f99046486010a70f02e69e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117866722"
 ---
-# <a name="systemdevicesfriendlyname"></a>System. Devices. FriendlyName
+# <a name="systemdevicesfriendlyname"></a>System.Devices.FriendlyName
 
 Nombre descriptivo del dispositivo.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

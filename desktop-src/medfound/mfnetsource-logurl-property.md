@@ -41,7 +41,7 @@ Las aplicaciones pueden usar esta propiedad para configurar el origen de red. Pa
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
@@ -49,7 +49,7 @@ Las aplicaciones pueden usar esta propiedad para configurar el origen de red. Pa
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

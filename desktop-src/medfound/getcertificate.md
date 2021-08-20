@@ -1,7 +1,7 @@
 ---
-description: Obtiene un certificado para un controlador de pantalla.
+description: Obtiene un certificado para un controlador para mostrar.
 ms.assetid: eceaf151-1dae-4ff0-9139-7f1789f6c682
-title: GetCertificate función)
+title: Función GetCertificate
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - DllExport
 api_location:
 - gdi32.dll
-ms.openlocfilehash: 30cb17345177b552e51120afd00758a3f6886584
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7103f24627976819bef098356e8abe906f4c5de14528d676fc0f6213b27642b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118063542"
 ---
-# <a name="getcertificate-function"></a>GetCertificate función)
+# <a name="getcertificate-function"></a>Función GetCertificate
 
 > [!IMPORTANT]
-> El administrador de protección de [salida](output-protection-manager.md) (OPM) usa esta función para tener acceso a la funcionalidad del controlador de pantalla. Las aplicaciones no deben llamar a esta función.
+> El Administrador de [](output-protection-manager.md) protección de salida (OPM) usa esta función para acceder a la funcionalidad del controlador de pantalla. Las aplicaciones no deben llamar a esta función.
 
  
 
-Obtiene un certificado para un controlador de pantalla.
+Obtiene un certificado para un controlador para mostrar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,52 +47,52 @@ NTSTATUS WINAPI GetCertificate(
 
 <dl> <dt>
 
-*pstrDeviceName* \[ de\]
+*pstrDeviceName* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura de [**\_ cadena Unicode**](/windows/win32/api/subauth/ns-subauth-unicode_string) que contiene el nombre del dispositivo de pantalla, tal y como lo devuelve la función [**GetMonitorInfo**](/windows/win32/api/winuser/nf-winuser-getmonitorinfoa) .
+Puntero a una [**estructura \_ STRING UNICODE**](/windows/win32/api/subauth/ns-subauth-unicode_string) que contiene el nombre del dispositivo para mostrar, tal y como devuelve la función [**GetMonitorInfo.**](/windows/win32/api/winuser/nf-winuser-getmonitorinfoa)
 
 </dd> <dt>
 
-*ctPVPCertificateType* \[ de\]
+*ctPVPCertificateType* \[ En\]
 </dt> <dd>
 
-El tipo de certificado, especificado como miembro de la enumeración del **\_ \_ tipo de certificado DXGKMDT** .
+Tipo de certificado, especificado como miembro de la **enumeración DXGKMDT \_ CERTIFICATE \_ TYPE.**
 
 </dd> <dt>
 
-*pbCertificate* \[ enuncia\]
+*pbCertificate* \[ out\]
 </dt> <dd>
 
-Un puntero a un búfer que recibe el certificado.
+Puntero a un búfer que recibe el certificado.
 
 </dd> <dt>
 
-*ulCertificateLength* \[ enuncia\]
+*ulCertificateLength* \[ out\]
 </dt> <dd>
 
-Tamaño del búfer de *pbCertificate* , en bytes. Para obtener el tamaño del certificado, llame a [**GetCertificateSize**](getcertificatesize.md).
+Tamaño del búfer *pbCertificate,* en bytes. Para obtener el tamaño del certificado, llame a [**GetCertificateSize**](getcertificatesize.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve el **estado \_ correcto**. De lo contrario, devuelve un código de error **NTSTATUS** .
+Si el método se realiza correctamente, devuelve **STATUS \_ SUCCESS**. De lo contrario, devuelve un código de error **NTSTATUS.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las aplicaciones deben llamar al método [**IOPMVideoOutput:: StartInitialization**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-startinitialization) en lugar de esta función.
+Las aplicaciones deben llamar [**al método IOPMVideoOutput::StartInitialization**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-startinitialization) en lugar de esta función.
 
-Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe utilizar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Gdi32.dll.
+Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe usar las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Gdi32.dll.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                 |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
 | Archivo DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 

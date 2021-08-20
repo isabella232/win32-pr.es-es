@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentTooManyColumnsException'
-title: Constructor de EsentTooManyColumnsException
+description: 'Más información sobre: Constructor EsentTooManyColumnsException'
+title: Constructor EsentTooManyColumnsException
 TOCTitle: 'EsentTooManyColumnsException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTooManyColumnsException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenttoomanycolumnsexception.esenttoomanycolumnsexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bc61d0be4f2082a5ae13f03b562408966a32653e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 392b9e14392287005ecad937d657bc7da791e21439f2437bce9ae536422be312
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117707159"
 ---
-# <a name="esenttoomanycolumnsexception-constructor"></a>Constructor de EsentTooManyColumnsException
+# <a name="esenttoomanycolumnsexception-constructor"></a>Constructor EsentTooManyColumnsException
 
 Inicializa una nueva instancia de la clase EsentTooManyColumnsException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentTooManyColumnsException()
 public EsentTooManyColumnsException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentTooManyColumnsException()
 
 [Miembros de EsentTooManyColumnsException](./esenttoomanycolumnsexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

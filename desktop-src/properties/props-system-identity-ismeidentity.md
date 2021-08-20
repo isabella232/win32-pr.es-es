@@ -4,12 +4,12 @@ ms.assetid: 4aae7a73-e0e9-4e11-811b-4a7a936b8084
 title: System.Identity.IsMeIdentity
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1dec28411b1b901bd14780f042b1466604105440
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5592c9aed4aec34280cd9c0f95f69cfcc025123b9813adfd000006efb8518a27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117865898"
 ---
 # <a name="systemidentityismeidentity"></a>System.Identity.IsMeIdentity
 

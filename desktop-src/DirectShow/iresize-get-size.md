@@ -1,7 +1,7 @@
 ---
-description: El \_ método get size devuelve el tamaño de salida actual y el modo de ajuste.
+description: El método get \_ Size devuelve el tamaño de salida actual y el modo de ajuste.
 ms.assetid: 61c0e439-26ce-45fc-986a-0ffc17056a55
-title: 'Método IResize:: get_Size (QEDIT. h)'
+title: Método IResize::get_Size (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: b9fe4971fd9ede0f695fe06a4102da8243e7c720
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 747ca8d7fd839321a9dbf4403c503652b932403e49bb964ae6148da2f49c5ac5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117818216"
 ---
-# <a name="iresizeget_size-method"></a>IResize:: get \_ size (método)
+# <a name="iresizeget_size-method"></a>IResize::get \_ Size (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -47,42 +47,42 @@ HRESULT get_Size(
 
 <dl> <dt>
 
-*piHeight* \[ enuncia\]
+*piHeight* \[ out\]
 </dt> <dd>
 
 Recibe el alto del vídeo, en píxeles.
 
 </dd> <dt>
 
-*piWidth* \[ enuncia\]
+*piWidth* \[ out\]
 </dt> <dd>
 
 Recibe el ancho del vídeo, en píxeles.
 
 </dd> <dt>
 
-*pFlag* \[ enuncia\]
+*pFlag* \[ out\]
 </dt> <dd>
 
-Recibe una marca que especifica el modo de Stretch. Vea [**cambiar el tamaño**](resize-flags.md) de las marcas para los valores posibles.
+Recibe una marca que especifica el modo de ajuste. Consulte [**Cambiar el tamaño de las marcas**](resize-flags.md) para ver los valores posibles.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si no se ha establecido el tipo de salida, el filtro debe devolver los valores predeterminados. Estos valores se pueden elegir arbitrariamente en tiempo de diseño.
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -90,11 +90,11 @@ Si no se ha establecido el tipo de salida, el filtro debe devolver los valores p
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | DirectX 9,0 o posterior<br/>                                                         |
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Versión<br/> | DirectX 9.0 o posterior<br/>                                                         |
+| Header<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -102,10 +102,10 @@ Si no se ha establecido el tipo de salida, el filtro debe devolver los valores p
 
 <dl> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> <dt>
 
-[**Interfaz IResize**](iresize.md)
+[**IResize (Interfaz)**](iresize.md)
 </dt> </dl>
 
  

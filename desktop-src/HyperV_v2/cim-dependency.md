@@ -1,7 +1,7 @@
 ---
-description: Representa una asociación genérica que se usa para establecer relaciones de dependencia entre los elementos administrados.
+description: Representa una asociación genérica que se usa para establecer relaciones de dependencia entre elementos administrados.
 ms.assetid: a81beedc-5473-49a6-8e7f-67e831d3e8bc
-title: CIM_Dependency (clase, administración de Hyper-V)
+title: CIM_Dependency (administración de Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4e85f59b190e0024fc34489315fa2fae1c0d6b34
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d6ea83e02243d5185e82bdebf77a206737a569980deb390e8ffd60c3dfa4b7b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813102"
 ---
-# <a name="cim_dependency-class-hyper-v-management"></a>CIM_Dependency (clase, administración de Hyper-V)
+# <a name="cim_dependency-class-hyper-v-management"></a>CIM_Dependency (administración de Hyper-V)
 
-Representa una asociación genérica que se usa para establecer relaciones de dependencia entre los elementos administrados.
+Representa una asociación genérica que se usa para establecer relaciones de dependencia entre elementos administrados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,13 +39,13 @@ class CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ dependencia CIM** tiene estos tipos de miembros:
+La **clase Dependency \_ de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ dependencia CIM** tiene estas propiedades.
+La **clase Dependency \_ de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -58,14 +58,14 @@ Tipo de datos: **CIM \_ ManagedElement**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **Clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Objeto independiente de esta asociación.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **CIM \_ ManagedElement**
@@ -74,7 +74,7 @@ Tipo de datos: **CIM \_ ManagedElement**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **Clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Objeto dependiente de la asociación.
@@ -85,12 +85,12 @@ Objeto dependiente de la asociación.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

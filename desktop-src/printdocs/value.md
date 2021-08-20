@@ -4,16 +4,16 @@ ms.assetid: 933528f6-8f34-4509-887c-c7c223c79367
 title: Valor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 272bee4d7a5f88899f83e439d8e1630b4026713d
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 739ce465408d1cd1447de5aeac2e314e879f48f69f13735855e628c8901c2c52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117685866"
 ---
-# <a name="value"></a>Valor
+# <a name="value"></a>Value
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Un elemento Value asocia un literal a un tipo.
 
@@ -62,7 +62,7 @@ Es posible que los elementos de valor que aparecen en el elemento ScoredProperty
 Un elemento Value puede aparecer dentro de un elemento Property o ScoredProperty. El propósito del elemento Value es representar un valor como un tipo de datos XML estándar. El tipo de datos se especifica como un atributo XML del elemento Value, xsi:type. Tenga en cuenta que no se admiten todos los tipos definidos por XSD o XML. Para obtener una lista de los tipos admitidos, [vea Resumen de tipos de elementos](summary-of-element-types.md). Un elemento Value solo puede contener contenido de caracteres. No puede aparecer nada más como contenido en un elemento Value.
 
 > [!Note]  
-> Algunos elementos Print Schema-defined Property y ScoredProperty no contienen un elemento Value, porque su finalidad es simplemente ser elementos primarios de subpropiedades. No debe agregar un elemento Value a propiedades como estas, propiedades que no contienen un elemento Value.
+> Algunos elementos Print Schema-defined Property y ScoredProperty no contienen un elemento Value, ya que su finalidad es simplemente ser elementos primarios de subpropiedades. No debe agregar un elemento Value a propiedades como estas, propiedades que no contienen un elemento Value.
 
  
 

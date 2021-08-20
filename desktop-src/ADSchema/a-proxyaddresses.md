@@ -1,11 +1,11 @@
 ---
-title: Proxy-Addresses atributo)
-description: Una dirección proxy es la dirección por la que se reconoce un objeto de destinatario de Microsoft Exchange Server en un sistema de correo externo. Las direcciones de proxy son necesarias para todos los objetos de destinatario, como los destinatarios personalizados y las listas de distribución.
+title: Proxy-Addresses atributo
+description: Una dirección proxy es la dirección por la que se reconoce un Microsoft Exchange Server destinatario en un sistema de correo externo. Las direcciones proxy son necesarias para todos los objetos de destinatario, como destinatarios personalizados y listas de distribución.
 ms.assetid: 7bb299d8-e67a-4062-91a3-b579fd71d5c9
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Proxy-Addresses
-- atributo proxyAddresses esquema de AD
+- Proxy-Addresses esquema de AD de atributo
+- ProxyAddresses attribute AD Schema (Esquema de AD del atributo proxyAddresses)
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a03542cef9bca48dbba1585e3837056b53673f34
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4333995a30eef76626fba8965eef4ec8e8083e4699b449fd9da69492080b5750
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836849"
 ---
-# <a name="proxy-addresses-attribute"></a>Proxy-Addresses atributo)
+# <a name="proxy-addresses-attribute"></a>Proxy-Addresses atributo
 
-Una dirección proxy es la dirección por la que se reconoce un objeto de destinatario de Microsoft Exchange Server en un sistema de correo externo. Las direcciones de proxy son necesarias para todos los objetos de destinatario, como los destinatarios personalizados y las listas de distribución.
+Una dirección proxy es la dirección por la que se reconoce un Microsoft Exchange Server destinatario en un sistema de correo externo. Las direcciones proxy son necesarias para todos los objetos de destinatario, como destinatarios personalizados y listas de distribución.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|------------------------------------------------------------------------------------------------------|
 | CN                | Proxy-Addresses                                                                                      |
-| Nombre para mostrar de LDAP | proxyAddresses                                                                                       |
-| Tamaño              | \-                                                                                                   |
-| Actualizar privilegio  | El sistema establece este valor.                                                                     |
-| Frecuencia de actualización  | Creado por un archivo DLL proporcionado con el objeto de directorio Address-Type cuando se instala el tipo de dirección. |
+| Ldap-Display-Name | proxyAddresses                                                                                       |
+| Size              | \-                                                                                                   |
+| Actualizar privilegios  | El sistema establece este valor.                                                                     |
+| Frecuencia de actualización  | Creado por un archivo DLL proporcionado con el Address-Type de directorio cuando se instala el tipo de dirección. |
 | Attribute-Id      | 1.2.840.113556.1.2.210                                                                               |
-| System-ID-GUID    | bf967a06-0de6-11d0-a285-00aa003049e2                                                                 |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                                          |
+| System-Id-Guid    | bf967a06-0de6-11d0-a285-00aa003049e2                                                                 |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                                          |
 
 
 
@@ -44,7 +44,7 @@ Una dirección proxy es la dirección por la que se reconoce un objeto de destin
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Una dirección proxy es la dirección por la que se reconoce un objeto de destin
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x800F                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1123                            |
 | Search-Flags           | 0x00000005                      |
@@ -77,13 +77,13 @@ Una dirección proxy es la dirección por la que se reconoce un objeto de destin
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x800F                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1123                            |
 | Search-Flags           | 0x00000005                      |
@@ -92,19 +92,19 @@ Una dirección proxy es la dirección por la que se reconoce un objeto de destin
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x800F                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1123                            |
 | Search-Flags           | 0x00000005                      |
@@ -117,15 +117,15 @@ Una dirección proxy es la dirección por la que se reconoce un objeto de destin
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x800F                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1123                            |
 | Search-Flags           | 0x00000005                      |
@@ -140,13 +140,13 @@ Una dirección proxy es la dirección por la que se reconoce un objeto de destin
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x800F                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1123                            |
 | Search-Flags           | 0x00000005                      |
@@ -161,13 +161,13 @@ Una dirección proxy es la dirección por la que se reconoce un objeto de destin
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x800F                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1123                            |
 | Search-Flags           | 0x00000005                      |
@@ -182,13 +182,13 @@ Una dirección proxy es la dirección por la que se reconoce un objeto de destin
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x800F                          |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | True                            |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1123                            |
 | Search-Flags           | 0x00000005                      |

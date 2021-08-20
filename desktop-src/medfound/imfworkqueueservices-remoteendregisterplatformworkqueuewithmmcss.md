@@ -40,7 +40,7 @@ Las aplicaciones no pueden llamar directamente a este método y los objetos no i
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

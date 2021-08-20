@@ -22,13 +22,13 @@ Al registrar la aplicación, puede elegir uno de los dos niveles de dependencia:
 
 Para registrar la aplicación, debe establecer un valor en el registro que identifique la aplicación. El valor del Registro que se va a establecer depende del componente del que depende la aplicación. También puede establecer dos valores adicionales por dependencia para proporcionar información adicional sobre la aplicación.
 
-Los siguientes valores del Registro se usan para registrar la dependencia del entorno de ejecución Windows SDK de formato multimedia:
+Los siguientes valores del Registro se usan para registrar la dependencia en el entorno de ejecución Windows SDK de formato multimedia:
 
 -   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ WindowsMedia Setup REF \\ \\ *\_ TYPE* \\ App, "*APP*", "*APP \_ STRING*"
 -   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ WindowsMedia Setup REF \\ \\ *\_ TYPE* \\ Descriptor, "*APP*", "*REF \_ DESCRIPTOR*"
 -   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ WindowsMedia Setup REF TYPE \\ \\ *\_ Version,* \\ "*APP*", "*WMF \_ VERSION*"
 
-El siguiente valor del Registro se usa para registrar la dependencia de Reproductor de Windows Media runtime del SDK:
+El siguiente valor del Registro se usa para registrar la dependencia en Reproductor de Windows Media runtime del SDK:
 
 -   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ MediaPlayer Setup REF \\ \\ *\_ TYPE* \\ App, "*APP*", "*APP \_ STRING*"
 -   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ MediaPlayer Setup REF \\ \\ *\_ TYPE* \\ Descriptor, "*APP*", "*REF \_ DESCRIPTOR*"
@@ -48,7 +48,7 @@ Nombre o descriptor corto de la aplicación. Esta cadena no se usará en los men
 
 Descriptor de la aplicación. Esta cadena se puede usar en los mensajes que se muestran para el usuario.
 
-*REF \_ DESCRIPTOR*
+*DESCRIPTOR \_ DE REFERENCIA*
 
 Descripción de cómo la aplicación usa el componente. Este valor puede incluir un máximo de 256 caracteres.
 
@@ -62,9 +62,9 @@ Versión del SDK Windows Media Format requerido por la aplicación.
 
 Los tres valores del Registro de ejemplo siguientes muestran cómo configurar los valores de la aplicación:
 
--   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ WindowsConfiguración de \\ \\ MicrosoftMedia Aplicación DependentRefCounts, \\ "Southvideo", "Reproductor de vídeo de Southvideo"
--   HKEY CLASSES ROOT Software Microsoft WindowsConfiguración de \_ \_ \\ \\ MicrosoftMedia \\ \\ \\ DescriptorRefCounts, \\ "Southvideo", "Southvideo Player usa el SDK de formato multimedia de Windows para reproducir archivos de vídeo".
--   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ WindowsConfiguración de \\ \\ MicrosoftMedia DependentRefCounts \\ Version, "Southvideo", "9.0.0.2600"
+-   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ WindowsConfiguración de \\ MicrosoftMediaLa aplicación \\ DependentRefCounts, \\ "Southvideo", "South apk Video Player"
+-   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ WindowsMedia Setup \\ \\ DependentRefCounts \\ Descriptor, "Southvideo", "Southvideo Player uses the Windows Media Format SDK to play video files".
+-   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ WindowsMedia Setup \\ \\ DependentRefCounts \\ Version, "Southvideo", "9.0.0.2600"
 
 ## <a name="related-topics"></a>Temas relacionados
 

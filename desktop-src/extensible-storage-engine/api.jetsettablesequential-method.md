@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetSetTableSequential (método)'
-title: Método API. JetSetTableSequential
+description: 'Más información sobre: Método Api.JetSetTableSequential'
+title: Método Api.JetSetTableSequential
 TOCTitle: 'JetSetTableSequential method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetSetTableSequential(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.SetTableSequentialGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetsettablesequential(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 879eca53c4867bb41ee0a231bff9adce39aa58a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6eaae486d2792d5b13b7e728a160c5176f5090db44402f5c89a4256925ca0309
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117902651"
 ---
-# <a name="apijetsettablesequential-method"></a>Método API. JetSetTableSequential
+# <a name="apijetsettablesequential-method"></a>Método Api.JetSetTableSequential
 
-Notifica al motor de base de datos que la aplicación está examinando el índice completo en el que está situado el cursor. Por lo tanto, los métodos que se usan para tener acceso a los datos del índice se optimizarán para que este escenario sea lo más rápido posible. Vea también [JetResetTableSequential (JET_SESID, JET_TABLEID, ResetTableSequentialGrbit)](./api.jetresettablesequential-method.md).
+Notifica al motor de base de datos que la aplicación está analizando todo el índice en el que se encuentra el cursor. Por lo tanto, los métodos que se usan para acceder a los datos de índice se ajustarán para que este escenario sea lo más rápido posible. Consulte también [JetResetTableSequential(JET_SESID, JET_TABLEID, ResetTableSequentialGrbit).](./api.jetresettablesequential-method.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,21 +65,21 @@ public static void JetSetTableSequential(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor que va a tener acceso a los datos.
+    Cursor que tendrá acceso a los datos.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. SetTableSequentialGrbit](./settablesequentialgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.SetTableSequentialGrbit](./settablesequentialgrbit-enumeration.md)  
     
     Reservado para uso futuro.
 
@@ -89,6 +89,6 @@ public static void JetSetTableSequential(
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

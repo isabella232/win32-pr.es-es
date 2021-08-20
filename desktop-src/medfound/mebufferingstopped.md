@@ -21,7 +21,7 @@ Los flujos de bytes que implementan [**la interfaz IMFByteStreamBuffering**](/wi
 
 ## <a name="event-values"></a>Valores de evento
 
-Entre los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) se incluyen los siguientes.
+Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluyen lo siguiente.
 
 
 
@@ -39,7 +39,7 @@ Cuando la sesión multimedia recibe este evento, reinicia el reloj de presentaci
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
@@ -47,7 +47,7 @@ Cuando la sesión multimedia recibe este evento, reinicia el reloj de presentaci
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 187c758c-5e7f-48ee-97cb-b1f30b709723
 title: D3DSTENCILCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8999d73044a061cb8eea8f5829351c1d04079462
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: af3a8105acb1b4000335b9c993b12225b04f409609243c0ab95b00392809afc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118096674"
 ---
 # <a name="d3dstencilcaps"></a>D3DSTENCILCAPS
 
@@ -26,7 +26,7 @@ Marcas de funcionalidad de galería de símbolos del controlador.
 | D3DSTENCILCAPS \_ DECRSAT  | 0x00000010L | Decremento de la entrada stencil-buffer, fijando a cero.                                                 |
 | D3DSTENCILCAPS \_ INVERT   | 0x00000020L | Invierta los bits de la entrada stencil-buffer.                                                          |
 | D3DSTENCILCAPS \_ INCR     | 0x00000040L | Incremente la entrada stencil-buffer y ajuste a cero si el nuevo valor supera el valor máximo.      |
-| D3DSTENCILCAPS \_ DECR     | 0x00000080L | Decremento de la entrada stencil-buffer, ajustando al valor máximo si el nuevo valor es menor que cero. |
+| D3DSTENCILCAPS \_ DECR     | 0x00000080L | Disminuye la entrada stencil-buffer, ajustando al valor máximo si el nuevo valor es menor que cero. |
 | D3DSTENCILCAPS \_ TWOSIDED | 0x00000100L | El dispositivo admite galería de símbolos de dos lados.                                                                |
 
 

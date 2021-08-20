@@ -64,7 +64,7 @@ Cuando se envía el mensaje **\_ CANCELMODE** de WM, la función [**DefWindowPro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

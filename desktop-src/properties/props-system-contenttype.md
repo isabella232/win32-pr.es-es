@@ -4,12 +4,12 @@ ms.assetid: e12123c2-bcab-41a0-85dd-a4a46f64aed9
 title: System.ContentType
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ccb04c14128658f748cef177b94081383a3a403
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: eb7c66de11f27940e71f13241e023b7ce5aa91f13070b4ed70e819a99e26037d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117684439"
 ---
 # <a name="systemcontenttype"></a>System.ContentType
 

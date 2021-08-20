@@ -52,7 +52,7 @@ Valor máximo de un objeto de parámetro entero wmi de 32 bits.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
@@ -73,7 +73,7 @@ Valor máximo de un objeto de parámetro entero wmi de 32 bits.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
@@ -94,7 +94,7 @@ Valor máximo de un objeto de parámetro entero wmi de 32 bits.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
@@ -115,7 +115,7 @@ Valor máximo de un objeto de parámetro entero wmi de 32 bits.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
@@ -136,7 +136,7 @@ Valor máximo de un objeto de parámetro entero wmi de 32 bits.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |

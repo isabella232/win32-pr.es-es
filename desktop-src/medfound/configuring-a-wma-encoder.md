@@ -13,12 +13,12 @@ ms.locfileid: "117880576"
 ---
 # <a name="setting-an-output-type-for-a-wma-encoder"></a>Establecimiento de un tipo de salida para un codificador WMA
 
-Para crear un tipo de salida válido para un Windows Audio multimedia (WMA), debe tener la siguiente información:
+Para crear un tipo de salida válido para un codificador Windows Media Audio (WMA), debe tener la siguiente información:
 
--   Subtipo de audio que representa el formato WMA codificado. Consulte [GUID de subtipo de audio.](audio-subtype-guids.md)
+-   Subtipo de audio que reenvía el formato WMA codificado. Consulte [GUID de subtipo de audio.](audio-subtype-guids.md)
 -   Propiedades de configuración que se establecerán en el codificador.
 
-    Las propiedades de configuración se documentan en la documentación Windows Media Audio y Video Codec y LAS API de DSP. Para obtener más información, vea "Propiedades de secuencia de audio" en [Propiedades de codificación](configuring-the-encoder.md).
+    Las propiedades de configuración se documentan en la documentación Windows Media Audio and Video Codec y LAS API de DSP. Para obtener más información, vea "Propiedades de secuencia de audio" en [Propiedades de codificación.](configuring-the-encoder.md)
 
 ### <a name="windows-vista-or-later"></a>Windows Vista o versiones posteriores
 
@@ -32,14 +32,14 @@ Para obtener un tipo de salida válido para el codificador, realice los pasos si
 
 ### <a name="windows-7"></a>Windows 7
 
-Para obtener un tipo de salida válido para el codificador en Windows 7, Media Foundation proporciona la [**función MFTranscodeGetAudioOutputAvailableTypes.**](/windows/desktop/api/mfidl/nf-mfidl-mftranscodegetaudiooutputavailabletypes) Una aplicación debe pasar el subtipo de audio necesario que repeste la WMA codificada y las propiedades de codificación. Las propiedades son necesarias porque el codificador cambia los tipos de salida admitidos en función del modo establecido.
+Para obtener un tipo de salida válido para el codificador en Windows 7, Media Foundation proporciona la función [**MFTranscodeGetAudioOutputAvailableTypes.**](/windows/desktop/api/mfidl/nf-mfidl-mftranscodegetaudiooutputavailabletypes) Una aplicación debe pasar el subtipo de audio necesario que reenvía la WMA codificada y las propiedades de codificación. Las propiedades son necesarias porque el codificador cambia los tipos de salida admitidos en función del modo establecido.
 
 > [!Note]  
-> [**MFTranscodeGetAudioOutputAvailableTypes**](/windows/desktop/api/mfidl/nf-mfidl-mftranscodegetaudiooutputavailabletypes)solo se admite para [la codificación de velocidad de bits constante.](constant-bit-rate-encoding.md)
+> [**MFTranscodeGetAudioOutputAvailableTypes**](/windows/desktop/api/mfidl/nf-mfidl-mftranscodegetaudiooutputavailabletypes)solo se admite para [la codificación de velocidad de bits constante](constant-bit-rate-encoding.md).
 
  
 
-Si la llamada se realiza correctamente, la aplicación recibe una lista de punteros IUnknown de los tipos de medios de salida admitidos en un [**objeto RECORDSETCollection.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfcollection) Para establecer el tipo de medio de salida, busque el que coincida con el tipo de destino y llame a [**IMFTransform::SetOutputType para**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype) establecer el tipo de medio de compresión en el codificador.
+Si la llamada se realiza correctamente, la aplicación recibe una lista de punteros IUnknown de los tipos de medios de salida admitidos en un [**objeto IMFCollection.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfcollection) Para establecer el tipo de medio de salida, busque el que coincida con el tipo de destino y llame a [**IMFTransform::SetOutputType para**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype) establecer el tipo de medio de compresión en el codificador.
 
 ## <a name="related-topics"></a>Temas relacionados
 

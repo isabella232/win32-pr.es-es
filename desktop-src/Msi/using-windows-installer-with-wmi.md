@@ -1,5 +1,5 @@
 ---
-description: El proveedor Windows Installer permite que Windows Management Instrumentation (WMI) obtenga acceso a la información recopilada de Windows Installer.
+description: El proveedor Windows Installer permite a Windows Management Instrumentation (WMI) acceder a la información recopilada de Windows Installer.
 ms.assetid: ffe7b6eb-b6f5-4070-9f83-91a1e76764c6
 title: Usar Windows instalador con WMI
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "117804077"
 ---
 # <a name="using-windows-installer-with-wmi"></a>Usar Windows instalador con WMI
 
-El proveedor Windows Installer permite que Windows Management Instrumentation (WMI) obtenga acceso a la información recopilada de Windows Installer.
+El proveedor Windows Installer permite a Windows Management Instrumentation (WMI) acceder a la información recopilada de Windows Installer.
 
-El [Windows instalador es](/previous-versions/windows/desktop/msiprov/windows-installer-provider) un componente Windows opcional. La instalación opcional del Windows installer garantiza la compatibilidad con versiones anteriores, pero no indica la disponibilidad futura del proveedor. Para obtener más información sobre la disponibilidad del proveedor del instalador de Windows, vea Disponibilidad del sistema operativo de componentes [WMI](../wmisdk/operating-system-availability-of-wmi-components.md) en la [documentación de Windows Management Instrumentation (WMI).](../wmisdk/wmi-start-page.md)
+El [Windows instalador de aplicaciones](/previous-versions/windows/desktop/msiprov/windows-installer-provider) es un componente Windows opcional. La instalación opcional del Windows installer garantiza la compatibilidad con versiones anteriores, pero no indica la disponibilidad futura del proveedor. Para obtener más información sobre la disponibilidad del proveedor del instalador de Windows, vea Disponibilidad del sistema operativo de componentes [WMI](../wmisdk/operating-system-availability-of-wmi-components.md) en la [documentación de Windows Management Instrumentation (WMI).](../wmisdk/wmi-start-page.md)
 
-Para obtener la descripción actual de este proveedor WMI, [vea Windows Installer Provider](/previous-versions/windows/desktop/msiprov/windows-installer-provider) en la documentación Windows Management Instrumentation [(WMI)](../wmisdk/wmi-start-page.md) principal. Para obtener una lista de las clases WMI admitidas por Windows Instalador, vea [Clases de aplicaciones instaladas](/previous-versions//aa390887(v=vs.85)).
+Para obtener la descripción actual de este proveedor WMI, [vea Windows installer provider](/previous-versions/windows/desktop/msiprov/windows-installer-provider) (Proveedor del instalador) en la documentación Windows Management Instrumentation [(WMI)](../wmisdk/wmi-start-page.md) principal. Para obtener una lista de las clases WMI admitidas por Windows Instalador, vea [Clases de aplicaciones instaladas](/previous-versions//aa390887(v=vs.85)).
 
  
 

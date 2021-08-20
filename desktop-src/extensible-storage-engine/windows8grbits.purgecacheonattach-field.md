@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: Windows8Grbits. PurgeCacheOnAttach, campo'
-title: Campo Windows8Grbits. PurgeCacheOnAttach (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: Campo Windows8Grbits.PurgeCacheOnAttach'
+title: Campo Windows8Grbits.PurgeCacheOnAttach (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: PurgeCacheOnAttach field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows8.Windows8Grbits.PurgeCacheOnAttach
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8grbits.purgecacheonattach(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ee0e8fbc8cee6736b82b059742668d3e4bf7e0ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 32df4166040aae9a8f3d7c4bfbee8f6aa7710beff114981c7b57c652c1119663
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118069169"
 ---
-# <a name="windows8grbitspurgecacheonattach-field"></a>Windows8Grbits. PurgeCacheOnAttach, campo
+# <a name="windows8grbitspurgecacheonattach-field"></a>Campo Windows8Grbits.PurgeCacheOnAttach
 
 Purgar páginas de base de datos al adjuntar.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ value = Windows8Grbits.PurgeCacheOnAttach
 public const AttachDatabaseGrbit PurgeCacheOnAttach
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -61,4 +61,4 @@ public const AttachDatabaseGrbit PurgeCacheOnAttach
 
 [Miembros de Windows8Grbits](./windows8grbits-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 9c8c3b505e0e9fb306a444111cce22c8c580d015
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 224961408fc349cf3f7ebb55ba0f95ee248e680945a88b04cebbbda3391d03e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117981239"
 ---
 # <a name="idelaydcresume-method"></a>IDelaydC::Resume (método)
 
@@ -42,15 +42,15 @@ Este método no tiene parámetros.
 
 Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
 | Código devuelto                                                                                                | Descripción                                                                                                                               |
 |------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**CAPTURA DE NMERR \_ \_ NO \_ PAUSADA**</dt> </dl> | La captura no está en pausa. Llame [**a IDelaydC::P ause para**](idelaydc-pause.md) pausar la captura.<br/>                                |
-| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>       | El NPP no está conectado a la red. Llame [**a IDelaydC::Connect**](idelaydc-connect.md) para conectar el NPP a la red.<br/> |
-| <dl> <dt>**NMERR \_ NO \_ RETRASADA**</dt> </dl>         | El NPP está conectado a la red, pero no con [**el método IDelaydC::Connect.**](idelaydc-connect.md)<br/>                     |
+| <dl> <dt>**CAPTURA DE NMERR \_ \_ NO EN \_ PAUSA**</dt> </dl> | La captura no está en pausa. Llame [**a IDelaydC::P ause para**](idelaydc-pause.md) pausar la captura.<br/>                                |
+| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl>       | El NPP no está conectado a la red. Llame [**a IDelaydC::Conectar**](idelaydc-connect.md) para conectar el NPP a la red.<br/> |
+| <dl> <dt>**NMERR \_ NO \_ RETRASADO**</dt> </dl>         | El NPP está conectado a la red, pero no con [**el método IDelaydC::Conectar.**](idelaydc-connect.md)<br/>                     |
 
 
 
@@ -60,9 +60,9 @@ Si el método no se realiza correctamente, el valor devuelto es uno de los sigui
 
 Mientras la captura está en pausa, no se [](c.md) agregan nuevos datos al archivo de captura actual hasta que se llama al método **IDelaydC::Resume** para reiniciar la captura. Cuando [**se**](idelaydc-pause.md) usan **Pausar y reanudar** para detener y reiniciar la captura, toda la información capturada se coloca en el mismo archivo de captura.
 
-Al usar [**Pausar**](idelaydc-pause.md) **y reanudar** para controlar la captura, Monitor de red sigue agregando [*estadísticas*](c.md) de conversación a las estadísticas existentes para la captura actual.
+Al usar [**Pausar**](idelaydc-pause.md) **y reanudar** para controlar la captura, Monitor de red continúa agregando estadísticas de conversación a las [*estadísticas*](c.md) existentes para la captura actual.
 
-Para detener la captura, llame [**a IDelaydC::Stop**](idelaydc-stop.md).
+Para detener la captura, llame a [**IDelaydC::Stop**](idelaydc-stop.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,14 +77,14 @@ Para detener la captura, llame [**a IDelaydC::Stop**](idelaydc-stop.md).
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [IDelaydC](idelaydc.md)
 </dt> <dt>
 
-[**IDelaydC::Connect**](idelaydc-connect.md)
+[**IDelaydC::Conectar**](idelaydc-connect.md)
 </dt> <dt>
 
 [**IDelaydC::P ause**](idelaydc-pause.md)

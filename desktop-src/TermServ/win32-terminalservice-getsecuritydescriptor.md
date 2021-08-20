@@ -4,11 +4,11 @@ description: 'Método GetSecurityDescriptor de la clase Win32_Service (Servicios
 ms.assetid: 9898091A-5BE2-42A0-BF81-13AB74696ACB
 ms.tgt_platform: multiple
 keywords:
-- scripting Instrumental de administración de Windows , seguridad
-- security Instrumental de administración de Windows , scripting
+- scripting Windows Management Instrumentation , seguridad
+- security Windows Management Instrumentation , scripting
 - Método GetSecurityDescriptor Servicios de Escritorio remoto
 - Método GetSecurityDescriptor Servicios de Escritorio remoto , Win32_Service clase
-- Win32_Service clase Servicios de Escritorio remoto , método GetSecurityDescriptor
+- Win32_Service clase Servicios de Escritorio remoto método , GetSecurityDescriptor
 topic_type:
 - apiref
 api_name:
@@ -19,12 +19,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea5b8a9b945048f947aa273e1ccc1f4514469681
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 13be26eb2f0c68f61cbe97ab61cd9ce2a00ab351f9a797dfe6b1ae92db7a8bc6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117940427"
 ---
 # <a name="getsecuritydescriptor-method-of-the-win32_service-class-remote-desktop-services"></a>Método GetSecurityDescriptor de la clase Win32_Service (Servicios de Escritorio remoto)
 
@@ -54,7 +54,7 @@ Descriptor de seguridad asociado al servicio.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o un valor diferente para indicar un error. Para obtener códigos de error adicionales, [**vea Constantes de error WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente o un valor diferente para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -235,13 +235,13 @@ El servicio se encuentra en pausa actualmente en el sistema.
 
 ## <a name="remarks"></a>Comentarios
 
-La [**instancia de \_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) representa un tipo de datos SECURITY DESCRIPTOR [**\_ \_ CONTROL**](/windows/desktop/SecAuthZ/security-descriptor-control) y contiene una lista de [*control*](/windows/desktop/SecGloss/d-gly) de acceso discrecional (DACL) y una lista de [*control*](/windows/desktop/SecGloss/s-gly) de acceso del sistema (SACL). Para obtener más información, [vea Access Control lists](/windows/desktop/SecAuthZ/access-control-lists).
+La [**instancia \_ de SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) representa un tipo de datos [**SECURITY DESCRIPTOR \_ \_ CONTROL**](/windows/desktop/SecAuthZ/security-descriptor-control) y contiene una lista de [*control*](/windows/desktop/SecGloss/d-gly) de acceso discrecional (DACL) y una lista de [*control*](/windows/desktop/SecGloss/s-gly) de acceso del sistema (SACL). Para obtener más información, [vea Access Control .](/windows/desktop/SecAuthZ/access-control-lists)
 
-Si **se concede o se habilita SeSecurityPrivilege** al obtener un descriptor de seguridad, solo se devuelve la DACL en el descriptor de seguridad devuelto. Para obtener más información, vea [**Constantes de privilegios**](/windows/desktop/WmiSdk/privilege-constants) y [Ejecución de operaciones con privilegios.](/windows/desktop/WmiSdk/executing-privileged-operations)
+Si no se concede o se habilita **SeSecurityPrivilege** al obtener un descriptor de seguridad, solo se devuelve la DACL en el descriptor de seguridad devuelto. Para obtener más información, vea [**Constantes de privilegios**](/windows/desktop/WmiSdk/privilege-constants) y [Ejecución de operaciones con privilegios.](/windows/desktop/WmiSdk/executing-privileged-operations)
 
 ## <a name="examples"></a>Ejemplos
 
-Al recuperar un descriptor de seguridad en VBScript, asegúrese de "Seguridad" y ejecute como administrador, como se muestra en el siguiente fragmento de código. De lo contrario, el código puede producir un error de permisos.
+Al recuperar un descriptor de seguridad en VBScript, asegúrese de "Seguridad" y ejecute como Administrador, como se muestra en el siguiente fragmento de código. De lo contrario, el código puede producir un error de permisos.
 
 
 ```VB
@@ -251,7 +251,7 @@ Set objWMIService = GetObject("winmgmts:" _
 
 
 
-Del mismo modo, en VB.NET, asegúrese de establecer "EnablePrivileges = True" y ejecute la aplicación como administrador.
+Del mismo modo, en VB.NET, asegúrese de establecer "EnablePrivileges = True" y ejecutar la aplicación como administrador.
 
 
 ```VB
@@ -269,13 +269,13 @@ Scope.Options.EnablePrivileges = True
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

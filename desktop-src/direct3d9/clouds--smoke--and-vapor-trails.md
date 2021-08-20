@@ -17,15 +17,15 @@ Las nubes, el humo y los pistas de humo se pueden crear mediante una extensión 
 
 Para crear una nube simple, la aplicación puede girar una primitiva rectangular en uno o dos ejes para que la primitiva se enfrenta al usuario. Después, se puede aplicar una textura de tipo nube a la primitiva con transparencia. Para obtener más información sobre cómo aplicar texturas transparentes a primitivas, vea [Mezcla de texturas (Direct3D 9).](texture-blending.md) Puede animar la nube aplicando una serie de texturas a lo largo del tiempo.
 
-Una aplicación puede crear nubes más complejas formándolos a partir de un grupo de primitivas. Cada parte de la nube es una primitiva rectangular. Las primitivas se pueden mover de forma independiente a lo largo del tiempo para dar la apariencia de una bruma dinámica. En la ilustración siguiente se muestra este concepto.
+Una aplicación puede crear nubes más complejas formándolos a partir de un grupo de primitivas. Cada parte de la nube es una primitiva rectangular. Las primitivas se pueden mover de forma independiente con el tiempo para dar la apariencia de una bruma dinámica. En la ilustración siguiente se muestra este concepto.
 
 ![ilustración de primitivas que forman nubes más complejas](images/cloud.png)
 
-La apariencia del humo se muestra de forma similar a las nubes. Normalmente, requiere varios paneles, como nubes complejas. Normalmente, el humo se factura y aumenta con el tiempo, por lo que las estaciones que lo hacen deben moverse en consecuencia. Es posible que tenga que agregar más paneles a medida que el ciruelo aumenta y se dispersa.
+La apariencia del humo se muestra de forma similar a las nubes. Normalmente, requiere varios paneles, como nubes complejas. Por lo general, el humo se factura y aumenta con el tiempo, por lo que las estaciones que lo hacen deben moverse en consecuencia. Es posible que tenga que agregar más paneles a medida que aumenta y se dispersa.
 
-Una pista de humo es una ciruela de humo que no aumenta. Sin embargo, al igual que un humo, se dispersa con el tiempo. En la ilustración siguiente se muestra la técnica de uso de los yedores para simular una pista de recorrido.
+Un camino de resa es una ciruela de humo que no aumenta. Sin embargo, al igual que un humo, se dispersa con el tiempo. En la ilustración siguiente se muestra la técnica de uso de ydas para simular un registro de la función.
 
-![ilustración de las grandes pantallas que simulan una pista de música](images/vapor.png)
+![ilustración de los contrabandos que simulan una pista de música](images/vapor.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 

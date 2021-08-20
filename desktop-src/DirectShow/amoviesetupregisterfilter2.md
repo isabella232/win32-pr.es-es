@@ -1,7 +1,7 @@
 ---
-description: La función AMovieSetupRegisterFilter2 registra los tipos de méritos, PIN y medios de un filtro en el registro mediante la interfaz IFilterMapper2.
+description: La función AMovieSetupRegisterFilter2 registra los valores, los pines y los tipos de medios de un filtro en el Registro mediante la interfaz IFilterMapper2.
 ms.assetid: 8e0f3485-9e5d-4b22-853d-4ad9b1fb71d2
-title: Función AMovieSetupRegisterFilter2 (Dllsetup. h)
+title: Función AMovieSetupRegisterFilter2 (Dllsetup.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 272b781cf70f1dede9d4eea64b45d3d9d793a119
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 69b37fcf3e680cb8a64155aaf1474a8234934fe34bb5349151252ec7500e87a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118001870"
 ---
-# <a name="amoviesetupregisterfilter2-function"></a>AMovieSetupRegisterFilter2 función)
+# <a name="amoviesetupregisterfilter2-function"></a>Función AMovieSetupRegisterFilter2
 
-La función **AMovieSetupRegisterFilter2** registra los tipos de méritos, PIN y medios de un filtro en el registro mediante la interfaz [**IFilterMapper2**](/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2) .
+La **función AMovieSetupRegisterFilter2** registra los valores, los pines y los tipos de medios de un filtro en el Registro mediante la [**interfaz IFilterMapper2.**](/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,31 +47,31 @@ HRESULT AMovieDllRegisterServer(
 *psetupdata* 
 </dt> <dd>
 
-Puntero a los datos del [**\_ filtro AMOVIESETUP**](amoviesetup-filter.md) .
+Puntero a los [**datos del filtro \_ de AMOVIESETUP.**](amoviesetup-filter.md)
 
 </dd> <dt>
 
 *pIFM2* 
 </dt> <dd>
 
-Puntero a la interfaz [**IFilterMapper2**](/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2) .
+Puntero a [**la interfaz IFilterMapper2.**](/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2)
 
 </dd> <dt>
 
 *bRegister* 
 </dt> <dd>
 
-Valor que indica si se debe registrar el filtro; **True** indica que se registra el filtro; **false** indica que se anula el registro.
+Valor que indica si se debe registrar el filtro; **TRUE** indica registrar el filtro, **FALSE** indica anular el registro.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función [**AMovieDllRegisterServer2**](amoviedllregisterserver2.md) llama a esta función auxiliar para registrar un filtro después de que se haya registrado el servidor com.
+La [**función AMovieDllRegisterServer2**](amoviedllregisterserver2.md) llama a esta función auxiliar para registrar un filtro una vez registrado el servidor COM.
 
 Normalmente, un filtro usará [**AMovieDllRegisterServer2**](amoviedllregisterserver2.md) y no llamará directamente a esta función.
 
@@ -81,8 +81,8 @@ Normalmente, un filtro usará [**AMovieDllRegisterServer2**](amoviedllregisterse
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Dllsetup. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Dllsetup.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

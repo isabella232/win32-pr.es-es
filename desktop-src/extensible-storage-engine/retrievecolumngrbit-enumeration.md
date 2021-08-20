@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración RetrieveColumnGrbit'
-title: Enumeración RetrieveColumnGrbit
+description: 'Más información sobre: Enumeración RetrieveColumnGrbit'
+title: RetrieveColumnGrbit (enumeración)
 TOCTitle: RetrieveColumnGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.RetrieveColumnGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.retrievecolumngrbit(v=EXCHG.10)
@@ -38,21 +38,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a223a288b8ad2d2e976be3bb9f2f524f78b9a8fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7bd59f610b2ff1423b82539c61eff3d9d770a03d6f8291a1bae53b372fff318f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117890673"
 ---
-# <a name="retrievecolumngrbit-enumeration"></a>Enumeración RetrieveColumnGrbit
+# <a name="retrievecolumngrbit-enumeration"></a>RetrieveColumnGrbit (enumeración)
 
 Opciones de JetRetrieveColumn.
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -82,33 +82,33 @@ public enum RetrieveColumnGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>RetrieveCopy</td>
-<td>Esta marca hace que la columna de recuperación recupere el valor modificado en lugar del valor original. Si el valor no se ha modificado, se recupera el valor original. De esta manera, se puede recuperar un valor que todavía no se ha insertado o actualizado durante la operación de inserción o actualización de un registro.</td>
+<td>Esta marca hace que la columna retrieve recupere el valor modificado en lugar del valor original. Si el valor no se ha modificado, se recupera el valor original. De este modo, se puede recuperar un valor que aún no se ha insertado o actualizado durante la operación de inserción o actualización de un registro.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RetrieveFromIndex</td>
-<td>Esta opción se utiliza para recuperar los valores de columna del índice, si es posible, sin tener acceso al registro. De esta manera, se puede evitar la carga innecesaria de registros cuando los datos necesarios están disponibles en las propias entradas de índice.</td>
+<td>Esta opción se usa para recuperar valores de columna del índice, si es posible, sin tener acceso al registro. De este modo, se puede evitar la carga innecesaria de registros cuando los datos necesarios están disponibles en las propias entradas de índice.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>RetrieveFromPrimaryBookmark</td>
-<td>Esta opción se usa para recuperar valores de columna del marcador de índice y puede diferir del valor de índice cuando una columna aparece en el índice principal y en el índice actual. Esta opción no se debe especificar si el índice actual es el índice clúster o principal. No se puede establecer este bit si también se establece RetrieveFromIndex.</td>
+<td>Esta opción se usa para recuperar valores de columna del marcador de índice y puede diferir del valor de índice cuando aparece una columna en el índice principal y en el índice actual. Esta opción no debe especificarse si el índice actual es el índice clúster o principal. Este bit no se puede establecer si también se establece RetrieveFromIndex.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RetrieveTag</td>
-<td>Esta opción se usa para recuperar el número de secuencia de un valor de columna de varios valores en JET_RETINFO. itagSequence. Recuperar el número de secuencia puede ser una operación costosa y solo debe realizarse si es necesario.</td>
+<td>Esta opción se usa para recuperar el número de secuencia de un valor de columna con varios valores en JET_RETINFO.itagSequence. Recuperar el número de secuencia puede ser una operación costosa y solo se debe realizar si es necesario.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>RetrieveNull</td>
-<td>Esta opción se usa para recuperar los valores NULL de las columnas con varios valores. Si no se especifica esta opción, se omitirán automáticamente los valores NULL de las columnas con varios valores.</td>
+<td>Esta opción se usa para recuperar valores NULL de columna multivalor. Si no se especifica esta opción, los valores NULL de columna multivalor se omitirán automáticamente.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -123,4 +123,4 @@ public enum RetrieveColumnGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

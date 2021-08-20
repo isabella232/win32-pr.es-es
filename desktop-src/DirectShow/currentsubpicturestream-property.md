@@ -1,5 +1,5 @@
 ---
-description: La propiedad CurrentSubpictureStream establece o recupera la secuencia de subimagen actual.
+description: La propiedad CurrentSubpictureStream establece o recupera la secuencia de subaspección actual.
 ms.assetid: 66473c87-ddfe-4555-89ad-90e210a75694
 title: Propiedad CurrentSubpictureStream
 ms.topic: reference
@@ -43,11 +43,11 @@ Los valores posibles de esta propiedad son:
 
  
 
-Esta propiedad es de lectura y escritura sin ningún valor predeterminado. Antes de establecer una nueva secuencia de subpicture, llame a [**IsSubpictureStreamEnabled**](issubpicturestreamenabled-method.md) para comprobar que la secuencia está disponible.
+Esta propiedad es de lectura y escritura sin ningún valor predeterminado. Antes de establecer una nueva secuencia de subaspección, llame a [**IsSubpictureStreamEnabled**](issubpicturestreamenabled-method.md) para comprobar que la secuencia está disponible.
 
 Establecer esta propiedad hace que [**la propiedad SubpictureOn**](subpictureon-property.md) cambie a **True.**
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

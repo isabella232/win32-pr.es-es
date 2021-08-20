@@ -1,7 +1,7 @@
 ---
 description: Función de proxy para el método CreateBitmapFromHBITMAP.
 ms.assetid: e4e9a6b4-00d9-4f87-aeec-f2c02c3f44ab
-title: IWICImagingFactory_CreateBitmapFromHBITMAP_Proxy función)
+title: IWICImagingFactory_CreateBitmapFromHBITMAP_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 6599a9699e6fb83c1678cd0360f906cc8e0668c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dec08e506dec3e934977d144998e2edfef920d3f11024b115fcd142a7916ba4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118033898"
 ---
-# <a name="iwicimagingfactory_createbitmapfromhbitmap_proxy-function"></a>IWICImagingFactory \_ CreateBitmapFromHBITMAP \_ función proxy
+# <a name="iwicimagingfactory_createbitmapfromhbitmap_proxy-function"></a>Función de proxy IWICImagingFactory \_ CreateBitmapFromHBITMAP \_
 
-Función de proxy para el método [**CreateBitmapFromHBITMAP**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createbitmapfromhbitmap) .
+Función de proxy para [**el método CreateBitmapFromHBITMAP.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createbitmapfromhbitmap)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,41 +44,41 @@ HRESULT IWICImagingFactory_CreateBitmapFromHBITMAP_Proxy(
 
 <dl> <dt>
 
-*pFactory* \[ de\]
+*pFactory* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) \** _
+Tipo: **[ **IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory)\***
 
 </dd> <dt>
 
-_hBitmap * \[ en\]
+*hBitmap* \[ En\]
 </dt> <dd>
 
-Tipo: **hBitmap**
+Tipo: **HBITMAP**
 
-Identificador de mapa de bits del que se va a crear el mapa de bits.
+Identificador de mapa de bits a partir del que crear el mapa de bits.
 
 </dd> <dt>
 
-*hPalette* \[ de\]
+*hPalette* \[ En\]
 </dt> <dd>
 
-Tipo: **HPALETTE**
+Tipo: **HPATTE**
 
-Identificador de la paleta que se usa para crear el mapa de bits.
+Identificador de paleta utilizado para crear el mapa de bits.
 
 </dd> <dt>
 
-*Opciones* \[ de de\]
+*opciones* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **WICBitmapAlphaChannelOption**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmapalphachanneloption)**
 
-Opciones del canal alfa para crear el mapa de bits.
+Opciones de canal alfa para crear el mapa de bits.
 
 </dd> <dt>
 
-*ppIBitmap* \[ enuncia\]
+*ppIBitmap* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmap**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap)\*\***
@@ -91,7 +91,7 @@ Puntero que recibe un puntero al nuevo mapa de bits.
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -99,11 +99,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows aplicaciones \[ de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

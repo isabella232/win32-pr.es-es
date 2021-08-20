@@ -13,7 +13,7 @@ ms.locfileid: "118066979"
 ---
 # <a name="joining-lines"></a>Unir líneas
 
-Una combinación de línea es el área común formada por dos líneas cuyos extremos se encuentran o se superponen. Windows GDI+ proporciona cuatro estilos de combinación de líneas: mitra, bisel, redondeo y recortado. El estilo de combinación de línea es una propiedad de la [**clase Pen.**](/windows/desktop/api/gdipluspen/nl-gdipluspen-pen) Cuando se especifica un estilo de combinación de línea para un lápiz y, a continuación, se usa ese lápiz para dibujar un trazado, el estilo de combinación especificado se aplica a todas las líneas conectadas en la ruta de acceso.
+Una combinación de línea es el área común formada por dos líneas cuyos extremos se encuentran o se superponen. Windows GDI+ proporciona cuatro estilos de combinación de línea: bisel, bisel, redondeo y recortado. El estilo de combinación de línea es una propiedad de la [**clase Pen.**](/windows/desktop/api/gdipluspen/nl-gdipluspen-pen) Cuando se especifica un estilo de combinación de línea para un lápiz y, a continuación, se usa ese lápiz para dibujar un trazado, el estilo de combinación especificado se aplica a todas las líneas conectadas en la ruta de acceso.
 
 Puede especificar el estilo de combinación de línea mediante el [**método Pen::SetLineJoin**](/windows/desktop/api/Gdipluspen/nf-gdipluspen-pen-setlinejoin) de la [**clase Pen.**](/windows/desktop/api/gdipluspen/nl-gdipluspen-pen) En el ejemplo siguiente se muestra una combinación de línea biselada entre una línea horizontal y una línea vertical:
 

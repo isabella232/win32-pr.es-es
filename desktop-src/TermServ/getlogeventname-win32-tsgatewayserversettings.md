@@ -1,12 +1,12 @@
 ---
-title: Método GetLogEventName de la clase Win32_TSGatewayServerSettings
+title: Método GetLogEventName de la Win32_TSGatewayServerSettings clase
 description: Devuelve el nombre del evento de registro para el índice de eventos de registro especificado.
 ms.assetid: ca31ef8e-ab84-4132-a6d2-232b1e69230a
 ms.tgt_platform: multiple
 keywords:
 - Método GetLogEventName Servicios de Escritorio remoto
-- Método GetLogEventName Servicios de Escritorio remoto, clase Win32_TSGatewayServerSettings
-- Win32_TSGatewayServerSettings de clase Servicios de Escritorio remoto, método GetLogEventName
+- Método GetLogEventName Servicios de Escritorio remoto , Win32_TSGatewayServerSettings clase
+- Win32_TSGatewayServerSettings clase Servicios de Escritorio remoto método , GetLogEventName
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3e9c608b7a12d3de48d75ecd5651df94d0267fc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2da065826045de51b94a1f4c5dec58a78f52d761d6b694017332d9d6558cb273
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118130622"
 ---
-# <a name="getlogeventname-method-of-the-win32_tsgatewayserversettings-class"></a>Método GetLogEventName de la \_ clase TSGatewayServerSettings de Win32
+# <a name="getlogeventname-method-of-the-win32_tsgatewayserversettings-class"></a>Método GetLogEventName de la clase \_ TSGatewayServerSettings de Win32
 
 Devuelve el nombre del evento de registro para el índice de eventos de registro especificado.
 
@@ -44,14 +44,14 @@ uint32 GetLogEventName(
 
 <dl> <dt>
 
-*EventIndex* \[ de\]
+*EventIndex* \[ En\]
 </dt> <dd>
 
-Índice del evento de registro. El valor debe estar entre cero y el valor de la propiedad **MaxLogEvents** .
+Índice del evento de registro. El valor debe estar entre cero y el valor de la **propiedad MaxLogEvents.**
 
 </dd> <dt>
 
-*EventName* \[ enuncia\]
+*EventName* \[ out\]
 </dt> <dd>
 
 Nombre del evento especificado. En la lista siguiente se muestran los valores posibles.
@@ -87,7 +87,7 @@ El usuario no pudo conectarse al recurso.
 
 </dt> <dd>
 
-Error de autorización de conexión de usuario.
+Error de autorización de conexión del usuario.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ El usuario se conectó correctamente al recurso.
 
 </dt> <dd>
 
-El usuario pasó correctamente la autorización de conexión.
+El usuario ha pasado correctamente la autorización de conexión.
 
 </dd> <dt>
 
@@ -137,24 +137,24 @@ El usuario ha pasado correctamente la autorización de recursos.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -163,7 +163,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 <dl> <dt>
 
-[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
+[**TSGatewayServerSettings de Win32 \_**](win32-tsgatewayserversettings.md)
 </dt> <dt>
 
 [**EnableLogEvent**](enablelogevent-win32-tsgatewayserversettings.md)

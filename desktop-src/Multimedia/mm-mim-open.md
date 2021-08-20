@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MM_MIM_OPEN (mmsystem. h)
-description: El \_ mensaje abierto de MIM de mm \_ se envía a una ventana cuando se abre un dispositivo de entrada MIDI.
+title: MM_MIM_OPEN mensaje (Mmsystem.h)
+description: El mensaje MM MIM OPEN se envía a una ventana cuando se abre un \_ dispositivo de entrada DE \_ LÍNEA.
 ms.assetid: 8dfc24a0-0ab8-4f49-954f-0c0a55fa28bc
 keywords:
-- Mensaje de MM_MIM_OPEN de Windows multimedia
+- MM_MIM_OPEN mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7d87e391336b948d0c784048baeffa7bba88b29
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 008d6b090968c4823ab14159772f5e8ba8531166a299bf1d9e90061739831d28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103904978"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117985525"
 ---
-# <a name="mm_mim_open-message"></a>\_Mensaje abierto de MIM de mm \_
+# <a name="mm_mim_open-message"></a>MM \_ MIM \_ open message
 
-El **mensaje \_ \_ abierto de MIM de mm** se envía a una ventana cuando se abre un dispositivo de entrada MIDI.
+El **mensaje MM MIM \_ \_ OPEN** se envía a una ventana cuando se abre un dispositivo de entrada MIDI.
 
 
 ```C++
@@ -41,30 +41,30 @@ lParam = reserved
 <span id="hInput"></span><span id="hinput"></span><span id="HINPUT"></span>*hInput*
 </dt> <dd>
 
-Identificador del dispositivo de entrada MIDI que se abrió.
+Controle el dispositivo de entrada de MIDI que se abrió.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Sector No use.
+Reservado; no se usan.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Este mensaje no devuelve ningún valor.
 [Interfaz digital de instrumentos digitales (MIDI)](musical-instrument-digital-interface--midi.md)
 </dt> <dt>
 
-[Mensajes MIDI](midi-messages.md)
+[Mensajes DE MIDI](midi-messages.md)
 </dt> </dl>
 
  

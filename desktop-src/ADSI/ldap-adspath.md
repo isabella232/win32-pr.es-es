@@ -33,7 +33,7 @@ LDAP://HostName[:PortNumber][/DistinguishedName]
 
 "HostName" puede ser un nombre de equipo, una dirección IP o un nombre de dominio. También se puede especificar un nombre de servidor en la cadena de enlace. La mayoría de los proveedores LDAP siguen un modelo que requiere que se especifique un nombre de servidor.
 
-"PortNumber" especifica el puerto que se usará para la conexión. Si no se especifica ningún número de puerto, el proveedor LDAP usa el número de puerto predeterminado. El número de puerto predeterminado es 389 si no se usa una conexión SSL o 636 si se usa una conexión SSL.
+"PortNumber" especifica el puerto que se va a usar para la conexión. Si no se especifica ningún número de puerto, el proveedor LDAP usa el número de puerto predeterminado. El número de puerto predeterminado es 389 si no se usa una conexión SSL o 636 si se usa una conexión SSL.
 
 "DistinguishedName" especifica el nombre distintivo de un objeto específico. Se garantiza que un nombre distintivo para un objeto determinado sea único.
 
@@ -53,7 +53,7 @@ En la tabla siguiente se muestran ejemplos de cadenas de enlace.
 
  
 
-Si se requiere la autenticación Kerberos para completar correctamente una solicitud de directorio específica, la cadena de enlace debe usar un ADsPath sin servidor, como LDAP://CN=Jeff Smith,CN=users,DC=fabrikam,DC=com, o bien debe usar un ADsPath con un nombre de servidor DNS completo, como LDAP://server01.fabrikam.com/CN=Jeff Smith,CN=users,DC=fabrikam,DC=com. No se garantiza que el enlace al servidor mediante un nombre NETBIOS plano o un nombre DNS corto, por ejemplo, con el nombre server01 en lugar de server01.fabrikam.com, produce la autenticación Kerberos.
+Si se requiere la autenticación Kerberos para la finalización correcta de una solicitud de directorio específica, la cadena de enlace debe usar un ADsPath sin servidor, como LDAP://CN=Jeff Smith,CN=users,DC=fabrikam,DC=com, o bien debe usar un ADsPath con un nombre de servidor DNS completo, como LDAP://server01.fabrikam.com/CN=Jeff Smith,CN=users,DC=fabrikam,DC=com. No se garantiza que el enlace al servidor mediante un nombre NETBIOS plano o un nombre DNS corto, por ejemplo, mediante el nombre server01 en lugar de server01.fabrikam.com, produce la autenticación Kerberos.
 
 Para obtener más información y ejemplos de cadenas de enlace LDAP, así como una descripción de los caracteres especiales que se pueden usar en cadenas de enlace LDAP, vea LDAP ADsPath.
 
@@ -61,7 +61,7 @@ Para obtener más información y ejemplos de cadenas de enlace LDAP, así como u
 
 ## <a name="ldap-special-characters"></a>Caracteres especiales LDAP
 
-LDAP tiene varios caracteres especiales que están reservados para su uso por parte de la API LDAP. La lista de caracteres especiales se puede encontrar en [Nombres distintivos](/previous-versions/windows/desktop/ldap/distinguished-names). Para usar uno de estos caracteres en un ADsPath sin generar un error, el carácter debe ir precedido de una barra diagonal inversa ( \\ ). Esto se conoce como *escape* del carácter. Por ejemplo, si se da un nombre de usuario en forma de " , ", la coma del valor <last name> de nombre debe tener caracteres de <first name> escape. La cadena resultante tendría el siguiente aspecto:
+LDAP tiene varios caracteres especiales que están reservados para su uso por parte de la API LDAP. La lista de caracteres especiales se puede encontrar en [Nombres distintivos](/previous-versions/windows/desktop/ldap/distinguished-names). Para usar uno de estos caracteres en un ADsPath sin generar un error, el carácter debe ir precedido de una barra diagonal inversa ( \\ ). Esto se conoce como *escape* del carácter. Por ejemplo, si se da un nombre de usuario en forma de " , ", la coma del valor <last name> de nombre debe ser de <first name> escape. La cadena resultante tendría el siguiente aspecto:
 
 
 ```C++

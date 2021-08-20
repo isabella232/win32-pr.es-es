@@ -4,16 +4,16 @@ description: Obtenga información sobre la propiedad Visible del objeto Commands
 ms.assetid: 820a5298-6aaf-4aea-9e71-38a07148a08c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc17dc46e7f91d656c7b350a489b0506866932c7
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 33f1868abdffe40c7f8efed671a2efa49a5f5e3638bc1ae9df9007405bd3e346
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118066925"
 ---
 # <a name="visible-property-commandswindow-object"></a>Propiedad Visible (objeto CommandsWindow)
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Devuelve o establece si la ventana Comandos de voz está visible (abierta).
 <span id="Syntax_"></span><span id="syntax_"></span><span id="SYNTAX_"></span>**Sintaxis** 
 </dt> <dd>
 
-*agent,. CommandsWindow.Visible* *  \[  =  *booleano*\]
+*agent!". CommandsWindow.Visible* *  \[  =  *boolean*\]
 
 
 
@@ -41,7 +41,7 @@ Devuelve o establece si la ventana Comandos de voz está visible (abierta).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El servidor muestra la ventana en función de la ubicación y el tamaño establecidos por el usuario.
 

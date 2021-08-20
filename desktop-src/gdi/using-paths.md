@@ -1,21 +1,21 @@
 ---
-description: Esta sección contiene un ejemplo de código que permite al usuario seleccionar una fuente de un tamaño de punto determinado (mediante el cuadro de diálogo elegir fuente), seleccionar una ruta de acceso de clip (usando el texto dibujado con esta fuente) y, a continuación, ver el resultado del recorte en el texto.
+description: Esta sección contiene un ejemplo de código que permite al usuario seleccionar una fuente de un tamaño de punto determinado (mediante el cuadro de diálogo Elegir fuente), seleccionar una ruta de acceso de recorte (mediante el texto dibujado con esta fuente) y, a continuación, ver el resultado del recorte al texto.
 ms.assetid: 3eb5781b-972b-49a4-94db-9abda96fb195
 title: Usar rutas de acceso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6139ab6bdd6dd6c574d8464584496a1e1741c4f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d975ee1042560dfe0722c131b34616a88641f861be357ceabea1a04118365009
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104156260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117885646"
 ---
 # <a name="using-paths"></a>Usar rutas de acceso
 
-Esta sección contiene un ejemplo de código que permite al usuario seleccionar una fuente de un tamaño de punto determinado (mediante el cuadro de diálogo elegir fuente), seleccionar una ruta de acceso de clip (usando el texto dibujado con esta fuente) y, a continuación, ver el resultado del recorte en el texto.
+Esta sección contiene un ejemplo de código que permite al usuario seleccionar una fuente de un tamaño de punto determinado (mediante el cuadro de diálogo Elegir fuente), seleccionar una ruta de acceso de recorte (mediante el texto dibujado con esta fuente) y, a continuación, ver el resultado del recorte al texto.
 
-Este ejemplo de código se usó para crear la ilustración que aparece en las rutas de acceso de los [clips](clip-paths.md).
+Este ejemplo de código se usó para crear la ilustración que aparece en Rutas [de acceso de recorte.](clip-paths.md)
 
 
 ```C++

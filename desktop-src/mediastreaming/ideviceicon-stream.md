@@ -1,11 +1,11 @@
 ---
-title: IDeviceIcon (método de secuencia)
-description: Recupera el icono como un flujo.
+title: Método IDeviceIcon Stream
+description: Recupera el icono como una secuencia.
 ms.assetid: 0B9E852F-4F72-4721-8F88-24A850A088C4
 keywords:
-- Streaming de media streaming API
-- Streaming de media streaming API, interfaz IDeviceIcon
-- Interfaz IDeviceIcon API de streaming de multimedia, método de secuencia
+- Stream method Media Streaming API
+- Stream method Media Streaming API , IDeviceIcon interface
+- IDeviceIcon interface Media Streaming API , Método Stream
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fd00d757fceb90cf5ee7199256b003464063abcb
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 75163836c2722156ec4bf6cd8b763a7c1b0f43b35a087c9dbdce6aef1ec99541
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104358957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117871190"
 ---
-# <a name="ideviceiconstream-method"></a>IDeviceIcon:: Stream (método)
+# <a name="ideviceiconstream-method"></a>IDeviceIcon::Stream (Método)
 
-Recupera el icono como un flujo.
+Recupera el icono como una secuencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,22 +41,22 @@ HRESULT Stream(
 
 <dl> <dt>
 
-*valor* \[ de enuncia\]
+*value* \[ out\]
 </dt> <dd>
 
-Recibe una referencia a un [**IRandomAccessStreamWithContentType**](/uwp/api/Windows.Storage.Streams.IRandomAccessStreamWithContentType) que se puede usar para recuperar los datos de la imagen.
+Recibe una referencia a [**un IRandomAccessStreamWithContentType**](/uwp/api/Windows.Storage.Streams.IRandomAccessStreamWithContentType) que se puede usar para recuperar los datos de la imagen.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 

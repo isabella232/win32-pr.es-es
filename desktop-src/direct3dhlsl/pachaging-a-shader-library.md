@@ -1,19 +1,19 @@
 ---
-title: Empaquetado de una biblioteca de sombreador
-description: Aquí le mostramos cómo compilar el código del sombreador, cargar el código compilado en una biblioteca de sombras y enlazar recursos de las ranuras de origen a las de destino.
+title: Empaquetado de una biblioteca de sombreadores
+description: Aquí se muestra cómo compilar el código del sombreador, cargar el código compilado en una biblioteca de sombreadores y enlazar recursos desde ranuras de origen a ranuras de destino.
 ms.assetid: ED2EB1DE-3C25-4633-BFA7-C535ABBBAD28
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90124ca9753a390b924d5ba702e1986e32eee9e5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: afb0f16d226357aca63259a9cc014a3c149d84b87d1b9340b1452b802e0df410
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104997145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117906443"
 ---
-# <a name="packaging-a-shader-library"></a>Empaquetado de una biblioteca de sombreador
+# <a name="packaging-a-shader-library"></a>Empaquetado de una biblioteca de sombreadores
 
-Aquí le mostramos cómo compilar el código del sombreador, cargar el código compilado en una biblioteca de sombras y enlazar recursos de las ranuras de origen a las de destino.
+Aquí se muestra cómo compilar el código del sombreador, cargar el código compilado en una biblioteca de sombreadores y enlazar recursos desde ranuras de origen a ranuras de destino.
 
 **Objetivo:** Para empaquetar una biblioteca de sombreador que se usará para la vinculación del sombreador.
 
@@ -21,13 +21,13 @@ Aquí le mostramos cómo compilar el código del sombreador, cargar el código c
 
 Suponemos que estás familiarizado con C++. También necesitas tener experiencia básica en los conceptos de programación de elementos gráficos.
 
-**Tiempo de finalización:** 30 minutos.
+**Tiempo de ejecución:** 30 minutos.
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="1-compiling-your-shader-code"></a>1. compilar el código del sombreador
+### <a name="1-compiling-your-shader-code"></a>1. Compilación del código del sombreador
 
-Compile el código del sombreador con una de las funciones de compilación. Por ejemplo, este fragmento de código usa [**D3DCompile**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompile).
+Compile el código del sombreador con una de las funciones de compilación. Por ejemplo, este fragmento de código [**usa D3DCompile.**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompile)
 
 ```cpp
     string source;
@@ -49,11 +49,11 @@ Compile el código del sombreador con una de las funciones de compilación. Por 
         );
 ```
 
-La cadena de origen contiene el código HLSL ASCII sin compilar.
+La cadena de origen contiene el código HLSL ASCII nocompilado.
 
-### <a name="2-load-the-compiled-code-into-a-shader-library"></a>2. Cargue el código compilado en una biblioteca de sombreador.
+### <a name="2-load-the-compiled-code-into-a-shader-library"></a>2. Cargue el código compilado en una biblioteca de sombreadores.
 
-Llame a la función [**D3DLoadModule**](/windows/desktop/api/D3Dcompiler/nf-d3dcompiler-d3dloadmodule) para cargar el código compilado ([**ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85))) en un módulo ([**ID3D11Module**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11module)) que representa una biblioteca de sombreador.
+Llame a la función [**D3DLoadModule**](/windows/desktop/api/D3Dcompiler/nf-d3dcompiler-d3dloadmodule) para cargar el código compilado ([**ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85))) en un módulo ([**ID3D11Module**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11module)) que representa una biblioteca de sombreadores.
 
 
 ```C++
@@ -64,11 +64,11 @@ Llame a la función [**D3DLoadModule**](/windows/desktop/api/D3Dcompiler/nf-d3dc
 
 
 
-### <a name="3-bind-resources-from-source-slots-to-destination-slots"></a>3. enlace recursos de las ranuras de origen a las de destino.
+### <a name="3-bind-resources-from-source-slots-to-destination-slots"></a>3. Enlace recursos de ranuras de origen a ranuras de destino.
 
-Llame al método [**ID3D11Module:: CreateInstance**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11module-createinstance) para crear una instancia ([**ID3D11ModuleInstance**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11moduleinstance)) de la biblioteca, de modo que pueda definir enlaces de recursos para la instancia.
+Llame al [**método ID3D11Module::CreateInstance**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11module-createinstance) para crear una instancia ([**ID3D11ModuleInstance**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11moduleinstance)) de la biblioteca para que pueda definir enlaces de recursos para la instancia.
 
-Llame a los métodos BIND de [**ID3D11ModuleInstance**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11moduleinstance) para enlazar los recursos que necesita de las ranuras de origen a las de destino. Los recursos pueden ser texturas, búferes, muestreadores, búferes de constantes o UAVs. Normalmente, se usarán las mismas ranuras que la biblioteca de origen.
+Llame a los métodos de enlace [**de ID3D11ModuleInstance para**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11moduleinstance) enlazar los recursos que necesita desde las ranuras de origen a las ranuras de destino. Los recursos pueden ser texturas, búferes, muestreadores, búferes constantes o UAV. Normalmente, usará las mismas ranuras que la biblioteca de origen.
 
 
 ```C++
@@ -87,7 +87,7 @@ Llame a los métodos BIND de [**ID3D11ModuleInstance**](/windows/desktop/api/d3d
 
 
 
-Este código HLSL muestra que la biblioteca de origen utiliza las mismas ranuras (T0, S0, b0, B1 y B2) que las ranuras usadas en los métodos BIND anteriores de [**ID3D11ModuleInstance**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11moduleinstance).
+Este código HLSL muestra que la biblioteca de origen usa las mismas ranuras (t0, s0, b0, b1 y b2) que las ranuras usadas en los métodos de enlace anteriores de [**ID3D11ModuleInstance**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11moduleinstance).
 
 ``` syntax
 // This is the default code in the fixed header section.
@@ -116,19 +116,19 @@ cbuffer HiddenBuffer : register(b2)
 
 ## <a name="summary-and-next-steps"></a>Resumen y pasos siguientes
 
-Hemos compilado el código del sombreador, cargado el código compilado en una biblioteca de sombras y los recursos enlazados desde las ranuras de origen a las ranuras de destino.
+Compilamos código de sombreador, cargamos el código compilado en una biblioteca de sombreadores y enlazamos recursos de ranuras de origen a ranuras de destino.
 
-A continuación, creamos los gráficos de vinculación de funciones (FLGs) para los sombreadores, los vinculamos al código compilado y generan los blobs de sombreador que el tiempo de ejecución de Direct3D puede usar.
+A continuación, creamos gráficos de vinculación de funciones (FLG) para sombreadores, los vinculamos al código compilado y generamos blobs de sombreador que el tiempo de ejecución de Direct3D puede usar.
 
-[Construir un grafo de función-vinculación y vincularlo a código compilado](constructing-a-function-linking-graph.md)
+[Crear un gráfico de vinculación de función y vincularlo al código compilado](constructing-a-function-linking-graph.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar la vinculación del sombreador](using-shader-linking.md)
+[Uso de la vinculación de sombreador](using-shader-linking.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

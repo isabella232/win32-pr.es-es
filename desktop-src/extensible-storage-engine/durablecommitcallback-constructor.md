@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor DurableCommitCallback'
-title: Constructor DurableCommitCallback (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: Constructor DurableCommitCallback'
+title: Constructor DurableCommitCallback (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'DurableCommitCallback constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.DurableCommitCallback.#ctor(Microsoft.Isam.Esent.Interop.JET_INSTANCE,Microsoft.Isam.Esent.Interop.Windows8.JET_PFNDURABLECOMMITCALLBACK)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.durablecommitcallback.durablecommitcallback(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ade1952615b98d9ea41a7a1b83d0bf1a3c6fc8d5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 318a87c2bc118b9d0b221e658b7d8669cd3e04d97412173a2d6671e6c6865cd7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103817574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117716421"
 ---
-# <a name="durablecommitcallback-constructor"></a>Constructor de DurableCommitCallback
+# <a name="durablecommitcallback-constructor"></a>Constructor DurableCommitCallback
 
-Inicializa una nueva instancia de la clase [DurableCommitCallback](./durablecommitcallback-class.md) .
+Inicializa una nueva instancia de la [clase DurableCommitCallback.](./durablecommitcallback-class.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,23 +64,23 @@ public DurableCommitCallback(
 #### <a name="parameters"></a>Parámetros
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Instancia de con la que se va a asociar la devolución de llamada.
+    Instancia de a la que se va a asociar la devolución de llamada.
 
 <!-- end list -->
 
   - wrappedCallback  
-    Tipo: [Microsoft.ISAM.esent.Interop.Windows8.JET_PFNDURABLECOMMITCALLBACK](./jet-pfndurablecommitcallback-delegate.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Windows8.JET_PFNDURABLECOMMITCALLBACK](./jet-pfndurablecommitcallback-delegate.md)  
     
-    Devolución de llamada de código administrado que se va a llamar.
+    Devolución de llamada de código administrado a la que se llamará.
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase DurableCommitCallback](./durablecommitcallback-class.md)
+[DurableCommitCallback (clase)](./durablecommitcallback-class.md)
 
-[Miembros de DurableCommitCallback](./durablecommitcallback-members.md)
+[Miembros durableCommitCallback](./durablecommitcallback-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

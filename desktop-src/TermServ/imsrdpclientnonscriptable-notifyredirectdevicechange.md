@@ -1,20 +1,20 @@
 ---
-title: IMsRdpClientNonScriptable NotifyRedirectDeviceChange, método
-description: Notifica al módulo de redireccionamiento de dispositivos del Escritorio remoto control ActiveX que se ha producido un cambio de dispositivo en el sistema. Este método pasa \_ las notificaciones de WM DEVICECHANGE al control.
+title: Método IMsRdpClientNonScriptable NotifyRedirectDeviceChange
+description: Notifica al módulo de redirección de dispositivos Escritorio remoto ActiveX control que se ha producido un cambio de dispositivo en el sistema. Este método pasa notificaciones \_ DE WM DEVICECHANGE al control .
 ms.assetid: 36323831-06e0-4e47-8a6c-06367119298f
 ms.tgt_platform: multiple
 keywords:
 - Método NotifyRedirectDeviceChange Servicios de Escritorio remoto
-- Método NotifyRedirectDeviceChange Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable
-- Interfaz IMsRdpClientNonScriptable Servicios de Escritorio remoto, método NotifyRedirectDeviceChange
-- Método NotifyRedirectDeviceChange Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable2
-- Interfaz IMsRdpClientNonScriptable2 Servicios de Escritorio remoto, método NotifyRedirectDeviceChange
-- Método NotifyRedirectDeviceChange Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable3
-- Interfaz IMsRdpClientNonScriptable3 Servicios de Escritorio remoto, método NotifyRedirectDeviceChange
-- Método NotifyRedirectDeviceChange Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable4
-- Interfaz IMsRdpClientNonScriptable4 Servicios de Escritorio remoto, método NotifyRedirectDeviceChange
-- Método NotifyRedirectDeviceChange Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable5
-- Interfaz IMsRdpClientNonScriptable5 Servicios de Escritorio remoto, método NotifyRedirectDeviceChange
+- Método NotifyRedirectDeviceChange Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable
+- Interfaz IMsRdpClientNonScriptable Servicios de Escritorio remoto , método NotifyRedirectDeviceChange
+- Método NotifyRedirectDeviceChange Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable2
+- Interfaz IMsRdpClientNonScriptable2 Servicios de Escritorio remoto , método NotifyRedirectDeviceChange
+- Método NotifyRedirectDeviceChange Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable3
+- Interfaz IMsRdpClientNonScriptable3 Servicios de Escritorio remoto , método NotifyRedirectDeviceChange
+- Método NotifyRedirectDeviceChange Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable4
+- Interfaz IMsRdpClientNonScriptable4 Servicios de Escritorio remoto , método NotifyRedirectDeviceChange
+- Método NotifyRedirectDeviceChange Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable5
+- Interfaz IMsRdpClientNonScriptable5 Servicios de Escritorio remoto , método NotifyRedirectDeviceChange
 topic_type:
 - apiref
 api_name:
@@ -29,16 +29,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7357fcb5e31eeeb0de5791425b8d9fada4365ab8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 37986a218f672f5ace6d81b6496b958547e70a95f8ddea91bf6a130eb05b1ed6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118130082"
 ---
-# <a name="imsrdpclientnonscriptablenotifyredirectdevicechange-method"></a>IMsRdpClientNonScriptable:: NotifyRedirectDeviceChange (método)
+# <a name="imsrdpclientnonscriptablenotifyredirectdevicechange-method"></a>IMsRdpClientNonScriptable::NotifyRedirectDeviceChange (método)
 
-Notifica al módulo de redireccionamiento de dispositivos del Escritorio remoto control ActiveX que se ha producido un cambio de dispositivo en el sistema. Este método pasa las notificaciones de [**WM \_ DEVICECHANGE**](/windows/desktop/DevIO/wm-devicechange) al control.
+Notifica al módulo de redirección de dispositivos Escritorio remoto ActiveX control que se ha producido un cambio de dispositivo en el sistema. Este método pasa [**notificaciones DE WM \_ DEVICECHANGE**](/windows/desktop/DevIO/wm-devicechange) al control .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ HRESULT NotifyRedirectDeviceChange(
 
 <dl> <dt>
 
-*wParam* \[ de\]
+*wParam* \[ En\]
 </dt> <dd>
 
 Especifica el evento de dispositivo. Este parámetro puede ser uno de los valores siguientes.
@@ -81,7 +81,7 @@ Se ha cancelado una solicitud para cambiar la configuración actual (acoplar o d
 
 </dt> <dd>
 
-La configuración actual ha cambiado debido a un acoplamiento o desacoplamiento.
+La configuración actual ha cambiado debido a un acoplamiento o desacoplado.
 
 </dd> <dt>
 
@@ -125,7 +125,7 @@ Se solicita permiso para quitar un dispositivo. Cualquier aplicación puede dene
 
 </dt> <dd>
 
-Se canceló una solicitud para quitar un dispositivo.
+Se ha cancelado una solicitud para quitar un dispositivo.
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ Se ha producido un evento específico del dispositivo.
 
 <span id="DBT_DEVNODES_CHANGED"></span><span id="dbt_devnodes_changed"></span>
 
-<span id="DBT_DEVNODES_CHANGED"></span><span id="dbt_devnodes_changed"></span>**DBT \_ DEVNODES \_ Changed**
+<span id="DBT_DEVNODES_CHANGED"></span><span id="dbt_devnodes_changed"></span>**DBT \_ DEVNODES \_ HA CAMBIADO**
 
 
 </dt> <dd>
@@ -186,37 +186,37 @@ Se solicita permiso para cambiar la configuración actual (acoplar o desacoplar)
 
 <span id="DBT_USERDEFINED"></span><span id="dbt_userdefined"></span>
 
-<span id="DBT_USERDEFINED"></span><span id="dbt_userdefined"></span>**DBT \_ USERDEFINED**
+<span id="DBT_USERDEFINED"></span><span id="dbt_userdefined"></span>**DBT \_ DEFINIDO POR EL USUARIO**
 
 
 </dt> <dd>
 
-El significado de este mensaje está definido por el usuario.
+El significado de este mensaje es definido por el usuario.
 
 </dd> </dl> </dd> <dt>
 
-*lParam* \[ de\]
+*lParam* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura que contiene datos específicos del evento. Su formato depende del valor del parámetro *wParam* . Para obtener más información, consulte la documentación de cada evento. Para obtener más información, consulte [tipos de eventos de dispositivo](/windows/desktop/DevIO/device-event-types).
+Puntero a una estructura que contiene datos específicos del evento. Su formato depende del valor del *parámetro wParam.* Para obtener más información, consulte la documentación de cada evento. Para obtener más información, vea [Tipos de eventos de dispositivo.](/windows/desktop/DevIO/device-event-types)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una aplicación contenedora que permita la adición o eliminación dinámica de dispositivos debe procesar el mensaje de [**WM \_ DEVICECHANGE**](/windows/desktop/DevIO/wm-devicechange) en su ventana de nivel superior y reenviar el mensaje al control mediante el método **NotifyRedirectDeviceChange** . Un ejemplo de cambio dinámico de un dispositivo es cuando se agrega o se quita una unidad de disco redirigida mientras el sistema se está ejecutando.
+Una aplicación contenedora que permite la adición o eliminación dinámica de dispositivos debe procesar el mensaje [**\_ DEVICECHANGE de WM**](/windows/desktop/DevIO/wm-devicechange) en su ventana de nivel superior y reenviar el mensaje al control mediante el método **NotifyRedirectDeviceChange.** Un ejemplo de cambio dinámico del dispositivo es cuando se agrega o quita una unidad de disco redirigida mientras se ejecuta el sistema.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                     |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                               |

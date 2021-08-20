@@ -31,21 +31,21 @@ MFPlay proporciona los métodos siguientes para controlar el volumen de audio du
 
  
 
-Para comprender el comportamiento de estos métodos, debe conocer la terminología de Windows Audio Session API (WASAPI), que implementa la funcionalidad de audio de bajo nivel que utiliza MFPlay.
+Para comprender el comportamiento de estos métodos, debe conocer cierta terminología de Windows Audio Session API (WASAPI), que implementa la funcionalidad de audio de bajo nivel que utiliza MFPlay.
 
-En WASAPI, cada secuencia de audio pertenece exactamente a una sesión *de audio*, que es un grupo de secuencias de audio relacionadas. Normalmente, una aplicación mantiene una única sesión de audio, aunque las aplicaciones pueden crear más de una sesión. El programa de control de volumen del sistema (Sndvol) muestra un control de volumen para cada sesión de audio. A través de Sndvol, un usuario puede ajustar el volumen de una sesión de audio desde fuera de la aplicación. En la imagen siguiente se muestra este proceso.
+En WASAPI, cada secuencia de audio pertenece exactamente a una sesión *de audio*, que es un grupo de secuencias de audio relacionadas. Normalmente, una aplicación mantiene una sola sesión de audio, aunque las aplicaciones pueden crear más de una sesión. El programa de control de volumen del sistema (Sndvol) muestra un control de volumen para cada sesión de audio. A través de Sndvol, un usuario puede ajustar el volumen de una sesión de audio desde fuera de la aplicación. En la imagen siguiente se muestra este proceso.
 
 ![diagrama que muestra secuencias de audio que pasan a través del control de volumen en el camino a los altavoces; application y sndvol apuntan al control de volumen](images/audio-session.gif)
 
-En MFPlay, un elemento multimedia puede tener una o varias secuencias de audio activas (normalmente solo una). Internamente, MFPlay usa [el representador de audio](streaming-audio-renderer.md) de streaming (SAR) para representar las secuencias de audio. A menos que lo configure de otro modo, la SAR se une a la sesión de audio predeterminada de la aplicación.
+En MFPlay, un elemento multimedia puede tener una o varias secuencias de audio activas (normalmente solo una). Internamente, MFPlay usa [el representador de audio](streaming-audio-renderer.md) de streaming (SAR) para representar las secuencias de audio. A menos que lo configure de otro modo, la RAE se une a la sesión de audio predeterminada de la aplicación.
 
-Los métodos de audio MFPlay controlan solo las secuencias que pertenecen al elemento multimedia actual. No afectan al volumen de ninguna otra secuencia que pertenezca a la misma sesión de audio. En términos de WASAPI, los métodos MFPlay controlan los *niveles* de volumen por canal, no el nivel de volumen maestro. En la imagen siguiente se muestra este proceso.
+Los métodos de audio MFPlay controlan solo las secuencias que pertenecen al elemento multimedia actual. No afectan al volumen de ninguna otra secuencia que pertenezca a la misma sesión de audio. En términos de WASAPI, los  métodos MFPlay controlan los niveles de volumen por canal, no el nivel de volumen maestro. En la imagen siguiente se muestra este proceso.
 
 ![diagrama similar al anterior, pero la segunda secuencia comienza en el elemento multimedia y la aplicación apunta a la segunda secuencia y al control de volumen.](images/audio-session02.gif)
 
-Es importante comprender algunas implicaciones de esta característica de MFPlay. En primer lugar, una aplicación puede ajustar el volumen de reproducción sin afectar a otras secuencias de audio. Puede usar esta característica si MFPlay implementa la característica cross-fading de audio mediante la creación de dos instancias del objeto MFPlay y el ajuste del volumen por separado.
+Es importante comprender algunas implicaciones de esta característica de MFPlay. En primer lugar, una aplicación puede ajustar el volumen de reproducción sin afectar a otras secuencias de audio. Puede usar esta característica si MFPlay implementa la visualización cruzada de audio mediante la creación de dos instancias del objeto MFPlay y el ajuste del volumen por separado.
 
-Si usa métodos MFPlay para cambiar el volumen o el estado de exclusión mutua, los cambios no aparecen en Sndvol. Por ejemplo, puede llamar a [**SetMute**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setmute) para silenciar el audio, pero Sndvol no mostrará la sesión como muted. Por el contrario, si se usa SndVol para ajustar el volumen de sesión, los cambios no se reflejan en los valores devueltos por [**IMFPMediaPlayer::GetVolume**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getvolume) o [**IMFPMediaPlayer::GetMute**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getmute).
+Si usa métodos MFPlay para cambiar el volumen o el estado de exclusión mutua, los cambios no aparecen en Sndvol. Por ejemplo, puede llamar a [**SetMute**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setmute) para silenciar el audio, pero Sndvol no mostrará la sesión como muted. Por el contrario, si se usa SndVol para ajustar el volumen de la sesión, los cambios no se reflejan en los valores devueltos por [**IMFPMediaPlayer::GetVolume**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getvolume) o [**IMFPMediaPlayer::GetMute**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getmute).
 
 Para cada instancia del objeto de reproductor MFPlay, el nivel de volumen efectivo es igual a *fPlayerVolume* × *fSessionVolume*, donde *fPlayerVolume* es el valor devuelto por [**GetVolume**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getvolume)y *fSessionVolume* es el volumen maestro de la sesión.
 
@@ -53,14 +53,14 @@ En escenarios de reproducción simples, puede ser preferible usar WASAPI para co
 
 ## <a name="example-code"></a>Código de ejemplo
 
-Lo que sigue es una clase de C++ que controla las tareas básicas en WASAPI:
+Lo siguiente es una clase de C++ que controla las tareas básicas en WASAPI:
 
 -   Controlar el volumen y el estado de exclusión mutua de la sesión.
--   Obtención de notificaciones cada vez que cambia el estado del volumen o la exclusión mutua.
+-   Obtención de notificaciones cada vez que cambia el volumen o el estado de exclusión.
 
 ### <a name="class-declaration"></a>Declaración de clase
 
-La `CAudioSessionVolume` declaración de clase implementa la interfaz [**IAudioSessionEvents,**](/windows/win32/api/audiopolicy/nn-audiopolicy-iaudiosessionevents) que es la interfaz de devolución de llamada para eventos de sesión de audio.
+La `CAudioSessionVolume` declaración de clase implementa la interfaz [**IAudioSessionEvents,**](/windows/win32/api/audiopolicy/nn-audiopolicy-iaudiosessionevents) que es la interfaz de devolución de llamada para los eventos de sesión de audio.
 
 
 ```C++
@@ -147,14 +147,14 @@ protected:
 
 Cuando el `CAudioSessionVolume` objeto recibe un evento de sesión de audio, envía un mensaje de ventana privada a la aplicación. El identificador de ventana y el mensaje de ventana se dan como parámetros al método `CAudioSessionVolume::CreateInstance` estático.
 
-### <a name="getting-the-wasapi-interface-pointers"></a>Obtención de punteros de interfaz WASAPI
+### <a name="getting-the-wasapi-interface-pointers"></a>Obtención de los punteros de interfaz WASAPI
 
 `CAudioSessionVolume` usa dos interfaces WASAPI principales:
 
 -   [**IAudioSessionControl administra**](/windows/win32/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol) la sesión de audio.
 -   [**ISimpleAudioVolume**](/windows/win32/api/audioclient/nn-audioclient-isimpleaudiovolume) controla el nivel de volumen y el estado de exclusión mutua de la sesión.
 
-Para obtener estas interfaces, debe enumerar el punto de conexión de audio que usa la RAE. Un *punto de conexión de* audio es un dispositivo de hardware que captura o consume datos de audio. Para la reproducción de audio, un punto de conexión es simplemente un altavoz u otra salida de audio. De forma predeterminada, la RAE usa el punto de conexión predeterminado para el **rol de dispositivo eConsole.** Un *rol de dispositivo* es un rol asignado para un punto de conexión. Los roles de dispositivo se especifican mediante la [**enumeración ERole,**](/windows/win32/api/mmdeviceapi/ne-mmdeviceapi-erole) que se documenta en [Core Audio API](../coreaudio/core-audio-apis-in-windows-vista.md).
+Para obtener estas interfaces, debe enumerar el punto de conexión de audio que usa la RAE. Un *punto de conexión de* audio es un dispositivo de hardware que captura o consume datos de audio. Para la reproducción de audio, un punto de conexión es simplemente un altavoz u otra salida de audio. De forma predeterminada, la RAE usa el punto de conexión predeterminado para el rol de dispositivo **eConsole.** Un *rol de dispositivo* es un rol asignado para un punto de conexión. Los roles de dispositivo se especifican mediante la [**enumeración ERole,**](/windows/win32/api/mmdeviceapi/ne-mmdeviceapi-erole) que se documenta en [Core Audio API](../coreaudio/core-audio-apis-in-windows-vista.md).
 
 El código siguiente muestra cómo enumerar el punto de conexión y obtener las interfaces WASAPI.
 

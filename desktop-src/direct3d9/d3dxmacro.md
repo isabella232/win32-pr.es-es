@@ -1,7 +1,7 @@
 ---
-description: Describe las definiciones de preprocesador usadas por un objeto Effect.
+description: Describe las definiciones de preprocesador utilizadas por un objeto de efecto.
 ms.assetid: 43413b79-e331-4466-b288-bd4439c135a2
-title: Estructura D3DXMACRO (D3dx9shader. h)
+title: Estructura D3DXMACRO (D3dx9shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: 7fd6c52b94c3fb6f36c9b3a8e2b4b513fb8903f0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fa78c69ffe0c25b66e73da6fd9139c3b1f69661e5237c3c03e4dd2d8a377461d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118095952"
 ---
-# <a name="d3dxmacro-structure"></a>Estructura D3DXMACRO
+# <a name="d3dxmacro-structure"></a>D3DXMACRO (estructura)
 
-Describe las definiciones de preprocesador usadas por un objeto Effect.
+Describe las definiciones de preprocesador utilizadas por un objeto de efecto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,9 +62,9 @@ Nombre de definición.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar **D3DXMACRO** s en más de una línea, Prefije cada carácter de línea nueva con una barra diagonal inversa (como una \# definición en el lenguaje C). Por ejemplo:
+Para usar **D3DXMACRO** en más de una línea, antefija cada nuevo carácter de línea con una barra diagonal inversa (como una \# definición en el lenguaje C). Por ejemplo:
 
 
 ```
@@ -77,7 +77,7 @@ macro.Definition =
 
 
 
-Observe los tres caracteres de barra diagonal inversa al final de la línea. Los dos primeros son necesarios para generar un solo ' \\ ', seguido del carácter de nueva línea ' \\ n '. Opcionalmente, puede que también desee terminar las líneas con " \\ \\ \\ r \\ n".
+Observe los tres caracteres de barra diagonal inversa al final de la línea. Los dos primeros son necesarios para generar una única \\ "", seguida del carácter de nueva línea \\ "n". Opcionalmente, es posible que también quiera finalizar las líneas mediante \\ \\ \\ "r \\ n".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,7 +85,7 @@ Observe los tres caracteres de barra diagonal inversa al final de la línea. Los
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9shader. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9shader.h</dt> </dl> |
 
 
 
@@ -93,7 +93,7 @@ Observe los tres caracteres de barra diagonal inversa al final de la línea. Los
 
 <dl> <dt>
 
-[Estructuras de efectos](dx9-graphics-reference-effects-structures.md)
+[Estructuras de efecto](dx9-graphics-reference-effects-structures.md)
 </dt> <dt>
 
 [**D3DXCreateEffectFromFile**](d3dxcreateeffectfromfile.md)

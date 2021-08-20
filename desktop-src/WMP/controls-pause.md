@@ -1,11 +1,11 @@
 ---
-title: Controls. PAUSE (método)
-description: El método PAUSE pausa la reproducción del elemento multimedia. | Controls. PAUSE (método)
+title: Método Controls.pause
+description: El método pause pausa la reproducción del elemento multimedia. | Método Controls.pause
 ms.assetid: 7307a3b2-e5d6-4067-bdb5-38011565142a
 keywords:
-- pausar el método Windows Media Player
-- pausar método Windows Media Player, clase Controls
-- Clase Controls Windows Media Player, PAUSE (método)
+- pausar método Reproductor de Windows Media
+- pause method Reproductor de Windows Media , Clase Controls
+- Clase Controls Reproductor de Windows Media , método pause
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 898efb51355a1301bc76717f6d0184d0b30d619d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e152807803d6ab6d002a3f57ac595d060f60e7391af1a3806ad5c2ea76781fcc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117936691"
 ---
-# <a name="controlspause-method"></a>Controls. PAUSE (método)
+# <a name="controlspause-method"></a>Método Controls.pause
 
-El método **PAUSE pausa** la reproducción del elemento multimedia.
+El **método pause** pausa la reproducción del elemento multimedia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,15 +44,15 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando un archivo está en pausa, Windows Media Player no proporciona ningún recurso del sistema, como el dispositivo de audio.
+Cuando un archivo está en pausa, Reproductor de Windows Media no entrega ningún recurso del sistema, como el dispositivo de audio.
 
-Algunos tipos de medios no se pueden pausar, como las secuencias en directo. Para determinar si se puede pausar un tipo de medio determinado, use *los controles*. **isavailable (' Pause ')**.
+Ciertos tipos de medios no se pueden pausar, como las secuencias en vivo. Para determinar si se puede pausar un tipo de medio determinado, use *Controles*. **isAvailable('Pause')**.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea un elemento de botón HTML que usa **PAUSE** para pausar la reproducción. El objeto **Player** se creó con ID = "Player".
+En el ejemplo siguiente se crea un elemento HTML BUTTON que usa **la pausa para** pausar la reproducción. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -73,9 +73,9 @@ En el ejemplo siguiente se crea un elemento de botón HTML que usa **PAUSE** par
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -84,10 +84,10 @@ En el ejemplo siguiente se crea un elemento de botón HTML que usa **PAUSE** par
 
 <dl> <dt>
 
-[**Controls (objeto)**](controls-object.md)
+[**Objeto Controls**](controls-object.md)
 </dt> <dt>
 
-[**Controls. isAvailable**](controls-isavailable.md)
+[**Controls.isAvailable**](controls-isavailable.md)
 </dt> </dl>
 
  

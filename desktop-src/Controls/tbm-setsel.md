@@ -32,14 +32,14 @@ Establece las posiciones inicial y final del intervalo de selección disponible 
 *wParam* 
 </dt> <dd>
 
-Volver a dibujar la marca. Si este parámetro es **TRUE,** el mensaje vuelve a dibujar la barra de seguimiento después de establecer el intervalo de selección. Si este parámetro es **FALSE,** el mensaje establece el intervalo de selección, pero no vuelve a dibujar la barra de seguimiento.
+Vuelva a dibujar la marca. Si este parámetro es **TRUE,** el mensaje vuelve a dibujar la barra de seguimiento después de establecer el intervalo de selección. Si este parámetro es **FALSE,** el mensaje establece el intervalo de selección, pero no vuelve a dibujar la barra de seguimiento.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-LOWORD [**especifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) la posición lógica inicial para el intervalo de selección y [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica la posición lógica final.
+LOWORD [**especifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) la posición lógica inicial del intervalo de selección y [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica la posición lógica final.
 
 </dd> </dl>
 
@@ -49,7 +49,7 @@ No de devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Este mensaje se omite si la barra de seguimiento no tiene el [**estilo TBS \_ ENABLESELRANGE.**](trackbar-control-styles.md)
+Este mensaje se omite si la barra de seguimiento no tiene el [**estilo \_ ENABLESELRANGE de TBS.**](trackbar-control-styles.md)
 
 **TBM \_ SETSEL** permite restringir el puntero solo a una parte del intervalo disponible para la barra de progreso.
 
@@ -65,7 +65,7 @@ Este mensaje se omite si la barra de seguimiento no tiene el [**estilo TBS \_ EN
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

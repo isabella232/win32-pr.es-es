@@ -1,5 +1,5 @@
 ---
-description: Almacena la hora a la que el usuario elige que se le recuerde el evento.
+description: Almacena la hora a la que el usuario decide que se le recuerde el evento.
 ms.assetid: 62d6ee4c-959c-44a1-a340-b858d1c7a953
 title: System.Calendar.ReminderTime
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117867265"
 ---
 # <a name="systemcalendarremindertime"></a>System.Calendar.ReminderTime
 
-Almacena la hora a la que el usuario elige que se le recuerde el evento.
+Almacena la hora a la que el usuario decide que se le recuerde el evento.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 

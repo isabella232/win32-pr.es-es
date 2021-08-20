@@ -1,5 +1,5 @@
 ---
-description: Windows usuarios pueden guardar las búsquedas como una carpeta de búsqueda generada por un archivo XML que almacena la consulta en un formulario que el subsistema de búsqueda Windows búsqueda.
+description: Windows los usuarios pueden guardar las búsquedas como una carpeta de búsqueda generada por un archivo XML que almacena la consulta en un formulario que puede usar el subsistema de búsqueda Windows búsqueda.
 ms.assetid: 1c73e220-a999-4243-879c-ac7310151def
 title: Formato de archivo de búsqueda guardado
 ms.topic: article
@@ -15,7 +15,7 @@ ms.locfileid: "117863728"
 
 En Windows Vista y versiones posteriores, los usuarios pueden guardar búsquedas como una carpeta de búsqueda generada por un archivo XML que almacena la consulta en un formulario que puede usar el subsistema de búsqueda Windows búsqueda. En este tema se describe el formato de archivo \* (.search-ms) e incluye las secciones siguientes:
 
-- [Información general de las búsquedas guardadas](#overview-of-saved-searches)
+- [Introducción a las búsquedas guardadas](#overview-of-saved-searches)
 - [Elemento \<viewInfo>](/windows)
   - [\<viewInfo> Atributos](/windows)
   - [\<viewInfo> Elementos secundarios](/windows)
@@ -25,14 +25,14 @@ En Windows Vista y versiones posteriores, los usuarios pueden guardar búsquedas
 - [Especificación completa del formato de archivo search-ms](#full-specification-of-the-search-ms-file-format)
 - [Ejemplos de búsquedas guardadas](#examples-of-saved-searches)
 
-## <a name="overview-of-saved-searches"></a>Información general de las búsquedas guardadas
+## <a name="overview-of-saved-searches"></a>Introducción a las búsquedas guardadas
 
-Los usuarios pueden guardar una consulta de búsqueda como una carpeta de búsqueda, una carpeta virtual que se muestra en Windows Explorer en la carpeta Búsquedas. Al abrir una carpeta de búsqueda, se ejecuta la búsqueda guardada y se muestran los resultados actualizados. El archivo de búsqueda guardado almacena la consulta en un formato en el que Windows search puede actuar, especificando qué buscar, dónde buscar y cómo presentar los resultados.
+Los usuarios pueden guardar una consulta de búsqueda como una carpeta de búsqueda, una carpeta virtual que se muestra en Windows Explorer en la carpeta Búsquedas. Al abrir una carpeta de búsqueda, se ejecuta la búsqueda guardada y se muestran los resultados actualizados. El archivo de búsqueda guardado almacena la consulta en un formato en el que Windows Search puede actuar, especificando qué buscar, dónde buscar y cómo presentar los resultados.
 
 La búsqueda guardada se genera a partir de un archivo XML \* (.search-ms) en la carpeta %userprofile% \\ Searches. Los datos se dividen en tres elementos principales del archivo XML:
 
 - \<viewInfo> especifica información de presentación
-- \<query> especifica (información de consulta de búsqueda)
+- \<query> especifica (buscar información de consulta
 - \<properties> especifica las propiedades del \* propio archivo .search-ms.
 
 En el ejemplo siguiente se muestra la estructura de alto nivel de un archivo de búsqueda guardado.
@@ -103,7 +103,7 @@ En la tabla siguiente se describen los atributos del elemento \<viewInfo>:
 
 | Atributo     | Descripción                                                                     | Valores                     |
 |---------------|---------------------------------------------------------------------------------|----------------------------|
-| Viewmode      | Especifica la vista de carpeta.                                                      | Iconos de \| detalles Iconos \|  |
+| Viewmode      | Especifica la vista de carpeta.                                                      | Iconos de \| \| detalles Iconos  |
 | iconSize      | Controla el tamaño predeterminado de los iconos y miniaturas de los elementos cuando no se apilan. | Entero entre 16 y 256 |
 | stackIconSize | Solo para uso interno. No debe usarse.                                              | N/D                        |
 | DisplayName   | Solo para uso interno. No debe usarse.                                              | N/D                        |
@@ -113,7 +113,7 @@ En la tabla siguiente se describen los atributos del elemento \<viewInfo>:
 
 ### <a name="viewinfo-child-elements"></a>\<viewInfo> Elementos secundarios
 
-Los elementos secundarios del elemento especifican qué columnas aparecen en los resultados de búsqueda del Explorador de Windows y cómo se agrupan \<viewInfo> y ordenan los resultados. Cada elemento secundario contiene un conjunto ordenado de columnas, identificado por nombres canónicos de propiedades del sistema (por ejemplo, System.DisplayName). Si no se definen en el archivo de búsqueda guardado, los resultados de la búsqueda se presentan con un conjunto predeterminado de columnas adecuado para los tipos de archivo mostrados.
+Los elementos secundarios del elemento especifican qué columnas aparecen en los resultados de búsqueda del Explorador de Windows y cómo se agrupan y \<viewInfo> ordenan los resultados. Cada elemento secundario contiene un conjunto ordenado de columnas, identificado por nombres canónicos de propiedades del sistema (por ejemplo, System.DisplayName). Si no se definen en el archivo de búsqueda guardado, los resultados de la búsqueda se presentan con un conjunto predeterminado de columnas adecuado para los tipos de archivo mostrados.
 
 | Elemento               | Descripción                                                                                        | Valores                                                       |
 |-----------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
@@ -126,7 +126,7 @@ Los elementos secundarios del elemento especifican qué columnas aparecen en los
 
 ## <a name="query-element"></a>\<query> (Elemento)
 
-El elemento especifica los atributos que definen cómo se consultan \<query> los resultados. En el ejemplo siguiente se muestra la estructura del elemento .
+El \<query> elemento especifica los atributos que definen cómo se consultan los resultados. En el ejemplo siguiente se muestra la estructura del elemento .
 
 ```XML
 ...

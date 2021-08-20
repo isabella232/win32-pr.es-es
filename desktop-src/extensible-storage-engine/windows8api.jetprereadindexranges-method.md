@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: Windows8Api. JetPrereadIndexRanges (método)'
-title: Método Windows8Api. JetPrereadIndexRanges (Microsoft. ISAM. esent. Interop. Windows8)
+description: Más información sobre el método Windows8Api.JetPrereadIndexRanges
+title: Método Windows8Api.JetPrereadIndexRanges (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'JetPrereadIndexRanges method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.Windows8Api.JetPrereadIndexRanges(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_RANGE[],System.Int32,System.Int32,System.Int32@,Microsoft.Isam.Esent.Interop.JET_COLUMNID[],Microsoft.Isam.Esent.Interop.Windows8.PrereadIndexRangesGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8api.jetprereadindexranges(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 986213a054dec54e92e4ecfe6fb0abd541b451ce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2195cd0db4b0fb608d2f36770904614d81b172556fe8beefb14d3f31d7a4924f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118069331"
 ---
-# <a name="windows8apijetprereadindexranges-method"></a>Windows8Api. JetPrereadIndexRanges, método
+# <a name="windows8apijetprereadindexranges-method"></a>Método Windows8Api.JetPrereadIndexRanges
 
-Si los registros con los intervalos de claves especificados no están en la caché del búfer, inicie las lecturas asincrónicas para traer los registros a la memoria caché del búfer de la base de datos.
+Si los registros con los intervalos de claves especificados no están en la caché del búfer, inicie lecturas asincrónicas para llevar los registros a la caché del búfer de base de datos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -82,58 +82,58 @@ public static void JetPrereadIndexRanges(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Tabla en la que se van a emitir las lecturas preleídas.
+    Tabla con la que se emiten las lecturas previas.
 
 <!-- end list -->
 
   - indexRanges  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
-    Intervalos de clave que se van a leer como preleídos.
+    Intervalos de claves que se van a leer previamente.
 
 <!-- end list -->
 
   - rangeIndex  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Índice del primer intervalo de claves de la matriz que se va a leer.
 
 <!-- end list -->
 
   - rangeCount  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Número máximo de intervalos de clave que se van a leer.
+    Número máximo de intervalos de claves que se van a leer previamente.
 
 <!-- end list -->
 
   - rangesPreread  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Devuelve el número de claves que se han preleído realmente.
+    Devuelve el número de claves que realmente se han leído previamente.
 
 <!-- end list -->
 
   - columnsPreread  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
-    Lista de identificadores de columna para las columnas de valor largo que se van a leer como prelectura.
+    Lista de identificadores de columna para las columnas de valor largo que se deben leer previamente.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. Windows8. PrereadIndexRangesGrbit](./prereadindexrangesgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Windows8.PrereadIndexRangesGrbit](./prereadindexrangesgrbit-enumeration.md)  
     
-    Opciones de lectura. Se utiliza para especificar la dirección de la lectura y escritura.
+    Opciones de lectura previa. Se usa para especificar la dirección de la lectura previa.
 
 ## <a name="see-also"></a>Vea también
 
@@ -143,4 +143,4 @@ public static void JetPrereadIndexRanges(
 
 [Miembros de Windows8Api](./windows8api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

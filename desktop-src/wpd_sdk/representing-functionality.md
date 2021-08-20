@@ -13,13 +13,13 @@ ms.locfileid: "117842707"
 ---
 # <a name="representing-functionality"></a>Representación de la funcionalidad
 
-Existen objetos funcionales para identificar o agrupar lógicamente las funcionalidades de características de un dispositivo. Por ejemplo, una aplicación puede ver que un dispositivo admite SMS buscando el objeto funcional sms. De forma similar, la aplicación puede ver que un dispositivo tiene funcionalidades de cámara buscando el objeto funcional Still Image Capture.
+Existen objetos funcionales para identificar o agrupar lógicamente las funcionalidades de características de un dispositivo. Por ejemplo, una aplicación puede ver que un dispositivo admite SMS buscando el objeto funcional SMS. De forma similar, la aplicación puede ver que un dispositivo tiene funcionalidades de cámara buscando el objeto funcional Still Image Capture.
 
-Esta representación flexible de objetos ayuda a facilitar la compatibilidad con dispositivos con funcionalidades de varias funciones. Los controladores simplemente pueden exponer los objetos funcionales que representan su dispositivo, lo que es más granular que el uso de clases de dispositivo tradicionales. La representación del objeto también ayuda a aislar las partes funcionales superpuestas; Por ejemplo, algunos teléfonos pueden tener dos cámaras o cuatro almacenamientos.
+Esta representación flexible de objetos ayuda a facilitar la compatibilidad con dispositivos con funcionalidades de varias funciones. Los controladores simplemente pueden exponer cualquier objeto funcional que represente su dispositivo, que es más granular que el uso de clases de dispositivo tradicionales. La representación del objeto también ayuda a aislar las partes funcionales superpuestas; Por ejemplo, algunos teléfonos pueden tener dos cámaras o cuatro almacenamientos.
 
-En el Windows operativo 7, los servicios amplían los objetos funcionales proporcionando consultas completas de funcionalidades y una agrupación abstracta de contenido. Las aplicaciones pueden usar servicios para detectar las funcionalidades del dispositivo e interactuar con el contenido de forma más eficaz. Por ejemplo, una aplicación puede ver que un dispositivo admite las funcionalidades de sincronización de contactos buscando un objeto de servicio Contactos y puede encontrar todos los contactos como objetos secundarios del objeto de servicio, sin tener que buscar de forma recursiva en la jerarquía de almacenamiento.
+En el Windows operativo 7, los servicios amplían los objetos funcionales al proporcionar consultas completas de funcionalidades y una agrupación abstracta de contenido. Las aplicaciones pueden usar servicios para detectar las funcionalidades del dispositivo e interactuar con el contenido de forma más eficaz. Por ejemplo, una aplicación puede ver que un dispositivo admite las funcionalidades de sincronización de contactos buscando un objeto de servicio Contactos y puede encontrar todos los contactos como objetos secundarios del objeto de servicio, sin tener que buscar de forma recursiva en la jerarquía de almacenamiento.
 
-Los servicios también permiten a las aplicaciones detectar e invocar el comportamiento personalizado en un dispositivo.
+Los servicios también permiten a las aplicaciones detectar e invocar comportamientos personalizados en un dispositivo.
 
 ## <a name="related-topics"></a>Temas relacionados
 

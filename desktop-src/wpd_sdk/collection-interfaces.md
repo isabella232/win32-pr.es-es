@@ -19,7 +19,7 @@ Las interfaces siguientes se usan para contener grupos de valores de varios tipo
 
 | Interfaz                                                                            | Descripción                                                            |
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md)                 | Contiene una colección de **valores PROPERTYKEY.**                          |
+| [**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md)                 | Contiene una colección de valores **PROPERTYKEY.**                          |
 | [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Contiene una colección de **valores PROPVARIANT** del mismo VARTYPE.      |
 | [**IPortableDeviceValues**](iportabledevicevalues.md)                               | Contiene una colección de pares **PROPERTYKEY** / **PROPVARIANT.**           |
 | [**IPortableDeviceValuesCollection**](iportabledevicevaluescollection.md)           | Contiene una colección de interfaces **IPortableDeviceValues de** base cero. |

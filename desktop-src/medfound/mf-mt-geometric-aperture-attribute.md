@@ -1,40 +1,40 @@
 ---
-description: Define la abertura geométrica para un tipo de medio de vídeo.
+description: Define la apertura geométrica para un tipo de medio de vídeo.
 ms.assetid: a2489ba1-f322-4b63-a479-0d9879c30a8c
-title: MF_MT_GEOMETRIC_APERTURE atributo (mfapi. h)
+title: MF_MT_GEOMETRIC_APERTURE atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e194408dd8b6bf4a4dac717c7d41aaecbb06f306
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a59ff454812564180087fd7d5c1073cb2348b71f46fb77de9bf01021c2c5d62e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118060176"
 ---
-# <a name="mf_mt_geometric_aperture-attribute"></a>\_Atributo de \_ \_ apertura geométrica de MF MT
+# <a name="mf_mt_geometric_aperture-attribute"></a>Atributo MF \_ MT \_ GEOMETRIC \_ APERTURE
 
-Define la abertura geométrica para un tipo de medio de vídeo.
+Define la apertura geométrica para un tipo de medio de vídeo.
 
 ## <a name="data-type"></a>Tipo de datos
 
 Byte array
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de este atributo es una estructura [**MFVideoArea**](/windows/desktop/api/mfobjects/ns-mfobjects-mfvideoarea) .
+El valor de este atributo es una [**estructura MFVideoArea.**](/windows/desktop/api/mfobjects/ns-mfobjects-mfvideoarea)
 
-La relación de aspecto de la imagen se calcula con respecto a la abertura geométrica mediante la siguiente fórmula: relación de aspecto de la imagen = (ancho de abertura geométrica/alto de abertura geométrica) × relación de aspecto de píxeles.
+La relación de aspecto de la imagen se calcula con respecto a la apertura geométrica, mediante la fórmula siguiente: Relación de aspecto de imagen = (ancho de apertura geométrica/alto de apertura geométrica) × relación de aspecto de píxeles.
 
-Si no se establece este atributo, se supone que la abertura geométrica es todo el fotograma de vídeo. Solo debe establecer este atributo cuando el tipo de medio describe un estándar de vídeo con un área activa definida.
+Si no se establece este atributo, se supone que la apertura geométrica es todo el fotograma de vídeo. Debe establecer este atributo solo cuando el tipo de medio describa un estándar de vídeo con un área activa definida.
 
-Por ejemplo, en la televisión NTSC, el fotograma de vídeo es 720 × 480 con un área activa de 704 × 480 y una relación de aspecto de 10:11 píxeles. La imagen resultante tiene una relación de aspecto de (704/480) × (10/11) = 4:3.
+Por ejemplo, en la televisión XEL, el fotograma de vídeo es 720 × 480 con un área activa de 704 × 480 y una relación de aspecto de 10:11 píxeles. La imagen resultante tiene una relación de aspecto de (704/480) × (10/11) = 4:3.
 
 > [!Note]  
-> El presentador predeterminado para el [representador de vídeo mejorado](enhanced-video-renderer.md) (EVR) muestra la abertura geométrica del vídeo, si se especifica.
+> El presentador predeterminado para [el representador de](enhanced-video-renderer.md) vídeo mejorado (EVR) muestra la apertura geométrica del vídeo, si se especifica.
 
  
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -61,9 +61,9 @@ HRESULT SetGeometricAperture(
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                              |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| para aplicaciones para UWP\]<br/>                        |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -71,10 +71,10 @@ HRESULT SetGeometricAperture(
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos de Media Foundation](media-foundation-attributes.md)
+[Media Foundation atributos](media-foundation-attributes.md)
 </dt> <dt>
 
 [Relación de aspecto de la imagen](picture-aspect-ratio.md)
@@ -83,19 +83,19 @@ HRESULT SetGeometricAperture(
 [Tipos de medios de vídeo](video-media-types.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
+[**ATTRIBUTEAttributes::GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
 </dt> <dt>
 
-[**IMFAttributes:: SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
+[**ATTRIBUTEAttributes::SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[**\_ \_ apertura mínima de \_ pantalla MF MT \_**](mf-mt-minimum-display-aperture-attribute.md)
+[**APERTURA \_ DE PANTALLA MÍNIMA \_ DE \_ \_ MF MT**](mf-mt-minimum-display-aperture-attribute.md)
 </dt> <dt>
 
-[**\_apertura de \_ \_ análisis panorámico MF MT \_**](mf-mt-pan-scan-aperture-attribute.md)
+[**MF \_ MT \_ PAN \_ SCAN \_ APERTURE**](mf-mt-pan-scan-aperture-attribute.md)
 </dt> </dl>
 
  

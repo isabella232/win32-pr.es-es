@@ -1,5 +1,5 @@
 ---
-description: En este tema se describen los formatos YUV de 10 y 16 bits que se recomiendan para capturar, procesar y mostrar vídeo en el sistema operativo microsoft Windows.
+description: En este tema se describen los formatos YUV de 10 y 16 bits que se recomiendan para capturar, procesar y mostrar vídeo en el sistema operativo Microsoft Windows.
 ms.assetid: fcaaaa6f-f886-4f6e-9c3c-e513ccc90d37
 title: Formatos de vídeo YUV de 10 y 16 bits
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118065743"
 ---
 # <a name="10-bit-and-16-bit-yuv-video-formats"></a>Formatos de vídeo YUV de 10 y 16 bits
 
-En este tema se describen los formatos YUV de 10 y 16 bits que se recomiendan para capturar, procesar y mostrar vídeo en el sistema operativo microsoft Windows.
+En este tema se describen los formatos YUV de 10 y 16 bits que se recomiendan para capturar, procesar y mostrar vídeo en el sistema operativo Microsoft Windows.
 
 Este tema contiene las siguientes secciones:
 
@@ -40,7 +40,7 @@ Cuando el hardware gráfico lee una superficie que contiene una representación 
 
 En los formatos que contienen alfa, un píxel completamente transparente tiene un valor alfa de cero y un píxel completamente opaco tiene un valor alfa de (2^n) – 1, donde n es el número de bits alfa. Alfa se supone que es un valor lineal que se aplica a cada componente después de que el componente se haya convertido a su forma lineal normalizada.
 
-En el caso de las imágenes en la memoria de vídeo, el controlador de gráficos selecciona la alineación de memoria de la superficie. La superficie debe estar **alineada con DWORD.** Es decir, se garantiza que las líneas individuales de una superficie comienzan en un límite de 32 bits, aunque la alineación puede ser superior a 32 bits. El origen (0,0) siempre es la esquina superior izquierda de la superficie.
+En el caso de las imágenes en la memoria de vídeo, el controlador de gráficos selecciona la alineación de la memoria de la superficie. La superficie debe estar **alineada con DWORD.** Es decir, se garantiza que las líneas individuales de una superficie comienzan en un límite de 32 bits, aunque la alineación puede ser mayor que 32 bits. El origen (0,0) siempre es la esquina superior izquierda de la superficie.
 
 Para los fines de esta documentación, el término *U* es equivalente a *Cb* y el término *V* es equivalente a *Cr*.
 
@@ -103,7 +103,7 @@ En estos dos formatos, todos los ejemplos de Y aparecen primero en memoria como 
 
 Si la matriz de U-V combinada se trata como una matriz de **DWORD,** la palabra menos significativa (LSW) contiene el valor U y la palabra más significativa (MSW) contiene el valor V. El paso del plano de U-V combinado es igual al paso del plano Y. El plano U-V tiene la mitad de líneas que el plano Y.
 
-Estos dos formatos son los formatos de píxel plano preferidos de 4:2:0 para las representaciones YUV de mayor precisión. Se espera que sean un requisito a medio plazo para los aceleradores de aceleración de vídeo directX (DXVA) que admiten vídeo de 10 o 16 bits 4:2:0.
+Estos dos formatos son los formatos de píxel plano preferidos de 4:2:0 para las representaciones YUV de mayor precisión. Se espera que sean un requisito a medio plazo para los aceleradores de aceleración de vídeo de DirectX (DXVA) que admiten vídeo de 10 o 16 bits 4:2:0.
 
 ### <a name="422-formats"></a>Formatos 4:2:2
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 20c80f578abd5e35c89f3ecccedd2ab7fd59e812
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 11d3c8dbd0c2723151de3dd42494046e49e5972c2f30ce3ef8ee6afcaa30c70e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117914261"
 ---
 # <a name="id3dxmatrixstackloadmatrix-method-d3dx10h"></a>Método ID3DXMATRIXStack::LoadMatrix (D3DX10.h)
 
@@ -70,7 +70,7 @@ Tenga en cuenta que este método no agrega un elemento a la pila; en su lugar, r
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

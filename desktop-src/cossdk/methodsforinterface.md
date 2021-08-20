@@ -1,5 +1,5 @@
 ---
-description: Contiene un objeto para cada método de la interfaz con la que está relacionada la colección.
+description: Contiene un objeto para cada método de la interfaz a la que está relacionada la colección.
 ms.assetid: e64b007f-e44d-4b6b-97b2-1e017c5a7dbe
 title: Colección MethodsForInterface
 ms.topic: reference
@@ -12,42 +12,42 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 6057d06d4a67222095d5bb0b5ae6da0d603fb4ec
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: be182d237c1c46ed816c0b413bef7b0aa10ce6c290bd0da0f53153db7c0520cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117916304"
 ---
 # <a name="methodsforinterface-collection"></a>Colección MethodsForInterface
 
-Contiene un objeto para cada método de la interfaz con la que está relacionada la colección.
+Contiene un objeto para cada método de la interfaz a la que está relacionada la colección.
 
-Esta colección no admite los métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) y [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Esta colección no admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) y [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Miembros
 
-La colección **MethodsForInterface** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
+La **colección MethodsForInterface** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
 ## <a name="related-collections"></a>Colecciones relacionadas
 
-Puede navegar desde esta colección hasta cualquiera de las siguientes colecciones:
+Puede navegar desde esta colección a cualquiera de las siguientes colecciones:
 
 -   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 -   [**RolesForMethod**](rolesformethod.md)
 
-Puede navegar a esta colección desde las colecciones siguientes:
+Puede navegar a esta colección desde las siguientes colecciones:
 
 -   [**InterfacesForComponent**](interfacesforcomponent.md)
 
 ## <a name="properties"></a>Propiedades
 
-El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades en la colección:
+El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección admite las siguientes propiedades:
 
--   [Autocompletar](#autocomplete)
--   [CLSID](#clsid)
+-   [AutoComplete](#autocomplete)
+-   [Clsid](#clsid)
 -   [Descripción](#description)
 -   [IID](#iid)
 -   [Index](#index)
@@ -59,8 +59,8 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Determina si el objeto se desactiva automáticamente cuando se completa el método, sin que se llame necesariamente a SetComplete o SetAbort. Esto solo afecta a la configuración predeterminada del bit de activación JIT "Done" en el inicio del método; este bit se puede restablecer (como con SetComplete o SetAbort) dentro del método para reemplazar el valor predeterminado. |
-| Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                  |
+| Descripción    | Determina si el objeto se desactiva automáticamente cuando se completa el método, sin que se llame necesariamente a SetComplete o SetAbort. Esto solo afecta a la configuración predeterminada del bit "Listo" de activación JIT al iniciar el método; Este bit se puede restablecer (como con SetComplete o SetAbort) dentro del método para invalidar el valor predeterminado. |
+| Acceso         | ReadWrite                                                                                                                                                                                                                                                                                                                                  |
 | Tipo           | Bool                                                                                                                                                                                                                                                                                                                                       |
 | Valor predeterminado        | False                                                                                                                                                                                                                                                                                                                                      |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                                                                                               |
@@ -75,8 +75,8 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|---------------------------|
-| Descripción    | GUID del componente. |
-| Access         | ReadOnly                  |
+| Descripción    | GUID para el componente. |
+| Acceso         | ReadOnly                  |
 | Tipo           | String                    |
 | Predeterminado        | N/D                       |
 | Sistema mínimo | Windows 2000              |
@@ -92,7 +92,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 | Entrada | Value |
 |----------------|------------------------------|
 | Descripción    | Descripción del método. |
-| Access         | ReadWrite                    |
+| Acceso         | ReadWrite                    |
 | Tipo           | String                       |
 | Predeterminado        | ""                           |
 | Sistema mínimo | Windows 2000                 |
@@ -107,8 +107,8 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|---------------------------|
-| Descripción    | Un GUID para la interfaz. |
-| Access         | ReadOnly                  |
+| Descripción    | GUID para la interfaz. |
+| Acceso         | ReadOnly                  |
 | Tipo           | String                    |
 | Predeterminado        | N/D                       |
 | Sistema mínimo | Windows 2000              |
@@ -123,8 +123,8 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Identificador de envío del método. Esta propiedad se devuelve cuando se llama al método de propiedad de [**clave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) en un objeto de esta colección. |
-| Access         | ReadOnly                                                                                                                                                        |
+| Descripción    | Identificador de distribución del método. Esta propiedad se devuelve cuando se llama [**al método**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) de propiedad Key en un objeto de esta colección. |
+| Acceso         | ReadOnly                                                                                                                                                        |
 | Tipo           | **DWORD**                                                                                                                                                       |
 | Valor predeterminado        | N/D                                                                                                                                                             |
 | Sistema mínimo | Windows 2000                                                                                                                                                    |
@@ -139,8 +139,8 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | El nombre del método. Esta propiedad se devuelve cuando se llama al método de la propiedad [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
-| Access         | ReadOnly                                                                                                                                           |
+| Descripción    | El nombre del método. Esta propiedad se devuelve cuando se llama [**al método**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) de propiedad Name en un objeto de esta colección. |
+| Acceso         | ReadOnly                                                                                                                                           |
 | Tipo           | String                                                                                                                                             |
 | Predeterminado        | N/D                                                                                                                                                |
 | Sistema mínimo | Windows 2000                                                                                                                                       |

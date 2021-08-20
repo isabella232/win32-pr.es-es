@@ -1,5 +1,5 @@
 ---
-description: Especifica la prioridad relativa del subproceso para una rama de la topología.
+description: Especifica la prioridad de subproceso relativa para una rama de la topología.
 ms.assetid: 7BCD2EE0-94FB-4438-9B6A-7B26DBFB5978
 title: MF_TOPONODE_WORKQUEUE_MMCSS_PRIORITY atributo (Mfidl.h)
 ms.topic: reference
@@ -11,9 +11,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117874798"
 ---
-# <a name="mf_toponode_workqueue_mmcss_priority-attribute"></a>Atributo \_ \_ \_ MMCSS PRIORITY de \_ MF TOPONODE WORKQUEUE
+# <a name="mf_toponode_workqueue_mmcss_priority-attribute"></a>Atributo \_ \_ \_ MMCSS PRIORITY de MF TOPONODE WORKQUEUE \_
 
-Especifica la prioridad relativa del subproceso para una rama de la topología.
+Especifica la prioridad de subproceso relativa para una rama de la topología.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,11 +21,11 @@ Especifica la prioridad relativa del subproceso para una rama de la topología.
 
 ## <a name="remarks"></a>Comentarios
 
-Este atributo se aplica a los nodos de origen **(MF \_ TOPOLOGY \_ SOURCESTREAM \_ NODE).** El atributo es opcional.
+Este atributo se aplica a los nodos de origen **(MF \_ TOPOLOGY \_ SOURCESTREAM \_ NODE**). El atributo es opcional.
 
 Este atributo requiere los atributos [MF \_ TOPONODE \_ WORKQUEUE \_ ID](mf-toponode-workqueue-id-attribute.md) y [MF \_ TOPONODE \_ WORKQUEUE \_ MMCSS \_ CLASS](mf-toponode-workqueue-mmcss-class-attribute.md) en el mismo nodo.
 
-El valor del atributo es la prioridad relativa del subproceso de la cola de trabajo para esta rama de la topología. El [servicio Programador de clases multimedia](../procthread/multimedia-class-scheduler-service.md) (MMCSS) usa la prioridad relativa cuando establece la prioridad del subproceso. Para obtener más información, [**vea AvSetMmThreadPriority**](/windows/win32/api/avrt/nf-avrt-avsetmmthreadpriority).
+El valor del atributo es la prioridad de subproceso relativa de la cola de trabajo para esta rama de la topología. El [servicio Programador de clases multimedia](../procthread/multimedia-class-scheduler-service.md) (MMCSS) usa la prioridad relativa cuando establece la prioridad del subproceso. Para obtener más información, [**vea AvSetMmThreadPriority.**](/windows/win32/api/avrt/nf-avrt-avsetmmthreadpriority)
 
 La constante GUID para este atributo se exporta desde mfuuid.lib.
 
@@ -33,7 +33,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                               |
@@ -41,7 +41,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -54,13 +54,13 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 [Mejoras de cola de trabajo y subprocesos](media-foundation-work-queue-and-threading-improvements.md)
 </dt> <dt>
 
-[**NODETopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
+[**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
 </dt> <dt>
 
 [**IMFWorkQueueServices::BeginRegisterTopologyWorkQueuesWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginregistertopologyworkqueueswithmmcss)
 </dt> <dt>
 
-[**ID. \_ DE \_ WORKQUEUE DE MF TOPONODE \_**](mf-toponode-workqueue-id-attribute.md)
+[**MF \_ TOPONODE \_ WORKQUEUE \_ ID**](mf-toponode-workqueue-id-attribute.md)
 </dt> <dt>
 
 [**MF \_ TOPONODE \_ WORKQUEUE \_ MMCSS \_ TASKID**](mf-toponode-workqueue-mmcss-taskid-attribute.md)

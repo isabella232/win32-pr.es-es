@@ -1,47 +1,47 @@
 ---
-title: Volver a intentar una suscripción del recopilador de eventos
-description: Si se produce un problema con un origen de eventos que está asociado a una suscripción del recopilador de eventos, puede volver a intentar la suscripción una vez que se haya resuelto el problema.
+title: Reintentar una suscripción del recopilador de eventos
+description: Si se produce un problema con un origen de eventos asociado a una suscripción del recopilador de eventos, puede volver a intentar la suscripción una vez resuelto el problema.
 ms.assetid: 8a3570af-bde3-40e5-8129-84ec313d853f
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa0f29d485d36bb6f623cb67bd3e8598c4bb46b7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: dc7a15d6898fb99bf6b8cbe0e6f26605dec08967382375eb53447ac474466493
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103777731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117937237"
 ---
-# <a name="retrying-an-event-collector-subscription"></a>Volver a intentar una suscripción del recopilador de eventos
+# <a name="retrying-an-event-collector-subscription"></a>Reintentar una suscripción del recopilador de eventos
 
-Si se produce un problema con un origen de eventos que está asociado a una suscripción del recopilador de eventos, puede volver a intentar la suscripción una vez que se haya resuelto el problema.
+Si se produce un problema con un origen de eventos asociado a una suscripción del recopilador de eventos, puede volver a intentar la suscripción una vez resuelto el problema.
 
 > [!Note]
 >
-> Puede usar este ejemplo para volver a intentar una suscripción o puede escribir el siguiente comando en el símbolo del sistema:
+> Puede usar este ejemplo para reintentar una suscripción o puede escribir el siguiente comando en el símbolo del sistema:
 >
-> **wecutil RS** *SubscriptionName*
+> **wecutil rs** *SubscriptionName*
 
- 
+ 
 
-Necesitará el nombre de una suscripción para volver a intentarlo. Para enumerar los nombres de las suscripciones actuales en un equipo local, puede utilizar el ejemplo de código de C++ que se muestra en [enumerar las suscripciones del recopilador de eventos](listing-event-collector-subscriptions.md)o puede escribir el siguiente comando en el símbolo del sistema:
+Necesitará el nombre de una suscripción para volver a intentarlo. Para enumerar los nombres de las suscripciones actuales en un equipo local, puede usar el ejemplo de código de C++ que se muestra en Enumerar suscripciones del recopilador de eventos [o](listing-event-collector-subscriptions.md)puede escribir el siguiente comando en el símbolo del sistema:
 
 **wecutil es**
 
 > [!Note]  
-> En este ejemplo se muestra cómo Reintentar individualmente cada origen de eventos de una suscripción iniciada por el recopilador y cómo Reintentar una suscripción iniciada por el origen.
+> En este ejemplo se muestra cómo reintentar individualmente cada origen de eventos de una suscripción iniciada por el recopilador y cómo reintentar una suscripción iniciada por el origen.
 
- 
+ 
 
-En el ejemplo de código siguiente se sigue un procedimiento para Reintentar todos los orígenes de eventos de una suscripción del recopilador de eventos.
+En el ejemplo de código siguiente se sigue un procedimiento para reintentar todos los orígenes de eventos de una suscripción del recopilador de eventos.
 
 **Para volver a intentar una suscripción del recopilador de eventos**
 
-1.  Abra la suscripción proporcionando el nombre de la suscripción y los derechos de acceso como parámetros a la función [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . Para obtener más información sobre los derechos de acceso, consulte [**constantes del recopilador de eventos de Windows**](windows-event-collector-constants.md).
-2.  Vuelva a intentar el origen del evento llamando a la función **EcRetrySubscription** .
-3.  Cierre la suscripción mediante una llamada a la función [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .
+1.  Abra la suscripción proporcionando el nombre de la suscripción y los derechos de acceso como parámetros para la [**función EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Para obtener más información sobre los derechos de acceso, vea Windows event collector constants (Constantes [**del recopilador de eventos).**](windows-event-collector-constants.md)
+2.  Vuelva a intentar el origen del evento llamando a la **función EcRetrySubscription.**
+3.  Cierre la suscripción mediante una llamada a la [**función EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
-En el ejemplo de código de C++ siguiente se muestra cómo Reintentar una suscripción del recopilador de eventos.
+En el siguiente ejemplo de código de C++ se muestra cómo reintentar una suscripción del recopilador de eventos.
 
 
 ```C++
@@ -290,15 +290,15 @@ DWORD GetStatus(LPCWSTR subscriptionName,
 
 <dl> <dt>
 
-[Enumerar las suscripciones del recopilador de eventos](listing-event-collector-subscriptions.md)
+[Enumerar suscripciones del recopilador de eventos](listing-event-collector-subscriptions.md)
 </dt> <dt>
 
-[Referencia del recopilador de eventos de Windows](windows-event-collector-reference.md)
+[Windows Referencia del recopilador de eventos](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

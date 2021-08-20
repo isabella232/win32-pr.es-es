@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_RepresentativeString
-description: Identifica la propiedad \_ RepresentativeString de PKEY de la \_ interfaz de usuario.
+description: Identifica la propiedad \_ IU PKEY \_ RepresentativeString.
 ms.assetid: 7f30fef9-fba9-4e04-b791-028d5f863e53
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "117850188"
 ---
 # <a name="ui_pkey_representativestring"></a>UI \_ PKEY \_ RepresentativeString
 
-Identifica la propiedad \_ RepresentativeString de PKEY de la \_ interfaz de usuario.
+Identifica la propiedad \_ IU PKEY \_ RepresentativeString.
 
 ```
 propertyDescription
@@ -30,7 +30,7 @@ propertyDescription
 Una aplicación usa ui PKEY RepresentativeString para consultar la longitud del campo \_ \_ de edición de un control [Spinner.](windowsribbon-controls-spinner.md)
 
 > [!Note]  
-> El marco usa el valor de UI PKEY RepresentativeString para calcular el ancho del control Spinner y \_ \_ nunca se muestra. [](windowsribbon-controls-spinner.md)
+> El marco usa el valor de UI PKEY RepresentativeString para calcular el ancho del control Spinner y nunca \_ \_ se muestra. [](windowsribbon-controls-spinner.md)
 
  
 
