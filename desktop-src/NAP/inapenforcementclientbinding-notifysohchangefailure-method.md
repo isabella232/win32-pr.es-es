@@ -82,7 +82,7 @@ El cliente de cumplimiento debe llamar al método [**INapEnforcementClientBindin
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

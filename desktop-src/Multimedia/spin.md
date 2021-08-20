@@ -1,9 +1,9 @@
 ---
-title: comando de número
-description: El comando spin inicia el giro de un disco o detiene el disco. Los dispositivos de videodisco reconocen este comando.
+title: comando spin
+description: El comando spin empieza a girar un disco o impide que el disco gire. Los dispositivos videodiscos reconocen este comando.
 ms.assetid: 1fdf4d09-fafd-4245-ad92-397114d0f473
 keywords:
-- comando de giro de Windows multimedia
+- Comando spin Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c25e25f5a44ad6e6c9562d05653ab25cb2950b8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c4b643d1f641f7f7faf2711bc2fa8ec43efe7ca1e60a2fb178191870c5ce2354
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136457"
 ---
-# <a name="spin-command"></a>comando de número
+# <a name="spin-command"></a>comando spin
 
-El comando spin inicia el giro de un disco o detiene el disco. Los dispositivos de videodisco reconocen este comando.
+El comando spin empieza a girar un disco o impide que el disco gire. Los dispositivos videodiscos reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -53,10 +53,10 @@ Una de las marcas siguientes.
 
 
 
-| Value | Significado                       |
+| Valor | Significado                       |
 |-------|-------------------------------|
-|  Abajo  | Detiene el disco al girar. |
-| up    | Inicia la rotación del disco.     |
+|  Abajo  | Detiene el giro del disco. |
+| up    | Comienza a girar el disco.     |
 
 
 
@@ -67,17 +67,17 @@ Una de las marcas siguientes.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify" o ambos. Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify" o ambos. Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="examples"></a>Ejemplos
 
-El comando siguiente inicia la rotación de un dispositivo de videodisco.
+El comando siguiente comienza a girar un dispositivo de vídeodisco.
 
 ``` syntax
 spin videodisc up
@@ -87,7 +87,7 @@ spin videodisc up
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
@@ -98,10 +98,10 @@ spin videodisc up
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> </dl>
 
  

@@ -28,7 +28,7 @@ ms.locfileid: "118421646"
 La **clase \_ ProductPhysicalElements de CIM** representa los elementos físicos que constituye un producto.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -73,13 +73,13 @@ Referencia al elemento físico que forma parte del producto.
 **Producto**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Producto CIM \_**
+Tipo de datos: **Producto \_ CIM**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Calificadores: [**Agregado,**](/windows/desktop/WmiSdk/standard-qualifiers) [**Máximo**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Referencia al producto.

@@ -17,7 +17,7 @@ El recorte implica restringir el dibujo a una región determinada. En la ilustra
 
 ![ilustración que muestra partes de la cadena "hello" dentro de un corazón rojo](images/aboutgdip02-art30.png)
 
-Las regiones se pueden construir a partir de rutas de acceso y las rutas de acceso pueden contener los contornos de las cadenas, por lo que puede usar texto descrito para el recorte. En la ilustración siguiente se muestra un conjunto de puntos suspensivos concéntricas recortados en el interior de una cadena de texto.
+Las regiones se pueden construir a partir de rutas de acceso y las rutas de acceso pueden contener los contornos de las cadenas, por lo que puede usar texto descrito para el recorte. En la ilustración siguiente se muestra un conjunto de elipses concéntricas recortadas en el interior de una cadena de texto.
 
 ![ilustración que muestra la cadena "hello" rellenada por un patrón de círculos concéntricas](images/aboutgdip02-art31.png)
 

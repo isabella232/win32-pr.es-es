@@ -1,26 +1,26 @@
 ---
-title: Usar la estructura WAVEFORMATEX
-description: Usar la estructura WAVEFORMATEX
+title: Usar la estructura DESATEX
+description: Usar la estructura DESATEX
 ms.assetid: 9b668e1e-cb5f-4065-802b-23974925eacf
 keywords:
-- onda audio, WAVEFORMATEX (estructura)
-- audio auxiliar, WAVEFORMATEX (estructura)
-- WAVEFORMATEX (estructura)
-- Datos de audio PCM
+- audio de forma de onda, estructura DESATEX
+- audio auxiliar, estructura DESATEX
+- STRUCTUREATEX (estructura)
+- Datos de audio de PCM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1534cf660c2f2423dc526c3d29f8eca06878fc0c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4a3831d9760580f294573a4bc1bec3aef1d42cf345b2d714a897b22940a89a0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104487606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136059"
 ---
-# <a name="using-the-waveformatex-structure"></a>Usar la estructura WAVEFORMATEX
+# <a name="using-the-waveformatex-structure"></a>Usar la estructura DESATEX
 
-En el caso de los datos de audio PCM en un máximo de dos canales y con ejemplos de 8 o 16 bits, use la estructura [**WAVEFORMATEX**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) para especificar el formato de los datos.
+En el caso de los datos de audio PCM en no más de dos canales y con muestras de 8 o 16 bits, use la estructura [**DESATEX**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) para especificar el formato de datos.
 
-En el ejemplo siguiente se muestra cómo configurar una estructura **WAVEFORMATEX** para mono 11,025 kilohercios (kHz) de 8 bits y para estéreo de 16 bits de 44,1 kHz. Después de configurar **WAVEFORMATEX**, el ejemplo llama a la función IsFormatSupported para comprobar que el dispositivo de salida de forma de onda PCM admite el formato. El código fuente de IsFormatSupported se muestra en un ejemplo para [determinar la compatibilidad con el formato no estándar](determining-nonstandard-format-support.md).
+En el ejemplo siguiente se muestra cómo configurar una estructura **DE FORMADETEATEX** para 11,025 kilohercios (kHz) mono de 8 bits y para estéreo de 16 bits de 44,1 kHz. Después de configurar **ESTAMÁTEX,** en el ejemplo se llama a la función IsFormatSupported para comprobar que el dispositivo de salida de forma de onda PCM admite el formato . El código fuente de IsFormatSupported se muestra en un ejemplo de Determinar la compatibilidad [con formato no estándar](determining-nonstandard-format-support.md).
 
 
 ```C++
@@ -83,6 +83,6 @@ else
 
 
 
- 
+ 
 
- 
+ 

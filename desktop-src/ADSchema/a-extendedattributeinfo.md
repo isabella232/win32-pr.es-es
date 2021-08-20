@@ -1,11 +1,11 @@
 ---
-title: Atributo Extended-Attribute-info
-description: Una propiedad con varios valores que contiene cadenas que representan información adicional para cada atributo.
+title: Atributo Extended-Attribute-Info
+description: Propiedad multivalor que contiene cadenas que representan información adicional para cada atributo.
 ms.assetid: 38f87907-a328-473f-bc9c-f3573bc05af5
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo Extended-Attribute-info
-- extendedAttributeInfo esquema de AD de atributos
+- Esquema de AD del atributo Extended-Attribute-Info
+- ExtendedAttributeInfo attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac2c5e1498716dfbac2a1c539f7c9a5bfb48fb41
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bef680f92c2a9dba0efa02458648c6ec623ff0835e177c2926b678c6a743d510
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118177315"
 ---
-# <a name="extended-attribute-info-attribute"></a>Atributo Extended-Attribute-info
+# <a name="extended-attribute-info-attribute"></a>Atributo Extended-Attribute-Info
 
-Una propiedad con varios valores que contiene cadenas que representan información adicional para cada atributo.
+Propiedad multivalor que contiene cadenas que representan información adicional para cada atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Extended-Attribute-info                     |
-| Nombre para mostrar de LDAP | extendedAttributeInfo                       |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | Extended-Attribute-Info                     |
+| Ldap-Display-Name | extendedAttributeInfo                       |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.909                      |
-| System-ID-GUID    | 9a7ad947-ca53-11d1-bbd0-0080c76670c0        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 9a7ad947-ca53-11d1-bbd0-0080c76670c0        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ Una propiedad con varios valores que contiene cadenas que representan informaci�
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ Una propiedad con varios valores que contiene cadenas que representan informaci�
 
 | Entrada | Value |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Verdadero                                        |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Clases usadas en        | [**Subesquema**](c-subschema.md)<br/> |
+| Clases usadas en        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
@@ -77,39 +77,39 @@ Una propiedad con varios valores que contiene cadenas que representan informaci�
 
 | Entrada | Value |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Verdadero                                        |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Clases usadas en        | [**Subesquema**](c-subschema.md)<br/> |
+| Clases usadas en        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Verdadero                                        |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Clases usadas en        | [**Subesquema**](c-subschema.md)<br/> |
+| Clases usadas en        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
@@ -117,20 +117,20 @@ Una propiedad con varios valores que contiene cadenas que representan informaci�
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Verdadero                                        |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Clases usadas en        | [**Subesquema**](c-subschema.md)<br/> |
+| Clases usadas en        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ Una propiedad con varios valores que contiene cadenas que representan informaci�
 
 | Entrada | Value |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Verdadero                                        |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Clases usadas en        | [**Subesquema**](c-subschema.md)<br/> |
+| Clases usadas en        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ Una propiedad con varios valores que contiene cadenas que representan informaci�
 
 | Entrada | Value |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Verdadero                                        |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Clases usadas en        | [**Subesquema**](c-subschema.md)<br/> |
+| Clases usadas en        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
@@ -180,20 +180,20 @@ Una propiedad con varios valores que contiene cadenas que representan informaci�
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Verdadero                                        |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Clases usadas en        | [**Subesquema**](c-subschema.md)<br/> |
+| Clases usadas en        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 

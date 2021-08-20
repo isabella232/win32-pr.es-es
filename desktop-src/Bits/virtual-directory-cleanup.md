@@ -20,7 +20,7 @@ BITS agrega un elemento de trabajo al [Programador de tareas](/windows/desktop/T
 Use la pestaña Extensión bits o las [interfaces Programador de tareas](/windows/desktop/TaskSchd/task-scheduler-start-page) para cambiar la programación de limpieza según corresponda para la aplicación. También puede llamar al método [**IBITSExtensionSetup::GetCleanupTask**](/windows/desktop/api/Bitscfg/nf-bitscfg-ibitsextensionsetup-getcleanuptask) para recuperar un puntero de interfaz a la tarea de limpieza asociada al directorio virtual.
 
 > [!Note]  
-> Si el Programador de tareas está deshabilitado después de habilitar el directorio virtual, el proceso de limpieza del directorio virtual no funcionará.
+> Si el Programador de tareas está deshabilitado después de habilitar el directorio virtual, el proceso de limpieza de directorios virtuales no funcionará.
 
  
 

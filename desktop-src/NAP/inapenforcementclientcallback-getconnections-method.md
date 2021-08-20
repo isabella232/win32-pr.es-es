@@ -82,7 +82,7 @@ Este método de devolución de llamada debe devolver uno de los siguientes códi
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

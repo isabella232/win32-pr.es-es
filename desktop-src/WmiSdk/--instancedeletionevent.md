@@ -122,7 +122,7 @@ El [ejemplo de](https://Gallery.TechNet.Microsoft.Com/060a9adb-f99b-4f34-ba65-19
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

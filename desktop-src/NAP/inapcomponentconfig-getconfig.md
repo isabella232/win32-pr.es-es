@@ -1,11 +1,11 @@
 ---
-title: Método GetConfig de INapComponentConfig (NapCommon. h)
-description: Recupera la configuración del componente de validador de mantenimiento del sistema (SHV).
+title: Método INapComponentConfig GetConfig (NapCommon.h)
+description: Recupera la configuración del componente de validador de estado del sistema (SHV).
 ms.assetid: 57a1d3a7-05c0-4e0f-91b8-b3cf8982d04f
 keywords:
-- GetConfig (método) NAP
-- Método GetConfig NAP, interfaz INapComponentConfig
-- Interfaz INapComponentConfig NAP, método GetConfig
+- Método NAP de GetConfig
+- Método NAP de GetConfig, interfaz INapComponentConfig
+- INapComponentConfig interface NAP , GetConfig method
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3e07465d768c8902166150e53d4200e775e2597
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d8dc5495df10e3a5ff3907941644c5558aea35d29b52c8773fb56314c4a8620c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134503"
 ---
-# <a name="inapcomponentconfiggetconfig-method"></a>INapComponentConfig:: GetConfig (método)
+# <a name="inapcomponentconfiggetconfig-method"></a>INapComponentConfig::GetConfig (método)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-El método **GetConfig** recupera la configuración del componente de validador de mantenimiento del sistema (SHV).
+El **método GetConfig** recupera la configuración del componente de validador de estado del sistema (SHV).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,20 +48,20 @@ HRESULT GetConfig(
 
 <dl> <dt>
 
-*bCount* \[ enuncia\]
+*bCount* \[ out\]
 </dt> <dd>
 
-Tamaño, en bytes, del BLOB de configuración de *datos* .
+Tamaño, en bytes, del blob *de configuración* de datos.
 
 </dd> <dt>
 
-*datos* \[ de enuncia\]
+*datos* \[ out\]
 </dt> <dd>
 
-Puntero a la dirección de los datos de configuración del componente de SHV.
+Puntero a la dirección de los datos de configuración del componente SHV.
 
 > [!Note]  
-> Los datos de configuración exportados desde un equipo x86 mediante el método **GetConfig** se pueden importar en un equipo x64 mediante el método [**SetConfig**](inapcomponentconfig-setconfig.md) y viceversa. Por lo tanto, los datos de configuración deben estar en un formato independiente de la arquitectura, como XML. El uso de XML en lugar de un flujo de bytes facilita el uso de datos de configuración en diferentes arquitecturas. El implementador determina los elementos XML utilizados en los datos de configuración.
+> Los datos de configuración exportados desde una máquina x86 mediante el método **GetConfig** se pueden importar a una máquina x64 mediante el [**método SetConfig**](inapcomponentconfig-setconfig.md) y viceversa. Por lo tanto, los datos de configuración deben estar en un formato independiente de la arquitectura, como XML. El uso de XML en lugar de una secuencia de bytes facilita el uso de datos de configuración en arquitecturas diferentes. El implementador determina los elementos XML utilizados en los datos de configuración.
 
  
 
@@ -75,28 +75,28 @@ Devuelve uno de los siguientes códigos de error en función del resultado de es
 
 | Código devuelto                                                                                     | Descripción                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> </dl>           | La operación se realizó correctamente.<br/>                            |
+| <dl> <dt>**S \_ Ok (Aceptar)**</dt> </dl>           | La operación se realizó correctamente.<br/>                            |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Error de permisos, acceso denegado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Límite de recursos del sistema, no se pudo realizar la operación.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | El límite de recursos del sistema no pudo realizar la operación.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El destinatario (implementador de componentes) debe asignar el parámetro de datos mediante **CoTaskMemAlloc** y el autor de la llamada lo libera mediante **CoTaskMemFree**.
+El destinatario (implementador de componentes) debe asignar el parámetro de datos mediante **CoTaskMemAlloc** y liberarlo el autor de la llamada mediante **CoTaskMemFree.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 
 
 

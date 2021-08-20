@@ -1,9 +1,9 @@
 ---
-title: Comando MCI_PASTE (mmsystem. h)
-description: El \_ comando MCI Paste pega los datos del portapapeles en un archivo. Los dispositivos de vídeo digital reconocen este comando.
+title: MCI_PASTE comando (Mmsystem.h)
+description: El comando MCI \_ PASTE pega los datos del Portapapeles en un archivo. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: cad5799a-08ef-4e34-803a-415b937d8fbd
 keywords:
-- Comando de MCI_PASTE de Windows multimedia
+- MCI_PASTE comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b15ff0ae3d14c1df63fbd9ab0c93a85446bdf066
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3bdc7b27838236b09952a009f1cb8c7d60091afb6634bbd74fad213f013f6e2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138236"
 ---
-# <a name="mci_paste-command"></a>\_Comando de pegado de MCI
+# <a name="mci_paste-command"></a>Comando MCI \_ PASTE
 
-El \_ comando MCI Paste pega los datos del portapapeles en un archivo. Los dispositivos de vídeo digital reconocen este comando.
+El comando MCI \_ PASTE pega los datos del Portapapeles en un archivo. Los dispositivos de vídeo digital reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
+Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
 
 ```C++
@@ -50,69 +50,69 @@ Identificador de dispositivo del dispositivo MCI que va a recibir el mensaje de 
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-\_Notificación de MCI, \_ espera de MCI o \_ prueba de MCI. Para obtener información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+MCI \_ NOTIFY, MCI \_ WAIT o MCI \_ TEST. Para obtener información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> <dt>
 
 <span id="lpPaste"></span><span id="lppaste"></span><span id="LPPASTE"></span>*lpPaste*
 </dt> <dd>
 
-Puntero a una estructura de [**\_ DGV de copia de \_ \_ parms de MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_paste_parms) .
+Puntero a una [**estructura MCI \_ DGV \_ PASTE \_ PARMS.**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_paste_parms)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Las siguientes marcas adicionales se aplican a los dispositivos de vídeo digital:
 
 <dl> <dt>
 
-<span id="MCI_DGV_PASTE_AT"></span><span id="mci_dgv_paste_at"></span>\_pegar DGV \_ \_ de MCI
+<span id="MCI_DGV_PASTE_AT"></span><span id="mci_dgv_paste_at"></span>MCI \_ DGV \_ PASTE \_ AT
 </dt> <dd>
 
-Se incluye un rectángulo en el miembro **RC** de la estructura identificada por *lpPaste*. Los dos primeros valores del rectángulo especifican el punto dentro del marco para colocar la información del portapapeles. Si el alto y el ancho del rectángulo son distintos de cero, el contenido del portapapeles se escala a esas dimensiones cuando se pegan en el marco. Si se omite la marca, el pegado de MCI tiene como \_ valor predeterminado el rectángulo del marco completo.
+Se incluye un rectángulo en el **miembro rc** de la estructura identificada por *lpPaste*. Los dos primeros valores del rectángulo especifican el punto dentro del marco para colocar la información del Portapapeles. Si el alto y el ancho del rectángulo son distintos de cero, el contenido del Portapapeles se escala a esas dimensiones cuando se pegan en el marco. Si se omite la marca, MCI PASTE tiene como valor predeterminado \_ todo el rectángulo de marco.
 
 </dd> <dt>
 
-<span id="MCI_DGV_PASTE_AUDIO_STREAM"></span><span id="mci_dgv_paste_audio_stream"></span>MCI \_ DGV \_ pegar \_ secuencia de audio \_
+<span id="MCI_DGV_PASTE_AUDIO_STREAM"></span><span id="mci_dgv_paste_audio_stream"></span>MCI \_ DGV \_ PASTE \_ AUDIO \_ STREAM
 </dt> <dd>
 
-Un número de secuencia de audio se incluye en el miembro **dwAudioStream** de la estructura identificada por *lpPaste*. Si solo existe una secuencia de audio en el portapapeles, los datos de audio se pegan en la secuencia designada. Si existe más de una secuencia de audio en el portapapeles, la secuencia indica el número de inicio de las secuencias de la secuencia. Si usa esta marca y también quiere pegar vídeo, también debe usar la \_ marca MCI DGV \_ pegar vídeo de \_ la \_ secuencia. (Si no se especifica ninguna marca, todas las secuencias de audio y vídeo se pegarán a partir de la primera secuencia de audio y vídeo. Cada secuencia pegada conserva su número de secuencia original).
+Se incluye un número de secuencia de audio en el **miembro dwAudioStream** de la estructura identificada *por lpPaste*. Si solo existe una secuencia de audio en el Portapapeles, los datos de audio se pegan en la secuencia designada. Si hay más de una secuencia de audio en el Portapapeles, la secuencia indica el número inicial de las secuencias de secuencia. Si usa esta marca y también quiere pegar vídeo, también debe usar la marca MCI \_ DGV \_ PASTE VIDEO \_ \_ STREAM. (Si no se especifica ninguna marca, todas las secuencias de audio y vídeo se pegan a partir de la primera secuencia de audio y vídeo. Cada secuencia pegada conserva su número de secuencia original).
 
 </dd> <dt>
 
-<span id="MCI_DGV_PASTE_INSERT"></span><span id="mci_dgv_paste_insert"></span>\_DGV MCI \_ pegar \_ inserción
+<span id="MCI_DGV_PASTE_INSERT"></span><span id="mci_dgv_paste_insert"></span>INSERCIÓN \_ DE PEGAR DE MCI DGV \_ \_
 </dt> <dd>
 
-Los datos del portapapeles se deben insertar en el área de trabajo existente en la posición especificada por el MCI \_ para la marca. Los datos existentes después del punto de inserción se mueven en el área de trabajo para dejar espacio. Este es el valor predeterminado.
+Los datos del Portapapeles se deben insertar en el área de trabajo existente en la posición especificada por la marca MCI \_ TO. Los datos existentes después del punto de inserción se mueven al área de trabajo para hacer espacio. Este es el valor predeterminado.
 
 </dd> <dt>
 
-<span id="MCI_DGV_PASTE_OVERWRITE"></span><span id="mci_dgv_paste_overwrite"></span>SOBRESCRITURA de la copia de DGV de MCI \_ \_ \_
+<span id="MCI_DGV_PASTE_OVERWRITE"></span><span id="mci_dgv_paste_overwrite"></span>\_SOBRESCRITURA DE PEGADO DE MCI DGV \_ \_
 </dt> <dd>
 
-Los datos del portapapeles deben reemplazar los datos que ya están presentes en el área de trabajo. Los datos del área de trabajo reemplazan después del punto de inserción.
+Los datos del Portapapeles deben reemplazar los datos que ya están presentes en el área de trabajo. Los datos del área de trabajo reemplazados siguen el punto de inserción.
 
 </dd> <dt>
 
-<span id="MCI_DGV_PASTE_VIDEO_STREAM"></span><span id="mci_dgv_paste_video_stream"></span>\_secuencia de \_ vídeo de pegado de MCI DGV \_ \_
+<span id="MCI_DGV_PASTE_VIDEO_STREAM"></span><span id="mci_dgv_paste_video_stream"></span>SECUENCIA DE VÍDEO DE PEGAR DE MCI \_ DGV \_ \_ \_
 </dt> <dd>
 
-Un número de secuencia de vídeo se incluye en el miembro **dwVideoStream** de la estructura identificada por *lpPaste*. Si solo existe una secuencia de vídeo en el portapapeles, los datos de vídeo se pegan en la secuencia designada. Si existe más de una secuencia de vídeo en el portapapeles, la secuencia indica el número de inicio de las secuencias de la secuencia. Si usa esta marca y también quiere pegar audio, también debe usar la \_ marca MCI DGV \_ pegar audio de \_ la \_ secuencia. (Si no se especifica ninguna marca, todas las secuencias de audio y vídeo se pegarán a partir de la primera secuencia de audio y vídeo. Cada secuencia pegada conserva su número de secuencia original).
+Se incluye un número de secuencia de vídeo en el **miembro dwVideoStream** de la estructura identificada *por lpPaste*. Si solo existe una secuencia de vídeo en el Portapapeles, los datos de vídeo se pegan en la secuencia designada. Si hay más de una secuencia de vídeo en el Portapapeles, la secuencia indica el número inicial de las secuencias. Si usa esta marca y también quiere pegar audio, también debe usar la marca MCI \_ DGV \_ PASTE AUDIO \_ \_ STREAM. (Si no se especifica ninguna marca, todas las secuencias de audio y vídeo se pegan a partir de la primera secuencia de audio y vídeo. Cada secuencia pegada conserva su número de secuencia original).
 
 </dd> <dt>
 
-<span id="MCI_TO"></span><span id="mci_to"></span>MCI \_ a
+<span id="MCI_TO"></span><span id="mci_to"></span>MCI \_ TO
 </dt> <dd>
 
-Un valor de posición se incluye en el miembro **dwTo** de la estructura identificada por *lpPaste*. El valor de posición especifica la posición en la que se comienzan a pegar los datos en el área de trabajo. Si se omite esta marca, la posición tiene como valor predeterminado la posición actual.
+Se incluye un valor de posición en el **miembro dwTo** de la estructura identificada por *lpPaste*. El valor de posición especifica la posición para empezar a pegar datos en el área de trabajo. Si se omite esta marca, el valor predeterminado de la posición es la posición actual.
 
 </dd> </dl>
 
@@ -120,11 +120,11 @@ Un valor de posición se incluye en el miembro **dwTo** de la estructura identif
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -132,10 +132,10 @@ Un valor de posición se incluye en el miembro **dwTo** de la estructura identif
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Comandos MCI](mci-commands.md)
+[Comandos de MCI](mci-commands.md)
 </dt> </dl>
 
  

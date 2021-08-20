@@ -3,7 +3,7 @@ title: Elemento ScheduleByDay (calendarTriggerType)
 description: Especifica una programación diaria.
 ms.assetid: 5a6097ce-a855-4b08-84c5-71f06343805e
 keywords:
-- daily trigger Programador de tareas , elemento XML
+- desencadenador diario Programador de tareas elemento , XML
 - Elemento ScheduleByDay Programador de tareas
 topic_type:
 - apiref
@@ -31,7 +31,7 @@ Especifica una programación diaria. Por ejemplo, la tarea se inicia a las 8:00 
  />
 ```
 
-El **elemento ScheduleByDay** se define mediante el [**tipo complejo calendarTriggerType.**](taskschedulerschema-calendartriggertype-complextype.md)
+El tipo complejo [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) define el elemento **ScheduleByDay.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -55,7 +55,7 @@ El **elemento ScheduleByDay** se define mediante el [**tipo complejo calendarTri
 
 ## <a name="remarks"></a>Comentarios
 
-Los tipos de elementos complejos [**dailyScheduleType**](taskschedulerschema-dailyscheduletype-complextype.md) definen el elemento secundario enumerado anteriormente.
+Los tipos de elemento complejo [**dailyScheduleType**](taskschedulerschema-dailyscheduletype-complextype.md) definen el elemento secundario enumerado anteriormente.
 
 El elemento [**StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md) establece la hora del día en que se inicia la tarea.
 
@@ -80,20 +80,20 @@ El código XML siguiente define un desencadenador de calendario diario que inici
 
 
 
-Para obtener un ejemplo completo del XML para una tarea que especifica una programación diaria, vea Ejemplo de desencadenador [diario (XML).](daily-trigger-example--xml-.md)
+Para obtener un ejemplo completo del XML de una tarea que especifica una programación diaria, vea Ejemplo de desencadenador [diario (XML).](daily-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

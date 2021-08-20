@@ -3,7 +3,7 @@ title: Elemento FontControl
 description: Representa un control de fuente, que es un contenedor especializado de controles individuales dedicados a la manipulación de fuentes.
 ms.assetid: 98eddab5-28cb-4b9d-a788-ee28dd6055b1
 keywords:
-- Cinta de opciones del Windows FontControl
+- FontControl, elemento Windows Cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -55,7 +55,7 @@ Representa un [control de fuente](windowsribbon-controls-fontcontrol.md), que es
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -72,23 +72,23 @@ Representa un [control de fuente](windowsribbon-controls-fontcontrol.md), que es
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Restringido a uno de los siguientes valores: <br/> <br/>
-<dt><span></span><span></span><strong></strong> (FontOnly)<br/> </dt> <dd> Predeterminada. <br/> <img src="images/markup/screenshot-fonttype-fontonly.png" alt="Screen shot of the FontControl element with the FontOnly attribute set to true." /><br/> Establecer el <em>atributo FontType</em> en <code>FontOnly</code> habilita la funcionalidad siguiente:<br/>
+<dt><span></span><span></span><strong></strong> (FontOnly)<br/> </dt> <dd> Predeterminada. <br/> <img src="images/markup/screenshot-fonttype-fontonly.png" alt="Screen shot of the FontControl element with the FontOnly attribute set to true." /><br/> Establecer el <em>atributo FontType</em> en <code>FontOnly</code> habilita la siguiente funcionalidad:<br/>
 <ul>
-<li><strong>Cuadro combinado familia</strong> de fuentes.</li>
+<li><strong>Cuadro combinado de familia</strong> de fuentes.</li>
 <li><strong>Cuadro combinado Tamaño de</strong> fuente.</li>
-<li><p><strong>Botones</strong>de <strong>alternancia</strong>Negrita, <strong>Cursiva,</strong> <strong>Subrayado y Tachado.</strong></p>
+<li><p><strong>Botones</strong>de alternancia Negrita, <strong>Cursiva,</strong>Subrayado <strong>y Tachado.</strong> <strong></strong></p>
 <blockquote>
 [!Note]<br />
 Los <strong>botones</strong> de alternancia Tachado y Subrayado se muestran de forma predeterminada, pero se pueden ocultar estableciendo los atributos <em>IsStrikethroughButtonVisible</em> e <em>IsUnderlineButtonVisible</em> en <strong></strong> <code>false</code> .
 </blockquote>
 <p><br/></p></li>
 </ul>
-</dd> <dt><span></span><span></span><strong></strong> (FontWithColor)<br/> </dt> <dd> <img src="images/markup/screenshot-fonttype-fontwithcolor.png" alt="Screen shot of the FontControl element with the FontWithColor attribute set to true." /><br/> Establecer el <em>atributo FontType</em> en <code>FontWithColor</code> habilita la funcionalidad siguiente:<br/>
+</dd> <dt><span></span><span></span><strong></strong> (FontWithColor)<br/> </dt> <dd> <img src="images/markup/screenshot-fonttype-fontwithcolor.png" alt="Screen shot of the FontControl element with the FontWithColor attribute set to true." /><br/> Establecer el <em>atributo FontType</em> en <code>FontWithColor</code> habilita la siguiente funcionalidad:<br/>
 <ul>
-<li><strong>Cuadro combinado familia</strong> de fuentes.</li>
-<li><strong>Cuadro combinado tamaño</strong> de fuente.</li>
-<li><strong>Aumentar la fuente y</strong> <strong>reducir el tamaño</strong> de fuente de los botones de incremento y decremento.</li>
-<li><p><strong>Botones</strong>de <strong>alternancia</strong>Negrita, <strong>Cursiva,</strong> <strong>Subrayado y Tachado.</strong></p>
+<li><strong>Cuadro combinado de familia</strong> de fuentes.</li>
+<li><strong>Cuadro combinado tamaño de</strong> fuente.</li>
+<li><strong>Aumentar la fuente y</strong> <strong>reducir los botones</strong> de incremento y decremento de tamaño de fuente de fuente.</li>
+<li><p><strong>Botones</strong>de alternancia Negrita, <strong>Cursiva,</strong>Subrayado <strong>y Tachado.</strong> <strong></strong></p>
 <blockquote>
 [!Note]<br />
 Los <strong>botones</strong> de alternancia Tachado y Subrayado se muestran de forma predeterminada, pero se pueden ocultar estableciendo los atributos <em>IsStrikethroughButtonVisible</em> e <em>IsUnderlineButtonVisible</em> en <strong></strong> <code>false</code> .
@@ -102,12 +102,12 @@ Este control está oculto de forma predeterminada, pero se puede mostrar estable
 </blockquote>
 <p><br/></p></li>
 </ul>
-</dd> <dt><span></span><span></span><strong></strong> (RichFont)<br/> </dt> <dd> <img src="images/markup/screenshot-fonttype-richfont.png" alt="Screen shot of the FontControl element with the RichFont attribute set to true." /><br/> Establecer el <em>atributo FontType</em> en <code>RichFont</code> habilita la funcionalidad siguiente:<br/>
+</dd> <dt><span></span><span></span><strong></strong> (RichFont)<br/> </dt> <dd> <img src="images/markup/screenshot-fonttype-richfont.png" alt="Screen shot of the FontControl element with the RichFont attribute set to true." /><br/> Establecer el <em>atributo FontType</em> en <code>RichFont</code> habilita la siguiente funcionalidad:<br/>
 <ul>
-<li><strong>Cuadro combinado familia</strong> de fuentes.</li>
-<li><strong>Cuadro combinado tamaño</strong> de fuente.</li>
-<li><strong>Aumentar la fuente y</strong> <strong>reducir el tamaño</strong> de fuente de los botones de incremento y decremento.</li>
-<li><p><strong>Botones</strong>de <strong>alternancia</strong>Negrita, <strong>Cursiva,</strong> <strong>Subrayado y Tachado.</strong></p>
+<li><strong>Cuadro combinado de familia</strong> de fuentes.</li>
+<li><strong>Cuadro combinado tamaño de</strong> fuente.</li>
+<li><strong>Aumentar la fuente y</strong> <strong>reducir los botones</strong> de incremento y decremento de tamaño de fuente de fuente.</li>
+<li><p><strong>Botones</strong>de alternancia Negrita, <strong>Cursiva,</strong>Subrayado <strong>y Tachado.</strong> <strong></strong></p>
 <blockquote>
 [!Note]<br />
 Los <strong>botones</strong> de alternancia Tachado y Subrayado se muestran de forma predeterminada y no se pueden ocultar estableciendo los atributos <em>IsStrikethroughButtonVisible</em> e <em>IsUnderlineButtonVisible</em> en <strong></strong> <code>false</code> .
@@ -120,7 +120,7 @@ Los <strong>botones</strong> de alternancia Tachado y Subrayado se muestran de f
 Este control se muestra de forma predeterminada y no se puede ocultar estableciendo el <em>atributo IsHighlightButtonVisible</em> en <code>false</code> .
 </blockquote>
 <p><br/></p></li>
-<li><strong>Botones de</strong> <strong>alternancia de subíndice</strong> y superíndice.</li>
+<li><strong>Botones de alternancia</strong> <strong>de subíndice</strong> y superíndice.</li>
 </ul>
 </dd> </dl></td>
 </tr>
@@ -131,7 +131,7 @@ Este control se muestra de forma predeterminada y no se puede ocultar establecie
 <td><strong>Windows 8 y versiones más recientes</strong><br/> Restringido a uno de los siguientes valores: <br/>
 <blockquote>
 [!Note]<br />
-Los botones Aumentar/Reducir nunca se muestran en <a href="windowsribbon-element-minitoolbar.md"><strong>minitoolbar</strong></a>.
+Los botones Aumentar/Reducir nunca se muestran en <a href="windowsribbon-element-minitoolbar.md"><strong>la barra miniherramienta</strong></a>.
 </blockquote>
 <br/> <br/>
 <dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Valor predeterminado cuando el valor <em>de FontType</em> es <code>FontWithColor</code> igual a o <code>RichFont</code> .<br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Valor predeterminado cuando el valor <em>de FontType</em> es igual a <code>FontOnly</code> .<br/> </dd> </dl></td>
@@ -143,24 +143,24 @@ Los botones Aumentar/Reducir nunca se muestran en <a href="windowsribbon-element
 <td>Restringido a uno de los siguientes valores (0 y 1 no son válidos): <br/>
 <blockquote>
 [!Note]<br />
-El resaltado de color solo está disponible desde <strong>un FontControl</strong> cuando el valor del <em>atributo FontType</em> es <code>FontWithColor</code> igual a o <code>RichFont</code> .
+El resaltado de colores solo está disponible desde <strong>un FontControl</strong> cuando el valor del <em>atributo FontType</em> es <code>FontWithColor</code> igual a o <code>RichFont</code> .
 </blockquote>
 <br/> <br/>
-<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Valor predeterminado cuando el valor <em>de FontType</em> es <code>FontWithColor</code> igual a o <code>RichFont</code> .<br/> Válido solo cuando el valor <em>de FontType</em> es igual <code>FontWithColor</code> a o <code>RichFont</code> .<br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Valor predeterminado cuando el valor <em>de FontType</em> es igual a <code>FontOnly</code> .<br/> Válido solo cuando el valor <em>de FontType</em> es igual <code>FontOnly</code> a o <code>FontWithColor</code> .<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Valor predeterminado cuando el valor <em>de FontType</em> es <code>FontWithColor</code> igual a o <code>RichFont</code> .<br/> Solo es válido cuando el valor <em>de FontType</em> es <code>FontWithColor</code> igual a o <code>RichFont</code> .<br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Valor predeterminado cuando el valor <em>de FontType</em> es igual a <code>FontOnly</code> .<br/> Solo es válido cuando el valor <em>de FontType</em> es <code>FontOnly</code> igual a o <code>FontWithColor</code> .<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>IsStrikethroughButtonVisible</strong><br/></td>
 <td>Boolean<br/></td>
 <td>No<br/></td>
 <td>Restringido a uno de los siguientes valores (0 y 1 no son válidos): <br/> <br/>
-<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Predeterminada. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Válido solo cuando el valor <em>de FontType</em> es igual <code>FontOnly</code> a o <code>FontWithColor</code> . <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Predeterminada. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Solo es válido cuando el valor <em>de FontType</em> es <code>FontOnly</code> igual a o <code>FontWithColor</code> . <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>IsUnderlineButtonVisible</strong><br/></td>
 <td>Boolean<br/></td>
 <td>No<br/></td>
 <td>Restringido a uno de los siguientes valores (0 y 1 no son válidos): <br/> <br/>
-<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Predeterminada. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Válido solo cuando el valor <em>de FontType</em> es igual <code>FontOnly</code> a o <code>FontWithColor</code> . <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Predeterminada. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Solo es válido cuando el valor <em>de FontType</em> es <code>FontOnly</code> igual a o <code>FontWithColor</code> . <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>MaximumFontSize</strong><br/></td>
@@ -173,7 +173,7 @@ El resaltado de color solo está disponible desde <strong>un FontControl</strong
 <td><strong>MinimumFontSize</strong><br/></td>
 <td>xs:positiveInteger<br/></td>
 <td>No<br/></td>
-<td>Tamaño de punto mínimo que se mostrará.<br/> <br/>
+<td>Tamaño mínimo de punto que se mostrará.<br/> <br/>
 <dt><span></span><span></span><strong></strong> (xs:positiveInteger)<br/> </dt> <dd> Valor entero comprendido entre 1 y 9999, ambos incluidos.<br/> El valor predeterminado <strong>es 1.</strong><br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
@@ -322,7 +322,7 @@ En esta sección de código se muestran las declaraciones de control **FontContr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,22 +1,22 @@
 ---
-title: Usar la marca de MCI_NOTIFY
-description: Uso de la \_ marca de notificación de MCI
+title: Uso de la MCI_NOTIFY de datos
+description: Uso de la marca \_ MCI NOTIFY
 ms.assetid: 1d1803c8-f315-463e-ae0d-a258aa3af3c9
 keywords:
 - MCI_NOTIFY marca
-- Comando MCI_PLAY
+- MCI_PLAY comando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 472613d2e6efcd6b30c88ed64dfa7875b4742527
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6b0e7269ee7d80dd47372d9210fbdbc1332b3a88a96e2a17d6719c9945ab30aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136143"
 ---
-# <a name="using-the-mci_notify-flag"></a>Uso de la \_ marca de notificación de MCI
+# <a name="using-the-mci_notify-flag"></a>Uso de la marca \_ MCI NOTIFY
 
-En el ejemplo siguiente se muestra cómo \_ se usa la marca de notificación de MCI con el comando de [**\_ reproducción de MCI**](mci-play.md) . El identificador del procedimiento de ventana que procesará el mensaje [**mm \_ MCINOTIFY**](mm-mcinotify.md) se especifica en *hWnd*.
+En el ejemplo siguiente se muestra cómo se usa la marca \_ MCI NOTIFY con el [**comando MCI \_ PLAY.**](mci-play.md) El identificador del procedimiento de ventana que procesará el [**mensaje \_ MM MXIATIFY**](mm-mcinotify.md) se especifica en *hwnd*.
 
 
 ```C++
@@ -31,9 +31,9 @@ mciSendCommand(wMCIDeviceID, MCI_PLAY, dwFlags, (DWORD)(LPSTR)&mciPlay);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

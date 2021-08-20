@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_GET_STATUS (VFW. h)
-description: El \_ \_ \_ mensaje de estado de Cap de WM Get recupera el estado de la ventana de captura. Puede enviar este mensaje explícitamente o mediante la macro capGetStatus.
+title: WM_CAP_GET_STATUS mensaje (Vfw.h)
+description: El mensaje GET STATUS de WM \_ CAP recupera el estado de la ventana de \_ \_ captura. Puede enviar este mensaje explícitamente o mediante la macro capGetStatus.
 ms.assetid: 31349599-a52c-45ba-8f08-91008773f317
 keywords:
-- Mensaje de WM_CAP_GET_STATUS de Windows multimedia
+- WM_CAP_GET_STATUS mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58ef6590770e8a9ece3eb8abaffb4dbca0b1a4d4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 805befc3f83c79b157e040004dcf382dccaf07b240b3b846892b8fb035f826ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135161"
 ---
-# <a name="wm_cap_get_status-message"></a>\_Mensaje de \_ Estado de obtención de Cap de WM \_
+# <a name="wm_cap_get_status-message"></a>Mensaje \_ GET \_ STATUS \_ de WM CAP
 
-El mensaje de **Estado de Cap de WM \_ \_ \_ Get** recupera el estado de la ventana de captura. Puede enviar este mensaje explícitamente o mediante la macro [**capGetStatus**](/windows/desktop/api/Vfw/nf-vfw-capgetstatus) .
+El **mensaje GET STATUS \_ \_ \_ de WM CAP** recupera el estado de la ventana de captura. Puede enviar este mensaje explícitamente o mediante la [**macro capGetStatus.**](/windows/desktop/api/Vfw/nf-vfw-capgetstatus)
 
 
 ```C++
@@ -45,30 +45,30 @@ Tamaño, en bytes, de la estructura a la que hace referencia **s**.
 
 </dd> <dt>
 
-<span id="s"></span><span id="S"></span>*seg*
+<span id="s"></span><span id="S"></span>*s*
 </dt> <dd>
 
-Puntero a una estructura [**CAPSTATUS**](/windows/win32/api/vfw/ns-vfw-capstatus) .
+Puntero a una [**estructura CAPSTATUS.**](/windows/win32/api/vfw/ns-vfw-capstatus)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** si la ventana de captura no está conectada a un controlador de captura.
+Devuelve **TRUE** si se realiza **correctamente o FALSE** si la ventana de captura no está conectada a un controlador de captura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La estructura [**CAPSTATUS**](/windows/win32/api/vfw/ns-vfw-capstatus) contiene el estado actual de la ventana de captura. Dado que este estado es dinámico y cambia en respuesta a varios mensajes, la aplicación debe inicializar esta estructura después de enviar el mensaje de [**\_ \_ \_ videoformat de Cap Cap de WM**](wm-cap-dlg-videoformat.md) (o mediante la macro [**capDlgVideoFormat**](/windows/desktop/api/Vfw/nf-vfw-capdlgvideoformat) ) y siempre que necesite habilitar elementos de menú o determinar el estado real de la ventana.
+La [**estructura CAPSTATUS**](/windows/win32/api/vfw/ns-vfw-capstatus) contiene el estado actual de la ventana de captura. Dado que este estado es dinámico y cambia en respuesta a varios mensajes, la aplicación debe inicializar esta estructura después de enviar el mensaje [**\_ \_ DLG \_ VIDEOFORMAT**](wm-cap-dlg-videoformat.md) de WM CAP (o mediante la macro [**capDlgVideoFormat)**](/windows/desktop/api/Vfw/nf-vfw-capdlgvideoformat) y siempre que necesite habilitar elementos de menú o determinar el estado real de la ventana.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

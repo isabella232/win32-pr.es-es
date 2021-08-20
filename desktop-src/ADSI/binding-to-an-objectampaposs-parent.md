@@ -1,24 +1,24 @@
 ---
-title: Enlazar al elemento primario de un objeto
+title: Enlace al elemento primario de un objeto
 description: En ADSI, cada objeto de directorio se representa mediante un objeto COM ADSI que expone la interfaz IADs.
 ms.assetid: 3740e862-4cfe-484c-8c8e-3923c64cdd47
 ms.tgt_platform: multiple
 keywords:
-- ADSI ADSI, usar, enlazar con el elemento primario de un objeto
+- ADSI ADSI , using, enlace al elemento primario de un objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7d72f3b3db3af9f13892494d3855dc5dcb2a74d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3b47bfd71491c3eb0e8410f421630cec20255364b1cfc41bba7d6b48ba67fdd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118180400"
 ---
-# <a name="binding-to-an-objects-parent"></a>Enlazar al elemento primario de un objeto
+# <a name="binding-to-an-objects-parent"></a>Enlace al elemento primario de un objeto
 
-En ADSI, cada objeto de directorio se representa mediante un objeto COM ADSI que expone la interfaz [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) . Para obtener el contenedor primario de un objeto, use el método [**IADs:: get \_ Parent**](iads-property-methods.md) para obtener el ADsPath del objeto primario y, a continuación, enlace al ADsPath del elemento primario.
+En ADSI, cada objeto de directorio se representa mediante un objeto COM ADSI que expone la [**interfaz IADs.**](/windows/desktop/api/Iads/nn-iads-iads) Para obtener el contenedor primario de un objeto , use el método [**IADs::get \_ Parent**](iads-property-methods.md) para obtener el ADsPath del objeto primario y, a continuación, enlace a ADsPath del elemento primario.
 
-En el ejemplo de código de C++ siguiente se muestra cómo obtener el elemento primario de un objeto.
+En el siguiente ejemplo de código de C++ se muestra cómo obtener el elemento primario de un objeto .
 
 
 ```C++
@@ -61,9 +61,9 @@ HRESULT GetParentObject(IADs *pObject,   // Pointer to the object whose parent t
 
 
 
- 
+ 
 
- 
+ 
 
 
 

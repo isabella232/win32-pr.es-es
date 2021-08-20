@@ -18,7 +18,7 @@ La infraestructura de diagnóstico inalámbrica integrada tiene dos puntos de ex
 | Clase auxiliar primaria                                | Propósito                                                           |
 |----------------------------------------------------|-------------------------------------------------------------------|
 | Revised Native Wifi (RNWF) Extensible Helper Class | Diagnostica problemas relacionados con las extensiones de conectividad 802.11.       |
-| L2Security Extensible Helper Class                 | Diagnostica problemas relacionados con las extensiones del protocolo de seguridad de nivel 2. |
+| L2Security Extensible Helper (clase auxiliar)                 | Diagnostica problemas relacionados con las extensiones del protocolo de seguridad de nivel 2. |
 
 
 
@@ -64,7 +64,7 @@ Los dos atributos clave proporcionados por la clase auxiliar RNWF son el GUID de
 
  
 
-El atributo correspondiente para la clase auxiliar de terceros debe ser el mismo que el identificador de servicio del módulo de software correspondiente. También es el mismo nombre que el tercero debe registrarse en el registro. Los diagnósticos inalámbricos consultarán el identificador de servicio durante la sesión inalámbrica en la que se produjo el problema. La información se devolverá a NDF, que determinará si la clase auxiliar de terceros está presente y registrada y, a continuación, la llamará.
+El atributo correspondiente para la clase auxiliar de terceros debe ser el mismo que el identificador de servicio del módulo de software correspondiente. También es el mismo nombre que debe registrar el tercero en el registro. Los diagnósticos inalámbricos consultarán el identificador de servicio durante la sesión inalámbrica en la que se produjo el problema. La información se devolverá a NDF, que determinará si la clase auxiliar de terceros está presente y registrada y, a continuación, la llamará.
 
 En la tabla siguiente se enumeran los atributos correspondientes para la clase auxiliar extensible RNWF.
 
@@ -78,7 +78,7 @@ En la tabla siguiente se enumeran los atributos correspondientes para la clase a
 
  
 
-## <a name="l2security-extensible-helper-class"></a>L2Security Extensible Helper Class
+## <a name="l2security-extensible-helper-class"></a>L2Security Extensible Helper (clase auxiliar)
 
 Nombre de clase del asistente primario
 
@@ -113,7 +113,7 @@ Los dos atributos clave proporcionados por la clase auxiliar de seguridad de niv
 
  
 
-El atributo correspondiente para la clase auxiliar de terceros debe ser el mismo que el identificador de servicio del módulo de software correspondiente. También es el mismo nombre que el tercero debe registrarse en el registro. Los diagnósticos inalámbricos consultarán el identificador de servicio durante la sesión inalámbrica en la que se produjo el problema. La información se devolverá a NDF, que determinará si la clase auxiliar de terceros está presente y registrada y, a continuación, la llamará.
+El atributo correspondiente para la clase auxiliar de terceros debe ser el mismo que el identificador de servicio del módulo de software correspondiente. También es el mismo nombre que debe registrar el tercero en el registro. Los diagnósticos inalámbricos consultarán el identificador de servicio durante la sesión inalámbrica en la que se produjo el problema. La información se devolverá a NDF, que determinará si la clase auxiliar de terceros está presente y registrada y, a continuación, la llamará.
 
 En la tabla siguiente se enumeran los atributos correspondientes para la clase auxiliar extensible seguridad de capa 2.
 
@@ -131,7 +131,7 @@ En la tabla siguiente se enumeran los atributos correspondientes para la clase a
 
 **DiagnosticsID**
 
-802.11 Diagnósticos inalámbricos consultará *diagnosticsID* desde el servicio Wi-Fi nativo principal para averiguar si hay extensiones inalámbricas de terceros o módulos de seguridad instalados e implicados en la conexión. A continuación, diagnósticos inalámbricos proporcionarán hipótesis a estas clases auxiliares de terceros mediante *DiagnosticsID* como atributo de coincidencia. Las clases auxiliares de terceros deben incluirse e instalarse con el paquete de controladores asociado. *DiagnosticsID se* definirá en el archivo INF de miniportador como una clave del Registro en la [directiva AddReg.](https://msdn.microsoft.com/library/ms794514.aspx)
+802.11 Diagnósticos inalámbricos consultará *diagnosticsID* desde el servicio Wi-Fi nativo principal para averiguar si hay extensiones inalámbricas de terceros o módulos de seguridad instalados e implicados en la conexión. A continuación, diagnósticos inalámbricos proporcionarán hipótesis a estas clases auxiliares de terceros mediante *DiagnosticsID* como atributo de coincidencia. Las clases auxiliares de terceros deben incluirse e instalarse con el paquete de controladores asociado. *DiagnosticsID se* definirá en el archivo INF de miniporte como una clave del Registro en la [directiva AddReg.](https://msdn.microsoft.com/library/ms794514.aspx)
 
 ``` syntax
 HKR,Ndi\IHVExtensions, DiagnosticsID,0, "<Diagnostics ID GUID>"

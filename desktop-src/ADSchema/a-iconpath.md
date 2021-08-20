@@ -1,11 +1,11 @@
 ---
-title: Icon-Path atributo)
+title: Icon-Path atributo
 description: Origen para cargar un icono.
 ms.assetid: 0447d008-9f26-46df-9070-6df19e36d190
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Icon-Path
-- iconPath esquema de AD de atributos
+- Icon-Path esquema de AD de atributo
+- iconPath attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: feb9fd51f2ffd268488fe28ee97af7b8e2547200
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3c1663abe113c349ccf8f43677329f6d419d02415b6e7c7978922099abcf84ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118176687"
 ---
-# <a name="icon-path-attribute"></a>Icon-Path atributo)
+# <a name="icon-path-attribute"></a>Icon-Path atributo
 
 Origen para cargar un icono.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Icon-Path                                   |
-| Nombre para mostrar de LDAP | iconPath                                    |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | iconPath                                    |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.219                      |
-| System-ID-GUID    | f0f8ff83-1191-11d0-a060-00aa006c33ed        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | f0f8ff83-1191-11d0-a060-00aa006c33ed        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Origen para cargar un icono.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                               |
-| Tiene un único valor       | False                                                                                                                                                               |
-| Está indexado             | False                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                               |
+| Es de un solo valor       | Falso                                                                                                                                                               |
+| Está indexado             | Falso                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 2048                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Clases usadas en        | [**Display-Specifier**](c-displayspecifier.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Storage**](c-storage.md)<br/> |
+| Clases usadas en        | [**Display-Specifier**](c-displayspecifier.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Origen para cargar un icono.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                               |
-| Tiene un único valor       | False                                                                                                                                                               |
-| Está indexado             | False                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                               |
+| Es de un solo valor       | Falso                                                                                                                                                               |
+| Está indexado             | Falso                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 2048                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Clases usadas en        | [**Display-Specifier**](c-displayspecifier.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Storage**](c-storage.md)<br/> |
+| Clases usadas en        | [**Display-Specifier**](c-displayspecifier.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Origen para cargar un icono.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                               |
-| Tiene un único valor       | False                                                                                                                                                               |
-| Está indexado             | False                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                               |
+| Es de un solo valor       | Falso                                                                                                                                                               |
+| Está indexado             | Falso                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 2048                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Clases usadas en        | [**Display-Specifier**](c-displayspecifier.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Storage**](c-storage.md)<br/> |
+| Clases usadas en        | [**Display-Specifier**](c-displayspecifier.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Origen para cargar un icono.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                               |
-| Tiene un único valor       | False                                                                                                                                                               |
-| Está indexado             | False                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                               |
+| Es de un solo valor       | Falso                                                                                                                                                               |
+| Está indexado             | Falso                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 2048                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Clases usadas en        | [**Display-Specifier**](c-displayspecifier.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Storage**](c-storage.md)<br/> |
+| Clases usadas en        | [**Display-Specifier**](c-displayspecifier.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Origen para cargar un icono.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                               |
-| Tiene un único valor       | False                                                                                                                                                               |
-| Está indexado             | False                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                               |
+| Es de un solo valor       | Falso                                                                                                                                                               |
+| Está indexado             | Falso                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 2048                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Clases usadas en        | [**Display-Specifier**](c-displayspecifier.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Storage**](c-storage.md)<br/> |
+| Clases usadas en        | [**Display-Specifier**](c-displayspecifier.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Origen para cargar un icono.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                               |
-| Tiene un único valor       | False                                                                                                                                                               |
-| Está indexado             | False                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                               |
+| Es de un solo valor       | Falso                                                                                                                                                               |
+| Está indexado             | Falso                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 2048                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Clases usadas en        | [**Display-Specifier**](c-displayspecifier.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Storage**](c-storage.md)<br/> |
+| Clases usadas en        | [**Display-Specifier**](c-displayspecifier.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 

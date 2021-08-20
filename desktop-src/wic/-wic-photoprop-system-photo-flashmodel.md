@@ -37,15 +37,15 @@ String.
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se concilian los valores de esquemas diferentes.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="precedence-of-paths-jpeg"></a>Prioridad de las rutas de acceso (JPEG)
 
-Si el archivo está en formato JPEG, el controlador usará la ruta de acceso siguiente al leer o escribir los datos.
+Si el archivo está en formato JPEG, el controlador usará la siguiente ruta de acceso al leer o escribir los datos.
 
 
 
-| Pedido | Ruta de acceso                           | Formato de disco | Formato de datos | Requerido |
+| Pedido | Ruta de acceso                           | Formato de disco | Formato de datos | Obligatorio |
 |-------|--------------------------------|-------------|-------------|----------|
 | 1     | /xmp/MicrosoftPhoto:FlashModel | Unicode     |             | Sí      |
 
@@ -55,11 +55,11 @@ Si el archivo está en formato JPEG, el controlador usará la ruta de acceso sig
 
 ### <a name="precedence-of-paths-tiff"></a>Precedencia de rutas de acceso (TIFF)
 
-Si el archivo está en formato TIFF, el controlador usará el siguiente orden de prioridad al leer o escribir los datos.
+Si el archivo está en formato TIFF, el controlador usará el orden de prioridad siguiente al leer o escribir los datos.
 
 
 
-| Pedido | Ruta de acceso                               | Formato de disco | Formato de datos | Requerido |
+| Pedido | Ruta de acceso                               | Formato de disco | Formato de datos | Obligatorio |
 |-------|------------------------------------|-------------|-------------|----------|
 | 1     | /ifd/xmp/MicrosoftPhoto:FlashModel | Unicode     |             | Sí      |
 

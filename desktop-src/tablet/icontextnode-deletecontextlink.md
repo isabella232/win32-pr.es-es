@@ -1,7 +1,7 @@
 ---
 description: Elimina un objeto IContextLink de la colección de vínculos del objeto IContextNode.
 ms.assetid: c4a69a74-30d6-4099-a02a-13c8a2e52bc7
-title: IContextNode::D método eleteContextLink (IACom. h)
+title: Método IContextNode::D eleteContextLink (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: ac5676635bec961129078ed8689169d1a81cd87d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39a36ed8a74accdc7da3eed4c98a96d9ee6abbaa4f52b5c71c367250321d28b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118044846"
 ---
-# <a name="icontextnodedeletecontextlink-method"></a>IContextNode::D método eleteContextLink
+# <a name="icontextnodedeletecontextlink-method"></a>IContextNode::D eleteContextLink (método)
 
-Elimina un objeto [**IContextLink**](icontextlink.md) de la colección de vínculos del objeto [**IContextNode**](icontextnode.md) .
+Elimina un objeto [**IContextLink**](icontextlink.md) de la colección de vínculos del objeto [**IContextNode.**](icontextnode.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,30 +39,30 @@ HRESULT DeleteContextLink(
 
 <dl> <dt>
 
-*pContextLinkToDelete* \[ de\]
+*pContextLinkToDelete* \[ En\]
 </dt> <dd>
 
-Objeto [**IContextLink**](icontextlink.md) que se va a eliminar.
+Objeto [**IContextLink que**](icontextlink.md) se eliminará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un vínculo de contexto tiene un nodo de origen y un nodo de destino (vea [**IContextLink:: GetSourceNode**](icontextlink-getsourcenode.md) y [**IContextLink:: GetDestinationNode**](icontextlink-getdestinationnode.md)). Este método quita el [**IContextLink**](icontextlink.md) de la colección de los nodos de origen y de destino de los vínculos de contexto (vea [**IContextNode:: GetContextLinks**](icontextnode-getcontextlinks.md)).
+Un vínculo de contexto tiene un nodo de origen y un nodo de destino (vea [**IContextLink::GetSourceNode**](icontextlink-getsourcenode.md) e [**IContextLink::GetDestinationNode).**](icontextlink-getdestinationnode.md) Este método quita [**IContextLink**](icontextlink.md) de la colección de vínculos de contexto de los nodos de origen y destino (vea [**IContextNode::GetContextLinks).**](icontextnode-getcontextlinks.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -83,7 +83,7 @@ Un vínculo de contexto tiene un nodo de origen y un nodo de destino (vea [**ICo
 [**IContextNode::GetContextLinks**](icontextnode-getcontextlinks.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

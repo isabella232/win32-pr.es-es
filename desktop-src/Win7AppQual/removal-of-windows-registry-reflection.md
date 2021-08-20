@@ -1,17 +1,17 @@
 ---
-description: Eliminación de la reflexión del Registro de Windows
+description: Eliminación de la Windows del Registro
 ms.assetid: 4b42d44d-cde8-4d96-96c5-24b7ab7e4cec
-title: Eliminación de la reflexión del Registro de Windows
+title: Eliminación de la Windows del Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eeab0109cbbac988c89d6add91fa899cea9169ad
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4a9fcd31686754f9bf2d92994bec4a53b39edaf5d94b34f464e1dfdbf1179c0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118328984"
 ---
-# <a name="removal-of-windows-registry-reflection"></a>Eliminación de la reflexión del Registro de Windows
+# <a name="removal-of-windows-registry-reflection"></a>Eliminación de la Windows del Registro
 
 ## <a name="platform"></a>Plataforma
 
@@ -37,9 +37,9 @@ ms.locfileid: "108116263"
 
 ## <a name="description"></a>Descripción
 
-El proceso de reflexión del Registro copia las claves y los valores del Registro entre dos vistas del Registro para mantenerlos sincronizados. En instalaciones anteriores de Windows de 64 bits, el proceso reflejaba un subconjunto de las claves del Registro redirigidas entre las vistas de 32 y 64 bits. Sin embargo, la implementación de esto produjo algunas incoherencias en el estado del registro. (Para obtener más información sobre la reflexión del Registro, consulte el artículo de MSDN correspondiente en la sección Vínculos a *otros* recursos a continuación).
+El proceso de reflexión del Registro copia las claves y los valores del Registro entre dos vistas del Registro para mantenerlos sincronizados. En instalaciones anteriores de 64 bits de Windows, el proceso reflejaba un subconjunto de las claves del Registro redirigidas entre las vistas de 32 y 64 bits. Sin embargo, la implementación de esto produjo algunas incoherencias en el estado del registro. (Para obtener más información sobre la reflexión del Registro, consulte el artículo de MSDN correspondiente en la sección *Vínculos* a otros recursos a continuación).
 
-A partir de Windows 7, hemos quitado completamente la reflexión del Registro y combinado las claves que solían reflejarse:
+A partir Windows 7, hemos quitado completamente la reflexión del Registro y combinado las claves que solían reflejarse:
 
 -   Clases de software HKEY \_ LOCAL \_ MACHINE \\ \\
 -   HKEY \_ LOCAL \_ MACHINE \\ Software \\ Microsoft \\ COM3
@@ -49,7 +49,7 @@ A partir de Windows 7, hemos quitado completamente la reflexión del Registro y 
 -   Clases de software HKEY \_ USERS \\ \* \\ \\
 -   Clases HKEY \_ USERS \\ \* \_
 
-De hecho, esto proporciona el mismo comportamiento de reflexión, ya que los cambios en estas claves están disponibles inmediatamente para las aplicaciones de 32 y 64 bits.
+De hecho, esto proporciona el mismo comportamiento de reflexión, ya que los cambios en estas claves están disponibles inmediatamente para aplicaciones de 32 y 64 bits.
 
 Las claves reflejadas condicionalmente permanecen divididas:
 
@@ -58,7 +58,7 @@ Las claves reflejadas condicionalmente permanecen divididas:
 -   HKEY \_ USERS Clases de software \\ \* \\ \\ \\ CLSID
 -   Interfaz de clases \_ \\ \* \\ de software \\ \\ HKEY USERS
 -   \_CLSID de \\ \* \_ clases \\ HKEY USERS
--   HKEY \_ USERS \\ \* \_ (interfaz de \\ clases)
+-   Interfaz de clases \_ HKEY USERS \\ \* \_ \\
 
 Se usan para mantener los datos que no se deben compartir entre aplicaciones de 32 y 64 bits.
 
@@ -84,9 +84,9 @@ Aplique una de las siguientes opciones si se basa en la reflexión del Registro 
 
 Aplique una de las siguientes opciones si se basa en las funciones RegDisableReflectionKey para deshabilitar la reflexión del Registro:
 
--   Crear claves en ambas vistas explícitamente durante la instalación
+-   Creación explícita de claves en ambas vistas durante la instalación
 -   Sacar las claves del ámbito de las claves reflejadas
--   Uso de subclaves específicas de la plataforma (como x86, amd64 e ia64) para separar los datos específicos de bits
+-   Usar subclaves específicas de la plataforma (como x86, amd64 e ia64) para separar datos específicos de bits
 
 ## <a name="links-to-other-resources"></a>Vínculos a otros recursos
 

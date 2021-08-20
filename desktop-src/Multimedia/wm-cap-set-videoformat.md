@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_SET_VIDEOFORMAT (VFW. h)
-description: El \_ \_ \_ mensaje de videoformat del conjunto de Cap de WM establece el formato de los datos de vídeo capturados. Puede enviar este mensaje explícitamente o mediante la macro capSetVideoFormat.
+title: WM_CAP_SET_VIDEOFORMAT mensaje (Vfw.h)
+description: El mensaje \_ WM CAP \_ SET \_ VIDEOFORMAT establece el formato de los datos de vídeo capturados. Puede enviar este mensaje explícitamente o mediante la macro capSetVideoFormat.
 ms.assetid: 4f9cf90d-7ccb-4fc7-aad5-3d7e082526be
 keywords:
-- Mensaje de WM_CAP_SET_VIDEOFORMAT de Windows multimedia
+- WM_CAP_SET_VIDEOFORMAT mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ba6154ec1532bd83f482eb81a0e286795aa3341
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c543f613fedf54518579829d6825bd20dc4738ae03cb77f0996f8a58a123cb76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135032"
 ---
-# <a name="wm_cap_set_videoformat-message"></a>\_Mensaje de \_ videoformat del conjunto de Cap de WM \_
+# <a name="wm_cap_set_videoformat-message"></a>Mensaje \_ \_ VIDEOFORMAT de WM CAP SET \_
 
-El mensaje de **\_ \_ \_ videoformat del conjunto de Cap de WM** establece el formato de los datos de vídeo capturados. Puede enviar este mensaje explícitamente o mediante la macro [**capSetVideoFormat**](/windows/desktop/api/Vfw/nf-vfw-capsetvideoformat) .
+El **mensaje WM CAP SET \_ \_ \_ VIDEOFORMAT** establece el formato de los datos de vídeo capturados. Puede enviar este mensaje explícitamente o mediante la [**macro capSetVideoFormat.**](/windows/desktop/api/Vfw/nf-vfw-capsetvideoformat)
 
 
 ```C++
@@ -48,15 +48,15 @@ Tamaño, en bytes, de la estructura a la que hace referencia **s**.
 <span id="psVideoFormat"></span><span id="psvideoformat"></span><span id="PSVIDEOFORMAT"></span>*psVideoFormat*
 </dt> <dd>
 
-Puntero a una estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) .
+Puntero a una [**estructura BITMAPINFO.**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Dado que los formatos de vídeo son específicos del dispositivo, las aplicaciones deben comprobar el valor devuelto de esta función para determinar si el controlador acepta el formato.
 
@@ -68,7 +68,7 @@ Dado que los formatos de vídeo son específicos del dispositivo, las aplicacion
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

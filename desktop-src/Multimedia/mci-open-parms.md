@@ -1,9 +1,9 @@
 ---
-title: MCI_OPEN_PARMS estructura (Mciapi. h)
-description: La \_ estructura MCI Open \_ parms contiene información para el \_ comando MCI Open.
+title: MCI_OPEN_PARMS estructura (Mciapi.h)
+description: La estructura MCI \_ OPEN \_ PARMS contiene información para el comando MCI \_ OPEN.
 ms.assetid: d22cefeb-3d49-47cf-a946-f73c77ae43fd
 keywords:
-- Estructura de MCI_OPEN_PARMS de Windows multimedia
+- MCI_OPEN_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 658f97a9b2677347c9818265c1f05c2115c95fdd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f80d01f41db904cea583f83aa446e718d1067e99e4d8bac3a3c6791ef5696f83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138310"
 ---
-# <a name="mci_open_parms-structure"></a>\_Estructura parms abierta de MCI \_
+# <a name="mci_open_parms-structure"></a>Estructura \_ MCI OPEN \_ PARMS
 
-La estructura **MCI \_ Open \_ parms** contiene información para el comando [**MCI \_ Open**](mci-open.md) .
+La **estructura MCI \_ OPEN \_ PARMS** contiene información para el [**comando MCI \_ OPEN.**](mci-open.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
@@ -61,14 +61,14 @@ Identificador devuelto a la aplicación.
 **lpstrDeviceType**
 </dt> <dd>
 
-Nombre o identificador constante del tipo de dispositivo. (El nombre del dispositivo normalmente se obtiene del registro o del archivo de SYSTEM.INI). Si este miembro es una constante, puede ser uno de los valores enumerados en [tipos de dispositivo MCI](mci-device-types.md).
+Nombre o identificador constante del tipo de dispositivo. (El nombre del dispositivo normalmente se obtiene del registro o SYSTEM.INI archivo). Si este miembro es una constante, puede ser uno de los valores enumerados en [Tipos de dispositivo de MCI.](mci-device-types.md)
 
 </dd> <dt>
 
 **lpstrElementName**
 </dt> <dd>
 
-Elemento de dispositivo (suele ser una ruta de acceso).
+Elemento Device (a menudo una ruta de acceso).
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Alias de dispositivo opcional.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -87,11 +87,11 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -99,13 +99,13 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
 </dt> <dt>
 
-[**MCI \_ abierto**](mci-open.md)
+[**MCI \_ OPEN**](mci-open.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

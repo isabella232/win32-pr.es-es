@@ -1,11 +1,11 @@
 ---
-title: Método IVMVirtualMachineEvents onreset (VPCCOMInterfaces. h)
-description: Recibe la notificación de que una máquina virtual se ha restablecido.
+title: Método OnReset IVMVirtualMachineEvents (VPCCOMInterfaces.h)
+description: Recibe la notificación de que se ha restablecido una máquina virtual.
 ms.assetid: 10a66aea-9a8f-4663-8eb6-cc35f361e43f
 keywords:
-- Método onreset Virtual PC
-- Método onreset Virtual PC, interfaz IVMVirtualMachineEvents
-- Interfaz IVMVirtualMachineEvents Virtual PC, método onreset
+- Equipo virtual del método OnReset
+- Método OnReset virtual PC , interfaz IVMVirtualMachineEvents
+- Interfaz IVMVirtualMachineEvents Pc virtual, método OnReset
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6345d0e925777fbecf42247b3e3064b9f993c7c9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4101885469de59a7cd2740dc07db44101ce130df037540306f4afdab78c80fd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118122908"
 ---
-# <a name="ivmvirtualmachineeventsonreset-method"></a>IVMVirtualMachineEvents:: onreset (método)
+# <a name="ivmvirtualmachineeventsonreset-method"></a>IVMVirtualMachineEvents::OnReset (método)
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Recibe la notificación de que una máquina virtual se ha restablecido.
+Recibe la notificación de que se ha restablecido una máquina virtual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,23 +44,23 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se llama a este método cuando se ha restablecido la máquina virtual. El programa cliente debe implementar este método de interfaz para recibir la notificación del \_ evento de restablecimiento de vmVirtualMachineEvent procedente de [**IVMVirtualMachine**](ivmvirtualmachine.md).
+Se llama a este método cuando se ha restablecido la máquina virtual. El programa cliente debe implementar este método de interfaz para recibir una notificación del evento vmVirtualMachineEvent Reset que se origina \_ en [**IVMVirtualMachine**](ivmvirtualmachine.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 | IID<br/>                      | DIID \_ IVMVirtualMachineEvents se define como 9d84f560-bb67-4961-bd12-a4da780c67e4<br/>   |
 
 

@@ -1,19 +1,19 @@
 ---
-description: Muchas funciones devuelven una cantidad de datos potencialmente grande a una dirección proporcionada como uno de los parámetros por la aplicación.
+description: Muchas funciones devuelven una cantidad potencialmente grande de datos a una dirección proporcionada como uno de los parámetros por la aplicación.
 ms.assetid: ef99edef-39b2-4d78-9c01-13720215d47f
-title: Recuperación de datos de longitud desconocida
+title: Recuperar datos de longitud desconocida
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd30620018f3c4871bd27299c3dd21ae42936c51
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9a71a30e935dd20bee6cce8f6dbc00a3b61478a90f4ea2139d7daaddc6894da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117975019"
 ---
-# <a name="retrieving-data-of-unknown-length"></a>Recuperación de datos de longitud desconocida
+# <a name="retrieving-data-of-unknown-length"></a>Recuperar datos de longitud desconocida
 
-Muchas funciones devuelven una cantidad de datos potencialmente grande a una dirección proporcionada como uno de los parámetros por la aplicación. En todos estos casos, la operación se realiza de manera similar, si no es idéntica. El parámetro que apunta a la ubicación de los datos devueltos usará la Convención de notación en la que PB o PV son los dos primeros caracteres del nombre del parámetro. Otro parámetro tendrá PCB como los tres primeros caracteres del nombre del parámetro. Este parámetro representa el tamaño, en bytes, de los datos que se devolverán a la ubicación PB o PV. Por ejemplo, considere la siguiente especificación de función:
+Muchas funciones devuelven una cantidad potencialmente grande de datos a una dirección proporcionada como uno de los parámetros por la aplicación. En todos estos casos, la operación se realiza de forma similar, si no idéntica. El parámetro que apunta a la ubicación de los datos devueltos usará la convención de notación donde pb o pv son los dos primeros caracteres del nombre del parámetro. Otro parámetro tendrá byte como los tres primeros caracteres del nombre del parámetro. Este parámetro representa el tamaño, en bytes, de los datos que se devolverán a la ubicación pb o pv. Por ejemplo, considere la siguiente especificación de función:
 
 ``` syntax
 #include <windows.h>
@@ -26,23 +26,23 @@ BOOL WINAPI SomeFunction(
 );
 ```
 
-En este ejemplo, *pbData* es un puntero a la ubicación donde se devolverán los datos y *pcbData* es el tamaño, en bytes, de los datos devueltos.
+En este ejemplo, *pbData* es un puntero a la ubicación donde se devolverán los datos y *byteData* es el tamaño, en bytes, de los datos devueltos.
 
 > [!Note]  
-> A veces, el parámetro complementario del parámetro PCB puede llevar un prefijo ligeramente diferente, como p o PV. Además, para los parámetros complementarios que usan la combinación de prefijos pwsz y PCCh, el parámetro PCCh es el recuento, en caracteres ([*Unicode*](../secgloss/u-gly.md) o [*ASCII*](../secgloss/a-gly.md), según corresponda), de los datos devueltos.
+> A veces, el parámetro complementario al parámetro pvc puede llevar un prefijo ligeramente diferente, como p o pv. Además, para los parámetros complementarios que usan la combinación de prefijos pwsz y pcch, el parámetro pcch es el recuento, en caracteres [*(Unicode*](../secgloss/u-gly.md) o [*ASCII,*](../secgloss/a-gly.md)según corresponda), de los datos devueltos.
 
  
 
-Si el búfer especificado por el parámetro *pbData* no es lo suficientemente grande como para contener los datos devueltos, la función establece el error \_ más código de \_ datos (que se puede ver mediante una llamada a la función [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) ) y almacena el tamaño de búfer necesario, en bytes, en la variable a la que apunta *pcbData*.
+Si el búfer especificado por el parámetro *pbData* no es lo suficientemente grande como para contener los datos devueltos, la función establece el código ERROR MORE DATA (que se puede ver llamando a la función \_ \_ [**GetLastError)**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) y almacena el tamaño de búfer necesario, en bytes, en la variable a la que apunta *byteData.*
 
-Si **null** es INPUT para *pbData* y *pcbData* no es **null**, no se devuelve ningún error y la función devuelve el tamaño, en bytes, del búfer de memoria necesario en la variable a la que apunta *pcbData*. Esto permite que una aplicación determine el tamaño de y la mejor manera de asignar un búfer para los datos devueltos.
+Si **null** es la entrada para *pbData* y *byteData* no es **NULL,** no se devuelve ningún error y la función devuelve el tamaño, en bytes, del búfer de memoria necesario en la variable a la que *apunta byteData*. Esto permite a una aplicación determinar el tamaño y la mejor manera de asignar un búfer para los datos devueltos.
 
 > [!Note]  
-> Cuando se especifica **null como valor** de *pbData* para determinar el tamaño necesario para asegurarse de que los datos devueltos caben en el búfer especificado, es posible que la segunda llamada a la función que rellena el búfer con los datos deseados no use todo el búfer. Después de la segunda llamada, el tamaño real de los datos devueltos se encuentra en *pcbData*. Use este tamaño al procesar los datos.
+> Cuando se introduce **NULL** para *pbData* a fin de determinar el tamaño necesario para asegurarse de que los datos devueltos se ajusten al búfer especificado, es posible que la segunda llamada a la función que rellena el búfer con los datos deseados no use todo el búfer. Después de la segunda llamada, el tamaño real de los datos devueltos se encuentra en *kbData*. Use este tamaño al procesar los datos.
 
  
 
-En el ejemplo siguiente se muestra cómo se pueden implementar los parámetros de entrada y salida para este fin.
+En el ejemplo siguiente se muestra cómo se pueden implementar los parámetros de entrada y salida para este propósito.
 
 
 ```C++

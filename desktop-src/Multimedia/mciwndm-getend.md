@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_GETEND (VFW. h)
-description: El \_ mensaje MCIWNDM GETEND recupera la ubicación del final del contenido de un dispositivo MCI o un archivo. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetEnd.
+title: MCIWNDM_GETEND mensaje (Vfw.h)
+description: El mensaje GETEND de MCIWNDM recupera la ubicación del final del contenido de un archivo o \_ dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetEnd.
 ms.assetid: 3fa45928-af63-4f87-835d-f409011a797e
 keywords:
-- Mensaje de MCIWNDM_GETEND de Windows multimedia
+- MCIWNDM_GETEND mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00d18057619e31fa9b22d7f6354527c394c02798
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 880b1a464d671ca57e1955d4131776a999d1fb6bd8f17ad5d08139abc64a757b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137736"
 ---
-# <a name="mciwndm_getend-message"></a>MCIWNDM \_ GETEND
+# <a name="mciwndm_getend-message"></a>Mensaje GETEND de MCIWNDM \_
 
-El mensaje **MCIWNDM \_ GETEND** recupera la ubicación del final del contenido de un dispositivo MCI o un archivo. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetEnd**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetend) .
+El **mensaje \_ GETEND de MCIWNDM** recupera la ubicación del final del contenido de un archivo o dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetEnd.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetend)
 
 
 ```C++
@@ -42,11 +42,11 @@ Devuelve la ubicación en el formato de hora actual.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: MIM_DATA mensaje (Mmsystem.h)
-description: El mensaje MIM DATA se envía a una función de devolución de llamada de entrada DE MIDI cuando un dispositivo de entrada MIDI recibe un \_ mensaje MIDI.
+description: El MIM DATA se envía a una función de devolución de llamada de entrada DE MIDI cuando un dispositivo de entrada DE LÍNEA recibe un \_ mensaje MIDI.
 ms.assetid: 966aab84-420a-42ce-9989-da5910ced9c0
 keywords:
-- MIM_DATA mensaje multimedia de Windows
+- MIM_DATA mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a11d2701d488fe29ae6d0bc0742c32c803b28076
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: bebbb9ca6016706605de8fed29e5fa5ebaf6055f4a730fb563323f306606b866
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137294"
 ---
-# <a name="mim_data-message"></a>Mensaje DE \_ DATOS DE MIM
+# <a name="mim_data-message"></a>\_MIM Mensaje DATA
 
-El **mensaje MIM \_ DATA se** envía a una función de devolución de llamada de entrada DE MIDI cuando un dispositivo de entrada DE LÍNEA recibe un mensaje DE MIDI.
+El **MIM \_ DATA** se envía a una función de devolución de llamada de entrada DE MIDI cuando un dispositivo de entrada DE LÍNEA recibe un mensaje DE MIDI.
 
 
 ```C++
@@ -63,7 +63,7 @@ Los dos bytes de datos de MIDI son opcionales, dependiendo del byte de estado de
 <span id="dwTimestamp"></span><span id="dwtimestamp"></span><span id="DWTIMESTAMP"></span>*dwTimestamp*
 </dt> <dd>
 
-Hora a la que el controlador de dispositivo de entrada recibió el mensaje. La marca de tiempo se especifica en milisegundos, empezando en cero cuando se llamó [**a la función midiInStart.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinstart)
+Hora a la que el controlador del dispositivo de entrada recibió el mensaje. La marca de tiempo se especifica en milisegundos, empezando en cero cuando se llamó [**a la función midiInStart.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinstart)
 
 </dd> </dl>
 
@@ -71,7 +71,7 @@ Hora a la que el controlador de dispositivo de entrada recibió el mensaje. La m
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los mensajes DE MIDI recibidos de un puerto de entrada de MIDI tienen el estado de ejecución deshabilitado; cada mensaje se expande para incluir el byte de estado DE MIDI.
 
@@ -89,7 +89,7 @@ Este mensaje no se envía cuando se recibe un mensaje exclusivo del sistema MIDI
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

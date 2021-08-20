@@ -4,16 +4,16 @@ ms.assetid: 7f339ee8-01e6-4bbb-8563-020ff0e02499
 title: Configuración de estados DXVA-HD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91766e3eb10399d908ab361e13db4b94fe07b653
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 293057c5452eec45b8377b5cddbe8fe959214f5f11f445171ecf22ba752242c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118057821"
 ---
 # <a name="setting-dxva-hd-states"></a>Configuración de estados DXVA-HD
 
-Durante el procesamiento de vídeo, el dispositivo de alta definición de aceleración de vídeo (DXVA-HD) de Microsoft DirectX mantiene un estado persistente de un fotograma al siguiente. Cada estado tiene un valor predeterminado documentado. Después de configurar el dispositivo, establezca los estados que quiera cambiar de sus valores predeterminados. Antes de procesar cada fotograma, actualice los estados que deben cambiar.
+Durante el procesamiento de vídeo, el dispositivo de alta definición de aceleración de vídeo (DXVA-HD) de Microsoft DirectX mantiene un estado persistente de un fotograma a otro. Cada estado tiene un valor predeterminado documentado. Después de configurar el dispositivo, establezca los estados que quiera cambiar de sus valores predeterminados. Antes de procesar cada fotograma, actualice los estados que deben cambiar.
 
 > [!Note]  
 > Este diseño difiere de DXVA-VP. En DXVA-VP, la aplicación debe especificar todos los parámetros de VP con cada fotograma.
@@ -22,8 +22,8 @@ Durante el procesamiento de vídeo, el dispositivo de alta definición de aceler
 
 Los estados del dispositivo se divide en dos categorías:
 
--   *Los estados* de flujo aplican cada flujo de entrada por separado. Puede aplicar diferentes configuraciones a cada secuencia.
--   *Los estados de Blit* se aplican globalmente a todo el blit de procesamiento de vídeo.
+-   *Los estados* de secuencia aplican cada flujo de entrada por separado. Puede aplicar diferentes configuraciones a cada secuencia.
+-   *Los estados de Blit* se aplican globalmente a todo el procesamiento de vídeo blit.
 
 Se definen los siguientes estados de secuencia.
 
@@ -32,8 +32,8 @@ Se definen los siguientes estados de secuencia.
 | Estado de la secuencia                                   | Descripción                                                                                                     |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | **DXVAHD \_ STREAM \_ STATE \_ D3DFORMAT**           | Formato de vídeo de entrada.                                                                                             |
-| **FORMATO DE MARCO \_ DE ESTADO \_ DE FLUJO \_ DXVAHD \_**       | Entrelazado.                                                                                                    |
-| **ESPACIO DE COLOR \_ DE ENTRADA DE ESTADO DE \_ FLUJO \_ \_ DXVAHD \_** | Espacio de color de entrada. Este estado especifica el intervalo de colores RGB y la matriz de transferencia YCbCr para el flujo de entrada. |
+| **FORMATO DE MARCO DE \_ ESTADO DE \_ FLUJO \_ DXVAHD \_**       | Entrelazado.                                                                                                    |
+| **ESPACIO DE COLOR DE \_ ENTRADA DE ESTADO DE \_ FLUJO \_ \_ DXVAHD \_** | Espacio de color de entrada. Este estado especifica el intervalo de colores RGB y la matriz de transferencia YCbCr para el flujo de entrada. |
 | **VELOCIDAD DE SALIDA DEL ESTADO DE FLUJO DXVAHD \_ \_ \_ \_**        | Velocidad de fotogramas de salida. Este estado controla la conversión de velocidad de fotogramas.                                                   |
 | **DXVAHD \_ STREAM \_ STATE \_ SOURCE \_ RECT**        | Rectángulo de origen.                                                                                               |
 | **DXVAHD \_ STREAM \_ STATE \_ DESTINATION \_ RECT**   | Rectángulo de destino.                                                                                          |
@@ -47,25 +47,25 @@ Se definen los siguientes estados de secuencia.
 
  
 
-Se definen los siguientes estados blit:
+Se definen los siguientes estados de blit:
 
 
 
 | Estado de Blit                                   | Descripción                                                                  |
 |----------------------------------------------|------------------------------------------------------------------------------|
 | **DXVAHD \_ BLT \_ STATE \_ TARGET \_ RECT**         | Rectángulo de destino.                                                            |
-| **COLOR DE FONDO DEL \_ ESTADO BLT DE DXVAHD \_ \_ \_**    | Color de fondo.                                                            |
-| **ESPACIO DE COLOR DE SALIDA DEL \_ ESTADO BLT DE DXVAHD \_ \_ \_ \_** | Espacio de color de salida.                                                          |
-| **RELLENO ALFA DE \_ ESTADO BLT DE DXVAHD \_ \_ \_**          | Modo de relleno alfa.                                                             |
-| **CONSTRICCIÓN DEL \_ ESTADO \_ BLT DE DXVAHD \_**         | Constricción. Este estado controla si el dispositivo reduce el muestreo de la salida. |
+| **COLOR DE FONDO DE \_ ESTADO BLT DXVAHD \_ \_ \_**    | Color de fondo.                                                            |
+| **ESPACIO DE COLOR DE SALIDA \_ DE ESTADO BLT DXVAHD \_ \_ \_ \_** | Espacio de color de salida.                                                          |
+| **DXVAHD \_ BLT \_ STATE \_ ALPHA \_ FILL**          | Modo de relleno alfa.                                                             |
+| **CONSTRICCIÓN DEL \_ ESTADO BLT \_ DE DXVAHD \_**         | Constricción. Este estado controla si el dispositivo reduce la muestra de la salida. |
 
 
 
  
 
-Para establecer un estado de secuencia, llame al [**método IDXVAHD \_ VideoProcessor::SetVideoProcessStreamState.**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_videoprocessor-setvideoprocessstreamstate) Para establecer un estado blit, llame al [**método IDXVAHD \_ VideoProcessor::SetVideoProcessBltState.**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_videoprocessor-setvideoprocessbltstate) En ambos métodos, un valor de enumeración especifica el estado que se debe establecer. Los datos de estado se entregan mediante una estructura de datos específica del estado, que la aplicación convierte a un **tipo void. \***
+Para establecer un estado de secuencia, llame al [**método IDXVAHD \_ VideoProcessor::SetVideoProcessStreamState.**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_videoprocessor-setvideoprocessstreamstate) Para establecer un estado blit, llame al método [**IDXVAHD \_ VideoProcessor::SetVideoProcessBltState.**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_videoprocessor-setvideoprocessbltstate) En ambos métodos, un valor de enumeración especifica el estado que se debe establecer. Los datos de estado se entregan mediante una estructura de datos específica del estado, que la aplicación convierte a un **tipo void. \***
 
-En el ejemplo de código siguiente se establece el formato de entrada y el rectángulo de destino para la secuencia 0 y el color de fondo en negro.
+En el ejemplo de código siguiente se establece el formato de entrada y el rectángulo de destino para el flujo 0 y el color de fondo en negro.
 
 
 ```C++

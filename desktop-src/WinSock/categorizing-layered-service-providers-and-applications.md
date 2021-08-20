@@ -14,31 +14,31 @@ ms.locfileid: "118322396"
 # <a name="categorizing-layered-service-providers-and-apps"></a>Categorización de aplicaciones y proveedores de servicios en capas
 
 > [!Note]  
-> Los proveedores de servicios por capas están en desuso. A partir de Windows 8 y Windows Server 2012, use [Windows de filtrado.](../fwp/windows-filtering-platform-start-page.md)
+> Los proveedores de servicios por capas están en desuso. A partir de Windows 8 y Windows Server 2012, use [Windows filtering platform](../fwp/windows-filtering-platform-start-page.md).
 
  
 
-Winsock 2 admite protocolos por capas. Un protocolo por capas es aquel que implementa solo funciones de comunicaciones de nivel superior, a la vez que se basa en una pila de transporte subyacente para el intercambio real de datos con un punto de conexión remoto. Un ejemplo de un protocolo por capas o un proveedor de servicios por capas sería una capa de seguridad que agrega el protocolo al proceso de establecimiento de la conexión con el fin de realizar la autenticación y establecer un esquema de cifrado mutuamente acordado. Este protocolo de seguridad normalmente requeriría los servicios de un protocolo de transporte confiable subyacente, como TCP o SPX. El término protocolo base implementado por el proveedor base hace referencia a un proveedor Winsock que implementa un protocolo como TCP o SPX que es capaz de realizar comunicaciones de datos con un punto de conexión remoto. El término protocolo por capas se usa para describir un protocolo que no puede ser independiente. Estos protocolos por capas se instalan como proveedores de servicios en capas (LSP) de Winsock.
+Winsock 2 admite protocolos por capas. Un protocolo por capas es aquel que implementa solo funciones de comunicaciones de nivel superior, al tiempo que se basa en una pila de transporte subyacente para el intercambio real de datos con un punto de conexión remoto. Un ejemplo de un protocolo por capas o un proveedor de servicios por capas sería una capa de seguridad que agrega el protocolo al proceso de establecimiento de la conexión con el fin de realizar la autenticación y establecer un esquema de cifrado acordado mutuamente. Por lo general, este tipo de protocolo de seguridad requeriría los servicios de un protocolo de transporte confiable subyacente, como TCP o SPX. El término protocolo base implementado por el proveedor base hace referencia a un proveedor winsock que implementa un protocolo como TCP o SPX que es capaz de realizar comunicaciones de datos con un punto de conexión remoto. El término protocolo por capas se usa para describir un protocolo que no puede ser independiente. Estos protocolos por capas se instalan como proveedores de servicios en capas (LSP) de Winsock.
 
-Un ejemplo de un LSP es el proveedor de servicios de cliente de Firewall de Microsoft instalado como parte del servidor de autenticación y secutidad de Internet (ISA) en los clientes. El proveedor de servicios cliente de Firewall de Microsoft se instala a través de los proveedores base de Winsock para TCP y UDP. Una biblioteca de vínculos dinámicos (DLL) en el software cliente de firewall de ISA se convierte en un proveedor de servicios en capas de Winsock que todas las aplicaciones Winsock usan de forma transparente. De este modo, el LSP del cliente de firewall de ISA puede interceptar las llamadas de función Winsock desde las aplicaciones cliente y, a continuación, enrutar una solicitud al proveedor de servicios base subyacente original si el destino es local o al servicio firewall en un equipo de servidor ISA si el destino es remoto. Se instala un LSP similar como parte del servicio Microsoft Forefront Firewall y el cliente de Threat Management Gateway (TMG) en los clientes.
+Un ejemplo de un LSP es el proveedor de servicios de cliente de Firewall de Microsoft instalado como parte del servidor de secutidad y autenticación de Internet (ISA) en los clientes. El proveedor de servicios de cliente de Microsoft Firewall se instala a través de los proveedores base winsock para TCP y UDP. Una biblioteca de vínculos dinámicos (DLL) en el software cliente de firewall de ISA se convierte en un proveedor de servicios en capas de Winsock que todas las aplicaciones Winsock usan de forma transparente. De este modo, el LSP del cliente de firewall de ISA puede interceptar llamadas de función Winsock desde aplicaciones cliente y, a continuación, enrutar una solicitud al proveedor de servicios base subyacente original si el destino es local o al servicio firewall en un equipo de servidor ISA si el destino es remoto. Se instala un LSP similar como parte del servicio Microsoft Forefront Firewall y del cliente de Threat Management Gateway (TMG) en los clientes.
 
-Durante la inicialización de LSP, el LSP debe proporcionar punteros a una serie de funciones de interfaz de proveedor de servicios (SPI) de Winsock. La capa directamente encima del LSP llamará a estas funciones durante el procesamiento normal (ya sea otro LSP o Ws2 \_32.DLL).
+Durante la inicialización de LSP, el LSP debe proporcionar punteros a varias funciones de la interfaz del proveedor de servicios (SPI) de Winsock. La capa directamente encima del LSP llamará a estas funciones durante el procesamiento normal (ya sea otro LSP o Ws2 \_32.DLL).
 
-Es posible definir categorías LSP basadas en el subconjunto de funciones SPI que implementa un LSP y la naturaleza del procesamiento adicional realizado para cada una de esas funciones. Mediante la clasificación de LSP, así como la clasificación de aplicaciones que usan sockets Winsock, es posible determinar de forma selectiva si un LSP debe estar implicado en un proceso determinado en tiempo de ejecución.
+Es posible definir categorías LSP basadas en el subconjunto de funciones SPI que implementa un LSP y la naturaleza del procesamiento adicional realizado para cada una de esas funciones. Mediante la clasificación de LSP, así como la clasificación de aplicaciones que usan sockets Winsock, es posible determinar selectivamente si un LSP debe estar implicado en un proceso determinado en tiempo de ejecución.
 
-En Windows Vista y versiones posteriores, se proporciona un nuevo método para categorizar tanto las aplicaciones como los proveedores de servicios en capas de Winsock para que solo se carguen determinados LSP. Hay varias razones para agregar estas características.
+En Windows Vista y versiones posteriores, se proporciona un nuevo método para categorizar tanto los proveedores de servicios en capas de Winsock como las aplicaciones para que solo se carguen determinados LSP. Hay varias razones para agregar estas características.
 
-Una de las principales razones es que determinados procesos críticos del sistema, como winlogon e lsass, crean sockets, pero estos procesos no usan estos sockets para enviar tráfico en la red. Por lo tanto, la mayoría de los LSP no deben cargarse en estos procesos. También se han documentado varios casos en los que los LSP defectuosos pueden provocar *lsass.exe* bloqueo. Si lsass se bloquea, el sistema fuerza un apagado. Un efecto secundario de estos procesos del sistema al cargar LSP es que estos procesos nunca se cierran, por lo que cuando se instala o quita un LSP, se requiere un reinicio.
+Una de las razones principales es que determinados procesos críticos del sistema, como winlogon y lsass, crean sockets, pero estos procesos no usan estos sockets para enviar tráfico en la red. Por lo tanto, la mayoría de los LSP no deben cargarse en estos procesos. También se han documentado varios casos en los que los LSP con errores pueden provocar *lsass.exe* bloqueo. Si lsass se bloquea, el sistema fuerza un apagado. Un efecto secundario de estos procesos del sistema que cargan LSP es que estos procesos nunca se cierran, por lo que cuando se instala o quita un LSP, se requiere un reinicio.
 
 Una razón secundaria es que hay algunos casos en los que es posible que las aplicaciones no quieran cargar determinados LSP. Por ejemplo, es posible que algunas aplicaciones no quieran cargar LSP criptográficos, lo que podría impedir que la aplicación se comunique con otros sistemas que no tienen instalado el LSP criptográfico.
 
-Por último, otras LSP pueden usar categorías LSP para determinar dónde en la cadena del protocolo Winsock deben instalarse ellos mismos. Durante años, varios desarrolladores de LSP han deseado una manera de saber cómo se comportará un LSP. Por ejemplo, un LSP que inspeccione el flujo de datos querrá estar por encima de un LSP que cifre los datos. Por supuesto, este método de categorización LSP no es una prueba infalible, ya que se basa en LSP de terceros para clasificarse adecuadamente.
+Por último, otras LSP pueden usar categorías LSP para determinar dónde se deben instalar en la cadena del protocolo Winsock. Durante años, varios desarrolladores de LSP han deseado una manera de saber cómo se comportará un LSP. Por ejemplo, un LSP que inspeccione el flujo de datos querrá estar por encima de un LSP que cifre los datos. Por supuesto, este método de categorización de LSP no es una prueba sencilla, ya que se basa en LSP de terceros para clasificarse adecuadamente.
 
-La categorización LSP y otras mejoras de seguridad en Windows Vista y versiones posteriores están diseñadas para ayudar a evitar que los usuarios instalen LSP malintencionados de forma involuntaria.
+La categorización de LSP y otras mejoras de seguridad en Windows Vista y versiones posteriores están diseñadas para ayudar a evitar que los usuarios instalen LSP malintencionados de forma involuntaria.
 
-## <a name="lsp-categories"></a>Categorías de LSP
+## <a name="lsp-categories"></a>Categorías LSP
 
-En Windows Vista y versiones posteriores, un LSP se puede clasificar en función de cómo interactúa con Windows sockets y datos. Una categoría LSP es un grupo identificable de comportamientos en un subconjunto de funciones SPI de Winsock. Por ejemplo, un filtro de contenido HTTP se clasificaría como un inspector de datos (la categoría \_ INSPECTOR LSP). La categoría INSPECTOR de LSP \_ inspeccionará (pero no modificará) los parámetros de las funciones SPI de transferencia de datos. Una aplicación puede consultar la categoría de un LSP y elegir no cargar el LSP en función de la categoría LSP y el conjunto de categorías LSP permitidas de la aplicación.
+En Windows Vista y versiones posteriores, un LSP se puede clasificar en función de cómo interactúa con Windows sockets y datos. Una categoría LSP es un grupo identificable de comportamientos en un subconjunto de funciones SPI de Winsock. Por ejemplo, un filtro de contenido HTTP se clasificaría como un inspector de datos (la categoría INSPECTOR de \_ LSP). La categoría INSPECTOR de LSP \_ inspeccionará (pero no modificará) los parámetros para las funciones SPI de transferencia de datos. Una aplicación puede consultar la categoría de un LSP y elegir no cargar el LSP en función de la categoría LSP y el conjunto de categorías LSP permitidas de la aplicación.
 
 En la tabla siguiente se enumeran las categorías en las que se puede clasificar un LSP.
 
@@ -46,19 +46,19 @@ En la tabla siguiente se enumeran las categorías en las que se puede clasificar
 |---------------------------|-----------------------------------------------------------------|
 | **COMPRESIÓN DE \_ CRIPTOGRAFÍA LSP \_** | El LSP es un proveedor de criptografía o compresión de datos.         |
 | **FIREWALL de LSP \_**         | El LSP es un proveedor de firewall.                                 |
-| **CACHÉ LOCAL LSP \_ \_**     | El LSP es un proveedor de caché local.                              |
+| **CACHÉ LOCAL de \_ \_ LSP**     | El LSP es un proveedor de caché local.                              |
 | **LSP \_ INBOUND \_ MODIFY**  | El LSP modifica los datos entrantes.                                  |
 | **LSP \_ INSPECTOR**        | El LSP inspecciona o filtra los datos.                               |
 | **LSP \_ OUTBOUND \_ MODIFY** | El LSP modifica los datos salientes.                                 |
 | **LSP \_ PROXY**            | El LSP actúa como proxy y redirige los paquetes.                  |
 | **LSP \_ REDIRECTOR**       | El LSP es un redirector de red.                                |
-| **SISTEMA \_ LSP**           | El LSP es aceptable para su uso en servicios y procesos del sistema. |
+| **LSP \_ SYSTEM**           | El LSP es aceptable para su uso en servicios y procesos del sistema. |
 
 
 
  
 
-Un LSP puede pertenecer a más de una categoría. Por ejemplo, un LSP de firewall/seguridad podría pertenecer a las categorías inspector (**LSP \_ INSPECTOR**) y firewall **\_ (FIREWALL de LSP).**
+Un LSP puede pertenecer a más de una categoría. Por ejemplo, un LSP de seguridad o firewall podría pertenecer a las categorías inspector **\_ (INSPECTOR de LSP)** y firewall **\_ (FIREWALL de LSP).**
 
 Si un LSP no tiene un conjunto de categorías, se considera que está en la categoría Todos los demás. Esta categoría LSP no se cargará en servicios o procesos del sistema (por ejemplo, lsass, winlogon y muchos procesos svchost).
 
@@ -71,7 +71,7 @@ Hay varias funciones nuevas disponibles en Windows Vista y versiones posteriores
 -   [**WSCSetProviderInfo**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetproviderinfo)
 -   [**WSCSetProviderInfo32**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetproviderinfo32)
 
-Para clasificar un LSP, se llama a la función [**WSCSetProviderInfo**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetproviderinfo) o [**WSCSetProviderInfo32**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetproviderinfo32) con un GUID para identificar la entrada oculta LSP, la clase de información que se va a establecer para esta entrada de protocolo LSP y un conjunto de marcas que se usan para modificar el comportamiento de la función.
+Para clasificar un LSP, se llama a la función [**WSCSetProviderInfo**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetproviderinfo) o [**WSCSetProviderInfo32**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetproviderinfo32) con un GUID para identificar la entrada oculta de LSP, la clase de información que se va a establecer para esta entrada del protocolo LSP y un conjunto de marcas que se usan para modificar el comportamiento de la función.
 
 La [**función WSCGetProviderInfo**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetproviderinfo) o [**WSCGetProviderInfo32**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetproviderinfo32) se usa de forma similar para recuperar los datos asociados a una clase de información para un LSP.
 
@@ -82,35 +82,35 @@ Hay varias funciones nuevas disponibles en Windows Vista y versiones posteriores
 -   [**WSCGetApplicationCategory**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetapplicationcategory)
 -   [**WSCSetApplicationCategory**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetapplicationcategory)
 
-Para clasificar una aplicación, se llama a la función [**WSCSetApplicationCategory**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetapplicationcategory) con la ruta de acceso de carga a la imagen ejecutable para identificar la aplicación, los argumentos de línea de comandos usados al iniciar la aplicación y las categorías LSP que se permiten para todas las instancias de esta aplicación.
+Para clasificar una aplicación, se llama a la función [**WSCSetApplicationCategory**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetapplicationcategory) con la ruta de acceso de carga a la imagen ejecutable para identificar la aplicación, los argumentos de línea de comandos utilizados al iniciar la aplicación y las categorías LSP que se permiten para todas las instancias de esta aplicación.
 
-La [**función WSCGetApplicationCategory**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetapplicationcategory) se usa de forma similar para recuperar las categorías del proveedor de servicios en capas (LSP) asociadas a una aplicación.
+La [**función WSCGetApplicationCategory**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetapplicationcategory) se usa de forma similar para recuperar las categorías de proveedor de servicios por capas (LSP) asociadas a una aplicación.
 
 ## <a name="determining-which-lsps-get-loaded"></a>Determinar qué LSP se cargan
 
-La parte final de la categorización LSP es determinar qué LSP se cargarán en qué procesos. Cuando un proceso carga Winsock, se realizan las siguientes comparaciones de la categoría de aplicación y las categorías LSP para todos los LSP instalados:
+La parte final de la categorización de LSP es determinar qué LSP se cargarán en qué procesos. Cuando un proceso carga Winsock, se realizan las siguientes comparaciones de la categoría de aplicación y las categorías LSP para todos los LSP instalados:
 
--   Si la aplicación no está clasificada, permita que todos los LSP se carguen en el proceso.
--   Si la aplicación y el LSP tienen categorías asignadas, todo lo siguiente debe cumplirse: <dl> Al menos una de las categorías LSP está presente en las categorías especificadas de la aplicación.  
+-   Si la aplicación no se clasifica por categorías, permita que todos los LSP se carguen en el proceso.
+-   Si la aplicación y el LSP tienen categorías asignadas, deben cumplirse todas las condiciones siguientes: <dl> Al menos una de las categorías LSP está presente en las categorías especificadas de la aplicación.  
     Solo las categorías especificadas en las categorías especificadas de la aplicación se especifican en las categorías LSP. Por ejemplo, si la aplicación especifica una categoría, debe estar en la categoría del LSP.  
     Si la categoría LSP SYSTEM está presente en la categoría de la aplicación, debe estar presente en las categorías \_ del LSP.  
     </dl>
 
 > [!Note]  
-> Si no se clasifica un LSP, su categoría es realmente cero. Para que se produzca una coincidencia, todas las categorías especificadas del LSP deben estar presentes en las categorías de la aplicación (las categorías de la aplicación deben ser un superconjunto de las categorías del LSP) con la advertencia de que si LSP SYSTEM está presente en la categoría de la aplicación, también debe estar presente en la categoría del \_ LSP.
+> Si un LSP no se clasifica por categorías, su categoría es cero en la práctica. Para que se produzca una coincidencia, todas las categorías especificadas del LSP deben estar presentes en las categorías de la aplicación (las categorías de la aplicación deben ser un superconjunto de las categorías del LSP) con la advertencia de que si LSP SYSTEM está presente en la categoría de la aplicación, también debe estar presente en la categoría del \_ LSP.
 
  
 
 Considere el ejemplo siguiente:
 
-La *Foo.exe* aplicación se clasifica como LSP \_ SYSTEM + LSP \_ FIREWALL + LSP \_ CRYPTO \_ COMPRESS. La aplicación *Bar.exe* se clasifica como FIREWALL de LSP \_ + COMPRESIÓN DE CIFRADO de LSP. \_ \_ Hay cuatro LSP instalados en el sistema:
+La *Foo.exe* aplicación se clasifica como LSP \_ SYSTEM + LSP \_ FIREWALL + LSP \_ CRYPTO \_ COMPRESS. La aplicación *Bar.exe* se clasifica como FIREWALL de LSP \_ + COMPRESIÓN \_ CRIPTOGRÁFICA de LSP. \_ Hay cuatro LSP instalados en el sistema:
 
 -   LSP1 ha establecido una categoría de LSP \_ SYSTEM.
--   LSP2 no está establecido en categorías, por lo que su categoría es cero.
+-   LSP2 no se establece en categorías, por lo que su categoría es cero.
 -   LSP3 ha establecido una categoría de FIREWALL de \_ LSP.
 -   LSP4 ha establecido categorías de LSP \_ SYSTEM + LSP \_ FIREWALL + LSP \_ CRYPTO COMPRESS + \_ LSP \_ INSPECTOR
 
-En este ejemplo, la *Foo.exe* solo cargaría LSP1, mientras queBar.exela aplicación cargaría LSP3. 
+En este ejemplo, la *Foo.exe* solo cargaría LSP1, mientras queBar.exeaplicación cargaría LSP3. 
 
 ## <a name="determining-winsock-providers-installed"></a>Determinar los proveedores de Winsock instalados
 

@@ -1,11 +1,11 @@
 ---
-title: Método INapComponentConfig IsUISupported (NapCommon. h)
+title: Método INapComponentConfig IsUISupported (NapCommon.h)
 description: Especifica si el componente admite una interfaz de usuario personalizada.
 ms.assetid: 044f8014-f041-4e9c-922a-2691b799ba84
 keywords:
-- Método IsUISupported NAP
-- Método IsUISupported NAP, interfaz INapComponentConfig
-- Interfaz INapComponentConfig NAP, método IsUISupported
+- Método NAP de IsUISupported
+- Método NAP de IsUISupported, interfaz INapComponentConfig
+- INapComponentConfig interface NAP , IsUISupported method
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab7d3f6b87ba5e483b466e6746f0f63d039cb205
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e343b037e4f77b4c1e342ffa78278854b11d714e09e9e57188d83fc9f93a180
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134493"
 ---
-# <a name="inapcomponentconfigisuisupported-method"></a>INapComponentConfig:: IsUISupported (método)
+# <a name="inapcomponentconfigisuisupported-method"></a>INapComponentConfig::IsUISupported (método)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-El método **IsUISupported** especifica si el componente admite una interfaz de usuario personalizada.
+El **método IsUISupported** especifica si el componente admite una interfaz de usuario personalizada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,10 +47,10 @@ HRESULT IsUISupported(
 
 <dl> <dt>
 
-*isSupported* \[ enuncia\]
+*isSupported* \[ out\]
 </dt> <dd>
 
-Un puntero a un valor BOOLEANO que se establece en **true** si el componente admite una interfaz de usuario personalizada y **false** en caso contrario.
+Puntero a un bool que se establece en **TRUE** si el componente admite una interfaz de usuario personalizada y **FALSE** en caso contrario.
 
 </dd> </dl>
 
@@ -62,28 +62,28 @@ Devuelve uno de los siguientes códigos de error en función del resultado de es
 
 | Código devuelto                                                                                     | Descripción                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> </dl>           | La operación se realizó correctamente.<br/>                            |
+| <dl> <dt>**S \_ Ok (Aceptar)**</dt> </dl>           | La operación se realizó correctamente.<br/>                            |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Error de permisos, acceso denegado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Límite de recursos del sistema, no se pudo realizar la operación.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | El límite de recursos del sistema no pudo realizar la operación.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La interfaz de usuario personalizada de un componente se debe iniciar mediante [**INapComponentConfig:: InvokeUI**](inapcomponentconfig-invokeui.md).
+La interfaz de usuario personalizada de un componente debe iniciarse mediante [**INapComponentConfig::InvokeUI**](inapcomponentconfig-invokeui.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 
 
 

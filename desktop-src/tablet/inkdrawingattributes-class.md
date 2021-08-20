@@ -1,7 +1,7 @@
 ---
-description: Representa los atributos que se aplican a la entrada manuscrita cuando se dibuja.
+description: Representa los atributos que se aplican a la entrada de lápiz cuando se dibuja.
 ms.assetid: 10ca7ae5-28dd-42a2-98d9-852d4de5869d
-title: Clase InkDrawingAttributes (Msinkaut. h)
+title: Clase InkDrawingAttributes (Msyecciónut.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 api_location:
 - InkObj.dll
 - InkObj.dll.dll
-ms.openlocfilehash: 64a45c33e7aa17b381875ac8e8e8d054af2bf086
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44b3ef1115539219f7cbf6b700014117ad180d15fe8cdd6d2afe4a0f783a06df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118042353"
 ---
-# <a name="inkdrawingattributes-class"></a>Clase InkDrawingAttributes
+# <a name="inkdrawingattributes-class"></a>InkDrawingAttributes (clase)
 
-Representa los atributos que se aplican a la entrada manuscrita cuando se dibuja.
+Representa los atributos que se aplican a la entrada de lápiz cuando se dibuja.
 
 **InkDrawingAttributes** tiene estos tipos de miembros:
 
@@ -34,13 +34,13 @@ Representa los atributos que se aplican a la entrada manuscrita cuando se dibuja
 
 ### <a name="interfaces"></a>Interfaces
 
-La clase **InkDrawingAttributes** define estas interfaces.
+La **clase InkDrawingAttributes** define estas interfaces.
 
 
 
 | Interfaz                 | Descripción                                                                    |
 |:--------------------------|:-------------------------------------------------------------------------------|
-| **IInkDrawingAttributes** | Este objeto implementa la interfaz com **IInkDrawingAttributes** .<br/> |
+| **IInkDrawingAttributes** | Este objeto implementa la **interfaz COM IInkDrawingAttributes.**<br/> |
 
 
 
@@ -48,13 +48,13 @@ La clase **InkDrawingAttributes** define estas interfaces.
 
 ### <a name="methods"></a>Métodos
 
-La clase **InkDrawingAttributes** tiene estos métodos.
+La **clase InkDrawingAttributes** tiene estos métodos.
 
 
 
 | Método                         | Descripción                                                                                                                                                      |
 |:-------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Clonar**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-clone) | Crea un objeto [**InkDisp**](inkdisp-class.md), **InkDrawingAttributes** o [**InkRecognizerContext**](inkrecognizercontext-class.md) duplicado.<br/> |
+| [**Clon**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-clone) | Crea un objeto [**InkDisp**](inkdisp-class.md)duplicado, **InkDrawingAttributes** o [**InkRecognizerContext.**](inkrecognizercontext-class.md)<br/> |
 
 
 
@@ -62,36 +62,36 @@ La clase **InkDrawingAttributes** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **InkDrawingAttributes** tiene estas propiedades.
+La **clase InkDrawingAttributes** tiene estas propiedades.
 
 
 
 | Propiedad                                                                           | Tipo de acceso           | Descripción                                                                                                                                                                      |
 |:-----------------------------------------------------------------------------------|:----------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Sin suavizado**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_antialiased)<br/>                 | Lectura/escritura<br/> | Obtiene o establece el valor que especifica si se mezclan los colores de primer plano y de fondo a lo largo del borde de la tinta para aumentar la suavidad de un trazo de tinta.<br/> |
-| [**Color**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_color)<br/>                             | Lectura/escritura<br/> | Obtiene o establece el color de la tinta dibujada con este objeto **InkDrawingAttributes** .<br/>                                                                                    |
-| [**ExtendedProperties**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokedisp-get_extendedproperties)<br/> | Solo lectura<br/>  | Obtiene la colección de datos definidos por la aplicación que se almacena en el objeto **InkDrawingAttributes** .<br/>                                                                |
-| [**FitToCurve**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_fittocurve)<br/>                   | Lectura/escritura<br/> | Obtiene o establece el valor que especifica si la entrada de lápiz se representa como una serie de curvas en lugar de como líneas entre los puntos de ejemplo de lápiz.<br/>                                    |
-| [**Height**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_height)<br/>                           | Lectura/escritura<br/> | Obtiene o establece el alto del lápiz al dibujar la entrada manuscrita con este objeto **InkDrawingAttributes** .<br/>                                                                        |
-| [**IgnorePressure**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_ignorepressure)<br/>           | Lectura/escritura<br/> | Obtiene o establece el valor que especifica si la tinta dibujada se vuelve más ancha y aumenta la presión de la punta del lápiz en la superficie de la tableta.<br/>                     |
-| [**PenTip**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_pentip)<br/>                           | Lectura/escritura<br/> | Obtiene o establece la punta del lápiz que se va a usar (bola o rectángulo) al dibujar la entrada manuscrita con este objeto **InkDrawingAttributes** .<br/>                                                       |
-| [**RasterOperation**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_rasteroperation)<br/>         | Lectura/escritura<br/> | Obtiene o establece cómo interactúa el color de la pluma con los colores de fondo existentes en la pantalla cuando se dibuja la tinta.<br/>                                                    |
-| [**Transparencia**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_transparency)<br/>               | Lectura/escritura<br/> | Obtiene o establece el valor de transparencia de la entrada de lápiz dibujada. Los valores van desde cero (totalmente opaco) hasta 255 (totalmente transparente).<br/>                                               |
-| [**Width**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_width)<br/>                             | Lectura/escritura<br/> | Obtiene o establece el ancho del lápiz al dibujar la entrada manuscrita con este objeto **InkDrawingAttributes** .<br/>                                                                         |
+| [**Suavizado de contorno**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_antialiased)<br/>                 | Lectura/escritura<br/> | Obtiene o establece el valor que especifica si los colores de primer plano y de fondo a lo largo del borde de la entrada de lápiz se mezclan para aumentar la suavizado de un trazo de entrada de lápiz.<br/> |
+| [**Color**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_color)<br/>                             | Lectura/escritura<br/> | Obtiene o establece el color de la entrada de lápiz dibujada con este **objeto InkDrawingAttributes.**<br/>                                                                                    |
+| [**ExtendedProperties**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokedisp-get_extendedproperties)<br/> | Solo lectura<br/>  | Obtiene la colección de datos definidos por la aplicación que se almacenan en el **objeto InkDrawingAttributes.**<br/>                                                                |
+| [**FitToCurve**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_fittocurve)<br/>                   | Lectura/escritura<br/> | Obtiene o establece el valor que especifica si la entrada manuscrita se representa como una serie de curvas en lugar de como líneas entre puntos de muestra de lápiz.<br/>                                    |
+| [**Alto**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_height)<br/>                           | Lectura/escritura<br/> | Obtiene o establece el alto del lápiz al dibujar lápiz con este **objeto InkDrawingAttributes.**<br/>                                                                        |
+| [**IgnorePressure**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_ignorepressure)<br/>           | Lectura/escritura<br/> | Obtiene o establece el valor que especifica si la entrada de lápiz dibujada se vuelve más ancha automáticamente con una mayor presión de la punta del lápiz en la superficie de la tableta.<br/>                     |
+| [**PenTip**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_pentip)<br/>                           | Lectura/escritura<br/> | Obtiene o establece la punta de lápiz que se va a usar (bola o rectángulo) al dibujar la entrada manuscrita con este **objeto InkDrawingAttributes.**<br/>                                                       |
+| [**RasterOperation**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_rasteroperation)<br/>         | Lectura/escritura<br/> | Obtiene o establece cómo interactúa el color del lápiz con los colores de fondo existentes en la pantalla cuando se dibuja la entrada manuscrita.<br/>                                                    |
+| [**Transparencia**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_transparency)<br/>               | Lectura/escritura<br/> | Obtiene o establece el valor de transparencia de la entrada manuscrita dibujada. Los valores oscilan entre cero (totalmente opaco) y 255 (totalmente transparente).<br/>                                               |
+| [**Ancho**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_width)<br/>                             | Lectura/escritura<br/> | Obtiene o establece el ancho del lápiz al dibujar entrada manuscrita con este **objeto InkDrawingAttributes.**<br/>                                                                         |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se puede crear una instancia de este objeto llamando al método [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) en C++.
+Se puede crear una instancia de este objeto llamando al [**método CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) en C++.
 
-Estos atributos de dibujo se pueden asociar a un trazo o un cursor y especificar opciones de configuración como el color, el ancho y la transparencia.
+Estos atributos de dibujo se pueden asociar con un trazo o un cursor y especificar valores como el color, el ancho y la transparencia.
 
-Para especificar los atributos de dibujo de un trazo, use la propiedad [**DrawingAttributes**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcursor-get_drawingattributes) del objeto [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) . Para especificar los atributos de dibujo de todos los trazos dentro de una colección de trazos, llame al método [**ModifyDrawingAttributes**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokes-modifydrawingattributes) de la colección [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) .
+Para especificar los atributos de dibujo de un trazo, use la [**propiedad DrawingAttributes**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcursor-get_drawingattributes) del [**objeto IInkStrokeDisp.**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) Para especificar los atributos de dibujo de todos los trazos dentro de una colección de trazos, llame al método [**ModifyDrawingAttributes**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokes-modifydrawingattributes) de la [colección InkStrokes.](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85))
 
-Cada objeto [**InkCollector**](inkcollector-class.md) , el objeto [**InkOverlay**](inkoverlay-class.md) y el control [InkPicture](inkpicture-control-reference.md) pueden especificar un conjunto diferente de atributos de dibujo para el mismo cursor. Use la propiedad [**DrawingAttributes**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcursor-get_drawingattributes) del objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) para obtener o establecer los atributos de dibujo de un cursor.
+Cada [**objeto InkCollector,**](inkcollector-class.md) [**el objeto InkOverlay**](inkoverlay-class.md) y el control [InkPicture](inkpicture-control-reference.md) pueden especificar un conjunto diferente de atributos de dibujo para el mismo cursor. Use la [**propiedad DrawingAttributes**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcursor-get_drawingattributes) del [**objeto IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) para obtener o establecer los atributos de dibujo de un cursor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -99,9 +99,9 @@ Cada objeto [**InkCollector**](inkcollector-class.md) , el objeto [**InkOverlay*
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -110,13 +110,13 @@ Cada objeto [**InkCollector**](inkcollector-class.md) , el objeto [**InkOverlay*
 
 <dl> <dt>
 
-[**DrawingAttributes (propiedad)**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcursor-get_drawingattributes)
+[**Propiedad DrawingAttributes**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcursor-get_drawingattributes)
 </dt> <dt>
 
-**DrawingAttributes (propiedad)**
+**Propiedad DrawingAttributes**
 </dt> <dt>
 
-**DrawingAttributes (propiedad)**
+**Propiedad DrawingAttributes**
 </dt> <dt>
 
 [**Propiedad DefaultDrawingAttributes**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_defaultdrawingattributes)
@@ -128,16 +128,16 @@ Cada objeto [**InkCollector**](inkcollector-class.md) , el objeto [**InkOverlay*
 **Propiedad DefaultDrawingAttributes**
 </dt> <dt>
 
-[**Método ModifyDrawingAttributes**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokes-modifydrawingattributes)
+[**ModifyDrawingAttributes (método)**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokes-modifydrawingattributes)
 </dt> <dt>
 
-[**Interfaz IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
+[**IInkCursor (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
 </dt> <dt>
 
-[**Clase InkDisp**](inkdisp-class.md)
+[**InkDisp (clase)**](inkdisp-class.md)
 </dt> <dt>
 
-[**Interfaz IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp)
+[**IInkStrokeDisp (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp)
 </dt> </dl>
 
  

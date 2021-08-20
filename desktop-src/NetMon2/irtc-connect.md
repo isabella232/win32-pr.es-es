@@ -1,7 +1,7 @@
 ---
-description: 'Método IRTC::Connect: el método Connect conecta el NPP a la red mediante una NIC especificada y proporciona información de configuración para la conexión.'
+description: 'Método IRTC::Conectar: el método Conectar conecta el NPP a la red mediante una NIC especificada y proporciona información de configuración para la conexión.'
 ms.assetid: d017c2a3-a832-4084-b21b-0cca428c5360
-title: Método IRTC::Connect (Netmon.h)
+title: Método IRTC::Conectar (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: ba62f3341b18ddfdbf09af4eec701322d901ab79
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: da7ff72414a1702a1849f76f658f0fbf85116b9b831e800148d5a6165da7ac17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118132904"
 ---
-# <a name="irtcconnect-method"></a>IRTC::Connect (método)
+# <a name="irtcconnect-method"></a>IRTC::Conectar método
 
-El **método Connect** conecta el NPP a la red mediante una NIC especificada y proporciona información de configuración para la conexión.
+El **Conectar** conecta el NPP a la red mediante una NIC especificada y proporciona información de configuración para la conexión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,7 +68,7 @@ Dirección de la función de devolución de llamada de marco del usuario, que se
 *UserContext* \[ En\]
 </dt> <dd>
 
-Valor pasado cuando se llama a la función de devolución de llamada de marco y estado del usuario. Si se especifican ambas funciones de devolución de llamada, deben usar el mismo valor de contexto de usuario. El valor de este parámetro suele ser HWND o un puntero "this".
+Valor que se pasa cuando se llama a la función de devolución de llamada de marco y estado del usuario. Si se especifican ambas funciones de devolución de llamada, deben usar el mismo valor de contexto de usuario. El valor de este parámetro suele ser HWND o un puntero "this".
 
 </dd> <dt>
 
@@ -83,7 +83,7 @@ Controlar un blob de error que contiene información de error adicional. Vea Com
 
 Si este método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error (que incluyen los errores devueltos por la llamada **interna IRTC::Configure):**
+Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error (que incluyen los errores devueltos por la llamada **interna IRTC::Configure):**
 
 
 
@@ -91,14 +91,14 @@ Si el método no se realiza correctamente, el valor devuelto es uno de los sigui
 |---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**NMERR \_ YA \_ CONECTADO**</dt> </dl>            | Esta instancia del objeto COM de NPP ya está conectada a la red.<br/>                                                                                                                                                                                                          |
 | <dl> <dt>**ERROR DE CONVERSIÓN \_ DE \_ BLOBS DE NMERR \_**</dt> </dl>       | El BLOB de configuración está dañado. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                                                       |
-| <dl> <dt>**LA ENTRADA DE BLOB DE NMERR \_ \_ NO \_ \_ \_ EXISTE**</dt> </dl> | El BLOB de entrada especificado por el *parámetro hInputBlob* carece de una entrada necesaria para realizar esta operación. La llamada **IRTC::Connect** o **IRTC::Configure** puede generar este error. Mire el blob de error devuelto por *hErrorBlob para* determinar qué entrada no se encontró.<br/> |
+| <dl> <dt>**LA ENTRADA DE BLOB DE NMERR \_ \_ NO \_ \_ \_ EXISTE**</dt> </dl> | El BLOB de entrada especificado por el *parámetro hInputBlob* carece de una entrada necesaria para realizar esta operación. Este error puede generarse mediante la llamada **IRTC::Conectar** **o IRTC::Configure.** Mire el blob de error devuelto por *hErrorBlob para* determinar qué entrada no se encontró.<br/> |
 | <dl> <dt>**BLOB DE NMERR \_ \_ NO \_ INICIALIZADO**</dt> </dl>        | No se ha llamado a la función **CreateBlob.** La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                                         |
 | <dl> <dt>**CADENA DE BLOB DE NMERR \_ \_ NO \_ VÁLIDA**</dt> </dl>         | La cadena no termina en NULL. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                                                       |
-| <dl> <dt>**DESENCADENADOR NO ES DE NMERR \_ \_**</dt> </dl>              | La parte del desencadenador del BLOB de entrada está dañada. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                                        |
+| <dl> <dt>**DESENCADENADOR NO ILEGAL \_ DE NMERR \_**</dt> </dl>              | La parte del desencadenador del BLOB de entrada está dañada. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                                        |
 | <dl> <dt>**BLOB NO VÁLIDO DE NMERR \_ \_**</dt> </dl>                 | El objeto especificado en *hInputBlob* no es un BLOB. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                                      |
 | <dl> <dt>**MEMORIA DE NMERR \_ \_ FUERA DE \_ MEMORIA**</dt> </dl>               | La memoria necesaria para realizar esta operación no está disponible. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                              |
 | <dl> <dt>**TIEMPO DE ESPERA DE NMERR \_**</dt> </dl>                       | Se ha pasado el tiempo de espera de la solicitud. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                                                               |
-| <dl> <dt>**BLOB DE NIVEL \_ SUPERIOR NMERR \_**</dt> </dl>                 | El número de versión del BLOB especificado en *hInputBlob* es incorrecto. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                   |
+| <dl> <dt>**BLOB DE NIVEL SUPERIOR \_ NMERR \_**</dt> </dl>                 | El número de versión del BLOB especificado en *hInputBlob* es incorrecto. La llamada **IRTC::Configure** genera este error.<br/>                                                                                                                                                   |
 
 
 
@@ -106,9 +106,9 @@ Si el método no se realiza correctamente, el valor devuelto es uno de los sigui
 
 ## <a name="remarks"></a>Comentarios
 
-Cuando se llama al método **Connect,** el NPP llama automáticamente al método **IRTC::Configure** mediante el BLOB proporcionado por *hInputBlob*. Tenga en cuenta que los códigos de error devueltos por la llamada **a IRTC::Configure** se devuelven y devuelven mediante la **llamada IRTC::Connect.**
+Cuando se **llama Conectar** método , el NPP llama automáticamente al método **IRTC::Configure** mediante el BLOB proporcionado por *hInputBlob*. Tenga en cuenta que los códigos de error devueltos por la llamada a **IRTC::Configure** se devuelven y devuelven mediante la **llamada a IRTC::Conectar** llamada.
 
-Se debe llamar a este método para poder empezar a capturar fotogramas. Tenga en cuenta que cuando se conecta a la red mediante este método, debe seguir usando la **interfaz IRTC** para capturar fotogramas.
+Se debe llamar a este método para poder empezar a capturar fotogramas. Tenga en cuenta que al conectarse a la red mediante este método, debe seguir usando la **interfaz IRTC** para capturar fotogramas.
 
 Al llamar a esta función, debe especificar una función de devolución de llamada de estado o marco, incluso si solo actúa como marcador de posición.
 
@@ -139,7 +139,7 @@ El blob de error devuelto en *hErrorBlob* contiene información de error que el 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

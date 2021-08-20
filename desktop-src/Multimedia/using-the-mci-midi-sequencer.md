@@ -1,36 +1,36 @@
 ---
-title: Usar el secuenciador MIDI de MCI
-description: Usar el secuenciador MIDI de MCI
+title: Uso del secuenciador MCI MIDI
+description: Uso del secuenciador MCI MIDI
 ms.assetid: e6958b28-a400-4060-9b1f-94d0b2cf26c3
 keywords:
-- Multimedia de Windows, secuenciador MIDI de MCI
-- multimedia, MCI Sequencer MIDI
-- audio multimedia, secuenciador MIDI de MCI
-- audio, MCI Sequencer
-- Interfaz digital de instrumentos musicales (MIDI), secuenciador MIDI de MCI
-- MIDI (interfaz digital de instrumentos musicales), MIDI Sequencer de MCI
-- Secuenciador MIDI de MCI, acerca de
-- Media control Interface (MCI), MIDI Sequencer
-- MCI (media control Interface), MIDI Sequencer
+- Windows multimedia,secuenciador MCI MIDI
+- multimedia, secuenciador MCI MIDI
+- audio multimedia, secuenciador MCI MIDI
+- audio,secuenciador MCI MIDI
+- Interfaz digital de instrumentador de música (MIDI),secuenciador MCI MIDI
+- MIDI (interfaz digital de instrumentador de música), secuenciador MCI MIDI
+- Secuenciador DE MCI MIDI, acerca de
+- Interfaz de control multimedia (MCI), secuenciador DE LÍNEA
+- MCI (interfaz de control multimedia),secuenciador DE LÍNEA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c10c34b955a46cdcafdbfa3aec66c5260fb33507
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6093cc117c20d806f0a9cd4ac6ad59b78aa55b618feba87f411a746035e9af90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136153"
 ---
-# <a name="using-the-mci-midi-sequencer"></a>Usar el secuenciador MIDI de MCI
+# <a name="using-the-mci-midi-sequencer"></a>Uso del secuenciador MCI MIDI
 
-Al igual que todos los dispositivos MCI, el secuenciador MIDI de MCI responde a los comandos MCI estándar. En esta sección se describe cómo recuperar un tipo de división de secuencia y cómo recuperar y establecer un tempo. Para obtener más información acerca de MCI, consulte [MCI](mci.md).
+Al igual que todos los dispositivos MCI, el secuenciador MCI MIDI responde a los comandos estándar de MCI. En esta sección se describe cómo recuperar un tipo de división de secuencia y cómo recuperar y establecer un tempo. Para obtener más información sobre MCI, vea [MCI](mci.md).
 
 -   [Recuperar el tipo de división de secuencia](retrieving-the-sequence-division-type.md)
 -   [Consultar y establecer el tempo](querying-and-setting-the-tempo.md)
 
- 
+ 
 
- 
+ 
 
 
 

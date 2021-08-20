@@ -1,11 +1,11 @@
 ---
-title: Win32_TSDiscoveredLicenseServer (clase)
+title: Win32_TSDiscoveredLicenseServer clase
 description: Proporciona detalles sobre el servidor de licencias Escritorio remoto detectado.
 ms.assetid: 88523f30-26ad-4f78-a214-f54b7bc1c676
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSDiscoveredLicenseServer clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSDiscoveredLicenseServer de clase, se describe
+- Win32_TSDiscoveredLicenseServer clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -21,14 +21,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d633031df533068f2cf5da65f2f6820a93c78513
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8ea5698083f0a639b0cd955126418f5024906d4f140dc22c54aacf1460f24c0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118127009"
 ---
-# <a name="win32_tsdiscoveredlicenseserver-class"></a>\_Clase Win32 TSDiscoveredLicenseServer
+# <a name="win32_tsdiscoveredlicenseserver-class"></a>Clase \_ TSDiscoveredLicenseServer de Win32
 
 Proporciona detalles sobre el servidor de licencias Escritorio remoto detectado.
 
@@ -61,18 +61,18 @@ La **clase \_ TSDiscoveredLicenseServer de Win32** tiene estas propiedades.
 **HowDiscovered**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **EN DESUSO**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Este propiedad ya no se admite.
 
-**Windows Server 2008:** Método de detección del servidor de licencias Escritorio remoto.
+**Windows Server 2008:** Método de Escritorio remoto de detección del servidor de licencias.
 
 <dt>
 
@@ -83,7 +83,7 @@ Este propiedad ya no se admite.
 
 </dt> <dd>
 
-El servidor de licencias se ha detectado mediante la Directiva de grupo.
+El servidor de licencias se ha detectado mediante la directiva de grupo.
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ El servidor de licencias se ha detectado mediante la Directiva de grupo.
 
 </dt> <dd>
 
-El servidor de licencias se ha detectado mediante una configuración del registro.
+El servidor de licencias se ha detectado mediante una configuración del Registro.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ El servidor de licencias se ha detectado mediante una configuración del registr
 
 </dt> <dd>
 
-El servidor de licencias se ha detectado mediante el ámbito de detección de grupo de trabajo.
+El servidor de licencias se ha detectado mediante el ámbito de detección del grupo de trabajo.
 
 </dd> <dt>
 
@@ -127,7 +127,7 @@ El servidor de licencias se ha detectado mediante el ámbito de detección de do
 
 </dt> <dd>
 
-El servidor de licencias se ha detectado mediante el ámbito de detección de bosque.
+El servidor de licencias se ha detectado mediante el ámbito de detección de bosques.
 
 </dd> </dl>
 
@@ -136,13 +136,13 @@ El servidor de licencias se ha detectado mediante el ámbito de detección de bo
 **IsAdminOnLS**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la cuenta que se usa para ejecutar el script o el archivo. exe que está utilizando la clase **Win32 \_ TSDiscoveredLicenseServer** tiene acceso de administrador al servidor de licencias.
+Indica si la cuenta que se usa para ejecutar el script o un archivo .exe que usa la clase **\_ TSDiscoveredLicenseServer de Win32** tiene acceso de administrador al servidor de licencias.
 
 <dt>
 
@@ -153,7 +153,7 @@ Indica si la cuenta que se usa para ejecutar el script o el archivo. exe que est
 
 </dt> <dd>
 
-La cuenta que se está usando no tiene acceso de administrador al servidor de licencias.
+La cuenta que se usa no tiene acceso de administrador al servidor de licencias.
 
 </dd> <dt>
 
@@ -164,18 +164,18 @@ La cuenta que se está usando no tiene acceso de administrador al servidor de li
 
 </dt> <dd>
 
-La cuenta que se está usando tiene acceso de administrador al servidor de licencias.
+La cuenta que se usa tiene acceso de administrador al servidor de licencias.
 
 </dd> <dt>
 
 <span id="Dont_know"></span><span id="dont_know"></span><span id="DONT_KNOW"></span>
 
-<span id="Dont_know"></span><span id="dont_know"></span><span id="DONT_KNOW"></span>No **sé** (2)
+<span id="Dont_know"></span><span id="dont_know"></span><span id="DONT_KNOW"></span>**No lo sé** (2)
 
 
 </dt> <dd>
 
-No se puede determinar si la cuenta que se está usando tiene acceso de administrador al servidor de licencias.
+No se puede determinar si la cuenta que se usa tiene acceso de administrador al servidor de licencias.
 
 </dd> </dl>
 
@@ -184,13 +184,13 @@ No se puede determinar si la cuenta que se está usando tiene acceso de administ
 **IsLSAvailable**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el servidor de licencias está disponible (si se \[ puede establecer una conexión RPC de llamada a procedimiento remoto \] en el servidor).
+Indica si el servidor de licencias está disponible (si se puede realizar una conexión RPC de llamada a procedimiento \[ \] remoto al servidor).
 
 <dt>
 
@@ -221,13 +221,13 @@ El servidor de licencias está disponible.
 **IssuingCALs**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si se permite que el servidor de licencias emita Servicios de Escritorio remoto licencias de acceso de cliente (cal de RDS) en el servidor host de sesión de escritorio remoto.
+Indica si el servidor de licencias puede emitir Servicios de Escritorio remoto de acceso de cliente (CAL de RDS) al servidor host de sesión de Escritorio remoto.
 
 <dt>
 
@@ -238,7 +238,7 @@ Indica si se permite que el servidor de licencias emita Servicios de Escritorio 
 
 </dt> <dd>
 
-No se permite que el servidor de licencias emita cal de RDS en el servidor host de sesión de escritorio remoto.
+El servidor de licencias no puede emitir cal de RDS al servidor host de sesión de Escritorio remoto.
 
 </dd> <dt>
 
@@ -249,18 +249,18 @@ No se permite que el servidor de licencias emita cal de RDS en el servidor host 
 
 </dt> <dd>
 
-El servidor de licencias puede emitir cal de RDS para el servidor host de sesión de escritorio remoto.
+El servidor de licencias puede emitir cal de RDS al servidor host de sesión de Escritorio remoto.
 
 </dd> <dt>
 
 <span id="Dont_know"></span><span id="dont_know"></span><span id="DONT_KNOW"></span>
 
-<span id="Dont_know"></span><span id="dont_know"></span><span id="DONT_KNOW"></span>No **sé** (2)
+<span id="Dont_know"></span><span id="dont_know"></span><span id="DONT_KNOW"></span>**No lo sé** (2)
 
 
 </dt> <dd>
 
-No se puede determinar si el servidor de licencias tiene permiso para emitir cal de RDS en el servidor host de sesión de escritorio remoto.
+No se puede determinar si el servidor de licencias puede emitir CAL de RDS al servidor host de sesión de Escritorio remoto.
 
 </dd> </dl>
 
@@ -282,9 +282,9 @@ Nombre del servidor de licencias Escritorio remoto detectado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para conectarse al \\ espacio de \\ nombres TerminalServices de cimv2 raíz \\ , el nivel de autenticación debe incluir privacidad de paquetes. En el caso de las llamadas de C/C++, se trata de un nivel de autenticación de **\_ \_ \_ \_ \_ privacidad de nivel** de autenticación de RPC C. En el caso de las llamadas de Visual Basic y scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el siguiente ejemplo de Visual Basic Scripting Edition (VBScript) se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+Para conectarse al espacio \\ de nombres raíz de \\ TerminalServices cimv2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB
@@ -295,18 +295,18 @@ Set objServices = GetObject( _
 
 
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_GETERROR (VFW. h)
-description: El \_ mensaje MCIWNDM GETERROR recupera el último error de MCI encontrado. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetError.
+title: MCIWNDM_GETERROR mensaje (Vfw.h)
+description: El mensaje GETERROR de MCIWNDM \_ recupera el último error de MCI encontrado. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetError.
 ms.assetid: f110a9b3-5b05-4bf0-85d1-b49ce7396222
 keywords:
-- Mensaje de MCIWNDM_GETERROR de Windows multimedia
+- MCIWNDM_GETERROR mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c2977bb079351824b48da21f4ba3cc2dc5afe7e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b748aec6cf686ecf47baf8deae621514e620971f5e1da667f8e4f0aae708ab80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137726"
 ---
-# <a name="mciwndm_geterror-message"></a>MCIWNDM \_ GETERROR
+# <a name="mciwndm_geterror-message"></a>Mensaje GETERROR de MCIWNDM \_
 
-El mensaje **MCIWNDM \_ GETERROR** recupera el último error de MCI encontrado. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetError**](/windows/desktop/api/Vfw/nf-vfw-mciwndgeterror) .
+El **mensaje \_ GETERROR de MCIWNDM** recupera el último error de MCI encontrado. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetError.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgeterror)
 
 
 ```C++
@@ -38,14 +38,14 @@ lParam = (LPARAM) (LPVOID) lp;
 
 <dl> <dt>
 
-<span id="len"></span><span id="LEN"></span>*terminado*
+<span id="len"></span><span id="LEN"></span>*Len*
 </dt> <dd>
 
 Tamaño, en bytes, del búfer de errores.
 
 </dd> <dt>
 
-<span id="lp"></span><span id="LP"></span>*LP*
+<span id="lp"></span><span id="LP"></span>*Lp*
 </dt> <dd>
 
 Puntero a un búfer definido por la aplicación que se usa para devolver la cadena de error.
@@ -54,21 +54,21 @@ Puntero a un búfer definido por la aplicación que se usa para devolver la cade
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor de error de entero si se realiza correctamente.
+Devuelve el valor de error entero si se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si *LP* es un puntero válido, se devuelve en su búfer una cadena terminada en NULL correspondiente al error. Si la cadena de error es más larga que el búfer, MCIWnd lo trunca.
+Si *lp* es un puntero válido, se devuelve una cadena terminada en NULL correspondiente al error en su búfer. Si la cadena de error es mayor que el búfer, MCIWnd la trunca.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

@@ -1,26 +1,26 @@
 ---
-title: Reproducir recursos de WAVE
-description: Reproducir recursos de WAVE
+title: Reproducción de recursos de WAVE
+description: Reproducción de recursos de WAVE
 ms.assetid: e6129bf4-b83f-4c38-8b96-21aed66ba605
 keywords:
-- audio de onda, reproducir recursos de onda
-- audio auxiliar, reproducir recursos de onda
+- audio de forma de onda, reproducir recursos wave
+- audio auxiliar, reproducir recursos wave
 - reproducir recursos de WAVE
-- Función PlaySound, reproducir recursos de WAVE
-- sndPlaySound función)
+- Función PlaySound, reproducir recursos wave
+- Función sndPlaySound
 - Función PlaySound, en comparación con la función sndPlaySound
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9678c18e09b12ee1e8d8215d0841cbdaba0ac9c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: fd256d3c4cf07d6d2f57ba9c4d85c54b9d0e599f9382a5b8d9d1f3a0ef4705ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104487695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136764"
 ---
-# <a name="playing-wave-resources"></a>Reproducir recursos de WAVE
+# <a name="playing-wave-resources"></a>Reproducción de recursos de WAVE
 
-Puede utilizar la función [**PlaySound**](/previous-versions//dd743680(v=vs.85)) para reproducir un sonido que se almacena como un recurso. Aunque esto también se puede hacer con la función [**sndPlaySound**](/previous-versions//dd798676(v=vs.85)) , **sndPlaySound** requiere que encuentre, cargue, bloquee, desbloquee y libere el recurso; **PlaySound** consigue todo esto con una sola línea de código.
+Puede usar la [**función PlaySound**](/previous-versions//dd743680(v=vs.85)) para reproducir un sonido que se almacena como un recurso. Aunque esto también es posible mediante la función [**sndPlaySound,**](/previous-versions//dd798676(v=vs.85)) **sndPlaySound** requiere que encuentre, cargue, bloquee, desbloquee y libre el recurso. **PlaySound** consigue todo esto con una sola línea de código.
 
 ## <a name="playsound-example"></a>Ejemplo de PlaySound
 
@@ -33,7 +33,7 @@ PlaySound("SoundName", hInst, SND_RESOURCE | SND_ASYNC);
 
 ## <a name="sndplaysound-example"></a>Ejemplo de sndPlaySound
 
-La \_ marca de memoria SND indica que el parámetro *lpszSoundName* es un puntero a una imagen en memoria del archivo de onda. Para incluir un archivo de onda como un recurso en una aplicación, agregue la entrada siguiente al script de recursos de la aplicación (. RC).
+La marca MEMORY de SND indica que el parámetro \_ *lpszSoundName* es un puntero a una imagen en memoria del archivo WAVE. Para incluir un archivo WAVE como un recurso en una aplicación, agregue la siguiente entrada al script de recursos de la aplicación (. RC).
 
 
 ```C++
@@ -42,7 +42,7 @@ soundName WAVE c:\sounds\bells.wav
 
 
 
-El nombre *soundName* es un marcador de posición para un nombre que se proporciona para hacer referencia a este recurso de onda. Los recursos de WAVE se cargan y se obtiene acceso a ellos igual que otros recursos de Windows definidos por la aplicación. La función PlayResource del siguiente ejemplo reproduce un recurso de onda especificado.
+El nombre *soundName es* un marcador de posición de un nombre que se proporciona para hacer referencia a este recurso WAVE. Los recursos wave se cargan y se accede al igual que otros recursos de Windows definidos Windows aplicación. La función PlayResource del ejemplo siguiente reproduce un recurso WAVE especificado.
 
 
 ```C++
@@ -84,7 +84,7 @@ BOOL PlayResource(LPSTR lpName)
 
 
 
-Para reproducir un recurso de onda mediante esta función, pase a la función un puntero a una cadena que contiene el nombre del recurso, tal como se muestra en el ejemplo siguiente.
+Para reproducir un recurso WAVE mediante esta función, pase a la función un puntero a una cadena que contenga el nombre del recurso, como se muestra en el ejemplo siguiente.
 
 
 ```C++
@@ -93,6 +93,6 @@ PlayResource("soundName");
 
 
 
- 
+ 
 
- 
+ 

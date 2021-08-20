@@ -1,33 +1,33 @@
 ---
-title: Funcionalidades del joystick
-description: Funcionalidades del joystick
+title: Funcionalidades de los juegos
+description: Funcionalidades de los juegos
 ms.assetid: 910c7f1d-e20a-4a03-b512-9a7f8cb1e559
 keywords:
-- entrada multimedia, joysticks
-- joysticks, movimiento de dos ejes
-- joysticks, movimiento de tres ejes
-- joysticks, botones
-- joysticks, intervalos de movimiento
-- joysticks, frecuencias de sondeo
+- entrada multimedia, entradas
+- desplazamiento de dos ejes
+- desplazamiento de tres ejes
+- así como botones
+- así como intervalos de movimiento
+- y frecuencias de sondeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b317d5a0c8deb48b49224fd051ecb7ce5a0bbced
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 311109468485a8174d9567516e747ef786019cc105c378ee91b55fa2f123c5cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103791188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118140453"
 ---
-# <a name="joystick-capabilities"></a>Funcionalidades del joystick
+# <a name="joystick-capabilities"></a>Funcionalidades de los juegos
 
-Los joysticks pueden admitir el movimiento de dos o tres ejes y hasta cuatro botones. Los joysticks también admiten diferentes *intervalos de frecuencias de movimiento* y *sondeo*. El intervalo de movimiento es la distancia que un controlador de joystick puede pasar de su posición de colocación a la posición más alejada de su posición de descanso. La frecuencia de sondeo es el intervalo de tiempo entre las consultas de joystick.
+Los flechas pueden admitir el movimiento de dos o tres ejes y hasta cuatro botones. Los radios también admiten *diferentes intervalos de frecuencias de movimiento* y *sondeo.* El intervalo de movimiento es la distancia que puede moverse un controlador de adobo desde su posición de reposo a la posición más alejada de su posición de reposo. La frecuencia de sondeo es el intervalo de tiempo entre las consultas de rango.
 
-Los controladores de joystick pueden admitir uno o dos joysticks. Puede determinar el número de joysticks admitidos por un controlador de joystick mediante la función [**joyGetNumDevs**](/windows/win32/api/joystickapi/nf-joystickapi-joygetnumdevs) . Esta función devuelve un entero sin signo que contiene el número de joysticks admitidos o cero si no hay compatibilidad con el joystick. El valor devuelto no indica el número de joysticks conectados al sistema.
+Los controladores de controladores de controladores pueden admitir uno o dos motores. Puede determinar el número de velocidades admitidas por un controlador driver de Driver mediante la [**funcióngetNumDevs.**](/windows/win32/api/joystickapi/nf-joystickapi-joygetnumdevs) Esta función devuelve un entero sin signo que contiene el número de velocidades admitidas o cero si no hay compatibilidad con los bytes. El valor devuelto no indica el número de nódros asociados al sistema.
 
-Puede determinar si un joystick está conectado al sistema mediante la función [**joyGetPos**](/windows/win32/api/joystickapi/nf-joystickapi-joygetpos) . Esta función devuelve JOYERR \_ NoError si se adjunta el dispositivo especificado. De lo contrario, devuelve JOYERR \_ UNenchufado.
+Puede determinar si un aria está asociado al sistema mediante la [**funcióngetPos.**](/windows/win32/api/joystickapi/nf-joystickapi-joygetpos) Esta función devuelve EL NOERROR DE RGPD \_ si el dispositivo especificado está conectado. De lo contrario, devuelve \_ UNPLUGGED de LOS ALEERR.
 
-Cada joystick tiene varias funciones que están disponibles para la aplicación. Puede recuperar las capacidades de un joystick mediante la función [**joyGetDevCaps**](/windows/win32/api/joystickapi/nf-joystickapi-joygetdevcaps) . Esta función rellena una estructura [**JOYCAPS**](/windows/win32/api/joystickapi/ns-joystickapi-joycaps) con funciones de joystick como los valores mínimo y máximo de su sistema de coordenadas, el número de botones del joystick y las frecuencias de sondeo mínima y máxima.
+Cada uno de ellos tiene varias funcionalidades que están disponibles para la aplicación. Puede recuperar las funcionalidades de un dispositivo mediante la [**funcióngetDevCaps.**](/windows/win32/api/joystickapi/nf-joystickapi-joygetdevcaps) Esta función rellena una estructura [**DECAPS con**](/windows/win32/api/joystickapi/ns-joystickapi-joycaps) funcionalidades como los valores mínimo y máximo de su sistema de coordenadas, el número de botones en el panel y las frecuencias de sondeo mínimas y máximas.
 
- 
+ 
 
- 
+ 
