@@ -1,21 +1,21 @@
 ---
 description: A continuación se muestra un programa de control de servicio de ejemplo.
 ms.assetid: 9d582ab9-028c-48a2-ba34-ab48a9a317ce
-title: SvcControl. cpp
+title: SvcControl.cpp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 619bdd0cae759ce90379bbd72661aafe731c1a6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2bdee8026018f08c3275ed36b7c4baf0a5df29df9b438bee7a794b754d61358c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117966778"
 ---
-# <a name="svccontrolcpp"></a>SvcControl. cpp
+# <a name="svccontrolcpp"></a>SvcControl.cpp
 
-A continuación se muestra un [programa de control de servicio](service-control-programs.md)de ejemplo.
+A continuación se muestra un programa [de control de servicio de ejemplo](service-control-programs.md).
 
-Al compilar el ejemplo, asegúrese de vincular a Kernel32. lib y advapi32. lib.
+Al compilar el ejemplo, asegúrese de vincular con Kernel32.lib y Advapi32.lib.
 
 
 ```C++
@@ -715,7 +715,7 @@ BOOL __stdcall StopDependentServices()
 
 <dl> <dt>
 
-[El ejemplo de servicio completo](the-complete-service-sample.md)
+[Ejemplo de servicio completo](the-complete-service-sample.md)
 </dt> </dl>
 
  

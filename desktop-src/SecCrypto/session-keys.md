@@ -4,12 +4,12 @@ ms.assetid: 18bf2023-084d-400d-b60d-1ba51ce6a2bc
 title: Claves de sesión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a7fd11aacd467ac53f91420879d9cb350e5766d
-ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
+ms.openlocfilehash: 373bedd05bdc65d967d7c7f8476bcdf2b679448265c52b9ecf5429fceb3072cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "114436220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117974685"
 ---
 # <a name="session-keys"></a>Claves de sesión
 

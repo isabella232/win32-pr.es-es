@@ -16,12 +16,12 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 133f48d9c9a1c9dd9f0e04f59d5e35478caa9227
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 3fcf9bbc2fb41cf5eada9c6bac7bfbccb971eb3a255de7f90c789e1e918180e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117881909"
 ---
 # <a name="span-idwwan_profile_v4element_1_contextspanmodemdmconfigprofilecontext-v4"></a><span id="WWAN_profile_v4.element_1_Context"></span>Contexto de ModemDMConfigProfile \/ (v4)
 
@@ -35,7 +35,7 @@ Especifica los parámetros necesarios para establecer una conexión de datos.
 [\<ModemDMConfigProfile\>](element-modemdmconfigprofile.md)  
 &nbsp;&nbsp;**\<Context\>**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <Context>
@@ -76,14 +76,14 @@ Ninguno.
 <tbody>
 <tr class="odd">
 <td><a href="element-1-accessstring.md">AccessString</a></td>
-<td><p>Identifica el APN o la cadena de marcado que se va a utilizar para establecer una conexión de datos.</p>
+<td><p>Identifica el APN o la cadena de marcado que se va a usar para establecer una conexión de datos.</p>
 <p>Para obtener más información, consulte la documentación del elemento <a href="../mbn/schema-accessstring-contexttype-element.md"><strong>AccessString</strong></a> v1.</p></td>
 </tr>
 <tr class="even">
 <td><a href="element-1-authprotocol.md">AuthProtocol</a></td>
-<td><p>>Especifica el protocolo de autenticación que se va a utilizar para activar un contexto del Protocolo de datos de paquetes (PDP).</p>
-<p>Tenga en cuenta que en V4, hay un nuevo valor de enumeración disponible para este elemento. <strong>La selección activa</strong> significa que un protocolo de autenticación se va a seleccionar por las capas inferiores.</p>
-<p>Para obtener más información, consulte la documentación del elemento <a href="../mbn/schema-authprotocol-contexttype-element.md"><strong>AuthProtocol</strong></a> v1.</p></td>
+<td><p>>Especifica el protocolo de autenticación que se usará para activar un contexto de Protocolo de datos de paquetes (PDP).</p>
+<p>Tenga en cuenta que, en la versión v4, hay disponible un nuevo valor de enumeración para este elemento. <strong>AutoSelection</strong> significa que un protocolo de autenticación se debe seleccionar por capas inferiores.</p>
+<p>Para más información, consulte la documentación del elemento <a href="../mbn/schema-authprotocol-contexttype-element.md"><strong>AuthProtocol</strong></a> v1.</p></td>
 </tr>
 <tr class="odd">
 <td><a href="element-1-compression.md">Compresión</a></td>
@@ -92,23 +92,23 @@ Ninguno.
 </tr>
 <tr class="even">
 <td><a href="element-1-iptype.md">IPType</a></td>
-<td><p>Especifica el tipo de IP que se va a usar en esta conexión de datos.</p>
-<p>Este elemento es nuevo en V4 del esquema. El elemento puede tener uno de los valores siguientes.</p>
+<td><p>Especifica el tipo de IP que se usará en esta conexión de datos.</p>
+<p>Este elemento es nuevo en la versión 4 del esquema. El elemento puede tener uno de los siguientes valores.</p>
 <table>
 <thead>
 <tr class="header">
-<th>Valor</th>
+<th>Value</th>
 <th>Significado</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Valor predeterminado</td>
-<td>El tipo de IP se va a seleccionar por las capas inferiores</td>
+<td>El tipo de IP se debe seleccionar por capas inferiores.</td>
 </tr>
 <tr class="even">
 <td>IPv4</td>
-<td>Usar IPv4</td>
+<td>Uso de IPv4</td>
 </tr>
 <tr class="odd">
 <td>IPv6</td>
@@ -116,11 +116,11 @@ Ninguno.
 </tr>
 <tr class="even">
 <td>IPv4v6</td>
-<td>Usar IPv4 y/o IPv6, como están disponibles.</td>
+<td>Use IPv4 o IPv6, según esté disponible.</td>
 </tr>
 <tr class="odd">
 <td>XLAT</td>
-<td>Usar 464XLAT para canalizar redes IPv4 a través de IPv6</td>
+<td>Uso de 464XLAT para tunelización de IPv4 a través de redes IPv6</td>
 </tr>
 </tbody>
 </table>
@@ -151,8 +151,8 @@ Ninguno.
 <tbody>
 <tr class="odd">
 <td><a href="element-mbnprofileext.md">MBNProfileExt</a></td>
-<td><p>El elemento <strong>MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p>
-<p>Puede haber más de un elemento MbnProfileExt en un perfil, que describe la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el elemento secundario <a href="element-profileconditionedon.md"><strong>ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento convierten un perfil determinado en el perfil activo.</p></td>
+<td><p>El <strong>elemento MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p>
+<p>Puede haber más de un elemento MbnProfileExt en un perfil, que describe la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el <a href="element-profileconditionedon.md"><strong>elemento secundario ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento hacen que un perfil determinado sea el perfil activo.</p></td>
 </tr>
 <tr class="even">
 <td><a href="element-modemdmconfigprofile.md">ModemDMConfigProfile</a></td>

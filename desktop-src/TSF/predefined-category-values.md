@@ -4,24 +4,24 @@ description: Valores de categoría predefinidos
 ms.assetid: 04c0632d-ac64-4081-ba95-c11feb3f40dd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0d45ce9d89ad5c0ff67c9543e10f0837a15bc64
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a14cfbe541c857adf04c109a9186e64256a6465bdb695ff594db5136b0e7cebd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103773885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117951941"
 ---
 # <a name="predefined-category-values"></a>Valores de categoría predefinidos
 
 ## <a name="requirements"></a>Requisitos
 
-**Paquete redistribuible:** Requiere TSF 1,0 en Windows 2000.
+**Redistribuible:** Requiere TSF 1.0 en Windows 2000.
 
- 
+ 
 
-**Encabezado:** Declarado en msctf. idl y msctf. h.
+**Encabezado:** Declarado en Msctf.idl y Msctf.h.
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -36,9 +36,9 @@ ms.locfileid: "103773885"
 [**ITfInputProcessorProfiles::GetDefaultLanguageProfile**](/windows/desktop/api/Msctf/nf-msctf-itfinputprocessorprofiles-getdefaultlanguageprofile)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

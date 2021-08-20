@@ -1,11 +1,11 @@
 ---
-title: Propiedad ripState de IWMPCdromRip
-description: La propiedad ripState obtiene un valor de enumeración que indica el estado actual del proceso de copia desde CD.
+title: IWMPCdromRip ripState, propiedad
+description: La propiedad ripState obtiene un valor de enumeración que indica el estado actual del proceso de layout.
 ms.assetid: eacf36d9-725c-47cf-9f90-6241feeb67bc
 keywords:
-- propiedades de ripState Media Player de Windows
-- propiedad ripState de Windows Media Player, interfaz IWMPCdromRip
-- Interfaz IWMPCdromRip Windows Media Player, propiedad ripState
+- propiedad ripState Reproductor de Windows Media
+- Propiedad ripState Reproductor de Windows Media , interfaz IWMPCdromRip
+- Interfaz IWMPCdromRip Reproductor de Windows Media , propiedad ripState
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0245ea8ff7d863faa1f44c8d0578777ae6cd605
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3405741d7e5b80aaba6fd6826fe1271ceed379b15fef3e78d7ba8fc1d13dc87e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117930409"
 ---
-# <a name="iwmpcdromripripstate-property"></a>IWMPCdromRip:: ripState (propiedad)
+# <a name="iwmpcdromripripstate-property"></a>IWMPCdromRip::ripState, propiedad
 
-La propiedad **ripState** obtiene un valor de enumeración que indica el estado actual del proceso de copia desde CD.
+La **propiedad ripState** obtiene un valor de enumeración que indica el estado actual del proceso de unmanaged.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,15 +46,15 @@ Public ReadOnly Property ripState As WMPRipState
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**WMPLib. WMPRipState** que es un valor de la enumeración **WMPRipState** que indica el estado actual.
+**WMPLib.WMPRipState** que es un valor de la enumeración **WMPRipState** que indica el estado actual.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 11.<br/>                                                                                    |
+| Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -67,7 +67,7 @@ Public ReadOnly Property ripState As WMPRipState
 [**Interfaz IWMPCdromRip (VB y C#)**](iwmpcdromrip--vb-and-c.md)
 </dt> <dt>
 
-[**Copia desde CD**](ripping-a-cd.md)
+[**Resalte un CD**](ripping-a-cd.md)
 </dt> <dt>
 
 [**WMPRipState**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpripstate)

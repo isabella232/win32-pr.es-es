@@ -1,7 +1,7 @@
 ---
-description: 'Función de proxy de Windows Imaging Component (WIC) para IPropertyBag2:: Write.'
+description: Windows Función de proxy del componente de creación de imágenes (WIC) para IPropertyBag2::Write.
 ms.assetid: b97caba6-298a-4b36-9f39-9b5440b866c3
-title: IPropertyBag2_Write_Proxy función)
+title: IPropertyBag2_Write_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: c868ee748c3c2894daa63850284ae121f85975fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd2a7ca1d2d2ec0be78ebef555944c1a0760c8839cb9a785a87ad4ea3d1fe554
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117668660"
 ---
-# <a name="ipropertybag2_write_proxy-function"></a>IPropertyBag2 \_ escribir \_ función de proxy
+# <a name="ipropertybag2_write_proxy-function"></a>Función IPropertyBag2 \_ Write \_ Proxy
 
-Función de proxy de Windows Imaging Component (WIC) para IPropertyBag2:: Write.
+Windows Función de proxy del componente de creación de imágenes (WIC) para IPropertyBag2::Write.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,41 +43,41 @@ HRESULT IPropertyBag2_Write_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[IPropertyBag2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768192(v=vs.85)) \** _
+Tipo: **[IPropertyBag2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768192(v=vs.85))\***
 
 PARAMDESC
 
 </dd> <dt>
 
-_cProperties * \[ en\]
+*cProperties* \[ En\]
 </dt> <dd>
 
-Tipo: **ULong**
+Tipo: **ULONG**
 
 </dd> <dt>
 
-*ppropBag* \[ de\]
+*ppropBag* \[ En\]
 </dt> <dd>
 
-Tipo: **[PROPBAG2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768188(v=vs.85)) \** _
+Tipo: **[PROPBAG2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768188(v=vs.85))\***
 
 </dd> <dt>
 
-_pvarValue * \[ en\]
+*pvarValue* \[ En\]
 </dt> <dd>
 
-Tipo: **variante \** _
+Tipo: **\* VARIANT**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -85,11 +85,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows \[ aplicaciones de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

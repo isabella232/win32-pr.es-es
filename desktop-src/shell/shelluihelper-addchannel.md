@@ -1,5 +1,5 @@
 ---
-description: Agrega un nuevo canal a la lista de canales en el menú Favoritos de Windows Internet Explorer y en la barra Canal del escritorio.
+description: Agrega un nuevo canal a la lista de canales del menú Windows Internet Explorer Favoritos y a la barra Canal del escritorio.
 title: Método ShellUIHelper.AddChannel (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: b62e6e82-429a-4d41-96d4-cba639b611f5
-ms.openlocfilehash: d08c1360cb2a96fbc7b87daecb650bbf46aa6ad9
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 6be928a7cae9d9349bb39fc3a27a49a16495a8609c8e1cb448de888ac190619b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118047518"
 ---
 # <a name="shelluihelperaddchannel-method"></a>Método ShellUIHelper.AddChannel
 
-Agrega un nuevo canal a la lista de **canales** del menú Internet Explorer Favoritos de Windows y a la barra **Canal** del escritorio.
+Agrega un nuevo canal a la lista de **canales** del menú Windows Internet Explorer Favoritos y a la barra **Canal** del escritorio.
 
 > [!Note]  
 > Este método ya no se admite en Windows Vista. En ese sistema operativo, devuelve E \_ NOTIMPL.
@@ -62,7 +62,7 @@ Valor **string** que especifica la dirección URL del archivo CDF.
 
 En el ejemplo siguiente se muestra el uso adecuado de este método para JScript insertado en HTML y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -111,9 +111,9 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |

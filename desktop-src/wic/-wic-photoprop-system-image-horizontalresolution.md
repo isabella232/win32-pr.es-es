@@ -1,23 +1,23 @@
 ---
-title: Directiva de metadatos de la foto System. Image. HorizontalResolution
-description: La Directiva de metadatos de la fotografía para la propiedad System. Image. HorizontalResolution.
+title: Directiva de metadatos de fotos System.Image.HorizontalResolution
+description: Directiva de metadatos de fotos para la propiedad System.Image.HorizontalResolution.
 ms.assetid: 1fe73c50-4179-4ea4-be1c-9e103fb65d59
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ade406e644524fea84ef6baf957aed661d2adf07
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 577c30c83110d2c486fcc36161965321faa7da5bf2f4932562296a4b5ff1d592
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103814246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117667615"
 ---
-# <a name="systemimagehorizontalresolution-photo-metadata-policy"></a>Directiva de metadatos de la foto System. Image. HorizontalResolution
+# <a name="systemimagehorizontalresolution-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Image.HorizontalResolution
 
-La Directiva de metadatos de la fotografía para la propiedad [System. Image. HorizontalResolution](../properties/props-system-image-horizontalresolution.md) .
+Directiva de metadatos de fotos para [la propiedad System.Image.HorizontalResolution.](../properties/props-system-image-horizontalresolution.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-PKEY \_ \_ rehorizontalresolution de imagen
+Imagen PKEY \_ \_ HorizontalResolution
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,13 +27,13 @@ JPEG, TIFF
 
 Sí.
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ R8
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-El sistema genera este valor y no se puede escribir directamente. Se reconcilian los valores de los distintos esquemas.
+El sistema genera este valor y no se puede escribir directamente. Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
@@ -41,9 +41,9 @@ El sistema genera este valor y no se puede escribir directamente. Se reconcilian
 
 
 
-| Pedido | Ruta                   | Formato de disco |
+| Pedido | Ruta de acceso                   | Formato de disco |
 |-------|------------------------|-------------|
-| 1     | /app1/IFD/{ushort = 282} |             |
+| 1     | /app1/ifd/{ushort=282} |             |
 | 2     | /xmp/tiff:XResolution  |             |
 
 
@@ -54,9 +54,9 @@ El sistema genera este valor y no se puede escribir directamente. Se reconcilian
 
 
 
-| Pedido | Ruta                        | Formato de disco |
+| Pedido | Ruta de acceso                        | Formato de disco |
 |-------|-----------------------------|-------------|
-| 1     | /app1/IFD/Exif/{ushort = 282} |             |
+| 1     | /app1/ifd/exif/{ushort=282} |             |
 | 2     | /xmp/tiff:xresolution       |             |
 
 
@@ -69,9 +69,9 @@ El sistema genera este valor y no se puede escribir directamente. Se reconcilian
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/Exif/{ushort = 282}    |             |
+| 1     | /ifd/exif/{ushort=282}    |             |
 | 2     | /ifd/xmp/tiff:XResolution |             |
 
 
@@ -82,22 +82,22 @@ El sistema genera este valor y no se puede escribir directamente. Se reconcilian
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/Exif/{ushort = 282}    |             |
+| 1     | /ifd/exif/{ushort=282}    |             |
 | 2     | /ifd/xmp/tiff:xresolution |             |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. Image. HorizontalResolution](../properties/props-system-image-horizontalresolution.md)
+[System.Image.HorizontalResolution](../properties/props-system-image-horizontalresolution.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: InstallLayoutOrTipUserReg función)
-description: Habilita las distribuciones de teclado o los servicios de texto especificados para el usuario especificado.
+title: Función InstallLayoutOrTipUserReg
+description: Habilita los diseños de teclado o servicios de texto especificados para el usuario especificado.
 ms.assetid: f9b7a77e-5e82-41a6-8deb-be13bb96e85f
 keywords:
-- InstallLayoutOrTipUserReg función de servicios de texto
+- Función InstallLayoutOrTipUserReg Text Services Framework
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0484aeb16990467edd6e9f56a8a0cb6ca27b9ff
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c8af476cc18d788c0fe732e45ddfdc9f22748e595058d6f7feb1660f61963bf0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117952927"
 ---
-# <a name="installlayoutortipuserreg-function"></a>InstallLayoutOrTipUserReg función)
+# <a name="installlayoutortipuserreg-function"></a>Función InstallLayoutOrTipUserReg
 
-Habilita las distribuciones de teclado o los servicios de texto especificados para el usuario especificado.
+Habilita los diseños de teclado o servicios de texto especificados para el usuario especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,50 +47,50 @@ BOOL CALLBACK InstallLayoutOrTipUserReg(
 *pszUserReg* \[ en, opcional\]
 </dt> <dd>
 
-La ruta de acceso del registro del usuario. Si este parámetro es **null**, \_ \_ se utiliza HKEY current user.
+Ruta de acceso del Registro del usuario. Si este parámetro es **NULL,** se usa HKEY \_ CURRENT \_ USER.
 
 </dd> <dt>
 
 *pszSystemReg* \[ en, opcional\]
 </dt> <dd>
 
-Ruta de acceso del registro del sistema. Si este parámetro es **null**, \_ \_ se usa HKEY local Machine \\ System.
+Ruta de acceso del Registro del sistema. Si este parámetro es **NULL,** se usa HKEY \_ LOCAL MACHINE \_ \\ System.
 
 </dd> <dt>
 
 *pszSoftwareReg* \[ en, opcional\]
 </dt> <dd>
 
-La ruta de acceso del registro del software. Si este parámetro es **null**, \_ \_ se utiliza el software del equipo local HKEY \\ .
+Ruta de acceso del registro del software. Si este parámetro es **NULL,** se usa HKEY \_ LOCAL MACHINE \_ \\ Software.
 
 </dd> <dt>
 
-*PSZ* \[ de\]
+*psz* \[ En\]
 </dt> <dd>
 
-Cadena que representa la lista de distribución del teclado o la lista de perfiles de servicios de texto.
+Cadena que representa la lista de diseño de teclado o la lista de perfiles de servicios de texto.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Un campo de bits que especifica las marcas siguientes.
+Campo de bits que especifica las marcas siguientes.
 
 > [!Note]  
-> Los identificadores siguientes no se definen en un archivo de encabezado público. Debe usar el valor hexadecimal o \# definir los identificadores. Por ejemplo, para usar **la \_ desinstalación de ILOT** , debe incluir `#define ILOT_UNINSTALL 0x00000001` en el código.
+> Los identificadores siguientes no se definen en un archivo de encabezado público. Debe usar el valor hexadecimal o \# definir los identificadores. Por ejemplo, para usar **ILOT \_ UNINSTALL** debe incluir `#define ILOT_UNINSTALL 0x00000001` en el código.
 
  
 
 
 
-| Value                                                                                                                                                                                                                                                                      | Significado                                                                    |
+| Valor                                                                                                                                                                                                                                                                      | Significado                                                                    |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| <span id="ILOT_UNINSTALL"></span><span id="ilot_uninstall"></span><dl> <dt>**ILOT \_ Desinstalar**</dt> <dt>0x00000001</dt> </dl>                                           | Igual que **ILOT \_ deshabilitado**.<br/>                                     |
-| <span id="ILOT_DEFPROFILE"></span><span id="ilot_defprofile"></span><dl> <dt>**ILOT \_ DEFPROFILE**</dt> <dt>0x00000002</dt> </dl>                                        | Establece el diseño o la sugerencia especificados como un elemento predeterminado.<br/>             |
-| <span id="ILOT_NOAPPLYTOCURRENTSESSION"></span><span id="ilot_noapplytocurrentsession"></span><dl> <dt>**ILOT \_ NOAPPLYTOCURRENTSESSION**</dt> <dt>0x00000020</dt> </dl> | La configuración se guarda pero no se aplica a la sesión actual.<br/> |
-| <span id="ILOT_CLEANINSTALL"></span><span id="ilot_cleaninstall"></span><dl> <dt>**ILOT \_ CLEANINSTALL**</dt> <dt>0x00000040</dt> </dl>                                  | Deshabilita todos los servicios de texto y distribuciones de teclado actuales.<br/> |
-| <span id="ILOT_DISABLED"></span><span id="ilot_disabled"></span><dl> <dt>**ILOT \_ Deshabilitado**</dt> <dt>0x00000080</dt> </dl>                                              | Deshabilita la distribución del teclado y el servicio de texto especificados.<br/>        |
+| <span id="ILOT_UNINSTALL"></span><span id="ilot_uninstall"></span><dl> <dt>**ILOT \_ Uninstall**</dt> <dt>0x00000001</dt> </dl>                                           | Igual que **ILOT \_ DISABLED.**<br/>                                     |
+| <span id="ILOT_DEFPROFILE"></span><span id="ilot_defprofile"></span><dl> <dt>**ILOT \_ DeFPROFILE**</dt> <dt>0x00000002</dt> </dl>                                        | Establece el diseño o la sugerencia especificados como un elemento predeterminado.<br/>             |
+| <span id="ILOT_NOAPPLYTOCURRENTSESSION"></span><span id="ilot_noapplytocurrentsession"></span><dl> <dt>**ILOT \_ NoAPPLYTOCURRENTSESSION**</dt> <dt>0x00000020</dt> </dl> | La configuración se guarda, pero no se aplica a la sesión actual.<br/> |
+| <span id="ILOT_CLEANINSTALL"></span><span id="ilot_cleaninstall"></span><dl> <dt>**ILOT \_ 0x00000040 CLEANINSTALL**</dt> <dt></dt> </dl>                                  | Deshabilita todos los diseños de teclado y servicios de texto actuales.<br/> |
+| <span id="ILOT_DISABLED"></span><span id="ilot_disabled"></span><dl> <dt>**ILOT \_ DISABLED**</dt> <dt>0x00000080</dt> </dl>                                              | Deshabilita el diseño de teclado y el servicio de texto especificados.<br/>        |
 
 
 
@@ -104,24 +104,24 @@ Un campo de bits que especifica las marcas siguientes.
 
 | Código devuelto                                                                         | Descripción                               |
 |-------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**REALES**</dt> </dl> | La función se realizó correctamente.<br/>   |
-| <dl> <dt>**FASES**</dt> </dl> | Se ha producido un error no especificado.<br/> |
+| <dl> <dt>**Verdad**</dt> </dl> | La función se ha realizado correctamente.<br/>   |
+| <dl> <dt>**FASE**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El formato de cadena de la lista de diseño es:
 
-<LangID 1>: <KLID 1>; \[ ...<LangID N>:<KLID N>
+<LangID 1>:<>; \[ ...<LangID N>:<KLID N>
 
 El formato de cadena de la lista de perfiles de servicio de texto es:
 
-<LangID 1>: {xxxxxxxx-XXXX-XXXX-XXXX-XXXXXXXXXXXX} {xxxxxxxx-XXXX-XXXX-XXXX-XXXXXXXXXXXX};
+<LangID 1>:{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx};
 
-El siguiente es un ejemplo de un valor para el parámetro *PSZ* :
+A continuación se muestra un ejemplo de un valor para el *parámetro psz:*
 
 
 ```C++
@@ -134,10 +134,10 @@ El siguiente es un ejemplo de un valor para el parámetro *PSZ* :
 
 ## <a name="examples"></a>Ejemplos
 
-No hay ninguna biblioteca de importación disponible que defina esta función, por lo que es necesario obtener un puntero a esta función mediante [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress). En el ejemplo siguiente se muestra cómo obtener un puntero a esta función.
+No hay disponible ninguna biblioteca de importación que defina esta función, por lo que es necesario obtener un puntero a esta función mediante [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress). En el ejemplo siguiente se muestra cómo obtener un puntero a esta función.
 
 > [!Note]  
-> El uso incorrecto de [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) puede poner en peligro la seguridad de la aplicación mediante la carga de una DLL incorrecta. Consulte el [orden de búsqueda de la biblioteca de vínculos dinámicos](/windows/desktop/Dlls/dynamic-link-library-search-order) para obtener información sobre cómo cargar correctamente los archivos DLL con diferentes versiones de Microsoft Windows.
+> El [**uso incorrecto de LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) puede poner en peligro la seguridad de la aplicación al cargar el archivo DLL incorrecto. Consulte [Orden de búsqueda de la biblioteca de](/windows/desktop/Dlls/dynamic-link-library-search-order) vínculos dinámicos para obtener información sobre cómo cargar correctamente archivos DLL con diferentes versiones de Microsoft Windows.
 
  
 
@@ -181,8 +181,8 @@ else
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                 |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
 | Archivo DLL<br/>                      | <dl> <dt>Input.dll</dt> </dl> |
 
 

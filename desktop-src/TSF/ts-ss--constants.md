@@ -1,6 +1,6 @@
 ---
-title: Constantes de TS_SS_ (Textstor. h)
-description: Las constantes de TS \_ SS \_ \, definidas antes del tiempo de ejecución en la estructura de estado de TS \_ , describen los Estados de documento estático.
+title: TS_SS_ constantes (Textstor.h)
+description: Las constantes SS \ de TS, definidas antes del tiempo de ejecución en la \_ \_ estructura TS \_ STATUS, describen los estados de documento estáticos.
 ms.assetid: 17264527-946a-4648-a4eb-30db751602ab
 topic_type:
 - apiref
@@ -17,33 +17,33 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 773645b8a75b7e8eeafa40ed9fa95067743628d7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bfb3468b90427bf29e1e16f746fff03ba163ac67513667f241baee9f533615fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117950071"
 ---
-# <a name="ts_ss_-constants"></a>Constantes de TS \_ SS \_ \*
+# <a name="ts_ss_-constants"></a>Constantes \_ de SS de TS \_ \*
 
-Las constantes de TS \_ SS \_ \* , definidas antes del tiempo de ejecución en la estructura de [**\_ Estado de TS**](/windows/desktop/api/Textstor/ns-textstor-ts_status) , describen los Estados de documento estático.
+Las constantes de SS de TS, definidas antes del tiempo de ejecución en la \_ \_ \* [**estructura TS \_ STATUS,**](/windows/desktop/api/Textstor/ns-textstor-ts_status) describen los estados de documento estáticos.
 
 
 
 | Constante o valor                                                                                                                                                                                                                                                      | Descripción                                                                                                    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------|
-| <span id="TS_SS_DISJOINTSEL"></span><span id="ts_ss_disjointsel"></span><dl> <dt>**TS \_ SS \_ DISJOINTSEL**</dt> <dt>(0x1)</dt> </dl>                             | El documento admite selecciones múltiples.<br/>                                                          |
-| <span id="TS_SS_REGIONS"></span><span id="ts_ss_regions"></span><dl> <dt>**TS \_ \_Regiones de SS**</dt> <dt>(0X2)</dt> </dl>                                         | El documento puede contener varias regiones.<br/>                                                          |
-| <span id="TS_SS_TRANSITORY"></span><span id="ts_ss_transitory"></span><dl> <dt>**TS \_ SS \_ transitorio**</dt> <dt>(0x4)</dt> </dl>                                | Se espera que el documento tenga un ciclo de uso breve.<br/>                                               |
-| <span id="TS_SS_NOHIDDENTEXT"></span><span id="ts_ss_nohiddentext"></span><dl> <dt>**TS \_ SS \_ NOHIDDENTEXT**</dt> <dt>(0x8)</dt> </dl>                          | El documento nunca contendrá texto oculto.<br/>                                                        |
-| <span id="TS_SS_TKBAUTOCORRECTENABLE"></span><span id="ts_ss_tkbautocorrectenable"></span><dl> <dt>**TS \_ SS \_ TKBAUTOCORRECTENABLE**</dt> <dt>(0x10)</dt> </dl> | **A partir de Windows 8:** El documento admite la corrección automática proporcionada por el teclado táctil.<br/>   |
-| <span id="TS_SS_TKBPREDICTIONENABLE"></span><span id="ts_ss_tkbpredictionenable"></span><dl> <dt>**TS \_ SS \_ TKBPREDICTIONENABLE**</dt> <dt>(0x20)</dt> </dl>    | **A partir de Windows 8:** El documento admite las sugerencias de texto que proporciona el teclado táctil.<br/> |
+| <span id="TS_SS_DISJOINTSEL"></span><span id="ts_ss_disjointsel"></span><dl> <dt>**TS \_ SS \_ DISJOINTSEL**</dt> <dt>( 0x1 )</dt> </dl>                             | El documento admite varias selecciones.<br/>                                                          |
+| <span id="TS_SS_REGIONS"></span><span id="ts_ss_regions"></span><dl> <dt>**TS \_ \_REGIONES DE SS**</dt> <dt>( 0x2 )</dt> </dl>                                         | El documento puede contener varias regiones.<br/>                                                          |
+| <span id="TS_SS_TRANSITORY"></span><span id="ts_ss_transitory"></span><dl> <dt>**TS \_ SS \_ TRANSITORY**</dt> <dt>( 0x4 )</dt> </dl>                                | Se espera que el documento tenga un ciclo de uso corto.<br/>                                               |
+| <span id="TS_SS_NOHIDDENTEXT"></span><span id="ts_ss_nohiddentext"></span><dl> <dt>**TS \_ SS \_ NOHIDDENTEXT**</dt> <dt>( 0x8 )</dt> </dl>                          | El documento nunca contendrá texto oculto.<br/>                                                        |
+| <span id="TS_SS_TKBAUTOCORRECTENABLE"></span><span id="ts_ss_tkbautocorrectenable"></span><dl> <dt>**TS \_ SS \_ TKBAUTOCORRECTENABLE**</dt> <dt>( 0x10 )</dt> </dl> | **A partir de Windows 8:** El documento admite la autocorrección proporcionada por el teclado táctil.<br/>   |
+| <span id="TS_SS_TKBPREDICTIONENABLE"></span><span id="ts_ss_tkbpredictionenable"></span><dl> <dt>**TS \_ SS \_ TKBPREDICTIONENABLE**</dt> <dt>( 0x20 )</dt> </dl>    | **A partir de Windows 8:** El documento admite sugerencias de texto proporcionadas por el teclado táctil.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El miembro **dwStaticFlags** de la estructura de **\_ Estado de TS** utiliza estas constantes.
+El **miembro dwStaticFlags** de la **estructura TS \_ STATUS** usa estas constantes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ El miembro **dwStaticFlags** de la estructura de **\_ Estado de TS** utiliza est
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Redistribuible<br/>          | TSF 1,0 en Windows 2000 Professional<br/>                                         |
-| Encabezado<br/>                   | <dl> <dt>Textstor. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Textstor. idl</dt> </dl> |
+| Redistribuible<br/>          | TSF 1.0 en Windows 2000 Professional<br/>                                         |
+| Header<br/>                   | <dl> <dt>Textstor.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Textstor.idl</dt> </dl> |
 
 
 
@@ -63,10 +63,10 @@ El miembro **dwStaticFlags** de la estructura de **\_ Estado de TS** utiliza est
 
 <dl> <dt>
 
-[**Estado de TS \_**](/windows/desktop/api/Textstor/ns-textstor-ts_status)
+[**ESTADO DE \_ TS**](/windows/desktop/api/Textstor/ns-textstor-ts_status)
 </dt> <dt>
 
-[**Estado de TF \_**](/previous-versions/windows/desktop/legacy/ms629192(v=vs.85))
+[**TF \_ STATUS**](/previous-versions/windows/desktop/legacy/ms629192(v=vs.85))
 </dt> </dl>
 
  

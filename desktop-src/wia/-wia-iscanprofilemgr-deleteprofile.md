@@ -1,7 +1,7 @@
 ---
-description: Elimina el perfil de digitalización especificado.
+description: Elimina el perfil de examen especificado.
 ms.assetid: 31020528-3a96-492f-a3a1-e9075d4ffd14
-title: IScanProfileMgr::D método eleteProfile (Scanprofilemgr. h)
+title: Método IScanProfileMgr::D eleteProfile (Scanprofilemgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: f45dfa3ef96fee194348192c2898a44df5f34be4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 52a4f2fc11e2a2cac1c3b3c547ee1b7a967a5441fc44cd2bb213bdbf681df8f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104002036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117670258"
 ---
-# <a name="iscanprofilemgrdeleteprofile-method"></a>IScanProfileMgr::D método eleteProfile
+# <a name="iscanprofilemgrdeleteprofile-method"></a>IScanProfileMgr::D eleteProfile (método)
 
-Elimina el perfil de digitalización especificado.
+Elimina el perfil de examen especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,10 +39,10 @@ HRESULT DeleteProfile(
 
 <dl> <dt>
 
-*pScanProfile* \[ de\]
+*pScanProfile* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IScanProfile**](-wia-iscanprofile.md) \** _
+Tipo: **[ **IScanProfile**](-wia-iscanprofile.md)\***
 
 Puntero al perfil.
 
@@ -50,26 +50,26 @@ Puntero al perfil.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**IScanProfileMgr::D eleteprofile** elimina el perfil del disco y destruye el objeto de perfil en la memoria.
+**IScanProfileMgr::D eleteProfile** elimina el perfil del disco y destruye el objeto de perfil en memoria.
 
-Use el método [**IScanProfileMgr:: Refresh**](-wia-iscanprofilemgr-refresh.md) cuando más de un objeto [**IScanProfileMgr**](-wia-iscanprofilemgr.md) pueda estar creando o eliminando perfiles al mismo tiempo.
+Use el [**método IScanProfileMgr::Refresh**](-wia-iscanprofilemgr-refresh.md) cuando más de un objeto [**IScanProfileMgr**](-wia-iscanprofilemgr.md) pueda crear o eliminar perfiles al mismo tiempo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
+| Header<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Use el método [**IScanProfileMgr:: Refresh**](-wia-iscanprofilemgr-refresh.md) 
 [**IScanProfileMgr**](-wia-iscanprofilemgr.md)
 </dt> <dt>
 
-[Esquema de análisis de perfil](-wia-scan-profile-schema.md)
+[Esquema de perfil de examen](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

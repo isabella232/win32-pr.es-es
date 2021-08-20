@@ -1,5 +1,5 @@
 ---
-description: Indica si se ha suscrito una dirección URL especificada.
+description: Indica si se ha suscrito a una dirección URL especificada.
 title: Método ShellUIHelper.IsSubscribed (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: fcf23352-6603-4b17-9c3b-b353cca1c003
-ms.openlocfilehash: ca68d2e46ce74593b66aac6f995b88ddcb79796b
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 4cdb724e9a1b2bd77803f6fe104515057e69f532f62ea05d273f0178dd90e61b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118047481"
 ---
 # <a name="shelluihelperissubscribed-method"></a>Método ShellUIHelper.IsSubscribed
 
-Indica si se ha suscrito una dirección URL especificada.
+Indica si se ha suscrito a una dirección URL especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,13 +52,13 @@ Valor **string** que especifica la dirección URL.
 
 Tipo: **\* booleano**
 
-**True** si la dirección URL está suscrita; de lo contrario, **false**.
+**true** si la dirección URL está suscrita; de lo contrario, **false**.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso adecuado de este método para JScript insertado en HTML y Visual Basic.
+En el ejemplo siguiente se muestra el uso adecuado de este método para JScript insertados en HTML y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -112,9 +112,9 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |

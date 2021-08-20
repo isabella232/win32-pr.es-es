@@ -5,22 +5,22 @@ ms.tgt_platform: multiple
 title: Métodos SWbemLastError
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b79749fe047aedfcca8a52a90c1fd96c4964468
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f353fb641d493f181e41d188f76894eef252bfe8e1c12cbc4ce989ead7a8274
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103812428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117922524"
 ---
 # <a name="swbemlasterror-methods"></a>Métodos SWbemLastError
 
-El objeto [**SWbemLastError**](swbemlasterror.md) expone los métodos siguientes.
+El [**objeto SWbemLastError**](swbemlasterror.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Clone ( \_ método)**](swbemlasterror-clone-.md)
--   [**Método CompareTo \_**](swbemlasterror-compareto-.md)
--   [**\_Método GetObjectText**](swbemlasterror-getobjecttext-.md)
+-   [**Clone method (Método \_ de clonación)**](swbemlasterror-clone-.md)
+-   [**Método \_ CompareTo**](swbemlasterror-compareto-.md)
+-   [**Método \_ GetObjectText**](swbemlasterror-getobjecttext-.md)
 
  
 

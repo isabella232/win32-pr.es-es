@@ -1,32 +1,32 @@
 ---
-description: La API de sensor expone las siguientes interfaces COM.
+description: Sensor API expone las siguientes interfaces COM.
 ms.assetid: 872de1e9-20f9-409b-9917-24b13a8cc08a
-title: Interfaces COM (API de sensor)
+title: COM Interfaces (Sensor API)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66a73e506f5b2a59a7ce8373b810aeba779f5e9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dec09b777379b283a4b941eccd6b6a393d4b51acbdd212e13f6b70569e866833
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117968319"
 ---
-# <a name="com-interfaces-sensor-api"></a>Interfaces COM (API de sensor)
+# <a name="com-interfaces-sensor-api"></a>COM Interfaces (Sensor API)
 
-La API de sensor expone las siguientes interfaces COM.
+Sensor API expone las siguientes interfaces COM.
 
 
 
 | Interfaz                                              | Descripción                                                                                                      |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| [**ILocationPermissions**](/windows/desktop/api/sensorsapi/nn-sensorsapi-ilocationpermissions)   | Proporciona el estado de la configuración del sistema que permite a los usuarios cambiar la configuración de la ubicación.                         |
-| [**ILogicalSensorManager**](/previous-versions/windows/desktop/legacy/dd318934(v=vs.85)) | Proporciona métodos usados por los autores de sensores lógicos para administrar las conexiones del sensor lógico.                            |
+| [**ILocationPermissions**](/windows/desktop/api/sensorsapi/nn-sensorsapi-ilocationpermissions)   | Proporciona el estado de la configuración del sistema que permite a los usuarios cambiar la configuración de ubicación.                         |
+| [**ILogicalSensorManager**](/previous-versions/windows/desktop/legacy/dd318934(v=vs.85)) | Proporciona métodos utilizados por los autores de sensores lógicos para administrar las conexiones de sensor lógico.                            |
 | [**ISensor**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensor)                             | Representa un sensor.                                                                                             |
 | [**ISensorCollection**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensorcollection)         | Representa una colección de sensores.                                                                              |
-| [**ISensorDataReport**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensordatareport)         | Representa un informe de datos de sensor.                                                                                 |
-| [**ISensorEvents**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensorevents)                 | La interfaz de devolución de llamada para recibir eventos del sensor.                                                              |
-| [**ISensorManager**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensormanager)               | Proporciona métodos para detectar y recuperar los sensores disponibles y un método para solicitar eventos del administrador del sensor. |
-| [**ISensorManagerEvents**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensormanagerevents)   | La interfaz de devolución de llamada para recibir eventos del administrador del sensor.                                                      |
+| [**ISensorDataReport**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensordatareport)         | Representa un informe de datos del sensor.                                                                                 |
+| [**ISensorEvents**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensorevents)                 | Interfaz de devolución de llamada para recibir eventos de sensor.                                                              |
+| [**ISensorManager**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensormanager)               | Proporciona métodos para detectar y recuperar los sensores disponibles y un método para solicitar eventos del administrador de sensores. |
+| [**ISensorManagerEvents**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensormanagerevents)   | Interfaz de devolución de llamada para recibir eventos del administrador de sensores.                                                      |
 
 
 
@@ -36,7 +36,7 @@ La API de sensor expone las siguientes interfaces COM.
 
 <dl> <dt>
 
-[Referencia de programación de API de sensor](sensor-api-programming-reference.md)
+[Referencia de programación de Sensor API](sensor-api-programming-reference.md)
 </dt> </dl>
 
  

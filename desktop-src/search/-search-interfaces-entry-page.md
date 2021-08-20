@@ -1,17 +1,17 @@
 ---
-description: Windows Search Interfaces
+description: Windows Interfaces de búsqueda
 ms.assetid: 72a30318-d557-4f32-85e6-25f1f97fdd9f
-title: Windows Search Interfaces
+title: Windows Interfaces de búsqueda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b68eca532a15b9f8655c639bf8588c0dfe0862bf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e2da08d6ecd6456c6a49ea65a81c2f85e85d6ee9bd085de4c99bf374f86544a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117863968"
 ---
-# <a name="windows-search-interfaces"></a>Windows Search Interfaces
+# <a name="windows-search-interfaces"></a>Windows Interfaces de búsqueda
 
 
 En esta sección se documenta las siguientes categorías de interfaces:

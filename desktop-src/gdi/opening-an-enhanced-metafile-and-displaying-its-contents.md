@@ -1,21 +1,21 @@
 ---
-description: Esta sección contiene un ejemplo que muestra cómo una aplicación abre un metarchivo mejorado almacenado en disco y muestra la imagen asociada en el área cliente.
+description: Esta sección contiene un ejemplo que muestra cómo una aplicación abre un metarchivo mejorado almacenado en disco y muestra la imagen asociada en el área de cliente.
 ms.assetid: e4e5ef5c-d5ea-4931-bbec-1635e8f08c91
 title: Abrir un metarchivo mejorado y mostrar su contenido
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4f27ce191d66345e5b46ef355757a9c077cf2f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aceb51d9b1d2117f5b47445b3026b9651fa29d656715dc03a1892881b4fd32f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117698707"
 ---
 # <a name="opening-an-enhanced-metafile-and-displaying-its-contents"></a>Abrir un metarchivo mejorado y mostrar su contenido
 
-Esta sección contiene un ejemplo que muestra cómo una aplicación abre un metarchivo mejorado almacenado en disco y muestra la imagen asociada en el área cliente.
+Esta sección contiene un ejemplo que muestra cómo una aplicación abre un metarchivo mejorado almacenado en disco y muestra la imagen asociada en el área de cliente.
 
-En el ejemplo se usa el cuadro de diálogo **abrir** común para permitir al usuario seleccionar un metarchivo mejorado en una lista de archivos existentes. A continuación, pasa el nombre del archivo seleccionado a la función [**GetEnhMetaFile**](/windows/desktop/api/WinGdi/nf-wingdi-getenhmetafilea) , que devuelve un identificador que identifica el archivo. Este identificador se pasa a la función [**PlayEnhMetaFile**](/windows/desktop/api/Wingdi/nf-wingdi-playenhmetafile) para mostrar la imagen.
+En el ejemplo se usa **el cuadro** de diálogo Abrir común para permitir al usuario seleccionar un metarchivo mejorado de una lista de archivos existentes. A continuación, pasa el nombre del archivo seleccionado a la función [**GetEnhMetaFile,**](/windows/desktop/api/WinGdi/nf-wingdi-getenhmetafilea) que devuelve un identificador que identifica el archivo. Este identificador se pasa a la [**función PlayEnhMetaFile**](/windows/desktop/api/Wingdi/nf-wingdi-playenhmetafile) para mostrar la imagen.
 
 
 ```C++

@@ -1,23 +1,23 @@
 ---
-description: La lista siguiente contiene los métodos CComObject invalidados CMSPStream.
+description: La lista siguiente contiene los métodos CComObject invalidados de CMSPStream.
 ms.assetid: aa2958c1-fdd0-4d07-a2c1-910221c79264
-title: CMSPStream métodos CComObject invalidados
+title: Métodos CComObject invalidados de CMSPStream
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b4bbbd39d057dd1796b6d9dc095e30ebd4b6ff2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 950a928fdd12ddf5bbc04af414616dfe28c5cdb26c2e0e53969eda0536cf284e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117946924"
 ---
-# <a name="cmspstream-overriden-ccomobject-methods"></a>CMSPStream métodos CComObject invalidados
+# <a name="cmspstream-overriden-ccomobject-methods"></a>Métodos CComObject invalidados de CMSPStream
 
 
 
-| CMSPStream métodos CComObject invalidados         | Descripción                         |
+| Métodos CComObject invalidados de CMSPStream         | Descripción                         |
 |-------------------------------------------------|-------------------------------------|
-| [**FinalRelease**](/windows/desktop/api/Mspstrm/nf-mspstrm-cmspstream-finalrelease) | Libera los punteros del gráfico de filtros. |
+| [**FinalRelease**](/windows/desktop/api/Mspstrm/nf-mspstrm-cmspstream-finalrelease) | Libera los punteros de gráfico de filtro. |
 
 
 

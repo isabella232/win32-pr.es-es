@@ -3,43 +3,43 @@ title: Obtención del mejor rendimiento de búsqueda de vídeo
 description: Obtención del mejor rendimiento de búsqueda de vídeo
 ms.assetid: 21269f0c-fc3a-46fc-88b4-f71828b5d5a7
 keywords:
-- Windows Media Format SDK, mejor rendimiento de búsqueda de vídeo
-- Advanced Systems Format (ASF), mejor rendimiento de búsqueda de vídeo
+- Windows SDK de formato multimedia, mejor rendimiento de búsqueda de vídeo
+- Formato de sistemas avanzados (ASF), mejor rendimiento de búsqueda de vídeo
 - ASF (formato de sistemas avanzados), mejor rendimiento de búsqueda de vídeo
-- Advanced Systems Format (ASF), vídeo que busca rendimiento
-- ASF (formato de sistemas avanzados), rendimiento de búsqueda de vídeo
-- Advanced Systems Format (ASF), performance
+- Formato de sistemas avanzados (ASF), vídeo que busca rendimiento
+- ASF (formato de sistemas avanzados), vídeo que busca el rendimiento
+- Formato de sistemas avanzados (ASF), rendimiento
 - ASF (formato de sistemas avanzados), rendimiento
-- búsqueda en vídeo
+- búsqueda de vídeo
 - rendimiento, búsqueda de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c95feb9158bbab09ce28024100f3ebbffb56ad9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d055ade42caada84e4c58667d568d796c36cf10b3250e827b6194ac68369ec4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117655611"
 ---
 # <a name="getting-the-best-video-seeking-performance"></a>Obtención del mejor rendimiento de búsqueda de vídeo
 
-La búsqueda de contenido en un archivo es una operación muy común que puede suponer un problema de rendimiento. El vídeo codificado con el códec de Windows Media Video 9 se compone principalmente de fotogramas Delta, que solo registran los cambios en relación con el fotograma anterior. Reconstruir fotogramas Delta lleva tiempo, especialmente si los fotogramas clave están alejados. Para obtener más información sobre cómo configurar fotogramas clave para una búsqueda eficaz, consulte [configuración de secuencias de vídeo para buscar el rendimiento](configuring-video-streams-for-seeking-performance.md).
+La búsqueda de contenido en un archivo es una operación muy común que puede ser un problema de rendimiento. El vídeo codificado con el códec Windows Media Video 9 se basa principalmente en fotogramas delta, que solo registran los cambios en relación con el fotograma anterior. La reconstrucción de fotogramas delta lleva tiempo, especialmente si los fotogramas clave están separados. Para obtener más información sobre cómo configurar fotogramas clave para búsquedas eficaces, vea [Configuring Video Secuencias for Seeking Performance](configuring-video-streams-for-seeking-performance.md).
 
-Además de la configuración adecuada, puede mejorar el rendimiento de búsqueda mediante la indexación de fotogramas para la secuencia de vídeo. La búsqueda de un número de marco suele ser más rápida que la búsqueda en el momento de la presentación.
+Además de la configuración adecuada, puede mejorar el rendimiento de búsqueda mediante el uso de la indexación de fotogramas para la secuencia de vídeo. Buscar un número de fotograma suele ser más rápido que buscar un tiempo de presentación.
 
-Si busca en un archivo con varias secuencias, debe seleccionar solo los flujos que sean necesarios. Cada flujo configurado para lectura afectará al rendimiento de la búsqueda, ya que todas las secuencias seleccionadas se sincronizan cuando se busca un punto en un archivo.
+Si busca en un archivo con varias secuencias, debe seleccionar solo las secuencias necesarias. Cada secuencia configurada para lectura afectará al rendimiento de las búsquedas, ya que todas las secuencias seleccionadas se sincronizan cuando se busca un punto en un archivo.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Leer archivos ASF**](reading-asf-files.md)
+[**Lectura de archivos ASF**](reading-asf-files.md)
 </dt> <dt>
 
-[**Para buscar por número de marco mediante el lector asincrónico**](to-seek-by-frame-number-using-the-asynchronous-reader.md)
+[**Para buscar por número de fotograma mediante el lector asincrónico**](to-seek-by-frame-number-using-the-asynchronous-reader.md)
 </dt> <dt>
 
-[**Para buscar por número de marco mediante el lector sincrónico**](to-seek-by-frame-number-using-the-synchronous-reader.md)
+[**Para buscar por número de fotograma mediante el lector sincrónico**](to-seek-by-frame-number-using-the-synchronous-reader.md)
 </dt> <dt>
 
 [**Para buscar por tiempo mediante el lector asincrónico**](to-seek-by-time-using-the-asynchronous-reader.md)
@@ -48,9 +48,9 @@ Si busca en un archivo con varias secuencias, debe seleccionar solo los flujos q
 [**Para buscar por tiempo mediante el lector sincrónico**](to-seek-by-time-using-the-synchronous-reader.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Método GetDataAt
-description: Recupera el valor del contador especificado de un punto concreto del gráfico.
+title: Método CounterItem.GetDataAt
+description: Recupera el valor de contador especificado de un punto específico del gráfico.
 ms.assetid: e8484301-4575-41ee-9c6d-a454eca0e82d
 keywords:
 - Método GetDataAt SysMon
-- Método GetDataAt SysMon, objeto de contraelemento
-- Objeto de contraelemento SysMon, método GetDataAt
+- Método GetDataAt SysMon , objeto CounterItem
+- Objeto CounterItem SysMon, método GetDataAt
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 354d8242e6cb765980878a7783805416bb1a1009
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a02ec2b98fa75df138f8cd315c3464192e7714dc737c2b360e721085c8eebd77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117957160"
 ---
-# <a name="counteritemgetdataat-method"></a>Método GetDataAt
+# <a name="counteritemgetdataat-method"></a>Método CounterItem.GetDataAt
 
-Recupera el valor del contador especificado de un punto concreto del gráfico.
+Recupera el valor de contador especificado de un punto específico del gráfico.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,24 +44,24 @@ CounterItem.GetDataAt( _
 
 <dl> <dt>
 
-*Índice* \[ de de\]
+*index* \[ En\]
 </dt> <dd>
 
-Índice de base cero del punto del gráfico cuyo valor se desea recuperar. Los valores válidos van de 0 a ([**SystemMonitor. DataPointCount**](systemmonitor-datapointcount.md) -1).
+Índice de base cero del punto de gráfico cuyo valor desea recuperar. Los valores válidos van de 0 a ([**SystemMonitor.DataPointCount**](systemmonitor-datapointcount.md) - 1).
 
 </dd> <dt>
 
-*qué* \[ de\]
+*que* \[ En\]
 </dt> <dd>
 
-Tipo de valor de contador que se va a recuperar, por ejemplo, el valor medio del contador tal y como se muestra en la ventana del gráfico. Para obtener los valores posibles, vea [**SysmonDataType**](/windows/win32/api/isysmon/ne-isysmon-sysmondatatype).
+Tipo de valor de contador que se recuperará, por ejemplo, el valor medio del contador como se muestra en la ventana del gráfico. Para obtener los valores posibles, [**vea SysmonDataType**](/windows/win32/api/isysmon/ne-isysmon-sysmondatatype).
 
 </dd> <dt>
 
-*variante* \[ enuncia\]
+*variant* \[ out\]
 </dt> <dd>
 
-Valor del contador que se recuperó.
+Valor de contador que se recuperó.
 
 </dd> </dl>
 
@@ -69,22 +69,22 @@ Valor del contador que se recuperó.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Use este método solo si
 
--   [**SystemMonitor. DisplayType**](systemmonitor-displaytype.md) está establecido en sysmonLineGraph
--   [**SystemMonitor. DataSourceType**](systemmonitor-datasourcetype.md) está establecido en SysmonLogFiles o sysmonSqlLog
+-   [**SystemMonitor.DisplayType**](systemmonitor-displaytype.md) se establece en sysmonLineGraph
+-   [**SystemMonitor.DataSourceType se**](systemmonitor-datasourcetype.md) establece en sysmonLogFiles o sysmonSqlLog.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
@@ -92,13 +92,13 @@ Use este método solo si
 
 <dl> <dt>
 
-[**Elemento de**](counteritem.md)
+[**CounterItem**](counteritem.md)
 </dt> <dt>
 
-[**Elemento de GetStatistics**](counteritem-getstatistics.md)
+[**CounterItem.GetStatistics**](counteritem-getstatistics.md)
 </dt> <dt>
 
-[**Peritem. GetValue**](counteritem-getvalue.md)
+[**CounterItem.GetValue**](counteritem-getvalue.md)
 </dt> </dl>
 
  

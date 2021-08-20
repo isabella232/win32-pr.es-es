@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_SETCOLUMN. columnid (propiedad)'
-title: JET_SETCOLUMN. columnid (propiedad)
+description: 'Más información sobre: JET_SETCOLUMN.columnid'
+title: JET_SETCOLUMN.columnid, propiedad
 TOCTitle: 'columnid property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_SETCOLUMN.columnid
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_setcolumn.columnid(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a899e81b5dcc4386f8262a371206d7c361911be9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 444a90a05d8662af5475c131bcde79042698b59b5241cbd24b45b78671e74d91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118073796"
 ---
-# <a name="jet_setcolumncolumnid-property"></a>JET_SETCOLUMN. columnid (propiedad)
+# <a name="jet_setcolumncolumnid-property"></a>JET_SETCOLUMN.columnid, propiedad
 
 Obtiene o establece el identificador de columna de una columna que se va a establecer.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public JET_COLUMNID columnid { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_SETCOLUMN (clase)](./jet-setcolumn-class.md)
+[JET_SETCOLUMN clase](./jet-setcolumn-class.md)
 
-[Miembros de JET_SETCOLUMN](./jet-setcolumn-members.md)
+[JET_SETCOLUMN miembros](./jet-setcolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

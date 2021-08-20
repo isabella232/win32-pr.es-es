@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: JET_COLUMNDEF métodos'
+description: 'Más información acerca de: JET_COLUMNDEF métodos'
 title: JET_COLUMNDEF métodos
 TOCTitle: JET_COLUMNDEF methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_COLUMNDEF
@@ -19,7 +19,7 @@ ms.locfileid: "118075993"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_COLUMNDEF](./jet-columndef-class.md) expone los miembros siguientes.
+El [JET_COLUMNDEF](./jet-columndef-class.md) muestra los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -70,7 +70,7 @@ El [JET_COLUMNDEF](./jet-columndef-class.md) expone los miembros siguientes.
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335039(v=exchg.10).md">ToString</a></td>
-<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el objeto <a href="dn335038(v=exchg.10).md">JET_COLUMNDEF</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
+<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el objeto <a href="dn335038(v=exchg.10).md">JET_COLUMNDEF</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -78,7 +78,7 @@ El [JET_COLUMNDEF](./jet-columndef-class.md) expone los miembros siguientes.
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

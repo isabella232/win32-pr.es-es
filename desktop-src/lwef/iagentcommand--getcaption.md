@@ -4,16 +4,16 @@ description: IAgentCommand GetCaption
 ms.assetid: e333faca-e2c2-478a-a803-cbc401793e4d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b44540ba9105e79ba675f8bf78be20e8961f98d0
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 9deae89890d11e9f14472227eb60590b05f4676151403ded29a78e26fed94f3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103904515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117692847"
 ---
 # <a name="iagentcommandgetcaption"></a>IAgentCommand::GetCaption
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT GetCaption(
@@ -21,24 +21,24 @@ HRESULT GetCaption(
 );
 ```
 
-Recupera el [**título**](caption-property.md) de un [**comando**](/windows/desktop/lwef/the-command-object).
+Recupera el título [**de**](caption-property.md) un [**comando**](/windows/desktop/lwef/the-command-object).
 
--   Devuelve S \_ OK para indicar que la operación se realizó correctamente.
+-   Devuelve S \_ OK para indicar que la operación se ha realizado correctamente.
 
 <dl> <dt>
 
 <span id="pbszCaption"></span><span id="pbszcaption"></span><span id="PBSZCAPTION"></span>*pbszCaption*
 </dt> <dd>
 
-Dirección de un BSTR que recibe el valor del texto de [**título**](caption-property.md) que se muestra para un [**comando**](/windows/desktop/lwef/the-command-object).
+Dirección de un BSTR que recibe el valor del texto [**de**](caption-property.md) título que se muestra para un [**comando**](/windows/desktop/lwef/the-command-object).
 
 </dd> </dl>
 
 ## <a name="see-also"></a>Consulte también
 
-[**IAgentCommand:: SetCaption**](iagentcommand--setcaption.md), [**IAgentCommand:: setEnabled**](iagentcommand--setenabled.md), [**IAgentCommand:: setVisible**](iagentcommand--setvisible.md), [**IAgentCommand:: SetVoice**](iagentcommand--setvoice.md), [**IAgentCommands:: Add**](iagentcommands--add.md), [**IAgentCommands:: Insert**](iagentcommands--insert.md)
+[**IAgentCommand::SetCaption**](iagentcommand--setcaption.md), [**IAgentCommand::SetEnabled**](iagentcommand--setenabled.md), [**IAgentCommand::SetVisible**](iagentcommand--setvisible.md), [**IAgentCommand::SetVoice**](iagentcommand--setvoice.md), [**IAgentCommands::Add**](iagentcommands--add.md), [**IAgentCommands::Insert**](iagentcommands--insert.md)
 
 
- 
+ 
 
- 
+ 

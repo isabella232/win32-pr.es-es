@@ -1,11 +1,11 @@
 ---
-title: IWMPCdromBurn refreshStatus, método
-description: El método refreshStatus actualiza la información de estado de la lista de reproducción actual de la grabación.
+title: Método IWMPCdromAsync refreshStatus
+description: El método refreshStatus actualiza la información de estado de la lista de reproducción de grabación actual.
 ms.assetid: 4dd90e76-92b5-4a00-b027-b54502e56804
 keywords:
-- método refreshStatus de Windows Media Player
-- método refreshStatus Windows Media Player, interfaz IWMPCdromBurn
-- Interfaz IWMPCdromBurn Windows Media Player, método refreshStatus
+- Método refreshStatus Reproductor de Windows Media
+- Método refreshStatus Reproductor de Windows Media , interfaz IWMPCdromAsync
+- Interfaz IWMPCdromAsync Reproductor de Windows Media , método refreshStatus
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55205e684d055d20c8e8f218ba58716de8472916
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1cd3ecbd249f9731993c541dcee33f81142e042185ca4bba0325af942fd42394
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117930645"
 ---
-# <a name="iwmpcdromburnrefreshstatus-method"></a>IWMPCdromBurn:: refreshStatus (método)
+# <a name="iwmpcdromburnrefreshstatus-method"></a>IWMPCdromAsync::refreshStatus (método)
 
-El método **refreshStatus** actualiza la información de estado de la lista de reproducción actual de la grabación.
+El **método refreshStatus** actualiza la información de estado de la lista de reproducción de grabación actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,19 +53,19 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Debe llamar a este método después de crear o cambiar una lista de reproducción de grabación antes de leer la información de estado o grabar el CD. Puede comprobar si se requiere una actualización obteniendo el valor de **burnState** y comprobando si hay wmpbsRefreshStatusPending.
+Debe llamar a este método después de crear o cambiar una lista de reproducción de grabación antes de leer la información de estado o grabar el CD. Puede probar si se requiere una actualización obteniendo el valor **de burnState** y comprobando wmpbsRefreshStatusPending.
 
-La actualización del estado es una operación sincrónica. Esto significa que puede transcurrir un período largo de tiempo antes de que este método devuelva si la lista de reproducción actual de la grabación es grande y contiene muchos cambios.
+La actualización del estado es una operación sincrónica. Esto significa que puede transcurrir un largo período de tiempo antes de que este método vuelva si la lista de reproducción de grabación actual es grande y contiene muchos cambios.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 11.<br/>                                                                                    |
+| Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -75,13 +75,13 @@ La actualización del estado es una operación sincrónica. Esto significa que p
 
 <dl> <dt>
 
-[**Interfaz IWMPCdromBurn (VB y C#)**](iwmpcdromburn--vb-and-c.md)
+[**Interfaz IWMPCdromRomRom (VB y C#)**](iwmpcdromburn--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPCdromBurn. burnState (VB y C#)**](wmplibiwmpcdromburn-iwmpcdromburn-burnstate--vb-and-c.md)
+[**IWMPCdromIntegración.burnState (VB y C#)**](wmplibiwmpcdromburn-iwmpcdromburn-burnstate--vb-and-c.md)
 </dt> <dt>
 
-[**WMPBurnState**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpburnstate)
+[**WMPState**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpburnstate)
 </dt> </dl>
 
  

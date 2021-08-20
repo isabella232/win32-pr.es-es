@@ -1,29 +1,29 @@
 ---
 description: Describe cómo colocar imágenes en un OM XPS.
 ms.assetid: 4c7e3630-7331-47d7-91cc-da3cc2b7f8c9
-title: Colocar imágenes en un OM XPS
+title: Colocar imágenes en un OM xps
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f72b5d1b1380cd870f9ff6b7a1cd15763e5b46c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b875a443a84f03339d1972b4db98db0e7b198309f1b53ad1fca2878bec69680d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117867987"
 ---
-# <a name="place-images-in-an-xps-om"></a>Colocar imágenes en un OM XPS
+# <a name="place-images-in-an-xps-om"></a>Colocar imágenes en un OM xps
 
 Describe cómo colocar imágenes en un OM XPS.
 
-Para colocar imágenes en un OM XPS, cree un objeto de trazado que defina la ubicación y el contorno de una imagen y, a continuación, use un pincel de imagen para rellenar la ruta de acceso. Agregue el objeto de ruta de acceso creado a la lista de objetos visuales de la página o del lienzo, de modo que se pueda representar con el otro contenido visual.
+Para colocar imágenes en una OM XPS, cree un objeto de ruta de acceso que defina la ubicación y el contorno de una imagen y, a continuación, use un pincel de imagen para rellenar la ruta de acceso. Agregue el objeto de ruta de acceso creado a la lista de objetos visuales de la página o lienzo, para que se pueda representar con el otro contenido visual.
 
-Antes de usar estos ejemplos de código en el programa, lea la declinación de responsabilidades en [las tareas comunes de programación de documentos XPS](common-xps-document-tasks.md).
+Antes de usar estos ejemplos de código en el programa, lea la declinación de responsabilidades en [Tareas comunes de programación de documentos XPS](common-xps-document-tasks.md).
 
 ## <a name="code-example"></a>Ejemplo de código
 
-### <a name="create-image-resource"></a>Crear recurso de imagen
+### <a name="create-image-resource"></a>Creación de un recurso de imagen
 
-Si la imagen de origen no está disponible en el OM de XPS como un recurso de imagen, primero cree el recurso de imagen:
+Si la imagen de origen no está disponible en XPS OM como recurso de imagen, primero cree el recurso de imagen:
 
 
 ```C++
@@ -53,9 +53,9 @@ Si la imagen de origen no está disponible en el OM de XPS como un recurso de im
 
 
 
-### <a name="place-image-into-visual-collection"></a>Colocar imagen en colección visual
+### <a name="place-image-into-visual-collection"></a>Colocación de una imagen en una colección visual
 
-Si la imagen de origen está disponible en el OM de XPS como un recurso de imagen, se puede usar para crear un objeto de pincel de imagen y agregarlo como el pincel de relleno a la ruta de acceso que describe la ubicación y el tamaño de la imagen en la página.
+Si la imagen de origen está disponible en XPS OM como un recurso de imagen, se puede usar para crear un objeto de pincel de imagen y agregarse como pincel de relleno a la ruta de acceso que describe la ubicación y el tamaño de la imagen en la página.
 
 
 ```C++
@@ -128,9 +128,9 @@ Si la imagen de origen está disponible en el OM de XPS como un recurso de image
 
 
 
-### <a name="create-path-object-for-image"></a>Crear el objeto de ruta de acceso de la imagen
+### <a name="create-path-object-for-image"></a>Creación de un objeto de ruta de acceso para la imagen
 
-El método siguiente acepta una estructura de **XPS \_ Rect** y crea una ruta de acceso rectangular.
+El método siguiente acepta una estructura **XPS \_ RECT** y crea una ruta de acceso rectangular.
 
 
 ```C++
@@ -200,19 +200,19 @@ CreateRectanglePath(
 **Pasos siguientes**
 </dt> <dt>
 
-[Navegar por el OM de XPS](navigate-the-xps-om.md)
+[Navegación por XPS OM](navigate-the-xps-om.md)
 </dt> <dt>
 
-[Escribir texto en un OM XPS](write-text-to-an-xps-om.md)
+[Escribir texto en una om xps](write-text-to-an-xps-om.md)
 </dt> <dt>
 
 [Dibujar gráficos en un OM XPS](draw-graphics-in-an-xps-om.md)
 </dt> <dt>
 
-[Escribir un OM XPS en un documento XPS](write-an-xps-om-to-an-xps-document.md)
+[Escribir una OM xps en un documento XPS](write-an-xps-om-to-an-xps-document.md)
 </dt> <dt>
 
-[Imprimir un OM XPS](print-an-xps-om.md)
+[Imprimir una OM XPS](print-an-xps-om.md)
 </dt> <dt>
 
 **Se usa en esta página**
@@ -251,10 +251,10 @@ CreateRectanglePath(
 **Para obtener más información**
 </dt> <dt>
 
-[Inicializar un OM XPS](xps-object-model-initialization.md)
+[Inicialización de una om xps](xps-object-model-initialization.md)
 </dt> <dt>
 
-[Referencia de la API de documentos XPS](xps-programming-reference.md)
+[Referencia de document API de XPS](xps-programming-reference.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

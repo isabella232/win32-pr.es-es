@@ -1,8 +1,8 @@
 ---
-description: Representa un único elemento en un objeto SWbemRefresher.
+description: Representa un único elemento de un objeto SWbemRefresher.
 ms.assetid: 6a12c8eb-3ef9-4292-810c-6954294fc8c7
 ms.tgt_platform: multiple
-title: Objeto SWbemRefreshableItem (Wbemdisp. h)
+title: Objeto SWbemRefreshableItem (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,33 +15,33 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 4bc4f85145926aba2bd050052c33eb5669dfee8a
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: ed47d78a133269231d9e43cde3d104a3b0ba95e59240862a5d787d1651cc9de3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103820239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117921866"
 ---
 # <a name="swbemrefreshableitem-object"></a>Objeto SWbemRefreshableItem
 
-El objeto **SWbemRefreshableItem** representa un único elemento en un objeto [**SWbemRefresher**](swbemrefresher.md) . Un objeto **SWbemRefreshableItem** se obtiene a través de los métodos [**Add**](swbemrefresher-add.md) y [**AddEnum**](swbemrefresher-addenum.md) de [**SWbemRefresher**](swbemrefresher.md). Este objeto no se puede crear mediante la llamada [CreateObject](creating-an-object-using-vbscript.md) de VBScript.
+El **objeto SWbemRefreshableItem** representa un único elemento en un [**objeto SWbemRefresher.**](swbemrefresher.md) Un **objeto SWbemRefreshableItem** se obtiene a través de los métodos [**Add**](swbemrefresher-add.md) y [**AddEnum**](swbemrefresher-addenum.md) [**de SWbemRefresher**](swbemrefresher.md). La llamada [CreateObject](creating-an-object-using-vbscript.md) de VBScript no puede crear este objeto.
 
 ## <a name="members"></a>Miembros
 
-El objeto **SWbemRefreshableItem** tiene estos tipos de miembros:
+El **objeto SWbemRefreshableItem** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-El objeto **SWbemRefreshableItem** tiene estos métodos.
+El **objeto SWbemRefreshableItem** tiene estos métodos.
 
 
 
 | Método                                        | Descripción                                                                                                             |
 |:----------------------------------------------|:------------------------------------------------------------------------------------------------------------------------|
-| [**Retirar**](swbemrefreshableitem-remove.md) | Quita el objeto **SWbemRefreshableItem** del objeto [**SWbemRefresher**](swbemrefresher.md) primario.<br/> |
+| [**Quitar**](swbemrefreshableitem-remove.md) | Quita el **objeto SWbemRefreshableItem** del objeto [**SWbemRefresher**](swbemrefresher.md) primario.<br/> |
 
 
 
@@ -49,29 +49,29 @@ El objeto **SWbemRefreshableItem** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-El objeto **SWbemRefreshableItem** tiene estas propiedades.
+El **objeto SWbemRefreshableItem** tiene estas propiedades.
 
 
 
 | Propiedad                                                       | Tipo de acceso           | Descripción                                                                                                                          |
 |:---------------------------------------------------------------|:----------------------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| [**Ajustar**](swbemrefreshableitem-index.md)<br/>         | Lectura/escritura<br/> | Índice del elemento en su objeto primario [**SWbemRefresher**](swbemrefresher.md) .<br/>                                          |
-| [**IsSet**](swbemrefreshableitem-isset.md)<br/>         | Lectura/escritura<br/> | Indica si el objeto **SWbemRefreshableItem** representa un único objeto o un conjunto de objetos.<br/>                        |
-| [**Object**](swbemrefreshableitem-object.md)<br/>       | Lectura/escritura<br/> | Representa un objeto [**SWbemObject**](swbemobject.md) único que se actualiza.<br/>                                          |
+| [**Índice**](swbemrefreshableitem-index.md)<br/>         | Lectura/escritura<br/> | Índice del elemento en su objeto [**SWbemRefresher**](swbemrefresher.md) primario.<br/>                                          |
+| [**IsSet**](swbemrefreshableitem-isset.md)<br/>         | Lectura/escritura<br/> | Indica si el **objeto SWbemRefreshableItem** representa un único objeto o un conjunto de objetos.<br/>                        |
+| [**Objeto**](swbemrefreshableitem-object.md)<br/>       | Lectura/escritura<br/> | Representa un único [**objeto SWbemObject**](swbemobject.md) que se actualiza.<br/>                                          |
 | [**ObjectSet**](swbemrefreshableitem-objectset.md)<br/> | Lectura/escritura<br/> | Representa el conjunto de objetos que se va a actualizar.<br/>                                                                                |
-| [**Actualizador**](swbemrefreshableitem-refresher.md)<br/> | Solo lectura<br/>  | Representa el objeto [**SWbemRefresher**](swbemrefresher.md) primario que contiene el objeto **SWbemRefreshableItem** .<br/> |
+| [**Actualización**](swbemrefreshableitem-refresher.md)<br/> | Solo lectura<br/>  | Representa el objeto [**SWbemRefresher**](swbemrefresher.md) primario que contiene el **objeto SWbemRefreshableItem.**<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**GetObject**](https://msdn.microsoft.com/library/ebdktb00(v=VS.71).aspx) de VBScript no se puede usar para crear objetos **SWbemRefreshableItem** directamente.
+El método [**GetObject**](https://msdn.microsoft.com/library/ebdktb00(v=VS.71).aspx) de VBScript no se puede usar para crear **objetos SWbemRefreshableItem** directamente.
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente script muestra la creación de un objeto [**SWbemRefresher**](swbemrefresher.md) y la adición de un solo objeto y un enumerador **SWbemRefreshableItem** a él.
+El siguiente script muestra la creación de un objeto [**SWbemRefresher**](swbemrefresher.md) y la adición de un único objeto y enumerador **SWbemRefreshableItem** a él.
 
 
 ```VB
@@ -127,11 +127,11 @@ MsgBox "Number of items in Refresher after DeleteAll " _
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemRefreshableItem<br/>                                                  |
-| IID<br/>                      | \_ISWBEMREFRESHABLEITEM IID<br/>                                                   |
+| IID<br/>                      | IID \_ ISWbemRefreshableItem<br/>                                                   |
 
 
 
@@ -139,7 +139,7 @@ MsgBox "Number of items in Refresher after DeleteAll " _
 
 <dl> <dt>
 
-[Scripting de objetos de API](scripting-api-objects.md)
+[Objetos de API de scripting](scripting-api-objects.md)
 </dt> </dl>
 
  

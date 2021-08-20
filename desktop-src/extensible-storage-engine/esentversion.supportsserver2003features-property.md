@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: EsentVersion. SupportsServer2003Features (propiedad)'
-title: Propiedad EsentVersion. SupportsServer2003Features
+description: 'Más información sobre: Propiedad EsentVersion.SupportsServer2003Features'
+title: Propiedad EsentVersion.SupportsServer2003Features
 TOCTitle: 'SupportsServer2003Features property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.EsentVersion.SupportsServer2003Features
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentversion.supportsserver2003features(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ed5bddbc757b65c47b6ba7c57c140e079c1c0e5f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fbec1f594025dfdfe21916fb8aae005ff2e0529df7022064405307d2940fd7bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104547158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117896437"
 ---
-# <a name="esentversionsupportsserver2003features-property"></a>Propiedad EsentVersion. SupportsServer2003Features
+# <a name="esentversionsupportsserver2003features-property"></a>Propiedad EsentVersion.SupportsServer2003Features
 
-Obtiene un valor que indica si la versión actual de ESENT admite características disponibles en la versión de Windows Server 2003 de ESENT.
+Obtiene un valor que indica si la versión actual de ESENT admite características disponibles en Windows Server 2003 de ESENT.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -57,7 +57,7 @@ public static bool SupportsServer2003Features { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -67,4 +67,4 @@ Tipo: [System. Boolean](/dotnet/api/system.boolean)
 
 [Miembros de EsentVersion](./esentversion-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

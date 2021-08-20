@@ -1,25 +1,25 @@
 ---
-description: 'Más información acerca de: JET_INDEXRANGE propiedades'
-title: Propiedades de JET_INDEXRANGE
+description: 'Más información sobre: JET_INDEXRANGE propiedades'
+title: JET_INDEXRANGE propiedades
 TOCTitle: JET_INDEXRANGE properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_INDEXRANGE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexrange_properties(v=EXCHG.10)
 ms:contentKeyID: 55103678
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: e573de3b7769da70c8a40a638f9a553cce777687
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b97ddc0071835e529fdda36e668fccb28fd98858cf7e77962bda0cc23ed35268
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104551058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117894746"
 ---
-# <a name="jet_indexrange-properties"></a>Propiedades de JET_INDEXRANGE
+# <a name="jet_indexrange-properties"></a>JET_INDEXRANGE propiedades
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo de [JET_INDEXRANGE](./jet-indexrange-class.md) expone los siguientes miembros.
+El [JET_INDEXRANGE](./jet-indexrange-class.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -39,8 +39,8 @@ El tipo de [JET_INDEXRANGE](./jet-indexrange-class.md) expone los siguientes mie
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="dn335163(v=exchg.10).md">TABLEID</a></td>
-<td>Obtiene o establece el cursor que contiene el intervalo de índices. El cursor debe tener un intervalo de índice establecido con JetSetIndexRange.</td>
+<td><a href="dn335163(v=exchg.10).md">tableid</a></td>
+<td>Obtiene o establece el cursor que contiene el intervalo de índice. El cursor debe tener un intervalo de índice establecido con JetSetIndexRange.</td>
 </tr>
 </tbody>
 </table>
@@ -52,6 +52,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEXRANGE (clase)](./jet-indexrange-class.md)
+[JET_INDEXRANGE clase](./jet-indexrange-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

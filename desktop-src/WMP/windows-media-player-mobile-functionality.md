@@ -1,50 +1,50 @@
 ---
-title: Funcionalidad de Windows Media Player Mobile
-description: Funcionalidad de Windows Media Player Mobile
+title: Reproductor de Windows Media Funcionalidad móvil
+description: Reproductor de Windows Media Funcionalidad móvil
 ms.assetid: a698210b-1188-4161-bdb4-aa7dac3f0cbf
 keywords:
-- Windows Media Player Mobile, máscaras
-- Aspectos de Windows Media Player Mobile, acciones disponibles
-- Máscaras móviles de Windows Media Player, funciones disponibles
-- máscaras, Windows Media Player Mobile
+- Reproductor de Windows Media Móvil, máscaras
+- Reproductor de Windows Media Máscaras móviles, acciones disponibles
+- Reproductor de Windows Media Máscaras móviles, funciones disponibles
+- skins,Reproductor de Windows Media Mobile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16d9aa0949bc648fff48fa72218e6a9689aeee58
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5f7d054238f5773a368fa2def3259cc748929ec7a6bcc0573901480b9ba1d267
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117931158"
 ---
-# <a name="windows-media-player-mobile-functionality"></a>Funcionalidad de Windows Media Player Mobile
+# <a name="windows-media-player-mobile-functionality"></a>Reproductor de Windows Media Funcionalidad móvil
 
 Las siguientes acciones están disponibles para el usuario de la máscara:
 
--   Pulsar o hacer clic en botones
--   Deslizar trackbars
+-   Pulsar o hacer clic en los botones
+-   Barras de seguimiento deslizantes
 -   Leer texto de desplazamiento
 -   Ver vídeo
--   Ver carátulas de álbum
+-   Visualización del arte de un álbum
 -   Clasificación de elementos multimedia
 
-En las secciones siguientes se describen los tipos de elementos que se pueden crear para habilitar estas acciones del usuario:
+En las secciones siguientes se describen los tipos de elementos que puede crear para habilitar estas acciones de usuario:
 
 -   [Funciones de botón](button-functions.md)
--   [TrackBar (tipos)](trackbar-types.md)
+-   [Tipos de barra de seguimiento](trackbar-types.md)
 -   [Tipos de presentación de texto](text-display-types.md)
--   [Pantalla de vídeo](the-video-display.md)
+-   [La pantalla de vídeo](the-video-display.md)
 -   [Orientación](orientation.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Máscaras móviles de Windows Media Player**](windows-media-player-mobile-skins.md)
+[**Reproductor de Windows Media Máscaras móviles**](windows-media-player-mobile-skins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

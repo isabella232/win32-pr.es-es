@@ -1,9 +1,9 @@
 ---
-title: SetDefaultLayoutOrTip función)
-description: Establece la distribución de teclado especificada o un servicio de texto como el elemento de entrada predeterminado del usuario actual.
+title: Función SetDefaultLayoutOrTip
+description: Establece el diseño de teclado especificado o un servicio de texto como el elemento de entrada predeterminado del usuario actual.
 ms.assetid: e602065c-776b-47ba-b050-4325197e03de
 keywords:
-- SetDefaultLayoutOrTip función de servicios de texto
+- Configuración de la función SetDefaultLayoutOrTip Text Services Framework
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbdb2f2174c4a6d5ec37d5880d4a8b6feef236be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e965d3194c0bb1327cec640ef9000ad8db8761968a040935afcb4e8d4f050398
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117951438"
 ---
-# <a name="setdefaultlayoutortip-function"></a>SetDefaultLayoutOrTip función)
+# <a name="setdefaultlayoutortip-function"></a>Función SetDefaultLayoutOrTip
 
-Establece la distribución de teclado especificada o un servicio de texto como el elemento de entrada predeterminado del usuario actual.
+Establece el diseño de teclado especificado o un servicio de texto como el elemento de entrada predeterminado del usuario actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,29 +41,29 @@ BOOL CALLBACK SetDefaultLayoutOrTip(
 
 <dl> <dt>
 
-*PSZ* \[ de\]
+*psz* \[ En\]
 </dt> <dd>
 
-Una cadena que representa una lista de distribución de teclado o una lista de perfiles de servicios de texto.
+Cadena que representa una lista de diseño de teclado o una lista de perfiles de servicios de texto.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Un campo de bits que especifica las marcas siguientes.
+Campo de bits que especifica las marcas siguientes.
 
 > [!Note]  
-> Los identificadores siguientes no se definen en un archivo de encabezado público. Debe usar el valor hexadecimal o \# definir los identificadores. Por ejemplo, para usar SDLOT \_ NOAPPLYTOCURRENTSESSION, debe incluir \# la definición \_ de SDLOT NOAPPLYTOCURRENTSESSION 0x00000001 en el código.
+> Los identificadores siguientes no se definen en un archivo de encabezado público. Debe usar el valor hexadecimal o \# definir los identificadores. Por ejemplo, para usar SDLOT NOAPPLYTOCURRENTSESSION, debe incluir la definición de \_ \# SDLOT \_ NOAPPLYTOCURRENTSESSION 0x00000001 en el código.
 
  
 
 
 
-| Value                                                                                                                                                                                                                                                                         | Significado                                                                                                                                                                                                                                                          |
+| Valor                                                                                                                                                                                                                                                                         | Significado                                                                                                                                                                                                                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="SDLOT_NOAPPLYTOCURRENTSESSION"></span><span id="sdlot_noapplytocurrentsession"></span><dl> <dt>**SDLOT \_ NOAPPLYTOCURRENTSESSION**</dt> <dt>0x00000001</dt> </dl> | Almacena la configuración en el registro pero no actualiza la configuración de teclado en tiempo de ejecución de la sesión actual. Si la ruta de acceso del registro alternativa está establecida en [**SetDefaultLayoutOrTipUserReg**](/windows/desktop/TSF/setdefaultlayoutortipuserreg), se debe establecer esta marca.<br/> |
-| <span id="SDLOT_APPLYTOCURRENTTHREAD"></span><span id="sdlot_applytocurrentthread"></span><dl> <dt>**SDLOT \_ APPLYTOCURRENTTHREAD**</dt> <dt>0x00000002</dt> </dl>          | Aplica la configuración inmediatamente en el subproceso actual.<br/>                                                                                                                                                                                                |
+| <span id="SDLOT_NOAPPLYTOCURRENTSESSION"></span><span id="sdlot_noapplytocurrentsession"></span><dl> <dt>**SDLOT \_ NOAPPLYTOCURRENTSESSION**</dt> <dt>0x00000001</dt> </dl> | Almacena la configuración en el Registro, pero no actualiza la configuración del teclado en tiempo de ejecución de la sesión actual. Si la ruta de acceso del Registro alternativa se [**establece en SetDefaultLayoutOrTipUserReg**](/windows/desktop/TSF/setdefaultlayoutortipuserreg), se debe establecer esta marca.<br/> |
+| <span id="SDLOT_APPLYTOCURRENTTHREAD"></span><span id="sdlot_applytocurrentthread"></span><dl> <dt>**SDLOT \_ ApplyTOCURRENTTHREAD**</dt> <dt>0x00000002</dt> </dl>          | Aplica la configuración inmediatamente en el subproceso actual.<br/>                                                                                                                                                                                                |
 
 
 
@@ -77,24 +77,24 @@ Un campo de bits que especifica las marcas siguientes.
 
 | Código devuelto                                                                          | Descripción                               |
 |--------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**REALES**</dt> </dl>  | La función se realizó correctamente.<br/>   |
-| <dl> <dt>**ES**</dt> </dl> | Se ha producido un error no especificado.<br/> |
+| <dl> <dt>**Verdad**</dt> </dl>  | La función se ha realizado correctamente.<br/>   |
+| <dl> <dt>**Falso**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El formato de cadena de la lista de diseño es:
 
-<LangID 1>: <KLID 1>; \[ ...<LangID N>:<KLID N>
+<LangID 1>:<>; \[ ...<LangID N>:<KLID N>
 
 El formato de cadena de la lista de perfiles de servicio de texto es:
 
-<LangID 1>: {xxxxxxxx-XXXX-XXXX-XXXX-XXXXXXXXXXXX} {xxxxxxxx-XXXX-XXXX-XXXX-XXXXXXXXXXXX};
+<LangID 1>:{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx};
 
-El siguiente es un ejemplo de un valor para el parámetro *PSZ* :
+A continuación se muestra un ejemplo de un valor para el *parámetro psz:*
 
 
 ```C++
@@ -107,10 +107,10 @@ El siguiente es un ejemplo de un valor para el parámetro *PSZ* :
 
 ## <a name="examples"></a>Ejemplos
 
-No hay ninguna biblioteca de importación disponible que defina esta función, por lo que es necesario obtener un puntero a esta función mediante [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress). En el ejemplo siguiente se muestra cómo obtener un puntero a esta función.
+No hay disponible ninguna biblioteca de importación que defina esta función, por lo que es necesario obtener un puntero a esta función mediante [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress). En el ejemplo siguiente se muestra cómo obtener un puntero a esta función.
 
 > [!Note]  
-> El uso incorrecto de [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) puede poner en peligro la seguridad de la aplicación mediante la carga de una DLL incorrecta. Consulte el [orden de búsqueda de la biblioteca de vínculos dinámicos](/windows/desktop/Dlls/dynamic-link-library-search-order) para obtener información sobre cómo cargar correctamente los archivos DLL con diferentes versiones de Microsoft Windows.
+> El [**uso incorrecto de LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) puede poner en peligro la seguridad de la aplicación al cargar el archivo DLL incorrecto. Consulte [Orden de búsqueda de la biblioteca de](/windows/desktop/Dlls/dynamic-link-library-search-order) vínculos dinámicos para obtener información sobre cómo cargar correctamente archivos DLL con diferentes versiones de Microsoft Windows.
 
  
 
@@ -148,8 +148,8 @@ else
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                 |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
 | Archivo DLL<br/>                      | <dl> <dt>Input.dll</dt> </dl> |
 
 

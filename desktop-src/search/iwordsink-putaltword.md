@@ -1,7 +1,7 @@
 ---
 description: Coloca una palabra alternativa y su posición en el objeto IWordSink.
 ms.assetid: 5C8A9B30-F9B5-42E9-ADAC-A11230F0C2FA
-title: IWordSink::P método utAltWord (Search. h)
+title: Método IWordSink::P utAltWord (Search.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - search.h
-ms.openlocfilehash: 21fd9eb9ac5a1bf0f52d6574595dc495432d7ec9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8282a1b28fa901727930f57e459c6e751b19a74669967c8d3d3d81910278943d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117862593"
 ---
-# <a name="iwordsinkputaltword-method"></a>IWordSink::P método utAltWord
+# <a name="iwordsinkputaltword-method"></a>IWordSink::P utAltWord (método)
 
-Coloca una palabra alternativa y su posición en el objeto [**IWordSink**](iwordsink.md) .
+Coloca una palabra alternativa y su posición en el [**objeto IWordSink.**](iwordsink.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,31 +42,31 @@ HRESULT PutAltWord(
 
 <dl> <dt>
 
-*CWC* \[ de\]
+*cwc* \[ En\]
 </dt> <dd>
 
 Número de caracteres de *pwcInBuf*.
 
 </dd> <dt>
 
-*pwcInBuf* \[ de\]
+*pwcInBuf* \[ En\]
 </dt> <dd>
 
-Un puntero a un búfer que contiene una forma alternativa de una palabra del texto de origen. **PutAltWord** no modifica este parámetro. Puede pasar el parámetro *pTextSource* de [**IWordBreaker:: BreakText**](/windows/win32/api/indexsrv/nf-indexsrv-iwordbreaker-breaktext) según corresponda.
+Puntero a un búfer que contiene una forma alternativa de una palabra del texto de origen. **PutAltWord** no modifica este parámetro. Puede pasar el *parámetro pTextSource* desde [**IWordBreaker::BreakText**](/windows/win32/api/indexsrv/nf-indexsrv-iwordbreaker-breaktext) según corresponda.
 
 </dd> <dt>
 
-*cwcSrcLen* \[ de\]
+*cwcSrcLen* \[ En\]
 </dt> <dd>
 
-Número de caracteres del búfer de texto de origen (indicado por el parámetro *pTextSource* en [**IWordBreaker:: BreakText**](/windows/win32/api/indexsrv/nf-indexsrv-iwordbreaker-breaktext)) que corresponden a la palabra contenida en *pwcInBuf*.
+Número de caracteres del búfer de texto de origen (indicado por el parámetro *pTextSource* a [**IWordBreaker::BreakText)**](/windows/win32/api/indexsrv/nf-indexsrv-iwordbreaker-breaktext)que corresponden a la palabra contenida en *pwcInBuf*.
 
 </dd> <dt>
 
-*cwcSrcPos* \[ de\]
+*cwcSrcPos* \[ En\]
 </dt> <dd>
 
-Posición inicial de la palabra en *pwcInBuf* en el búfer de texto de origen (indicado por el parámetro *pTextSource* a [**IWordBreaker:: BreakText**](/windows/win32/api/indexsrv/nf-indexsrv-iwordbreaker-breaktext)).
+Posición inicial de la palabra en *pwcInBuf* en el búfer de texto de origen (indicado por el *parámetro pTextSource* a [**IWordBreaker::BreakText**](/windows/win32/api/indexsrv/nf-indexsrv-iwordbreaker-breaktext)).
 
 </dd> </dl>
 
@@ -78,16 +78,16 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                              | Descripción                                                                                                                                               |
 |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                     | La operación se completó correctamente. También indica que no queda más texto para procesarse.<br/>                                            |
-| <dl> <dt>**Idioma \_ de \_ \_ palabra S grande**</dt> </dl> | El valor de *CWC* es mayor que el valor de *ulMaxTokenSize* que se especifica en [**IWordBreaker:: init**](/windows/win32/api/indexsrv/nf-indexsrv-iwordbreaker-init). <br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                     | La operación se completó correctamente. También indica que no queda más texto para procesar.<br/>                                            |
+| <dl> <dt>**LANGUAGE \_ S \_ LARGE \_ WORD**</dt> </dl> | El valor *de cwc* es mayor que el valor de *ulMaxTokenSize* que se especifica en [**IWordBreaker::Init**](/windows/win32/api/indexsrv/nf-indexsrv-iwordbreaker-init). <br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**PutAltWord** coloca una forma alternativa de una palabra en el [**IWordSink**](iwordsink.md). La palabra se coloca en la misma posición que la palabra original en el origen del texto (*pTextSource* en [**IWordBreaker:: BreakText**](/windows/win32/api/indexsrv/nf-indexsrv-iwordbreaker-breaktext)). De forma predeterminada, **PutAltWord** finaliza las palabras con un tipo de interrupción **WORDREP \_ break \_ EOW** en el tipo enumerado [**\_ \_ tipo de interrupción WORDREP**](/previous-versions/windows/desktop/legacy/ff819130(v=vs.85)) .
+**PutAltWord coloca** una forma alternativa de palabra en [**IWordSink.**](iwordsink.md) La palabra se coloca en la misma posición que la palabra original en el origen de texto (*pTextSource* en [**IWordBreaker::BreakText**](/windows/win32/api/indexsrv/nf-indexsrv-iwordbreaker-breaktext)). De forma predeterminada, **PutAltWord** finaliza las palabras con un tipo de interrupción **\_ \_ EOW BREAK de WORDREP** del tipo enumerado [**\_ WORDREP BREAK \_ TYPE.**](/previous-versions/windows/desktop/legacy/ff819130(v=vs.85))
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,7 +97,7 @@ Este método puede devolver uno de estos valores.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Search. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Search.h</dt> </dl> |
 
 
 

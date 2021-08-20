@@ -1,23 +1,23 @@
 ---
-description: El proxy de propiedad de la Directiva de metadatos de la foto System. GPS. TrackRef.
+description: Proxy de propiedad para la directiva de metadatos de fotos System.GPS.TrackRef.
 ms.assetid: 5e5b2ba3-32f9-49f5-bd8e-dc9a820e1d43
-title: Proxy System. GPS. TrackRef
+title: System.GPS.TrackRef Proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0983b4bf91692d14e7aa96c903e9cdc436c65ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4bfe49533689fe61084c09f3d02fea11d886b8e369ff02e8b2f6576882528983
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117667882"
 ---
-# <a name="systemgpstrackref-proxy"></a>Proxy System. GPS. TrackRef
+# <a name="systemgpstrackref-proxy"></a>System.GPS.TrackRef Proxy
 
-El proxy de propiedad de la Directiva de metadatos de la foto System. GPS. TrackRef.
+Proxy de propiedad para la directiva de metadatos de fotos System.GPS.TrackRef.
 
 ### <a name="description"></a>Descripción
 
-El proxy de propiedad devuelve un par racional a a través del miembro uhVal de [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) .
+El proxy de propiedad devuelve un par racionalizado a través del [miembro PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) uhVal.
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,23 +27,23 @@ JPEG, TIFF
 
 Sí
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ UI8
 
 ### <a name="denominator"></a>Denominador
 
-HighPart de uhVal.
+HighPart de la clase uhVal.
 
-### <a name="numerator"></a>Numera
+### <a name="numerator"></a>Numerador
 
-LowPart de uhVal.
+LowPart de la clase uhVal.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. GPS. TrackRef](../properties/props-system-gps-trackref.md)
+[System.GPS.TrackRef](../properties/props-system-gps-trackref.md)
 </dt> </dl>
 
  

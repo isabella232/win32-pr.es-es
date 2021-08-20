@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MM_ACM_FILTERCHOOSE (MSACM. h)
-description: El \_ mensaje mm ACM \_ FILTERCHOOSE notifica a una función de enlace del cuadro de diálogo de acmFilterChoose antes de agregar un elemento a uno de los tres cuadros de lista desplegable.
+title: MM_ACM_FILTERCHOOSE mensaje (Msacm.h)
+description: El mensaje MM ACM FILTERCHOOSE notifica a una función de enlace de cuadro de diálogo \_ acmFilterChoose antes de agregar un elemento a uno de los tres cuadros de \_ lista desplegable.
 ms.assetid: f3c68240-a9aa-4771-96b9-1cb3bb5ea906
 keywords:
-- Mensaje de MM_ACM_FILTERCHOOSE de Windows multimedia
+- MM_ACM_FILTERCHOOSE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1df28ad7f950b8ce995fd308622db8c429393cb8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 57c0ce777304b38145931aa490afbe722be6c7b2dc067e55aae15c5defd46b50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117802605"
 ---
-# <a name="mm_acm_filterchoose-message"></a>\_ \_ Mensaje FILTERCHOOSE de mm ACM
+# <a name="mm_acm_filterchoose-message"></a>Mensaje \_ FILTERCHOOSE de MM ACM \_
 
-El mensaje **mm \_ ACM \_ FILTERCHOOSE** notifica a una función de enlace del cuadro de diálogo de [**acmFilterChoose**](/windows/desktop/api/Msacm/nf-msacm-acmfilterchoose) antes de agregar un elemento a uno de los tres cuadros de lista desplegable. Este mensaje permite a una aplicación personalizar aún más las selecciones disponibles a través de la interfaz de usuario.
+El **mensaje MM \_ ACM \_ FILTERCHOOSE** notifica a una función de enlace de cuadro de diálogo [**acmFilterChoose antes**](/windows/desktop/api/Msacm/nf-msacm-acmfilterchoose) de agregar un elemento a uno de los tres cuadros de lista desplegable. Este mensaje permite a una aplicación personalizar aún más las selecciones disponibles a través de la interfaz de usuario.
 
 
 ```C++
@@ -42,17 +42,17 @@ El mensaje **mm \_ ACM \_ FILTERCHOOSE** notifica a una función de enlace del c
 <span id="wDropDown"></span><span id="wdropdown"></span><span id="WDROPDOWN"></span>*wDropDown*
 </dt> <dd>
 
-Cuadro de lista desplegable que se va a inicializar y una operación de comprobación o adición.
+Cuadro de lista desplegable que se inicializa y una operación de comprobación o adición.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_comprobación personalizada de FILTERCHOOSE \_    | El parámetro *lParam* es un puntero a una estructura [**WAVEFILTER**](/windows/desktop/api/Mmreg/ns-mmreg-wavefilter) que se va a agregar al cuadro de lista desplegable Nombre personalizado.                                                                                                   |
-| FILTERCHOOSE \_ \_ Agregar filtro       | El parámetro *lParam* es un puntero a un búfer que aceptará una estructura [**WAVEFILTER**](/windows/desktop/api/Mmreg/ns-mmreg-wavefilter) que se va a agregar al cuadro de lista desplegable filtro. La aplicación debe copiar la estructura de filtro que se va a agregar a este búfer. |
-| \_comprobación de filtro de FILTERCHOOSE \_    | El parámetro *lParam* es un puntero a una estructura [**WAVEFILTER**](/windows/desktop/api/Mmreg/ns-mmreg-wavefilter) que se va a agregar al cuadro de lista desplegable filtro.                                                                                                        |
-| FILTERCHOOSE \_ FILTERTAG \_ Add    | El parámetro *lParam* es un puntero a un **valor DWORD** que aceptará una etiqueta de filtro de audio de forma de onda que se va a agregar al cuadro de lista desplegable de etiquetas de filtro.                                                                                        |
-| FILTERCHOOSE \_ FILTERTAG \_ verify | El parámetro *lParam* es una etiqueta de filtro de audio de forma de onda que se mostrará en el cuadro de lista desplegable de etiquetas de filtro.                                                                                                                                 |
+| FILTERCHOOSE \_ CUSTOM \_ VERIFY    | El *parámetro lParam* es un puntero a una [**estructura WAVEFILTER**](/windows/desktop/api/Mmreg/ns-mmreg-wavefilter) que se va a agregar al cuadro de lista desplegable Nombre personalizado.                                                                                                   |
+| FILTERCHOOSE \_ FILTER \_ ADD       | El *parámetro lParam* es un puntero a un búfer que aceptará una estructura [**WAVEFILTER**](/windows/desktop/api/Mmreg/ns-mmreg-wavefilter) que se va a agregar al cuadro de lista desplegable Filtro. La aplicación debe copiar la estructura de filtro que se va a agregar a este búfer. |
+| FILTERCHOOSE \_ FILTER \_ VERIFY    | El *parámetro lParam* es un puntero a una [**estructura WAVEFILTER**](/windows/desktop/api/Mmreg/ns-mmreg-wavefilter) que se va a agregar al cuadro de lista desplegable Filtro.                                                                                                        |
+| FILTERCHOOSE \_ FILTERTAG \_ ADD    | El *parámetro lParam* es un puntero a **un DWORD** que aceptará una etiqueta de filtro de audio de forma de onda que se agregará al cuadro de lista desplegable Etiqueta de filtro.                                                                                        |
+| FILTERCHOOSE \_ FILTERTAG \_ VERIFY | El *parámetro lParam* es una etiqueta de filtro de audio de forma de onda que se mostrará en el cuadro de lista desplegable Etiqueta de filtro.                                                                                                                                 |
 
 
 
@@ -63,29 +63,29 @@ Cuadro de lista desplegable que se va a inicializar y una operación de comproba
 <span id="lCustom"></span><span id="lcustom"></span><span id="LCUSTOM"></span>*lCustom*
 </dt> <dd>
 
-Valor definido por el cuadro de lista especificado en el parámetro **wParam** .
+Valor definido por el cuadro de lista especificado en el **parámetro wParam.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si una aplicación controla este mensaje o **false** en caso contrario.
+Devuelve **TRUE si** una aplicación controla este mensaje o **FALSE** de lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la aplicación procesa la \_ \_ operación agregar filtro FILTERCHOOSE, el tamaño del búfer de memoria proporcionado en *lParam* se determinará a partir de la función [**acmMetrics**](/windows/desktop/api/Msacm/nf-msacm-acmmetrics) .
+Si la aplicación procesa la operación FILTERCHOOSE FILTER ADD, el tamaño del búfer de memoria proporcionado en lParam se determinará a partir de la \_ \_ función [**acmMetrics.**](/windows/desktop/api/Msacm/nf-msacm-acmmetrics) 
 
-Si la aplicación procesa una operación de comprobación, la aplicación debe preceder al valor devuelto con **SetWindowLong** (HWND, DWL \_ MSGRESULT, (Long) **false**) para evitar que el cuadro de diálogo muestre esta selección o con **SetWindowLong** (HWND, DWL \_ MSGRESULT, (Long)**true**) para permitir que el cuadro de diálogo muestre esta selección. Si se procesa una operación de agregar, la aplicación debe preceder a la devolución con **SetWindowLong** (HWND, DWL \_ MSGRESULT, (Long)**false**) para indicar que no se requieren más adiciones o con **SetWindowLong** (HWND, DWL \_ MSGRESULT, (Long)**true**) si se requieren más adiciones.
+Si la aplicación procesa una operación de comprobación, la aplicación debe preceder al valor devuelto con **SetWindowLong** (hwnd, DWL MSGRESULT, (LONG) FALSE ) para evitar que el cuadro de diálogo enumere esta selección o con \_ **SetWindowLong** (hwnd, DWL  \_ MSGRESULT, (LONG)**TRUE)** para permitir que el cuadro de diálogo enumere esta selección. Si procesa una operación de adición, la aplicación debe preceder a la devolución con **SetWindowLong** (hwnd, DWL MSGRESULT, (LONG) FALSE ) para indicar que no se requieren más adiciones o con \_ **SetWindowLong** (hwnd, DWL \_ MSGRESULT, (LONG)**TRUE)** si se requieren más adiciones.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>MSACM. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msacm.h</dt> </dl> |
 
 
 

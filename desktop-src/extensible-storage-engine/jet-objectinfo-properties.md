@@ -1,25 +1,25 @@
 ---
-description: 'Más información acerca de: JET_OBJECTINFO propiedades'
-title: Propiedades de JET_OBJECTINFO
+description: 'Más información sobre: JET_OBJECTINFO propiedades'
+title: JET_OBJECTINFO propiedades
 TOCTitle: JET_OBJECTINFO properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_OBJECTINFO
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_objectinfo_properties(v=EXCHG.10)
 ms:contentKeyID: 55103764
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5680665c113246a266bc8585a3e20ad6db7dc0e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d6d9ec82c0b3c82ef1162714c83a4a1bf5d623edcd06b5b17026cec252b978a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117893953"
 ---
-# <a name="jet_objectinfo-properties"></a>Propiedades de JET_OBJECTINFO
+# <a name="jet_objectinfo-properties"></a>JET_OBJECTINFO propiedades
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo de [JET_OBJECTINFO](./jet-objectinfo-class.md) expone los siguientes miembros.
+El [JET_OBJECTINFO](./jet-objectinfo-class.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -50,12 +50,12 @@ El tipo de [JET_OBJECTINFO](./jet-objectinfo-class.md) expone los siguientes mie
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335203(v=exchg.10).md">grbit</a></td>
-<td>Obtiene las opciones de la tabla.</td>
+<td>Obtiene las opciones de tabla.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335205(v=exchg.10).md">objtyp</a></td>
-<td>Obtiene el JET_OBJTYP de la tabla. Actualmente solo se devolverán las tablas (es decir, <a href="hh565069(v=exchg.10).md">TABLE</a>).</td>
+<td>Obtiene el JET_OBJTYP de la tabla. Actualmente solo se devolverán tablas (es decir, <a href="hh565069(v=exchg.10).md">tabla</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -67,6 +67,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[JET_OBJECTINFO (clase)](./jet-objectinfo-class.md)
+[JET_OBJECTINFO clase](./jet-objectinfo-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

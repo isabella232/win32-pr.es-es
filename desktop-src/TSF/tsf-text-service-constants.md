@@ -1,28 +1,28 @@
 ---
-title: Constantes de servicio de texto TSF
-description: Las constantes de servicio de texto se componen de las siguientes categorías. Lattice TypesMiscellaneous TSF Text Service ConstantsPredefined Category ValuesPredefined CompartmentsPredefined Font AttributesPredefined List AttributesPredefined Text AttributesOther predefined AttributesSpeech Recognition ConstantsFlags for Conversion ModeValues for GUID \_ compartimiento \_ TRANSITORYEXTENSION
+title: Constantes del servicio de texto TSF
+description: Las constantes de servicio de texto constan de las siguientes categorías. Tipos latticeMiscellaneous TSF Text Service ConstantsPredefined Category ValuesPredefined CompartmentsPredefined Font AttributesPredefined List AttributesPredefined Text AttributesOther Predefined AttributesSpeech Recognition ConstantsFlags for Conversion ModeValues for GUID \_ COMPARTMENT \_ TRANSITORYEXTENSION
 ms.assetid: 1a6bd685-c50e-4078-9af7-e60b7a0ef41f
 keywords:
-- Text Services Framework (TSF), servicios de texto
-- TSF (marco de trabajo de servicios de texto), servicios de texto
-- servicios de texto, constantes
+- Text Services Framework (TSF),servicios de texto
+- TSF (Text Services Framework),servicios de texto
+- text services,constants
 - Referencia de TSF, servicios de texto
-- referencia de TSF, servicios de texto
+- referencia de TSF,servicios de texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25d45bf06e9d61de4f0a65a5baf882b28fa5ba0e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 68d24c503ed9bf56653a463d66818afbd37695b413fabeb5dee2170924b679f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117949832"
 ---
-# <a name="tsf-text-service-constants"></a>Constantes de servicio de texto TSF
+# <a name="tsf-text-service-constants"></a>Constantes del servicio de texto TSF
 
-Las constantes de servicio de texto se componen de las siguientes categorías.
+Las constantes de servicio de texto constan de las siguientes categorías.
 
--   [Tipos de Lattice](lattice-types.md)
--   [Constantes de servicio de texto TSF variadas](miscellaneous-tsf-text-service-constants.md)
+-   [Tipos de lattice](lattice-types.md)
+-   [Constantes misceláneas del servicio de texto TSF](miscellaneous-tsf-text-service-constants.md)
 -   [Valores de categoría predefinidos](predefined-category-values.md)
 -   [Compartimientos predefinidos](predefined-compartments.md)
 -   [Atributos de fuente predefinidos](predefined-font-attributes.md)
@@ -31,11 +31,11 @@ Las constantes de servicio de texto se componen de las siguientes categorías.
 -   [Otros atributos predefinidos](other-predefined-attributes.md)
 -   [Constantes de reconocimiento de voz](speech-recognition-constants.md)
 -   [Marcas para el modo de conversión](flags-for-conversion-mode.md)
--   [Valores para el \_ compartimiento de GUID \_ TRANSITORYEXTENSION](values-for-guid-compartment-transitoryextension.md)
+-   [Valores de GUID \_ COMPARTMENT \_ TRANSITORYEXTENSION](values-for-guid-compartment-transitoryextension.md)
 
- 
+ 
 
- 
+ 
 
 
 

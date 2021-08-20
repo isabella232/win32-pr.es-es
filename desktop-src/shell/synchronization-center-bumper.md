@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 2236e937f2993b64324bee115b09e05c3ba92e3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e894a6a81578aac7adbd7b0ec43f3f635b51a32250ee8bc400a0f879cec57275
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117675771"
 ---
 # <a name="synchronization-center"></a>Centro de sincronización
 
--   [Desarrollar un controlador del centro de sincronización de Windows](sync-center-handler.md)
+-   [Desarrollar un controlador de Windows Centro de sincronización de datos](sync-center-handler.md)
 -   [administrador de sincronización](syncmgr-start-page.md)
 
  

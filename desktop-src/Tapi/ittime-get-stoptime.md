@@ -1,21 +1,21 @@
 ---
-description: El \_ método get StopTime obtiene el valor de hora de finalización del Protocolo de tiempo de red (NTP). Si la hora de finalización es cero, la sesión no está enlazada.
+description: El método get StopTime obtiene el valor de hora de finalización NTP (Protocolo de tiempo \_ de red). Si la hora de finalización es cero, la sesión no está limitada.
 ms.assetid: f18042c0-e41d-43b3-a75d-6ab161afde6e
-title: 'Método ITTime:: get_StopTime (Sdpblb. h)'
+title: ItTime::get_StopTime (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b55ac03c4701884b5a4b7716cb2758887b6160bc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9eca063fd67064e9f9140d03d97351313c4247dbe3351739fa6e2d336229ffe3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117945014"
 ---
-# <a name="ittimeget_stoptime-method"></a>ITTime:: get \_ StopTime (método)
+# <a name="ittimeget_stoptime-method"></a>ItTime::get \_ StopTime (método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Los controles e interfaces de conferencias de telefonía IP de Encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **Get \_ StopTime** obtiene el valor de hora de finalización del Protocolo de tiempo de red (NTP). Si la hora de finalización es cero, la sesión no está enlazada.
+El **método get \_ StopTime** obtiene el valor de hora de finalización NTP (Protocolo de tiempo de red). Si la hora de finalización es cero, la sesión no está limitada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,10 +32,10 @@ HRESULT get_StopTime(
 
 <dl> <dt>
 
-*pTime* \[ enuncia\]
+*pTime* \[ out\]
 </dt> <dd>
 
-Puntero a la hora de detención de la sesión.
+Puntero a la hora de detenerse de la sesión.
 
 </dd> </dl>
 
@@ -47,9 +47,9 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                   | Descripción                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
-| <dl> <dt>**\_puntero E**</dt> </dl>     | El parámetro *pTime* no es un puntero válido.<br/>        |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | El *parámetro pTime* no es un puntero válido.<br/>        |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/> |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>        | Error no especificado.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método aún no se ha implementado.<br/>                  |
 
@@ -61,11 +61,11 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
@@ -77,7 +77,7 @@ Este método puede devolver uno de estos valores.
 [**ITTime**](ittime.md)
 </dt> <dt>
 
-[**ITTime::p UT \_ StopTime**](ittime-put-stoptime.md)
+[**ITTime::put \_ StopTime**](ittime-put-stoptime.md)
 </dt> </dl>
 
  

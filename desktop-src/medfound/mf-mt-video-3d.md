@@ -35,7 +35,7 @@ Este atributo se aplica a los tipos de medios de vídeo. Si este atributo es **T
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

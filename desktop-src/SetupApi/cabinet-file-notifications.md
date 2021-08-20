@@ -1,27 +1,27 @@
 ---
-description: SetupIterateCabinet envía las siguientes notificaciones. Para obtener más información sobre el formato y el uso de las notificaciones, vea notificaciones.
+description: SetupIterateCabinet envía las siguientes notificaciones. Para obtener más información sobre el formato y el uso de las notificaciones, vea Notificaciones.
 ms.assetid: 5a362a93-ebe8-4995-aacc-13ee10d3407a
-title: Notificaciones de archivo. cab
+title: Notificaciones de archivos archivados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb3e4eb7645fc3603f026db6bde3ce92f2ed2ce7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47018d9fda41e74dac9b8e4896674cbf21ed5ecd4a915d0c86da14d9787030a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117966363"
 ---
-# <a name="cabinet-file-notifications"></a>Notificaciones de archivo. cab
+# <a name="cabinet-file-notifications"></a>Notificaciones de archivos archivados
 
-[**SetupIterateCabinet**](/windows/desktop/api/Setupapi/nf-setupapi-setupiteratecabineta)envía las siguientes notificaciones. Para obtener más información sobre el formato y el uso de las notificaciones, vea [notificaciones](notifications.md).
+[**SetupIterateCabinet**](/windows/desktop/api/Setupapi/nf-setupapi-setupiteratecabineta)envía las siguientes notificaciones. Para obtener más información sobre el formato y el uso de las notificaciones, vea [Notificaciones](notifications.md).
 
 
 
-| notificación                                                        | Descripción                                                                    |
+| Notificación                                                        | Descripción                                                                    |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [**SPFILENOTIFY \_ FILEEXTRACTED**](spfilenotify-fileextracted.md)   | El archivo se ha extraído del archivo. cab.                                  |
-| [**SPFILENOTIFY \_ FILEINCABINET**](spfilenotify-fileincabinet.md)   | ¿Se encuentra un archivo en el archivo. cab, ¿desea que la aplicación lo extraiga? |
-| [**SPFILENOTIFY \_ NEEDNEWCABINET**](spfilenotify-neednewcabinet.md) | El archivo actual continúa en el siguiente archivo. cab.                             |
+| [**SPFILENOTIFY \_ FILEEXTRACTED**](spfilenotify-fileextracted.md)   | El archivo se ha extraído del gabinete.                                  |
+| [**SPFILENOTIFY \_ FILEINCABINET**](spfilenotify-fileincabinet.md)   | Se encuentra un archivo en el gabinete, ¿la aplicación quiere extraerlo? |
+| [**SPFILENOTIFY \_ NEEDNEWCABINET**](spfilenotify-neednewcabinet.md) | El archivo actual continúa en el siguiente gabinete.                             |
 
 
 

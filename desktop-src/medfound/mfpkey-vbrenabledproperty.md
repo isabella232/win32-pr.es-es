@@ -1,19 +1,19 @@
 ---
-description: Especifica si el codificador utiliza la codificación de velocidad de bits variable (VBR).
+description: Especifica si el codificador usa la codificación de velocidad de bits variable (VBR).
 ms.assetid: e6826802-99b7-4a38-9b58-8a9cb8b753fb
-title: Propiedad MFPKEY_VBRENABLED (Wmcodecdsp. h)
+title: MFPKEY_VBRENABLED (Propiedad, Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab9061abcc6ac7d7338b63eb5a7cd1a13ad22bf6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e7346e665c05ee9246371946e312f340148a455a3bdc613437383de1055b911d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117873009"
 ---
-# <a name="mfpkey_vbrenabled-property"></a>\_Propiedad VBRENABLED de MFPKEY
+# <a name="mfpkey_vbrenabled-property"></a>Propiedad MFPKEY \_ VBRENABLED
 
-Especifica si el codificador utiliza la codificación de velocidad de bits variable (VBR). Lectura y escritura.
+Especifica si el codificador usa la codificación de velocidad de bits variable (VBR). Lectura y escritura.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -21,17 +21,17 @@ Especifica si el codificador utiliza la codificación de velocidad de bits varia
 
 ## <a name="data-type"></a>Tipo de datos
 
-**VT \_ bool**
+**VT \_ BOOL**
 
 ## <a name="default-value"></a>Valor predeterminado
 
-**VARIANTE \_ false**
+**VARIANT \_ FALSE**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este valor debe establecerse en **Variant \_ true** para cualquiera de las demás propiedades de VBR que va a usar el códec.
+Este valor debe establecerse en **VARIANT \_ TRUE** para cualquiera de las otras propiedades de VBR que va a usar el códec.
 
-Después de establecer este valor en **Variant \_ true** en el codificador de audio, los tipos de salida que se recuperan mediante el método [**IMediaObject:: GETOUTPUTTYPE**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-getoutputtype) son tipos de VBR.
+Después de establecer este valor en **VARIANT \_ TRUE** en el codificador de audio, los tipos de salida recuperados mediante el método [**IMediaObject::GetOutputType**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-getoutputtype) son tipos VBR.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,9 +39,9 @@ Después de establecer este valor en **Variant \_ true** en el codificador de au
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -49,13 +49,13 @@ Después de establecer este valor en **Variant \_ true** en el codificador de au
 
 <dl> <dt>
 
-[**MFPKEY \_ restricción de \_ VBRQUALITY enumerada \_**](mfpkey-constrain-enumerated-vbrqualityproperty.md)
+[**MFPKEY \_ CONSTRAIN \_ ENUMERATED \_ VBRQUALITY**](mfpkey-constrain-enumerated-vbrqualityproperty.md)
 </dt> <dt>
 
-[**MFPKEY \_ deseado \_ VBRQUALITY**](mfpkey-desired-vbrqualityproperty.md)
+[**\_VBRQUALITY DESEADO DE MFPKEY \_**](mfpkey-desired-vbrqualityproperty.md)
 </dt> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

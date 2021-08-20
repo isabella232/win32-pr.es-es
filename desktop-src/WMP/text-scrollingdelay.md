@@ -1,9 +1,9 @@
 ---
-title: TEXT. scrollingDelay
-description: El atributo scrollingDelay especifica o recupera el tiempo de retardo entre los movimientos de desplazamiento.
+title: TEXT.scrollingDelay
+description: El atributo scrollingDelay especifica o recupera el retraso de tiempo entre los movimientos de desplazamiento.
 ms.assetid: b965fe8f-c809-431f-b8fe-f7c3060068ac
 keywords:
-- Media Player de Windows TEXT. scrollingDelay
+- TEXT.scrollingDelay Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e81259ca84c62327bea67ae70d3f9ec3363450fb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e647e9bbffe723bff0a8079c2776c48db0f23f89306fdb732fed8c62ac420d61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117932638"
 ---
-# <a name="textscrollingdelay"></a>TEXT. scrollingDelay
+# <a name="textscrollingdelay"></a>TEXT.scrollingDelay
 
-El atributo **scrollingDelay** especifica o recupera el tiempo de retardo entre los movimientos de desplazamiento.
+El **atributo scrollingDelay** especifica o recupera el retraso de tiempo entre los movimientos de desplazamiento.
 
 ``` syntax
         elementID.scrollingDelay
@@ -29,21 +29,21 @@ El atributo **scrollingDelay** especifica o recupera el tiempo de retardo entre 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura/escritura (**int**) que especifica el retraso en milisegundos. Tiene un valor mínimo de 30 y un valor predeterminado de 85. Si se especifica un valor menor que el mínimo, se utiliza el valor predeterminado.
+Este atributo es un número de lectura y **escritura** (**int**) que especifica el retraso en milisegundos. Tiene un valor mínimo de 30 y un valor predeterminado de 85. Si se especifica un valor menor que el mínimo, se usa el valor predeterminado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el **desplazamiento** se establece en false, se omite **scrollingDelay** .
+Si **el desplazamiento** se establece en false, se omite **scrollingDelay.**
 
-Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se utilizan los atributos del elemento de **texto** .
+Vea el [atributo value](text-value.md) para obtener un ejemplo que ilustra cómo se usan los atributos del **elemento TEXT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -54,7 +54,7 @@ Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se 
 [**Elemento TEXT**](text-element.md)
 </dt> <dt>
 
-[**TEXTO. desplazamiento**](text-scrolling.md)
+[**TEXT.scrolling**](text-scrolling.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMLicenseQuery SetActionAllowedQueryParams (wmdrmsdk. h)
-description: El método SetActionAllowedQueryParams establece la información específica del entorno para obtener resultados de consulta más precisos cuando se usa el método QueryActionAllowed.
+title: Método IWMDRMLicenseQuery SetActionAllowedQueryParams (Wmdrmsdk.h)
+description: El método SetActionAllowedQueryParams establece información específica del entorno para obtener resultados de consulta más precisos cuando se usa el método QueryActionAllowed.
 ms.assetid: 1c8f9d4e-999d-4d7c-87fd-9d30e432350c
 keywords:
-- Método SetActionAllowedQueryParams formato de Windows Media
-- Método SetActionAllowedQueryParams formato de Windows Media, interfaz IWMDRMLicenseQuery
-- Interfaz IWMDRMLicenseQuery formato de Windows Media, método SetActionAllowedQueryParams
+- Método SetActionAllowedQueryParams windows Media Format
+- Método SetActionAllowedQueryParams formato multimedia de windows, interfaz IWMDRMLicenseQuery
+- IWMDRMLicenseQuery interface windows Media Format , SetActionAllowedQueryParams (método)
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a83a28c4d9f3758b711c43ddd83a509c58f8ea8a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 54dfa59300c9d222b13067524d2e9e174e1600adff98bbaaed3973a0168942ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117655042"
 ---
-# <a name="iwmdrmlicensequerysetactionallowedqueryparams-method"></a>IWMDRMLicenseQuery:: SetActionAllowedQueryParams (método)
+# <a name="iwmdrmlicensequerysetactionallowedqueryparams-method"></a>IWMDRMLicenseQuery::SetActionAllowedQueryParams (método)
 
-El método **SetActionAllowedQueryParams** establece la información específica del entorno para obtener resultados de consulta más precisos cuando se usa el método [**QueryActionAllowed**](iwmdrmlicensequery-queryactionallowed.md) .
+El **método SetActionAllowedQueryParams** establece información específica del entorno para obtener resultados de consulta más precisos cuando se usa [**el método QueryActionAllowed.**](iwmdrmlicensequery-queryactionallowed.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,43 +46,43 @@ HRESULT SetActionAllowedQueryParams(
 
 <dl> <dt>
 
-*fIsMF* \[ de\]
+*fIsMF* \[ En\]
 </dt> <dd>
 
-Especifica si el contenido se representará mediante los objetos del SDK de Microsoft Media Foundation. **False** indica la representación de los objetos del SDK de Windows Media Format. Este parámetro es opcional.
+Especifica si el contenido se representará mediante los objetos del SDK Microsoft Media Foundation sdk. **FALSE** indica la representación por parte de los objetos del SDK Windows Media Format. Este parámetro es opcional.
 
 </dd> <dt>
 
-*dwAppSecLevel* \[ de\]
+*dwAppSecLevel* \[ En\]
 </dt> <dd>
 
-Nivel de seguridad de la aplicación que se consulta. Este valor solo es importante si se van a utilizar los objetos del SDK de Windows Media Format, en cuyo caso *fIsMF* debe establecerse en **false**. Este parámetro es opcional.
+Nivel de seguridad de la aplicación de consulta. Este valor solo es importante si se usarán los objetos del SDK Windows Media Format, en cuyo caso *fIsMF* debe establecerse en **FALSE.** Este parámetro es opcional.
 
 </dd> <dt>
 
-*fHasSerialNumber* \[ de\]
+*fHasSerialNumber* \[ En\]
 </dt> <dd>
 
-Especifica si el dispositivo de destino para una operación de copia tiene un número de serie. Este parámetro es opcional y solo se aplica a las consultas de operaciones de copia.
+Especifica si el dispositivo de destino de una operación de copia tiene un número de serie. Este parámetro es opcional y solo se aplica a las consultas para las operaciones de copia.
 
 </dd> <dt>
 
-*bstrDeviceCert* \[ de\]
+*bstrDeviceCert* \[ En\]
 </dt> <dd>
 
-Certificado de dispositivo del dispositivo de destino al usar DRM de Windows Media para dispositivos portátiles. Este parámetro es opcional y solo se aplica a las consultas de operaciones de copia.
+Certificado de dispositivo del dispositivo de destino cuando se usa Windows DRM multimedia para dispositivos portátiles. Este parámetro es opcional y solo se aplica a las consultas para las operaciones de copia.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -98,8 +98,8 @@ Ninguno.
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -107,10 +107,10 @@ Ninguno.
 
 <dl> <dt>
 
-[**Interfaz IWMDRMLicenseQuery**](iwmdrmlicensequery.md)
+[**IWMDRMLicenseQuery (interfaz)**](iwmdrmlicensequery.md)
 </dt> <dt>
 
-[**Consulta para obtener información detallada sobre los derechos**](querying-for-detailed-rights-information.md)
+[**Consulta de información detallada sobre los derechos**](querying-for-detailed-rights-information.md)
 </dt> </dl>
 
  

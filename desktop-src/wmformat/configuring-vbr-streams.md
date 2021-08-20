@@ -1,66 +1,66 @@
 ---
-title: Configuración de secuencias VBR
-description: Configuración de secuencias VBR
+title: Configuración de Secuencias VBR
+description: Configuración de Secuencias VBR
 ms.assetid: 83caabb7-b7fa-4b0a-a608-d5a86e4101b8
 keywords:
-- flujos, configurar secuencias VBR
-- secuencias, velocidad de bits variable (VBR)
-- velocidad de bits variable (VBR), secuencias
-- VBR (velocidad de bits variable), secuencias
-- streams, interfaz IWMPropertyVault
+- streams,configuring VBR streams
+- streams,variable bit rate (VBR)
+- velocidad de bits variable (VBR),streams
+- VBR (velocidad de bits variable),streams
+- streams,IWMPropertyVault (interfaz)
 - IWMPropertyVault
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6667dc9cf66932cf8af90da0b0e59ad27860ab3
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 5b3434ec508afdca9637b300ac83777cca33e0e59566b01c7fb027d547f39302
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103994940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117655973"
 ---
-# <a name="configuring-vbr-streams"></a>Configuración de secuencias VBR
+# <a name="configuring-vbr-streams"></a>Configuración de Secuencias VBR
 
-Puede usar la codificación de velocidad de bits variable (VBR) para generar secuencias de alta calidad para archivos locales o para descargar y reproducir. Hay tres opciones para VBR: basado en la calidad (un paso), sin restricciones (dos pasos) y restringido (dos pasos). Para obtener más información sobre los tipos de codificación VBR, consulte [codificación de velocidad de bits variable (VBR)](variable-bit-rate--vbr--encoding.md).
+Puede usar la codificación de velocidad de bits variable (VBR) para generar secuencias de alta calidad para archivos locales o para descargar y reproducir. Hay tres opciones para VBR: basadas en la calidad (un paso), sin restricciones (dos pases) y restringidas (dos pases). Para obtener más información sobre los tipos de codificación VBR, vea Codificación de velocidad [de bits variable (VBR).](variable-bit-rate--vbr--encoding.md)
 
-Para configurar la codificación VBR en un perfil, establezca las propiedades con la interfaz [**IWMPropertyVault**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmpropertyvault) . En la tabla siguiente se describen las propiedades que se usan para configurar la codificación VBR.
+Puede configurar la codificación de VBR en un perfil estableciendo propiedades con la [**interfaz IWMPropertyVault.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmpropertyvault) En la tabla siguiente se describen las propiedades utilizadas para configurar la codificación vbr.
 
 
 
 | Propiedad                     | Descripción                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------|
-| **g \_ wszVBREnabled**         | Valor booleano. Establézcalo en true para usar la codificación VBR.                                                   |
-| **g \_ wszVBRQuality**         | Valor **DWORD** . Se establece en el nivel de calidad deseado (de 1 a 100) para la codificación VBR basada en la calidad.      |
-| **g \_ wszVBRBitrateMax**      | Valor **DWORD** . Se establece en la velocidad de bits máxima, en bits por segundo, para la codificación VBR restringida.   |
-| **g \_ wszVBRBufferWindowMax** | Valor **DWORD** . Se establece en la ventana del búfer máximo, en milisegundos, para la codificación VBR restringida. |
+| **g \_ wszVBREnabled**         | Valor booleano. Establezca en True para usar la codificación VBR.                                                   |
+| **g \_ wszVBRQuality**         | **Valor DWORD.** Establezca en el nivel de calidad deseado (de 1 a 100) para la codificación VBR basada en calidad.      |
+| **g \_ wszVBRBitrateMax**      | **Valor DWORD.** Establezca en la velocidad de bits máxima, en bits por segundo, para la codificación VBR restringida.   |
+| **g \_ wszVBRBufferWindowMax** | **Valor DWORD.** Se establece en la ventana de búfer máxima, en milisegundos, para la codificación de VBR restringida. |
 
 
 
- 
+ 
 
-En las secciones siguientes se describe cómo usar los distintos tipos de codificación de velocidad de bits variable.
+En las secciones siguientes se describe cómo usar los diferentes tipos de codificación de velocidad de bits variable.
 
 
 
 | Sección                                                              | Descripción                                                                                                        |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
 | [Para configurar Quality-Based VBR](to-configure-quality-based-vbr.md) | Describe cómo usar la codificación de velocidad de bits variable basada en un nivel de calidad estático.                                   |
-| [Para configurar una VBR sin restricciones](to-configure-unconstrained-vbr.md) | Describe cómo usar la codificación de velocidad de bits variable basada en una velocidad de bits media de destino sin un valor de pico explícito. |
-| [Para configurar una VBR restringida](to-configure-constrained-vbr.md)     | Describe cómo usar la codificación de velocidad de bits variable basada en una velocidad de bits media de destino y un valor máximo explícito.     |
+| [Para configurar VBR sin restricciones](to-configure-unconstrained-vbr.md) | Describe cómo usar la codificación de velocidad de bits variable basada en una velocidad de bits media objetivo sin un valor máximo explícito. |
+| [Para configurar VBR restringido](to-configure-constrained-vbr.md)     | Describe cómo usar la codificación de velocidad de bits variable basada en una velocidad de bits media de destino y un valor máximo explícito.     |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Configuración de secuencias**](configuring-streams.md)
+[**Configuración de Secuencias**](configuring-streams.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

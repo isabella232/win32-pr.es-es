@@ -1,7 +1,7 @@
 ---
-description: Especifica el firmante que se va a firmar.
+description: Especifica un sujeto para firmar.
 ms.assetid: ba569443-e50f-450b-82cc-b7328f0ca25a
-title: Estructura de SIGNER_SUBJECT_INFO
+title: SIGNER_SUBJECT_INFO estructura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,19 +12,19 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 05b5d780e50f8ea10fcf68cc90ae7092bbc2c473
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 418eacfaf654efb487dc61f692b1d384e045d62f9fc8f9af96f2fd746810440d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117973223"
 ---
-# <a name="signer_subject_info-structure"></a>Estructura de \_ información de asunto del firmante \_
+# <a name="signer_subject_info-structure"></a>Signer \_ SUBJECT \_ INFO (estructura)
 
-La estructura de **\_ \_ información de asunto del firmante** especifica el firmante que se va a firmar.
+La **estructura SIGNER \_ SUBJECT \_ INFO** especifica un sujeto para firmar.
 
 > [!Note]  
-> Esta estructura no está definida en ningún archivo de encabezado. Para usar esta estructura, debe definirla usted mismo tal como se muestra en este tema.
+> Esta estructura no se define en ningún archivo de encabezado. Para usar esta estructura, debe definirla usted mismo como se muestra en este tema.
 
  
 
@@ -52,7 +52,7 @@ typedef struct _SIGNER_SUBJECT_INFO {
 **cbSize**
 </dt> <dd>
 
-Tamaño de la estructura, en bytes.
+Tamaño, en bytes, de la estructura .
 
 </dd> <dt>
 
@@ -66,14 +66,14 @@ Este miembro está reservado. Debe establecerse en cero.
 **dwSubjectChoice**
 </dt> <dd>
 
-Especifica si el sujeto es un archivo o un [*BLOB*](../secgloss/b-gly.md). Este miembro puede ser uno o varios de los valores siguientes.
+Especifica si el asunto es un archivo o un [*BLOB.*](../secgloss/b-gly.md) Este miembro puede ser uno o varios de los valores siguientes.
 
 
 
-| Value                                                                                                                                                                                                                                         | Significado                           |
+| Valor                                                                                                                                                                                                                                         | Significado                           |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| <span id="SIGNER_SUBJECT_BLOB"></span><span id="signer_subject_blob"></span><dl> <dt>**Firmante \_ \_BLOB de asunto**</dt> <dt>2 (0X2)</dt> </dl> | El asunto es un BLOB.<br/> |
-| <span id="SIGNER_SUBJECT_FILE"></span><span id="signer_subject_file"></span><dl> <dt>**Firmante \_ \_Archivo de asunto**</dt> <dt>1 (0x1)</dt> </dl> | El asunto es un archivo.<br/> |
+| <span id="SIGNER_SUBJECT_BLOB"></span><span id="signer_subject_blob"></span><dl> <dt>**FIRMANTE \_ SUBJECT \_ BLOB**</dt> <dt>2 (0x2)</dt> </dl> | El asunto es un BLOB.<br/> |
+| <span id="SIGNER_SUBJECT_FILE"></span><span id="signer_subject_file"></span><dl> <dt>**FIRMANTE \_ ARCHIVO \_ DE ASUNTO**</dt> <dt>1 (0x1)</dt> </dl> | El asunto es un archivo.<br/> |
 
 
 
@@ -84,14 +84,14 @@ Especifica si el sujeto es un archivo o un [*BLOB*](../secgloss/b-gly.md). Este 
 **pSignerFileInfo**
 </dt> <dd>
 
-Puntero a una estructura de [**\_ \_ información del archivo del firmante**](signer-file-info.md) que especifica el archivo que se va a firmar.
+Puntero a una estructura [**SIGNER \_ FILE \_ INFO**](signer-file-info.md) que especifica el archivo que se debe firmar.
 
 </dd> <dt>
 
 **pSignerBlobInfo**
 </dt> <dd>
 
-Puntero a una estructura de [**\_ \_ información del BLOB del firmante**](signer-blob-info.md) que especifica el BLOB que se va a firmar.
+Puntero a una estructura [**SIGNER \_ BLOB \_ INFO**](signer-blob-info.md) que especifica el BLOB que se debe firmar.
 
 </dd> </dl>
 
@@ -101,8 +101,8 @@ Puntero a una estructura de [**\_ \_ información del BLOB del firmante**](signe
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 

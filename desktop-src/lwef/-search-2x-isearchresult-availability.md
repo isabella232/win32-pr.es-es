@@ -3,9 +3,9 @@ title: Método de disponibilidad ISearchResult
 description: Método de disponibilidad ISearchResult
 ms.assetid: 78349958-b08d-4f9b-a24a-5f44680d4574
 keywords:
-- Método de disponibilidad características de entorno de Windows heredadas
-- Método de disponibilidad características de entorno de Windows heredadas, interfaz ISearchResult
-- Interfaz ISearchResult características del entorno de Windows heredado, método de disponibilidad
+- Características heredadas del entorno de Windows disponibilidad del método de disponibilidad
+- Método de disponibilidad Legacy Windows Environment Features , ISearchResult (Interfaz ISearchResult)
+- ISearchResult interface Legacy Windows Environment Features , Availability method
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c2986dec5064dcad38c35775e02a9da0043bc4ba
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 7f70682a66157a13c1de0fc79a61a78f6141bfcc67ed84104f0b3165e2a17a67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103904095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117694608"
 ---
-# <a name="isearchresultavailability-method"></a>ISearchResult:: Availability (método)
+# <a name="isearchresultavailability-method"></a>ISearchResult::Availability (Método)
 
 Este método no se implementa.
 
- 
+ 
 
- 
+ 
 
 
 

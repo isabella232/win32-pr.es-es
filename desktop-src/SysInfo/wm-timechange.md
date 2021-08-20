@@ -1,21 +1,21 @@
 ---
-description: Mensaje que se envía siempre que se produce un cambio en la hora del sistema.
+description: Mensaje que se envía cada vez que hay un cambio en la hora del sistema.
 ms.assetid: 94b5b6f7-04bb-4e0a-848b-e2b31ffc2938
-title: Mensaje de WM_TIMECHANGE (Winuser. h)
+title: WM_TIMECHANGE mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d43bb5cd4284813c45ab074a93a9cd9699883aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16829714ace9f2b8d0a038aff4410817a9ab43b9d6594b82344ecf8a7dbdc836
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117957325"
 ---
-# <a name="wm_timechange-message"></a>Mensaje de TIMECHANGE de WM \_
+# <a name="wm_timechange-message"></a>Mensaje \_ TIMECHANGE de WM
 
-Mensaje que se envía siempre que se produce un cambio en la hora del sistema.
+Mensaje que se envía cada vez que hay un cambio en la hora del sistema.
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -33,31 +33,31 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
-Identificador de la ventana.
+Identificador a ventana.
 
 </dd> <dt>
 
 *uMsg* 
 </dt> <dd>
 
-**WM \_** Identificador de TIMECHANGE.
+**WM \_ Identificador TIMECHANGE.**
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
@@ -65,7 +65,7 @@ No se utiliza; debe ser cero.
 
 Una aplicación debe devolver cero si procesa este mensaje.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Una aplicación no debe difundir este mensaje, porque el sistema difundirá este mensaje cuando la aplicación cambie la hora del sistema.
 
@@ -73,11 +73,11 @@ Una aplicación no debe difundir este mensaje, porque el sistema difundirá este
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Especifica una referencia a una superficie sin comprimir.
 ms.assetid: 01F9C9F9-8EB4-49D5-91F0-89B4C40DDDC8
-title: DXVA_PicEntry_HEVC estructura (DXVA. h)
+title: DXVA_PicEntry_HEVC estructura (Dxva.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - dxva.h
-ms.openlocfilehash: a2c4856452d0f8010e8f97126b4e660557ea40ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6b7b9ef471ba5d7d7c9ecd294bf2cdf1ff10a97174fe66529d1f251894f286fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117879739"
 ---
-# <a name="dxva_picentry_hevc-structure"></a>PicEntry de DXVA \_ \_ HEVC estructura
+# <a name="dxva_picentry_hevc-structure"></a>Estructura \_ DE DXVA PicEntry \_ HEVC
 
 Especifica una referencia a una superficie sin comprimir.
 
@@ -55,14 +55,14 @@ typedef struct _DXVA_PicEntry_HEVC {
 **AssociatedFlag** 
 </dt> <dd>
 
-Marca de 1 bit opcional asociada a la superficie. El significado de la marca depende del contexto. Por ejemplo, puede especificar si el marco de referencia es una referencia a largo plazo o una referencia a corto plazo.
+Marca opcional de 1 bit asociada a la superficie. El significado de la marca depende del contexto. Por ejemplo, puede especificar si el marco de referencia es una referencia a largo plazo o una referencia a corto plazo.
 
 </dd> <dt>
 
 **bPicEntry**
 </dt> <dd>
 
-Obtiene acceso a los 8 bits completos de la Unión.
+Accede a los 8 bits completos de la unión.
 
 </dd> </dl>
 
@@ -70,11 +70,11 @@ Obtiene acceso a los 8 bits completos de la Unión.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>DXVA. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
 
 
 

@@ -1,21 +1,21 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. Image. ImageID.
+description: Directiva de metadatos de fotos para la propiedad System.Image.ImageID.
 ms.assetid: 2a092d16-e7b9-4ffe-9bdb-01ed328ca26f
-title: Directiva de metadatos de la foto de System. Image. ImageID
+title: Directiva de metadatos de fotos System.Image.ImageID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bab812a8719c905002c91d33a65cc2b570d37cc2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17453b989aba5ab0c750138ec6802d1c67a82b936dd1747d7413e39b38ae2256
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104545718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117667605"
 ---
-# <a name="systemimageimageid-photo-metadata-policy"></a>Directiva de metadatos de la foto de System. Image. ImageID
+# <a name="systemimageimageid-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Image.ImageID
 
-La Directiva de metadatos de la fotografía para la propiedad [System. Image. ImageID](../properties/props-system-image-imageid.md) .
+Directiva de metadatos de fotos para [la propiedad System.Image.ImageID.](../properties/props-system-image-imageid.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ Image \_ ImageID
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
-VT \_ LPWStr
+VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo de entrada
 
@@ -37,7 +37,7 @@ String.
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
@@ -45,22 +45,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /app1/IFD/Exif/{ushort = 42016} | ascii       |
+| 1     | /app1/ifd/exif/{ushort=42016} | ascii       |
 | 2     | /xmp/exif:ImageUniqueID       | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /app1/IFD/Exif/{ushort = 42016} | ascii       |
+| 1     | /app1/ifd/exif/{ushort=42016} | ascii       |
 | 2     | /xmp/exif:ImageUniqueID       | unicode     |
 
 
@@ -71,9 +71,9 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                          |
+| Pedido | Ruta de acceso                          |
 |-------|-------------------------------|
-| 1     | /app1/IFD/Exif/{ushort = 42016} |
+| 1     | /app1/ifd/exif/{ushort=42016} |
 | 2     | /xmp/exif:ImageUniqueID       |
 
 
@@ -86,22 +86,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                        | Formato de disco |
+| Pedido | Ruta de acceso                        | Formato de disco |
 |-------|-----------------------------|-------------|
-|       | /IFD/Exif/{ushort = 42016}    | ascii       |
+|       | /ifd/exif/{ushort=42016}    | ascii       |
 |       | /ifd/xmp/exif:ImageUniqueID | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                        | Formato de disco |
+| Pedido | Ruta de acceso                        | Formato de disco |
 |-------|-----------------------------|-------------|
-|       | /IFD/Exif/{ushort = 42016}    | ascii       |
+|       | /ifd/exif/{ushort=42016}    | ascii       |
 |       | /ifd/xmp/exif:ImageUniqueID | unicode     |
 
 
@@ -112,22 +112,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                        |
+| Pedido | Ruta de acceso                        |
 |-------|-----------------------------|
-|       | /IFD/Exif/{ushort = 42016}    |
+|       | /ifd/exif/{ushort=42016}    |
 |       | /ifd/xmp/exif:ImageUniqueID |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. Image. ImageID](../properties/props-system-image-imageid.md)
+[System.Image.ImageID](../properties/props-system-image-imageid.md)
 </dt> </dl>
 
  

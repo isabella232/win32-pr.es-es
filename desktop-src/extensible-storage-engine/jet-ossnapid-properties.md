@@ -19,7 +19,7 @@ ms.locfileid: "118073958"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_OSSNAPID](./jet-ossnapid-structure.md) muestra los miembros siguientes.
+El [JET_OSSNAPID](./jet-ossnapid-structure.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -43,7 +43,7 @@ El [JET_OSSNAPID](./jet-ossnapid-structure.md) muestra los miembros siguientes.
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

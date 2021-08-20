@@ -1,26 +1,26 @@
 ---
-description: Describe el formato de fecha y hora de Modelo de información común (CIM) utilizado por WMI. Este formato es independiente de la configuración regional, por lo que los scripts que usan DATETIME se pueden ejecutar en muchas zonas horarias.
+description: Describe el formato Modelo de información común (CIM) de fecha y hora usado por WMI. Este formato es independiente de la configuración regional, por lo que los scripts que usan DATETIME se pueden ejecutar en muchas zonas horarias.
 ms.assetid: be239bf8-88a3-47bc-ae4f-49a5195e7a7d
 ms.tgt_platform: multiple
 title: Formato de fecha y hora
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a29e8f97930efa33942fe87b2109aa7cd7ba9d93
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6fb33f9c252a35fba35dcaa5c07d320033d043da1b148f6a6718ad8a3c637240
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104156005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117925491"
 ---
 # <a name="date-and-time-format"></a>Formato de fecha y hora
 
-WMI usa los formatos de fecha y hora definidos por la especificación de Modelo de información común (CIM) del equipo de administración distribuida ([DMTF.org](https://www.dmtf.org/)).
+WMI usa los formatos de fecha y hora definidos por la especificación distributed management task force ([DMTF.org](https://www.dmtf.org/)) Modelo de información común (CIM).
 
-El formato de **\_ fecha y hora de CIM** se implementa en Microsoft [Managed Object Format (MOF)](managed-object-format--mof-.md) mediante el tipo de [valor de fecha y hora](datetime.md) MOF. Los formatos de fecha y hora también pueden expresar un intervalo de tiempo.
+El **formato \_ CIM DATETIME** se implementa en microsoft [Managed Object Format (MOF)](managed-object-format--mof-.md) mediante el tipo de datos [MOF DATETIME.](datetime.md) Los formatos de fecha y hora también pueden expresar un intervalo de tiempo.
 
-Para obtener más información sobre los formatos de WMI, consulte [formato de intervalo](interval-format.md)y [fecha y \_ hora de CIM](cim-datetime.md) .
+Para obtener más información sobre los formatos WMI, [vea CIM \_ DATETIME](cim-datetime.md) y [Interval Format](interval-format.md).
 
-Para obtener más información sobre la conversión a y desde el formato de fecha y hora de WMI, consulte [**SWbemDateTime**](swbemdatetime.md) y el artículo en TechNet ScriptCenter [sobre la hora (oh y las fechas)](https://www.microsoft.com/technet/technetmag/issues/2006/07/ScriptingGuy/default.aspx).
+Para obtener más información sobre la conversión a y desde el formato DATETIME de WMI, vea [**SWbemDateTime**](swbemdatetime.md) y el artículo sobre TechNet ScriptCenter [It's About Time (Oh, and About Dates, too) (Acerca](https://www.microsoft.com/technet/technetmag/issues/2006/07/ScriptingGuy/default.aspx)de las fechas, también).
 
 ## <a name="related-topics"></a>Temas relacionados
 

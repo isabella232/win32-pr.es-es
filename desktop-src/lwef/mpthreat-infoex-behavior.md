@@ -1,10 +1,10 @@
 ---
-title: MPTHREAT_INFOEX_BEHAVIOR estructura (MpClient. h)
-description: Contiene información específica de la modificación del comportamiento.
+title: MPTHREAT_INFOEX_BEHAVIOR estructura (MpClient.h)
+description: Contiene información específica de modificación del comportamiento.
 ms.assetid: 762E755F-5BA1-476D-B395-6617093309C5
 keywords:
-- MPTHREAT_INFOEX_BEHAVIOR estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPTHREAT_INFOEX_BEHAVIOR características de entorno heredado de Windows
+- MPTHREAT_INFOEX_BEHAVIOR estructura heredada de Windows environment
+- PMPTHREAT_INFOEX_BEHAVIOR puntero de estructura heredado Windows environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cb0bc00aeb56aec38b88f2590211c705079834f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8d0043b371cf4a77523a3b78bc31c5e56a480f134e87a0ed3853939460fc6a3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883198"
 ---
-# <a name="mpthreat_infoex_behavior-structure"></a>MPTHREAT \_ estructura de comportamiento de INFOEX \_
+# <a name="mpthreat_infoex_behavior-structure"></a>Estructura MPTHREAT \_ INFOEX \_ BEHAVIOR
 
-Contiene información específica de la modificación del comportamiento.
+Contiene información específica de modificación del comportamiento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,11 +52,11 @@ typedef struct tagMPTHREAT_INFOEX_BEHAVIOR {
 **SignatureID**
 </dt> <dd>
 
-Tipo: **ULARGE \_ Integer**
+Tipo: **ENTERO \_ ULARGE**
 
 </dd> <dd>
 
-IDENTIFICADOR de la firma de modificación del comportamiento proporcionado por el motor en el momento de la detección.
+Identificador de firma de modificación del comportamiento que el motor ha dado en el momento de la detección.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Tipo: **ULONGLONG**
 
 </dd> <dd>
 
-Versión de la firma de AntiSpyware.
+Versión de firma antispyware.
 
 </dd> <dt>
 
@@ -89,18 +89,18 @@ Tipo: **ULONGLONG**
 
 </dd> <dd>
 
-Versión de firma de antivirus
+Versión de firma antivirus
 
 </dd> <dt>
 
 **HashType**
 </dt> <dd>
 
-Tipo: **[ **\_ \_ tipo hash de MP**](mp-hash-type.md)**
+Tipo: **[ **MP \_ HASH \_ TYPE**](mp-hash-type.md)**
 
 </dd> <dd>
 
-Tipo hash usado. Vea [**\_ \_ tipo de hash de MP**](mp-hash-type.md).
+Tipo hash utilizado. Vea [**MP HASH TYPE (TIPO DE HASH DE \_ \_ MP).**](mp-hash-type.md)
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Valor de fidelidad.
 **HashValue**
 </dt> <dd>
 
-Type: **MP \_ MIDL \_ String LPWStr**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -129,22 +129,22 @@ Hash del archivo.
 **TargetFileName**
 </dt> <dd>
 
-Type: **MP \_ MIDL \_ String LPWStr**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
-La ruta de acceso y el nombre del archivo de destino.
+Ruta de acceso y nombre del archivo de destino.
 
 </dd> <dt>
 
 **TargetFileHash**
 </dt> <dd>
 
-Type: **MP \_ MIDL \_ String LPWStr**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
-El hash del archivo de destino.
+Hash del archivo de destino.
 
 </dd> </dl>
 
@@ -154,9 +154,9 @@ El hash del archivo de destino.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -164,7 +164,7 @@ El hash del archivo de destino.
 
 <dl> <dt>
 
-[**\_tipo hash de MP \_**](mp-hash-type.md)
+[**TIPO \_ HASH DE \_ MP**](mp-hash-type.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: La fecha principal de interés para un elemento. En el caso de las fotos, por ejemplo, esta propiedad se asigna a System. Photo. DateTaken.
+description: Fecha principal de interés para un elemento. En el caso de las fotos, por ejemplo, esta propiedad se asigna a System.Photo.DateTaken.
 ms.assetid: 36809167-5ce2-4394-bbe8-474c9e5ec204
-title: System. ItemDate
+title: System.ItemDate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 959cc82fd372c1816a9b2c1172cb2aeccf39b0c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23ad9bb8a7bb74b7096f7899256ce3b8e432f9aed4abefd76b129f71181ee6ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117865867"
 ---
-# <a name="systemitemdate"></a>System. ItemDate
+# <a name="systemitemdate"></a>System.ItemDate
 
-La fecha principal de interés para un elemento. En el caso de las fotos, por ejemplo, esta propiedad se asigna a [System. Photo. DateTaken](./props-system-photo-datetaken.md).
+Fecha principal de interés para un elemento. En el caso de las fotos, por ejemplo, esta propiedad se asigna a [System.Photo.DateTaken](./props-system-photo-datetaken.md).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -46,9 +46,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -63,7 +63,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -75,7 +75,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -93,7 +93,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

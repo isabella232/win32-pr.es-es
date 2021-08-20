@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_THREADSTATS'
-title: JET_THREADSTATS estructura (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: JET_THREADSTATS estructura'
+title: JET_THREADSTATS estructura (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: JET_THREADSTATS structure
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_threadstats(v=EXCHG.10)
@@ -24,21 +24,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 764a9276543fbb7a5b1aa2762cc8ed1877c45ded
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b77628bece94d4021ec437ee678a3463bcb8b64158e28286c060ee45b7ce182f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105714971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118073229"
 ---
-# <a name="jet_threadstats-structure"></a>Estructura de JET_THREADSTATS
+# <a name="jet_threadstats-structure"></a>JET_THREADSTATS estructura
 
-Contiene estadísticas acumuladas sobre el trabajo realizado por el motor de base de datos en el subproceso actual. Esta información se devuelve a través de JetGetThreadStats.
+Contiene estadísticas acumulativas sobre el trabajo realizado por el motor de base de datos en el subproceso actual. Esta información se devuelve a través de JetGetThreadStats.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,6 +62,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_THREADSTATS](./jet-threadstats-members.md)
+[JET_THREADSTATS miembros](./jet-threadstats-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

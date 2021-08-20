@@ -1,19 +1,19 @@
 ---
-description: Después de crear o importar una clave maestra, tanto RSA/Schannel como Diffie-Hellman/Schannel informan al CSP del tipo de claves de cifrado masivo y de las claves MAC que se derivarán de la clave maestra.
+description: Después de crear o importar una clave maestra, TANTO RSA/Schannel como Diffie-Hellman/Schannel informan al CSP del tipo de claves de cifrado masivo y claves MAC que se derivarán de la clave maestra.
 ms.assetid: d0976a7e-3c8e-4bbe-80e1-568a27ab81c6
 title: Especificar los algoritmos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f5d329486c655fbc347d35870cfe81335678cfd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b45bf68025b7233b5347e320eab348a3fe3528b76ceec3ec047ef634710d90e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117972646"
 ---
 # <a name="specifying-the-algorithms"></a>Especificar los algoritmos
 
-Después de crear o importar una [*clave maestra*](../secgloss/m-gly.md) , tanto [*RSA*](../secgloss/r-gly.md)/Schannel como [*Diffie-Hellman*](../secgloss/d-gly.md)/Schannel informan al [*CSP*](../secgloss/c-gly.md) del tipo de [*claves de cifrado masivo*](../secgloss/b-gly.md) y de [*las claves Mac*](../secgloss/m-gly.md) que se derivarán de la clave maestra. En el ejemplo siguiente se especifican estos algoritmos. Se usa el mismo código para el cliente y el servidor.
+Después [](../secgloss/m-gly.md) de crear o importar una clave maestra, [*RSA*](../secgloss/r-gly.md)/Schannel y [*Diffie-Hellman*](../secgloss/d-gly.md)/Schannel informan al [*CSP*](../secgloss/c-gly.md) del tipo de claves de cifrado masivo y claves [*MAC*](../secgloss/m-gly.md) que se derivarán de la clave maestra. [](../secgloss/b-gly.md) En el ejemplo siguiente se especifican estos algoritmos. Se usa el mismo código para el cliente y el servidor.
 
 
 ```C++
@@ -83,7 +83,7 @@ if (!CryptSetKeyParam(
 
 
 > [!Note]  
-> Un motor de protocolo [*Schannel*](../secgloss/s-gly.md) no debe especificar los algoritmos y los tamaños de clave no admitidos por el CSP. Para obtener más información, vea [enumerar los protocolos admitidos](enumerating-supported-protocols.md). Si se especifican los algoritmos no admitidos o los tamaños de clave, la función de CSP debe producir un error y devolver el \_ código de error de datos incorrectos de NTE \_ .
+> Un [*motor de protocolo de Schannel*](../secgloss/s-gly.md) no debe especificar algoritmos y tamaños de clave no admitidos por el CSP. Para obtener más información, [vea Enumerating Supported Protocols](enumerating-supported-protocols.md). Si se especifican algoritmos o tamaños de clave no admitidos, la función CSP debe producir un error y devolver el código de \_ error NTE BAD \_ DATA.
 
  
 

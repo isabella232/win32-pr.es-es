@@ -1,5 +1,5 @@
 ---
-title: Indización
+title: Indexación
 description: Cuando sea posible, busque atributos indexados o al menos un atributo indexado. Al igual que en general con las bases de datos, la búsqueda en un atributo indexado permite al servidor calcular de forma más eficaz el conjunto de resultados.
 ms.assetid: 5b74edf2-6c4a-47ce-90aa-94cff8ffecf7
 ms.tgt_platform: multiple
@@ -12,7 +12,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117839745"
 ---
-# <a name="indexing"></a>Indización
+# <a name="indexing"></a>Indexación
 
 Cuando sea posible, busque atributos indexados o al menos un atributo indexado. Al igual que en general con las bases de datos, la búsqueda en un atributo indexado permite al servidor calcular de forma más eficaz el conjunto de resultados.
 

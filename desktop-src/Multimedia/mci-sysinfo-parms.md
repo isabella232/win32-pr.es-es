@@ -1,9 +1,9 @@
 ---
-title: MCI_SYSINFO_PARMS estructura (Mciapi. h)
-description: La \_ \_ estructura de parms de MCI sysinfo contiene información para el comando de MCI \_ sysinfo.
+title: MCI_SYSINFO_PARMS estructura (Mciapi.h)
+description: La estructura \_ MCI SYSINFO \_ PARMS contiene información para el \_ comando SYSINFO de MCI.
 ms.assetid: 433649ed-7c00-440d-84f3-164949e01cc4
 keywords:
-- Estructura de MCI_SYSINFO_PARMS de Windows multimedia
+- MCI_SYSINFO_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf143bb0d895dc03df38bbb0a657467d506eac77
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 708d37f4d011997352a95b80dc80b8b9afd28730feeeb0e285a07d68c8c8eed5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117803135"
 ---
-# <a name="mci_sysinfo_parms-structure"></a>\_ \_ Estructura parms de MCI SYSINFO
+# <a name="mci_sysinfo_parms-structure"></a>Estructura \_ MCI SYSINFO \_ PARMS
 
-La estructura de **\_ \_ parms de MCI sysinfo** contiene información para el comando de [**MCI \_ sysinfo**](mci-sysinfo.md) .
+La **estructura \_ MCI SYSINFO \_ PARMS** contiene información para el [**comando \_ SYSINFO de MCI.**](mci-sysinfo.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,39 +47,39 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
 **lpstrReturn**
 </dt> <dd>
 
-Puntero a un búfer proporcionado por el usuario para la cadena devuelta. También se usa para devolver un valor **DWORD** cuando \_ se usa la marca de cantidad de MCI SYSINFO \_ .
+Puntero a un búfer proporcionado por el usuario para la cadena de devolución. También se usa para devolver un valor **DWORD** cuando se usa la marca \_ MCI SYSINFO \_ QUANTITY.
 
 </dd> <dt>
 
 **dwRetSize**
 </dt> <dd>
 
-Tamaño, en bytes, del búfer de retorno.
+Tamaño, en bytes, del búfer devuelto.
 
 </dd> <dt>
 
 **dwNumber**
 </dt> <dd>
 
-Número que indica la posición del dispositivo en la tabla de dispositivos MCI o en la lista de dispositivos abiertos \_ si \_ se establece la marca de apertura de MCI SYSINFO.
+Número que indica la posición del dispositivo en la tabla de dispositivos MCI o en la lista de dispositivos abiertos si se establece la marca \_ MCI SYSINFO \_ OPEN.
 
 </dd> <dt>
 
 **wDeviceType**
 </dt> <dd>
 
-Tipo de dispositivo. Este miembro puede ser uno de los valores enumerados en [tipos de dispositivo MCI](mci-device-types.md).
+Tipo de dispositivo. Este miembro puede ser uno de los valores enumerados en [Tipos de dispositivo de MCI.](mci-device-types.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -87,11 +87,11 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -99,13 +99,13 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
 </dt> <dt>
 
-[**MCI \_ SYSINFO**](mci-sysinfo.md)
+[**SYSINFO de MCI \_**](mci-sysinfo.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

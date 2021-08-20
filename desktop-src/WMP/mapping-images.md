@@ -3,38 +3,38 @@ title: Asignar imágenes
 description: Asignar imágenes
 ms.assetid: ecdee7ec-f9a6-4d6f-845f-8706a2e29376
 keywords:
-- Aspectos de Windows Media Player, archivos de imagen
-- máscaras, archivos de imagen
+- Reproductor de Windows Media máscaras, archivos art
+- skins,art files
 - archivos para máscaras, arte
-- archivos de imagen para máscaras, imágenes de asignación
-- Máscaras de Windows Media Player, imágenes de asignación
+- archivos de arte para máscaras, imágenes de asignación
+- Reproductor de Windows Media máscaras,imágenes de asignación
 - máscaras, imágenes de asignación
 - asignar imágenes en máscaras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2efe4c319712f189c6097e9bba4bcea80784f6b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6fc6edcad5f0c83cd18e41004ca01307c71953b57c19eb6d5b4714333717a023
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117934585"
 ---
 # <a name="mapping-images"></a>Asignar imágenes
 
-Las imágenes de asignación se usan para que los controles específicos especifiquen qué regiones responderán a los clics del mouse y para determinar qué controles reciben los eventos. La imagen de asignación debe tener el mismo alto y ancho que la imagen principal y debe crearse para que las imágenes de ambos archivos estén alineadas exactamente. Por esta razón, se recomienda usar un programa de edición de gráficos que admita capas porque puede estar seguro de que las imágenes están perfectamente alineadas.
+Las imágenes de asignación se usan para controles específicos a fin de especificar qué regiones responderán a los clics del mouse y determinar qué controles reciben qué eventos. La imagen de asignación debe tener el mismo alto y ancho que la imagen principal y debe crearse para que las imágenes de ambos archivos se alinee exactamente. Por este motivo, se recomienda un programa de edición de gráficos que admita capas, ya que puede estar seguro de que las imágenes están perfectamente alineadas.
 
-Los distintos controles requieren distintos tipos de asignación. Un elemento **ButtonElement** necesita una asignación que tenga un color diferente para cada botón. Las áreas de color del archivo de asignación deben corresponder a las áreas de los botones que desea asignar.
+Los distintos controles requieren diferentes tipos de asignación. Un **elemento ButtonElement** necesita un mapa que tenga un color diferente para cada botón. Las áreas coloreadas del archivo de asignación deben corresponderse con las áreas de los botones que desea asignar.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Archivos de imagen**](art-files.md)
+[**Archivos de arte**](art-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

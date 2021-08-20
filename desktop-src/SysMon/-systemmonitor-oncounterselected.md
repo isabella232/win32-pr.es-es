@@ -1,11 +1,11 @@
 ---
-title: Evento SystemMonitor. OnCounterSelected
+title: Evento SystemMonitor.OnCounterSelected
 description: Le notifica cuando se selecciona un contador.
 ms.assetid: 788a95a7-47ec-41f9-bf46-324ad3cc8a4e
 keywords:
-- Evento OnCounterSelected SysMon
-- Evento OnCounterSelected SysMon, clase SystemMonitor
-- Clase SystemMonitor SysMon, evento OnCounterSelected
+- OnCounterSelected, evento SysMon
+- Evento OnCounterSelected SysMon , clase SystemMonitor
+- Clase SystemMonitor SysMon , Evento OnCounterSelected
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0174ab2f896a27e44df592ec28b7cb12a03198f3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9e5e5402eb123c5edd44a5616b6973940ba065e2b0c8c2bfa63e7d151ae30124
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105666006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117957253"
 ---
-# <a name="systemmonitoroncounterselected-event"></a>Evento SystemMonitor. OnCounterSelected
+# <a name="systemmonitoroncounterselected-event"></a>Evento SystemMonitor.OnCounterSelected
 
 Le notifica cuando se selecciona un contador.
 
@@ -42,10 +42,10 @@ SystemMonitor.OnCounterSelected( _
 
 <dl> <dt>
 
-*Índice* \[ de de\]
+*index* \[ En\]
 </dt> <dd>
 
-Índice del contador seleccionado en el objeto de colección [**counters**](counters.md) .
+Índice del contador seleccionado en el [**objeto de colección Counters.**](counters.md)
 
 </dd> </dl>
 
@@ -53,23 +53,23 @@ SystemMonitor.OnCounterSelected( _
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Puede recibir este evento cuando
 
--   El valor de el elemento se establece en true [**.**](counteritem-selected.md)
--   El usuario selecciona un contador en la leyenda
--   El usuario hace doble clic en un contador de la leyenda
+-   Establezca [**CounterItem.Selected en**](counteritem-selected.md) True.
+-   El usuario selecciona un contador en la leyenda.
+-   El usuario hace doble clic en un contador de la leyenda.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
@@ -77,7 +77,7 @@ Puede recibir este evento cuando
 
 <dl> <dt>
 
-[**SystemMonitor.OnCounterAdded**](systemmonitor-oncounteradded.md)
+[**SystemMonitor.OnCounter Agregado**](systemmonitor-oncounteradded.md)
 </dt> <dt>
 
 [**SystemMonitor.OnCounterDeleted**](-systemmonitor-oncounterdeleted.md)

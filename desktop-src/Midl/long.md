@@ -1,9 +1,9 @@
 ---
-title: atributo Long
-description: La palabra clave Long designa un entero de 32 bits.
+title: atributo long
+description: La palabra clave long designa un entero de 32 bits.
 ms.assetid: 5619e482-e3c3-4898-a70b-afd337d2749a
 keywords:
-- Long (atributo) MIDL
+- ATRIBUTO LONG MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47ea9af3bfac85ff375f6d5433b4e9f3ed37d8f7
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 9493aea9a669e9ac14882e9a230e217e74c7236a68c3bb924ddbbaad7e4b93ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103994677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117806720"
 ---
-# <a name="long-attribute"></a>atributo Long
+# <a name="long-attribute"></a>atributo long
 
-La palabra clave **Long** designa un entero de 32 bits.
+La **palabra clave long** designa un entero de 32 bits.
 
 ``` syntax
 [ signed | unsigned ] long [ int ] declarator-list;
@@ -31,18 +31,18 @@ La palabra clave **Long** designa un entero de 32 bits.
 
 <dl> <dt>
 
-*lista de declaradores* 
+*declarator-list* 
 </dt> <dd>
 
-Especifica uno o más declaradores estándar de C, como identificadores, declaradores de puntero y declaradores de matriz. (Los declaradores de función y las declaraciones de campo de bits no se permiten en las estructuras que se transmiten en llamadas a procedimientos remotos. Estos declaradores se permiten en estructuras que no se transmiten). Separe varios declaradores con comas.
+Especifica uno o varios declaradores de C estándar, como identificadores, declaradores de puntero y declaradores de matriz. (Los declaradores de función y las declaraciones de campo de bits no se permiten en estructuras que se transmiten en llamadas a procedimientos remotos. Estos declaradores se permiten en estructuras que no se transmiten). Separe varios declaradores con comas.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La palabra clave **Long** puede ir precedida de la palabra clave [**signed**](signed.md) o la palabra clave [**sin signo**](unsigned.md). La palabra clave [**int**](int.md) es opcional y se puede omitir. En el compilador de MIDL, un entero largo está firmado de forma predeterminada y es sinónimo de **signed Long int**. En las plataformas de 32 bits, **Long** es sinónimo de **int**.
+La palabra clave **long** puede ir precedida de la palabra clave [**signed**](signed.md) o la palabra [**clave unsigned**](unsigned.md). La palabra clave [**int**](int.md) es opcional y se puede omitir. Para el compilador MIDL, un entero largo se firma de forma predeterminada y es sinónimo de **signed long int**. En las plataformas de 32 bits, **long** es sinónimo de **int**.
 
-El tipo entero **largo** es uno de los tipos base del lenguaje IDL. El tipo de entero **largo** puede aparecer como especificador de tipo en declaraciones [**const**](const.md) , declaraciones [**typedef**](typedef.md) , declaraciones generales y declaradores de función (como especificador de tipo de valor devuelto de función y como especificador de tipo de parámetro). Para el contexto en el que aparecen los especificadores de tipo, vea [archivo de definición de interfaz (IDL)](interface-definition-idl-file.md).
+El **tipo** entero long es uno de los tipos base del lenguaje IDL. El **tipo** entero long puede aparecer como especificador de tipo en declaraciones [**const,**](const.md) declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como especificador return-type de función y como especificador de tipo de parámetro). Para obtener el contexto en el que aparecen los especificadores de tipo, vea [Archivo de definición de interfaz (IDL).](interface-definition-idl-file.md)
 
 ## <a name="see-also"></a>Vea también
 
@@ -51,33 +51,33 @@ El tipo entero **largo** es uno de los tipos base del lenguaje IDL. El tipo de e
 [**const**](const.md)
 </dt> <dt>
 
-[Tipos base de MIDL](midl-base-types.md)
+[Tipos base midl](midl-base-types.md)
 </dt> <dt>
 
-[**Thread**](hyper.md)
+[**hyper**](hyper.md)
 </dt> <dt>
 
-[**Inter**](int.md)
+[**int**](int.md)
 </dt> <dt>
 
 [**short**](short.md)
 </dt> <dt>
 
-[**conectado**](signed.md)
+[**Firmado**](signed.md)
 </dt> <dt>
 
-[**pequeño**](small.md)
+[**Pequeño**](small.md)
 </dt> <dt>
 
-[**typedef**](typedef.md)
+[**Typedef**](typedef.md)
 </dt> <dt>
 
-[**sin signo**](unsigned.md)
+[**Unsigned**](unsigned.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

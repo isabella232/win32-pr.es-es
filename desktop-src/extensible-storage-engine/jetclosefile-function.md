@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JetCloseFile (función)'
-title: JetCloseFile función)
+description: 'Más información sobre: JetCloseFile (Función)'
+title: JetCloseFile (Función)
 TOCTitle: JetCloseFile Function
 ms:assetid: e8930915-8102-44b0-ae42-abedbd3e0512
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294127(v=EXCHG.10)
@@ -18,21 +18,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 29fc2c76bf8528956d3e3331b3c2f23bf52f929f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b22f1454cad9962d429a497acb2b91f92d44b3e9a43c36ddb74cde06a54782c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118072898"
 ---
-# <a name="jetclosefile-function"></a>JetCloseFile función)
+# <a name="jetclosefile-function"></a>JetCloseFile (Función)
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jetclosefile-function"></a>JetCloseFile función)
+## <a name="jetclosefile-function"></a>JetCloseFile (Función)
 
-La función **JetCloseFile** cierra un archivo que se abrió con [JetOpenFile](./jetopenfile-function.md) después de que los datos de ese archivo se hayan extraído con [JetReadFile](./jetreadfile-function.md).
+La **función JetCloseFile** cierra un archivo que se abrió con [JetOpenFile](./jetopenfile-function.md) después de extraer los datos de ese archivo [mediante JetReadFile](./jetreadfile-function.md).
 
 ```cpp
     JET_ERR JET_API JetCloseFile(
@@ -42,13 +42,13 @@ La función **JetCloseFile** cierra un archivo que se abrió con [JetOpenFile](.
 
 ### <a name="parameters"></a>Parámetros
 
-*hfFile*
+*archivo de archivos de archivos*
 
 Identificador del archivo que se va a leer.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores ese, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -68,16 +68,16 @@ Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de lo
 </tr>
 <tr class="even">
 <td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>No es posible completar la operación porque se ha interrumpido toda la actividad en la instancia asociada a la sesión como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
+<td><p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInstanceUnavailable</p></td>
-<td><p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irrecuperable que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p>
-<p>Este error solo se devolverá en Windows XP y versiones posteriores.</p></td>
+<td><p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p>
+<p>Este error solo lo devolverán Windows XP y versiones posteriores.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidParameter</p></td>
-<td><p>Uno de los parámetros proporcionados contenía un valor inesperado o contenía un valor que no tenía sentido cuando se combinó con el valor de otro parámetro. Esto puede ocurrir para <strong>JetCloseFile</strong> cuando:</p>
+<td><p>Uno de los parámetros proporcionados contenía un valor inesperado o contenía un valor que no tenía sentido cuando se combinaba con el valor de otro parámetro. Esto puede ocurrir para <strong>JetCloseFile</strong> cuando:</p>
 <ul>
 <li><p>El identificador de instancia especificado no es válido (Windows XP y versiones posteriores),</p></li>
 <li><p>El identificador de archivo especificado no es válido.</p></li>
@@ -85,11 +85,11 @@ Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de lo
 </tr>
 <tr class="odd">
 <td><p>JET_errNoBackup</p></td>
-<td><p>No se pudo realizar la operación porque no hay ninguna copia de seguridad externa en curso.</p></td>
+<td><p>Error en la operación porque no hay ninguna copia de seguridad externa en curso.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errNotInitialized</p></td>
-<td><p>No es posible completar la operación porque todavía no se ha inicializado la instancia asociada a la sesión.</p></td>
+<td><p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errRestoreInProgress</p></td>
@@ -97,7 +97,7 @@ Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de lo
 </tr>
 <tr class="even">
 <td><p>JET_errRunningInMultiInstanceMode</p></td>
-<td><p>No se pudo realizar la operación porque se intentó usar el motor en modo heredado (modo de compatibilidad de Windows 2000), donde solo se admite una instancia cuando en realidad existen varias instancias.</p></td>
+<td><p>Error en la operación porque se intentó usar el motor en modo heredado (modo de compatibilidad Windows 2000), donde solo se admite una instancia cuando en realidad ya existen varias instancias.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errTermInProgress</p></td>
@@ -107,13 +107,13 @@ Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de lo
 </table>
 
 
-Si se ejecuta correctamente, se cierra el identificador de archivo. Si se ha cerrado un archivo de base de datos, se destruye el archivo de revisión de la base de datos asociado (si existe).
+Si se ejecuta correctamente, se cierra el identificador de archivo. Si se cerró un archivo de base de datos, se destruye el archivo de revisión de base de datos asociado (si existe).
 
 En caso de error, no se produce ningún cambio.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
-Actualmente, el motor de base de datos solo admite un archivo abierto a través de [JetOpenFile](./jetopenfile-function.md) a la vez. Si se abre un identificador de archivo con [JetOpenFile](./jetopenfile-function.md) , se debe cerrar con **JetCloseFile** antes de que se pueda abrir otro archivo.
+Actualmente, el motor de base de datos solo admite un archivo abierto [a través de JetOpenFile](./jetopenfile-function.md) a la vez. Si se abre un identificador de archivo [mediante JetOpenFile,](./jetopenfile-function.md) debe cerrarse mediante **JetCloseFile** antes de que se pueda abrir otro archivo.
 
 #### <a name="requirements"></a>Requisitos
 
@@ -128,19 +128,19 @@ Actualmente, el motor de base de datos solo admite un archivo abierto a través 
 <td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Server</strong></p></td>
+<td><p><strong>Servidor</strong></p></td>
 <td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
+<td><p>Declarado en Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
+<td><p>Use ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>DLL</strong></p></td>
+<td><p><strong>Dll</strong></p></td>
 <td><p>Requiere ESENT.dll.</p></td>
 </tr>
 </tbody>

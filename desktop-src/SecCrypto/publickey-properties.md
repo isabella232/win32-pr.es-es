@@ -4,23 +4,23 @@ ms.assetid: D925275B-6BAE-42AB-B49A-3AF261B3388D
 title: Propiedades de PublicKey
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cbb4eba7418b1fdc03f1dce0b70b8491d55cb9dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9eb0ba636e4852141eb813594d64f633d7ac1caa7c9d0769bccdeda11e7a3e1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361297"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117975974"
 ---
 # <a name="publickey-properties"></a>Propiedades de PublicKey
 
-El objeto [**publicKey**](publickey.md) expone las siguientes propiedades.
+El [**objeto PublicKey**](publickey.md) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**Propiedad Algorithm**](publickey-algorithm.md)
 -   [**Propiedad EncodedKey**](publickey-encodedkey.md)
 -   [**Propiedad EncodedParameters**](publickey-encodedparameters.md)
--   [**Length (propiedad)**](publickey-length.md)
+-   [**Propiedad Length**](publickey-length.md)
 
  
 

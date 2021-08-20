@@ -1,25 +1,25 @@
 ---
-description: Hora de envío base del receptor de medios ASF, en milisegundos.
+description: Tiempo de envío base para el receptor de medios de ASF, en milisegundos.
 ms.assetid: 1b99845e-751a-4ec6-bd2d-e4644cd6863e
-title: Propiedad MFPKEY_ASFMEDIASINK_BASE_SENDTIME (Mfidl. h)
+title: MFPKEY_ASFMEDIASINK_BASE_SENDTIME propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3f9bc7f9d92a598a723e3eeee733f63b59d27d2
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 23ece9ef06a7253c016557609c344db09f96bcd32ddef44272c2ce5ffa77672a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105697973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117874582"
 ---
-# <a name="mfpkey_asfmediasink_base_sendtime-property"></a>\_ \_ Propiedad SENDTIME base de MFPKEY ASFMEDIASINK \_
+# <a name="mfpkey_asfmediasink_base_sendtime-property"></a>Propiedad MFPKEY \_ ASFMEDIASINK \_ BASE \_ SENDTIME
 
-Hora de envío base del receptor de medios ASF, en milisegundos.
+Tiempo de envío base para el receptor de medios de ASF, en milisegundos.
 
 
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
@@ -31,15 +31,15 @@ VT \_ UI4
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La hora de envío es la hora a la que se envía un paquete ASF a través de la red. No se corresponde directamente con el tiempo de presentación de los datos del paquete.
+La hora de envío es la hora a la que se envía un paquete asf a través de la red. No se corresponde directamente con el tiempo de presentación de los datos del paquete.
 
-Puede utilizar esta propiedad para configurar el receptor de medios ASF. El uso depende de la función a la que llame para crear el receptor de medios ASF:
+Puede usar esta propiedad para configurar el receptor de medios de ASF. El uso depende de la función a la que llame para crear el receptor de medios de ASF:
 
--   [**MFCreateASFMediaSink**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmediasink): Consulte el puntero [**IMFMediaSink**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasink) recuperado para la interfaz **IPropertyStore** .
+-   [**MFCreateASFMediaSink:**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmediasink)consulta el puntero [**DECIMMediaSink**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasink) recuperado para la **interfaz IPropertyStore.**
 
--   [**MFCreateASFMediaSinkActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmediasinkactivate): llame a [**IMFASFContentInfo:: GetEncodingConfigurationPropertyStore**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getencodingconfigurationpropertystore) en el puntero [**IMFASFContentInfo**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) especificado en el parámetro *pContentInfo* .
+-   [**MFCreateASFMediaSinkActivate:**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmediasinkactivate)llame a [**MFASFContentInfo::GetEncodingConfigurationPropertyStore**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getencodingconfigurationpropertystore) en el puntero [**DEFFContentInfo**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) especificado en el *parámetro pContentInfo.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,9 +47,9 @@ Puede utilizar esta propiedad para configurar el receptor de medios ASF. El uso 
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -57,7 +57,7 @@ Puede utilizar esta propiedad para configurar el receptor de medios ASF. El uso 
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

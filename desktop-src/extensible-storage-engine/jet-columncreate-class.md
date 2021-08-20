@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_COLUMNCREATE (clase)'
-title: JET_COLUMNCREATE (clase)
+description: 'Más información sobre: JET_COLUMNCREATE clase'
+title: JET_COLUMNCREATE clase
 TOCTitle: JET_COLUMNCREATE class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_COLUMNCREATE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columncreate(v=EXCHG.10)
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 337317e7e0a150e893faf5416540dcbe2fa3f042
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd8f5141ed75c57784027c07015f9453af262f2b556c4a4b836391efd462f088
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118075983"
 ---
-# <a name="jet_columncreate-class"></a>JET_COLUMNCREATE (clase)
+# <a name="jet_columncreate-class"></a>JET_COLUMNCREATE clase
 
-Describe una columna en una tabla de una base de datos ESENT.
+Describe una columna de una tabla de una base de datos ESENT.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_COLUMNCREATE  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -68,6 +68,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_COLUMNCREATE](./jet-columncreate-members.md)
+[JET_COLUMNCREATE miembros](./jet-columncreate-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
