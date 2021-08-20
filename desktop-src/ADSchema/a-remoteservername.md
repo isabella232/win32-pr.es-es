@@ -1,11 +1,11 @@
 ---
-title: Remote-Server-Name (atributo)
-description: Se usa siempre que se deban almacenar uno o más nombres de equipo.
+title: Atributo Remote-Server-Name
+description: Se usa siempre que se deben almacenar uno o varios nombres de equipo.
 ms.assetid: d09fe925-2137-478d-8630-5220fadedeab
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de nombre de servidor remoto
-- atributo remoteServerName esquema de AD
+- Esquema de AD del atributo Remote-Server-Name
+- Esquema de AD del atributo remoteServerName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02362c7ef3ba485795a2f27005a8fa2a793f004b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: cc1472f74f17328468840e3565dcedf4f18f2ff35166816f982593243a401a41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118011486"
 ---
-# <a name="remote-server-name-attribute"></a>Remote-Server-Name (atributo)
+# <a name="remote-server-name-attribute"></a>Atributo Remote-Server-Name
 
-Se usa siempre que se deban almacenar uno o más nombres de equipo.
+Se usa siempre que se deben almacenar uno o varios nombres de equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Nombre de servidor remoto                          |
-| Nombre para mostrar de LDAP | remoteServerName                            |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | Remote-Server-Name                          |
+| Ldap-Display-Name | remoteServerName                            |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.105                      |
-| System-ID-GUID    | bf967a12-0de6-11d0-a285-00aa003049e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf967a12-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Se usa siempre que se deban almacenar uno o más nombres de equipo.
 
 | Entrada | Value |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | False                                |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Falso                                |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Se usa siempre que se deban almacenar uno o más nombres de equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | False                                |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Falso                                |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Se usa siempre que se deban almacenar uno o más nombres de equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | False                                |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Falso                                |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Se usa siempre que se deban almacenar uno o más nombres de equipo.
 
 | Entrada | Value |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | False                                |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Falso                                |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Se usa siempre que se deban almacenar uno o más nombres de equipo.
 
 | Entrada | Value |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | False                                |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Falso                                |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Se usa siempre que se deban almacenar uno o más nombres de equipo.
 
 | Entrada | Value |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | False                                |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Falso                                |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 

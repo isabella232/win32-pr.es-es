@@ -1,11 +1,11 @@
 ---
-title: Propiedad de identificador de IVMTask (VPCCOMInterfaces. h)
+title: Propiedad IVMTask ID (VPCCOMInterfaces.h)
 description: Recupera un identificador único para esta tarea.
 ms.assetid: 56a63b94-139b-4445-aef6-1b988e548b4b
 keywords:
-- Propiedad ID Virtual PC
-- Propiedad ID Virtual PC, interfaz IVMTask
-- Interfaz IVMTask Virtual PC, propiedad ID
+- Propiedad de identificador Virtual PC
+- Propiedad de identificador Virtual PC, interfaz IVMTask
+- IVMTask interface Virtual PC , propiedad ID
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 821650fcec725a43d86e539bd7f6cc9e7a6e2677
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 45bb5efed1e7c0398113b20e1bf2b9de6edc81bf39958a34895219e7250facbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118123245"
 ---
-# <a name="ivmtaskid-property"></a>IVMTask:: ID (propiedad)
+# <a name="ivmtaskid-property"></a>IVMTask::ID, propiedad
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera un identificador único para esta tarea.
 
@@ -53,9 +53,9 @@ El identificador único.
 
 | Nombre o valor                                                                                                                                                    | Significado                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>     |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>         | El valor del parámetro es **null**.<br/>  |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/> |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>     |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>         | El valor del parámetro es **NULL.**<br/>  |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/> |
 
 
 
@@ -63,14 +63,14 @@ El identificador único.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMTask se define como ab72b222-6e9c-48ae-aa54-85e3e635767c<br/>                    |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMTask se define como \_ ab72b222-6e9c-48ae-aa54-85e3e635767c<br/>                    |
 
 
 

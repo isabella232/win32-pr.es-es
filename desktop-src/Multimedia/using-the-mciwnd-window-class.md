@@ -1,39 +1,39 @@
 ---
-title: Usar la clase de ventana MCIWnd
-description: Usar la clase de ventana MCIWnd
+title: Uso de la clase Window de MCIWnd
+description: Uso de la clase Window de MCIWnd
 ms.assetid: 5b692dd8-a280-424b-b438-365412b484ff
 keywords:
-- MCI (media control Interface), clase de ventana MCIWnd
+- MCI (interfaz de control multimedia), clase de ventana MCIWnd
 - Clase de ventana MCIWnd, acerca de
 - Clase de ventana MCIWnd, ejemplos
-- Ventana MCIWnd, ejemplos
-- Ventana MCIWnd, clase de ventana
+- Ventana de MCIWnd, ejemplos
+- Ventana de MCIWnd,clase window
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb89c386c3cf3d3d3885501981a1066430e31fb7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8bb94841975e721b76bde7287709197c5457966ccb8def9f72dda426307b3732
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136133"
 ---
-# <a name="using-the-mciwnd-window-class"></a>Usar la clase de ventana MCIWnd
+# <a name="using-the-mciwnd-window-class"></a>Uso de la clase Window de MCIWnd
 
-Esta sección contiene ejemplos que muestran cómo realizar las tareas siguientes:
+Esta sección contiene ejemplos que muestran cómo realizar las siguientes tareas:
 
--   [Crear una ventana de MCIWnd](creating-an-mciwnd-window.md)
--   [Automatizar la reproducción de MCIWnd](automating-playback-for-mciwnd.md)
+-   [Creación de una ventana de MCIWnd](creating-an-mciwnd-window.md)
+-   [Automatización de la reproducción para MCIWnd](automating-playback-for-mciwnd.md)
 -   [Pausar y reanudar la reproducción](pausing-and-resuming-playback.md)
 -   [Limitar el ámbito de reproducción](limiting-the-playback-scope.md)
--   [Grabar con controles MCIWnd](recording-with-mciwnd-controls.md)
+-   [Grabación con controles MCIWnd](recording-with-mciwnd-controls.md)
 -   [Personalización del proceso de grabación](customizing-the-recording-process.md)
 -   [Recortar una imagen](cropping-an-image.md)
--   [Ajustar una imagen](stretching-an-image.md)
--   [Ajustar una imagen y una ventana](stretching-an-image-and-window.md)
+-   [Stretching an Image](stretching-an-image.md)
+-   [Stretching an Image and Window](stretching-an-image-and-window.md)
 
- 
+ 
 
- 
+ 
 
 
 

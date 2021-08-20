@@ -1,12 +1,12 @@
 ---
-title: Método SetTSRedirectorMode de la clase Win32_TSSessionDirectory
-description: Establece el valor para indicar si el servidor actuará como redirector de Servicios de Escritorio remoto.
+title: Método SetTSRedirectorMode de la Win32_TSSessionDirectory clase
+description: Establece el valor para indicar si el servidor actuará como Servicios de Escritorio remoto redirector.
 ms.assetid: abdb92df-1e49-4445-ba02-bb83fd1ca541
 ms.tgt_platform: multiple
 keywords:
 - Método SetTSRedirectorMode Servicios de Escritorio remoto
-- Método SetTSRedirectorMode Servicios de Escritorio remoto, clase Win32_TSSessionDirectory
-- Win32_TSSessionDirectory de clase Servicios de Escritorio remoto, método SetTSRedirectorMode
+- Método SetTSRedirectorMode Servicios de Escritorio remoto , Win32_TSSessionDirectory clase
+- Win32_TSSessionDirectory clase Servicios de Escritorio remoto , método SetTSRedirectorMode
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95e3195a83a32dca0c8e4a96de211a72a66a8f3a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6350d4b9a4858991616d45eb2b1092fe406c59b55b11c494a7f19be53dbb60ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118127281"
 ---
-# <a name="settsredirectormode-method-of-the-win32_tssessiondirectory-class"></a>Método SetTSRedirectorMode de la \_ clase TSSessionDirectory de Win32
+# <a name="settsredirectormode-method-of-the-win32_tssessiondirectory-class"></a>Método SetTSRedirectorMode de la clase TSSessionDirectory de Win32 \_
 
-Establece el valor para indicar si el servidor actuará como redirector de Servicios de Escritorio remoto.
+Establece el valor para indicar si el servidor actuará como Servicios de Escritorio remoto redirector.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,51 +43,51 @@ uint32 SetTSRedirectorMode(
 
 <dl> <dt>
 
-*TSRedirValue* \[ de\]
+*TSRedirValue* \[ En\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Especifica si el servidor actuará como redirector de Servicios de Escritorio remoto. Puede ser uno de los valores siguientes.
+Especifica si el servidor actuará como Servicios de Escritorio remoto redirector. Puede ser uno de los siguientes valores.
 
 <dt>
 
 0
 </dt> <dd>
 
-El servidor actuará como redirector de Servicios de Escritorio remoto.
+El servidor actuará como un Servicios de Escritorio remoto de red.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-El servidor no actuará como redirector de Servicios de Escritorio remoto.
+El servidor no actuará como un Servicios de Escritorio remoto de red.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI. Consulte [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores. El método devuelve un error si la configuración está en control de directiva de grupo.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores. El método devuelve un error si la configuración está bajo control de directiva de grupo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                       |
 | Fin de compatibilidad de cliente<br/>    | No se admite ninguno<br/>                                                               |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2008 R2<br/>                                                       |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 

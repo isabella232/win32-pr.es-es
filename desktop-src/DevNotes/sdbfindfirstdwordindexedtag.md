@@ -80,13 +80,13 @@ Estructura [**FIND \_ INFO**](find-info.md) que recibe el registro.
 
 ## <a name="return-value"></a>Valor devuelto
 
-TAGID **de la** primera coincidencia o **TAG \_ NULL** si no se encuentra ninguna coincidencia.
+TagID **de la** primera coincidencia o **TAG \_ NULL** si no se encuentra ninguna coincidencia.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
@@ -94,7 +94,7 @@ TAGID **de la** primera coincidencia o **TAG \_ NULL** si no se encuentra ningun
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

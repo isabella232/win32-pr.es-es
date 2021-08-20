@@ -37,7 +37,7 @@ El [tipo Session](./session-class.md) expone los miembros siguientes.
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn351126(v=exchg.10).md">De sesión</a></td>
-<td>Inicializa una nueva instancia de la clase Session. Se asigna JET_SESSION una nueva instancia de a partir de la instancia especificada.</td>
+<td>Inicializa una nueva instancia de la clase Session. Se asigna JET_SESSION una nueva clase a partir de la instancia especificada.</td>
 </tr>
 </tbody>
 </table>
@@ -96,7 +96,7 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
 <td><a href="dn350543(v=exchg.10).md">Dispose(Boolean)</a></td>
-<td>Llamado por Dispose y el finalizador. (Se hereda de <a href="dn319890(v=exchg.10).md">EsentResource).</a></td>
+<td>Lo llaman Dispose y el finalizador. (Se hereda de <a href="dn319890(v=exchg.10).md">EsentResource).</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -131,7 +131,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
 <td><a href="dn351165(v=exchg.10).md">ReleaseResource</a></td>
-<td>Liberar el JET_SESID. (Invalida <a href="dn350545(v=exchg.10).md">EsentResource.ReleaseResource()</a>).</td>
+<td>Libera la JET_SESID subyacente. (Invalida <a href="dn350545(v=exchg.10).md">EsentResource.ReleaseResource()</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
@@ -146,7 +146,7 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn351129(v=exchg.10).md">ToString</a></td>
-<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el objeto <a href="dn351164(v=exchg.10).md">Session actual.</a> (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
+<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa la sesión <a href="dn351164(v=exchg.10).md">actual.</a> (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -168,7 +168,7 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operador público" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn351178(v=exchg.10).md">Implicit(Session to JET_SESID)</a></td>
-<td>Operador de conversión implícita de una sesión a una JET_SESID. Esto permite usar una sesión con las API que esperan un JET_SESID.</td>
+<td>Operador de conversión implícita de una sesión a una JET_SESID. Esto permite usar una sesión con API que esperan un JET_SESID.</td>
 </tr>
 </tbody>
 </table>
@@ -176,7 +176,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

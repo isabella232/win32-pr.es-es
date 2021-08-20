@@ -1,11 +1,11 @@
 ---
-title: Enabled-Connection atributo)
+title: Enabled-Connection atributo
 description: Indica si una conexión está disponible para su uso.
 ms.assetid: 577c06fc-afb5-4e11-80a0-ee046ec68fb8
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Enabled-Connection
-- enabledConnection esquema de AD de atributos
+- Enabled-Connection esquema de AD de atributo
+- EnabledConnection attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 104280a36e54ce73c98a3aea2ba9789bbebd75b1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: eb9312226d3027d345f8aba818b152d6588e1671103377adbef226e279c8313c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118177359"
 ---
-# <a name="enabled-connection-attribute"></a>Enabled-Connection atributo)
+# <a name="enabled-connection-attribute"></a>Enabled-Connection atributo
 
 Indica si una conexión está disponible para su uso.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Enabled-Connection                   |
-| Nombre para mostrar de LDAP | enabledConnection                    |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | enabledConnection                    |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.36                |
-| System-ID-GUID    | bf967963-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | bf967963-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -44,7 +44,7 @@ Indica si una conexión está disponible para su uso.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ Indica si una conexión está disponible para su uso.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------|
-| Identificador de vínculo                | \-                                                     |
+| Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Tiene un único valor       | True                                                   |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                           |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | True                                                   |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -77,39 +77,39 @@ Indica si una conexión está disponible para su uso.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------|
-| Identificador de vínculo                | \-                                                     |
+| Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Tiene un único valor       | True                                                   |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                           |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | True                                                   |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------|
-| Identificador de vínculo                | \-                                                     |
+| Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Tiene un único valor       | True                                                   |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                           |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | Verdadero                                                   |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -117,20 +117,20 @@ Indica si una conexión está disponible para su uso.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------|
-| Identificador de vínculo                | \-                                                     |
+| Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Tiene un único valor       | True                                                   |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                           |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | True                                                   |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ Indica si una conexión está disponible para su uso.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------|
-| Identificador de vínculo                | \-                                                     |
+| Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Tiene un único valor       | True                                                   |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                           |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | True                                                   |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ Indica si una conexión está disponible para su uso.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------|
-| Identificador de vínculo                | \-                                                     |
+| Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Tiene un único valor       | True                                                   |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                           |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | True                                                   |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -180,20 +180,20 @@ Indica si una conexión está disponible para su uso.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------|
-| Identificador de vínculo                | \-                                                     |
+| Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Tiene un único valor       | True                                                   |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                           |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | Verdadero                                                   |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 

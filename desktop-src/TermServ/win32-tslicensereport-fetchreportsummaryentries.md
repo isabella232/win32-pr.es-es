@@ -1,6 +1,6 @@
 ---
 title: Método FetchReportSummaryEntries de la Win32_TSLicenseReport clase
-description: Recupera resúmenes de Servicios de Escritorio remoto licencias de acceso de cliente por usuario (RDS \ 160; CAL por usuario) del informe.
+description: Recupera resúmenes de Servicios de Escritorio remoto licencias de acceso de cliente por usuario (RDS \ 160; Por CAL de usuario) del informe.
 ms.assetid: 0312B787-83E9-42FC-B21B-904B804C5C94
 ms.tgt_platform: multiple
 keywords:
@@ -55,7 +55,7 @@ uint32 FetchReportSummaryEntries(
 *Recuento* \[ in, out\]
 </dt> <dd>
 
-Número de entradas de informe que se recuperarán del objeto de informe. Un valor de cero indica que se van a recuperar todas las entradas del informe a partir de *StartIndex.* En la devolución, contiene el número de entradas de la *matriz ReportSummaryEntries.*
+Número de entradas de informe que se recuperarán del objeto de informe. Un valor de cero indica que se van a recuperar todas las entradas de informe que comienzan *en StartIndex.* En la devolución, contiene el número de entradas de la *matriz ReportSummaryEntries.*
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ Devuelve una matriz de [**clases \_ TSLicenseReportSummaryEntry de Win32.**](win
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Un valor **de LSERVER \_ I NO \_ MORE \_ \_ DATA** (0x4001) indica que no hay más entradas de informe.
+Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Un valor **de LSERVER \_ I NO \_ MORE \_ \_ DATA** (0x4001) indica que no hay más entradas de informe.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -76,7 +76,7 @@ No se trata de un método estático. Se debe llamar a este método desde un obje
 
 Debe ser miembro del grupo Administradores para llamar a este método.
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,11 +92,11 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**TSLicenseReport de Win32 \_**](win32-tslicensereport.md)
+[**Win32 \_ TSLicenseReport**](win32-tslicensereport.md)
 </dt> <dt>
 
 [**Win32 \_ TSLicenseReportSummaryEntry**](win32-tslicensereportsummaryentry.md)

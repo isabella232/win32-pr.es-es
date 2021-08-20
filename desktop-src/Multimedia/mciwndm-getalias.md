@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_GETALIAS (VFW. h)
-description: El \_ mensaje MCIWNDM GETALIAS recupera el alias usado para abrir un dispositivo MCI o un archivo con la función mciSendString. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetAlias.
+title: MCIWNDM_GETALIAS mensaje (Vfw.h)
+description: El mensaje GETALIAS de MCIWNDM recupera el alias usado para abrir un archivo o un dispositivo \_ MCI con la función mciSendString. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetAlias.
 ms.assetid: 37131b89-275c-4ab6-9278-0e08c42471bd
 keywords:
-- Mensaje de MCIWNDM_GETALIAS de Windows multimedia
+- MCIWNDM_GETALIAS mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e971c50b9abc450387ac29f9a7331bfdca5c38c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 857ea90205b5204cd7c4af19f27a420684e59543717b2689f178d97cd5a600de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137756"
 ---
-# <a name="mciwndm_getalias-message"></a>MCIWNDM \_ GETALIAS
+# <a name="mciwndm_getalias-message"></a>Mensaje GETALIAS de MCIWNDM \_
 
-El mensaje **MCIWNDM \_ GETALIAS** recupera el alias usado para abrir un dispositivo MCI o un archivo con la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) . Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetAlias**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetalias) .
+El **mensaje \_ GETALIAS de MCIWNDM** recupera el alias usado para abrir un archivo o un dispositivo MCI con la [**función mciSendString.**](/previous-versions//dd757161(v=vs.85)) Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetAlias.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetalias)
 
 
 ```C++
@@ -42,11 +42,11 @@ Devuelve el alias del dispositivo.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

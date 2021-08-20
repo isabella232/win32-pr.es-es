@@ -1,7 +1,7 @@
 ---
 description: La propiedad HelpKeyword devuelve el valor de la columna HelpKeyword de la tabla ModuleConfiguration.
 ms.assetid: 470db520-3a9a-47bf-90ff-a284bafa1020
-title: Propiedad ConfigurableItem. HelpKeyword (Mergemod. h)
+title: Propiedad ConfigurableItem.HelpKeyword (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: a12a848f818cbe2379462ea0da815c36510dbbb9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a9a861d331abc5c828bd7bcb2923b212e8a16cac30bc48f991ee7ca820578de0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118143991"
 ---
-# <a name="configurableitemhelpkeyword-property"></a>Propiedad ConfigurableItem. HelpKeyword
+# <a name="configurableitemhelpkeyword-property"></a>Propiedad ConfigurableItem.HelpKeyword
 
-La propiedad **HelpKeyword** devuelve el valor de la columna HelpKeyword de la [tabla ModuleConfiguration](moduleconfiguration-table.md).
+La **propiedad HelpKeyword** devuelve el valor de la columna HelpKeyword de la [tabla ModuleConfiguration](moduleconfiguration-table.md).
 
 Esta propiedad es de solo lectura.
 
@@ -40,16 +40,16 @@ propVal = ConfigurableItem.HelpKeyword
 
 ## <a name="c"></a>C++
 
-Consulte [**Get \_ HelpKeyword**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_helpkeyword) function.
+Consulte get HelpKeyword function (Obtener [**función \_ HelpKeyword).**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_helpkeyword)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | Mergemod.dll 2,0 o posterior<br/>                                                    |
-| Encabezado<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versión<br/> | Mergemod.dll 2.0 o posterior<br/>                                                    |
+| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

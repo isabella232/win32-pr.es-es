@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118164598"
 ---
-# <a name="mdm_policy_result01_autoplay02-class"></a>Clase Mdm \_ Policy \_ Result01 \_ Autoplay02
+# <a name="mdm_policy_result01_autoplay02-class"></a>Clase MDM \_ Policy \_ Result01 \_ Autoplay02
 
 \[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
@@ -78,7 +78,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -92,7 +92,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>

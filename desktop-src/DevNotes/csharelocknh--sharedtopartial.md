@@ -1,7 +1,7 @@
 ---
 description: Cambia un bloqueo compartido a un bloqueo parcial.
 ms.assetid: 82122671-b0bd-47ad-9a25-ee8ebd3779be
-title: 'CShareLockNH:: SharedToPartial (método)'
+title: CShareLockGNI::SharedToPartial (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Rwnh.dll
-ms.openlocfilehash: a997c5a437063a4c55b74d837dc77fd506688158
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f2cc895786655754a3fcf56c6efe745467c12328867b1dc021a257ba1519652
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162210"
 ---
-# <a name="csharelocknhsharedtopartial-method"></a>CShareLockNH:: SharedToPartial (método)
+# <a name="csharelocknhsharedtopartial-method"></a>CShareLockGNI::SharedToPartial (método)
 
 Cambia un bloqueo compartido a un bloqueo parcial.
 
@@ -39,17 +39,17 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si se obtiene el bloqueo parcial; de lo contrario, devuelve **false** y el bloqueo permanece en modo compartido.
+Devuelve **TRUE** si se obtiene el bloqueo parcial; de lo contrario, devuelve **FALSE** y el bloqueo permanece en modo compartido.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|-------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Rwnh.dll</dt> </dl> |
 

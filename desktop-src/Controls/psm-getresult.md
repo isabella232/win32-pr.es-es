@@ -1,6 +1,6 @@
 ---
 title: PSM_GETRESULT mensaje (Prsht.h)
-description: Las hojas de propiedades modeless usan para recuperar la información devuelta a las hojas de propiedades modales por PropertySheet. Puede enviar este mensaje explícitamente o usar la \_ macro PropSheet GetResult.
+description: Usado por hojas de propiedades modeless para recuperar la información devuelta a las hojas de propiedades modales por PropertySheet. Puede enviar este mensaje explícitamente o usar la \_ macro PropSheet GetResult.
 ms.assetid: e0f609ea-5d7e-4c17-ade1-3c1051c5a5bf
 keywords:
 - PSM_GETRESULT controles de Windows mensaje
@@ -23,7 +23,7 @@ ms.locfileid: "118169811"
 ---
 # <a name="psm_getresult-message"></a>Mensaje \_ GETRESULT de PSM
 
-Usado por hojas de propiedades modeless para recuperar la información devuelta a las hojas de propiedades modales [**por PropertySheet**](/windows/desktop/api/Prsht/nf-prsht-propertysheeta). Puede enviar este mensaje explícitamente o usar la [**macro \_ PropSheet GetResult.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_getresult)
+Usado por hojas de propiedades modeless para recuperar la información devuelta a las hojas de propiedades modales [**por PropertySheet**](/windows/desktop/api/Prsht/nf-prsht-propertysheeta). Puede enviar este mensaje explícitamente o usar la macro [**\_ PropSheet GetResult.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_getresult)
 
 ## <a name="parameters"></a>Parámetros
 

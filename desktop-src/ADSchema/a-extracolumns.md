@@ -1,11 +1,11 @@
 ---
-title: Extra-Columns atributo)
-description: Se trata de un atributo multivalor cuyos valores se componen de una tupla de 5 (nombre de atributo), (título de columna), (visibilidad predeterminada (0, 1)), (el ancho de columna (\ 8211; 1 para el ancho automático), 0 (reservado para uso futuro debe ser cero).
+title: Extra-Columns atributo
+description: Se trata de un atributo de varios valores cuyos valores constan de una tupla 5 (nombre de atributo), (título de columna), (visibilidad predeterminada (0,1)), (ancho de columna ( \ 8211;1 para el ancho automático)), 0 (reservado para uso futuro debe ser cero).
 ms.assetid: aafe4657-0295-4af2-a7d0-8c7561516e17
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Extra-Columns
-- atributo de extracolumns esquema de AD
+- Extra-Columns esquema de AD del atributo
+- Esquema de AD del atributo extraColumns
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de0bc74532296c5e0f23da9635bb26df299ae60b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6314a18ecac01a306c72d5879d191c5a744c20171495a3d57192078202d129f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118177187"
 ---
-# <a name="extra-columns-attribute"></a>Extra-Columns atributo)
+# <a name="extra-columns-attribute"></a>Extra-Columns atributo
 
-Se trata de un atributo multivalor cuyos valores se componen de una tupla 5: (nombre de atributo), (título de columna), (visibilidad predeterminada (0, 1)), (ancho de columna (1 para ancho automático), 0 (reservado para uso futuro debe ser cero). La consola usuarios y equipos de AD usa este valor.
+Se trata de un atributo de varios valores cuyos valores constan de una tupla de 5: (nombre de atributo), (título de columna), (visibilidad predeterminada (0,1)), (ancho de columna ( 1 para ancho automático)), 0 (reservado para uso futuro debe ser cero). La consola usuarios y equipos de AD usa este valor.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | CN                | Extra-Columns                                                                                                                                                        |
-| Nombre para mostrar de LDAP | extracolumns                                                                                                                                                         |
-| Tamaño              | Cada valor sería el tamaño de la cadena de la tupla 5 anterior. De forma predeterminada, habrá 22 valores en el objeto de visualización predeterminado en el contenedor DisplaySpecifier. |
-| Actualizar privilegio  | Administrador de dominio                                                                                                                                                 |
-| Frecuencia de actualización  | Solo se actualizará si se ha instalado un servicio como Exchange.                                                                                                   |
+| Ldap-Display-Name | extraColumns                                                                                                                                                         |
+| Size              | Cada valor sería el tamaño de la cadena de las 5 tuplas anteriores. De forma predeterminada, habrá 22 valores en el objeto default-Display en el contenedor DisplaySpecifier. |
+| Privilegio actualizar  | Administrador de dominio                                                                                                                                                 |
+| Frecuencia de actualización  | Esto solo se actualizará si un servicio como Exchange está instalado.                                                                                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1687                                                                                                                                              |
-| System-ID-GUID    | d24e2846-1dd9-4bcf-99d7-a6227cc86da7                                                                                                                                 |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                                                                                                          |
+| System-Id-Guid    | d24e2846-1dd9-4bcf-99d7-a6227cc86da7                                                                                                                                 |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                                                                                                          |
 
 
 
@@ -54,13 +54,13 @@ Se trata de un atributo multivalor cuyos valores se componen de una tupla 5: (no
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Falso                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -75,13 +75,13 @@ Se trata de un atributo multivalor cuyos valores se componen de una tupla 5: (no
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Falso                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -94,15 +94,15 @@ Se trata de un atributo multivalor cuyos valores se componen de una tupla 5: (no
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Falso                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -115,15 +115,15 @@ Se trata de un atributo multivalor cuyos valores se componen de una tupla 5: (no
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Falso                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -138,13 +138,13 @@ Se trata de un atributo multivalor cuyos valores se componen de una tupla 5: (no
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Falso                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |

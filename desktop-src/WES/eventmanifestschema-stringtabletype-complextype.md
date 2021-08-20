@@ -80,7 +80,7 @@ Define una lista de cadenas localizadas a las que puede hacer referencia en el m
 
 ## <a name="remarks"></a>Comentarios
 
-Puede hacer referencia a las cadenas de cualquier tipo de manifiesto que contenga el atributo de mensaje. Para hacer referencia a una cadena con un stringType de "string" y un identificador de "Printer.Connection", use $(string. Printer.Connection) como el valor del atributo de mensaje.
+Puede hacer referencia a las cadenas desde cualquier tipo de manifiesto que contenga el atributo de mensaje. Para hacer referencia a una cadena con un stringType de "string" y un identificador de "Printer.Connection", use $(string. Printer.Connection) como el valor del atributo de mensaje.
 
 ## <a name="requirements"></a>Requisitos
 

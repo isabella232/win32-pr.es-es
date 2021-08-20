@@ -1,12 +1,12 @@
 ---
-title: Método ImportLicenseKeyPackOffline de la clase Win32_TSLicenseKeyPack
-description: Importa, desde otro servidor de licencias de Escritorio remoto, un paquete de claves de licencia de Servicios de Escritorio remoto que utiliza un identificador de licencia recibido a través de Internet o del teléfono.
+title: Método ImportLicenseKeyPackOffline de la Win32_TSLicenseKeyPack clase
+description: Importa, desde otro servidor Escritorio remoto licencias, un Servicios de Escritorio remoto de claves de licencia que usa un identificador de licencia que se recibió a través de Internet o el teléfono.
 ms.assetid: 69D65917-8B82-4C24-AFFA-BBE529D3883C
 ms.tgt_platform: multiple
 keywords:
 - Método ImportLicenseKeyPackOffline Servicios de Escritorio remoto
-- Método ImportLicenseKeyPackOffline Servicios de Escritorio remoto, clase Win32_TSLicenseKeyPack
-- Win32_TSLicenseKeyPack de clase Servicios de Escritorio remoto, método ImportLicenseKeyPackOffline
+- Método ImportLicenseKeyPackOffline Servicios de Escritorio remoto , Win32_TSLicenseKeyPack clase
+- Win32_TSLicenseKeyPack clase Servicios de Escritorio remoto método , ImportLicenseKeyPackOffline
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0de474cce6eb91cdc605588f7f4a63d97f985769
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5c7d5be5dc8cfd9f654c09d989149a423351689f420a52ca1756fb197260e800
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118348636"
 ---
-# <a name="importlicensekeypackoffline-method-of-the-win32_tslicensekeypack-class"></a>Método ImportLicenseKeyPackOffline de la \_ clase TSLicenseKeyPack de Win32
+# <a name="importlicensekeypackoffline-method-of-the-win32_tslicensekeypack-class"></a>Método ImportLicenseKeyPackOffline de la clase \_ TSLicenseKeyPack de Win32
 
-Importa, desde otro servidor de licencias de Escritorio remoto, un paquete de claves de licencia de Servicios de Escritorio remoto que utiliza un identificador de licencia recibido a través de Internet o del teléfono.
+Importa, desde otro servidor Escritorio remoto licencias, un Servicios de Escritorio remoto de claves de licencia que usa un identificador de licencia que se recibió a través de Internet o el teléfono.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,28 +46,28 @@ uint32 ImportLicenseKeyPackOffline(
 
 <dl> <dt>
 
-*sLicenseKeyPackId* \[ de\]
+*sLicenseKeyPackId* \[ En\]
 </dt> <dd>
 
-Contiene el código de licencia de 35 caracteres. Solo se debe proporcionar como entrada la cadena de caracteres alfanuméricos de 35 caracteres. No se deben agregar guiones.
+Contiene el código de licencia de 35 caracteres. Solo se debe dar como entrada la cadena de caracteres alfanuméricos de 35 caracteres. No se debe agregar ningún guion.
 
 </dd> <dt>
 
-*sSourceLSName* \[ de\]
+*sSourceLSName* \[ En\]
 </dt> <dd>
 
-Nombre del servidor de licencias de origen Escritorio remoto. Este es el nombre completo completo o la dirección IP del servidor.
+Nombre del servidor de licencias Escritorio remoto origen. Este es el nombre distintivo completo o la dirección IP del servidor.
 
 </dd> <dt>
 
-*sSourceLSProductId* \[ de\]
+*sSourceLSProductId* \[ En\]
 </dt> <dd>
 
-Identificador del servidor de licencias Escritorio remoto. Es una cadena alfanumérica de 35 caracteres que no puede incluir guiones.
+Identificador Escritorio remoto servidor de licencias. es una cadena alfanumérica de 35 caracteres que no puede incluir guiones.
 
 </dd> <dt>
 
-*KeyPackId* \[ enuncia\]
+*KeyPackId* \[ out\]
 </dt> <dd>
 
 Recibe el identificador del paquete de claves.
@@ -76,7 +76,7 @@ Recibe el identificador del paquete de claves.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI.](terminal-services-wmi-provider-error-codes.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,7 +87,7 @@ Si el método se ejecuta correctamente, devuelve cero. Si el método no se reali
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |
 | Espacio de nombres<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 

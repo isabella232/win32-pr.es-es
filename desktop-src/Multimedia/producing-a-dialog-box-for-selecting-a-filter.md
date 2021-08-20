@@ -4,26 +4,26 @@ description: Generar un cuadro de diálogo para seleccionar un filtro
 ms.assetid: 4cbb9276-6ce6-4cf4-a000-2b4f9ac42b31
 keywords:
 - Administrador de compresión de audio (ACM), generar cuadros de diálogo
-- ACM (Administrador de compresión de audio), generar cuadros de diálogo
+- ACM (administrador de compresión de audio), generar cuadros de diálogo
 - Ejemplos de ACM, generar cuadros de diálogo
 - generar cuadros de diálogo
-- acmFilterChoose función)
-- Administrador de compresión de audio (ACM), seleccionar filtros
-- ACM (Administrador de compresión de audio), seleccionar filtros
-- Ejemplos de ACM, seleccionar filtros
+- Función acmFilterChoose
+- Administrador de compresión de audio (ACM), selección de filtros
+- ACM (administrador de compresión de audio), selección de filtros
+- Ejemplos de ACM, selección de filtros
 - selección de filtros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87225c1aebf2a06c738a1b48b03b94ed81bf6c2d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 70015f7e546337983725ae85c683acf5e9b75423e0de0734de4e1293480933ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105676141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136609"
 ---
 # <a name="producing-a-dialog-box-for-selecting-a-filter"></a>Generar un cuadro de diálogo para seleccionar un filtro
 
-Una aplicación puede permitir a los usuarios seleccionar una operación de filtro arbitraria y aplicarla a los datos de audio de una onda. En el ejemplo siguiente, la aplicación asigna un búfer para contener el filtro y, a continuación, usa la función [**acmFilterChoose**](/windows/desktop/api/Msacm/nf-msacm-acmfilterchoose) para seleccionar el filtro. Se debe llamar a las funciones de este ejemplo con el filtro o la etiqueta de filtro adecuados.
+Una aplicación puede permitir a los usuarios seleccionar una operación de filtro arbitraria y aplicarla a los datos de audio de forma de onda. En el ejemplo siguiente, la aplicación asigna un búfer para contener el filtro y, a continuación, usa la función [**acmFilterChoose**](/windows/desktop/api/Msacm/nf-msacm-acmfilterchoose) para seleccionar el filtro. Se debe llamar a las funciones de este ejemplo con la etiqueta de filtro o filtro adecuada.
 
 
 ```C++
@@ -74,9 +74,9 @@ return (mmr);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,7 @@ title: Función de devolución de llamada ReaderScroll
 description: Función de devolución de llamada definida por la aplicación que se usa cuando el puntero del mouse se mueve dentro de la parte de la ventana del modo lector que se ha declarado como el área de desplazamiento activa.
 ms.assetid: b1feb661-e3bc-4fcd-9acf-ac000c3066bd
 keywords:
-- ReaderScroll (función de devolución de llamada) controles de Windows
+- ReaderScroll callback function Windows Controls
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0db5a80b84a30362e3bdbce45fe7485ad0dd6884
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 554530e556161b4128199cda0a1a9d791f4f0ed75e8915c311d8945445486ac3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118169115"
 ---
 # <a name="readerscroll-callback-function"></a>Función de devolución de llamada ReaderScroll
 
-\[*ReaderScroll* está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En versiones posteriores podría modificarse o no estar disponible.\]
+\[*ReaderScroll está* disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible.\]
 
 Función de devolución de llamada definida por la aplicación que se usa cuando el puntero del mouse se mueve dentro de la parte de la ventana del modo lector que se ha declarado como el área de desplazamiento activa.
 
@@ -44,46 +44,46 @@ BOOL CALLBACK ReaderScroll(
 
 <dl> <dt>
 
-*PRMI* \[ de\]
+*prmi* \[ En\]
 </dt> <dd>
 
 Tipo: **PREADERMODEINFO**
 
-Puntero a la estructura [**READERMODEINFO**](readermodeinfo.md) que se pasó a la función [**DoReaderMode**](doreadermode.md) . Esta estructura define la ventana de modo lector y el área de desplazamiento activa.
+Puntero a la [**estructura READERMODEINFO**](readermodeinfo.md) que se pasó a la [**función DoReaderMode.**](doreadermode.md) Esta estructura define la ventana del modo de lector y el área de desplazamiento activa.
 
 </dd> <dt>
 
-*DX* \[ en\]
+*dx* \[ en\]
 </dt> <dd>
 
 Tipo: **int**
 
-Distancia que se va a desplazar horizontalmente. Si \_ se establece la marca RMF VERTICALONLY en la estructura [**READERMODEINFO**](readermodeinfo.md) , este valor siempre es 0.
+Distancia que se debe desplazar horizontalmente. Si la marca VERTICALONLY de RMF \_ se establece en la estructura [**READERMODEINFO,**](readermodeinfo.md) este valor siempre es 0.
 
 </dd> <dt>
 
-*DY* \[ de\]
+*dy* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
 
-Distancia que se va a desplazar verticalmente. Si \_ se establece la marca RMF HORIZONTALONLY en la estructura [**READERMODEINFO**](readermodeinfo.md) , este valor siempre es 0.
+Distancia que se debe desplazar verticalmente. Si la marca RMF \_ HORIZONTALONLY está establecida en la [**estructura READERMODEINFO,**](readermodeinfo.md) este valor siempre es 0.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **bool**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BOOL**](/windows/desktop/WinProg/windows-data-types)**
 
-Esta función siempre debe devolver **true**.
+Esta función siempre debe devolver **TRUE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando la aplicación recibe la notificación de esta función, la aplicación es responsable de desplazar la ventana del modo lector en la dirección especificada por los parámetros *DX* y *DY* .
+Cuando la aplicación recibe una notificación de esta función, la aplicación es responsable de desplazar la ventana del modo lector en la dirección especificada por los *parámetros dx* y *dy.*
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se describe una implementación de esta función con una función personalizada para realizar el desplazamiento.
+En el ejemplo siguiente se describe una implementación de esta función mediante una función personalizada para realizar el desplazamiento.
 
 
 ```C++
@@ -106,10 +106,10 @@ ReaderScrollCallback(PREADERMODEINFO prmi, int dx, int dy)
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, \[ solo aplicaciones de escritorio de Windows Vista\]<br/> |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>          |
+| Cliente mínimo compatible<br/> | Windows Vista, solo Windows \[ aplicaciones de escritorio de Vista\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>          |
 
 
 

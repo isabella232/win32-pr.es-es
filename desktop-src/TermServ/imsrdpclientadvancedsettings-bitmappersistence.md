@@ -1,5 +1,5 @@
 ---
-title: Propiedad IMsRdpClientAdvancedSettings BitmapPersistence
+title: IMsRdpClientAdvancedSettings BitmapPersistence, propiedad
 description: Especifica si se debe usar el almacenamiento en caché de mapa de bits persistente. El almacenamiento en caché persistente puede mejorar el rendimiento, pero requiere más espacio en disco.
 ms.assetid: ffaa9277-9dd7-4b2a-9de5-009b7e8766bc
 ms.tgt_platform: multiple
@@ -7,19 +7,19 @@ keywords:
 - Propiedad BitmapPersistence Servicios de Escritorio remoto
 - Propiedad BitmapPersistence Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
 - Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad BitmapPersistence
-- Propiedad BitmapPersistence Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Propiedad BitmapPersistence Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
 - Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad BitmapPersistence
-- Propiedad BitmapPersistence Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Propiedad BitmapPersistence Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
 - Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad BitmapPersistence
-- Propiedad BitmapPersistence Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Propiedad BitmapPersistence Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
 - Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad BitmapPersistence
-- Propiedad BitmapPersistence Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Propiedad BitmapPersistence Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
 - Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad BitmapPersistence
-- Propiedad BitmapPersistence Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Propiedad BitmapPersistence Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
 - Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad BitmapPersistence
-- Propiedad BitmapPersistence Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Propiedad BitmapPersistence Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
 - Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad BitmapPersistence
-- Propiedad BitmapPersistence Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Propiedad BitmapPersistence Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
 - Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad BitmapPersistence
 topic_type:
 - apiref
@@ -61,7 +61,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118353462"
 ---
-# <a name="imsrdpclientadvancedsettingsbitmappersistence-property"></a>Propiedad IMsRdpClientAdvancedSettings::BitmapPersistence
+# <a name="imsrdpclientadvancedsettingsbitmappersistence-property"></a>IMsRdpClientAdvancedSettings::BitmapPersistence, propiedad
 
 Especifica si se debe usar el almacenamiento en caché de mapa de bits persistente. El almacenamiento en caché persistente puede mejorar el rendimiento, pero requiere más espacio en disco.
 
@@ -113,7 +113,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
 description: Cambia un bloqueo parcial a un bloqueo exclusivo.
 ms.assetid: 4999b539-620e-4fb3-b8d4-92767da1225f
-title: 'CShareLockNH:: FirstPartialToExclusive (método)'
+title: CShareLockLOCK::FirstPartialToExclusive (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Rwnh.dll
-ms.openlocfilehash: 65931cb4747c829a0386c7cc76a1ce7e64d41d60
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e56ce4b784d808c073d16e9833a89b27f24a264b35ea3cadc4d84f5b503970ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162406"
 ---
-# <a name="csharelocknhfirstpartialtoexclusive-method"></a>CShareLockNH:: FirstPartialToExclusive (método)
+# <a name="csharelocknhfirstpartialtoexclusive-method"></a>CShareLockLOCK::FirstPartialToExclusive (método)
 
 Cambia un bloqueo parcial a un bloqueo exclusivo.
 
@@ -41,15 +41,15 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------|-------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Rwnh.dll</dt> </dl> |
 

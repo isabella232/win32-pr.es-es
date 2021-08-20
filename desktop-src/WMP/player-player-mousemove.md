@@ -94,7 +94,7 @@ El valor de los parámetros de evento se especifica mediante Reproductor de Wind
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

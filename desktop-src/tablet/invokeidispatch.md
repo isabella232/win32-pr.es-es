@@ -1,7 +1,7 @@
 ---
-description: Invoca la funcionalidad auxiliar para la interfaz IDispatch.
+description: Invoca la funcionalidad del asistente para la interfaz IDispatch.
 ms.assetid: ccef47af-d9dd-48c3-93d3-ee997dacf7a8
-title: InvokeIDispatch función)
+title: Función InvokeIDispatch
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - InkObj.dll
 - InkObj.dll.dll
-ms.openlocfilehash: e4989e3ec23a1ffa97ba317831143ecf0920ef9b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9708ebc5675d918c959be132d16037ac4e128650280b8243dcfe5c48834b602b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118041875"
 ---
-# <a name="invokeidispatch-function"></a>InvokeIDispatch función)
+# <a name="invokeidispatch-function"></a>Función InvokeIDispatch
 
-Invoca la funcionalidad auxiliar para la interfaz IDispatch.
+Invoca la funcionalidad del asistente para la interfaz IDispatch.
 
-Esta función no está pensada para ser utilizada por el código de la aplicación.
+Esta función no está pensada para que la utilice el código de la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,21 +52,21 @@ Instancia de la interfaz IDispatch.
 
 </dd> <dt>
 
-*DISPID* 
+*desaconsulte* 
 </dt> <dd>
 
-Método, propiedad o argumento que se va a pasar.
+Método, propiedad o argumento que se pasa.
 
 </dd> <dt>
 
 *pDisp* 
 </dt> <dd>
 
-Parámetros que se van a pasar.
+Parámetros que se pasan.
 
 </dd> <dt>
 
-*pVarResult* \[ enuncia\]
+*pVarResult* \[ out\]
 </dt> <dd>
 
 Estructura que recibe los valores recuperados.
@@ -75,7 +75,7 @@ Estructura que recibe los valores recuperados.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve S \_ correcto. Si se produce un error, los códigos de retorno posibles incluyen, entre otros, los valores que se muestran en la tabla siguiente.
+Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error, los posibles códigos de retorno incluyen, entre otros, los valores que se muestran en la tabla siguiente.
 
 
 
@@ -91,9 +91,9 @@ Si el método se ejecuta correctamente, devuelve S \_ correcto. Si se produce un
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                         |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                         |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl> |
 

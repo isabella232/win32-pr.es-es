@@ -22,7 +22,7 @@ ms.locfileid: "118131864"
 ---
 # <a name="boottriggertype-complex-type"></a>Tipo complejo bootTriggerType
 
-Define el elemento secundario y la información de secuenciación para [**el elemento BootTrigger.**](taskschedulerschema-boottrigger-triggergroup-element.md)
+Define el elemento secundario y la información de secuenciación para el [**elemento BootTrigger.**](taskschedulerschema-boottrigger-triggergroup-element.md)
 
 ``` syntax
 <xs:complexType name="bootTriggerType">
@@ -48,7 +48,7 @@ Define el elemento secundario y la información de secuenciación para [**el ele
 
 | Elemento                                                            | Tipo     | Descripción                                                                                 |
 |--------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------|
-| [**Delay**](taskschedulerschema-delay-boottriggertype-element.md) | duration | Cantidad de tiempo entre el arranque del sistema y el momento en que se activa el desencadenador. <br/> |
+| [**Delay**](taskschedulerschema-delay-boottriggertype-element.md) | duration | Cantidad de tiempo entre el momento en que se inicia el sistema y el momento en que se desencadena el desencadenador. <br/> |
 
 
 
@@ -67,11 +67,11 @@ Además del elemento secundario definido aquí, el [**elemento BootTrigger**](ta
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Programador de tareas complejos de esquema](task-scheduler-schema-complex-types.md)
+[Programador de tareas tipos complejos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

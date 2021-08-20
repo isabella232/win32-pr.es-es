@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: VistaParam. KeyMost, campo'
-title: Campo VistaParam. KeyMost (Microsoft. ISAM. esent. Interop. vista)
+description: Más información sobre el campo VistaParam.KeyMost
+title: Campo VistaParam.KeyMost (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: KeyMost field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Vista.VistaParam.KeyMost
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistaparam.keymost(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8ec88b9ae531b6f0b654b7751174c0739af7c8f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ffac2364baae067a2b0505a42b1172f8de50bba6ecd1c73ea539f20c52d2fd83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118069915"
 ---
-# <a name="vistaparamkeymost-field"></a>VistaParam. KeyMost, campo
+# <a name="vistaparamkeymost-field"></a>Campo VistaParam.KeyMost
 
-Este parámetro de solo lectura indica la longitud máxima permitida de la clave de índice que se puede seleccionar para el tamaño de página de la base de datos actual (tal y como se configura mediante [DatabasePageSize](./jet-param-enumeration.md)).
+Este parámetro de solo lectura indica la longitud máxima de clave de índice permitido que se puede seleccionar para el tamaño de página de la base de datos actual (según lo configurado [por DatabasePageSize](./jet-param-enumeration.md)).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,12 +53,12 @@ value = VistaParam.KeyMost
 public const JET_param KeyMost
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase VistaParam](./vistaparam-class.md)
+[VistaParam (clase)](./vistaparam-class.md)
 
 [Miembros de VistaParam](./vistaparam-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

@@ -1,11 +1,11 @@
 ---
-title: Método DownloadItem.pause
+title: DownloadItem.pause (método)
 description: Nota En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método pause pausa la descarga.
 ms.assetid: 763d85da-1044-4a8c-98e7-8889bee6c2c7
 keywords:
-- método pause Reproductor de Windows Media
-- método pause Reproductor de Windows Media , Clase DownloadItem
-- DownloadItem class Reproductor de Windows Media , pause (método)
+- pause method Reproductor de Windows Media
+- pause method Reproductor de Windows Media , DownloadItem (clase)
+- DownloadItem class Reproductor de Windows Media , pause method
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118340745"
 ---
-# <a name="downloaditempause-method"></a>Método DownloadItem.pause
+# <a name="downloaditempause-method"></a>DownloadItem.pause (método)
 
 > [!Note]  
 > En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
@@ -64,7 +64,7 @@ El **método pause** no tiene ningún efecto en las descargas en tiempo real.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

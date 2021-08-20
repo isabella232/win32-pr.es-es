@@ -1,7 +1,7 @@
 ---
 description: La propiedad DisplayName del objeto ConfigurableItem devuelve el valor de la columna DisplayName de la tabla ModuleConfiguration.
 ms.assetid: f2025bab-73b0-46d2-a276-0ad17fdd9783
-title: Propiedad ConfigurableItem. DisplayName (Mergemod. h)
+title: Propiedad ConfigurableItem.DisplayName (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 079138c978ee670b681186c5ee265a8002881b79
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a9dba853ad875e5167b8ff642c2cf106ba600dcb4c951def5c249e8230d0365
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118143981"
 ---
-# <a name="configurableitemdisplayname-property"></a>Propiedad ConfigurableItem. DisplayName
+# <a name="configurableitemdisplayname-property"></a>ConfigurableItem.DisplayName, propiedad
 
-La propiedad **displayName** del objeto [**ConfigurableItem**](configurableitem-object.md) devuelve el valor de la columna DisplayName de la [tabla ModuleConfiguration](moduleconfiguration-table.md).
+La **propiedad DisplayName** del [**objeto ConfigurableItem**](configurableitem-object.md) devuelve el valor de la columna DisplayName de la [tabla ModuleConfiguration](moduleconfiguration-table.md).
 
 Esta propiedad es de solo lectura.
 
@@ -40,16 +40,16 @@ propVal = ConfigurableItem.DisplayName
 
 ## <a name="c"></a>C++
 
-Vea [**Get \_ displayName**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_displayname) function.
+Consulte get DisplayName function (Obtener [**\_ función DisplayName).**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_displayname)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | Mergemod.dll 2,0 o posterior<br/>                                                    |
-| Encabezado<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versión<br/> | Mergemod.dll 2.0 o posterior<br/>                                                    |
+| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

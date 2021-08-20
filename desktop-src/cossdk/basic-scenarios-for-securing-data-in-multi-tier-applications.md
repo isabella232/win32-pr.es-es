@@ -18,12 +18,12 @@ En este tema se presentan algunos escenarios de bloque de creación, que ilustra
 ## <a name="trusted-server-scenario"></a>Escenario de servidor de confianza
 
 -   La base de datos confía plenamente en la aplicación COM+ para autenticar y autorizar a los usuarios finales a acceder a los datos de la base de datos.
--   Preferiblemente, la base de datos está protegida contra cualquier acceso excepto a través de la aplicación.
+-   Preferiblemente, la base de datos está protegida contra cualquier acceso, excepto a través de la aplicación.
 -   La aplicación COM+ usa la seguridad basada en roles para autorizar a los usuarios.
 -   Las conexiones se abren bajo la identidad de la aplicación COM+ y son totalmente agrupables.
 -   La aplicación COM+ puede realizar la auditoría y el registro, o bien la aplicación puede pasar esta información a la base de datos.
 
-Este escenario funciona mejor para los datos a los que se puede acceder mediante categorías predecibles de usuarios que se pueden encapsular en roles. Por ejemplo, solo "Managers", "Tellers" y "Accountants" tienen permiso para acceder a las cuentas. La lógica de negocios de lo que está habilitado para hacer con precisión cada uno se aplica en el nivel intermedio.
+Este escenario funciona mejor para los datos a los que se puede acceder mediante categorías predecibles de usuarios que se pueden encapsular en roles. Por ejemplo, solo "Managers", "Tellers" y "Accountants" tienen permiso para acceder a las cuentas. La lógica de negocios de lo que cada uno está habilitado para hacer se aplica en el nivel intermedio.
 
 ## <a name="impersonation-scenario"></a>Escenario de suplantación
 
@@ -37,7 +37,7 @@ Este escenario funciona mejor para los datos estrechamente enlazados a clases mu
 
 Combinación de los dos escenarios anteriores, donde la suplantación solo se usa cuando es necesaria.
 
-Este escenario funciona mejor en situaciones en las que tiene relaciones entre usuario y datos híbridos. Por ejemplo, tiene "Managers", "Tellers", "Accountants" y miles de clientes web individuales que pueden acceder solo a sus propias cuentas. Puede separar las rutas de acceso lógicas a través de la aplicación, posiblemente con componentes independientes, para controlar la última clase de usuarios, especialmente cuando las suposiciones de rendimiento para esos usuarios son diferentes.
+Este escenario funciona mejor en situaciones en las que tiene relaciones entre usuario y datos híbridos. Por ejemplo, tiene "Managers", "Tellers", "Accountants" y miles de clientes web individuales que pueden acceder solo a sus propias cuentas. Puede separar las rutas de acceso lógicas a través de la aplicación, potencialmente con componentes independientes, para controlar la última clase de usuarios, especialmente cuando las suposiciones de rendimiento para esos usuarios son diferentes.
 
 ## <a name="trusted-scenario-using-microsoft-sql-server-roles"></a>Escenario de confianza mediante Microsoft SQL Server roles
 

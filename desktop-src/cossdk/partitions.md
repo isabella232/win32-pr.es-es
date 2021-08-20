@@ -12,57 +12,57 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: b1016ae932d6841a5db590f2d24496113d3cefc8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3badf52755a77557c200569c25610b5918cf8dd599d17a83bdebb5c4ddfa6801
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118305878"
 ---
 # <a name="partitions-collection"></a>Colección de particiones
 
 Especifica las aplicaciones contenidas en cada partición.
 
-Esta colección admite los métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) y [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Esta colección admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**y Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Miembros
 
-La colección de **particiones** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
+La **colección Partitions** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
 ## <a name="related-collections"></a>Colecciones relacionadas
 
-Puede navegar desde esta colección hasta cualquiera de las siguientes colecciones:
+Puede navegar desde esta colección a cualquiera de las siguientes colecciones:
 
--   [**APLICACIONES**](applications.md)
+-   [**Aplicaciones**](applications.md)
 -   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 -   [**RolesForPartition**](rolesforpartition.md)
 
-Puede navegar a esta colección desde las colecciones siguientes:
+Puede navegar a esta colección desde las siguientes colecciones:
 
--   [**Raíces**](root.md)
+-   [**Raíz**](root.md)
 
 ## <a name="properties"></a>Propiedades
 
-El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades en la colección:
+El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades dentro de la colección:
 
--   [Sustituir](#changeable)
+-   [Cambiable](#changeable)
 -   [Eliminable](#deleteable)
 -   [Descripción](#description)
 -   [Id](#partitions-collection)
 -   [Nombre](#name)
 
-### <a name="changeable"></a>Sustituir
+### <a name="changeable"></a>Cambiable
 
 
 
 | Entrada | Value |
 |----------------|--------------------------------------------------|
 | Descripción    | Determina si esta partición es modificable. |
-| Access         | ReadWrite                                        |
+| Acceso         | ReadWrite                                        |
 | Tipo           | Bool                                             |
-| Valor predeterminado        | True                                             |
+| Predeterminado        | Verdadero                                             |
 | Sistema mínimo | Windows Server 2003                              |
 
 
@@ -76,9 +76,9 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 | Entrada | Value |
 |----------------|---------------------------------------------------|
 | Descripción    | Determina si se puede eliminar esta partición. |
-| Access         | ReadWrite                                         |
+| Acceso         | ReadWrite                                         |
 | Tipo           | Bool                                              |
-| Valor predeterminado        | True                                              |
+| Predeterminado        | True                                              |
 | Sistema mínimo | Windows Server 2003                               |
 
 
@@ -92,7 +92,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 | Entrada | Value |
 |----------------|---------------------------------------------------------------------|
 | Descripción    | Esta propiedad representa la descripción que identifica la partición. |
-| Access         | ReadWrite                                                           |
+| Acceso         | ReadWrite                                                           |
 | Tipo           | String                                                              |
 | Predeterminado        | ""                                                                  |
 | Sistema mínimo | Windows Server 2003                                                 |
@@ -101,14 +101,14 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
  
 
-### <a name="id"></a>id
+### <a name="id"></a>ID
 
 
 
 | Entrada | Value |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Un GUID que representa la partición. Esta propiedad se devuelve cuando se llama al método de propiedad de [**clave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) en un objeto de esta colección. |
-| Access         | WriteOnce                                                                                                                                                          |
+| Descripción    | GUID que representa la partición. Esta propiedad se devuelve cuando se llama al método de propiedad [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) en un objeto de esta colección. |
+| Acceso         | WriteOnce                                                                                                                                                          |
 | Tipo           | String                                                                                                                                                             |
 | Predeterminado        | <Generated>                                                                                                                                                  |
 | Sistema mínimo | Windows Server 2003                                                                                                                                                |
@@ -123,8 +123,8 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Representa el nombre de la partición. Se quitan los espacios adicionales al principio y al final de la cadena. Esta propiedad se devuelve cuando se llama al método de la propiedad [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
-| Access         | ReadWrite                                                                                                                                                                                                                              |
+| Descripción    | Representa el nombre de la partición. Se quitan los espacios adicionales al principio y al final de la cadena. Esta propiedad se devuelve cuando se [**llama al método**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) de propiedad Name en un objeto de esta colección. |
+| Acceso         | ReadWrite                                                                                                                                                                                                                              |
 | Tipo           | String                                                                                                                                                                                                                                 |
 | Predeterminado        | "Nueva partición"                                                                                                                                                                                                                        |
 | Sistema mínimo | Windows Server 2003                                                                                                                                                                                                                    |

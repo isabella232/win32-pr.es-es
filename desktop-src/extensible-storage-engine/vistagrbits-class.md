@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: clase VistaGrbits'
-title: Clase VistaGrbits (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: VistaGrbits (clase)'
+title: VistaGrbits (clase) (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: VistaGrbits class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Vista.VistaGrbits
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistagrbits(v=EXCHG.10)
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e2ac4f11c41b8c26a3dab387eda072f191f5b664
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a505c9a884393aaf6ef582ed7f913de384af60c2f0332c0aa18836ca92a6f43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118070195"
 ---
-# <a name="vistagrbits-class"></a>Clase VistaGrbits
+# <a name="vistagrbits-class"></a>VistaGrbits (clase)
 
-Grbits que se han agregado a la versión de vista de ESENT.
+Grbits que se han agregado a la versión vista de ESENT.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. vista. VistaGrbits  
+  Microsoft.Isam.Esent.Interop.Vista.VistaGrbits  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -66,4 +66,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de VistaGrbits](./vistagrbits-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

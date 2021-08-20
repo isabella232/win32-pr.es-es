@@ -4,22 +4,22 @@ ms.assetid: bde7cef8-f43e-4a11-8b77-fed5585d390a
 title: Implementación de IMediaBuffer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3425b3f612667a0b6577de385d59362bd8dafd0
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 5033fcf18812f2a31e175c05b0d4d8eeee18484d0cc20e640ae30f9390a68f76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105678643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118154123"
 ---
 # <a name="implementing-imediabuffer"></a>Implementación de IMediaBuffer
 
-En el modelo de streaming de DMO predeterminado, los búferes se administran a través de la interfaz [**IMediaBuffer**](/previous-versions/windows/desktop/api/Mediaobj/nn-mediaobj-imediabuffer) . El cliente de DMO es responsable de implementar un objeto que expone esta interfaz. La interfaz **IMediaBuffer** tiene tres métodos:
+En el modelo DMO streaming predeterminado, los búferes se administran a través de la [**interfaz IMediaBuffer.**](/previous-versions/windows/desktop/api/Mediaobj/nn-mediaobj-imediabuffer) El cliente de la DMO es responsable de implementar un objeto que expone esta interfaz. La **interfaz IMediaBuffer** tiene tres métodos:
 
--   **GetBufferAndLength** devuelve la dirección del búfer (es decir, el bloque real de memoria que contiene los datos) y el tamaño de los datos válidos en el búfer.
--   **GetMaxLength** devuelve el tamaño del búfer.
+-   **GetBufferAndLength** devuelve la dirección del búfer (es decir, el bloque de memoria real que contiene los datos) y el tamaño de los datos válidos en el búfer.
+-   **GetMaxLength devuelve** el tamaño del búfer.
 -   **SetLength** especifica la longitud de los datos válidos en el búfer.
 
-El procesamiento en contexto no requiere la interfaz **IMediaBuffer** . En el código siguiente se muestra una implementación mínima de **IMediaBuffer**:
+El procesamiento local no requiere la **interfaz IMediaBuffer.** El código siguiente muestra una implementación mínima de **IMediaBuffer**:
 
 
 ```C++
@@ -173,7 +173,7 @@ public:
 
 <dl> <dt>
 
-[Hospedar directamente un DMO](directly-hosting-a-dmo.md)
+[Hospedaje directo de un DMO](directly-hosting-a-dmo.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_SETINACTIVETIMER (VFW. h)
-description: El \_ mensaje MCIWNDM SETINACTIVETIMER establece el período de actualización que usa MCIWnd para actualizar la barra de control en la ventana MCIWnd, actualizar la información de la posición que se muestra en la barra de título de la ventana y enviar mensajes de notificación a la ventana primaria cuando la ventana de MCIWnd está inactiva. Puede enviar este mensaje explícitamente o mediante la macro MCIWndSetInactiveTimer.
+title: MCIWNDM_SETINACTIVETIMER mensaje (Vfw.h)
+description: El mensaje MCIWNDM SETFRACCIÓNTIMER establece el período de actualización utilizado por MCIWnd para actualizar la barra de seguimiento en la ventana MCIWnd, actualizar la información de posición mostrada en la barra de título de la ventana y enviar mensajes de notificación a la ventana primaria cuando la ventana \_ MCIWnd está inactiva. Puede enviar este mensaje explícitamente o mediante la macro MCIWndSet NoTimer.
 ms.assetid: 8900c372-0493-4a63-a027-ef6ecf8f8254
 keywords:
-- Mensaje de MCIWNDM_SETINACTIVETIMER de Windows multimedia
+- MCIWNDM_SETINACTIVETIMER mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba4504d84b254dfb67616568f5f97bba8e3bc2e3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0e4161d52335e050fb8e9bcb702986492b5cd230713fcd15810a71590a92b030
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137652"
 ---
-# <a name="mciwndm_setinactivetimer-message"></a>MCIWNDM \_ SETINACTIVETIMER
+# <a name="mciwndm_setinactivetimer-message"></a>Mensaje DE MCIWNDM \_ SETCIÓNTIMER
 
-El mensaje **MCIWNDM \_ SETINACTIVETIMER** establece el período de actualización que usa MCIWnd para actualizar la barra de control en la ventana MCIWnd, actualizar la información de la posición que se muestra en la barra de título de la ventana y enviar mensajes de notificación a la ventana primaria cuando la ventana de MCIWnd está inactiva. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndSetInactiveTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetinactivetimer) .
+El **mensaje MCIWNDM \_ SETFRACCIÓNTIMER** establece el período de actualización utilizado por MCIWnd para actualizar la barra de seguimiento en la ventana MCIWnd, actualizar la información de posición mostrada en la barra de título de la ventana y enviar mensajes de notificación a la ventana primaria cuando la ventana MCIWnd está inactiva. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndSet NoTimer.**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetinactivetimer)
 
 
 ```C++
@@ -38,7 +38,7 @@ lParam = 0;
 
 <dl> <dt>
 
-<span id="inactive"></span><span id="INACTIVE"></span>*inactiva*
+<span id="inactive"></span><span id="INACTIVE"></span>*Inactivo*
 </dt> <dd>
 
 Período de actualización, en milisegundos. El valor predeterminado es 2000 milisegundos.
@@ -47,7 +47,7 @@ Período de actualización, en milisegundos. El valor predeterminado es 2000 mil
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Este mensaje no devuelve ningún valor.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Este mensaje no devuelve ningún valor.
 
 <dl> <dt>
 
-[**MCIWndSetInactiveTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetinactivetimer)
+[**MCIWndSetCiónTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetinactivetimer)
 </dt> </dl>
 
  

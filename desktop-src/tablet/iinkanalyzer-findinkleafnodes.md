@@ -1,7 +1,7 @@
 ---
-description: Recupera todos los nodos de hoja de tinta.
+description: Recupera todos los nodos hoja de entrada de lápiz.
 ms.assetid: 988ae9f9-8fca-4757-8eb0-ae161e5690c9
-title: 'IInkAnalyzer:: FindInkLeafNodes (método) (IACom. h)'
+title: Método IInkAnalyzer::FindInkLeafNodes (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: d5ebcfe542ab03f2e3d3a24c29142e41433c9eed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4cd945c32ace514654c6d9c63a7d05ae486adf0158205ae088d443ed9be6992
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118043972"
 ---
-# <a name="iinkanalyzerfindinkleafnodes-method"></a>IInkAnalyzer:: FindInkLeafNodes (método)
+# <a name="iinkanalyzerfindinkleafnodes-method"></a>Método IInkAnalyzer::FindInkLeafNodes
 
-Recupera todos los nodos de hoja de tinta.
+Recupera todos los nodos hoja de entrada de lápiz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,35 +39,35 @@ HRESULT FindInkLeafNodes(
 
 <dl> <dt>
 
-*ppContextNodesFound* \[ enuncia\]
+*ppContextNodesFound* \[ out\]
 </dt> <dd>
 
-Puntero a la colección [**IContextNodes**](icontextnodes.md) que contiene todos los nodos de hoja de tinta.
+Puntero a la colección [**IContextNodes**](icontextnodes.md) que contiene todos los nodos hoja de entrada de lápiz.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
-> Para evitar una pérdida de memoria, llame a [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppContextNodesFound* cuando ya no necesite usar el objeto.
+> Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppContextNodesFound* cuando ya no necesite usar el objeto .
 
  
 
-Los nodos hoja no contienen nodos secundarios. Los nodos de tinta contienen datos de trazo. Ejemplos de nodos de hoja de tinta son los objetos InkWord, InkDrawing y InkBullet [**IContextNode**](icontextnode.md) . Para obtener más información, vea [tipos de nodo de contexto](context-node-types.md).
+Los nodos hoja no contienen nodos secundarios. Los nodos de entrada de lápiz contienen datos de trazo. Algunos ejemplos de nodos hoja de entrada de lápiz son los objetos InkWord, InkDrawing e Ink Adret [**IContextNode.**](icontextnode.md) Para obtener más información, vea [Tipos de nodo de contexto.](context-node-types.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -79,31 +79,31 @@ Los nodos hoja no contienen nodos secundarios. Los nodos de tinta contienen dato
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindInkLeafNodesForStrokes (método)**](iinkanalyzer-findinkleafnodesforstrokes.md)
+[**IInkAnalyzer::FindInkLeafNodesForStrokes (Método)**](iinkanalyzer-findinkleafnodesforstrokes.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindLeafNodes (método)**](iinkanalyzer-findleafnodes.md)
+[**IInkAnalyzer::FindLeafNodes (Método)**](iinkanalyzer-findleafnodes.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindNode (método)**](iinkanalyzer-findnode.md)
+[**IInkAnalyzer::FindNode (Método)**](iinkanalyzer-findnode.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindNodesOfType (método)**](iinkanalyzer-findnodesoftype.md)
+[**IInkAnalyzer::FindNodesOfType (Método)**](iinkanalyzer-findnodesoftype.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindNodesOfTypeForStrokes (método)**](iinkanalyzer-findnodesoftypeforstrokes.md)
+[**IInkAnalyzer::FindNodesOfTypeForStrokes (Método)**](iinkanalyzer-findnodesoftypeforstrokes.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindNodesOfTypeInSubTree (método)**](iinkanalyzer-findnodesoftypeinsubtree.md)
+[**IInkAnalyzer::FindNodesOfTypeInSubTree (Método)**](iinkanalyzer-findnodesoftypeinsubtree.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindNodesWithCallBack (método)**](iinkanalyzer-findnodeswithcallback.md)
+[**IInkAnalyzer::FindNodesWithCallBack (Método)**](iinkanalyzer-findnodeswithcallback.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindNodesWithCallBackInSubTree (método)**](iinkanalyzer-findnodeswithcallbackinsubtree.md)
+[**IInkAnalyzer::FindNodesWithCallBackInSubTree (Método)**](iinkanalyzer-findnodeswithcallbackinsubtree.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

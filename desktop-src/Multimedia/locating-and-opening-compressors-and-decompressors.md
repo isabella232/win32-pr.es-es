@@ -1,23 +1,23 @@
 ---
-title: Buscar y abrir compresores y descompresores
-description: Buscar y abrir compresores y descompresores
+title: Búsqueda y apertura de descomprimores y descompresión
+description: Búsqueda y apertura de descomprimores y descompresión
 ms.assetid: ed931f01-dbfc-4fdc-b725-c062302b037b
 keywords:
-- Administrador de compresión de vídeo (VCM), abrir compresores
-- VCM (Administrador de compresión de vídeo), abrir compresores
-- ICLocate función)
+- Administrador de compresión de vídeo (VCM), apertura de ingerentes
+- VCM (administrador de compresión de vídeo), apertura de los comprimires
+- Función ICLocate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d45b07c619095b4d50bdbdde5c3d2b1ca9209471
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c861c9fb5c317b6b0fc3a48552db200389739ebd8a53dbf15fbdbd0564ba8f76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118139306"
 ---
-# <a name="locating-and-opening-compressors-and-decompressors"></a>Buscar y abrir compresores y descompresores
+# <a name="locating-and-opening-compressors-and-decompressors"></a>Búsqueda y apertura de descomprimores y descompresión
 
-En el ejemplo siguiente se usa la función [**ICLocate**](/windows/desktop/api/Vfw/nf-vfw-iclocate) para buscar un compresor que puede comprimir un mapa de bits de 8 bits por píxel.
+En el ejemplo siguiente se usa [**la función ICLocate**](/windows/desktop/api/Vfw/nf-vfw-iclocate) para buscar un resultado que pueda comprimir un mapa de bits de 8 bits por píxel.
 
 
 ```C++
@@ -41,7 +41,7 @@ hIC = ICLocate (ICTYPE_VIDEO, 0L, (LPBITMAPINFOHEADER) &bih,
 
 
 
-En el ejemplo siguiente se enumeran los descompresores del sistema para encontrar uno que pueda controlar el formato de sus imágenes. En este ejemplo se usa **ICTYPE \_ video** (que es equivalente al código de cuatro caracteres "VIDC") y la macro [**ICDecompressQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressquery) para determinar si un compresor o descompresor admite el formato de imagen.
+En el ejemplo siguiente se enumeran los descompresores del sistema para buscar uno que pueda controlar el formato de sus imágenes. En este ejemplo se usa **ICTYPE \_ VIDEO** (que es equivalente al código de cuatro caracteres "VIDC") y la macro [**ICDecompressQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressquery) para determinar si un descomprimidor o un descomprimidor admiten el formato de imagen.
 
 
 ```C++
@@ -71,7 +71,7 @@ for (i=0; ICInfo(fccType, i, &icinfo); i++)
 
 
 
-En el ejemplo siguiente se intenta buscar un compresor específico para comprimir el formato RGB de 8 bits a un formato RLE de 8 bits.
+En el ejemplo siguiente se intenta localizar un compresión específico para comprimir el formato RGB de 8 bits a un formato RLE de 8 bits.
 
 
 ```C++
@@ -104,12 +104,12 @@ hIC = ICLocate (ICTYPE_VIDEO, 0L,
 
 <dl> <dt>
 
-[Usar el administrador de compresión de vídeo](using-the-video-compression-manager.md)
+[Uso del Administrador de compresión de vídeo](using-the-video-compression-manager.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

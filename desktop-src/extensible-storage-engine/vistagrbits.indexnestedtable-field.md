@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: VistaGrbits. IndexNestedTable, campo'
-title: Campo VistaGrbits. IndexNestedTable (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: Campo VistaGrbits.IndexNestedTable'
+title: Campo VistaGrbits.IndexNestedTable (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: IndexNestedTable field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Vista.VistaGrbits.IndexNestedTable
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistagrbits.indexnestedtable(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1b41eaa645a11595345793e38a76f0c7ce42f32a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa4211699dbc9a84b3c034d3320fa76ad5386b2aa01197460069fac4cba90fd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103819067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118070053"
 ---
-# <a name="vistagrbitsindexnestedtable-field"></a>VistaGrbits. IndexNestedTable, campo
+# <a name="vistagrbitsindexnestedtable-field"></a>Campo VistaGrbits.IndexNestedTable
 
-Índice de varias columnas con varios valores, pero solo con valores de la misma itagSequence.
+Indexar sobre varias columnas con varios valores, pero solo con valores de la misma itagSequence.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,12 +53,12 @@ value = VistaGrbits.IndexNestedTable
 public const CreateIndexGrbit IndexNestedTable
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase VistaGrbits](./vistagrbits-class.md)
+[VistaGrbits (clase)](./vistagrbits-class.md)
 
 [Miembros de VistaGrbits](./vistagrbits-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

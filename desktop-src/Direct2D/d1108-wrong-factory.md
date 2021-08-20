@@ -1,9 +1,9 @@
 ---
-title: D1108 factoría incorrecta
+title: D1108 Error de fábrica
 ms.assetid: eb851118-0541-4c9a-a22d-b98f041852bb
-description: El recurso fue asignado por el generador 1 y se ha usado con fábrica 2.
+description: La fábrica 1 asignó el recurso y se usó con la factoría 2.
 keywords:
-- D1108 factoría Direct2D incorrecto
+- D1108 Wrong Factory Direct2D
 topic_type:
 - apiref
 api_name:
@@ -13,39 +13,39 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 17c58c72a56af8c480a176259d9fbcb9df586942
-ms.sourcegitcommit: 80ee822f6ebcbcc8f60042e0d14a39ef6989c731
+ms.openlocfilehash: c9eeadfb38acd39e5861c5661e2f4117ef2a8ce415e3e21374f197763d4b315e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105650230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118160996"
 ---
-# <a name="d1108-wrong-factory"></a>D1108: generador incorrecto
+# <a name="d1108-wrong-factory"></a>D1108: Fábrica incorrecta
 
-El recurso de recursos \[  \] fue asignado por el generador de fábrica \[ *1* \] y se ha usado con fábrica Factory \[ *2* \] .
+La fábrica 1 asignó el recurso de recursos \[  \] y se \[  \] usó con la \[ *factoría 2.* \]
 
 ## <a name="placeholders"></a>Marcadores de posición
 
 <dl> <dt>
 
-<span id="resource"></span><span id="RESOURCE"></span>*recurso*
+<span id="resource"></span><span id="RESOURCE"></span>*Recursos*
 </dt> <dd>
 
 Dirección de la interfaz.
 
 </dd> <dt>
 
-<span id="factory_1"></span><span id="FACTORY_1"></span>*fábrica 1*
+<span id="factory_1"></span><span id="FACTORY_1"></span>*factory 1*
 </dt> <dd>
 
-La dirección del generador que asignó el *recurso*.
+Dirección del generador que asignó el *recurso*.
 
 </dd> <dt>
 
-<span id="factory_2"></span><span id="FACTORY_2"></span>*fábrica 2*
+<span id="factory_2"></span><span id="FACTORY_2"></span>*factory 2*
 </dt> <dd>
 
-La dirección del generador con el que se usó el *recurso* .
+Dirección del generador con el que se *usó* el recurso.
 
 </dd> </dl> 
 
@@ -56,7 +56,7 @@ La dirección del generador con el que se usó el *recurso* .
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crean primero dos objetos [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) habilitados para la depuración; después crea un objeto Geometry a partir del primer generador y un pincel del segundo generador. Por último, llama a [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry), pasando la geometría y el pincel.
+En el ejemplo siguiente se crean primero dos objetos [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) habilitados para depuración; A continuación, crea una geometría a partir del primer generador y un pincel de la segunda. Por último, llama a [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry), pasando la geometría y el pincel.
 
 
 ```C++
@@ -166,7 +166,7 @@ En el ejemplo siguiente se crean primero dos objetos [**ID2D1Factory**](/windows
 
 
 
-Este ejemplo genera el siguiente mensaje de depuración:
+En este ejemplo se genera el siguiente mensaje de depuración:
 
 
 ```
@@ -178,7 +178,7 @@ by factory [002ED698] and used with factory [002ED470].
 
 ## <a name="possible-causes"></a>Causas posibles
 
-Uso de recursos no válido. Se usó un recurso asignado por un generador con otro generador.
+Uso de recursos no válido. Un recurso asignado por una factoría se usó con otro generador.
 
  
 

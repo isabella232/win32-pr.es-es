@@ -72,7 +72,7 @@ Id. de característica de servidor. En la lista siguiente se muestran los valore
 
 
 
-Valor
+Value
 
 Nombre
 
@@ -406,7 +406,7 @@ Windows TIFF IFilter<br/>
 
 Servicios de archivos: servicios de rol (6)
 
-Valor
+Value
 
 Nombre
 
@@ -472,7 +472,7 @@ BranchCache para archivos de red
 
 437
 
-[Proveedor de Storage destino iSCSI (proveedores de hardware VDS y VSS)](/windows)
+[Proveedor de Storage de destino iSCSI (proveedores de hardware VDS y VSS)](/windows)
 
 486
 
@@ -480,7 +480,7 @@ BranchCache para archivos de red
 
 AD DS: servicios de rol (10)
 
-Valor
+Value
 
 Nombre
 
@@ -504,9 +504,9 @@ Nombre
 
 [Herramientas de administración remota del servidor](/windows)
 
-Medios de streaming: servicios de rol (3)
+Streaming multimedia: servicios de rol (3)
 
-Valor
+Value
 
 Nombre
 
@@ -524,7 +524,7 @@ Nombre
 
 ADFS: servicios de rol (8)
 
-Valor
+Value
 
 Nombre
 
@@ -546,11 +546,11 @@ Nombre
 
 129
 
-[Windows Agente basado en tokens](/windows)
+[Windows Agente basado en token](/windows)
 
 Servicios de Escritorio remoto: Servicios de rol (18)
 
-Valor
+Value
 
 Nombre
 
@@ -580,7 +580,7 @@ Host de virtualización de escritorio remoto<br/>
 
 Escritorio remoto Virtualization Host: servicios de rol (322)
 
-Valor
+Value
 
 Nombre
 
@@ -594,7 +594,7 @@ Nombre
 
 Servicios de impresión y documentos: servicios de rol (7)
 
-Valor
+Value
 
 Nombre
 
@@ -616,7 +616,7 @@ Servicio de impresión LPD
 
 Servidor web (IIS): servicios de rol (2)
 
-Valor
+Value
 
 Nombre
 
@@ -842,7 +842,7 @@ Núcleo de web hospedable de IIS<br/>
 
 Message Queuing: características (49)
 
-Valor
+Value
 
 Nombre
 
@@ -882,9 +882,9 @@ Proxy DCOM de Message Queue Server
 
 Compatibilidad con multidifusión
 
-Servicios de certificados de Active Directory: Servicios de rol (16)
+Servicios de certificados de Active Directory: servicios de rol (16)
 
-Valor
+Value
 
 Nombre
 
@@ -914,7 +914,7 @@ Servicio de inscripción de dispositivos de red
 
 Directiva de red y Access Services: servicios de rol (14)
 
-Valor
+Value
 
 Nombre
 
@@ -944,7 +944,7 @@ Nombre
 
 Servicios UDDI: servicios de rol (11)
 
-Valor
+Value
 
 Nombre
 
@@ -958,7 +958,7 @@ Nombre
 
 Windows Servicio de activación de procesos: servicios de rol (41)
 
-Valor
+Value
 
 Nombre
 
@@ -976,7 +976,7 @@ Modelo de proceso
 
 .NET Framework 3.5.1: características (36)
 
-Valor
+Value
 
 Nombre
 
@@ -1002,7 +1002,7 @@ Visor de XPS<br/>
 
 Servicios SNMP: características (59)
 
-Valor
+Value
 
 Nombre
 
@@ -1016,7 +1016,7 @@ Nombre
 
 Servicios de aplicación: servicios de rol
 
-Valor
+Value
 
 Nombre
 
@@ -1074,11 +1074,11 @@ Nombre
 
 353
 
-[Extensiones de servidor de aplicaciones para .NET 4.0](/windows)<br/>
+[Extensiones del servidor de aplicaciones para .NET 4.0](/windows)<br/>
 
 Windows Servicios de implementación: rol (19)
 
-Valor
+Value
 
 Nombre
 
@@ -1092,7 +1092,7 @@ Servidor de transporte
 
 Active Directory Rights Management Services: servicios de rol (17)
 
-Valor
+Value
 
 Nombre
 
@@ -1106,7 +1106,7 @@ Compatibilidad con la federación de identidades
 
 Herramientas de administración remota del servidor (67)
 
-Valor
+Value
 
 Nombre
 
@@ -1120,7 +1120,7 @@ Nombre
 
 258
 
-[AD LDS Snap-Ins y Command-Line herramientas](/windows)<br/> [cambio de nombre](/windows)<br/>
+[AD LDS Snap-Ins y Command-Line tools](/windows)<br/> [cambio de nombre](/windows)<br/>
 
 259
 
@@ -1292,7 +1292,7 @@ Centro de administración de Active Directory<br/>
 
 473
 
-[GUI de acceso remoto y Command-Line Tools](/windows)
+[GUI de acceso remoto y herramientas Command-Line acceso remoto](/windows)
 
 474
 
@@ -1312,7 +1312,7 @@ Centro de administración de Active Directory<br/>
 
 Windows Copia de seguridad del servidor: características (39)
 
-Valor
+Value
 
 Nombre
 
@@ -1326,7 +1326,7 @@ Nombre
 
 Servicios de Escritura con lápiz y Escritura a mano: características (310)
 
-Valor
+Value
 
 Nombre
 
@@ -1340,7 +1340,7 @@ Nombre
 
 Servicio de transferencia inteligente en segundo plano (BITS): características (335)
 
-Valor
+Value
 
 Nombre
 
@@ -1354,7 +1354,7 @@ Extensión de servidor IIS
 
 Compatibilidad con Wow64: características (340)
 
-Valor
+Value
 
 Nombre
 
@@ -1396,7 +1396,7 @@ Nombre
 
 Interfaces de usuario e infraestructura: servicios de rol (447)
 
-Valor
+Value
 
 Nombre
 
@@ -1410,13 +1410,13 @@ Nombre
 
 Windows Server Update Services: características (404)
 
-Valor
+Value
 
 Nombre
 
 405
 
-[Cmdlets de POWERShell y API](/windows)
+[Cmdlets de PowerShell y API](/windows)
 
 406
 
@@ -1436,13 +1436,13 @@ Nombre
 
 Windows PowerShell: características (417)
 
-Valor
+Value
 
 Nombre
 
 411
 
-[Windows PowerShell motor de 2.0](/windows)
+[Windows PowerShell motor 2.0](/windows)
 
 412
 
@@ -1458,7 +1458,7 @@ Nombre
 
 .NET Framework 4.5- Características (418)
 
-Valor
+Value
 
 Nombre
 
@@ -1496,7 +1496,7 @@ Nombre
 
 Acceso remoto: rol (468)
 
-Valor
+Value
 
 Nombre
 
@@ -1508,9 +1508,9 @@ Nombre
 
 [Enrutamiento](#routing)
 
-File and Storage Services : rol (481)
+Servicios de Storage archivos: rol (481)
 
-Valor
+Value
 
 Nombre
 
@@ -1556,9 +1556,9 @@ Número de identificador de la característica de servidor primario. Esta propie
 
 ## <a name="remarks"></a>Comentarios
 
-Lea el Windows Server 2008 Administrador del servidor Technical Overview (Información técnica de Windows [Server 2008)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753319(v=ws.10)) para obtener información sobre las características del servidor.
+Lea la [información Windows Server 2008 Administrador del servidor Technical Overview](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753319(v=ws.10)) para obtener información sobre las características del servidor.
 
-Las empresas que no usan software de administración que notifica características del servidor, como System Center Operations Manager con módulos de administración instalados, pueden obtener esa información consultando la clase **\_ ServerFeature de Win32.**
+Las empresas que no usan software de administración que informa de las características del servidor, como System Center Operations Manager con módulos de administración instalados, pueden obtener esa información consultando la clase **\_ ServerFeature de Win32.**
 
 Puede usar las características de comunicación remota de WMI o WinRM para obtener información de características de servidor de servidores remotos. Para obtener más información sobre las conexiones DCOM wmi remotas, vea [Conectarse a WMI en un equipo remoto.](connecting-to-wmi-on-a-remote-computer.md) Para más información sobre WinRM, consulte Administración remota de Windows.
 
@@ -1960,7 +1960,7 @@ Adición
 
 </dd> <dt>
 
-<span id="Active_Directory_Domain_Controller"></span><span id="active_directory_domain_controller"></span><span id="ACTIVE_DIRECTORY_DOMAIN_CONTROLLER"></span>Dominio de Active Directory controller
+<span id="Active_Directory_Domain_Controller"></span><span id="active_directory_domain_controller"></span><span id="ACTIVE_DIRECTORY_DOMAIN_CONTROLLER"></span>Dominio de Active Directory controlador
 </dt> <dd>
 
 Ya no dispone de soporte técnico
@@ -2037,7 +2037,7 @@ Ya no dispone de soporte técnico
 
 </dd> <dt>
 
-<span id="Windows_Token-based_Agent"></span><span id="windows_token-based_agent"></span><span id="WINDOWS_TOKEN-BASED_AGENT"></span>Windows Agente basado en tokens
+<span id="Windows_Token-based_Agent"></span><span id="windows_token-based_agent"></span><span id="WINDOWS_TOKEN-BASED_AGENT"></span>Windows Agente basado en token
 </dt> <dd>
 
 Ya no dispone de soporte técnico
@@ -2128,7 +2128,7 @@ Ya no dispone de soporte técnico
 
 </dd> <dt>
 
-<span id="Web_Server__IIS__Support"></span><span id="web_server__iis__support"></span><span id="WEB_SERVER__IIS__SUPPORT"></span>Compatibilidad con servidor web (IIS)
+<span id="Web_Server__IIS__Support"></span><span id="web_server__iis__support"></span><span id="WEB_SERVER__IIS__SUPPORT"></span>Compatibilidad con el servidor web (IIS)
 </dt> <dd>
 
 Ya no dispone de soporte técnico
@@ -2212,7 +2212,7 @@ Ya no dispone de soporte técnico
 
 </dd> <dt>
 
-<span id="Application_Server_Extensions_for_.NET_4.0"></span><span id="application_server_extensions_for_.net_4.0"></span><span id="APPLICATION_SERVER_EXTENSIONS_FOR_.NET_4.0"></span>Extensiones de servidor de aplicaciones para .NET 4.0
+<span id="Application_Server_Extensions_for_.NET_4.0"></span><span id="application_server_extensions_for_.net_4.0"></span><span id="APPLICATION_SERVER_EXTENSIONS_FOR_.NET_4.0"></span>Extensiones del servidor de aplicaciones para .NET 4.0
 </dt> <dd>
 
 Ya no dispone de soporte técnico
@@ -2233,7 +2233,7 @@ Ya no dispone de soporte técnico
 
 </dd> <dt>
 
-<span id="AD_LDS_Snap-Ins_and_Command-Line_Tools"></span><span id="ad_lds_snap-ins_and_command-line_tools"></span><span id="AD_LDS_SNAP-INS_AND_COMMAND-LINE_TOOLS"></span>AD LDS Snap-Ins y Command-Line herramientas
+<span id="AD_LDS_Snap-Ins_and_Command-Line_Tools"></span><span id="ad_lds_snap-ins_and_command-line_tools"></span><span id="AD_LDS_SNAP-INS_AND_COMMAND-LINE_TOOLS"></span>AD LDS Snap-Ins y Command-Line tools
 </dt> <dd>
 
 Ya no dispone de soporte técnico
@@ -2303,14 +2303,14 @@ Ya no dispone de soporte técnico
 
 </dd> <dt>
 
-<span id="AD_DS_Snap-Ins_and_Command-Line_Tools"></span><span id="ad_ds_snap-ins_and_command-line_tools"></span><span id="AD_DS_SNAP-INS_AND_COMMAND-LINE_TOOLS"></span>AD DS Snap-Ins y Command-Line herramientas
+<span id="AD_DS_Snap-Ins_and_Command-Line_Tools"></span><span id="ad_ds_snap-ins_and_command-line_tools"></span><span id="AD_DS_SNAP-INS_AND_COMMAND-LINE_TOOLS"></span>AD DS Snap-Ins y Command-Line Tools
 </dt> <dd>
 
 Ya no dispone de soporte técnico
 
 </dd> <dt>
 
-<span id="AD_DS_and_AD_LDS_Tools"></span><span id="ad_ds_and_ad_lds_tools"></span><span id="AD_DS_AND_AD_LDS_TOOLS"></span>AD DS y AD LDS herramientas
+<span id="AD_DS_and_AD_LDS_Tools"></span><span id="ad_ds_and_ad_lds_tools"></span><span id="AD_DS_AND_AD_LDS_TOOLS"></span>AD DS y AD LDS tools
 </dt> <dd>
 
 Ya no dispone de soporte técnico
@@ -2331,7 +2331,7 @@ Adición
 
 </dd> <dt>
 
-<span id="Hyper-V_Module_for_Windows_PowerShell"></span><span id="hyper-v_module_for_windows_powershell"></span><span id="HYPER-V_MODULE_FOR_WINDOWS_POWERSHELL"></span>Módulo Hyper-V para Windows PowerShell
+<span id="Hyper-V_Module_for_Windows_PowerShell"></span><span id="hyper-v_module_for_windows_powershell"></span><span id="HYPER-V_MODULE_FOR_WINDOWS_POWERSHELL"></span>Módulo de Hyper-V para Windows PowerShell
 </dt> <dd></dd> <dt>
 
 <span id="Active_Directory_Rights_Management_Services_Tool"></span><span id="active_directory_rights_management_services_tool"></span><span id="ACTIVE_DIRECTORY_RIGHTS_MANAGEMENT_SERVICES_TOOL"></span>Active Directory Rights Management Services Herramienta
@@ -2341,7 +2341,7 @@ Adición
 
 </dd> <dt>
 
-<span id="Share_and_Storage_Management_Tool"></span><span id="share_and_storage_management_tool"></span><span id="SHARE_AND_STORAGE_MANAGEMENT_TOOL"></span>Herramienta de administración Storage recursos compartidos
+<span id="Share_and_Storage_Management_Tool"></span><span id="share_and_storage_management_tool"></span><span id="SHARE_AND_STORAGE_MANAGEMENT_TOOL"></span>Herramienta de administración de recursos Storage recursos compartidos
 </dt> <dd>
 
 Adición
@@ -2362,7 +2362,7 @@ Adición
 
 </dd> <dt>
 
-<span id="Remote_Access_GUI_and_Command-Line_Tools"></span><span id="remote_access_gui_and_command-line_tools"></span><span id="REMOTE_ACCESS_GUI_AND_COMMAND-LINE_TOOLS"></span>GUI de acceso remoto y Command-Line Tools
+<span id="Remote_Access_GUI_and_Command-Line_Tools"></span><span id="remote_access_gui_and_command-line_tools"></span><span id="REMOTE_ACCESS_GUI_AND_COMMAND-LINE_TOOLS"></span>GUI de acceso remoto y herramientas Command-Line acceso remoto
 </dt> <dd>
 
 Adición
@@ -2411,7 +2411,7 @@ Ya no dispone de soporte técnico
 
 </dd> <dt>
 
-<span id="Ink_Support"></span><span id="ink_support"></span><span id="INK_SUPPORT"></span>Compatibilidad con ink
+<span id="Ink_Support"></span><span id="ink_support"></span><span id="INK_SUPPORT"></span>Compatibilidad con Ink
 </dt> <dd>
 
 Ya no dispone de soporte técnico
@@ -2467,7 +2467,7 @@ Ya no dispone de soporte técnico
 
 </dd> <dt>
 
-<span id="WoW64_for_Print_Services"></span><span id="wow64_for_print_services"></span><span id="WOW64_FOR_PRINT_SERVICES"></span>WoW64 para Servicios de impresión
+<span id="WoW64_for_Print_Services"></span><span id="wow64_for_print_services"></span><span id="WOW64_FOR_PRINT_SERVICES"></span>WoW64 para servicios de impresión
 </dt> <dd>
 
 Ya no dispone de soporte técnico
@@ -2509,7 +2509,7 @@ Adición
 
 </dd> <dt>
 
-<span id="API_and_PowerShell_cmdlets"></span><span id="api_and_powershell_cmdlets"></span><span id="API_AND_POWERSHELL_CMDLETS"></span>Cmdlets de PowerShell y API
+<span id="API_and_PowerShell_cmdlets"></span><span id="api_and_powershell_cmdlets"></span><span id="API_AND_POWERSHELL_CMDLETS"></span>Cmdlets de POWERShell y API
 </dt> <dd>
 
 Adición
@@ -2544,7 +2544,7 @@ Adición
 
 </dd> <dt>
 
-<span id="Windows_PowerShell_2.0_Engine"></span><span id="windows_powershell_2.0_engine"></span><span id="WINDOWS_POWERSHELL_2.0_ENGINE"></span>Windows PowerShell motor 2.0
+<span id="Windows_PowerShell_2.0_Engine"></span><span id="windows_powershell_2.0_engine"></span><span id="WINDOWS_POWERSHELL_2.0_ENGINE"></span>Windows PowerShell motor de 2.0
 </dt> <dd>
 
 Adición
@@ -2673,7 +2673,7 @@ Adición
 
 </dd> <dt>
 
-<span id="Centralized_SSL_Certificate_Support"></span><span id="centralized_ssl_certificate_support"></span><span id="CENTRALIZED_SSL_CERTIFICATE_SUPPORT"></span>Compatibilidad con certificados SSL centralizados
+<span id="Centralized_SSL_Certificate_Support"></span><span id="centralized_ssl_certificate_support"></span><span id="CENTRALIZED_SSL_CERTIFICATE_SUPPORT"></span>Compatibilidad centralizada con certificados SSL
 </dt> <dd>
 
 Adición
@@ -2985,14 +2985,14 @@ Adición
 
 </dd> <dt>
 
-<span id="AD_DS_and_AD_LDS_Tools"></span><span id="ad_ds_and_ad_lds_tools"></span><span id="AD_DS_AND_AD_LDS_TOOLS"></span>AD DS y AD LDS Tools
+<span id="AD_DS_and_AD_LDS_Tools"></span><span id="ad_ds_and_ad_lds_tools"></span><span id="AD_DS_AND_AD_LDS_TOOLS"></span>AD DS y AD LDS herramientas
 </dt> <dd>
 
 Ya no dispone de soporte técnico
 
 </dd> <dt>
 
-<span id="AD_DS_and_AD_LDS_Tools"></span><span id="ad_ds_and_ad_lds_tools"></span><span id="AD_DS_AND_AD_LDS_TOOLS"></span>AD DS y AD LDS Tools
+<span id="AD_DS_and_AD_LDS_Tools"></span><span id="ad_ds_and_ad_lds_tools"></span><span id="AD_DS_AND_AD_LDS_TOOLS"></span>AD DS y AD LDS herramientas
 </dt> <dd>
 
 Adición
@@ -3104,7 +3104,7 @@ denominado Terminal Services en esta versión
 
 </dd> <dt>
 
-<span id=".NET_Framework_3.5.1_Features_name_change"></span><span id=".net_framework_3.5.1_features_name_change"></span><span id=".NET_FRAMEWORK_3.5.1_FEATURES_NAME_CHANGE"></span>.NET Framework 3.5.1 Cambio de nombre de características
+<span id=".NET_Framework_3.5.1_Features_name_change"></span><span id=".net_framework_3.5.1_features_name_change"></span><span id=".NET_FRAMEWORK_3.5.1_FEATURES_NAME_CHANGE"></span>.NET Framework cambio de nombre de las características de 3.5.1
 </dt> <dd>
 
 Características .NET Framework 3.0 de esta versión
@@ -3162,7 +3162,7 @@ Herramientas de Active Directory Domain Services denominadas en esta versión
 
 </dd> <dt>
 
-<span id="AD_LDS_Snap-Ins_and_Command-Line_Tools_name_change"></span><span id="ad_lds_snap-ins_and_command-line_tools_name_change"></span><span id="AD_LDS_SNAP-INS_AND_COMMAND-LINE_TOOLS_NAME_CHANGE"></span>AD LDS Snap-Ins y Command-Line cambio de nombre de herramientas
+<span id="AD_LDS_Snap-Ins_and_Command-Line_Tools_name_change"></span><span id="ad_lds_snap-ins_and_command-line_tools_name_change"></span><span id="AD_LDS_SNAP-INS_AND_COMMAND-LINE_TOOLS_NAME_CHANGE"></span>AD LDS Snap-Ins y cambio Command-Line de nombre de las herramientas de Command-Line
 </dt> <dd>
 
 Herramientas de Active Directory Lightweight Directory Services denominadas en esta versión
@@ -3176,14 +3176,14 @@ Herramientas de servicios de impresión con nombre de esta versión
 
 </dd> <dt>
 
-<span id="Remote_Desktop_Services_Tools_name_change"></span><span id="remote_desktop_services_tools_name_change"></span><span id="REMOTE_DESKTOP_SERVICES_TOOLS_NAME_CHANGE"></span>Servicios de Escritorio remoto cambio de nombre de las herramientas de Servicios de Escritorio remoto
+<span id="Remote_Desktop_Services_Tools_name_change"></span><span id="remote_desktop_services_tools_name_change"></span><span id="REMOTE_DESKTOP_SERVICES_TOOLS_NAME_CHANGE"></span>Servicios de Escritorio remoto cambio de nombre de herramientas
 </dt> <dd>
 
 Herramientas de Terminal Services con nombre en esta versión
 
 </dd> <dt>
 
-<span id="Remote_Desktop_Session_Host_Tools_name_change"></span><span id="remote_desktop_session_host_tools_name_change"></span><span id="REMOTE_DESKTOP_SESSION_HOST_TOOLS_NAME_CHANGE"></span>Escritorio remoto cambio de nombre de las herramientas host de sesión de sesión
+<span id="Remote_Desktop_Session_Host_Tools_name_change"></span><span id="remote_desktop_session_host_tools_name_change"></span><span id="REMOTE_DESKTOP_SESSION_HOST_TOOLS_NAME_CHANGE"></span>Escritorio remoto cambio de nombre de las herramientas de host de sesión de sesión
 </dt> <dd>
 
 Herramientas de Terminal Server con nombre en esta versión
@@ -3204,7 +3204,7 @@ Herramientas de licencias de TS con nombre en esta versión
 
 </dd> <dt>
 
-<span id="AD_DS_Snap-Ins_and_Command-Line_Tools_name_change"></span><span id="ad_ds_snap-ins_and_command-line_tools_name_change"></span><span id="AD_DS_SNAP-INS_AND_COMMAND-LINE_TOOLS_NAME_CHANGE"></span>AD DS Snap-Ins y cambio Command-Line de nombre de las herramientas de AD DS Snap-Ins de datos
+<span id="AD_DS_Snap-Ins_and_Command-Line_Tools_name_change"></span><span id="ad_ds_snap-ins_and_command-line_tools_name_change"></span><span id="AD_DS_SNAP-INS_AND_COMMAND-LINE_TOOLS_NAME_CHANGE"></span>AD DS Snap-Ins y cambio Command-Line de nombre de las herramientas de Command-Line
 </dt> <dd>
 
 Herramientas del controlador de dominio de Active Directory
@@ -3235,7 +3235,7 @@ Next
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                |

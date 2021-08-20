@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 67eed8f82f0caa27f44070bd109d4fa4560472eb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8aa87679c6d6db725c26deee817fe04acacca85e39d3a8f75c04cba9680ea846
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118132070"
 ---
 # <a name="attachments-sendemailtype-element"></a>Elemento Attachments (sendEmailType)
 
@@ -30,7 +30,7 @@ Contiene una lista de datos adjuntos en el mensaje de correo electrónico.
  />
 ```
 
-El elemento **Attachments** se define mediante el tipo complejo [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) .
+El tipo complejo [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) define el elemento **Attachments.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -52,20 +52,20 @@ El elemento **Attachments** se define mediante el tipo complejo [**sendEmailType
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de C++, vea la [**propiedad Attachments de IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_attachments).
+Para el desarrollo de C++, vea [**Propiedad Attachments de IEmailAction.**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_attachments)
 
-Para el desarrollo de scripts, vea [**EmailAction. Attachments**](emailaction-attachments.md).
+Para el desarrollo de scripts, [**vea EmailAction.Attachments.**](emailaction-attachments.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

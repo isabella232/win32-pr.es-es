@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MM_JOY2BUTTONDOWN (mmsystem. h)
-description: El \_ mensaje mm JOY2BUTTONDOWN notifica a la ventana que ha capturado el joystick JOYSTICKID2 que se ha presionado un botón.
+title: MM_JOY2BUTTONDOWN mensaje (Mmsystem.h)
+description: El mensaje MM PRESS2BUTTONDOWN notifica a la ventana que ha capturado \_ el botón CTRLID2 que se ha presionado un botón.
 ms.assetid: b4cd48ea-91ad-48e9-b0ae-58d8ee124171
 keywords:
-- Mensaje de MM_JOY2BUTTONDOWN de Windows multimedia
+- MM_JOY2BUTTONDOWN mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f155fcdc21247e01fd5d730f3f7d4daaba705e65
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 02e9ad78e914fb74e51f8ebe7a47a65677ac06d27d53eb8f64739ba641f235b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137206"
 ---
-# <a name="mm_joy2buttondown-message"></a>\_Mensaje JOY2BUTTONDOWN mm
+# <a name="mm_joy2buttondown-message"></a>Mensaje \_ MMAJE2BUTTONDOWN
 
-El mensaje **mm \_ JOY2BUTTONDOWN** notifica a la ventana que ha capturado el joystick JOYSTICKID2 que se ha presionado un botón.
+El **mensaje MM \_ PRESS2BUTTONDOWN** notifica a la ventana que ha capturado la captura de CTRLID2 que se ha presionado un botón.
 
 
 ```C++
@@ -46,12 +46,12 @@ Identifica el botón que ha cambiado de estado y los botones que se presionan. P
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-----------------|-------------------------------------------|
-| JOY \_ BUTTON1CHG | El primer botón del joystick ha cambiado de estado.  |
-| JOY \_ BUTTON2CHG | El segundo botón del joystick ha cambiado de estado. |
-| JOY \_ BUTTON3CHG | El tercer botón del joystick ha cambiado de estado.  |
-| JOY \_ BUTTON4CHG | El cuarto botón del joystick ha cambiado de estado. |
+| \_BUTTON1CHG DE BUTTON1 DE BUTTON | El primer botón button button ha cambiado de estado.  |
+| \_BUTTON2CHG DE BUTTON2 BUTTON2 | El segundo botón button button ha cambiado de estado. |
+| \_BUTTON3CHG DE BUTTON3CHG | El tercer botón button button ha cambiado de estado.  |
+| \_BUTTON4CHG DE BUTTON4CHG | El cuarto botón button button ha cambiado de estado. |
 
 
 
@@ -61,12 +61,12 @@ y uno o varios de los siguientes:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------|------------------------------------|
-| JOY \_ button1 | Se presionó el primer botón del joystick.  |
-| JOY \_ BUTTON2 | Se presionó el botón segundo joystick. |
-| JOY \_ BUTTON3 | Se presionó el tercer botón del joystick.  |
-| JOY \_ BUTTON4 | Se presionó el cuarto botón del joystick. |
+| BUTTON1 \_ DE BUTTON1 DE BUTTON1 | Se presiona el primer botón de botones.  |
+| BOTÓN \_ BUTTON2 DE BUTTON2 | Se presiona el segundo botón button button (Botón de botones). |
+| BOTÓN \_ BUTTON3 DE BUTTON3 | Se presiona el tercer botón de botones.  |
+| BOTÓN \_ BUTTON4 DE BUTTON4 | Se presiona el cuarto botón button button (Cuarto botón de botones). |
 
 
 
@@ -77,14 +77,14 @@ y uno o varios de los siguientes:
 <span id="xPos"></span><span id="xpos"></span><span id="XPOS"></span>*xPos*
 </dt> <dd>
 
-Coordenadas x del joystick con respecto a la esquina superior izquierda del área cliente.
+Coordenadas x del borde con respecto a la esquina superior izquierda del área cliente.
 
 </dd> <dt>
 
 <span id="yPos"></span><span id="ypos"></span><span id="YPOS"></span>*yPos*
 </dt> <dd>
 
-Coordenada y del joystick con respecto a la esquina superior izquierda del área cliente.
+Coordenada y del borde con respecto a la esquina superior izquierda del área cliente.
 
 </dd> </dl>
 
@@ -92,11 +92,11 @@ Coordenada y del joystick con respecto a la esquina superior izquierda del área
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -107,7 +107,7 @@ Coordenada y del joystick con respecto a la esquina superior izquierda del área
 [Joysticks](joysticks.md)
 </dt> <dt>
 
-[Mensajes de joystick multimedia](multimedia-joystick-messages.md)
+[Mensajes multimedia multimedia](multimedia-joystick-messages.md)
 </dt> </dl>
 
  

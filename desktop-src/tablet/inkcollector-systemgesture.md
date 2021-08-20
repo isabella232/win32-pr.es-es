@@ -4,12 +4,12 @@ ms.assetid: 11071d6f-8aa3-4902-94fd-89ad0cf17729
 title: InkCollector.Sysevento temGesture (Msasisut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f753807d8aaaf03c2de2fd9810ef1e044bcbe05
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 693201c26608064ee60bda1a86ee305b128c05d691172b8dcf74c428f83cf67b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118043155"
 ---
 # <a name="inkcollectorsystemgesture-event"></a>InkCollector.Sysevento temGesture
 
@@ -60,7 +60,7 @@ Coordenada x de la ubicación del gesto.
 *Y* \[ en\]
 </dt> <dd>
 
-Coordenada Y de la ubicación del gesto.
+Coordenada y de la ubicación del gesto.
 
 </dd> <dt>
 
@@ -99,7 +99,7 @@ Como otro ejemplo, en lugar de escuchar eventos [**MouseDown EventMove**](inkcol
 
 Para obtener una lista de gestos específicos del sistema, vea el tipo de enumeración [**InkSystemGesture.**](/windows/desktop/api/msinkaut/ne-msinkaut-inksystemgesture) Para obtener más información sobre los gestos del sistema, vea [Using Gestures](using-gestures.md) and [Command Input on the Tablet PC](/previous-versions//dd314533(v=vs.85)).
 
-Este método de evento se define en las interfaces de solo envío \_ \_ (dispinterfaces) de IInkCollectorEvents, IInkOverlayEvents e IInkPictureEvents con un identificador \_ de DISPID \_ ICESystemGesture.
+Este método de evento se define en las interfaces de solo distribución \_ \_ (dispinterfaces) de IInkCollectorEvents, IInkOverlayEvents e IInkPictureEvents con un identificador \_ de DISPID \_ ICESystemGesture.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -107,14 +107,14 @@ Este método de evento se define en las interfaces de solo envío \_ \_ (dispint
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

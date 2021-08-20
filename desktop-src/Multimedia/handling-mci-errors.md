@@ -3,21 +3,21 @@ title: Control de errores de MCI
 description: Control de errores de MCI
 ms.assetid: 01a2ff95-34a2-434f-9c7e-d0cdac826c02
 keywords:
-- mciSendCommand función)
+- Función mciSendCommand
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab8412c74153d5ddfb03a3aff895f9f2e0e73798
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f8e2f3a9cc3e711db0d26f28c9ac7e3fd0a8c94eec96117a732f8024372bf9de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105676353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118141027"
 ---
 # <a name="handling-mci-errors"></a>Control de errores de MCI
 
-Siempre debe comprobar el valor devuelto de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) . Si indica un error, puede usar [**mciGetErrorString**](/previous-versions//dd757158(v=vs.85)) para obtener una descripción textual del error.
+Siempre debe comprobar el valor devuelto de la [**función mciSendCommand.**](/previous-versions//dd757160(v=vs.85)) Si indica un error, puede usar [**mciGetErrorString**](/previous-versions//dd757158(v=vs.85)) para obtener una descripción textual del error.
 
-En el ejemplo siguiente se pasa el código de error de MCI especificado por *dwError* a **mciGetErrorString** y, a continuación, se muestra la descripción del error textual resultante mediante la función [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) .
+En el ejemplo siguiente se pasa el código de error de MCI especificado por *dwError* a **mciGetErrorString** y, a continuación, se muestra la descripción del error textual resultante mediante la [función MessageBox.](/windows/win32/api/winuser/nf-winuser-messagebox)
 
 
 ```C++
@@ -45,10 +45,10 @@ void showError(DWORD dwError)
 
 
 > [!Note]  
-> Para interpretar el valor devuelto de un error [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) , debe enmascarar la palabra de orden superior (la palabra de orden inferior contiene el código de error). Sin embargo, si pasa el valor devuelto de error a [**mciGetErrorString**](/previous-versions//dd757158(v=vs.85)), debe pasar el valor de palabra completo.
+> Para interpretar un valor devuelto de error [**mciSendCommand,**](/previous-versions//dd757160(v=vs.85)) enmascara la palabra de orden superior (la palabra de orden bajo contiene el código de error). Sin embargo, si pasa el valor devuelto del error a [**mciGetErrorString,**](/previous-versions//dd757158(v=vs.85))debe pasar todo el valor doubleword.
 
- 
+ 
 
- 
+ 
 
- 
+ 

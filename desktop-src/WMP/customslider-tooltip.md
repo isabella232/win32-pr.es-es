@@ -49,7 +49,7 @@ Vea el [atributo positionImage](customslider-positionimage.md) para obtener un e
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

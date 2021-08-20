@@ -1,19 +1,19 @@
 ---
-title: Controlador predeterminado y controladores personalizados
-description: Controlador predeterminado y controladores personalizados
+title: El controlador predeterminado y los controladores personalizados
+description: El controlador predeterminado y los controladores personalizados
 ms.assetid: b64617e8-3a71-449d-8948-fd997c1550b3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65dfd152a9f7b20b8ba1553db4efc9b57bffef60
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 42d7c0cbcff81ed8c0aa1e23d4b6713b33943e6ef925a0a22cb06f7102877eda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118103753"
 ---
-# <a name="the-default-handler-and-custom-handlers"></a>Controlador predeterminado y controladores personalizados
+# <a name="the-default-handler-and-custom-handlers"></a>El controlador predeterminado y los controladores personalizados
 
-La mayoría de las aplicaciones usan el controlador predeterminado, una implementación proporcionada por OLE, como controlador. Una aplicación implementa un controlador personalizado cuando las capacidades del controlador predeterminado son insuficientes. Un controlador personalizado puede reemplazar por completo el controlador predeterminado o usar partes de la funcionalidad que proporciona cuando corresponda. En el último caso, el controlador de la aplicación se implementa como un objeto agregado compuesto por un nuevo objeto de control y por el controlador predeterminado. Los controladores predeterminados o de aplicación combinados también se conocen como *controladores en proceso*. El *controlador de comunicación remota* se utiliza para los objetos que no tienen asignado un CLSID en el registro del sistema o que no tienen un controlador especificado. Todo lo que se necesita de un controlador para estos tipos de objetos es que pasan información a través del límite del proceso.
+La mayoría de las aplicaciones usan el controlador predeterminado, una implementación proporcionada por OLE, como controlador. Una aplicación implementa un controlador personalizado cuando las funcionalidades del controlador predeterminado no son suficientes. Un controlador personalizado puede reemplazar completamente el controlador predeterminado o usar partes de la funcionalidad que proporciona cuando corresponda. En el último caso, el controlador de aplicación se implementa como un objeto agregado compuesto por un nuevo objeto de control y el controlador predeterminado. Los controladores de aplicación/predeterminado combinados también se conocen como *controladores en proceso.* El *controlador de comunicación* remota se usa para los objetos a los que no se asigna un CLSID en el Registro del sistema o que no tienen ningún controlador especificado. Todo lo que se requiere de un controlador para estos tipos de objetos es que pasan información a través del límite del proceso.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -22,9 +22,9 @@ La mayoría de las aplicaciones usan el controlador predeterminado, una implemen
 [Controladores de objetos](object-handlers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

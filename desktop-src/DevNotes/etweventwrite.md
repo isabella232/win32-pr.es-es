@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: EtwEventWrite (función)'
+description: 'Más información sobre: Función EtwEventWrite'
 title: EtwEventWrite
 ms.topic: reference
 ms.date: 05/31/2018
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 api_location:
 - ntetw.h
-ms.openlocfilehash: 149f611dfb298749befca805509e05fa2dec497a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b8e06c2a0922038e37766f44c0b9fcd7c85bbb7fd4fa4bd0841192be9e4e9087
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104080244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162106"
 ---
-# <a name="etweventwrite-function"></a>EtwEventWrite función)
+# <a name="etweventwrite-function"></a>Función EtwEventWrite
 
-[La función EtwEventWrite y las estructuras que devuelve son internas del sistema operativo y están sujetas a cambios de una versión de Windows a otra.]
+[La función EtwEventWrite y las estructuras que devuelve son internas del sistema operativo y están sujetas a cambios de una versión de Windows a otra].
 
 Escribe un evento básico en una sesión.
 
@@ -52,7 +52,7 @@ RegHandle para el proveedor.
 *EventDescriptor*
 </dt> <dd>
 
-Descriptor de eventos del evento que se va a registrar.
+Descriptor de eventos del evento que se registrará.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Puntero a una matriz de elementos de datos de usuario.
 Código de error de Win32.
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La función EtwEventWrite y las estructuras que devuelve son internas del sistema operativo y están sujetas a cambios de una versión de Windows a otra. Para mantener la compatibilidad de la aplicación, es mejor usar funciones públicas en su lugar.
 
@@ -83,7 +83,7 @@ La función EtwEventWrite y las estructuras que devuelve son internas del sistem
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Plataforma de destino** | Windows |
-| **Header** | ntetw. h |
+| **Header** | ntetw.h |
 
 ## <a name="see-also"></a>Vea también
 

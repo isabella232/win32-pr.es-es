@@ -1,11 +1,11 @@
 ---
-title: msSFU-30-atributo de clave-valor
+title: Atributo msSFU-30-Key-Values
 description: Contiene datos internos que el servidor NIS usa para almacenar datos temporales.
 ms.assetid: 7c3bc936-f35c-456f-9f3e-7fe11ed1c98b
 ms.tgt_platform: multiple
 keywords:
-- msSFU-30-clave-valores atributo AD Schema
-- msSFU30KeyValues esquema de AD de atributos
+- Esquema de AD del atributo msSFU-30-Key-Values
+- Esquema de AD del atributo msSFU30KeyValues
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c648f5fbf28dbd1acd7e9707b35f3b1f9abade39
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 276bdc589a6f65ce644e814b257f34634307e7c8a07a3fb437b194946e1b5f8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118013248"
 ---
-# <a name="mssfu-30-key-values-attribute"></a>msSFU-30-atributo de clave-valor
+# <a name="mssfu-30-key-values-attribute"></a>Atributo msSFU-30-Key-Values
 
 Contiene datos internos que el servidor NIS usa para almacenar datos temporales.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | msSFU-30-clave-valores                  |
-| Nombre para mostrar de LDAP | msSFU30KeyValues                     |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | msSFU-30-Key-Values                  |
+| Ldap-Display-Name | msSFU30KeyValues                     |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.324          |
-| System-ID-GUID    | 37830235-e5e9-46f2-922b-d8d44f03e7ae |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | 37830235-e5e9-46f2-922b-d8d44f03e7ae |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -53,18 +53,18 @@ Contiene datos internos que el servidor NIS usa para almacenar datos temporales.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                    |
-| System-Only            | False                                                                                                                 |
-| Tiene un único valor       | False                                                                                                                 |
-| Está indexado             | False                                                                                                                 |
-| En el catálogo global      | False                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                          |
+| System-Only            | Falso                                                                                                                 |
+| Es de un solo valor       | Falso                                                                                                                 |
+| Está indexado             | Falso                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                          |
 | Range-Lower            | \-                                                                                                                    |
 | Range-Upper            | \-                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                            |
 | System-Flags           | 0x00000000                                                                                                            |
-| Clases usadas en        | [**msSFU-30-net-ID**](c-mssfu30netid.md)<br/> [**msSFU-30-red-usuario**](c-mssfu30networkuser.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Net-Id**](c-mssfu30netid.md)<br/> [**msSFU-30-Network-User**](c-mssfu30networkuser.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ Contiene datos internos que el servidor NIS usa para almacenar datos temporales.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                    |
-| System-Only            | False                                                                                                                 |
-| Tiene un único valor       | False                                                                                                                 |
-| Está indexado             | False                                                                                                                 |
-| En el catálogo global      | False                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                          |
+| System-Only            | Falso                                                                                                                 |
+| Es de un solo valor       | Falso                                                                                                                 |
+| Está indexado             | Falso                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                          |
 | Range-Lower            | \-                                                                                                                    |
 | Range-Upper            | \-                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                            |
 | System-Flags           | 0x00000000                                                                                                            |
-| Clases usadas en        | [**msSFU-30-net-ID**](c-mssfu30netid.md)<br/> [**msSFU-30-red-usuario**](c-mssfu30networkuser.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Net-Id**](c-mssfu30netid.md)<br/> [**msSFU-30-Network-User**](c-mssfu30networkuser.md)<br/> |
 
 
 
@@ -95,18 +95,18 @@ Contiene datos internos que el servidor NIS usa para almacenar datos temporales.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                    |
-| System-Only            | False                                                                                                                 |
-| Tiene un único valor       | False                                                                                                                 |
-| Está indexado             | False                                                                                                                 |
-| En el catálogo global      | False                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                          |
+| System-Only            | Falso                                                                                                                 |
+| Es de un solo valor       | Falso                                                                                                                 |
+| Está indexado             | Falso                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                          |
 | Range-Lower            | \-                                                                                                                    |
 | Range-Upper            | \-                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                            |
 | System-Flags           | 0x00000000                                                                                                            |
-| Clases usadas en        | [**msSFU-30-net-ID**](c-mssfu30netid.md)<br/> [**msSFU-30-red-usuario**](c-mssfu30networkuser.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Net-Id**](c-mssfu30netid.md)<br/> [**msSFU-30-Network-User**](c-mssfu30networkuser.md)<br/> |
 
 
 
@@ -114,20 +114,20 @@ Contiene datos internos que el servidor NIS usa para almacenar datos temporales.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                    |
-| System-Only            | False                                                                                                                 |
-| Tiene un único valor       | False                                                                                                                 |
-| Está indexado             | False                                                                                                                 |
-| En el catálogo global      | False                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                          |
+| System-Only            | Falso                                                                                                                 |
+| Es de un solo valor       | Falso                                                                                                                 |
+| Está indexado             | Falso                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                          |
 | Range-Lower            | \-                                                                                                                    |
 | Range-Upper            | \-                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                            |
 | System-Flags           | 0x00000000                                                                                                            |
-| Clases usadas en        | [**msSFU-30-net-ID**](c-mssfu30netid.md)<br/> [**msSFU-30-red-usuario**](c-mssfu30networkuser.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Net-Id**](c-mssfu30netid.md)<br/> [**msSFU-30-Network-User**](c-mssfu30networkuser.md)<br/> |
 
 
 

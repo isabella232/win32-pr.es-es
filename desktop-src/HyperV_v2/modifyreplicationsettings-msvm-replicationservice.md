@@ -1,7 +1,7 @@
 ---
 description: Modifica la configuración de replicación de una máquina virtual. Cuando un cliente llama a este método para una máquina virtual de réplica, modifica la configuración de replicación de la relación de replicación con la réplica extendida.
 ms.assetid: e68514a5-f508-4047-8dcc-6a95f3e3353e
-title: Método ModifyReplicationSettings de la clase Msvm_ReplicationService
+title: Método ModifyReplicationSettings de la Msvm_ReplicationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: d1c932f06350324e0d84559724f7ba0412dfb3e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ed9e490ecc0eec1dcb4f6549281631f0b43e855ad4fb825b6c07517abe26a6c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118149538"
 ---
-# <a name="modifyreplicationsettings-method-of-the-msvm_replicationservice-class"></a>Método ModifyReplicationSettings de la \_ clase ReplicationService de MSVM
+# <a name="modifyreplicationsettings-method-of-the-msvm_replicationservice-class"></a>Método ModifyReplicationSettings de la clase ReplicationService de Msvm \_
 
 Modifica la configuración de replicación de una máquina virtual. Cuando un cliente llama a este método para una máquina virtual de réplica, modifica la configuración de replicación de la relación de replicación con la réplica extendida.
 
@@ -41,24 +41,24 @@ uint32 ModifyReplicationSettings(
 
 <dl> <dt>
 
-*ComputerSystem* \[ de\]
+*ComputerSystem* \[ En\]
 </dt> <dd>
 
-Referencia a una instancia de un [**\_ ComputerSystem de CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa la máquina virtual para la que se debe modificar la configuración de replicación.
+Referencia a una instancia [**\_ de ComputerSystem cim**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa la máquina virtual para la que se debe modificar la configuración de replicación.
 
 </dd> <dt>
 
-*ReplicationSettingData* \[ de\]
+*ReplicationSettingData* \[ En\]
 </dt> <dd>
 
-Representación de cadena de la clase [**MSVM \_ ReplicationSettingData**](msvm-replicationsettingdata.md) que define la nueva configuración de replicación.
+Representación de cadena de la clase [**\_ ReplicationSettingData de Msvm**](msvm-replicationsettingdata.md) que define la nueva configuración de replicación.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -83,16 +83,16 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -101,18 +101,18 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**ModifyReplicationSettings** toma una instancia de [**MSVM \_ ReplicationSettingData**](msvm-replicationsettingdata.md) (FRSD) como entrada. La FRSD asociada a la máquina virtual como proveedor de host a host es la opción predeterminada. La FRSD de entrada se valida para la configuración válida de cada propiedad del proveedor predeterminado. En esta tabla se resumen las diferencias de validación con respecto al proveedor externo.
+**ModifyReplicationSettings toma** una instancia de [**\_ ReplicationSettingData**](msvm-replicationsettingdata.md) (FRSD) de Msvm como entrada. El FRSD asociado para la máquina virtual como proveedor de host a host es la opción predeterminada. FrSD de entrada se valida para la configuración válida para cada propiedad para el proveedor predeterminado. En esta tabla se resumen las diferencias de validación con respecto al proveedor externo.
 
 
 
@@ -124,19 +124,19 @@ El **sistema no está disponible** (32777)
 | RootCertificateThumbPrint (RO)                       | Omitido                                            |
 | CompressionEnabled                                   | Igual que el proveedor predeterminado                           |
 | BypassProxyServer                                    | Igual que el proveedor predeterminado                           |
-| RecoveryConnectionPoint                              | \*Se omite (puede cambiar si el proveedor tiene requisitos) |
+| RecoveryConnectionPoint                              | Omitido \* (puede cambiar si el proveedor tiene requisitos) |
 | RecoveryHostSystem (RO)                              | Omitido                                            |
 | PrimaryConnectionPoint (RO)                          | Igual que el proveedor predeterminado                           |
 | PrimaryHostSystem (RO)                               | Igual que el proveedor predeterminado                           |
-| RecoveryServerPortNumber                             | \*Se omite (puede cambiar si el proveedor tiene requisitos) |
+| RecoveryServerPortNumber                             | Omitido \* (puede cambiar si el proveedor tiene requisitos) |
 | ReplicateHostKvpItems                                | Omitido                                            |
 | ApplicationConsistentSnapshotInterval                | Igual que el proveedor predeterminado                           |
 | RecoveryHistory                                      | Igual que el proveedor predeterminado                           |
-| IncludedDisks\[\]                                    | Igual que el proveedor predeterminado                           |
+| Discos incluidos\[\]                                    | Igual que el proveedor predeterminado                           |
 | AutoResynchronizeEnabled                             | Igual que el proveedor predeterminado                           |
 | AutoResynchronizeIntervalStart                       | Igual que el proveedor predeterminado                           |
 | AutoResynchronizeIntervalEnd                         | Igual que el proveedor predeterminado                           |
-| EnableWriteOrderPreservationAcrossDisks (desusado) | Igual que el proveedor predeterminado                           |
+| EnableWriteOrderPreservationAcrossDisks (en desuso) | Igual que el proveedor predeterminado                           |
 | ReplicationInterval                                  | Igual que el proveedor predeterminado                           |
 
 
@@ -147,12 +147,12 @@ El **sistema no está disponible** (32777)
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -161,7 +161,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ ReplicationService**](msvm-replicationservice.md)
+[**ReplicationService de Msvm \_**](msvm-replicationservice.md)
 </dt> </dl>
 
  

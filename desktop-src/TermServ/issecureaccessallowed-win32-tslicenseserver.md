@@ -1,6 +1,6 @@
 ---
 title: Método IsSecureAccessAllowed de la Win32_TSLicenseServer clase
-description: Recupera si un Escritorio remoto host de sesión (host de sesión de Escritorio remoto) puede solicitar Servicios de Escritorio remoto de acceso de cliente (RDS \ 160; CAL) del servidor de Escritorio remoto licencias.
+description: Recupera si un servidor Escritorio remoto host de sesión (host de sesión de Escritorio remoto) puede solicitar Servicios de Escritorio remoto de acceso de cliente (RDS \ 160; CAL) desde el servidor Escritorio remoto licencias.
 ms.assetid: b9124808-79be-4b94-b12b-f093d5e8195a
 ms.tgt_platform: multiple
 keywords:
@@ -26,7 +26,7 @@ ms.locfileid: "118351371"
 ---
 # <a name="issecureaccessallowed-method-of-the-win32_tslicenseserver-class"></a>Método IsSecureAccessAllowed de la clase TSLicenseServer de Win32 \_
 
-Recupera si un servidor Escritorio remoto Session Host (Host de sesión de Escritorio remoto) puede solicitar licencias de acceso de cliente (CAL de RDS) Servicios de Escritorio remoto el servidor de licencias Escritorio remoto cliente.
+Recupera si un servidor Escritorio remoto Session Host (Host de sesión de Escritorio remoto) puede solicitar licencias de acceso de cliente (CAL de RDS) Servicios de Escritorio remoto desde el servidor de licencias de Escritorio remoto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,19 +54,19 @@ Nombre del servidor host de sesión de Escritorio remoto.
 *Permitido* \[ out\]
 </dt> <dd>
 
-Valor booleano que indica si el servidor host de sesión de Escritorio remoto puede solicitar cal de RDS al servidor de licencias.
+Valor booleano que indica si el servidor host de sesión de Escritorio remoto puede solicitar CAL de RDS desde el servidor de licencias.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI.](terminal-services-wmi-provider-error-codes.md)
 
 ## <a name="remarks"></a>Comentarios
 
 Debe ser miembro del grupo Administradores para llamar a este método.
 
-El valor devuelto se basa en la configuración de directiva de grupo "grupo de seguridad del servidor de licencias" y en la pertenencia al grupo local Equipos de Terminal Server en el Escritorio remoto de licencias.
+El valor devuelto se basa en la configuración de directiva de grupo "grupo de seguridad del servidor de licencias" y en la pertenencia al grupo local Equipos de Terminal Server Escritorio remoto servidor de licencias.
 
 Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
@@ -84,11 +84,11 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Win32 \_ TSLicenseServer**](win32-tslicenseserver.md)
+[**TSLicenseServer de Win32 \_**](win32-tslicenseserver.md)
 </dt> <dt>
 
 [**IsLSSecGrpGPEnabled**](islssecgrpgpenabled-win32-tslicenseserver.md)

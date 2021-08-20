@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de SBN_SIMPLEMODECHANGE (commctrl. h)
-description: Lo envía un control de barra de estado cuando cambia el modo simple debido a un \_ mensaje simple de SB. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: SBN_SIMPLEMODECHANGE de notificación (Commctrl.h)
+description: Enviado por un control de barra de estado cuando cambia el modo simple debido a un mensaje \_ SIMPLE de SB. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: b2df8feb-5028-4488-a99b-4ceff5b48a92
 keywords:
-- SBN_SIMPLEMODECHANGE controles de código de notificación de Windows
+- SBN_SIMPLEMODECHANGE código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b998f0c39ecb00322bf5a423f99b3231338283f4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 813158c851e628a60a081a4a3eef90abb2eceac1a64fd81c33a75375229681da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118408861"
 ---
-# <a name="sbn_simplemodechange-notification-code"></a>Código de notificación de SIMPLEMODECHANGE de SBN \_
+# <a name="sbn_simplemodechange-notification-code"></a>Código de notificación \_ SIMPLEMODECHANGE de SBN
 
-Lo envía un control de barra de estado cuando cambia el modo simple debido a un mensaje [**\_ simple de SB**](sb-simple.md) . Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control de barra de estado cuando cambia el modo simple debido a un [**mensaje \_ SIMPLE de SB.**](sb-simple.md) Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,23 +41,23 @@ SBN_SIMPLEMODECHANGE
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información sobre el código de notificación.
+Puntero a una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información sobre el código de notificación.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto se omite en la barra de estado.
+La barra de estado omite el valor devuelto.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

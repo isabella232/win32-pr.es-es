@@ -46,13 +46,13 @@ El **elemento Enabled** se define mediante el tipo complejo [**settingsType.**](
 
 ## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de C++, [**vea Propiedad habilitada de ITaskSettings.**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_enabled)
+Para el desarrollo de C++, [**vea Enabled Property of ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_enabled).
 
 Para el desarrollo de scripts, [**vea TaskSettings.Enabled.**](tasksettings-enabled.md)
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo completo del XML de una tarea habilitada, vea Ejemplo de desencadenador [de tiempo (XML).](time-trigger-example--xml-.md)
+Para obtener un ejemplo completo del XML de una tarea habilitada, vea [Ejemplo de desencadenador de tiempo (XML).](time-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 

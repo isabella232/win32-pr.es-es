@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSPOwnExtCorruptedException'
-title: Constructor de EsentSPOwnExtCorruptedException
+description: 'Más información sobre: Constructor EsentSPOwnExtCorruptedException'
+title: Constructor EsentSPOwnExtCorruptedException
 TOCTitle: 'EsentSPOwnExtCorruptedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSPOwnExtCorruptedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentspownextcorruptedexception.esentspownextcorruptedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9088679b1be1be33b00718d51efcab9f8f20dbaa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a8562aa34c04a0ef5ca6dbbda32df7c55e2305f48855cfce63e83e6867bfebc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118078349"
 ---
-# <a name="esentspownextcorruptedexception-constructor"></a>Constructor de EsentSPOwnExtCorruptedException
+# <a name="esentspownextcorruptedexception-constructor"></a>Constructor EsentSPOwnExtCorruptedException
 
 Inicializa una nueva instancia de la clase EsentSPOwnExtCorruptedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentSPOwnExtCorruptedException()
 public EsentSPOwnExtCorruptedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentSPOwnExtCorruptedException()
 
 [Miembros de EsentSPOwnExtCorruptedException](./esentspownextcorruptedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
