@@ -1,11 +1,11 @@
 ---
-title: ACS-atributo de latencia mínima
-description: El atributo ACS-Minimum-latencia solo es para uso interno.
+title: Atributo ACS-Minimum-Latency
+description: El atributo ACS-Minimum-Latency es solo para uso interno.
 ms.assetid: ec2cca55-9e31-49da-98aa-aa2f6664ea90
 ms.tgt_platform: multiple
 keywords:
-- ACS-esquema de AD de atributo de latencia mínima
-- aCSMinimumLatency esquema de AD de atributos
+- Esquema de AD del atributo ACS-Minimum-Latency
+- Esquema de AD del atributo aCSMinimumLatency
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ab7e9e6d5a9ccf626cdf8849ffe0e29504b4a0b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 97f23f841b072b8bf90d5d57ec6efcc954369808d9ffc345d92c4264f7e01a07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104079814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022863"
 ---
-# <a name="acs-minimum-latency-attribute"></a>ACS-atributo de latencia mínima
+# <a name="acs-minimum-latency-attribute"></a>Atributo ACS-Minimum-Latency
 
-El atributo **ACS-Minimum-latencia** solo es para uso interno. Basado en RFC2210.
+El **atributo ACS-Minimum-Latency** es solo para uso interno. Basado en RFC2210.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | ACS-latencia mínima                  |
-| Nombre para mostrar de LDAP | aCSMinimumLatency                    |
-| Tamaño              | 8 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | Latencia mínima de ACS                  |
+| Ldap-Display-Name | aCSMinimumLatency                    |
+| Size              | 8 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1316              |
-| System-ID-GUID    | 9517fefb-3b90-11d2-90cc-00c04fd91ab1 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 9517fefb-3b90-11d2-90cc-00c04fd91ab1 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,18 +55,18 @@ El atributo **ACS-Minimum-latencia** solo es para uso interno. Basado en RFC2210
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ El atributo **ACS-Minimum-latencia** solo es para uso interno. Basado en RFC2210
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ El atributo **ACS-Minimum-latencia** solo es para uso interno. Basado en RFC2210
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ El atributo **ACS-Minimum-latencia** solo es para uso interno. Basado en RFC2210
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ El atributo **ACS-Minimum-latencia** solo es para uso interno. Basado en RFC2210
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ El atributo **ACS-Minimum-latencia** solo es para uso interno. Basado en RFC2210
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 

@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método SetAuthenticationPlugin Servicios de Escritorio remoto
 - Método SetAuthenticationPlugin Servicios de Escritorio remoto , Win32_TSGatewayServerSettings clase
-- Win32_TSGatewayServerSettings clase Servicios de Escritorio remoto , método SetAuthenticationPlugin
+- Win32_TSGatewayServerSettings clase Servicios de Escritorio remoto método , SetAuthenticationPlugin
 topic_type:
 - apiref
 api_name:
@@ -56,15 +56,15 @@ Nombre del nuevo complemento de autenticación actual.
 
 Tipo: **uint32**
 
-Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI.](terminal-services-wmi-provider-error-codes.md)
 
 ## <a name="remarks"></a>Comentarios
 
-Debe llamar al [**método RecycleRpcApplicationPools**](recyclerpcapplicationpools-win32-tsgatewayserversettings.md) para permitir que el complemento de autenticación funcione.
+Debe llamar al método [**RecycleRpcApplicationPools**](recyclerpcapplicationpools-win32-tsgatewayserversettings.md) para permitir que el complemento de autenticación funcione.
 
 Debe ser miembro del grupo Administradores para llamar a este método.
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,13 +74,13 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                        |
-| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
 | MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

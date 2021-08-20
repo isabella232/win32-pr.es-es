@@ -1,5 +1,5 @@
 ---
-description: Las siguientes consideraciones de subprocesamiento de Tablet PC son específicas de la biblioteca administrada.
+description: Las siguientes consideraciones de subprocesos de Tablet PC son específicas de la biblioteca administrada.
 ms.assetid: bcc398d3-22ea-466c-9206-92b0ac208def
 title: Consideraciones sobre subprocesos de biblioteca administrada
 ms.topic: article
@@ -13,19 +13,19 @@ ms.locfileid: "119031713"
 ---
 # <a name="managed-library-threading-considerations"></a>Consideraciones sobre subprocesos de biblioteca administrada
 
-Las siguientes consideraciones de subprocesamiento de Tablet PC son específicas de la biblioteca administrada.
+Las siguientes consideraciones de subprocesos de Tablet PC son específicas de la biblioteca administrada.
 
 -   [Seguridad para subprocesos](#thread-safety)
 -   [Aplicaciones STA y MTA](#sta-and-mta-applications)
--   [Windows Consideraciones sobre subprocesamiento de formularios](#windows-forms-threading-considerations)
+-   [Windows Consideraciones sobre el subprocesamiento de formularios](#windows-forms-threading-considerations)
 -   [Consideraciones sobre el Portapapeles](#clipboard-considerations)
--   [Excepciones dentro de controladores de eventos](#exceptions-within-event-handlers)
+-   [Excepciones en controladores de eventos](#exceptions-within-event-handlers)
 -   [Eliminación de objetos y controles](#disposing-objects-and-controls)
 -   [API stylusInput](#stylusinput-apis)
 
 ## <a name="thread-safety"></a>Thread-Safety
 
-Las clases de biblioteca administrada de la plataforma de Tablet PC no suelen ser seguras para subprocesos. Las siguientes colecciones son seguras para subprocesos en el nivel de miembro; Sin embargo, estas colecciones no garantizan que un enumerador esté protegido si otro subproceso funciona en la colección simultáneamente:
+Las clases de biblioteca administrada de la plataforma de Tablet PC no suelen ser seguras para subprocesos. Las siguientes colecciones son seguras para subprocesos en el nivel de miembro; sin embargo, estas colecciones no garantizan que un enumerador esté protegido si otro subproceso funciona en la colección simultáneamente:
 
 -   [CursorButtons](/previous-versions/ms839506(v=msdn.10))
 -   [Cursores](/previous-versions/ms839493(v=msdn.10))
@@ -36,19 +36,19 @@ Las clases de biblioteca administrada de la plataforma de Tablet PC no suelen se
 
 ## <a name="sta-and-mta-applications"></a>Aplicaciones STA y MTA
 
-Las aplicaciones administradas creadas mediante los asistentes incluidos en Microsoft Visual Studio .NET son de un solo subproceso (STA) de forma predeterminada. Puede cambiar el apartamento de la aplicación estableciendo el subproceso STA o el atributo de subproceso multiproceso (MTA) en el punto de entrada de la aplicación.
+Las aplicaciones administradas creadas mediante los asistentes incluidos en Microsoft Visual Studio .NET son de un solo subproceso (STA) de forma predeterminada. Puede cambiar el apartamento de la aplicación estableciendo el atributo de subproceso STA o subproceso de apartamento multiproceso (MTA) en el punto de entrada de la aplicación.
 
 Si la aplicación se ejecuta en un MTA, debe escribir código seguro para subprocesos; sin embargo, al hacerlo, puede mejorar ciertos problemas de rendimiento de control de eventos.
 
 Para obtener más información sobre los atributos de subproceso STA y de subproceso MTA, vea [STAThreadAttribute](/dotnet/api/system.stathreadattribute?view=netcore-3.1) (clase) y [MTAThreadAttribute (clase).](/dotnet/api/system.mtathreadattribute?view=netcore-3.1)
 
-## <a name="windows-forms-threading-considerations"></a>Windows Consideraciones sobre subprocesamiento de formularios
+## <a name="windows-forms-threading-considerations"></a>Windows Consideraciones sobre el subprocesamiento de formularios
 
-Los [controles InkPicture](/previous-versions/aa514604(v=msdn.10)) y [InkEdit](/previous-versions/ms552265(v=vs.100)) extienden los Windows Forms. Windows Los controles de formularios usan el modelo de apartamento de un solo subproceso (STA) porque Windows Forms se basan en ventanas nativas de Win32 que son inherentemente de un solo subproceso. En el código administrado, los controles de entrada de lápiz deben crearse en el mismo subproceso que el subproceso principal del formulario.
+Los [controles InkPicture](/previous-versions/aa514604(v=msdn.10)) [y InkEdit](/previous-versions/ms552265(v=vs.100)) amplían Windows Forms. Windows Los controles forms usan el modelo de apartamento de un solo subproceso (STA) porque Windows Forms se basan en ventanas nativas win32 que son intrínsecamente de un solo subproceso. En el código administrado, los controles de entrada de lápiz deben crearse en el mismo subproceso que el subproceso principal del formulario.
 
-En una aplicación STA, ciertos eventos se suceden en un subproceso que no sea el subproceso de interfaz de usuario (UI) de la aplicación. Al llamar a cualquier objeto o control de Windows Forms, incluidos los controles [InkPicture](/previous-versions/aa514604(v=msdn.10)) y [InkEdit,](/previous-versions/ms552265(v=vs.100)) desde un controlador de eventos de Tablet PC, use el método [Control.Invoke](/dotnet/api/system.windows.forms.control.invoke?view=netcore-3.1) heredado del objeto o control. La [propiedad InvokeRequired,](/dotnet/api/system.windows.forms.control.invokerequired?view=netcore-3.1) heredada de la clase Control, se puede usar para determinar si es necesario.
+En una aplicación STA, ciertos eventos se suceden en un subproceso que no sea el subproceso de la interfaz de usuario (UI) de la aplicación. Al llamar a cualquier objeto o control de Windows Forms, incluidos los controles [InkPicture](/previous-versions/aa514604(v=msdn.10)) y [InkEdit,](/previous-versions/ms552265(v=vs.100)) desde un controlador de eventos de Tablet PC, use el método [Control.Invoke](/dotnet/api/system.windows.forms.control.invoke?view=netcore-3.1) heredado del objeto o control. La [propiedad InvokeRequired,](/dotnet/api/system.windows.forms.control.invokerequired?view=netcore-3.1) heredada de la clase Control, se puede usar para determinar si es necesario.
 
-Por ejemplo, en el siguiente controlador de eventos para el evento [Recognition,](/previous-versions/ms829424(v=msdn.10)) se prueba la propiedad [InvokeRequired](/dotnet/api/system.windows.forms.control.invokerequired?view=netcore-3.1) y, si es **TRUE,** el controlador de eventos se vuelve a invocar desde el subproceso de la interfaz de usuario.
+Por ejemplo, en el siguiente controlador de eventos para el evento [Recognition,](/previous-versions/ms829424(v=msdn.10)) se prueba la propiedad [InvokeRequired](/dotnet/api/system.windows.forms.control.invokerequired?view=netcore-3.1) y, si es **TRUE,** se vuelve a invocar el controlador de eventos desde el subproceso de la interfaz de usuario.
 
 
 ```C++
@@ -68,7 +68,7 @@ void recoContext_Recognition(object sender,
 
 
 
-Si coloca un [control UserControl](/dotnet/api/system.web.ui.usercontrol?view=netframework-4.8) en una página web en un explorador (vea [Controles web](web-controls.md)), se ejecuta como una aplicación STA. Para las aplicaciones cliente inteligentes (consulte [No Touch Deployment),](no-touch-deployment.md)el desarrollador tiene control total sobre [ApartmentState.](/dotnet/api/system.threading.apartmentstate?view=netcore-3.1) (El valor predeterminado suele ser STA, pero puede ser MTA, dependiendo de la versión de CLR). Para problemas de subprocesos relacionados con [**RealTimeStylus,**](realtimestylus-class.md)vea Consideraciones de [subprocesos para las API StylusInput](threading-considerations-for-the-stylusinput-apis.md).
+Si coloca un [UserControl](/dotnet/api/system.web.ui.usercontrol?view=netframework-4.8) en una página web en un explorador (vea [Controles web](web-controls.md)), se ejecuta como una aplicación STA. En el caso de las aplicaciones cliente inteligentes (consulte [No Touch Deployment),](no-touch-deployment.md)el desarrollador tiene control total sobre [ApartmentState.](/dotnet/api/system.threading.apartmentstate?view=netcore-3.1) (El valor predeterminado suele ser STA, pero puede ser MTA, dependiendo de la versión de CLR). Para problemas de subprocesos relacionados con [**RealTimeStylus,**](realtimestylus-class.md)consulte Consideraciones de subprocesos para [las API StylusInput](threading-considerations-for-the-stylusinput-apis.md).
 
 Para obtener más información sobre cómo llamar a Windows Forms desde una aplicación MTA, vea [Multithreaded Windows Forms Control Sample](/previous-versions/dotnet/netframework-1.1/3s8xdz5c(v=vs.71)).
 
@@ -88,11 +88,11 @@ No se pueden realizar excepciones desde los controladores de eventos de Tablet P
 
 Para evitar una pérdida de memoria, debe llamar explícitamente al método [Dispose](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) en cualquier objeto o control de Tablet PC al que se haya asociado un controlador de eventos antes de que el objeto o control salga del ámbito.
 
-Para mejorar el rendimiento de la aplicación, deseche manualmente cualquier objeto o control de Tablet PC que implemente el método [Dispose](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) cuando el objeto o control ya no sea necesario.
+Para mejorar el rendimiento de la aplicación, elimine manualmente cualquier objeto o control de Tablet PC que implemente el método [Dispose](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) cuando el objeto o control ya no sea necesario.
 
-## <a name="stylusinput-apis"></a>API stylusInput
+## <a name="stylusinput-apis"></a>API StylusInput
 
-Para obtener información sobre las consideraciones de subprocesos para el objeto [**RealTimeStylus**](realtimestylus-class.md) y las interfaces de programación de aplicaciones (API) StylusInput, vea Consideraciones de subprocesos para las [API StylusInput](threading-considerations-for-the-stylusinput-apis.md).
+Para obtener información sobre las consideraciones de subprocesos para el objeto [**RealTimeStylus**](realtimestylus-class.md) y las interfaces de programación de aplicaciones (API) StylusInput, consulte Consideraciones de subprocesos para las [API StylusInput](threading-considerations-for-the-stylusinput-apis.md).
 
  
 

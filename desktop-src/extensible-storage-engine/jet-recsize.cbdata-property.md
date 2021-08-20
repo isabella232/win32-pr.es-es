@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_RECSIZE. cbData'
-title: Propiedad JET_RECSIZE. cbData (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: JET_RECSIZE.cbData'
+title: JET_RECSIZE.cbData (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'cbData property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE.cbData
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_recsize.cbdata(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e7765ba11c39419cafac8441c59f797702872875
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93192408331154888b906f1a8d06a18bef61a958188aa481a7dfb5aee52006c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119616605"
 ---
-# <a name="jet_recsizecbdata-property"></a>Propiedad JET_RECSIZE. cbData
+# <a name="jet_recsizecbdata-property"></a>JET_RECSIZE.cbData, propiedad
 
 Obtiene el conjunto de datos de usuario del registro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public long cbData { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int64](/dotnet/api/system.int64)  
+Tipo: [System.Int64](/dotnet/api/system.int64)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_RECSIZE](./jet-recsize-structure2.md)
+[JET_RECSIZE estructura](./jet-recsize-structure2.md)
 
-[Miembros de JET_RECSIZE](./jet-recsize-members.md)
+[JET_RECSIZE miembros](./jet-recsize-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

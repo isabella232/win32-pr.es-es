@@ -4,9 +4,9 @@ description: Especifica el número de monitores remotos.
 ms.assetid: AFBF233D-44B2-4E6E-8C0C-A234F25B6111
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad RemoteMonitorCount
-- Propiedad RemoteMonitorCount Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable5, propiedad RemoteMonitorCount
+- Propiedad RemoteMonitorCount Servicios de Escritorio remoto
+- Propiedad RemoteMonitorCount Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable5
+- Interfaz IMsRdpClientNonScriptable5 Servicios de Escritorio remoto , propiedad RemoteMonitorCount
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 63833382d5dcbd764c0139e74ef072c34b2c10ee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 770ea34a4f77f150ef865da58051f1775fa773b14b39c5398dc67881d3dc4a26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119621055"
 ---
-# <a name="imsrdpclientnonscriptable5remotemonitorcount-property"></a>IMsRdpClientNonScriptable5:: RemoteMonitorCount (propiedad)
+# <a name="imsrdpclientnonscriptable5remotemonitorcount-property"></a>Propiedad IMsRdpClientNonScriptable5::RemoteMonitorCount
 
 Especifica el número de monitores remotos.
 
@@ -44,19 +44,19 @@ HRESULT get_RemoteMonitorCount(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Recibe el valor de la propiedad.
+Recibe el valor de propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                          |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                          |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                             |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>        |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>        |
-| IID<br/>                      | IID \_ IMsRdpClientNonScriptable5 se define como 4f6996d5-d7b1-412C-b0ff-063718566907<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientNonScriptable5 se define como 4f6996d5-d7b1-412c-b0ff-063718566907<br/> |
 
 
 

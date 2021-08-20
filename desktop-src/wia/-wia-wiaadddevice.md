@@ -23,7 +23,7 @@ ms.locfileid: "118965404"
 ---
 # <a name="wiaadddevice-function"></a>Función WiaAddDevice
 
-La **función WiaAddDevice** invoca la interfaz de usuario del Asistente para instalación de escáneres y cámaras. Equivale a ejecutar "rundll32.exe de \_ci.dll AddDevice" desde el símbolo del sistema.
+La **función WiaAddDevice** invoca la interfaz de usuario del Asistente para instalación de escáneres y cámaras. Es equivalente a ejecutar "rundll32.exe de \_ci.dll AddDevice" desde el símbolo del sistema.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Se debe llamar a esta función con credenciales de administrador. Cuando se ejec
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
@@ -59,7 +59,7 @@ Se debe llamar a esta función con credenciales de administrador. Cuando se ejec
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

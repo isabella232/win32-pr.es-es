@@ -1,6 +1,6 @@
 ---
 title: MMIOM_CLOSE mensaje (Mmsystem.h)
-description: La función mmioClose envía el mensaje MMIOM CLOSE a un procedimiento de E/S para solicitar que \_ se cierre un archivo.
+description: La función mmioClose envía el mensaje MMIOM CLOSE a un procedimiento de E/S para solicitar \_ que se cierre un archivo.
 ms.assetid: 9d0dad5b-fd0a-4948-a4cf-9d138e353c76
 keywords:
 - MMIOM_CLOSE mensaje Windows Multimedia
@@ -21,9 +21,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119065395"
 ---
-# <a name="mmiom_close-message"></a>Mensaje CLOSE de MMIOM \_
+# <a name="mmiom_close-message"></a>Mensaje MMIOM \_ CLOSE
 
-La función [**mmioClose**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioclose) envía el mensaje CLOSE de **\_ MMIOM** a un procedimiento de E/S para solicitar que se cierre un archivo.
+La función [**mmioClose**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioclose) envía el mensaje **\_ MMIOM CLOSE** a un procedimiento de E/S para solicitar que se cierre un archivo.
 
 
 ```C++
@@ -47,7 +47,7 @@ Marcas contenidas en el **parámetro wFlags** de **mmioClose.**
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si el archivo se cierra correctamente o se produce un error en caso contrario.
+Devuelve cero si el archivo se ha cerrado correctamente o se produce un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -4,16 +4,16 @@ description: En este artículo se describe cómo empezar a autenticar el juego y
 ms.assetid: 0b3138ea-e4ea-57fb-756b-62fdc20cf813
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 256b1cec0693787e76cfa479940524fca28d508e
-ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
+ms.openlocfilehash: d1e41d9b0f1149394e1aa2634f5df2a428630bfc0e7bd006e86065567e28eb6b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "114436460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650435"
 ---
 # <a name="authenticode-signing-for-game-developers"></a>Firma de Authenticode para desarrolladores de juegos
 
-La autenticación de datos es cada vez más importante para los desarrolladores de juegos. Windows Vista y Windows 7 tienen una serie de características, como los controles parentales, que requieren que los juegos se firmen correctamente para asegurarse de que nadie haya alterado los datos. Microsoft Authenticode permite a los usuarios finales y al sistema operativo comprobar que el código del programa procede del propietario correcto y que no se ha modificado malintencionadamente ni dañado accidentalmente. En este artículo se describe cómo empezar a autenticar el juego y cómo integrar la autenticación en un proceso de compilación diario.
+La autenticación de datos es cada vez más importante para los desarrolladores de juegos. Windows Vista y Windows 7 tienen una serie de características, como los controles parentales, que requieren que los juegos estén firmados correctamente para asegurarse de que nadie haya alterado los datos. Microsoft Authenticode permite a los usuarios finales y al sistema operativo comprobar que el código del programa procede del propietario correcto y que no se ha modificado malintencionadamente ni dañado accidentalmente. En este artículo se describe cómo empezar a autenticar el juego y cómo integrar la autenticación en un proceso de compilación diario.
 
 -   [Información preliminar](#background)
 -   [Introducción](#getting-started)
@@ -26,11 +26,11 @@ La autenticación de datos es cada vez más importante para los desarrolladores 
 -   [Más información](#more-information)
 
 > [!Note]  
-> A partir del 1 de enero de 2016, Windows 7 y versiones posteriores ya no confían en ningún certificado de firma de código SHA-1 con una fecha de expiración del 1 de enero de 2016 o posterior. Consulte Windows cumplimiento de firma y marca de tiempo de código [authenticode](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx) para obtener más información.
+> A partir del 1 de enero de 2016, Windows 7 y versiones posteriores ya no confían en ningún certificado de firma de código SHA-1 con una fecha de expiración del 1 de enero de 2016 o posterior. Vea [Windows enforcement of Authenticode Code Signing and Timestamping](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx) (Aplicación de la firma de código authenticode y la marca de tiempo) para obtener más información.
 
  
 
-## <a name="background"></a>Fondo
+## <a name="background"></a>Información previa
 
 Los certificados digitales se usan para establecer la identidad del autor. Los certificados digitales los emite un tercero de confianza conocido como entidad de certificación (CA), como VeriSign o Thawte. La entidad de certificación es responsable de comprobar que el propietario no está reclamando una identificación falsa. Después de solicitar un certificado a una entidad de certificación, los desarrolladores comerciales pueden esperar una respuesta a su aplicación en menos de dos semanas.
 
@@ -40,7 +40,7 @@ Después de tener una clave pública y privada, puede empezar a distribuir softw
 
 La firma se puede comprobar de varias maneras. Los programas pueden llamar a la función CertVerifyCertificateChainPolicy y SignTool (signtool.exe) se puede usar para comprobar una firma desde el símbolo de la línea de comandos. Windows El Explorador también tiene una pestaña Firmas digitales en Propiedades del archivo que muestra cada certificado de un archivo binario firmado. (La pestaña Firmas digitales solo aparece en Propiedades del archivo para archivos firmados). Además, una aplicación puede realizar la autocertificación mediante [**CertVerifyCertificateChainPolicy**](/windows/desktop/api/wincrypt/nf-wincrypt-certverifycertificatechainpolicy).
 
-La firma authenticode no solo es útil para la autenticación de datos por parte de los usuarios finales, sino que también es necesaria para aplicar revisiones a las cuentas de usuario limitadas y a los controles parentales de Windows Vista y Windows 7. Además, las tecnologías futuras de los sistemas operativos de Windows también pueden requerir que el código esté firmado, por lo que se recomienda encarecidamente que todos los desarrolladores profesionales y profesionales adquieran un certificado de firma de código de una entidad de certificación. Puede encontrar más información sobre cómo hacerlo más adelante en este artículo en Uso de [una entidad de certificación de confianza](#using-a-trusted-certificate-authority).
+La firma authenticode no solo es útil para la autenticación de datos por parte de los usuarios finales, sino que también es necesaria para la aplicación de revisiones de cuentas de usuario limitadas y mediante controles parentales en Windows Vista y Windows 7. Además, las tecnologías futuras de los sistemas operativos de Windows también pueden requerir que el código esté firmado, por lo que se recomienda encarecidamente que todos los desarrolladores profesionales y profesionales adquieran un certificado de firma de código de una entidad de certificación. Puede encontrar más información sobre cómo hacerlo más adelante en este artículo en Uso de [una entidad de certificación de confianza](#using-a-trusted-certificate-authority).
 
 El código del juego, los patchers y los instaladores pueden aprovechar aún más la firma authenticode comprobando que los archivos son auténticos en el código. Esto se puede usar para la seguridad de red general y anti-cheat. El código de ejemplo para comprobar si un archivo está firmado se puede encontrar aquí: Ejemplo de programa [C:](/windows/desktop/SecCrypto/example-c-program--verifying-the-signature-of-a-pe-file)Comprobar la firma de un archivo PE y código de ejemplo para comprobar la propiedad de un certificado de firma en un archivo firmado se puede encontrar aquí: Cómo obtener información de archivos [ejecutables firmados de Authenticode](https://support.microsoft.com/kb/323809).
 
@@ -50,7 +50,7 @@ Para empezar, Microsoft proporciona herramientas con Visual Studio 2005 y Visual
 
 -   %SystemDrive% \\ Archivos de programa Microsoft Visual Studio \\ 8 SDK \\ \\ v2.0 \\ Bin
 -   %SystemDrive% \\ Archivos de programa Microsoft Visual Studio \\ 8 VC \\ \\ PlatformSDK \\ Bin
--   %SystemDrive% \\ Archivos de programa Microsoft Visual Studio SDK de \\ SmartDevices 9.0 \\ \\ \\ SdkTools\\
+-   %SystemDrive% \\ Archivos de programa Microsoft Visual Studio SDK de \\ SmartDevices 9.0 \\ \\ \\ SDKTools\\
 -   %SystemDrive% \\ Archivos de programa sdk de Microsoft Windows bin \\ \\ \\ v6.0A \\\\
 
 Las herramientas siguientes son las más útiles para firmar código:
@@ -85,7 +85,7 @@ Firma el archivo mediante el archivo .pfx. SignTool admite la firma de archivos 
 
 ## <a name="using-a-trusted-certificate-authority"></a>Uso de una entidad de certificación de confianza
 
-Para obtener un certificado de confianza, debe aplicar a una entidad de certificación (CA), como VeriSign o Thawte. Microsoft no recomienda ninguna entidad de certificación sobre otra, pero si desea integrarse en el servicio Informe de errores de Windows (WER), debe considerar el uso de VeriSign para emitir el certificado, ya que el acceso a la base de datos WER requiere una cuenta WinQual que requiere un identificador de VeriSign. Para obtener una lista completa de entidades de certificación de terceros de confianza, vea Miembros del programa de [certificados raíz de Microsoft](/previous-versions/ms995347(v=msdn.10)). Para obtener más información sobre el registro con WER, vea "[Introducing Informe de errores de Windows](https://msdn.microsoft.com/)" in [ISV Zone](https://msdn.microsoft.com/).
+Para obtener un certificado de confianza, debe aplicar a una entidad de certificación (CA), como VeriSign o Thawte. Microsoft no recomienda ninguna entidad de certificación sobre otra, pero si desea integrarse en el servicio Informe de errores de Windows (WER), debe considerar el uso de VeriSign para emitir el certificado, ya que para acceder a la base de datos WER se requiere una cuenta WinQual que requiere un identificador de VeriSign. Para obtener una lista completa de entidades de certificación de terceros de confianza, vea Miembros del programa de [certificados raíz de Microsoft](/previous-versions/ms995347(v=msdn.10)). Para obtener más información sobre el registro con WER, vea "[Introducing Informe de errores de Windows](https://msdn.microsoft.com/)" in [ISV Zone](https://msdn.microsoft.com/).
 
 Después de recibir el certificado de la entidad de certificación, puede firmar el programa mediante SignTool y publicar el programa al público. Sin embargo, debe tener cuidado de proteger la clave privada, que se encuentra en los archivos .pfx y .pvk. Asegúrese de mantener estos archivos en una ubicación segura.
 
@@ -107,7 +107,7 @@ En este ejemplo, también se agrega una marca de tiempo a la firma. Una marca de
 
     
 
-2.  Cree un archivo de Exchange información personal (.pfx) a partir del archivo de clave privada (.pvk) y el archivo de certificado (.cer) mediante pvk2pfx.exe.
+2.  Cree un archivo de Exchange personal (.pfx) a partir del archivo de clave privada (.pvk) y el archivo de certificado (.cer) mediante pvk2pfx.exe.
 
     El archivo .pfx combina las claves públicas y privadas en un único archivo. En el siguiente ejemplo de línea de comandos se usan los archivos .pvk y .cer del paso anterior para crear el archivo .pfx denominado MyPFX con la contraseña de la \_ contraseña:
 
@@ -164,13 +164,13 @@ En este ejemplo, también se agrega una marca de tiempo a la firma. Una marca de
 
 Para integrar el inicio de sesión de código en un proyecto, puede crear un archivo por lotes o un script para ejecutar las herramientas de línea de comandos. Una vez creado el proyecto, ejecute SignTool con la configuración adecuada (como se muestra en el paso 3 de nuestro ejemplo).
 
-Tenga especial cuidado en el proceso de compilación para garantizar que el acceso a los archivos .pfx y .pvk está restringido a tan pocos equipos y usuarios como sea posible. Como procedimiento recomendado, los desarrolladores solo deben firmar código mediante el certificado de prueba hasta que estén listos para enviarse. Una vez más, la clave privada (.pvk) debe mantenerse en una ubicación segura, como una sala segura o bloqueada, e idealmente en un dispositivo criptográfico, como una tarjeta inteligente.
+Tenga especial cuidado en el proceso de compilación para garantizar que el acceso a los archivos .pfx y .pvk está restringido al menor número posible de equipos y usuarios. Como procedimiento recomendado, los desarrolladores solo deben firmar código mediante el certificado de prueba hasta que estén listos para enviarse. Una vez más, la clave privada (.pvk) debe mantenerse en una ubicación segura, como una sala segura o bloqueada, y lo ideal es en un dispositivo criptográfico, como una tarjeta inteligente.
 
 Otra capa de protección se proporciona mediante Microsoft Authenticode para firmar el propio paquete Windows Installer (MSI). Esto ayuda a proteger el paquete MSI contra alteraciones y daños accidentales. Consulte la documentación de la herramienta de creación de MSI para obtener más información sobre cómo firmar paquetes con Authenticode.
 
 ## <a name="revocation"></a>Revocación
 
-En caso de que la seguridad de la clave privada se vea comprometida o algún evento relacionado con la seguridad represente un certificado Code-Signing no válido, el desarrollador debe revocar el certificado. Si no lo hace, se desatendría la integridad del desarrollador y la eficacia de firmar el código. Una entidad de certificación también puede emitir una revocación con un tiempo específico; El código firmado con una marca de tiempo anterior a la hora de revocación se seguirá considerando válido, pero el código con una marca de tiempo posterior no será válido. La revocación de certificados afecta al código de las aplicaciones firmadas con el certificado revocado.
+En caso de que la seguridad de la clave privada esté en peligro o algún evento relacionado con la seguridad represente un certificado Code-Signing no válido, el desarrollador debe revocar el certificado. Si no lo hace, se podría debilitar la integridad del desarrollador y la eficacia de firmar el código. Una entidad de certificación también puede emitir una revocación con un tiempo específico. El código firmado con una marca de tiempo antes de la hora de revocación todavía se considerará válido, pero el código con una marca de tiempo posterior no será válido. La revocación de certificados afecta al código de las aplicaciones que están firmadas con el certificado revocado.
 
 ## <a name="code-signing-drivers"></a>Code-Signing controladores
 
@@ -178,7 +178,7 @@ Los controladores pueden y deben estar firmados por Authenticode. Los controlado
 
 Muchos tipos de controladores se pueden firmar con una firma de confianza de Microsoft, como parte del Programa de certificación de Windows de [Windows Hardware Quality Labs](https://www.microsoft.com/whdc/whql/) (WHQL) o el Programa de firma sin clasificar (anteriormente denominado Firma de confiabilidad de controladores), que permite al sistema confiar plenamente en estos controladores e instalarlos incluso sin credenciales administrativas. [](https://www.microsoft.com/whdc/winlogo/drvsign/dqs.mspx)
 
-Como mínimo, los controladores deben estar firmados por Authenticode, ya que los controladores sin firmar o autofirmados (es decir, firmados con un certificado de prueba) no se instalarán en muchas plataformas basadas en Windows. Para obtener más información sobre los controladores de firma y el [código](https://www.microsoft.com/whdc/)y la característica relacionada, vea Driver Signing Requirements for [Windows](https://www.microsoft.com/whdc/winlogo/drvsign/drvsign.mspx) on Windows Hardware Developer Central .
+Como mínimo, los controladores deben estar firmados por Authenticode, ya que los controladores sin firmar o autofirmados (es decir, firmados con un certificado de prueba) no se instalarán en muchas plataformas basadas en Windows. Para obtener más información sobre los controladores de firma y el código y la característica [relacionada,](https://www.microsoft.com/whdc/)vea Driver Signing Requirements for [Windows](https://www.microsoft.com/whdc/winlogo/drvsign/drvsign.mspx) on Windows Hardware Developer Central .
 
 ## <a name="summary"></a>Resumen
 
@@ -189,8 +189,8 @@ El uso de Microsoft Authenticode es un proceso sencillo. Una vez que haya obteni
 Para más información sobre las herramientas y los procesos relacionados con la firma de código, consulte los vínculos siguientes:
 
 -   [Herramientas de criptografía](/windows/desktop/SecCrypto/cryptography-tools)
--   [Referencia de herramientas de API de criptografía](/windows/desktop/SecCrypto/cryptoapi-tools-reference)
--   [Información general sobre Authenticode y Vistastoriales](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537360(v=vs.85))
+-   [Referencia de las herramientas de API de criptografía](/windows/desktop/SecCrypto/cryptoapi-tools-reference)
+-   [Información general sobre Authenticode y Sustorials](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537360(v=vs.85))
 -   [Certificados digitales](/windows/desktop/SecCrypto/digital-certificates)
 -   [Implementación de Authenticode](https://www.microsoft.com/technet/security/topics/cryptographyetc/authenticodets.mspx)
 -   [Cómo: Crear certificados temporales para usarlos durante el desarrollo](/dotnet/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development)

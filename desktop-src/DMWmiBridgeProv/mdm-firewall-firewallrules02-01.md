@@ -1,9 +1,9 @@
 ---
-title: MDM_Firewall_FirewallRules02_01 (clase)
-description: La \_ clase FirewallRules02 01 del firewall de MDM \_ \_ se usa para configurar las opciones del firewall de Windows Defender.
+title: MDM_Firewall_FirewallRules02_01 clase
+description: La clase \_ \_ FirewallRules02 01 del firewall de MDM se usa \_ para configurar la configuración Windows Defender firewall.
 ms.assetid: b09cbd98-152e-486c-acb5-4e1d83e5f8e2
 keywords:
-- MDM_Firewall_FirewallRules02_01 (clase)
+- MDM_Firewall_FirewallRules02_01 clase
 - MDM_Firewall_FirewallRules02_01 clase, descrita
 ms.topic: reference
 ms.date: 05/31/2018
@@ -20,18 +20,18 @@ api_type:
 - DllExport
 api_location:
 - DMWmiBridgeProv.dll
-ms.openlocfilehash: 494be18ece91e7a1776780542f988b80cb822e42
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d6a0f1c4337f64b93ca043e9f7d4d744516b37f9e5b13a471aec56bae4602feb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077239"
 ---
-# <a name="mdm_firewall_firewallrules02_01-class"></a>\_ \_ Clase FirewallRules02 01 del Firewall \_ MDM
+# <a name="mdm_firewall_firewallrules02_01-class"></a>Firewall \_ de \_ MDMRules02 \_ 01 (clase)
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La \_ clase FirewallRules02 01 del firewall de MDM \_ \_ se usa para configurar las opciones del firewall de Windows Defender.
+La clase \_ \_ FirewallRules02 01 del firewall de MDM se usa \_ para configurar la configuración Windows Defender firewall.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -64,13 +64,13 @@ class MDM_Firewall_FirewallRules02_01
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ \_ FirewallRules02 \_ 01 del firewall de MDM** tiene estos tipos de miembros:
+La **clase \_ \_ FirewallRules02 \_ 01 del** firewall de MDM tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ FirewallRules02 \_ 01 del firewall de MDM** tiene estas propiedades.
+La **clase \_ \_ FirewallRules02 \_ 01 del** firewall de MDM tiene estas propiedades.
 
 <dl> <dt>
 
@@ -80,7 +80,7 @@ La **clase \_ \_ FirewallRules02 \_ 01 del firewall de MDM** tiene estas propied
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -91,7 +91,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -102,18 +102,18 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
 
-[Enabled](/windows/client-management/mdm/firewall-csp#enabled)
+[Habilitado](/windows/client-management/mdm/firewall-csp#enabled)
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -124,10 +124,10 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-TBD
+Por determinar
 
 </dd> <dt>
 
@@ -137,10 +137,10 @@ TBD
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-TBD
+Por determinar
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -175,7 +175,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -186,7 +186,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -197,7 +197,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -208,7 +208,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -233,7 +233,7 @@ Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -244,7 +244,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -255,7 +255,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -266,7 +266,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -277,7 +277,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> </dl>
@@ -286,12 +286,12 @@ Tipo de acceso: lectura/escritura
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                     |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                     |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                       |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                              |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                              |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl>  |
 
 

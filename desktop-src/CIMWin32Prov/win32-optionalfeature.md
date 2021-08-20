@@ -20,14 +20,14 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9ee0a8fc631430401328170f15c0dd2653d0ce8b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 72a185dec57b4b285b12ae689b0936bef928494fdc632cac0b176e16f1372cf0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020203"
 ---
-# <a name="win32_optionalfeature-class"></a>\_Clase Win32 OptionalFeature
+# <a name="win32_optionalfeature-class"></a>Clase \_ OptionalFeature de Win32
 
 Representa el estado de las características opcionales que están presentes en el sistema operativo.
 
@@ -69,10 +69,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](../wmisdk/standard-qualifiers.md) (título), [**MaxLen**](../wmisdk/standard-qualifiers.md) (260)
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) (Caption), [**MaxLen**](../wmisdk/standard-qualifiers.md) (260)
 </dt> </dl>
 
-Un nombre para mostrar de la característica opcional.
+Un nombre para mostrar de característica opcional.
 
 </dd> <dt>
 
@@ -85,43 +85,43 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Descripción")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Description")
 </dt> </dl>
 
-Una descripción textual del objeto.
+Descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](../wmisdk/standard-qualifiers.md) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Fecha de instalación")
 </dt> </dl>
 
 Indica cuándo se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identifica el estado de la característica opcional. Los siguientes Estados son posibles:
+Identifica el estado de la característica opcional. Los estados siguientes son posibles:
 
 <dt>
 
@@ -141,7 +141,7 @@ Identifica el estado de la característica opcional. Los siguientes Estados son 
 
 <span id="Absent"></span><span id="absent"></span><span id="ABSENT"></span>
 
-**Ausente** (3)
+**Absent** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -164,7 +164,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](../wmisdk/standard-qualifiers.md) (nombre), [**clave**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (260)
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) (Name), [**key**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (260)
 </dt> </dl>
 
 Representa el nombre de la característica opcional.
@@ -180,14 +180,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**displayName**](../wmisdk/standard-qualifiers.md) ("status")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Cadena que indica el estado actual del objeto. Se puede definir un estado operativo y no operativo. El estado operativo puede ser "correcto", "degradado" y "Pred FAIL". "Pred FAIL" indica que un elemento funciona correctamente, pero está prediciendo un error (por ejemplo, una unidad de disco duro habilitada para SMART).
+Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "error", "iniciando", "deteniendo" y "servicio". "Servicio" puede aplicarse durante el reflejo del disco: Resilvering, recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni en ninguno de los otros Estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son los siguientes:
 
@@ -195,84 +195,84 @@ Los valores son los siguientes:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
@@ -285,10 +285,10 @@ Con **estrés** ("acentuado")
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                    |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                       |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -297,10 +297,10 @@ Con **estrés** ("acentuado")
 
 <dl> <dt>
 
-[**\_LOGICALELEMENT CIM**](cim-logicalelement.md)
+[**Elemento \_ lógico CIM**](cim-logicalelement.md)
 </dt> <dt>
 
-[**ManagedSystemElement de CIM \_**](cim-managedsystemelement.md)
+[**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md)
 </dt> <dt>
 
 [Consultar el estado de las características opcionales](../wmisdk/querying-the-status-of-optional-features.md)

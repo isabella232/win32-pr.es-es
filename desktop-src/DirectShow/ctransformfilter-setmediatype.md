@@ -1,7 +1,7 @@
 ---
-description: Se llama al método SetMediaType cuando el tipo de medio se establece en uno de los PIN del filtro.
+description: Se llama al método SetMediaType cuando el tipo de medio se establece en uno de los pines del filtro.
 ms.assetid: 3e505036-7fa6-42cf-a683-3a39a43d209d
-title: Método CTransformFilter. SetMediaType (Transfrm. h)
+title: Método CTransformFilter.SetMediaType (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 86e9eac76ccc178659935511d75b1676a136a1c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dc9331a532f6748de4e03c6972fdd555e4d5e11516d946bbd131da9acab364c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119584945"
 ---
-# <a name="ctransformfiltersetmediatype-method"></a>CTransformFilter. SetMediaType, método
+# <a name="ctransformfiltersetmediatype-method"></a>Método CTransformFilter.SetMediaType
 
-`SetMediaType`Se llama al método cuando el tipo de medio se establece en uno de los PIN del filtro.
+Se `SetMediaType` llama al método cuando el tipo de medio se establece en uno de los pines del filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,24 +46,24 @@ virtual HRESULT SetMediaType(
 *direction* 
 </dt> <dd>
 
-Miembro del tipo enumerado de [**\_ dirección del PIN**](/windows/win32/api/strmif/ne-strmif-pin_direction) , que especifica un PIN en el filtro (entrada o salida).
+Miembro del tipo [**enumerado \_ DIRECCIÓN**](/windows/win32/api/strmif/ne-strmif-pin_direction) DEL PIN, especificando un pin en el filtro (entrada o salida).
 
 </dd> <dt>
 
-*p.p.* 
+*Pmt* 
 </dt> <dd>
 
-Puntero a un objeto [**CMediaType**](cmediatype.md) que especifica el tipo de medio.
+Puntero a un [**objeto CMediaType**](cmediatype.md) que especifica el tipo de medio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los métodos [**CTransformInputPin:: SetMediaType**](ctransforminputpin-setmediatype.md) y [**CTransformOutputPin:: SetMediaType**](ctransformoutputpin-setmediatype.md) llaman a este método cuando se establece el tipo de medio de un PIN. Este método no hace nada en la clase base, pero la clase derivada puede invalidarlo.
+Los [**métodos CTransformInputPin::SetMediaType**](ctransforminputpin-setmediatype.md) y [**CTransformOutputPin::SetMediaType**](ctransformoutputpin-setmediatype.md) llaman a este método cuando se establece el tipo de medio de un pin. Este método no hace nada en la clase base, pero la clase derivada puede invalidarla.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Los métodos [**CTransformInputPin:: SetMediaType**](ctransforminputpin-setmedia
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Los métodos [**CTransformInputPin:: SetMediaType**](ctransforminputpin-setmedia
 
 <dl> <dt>
 
-[**Clase CTransformFilter**](ctransformfilter.md)
+[**CTransformFilter (clase)**](ctransformfilter.md)
 </dt> </dl>
 
  

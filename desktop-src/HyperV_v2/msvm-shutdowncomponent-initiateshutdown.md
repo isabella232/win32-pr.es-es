@@ -1,5 +1,5 @@
 ---
-description: Inicia una operación de apagado del sistema operativo en la máquina virtual secundaria asociada. Si se devuelve cero (0), el cierre se inició correctamente. Cualquier otro código de retorno indica una condición de error.
+description: Inicia una operación de apagado del sistema operativo en la máquina virtual secundaria asociada. Si se devuelve cero (0), el apagado se inició correctamente. Cualquier otro código de retorno indica una condición de error.
 ms.assetid: 946BBC62-5479-4AE0-8870-D0A07827B902
 title: Método InitiateShutdown de la Msvm_ShutdownComponent (Winreg.h)
 ms.topic: reference
@@ -20,9 +20,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118950404"
 ---
-# <a name="initiateshutdown-method-of-the-msvm_shutdowncomponent-class"></a>Método InitiateShutdown de la clase ShutdownComponent de Msvm \_
+# <a name="initiateshutdown-method-of-the-msvm_shutdowncomponent-class"></a>Método InitiateShutdown de la clase \_ ShutdownComponent de Msvm
 
-Inicia una operación de apagado del sistema operativo en la máquina virtual secundaria asociada. Si se devuelve cero (0), el cierre se inició correctamente. Cualquier otro código de retorno indica una condición de error.
+Inicia una operación de apagado del sistema operativo en la máquina virtual secundaria asociada. Si se devuelve cero (0), el apagado se inició correctamente. Cualquier otro código de retorno indica una condición de error.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -109,7 +109,7 @@ Tipo: **uint32**
 **El sistema no está listo** (32780)
 </dt> <dt>
 
-**La máquina está bloqueada y no se puede apagar sin la opción force** (32781)
+**La máquina está bloqueada y no se puede apagar sin la opción forzar** (32781).
 </dt> <dt>
 
 **Hay un apagado del sistema en curso** (32782)
@@ -123,7 +123,7 @@ El acceso a [**la clase \_ ShutdownComponent de Msvm**](msvm-shutdowncomponent.m
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
@@ -134,11 +134,11 @@ El acceso a [**la clase \_ ShutdownComponent de Msvm**](msvm-shutdowncomponent.m
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**ShutdownComponent de Msvm \_**](msvm-shutdowncomponent.md)
+[**Msvm \_ ShutdownComponent**](msvm-shutdowncomponent.md)
 </dt> </dl>
 
  

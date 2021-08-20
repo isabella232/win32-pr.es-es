@@ -1,12 +1,12 @@
 ---
-title: Método SyncNamingContext de la clase MSAD_ReplNeighbor
+title: Método SyncNamingContext de la MSAD_ReplNeighbor clase
 description: Llama a la función DsReplicaSync que sincroniza un contexto de nomenclatura de destino con uno de sus orígenes.
 ms.assetid: 005053c4-8d9c-42f6-bae6-3ecdedd5ac2b
 ms.tgt_platform: multiple
 keywords:
 - Método SyncNamingContext Active Directory
-- Método SyncNamingContext Active Directory, clase MSAD_ReplNeighbor
-- MSAD_ReplNeighbor de clase Active Directory, método SyncNamingContext
+- Método SyncNamingContext Active Directory , MSAD_ReplNeighbor clase
+- MSAD_ReplNeighbor clase Active Directory , método SyncNamingContext
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 691bd3e943f491ba93d867097ac0167c97be6108
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2b96dd7363b5c2a48a6c25826d8c2752c181bc9125955b6c73d5532eb2665514
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024673"
 ---
-# <a name="syncnamingcontext-method-of-the-msad_replneighbor-class"></a>Método SyncNamingContext de la \_ clase ReplNeighbor de MSAD
+# <a name="syncnamingcontext-method-of-the-msad_replneighbor-class"></a>Método SyncNamingContext de la clase ReplNeighbor de MSAD \_
 
-Llama a la función [**DsReplicaSync**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsreplicasynca) que sincroniza un contexto de nomenclatura de destino con uno de sus orígenes.
+Llama a [**la función DsReplicaSync que**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsreplicasynca) sincroniza un contexto de nomenclatura de destino con uno de sus orígenes.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,97 +43,97 @@ void SyncNamingContext(
 
 <dl> <dt>
 
-*Opciones* \[ de de\]
+*Opciones* \[ En\]
 </dt> <dd>
 
-Datos adicionales que determinan cómo el método procesa la solicitud. Este parámetro puede ser una combinación de los valores siguientes.
+Datos adicionales que determinan cómo procesa el método la solicitud. Este parámetro puede ser una combinación de los valores siguientes.
 
 <dt>
 
 <span id="DS_REPSYNC_ADD_REFERENCE"></span><span id="ds_repsync_add_reference"></span>
 
-<span id="DS_REPSYNC_ADD_REFERENCE"></span><span id="ds_repsync_add_reference"></span>**\_ \_ Agregar referencia de REPSYNC de DS \_**
+<span id="DS_REPSYNC_ADD_REFERENCE"></span><span id="ds_repsync_add_reference"></span>**REFERENCIA DE ADICIÓN \_ DE REPSYNC \_ DE DS \_**
 
 
 </dt> <dd>
 
-Hace que el agente de sistema de directorio de origen (DSA) Compruebe que el DSA local está presente en la lista replicaciones de origen a. Si el DSA local no está presente, se agrega. Esto garantiza que el origen envíe notificaciones de cambios.
+Hace que el agente del sistema de directorios de origen (DSA) compruebe que el DSA local está presente en la lista de replicaciones a de origen. Si el DSA local no está presente, se agrega. Esto garantiza que el origen envía notificaciones de cambio.
 
 </dd> <dt>
 
 <span id="DS_REPSYNC_ALL_SOURCES"></span><span id="ds_repsync_all_sources"></span>
 
-<span id="DS_REPSYNC_ALL_SOURCES"></span><span id="ds_repsync_all_sources"></span>**\_REPSYNC de \_ todos los \_ orígenes de DS**
+<span id="DS_REPSYNC_ALL_SOURCES"></span><span id="ds_repsync_all_sources"></span>**DS \_ REPSYNC \_ ALL \_ SOURCES**
 
 
 </dt> <dd>
 
 Este valor no se admite.
 
-**Windows server 2008 R2, Windows server 2008 y Windows server 2003:** Sincroniza desde todos los orígenes.
+**Windows Server 2008 R2, Windows Server 2008 y Windows Server 2003:** Sincroniza desde todos los orígenes.
 
 </dd> <dt>
 
 <span id="DS_REPSYNC_ASYNCHRONOUS_OPERATION"></span><span id="ds_repsync_asynchronous_operation"></span>
 
-<span id="DS_REPSYNC_ASYNCHRONOUS_OPERATION"></span><span id="ds_repsync_asynchronous_operation"></span>**\_ \_ operación asincrónica REPSYNC de \_ DS**
+<span id="DS_REPSYNC_ASYNCHRONOUS_OPERATION"></span><span id="ds_repsync_asynchronous_operation"></span>**OPERACIÓN ASINCRÓNICA \_ DE REPSYNC \_ DE DS \_**
 
 
 </dt> <dd>
 
 Realiza esta operación de forma asincrónica.
 
-**Windows server 2008 R2, Windows server 2008 y Windows server 2003:** Se requiere cuando se usa **DS \_ REPSYNC \_ todos los \_ orígenes**.
+**Windows Server 2008 R2, Windows Server 2008 y Windows Server 2003:** Obligatorio cuando se **usa DS \_ REPSYNC \_ ALL \_ SOURCES**.
 
 </dd> <dt>
 
 <span id="DS_REPSYNC_FORCE"></span><span id="ds_repsync_force"></span>
 
-<span id="DS_REPSYNC_FORCE"></span><span id="ds_repsync_force"></span>**\_fuerza de REPSYNC de DS \_**
+<span id="DS_REPSYNC_FORCE"></span><span id="ds_repsync_force"></span>**DS \_ REPSYNC \_ FORCE**
 
 
 </dt> <dd>
 
-Sincroniza aunque el vínculo esté deshabilitado actualmente.
+Se sincroniza incluso si el vínculo está deshabilitado actualmente.
 
 </dd> <dt>
 
 <span id="DS_REPSYNC_FULL"></span><span id="ds_repsync_full"></span>
 
-<span id="DS_REPSYNC_FULL"></span><span id="ds_repsync_full"></span>**\_REPSYNC DS \_ completo**
+<span id="DS_REPSYNC_FULL"></span><span id="ds_repsync_full"></span>**DS \_ REPSYNC \_ FULL**
 
 
 </dt> <dd>
 
-Sincroniza a partir del primer número de secuencia de actualización (USN).
+Se sincroniza a partir del primer número de secuencia de actualización (USN).
 
 </dd> <dt>
 
 <span id="DS_REPSYNC_INTERSITE_MESSAGING"></span><span id="ds_repsync_intersite_messaging"></span>
 
-<span id="DS_REPSYNC_INTERSITE_MESSAGING"></span><span id="ds_repsync_intersite_messaging"></span>**\_ \_ mensajería entre sitios de DS REPSYNC \_**
+<span id="DS_REPSYNC_INTERSITE_MESSAGING"></span><span id="ds_repsync_intersite_messaging"></span>**MENSAJERÍA ENTRE SITIOS \_ DE REPSYNC \_ DE DS \_**
 
 
 </dt> <dd>
 
-Sincroniza con ISM.
+Se sincroniza mediante un ISM.
 
 </dd> <dt>
 
 <span id="DS_REPSYNC_NO_DISCARD"></span><span id="ds_repsync_no_discard"></span>
 
-<span id="DS_REPSYNC_NO_DISCARD"></span><span id="ds_repsync_no_discard"></span>**REPSYNC de DS \_ \_ no \_ descartar**
+<span id="DS_REPSYNC_NO_DISCARD"></span><span id="ds_repsync_no_discard"></span>**DS \_ REPSYNC \_ NO \_ DISCARD**
 
 
 </dt> <dd>
 
-No descarta esta solicitud de sincronización, aunque esté pendiente una sincronización similar.
+No descarta esta solicitud de sincronización, incluso si hay una sincronización similar pendiente.
 
 </dd> <dt>
 
 <span id="DS_REPSYNC_PERIODIC"></span><span id="ds_repsync_periodic"></span>
 
-<span id="DS_REPSYNC_PERIODIC"></span><span id="ds_repsync_periodic"></span>**\_REPSYNC DS \_ periódico**
+<span id="DS_REPSYNC_PERIODIC"></span><span id="ds_repsync_periodic"></span>**DS \_ REPSYNC \_ PERIODIC**
 
 
 </dt> <dd>
@@ -144,7 +144,7 @@ Indica que esta operación es una solicitud de sincronización periódica progra
 
 <span id="DS_REPSYNC_URGENT"></span><span id="ds_repsync_urgent"></span>
 
-<span id="DS_REPSYNC_URGENT"></span><span id="ds_repsync_urgent"></span>**REPSYNC de DS \_ \_ urgente**
+<span id="DS_REPSYNC_URGENT"></span><span id="ds_repsync_urgent"></span>**DS \_ REPSYNC \_ URGENT**
 
 
 </dt> <dd>
@@ -155,12 +155,12 @@ Indica que esta operación es una notificación de una actualización marcada co
 
 <span id="DS_REPSYNC_WRITEABLE"></span><span id="ds_repsync_writeable"></span>
 
-<span id="DS_REPSYNC_WRITEABLE"></span><span id="ds_repsync_writeable"></span>**\_REPSYNC DS \_ grabable**
+<span id="DS_REPSYNC_WRITEABLE"></span><span id="ds_repsync_writeable"></span>**DS \_ REPSYNC \_ WRITEABLE**
 
 
 </dt> <dd>
 
-Indica que se puede escribir en esta réplica. Si no se establece esta marca, la réplica es de solo lectura.
+Indica que esta réplica se puede escribir. Si no se establece esta marca, la réplica es de solo lectura.
 
 </dd> </dl> </dd> </dl>
 
@@ -177,7 +177,7 @@ Este método no devuelve ningún valor.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
 | Espacio de nombres<br/>                | \\MicrosoftActiveDirectory raíz<br/>                                               |
-| MOF<br/>                      | <dl> <dt>ReplProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Replprov.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Replprov.dll</dt> </dl> |
 
 

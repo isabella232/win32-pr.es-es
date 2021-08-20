@@ -82,7 +82,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 ## <a name="remarks"></a>Comentarios
 
-La **función glNormalPointer** especifica la ubicación y los datos de una matriz de normales que se usará al representar. El *parámetro type* especifica el tipo de datos de cada coordenada normal. El *parámetro stride* determina el desplazamiento de bytes de una normal a la siguiente, lo que permite el empaquetado de vértices y atributos en una sola matriz o almacenamiento en matrices independientes. En algunas implementaciones, almacenar los vértices y atributos en una sola matriz puede ser más eficaz que usar matrices independientes. vea [**glInterleavedArrays para**](glinterleavedarrays.md) obtener más información.
+La **función glNormalPointer** especifica la ubicación y los datos de una matriz de normales que se usará al representar. El *parámetro type* especifica el tipo de datos de cada coordenada normal. El *parámetro stride* determina el desplazamiento de bytes de uno normal a otro, lo que habilita el empaquetado de vértices y atributos en una sola matriz o almacenamiento en matrices independientes. En algunas implementaciones, almacenar los vértices y atributos en una sola matriz puede ser más eficaz que usar matrices independientes. vea [**glInterleavedArrays para**](glinterleavedarrays.md) obtener más información.
 
 Se habilita una matriz normal cuando se especifica la constante GL \_ NORMAL \_ ARRAY con [**glEnableClientState**](glenableclientstate.md). Cuando se habilita, [**glDrawArrays,**](gldrawarrays.md) [**glDrawElements**](gldrawelements.md) y [**glArrayElement**](glarrayelement.md) usan la matriz normal. De forma predeterminada, la matriz normal está deshabilitada.
 
@@ -108,7 +108,7 @@ Las funciones siguientes están asociadas **a glNormalPointer**:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
@@ -118,7 +118,7 @@ Las funciones siguientes están asociadas **a glNormalPointer**:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

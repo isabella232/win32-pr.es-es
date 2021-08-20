@@ -1,5 +1,5 @@
 ---
-description: 'Método reset de la Msvm_SyntheticDisplayController : solicita un restablecimiento.'
+description: 'Método reset de la Msvm_SyntheticDisplayController clase : solicita un restablecimiento.'
 ms.assetid: 6fa327e8-0296-40f6-9ee6-6e447e31cce3
 title: Método Reset de la Msvm_SyntheticDisplayController clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f52463aa570942e7696aa0c8fea55bbb848fcc99
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 99d54850bb658ec4f3b0cd8a4904d944e6748b8ea5da562764a69bcd73022cb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118949904"
 ---
 # <a name="reset-method-of-the-msvm_syntheticdisplaycontroller-class"></a>Método Reset de la clase \_ Msvm SyntheticDisplayController
 
@@ -53,7 +53,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -63,7 +63,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: Una manera de obtener un identificador de contexto de dispositivo para una impresora es mostrar un cuadro de diálogo de impresión y permitir que el usuario elija una impresora.
+description: Una manera de obtener un identificador de contexto de dispositivo para una impresora es mostrar un cuadro de diálogo de impresión y permitir al usuario elegir una impresora.
 ms.assetid: 73a74186-c916-4ad9-b768-6bc887fd5231
 title: Mostrar un cuadro de diálogo Imprimir
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "119036833"
 ---
 # <a name="displaying-a-print-dialog-box"></a>Mostrar un cuadro de diálogo Imprimir
 
-Una manera de obtener un identificador de contexto de dispositivo para una impresora es mostrar un cuadro de diálogo de impresión y permitir que el usuario elija una impresora. La [función PrintDlg](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) (que muestra el cuadro de diálogo) tiene un parámetro que es la dirección de una [estructura PRINTDLG.](/windows/win32/api/commdlg/ns-commdlg-printdlga?redirectedfrom=MSDN) La estructura PRINTDLG tiene varios miembros, pero puede dejar la mayoría de ellos establecidos en sus valores predeterminados. Los dos miembros que debe establecer son **lStructSize** y **Flags.** Establezca **lStructSize en** el tamaño de una variable PRINTDLG y **establezca Flags en** PD \_ RETURNDC. Al **establecer Marcas en** PC RETURNDC se especifica que desea que la función PrintDlg rellene el campo hDC con un identificador de contexto de dispositivo para la impresora elegida \_ por el usuario. 
+Una manera de obtener un identificador de contexto de dispositivo para una impresora es mostrar un cuadro de diálogo de impresión y permitir al usuario elegir una impresora. La [función PrintDlg](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) (que muestra el cuadro de diálogo) tiene un parámetro que es la dirección de una [estructura PRINTDLG.](/windows/win32/api/commdlg/ns-commdlg-printdlga?redirectedfrom=MSDN) La estructura PRINTDLG tiene varios miembros, pero puede dejar la mayoría de ellos establecidos en sus valores predeterminados. Los dos miembros que debe establecer son **lStructSize** y **Flags.** Establezca **lStructSize en** el tamaño de una variable PRINTDLG y establezca **Flags** en PD \_ RETURNDC. Al **establecer Marcas en** PC RETURNDC se especifica que desea que la función PrintDlg rellene el campo hDC con un identificador de contexto de dispositivo para la impresora elegida \_ por el usuario. 
 
 
 ```

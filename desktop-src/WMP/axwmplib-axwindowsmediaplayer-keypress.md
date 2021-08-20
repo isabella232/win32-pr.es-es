@@ -1,9 +1,9 @@
 ---
 title: Evento KeyPress del objeto AxWindowsMediaPlayer
-description: El evento KeyPress tiene lugar cuando se presiona y se suelta una tecla. | Evento KeyPress del objeto AxWindowsMediaPlayer
+description: El evento KeyPress tiene lugar cuando se presiona y se libera una tecla. | Evento KeyPress del objeto AxWindowsMediaPlayer
 ms.assetid: 73ecd6f9-1b58-4e28-ad1b-2d930a235e1d
 keywords:
-- Evento KeyPress del objeto AxWindowsMediaPlayer de Windows Media Player
+- Evento KeyPress del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4a01e84b8f765d024c753d08211f3bb84e7f011
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 45b8022feacda910b28d68636c1abdcb2f6c1c9d3c2e799f762f25f5060b2b82
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119618795"
 ---
 # <a name="keypress-event-of-the-axwindowsmediaplayer-object"></a>Evento KeyPress del objeto AxWindowsMediaPlayer
 
-El evento KeyPress tiene lugar cuando se presiona y se suelta una tecla.
+El evento KeyPress tiene lugar cuando se presiona y se libera una tecla.
 
 ``` syntax
 [C#]
@@ -47,23 +47,23 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad      | Descripción                                                                        |
 |---------------|------------------------------------------------------------------------------------|
-| **nKeyAscii** | System. Int16Specifies el código ANSI numérico estándar para el carácter.<br/> |
+| **nKeyAscii** | System.Int16 Especifica el código ANSI numérico estándar para el carácter.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este evento se produce cuando el resultado de la pulsación de tecla es cualquier carácter imprimible, la tecla CTRL combinada con un carácter del alfabeto estándar o uno de unos pocos caracteres especiales, y la tecla entrar o retroceso.
+Este evento se produce cuando la pulsación de tecla da como resultado cualquier carácter de teclado imprimible, la tecla CTRL combinada con un carácter del alfabeto estándar o uno de algunos caracteres especiales, y la tecla ENTRAR o RETROCESO.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

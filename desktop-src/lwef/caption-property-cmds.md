@@ -43,9 +43,9 @@ Determina el texto que se muestra para un [**objeto Commands**](/windows/desktop
 
 ## <a name="remarks"></a>Comentarios
 
-Al establecer la propiedad [**Caption**](caption-property.md) de la colección [**Commands,**](/windows/desktop/lwef/the-commands-collection-object) se define cómo aparecerá en el menú emergente del carácter cuando su propiedad [**Visible**](visible-property.md) esté establecida en True y la aplicación no sea el cliente activo de entrada. Para especificar una clave de acceso (mnemotécnica sin línea) para el título **,** incluya un carácter de yerba (&) antes de ese carácter.
+Al establecer la propiedad [**Caption**](caption-property.md) de la colección [**Commands,**](/windows/desktop/lwef/the-commands-collection-object) se define cómo aparecerá en el menú emergente del carácter cuando su propiedad [**Visible**](visible-property.md) esté establecida en True y la aplicación no sea el cliente activo de entrada. Para especificar una clave de acceso (mnemotécnica sin línea) para el título **,** incluya un carácter de yand (&) delante de ese carácter.
 
-Si define comandos para una colección [**commands**](/windows/desktop/lwef/the-commands-collection-object) que tiene un [**título**](caption-property.md), normalmente también se define un **título** para su colección **commands** asociada.
+Si define comandos para una colección [**Commands**](/windows/desktop/lwef/the-commands-collection-object) que tiene un [**título**](caption-property.md), normalmente también se define un título **para** su colección **Commands** asociada.
 
  
 

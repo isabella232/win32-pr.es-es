@@ -3,7 +3,7 @@ title: Elemento DaysInterval (dailyScheduleType)
 description: Especifica el intervalo entre los días de la programación.
 ms.assetid: 495ea1c0-37eb-4b12-8241-bfc6489e33ed
 keywords:
-- Programador de tareas del elemento DaysInterval
+- Elemento DaysInterval Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 97b50581aa4825b31983a234a5eb47ff7b7b7e06
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e35df4f102801f7d52faeb384f9a1113e00abbf034026d19b5b7b6e7b4c90ed7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119621105"
 ---
 # <a name="daysinterval-dailyscheduletype-element"></a>Elemento DaysInterval (dailyScheduleType)
 
@@ -43,7 +43,7 @@ Especifica el intervalo entre los días de la programación.
 </xs:element>
 ```
 
-El elemento se define mediante el tipo complejo de [**dailyScheduleType**](taskschedulerschema-dailyscheduletype-complextype.md) .
+El elemento se define mediante el [**tipo complejo dailyScheduleType.**](taskschedulerschema-dailyscheduletype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -55,15 +55,15 @@ El elemento se define mediante el tipo complejo de [**dailyScheduleType**](tasks
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de scripts, el intervalo de días para un desencadenador diario se especifica mediante la propiedad [**DailyTrigger. DaysInterval**](dailytrigger-daysinterval.md) .
+Para el desarrollo de scripts, la propiedad [**DailyTrigger.DaysInterval**](dailytrigger-daysinterval.md) especifica el intervalo de días de un desencadenador diario.
 
-En el desarrollo de C++, el intervalo de días para un desencadenador diario se especifica mediante la propiedad [**IDailyTrigger::D aysinterval**](/windows/desktop/api/taskschd/nf-taskschd-idailytrigger-get_daysinterval) .
+Para el desarrollo de C++, la propiedad [**IDailyTrigger::D aysInterval**](/windows/desktop/api/taskschd/nf-taskschd-idailytrigger-get_daysinterval) especifica el intervalo de días de un desencadenador diario.
 
 ## <a name="examples"></a>Ejemplos
 
-En el código XML siguiente se define un desencadenador de calendario diario que inicia la tarea cada día.
+El código XML siguiente define un desencadenador de calendario diario que inicia la tarea todos los días.
 
 
 ```XML
@@ -78,16 +78,16 @@ En el código XML siguiente se define un desencadenador de calendario diario que
 
 
 
-Para obtener un ejemplo completo del XML de una tarea que especifica una programación diaria, vea [ejemplo de desencadenador diario (XML)](daily-trigger-example--xml-.md).
+Para obtener un ejemplo completo del XML de una tarea que especifica una programación diaria, vea Ejemplo de desencadenador [diario (XML).](daily-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -95,7 +95,7 @@ Para obtener un ejemplo completo del XML de una tarea que especifica una program
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

@@ -3,7 +3,7 @@ title: Tipo complejo LevelType
 description: Define un valor de gravedad que determina el nivel de detalle de los eventos que se registran.
 ms.assetid: c71aedef-7c43-4343-9d6d-94eb45da49b9
 keywords:
-- Tipo complejo LevelType EventLog
+- EventLog de tipo complejo LevelType
 topic_type:
 - apiref
 api_name:
@@ -68,14 +68,14 @@ Define un valor de gravedad que determina el nivel de detalle de los eventos que
 
 ## <a name="remarks"></a>Comentarios
 
-Estos son los valores de nivel predefinidos que puede usar. Estos valores se definen en el Winmeta.xml que se incluye en Windows SDK.
+Estos son los valores de nivel predefinidos que puede usar. Estos valores se definen en el archivo Winmeta.xml que se incluye en Windows SDK.
 
 
 
 | Nombre              | Valor | Símbolo                    | Descripción                                                             |
 |-------------------|-------|---------------------------|-------------------------------------------------------------------------|
-| win:Critical      | 1     | NIVEL CRÍTICO DE WINEVENT \_ \_ | Identifica un evento anómalo de salida o finalización.<br/>            |
-| win:Error         | 2     | ERROR DE NIVEL DE WINEVENT \_ \_    | Identifica un evento de error grave.<br/>                             |
+| win:Critical      | 1     | NIVEL CRÍTICO DE WINEVENT \_ \_ | Identifica un evento de salida o finalización anómalo.<br/>            |
+| win:Error         | 2     | ERROR DE \_ NIVEL DE WINEVENT \_    | Identifica un evento de error grave.<br/>                             |
 | win:Warning       | 3     | ADVERTENCIA DE \_ NIVEL DE \_ WINEVENT  | Identifica un evento de advertencia, como un error de asignación.<br/>    |
 | win:Informational | 4     | INFORMACIÓN DE NIVEL \_ DE \_ WINEVENT     | Identifica un evento que no es de error, como un evento de entrada o salida.<br/> |
 | win:Verbose       | 5     | NIVEL DE \_ WINEVENT \_ DETALLADO  | Identifica un evento de seguimiento detallado.<br/>                           |

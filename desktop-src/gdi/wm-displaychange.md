@@ -1,5 +1,5 @@
 ---
-description: El mensaje DISPLAYCHANGE de WM \_ se envía a todas las ventanas cuando la resolución de pantalla ha cambiado.
+description: El mensaje DISPLAYCHANGE de WM \_ se envía a todas las ventanas cuando cambia la resolución de pantalla.
 ms.assetid: 5a6111fd-648e-41a9-aaf8-e5d93f5d54cd
 title: WM_DISPLAYCHANGE mensaje (Winuser.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "119037443"
 ---
 # <a name="wm_displaychange-message"></a>Mensaje \_ DISPLAYCHANGE de WM
 
-El **mensaje \_ DISPLAYCHANGE de WM** se envía a todas las ventanas cuando la resolución de pantalla ha cambiado.
+El **mensaje \_ DISPLAYCHANGE de WM** se envía a todas las ventanas cuando cambia la resolución de pantalla.
 
 Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
@@ -36,7 +36,7 @@ LRESULT CALLBACK WindowProc(
 *wParam* 
 </dt> <dd>
 
-Nueva profundidad de imagen de la pantalla, en bits por píxel.
+Nueva profundidad de la imagen de la pantalla, en bits por píxel.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Este mensaje solo se envía a ventanas de nivel superior. Para todas las demás 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

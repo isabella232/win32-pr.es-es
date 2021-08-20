@@ -64,7 +64,7 @@ public int cbVarSegMac { get; set; }
 
 Tipo: [System.Int32](/dotnet/api/system.int32)  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

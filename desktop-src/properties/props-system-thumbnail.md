@@ -1,19 +1,19 @@
 ---
-description: Representa la miniatura en \_ formato CF de VT.
+description: Representa la miniatura en formato VT \_ CF.
 ms.assetid: 9fa0d349-a793-435f-af34-270bdd0ae3ad
-title: System. thumbnail
+title: System.Thumbnail
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: afe68aa360575d81d962ce367959cb98207ba262
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 577ab043b83b9b3f03af7451872cc5e5933e22a2e2cf19c9b4258cd3ffee3445
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033273"
 ---
-# <a name="systemthumbnail"></a>System. thumbnail
+# <a name="systemthumbnail"></a>System.Thumbnail
 
-Representa la miniatura en \_ formato CF de VT.
+Representa la miniatura en formato VT \_ CF.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1
 
@@ -47,9 +47,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -64,7 +64,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -76,7 +76,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -94,7 +94,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

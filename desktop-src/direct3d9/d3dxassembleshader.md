@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 891281ebc3db970ca61132fe49ba98531ca1d879
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b4d3666342cbbd8999d6136e1a780e6cb0ba80970f0cc928f652338d4574f667
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988845"
 ---
 # <a name="d3dxassembleshader-function"></a>Función D3DXAssembleShader
 
@@ -69,7 +69,7 @@ Longitud de los datos del efecto, en bytes.
 
 Tipo: **const [**D3DXMACRO**](d3dxmacro.md) \***
 
-Matriz **terminada en NULL** opcional de estructuras [**D3DXMACRO.**](d3dxmacro.md) Este valor puede ser **NULL.**
+Matriz **opcional terminada** en NULL de estructuras [**D3DXMACRO.**](d3dxmacro.md) Este valor puede ser **NULL.**
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Puntero de interfaz opcional, [**ID3DXInclude**](id3dxinclude.md), que se usará
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -126,7 +126,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

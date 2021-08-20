@@ -49,7 +49,7 @@ El tipo complejo [**SystemPropertiesType**](eventschema-systempropertiestype-com
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

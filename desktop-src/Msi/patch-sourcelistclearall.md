@@ -1,7 +1,7 @@
 ---
 description: El método SourceListClearAll del objeto Patch borra la lista de origen completa de todos los orígenes del tipo especificado para una revisión. Acepta Type como parámetro. Este método llama a MsiSourceListClearAllEx.
 ms.assetid: 9458a3db-8eaa-4067-875f-8fac68bdf1f8
-title: Patch.SourceListClearAll (método)
+title: Método Patch.SourceListClearAll
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118942305"
 ---
-# <a name="patchsourcelistclearall-method"></a>Patch.SourceListClearAll (método)
+# <a name="patchsourcelistclearall-method"></a>Método Patch.SourceListClearAll
 
 El **método SourceListClearAll** del objeto [**Patch**](patch-object.md) borra la lista de origen completa de todos los orígenes del tipo especificado para una revisión. Acepta *Type como* parámetro. Este método llama [**a MsiSourceListClearAllEx.**](/windows/desktop/api/Msi/nf-msi-msisourcelistclearallexa)
 
@@ -54,15 +54,15 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
 | IID<br/>     | IID IPatch se define como \_ 000C10A1-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                            |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

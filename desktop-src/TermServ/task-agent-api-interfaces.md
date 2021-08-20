@@ -1,20 +1,20 @@
 ---
 title: Interfaces de API del agente de tareas de escritorio personal
-description: Personal Desktop Task Agent API admite las siguientes interfaces.
+description: La API del agente de tareas de escritorio personal admite las interfaces siguientes.
 ms.assetid: 5627917D-AC54-40A7-ADAE-F978CF71EB61
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be1d3bba5785e62658b8c5b5644cd8674df47d8b
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: c717ce16fe3fb8d214746c35890f09ecba174650ef62dfeeb2c1a7c6ceae0e16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103784450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000315"
 ---
 # <a name="personal-desktop-task-agent-api-interfaces"></a>Interfaces de API del agente de tareas de escritorio personal
 
-Personal Desktop Task Agent API admite las siguientes interfaces.
+La API del agente de tareas de escritorio personal admite las interfaces siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,20 +23,20 @@ Personal Desktop Task Agent API admite las siguientes interfaces.
 [**IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md)
 </dt> <dd>
 
-El agente de tareas usa la interfaz [**IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md) para comunicarse con el agente desencadenador.
+El agente de tareas usa la interfaz [**IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md) para comunicarse con el agente de desencadenador.
 
 </dd> <dt>
 
 [**IRDVTaskPlugin**](irdvtaskplugin.md)
 </dt> <dd>
 
-La interfaz [**IRDVTaskPlugin**](irdvtaskplugin.md) se implementa mediante un *agente de tareas* de actualización de la máquina virtual para permitir que el agente de tareas Administre las actualizaciones del sistema de una máquina virtual.
+La [**interfaz IRDVTaskPlugin**](irdvtaskplugin.md) se implementa mediante  un agente de tareas de actualización de máquina virtual para permitir que el agente de tareas administre las actualizaciones del sistema de una máquina virtual.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

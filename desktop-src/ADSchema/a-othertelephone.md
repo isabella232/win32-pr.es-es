@@ -1,11 +1,11 @@
 ---
-title: Teléfono-oficina-otro atributo
-description: Una lista de números de teléfono de la oficina alternativos.
+title: Teléfono-Office-Other
+description: Una lista de números de teléfono de oficina alternativos.
 ms.assetid: 4688b9c1-d888-41af-a20e-50a9e82952a6
 ms.tgt_platform: multiple
 keywords:
-- Teléfono-Office-otro atributo esquema de AD
-- otherTelephone esquema de AD de atributos
+- Teléfono-Office-Other attribute AD Schema
+- OtherTelephone attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e60fa680ea0181d38cbe5703464dff81e4e2ab49
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ccd4e297c56fd01cfe2864cc71728f1d1a16cac618e925848854c6cc0a07b1e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648105"
 ---
-# <a name="phone-office-other-attribute"></a>Teléfono-oficina-otro atributo
+# <a name="phone-office-other-attribute"></a>Teléfono-Office-Other
 
-Una lista de números de teléfono de la oficina alternativos.
+Una lista de números de teléfono de oficina alternativos.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------------------------------------------|
-| CN                | Teléfono-oficina-otros                                                              |
-| Nombre para mostrar de LDAP | otherTelephone                                                                  |
-| Tamaño              | \-                                                                              |
-| Actualizar privilegio  | Administrador de dominio o propietario de la cuenta.                                          |
+| CN                | Teléfono-Office-Other                                                              |
+| Ldap-Display-Name | otherTelephone                                                                  |
+| Size              | \-                                                                              |
+| Privilegio actualizar  | Administrador de dominio o propietario de la cuenta.                                          |
 | Frecuencia de actualización  | Cuando se crea el registro de usuarios y cada vez que es necesario cambiar el número de teléfono. |
 | Attribute-Id      | 1.2.840.113556.1.2.18                                                           |
-| System-ID-GUID    | f0f8ffa5-1191-11d0-a060-00aa006c33ed                                            |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                     |
+| System-Id-Guid    | f0f8ffa5-1191-11d0-a060-00aa006c33ed                                            |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                     |
 
 
 
@@ -55,13 +55,13 @@ Una lista de números de teléfono de la oficina alternativos.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x3A1B                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -76,13 +76,13 @@ Una lista de números de teléfono de la oficina alternativos.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x3A1B                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -97,13 +97,13 @@ Una lista de números de teléfono de la oficina alternativos.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x3A1B                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -116,15 +116,15 @@ Una lista de números de teléfono de la oficina alternativos.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x3A1B                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -139,13 +139,13 @@ Una lista de números de teléfono de la oficina alternativos.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x3A1B                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -160,13 +160,13 @@ Una lista de números de teléfono de la oficina alternativos.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x3A1B                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |

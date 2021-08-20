@@ -33,7 +33,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119038793"
 ---
-# <a name="jet_recsizecblongvalueoverhead-property"></a>JET_RECSIZE.cbLongValueOverhead
+# <a name="jet_recsizecblongvalueoverhead-property"></a>JET_RECSIZE.cbLongValueOverhead, propiedad
 
 Obtiene la sobrecarga de los datos de valor largo.
 
@@ -62,7 +62,7 @@ public long cbLongValueOverhead { get; internal set; }
 
 Tipo: [System.Int64](/dotnet/api/system.int64)  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

@@ -1,18 +1,18 @@
 ---
-title: Propiedad PublicMode de IMsRdpClientAdvancedSettings5
-description: Establece o recupera la configuración para el modo público. El modo público impide que el cliente almacene en caché los datos de usuario en el sistema local.
+title: Propiedad IMsRdpClientAdvancedSettings5 PublicMode
+description: Establece o recupera la configuración para el modo público. El modo público impide que el cliente almacena en caché los datos de usuario en el sistema local.
 ms.assetid: dff6121a-b69c-411f-832b-29f9609f4230
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad PublicMode
-- Propiedad PublicMode Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad PublicMode
-- Propiedad PublicMode Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad PublicMode
-- Propiedad PublicMode Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad PublicMode
-- Propiedad PublicMode Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad PublicMode
+- Propiedad PublicMode Servicios de Escritorio remoto
+- Propiedad PublicMode Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad PublicMode
+- Propiedad PublicMode Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad PublicMode
+- Propiedad PublicMode Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad PublicMode
+- Propiedad PublicMode Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad PublicMode
 topic_type:
 - apiref
 api_name:
@@ -34,20 +34,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9173b7685e77984a28d65129c79c9d1a09cf1458
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8f5577c01d50b9f7e82a7430d51631c90db7f83e32c0fd20273c524eecdecb26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001353"
 ---
-# <a name="imsrdpclientadvancedsettings5publicmode-property"></a>IMsRdpClientAdvancedSettings5::P propiedad ublicMode
+# <a name="imsrdpclientadvancedsettings5publicmode-property"></a>IMsRdpClientAdvancedSettings5::P ublicMode
 
-Establece o recupera la configuración para el modo público. El modo público impide que el cliente almacene en caché los datos de usuario en el sistema local.
+Establece o recupera la configuración para el modo público. El modo público impide que el cliente almacena en caché los datos de usuario en el sistema local.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -64,7 +64,7 @@ HRESULT get_PublicMode(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establece la configuración de modo público en **Variant \_ true** o **Variant \_ false**. Si se establece en **Variant \_ true**, se habilita la configuración de modo público.
+Establece el valor de modo público **en VARIANT \_ TRUE** **o VARIANT \_ FALSE.** Si se establece en **VARIANT \_ TRUE**, la configuración del modo público está habilitada.
 
 ## <a name="requirements"></a>Requisitos
 

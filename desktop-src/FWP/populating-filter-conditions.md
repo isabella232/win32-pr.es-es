@@ -1,22 +1,22 @@
 ---
 title: Rellenar condiciones de filtro
-description: En el código de ejemplo siguiente se muestra cómo rellenar las condiciones de filtro utilizadas por una aplicación de servidor para buscar filtros y eventos que lo afecten.
+description: El código de ejemplo siguiente muestra cómo rellenar las condiciones de filtro que usa una aplicación de servidor para buscar filtros y eventos que le afecten.
 ms.assetid: 6c7c8d55-2cd4-45fe-ad6b-e568941d6765
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48f86ef34ce1ce01cffdfed4bb1ac54ff97c1fbe
-ms.sourcegitcommit: 980c959800b3c629cd9886ba640146236c9b979c
+ms.openlocfilehash: 8a5f66f2cb3eaa28036e4861ba42397eb371dd73f8d15452fb172e957809105f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "104149752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068835"
 ---
 # <a name="populating-filter-conditions"></a>Rellenar condiciones de filtro
 
-En el código de ejemplo siguiente se muestra cómo rellenar las condiciones de filtro utilizadas por una aplicación de servidor para buscar filtros y eventos que lo afecten.
+En el código de ejemplo siguiente se muestra cómo rellenar las condiciones de filtro usadas por una aplicación de servidor para buscar filtros y eventos que le afecten.
 
 > [!Note]  
-> Estas condiciones son las mismas que las que admite la API de nivel inferior **IsPortAllowed** .
+> Estas condiciones son las mismas que las admitidas por la API **IsPortAllowed de nivel** inferior.
 
  
 

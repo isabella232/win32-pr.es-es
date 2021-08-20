@@ -1,9 +1,9 @@
 ---
-title: D3DX11_EFFECT_DESC estructura (D3dx11effect. h)
+title: D3DX11_EFFECT_DESC estructura (D3dx11effect.h)
 description: Describe un efecto.
 ms.assetid: 2efde608-26e0-4234-92d8-dc3ef2a29d89
 keywords:
-- D3DX11_EFFECT_DESC estructura de Direct3D 11
+- D3DX11_EFFECT_DESC estructura direct3D 11
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d43b37d13a8b3f076cc3c5967dac9a95ed18a5a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d3f2c3a205a4849aed755bee01302da813cccf77bbf8255036f287d488b76591
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104987229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989995"
 ---
-# <a name="d3dx11_effect_desc-structure"></a>D3DX11 \_ Effect ( \_ estructura de DESC)
+# <a name="d3dx11_effect_desc-structure"></a>D3DX11 \_ EFFECT \_ DESC (estructura)
 
 Describe un efecto.
 
@@ -47,18 +47,18 @@ typedef struct _D3DX11_EFFECT_DESC {
 **ConstantBuffers**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Número de búferes de constantes en este efecto.
+Número de búferes constantes en este efecto.
 
 </dd> <dt>
 
 **GlobalVariables**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -69,7 +69,7 @@ Número de variables globales en este efecto.
 **InterfaceVariables**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -77,21 +77,21 @@ Número de interfaces globales en este efecto.
 
 </dd> <dt>
 
-**Descrita**
+**Técnicas**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Número de técnicas de este efecto.
+Número de técnicas en este efecto.
 
 </dd> <dt>
 
 **Grupos**
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
@@ -99,9 +99,9 @@ Número de grupos en este efecto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-D3DX11 \_ efecto \_ desc se usa con [**ID3DX11Effect:: GetDesc**](id3dx11effect-getdesc.md).
+D3DX11 \_ EFFECT \_ DESC se usa [**con ID3DX11Effect::GetDesc**](id3dx11effect-getdesc.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -109,7 +109,7 @@ D3DX11 \_ efecto \_ desc se usa con [**ID3DX11Effect:: GetDesc**](id3dx11effect-
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx11effect. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx11effect.h</dt> </dl> |
 
 
 
@@ -117,7 +117,7 @@ D3DX11 \_ efecto \_ desc se usa con [**ID3DX11Effect:: GetDesc**](id3dx11effect-
 
 <dl> <dt>
 
-[Effects 11 estructuras](d3d11-graphics-reference-effects11-structures.md)
+[Estructuras de efectos 11](d3d11-graphics-reference-effects11-structures.md)
 </dt> </dl>
 
  

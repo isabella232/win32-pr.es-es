@@ -1,7 +1,7 @@
 ---
 description: Se produce cuando el puntero del mouse mantiene el puntero sobre el control InkPicture.
 ms.assetid: 95a03833-529e-4fca-b8df-ae7edefc8e5e
-title: Evento InkPicture.MouseHover (Ms mouseut.h)
+title: Evento InkPicture.MouseHover (Msplaceut.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 30c0e0e5d363241944e24cea3286445e6bb026d480ca54f098472a0b65ac7c7a
@@ -40,16 +40,16 @@ Este método de evento se define en la **\_ interfaz IInkPictureEvents.** La **\
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

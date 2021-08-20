@@ -1,36 +1,36 @@
 ---
-description: Código de ejemplo que muestra el bloqueo del intervalo de bytes y el desbloqueo mediante las funciones LockFileEx y UnlockFileEx.
+description: Código de ejemplo que muestra el bloqueo y desbloqueo del intervalo de bytes mediante las funciones LockFileEx y UnlockFileEx.
 ms.assetid: 9d54fe11-b1ad-4723-a42a-00bc6dc64072
-title: Bloquear y desbloquear intervalos de bytes en archivos
+title: Bloqueo y desbloqueo de intervalos de bytes en archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7789c56cea100d00168494fac97bdb46e036953c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ccd18fc8a5e2f143cb58717f72abbc135421ee802ff93b651dad0916ed8a953
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951164"
 ---
-# <a name="locking-and-unlocking-byte-ranges-in-files"></a>Bloquear y desbloquear intervalos de bytes en archivos
+# <a name="locking-and-unlocking-byte-ranges-in-files"></a>Bloqueo y desbloqueo de intervalos de bytes en archivos
 
-Aunque el sistema permite que más de una aplicación abra un archivo y escriba en él, las aplicaciones no deben escribir el trabajo de los demás. Una aplicación puede evitar este problema bloqueando temporalmente un intervalo de bytes en un archivo.
+Aunque el sistema permite que más de una aplicación abra un archivo y escriba en él, las aplicaciones no deben escribir sobre el trabajo del otro. Una aplicación puede evitar este problema bloqueando temporalmente un intervalo de bytes en un archivo.
 
-Las funciones [**LockFile**](/windows/desktop/api/FileAPI/nf-fileapi-lockfile) y [**LockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-lockfileex) bloquean un intervalo especificado de bytes en un archivo. El intervalo puede extenderse más allá del final actual del archivo. Al bloquear parte de un archivo, los subprocesos del bloqueo procesan el acceso exclusivo al intervalo de bytes especificado mediante el identificador de archivo especificado. Los intentos de acceso a un intervalo de bytes bloqueado por otro proceso siempre producen un error. Si el proceso de bloqueo intenta tener acceso a un intervalo de bytes bloqueado a través de un segundo identificador de archivo, se produce un error en el intento.
+Las [**funciones LockFile**](/windows/desktop/api/FileAPI/nf-fileapi-lockfile) y [**LockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-lockfileex) bloquean un intervalo especificado de bytes en un archivo. El intervalo puede extenderse más allá del final actual del archivo. Bloquear parte de un archivo proporciona a los subprocesos de los procesos de bloqueo acceso exclusivo al intervalo de bytes especificado mediante el identificador de archivo especificado. Los intentos de acceder a un intervalo de bytes bloqueado por otro proceso siempre producirán un error. Si el proceso de bloqueo intenta acceder a un intervalo de bytes bloqueado a través de un segundo identificador de archivo, se produce un error en el intento.
 
 > [!Note]  
 > Los archivos asignados a memoria no se admiten con bloqueos de intervalo de bytes.
 
  
 
-La función [**LockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-lockfileex) permite a una aplicación especificar uno de dos tipos de bloqueos. Un *bloqueo exclusivo* deniega a todos los demás procesos el acceso de lectura y escritura al intervalo de bytes especificado de un archivo. Un *bloqueo compartido* deniega a todos los procesos el acceso de escritura al intervalo de bytes especificado de un archivo, incluido el proceso que bloquea primero el intervalo de bytes. Se puede usar para crear un intervalo de bytes de solo lectura en un archivo.
+La [**función LockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-lockfileex) permite a una aplicación especificar uno de los dos tipos de bloqueos. Un *bloqueo exclusivo* deniega el acceso de lectura y escritura de todos los demás procesos al intervalo de bytes especificado de un archivo. Un *bloqueo compartido* deniega a todos los procesos el acceso de escritura al intervalo de bytes especificado de un archivo, incluido el proceso que bloquea primero el intervalo de bytes. Se puede usar para crear un intervalo de bytes de solo lectura en un archivo.
 
 Una aplicación desbloquea el intervalo de bytes mediante la función [**UnlockFile**](/windows/desktop/api/FileAPI/nf-fileapi-unlockfile) o [**UnlockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-unlockfileex) y debe desbloquear todas las áreas bloqueadas antes de cerrar un archivo.
 
-Para obtener un ejemplo del uso de [**LockFile**](/windows/desktop/api/FileAPI/nf-fileapi-lockfile), consulte [anexar un archivo a otro archivo](appending-one-file-to-another-file.md).
+Para obtener un ejemplo del uso [**de LockFile**](/windows/desktop/api/FileAPI/nf-fileapi-lockfile), vea [Anexar un archivo a otro archivo](appending-one-file-to-another-file.md).
 
-En los siguientes ejemplos se muestra cómo usar [**LockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-lockfileex). El primer ejemplo es una demostración sencilla para crear un archivo, escribir algunos datos en él y, a continuación, bloquear una sección del centro.
+En los ejemplos siguientes se muestra cómo usar [**LockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-lockfileex). El primer ejemplo es una demostración sencilla para crear un archivo, escribir algunos datos en él y, a continuación, bloquear una sección en el centro.
 
-**Nota:**  Este ejemplo no cambia los datos después de que se bloquee el archivo.
+**Nota**  En este ejemplo no se cambian los datos una vez bloqueado el archivo.
 
 
 ```C++
@@ -167,7 +167,7 @@ int main(int argc, char *argv[])
 
 
 
-El ejemplo siguiente es una demostración avanzada del bloqueo de intervalo de bytes, mediante el uso de varios subprocesos y una base de datos simple que realiza operaciones aleatorias en un único archivo de datos. Para obtener más información, vea los comentarios del código incrustado y la sección siguiente al código de ejemplo.
+El ejemplo siguiente es una demostración avanzada del bloqueo de intervalos de bytes, mediante varios subprocesos y una base de datos simple que realiza operaciones aleatorias en un único archivo de datos. Para obtener más información, vea los comentarios de código incrustado y la sección siguiente al código de ejemplo.
 
 
 ```C++
@@ -1028,25 +1028,25 @@ int __cdecl wmain(int argc, LPCWSTR argv[])
 
 
 
-Este ejemplo es una aplicación de consola de Windows que ejecuta varios accesos simultáneos a un archivo, todos coordinados mediante bloqueos de intervalo de bytes mediante una base de datos simple, formada por varios registros de un tamaño fijo. Tenga en cuenta que la simultaneidad real depende de cuántos núcleos de procesador existan en el sistema host.
+Este ejemplo es una aplicación de consola de Windows que ejecuta varios accesos simultáneos a un archivo, todos coordinados por bloqueos de intervalo de bytes mediante una base de datos simple, compuesta de varios registros de un tamaño fijo. Tenga en cuenta que la verdadera concurrencia depende de cuántos núcleos de procesador existen en el sistema host.
 
-Todos los registros tienen los dos primeros campos en común: un código de tipo y un número de secuencia. El código de tipo es uno de dos códigos: el código "MSTR" hace referencia al tipo de **\_ registro maestro** y el código de "datos" hace referencia a un tipo de **\_ registro de datos** . Solo puede haber un **\_ registro maestro** y cero o más **\_ registros de datos**. En este ejemplo, los datos contenidos en los registros de datos se generan de forma aleatoria. El segundo campo, el número de secuencia, se incrementa cada vez que se modifica un registro.
+Todos los registros tienen los dos primeros campos en común: un código de tipo y un número de secuencia. El código de tipo es uno de dos códigos: el código "Mstr" hace referencia al tipo **MASTER \_ RECORD** y el código "Data" hace referencia a un tipo **DATA \_ RECORD.** Solo puede haber un **registro \_ maestro y** cero o más registros **\_ de** datos. En este ejemplo, los datos contenidos en los registros de datos se generan aleatoriamente. El segundo campo, el número de secuencia, se incrementa cada vez que se modifica un registro.
 
-Cuando se inicia la ejecución, si el archivo de datos todavía no existe, se crea y se inicializa con la función **InitNewFile** . La función **InitNewFile** escribe un registro de tipo Master con un mapa de bits vacío al principio. Si el archivo ya existe, se abre; se supone que tiene un registro maestro válido al principio.
+Cuando comienza la ejecución, si el archivo de datos aún no existe, se crea e inicializa mediante la **función InitNewFile.** La **función InitNewFile** escribe un registro de tipo Master con un mapa de bits vacío al principio. Si el archivo ya existe, se abre; se supone que tiene un registro maestro válido al principio.
 
-Una vez que el archivo se ha creado correctamente o se ha abierto correctamente, se inician varios subprocesos de trabajo y todos ellos ejecutan un bucle en el que una operación y un registro se eligen aleatoriamente y, a continuación, se intenta realizar esa operación en ese registro. Dado que estas operaciones son aleatorias, no todas se realizan correctamente, pero no tienen por qué ser errores. La información de estado adecuada se registra en la consola.
+Una vez que el archivo se ha creado correctamente o se ha abierto correctamente, se inician varios subprocesos de trabajo y todos ellos ejecutan un bucle en el que una operación y un registro se eligen aleatoriamente y, a continuación, se intenta esa operación en ese registro. Dado que estas operaciones son aleatorias, no todas se realizarán correctamente, pero no necesariamente son errores. La información de estado adecuada se registra en la consola.
 
-Las operaciones posibles son las siguientes: creación de un nuevo registro, modificación de un registro existente o eliminación de un registro existente. La operación de creación examina el mapa de bits para buscar el primer registro libre y asigna ese registro como el nuevo registro. La operación de modificación lee el mapa de bits para ver si ese registro existe realmente y, en caso afirmativo, modifica dicho registro. La operación de eliminación borra el bit en el mapa de bits correspondiente al registro, liberando el espacio que se registra para la futura asignación. Además, estas operaciones se dividen en dos partes: el acceso a MasterRecord, donde se almacenan los metadatos y el acceso al propio registro de datos.
+Las operaciones posibles son las siguientes: creación de un nuevo registro, modificación de un registro existente o eliminación de un registro existente. La operación de creación examina el mapa de bits para buscar el primer registro libre y asigna ese registro como nuevo registro. La operación de modificación lee el mapa de bits para ver si ese registro existe realmente y, si es así, modifica ese registro. La operación de eliminación borra el bit del mapa de bits correspondiente al registro, liberando el espacio ocupado por el registro para la asignación futura. Además, estas operaciones se dividen en dos partes: el acceso a MasterRecord, donde se almacenan los metadatos y el acceso al propio registro de datos.
 
-Dado que escriben datos en los registros de datos, las operaciones de creación de registros y de modificación de registros son las únicas que requieren el acceso a los registros de datos. Por ese motivo, la región incluida en el registro se bloquea exclusivamente antes de la operación que se realiza. Las operaciones de creación y eliminación modifican el mapa de bits, por lo que necesitan bloquear el registro maestro exclusivamente. Sin embargo, las operaciones de modificación de registros solo necesitan leer el mapa de bits, no escribir en él, con el fin de comprobar si existe el archivo. Para esa operación, el registro maestro solo necesita un bloqueo de intervalo de bytes compartido.
+Dado que escriben datos en los registros de datos, las operaciones de creación y modificación de registros son las únicas que requieren acceso a los registros de datos. Por ese motivo, la región cubierta por el registro se bloquea exclusivamente antes de que se realice la operación. Las operaciones de creación y eliminación modifican el mapa de bits, por lo que deben bloquear el registro maestro exclusivamente. Sin embargo, las operaciones de modificación de registros solo necesitan leer el mapa de bits, no escribir en él, para comprobar si el archivo existe. Para esa operación, el registro maestro solo necesita un bloqueo de intervalo de bytes compartido.
 
-Los bloqueos de intervalo de bytes exclusivos impiden el acceso de lectura y escritura desde todos los demás identificadores al archivo, y ese es el motivo por el que se usan al escribir en un registro. Por otro lado, un bloqueo de intervalo de bytes compartido impide el acceso de escritura desde todos los identificadores, incluido el identificador propietario del bloqueo, pero permite el acceso de lectura de todos ellos.
+Los bloqueos de intervalo de bytes exclusivos impiden el acceso de lectura y escritura de todos los demás identificadores al archivo, y ese es el motivo por el que se usan al escribir en un registro. Por otro lado, un bloqueo de intervalo de bytes compartido impide el acceso de escritura de todos los identificadores, incluido el controlador que posee el bloqueo, pero permite el acceso de lectura desde todos ellos.
 
-Para mostrar el uso de bloqueos de intervalo de bytes con el archivo, todas las e/s de este ejemplo, distintas de la inicialización de nuevos archivos, se realizan a través de un identificador de archivo asincrónico. Esto se puede observar en la función **IoRecord** en los casos **IoLock** y **IoUnlock** dentro de la instrucción switch. Las funciones [**LockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-lockfileex) y [**UnlockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-unlockfileex) se usan con el modelo de e/s superpuesta pasando una estructura [**superpuesta**](/windows/desktop/api/MinWinBase/ns-minwinbase-overlapped_entry) a ellas con el desplazamiento para el inicio del intervalo bloqueado y un evento que se señalizará después de que se conceda el bloqueo de ese intervalo, a menos que la función se devuelva inmediatamente.
+Para demostrar el uso de bloqueos de intervalo de bytes con el archivo, todas las E/S de este ejemplo, aparte de la inicialización de nuevos archivos, se realizan a través de un identificador de archivo asincrónico. Esto se puede ver en la **función IoRecord** en los casos **IoLock** e **IoUnlock** dentro de la instrucción switch. Las funciones [**LockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-lockfileex) y [**UnlockFileEx**](/windows/desktop/api/FileAPI/nf-fileapi-unlockfileex) se usan con el modelo de E/S superpuesta al pasarles una estructura [**OVERLAPPED**](/windows/desktop/api/MinWinBase/ns-minwinbase-overlapped_entry) con el desplazamiento para el inicio del intervalo bloqueado y un evento que se señalará después de conceder el bloqueo sobre ese intervalo a menos que la función se devuelva inmediatamente.
 
-Después de emitir la solicitud de e/s asincrónica, la siguiente operación en la función **IoRecord** es esperar la operación en línea. Este suele ser un escenario poco óptimo cuando se desea un rendimiento máximo y se usa aquí por motivos de simplicidad. En las aplicaciones de producción, se prefiere el uso de [puertos de finalización de e/s](i-o-completion-ports.md) o mecanismos similares, ya que libera los subprocesos para realizar otro procesamiento mientras se completa la e/s.
+Después de emitir la solicitud asincrónica de E/S, la siguiente operación de la función **IoRecord** es esperar a que la operación esté en línea. Suele ser un escenario poco óptimo cuando se desea obtener el máximo rendimiento y se usa aquí por motivos de simplicidad. En las aplicaciones de producción, se prefiere el uso de puertos de finalización de [E/S](i-o-completion-ports.md) o mecanismos similares porque libera subprocesos para realizar otro procesamiento mientras se completa la E/S.
 
-El ejemplo finaliza después de ejecutar operaciones aleatorias **NUM \_ FILEOPS** . Cada subproceso registrará su estado de finalización como una condición de error o una terminación normal. Tenga en cuenta que no todos los subprocesos finalizarán al mismo tiempo, en función del número de núcleos de procesador que tenga el sistema host y de la velocidad del subsistema de e/s.
+El ejemplo finaliza después de ejecutar operaciones **\_ aleatorias de FILEOPS NUM.** Cada subproceso registrará su estado de finalización como una condición de error o una terminación normal. Tenga en cuenta que no todos los subprocesos terminarán al mismo tiempo, en función de cuántos núcleos de procesador tenga el sistema host y la velocidad del subsistema de E/S.
 
  
 

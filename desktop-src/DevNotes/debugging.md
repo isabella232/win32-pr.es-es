@@ -4,18 +4,18 @@ ms.assetid: 13C9C38D-2475-4E46-BE03-BE109C0802FB
 title: Depuración (notas del desarrollador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f085a4e0f347f78c2917ffb6a47b1c45282075f5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c8d0bd0d6d4ddcfd348d28807517dfe3f7a6fbbd34b649e421ef6e5888be6c41
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654205"
 ---
 # <a name="debugging-developer-notes"></a>Depuración (notas del desarrollador)
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [Depuración de máquina DOS virtual](virtual-dos-machine-debug.md)
+-   [Depuración de máquina virtual de DOS](virtual-dos-machine-debug.md)
 -   [**SymbolServer**](/previous-versions//ff797950(v=vs.85))
 -   [*SymbolServerCallback*](/windows/desktop/api/DbgHelp/nc-dbghelp-psymbolservercallbackproc)
 -   [**SymbolServerClose**](/previous-versions//ff797952(v=vs.85))

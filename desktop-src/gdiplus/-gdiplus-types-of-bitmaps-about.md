@@ -57,7 +57,7 @@ BMP es un formato estándar que Windows para almacenar imágenes independientes 
 
 **Formato de intercambio de gráficos (GIF)**
 
-GIF es un formato común para las imágenes que aparecen en las páginas web. Los GIF funcionan bien para dibujos de línea, imágenes con bloques de color sólido e imágenes con límites nítidos entre colores. Los GIF se comprimen, pero no se pierde información en el proceso de compresión. una imagen descomprimida es exactamente la misma que la original. Un color de un GIF se puede designar como transparente, de modo que la imagen tenga el color de fondo de cualquier página web que la muestre. Una secuencia de imágenes GIF se puede almacenar en un solo archivo para formar un GIF animado. Los GIF almacenan como máximo 8 bits por píxel, por lo que están limitados a 256 colores.
+GIF es un formato común para las imágenes que aparecen en las páginas web. Los GIF funcionan bien para dibujos de línea, imágenes con bloques de color sólido e imágenes con límites nítidos entre colores. Los GIF se comprimen, pero no se pierde información en el proceso de compresión. una imagen descomprimida es exactamente la misma que la original. Un color de un GIF se puede designar como transparente, de modo que la imagen tendrá el color de fondo de cualquier página web que la muestre. Una secuencia de imágenes GIF se puede almacenar en un solo archivo para formar un GIF animado. Los GIF almacenan como máximo 8 bits por píxel, por lo que están limitados a 256 colores.
 
 **Formato JPEG (Joint Photographic Experts Group)**
 

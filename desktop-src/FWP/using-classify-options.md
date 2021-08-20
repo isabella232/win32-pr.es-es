@@ -1,19 +1,19 @@
 ---
 title: Usar opciones de clasificación
-description: Los ejemplos de código siguientes muestran cómo usar las opciones de clasificación de filtro para modificar el proceso de filtrado.
+description: Los ejemplos de código siguientes muestran cómo usar las opciones de clasificación de filtros para modificar el proceso de filtrado.
 ms.assetid: 02d57ea2-066b-4cb9-81f1-2ff9ee55f22f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b08363e26443f8d407be14d0db207e37412b1298
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bfbbe99bd155832534f9f1d7d27372dd49e13f6e6154fbc36739657477163193
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105685522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119535375"
 ---
 # <a name="using-classify-options"></a>Usar opciones de clasificación
 
-Los ejemplos de código siguientes muestran cómo usar las opciones de clasificación de filtro para modificar el proceso de filtrado.
+En los ejemplos de código siguientes se muestra cómo usar las opciones de clasificación de filtros para modificar el proceso de filtrado.
 
 ## <a name="enable-loose-source-mapping-for-a-remote-udp-port"></a>Habilitar la asignación de origen flexible para un puerto UDP remoto
 
@@ -156,7 +156,7 @@ CLEANUP:
 
 
 
-## <a name="modify-the-idle-lifetimes-for-ale-flows"></a>Modificar la duración de inactividad de los flujos ALE
+## <a name="modify-the-idle-lifetimes-for-ale-flows"></a>Modificar las duraciones de inactividad de los flujos de ALE
 
 
 ```C++
@@ -301,12 +301,12 @@ DWORD wmain(int argc,
 
 <dl> <dt>
 
-[**Condiciones de filtrado disponibles en cada nivel de filtrado**](filtering-conditions-available-at-each-filtering-layer.md)
+[**Condiciones de filtrado disponibles en cada capa de filtrado**](filtering-conditions-available-at-each-filtering-layer.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: El método SetPowerState de la \_ clase CIM MediaAccessDevice establece el estado de energía deseado para un dispositivo lógico y el momento en que se debe colocar un dispositivo en ese estado.
+description: El método SetPowerState de la clase MediaAccessDevice de CIM establece el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo \_ en ese estado.
 ms.assetid: 298938c5-fa66-456c-892c-9dd348aa9739
 ms.tgt_platform: multiple
-title: Método SetPowerState de la clase CIM_MediaAccessDevice
+title: Método SetPowerState de la CIM_MediaAccessDevice clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,19 +14,19 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 969badb07f53c2e54b654e2085a74f42b3a3112e
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 3b32faecd35466a08d2fa18a927c0c292be7ef8f3c76659824e015d1adbb3b80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105660009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119578295"
 ---
-# <a name="setpowerstate-method-of-the-cim_mediaaccessdevice-class"></a>Método SetPowerState de la \_ clase CIM MediaAccessDevice
+# <a name="setpowerstate-method-of-the-cim_mediaaccessdevice-class"></a>Método SetPowerState de la clase \_ MediaAccessDevice de CIM
 
-El método **SetPowerState** de la \_ clase CIM MediaAccessDevice establece el estado de energía deseado para un dispositivo lógico y el momento en que se debe colocar un dispositivo en ese estado. En una subclase, el conjunto de códigos de retorno posibles se debe especificar mediante un calificador **ValueMap** en el método. Las cadenas a las que se traduce el contenido **ValueMap** también se deben especificar en la subclase como calificador de matriz **Values** . Este método se hereda del [**\_ LogicalDevice de CIM**](cim-logicaldevice.md).
+El **método SetPowerState** de la clase MediaAccessDevice de CIM establece el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo \_ en ese estado. En una subclase, el conjunto de códigos de retorno posibles debe especificarse mediante un **calificador ValueMap** en el método . Las cadenas a las que se traduce el contenido de **ValueMap** también se deben especificar en la subclase como calificador de **matriz Values.** Este método se hereda de [**\_ CIM LogicalDevice.**](cim-logicaldevice.md)
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -46,10 +46,10 @@ uint32 SetPowerState(
 
 <dl> <dt>
 
-*PowerState* \[ de\]
+*PowerState* \[ En\]
 </dt> <dd>
 
-Un valor **ValueMap** que especifica el estado de energía deseado para este dispositivo lógico.
+Valor **valueMap** que especifica el estado de energía deseado para este dispositivo lógico.
 
 <dt>
 
@@ -63,7 +63,7 @@ Potencia completa.
 2
 </dt> <dd>
 
-Ahorro de energía: modo de baja energía.
+Ahorro de energía en modo de bajo consumo.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Ahorro de energía en espera.
 4
 </dt> <dd>
 
-Ahorro de energía: otros.
+Otro ahorro de energía.
 
 </dd> <dt>
 
@@ -91,37 +91,37 @@ Ciclo de energía.
 6
 </dt> <dd>
 
-Desconectar.
+Apagar.
 
 </dd> </dl> </dd> <dt>
 
-*Hora* \[ de de\]
+*Hora* \[ En\]
 </dt> <dd>
 
-Especifica cuándo se debe establecer el estado de energía, ya sea como un valor de fecha y hora normal o como un valor de intervalo (donde el intervalo comienza cuando se recibe la invocación del método). Cuando el parámetro *PowerState* es igual a 5 ("ciclo de energía"), el parámetro *Time* indica cuándo debe encenderse el dispositivo de nuevo. El apagado es inmediato.
+Especifica cuándo se debe establecer el estado de energía, ya sea como un valor de fecha y hora normal o como un valor de intervalo (donde el intervalo comienza cuando se recibe la invocación del método). Cuando el *parámetro PowerState* es igual a 5 ("Ciclo de energía"), el parámetro *Time* indica cuándo se debe volver a encender el dispositivo. El apagado es inmediato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 (cero) si es correcto, 1 (uno) si no se admite la solicitud *PowerState* y *Time* especificada y otro valor si se produjo algún otro error.
+Devuelve 0 (cero) si se realiza correctamente, 1 (uno) si no se admite la solicitud *PowerState* y *Time* especificadas y otro valor si se produjo cualquier otro error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no está implementado actualmente por WMI. Para usar este método, debe implementarlo en su propio proveedor.
+Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -130,10 +130,10 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[\_MEDIAACCESSDEVICE CIM](setpowerstate-method-in-class-cim-mediaaccessdevice.md)
+[CIM \_ MediaAccessDevice](setpowerstate-method-in-class-cim-mediaaccessdevice.md)
 </dt> <dt>
 
-[**\_MEDIAACCESSDEVICE CIM**](cim-mediaaccessdevice.md)
+[**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md)
 </dt> </dl>
 
  

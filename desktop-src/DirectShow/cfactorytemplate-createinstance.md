@@ -1,7 +1,7 @@
 ---
-description: El método CreateInstance llama a la función de creación de objetos para la clase.
+description: El método CreateInstance llama a la función de creación de objetos para la clase .
 ms.assetid: 8a7d5c56-867d-432d-a0c2-97b8e3cf8a69
-title: Método CFactoryTemplate. CreateInstance (ComBase. h)
+title: Método CFactoryTemplate.CreateInstance (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0f67ba528943bc2a468419fc84db44359745d4a7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 816d690a7e57df83b3f521f4591c3334269d0fccebbaeac480e7aacb46253273
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074219"
 ---
-# <a name="cfactorytemplatecreateinstance-method"></a>CFactoryTemplate. CreateInstance (método)
+# <a name="cfactorytemplatecreateinstance-method"></a>Método CFactoryTemplate.CreateInstance
 
-El `CreateInstance` método llama a la función de creación de objetos para la clase.
+El `CreateInstance` método llama a la función de creación de objetos para la clase .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,17 +43,17 @@ CUnknown* CreateInstance(
 
 <dl> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntero a la interfaz **IUnknown** de agregación.
+Puntero a la interfaz **IUnknown de agregación.**
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Puntero a una variable que recibe un valor **HRESULT** que indica si el método se ha ejecutado correctamente o no.
+Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o error del método.
 
 </dd> </dl>
 
@@ -61,9 +61,9 @@ Puntero a una variable que recibe un valor **HRESULT** que indica si el método 
 
 Devuelve una instancia del objeto de clase.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método **IClassFactory:: CreateInstance** llama a este método de clase. Este método llama a la función a la que apunta la variable miembro [**CFactoryTemplate:: m \_ lpfnNew**](cfactorytemplate-m-lpfnnew.md) .
+El **método IClassFactory::CreateInstance** llama a este método de clase. Este método llama a la función a la que apunta la variable miembro [**CFactoryTemplate::m \_ lpfnNew.**](cfactorytemplate-m-lpfnnew.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ El método **IClassFactory:: CreateInstance** llama a este método de clase. Est
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>ComBase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Combase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ El método **IClassFactory:: CreateInstance** llama a este método de clase. Est
 
 <dl> <dt>
 
-[**Clase CFactoryTemplate**](cfactorytemplate.md)
+[**CFactoryTemplate (clase)**](cfactorytemplate.md)
 </dt> </dl>
 
  

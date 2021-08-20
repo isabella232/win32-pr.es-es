@@ -15,7 +15,7 @@ ms.locfileid: "118951503"
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-Una transición pasa de la entrada A a la entrada B y de la hora t₀ a t₁. Por lo tanto, *la dirección* de una transición puede significar una de estas dos cosas:
+Una transición va de la entrada A a la entrada B y de la hora t₀ a t₁. Por lo tanto, *la dirección* de una transición puede significar una de estas dos cosas:
 
 -   Asignación de capas de escala de tiempo a entradas.
 -   Progresión a lo largo del tiempo.

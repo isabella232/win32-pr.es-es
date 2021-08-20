@@ -17,7 +17,7 @@ La acción ValidateProductID establece la [**propiedad ProductID**](productid.md
 
 ## <a name="sequence-restrictions"></a>Restricciones de secuencia
 
-Esta acción debe secuenciarse antes que el Asistente para la interfaz de usuario en la tabla [InstallUISequence](installuisequence-table.md) y antes de la acción [RegisterUser](registeruser-action.md) en [la tabla InstallExecuteSequence](installexecutesequence-table.md).
+Esta acción debe secuenciarse antes que el Asistente para la interfaz de usuario en la tabla [InstallUISequence](installuisequence-table.md) y antes de la acción [RegisterUser](registeruser-action.md) en la [tabla InstallExecuteSequence](installexecutesequence-table.md).
 
 ## <a name="actiondata-messages"></a>Mensajes ActionData
 
@@ -29,7 +29,7 @@ El instalador comprueba si un producto se ha validado correctamente comprobando 
 
 La acción ValidateProductID siempre devuelve un resultado correcto, independientemente de si el identificador del producto es válido o no, para que el identificador del producto se pueda especificar en la línea de comandos la primera vez que se ejecute el producto.
 
-El identificador del producto se puede validar sin que el usuario vuelva a escribir esta información estableciendo la [**propiedad PIDKEY**](pidkey.md) en la línea de comandos o mediante una transformación. La presentación del cuadro de diálogo en el que se solicita al usuario que escriba el identificador del producto se puede hacer condicional después de la presencia de la propiedad [**ProductID,**](productid.md) que se establece cuando se valida la **propiedad PIDKEY.**
+El identificador del producto se puede validar sin que el usuario vuelva a escribir esta información estableciendo la [**propiedad PIDKEY**](pidkey.md) en la línea de comandos o mediante una transformación. La presentación del cuadro de diálogo en el que se solicita al usuario que escriba el identificador del producto se puede hacer condicional en función de la presencia de la propiedad [**ProductID,**](productid.md) que se establece cuando se valida la **propiedad PIDKEY.**
 
  
 

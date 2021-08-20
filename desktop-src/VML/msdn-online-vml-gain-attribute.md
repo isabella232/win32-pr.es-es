@@ -20,7 +20,7 @@ En este tema se describe VML, una característica que está en desuso a partir W
 
  
 
-Define la intensidad de todos los colores de una imagen. Lectura/escritura **Numbernumber .**
+Define la intensidad de todos los colores de una imagen. Lectura/escritura **NumberNumber**.
 
 **Se aplica a**
 
@@ -38,7 +38,7 @@ Define la intensidad de todos los colores de una imagen. Lectura/escritura **Num
 
 **Comentarios:**
 
-Este atributo define lo brillante que es el color blanco, lo que afecta a todos los demás colores. Los valores van de 0 a infinito. El valor predeterminado es 1,0. Un valor de 0 no muestra ninguna imagen. Los valores mayores que 1 a claro la imagen y los valores inferiores a 1 hacen que la imagen parezca más gris.
+Este atributo define lo brillante que es el color blanco, lo que afecta a todos los demás colores. Los valores oscilan entre 0 y infinito. El valor predeterminado es 1,0. Un valor de 0 no muestra ninguna imagen. Los valores mayores que 1 a claro la imagen y los valores menores que 1 hacen que la imagen parezca más gris.
 
 Este atributo se puede usar para crear efectos interesantes.
 

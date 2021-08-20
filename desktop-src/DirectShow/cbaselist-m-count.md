@@ -1,7 +1,7 @@
 ---
 description: Número de elementos de la lista.
 ms.assetid: 61ef047d-c7c7-4ec3-8853-7e2e6311fa36
-title: 'Miembro CBaseList:: m_Count (Wxlist. h)'
+title: CBaseList::m_Count miembro (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 346ab62e868bbe4574903a5974bc64b9b4a63007
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 54129fd4bb42f0388a875032b83933ffa59ba9ec0fc741952248c87259f20acf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652515"
 ---
-# <a name="cbaselistm_count-member"></a>CBaseList:: m \_ Count (miembro)
+# <a name="cbaselistm_count-member"></a>Miembro CBaseList::m \_ Count
 
 Número de elementos de la lista.
 
@@ -42,8 +42,8 @@ long m_Count;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ long m_Count;
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

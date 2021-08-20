@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de PnP. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos PnP. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 01e9a8bb-3f54-4e20-b4db-1b4bba745d4f
-title: SystemConfig_PnP (clase)
+title: SystemConfig_PnP clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,18 +18,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2bd4cdbbec5c61f453a0ef6fae3fef0bd494edac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 082d9169bbd2ad30af6b2bc17600804f43ce7bbef5e52f15f7ac4c85b21f7b8f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582205"
 ---
-# <a name="systemconfig_pnp-class"></a>SystemConfig ( \_ clase PNP)
+# <a name="systemconfig_pnp-class"></a>Clase SystemConfig \_ PnP
 
-Esta clase es la clase de tipo de evento para los eventos de PnP.
+Esta clase es la clase de tipo de evento para los eventos PnP.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,26 +48,26 @@ class SystemConfig_PnP : SystemConfig
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ PNP SystemConfig** tiene estos tipos de miembros:
+La **clase SystemConfig \_ PnP** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ PNP SystemConfig** tiene estas propiedades.
+La **clase SystemConfig \_ PnP** tiene estas propiedades.
 
 <dl> <dt>
 
 **DescriptionLength**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2)
+Calificadores: WmiDataId(2)
 </dt> </dl>
 
 Longitud, en caracteres, de la cadena DeviceDescription.
@@ -83,14 +83,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5), StringTermination ("NullTerminated"), Format ("w")
+Calificadores: WmiDataId(5), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Descripción del dispositivo PnP.
 
 </dd> <dt>
 
-**ID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -99,7 +99,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4), StringTermination ("NullTerminated"), Format ("w")
+Calificadores: WmiDataId(4), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Identifica el dispositivo PnP.
@@ -115,23 +115,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (6), StringTermination ("NullTerminated"), Format ("w")
+Calificadores: WmiDataId(6), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
-Nombre del dispositivo PnP que se va a usar en una interfaz de usuario.
+Nombre del dispositivo PnP que se usará en una interfaz de usuario.
 
 </dd> <dt>
 
 **FriendlyNameLength**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3)
+Calificadores: WmiDataId(3)
 </dt> </dl>
 
 Longitud, en caracteres, de la cadena FriendlyName.
@@ -141,16 +141,16 @@ Longitud, en caracteres, de la cadena FriendlyName.
 **IDLength**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1)
+Calificadores: WmiDataId(1)
 </dt> </dl>
 
-Longitud, en caracteres, de la cadena de DeviceID.
+Longitud, en caracteres, de la cadena DeviceID.
 
 </dd> </dl>
 
@@ -158,10 +158,10 @@ Longitud, en caracteres, de la cadena de DeviceID.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

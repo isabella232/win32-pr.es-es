@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: e13cb3969fe09639bab7f9e39c46030d6ccd3576
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 615f74cabf3a93280e48849fbf561c281a43a03fad19bcb0555d5830d82391e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070175"
 ---
-# <a name="image_v0-class"></a>Image \_ V0 (clase)
+# <a name="image_v0-class"></a>Clase Image \_ V0
 
 Esta clase es la clase primaria para los eventos de carga de imágenes.
 
@@ -49,7 +49,7 @@ La **clase Image \_ V0** no define ningún miembro.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

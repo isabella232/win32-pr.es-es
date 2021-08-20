@@ -4,56 +4,56 @@ ms.assetid: E18E8D79-3985-40B8-A4C5-A73A21E5C527
 title: Clonación de bloques
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b33aa1c1eee693b6ed4b502aedc6da6176ece3e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7d94afdb9b630f501de4baee0b690715f42d057a157f31b142c231e0a03f9f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582670"
 ---
 # <a name="block-cloning"></a>Clonación de bloques
 
-Una operación de *clonación de bloques* indica al sistema de archivos que copie un intervalo de bytes de archivo en nombre de una aplicación. El archivo de destino puede ser el mismo que el archivo de origen, o distinto de él.
+Una *operación de clonación* de bloques indica al sistema de archivos que copie un intervalo de bytes de archivo en nombre de una aplicación. El archivo de destino puede ser igual o diferente del archivo de origen.
 
-Un sistema de archivos administra las asignaciones de [clústeres y extensiones](clusters-and-extents.md), y puede ser capaz de realizar la copia modificando el número de clúster virtual (VCN) en las asignaciones de número de clúster lógico (LCN) como una operación de metadatos de bajo costo, en lugar de leer y escribir los datos de archivo subyacentes. Esto permite que la copia se complete más rápido y genera menos e/s en el almacenamiento subyacente. Además, es posible que varios archivos compartan ahora clústeres lógicos después del clon de bloque, lo que ahorra capacidad al no almacenar clústeres idénticos varias veces en el disco.
+Un sistema de archivos administra [](clusters-and-extents.md)las asignaciones de clústeres y extensiones y puede realizar la copia modificando el número de clúster virtual (VCN) a las asignaciones de número de clúster lógico (LCN) como una operación de metadatos de bajo costo, en lugar de leer y escribir los datos de archivo subyacentes. Esto permite que la copia se complete más rápido y genera menos E/S en el almacenamiento subyacente. Además, ahora varios archivos pueden compartir clústeres lógicos después del clon de bloque, lo que ahorra capacidad al no almacenar clústeres idénticos varias veces en el disco.
 
-Una operación de clonación de bloques no interrumpe el aislamiento proporcionado entre los archivos. Una vez que se completa un clon de bloque, las operaciones de escritura en el archivo de código fuente no aparecen en el destino, o viceversa.
+Una operación de clonación de bloques no interrumpirá el aislamiento proporcionado entre los archivos. Una vez completado un clon de bloque, las escrituras en el archivo de origen no aparecen en el destino o viceversa.
 
-La clonación de bloques solo está disponible en el tipo de [sistema de archivos ReFS](/windows/desktop/w8cookbook/resilient-file-system--refs-) a partir de Windows Server 2016.
+La clonación de bloques solo está disponible en el [tipo de sistema de archivos ReFS](/windows/desktop/w8cookbook/resilient-file-system--refs-) a partir de Windows Server 2016.
 
 ## <a name="block-cloning-on-refs"></a>Bloquear la clonación en ReFS
 
-ReFS en Windows Server 2016 implementa la clonación de bloques mediante la reasignación de los clústeres lógicos (es decir, las ubicaciones físicas en un volumen) de la región de origen a la región de destino. A continuación, usa un mecanismo de asignación de escritura para garantizar el aislamiento entre esas regiones. Las regiones de origen y de destino pueden estar en el mismo archivo o en archivos distintos.
+ReFS en Windows Server 2016 implementa la clonación de bloques mediante la remapping de clústeres lógicos (es decir, ubicaciones físicas en un volumen) de la región de origen a la región de destino. A continuación, usa un mecanismo de asignación en escritura para garantizar el aislamiento entre esas regiones. Las regiones de origen y de destino pueden estar en los mismos archivos o en diferentes.
 
-Esta implementación requiere que los desplazamientos de archivo inicial y final se alineen con los límites del clúster. En ReFS en Windows Server 2016, los clústeres tienen un tamaño de 4 KB de forma predeterminada, pero se pueden establecer opcionalmente en 64 KB. El tamaño del clúster es un conjunto de parámetros en todo el volumen en el momento del formato.
+Esta implementación requiere que los desplazamientos de archivo inicial y final se alineen con los límites del clúster. En ReFS en Windows Server 2016, los clústeres tienen un tamaño de 4 KB de forma predeterminada, pero opcionalmente se pueden establecer en 64 KB. El tamaño del clúster es un parámetro de todo el volumen establecido en tiempo de formato.
 
 ## <a name="restrictions-and-remarks"></a>Restricciones y comentarios
 
--   Las regiones de origen y de destino deben comenzar y finalizar en un límite de clúster.
+-   Las regiones de origen y destino deben comenzar y finalizar en un límite de clúster.
 -   La región clonada debe ser inferior a 4 GB de longitud.
 -   La región de destino no debe extenderse más allá del final del archivo. Si la aplicación desea extender el destino con datos clonados, primero debe llamar a [**SetEndOfFile**](/windows/desktop/api/FileAPI/nf-fileapi-setendoffile).
--   Si las regiones de origen y destino están en el mismo archivo, no deben superponerse. (Es posible que la aplicación pueda continuar dividiendo la operación de clonación de bloques en varios clones de bloques que ya no se superpongan).
+-   Si las regiones de origen y destino están en el mismo archivo, no deben superponerse. (La aplicación puede continuar dividiendo la operación de clonación de bloques en varios clones de bloque que ya no se superponen).
 -   Los archivos de origen y de destino deben tener el mismo volumen ReFS.
--   Los archivos de origen y de destino deben tener la misma configuración de [**flujos de integridad**](file-attribute-constants.md) (es decir, los flujos de integridad deben estar habilitados en ambos archivos o deshabilitados en ambos archivos).
+-   Los archivos de origen y [](file-attribute-constants.md) de destino deben tener la misma configuración de Secuencias integridad (es decir, La integridad Secuencias debe estar habilitada en ambos archivos o deshabilitarse en ambos archivos).
 -   Si el archivo de origen es disperso, el archivo de destino también debe serlo.
--   La operación de clonación de bloques interrumpirá los bloqueos oportunistas compartidos (también conocidos como [bloqueos oportunistas de nivel 2](types-of-opportunistic-locks.md)).
--   El volumen ReFS debe tener el formato Windows Server 2016 y, si el clúster de conmutación por error de Windows está en uso, el nivel funcional de la agrupación en clústeres debe ser Windows Server 2016 o posterior en el momento del formato.
+-   La operación de clonación de bloques interrumpirá los bloqueos oportunistas compartidos (también conocidos como bloqueos [oportunistas de nivel 2).](types-of-opportunistic-locks.md)
+-   El volumen ReFS debe tener el formato Windows Server 2016 y, si Windows Clústeres de conmutación por error está en uso, el nivel funcional de agrupación en clústeres debe estar Windows Server 2016 o posterior en tiempo de formato.
 
 ## <a name="example"></a>Ejemplo
 
-Supongamos que tenemos dos archivos, X e y, donde cada archivo se compone de tres regiones distintas. Cada región de archivo se almacena en una región distinta del volumen. El sistema de archivos almacena la información a la que se hace referencia en una región de archivo a cada una de esas regiones de volumen:
+Supongamos que tenemos dos archivos, X e Y, donde cada archivo se compone de tres regiones distintas. Cada región de archivo se almacena en una región distinta del volumen. El sistema de archivos almacena el conocimiento de que se hace referencia a cada una de esas regiones de volumen en una región de archivo:
 
-![antes del clon](images/before-clone.png)
+![antes de clonar](images/before-clone.png)
 
-Ahora Supongamos que una aplicación emite una operación de clonación de bloques desde el archivo X, a través de las regiones del archivo a y B, al archivo Y en el desplazamiento donde E actualmente es. El siguiente estado del sistema de archivos daría como resultado:
+Ahora supongamos que una aplicación emite una operación de clonación de bloques del archivo X, a través de las regiones de archivo A y B, al archivo Y en el desplazamiento donde está actualmente E. Se produciría el siguiente estado del sistema de archivos:
 
-![después del clon](images/after-clone.png)
+![después de clonar](images/after-clone.png)
 
-Los datos de las regiones A y B se duplicaban de forma eficaz desde el archivo X al archivo Y modificando las asignaciones VCN a LCN en el volumen ReFS. No se leyeron las regiones de respaldo de las regiones A y B, ni las extensiones de disco que respaldan las regiones antiguas E y F sobrescribieron durante la operación.
+Los datos de las regiones A y B se duplicaron eficazmente del archivo X al archivo Y mediante la modificación de las asignaciones de VCN a LCN dentro del volumen ReFS. Las extensiones de disco de las regiones de respaldo A y B no se leyeron ni se sobrescribiron las extensiones de disco que estaban detrás de las regiones antiguas E y F durante la operación.
 
-Los archivos X e Y ahora comparten clústeres lógicos en el disco. Esto se refleja en los recuentos de referencias que se muestran en la tabla. El uso compartido da como resultado un consumo de menor capacidad de volumen que si las regiones A y B estuvieran duplicadas en el volumen subyacente.
+Los archivos X e Y ahora comparten clústeres lógicos en el disco. Esto se refleja en los recuentos de referencias que se muestran en la tabla. El uso compartido da como resultado un consumo de capacidad de volumen menor que si las regiones A y B estuvieran duplicadas en el volumen subyacente.
 
-Ahora, supongamos que la aplicación sobrescribe la región A en el archivo X. ReFS realiza una copia duplicada de un, que ahora llamaremos a G. ReFS y luego asigna G al archivo X y aplica la modificación. Esto asegura que el aislamiento entre los archivos se conserve. Los recuentos de referencias se actualizan correctamente:
+Ahora, supongamos que la aplicación sobrescribe la región A en el archivo X. ReFS realiza una copia duplicada de A, a la que ahora llamaremos G. ReFS luego asigna G en el archivo X y aplica la modificación. Esto asegura que el aislamiento entre los archivos se conserve. Los recuentos de referencias se actualizan correctamente:
 
 ![después de modificar la escritura](images/after-modifying-write.png)
 
@@ -63,10 +63,10 @@ Después de modificar la escritura, la región B todavía se comparte en el disc
 
 <dl> <dt>
 
-[**datos de extensiones DUPLICAdas \_ \_**](/windows/desktop/api/WinIoCtl/ns-winioctl-duplicate_extents_data)
+[**DATOS \_ DE EXTENSIONES DUPLICADAS \_**](/windows/desktop/api/WinIoCtl/ns-winioctl-duplicate_extents_data)
 </dt> <dt>
 
-[**\_elementos duplicados \_ \_ de extensiones de FSCTL en el \_ archivo**](/windows/win32/api/winioctl/ni-winioctl-fsctl_duplicate_extents_to_file)
+[**EXTENSIONES DUPLICADAS DE FSCTL \_ \_ EN EL \_ \_ ARCHIVO**](/windows/win32/api/winioctl/ni-winioctl-fsctl_duplicate_extents_to_file)
 </dt> </dl>
 
  

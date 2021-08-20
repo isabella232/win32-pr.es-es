@@ -1,11 +1,11 @@
 ---
-title: Atributo de tiempo de establecimiento anterior
+title: Atributo Prior-Set-Time
 description: La hora anterior establecida para un secreto.
 ms.assetid: 052dbfe3-8326-48a2-8d5f-2889d8e34848
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de tiempo de establecimiento anterior
-- priorSetTime esquema de AD de atributos
+- Esquema de AD del atributo Prior-Set-Time
+- Esquema de AD del atributo priorSetTime
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2c33521b1a29907b13181b715f0d46a8d12999b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5836335ef814e7b3dbda1931fa8ee7544b8da0570a7581c7b63a40d9db94626f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022273"
 ---
-# <a name="prior-set-time-attribute"></a>Atributo de tiempo de establecimiento anterior
+# <a name="prior-set-time-attribute"></a>Atributo Prior-Set-Time
 
 La hora anterior establecida para un secreto.
 
@@ -29,14 +29,14 @@ La hora anterior establecida para un secreto.
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | En tiempo de establecimiento anterior                       |
-| Nombre para mostrar de LDAP | priorSetTime                         |
-| Tamaño              | 8 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | Prior-Set-Time                       |
+| Ldap-Display-Name | priorSetTime                         |
+| Size              | 8 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.99                |
-| System-ID-GUID    | bf967a01-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf967a01-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,13 +55,13 @@ La hora anterior establecida para un secreto.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -76,13 +76,13 @@ La hora anterior establecida para un secreto.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -97,13 +97,13 @@ La hora anterior establecida para un secreto.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -118,13 +118,13 @@ La hora anterior establecida para un secreto.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -139,13 +139,13 @@ La hora anterior establecida para un secreto.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -160,13 +160,13 @@ La hora anterior establecida para un secreto.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |

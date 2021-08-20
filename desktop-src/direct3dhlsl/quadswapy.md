@@ -1,9 +1,9 @@
 ---
-title: QuadReadAcrossY función)
-description: Devuelve el valor de origen especificado leído de la otra calle de este cuádruple en la dirección Y.
+title: Función QuadReadAcrossY
+description: Devuelve el valor de origen especificado leído desde el otro lado de este cuadrándido en la dirección Y.
 ms.assetid: 6C03D1E6-433F-4CCA-A5EA-C3F34BB2B93B
 keywords:
-- QuadReadAcrossY de función HLSL
+- Función HLSL de QuadReadAcrossY
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 72b5ede0df733e60ba4b1bcc01a04f1daaedc708
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: 0f761a3588759e0c27143d16bd8fac5f674f05ae1819a0cdcebc55d6b4bdc6e2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104984099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672405"
 ---
-# <a name="quadreadacrossy-function"></a>QuadReadAcrossY función)
+# <a name="quadreadacrossy-function"></a>Función QuadReadAcrossY
 
-Devuelve el valor de origen especificado leído de la otra calle de este cuádruple en la dirección Y.
+Devuelve el valor de origen especificado leído desde el otro lado de este cuadrándido en la dirección Y.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,19 +39,19 @@ Devuelve el valor de origen especificado leído de la otra calle de este cuádru
 *localValue* 
 </dt> <dd>
 
-El tipo solicitado.
+Tipo solicitado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Valor de origen especificado. Si la calle de origen está inactiva, los resultados son indefinidos.
+Valor de origen especificado. Si el camino de origen está inactivo, los resultados son indefinidos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información sobre las cuádruples, consulte [información general sobre el modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md).
+Para obtener más información sobre los cuatros, consulte [Información general del modelo de sombreador 6.](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 
-Esta función se admite desde el modelo de sombreador 6,0 solo en los sombreadores de píxeles y de cálculo.
+Esta función solo se admite desde el modelo de sombreador 6.0 en sombreadores de cálculo y píxeles.
 
 
 

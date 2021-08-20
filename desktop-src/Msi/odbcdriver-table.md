@@ -59,20 +59,20 @@ Descripción registrada para este controlador ODBC. Este valor no se puede local
 <span id="File_"></span><span id="file_"></span><span id="FILE_"></span>Archivo\_
 </dt> <dd>
 
-Archivo DLL para los controladores enumerados en la columna Controlador. La columna \_ Archivo es una clave externa en la tabla [File](file-table.md). El nombre de archivo especificado en la columna Nombre de archivo de ese registro de tabla de archivos debe tener el formato de nombre de archivo corto. No se puede \| usar la sintaxis LFN de SFN.
+Archivo DLL para los controladores enumerados en la columna Controlador. La columna \_ Archivo es una clave externa en la tabla [File](file-table.md). El nombre de archivo especificado en la columna Nombre de archivo de ese registro de tabla de archivos debe tener el formato de nombre de archivo corto. No se puede \| usar la sintaxis DE SFN LFN.
 
 </dd> <dt>
 
 <span id="File_Setup"></span><span id="file_setup"></span><span id="FILE_SETUP"></span>Instalación de \_ archivos
 </dt> <dd>
 
-Archivo DLL de instalación para el controlador si es diferente del controlador. La columna \_ Archivo es una clave externa en la tabla [File](file-table.md). El nombre de archivo especificado en la columna Nombre de archivo de ese registro de tabla de archivos debe tener el formato de nombre de archivo corto. No se puede \| usar la sintaxis LFN de SFN.
+Archivo DLL de instalación para el controlador si es diferente del controlador. La columna \_ Archivo es una clave externa en la tabla [File](file-table.md). El nombre de archivo especificado en la columna Nombre de archivo de ese registro de tabla de archivos debe tener el formato de nombre de archivo corto. No se puede \| usar la sintaxis DE SFN LFN.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentarios
 
-Las [acciones InstallODBC](installodbc-action.md) [y RemoveODBC](removeodbc-action.md) de las tablas [*de*](s-gly.md) secuencia procesan la información de esta tabla. Para obtener información sobre el *uso de tablas de secuencia,* vea Usar una tabla de [secuencia.](using-a-sequence-table.md)
+Las [acciones InstallODBC](installodbc-action.md) [y RemoveODBC](removeodbc-action.md) de las tablas [*de secuencia*](s-gly.md) procesan la información de esta tabla. Para obtener información sobre el *uso de tablas de secuencia,* vea Usar una tabla de [secuencia.](using-a-sequence-table.md)
 
 ## <a name="validation"></a>Validación
 

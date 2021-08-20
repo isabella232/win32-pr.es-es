@@ -3,7 +3,7 @@ title: WM/ISRC
 description: El atributo WM/ISRC contiene el código de grabación estándar internacional (ISRC).
 ms.assetid: 67f9969a-6b05-42a2-9e91-19cb9a290098
 keywords:
-- Formato de Windows Media WM/ISRC
+- Formato multimedia de windows WM/ISRC
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df5fa4c9c21eec80157bdc6d67f7693bd9ff6b2e
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 6197b5ceaeded58ee983f3a54d9d87623fffb96c8c3dcfa7e0917caf42dffc4b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119546775"
 ---
 # <a name="wmisrc"></a>WM/ISRC
 
-El atributo **WM/ISRC** contiene el código de grabación estándar internacional (ISRC).
+El **atributo WM/ISRC** contiene el código de grabación estándar internacional (ISRC).
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,11 +29,11 @@ g \_ wszWMISRC
 
 ## <a name="data-type"></a>Tipo de datos
 
-**\_cadena de tipo WMT \_**
+**CADENA DE TIPO WMT \_ \_**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El ISRC se usa en el sector de la grabación para identificar una grabación. Es independiente de MCDI, que identifica un dics compacto por su tabla de contenido.
+El ISRC se usa en el sector de grabación para identificar una grabación. Es independiente del MCDI, que identifica un dis compacto por su tabla de contenido.
 
 ## <a name="see-also"></a>Vea también
 
@@ -45,9 +45,9 @@ El ISRC se usa en el sector de la grabación para identificar una grabación. Es
 [**WM/MCDI**](wm-mcdi.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

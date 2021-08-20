@@ -86,7 +86,7 @@ Esta función no tiene ningún archivo .lib asociado. Debe usar [**LoadLibrary**
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

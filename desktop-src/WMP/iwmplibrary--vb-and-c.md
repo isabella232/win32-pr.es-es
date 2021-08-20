@@ -1,10 +1,10 @@
 ---
-title: Interfaz IWMPLibrary (VB y C) (WMP. h)
+title: Interfaz IWMPLibrary (VB y C) (Wmp.h)
 description: Representa una biblioteca. La interfaz IWMPLibrary expone las siguientes propiedades.
 ms.assetid: 956b2da1-5f01-48d6-8faa-e360c225afda
 keywords:
-- IWMPLibrary (VB y C) interfaz de Windows Media Player
-- IWMPLibrary (VB y C) interfaz de Windows Media Player, se describe
+- Interfaz IWMPLibrary (VB y C) Reproductor de Windows Media
+- Interfaz IWMPLibrary (VB y C) Reproductor de Windows Media , descrita
 topic_type:
 - apiref
 api_name:
@@ -15,35 +15,35 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9749d3a2363c3863180639f249d7261ec1b9694
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6a418192e45363b6757d7360e779b8f8134677d8a321228d81fddd3d49501075
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054833"
 ---
 # <a name="iwmplibrary-vb-and-c-interface"></a>Interfaz IWMPLibrary (VB y C#)
 
 Representa una biblioteca.
 
-La interfaz **IWMPLibrary** expone las siguientes propiedades.
+La **interfaz IWMPLibrary** expone las siguientes propiedades.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IWMPLibrary (VB y C#)** tiene estos tipos de miembros:
+La **interfaz IWMPLibrary (VB y C#)** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IWMPLibrary (VB y C#)** tiene estos métodos.
+La **interfaz IWMPLibrary (VB y C#)** tiene estos métodos.
 
 
 
 | Método                                                                     | Descripción                                                                                           |
 |:---------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|
-| [**isIdentical**](wmplibiwmplibrary-iwmplibrary-isidentical--vb-and-c.md) | Devuelve un valor que indica si el objeto proporcionado es igual que el actual.<br/> |
+| [**isIdentical**](wmplibiwmplibrary-iwmplibrary-isidentical--vb-and-c.md) | Devuelve un valor que indica si el objeto proporcionado es el mismo que el actual.<br/> |
 
 
 
@@ -51,21 +51,21 @@ La interfaz **IWMPLibrary (VB y C#)** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La interfaz **IWMPLibrary (VB y C#)** tiene estas propiedades.
+La **interfaz IWMPLibrary (VB y C#)** tiene estas propiedades.
 
 
 
 | Propiedad                                                                                      | Tipo de acceso          | Descripción                                                                   |
 |:----------------------------------------------------------------------------------------------|:---------------------|:------------------------------------------------------------------------------|
-| [**mediaCollection**](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md)<br/> | Solo lectura<br/> | Obtiene una interfaz **IWMPMediaCollection** para la biblioteca actual.<br/> |
-| [**name**](wmplibiwmplibrary-iwmplibrary-name--vb-and-c.md)<br/>                       | Solo lectura<br/> | Obtiene el nombre para mostrar de la biblioteca actual.<br/>                      |
-| [**automáticamente**](wmplibiwmplibrary-iwmplibrary-type--vb-and-c.md)<br/>                       | Solo lectura<br/> | Obtiene un valor que indica el tipo de biblioteca.<br/>                      |
+| [**mediaCollection**](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md)<br/> | Solo lectura<br/> | Obtiene una **interfaz IWMPMediaCollection** para la biblioteca actual.<br/> |
+| [**Nombre**](wmplibiwmplibrary-iwmplibrary-name--vb-and-c.md)<br/>                       | Solo lectura<br/> | Obtiene el nombre para mostrar de la biblioteca actual.<br/>                      |
+| [**tipo**](wmplibiwmplibrary-iwmplibrary-type--vb-and-c.md)<br/>                       | Solo lectura<br/> | Obtiene un valor que indica el tipo de biblioteca.<br/>                      |
 
 
 
  
 
-Obtenga una interfaz **IWMPLibrary** mediante el método siguiente.
+Obtenga una **interfaz IWMPLibrary** mediante el método siguiente.
 
 
 
@@ -83,7 +83,7 @@ Obtenga una interfaz **IWMPLibrary** mediante el método siguiente.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMP. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmp.h</dt> </dl> |
 
 
 
@@ -94,7 +94,7 @@ Obtenga una interfaz **IWMPLibrary** mediante el método siguiente.
 [**Interfaces para Visual Basic .NET y C #**](interfaces-for-visual-basic--net-and-c.md)
 </dt> <dt>
 
-[**IWMPLibraryServices. getLibraryByType (VB y C#)**](wmplibiwmplibraryservices-iwmplibraryservices-getlibrarybytype--vb-and-c.md)
+[**IWMPLibraryServices.getLibraryByType (VB y C#)**](wmplibiwmplibraryservices-iwmplibraryservices-getlibrarybytype--vb-and-c.md)
 </dt> </dl>
 
  

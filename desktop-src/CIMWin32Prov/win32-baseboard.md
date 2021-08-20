@@ -1,8 +1,8 @@
 ---
-description: Representa una placa base, que también se conoce como placa base o de sistema.
+description: Representa un placa base, que también se conoce como placa base o placa del sistema.
 ms.assetid: 04ac7522-8b99-4ffc-9f7d-d1225f55a862
 ms.tgt_platform: multiple
-title: Win32_BaseBoard (clase)
+title: Win32_BaseBoard clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -44,16 +44,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c4287076a550e25bf74a160b191c777c25d9ab3b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ac22dc01864d74902c666529bd40344f65eacfb1ad2515552e1cd46fbf65b9e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104080280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119546524"
 ---
-# <a name="win32_baseboard-class"></a>\_Clase de placa base Win32
+# <a name="win32_baseboard-class"></a>Clase BaseBoard de Win32 \_
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) de la **\_ placa base de Win32** representa una placa base, que también se conoce como placa base o de sistema.
+La **clase WMI De placa \_ base Win32** representa un placa base, que también se conoce como placa base o placa del sistema. [](/windows/desktop/WmiSdk/retrieving-a-class)
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -97,14 +97,14 @@ class Win32_BaseBoard : CIM_Card
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ placa base de Win32** tiene estos tipos de miembros:
+La **clase \_ BaseBoard win32** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase de **\_ placa base de Win32** tiene estos métodos.
+La **clase \_ BaseBoard win32** tiene estos métodos.
 
 
 
@@ -118,7 +118,7 @@ La clase de **\_ placa base de Win32** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ placa base de Win32** tiene estas propiedades.
+La **clase \_ BaseBoard win32** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -131,30 +131,30 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
 Breve descripción del objeto de una cadena de una línea.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **ConfigOptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("cadenas de opciones de configuración de tipo de SMBIOS \| 12 \| ")
+Calificadores: [**MappingStrings ("Cadenas**](/windows/desktop/WmiSdk/standard-qualifiers) de opciones de configuración de tipo SMBIOS \| 12") \|
 </dt> </dl>
 
-Matriz que representa la configuración de los puentes y modificadores ubicados en la placa base.
+Matriz que representa la configuración de los jumpers y conmutadores ubicados en el placa base.
 
-Ejemplo: "JP2: el tamaño de caché de 1-2 es 256 k, el tamaño de caché de 2-3 es 512 k, SW1-1: Close to Disable in Board video"
+Ejemplo: "JP2: 1-2 Cache Size is 256K, 2-3 Cache Size is 512K, SW1-1: Close to Disable On Board Video"
 
 </dd> <dt>
 
@@ -167,12 +167,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de. Cuando se usa con las otras propiedades de clave de la clase, la propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
+Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de la clase , la propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -190,7 +190,7 @@ Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("pul
 
 Profundidad del paquete físico en pulgadas.
 
-Esta propiedad se hereda de [**\_ PhysicalPackage CIM**](cim-physicalpackage.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> <dt>
 
@@ -203,12 +203,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Descripción")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description")
 </dt> </dl>
 
 Descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -226,7 +226,7 @@ Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("pul
 
 Alto del paquete físico en pulgadas.
 
-Esta propiedad se hereda de [**\_ PhysicalPackage CIM**](cim-physicalpackage.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> <dt>
 
@@ -239,9 +239,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, la tarjeta es una placa base o una placa base en un chasis.
+Si **es TRUE,** la tarjeta es una placa base o una placa base en un chasis.
 
-Esta propiedad se hereda de [**la \_ tarjeta CIM**](cim-card.md).
+Esta propiedad se hereda de la [**tarjeta CIM. \_**](cim-card.md)
 
 </dd> <dt>
 
@@ -254,31 +254,31 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es true**, el paquete puede intercambiarse en caliente. Un paquete físico puede intercambiarse en caliente si es posible reemplazar el elemento con un elemento físicamente diferente pero equivalente mientras el paquete contenedor tiene energía aplicada, es decir, mientras está activado. Por ejemplo, un paquete de unidad de disco insertado mediante conectores SCA es extraíble y puede intercambiarse en caliente. Todos los paquetes que se pueden intercambiar en caliente son intrínsecamente extraíbles y reemplazables.
+Si **es TRUE,** el paquete se puede intercambiar en caliente. Un paquete físico se puede intercambiar en caliente si es posible reemplazar el elemento por un elemento físicamente diferente, pero equivalente, mientras que el paquete que lo contiene tiene la potencia aplicada, es decir, mientras está en ON. Por ejemplo, un paquete de unidad de disco insertado mediante conectores SCA es extraíble y se puede intercambiar en caliente. Todos los paquetes que se pueden intercambiar en caliente son intrínsecamente extraíbles y reemplazables.
 
-Esta propiedad se hereda de [**\_ PhysicalPackage CIM**](cim-physicalpackage.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Fecha de instalación")
 </dt> </dl>
 
 Fecha y hora en que se instaló el objeto. Esta propiedad no necesita un valor para indicar que el objeto está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**Le**
+**Fabricante**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -290,9 +290,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nombre de la organización responsable de producir el elemento físico.
+Nombre de la organización responsable de generar el elemento físico.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -310,7 +310,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Nombre por el que se conoce el elemento físico.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -323,12 +323,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre")
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Cuando se subclasen, la propiedad se puede invalidar para ser una propiedad de clave.
+Etiqueta por la que se conoce el objeto. Cuando se subclasifica, la propiedad se puede invalidar para que sea una propiedad de clave.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -341,13 +341,13 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Captura datos adicionales, más allá de la información de etiquetas de recursos, que se pueden usar para identificar un elemento físico. Un ejemplo son los datos de código de barras que están asociados a un elemento que también tiene una etiqueta de recurso. Tenga en cuenta que si solo los datos de código de barras están disponibles y son únicos o se pueden usar como una clave de elemento, el valor de la propiedad sería **null** y los datos de código de barras se utilizarían como la clave de clase en la propiedad de etiqueta.
+Captura datos adicionales, más allá de la información de etiquetas de recurso, que se pueden usar para identificar un elemento físico. Un ejemplo son los datos de código de barras asociados a un elemento que también tiene una etiqueta de recurso. Tenga en cuenta que si solo hay datos de código de barras disponibles y únicos o que se pueden usar como clave de elemento, el valor de propiedad sería **NULL** y los datos del código de barras se usarían como clave de clase, en la propiedad de etiqueta.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
-**PartNumber**
+**Partnumber**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -359,13 +359,13 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Número de pieza asignado por la organización responsable de producir o fabricar el elemento físico.
+Número de pieza asignado por la organización responsable de producir o fabricación del elemento físico.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
-**Poweredon**
+**PoweredOn**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -374,9 +374,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, el elemento físico está encendido.
+Si **es TRUE,** el elemento físico está encendido.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -389,14 +389,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| tipo 2 \| producto")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 2 \| Product")
 </dt> </dl>
 
-Número de pieza de la placa base definida por el fabricante.
+Número de pieza de placa base definido por el fabricante.
 
 </dd> <dt>
 
-**Quitar**
+**Extraíble**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -405,13 +405,13 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, un paquete es extraíble. Un paquete físico es extraíble si está diseñado para tomarse dentro y fuera del contenedor físico en el que se encuentra normalmente sin perjudicar a la función del empaquetado global. Un paquete todavía puede ser extraíble si la alimentación debe estar desactivada para realizar la eliminación. Si la potencia puede estar activada y se ha quitado el paquete, el elemento es extraíble y se puede intercambiar en caliente. Por ejemplo, una batería adicional en un equipo portátil es extraíble, como un paquete de unidad de disco insertado mediante conectores SCA. Sin embargo, el último también puede intercambiarse en caliente. La pantalla de un portátil no es extraíble, ni tampoco es una fuente de alimentación que no sea redundante. La eliminación de estos componentes afectaría a la función del empaquetado global o es imposible debido a la estrecha integración del paquete.
+Si **es TRUE,** un paquete es extraíble. Un paquete físico es extraíble si está diseñado para su entrada y salida del contenedor físico en el que normalmente se encuentra sin afectar a la función del empaquetado general. Un paquete todavía puede ser extraíble si la alimentación debe estar desactivada para realizar la eliminación. Si la alimentación puede ser ON y el paquete se ha quitado, el elemento es extraíble y se puede intercambiar en caliente. Por ejemplo, una batería adicional en un portátil es extraíble, al igual que un paquete de unidad de disco insertado mediante conectores SCA. Sin embargo, este último también se puede intercambiar en caliente. La pantalla de un portátil no es extraíble ni es una fuente de alimentación sin red. La eliminación de estos componentes afectaría a la función del empaquetado general o es imposible debido a la estrecha integración del paquete.
 
-Esta propiedad se hereda de [**\_ PhysicalPackage CIM**](cim-physicalpackage.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> <dt>
 
-**Reemplazables**
+**Reemplazable**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -420,9 +420,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, un paquete es reemplazable. Un paquete físico es reemplazable si es posible reemplazar (FRU o actualizar) el elemento con uno físicamente diferente. Por ejemplo, algunos sistemas informáticos permiten que el chip del procesador principal se actualice a una clasificación de reloj más alta. En este caso, se dice que el procesador es reemplazable. Otro ejemplo es un paquete de fuente de alimentación montado en raíles deslizantes. Todos los paquetes extraíbles se pueden reemplazar de forma inherente.
+Si **es TRUE,** se puede reemplazar un paquete. Un paquete físico se puede reemplazar si es posible reemplazar (FRU o actualizar) el elemento por uno físicamente diferente. Por ejemplo, algunos sistemas informáticos permiten actualizar el chip del procesador principal a una de las especificaciones de reloj más altas. En este caso, se dice que el procesador es reemplazable. Otro ejemplo es un paquete de fuente de alimentación montado en raíles deslizantes. Todos los paquetes extraíbles son intrínsecamente reemplazables.
 
-Esta propiedad se hereda de [**\_ PhysicalPackage CIM**](cim-physicalpackage.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> <dt>
 
@@ -435,12 +435,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ tarjeta CIM**](cim-card.md).**SpecialRequirements**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Cim \_ Card**](cim-card.md).**SpecialRequirements**")
 </dt> </dl>
 
-Cadena de forma libre que describe la forma en que esta tarjeta es única físicamente desde otras tarjetas. La propiedad solo tiene significado cuando la propiedad booleana correspondiente **SpecialRequirements** se establece en **true**.
+Cadena de forma libre que describe la forma en que esta tarjeta es físicamente única de otras tarjetas. La propiedad solo tiene significado cuando la propiedad booleana **SpecialRequirements** correspondiente se establece en **TRUE.**
 
-Esta propiedad se hereda de [**la \_ tarjeta CIM**](cim-card.md).
+Esta propiedad se hereda de la [**tarjeta CIM. \_**](cim-card.md)
 
 </dd> <dt>
 
@@ -453,9 +453,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, se requiere al menos una tarjeta daughterboard o auxiliar para funcionar correctamente.
+Si **es TRUE,** se necesita al menos una placa auxiliar o una tarjeta auxiliar para funcionar correctamente.
 
-Esta propiedad se hereda de [**la \_ tarjeta CIM**](cim-card.md).
+Esta propiedad se hereda de la [**tarjeta CIM. \_**](cim-card.md)
 
 </dd> <dt>
 
@@ -471,9 +471,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Número asignado por el fabricante que se usa para identificar el elemento físico.
+Número asignado por el fabricante usado para identificar el elemento físico.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -489,9 +489,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Número de unidad de almacén para el elemento físico.
+Número de unidad de mantenimiento de existencias para el elemento físico.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -506,7 +506,7 @@ Tipo de acceso: solo lectura
 
 Cadena de forma libre que describe la posición de la ranura, el uso típico, las restricciones, el espaciado de ranura individual o cualquier otra información pertinente para las ranuras de una tarjeta.
 
-Esta propiedad se hereda de [**la \_ tarjeta CIM**](cim-card.md).
+Esta propiedad se hereda de la [**tarjeta CIM. \_**](cim-card.md)
 
 </dd> <dt>
 
@@ -519,12 +519,12 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ tarjeta CIM**](cim-card.md).**RequirementsDescription**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Cim \_ Card**](cim-card.md).**RequirementsDescription**")
 </dt> </dl>
 
-Si es **true**, esta tarjeta es única físicamente desde otras tarjetas del mismo tipo y, por tanto, requiere una ranura especial. Por ejemplo, una tarjeta de doble ancho requiere dos ranuras. Otro ejemplo es el lugar en el que se puede usar una tarjeta determinada para la misma función general que otras tarjetas, pero requiere una ranura especial (por ejemplo, extra larga), mientras que las otras tarjetas pueden colocarse en cualquier ranura disponible. Si se establece en **true**, la propiedad correspondiente, **RequirementsDescription**, debe especificar la naturaleza de la unicidad o el propósito de la tarjeta.
+Si **es TRUE,** esta tarjeta es físicamente única de otras tarjetas del mismo tipo y, por tanto, requiere una ranura especial. Por ejemplo, una tarjeta de doble ancho requiere dos ranuras. Otro ejemplo es donde se puede usar una tarjeta determinada para la misma función general que otras tarjetas, pero requiere una ranura especial (por ejemplo, extra larga), mientras que las otras tarjetas se pueden colocar en cualquier ranura disponible. Si se establece **en TRUE**, la propiedad correspondiente, **RequirementsDescription**, debe especificar la naturaleza de la unidad o el propósito de la tarjeta.
 
-Esta propiedad se hereda de [**la \_ tarjeta CIM**](cim-card.md).
+Esta propiedad se hereda de la [**tarjeta CIM. \_**](cim-card.md)
 
 </dd> <dt>
 
@@ -537,12 +537,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son los siguientes:
 
@@ -550,84 +550,84 @@ Los valores son los siguientes:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
@@ -643,14 +643,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("etiqueta"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Tag"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI")
 </dt> </dl>
 
-Identificador único de la placa base del sistema.
+Identificador único del placa base del sistema.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
-Ejemplo: "placa base"
+Ejemplo: "Placa base"
 
 </dd> <dt>
 
@@ -668,7 +668,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Versión del elemento físico.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -686,7 +686,7 @@ Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("lib
 
 Peso del paquete físico en libras.
 
-Esta propiedad se hereda de [**\_ PhysicalPackage CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -704,21 +704,21 @@ Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("pul
 
 Ancho del paquete físico en pulgadas.
 
-Esta propiedad se hereda de [**\_ PhysicalPackage CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalelement.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase de **\_ placa base de Win32** se deriva de la [**\_ tarjeta CIM**](cim-card.md) , que deriva de [**CIM \_ PhysicalPackage**](cim-physicalelement.md).
+La **clase \_ BaseBoard de Win32** se deriva de [**la tarjeta CIM \_ que**](cim-card.md) deriva de [**CIM \_ PhysicalPackage**](cim-physicalelement.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo Perl del equipo de lista de propiedades de la [placa base](https://Gallery.TechNet.Microsoft.Com/932346d8-4a23-4dac-bdbd-01fc14d526f8) se devuelve información acerca de la placa base del equipo.
+El [ejemplo List Computer Baseboard Properties](https://Gallery.TechNet.Microsoft.Com/932346d8-4a23-4dac-bdbd-01fc14d526f8) Perl (Enumerar propiedades de placa base de equipo) devuelve información sobre el panel base del equipo.
 
-En el ejemplo de PowerShell de [propiedades de placa base del equipo](https://Gallery.TechNet.Microsoft.Com/359772a2-c70e-45e9-bdad-f79efe2420a9) se devuelve información acerca de la placa base del equipo.
+El [ejemplo de PowerShell List Computer Baseboard Properties](https://Gallery.TechNet.Microsoft.Com/359772a2-c70e-45e9-bdad-f79efe2420a9) devuelve información sobre el panel base del equipo.
 
-El siguiente ejemplo de VBScript también devuelve información acerca de la placa base del equipo.
+El siguiente ejemplo de VBScript también devuelve información sobre la placa base del equipo.
 
 
 ```VB
@@ -768,11 +768,11 @@ Next
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -781,10 +781,10 @@ Next
 
 <dl> <dt>
 
-[**\_Tarjeta CIM**](cim-card.md)
+[**Tarjeta \_ CIM**](cim-card.md)
 </dt> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

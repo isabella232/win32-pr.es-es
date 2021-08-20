@@ -4,7 +4,7 @@ title: User Input Extended Example description: User Input: Extended Example ms.
 
 # <a name="user-input-extended-example"></a>Entrada del usuario: ejemplo extendido
 
-Vamos a combinar todo lo que hemos aprendido sobre la entrada del usuario para crear un programa de dibujo simple. Esta es una captura de pantalla del programa:
+Vamos a combinar todo lo que hemos aprendido sobre la entrada del usuario para crear un sencillo programa de dibujo. Esta es una captura de pantalla del programa:
 
 ![captura de pantalla del programa de dibujo](images/input03.png)
 
@@ -43,7 +43,7 @@ struct MyEllipse
 
 El programa usa el mismo pincel de color sólido para dibujar el relleno y el contorno de cada elipse, cambiando el color según sea necesario. En Direct2D, cambiar el color de un pincel de color sólido es una operación eficaz. Por lo tanto, el objeto de pincel de color sólido admite un [**método SetColor.**](/windows/desktop/Direct2D/id2d1solidcolorbrush-setcolor)
 
-Los puntos suspensivos se almacenan en un contenedor **de** lista de STL:
+Los puntos suspensivos se almacenan en un contenedor de lista **de** STL:
 
 
 ```C++
@@ -178,7 +178,7 @@ void MainWindow::OnMouseMove(int pixelX, int pixelY, DWORD flags)
 
 
 
-La lógica para cambiar el tamaño de una elipse se describió anteriormente, en la sección [Ejemplo: Dibujar círculos](mouse-movement.md). Observe también la llamada a [**InvalidateRect**](/windows/desktop/api/winuser/nf-winuser-invalidaterect). Esto se asegura de que la ventana se vuelva a dibujar. El código siguiente controla los [**mensajes \_ LBUTTONUP de WM.**](/windows/desktop/inputdev/wm-lbuttonup)
+La lógica para cambiar el tamaño de una elipse se describió anteriormente, en la sección [Ejemplo: Círculos de dibujo](mouse-movement.md). Observe también la llamada a [**InvalidateRect**](/windows/desktop/api/winuser/nf-winuser-invalidaterect). Esto se asegura de que la ventana se vuelva a dibujar. El código siguiente controla los [**mensajes \_ LBUTTONUP de WM.**](/windows/desktop/inputdev/wm-lbuttonup)
 
 
 ```C++

@@ -1,5 +1,5 @@
 ---
-title: SGN-vs
+title: sgn - vs
 description: Calcula el signo de la entrada.
 ms.assetid: b03530d1-c621-483e-bd94-31abafeb2e6e
 ms.topic: reference
@@ -9,46 +9,46 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8573ff7e33a127d7c30af1fe512fbd3da298d0eb
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 1a4994c807ff1df99016aad734edf71e5e1ce6efe59fd53a4fb9bb3ee91a4b25
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104419936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671685"
 ---
-# <a name="sgn---vs"></a>SGN-vs
+# <a name="sgn---vs"></a>sgn - vs
 
 Calcula el signo de la entrada.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| SGN DST, src0, SRC1, src2 |
+| sgn dst, src0, src1, src2 |
 |---------------------------|
 
 
 
- 
+ 
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src0 es un registro de origen.
--   SRC1 es un registro temporal que contiene resultados intermedios. Tras la ejecución, el contenido es indefinido.
--   src2 es un registro temporal que contiene resultados intermedios. Tras la ejecución, el contenido es indefinido.
+-   src1 es un registro temporal que contiene resultados intermedios. Después de la ejecución, el contenido no está definido.
+-   src2 es un registro temporal que contiene resultados intermedios. Después de la ejecución, el contenido no está definido.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| signo                    |      | x    | x    | x     | x    | x     |
+| Sgn                    |      | x    | x    | x     | x    | x     |
 
 
 
- 
+ 
 
 Esta instrucción funciona como se muestra a continuación.
 
@@ -68,7 +68,7 @@ for each component in src0
 
 
 
-SRC1 y src2 deben ser [registros temporales](dx9-graphics-reference-asm-vs-registers-temporary.md)diferentes.
+src1 y src2 deben ser registros [temporales diferentes.](dx9-graphics-reference-asm-vs-registers-temporary.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -77,9 +77,9 @@ SRC1 y src2 deben ser [registros temporales](dx9-graphics-reference-asm-vs-regis
 [Instrucciones del sombreador de vértices](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

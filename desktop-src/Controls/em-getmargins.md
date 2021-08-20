@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_GETMARGINS (Winuser. h)
-description: Obtiene el ancho de los márgenes izquierdo y derecho de un control de edición.
+title: EM_GETMARGINS mensaje (Winuser.h)
+description: Obtiene los anchos de los márgenes izquierdo y derecho de un control de edición.
 ms.assetid: 2482354b-aae0-4abd-8287-65c423f30abb
 keywords:
-- EM_GETMARGINS controles de mensajes de Windows
+- EM_GETMARGINS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 239ad7e7888f5bceef60bf2719c3b67798b56220
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 33746bc44a7b1b0aadd11c573675fedd51e565a557da7601ebe35a4442ddc96c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119541075"
 ---
-# <a name="em_getmargins-message"></a>\_Mensaje GETMARGINS em
+# <a name="em_getmargins-message"></a>Mensaje \_ EM GETMARGINS
 
-Obtiene el ancho de los márgenes izquierdo y derecho de un control de edición.
+Obtiene los anchos de los márgenes izquierdo y derecho de un control de edición.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,34 +32,34 @@ Obtiene el ancho de los márgenes izquierdo y derecho de un control de edición.
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el ancho del margen izquierdo en el LOWORD y el ancho del margen derecho en el HIWORD.
+Devuelve el ancho del margen izquierdo en el LOWORD y el ancho del margen derecho en hiword.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**Edición enriquecida:** No se admite el mensaje **\_ GETMARGINS em** .
+**Edición enriquecte:** No **se admite el mensaje EM \_ GETMARGINS.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -67,7 +67,7 @@ Devuelve el ancho del margen izquierdo en el LOWORD y el ancho del margen derech
 
 <dl> <dt>
 
-[**\_SETMARGINS em**](em-setmargins.md)
+[**EM \_ SETMARGINS**](em-setmargins.md)
 </dt> </dl>
 
  

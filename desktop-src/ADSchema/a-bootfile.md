@@ -1,10 +1,10 @@
 ---
-title: atributo de arranque
+title: Atributo bootFile
 description: Contiene el nombre de la imagen de arranque.
 ms.assetid: 8fb31ff0-eb0b-446b-8626-67138ad20d31
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo de arranque
+- Esquema de AD del atributo bootFile
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff8805f12dbe04232efccdaad11033714379a8b9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3b3883029b64aedb1db00bf3e53a2bd5b88db2b25c232ed393ce0f69fb6573e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022753"
 ---
-# <a name="bootfile-attribute"></a>atributo de arranque
+# <a name="bootfile-attribute"></a>Atributo bootFile
 
-Contiene el nombre de la imagen de arranque para la compatibilidad con la administración de identidades de UNIX.
+Contiene el nombre de la imagen de arranque para la compatibilidad UNIX administración de identidades.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | Arranque                             |
-| Nombre para mostrar de LDAP | Arranque                             |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | bootFile                             |
+| Ldap-Display-Name | bootFile                             |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.24                     |
-| System-ID-GUID    | e3f3cb4e-0f20-42eb-9703-d2ff26e52667 |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | e3f3cb4e-0f20-42eb-9703-d2ff26e52667 |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -52,13 +52,13 @@ Contiene el nombre de la imagen de arranque para la compatibilidad con la admini
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | False                                                 |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Falso                                                 |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
@@ -73,13 +73,13 @@ Contiene el nombre de la imagen de arranque para la compatibilidad con la admini
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | False                                                 |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Falso                                                 |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
@@ -94,13 +94,13 @@ Contiene el nombre de la imagen de arranque para la compatibilidad con la admini
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | False                                                 |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Falso                                                 |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
@@ -115,13 +115,13 @@ Contiene el nombre de la imagen de arranque para la compatibilidad con la admini
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------|
-| Identificador de vínculo                | \-                                                    |
+| Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Tiene un único valor       | False                                                 |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                          |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Falso                                                 |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |

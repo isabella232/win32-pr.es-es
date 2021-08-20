@@ -1,11 +1,11 @@
 ---
-title: Atributo de programación
-description: Un BLOB en programación tal y como se define en el servicio de trabajo de Windows NT. Usada por la replicación.
+title: Atributo Schedule
+description: Blob de programación tal y como lo define el Windows servicio de trabajo nt. Usado por la replicación.
 ms.assetid: 5eb6409d-3fb5-4368-8b7f-ce19567b7260
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de programación
-- Esquema de AD de atributos de programación
+- Esquema de AD de atributo de programación
+- esquema de AD de atributo de programación
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: abf53e86f77ecffc872d8b007e32b1f964ae244e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6b65ff20b9eaba0c8429f5fec164e44a3e4b842e82bfddcca61461f6832f55d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022223"
 ---
-# <a name="schedule-attribute"></a>Atributo de programación
+# <a name="schedule-attribute"></a>Atributo Schedule
 
-Un BLOB en programación tal y como se define en el servicio de trabajo de Windows NT. Usada por la replicación.
+Blob de programación tal y como lo define el Windows servicio de trabajo nt. Usado por la replicación.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | Programación                                              |
-| Nombre para mostrar de LDAP | schedule                                              |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | schedule                                              |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.211                                |
-| System-ID-GUID    | dd712224-10e4-11d0-a05f-00aa006c33ed                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | dd712224-10e4-11d0-a05f-00aa006c33ed                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -44,7 +44,7 @@ Un BLOB en programación tal y como se define en el servicio de trabajo de Windo
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ Un BLOB en programación tal y como se define en el servicio de trabajo de Windo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                               |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
-| System-Only            | False                                                                                                                                                                                                                                                                            |
-| Tiene un único valor       | True                                                                                                                                                                                                                                                                             |
-| Está indexado             | False                                                                                                                                                                                                                                                                            |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                     |
+| System-Only            | Falso                                                                                                                                                                                                                                                                            |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                                                                             |
+| Está indexado             | Falso                                                                                                                                                                                                                                                                            |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> [**Sitio-vínculo**](c-sitelink.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> [**NTDS-Site-Configuración**](c-ntdssitesettings.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**Vínculo de sitio**](c-sitelink.md)<br/> |
 
 
 
@@ -77,39 +77,39 @@ Un BLOB en programación tal y como se define en el servicio de trabajo de Windo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                               |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
-| System-Only            | False                                                                                                                                                                                                                                                                            |
-| Tiene un único valor       | True                                                                                                                                                                                                                                                                             |
-| Está indexado             | False                                                                                                                                                                                                                                                                            |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                     |
+| System-Only            | Falso                                                                                                                                                                                                                                                                            |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                                                                             |
+| Está indexado             | Falso                                                                                                                                                                                                                                                                            |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> [**Sitio-vínculo**](c-sitelink.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> [**NTDS-Site-Configuración**](c-ntdssitesettings.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**Vínculo de sitio**](c-sitelink.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                                                            |
-| System-Only            | False                                                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                                                          |
-| Está indexado             | False                                                                                                                                                         |
-| En el catálogo global      | False                                                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                  |
+| System-Only            | Falso                                                                                                                                                         |
+| Es de un solo valor       | Verdadero                                                                                                                                                          |
+| Está indexado             | Falso                                                                                                                                                         |
+| En el catálogo global      | Falso                                                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                  |
 | Range-Lower            | \-                                                                                                                                                            |
 | Range-Upper            | \-                                                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                                                    |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> [**Sitio-vínculo**](c-sitelink.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> [**NTDS-Site-Configuración**](c-ntdssitesettings.md)<br/> [**Vínculo de sitio**](c-sitelink.md)<br/> |
 
 
 
@@ -119,18 +119,18 @@ Un BLOB en programación tal y como se define en el servicio de trabajo de Windo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                               |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
-| System-Only            | False                                                                                                                                                                                                                                                                            |
-| Tiene un único valor       | True                                                                                                                                                                                                                                                                             |
-| Está indexado             | False                                                                                                                                                                                                                                                                            |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                     |
+| System-Only            | Falso                                                                                                                                                                                                                                                                            |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                                                                             |
+| Está indexado             | Falso                                                                                                                                                                                                                                                                            |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> [**Sitio-vínculo**](c-sitelink.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> [**NTDS-Site-Configuración**](c-ntdssitesettings.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**Vínculo de sitio**](c-sitelink.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ Un BLOB en programación tal y como se define en el servicio de trabajo de Windo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                               |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
-| System-Only            | False                                                                                                                                                                                                                                                                            |
-| Tiene un único valor       | True                                                                                                                                                                                                                                                                             |
-| Está indexado             | False                                                                                                                                                                                                                                                                            |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                     |
+| System-Only            | Falso                                                                                                                                                                                                                                                                            |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                                                                             |
+| Está indexado             | Falso                                                                                                                                                                                                                                                                            |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> [**Sitio-vínculo**](c-sitelink.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> [**NTDS-Site-Configuración**](c-ntdssitesettings.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**Vínculo de sitio**](c-sitelink.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ Un BLOB en programación tal y como se define en el servicio de trabajo de Windo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                               |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
-| System-Only            | False                                                                                                                                                                                                                                                                            |
-| Tiene un único valor       | True                                                                                                                                                                                                                                                                             |
-| Está indexado             | False                                                                                                                                                                                                                                                                            |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                     |
+| System-Only            | Falso                                                                                                                                                                                                                                                                            |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                                                                             |
+| Está indexado             | Falso                                                                                                                                                                                                                                                                            |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> [**Sitio-vínculo**](c-sitelink.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> [**NTDS-Site-Configuración**](c-ntdssitesettings.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**Vínculo de sitio**](c-sitelink.md)<br/> |
 
 
 
@@ -182,18 +182,18 @@ Un BLOB en programación tal y como se define en el servicio de trabajo de Windo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                               |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
-| System-Only            | False                                                                                                                                                                                                                                                                            |
-| Tiene un único valor       | True                                                                                                                                                                                                                                                                             |
-| Está indexado             | False                                                                                                                                                                                                                                                                            |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                     |
+| System-Only            | Falso                                                                                                                                                                                                                                                                            |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                                                                             |
+| Está indexado             | Falso                                                                                                                                                                                                                                                                            |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Clases usadas en        | [**NTDS-conexión**](c-ntdsconnection.md)<br/> [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> [**NTFRS-Replica-set**](c-ntfrsreplicaset.md)<br/> [**NTFRS: suscriptor**](c-ntfrssubscriber.md)<br/> [**Sitio-vínculo**](c-sitelink.md)<br/> |
+| Clases usadas en        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> [**NTDS-Site-Configuración**](c-ntdssitesettings.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> [**Vínculo de sitio**](c-sitelink.md)<br/> |
 
 
 

@@ -18,12 +18,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 754b0e10c3882911c6e91fc2590c11739c3f7531
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 80d0bfdc324f55bd8b697dfd63f9c2cf5c847ca3e3c931842b886c00adbc6aac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119383455"
 ---
 # <a name="systemconfig_services-class"></a>Clase SystemConfig \_ Services
 
@@ -106,7 +106,7 @@ Nombre del proceso en el que se ejecuta el servicio.
 
 </dd> <dt>
 
-**Servicename**
+**ServiceName**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **matriz de** cadenas
@@ -134,7 +134,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (2), **Format("x")**
 </dt> </dl>
 
-Estado actual del servicio. Para ver los valores posibles, vea el **miembro dwCurrentState** de **SERVICE STATUS \_ \_ PROCESS**.
+Estado actual del servicio. Para obtener los valores posibles, vea el **miembro dwCurrentState** de **SERVICE STATUS \_ \_ PROCESS**.
 
 </dd> <dt>
 
@@ -160,12 +160,12 @@ Identifica el servicio.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

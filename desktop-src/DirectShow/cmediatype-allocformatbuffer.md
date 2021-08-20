@@ -1,7 +1,7 @@
 ---
 description: El método AllocFormatBuffer asigna memoria para el bloque de formato.
 ms.assetid: 5ff716c7-f9cf-4b1c-9d3a-62ab955c1392
-title: Método CMediaType. AllocFormatBuffer (mtype. h)
+title: Método CMediaType.AllocFormatBuffer (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d6a9314fd06734adcc367b7be34dc8d6d1b9d996
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2c53e739237f2d61a6c59c7fac96e1b97e6343fa6dd209bcf72700cefab7d599
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073989"
 ---
-# <a name="cmediatypeallocformatbuffer-method"></a>CMediaType. AllocFormatBuffer, método
+# <a name="cmediatypeallocformatbuffer-method"></a>Método CMediaType.AllocFormatBuffer
 
 El `AllocFormatBuffer` método asigna memoria para el bloque de formato.
 
@@ -51,13 +51,13 @@ Tamaño necesario para el bloque de formato, en bytes.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero al nuevo bloque si se realiza correctamente. De lo contrario, devuelve **null**.
+Devuelve un puntero al nuevo bloque si se realiza correctamente. De lo contrario, devuelve **NULL.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si el método asigna correctamente un nuevo bloque de formato, libera el bloque de formato existente. Si se produce un error en la asignación, el método deja el bloque de formato existente.
 
-El método actualiza los miembros **cbFormat** y **pbFormat** de la estructura de **\_ \_ tipo de medio am** .
+El método actualiza los **miembros cbFormat** y **pbFormat** de la **estructura AM MEDIA \_ \_ TYPE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ El método actualiza los miembros **cbFormat** y **pbFormat** de la estructura d
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Mtype. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Mtype.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ El método actualiza los miembros **cbFormat** y **pbFormat** de la estructura d
 
 <dl> <dt>
 
-[**Clase CMediaType**](cmediatype.md)
+[**CMediaType (clase)**](cmediatype.md)
 </dt> </dl>
 
  

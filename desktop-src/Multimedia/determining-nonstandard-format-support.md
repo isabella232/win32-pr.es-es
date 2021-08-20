@@ -9,16 +9,16 @@ keywords:
 - audio auxiliar, compatibilidad con formato estándar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d0933a82ca8da53c89e1cb8b7d32b40dc89ae0c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 30a90d38f7419b6fbdb3de951c0aa2205ccd3dd9ff5366eb1e69eab945220db1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119497285"
 ---
 # <a name="determining-nonstandard-format-support"></a>Determinar la compatibilidad con formatos no estándar
 
-Para ver si un dispositivo admite un formato determinado (estándar o no estándar), puede llamar a la función [**waveOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutopen) con la marca de consulta de formato de onda \_ \_ . En el ejemplo siguiente se usa esta técnica para determinar si un dispositivo de audio de forma de onda admite un formato especificado.
+Para ver si un dispositivo admite un formato determinado (estándar o no estándar), puede llamar a la [**función waveOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutopen) con la marca WAVE \_ FORMAT \_ QUERY. En el ejemplo siguiente se usa esta técnica para determinar si un dispositivo de audio de forma de onda admite un formato especificado.
 
 
 ```C++
@@ -43,10 +43,10 @@ MMRESULT IsFormatSupported(LPWAVEFORMATEX pwfx, UINT uDeviceID)
 
 
 
-Esta técnica para determinar la compatibilidad con el formato no estándar también se aplica a los dispositivos de entrada de audio de forma de onda. La única diferencia es que la función [**waveInOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveinopen) se usa en lugar de [**waveOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutopen) para consultar la compatibilidad con el formato.
+Esta técnica para determinar la compatibilidad con formato no estándar también se aplica a los dispositivos de entrada de audio de forma de onda. La única diferencia es que la [**función waveInOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveinopen) se usa en lugar de [**waveOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutopen) para consultar la compatibilidad con el formato.
 
-Para determinar si un formato de datos de forma de onda determinado es compatible con cualquiera de los dispositivos de audio de forma de onda de un sistema, use la técnica que se ilustra en el ejemplo anterior, pero especifique la \_ constante del asignador de ondas para el parámetro *uDeviceID* .
+Para determinar si un formato de datos de audio de forma de onda determinado es compatible con cualquiera de los dispositivos de audio de forma de onda de un sistema, use la técnica que se muestra en el ejemplo anterior, pero especifique la constante WAVE MAPPER para el parámetro \_ *uDeviceID.*
 
- 
+ 
 
- 
+ 

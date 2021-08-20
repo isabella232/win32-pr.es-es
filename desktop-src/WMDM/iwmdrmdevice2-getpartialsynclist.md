@@ -1,11 +1,11 @@
 ---
-title: IWMDRMDevice2 GetPartialSyncList, método
+title: Método IWMDRMDevice2 GetPartialSyncList
 description: El método GetPartialSyncList obtiene una lista de sincronización parcial.
 ms.assetid: 4ee8e9d7-d5d1-4614-b7a1-1dcb7f07b161
 keywords:
 - Método GetPartialSyncList de Windows Media Administrador de dispositivos
-- Método GetPartialSyncList de Windows Media Administrador de dispositivos, interfaz IWMDRMDevice2
-- Interfaz IWMDRMDevice2 de Windows Media Administrador de dispositivos, método GetPartialSyncList
+- Método GetPartialSyncList de Windows Media Administrador de dispositivos , interfaz IWMDRMDevice2
+- Interfaz IWMDRMDevice2 windows Media Administrador de dispositivos , método GetPartialSyncList
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c68c9c9a0bc47dcbea25158bb1f25db6cd084075
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c0bcff91d41ce77003219336431433ee511ff144dfcb8be7880526994689a929
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055663"
 ---
-# <a name="iwmdrmdevice2getpartialsynclist-method"></a>IWMDRMDevice2:: GetPartialSyncList (método)
+# <a name="iwmdrmdevice2getpartialsynclist-method"></a>IWMDRMDevice2::GetPartialSyncList (método)
 
-El método **GetPartialSyncList** obtiene una lista de sincronización parcial.
+El **método GetPartialSyncList** obtiene una lista de sincronización parcial.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,56 +50,56 @@ HRESULT GetPartialSyncList(
 
 <dl> <dt>
 
-*cMinCountThreshold* \[ de\]
+*cMinCountThreshold* \[ En\]
 </dt> <dd>
 
 Umbral de recuento mínimo.
 
 </dd> <dt>
 
-*cMinHoursThreshold* \[ de\]
+*cMinHoursThreshold* \[ En\]
 </dt> <dd>
 
-Umbral mínimo de horas.
+Umbral de horas mínimas.
 
 </dd> <dt>
 
-*dwStartingIndex* \[ de\]
+*dwStartingIndex* \[ En\]
 </dt> <dd>
 
-Posición inicial de la indización.
+Posición inicial para la indexación.
 
 </dd> <dt>
 
-*cItems* \[ de\]
+*cItems* \[ En\]
 </dt> <dd>
 
-Recuento de elementos que se van a indizar.
+Recuento de elementos que se indexarán.
 
 </dd> <dt>
 
-*ppbSyncList* \[ enuncia\]
+*ppbSyncList* \[ out\]
 </dt> <dd>
 
-Lista de sincronización de licencias recuperada.
+Se ha recuperado la lista de sincronización de licencias.
 
 </dd> <dt>
 
-*pcbSyncList* \[ enuncia\]
+*syncSyncList* \[ out\]
 </dt> <dd>
 
 Tamaño de la lista de sincronización de licencias, en bytes.
 
 </dd> <dt>
 
-*pdwNextStartingIndex* \[ enuncia\]
+*pdwNextStartingIndex* \[ out\]
 </dt> <dd>
 
-Posición inicial siguiente para la indexación.
+Siguiente posición inicial para la indexación.
 
 </dd> <dt>
 
-*pcItemsProcessed* \[ enuncia\]
+*pcItemsProcessed* \[ out\]
 </dt> <dd>
 
 Recuento de elementos que se están procesando.
@@ -108,13 +108,13 @@ Recuento de elementos que se están procesando.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Todos los métodos de interfaz de Windows Media Administrador de dispositivos pueden devolver cualquiera de las siguientes clases de códigos de error:
+El método devuelve un valor **HRESULT**. Todos los métodos de interfaz de Windows Media Administrador de dispositivos pueden devolver cualquiera de las siguientes clases de códigos de error:
 
 -   Códigos de error COM estándar
--   Códigos de error de Windows convertidos en valores HRESULT
--   Códigos de error de Administrador de dispositivos de Windows Media
+-   Windows códigos de error convertidos en valores HRESULT
+-   Windows Códigos de error Administrador de dispositivos multimedia
 
-Para obtener una lista extensa de posibles códigos de error, consulte [códigos de error](error-codes.md).
+Para obtener una amplia lista de posibles códigos de error, vea [Códigos de error](error-codes.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -122,8 +122,8 @@ Para obtener una lista extensa de posibles códigos de error, consulte [códigos
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>WMDDRMSP. idl</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>Mssachlp. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>WMDDRMSP.idl</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Mssachlp.lib</dt> </dl> |
 
 
 

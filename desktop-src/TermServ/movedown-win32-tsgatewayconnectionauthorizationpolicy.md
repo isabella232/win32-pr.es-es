@@ -1,6 +1,6 @@
 ---
 title: Método MoveDown de la Win32_TSGatewayConnectionAuthorizationPolicy clase
-description: Mueve la directiva de Escritorio remoto autorización de conexión actual (RD \ 160; CAP) una posición hacia abajo en el orden en que Rd \ 160; Se evalúan las CAP.
+description: Mueve la directiva de Escritorio remoto autorización de conexión actual (Escritorio remoto \ 160; CAP) una posición hacia abajo en el orden en que Rd \ 160; Se evalúan las CAP.
 ms.assetid: 57349e59-e200-4789-bbcb-d474eacde39d
 ms.tgt_platform: multiple
 keywords:
@@ -65,7 +65,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

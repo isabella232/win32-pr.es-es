@@ -1,5 +1,5 @@
 ---
-description: La estructura \_ FRAME DESCRIPTOR proporciona información descriptiva sobre los fotogramas sin procesar.
+description: La estructura \_ FRAME DESCRIPTOR proporciona información descriptiva sobre los marcos sin procesar.
 ms.assetid: f2fc256e-8e64-49c1-b2ad-ef656762d5c7
 title: FRAME_DESCRIPTOR estructura (Netmon.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118938576"
 ---
 # <a name="frame_descriptor-structure"></a>Estructura \_ DEL DESCRIPTOR DE MARCO
 
-La **estructura \_ FRAME DESCRIPTOR** proporciona información descriptiva sobre los fotogramas sin procesar.
+La **estructura \_ FRAME DESCRIPTOR** proporciona información descriptiva sobre los marcos sin procesar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -76,7 +76,7 @@ Longitud real del fotograma copiada.
 
 </dd> <dt>
 
-**Etype**
+**Tipo E**
 </dt> <dd>
 
 Nombre del tipo E.
@@ -122,7 +122,7 @@ Desplazamiento a los datos de protocolo obtenidos **de HighPort.**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |

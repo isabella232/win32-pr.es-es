@@ -1,7 +1,7 @@
 ---
-description: La \_ variable miembro m DialogId especifica el identificador de recursos para el cuadro de diálogo. Esta variable se inicializa en el método de constructor.
+description: La variable miembro m \_ DialogId especifica el identificador de recurso para el diálogo. Esta variable se inicializa en el método constructor.
 ms.assetid: 8a7fdc9a-c262-4777-8998-c436a8c2d71b
-title: 'Miembro CBasePropertyPage:: m_DialogId (Cprop. h)'
+title: CBasePropertyPage::m_DialogId miembro (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: db8862562922f302ced419d4e827a79b8ca12476
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a41ff722385117c62fe93628e99a2f8260814c86fe749c2550b519d06ce3a220
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955034"
 ---
-# <a name="cbasepropertypagem_dialogid-member"></a>Miembro DialogId CBasePropertyPage:: m \_
+# <a name="cbasepropertypagem_dialogid-member"></a>Miembro CBasePropertyPage::m \_ DialogId
 
-La `m_DialogId` variable miembro especifica el identificador de recursos para el cuadro de diálogo. Esta variable se inicializa en el método de constructor.
+La `m_DialogId` variable miembro especifica el identificador de recurso para el cuadro de diálogo. Esta variable se inicializa en el método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ int m_DialogId;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Cprop. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Cprop.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ int m_DialogId;
 
 <dl> <dt>
 
-[**Clase CBasePropertyPage**](cbasepropertypage.md)
+[**CBasePropertyPage (clase)**](cbasepropertypage.md)
 </dt> </dl>
 
  

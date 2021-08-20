@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 4f84ecac1eb910f4b3c97aba6ed42691c70b5b1f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 87d1b386409047eefc3e70ce5007082dda2158122ccfe4e2d3b2bea683a25a49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991095"
 ---
 # <a name="d3dxquaternionmultiply-function-d3dx10mathh"></a>Función D3DXQuaternionMultiply (D3DX10Math.h)
 
@@ -91,7 +91,7 @@ D3DXQuaternionMultiply(&q, &qX, &qY);
 
 La multiplicación de cuaterniones no es conmutativa.
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la **función D3DXQuaternionMultiply** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la **función D3DXQuaternionMultiply** se puede usar como parámetro para otra función.
 
 Use [**D3DXQuaternionNormalize para cualquier**](d3d10-d3dxquaternionnormalize.md) entrada de cuaternión que aún no esté normalizada.
 
@@ -106,7 +106,7 @@ Use [**D3DXQuaternionNormalize para cualquier**](d3d10-d3dxquaternionnormalize.m
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

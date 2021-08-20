@@ -36,7 +36,7 @@ ms.locfileid: "119061463"
 
 </dd> <dt><span id="GL_MAX_CLIP_PLANES"></span><span id="gl_max_clip_planes"></span>GL \_ MAX \_ CLIP \_ PLANES</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | Número máximo de planos de recorte de usuarios                                           |
 | Grupo de atributos: |                                                                                  |
@@ -88,9 +88,9 @@ ms.locfileid: "119061463"
 
 </dd> <dt><span id="GL_SUBPIXEL_BITS"></span><span id="gl_subpixel_bits"></span>BITS \_ DE SUBPIXEL DE GL \_</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Número de bits de precisión de subpíxel en *x* e *y*                              |
+| Descripción:     | Número de bits de precisión de subpixel *en x* e *y*                              |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 4                                                                                |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -101,7 +101,7 @@ ms.locfileid: "119061463"
 
 </dd> <dt><span id="GL_MAX_TEXTURE_SIZE"></span><span id="gl_max_texture_size"></span>TAMAÑO \_ MÁXIMO DE TEXTURA \_ \_ DE GL</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | Alto o ancho máximo de una imagen de textura (sin bordes)                     |
 | Grupo de atributos: |                                                                                  |
@@ -114,7 +114,7 @@ ms.locfileid: "119061463"
 
 </dd> <dt><span id="GL_MAX_PIXEL_MAP_TABLE"></span><span id="gl_max_pixel_map_table"></span>TABLA \_ DE MAPA DE \_ \_ PÍXELES MÁXIMO \_ DE GL</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | Tamaño máximo de una **tabla de traducción glPixelMap**                               |
 | Grupo de atributos: |                                                                                  |
@@ -127,7 +127,7 @@ ms.locfileid: "119061463"
 
 </dd> <dt><span id="GL_MAX_NAME_STACK_DEPTH"></span><span id="gl_max_name_stack_depth"></span>PROFUNDIDAD DE \_ PILA \_ DE NOMBRES \_ MÁXIMOS DE \_ GL</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | Profundidad de pila de nombre de selección máxima                                               |
 | Grupo de atributos: |                                                                                  |
@@ -140,7 +140,7 @@ ms.locfileid: "119061463"
 
 </dd> <dt><span id="GL_MAX_LIST_NESTING"></span><span id="gl_max_list_nesting"></span>\_ANIDAMIENTO \_ DE LISTAS \_ DE GL MAX</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | Anidamiento máximo de llamadas de lista de visualización                                                |
 | Grupo de atributos: |                                                                                  |
@@ -166,7 +166,7 @@ ms.locfileid: "119061463"
 
 </dd> <dt><span id="GL_MAX_VIEWPORT_DIMS"></span><span id="gl_max_viewport_dims"></span>GL \_ MAX \_ VIEWPORT \_ DIMS</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | Dimensiones máximas de ventanilla                                                      |
 | Grupo de atributos: |                                                                                  |
@@ -203,7 +203,7 @@ ms.locfileid: "119061463"
 
  
 
-</dd> <dt><span id="GL_RGBA_MODE"></span><span id="gl_rgba_mode"></span>MODO \_ RGBA \_ DE GL</dt> <dd> 
+</dd> <dt><span id="GL_RGBA_MODE"></span><span id="gl_rgba_mode"></span>MODO \_ RGBA \_ GL</dt> <dd> 
 
 | Propiedad | Valor |
 |------------------|----------------------------------------------------------------------------------|
@@ -218,7 +218,7 @@ ms.locfileid: "119061463"
 
 </dd> <dt><span id="GL_INDEX_MODE"></span><span id="gl_index_mode"></span>MODO \_ DE ÍNDICE DE \_ GL</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | True si los búferes de color almacenan índices                                              |
 | Grupo de atributos: |                                                                                  |
@@ -231,7 +231,7 @@ ms.locfileid: "119061463"
 
 </dd> <dt><span id="GL_DOUBLEBUFFER"></span><span id="gl_doublebuffer"></span>GL \_ DOUBLEBUFFER</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
 | Descripción:     | True si existen búferes front-and-back                                             |
 | Grupo de atributos: |                                                                                  |
@@ -244,7 +244,7 @@ ms.locfileid: "119061463"
 
 </dd> <dt><span id="GL_STEREO"></span><span id="gl_stereo"></span>GL \_ STEREO</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
 | Descripción:     | True si existen búferes izquierdos y derecho                                           |
 | Grupo de atributos: |                                                                                |
@@ -257,9 +257,9 @@ ms.locfileid: "119061463"
 
 </dd> <dt><span id="GL_POINT_SIZE_RANGE"></span><span id="gl_point_size_range"></span>INTERVALO DE \_ TAMAÑO DE PUNTO DE \_ \_ GL</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Intervalo (bajo a alto) de tamaños de punto suavizado de contorno                                 |
+| Descripción:     | Intervalo (de bajo a alto) de tamaños de punto suavizado de contorno                                 |
 | Grupo de atributos: |                                                                                |
 | Valor inicial:   | 1, 1                                                                           |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -270,7 +270,7 @@ ms.locfileid: "119061463"
 
 </dd> <dt><span id="GL_POINT_SIZE_GRANULARITY"></span><span id="gl_point_size_granularity"></span>GRANULARIDAD \_ DE TAMAÑO DE PUNTO DE \_ \_ GL</dt> <dd> 
 
-| Propiedad | Valor |
+| Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
 | Descripción:     | Granularidad del tamaño de punto suavizado                                             |
 | Grupo de atributos: |                                                                                |

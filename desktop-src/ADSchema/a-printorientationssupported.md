@@ -1,11 +1,11 @@
 ---
-title: Orientaciones de impresión-atributo compatible
-description: Rotación de página para la impresión horizontal.
+title: Atributo Print-Orientations-Supported
+description: Rotación de páginas para impresión horizontal.
 ms.assetid: a3e910f1-452e-4b85-8ede-50b7274475a0
 ms.tgt_platform: multiple
 keywords:
-- Orientación de impresión-esquema de AD de atributos admitidos
-- printOrientationsSupported esquema de AD de atributos
+- Esquema de AD de atributo Print-Orientations-Supported
+- PrintOrientationsSupported attribute AD Schema (Esquema de AD del atributo printOrientationsSupported)
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49888caa713de7dd12616dcb9932e52b15b2a454
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ffe346318b043f988f04d3f5f99cfd6c138ffdaa984eec2b0cf06f5cfa1c92ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022373"
 ---
-# <a name="print-orientations-supported-attribute"></a>Orientaciones de impresión-atributo compatible
+# <a name="print-orientations-supported-attribute"></a>Atributo Print-Orientations-Supported
 
-Rotación de página para la impresión horizontal.
+Rotación de páginas para impresión horizontal.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------------|
-| CN                | Orientaciones de impresión: compatible                                |
-| Nombre para mostrar de LDAP | printOrientationsSupported                                  |
-| Tamaño              | 4 bytes. Valores posibles: 0, 90, 270 y 0 = sin panorama. |
-| Actualizar privilegio  | \-                                                          |
+| CN                | Orientaciones de impresión admitidas                                |
+| Ldap-Display-Name | printOrientationsSupported                                  |
+| Size              | 4 bytes. Valores posibles: 0, 90, 270 y 0 = sin horizontal. |
+| Privilegio actualizar  | \-                                                          |
 | Frecuencia de actualización  | \-                                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.240                                      |
-| System-ID-GUID    | 281416d0-1968-11d0-a28f-00aa003049e2                        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                 |
+| System-Id-Guid    | 281416d0-1968-11d0-a28f-00aa003049e2                        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                 |
 
 
 
@@ -55,13 +55,13 @@ Rotación de página para la impresión horizontal.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | False                                          |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Falso                                          |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
@@ -76,13 +76,13 @@ Rotación de página para la impresión horizontal.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | False                                          |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Falso                                          |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
@@ -97,13 +97,13 @@ Rotación de página para la impresión horizontal.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | False                                          |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Falso                                          |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
@@ -118,13 +118,13 @@ Rotación de página para la impresión horizontal.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | False                                          |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Falso                                          |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
@@ -139,13 +139,13 @@ Rotación de página para la impresión horizontal.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | False                                          |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Falso                                          |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
@@ -160,13 +160,13 @@ Rotación de página para la impresión horizontal.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | False                                          |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Falso                                          |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |

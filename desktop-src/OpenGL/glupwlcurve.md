@@ -1,9 +1,9 @@
 ---
 title: Función gluPwlCurve (Glu.h)
-description: La función gluPwlCurve describe una curva de recorte lineal lineal no uniforme de B-Spline lógica (DSLBS).
+description: La función gluPwlCurve describe una curva de recorte lineal no uniforme de spline B lógica no uniforme (SPLINEBS).
 ms.assetid: 3d08e7e8-dfdf-447c-9795-bd73299412b5
 keywords:
-- Función GluPwlCurve OpenGL
+- Función gluPwlCurve OpenGL
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119061573"
 ---
-# <a name="glupwlcurve-function"></a>Función gluPwlCurve
+# <a name="glupwlcurve-function"></a>función gluPwlCurve
 
-La **función gluPwlCurve** describe una curva de recorte lineal lineal no uniforme de B-Spline lógica [(SPLINEBS).](using-nurbs-curves-and-surfaces.md)
+La **función gluPwlCurve** describe una curva de recorte lineal lineal no uniforme de B-Spline no uniforme [(SPLINEBS).](using-nurbs-curves-and-surfaces.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -85,15 +85,15 @@ Esta función no devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-La **función gluPwlCurve** describe una curva de recorte lineal por fragmentos para una superficie DE ASEBS. Una curva lineal por fragmentos consta de una lista de coordenadas de puntos en el espacio de parámetros para la superficie DE LA BASE DE DATOS QUE se va a recortar. Estos puntos están conectados con segmentos de línea para formar una curva. Si la curva es una aproximación a una curva real, los puntos deben estar lo suficientemente cerca como para que la ruta de acceso resultante aparezca curvada en la resolución utilizada en la aplicación.
+La **función gluPwlCurve** describe una curva de recorte lineal por fragmentos para una superficie DE ASEBS. Una curva lineal por fragmentos consta de una lista de coordenadas de puntos en el espacio de parámetros para la superficie DE LA QUE SE VA A RECORTAR. Estos puntos están conectados con segmentos de línea para formar una curva. Si la curva es una aproximación a una curva real, los puntos deben estar lo suficientemente cerca como para que la ruta de acceso resultante aparezca curvada en la resolución utilizada en la aplicación.
 
-Si *type* es GLU MAP1 TRIM 2, describe una curva en un espacio de parámetros \_ \_ \_ bidimensional *(u* y *v).* Si es GLU MAP1 TRIM 3, describe una curva en un espacio de parámetros \_ \_ \_ homogéneo bidimensional *(u,* *v* y *w).* Para obtener más información sobre el recorte de curvas, [**vea gluBeginTrim**](glubegintrim.md).
+Si *type* es GLU MAP1 TRIM 2, describe una curva en el espacio de parámetros \_ \_ \_ bidimensional *(u* y *v).* Si es GLU MAP1 TRIM 3, describe una curva en el espacio de parámetros \_ homogéneo bidimensional \_ \_ *(u*, *v* y *w).* Para obtener más información sobre el recorte de curvas, [**vea gluBeginTrim**](glubegintrim.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
@@ -103,7 +103,7 @@ Si *type* es GLU MAP1 TRIM 2, describe una curva en un espacio de parámetros \_
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

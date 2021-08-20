@@ -1,7 +1,7 @@
 ---
-description: Organiza en cascada todas las ventanas del escritorio. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar ventanas en cascada.
+description: En cascada todas las ventanas del escritorio. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar Ventanas en cascada.
 ms.assetid: 6A957D70-D6A3-4485-8DF3-7FD2C6DEFF78
-title: Método IShellDispatch. CascadeWindows (Shldisp. h)
+title: Método IShellDispatch.CascadeWindows (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 4252e4df579bc73e9f082630f9f98b83e3b57f47
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e14514c31f81327d9d0c0217479d2ce746c61ed58c9f71e1b2fa6f19f4e31ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032283"
 ---
-# <a name="ishelldispatchcascadewindows-method"></a>IShellDispatch. CascadeWindows, método
+# <a name="ishelldispatchcascadewindows-method"></a>Método IShellDispatch.CascadeWindows
 
-Organiza en cascada todas las ventanas del escritorio. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar **ventanas en cascada**.
+En cascada todas las ventanas del escritorio. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar **Ventanas en cascada**.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,15 +55,15 @@ Este método no devuelve ningún valor.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se implementa y se obtiene acceso a él a través del método [**Shell. CascadeWindows**](shell-cascadewindows.md) .
+Este método se implementa y se accede a este método a través [**del método Shell.CascadeWindows.**](shell-cascadewindows.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En los siguientes ejemplos se muestra el uso de **CascadeWindows** en JScript, VBScript y Visual Basic.
+En los ejemplos siguientes se muestra el uso **de CascadeWindows** en JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -79,7 +79,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -115,13 +115,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

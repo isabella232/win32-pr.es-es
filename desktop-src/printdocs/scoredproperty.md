@@ -71,7 +71,7 @@ Declare un elemento ScoredProperty denominado MediaSizeWidth con un valor de 11.
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
 title: Atributo Owner
-description: Nombre distintivo de un objeto que tiene la propiedad de un objeto.
+description: Nombre distintivo de un objeto que tiene la propiedad de un objeto .
 ms.assetid: 37b0e8eb-fe33-494a-9e1f-264cf9211344
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de propietario
-- Esquema de AD de atributos de propietario
+- Esquema de AD de atributo propietario
+- esquema de AD del atributo owner
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d416158fea3fd0e3dfbda1cd60b2543d3df16248
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f0ead422104e6abc310db14cc2d6d1fbe7e4f2d0508e7144ba4087dd1730793e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022473"
 ---
 # <a name="owner-attribute"></a>Atributo Owner
 
-Nombre distintivo de un objeto que tiene la propiedad de un objeto.
+Nombre distintivo de un objeto que tiene la propiedad de un objeto .
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
 | CN                | Propietario                                   |
-| Nombre para mostrar de LDAP | owner                                   |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| Ldap-Display-Name | owner                                   |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 2.5.4.32                                |
-| System-ID-GUID    | bf9679f3-0de6-11d0-a285-00aa003049e2    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | bf9679f3-0de6-11d0-a285-00aa003049e2    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,18 +55,18 @@ Nombre distintivo de un objeto que tiene la propiedad de un objeto.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 44                                                                                        |
+| Id. de vínculo                | 44                                                                                        |
 | MAPI-Id                | \-                                                                                        |
-| System-Only            | False                                                                                     |
-| Tiene un único valor       | True                                                                                      |
-| Está indexado             | False                                                                                     |
-| En el catálogo global      | False                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                              |
+| System-Only            | Falso                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                      |
+| Está indexado             | Falso                                                                                     |
+| En el catálogo global      | Falso                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                              |
 | Range-Lower            | \-                                                                                        |
 | Range-Upper            | \-                                                                                        |
 | Search-Flags           | 0x00000000                                                                                |
 | System-Flags           | 0x00000010                                                                                |
-| Clases usadas en        | [**Dispositivos**](c-device.md)<br/> [**Grupo de nombres**](c-groupofnames.md)<br/> |
+| Clases usadas en        | [**Dispositivo**](c-device.md)<br/> [**Grupo de nombres**](c-groupofnames.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Nombre distintivo de un objeto que tiene la propiedad de un objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 44                                                                                                                                                      |
+| Id. de vínculo                | 44                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Clases usadas en        | [**Dispositivos**](c-device.md)<br/> [**Grupo de nombres**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
+| Clases usadas en        | [**Dispositivo**](c-device.md)<br/> [**Grupo de nombres**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Nombre distintivo de un objeto que tiene la propiedad de un objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 44                                                                                                                                                      |
+| Id. de vínculo                | 44                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Clases usadas en        | [**Dispositivos**](c-device.md)<br/> [**Grupo de nombres**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
+| Clases usadas en        | [**Dispositivo**](c-device.md)<br/> [**Grupo de nombres**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Nombre distintivo de un objeto que tiene la propiedad de un objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 44                                                                                                                                                      |
+| Id. de vínculo                | 44                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Clases usadas en        | [**Dispositivos**](c-device.md)<br/> [**Grupo de nombres**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
+| Clases usadas en        | [**Dispositivo**](c-device.md)<br/> [**Grupo de nombres**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Nombre distintivo de un objeto que tiene la propiedad de un objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 44                                                                                                                                                      |
+| Id. de vínculo                | 44                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Clases usadas en        | [**Dispositivos**](c-device.md)<br/> [**Grupo de nombres**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
+| Clases usadas en        | [**Dispositivo**](c-device.md)<br/> [**Grupo de nombres**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Nombre distintivo de un objeto que tiene la propiedad de un objeto.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | 44                                                                                                                                                      |
+| Id. de vínculo                | 44                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Clases usadas en        | [**Dispositivos**](c-device.md)<br/> [**Grupo de nombres**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
+| Clases usadas en        | [**Dispositivo**](c-device.md)<br/> [**Grupo de nombres**](c-groupofnames.md)<br/> [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> |
 
 
 

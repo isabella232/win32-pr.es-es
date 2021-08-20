@@ -32,7 +32,7 @@ Especifica si el teléfono está conectado actualmente a TAPI. **TRUE si** está
 
 
 
-Especifica si se suspende la manipulación de TAPI del dispositivo telefónico. **TRUE si** se suspende, **FALSE en caso** contrario. El uso de un dispositivo de teléfono por parte de una aplicación se puede suspender temporalmente cuando el conmutador desea manipular el teléfono de forma que no pueda tolerar interferencias de la aplicación.
+Especifica si se suspende la manipulación de TAPI del dispositivo telefónico. **TRUE si** se suspende, **FALSE en caso** contrario. El uso de un dispositivo telefónico por parte de una aplicación se puede suspender temporalmente cuando el conmutador quiere manipular el teléfono de una manera que no pueda tolerar interferencias de la aplicación.
 
 
 </dt> </dl> </dd> </dl>

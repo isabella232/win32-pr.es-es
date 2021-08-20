@@ -1,9 +1,9 @@
 ---
-title: MDM_ClientCertificateInstall_Install03 (clase)
-description: La \_ clase Install03 de ClientCertificateInstall de MDM \_ permite a la empresa establecer la instalación de certificados de cliente.
+title: MDM_ClientCertificateInstall_Install03 clase
+description: La clase \_ MDM ClientCertificateInstall \_ Install03 permite a la empresa establecer la instalación de certificados de cliente.
 ms.assetid: 0083e54c-e621-47da-a20d-17c8bbf7dd3a
 keywords:
-- MDM_ClientCertificateInstall_Install03 (clase)
+- MDM_ClientCertificateInstall_Install03 clase
 - MDM_ClientCertificateInstall_Install03 clase, descrita
 topic_type:
 - apiref
@@ -17,21 +17,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04ac690808551e05d6ceba4f3c84bcaa521d4d01
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d013341f7afd20f71bc939617e551cb018dbeaa96d5f140b37de99ea79843f37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077339"
 ---
-# <a name="mdm_clientcertificateinstall_install03-class"></a>\_Clase Install03 ClientCertificateInstall de MDM \_
+# <a name="mdm_clientcertificateinstall_install03-class"></a>Clase \_ Mdm ClientCertificateInstall \_ Install03
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La **clase \_ \_ Install03 de ClientCertificateInstall de MDM** permite a la empresa establecer la instalación de certificados de cliente. Necesario para la inscripción de certificados SCEP. Nodo primario para agrupar la solicitud relacionada con la instalación de certificados SCEP.
+La **clase \_ MDM ClientCertificateInstall \_ Install03** permite a la empresa establecer la instalación de certificados de cliente. Se requiere para la inscripción de certificados SCEP. Nodo primario para agrupar la solicitud relacionada con la instalación del certificado SCEP.
 
 > [!Note]  
-> Aunque los nodos secundarios de instalar admiten comandos Replace, después de que el comando exec se envíe al dispositivo, el dispositivo tomará los valores que se establecen cuando se acepta el comando exec. El servidor no debería esperar que el cambio de valor del nodo después de que se acepte el comando exec afectará a la inscripción actual. El servidor debe comprobar el valor del nodo de estado y asegurarse de que el dispositivo no está en fase desconocida antes de cambiar los valores de los nodos secundarios.
+> Aunque los nodos secundarios de Instalar admiten comandos Replace, después de enviar el comando Exec al dispositivo, el dispositivo tomará los valores que se establecen cuando se acepte el comando Exec. El servidor no debe esperar que el cambio de valor del nodo después de que se acepte el comando Exec afectará a la inscripción actual en proceso. El servidor debe comprobar el valor del nodo Estado y asegurarse de que el dispositivo no está en una fase desconocida antes de cambiar los valores del nodo secundario.
 
  
 
@@ -68,14 +68,14 @@ class MDM_ClientCertificateInstall_Install03
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ \_ Install03 de MDM ClientCertificateInstall** tiene estos tipos de miembros:
+La **clase \_ Mdm ClientCertificateInstall \_ Install03** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La **clase \_ \_ Install03 de MDM ClientCertificateInstall** tiene estos métodos.
+La **clase \_ MDM ClientCertificateInstall \_ Install03** tiene estos métodos.
 
 
 
@@ -89,7 +89,7 @@ La **clase \_ \_ Install03 de MDM ClientCertificateInstall** tiene estos método
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ Install03 de MDM ClientCertificateInstall** tiene estas propiedades.
+La **clase \_ Mdm ClientCertificateInstall \_ Install03** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -99,7 +99,7 @@ La **clase \_ \_ Install03 de MDM ClientCertificateInstall** tiene estas propied
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -110,7 +110,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -121,7 +121,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -132,7 +132,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -143,7 +143,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -154,7 +154,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -165,7 +165,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -182,9 +182,9 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Necesario para la inscripción de certificados SCEP. Nodo primario para agrupar la solicitud relacionada con la instalación de certificados SCEP.
+Se requiere para la inscripción de certificados SCEP. Nodo primario para agrupar la solicitud relacionada con la instalación del certificado SCEP.
 
-El formato es node.
+El nodo Formato es .
 
 </dd> <dt>
 
@@ -194,7 +194,7 @@ El formato es node.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -205,7 +205,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -216,7 +216,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -235,7 +235,7 @@ Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 
 Describe la ruta de acceso completa al nodo primario.
 
-La cadena es "./Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/SCEP/*UniqueID*"
+La cadena es "./Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/SCEP/*UniqueID"*
 
 </dd> <dt>
 
@@ -245,7 +245,7 @@ La cadena es "./Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/SCEP/*Unique
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -256,7 +256,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -267,7 +267,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -278,7 +278,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -289,7 +289,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -300,7 +300,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -311,7 +311,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -322,7 +322,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> </dl>
@@ -331,12 +331,12 @@ Tipo de acceso: lectura/escritura
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -345,7 +345,7 @@ Tipo de acceso: lectura/escritura
 
 <dl> <dt>
 
-[Usar scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripts de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

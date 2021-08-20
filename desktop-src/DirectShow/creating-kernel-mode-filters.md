@@ -1,25 +1,25 @@
 ---
-description: Crear filtros de Kernel-Mode
+description: Creación de Kernel-Mode filtros
 ms.assetid: cbc86a5d-c53a-44a0-aa81-5c41527a8f67
-title: Crear filtros de Kernel-Mode
+title: Creación de Kernel-Mode filtros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c915a08312e33f0e35245325fd8bce7e55e486c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 473565046c462e8992350c3662360e4c22b3b5b75e10f0e79e1399885355056e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953944"
 ---
-# <a name="creating-kernel-mode-filters"></a>Crear filtros de Kernel-Mode
+# <a name="creating-kernel-mode-filters"></a>Creación de Kernel-Mode filtros
 
-Determinados filtros de modo kernel no se pueden crear a través de **CoCreateInstance** y, por tanto, no tienen CLSID. Estos filtros incluyen el [convertidor Tee/Sink-to-Sink](tee-sink-to-sink-converter.md), el filtro del [descodificador de CC](cc-decoder-filter.md) y el filtro de [códec elemento WST](wst-codec-filter.md) . Para crear uno de estos filtros, use el objeto de [enumerador de dispositivos del sistema](system-device-enumerator.md) y busque por el nombre del filtro.
+Algunos filtros en modo kernel no se pueden crear a través **de CoCreateInstance** y, por tanto, no tienen CLSID. Estos filtros incluyen [tee/sink-to-sink converter,](tee-sink-to-sink-converter.md)el [filtro CC Decoder](cc-decoder-filter.md) y el filtro de códec [WST.](wst-codec-filter.md) Para crear uno de estos filtros, use el objeto [Enumerador de](system-device-enumerator.md) dispositivos del sistema y busque por el nombre del filtro.
 
 1.  Cree el enumerador de dispositivos del sistema.
-2.  Llame al método [**ICreateDevEnum:: CreateClassEnumerator**](/windows/desktop/api/Strmif/nf-strmif-icreatedevenum-createclassenumerator) con el CLSID de la categoría de filtro para ese filtro. Este método crea un enumerador para la categoría de filtro. (Un *enumerador* es simplemente un objeto que devuelve una lista de otros objetos, utilizando una interfaz com definida). El enumerador devuelve punteros **IMoniker** , que representan los filtros de esa categoría.
-3.  Para cada moniker, llame a **IMoniker:: BindToStorage** para obtener una interfaz **IPropertyBag** .
-4.  Llame a **IPropertyBag:: Read** para obtener el nombre del filtro.
-5.  Si el nombre coincide, llame a **IMoniker:: BindToObject** para crear el filtro.
+2.  Llame al [**método ICreateDevEnum::CreateClassEnumerator**](/windows/desktop/api/Strmif/nf-strmif-icreatedevenum-createclassenumerator) con el CLSID de la categoría de filtro para ese filtro. Este método crea un enumerador para la categoría de filtro. (Un *enumerador* es simplemente un objeto que devuelve una lista de otros objetos, mediante una interfaz COM definida). El enumerador devuelve **punteros IMoniker,** que representan los filtros de esa categoría.
+3.  Para cada moniker, llame a **IMoniker::BindToStorage** para obtener una **interfaz IPropertyBag.**
+4.  Llame **a IPropertyBag::Read** para obtener el nombre del filtro.
+5.  Si el nombre coincide, llame a **IMoniker::BindToObject** para crear el filtro.
 
 En el código siguiente se muestra una función que realiza estos pasos:
 
@@ -89,7 +89,7 @@ HRESULT CreateKernelFilter(
 
 
 
-En el ejemplo de código siguiente se usa esta función para crear el filtro del descodificador de CC y agregarlo al gráfico de filtros:
+En el ejemplo de código siguiente se usa esta función para crear el filtro descodificador CC y agregarlo al gráfico de filtros:
 
 
 ```C++

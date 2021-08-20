@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 4b16eed97c891b4b4f5bd283496868d99f9e0fbc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ebc607bf10be8b94fa5274e5539953344c99c263db13dec6f8982146f60f4551
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991795"
 ---
 # <a name="swbemservicesassociatorsofasync-method"></a>Método SWbemServices.AssociatorsOfAsync
 
@@ -63,14 +63,14 @@ SWbemServices.AssociatorsOfAsync( _
 *objWbemSink* 
 </dt> <dd>
 
-Necesario. Receptor de objetos que recibe los objetos de forma asincrónica. Cree un [**objeto SWbemSink**](swbemsink.md) para recibir los objetos.
+Obligatorio. Receptor de objetos que recibe los objetos de forma asincrónica. Cree un [**objeto SWbemSink**](swbemsink.md) para recibir los objetos.
 
 </dd> <dt>
 
 *strObjectPath* 
 </dt> <dd>
 
-Necesario. Cadena que contiene la ruta de acceso del objeto de la clase o instancia de origen. Para obtener más información, [vea Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
+Obligatorio. Cadena que contiene la ruta de acceso del objeto de la clase o instancia de origen. Para obtener más información, [vea Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Valor booleano que indica si se debe devolver una lista de nombres de clase en l
 *bSchemaOnly* \[ Opcional\]
 </dt> <dd>
 
-Valor booleano que indica si la consulta se aplica al esquema en lugar de a los datos. El valor predeterminado de este parámetro es **FALSE.** Solo se puede establecer en **TRUE si** el *parámetro strObjectPath* especifica la ruta de acceso del objeto de una clase. Cuando se establece en **TRUE**, el conjunto de puntos de conexión devueltos representa clases que están asociadas adecuadamente a la clase de origen en el esquema.
+Valor booleano que indica si la consulta se aplica al esquema en lugar de a los datos. El valor predeterminado de este parámetro es **FALSE.** Solo se puede establecer en **TRUE si** el *parámetro strObjectPath* especifica la ruta de acceso del objeto de una clase. Cuando se establece en **TRUE,** el conjunto de puntos de conexión devueltos representa clases que están asociadas adecuadamente a la clase de origen en el esquema.
 
 </dd> <dt>
 
@@ -133,7 +133,7 @@ Cadena que contiene un nombre de calificador. Si se especifica, este parámetro 
 *iFlags* \[ Opcional\]
 </dt> <dd>
 
-Entero que especifica las marcas adicionales para la operación. El valor predeterminado de este parámetro **es wbemFlagDontSendStatus.** Este parámetro puede aceptar los valores siguientes.
+Entero que especifica las marcas adicionales a la operación. El valor predeterminado de este parámetro **es wbemFlagDontSendStatus**. Este parámetro puede aceptar los valores siguientes.
 
 <dt>
 
@@ -144,7 +144,7 @@ Entero que especifica las marcas adicionales para la operación. El valor predet
 
 </dt> <dd>
 
-Hace que las llamadas asincrónicas envíen actualizaciones de estado al controlador de eventos [**OnProgress**](swbemsink-onprogress.md) para el receptor del objeto.
+Hace que las llamadas asincrónicas envíen actualizaciones de estado al controlador de eventos [**OnProgress**](swbemsink-onprogress.md) para el receptor de objetos.
 
 </dd> <dt>
 
@@ -166,14 +166,14 @@ Impide que las llamadas asincrónicas envíen actualizaciones de estado al contr
 
 </dt> <dd>
 
-Hace que WMI devuelva datos de modificación de clase junto con la definición de clase base. Para obtener más información sobre los calificadores modificados, vea [Localización de información de clase WMI](localizing-wmi-class-information.md).
+Hace que WMI devuelva datos de modificación de clase junto con la definición de clase base. Para obtener más información sobre los calificadores modificados, vea [Localizing WMI Class Information](localizing-wmi-class-information.md).
 
 </dd> </dl> </dd> <dt>
 
 *objWbemNamedValueSet* \[ Opcional\]
 </dt> <dd>
 
-Normalmente, esto no está definido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que está atendiendo la solicitud. Un proveedor que admita o requiera dicha información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
+Normalmente, esto es indefinido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que está atendiendo la solicitud. Un proveedor que admita o requiera dicha información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
 
 </dd> <dt>
 
@@ -190,7 +190,7 @@ Este método no devuelve ningún valor. Si se realiza correctamente, el receptor
 
 ## <a name="error-codes"></a>Códigos de error
 
-Después de completar el método **AssociatorsOfAsync,** el [objeto Err](/previous-versions//sbf5ze0e(v=vs.85)) puede contener uno de los códigos de error de la lista siguiente.
+Después de completar el **método AssociatorsOfAsync,** el objeto [Err](/previous-versions//sbf5ze0e(v=vs.85)) puede contener uno de los códigos de error de la lista siguiente.
 
 <dl> <dt>
 
@@ -215,14 +215,14 @@ Se especificó un parámetro no válido.
 
 </dd> <dt>
 
-**wbemErrOutOfMemory-** 2147749894 (0x80041006)
+**wbemErrOutOfMemory:** 2147749894 (0x80041006)
 </dt> <dd>
 
 No hay suficiente memoria para completar la operación.
 
 </dd> <dt>
 
-**wbemErrNotFound** - 2147749890 (0x80041002)
+**wbemErrNotFound:** 2147749890 (0x80041002)
 </dt> <dd>
 
 No se encontró el elemento solicitado.
@@ -231,21 +231,21 @@ No se encontró el elemento solicitado.
 
 ## <a name="remarks"></a>Comentarios
 
-Esta llamada se devuelve inmediatamente. Los objetos y el estado solicitados se devuelven al autor de la llamada a través de devoluciones de llamada entregadas al receptor que se especifica en *objWbemSink*. Para procesar cada objeto cuando vuelva, cree *un objeto objWbemSink*. [**Subrutina de eventos OnObjectReady.**](swbemsink-onobjectready.md) Una vez devueltos todos los objetos, puede realizar el procesamiento final en la implementación de *objWbemSink*. [**Evento OnCompleted.**](swbemsink-oncompleted.md)
+Esta llamada se devuelve inmediatamente. Los objetos y el estado solicitados se devuelven al autor de la llamada a través de devoluciones de llamada entregadas al receptor especificado en *objWbemSink*. Para procesar cada objeto cuando vuelva, cree *un objeto objWbemSink*. [**Subrutina de eventos OnObjectReady.**](swbemsink-onobjectready.md) Una vez devueltos todos los objetos, puede realizar el procesamiento final en la implementación de *objWbemSink*. [**Evento OnCompleted.**](swbemsink-oncompleted.md)
 
-Una devolución de llamada asincrónica permite que un usuario no autenticado proporcione datos al receptor. Esto supone riesgos de seguridad para los scripts y las aplicaciones. Para eliminar los riesgos, vea [Establecer la seguridad en una llamada asincrónica.](setting-security-on-an-asynchronous-call.md)
+Una devolución de llamada asincrónica permite a un usuario no autenticado proporcionar datos al receptor. Esto supone riesgos de seguridad para los scripts y las aplicaciones. Para eliminar los riesgos, vea [Establecer la seguridad en una llamada asincrónica.](setting-security-on-an-asynchronous-call.md)
 
-Use el *parámetro objWbemAsyncContext en* scripts para comprobar el origen de una llamada.
+Use el *parámetro objWbemAsyncContext en* los scripts para comprobar el origen de una llamada.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemServices<br/>                                                         |
@@ -253,7 +253,7 @@ Use el *parámetro objWbemAsyncContext en* scripts para comprobar el origen de u
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

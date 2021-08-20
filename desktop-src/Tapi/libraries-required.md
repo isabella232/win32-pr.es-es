@@ -1,40 +1,40 @@
 ---
-description: A continuación se muestra una lista de los archivos. lib necesarios para compilar varias aplicaciones TAPI 3, desde 1/22/01.
+description: A continuación se muestra una lista de los archivos .lib necesarios para compilar varias aplicaciones TAPI 3, a partir del 22/1/01.
 ms.assetid: f1765829-9a5d-4e85-b898-6679279aa6d9
-title: Bibliotecas requeridas
+title: Bibliotecas necesarias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0948599041c466a337d2d6828750a9996dc8d813
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8337042681d84b5f93d5d0218cff18c4bef9259543f60fd13f692ebe5611835
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119621365"
 ---
-# <a name="libraries-required"></a>Bibliotecas requeridas
+# <a name="libraries-required"></a>Bibliotecas necesarias
 
-Una lista de archivos. lib necesarios para compilar varias aplicaciones TAPI 3, desde 1/22/01:
+Una lista de archivos .lib necesarios para compilar varias aplicaciones TAPI 3, a partir del 22/1/01:
 
--   Advapi32. lib
--   Amstrmid. lib (GUID de ActiveMovie)
+-   Advapi32.lib
+-   Amstrmid.lib (GUID de ActiveMovie)
 -   Kernel32.lib
--   Mdhcpid. lib (GUID de multidifusión)
--   Ole32. lib (COM)
--   Oleaut32. lib (automatización COM)
--   Rendid. lib (GUID de encuentro)
--   Rpcndr. lib
--   Rpcns4. lib
--   Rpcrt4. lib
--   Sdpblbid. lib (GUID del Protocolo de descriptor de sesión (SDP))
--   Strmiids. lib
--   User32. lib
--   UUID. lib
--   Wldap32. lib
--   Ws2 \_ 32. lib
+-   Mdhcpid.lib (GUID de multidifusión)
+-   Ole32.lib (COM)
+-   Oleaut32.lib (Automatización COM)
+-   Rendid.lib (GUID de Rendezvous)
+-   Rpc rpc.lib
+-   Rpcns4.lib
+-   Rpcrt4.lib
+-   Sdpblbid.lib (GUID del Protocolo de descriptor de sesión (SDP)
+-   Strmiids.lib
+-   User32.lib
+-   Uuid.lib
+-   Wldap32.lib
+-   Ws2 \_ 32.lib
 
-Si usa Microsoft Visual Studio, es posible que tenga que actualizar la versión. En concreto, Link.exe debe llevar una fecha 3/19/98 o posterior.
+Si usa Microsoft Visual Studio, es posible que tenga que actualizar la versión. En concreto, Link.exe debe llevar una fecha del 19/03/98 o posterior.
 
-La definición del compilador debe incluir \_ Win32 \_ WinNT establecido en al menos 0x500 y \_ Win32 \_ DCOM.
+Las define el compilador deben incluir WINNT WIN32 establecido en al menos \_ 0x500 y \_ \_ WIN32 \_ DCOM.
 
  
 

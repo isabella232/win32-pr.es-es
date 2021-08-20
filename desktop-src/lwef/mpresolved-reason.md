@@ -46,7 +46,7 @@ typedef enum tagMPRESOLVED_REASON {
 <span id="MPRESOLVED_REASON_UNKNOWN"></span><span id="mpresolved_reason_unknown"></span>**MOTIVO MPRESOLVED \_ \_ DESCONOCIDO**
 </dt> <dd>
 
-En un estado de error.
+En estado de error.
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ Ha pasado suficiente tiempo. El valor predeterminado es una semana.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |

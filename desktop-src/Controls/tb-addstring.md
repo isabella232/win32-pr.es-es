@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_ADDSTRING (commctrl. h)
+title: TB_ADDSTRING mensaje (Commctrl.h)
 description: Agrega una nueva cadena al grupo de cadenas de la barra de herramientas.
 ms.assetid: e22ee2cc-6443-49d3-aea6-a4ab256d4538
 keywords:
-- TB_ADDSTRING controles de mensajes de Windows
+- TB_ADDSTRING controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fba57c298a2b903a65c429ae6b4f9d55fc9ed2b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c0556add41addb4a58d5734ab900af4a43c2018b533723145ed4f9c8272e3890
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078379"
 ---
-# <a name="tb_addstring-message"></a>Message TB de \_ ADDSTRING
+# <a name="tb_addstring-message"></a>Mensaje \_ ADDSTRING de TB
 
 Agrega una nueva cadena al grupo de cadenas de la barra de herramientas.
 
@@ -34,7 +34,7 @@ Agrega una nueva cadena al grupo de cadenas de la barra de herramientas.
 *wParam* 
 </dt> <dd>
 
-Identificador de la instancia de módulo con un archivo ejecutable que contiene el recurso de cadena. Si *lParam* en su lugar apunta a una matriz de caracteres con una o más cadenas, establezca este parámetro en **null**.
+Identificador de la instancia del módulo con un archivo ejecutable que contiene el recurso de cadena. Si, *en su lugar, lParam* apunta a una matriz de caracteres con una o varias cadenas, establezca este parámetro en **NULL.**
 
 </dd> <dt>
 
@@ -47,23 +47,23 @@ Identificador de recurso para el recurso de cadena o un puntero a una matriz TCH
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el índice de la primera cadena nueva si se realiza correctamente, o-1 en caso contrario.
+Devuelve el índice de la primera cadena nueva si se realiza correctamente o -1 en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si *wParam* es **null**, *lParam* apunta a una matriz de caracteres con una o más cadenas terminadas en NULL. La última cadena de la matriz debe terminar con dos caracteres null.
+Si *wParam es* **NULL,** *lParam* apunta a una matriz de caracteres con una o varias cadenas terminadas en NULL. La última cadena de la matriz debe terminar con dos caracteres NULL.
 
-Si *wParam* es el hInstance de la aplicación o de otro módulo que contiene un recurso de cadena, *lParam* es el identificador de recursos de la cadena. Cada elemento de la cadena debe comenzar por un carácter separador arbitrario y la cadena debe terminar con dos caracteres tales. Por ejemplo, el texto de tres botones podría aparecer en la tabla de cadenas como "/New/Open/Save//". El mensaje devuelve el índice de "New" en el grupo de cadenas de la barra de herramientas y los demás elementos están en posiciones consecutivas.
+Si *wParam es* el HINSTANCE de la aplicación o de otro módulo que contiene un recurso de cadena, *lParam* es el identificador de recurso de la cadena. Cada elemento de la cadena debe comenzar con un carácter separador arbitrario y la cadena debe terminar con dos de estos caracteres. Por ejemplo, el texto de tres botones podría aparecer en la tabla de cadenas como "/New/Open/Save//". El mensaje devuelve el índice de "New" en el grupo de cadenas de la barra de herramientas y los demás elementos se encuentran en posiciones consecutivas.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TB \_ ADDSTRINGW** (Unicode) y **TB \_ ADDSTRINGA** (ANSI)<br/>                 |
 
 

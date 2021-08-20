@@ -1,10 +1,10 @@
 ---
-title: Sintaxis de String (teletexto)
-description: Cadena sin distinción de mayúsculas y minúsculas que contiene caracteres del juego de caracteres teletexto.
+title: Sintaxis de String(Teletex)
+description: Cadena que no tiene en cuenta mayúsculas de minúsculas que contiene caracteres del juego de caracteres teletex.
 ms.assetid: f3217d22-147b-4d96-9169-14c2cc9573eb
 ms.tgt_platform: multiple
 keywords:
-- Esquema AD de sintaxis de cadena (teletexto)
+- Esquema de AD de sintaxis string(Teletex)
 topic_type:
 - apiref
 api_name:
@@ -13,27 +13,27 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c0d3f9536423788fefd36b5e70a3813facaba66
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 19d4ff84e26fa649286a24cb7dd62789474fdcb6481111902e677964ff32f235
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021564"
 ---
-# <a name="stringteletex-syntax"></a>Sintaxis de String (teletexto)
+# <a name="stringteletex-syntax"></a>Sintaxis de String(Teletex)
 
-Cadena sin distinción de mayúsculas y minúsculas que contiene caracteres del juego de caracteres teletexto.
+Cadena que no tiene en cuenta mayúsculas de minúsculas que contiene caracteres del juego de caracteres teletex.
 
 
 
 | Entrada | Value |
 |--------------|------------------------------------------------------------------------|
 | Nombre         | String(Teletex)                                                        |
-| IDENTIFICADOR de sintaxis    | 2.5.5.4                                                                |
-| IDENTIFICADOR DE OM        | 20                                                                     |
-| Tipo MAPI    | TSTRING                                                                |
-| Tipo ADS     | ADSTYPE \_ caso \_ omitir \_ cadena                                          |
-| Tipo Variant | VT \_ BSTR                                                               |
+| Identificador de sintaxis    | 2.5.5.4                                                                |
+| Id. de OM        | 20                                                                     |
+| Tipo DE ARCHIVO    | TSTRING                                                                |
+| ADS Type     | ADSTYPE \_ CASE \_ IGNORE \_ STRING                                          |
+| Tipo de variante | VT \_ BSTR                                                               |
 | Tipo de SDS     | [System.String](/dotnet/api/system.string) |
 
 
