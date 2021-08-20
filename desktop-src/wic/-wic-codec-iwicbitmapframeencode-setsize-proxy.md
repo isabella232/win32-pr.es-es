@@ -1,7 +1,7 @@
 ---
-description: Función de proxy para el método setSize.
+description: Función de proxy para el método SetSize.
 ms.assetid: 28b4967f-4c8a-475c-8f86-c19e5d424a26
-title: IWICBitmapFrameEncode_SetSize_Proxy función)
+title: IWICBitmapFrameEncode_SetSize_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 0a8046ede01cdd30d6a30eb81cbc1617531ef1d2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4185ced74239d4dadbc64c969a112c825ada825cebe2dd5cf0037126c19d2885
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118033908"
 ---
-# <a name="iwicbitmapframeencode_setsize_proxy-function"></a>IWICBitmapFrameEncode \_ establece la \_ función de proxy
+# <a name="iwicbitmapframeencode_setsize_proxy-function"></a>IWICBitmapFrameEncode \_ SetSize \_ Proxy function
 
-Función de proxy para el método [**setSize**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setsize) .
+Función de proxy para el [**método SetSize.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setsize)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,28 +42,28 @@ HRESULT IWICBitmapFrameEncode_SetSize_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) \** _
+Tipo: **[ **IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode)\***
 
-Puntero a este objeto [_ *IWICBitmapFrameEncode* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) .
+Puntero a este [**objeto IWICBitmapFrameEncode.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode)
 
 </dd> <dt>
 
-*uiWidth* \[ de\]
+*uiWidth* \[ En\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 Ancho de la imagen de salida.
 
 </dd> <dt>
 
-*uiHeight* \[ de\]
+*uiHeight* \[ En\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 Alto de la imagen de salida.
 
@@ -73,7 +73,7 @@ Alto de la imagen de salida.
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -81,11 +81,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows aplicaciones \[ de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

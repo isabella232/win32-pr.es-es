@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: e52cc1adb1e48f65599b1bf7179f7953823f1e1c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8d9b2d93a6c4166eaa2aa8b7bbdbe7e1473288ec209d5e6d43a4c9331121105e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117914622"
 ---
 # <a name="d3dxvec4cross-function-d3dx10mathh"></a>Función D3DXVec4Cross (D3DX10Math.h)
 
@@ -98,7 +98,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

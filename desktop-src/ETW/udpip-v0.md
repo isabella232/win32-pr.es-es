@@ -1,5 +1,5 @@
 ---
-description: 'UdpIp_V0 clase : esta clase es la clase primaria para los eventos UDP/IP. La sintaxis siguiente se simplifica a partir del código MOF.'
+description: 'UdpIp_V0 clase: esta clase es la clase primaria para los eventos UDP/IP. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: 2c7ac6b2-7dd7-4da7-ae0b-ac0ffffeb74b
 title: UdpIp_V0 clase
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 845466d630a671416ac465d0b73d99976d4521e9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6b6a2426a1bd42a028d40d166230b5e36941dbe2a460e6201caa49d1ed93571d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813723"
 ---
 # <a name="udpip_v0-class"></a>UdpIp \_ V0 (clase)
 
@@ -42,14 +42,14 @@ La **clase UdpIp \_ V0** no define ningún miembro.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ XP\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                   |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

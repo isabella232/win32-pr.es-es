@@ -1,19 +1,19 @@
 ---
-description: Cada efecto compatible con DXSAS debe definir, como mínimo, un parámetro de efecto global único con la semántica global.
+description: Cada efecto compatible con DXSAS debe definir, como mínimo, un único parámetro de efecto global con la semántica global.
 ms.assetid: 2112db8d-6a11-451d-a9d2-ac1b3cb2da95
 title: Parámetro global
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 647ef789e37cd7c8d6cd2fe554f1f8becbfd5e92
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e4dc0a1337505cec30960ca12fa91ed692b9de9434e702c3fb03829e89ab46d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105714733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118094776"
 ---
 # <a name="global-parameter"></a>Parámetro global
 
-Cada efecto compatible con DXSAS debe definir, como mínimo, un parámetro de efecto global único con la semántica global. El parámetro global también puede usar una o varias anotaciones opcionales. La sintaxis es la siguiente:
+Cada efecto compatible con DXSAS debe definir, como mínimo, un único parámetro de efecto global con la semántica global. El parámetro global también puede usar una o varias anotaciones opcionales. La sintaxis es la siguiente:
 
 
 ```
@@ -30,7 +30,7 @@ donde:
 
 -   VariableName es un nombre de variable de cadena de texto ASCII especificado por el usuario.
 -   SasGlobal es la palabra clave semántica que identifica este parámetro como el parámetro DXSAS global.
--   SasVersion es la única anotación requerida.
+-   SasVersion es la única anotación necesaria.
 -   OptionalAnnotations puede incluir lo siguiente:
     -   [SasEffectAuthor](#saseffectauthor)
     -   [SasEffectAuthoringSoftware](#saseffectauthoringsoftware)
@@ -42,7 +42,7 @@ donde:
 
 ## <a name="sasversion"></a>SasVersion
 
-La única anotación necesaria es SasVersion. Se declara de la siguiente manera:
+La única anotación necesaria es SasVersion. Se declara de esta forma:
 
 
 ```
@@ -53,15 +53,15 @@ int3 SasVersion = { major, minor, revision };
 
 donde:
 
--   Major indica la versión principal de DXSAS. Las versiones principales de DXSAS pueden contener cambios de barrido en el conjunto de semánticas y anotaciones definidas. La semántica y las anotaciones se pueden agregar y quitar y, en general, no se garantiza la compatibilidad con versiones anteriores.
--   Minor indica la versión secundaria de SAS. Las versiones secundarias de DXSAS pueden incluir la adición de nuevas semánticas o anotaciones. Además, la semántica y las anotaciones se pueden marcar como desusadas en el estándar DXSAS. Las aplicaciones host todavía deben admitir la semántica y las anotaciones desusadas, pero pueden emitir un diagnóstico de advertencia cuando se use una semántica o una anotación de este tipo. Las versiones secundarias son compatibles con versiones anteriores.
--   revisión indica la revisión de DXSAS. Las revisiones de DXSAS solo existen como un medio para corregir errores, quitar ambigüedad y perfeccionar el estándar. Las revisiones del estándar son compatibles con versiones anteriores.
+-   principal indica la versión principal de DXSAS. Las versiones principales de DXSAS pueden contener cambios de barrido en el conjunto de semántica y anotaciones definidas. La semántica y las anotaciones se pueden agregar y quitar y, en general, no se garantiza la compatibilidad con versiones anteriores.
+-   minor indica la versión secundaria de SAS. Las versiones secundarias de DXSAS pueden incluir la adición de nuevas anotaciones o semánticas. Además, la semántica y las anotaciones se pueden marcar como en desuso en el estándar DXSAS. La semántica y las anotaciones en desuso deben seguir siendo compatibles con las aplicaciones host, pero pueden emitir un diagnóstico de advertencia cuando se usa dicha semántica o anotación. Las versiones secundarias son compatibles con versiones anteriores.
+-   la revisión indica la revisión de DXSAS. Las revisiones de DXSAS solo existen como medio para corregir errores, quitar ambigüedades y refinar el estándar. Las revisiones del estándar son compatibles con versiones anteriores.
 
 La versión actual es 1.0.0. No hay ningún valor predeterminado para esta anotación.
 
 ## <a name="saseffectauthor"></a>SasEffectAuthor
 
-Esto declara a la persona que creó el efecto. Se declara de la siguiente manera:
+Esto declara la persona que creó el efecto. Se declara de esta forma:
 
 
 ```
@@ -74,7 +74,7 @@ donde value es una cadena que identifica el autor del efecto. El valor predeterm
 
 ## <a name="saseffectauthoringsoftware"></a>SasEffectAuthoringSoftware
 
-Esto declara el software en el que se creó el efecto. Se declara de la siguiente manera:
+Esto declara el software en el que se autorizó el efecto. Se declara de esta forma:
 
 
 ```
@@ -87,7 +87,7 @@ donde value es una cadena que identifica el software de creación de efectos. El
 
 ## <a name="saseffectcategory"></a>SasEffectCategory
 
-Esto declara la categoría del efecto. Se declara de la siguiente manera:
+Esto declara la categoría de efecto. Se declara de esta forma:
 
 
 ```
@@ -96,11 +96,11 @@ string SasEffectCategory = "value";
 
 
 
-donde valor es una cadena que identifica la categoría del efecto. El valor predeterminado es una cadena vacía. La categoría se expresa mediante un valor similar a la ruta de acceso mediante la barra diagonal como delimitador. Los efectos solo pueden pertenecer a una categoría, ya que no hay ninguna sintaxis para expresar la inclusión en varias rutas de acceso dentro de un valor de SasEffectCategory único. La aplicación host no trata el valor de esta anotación como lo distingue entre mayúsculas y minúsculas.
+donde value es una cadena que identifica la categoría de efecto. El valor predeterminado es una cadena vacía. La categoría se expresa a través de un valor de tipo ruta de acceso mediante la barra diagonal como delimitador. Los efectos solo pueden pertenecer a una categoría, ya que no hay ninguna sintaxis para expresar la inclusión en varias rutas de acceso dentro de un único valor sasEffectCategory. La aplicación host no trata el valor de esta anotación como que distingue mayúsculas de minúsculas.
 
 ## <a name="saseffectcompany"></a>SasEffectCompany
 
-Esto declara la compañía que creó el efecto. Se declara de la siguiente manera:
+Esto declara la empresa que creó el efecto. Se declara de esta forma:
 
 
 ```
@@ -109,11 +109,11 @@ string SasEffectCompany = "value";
 
 
 
-donde value es una cadena que identifica el nombre de la compañía a la que pertenece el efecto. El valor predeterminado es una cadena vacía.
+donde value es una cadena que identifica el nombre de la empresa propietaria del efecto. El valor predeterminado es una cadena vacía.
 
 ## <a name="saseffectdescription"></a>SasEffectDescription
 
-Esto describe el efecto. Se declara de la siguiente manera:
+Esto describe el efecto. Se declara de esta forma:
 
 
 ```
@@ -126,7 +126,7 @@ donde value es una cadena que describe el efecto. El valor predeterminado es una
 
 ## <a name="saseffecthelp"></a>SasEffectHelp
 
-Se trata de una cadena de ayuda que se puede mostrar al usuario cada vez que se solicita ayuda sobre el efecto asociado. Se declara de la siguiente manera:
+Se trata de una cadena de ayuda que se puede mostrar al usuario cada vez que se solicita ayuda sobre el efecto asociado. Se declara de esta forma:
 
 
 ```
@@ -139,7 +139,7 @@ donde value es una cadena que se puede mostrar si el usuario solicita ayuda. El 
 
 ## <a name="saseffectrevision"></a>SasEffectRevision
 
-Esta anotación permite a las herramientas y los usuarios registrar el número de revisión del archivo de efectos asociado. Por ejemplo, los usuarios podrían insertar las palabras clave adecuadas en el valor de esta anotación para invocar la sustitución de palabras clave en su software de control de revisiones favorito. Se declara de la siguiente manera:
+Esta anotación permite que las herramientas y los usuarios registren el número de revisión del archivo de efecto asociado. Por ejemplo, los usuarios podrían insertar palabras clave adecuadas en el valor de esta anotación para invocar la sustitución de palabras clave en su software de control de revisiones favorito. Se declara de esta forma:
 
 
 ```
@@ -152,7 +152,7 @@ donde value es una cadena que identifica la revisión del efecto. El valor prede
 
 ## <a name="examples"></a>Ejemplos
 
-A continuación se muestra un ejemplo en el que solo se usa la anotación única requerida:
+Este es un ejemplo en el que solo se usa la anotación necesaria única:
 
 
 ```
@@ -164,7 +164,7 @@ int gp : SasGlobal
 
 
 
-Este es un ejemplo que utiliza la anotación requerida y varias anotaciones opcionales:
+Este es un ejemplo que usa la anotación necesaria y varias anotaciones opcionales:
 
 
 ```
@@ -187,7 +187,7 @@ int gp : SasGlobal
 
 <dl> <dt>
 
-[Referencia de las anotaciones y semánticas estándar de DirectX](dx9-graphics-reference-effects-dxsas.md)
+[Referencia de anotaciones y semánticas estándar de DirectX](dx9-graphics-reference-effects-dxsas.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Representa el estado del puerto PCI Express.
 ms.assetid: 15d670ee-940a-4737-b2cd-e89dd8a63a5c
-title: Msvm_PciExpress (clase)
+title: Msvm_PciExpress clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7534d09c9c0f3825ca462c342747caa17c8de9c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: db30d367cbecd0e7b235000a35da26f5baaa07f1c05d0160a9b0bb23c7cfc2c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117811221"
 ---
-# <a name="msvm_pciexpress-class"></a>MSVM \_ PciExpress (clase)
+# <a name="msvm_pciexpress-class"></a>Clase PciExpress de Msvm \_
 
 Representa el estado del puerto PCI Express.
 
@@ -43,13 +43,13 @@ class Msvm_PciExpress : CIM_LogicalDevice
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ PciExpress** tiene estos tipos de miembros:
+La **clase \_ PciExpress de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ PciExpress** tiene estas propiedades.
+La **clase \_ PciExpress de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -62,20 +62,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una cadena que contiene la ruta de acceso de la instancia del dispositivo que identifica el dispositivo PCI Express virtual del dispositivo.
+Cadena que contiene la ruta de acceso de la instancia del dispositivo que identifica el dispositivo PCI Express virtual del dispositivo.
 
 </dd> <dt>
 
 **FunctionNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El número de función del dispositivo virtual PCI Express.
+Número de función del dispositivo PCI Express virtual.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una cadena que contiene la ruta de acceso de ubicación del dispositivo que identifica el dispositivo PCI Express virtual del dispositivo.
+Cadena que contiene la ruta de acceso de ubicación del dispositivo que identifica el dispositivo PCI Express virtual del dispositivo.
 
 </dd> </dl>
 
@@ -96,12 +96,12 @@ Una cadena que contiene la ruta de acceso de ubicación del dispositivo que iden
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -110,7 +110,7 @@ Una cadena que contiene la ruta de acceso de ubicación del dispositivo que iden
 
 <dl> <dt>
 
-[**LogicalDevice de CIM \_**](cim-logicaldevice.md)
+[**\_Dispositivo lógico CIM**](cim-logicaldevice.md)
 </dt> </dl>
 
  

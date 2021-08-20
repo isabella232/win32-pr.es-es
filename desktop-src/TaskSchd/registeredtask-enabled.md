@@ -1,11 +1,11 @@
 ---
-title: Propiedad RegisteredTask. Enabled
-description: En el caso de scripting, obtiene o establece un valor booleano que indica si la tarea registrada está habilitada.
+title: Propiedad RegisteredTask.Enabled
+description: Para el scripting, obtiene o establece un valor booleano que indica si la tarea registrada está habilitada.
 ms.assetid: ec8722a0-4055-4604-b506-a3c3f6e07954
 keywords:
-- Propiedad Enabled Programador de tareas
-- Propiedad Enabled Programador de tareas, objeto RegisteredTask
-- Programador de tareas de objeto RegisteredTask, propiedad Enabled
+- Propiedades habilitadas Programador de tareas
+- Propiedad Enabled Programador de tareas , objeto RegisteredTask
+- Propiedad RegisteredTask Programador de tareas , Enabled
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 518ba354a1be11f301e84dcb7161e6e1b0e99ecb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 51f0b73ce0cebc35701484725496e6fe23b3284fe5a2ef7a3ae7faa8c400d731
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117943451"
 ---
-# <a name="registeredtaskenabled-property"></a>Propiedad RegisteredTask. Enabled
+# <a name="registeredtaskenabled-property"></a>Propiedad RegisteredTask.Enabled
 
-En el caso de scripting, obtiene o establece un valor booleano que indica si la tarea registrada está habilitada.
+Para el scripting, obtiene o establece un valor booleano que indica si la tarea registrada está habilitada.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -44,11 +44,11 @@ Valor booleano que indica si la tarea registrada está habilitada.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

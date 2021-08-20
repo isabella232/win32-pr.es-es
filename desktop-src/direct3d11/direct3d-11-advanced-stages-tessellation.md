@@ -13,9 +13,9 @@ ms.locfileid: "118099237"
 ---
 # <a name="tessellation-stages"></a>Fases de teselación
 
-El entorno de ejecución de Direct3D 11 admite tres nuevas fases que implementan la teselación, que convierte las superficies de subdivisión de bajo detalle en primitivas de mayor detalle en la GPU. Mosaicos de teselación (o divide) superficies de orden superior en estructuras adecuadas para la representación.
+El entorno de ejecución de Direct3D 11 admite tres nuevas fases que implementan la teselación, que convierte las superficies de subdivisión de bajo detalle en primitivas de mayor detalle en la GPU. Los mosaicos de teselación (o se divide) superficies de alto orden en estructuras adecuadas para la representación.
 
-Al implementar la teselación en hardware, una canalización de gráficos puede evaluar modelos de menor detalle (recuento inferior de polígonos) y representarlos con mayor detalle. Aunque se puede realizar la teselación de software, la teselación implementada por hardware puede generar una cantidad increíble de detalles visuales (incluida la compatibilidad con la asignación de desplazamiento) sin agregar los detalles visuales a los tamaños de modelo y paralizar las tasas de actualización.
+Al implementar la teselación en hardware, una canalización de gráficos puede evaluar modelos de menor detalle (recuento inferior de polígonos) y representarlos con más detalle. Aunque se puede realizar la teselación de software, la teselación implementada por hardware puede generar una gran cantidad de detalles visuales (incluida la compatibilidad con la asignación de desplazamiento) sin agregar los detalles visuales a los tamaños de modelo y paralizar las tasas de actualización.
 
 -   [Ventajas de teselación](#tessellation-benefits)
 -   [Nuevas fases de canalización](#new-pipeline-stages)
@@ -30,48 +30,48 @@ Al implementar la teselación en hardware, una canalización de gráficos puede 
 
 Teselación:
 
--   Ahorra mucha memoria y ancho de banda, lo que permite que una aplicación represente superficies más detalladas a partir de modelos de baja resolución. La técnica de teselación implementada en la canalización de Direct3D 11 también admite la asignación de desplazamiento, que puede generar cantidades sorprendentes de detalles de la superficie.
--   Admite técnicas de representación escalable, como niveles de detalle continuos o dependientes de la vista, que se pueden calcular sobre la marcha.
--   Mejora el rendimiento al realizar cálculos costosos con menor frecuencia (realizando cálculos en un modelo de menor detalle). Esto podría incluir cálculos de combinación mediante formas de mezcla o destinos de transformación para realizar cálculos físicos o de animación realistas para la detección de colisiones o la dinámica del cuerpo suave.
+-   Ahorra mucha memoria y ancho de banda, lo que permite que una aplicación represente superficies más detalladas a partir de modelos de baja resolución. La técnica de teselación implementada en la canalización de Direct3D 11 también admite la asignación de desplazamiento, que puede producir cantidades sorprendentes de detalles de la superficie.
+-   Admite técnicas de representación escalable, como niveles de detalle continuos o dependientes de la vista que se pueden calcular sobre la marcha.
+-   Mejora el rendimiento mediante la realización de cálculos costosos a una frecuencia inferior (realizando cálculos en un modelo de menor detalle). Esto podría incluir la combinación de cálculos mediante formas de mezcla o destinos de transformación para cálculos de animación realistas o físicos para la detección de colisiones o la dinámica del cuerpo suave.
 
-La canalización de Direct3D 11 implementa la teselación en hardware, que carga el trabajo desde la CPU a la GPU. Esto puede dar lugar a mejoras de rendimiento muy grandes si una aplicación implementa un gran número de destinos de transformación o modelos de desasociación o esquiado más sofisticados. Para acceder a las nuevas características de teselación, debe obtener información sobre algunas nuevas fases de canalización.
+La canalización de Direct3D 11 implementa la teselación en hardware, lo que permite cargar el trabajo desde la CPU a la GPU. Esto puede dar lugar a mejoras de rendimiento muy grandes si una aplicación implementa un gran número de destinos de transformación o modelos de desenfasado/desasociación más sofisticados. Para acceder a las nuevas características de teselación, debe obtener información sobre algunas fases de canalización nuevas.
 
 ## <a name="new-pipeline-stages"></a>Nuevas fases de canalización
 
-La teselación usa la GPU para calcular una superficie más detallada a partir de una superficie construida a partir de revisiones cuadráneas, revisiones de triángulos o isolíneas. Para aproximar la superficie ordenada, cada revisión se subdivide en triángulos, puntos o líneas mediante factores de teselación. La canalización de Direct3D 11 implementa la teselación mediante tres nuevas fases de canalización:
+La teselación usa la GPU para calcular una superficie más detallada a partir de una superficie construida a partir de revisiones de cuatro, revisiones de triángulo o isolíneas. Para aproximarse a la superficie ordenada, cada revisión se subdivide en triángulos, puntos o líneas mediante factores de teselación. La canalización de Direct3D 11 implementa la teselación mediante tres nuevas fases de canalización:
 
--   [Fase de sombreador](#hull-shader-stage) de casco: una fase de sombreador programable que genera una revisión de geometría (y constantes de revisión) que se corresponden con cada revisión de entrada (cuadrándulo, triángulo o línea).
+-   [Fase de sombreador](#hull-shader-stage) de casco: una fase programable del sombreador que genera una revisión de geometría (y constantes de revisión) que se corresponden con cada revisión de entrada (cuadrándulo, triángulo o línea).
 -   [Fase de teselador:](#tessellator-stage) fase de canalización de función fija que crea un patrón de muestreo del dominio que representa la revisión de geometría y genera un conjunto de objetos más pequeños (triángulos, puntos o líneas) que conectan estos ejemplos.
--   [Fase de sombreador de dominio:](#domain-shader-stage) una fase de sombreador programable que calcula la posición del vértice que corresponde a cada ejemplo de dominio.
+-   [Fase sombreador de dominio:](#domain-shader-stage) una fase programable del sombreador que calcula la posición del vértice que corresponde a cada ejemplo de dominio.
 
 En el diagrama siguiente se resaltan las nuevas fases de la canalización de Direct3D 11.
 
-![diagrama de la canalización direct3d 11 que resalta las fases de sombreador de casco, teselador y sombreador de dominio](images/d3d11-pipeline-stages-tessellation.png)
+![diagrama de la canalización direct3d 11 que resalta las fases del sombreador de casco, el teselador y el sombreador de dominio](images/d3d11-pipeline-stages-tessellation.png)
 
-En el diagrama siguiente se muestra la progresión a través de las fases de teselación. La progresión comienza con la superficie de subdivisión de bajo detalle. A continuación, la progresión resalta la revisión de entrada con la revisión de geometría correspondiente, los ejemplos de dominio y los triángulos que conectan estos ejemplos. Por último, la progresión resalta los vértices que corresponden a estos ejemplos.
+En el diagrama siguiente se muestra la progresión a través de las fases de teselación. La progresión comienza con la superficie de subdivisión de bajo detalle. La progresión siguiente resalta la revisión de entrada con la revisión de geometría correspondiente, los ejemplos de dominio y los triángulos que conectan estos ejemplos. Por último, la progresión resalta los vértices que corresponden a estas muestras.
 
 ![diagrama de progresión de teselación](images/tess-prog.png)
 
 ### <a name="hull-shader-stage"></a>Hull-Shader fase
 
-Un sombreador de casco, que se invoca una vez por revisión, transforma los puntos de control de entrada que definen una superficie de orden bajo en puntos de control que son una revisión. También realiza algunos cálculos por revisión para proporcionar datos para la fase de teselación y la fase de dominio. En el nivel de caja negra más simple, la fase del sombreador de casco tendría un aspecto parecido al diagrama siguiente.
+Un sombreador de casco, que se invoca una vez por revisión, transforma los puntos de control de entrada que definen una superficie de orden bajo en puntos de control que conste de una revisión. También realiza algunos cálculos por revisión para proporcionar datos para la fase de teselación y la fase de dominio. En el nivel de caja negra más simple, la fase del sombreador de casco tendría un aspecto parecido al del diagrama siguiente.
 
 ![diagrama de la fase de sombreador de casco](images/d3d11-hull-shader.png)
 
 Un sombreador de casco se implementa con una función HLSL y tiene las siguientes propiedades:
 
 -   La entrada del sombreador está entre 1 y 32 puntos de control.
--   La salida del sombreador está entre 1 y 32 puntos de control, independientemente del número de factores de teselación. La salida de puntos de control de un sombreador de casco puede ser consumida por la fase de sombreador de dominio. Un sombreador de dominio puede consumir datos constantes de revisión. El sombreador de dominio y la fase de teselación pueden consumir los factores de teselación.
+-   La salida del sombreador está entre 1 y 32 puntos de control, independientemente del número de factores de teselación. La salida de los puntos de control de un sombreador de casco se puede usar en la fase del sombreador de dominio. Un sombreador de dominio puede consumir los datos constantes de revisión. El sombreador de dominio y la fase de teselación pueden consumir los factores de teselación.
 -   Los factores de teselación determinan cuánto subdividir cada revisión.
--   El sombreador declara el estado requerido por la fase del teselador. Esto incluye información como el número de puntos de control, el tipo de cara de revisión y el tipo de partición que se va a usar al tesentar. Esta información aparece como declaraciones normalmente al frente del código del sombreador.
--   Si la fase del sombreador de casco establece cualquier factor de teselación de borde en = 0 o NaN, se realizará la selección de la revisión. Como resultado, la fase del teselador puede o no ejecutarse, el sombreador de dominio no se ejecutará y no se producirá ningún resultado visible para esa revisión.
+-   El sombreador declara el estado requerido por la fase del teselador. Esto incluye información como el número de puntos de control, el tipo de cara de revisión y el tipo de partición que se va a usar al tessentar. Esta información aparece como declaraciones normalmente en la parte delantera del código del sombreador.
+-   Si la fase del sombreador de casco establece cualquier factor de teselación del borde en = 0 o NaN, se realizará la selección de la revisión. Como resultado, la fase del teselador puede o no ejecutarse, el sombreador de dominio no se ejecutará y no se producirá ningún resultado visible para esa revisión.
 
-En un nivel más profundo, un sombreador de casco funciona realmente en dos fases: una fase de punto de control y una fase de revisión constante, que el hardware ejecuta en paralelo. El compilador HLSL extrae el paralelismo en un sombreador de casco y lo codifica en código de bytes que impulsa el hardware.
+En un nivel más profundo, un sombreador de casco funciona realmente en dos fases: una fase de punto de control y una fase de revisión constante, que el hardware ejecuta en paralelo. El compilador HLSL extrae el paralelismo en un sombreador de casco y lo codifica en un código de bytes que impulsa el hardware.
 
--   La fase de punto de control funciona una vez para cada punto de control, leyendo los puntos de control de una revisión y generando un punto de control de salida (identificado por controlPointID).
--   La fase patch-constant funciona una vez por revisión para generar factores de teselación perimetral y otras constantes por revisión. Internamente, muchas fases de constante de revisión se pueden ejecutar al mismo tiempo. La fase patch-constant tiene acceso de solo lectura a todos los puntos de control de entrada y salida.
+-   La fase de punto de control funciona una vez para cada punto de control, leyendo los puntos de control de una revisión y generando un punto de control de salida (identificado por un ControlPointID).
+-   La fase patch-constant funciona una vez por revisión para generar factores de teselación perimetral y otras constantes por revisión. Internamente, muchas fases de revisión constante se pueden ejecutar al mismo tiempo. La fase patch-constant tiene acceso de solo lectura a todos los puntos de control de entrada y salida.
 
-Este es un ejemplo de sombreador de casco:
+Este es un ejemplo de un sombreador de casco:
 
 
 ```
@@ -92,24 +92,24 @@ MyOutPoint main(uint Id : SV_ControlPointID,
 
 
 
-Para obtener un ejemplo que crea un sombreador de casco, [vea How To: Create a Hull Shader](direct3d-11-advanced-stages-hull-shader-create.md).
+Para obtener un ejemplo en el que se crea un sombreador de casco, [vea Cómo: Crear un sombreador de casco.](direct3d-11-advanced-stages-hull-shader-create.md)
 
 ### <a name="tessellator-stage"></a>Fase de teselador
 
-El teselador es una fase de función fija inicializada mediante el enlace de un sombreador de casco a la canalización (vea Cómo: Inicializar [la fase tessellator).](direct3d-11-advanced-stages-tessellator-initialize.md) El propósito de la fase del teselador es subdividir un dominio (quad, tri o line) en muchos objetos más pequeños (triángulos, puntos o líneas). El teselador mosaico un dominio canónico en un sistema de coordenadas normalizado (de cero a uno). Por ejemplo, un dominio quad se tesela a un cuadrado de unidad.
+El teselador es una fase de función fija inicializada mediante el enlace de un sombreador de casco a la canalización (vea Cómo: Inicializar la [fase tessellator).](direct3d-11-advanced-stages-tessellator-initialize.md) El propósito de la fase del teselador es subdividir un dominio (quad, tri o line) en muchos objetos más pequeños (triángulos, puntos o líneas). El teselador mosaico un dominio canónico en un sistema de coordenadas normalizado (de cero a uno). Por ejemplo, un dominio de cuatro se tesela a un cuadrado de unidad.
 
-El teselador funciona una vez por revisión mediante los factores de teselación (que especifican la forma en que se teselará el dominio) y el tipo de partición (que especifica el algoritmo usado para segmentar una revisión) que se pasan desde la fase del sombreador de casco. El teselador genera las coordenadas uv (y, opcionalmente, w) y la topología de superficie a la fase del sombreador de dominio.
+El teselador funciona una vez por revisión mediante los factores de teselación (que especifican el nivel de teselación del dominio) y el tipo de creación de particiones (que especifica el algoritmo usado para segmentar una revisión) que se pasan desde la fase del sombreador de casco. El teselador genera las coordenadas uv (y, opcionalmente, w) y la topología de superficie a la fase del sombreador de dominio.
 
 Internamente, el teselador funciona en dos fases:
 
--   La primera fase procesa los factores de teselación, solucionando problemas de redondeo, controlando factores muy pequeños, reduciendo y combinando factores, mediante aritmética de punto flotante de 32 bits.
+-   La primera fase procesa los factores de teselación, corrige problemas de redondeo, administra factores muy pequeños, reduce y combina factores mediante aritmética de punto flotante de 32 bits.
 -   La segunda fase genera listas de puntos o topologías en función del tipo de creación de particiones seleccionado. Esta es la tarea principal de la fase del teselador y usa fracciones de 16 bits con aritmética de punto fijo. La aritmética de punto fijo permite la aceleración de hardware mientras se mantiene una precisión aceptable. Por ejemplo, dada una revisión de 64 metros de ancho, esta precisión puede colocar puntos con una resolución de 2 mm.
 
 
 
 | Tipo de creación de particiones | Intervalo                       |
 |----------------------|-----------------------------|
-| fractional \_ odd      | \[1...63\]                  |
+| fraccionamiento \_ impar      | \[1...63\]                  |
 | fractional \_ even     | Intervalo de TessFactor: \[ 2..64\] |
 | integer              | Intervalo de TessFactor: \[ 1..64\] |
 | pow2                 | Intervalo de TessFactor: \[ 1..64\] |
@@ -131,7 +131,7 @@ Las propiedades del sombreador de dominio incluyen:
 -   Un sombreador de dominio genera la posición de un vértice.
 -   Las entradas son las salidas del sombreador de casco, incluidos los puntos de control, los datos constantes de revisión y los factores de teselación. Los factores de teselación pueden incluir los valores utilizados por el teselador de función fija, así como los valores sin procesar (antes de redondear por teselación de enteros, por ejemplo), lo que facilita la geomorfización, por ejemplo.
 
-Una vez completado el sombreador de dominio, la teselación finaliza y los datos de canalización continúan en la siguiente fase de canalización (sombreador de geometría, sombreador de píxeles, etc.). Un sombreador de geometría que espera primitivas con adyacencia (por ejemplo, 6 vértices por triángulo) no es válido cuando la teselación está activa (esto da como resultado un comportamiento indefinido, del que se quejará la capa de depuración).
+Una vez completado el sombreador de dominio, la teselación finaliza y los datos de canalización continúan en la siguiente fase de canalización (sombreador de geometría, sombreador de píxeles, etc.). Un sombreador de geometría que espera primitivas con adyacencia (por ejemplo, 6 vértices por triángulo) no es válido cuando la teselación está activa (esto da como resultado un comportamiento indefinido del que se quejan la capa de depuración).
 
 Este es un ejemplo de un sombreador de dominio:
 
@@ -167,7 +167,7 @@ Para deshabilitar la teselación, establezca el sombreador de casco y el sombrea
 
     
 
-    La topología se establece en la fase de ensamblador de entrada [ **mediante IASetPrimitiveTopology**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-iasetprimitivetopology)
+    La topología se establece en la fase de ensamblador de entrada [ **mediante IASetPrimitiveTopology.**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-iasetprimitivetopology)
 
 -   Por supuesto, las nuevas fases de sombreador programables requieren que se establezca otro estado para enlazar búferes constantes, ejemplos y recursos de sombreador a las fases de canalización adecuadas. Estos nuevos métodos ID3D11Device se implementan para establecer este estado.
     -   [**DSGetConstantBuffers**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-dsgetconstantbuffers)

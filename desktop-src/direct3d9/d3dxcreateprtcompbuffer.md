@@ -1,7 +1,7 @@
 ---
-description: Crea un búfer de transferencia de Radiance (PRT) comprimido previamente a partir de un objeto ID3DXPRTBuffer no comprimido. Esta función debe usarse con búferes de volumen o por vértices.
+description: Crea un búfer de transferencia de radiancia precalutados (PRT) comprimido a partir de un objeto ID3DXPRTBuffer sin comprimir. Esta función debe usarse con búferes por vértice o volumen.
 ms.assetid: 1464d2dd-05db-4d9a-84ac-39d57b6fff4f
-title: Función D3DXCreatePRTCompBuffer (D3DX9Mesh. h)
+title: Función D3DXCreatePRTCompBuffer (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6906067c8f2b412b58c728756ecaa6415168f05a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cba1f4106a4dd04c3265bcb5cc5b19fe6a81b9ef7bd8824673e89918f9baeec4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118096590"
 ---
-# <a name="d3dxcreateprtcompbuffer-function"></a>D3DXCreatePRTCompBuffer función)
+# <a name="d3dxcreateprtcompbuffer-function"></a>Función D3DXCreatePRTCompBuffer
 
-Crea un búfer de transferencia de Radiance (PRT) comprimido previamente a partir de un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) no comprimido. Esta función debe usarse con búferes de volumen o por vértices.
+Crea un búfer de transferencia de radiancia precalutada (PRT) comprimido a partir de un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) sin comprimir. Esta función debe usarse con búferes por vértice o volumen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,52 +46,52 @@ HRESULT D3DXCreatePRTCompBuffer(
 
 <dl> <dt>
 
-*Calidad* \[ de de\]
+*Calidad* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **D3DXSHCOMPRESSQUALITYTYPE**](./d3dxshcompressqualitytype.md)**
 
-Calidad de la compresión armónica esférica (SH). Vea [**D3DXSHCOMPRESSQUALITYTYPE**](./d3dxshcompressqualitytype.md).
+Calidad de compresión armónica esférica (SH). Vea [**D3DXSHCOMPRESSQUALITYTYPE**](./d3dxshcompressqualitytype.md).
 
 </dd> <dt>
 
-*NumClusters* \[ de\]
+*NumClusters* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de clústeres que se usarán para la compresión.
 
 </dd> <dt>
 
-*NumPCA* \[ de\]
+*NumPCA* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de vectores de base del análisis de componentes principales (PCA) que se van a usar en cada clúster.
+Número de vectores de base de análisis de componentes principales (PCA) que se usarán en cada clúster.
 
 </dd> <dt>
 
-*pCB* \[ de\]
+*pCB* \[ En\]
 </dt> <dd>
 
 Tipo: **[LPD3DXSHPRTSIMCB](lpd3dxshprtsimcb.md)**
 
-Puntero opcional a la función de devolución de llamada [LPD3DXSHPRTSIMCB](lpd3dxshprtsimcb.md) que se usa para calcular el porcentaje de los cálculos de compresión de PRT completados. La función de devolución de llamada debe implementarse para devolver \_ los valores correctos para seguir ejecutando la rutina de compresión. Cualquier otro valor detendrá la compresión. Puede ser **null**.
+Puntero opcional a la función de devolución de [llamada LPD3DXSHPRTSIMCB](lpd3dxshprtsimcb.md) que se usa para calcular el porcentaje de cálculos de compresión PRT completados. La función de devolución de llamada debe implementarse para devolver S \_ OK para seguir ejecutando la rutina de compresión. Cualquier otro valor detendrá la compresión. Puede ser **NULL.**
 
 </dd> <dt>
 
-*lpUserContext* \[ de\]
+*lpUserContext* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Puntero opcional a un valor definido por el usuario que se pasa a la función de devolución de llamada [LPD3DXSHPRTSIMCB](lpd3dxshprtsimcb.md) . Lo suele usar una aplicación para pasar un puntero a una estructura de datos que proporciona información de contexto para la función de devolución de llamada. Puede ser **null**.
+Puntero opcional a un valor definido por el usuario pasado a la función de devolución de llamada [LPD3DXSHPRTSIMCB.](lpd3dxshprtsimcb.md) Normalmente lo usa una aplicación para pasar un puntero a una estructura de datos que proporciona información de contexto para la función de devolución de llamada. Puede ser **NULL.**
 
 </dd> <dt>
 
-*pBuffer* \[ de\]
+*pBuffer* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
@@ -105,7 +105,7 @@ Dirección de un puntero al objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) sin c
 
 Tipo: **[ **LPD3DXPRTCOMPBUFFER**](id3dxprtcompbuffer.md)\***
 
-Dirección de un puntero al objeto [**ID3DXPRTCompBuffer**](id3dxprtcompbuffer.md) de salida.
+Dirección de un puntero al objeto [**ID3DXPRTCompBuffer de**](id3dxprtcompbuffer.md) salida.
 
 </dd> </dl>
 
@@ -113,7 +113,7 @@ Dirección de un puntero al objeto [**ID3DXPRTCompBuffer**](id3dxprtcompbuffer.m
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -121,8 +121,8 @@ Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -130,7 +130,7 @@ Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 <dl> <dt>
 
-[Funciones de transferencia Radiance precalculadas](dx9-graphics-reference-d3dx-functions-prt.md)
+[Funciones de transferencia de radiancia precalcaladas](dx9-graphics-reference-d3dx-functions-prt.md)
 </dt> <dt>
 
 [**D3DXCreatePRTBuffer**](d3dxcreateprtbuffer.md)

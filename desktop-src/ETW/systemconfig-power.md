@@ -20,14 +20,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: d7338faad8c313847ad7db7aaac5d4000abba5be
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 364a5a7261d8658937e063abed39d759a31352a77436cf58c02b9fa7c62cc3c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814596"
 ---
-# <a name="systemconfig_power-class"></a>SystemConfig \_ Power (clase)
+# <a name="systemconfig_power-class"></a>Clase SystemConfig \_ Power
 
 Esta clase es la clase de tipo de evento para los eventos de configuración de energía.
 
@@ -74,11 +74,11 @@ Tipo de acceso: solo lectura
 Calificadores: WmiDataId(6)
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
-Pad2
+Panel2
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint8**
@@ -90,11 +90,11 @@ Tipo de acceso: solo lectura
 Calificadores: WmiDataId(7)
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
-Pad3
+Panel3
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint8**
@@ -106,7 +106,7 @@ Tipo de acceso: solo lectura
 Calificadores: WmiDataId(8)
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
@@ -194,14 +194,14 @@ True indica que el sistema admite el estado de suspensión S5.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

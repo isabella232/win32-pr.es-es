@@ -27,7 +27,7 @@ ms.locfileid: "117879382"
 
  
 
-Obtiene el tamaño de la matriz que se debe asignar antes de llamar a [**CreateOPMProtectedOutputs**](createopmprotectedoutputs.md).
+Obtiene el tamaño de la matriz que se debe asignar antes de llamar a [**CreateOPMProtectedOutputs.**](createopmprotectedoutputs.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -79,7 +79,7 @@ Esta función no tiene ninguna biblioteca de importación asociada. Para llamar 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

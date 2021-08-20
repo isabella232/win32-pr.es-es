@@ -1,6 +1,6 @@
 ---
-title: Función D3DX11SHProjectCubeMap (D3DX11tex. h)
-description: Tenga en cuenta que la biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de la tienda Windows. Tenga en cuenta que, en lugar de usar esta función, se recomienda usar la biblioteca matemática de armónicos esféricos, SHProjectCubeMap.
+title: Función D3DX11SHProjectCubeMap (D3DX11tex.h)
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Nota En lugar de usar esta función, se recomienda usar la biblioteca matemática Spherical Estadípticas, SHProjectCubeMap.
 ms.assetid: 58c741a3-dd5d-4b18-b257-5e85a9b799fd
 keywords:
 - Función D3DX11SHProjectCubeMap Direct3D 11
@@ -15,22 +15,22 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7cf773c00a649e6ace065fcf552358fbf5eeb19c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a2002505a39703601607eb6cec89afed1c54dfec2e361c0afa517e11ed6e6035
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118099257"
 ---
-# <a name="d3dx11shprojectcubemap-function"></a>D3DX11SHProjectCubeMap función)
+# <a name="d3dx11shprojectcubemap-function"></a>Función D3DX11SHProjectCubeMap
 
 > [!Note]  
-> La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para aplicaciones de la tienda Windows.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
 
  
 
 > [!Note]  
-> En lugar de usar esta función, se recomienda usar la biblioteca [matemática de armónicos esféricos](https://github.com/Microsoft/DirectXMath/tree/master/SHMath) , **SHProjectCubeMap**.
+> En lugar de usar esta función, se recomienda usar la biblioteca matemática [Spherical Estadípticas,](https://github.com/Microsoft/DirectXMath/tree/master/SHMath) **SHProjectCubeMap**.
 
  
 
@@ -61,16 +61,16 @@ HRESULT D3DX11SHProjectCubeMap(
 
 Tipo: **[ **ID3D11DeviceContext**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext)\***
 
-Un puntero a un objeto [**ID3D11DeviceContext**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) .
+Puntero a un [**objeto ID3D11DeviceContext.**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext)
 
 </dd> <dt>
 
 *Pedido* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Orden de la evaluación de SH, genera coeficientes de pedido ^ 2 cuyo grado es el orden 1. El intervalo válido está comprendido entre 2 y 6.
+El orden de la evaluación sh genera coeficientes Order^2 cuyo grado es Order-1. El intervalo válido está entre 2 y 6.
 
 </dd> <dt>
 
@@ -79,34 +79,34 @@ Orden de la evaluación de SH, genera coeficientes de pedido ^ 2 cuyo grado es e
 
 Tipo: **[ **ID3D11Texture2D**](/windows/desktop/api/D3D11/nn-d3d11-id3d11texture2d)\***
 
-Un puntero a un [**ID3D11Texture2D**](/windows/desktop/api/D3D11/nn-d3d11-id3d11texture2d) que representa un mapa que se va a proyectar en armónicos esféricos.
+Puntero a un [**ID3D11Texture2D**](/windows/desktop/api/D3D11/nn-d3d11-id3d11texture2d) que representa un mapa de cubo que se va a proyectar en armónicos esféricos.
 
 </dd> <dt>
 
-*pROut* 
+*Prout* 
 </dt> <dd>
 
-Tipo: **[ **float**](/windows/desktop/WinProg/windows-data-types)\***
+Tipo: **[ **FLOAT**](/windows/desktop/WinProg/windows-data-types)\***
 
-Salida SH vector para rojo.
+Vector SH de salida para rojo.
 
 </dd> <dt>
 
 *pGOut* 
 </dt> <dd>
 
-Tipo: **[ **float**](/windows/desktop/WinProg/windows-data-types)\***
+Tipo: **[ **FLOAT**](/windows/desktop/WinProg/windows-data-types)\***
 
-Salida SH vector para verde.
+Vector SH de salida para verde.
 
 </dd> <dt>
 
 *pBOut* 
 </dt> <dd>
 
-Tipo: **[ **float**](/windows/desktop/WinProg/windows-data-types)\***
+Tipo: **[ **FLOAT**](/windows/desktop/WinProg/windows-data-types)\***
 
-Salida SH vector para azul.
+Vector SH de salida para azul.
 
 </dd> </dl>
 
@@ -114,7 +114,7 @@ Salida SH vector para azul.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que se muestran en [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -122,8 +122,8 @@ El valor devuelto es uno de los valores que se muestran en [códigos de retorno 
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX11tex. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX11. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D3DX11tex.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX11.lib</dt> </dl>  |
 
 
 
@@ -131,7 +131,7 @@ El valor devuelto es uno de los valores que se muestran en [códigos de retorno 
 
 <dl> <dt>
 
-[Funciones de D3DX](d3d11-graphics-reference-d3dx11-functions.md)
+[Funciones D3DX](d3d11-graphics-reference-d3dx11-functions.md)
 </dt> </dl>
 
  

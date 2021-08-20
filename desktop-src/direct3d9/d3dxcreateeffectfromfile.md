@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: d8b2afdd1e8008bc8e03efa670e5a4b37b6dc9f8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bf4b06ddf47f563ed6487cbc971650fb876054b07dbef8353901b4f61ff21b7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118096580"
 ---
 # <a name="d3dxcreateeffectfromfile-function"></a>Función D3DXCreateEffectFromFile
 
@@ -83,12 +83,12 @@ Puntero de interfaz opcional, [**ID3DXInclude**](id3dxinclude.md), que se usará
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Si *pSrcFile* contiene un efecto de texto, flags puede ser una combinación de marcas [D3DXSHADER](d3dxshader-flags.md) y [marcas D3DXFX;](d3dxfx.md) De lo contrario, *pSrcFile* contiene un efecto binario y las únicas marcas respetadas son las marcas D3DXFX. El compilador HLSL de Direct3D 10 es ahora el valor predeterminado. Vea [Effect-Compiler Tool para](../direct3dtools/fxc.md) obtener más información.
+Si *pSrcFile contiene* un efecto de texto, las marcas pueden ser una combinación de marcas [D3DXSHADER](d3dxshader-flags.md) y [marcas D3DXFX;](d3dxfx.md) De lo contrario, *pSrcFile* contiene un efecto binario y las únicas marcas respetadas son las marcas D3DXFX. El compilador HLSL de Direct3D 10 es ahora el valor predeterminado. Vea [Effect-Compiler Tool para](../direct3dtools/fxc.md) obtener más información.
 
 </dd> <dt>
 
@@ -115,7 +115,7 @@ Devuelve un puntero a un búfer que contiene el efecto compilado. Vea [**ID3DXEf
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Devuelve un puntero a un búfer que contiene una lista de errores de compilación. Vea [**ID3DXBuffer**](id3dxbuffer.md).
+Devuelve un puntero a un búfer que contiene una lista de errores de compilación. Vea [**ID3DXBuffer.**](id3dxbuffer.md)
 
 </dd> </dl>
 
@@ -127,7 +127,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 ## <a name="remarks"></a>Comentarios
 
-Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos LPCTSTR se resuelve en LPCSTR.
+Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos LPCTSTR se resuelve en LPCSTR.
 
 La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada de función se resuelve en D3DXCreateEffectFromFileW. De lo contrario, la llamada de función se resuelve en D3DXCreateEffectFromFileA porque se usan cadenas ANSI.
 
@@ -142,7 +142,7 @@ La configuración del compilador también determina la versión de la función. 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

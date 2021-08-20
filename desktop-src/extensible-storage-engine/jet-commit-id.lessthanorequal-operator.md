@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: operador JET_COMMIT_ID. LessThanOrEqual'
-title: Operador JET_COMMIT_ID. LessThanOrEqual (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: operador JET_COMMIT_ID.LessThanOrEqual'
+title: JET_COMMIT_ID operador.LessThanOrEqual (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'LessThanOrEqual operator '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID.op_LessThanOrEqual(Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID,Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_commit_id.op_lessthanorequal(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 872ded299fc36295ea56500605f23af37feb0962
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ee9b0db01098f53591d7f81983ad3b187ce94f9056f20aedc32a67d7dccbd7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103815614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117895124"
 ---
-# <a name="jet_commit_idlessthanorequal-operator"></a>JET_COMMIT_ID. LessThanOrEqual (operador)
+# <a name="jet_commit_idlessthanorequal-operator"></a>operador JET_COMMIT_ID.LessThanOrEqual
 
-Determinar si un commitid está antes que otro commitid.
+Determine si un commitid es anterior a otro commitid.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,29 +64,29 @@ public static bool operator <=(
 
 #### <a name="parameters"></a>Parámetros
 
-  - LHS  
-    Tipo: [Microsoft.ISAM.esent.Interop.Windows8.JET_COMMIT_ID](./jet-commit-id-class.md)  
+  - Lhs  
+    Tipo: [Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID](./jet-commit-id-class.md)  
     
-    Primer commitid que se va a comparar.
+    Primer commitid que se compara.
 
 <!-- end list -->
 
   - rhs  
-    Tipo: [Microsoft.ISAM.esent.Interop.Windows8.JET_COMMIT_ID](./jet-commit-id-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID](./jet-commit-id-class.md)  
     
-    Segundo commitid que se va a comparar.
+    Segundo commitid que se compara.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True si LHS viene antes o igual que RHS.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True si lhs es anterior o igual a rhs.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_COMMIT_ID (clase)](./jet-commit-id-class.md)
+[JET_COMMIT_ID clase](./jet-commit-id-class.md)
 
-[Miembros de JET_COMMIT_ID](./jet-commit-id-members.md)
+[JET_COMMIT_ID miembros](./jet-commit-id-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

@@ -75,7 +75,7 @@ Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

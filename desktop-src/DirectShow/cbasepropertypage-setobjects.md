@@ -53,7 +53,7 @@ Especifica el número de **punteros IUnknown** en la matriz especificada por *pp
 *ppUnk* 
 </dt> <dd>
 
-Especifica una matriz de **punteros IUnknown.**
+Especifica una matriz **de punteros IUnknown.**
 
 </dd> </dl>
 
@@ -75,7 +75,7 @@ Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
 ## <a name="remarks"></a>Comentarios
 
-Aunque *ppUnk especifica* una matriz de punteros **IUnknown,** la clase **CBasePropertyPage** está diseñada solo para admitir un objeto asociado. Si *cObjects* es mayor que 1, el método devuelve E \_ UNEXPECTED.
+Aunque *ppUnk* especifica una matriz de punteros **IUnknown,** la clase **CBasePropertyPage** está diseñada solo para admitir un objeto asociado. Si *cObjects* es mayor que 1, el método devuelve E \_ UNEXPECTED.
 
 Si *cObjects* es igual a 1, este método llama al [**método CBasePropertyPage::OnConnect.**](cbasepropertypage-onconnect.md) Si *cObjects* es igual a 0, este método llama al [**método CBasePropertyPage::OnDisconnect.**](cbasepropertypage-ondisconnect.md) La clase derivada debe invalidar ambos métodos; Para obtener más información, vea los comentarios de esos métodos.
 
@@ -90,7 +90,7 @@ Si *cObjects* es igual a 1, este método llama al [**método CBasePropertyPage::
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

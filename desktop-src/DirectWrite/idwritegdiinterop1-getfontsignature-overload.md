@@ -1,9 +1,9 @@
 ---
-title: Métodos IdWriteGdiInterop1 GetFontSignature (Dwrite \_ 3.h)
+title: Métodos IDWriteGdiInterop1 GetFontSignature (Dwrite \_ 3.h)
 description: Recupera una firma de fuente.
 ms.assetid: 83967afd-8309-74b7-da76-1caee04a4990
 keywords:
-- GetFontSignature methods Direct Write
+- Métodos GetFontSignature de Escritura directa
 topic_type:
 - apiref
 api_location:
@@ -29,8 +29,8 @@ Recupera una firma de fuente.
 
 | Método                                                                                                 | Descripción                                                   |
 |:-------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------|
-| [**GetFontSignature ( \* IDWriteFont, \* FONTSIGNATURE)**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritegdiinterop1-getfontsignature(idwritefontface_fontsignature))       | Lee la firma de fuente de la fuente dada.<br/>      |
-| [**GetFontSignature ( \* IDWriteFontFace, \* FONTSIGNATURE)**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritegdiinterop1-getfontsignature(idwritefontface_fontsignature)) | Lee la firma de fuente de la cara de fuente determinada.<br/> |
+| [**GetFontSignature \* (IDWriteFont, \* FONTSIGNATURE)**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritegdiinterop1-getfontsignature(idwritefontface_fontsignature))       | Lee la firma de fuente de la fuente dada.<br/>      |
+| [**GetFontSignature \* (IDWriteFontFace, \* FONTSIGNATURE)**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritegdiinterop1-getfontsignature(idwritefontface_fontsignature)) | Lee la firma de fuente de la cara de fuente dada.<br/> |
 
 
 
@@ -44,7 +44,7 @@ Recupera una firma de fuente.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

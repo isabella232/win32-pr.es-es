@@ -1,20 +1,20 @@
 ---
 title: OP_PACKAGE_PART_COLLECTION
-description: Definición de OP_PACKAGE_PART_COLLECTION IDL
+description: OP_PACKAGE_PART_COLLECTION definición de IDL
 ms.assetid: a7abf011-0335-4869-b4d9-144b2f392241
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: f8eb61397045a382fe5933025a4eeda2f563e838
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.openlocfilehash: 26a664bc05cc076ac6e4fb945c5381fd5d7075ec6653c807230cc97a7db135f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "104078557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117983426"
 ---
-# <a name="op_package_part_collection-structure"></a>Estructura de OP_PACKAGE_PART_COLLECTION
+# <a name="op_package_part_collection-structure"></a>OP_PACKAGE_PART_COLLECTION estructura
 
-Especifica una estructura que contiene una matriz de estructuras OP_PACKAGE_PART.
+Especifica una estructura que contiene una matriz de OP_PACKAGE_PART estructura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,17 +35,17 @@ Contiene el número de elementos de pParts.
 
 ### <a name="pparts"></a>pParts
 
-Contiene una matriz de estructuras OP_PACKAGE_PART.
+Contiene una matriz de OP_PACKAGE_PART estructura.
 
 ### <a name="extension"></a>Extensión
 
-Reservado para uso futuro y debe establecerse en ceros.
+Reservado para uso futuro y DEBE establecerse en todos los ceros.
 
 ## <a name="see-also"></a>Vea también
 
-[**Definiciones IDL de unión a dominio sin conexión**](odj-idl.md)
+[**Definiciones de IDL de unión a un dominio sin conexión**](odj-idl.md)
 
-[**\_elemento de paquete de OP \_**](odj-op_package_part.md)
+[**PARTE DEL \_ PAQUETE \_ DE OPERACIÓN**](odj-op_package_part.md)
 
-[**BLOB de operaciones \_**](odj-op_blob.md)
+[**BLOB DE \_ OPERACIÓN**](odj-op_blob.md)
 

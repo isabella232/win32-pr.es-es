@@ -1,5 +1,5 @@
 ---
-description: En las secciones siguientes se proporciona información sobre la autorización. SecciónDescriptionAcceso Control Características de seguridad que controlan quién puede acceder a los recursos del sistema operativo.
+description: En las secciones siguientes se proporciona información sobre la autorización. SectionDescriptionAccess ControlSeguridad características que controlan quién puede acceder a los recursos del sistema operativo.
 ms.assetid: 7c10f0cf-fdaf-41c4-ab0c-fc572a8337ed
 title: Acerca de la autorización
 ms.topic: article
@@ -21,10 +21,10 @@ En las secciones siguientes se proporciona información sobre la autorización.
 |-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Control de acceso](access-control.md)<br/>                                                     | Características de seguridad que controlan quién puede acceder a los recursos del sistema operativo. Las aplicaciones llaman a las funciones de control de acceso para establecer quién puede acceder a recursos específicos o controlar el acceso a los recursos proporcionados por la aplicación.<br/>     |
 | [Access Control Editor](access-control-editor.md)<br/>                                       | Cree y use hojas de propiedades y páginas de propiedades que permiten al usuario ver y modificar los componentes del descriptor de seguridad [*de un objeto*](/windows/desktop/SecGloss/s-gly).<br/> |
-| [Cliente o servidor Access Control](client-server-access-control.md)<br/>                         | Aplicaciones de servidor que proporcionan servicios a los clientes.<br/>                                                                                                                                                                                |
+| [Cliente/servidor Access Control](client-server-access-control.md)<br/>                         | Aplicaciones de servidor que proporcionan servicios a los clientes.<br/>                                                                                                                                                                                |
 | [Access Control para recursos de aplicación](access-control-for-application-resources.md)<br/> | Control de acceso basado en rol y basado en ACL para recursos de aplicación.<br/>                                                                                                                                                                   |
 | [Control de integridad de credenciales](mandatory-integrity-control.md)<br/>                           | Control de acceso de nivel de sistema para objetos protegibles.<br/>                                                                                                                                                                                   |
-| [Control de cuentas de usuario](user-account-control.md)<br/>                                         | Característica de seguridad que permite a los usuarios realizar tareas comunes como no administradores, denominadas usuarios estándar y como administradores sin tener que cambiar de usuario, cerrar sesión o usar Ejecutar **como**.<br/>                                           |
+| [Control de cuentas de usuario](user-account-control.md)<br/>                                         | Característica de seguridad que permite a los usuarios realizar tareas comunes como no administradores, denominados usuarios estándar y como administradores sin tener que cambiar de usuario, cerrar sesión o usar Ejecutar **como**.<br/>                                           |
 
 
 

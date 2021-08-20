@@ -1,19 +1,19 @@
 ---
-description: En el ejemplo siguiente se leen los datos escritos en un archivo de registro en el ejemplo de escritura de datos de rendimiento en un archivo de registro.
+description: En el ejemplo siguiente se leen los datos escritos en un archivo de registro en el ejemplo Escribir datos de rendimiento en un archivo de registro.
 ms.assetid: acec1506-473a-43c9-9b57-ad8c00e8f250
 title: Leer datos de rendimiento de un archivo de registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43932dae6f4f3d486ad22df14954991594bd48b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 21d2d04e16e815811fd9917fa28e6fb7b1f4d2358c72a075b1ae0216c8bc4a89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117793584"
 ---
 # <a name="reading-performance-data-from-a-log-file"></a>Leer datos de rendimiento de un archivo de registro
 
-En el ejemplo siguiente se leen los datos escritos en un archivo de registro en el ejemplo de [escritura de datos de rendimiento en un archivo de registro](writing-performance-data-to-a-log-file.md) . Usa la función [**PdhCollectQueryData**](/windows/desktop/api/Pdh/nf-pdh-pdhcollectquerydata) para recuperar los datos del archivo de registro y la función [**PdhGetFormattedCounterValue**](/windows/desktop/api/Pdh/nf-pdh-pdhgetformattedcountervalue) para dar formato a los datos para su presentación.
+En el ejemplo siguiente se leen los datos escritos en un archivo de registro en el ejemplo Escribir datos [de rendimiento en un archivo de registro.](writing-performance-data-to-a-log-file.md) Usa la función [**PdhCollectQueryData**](/windows/desktop/api/Pdh/nf-pdh-pdhcollectquerydata) para recuperar los datos del archivo de registro y la función [**PdhGetFormattedCounterValue**](/windows/desktop/api/Pdh/nf-pdh-pdhgetformattedcountervalue) para dar formato a los datos para mostrarlos.
 
 
 ```C++

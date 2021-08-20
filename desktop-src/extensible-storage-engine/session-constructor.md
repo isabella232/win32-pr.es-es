@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: constructor de sesión'
+description: 'Más información sobre: Constructor de sesión'
 title: Constructor de sesión
 TOCTitle: 'Session constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Session.#ctor(Microsoft.Isam.Esent.Interop.JET_INSTANCE)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 73d19d5ae1ba422969cd5b11f5b59ceb2811a89d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46c9fcd537bbd3f68685e918c00f6083f5334b8d216acef49ed470d722bd9399
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117702894"
 ---
 # <a name="session-constructor"></a>Constructor de sesión
 
-Inicializa una nueva instancia de la clase de sesión. Se asigna una nueva JET_SESSION a partir de la instancia de especificada.
+Inicializa una nueva instancia de la clase Session. Se asigna JET_SESSION una nueva clase a partir de la instancia especificada.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,9 +60,9 @@ public Session(
 #### <a name="parameters"></a>Parámetros
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Instancia en la que se va a iniciar la sesión.
+    Instancia en la que se inicia la sesión.
 
 ## <a name="see-also"></a>Vea también
 
@@ -72,4 +72,4 @@ public Session(
 
 [Miembros de sesión](./session-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

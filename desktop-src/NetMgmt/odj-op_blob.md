@@ -36,6 +36,6 @@ Especifica el tamaño de pBlob en bytes.
 
 Apunta a un búfer de bytes.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [**Definiciones de IDL de unión a un dominio sin conexión**](odj-idl.md)

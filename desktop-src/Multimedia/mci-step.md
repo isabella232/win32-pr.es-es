@@ -1,9 +1,9 @@
 ---
-title: Comando MCI_STEP (mmsystem. h)
-description: El comando de paso de MCI \_ indica al reproductor uno o varios fotogramas. Los dispositivos de vídeo digital-video, VCR y CAV-Format reconocen este comando.
+title: MCI_STEP comando (Mmsystem.h)
+description: El comando MCI \_ STEP guía al reproductor uno o varios fotogramas. Los dispositivos de vídeo en formato vídeo digital, VCR y CSV reconocen este comando.
 ms.assetid: 8d976840-fe9d-4393-b9fc-10f847166b1b
 keywords:
-- Comando de MCI_STEP de Windows multimedia
+- MCI_STEP comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd81b3ad0e1f10c14d68df12399045149f686a8c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 526d5f69d0b0c02d977cc8fc73cd81a7a1bf06c3e55088f11d53c05cfa72c0c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117986173"
 ---
-# <a name="mci_step-command"></a>Comando de paso de MCI \_
+# <a name="mci_step-command"></a>Comando STEP de MCI \_
 
-El comando de paso de MCI \_ indica al reproductor uno o varios fotogramas. Los dispositivos de vídeo digital-video, VCR y CAV-Format reconocen este comando.
+El comando MCI \_ STEP guía al reproductor uno o varios fotogramas. Los dispositivos de vídeo en formato vídeo digital, VCR y CSV reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
+Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
 
 ```C++
@@ -50,97 +50,97 @@ Identificador de dispositivo del dispositivo MCI que va a recibir el mensaje de 
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-MCI \_ Notify, espera de MCI \_ o, para dispositivos de vídeo digital y VCR, prueba de MCI \_ . Para obtener información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+MCI \_ NOTIFY, MCI \_ WAIT o, para dispositivos de vídeo digital y VCR, MCI \_ TEST. Para obtener información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> <dt>
 
 <span id="lpStep"></span><span id="lpstep"></span><span id="LPSTEP"></span>*lpStep*
 </dt> <dd>
 
-Puntero a una [**estructura \_ \_ parms genérica de MCI**](mci-generic-parms.md) . (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura con una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este comando admite dispositivos que devuelven **true** a \_ la \_ \_ marca de vídeo MCI GETDEVCAPS tiene el comando [MCI \_ GETDEVCAPS](mci-getdevcaps.md) .
+Este comando admite dispositivos que devuelven **TRUE** a la marca \_ MCI GETDEVCAPS \_ HAS VIDEO del comando \_ [ \_ GETDEVCAPS de MCI.](mci-getdevcaps.md)
 
-Con el tipo de dispositivo **DigitalVideo** se usan las siguientes marcas adicionales:
-
-<dl> <dt>
-
-<span id="MCI_DGV_STEP_FRAMES"></span><span id="mci_dgv_step_frames"></span>\_marcos de \_ paso de DGV de MCI \_
-</dt> <dd>
-
-El miembro **dwFrames** de la estructura identificada por *lpStep* especifica el número de fotogramas que se van a avanzar antes de mostrar otra imagen.
-
-</dd> <dt>
-
-<span id="MCI_DGV_STEP_REVERSE"></span><span id="mci_dgv_step_reverse"></span>paso de DGV de MCI \_ \_ \_ inverso
-</dt> <dd>
-
-Pasos en orden inverso.
-
-</dd> </dl>
-
-En el caso de los dispositivos de vídeo digital, el parámetro *lpStep* apunta a una estructura [**parms de MCI \_ DGV \_ Step \_**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_step_parms) .
-
-Se usan las siguientes marcas adicionales con el tipo de dispositivo **VCR** :
+Las siguientes marcas adicionales se usan con el **tipo de dispositivo digitalvideo:**
 
 <dl> <dt>
 
-<span id="MCI_VCR_STEP_FRAMES"></span><span id="mci_vcr_step_frames"></span>fotogramas de VCR de MCI \_ \_ \_
+<span id="MCI_DGV_STEP_FRAMES"></span><span id="mci_dgv_step_frames"></span>MARCOS DE PASOS \_ DE MCI DGV \_ \_
 </dt> <dd>
 
-El miembro **dwFrames** de la estructura identificada por *lpStep* especifica el número de fotogramas que se van a avanzar antes de mostrar otra imagen.
+El **miembro dwFrames** de la estructura identificada por *lpStep* especifica el número de fotogramas que se avanzarán antes de mostrar otra imagen.
 
 </dd> <dt>
 
-<span id="MCI_VCR_STEP_REVERSE"></span><span id="mci_vcr_step_reverse"></span>desplazar VCR de MCI hacia \_ \_ \_ atrás
+<span id="MCI_DGV_STEP_REVERSE"></span><span id="mci_dgv_step_reverse"></span>PASO INVERSO \_ DE MCI DGV \_ \_
 </dt> <dd>
 
-Pasos en orden inverso.
+Pasos inversos.
 
 </dd> </dl>
 
-En el caso de los dispositivos VCR, el parámetro *lpStep* apunta a una estructura [**MCI \_ VCR \_ Step \_ parms**](mci-vcr-step-parms.md) .
+En el caso de los dispositivos de vídeo digital, el *parámetro lpStep* apunta a una estructura [**\_ MCI DGV \_ STEP \_ PARMS.**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_step_parms)
 
-Se usan las siguientes marcas adicionales con el tipo de dispositivo de **videodisco** :
+Las siguientes marcas adicionales se usan con el tipo **de dispositivo vcr:**
 
 <dl> <dt>
 
-<span id="MCI_VD_STEP_FRAMES"></span><span id="mci_vd_step_frames"></span>marcos de paso de MCI \_ Vd \_ \_
+<span id="MCI_VCR_STEP_FRAMES"></span><span id="mci_vcr_step_frames"></span>MARCOS DE PASOS \_ DE VCR \_ DE MCI \_
 </dt> <dd>
 
-El miembro **dwFrames** de la estructura identificada por *lpStep* especifica el número de fotogramas que se van a recorrer.
+El **miembro dwFrames** de la estructura identificada por *lpStep* especifica el número de fotogramas que se avanzarán antes de mostrar otra imagen.
 
 </dd> <dt>
 
-<span id="MCI_VD_STEP_REVERSE"></span><span id="mci_vd_step_reverse"></span>paso de MCI \_ Vd \_ \_ inverso
+<span id="MCI_VCR_STEP_REVERSE"></span><span id="mci_vcr_step_reverse"></span>PASO INVERSO \_ DE VCR \_ DE MCI \_
 </dt> <dd>
 
-Pasos en orden inverso.
+Pasos inversos.
 
 </dd> </dl>
 
-En el caso de los dispositivos de videodisco, el parámetro *lpStep* apunta a una estructura [**parms de MCI \_ Vd \_ Step \_**](mci-vd-step-parms.md) .
+En el caso de los dispositivos VCR, el *parámetro lpStep* apunta a una estructura [**\_ MCI VCR \_ STEP \_ PARMS.**](mci-vcr-step-parms.md)
+
+Las marcas adicionales siguientes se usan con el **tipo de dispositivo videodisc:**
+
+<dl> <dt>
+
+<span id="MCI_VD_STEP_FRAMES"></span><span id="mci_vd_step_frames"></span>MARCOS DE PASOS VD DE MCI \_ \_ \_
+</dt> <dd>
+
+El **miembro dwFrames** de la estructura identificada por *lpStep* especifica el número de fotogramas para el paso.
+
+</dd> <dt>
+
+<span id="MCI_VD_STEP_REVERSE"></span><span id="mci_vd_step_reverse"></span>PASO DE VD DE MCI \_ \_ \_ INVERSO
+</dt> <dd>
+
+Pasos inversos.
+
+</dd> </dl>
+
+En el caso de los dispositivos videodisc, el *parámetro lpStep* apunta a una [**estructura \_ MCI VD STEP \_ \_ PARMS.**](mci-vd-step-parms.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -148,10 +148,10 @@ En el caso de los dispositivos de videodisco, el parámetro *lpStep* apunta a un
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Comandos MCI](mci-commands.md)
+[Comandos de MCI](mci-commands.md)
 </dt> </dl>
 
  

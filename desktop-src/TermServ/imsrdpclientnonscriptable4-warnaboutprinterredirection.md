@@ -1,22 +1,22 @@
 ---
-title: Propiedad WarnAboutPrinterRedirection de IMsRdpClientNonScriptable4
-description: Controla si el cuadro de diálogo de redirección muestra un mensaje sobre la redirección de la impresora antes de iniciar una sesión.
+title: IMsRdpClientNonScriptable4 WarnAboutPrinterRedirection, propiedad
+description: Controla si el cuadro de diálogo de redireccionamiento muestra un mensaje sobre el redireccionamiento de impresoras antes de iniciar una sesión.
 ms.assetid: 12c5bc8d-7bc1-4a94-a9b8-6b852772c936
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad WarnAboutPrinterRedirection
-- Propiedad WarnAboutPrinterRedirection Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable4, propiedad WarnAboutPrinterRedirection
-- Propiedad WarnAboutPrinterRedirection Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable5, propiedad WarnAboutPrinterRedirection
-- Servicios de Escritorio remoto de la propiedad WarnAboutPrinterRedirection, objeto MsRdpClient6
-- Servicios de Escritorio remoto de objeto MsRdpClient6, propiedad WarnAboutPrinterRedirection
-- Servicios de Escritorio remoto de la propiedad WarnAboutPrinterRedirection, objeto MsRdpClient7
-- Servicios de Escritorio remoto de objeto MsRdpClient7, propiedad WarnAboutPrinterRedirection
-- Servicios de Escritorio remoto de la propiedad WarnAboutPrinterRedirection, objeto MsRdpClient8
-- Servicios de Escritorio remoto de objeto MsRdpClient8, propiedad WarnAboutPrinterRedirection
-- Servicios de Escritorio remoto de la propiedad WarnAboutPrinterRedirection, objeto MsRdpClient9
-- Servicios de Escritorio remoto de objeto MsRdpClient9, propiedad WarnAboutPrinterRedirection
+- Propiedad WarnAboutPrinterRedirection Servicios de Escritorio remoto
+- Propiedad WarnAboutPrinterRedirection Servicios de Escritorio remoto interfaz , IMsRdpClientNonScriptable4
+- Interfaz IMsRdpClientNonScriptable4 Servicios de Escritorio remoto propiedad , WarnAboutPrinterRedirection
+- Propiedad WarnAboutPrinterRedirection Servicios de Escritorio remoto interfaz , IMsRdpClientNonScriptable5
+- Interfaz IMsRdpClientNonScriptable5 Servicios de Escritorio remoto propiedad , WarnAboutPrinterRedirection
+- Propiedad WarnAboutPrinterRedirection Servicios de Escritorio remoto , objeto MsRdpClient6
+- Objeto MsRdpClient6 Servicios de Escritorio remoto , propiedad WarnAboutPrinterRedirection
+- Propiedad WarnAboutPrinterRedirection Servicios de Escritorio remoto , objeto MsRdpClient7
+- Objeto MsRdpClient7 Servicios de Escritorio remoto , propiedad WarnAboutPrinterRedirection
+- Propiedad WarnAboutPrinterRedirection Servicios de Escritorio remoto , objeto MsRdpClient8
+- Objeto MsRdpClient8 Servicios de Escritorio remoto , propiedad WarnAboutPrinterRedirection
+- Propiedad WarnAboutPrinterRedirection Servicios de Escritorio remoto , objeto MsRdpClient9
+- Objeto MsRdpClient9 Servicios de Escritorio remoto , propiedad WarnAboutPrinterRedirection
 topic_type:
 - apiref
 api_name:
@@ -36,20 +36,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24e2fa93995946e741caa76f1ee5b84be79d9c90
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b24f3969e32b500c23d52111de0533bd0812a269f8d08d62abfeea14275dbdca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117941166"
 ---
-# <a name="imsrdpclientnonscriptable4warnaboutprinterredirection-property"></a>IMsRdpClientNonScriptable4:: WarnAboutPrinterRedirection (propiedad)
+# <a name="imsrdpclientnonscriptable4warnaboutprinterredirection-property"></a>IMsRdpClientNonScriptable4::WarnAboutPrinterRedirection, propiedad
 
-Controla si el cuadro de diálogo de redirección muestra un mensaje sobre la redirección de la impresora antes de iniciar una sesión.
+Controla si el cuadro de diálogo de redireccionamiento muestra un mensaje sobre el redireccionamiento de impresoras antes de iniciar una sesión.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -66,17 +66,17 @@ HRESULT get_WarnAboutPrinterRedirection(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establece si el cuadro de diálogo de redirección muestra un mensaje sobre la redirección de la impresora.
+Establece si el cuadro de diálogo de redireccionamiento muestra un mensaje sobre el redireccionamiento de impresoras.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |

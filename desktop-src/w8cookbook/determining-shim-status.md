@@ -1,17 +1,17 @@
 ---
-title: Determinar el estado de la corrección de compatibilidad
-description: Determinar el estado de la corrección de compatibilidad
+title: Determinar el estado de corrección de compatibilidad (shim)
+description: Determinar el estado de corrección de compatibilidad (shim)
 ms.assetid: 8D0B633F-9117-4F90-BF8C-AC5F57FCD30B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40b830cbb4579aa2e523dfe2ec1129ed9cd10f37
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fcac24017dc4bc4de1f9eddb1919cc8190ccf7d98cda2f127428f1d227ef1d42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357535"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117672063"
 ---
-# <a name="determining-shim-status"></a>Determinar el estado de la corrección de compatibilidad
+# <a name="determining-shim-status"></a>Determinar el estado de corrección de compatibilidad (shim)
 
 ## <a name="platforms"></a>Plataformas
 
@@ -21,15 +21,15 @@ Servidores: Windows Server 2012
 
 ## <a name="description"></a>Descripción
 
-Windows 8 registra eventos cuando las aplicaciones se corregido por varias razones. La forma más fácil de determinar si la aplicación se está corregido es comprobar el visor de eventos. Vaya a registros de aplicaciones y servicios \\ Microsoft Windows Application-Experience \\ telemetría de programas.
+Windows 8 registra eventos cuando las aplicaciones se están recortando por diversos motivos. La manera más fácil de determinar si la aplicación se está recortando es comprobar el visor de eventos. Vaya a Applications and Services Logs Microsoft Windows Application-Experience Program Telemetry (Telemetría del programa de aplicaciones \\ y \\ servicios de Microsoft).
 
 ## <a name="mitigation"></a>Mitigación
 
-La mejor manera de obtener acceso a SHIMMING es cambiar el nombre del archivo ejecutable o aumentar la versión principal en 1 (volver a compilar el archivo ejecutable).
+La mejor manera de salir de la corrección de compatibilidad es cambiar el nombre del archivo ejecutable o aumentar la versión principal en 1 (volver a compilar el ejecutable).
 
- 
+ 
 
- 
+ 
 
 
 
